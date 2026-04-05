@@ -21,9 +21,11 @@ export default function RootLayout({
               北海道議会情報マップ
             </p>
             <h1 className="text-xl font-bold tracking-tight">千歳市議会</h1>
-            <nav className="flex gap-1 mt-3">
+            <nav className="flex flex-wrap gap-1 mt-3">
               <NavLink href="/">議員一覧</NavLink>
               <NavLink href="/decisions">議決結果</NavLink>
+              <NavLink href="/schedule">行事予定</NavLink>
+              <NavLink href="/newsletter">議会だより</NavLink>
             </nav>
           </div>
         </header>
