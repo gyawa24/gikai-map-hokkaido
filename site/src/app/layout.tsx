@@ -26,6 +26,7 @@ export default function RootLayout({
               <NavLink href="/decisions">議決結果</NavLink>
               <NavLink href="/schedule">行事予定</NavLink>
               <NavLink href="/newsletter">議会だより</NavLink>
+              <NavLink href="/ai-search">✦ AI検索</NavLink>
             </nav>
           </div>
         </header>
