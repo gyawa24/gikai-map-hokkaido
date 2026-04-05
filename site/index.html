@@ -290,7 +290,7 @@
   async function init() {
     let members;
     try {
-      const res = await fetch("../data/chitose/members.json");
+      const res = await fetch("data/chitose/members.json");
       if (!res.ok) throw new Error(res.statusText);
       members = await res.json();
     } catch (e) {
