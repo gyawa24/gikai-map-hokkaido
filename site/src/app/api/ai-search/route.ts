@@ -35,9 +35,9 @@ function checkRateLimit(ip: string): { allowed: boolean; remaining: number } {
 }
 
 // ---------------------------------------------------------------------------
-// Context: load all JSON data once at module init
+// Base context: load members/decisions/newsletter/schedule once at module init
 // ---------------------------------------------------------------------------
-function buildContext(): string {
+function buildBaseContext(): string {
   const dir = path.join(process.cwd(), "data", "chitose");
   const read = (file: string) =>
     fs.readFileSync(path.join(dir, file), "utf-8");
@@ -50,18 +50,147 @@ function buildContext(): string {
   ].join("\n\n");
 }
 
-const CONTEXT = buildContext();
+// ---------------------------------------------------------------------------
+// Minutes search: build flat chunk index once at module init
+// ---------------------------------------------------------------------------
+interface MinuteChunk {
+  councilName: string;
+  year: string;
+  typeLabel: string;
+  scheduleName: string;
+  title: string;
+  text: string;
+}
 
-const SYSTEM_PROMPT = `あなたは千歳市議会の情報アシスタントです。
+function buildMinuteChunks(): MinuteChunk[] {
+  const minutesDir = path.join(process.cwd(), "data", "chitose", "minutes");
+  if (!fs.existsSync(minutesDir)) return [];
+
+  const indexPath = path.join(minutesDir, "index.json");
+  if (!fs.existsSync(indexPath)) return [];
+
+  const index = JSON.parse(fs.readFileSync(indexPath, "utf-8")) as Array<{
+    council_id: number;
+    name: string;
+    year: string;
+    type_label: string;
+    file: string;
+  }>;
+
+  const chunks: MinuteChunk[] = [];
+
+  for (const entry of index) {
+    const filePath = path.join(minutesDir, entry.file);
+    if (!fs.existsSync(filePath)) continue;
+
+    const council = JSON.parse(fs.readFileSync(filePath, "utf-8")) as {
+      schedules: Array<{
+        name: string;
+        minutes: Array<{ title: string; minute_type: string; text: string }>;
+      }>;
+    };
+
+    for (const schedule of council.schedules) {
+      for (const minute of schedule.minutes) {
+        if (!minute.text.trim()) continue;
+        chunks.push({
+          councilName: entry.name,
+          year: entry.year,
+          typeLabel: entry.type_label,
+          scheduleName: schedule.name,
+          title: minute.title,
+          text: minute.text,
+        });
+      }
+    }
+  }
+
+  return chunks;
+}
+
+// 検索に使わない日本語助詞・助動詞・一般的すぎる語
+const STOP_WORDS = new Set([
+  "は", "が", "を", "に", "で", "と", "も", "の", "へ", "から", "まで",
+  "より", "など", "か", "や", "て", "で", "ば", "し", "ね", "よ", "な",
+  "この", "その", "あの", "どの", "ここ", "そこ", "あそこ", "どこ",
+  "こと", "もの", "ため", "よう", "ほど", "くらい", "だけ", "しか",
+  "について", "において", "に関して", "に関する", "として", "による",
+  "教えて", "ください", "何", "どう", "どんな", "いつ", "だれ", "誰",
+  "あります", "います", "ありますか", "いますか",
+]);
+
+function extractKeywords(question: string): string[] {
+  // 句読点・記号を除去してトークン分割
+  const tokens = question
+    .replace(/[。、！？!?「」『』【】（）()\s]+/g, " ")
+    .split(" ")
+    .map((t) => t.trim())
+    .filter((t) => t.length >= 2 && !STOP_WORDS.has(t));
+  return [...new Set(tokens)];
+}
+
+function scoreChunk(chunk: MinuteChunk, keywords: string[]): number {
+  if (keywords.length === 0) return 0;
+  const haystack = (chunk.title + " " + chunk.text).toLowerCase();
+  let score = 0;
+  for (const kw of keywords) {
+    const kl = kw.toLowerCase();
+    if (haystack.includes(kl)) {
+      // タイトルマッチは重み付け
+      score += chunk.title.toLowerCase().includes(kl) ? 3 : 1;
+      // 出現回数も加味（最大5回まで）
+      const count = (haystack.match(new RegExp(kl, "g")) ?? []).length;
+      score += Math.min(count, 5);
+    }
+  }
+  return score;
+}
+
+const MAX_SNIPPET_CHARS = 500;
+const MAX_MINUTES_CHUNKS = 8;
+
+function searchMinutes(question: string, chunks: MinuteChunk[]): string {
+  if (chunks.length === 0) return "";
+
+  const keywords = extractKeywords(question);
+  if (keywords.length === 0) return "";
+
+  // スコアリングして上位を取得
+  const scored = chunks
+    .map((chunk) => ({ chunk, score: scoreChunk(chunk, keywords) }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, MAX_MINUTES_CHUNKS);
+
+  if (scored.length === 0) return "";
+
+  const lines: string[] = ["### 関連議事録（キーワード検索結果）"];
+  for (const { chunk } of scored) {
+    const snippet =
+      chunk.text.length > MAX_SNIPPET_CHARS
+        ? chunk.text.slice(0, MAX_SNIPPET_CHARS) + "…"
+        : chunk.text;
+    lines.push(
+      `\n【${chunk.councilName} / ${chunk.scheduleName} / ${chunk.title}】\n${snippet}`
+    );
+  }
+  return lines.join("\n");
+}
+
+const BASE_CONTEXT = buildBaseContext();
+const MINUTE_CHUNKS = buildMinuteChunks();
+
+const SYSTEM_PROMPT_BASE = `あなたは千歳市議会の情報アシスタントです。
 以下の千歳市議会データを参照して、ユーザーの質問に日本語で正確かつ簡潔に答えてください。
 
 【回答ルール】
 - 提供データに基づいた事実のみを回答してください
 - データにない情報は「データに含まれていないため確認できません」と明示してください
 - 議員名・会派名・委員会名はデータの表記に従ってください
+- 議事録の発言を引用する際は「【会議名 / 日付 / 発言者】」の形式で出典を示してください
 
 【千歳市議会データ】
-${CONTEXT}`;
+${BASE_CONTEXT}`;
 
 // ---------------------------------------------------------------------------
 // Route handler
@@ -98,13 +227,19 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // Build per-request system prompt: base context + relevant minutes snippets
+  const minutesContext = searchMinutes(question, MINUTE_CHUNKS);
+  const systemPrompt = minutesContext
+    ? `${SYSTEM_PROMPT_BASE}\n\n${minutesContext}`
+    : SYSTEM_PROMPT_BASE;
+
   // Stream response from Claude
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
   const claudeStream = anthropic.messages.stream({
     model: "claude-opus-4-6",
     max_tokens: 1024,
-    system: SYSTEM_PROMPT,
+    system: systemPrompt,
     messages: [{ role: "user", content: question }],
   });
 

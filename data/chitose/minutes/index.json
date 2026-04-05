@@ -1,0 +1,178 @@
+[
+  {
+    "council_id": 575,
+    "name": "令和 ７年 第４回定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "575.json"
+  },
+  {
+    "council_id": 572,
+    "name": "令和 ７年 第３回定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "572.json"
+  },
+  {
+    "council_id": 567,
+    "name": "令和 ７年 第２回定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "567.json"
+  },
+  {
+    "council_id": 561,
+    "name": "令和 ７年 第１回定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "561.json"
+  },
+  {
+    "council_id": 560,
+    "name": "令和 ７年 予算特別委員会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算特別委員会",
+    "file": "560.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 562,
+    "name": "令和 ７年 第１回定例会補正予算特別委員会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第１回定例会補正予算特別委員会",
+    "file": "562.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 568,
+    "name": "令和 ７年 第２回定例会補正予算特別委員会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第２回定例会補正予算特別委員会",
+    "file": "568.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 573,
+    "name": "令和 ７年 第３回定例会補正予算特別委員会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第３回定例会補正予算特別委員会",
+    "file": "573.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 576,
+    "name": "令和 ７年 第４回定例会補正予算特別委員会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第４回定例会補正予算特別委員会",
+    "file": "576.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 571,
+    "name": "令和 ７年 決算特別委員会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 決算特別委員会",
+    "file": "571.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 557,
+    "name": "令和 ６年 第４回定例会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "557.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 555,
+    "name": "令和 ６年 第３回定例会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "555.json",
+    "schedule_count": 7
+  },
+  {
+    "council_id": 548,
+    "name": "令和 ６年 第２回定例会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "548.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 546,
+    "name": "令和 ６年 第１回定例会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "546.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 545,
+    "name": "令和 ６年 予算特別委員会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算特別委員会",
+    "file": "545.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 547,
+    "name": "令和 ６年 第１回定例会補正予算特別委員会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第１回定例会補正予算特別委員会",
+    "file": "547.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 549,
+    "name": "令和 ６年 第２回定例会補正予算特別委員会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第２回定例会補正予算特別委員会",
+    "file": "549.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 556,
+    "name": "令和 ６年 第３回定例会補正予算特別委員会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第３回定例会補正予算特別委員会",
+    "file": "556.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 570,
+    "name": "令和 ６年 第４回定例会補正予算特別委員会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第４回定例会補正予算特別委員会",
+    "file": "570.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 554,
+    "name": "令和 ６年 決算特別委員会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 決算特別委員会",
+    "file": "554.json",
+    "schedule_count": 6
+  }
+]
