@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import NavLink from "@/components/NavLink";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,16 +16,15 @@ export default function RootLayout({
     <html lang="ja">
       <body className="min-h-screen flex flex-col antialiased">
         <header className="bg-[#1a3a6c] text-white">
-          <div className="max-w-5xl mx-auto px-4 py-5">
+          <div className="max-w-5xl mx-auto px-4 pt-5 pb-3">
             <p className="text-xs text-blue-200 mb-1 tracking-wide">
               北海道議会情報マップ
             </p>
-            <h1 className="text-xl font-bold tracking-tight">
-              千歳市議会 議員一覧
-            </h1>
-            <p className="text-xs text-blue-300 mt-1">
-              令和7年12月現在 · 議員定数 23名
-            </p>
+            <h1 className="text-xl font-bold tracking-tight">千歳市議会</h1>
+            <nav className="flex gap-1 mt-3">
+              <NavLink href="/">議員一覧</NavLink>
+              <NavLink href="/decisions">議決結果</NavLink>
+            </nav>
           </div>
         </header>
 
