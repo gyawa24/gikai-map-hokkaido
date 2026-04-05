@@ -120,13 +120,40 @@ const STOP_WORDS = new Set([
 ]);
 
 function extractKeywords(question: string): string[] {
-  // 句読点・記号を除去してトークン分割
-  const tokens = question
+  const tokens = new Set<string>();
+
+  // 漢字連続列を抽出してサブストリングも生成
+  // 例: "小川陽平議員について" → kanjiSeqs=["小川陽平議員"]
+  //   → "小川", "川陽", "陽平", "平議", "議員",
+  //      "小川陽", "川陽平", …, "小川陽平", …, "小川陽平議員" など
+  const kanjiSeqs = question.match(/[\u4e00-\u9fff]{2,}/g) ?? [];
+  for (const seq of kanjiSeqs) {
+    // 全体（8文字以下）
+    if (seq.length <= 8 && !STOP_WORDS.has(seq)) tokens.add(seq);
+    // 2〜4文字のサブストリング（人名・複合語をカバー）
+    for (let len = 2; len <= Math.min(4, seq.length); len++) {
+      for (let i = 0; i <= seq.length - len; i++) {
+        const sub = seq.slice(i, i + len);
+        if (!STOP_WORDS.has(sub)) tokens.add(sub);
+      }
+    }
+  }
+
+  // カタカナ語（外来語・固有名詞）
+  const kataSeqs = question.match(/[\u30a0-\u30ff]{2,}/g) ?? [];
+  for (const seq of kataSeqs) {
+    if (!STOP_WORDS.has(seq)) tokens.add(seq);
+  }
+
+  // スペース区切りがある場合（英数字・ローマ字混じり質問への対応）
+  const spaceTokens = question
     .replace(/[。、！？!?「」『』【】（）()\s]+/g, " ")
     .split(" ")
     .map((t) => t.trim())
-    .filter((t) => t.length >= 2 && !STOP_WORDS.has(t));
-  return [...new Set(tokens)];
+    .filter((t) => t.length >= 2 && t.length <= 20 && !STOP_WORDS.has(t));
+  for (const t of spaceTokens) tokens.add(t);
+
+  return [...tokens];
 }
 
 function scoreChunk(chunk: MinuteChunk, keywords: string[]): number {
