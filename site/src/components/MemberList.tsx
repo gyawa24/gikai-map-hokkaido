@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import type { Member } from "@/types/member";
 
 const FACTION_STYLES: Record<string, { badge: string }> = {
@@ -9,14 +9,37 @@ const FACTION_STYLES: Record<string, { badge: string }> = {
   "公明党議員団":              { badge: "bg-blue-100 text-blue-800" },
   "ちとせ未来クラブ":          { badge: "bg-green-100 text-green-800" },
   "日本共産党":                { badge: "bg-red-100 text-red-800" },
+  "日本共産党市議団":          { badge: "bg-red-100 text-red-800" },
   "参政党":                    { badge: "bg-purple-100 text-purple-800" },
   "無所属クラブ（維新・市民）": { badge: "bg-cyan-100 text-cyan-800" },
+  "自由民主党議員団（翡翠会）": { badge: "bg-amber-100 text-amber-800" },
+  "民主・春風の会":            { badge: "bg-sky-100 text-sky-800" },
+  "市民と歩む会":              { badge: "bg-teal-100 text-teal-800" },
+  "諸派":                      { badge: "bg-gray-100 text-gray-700" },
+  "新緑":                      { badge: "bg-lime-100 text-lime-800" },
+  "民主クラブ":                { badge: "bg-sky-100 text-sky-800" },
+  "改革フォーラム":            { badge: "bg-orange-100 text-orange-800" },
+  "会派市民":                  { badge: "bg-teal-100 text-teal-800" },
   "無所属":                    { badge: "bg-slate-100 text-slate-600" },
+};
+
+const PARTY_ORDER: Record<string, number> = {
+  "自由民主党": 1,
+  "公明党": 2,
+  "立憲民主党": 3,
+  "国民民主党": 4,
+  "日本維新の会": 5,
+  "日本共産党": 6,
+  "参政党": 7,
+  "NHKから国民を守る党": 8,
+  "無所属": 99,
 };
 
 function factionBadgeClass(faction: string): string {
   return FACTION_STYLES[faction]?.badge ?? "bg-slate-100 text-slate-600";
 }
+
+type SortKey = "seat" | "party" | "kana";
 
 type Props = {
   members: Member[];
@@ -24,20 +47,68 @@ type Props = {
 };
 
 export default function MemberList({ members, factions }: Props) {
-  const [selected, setSelected] = useState<string>("");
+  const [factionFilter, setFactionFilter] = useState<string>("");
+  const [partyFilter, setPartyFilter] = useState<string>("");
+  const [sortKey, setSortKey] = useState<SortKey>("seat");
 
-  const filtered = selected ? members.filter((m) => m.faction === selected) : members;
+  const parties = useMemo(() => {
+    const seen = new Set<string>();
+    const result: string[] = [];
+    for (const m of members) {
+      if (m.party && !seen.has(m.party)) {
+        seen.add(m.party);
+        result.push(m.party);
+      }
+    }
+    return result.sort((a, b) => (PARTY_ORDER[a] ?? 50) - (PARTY_ORDER[b] ?? 50));
+  }, [members]);
+
+  const hasParties = parties.length > 0;
+
+  const filtered = useMemo(() => {
+    let list = members;
+    if (factionFilter) list = list.filter((m) => m.faction === factionFilter);
+    if (partyFilter) list = list.filter((m) => m.party === partyFilter);
+
+    return [...list].sort((a, b) => {
+      if (sortKey === "seat") return a.seat_number - b.seat_number;
+      if (sortKey === "kana") return a.furigana.localeCompare(b.furigana, "ja");
+      if (sortKey === "party") {
+        const pa = PARTY_ORDER[a.party ?? ""] ?? 50;
+        const pb = PARTY_ORDER[b.party ?? ""] ?? 50;
+        if (pa !== pb) return pa - pb;
+        return a.seat_number - b.seat_number;
+      }
+      return 0;
+    });
+  }, [members, factionFilter, partyFilter, sortKey]);
 
   return (
     <>
-      {/* フィルターバー */}
-      <div className="flex flex-wrap items-center gap-3 mb-6">
-        {factions.length > 0 && (
-          <>
-            <span className="text-sm text-gray-500">会派で絞り込み</span>
+      {/* フィルター・ソートバー */}
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-6">
+        {hasParties && (
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-500 whitespace-nowrap">政党</span>
             <select
-              value={selected}
-              onChange={(e) => setSelected(e.target.value)}
+              value={partyFilter}
+              onChange={(e) => setPartyFilter(e.target.value)}
+              className="text-sm border border-gray-200 rounded-lg px-3 py-1.5 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+            >
+              <option value="">すべて</option>
+              {parties.map((p) => (
+                <option key={p} value={p}>{p}</option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        {factions.length > 0 && (
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-500 whitespace-nowrap">会派</span>
+            <select
+              value={factionFilter}
+              onChange={(e) => setFactionFilter(e.target.value)}
               className="text-sm border border-gray-200 rounded-lg px-3 py-1.5 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
             >
               <option value="">すべて</option>
@@ -45,8 +116,22 @@ export default function MemberList({ members, factions }: Props) {
                 <option key={f} value={f}>{f}</option>
               ))}
             </select>
-          </>
+          </div>
         )}
+
+        <div className="flex items-center gap-2">
+          <span className="text-sm text-gray-500 whitespace-nowrap">並び順</span>
+          <select
+            value={sortKey}
+            onChange={(e) => setSortKey(e.target.value as SortKey)}
+            className="text-sm border border-gray-200 rounded-lg px-3 py-1.5 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+          >
+            <option value="seat">議席番号順</option>
+            <option value="party">政党順</option>
+            <option value="kana">五十音順</option>
+          </select>
+        </div>
+
         <span className="ml-auto text-sm text-gray-400">{filtered.length} 名</span>
       </div>
 

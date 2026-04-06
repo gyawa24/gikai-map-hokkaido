@@ -11,7 +11,7 @@ function getMembers(): Member[] {
 
 export default function ChitoseMembersPage() {
   const members = getMembers();
-  const factions = [...new Set(members.map((m) => m.faction))];
+  const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
 
   return <MemberList members={members} factions={factions} />;
 }
