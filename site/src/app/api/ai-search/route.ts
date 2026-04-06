@@ -173,8 +173,8 @@ function scoreChunk(chunk: MinuteChunk, keywords: string[]): number {
   return score;
 }
 
-const MAX_SNIPPET_CHARS = 500;
-const MAX_MINUTES_CHUNKS = 8;
+const MAX_SNIPPET_CHARS = 800;
+const MAX_MINUTES_CHUNKS = 15;
 
 function searchMinutes(question: string, chunks: MinuteChunk[]): string {
   if (chunks.length === 0) return "";
@@ -215,6 +215,7 @@ const SYSTEM_PROMPT_BASE = `あなたは千歳市議会の情報アシスタン�
 - データにない情報は「データに含まれていないため確認できません」と明示してください
 - 議員名・会派名・委員会名はデータの表記に従ってください
 - 議事録の発言を引用する際は「【会議名 / 日付 / 発言者】」の形式で出典を示してください
+- できる限り具体的に、発言内容を引用しながら回答してください
 
 【千歳市議会データ】
 ${BASE_CONTEXT}`;
