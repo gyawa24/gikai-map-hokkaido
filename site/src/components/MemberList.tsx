@@ -32,17 +32,21 @@ export default function MemberList({ members, factions }: Props) {
     <>
       {/* フィルターバー */}
       <div className="flex flex-wrap items-center gap-3 mb-6">
-        <span className="text-sm text-gray-500">会派で絞り込み</span>
-        <select
-          value={selected}
-          onChange={(e) => setSelected(e.target.value)}
-          className="text-sm border border-gray-200 rounded-lg px-3 py-1.5 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
-        >
-          <option value="">すべて</option>
-          {factions.map((f) => (
-            <option key={f} value={f}>{f}</option>
-          ))}
-        </select>
+        {factions.length > 0 && (
+          <>
+            <span className="text-sm text-gray-500">会派で絞り込み</span>
+            <select
+              value={selected}
+              onChange={(e) => setSelected(e.target.value)}
+              className="text-sm border border-gray-200 rounded-lg px-3 py-1.5 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+            >
+              <option value="">すべて</option>
+              {factions.map((f) => (
+                <option key={f} value={f}>{f}</option>
+              ))}
+            </select>
+          </>
+        )}
         <span className="ml-auto text-sm text-gray-400">{filtered.length} 名</span>
       </div>
 
@@ -67,14 +71,16 @@ export default function MemberList({ members, factions }: Props) {
             </div>
 
             {/* 会派 */}
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xs text-gray-400 w-8 shrink-0">会派</span>
-              <span
-                className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${factionBadgeClass(member.faction)}`}
-              >
-                {member.faction}
-              </span>
-            </div>
+            {member.faction && (
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-xs text-gray-400 w-8 shrink-0">会派</span>
+                <span
+                  className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${factionBadgeClass(member.faction)}`}
+                >
+                  {member.faction}
+                </span>
+              </div>
+            )}
 
             {/* 委員会 */}
             <div className="flex items-start gap-2">
