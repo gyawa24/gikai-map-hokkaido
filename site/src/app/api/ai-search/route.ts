@@ -194,22 +194,48 @@ function scoreChunk(chunk: MinuteChunk, keywords: string[]): number {
   return score;
 }
 
-const MAX_SNIPPET_CHARS = 800;
+const MAX_SNIPPET_CHARS_NORMAL  = 800;
+const MAX_SNIPPET_CHARS_COMPARE = 1200;
 
-function searchMinutes(
+/** 通常モード: 全市合計でスコア上位を取得 */
+function searchMinutesNormal(question: string, chunks: MinuteChunk[], maxChunks: number): string {
+  return searchMinutesCore(question, chunks, maxChunks, MAX_SNIPPET_CHARS_NORMAL);
+}
+
+/** 比較モード: 市ごとに均等 chunksPerCity 件ずつ取得して結合 */
+function searchMinutesCompare(
+  question: string,
+  chunks: MinuteChunk[],
+  chunksPerCity: number,
+): string {
+  const cityIds = [...new Set(chunks.map((c) => c.city))];
+  const perCityResults = cityIds
+    .map((cityId) => {
+      const pool = chunks.filter((c) => c.city === cityId);
+      return searchMinutesCore(question, pool, chunksPerCity, MAX_SNIPPET_CHARS_COMPARE);
+    })
+    .filter(Boolean);
+
+  return perCityResults.length > 0
+    ? "### 関連議事録（市別キーワード検索結果）\n" + perCityResults.map((r) =>
+        // 各市のヘッダー行を除いて本文だけ結合
+        r.replace(/^### 関連議事録（キーワード検索結果）\n?/, "")
+      ).join("\n")
+    : "";
+}
+
+function searchMinutesCore(
   question: string,
   chunks: MinuteChunk[],
   maxChunks: number,
-  cityFilter?: string,
+  snippetChars: number,
 ): string {
   if (chunks.length === 0) return "";
 
   const keywords = extractKeywords(question);
   if (keywords.length === 0) return "";
 
-  const pool = cityFilter ? chunks.filter((c) => c.city === cityFilter) : chunks;
-
-  const scored = pool
+  const scored = chunks
     .map((chunk) => ({ chunk, score: scoreChunk(chunk, keywords) }))
     .filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score)
@@ -220,8 +246,8 @@ function searchMinutes(
   const lines: string[] = ["### 関連議事録（キーワード検索結果）"];
   for (const { chunk } of scored) {
     const snippet =
-      chunk.text.length > MAX_SNIPPET_CHARS
-        ? chunk.text.slice(0, MAX_SNIPPET_CHARS) + "…"
+      chunk.text.length > snippetChars
+        ? chunk.text.slice(0, snippetChars) + "…"
         : chunk.text;
     lines.push(
       `\n【${chunk.cityName} ${chunk.councilName} / ${chunk.scheduleName} / ${chunk.title}】\n${snippet}`
@@ -324,10 +350,11 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // 比較モード: 全市から多めにチャンクを取得
-  // 通常モード: 全市から標準数を取得
-  const maxChunks = compareMode ? 24 : 15;
-  const minutesContext = searchMinutes(question, MINUTE_CHUNKS, maxChunks);
+  // 比較モード: 市ごとに均等 10 チャンク（計30）、スニペット 1200 字
+  // 通常モード: 全市合計 15 チャンク、スニペット 800 字
+  const minutesContext = compareMode
+    ? searchMinutesCompare(question, MINUTE_CHUNKS, 10)
+    : searchMinutesNormal(question, MINUTE_CHUNKS, 15);
 
   const basePrompt = compareMode ? SYSTEM_PROMPT_COMPARE : SYSTEM_PROMPT_NORMAL;
   const systemPrompt = minutesContext
@@ -338,7 +365,7 @@ export async function POST(req: NextRequest) {
 
   const claudeStream = anthropic.messages.stream({
     model: "claude-opus-4-6",
-    max_tokens: compareMode ? 2048 : 1024,
+    max_tokens: compareMode ? 4096 : 1024,
     system: systemPrompt,
     messages: [{ role: "user", content: question }],
   });
