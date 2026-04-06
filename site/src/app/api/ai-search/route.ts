@@ -5,7 +5,6 @@ import path from "path";
 
 // ---------------------------------------------------------------------------
 // Rate limiting (in-memory)
-// Note: resets on serverless cold-start. For production use Vercel KV etc.
 // ---------------------------------------------------------------------------
 const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
 const MAX_REQUESTS_PER_DAY = 10;
@@ -35,7 +34,7 @@ function checkRateLimit(ip: string): { allowed: boolean; remaining: number } {
 }
 
 // ---------------------------------------------------------------------------
-// Base context: load members/decisions/newsletter/schedule once at module init
+// Base context builders
 // ---------------------------------------------------------------------------
 function buildBaseContext(): string {
   const dir = path.join(process.cwd(), "data", "chitose");
@@ -50,12 +49,33 @@ function buildBaseContext(): string {
   ].join("\n\n");
 }
 
+const CITY_META = [
+  { id: "chitose",   name: "千歳市" },
+  { id: "eniwa",     name: "恵庭市" },
+  { id: "tomakomai", name: "苫小牧市" },
+];
+
+function buildCompareBaseContext(): string {
+  const sections: string[] = [];
+  for (const city of CITY_META) {
+    const dir = path.join(process.cwd(), "data", city.id);
+    const tryRead = (file: string) => {
+      try { return fs.readFileSync(path.join(dir, file), "utf-8"); } catch { return "（データなし）"; }
+    };
+    sections.push(
+      `### ${city.name} 議員名簿\n` + tryRead("members.json"),
+      `### ${city.name} 議決結果（直近）\n` + tryRead("decisions.json"),
+    );
+  }
+  return sections.join("\n\n");
+}
+
 // ---------------------------------------------------------------------------
-// Minutes search: build flat chunk index once at module init
+// Minutes chunk index
 // ---------------------------------------------------------------------------
 interface MinuteChunk {
-  city: string;       // "chitose" | "eniwa" | "tomakomai"
-  cityName: string;   // "千歳市" | "恵庭市" | "苫小牧市"
+  city: string;
+  cityName: string;
   councilName: string;
   year: string;
   typeLabel: string;
@@ -63,12 +83,6 @@ interface MinuteChunk {
   title: string;
   text: string;
 }
-
-const CITIES: Array<{ id: string; name: string }> = [
-  { id: "chitose",   name: "千歳市" },
-  { id: "eniwa",     name: "恵庭市" },
-  { id: "tomakomai", name: "苫小牧市" },
-];
 
 function loadChunksForCity(city: { id: string; name: string }): MinuteChunk[] {
   const minutesDir = path.join(process.cwd(), "data", city.id, "minutes");
@@ -119,10 +133,12 @@ function loadChunksForCity(city: { id: string; name: string }): MinuteChunk[] {
 }
 
 function buildMinuteChunks(): MinuteChunk[] {
-  return CITIES.flatMap(loadChunksForCity);
+  return CITY_META.flatMap(loadChunksForCity);
 }
 
-// 検索に使わない日本語助詞・助動詞・一般的すぎる語
+// ---------------------------------------------------------------------------
+// Keyword search
+// ---------------------------------------------------------------------------
 const STOP_WORDS = new Set([
   "は", "が", "を", "に", "で", "と", "も", "の", "へ", "から", "まで",
   "より", "など", "か", "や", "て", "で", "ば", "し", "ね", "よ", "な",
@@ -131,20 +147,15 @@ const STOP_WORDS = new Set([
   "について", "において", "に関して", "に関する", "として", "による",
   "教えて", "ください", "何", "どう", "どんな", "いつ", "だれ", "誰",
   "あります", "います", "ありますか", "いますか",
+  "比較", "違い", "異なる", "共通", "それぞれ", "各市", "3市", "三市",
 ]);
 
 function extractKeywords(question: string): string[] {
   const tokens = new Set<string>();
 
-  // 漢字連続列を抽出してサブストリングも生成
-  // 例: "小川陽平議員について" → kanjiSeqs=["小川陽平議員"]
-  //   → "小川", "川陽", "陽平", "平議", "議員",
-  //      "小川陽", "川陽平", …, "小川陽平", …, "小川陽平議員" など
   const kanjiSeqs = question.match(/[\u4e00-\u9fff]{2,}/g) ?? [];
   for (const seq of kanjiSeqs) {
-    // 全体（8文字以下）
     if (seq.length <= 8 && !STOP_WORDS.has(seq)) tokens.add(seq);
-    // 2〜4文字のサブストリング（人名・複合語をカバー）
     for (let len = 2; len <= Math.min(4, seq.length); len++) {
       for (let i = 0; i <= seq.length - len; i++) {
         const sub = seq.slice(i, i + len);
@@ -153,13 +164,11 @@ function extractKeywords(question: string): string[] {
     }
   }
 
-  // カタカナ語（外来語・固有名詞）
   const kataSeqs = question.match(/[\u30a0-\u30ff]{2,}/g) ?? [];
   for (const seq of kataSeqs) {
     if (!STOP_WORDS.has(seq)) tokens.add(seq);
   }
 
-  // スペース区切りがある場合（英数字・ローマ字混じり質問への対応）
   const spaceTokens = question
     .replace(/[。、！？!?「」『』【】（）()\s]+/g, " ")
     .split(" ")
@@ -177,9 +186,7 @@ function scoreChunk(chunk: MinuteChunk, keywords: string[]): number {
   for (const kw of keywords) {
     const kl = kw.toLowerCase();
     if (haystack.includes(kl)) {
-      // タイトルマッチは重み付け
       score += chunk.title.toLowerCase().includes(kl) ? 3 : 1;
-      // 出現回数も加味（最大5回まで）
       const count = (haystack.match(new RegExp(kl, "g")) ?? []).length;
       score += Math.min(count, 5);
     }
@@ -188,20 +195,25 @@ function scoreChunk(chunk: MinuteChunk, keywords: string[]): number {
 }
 
 const MAX_SNIPPET_CHARS = 800;
-const MAX_MINUTES_CHUNKS = 15;
 
-function searchMinutes(question: string, chunks: MinuteChunk[]): string {
+function searchMinutes(
+  question: string,
+  chunks: MinuteChunk[],
+  maxChunks: number,
+  cityFilter?: string,
+): string {
   if (chunks.length === 0) return "";
 
   const keywords = extractKeywords(question);
   if (keywords.length === 0) return "";
 
-  // スコアリングして上位を取得
-  const scored = chunks
+  const pool = cityFilter ? chunks.filter((c) => c.city === cityFilter) : chunks;
+
+  const scored = pool
     .map((chunk) => ({ chunk, score: scoreChunk(chunk, keywords) }))
     .filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score)
-    .slice(0, MAX_MINUTES_CHUNKS);
+    .slice(0, maxChunks);
 
   if (scored.length === 0) return "";
 
@@ -218,10 +230,14 @@ function searchMinutes(question: string, chunks: MinuteChunk[]): string {
   return lines.join("\n");
 }
 
+// ---------------------------------------------------------------------------
+// System prompts
+// ---------------------------------------------------------------------------
 const BASE_CONTEXT = buildBaseContext();
+const COMPARE_BASE_CONTEXT = buildCompareBaseContext();
 const MINUTE_CHUNKS = buildMinuteChunks();
 
-const SYSTEM_PROMPT_BASE = `あなたは北海道の市議会情報アシスタントです。
+const SYSTEM_PROMPT_NORMAL = `あなたは北海道の市議会情報アシスタントです。
 千歳市・恵庭市・苫小牧市の議会データをもとに、ユーザーの質問に日本語で正確かつ簡潔に答えてください。
 
 【回答ルール】
@@ -234,11 +250,50 @@ const SYSTEM_PROMPT_BASE = `あなたは北海道の市議会情報アシスタ�
 【千歳市議会データ】
 ${BASE_CONTEXT}`;
 
+const SYSTEM_PROMPT_COMPARE = `あなたは北海道の市議会情報アシスタントです。
+以下のテーマについて千歳市・恵庭市・苫小牧市の議会での議論を比較してください。
+
+【回答形式】
+必ず以下のフォーマットで回答してください。データがない項目は「記録なし」と記載してください。
+
+【テーマ: ○○】
+
+■ 千歳市
+- 予算・規模: （金額・規模に関する情報）
+- 方針・特徴: （議会での方針や特徴的な取り組み）
+- 課題・議論: （議員が指摘した課題や議論の焦点）
+- 主な発言: （具体的な発言の引用）
+
+■ 恵庭市
+- 予算・規模:
+- 方針・特徴:
+- 課題・議論:
+- 主な発言:
+
+■ 苫小牧市
+- 予算・規模:
+- 方針・特徴:
+- 課題・議論:
+- 主な発言:
+
+【3市の比較まとめ】
+similarities: （3市に共通する点）
+differences: （3市で異なる点・特色）
+insights: （比較から見えてくる気づき・考察）
+
+【回答ルール】
+- 提供データに基づいた事実のみを記載してください
+- 議事録の発言を引用する際は「【市名 会議名 / 日付 / 発言者】」の形式で出典を示してください
+- データにない情報は「記録なし」と記載し、憶測で補わないでください
+- 3市すべてのデータを公平に扱い、偏りなく比較してください
+
+【3市の議員・議決データ】
+${COMPARE_BASE_CONTEXT}`;
+
 // ---------------------------------------------------------------------------
 // Route handler
 // ---------------------------------------------------------------------------
 export async function POST(req: NextRequest) {
-  // Rate limit check
   const ip = getClientIP(req);
   const { allowed, remaining } = checkRateLimit(ip);
   if (!allowed) {
@@ -248,11 +303,12 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Parse request body
   let question: string;
+  let compareMode: boolean;
   try {
     const body = await req.json();
     question = (body.question ?? "").trim();
+    compareMode = body.compareMode === true;
     if (!question) throw new Error("empty");
   } catch {
     return NextResponse.json(
@@ -261,7 +317,6 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // API key check
   if (!process.env.ANTHROPIC_API_KEY) {
     return NextResponse.json(
       { error: "ANTHROPIC_API_KEY が設定されていません。" },
@@ -269,18 +324,21 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Build per-request system prompt: base context + relevant minutes snippets
-  const minutesContext = searchMinutes(question, MINUTE_CHUNKS);
-  const systemPrompt = minutesContext
-    ? `${SYSTEM_PROMPT_BASE}\n\n${minutesContext}`
-    : SYSTEM_PROMPT_BASE;
+  // 比較モード: 全市から多めにチャンクを取得
+  // 通常モード: 全市から標準数を取得
+  const maxChunks = compareMode ? 24 : 15;
+  const minutesContext = searchMinutes(question, MINUTE_CHUNKS, maxChunks);
 
-  // Stream response from Claude
+  const basePrompt = compareMode ? SYSTEM_PROMPT_COMPARE : SYSTEM_PROMPT_NORMAL;
+  const systemPrompt = minutesContext
+    ? `${basePrompt}\n\n${minutesContext}`
+    : basePrompt;
+
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
   const claudeStream = anthropic.messages.stream({
     model: "claude-opus-4-6",
-    max_tokens: 1024,
+    max_tokens: compareMode ? 2048 : 1024,
     system: systemPrompt,
     messages: [{ role: "user", content: question }],
   });
