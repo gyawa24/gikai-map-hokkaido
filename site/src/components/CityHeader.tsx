@@ -63,38 +63,54 @@ export default function CityHeader() {
   const city = cityKey ? CITY_CONFIG[cityKey] : null;
 
   return (
-    <header className="bg-[#1a3a6c] text-white">
-      <div className="max-w-5xl mx-auto px-4 pt-5 pb-3">
-        <div className="flex items-center gap-3 mb-1">
+    <header style={{ backgroundColor: "var(--color-primary)" }} className="text-white">
+      {/* 上部アクセントライン */}
+      <div className="h-1 bg-[#F7C948]" />
+
+      <div className="max-w-5xl mx-auto px-4 py-4">
+        {/* サイト名 + パンくず */}
+        <div className="flex items-center gap-2 mb-2">
           <Link
             href="/"
-            className="text-xs text-blue-200 hover:text-white transition-colors"
+            className="text-sm font-medium text-blue-100 hover:text-white transition-colors"
           >
             北海道議会情報マップ
           </Link>
           {city && (
             <>
-              <span className="text-blue-400 text-xs">›</span>
-              <span className="text-xs text-blue-200">{city.name}</span>
+              <span className="text-blue-300 text-sm" aria-hidden="true">›</span>
+              <span className="text-sm text-blue-100">{city.name}</span>
             </>
           )}
         </div>
-        <h1 className="text-xl font-bold tracking-tight">
+
+        {/* メイン見出し */}
+        <h1 className="text-xl font-bold tracking-tight leading-snug">
           {city ? city.name : "北海道議会情報マップ"}
         </h1>
+        {!city && (
+          <p className="text-sm text-blue-200 mt-0.5">
+            北海道内の市議会情報を横断的に検索・閲覧できます
+          </p>
+        )}
+
+        {/* 市ページのナビゲーション */}
         {city && (
-          <nav className="flex flex-wrap gap-1 mt-3">
+          <nav className="mt-3 -mb-px flex flex-wrap gap-0.5" aria-label="ページナビゲーション">
             {city.nav.map((item) => {
               const isActive = pathname === item.href;
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-sm px-3 py-1 rounded-md transition-colors ${
-                    isActive
-                      ? "bg-white/20 text-white font-semibold"
-                      : "text-blue-100 hover:bg-white/10 hover:text-white"
-                  }`}
+                  className={`
+                    text-sm px-3 py-2 transition-colors border-b-2
+                    ${isActive
+                      ? "border-[#F7C948] text-white font-semibold"
+                      : "border-transparent text-blue-100 hover:text-white hover:border-blue-300"
+                    }
+                  `}
+                  aria-current={isActive ? "page" : undefined}
                 >
                   {item.label}
                 </Link>

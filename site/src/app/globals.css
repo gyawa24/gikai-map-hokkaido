@@ -1,13 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f6f8;
-  --foreground: #111827;
+  --color-primary:       #1B3A6B;
+  --color-primary-mid:   #2A5298;
+  --color-primary-light: #E8EEF7;
+  --background:          #F4F6F9;
+  --foreground:          #1A202C;
+  --foreground-muted:    #4A5568;
+  --foreground-subtle:   #718096;
+  --border:              #CBD5E0;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
-    sans-serif;
+    "Yu Gothic UI", sans-serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.3;
 }
