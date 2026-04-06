@@ -54,6 +54,8 @@ function buildBaseContext(): string {
 // Minutes search: build flat chunk index once at module init
 // ---------------------------------------------------------------------------
 interface MinuteChunk {
+  city: string;       // "chitose" | "eniwa" | "tomakomai"
+  cityName: string;   // "千歳市" | "恵庭市" | "苫小牧市"
   councilName: string;
   year: string;
   typeLabel: string;
@@ -62,8 +64,14 @@ interface MinuteChunk {
   text: string;
 }
 
-function buildMinuteChunks(): MinuteChunk[] {
-  const minutesDir = path.join(process.cwd(), "data", "chitose", "minutes");
+const CITIES: Array<{ id: string; name: string }> = [
+  { id: "chitose",   name: "千歳市" },
+  { id: "eniwa",     name: "恵庭市" },
+  { id: "tomakomai", name: "苫小牧市" },
+];
+
+function loadChunksForCity(city: { id: string; name: string }): MinuteChunk[] {
+  const minutesDir = path.join(process.cwd(), "data", city.id, "minutes");
   if (!fs.existsSync(minutesDir)) return [];
 
   const indexPath = path.join(minutesDir, "index.json");
@@ -94,6 +102,8 @@ function buildMinuteChunks(): MinuteChunk[] {
       for (const minute of schedule.minutes) {
         if (!minute.text.trim()) continue;
         chunks.push({
+          city: city.id,
+          cityName: city.name,
           councilName: entry.name,
           year: entry.year,
           typeLabel: entry.type_label,
@@ -106,6 +116,10 @@ function buildMinuteChunks(): MinuteChunk[] {
   }
 
   return chunks;
+}
+
+function buildMinuteChunks(): MinuteChunk[] {
+  return CITIES.flatMap(loadChunksForCity);
 }
 
 // 検索に使わない日本語助詞・助動詞・一般的すぎる語
@@ -198,7 +212,7 @@ function searchMinutes(question: string, chunks: MinuteChunk[]): string {
         ? chunk.text.slice(0, MAX_SNIPPET_CHARS) + "…"
         : chunk.text;
     lines.push(
-      `\n【${chunk.councilName} / ${chunk.scheduleName} / ${chunk.title}】\n${snippet}`
+      `\n【${chunk.cityName} ${chunk.councilName} / ${chunk.scheduleName} / ${chunk.title}】\n${snippet}`
     );
   }
   return lines.join("\n");
@@ -207,14 +221,14 @@ function searchMinutes(question: string, chunks: MinuteChunk[]): string {
 const BASE_CONTEXT = buildBaseContext();
 const MINUTE_CHUNKS = buildMinuteChunks();
 
-const SYSTEM_PROMPT_BASE = `あなたは千歳市議会の情報アシスタントです。
-以下の千歳市議会データを参照して、ユーザーの質問に日本語で正確かつ簡潔に答えてください。
+const SYSTEM_PROMPT_BASE = `あなたは北海道の市議会情報アシスタントです。
+千歳市・恵庭市・苫小牧市の議会データをもとに、ユーザーの質問に日本語で正確かつ簡潔に答えてください。
 
 【回答ルール】
 - 提供データに基づいた事実のみを回答してください
 - データにない情報は「データに含まれていないため確認できません」と明示してください
 - 議員名・会派名・委員会名はデータの表記に従ってください
-- 議事録の発言を引用する際は「【会議名 / 日付 / 発言者】」の形式で出典を示してください
+- 議事録の発言を引用する際は「【市名 会議名 / 日付 / 発言者】」の形式で出典を示してください
 - できる限り具体的に、発言内容を引用しながら回答してください
 
 【千歳市議会データ】
