@@ -70,6 +70,14 @@ export default function MemberList({ members, factions }: Props) {
               </div>
             </div>
 
+            {/* 政党 */}
+            {member.party && (
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs text-gray-400 w-8 shrink-0">政党</span>
+                <span className="text-xs text-gray-700">{member.party}</span>
+              </div>
+            )}
+
             {/* 会派 */}
             {member.faction && (
               <div className="flex items-center gap-2 mb-3">

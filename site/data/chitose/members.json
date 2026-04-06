@@ -3,6 +3,7 @@
     "seat_number": 1,
     "name": "松倉 美加",
     "furigana": "まつくら みか",
+    "party": "自由民主党",
     "faction": "無所属",
     "committees": []
   },
@@ -10,6 +11,7 @@
     "seat_number": 2,
     "name": "今井 ひろみ",
     "furigana": "いまい ひろみ",
+    "party": "参政党",
     "faction": "参政党",
     "committees": [
       "厚生環境常任委員会"
@@ -19,6 +21,7 @@
     "seat_number": 3,
     "name": "小川 陽平",
     "furigana": "おがわ ようへい",
+    "party": "国民民主党",
     "faction": "ちとせ未来クラブ",
     "committees": [
       "総務文教常任委員会",
@@ -29,6 +32,7 @@
     "seat_number": 4,
     "name": "佐々木 昭",
     "furigana": "ささき あきら",
+    "party": "立憲民主党",
     "faction": "ちとせ未来クラブ",
     "committees": [
       "産業建設常任委員会"
@@ -38,6 +42,7 @@
     "seat_number": 5,
     "name": "相沢 晶子",
     "furigana": "あいざわ あきこ",
+    "party": "無所属",
     "faction": "無所属",
     "committees": [
       "厚生環境常任委員会副委員長"
@@ -47,6 +52,7 @@
     "seat_number": 6,
     "name": "北山 敬太",
     "furigana": "きたやま けいた",
+    "party": "無所属",
     "faction": "無所属",
     "committees": [
       "総務文教常任委員会"
@@ -56,6 +62,7 @@
     "seat_number": 7,
     "name": "吉谷 徹",
     "furigana": "よしたに とおる",
+    "party": "日本共産党",
     "faction": "日本共産党",
     "committees": [
       "産業建設常任委員会",
@@ -66,6 +73,7 @@
     "seat_number": 8,
     "name": "渡部 謙太郎",
     "furigana": "わたなべ けんたろう",
+    "party": "自由民主党",
     "faction": "自民党議員会",
     "committees": [
       "総務文教常任委員会副委員長"
@@ -75,6 +83,7 @@
     "seat_number": 9,
     "name": "北原 偉男",
     "furigana": "きたはら ひでお",
+    "party": "自由民主党",
     "faction": "自民党議員会",
     "committees": [
       "産業建設常任委員会委員長"
@@ -84,6 +93,7 @@
     "seat_number": 10,
     "name": "岩満 順郎",
     "furigana": "いわみつ じゅんろう",
+    "party": "自由民主党",
     "faction": "自民党議員会",
     "committees": [
       "厚生環境常任委員会",
@@ -94,6 +104,7 @@
     "seat_number": 11,
     "name": "大山 益巳",
     "furigana": "おおやま ますみ",
+    "party": "自由民主党",
     "faction": "自民党議員会",
     "committees": [
       "総務文教常任委員会委員長",
@@ -104,6 +115,7 @@
     "seat_number": 12,
     "name": "今野 正恵",
     "furigana": "こんの まさえ",
+    "party": "公明党",
     "faction": "公明党議員団",
     "committees": [
       "厚生環境常任委員会委員長",
@@ -114,6 +126,7 @@
     "seat_number": 13,
     "name": "平川 美由紀",
     "furigana": "ひらかわ みゆき",
+    "party": "公明党",
     "faction": "公明党議員団",
     "committees": [
       "産業建設常任委員会副委員長"
@@ -123,6 +136,7 @@
     "seat_number": 14,
     "name": "宮原 伸哉",
     "furigana": "みやはら しんや",
+    "party": "公明党",
     "faction": "公明党議員団",
     "committees": [
       "総務文教常任委員会",
@@ -133,6 +147,7 @@
     "seat_number": 15,
     "name": "仲山 正人",
     "furigana": "なかやま まさと",
+    "party": "公明党",
     "faction": "無所属",
     "committees": [
       "厚生環境常任委員会"
@@ -142,6 +157,7 @@
     "seat_number": 16,
     "name": "山口 康弘",
     "furigana": "やまぐち やすひろ",
+    "party": "自由民主党",
     "faction": "自民党議員会",
     "committees": [
       "総務文教常任委員会",
@@ -152,6 +168,7 @@
     "seat_number": 17,
     "name": "山崎 昌則",
     "furigana": "やまさき まさのり",
+    "party": "自由民主党",
     "faction": "自民党議員会",
     "committees": [
       "厚生環境常任委員会"
@@ -161,6 +178,7 @@
     "seat_number": 18,
     "name": "佐々木 雅宏",
     "furigana": "ささき まさひろ",
+    "party": "自由民主党",
     "faction": "自民の会",
     "committees": [
       "産業建設常任委員会"
@@ -170,6 +188,7 @@
     "seat_number": 19,
     "name": "古川 昌俊",
     "furigana": "ふるかわ まさとし",
+    "party": "自由民主党",
     "faction": "自民の会",
     "committees": [
       "産業建設常任委員会",
@@ -180,6 +199,7 @@
     "seat_number": 20,
     "name": "落野 章一",
     "furigana": "おちの しょういち",
+    "party": "無所属",
     "faction": "無所属",
     "committees": [
       "厚生環境常任委員会"
@@ -189,6 +209,7 @@
     "seat_number": 21,
     "name": "丸岡 伸幸",
     "furigana": "まるおか のぶゆき",
+    "party": "日本維新の会",
     "faction": "無所属クラブ（維新・市民）",
     "committees": [
       "総務文教常任委員会"
@@ -198,6 +219,7 @@
     "seat_number": 22,
     "name": "坂野 智",
     "furigana": "さかの さとし",
+    "party": "無所属",
     "faction": "無所属クラブ（維新・市民）",
     "committees": [
       "産業建設常任委員会",
@@ -208,6 +230,7 @@
     "seat_number": 23,
     "name": "梅尾 要一",
     "furigana": "うめお よういち",
+    "party": "無所属",
     "faction": "無所属",
     "committees": [
       "総務文教常任委員会",
