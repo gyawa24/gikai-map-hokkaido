@@ -26,6 +26,8 @@ const CITY_CONFIG: Record<
     nav: [
       { href: "/eniwa", label: "議員一覧" },
       { href: "/eniwa/decisions", label: "議決結果" },
+      { href: "/eniwa/schedule", label: "行事予定" },
+      { href: "/eniwa/newsletter", label: "議会だより" },
       { href: "/ai-search", label: "✦ AI検索" },
     ],
   },
@@ -35,6 +37,8 @@ const CITY_CONFIG: Record<
     nav: [
       { href: "/tomakomai", label: "議員一覧" },
       { href: "/tomakomai/decisions", label: "議決結果" },
+      { href: "/tomakomai/schedule", label: "行事予定" },
+      { href: "/tomakomai/newsletter", label: "議会報告" },
       { href: "/ai-search", label: "✦ AI検索" },
     ],
   },
