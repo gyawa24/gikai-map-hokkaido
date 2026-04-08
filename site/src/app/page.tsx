@@ -152,6 +152,47 @@ export default function HomePage() {
         ))}
       </div>
 
+      {/* 地図リンクカード */}
+      <Link
+        href="/map"
+        className="group flex items-center gap-4 bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] p-5 shadow-sm hover:shadow-md transition-all duration-150 mb-4"
+      >
+        <div className="w-10 h-10 rounded-lg bg-[#E8EEF7] flex items-center justify-center shrink-0 group-hover:bg-[#1B3A6B] transition-colors">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5 text-[#1B3A6B] group-hover:text-white transition-colors"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+            <line x1="9" y1="3" x2="9" y2="18" />
+            <line x1="15" y1="6" x2="15" y2="21" />
+          </svg>
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-base font-semibold text-[#1A202C]">地図で議会を探す</p>
+          <p className="text-sm text-[#4A5568]">千歳・恵庭・苫小牧の位置を地図で確認</p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-5 h-5 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 transition-colors"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </Link>
+
       {/* このサイトについて */}
       <section className="bg-[#E8EEF7] rounded-lg p-5 mb-6">
         <h2 className="text-base font-bold text-[#1B3A6B] mb-2">このサイトについて</h2>

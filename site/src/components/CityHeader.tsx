@@ -94,6 +94,35 @@ export default function CityHeader() {
           </p>
         )}
 
+        {/* グローバルナビ（トップ・地図ページ） */}
+        {!city && (
+          <nav className="mt-3 -mb-px flex flex-wrap gap-0.5" aria-label="グローバルナビゲーション">
+            {[
+              { href: "/", label: "トップ" },
+              { href: "/map", label: "地図" },
+              { href: "/ai-search", label: "✦ AI検索" },
+            ].map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`
+                    text-sm px-3 py-2 transition-colors border-b-2
+                    ${isActive
+                      ? "border-[#F7C948] text-white font-semibold"
+                      : "border-transparent text-blue-100 hover:text-white hover:border-blue-300"
+                    }
+                  `}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+          </nav>
+        )}
+
         {/* 市ページのナビゲーション */}
         {city && (
           <nav className="mt-3 -mb-px flex flex-wrap gap-0.5" aria-label="ページナビゲーション">
