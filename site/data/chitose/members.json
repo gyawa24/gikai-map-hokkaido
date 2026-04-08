@@ -5,7 +5,8 @@
     "furigana": "まつくら みか",
     "party": "自由民主党",
     "faction": "無所属",
-    "committees": []
+    "committees": [],
+    "votes": 1864
   },
   {
     "seat_number": 2,
@@ -15,7 +16,8 @@
     "faction": "参政党",
     "committees": [
       "厚生環境常任委員会"
-    ]
+    ],
+    "votes": 2301
   },
   {
     "seat_number": 3,
@@ -26,7 +28,8 @@
     "committees": [
       "総務文教常任委員会",
       "議会運営委員会"
-    ]
+    ],
+    "votes": 2534
   },
   {
     "seat_number": 4,
@@ -36,7 +39,8 @@
     "faction": "ちとせ未来クラブ",
     "committees": [
       "産業建設常任委員会"
-    ]
+    ],
+    "votes": 1565.564
   },
   {
     "seat_number": 5,
@@ -46,7 +50,8 @@
     "faction": "無所属",
     "committees": [
       "厚生環境常任委員会副委員長"
-    ]
+    ],
+    "votes": 886
   },
   {
     "seat_number": 6,
@@ -56,7 +61,8 @@
     "faction": "無所属",
     "committees": [
       "総務文教常任委員会"
-    ]
+    ],
+    "votes": 1378
   },
   {
     "seat_number": 7,
@@ -67,7 +73,8 @@
     "committees": [
       "産業建設常任委員会",
       "議会運営委員会副委員長"
-    ]
+    ],
+    "votes": 982
   },
   {
     "seat_number": 8,
@@ -77,7 +84,8 @@
     "faction": "自民党議員会",
     "committees": [
       "総務文教常任委員会副委員長"
-    ]
+    ],
+    "votes": 3281
   },
   {
     "seat_number": 9,
@@ -87,7 +95,8 @@
     "faction": "自民党議員会",
     "committees": [
       "産業建設常任委員会委員長"
-    ]
+    ],
+    "votes": 797
   },
   {
     "seat_number": 10,
@@ -98,7 +107,8 @@
     "committees": [
       "厚生環境常任委員会",
       "議会運営委員会委員長"
-    ]
+    ],
+    "votes": 1021
   },
   {
     "seat_number": 11,
@@ -109,7 +119,8 @@
     "committees": [
       "総務文教常任委員会委員長",
       "議会運営委員会"
-    ]
+    ],
+    "votes": 921
   },
   {
     "seat_number": 12,
@@ -120,7 +131,8 @@
     "committees": [
       "厚生環境常任委員会委員長",
       "議会運営委員会"
-    ]
+    ],
+    "votes": 1056
   },
   {
     "seat_number": 13,
@@ -130,7 +142,8 @@
     "faction": "公明党議員団",
     "committees": [
       "産業建設常任委員会副委員長"
-    ]
+    ],
+    "votes": 1219
   },
   {
     "seat_number": 14,
@@ -141,7 +154,8 @@
     "committees": [
       "総務文教常任委員会",
       "議会運営委員会"
-    ]
+    ],
+    "votes": 1123
   },
   {
     "seat_number": 15,
@@ -151,7 +165,8 @@
     "faction": "無所属",
     "committees": [
       "厚生環境常任委員会"
-    ]
+    ],
+    "votes": 1436
   },
   {
     "seat_number": 16,
@@ -162,7 +177,8 @@
     "committees": [
       "総務文教常任委員会",
       "議会運営委員会"
-    ]
+    ],
+    "votes": 964
   },
   {
     "seat_number": 17,
@@ -172,7 +188,8 @@
     "faction": "自民党議員会",
     "committees": [
       "厚生環境常任委員会"
-    ]
+    ],
+    "votes": 1405
   },
   {
     "seat_number": 18,
@@ -182,7 +199,8 @@
     "faction": "自民の会",
     "committees": [
       "産業建設常任委員会"
-    ]
+    ],
+    "votes": 835.435
   },
   {
     "seat_number": 19,
@@ -193,7 +211,8 @@
     "committees": [
       "産業建設常任委員会",
       "議会運営委員会"
-    ]
+    ],
+    "votes": 954
   },
   {
     "seat_number": 20,
@@ -203,7 +222,8 @@
     "faction": "無所属",
     "committees": [
       "厚生環境常任委員会"
-    ]
+    ],
+    "votes": 876
   },
   {
     "seat_number": 21,
@@ -213,7 +233,8 @@
     "faction": "無所属クラブ（維新・市民）",
     "committees": [
       "総務文教常任委員会"
-    ]
+    ],
+    "votes": 808
   },
   {
     "seat_number": 22,
@@ -224,7 +245,8 @@
     "committees": [
       "産業建設常任委員会",
       "議会運営委員会"
-    ]
+    ],
+    "votes": 843
   },
   {
     "seat_number": 23,
@@ -235,6 +257,7 @@
     "committees": [
       "総務文教常任委員会",
       "議会運営委員会"
-    ]
+    ],
+    "votes": 2843
   }
 ]

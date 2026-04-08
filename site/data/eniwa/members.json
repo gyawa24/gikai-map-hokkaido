@@ -1,23 +1,233 @@
 [
-  { "seat_number": 1,  "name": "長谷 文子",   "furigana": "はせ ふみこ",        "party": "自由民主党", "faction": "自由民主党議員団（翡翠会）", "committees": ["厚生消防常任委員会"] },
-  { "seat_number": 2,  "name": "川原 光男",   "furigana": "かわはら みつお",    "party": "自由民主党", "faction": "自由民主党議員団（翡翠会）", "committees": ["経済建設常任委員会"] },
-  { "seat_number": 3,  "name": "三上 まどか",  "furigana": "みかみ まどか",      "party": "無所属",   "faction": "自由民主党議員団（翡翠会）", "committees": ["経済建設常任委員会"] },
-  { "seat_number": 4,  "name": "矢野 浩章",   "furigana": "やの ひろあき",      "party": "無所属",   "faction": "自由民主党議員団（翡翠会）", "committees": ["総務文教常任委員会"] },
-  { "seat_number": 5,  "name": "吉永 孝之",   "furigana": "よしなが たかゆき",  "party": "無所属",   "faction": "自由民主党議員団（翡翠会）", "committees": ["厚生消防常任委員会"] },
-  { "seat_number": 6,  "name": "早坂 政芳",   "furigana": "はやさか まさよし",  "party": "無所属",   "faction": "自由民主党議員団（翡翠会）", "committees": ["厚生消防常任委員会"] },
-  { "seat_number": 7,  "name": "小林 卓矢",   "furigana": "こばやし たくや",    "party": "日本共産党", "faction": "諸派",                    "committees": ["経済建設常任委員会"] },
-  { "seat_number": 8,  "name": "太田 実保",   "furigana": "おおた みほ",        "party": "無所属",   "faction": "諸派",                    "committees": ["厚生消防常任委員会"] },
-  { "seat_number": 9,  "name": "石井 美季",   "furigana": "いしい みき",        "party": "無所属",   "faction": "自由民主党議員団（翡翠会）", "committees": ["経済建設常任委員会"] },
-  { "seat_number": 10, "name": "宮 利徳",     "furigana": "みや としのり",      "party": "自由民主党", "faction": "自由民主党議員団（翡翠会）", "committees": ["総務文教常任委員会"] },
-  { "seat_number": 11, "name": "柏野 大介",   "furigana": "かしわの だいすけ",  "party": "無所属",   "faction": "市民と歩む会",              "committees": ["総務文教常任委員会"] },
-  { "seat_number": 12, "name": "新岡 知恵",   "furigana": "にいおか ちえ",      "party": "無所属",   "faction": "市民と歩む会",              "committees": ["厚生消防常任委員会"] },
-  { "seat_number": 13, "name": "武藤 光一",   "furigana": "むとう こういち",    "party": "立憲民主党", "faction": "民主・春風の会",            "committees": ["総務文教常任委員会"] },
-  { "seat_number": 14, "name": "澁谷 敏明",   "furigana": "しぶや としあき",    "party": "無所属",   "faction": "民主・春風の会",            "committees": ["経済建設常任委員会"] },
-  { "seat_number": 15, "name": "前田 孝雄",   "furigana": "まえだ たかお",      "party": "自由民主党", "faction": "自由民主党議員団（翡翠会）", "committees": ["厚生消防常任委員会"] },
-  { "seat_number": 16, "name": "市川 愼二",   "furigana": "いちかわ しんじ",    "party": "自由民主党", "faction": "自由民主党議員団（翡翠会）", "committees": ["総務文教常任委員会"] },
-  { "seat_number": 17, "name": "小橋 薫",     "furigana": "こはし かおる",      "party": "自由民主党", "faction": "自由民主党議員団（翡翠会）", "committees": ["経済建設常任委員会"] },
-  { "seat_number": 18, "name": "川股 洋一",   "furigana": "かわまた よういち",  "party": "自由民主党", "faction": "自由民主党議員団（翡翠会）", "committees": ["総務文教常任委員会"] },
-  { "seat_number": 19, "name": "松島 緑",     "furigana": "まつしま みどり",    "party": "公明党",   "faction": "公明党議員団",              "committees": ["総務文教常任委員会"] },
-  { "seat_number": 20, "name": "生本 富士代", "furigana": "いきもと ふじよ",    "party": "公明党",   "faction": "公明党議員団",              "committees": ["厚生消防常任委員会"] },
-  { "seat_number": 21, "name": "野沢 宏紀",   "furigana": "のざわ こうき",      "party": "公明党",   "faction": "公明党議員団",              "committees": ["経済建設常任委員会"] }
+  {
+    "seat_number": 1,
+    "name": "長谷 文子",
+    "furigana": "はせ ふみこ",
+    "party": "自由民主党",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "厚生消防常任委員会"
+    ],
+    "votes": 1394
+  },
+  {
+    "seat_number": 2,
+    "name": "川原 光男",
+    "furigana": "かわはら みつお",
+    "party": "自由民主党",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "経済建設常任委員会"
+    ],
+    "votes": 1496
+  },
+  {
+    "seat_number": 3,
+    "name": "三上 まどか",
+    "furigana": "みかみ まどか",
+    "party": "無所属",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "経済建設常任委員会"
+    ],
+    "votes": 2037
+  },
+  {
+    "seat_number": 4,
+    "name": "矢野 浩章",
+    "furigana": "やの ひろあき",
+    "party": "無所属",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "総務文教常任委員会"
+    ],
+    "votes": 1442.91
+  },
+  {
+    "seat_number": 5,
+    "name": "吉永 孝之",
+    "furigana": "よしなが たかゆき",
+    "party": "無所属",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "厚生消防常任委員会"
+    ],
+    "votes": 819
+  },
+  {
+    "seat_number": 6,
+    "name": "早坂 政芳",
+    "furigana": "はやさか まさよし",
+    "party": "無所属",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "厚生消防常任委員会"
+    ],
+    "votes": 680
+  },
+  {
+    "seat_number": 7,
+    "name": "小林 卓矢",
+    "furigana": "こばやし たくや",
+    "party": "日本共産党",
+    "faction": "諸派",
+    "committees": [
+      "経済建設常任委員会"
+    ],
+    "votes": 1406
+  },
+  {
+    "seat_number": 8,
+    "name": "太田 実保",
+    "furigana": "おおた みほ",
+    "party": "無所属",
+    "faction": "諸派",
+    "committees": [
+      "厚生消防常任委員会"
+    ],
+    "votes": 1144
+  },
+  {
+    "seat_number": 9,
+    "name": "石井 美季",
+    "furigana": "いしい みき",
+    "party": "無所属",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "経済建設常任委員会"
+    ],
+    "votes": 682
+  },
+  {
+    "seat_number": 10,
+    "name": "宮 利徳",
+    "furigana": "みや としのり",
+    "party": "自由民主党",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "総務文教常任委員会"
+    ],
+    "votes": 1074
+  },
+  {
+    "seat_number": 11,
+    "name": "柏野 大介",
+    "furigana": "かしわの だいすけ",
+    "party": "無所属",
+    "faction": "市民と歩む会",
+    "committees": [
+      "総務文教常任委員会"
+    ],
+    "votes": 3208
+  },
+  {
+    "seat_number": 12,
+    "name": "新岡 知恵",
+    "furigana": "にいおか ちえ",
+    "party": "無所属",
+    "faction": "市民と歩む会",
+    "committees": [
+      "厚生消防常任委員会"
+    ],
+    "votes": 1315
+  },
+  {
+    "seat_number": 13,
+    "name": "武藤 光一",
+    "furigana": "むとう こういち",
+    "party": "立憲民主党",
+    "faction": "民主・春風の会",
+    "committees": [
+      "総務文教常任委員会"
+    ],
+    "votes": 1352
+  },
+  {
+    "seat_number": 14,
+    "name": "澁谷 敏明",
+    "furigana": "しぶや としあき",
+    "party": "無所属",
+    "faction": "民主・春風の会",
+    "committees": [
+      "経済建設常任委員会"
+    ],
+    "votes": 1084
+  },
+  {
+    "seat_number": 15,
+    "name": "前田 孝雄",
+    "furigana": "まえだ たかお",
+    "party": "自由民主党",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "厚生消防常任委員会"
+    ],
+    "votes": 1142
+  },
+  {
+    "seat_number": 16,
+    "name": "市川 愼二",
+    "furigana": "いちかわ しんじ",
+    "party": "自由民主党",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "総務文教常任委員会"
+    ],
+    "votes": 867
+  },
+  {
+    "seat_number": 17,
+    "name": "小橋 薫",
+    "furigana": "こはし かおる",
+    "party": "自由民主党",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "経済建設常任委員会"
+    ],
+    "votes": 1134
+  },
+  {
+    "seat_number": 18,
+    "name": "川股 洋一",
+    "furigana": "かわまた よういち",
+    "party": "自由民主党",
+    "faction": "自由民主党議員団（翡翠会）",
+    "committees": [
+      "総務文教常任委員会"
+    ],
+    "votes": 1316
+  },
+  {
+    "seat_number": 19,
+    "name": "松島 緑",
+    "furigana": "まつしま みどり",
+    "party": "公明党",
+    "faction": "公明党議員団",
+    "committees": [
+      "総務文教常任委員会"
+    ],
+    "votes": 1121
+  },
+  {
+    "seat_number": 20,
+    "name": "生本 富士代",
+    "furigana": "いきもと ふじよ",
+    "party": "公明党",
+    "faction": "公明党議員団",
+    "committees": [
+      "厚生消防常任委員会"
+    ],
+    "votes": 1043
+  },
+  {
+    "seat_number": 21,
+    "name": "野沢 宏紀",
+    "furigana": "のざわ こうき",
+    "party": "公明党",
+    "faction": "公明党議員団",
+    "committees": [
+      "経済建設常任委員会"
+    ],
+    "votes": 1107
+  }
 ]

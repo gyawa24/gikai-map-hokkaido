@@ -1,29 +1,244 @@
 [
-  { "seat_number": 1,  "name": "志方 光徳",   "furigana": "しかた みつのり",    "party": "無所属",                  "faction": "新緑",          "committees": [] },
-  { "seat_number": 2,  "name": "嶋中 康晴",   "furigana": "しまなか やすはる",  "party": "無所属",                  "faction": "新緑",          "committees": [] },
-  { "seat_number": 3,  "name": "山田 隆子",   "furigana": "やまだ たかこ",      "party": "無所属",                  "faction": "新緑",          "committees": [] },
-  { "seat_number": 4,  "name": "大野 正和",   "furigana": "おおの まさかず",    "party": "公明党",                  "faction": "公明党議員団",  "committees": [] },
-  { "seat_number": 5,  "name": "喜多 新二",   "furigana": "きた しんじ",        "party": "自由民主党",              "faction": "新緑",          "committees": [] },
-  { "seat_number": 6,  "name": "山谷 芳則",   "furigana": "やまや よしのり",    "party": "無所属",                  "faction": "新緑",          "committees": [] },
-  { "seat_number": 7,  "name": "神山 哲太郎", "furigana": "かみやま てつたろう", "party": "公明党",                  "faction": "公明党議員団",  "committees": [] },
-  { "seat_number": 8,  "name": "大西 厚子",   "furigana": "おおにし あつこ",    "party": "公明党",                  "faction": "公明党議員団",  "committees": [] },
-  { "seat_number": 9,  "name": "触沢 高秀",   "furigana": "ふれさわ たかひで",  "party": "NHKから国民を守る党",     "faction": "無所属",        "committees": [] },
-  { "seat_number": 10, "name": "橋本 智子",   "furigana": "はしもと ともこ",    "party": "立憲民主党",              "faction": "民主クラブ",    "committees": [] },
-  { "seat_number": 11, "name": "佐々木 修司", "furigana": "ささき しゅうじ",    "party": "立憲民主党",              "faction": "民主クラブ",    "committees": [] },
-  { "seat_number": 12, "name": "岩田 薫",     "furigana": "いわた かおる",      "party": "立憲民主党",              "faction": "民主クラブ",    "committees": [] },
-  { "seat_number": 13, "name": "牧田 俊之",   "furigana": "まきた としゆき",    "party": "無所属",                  "faction": "改革フォーラム","committees": [] },
-  { "seat_number": 14, "name": "首藤 孝治",   "furigana": "しゅどう こうじ",    "party": "無所属",                  "faction": "改革フォーラム","committees": [] },
-  { "seat_number": 15, "name": "森本 健太",   "furigana": "もりもと けんた",    "party": "日本共産党",              "faction": "日本共産党市議団","committees": [] },
-  { "seat_number": 16, "name": "原 啓司",     "furigana": "はら けいじ",        "party": "日本共産党",              "faction": "日本共産党市議団","committees": [] },
-  { "seat_number": 17, "name": "竹田 秀泰",   "furigana": "たけだ ひでやす",    "party": "無所属",                  "faction": "新緑",          "committees": [] },
-  { "seat_number": 19, "name": "藤田 広美",   "furigana": "ふじた ひろみ",      "party": "公明党",                  "faction": "公明党議員団",  "committees": [] },
-  { "seat_number": 20, "name": "池田 謙次",   "furigana": "いけだ けんじ",      "party": "公明党",                  "faction": "公明党議員団",  "committees": [] },
-  { "seat_number": 21, "name": "谷川 芳一",   "furigana": "たにかわ よしかず",  "party": "自由民主党",              "faction": "会派市民",      "committees": [] },
-  { "seat_number": 22, "name": "桜井 忠",     "furigana": "さくらい ただし",    "party": "無所属",                  "faction": "会派市民",      "committees": [] },
-  { "seat_number": 23, "name": "松尾 省勝",   "furigana": "まつお まさかつ",    "party": "立憲民主党",              "faction": "民主クラブ",    "committees": [] },
-  { "seat_number": 24, "name": "小山 征三",   "furigana": "こやま せいぞう",    "party": "立憲民主党",              "faction": "民主クラブ",    "committees": [] },
-  { "seat_number": 25, "name": "松井 雅宏",   "furigana": "まつい まさひろ",    "party": "国民民主党",              "faction": "改革フォーラム","committees": [] },
-  { "seat_number": 26, "name": "越川 慶一",   "furigana": "こしかわ けいいち",  "party": "無所属",                  "faction": "改革フォーラム","committees": [] },
-  { "seat_number": 27, "name": "小野寺 幸恵", "furigana": "おのでら ゆきえ",    "party": "日本共産党",              "faction": "日本共産党市議団","committees": [] },
-  { "seat_number": 28, "name": "冨岡 隆",     "furigana": "とみおか たかし",    "party": "日本共産党",              "faction": "日本共産党市議団","committees": [] }
+  {
+    "seat_number": 1,
+    "name": "志方 光徳",
+    "furigana": "しかた みつのり",
+    "party": "無所属",
+    "faction": "新緑",
+    "committees": [],
+    "votes": 1080
+  },
+  {
+    "seat_number": 2,
+    "name": "嶋中 康晴",
+    "furigana": "しまなか やすはる",
+    "party": "無所属",
+    "faction": "新緑",
+    "committees": [],
+    "votes": 1216
+  },
+  {
+    "seat_number": 3,
+    "name": "山田 隆子",
+    "furigana": "やまだ たかこ",
+    "party": "無所属",
+    "faction": "新緑",
+    "committees": [],
+    "votes": 1901
+  },
+  {
+    "seat_number": 4,
+    "name": "大野 正和",
+    "furigana": "おおの まさかず",
+    "party": "公明党",
+    "faction": "公明党議員団",
+    "committees": [],
+    "votes": 1807
+  },
+  {
+    "seat_number": 5,
+    "name": "喜多 新二",
+    "furigana": "きた しんじ",
+    "party": "自由民主党",
+    "faction": "新緑",
+    "committees": [],
+    "votes": 1890
+  },
+  {
+    "seat_number": 6,
+    "name": "山谷 芳則",
+    "furigana": "やまや よしのり",
+    "party": "無所属",
+    "faction": "新緑",
+    "committees": [],
+    "votes": 2014
+  },
+  {
+    "seat_number": 7,
+    "name": "神山 哲太郎",
+    "furigana": "かみやま てつたろう",
+    "party": "公明党",
+    "faction": "公明党議員団",
+    "committees": [],
+    "votes": 2003
+  },
+  {
+    "seat_number": 8,
+    "name": "大西 厚子",
+    "furigana": "おおにし あつこ",
+    "party": "公明党",
+    "faction": "公明党議員団",
+    "committees": [],
+    "votes": 2126
+  },
+  {
+    "seat_number": 9,
+    "name": "触沢 高秀",
+    "furigana": "ふれさわ たかひで",
+    "party": "NHKから国民を守る党",
+    "faction": "無所属",
+    "committees": [],
+    "votes": 938
+  },
+  {
+    "seat_number": 10,
+    "name": "橋本 智子",
+    "furigana": "はしもと ともこ",
+    "party": "立憲民主党",
+    "faction": "民主クラブ",
+    "committees": [],
+    "votes": 1768
+  },
+  {
+    "seat_number": 11,
+    "name": "佐々木 修司",
+    "furigana": "ささき しゅうじ",
+    "party": "立憲民主党",
+    "faction": "民主クラブ",
+    "committees": [],
+    "votes": 1717
+  },
+  {
+    "seat_number": 12,
+    "name": "岩田 薫",
+    "furigana": "いわた かおる",
+    "party": "立憲民主党",
+    "faction": "民主クラブ",
+    "committees": [],
+    "votes": 1872
+  },
+  {
+    "seat_number": 13,
+    "name": "牧田 俊之",
+    "furigana": "まきた としゆき",
+    "party": "無所属",
+    "faction": "改革フォーラム",
+    "committees": [],
+    "votes": 3678
+  },
+  {
+    "seat_number": 14,
+    "name": "首藤 孝治",
+    "furigana": "しゅどう こうじ",
+    "party": "無所属",
+    "faction": "改革フォーラム",
+    "committees": [],
+    "votes": 2082
+  },
+  {
+    "seat_number": 15,
+    "name": "森本 健太",
+    "furigana": "もりもと けんた",
+    "party": "日本共産党",
+    "faction": "日本共産党市議団",
+    "committees": [],
+    "votes": 2306
+  },
+  {
+    "seat_number": 16,
+    "name": "原 啓司",
+    "furigana": "はら けいじ",
+    "party": "日本共産党",
+    "faction": "日本共産党市議団",
+    "committees": [],
+    "votes": 1709
+  },
+  {
+    "seat_number": 17,
+    "name": "竹田 秀泰",
+    "furigana": "たけだ ひでやす",
+    "party": "無所属",
+    "faction": "新緑",
+    "committees": [],
+    "votes": 1312
+  },
+  {
+    "seat_number": 19,
+    "name": "藤田 広美",
+    "furigana": "ふじた ひろみ",
+    "party": "公明党",
+    "faction": "公明党議員団",
+    "committees": [],
+    "votes": 1684
+  },
+  {
+    "seat_number": 20,
+    "name": "池田 謙次",
+    "furigana": "いけだ けんじ",
+    "party": "公明党",
+    "faction": "公明党議員団",
+    "committees": [],
+    "votes": 2007
+  },
+  {
+    "seat_number": 21,
+    "name": "谷川 芳一",
+    "furigana": "たにかわ よしかず",
+    "party": "自由民主党",
+    "faction": "会派市民",
+    "committees": [],
+    "votes": 2225
+  },
+  {
+    "seat_number": 22,
+    "name": "桜井 忠",
+    "furigana": "さくらい ただし",
+    "party": "無所属",
+    "faction": "会派市民",
+    "committees": [],
+    "votes": 1722
+  },
+  {
+    "seat_number": 23,
+    "name": "松尾 省勝",
+    "furigana": "まつお まさかつ",
+    "party": "立憲民主党",
+    "faction": "民主クラブ",
+    "committees": [],
+    "votes": 1686
+  },
+  {
+    "seat_number": 24,
+    "name": "小山 征三",
+    "furigana": "こやま せいぞう",
+    "party": "立憲民主党",
+    "faction": "民主クラブ",
+    "committees": [],
+    "votes": 2080
+  },
+  {
+    "seat_number": 25,
+    "name": "松井 雅宏",
+    "furigana": "まつい まさひろ",
+    "party": "国民民主党",
+    "faction": "改革フォーラム",
+    "committees": [],
+    "votes": 2674
+  },
+  {
+    "seat_number": 26,
+    "name": "越川 慶一",
+    "furigana": "こしかわ けいいち",
+    "party": "無所属",
+    "faction": "改革フォーラム",
+    "committees": [],
+    "votes": 2339
+  },
+  {
+    "seat_number": 27,
+    "name": "小野寺 幸恵",
+    "furigana": "おのでら ゆきえ",
+    "party": "日本共産党",
+    "faction": "日本共産党市議団",
+    "committees": []
+  },
+  {
+    "seat_number": 28,
+    "name": "冨岡 隆",
+    "furigana": "とみおか たかし",
+    "party": "日本共産党",
+    "faction": "日本共産党市議団",
+    "committees": [],
+    "votes": 1740
+  }
 ]
