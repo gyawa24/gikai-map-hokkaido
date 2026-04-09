@@ -15,6 +15,7 @@ const CITY_CONFIG: Record<
     nav: [
       { href: "/chitose", label: "議員一覧" },
       { href: "/decisions", label: "議決結果" },
+      { href: "/chitose/sessions", label: "中継動画" },
       { href: "/schedule", label: "行事予定" },
       { href: "/newsletter", label: "議会だより" },
       { href: "/ai-search", label: "✦ AI検索" },
@@ -54,6 +55,7 @@ function detectCity(pathname: string): string | null {
     pathname.startsWith("/newsletter")
   )
     return "chitose";
+  // /chitose/* routes are caught by startsWith above
   return null;
 }
 

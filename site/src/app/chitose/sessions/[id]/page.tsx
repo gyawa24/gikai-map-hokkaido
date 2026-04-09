@@ -1,0 +1,96 @@
+import fs from "fs";
+import path from "path";
+import { notFound } from "next/navigation";
+import type { Session, SessionSummary } from "@/types/session";
+import TranscriptSegment from "@/components/TranscriptSegment";
+
+function getSession(id: string): Session | null {
+  const fp = path.join(process.cwd(), "data", "chitose", "sessions", `${id}.json`);
+  try {
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Session;
+  } catch {
+    return null;
+  }
+}
+
+export async function generateStaticParams() {
+  const fp = path.join(process.cwd(), "data", "chitose", "sessions", "index.json");
+  try {
+    const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as SessionSummary[];
+    return index.map((s) => ({ id: s.id }));
+  } catch {
+    return [];
+  }
+}
+
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
+}
+
+export default async function SessionPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const session = getSession(id);
+  if (!session) notFound();
+
+  const hasContent = session.segments.length > 0;
+
+  return (
+    <div className="max-w-2xl mx-auto">
+      {/* タイトル */}
+      <section className="mb-5">
+        {session.committee && (
+          <p className="text-sm text-[#718096] mb-1">{session.committee}</p>
+        )}
+        <h2 className="text-xl font-bold text-[#1B3A6B] leading-snug mb-1">
+          {session.title}
+        </h2>
+        <p className="text-sm text-[#4A5568]">{formatDate(session.date)}</p>
+      </section>
+
+      {/* YouTube埋め込み */}
+      <div className="mb-6 rounded-lg overflow-hidden border border-[#CBD5E0] shadow-sm">
+        <div className="relative" style={{ paddingBottom: "56.25%" }}>
+          <iframe
+            src={`https://www.youtube.com/embed/${session.youtube_id}`}
+            title={session.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full"
+          />
+        </div>
+      </div>
+
+      {/* セグメント一覧 */}
+      {hasContent ? (
+        <div className="flex flex-col gap-4">
+          <h3 className="text-base font-bold text-[#1B3A6B]">
+            要約・文字起こし
+            <span className="ml-2 text-sm font-normal text-[#718096]">
+              （{session.segments.length}部構成）
+            </span>
+          </h3>
+          {session.segments.map((seg) => (
+            <TranscriptSegment key={seg.index} seg={seg} />
+          ))}
+          {session.generated_at && (
+            <p className="text-xs text-[#718096] text-right">
+              要約生成日: {session.generated_at}
+            </p>
+          )}
+        </div>
+      ) : (
+        <div className="bg-[#E8EEF7] rounded-lg p-6 text-center">
+          <p className="text-base font-medium text-[#1B3A6B] mb-1">文字起こし準備中</p>
+          <p className="text-sm text-[#4A5568]">
+            文字起こしデータが追加されると、要約と全文が表示されます。
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
