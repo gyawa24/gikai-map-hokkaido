@@ -1,5 +1,95 @@
 [
   {
+    "id": "r8-teireikai1-day1-20260302",
+    "youtube_id": "vGVr7zJcpik",
+    "title": "令和8年 第1回定例会 第1日目",
+    "date": "2026-03-02",
+    "committee": "本会議",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-teireikai1-hosei-20260306",
+    "youtube_id": "zT61F_LuEl4",
+    "title": "令和8年 第1回定例会 補正予算特別委員会",
+    "date": "2026-03-06",
+    "committee": "補正予算特別委員会",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-teireikai1-day2-yosan1-20260309",
+    "youtube_id": "qIHuLviM2nI",
+    "title": "令和8年 第1回定例会 第2日目・予算特別委員会第1日目",
+    "date": "2026-03-09",
+    "committee": "本会議・予算特別委員会",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-teireikai1-day3-20260310",
+    "youtube_id": "TFUPTq4iu88",
+    "title": "令和8年 第1回定例会 第3日目",
+    "date": "2026-03-10",
+    "committee": "本会議",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-teireikai1-day4-20260311",
+    "youtube_id": "XySXUuIWpT8",
+    "title": "令和8年 第1回定例会 第4日目",
+    "date": "2026-03-11",
+    "committee": "本会議",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-teireikai1-day5-20260312",
+    "youtube_id": "1h_TmAXXPgE",
+    "title": "令和8年 第1回定例会 第5日目",
+    "date": "2026-03-12",
+    "committee": "本会議",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-teireikai1-day6-20260313",
+    "youtube_id": "yyVZ0o3C634",
+    "title": "令和8年 第1回定例会 第6日目",
+    "date": "2026-03-13",
+    "committee": "本会議",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-yosan-2nd-20260318",
+    "youtube_id": "IRWNqSmn6tY",
+    "title": "令和8年 予算特別委員会 第2日目",
+    "date": "2026-03-18",
+    "committee": "予算特別委員会",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-yosan-3rd-20260319",
+    "youtube_id": "0_uecSuKQbA",
+    "title": "令和8年 予算特別委員会 第3日目",
+    "date": "2026-03-19",
+    "committee": "予算特別委員会",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
     "id": "r8-yosan-4th-20260323",
     "youtube_id": "M7dzWUNOj_Y",
     "title": "令和8年 予算特別委員会 第4日目",
@@ -8,5 +98,35 @@
     "segment_count": 4,
     "has_transcript": true,
     "has_summary": true
+  },
+  {
+    "id": "r8-yosan-5th-20260324",
+    "youtube_id": "azlIdpMcE7Q",
+    "title": "令和8年 予算特別委員会 第5日目",
+    "date": "2026-03-24",
+    "committee": "予算特別委員会",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-yosan-6th-20260325",
+    "youtube_id": "MBceHawf2ys",
+    "title": "令和8年 予算特別委員会 第6日目",
+    "date": "2026-03-25",
+    "committee": "予算特別委員会",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
+  },
+  {
+    "id": "r8-teireikai1-day7-20260326",
+    "youtube_id": "rsSUytan7uY",
+    "title": "令和8年 第1回定例会 第7日目",
+    "date": "2026-03-26",
+    "committee": "本会議",
+    "segment_count": 0,
+    "has_transcript": false,
+    "has_summary": false
   }
 ]
