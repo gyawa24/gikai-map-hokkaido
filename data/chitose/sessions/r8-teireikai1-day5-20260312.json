@@ -5,6 +5,20 @@
   "date": "2026-03-12",
   "committee": "本会議",
   "city": "chitose",
-  "generated_at": null,
-  "segments": []
+  "generated_at": "2026-04-09",
+  "segments": [
+    {
+      "index": 1,
+      "label": "第1部",
+      "start_time": "3:17:30",
+      "end_time": "3:17:59",
+      "transcript": "横田市長",
+      "summary": "3〜4文の日本語要約",
+      "topics": [
+        "キーワード1",
+        "キーワード2",
+        "キーワード3"
+      ]
+    }
+  ]
 }

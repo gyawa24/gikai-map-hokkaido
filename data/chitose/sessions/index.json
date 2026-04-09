@@ -5,9 +5,9 @@
     "title": "令和8年 第1回定例会 第1日目",
     "date": "2026-03-02",
     "committee": "本会議",
-    "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "segment_count": 3,
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-teireikai1-hosei-20260306",
@@ -15,9 +15,9 @@
     "title": "令和8年 第1回定例会 補正予算特別委員会",
     "date": "2026-03-06",
     "committee": "補正予算特別委員会",
-    "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "segment_count": 1,
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-teireikai1-day2-yosan1-20260309",
@@ -26,8 +26,8 @@
     "date": "2026-03-09",
     "committee": "本会議・予算特別委員会",
     "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-teireikai1-day3-20260310",
@@ -55,9 +55,9 @@
     "title": "令和8年 第1回定例会 第5日目",
     "date": "2026-03-12",
     "committee": "本会議",
-    "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "segment_count": 1,
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-teireikai1-day6-20260313",
@@ -75,9 +75,9 @@
     "title": "令和8年 予算特別委員会 第2日目",
     "date": "2026-03-18",
     "committee": "予算特別委員会",
-    "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "segment_count": 2,
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-yosan-3rd-20260319",
@@ -85,9 +85,9 @@
     "title": "令和8年 予算特別委員会 第3日目",
     "date": "2026-03-19",
     "committee": "予算特別委員会",
-    "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "segment_count": 2,
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-yosan-4th-20260323",
@@ -105,9 +105,9 @@
     "title": "令和8年 予算特別委員会 第5日目",
     "date": "2026-03-24",
     "committee": "予算特別委員会",
-    "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "segment_count": 1,
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-yosan-6th-20260325",
@@ -125,8 +125,8 @@
     "title": "令和8年 第1回定例会 第7日目",
     "date": "2026-03-26",
     "committee": "本会議",
-    "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "segment_count": 1,
+    "has_transcript": true,
+    "has_summary": true
   }
 ]

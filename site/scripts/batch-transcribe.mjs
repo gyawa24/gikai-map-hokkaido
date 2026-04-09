@@ -127,7 +127,9 @@ for (const entry of sessions) {
 
     // 3. セグメント分割 & 要約生成
     console.log("  [3/3] 要約生成中...");
-    const whisperData = JSON.parse(fs.readFileSync(whisperJson, "utf-8"));
+    // mlx_whisper は NaN を出力することがある（有効なJSONでないため置換）
+    const whisperRaw = fs.readFileSync(whisperJson, "utf-8").replace(/:\s*NaN/g, ": null");
+    const whisperData = JSON.parse(whisperRaw);
     const rawSegs = whisperData.segments ?? [];
 
     // 10分休憩を探してパートに分割
