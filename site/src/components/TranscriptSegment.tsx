@@ -6,7 +6,7 @@ import SegmentDetail from "./SegmentDetail";
 
 export default function TranscriptSegment({ seg }: { seg: SessionSegment }) {
   const [open, setOpen] = useState(false);
-  const [bodyOpen, setBodyOpen] = useState(true);
+  const [bodyOpen, setBodyOpen] = useState(false);
 
   return (
     <div className="bg-white rounded-lg border border-[#CBD5E0] overflow-hidden">
