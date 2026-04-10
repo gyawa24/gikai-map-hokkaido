@@ -15,7 +15,7 @@ const CITY_CONFIG: Record<
     nav: [
       { href: "/chitose", label: "議員一覧" },
       { href: "/decisions", label: "議決結果" },
-      { href: "/chitose/sessions", label: "中継動画" },
+      { href: "/chitose/sessions", label: "会議録・要約" },
       { href: "/schedule", label: "行事予定" },
       { href: "/newsletter", label: "議会だより" },
       { href: "/ai-search", label: "✦ AI検索" },
@@ -102,6 +102,7 @@ export default function CityHeader() {
             {[
               { href: "/", label: "トップ" },
               { href: "/map", label: "地図" },
+              { href: "/chitose/sessions", label: "会議録・要約" },
               { href: "/search", label: "検索" },
               { href: "/ai-search", label: "✦ AI検索" },
             ].map((item) => {
