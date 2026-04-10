@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 type QA = { q: string; a: string };
 type TopicCard = {
   theme: string;
@@ -13,6 +15,39 @@ type Detail = {
   overview: string;
   topics: TopicCard[];
 };
+
+function QAItem({ qa, color }: { qa: QA; color: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="flex flex-col gap-1">
+      <div className="flex gap-2 items-start">
+        <span
+          className="text-xs font-bold px-1.5 py-0.5 rounded flex-shrink-0 mt-0.5"
+          style={{ backgroundColor: color + "20", color }}
+        >Q</span>
+        <p className="text-sm text-[#1A202C] leading-relaxed">{qa.q}</p>
+      </div>
+      <div className="flex gap-2 items-start">
+        <span className="text-xs font-bold px-1.5 py-0.5 rounded flex-shrink-0 mt-0.5 bg-[#E8EEF7] text-[#1B3A6B]">A</span>
+        <div className="flex-1">
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="text-sm text-[#4A5568] text-left w-full flex items-center justify-between gap-2"
+          >
+            <span className={open ? "" : "line-clamp-1"}>{qa.a}</span>
+            <svg
+              className={`w-3.5 h-3.5 flex-shrink-0 transition-transform text-[#718096] ${open ? "rotate-180" : ""}`}
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function SegmentDetail({ detail }: { detail: Detail }) {
   return (
@@ -45,19 +80,7 @@ export default function SegmentDetail({ detail }: { detail: Detail }) {
             {/* Q&A */}
             <div className="flex flex-col gap-2.5 ml-1">
               {topic.qa.map((qa, j) => (
-                <div key={j} className="flex flex-col gap-1">
-                  <div className="flex gap-2 items-start">
-                    <span
-                      className="text-xs font-bold px-1.5 py-0.5 rounded flex-shrink-0 mt-0.5"
-                      style={{ backgroundColor: topic.color + "20", color: topic.color }}
-                    >Q</span>
-                    <p className="text-sm text-[#1A202C] leading-relaxed">{qa.q}</p>
-                  </div>
-                  <div className="flex gap-2 items-start">
-                    <span className="text-xs font-bold px-1.5 py-0.5 rounded flex-shrink-0 mt-0.5 bg-[#E8EEF7] text-[#1B3A6B]">A</span>
-                    <p className="text-sm text-[#4A5568] leading-relaxed">{qa.a}</p>
-                  </div>
-                </div>
+                <QAItem key={j} qa={qa} color={topic.color} />
               ))}
             </div>
           </div>
