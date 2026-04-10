@@ -1,13 +1,22 @@
 import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
-import type { MinutesSession, MinutesIndexItem } from "@/types/minutes";
+import type { MinutesSession, MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesReader from "@/components/MinutesReader";
 
 function getSession(id: string): MinutesSession | null {
   const fp = path.join(process.cwd(), "data", "chitose", "minutes", `${id}.json`);
   try {
     return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesSession;
+  } catch {
+    return null;
+  }
+}
+
+function getEnriched(id: string): MinutesEnriched | null {
+  const fp = path.join(process.cwd(), "data", "chitose", "minutes", "enriched", `${id}.json`);
+  try {
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesEnriched;
   } catch {
     return null;
   }
@@ -30,6 +39,10 @@ function typeCategory(typeLabel: string): string {
   return "";
 }
 
+const ROLE_ORDER: Record<string, number> = {
+  "議長": 0, "市長": 1, "副市長": 2, "議員": 3, "理事者": 4, "その他": 5,
+};
+
 export default async function MinutesDetailPage({
   params,
 }: {
@@ -39,11 +52,20 @@ export default async function MinutesDetailPage({
   const session = getSession(id);
   if (!session) notFound();
 
+  const enriched = getEnriched(id);
   const category = typeCategory(session.type_label);
   const totalSpeeches = session.schedules.reduce(
     (acc, s) => acc + s.minutes.filter((m) => m.minute_type !== "名簿").length,
     0
   );
+
+  const memberSpeakers = enriched?.speakers
+    .filter((s) => s.role === "議員")
+    .sort((a, b) => b.speech_count - a.speech_count) ?? [];
+
+  const officialSpeakers = enriched?.speakers
+    .filter((s) => s.role !== "議員" && s.role !== "その他")
+    .sort((a, b) => (ROLE_ORDER[a.role] ?? 5) - (ROLE_ORDER[b.role] ?? 5)) ?? [];
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -75,6 +97,96 @@ export default async function MinutesDetailPage({
           </span>
         </div>
       </section>
+
+      {/* AI要約セクション */}
+      {enriched ? (
+        <section className="mb-6 space-y-4">
+          {/* 要約 */}
+          <div className="bg-[#E8EEF7] rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-bold text-[#2A5298]">✦ AI要約</span>
+            </div>
+            <p className="text-base text-[#1A202C] leading-relaxed mb-3">
+              {enriched.summary}
+            </p>
+            {enriched.highlights.length > 0 && (
+              <ul className="space-y-1">
+                {enriched.highlights.map((h, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-[#4A5568]">
+                    <span className="text-[#2A5298] shrink-0 mt-0.5">·</span>
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          {/* タグ */}
+          {enriched.tags.length > 0 && (
+            <div className="flex flex-wrap gap-1.5">
+              {enriched.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs px-2.5 py-1 bg-white border border-[#CBD5E0] text-[#4A5568] rounded-full"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* 発言した議員 */}
+          {(memberSpeakers.length > 0 || enriched.questioners.length > 0) && (
+            <div className="bg-white rounded-lg border border-[#CBD5E0] p-4 shadow-sm">
+              <h3 className="text-sm font-bold text-[#1B3A6B] mb-3">質問に立った議員</h3>
+              <div className="space-y-2">
+                {enriched.questioners.length > 0 ? (
+                  enriched.questioners.map((q) => (
+                    <div key={q.name} className="flex items-start gap-2">
+                      <span className="text-sm font-medium text-[#1A202C] shrink-0 w-28">{q.name}</span>
+                      <div className="flex flex-wrap gap-1">
+                        {q.topics.map((t) => (
+                          <span key={t} className="text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#2A5298] rounded-full">{t}</span>
+                        ))}
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  memberSpeakers.map((s) => (
+                    <div key={s.name} className="flex items-center gap-2">
+                      <span className="text-sm text-[#1A202C]">{s.name}</span>
+                      <span className="text-xs text-[#718096]">{s.speech_count}回</span>
+                    </div>
+                  ))
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* 理事者・執行部 */}
+          {officialSpeakers.length > 0 && (
+            <div className="bg-white rounded-lg border border-[#CBD5E0] p-4 shadow-sm">
+              <h3 className="text-sm font-bold text-[#1B3A6B] mb-3">答弁した執行部</h3>
+              <div className="flex flex-wrap gap-x-4 gap-y-1">
+                {officialSpeakers.map((s) => (
+                  <div key={s.name} className="flex items-center gap-1.5">
+                    <span className="text-xs text-[#718096]">{s.role}</span>
+                    <span className="text-sm text-[#1A202C]">{s.name.replace(/[◎○]/g, "")}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <p className="text-xs text-[#A0AEC0] text-right">AI要約生成日: {enriched.generated_at}</p>
+        </section>
+      ) : (
+        <div className="mb-6 bg-[#F4F6F9] rounded-lg p-4 border border-dashed border-[#CBD5E0]">
+          <p className="text-sm text-[#718096] text-center">
+            要約・タグ・発言者リストを準備中です
+          </p>
+        </div>
+      )}
 
       <MinutesReader session={session} />
     </div>
