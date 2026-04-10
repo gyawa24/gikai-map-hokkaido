@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import type { Member } from "@/types/member";
+import type { Member, MemberActivity } from "@/types/member";
 
 const FACTION_STYLES: Record<string, { badge: string }> = {
   "自民党議員会":              { badge: "bg-amber-50 text-amber-800 border border-amber-200" },
@@ -41,12 +41,134 @@ function factionBadgeClass(faction: string): string {
 
 type SortKey = "seat" | "party" | "kana";
 
+// ---------- MemberCard ----------
+
+function MemberCard({
+  member,
+  activity,
+  factionBadgeClass,
+}: {
+  member: Member;
+  activity: MemberActivity | undefined;
+  factionBadgeClass: (f: string) => string;
+}) {
+  const [activityOpen, setActivityOpen] = useState(false);
+
+  return (
+    <div className="bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] shadow-sm hover:shadow-md transition-all duration-150 overflow-hidden">
+      <div className="p-5">
+        {/* 議席番号 + 氏名 */}
+        <div className="flex items-start gap-3 mb-4">
+          <span className="mt-1 text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5 whitespace-nowrap shrink-0">
+            {member.seat_number}番
+          </span>
+          <div className="flex-1 min-w-0">
+            <p className="text-lg font-bold text-[#1A202C] leading-snug">{member.name}</p>
+            <p className="text-xs text-[#718096] mt-0.5">{member.furigana}</p>
+          </div>
+          {activity && (
+            <span className="shrink-0 text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded-full px-2 py-0.5 whitespace-nowrap">
+              質問 {activity.session_count}回
+            </span>
+          )}
+        </div>
+
+        <hr className="border-[#E2E8F0] mb-3" />
+
+        {/* 政党 */}
+        {member.party && (
+          <div className="flex items-start gap-2 mb-2">
+            <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">政党</span>
+            <span className="text-sm text-[#1A202C]">{member.party}</span>
+          </div>
+        )}
+
+        {/* 会派 */}
+        {member.faction && (
+          <div className="flex items-start gap-2 mb-3">
+            <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">会派</span>
+            <span className={`text-xs font-medium px-2 py-0.5 rounded ${factionBadgeClass(member.faction)}`}>
+              {member.faction}
+            </span>
+          </div>
+        )}
+
+        {/* 委員会 */}
+        <div className="flex items-start gap-2 mb-3">
+          <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">委員会</span>
+          <div className="flex flex-wrap gap-1">
+            {member.committees.length > 0 ? (
+              member.committees.map((c) => (
+                <span key={c} className="text-xs text-[#4A5568] bg-[#F4F6F9] border border-[#E2E8F0] rounded px-2 py-0.5">{c}</span>
+              ))
+            ) : (
+              <span className="text-sm text-[#A0AEC0]">―</span>
+            )}
+          </div>
+        </div>
+
+        {/* 関心テーマ（トップ3） */}
+        {activity && activity.top_topics.length > 0 && (
+          <div className="flex flex-wrap gap-1">
+            {activity.top_topics.slice(0, 3).map((t) => (
+              <span key={t} className="text-xs px-2 py-0.5 bg-[#F4F6F9] text-[#4A5568] border border-[#E2E8F0] rounded-full">{t}</span>
+            ))}
+            {activity.top_topics.length > 3 && (
+              <span className="text-xs text-[#718096]">+{activity.top_topics.length - 3}</span>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* 質問履歴トグル */}
+      {activity && (
+        <>
+          <button
+            onClick={() => setActivityOpen((v) => !v)}
+            className="w-full flex items-center justify-between px-5 py-2.5 bg-[#F4F6F9] border-t border-[#E2E8F0] text-sm text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors"
+          >
+            <span className="text-xs font-medium">質問履歴を見る</span>
+            <svg
+              className={`w-4 h-4 transition-transform ${activityOpen ? "rotate-180" : ""}`}
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+
+          {activityOpen && (
+            <div className="border-t border-[#E2E8F0] bg-white px-5 py-4 space-y-4">
+              {activity.sessions.map((s, i) => (
+                <div key={i}>
+                  <p className="text-xs font-semibold text-[#1B3A6B] mb-1.5">{s.session}</p>
+                  <ul className="space-y-1">
+                    {s.topics.map((t) => (
+                      <li key={t} className="flex items-start gap-1.5 text-xs text-[#4A5568]">
+                        <span className="text-[#2A5298] shrink-0 mt-0.5">·</span>
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  );
+}
+
+// ---------- Props ----------
+
 type Props = {
   members: Member[];
   factions: string[];
+  activity?: Record<string, MemberActivity>;
 };
 
-export default function MemberList({ members, factions }: Props) {
+export default function MemberList({ members, factions, activity = {} }: Props) {
   const [factionFilter, setFactionFilter] = useState<string>("");
   const [partyFilter, setPartyFilter] = useState<string>("");
   const [sortKey, setSortKey] = useState<SortKey>("seat");
@@ -141,67 +263,17 @@ export default function MemberList({ members, factions }: Props) {
 
       {/* カードグリッド */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filtered.map((member) => (
-          <div
-            key={member.seat_number}
-            className="bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] p-5 shadow-sm hover:shadow-md transition-all duration-150"
-          >
-            {/* 議席番号 + 氏名 */}
-            <div className="flex items-start gap-3 mb-4">
-              <span className="mt-1 text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5 whitespace-nowrap shrink-0">
-                {member.seat_number}番
-              </span>
-              <div>
-                <p className="text-lg font-bold text-[#1A202C] leading-snug">
-                  {member.name}
-                </p>
-                <p className="text-xs text-[#718096] mt-0.5">{member.furigana}</p>
-              </div>
-            </div>
-
-            {/* 区切り線 */}
-            <hr className="border-[#E2E8F0] mb-3" />
-
-            {/* 政党 */}
-            {member.party && (
-              <div className="flex items-start gap-2 mb-2">
-                <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">政党</span>
-                <span className="text-sm text-[#1A202C]">{member.party}</span>
-              </div>
-            )}
-
-            {/* 会派 */}
-            {member.faction && (
-              <div className="flex items-start gap-2 mb-3">
-                <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">会派</span>
-                <span
-                  className={`text-xs font-medium px-2 py-0.5 rounded ${factionBadgeClass(member.faction)}`}
-                >
-                  {member.faction}
-                </span>
-              </div>
-            )}
-
-            {/* 委員会 */}
-            <div className="flex items-start gap-2">
-              <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">委員会</span>
-              <div className="flex flex-wrap gap-1">
-                {member.committees.length > 0 ? (
-                  member.committees.map((c) => (
-                    <span
-                      key={c}
-                      className="text-xs text-[#4A5568] bg-[#F4F6F9] border border-[#E2E8F0] rounded px-2 py-0.5"
-                    >
-                      {c}
-                    </span>
-                  ))
-                ) : (
-                  <span className="text-sm text-[#A0AEC0]">―</span>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
+        {filtered.map((member) => {
+          const memberActivity = activity[member.name.replace(/\s/g, "")];
+          return (
+            <MemberCard
+              key={member.seat_number}
+              member={member}
+              activity={memberActivity}
+              factionBadgeClass={factionBadgeClass}
+            />
+          );
+        })}
       </div>
 
       {filtered.length === 0 && (
