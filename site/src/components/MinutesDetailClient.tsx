@@ -18,17 +18,27 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") ?? "";
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
-
-  const memberSpeakers: MinutesSpeaker[] = enriched?.speakers
-    .filter((s) => s.role === "議員")
-    .sort((a, b) => b.speech_count - a.speech_count) ?? [];
+  const [query, setQuery] = useState(initialQuery);
 
   const officialSpeakers: MinutesSpeaker[] = enriched?.speakers
     .filter((s) => s.role !== "議員" && s.role !== "その他")
     .sort((a, b) => (ROLE_ORDER[a.role] ?? 5) - (ROLE_ORDER[b.role] ?? 5)) ?? [];
 
+  // 短いキーワードタグ（enriched.tags）→ activeTopic でグループフィルタ
   const handleTagClick = (tag: string) => {
+    setQuery("");
     setActiveTopic((prev) => (prev === tag ? null : tag));
+  };
+
+  // 質問議員のトピック（長い文字列）→ テキスト検索クエリとして処理
+  const handleTopicSearch = (topic: string) => {
+    setActiveTopic(null);
+    setQuery((prev) => (prev === topic ? "" : topic));
+  };
+
+  const clearAll = () => {
+    setActiveTopic(null);
+    setQuery("");
   };
 
   return (
@@ -76,9 +86,9 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
                     {tag}
                   </button>
                 ))}
-                {activeTopic && (
+                {(activeTopic || query) && (
                   <button
-                    onClick={() => setActiveTopic(null)}
+                    onClick={clearAll}
                     className="text-xs px-2.5 py-1 rounded-full border border-dashed border-[#CBD5E0] text-[#718096] hover:text-[#1A202C] transition-colors flex items-center gap-1"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -114,9 +124,9 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
                       {q.topics.map((t) => (
                         <button
                           key={t}
-                          onClick={() => handleTagClick(t)}
+                          onClick={() => handleTopicSearch(t)}
                           className={`text-xs px-2 py-0.5 rounded-full transition-colors ${
-                            activeTopic === t
+                            query === t
                               ? "bg-[#1B3A6B] text-white"
                               : "bg-[#E8EEF7] text-[#2A5298] hover:bg-[#1B3A6B] hover:text-white"
                           }`}
@@ -157,7 +167,12 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
       )}
 
       {/* 議事録リーダー */}
-      <MinutesReader session={session} activeTopic={activeTopic} initialQuery={initialQuery} />
+      <MinutesReader
+        session={session}
+        activeTopic={activeTopic}
+        query={query}
+        onQueryChange={setQuery}
+      />
     </>
   );
 }
