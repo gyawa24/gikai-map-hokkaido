@@ -102,6 +102,7 @@ export default function CityHeader() {
             {[
               { href: "/", label: "トップ" },
               { href: "/map", label: "地図" },
+              { href: "/search", label: "検索" },
               { href: "/ai-search", label: "✦ AI検索" },
             ].map((item) => {
               const isActive = pathname === item.href;
