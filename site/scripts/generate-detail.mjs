@@ -79,24 +79,51 @@ ${transcript}`,
   }],
 });
 
-const raw = res.content[0].text.match(/\{[\s\S]*\}/)[0];
-// デバッグ: 生JSONをファイルに保存
-fs.writeFileSync("/tmp/detail_raw.json", raw, "utf-8");
-
-const cleaned = raw
-  .replace(/,\s*([}\]])/g, "$1")
-  .replace(/[\x00-\x1F\x7F]/g, (c) => ["\n","\r","\t"].includes(c) ? c : "");
-
-let detail;
-try {
-  detail = JSON.parse(cleaned);
-} catch (e) {
-  // エラー箇所周辺を表示
-  const pos = parseInt(e.message.match(/position (\d+)/)?.[1] ?? "0");
-  console.error("JSON parse error at position", pos);
-  console.error("Context:", JSON.stringify(cleaned.slice(Math.max(0,pos-100), pos+100)));
-  process.exit(1);
+function parseDetail(text) {
+  const match = text.match(/\{[\s\S]*\}/);
+  if (!match) {
+    console.error("JSONブロックが見つかりません。レスポンス:\n", text.slice(0, 300));
+    return null;
+  }
+  const cleaned = match[0]
+    .replace(/,\s*([}\]])/g, "$1")
+    .replace(/[\x00-\x1F\x7F]/g, (c) => ["\n","\r","\t"].includes(c) ? c : "");
+  try {
+    return JSON.parse(cleaned);
+  } catch (e) {
+    const pos = parseInt(e.message.match(/position (\d+)/)?.[1] ?? "0");
+    console.error("JSON parse error at position", pos);
+    console.error("Context:", JSON.stringify(cleaned.slice(Math.max(0,pos-100), pos+100)));
+    return null;
+  }
 }
+
+// 最大3回リトライ
+let detail = null;
+for (let attempt = 1; attempt <= 3; attempt++) {
+  if (attempt > 1) console.log(`  リトライ ${attempt}/3...`);
+  detail = parseDetail(res.content[0].text);
+  if (detail) break;
+  if (attempt < 3) {
+    const res2 = await client.messages.create({
+      model: "claude-sonnet-4-6",
+      max_tokens: 4096,
+      system: "あなたは北海道千歳市議会の会議記録を分析するアシスタントです。議員の質問と執行部の答弁を正確に把握し、構造化して返してください。",
+      messages: [{
+        role: "user",
+        content: `以下は千歳市議会の文字起こしです。JSONのみで回答してください（説明文不要）。
+
+{"speaker":"...","overview":"...","topics":[{"theme":"...","icon":"...","color":"#1B3A6B","summary":"...","qa":[{"q":"...","a":"..."}]}]}
+
+文字起こし:\n${transcript}`,
+      }],
+    });
+    detail = parseDetail(res2.content[0].text);
+    if (detail) break;
+  }
+}
+
+if (!detail) { console.error("生成失敗"); process.exit(1); }
 
 console.log(`\n生成完了: ${detail.topics.length}テーマ`);
 detail.topics.forEach((t) => console.log(`  ${t.icon} ${t.theme}: Q&A ${t.qa.length}件`));
