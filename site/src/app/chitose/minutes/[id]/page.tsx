@@ -1,10 +1,9 @@
 import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import type { MinutesSession, MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesDetailClient from "@/components/MinutesDetailClient";
-
-export const dynamic = "force-static";
 
 function getSession(id: string): MinutesSession | null {
   const fp = path.join(process.cwd(), "data", "chitose", "minutes", `${id}.json`);
@@ -43,13 +42,10 @@ function typeCategory(typeLabel: string): string {
 
 export default async function MinutesDetailPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ q?: string }>;
 }) {
   const { id } = await params;
-  const { q } = await searchParams;
   const session = getSession(id);
   if (!session) notFound();
 
@@ -92,7 +88,9 @@ export default async function MinutesDetailPage({
         </div>
       </section>
 
-      <MinutesDetailClient session={session} enriched={enriched} initialQuery={q} />
+      <Suspense>
+        <MinutesDetailClient session={session} enriched={enriched} />
+      </Suspense>
     </div>
   );
 }

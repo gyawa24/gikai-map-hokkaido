@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import type { MinutesSession, MinutesEnriched, MinutesSpeaker } from "@/types/minutes";
 import MinutesReader from "./MinutesReader";
 
@@ -11,10 +12,11 @@ const ROLE_ORDER: Record<string, number> = {
 type Props = {
   session: MinutesSession;
   enriched: MinutesEnriched | null;
-  initialQuery?: string;
 };
 
-export default function MinutesDetailClient({ session, enriched, initialQuery }: Props) {
+export default function MinutesDetailClient({ session, enriched }: Props) {
+  const searchParams = useSearchParams();
+  const initialQuery = searchParams.get("q") ?? "";
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
 
   const memberSpeakers: MinutesSpeaker[] = enriched?.speakers
