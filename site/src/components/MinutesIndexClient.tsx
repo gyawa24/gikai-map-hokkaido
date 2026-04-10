@@ -13,7 +13,7 @@ type Props = {
   items: MinutesWithEnriched[];
 };
 
-function categoryLabel(typeLabel: string): string {
+function sessionCategoryLabel(typeLabel: string): string {
   if (typeLabel.includes("定例会") && !typeLabel.includes("補正") && !typeLabel.includes("委員会")) return "本会議・定例会";
   if (typeLabel.includes("臨時会")) return "本会議・臨時会";
   if (typeLabel.includes("予算特別委員会")) return "予算特別委員会";
@@ -22,7 +22,7 @@ function categoryLabel(typeLabel: string): string {
   return "その他";
 }
 
-const CATEGORY_ORDER = [
+const SESSION_CATEGORY_ORDER = [
   "本会議・定例会",
   "本会議・臨時会",
   "予算特別委員会",
@@ -31,73 +31,251 @@ const CATEGORY_ORDER = [
   "その他",
 ];
 
+// タグのジャンル分類
+const TAG_GENRES: { label: string; keywords: string[] }[] = [
+  {
+    label: "財政・予算",
+    keywords: ["予算", "補正予算", "決算", "財政", "基金", "市債", "予算・決算", "予算・財政", "起債", "交付金", "寄附", "ふるさと納税", "給付金", "減税"],
+  },
+  {
+    label: "産業・経済",
+    keywords: ["企業誘致", "半導体", "観光", "工業団地", "空港", "地域経済", "商業", "商品券", "宿泊税", "雇用", "地方創生", "ラピダス", "自動運転", "DX", "民間活力"],
+  },
+  {
+    label: "子育て・教育",
+    keywords: ["子育て", "教育", "給食", "学力", "不登校", "こども", "保育", "児童", "学校", "知育", "少子化", "ヤングケアラー"],
+  },
+  {
+    label: "福祉・医療",
+    keywords: ["福祉", "高齢者", "医療", "障がい", "介護", "認知症", "補聴器", "後見人", "生活保護", "健康", "予防接種", "感染症", "市民病院", "地域医療"],
+  },
+  {
+    label: "環境・防災",
+    keywords: ["防災", "環境", "熊", "道路", "下水道", "インフラ", "防衛", "消防", "騒音", "水質", "脱炭素", "LED", "街路灯", "熱中症", "地震", "ヒグマ", "有害鳥獣", "ハンター"],
+  },
+  {
+    label: "まちづくり",
+    keywords: ["公共交通", "公共施設", "人口", "観光振興", "バリアフリー", "スポーツ", "図書館", "文化", "国際交流", "地域コミュニティ", "町内会", "中心市街地", "公園", "市民交流", "生活環境"],
+  },
+];
+
+function classifyTag(tag: string): string {
+  for (const genre of TAG_GENRES) {
+    if (genre.keywords.some((kw) => tag.includes(kw) || kw.includes(tag))) {
+      return genre.label;
+    }
+  }
+  return "その他";
+}
+
+// 正規化：似たタグをまとめる（表示用に最も短い/一般的なものを代表とする）
+const TAG_NORMALIZE: Record<string, string> = {
+  "子育て支援": "子育て",
+  "福祉・子育て": "福祉",
+  "教育・給食": "教育",
+  "給食費": "給食",
+  "学校給食": "給食",
+  "給食センター": "給食",
+  "環境・脱炭素": "環境",
+  "環境保全": "環境",
+  "環境問題": "環境",
+  "環境整備": "環境",
+  "環境改善": "環境",
+  "道路・インフラ": "道路整備",
+  "交通インフラ": "道路整備",
+  "インフラ管理": "道路整備",
+  "インフラ整備": "道路整備",
+  "次世代半導体": "半導体産業",
+  "次世代半導体産業": "半導体産業",
+  "DX推進": "DX",
+  "DX・デジタル化": "DX",
+  "DX・情報化": "DX",
+  "観光振興": "観光",
+  "高齢化対策": "高齢者支援",
+  "高齢者": "高齢者支援",
+  "医療・病院": "医療",
+  "地域医療": "医療",
+  "市民病院": "医療",
+  "物価高対策": "物価高騰対策",
+  "物価対策": "物価高騰対策",
+  "人口減少・定住化": "人口増加",
+  "熊対策": "熊対策",
+  "北海道ヒグマ管理": "熊対策",
+  "有害鳥獣対策": "熊対策",
+  "緊急銃猟": "熊対策",
+  "ハンター育成": "熊対策",
+  "農業被害": "熊対策",
+  "不登校対応": "不登校対策",
+  "補正予算": "予算",
+  "予算・決算": "予算",
+  "予算・財政": "予算",
+  "決算": "予算",
+};
+
+function normalizeTag(tag: string): string {
+  return TAG_NORMALIZE[tag] ?? tag;
+}
+
 export default function MinutesIndexClient({ items }: Props) {
   const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [showAllTags, setShowAllTags] = useState(false);
 
-  // 全タグ収集
-  const allTags = useMemo(() => {
+  // タグ集計（正規化後）
+  const tagCounts = useMemo(() => {
     const counts = new Map<string, number>();
     for (const item of items) {
-      for (const tag of item.enriched?.tags ?? []) {
-        counts.set(tag, (counts.get(tag) ?? 0) + 1);
+      const seen = new Set<string>();
+      for (const rawTag of item.enriched?.tags ?? []) {
+        const tag = normalizeTag(rawTag);
+        if (!seen.has(tag)) {
+          seen.add(tag);
+          counts.set(tag, (counts.get(tag) ?? 0) + 1);
+        }
       }
     }
-    return Array.from(counts.entries())
-      .sort((a, b) => b[1] - a[1])
-      .map(([tag]) => tag);
+    return counts;
   }, [items]);
 
-  // フィルタリング
+  // 頻度順ソート
+  const sortedTags = useMemo(
+    () => Array.from(tagCounts.entries()).sort((a, b) => b[1] - a[1]).map(([t]) => t),
+    [tagCounts]
+  );
+
+  // よく出るタグ（頻度3以上 or 上位12件）
+  const popularTags = useMemo(
+    () => sortedTags.filter((t) => (tagCounts.get(t) ?? 0) >= 3).slice(0, 12),
+    [sortedTags, tagCounts]
+  );
+
+  // ジャンル別タグ
+  const genreGroups = useMemo(() => {
+    const groups: Record<string, string[]> = {};
+    for (const genre of TAG_GENRES) {
+      groups[genre.label] = [];
+    }
+    groups["その他"] = [];
+    for (const tag of sortedTags) {
+      const genre = classifyTag(tag);
+      if (!groups[genre]) groups[genre] = [];
+      groups[genre].push(tag);
+    }
+    return groups;
+  }, [sortedTags]);
+
+  // フィルタリング（正規化して照合）
   const filtered = useMemo(() => {
     if (!activeTag) return items;
-    return items.filter((item) => item.enriched?.tags.includes(activeTag));
+    return items.filter((item) =>
+      (item.enriched?.tags ?? []).some((t) => normalizeTag(t) === activeTag)
+    );
   }, [items, activeTag]);
 
-  // 年 + カテゴリでグルーピング
+  // セッション種別でグルーピング
   const byYear = useMemo(() => {
     const map: Record<string, MinutesWithEnriched[]> = {};
     for (const item of filtered) {
-      const y = item.japanese_year;
-      if (!map[y]) map[y] = [];
-      map[y].push(item);
+      if (!map[item.japanese_year]) map[item.japanese_year] = [];
+      map[item.japanese_year].push(item);
     }
     return map;
   }, [filtered]);
 
   const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
 
+  const TagButton = ({ tag }: { tag: string }) => (
+    <button
+      onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+      className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
+        activeTag === tag
+          ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
+          : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+      }`}
+    >
+      {tag}
+      <span className="ml-1 text-[10px] opacity-60">{tagCounts.get(tag)}</span>
+    </button>
+  );
+
   return (
     <>
       {/* タグフィルター */}
-      {allTags.length > 0 && (
-        <div className="mb-6">
-          <p className="text-xs font-semibold text-[#718096] mb-2">テーマで絞り込む</p>
-          <div className="flex flex-wrap gap-1.5">
-            <button
-              onClick={() => setActiveTag(null)}
-              className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
-                activeTag === null
-                  ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
-                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B]"
-              }`}
-            >
-              すべて
-            </button>
-            {allTags.map((tag) => (
+      {sortedTags.length > 0 && (
+        <div className="mb-6 bg-white rounded-lg border border-[#CBD5E0] shadow-sm overflow-hidden">
+          <div className="px-4 py-3 border-b border-[#E2E8F0] flex items-center justify-between">
+            <p className="text-sm font-semibold text-[#1B3A6B]">テーマで絞り込む</p>
+            {activeTag && (
               <button
-                key={tag}
-                onClick={() => setActiveTag(activeTag === tag ? null : tag)}
-                className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
-                  activeTag === tag
-                    ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
-                    : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B]"
-                }`}
+                onClick={() => setActiveTag(null)}
+                className="text-xs text-[#718096] hover:text-[#1A202C] flex items-center gap-1"
               >
-                {tag}
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                絞り込みを解除
               </button>
-            ))}
+            )}
+          </div>
+
+          <div className="px-4 py-3">
+            {/* よく出るタグ */}
+            {!showAllTags && (
+              <>
+                <p className="text-xs text-[#718096] mb-2">よく出るテーマ</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {popularTags.map((tag) => <TagButton key={tag} tag={tag} />)}
+                </div>
+              </>
+            )}
+
+            {/* すべてのタグ（ジャンル別） */}
+            {showAllTags && (
+              <div className="space-y-4">
+                {TAG_GENRES.map((genre) => {
+                  const tags = genreGroups[genre.label];
+                  if (!tags || tags.length === 0) return null;
+                  return (
+                    <div key={genre.label}>
+                      <p className="text-xs font-semibold text-[#718096] mb-1.5">{genre.label}</p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {tags.map((tag) => <TagButton key={tag} tag={tag} />)}
+                      </div>
+                    </div>
+                  );
+                })}
+                {genreGroups["その他"] && genreGroups["その他"].length > 0 && (
+                  <div>
+                    <p className="text-xs font-semibold text-[#718096] mb-1.5">その他</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {genreGroups["その他"].map((tag) => <TagButton key={tag} tag={tag} />)}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* トグルボタン */}
+            <button
+              onClick={() => setShowAllTags((v) => !v)}
+              className="mt-3 flex items-center gap-1 text-xs text-[#2A5298] hover:text-[#1B3A6B] transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className={`w-3.5 h-3.5 transition-transform ${showAllTags ? "rotate-180" : ""}`}
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+              {showAllTags ? "閉じる" : `すべてのテーマを見る（${sortedTags.length}件）`}
+            </button>
           </div>
         </div>
+      )}
+
+      {/* 絞り込み中の表示 */}
+      {activeTag && (
+        <p className="text-sm text-[#4A5568] mb-4">
+          「<span className="font-semibold text-[#1B3A6B]">{activeTag}</span>」に関連する議事録：{filtered.length}件
+        </p>
       )}
 
       {filtered.length === 0 ? (
@@ -110,11 +288,11 @@ export default function MinutesIndexClient({ items }: Props) {
             const yearItems = byYear[year];
             const byCategory: Record<string, MinutesWithEnriched[]> = {};
             for (const item of yearItems) {
-              const cat = categoryLabel(item.type_label);
+              const cat = sessionCategoryLabel(item.type_label);
               if (!byCategory[cat]) byCategory[cat] = [];
               byCategory[cat].push(item);
             }
-            const cats = CATEGORY_ORDER.filter((c) => byCategory[c]);
+            const cats = SESSION_CATEGORY_ORDER.filter((c) => byCategory[c]);
 
             return (
               <section key={year}>
@@ -140,10 +318,9 @@ export default function MinutesIndexClient({ items }: Props) {
                               />
                               <div className="flex-1 min-w-0">
                                 <p className="text-base font-semibold text-[#1A202C] leading-snug mb-1">{item.name}</p>
-                                {/* タグ */}
                                 {item.enriched && item.enriched.tags.length > 0 && (
                                   <div className="flex flex-wrap gap-1 mt-2">
-                                    {item.enriched.tags.slice(0, 6).map((tag) => (
+                                    {[...new Set(item.enriched.tags.map(normalizeTag))].slice(0, 6).map((tag) => (
                                       <span
                                         key={tag}
                                         className={`text-xs px-2 py-0.5 rounded-full border ${
@@ -155,8 +332,8 @@ export default function MinutesIndexClient({ items }: Props) {
                                         {tag}
                                       </span>
                                     ))}
-                                    {item.enriched.tags.length > 6 && (
-                                      <span className="text-xs text-[#718096]">+{item.enriched.tags.length - 6}</span>
+                                    {new Set(item.enriched.tags.map(normalizeTag)).size > 6 && (
+                                      <span className="text-xs text-[#718096]">+{new Set(item.enriched.tags.map(normalizeTag)).size - 6}</span>
                                     )}
                                   </div>
                                 )}

@@ -1,94 +1,140 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { MinutesSession, MinuteItem } from "@/types/minutes";
+
+// ---------- ユーティリティ ----------
 
 function parseScheduleName(name: string): string {
   const m = name.match(/(\d+)月(\d+)日[－\-](\d+)号/);
-  if (m) {
-    return `${parseInt(m[1])}月${parseInt(m[2])}日（第${parseInt(m[3])}号）`;
-  }
+  if (m) return `${parseInt(m[1])}月${parseInt(m[2])}日（第${parseInt(m[3])}号）`;
   return name;
 }
 
-type MinuteTypeStyle = {
-  container: string;
+// ---------- 議題グループ ----------
+
+type AgendaGroup = {
+  id: string;
+  title: string;
+  items: MinuteItem[];
+};
+
+function buildAgendaGroups(minutes: MinuteItem[]): AgendaGroup[] {
+  const groups: AgendaGroup[] = [];
+  let current: AgendaGroup | null = null;
+
+  for (const m of minutes) {
+    if (m.minute_type === "名簿") continue;
+
+    if (m.minute_type === "△議題") {
+      if (current) groups.push(current);
+      current = {
+        id: String(m.minute_id),
+        title: m.text.replace(/^△/, "").trim(),
+        items: [],
+      };
+    } else {
+      if (!current) {
+        current = { id: "header", title: "", items: [] };
+      }
+      current.items.push(m);
+    }
+  }
+  if (current) groups.push(current);
+  return groups.filter((g) => g.title || g.items.length > 0);
+}
+
+function groupMatchesTopic(group: AgendaGroup, topic: string): boolean {
+  const kw = topic.toLowerCase();
+  if (group.title.toLowerCase().includes(kw)) return true;
+  return group.items.some(
+    (m) => m.text.toLowerCase().includes(kw) || m.title.toLowerCase().includes(kw)
+  );
+}
+
+function groupMatchesQuery(group: AgendaGroup, query: string): boolean {
+  const q = query.toLowerCase();
+  if (group.title.toLowerCase().includes(q)) return true;
+  return group.items.some(
+    (m) => m.text.toLowerCase().includes(q) || m.title.toLowerCase().includes(q)
+  );
+}
+
+// ---------- 発言アイテムのスタイル ----------
+
+type ItemStyle = {
   label: string | null;
   labelClass: string;
   textClass: string;
-  skip?: boolean;
+  wrapperClass: string;
 };
 
-function getTypeStyle(minuteType: string): MinuteTypeStyle {
-  if (minuteType === "名簿") {
-    return { container: "", label: null, labelClass: "", textClass: "", skip: true };
-  }
-  if (minuteType === "△議題") {
-    return {
-      container: "my-4 first:mt-0",
-      label: null,
-      labelClass: "",
-      textClass: "text-sm font-bold text-[#1B3A6B] bg-[#E8EEF7] px-3 py-1.5 rounded border-l-4 border-[#1B3A6B]",
-    };
-  }
+function getItemStyle(minuteType: string): ItemStyle {
   if (minuteType === "◆質問" || minuteType === "○一般質問") {
     return {
-      container: "pl-0",
       label: "質問",
       labelClass: "text-xs font-bold text-[#2A5298] bg-[#E8EEF7] px-1.5 py-0.5 rounded",
       textClass: "text-base text-[#1A202C] leading-relaxed",
+      wrapperClass: "border-l-2 border-[#2A5298] pl-3",
     };
   }
   if (minuteType === "◎答弁" || minuteType === "◎市長") {
     return {
-      container: "pl-0",
       label: "答弁",
       labelClass: "text-xs font-bold text-[#276749] bg-[#F0FFF4] px-1.5 py-0.5 rounded border border-[#C6F6D5]",
       textClass: "text-base text-[#1A202C] leading-relaxed",
+      wrapperClass: "border-l-2 border-[#68D391] pl-3",
     };
   }
   if (minuteType === "○議長") {
     return {
-      container: "pl-0 opacity-70",
       label: "議長",
       labelClass: "text-xs font-medium text-[#718096] bg-[#F4F6F9] px-1.5 py-0.5 rounded border border-[#E2E8F0]",
       textClass: "text-sm text-[#4A5568] leading-relaxed",
+      wrapperClass: "opacity-60",
     };
   }
   return {
-    container: "pl-0",
     label: null,
     labelClass: "",
     textClass: "text-base text-[#1A202C] leading-relaxed",
+    wrapperClass: "",
   };
 }
 
-function MinuteItemView({ item }: { item: MinuteItem }) {
-  const style = getTypeStyle(item.minute_type);
-  if (style.skip) return null;
-
+function MinuteItemView({ item, highlight }: { item: MinuteItem; highlight?: string }) {
   const [expanded, setExpanded] = useState(false);
+  const style = getItemStyle(item.minute_type);
   const isLong = item.text.length > 400;
   const displayText = isLong && !expanded ? item.text.slice(0, 400) + "…" : item.text;
 
-  if (item.minute_type === "△議題") {
+  // ハイライト表示
+  const renderText = (text: string) => {
+    if (!highlight) return <p style={{ whiteSpace: "pre-wrap" }}>{text}</p>;
+    const kw = highlight.toLowerCase();
+    const idx = text.toLowerCase().indexOf(kw);
+    if (idx === -1) return <p style={{ whiteSpace: "pre-wrap" }}>{text}</p>;
     return (
-      <div className={style.container}>
-        <p className={style.textClass}>{item.text.replace(/^△/, "").trim()}</p>
-      </div>
+      <p style={{ whiteSpace: "pre-wrap" }}>
+        {text.slice(0, idx)}
+        <mark className="bg-yellow-100 text-[#1A202C] rounded px-0.5">
+          {text.slice(idx, idx + highlight.length)}
+        </mark>
+        {text.slice(idx + highlight.length)}
+      </p>
     );
-  }
+  };
 
   return (
-    <div className={`border-b border-[#F4F6F9] pb-4 last:border-0 last:pb-0 ${style.container}`}>
-      <div className="flex items-start gap-2 mb-1">
+    <div className={`pb-3 last:pb-0 ${style.wrapperClass}`}>
+      <div className="flex items-center gap-2 mb-1">
         {style.label && (
-          <span className={`shrink-0 mt-0.5 ${style.labelClass}`}>{style.label}</span>
+          <span className={`shrink-0 ${style.labelClass}`}>{style.label}</span>
         )}
         <span className="text-sm font-semibold text-[#1A202C]">{item.title}</span>
       </div>
       <div className={style.textClass}>
-        <p style={{ whiteSpace: "pre-wrap" }}>{displayText}</p>
+        {renderText(displayText)}
         {isLong && (
           <button
             onClick={() => setExpanded((v) => !v)}
@@ -102,32 +148,125 @@ function MinuteItemView({ item }: { item: MinuteItem }) {
   );
 }
 
+// ---------- 議題グループ（折りたたみ） ----------
+
+function AgendaGroupView({
+  group,
+  defaultOpen,
+  activeTopic,
+  query,
+}: {
+  group: AgendaGroup;
+  defaultOpen: boolean;
+  activeTopic: string | null;
+  query: string;
+}) {
+  const [open, setOpen] = useState(defaultOpen);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // activeTopic / query が変わったら開閉を同期
+  useEffect(() => {
+    setOpen(defaultOpen);
+  }, [defaultOpen]);
+
+  // 自動スクロール（マッチしていて展開されたとき）
+  useEffect(() => {
+    if (defaultOpen && (activeTopic || query)) {
+      ref.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }, [defaultOpen, activeTopic, query]);
+
+  const visibleItems = group.items.filter((m) => {
+    if (!query) return true;
+    const q = query.toLowerCase();
+    return m.text.toLowerCase().includes(q) || m.title.toLowerCase().includes(q);
+  });
+
+  const hasContent = visibleItems.length > 0;
+
+  return (
+    <div ref={ref} className="border border-[#E2E8F0] rounded-lg overflow-hidden">
+      {/* ヘッダー（トグル） */}
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className={`w-full flex items-center gap-3 px-4 py-3 text-left transition-colors ${
+          open ? "bg-[#E8EEF7]" : "bg-white hover:bg-[#F4F6F9]"
+        }`}
+      >
+        <svg
+          className={`w-4 h-4 shrink-0 text-[#718096] transition-transform ${open ? "" : "-rotate-90"}`}
+          viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+        <span className={`text-sm font-semibold flex-1 leading-snug ${open ? "text-[#1B3A6B]" : "text-[#1A202C]"}`}>
+          {group.title || "（冒頭）"}
+        </span>
+        {hasContent && (
+          <span className="text-xs text-[#718096] shrink-0">{group.items.length}件</span>
+        )}
+        {/* マッチバッジ */}
+        {(activeTopic && groupMatchesTopic(group, activeTopic)) && (
+          <span className="text-xs px-2 py-0.5 bg-yellow-100 text-yellow-800 rounded-full font-medium shrink-0">
+            {activeTopic}
+          </span>
+        )}
+      </button>
+
+      {/* 本文 */}
+      {open && (
+        <div className="px-4 py-4 bg-white border-t border-[#E2E8F0] space-y-4">
+          {visibleItems.length === 0 ? (
+            <p className="text-sm text-[#718096]">この日程に一致する発言はありません</p>
+          ) : (
+            visibleItems.map((item) => (
+              <MinuteItemView
+                key={item.minute_id}
+                item={item}
+                highlight={activeTopic ?? (query || undefined)}
+              />
+            ))
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ---------- メインコンポーネント ----------
+
 type Props = {
   session: MinutesSession;
+  activeTopic?: string | null;
 };
 
-export default function MinutesReader({ session }: Props) {
+export default function MinutesReader({ session, activeTopic = null }: Props) {
   const [activeScheduleIndex, setActiveScheduleIndex] = useState(0);
   const [query, setQuery] = useState("");
 
   const activeSchedule = session.schedules[activeScheduleIndex];
+  const groups = buildAgendaGroups(activeSchedule.minutes);
 
-  const filteredMinutes = useCallback(() => {
-    if (!query.trim()) return activeSchedule.minutes;
-    const q = query.trim().toLowerCase();
-    return activeSchedule.minutes.filter(
-      (m) =>
-        m.text.toLowerCase().includes(q) ||
-        m.title.toLowerCase().includes(q)
-    );
-  }, [activeSchedule, query])();
+  const filter = activeTopic ?? query.trim();
+
+  // フィルター適用後のグループ
+  const visibleGroups = filter
+    ? groups.filter((g) =>
+        activeTopic
+          ? groupMatchesTopic(g, activeTopic)
+          : groupMatchesQuery(g, query.trim())
+      )
+    : groups;
+
+  const matchCount = visibleGroups.length;
 
   return (
     <div>
       {/* スケジュールタブ */}
-      <div className="mb-6">
+      <div className="mb-5">
         <div className="overflow-x-auto -mx-4 px-4">
-          <div className="flex gap-1 min-w-max border-b border-[#CBD5E0] pb-0">
+          <div className="flex gap-1 min-w-max border-b border-[#CBD5E0]">
             {session.schedules.map((s, i) => (
               <button
                 key={s.schedule_id}
@@ -147,7 +286,7 @@ export default function MinutesReader({ session }: Props) {
         </div>
       </div>
 
-      {/* 検索 */}
+      {/* テキスト検索 */}
       <div className="mb-4">
         <div className="relative">
           <svg
@@ -164,7 +303,7 @@ export default function MinutesReader({ session }: Props) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="この日の議事録内を検索…"
-            className="w-full pl-9 pr-4 py-2 text-base border border-[#CBD5E0] rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#2A5298] focus:border-[#2A5298] placeholder:text-[#A0AEC0]"
+            className="w-full pl-9 pr-9 py-2 text-base border border-[#CBD5E0] rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#2A5298] focus:border-[#2A5298] placeholder:text-[#A0AEC0]"
           />
           {query && (
             <button
@@ -176,34 +315,42 @@ export default function MinutesReader({ session }: Props) {
             </button>
           )}
         </div>
-        {query && (
-          <p className="text-sm text-[#718096] mt-1 ml-1">
-            {filteredMinutes.length} 件ヒット
-          </p>
-        )}
       </div>
 
-      {/* 議事録本文 */}
-      <div className="bg-white rounded-lg border border-[#CBD5E0] shadow-sm">
-        <div className="px-5 py-4 border-b border-[#E2E8F0]">
-          <p className="text-sm font-semibold text-[#1B3A6B]">
-            {parseScheduleName(activeSchedule.name)}
+      {/* フィルター状態の表示 */}
+      {filter && (
+        <div className="mb-3 flex items-center gap-2">
+          <p className="text-sm text-[#4A5568]">
+            <span className="font-semibold text-[#1B3A6B]">「{filter}」</span>
+            に関連する日程：{matchCount}件
           </p>
-          <p className="text-xs text-[#718096] mt-0.5">
-            {activeSchedule.minutes.filter((m) => m.minute_type !== "名簿").length} 件の発言・議題
-          </p>
+          {matchCount === 0 && (
+            <span className="text-xs text-[#718096]">（別の日程を確認してください）</span>
+          )}
         </div>
+      )}
 
-        {filteredMinutes.length === 0 ? (
-          <div className="px-5 py-10 text-center text-[#718096]">
-            <p>「{query}」に一致する内容が見つかりません</p>
+      {/* 議題グループ一覧 */}
+      <div className="space-y-2">
+        {visibleGroups.length === 0 ? (
+          <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+            この日程に「{filter}」に関連する内容は見つかりませんでした
           </div>
         ) : (
-          <div className="px-5 py-4 flex flex-col gap-4">
-            {filteredMinutes.map((item) => (
-              <MinuteItemView key={item.minute_id} item={item} />
-            ))}
-          </div>
+          visibleGroups.map((group) => {
+            const isMatch = filter
+              ? (activeTopic ? groupMatchesTopic(group, activeTopic) : groupMatchesQuery(group, query.trim()))
+              : false;
+            return (
+              <AgendaGroupView
+                key={group.id}
+                group={group}
+                defaultOpen={isMatch}
+                activeTopic={activeTopic}
+                query={query.trim()}
+              />
+            );
+          })
         )}
       </div>
     </div>
