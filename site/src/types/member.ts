@@ -11,6 +11,7 @@ export type Member = {
 export type MemberActivitySession = {
   session: string;
   year: string;
+  council_id: number;
   topics: string[];
 };
 

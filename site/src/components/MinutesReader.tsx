@@ -239,11 +239,12 @@ function AgendaGroupView({
 type Props = {
   session: MinutesSession;
   activeTopic?: string | null;
+  initialQuery?: string;
 };
 
-export default function MinutesReader({ session, activeTopic = null }: Props) {
+export default function MinutesReader({ session, activeTopic = null, initialQuery = "" }: Props) {
   const [activeScheduleIndex, setActiveScheduleIndex] = useState(0);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialQuery);
 
   const activeSchedule = session.schedules[activeScheduleIndex];
   const groups = buildAgendaGroups(activeSchedule.minutes);

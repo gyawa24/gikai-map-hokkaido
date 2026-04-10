@@ -82,6 +82,7 @@ for (const file of enrichedFiles) {
   const data = JSON.parse(fs.readFileSync(path.join(enrichedDir, file), "utf-8"));
   const sessionName = data.name;
   const sessionYear = data.name.match(/令和\s*\d+年/)?.[0] ?? "";
+  const councilId = data.council_id;
 
   for (const q of (data.questioners ?? [])) {
     const memberName = findMember(q.name);
@@ -89,12 +90,19 @@ for (const file of enrichedFiles) {
       console.log(`  名寄せ失敗: "${q.name}" (${sessionName})`);
       continue;
     }
+    // topics: 直接抽出 + AI補完を合体
+    const allTopics = [
+      ...(q.topics ?? []),
+      ...(q.ai_topics ?? []),
+    ].filter(Boolean);
+
     activity[memberName].sessions.push({
       session: sessionName,
       year: sessionYear,
-      topics: q.topics,
+      council_id: councilId,
+      topics: allTopics,
     });
-    for (const t of q.topics) {
+    for (const t of allTopics) {
       activity[memberName].allTopics.add(t);
     }
   }

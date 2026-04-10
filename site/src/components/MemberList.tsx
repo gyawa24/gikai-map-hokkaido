@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import type { Member, MemberActivity } from "@/types/member";
 
 const FACTION_STYLES: Record<string, { badge: string }> = {
@@ -139,19 +140,38 @@ function MemberCard({
 
           {activityOpen && (
             <div className="border-t border-[#E2E8F0] bg-white px-5 py-4 space-y-4">
-              {activity.sessions.map((s, i) => (
-                <div key={i}>
-                  <p className="text-xs font-semibold text-[#1B3A6B] mb-1.5">{s.session}</p>
-                  <ul className="space-y-1">
-                    {s.topics.map((t) => (
-                      <li key={t} className="flex items-start gap-1.5 text-xs text-[#4A5568]">
-                        <span className="text-[#2A5298] shrink-0 mt-0.5">·</span>
-                        {t}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+              {activity.sessions.map((s, i) => {
+                // 姓（最初の2〜3文字）で議事録内を検索
+                const surname = member.name.replace(/\s/g, "").slice(0, 2);
+                const minutesUrl = s.council_id
+                  ? `/chitose/minutes/${s.council_id}?q=${encodeURIComponent(surname)}`
+                  : null;
+
+                return (
+                  <div key={i}>
+                    <div className="flex items-center justify-between mb-1.5">
+                      <p className="text-xs font-semibold text-[#1B3A6B]">{s.session}</p>
+                      {minutesUrl && (
+                        <Link
+                          href={minutesUrl}
+                          className="text-xs text-[#2A5298] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
+                        >
+                          議事録を見る
+                          <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </Link>
+                      )}
+                    </div>
+                    <ul className="space-y-1">
+                      {s.topics.map((t) => (
+                        <li key={t} className="flex items-start gap-1.5 text-xs text-[#4A5568]">
+                          <span className="text-[#2A5298] shrink-0 mt-0.5">·</span>
+                          {t}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
             </div>
           )}
         </>
