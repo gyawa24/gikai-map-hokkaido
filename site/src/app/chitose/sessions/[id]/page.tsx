@@ -52,16 +52,27 @@ export default async function SessionPage({
         <p className="text-sm text-[#4A5568]">{formatDate(session.date)}</p>
       </section>
 
-      {/* YouTube埋め込み */}
+      {/* YouTube */}
       <div className="mb-6 rounded-lg overflow-hidden border border-[#CBD5E0] shadow-sm">
-        <div className="relative" style={{ paddingBottom: "56.25%" }}>
-          <iframe
-            src={`https://www.youtube.com/embed/${session.youtube_id}`}
-            title={session.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="absolute inset-0 w-full h-full"
+        <div className="relative bg-black" style={{ paddingBottom: "56.25%" }}>
+          <img
+            src={`https://img.youtube.com/vi/${session.youtube_id}/maxresdefault.jpg`}
+            alt={session.title}
+            className="absolute inset-0 w-full h-full object-cover opacity-80"
           />
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+            <a
+              href={`https://www.youtube.com/watch?v=${session.youtube_id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-[#FF0000] hover:bg-[#cc0000] text-white font-bold px-5 py-3 rounded-full shadow-lg transition-colors text-sm"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              YouTubeで視聴
+            </a>
+          </div>
         </div>
       </div>
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { SessionSegment } from "@/types/session";
+import SegmentDetail from "./SegmentDetail";
 
 export default function TranscriptSegment({ seg }: { seg: SessionSegment }) {
   const [open, setOpen] = useState(false);
@@ -41,6 +42,9 @@ export default function TranscriptSegment({ seg }: { seg: SessionSegment }) {
             ))}
           </div>
         )}
+
+        {/* 詳細カード */}
+        {seg.detail && <SegmentDetail detail={seg.detail} />}
       </div>
 
       {/* 文字起こしトグル */}

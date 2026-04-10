@@ -1,3 +1,17 @@
+export type SegmentDetailQA = { q: string; a: string };
+export type SegmentDetailTopic = {
+  theme: string;
+  icon: string;
+  color: string;
+  summary: string;
+  qa: SegmentDetailQA[];
+};
+export type SegmentDetail = {
+  speaker: string;
+  overview: string;
+  topics: SegmentDetailTopic[];
+};
+
 export type SessionSegment = {
   index: number;
   label: string;
@@ -6,6 +20,7 @@ export type SessionSegment = {
   summary?: string;
   topics?: string[];
   transcript?: string;
+  detail?: SegmentDetail;
 };
 
 export type Session = {
