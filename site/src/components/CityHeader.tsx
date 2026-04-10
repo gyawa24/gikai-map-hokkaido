@@ -15,7 +15,8 @@ const CITY_CONFIG: Record<
     nav: [
       { href: "/chitose", label: "議員一覧" },
       { href: "/decisions", label: "議決結果" },
-      { href: "/chitose/sessions", label: "会議録・要約" },
+      { href: "/chitose/minutes", label: "議事録" },
+      { href: "/chitose/sessions", label: "会議録・速報" },
       { href: "/schedule", label: "行事予定" },
       { href: "/newsletter", label: "議会だより" },
       { href: "/ai-search", label: "✦ AI検索" },
@@ -106,7 +107,7 @@ export default function CityHeader() {
               { href: "/search", label: "検索" },
               { href: "/ai-search", label: "✦ AI検索" },
             ].map((item) => {
-              const isActive = pathname === item.href;
+              const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
               return (
                 <Link
                   key={item.href}
@@ -131,7 +132,7 @@ export default function CityHeader() {
         {city && (
           <nav className="mt-3 -mb-px flex flex-wrap gap-0.5" aria-label="ページナビゲーション">
             {city.nav.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
               return (
                 <Link
                   key={item.href}

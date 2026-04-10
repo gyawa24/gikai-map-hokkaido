@@ -23,10 +23,20 @@ export default function ChitoseSessionsPage() {
   return (
     <div className="max-w-2xl mx-auto">
       <section className="mb-6">
-        <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">議会中継動画・文字起こし</h2>
-        <p className="text-base text-[#4A5568]">
-          YouTube中継動画の文字起こしと要約を掲載しています。
+        <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">会議録・速報</h2>
+        <p className="text-base text-[#4A5568] leading-relaxed mb-3">
+          YouTube中継動画の文字起こしと要約を掲載しています。公式議事録の発行（約2ヶ月後）までの速報版です。
         </p>
+        <Link
+          href="/chitose/minutes"
+          className="inline-flex items-center gap-1.5 text-sm text-[#2A5298] hover:text-[#1B3A6B] transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+          </svg>
+          公式議事録はこちら
+        </Link>
       </section>
 
       {sessions.length === 0 ? (
