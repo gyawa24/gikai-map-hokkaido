@@ -11,6 +11,7 @@ type MinutesWithEnriched = MinutesIndexItem & {
 
 type Props = {
   items: MinutesWithEnriched[];
+  minutesBasePath?: string;
 };
 
 function sessionCategoryLabel(typeLabel: string): string {
@@ -116,7 +117,7 @@ function normalizeTag(tag: string): string {
   return TAG_NORMALIZE[tag] ?? tag;
 }
 
-export default function MinutesIndexClient({ items }: Props) {
+export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/minutes" }: Props) {
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [showAllTags, setShowAllTags] = useState(false);
 
@@ -308,7 +309,7 @@ export default function MinutesIndexClient({ items }: Props) {
                         {byCategory[cat].map((item) => (
                           <Link
                             key={item.council_id}
-                            href={`/chitose/minutes/${item.council_id}`}
+                            href={`${minutesBasePath}/${item.council_id}`}
                             className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-5 py-4 shadow-sm hover:shadow-md transition-all duration-150"
                           >
                             <div className="flex items-start gap-4">

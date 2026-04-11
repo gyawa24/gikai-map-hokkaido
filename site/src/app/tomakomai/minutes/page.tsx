@@ -46,7 +46,7 @@ export default function TomakomaiMinutesPage() {
           現在、掲載されている議事録はありません。
         </div>
       ) : (
-        <MinutesIndexClient items={items} />
+        <MinutesIndexClient items={items} minutesBasePath="/tomakomai/minutes" />
       )}
     </div>
   );
