@@ -43,5 +43,5 @@ export default function EniwaMembersPage() {
   const members = getMembers();
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
 
-  return <MemberList members={members} factions={factions} />;
+  return <MemberList members={members} factions={factions} memberHrefBase="/eniwa/members" />;
 }

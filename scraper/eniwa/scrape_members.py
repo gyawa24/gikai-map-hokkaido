@@ -15,6 +15,8 @@ BASE_URL = "https://www.city.eniwa.hokkaido.jp"
 MEMBERS_URL = f"{BASE_URL}/soshikikarasagasu/gikaijimukyoku/gikaisomugakari/giin/index.html"
 OUTPUT_DIR = Path(__file__).parent.parent.parent / "site" / "data" / "eniwa"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+PHOTO_DIR = Path(__file__).parent.parent.parent / "site" / "public" / "members" / "eniwa"
+PHOTO_DIR.mkdir(parents=True, exist_ok=True)
 
 HEADERS = {
     "User-Agent": (
@@ -80,11 +82,22 @@ def scrape_members():
             if furigana_el:
                 member["furigana"] = furigana_el.strip()
 
-            # 写真URL
+            # 写真URL（ローカル保存）
             img = detail.find("img", src=re.compile(r"giin|member|photo", re.I))
             if img and img.get("src"):
                 src = img["src"]
-                member["photo_url"] = src if src.startswith("http") else BASE_URL + src
+                remote_url = src if src.startswith("http") else BASE_URL + src
+                seat = i + 1
+                ext = remote_url.split(".")[-1].split("?")[0] or "jpg"
+                fname = f"seat_{seat}.{ext}"
+                try:
+                    img_resp = requests.get(remote_url, headers=HEADERS, timeout=10)
+                    img_resp.raise_for_status()
+                    (PHOTO_DIR / fname).write_bytes(img_resp.content)
+                    member["photo_url"] = f"/members/eniwa/{fname}"
+                except Exception as e:
+                    print(f"  [WARN] 写真取得失敗 seat {seat}: {e}")
+                    member["photo_url"] = remote_url
 
             # テキストから会派・委員会を抽出
             full_text = detail.get_text("\n")
