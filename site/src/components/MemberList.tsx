@@ -48,23 +48,45 @@ function MemberCard({
   member,
   activity,
   factionBadgeClass,
+  memberHrefBase,
 }: {
   member: Member;
   activity: MemberActivity | undefined;
   factionBadgeClass: (f: string) => string;
+  memberHrefBase?: string;
 }) {
   const [activityOpen, setActivityOpen] = useState(false);
 
   return (
     <div className="bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] shadow-sm hover:shadow-md transition-all duration-150 overflow-hidden">
       <div className="p-5">
+        {/* 写真 */}
+        {member.photo_url && (
+          <div className="mb-4 flex justify-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={member.photo_url}
+              alt={`${member.name}議員`}
+              className="w-20 h-28 object-cover rounded-lg border border-[#E2E8F0] shadow-sm"
+            />
+          </div>
+        )}
         {/* 議席番号 + 氏名 */}
         <div className="flex items-start gap-3 mb-4">
           <span className="mt-1 text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5 whitespace-nowrap shrink-0">
             {member.seat_number}番
           </span>
           <div className="flex-1 min-w-0">
-            <p className="text-lg font-bold text-[#1A202C] leading-snug">{member.name}</p>
+            {memberHrefBase ? (
+              <Link
+                href={`${memberHrefBase}/${member.seat_number}`}
+                className="text-lg font-bold text-[#1B3A6B] hover:underline leading-snug"
+              >
+                {member.name}
+              </Link>
+            ) : (
+              <p className="text-lg font-bold text-[#1A202C] leading-snug">{member.name}</p>
+            )}
             <p className="text-xs text-[#718096] mt-0.5">{member.furigana}</p>
           </div>
           {activity && (
@@ -187,9 +209,10 @@ type Props = {
   members: Member[];
   factions: string[];
   activity?: Record<string, MemberActivity>;
+  memberHrefBase?: string;
 };
 
-export default function MemberList({ members, factions, activity = {} }: Props) {
+export default function MemberList({ members, factions, activity = {}, memberHrefBase }: Props) {
   const [factionFilter, setFactionFilter] = useState<string>("");
   const [partyFilter, setPartyFilter] = useState<string>("");
   const [sortKey, setSortKey] = useState<SortKey>("seat");
@@ -292,6 +315,7 @@ export default function MemberList({ members, factions, activity = {} }: Props) 
               member={member}
               activity={memberActivity}
               factionBadgeClass={factionBadgeClass}
+              memberHrefBase={memberHrefBase}
             />
           );
         })}

@@ -13,8 +13,10 @@ import requests
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://www.city.chitose.lg.jp"
-OUTPUT_DIR = Path(__file__).parent.parent.parent / "data" / "chitose"
+OUTPUT_DIR = Path(__file__).parent.parent.parent / "site" / "data" / "chitose"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+PHOTO_DIR = Path(__file__).parent.parent.parent / "site" / "public" / "members" / "chitose"
+PHOTO_DIR.mkdir(parents=True, exist_ok=True)
 
 HEADERS = {
     "User-Agent": (
@@ -103,12 +105,31 @@ def scrape_members():
                         if c:
                             committees.append(c)
 
+        # 写真URL（figure > img から取得してローカル保存）
+        photo_url = ""
+        fig_img = block.find("figure")
+        if fig_img:
+            img_tag = fig_img.find("img")
+            if img_tag and img_tag.get("src"):
+                remote_url = urljoin(url, img_tag["src"])
+                ext = remote_url.split(".")[-1]
+                fname = f"seat_{seat_number}.{ext}"
+                try:
+                    img_resp = requests.get(remote_url, headers=HEADERS, timeout=10)
+                    img_resp.raise_for_status()
+                    (PHOTO_DIR / fname).write_bytes(img_resp.content)
+                    photo_url = f"/members/chitose/{fname}"
+                except Exception as e:
+                    print(f"  [WARN] 写真取得失敗 seat {seat_number}: {e}")
+                    photo_url = remote_url
+
         member = {
             "seat_number": seat_number,
             "name": name,
             "furigana": furigana,
             "faction": faction,
             "committees": committees,
+            "photo_url": photo_url,
         }
         members.append(member)
         print(f"  {seat_number}: {name}（{furigana}）/ {faction}")

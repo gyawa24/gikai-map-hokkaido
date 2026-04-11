@@ -4,17 +4,27 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import type { SearchSession, SearchMember } from "@/app/search/page";
 
-function highlight(text: string, query: string): string {
-  if (!query) return text;
-  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return text.replace(new RegExp(escaped, "gi"), (m) => `<mark>${m}</mark>`);
+function tokenize(query: string): string[] {
+  return query.trim().split(/\s+/).filter(Boolean);
 }
 
-function excerpt(text: string, query: string, radius = 60): string {
-  const idx = text.toLowerCase().indexOf(query.toLowerCase());
+function matchesAll(text: string, tokens: string[]): boolean {
+  const lower = text.toLowerCase();
+  return tokens.every((t) => lower.includes(t.toLowerCase()));
+}
+
+function highlight(text: string, tokens: string[]): string {
+  if (!tokens.length) return text;
+  const pattern = tokens.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  return text.replace(new RegExp(pattern, "gi"), (m) => `<mark>${m}</mark>`);
+}
+
+function excerpt(text: string, tokens: string[], radius = 60): string {
+  const first = tokens[0] ?? "";
+  const idx = text.toLowerCase().indexOf(first.toLowerCase());
   if (idx === -1) return text.slice(0, radius * 2);
   const start = Math.max(0, idx - radius);
-  const end = Math.min(text.length, idx + query.length + radius);
+  const end = Math.min(text.length, idx + first.length + radius);
   return (start > 0 ? "…" : "") + text.slice(start, end) + (end < text.length ? "…" : "");
 }
 
@@ -30,9 +40,10 @@ export default function SearchClient({
   const [tab, setTab] = useState<"sessions" | "members">("sessions");
 
   const q = query.trim();
+  const tokens = useMemo(() => tokenize(q), [q]);
 
   const sessionResults = useMemo(() => {
-    if (!q) return [];
+    if (!tokens.length) return [];
     return sessions.flatMap((s) => {
       const hits: { session: SearchSession; segIndex: number; label: string; startTime: string; context: string; field: string }[] = [];
       for (const seg of s.segments) {
@@ -42,13 +53,13 @@ export default function SearchClient({
           { text: seg.transcript, field: "全文" },
         ];
         for (const { text, field } of fields) {
-          if (text.toLowerCase().includes(q.toLowerCase())) {
+          if (matchesAll(text, tokens)) {
             hits.push({
               session: s,
               segIndex: seg.index,
               label: seg.label,
               startTime: seg.start_time,
-              context: excerpt(text, q),
+              context: excerpt(text, tokens),
               field,
             });
             break; // 同セグメントは1件だけ
@@ -56,22 +67,22 @@ export default function SearchClient({
         }
       }
       // タイトル・委員会名マッチ
-      if (!hits.length && (s.title + s.committee).toLowerCase().includes(q.toLowerCase())) {
+      if (!hits.length && matchesAll(s.title + s.committee, tokens)) {
         hits.push({ session: s, segIndex: 0, label: "", startTime: "", context: s.committee, field: "会議名" });
       }
       return hits;
     });
-  }, [q, sessions]);
+  }, [tokens, sessions]);
 
   const memberResults = useMemo(() => {
-    if (!q) return [];
+    if (!tokens.length) return [];
     return members.filter((m) =>
-      [m.name, m.furigana, m.party, m.faction, ...m.committees]
-        .join(" ").toLowerCase().includes(q.toLowerCase())
+      matchesAll([m.name, m.furigana, m.party, m.faction, ...m.committees].join(" "), tokens)
     );
-  }, [q, members]);
+  }, [tokens, members]);
 
   const totalResults = tab === "sessions" ? sessionResults.length : memberResults.length;
+  const hasQuery = tokens.length > 0;
 
   return (
     <div className="flex flex-col gap-4">
@@ -110,7 +121,7 @@ export default function SearchClient({
             }`}
           >
             {t === "sessions" ? "議会記録" : "議員"}
-            {q && (
+            {hasQuery && (
               <span className="ml-1.5 text-xs bg-[#E8EEF7] text-[#1B3A6B] px-1.5 py-0.5 rounded-full">
                 {t === "sessions" ? sessionResults.length : memberResults.length}
               </span>
@@ -120,16 +131,17 @@ export default function SearchClient({
       </div>
 
       {/* 結果 */}
-      {!q && (
+      {!hasQuery && (
         <p className="text-sm text-[#718096] text-center py-8">キーワードを入力してください</p>
       )}
 
-      {q && totalResults === 0 && (
+      {hasQuery && totalResults === 0 && (
         <p className="text-sm text-[#718096] text-center py-8">「{q}」の検索結果はありませんでした</p>
+
       )}
 
       {/* 議会記録結果 */}
-      {tab === "sessions" && q && sessionResults.length > 0 && (
+      {tab === "sessions" && hasQuery && sessionResults.length > 0 && (
         <div className="flex flex-col gap-3">
           {sessionResults.map((r, i) => (
             <Link
@@ -138,7 +150,12 @@ export default function SearchClient({
               className="block bg-white border border-[#CBD5E0] rounded-lg px-4 py-3 hover:border-[#1B3A6B] hover:shadow-sm transition-all"
             >
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs text-[#718096]">{formatDate(r.session.date)}</span>
+                <span className="text-xs text-[#718096]">{r.session.cityName}</span>
+                {r.session.sourceType === "minutes" ? (
+                  <span className="text-xs bg-[#F4F6F9] text-[#4A5568] px-1.5 py-0.5 rounded border border-[#E2E8F0]">公式議事録</span>
+                ) : (
+                  <span className="text-xs bg-[#E8EEF7] text-[#2A5298] px-1.5 py-0.5 rounded">会議録</span>
+                )}
                 {r.session.committee && (
                   <span className="text-xs bg-[#E8EEF7] text-[#1B3A6B] px-1.5 py-0.5 rounded">{r.session.committee}</span>
                 )}
@@ -150,7 +167,7 @@ export default function SearchClient({
               <p className="text-sm font-medium text-[#1B3A6B] mb-1">{r.session.title}</p>
               <p
                 className="text-xs text-[#4A5568] leading-relaxed [&_mark]:bg-yellow-200 [&_mark]:text-[#1A202C] [&_mark]:rounded"
-                dangerouslySetInnerHTML={{ __html: highlight(r.context, q) }}
+                dangerouslySetInnerHTML={{ __html: highlight(r.context, tokens) }}
               />
             </Link>
           ))}
@@ -158,7 +175,7 @@ export default function SearchClient({
       )}
 
       {/* 議員結果 */}
-      {tab === "members" && q && memberResults.length > 0 && (
+      {tab === "members" && hasQuery && memberResults.length > 0 && (
         <div className="flex flex-col gap-2">
           {memberResults.map((m, i) => (
             <Link
@@ -171,7 +188,7 @@ export default function SearchClient({
                   <div>
                     <span
                       className="font-bold text-[#1B3A6B] text-base [&_mark]:bg-yellow-200 [&_mark]:text-[#1A202C] [&_mark]:rounded"
-                      dangerouslySetInnerHTML={{ __html: highlight(m.name, q) }}
+                      dangerouslySetInnerHTML={{ __html: highlight(m.name, tokens) }}
                     />
                     <span className="text-xs text-[#718096] ml-1.5">{m.furigana}</span>
                   </div>
@@ -181,15 +198,15 @@ export default function SearchClient({
               <div className="flex flex-wrap gap-1.5 mt-1.5">
                 {m.party && (
                   <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] border border-[#CBD5E0] text-[#4A5568] rounded-full"
-                    dangerouslySetInnerHTML={{ __html: highlight(m.party, q) }} />
+                    dangerouslySetInnerHTML={{ __html: highlight(m.party, tokens) }} />
                 )}
                 {m.faction && m.faction !== m.party && (
                   <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] border border-[#CBD5E0] text-[#4A5568] rounded-full"
-                    dangerouslySetInnerHTML={{ __html: highlight(m.faction, q) }} />
+                    dangerouslySetInnerHTML={{ __html: highlight(m.faction, tokens) }} />
                 )}
                 {m.committees.map((c) => (
                   <span key={c} className="text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#1B3A6B] rounded-full"
-                    dangerouslySetInnerHTML={{ __html: highlight(c, q) }} />
+                    dangerouslySetInnerHTML={{ __html: highlight(c, tokens) }} />
                 ))}
               </div>
             </Link>

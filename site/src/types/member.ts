@@ -6,6 +6,7 @@ export type Member = {
   faction: string;
   committees: string[];
   votes?: number;
+  photo_url?: string;
 };
 
 export type MemberActivitySession = {

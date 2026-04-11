@@ -10,7 +10,14 @@ function getMemberCount(cityId: string): number {
     const members = JSON.parse(fs.readFileSync(fp, "utf-8")) as Member[];
     return members.length;
   } catch {
-    return 0;
+    // members.json がなければ election.json の当選者数で代替
+    try {
+      const fp = path.join(process.cwd(), "data", cityId, "election.json");
+      const data = JSON.parse(fs.readFileSync(fp, "utf-8"));
+      return (data.candidates ?? []).filter((c: { result: string }) => c.result === "当選").length;
+    } catch {
+      return 0;
+    }
   }
 }
 
@@ -50,7 +57,7 @@ const CITIES = [
     furigana: "えにわし",
     href: "/eniwa",
     region: "石狩",
-    hasMinutes: false,
+    hasMinutes: true,
     hasSession: false,
   },
   {
@@ -59,7 +66,7 @@ const CITIES = [
     furigana: "とまこまいし",
     href: "/tomakomai",
     region: "胆振",
-    hasMinutes: false,
+    hasMinutes: true,
     hasSession: false,
   },
 ];

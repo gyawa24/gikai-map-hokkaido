@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import type { MinutesSession, MinuteItem } from "@/types/minutes";
 
 // ---------- ユーティリティ ----------
@@ -44,19 +44,53 @@ function buildAgendaGroups(minutes: MinuteItem[]): AgendaGroup[] {
   return groups.filter((g) => g.title || g.items.length > 0);
 }
 
+/**
+ * 長いトピック文字列から検索キーワードを抽出する。
+ * 「次世代半導体関連事業の使用物質・薬品」→ ["次世代半導体関連事業", "使用物質", "薬品"]
+ * 短い文字列（8文字以下）はそのまま返す。
+ */
+function extractKeywords(text: string): string[] {
+  if (text.length <= 5) return [text];
+  const parts = text.split(/[のがをにでとはもやてからより・、。「」【】（）\s]+/);
+  // ひらがなのみの断片（助詞・活用語尾）は除外する
+  const keywords = parts.filter((p) => p.length >= 2 && !/^[\u3041-\u3096]+$/.test(p));
+  return keywords.length > 0 ? keywords : [text];
+}
+
+function textMatchesKeywords(target: string, keywords: string[]): boolean {
+  const lower = target.toLowerCase();
+  return keywords.some((kw) => lower.includes(kw.toLowerCase()));
+}
+
+// スペース区切りトークン → AND検索、単語 → extractKeywordsでOR検索
+function queryTokens(query: string): string[] {
+  const spaceTokens = query.trim().split(/\s+/).filter(Boolean);
+  if (spaceTokens.length > 1) return spaceTokens; // AND用
+  return extractKeywords(query); // OR用（助詞除去）
+}
+
+function textMatchesQuery(target: string, query: string): boolean {
+  const spaceTokens = query.trim().split(/\s+/).filter(Boolean);
+  if (spaceTokens.length > 1) {
+    // AND: 全トークンが含まれること
+    const lower = target.toLowerCase();
+    return spaceTokens.every((t) => lower.includes(t.toLowerCase()));
+  }
+  return textMatchesKeywords(target, extractKeywords(query));
+}
+
 function groupMatchesTopic(group: AgendaGroup, topic: string): boolean {
-  const kw = topic.toLowerCase();
-  if (group.title.toLowerCase().includes(kw)) return true;
+  const keywords = extractKeywords(topic);
+  if (textMatchesKeywords(group.title, keywords)) return true;
   return group.items.some(
-    (m) => m.text.toLowerCase().includes(kw) || m.title.toLowerCase().includes(kw)
+    (m) => textMatchesKeywords(m.text, keywords) || textMatchesKeywords(m.title, keywords)
   );
 }
 
 function groupMatchesQuery(group: AgendaGroup, query: string): boolean {
-  const q = query.toLowerCase();
-  if (group.title.toLowerCase().includes(q)) return true;
+  if (textMatchesQuery(group.title, query)) return true;
   return group.items.some(
-    (m) => m.text.toLowerCase().includes(q) || m.title.toLowerCase().includes(q)
+    (m) => textMatchesQuery(m.text, query) || textMatchesQuery(m.title, query)
   );
 }
 
@@ -108,19 +142,25 @@ function MinuteItemView({ item, highlight }: { item: MinuteItem; highlight?: str
   const isLong = item.text.length > 400;
   const displayText = isLong && !expanded ? item.text.slice(0, 400) + "…" : item.text;
 
-  // ハイライト表示
+  // ハイライト表示（全マッチキーワードをハイライト）
   const renderText = (text: string) => {
     if (!highlight) return <p style={{ whiteSpace: "pre-wrap" }}>{text}</p>;
-    const kw = highlight.toLowerCase();
-    const idx = text.toLowerCase().indexOf(kw);
-    if (idx === -1) return <p style={{ whiteSpace: "pre-wrap" }}>{text}</p>;
+    const keywords = queryTokens(highlight);
+    const pattern = keywords
+      .map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+      .join("|");
+    const regex = new RegExp(`(${pattern})`, "gi");
+    const checkRe = new RegExp(`^(?:${pattern})$`, "i");
+    const parts = text.split(regex);
     return (
       <p style={{ whiteSpace: "pre-wrap" }}>
-        {text.slice(0, idx)}
-        <mark className="bg-yellow-100 text-[#1A202C] rounded px-0.5">
-          {text.slice(idx, idx + highlight.length)}
-        </mark>
-        {text.slice(idx + highlight.length)}
+        {parts.map((part, i) =>
+          checkRe.test(part) ? (
+            <mark key={i} className="bg-yellow-100 text-[#1A202C] rounded px-0.5">{part}</mark>
+          ) : (
+            part
+          )
+        )}
       </p>
     );
   };
@@ -178,8 +218,7 @@ function AgendaGroupView({
 
   const visibleItems = group.items.filter((m) => {
     if (!query) return true;
-    const q = query.toLowerCase();
-    return m.text.toLowerCase().includes(q) || m.title.toLowerCase().includes(q);
+    return textMatchesQuery(m.text, query) || textMatchesQuery(m.title, query);
   });
 
   const hasContent = visibleItems.length > 0;
@@ -251,6 +290,26 @@ export default function MinutesReader({ session, activeTopic = null, query, onQu
 
   const filter = activeTopic ?? query.trim();
 
+  // 各タブのマッチ件数（フィルター時のみ計算）
+  const matchCountsPerTab = useMemo(() => {
+    if (!filter) return null;
+    return session.schedules.map((s) => {
+      const gs = buildAgendaGroups(s.minutes);
+      return gs.filter((g) =>
+        activeTopic ? groupMatchesTopic(g, activeTopic) : groupMatchesQuery(g, query.trim())
+      ).length;
+    });
+  }, [filter, activeTopic, query, session.schedules]);
+
+  // クエリ/トピックが変わったとき、最初にマッチするタブへ自動ジャンプ
+  useEffect(() => {
+    if (!filter || !matchCountsPerTab) return;
+    const firstMatch = matchCountsPerTab.findIndex((c) => c > 0);
+    if (firstMatch !== -1 && matchCountsPerTab[activeScheduleIndex] === 0) {
+      setActiveScheduleIndex(firstMatch);
+    }
+  }, [filter]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // フィルター適用後のグループ
   const visibleGroups = filter
     ? groups.filter((g) =>
@@ -268,21 +327,32 @@ export default function MinutesReader({ session, activeTopic = null, query, onQu
       <div className="mb-5">
         <div className="overflow-x-auto -mx-4 px-4">
           <div className="flex gap-1 min-w-max border-b border-[#CBD5E0]">
-            {session.schedules.map((s, i) => (
-              <button
-                key={s.schedule_id}
-                onClick={() => { setActiveScheduleIndex(i); onQueryChange(""); }}
-                className={`
-                  text-sm px-3 py-2 font-medium whitespace-nowrap border-b-2 -mb-px transition-colors
-                  ${i === activeScheduleIndex
-                    ? "border-[#1B3A6B] text-[#1B3A6B]"
-                    : "border-transparent text-[#4A5568] hover:text-[#1B3A6B] hover:border-[#CBD5E0]"
-                  }
-                `}
-              >
-                {parseScheduleName(s.name)}
-              </button>
-            ))}
+            {session.schedules.map((s, i) => {
+              const tabCount = matchCountsPerTab?.[i] ?? 0;
+              return (
+                <button
+                  key={s.schedule_id}
+                  onClick={() => setActiveScheduleIndex(i)}
+                  className={`
+                    relative text-sm px-3 py-2 font-medium whitespace-nowrap border-b-2 -mb-px transition-colors
+                    ${i === activeScheduleIndex
+                      ? "border-[#1B3A6B] text-[#1B3A6B]"
+                      : "border-transparent text-[#4A5568] hover:text-[#1B3A6B] hover:border-[#CBD5E0]"
+                    }
+                  `}
+                >
+                  {parseScheduleName(s.name)}
+                  {matchCountsPerTab && tabCount > 0 && (
+                    <span className="ml-1.5 text-xs bg-[#E8EEF7] text-[#1B3A6B] px-1.5 py-0.5 rounded-full">
+                      {tabCount}
+                    </span>
+                  )}
+                  {matchCountsPerTab && tabCount === 0 && filter && (
+                    <span className="ml-1.5 text-xs text-[#CBD5E0]">0</span>
+                  )}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>

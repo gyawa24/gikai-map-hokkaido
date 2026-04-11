@@ -23,5 +23,5 @@ export default function ChitoseMembersPage() {
   const activity = getMemberActivity();
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
 
-  return <MemberList members={members} factions={factions} activity={activity} />;
+  return <MemberList members={members} factions={factions} activity={activity} memberHrefBase="/chitose/members" />;
 }
