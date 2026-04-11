@@ -35,6 +35,9 @@ export default function TomakomaiMinutesPage() {
         <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">公式議事録</h2>
         <p className="text-base text-[#4A5568] leading-relaxed">
           苫小牧市議会の公式会議録です。本会議・委員会の発言内容をすべて収録しています。
+          {items.length > 0 && (
+            <span className="block mt-1 text-sm text-[#718096]">{items.length}件の会議録を掲載中</span>
+          )}
         </p>
       </section>
 
