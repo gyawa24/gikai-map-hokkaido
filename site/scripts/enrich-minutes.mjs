@@ -119,19 +119,37 @@ function extractQuestioners(session) {
   return Array.from(questioners.values()).filter((q) => q.topics.length > 0);
 }
 
-// --- AI用テキスト構築（質問・答弁・議題のみ） ---
+// --- AI用テキスト構築（質問・答弁・議題のみ、文字数上限付き） ---
+const MAX_PROMPT_CHARS = 60_000; // 約20,000トークン相当
+
 function buildPromptText(session) {
   const lines = [`会議名: ${session.name}（${session.japanese_year}）\n`];
+  let totalChars = lines[0].length;
+
   for (const schedule of session.schedules) {
-    lines.push(`\n【${schedule.name}】`);
+    if (totalChars >= MAX_PROMPT_CHARS) {
+      lines.push("\n（文字数制限により以降を省略）");
+      break;
+    }
+    const header = `\n【${schedule.name}】`;
+    lines.push(header);
+    totalChars += header.length;
+
     for (const m of schedule.minutes) {
+      if (totalChars >= MAX_PROMPT_CHARS) break;
       if (m.minute_type === "名簿") continue;
+
+      let line = "";
       if (m.minute_type === "△議題") {
-        lines.push(`\n▼ 議題: ${m.text.replace(/^△/, "").trim()}`);
+        line = `\n▼ 議題: ${m.text.replace(/^△/, "").trim()}`;
       } else if (m.minute_type === "◆質問" || m.minute_type === "○一般質問") {
-        lines.push(`\n[質問 ${m.title}]\n${m.text.slice(0, 600)}`);
+        line = `\n[質問 ${m.title}]\n${m.text.slice(0, 400)}`;
       } else if (m.minute_type === "◎答弁") {
-        lines.push(`[答弁 ${m.title}]\n${m.text.slice(0, 300)}`);
+        line = `[答弁 ${m.title}]\n${m.text.slice(0, 200)}`;
+      }
+      if (line) {
+        lines.push(line);
+        totalChars += line.length;
       }
     }
   }
@@ -175,6 +193,7 @@ ${promptText}
 
     } catch (e) {
       if (e.status === 429 && attempt < retries - 1) {
+        // 400 (too long) はリトライしない — buildPromptText で上限を設けているので発生しないはず
         // retry-after ヘッダーがあればその秒数、なければ指数バックオフ
         const retryAfter = parseInt(e.headers?.get?.("retry-after") ?? "0", 10);
         const waitSec = retryAfter > 0 ? retryAfter : Math.pow(2, attempt + 2);
