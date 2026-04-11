@@ -3,12 +3,23 @@ import path from "path";
 import type { MinutesIndexItem } from "@/types/minutes";
 import MinutesIndexClient from "@/components/MinutesIndexClient";
 
+import type { MinutesEnriched } from "@/types/minutes";
+
 function getMinutesIndex(): MinutesIndexItem[] {
   const fp = path.join(process.cwd(), "data", "tomakomai", "minutes", "index.json");
   try {
     return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
   } catch {
     return [];
+  }
+}
+
+function getEnriched(councilId: number): MinutesEnriched | null {
+  const fp = path.join(process.cwd(), "data", "tomakomai", "minutes", "enriched", `${councilId}.json`);
+  try {
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesEnriched;
+  } catch {
+    return null;
   }
 }
 
@@ -25,7 +36,7 @@ export default function TomakomaiMinutesPage() {
   const allItems = getMinutesIndex();
   const items = allItems.map((item) => ({
     ...item,
-    enriched: null,
+    enriched: getEnriched(item.council_id),
     category: categoryLabel(item.type_label),
   }));
 

@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import type { MinutesSession, MinutesIndexItem } from "@/types/minutes";
+import type { MinutesSession, MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesDetailClient from "@/components/MinutesDetailClient";
 
 function getSession(id: string): MinutesSession | null {
@@ -24,6 +24,15 @@ export async function generateStaticParams() {
   }
 }
 
+function getEnriched(id: string): MinutesEnriched | null {
+  const fp = path.join(process.cwd(), "data", "tomakomai", "minutes", "enriched", `${id}.json`);
+  try {
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesEnriched;
+  } catch {
+    return null;
+  }
+}
+
 function typeCategory(typeLabel: string): string {
   if (typeLabel.includes("定例会") && !typeLabel.includes("補正") && !typeLabel.includes("委員会")) return "定例会";
   if (typeLabel.includes("臨時会")) return "臨時会";
@@ -40,6 +49,7 @@ export default async function TomakomaiMinutesDetailPage({
   const session = getSession(id);
   if (!session) notFound();
 
+  const enriched = getEnriched(id);
   const category = typeCategory(session.type_label);
   const totalSpeeches = session.schedules.reduce(
     (acc, s) => acc + s.minutes.filter((m) => m.minute_type !== "名簿").length,
@@ -77,7 +87,7 @@ export default async function TomakomaiMinutesDetailPage({
       </section>
 
       <Suspense>
-        <MinutesDetailClient session={session} enriched={null} />
+        <MinutesDetailClient session={session} enriched={enriched} />
       </Suspense>
     </div>
   );

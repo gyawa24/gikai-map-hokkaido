@@ -2,13 +2,22 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import type { MinutesSession, MinutesIndexItem } from "@/types/minutes";
+import type { MinutesSession, MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesDetailClient from "@/components/MinutesDetailClient";
 
 function getSession(id: string): MinutesSession | null {
   const fp = path.join(process.cwd(), "data", "eniwa", "minutes", `${id}.json`);
   try {
     return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesSession;
+  } catch {
+    return null;
+  }
+}
+
+function getEnriched(id: string): MinutesEnriched | null {
+  const fp = path.join(process.cwd(), "data", "eniwa", "minutes", "enriched", `${id}.json`);
+  try {
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesEnriched;
   } catch {
     return null;
   }
@@ -40,7 +49,9 @@ export default async function EniwaMinutesDetailPage({
   const session = getSession(id);
   if (!session) notFound();
 
+  const enriched = getEnriched(id);
   const category = typeCategory(session.type_label);
+
   const totalSpeeches = session.schedules.reduce(
     (acc, s) => acc + s.minutes.filter((m) => m.minute_type !== "名簿").length,
     0
@@ -77,7 +88,7 @@ export default async function EniwaMinutesDetailPage({
       </section>
 
       <Suspense>
-        <MinutesDetailClient session={session} enriched={null} />
+        <MinutesDetailClient session={session} enriched={enriched} />
       </Suspense>
     </div>
   );
