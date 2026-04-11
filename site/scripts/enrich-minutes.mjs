@@ -28,17 +28,9 @@ const SITE_ROOT = path.resolve(__dirname, "..");
 const args = process.argv.slice(2);
 const get = (flag) => { const i = args.indexOf(flag); return i !== -1 ? args[i + 1] : null; };
 
-const city = get("--city") ?? "chitose";
+// --city eniwa,tomakomai のようにカンマ区切りで複数指定可能
+const cities = (get("--city") ?? "chitose").split(",").map((s) => s.trim());
 const targetId = get("--id"); // 指定なしなら全件処理
-
-// --- パス ---
-const dataMinutesDir = path.join(ROOT, "data", city, "minutes");
-const siteMinutesDir = path.join(SITE_ROOT, "data", city, "minutes");
-const enrichedDataDir = path.join(dataMinutesDir, "enriched");
-const enrichedSiteDir = path.join(siteMinutesDir, "enriched");
-
-fs.mkdirSync(enrichedDataDir, { recursive: true });
-fs.mkdirSync(enrichedSiteDir, { recursive: true });
 
 // --- Anthropic client ---
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
@@ -69,6 +61,62 @@ function extractSpeakers(session) {
       else if (minute_type === "◎答弁") role = "理事者";
       return { name, role, speech_count };
     });
+}
+
+// --- 議事録から質問者と大項目/中項目を直接抽出 ---
+function extractQuestioners(session) {
+  const questioners = new Map(); // name -> { name, topics: [] }
+
+  for (const schedule of session.schedules) {
+    let currentQuestioner = null;
+
+    for (const m of schedule.minutes) {
+      // "○○議員の一般質問" という△議題でセクション開始を検出
+      if (m.minute_type === "△議題") {
+        const gqMatch = m.text.match(/([^\s△]+)議員の一般質問/);
+        if (gqMatch) {
+          currentQuestioner = gqMatch[1]; // e.g. "吉谷徹"
+          if (!questioners.has(currentQuestioner)) {
+            questioners.set(currentQuestioner, { name: currentQuestioner, topics: [] });
+          }
+        } else {
+          // 別の議員の質問セクションに移ったらリセット
+          if (currentQuestioner && m.text.includes("議員")) {
+            currentQuestioner = null;
+          }
+        }
+      }
+
+      // 質問テキストから大項目・中項目を抽出
+      if (m.minute_type === "◆質問" && currentQuestioner && questioners.has(currentQuestioner)) {
+        const q = questioners.get(currentQuestioner);
+        const text = m.text;
+
+        // 大項目: "大項目１、○○について" or "大項目１　○○について"
+        const largeMatches = [...text.matchAll(/大項目\d+[、，　\s]+([^。\n中小]+について)/g)];
+        for (const match of largeMatches) {
+          const topic = match[1].trim().replace(/[　\s]+/g, "");
+          if (topic && !q.topics.includes(topic)) {
+            q.topics.push(topic);
+          }
+        }
+
+        // 中項目: "中項目１、○○について"（大項目がない場合のフォールバック）
+        if (largeMatches.length === 0) {
+          const midMatches = [...text.matchAll(/中項目\d+[、，　\s]+([^。\n]+について)/g)];
+          for (const match of midMatches) {
+            const topic = match[1].trim().slice(0, 30);
+            if (topic && !q.topics.includes(topic)) {
+              q.topics.push(topic);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // トピックが取れなかった議員はAI側に任せるためnullを返す
+  return Array.from(questioners.values()).filter((q) => q.topics.length > 0);
 }
 
 // --- AI用テキスト構築（質問・答弁・議題のみ） ---
@@ -127,7 +175,14 @@ ${promptText}
 }
 
 // --- 単一ファイル処理 ---
-async function processFile(councilId) {
+async function processFile(councilId, city) {
+  const dataMinutesDir = path.join(ROOT, "data", city, "minutes");
+  const siteMinutesDir = path.join(SITE_ROOT, "data", city, "minutes");
+  const enrichedDataDir = path.join(dataMinutesDir, "enriched");
+  const enrichedSiteDir = path.join(siteMinutesDir, "enriched");
+  fs.mkdirSync(enrichedDataDir, { recursive: true });
+  fs.mkdirSync(enrichedSiteDir, { recursive: true });
+
   const srcFile = path.join(dataMinutesDir, `${councilId}.json`);
   const outDataFile = path.join(enrichedDataDir, `${councilId}.json`);
   const outSiteFile = path.join(enrichedSiteDir, `${councilId}.json`);
@@ -153,6 +208,27 @@ async function processFile(councilId) {
   const ai = await generateEnrichment(session);
   console.log(`     タグ: ${ai.tags.join(", ")}`);
 
+  // 議事録から直接抽出した質問者を優先、AIで補完
+  const structuredQuestioners = extractQuestioners(session);
+  const aiQuestioners = ai.questioners ?? [];
+
+  // マージ: 直接抽出 優先、AIの名前と照合して補完
+  const mergedQuestioners = structuredQuestioners.length > 0
+    ? structuredQuestioners.map((sq) => {
+        const aiMatch = aiQuestioners.find((aq) =>
+          aq.name.includes(sq.name) || sq.name.includes(aq.name)
+        );
+        return {
+          name: sq.name,
+          topics: sq.topics,
+          // AIのトピックも追記（重複除外）
+          ai_topics: aiMatch ? aiMatch.topics.filter((t) => !sq.topics.includes(t)) : [],
+        };
+      })
+    : aiQuestioners.map((q) => ({ name: q.name, topics: q.topics, ai_topics: [] }));
+
+  console.log(`     質問者(直接抽出): ${structuredQuestioners.length}名`);
+
   const result = {
     council_id: session.council_id,
     name: session.name,
@@ -161,7 +237,7 @@ async function processFile(councilId) {
     highlights: ai.highlights ?? [],
     tags: ai.tags ?? [],
     speakers,
-    questioners: ai.questioners ?? [],
+    questioners: mergedQuestioners,
   };
 
   const json = JSON.stringify(result, null, 2);
@@ -170,8 +246,9 @@ async function processFile(councilId) {
   console.log(`     ✓ 保存: ${outDataFile}`);
 }
 
-// --- メイン ---
-async function main() {
+// --- 都市単位の処理 ---
+async function processCity(city) {
+  const dataMinutesDir = path.join(ROOT, "data", city, "minutes");
   const indexFile = path.join(dataMinutesDir, "index.json");
   const index = JSON.parse(fs.readFileSync(indexFile, "utf-8"));
 
@@ -179,15 +256,21 @@ async function main() {
     ? index.filter((item) => String(item.council_id) === targetId)
     : index;
 
-  console.log(`\n${city} 議事録エンリッチ処理: ${targets.length}件\n`);
+  console.log(`\n[${city}] エンリッチ処理: ${targets.length}件`);
 
   for (const item of targets) {
-    await processFile(String(item.council_id));
-    // レート制限対策
+    await processFile(String(item.council_id), city);
     await new Promise((r) => setTimeout(r, 1000));
   }
 
-  console.log("\n完了");
+  console.log(`[${city}] 完了`);
+}
+
+// --- メイン（複数都市を並列実行） ---
+async function main() {
+  console.log(`\n対象都市: ${cities.join(", ")}`);
+  await Promise.all(cities.map((c) => processCity(c)));
+  console.log("\nすべて完了");
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
