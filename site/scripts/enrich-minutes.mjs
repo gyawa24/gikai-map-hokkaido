@@ -138,17 +138,19 @@ function buildPromptText(session) {
   return lines.join("\n");
 }
 
-// --- Claude で要約・タグ生成 ---
-async function generateEnrichment(session) {
+// --- Claude で要約・タグ生成（リトライ付き） ---
+async function generateEnrichment(session, retries = 5) {
   const promptText = buildPromptText(session);
 
-  const message = await client.messages.create({
-    model: "claude-haiku-4-5-20251001",
-    max_tokens: 2048,
-    messages: [
-      {
-        role: "user",
-        content: `以下は市議会の会議録です。市民向けに分かりやすく整理してください。
+  for (let attempt = 0; attempt < retries; attempt++) {
+    try {
+      const message = await client.messages.create({
+        model: "claude-haiku-4-5-20251001",
+        max_tokens: 2048,
+        messages: [
+          {
+            role: "user",
+            content: `以下は市議会の会議録です。市民向けに分かりやすく整理してください。
 
 ${promptText}
 
@@ -162,16 +164,27 @@ ${promptText}
     {"name": "議員名（番号なし）", "topics": ["質問テーマ1", "質問テーマ2"]}
   ]
 }`,
-      },
-    ],
-  });
+          },
+        ],
+      });
 
-  const text = message.content[0].type === "text" ? message.content[0].text : "";
+      const text = message.content[0].type === "text" ? message.content[0].text : "";
+      const match = text.match(/\{[\s\S]*\}/);
+      if (!match) throw new Error("JSON not found in response:\n" + text);
+      return JSON.parse(match[0]);
 
-  // JSON を抽出
-  const match = text.match(/\{[\s\S]*\}/);
-  if (!match) throw new Error("JSON not found in response:\n" + text);
-  return JSON.parse(match[0]);
+    } catch (e) {
+      if (e.status === 429 && attempt < retries - 1) {
+        // retry-after ヘッダーがあればその秒数、なければ指数バックオフ
+        const retryAfter = parseInt(e.headers?.get?.("retry-after") ?? "0", 10);
+        const waitSec = retryAfter > 0 ? retryAfter : Math.pow(2, attempt + 2);
+        console.log(`     ⏳ レート制限 (429) — ${waitSec}秒後にリトライ (${attempt + 1}/${retries - 1})`);
+        await new Promise((r) => setTimeout(r, waitSec * 1000));
+      } else {
+        throw e;
+      }
+    }
+  }
 }
 
 // --- 単一ファイル処理 ---
@@ -266,10 +279,12 @@ async function processCity(city) {
   console.log(`[${city}] 完了`);
 }
 
-// --- メイン（複数都市を並列実行） ---
+// --- メイン（複数都市を順番に処理） ---
 async function main() {
   console.log(`\n対象都市: ${cities.join(", ")}`);
-  await Promise.all(cities.map((c) => processCity(c)));
+  for (const c of cities) {
+    await processCity(c);
+  }
   console.log("\nすべて完了");
 }
 
