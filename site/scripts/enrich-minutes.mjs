@@ -187,9 +187,28 @@ ${promptText}
       });
 
       const text = message.content[0].type === "text" ? message.content[0].text : "";
-      const match = text.match(/\{[\s\S]*\}/);
-      if (!match) throw new Error("JSON not found in response:\n" + text);
-      return JSON.parse(match[0]);
+
+      // マークダウンコードブロックを除去
+      const cleaned = text.replace(/```json\s*/g, "").replace(/```\s*/g, "").trim();
+
+      // 最外側の { } を取り出す
+      const start = cleaned.indexOf("{");
+      const end = cleaned.lastIndexOf("}");
+      if (start === -1 || end === -1) throw new Error("JSON not found in response:\n" + text);
+
+      let jsonStr = cleaned.slice(start, end + 1);
+
+      // 文字列値内の生改行をエスケープ（よくある不正JSON）
+      jsonStr = jsonStr.replace(/"([^"\\]*(\\.[^"\\]*)*)"/gs, (match) =>
+        match.replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t")
+      );
+
+      try {
+        return JSON.parse(jsonStr);
+      } catch (parseErr) {
+        console.error("     ⚠ JSONパース失敗。生レスポンス:\n" + text.slice(0, 500));
+        throw parseErr;
+      }
 
     } catch (e) {
       if (e.status === 429 && attempt < retries - 1) {
