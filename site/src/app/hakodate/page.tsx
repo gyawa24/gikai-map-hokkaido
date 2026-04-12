@@ -1,7 +1,17 @@
 import fs from "fs";
 import path from "path";
+import type { Metadata } from "next";
 import type { Member } from "@/types/member";
 import MemberList from "@/components/MemberList";
+
+export const metadata: Metadata = {
+  title: "函館市議会",
+  description: "函館市議会の議員一覧・議事録を掲載しています。",
+  openGraph: {
+    title: "函館市議会 | 北海道議会情報マップ",
+    description: "函館市議会の議員一覧・議事録を掲載しています。",
+  },
+};
 
 function getMembers(): Member[] {
   try {

@@ -3,8 +3,30 @@ import CityHeader from "@/components/CityHeader";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "北海道議会情報マップ",
-  description: "北海道内の市町村議会情報を横断的に収集・整理する情報サイト",
+  title: {
+    default: "北海道議会情報マップ",
+    template: "%s | 北海道議会情報マップ",
+  },
+  description:
+    "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。",
+  openGraph: {
+    title: "北海道議会情報マップ",
+    description:
+      "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。",
+    type: "website",
+    locale: "ja_JP",
+    siteName: "北海道議会情報マップ",
+  },
+  twitter: {
+    card: "summary",
+    title: "北海道議会情報マップ",
+    description:
+      "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
