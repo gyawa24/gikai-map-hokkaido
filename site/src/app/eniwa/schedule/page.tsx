@@ -7,9 +7,13 @@ export const metadata: Metadata = {
   title: "行事予定 | 北海道議会情報マップ - 恵庭市",
 };
 
-function getSchedule(): CitySchedule {
+function getSchedule(): CitySchedule | null {
   const filePath = path.join(process.cwd(), "data", "eniwa", "schedule.json");
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as CitySchedule;
+  try {
+    return JSON.parse(fs.readFileSync(filePath, "utf-8")) as CitySchedule;
+  } catch {
+    return null;
+  }
 }
 
 export default function EniwaSchedulePage() {
@@ -24,6 +28,11 @@ export default function EniwaSchedulePage() {
         </p>
       </div>
 
+      {schedule === null ? (
+        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+          現在データを準備中です。
+        </div>
+      ) : (
       <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 max-w-xl">
         <p className="text-sm text-gray-600 mb-5">{schedule.note}</p>
 
@@ -83,6 +92,7 @@ export default function EniwaSchedulePage() {
           </a>
         </div>
       </div>
+      )}
     </div>
   );
 }

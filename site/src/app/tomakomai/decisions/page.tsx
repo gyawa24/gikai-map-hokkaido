@@ -14,7 +14,11 @@ function getDecisions(): Decision[] {
     "tomakomai",
     "decisions.json"
   );
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as Decision[];
+  try {
+    return JSON.parse(fs.readFileSync(filePath, "utf-8")) as Decision[];
+  } catch {
+    return [];
+  }
 }
 
 function shortTitle(title: string): string {
@@ -33,6 +37,11 @@ export default function TomakomaiDecisionsPage() {
         </p>
       </div>
 
+      {decisions.length === 0 ? (
+        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+          現在データを準備中です。
+        </div>
+      ) : (
       <div className="flex flex-col gap-4">
         {decisions.map((d) => (
           <div
@@ -97,6 +106,7 @@ export default function TomakomaiDecisionsPage() {
           </div>
         ))}
       </div>
+      )}
     </div>
   );
 }

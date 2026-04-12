@@ -7,14 +7,18 @@ export const metadata: Metadata = {
   title: "議会報告 | 北海道議会情報マップ - 苫小牧市",
 };
 
-function getNewsletter(): Newsletter {
+function getNewsletter(): Newsletter | null {
   const filePath = path.join(
     process.cwd(),
     "data",
     "tomakomai",
     "newsletter.json"
   );
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as Newsletter;
+  try {
+    return JSON.parse(fs.readFileSync(filePath, "utf-8")) as Newsletter;
+  } catch {
+    return null;
+  }
 }
 
 function parsePdfSize(title: string): string {
@@ -24,7 +28,6 @@ function parsePdfSize(title: string): string {
 
 export default function TomakomaiNewsletterPage() {
   const nl = getNewsletter();
-  const pdfSize = parsePdfSize(nl.pdf_title);
 
   return (
     <div>
@@ -39,6 +42,11 @@ export default function TomakomaiNewsletterPage() {
         </p>
       </div>
 
+      {nl === null ? (
+        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+          現在データを準備中です。
+        </div>
+      ) : (
       <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 max-w-xl">
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="text-xs font-semibold bg-blue-50 text-blue-700 rounded-full px-3 py-0.5">
@@ -72,8 +80,8 @@ export default function TomakomaiNewsletterPage() {
               <line x1="9" y1="15" x2="15" y2="15" />
             </svg>
             議会報告をダウンロード
-            {pdfSize && (
-              <span className="text-blue-200 text-xs">{pdfSize}</span>
+            {parsePdfSize(nl.pdf_title) && (
+              <span className="text-blue-200 text-xs">{parsePdfSize(nl.pdf_title)}</span>
             )}
           </a>
 
@@ -101,6 +109,7 @@ export default function TomakomaiNewsletterPage() {
           </a>
         </div>
       </div>
+      )}
     </div>
   );
 }
