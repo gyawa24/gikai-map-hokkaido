@@ -2,11 +2,20 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { Member } from "@/types/member";
+import type { Member, MemberActivity } from "@/types/member";
 
 function getMembers(): Member[] {
   const fp = path.join(process.cwd(), "data", "eniwa", "members.json");
   return JSON.parse(fs.readFileSync(fp, "utf-8")) as Member[];
+}
+
+function getActivity(): Record<string, MemberActivity> {
+  try {
+    const fp = path.join(process.cwd(), "data", "eniwa", "members_activity.json");
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Record<string, MemberActivity>;
+  } catch {
+    return {};
+  }
 }
 
 export async function generateStaticParams() {
@@ -23,6 +32,10 @@ export default async function MemberDetailPage({
   const members = getMembers();
   const member = members.find((m) => m.seat_number === Number(id));
   if (!member) notFound();
+
+  const activity = getActivity();
+  const memberActivity = activity[member.name.replace(/\s/g, "")];
+  const topThemes = (memberActivity?.themes ?? []).slice(0, 8);
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -49,6 +62,11 @@ export default async function MemberDetailPage({
               <span className="text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5">
                 {member.seat_number}番
               </span>
+              {memberActivity && (
+                <span className="text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded-full px-2 py-0.5">
+                  質問 {memberActivity.session_count}回
+                </span>
+              )}
             </div>
             <h2 className="text-2xl font-bold text-[#1A202C] leading-snug">{member.name}</h2>
             <p className="text-sm text-[#718096] mt-0.5">{member.furigana}</p>
@@ -95,9 +113,74 @@ export default async function MemberDetailPage({
         </dl>
       </section>
 
-      <div className="bg-[#F4F6F9] rounded-lg p-6 text-center">
-        <p className="text-sm text-[#718096]">質問活動データは準備中です</p>
-      </div>
+      {/* 質問活動 */}
+      {memberActivity ? (
+        <section>
+          <h3 className="text-base font-bold text-[#1B3A6B] mb-3">
+            議会質問の記録
+            <span className="ml-2 text-sm font-normal text-[#718096]">（{memberActivity.session_count}回登壇）</span>
+          </h3>
+
+          {/* 質問テーマバッジ */}
+          {topThemes.length > 0 && (
+            <div className="bg-white rounded-lg border border-[#CBD5E0] shadow-sm px-5 py-4 mb-4">
+              <p className="text-xs font-medium text-[#718096] mb-2">質問テーマ</p>
+              <div className="flex flex-wrap gap-1.5">
+                {topThemes.map((theme) => (
+                  <span
+                    key={theme}
+                    className="text-xs font-medium px-2.5 py-1 bg-[#E8EEF7] text-[#2A5298] rounded-full"
+                  >
+                    {theme}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* 定例会ごとの履歴 */}
+          <div className="space-y-3">
+            {memberActivity.sessions.map((s, i) => (
+              <div key={i} className="bg-white rounded-lg border border-[#CBD5E0] px-5 py-4">
+                <div className="flex items-center justify-between mb-2">
+                  <p className="text-sm font-semibold text-[#1B3A6B]">{s.session}</p>
+                  {s.council_id > 0 && (
+                    <Link
+                      href={`/eniwa/minutes/${s.council_id}`}
+                      className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
+                    >
+                      議事録全文
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                    </Link>
+                  )}
+                </div>
+                <ul className="space-y-1.5">
+                  {s.topics.map((t) => (
+                    <li key={t} className="flex items-start gap-2 text-sm">
+                      <span className="text-[#2A5298] shrink-0 mt-0.5" aria-hidden="true">·</span>
+                      <span className="text-[#4A5568]">{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-4">
+            <Link
+              href="/eniwa/minutes"
+              className="text-sm text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors flex items-center gap-1"
+            >
+              恵庭市議会の議事録一覧を見る
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </Link>
+          </div>
+        </section>
+      ) : (
+        <div className="bg-[#F4F6F9] rounded-lg p-6 text-center">
+          <p className="text-sm text-[#718096]">質問活動データは準備中です</p>
+        </div>
+      )}
     </div>
   );
 }
