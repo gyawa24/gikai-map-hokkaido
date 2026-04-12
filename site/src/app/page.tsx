@@ -41,6 +41,16 @@ function getDecisionCount(cityId: string): number {
   }
 }
 
+function getMinutesCount(cityId: string): number {
+  try {
+    const dir = path.join(process.cwd(), "data", cityId, "minutes");
+    const files = fs.readdirSync(dir);
+    return files.filter((f) => f.endsWith(".json")).length;
+  } catch {
+    return 0;
+  }
+}
+
 const CITIES = [
   {
     id: "chitose",
@@ -113,6 +123,7 @@ export default function HomePage() {
     memberCount: getMemberCount(c.id),
     latestSession: getLatestSession(c.id),
     decisionCount: getDecisionCount(c.id),
+    minutesCount: getMinutesCount(c.id),
   }));
 
   const totalMembers = cities.reduce((sum, c) => sum + c.memberCount, 0);
@@ -195,6 +206,17 @@ export default function HomePage() {
                           <line x1="3" y1="10" x2="21" y2="10"/>
                         </svg>
                         直近: {city.latestSession}
+                      </span>
+                    )}
+                    {city.minutesCount > 0 && (
+                      <span className="inline-flex items-center gap-1.5 text-sm text-[#4A5568]">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#2A5298]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                          <polyline points="14 2 14 8 20 8"/>
+                          <line x1="16" y1="13" x2="8" y2="13"/>
+                          <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                        議事録 {city.minutesCount}件
                       </span>
                     )}
                   </div>
