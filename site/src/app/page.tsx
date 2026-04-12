@@ -115,6 +115,42 @@ const CITIES = [
     hasMinutes: true,
     hasSession: false,
   },
+  {
+    id: "wakkanai",
+    name: "稚内市議会",
+    furigana: "わっかないし",
+    href: "/wakkanai",
+    region: "宗谷",
+    hasMinutes: true,
+    hasSession: false,
+  },
+  {
+    id: "kitami",
+    name: "北見市議会",
+    furigana: "きたみし",
+    href: "/kitami",
+    region: "オホーツク",
+    hasMinutes: true,
+    hasSession: false,
+  },
+  {
+    id: "obihiro",
+    name: "帯広市議会",
+    furigana: "おびひろし",
+    href: "/obihiro",
+    region: "十勝",
+    hasMinutes: true,
+    hasSession: false,
+  },
+  {
+    id: "nayoro",
+    name: "名寄市議会",
+    furigana: "なよろし",
+    href: "/nayoro",
+    region: "上川",
+    hasMinutes: true,
+    hasSession: false,
+  },
 ];
 
 export default function HomePage() {

@@ -79,6 +79,38 @@ const CITY_CONFIG: Record<
       { href: "/kushiro/minutes", label: "議事録" },
     ],
   },
+  wakkanai: {
+    name: "稚内市議会",
+    baseHref: "/wakkanai",
+    nav: [
+      { href: "/wakkanai", label: "議員一覧" },
+      { href: "/wakkanai/minutes", label: "議事録" },
+    ],
+  },
+  kitami: {
+    name: "北見市議会",
+    baseHref: "/kitami",
+    nav: [
+      { href: "/kitami", label: "議員一覧" },
+      { href: "/kitami/minutes", label: "議事録" },
+    ],
+  },
+  obihiro: {
+    name: "帯広市議会",
+    baseHref: "/obihiro",
+    nav: [
+      { href: "/obihiro", label: "議員一覧" },
+      { href: "/obihiro/minutes", label: "議事録" },
+    ],
+  },
+  nayoro: {
+    name: "名寄市議会",
+    baseHref: "/nayoro",
+    nav: [
+      { href: "/nayoro", label: "議員一覧" },
+      { href: "/nayoro/minutes", label: "議事録" },
+    ],
+  },
 };
 
 function detectCity(pathname: string): string | null {
@@ -88,6 +120,10 @@ function detectCity(pathname: string): string | null {
   if (pathname.startsWith("/hakodate")) return "hakodate";
   if (pathname.startsWith("/muroran")) return "muroran";
   if (pathname.startsWith("/kushiro")) return "kushiro";
+  if (pathname.startsWith("/wakkanai")) return "wakkanai";
+  if (pathname.startsWith("/kitami")) return "kitami";
+  if (pathname.startsWith("/obihiro")) return "obihiro";
+  if (pathname.startsWith("/nayoro")) return "nayoro";
   if (
     pathname.startsWith("/chitose") ||
     pathname.startsWith("/decisions") ||
