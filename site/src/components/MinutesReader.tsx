@@ -193,11 +193,13 @@ function MinuteItemView({ item, highlight }: { item: MinuteItem; highlight?: str
 function AgendaGroupView({
   group,
   defaultOpen,
+  scrollTo,
   activeTopic,
   query,
 }: {
   group: AgendaGroup;
   defaultOpen: boolean;
+  scrollTo: boolean;
   activeTopic: string | null;
   query: string;
 }) {
@@ -209,12 +211,12 @@ function AgendaGroupView({
     setOpen(defaultOpen);
   }, [defaultOpen]);
 
-  // 自動スクロール（マッチしていて展開されたとき）
+  // 自動スクロール（最初のマッチグループのみ）
   useEffect(() => {
-    if (defaultOpen && (activeTopic || query)) {
-      ref.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    if (scrollTo && (activeTopic || query)) {
+      ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, [defaultOpen, activeTopic, query]);
+  }, [scrollTo, activeTopic, query]);
 
   // グループタイトル自体がクエリにマッチしている場合（例: 「松倉美加議員の代表質問」）は
   // アイテムを全件表示する。内容フィルターはアイテムレベルのマッチ時のみ適用。
@@ -411,7 +413,7 @@ export default function MinutesReader({ session, activeTopic = null, query, onQu
             この日程に「{filter}」に関連する内容は見つかりませんでした
           </div>
         ) : (
-          visibleGroups.map((group) => {
+          visibleGroups.map((group, i) => {
             const isMatch = filter
               ? (activeTopic ? groupMatchesTopic(group, activeTopic) : groupMatchesQuery(group, query.trim()))
               : false;
@@ -420,6 +422,7 @@ export default function MinutesReader({ session, activeTopic = null, query, onQu
                 key={group.id}
                 group={group}
                 defaultOpen={isMatch}
+                scrollTo={isMatch && i === 0}
                 activeTopic={activeTopic}
                 query={query.trim()}
               />
