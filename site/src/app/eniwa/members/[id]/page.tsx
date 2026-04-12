@@ -3,6 +3,7 @@ import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Member, MemberActivity } from "@/types/member";
+import { Accordion } from "@/components/Accordion";
 
 function getMembers(): Member[] {
   const fp = path.join(process.cwd(), "data", "eniwa", "members.json");
@@ -141,28 +142,34 @@ export default async function MemberDetailPage({
           {/* 定例会ごとの履歴 */}
           <div className="space-y-3">
             {memberActivity.sessions.map((s, i) => (
-              <div key={i} className="bg-white rounded-lg border border-[#CBD5E0] px-5 py-4">
-                <div className="flex items-center justify-between mb-2">
-                  <p className="text-sm font-semibold text-[#1B3A6B]">{s.session}</p>
+              <Accordion
+                key={i}
+                title={s.session}
+                count={s.topics.length}
+                defaultOpen={i === 0}
+              >
+                <div className="px-5 py-4">
+                  <ul className="space-y-1.5">
+                    {s.topics.map((t) => (
+                      <li key={t} className="flex items-start gap-2 text-sm">
+                        <span className="text-[#2A5298] shrink-0 mt-0.5" aria-hidden="true">·</span>
+                        <span className="text-[#4A5568]">{t}</span>
+                      </li>
+                    ))}
+                  </ul>
                   {s.council_id > 0 && (
-                    <Link
-                      href={`/eniwa/minutes/${s.council_id}`}
-                      className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
-                    >
-                      議事録全文
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-                    </Link>
+                    <div className="mt-3 pt-3 border-t border-[#E2E8F0]">
+                      <Link
+                        href={`/eniwa/minutes/${s.council_id}`}
+                        className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
+                      >
+                        議事録全文
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                      </Link>
+                    </div>
                   )}
                 </div>
-                <ul className="space-y-1.5">
-                  {s.topics.map((t) => (
-                    <li key={t} className="flex items-start gap-2 text-sm">
-                      <span className="text-[#2A5298] shrink-0 mt-0.5" aria-hidden="true">·</span>
-                      <span className="text-[#4A5568]">{t}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              </Accordion>
             ))}
           </div>
 
