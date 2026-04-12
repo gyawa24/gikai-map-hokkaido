@@ -120,6 +120,7 @@ function normalizeTag(tag: string): string {
 export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/minutes" }: Props) {
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [showAllTags, setShowAllTags] = useState(false);
+  const [searchText, setSearchText] = useState("");
 
   // タグ集計（正規化後）
   const tagCounts = useMemo(() => {
@@ -164,13 +165,15 @@ export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/
     return groups;
   }, [sortedTags]);
 
-  // フィルタリング（正規化して照合）
+  // フィルタリング（テキスト検索 AND タグ絞り込み）
   const filtered = useMemo(() => {
-    if (!activeTag) return items;
-    return items.filter((item) =>
-      (item.enriched?.tags ?? []).some((t) => normalizeTag(t) === activeTag)
-    );
-  }, [items, activeTag]);
+    const q = searchText.trim();
+    return items.filter((item) => {
+      if (activeTag && !(item.enriched?.tags ?? []).some((t) => normalizeTag(t) === activeTag)) return false;
+      if (q && !item.name.includes(q) && !item.japanese_year.includes(q)) return false;
+      return true;
+    });
+  }, [items, activeTag, searchText]);
 
   // セッション種別でグルーピング
   const byYear = useMemo(() => {
@@ -200,6 +203,41 @@ export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/
 
   return (
     <>
+      {/* テキスト検索 */}
+      <div className="mb-4">
+        <label htmlFor="minutes-search" className="sr-only">議事録を検索</label>
+        <div className="relative">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A0AEC0] pointer-events-none"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input
+            id="minutes-search"
+            type="search"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+            placeholder="会議名・年度で検索…"
+            className="w-full pl-9 pr-4 py-2.5 text-sm border border-[#CBD5E0] rounded-lg bg-white text-[#1A202C] placeholder-[#A0AEC0] focus:outline-none focus:ring-2 focus:ring-[#2A5298] focus:border-transparent transition-colors"
+          />
+          {searchText && (
+            <button
+              onClick={() => setSearchText("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#A0AEC0] hover:text-[#4A5568] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
+              aria-label="検索をクリア"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          )}
+        </div>
+      </div>
+
       {/* タグフィルター */}
       {sortedTags.length > 0 && (
         <div className="mb-6 bg-white rounded-lg border border-[#CBD5E0] shadow-sm overflow-hidden">
@@ -275,15 +313,22 @@ export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/
       )}
 
       {/* 絞り込み中の表示 */}
-      {activeTag && (
+      {(activeTag || searchText.trim()) && (
         <p className="text-sm text-[#4A5568] mb-4">
-          「<span className="font-semibold text-[#1B3A6B]">{activeTag}</span>」に関連する議事録：{filtered.length}件
+          {activeTag && (
+            <>「<span className="font-semibold text-[#1B3A6B]">{activeTag}</span>」</>
+          )}
+          {activeTag && searchText.trim() && "・"}
+          {searchText.trim() && (
+            <>「<span className="font-semibold text-[#1B3A6B]">{searchText.trim()}</span>」</>
+          )}
+          に関連する議事録：{filtered.length}件
         </p>
       )}
 
       {filtered.length === 0 ? (
         <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
-          「{activeTag}」に関連する議事録が見つかりません
+          条件に一致する議事録が見つかりません
         </div>
       ) : (
         <div className="flex flex-col gap-8">
