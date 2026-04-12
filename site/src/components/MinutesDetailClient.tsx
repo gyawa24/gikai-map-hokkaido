@@ -115,26 +115,24 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
           {/* 質問議員 */}
           {enriched.questioners.length > 0 && (
             <div className="bg-white rounded-lg border border-[#CBD5E0] p-4 shadow-sm">
-              <h3 className="text-sm font-bold text-[#1B3A6B] mb-3">質問に立った議員</h3>
+              <h3 className="text-sm font-bold text-[#1B3A6B] mb-1">質問に立った議員</h3>
+              <p className="text-xs text-[#718096] mb-3">名前をクリックすると発言箇所へジャンプします</p>
               <div className="space-y-2">
                 {enriched.questioners.map((q) => (
                   <div key={q.name} className="flex items-start gap-2">
-                    <span className="text-sm font-medium text-[#1A202C] shrink-0 w-28">{q.name}</span>
-                    <div className="flex flex-wrap gap-1">
-                      {q.topics.map((t) => (
-                        <button
-                          key={t}
-                          onClick={() => handleTopicSearch(t)}
-                          className={`text-xs px-2 py-0.5 rounded-full transition-colors ${
-                            query === t
-                              ? "bg-[#1B3A6B] text-white"
-                              : "bg-[#E8EEF7] text-[#2A5298] hover:bg-[#1B3A6B] hover:text-white"
-                          }`}
-                        >
-                          {t}
-                        </button>
-                      ))}
-                    </div>
+                    <button
+                      onClick={() => handleTopicSearch(q.name)}
+                      className={`text-sm font-medium shrink-0 w-28 text-left transition-colors hover:underline ${
+                        query === q.name
+                          ? "text-[#1B3A6B] font-bold"
+                          : "text-[#2A5298] hover:text-[#1B3A6B]"
+                      }`}
+                    >
+                      {q.name}
+                    </button>
+                    <p className="text-xs text-[#4A5568] leading-relaxed">
+                      {q.topics.join("、")}
+                    </p>
                   </div>
                 ))}
               </div>
