@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import type { Member } from "@/types/member";
+import type { Member, MemberActivity } from "@/types/member";
 import MemberList from "@/components/MemberList";
 
 type ElectionCandidate = {
@@ -39,9 +39,19 @@ function getMembers(): Member[] {
   }
 }
 
+function getMemberActivity(): Record<string, MemberActivity> {
+  try {
+    const fp = path.join(process.cwd(), "data", "tomakomai", "members_activity.json");
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Record<string, MemberActivity>;
+  } catch {
+    return {};
+  }
+}
+
 export default function TomakomaiMembersPage() {
   const members = getMembers();
+  const activity = getMemberActivity();
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
 
-  return <MemberList members={members} factions={factions} memberHrefBase="/tomakomai/members" />;
+  return <MemberList members={members} factions={factions} activity={activity} memberHrefBase="/tomakomai/members" />;
 }

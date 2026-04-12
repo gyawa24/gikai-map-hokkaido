@@ -108,6 +108,39 @@ for (const file of enrichedFiles) {
   }
 }
 
+// --- 大テーマへのキーワードマッピング ---
+const THEME_KEYWORDS = [
+  { theme: "教育",         keywords: ["学力", "学校", "教育", "授業", "不登校", "図書", "給食", "学習", "高校", "大学", "奨学"] },
+  { theme: "子育て・保育", keywords: ["子育て", "保育", "幼稚園", "育児", "待機児童", "少子化", "放課後", "児童", "子ども", "こども", "出産"] },
+  { theme: "福祉・介護",   keywords: ["福祉", "介護", "高齢者", "障害", "生活保護", "支援", "老人", "ケア", "デイ", "障がい"] },
+  { theme: "防災・安全",   keywords: ["防災", "避難", "災害", "ハザード", "消防", "救急", "緊急", "安全", "熊", "ヒグマ", "鳥獣"] },
+  { theme: "農業・農地",   keywords: ["農業", "農地", "農家", "農産", "収穫", "農協", "水田", "畜産", "漁業", "水産"] },
+  { theme: "観光・交流",   keywords: ["観光", "宿泊", "インバウンド", "旅行", "交流", "イベント", "にぎわい", "シティ"] },
+  { theme: "道路・インフラ", keywords: ["道路", "橋", "インフラ", "修繕", "公共施設", "舗装", "整備", "上下水道", "水道"] },
+  { theme: "環境",         keywords: ["環境", "ごみ", "廃棄物", "リサイクル", "脱炭素", "カーボン", "ゼロ", "再生可能", "太陽光"] },
+  { theme: "産業・経済",   keywords: ["産業", "企業", "工業", "経済", "雇用", "振興", "誘致", "工場", "商業", "商店街", "起業"] },
+  { theme: "DX・デジタル", keywords: ["DX", "デジタル", "ICT", "AI", "システム", "電子", "オンライン", "マイナンバー"] },
+  { theme: "財政・予算",   keywords: ["予算", "財政", "歳入", "歳出", "決算", "基金", "税", "補助金", "交付金"] },
+  { theme: "健康・医療",   keywords: ["医療", "健康", "病院", "診療", "クリニック", "がん", "検診", "メンタル"] },
+  { theme: "まちづくり",   keywords: ["まちづくり", "都市", "開発", "再開発", "市街地", "景観", "空き家", "移住", "定住", "人口"] },
+  { theme: "交通",         keywords: ["交通", "バス", "鉄道", "自転車", "駐車", "路線", "タクシー"] },
+  { theme: "スポーツ・文化", keywords: ["スポーツ", "文化", "芸術", "体育", "スタジアム", "アリーナ", "図書館", "合宿"] },
+];
+
+function extractThemes(topics) {
+  const themeCounts = {};
+  for (const topic of topics) {
+    for (const { theme, keywords } of THEME_KEYWORDS) {
+      if (keywords.some((kw) => topic.includes(kw))) {
+        themeCounts[theme] = (themeCounts[theme] ?? 0) + 1;
+      }
+    }
+  }
+  return Object.entries(themeCounts)
+    .sort((a, b) => b[1] - a[1])
+    .map(([t]) => t);
+}
+
 // --- 出力形式に変換 ---
 const result = {};
 for (const name of memberNames) {
@@ -125,9 +158,12 @@ for (const name of memberNames) {
     .sort((a, b) => b[1] - a[1])
     .map(([t]) => t);
 
+  const themes = extractThemes(topTopics);
+
   result[name] = {
     name,
     session_count: a.sessions.length,
+    themes,
     top_topics: topTopics.slice(0, 6),
     all_topics: topTopics,
     sessions: a.sessions,

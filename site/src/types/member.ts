@@ -19,6 +19,7 @@ export type MemberActivitySession = {
 export type MemberActivity = {
   name: string;
   session_count: number;
+  themes: string[];
   top_topics: string[];
   all_topics: string[];
   sessions: MemberActivitySession[];
