@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import type { Metadata } from "next";
 import type { MinutesSession, MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesDetailClient from "@/components/MinutesDetailClient";
 
@@ -12,6 +13,32 @@ function getSession(id: string): MinutesSession | null {
   } catch {
     return null;
   }
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const session = getSession(id);
+  const enriched = getEnriched(id);
+
+  const title = session
+    ? `${session.name} | 苫小牧市議会 | 北海道議会情報マップ`
+    : "議事録 | 苫小牧市議会 | 北海道議会情報マップ";
+  const description = enriched?.summary
+    ? enriched.summary.slice(0, 100)
+    : session
+    ? `${session.type_label}（${session.japanese_year}）`
+    : "苫小牧市議会の議事録";
+
+  return {
+    title,
+    description,
+    openGraph: { title, description },
+    twitter: { card: "summary" },
+  };
 }
 
 export async function generateStaticParams() {
