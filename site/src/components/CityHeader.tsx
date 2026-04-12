@@ -14,11 +14,11 @@ const CITY_CONFIG: Record<
     baseHref: "/chitose",
     nav: [
       { href: "/chitose", label: "議員一覧" },
-      { href: "/decisions", label: "議決結果" },
+      { href: "/chitose/decisions", label: "議決結果" },
       { href: "/chitose/minutes", label: "議事録" },
       { href: "/chitose/sessions", label: "会議録・速報" },
-      { href: "/schedule", label: "行事予定" },
-      { href: "/newsletter", label: "議会だより" },
+      { href: "/chitose/schedule", label: "行事予定" },
+      { href: "/chitose/newsletter", label: "議会だより" },
       { href: "/chitose/plan", label: "総合計画" },
       { href: "/ai-search", label: "✦ AI検索" },
     ],
@@ -126,12 +126,7 @@ function detectCity(pathname: string): string | null {
   if (pathname.startsWith("/kitami")) return "kitami";
   if (pathname.startsWith("/obihiro")) return "obihiro";
   if (pathname.startsWith("/nayoro")) return "nayoro";
-  if (
-    pathname.startsWith("/chitose") ||
-    pathname.startsWith("/decisions") ||
-    pathname.startsWith("/schedule") ||
-    pathname.startsWith("/newsletter")
-  )
+  if (pathname.startsWith("/chitose"))
     return "chitose";
   return null;
 }
