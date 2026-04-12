@@ -86,6 +86,13 @@ export default async function EniwaMinutesDetailPage({
 
   return (
     <div className="max-w-2xl mx-auto">
+      <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
+        <a href="/eniwa" className="hover:text-[#1B3A6B] transition-colors">恵庭市議会</a>
+        <span aria-hidden="true">›</span>
+        <a href="/eniwa/minutes" className="hover:text-[#1B3A6B] transition-colors">議事録</a>
+        <span aria-hidden="true">›</span>
+        <span className="text-[#1A202C]" aria-current="page">{session.name.slice(0, 20)}</span>
+      </nav>
       <section className="mb-6">
         <div className="flex items-center gap-2 mb-2">
           {category && (
