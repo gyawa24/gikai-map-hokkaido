@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import type { Session, SessionSummary } from "@/types/session";
 import TranscriptSegment from "@/components/TranscriptSegment";
 
@@ -11,6 +12,38 @@ function getSession(id: string): Session | null {
   } catch {
     return null;
   }
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const session = getSession(id);
+
+  if (!session) {
+    return {
+      title: "会議録 | 千歳市議会 | 北海道議会情報マップ",
+    };
+  }
+
+  const dateLabel = formatDate(session.date);
+  const title = `${session.title}（${dateLabel}）| 千歳市議会 | 北海道議会情報マップ`;
+
+  const firstSummary = session.segments.find((s) => s.summary)?.summary;
+  const description = firstSummary
+    ? firstSummary.slice(0, 100)
+    : session.committee
+    ? `${session.committee} — ${dateLabel}の会議録`
+    : `千歳市議会 ${dateLabel}の会議録`;
+
+  return {
+    title,
+    description,
+    openGraph: { title, description },
+    twitter: { card: "summary" },
+  };
 }
 
 export async function generateStaticParams() {
