@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import type { FormEvent } from "react";
 
 const NORMAL_EXAMPLES = [
@@ -21,7 +22,8 @@ const COMPARE_EXAMPLES = [
 
 type Mode = "normal" | "compare";
 
-export default function AISearchPage() {
+function AISearchPageInner() {
+  const searchParams = useSearchParams();
   const [mode, setMode] = useState<Mode>("normal");
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
@@ -29,6 +31,12 @@ export default function AISearchPage() {
   const [error, setError] = useState("");
   const [remaining, setRemaining] = useState<number | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+
+  // URLパラメータ ?q= から初期値をセット
+  useEffect(() => {
+    const q = searchParams.get("q");
+    if (q) setQuestion(q);
+  }, [searchParams]);
 
   function handleModeChange(next: Mode) {
     setMode(next);
@@ -251,5 +259,13 @@ export default function AISearchPage() {
         ※ 回答はデータ収集時点の情報に基づきます。1日あたり {10} 回まで利用できます。
       </p>
     </div>
+  );
+}
+
+export default function AISearchPage() {
+  return (
+    <Suspense>
+      <AISearchPageInner />
+    </Suspense>
   );
 }

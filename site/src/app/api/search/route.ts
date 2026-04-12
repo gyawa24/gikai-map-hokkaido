@@ -31,7 +31,7 @@ export type SessionHit = {
   id: string;
   city: string;
   cityName: string;
-  sourceType: "session" | "minutes";
+  sourceType: "session" | "minutes" | "decision";
   title: string;
   committee: string;
   href: string;
@@ -175,6 +175,42 @@ export async function GET(request: NextRequest) {
           startTime: "",
           context: committee,
           field: "会議名",
+        });
+      }
+    }
+  }
+
+  // 議決結果（3市）
+  const decisionHrefs: Record<string, string> = {
+    chitose: "/chitose",
+    eniwa: "/eniwa/decisions",
+    tomakomai: "/tomakomai/decisions",
+  };
+  for (const city of ["chitose", "eniwa", "tomakomai"]) {
+    const decisionsPath = path.join(dataRoot, city, "decisions.json");
+    if (!fs.existsSync(decisionsPath)) continue;
+    const decisions = JSON.parse(fs.readFileSync(decisionsPath, "utf-8")) as Array<{
+      session: string;
+      source_url: string;
+      description?: string;
+    }>;
+    const cityName = CITY_NAMES[city];
+    for (const d of decisions) {
+      const text = [d.session, d.description ?? ""].join(" ");
+      if (matchesAll(text, tokens)) {
+        sessionResults.push({
+          id: `${city}_decision_${d.session}`,
+          city,
+          cityName,
+          sourceType: "decision",
+          title: d.session,
+          committee: "議決結果",
+          href: decisionHrefs[city] ?? `/${city}`,
+          segIndex: 0,
+          label: "",
+          startTime: "",
+          context: excerpt(text, tokens),
+          field: "議決",
         });
       }
     }

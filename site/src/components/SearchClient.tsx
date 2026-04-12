@@ -109,7 +109,10 @@ export default function SearchClient() {
       )}
 
       {hasQuery && !loading && totalResults === 0 && (
-        <p className="text-sm text-[#718096] text-center py-8">「{query.trim()}」の検索結果はありませんでした</p>
+        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+          <p className="text-sm">「{query.trim()}」の検索結果はありませんでした</p>
+          <p className="text-xs mt-1">別のキーワードでお試しください</p>
+        </div>
       )}
 
       {/* 議会記録結果 */}
@@ -121,14 +124,16 @@ export default function SearchClient() {
               href={r.href}
               className="block bg-white border border-[#CBD5E0] rounded-lg px-4 py-3 hover:border-[#1B3A6B] hover:shadow-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
             >
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs text-[#718096]">{r.cityName}</span>
+              <div className="flex items-center gap-2 mb-1 flex-wrap">
+                <span className="text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5">{r.cityName}</span>
                 {r.sourceType === "minutes" ? (
                   <span className="text-xs bg-[#F4F6F9] text-[#4A5568] px-1.5 py-0.5 rounded border border-[#E2E8F0]">公式議事録</span>
+                ) : r.sourceType === "decision" ? (
+                  <span className="text-xs bg-[#F4F6F9] text-[#4A5568] px-1.5 py-0.5 rounded border border-[#E2E8F0]">議決結果</span>
                 ) : (
                   <span className="text-xs bg-[#E8EEF7] text-[#2A5298] px-1.5 py-0.5 rounded">会議録</span>
                 )}
-                {r.committee && (
+                {r.committee && r.sourceType !== "decision" && (
                   <span className="text-xs bg-[#E8EEF7] text-[#1B3A6B] px-1.5 py-0.5 rounded">{r.committee}</span>
                 )}
                 {r.label && (
@@ -165,7 +170,7 @@ export default function SearchClient() {
                     <span className="text-xs text-[#718096] ml-1.5">{m.furigana}</span>
                   </div>
                 </div>
-                <span className="text-xs text-[#718096] flex-shrink-0">{m.cityName}</span>
+                <span className="text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5 flex-shrink-0">{m.cityName}</span>
               </div>
               <div className="flex flex-wrap gap-1.5 mt-1.5">
                 {m.party && (

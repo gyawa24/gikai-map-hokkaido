@@ -2,6 +2,9 @@ import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
+import type { ComprehensivePlan } from "@/types/comprehensivePlan";
+import type { PolicyTag } from "@/lib/planUtils";
+import { matchPoliciesToMember } from "@/lib/planUtils";
 import MemberList from "@/components/MemberList";
 
 export const metadata: Metadata = {
@@ -15,8 +18,7 @@ export const metadata: Metadata = {
 
 function getMembers(): Member[] {
   const filePath = path.join(process.cwd(), "data", "chitose", "members.json");
-  const raw = fs.readFileSync(filePath, "utf-8");
-  return JSON.parse(raw) as Member[];
+  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as Member[];
 }
 
 function getMemberActivity(): Record<string, MemberActivity> {
@@ -28,10 +30,39 @@ function getMemberActivity(): Record<string, MemberActivity> {
   }
 }
 
+function getPlan(): ComprehensivePlan | null {
+  try {
+    const fp = path.join(process.cwd(), "data", "chitose", "comprehensive_plan.json");
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as ComprehensivePlan;
+  } catch {
+    return null;
+  }
+}
+
 export default function ChitoseMembersPage() {
   const members = getMembers();
   const activity = getMemberActivity();
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
+  const plan = getPlan();
 
-  return <MemberList members={members} factions={factions} activity={activity} memberHrefBase="/chitose/members" />;
+  const memberPolicies: Record<string, PolicyTag[]> = {};
+  if (plan) {
+    for (const [name, act] of Object.entries(activity)) {
+      memberPolicies[name] = matchPoliciesToMember(
+        act.all_topics ?? [],
+        act.themes ?? [],
+        plan
+      );
+    }
+  }
+
+  return (
+    <MemberList
+      members={members}
+      factions={factions}
+      activity={activity}
+      memberHrefBase="/chitose/members"
+      memberPolicies={memberPolicies}
+    />
+  );
 }
