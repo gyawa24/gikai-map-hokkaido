@@ -142,15 +142,6 @@ function MemberCard({
           </div>
         )}
 
-        {/* 質問した定例会 */}
-        {activity && activity.sessions.length > 0 && (
-          <div className="flex items-start gap-2">
-            <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">質問</span>
-            <p className="text-xs text-[#4A5568] leading-relaxed">
-              {activity.sessions.map((s) => s.session.replace(/\s+/g, "")).join("、")}
-            </p>
-          </div>
-        )}
       </div>
 
       {/* 質問履歴トグル */}
