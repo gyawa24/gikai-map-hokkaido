@@ -216,8 +216,11 @@ function AgendaGroupView({
     }
   }, [defaultOpen, activeTopic, query]);
 
+  // グループタイトル自体がクエリにマッチしている場合（例: 「松倉美加議員の代表質問」）は
+  // アイテムを全件表示する。内容フィルターはアイテムレベルのマッチ時のみ適用。
+  const titleMatches = query ? textMatchesQuery(group.title, query) : false;
   const visibleItems = group.items.filter((m) => {
-    if (!query) return true;
+    if (!query || titleMatches) return true;
     return textMatchesQuery(m.text, query) || textMatchesQuery(m.title, query);
   });
 
