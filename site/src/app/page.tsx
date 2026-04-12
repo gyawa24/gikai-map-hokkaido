@@ -265,6 +265,46 @@ export default function HomePage() {
           </Link>
 
           <Link
+            href="/eniwa/minutes"
+            className="group flex items-center gap-3 bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-4 py-3.5 shadow-sm hover:shadow-md transition-all duration-150"
+          >
+            <div className="w-9 h-9 rounded-lg bg-[#E8EEF7] flex items-center justify-center shrink-0 group-hover:bg-[#1B3A6B] transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#1B3A6B] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-[#1A202C]">公式議事録</p>
+              <p className="text-xs text-[#4A5568]">恵庭市 令和6〜7年</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+          </Link>
+
+          <Link
+            href="/tomakomai/minutes"
+            className="group flex items-center gap-3 bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-4 py-3.5 shadow-sm hover:shadow-md transition-all duration-150"
+          >
+            <div className="w-9 h-9 rounded-lg bg-[#E8EEF7] flex items-center justify-center shrink-0 group-hover:bg-[#1B3A6B] transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#1B3A6B] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-[#1A202C]">公式議事録</p>
+              <p className="text-xs text-[#4A5568]">苫小牧市 令和6〜7年</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+          </Link>
+
+          <Link
             href="/map"
             className="group flex items-center gap-3 bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-4 py-3.5 shadow-sm hover:shadow-md transition-all duration-150"
           >
