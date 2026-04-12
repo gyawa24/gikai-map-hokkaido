@@ -3,6 +3,8 @@ import path from "path";
 import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import MemberList from "@/components/MemberList";
+import CitySummaryCards from "@/components/CitySummaryCards";
+import { getMinutesSummary } from "@/lib/cityStats";
 
 export const metadata: Metadata = {
   title: "恵庭市議会",
@@ -62,6 +64,16 @@ export default function EniwaMembersPage() {
   const members = getMembers();
   const activity = getMemberActivity();
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
+  const { count: minutesCount, latestYear } = getMinutesSummary("eniwa");
 
-  return <MemberList members={members} factions={factions} activity={activity} memberHrefBase="/eniwa/members" />;
+  return (
+    <>
+      <CitySummaryCards
+        memberCount={members.length > 0 ? members.length : null}
+        minutesCount={minutesCount}
+        latestYear={latestYear}
+      />
+      <MemberList members={members} factions={factions} activity={activity} memberHrefBase="/eniwa/members" />
+    </>
+  );
 }

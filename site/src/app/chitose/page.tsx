@@ -6,6 +6,8 @@ import type { ComprehensivePlan } from "@/types/comprehensivePlan";
 import type { PolicyTag } from "@/lib/planUtils";
 import { matchPoliciesToMember } from "@/lib/planUtils";
 import MemberList from "@/components/MemberList";
+import CitySummaryCards from "@/components/CitySummaryCards";
+import { getMinutesSummary } from "@/lib/cityStats";
 
 export const metadata: Metadata = {
   title: "千歳市議会",
@@ -56,13 +58,22 @@ export default function ChitoseMembersPage() {
     }
   }
 
+  const { count: minutesCount, latestYear } = getMinutesSummary("chitose");
+
   return (
-    <MemberList
-      members={members}
-      factions={factions}
-      activity={activity}
-      memberHrefBase="/chitose/members"
-      memberPolicies={memberPolicies}
-    />
+    <>
+      <CitySummaryCards
+        memberCount={members.length}
+        minutesCount={minutesCount}
+        latestYear={latestYear}
+      />
+      <MemberList
+        members={members}
+        factions={factions}
+        activity={activity}
+        memberHrefBase="/chitose/members"
+        memberPolicies={memberPolicies}
+      />
+    </>
   );
 }
