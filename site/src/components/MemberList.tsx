@@ -130,7 +130,19 @@ function MemberCard({
           </div>
         </div>
 
-        {/* 質問定例会一覧 */}
+        {/* 関心テーマ（大分類タグ） */}
+        {activity && (activity.themes?.length > 0) && (
+          <div className="flex items-start gap-2 mb-2">
+            <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">テーマ</span>
+            <div className="flex flex-wrap gap-1">
+              {activity.themes.slice(0, 5).map((t) => (
+                <span key={t} className="text-xs px-2 py-0.5 bg-[#F4F6F9] text-[#4A5568] border border-[#E2E8F0] rounded-full">{t}</span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 質問した定例会 */}
         {activity && activity.sessions.length > 0 && (
           <div className="flex items-start gap-2">
             <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">質問</span>
