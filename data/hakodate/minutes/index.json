@@ -1,0 +1,92 @@
+[
+  {
+    "council_id": 1305,
+    "name": "令和 ７年第１回 ２月定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "1305.json"
+  },
+  {
+    "council_id": 1321,
+    "name": "令和 ７年第２回 ６月定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "1321.json"
+  },
+  {
+    "council_id": 1334,
+    "name": "令和 ７年第３回 ９月定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "1334.json"
+  },
+  {
+    "council_id": 1355,
+    "name": "令和 ７年第４回１２月定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "1355.json"
+  },
+  {
+    "council_id": 1301,
+    "name": "令和 ７年第１回 １月臨時会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "1301.json"
+  },
+  {
+    "council_id": 1318,
+    "name": "令和 ７年第２回 ５月臨時会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "1318.json"
+  },
+  {
+    "council_id": 1349,
+    "name": "令和 ７年第３回１２月臨時会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "1349.json"
+  },
+  {
+    "council_id": 1312,
+    "name": "函館市議会予算特別委員会（令和 ７年第１回定例会）",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算特別委員会",
+    "file": "1312.json"
+  },
+  {
+    "council_id": 1328,
+    "name": "函館市議会予算特別委員会（令和 ７年第２回定例会）",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算特別委員会",
+    "file": "1328.json"
+  },
+  {
+    "council_id": 1356,
+    "name": "函館市議会予算特別委員会（令和 ７年第４回定例会）",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算特別委員会",
+    "file": "1356.json",
+    "schedule_count": 8
+  },
+  {
+    "council_id": 1340,
+    "name": "函館市議会予算決算特別委員会（令和 ７年第３回定例会）",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算決算特別委員会",
+    "file": "1340.json",
+    "schedule_count": 8
+  }
+]

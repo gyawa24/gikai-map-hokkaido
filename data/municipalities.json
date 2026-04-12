@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "hakodate",
+    "name": "函館市",
+    "tenant_id": 537,
+    "system": "dnp"
+  },
+  {
+    "slug": "asahikawa",
+    "name": "旭川市",
+    "tenant_id": 529,
+    "system": "dnp"
+  },
+  {
+    "slug": "muroran",
+    "name": "室蘭市",
+    "tenant_id": 436,
+    "system": "dnp"
+  },
+  {
+    "slug": "kushiro",
+    "name": "釧路市",
+    "tenant_id": 532,
+    "system": "dnp"
+  },
+  {
+    "slug": "obihiro",
+    "name": "帯広市",
+    "tenant_id": 535,
+    "system": "dnp"
+  },
+  {
+    "slug": "kitami",
+    "name": "北見市",
+    "tenant_id": 483,
+    "system": "dnp"
+  },
+  {
+    "slug": "tomakomai",
+    "name": "苫小牧市",
+    "tenant_id": 536,
+    "system": "dnp"
+  },
+  {
+    "slug": "wakkanai",
+    "name": "稚内市",
+    "tenant_id": 70,
+    "system": "dnp"
+  },
+  {
+    "slug": "ashibetsu",
+    "name": "芦別市",
+    "tenant_id": 530,
+    "system": "dnp"
+  },
+  {
+    "slug": "nayoro",
+    "name": "名寄市",
+    "tenant_id": 614,
+    "system": "dnp"
+  },
+  {
+    "slug": "nemuro",
+    "name": "根室市",
+    "tenant_id": 533,
+    "system": "dnp"
+  },
+  {
+    "slug": "chitose",
+    "name": "千歳市",
+    "tenant_id": 452,
+    "system": "dnp"
+  },
+  {
+    "slug": "noboribetsu",
+    "name": "登別市",
+    "tenant_id": 538,
+    "system": "dnp"
+  },
+  {
+    "slug": "eniwa",
+    "name": "恵庭市",
+    "tenant_id": 89,
+    "system": "dnp"
+  },
+  {
+    "slug": "date",
+    "name": "伊達市",
+    "tenant_id": 542,
+    "system": "dnp"
+  },
+  {
+    "slug": "kitahiroshima",
+    "name": "北広島市",
+    "tenant_id": 72,
+    "system": "dnp"
+  },
+  {
+    "slug": "ishikari",
+    "name": "石狩市",
+    "tenant_id": 93,
+    "system": "dnp"
+  },
+  {
+    "slug": "hokuto",
+    "name": "北斗市",
+    "tenant_id": 309,
+    "system": "dnp"
+  },
+  {
+    "slug": "fukushima",
+    "name": "福島町",
+    "tenant_id": 69,
+    "system": "dnp"
+  },
+  {
+    "slug": "esashi",
+    "name": "江差町",
+    "tenant_id": 371,
+    "system": "dnp"
+  },
+  {
+    "slug": "kutchan",
+    "name": "倶知安町",
+    "tenant_id": 453,
+    "system": "dnp"
+  },
+  {
+    "slug": "kamikawa",
+    "name": "上川町",
+    "tenant_id": 73,
+    "system": "dnp"
+  },
+  {
+    "slug": "memuro",
+    "name": "芽室町",
+    "tenant_id": 454,
+    "system": "dnp"
+  },
+  {
+    "slug": "ikeda",
+    "name": "池田町",
+    "tenant_id": 353,
+    "system": "dnp"
+  },
+  {
+    "slug": "nakagawa",
+    "name": "中川町",
+    "tenant_id": 527,
+    "system": "dnp"
+  }
+]
