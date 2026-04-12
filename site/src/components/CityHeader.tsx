@@ -19,6 +19,7 @@ const CITY_CONFIG: Record<
       { href: "/chitose/sessions", label: "会議録・速報" },
       { href: "/schedule", label: "行事予定" },
       { href: "/newsletter", label: "議会だより" },
+      { href: "/chitose/plan", label: "総合計画" },
       { href: "/ai-search", label: "✦ AI検索" },
     ],
   },
@@ -46,11 +47,47 @@ const CITY_CONFIG: Record<
       { href: "/ai-search", label: "✦ AI検索" },
     ],
   },
+  asahikawa: {
+    name: "旭川市議会",
+    baseHref: "/asahikawa",
+    nav: [
+      { href: "/asahikawa", label: "議員一覧" },
+      { href: "/asahikawa/minutes", label: "議事録" },
+    ],
+  },
+  hakodate: {
+    name: "函館市議会",
+    baseHref: "/hakodate",
+    nav: [
+      { href: "/hakodate", label: "議員一覧" },
+      { href: "/hakodate/minutes", label: "議事録" },
+    ],
+  },
+  muroran: {
+    name: "室蘭市議会",
+    baseHref: "/muroran",
+    nav: [
+      { href: "/muroran", label: "議員一覧" },
+      { href: "/muroran/minutes", label: "議事録" },
+    ],
+  },
+  kushiro: {
+    name: "釧路市議会",
+    baseHref: "/kushiro",
+    nav: [
+      { href: "/kushiro", label: "議員一覧" },
+      { href: "/kushiro/minutes", label: "議事録" },
+    ],
+  },
 };
 
 function detectCity(pathname: string): string | null {
   if (pathname.startsWith("/eniwa")) return "eniwa";
   if (pathname.startsWith("/tomakomai")) return "tomakomai";
+  if (pathname.startsWith("/asahikawa")) return "asahikawa";
+  if (pathname.startsWith("/hakodate")) return "hakodate";
+  if (pathname.startsWith("/muroran")) return "muroran";
+  if (pathname.startsWith("/kushiro")) return "kushiro";
   if (
     pathname.startsWith("/chitose") ||
     pathname.startsWith("/decisions") ||
@@ -58,7 +95,6 @@ function detectCity(pathname: string): string | null {
     pathname.startsWith("/newsletter")
   )
     return "chitose";
-  // /chitose/* routes are caught by startsWith above
   return null;
 }
 

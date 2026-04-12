@@ -69,6 +69,42 @@ const CITIES = [
     hasMinutes: true,
     hasSession: false,
   },
+  {
+    id: "asahikawa",
+    name: "旭川市議会",
+    furigana: "あさひかわし",
+    href: "/asahikawa",
+    region: "上川",
+    hasMinutes: true,
+    hasSession: false,
+  },
+  {
+    id: "hakodate",
+    name: "函館市議会",
+    furigana: "はこだてし",
+    href: "/hakodate",
+    region: "渡島",
+    hasMinutes: true,
+    hasSession: false,
+  },
+  {
+    id: "muroran",
+    name: "室蘭市議会",
+    furigana: "むろらんし",
+    href: "/muroran",
+    region: "胆振",
+    hasMinutes: true,
+    hasSession: false,
+  },
+  {
+    id: "kushiro",
+    name: "釧路市議会",
+    furigana: "くしろし",
+    href: "/kushiro",
+    region: "釧路",
+    hasMinutes: true,
+    hasSession: false,
+  },
 ];
 
 export default function HomePage() {
