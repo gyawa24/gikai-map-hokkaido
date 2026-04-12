@@ -187,7 +187,7 @@ export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/
   const TagButton = ({ tag }: { tag: string }) => (
     <button
       onClick={() => setActiveTag(activeTag === tag ? null : tag)}
-      className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
+      className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
         activeTag === tag
           ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
           : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
@@ -208,7 +208,7 @@ export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/
             {activeTag && (
               <button
                 onClick={() => setActiveTag(null)}
-                className="text-xs text-[#718096] hover:text-[#1A202C] flex items-center gap-1"
+                className="text-xs text-[#718096] hover:text-[#1A202C] flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                 絞り込みを解除
@@ -256,13 +256,15 @@ export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/
             {/* トグルボタン */}
             <button
               onClick={() => setShowAllTags((v) => !v)}
-              className="mt-3 flex items-center gap-1 text-xs text-[#2A5298] hover:text-[#1B3A6B] transition-colors"
+              className="mt-3 flex items-center gap-1 text-xs text-[#2A5298] hover:text-[#1B3A6B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
+              aria-expanded={showAllTags}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`w-3.5 h-3.5 transition-transform ${showAllTags ? "rotate-180" : ""}`}
                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                aria-hidden="true"
               >
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
@@ -310,7 +312,7 @@ export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/
                           <Link
                             key={item.council_id}
                             href={`${minutesBasePath}/${item.council_id}`}
-                            className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-5 py-4 shadow-sm hover:shadow-md transition-all duration-150"
+                            className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-5 py-4 shadow-sm hover:shadow-md transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
                           >
                             <div className="flex items-start gap-4">
                               <div

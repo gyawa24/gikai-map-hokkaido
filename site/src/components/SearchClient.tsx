@@ -56,7 +56,8 @@ export default function SearchClient() {
       {/* 検索ボックス */}
       <div className="relative">
         <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#718096]"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+          aria-hidden="true">
           <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
         </svg>
         <input
@@ -64,11 +65,11 @@ export default function SearchClient() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="キーワードを入力（例: プール授業、市営住宅）"
-          className="w-full pl-9 pr-4 py-3 border border-[#CBD5E0] rounded-lg text-base focus:outline-none focus:border-[#1B3A6B] focus:ring-1 focus:ring-[#1B3A6B]"
+          className="w-full pl-9 pr-4 py-3 border border-[#CBD5E0] rounded-lg text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] focus-visible:border-[#2A5298]"
         />
         {query && (
-          <button onClick={() => setQuery("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#718096] hover:text-[#1A202C]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
+          <button onClick={() => setQuery("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#718096] hover:text-[#1A202C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded" aria-label="検索をクリア">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4" aria-hidden="true">
               <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
             </svg>
           </button>
@@ -81,11 +82,12 @@ export default function SearchClient() {
           <button
             key={t}
             onClick={() => setTab(t)}
-            className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
+            className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded-t ${
               tab === t
                 ? "border-[#1B3A6B] text-[#1B3A6B]"
                 : "border-transparent text-[#718096] hover:text-[#1A202C]"
             }`}
+            aria-current={tab === t ? "true" : undefined}
           >
             {t === "sessions" ? "議会記録" : "議員"}
             {hasQuery && !loading && (
@@ -117,7 +119,7 @@ export default function SearchClient() {
             <Link
               key={i}
               href={r.href}
-              className="block bg-white border border-[#CBD5E0] rounded-lg px-4 py-3 hover:border-[#1B3A6B] hover:shadow-sm transition-all"
+              className="block bg-white border border-[#CBD5E0] rounded-lg px-4 py-3 hover:border-[#1B3A6B] hover:shadow-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
             >
               <div className="flex items-center gap-2 mb-1">
                 <span className="text-xs text-[#718096]">{r.cityName}</span>
@@ -151,7 +153,7 @@ export default function SearchClient() {
             <Link
               key={i}
               href={m.href}
-              className="block bg-white border border-[#CBD5E0] rounded-lg px-4 py-3 hover:border-[#1B3A6B] hover:shadow-sm transition-all"
+              className="block bg-white border border-[#CBD5E0] rounded-lg px-4 py-3 hover:border-[#1B3A6B] hover:shadow-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
             >
               <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-3">

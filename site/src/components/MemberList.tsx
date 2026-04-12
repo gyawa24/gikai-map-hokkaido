@@ -3,6 +3,17 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import type { Member, MemberActivity } from "@/types/member";
+import type { PolicyTag } from "@/lib/planUtils";
+
+const GOAL_BADGE_COLORS: Record<number, string> = {
+  1: "bg-amber-100 text-amber-800 border-amber-300",
+  2: "bg-green-100 text-green-800 border-green-300",
+  3: "bg-red-100 text-red-800 border-red-300",
+  4: "bg-purple-100 text-purple-800 border-purple-300",
+  5: "bg-blue-100 text-blue-800 border-blue-300",
+  6: "bg-slate-100 text-slate-800 border-slate-300",
+  7: "bg-teal-100 text-teal-800 border-teal-300",
+};
 
 const FACTION_STYLES: Record<string, { badge: string }> = {
   "自民党議員会":              { badge: "bg-amber-50 text-amber-800 border border-amber-200" },
@@ -49,11 +60,13 @@ function MemberCard({
   activity,
   factionBadgeClass,
   memberHrefBase,
+  policyTags,
 }: {
   member: Member;
   activity: MemberActivity | undefined;
   factionBadgeClass: (f: string) => string;
   memberHrefBase?: string;
+  policyTags?: PolicyTag[];
 }) {
   const [activityOpen, setActivityOpen] = useState(false);
 
@@ -80,7 +93,7 @@ function MemberCard({
             {memberHrefBase ? (
               <Link
                 href={`${memberHrefBase}/${member.seat_number}`}
-                className="text-lg font-bold text-[#1B3A6B] hover:underline leading-snug"
+                className="text-lg font-bold text-[#1B3A6B] hover:underline leading-snug focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
               >
                 {member.name}
               </Link>
@@ -142,6 +155,25 @@ function MemberCard({
           </div>
         )}
 
+        {/* 総合計画との対応施策 */}
+        {policyTags && policyTags.length > 0 && (
+          <div className="flex items-start gap-2 mt-3 pt-3 border-t border-[#E2E8F0]">
+            <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">施策</span>
+            <div className="flex flex-wrap gap-1">
+              {policyTags.map((tag) => (
+                <Link
+                  key={tag.policyId}
+                  href="/chitose/plan"
+                  className={`text-xs px-2 py-0.5 rounded border ${GOAL_BADGE_COLORS[tag.goalId] ?? "bg-gray-100 text-gray-700 border-gray-300"} hover:opacity-80 transition-opacity`}
+                  title={`総合計画 基本目標${tag.goalId}: ${tag.goalTitle}`}
+                >
+                  {tag.policyTitle.length > 16 ? tag.policyTitle.slice(0, 16) + "…" : tag.policyTitle}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
       </div>
 
       {/* 質問履歴トグル */}
@@ -149,13 +181,15 @@ function MemberCard({
         <>
           <button
             onClick={() => setActivityOpen((v) => !v)}
-            className="w-full flex items-center justify-between px-5 py-2.5 bg-[#F4F6F9] border-t border-[#E2E8F0] text-sm text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors"
+            className="w-full flex items-center justify-between px-5 py-2.5 bg-[#F4F6F9] border-t border-[#E2E8F0] text-sm text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+            aria-expanded={activityOpen}
           >
             <span className="text-xs font-medium">質問履歴を見る</span>
             <svg
               className={`w-4 h-4 transition-transform ${activityOpen ? "rotate-180" : ""}`}
               viewBox="0 0 24 24" fill="none" stroke="currentColor"
               strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+              aria-hidden="true"
             >
               <polyline points="6 9 12 15 18 9" />
             </svg>
@@ -170,10 +204,10 @@ function MemberCard({
                     {s.council_id > 0 && (
                       <Link
                         href={`/chitose/minutes/${s.council_id}`}
-                        className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
+                        className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
                       >
                         全文
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
                       </Link>
                     )}
                   </div>
@@ -184,7 +218,7 @@ function MemberCard({
                         {s.council_id > 0 ? (
                           <Link
                             href={`/chitose/minutes/${s.council_id}?q=${encodeURIComponent(t)}`}
-                            className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors"
+                            className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
                           >
                             {t}
                           </Link>
@@ -211,9 +245,10 @@ type Props = {
   factions: string[];
   activity?: Record<string, MemberActivity>;
   memberHrefBase?: string;
+  memberPolicies?: Record<string, PolicyTag[]>;
 };
 
-export default function MemberList({ members, factions, activity = {}, memberHrefBase }: Props) {
+export default function MemberList({ members, factions, activity = {}, memberHrefBase, memberPolicies = {} }: Props) {
   const [factionFilter, setFactionFilter] = useState<string>("");
   const [partyFilter, setPartyFilter] = useState<string>("");
   const [sortKey, setSortKey] = useState<SortKey>("seat");
@@ -309,7 +344,8 @@ export default function MemberList({ members, factions, activity = {}, memberHre
       {/* カードグリッド */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.map((member) => {
-          const memberActivity = activity[member.name.replace(/\s/g, "")];
+          const nameKey = member.name.replace(/\s/g, "");
+          const memberActivity = activity[nameKey];
           return (
             <MemberCard
               key={member.seat_number}
@@ -317,6 +353,7 @@ export default function MemberList({ members, factions, activity = {}, memberHre
               activity={memberActivity}
               factionBadgeClass={factionBadgeClass}
               memberHrefBase={memberHrefBase}
+              policyTags={memberPolicies[nameKey]}
             />
           );
         })}
@@ -327,7 +364,7 @@ export default function MemberList({ members, factions, activity = {}, memberHre
           <p className="text-base text-[#718096]">該当する議員が見つかりません</p>
           <button
             onClick={() => { setFactionFilter(""); setPartyFilter(""); }}
-            className="mt-3 text-sm text-[#2A5298] hover:text-[#1B3A6B] underline"
+            className="mt-3 text-sm text-[#2A5298] hover:text-[#1B3A6B] underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
           >
             フィルターをリセットする
           </button>

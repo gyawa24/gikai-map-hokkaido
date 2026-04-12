@@ -15,7 +15,7 @@ export default function NavLink({ href, children }: Props) {
   return (
     <Link
       href={href}
-      className={`text-sm px-3 py-1 rounded-md transition-colors ${
+      className={`text-sm px-3 py-1 rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white ${
         isActive
           ? "bg-white/20 text-white font-semibold"
           : "text-blue-100 hover:bg-white/10 hover:text-white"

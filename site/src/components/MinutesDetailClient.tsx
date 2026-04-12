@@ -77,7 +77,7 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
                   <button
                     key={tag}
                     onClick={() => handleTagClick(tag)}
-                    className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
+                    className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
                       activeTopic === tag
                         ? "bg-[#1B3A6B] text-white border-[#1B3A6B] shadow-sm"
                         : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
@@ -89,9 +89,9 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
                 {(activeTopic || query) && (
                   <button
                     onClick={clearAll}
-                    className="text-xs px-2.5 py-1 rounded-full border border-dashed border-[#CBD5E0] text-[#718096] hover:text-[#1A202C] transition-colors flex items-center gap-1"
+                    className="text-xs px-2.5 py-1 rounded-full border border-dashed border-[#CBD5E0] text-[#718096] hover:text-[#1A202C] transition-colors flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                     解除
                   </button>
                 )}
@@ -102,7 +102,7 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
           {/* activeTopic 時のガイド */}
           {activeTopic && (
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg px-4 py-3 flex items-start gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-yellow-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-yellow-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
                 <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
               </svg>
               <p className="text-sm text-yellow-800">
@@ -122,7 +122,7 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
                   <div key={q.name} className="flex items-start gap-2">
                     <button
                       onClick={() => handleTopicSearch(q.name)}
-                      className={`text-sm font-medium shrink-0 w-28 text-left transition-colors hover:underline ${
+                      className={`text-sm font-medium shrink-0 w-28 text-left transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded ${
                         query === q.name
                           ? "text-[#1B3A6B] font-bold"
                           : "text-[#2A5298] hover:text-[#1B3A6B]"

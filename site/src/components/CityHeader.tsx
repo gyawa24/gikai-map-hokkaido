@@ -113,7 +113,7 @@ export default function CityHeader() {
         <div className="flex items-center gap-2 mb-2">
           <Link
             href="/"
-            className="text-sm font-medium text-blue-100 hover:text-white transition-colors"
+            className="text-sm font-medium text-blue-100 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded"
           >
             北海道議会情報マップ
           </Link>
@@ -151,7 +151,8 @@ export default function CityHeader() {
                   key={item.href}
                   href={item.href}
                   className={`
-                    text-sm px-3 py-2 transition-colors border-b-2
+                    text-sm px-3 py-2 transition-colors border-b-2 rounded
+                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
                     ${isActive
                       ? "border-[#F7C948] text-white font-semibold"
                       : "border-transparent text-blue-100 hover:text-white hover:border-blue-300"
@@ -176,7 +177,8 @@ export default function CityHeader() {
                   key={item.href}
                   href={item.href}
                   className={`
-                    text-sm px-3 py-2 transition-colors border-b-2
+                    text-sm px-3 py-2 transition-colors border-b-2 rounded
+                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
                     ${isActive
                       ? "border-[#F7C948] text-white font-semibold"
                       : "border-transparent text-blue-100 hover:text-white hover:border-blue-300"
