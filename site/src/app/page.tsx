@@ -223,6 +223,33 @@ const CITIES = [
     hasMinutes: true,
     hasSession: false,
   },
+  {
+    id: "memuro",
+    name: "芽室町議会",
+    furigana: "めむろちょう",
+    href: "/memuro",
+    region: "十勝",
+    hasMinutes: true,
+    hasSession: false,
+  },
+  {
+    id: "kamikawa",
+    name: "神川町議会",
+    furigana: "かみかわまち",
+    href: "/kamikawa",
+    region: "その他",
+    hasMinutes: true,
+    hasSession: false,
+  },
+  {
+    id: "nakagawa",
+    name: "那珂川市議会",
+    furigana: "なかがわし",
+    href: "/nakagawa",
+    region: "その他",
+    hasMinutes: true,
+    hasSession: false,
+  },
 ];
 
 export default function HomePage() {
