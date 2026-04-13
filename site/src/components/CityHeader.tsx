@@ -2,16 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import type { CityNavConfig } from "./CityHeaderServer";
 
 type NavItem = { href: string; label: string };
 
-const CITY_CONFIG: Record<
-  string,
-  { name: string; baseHref: string; nav: NavItem[] }
-> = {
+// Fallback static config used when allCityNavs is not provided
+const FALLBACK_CITY_CONFIG: Record<string, CityNavConfig> = {
   chitose: {
     name: "千歳市議会",
-    baseHref: "/chitose",
     nav: [
       { href: "/chitose", label: "議員一覧" },
       { href: "/chitose/decisions", label: "議決結果" },
@@ -20,12 +18,12 @@ const CITY_CONFIG: Record<
       { href: "/chitose/schedule", label: "行事予定" },
       { href: "/chitose/newsletter", label: "議会だより" },
       { href: "/chitose/plan", label: "総合計画" },
+      { href: "/chitose/election", label: "選挙結果" },
       { href: "/ai-search", label: "✦ AI検索" },
     ],
   },
   eniwa: {
     name: "恵庭市議会",
-    baseHref: "/eniwa",
     nav: [
       { href: "/eniwa", label: "議員一覧" },
       { href: "/eniwa/decisions", label: "議決結果" },
@@ -38,7 +36,6 @@ const CITY_CONFIG: Record<
   },
   tomakomai: {
     name: "苫小牧市議会",
-    baseHref: "/tomakomai",
     nav: [
       { href: "/tomakomai", label: "議員一覧" },
       { href: "/tomakomai/decisions", label: "議決結果" },
@@ -51,7 +48,6 @@ const CITY_CONFIG: Record<
   },
   asahikawa: {
     name: "旭川市議会",
-    baseHref: "/asahikawa",
     nav: [
       { href: "/asahikawa", label: "議員一覧" },
       { href: "/asahikawa/minutes", label: "議事録" },
@@ -59,7 +55,6 @@ const CITY_CONFIG: Record<
   },
   hakodate: {
     name: "函館市議会",
-    baseHref: "/hakodate",
     nav: [
       { href: "/hakodate", label: "議員一覧" },
       { href: "/hakodate/minutes", label: "議事録" },
@@ -67,7 +62,6 @@ const CITY_CONFIG: Record<
   },
   muroran: {
     name: "室蘭市議会",
-    baseHref: "/muroran",
     nav: [
       { href: "/muroran", label: "議員一覧" },
       { href: "/muroran/minutes", label: "議事録" },
@@ -75,7 +69,6 @@ const CITY_CONFIG: Record<
   },
   kushiro: {
     name: "釧路市議会",
-    baseHref: "/kushiro",
     nav: [
       { href: "/kushiro", label: "議員一覧" },
       { href: "/kushiro/minutes", label: "議事録" },
@@ -83,7 +76,6 @@ const CITY_CONFIG: Record<
   },
   wakkanai: {
     name: "稚内市議会",
-    baseHref: "/wakkanai",
     nav: [
       { href: "/wakkanai", label: "議員一覧" },
       { href: "/wakkanai/minutes", label: "議事録" },
@@ -91,7 +83,6 @@ const CITY_CONFIG: Record<
   },
   kitami: {
     name: "北見市議会",
-    baseHref: "/kitami",
     nav: [
       { href: "/kitami", label: "議員一覧" },
       { href: "/kitami/minutes", label: "議事録" },
@@ -99,7 +90,6 @@ const CITY_CONFIG: Record<
   },
   obihiro: {
     name: "帯広市議会",
-    baseHref: "/obihiro",
     nav: [
       { href: "/obihiro", label: "議員一覧" },
       { href: "/obihiro/minutes", label: "議事録" },
@@ -107,7 +97,6 @@ const CITY_CONFIG: Record<
   },
   nayoro: {
     name: "名寄市議会",
-    baseHref: "/nayoro",
     nav: [
       { href: "/nayoro", label: "議員一覧" },
       { href: "/nayoro/minutes", label: "議事録" },
@@ -115,26 +104,58 @@ const CITY_CONFIG: Record<
   },
 };
 
+const CITY_KEYS = [
+  "eniwa",
+  "tomakomai",
+  "asahikawa",
+  "hakodate",
+  "muroran",
+  "kushiro",
+  "wakkanai",
+  "kitami",
+  "obihiro",
+  "nayoro",
+  "chitose",
+];
+
 function detectCity(pathname: string): string | null {
-  if (pathname.startsWith("/eniwa")) return "eniwa";
-  if (pathname.startsWith("/tomakomai")) return "tomakomai";
-  if (pathname.startsWith("/asahikawa")) return "asahikawa";
-  if (pathname.startsWith("/hakodate")) return "hakodate";
-  if (pathname.startsWith("/muroran")) return "muroran";
-  if (pathname.startsWith("/kushiro")) return "kushiro";
-  if (pathname.startsWith("/wakkanai")) return "wakkanai";
-  if (pathname.startsWith("/kitami")) return "kitami";
-  if (pathname.startsWith("/obihiro")) return "obihiro";
-  if (pathname.startsWith("/nayoro")) return "nayoro";
-  if (pathname.startsWith("/chitose"))
-    return "chitose";
-  return null;
+  return CITY_KEYS.find((c) => pathname.startsWith(`/${c}`)) ?? null;
 }
 
-export default function CityHeader() {
+interface CityHeaderProps {
+  allCityNavs?: Record<string, CityNavConfig>;
+}
+
+export default function CityHeader({ allCityNavs }: CityHeaderProps) {
   const pathname = usePathname();
   const cityKey = detectCity(pathname);
-  const city = cityKey ? CITY_CONFIG[cityKey] : null;
+  const navConfigs = allCityNavs ?? FALLBACK_CITY_CONFIG;
+  const city = cityKey ? (navConfigs[cityKey] ?? null) : null;
+
+  function renderNavLink(item: NavItem) {
+    const isActive =
+      item.href === "/ai-search"
+        ? pathname === item.href
+        : pathname === item.href || pathname.startsWith(item.href + "/");
+    return (
+      <Link
+        key={item.href}
+        href={item.href}
+        className={`
+          text-sm px-3 py-2 transition-colors border-b-2 rounded
+          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
+          ${
+            isActive
+              ? "border-[#F7C948] text-white font-semibold"
+              : "border-transparent text-blue-100 hover:text-white hover:border-blue-300"
+          }
+        `}
+        aria-current={isActive ? "page" : undefined}
+      >
+        {item.label}
+      </Link>
+    );
+  }
 
   return (
     <header style={{ backgroundColor: "var(--color-primary)" }} className="text-white">
@@ -177,52 +198,14 @@ export default function CityHeader() {
               { href: "/chitose/sessions", label: "会議録・要約" },
               { href: "/search", label: "検索" },
               { href: "/ai-search", label: "✦ AI検索" },
-            ].map((item) => {
-              const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`
-                    text-sm px-3 py-2 transition-colors border-b-2 rounded
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
-                    ${isActive
-                      ? "border-[#F7C948] text-white font-semibold"
-                      : "border-transparent text-blue-100 hover:text-white hover:border-blue-300"
-                    }
-                  `}
-                  aria-current={isActive ? "page" : undefined}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
+            ].map(renderNavLink)}
           </nav>
         )}
 
         {/* 市ページのナビゲーション */}
         {city && (
           <nav className="mt-3 -mb-px flex flex-wrap gap-0.5" aria-label="ページナビゲーション">
-            {city.nav.map((item) => {
-              const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`
-                    text-sm px-3 py-2 transition-colors border-b-2 rounded
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
-                    ${isActive
-                      ? "border-[#F7C948] text-white font-semibold"
-                      : "border-transparent text-blue-100 hover:text-white hover:border-blue-300"
-                    }
-                  `}
-                  aria-current={isActive ? "page" : undefined}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
+            {city.nav.map(renderNavLink)}
           </nav>
         )}
       </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import CityHeader from "@/components/CityHeader";
+import CityHeaderServer from "@/components/CityHeaderServer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className="min-h-screen flex flex-col antialiased">
-        <CityHeader />
+        <CityHeaderServer />
 
         <main className="flex-1 max-w-5xl mx-auto w-full px-4 py-8">
           {children}
