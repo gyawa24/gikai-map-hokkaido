@@ -15,15 +15,28 @@
  *   --dry-run           ダウンロードせず対象一覧を表示
  */
 
-import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
 import path from "path";
-import { execSync, spawnSync } from "child_process";
+import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT      = path.resolve(__dirname, "../..");
 const SITE_ROOT = path.resolve(__dirname, "..");
+
+// --- claude -p でMaxPlanを使って同期テキスト生成 ---
+function claudeQuery(prompt) {
+  const result = spawnSync("claude", ["-p", "--output-format", "text"], {
+    input: prompt,
+    encoding: "utf-8",
+    timeout: 120_000,
+    maxBuffer: 10 * 1024 * 1024,
+  });
+  if (result.status !== 0) {
+    throw new Error(`claude -p failed: ${result.stderr?.trim().slice(0, 200)}`);
+  }
+  return result.stdout.trim();
+}
 const TMP_DIR   = path.join(ROOT, "tmp_audio");
 
 const YT_DLP    = "/opt/homebrew/bin/yt-dlp";
@@ -62,11 +75,6 @@ if (dryRun || sessions.length === 0) {
   process.exit(0);
 }
 
-if (!process.env.ANTHROPIC_API_KEY) {
-  console.error("\nエラー: ANTHROPIC_API_KEY が設定されていません");
-  process.exit(1);
-}
-const client = new Anthropic();
 
 fs.mkdirSync(TMP_DIR, { recursive: true });
 
@@ -109,6 +117,7 @@ for (const entry of sessions) {
         "--output-format", "json",
         "--output-dir", TMP_DIR,
         "--fp16", "False",
+        "--condition-on-previous-text", "False",  // ハルシネーション防止
       ], { stdio: "pipe", timeout: 7200000 }); // 最大2時間
       if (ws.status !== 0) throw new Error(`mlx_whisper failed: ${ws.stderr?.toString().slice(0, 200)}`);
 
@@ -131,6 +140,8 @@ for (const entry of sessions) {
     const whisperRaw = fs.readFileSync(whisperJson, "utf-8").replace(/:\s*NaN/g, ": null");
     const whisperData = JSON.parse(whisperRaw);
     const rawSegs = whisperData.segments ?? [];
+    console.log(`  → whisperセグメント数: ${rawSegs.length}  (JSONキー: ${Object.keys(whisperData).join(", ")})`);
+    if (rawSegs.length > 0) console.log(`    最初のセグメント: ${JSON.stringify(rawSegs[0]).slice(0, 120)}`);
 
     // 10分休憩を探してパートに分割
     const breakIndices = rawSegs.reduce((acc, s, i) => {
@@ -165,27 +176,21 @@ for (const entry of sessions) {
       });
     }
 
-    // 要約 API 呼び出し
+    // 要約生成（claude -p / MaxPlan使用）
     const segments = [];
     for (const p of parts) {
       process.stdout.write(`    ${p.label}/${parts.length} ... `);
       const truncated = p.transcript.length > 6000
         ? p.transcript.slice(0, 6000) + "\n…（省略）"
         : p.transcript;
-      const res = await client.messages.create({
-        model: "claude-haiku-4-5-20251001",
-        max_tokens: 400,
-        system: "あなたは北海道千歳市議会の会議記録を整理するアシスタントです。",
-        messages: [{
-          role: "user",
-          content: `以下は千歳市議会の文字起こし（${p.label}）です。次のJSON形式のみで回答してください:
+      const prompt = `あなたは北海道千歳市議会の会議記録を整理するアシスタントです。
+以下は千歳市議会の文字起こし（${p.label}）です。次のJSON形式のみで回答してください:
 {"summary":"3〜4文の日本語要約","topics":["キーワード1","キーワード2","キーワード3"]}
 
-文字起こし:\n${truncated}`,
-        }],
-      });
-      const parsed = JSON.parse(res.content[0].text.match(/\{[\s\S]*\}/)[0]);
-      console.log(`完了 (in:${res.usage.input_tokens} out:${res.usage.output_tokens})`);
+文字起こし:\n${truncated}`;
+      const text = claudeQuery(prompt);
+      const parsed = JSON.parse(text.match(/\{[\s\S]*\}/)[0]);
+      console.log("完了");
       segments.push({ ...p, summary: parsed.summary, topics: parsed.topics ?? [] });
     }
 

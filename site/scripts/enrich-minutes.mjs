@@ -15,10 +15,11 @@
  *   - site/data/{city}/minutes/enriched/{id}.json
  */
 
-import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
 import path from "path";
+import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
+import os from "os";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "../..");
@@ -32,8 +33,37 @@ const get = (flag) => { const i = args.indexOf(flag); return i !== -1 ? args[i +
 const cities = (get("--city") ?? "chitose").split(",").map((s) => s.trim());
 const targetId = get("--id"); // 指定なしなら全件処理
 
-// --- Anthropic client ---
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+// --- claude -p でMaxPlanを使ってテキスト生成 ---
+function claudeQuery(prompt, retries = 5) {
+  const tmpFile = path.join(os.tmpdir(), `claude-prompt-${Date.now()}.txt`);
+  fs.writeFileSync(tmpFile, prompt, "utf-8");
+  try {
+    for (let attempt = 0; attempt < retries; attempt++) {
+      const result = spawnSync("claude", ["-p", "--output-format", "text"], {
+        input: prompt,
+        encoding: "utf-8",
+        timeout: 120_000,
+        maxBuffer: 10 * 1024 * 1024,
+      });
+      if (result.status === 0) {
+        return result.stdout.trim();
+      }
+      const err = result.stderr?.trim() ?? "";
+      console.error(`     ⚠ claude -p エラー (attempt ${attempt + 1}): ${err.slice(0, 200)}`);
+      if (attempt < retries - 1) {
+        const wait = Math.pow(2, attempt + 2);
+        console.log(`     ⏳ ${wait}秒後にリトライ`);
+        // 同期待機
+        const end = Date.now() + wait * 1000;
+        while (Date.now() < end) { /* spin */ }
+      } else {
+        throw new Error(`claude -p failed after ${retries} attempts: ${err.slice(0, 200)}`);
+      }
+    }
+  } finally {
+    if (fs.existsSync(tmpFile)) fs.unlinkSync(tmpFile);
+  }
+}
 
 // --- 発言者抽出（プログラムで） ---
 function extractSpeakers(session) {
@@ -156,24 +186,16 @@ function buildPromptText(session) {
   return lines.join("\n");
 }
 
-// --- Claude で要約・タグ生成（リトライ付き） ---
-async function generateEnrichment(session, retries = 5) {
+// --- claude -p で要約・タグ生成 ---
+function generateEnrichment(session) {
   const promptText = buildPromptText(session);
 
-  for (let attempt = 0; attempt < retries; attempt++) {
-    try {
-      const message = await client.messages.create({
-        model: "claude-haiku-4-5-20251001",
-        max_tokens: 2048,
-        messages: [
-          {
-            role: "user",
-            content: `以下は市議会の会議録です。市民向けに分かりやすく整理してください。
+  const prompt = `以下は市議会の会議録です。市民向けに分かりやすく整理してください。
 
 ${promptText}
 
 ---
-以下のJSON形式で回答してください（他のテキストは不要）:
+以下のJSON形式のみで回答してください（説明文・コードブロック不要）:
 {
   "summary": "この定例会全体の要約（200字程度、市民向けに平易な言葉で）",
   "highlights": ["主要な審議事項を3〜5点、各30字以内で箇条書き"],
@@ -181,47 +203,26 @@ ${promptText}
   "questioners": [
     {"name": "議員名（番号なし）", "topics": ["質問テーマ1", "質問テーマ2"]}
   ]
-}`,
-          },
-        ],
-      });
+}`;
 
-      const text = message.content[0].type === "text" ? message.content[0].text : "";
+  const text = claudeQuery(prompt);
 
-      // マークダウンコードブロックを除去
-      const cleaned = text.replace(/```json\s*/g, "").replace(/```\s*/g, "").trim();
+  // マークダウンコードブロックを除去
+  const cleaned = text.replace(/```json\s*/g, "").replace(/```\s*/g, "").trim();
+  const start = cleaned.indexOf("{");
+  const end = cleaned.lastIndexOf("}");
+  if (start === -1 || end === -1) throw new Error("JSON not found in response:\n" + text);
 
-      // 最外側の { } を取り出す
-      const start = cleaned.indexOf("{");
-      const end = cleaned.lastIndexOf("}");
-      if (start === -1 || end === -1) throw new Error("JSON not found in response:\n" + text);
+  let jsonStr = cleaned.slice(start, end + 1);
+  jsonStr = jsonStr.replace(/"([^"\\]*(\\.[^"\\]*)*)"/gs, (match) =>
+    match.replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t")
+  );
 
-      let jsonStr = cleaned.slice(start, end + 1);
-
-      // 文字列値内の生改行をエスケープ（よくある不正JSON）
-      jsonStr = jsonStr.replace(/"([^"\\]*(\\.[^"\\]*)*)"/gs, (match) =>
-        match.replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t")
-      );
-
-      try {
-        return JSON.parse(jsonStr);
-      } catch (parseErr) {
-        console.error("     ⚠ JSONパース失敗。生レスポンス:\n" + text.slice(0, 500));
-        throw parseErr;
-      }
-
-    } catch (e) {
-      if (e.status === 429 && attempt < retries - 1) {
-        // 400 (too long) はリトライしない — buildPromptText で上限を設けているので発生しないはず
-        // retry-after ヘッダーがあればその秒数、なければ指数バックオフ
-        const retryAfter = parseInt(e.headers?.get?.("retry-after") ?? "0", 10);
-        const waitSec = retryAfter > 0 ? retryAfter : Math.pow(2, attempt + 2);
-        console.log(`     ⏳ レート制限 (429) — ${waitSec}秒後にリトライ (${attempt + 1}/${retries - 1})`);
-        await new Promise((r) => setTimeout(r, waitSec * 1000));
-      } else {
-        throw e;
-      }
-    }
+  try {
+    return JSON.parse(jsonStr);
+  } catch (parseErr) {
+    console.error("     ⚠ JSONパース失敗。生レスポンス:\n" + text.slice(0, 500));
+    throw parseErr;
   }
 }
 
@@ -246,17 +247,24 @@ async function processFile(councilId, city) {
   // 既にあればスキップ（--forceで上書き）
   if (fs.existsSync(outDataFile) && !args.includes("--force")) {
     console.log(`  ⏭  スキップ（既存）: ${councilId}`);
-    return;
+    return false; // skipped
   }
 
   console.log(`  → 処理中: ${councilId}`);
   const session = JSON.parse(fs.readFileSync(srcFile, "utf-8"));
   console.log(`     ${session.name}`);
 
+  // 発言ゼロの空議事録はスキップ
+  const totalMinutes = session.schedules?.reduce((n, s) => n + (s.minutes?.length ?? 0), 0) ?? 0;
+  if (totalMinutes === 0) {
+    console.log(`     ⏭  スキップ（発言なし）`);
+    return false; // skipped
+  }
+
   const speakers = extractSpeakers(session);
   console.log(`     発言者: ${speakers.length}名`);
 
-  const ai = await generateEnrichment(session);
+  const ai = generateEnrichment(session);
   console.log(`     タグ: ${ai.tags.join(", ")}`);
 
   // 議事録から直接抽出した質問者を優先、AIで補完
@@ -295,6 +303,7 @@ async function processFile(councilId, city) {
   fs.writeFileSync(outDataFile, json, "utf-8");
   fs.writeFileSync(outSiteFile, json, "utf-8");
   console.log(`     ✓ 保存: ${outDataFile}`);
+  return true; // processed
 }
 
 // --- 都市単位の処理 ---
@@ -309,10 +318,26 @@ async function processCity(city) {
 
   console.log(`\n[${city}] エンリッチ処理: ${targets.length}件`);
 
+  let ok = 0, skip = 0, fail = 0;
   for (const item of targets) {
-    await processFile(String(item.council_id), city);
-    await new Promise((r) => setTimeout(r, 1000));
+    try {
+      const processed = await processFile(String(item.council_id), city);
+      if (processed === false) {
+        skip++;
+      } else {
+        ok++;
+        // API呼び出し後は8秒待機（レート制限対策）
+        await new Promise((r) => setTimeout(r, 8000));
+      }
+    } catch (err) {
+      console.error(`  ✗ エラー (${item.council_id}): ${err.message.slice(0, 120)}`);
+      fail++;
+      // エラー後は60秒待機してレート制限解除を待つ
+      console.log(`     ⏳ 60秒待機中...`);
+      await new Promise((r) => setTimeout(r, 60000));
+    }
   }
+  console.log(`[${city}] 成功:${ok} スキップ:${skip} 失敗:${fail}`);
 
   console.log(`[${city}] 完了`);
 }
