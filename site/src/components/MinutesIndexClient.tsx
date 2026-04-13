@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import type { MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 
@@ -13,6 +14,8 @@ type Props = {
   items: MinutesWithEnriched[];
   minutesBasePath?: string;
 };
+
+const PAGE_SIZE = 10;
 
 function sessionCategoryLabel(typeLabel: string): string {
   if (typeLabel.includes("定例会") && !typeLabel.includes("補正") && !typeLabel.includes("委員会")) return "本会議・定例会";
@@ -117,10 +120,55 @@ function normalizeTag(tag: string): string {
   return TAG_NORMALIZE[tag] ?? tag;
 }
 
-export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/minutes" }: Props) {
+function generatePageNumbers(current: number, total: number): (number | "...")[] {
+  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+
+  const pages: (number | "...")[] = [];
+  const delta = 1; // pages around current
+
+  const range: number[] = [];
+  for (let i = Math.max(2, current - delta); i <= Math.min(total - 1, current + delta); i++) {
+    range.push(i);
+  }
+
+  pages.push(1);
+  if (range[0] > 2) pages.push("...");
+  pages.push(...range);
+  if (range[range.length - 1] < total - 1) pages.push("...");
+  pages.push(total);
+
+  return pages;
+}
+
+function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes" }: Props) {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const initialPage = Math.max(1, parseInt(searchParams.get("page") ?? "1", 10) || 1);
+
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [showAllTags, setShowAllTags] = useState(false);
   const [searchText, setSearchText] = useState("");
+  const [currentPage, setCurrentPage] = useState(initialPage);
+
+  // フィルタが変わったらページを1にリセット
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeTag, searchText]);
+
+  // ページ変更時にURLを更新
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    const params = new URLSearchParams(searchParams.toString());
+    if (page === 1) {
+      params.delete("page");
+    } else {
+      params.set("page", String(page));
+    }
+    const query = params.toString();
+    router.replace(`${pathname}${query ? `?${query}` : ""}`, { scroll: false });
+  };
 
   // タグ集計（正規化後）
   const tagCounts = useMemo(() => {
@@ -175,15 +223,20 @@ export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/
     });
   }, [items, activeTag, searchText]);
 
-  // セッション種別でグルーピング
+  // ページネーション
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+  const safePage = Math.min(Math.max(1, currentPage), Math.max(1, totalPages));
+  const paginatedItems = filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
+
+  // セッション種別でグルーピング（ページ内のアイテムのみ）
   const byYear = useMemo(() => {
     const map: Record<string, MinutesWithEnriched[]> = {};
-    for (const item of filtered) {
+    for (const item of paginatedItems) {
       if (!map[item.japanese_year]) map[item.japanese_year] = [];
       map[item.japanese_year].push(item);
     }
     return map;
-  }, [filtered]);
+  }, [paginatedItems]);
 
   const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
 
@@ -326,87 +379,158 @@ export default function MinutesIndexClient({ items, minutesBasePath = "/chitose/
         </p>
       )}
 
+      {/* 件数・ページ情報 */}
+      {filtered.length > 0 && totalPages > 1 && (
+        <p className="text-sm text-[#718096] mb-3">
+          {filtered.length}件中 {(safePage - 1) * PAGE_SIZE + 1}〜{Math.min(safePage * PAGE_SIZE, filtered.length)}件目を表示
+        </p>
+      )}
+
       {filtered.length === 0 ? (
         <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
           条件に一致する議事録が見つかりません
         </div>
       ) : (
-        <div className="flex flex-col gap-8">
-          {years.map((year) => {
-            const yearItems = byYear[year];
-            const byCategory: Record<string, MinutesWithEnriched[]> = {};
-            for (const item of yearItems) {
-              const cat = sessionCategoryLabel(item.type_label);
-              if (!byCategory[cat]) byCategory[cat] = [];
-              byCategory[cat].push(item);
-            }
-            const cats = SESSION_CATEGORY_ORDER.filter((c) => byCategory[c]);
+        <>
+          <div className="flex flex-col gap-8">
+            {years.map((year) => {
+              const yearItems = byYear[year];
+              const byCategory: Record<string, MinutesWithEnriched[]> = {};
+              for (const item of yearItems) {
+                const cat = sessionCategoryLabel(item.type_label);
+                if (!byCategory[cat]) byCategory[cat] = [];
+                byCategory[cat].push(item);
+              }
+              const cats = SESSION_CATEGORY_ORDER.filter((c) => byCategory[c]);
 
-            return (
-              <section key={year}>
-                <h3 className="text-base font-bold text-[#1B3A6B] mb-3 flex items-center gap-2">
-                  <span className="inline-block w-1 h-4 bg-[#1B3A6B] rounded-full" aria-hidden="true" />
-                  {year}
-                </h3>
-                <div className="flex flex-col gap-6">
-                  {cats.map((cat) => (
-                    <div key={cat}>
-                      <p className="text-xs font-semibold text-[#718096] uppercase tracking-wider mb-2 pl-1">{cat}</p>
-                      <div className="flex flex-col gap-2">
-                        {byCategory[cat].map((item) => (
-                          <Link
-                            key={item.council_id}
-                            href={`${minutesBasePath}/${item.council_id}`}
-                            className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-5 py-4 shadow-sm hover:shadow-md transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
-                          >
-                            <div className="flex items-start gap-4">
-                              <div
-                                className="w-1 self-stretch rounded-full shrink-0 bg-[#1B3A6B] opacity-20 group-hover:opacity-100 transition-opacity mt-0.5"
-                                aria-hidden="true"
-                              />
-                              <div className="flex-1 min-w-0">
-                                <p className="text-base font-semibold text-[#1A202C] leading-snug mb-1">{item.name}</p>
-                                {item.enriched && item.enriched.tags.length > 0 && (
-                                  <div className="flex flex-wrap gap-1 mt-2">
-                                    {[...new Set(item.enriched.tags.map(normalizeTag))].slice(0, 6).map((tag) => (
-                                      <span
-                                        key={tag}
-                                        className={`text-xs px-2 py-0.5 rounded-full border ${
-                                          tag === activeTag
-                                            ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
-                                            : "bg-[#F4F6F9] text-[#4A5568] border-[#E2E8F0]"
-                                        }`}
-                                      >
-                                        {tag}
-                                      </span>
-                                    ))}
-                                    {new Set(item.enriched.tags.map(normalizeTag)).size > 6 && (
-                                      <span className="text-xs text-[#718096]">+{new Set(item.enriched.tags.map(normalizeTag)).size - 6}</span>
-                                    )}
-                                  </div>
-                                )}
+              return (
+                <section key={year}>
+                  <h3 className="text-base font-bold text-[#1B3A6B] mb-3 flex items-center gap-2">
+                    <span className="inline-block w-1 h-4 bg-[#1B3A6B] rounded-full" aria-hidden="true" />
+                    {year}
+                  </h3>
+                  <div className="flex flex-col gap-6">
+                    {cats.map((cat) => (
+                      <div key={cat}>
+                        <p className="text-xs font-semibold text-[#718096] uppercase tracking-wider mb-2 pl-1">{cat}</p>
+                        <div className="flex flex-col gap-2">
+                          {byCategory[cat].map((item) => (
+                            <Link
+                              key={item.council_id}
+                              href={`${minutesBasePath}/${item.council_id}`}
+                              className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-5 py-4 shadow-sm hover:shadow-md transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                            >
+                              <div className="flex items-start gap-4">
+                                <div
+                                  className="w-1 self-stretch rounded-full shrink-0 bg-[#1B3A6B] opacity-20 group-hover:opacity-100 transition-opacity mt-0.5"
+                                  aria-hidden="true"
+                                />
+                                <div className="flex-1 min-w-0">
+                                  <p className="text-base font-semibold text-[#1A202C] leading-snug mb-1">{item.name}</p>
+                                  {item.enriched && item.enriched.tags.length > 0 && (
+                                    <div className="flex flex-wrap gap-1 mt-2">
+                                      {[...new Set(item.enriched.tags.map(normalizeTag))].slice(0, 6).map((tag) => (
+                                        <span
+                                          key={tag}
+                                          className={`text-xs px-2 py-0.5 rounded-full border ${
+                                            tag === activeTag
+                                              ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
+                                              : "bg-[#F4F6F9] text-[#4A5568] border-[#E2E8F0]"
+                                          }`}
+                                        >
+                                          {tag}
+                                        </span>
+                                      ))}
+                                      {new Set(item.enriched.tags.map(normalizeTag)).size > 6 && (
+                                        <span className="text-xs text-[#718096]">+{new Set(item.enriched.tags.map(normalizeTag)).size - 6}</span>
+                                      )}
+                                    </div>
+                                  )}
+                                </div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  className="w-5 h-5 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 mt-0.5 transition-colors"
+                                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                  strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                                  aria-hidden="true"
+                                >
+                                  <polyline points="9 18 15 12 9 6" />
+                                </svg>
                               </div>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-5 h-5 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 mt-0.5 transition-colors"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                                aria-hidden="true"
-                              >
-                                <polyline points="9 18 15 12 9 6" />
-                              </svg>
-                            </div>
-                          </Link>
-                        ))}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            );
-          })}
-        </div>
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
+          </div>
+
+          {/* ページネーション */}
+          {totalPages > 1 && (
+            <nav
+              className="mt-8 flex items-center justify-center gap-1"
+              aria-label="ページネーション"
+            >
+              {/* 前へ */}
+              <button
+                onClick={() => handlePageChange(safePage - 1)}
+                disabled={safePage === 1}
+                className="px-3 py-2 text-sm rounded-md border border-[#CBD5E0] text-[#4A5568] bg-white hover:bg-[#E8EEF7] hover:text-[#1B3A6B] hover:border-[#1B3A6B] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#4A5568] disabled:hover:border-[#CBD5E0] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                aria-label="前のページ"
+              >
+                ‹ 前へ
+              </button>
+
+              {/* ページ番号 */}
+              {generatePageNumbers(safePage, totalPages).map((p, i) =>
+                p === "..." ? (
+                  <span
+                    key={`ellipsis-${i}`}
+                    className="px-2 py-2 text-sm text-[#A0AEC0]"
+                    aria-hidden="true"
+                  >
+                    …
+                  </span>
+                ) : (
+                  <button
+                    key={p}
+                    onClick={() => handlePageChange(p)}
+                    aria-current={p === safePage ? "page" : undefined}
+                    className={`min-w-[2.25rem] px-2 py-2 text-sm rounded-md border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+                      p === safePage
+                        ? "bg-[#1B3A6B] text-white border-[#1B3A6B] font-semibold"
+                        : "border-[#CBD5E0] text-[#4A5568] bg-white hover:bg-[#E8EEF7] hover:text-[#1B3A6B] hover:border-[#1B3A6B]"
+                    }`}
+                  >
+                    {p}
+                  </button>
+                )
+              )}
+
+              {/* 次へ */}
+              <button
+                onClick={() => handlePageChange(safePage + 1)}
+                disabled={safePage === totalPages}
+                className="px-3 py-2 text-sm rounded-md border border-[#CBD5E0] text-[#4A5568] bg-white hover:bg-[#E8EEF7] hover:text-[#1B3A6B] hover:border-[#1B3A6B] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#4A5568] disabled:hover:border-[#CBD5E0] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                aria-label="次のページ"
+              >
+                次へ ›
+              </button>
+            </nav>
+          )}
+        </>
       )}
     </>
+  );
+}
+
+export default function MinutesIndexClient(props: Props) {
+  return (
+    <Suspense fallback={null}>
+      <MinutesIndexInner {...props} />
+    </Suspense>
   );
 }
