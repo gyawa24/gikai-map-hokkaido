@@ -7,6 +7,19 @@ const CITY_NAMES: Record<string, string> = {
   chitose: "千歳市",
   eniwa: "恵庭市",
   tomakomai: "苫小牧市",
+  asahikawa: "旭川市",
+  ashibetsu: "芦別市",
+  date: "伊達市",
+  hakodate: "函館市",
+  ishikari: "石狩市",
+  kitahiroshima: "北広島市",
+  kitami: "北見市",
+  kushiro: "釧路市",
+  muroran: "室蘭市",
+  nayoro: "名寄市",
+  nemuro: "根室市",
+  obihiro: "帯広市",
+  wakkanai: "稚内市",
 };
 
 function tokenize(query: string): string[] {
@@ -124,8 +137,9 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // 公式議事録（3市）
-  for (const city of ["chitose", "eniwa", "tomakomai"]) {
+  // 公式議事録（minutes/index.json がある全市）
+  const seenMinutes = new Set<string>();
+  for (const city of Object.keys(CITY_NAMES)) {
     const indexPath = path.join(dataRoot, city, "minutes", "index.json");
     if (!fs.existsSync(indexPath)) continue;
     const index = JSON.parse(fs.readFileSync(indexPath, "utf-8")) as MinutesIndexItem[];
@@ -135,6 +149,7 @@ export async function GET(request: NextRequest) {
       const s = JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesSession;
       const committee = entry.type_label.split(">").pop()?.trim() ?? "";
       const cityName = CITY_NAMES[city];
+      const minuteKey = `${city}_${s.council_id}`;
       let pushed = false;
       for (let i = 0; i < s.schedules.length; i++) {
         const sch = s.schedules[i];
@@ -157,6 +172,7 @@ export async function GET(request: NextRequest) {
             context: excerpt(text, tokens),
             field: "議事録",
           });
+          seenMinutes.add(minuteKey);
           pushed = true;
           break;
         }
@@ -176,7 +192,58 @@ export async function GET(request: NextRequest) {
           context: committee,
           field: "会議名",
         });
+        seenMinutes.add(minuteKey);
       }
+    }
+  }
+
+  // 公式議事録（enriched JSONのみの市 — minutes/index.json がない全市）
+  interface EnrichedDoc {
+    council_id: number;
+    name: string;
+    summary?: string;
+    highlights?: string[];
+    tags?: string[];
+  }
+  for (const city of Object.keys(CITY_NAMES)) {
+    const enrichedDir = path.join(dataRoot, city, "minutes", "enriched");
+    if (!fs.existsSync(enrichedDir)) continue;
+    const cityName = CITY_NAMES[city];
+    let files: string[];
+    try { files = fs.readdirSync(enrichedDir).filter((f) => f.endsWith(".json")); }
+    catch { continue; }
+    for (const file of files) {
+      const fp = path.join(enrichedDir, file);
+      let doc: EnrichedDoc;
+      try { doc = JSON.parse(fs.readFileSync(fp, "utf-8")) as EnrichedDoc; }
+      catch { continue; }
+      const minuteKey = `${city}_${doc.council_id}`;
+      if (seenMinutes.has(minuteKey)) continue; // full-text 検索済みはスキップ
+      const searchText = [
+        doc.name,
+        doc.summary ?? "",
+        ...(doc.highlights ?? []),
+        ...(doc.tags ?? []),
+      ].join(" ");
+      if (!matchesAll(searchText, tokens)) continue;
+      const contextText = doc.summary
+        ? excerpt(doc.summary, tokens, 120)
+        : (doc.highlights ?? []).slice(0, 2).join("、");
+      sessionResults.push({
+        id: `${city}_minutes_${doc.council_id}`,
+        city,
+        cityName,
+        sourceType: "minutes",
+        title: doc.name,
+        committee: "",
+        href: `/${city}/minutes/${doc.council_id}`,
+        segIndex: 0,
+        label: "",
+        startTime: "",
+        context: contextText,
+        field: "AI要約",
+      });
+      seenMinutes.add(minuteKey);
     }
   }
 

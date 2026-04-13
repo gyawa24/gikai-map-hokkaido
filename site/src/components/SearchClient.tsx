@@ -14,9 +14,29 @@ function tokenize(query: string): string[] {
   return query.trim().split(/\s+/).filter(Boolean);
 }
 
+const ALL_CITIES: { id: string; name: string }[] = [
+  { id: "chitose",       name: "千歳市" },
+  { id: "eniwa",         name: "恵庭市" },
+  { id: "tomakomai",     name: "苫小牧市" },
+  { id: "asahikawa",     name: "旭川市" },
+  { id: "ashibetsu",     name: "芦別市" },
+  { id: "date",          name: "伊達市" },
+  { id: "hakodate",      name: "函館市" },
+  { id: "ishikari",      name: "石狩市" },
+  { id: "kitahiroshima", name: "北広島市" },
+  { id: "kitami",        name: "北見市" },
+  { id: "kushiro",       name: "釧路市" },
+  { id: "muroran",       name: "室蘭市" },
+  { id: "nayoro",        name: "名寄市" },
+  { id: "nemuro",        name: "根室市" },
+  { id: "obihiro",       name: "帯広市" },
+  { id: "wakkanai",      name: "稚内市" },
+];
+
 export default function SearchClient() {
   const [query, setQuery] = useState("");
   const [tab, setTab] = useState<"sessions" | "members">("sessions");
+  const [cityFilter, setCityFilter] = useState<string>("all");
   const [sessionResults, setSessionResults] = useState<SessionHit[]>([]);
   const [memberResults, setMemberResults] = useState<MemberHit[]>([]);
   const [loading, setLoading] = useState(false);
@@ -24,6 +44,7 @@ export default function SearchClient() {
 
   useEffect(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
+    setCityFilter("all");
     const q = query.trim();
     if (!q) {
       setSessionResults([]);
@@ -49,7 +70,9 @@ export default function SearchClient() {
 
   const tokens = tokenize(query);
   const hasQuery = query.trim().length > 0;
-  const totalResults = tab === "sessions" ? sessionResults.length : memberResults.length;
+  const filteredSessions = cityFilter === "all" ? sessionResults : sessionResults.filter((r) => r.city === cityFilter);
+  const filteredMembers = cityFilter === "all" ? memberResults : memberResults.filter((m) => m.city === cityFilter);
+  const totalResults = tab === "sessions" ? filteredSessions.length : filteredMembers.length;
 
   return (
     <div className="flex flex-col gap-4">
@@ -76,6 +99,38 @@ export default function SearchClient() {
         )}
       </div>
 
+      {/* 市フィルタ */}
+      {hasQuery && (sessionResults.length > 0 || memberResults.length > 0) && (
+        <div className="flex flex-wrap gap-1.5">
+          <button
+            onClick={() => setCityFilter("all")}
+            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+              cityFilter === "all"
+                ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
+                : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+            }`}
+          >
+            すべての市
+          </button>
+          {ALL_CITIES.filter((c) =>
+            sessionResults.some((r) => r.city === c.id) ||
+            memberResults.some((m) => m.city === c.id)
+          ).map((c) => (
+            <button
+              key={c.id}
+              onClick={() => setCityFilter(cityFilter === c.id ? "all" : c.id)}
+              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+                cityFilter === c.id
+                  ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
+                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+              }`}
+            >
+              {c.name}
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* タブ */}
       <div className="flex border-b border-[#E2E8F0]">
         {(["sessions", "members"] as const).map((t) => (
@@ -92,7 +147,7 @@ export default function SearchClient() {
             {t === "sessions" ? "議会記録" : "議員"}
             {hasQuery && !loading && (
               <span className="ml-1.5 text-xs bg-[#E8EEF7] text-[#1B3A6B] px-1.5 py-0.5 rounded-full">
-                {t === "sessions" ? sessionResults.length : memberResults.length}
+                {t === "sessions" ? filteredSessions.length : filteredMembers.length}
               </span>
             )}
           </button>
@@ -116,9 +171,9 @@ export default function SearchClient() {
       )}
 
       {/* 議会記録結果 */}
-      {tab === "sessions" && hasQuery && !loading && sessionResults.length > 0 && (
+      {tab === "sessions" && hasQuery && !loading && filteredSessions.length > 0 && (
         <div className="flex flex-col gap-3">
-          {sessionResults.map((r, i) => (
+          {filteredSessions.map((r, i) => (
             <Link
               key={i}
               href={r.href}
@@ -152,9 +207,9 @@ export default function SearchClient() {
       )}
 
       {/* 議員結果 */}
-      {tab === "members" && hasQuery && !loading && memberResults.length > 0 && (
+      {tab === "members" && hasQuery && !loading && filteredMembers.length > 0 && (
         <div className="flex flex-col gap-2">
-          {memberResults.map((m, i) => (
+          {filteredMembers.map((m, i) => (
             <Link
               key={i}
               href={m.href}

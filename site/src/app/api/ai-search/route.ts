@@ -50,9 +50,22 @@ function buildBaseContext(): string {
 }
 
 const CITY_META = [
-  { id: "chitose",   name: "千歳市" },
-  { id: "eniwa",     name: "恵庭市" },
-  { id: "tomakomai", name: "苫小牧市" },
+  { id: "chitose",       name: "千歳市" },
+  { id: "eniwa",         name: "恵庭市" },
+  { id: "tomakomai",     name: "苫小牧市" },
+  { id: "asahikawa",     name: "旭川市" },
+  { id: "ashibetsu",     name: "芦別市" },
+  { id: "date",          name: "伊達市" },
+  { id: "hakodate",      name: "函館市" },
+  { id: "ishikari",      name: "石狩市" },
+  { id: "kitahiroshima", name: "北広島市" },
+  { id: "kitami",        name: "北見市" },
+  { id: "kushiro",       name: "釧路市" },
+  { id: "muroran",       name: "室蘭市" },
+  { id: "nayoro",        name: "名寄市" },
+  { id: "nemuro",        name: "根室市" },
+  { id: "obihiro",       name: "帯広市" },
+  { id: "wakkanai",      name: "稚内市" },
 ];
 
 function buildCompareBaseContext(): string {
@@ -89,44 +102,88 @@ function loadChunksForCity(city: { id: string; name: string }): MinuteChunk[] {
   if (!fs.existsSync(minutesDir)) return [];
 
   const indexPath = path.join(minutesDir, "index.json");
-  if (!fs.existsSync(indexPath)) return [];
+  if (fs.existsSync(indexPath)) {
+    // フルテキスト議事録がある市
+    const index = JSON.parse(fs.readFileSync(indexPath, "utf-8")) as Array<{
+      council_id: number;
+      name: string;
+      year: string;
+      type_label: string;
+      file: string;
+    }>;
 
-  const index = JSON.parse(fs.readFileSync(indexPath, "utf-8")) as Array<{
-    council_id: number;
-    name: string;
-    year: string;
-    type_label: string;
-    file: string;
-  }>;
+    const chunks: MinuteChunk[] = [];
 
-  const chunks: MinuteChunk[] = [];
+    for (const entry of index) {
+      const filePath = path.join(minutesDir, entry.file);
+      if (!fs.existsSync(filePath)) continue;
 
-  for (const entry of index) {
-    const filePath = path.join(minutesDir, entry.file);
-    if (!fs.existsSync(filePath)) continue;
+      const council = JSON.parse(fs.readFileSync(filePath, "utf-8")) as {
+        schedules: Array<{
+          name: string;
+          minutes: Array<{ title: string; minute_type: string; text: string }>;
+        }>;
+      };
 
-    const council = JSON.parse(fs.readFileSync(filePath, "utf-8")) as {
-      schedules: Array<{
-        name: string;
-        minutes: Array<{ title: string; minute_type: string; text: string }>;
-      }>;
-    };
-
-    for (const schedule of council.schedules) {
-      for (const minute of schedule.minutes) {
-        if (!minute.text.trim()) continue;
-        chunks.push({
-          city: city.id,
-          cityName: city.name,
-          councilName: entry.name,
-          year: entry.year,
-          typeLabel: entry.type_label,
-          scheduleName: schedule.name,
-          title: minute.title,
-          text: minute.text,
-        });
+      for (const schedule of council.schedules) {
+        for (const minute of schedule.minutes) {
+          if (!minute.text.trim()) continue;
+          chunks.push({
+            city: city.id,
+            cityName: city.name,
+            councilName: entry.name,
+            year: entry.year,
+            typeLabel: entry.type_label,
+            scheduleName: schedule.name,
+            title: minute.title,
+            text: minute.text,
+          });
+        }
       }
     }
+
+    return chunks;
+  }
+
+  // フルテキストなし → enriched JSON から要約・ハイライト・タグをチャンクとして使用
+  const enrichedDir = path.join(minutesDir, "enriched");
+  if (!fs.existsSync(enrichedDir)) return [];
+
+  interface EnrichedDoc {
+    council_id: number;
+    name: string;
+    generated_at?: string;
+    summary?: string;
+    highlights?: string[];
+    tags?: string[];
+  }
+
+  const chunks: MinuteChunk[] = [];
+  let files: string[];
+  try { files = fs.readdirSync(enrichedDir).filter((f) => f.endsWith(".json")); }
+  catch { return []; }
+
+  for (const file of files) {
+    try {
+      const doc = JSON.parse(fs.readFileSync(path.join(enrichedDir, file), "utf-8")) as EnrichedDoc;
+      const year = doc.generated_at?.slice(0, 4) ?? "";
+      const summaryText = [
+        doc.summary ?? "",
+        ...(doc.highlights ?? []),
+        (doc.tags ?? []).join("、"),
+      ].filter(Boolean).join("\n");
+      if (!summaryText.trim()) continue;
+      chunks.push({
+        city: city.id,
+        cityName: city.name,
+        councilName: doc.name,
+        year,
+        typeLabel: "議事録（AI要約）",
+        scheduleName: "要約・ハイライト",
+        title: doc.name,
+        text: summaryText,
+      });
+    } catch { continue; }
   }
 
   return chunks;
@@ -264,7 +321,7 @@ const COMPARE_BASE_CONTEXT = buildCompareBaseContext();
 const MINUTE_CHUNKS = buildMinuteChunks();
 
 const SYSTEM_PROMPT_NORMAL = `あなたは北海道の市議会情報アシスタントです。
-千歳市・恵庭市・苫小牧市の議会データをもとに、ユーザーの質問に日本語で正確かつ簡潔に答えてください。
+北海道内の複数の市議会データをもとに、ユーザーの質問に日本語で正確かつ簡潔に答えてください。
 
 【回答ルール】
 - 提供データに基づいた事実のみを回答してください
