@@ -18,6 +18,17 @@ const CITIES: Record<string, { name: string }> = {
   kitami: { name: "北見市議会" },
   obihiro: { name: "帯広市議会" },
   nayoro: { name: "名寄市議会" },
+  date: { name: "伊達市議会" },
+  fukushima: { name: "福島町議会" },
+  hokuto: { name: "北斗市議会" },
+  ishikari: { name: "石狩市議会" },
+  kitahiroshima: { name: "北広島市議会" },
+  nemuro: { name: "根室市議会" },
+  noboribetsu: { name: "登別市議会" },
+  ashibetsu: { name: "芦別市議会" },
+  memuro: { name: "芽室町議会" },
+  kamikawa: { name: "上川町議会" },
+  nakagawa: { name: "中川町議会" },
 };
 
 // Master nav definition — order determines display order

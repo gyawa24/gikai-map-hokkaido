@@ -102,6 +102,83 @@ const FALLBACK_CITY_CONFIG: Record<string, CityNavConfig> = {
       { href: "/nayoro/minutes", label: "議事録" },
     ],
   },
+  date: {
+    name: "伊達市議会",
+    nav: [
+      { href: "/date", label: "議員一覧" },
+      { href: "/date/minutes", label: "議事録" },
+    ],
+  },
+  fukushima: {
+    name: "福島町議会",
+    nav: [
+      { href: "/fukushima", label: "議員一覧" },
+      { href: "/fukushima/minutes", label: "議事録" },
+    ],
+  },
+  hokuto: {
+    name: "北斗市議会",
+    nav: [
+      { href: "/hokuto", label: "議員一覧" },
+      { href: "/hokuto/minutes", label: "議事録" },
+    ],
+  },
+  ishikari: {
+    name: "石狩市議会",
+    nav: [
+      { href: "/ishikari", label: "議員一覧" },
+      { href: "/ishikari/minutes", label: "議事録" },
+    ],
+  },
+  kitahiroshima: {
+    name: "北広島市議会",
+    nav: [
+      { href: "/kitahiroshima", label: "議員一覧" },
+      { href: "/kitahiroshima/minutes", label: "議事録" },
+    ],
+  },
+  nemuro: {
+    name: "根室市議会",
+    nav: [
+      { href: "/nemuro", label: "議員一覧" },
+      { href: "/nemuro/minutes", label: "議事録" },
+    ],
+  },
+  noboribetsu: {
+    name: "登別市議会",
+    nav: [
+      { href: "/noboribetsu", label: "議員一覧" },
+      { href: "/noboribetsu/minutes", label: "議事録" },
+    ],
+  },
+  ashibetsu: {
+    name: "芦別市議会",
+    nav: [
+      { href: "/ashibetsu", label: "議員一覧" },
+      { href: "/ashibetsu/minutes", label: "議事録" },
+    ],
+  },
+  memuro: {
+    name: "芽室町議会",
+    nav: [
+      { href: "/memuro", label: "議員一覧" },
+      { href: "/memuro/minutes", label: "議事録" },
+    ],
+  },
+  kamikawa: {
+    name: "上川町議会",
+    nav: [
+      { href: "/kamikawa", label: "議員一覧" },
+      { href: "/kamikawa/minutes", label: "議事録" },
+    ],
+  },
+  nakagawa: {
+    name: "中川町議会",
+    nav: [
+      { href: "/nakagawa", label: "議員一覧" },
+      { href: "/nakagawa/minutes", label: "議事録" },
+    ],
+  },
 };
 
 const CITY_KEYS = [
@@ -115,6 +192,17 @@ const CITY_KEYS = [
   "kitami",
   "obihiro",
   "nayoro",
+  "date",
+  "fukushima",
+  "hokuto",
+  "ishikari",
+  "kitahiroshima",
+  "nemuro",
+  "noboribetsu",
+  "ashibetsu",
+  "memuro",
+  "kamikawa",
+  "nakagawa",
   "chitose",
 ];
 
