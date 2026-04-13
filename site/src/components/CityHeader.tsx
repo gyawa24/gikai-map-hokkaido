@@ -179,6 +179,13 @@ const FALLBACK_CITY_CONFIG: Record<string, CityNavConfig> = {
       { href: "/nakagawa/minutes", label: "議事録" },
     ],
   },
+  esashi: {
+    name: "江差町議会",
+    nav: [
+      { href: "/esashi", label: "議員一覧" },
+      { href: "/esashi/minutes", label: "議事録" },
+    ],
+  },
 };
 
 const CITY_KEYS = [
@@ -205,6 +212,7 @@ const CITY_KEYS = [
   "nakagawa",
   "kutchan",
   "ikeda",
+  "esashi",
   "chitose",
 ];
 

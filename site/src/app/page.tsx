@@ -268,6 +268,15 @@ const CITIES = [
     hasMinutes: true,
     hasSession: false,
   },
+  {
+    id: "esashi",
+    name: "江差町議会",
+    furigana: "えさしちょう",
+    href: "/esashi",
+    region: "檜山",
+    hasMinutes: true,
+    hasSession: false,
+  },
 ];
 
 export default function HomePage() {
