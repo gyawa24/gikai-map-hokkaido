@@ -1,37 +1,20 @@
 import fs from "fs";
 import path from "path";
 import CityHeader from "./CityHeader";
+import { getMunicipalities } from "@/lib/municipalities";
 
 export type NavItem = { href: string; label: string };
 export type CityNavConfig = { name: string; nav: NavItem[] };
 
-// All cities the site supports
-const CITIES: Record<string, { name: string }> = {
-  chitose: { name: "千歳市議会" },
-  eniwa: { name: "恵庭市議会" },
-  tomakomai: { name: "苫小牧市議会" },
-  asahikawa: { name: "旭川市議会" },
-  hakodate: { name: "函館市議会" },
-  muroran: { name: "室蘭市議会" },
-  kushiro: { name: "釧路市議会" },
-  wakkanai: { name: "稚内市議会" },
-  kitami: { name: "北見市議会" },
-  obihiro: { name: "帯広市議会" },
-  nayoro: { name: "名寄市議会" },
-  date: { name: "伊達市議会" },
-  fukushima: { name: "福島町議会" },
-  hokuto: { name: "北斗市議会" },
-  ishikari: { name: "石狩市議会" },
-  kitahiroshima: { name: "北広島市議会" },
-  nemuro: { name: "根室市議会" },
-  noboribetsu: { name: "登別市議会" },
-  ashibetsu: { name: "芦別市議会" },
-  memuro: { name: "芽室町議会" },
-  kamikawa: { name: "上川町議会" },
-  nakagawa: { name: "中川町議会" },
-  kutchan: { name: "倶知安町議会" },
-  ikeda: { name: "池田町議会" },
-};
+// Build city list from municipalities.json
+function buildCities(): Record<string, { name: string }> {
+  const municipalities = getMunicipalities();
+  return Object.fromEntries(
+    municipalities
+      .filter((m) => m.active)
+      .map((m) => [m.slug, { name: m.council_name }])
+  );
+}
 
 // Master nav definition — order determines display order
 // pageDir: subdirectory under app/{city}/ (empty string = city root page)
@@ -76,10 +59,16 @@ const LABEL_OVERRIDES: Record<string, Record<string, string>> = {
 
 function pageExists(cityKey: string, pageDir: string): boolean {
   if (pageDir === "ai-search") return true;
-  const pagePath = pageDir
+  // Check static city-specific route first
+  const staticPath = pageDir
     ? path.join(process.cwd(), "src", "app", cityKey, pageDir, "page.tsx")
     : path.join(process.cwd(), "src", "app", cityKey, "page.tsx");
-  return fs.existsSync(pagePath);
+  if (fs.existsSync(staticPath)) return true;
+  // Fall back to dynamic [city] route
+  const dynamicPath = pageDir
+    ? path.join(process.cwd(), "src", "app", "[city]", pageDir, "page.tsx")
+    : path.join(process.cwd(), "src", "app", "[city]", "page.tsx");
+  return fs.existsSync(dynamicPath);
 }
 
 function dataExists(cityKey: string, dataFile: string): boolean {
@@ -117,6 +106,7 @@ function computeCityNav(cityKey: string): NavItem[] {
 }
 
 export default function CityHeaderServer() {
+  const CITIES = buildCities();
   const allCityNavs: Record<string, CityNavConfig> = {};
 
   for (const [cityKey, config] of Object.entries(CITIES)) {
