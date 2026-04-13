@@ -42,14 +42,14 @@ export default function KamikawaMinutesPage() {
   return (
     <div className="max-w-2xl mx-auto">
       <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
-        <a href="/kamikawa" className="hover:text-[#1B3A6B] transition-colors">神川町議会</a>
+        <a href="/kamikawa" className="hover:text-[#1B3A6B] transition-colors">上川町議会</a>
         <span aria-hidden="true">›</span>
         <span className="text-[#1A202C]" aria-current="page">議事録</span>
       </nav>
       <section className="mb-6">
         <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">公式議事録</h2>
         <p className="text-base text-[#4A5568] leading-relaxed">
-          神川町議会の公式会議録です。本会議・委員会の発言内容をすべて収録しています。
+          上川町議会の公式会議録です。本会議・委員会の発言内容をすべて収録しています。
           {items.length > 0 && (
             <span className="block mt-1 text-sm text-[#718096]">{items.length}件の会議録を掲載中</span>
           )}

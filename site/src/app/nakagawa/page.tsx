@@ -7,11 +7,11 @@ import CitySummaryCards from "@/components/CitySummaryCards";
 import { getMinutesSummary } from "@/lib/cityStats";
 
 export const metadata: Metadata = {
-  title: "那珂川市議会",
-  description: "那珂川市議会の議員一覧・議事録を掲載しています。",
+  title: "中川町議会",
+  description: "中川町議会の議員一覧・議事録を掲載しています。",
   openGraph: {
-    title: "那珂川市議会 | 北海道議会情報マップ",
-    description: "那珂川市議会の議員一覧・議事録を掲載しています。",
+    title: "中川町議会 | 北海道議会情報マップ",
+    description: "中川町議会の議員一覧・議事録を掲載しています。",
   },
 };
 
@@ -41,7 +41,7 @@ export default function NakagawaPage() {
         <div className="max-w-2xl mx-auto">
           <section className="mb-6">
             <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">議員一覧</h2>
-            <p className="text-base text-[#4A5568] leading-relaxed">那珂川市議会の議員情報です。</p>
+            <p className="text-base text-[#4A5568] leading-relaxed">中川町議会の議員情報です。</p>
           </section>
           <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
             現在、議員情報は掲載されていません。

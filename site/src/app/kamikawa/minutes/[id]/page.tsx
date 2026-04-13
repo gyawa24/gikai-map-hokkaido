@@ -34,13 +34,13 @@ export async function generateMetadata({
   const enriched = getEnriched(id);
 
   const title = session
-    ? `${session.name} | 神川町議会 | 北海道議会情報マップ`
-    : "議事録 | 神川町議会 | 北海道議会情報マップ";
+    ? `${session.name} | 上川町議会 | 北海道議会情報マップ`
+    : "議事録 | 上川町議会 | 北海道議会情報マップ";
   const description = enriched?.summary
     ? enriched.summary.slice(0, 100)
     : session
     ? `${session.type_label}（${session.japanese_year}）`
-    : "神川町議会の議事録";
+    : "上川町議会の議事録";
 
   return {
     title,
@@ -87,7 +87,7 @@ export default async function KamikawaMinutesDetailPage({
   return (
     <div className="max-w-2xl mx-auto">
       <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
-        <a href="/kamikawa" className="hover:text-[#1B3A6B] transition-colors">神川町議会</a>
+        <a href="/kamikawa" className="hover:text-[#1B3A6B] transition-colors">上川町議会</a>
         <span aria-hidden="true">›</span>
         <a href="/kamikawa/minutes" className="hover:text-[#1B3A6B] transition-colors">議事録</a>
         <span aria-hidden="true">›</span>
