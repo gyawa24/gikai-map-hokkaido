@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import { Accordion } from "@/components/Accordion";
 
@@ -17,6 +18,33 @@ function getActivity(): Record<string, MemberActivity> {
   } catch {
     return {};
   }
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const members = getMembers();
+  const member = members.find((m) => m.seat_number === Number(id));
+
+  if (!member) {
+    return { title: "議員詳細 | 苫小牧市議会 | 北海道議会情報マップ" };
+  }
+
+  const partyLabel = member.party ?? member.faction ?? "";
+  const title = partyLabel
+    ? `${member.name}（${partyLabel}）- 苫小牧市議会 | 北海道議会情報マップ`
+    : `${member.name} - 苫小牧市議会 | 北海道議会情報マップ`;
+  const description = `${member.name}議員の活動テーマ・発言記録など`;
+
+  return {
+    title,
+    description,
+    openGraph: { title, description },
+    twitter: { card: "summary" },
+  };
 }
 
 export async function generateStaticParams() {
