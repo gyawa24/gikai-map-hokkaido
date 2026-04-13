@@ -203,6 +203,8 @@ const CITY_KEYS = [
   "memuro",
   "kamikawa",
   "nakagawa",
+  "kutchan",
+  "ikeda",
   "chitose",
 ];
 

@@ -29,6 +29,8 @@ const CITIES: Record<string, { name: string }> = {
   memuro: { name: "芽室町議会" },
   kamikawa: { name: "上川町議会" },
   nakagawa: { name: "中川町議会" },
+  kutchan: { name: "倶知安町議会" },
+  ikeda: { name: "池田町議会" },
 };
 
 // Master nav definition — order determines display order

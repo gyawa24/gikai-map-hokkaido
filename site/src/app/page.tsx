@@ -250,6 +250,24 @@ const CITIES = [
     hasMinutes: true,
     hasSession: false,
   },
+  {
+    id: "kutchan",
+    name: "倶知安町議会",
+    furigana: "くっちゃんちょう",
+    href: "/kutchan",
+    region: "後志",
+    hasMinutes: true,
+    hasSession: false,
+  },
+  {
+    id: "ikeda",
+    name: "池田町議会",
+    furigana: "いけだちょう",
+    href: "/ikeda",
+    region: "十勝",
+    hasMinutes: true,
+    hasSession: false,
+  },
 ];
 
 export default function HomePage() {
