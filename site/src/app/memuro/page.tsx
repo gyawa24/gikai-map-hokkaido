@@ -24,6 +24,7 @@ function getMembers(): Member[] {
   }
 }
 
+// v2
 export default function MemuroMembersPage() {
   const members = getMembers();
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
