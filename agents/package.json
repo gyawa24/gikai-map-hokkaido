@@ -1,0 +1,14 @@
+{
+  "name": "gikaimap-agents",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Autonomous improvement agent system for gikai-map-hokkaido",
+  "scripts": {
+    "status": "node orchestrator.mjs status",
+    "run": "node orchestrator.mjs run",
+    "loop": "node orchestrator.mjs loop",
+    "generate": "node orchestrator.mjs generate",
+    "full": "node orchestrator.mjs generate && node orchestrator.mjs loop"
+  },
+  "dependencies": {}
+}

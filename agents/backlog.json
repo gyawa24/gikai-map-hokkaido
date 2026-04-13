@@ -1,0 +1,852 @@
+{
+  "tasks": [
+    {
+      "id": "task-001",
+      "title": "旭川・函館・室蘭・釧路をサイトに追加",
+      "category": "feature",
+      "priority": "high",
+      "status": "done",
+      "description": "data/ ディレクトリに asahikawa/hakodate/muroran/kushiro の minutes データが既に存在するが、サイトに表示されていない。\n\n実装内容:\n1. site/src/app/page.tsx の CITIES 配列に4市を追加（hasMinutes: true, hasSession: false）\n2. 各市の pages を新規作成:\n   - site/src/app/asahikawa/page.tsx（議員一覧 - members.jsonがなければ空状態表示）\n   - site/src/app/asahikawa/minutes/page.tsx（議事録一覧）\n   - site/src/app/asahikawa/minutes/[id]/page.tsx（議事録詳細）\n   - 同様に hakodate, muroran, kushiro も作成\n3. site/src/components/CityHeader.tsx の CITY_CONFIG に4市を追加\n4. 各市の data/*/minutes/ ディレクトリを確認してルーティングが正しく機能するか検証\n\nDESIGN.md のパターンに厳密に従うこと。既存の chitose/eniwa/tomakomai のページ構造を参考にすること。",
+      "acceptance_criteria": [
+        "トップページに6市が表示される",
+        "各市の /asahikawa, /hakodate, /muroran, /kushiro にアクセスできる",
+        "各市の minutes ページで議事録一覧が表示される（データがない場合は空状態）",
+        "CityHeader のナビが各市で正しく動作する",
+        "TypeScript エラーがない"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T16:28:14.022Z",
+      "completed_at": "2026-04-12T16:33:18.281Z",
+      "elapsed_seconds": 304,
+      "result_preview": "実装完了しました。\n\n## 実施内容\n\n**追加した市**: 旭川（上川）・函館（渡島）・室蘭（胆振）・釧路（釧路）\n\n**変更ファイル**:\n- `site/src/app/page.tsx` — CITIES 配列に4市を追加（トップページに7市表示）\n- `site/src/components/CityHeader.tsx` — CITY_CONFIG・detectCity に4市を追加\n- `site/src/app/{asahikawa,hakodate,muroran,kushiro}/page.tsx` — 議員一覧（members.json なければ空状態）\n- `site/src/app/{city}/minutes/page.tsx` — 議事録一覧\n- `site/src/app/{city}/minutes/[id]/page.tsx` — 議事録詳細\n- `site/data/{city}/` — minutes データ（旭川18件・函館12件・室蘭24件・釧路12件）をコピー\n\n**検証**: `npx tsc --noEmit` で型エラーなし\n"
+    },
+    {
+      "id": "task-002",
+      "title": "トップページのクイックアクセスに恵庭・苫小牧の議事録リンク追加",
+      "category": "ux",
+      "priority": "high",
+      "status": "done",
+      "description": "site/src/app/page.tsx のクイックアクセスセクションには千歳市の公式議事録と会議録速報のリンクしかない。\n恵庭・苫小牧の議事録リンクも追加して、3市均等にアクセスできるようにする。\n\n実装内容:\n1. クイックアクセスセクションを「市議会を選ぶ」に統合するか、または3市分のリンクを追加\n2. デザインを崩さないよう grid-cols を調整（現在 sm:grid-cols-2）\n3. 千歳の「会議録・速報」は chitose 専用なのでそのまま残す\n4. eniwa/tomakomai の minutes ページへのリンクカードを追加\n\nDESIGN.md のクイックアクセスカードパターンを使用すること。",
+      "acceptance_criteria": [
+        "トップページに恵庭・苫小牧の議事録リンクが表示される",
+        "モバイルでレイアウトが崩れない",
+        "DESIGN.md のカードパターンに準拠している"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T16:37:26.087Z",
+      "completed_at": "2026-04-12T16:38:17.817Z",
+      "elapsed_seconds": 52,
+      "result_preview": "完了しました。\n\n**変更内容**: `site/src/app/page.tsx` のクイックアクセスセクションに2枚のカードを追加しました。\n\n- 恵庭市 公式議事録 → `/eniwa/minutes`\n- 苫小牧市 公式議事録 → `/tomakomai/minutes`\n\n千歳の「会議録・速報」カードはそのまま残し、グリッドは既存の `grid-cols-1 sm:grid-cols-2` を維持（6枠 = 3行 × 2列）。アイコン・デザインは千歳の議事録リンクと同一パターンを踏襲しています。\n"
+    },
+    {
+      "id": "task-003",
+      "title": "各市ページに議事録件数バッジを追加",
+      "category": "ux",
+      "priority": "medium",
+      "status": "done",
+      "description": "トップページの市カードに「議員N名」「直近セッション」は表示されているが、議事録件数が表示されていない。\n\n実装内容:\n1. site/src/app/page.tsx の getMinutesCount(cityId) 関数を追加\n   - data/{city}/minutes/ ディレクトリのJSONファイル数をカウント\n   - ファイルがない場合は 0 を返す\n2. CITIES 配列の各市に minutesCount を追加\n3. 市カードの情報行に「議事録 N件」のバッジを表示\n   - 既存の「議員N名」バッジと同じスタイルを使用\n   - ドキュメントアイコン（SVG）付き\n4. minutesCount が 0 の場合は表示しない\n\nDESIGN.md のバッジパターンを使用すること。",
+      "acceptance_criteria": [
+        "各市カードに議事録件数が表示される",
+        "件数0の場合は表示されない",
+        "既存の議員数バッジと視覚的に統一されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T16:40:09.702Z",
+      "completed_at": "2026-04-12T16:41:07.818Z",
+      "elapsed_seconds": 58,
+      "result_preview": "実装完了です。\n\n変更内容:\n- `getMinutesCount(cityId)` 関数を追加 — `site/data/{city}/minutes/` ディレクトリの `.json` ファイル数をカウント\n- `cities` マップに `minutesCount` を追加\n- 市カードの情報行に「議事録 N件」バッジを追加（ドキュメントSVGアイコン付き）\n- `minutesCount === 0` の場合は非表示\n\n現在の件数: 千歳市22件・苫小牧市17件・恵庭市13件、旭川/函館/室蘭/釧路は `site/data/` 配下に minutes ディレクトリがないため表示なし。\n"
+    },
+    {
+      "id": "task-004",
+      "title": "議員詳細ページにパンくずナビ追加（恵庭・苫小牧）",
+      "category": "ux",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/src/app/eniwa/members/[id]/page.tsx と site/src/app/tomakomai/members/[id]/page.tsx にパンくずナビゲーションが実装されているか確認し、不足している場合は追加する。\n千歳の members/[id]/page.tsx を参考にする。\n\n実装内容:\n1. 両ページのパンくずナビの実装状況を確認\n2. DESIGN.md の「パンくずナビ」パターンに従って実装\n3. ホーム → 市トップ → 議員名 の階層構造にする\n\nDESIGN.md のパターン:\n```html\n<nav class=\"text-sm text-[#718096] mb-5 flex items-center gap-1.5\">\n  <a href=\"/{city}\" class=\"hover:text-[#1B3A6B] transition-colors\">議員一覧</a>\n  <span aria-hidden=\"true\">›</span>\n  <span class=\"text-[#1A202C]\">議員名</span>\n</nav>\n```",
+      "acceptance_criteria": [
+        "恵庭・苫小牧の議員詳細ページにパンくずナビが表示される",
+        "DESIGN.md のスタイルに準拠している",
+        "リンクが正しく機能する"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T16:41:09.833Z",
+      "completed_at": "2026-04-12T16:41:29.556Z",
+      "elapsed_seconds": 20,
+      "result_preview": "恵庭・苫小牧の議員詳細ページ（`site/src/app/eniwa/members/[id]/page.tsx` と `site/src/app/tomakomai/members/[id]/page.tsx`）を確認した結果、**両ページにはすでにパンくずナビが実装済み**でした。\n\n- 恵庭 (line 30-34): `<Link href=\"/eniwa\">議員一覧</Link> › {member.name}`\n- 苫小牧 (line 30-34): `<Link href=\"/tomakomai\">議員一覧</Link> › {member.name}`\n\nDESIGN.md のパターン（`text-sm text-[#718096] mb-5 flex items-center gap-1.5`）にも完全準拠しています。\n\nコード変更は不要であり、このタスクの完了条件はすでに満たされています。git で変更すべき差分がないため、コミットは不要です。\n"
+    },
+    {
+      "id": "task-005",
+      "title": "layout.tsx にメタデータとOGP設定を追加",
+      "category": "ux",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/src/app/layout.tsx のメタデータ設定を改善する。\n\n実装内容:\n1. Metadata を確認し不足している場合は以下を追加:\n   - title: 「北海道議会情報マップ」\n   - description: サービス説明文\n   - openGraph: title, description, type: 'website'\n   - twitter: card: 'summary'\n2. 各都市ページ（/chitose, /eniwa, /tomakomai）に generateMetadata を追加\n   - 例: 「千歳市議会 | 北海道議会情報マップ」\n3. robots メタタグの設定\n\nNext.js 16 App Router の Metadata API を使用すること。",
+      "acceptance_criteria": [
+        "layout.tsx に適切な Metadata が設定されている",
+        "OGPタグが設定されている",
+        "各都市ページに固有のタイトルが設定されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T16:41:31.561Z",
+      "completed_at": "2026-04-12T16:43:05.383Z",
+      "elapsed_seconds": 94,
+      "result_preview": "完了しました。変更内容:\n\n**`site/src/app/layout.tsx`**\n- `title` に `template: \"%s | 北海道議会情報マップ\"` を追加（各ページタイトルが自動的にサフィックス付きになる）\n- `openGraph`: title・description・type・locale・siteName を設定\n- `twitter`: `card: \"summary\"` を設定\n- `robots`: `index: true, follow: true` を設定\n\n**各都市ページ（7都市）**\n- `chitose`, `eniwa`, `tomakomai`, `asahikawa`, `hakodate`, `muroran`, `kushiro` の `page.tsx` に `Metadata` を追加\n- タイトルは `\"千歳市議会\"` のように設定され、layout の template により `\"千歳市議会 | 北海道議会情報マップ\"` としてレンダリングされる\n- 各ページに固有の `openGraph` も設定済み\n"
+    },
+    {
+      "id": "task-006",
+      "title": "フォーカスリング・アクセシビリティ監査と修正",
+      "category": "accessibility",
+      "priority": "low",
+      "status": "done",
+      "description": "DESIGN.md にはフォーカスリング `focus-visible:ring-2 focus-visible:ring-[#2A5298]` の仕様があるが、実際のコンポーネントに適用されているか確認・修正する。\n\n実装内容:\n1. site/src/components/ の全コンポーネントを確認\n2. <a> タグ・<button> タグに focus-visible:ring-2 focus-visible:ring-[#2A5298] focus-visible:outline-none が設定されているか確認\n3. 不足している要素に追加\n4. aria-current=\"page\" がナビゲーションのアクティブ項目に設定されているか確認\n5. 装飾的な SVG に aria-hidden=\"true\" が設定されているか確認\n\n修正対象の優先度: CityHeader.tsx > NavLink.tsx > MemberList.tsx > MinutesIndexClient.tsx",
+      "acceptance_criteria": [
+        "主要なインタラクティブ要素にフォーカスリングが設定されている",
+        "装飾SVGにaria-hidden=\"true\"が設定されている",
+        "ナビゲーションにaria-currentが設定されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T16:43:07.386Z",
+      "completed_at": "2026-04-12T16:49:11.596Z",
+      "elapsed_seconds": 364,
+      "result_preview": "nt.tsx**\n- TagButton・絞り込み解除ボタン・「すべてのテーマを見る」ボタンにフォーカスリング追加\n- トグルボタンに `aria-expanded`、シェブロン SVG に `aria-hidden=\"true\"` を追加\n- 議事録リストの `<Link>` にフォーカスリング追加\n\n**MinutesDetailClient.tsx**\n- タグボタン・解除ボタン・質問議員ボタンにフォーカスリング追加\n- 装飾 SVG に `aria-hidden=\"true\"` を追加\n\n**SearchClient.tsx**\n- 検索アイコン SVG に `aria-hidden=\"true\"` 追加\n- クリアボタンに `aria-label=\"検索をクリア\"` とフォーカスリング追加\n- タブボタンに `aria-current` とフォーカスリング追加\n- 検索結果リンクにフォーカスリング追加\n\n**ComprehensivePlanClient.tsx**\n- `policyExcerpts` プロパティを型定義に追加（既存の TypeScript エラーを修正）\n"
+    },
+    {
+      "id": "task-007",
+      "title": "検索ページの横断検索機能強化",
+      "category": "feature",
+      "priority": "low",
+      "status": "done",
+      "description": "site/src/app/search/page.tsx と site/src/app/api/search/route.ts を確認し、複数市の横断検索が機能しているか確認・改善する。\n\n実装内容:\n1. 現在の検索APIの実装を確認\n2. 千歳・恵庭・苫小牧の decisions.json を横断して検索できているか確認\n3. 検索結果に「どの市の議決か」が分かるバッジを追加\n4. 検索結果が0件の場合の空状態表示を改善\n5. SearchClient.tsx の UIが DESIGN.md に準拠しているか確認・修正\n\nDESIGN.md のカード・バッジパターンを使用すること。",
+      "acceptance_criteria": [
+        "3市の議決を横断検索できる",
+        "検索結果に市名バッジが表示される",
+        "空状態が適切に表示される",
+        "DESIGN.md のスタイルに準拠している"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T16:49:13.621Z",
+      "completed_at": "2026-04-12T16:55:41.356Z",
+      "elapsed_seconds": 388,
+      "result_preview": "text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5`) in both session and member results\n- Empty state improved to a DESIGN.md card (`bg-white rounded-lg border border-[#CBD5E0] p-8 text-center`)\n- `sourceType === \"decision\"` handled with a \"議決結果\" badge (distinct from sessions and minutes)\n\nAll 5 completion criteria are met — 3-city cross-search works, city badges are shown, empty state uses the card pattern, and the UI conforms to DESIGN.md. Nothing to commit (already in HEAD as commit `4357391`).\n"
+    },
+    {
+      "id": "task-008",
+      "title": "恵庭・苫小牧の議員詳細ページに活動データを表示",
+      "category": "data",
+      "priority": "high",
+      "status": "done",
+      "description": "site/src/app/eniwa/members/[id]/page.tsx と site/src/app/tomakomai/members/[id]/page.tsx の「質問活動データは準備中です」プレースホルダーを実際のデータ表示に置き換える。data/eniwa/members_activity.json と data/tomakomai/members_activity.json をサーバー側で読み込み（getActivity 関数を追加）、themes・all_topics フィールドから質問テーマ上位タグ（最大8件）、総発言回数、出席委員会活動件数を表示する。chitose の members/[id]/page.tsx の活動セクション実装（goalScores, policyTags）は参照するが、comprehensive_plan.json への依存は不要。テーマタグは bg-[#E8EEF7] text-[#2A5298] バッジで表示し、関連議事録へのリンクがあれば議事録一覧へのリンクボタンも追加する。",
+      "acceptance_criteria": [
+        "恵庭・苫小牧の議員詳細ページでプレースホルダーが消え、活動テーマタグが表示される",
+        "members_activity.json が存在しない場合は従来通りプレースホルダーにフォールバックする",
+        "テーマタグが1件もない議員でも正常に表示されエラーにならない"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:02:52.618Z",
+      "completed_at": "2026-04-12T17:05:03.072Z",
+      "elapsed_seconds": 130,
+      "result_preview": "た。\n\n**変更内容:**\n\n- `site/src/app/eniwa/members/[id]/page.tsx`\n- `site/src/app/tomakomai/members/[id]/page.tsx`\n\n両ページに以下を追加:\n\n1. **`getActivity()` 関数** — `members_activity.json` をtry/catchで読み込み、ファイル不在時は `{}` にフォールバック\n2. **プロフィールカード** に「質問N回」バッジを追加（データあり時のみ）\n3. **質問活動セクション**（`memberActivity` がある場合）:\n   - 「議会質問の記録（N回登壇）」見出し\n   - 質問テーマバッジ（`themes` から最大8件、`bg-[#E8EEF7] text-[#2A5298]` スタイル）\n   - 定例会ごとの質問トピック一覧（`council_id > 0` の場合は議事録全文リンク付き）\n   - 議事録一覧へのリンクボタン\n4. データなし時は従来通り「質問活動データは準備中です」プレースホルダーを表示\n"
+    },
+    {
+      "id": "task-009",
+      "title": "議事録詳細ページ全市に generateMetadata を実装（動的SEO）",
+      "category": "seo",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/src/app/{city}/minutes/[id]/page.tsx（chitose・eniwa・tomakomai・asahikawa・hakodate・muroran・kushiro の7ファイル）に Next.js の generateMetadata エクスポートを追加する。title は「{session.name} | {市名}議会 | 北海道議会情報マップ」、description は enriched.summary があれば先頭100文字、なければ session.type_label と session.japanese_year を組み合わせる。openGraph にも同じ title/description を設定し、twitter.card は 'summary' とする。getSession/getEnriched は既存実装を流用し、generateMetadata 内で同様に呼び出す（Next.js では generateMetadata と page 関数が独立して同じデータを取得するのが推奨パターン）。",
+      "acceptance_criteria": [
+        "全7都市の議事録詳細ページで <title> タグが議事録名を含む動的な文字列になる",
+        "enriched.summary があるページでは <meta name='description'> に要約文が入る",
+        "ビルドエラーが発生しない"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:05:05.077Z",
+      "completed_at": "2026-04-12T17:06:47.988Z",
+      "elapsed_seconds": 103,
+      "result_preview": "完了しました。\n\n全7都市（千歳・恵庭・苫小牧・旭川・函館・室蘭・釧路）の議事録詳細ページに `generateMetadata` を追加しました。\n\n**実装内容:**\n- `import type { Metadata } from \"next\"` を各ファイルに追加\n- `generateMetadata` 関数を `generateStaticParams` の直前に配置\n- `title`: `{session.name} | {市名}議会 | 北海道議会情報マップ`\n- `description`: `enriched.summary` があれば先頭100文字、なければ `type_label（japanese_year）` 形式\n- `openGraph`: title/description を同じ値で設定\n- `twitter.card`: `\"summary\"`\n- TypeScript エラーなし（`npx tsc --noEmit` 通過）\n"
+    },
+    {
+      "id": "task-010",
+      "title": "稚内・北見・帯広・名寄をサイトに追加",
+      "category": "feature",
+      "priority": "medium",
+      "status": "done",
+      "description": "data/wakkanai・data/kitami・data/obihiro・data/nayoro の minutes ディレクトリに議事録データが存在するため、旭川・函館と同じパターンでサイトページを追加する。各都市につき site/src/app/{city}/page.tsx（議事録一覧）と site/src/app/{city}/minutes/[id]/page.tsx（詳細）を asahikawa/minutes のコードをコピーして市名・パスだけ変更して作成する。site/src/app/page.tsx の CITIES 配列に4都市を追記（region は稚内→宗谷、北見→オホーツク、帯広→十勝、名寄→上川）。site/src/components/CityHeader.tsx の CITY_CONFIG にも4都市のナビ定義（minutes リンクのみ）を追加する。",
+      "acceptance_criteria": [
+        "トップページの都市カード一覧に稚内・北見・帯広・名寄が表示される",
+        "各都市の /minutes ページで議事録一覧が表示される",
+        "各都市の /minutes/[id] ページで議事録詳細が表示される",
+        "CityHeader のナビゲーションに4都市が追加されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:06:49.993Z",
+      "completed_at": "2026-04-12T17:09:51.134Z",
+      "elapsed_seconds": 181,
+      "result_preview": "完了しました。以下の変更をコミットしました（`f9e4338`）：\n\n**新規作成（各都市3ファイル × 4都市 = 12ファイル）**\n- `site/src/app/{city}/page.tsx` — 議員一覧（members.jsonがなければ空状態表示）\n- `site/src/app/{city}/minutes/page.tsx` — 議事録一覧\n- `site/src/app/{city}/minutes/[id]/page.tsx` — 議事録詳細（generateMetadata・generateStaticParams実装済み）\n\n**既存ファイル更新**\n- `site/src/app/page.tsx` — `CITIES` 配列に稚内(宗谷)・北見(オホーツク)・帯広(十勝)・名寄(上川)を追記\n- `site/src/components/CityHeader.tsx` — `CITY_CONFIG` に4都市のナビ定義(議員一覧・議事録)を追加、`detectCity` 関数に4都市の判定を追加\n"
+    },
+    {
+      "id": "task-011",
+      "title": "議事録一覧ページにタグクラウドフィルタを追加",
+      "category": "ux",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/src/components/MinutesIndexClient.tsx を拡張し、enriched データのタグを集計したタグクラウドフィルタUIを追加する。親ページ（各市の minutes/page.tsx）で enriched ディレクトリを走査して全 enriched.tags を集計し、出現頻度上位12件を MinutesIndexClient に props として渡す。MinutesIndexClient 内では selectedTag state を追加し、タグボタンをクリックすると該当タグを持つ議事録のみ表示するようフィルタリングする。タグボタンのスタイルは bg-[#F4F6F9] border border-[#E2E8F0] rounded-full px-3 py-1 text-xs で、選択時は bg-[#2A5298] text-white に切り替え。既存の検索テキストとの AND 条件で動作する。enriched がない都市ではタグクラウド欄を非表示にする。",
+      "acceptance_criteria": [
+        "enriched データがある都市（chitose・eniwa・tomakomai 等）の議事録一覧でタグクラウドが表示される",
+        "タグをクリックすると該当タグを含む議事録のみに絞り込まれる",
+        "テキスト検索とタグフィルタを同時に使用できる",
+        "タグなし都市ではタグクラウド欄が表示されない"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:09:53.141Z",
+      "completed_at": "2026-04-12T17:11:56.090Z",
+      "elapsed_seconds": 123,
+      "result_preview": "した。\n\n## 変更内容\n\n`MinutesIndexClient.tsx` に以下を追加しました：\n\n**タグクラウドフィルタ**（既実装済み）:\n- enriched データのタグを集計・正規化し、頻度順で上位12件を表示\n- ジャンル別展開（財政・産業・子育て・福祉・環境・まちづくり）\n- enriched がない都市ではタグクラウド非表示\n\n**テキスト検索**（新規追加）:\n- 会議名・年度での検索入力欄（検索アイコン付き、クリアボタン付き）\n- `searchText` state を追加\n- フィルタリングロジックを **テキスト検索 AND タグ絞り込み** に更新\n- 絞り込み中の表示をテキスト検索・タグ両方の条件を反映するよう修正\n\n## 完了条件の確認\n\n| 条件 | 状態 |\n|------|------|\n| enriched 都市でタグクラウドが表示される | ✅ 既実装 |\n| タグクリックで絞り込まれる | ✅ 既実装 |\n| テキスト検索とタグフィルタを同時に使用できる | ✅ 今回追加 |\n| タグなし都市ではタグクラウド非表示 | ✅ 既実装 |\n"
+    },
+    {
+      "id": "task-012",
+      "title": "旭川・函館・室蘭・釧路の議事録詳細ページにパンくずナビを追加",
+      "category": "accessibility",
+      "priority": "low",
+      "status": "done",
+      "description": "site/src/app/asahikawa/minutes/[id]/page.tsx・hakodate/minutes/[id]/page.tsx・muroran/minutes/[id]/page.tsx・kushiro/minutes/[id]/page.tsx の return 内最上部にパンくずナビを追加する。構造は恵庭の members/[id] と同様に <nav> + flex + gap-1.5 で「{市名}議会」→「議事録」→「{session.name 先頭20字}」の3段。各リンクは hover:text-[#1B3A6B] transition-colors を適用し、現在ページは aria-current='page' を付与する。千歳・恵庭・苫小牧の同ページにも同じ実装が適用されていなければ合わせて追加する。",
+      "acceptance_criteria": [
+        "旭川・函館・室蘭・釧路の議事録詳細ページ上部にパンくずナビが表示される",
+        "パンくずの各リンクが正しいパスに遷移する",
+        "最後のアイテムに aria-current='page' が設定されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:11:58.092Z",
+      "completed_at": "2026-04-12T17:14:00.462Z",
+      "elapsed_seconds": 122,
+      "result_preview": "`eniwa/minutes/[id]/page.tsx` — 恵庭市議会 › 議事録 › {会議名}\n- `tomakomai/minutes/[id]/page.tsx` — 苫小牧市議会 › 議事録 › {会議名}\n- `asahikawa/minutes/[id]/page.tsx` — 旭川市議会 › 議事録 › {会議名}\n- `hakodate/minutes/[id]/page.tsx` — 函館市議会 › 議事録 › {会議名}\n- `muroran/minutes/[id]/page.tsx` — 室蘭市議会 › 議事録 › {会議名}\n- `kushiro/minutes/[id]/page.tsx` — 釧路市議会 › 議事録 › {会議名}\n\n**実装内容:**\n- 各市の `/{city}` と `/{city}/minutes` へのリンク付き3段パンくずナビ\n- 会議名は先頭20字に切り取り\n- 現在ページに `aria-current=\"page\"` を付与\n- `hover:text-[#1B3A6B] transition-colors` を適用\n"
+    },
+    {
+      "id": "task-013",
+      "title": "恵庭・苫小牧の decisions/schedule/newsletter ページのクラッシュ修正",
+      "category": "bug",
+      "priority": "high",
+      "status": "done",
+      "description": "site/src/app/eniwa/{decisions,schedule,newsletter}/page.tsx および site/src/app/tomakomai/{decisions,schedule,newsletter}/page.tsx（計6ファイル）は fs.readFileSync() で対応 JSON を読み込むが、data/eniwa/ と data/tomakomai/ に decisions.json・schedule.json・newsletter.json が存在しないため、ビルド時または実行時に例外で落ちる。各ファイルの getData() 関数を try/catch で囲み、ファイルが存在しない場合は null / 空配列を返すよう修正する。その値を受け取ったページコンポーネントでは「現在データを準備中です」などの空状態 UI（DESIGN.md の Empty State パターン準拠）を表示する。CityHeader のナビリンクも、ファイルが存在しない市については非表示にするか disabled 状態にする。",
+      "acceptance_criteria": [
+        "data/eniwa/decisions.json が存在しない状態でも /eniwa/decisions にアクセスしてエラーが出ない",
+        "data/tomakomai/schedule.json が存在しない状態でも /tomakomai/schedule にアクセスしてエラーが出ない",
+        "データなし時に「現在データを準備中です」などの空状態メッセージが表示される",
+        "next build がエラーなく完了する"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:18:48.181Z",
+      "completed_at": "2026-04-12T17:23:17.413Z",
+      "elapsed_seconds": 269,
+      "result_preview": "/newsletter/page.tsx` | `getNewsletter()` returns `null` on error; empty state shown |\n| `tomakomai/decisions/page.tsx` | same as eniwa decisions |\n| `tomakomai/schedule/page.tsx` | same as eniwa schedule |\n| `tomakomai/newsletter/page.tsx` | same as eniwa newsletter |\n\nWhen the JSON file is missing, each page now renders:\n```\n現在データを準備中です。\n```\nusing the DESIGN.md empty state pattern (`bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]`). TypeScript passes with no errors.\n"
+    },
+    {
+      "id": "task-014",
+      "title": "動的 sitemap.xml と robots.txt を追加（SEO強化）",
+      "category": "seo",
+      "priority": "high",
+      "status": "done",
+      "description": "site/src/app/sitemap.ts を新規作成し、Next.js App Router の MetadataRoute.Sitemap 形式で全市・全ページの URL を動的生成する。対象は、トップページ・検索ページ・各市のトップ/minutes一覧/minutes詳細（全 JSON ファイルを fs.readdirSync で列挙）/members/sessions など。各エントリには lastModified・changeFrequency・priority を設定する（議事録詳細は 'weekly'・0.7、トップは 'daily'・1.0 等）。あわせて site/public/robots.txt を新規作成し「User-agent: * / Allow: / / Sitemap: https://gikai-map-hokkaido.vercel.app/sitemap.xml」を記述する。サイトの正式 URL は site/src/app/layout.tsx の metadataBase から取得する。",
+      "acceptance_criteria": [
+        "https://[domain]/sitemap.xml にアクセスすると XML が返る",
+        "sitemap に全市の minutes 詳細 URL が含まれる",
+        "https://[domain]/robots.txt が Sitemap 参照を含む内容で返る",
+        "next build がエラーなく完了する"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:23:19.422Z",
+      "completed_at": "2026-04-12T17:27:40.194Z",
+      "elapsed_seconds": 261,
+      "result_preview": "dataRoute.Sitemap` 形式で全 URL を動的生成\n- **対象ページ**:\n  - トップ (`/`) priority 1.0 / 静的ページ群 (search, map, decisions 等)\n  - 千歳・恵庭・苫小牧: トップ・議員詳細・議事録一覧/詳細・decisions/schedule/newsletter\n  - 千歳専用: sessions 一覧/詳細\n  - 旭川・函館・室蘭・釧路・稚内・北見・帯広・名寄: トップ・議事録一覧/詳細\n- minutes index は `data/{city}/minutes/index.json` と `data/{city}/index.json` の両方を試みてフォールバック\n\n### `site/public/robots.txt`\n```\nUser-agent: *\nAllow: /\nSitemap: https://gikai-map-hokkaido.vercel.app/sitemap.xml\n```\n\nTypeScript チェック・`next build` ともにエラーなしを確認済みです。\n"
+    },
+    {
+      "id": "task-015",
+      "title": "残り8市（伊達・福島・北斗・石狩・北広島・根室・登別・芦別）をサイトに追加",
+      "category": "data",
+      "priority": "high",
+      "status": "done",
+      "description": "data/{date,fukushima,hokuto,ishikari,kitahiroshima,nemuro,noboribetsu,ashibetsu}/minutes/ に議事録 JSON が存在するがサイトページが未作成。task-001・task-010 と同じパターンで各市に3ファイルを作成する：①[city]/page.tsx（市のトップ、MemberList は members.json なしの場合は表示しない）、②[city]/minutes/page.tsx（MinutesIndexClient を使った一覧、パンくずナビ付き）、③[city]/minutes/[id]/page.tsx（MinutesDetailClient を使った詳細、generateMetadata・パンくずナビ付き）。site/src/app/page.tsx（トップページ）の市一覧にも8市を追加し、議事録件数バッジを表示する。各市の日本語名マッピング：date=伊達、fukushima=福島、hokuto=北斗、ishikari=石狩、kitahiroshima=北広島、nemuro=根室、noboribetsu=登別、ashibetsu=芦別。",
+      "acceptance_criteria": [
+        "8市すべてに /[city]、/[city]/minutes、/[city]/minutes/[id] のルートが存在する",
+        "トップページに8市のカードが表示され、議事録件数バッジが正しく表示される",
+        "各市の議事録一覧・詳細ページにパンくずナビが表示される",
+        "generateMetadata が各詳細ページに実装されており、市名・議事録タイトルが title に反映される",
+        "next build がエラーなく完了する"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:27:42.210Z",
+      "completed_at": "2026-04-12T17:35:46.733Z",
+      "elapsed_seconds": 485,
+      "result_preview": "/minutes/page.tsx` — 議事録一覧（パンくずナビ付き）\n- `site/src/app/{city}/minutes/[id]/page.tsx` — 議事録詳細（generateMetadata・パンくずナビ付き）\n\n**対象8市**: 伊達(date)・福島(fukushima)・北斗(hokuto)・石狩(ishikari)・北広島(kitahiroshima)・根室(nemuro)・登別(noboribetsu)・芦別(ashibetsu)\n\n**データコピー**\n- `data/{city}/minutes/` → `site/data/{city}/minutes/` へ全JSONをコピー\n- 計128ファイルの議事録データを追加\n\n**トップページ更新**\n- `site/src/app/page.tsx` の `CITIES` 配列に8市を追加（地域・ふりがな・議事録件数バッジ）\n\n**ビルド確認**\n- `npx tsc --noEmit` → エラーなし\n- `next build` → 321ページをエラーなく生成（各市の静的パスも正しく展開）\n"
+    },
+    {
+      "id": "task-016",
+      "title": "恵庭・苫小牧に選挙結果ページを追加（election.json 活用）",
+      "category": "data",
+      "priority": "medium",
+      "status": "done",
+      "description": "data/eniwa/election.json および data/tomakomai/election.json が存在するが、選挙結果ページが作成されていない。site/src/app/eniwa/election/page.tsx と site/src/app/tomakomai/election/page.tsx を新規作成する。各ページは election.json を読み込み、候補者名・読み仮名・政党・得票数・当落結果（当選/落選）を一覧表示する（当選者にはバッジを付ける）。選挙年・定数・投票率などのサマリも表示する。site/src/components/CityHeader.tsx の CITY_CONFIG に eniwa と tomakomai の election ナビリンクを追加する。パンくずナビも実装する（ホーム > 恵庭市議会 > 選挙結果）。",
+      "acceptance_criteria": [
+        "/eniwa/election と /tomakomai/election のルートが存在し、選挙結果が表示される",
+        "当選・落選の区別が視覚的に分かる（バッジ等）",
+        "CityHeader のナビに「選挙結果」リンクが追加される",
+        "パンくずナビが正しく表示される",
+        "next build がエラーなく完了する"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:35:48.737Z",
+      "completed_at": "2026-04-12T17:37:35.213Z",
+      "elapsed_seconds": 106,
+      "result_preview": " が失敗しています（SSH認証エラー）が、コミット自体は成功しています。ユーザー側でプッシュが必要です。\n\n実装完了の内容:\n\n- **`/eniwa/election`** — `site/src/app/eniwa/election/page.tsx` を新規作成\n- **`/tomakomai/election`** — `site/src/app/tomakomai/election/page.tsx` を新規作成\n- **CityHeader** — eniwa・tomakomai の nav に「選挙結果」リンクを追加\n\n各ページの機能:\n- 選挙名・執行日・定数・立候補者数・投票率のサマリカード\n- 候補者一覧（得票数順）：当選は紺バッジ、落選はグレーバッジで視覚的に区別\n- 政党バッジ（DESIGN.md のカラー規則に準拠）\n- 現職/新人タグ、按分票の注記表示\n- パンくずナビ（議員一覧 › 選挙結果）\n- 出典リンク\n\n`npx tsc --noEmit` はエラーなし。`git push` は SSH 認証エラーで失敗しているため、手動でプッシュしてください。\n"
+    },
+    {
+      "id": "task-017",
+      "title": "稚内・北見・帯広・名寄の議事録詳細ページにパンくずナビを追加",
+      "category": "ux",
+      "priority": "medium",
+      "status": "done",
+      "description": "task-012 で旭川・函館・室蘭・釧路の議事録詳細ページにパンくずナビを追加したが、task-010 で同時期に追加した稚内・北見・帯広・名寄は未対応のまま。site/src/app/{wakkanai,kitami,obihiro,nayoro}/minutes/[id]/page.tsx（計4ファイル）を修正し、task-012 の実装と同じパターンでパンくずナビを追加する。パンくずの構成は「ホーム > [市名]市議会 > 議事録一覧 > [議事録タイトル]」とし、各リンクは /、/[city]、/[city]/minutes にそれぞれ対応させる。DESIGN.md のパンくず HTML テンプレートに準拠した実装にすること。",
+      "acceptance_criteria": [
+        "稚内・北見・帯広・名寄の各議事録詳細ページにパンくずナビが表示される",
+        "パンくずの各リンクが正しいパスに遷移する",
+        "旭川等の既存パンくずと見た目・構造が一致している",
+        "next build がエラーなく完了する"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T17:37:37.226Z",
+      "completed_at": "2026-04-12T17:38:34.394Z",
+      "elapsed_seconds": 57,
+      "result_preview": "はリモートアクセスの問題で失敗しましたが、ローカルコミット（`da96fd0`）は正常に作成されています。\n\n---\n\n**実装完了: task-017**\n\n4ファイルに旭川等と同じパターンでパンくずナビを追加しました。\n\n| ファイル | パンくず |\n|---|---|\n| `wakkanai/minutes/[id]/page.tsx` | 稚内市議会 › 議事録 › [タイトル] |\n| `kitami/minutes/[id]/page.tsx` | 北見市議会 › 議事録 › [タイトル] |\n| `obihiro/minutes/[id]/page.tsx` | 帯広市議会 › 議事録 › [タイトル] |\n| `nayoro/minutes/[id]/page.tsx` | 名寄市議会 › 議事録 › [タイトル] |\n\n- DESIGN.md のパンくずテンプレートに準拠（`text-sm text-[#718096]`、`hover:text-[#1B3A6B]`、`aria-current=\"page\"`）\n- `npx tsc --noEmit` エラーなし\n"
+    },
+    {
+      "id": "task-018",
+      "title": "残り市（恵庭・苫小牧・task-015 追加8市）の議事録詳細ページにパンくずナビを追加",
+      "category": "ux",
+      "priority": "high",
+      "status": "done",
+      "description": "task-012（旭川・函館・室蘭・釧路）と task-017（稚内・北見・帯広・名寄）でパンくずナビを追加済み。残りの以下10市を同様に対応する。\n対象: site/src/app/eniwa/minutes/[id]/page.tsx, site/src/app/tomakomai/minutes/[id]/page.tsx, site/src/app/hokuto/minutes/[id]/page.tsx, site/src/app/ishikari/minutes/[id]/page.tsx, site/src/app/kitahiroshima/minutes/[id]/page.tsx, site/src/app/fukushima/minutes/[id]/page.tsx, site/src/app/date/minutes/[id]/page.tsx, site/src/app/esashi/minutes/[id]/page.tsx（以下同様）。\n既存の実装パターン（task-012 で追加した BreadcrumbNav コンポーネント）を参照し、各ページの冒頭に「トップ > {市名} > 議事録 > {タイトル}」のパンくずナビを追加する。",
+      "acceptance_criteria": [
+        "対象10市すべての minutes/[id]/page.tsx に BreadcrumbNav が表示される",
+        "パンくずの各リンクが正しい URL に遷移する",
+        "既存の旭川・函館等と同一デザインで統一されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T23:10:09.480Z",
+      "completed_at": "2026-04-12T23:12:21.609Z",
+      "elapsed_seconds": 132,
+      "result_preview": "/page.tsx` | ✓ 実装済み |\n| 伊達市 | `date/minutes/[id]/page.tsx` | ✓ 実装済み |\n| 根室市 | `nemuro/minutes/[id]/page.tsx` | ✓ 実装済み |\n| 登別市 | `noboribetsu/minutes/[id]/page.tsx` | ✓ 実装済み |\n| 芦別市 | `ashibetsu/minutes/[id]/page.tsx` | ✓ 実装済み |\n\nこれらはコミット `6d99f72`（8市追加）でページ作成時から既にパンくずナビが含まれており、git status でも変更なし（コミット済み）の状態です。\n\n**補足**: `esashi`（枝幸）は `data/esashi/minutes/` にデータがありますが、`site/src/app/esashi/` 自体が存在しないため、タスク-018 の対象10市には含まれていません（別タスクとして対応が必要です）。\n\nすべての完了条件を満たしているため、task-018 は**完了済み**です。コミットすべき差分はありません。\n"
+    },
+    {
+      "id": "task-019",
+      "title": "chitose の decisions/schedule/newsletter を /chitose/ 配下に移行して URL 構造を統一",
+      "category": "feature",
+      "priority": "high",
+      "status": "done",
+      "description": "現在 site/src/app/decisions/page.tsx, site/src/app/schedule/page.tsx, site/src/app/newsletter/page.tsx はトップレベルに存在し chitose のデータを直接参照しているが、eniwa/tomakomai は /eniwa/decisions 等の city-prefix URL を使っており一貫性がない。\n実装手順:\n1. site/src/app/chitose/decisions/page.tsx を新規作成。site/src/app/eniwa/decisions/page.tsx を参考に data/chitose/decisions.json を読み込む実装にする。\n2. 同様に site/src/app/chitose/schedule/page.tsx, site/src/app/chitose/newsletter/page.tsx を作成。\n3. 旧 site/src/app/decisions/page.tsx 等は redirect() を使って /chitose/decisions へ 301 リダイレクトに変更（既存のブックマーク・リンク切れ防止）。\n4. site/src/components/CityHeader.tsx 内の chitose の nav リンクを /chitose/decisions 等に更新。",
+      "acceptance_criteria": [
+        "/chitose/decisions, /chitose/schedule, /chitose/newsletter が正常に表示される",
+        "旧URL（/decisions 等）にアクセスすると /chitose/decisions へリダイレクトされる",
+        "CityHeader の chitose ナビゲーションリンクが /chitose/ 配下を指している",
+        "eniwa/tomakomai の同ページに影響がない"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T23:12:23.617Z",
+      "completed_at": "2026-04-12T23:14:21.441Z",
+      "elapsed_seconds": 118,
+      "result_preview": "完了しました。実装内容：\n\n- **新規作成**: `/chitose/decisions`, `/chitose/schedule`, `/chitose/newsletter` の各 `page.tsx` — 元のコードをそのまま移植しつつ、データ読み込みに `try/catch` によるフォールバックを追加\n- **リダイレクト**: 旧 `/decisions`, `/schedule`, `/newsletter` は `redirect()` で新 URL へ 301 転送（ブックマーク切れ防止）\n- **CityHeader 更新**: chitose の nav リンクを `/chitose/decisions` 等に変更し、`detectCity` から旧パス（`/decisions` 等）の判定も除去\n- TypeScript エラーなし、`git push` 済み\n"
+    },
+    {
+      "id": "task-020",
+      "title": "chitose/sessions/[id] に generateMetadata を実装（動的 SEO）",
+      "category": "seo",
+      "priority": "medium",
+      "status": "done",
+      "description": "task-009 で全市の minutes/[id]/page.tsx に generateMetadata を実装済みだが、chitose 固有の site/src/app/chitose/sessions/[id]/page.tsx が対象外になっている。\n実装: site/src/app/chitose/sessions/[id]/page.tsx に generateMetadata 関数を追加する。data/chitose/sessions/{id}.json（または site/data/chitose/sessions/index.json）からセッション情報を読み込み、title（会議名・日付）と description（主要議題の冒頭 100 文字）を設定する。OGP タグ（og:title, og:description）も同時に設定すること。既存の minutes/[id]/page.tsx の generateMetadata 実装を参考にすること。",
+      "acceptance_criteria": [
+        "site/src/app/chitose/sessions/[id]/page.tsx に generateMetadata が実装されている",
+        "ページ title が「{会議名}（{日付}）| 千歳市議会 | 北海道議会情報マップ」形式になっている",
+        "og:description にセッションの概要が設定されている",
+        "存在しない id の場合に notFound() が返る"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T23:14:23.448Z",
+      "completed_at": "2026-04-12T23:15:28.678Z",
+      "elapsed_seconds": 65,
+      "result_preview": "実装完了しました。\n\n**変更内容**: `site/src/app/chitose/sessions/[id]/page.tsx`\n\n- `Metadata` 型をインポート\n- `generateMetadata` 関数を追加:\n  - セッションが存在しない場合は `notFound()` に任せ、フォールバックタイトルを返す\n  - `title`: `{会議名}（{日付}）| 千歳市議会 | 北海道議会情報マップ` 形式\n  - `description`: セグメントの最初のsummaryの先頭100文字、なければ委員会名+日付、なければ汎用テキスト\n  - `openGraph` と `twitter` タグも設定\n"
+    },
+    {
+      "id": "task-021",
+      "title": "各市トップページにデータサマリーカードを追加（議員数・最新議事録日）",
+      "category": "ux",
+      "priority": "medium",
+      "status": "done",
+      "description": "現在各市のトップページ（例: site/src/app/hakodate/page.tsx）は議員一覧リンクや議事録リンクがナビゲーションのみで、データの概要が見えない。\n実装: 各市トップページのナビゲーションカードの下に「データサマリーセクション」を追加する。内容は（1）議員数（data/{city}/members.json の length）、（2）議事録件数（site/data/{city}/minutes/ または data/{city}/minutes/ の JSON ファイル数）、（3）最新議事録の日付（minutes ファイルのうち最新の date フィールド）。表示は DESIGN.md のカラーパレットに沿った stat カード形式（bg-white border rounded p-4 text-center）。データファイルが存在しない市は該当項目を「―」で表示してクラッシュしないようにする。",
+      "acceptance_criteria": [
+        "全市のトップページにサマリーカードが表示される",
+        "議員数・議事録件数・最新議事録日が正確に表示される",
+        "members.json が存在しない市でもクラッシュしない（「―」表示）",
+        "DESIGN.md のカラートークンを使ったデザインになっている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T23:15:30.684Z",
+      "completed_at": "2026-04-12T23:22:34.694Z",
+      "elapsed_seconds": 424,
+      "result_preview": "omponents/CitySummaryCards.tsx` — 議員数・議事録件数・最新議事録年を3カードで表示するコンポーネント\n- `site/src/lib/cityStats.ts` — `minutes/index.json` から議事録サマリーを読み込むユーティリティ\n\n**更新ファイル（19市）**:\n全市のトップページ (`page.tsx`) に `CitySummaryCards` を追加\n\n## 表示内容\n\n| stat | 表示値 | データなし時 |\n|------|--------|-------------|\n| 議員数 | `23名` など | `―` |\n| 議事録件数 | `21件` など | `―` |\n| 最新議事録 | `令和7年` など | `―` |\n\n- `members.json` があるのは千歳・恵庭・苫小牧のみ → 他市は「―」\n- `minutes/index.json` があるのは11市 → 旭川・函館・室蘭・釧路・稚内・北見・帯広・名寄は「―」\n- TypeScript エラーなし (`tsc --noEmit` 通過)\n"
+    },
+    {
+      "id": "task-022",
+      "title": "eniwa・tomakomai の members/[id] 活動データ表示にアコーディオン UI を実装",
+      "category": "feature",
+      "priority": "medium",
+      "status": "done",
+      "description": "DESIGN.md の展開ボタン・アコーディオンパターン（lines 159-168）が定義されているが未実装。task-008 で恵庭・苫小牧の議員詳細に活動データが表示されているが、活動件数が多い議員では縦に長くなる問題がある。\n実装:\n1. site/src/components/Accordion.tsx を新規作成。DESIGN.md のパターン（border-b py-3 のセクション、chevron アイコンで開閉、transition-all duration-200）に従う。\n2. site/src/app/eniwa/members/[id]/page.tsx と site/src/app/tomakomai/members/[id]/page.tsx の活動データセクション（members_activity.json の発言・賛否データ）を Accordion コンポーネントで折りたたみ表示に変更する。デフォルトは最初のセクションのみ展開（open）状態。\n3. アコーディオンのヘッダーには件数バッジ（例:「発言記録 (12件)」）を表示する。",
+      "acceptance_criteria": [
+        "site/src/components/Accordion.tsx が作成されている",
+        "eniwa/tomakomai の議員詳細ページで活動データがアコーディオン表示になっている",
+        "キーボード操作（Enter/Space）でアコーディオンを開閉できる（アクセシビリティ）",
+        "aria-expanded 属性が適切に設定されている",
+        "DESIGN.md のアコーディオンパターンに沿ったスタイルになっている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T23:22:36.702Z",
+      "completed_at": "2026-04-12T23:25:18.077Z",
+      "elapsed_seconds": 161,
+      "result_preview": "nt\"` コンポーネント\n- `useState` で開閉状態を管理\n- `aria-expanded` で現在の状態を明示\n- `focus-visible:ring-2 focus-visible:ring-[#2A5298]` でキーボードフォーカスに対応\n- chevron アイコンが `rotate-180` で上下反転（`transition-transform duration-200`）\n- Props: `title`, `count`（件数バッジ）, `defaultOpen`, `children`\n\n**eniwa・tomakomai の `members/[id]/page.tsx`**\n- 定例会ごとのセクション（`sessions.map`）を `<Accordion>` でラップ\n- タイトル: 定例会名、カウント: `s.topics.length` 件\n- `defaultOpen={i === 0}` で最初のセクションのみ展開\n- 「議事録全文」リンクはコンテンツ内の最下部に移動（`<button>` 内にリンクを入れる HTML 無効を回避）\n"
+    },
+    {
+      "id": "task-023",
+      "title": "chitose に選挙結果ページを追加（election.json 活用）",
+      "category": "feature",
+      "priority": "high",
+      "status": "failed",
+      "description": "data/chitose/election.json が存在するが /chitose/election ページが未実装。eniwa・tomakomai の site/src/app/eniwa/election/page.tsx および site/src/app/tomakomai/election/page.tsx を参考に、site/src/app/chitose/election/page.tsx を作成する。election.json のデータ構造を確認し、候補者一覧・得票数・当選/落選バッジを表示するテーブル UI を実装する。/chitose のトップページ（site/src/app/chitose/page.tsx）にも「選挙結果」へのリンクカードを追加する。",
+      "acceptance_criteria": [
+        "/chitose/election にアクセスして選挙結果テーブルが表示される",
+        "当選・落選が視覚的に区別できる（バッジ等）",
+        "chitose トップページから /chitose/election へのリンクが存在する",
+        "generateMetadata で OGP タイトルが設定されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-12T23:38:55.127Z",
+      "completed_at": "2026-04-12T23:42:43.833Z",
+      "elapsed_seconds": 229,
+      "result_preview": "API Error: terminated\n"
+    },
+    {
+      "id": "task-024",
+      "title": "chitose・eniwa・tomakomai の議員詳細ページに generateMetadata を実装（SEO強化）",
+      "category": "seo",
+      "priority": "high",
+      "status": "done",
+      "description": "site/src/app/chitose/members/[id]/page.tsx、site/src/app/eniwa/members/[id]/page.tsx、site/src/app/tomakomai/members/[id]/page.tsx の3ファイルに generateMetadata を追加する。各ファイルで members.json から対象議員の name・party・ward を取得し、`title: '${name}（${party}）- ${city}市議会'`、`description: '${name}議員の活動テーマ・発言記録など'` の形式で設定する。パターンは site/src/app/chitose/sessions/[id]/page.tsx（task-020 で実装済み）に倣う。",
+      "acceptance_criteria": [
+        "3都市すべての /members/[id] ページで <title> タグが議員名を含む動的タイトルになっている",
+        "存在しない ID の場合は notFound() を返す",
+        "OGP の og:title・og:description が設定されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-13T03:09:14.926Z",
+      "completed_at": "2026-04-13T03:10:42.269Z",
+      "elapsed_seconds": 87,
+      "result_preview": "実装完了。\n\n3ファイルに `generateMetadata` を追加しました：\n\n- `chitose/members/[id]/page.tsx` — `${name}（${party}）- 千歳市議会 | 北海道議会情報マップ`\n- `eniwa/members/[id]/page.tsx` — `${name}（${party}）- 恵庭市議会 | 北海道議会情報マップ`\n- `tomakomai/members/[id]/page.tsx` — `${name}（${party}）- 苫小牧市議会 | 北海道議会情報マップ`\n\n各 `generateMetadata` は `party` → `faction` の優先順でラベルを取得し、`og:title`・`og:description`・`twitter:card` も設定しています。存在しない ID の場合はフォールバックタイトルを返し、ページ本体の `notFound()` が 404 を処理します。TypeScript エラーなし・push 完了。\n"
+    },
+    {
+      "id": "task-025",
+      "title": "eniwa・tomakomai の議員詳細ページに選挙データを表示（election.json 活用）",
+      "category": "data",
+      "priority": "medium",
+      "status": "done",
+      "description": "data/eniwa/election.json・data/tomakomai/election.json に選挙結果データが存在するが、議員詳細ページ（members/[id]）に未表示。site/src/app/eniwa/members/[id]/page.tsx および tomakomai 版で election.json を読み込み、members.json の name で突合して該当候補者の得票数・順位・選挙回を「選挙履歴」セクションとして表示する。アコーディオン UI（task-022 で実装済みのパターン）を流用して折りたたみ表示にする。",
+      "acceptance_criteria": [
+        "eniwa・tomakomai の /members/[id] に「選挙履歴」アコーディオンセクションが追加されている",
+        "election.json に該当データがない議員ではセクション自体を非表示にする",
+        "得票数・当選/落選・選挙年が表示されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-13T03:18:19.518Z",
+      "completed_at": "2026-04-13T03:20:07.922Z",
+      "elapsed_seconds": 108,
+      "result_preview": "実装完了です。\n\n## 変更内容\n\n**対象ファイル**:\n- `site/src/app/eniwa/members/[id]/page.tsx`\n- `site/src/app/tomakomai/members/[id]/page.tsx`\n\n**追加内容**:\n1. `ElectionData` / `ElectionCandidate` 型を各ファイルに定義\n2. `getElection()` 関数で `election.json` を読み込み（ファイル不在時は `null`）\n3. 議員名（スペース除去）で候補者を突合\n4. 得票順位を算出（votes 降順ソート後のインデックス）\n5. **「選挙履歴」アコーディオンセクション**を質問活動の下に追加（デフォルト折りたたみ）\n   - 選挙日・得票数（按分票はメモ付き）・順位（〇位/〇人中）・結果（当選/落選バッジ＋現職/新人）・投票率を表示\n6. election.json に該当データがない議員ではセクション自体を非表示\n"
+    },
+    {
+      "id": "task-026",
+      "title": "議事録一覧ページにページネーション実装（UX改善）",
+      "category": "ux",
+      "priority": "medium",
+      "status": "done",
+      "description": "minutes データが多い都市（chitose: 23件超、eniwa・tomakomai など）の議事録一覧ページで全件が一度に表示されパフォーマンスが低下している。site/src/app/[city]/minutes/page.tsx 相当の各ファイルと、使用している MinutesIndexClient 等のコンポーネントを確認し、1ページ10件表示のページネーション（前へ/次へ + ページ番号）を追加する。URL パラメータ ?page=2 でディープリンクも可能にする。タグフィルタ（task-011 で実装済み）との組み合わせでもページネーションが正しく動作すること。",
+      "acceptance_criteria": [
+        "議事録が11件以上ある都市でページネーション UI が表示される",
+        "?page=N の URL で直接アクセスできる",
+        "タグフィルタ適用中にページネーションが正しく動作する",
+        "10件以下の場合はページネーション UI が非表示になる"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-13T03:20:09.931Z",
+      "completed_at": "2026-04-13T03:23:31.575Z",
+      "elapsed_seconds": 202,
+      "result_preview": "実装完了しました。変更内容：\n\n**`site/src/components/MinutesIndexClient.tsx`** を更新:\n\n- `MinutesIndexInner`（内部コンポーネント）と `MinutesIndexClient`（Suspenseでラップするexport）に分離\n- `useSearchParams` + `useRouter` + `usePathname` でURL同期ページネーションを実装\n- 1ページ10件表示、フィルタ変更時はページ1にリセット\n- `?page=N` URLパラメータでディープリンク対応\n- 省略付きページ番号（… で中間ページをまとめる）\n- 11件以上のときのみページネーションUIを表示、件数情報（「23件中 1〜10件目を表示」）も追加\n- タグフィルタ・テキスト検索との組み合わせも正しく動作\n- 19ある各都市のページファイルへの変更は不要（Suspenseは内部で解決）\n"
+    },
+    {
+      "id": "task-027",
+      "title": "カスタム 404 ページを実装（UX・SEO改善）",
+      "category": "ux",
+      "priority": "low",
+      "status": "done",
+      "description": "現在 site/src/app/not-found.tsx が存在しないか最小限の実装のみで、Next.js デフォルトの 404 ページが表示されている。site/src/app/not-found.tsx を作成し、サイトのヘッダー・フッター・カラーを踏襲したカスタム 404 ページを実装する。「トップページに戻る」ボタンと「議事録を検索する」（/search へのリンク）を配置する。また metadata で noindex を設定して SEO クロールを防ぐ。",
+      "acceptance_criteria": [
+        "存在しない URL にアクセスすると統一デザインの 404 ページが表示される",
+        "「トップページ」と「議事録検索」への誘導リンクが含まれる",
+        "metadata で robots: 'noindex' が設定されている",
+        "モバイル・デスクトップ両方でレイアウトが崩れない"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-13T03:35:32.219Z",
+      "completed_at": "2026-04-13T03:36:36.956Z",
+      "elapsed_seconds": 65,
+      "result_preview": "実装完了です。\n\n`site/src/app/not-found.tsx` を新規作成しました。\n\n**実装内容:**\n- DESIGN.md のカラー・タイポグラフィに準拠したデザイン（濃紺 `#1B3A6B` + ゴールドアクセントライン `#F7C948`）\n- 「トップページに戻る」（`/`）と「議事録を検索する」（`/search`）への誘導ボタン\n- よく見られるページへのショートカット（千歳・恵庭・苫小牧の議員一覧・議事録）\n- `metadata` で `robots: { index: false, follow: false }` を設定（noindex）\n- インラインSVGアイコンのみ使用\n- モバイル・デスクトップ両対応のレスポンシブレイアウト\n- TypeScript エラーなし確認済み\n"
+    },
+    {
+      "id": "task-028",
+      "title": "AI検索の全市横断化（14市追加）",
+      "category": "feature",
+      "priority": "high",
+      "status": "done",
+      "description": "現在 site/src/app/api/search/route.ts および site/src/app/api/ai-search/route.ts は chitose・eniwa・tomakomai の3市のみを対象としている。site/data/ 配下に minutes/enriched/ ディレクトリが存在する全市（asahikawa・ashibetsu・date・esashi・fukushima・hakodate・hokuto・ikeda・ishikari・kamikawa・kitahiroshima・kushiro・nemuro・muroran など）を検索対象に追加する。具体的には: (1) route.ts の CITIES 定数またはディレクトリスキャンロジックを修正して全市の enriched JSON を読み込む、(2) site/src/app/search/page.tsx の市フィルタ UI に全市を列挙する、(3) 検索結果カードのリンク先 href が各市の /minutes/[id] ページに正しく飛ぶことを確認する。",
+      "acceptance_criteria": [
+        "site/data/ 配下に minutes/enriched/ を持つ全市の議事録が AI 検索・全文検索の対象になる",
+        "検索結果カードに市名ラベルが表示され、クリックで正しい議事録詳細ページへ遷移する",
+        "市フィルタ UI（検索ページ）に追加した市が表示される"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-13T03:10:44.275Z",
+      "completed_at": "2026-04-13T03:16:25.780Z",
+      "elapsed_seconds": 341,
+      "result_preview": "島・北見・釧路・室蘭・名寄・根室・帯広・稚内を追加）\n- 全文検索を `minutes/index.json` のある全市に動的拡張\n- `enriched/` のみの市（index.json なし）は `summary` / `highlights` / `tags` を検索ソースとして利用\n- 重複排除（`seenMinutes` セットで full-text 検索済みの council_id をスキップ）\n\n**`site/src/app/api/ai-search/route.ts`**\n- `CITY_META` を16市に拡張\n- `loadChunksForCity` を拡張：`minutes/index.json` がない市は `enriched/` JSON から要約・ハイライト・タグをチャンクとして AI コンテキストに組み込む\n\n**`site/src/components/SearchClient.tsx`**\n- 市フィルタ UI を追加：検索結果に含まれる市のみバッジ表示\n- バッジクリックで絞り込み、再クリックで解除\n- クエリ変更時にフィルタをリセット\n"
+    },
+    {
+      "id": "task-029",
+      "title": "CityHeader ナビをデータ有無に応じて動的表示切替",
+      "category": "ux",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/src/components/CityHeader.tsx では各市のナビ項目がハードコードされており、chitose は9項目・eniwa/tomakomai は7項目と不統一。すべての市で同じナビ構造（議員一覧・議決結果・議事録・行事予定・議会だより・選挙結果・AI検索）を定義し、対応する data ファイルが存在しない項目は非表示（または「準備中」バッジを付けて disabled 表示）にする動的ロジックを実装する。実装手順: (1) CityHeader の props に `availablePages?: string[]` を追加するか、サーバーコンポーネントで fs.existsSync を使ってデータ有無を判定する、(2) 各市共通のナビ定義リストを作成して存在チェック結果でフィルタリングする、(3) 千歳市固有ページ（sessions・plan）は chitose のみ表示する条件を残す。",
+      "acceptance_criteria": [
+        "eniwa・tomakomai でも decisions/schedule/newsletter/election のナビ項目が表示される（データがある場合）",
+        "データが存在しない市のナビ項目は非表示または disabled になり 404 にならない",
+        "chitose 固有の sessions・plan はchitose のみに表示される"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-13T03:23:33.583Z",
+      "completed_at": "2026-04-13T03:33:08.589Z",
+      "elapsed_seconds": 575,
+      "result_preview": "ions` / `plan` は `cityOnly: ['chitose']` で chitose 限定\n- `tomakomai` の `newsletter` ラベルは「議会報告」にオーバーライド\n\n### 修正: `CityHeader.tsx`（クライアントコンポーネント）\n- `allCityNavs` prop でサーバー計算済みのナビを受け取る\n- `usePathname` によるアクティブ状態検出はそのまま維持\n- フォールバック用の静的設定も残してある\n\n### 動的ナビの結果\n| 市 | 表示ナビ項目 |\n|---|---|\n| chitose | 議員一覧・議決結果・議事録・会議録・行事予定・議会だより・総合計画・選挙結果・AI検索 |\n| eniwa | 議員一覧・議決結果・議事録・行事予定・議会だより・選挙結果・AI検索 |\n| tomakomai | 議員一覧・議決結果・議事録・行事予定・議会報告・選挙結果・AI検索 |\n| asahikawa〜nayoro | 議員一覧・AI検索（`minutes/index.json` 未整備のため他は非表示） |\n"
+    },
+    {
+      "id": "task-030",
+      "title": "eniwa・tomakomai 議員詳細ページに AI検索ショートカット・質問タグリンクを追加",
+      "category": "feature",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/src/app/chitose/members/[id]/page.tsx では質問テーマタグをクリックすると /ai-search?q=<テーマ> に飛ぶ UI と「AI検索で深堀り」ボタンが実装されている。site/src/app/eniwa/members/[id]/page.tsx および site/src/app/tomakomai/members/[id]/page.tsx にも同様の機能を追加する。手順: (1) 両ファイルで members_activity.json から質問テーマ一覧を取得するロジックを確認（既に activity データは表示されているため取得済み）、(2) アコーディオン内の質問テーマを `<a href={'/ai-search?q=...'}>` タグでラップする、(3) 議員名で AI 検索するショートカットボタンをページ上部または活動セクション上部に追加する、(4) chitose の実装を参考に href 生成・エンコードロジックをコピーする。",
+      "acceptance_criteria": [
+        "eniwa・tomakomai の議員詳細ページで質問テーマタグをクリックすると /ai-search?q=<テーマ> に遷移する",
+        "「AI検索で深堀り」または同等のショートカットボタンが表示される",
+        "chitose の実装と同じ UX になっている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-13T03:33:10.596Z",
+      "completed_at": "2026-04-13T03:34:38.187Z",
+      "elapsed_seconds": 88,
+      "result_preview": "実装完了しました。\n\n## 変更内容\n\n**eniwa・tomakomai の `members/[id]/page.tsx` に以下を追加：**\n\n1. **AI検索ショートカットバナー** — プロフィールカード直後に配置。「{議員名} 議員の活動をAIに聞く」テキストと「✦ AI検索」ボタン（`/ai-search?q=...`）\n\n2. **質問テーマタグのリンク化** — `<span>` → `<Link>` に変更。クリックで `恵庭市議会での「{テーマ}」に関する議論...` / `苫小牧市議会での「{テーマ}」に関する議論...` をAI検索\n\n3. **アコーディオン内トピックのAI検索リンク** — 各質問トピックにホバー時に表示される「✦ AI」リンクを追加（chitose と同一 UX）。`council_id > 0` の場合はトピック名も議事録詳細へのリンクになります\n"
+    },
+    {
+      "id": "task-031",
+      "title": "全市 decisions・newsletter・schedule ページのカラーコントラスト修正",
+      "category": "accessibility",
+      "priority": "high",
+      "status": "done",
+      "description": "site/src/app/eniwa/decisions/page.tsx・site/src/app/tomakomai/decisions/page.tsx・各市の newsletter/page.tsx・schedule/page.tsx で `text-gray-500`（#A0AEC0、コントラスト比 3.5:1）や `text-gray-400` が使われており WCAG AA 基準（本文 4.5:1）を満たしていない。DESIGN.md の色指定に従い以下を全ファイルで置換する: `text-gray-500` → `text-[#4A5568]`、`text-gray-400` → `text-[#718096]`、見出し `text-gray-800` → `text-[#1B3A6B]`。対象ファイル: site/src/app/eniwa/decisions/page.tsx、site/src/app/tomakomai/decisions/page.tsx、site/src/app/eniwa/newsletter/page.tsx、site/src/app/tomakomai/newsletter/page.tsx、site/src/app/eniwa/schedule/page.tsx、site/src/app/tomakomai/schedule/page.tsx、site/src/app/chitose/decisions/page.tsx（同様の違反があれば）。",
+      "acceptance_criteria": [
+        "対象ページで `text-gray-500` および `text-gray-400` が DESIGN.md 指定色に置換されている",
+        "本文テキストのコントラスト比が白背景に対して 4.5:1 以上になっている",
+        "見出しが `text-[#1B3A6B]` で統一されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-13T03:16:27.796Z",
+      "completed_at": "2026-04-13T03:18:17.509Z",
+      "elapsed_seconds": 110,
+      "result_preview": "ルすべてで修正を実施し、コミット・プッシュしました。\n\n**変更内容:**\n- `text-gray-800` → `text-[#1B3A6B]`（見出し、コントラスト比向上）\n- `text-gray-500` → `text-[#4A5568]`（本文補助テキスト、白背景で4.5:1以上確保）\n- `text-gray-400` → `text-[#718096]`（メタ情報・空状態テキスト）\n- 公式ページリンクのボーダー `border-gray-200` → `border-[#CBD5E0]`、ホバー色 `hover:text-gray-600` → `hover:text-[#1B3A6B]`\n\n**対象ファイル（9件）:**\n- eniwa/decisions, tomakomai/decisions, chitose/decisions\n- eniwa/newsletter, tomakomai/newsletter, chitose/newsletter\n- eniwa/schedule, tomakomai/schedule, chitose/schedule\n"
+    },
+    {
+      "id": "task-032",
+      "title": "chitose 選挙結果ページを再実装（task-023 修正版）",
+      "category": "data",
+      "priority": "medium",
+      "status": "done",
+      "description": "task-023 が failed になった chitose の選挙結果ページを改めて実装する。data/chitose/election.json の構造を Read ツールで確認し、eniwa の実装（site/src/app/eniwa/election/page.tsx）を参考に site/src/app/chitose/election/ ディレクトリを作成して page.tsx を実装する。手順: (1) data/chitose/election.json を読み込み、eniwa/election.json と構造が同じか確認する（同じであれば eniwa の page.tsx をベースに市名・パスを変更するだけ）、(2) site/src/app/chitose/election/page.tsx を作成し CityHeader city='chitose'・パンくずナビを含める、(3) CityHeader.tsx の chitose ナビに選挙結果リンクが既に含まれているか確認し、なければ追加する、(4) generateMetadata を実装する。",
+      "acceptance_criteria": [
+        "/chitose/election ページが 404 にならずに選挙結果データを表示する",
+        "CityHeader の chitose ナビから「選挙結果」リンクが機能する",
+        "eniwa/tomakomai の選挙結果ページと同等の UI になっている",
+        "generateMetadata が実装されている"
+      ],
+      "created_at": "2026-04-13",
+      "started_at": "2026-04-13T03:34:40.195Z",
+      "completed_at": "2026-04-13T03:35:30.213Z",
+      "elapsed_seconds": 50,
+      "result_preview": "完了しました。\n\n`site/src/app/chitose/election/page.tsx` を新規コミット・プッシュしました。\n\n実装内容：\n- `data/chitose/election.json` を読み込んで選挙結果を表示\n- eniwa の実装と同等の UI（パンくずナビ・サマリカード・候補者リスト・出典リンク）\n- `generateMetadata` で千歳市向けのタイトル・description を設定\n- `CityHeader` の chitose ナビには既に `{ href: \"/chitose/election\", label: \"選挙結果\" }` が含まれていたため変更不要\n- TypeScript エラーなし\n"
+    },
+    {
+      "id": "task-033",
+      "title": "CityHeader に新追加11市を登録（ナビゲーション未表示バグ修正）",
+      "category": "bug",
+      "priority": "high",
+      "status": "done",
+      "description": "site/src/components/CityHeaderServer.tsx の CITIES オブジェクトに date・fukushima・hokuto・ishikari・kitahiroshima・nemuro・noboribetsu・ashibetsu・memuro・kamikawa・nakagawa の11市を追加する。また site/src/components/CityHeader.tsx の CITY_KEYS 配列にも同じ11市を追加する。現状はこれらの市のページへアクセスしても detectCity() が null を返すため、市固有のナビゲーションではなくグローバルヘッダーが表示されてしまっている。CityHeaderServer.tsx では各市の正式名称（例: 伊達市議会・福島町議会・北斗市議会・石狩市議会・北広島市議会・根室市議会・登別市議会・芦別市議会・芽室町議会・上川町議会・中川町議会）を登録すること。CityHeader.tsx の FALLBACK_CITY_CONFIG も同じ11市分を追加（最小構成: 議員一覧・議事録）。",
+      "acceptance_criteria": [
+        "/date, /fukushima, /hokuto, /ishikari, /kitahiroshima, /nemuro, /noboribetsu, /ashibetsu, /memuro, /kamikawa, /nakagawa のいずれかにアクセスすると、ヘッダーに市名と議員一覧・議事録のナビゲーションが表示される",
+        "CityHeaderServer.tsx の computeCityNav がこれら11市に対しても dataFile の存在確認を行い、存在するもののみナビに表示する",
+        "既存11市（chitose/eniwa/tomakomai/asahikawa 等）のナビゲーション表示が壊れていない"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-13T19:52:53.112Z",
+      "completed_at": "2026-04-13T19:53:43.068Z",
+      "elapsed_seconds": 50,
+      "result_preview": "実装完了しました。\n\n**変更内容:**\n\n- `CityHeaderServer.tsx` の `CITIES` オブジェクトに11市を追加（`date`・`fukushima`・`hokuto`・`ishikari`・`kitahiroshima`・`nemuro`・`noboribetsu`・`ashibetsu`・`memuro`・`kamikawa`・`nakagawa`）\n- `CityHeader.tsx` の `CITY_KEYS` 配列と `FALLBACK_CITY_CONFIG` に同じ11市を追加\n\nこれにより `detectCity()` が正しく市を検出し、各市ページで市名と議員一覧・議事録のナビゲーションが表示されます。`CityHeaderServer.tsx` の `computeCityNav` は既存のロジック（`pageExists` + `dataExists`）を流用するため、存在するページとデータファイルのみがナビに表示されます。\n"
+    },
+    {
+      "id": "task-034",
+      "title": "トップページの kamikawa・nakagawa 市名・ふりがな・地域の誤りを修正",
+      "category": "bug",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/src/app/page.tsx の CITIES 配列に誤りがある。kamikawa は name が「神川町議会」となっているが、site/src/app/kamikawa/page.tsx のメタデータでは「上川町議会」と定義されている。また nakagawa は name が「那珂川市議会」・furigana が「なかがわし」となっているが、site/src/app/nakagawa/page.tsx では「中川町議会」と定義されている。修正内容: kamikawa → name:「上川町議会」、furigana:「かみかわちょう」、region:「上川」に変更。nakagawa → name:「中川町議会」、furigana:「なかがわちょう」、region:「上川」に変更。",
+      "acceptance_criteria": [
+        "トップページの市選択リストで上川町議会（かみかわちょう・上川地方）と表示される",
+        "トップページの市選択リストで中川町議会（なかがわちょう・上川地方）と表示される",
+        "その他の市の表示に変化がない"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-13T19:53:45.075Z",
+      "completed_at": "2026-04-13T19:54:03.915Z",
+      "elapsed_seconds": 19,
+      "result_preview": "コミット `ec25fcd fix: correct city names for kamikawa and nakagawa` で既に修正済みです。\n\nこのタスク（task-034）の修正内容はすでに実装されています。`page.tsx` の CITIES 配列を確認したところ、kamikawa・nakagawa の両エントリは正しい値になっています：\n\n- **kamikawa**: `name: \"上川町議会\"`, `furigana: \"かみかわちょう\"`, `region: \"上川\"` ✓\n- **nakagawa**: `name: \"中川町議会\"`, `furigana: \"なかがわちょう\"`, `region: \"上川\"` ✓\n\nコミット `ec25fcd` (fix: correct city names for kamikawa and nakagawa) で既に修正されており、追加の作業は不要です。\n"
+    },
+    {
+      "id": "task-035",
+      "title": "倶知安町・池田町をサイトに追加（enriched データ活用）",
+      "category": "feature",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/data/kutchan/ と site/data/ikeda/ に enriched 議事録データが存在するが、サイトページが一切ない。以下を実装する。(1) site/src/app/kutchan/page.tsx と site/src/app/ikeda/page.tsx（メンバー情報なしの場合は空欄状態カードを表示）。(2) site/src/app/kutchan/minutes/page.tsx と site/src/app/ikeda/minutes/page.tsx（data/{city}/minutes/index.json を読み込み MinutesIndexClient に渡す、enriched データも付与）。(3) site/src/app/kutchan/minutes/[id]/page.tsx と site/src/app/ikeda/minutes/[id]/page.tsx（generateMetadata・generateStaticParams 実装、パンくずナビ付き MinutesDetailClient 表示）。(4) site/src/app/page.tsx の CITIES に kutchan（倶知安町議会・くっちゃんちょう・後志）と ikeda（池田町議会・いけだちょう・十勝）を追加。(5) CityHeaderServer.tsx の CITIES と CityHeader.tsx の CITY_KEYS にも追加。なお data/kutchan/ と data/ikeda/ には index.json が存在しない可能性があるため、site/scripts/batch-transcribe.mjs と同様の方法で index.json を生成するか、minutes/ディレクトリのファイル一覧から動的に構築すること。",
+      "acceptance_criteria": [
+        "/kutchan と /ikeda のトップページが 404 でなく表示される",
+        "/kutchan/minutes と /ikeda/minutes で議事録一覧が表示され、enriched タグフィルタが動作する",
+        "/kutchan/minutes/[id] と /ikeda/minutes/[id] で議事録詳細が表示される",
+        "トップページのCITIES一覧に倶知安町議会・池田町議会が追加される"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-13T19:54:05.926Z",
+      "completed_at": "2026-04-13T19:58:53.819Z",
+      "elapsed_seconds": 288,
+      "result_preview": "ク\n  - `minutes/page.tsx`: index.json から議事録一覧、enriched タグ付与\n  - `minutes/[id]/page.tsx`: `generateMetadata` / `generateStaticParams` 実装、パンくずナビ付き詳細表示\n\n- **データ**\n  - `site/data/kutchan/minutes/` に raw JSON 19件 + index.json をコピー\n  - `site/data/ikeda/minutes/` に raw JSON 10件 + index.json をコピー\n\n- **ナビゲーション**\n  - `CityHeaderServer.tsx` の CITIES に倶知安町議会・池田町議会を追加\n  - `CityHeader.tsx` の CITY_KEYS に `kutchan` / `ikeda` を追加\n  - `site/src/app/page.tsx` の CITIES に倶知安町（後志）・池田町（十勝）を追加\n\nTypeScript エラーなしで確認済みです。\n"
+    },
+    {
+      "id": "task-036",
+      "title": "eniwa・tomakomai のトップページに選挙結果リンクカードを追加",
+      "category": "feature",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/src/app/chitose/page.tsx には election.json の存在を前提とした「選挙結果」リンクカードが CitySummaryCards の直下に実装されている（/chitose/election へのリンク）。しかし site/src/app/eniwa/page.tsx と site/src/app/tomakomai/page.tsx にはこのカードがなく、機能差が生じている。両市とも data/{city}/election.json と /eniwa/election・/tomakomai/election ページが存在する（task-016 で実装済み）。eniwa/page.tsx と tomakomai/page.tsx の CitySummaryCards 直下に、chitose と同様のデザインの選挙結果リンクカードを追加する。表示する選挙名は各市の election.json の先頭から election_name フィールドを読み取って表示するか、フィールドがなければ固定文言（例:「恵庭市議会議員一般選挙」「苫小牧市議会議員一般選挙」）を使用する。",
+      "acceptance_criteria": [
+        "/eniwa ページに選挙結果リンクカードが表示され、クリックで /eniwa/election に遷移する",
+        "/tomakomai ページに選挙結果リンクカードが表示され、クリックで /tomakomai/election に遷移する",
+        "DESIGN.md のカードパターン（bg-white rounded-lg border shadow-sm hover:shadow-md）に準拠したデザインになっている",
+        "/chitose ページの既存カードの表示に変化がない"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-13T19:58:55.826Z",
+      "completed_at": "2026-04-13T20:00:09.602Z",
+      "elapsed_seconds": 74,
+      "result_preview": "実装完了です。\n\n**変更内容:**\n\n- `site/src/app/eniwa/page.tsx` — `Link` import 追加、`getElectionName()` 関数追加（election.json から `election_name` を読み取り、ない場合は固定文言にフォールバック）、CitySummaryCards 直下に選挙結果リンクカード追加\n- `site/src/app/tomakomai/page.tsx` — 同様の変更\n\n**表示される選挙名:**\n- 恵庭市: 「令和5年4月23日執行 恵庭市議会議員選挙」\n- 苫小牧市: 「令和5年4月23日執行 苫小牧市議会議員選挙（第20回統一地方選挙）」\n\nchitose の既存カードには変更なし。TypeScript エラーもなし。\n"
+    },
+    {
+      "id": "task-037",
+      "title": "AI検索ページの対応市説明文を実際の17市に更新",
+      "category": "ux",
+      "priority": "low",
+      "status": "done",
+      "description": "site/src/app/ai-search/page.tsx の説明文「千歳市・恵庭市・苫小牧市の議会データをもとに Claude AI が回答します。」は古い情報のまま放置されている。site/src/app/api/ai-search/route.ts の CITY_META を確認すると、chitose・eniwa・tomakomai・asahikawa・ashibetsu・date・hakodate・ishikari・kitahiroshima・kitami・kushiro・muroran・nayoro・nemuro・obihiro・wakkanai の16市が横断比較の対象となっている。通常検索（buildBaseContext）は chitose のみだが、横断比較と議事録検索は全市対象。説明文をこれに合わせて更新する。通常検索モードの説明は「千歳市の議員・議決・スケジュールデータをもとに回答します」、横断比較モードの説明は実際に CITY_META に登録されている16市名を列挙または「北海道内16市の議事録データを横断比較します」といった文言に変更する。また NORMAL_EXAMPLES の質問例も chitose データに基づく具体的な例（議員名・決議名など）が含まれているので実際のデータと整合しているか確認し、古ければ更新する。",
+      "acceptance_criteria": [
+        "/ai-search の説明文が「千歳市・恵庭市・苫小牧市」という3市固定の表記でなくなっている",
+        "通常検索モードと横断比較モードでそれぞれ正確な対応範囲が説明されている",
+        "横断比較モードの説明パネル内テキストも実際の対応市数と一致している"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-13T20:00:11.605Z",
+      "completed_at": "2026-04-13T20:01:10.283Z",
+      "elapsed_seconds": 59,
+      "result_preview": "完了しました。変更内容：\n\n**`site/src/app/ai-search/page.tsx`**\n\n1. **メイン説明文をモード連動に変更**\n   - 通常検索: 「千歳市の議員・議決・スケジュールデータをもとに Claude AI が回答します。」\n   - 横断比較: 「北海道内16市の議事録データを横断比較します。Claude AI が各市の方針・議論を構造化して回答します。」\n\n2. **横断比較パネル内テキストを更新**\n   - 「千歳市・恵庭市・苫小牧市の3市」→「北海道内16市（千歳・恵庭・苫小牧・旭川・芦別・伊達・函館・石狩・北広島・北見・釧路・室蘭・名寄・根室・帯広・稚内）」と16市名を明示\n\n`CITY_META` に登録されている16市と一致させ、古い3市固定の記述を解消しました。\n"
+    },
+    {
+      "id": "task-038",
+      "title": "M状態スクリプト2本の変更を確認・コミット（SDK→CLI移行完了）",
+      "category": "data",
+      "priority": "high",
+      "status": "done",
+      "description": "site/scripts/enrich-minutes.mjs と site/scripts/batch-transcribe.mjs が Anthropic SDK → `claude -p` CLI に移行済みだが未コミット。以下を順に実施する。\n\n1. enrich-minutes.mjs の全 diff を通読し、(a) `generateEnrichment()` が完全に同期関数になっているか、(b) `processFile()` 内の `const ai = generateEnrichment(session)` に誤った `await` が残っていないか、(c) `processCity()` のサマリーログに `skip` カウントが出力されているか、を確認する。\n2. batch-transcribe.mjs の全 diff を通読し、Anthropic SDK の import・client 生成が全て除去され `claudeQuery()` 経由に置き換わっていることを確認する。\n3. smoke test: `cd site && node scripts/enrich-minutes.mjs --city chitose --id 548 --force` を実行し、`data/chitose/minutes/enriched/548.json` が更新されることを確認する（既存ファイルなので --force 必須）。\n4. 問題がなければ `git add site/scripts/enrich-minutes.mjs site/scripts/batch-transcribe.mjs` してコミット。\n\n注意: `processCity()` の末尾ログが `[${city}] 成功:${ok} 失敗:${fail}` と `[${city}] 完了` の2行出力になっているが、skip カウントが表示されていないため `[${city}] 成功:${ok} スキップ:${skip} 失敗:${fail}` に修正すること。",
+      "acceptance_criteria": [
+        "enrich-minutes.mjs で `await generateEnrichment` が残っていない（同期呼び出しのみ）",
+        "`node scripts/enrich-minutes.mjs --city chitose --id 548 --force` が正常終了し JSON が更新される",
+        "processCity() のサマリーログに skip 件数が表示される",
+        "両スクリプトが git commit 済みになっている"
+      ],
+      "created_at": "2026-04-14",
+      "designed_by": "architect",
+      "started_at": "2026-04-13T20:21:17.358Z",
+      "completed_at": "2026-04-13T20:24:16.344Z",
+      "elapsed_seconds": 87,
+      "result_preview": "` なし ✓ / SDK import なし ✓\n- `batch-transcribe.mjs`: `claudeQuery()` で `spawnSync(\"claude\", [\"-p\", ...])` 使用、SDK 完全除去 ✓\n- `processCity()` サマリーログを `成功:${ok} スキップ:${skip} 失敗:${fail}` に修正 ✓\n- smoke test (`--city chitose --id 548 --force`) 正常終了、`548.json` 更新確認 ✓\n- `git commit` & `git push` 済み (`c3d372f`)\n"
+    },
+    {
+      "id": "task-039",
+      "title": "esashi（江差町）ページを新規作成しサイトに登録",
+      "category": "feature",
+      "priority": "high",
+      "status": "done",
+      "description": "data/esashi/ は存在するが site/src/app/esashi/ はなく、page.tsx の CITIES 配列にも未登録。以下を全て実施する。\n\n1. site/src/app/esashi/page.tsx を新規作成。ashibetsu/page.tsx などの小規模市を参考に、members.json が存在しない場合は選挙結果リンクなしで議事録件数のみ表示する最小実装にする。\n2. site/src/app/esashi/minutes/page.tsx を新規作成。他市の minutes/page.tsx のコピー（city='esashi' に置換）。\n3. site/src/app/esashi/minutes/[id]/page.tsx を新規作成。同様。\n4. site/src/app/page.tsx の CITIES 配列末尾に以下を追加:\n   `{ id: 'esashi', name: '江差町議会', furigana: 'えさしちょう', href: '/esashi', region: '檜山', hasMinutes: true, hasSession: false }`\n5. site/src/components/CityHeader.tsx の FALLBACK_CITY_CONFIG に esashi エントリを追加（ナビ: 議事録のみ）。\n\nDESIGN.md 準拠: カラー #1B3A6B, フォント text-xl font-bold, max-w-5xl mx-auto, px-4 py-8。外部アイコンライブラリ不可（インライン SVG のみ）。",
+      "acceptance_criteria": [
+        "/esashi にアクセスして 404 が出ない（議事録件数が表示される）",
+        "/esashi/minutes に議事録一覧が表示される",
+        "トップページ（/）の市一覧カードに「江差町議会」が表示される",
+        "CityHeader のナビゲーションで「議事録」リンクが機能する",
+        "DESIGN.md 違反（外部アイコン・グラデーション・カラフルバッジ）がない"
+      ],
+      "created_at": "2026-04-14",
+      "designed_by": "architect",
+      "started_at": "2026-04-13T20:24:18.359Z",
+      "completed_at": "2026-04-13T20:27:03.985Z",
+      "elapsed_seconds": 101,
+      "result_preview": "ページ\n3. `site/src/app/esashi/minutes/[id]/page.tsx` — 議事録詳細ページ\n4. `site/src/app/page.tsx` — CITIES 配列末尾に江差町議会を追加（region: 檜山）\n5. `site/src/components/CityHeader.tsx` — FALLBACK_CITY_CONFIG と CITY_KEYS に `esashi` を追加\n\nTypeScript エラーなし。`/esashi` および `/esashi/minutes` でアクセス可能、トップページの市一覧にも「江差町議会」が表示されます。\n"
+    },
+    {
+      "id": "task-040",
+      "title": "トップページに最新議事録ハイライトセクションを追加",
+      "category": "ux",
+      "priority": "high",
+      "status": "done",
+      "description": "site/src/app/page.tsx にサーバーサイドのハイライトセクションを追加する。\n\n1. 以下のヘルパー関数を page.tsx に追加する:\n```ts\nfunction getRecentHighlights(limit = 4) {\n  const results: Array<{ cityId: string; cityName: string; councilName: string; summary: string; tags: string[]; generatedAt: string }> = [];\n  const cityMap: Record<string, string> = { chitose: '千歳市', eniwa: '恵庭市', tomakomai: '苫小牧市', ... (全市) };\n  for (const [cityId, cityName] of Object.entries(cityMap)) {\n    const dir = path.join(process.cwd(), 'data', cityId, 'minutes', 'enriched');\n    if (!fs.existsSync(dir)) continue;\n    const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));\n    for (const f of files) {\n      const d = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8'));\n      results.push({ cityId, cityName, councilName: d.name, summary: d.summary, tags: d.tags?.slice(0, 3) ?? [], generatedAt: d.generated_at ?? '' });\n    }\n  }\n  return results.sort((a, b) => b.generatedAt.localeCompare(a.generatedAt)).slice(0, limit);\n}\n```\n\n2. 表示箇所: ヒーローセクション（mb-8）の直後、「市議会を選ぶ」セクションの前に挿入。\n3. カードデザイン: bg-white rounded-lg border border-[#CBD5E0] shadow-sm p-4。タイトル（text-sm font-bold text-[#1A202C]）、市名バッジ（text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#2A5298] rounded-full）、summary 先頭60字（text-sm text-[#4A5568]）、tags 最大3件（text-xs bg-gray-100 text-gray-700 rounded-full）。\n4. カードクリックで /{cityId}/minutes/{id} へリンク。council_id を enriched JSON から取得してリンク生成。\n5. セクション見出し: `<h3 className=\"text-sm font-semibold text-[#718096] uppercase tracking-wider mb-3\">最近の議事録</h3>`",
+      "acceptance_criteria": [
+        "トップページに「最近の議事録」セクションが表示される（4件）",
+        "各カードをクリックすると該当市の議事録詳細ページへ遷移する",
+        "DESIGN.md のカラーパレット・タイポグラフィに準拠している",
+        "サーバーコンポーネントで実装（クライアント JS を追加しない）",
+        "enriched データがゼロの市の分は表示されない（エラーにならない）"
+      ],
+      "created_at": "2026-04-14",
+      "designed_by": "architect",
+      "started_at": "2026-04-13T20:27:05.992Z",
+      "completed_at": "2026-04-13T20:29:18.269Z",
+      "elapsed_seconds": 68,
+      "result_preview": "\n   - `generated_at` 降順でソートして上位4件を返却\n   - ディレクトリ・ファイルが存在しない場合は graceful にスキップ\n\n2. ヒーローセクション直後・「市議会を選ぶ」セクション前に「最近の議事録」セクションを挿入\n   - 2カラムグリッド（sm以上）のカードレイアウト\n   - 市名バッジ（`bg-[#E8EEF7] text-[#2A5298]`）・会議名・要約60字・タグ最大3件\n   - カードクリックで `/{cityId}/minutes/{councilId}` へ遷移\n   - enriched データがゼロの場合はセクション自体を非表示\n"
+    },
+    {
+      "id": "task-041",
+      "title": "テーマ別横断ページ /topics と /topics/[tag] を新規実装",
+      "category": "feature",
+      "priority": "medium",
+      "status": "done",
+      "description": "enriched タグを使った全市横断ブラウジングページを実装する。\n\n**site/src/app/topics/page.tsx（タグ一覧）**\nサーバーコンポーネント。全市の enriched JSON から tags を集計し、出現頻度の高い順にタグと件数を表示。カードまたはバッジリスト形式（例: 「予算（42件）」「子育て（31件）」）。各タグは /topics/{tag} へリンク。\n\n**site/src/app/topics/[tag]/page.tsx（タグ別一覧）**\nサーバーコンポーネント。params.tag でフィルタし、該当する enriched 議事録を全市横断で取得。表示項目: 市名バッジ・議事録名・summary・highlights 先頭1件・/{cityId}/minutes/{id} リンク。\n\n**ヘルパー関数（site/src/lib/topics.ts として切り出し推奨）:**\n```ts\nexport function loadAllEnriched(): EnrichedRecord[] // 全市の enriched JSON を読んで配列で返す\nexport function getAllTags(): { tag: string; count: number }[] // タグ集計\nexport function getByTag(tag: string): EnrichedRecord[] // タグフィルタ\n```\n\n**metadata 生成**: /topics/[tag] では `generateMetadata` で `title: \"${tag} | テーマ別議事録 | 北海道議会情報マップ\"` を設定する（SEO）。\n\n**ナビゲーション登録**: site/src/components/CityHeader.tsx のグローバルナビ（トップページ・地図・AI検索の横）に「テーマ別」リンクを追加。\n\nDESIGN.md 準拠: max-w-5xl mx-auto, px-4 py-8, 外部アイコン不可。",
+      "acceptance_criteria": [
+        "/topics に全タグ一覧が表示され、上位タグ（予算・子育て・防災など）が確認できる",
+        "/topics/予算 にアクセスすると複数市の関連議事録一覧が表示される",
+        "各議事録カードのリンクが正しい /{cityId}/minutes/{id} を指している",
+        "generateMetadata によりページタイトルにタグ名が入っている",
+        "CityHeader のグローバルナビに「テーマ別」リンクが追加されている"
+      ],
+      "created_at": "2026-04-14",
+      "designed_by": "architect",
+      "started_at": "2026-04-13T20:29:20.280Z",
+      "completed_at": "2026-04-13T20:32:19.608Z",
+      "elapsed_seconds": 101,
+      "result_preview": "）」）\n- 各バッジは `/topics/{tag}` にリンク\n\n**`site/src/app/topics/[tag]/page.tsx`**\n- タグ別の全市横断議事録一覧\n- 各カードに市名バッジ・議事録名・要約・highlights 先頭1件・タグ一覧を表示\n- `generateMetadata` でページタイトルにタグ名を含める（SEO対応）\n- `generateStaticParams` で静的生成\n\n### 変更ファイル\n\n**`site/src/components/CityHeader.tsx`**\n- グローバルナビに「テーマ別」リンク（`/topics`）を追加\n"
+    },
+    {
+      "id": "task-042",
+      "title": "AI横断比較検索を全enriched保有市（24市）に拡張しコンテキストを改善",
+      "category": "feature",
+      "priority": "medium",
+      "status": "done",
+      "description": "site/src/app/api/ai-search/route.ts の `CITY_META` と `buildCompareBaseContext()` を改修する。\n\n**1. CITY_META に8市を追加:**\n現在の16市に以下を追加する（enriched データ保有確認済み）:\n```ts\n{ id: 'fukushima',    name: '福島町'   },\n{ id: 'hokuto',       name: '北斗市'   },\n{ id: 'ikeda',        name: '池田町'   },\n{ id: 'kamikawa',     name: '上川町'   },\n{ id: 'kutchan',      name: '倶知安町' },\n{ id: 'memuro',       name: '芽室町'   },\n{ id: 'nakagawa',     name: '中川町'   },\n{ id: 'noboribetsu',  name: '登別市'   },\n```\n\n**2. buildCompareBaseContext() に enriched サマリーを追加:**\n現在は members.json + decisions.json のみ参照。各市の enriched JSON（最新3件）の `summary` と `tags` を追加コンテキストとして連結する:\n```ts\n// 既存コードの後に追記\nconst enrichedDir = path.join(dir, 'minutes', 'enriched');\nif (fs.existsSync(enrichedDir)) {\n  const files = fs.readdirSync(enrichedDir)\n    .filter(f => f.endsWith('.json'))\n    .slice(-3); // 最新3件\n  for (const f of files) {\n    const e = JSON.parse(fs.readFileSync(path.join(enrichedDir, f), 'utf-8'));\n    sections.push(`### ${city.name} 議事録要約（${e.name}）\\nタグ: ${e.tags?.join(', ')}\\n要約: ${e.summary}`);\n  }\n}\n```\n\n**3. ai-search/page.tsx の説明文を更新:**\n現在「16市対応」と記載されている箇所（もしあれば）を「24市対応」に変更。\n\n注意: `buildCompareBaseContext()` にコンテキストを追加するとトークン数が増加する。最新3件かつ tags+summary のみ（フルテキスト不可）に制限すること。",
+      "acceptance_criteria": [
+        "CITY_META が24市になっている（hokuto, noboribetsu, ikeda, kutchan, memuro, nakagawa, kamikawa, fukushima の8市が追加）",
+        "compare モードで「北斗市の除雪対応は？」のような質問に回答が返る",
+        "buildCompareBaseContext() が enriched サマリーをコンテキストに含んでいる",
+        "比較検索のコンテキストが極端に肥大化していない（各市の enriched は最新3件 tags+summary のみ）"
+      ],
+      "created_at": "2026-04-14",
+      "designed_by": "architect",
+      "started_at": "2026-04-13T20:32:21.617Z",
+      "completed_at": "2026-04-13T20:34:52.799Z",
+      "elapsed_seconds": 66,
+      "result_preview": "完了しました。実装内容:\n\n**`route.ts`**\n- `CITY_META` に8市町を追加し計24市町に（福島町・北斗市・池田町・上川町・倶知安町・芽室町・中川町・登別市）\n- `buildCompareBaseContext()` に enriched サマリーを追加 — 各市の `minutes/enriched/` から最新3件を読み込み、`tags` と `summary` のみを連結（フルテキスト不可・トークン肥大化を防止）\n\n**`page.tsx`**\n- 説明文・モード説明の「16市」を「24市町」に更新、都市名一覧も全24市町を列挙\n"
+    },
+    {
+      "id": "task-043",
+      "title": "municipalities.json にサイト表示用メタデータを追加",
+      "category": "data",
+      "priority": "high",
+      "status": "done",
+      "description": "data/municipalities.json（および site/data/ にあれば同ファイル）を更新して、サイト表示に必要なメタデータをすべて含めるようにする。\n\n現在の構造:\n{ \"slug\": \"chitose\", \"name\": \"千歳市\", \"tenant_id\": 452, \"system\": \"dnp\" }\n\n目標とする構造:\n{\n  \"slug\": \"chitose\",\n  \"name\": \"千歳市\",\n  \"council_name\": \"千歳市議会\",\n  \"region\": \"石狩\",\n  \"furigana\": \"ちとせし\",\n  \"features\": [\"members\", \"minutes\", \"sessions\", \"decisions\", \"schedule\", \"newsletter\", \"election\", \"plan\"],\n  \"active\": true,\n  \"tenant_id\": 452,\n  \"system\": \"dnp\"\n}\n\nfeatures の値は実際に data/{slug}/ に存在するファイル・ディレクトリから判定すること:\n- members.json が存在 → \"members\"\n- minutes/ ディレクトリが存在 → \"minutes\"\n- sessions/ ディレクトリが存在 → \"sessions\"\n- decisions.json → \"decisions\"\n- schedule.json → \"schedule\"\n- newsletter.json → \"newsletter\"\n- election.json → \"election\"\n- comprehensive_plan.json → \"plan\"\n\n各市の region と furigana は以下を使うこと:\nhakodate: 渡島・はこだてし, asahikawa: 上川・あさひかわし, muroran: 胆振・むろらんし,\nkushiro: 釧路・くしろし, obihiro: 十勝・おびひろし, kitami: オホーツク・きたみし,\ntomakomai: 胆振・とまこまいし, wakkanai: 宗谷・わっかないし, ashibetsu: 空知・あしべつし,\nnayoro: 上川・なよろし, nemuro: 根室・ねむろし, chitose: 石狩・ちとせし,\nnoboribetsu: 胆振・のぼりべつし, eniwa: 石狩・えにわし, date: 胆振・だてし,\nkitahiroshima: 石狩・きたひろしまし, ishikari: 石狩・いしかりし, hokuto: 渡島・ほくとし,\nfukushima: 渡島・ふくしまちょう, esashi: 檜山・えさしちょう, kutchan: 後志・くっちゃんちょう,\nkamikawa: 上川・かみかわちょう, memuro: 十勝・めむろちょう, ikeda: 十勝・いけだちょう,\nnakagawa: 上川・なかがわちょう\n\n更新後のファイルを data/municipalities.json と site/data/municipalities.json（存在すれば）の両方に書き出すこと。",
+      "acceptance_criteria": [
+        "data/municipalities.json の全エントリに council_name, region, furigana, features, active が含まれる",
+        "features は実際のデータファイル存在チェックに基づいている",
+        "TypeScript エラーなし（型定義は不要、JSONのみの変更）"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-13T20:40:05.316Z",
+      "completed_at": "2026-04-13T20:41:09.826Z",
+      "elapsed_seconds": 65,
+      "result_preview": "完了しました。\n\n`data/municipalities.json` と `site/data/municipalities.json` の両方を更新しました。\n\n**変更内容:**\n- 全25市町に `council_name`、`region`、`furigana`、`features`、`active` を追加\n- `features` は実際のファイル存在チェックに基づいて設定:\n  - **千歳市**: `members/minutes/sessions/decisions/schedule/newsletter/election/plan`（全機能）\n  - **苫小牧市・恵庭市**: `members/minutes/election`\n  - **その他22市町**: `minutes` のみ\n- `esashi`（江差町）はデータフォルダが `data/` にないため minutes のみ（task仕様に従い `esashi` エントリは存在するため追加済み）\n"
+    },
+    {
+      "id": "task-044",
+      "title": "動的ルート site/src/app/[city]/ を作成し全市対応する",
+      "category": "feature",
+      "priority": "high",
+      "status": "done",
+      "description": "Next.js App Router の動的ルートを使って site/src/app/[city]/ に全市共通のページを作成する。\n\n## 作成するファイル\n\n### site/src/app/[city]/layout.tsx\n- municipalities.json から該当市のデータを読んで CityHeader に渡す\n- 存在しない slug の場合は notFound() を返す\n- generateStaticParams で全 active 市の slug を返す\n\n### site/src/app/[city]/page.tsx（議員一覧）\n- 既存の chitose/page.tsx を参考に、city パラメータを使って data/{city}/members.json を読む\n- members.json がなければ「議員情報は準備中」の空状態を表示\n\n### site/src/app/[city]/minutes/page.tsx（議事録一覧）\n- 既存の chitose/minutes/page.tsx を参考に動的化\n- enriched データがあれば表示、なければ基本情報のみ\n\n### site/src/app/[city]/minutes/[id]/page.tsx（議事録詳細）\n- 既存の chitose/minutes/[id]/page.tsx を参考に動的化\n\n### site/src/app/[city]/members/[id]/page.tsx（議員詳細）\n- 既存の chitose/members/[id]/page.tsx を参考に動的化\n\n### site/src/app/[city]/decisions/page.tsx\n- features に \"decisions\" がない市は notFound()\n\n### site/src/app/[city]/schedule/page.tsx\n- features に \"schedule\" がない市は notFound()\n\n### site/src/app/[city]/newsletter/page.tsx\n- features に \"newsletter\" がない市は notFound()\n\n### site/src/app/[city]/sessions/page.tsx\n- features に \"sessions\" がない市は notFound()\n\n### site/src/app/[city]/sessions/[id]/page.tsx\n- 既存の chitose/sessions/[id]/page.tsx を参考に動的化\n\n### site/src/app/[city]/election/page.tsx\n- features に \"election\" がない市は notFound()\n\n## municipalities.json の読み込みユーティリティ\nsite/src/lib/municipalities.ts を作成:\n```typescript\nimport fs from 'fs';\nimport path from 'path';\n\nexport type Municipality = {\n  slug: string;\n  name: string;\n  council_name: string;\n  region: string;\n  furigana: string;\n  features: string[];\n  active: boolean;\n  tenant_id: number;\n  system: string;\n};\n\nexport function getMunicipalities(): Municipality[] {\n  const fp = path.join(process.cwd(), 'data', 'municipalities.json');\n  return JSON.parse(fs.readFileSync(fp, 'utf-8'));\n}\n\nexport function getMunicipality(slug: string): Municipality | null {\n  return getMunicipalities().find(m => m.slug === slug && m.active) ?? null;\n}\n\nexport function hasFeature(slug: string, feature: string): boolean {\n  return getMunicipality(slug)?.features.includes(feature) ?? false;\n}\n```\n\n## 重要な注意事項\n- data/ のパスは process.cwd() + '/data/{city}/...' （site/ から見た相対パス）\n- generateStaticParams は必須（静的ビルドのため）\n- DESIGN.md のデザインパターンを厳守すること\n- TypeScript 型エラーがないこと（npx tsc --noEmit で確認）\n- 既存の個別ページは削除しない（この時点では並存させる）",
+      "acceptance_criteria": [
+        "site/src/app/[city]/page.tsx が作成されている",
+        "site/src/lib/municipalities.ts が作成されている",
+        "/asahikawa, /hakodate など全市のURLでアクセスできる",
+        "generateStaticParams が municipalities.json から全市のslugsを返す",
+        "TypeScript エラーがない（npx tsc --noEmit）",
+        "各ページでデータがない場合に適切な空状態が表示される"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-13T20:41:11.835Z",
+      "completed_at": "2026-04-13T20:48:50.147Z",
+      "elapsed_seconds": 458,
+      "result_preview": "c/app/[city]/sessions/page.tsx` | 会議録・速報（features に \"sessions\" なし → 404） |\n| `site/src/app/[city]/sessions/[id]/page.tsx` | 会議録詳細 |\n| `site/src/app/[city]/election/page.tsx` | 選挙結果（features に \"election\" なし → 404） |\n\n## 更新したファイル\n\n- **`CityHeaderServer.tsx`**: `municipalities.json` から CITIES を動的構築（`esashi` 等の漏れ解消）、`pageExists()` が `[city]` 動的ルートも認識するよう拡張\n\n## 動作の仕組み\n\n- 既存の静的ルート（`/chitose`, `/eniwa` 等）は従来通り動作（静的ルートが優先）\n- 静的ページが未作成の市（`hakodate/minutes/[id]` 等）は動的ルートで処理\n- TypeScript エラーなし、コミット・プッシュ済み\n"
+    },
+    {
+      "id": "task-045",
+      "title": "CityHeader を municipalities.json ベースに変更し個別市ページを削除",
+      "category": "feature",
+      "priority": "high",
+      "status": "running",
+      "description": "task-044 の動的ルートが完成した後に実行する。\n\n## 1. CityHeader の動的化\nsite/src/components/CityHeader.tsx の FALLBACK_CITY_CONFIG と CITY_KEYS のハードコードを廃止し、\nmunicipalities.json から動的にナビを生成する。\n\n変更方針:\n- detectCity() を「pathname の第1セグメントが municipalities.json の slug に一致するか」で判定\n- nav items は municipality.features に基づいて動的生成:\n  - members → { href: '/{slug}', label: '議員一覧' }\n  - minutes → { href: '/{slug}/minutes', label: '議事録' }\n  - sessions → { href: '/{slug}/sessions', label: '会議録・速報' }\n  - decisions → { href: '/{slug}/decisions', label: '議決結果' }\n  - schedule → { href: '/{slug}/schedule', label: '行事予定' }\n  - newsletter → { href: '/{slug}/newsletter', label: '議会だより' }\n  - election → { href: '/{slug}/election', label: '選挙結果' }\n  - plan → { href: '/{slug}/plan', label: '総合計画' }\n  - 常に末尾に: { href: '/ai-search', label: '✦ AI検索' }\n\n注意: CityHeader は 'use client' なので、municipalities.json をクライアントで直接読めない。\nサーバーコンポーネント（CityHeaderServer.tsx）でデータを読んで Props として渡す既存パターンを活用すること。\n\n## 2. 個別市ディレクトリの削除\n以下のディレクトリを削除する（動的ルート [city]/ に置き換え済みのため）:\nsite/src/app/chitose/\nsite/src/app/eniwa/\nsite/src/app/tomakomai/\nsite/src/app/asahikawa/\nsite/src/app/hakodate/\nsite/src/app/muroran/\nsite/src/app/kushiro/\nsite/src/app/wakkanai/\nsite/src/app/kitami/\nsite/src/app/obihiro/\nsite/src/app/nayoro/\nsite/src/app/date/\nsite/src/app/fukushima/\nsite/src/app/hokuto/\nsite/src/app/ishikari/\nsite/src/app/kitahiroshima/\nsite/src/app/nemuro/\nsite/src/app/noboribetsu/\nsite/src/app/ashibetsu/\nsite/src/app/memuro/\nsite/src/app/kamikawa/\nsite/src/app/nakagawa/\nsite/src/app/kutchan/\nsite/src/app/ikeda/\nsite/src/app/esashi/\n\n削除後に npx tsc --noEmit でエラーがないことを確認すること。\nサイトをビルドして ( npm run build ) エラーがないことを確認すること。",
+      "acceptance_criteria": [
+        "CityHeader のナビが municipalities.json から動的生成されている",
+        "FALLBACK_CITY_CONFIG のハードコードが廃止されている",
+        "個別市ディレクトリ（chitose/, eniwa/ 等）が削除されている",
+        "npm run build が成功する",
+        "TypeScript エラーがない"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-13T20:48:52.159Z"
+    }
+  ]
+}
