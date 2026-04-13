@@ -183,6 +183,22 @@ export default async function MemberDetailPage({
         </dl>
       </section>
 
+      {/* AI検索ショートカット */}
+      {memberActivity && (
+        <div className="bg-[#E8EEF7] border border-[#C5D0E6] rounded-lg px-4 py-3 mb-5 flex items-center justify-between gap-3">
+          <p className="text-sm text-[#1B3A6B]">
+            <span className="font-semibold">{member.name}</span> 議員の活動をAIに聞く
+          </p>
+          <Link
+            href={`/ai-search?q=${encodeURIComponent(`${member.name}議員の議会質問の傾向と主な主張を教えてください`)}`}
+            className="shrink-0 text-sm font-medium px-4 py-1.5 bg-[#1B3A6B] text-white rounded-lg hover:bg-[#2A5298] transition-colors flex items-center gap-1.5"
+          >
+            <span aria-hidden="true">✦</span>
+            AI検索
+          </Link>
+        </div>
+      )}
+
       {/* 質問活動 */}
       {memberActivity ? (
         <section>
@@ -197,12 +213,13 @@ export default async function MemberDetailPage({
               <p className="text-xs font-medium text-[#718096] mb-2">質問テーマ</p>
               <div className="flex flex-wrap gap-1.5">
                 {topThemes.map((theme) => (
-                  <span
+                  <Link
                     key={theme}
-                    className="text-xs font-medium px-2.5 py-1 bg-[#E8EEF7] text-[#2A5298] rounded-full"
+                    href={`/ai-search?q=${encodeURIComponent(`恵庭市議会での「${theme}」に関する議論を教えてください`)}`}
+                    className="text-xs font-medium px-2.5 py-1 bg-[#E8EEF7] text-[#2A5298] rounded-full hover:bg-[#1B3A6B] hover:text-white transition-colors"
                   >
                     {theme}
-                  </span>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -220,9 +237,28 @@ export default async function MemberDetailPage({
                 <div className="px-5 py-4">
                   <ul className="space-y-1.5">
                     {s.topics.map((t) => (
-                      <li key={t} className="flex items-start gap-2 text-sm">
+                      <li key={t} className="flex items-start gap-2 text-sm group">
                         <span className="text-[#2A5298] shrink-0 mt-0.5" aria-hidden="true">·</span>
-                        <span className="text-[#4A5568]">{t}</span>
+                        <div className="flex-1 flex items-start justify-between gap-2">
+                          {s.council_id > 0 ? (
+                            <Link
+                              href={`/eniwa/minutes/${s.council_id}?q=${encodeURIComponent(t)}`}
+                              className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors"
+                            >
+                              {t}
+                            </Link>
+                          ) : (
+                            <span className="text-[#4A5568]">{t}</span>
+                          )}
+                          <Link
+                            href={`/ai-search?q=${encodeURIComponent(`${member.name}議員の「${t}」に関する質問内容を教えてください`)}`}
+                            className="shrink-0 text-xs text-[#A0AEC0] hover:text-[#2A5298] opacity-0 group-hover:opacity-100 transition-opacity"
+                            title="AI検索"
+                            aria-label={`${t}をAI検索`}
+                          >
+                            ✦ AI
+                          </Link>
+                        </div>
                       </li>
                     ))}
                   </ul>
