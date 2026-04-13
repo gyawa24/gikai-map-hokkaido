@@ -110,7 +110,7 @@ function AISearchPageInner() {
         </h2>
         <p className="text-base text-[#4A5568]">
           {mode === "compare"
-            ? "北海道内16市の議事録データを横断比較します。Claude AI が各市の方針・議論を構造化して回答します。"
+            ? "北海道内24市町の議事録データを横断比較します。Claude AI が各市の方針・議論を構造化して回答します。"
             : "千歳市の議員・議決・スケジュールデータをもとに Claude AI が回答します。"}
         </p>
       </div>
@@ -161,7 +161,7 @@ function AISearchPageInner() {
         <div className="bg-[#E8EEF7] border border-[#CBD5E0] rounded-lg px-4 py-3 mb-5">
           <p className="text-sm text-[#1B3A6B] font-medium mb-1">横断比較モード</p>
           <p className="text-sm text-[#4A5568]">
-            北海道内16市（千歳・恵庭・苫小牧・旭川・芦別・伊達・函館・石狩・北広島・北見・釧路・室蘭・名寄・根室・帯広・稚内）の議事録データを横断比較します。
+            北海道内24市町（千歳・恵庭・苫小牧・旭川・芦別・伊達・福島・函館・北斗・池田・石狩・上川・北広島・北見・釧路・倶知安・芽室・室蘭・中川・名寄・根室・登別・帯広・稚内）の議事録データを横断比較します。
             テーマを入力すると、各市の方針・予算・議会での議論を構造化して表示します。
           </p>
         </div>

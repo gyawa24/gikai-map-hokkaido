@@ -56,14 +56,22 @@ const CITY_META = [
   { id: "asahikawa",     name: "旭川市" },
   { id: "ashibetsu",     name: "芦別市" },
   { id: "date",          name: "伊達市" },
+  { id: "fukushima",     name: "福島町" },
   { id: "hakodate",      name: "函館市" },
+  { id: "hokuto",        name: "北斗市" },
+  { id: "ikeda",         name: "池田町" },
   { id: "ishikari",      name: "石狩市" },
+  { id: "kamikawa",      name: "上川町" },
   { id: "kitahiroshima", name: "北広島市" },
   { id: "kitami",        name: "北見市" },
   { id: "kushiro",       name: "釧路市" },
+  { id: "kutchan",       name: "倶知安町" },
+  { id: "memuro",        name: "芽室町" },
   { id: "muroran",       name: "室蘭市" },
+  { id: "nakagawa",      name: "中川町" },
   { id: "nayoro",        name: "名寄市" },
   { id: "nemuro",        name: "根室市" },
+  { id: "noboribetsu",   name: "登別市" },
   { id: "obihiro",       name: "帯広市" },
   { id: "wakkanai",      name: "稚内市" },
 ];
@@ -79,6 +87,27 @@ function buildCompareBaseContext(): string {
       `### ${city.name} 議員名簿\n` + tryRead("members.json"),
       `### ${city.name} 議決結果（直近）\n` + tryRead("decisions.json"),
     );
+
+    // enriched サマリーを追加（最新3件、tags+summary のみ）
+    const enrichedDir = path.join(dir, "minutes", "enriched");
+    if (fs.existsSync(enrichedDir)) {
+      let files: string[];
+      try { files = fs.readdirSync(enrichedDir).filter((f) => f.endsWith(".json")).slice(-3); }
+      catch { files = []; }
+      for (const f of files) {
+        try {
+          const e = JSON.parse(fs.readFileSync(path.join(enrichedDir, f), "utf-8")) as {
+            name?: string;
+            tags?: string[];
+            summary?: string;
+          };
+          if (!e.summary && !e.tags?.length) continue;
+          sections.push(
+            `### ${city.name} 議事録要約（${e.name ?? f}）\nタグ: ${(e.tags ?? []).join(", ")}\n要約: ${e.summary ?? ""}`
+          );
+        } catch { continue; }
+      }
+    }
   }
   return sections.join("\n\n");
 }
