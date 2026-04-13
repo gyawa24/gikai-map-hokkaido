@@ -1,0 +1,952 @@
+{
+  "council_id": 312,
+  "name": "令和７年 決算審査特別委員会",
+  "generated_at": "2026-04-12",
+  "summary": "令和6年度決算について審査が行われ、防災備蓄品の整備状況や避難所運営の課題、旭川空港の路線拡充とグランドハンドリング人材確保、冬のイルミネーション事業の充実、東京事務所の営業活動の在り方、公用車管理とEV車導入の課題、職場ハラスメント相談体制の問題点、市の財政力と生活保護費の財源構造などが幅広く審議されました。",
+  "highlights": [
+    "防災備蓄品の達成率・避難所環境整備（段ボールベッド・トイレ等）を審議",
+    "旭川空港の国際線拡充とグランドハンドリング人材不足が課題",
+    "街あかりイルミネーション30周年に向け名称・デザインをリニューアル",
+    "職場ハラスメント相談15件のうち認定件数ゼロで対応の実効性が問われる",
+    "財政力指数が中核市62市中60位と低水準で将来の大型事業財源に懸念"
+  ],
+  "tags": [
+    "防災",
+    "備蓄",
+    "避難所",
+    "観光",
+    "空港",
+    "グランドハンドリング",
+    "イルミネーション",
+    "財政",
+    "生活保護",
+    "ハラスメント",
+    "EV・電気自動車",
+    "ふるさと納税",
+    "東京事務所",
+    "公用車",
+    "DX"
+  ],
+  "speakers": [
+    {
+      "name": "石川厚子委員",
+      "role": "議員",
+      "speech_count": 125
+    },
+    {
+      "name": "中村みなこ委員",
+      "role": "議員",
+      "speech_count": 111
+    },
+    {
+      "name": "能登谷委員",
+      "role": "議員",
+      "speech_count": 93
+    },
+    {
+      "name": "高橋ひでとし委員長",
+      "role": "議長",
+      "speech_count": 87
+    },
+    {
+      "name": "金谷委員",
+      "role": "議員",
+      "speech_count": 83
+    },
+    {
+      "name": "皆川委員",
+      "role": "議員",
+      "speech_count": 79
+    },
+    {
+      "name": "品田委員長",
+      "role": "議長",
+      "speech_count": 74
+    },
+    {
+      "name": "上野委員",
+      "role": "議員",
+      "speech_count": 67
+    },
+    {
+      "name": "あべ委員",
+      "role": "議員",
+      "speech_count": 66
+    },
+    {
+      "name": "まじま委員",
+      "role": "議員",
+      "speech_count": 61
+    },
+    {
+      "name": "石川まさゆき委員",
+      "role": "議員",
+      "speech_count": 57
+    },
+    {
+      "name": "中村のりゆき委員",
+      "role": "議員",
+      "speech_count": 57
+    },
+    {
+      "name": "えびな委員",
+      "role": "議員",
+      "speech_count": 53
+    },
+    {
+      "name": "小林委員",
+      "role": "議員",
+      "speech_count": 53
+    },
+    {
+      "name": "植木委員",
+      "role": "議員",
+      "speech_count": 52
+    },
+    {
+      "name": "宮川福祉保険部長寿社会課長",
+      "role": "理事者",
+      "speech_count": 51
+    },
+    {
+      "name": "駒木委員",
+      "role": "議員",
+      "speech_count": 49
+    },
+    {
+      "name": "松山女性活躍推進部次長",
+      "role": "理事者",
+      "speech_count": 46
+    },
+    {
+      "name": "横山委員",
+      "role": "議員",
+      "speech_count": 46
+    },
+    {
+      "name": "高花委員",
+      "role": "議員",
+      "speech_count": 44
+    },
+    {
+      "name": "江川委員",
+      "role": "議員",
+      "speech_count": 43
+    },
+    {
+      "name": "塩尻委員",
+      "role": "議員",
+      "speech_count": 40
+    },
+    {
+      "name": "菅原委員",
+      "role": "議員",
+      "speech_count": 40
+    },
+    {
+      "name": "梶山行財政改革推進部行政改革課長",
+      "role": "理事者",
+      "speech_count": 39
+    },
+    {
+      "name": "笠井委員",
+      "role": "議員",
+      "speech_count": 38
+    },
+    {
+      "name": "河原総務部管財課長",
+      "role": "理事者",
+      "speech_count": 36
+    },
+    {
+      "name": "渡辺健康保健部次長",
+      "role": "理事者",
+      "speech_count": 36
+    },
+    {
+      "name": "佐藤委員",
+      "role": "議員",
+      "speech_count": 35
+    },
+    {
+      "name": "後藤環境部環境総務課長",
+      "role": "理事者",
+      "speech_count": 35
+    },
+    {
+      "name": "江渕学校教育部学務課長",
+      "role": "理事者",
+      "speech_count": 32
+    },
+    {
+      "name": "安田委員",
+      "role": "議員",
+      "speech_count": 29
+    },
+    {
+      "name": "髙橋紀博委員",
+      "role": "議員",
+      "speech_count": 29
+    },
+    {
+      "name": "菅原観光スポーツ部長",
+      "role": "理事者",
+      "speech_count": 28
+    },
+    {
+      "name": "酒井建築部建築指導課長",
+      "role": "理事者",
+      "speech_count": 28
+    },
+    {
+      "name": "たけいし委員",
+      "role": "議員",
+      "speech_count": 28
+    },
+    {
+      "name": "板東学校教育部学校施設課長",
+      "role": "理事者",
+      "speech_count": 28
+    },
+    {
+      "name": "いしかわまさき委員",
+      "role": "議員",
+      "speech_count": 27
+    },
+    {
+      "name": "熊谷子育て支援部こども保育課長",
+      "role": "理事者",
+      "speech_count": 27
+    },
+    {
+      "name": "坂本社会教育部文化振興課長",
+      "role": "理事者",
+      "speech_count": 27
+    },
+    {
+      "name": "村椿総務部人事課コンプライアンス担当課長",
+      "role": "理事者",
+      "speech_count": 23
+    },
+    {
+      "name": "尾藤環境部廃棄物処理課長",
+      "role": "理事者",
+      "speech_count": 23
+    },
+    {
+      "name": "香川子育て支援部子育て支援課長",
+      "role": "理事者",
+      "speech_count": 20
+    },
+    {
+      "name": "沼﨑委員",
+      "role": "議員",
+      "speech_count": 19
+    },
+    {
+      "name": "杉山委員長",
+      "role": "議長",
+      "speech_count": 18
+    },
+    {
+      "name": "沼田消防本部総務課消防団担当課長",
+      "role": "理事者",
+      "speech_count": 18
+    },
+    {
+      "name": "杉山農政部次長",
+      "role": "理事者",
+      "speech_count": 18
+    },
+    {
+      "name": "後藤経済部産業振興課長",
+      "role": "理事者",
+      "speech_count": 18
+    },
+    {
+      "name": "細矢農業センター所長",
+      "role": "理事者",
+      "speech_count": 17
+    },
+    {
+      "name": "松本地域振興部交通空港課長",
+      "role": "理事者",
+      "speech_count": 16
+    },
+    {
+      "name": "伊藤防災安全部防災課主幹",
+      "role": "理事者",
+      "speech_count": 16
+    },
+    {
+      "name": "紺田防災安全部防災課長",
+      "role": "理事者",
+      "speech_count": 16
+    },
+    {
+      "name": "吉田市立旭川病院事務局次長",
+      "role": "理事者",
+      "speech_count": 16
+    },
+    {
+      "name": "阿保健康保健部保健所保健予防課長",
+      "role": "理事者",
+      "speech_count": 16
+    },
+    {
+      "name": "堀江福祉保険部国民健康保険課長",
+      "role": "理事者",
+      "speech_count": 15
+    },
+    {
+      "name": "内田工芸センター所長",
+      "role": "理事者",
+      "speech_count": 15
+    },
+    {
+      "name": "松田観光スポーツ部次長",
+      "role": "理事者",
+      "speech_count": 15
+    },
+    {
+      "name": "鈴木福祉保険部次長",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "高桑福祉保険部生活支援課長",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "中田旭山動物園主幹",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "松田委員",
+      "role": "議員",
+      "speech_count": 14
+    },
+    {
+      "name": "上田観光スポーツ部観光課長",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "近藤市民生活部市民課総合窓口担当課長",
+      "role": "理事者",
+      "speech_count": 13
+    },
+    {
+      "name": "川原観光スポーツ部スポーツ施設整備課長",
+      "role": "理事者",
+      "speech_count": 13
+    },
+    {
+      "name": "和田総務部長",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "板谷地域振興部次長",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "田村経済部次長",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "和田土木部公園みどり課主幹",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "星土木部公園みどり課長",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "今田総合政策部財政課主幹",
+      "role": "理事者",
+      "speech_count": 11
+    },
+    {
+      "name": "石持土木部雪対策課長",
+      "role": "理事者",
+      "speech_count": 11
+    },
+    {
+      "name": "菅原旭川大雪圏東京事務所長",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "鈴木市民生活部市民生活課主幹",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "今市民生活部市民生活課長",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "冨田農政部次長",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "田村社会教育部長",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "中山学校教育部教育指導課主幹",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "岩崎子育て支援部次長",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "石川地域振興部交通空港課主幹",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "小澤総合政策部次長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "水上福祉保険部障害福祉課長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "太田環境部長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "齊藤税務部納税推進課長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "松里社会教育部公民館事業課長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "浅利行財政改革推進部長",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "橋本総務部人事課主幹",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "佐藤環境部廃棄物政策課長",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "三宮経済部長",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "今井土木事業所主幹",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "小島経済部次長",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "三宅地域振興部長",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "八木総務部次長",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "尾藤福祉保険部福祉保険課主幹",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "紺野福祉保険部障害福祉課主幹",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "金総務部次長",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "小松経済部経済交流課主幹",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "住吉経済部経済交流課長",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "柴田子育て支援部おやこ応援課長",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "佐瀬地域振興部次長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "鳴海選挙管理委員会事務局次長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "菅野副市長",
+      "role": "市長",
+      "speech_count": 6
+    },
+    {
+      "name": "坂谷内総務部職員厚生課長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "中村副市長",
+      "role": "市長",
+      "speech_count": 6
+    },
+    {
+      "name": "秋葉健康保健部保健所衛生検査課長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "佐藤クリーンセンター主幹",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "岡田建築部長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "田村学校教育部主幹",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "野﨑教育長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "向井子育て支援部長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "小松学校教育部教育政策課適正配置担当課長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "田島社会教育部文化ホール整備担当部長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "前川社会教育部社会教育課主幹",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "今津市長",
+      "role": "市長",
+      "speech_count": 6
+    },
+    {
+      "name": "内村防災安全部長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "熊谷総合政策部長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "羽田野東旭川支所長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "蛯名選挙管理委員会事務局主幹",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "川邊福祉保険部長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "桝井副市長",
+      "role": "市長",
+      "speech_count": 5
+    },
+    {
+      "name": "田中土木事業所長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "坂本学校教育部長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "松野郷社会教育部次長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "笠井副委員長",
+      "role": "議長",
+      "speech_count": 5
+    },
+    {
+      "name": "工藤学校教育部教育指導課長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "成田学校教育部学務課学校ＩＣＴ担当課長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "池田学校教育部学校保健課長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "村上建築部市営住宅課主幹",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "田上子育て支援部子育て助成課長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "河端消防長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "原地域振興部都市計画課主幹",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "藤原消防本部次長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "高田福祉保険部保険制度担当部長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "木村病院事務局長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "高橋総合政策部次長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "狩野消防本部警防課主幹",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "山下税務部納税管理課長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "小島社会教育部社会教育課主幹",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "吉岡建築部市営住宅課主幹",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "中村建築部市営住宅課長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "草野子ども総合相談センター所長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "山口健康保健部長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "樽井市民生活部長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "齊藤市民生活部市民課長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "片岡女性活躍推進部長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "澤渡環境部次長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "高橋土木部雪対策担当部長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "富岡土木部長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "林農政部長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "平島市民生活部地域活動推進課主幹",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "尾崎土木部土木管理課長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "沼田博物館長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "金澤税務部長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "長谷川選挙管理委員会事務局長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "北嶋市立旭川病院事務局次長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "笠井クリーンセンター所長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "時田土木部次長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "佐々木市民生活部次長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "山下学校教育部教職員課長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "稲場上下水道部料金課長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "柴建築部建築総務課長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "山田総務部職員厚生課職員健康担当課長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "石井病院事業管理者",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "古川市立旭川病院事務局地域医療連携課主幹",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "狩野総合政策部政策調整課主幹",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "泉消防本部警防課長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "石原いじめ防止対策推進部長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "幾原上下水道部長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "佐藤水道事業管理者",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "紙谷建築部建築総務課主幹",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "林上議会事務局次長",
+      "role": "理事者",
+      "speech_count": 1
+    }
+  ],
+  "questioners": [
+    {
+      "name": "皆川委員",
+      "topics": [
+        "防災備蓄品・避難所運営",
+        "公用車管理・稼働率",
+        "EV公用車導入"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "江川委員",
+      "topics": [
+        "地域公共交通対策費・JR路線維持費の資料要求",
+        "ふるさと納税実績の資料要求"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "高花委員",
+      "topics": [
+        "消防団員数・女性消防団員の決算状況"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "佐藤委員",
+      "topics": [
+        "備蓄品整備状況の資料要求"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "能登谷委員",
+      "topics": [
+        "財政力指数・経常収支比率・市債残高",
+        "生活保護費の財源構造",
+        "生活保護ケースワーカーの人員配置"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "えびな委員",
+      "topics": [
+        "行政検査・依頼検査の検体数資料要求"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "石川厚子委員",
+      "topics": [
+        "差押え件数・換価充当件数の資料要求"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "あべ委員",
+      "topics": [
+        "庁舎・支所の利活用",
+        "旭川大雪圏東京事務所の営業活動",
+        "街あかりイルミネーション事業"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "金谷委員",
+      "topics": [
+        "衆院選挙費用・ポスター掲示場の見直し",
+        "旭川空港の路線誘致と国際線拡充",
+        "職場ハラスメント相談・認定件数",
+        "BPO導入推進費の費用対効果"
+      ],
+      "ai_topics": []
+    }
+  ]
+}

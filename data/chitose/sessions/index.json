@@ -36,8 +36,8 @@
     "date": "2026-03-10",
     "committee": "本会議",
     "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-teireikai1-day4-20260311",
@@ -46,8 +46,8 @@
     "date": "2026-03-11",
     "committee": "本会議",
     "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-teireikai1-day5-20260312",
@@ -66,8 +66,8 @@
     "date": "2026-03-13",
     "committee": "本会議",
     "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-yosan-2nd-20260318",
@@ -116,8 +116,8 @@
     "date": "2026-03-25",
     "committee": "予算特別委員会",
     "segment_count": 0,
-    "has_transcript": false,
-    "has_summary": false
+    "has_transcript": true,
+    "has_summary": true
   },
   {
     "id": "r8-teireikai1-day7-20260326",

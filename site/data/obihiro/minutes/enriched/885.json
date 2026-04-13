@@ -1,0 +1,895 @@
+{
+  "council_id": 885,
+  "name": "令和 ７年第１回 ２月定例会 予算審査特別委員会",
+  "generated_at": "2026-04-12",
+  "summary": "令和7年度帯広市一般会計予算の総務費審査。大空会館の移転改築設計（2,013万円）、防災無線の全面更新（4.4億円）、指定避難所への非常用発電機整備（1.7億円）、マイナンバーカード窓口の10階移設・9窓口化、自治体情報システム標準化の進捗など、市民生活に密着した多岐にわたる事業が審議された。",
+  "highlights": [
+    "大空会館を旧大空小学校跡地へ移転改築、実施設計費2,013万円計上",
+    "防災無線を令和7年12月をめどに全120か所で新システムへ更新",
+    "指定避難所40か所に非常用発電機を整備、令和7年度完了予定",
+    "マイナンバー窓口を10階に移設・9窓口に拡充し混雑緩和へ",
+    "戸籍の振り仮名記載対応事業に5,765万円、専用窓口・専用ダイヤルを新設"
+  ],
+  "tags": [
+    "予算",
+    "防災",
+    "DX",
+    "交通安全",
+    "防犯",
+    "マイナンバー",
+    "庁舎管理",
+    "選挙",
+    "町内会",
+    "老人クラブ",
+    "男女共同参画",
+    "広報",
+    "自衛官募集",
+    "情報システム標準化",
+    "福祉"
+  ],
+  "speakers": [
+    {
+      "name": "西本嘉伸委員長",
+      "role": "議長",
+      "speech_count": 276
+    },
+    {
+      "name": "１２番（大平亮介委員）",
+      "role": "議員",
+      "speech_count": 73
+    },
+    {
+      "name": "４番（椎名成委員）",
+      "role": "議員",
+      "speech_count": 70
+    },
+    {
+      "name": "６番（大塚徹委員）",
+      "role": "議員",
+      "speech_count": 64
+    },
+    {
+      "name": "１番（藤浦有希委員）",
+      "role": "議員",
+      "speech_count": 63
+    },
+    {
+      "name": "１２番（杉野智美委員）",
+      "role": "議員",
+      "speech_count": 53
+    },
+    {
+      "name": "５番（大竹口武光委員）",
+      "role": "議員",
+      "speech_count": 37
+    },
+    {
+      "name": "藤原健観光交流課長補佐",
+      "role": "理事者",
+      "speech_count": 37
+    },
+    {
+      "name": "１１番（三浦勇利委員）",
+      "role": "議員",
+      "speech_count": 37
+    },
+    {
+      "name": "１１番（大平亮介委員）",
+      "role": "議員",
+      "speech_count": 35
+    },
+    {
+      "name": "５番（工藤進委員）",
+      "role": "議員",
+      "speech_count": 34
+    },
+    {
+      "name": "高木克康商業労働課長",
+      "role": "理事者",
+      "speech_count": 34
+    },
+    {
+      "name": "２番（佐々木直美委員）",
+      "role": "議員",
+      "speech_count": 34
+    },
+    {
+      "name": "１０番（林佳奈子委員）",
+      "role": "議員",
+      "speech_count": 34
+    },
+    {
+      "name": "３番（大林愛慶委員）",
+      "role": "議員",
+      "speech_count": 33
+    },
+    {
+      "name": "１２番（播磨和宏委員）",
+      "role": "議員",
+      "speech_count": 33
+    },
+    {
+      "name": "野崎実商業労働課長補佐",
+      "role": "理事者",
+      "speech_count": 33
+    },
+    {
+      "name": "１１番（播磨和宏委員）",
+      "role": "議員",
+      "speech_count": 30
+    },
+    {
+      "name": "９番（木幡裕之委員）",
+      "role": "議員",
+      "speech_count": 30
+    },
+    {
+      "name": "長谷川義人生活支援第２課長補佐",
+      "role": "理事者",
+      "speech_count": 28
+    },
+    {
+      "name": "１番（柳田健太郎委員）",
+      "role": "議員",
+      "speech_count": 28
+    },
+    {
+      "name": "阿部恭子観光交流課長",
+      "role": "理事者",
+      "speech_count": 27
+    },
+    {
+      "name": "古井健太郎学校教育課長補佐",
+      "role": "理事者",
+      "speech_count": 26
+    },
+    {
+      "name": "１０番（三浦勇利委員）",
+      "role": "議員",
+      "speech_count": 25
+    },
+    {
+      "name": "２番（菊地ルツ委員）",
+      "role": "議員",
+      "speech_count": 24
+    },
+    {
+      "name": "８番（谷保寿彦委員）",
+      "role": "議員",
+      "speech_count": 24
+    },
+    {
+      "name": "鷲北博敬スポーツ課長",
+      "role": "理事者",
+      "speech_count": 24
+    },
+    {
+      "name": "３番（佐々木直美委員）",
+      "role": "議員",
+      "speech_count": 23
+    },
+    {
+      "name": "城岡佳奈健康推進課長補佐",
+      "role": "理事者",
+      "speech_count": 23
+    },
+    {
+      "name": "梶穂健康推進課長・保健福祉センター館長",
+      "role": "理事者",
+      "speech_count": 23
+    },
+    {
+      "name": "８番（大和田三朗委員）",
+      "role": "議員",
+      "speech_count": 22
+    },
+    {
+      "name": "齋藤周平地域福祉課長",
+      "role": "理事者",
+      "speech_count": 22
+    },
+    {
+      "name": "石田欣也道路維持課主幹",
+      "role": "理事者",
+      "speech_count": 22
+    },
+    {
+      "name": "４番（工藤進委員）",
+      "role": "議員",
+      "speech_count": 21
+    },
+    {
+      "name": "今野さゆり危機対策課長補佐",
+      "role": "理事者",
+      "speech_count": 21
+    },
+    {
+      "name": "３番（菊地ルツ委員）",
+      "role": "議員",
+      "speech_count": 21
+    },
+    {
+      "name": "熊林佑允財政課長補佐",
+      "role": "理事者",
+      "speech_count": 20
+    },
+    {
+      "name": "６番（有城正憲委員）",
+      "role": "議員",
+      "speech_count": 18
+    },
+    {
+      "name": "２番（岡坂忠志委員）",
+      "role": "議員",
+      "speech_count": 18
+    },
+    {
+      "name": "９番（大和田三朗委員）",
+      "role": "議員",
+      "speech_count": 18
+    },
+    {
+      "name": "６番（工藤進委員）",
+      "role": "議員",
+      "speech_count": 18
+    },
+    {
+      "name": "鈴木嗣克道路維持課長",
+      "role": "理事者",
+      "speech_count": 18
+    },
+    {
+      "name": "服部亮国保課長補佐",
+      "role": "理事者",
+      "speech_count": 18
+    },
+    {
+      "name": "佐藤真樹学校教育課長",
+      "role": "理事者",
+      "speech_count": 17
+    },
+    {
+      "name": "７番（鬼塚英喜委員）",
+      "role": "議員",
+      "speech_count": 16
+    },
+    {
+      "name": "中渡久哉経済企画課長補佐",
+      "role": "理事者",
+      "speech_count": 16
+    },
+    {
+      "name": "内藤真也上下水道部総務課主幹",
+      "role": "理事者",
+      "speech_count": 16
+    },
+    {
+      "name": "尾澤琴也危機対策課長",
+      "role": "理事者",
+      "speech_count": 15
+    },
+    {
+      "name": "城石徹税務室長",
+      "role": "理事者",
+      "speech_count": 15
+    },
+    {
+      "name": "村井和徳ばんえい振興課長補佐",
+      "role": "理事者",
+      "speech_count": 15
+    },
+    {
+      "name": "７番（谷保寿彦委員）",
+      "role": "議員",
+      "speech_count": 15
+    },
+    {
+      "name": "高橋健太郎窓口ＤＸ副主幹",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "藤本百代地域福祉課長補佐",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "斉藤進也介護高齢福祉課長補佐",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "西島新一環境課長・中島地区振興課長",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "４番（稗貫秀次委員）",
+      "role": "議員",
+      "speech_count": 14
+    },
+    {
+      "name": "５番（椎名成委員）",
+      "role": "議員",
+      "speech_count": 14
+    },
+    {
+      "name": "野崎友香スポーツ課長補佐",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "岡本圭二生活支援第１課長",
+      "role": "理事者",
+      "speech_count": 13
+    },
+    {
+      "name": "佐藤克己介護高齢福祉課長",
+      "role": "理事者",
+      "speech_count": 13
+    },
+    {
+      "name": "８番（上野庸介委員）",
+      "role": "議員",
+      "speech_count": 13
+    },
+    {
+      "name": "高田敦史市民活動課長補佐",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "山下修弘財務室長",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "幸田賢一障害福祉課長補佐",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "廣川英二農村振興課長補佐",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "柴山英介市民活動課長",
+      "role": "理事者",
+      "speech_count": 11
+    },
+    {
+      "name": "千葉優作人事課長補佐",
+      "role": "理事者",
+      "speech_count": 11
+    },
+    {
+      "name": "１番（岡坂忠志委員）",
+      "role": "議員",
+      "speech_count": 11
+    },
+    {
+      "name": "５番（今野祐子委員）",
+      "role": "議員",
+      "speech_count": 11
+    },
+    {
+      "name": "１１番（杉野智美委員）",
+      "role": "議員",
+      "speech_count": 11
+    },
+    {
+      "name": "安田和彦選挙課長",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "８番（鬼塚英喜委員）",
+      "role": "議員",
+      "speech_count": 10
+    },
+    {
+      "name": "畠山貢農政課長補佐",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "逢坂尚宏住宅営繕課長補佐",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "西川栄樹住宅営繕課長",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "９番（石井宏治委員）",
+      "role": "議員",
+      "speech_count": 10
+    },
+    {
+      "name": "青木慶宏国保課長",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "藤芳雅人人事課長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "岡田剛環境室長・中島地区振興室長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "郡谷亮農政課長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "７番（佐々木勇一委員）",
+      "role": "議員",
+      "speech_count": 9
+    },
+    {
+      "name": "黒野正博みどりの課長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "唯野勉下水道課長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "山中雅生百年記念館長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "大林美樹図書館副館長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "藤沼茂生契約管財課長",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "能登美由紀こども課長補佐",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "７番（上野庸介委員）",
+      "role": "議員",
+      "speech_count": 8
+    },
+    {
+      "name": "廣瀬渡農村振興課長",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "徳岡淳土木課長補佐",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "小林撤哉学校教育指導課長",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "佐藤智紀戸籍住民課長",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "高橋知恵美広報広聴課長",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "関口美恵子育て支援課長補佐",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "久保田真市民税課長",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "１０番（今識史委員）",
+      "role": "議員",
+      "speech_count": 6
+    },
+    {
+      "name": "野原直美介護高齢福祉課主幹",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "６番（今野祐子委員）",
+      "role": "議員",
+      "speech_count": 6
+    },
+    {
+      "name": "板倉智幸農政部副参事",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "１０番（石井宏治委員）",
+      "role": "議員",
+      "speech_count": 6
+    },
+    {
+      "name": "広沢正明土木室長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "村田晶宏建築開発課長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "天池文彦生涯学習文化課長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "永田拓也図書館長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "杉本美紀動物園副園長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "木下博章資産税課長",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "松隈聖子収納課長補佐",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "澤沼克也子育て支援課長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "三谷彩恵子商業労働室長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "佐々木寿文消防課消防団主幹",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "１１番（今識史委員）",
+      "role": "議員",
+      "speech_count": 5
+    },
+    {
+      "name": "秋田剛志土木課長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "渡邊誠克児童会館長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "稲葉利行動物園長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "藤原理恵子学校給食センター長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "谷川耕平契約管財課長補佐",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "大橋貴生活支援室長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "加藤帝農政部参事",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "能登裕之危機対策室副参事",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "川角健一都市建築室長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "澤口智邦上下水道部総務課長",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "奥秋努行政改革主幹",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "家内郁子福祉支援室長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "佐藤淳健康保険室長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "藤内裕也農政部副主幹",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "菅原禎章消防課救急副主幹",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "伊藤博康消防課救急主幹",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "木下忠実書記",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "鈴木征次ＩＣＴ推進課長補佐",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "村田義博ＩＣＴ推進課長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "中里嘉之政策推進部長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "桑嶋健吾清掃事業課長補佐",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "篠原祥一都市環境部長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "佐久間哲郎経営室長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "河江邦教学校教育指導課指導主事",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "工藤進副委員長",
+      "role": "議長",
+      "speech_count": 1
+    },
+    {
+      "name": "松原浩司総務室長・危機対策室長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "石津優子企画課長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "毛利英孝地域福祉室長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "戸田心こども課長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "河原康博総務部長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "下野一人市民福祉部長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "高橋秀和都市環境部参事",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "櫻田裕康清掃担当次長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "小林伸行農政室長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "池原佳一副市長",
+      "role": "市長",
+      "speech_count": 1
+    },
+    {
+      "name": "吉田誠経済部長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "谷保寿彦副委員長",
+      "role": "議長",
+      "speech_count": 1
+    },
+    {
+      "name": "安達康博副市長",
+      "role": "市長",
+      "speech_count": 1
+    },
+    {
+      "name": "大島竜哉技術室長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "広瀬容孝教育長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "新井英樹教育研究所長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "加藤一心教育総務室長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "服部哲也学校教育部長",
+      "role": "理事者",
+      "speech_count": 1
+    }
+  ],
+  "questioners": [
+    {
+      "name": "工藤進",
+      "topics": [
+        "大空会館移転改築",
+        "交通安全対策",
+        "防犯活動・青色パトロール",
+        "マイナンバーカード窓口体制強化"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "大和田三朗",
+      "topics": [
+        "危険交差点の交通安全対策",
+        "町内会自治活動費交付金",
+        "公用車のEV化・カーシェア活用"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "鬼塚英喜",
+      "topics": [
+        "防災無線整備",
+        "指定避難所への非常用発電機整備",
+        "老人クラブ活動支援",
+        "選挙費・投票率向上・移動式投票所"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "大竹口武光",
+      "topics": [
+        "市役所庁舎管理・長寿命化",
+        "庁舎照明のLED化",
+        "浸水対策・設備更新"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "今識史",
+      "topics": [
+        "窓口サービスのスマート化・オンライン予約",
+        "自治体窓口DXSaaS導入検討"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "藤浦有希",
+      "topics": [
+        "広報活動費・公式LINE登録者拡大",
+        "男女共同参画推進費",
+        "若年層投票率向上・要介助者の投票環境"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "杉野智美",
+      "topics": [
+        "自衛官募集名簿提供と未成年の個人情報保護",
+        "除外申請制度の周知"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "岡坂忠志",
+      "topics": [
+        "自治体情報システム標準化の進捗と財源",
+        "戸籍振り仮名記載対応事業",
+        "旧南商業高校跡地の売却・利活用"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "播磨和宏",
+      "topics": [
+        "滞納整理機構の役割と負担金",
+        "差押え件数・子育て世帯への影響",
+        "小規模修繕登録制度の現状と改善"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "佐々木直美",
+      "topics": [
+        "コミュニティ施設整備・統廃合の方向性",
+        "個別避難計画の作成促進",
+        "自主防災組織の支援と結成率",
+        "備蓄品の管理・活用"
+      ],
+      "ai_topics": []
+    }
+  ]
+}
