@@ -6,6 +6,26 @@ import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import { Accordion } from "@/components/Accordion";
 
+type ElectionCandidate = {
+  name: string;
+  furigana: string;
+  party: string;
+  votes: number;
+  result: string;
+  status: string;
+  note?: string;
+};
+
+type ElectionData = {
+  election_date: string;
+  election_name: string;
+  city: string;
+  seats: number;
+  total_candidates: number;
+  turnout: number;
+  candidates: ElectionCandidate[];
+};
+
 function getMembers(): Member[] {
   const fp = path.join(process.cwd(), "data", "eniwa", "members.json");
   return JSON.parse(fs.readFileSync(fp, "utf-8")) as Member[];
@@ -17,6 +37,15 @@ function getActivity(): Record<string, MemberActivity> {
     return JSON.parse(fs.readFileSync(fp, "utf-8")) as Record<string, MemberActivity>;
   } catch {
     return {};
+  }
+}
+
+function getElection(): ElectionData | null {
+  try {
+    const fp = path.join(process.cwd(), "data", "eniwa", "election.json");
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as ElectionData;
+  } catch {
+    return null;
   }
 }
 
@@ -65,6 +94,18 @@ export default async function MemberDetailPage({
   const activity = getActivity();
   const memberActivity = activity[member.name.replace(/\s/g, "")];
   const topThemes = (memberActivity?.themes ?? []).slice(0, 8);
+
+  const election = getElection();
+  const normalizedMemberName = member.name.replace(/\s/g, "");
+  const electionCandidate = election?.candidates.find(
+    (c) => c.name.replace(/\s/g, "") === normalizedMemberName
+  ) ?? null;
+  const electionRank = electionCandidate
+    ? election!.candidates
+        .slice()
+        .sort((a, b) => b.votes - a.votes)
+        .findIndex((c) => c.name.replace(/\s/g, "") === normalizedMemberName) + 1
+    : null;
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -215,6 +256,51 @@ export default async function MemberDetailPage({
         <div className="bg-[#F4F6F9] rounded-lg p-6 text-center">
           <p className="text-sm text-[#718096]">質問活動データは準備中です</p>
         </div>
+      )}
+
+      {/* 選挙履歴 */}
+      {electionCandidate && election && (
+        <section className="mt-6">
+          <h3 className="text-base font-bold text-[#1B3A6B] mb-3">選挙履歴</h3>
+          <Accordion title={election.election_name} defaultOpen={false}>
+            <div className="px-5 py-4">
+              <dl className="space-y-3">
+                <div className="flex gap-3">
+                  <dt className="text-xs font-medium text-[#718096] w-16 shrink-0 pt-0.5">選挙日</dt>
+                  <dd className="text-sm text-[#1A202C]">{election.election_date}</dd>
+                </div>
+                <div className="flex gap-3">
+                  <dt className="text-xs font-medium text-[#718096] w-16 shrink-0 pt-0.5">得票数</dt>
+                  <dd className="text-sm text-[#1A202C]">
+                    {Math.floor(electionCandidate.votes).toLocaleString()}票
+                    {electionCandidate.note && (
+                      <span className="ml-1 text-xs text-[#718096]">（{electionCandidate.note}）</span>
+                    )}
+                  </dd>
+                </div>
+                {electionRank && (
+                  <div className="flex gap-3">
+                    <dt className="text-xs font-medium text-[#718096] w-16 shrink-0 pt-0.5">順位</dt>
+                    <dd className="text-sm text-[#1A202C]">{electionRank}位 / {election.total_candidates}人中</dd>
+                  </div>
+                )}
+                <div className="flex gap-3">
+                  <dt className="text-xs font-medium text-[#718096] w-16 shrink-0 pt-0.5">結果</dt>
+                  <dd>
+                    <span className={`text-xs font-semibold px-2 py-0.5 rounded ${electionCandidate.result === "当選" ? "bg-[#E8EEF7] text-[#2A5298]" : "bg-gray-100 text-gray-600"}`}>
+                      {electionCandidate.result}
+                    </span>
+                    <span className="ml-2 text-xs text-[#718096]">{electionCandidate.status}</span>
+                  </dd>
+                </div>
+                <div className="flex gap-3">
+                  <dt className="text-xs font-medium text-[#718096] w-16 shrink-0 pt-0.5">投票率</dt>
+                  <dd className="text-sm text-[#1A202C]">{election.turnout}%</dd>
+                </div>
+              </dl>
+            </div>
+          </Accordion>
+        </section>
       )}
     </div>
   );
