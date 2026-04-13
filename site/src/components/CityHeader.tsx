@@ -293,6 +293,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
             {[
               { href: "/", label: "トップ" },
               { href: "/map", label: "地図" },
+              { href: "/topics", label: "テーマ別" },
               { href: "/chitose/sessions", label: "会議録・要約" },
               { href: "/search", label: "検索" },
               { href: "/ai-search", label: "✦ AI検索" },
