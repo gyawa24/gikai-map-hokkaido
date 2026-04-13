@@ -30,6 +30,7 @@ function categoryLabel(typeLabel: string): string {
   return "その他";
 }
 
+// v2 - force cache bust
 export default function NakagawaMinutesPage() {
   const allItems = getMinutesIndex();
   const items = allItems.map((item) => ({
