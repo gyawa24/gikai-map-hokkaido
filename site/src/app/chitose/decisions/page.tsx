@@ -39,8 +39,8 @@ export default function DecisionsPage() {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-lg font-bold text-gray-800">議決結果</h2>
-        <p className="text-sm text-gray-500 mt-1">
+        <h2 className="text-lg font-bold text-[#1B3A6B]">議決結果</h2>
+        <p className="text-sm text-[#4A5568] mt-1">
           直近4回の定例会の議決結果PDFを掲載しています。
         </p>
       </div>
@@ -105,7 +105,7 @@ export default function DecisionsPage() {
                     href={d.source_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-600 border border-gray-200 rounded-lg px-4 py-2 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-sm text-[#718096] hover:text-[#1B3A6B] border border-[#CBD5E0] rounded-lg px-4 py-2 transition-colors"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

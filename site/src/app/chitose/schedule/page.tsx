@@ -52,8 +52,8 @@ export default function SchedulePage() {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-lg font-bold text-gray-800">行事予定</h2>
-        <p className="text-sm text-gray-500 mt-1">
+        <h2 className="text-lg font-bold text-[#1B3A6B]">行事予定</h2>
+        <p className="text-sm text-[#4A5568] mt-1">
           千歳市議会の直近の行事予定です。
         </p>
       </div>

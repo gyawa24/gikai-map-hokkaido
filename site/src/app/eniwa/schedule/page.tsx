@@ -22,8 +22,8 @@ export default function EniwaSchedulePage() {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-lg font-bold text-gray-800">行事予定</h2>
-        <p className="text-sm text-gray-500 mt-1">
+        <h2 className="text-lg font-bold text-[#1B3A6B]">行事予定</h2>
+        <p className="text-sm text-[#4A5568] mt-1">
           恵庭市議会の会議日程・行事予定です。
         </p>
       </div>
@@ -65,14 +65,14 @@ export default function EniwaSchedulePage() {
               </a>
             ))
           ) : (
-            <p className="text-sm text-gray-400">現在、予定はありません。</p>
+            <p className="text-sm text-[#718096]">現在、予定はありません。</p>
           )}
 
           <a
             href={schedule.source_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-600 border border-gray-200 rounded-lg px-4 py-2.5 transition-colors mt-2"
+            className="inline-flex items-center gap-1.5 text-sm text-[#718096] hover:text-[#1B3A6B] border border-[#CBD5E0] rounded-lg px-4 py-2.5 transition-colors mt-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

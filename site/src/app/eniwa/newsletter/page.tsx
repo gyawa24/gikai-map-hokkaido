@@ -37,8 +37,8 @@ export default function EniwaNewsletterPage() {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-lg font-bold text-gray-800">議会だより</h2>
-        <p className="text-sm text-gray-500 mt-1">
+        <h2 className="text-lg font-bold text-[#1B3A6B]">議会だより</h2>
+        <p className="text-sm text-[#4A5568] mt-1">
           えにわ市議会だよりの最新号を掲載しています。
         </p>
       </div>
@@ -56,7 +56,7 @@ export default function EniwaNewsletterPage() {
         </div>
 
         <h3 className="text-xl font-bold text-gray-900 mb-1">{nl.title}</h3>
-        <p className="text-sm text-gray-400 mb-6">発行: {nl.published_date}</p>
+        <p className="text-sm text-[#718096] mb-6">発行: {nl.published_date}</p>
 
         <div className="flex flex-wrap gap-3">
           <a
@@ -90,7 +90,7 @@ export default function EniwaNewsletterPage() {
             href={nl.source_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-600 border border-gray-200 rounded-lg px-4 py-2.5 transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm text-[#718096] hover:text-[#1B3A6B] border border-[#CBD5E0] rounded-lg px-4 py-2.5 transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
