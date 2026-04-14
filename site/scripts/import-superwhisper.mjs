@@ -4,15 +4,13 @@
  *
  * 使い方:
  *   node scripts/import-superwhisper.mjs \
- *     --id r8-yosan-4th-20260323 \
+ *     --id r8-teireikai1-day3-20260310 \
  *     --meta /path/to/meta.json
- *
- * 前提: ANTHROPIC_API_KEY 環境変数が設定されていること
  */
 
-import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
 import path from "path";
+import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -31,6 +29,27 @@ if (!sessionId || !metaPath) {
   process.exit(1);
 }
 
+// --- 語彙辞書 ---
+function loadVocabulary(city) {
+  const fp = path.join(ROOT, "data", city, "vocabulary.json");
+  try { return JSON.parse(fs.readFileSync(fp, "utf-8")); } catch { return null; }
+}
+function applyCorrections(text, vocab) {
+  if (!vocab?.corrections) return text;
+  let result = text;
+  for (const { wrong, right } of vocab.corrections) result = result.replaceAll(wrong, right);
+  return result;
+}
+
+// --- claude -p でテキスト生成 ---
+function claudeQuery(prompt) {
+  const result = spawnSync("claude", ["-p", "--output-format", "text"], {
+    input: prompt, encoding: "utf-8", timeout: 120_000, maxBuffer: 10 * 1024 * 1024,
+  });
+  if (result.status !== 0) throw new Error(`claude -p failed: ${result.stderr?.trim().slice(0, 200)}`);
+  return result.stdout.trim();
+}
+
 // --- セッションJSONを読み込む ---
 const sessionFile = path.join(ROOT, "data", "chitose", "sessions", `${sessionId}.json`);
 if (!fs.existsSync(sessionFile)) {
@@ -38,6 +57,9 @@ if (!fs.existsSync(sessionFile)) {
   process.exit(1);
 }
 const session = JSON.parse(fs.readFileSync(sessionFile, "utf-8"));
+const city = "chitose";
+const vocab = loadVocabulary(city);
+if (vocab) console.log(`語彙辞書: ${vocab.corrections?.length ?? 0}件の補正ルール`);
 
 // --- meta.json を読み込む ---
 console.log("meta.json 読み込み中...");
@@ -89,7 +111,8 @@ for (let pi = 0; pi < boundaries.length - 1; pi++) {
 
   if (cleaned.length === 0) continue;
 
-  const text = cleaned.map((s) => s.text.trim()).join("\n");
+  const rawText = cleaned.map((s) => s.text.trim()).join("\n");
+  const text = applyCorrections(rawText, vocab);
   const startTime = cleaned[0].start;
   const endTime   = cleaned[cleaned.length - 1].end;
 
@@ -108,46 +131,29 @@ parts.forEach((p) =>
   console.log(`  ${p.label}: ${p.start_time}〜${p.end_time} (${p.char_count.toLocaleString()}文字)`)
 );
 
-// --- Claude API で要約生成 ---
-if (!process.env.ANTHROPIC_API_KEY) {
-  console.error("\nエラー: ANTHROPIC_API_KEY が設定されていません");
-  process.exit(1);
-}
-
-const client = new Anthropic();
-
-async function summarize(text, label, total) {
+// --- 要約生成（claude -p / MaxPlan） ---
+function summarize(text, label, total) {
   process.stdout.write(`  ${label}（全${total}部） 要約生成中... `);
   const truncated = text.length > 6000 ? text.slice(0, 6000) + "\n…（省略）" : text;
+  const vocabNote = vocab
+    ? `【正しい固有名詞】議員名：${(vocab.members ?? []).join("、")}。重要用語：${(vocab.key_terms ?? []).slice(0, 8).join("、")}。\n\n`
+    : "";
+  const prompt = `あなたは北海道千歳市議会の会議記録を整理するアシスタントです。
+以下は千歳市議会の文字起こし（${label}）です。次のJSON形式のみで回答してください:
+{"summary":"3〜4文の日本語要約（誰が・何について・どう議論したか）","topics":["キーワード1","キーワード2","キーワード3","キーワード4"]}
 
-  const res = await client.messages.create({
-    model: "claude-haiku-4-5-20251001",
-    max_tokens: 400,
-    system: "あなたは北海道千歳市議会の会議記録を整理するアシスタントです。",
-    messages: [{
-      role: "user",
-      content: `以下は千歳市議会（予算特別委員会）の文字起こし（${label}）です。
-次のJSON形式のみで回答してください:
-
-{
-  "summary": "3〜4文の日本語要約（誰が・何について・どう議論したか）",
-  "topics": ["キーワード1", "キーワード2", "キーワード3", "キーワード4"]
-}
-
-文字起こし:
-${truncated}`,
-    }],
-  });
-
-  const json = JSON.parse(res.content[0].text.match(/\{[\s\S]*\}/)[0]);
-  console.log(`完了 (in:${res.usage.input_tokens} out:${res.usage.output_tokens})`);
+${vocabNote}文字起こし:
+${truncated}`;
+  const text2 = claudeQuery(prompt);
+  const json = JSON.parse(text2.match(/\{[\s\S]*\}/)[0]);
+  console.log("完了");
   return json;
 }
 
 console.log("\n要約生成中...");
 const segments = [];
 for (const part of parts) {
-  const result = await summarize(part.transcript, part.label, parts.length);
+  const result = summarize(part.transcript, part.label, parts.length);
   segments.push({
     index:      part.index,
     label:      part.label,
