@@ -186,13 +186,23 @@ function buildPromptText(session) {
   return lines.join("\n");
 }
 
+// --- 語彙辞書を読み込む ---
+function loadVocabulary(city) {
+  const fp = path.join(ROOT, "data", city, "vocabulary.json");
+  try { return JSON.parse(fs.readFileSync(fp, "utf-8")); } catch { return null; }
+}
+
 // --- claude -p で要約・タグ生成 ---
-function generateEnrichment(session) {
+function generateEnrichment(session, city) {
   const promptText = buildPromptText(session);
+  const vocab = loadVocabulary(city);
+  const vocabNote = vocab
+    ? `【正しい固有名詞】議員名：${(vocab.members ?? []).join("、")}。重要用語：${(vocab.key_terms ?? []).slice(0, 8).join("、")}。文字起こし中の誤表記は正しい表記に直してください。\n\n`
+    : "";
 
   const prompt = `以下は市議会の会議録です。市民向けに分かりやすく整理してください。
 
-${promptText}
+${vocabNote}${promptText}
 
 ---
 以下のJSON形式のみで回答してください（説明文・コードブロック不要）:
@@ -264,7 +274,7 @@ async function processFile(councilId, city) {
   const speakers = extractSpeakers(session);
   console.log(`     発言者: ${speakers.length}名`);
 
-  const ai = generateEnrichment(session);
+  const ai = generateEnrichment(session, city);
   console.log(`     タグ: ${ai.tags.join(", ")}`);
 
   // 議事録から直接抽出した質問者を優先、AIで補完

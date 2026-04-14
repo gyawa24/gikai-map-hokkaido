@@ -55,6 +55,30 @@ const skipDone  = !hasFlag("--no-skip");   // デフォルトでスキップ
 const NOISE = [/^ご視聴ありがとうございました[。]?$/, /^ありがとうございました[。]?$/];
 const isNoise = (t) => NOISE.some((p) => p.test(t.trim()));
 
+// --- 語彙辞書を読み込む ---
+function loadVocabulary(city) {
+  const fp = path.join(ROOT, "data", city, "vocabulary.json");
+  try { return JSON.parse(fs.readFileSync(fp, "utf-8")); } catch { return null; }
+}
+
+// Whisper initial_prompt 用の文字列を生成
+function buildInitialPrompt(vocab) {
+  if (!vocab) return null;
+  const members = (vocab.members ?? []).join("、");
+  const terms = (vocab.key_terms ?? []).join("、");
+  return `${vocab.council_name ?? "市議会"}。議員：${members}。キーワード：${terms}。`;
+}
+
+// テキストに語彙辞書の補正を適用
+function applyCorrections(text, vocab) {
+  if (!vocab?.corrections) return text;
+  let result = text;
+  for (const { wrong, right } of vocab.corrections) {
+    result = result.replaceAll(wrong, right);
+  }
+  return result;
+}
+
 // --- セッション一覧を読み込む ---
 const indexPath = path.join(ROOT, "data", "chitose", "sessions", "index.json");
 let sessions = JSON.parse(fs.readFileSync(indexPath, "utf-8"));
@@ -84,6 +108,10 @@ fs.mkdirSync(TMP_DIR, { recursive: true });
 let successCount = 0;
 let failCount = 0;
 
+const vocab = loadVocabulary("chitose");
+const initialPrompt = buildInitialPrompt(vocab);
+if (initialPrompt) console.log(`\n語彙ヒント: ${initialPrompt.slice(0, 80)}…`);
+
 for (const entry of sessions) {
   console.log(`\n${"=".repeat(60)}`);
   console.log(`▶ ${entry.title} (${entry.date})`);
@@ -110,7 +138,7 @@ for (const entry of sessions) {
     // 2. mlx_whisper 文字起こし
     if (!fs.existsSync(whisperJson)) {
       console.log("  [2/3] 文字起こし中 (mlx_whisper)...");
-      const ws = spawnSync(MLX_WHISPER, [
+      const whisperArgs = [
         audioPath,
         "--model", WHISPER_MODEL,
         "--language", "ja",
@@ -118,7 +146,9 @@ for (const entry of sessions) {
         "--output-dir", TMP_DIR,
         "--fp16", "False",
         "--condition-on-previous-text", "False",  // ハルシネーション防止
-      ], { stdio: "pipe", timeout: 7200000 }); // 最大2時間
+      ];
+      if (initialPrompt) whisperArgs.push("--initial-prompt", initialPrompt);
+      const ws = spawnSync(MLX_WHISPER, whisperArgs, { stdio: "pipe", timeout: 7200000 }); // 最大2時間
       if (ws.status !== 0) throw new Error(`mlx_whisper failed: ${ws.stderr?.toString().slice(0, 200)}`);
 
       // mlx_whisper は {id}.json ではなく {id}.mp3.json か {basename}.json を出力することがある
@@ -166,7 +196,8 @@ for (const entry of sessions) {
         if (!isNoise(t) && t !== prev && t.length > 0) { cleaned.push(s); prev = t; }
       }
       if (cleaned.length === 0) continue;
-      const text = cleaned.map((s) => s.text.trim()).join("\n");
+      const rawText = cleaned.map((s) => s.text.trim()).join("\n");
+      const text = applyCorrections(rawText, vocab);
       parts.push({
         index: parts.length + 1,
         label: `第${parts.length + 1}部`,
@@ -183,11 +214,14 @@ for (const entry of sessions) {
       const truncated = p.transcript.length > 6000
         ? p.transcript.slice(0, 6000) + "\n…（省略）"
         : p.transcript;
+      const vocabNote = vocab
+        ? `【正しい固有名詞】議員名：${(vocab.members ?? []).join("、")}。重要用語：${(vocab.key_terms ?? []).slice(0, 8).join("、")}。文字起こし中の誤表記は正しい表記に直して要約してください。\n\n`
+        : "";
       const prompt = `あなたは北海道千歳市議会の会議記録を整理するアシスタントです。
 以下は千歳市議会の文字起こし（${p.label}）です。次のJSON形式のみで回答してください:
 {"summary":"3〜4文の日本語要約","topics":["キーワード1","キーワード2","キーワード3"]}
 
-文字起こし:\n${truncated}`;
+${vocabNote}文字起こし:\n${truncated}`;
       const text = claudeQuery(prompt);
       const parsed = JSON.parse(text.match(/\{[\s\S]*\}/)[0]);
       console.log("完了");
