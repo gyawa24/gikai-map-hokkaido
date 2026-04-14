@@ -146,6 +146,7 @@ for (const entry of sessions) {
         "--output-dir", TMP_DIR,
         "--fp16", "False",
         "--condition-on-previous-text", "False",  // ハルシネーション防止
+        "--no-speech-threshold", "0.1",           // 無音判定を緩く（0件対策）
       ];
       if (initialPrompt) whisperArgs.push("--initial-prompt", initialPrompt);
       const ws = spawnSync(MLX_WHISPER, whisperArgs, { stdio: "pipe", timeout: 7200000 }); // 最大2時間
