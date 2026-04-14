@@ -1,0 +1,156 @@
+[
+  {
+    "seat_number": 1,
+    "name": "藤田悠介",
+    "furigana": "ふじたゆうすけ",
+    "party": "無所属",
+    "faction": "新星クラブ",
+    "committees": [
+      "社会産業常任委員会(副委員長)",
+      "議会改革特別委員会",
+      "新総合庁舎整備特別委員会",
+      "芦別高校問題特別委員会"
+    ],
+    "photo_url": "/members/ashibetsu/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "竹内真",
+    "furigana": "たけうちまこと",
+    "party": "無所属",
+    "faction": "新星クラブ",
+    "committees": [
+      "総務常任委員会",
+      "議会運営委員会(副委員長)",
+      "議会改革特別委員会(副委員長)",
+      "新総合庁舎整備特別委員会",
+      "芦別高校問題特別委員会"
+    ],
+    "photo_url": "/members/ashibetsu/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "松尾達矢",
+    "furigana": "まつおたつや",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": [
+      "総務常任委員会(副委員長)",
+      "議会改革特別委員会(委員長)",
+      "新総合庁舎整備特別委員会",
+      "芦別高校問題特別委員会"
+    ],
+    "photo_url": "/members/ashibetsu/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "新村充",
+    "furigana": "しんむらみつる",
+    "party": "自由民主党",
+    "faction": "新星クラブ",
+    "committees": [
+      "総務常任委員会(委員長)",
+      "議会運営委員会",
+      "議会改革特別委員会",
+      "新総合庁舎整備特別委員会",
+      "芦別高校問題特別委員会(副委員長)"
+    ],
+    "photo_url": "/members/ashibetsu/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "石川洋一",
+    "furigana": "いしかわよういち",
+    "party": "無所属",
+    "faction": "新星クラブ",
+    "committees": [
+      "社会産業常任委員会",
+      "新総合庁舎整備特別委員会(副委員長)",
+      "芦別高校問題特別委員会"
+    ],
+    "photo_url": "/members/ashibetsu/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "林伸樹",
+    "furigana": "はやしのぶき",
+    "party": "自由民主党",
+    "faction": "創政会",
+    "committees": [
+      "社会産業常任委員会(委員長)",
+      "議会運営委員会",
+      "議会改革特別委員会",
+      "新総合庁舎整備特別委員会",
+      "芦別高校問題特別委員会"
+    ],
+    "photo_url": "/members/ashibetsu/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "清澤茂宏",
+    "furigana": "きよさわしげひろ",
+    "party": "無所属",
+    "faction": "こうせい",
+    "committees": [
+      "社会産業常任委員会",
+      "議会改革特別委員会",
+      "新総合庁舎整備特別委員会",
+      "芦別高校問題特別委員会"
+    ],
+    "photo_url": "/members/ashibetsu/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "若松市政",
+    "furigana": "わかまついちまさ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "社会産業常任委員会",
+      "新総合庁舎整備特別委員会",
+      "芦別高校問題特別委員会"
+    ],
+    "photo_url": "/members/ashibetsu/seat_8.jpg"
+  },
+  {
+    "seat_number": 9,
+    "name": "松井邦男",
+    "furigana": "まついくにお",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "committees": [
+      "総務常任委員会",
+      "新総合庁舎整備特別委員会",
+      "芦別高校問題特別委員会"
+    ],
+    "photo_url": "/members/ashibetsu/seat_9.jpg"
+  },
+  {
+    "seat_number": 10,
+    "name": "田森良隆",
+    "furigana": "たもりよしたか",
+    "party": "自由民主党",
+    "faction": "創政会",
+    "committees": [
+      "総務常任委員会",
+      "議会運営委員会(委員長)",
+      "新総合庁舎整備特別委員会(委員長)",
+      "芦別高校問題特別委員会(委員長)"
+    ],
+    "photo_url": "/members/ashibetsu/seat_10.jpg"
+  },
+  {
+    "seat_number": 11,
+    "name": "大鎌光純",
+    "furigana": "おおかまみつとし",
+    "party": "自由民主党",
+    "faction": "創政会",
+    "committees": [
+      "総務常任委員会",
+      "社会産業常任委員会",
+      "新総合庁舎整備特別委員会",
+      "芦別高校問題特別委員会"
+    ],
+    "photo_url": "/members/ashibetsu/seat_11.jpg"
+  }
+]

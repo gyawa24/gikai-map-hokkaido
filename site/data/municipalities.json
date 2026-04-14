@@ -5,7 +5,10 @@
     "council_name": "函館市議会",
     "region": "渡島",
     "furigana": "はこだてし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 537,
     "system": "dnp"
@@ -16,7 +19,10 @@
     "council_name": "旭川市議会",
     "region": "上川",
     "furigana": "あさひかわし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 529,
     "system": "dnp"
@@ -27,7 +33,10 @@
     "council_name": "室蘭市議会",
     "region": "胆振",
     "furigana": "むろらんし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 436,
     "system": "dnp"
@@ -38,7 +47,10 @@
     "council_name": "釧路市議会",
     "region": "釧路",
     "furigana": "くしろし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 532,
     "system": "dnp"
@@ -49,7 +61,10 @@
     "council_name": "帯広市議会",
     "region": "十勝",
     "furigana": "おびひろし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 535,
     "system": "dnp"
@@ -60,7 +75,10 @@
     "council_name": "北見市議会",
     "region": "オホーツク",
     "furigana": "きたみし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 483,
     "system": "dnp"
@@ -71,7 +89,11 @@
     "council_name": "苫小牧市議会",
     "region": "胆振",
     "furigana": "とまこまいし",
-    "features": ["members", "minutes", "election"],
+    "features": [
+      "members",
+      "minutes",
+      "election"
+    ],
     "active": true,
     "tenant_id": 536,
     "system": "dnp"
@@ -82,7 +104,10 @@
     "council_name": "稚内市議会",
     "region": "宗谷",
     "furigana": "わっかないし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 70,
     "system": "dnp"
@@ -93,7 +118,10 @@
     "council_name": "芦別市議会",
     "region": "空知",
     "furigana": "あしべつし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 530,
     "system": "dnp"
@@ -104,7 +132,10 @@
     "council_name": "名寄市議会",
     "region": "上川",
     "furigana": "なよろし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 614,
     "system": "dnp"
@@ -115,7 +146,10 @@
     "council_name": "根室市議会",
     "region": "根室",
     "furigana": "ねむろし",
-    "features": ["minutes"],
+    "features": [
+      "members",
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 533,
     "system": "dnp"
@@ -126,7 +160,16 @@
     "council_name": "千歳市議会",
     "region": "石狩",
     "furigana": "ちとせし",
-    "features": ["members", "minutes", "sessions", "decisions", "schedule", "newsletter", "election", "plan"],
+    "features": [
+      "members",
+      "minutes",
+      "sessions",
+      "decisions",
+      "schedule",
+      "newsletter",
+      "election",
+      "plan"
+    ],
     "active": true,
     "tenant_id": 452,
     "system": "dnp"
@@ -137,7 +180,9 @@
     "council_name": "登別市議会",
     "region": "胆振",
     "furigana": "のぼりべつし",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 538,
     "system": "dnp"
@@ -148,7 +193,11 @@
     "council_name": "恵庭市議会",
     "region": "石狩",
     "furigana": "えにわし",
-    "features": ["members", "minutes", "election"],
+    "features": [
+      "members",
+      "minutes",
+      "election"
+    ],
     "active": true,
     "tenant_id": 89,
     "system": "dnp"
@@ -159,7 +208,9 @@
     "council_name": "伊達市議会",
     "region": "胆振",
     "furigana": "だてし",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 542,
     "system": "dnp"
@@ -170,7 +221,9 @@
     "council_name": "北広島市議会",
     "region": "石狩",
     "furigana": "きたひろしまし",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 72,
     "system": "dnp"
@@ -181,7 +234,9 @@
     "council_name": "石狩市議会",
     "region": "石狩",
     "furigana": "いしかりし",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 93,
     "system": "dnp"
@@ -192,7 +247,9 @@
     "council_name": "北斗市議会",
     "region": "渡島",
     "furigana": "ほくとし",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 309,
     "system": "dnp"
@@ -203,7 +260,9 @@
     "council_name": "福島町議会",
     "region": "渡島",
     "furigana": "ふくしまちょう",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 69,
     "system": "dnp"
@@ -214,7 +273,9 @@
     "council_name": "江差町議会",
     "region": "檜山",
     "furigana": "えさしちょう",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 371,
     "system": "dnp"
@@ -225,7 +286,9 @@
     "council_name": "倶知安町議会",
     "region": "後志",
     "furigana": "くっちゃんちょう",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 453,
     "system": "dnp"
@@ -236,7 +299,9 @@
     "council_name": "上川町議会",
     "region": "上川",
     "furigana": "かみかわちょう",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 73,
     "system": "dnp"
@@ -247,7 +312,9 @@
     "council_name": "芽室町議会",
     "region": "十勝",
     "furigana": "めむろちょう",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 454,
     "system": "dnp"
@@ -258,7 +325,9 @@
     "council_name": "池田町議会",
     "region": "十勝",
     "furigana": "いけだちょう",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 353,
     "system": "dnp"
@@ -269,7 +338,9 @@
     "council_name": "中川町議会",
     "region": "上川",
     "furigana": "なかがわちょう",
-    "features": ["minutes"],
+    "features": [
+      "minutes"
+    ],
     "active": true,
     "tenant_id": 527,
     "system": "dnp"
