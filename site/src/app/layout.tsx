@@ -87,9 +87,23 @@ export default function RootLayout({
             <p className="text-xs text-blue-300 mb-2">
               本サイトは非公式の情報サイトです。公式情報は各市議会の公式サイトでご確認ください。
             </p>
-            <p className="text-xs text-blue-400">
-              制作・運営: 小川陽平（千歳市議会議員）
-            </p>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-blue-400">
+              <span>制作・運営: 小川陽平（千歳市議会議員）</span>
+              <a
+                href="mailto:yohei@ogawaya.info"
+                className="hover:text-white transition-colors underline decoration-blue-500"
+              >
+                yohei@ogawaya.info
+              </a>
+              <a
+                href="https://x.com/yoheiogawa_DPFP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors underline decoration-blue-500"
+              >
+                X @yoheiogawa_DPFP
+              </a>
+            </div>
           </div>
         </footer>
       </body>
