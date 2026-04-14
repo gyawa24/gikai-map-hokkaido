@@ -17,7 +17,6 @@ set -e
 cd /Users/yohei/gikai-map-hokkaido
 
 SESSIONS=(
-  "r8-teireikai1-day2-yosan1-20260309"
   "r8-teireikai1-day4-20260311"
   "r8-teireikai1-day6-20260313"
   "r8-yosan-6th-20260325"
