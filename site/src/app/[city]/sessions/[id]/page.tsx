@@ -3,6 +3,7 @@ import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { Session, SessionSummary } from "@/types/session";
+import type { Member } from "@/types/member";
 import TranscriptSegment from "@/components/TranscriptSegment";
 import { getMunicipality } from "@/lib/municipalities";
 
@@ -12,6 +13,15 @@ function getSession(city: string, id: string): Session | null {
     return JSON.parse(fs.readFileSync(fp, "utf-8")) as Session;
   } catch {
     return null;
+  }
+}
+
+function getMembers(city: string): Member[] {
+  const fp = path.join(process.cwd(), "data", city, "members.json");
+  try {
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Member[];
+  } catch {
+    return [];
   }
 }
 
@@ -78,6 +88,7 @@ export default async function CitySessionPage({
   const session = getSession(city, id);
   if (!session) notFound();
 
+  const members = getMembers(city);
   const hasContent = session.segments.length > 0;
 
   return (
@@ -125,7 +136,7 @@ export default async function CitySessionPage({
             </span>
           </h3>
           {session.segments.map((seg) => (
-            <TranscriptSegment key={seg.index} seg={seg} />
+            <TranscriptSegment key={seg.index} seg={seg} members={members} />
           ))}
           {session.generated_at && (
             <p className="text-xs text-[#718096] text-right">

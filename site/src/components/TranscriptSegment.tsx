@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import type { SessionSegment } from "@/types/session";
+import type { Member } from "@/types/member";
 import SegmentDetail from "./SegmentDetail";
+import { resolveSpeaker } from "@/lib/memberUtils";
 
-export default function TranscriptSegment({ seg }: { seg: SessionSegment }) {
+export default function TranscriptSegment({ seg, members = [] }: { seg: SessionSegment; members?: Member[] }) {
   const [open, setOpen] = useState(false);
   const [bodyOpen, setBodyOpen] = useState(false);
 
@@ -23,7 +25,7 @@ export default function TranscriptSegment({ seg }: { seg: SessionSegment }) {
             <span className="text-sm text-[#718096]">{seg.start_time}〜</span>
           )}
           {seg.detail && (
-            <span className="text-xs text-[#718096]">{seg.detail.speaker}</span>
+            <span className="text-xs text-[#718096]">{resolveSpeaker(seg.detail.speaker, members)}</span>
           )}
         </div>
         <svg
@@ -38,7 +40,7 @@ export default function TranscriptSegment({ seg }: { seg: SessionSegment }) {
       {bodyOpen && (
         <div className="px-5 py-4 flex flex-col gap-4">
           {/* 1. ビジュアルカード（detail がある場合） */}
-          {seg.detail && <SegmentDetail detail={seg.detail} />}
+          {seg.detail && <SegmentDetail detail={seg.detail} members={members} />}
 
           {/* 2. 要約 */}
           {seg.summary ? (

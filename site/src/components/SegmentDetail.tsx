@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import type { Member } from "@/types/member";
+import { resolveSpeaker } from "@/lib/memberUtils";
 
 type QA = { q: string; a: string };
 type TopicCard = {
@@ -15,6 +17,7 @@ type Detail = {
   overview: string;
   topics: TopicCard[];
 };
+
 
 function QAItem({ qa, color }: { qa: QA; color: string }) {
   const [open, setOpen] = useState(false);
@@ -49,13 +52,15 @@ function QAItem({ qa, color }: { qa: QA; color: string }) {
   );
 }
 
-export default function SegmentDetail({ detail }: { detail: Detail }) {
+export default function SegmentDetail({ detail, members = [] }: { detail: Detail; members?: Member[] }) {
+  const speakerLabel = resolveSpeaker(detail.speaker, members);
+
   return (
     <div className="rounded-xl overflow-hidden border border-[#CBD5E0] shadow-sm bg-white">
       {/* ヘッダー */}
       <div className="bg-[#1B3A6B] px-5 py-4">
         <p className="text-xs font-bold text-[#F7C948] mb-1 tracking-wider uppercase">議会質疑ダイジェスト</p>
-        <p className="text-white font-bold text-base leading-snug">{detail.speaker}</p>
+        <p className="text-white font-bold text-base leading-snug">{speakerLabel}</p>
         <p className="text-blue-200 text-sm mt-2 leading-relaxed">{detail.overview}</p>
       </div>
 
