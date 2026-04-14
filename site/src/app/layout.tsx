@@ -84,8 +84,11 @@ export default function RootLayout({
                 GitHub
               </a>
             </div>
-            <p className="text-xs text-blue-300">
+            <p className="text-xs text-blue-300 mb-2">
               本サイトは非公式の情報サイトです。公式情報は各市議会の公式サイトでご確認ください。
+            </p>
+            <p className="text-xs text-blue-400">
+              制作・運営: 小川陽平（千歳市議会議員）
             </p>
           </div>
         </footer>
