@@ -43,4 +43,5 @@ export type SessionSummary = {
   segment_count: number;
   has_transcript: boolean;
   has_summary: boolean;
+  speakers?: string[];
 };

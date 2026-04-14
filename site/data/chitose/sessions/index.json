@@ -7,7 +7,19 @@
     "committee": "本会議",
     "segment_count": 3,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": [
+      "今井",
+      "北原",
+      "北山",
+      "吉谷",
+      "坂野",
+      "大山",
+      "小川",
+      "山口",
+      "平川",
+      "梅尾"
+    ]
   },
   {
     "id": "r8-teireikai1-hosei-20260306",
@@ -17,7 +29,10 @@
     "committee": "補正予算特別委員会",
     "segment_count": 1,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": [
+      "梅尾"
+    ]
   },
   {
     "id": "r8-teireikai1-day2-yosan1-20260309",
@@ -27,7 +42,8 @@
     "committee": "本会議・予算特別委員会",
     "segment_count": 0,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": []
   },
   {
     "id": "r8-teireikai1-day3-20260310",
@@ -37,7 +53,8 @@
     "committee": "本会議",
     "segment_count": 0,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": []
   },
   {
     "id": "r8-teireikai1-day4-20260311",
@@ -47,7 +64,8 @@
     "committee": "本会議",
     "segment_count": 0,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": []
   },
   {
     "id": "r8-teireikai1-day5-20260312",
@@ -57,7 +75,8 @@
     "committee": "本会議",
     "segment_count": 1,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": []
   },
   {
     "id": "r8-teireikai1-day6-20260313",
@@ -67,7 +86,8 @@
     "committee": "本会議",
     "segment_count": 0,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": []
   },
   {
     "id": "r8-yosan-2nd-20260318",
@@ -77,7 +97,12 @@
     "committee": "予算特別委員会",
     "segment_count": 2,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": [
+      "北原",
+      "山口",
+      "岩満"
+    ]
   },
   {
     "id": "r8-yosan-3rd-20260319",
@@ -87,7 +112,10 @@
     "committee": "予算特別委員会",
     "segment_count": 2,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": [
+      "山口"
+    ]
   },
   {
     "id": "r8-yosan-4th-20260323",
@@ -97,7 +125,15 @@
     "committee": "予算特別委員会",
     "segment_count": 4,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": [
+      "今野",
+      "佐々木",
+      "坂野",
+      "小川",
+      "山口",
+      "平川"
+    ]
   },
   {
     "id": "r8-yosan-5th-20260324",
@@ -107,7 +143,8 @@
     "committee": "予算特別委員会",
     "segment_count": 1,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": []
   },
   {
     "id": "r8-yosan-6th-20260325",
@@ -117,7 +154,8 @@
     "committee": "予算特別委員会",
     "segment_count": 0,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": []
   },
   {
     "id": "r8-teireikai1-day7-20260326",
@@ -127,6 +165,17 @@
     "committee": "本会議",
     "segment_count": 1,
     "has_transcript": true,
-    "has_summary": true
+    "has_summary": true,
+    "speakers": [
+      "北原",
+      "古川",
+      "吉谷",
+      "坂野",
+      "大山",
+      "宮原",
+      "小川",
+      "山口",
+      "梅尾"
+    ]
   }
 ]
