@@ -1,223 +1,227 @@
 [
   {
     "seat_number": 1,
-    "name": "歴代議長・副議長",
-    "furigana": "",
+    "name": "足立　知也",
+    "furigana": "あだち　ともや",
+    "faction": "無所属・無会派",
     "party": "",
-    "faction": "",
     "committees": [
-      "ホームお知らせ一覧市議会のあらましキッズページ市議会クイズせんきょってなぁに議員の紹介議長・副議長のご挨拶歴代議長・副議長委員会資料公開過去の委員会資料委員会活動計画・報告委員会視察報告市民・団体との意見交換に係る報告政策提言各議員の委員会所属一覧議会中継・会議録検索本会議資料公開会期日程一般質問通告書議決結果一覧意見書・決議文書質問議員・委員会提案による条例政務活動公開会派別議員一覧会派視察・研修報告書(過去分）収支報告・領収書正副議長等活動状況・交際費公開議長活動状況・交際費公開会議録所管事務調査所管事務調査所管事務調査付託案件審査広聴活動議会フォーラムパブリックコメント制度請願・陳情議会だより「でぃすかす」行政視察議会サポーター制度その他の活動議員提要"
+      "観光・経済委員会",
+      "広聴・公開委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_1.jpg"
   },
   {
     "seat_number": 2,
-    "name": "足立知也",
-    "furigana": "あだち　ともや",
-    "party": "",
-    "faction": "無所属・無会派",
+    "name": "小栗　義朗",
+    "furigana": "おぐり　よしろう",
+    "faction": "公明党",
+    "party": "公明党",
     "committees": [
-      "観光・経済委員会"
+      "生活・福祉委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_2.jpg"
   },
   {
     "seat_number": 3,
-    "name": "小栗義朗",
-    "furigana": "おぐり　よしろう",
-    "party": "公明党",
-    "faction": "公明党",
+    "name": "佐々木　久美子",
+    "furigana": "ささき　くみこ",
+    "faction": "日本共産党",
+    "party": "日本共産党",
     "committees": [
-      "生活・福祉委員会"
+      "議会運営委員会",
+      "総務・教育委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_3.jpg"
   },
   {
     "seat_number": 4,
-    "name": "佐々木久美子",
-    "furigana": "ささき　くみこ",
-    "party": "日本共産党",
-    "faction": "日本共産党",
+    "name": "天神林　美彦",
+    "furigana": "てんじんばやし　よしひこ",
+    "faction": "市民・前進",
+    "party": "",
     "committees": [
-      "ホームお知らせ一覧市議会のあらましキッズページ市議会クイズせんきょってなぁに議員の紹介議長・副議長のご挨拶歴代議長・副議長委員会資料公開過去の委員会資料委員会活動計画・報告委員会視察報告市民・団体との意見交換に係る報告政策提言各議員の委員会所属一覧議会中継・会議録検索本会議資料公開会期日程一般質問通告書議決結果一覧意見書・決議文書質問議員・委員会提案による条例政務活動公開会派別議員一覧会派視察・研修報告書(過去分）収支報告・領収書正副議長等活動状況・交際費公開議長活動状況・交際費公開会議録所管事務調査所管事務調査所管事務調査付託案件審査広聴活動議会フォーラムパブリックコメント制度請願・陳情議会だより「でぃすかす」行政視察議会サポーター制度その他の活動議員提要",
-      "総務・教育委員会",
-      "H23.5.13～H25.5.14　生活・福祉委員会、議会だより編集委員会、予算・決算委員会",
-      "H25.5.14～H27.4.30　生活・福祉委員会、議会だより編集委員会、予算・決算委員会",
-      "H27.5.14～H29.5.9　  総務・教育委員会、議会だより編集委員会、予算・決算委員会",
-      "H29.5.9～H31.4.30　  総務・教育委員会、議会だより編集委員会、予算・決算委員会",
-      "R1.5.17～R3.5.7　　  総務・教育委員会、広聴・公開委員会、予算・決算委員会",
-      "R3.5.7～R5.4.30　　  生活・福祉委員会、広聴・公開委員会、予算・決算委員会",
-      "R5.5.15～R7.5.13　　議会運営委員会、総務・教育委員会、予算・決算委員会",
-      "R7.5.13～　　　　　  議会運営委員会、総務・教育委員会、予算・決算委員会"
+      "議会運営委員会",
+      "観光・経済委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_4.jpg"
   },
   {
     "seat_number": 5,
-    "name": "天神林美彦",
-    "furigana": "てんじんばやし　よしひこ",
-    "party": "",
-    "faction": "市民・前進",
+    "name": "村井　寿行",
+    "furigana": "むらい　としゆき",
+    "faction": "公明党",
+    "party": "公明党",
     "committees": [
-      "議会運営委員会"
+      "観光・経済委員会",
+      "広聴・公開委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_5.jpg"
   },
   {
     "seat_number": 6,
-    "name": "村井寿行",
-    "furigana": "むらい　としゆき",
-    "party": "公明党",
-    "faction": "公明党",
+    "name": "伊藤　健太",
+    "furigana": "いとう　けんた",
+    "faction": "市民・前進",
+    "party": "",
     "committees": [
-      "観光・経済委員会"
+      "議会運営委員会",
+      "総務・教育委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_6.jpg"
   },
   {
     "seat_number": 7,
-    "name": "伊藤健太",
-    "furigana": "いとう　けんた",
-    "party": "",
-    "faction": "市民・前進",
+    "name": "金澤　則男",
+    "furigana": "かなざわ　のりお",
+    "faction": "日本共産党",
+    "party": "日本共産党",
     "committees": [
-      "議会運営委員会"
+      "生活・福祉委員会",
+      "広聴・公開委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_7.jpg"
   },
   {
     "seat_number": 8,
-    "name": "金澤則男",
-    "furigana": "かなざわ　のりお",
-    "party": "日本共産党",
-    "faction": "日本共産党",
+    "name": "杉尾　直樹",
+    "furigana": "すぎお　なおき",
+    "faction": "市政クラブ",
+    "party": "",
     "committees": [
-      "生活・福祉委員会"
+      "観光・経済委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_8.jpg"
   },
   {
     "seat_number": 9,
-    "name": "杉尾直樹",
-    "furigana": "すぎお　なおき",
+    "name": "戸井　肇",
+    "furigana": "とい　はじめ",
+    "faction": "市民・前進",
     "party": "",
-    "faction": "市政クラブ",
     "committees": [
-      "観光・経済委員会"
+      "議会運営委員会",
+      "総務・教育委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_9.jpg"
   },
   {
     "seat_number": 10,
-    "name": "戸井肇",
-    "furigana": "とい　はじめ",
+    "name": "若木　康夫",
+    "furigana": "わかき　やすお",
+    "faction": "市政クラブ",
     "party": "",
-    "faction": "市民・前進",
     "committees": [
-      "議会運営委員会"
+      "総務・教育委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_10.jpg"
   },
   {
     "seat_number": 11,
-    "name": "若木康夫",
-    "furigana": "わかき　やすお",
+    "name": "井野　正臣",
+    "furigana": "いの　まさおみ",
+    "faction": "市民・前進",
     "party": "",
-    "faction": "市政クラブ",
     "committees": [
-      "総務・教育委員会"
+      "生活・福祉委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_11.jpg"
   },
   {
     "seat_number": 12,
-    "name": "井野正臣",
-    "furigana": "いの　まさおみ",
-    "party": "",
+    "name": "工藤　俱二雄",
+    "furigana": "くどう　くにお",
     "faction": "市民・前進",
+    "party": "",
     "committees": [
-      "生活・福祉委員会"
+      "観光・経済委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_12.jpg"
   },
   {
     "seat_number": 13,
-    "name": "工藤俱二雄",
-    "furigana": "くどう　くにお",
+    "name": "千田　文孝",
+    "furigana": "ちだ　ふみたか",
+    "faction": "市民・前進",
     "party": "",
-    "faction": "",
-    "committees": [
-      "観光・経済委員会"
-    ],
+    "committees": [],
     "photo_url": "/members/noboribetsu/seat_13.jpg"
   },
   {
     "seat_number": 14,
-    "name": "千田文孝",
-    "furigana": "ちだ　ふみたか",
-    "party": "",
+    "name": "成田　昭浩",
+    "furigana": "なりた　あきひろ",
     "faction": "市民・前進",
+    "party": "",
     "committees": [
-      "H27.5.14～H29.5.9　 観光・経済委員会、議会だより編集委員会、予算・決算委員会",
-      "H29.5.9～H31.4.30 　生活・福祉委員会、議会だより編集委員会、予算・決算委員会、議会運営委員会",
-      "R1.5.17～R3.5.7 　　生活・福祉委員会、予算・決算委員会、議会運営委員会",
-      "R3.5.7～R5.4.30　　 副議長、総務・教育委員会、予算・決算委員会、西いぶり広域連合議会議員"
+      "生活・福祉委員会",
+      "広聴・公開委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_14.jpg"
   },
   {
     "seat_number": 15,
-    "name": "成田昭浩",
-    "furigana": "なりた　あきひろ",
+    "name": "岩田　恵",
+    "furigana": "いわた　めぐみ",
+    "faction": "市政クラブ",
     "party": "",
-    "faction": "市民・前進",
     "committees": [
-      "生活・福祉委員会"
+      "議会運営委員会",
+      "総務・教育委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_15.jpg"
   },
   {
     "seat_number": 16,
-    "name": "岩田恵",
-    "furigana": "いわた　めぐみ",
-    "party": "",
-    "faction": "市政クラブ",
+    "name": "今野　幹大",
+    "furigana": "こんの　まさひろ",
+    "faction": "公明党",
+    "party": "公明党",
     "committees": [
-      "議会運営委員会"
+      "議会運営委員会",
+      "総務・教育委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_16.jpg"
   },
   {
     "seat_number": 17,
-    "name": "今野幹大",
-    "furigana": "こんの　まさひろ",
-    "party": "公明党",
-    "faction": "公明党",
+    "name": "辻　弘之",
+    "furigana": "つじ　ひろし",
+    "faction": "市政クラブ",
+    "party": "",
     "committees": [
-      "議会運営委員会"
+      "生活・福祉委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_17.jpg"
   },
   {
     "seat_number": 18,
-    "name": "辻󠄀弘之",
-    "furigana": "つじ　ひろし",
+    "name": "宮武　祥子",
+    "furigana": "みやたけ　しょうこ",
+    "faction": "市政クラブ",
     "party": "",
-    "faction": "",
     "committees": [
-      "生活・福祉委員会"
+      "議会運営委員会",
+      "生活・福祉委員会",
+      "広聴・公開委員会",
+      "予算・決算委員会"
     ],
     "photo_url": "/members/noboribetsu/seat_18.jpg"
-  },
-  {
-    "seat_number": 19,
-    "name": "宮武祥子",
-    "furigana": "みやたけ　しょうこ",
-    "party": "",
-    "faction": "市政クラブ",
-    "committees": [
-      "議会運営委員会"
-    ],
-    "photo_url": "/members/noboribetsu/seat_19.jpg"
   }
 ]

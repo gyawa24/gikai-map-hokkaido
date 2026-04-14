@@ -1,0 +1,230 @@
+[
+  {
+    "seat_number": 1,
+    "name": "遠藤典子",
+    "furigana": "えんどう のりこ",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": [
+      "建設文教常任委員会",
+      "議会運営委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "阿部裕美子",
+    "furigana": "あべ ゆみこ",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": [
+      "厚生常任委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "山本由美子",
+    "furigana": "やまもと ゆみこ",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": [
+      "総務常任委員会",
+      "議会広報特別委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "蜂谷高海",
+    "furigana": "はちや たかうみ",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "committees": [
+      "総務常任委員会",
+      "議会運営委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "松本喜久枝",
+    "furigana": "まつもと きくえ",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "committees": [
+      "厚生常任委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "山崎祥子",
+    "furigana": "やまざき さちこ",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "committees": [
+      "建設文教常任委員会",
+      "議会広報特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "神代知花子",
+    "furigana": "くましろ ちかこ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "厚生常任委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "金谷聡",
+    "furigana": "かなや さとし",
+    "party": "改革市民会議",
+    "faction": "改革市民会議",
+    "committees": [
+      "厚生常任委員会",
+      "議会広報特別委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_8.jpg"
+  },
+  {
+    "seat_number": 9,
+    "name": "上村賢",
+    "furigana": "かみむら さとし",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "建設文教常任委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_9.jpg"
+  },
+  {
+    "seat_number": 10,
+    "name": "片平一義",
+    "furigana": "かたひら かずよし",
+    "party": "改革市民会議",
+    "faction": "改革市民会議",
+    "committees": [
+      "総務常任委員会",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_10.jpg"
+  },
+  {
+    "seat_number": 11,
+    "name": "青山祐司",
+    "furigana": "あおやま ゆうじ",
+    "party": "石政会",
+    "faction": "石政会",
+    "committees": [
+      "建設文教常任委員会",
+      "議会広報特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_11.jpg"
+  },
+  {
+    "seat_number": 12,
+    "name": "山本健司",
+    "furigana": "やまもと けんじ",
+    "party": "石政会",
+    "faction": "石政会",
+    "committees": [
+      "総務常任委員会",
+      "議会広報特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_12.jpg"
+  },
+  {
+    "seat_number": 13,
+    "name": "鈴木圭一",
+    "furigana": "すずき けいいち",
+    "party": "石政会",
+    "faction": "石政会",
+    "committees": [
+      "総務常任委員会",
+      "議会広報特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_13.jpg"
+  },
+  {
+    "seat_number": 14,
+    "name": "加藤泰博",
+    "furigana": "かとう やすひろ",
+    "party": "石政会",
+    "faction": "石政会",
+    "committees": [],
+    "photo_url": "/members/ishikari/seat_14.jpg"
+  },
+  {
+    "seat_number": 15,
+    "name": "山田敏人",
+    "furigana": "やまだ としひと",
+    "party": "石政会",
+    "faction": "石政会",
+    "committees": [
+      "厚生常任委員会",
+      "議会運営委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_15.jpg"
+  },
+  {
+    "seat_number": 16,
+    "name": "高田静夫",
+    "furigana": "たかだ しずお",
+    "party": "石政会",
+    "faction": "石政会",
+    "committees": [
+      "厚生常任委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_16.jpg"
+  },
+  {
+    "seat_number": 17,
+    "name": "伊藤一治",
+    "furigana": "いとう かずはる",
+    "party": "石政会",
+    "faction": "石政会",
+    "committees": [
+      "総務常任委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_17.jpg"
+  },
+  {
+    "seat_number": 18,
+    "name": "花田和彦",
+    "furigana": "はなだ かずひこ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務常任委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_18.jpg"
+  },
+  {
+    "seat_number": 19,
+    "name": "日下部勝義",
+    "furigana": "くさかべ かつよし",
+    "party": "石政会",
+    "faction": "石政会",
+    "committees": [
+      "建設文教常任委員会",
+      "議会運営委員会",
+      "議会基本条例検証特別委員会"
+    ],
+    "photo_url": "/members/ishikari/seat_19.jpg"
+  }
+]
