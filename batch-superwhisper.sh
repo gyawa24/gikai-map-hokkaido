@@ -62,8 +62,8 @@ wait_for_sw_completion() {
       wc=$(sqlite3 "$SW_DB" "SELECT rawWordCount FROM recording WHERE rowid = $latest_rowid;" 2>/dev/null || echo "0")
       dur=$(sqlite3 "$SW_DB" "SELECT duration FROM recording WHERE rowid = $latest_rowid;" 2>/dev/null || echo "0")
 
-      # 30分(1800秒)未満の録音は議会音声ではないのでスキップ
-      if [ "${wc:-0}" -gt "0" ] && [ "${dur:-0}" -gt "1800" ] 2>/dev/null; then
+      # 60分(3600秒)未満の録音は議会音声ではないのでスキップ
+      if [ "${wc:-0}" -gt "0" ] && [ "${dur:-0}" -gt "3600" ] 2>/dev/null; then
         echo "  → Super Whisper完了 (${elapsed}秒経過, ${wc}語, ${dur}秒)"
         return 0
       elif [ "${wc:-0}" -gt "0" ] 2>/dev/null; then
