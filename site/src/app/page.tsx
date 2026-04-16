@@ -51,70 +51,6 @@ function getMinutesCount(cityId: string): number {
   }
 }
 
-type RecentHighlight = {
-  cityId: string;
-  cityName: string;
-  councilId: number;
-  councilName: string;
-  summary: string;
-  tags: string[];
-  generatedAt: string;
-};
-
-function getRecentHighlights(limit = 4): RecentHighlight[] {
-  const results: RecentHighlight[] = [];
-  const cityMap: Record<string, string> = {
-    chitose: "千歳市",
-    eniwa: "恵庭市",
-    tomakomai: "苫小牧市",
-    asahikawa: "旭川市",
-    hakodate: "函館市",
-    muroran: "室蘭市",
-    kushiro: "釧路市",
-    wakkanai: "稚内市",
-    kitami: "北見市",
-    obihiro: "帯広市",
-    nayoro: "名寄市",
-    date: "伊達市",
-    fukushima: "福島町",
-    hokuto: "北斗市",
-    ishikari: "石狩市",
-    kitahiroshima: "北広島市",
-    nemuro: "根室市",
-    noboribetsu: "登別市",
-    ashibetsu: "芦別市",
-    memuro: "芽室町",
-    kamikawa: "上川町",
-    nakagawa: "中川町",
-    kutchan: "倶知安町",
-    ikeda: "池田町",
-    esashi: "江差町",
-  };
-  for (const [cityId, cityName] of Object.entries(cityMap)) {
-    const dir = path.join(process.cwd(), "data", cityId, "minutes", "enriched");
-    if (!fs.existsSync(dir)) continue;
-    const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
-    for (const f of files) {
-      try {
-        const d = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"));
-        results.push({
-          cityId,
-          cityName,
-          councilId: d.council_id as number,
-          councilName: (d.name as string) ?? "",
-          summary: (d.summary as string) ?? "",
-          tags: ((d.tags as string[]) ?? []).slice(0, 3),
-          generatedAt: (d.generated_at as string) ?? "",
-        });
-      } catch {
-        // skip broken files
-      }
-    }
-  }
-  return results
-    .sort((a, b) => b.generatedAt.localeCompare(a.generatedAt))
-    .slice(0, limit);
-}
 
 const CITIES = [
   {
@@ -355,7 +291,7 @@ export default function HomePage() {
 
   const totalMembers = cities.reduce((sum, c) => sum + c.memberCount, 0);
   const totalDecisions = cities.reduce((sum, c) => sum + c.decisionCount, 0);
-  const recentHighlights = getRecentHighlights(4);
+
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -365,7 +301,7 @@ export default function HomePage() {
           北海道の市議会情報を<br className="sm:hidden" />ひとつの場所で
         </h2>
         <p className="text-base text-[#4A5568] leading-relaxed mb-5">
-          千歳・恵庭・苫小牧の市議会情報を横断的に収録。議員名簿・議決結果・行事予定・議会だよりをまとめて閲覧できます。
+          北海道内の市町村議会の議事録・議決結果・議員名簿を横断的に収録。だれでも簡単に閲覧できます。
         </p>
 
         {/* サマリー統計 */}
@@ -388,48 +324,6 @@ export default function HomePage() {
           </div>
         )}
       </section>
-
-      {/* 最近の議事録ハイライト */}
-      {recentHighlights.length > 0 && (
-        <section className="mb-8">
-          <h3 className="text-sm font-semibold text-[#718096] uppercase tracking-wider mb-3">最近の議事録</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {recentHighlights.map((h) => (
-              <Link
-                key={`${h.cityId}-${h.councilId}`}
-                href={`/${h.cityId}/minutes/${h.councilId}`}
-                className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] shadow-sm hover:shadow-md transition-all duration-150 p-4 flex flex-col gap-2"
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#2A5298] rounded-full font-medium shrink-0">
-                    {h.cityName}
-                  </span>
-                </div>
-                <p className="text-sm font-bold text-[#1A202C] leading-snug">
-                  {h.councilName}
-                </p>
-                {h.summary && (
-                  <p className="text-sm text-[#4A5568] leading-relaxed">
-                    {h.summary.slice(0, 60)}…
-                  </p>
-                )}
-                {h.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-1 mt-auto">
-                    {h.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs px-2 py-0.5 bg-gray-100 text-gray-700 rounded-full"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
 
       {/* 市選択 */}
       <section className="mb-8">
