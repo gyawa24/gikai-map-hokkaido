@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- サイト情報 -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- <meta name="viewport" content="width=device-width"> -->
+<title>エラーページ | 倶知安町</title>
+<meta name="description" content="倶知安町の公式ホームページです">
+<meta name="keywords" content="倶知安町,倶知安町役場,虻田郡,くっちゃん,じゃがいも,スキー,雪,パウダースノー,羊蹄山">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="倶知安町">
+<meta property="og:image" content="https://www.town.kutchan.hokkaido.jp/image/ogp.jpg">
+<meta property="og:image:width" content="300" />
+<meta property="og:image:height" content="300" />
+<!-- ファビコン、アップルタッチ設定等 -->
+<link rel="shortcut icon" href="https://www.town.kutchan.hokkaido.jp/favicon.ico">
+<!-- css -->
+<link rel="stylesheet" href="https://www.town.kutchan.hokkaido.jp/css/rwdgrid.css">
+<link rel="stylesheet" href="https://www.town.kutchan.hokkaido.jp/css/reset.css">
+<link rel="stylesheet" href="https://www.town.kutchan.hokkaido.jp/css/common.css?1776078653">
+<link rel="stylesheet" href="https://www.town.kutchan.hokkaido.jp/css/color.css?1776068482">
+<!-- js -->
+<script type="text/javascript" src="https://www.town.kutchan.hokkaido.jp/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="https://www.town.kutchan.hokkaido.jp/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="https://www.town.kutchan.hokkaido.jp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="https://www.town.kutchan.hokkaido.jp/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="https://www.town.kutchan.hokkaido.jp/js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="https://www.town.kutchan.hokkaido.jp/js/heightLine.js"></script>
+<script type="text/javascript" src="https://www.town.kutchan.hokkaido.jp/js/common.js?1776089052"></script>
+<script type="text/javascript">
+var d = window.document;
+if(navigator.userAgent.indexOf('iPad') > -1){
+		//d.write('<meta name="viewport" content="width=1024, user-scalable=yes,">');
+	}
+else{
+		d.write('<meta name="viewport" content="width=device-width">');
+	}
+</script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]--></head>
+<body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NE870YCCJP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-34635255-1');
+  gtag('config', 'G-NE870YCCJP');
+</script>
+<!-- wrap -->
+<div id="wrap">
+		<!-- header -->
+	<header id="header" class="clearfix">
+		<div id="move"><a href="#main_content">ページの本文に移動する</a></div>
+		<div class="container-12">
+			<!-- logo -->
+			<div class="pc grid-3">
+				<!--<h1><a href="https://www.town.kutchan.hokkaido.jp/"><img src="https://www.town.kutchan.hokkaido.jp/img/header_logo_pc.png" alt="倶知安町" /></a></h1>-->
+				<h1 id="head-title"><a href="https://www.town.kutchan.hokkaido.jp/"><span id="head-title-text">倶知安町</span></h1>
+			</div>
+			<div class="sp grid-3 clearfix">
+				<h1><img src="https://www.town.kutchan.hokkaido.jp/img/header_logo_sp.png" alt="倶知安町" /></h1>
+				<div class="aco clearfix">
+					<a href="#" class="aco_btn"><span>メニュー</span></a>
+					<!-- gl_nav -->
+					<nav>
+						<ul class="gl_nav clearfix">
+							<li><a href="/Living_Information/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav01.png" alt="" />くらしの情報<span>Living Information</span></a></li>
+<li><a href="/tourism/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav02.png" alt="" />観光<span>Tourism</span></a></li>
+<li><a href="/culture-sports/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav03.png" alt="" />文化・スポーツ<span>Culture Sports</span></a></li>
+<li><a href="/work-industry/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav04.png" alt="" />しごと・産業<span>Work Industry</span></a></li>
+<li><a href="/town_administration/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav05.png" alt="" />町政情報<span>Town administration</span></a></li>						</ul>
+						<a href="" class="cls_btn">閉じる</a>
+					</nav>
+				</div>
+				<div class="aco clearfix">
+					<a href="#" class="aco_btn"><span>くらしの<br>便利帳</span></a>
+					<!-- useful -->
+					<nav>
+						<ul class="useful clearfix">
+											<li><a href="/Living_Information/todokede-shoumei/" class="useful-link"><span class="useful-icon useful-icon01"></span><em class="useful-title">届出・証明</em><span class="useful-text">Notifications<br>and Certificates</span></a></li>
+				<li><a href="/Living_Information/hoken-nenkin/" class="useful-link"><span class="useful-icon useful-icon02"></span><em class="useful-title">保険・年金</em><span class="useful-text">Insurance<br>and Pension</span></a></li>
+				<li><a href="/Living_Information/zei/" class="useful-link"><span class="useful-icon useful-icon03"></span><em class="useful-title">税金</em><span class="useful-text useful-text01">Tax</span></a></li>
+				<li><a href="/Living_Information/kosodate-kyouiku/" class="useful-link"><span class="useful-icon useful-icon04"></span><em class="useful-title">子育て・教育</em><span class="useful-text">Child care<br>and Education</span></a></li>
+				<li><a href="/Living_Information/fukushi-kaigo/" class="useful-link"><span class="useful-icon useful-icon05"></span><em class="useful-title">福祉・介護</em><span class="useful-text">Welfare<br>and Nursing</span></a></li>
+				<li><a href="/Living_Information/iryo-kenko/" class="useful-link"><span class="useful-icon useful-icon06"></span><em class="useful-title">医療・健康</em><span class="useful-text">Medical service and Health</span></a></li>
+				<li><a href="/Living_Information/gomi-risaikuru/" class="useful-link"><span class="useful-icon useful-icon07"></span><em class="useful-title">ごみ・リサイクル</em><span class="useful-text">Garbage<br>and Recycling</span></a></li>
+				<li><a href="/Living_Information/sumai-koutu/" class="useful-link"><span class="useful-icon useful-icon08"></span><em class="useful-title">住まい・交通</em><span class="useful-text">House and Transportation</span></a></li>
+				<li><a href="/Living_Information/suidou/" class="useful-link"><span class="useful-icon useful-icon09"></span><em class="useful-title">水道</em><span class="useful-text">Water and Sewage service</span></a></li>
+				<li><a href="/Living_Information/bouhan-bousai-syobo/" class="useful-link"><span class="useful-icon useful-icon10"></span><em class="useful-title">防犯・防災・消防</em><span class="useful-text useful-text01">Emergencies</span></a></li>
+				<li><a href="/Living_Information/kurasi_kankyoutaisaku/" class="useful-link"><span class="useful-icon useful-icon11"></span><em class="useful-title">暮らし・生活環境</em><span class="useful-text">Daily Life<br>and Environment</span></a></li>
+				<li><a href="/Living_Information/soudan/" class="useful-link"><span class="useful-icon useful-icon12"></span><em class="useful-title">相談</em><span class="useful-text useful-text01">Consultation</span></a></li>
+						</ul>
+						<a href="" class="cls_btn">閉じる</a>
+					</nav>
+				</div>
+			</div>
+			
+			<div class="grid-9">
+				<!-- head_sub -->
+				<div class="head_sub clearfix">
+					<div class="pc blc_font clearfix">
+						<p>文字サイズ</p>
+						<ul class="clearfix">
+							<li id="fontS" class="font_size">小</li>
+							<li id="fontM" class="font_size">中</li>
+							<li id="fontL" class="font_size">大</li>
+						</ul>
+					</div>
+					<div class="pc blc_bg clearfix">
+						<p>背景</p>
+						<ul class="bg clearfix">
+							<li id="white">白</li>
+							<li id="black">黒</li>
+							<li id="yellow">黄</li>
+							<li id="blue">青</li>
+						</ul>
+					</div>
+					<div class="blc_search clearfix">
+						<form action="/search/" class="search_form" method="GET">
+							<label for="search-input" id="search-title">サイト内検索</label>
+							<input id="search-input" class="tt" type="text" name="s"><input type="hidden" name="p" value="0"><button class="sb" type="submit" title="サイト内検索を入力">検索</button>
+						</form>
+					</div>
+					<div class="blc_google clearfix">
+						<div id="google_translate_element">
+<script type="text/javascript">
+	$(function($){
+		$('#translate_selector').change(function(){
+			var url = '';
+			switch ($(this).val()){
+				case '1':
+					url = 'https://www.town.kutchan.hokkaido.jp.e.acx.hp.transer.com';
+					break;
+				case '2':
+					url = 'https://www.town.kutchan.hokkaido.jp.k.acx.hp.transer.com';
+					break;
+				case '3':
+					url = 'https://www.town.kutchan.hokkaido.jp.c.acx.hp.transer.com';
+					break;
+				case '4':
+					url = 'https://www.town.kutchan.hokkaido.jp.t.acx.hp.transer.com';
+					break;
+			}
+			if(url.length > 0){
+/*				window.location.href = url;*/
+				window.open(url+location.pathname);
+			}
+		});
+	});
+</script>
+<style type="text/css">
+#google_translate_element{
+	background-color: white;
+/*	width: 123px;*/
+	height: 27px;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+}
+.translate_icon{
+	height: 27px;
+	margin: 0 auto;
+	float: left;
+}
+#translate_selector{
+	max-width: 100px;
+	height: 27px;
+	color: black;
+	border: none;
+/*	float: right;*/
+	outline: none;
+	margin-left: 10px;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+}
+</style>
+<label for="translate_selector" id="translate_selector_title">翻訳</label>
+<img src="/img/translate-icon.png" class="translate_icon" alt="" >
+<select id="translate_selector">
+	<option value="0">Japan</option>
+	<option value="1">English</option>
+	<option value="2">한국어</option>
+	<option value="3">简体中文</option>
+	<option value="4">繁體中文</option>
+</select>
+</div>
+					</div>
+				</div>
+				
+				<!-- gl_nav -->
+				<nav class="pc">
+					<ul id="gl_nav" class="clearfix">
+						<li><a href="/Living_Information/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav01.png" alt="" />くらしの情報<span>Living Information</span></a></li>
+<li><a href="/tourism/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav02.png" alt="" />観光<span>Tourism</span></a></li>
+<li><a href="/culture-sports/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav03.png" alt="" />文化・スポーツ<span>Culture Sports</span></a></li>
+<li><a href="/work-industry/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav04.png" alt="" />しごと・産業<span>Work Industry</span></a></li>
+<li><a href="/town_administration/"><img src="https://www.town.kutchan.hokkaido.jp/img/gl_nav05.png" alt="" />町政情報<span>Town administration</span></a></li>					</ul>
+				</nav>
+				
+			</div>
+			
+		</div>
+	</header>
+<link rel="stylesheet" href="/css/article.css?1650861714">
+<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="/css/webfont.css">
+
+<script type="text/javascript" charset="utf-8" src="https://map.yahooapis.jp/js/V1/jsapi?appid=dj00aiZpPWh0VlBEWmRTY0doNCZzPWNvbnN1bWVyc2VjcmV0Jng9YWY-"></script>
+
+<link rel="stylesheet" href="/js/leaflet/leaflet.css" />
+<script src="/js/leaflet/leaflet.js"></script>
+
+<script src="/js/heightLine.js"></script>
+<script src="/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="/js/jquery.fancybox.pack.js"></script>
+<script src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.gallery a,a.fancybox').fancybox({
+		'titlePosition': 'over'
+	});
+	/* paragraph */
+	$("#article .paragraph:last").css("marginBottom","20px");
+	/* iframe */
+	 $(".paragraph").fitVids();
+});
+</script>
+<!-- �� main
+-------------------------------------------------------------------------->
+<div id="main_content" class="container-12">
+	<div class="grid-9 fR">
+		<ul class="pan clearfix">
+			<li><a href="/">トップ</a></li><li>エラーページ</li>		</ul>
+		<div id="article" class="clrFix">
+						<h2><span>404 Not Found</span></h2><div class="article_inner"><div class="paragraph clearfix" id="paragraph3524">
+<div class="colm-12">
+お探しのページは見つかりませんでした。<br />
+一時的にアクセスできない状態か、移動もしくは削除されてしまった可能性があります。
+</div>
+
+</div><div class="paragraph clearfix" id="paragraph3525">
+<div class="colm-12">
+<ul class="link">
+<li>
+<a href="http://www.town.kutchan.hokkaido.jp/">倶知安町トップへ</a>
+</li>
+</ul>
+</div>
+
+</div><div class="article_footer paragraph clearfix">
+	このページの情報に関するお問い合わせ先<br />
+	
+	倶知安町
+	
+	　<span>電話番号：0136-22-1121</span>
+	
+	
+	
+	　<span>FAX：0136-23-2044</span>
+	
+	
+<!--$edit-->
+</div></div>		</div>
+	</div>
+	<div class="grid-3 fR">
+		<div id="side">
+			<div class="category"><a href="/"><h2>トップ</h2></a></a></div><ul><li><a href="/emergency/">緊急情報</a></li><li><a href="/news/">町の話題</a></li><li><a href="/history/">新着・更新情報</a></li><li><a href="/bosyu/">募集情報</a></li><li><a href="/Living_Information/">くらしの情報</a></li><li><a href="/tourism/">観光</a></li><li><a href="/culture-sports/">文化・スポーツ</a></li><li><a href="/work-industry/">しごと・産業</a></li><li><a href="/town_administration/">町政情報</a></li><li><a href="/profile/">町のプロフィール</a></li><li><a href="/mayor/">町長室</a></li><li><a href="/gikai/">倶知安町議会</a></li><li><a href="/webcam/"> ライブカメラ</a></li><li><a href="/tosyo_system/">図書システム</a></li><li><a href="/sekisetsu/">くっちゃんの雪</a></li><li><a href="/sitemap/">サイトマップ</a></li><li><a href="/contact/">ご意見・お問い合わせ</a></li><li><a href="/abouthtml/">このホームページについて</a></li><li><a href="/menseki/">免責事項</a></li><li><a href="/COVID-19/">新型コロナウイルス関連情報</a></li><li><a href="/shincyuku/">新中区配水池新設工事の説明会のご案内</a></li></ul>		</div>
+	</div>
+</div>
+<!-------------------------------------------------------------------------
+-----�� main -->
+	<!-- footer -->
+	<footer id="footer">
+		<div class="container-12">
+			
+			<div id="pagetop">
+				<a href="#"><span id="pagetop-text">トップへ戻る</span></a>
+			</div>
+
+			<div class="pc ft_body grid-12 clearfix">
+				
+				<dl class="heightLine-ft">
+					<dt>くらしの情報</dt>
+					<dd>
+						<ul>
+							
+							<li><a href="/Living_Information/zei/">税金</a></li>
+							
+							<li><a href="/Living_Information/todokede-shoumei/">届出・証明</a></li>
+							
+							<li><a href="/Living_Information/hoken-nenkin/">保険・年金</a></li>
+							
+							<li><a href="/Living_Information/kosodate-kyouiku/">子育て・教育</a></li>
+							
+							<li><a href="/Living_Information/fukushi-kaigo/">福祉・介護</a></li>
+							
+							<li><a href="/Living_Information/iryo-kenko/">医療・健康</a></li>
+							
+							<li><a href="/Living_Information/gomi-risaikuru/">ごみ・リサイクル</a></li>
+							
+							<li><a href="/Living_Information/sumai-koutu/">建築・住まい・交通</a></li>
+							
+							<li><a href="/Living_Information/suidou/">水道・下水道・浄化槽</a></li>
+							
+							<li><a href="/Living_Information/bouhan-bousai-syobo/">防犯・防災・消防</a></li>
+							
+							<li><a href="/Living_Information/kurasi_kankyoutaisaku/">暮らし・生活環境</a></li>
+							
+							<li><a href="/Living_Information/soudan/">相談</a></li>
+							
+						</ul>
+					</dd>
+				</dl>
+
+				<dl class="heightLine-ft">
+					<dt>観光</dt>
+					<dd>
+						<ul>
+							
+							<li><a href="/tourism/access/">交通アクセス</a></li>
+							
+							<li><a href="/tourism/kankou_pamphlet/">観光パンフレットのご案内</a></li>
+							
+							<li><a href="/tourism/jaga-matsuri/">くっちゃんじゃが祭り</a></li>
+							
+							<li><a href="/tourism/yukitopia-festival/">雪トピアフェスティバル</a></li>
+							
+							<li><a href="/tourism/yoteizan/">羊蹄山情報</a></li>
+							
+							<li><a href="/tourism/midokoro/">倶知安町の見どころ</a></li>
+							
+							<li><a href="/tourism/niseko_future/">観光各種資料</a></li>
+							
+						</ul>
+					</dd>
+				</dl>
+
+				<dl class="heightLine-ft">
+					<dt>文化・スポーツ</dt>
+					<dd>
+						<ul>
+							
+							<li><a href="/culture-sports/sports-shisetsu/">スポーツ施設</a></li>
+							
+							<li><a href="/culture-sports/kucchan-huudokan/">倶知安風土館</a></li>
+							
+							<li><a href="/culture-sports/ogawara-museum/">小川原脩記念美術館</a></li>
+							
+							<li><a href="/culture-sports/bunkafukusi-koumin/">倶知安町文化福祉センター（公民館）</a></li>
+							
+							<li><a href="/culture-sports/kucchan-kakushudantai/">倶知安町各種団体</a></li>
+							
+							<li><a href="/culture-sports/kucchan-history/">歴史</a></li>
+							
+						</ul>
+					</dd>
+				</dl>
+
+				<dl class="heightLine-ft">
+					<dt>しごと・産業</dt>
+					<dd>
+						<ul>
+							
+							<li><a href="/work-industry/nougyou/">農業</a></li>
+							
+							<li><a href="/work-industry/chikusan/">畜産</a></li>
+							
+							<li><a href="/work-industry/shinnrin/">森林</a></li>
+							
+							<li><a href="/work-industry/hutabadamu/">双葉ダム</a></li>
+							
+							<li><a href="/work-industry/tochi/">土地</a></li>
+							
+							<li><a href="/work-industry/hukushi/">福祉</a></li>
+							
+							<li><a href="/work-industry/nougyouiinnkai/">倶知安町農業委員会</a></li>
+							
+							<li><a href="/work-industry/kiseturoudousyanokatahe/">羊蹄山麓季節労働者通年雇用促進協議会</a></li>
+							
+							<li><a href="/work-industry/Bidding_contract_infomation/">入札・契約情報</a></li>
+							
+							<li><a href="/work-industry/kigyou-haigyou/">起業・廃業</a></li>
+							
+							<li><a href="/work-industry/kinnrousienn/">勤労支援</a></li>
+							
+							<li><a href="/work-industry/jigyoumukejyouhou/">事業者向け情報</a></li>
+							
+							<li><a href="/work-industry/companies_attract/">企業誘致について</a></li>
+							
+							<li><a href="/work-industry/soukouinfo/">お知らせ・ご案内</a></li>
+							
+							<li><a href="/work-industry/eigyousyoumei/">営業証明</a></li>
+							
+							<li><a href="/work-industry/itiba/">倶知安町地方卸売市場</a></li>
+							
+						</ul>
+					</dd>
+				</dl>
+
+				<dl class="heightLine-ft">
+					<dt>町政情報</dt>
+					<dd>
+						<ul>
+							
+							<li><a href="/town_administration/chihousousei/">地方創生</a></li>
+							
+							<li><a href="/town_administration/seisaku_keikaku_jigyou/">政策・計画・事業</a></li>
+							
+							<li><a href="/town_administration/matidukuri/">まちづくり</a></li>
+							
+							<li><a href="/town_administration/keikanabout/">景観・まちづくりについて</a></li>
+							
+							<li><a href="/town_administration/declarations/">各種宣言</a></li>
+							
+							<li><a href="/town_administration/gyousei_houkoku/">行政報告</a></li>
+							
+							<li><a href="/town_administration/zaiseijyokyo/">財政状況</a></li>
+							
+							<li><a href="/town_administration/jinji_syokuin/">人事・職員採用</a></li>
+							
+							<li><a href="/town_administration/shinkansen/">北海道新幹線</a></li>
+							
+							<li><a href="/town_administration/kousoku/">高速道路</a></li>
+							
+							<li><a href="/town_administration/toshikeikaku/">都市計画・準都市計画（景観地区）</a></li>
+							
+							<li><a href="/town_administration/senkyo/">選挙</a></li>
+							
+							<li><a href="/town_administration/kokusei/">国勢調査</a></li>
+							
+							<li><a href="/town_administration/jyouhou_koukai/">情報公開</a></li>
+							
+							<li><a href="/town_administration/gyouseihuhuku/">行政不服審査制度</a></li>
+							
+							<li><a href="/town_administration/fiber/">光ファイバ整備</a></li>
+							
+							<li><a href="/town_administration/kojinjyouhou/">個人情報保護</a></li>
+							
+							<li><a href="/town_administration/AccommodationTax/">宿泊税</a></li>
+							
+							<li><a href="/town_administration/opendata/">オープンデータについて</a></li>
+							
+							<li><a href="/town_administration/tyougi/">庁議結果の公表</a></li>
+							
+							<li><a href="/town_administration/intecultural/">多文化共生</a></li>
+							
+							<li><a href="/town_administration/LINE/">倶知安町LINE公式アカウントの運用について</a></li>
+							
+							<li><a href="/town_administration/naming-right/">ネーミングライツ事業</a></li>
+							
+							<li><a href="/town_administration/jieitai/">自衛隊関連</a></li>
+							
+							<li><a href="/town_administration/corona/">新型コロナウイルス感染症関連</a></li>
+							
+							<li><a href="/town_administration/cashless/">キャッシュレス決済導入</a></li>
+							
+							<li><a href="/town_administration/nettyuusyouyoboutaisaku/">熱中症予防対策について</a></li>
+							
+							<li><a href="/town_administration/about/">このサイトについて</a></li>
+							
+							<li><a href="/town_administration/tyuukanhyouka/">高度無線環境整備推進事業の事後評価（中間評価）</a></li>
+							
+							<li><a href="/town_administration/hoppouryoudo/">北方領土関連</a></li>
+							
+							<li><a href="/town_administration/hyoujunmoji/">行政事務標準文字の導入について</a></li>
+							
+							<li><a href="/town_administration/seikatu_ouenkin/">令和７年度くっちゃん生活応援金（食料品等価格高騰対策支援）について</a></li>
+							
+							<li><a href="/town_administration/electronic_application/">電子申請</a></li>
+							
+							<li><a href="/town_administration/tiikikeizai/">倶知安町地域経済状況調査</a></li>
+							
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			
+						<div class="ft_foot grid-12">
+				<ul class="sub_nav clearfix">
+					<li><a href="/sitemap/">サイトマップ</a></li>
+					<li><a href="/tourism/access/">アクセス</a></li>
+					<li><a href="/contact/">お問い合わせ</a></li>
+				</ul>
+				<p class="ad">倶知安町役場　法人番号4000020014001<br>〒044-0001　北海道虻田郡倶知安町北1条東3丁目3番地<br>TEL:0136-22-1121　FAX:0136-23-2044<br>開庁時間:8時45分　閉庁時間:17時30分</p>
+				<p class="copy">Copyrights(C) KUTCHAN Town all rights reserved</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<!-- wrap-end -->
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=961158047" async></script></body>
+</html>

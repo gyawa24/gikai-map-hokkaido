@@ -1,0 +1,125 @@
+[
+  {
+    "seat_number": 1,
+    "name": "森岡新二",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [],
+    "role": "議長",
+    "terms": "6回",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 2,
+    "name": "根岸一志",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "議会運営委員会",
+      "まちづくり常任委員会",
+      "広報常任委員会副委員長"
+    ],
+    "role": "",
+    "terms": "1回",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 3,
+    "name": "星厚早",
+    "furigana": "",
+    "party": "共産党",
+    "faction": "",
+    "committees": [
+      "まちづくり常任委員会",
+      "広報常任委員会"
+    ],
+    "role": "",
+    "terms": "1回",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 4,
+    "name": "篠田茂美",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "議会運営委員会委員長",
+      "まちづくり常任委員会"
+    ],
+    "role": "",
+    "terms": "2回",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 5,
+    "name": "遠藤共子",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "まちづくり常任委員会",
+      "広報常任委員会委員長"
+    ],
+    "role": "",
+    "terms": "4回",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 6,
+    "name": "石川正人",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "議会運営委員会副委員長",
+      "まちづくり常任委員会委員長"
+    ],
+    "role": "",
+    "terms": "4回",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 7,
+    "name": "笹木利津子",
+    "furigana": "",
+    "party": "公明党",
+    "faction": "",
+    "committees": [
+      "まちづくり常任委員会副委員長",
+      "広報常任委員会"
+    ],
+    "role": "",
+    "terms": "6回",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 8,
+    "name": "大矢雅史",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "まちづくり常任委員会"
+    ],
+    "role": "議会選出監査委員",
+    "terms": "5回",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 9,
+    "name": "大関光敏",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "議会運営委員会",
+      "まちづくり常任委員会"
+    ],
+    "role": "副議長",
+    "terms": "3回",
+    "photo_url": ""
+  }
+]

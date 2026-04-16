@@ -1,0 +1,81 @@
+[
+  {
+    "seat_number": 1,
+    "name": "沖野 学",
+    "furigana": "オキノ マナブ",
+    "party": "無所属",
+    "faction": "",
+    "committees": []
+  },
+  {
+    "seat_number": 2,
+    "name": "林 佳子",
+    "furigana": "ハヤシ ヨシコ",
+    "party": "無所属",
+    "faction": "",
+    "committees": []
+  },
+  {
+    "seat_number": 3,
+    "name": "寺垣 信晃",
+    "furigana": "テラガキ ノブアキ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員会委員長",
+      "議会運営委員会副委員長",
+      "広報特別委員会副委員長",
+      "まちづくり等調査特別委員会副委員長",
+      "災害対策特別委員会副委員長"
+    ]
+  },
+  {
+    "seat_number": 4,
+    "name": "佐藤 稔",
+    "furigana": "サトウ ミノル",
+    "party": "無所属",
+    "faction": "",
+    "committees": []
+  },
+  {
+    "seat_number": 5,
+    "name": "木村 和雄",
+    "furigana": "キムラ カズオ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会運営委員会委員長",
+      "広報特別委員会委員長",
+      "災害対策特別委員会委員長",
+      "北竜町農業の未来を考える特別委員会委員長",
+      "総務産業常任委員会副委員長"
+    ]
+  },
+  {
+    "seat_number": 6,
+    "name": "澤田 正人",
+    "furigana": "サワダ マサト",
+    "party": "無所属",
+    "faction": "",
+    "committees": []
+  },
+  {
+    "seat_number": 7,
+    "name": "尾﨑 圭子",
+    "furigana": "オザキ ケイコ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "まちづくり等調査特別委員会委員長",
+      "北竜町農業の未来を考える特別委員会副委員長"
+    ]
+  },
+  {
+    "seat_number": 8,
+    "name": "中村 尚一",
+    "furigana": "ナカムラ ショウイチ",
+    "party": "無所属",
+    "faction": "",
+    "committees": []
+  }
+]

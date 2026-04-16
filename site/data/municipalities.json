@@ -402,8 +402,10 @@
     "region": "空知",
     "furigana": "ゆうばりし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "bibai",
@@ -412,8 +414,10 @@
     "region": "空知",
     "furigana": "びばいし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "akabira",
@@ -422,8 +426,10 @@
     "region": "空知",
     "furigana": "あかびらし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "mikasa",
@@ -432,8 +438,10 @@
     "region": "空知",
     "furigana": "みかさし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "takikawa",
@@ -442,8 +450,10 @@
     "region": "空知",
     "furigana": "たきかわし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "sunagawa",
@@ -452,8 +462,10 @@
     "region": "空知",
     "furigana": "すながわし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "utashinai",
@@ -462,8 +474,10 @@
     "region": "空知",
     "furigana": "うたしないし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "fukagawa",
@@ -484,8 +498,10 @@
     "region": "空知",
     "furigana": "なんぽろちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "naie",
@@ -494,8 +510,10 @@
     "region": "空知",
     "furigana": "ないえちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kamisunagawa",
@@ -504,8 +522,10 @@
     "region": "空知",
     "furigana": "かみすながわちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "yuni",
@@ -514,8 +534,10 @@
     "region": "空知",
     "furigana": "ゆにちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "naganuma",
@@ -524,8 +546,10 @@
     "region": "空知",
     "furigana": "ながぬまちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kuriyama",
@@ -534,8 +558,10 @@
     "region": "空知",
     "furigana": "くりやまちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "tsukigata",
@@ -544,8 +570,10 @@
     "region": "空知",
     "furigana": "つきがたちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "urausu",
@@ -554,8 +582,10 @@
     "region": "空知",
     "furigana": "うらうすちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shintotsukawa",
@@ -564,8 +594,10 @@
     "region": "空知",
     "furigana": "しんとつかわちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "moseushi",
@@ -574,8 +606,10 @@
     "region": "空知",
     "furigana": "もせうしちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "chippubetsu",
@@ -584,8 +618,10 @@
     "region": "空知",
     "furigana": "ちっぷべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "uryu",
@@ -594,8 +630,10 @@
     "region": "空知",
     "furigana": "うりゅうちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "hokuryu",
@@ -604,8 +642,10 @@
     "region": "空知",
     "furigana": "ほくりゅうちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "numata",
@@ -614,8 +654,10 @@
     "region": "空知",
     "furigana": "ぬまたちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "sapporo",

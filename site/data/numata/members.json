@@ -1,0 +1,121 @@
+[
+  {
+    "seat_number": 1,
+    "name": "畑地 誉",
+    "furigana": "はたち ほまれ",
+    "party": "無所属",
+    "faction": "副議長",
+    "committees": [
+      "総務民教建設常任委員会",
+      "産業福祉常任委員会",
+      "議会運営委員会",
+      "議会広報特別委員会"
+    ],
+    "photo_url": "/members/numata/seat_1.png"
+  },
+  {
+    "seat_number": 2,
+    "name": "篠原 暁",
+    "furigana": "しのはら さとし",
+    "party": "日本共産党",
+    "faction": "",
+    "committees": [
+      "総務民教建設常任委員会副委員長",
+      "議会運営委員会副委員長",
+      "議会広報特別委員会委員長"
+    ],
+    "photo_url": "/members/numata/seat_2.png"
+  },
+  {
+    "seat_number": 3,
+    "name": "鵜野 範之",
+    "furigana": "うの のりゆき",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "産業福祉常任委員会",
+      "議会運営委員会委員長"
+    ],
+    "photo_url": "/members/numata/seat_3.png"
+  },
+  {
+    "seat_number": 4,
+    "name": "久保 元宏",
+    "furigana": "くぼ もとひろ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "産業福祉常任委員会"
+    ],
+    "photo_url": "/members/numata/seat_4.png"
+  },
+  {
+    "seat_number": 5,
+    "name": "三浦 実希",
+    "furigana": "みうら みき",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "産業福祉常任委員会副委員長",
+      "議会広報特別委員会副委員長"
+    ],
+    "photo_url": "/members/numata/seat_5.png"
+  },
+  {
+    "seat_number": 6,
+    "name": "伊藤 淳",
+    "furigana": "いとう じゅん",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "産業福祉常任委員会委員長",
+      "議会運営委員会",
+      "議会広報特別委員会"
+    ],
+    "photo_url": "/members/numata/seat_6.png"
+  },
+  {
+    "seat_number": 7,
+    "name": "長野 時敏",
+    "furigana": "ながの ときとし",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務民教建設常任委員会",
+      "監査委員"
+    ],
+    "photo_url": "/members/numata/seat_7.png"
+  },
+  {
+    "seat_number": 8,
+    "name": "大沼 恒雄",
+    "furigana": "おおぬま つねお",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務民教建設常任委員会委員長",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/numata/seat_8.png"
+  },
+  {
+    "seat_number": 9,
+    "name": "上野 敏夫",
+    "furigana": "うえの としお",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務民教建設常任委員会"
+    ],
+    "photo_url": "/members/numata/seat_9.png"
+  },
+  {
+    "seat_number": 10,
+    "name": "小峯 聡",
+    "furigana": "こみね さとる",
+    "party": "無所属",
+    "faction": "議長",
+    "committees": [],
+    "photo_url": "/members/numata/seat_10.png"
+  }
+]

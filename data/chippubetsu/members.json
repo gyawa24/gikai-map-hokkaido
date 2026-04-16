@@ -1,0 +1,89 @@
+[
+  {
+    "seat_number": 1,
+    "name": "松永徹",
+    "furigana": "まつながとおる",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 2,
+    "name": "金子利生",
+    "furigana": "かねことしお",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会運営委員会委員長"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 3,
+    "name": "眞島秀樹",
+    "furigana": "ましまひでき",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会広報公聴特別委員会委員長"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 4,
+    "name": "岡崎稔",
+    "furigana": "おかざきみのる",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務経済常任委員会委員長"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 5,
+    "name": "中西伴浩",
+    "furigana": "なかにしともひろ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 6,
+    "name": "寺迫公裕",
+    "furigana": "てらせこきみひろ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 7,
+    "name": "早川正剛",
+    "furigana": "はやかわせいごう",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 8,
+    "name": "藤岡浩文",
+    "furigana": "ふじおかひろふみ",
+    "party": "無所属",
+    "faction": "副議長",
+    "committees": [],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 9,
+    "name": "大野敬",
+    "furigana": "おおのたかし",
+    "party": "無所属",
+    "faction": "議長",
+    "committees": [],
+    "photo_url": ""
+  }
+]

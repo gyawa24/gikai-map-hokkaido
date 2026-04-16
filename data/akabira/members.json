@@ -1,0 +1,74 @@
+[
+  {
+    "seat_number": 1,
+    "name": "今野宙",
+    "furigana": "こんのひろし",
+    "party": "参政党",
+    "faction": "参政党",
+    "committees": []
+  },
+  {
+    "seat_number": 2,
+    "name": "安藤繁",
+    "furigana": "あんどうしげる",
+    "party": "無所属",
+    "faction": "新政クラブ",
+    "committees": []
+  },
+  {
+    "seat_number": 3,
+    "name": "渡部修之",
+    "furigana": "わたべのぶゆき",
+    "party": "無所属",
+    "faction": "新政クラブ",
+    "committees": []
+  },
+  {
+    "seat_number": 4,
+    "name": "丸山勝正",
+    "furigana": "まるやまかつまさ",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": []
+  },
+  {
+    "seat_number": 5,
+    "name": "木村恵",
+    "furigana": "きむらけい",
+    "party": "無所属",
+    "faction": "無所属クラブ",
+    "committees": []
+  },
+  {
+    "seat_number": 6,
+    "name": "竹村恵一",
+    "furigana": "たけむらけいいち",
+    "party": "無所属",
+    "faction": "新政クラブ",
+    "committees": []
+  },
+  {
+    "seat_number": 7,
+    "name": "北市勲",
+    "furigana": "きたいちいさお",
+    "party": "無所属",
+    "faction": "新政クラブ",
+    "committees": []
+  },
+  {
+    "seat_number": 8,
+    "name": "若山武信",
+    "furigana": "わかやまたけのぶ",
+    "party": "立憲民主党",
+    "faction": "民主クラブ",
+    "committees": []
+  },
+  {
+    "seat_number": 9,
+    "name": "伊藤新一",
+    "furigana": "いとうしんいち",
+    "party": "立憲民主党",
+    "faction": "民主クラブ",
+    "committees": []
+  }
+]

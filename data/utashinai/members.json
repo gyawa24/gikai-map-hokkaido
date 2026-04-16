@@ -1,0 +1,98 @@
+[
+  {
+    "seat_number": 1,
+    "name": "能登直樹",
+    "furigana": "のとなおき",
+    "party": "公明党",
+    "faction": "",
+    "committees": [
+      "行政常任委員会委員長",
+      "議会運営委員会委員"
+    ],
+    "photo_url": "/members/utashinai/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "佐藤良治",
+    "furigana": "さとうよしはる",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "副議長",
+      "行政常任委員会委員"
+    ],
+    "photo_url": "/members/utashinai/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "山崎瑞紀",
+    "furigana": "やまざきみずき",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会運営委員会委員長",
+      "行政常任委員会委員"
+    ],
+    "photo_url": "/members/utashinai/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "松井敬道",
+    "furigana": "まついけいどう",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会運営委員会副委員長",
+      "行政常任委員会委員"
+    ],
+    "photo_url": "/members/utashinai/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "本田加津子",
+    "furigana": "ほんだかつこ",
+    "party": "立憲民主党",
+    "faction": "",
+    "committees": [
+      "監査委員",
+      "行政常任委員会委員",
+      "議会運営委員会委員"
+    ],
+    "photo_url": "/members/utashinai/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "女鹿聡",
+    "furigana": "めがさとし",
+    "party": "日本共産党",
+    "faction": "",
+    "committees": [
+      "行政常任委員会副委員長",
+      "議会運営委員会委員"
+    ],
+    "photo_url": "/members/utashinai/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "下山則義",
+    "furigana": "しもやまのりよし",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "行政常任委員会委員",
+      "議会運営委員会委員"
+    ],
+    "photo_url": "/members/utashinai/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "川野敏夫",
+    "furigana": "かわのとしお",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議長"
+    ],
+    "photo_url": "/members/utashinai/seat_8.jpg"
+  }
+]

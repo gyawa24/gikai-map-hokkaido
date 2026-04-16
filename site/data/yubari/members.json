@@ -1,0 +1,99 @@
+[
+  {
+    "seat_number": 1,
+    "name": "徳谷康憲",
+    "furigana": "とくたにやすのり",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "行政常任委員会",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/yubari/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "荒井周司",
+    "furigana": "あらいしゅうじ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "行政常任委員会 副委員長",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/yubari/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "工藤政則",
+    "furigana": "くどうまさのり",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "行政常任委員会",
+      "議会運営委員会 委員長"
+    ],
+    "photo_url": "/members/yubari/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "君島孝夫",
+    "furigana": "きみじまたかお",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "副議長",
+      "行政常任委員会",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/yubari/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "櫻井暁",
+    "furigana": "さくらいあき",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "committees": [
+      "行政常任委員会",
+      "議会運営委員会 副委員長"
+    ],
+    "photo_url": "/members/yubari/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "千葉勝",
+    "furigana": "ちばまさる",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "監査委員",
+      "行政常任委員会",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/yubari/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "高間澄子",
+    "furigana": "たかますみこ",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": [
+      "行政常任委員会 委員長",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/yubari/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "大山修二",
+    "furigana": "おおやましゅうじ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議長"
+    ],
+    "photo_url": "/members/yubari/seat_8.jpg"
+  }
+]
