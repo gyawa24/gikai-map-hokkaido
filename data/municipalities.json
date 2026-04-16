@@ -9,6 +9,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 537,
     "system": "dnp"
@@ -23,6 +24,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 529,
     "system": "dnp"
@@ -37,6 +39,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 436,
     "system": "dnp"
@@ -51,6 +54,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 532,
     "system": "dnp"
@@ -65,6 +69,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 535,
     "system": "dnp"
@@ -79,6 +84,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 483,
     "system": "dnp"
@@ -94,6 +100,7 @@
       "minutes",
       "election"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 536,
     "system": "dnp"
@@ -108,6 +115,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 70,
     "system": "dnp"
@@ -122,6 +130,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 530,
     "system": "dnp"
@@ -136,6 +145,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 614,
     "system": "dnp"
@@ -150,6 +160,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 533,
     "system": "dnp"
@@ -168,8 +179,10 @@
       "schedule",
       "newsletter",
       "election",
-      "plan"
+      "plan",
+      "themes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 452,
     "system": "dnp"
@@ -184,6 +197,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 538,
     "system": "dnp"
@@ -199,6 +213,7 @@
       "minutes",
       "election"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 89,
     "system": "dnp"
@@ -213,6 +228,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 542,
     "system": "dnp"
@@ -227,6 +243,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 72,
     "system": "dnp"
@@ -241,6 +258,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 93,
     "system": "dnp"
@@ -255,6 +273,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 309,
     "system": "dnp"
@@ -269,6 +288,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 69,
     "system": "dnp"
@@ -283,6 +303,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 371,
     "system": "dnp"
@@ -297,6 +318,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 453,
     "system": "dnp"
@@ -311,6 +333,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 73,
     "system": "dnp"
@@ -325,6 +348,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 454,
     "system": "dnp"
@@ -339,6 +363,7 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 353,
     "system": "dnp"
@@ -353,8 +378,1564 @@
       "members",
       "minutes"
     ],
+    "level": "municipality",
     "active": true,
     "tenant_id": 527,
     "system": "dnp"
+  },
+  {
+    "slug": "iwamizawa",
+    "name": "岩見沢市",
+    "council_name": "岩見沢市議会",
+    "region": "空知",
+    "furigana": "いわみざわし",
+    "level": "municipality",
+    "features": [
+      "members"
+    ],
+    "active": true
+  },
+  {
+    "slug": "yubari",
+    "name": "夕張市",
+    "council_name": "夕張市議会",
+    "region": "空知",
+    "furigana": "ゆうばりし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "bibai",
+    "name": "美唄市",
+    "council_name": "美唄市議会",
+    "region": "空知",
+    "furigana": "びばいし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "akabira",
+    "name": "赤平市",
+    "council_name": "赤平市議会",
+    "region": "空知",
+    "furigana": "あかびらし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "mikasa",
+    "name": "三笠市",
+    "council_name": "三笠市議会",
+    "region": "空知",
+    "furigana": "みかさし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "takikawa",
+    "name": "滝川市",
+    "council_name": "滝川市議会",
+    "region": "空知",
+    "furigana": "たきかわし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "sunagawa",
+    "name": "砂川市",
+    "council_name": "砂川市議会",
+    "region": "空知",
+    "furigana": "すながわし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "utashinai",
+    "name": "歌志内市",
+    "council_name": "歌志内市議会",
+    "region": "空知",
+    "furigana": "うたしないし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "fukagawa",
+    "name": "深川市",
+    "council_name": "深川市議会",
+    "region": "空知",
+    "furigana": "ふかがわし",
+    "level": "municipality",
+    "features": [
+      "members"
+    ],
+    "active": true
+  },
+  {
+    "slug": "nanporo",
+    "name": "南幌町",
+    "council_name": "南幌町議会",
+    "region": "空知",
+    "furigana": "なんぽろちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "naie",
+    "name": "奈井江町",
+    "council_name": "奈井江町議会",
+    "region": "空知",
+    "furigana": "ないえちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kamisunagawa",
+    "name": "上砂川町",
+    "council_name": "上砂川町議会",
+    "region": "空知",
+    "furigana": "かみすながわちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "yuni",
+    "name": "由仁町",
+    "council_name": "由仁町議会",
+    "region": "空知",
+    "furigana": "ゆにちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "naganuma",
+    "name": "長沼町",
+    "council_name": "長沼町議会",
+    "region": "空知",
+    "furigana": "ながぬまちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kuriyama",
+    "name": "栗山町",
+    "council_name": "栗山町議会",
+    "region": "空知",
+    "furigana": "くりやまちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "tsukigata",
+    "name": "月形町",
+    "council_name": "月形町議会",
+    "region": "空知",
+    "furigana": "つきがたちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "urausu",
+    "name": "浦臼町",
+    "council_name": "浦臼町議会",
+    "region": "空知",
+    "furigana": "うらうすちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shintotsukawa",
+    "name": "新十津川町",
+    "council_name": "新十津川町議会",
+    "region": "空知",
+    "furigana": "しんとつかわちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "moseushi",
+    "name": "妹背牛町",
+    "council_name": "妹背牛町議会",
+    "region": "空知",
+    "furigana": "もせうしちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "chippubetsu",
+    "name": "秩父別町",
+    "council_name": "秩父別町議会",
+    "region": "空知",
+    "furigana": "ちっぷべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "uryu",
+    "name": "雨竜町",
+    "council_name": "雨竜町議会",
+    "region": "空知",
+    "furigana": "うりゅうちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "hokuryu",
+    "name": "北竜町",
+    "council_name": "北竜町議会",
+    "region": "空知",
+    "furigana": "ほくりゅうちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "numata",
+    "name": "沼田町",
+    "council_name": "沼田町議会",
+    "region": "空知",
+    "furigana": "ぬまたちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "sapporo",
+    "name": "札幌市",
+    "council_name": "札幌市議会",
+    "region": "石狩",
+    "furigana": "さっぽろし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "ebetsu",
+    "name": "江別市",
+    "council_name": "江別市議会",
+    "region": "石狩",
+    "furigana": "えべつし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "tobetsu",
+    "name": "当別町",
+    "council_name": "当別町議会",
+    "region": "石狩",
+    "furigana": "とうべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shinshinotsu",
+    "name": "新篠津村",
+    "council_name": "新篠津村議会",
+    "region": "石狩",
+    "furigana": "しんしのつむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "otaru",
+    "name": "小樽市",
+    "council_name": "小樽市議会",
+    "region": "後志",
+    "furigana": "おたるし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shimamaki",
+    "name": "島牧村",
+    "council_name": "島牧村議会",
+    "region": "後志",
+    "furigana": "しままきむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "suttsu",
+    "name": "寿都町",
+    "council_name": "寿都町議会",
+    "region": "後志",
+    "furigana": "すっつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kuromatsunai",
+    "name": "黒松内町",
+    "council_name": "黒松内町議会",
+    "region": "後志",
+    "furigana": "くろまつないちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "rankoshi",
+    "name": "蘭越町",
+    "council_name": "蘭越町議会",
+    "region": "後志",
+    "furigana": "らんこしちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "niseko",
+    "name": "ニセコ町",
+    "council_name": "ニセコ町議会",
+    "region": "後志",
+    "furigana": "にせこちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "makkari",
+    "name": "真狩村",
+    "council_name": "真狩村議会",
+    "region": "後志",
+    "furigana": "まっかりむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "rusutsu",
+    "name": "留寿都村",
+    "council_name": "留寿都村議会",
+    "region": "後志",
+    "furigana": "るすつむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kimobetsu",
+    "name": "喜茂別町",
+    "council_name": "喜茂別町議会",
+    "region": "後志",
+    "furigana": "きもべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kyogoku",
+    "name": "京極町",
+    "council_name": "京極町議会",
+    "region": "後志",
+    "furigana": "きょうごくちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kyowa",
+    "name": "共和町",
+    "council_name": "共和町議会",
+    "region": "後志",
+    "furigana": "きょうわちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "iwanai",
+    "name": "岩内町",
+    "council_name": "岩内町議会",
+    "region": "後志",
+    "furigana": "いわないちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "tomari",
+    "name": "泊村",
+    "council_name": "泊村議会",
+    "region": "後志",
+    "furigana": "とまりむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kamoenai",
+    "name": "神恵内村",
+    "council_name": "神恵内村議会",
+    "region": "後志",
+    "furigana": "かもえないむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shakotan",
+    "name": "積丹町",
+    "council_name": "積丹町議会",
+    "region": "後志",
+    "furigana": "しゃこたんちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "furubira",
+    "name": "古平町",
+    "council_name": "古平町議会",
+    "region": "後志",
+    "furigana": "ふるびらちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "niki",
+    "name": "仁木町",
+    "council_name": "仁木町議会",
+    "region": "後志",
+    "furigana": "にきちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "yoichi",
+    "name": "余市町",
+    "council_name": "余市町議会",
+    "region": "後志",
+    "furigana": "よいちちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "akaigawa",
+    "name": "赤井川村",
+    "council_name": "赤井川村議会",
+    "region": "後志",
+    "furigana": "あかいがわむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "toyoura",
+    "name": "豊浦町",
+    "council_name": "豊浦町議会",
+    "region": "胆振",
+    "furigana": "とようらちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "sobetsu",
+    "name": "壮瞥町",
+    "council_name": "壮瞥町議会",
+    "region": "胆振",
+    "furigana": "そうべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shiraoi",
+    "name": "白老町",
+    "council_name": "白老町議会",
+    "region": "胆振",
+    "furigana": "しらおいちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "atsuma",
+    "name": "厚真町",
+    "council_name": "厚真町議会",
+    "region": "胆振",
+    "furigana": "あつまちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "toyako",
+    "name": "洞爺湖町",
+    "council_name": "洞爺湖町議会",
+    "region": "胆振",
+    "furigana": "とうやこちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "abira",
+    "name": "安平町",
+    "council_name": "安平町議会",
+    "region": "胆振",
+    "furigana": "あびらちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "mukawa",
+    "name": "むかわ町",
+    "council_name": "むかわ町議会",
+    "region": "胆振",
+    "furigana": "むかわちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "hidaka",
+    "name": "日高町",
+    "council_name": "日高町議会",
+    "region": "日高",
+    "furigana": "ひだかちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "biratori",
+    "name": "平取町",
+    "council_name": "平取町議会",
+    "region": "日高",
+    "furigana": "びらとりちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "niikappu",
+    "name": "新冠町",
+    "council_name": "新冠町議会",
+    "region": "日高",
+    "furigana": "にいかっぷちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "urakawa",
+    "name": "浦河町",
+    "council_name": "浦河町議会",
+    "region": "日高",
+    "furigana": "うらかわちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "samani",
+    "name": "様似町",
+    "council_name": "様似町議会",
+    "region": "日高",
+    "furigana": "さまにちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "erimo",
+    "name": "えりも町",
+    "council_name": "えりも町議会",
+    "region": "日高",
+    "furigana": "えりもちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shinhidaka",
+    "name": "新ひだか町",
+    "council_name": "新ひだか町議会",
+    "region": "日高",
+    "furigana": "しんひだかちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "matsumae",
+    "name": "松前町",
+    "council_name": "松前町議会",
+    "region": "渡島",
+    "furigana": "まつまえちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shiriuchi",
+    "name": "知内町",
+    "council_name": "知内町議会",
+    "region": "渡島",
+    "furigana": "しりうちちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kikonai",
+    "name": "木古内町",
+    "council_name": "木古内町議会",
+    "region": "渡島",
+    "furigana": "きこないちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "nanae",
+    "name": "七飯町",
+    "council_name": "七飯町議会",
+    "region": "渡島",
+    "furigana": "ななえちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shikabe",
+    "name": "鹿部町",
+    "council_name": "鹿部町議会",
+    "region": "渡島",
+    "furigana": "しかべちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "mori",
+    "name": "森町",
+    "council_name": "森町議会",
+    "region": "渡島",
+    "furigana": "もりまち",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "yakumo",
+    "name": "八雲町",
+    "council_name": "八雲町議会",
+    "region": "渡島",
+    "furigana": "やくもちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "oshamambe",
+    "name": "長万部町",
+    "council_name": "長万部町議会",
+    "region": "渡島",
+    "furigana": "おしゃまんべちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kaminokuni",
+    "name": "上ノ国町",
+    "council_name": "上ノ国町議会",
+    "region": "檜山",
+    "furigana": "かみのくにちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "assabu",
+    "name": "厚沢部町",
+    "council_name": "厚沢部町議会",
+    "region": "檜山",
+    "furigana": "あっさぶちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "otobe",
+    "name": "乙部町",
+    "council_name": "乙部町議会",
+    "region": "檜山",
+    "furigana": "おとべちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "okushiri",
+    "name": "奥尻町",
+    "council_name": "奥尻町議会",
+    "region": "檜山",
+    "furigana": "おくしりちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "imakane",
+    "name": "今金町",
+    "council_name": "今金町議会",
+    "region": "檜山",
+    "furigana": "いまかねちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "setana",
+    "name": "せたな町",
+    "council_name": "せたな町議会",
+    "region": "檜山",
+    "furigana": "せたなちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shibetsu",
+    "name": "士別市",
+    "council_name": "士別市議会",
+    "region": "上川",
+    "furigana": "しべつし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "furano",
+    "name": "富良野市",
+    "council_name": "富良野市議会",
+    "region": "上川",
+    "furigana": "ふらのし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "takasu",
+    "name": "鷹栖町",
+    "council_name": "鷹栖町議会",
+    "region": "上川",
+    "furigana": "たかすちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "higashikagura",
+    "name": "東神楽町",
+    "council_name": "東神楽町議会",
+    "region": "上川",
+    "furigana": "ひがしかぐらちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "toma",
+    "name": "当麻町",
+    "council_name": "当麻町議会",
+    "region": "上川",
+    "furigana": "とうまちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "pippu",
+    "name": "比布町",
+    "council_name": "比布町議会",
+    "region": "上川",
+    "furigana": "ぴっぷちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "aibetsu",
+    "name": "愛別町",
+    "council_name": "愛別町議会",
+    "region": "上川",
+    "furigana": "あいべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "higashikawa",
+    "name": "東川町",
+    "council_name": "東川町議会",
+    "region": "上川",
+    "furigana": "ひがしかわちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "biei",
+    "name": "美瑛町",
+    "council_name": "美瑛町議会",
+    "region": "上川",
+    "furigana": "びえいちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kamifurano",
+    "name": "上富良野町",
+    "council_name": "上富良野町議会",
+    "region": "上川",
+    "furigana": "かみふらのちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "nakafurano",
+    "name": "中富良野町",
+    "council_name": "中富良野町議会",
+    "region": "上川",
+    "furigana": "なかふらのちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "minamifurano",
+    "name": "南富良野町",
+    "council_name": "南富良野町議会",
+    "region": "上川",
+    "furigana": "みなみふらのちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shimukappu",
+    "name": "占冠村",
+    "council_name": "占冠村議会",
+    "region": "上川",
+    "furigana": "しむかっぷむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "wassamu",
+    "name": "和寒町",
+    "council_name": "和寒町議会",
+    "region": "上川",
+    "furigana": "わっさむちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kenbuchi",
+    "name": "剣淵町",
+    "council_name": "剣淵町議会",
+    "region": "上川",
+    "furigana": "けんぶちちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shimokawa",
+    "name": "下川町",
+    "council_name": "下川町議会",
+    "region": "上川",
+    "furigana": "しもかわちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "bifuka",
+    "name": "美深町",
+    "council_name": "美深町議会",
+    "region": "上川",
+    "furigana": "びふかちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "otoineppu",
+    "name": "音威子府村",
+    "council_name": "音威子府村議会",
+    "region": "上川",
+    "furigana": "おといねっぷむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "horokanai",
+    "name": "幌加内町",
+    "council_name": "幌加内町議会",
+    "region": "上川",
+    "furigana": "ほろかないちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "rumoi",
+    "name": "留萌市",
+    "council_name": "留萌市議会",
+    "region": "留萌",
+    "furigana": "るもいし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "mashike",
+    "name": "増毛町",
+    "council_name": "増毛町議会",
+    "region": "留萌",
+    "furigana": "ましけちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "obira",
+    "name": "小平町",
+    "council_name": "小平町議会",
+    "region": "留萌",
+    "furigana": "おびらちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "tomamae",
+    "name": "苫前町",
+    "council_name": "苫前町議会",
+    "region": "留萌",
+    "furigana": "とままえちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "haboro",
+    "name": "羽幌町",
+    "council_name": "羽幌町議会",
+    "region": "留萌",
+    "furigana": "はぼろちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shosanbetsu",
+    "name": "初山別村",
+    "council_name": "初山別村議会",
+    "region": "留萌",
+    "furigana": "しょさんべつむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "embetsu",
+    "name": "遠別町",
+    "council_name": "遠別町議会",
+    "region": "留萌",
+    "furigana": "えんべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "teshio",
+    "name": "天塩町",
+    "council_name": "天塩町議会",
+    "region": "留萌",
+    "furigana": "てしおちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "sarufutsu",
+    "name": "猿払村",
+    "council_name": "猿払村議会",
+    "region": "宗谷",
+    "furigana": "さるふつむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "hamatombetsu",
+    "name": "浜頓別町",
+    "council_name": "浜頓別町議会",
+    "region": "宗谷",
+    "furigana": "はまとんべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "nakatombetsu",
+    "name": "中頓別町",
+    "council_name": "中頓別町議会",
+    "region": "宗谷",
+    "furigana": "なかとんべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "esashi_souya",
+    "name": "枝幸町",
+    "council_name": "枝幸町議会",
+    "region": "宗谷",
+    "furigana": "えさしちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "toyotomi",
+    "name": "豊富町",
+    "council_name": "豊富町議会",
+    "region": "宗谷",
+    "furigana": "とよとみちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "rebun",
+    "name": "礼文町",
+    "council_name": "礼文町議会",
+    "region": "宗谷",
+    "furigana": "れぶんちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "rishiri",
+    "name": "利尻町",
+    "council_name": "利尻町議会",
+    "region": "宗谷",
+    "furigana": "りしりちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "rishirifuji",
+    "name": "利尻富士町",
+    "council_name": "利尻富士町議会",
+    "region": "宗谷",
+    "furigana": "りしりふじちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "horonobe",
+    "name": "幌延町",
+    "council_name": "幌延町議会",
+    "region": "宗谷",
+    "furigana": "ほろのべちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "abashiri",
+    "name": "網走市",
+    "council_name": "網走市議会",
+    "region": "オホーツク",
+    "furigana": "あばしりし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "monbetsu",
+    "name": "紋別市",
+    "council_name": "紋別市議会",
+    "region": "オホーツク",
+    "furigana": "もんべつし",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "bihoro",
+    "name": "美幌町",
+    "council_name": "美幌町議会",
+    "region": "オホーツク",
+    "furigana": "びほろちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "tsubetsu",
+    "name": "津別町",
+    "council_name": "津別町議会",
+    "region": "オホーツク",
+    "furigana": "つべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shari",
+    "name": "斜里町",
+    "council_name": "斜里町議会",
+    "region": "オホーツク",
+    "furigana": "しゃりちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kiyosato",
+    "name": "清里町",
+    "council_name": "清里町議会",
+    "region": "オホーツク",
+    "furigana": "きよさとちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "koshimizu",
+    "name": "小清水町",
+    "council_name": "小清水町議会",
+    "region": "オホーツク",
+    "furigana": "こしみずちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kunneppu",
+    "name": "訓子府町",
+    "council_name": "訓子府町議会",
+    "region": "オホーツク",
+    "furigana": "くんねっぷちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "oketo",
+    "name": "置戸町",
+    "council_name": "置戸町議会",
+    "region": "オホーツク",
+    "furigana": "おけとちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "saroma",
+    "name": "佐呂間町",
+    "council_name": "佐呂間町議会",
+    "region": "オホーツク",
+    "furigana": "さろまちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "engaru",
+    "name": "遠軽町",
+    "council_name": "遠軽町議会",
+    "region": "オホーツク",
+    "furigana": "えんがるちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "yubetsu",
+    "name": "湧別町",
+    "council_name": "湧別町議会",
+    "region": "オホーツク",
+    "furigana": "ゆうべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "takinoue",
+    "name": "滝上町",
+    "council_name": "滝上町議会",
+    "region": "オホーツク",
+    "furigana": "たきのうえちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "okoppe",
+    "name": "興部町",
+    "council_name": "興部町議会",
+    "region": "オホーツク",
+    "furigana": "おこっぺちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "nishiokoppe",
+    "name": "西興部村",
+    "council_name": "西興部村議会",
+    "region": "オホーツク",
+    "furigana": "にしおこっぺむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "omu",
+    "name": "雄武町",
+    "council_name": "雄武町議会",
+    "region": "オホーツク",
+    "furigana": "おうむちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "oozora",
+    "name": "大空町",
+    "council_name": "大空町議会",
+    "region": "オホーツク",
+    "furigana": "おおぞらちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "otofuke",
+    "name": "音更町",
+    "council_name": "音更町議会",
+    "region": "十勝",
+    "furigana": "おとふけちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shihoro",
+    "name": "士幌町",
+    "council_name": "士幌町議会",
+    "region": "十勝",
+    "furigana": "しほろちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kamishihoro",
+    "name": "上士幌町",
+    "council_name": "上士幌町議会",
+    "region": "十勝",
+    "furigana": "かみしほろちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shikaoi",
+    "name": "鹿追町",
+    "council_name": "鹿追町議会",
+    "region": "十勝",
+    "furigana": "しかおいちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shintoku",
+    "name": "新得町",
+    "council_name": "新得町議会",
+    "region": "十勝",
+    "furigana": "しんとくちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shimizu",
+    "name": "清水町",
+    "council_name": "清水町議会",
+    "region": "十勝",
+    "furigana": "しみずちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "nakasatsunai",
+    "name": "中札内村",
+    "council_name": "中札内村議会",
+    "region": "十勝",
+    "furigana": "なかさつないむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "sarabetsu",
+    "name": "更別村",
+    "council_name": "更別村議会",
+    "region": "十勝",
+    "furigana": "さらべつむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "taiki",
+    "name": "大樹町",
+    "council_name": "大樹町議会",
+    "region": "十勝",
+    "furigana": "たいきちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "hiroo",
+    "name": "広尾町",
+    "council_name": "広尾町議会",
+    "region": "十勝",
+    "furigana": "ひろおちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "makubetsu",
+    "name": "幕別町",
+    "council_name": "幕別町議会",
+    "region": "十勝",
+    "furigana": "まくべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "toyokoro",
+    "name": "豊頃町",
+    "council_name": "豊頃町議会",
+    "region": "十勝",
+    "furigana": "とよころちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "honbetsu",
+    "name": "本別町",
+    "council_name": "本別町議会",
+    "region": "十勝",
+    "furigana": "ほんべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "ashoro",
+    "name": "足寄町",
+    "council_name": "足寄町議会",
+    "region": "十勝",
+    "furigana": "あしょろちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "rikubetsu",
+    "name": "陸別町",
+    "council_name": "陸別町議会",
+    "region": "十勝",
+    "furigana": "りくべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "urahoro",
+    "name": "浦幌町",
+    "council_name": "浦幌町議会",
+    "region": "十勝",
+    "furigana": "うらほろちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "kushirocho",
+    "name": "釧路町",
+    "council_name": "釧路町議会",
+    "region": "釧路",
+    "furigana": "くしろちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "akkeshi",
+    "name": "厚岸町",
+    "council_name": "厚岸町議会",
+    "region": "釧路",
+    "furigana": "あっけしちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "hamanaka",
+    "name": "浜中町",
+    "council_name": "浜中町議会",
+    "region": "釧路",
+    "furigana": "はまなかちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shibecha",
+    "name": "標茶町",
+    "council_name": "標茶町議会",
+    "region": "釧路",
+    "furigana": "しべちゃちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "teshikaga",
+    "name": "弟子屈町",
+    "council_name": "弟子屈町議会",
+    "region": "釧路",
+    "furigana": "てしかがちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "tsurui",
+    "name": "鶴居村",
+    "council_name": "鶴居村議会",
+    "region": "釧路",
+    "furigana": "つるいむら",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shiranuka",
+    "name": "白糠町",
+    "council_name": "白糠町議会",
+    "region": "釧路",
+    "furigana": "しらぬかちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "betsukai",
+    "name": "別海町",
+    "council_name": "別海町議会",
+    "region": "根室",
+    "furigana": "べつかいちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "nakashibetsu",
+    "name": "中標津町",
+    "council_name": "中標津町議会",
+    "region": "根室",
+    "furigana": "なかしべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "shibetsucho",
+    "name": "標津町",
+    "council_name": "標津町議会",
+    "region": "根室",
+    "furigana": "しべつちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "rausu",
+    "name": "羅臼町",
+    "council_name": "羅臼町議会",
+    "region": "根室",
+    "furigana": "らうすちょう",
+    "level": "municipality",
+    "features": [],
+    "active": false
+  },
+  {
+    "slug": "hokkaido",
+    "name": "北海道",
+    "council_name": "北海道議会",
+    "region": "北海道",
+    "furigana": "ほっかいどう",
+    "features": [],
+    "level": "prefecture",
+    "active": false,
+    "system": "gijiroku_com"
   }
 ]

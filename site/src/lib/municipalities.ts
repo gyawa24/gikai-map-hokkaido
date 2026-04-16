@@ -7,10 +7,11 @@ export type Municipality = {
   council_name: string;
   region: string;
   furigana: string;
+  level: "municipality" | "prefecture";
   features: string[];
   active: boolean;
-  tenant_id: number;
-  system: string;
+  tenant_id?: number;
+  system?: string;
 };
 
 export function getMunicipalities(): Municipality[] {
