@@ -325,88 +325,45 @@ export default function HomePage() {
         )}
       </section>
 
-      {/* 市選択 */}
+      {/* 市議会を選ぶ（地域別） */}
       <section className="mb-8">
         <h3 className="text-sm font-semibold text-[#718096] uppercase tracking-wider mb-3">市議会を選ぶ</h3>
-        <div className="flex flex-col gap-3">
-          {cities.map((city) => (
-            <Link
-              key={city.id}
-              href={city.href}
-              className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] p-5 shadow-sm hover:shadow-md transition-all duration-150"
-            >
-              <div className="flex items-center gap-4">
-                <div
-                  className="w-1 self-stretch rounded-full shrink-0 bg-[#1B3A6B] opacity-20 group-hover:opacity-100 transition-opacity"
-                  aria-hidden="true"
-                />
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-0.5">
-                    <p className="text-xs text-[#718096]">{city.furigana}</p>
-                    <span className="text-xs text-[#718096]">·</span>
-                    <p className="text-xs text-[#718096]">{city.region}</p>
-                  </div>
-                  <h3 className="text-lg font-bold text-[#1A202C] leading-snug mb-2">
-                    {city.name}
-                  </h3>
-                  <div className="flex flex-wrap gap-3">
-                    {city.memberCount > 0 && (
-                      <span className="inline-flex items-center gap-1.5 text-sm text-[#4A5568]">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#2A5298]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                          <circle cx="9" cy="7" r="4"/>
-                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                        議員 {city.memberCount}名
-                      </span>
-                    )}
-                    {city.latestSession && (
-                      <span className="inline-flex items-center gap-1.5 text-sm text-[#4A5568]">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#2A5298]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                          <line x1="16" y1="2" x2="16" y2="6"/>
-                          <line x1="8" y1="2" x2="8" y2="6"/>
-                          <line x1="3" y1="10" x2="21" y2="10"/>
-                        </svg>
-                        直近: {city.latestSession}
-                      </span>
-                    )}
-                    {city.minutesCount > 0 && (
-                      <span className="inline-flex items-center gap-1.5 text-sm text-[#4A5568]">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#2A5298]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                          <polyline points="14 2 14 8 20 8"/>
-                          <line x1="16" y1="13" x2="8" y2="13"/>
-                          <line x1="16" y1="17" x2="8" y2="17"/>
-                        </svg>
-                        議事録 {city.minutesCount}件
-                      </span>
-                    )}
-                  </div>
-                  {/* コンテンツバッジ */}
-                  <div className="flex flex-wrap gap-1.5 mt-3">
-                    {city.hasMinutes && (
-                      <span className="text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#2A5298] rounded-full font-medium">議事録</span>
-                    )}
-                    {city.hasSession && (
-                      <span className="text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#2A5298] rounded-full font-medium">会議録・速報</span>
-                    )}
-                  </div>
+        {(() => {
+          const regionOrder = ["石狩", "胆振", "上川", "渡島", "十勝", "後志", "空知", "釧路", "宗谷", "オホーツク", "根室", "檜山"];
+          const grouped = new Map<string, typeof cities>();
+          for (const city of cities) {
+            const list = grouped.get(city.region) ?? [];
+            list.push(city);
+            grouped.set(city.region, list);
+          }
+          return regionOrder
+            .filter((r) => grouped.has(r))
+            .map((region) => (
+              <div key={region} className="mb-4">
+                <h4 className="text-xs font-bold text-[#2A5298] bg-[#E8EEF7] rounded px-3 py-1.5 mb-2">
+                  {region}
+                </h4>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  {grouped.get(region)!.map((city) => (
+                    <Link
+                      key={city.id}
+                      href={city.href}
+                      className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-3 py-3 shadow-sm hover:shadow-md transition-all duration-150"
+                    >
+                      <p className="text-sm font-bold text-[#1A202C] group-hover:text-[#1B3A6B] leading-snug mb-1">
+                        {city.name.replace("議会", "")}
+                      </p>
+                      <div className="flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-[#718096]">
+                        {city.memberCount > 0 && <span>{city.memberCount}名</span>}
+                        {city.minutesCount > 0 && <span>議事録{city.minutesCount}件</span>}
+                        {city.hasSession && <span className="text-[#2A5298]">速報</span>}
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 transition-colors"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
               </div>
-            </Link>
-          ))}
-        </div>
+            ));
+        })()}
       </section>
 
       {/* クイックアクセス */}
