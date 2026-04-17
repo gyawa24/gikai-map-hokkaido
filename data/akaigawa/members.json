@@ -1,0 +1,88 @@
+[
+  {
+    "seat_number": 1,
+    "name": "岩井　英明",
+    "furigana": "",
+    "party": "",
+    "faction": "議長",
+    "committees": []
+  },
+  {
+    "seat_number": 2,
+    "name": "山口　芳之",
+    "furigana": "",
+    "party": "",
+    "faction": "副議長",
+    "committees": [
+      "総務開発常任委員会（委員）",
+      "議会運営委員会（委員）"
+    ]
+  },
+  {
+    "seat_number": 3,
+    "name": "川人　孝則",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務開発常任委員会（委員長）",
+      "議会運営委員会（委員）"
+    ]
+  },
+  {
+    "seat_number": 4,
+    "name": "藤門　弘",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務開発常任委員会（副委員長）",
+      "議会運営委員会（委員）"
+    ]
+  },
+  {
+    "seat_number": 5,
+    "name": "能登　ゆう",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務開発常任委員会（委員）",
+      "議会運営委員会（委員）",
+      "監査委員"
+    ]
+  },
+  {
+    "seat_number": 6,
+    "name": "曽根　敏明",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務開発常任委員会（委員）",
+      "議会運営委員会（副委員長）"
+    ]
+  },
+  {
+    "seat_number": 7,
+    "name": "連　茂",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務開発常任委員会（委員）",
+      "議会運営委員会（委員長）"
+    ]
+  },
+  {
+    "seat_number": 8,
+    "name": "阿部　猛",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務開発常任委員会（委員）",
+      "議会運営委員会（委員）"
+    ]
+  }
+]

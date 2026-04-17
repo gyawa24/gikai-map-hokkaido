@@ -868,8 +868,10 @@
     "region": "後志",
     "furigana": "かもえないむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shakotan",
@@ -878,8 +880,10 @@
     "region": "後志",
     "furigana": "しゃこたんちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "furubira",
@@ -888,8 +892,10 @@
     "region": "後志",
     "furigana": "ふるびらちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "niki",
@@ -898,8 +904,10 @@
     "region": "後志",
     "furigana": "にきちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "yoichi",
@@ -908,8 +916,10 @@
     "region": "後志",
     "furigana": "よいちちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "akaigawa",
@@ -918,8 +928,10 @@
     "region": "後志",
     "furigana": "あかいがわむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "toyoura",

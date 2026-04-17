@@ -1,0 +1,83 @@
+[
+  {
+    "seat_number": 1,
+    "name": "前田 春奈",
+    "furigana": "まえだ はるな",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/niki/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "山内 健生",
+    "furigana": "やまうち たけお",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/niki/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "木村 章生",
+    "furigana": "きむら あきお",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/niki/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "佐藤 秀教",
+    "furigana": "さとう ひでのり",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/niki/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "野崎 明廣",
+    "furigana": "のざき あきひろ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/niki/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "宮本 幹夫",
+    "furigana": "みやもと みきお",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/niki/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "上村 智恵子",
+    "furigana": "うえむら ちえこ",
+    "party": "日本共産党",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/niki/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "嶋田 茂",
+    "furigana": "しまだ しげる",
+    "party": "無所属",
+    "faction": "副議長",
+    "committees": [],
+    "photo_url": "/members/niki/seat_8.jpg"
+  },
+  {
+    "seat_number": 9,
+    "name": "横関 一雄",
+    "furigana": "よこぜき かずお",
+    "party": "無所属",
+    "faction": "議長",
+    "committees": [],
+    "photo_url": "/members/niki/seat_9.jpg"
+  }
+]
