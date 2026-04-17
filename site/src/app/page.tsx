@@ -68,9 +68,6 @@ export default function HomePage() {
     minutesCount: getMinutesCount(m.slug),
   }));
 
-  const totalMembers = cities.reduce((sum, c) => sum + c.memberCount, 0);
-  const totalDecisions = cities.reduce((sum, c) => sum + c.decisionCount, 0);
-
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -79,29 +76,9 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold text-[#1B3A6B] leading-snug mb-3">
           北海道の市議会情報を<br className="sm:hidden" />ひとつの場所で
         </h2>
-        <p className="text-base text-[#4A5568] leading-relaxed mb-5">
+        <p className="text-base text-[#4A5568] leading-relaxed">
           北海道内の市町村議会の議事録・議決結果・議員名簿を横断的に収録。だれでも簡単に閲覧できます。
         </p>
-
-        {/* サマリー統計 */}
-        {totalMembers > 0 && (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-            <div className="bg-white rounded-lg border border-[#CBD5E0] px-4 py-3 text-center shadow-sm">
-              <p className="text-2xl font-bold text-[#1B3A6B]">{cities.length}</p>
-              <p className="text-xs text-[#718096] mt-0.5">対象市議会</p>
-            </div>
-            <div className="bg-white rounded-lg border border-[#CBD5E0] px-4 py-3 text-center shadow-sm">
-              <p className="text-2xl font-bold text-[#1B3A6B]">{totalMembers}</p>
-              <p className="text-xs text-[#718096] mt-0.5">収録議員数</p>
-            </div>
-            {totalDecisions > 0 && (
-              <div className="bg-white rounded-lg border border-[#CBD5E0] px-4 py-3 text-center shadow-sm col-span-2 sm:col-span-1">
-                <p className="text-2xl font-bold text-[#1B3A6B]">{totalDecisions.toLocaleString()}</p>
-                <p className="text-xs text-[#718096] mt-0.5">収録議決件数</p>
-              </div>
-            )}
-          </div>
-        )}
       </section>
 
       {/* 市議会を選ぶ（地域別） */}
