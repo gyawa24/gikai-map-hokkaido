@@ -85,7 +85,6 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
           <nav className="mt-3 -mb-px flex flex-wrap gap-0.5" aria-label="グローバルナビゲーション">
             {[
               { href: "/", label: "トップ" },
-              { href: "/map", label: "地図" },
               { href: "/topics", label: "テーマ別" },
               { href: "/chitose/sessions", label: "会議録・要約" },
               { href: "/search", label: "検索" },

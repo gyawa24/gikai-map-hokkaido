@@ -1,0 +1,144 @@
+[
+  {
+    "seat_number": 1,
+    "name": "森 太郎",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務",
+      "経済"
+    ],
+    "role": "議長",
+    "extra_roles": [],
+    "term": "5期",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 2,
+    "name": "真鍋 盛男",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "経済"
+    ],
+    "role": "副議長",
+    "extra_roles": [
+      "西いぶり広域連合議会議員"
+    ],
+    "term": "4期",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 3,
+    "name": "加藤 正志",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務"
+    ],
+    "role": "常任委員長",
+    "extra_roles": [
+      "議会運営委員",
+      "西胆振行政事務組合議会議員"
+    ],
+    "term": "7期",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 4,
+    "name": "湯浅 祥治",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務"
+    ],
+    "role": "副委員長",
+    "extra_roles": [],
+    "term": "1期",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 5,
+    "name": "毛利 爾",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "経済"
+    ],
+    "role": "常任委員長",
+    "extra_roles": [
+      "議会運営委員"
+    ],
+    "term": "3期",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 6,
+    "name": "山本 勲",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "経済"
+    ],
+    "role": "議運委員長",
+    "extra_roles": [
+      "経済副委員長",
+      "西胆振行政事務組合議会議員"
+    ],
+    "term": "2期",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 7,
+    "name": "長内 伸一",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務"
+    ],
+    "role": "議員",
+    "extra_roles": [],
+    "term": "8期",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 8,
+    "name": "佐藤 忞",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務"
+    ],
+    "role": "議員",
+    "extra_roles": [
+      "議会運営副委員長"
+    ],
+    "term": "4期",
+    "photo_url": ""
+  },
+  {
+    "seat_number": 9,
+    "name": "菊地 敏法",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "経済"
+    ],
+    "role": "議員",
+    "extra_roles": [
+      "監査委員",
+      "西いぶり広域連合議会議員"
+    ],
+    "term": "6期",
+    "photo_url": ""
+  }
+]
