@@ -1,0 +1,101 @@
+[
+  {
+    "seat_number": 1,
+    "name": "水野諭",
+    "furigana": "みずのさとし",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員会"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 2,
+    "name": "寅尾裕志",
+    "furigana": "とらおひろし",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員会"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 3,
+    "name": "松塚政継",
+    "furigana": "まつつかまさつぐ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会運営委員会",
+      "総務産業常任委員会"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 4,
+    "name": "木村孝義",
+    "furigana": "きむらたかよし",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員会",
+      "広報編集特別委員会",
+      "檜山広域行政組合議会議員"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 5,
+    "name": "青坂賢二",
+    "furigana": "あおさかけんじ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員会",
+      "森林・林業・林産業活性化議員連盟"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 6,
+    "name": "麓敏也",
+    "furigana": "ふもととしや",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員会",
+      "議会運営委員",
+      "森林・林業・林産業活性化議員連盟"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 7,
+    "name": "制野征男",
+    "furigana": "せいのゆくお",
+    "party": "共産党",
+    "faction": "",
+    "committees": [
+      "議会運営委員",
+      "総務産業常任委員会",
+      "広報編集特別委員会"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 8,
+    "name": "井口和広",
+    "furigana": "いぐちかずひろ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員会",
+      "広報編集特別委員会",
+      "檜山広域行政組合議会議員",
+      "議会選出監査委員"
+    ],
+    "photo_url": ""
+  }
+]

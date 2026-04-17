@@ -1202,8 +1202,10 @@
     "region": "檜山",
     "furigana": "かみのくにちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "assabu",
@@ -1212,8 +1214,10 @@
     "region": "檜山",
     "furigana": "あっさぶちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "otobe",
@@ -1222,8 +1226,10 @@
     "region": "檜山",
     "furigana": "おとべちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "okushiri",
@@ -1232,8 +1238,10 @@
     "region": "檜山",
     "furigana": "おくしりちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "imakane",
@@ -1242,8 +1250,10 @@
     "region": "檜山",
     "furigana": "いまかねちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "setana",
@@ -1252,8 +1262,10 @@
     "region": "檜山",
     "furigana": "せたなちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shibetsu",

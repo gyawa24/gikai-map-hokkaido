@@ -1,0 +1,104 @@
+[
+  {
+    "seat_number": 1,
+    "name": "中山俊勝",
+    "furigana": "なかやまとしかつ",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "産業厚生常任委員会",
+      "議会運営委員会"
+    ]
+  },
+  {
+    "seat_number": 2,
+    "name": "高田一弥",
+    "furigana": "たかだかずや",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "産業厚生常任委員会",
+      "委員長"
+    ]
+  },
+  {
+    "seat_number": 3,
+    "name": "浜塚久好",
+    "furigana": "はまつかひさよし",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務文教常任委員会",
+      "委員長",
+      "議会運営委員会"
+    ]
+  },
+  {
+    "seat_number": 5,
+    "name": "香川直樹",
+    "furigana": "かがわなおき",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務文教常任委員会",
+      "副委員長",
+      "議会運営委員会",
+      "広報委員長",
+      "南部桧山衛生処理組合議員"
+    ]
+  },
+  {
+    "seat_number": 6,
+    "name": "小野寺孔",
+    "furigana": "おのでらこう",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務文教常任委員会",
+      "広報委員",
+      "檜山広域行政組合議員"
+    ]
+  },
+  {
+    "seat_number": 7,
+    "name": "山田克哉",
+    "furigana": "やまだかつや",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "産業厚生常任委員会",
+      "広報副委員長",
+      "檜山広域行政組合議員"
+    ]
+  },
+  {
+    "seat_number": 8,
+    "name": "松村松雄",
+    "furigana": "まつむらまつお",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "産業厚生常任委員会",
+      "副委員長",
+      "議会運営委員会"
+    ]
+  },
+  {
+    "seat_number": 9,
+    "name": "鈴木祥司",
+    "furigana": "すずきしょうじ",
+    "party": "",
+    "faction": "議長",
+    "committees": []
+  },
+  {
+    "seat_number": 10,
+    "name": "佐々木宏",
+    "furigana": "ささきひろし",
+    "party": "",
+    "faction": "副議長",
+    "committees": [
+      "総務文教常任委員会"
+    ]
+  }
+]
