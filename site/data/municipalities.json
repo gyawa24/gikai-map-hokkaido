@@ -1034,8 +1034,10 @@
     "region": "日高",
     "furigana": "びらとりちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "niikappu",
@@ -1044,8 +1046,10 @@
     "region": "日高",
     "furigana": "にいかっぷちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "urakawa",
@@ -1054,8 +1058,10 @@
     "region": "日高",
     "furigana": "うらかわちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "samani",
@@ -1064,8 +1070,10 @@
     "region": "日高",
     "furigana": "さまにちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "erimo",
@@ -1074,8 +1082,10 @@
     "region": "日高",
     "furigana": "えりもちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shinhidaka",
@@ -1084,8 +1094,10 @@
     "region": "日高",
     "furigana": "しんひだかちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "matsumae",
