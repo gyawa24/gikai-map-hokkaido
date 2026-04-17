@@ -1,0 +1,103 @@
+[
+  {
+    "seat_number": 2,
+    "name": "橋本 收司",
+    "furigana": "はしもと しゅうじ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [],
+    "photo_url": "/members/oshamambe/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "辻 紀樹",
+    "furigana": "つじ のりき",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "産業建設常任委員会委員長",
+      "議会広報編集特別委員会副委員長"
+    ],
+    "photo_url": "/members/oshamambe/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "大谷 敏弥",
+    "furigana": "おおたに としや",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務常任委員会副委員長",
+      "渡島廃棄物処理広域連合議会議員"
+    ],
+    "photo_url": "/members/oshamambe/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "北川 佳嗣",
+    "furigana": "きたがわ よしつぐ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議会運営委員会委員長"
+    ],
+    "photo_url": "/members/oshamambe/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "高森 功治",
+    "furigana": "たかもり こうじ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務常任委員会委員長",
+      "議会広報編集特別委員会委員長"
+    ],
+    "photo_url": "/members/oshamambe/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "長崎 厚",
+    "furigana": "ながさき あつし",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "産業建設常任委員会副委員長"
+    ],
+    "photo_url": "/members/oshamambe/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "高橋 克英",
+    "furigana": "たかはし かつひで",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議会運営委員会副委員長",
+      "渡島廃棄物処理広域連合議会議員"
+    ],
+    "photo_url": "/members/oshamambe/seat_8.jpg"
+  },
+  {
+    "seat_number": 9,
+    "name": "村川 毅",
+    "furigana": "むらかわ たけし",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "副議長"
+    ],
+    "photo_url": "/members/oshamambe/seat_9.jpg"
+  },
+  {
+    "seat_number": 10,
+    "name": "柏倉 恵里子",
+    "furigana": "かしわくら えりこ",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": [
+      "議長"
+    ],
+    "photo_url": "/members/oshamambe/seat_10.jpg"
+  }
+]

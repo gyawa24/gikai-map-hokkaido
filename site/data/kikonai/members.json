@@ -1,0 +1,151 @@
+[
+  {
+    "seat_number": 1,
+    "name": "平野武志",
+    "furigana": "ひらの たけし",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会改革調査特別委員会委員長",
+      "総務・経済常任委員会委員",
+      "議会だより編集特別委員会委員"
+    ],
+    "roles": [],
+    "photo_url": "/members/kikonai/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "東出洋一",
+    "furigana": "ひがしで よういち",
+    "party": "立憲民主党",
+    "faction": "",
+    "committees": [
+      "総務・経済常任委員会委員",
+      "議会運営委員会委員",
+      "議会改革調査特別委員会委員",
+      "監査委員"
+    ],
+    "roles": [],
+    "photo_url": "/members/kikonai/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "廣瀬雅一",
+    "furigana": "ひろせ まさかず",
+    "party": "自由民主党",
+    "faction": "",
+    "committees": [
+      "総務・経済常任委員会副委員長",
+      "議会改革調査特別委員会副委員長",
+      "議会だより編集特別委員会委員",
+      "渡島西部広域事務組合議会議員"
+    ],
+    "roles": [],
+    "photo_url": "/members/kikonai/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "竹田努",
+    "furigana": "たけだ つとむ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務・経済常任委員会委員長",
+      "議会運営委員会委員",
+      "議会改革調査特別委員会委員"
+    ],
+    "roles": [],
+    "photo_url": "/members/kikonai/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "新井田昭男",
+    "furigana": "にいだ あきお",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会運営委員会委員長",
+      "総務・経済常任委員会委員",
+      "議会改革調査特別委員会委員",
+      "渡島廃棄物処理広域連合議会議員"
+    ],
+    "roles": [],
+    "photo_url": "/members/kikonai/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "安齋彰",
+    "furigana": "あんざい あきら",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会だより編集特別委員会委員長",
+      "総務・経済常任委員会委員",
+      "議会改革調査特別委員会委員"
+    ],
+    "roles": [],
+    "photo_url": "/members/kikonai/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "相澤巧",
+    "furigana": "あいざわ たくみ",
+    "party": "日本共産党",
+    "faction": "",
+    "committees": [
+      "議会運営委員会委員",
+      "総務・経済常任委員会委員",
+      "議会改革調査特別委員会委員",
+      "渡島西部広域事務組合議会議員"
+    ],
+    "roles": [],
+    "photo_url": "/members/kikonai/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "苅部礼司",
+    "furigana": "かるべ　れいじ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会運営委員会副委員長",
+      "議会だより編集特別委員会副委員長",
+      "総務・経済常任委員会委員",
+      "議会改革調査特別委員会委員"
+    ],
+    "roles": [],
+    "photo_url": "/members/kikonai/seat_8.jpeg"
+  },
+  {
+    "seat_number": 9,
+    "name": "吉田裕幸",
+    "furigana": "よしだ ひろゆき",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務・経済常任委員会委員",
+      "議会だより編集特別委員会委員",
+      "議会改革調査特別委員会委員"
+    ],
+    "roles": [
+      "副議長"
+    ],
+    "photo_url": "/members/kikonai/seat_9.jpg"
+  },
+  {
+    "seat_number": 10,
+    "name": "又地信也",
+    "furigana": "またち しんや",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務・経済常任委員会委員",
+      "渡島西部広域事務組合議会議員",
+      "渡島廃棄物処理広域連合議会議員"
+    ],
+    "roles": [
+      "議長"
+    ],
+    "photo_url": "/members/kikonai/seat_10.jpg"
+  }
+]

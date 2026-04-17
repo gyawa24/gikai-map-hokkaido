@@ -1106,8 +1106,10 @@
     "region": "渡島",
     "furigana": "まつまえちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shiriuchi",
@@ -1116,8 +1118,10 @@
     "region": "渡島",
     "furigana": "しりうちちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kikonai",
@@ -1126,8 +1130,10 @@
     "region": "渡島",
     "furigana": "きこないちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "nanae",
@@ -1136,8 +1142,10 @@
     "region": "渡島",
     "furigana": "ななえちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shikabe",
@@ -1146,8 +1154,10 @@
     "region": "渡島",
     "furigana": "しかべちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "mori",
@@ -1156,8 +1166,10 @@
     "region": "渡島",
     "furigana": "もりまち",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "yakumo",
@@ -1166,8 +1178,10 @@
     "region": "渡島",
     "furigana": "やくもちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "oshamambe",
@@ -1176,8 +1190,10 @@
     "region": "渡島",
     "furigana": "おしゃまんべちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kaminokuni",

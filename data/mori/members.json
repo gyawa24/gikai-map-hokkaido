@@ -1,0 +1,167 @@
+[
+  {
+    "seat_number": 1,
+    "name": "伊藤 昇",
+    "furigana": "いとう のぼる",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "民生文教常任委員会",
+      "広報広聴常任委員会",
+      "議会運営委員会"
+    ],
+    "role": "副議長",
+    "photo_url": "/members/mori/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "河野 文彦",
+    "furigana": "こうの ふみひこ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務経済常任委員会",
+      "広報広聴常任委員会",
+      "議会運営委員会"
+    ],
+    "role": "監査委員",
+    "photo_url": "/members/mori/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "高橋 邦雄",
+    "furigana": "たかはし くにお",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "民生文教常任委員会 委員長",
+      "広報広聴常任委員会 副委員長",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/mori/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "河野 淳",
+    "furigana": "こうの あつし",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務経済常任委員会 副委員長",
+      "広報広聴常任委員会"
+    ],
+    "photo_url": "/members/mori/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "山田 誠",
+    "furigana": "やまだ まこと",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務経済常任委員会",
+      "広報広聴常任委員会",
+      "議会運営委員会 委員長"
+    ],
+    "photo_url": "/members/mori/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "野口 周治",
+    "furigana": "のぐち しゅうじ",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "committees": [
+      "民生文教常任委員会",
+      "広報広聴常任委員会",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/mori/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "斉藤 優香",
+    "furigana": "さいとう ゆか",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務経済常任委員会",
+      "広報広聴常任委員会 委員長",
+      "渡島廃棄物処理広域連合議員"
+    ],
+    "photo_url": "/members/mori/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "千葉 圭一",
+    "furigana": "ちば けいいち",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": [
+      "民生文教常任委員会 副委員長",
+      "広報広聴常任委員会",
+      "議会運営委員会 副委員長",
+      "渡島廃棄物処理広域連合議員"
+    ],
+    "photo_url": "/members/mori/seat_8.jpg"
+  },
+  {
+    "seat_number": 9,
+    "name": "佐々木 修",
+    "furigana": "ささき おさむ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "民生文教常任委員会",
+      "広報広聴常任委員会"
+    ],
+    "photo_url": "/members/mori/seat_9.jpg"
+  },
+  {
+    "seat_number": 10,
+    "name": "加藤 進",
+    "furigana": "かとう すすむ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "民生文教常任委員会",
+      "広報広聴常任委員会"
+    ],
+    "photo_url": "/members/mori/seat_10.jpg"
+  },
+  {
+    "seat_number": 12,
+    "name": "東 隆一",
+    "furigana": "あずま りゅういち",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務経済常任委員会 委員長",
+      "広報広聴常任委員会",
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/mori/seat_12.jpg"
+  },
+  {
+    "seat_number": 13,
+    "name": "松田 兼宗",
+    "furigana": "まつだ けんそう",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務経済常任委員会",
+      "広報広聴常任委員会"
+    ],
+    "photo_url": "/members/mori/seat_13.jpg"
+  },
+  {
+    "seat_number": 14,
+    "name": "木村 俊広",
+    "furigana": "きむら としひろ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [],
+    "role": "議長",
+    "photo_url": "/members/mori/seat_14.jpg"
+  }
+]

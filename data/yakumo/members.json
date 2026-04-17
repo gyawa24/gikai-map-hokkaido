@@ -1,0 +1,118 @@
+[
+  {
+    "seat_number": 1,
+    "name": "赤井 睦美",
+    "furigana": "あかい むつみ",
+    "party": "",
+    "faction": "元気",
+    "committees": []
+  },
+  {
+    "seat_number": 2,
+    "name": "安藤 辰行",
+    "furigana": "あんどう たつゆき",
+    "party": "",
+    "faction": "和醸良政会",
+    "committees": []
+  },
+  {
+    "seat_number": 3,
+    "name": "大久保 建一",
+    "furigana": "おおくぼ けんいち",
+    "party": "",
+    "faction": "会派に属さない議員",
+    "committees": [
+      "議長"
+    ]
+  },
+  {
+    "seat_number": 4,
+    "name": "倉地 清子",
+    "furigana": "くらち きよこ",
+    "party": "",
+    "faction": "春夏秋冬",
+    "committees": []
+  },
+  {
+    "seat_number": 5,
+    "name": "黒島 竹満",
+    "furigana": "くろしま たけみつ",
+    "party": "",
+    "faction": "和醸良政会",
+    "committees": []
+  },
+  {
+    "seat_number": 6,
+    "name": "小西 雄一",
+    "furigana": "こにし ゆういち",
+    "party": "",
+    "faction": "新風会",
+    "committees": []
+  },
+  {
+    "seat_number": 7,
+    "name": "斎藤 實",
+    "furigana": "さいとう まこと",
+    "party": "",
+    "faction": "和醸良政会",
+    "committees": []
+  },
+  {
+    "seat_number": 8,
+    "name": "関口 正博",
+    "furigana": "せきぐち まさひろ",
+    "party": "",
+    "faction": "新風会",
+    "committees": []
+  },
+  {
+    "seat_number": 9,
+    "name": "寺田 広樹",
+    "furigana": "てらだ ひろき",
+    "party": "",
+    "faction": "春夏秋冬",
+    "committees": []
+  },
+  {
+    "seat_number": 10,
+    "name": "牧野 仁",
+    "furigana": "まきの ひとし",
+    "party": "",
+    "faction": "新風会",
+    "committees": []
+  },
+  {
+    "seat_number": 11,
+    "name": "三澤 公雄",
+    "furigana": "みさわ きみお",
+    "party": "",
+    "faction": "春夏秋冬",
+    "committees": []
+  },
+  {
+    "seat_number": 12,
+    "name": "水野 博美",
+    "furigana": "みずの ひろみ",
+    "party": "",
+    "faction": "元気",
+    "committees": []
+  },
+  {
+    "seat_number": 13,
+    "name": "宮本 雅晴",
+    "furigana": "みやもと まさはる",
+    "party": "公明党",
+    "faction": "春夏秋冬",
+    "committees": [
+      "副議長"
+    ]
+  },
+  {
+    "seat_number": 14,
+    "name": "横田 喜世志",
+    "furigana": "よこた きよし",
+    "party": "日本共産党",
+    "faction": "和醸良政会",
+    "committees": []
+  }
+]
