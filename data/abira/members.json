@@ -1,0 +1,118 @@
+[
+  {
+    "seat_number": 1,
+    "name": "工藤秀一",
+    "furigana": "くどう しゅういち",
+    "party": "公明",
+    "faction": "",
+    "committees": [
+      "総務常任委員会",
+      "議会改革調査特別委員会（副委員長）"
+    ]
+  },
+  {
+    "seat_number": 2,
+    "name": "米川惠美子",
+    "furigana": "よねかわ えみこ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "経済常任委員会（副委員長）",
+      "議会改革調査特別委員会"
+    ]
+  },
+  {
+    "seat_number": 3,
+    "name": "小笠原直治",
+    "furigana": "おがさわら なおじ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務常任委員会",
+      "議会改革調査特別委員会"
+    ]
+  },
+  {
+    "seat_number": 4,
+    "name": "鳥越真由美",
+    "furigana": "とりごえ まゆみ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "経済常任委員会（委員長）",
+      "議会運営委員会",
+      "議会改革調査特別委員会"
+    ]
+  },
+  {
+    "seat_number": 7,
+    "name": "三浦恵美子",
+    "furigana": "みうら えみこ",
+    "party": "共産",
+    "faction": "",
+    "committees": [
+      "総務常任委員会（委員長）",
+      "議会運営委員会",
+      "議会広報特別委員会（委員長）",
+      "議会改革調査特別委員会"
+    ]
+  },
+  {
+    "seat_number": 8,
+    "name": "箱崎英輔",
+    "furigana": "はこざき えいすけ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務常任委員会（副委員長）",
+      "議会広報特別委員会",
+      "議会改革調査特別委員会"
+    ]
+  },
+  {
+    "seat_number": 9,
+    "name": "内藤圭子",
+    "furigana": "ないとう けいこ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "議会運営委員会（副委員長）",
+      "議会広報特別委員会（副委員長）",
+      "議会改革調査特別委員会"
+    ]
+  },
+  {
+    "seat_number": 10,
+    "name": "高山正人",
+    "furigana": "たかやま まさひと",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "経済常任委員会",
+      "議会運営委員会（委員長）",
+      "議会広報特別委員会",
+      "議会改革調査特別委員会"
+    ]
+  },
+  {
+    "seat_number": 11,
+    "name": "梅森敬仁",
+    "furigana": "うめもり たかひと",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "経済常任委員会",
+      "議会改革調査特別委員会（委員長）"
+    ],
+    "role": "副議長"
+  },
+  {
+    "seat_number": 12,
+    "name": "多田政拓",
+    "furigana": "ただ まさひろ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "role": "議長"
+  }
+]

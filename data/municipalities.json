@@ -940,8 +940,10 @@
     "region": "胆振",
     "furigana": "とようらちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "sobetsu",
@@ -950,8 +952,10 @@
     "region": "胆振",
     "furigana": "そうべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shiraoi",
@@ -960,8 +964,10 @@
     "region": "胆振",
     "furigana": "しらおいちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "atsuma",
@@ -970,8 +976,10 @@
     "region": "胆振",
     "furigana": "あつまちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "toyako",
@@ -980,8 +988,10 @@
     "region": "胆振",
     "furigana": "とうやこちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "abira",
@@ -990,8 +1000,10 @@
     "region": "胆振",
     "furigana": "あびらちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "mukawa",
@@ -1000,8 +1012,10 @@
     "region": "胆振",
     "furigana": "むかわちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "hidaka",
