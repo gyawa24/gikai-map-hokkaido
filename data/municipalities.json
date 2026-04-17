@@ -666,8 +666,10 @@
     "region": "石狩",
     "furigana": "さっぽろし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "ebetsu",
@@ -676,8 +678,10 @@
     "region": "石狩",
     "furigana": "えべつし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "tobetsu",
@@ -686,8 +690,10 @@
     "region": "石狩",
     "furigana": "とうべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shinshinotsu",
@@ -696,8 +702,10 @@
     "region": "石狩",
     "furigana": "しんしのつむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "otaru",
@@ -706,8 +714,10 @@
     "region": "後志",
     "furigana": "おたるし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shimamaki",
@@ -716,8 +726,10 @@
     "region": "後志",
     "furigana": "しままきむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "suttsu",
@@ -736,8 +748,10 @@
     "region": "後志",
     "furigana": "くろまつないちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "rankoshi",
@@ -746,8 +760,10 @@
     "region": "後志",
     "furigana": "らんこしちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "niseko",
@@ -756,8 +772,10 @@
     "region": "後志",
     "furigana": "にせこちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "makkari",
@@ -766,8 +784,10 @@
     "region": "後志",
     "furigana": "まっかりむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "rusutsu",
@@ -776,8 +796,10 @@
     "region": "後志",
     "furigana": "るすつむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kimobetsu",
@@ -786,8 +808,10 @@
     "region": "後志",
     "furigana": "きもべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kyogoku",
@@ -796,8 +820,10 @@
     "region": "後志",
     "furigana": "きょうごくちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kyowa",
@@ -806,8 +832,10 @@
     "region": "後志",
     "furigana": "きょうわちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "iwanai",
@@ -816,8 +844,10 @@
     "region": "後志",
     "furigana": "いわないちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "tomari",
@@ -826,8 +856,10 @@
     "region": "後志",
     "furigana": "とまりむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kamoenai",

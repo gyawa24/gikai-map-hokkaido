@@ -1,0 +1,132 @@
+[
+  {
+    "seat_number": 1,
+    "name": "佐伯 秀範",
+    "furigana": "さいき ひでのり",
+    "party": "",
+    "faction": "",
+    "position": "議長",
+    "election_count": 4,
+    "committees": [],
+    "other_posts": [],
+    "photo_url": "/members/makkari/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "陰能 裕一",
+    "furigana": "いんの ゆういち",
+    "party": "",
+    "faction": "",
+    "position": "副議長",
+    "election_count": 3,
+    "committees": [
+      "総務産業常任委員",
+      "議会運営委員会副委員長",
+      "広報編集委員会委員長"
+    ],
+    "other_posts": [
+      "後志広域連合議会議員"
+    ],
+    "photo_url": "/members/makkari/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "福田 恵子",
+    "furigana": "ふくだ けいこ",
+    "party": "",
+    "faction": "",
+    "position": "",
+    "election_count": 5,
+    "committees": [
+      "総務産業常任委員会委員長",
+      "議会運営委員"
+    ],
+    "other_posts": [],
+    "photo_url": "/members/makkari/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "向井 忠幸",
+    "furigana": "むかい ただゆき",
+    "party": "",
+    "faction": "",
+    "position": "",
+    "election_count": 5,
+    "committees": [
+      "総務産業常任委員",
+      "議会運営委員会委員長"
+    ],
+    "other_posts": [
+      "議員会会長"
+    ],
+    "photo_url": "/members/makkari/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "佐々木 義光",
+    "furigana": "ささき よしみつ",
+    "party": "",
+    "faction": "",
+    "position": "",
+    "election_count": 3,
+    "committees": [
+      "総務産業常任委員",
+      "広報編集委員"
+    ],
+    "other_posts": [],
+    "photo_url": "/members/makkari/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "安藤 義明",
+    "furigana": "あんどう よしあき",
+    "party": "",
+    "faction": "",
+    "position": "",
+    "election_count": 2,
+    "committees": [
+      "総務産業常任委員会副委員長",
+      "議会運営委員",
+      "広報編集委員会副委員長"
+    ],
+    "other_posts": [
+      "羊蹄山麓環境衛生組合議会議員",
+      "羊蹄山ろく消防組合議会議員"
+    ],
+    "photo_url": "/members/makkari/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "大町 徹",
+    "furigana": "おおまち とおる",
+    "party": "",
+    "faction": "",
+    "position": "",
+    "election_count": 2,
+    "committees": [
+      "総務産業常任委員",
+      "広報編集委員"
+    ],
+    "other_posts": [
+      "羊蹄山麓環境衛生組合議会議員",
+      "羊蹄山ろく消防組合議会議員"
+    ],
+    "photo_url": "/members/makkari/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "大平 愼一郎",
+    "furigana": "おおひら しんいちろう",
+    "party": "",
+    "faction": "",
+    "position": "",
+    "election_count": 1,
+    "committees": [
+      "総務産業常任委員"
+    ],
+    "other_posts": [
+      "議員会副会長"
+    ],
+    "photo_url": "/members/makkari/seat_8.jpg"
+  }
+]

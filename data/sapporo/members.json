@@ -1,0 +1,882 @@
+[
+  {
+    "seat_number": 1,
+    "name": "あおい ひろみ",
+    "furigana": "あおい ひろみ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "南区",
+    "committees": [
+      "経済観光委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "荒井 勇雄",
+    "furigana": "あらい いさお",
+    "party": "坂元・荒井",
+    "faction": "坂元・荒井",
+    "district": "北区",
+    "committees": [
+      "建設委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "飯島 弘之",
+    "furigana": "いいじま ひろゆき",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "西区",
+    "committees": [
+      "財政市民委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "五十嵐 徳美",
+    "furigana": "いがらし とくみ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "東区",
+    "committees": [
+      "財政市民委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "池田 由美",
+    "furigana": "いけだ ゆみ",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "district": "豊平区",
+    "committees": [
+      "建設委員会副委員長",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "うるしはら 直子",
+    "furigana": "うるしはら なおこ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "白石区",
+    "committees": [
+      "厚生委員会",
+      "大都市税財政制度・DX推進調査特別委員会副委員長"
+    ],
+    "photo_url": "/members/sapporo/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "太田 秀子",
+    "furigana": "おおた ひでこ",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "district": "東区",
+    "committees": [
+      "総務委員会",
+      "議会運営委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "小形 香織",
+    "furigana": "おがた かおり",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "district": "中央区",
+    "committees": [
+      "文教委員会委員長",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_8.jpg"
+  },
+  {
+    "seat_number": 9,
+    "name": "長内 直也",
+    "furigana": "おさない なおや",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "中央区",
+    "committees": [
+      "議長"
+    ],
+    "photo_url": "/members/sapporo/seat_9.jpg"
+  },
+  {
+    "seat_number": 10,
+    "name": "小野 正美",
+    "furigana": "おの まさみ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "手稲区",
+    "committees": [
+      "総務委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_10.jpg"
+  },
+  {
+    "seat_number": 11,
+    "name": "おんむら 健太郎",
+    "furigana": "おんむら けんたろう",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "清田区",
+    "committees": [
+      "総務委員会委員長",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_11.jpg"
+  },
+  {
+    "seat_number": 12,
+    "name": "勝木 勇人",
+    "furigana": "かつき はやと",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "西区",
+    "committees": [
+      "厚生委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_12.jpg"
+  },
+  {
+    "seat_number": 13,
+    "name": "川田 ただひさ",
+    "furigana": "かわた ただひさ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "厚別区",
+    "committees": [
+      "建設委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_13.jpg"
+  },
+  {
+    "seat_number": 14,
+    "name": "かんの 太一",
+    "furigana": "かんの たいち",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "豊平区",
+    "committees": [
+      "建設委員会",
+      "議会運営委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_14.jpg"
+  },
+  {
+    "seat_number": 15,
+    "name": "北村 光一郎",
+    "furigana": "きたむら こういちろう",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "清田区",
+    "committees": [
+      "文教委員会",
+      "議会運営委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_15.jpg"
+  },
+  {
+    "seat_number": 16,
+    "name": "國安 政典",
+    "furigana": "くにやす まさのり",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "北区",
+    "committees": [
+      "文教委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_16.jpg"
+  },
+  {
+    "seat_number": 17,
+    "name": "熊谷 誠一",
+    "furigana": "くまがい せいいち",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "中央区",
+    "committees": [
+      "経済観光委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_17.jpg"
+  },
+  {
+    "seat_number": 18,
+    "name": "小口 智久",
+    "furigana": "こぐち ともひさ",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "東区",
+    "committees": [
+      "財政市民委員会副委員長",
+      "議会運営委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_18.jpg"
+  },
+  {
+    "seat_number": 19,
+    "name": "こじま ゆみ",
+    "furigana": "こじま ゆみ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "厚別区",
+    "committees": [
+      "経済観光委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_19.jpg"
+  },
+  {
+    "seat_number": 20,
+    "name": "小須田 大拓",
+    "furigana": "こすだ ともひろ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "南区",
+    "committees": [
+      "経済観光委員会委員長",
+      "新たな都心空間調査特別委員会副委員長"
+    ],
+    "photo_url": "/members/sapporo/seat_20.jpg"
+  },
+  {
+    "seat_number": 21,
+    "name": "小竹 ともこ",
+    "furigana": "こたけ ともこ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "豊平区",
+    "committees": [
+      "財政市民委員会",
+      "議会運営委員会委員長",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_21.jpg"
+  },
+  {
+    "seat_number": 22,
+    "name": "こんどう 和雄",
+    "furigana": "こんどう かずお",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "豊平区",
+    "committees": [
+      "経済観光委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_22.jpg"
+  },
+  {
+    "seat_number": 23,
+    "name": "坂元 みちたか",
+    "furigana": "さかもと みちたか",
+    "party": "坂元・荒井",
+    "faction": "坂元・荒井",
+    "district": "豊平区",
+    "committees": [
+      "総務委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_23.jpg"
+  },
+  {
+    "seat_number": 24,
+    "name": "佐々木 みつこ",
+    "furigana": "ささき みつこ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "白石区",
+    "committees": [
+      "文教委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_24.jpg"
+  },
+  {
+    "seat_number": 25,
+    "name": "定森 光",
+    "furigana": "さだもり ひかる",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "西区",
+    "committees": [
+      "経済観光委員会副委員長",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_25.jpg"
+  },
+  {
+    "seat_number": 26,
+    "name": "佐藤 綾",
+    "furigana": "さとう あや",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "district": "白石区",
+    "committees": [
+      "経済観光委員会",
+      "総合交通政策調査特別委員会副委員長"
+    ],
+    "photo_url": "/members/sapporo/seat_26.jpg"
+  },
+  {
+    "seat_number": 27,
+    "name": "しのだ 江里子",
+    "furigana": "しのだ えりこ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "東区",
+    "committees": [
+      "建設委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_27.jpg"
+  },
+  {
+    "seat_number": 28,
+    "name": "篠原 すみれ",
+    "furigana": "しのはら すみれ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "白石区",
+    "committees": [
+      "総務委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_28.jpg"
+  },
+  {
+    "seat_number": 29,
+    "name": "高橋 克朋",
+    "furigana": "たかはし かつとも",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "北区",
+    "committees": [
+      "文教委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_29.jpg"
+  },
+  {
+    "seat_number": 30,
+    "name": "竹内 孝代",
+    "furigana": "たけうち たかよ",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "清田区",
+    "committees": [
+      "建設委員会委員長",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_30.jpg"
+  },
+  {
+    "seat_number": 31,
+    "name": "たけのうち 有美",
+    "furigana": "たけのうち ゆみ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "中央区",
+    "committees": [
+      "文教委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_31.jpg"
+  },
+  {
+    "seat_number": 32,
+    "name": "田中 啓介",
+    "furigana": "たなか けいすけ",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "district": "西区",
+    "committees": [
+      "財政市民委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_32.jpg"
+  },
+  {
+    "seat_number": 33,
+    "name": "中川 賢一",
+    "furigana": "なかがわ けんいち",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "中央区",
+    "committees": [
+      "建設委員会",
+      "大都市税財政制度・DX推進調査特別委員会委員長"
+    ],
+    "photo_url": "/members/sapporo/seat_33.jpg"
+  },
+  {
+    "seat_number": 34,
+    "name": "中村 たけし",
+    "furigana": "なかむら たけし",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "西区",
+    "committees": [
+      "財政市民委員会",
+      "議会運営委員会副委員長",
+      "新たな都心空間調査特別委員会委員長"
+    ],
+    "photo_url": "/members/sapporo/seat_34.jpg"
+  },
+  {
+    "seat_number": 35,
+    "name": "長屋 いずみ",
+    "furigana": "ながや いずみ",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "district": "北区",
+    "committees": [
+      "文教委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_35.jpg"
+  },
+  {
+    "seat_number": 36,
+    "name": "成田 祐樹",
+    "furigana": "なりた ゆうき",
+    "party": "未来さっぽろ",
+    "faction": "未来さっぽろ",
+    "district": "東区",
+    "committees": [
+      "厚生委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_36.jpg"
+  },
+  {
+    "seat_number": 37,
+    "name": "波田 大専",
+    "furigana": "はだ だいせん",
+    "party": "日本維新の会",
+    "faction": "日本維新の会",
+    "district": "中央区",
+    "committees": [
+      "財政市民委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_37.jpg"
+  },
+  {
+    "seat_number": 38,
+    "name": "林 清治",
+    "furigana": "はやし せいじ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "北区",
+    "committees": [
+      "厚生委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_38.jpg"
+  },
+  {
+    "seat_number": 39,
+    "name": "伴 良隆",
+    "furigana": "ばん よしたか",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "北区",
+    "committees": [
+      "建設委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_39.jpg"
+  },
+  {
+    "seat_number": 40,
+    "name": "福士 勝",
+    "furigana": "ふくしかつ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "手稲区",
+    "committees": [
+      "経済観光委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_40.jpg"
+  },
+  {
+    "seat_number": 41,
+    "name": "福田 浩太郎",
+    "furigana": "ふくだ こうたろう",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "手稲区",
+    "committees": [
+      "総務委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_41.jpg"
+  },
+  {
+    "seat_number": 42,
+    "name": "藤田 稔人",
+    "furigana": "ふじた としひと",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "白石区",
+    "committees": [
+      "総務委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_42.jpg"
+  },
+  {
+    "seat_number": 43,
+    "name": "ふじわら 広昭",
+    "furigana": "ふじわら ひろあき",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "東区",
+    "committees": [
+      "財政市民委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_43.jpg"
+  },
+  {
+    "seat_number": 44,
+    "name": "細川 正人",
+    "furigana": "ほそかわ まさと",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "中央区",
+    "committees": [
+      "総務委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_44.jpg"
+  },
+  {
+    "seat_number": 45,
+    "name": "前川 隆史",
+    "furigana": "まえかわ たかし",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "白石区",
+    "committees": [
+      "経済観光委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_45.jpg"
+  },
+  {
+    "seat_number": 46,
+    "name": "松井 隆文",
+    "furigana": "まつい たかふみ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "手稲区",
+    "committees": [
+      "厚生委員会",
+      "議会運営委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_46.jpg"
+  },
+  {
+    "seat_number": 47,
+    "name": "松原 淳二",
+    "furigana": "まつばら じゅんじ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "厚別区",
+    "committees": [
+      "文教委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_47.jpg"
+  },
+  {
+    "seat_number": 48,
+    "name": "丸岡 守幸",
+    "furigana": "まるおか もりゆき",
+    "party": "健康さっぽろ",
+    "faction": "健康さっぽろ",
+    "district": "東区",
+    "committees": [
+      "経済観光委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_48.jpg"
+  },
+  {
+    "seat_number": 49,
+    "name": "丸山 秀樹",
+    "furigana": "まるやま ひでき",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "厚別区",
+    "committees": [
+      "厚生委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_49.jpg"
+  },
+  {
+    "seat_number": 50,
+    "name": "三神 英彦",
+    "furigana": "みかみ ひでひこ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "南区",
+    "committees": [
+      "財政市民委員会委員長",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_50.jpg"
+  },
+  {
+    "seat_number": 51,
+    "name": "三上 洋右",
+    "furigana": "みかみ ようすけ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "豊平区",
+    "committees": [
+      "建設委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_51.jpg"
+  },
+  {
+    "seat_number": 52,
+    "name": "水上 美華",
+    "furigana": "みずかみ みか",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "北区",
+    "committees": [
+      "厚生委員会委員長",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_52.jpg"
+  },
+  {
+    "seat_number": 53,
+    "name": "村上 ゆうこ",
+    "furigana": "むらかみ ゆうこ",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "中央区",
+    "committees": [
+      "副議長",
+      "文教委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_53.jpg"
+  },
+  {
+    "seat_number": 54,
+    "name": "村松 叶啓",
+    "furigana": "むらまつ やすひろ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "北区",
+    "committees": [
+      "総務委員会",
+      "議会運営委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_54.jpg"
+  },
+  {
+    "seat_number": 55,
+    "name": "村山 拓司",
+    "furigana": "むらやま たくじ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "西区",
+    "committees": [
+      "経済観光委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_55.jpg"
+  },
+  {
+    "seat_number": 56,
+    "name": "森 基誉則",
+    "furigana": "もり きよのり",
+    "party": "民主市民連合",
+    "faction": "民主市民連合",
+    "district": "厚別区",
+    "committees": [
+      "財政市民委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_56.jpg"
+  },
+  {
+    "seat_number": 57,
+    "name": "森山 由美子",
+    "furigana": "もりやま ゆみこ",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "西区",
+    "committees": [
+      "建設委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_57.jpg"
+  },
+  {
+    "seat_number": 58,
+    "name": "山口 かずさ",
+    "furigana": "やまぐち かずさ",
+    "party": "山口かずさ",
+    "faction": "山口かずさ",
+    "district": "白石区",
+    "committees": [
+      "厚生委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_58.jpg"
+  },
+  {
+    "seat_number": 59,
+    "name": "山田 一郎",
+    "furigana": "やまだ いちろう",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "東区",
+    "committees": [
+      "総務委員会副委員長",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_59.jpg"
+  },
+  {
+    "seat_number": 60,
+    "name": "山田 洋聡",
+    "furigana": "やまだ ひろあき",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "清田区",
+    "committees": [
+      "厚生委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_60.jpg"
+  },
+  {
+    "seat_number": 61,
+    "name": "よこやま 峰子",
+    "furigana": "よこやま みねこ",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "北区",
+    "committees": [
+      "厚生委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_61.jpg"
+  },
+  {
+    "seat_number": 62,
+    "name": "好井 七海",
+    "furigana": "よしい ななみ",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "豊平区",
+    "committees": [
+      "文教委員会",
+      "総合交通政策調査特別員会委員長"
+    ],
+    "photo_url": "/members/sapporo/seat_62.jpg"
+  },
+  {
+    "seat_number": 63,
+    "name": "吉岡 弘子",
+    "furigana": "よしおか ひろこ",
+    "party": "日本共産党",
+    "faction": "日本共産党",
+    "district": "清田区",
+    "committees": [
+      "厚生委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_63.jpg"
+  },
+  {
+    "seat_number": 64,
+    "name": "米倉 みな子",
+    "furigana": "よねくら みなこ",
+    "party": "市民ネットワーク北海道",
+    "faction": "市民ネットワーク北海道",
+    "district": "北区",
+    "committees": [
+      "総務委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_64.jpg"
+  },
+  {
+    "seat_number": 65,
+    "name": "脇元 繁之",
+    "furigana": "わきもと しげゆき",
+    "party": "大地さっぽろ",
+    "faction": "大地さっぽろ",
+    "district": "南区",
+    "committees": [
+      "建設委員会",
+      "大都市税財政制度・DX推進調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_65.jpg"
+  },
+  {
+    "seat_number": 66,
+    "name": "和田 勝也",
+    "furigana": "わだかつや",
+    "party": "自由民主党",
+    "faction": "自由民主党",
+    "district": "手稲区",
+    "committees": [
+      "文教委員会",
+      "総合交通政策調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_66.jpg"
+  },
+  {
+    "seat_number": 67,
+    "name": "わたなべ 泰行",
+    "furigana": "わたなべ やすゆき",
+    "party": "公明党",
+    "faction": "公明党",
+    "district": "南区",
+    "committees": [
+      "財政市民委員会",
+      "議会運営委員会",
+      "新たな都心空間調査特別委員会"
+    ],
+    "photo_url": "/members/sapporo/seat_67.jpg"
+  }
+]

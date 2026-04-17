@@ -1,0 +1,144 @@
+[
+  {
+    "seat_number": 1,
+    "name": "坂下 初雄",
+    "furigana": "さかした はつお",
+    "party": "",
+    "faction": "",
+    "committees": [
+      {
+        "name": "総務社会常任委員会",
+        "role": "委員長"
+      }
+    ]
+  },
+  {
+    "seat_number": 2,
+    "name": "濱野 勝男",
+    "furigana": "はまの かつお",
+    "party": "",
+    "faction": "",
+    "committees": [
+      {
+        "name": "産業建設常任委員会",
+        "role": "委員長"
+      },
+      {
+        "name": "議会運営委員会",
+        "role": "委員"
+      }
+    ]
+  },
+  {
+    "seat_number": 3,
+    "name": "髙島 紀彦",
+    "furigana": "たかしま のりひこ",
+    "party": "",
+    "faction": "",
+    "committees": [
+      {
+        "name": "産業建設常任委員会",
+        "role": "委員"
+      }
+    ],
+    "position": "副議長"
+  },
+  {
+    "seat_number": 4,
+    "name": "藤田 和康",
+    "furigana": "ふじた かずやす",
+    "party": "",
+    "faction": "",
+    "committees": [
+      {
+        "name": "総務社会常任委員会",
+        "role": "委員"
+      },
+      {
+        "name": "産業建設常任委員会",
+        "role": "副委員長"
+      },
+      {
+        "name": "議会運営委員会",
+        "role": "委員"
+      }
+    ]
+  },
+  {
+    "seat_number": 5,
+    "name": "佐藤 伴則",
+    "furigana": "さとう とものり",
+    "party": "",
+    "faction": "",
+    "committees": [
+      {
+        "name": "総務社会常任委員会",
+        "role": "副委員長"
+      },
+      {
+        "name": "産業建設常任委員会",
+        "role": "委員"
+      },
+      {
+        "name": "議会運営委員会",
+        "role": "委員"
+      }
+    ]
+  },
+  {
+    "seat_number": 6,
+    "name": "竹田 一行",
+    "furigana": "たけだ かずゆき",
+    "party": "",
+    "faction": "",
+    "committees": [
+      {
+        "name": "総務社会常任委員会",
+        "role": "委員"
+      },
+      {
+        "name": "産業建設常任委員会",
+        "role": "委員"
+      },
+      {
+        "name": "議会運営委員会",
+        "role": "副委員長"
+      }
+    ]
+  },
+  {
+    "seat_number": 7,
+    "name": "後藤 諭",
+    "furigana": "ごとう さとし",
+    "party": "",
+    "faction": "",
+    "committees": [
+      {
+        "name": "総務社会常任委員会",
+        "role": "委員"
+      },
+      {
+        "name": "産業建設常任委員会",
+        "role": "委員"
+      },
+      {
+        "name": "議会運営委員会",
+        "role": "委員長"
+      }
+    ]
+  },
+  {
+    "seat_number": 8,
+    "name": "中田 仁史",
+    "furigana": "なかた ひとし",
+    "party": "",
+    "faction": "",
+    "committees": [
+      {
+        "name": "総務社会常任委員会",
+        "role": "委員"
+      }
+    ],
+    "position": "議長"
+  }
+]

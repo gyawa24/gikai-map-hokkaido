@@ -1,0 +1,88 @@
+[
+  {
+    "seat_number": 1,
+    "name": "山元栄",
+    "furigana": "",
+    "party": "",
+    "faction": "議長",
+    "committees": []
+  },
+  {
+    "seat_number": 2,
+    "name": "南部隆志",
+    "furigana": "",
+    "party": "",
+    "faction": "副議長",
+    "committees": [
+      "行政常任委員会"
+    ]
+  },
+  {
+    "seat_number": 3,
+    "name": "北川哲也",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "行政常任委員会",
+      "議会運営委員会（副委員長）",
+      "議会広報特別委員会"
+    ]
+  },
+  {
+    "seat_number": 4,
+    "name": "大塚裕樹",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "行政常任委員会（委員長）"
+    ]
+  },
+  {
+    "seat_number": 5,
+    "name": "林和彦",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "行政常任委員会（副委員長）",
+      "議会運営委員会",
+      "議会広報特別委員会（委員長）"
+    ]
+  },
+  {
+    "seat_number": 6,
+    "name": "植島こずえ",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "行政常任委員会"
+    ]
+  },
+  {
+    "seat_number": 7,
+    "name": "竹村清一",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "行政常任委員会",
+      "議会運営委員会",
+      "議会広報特別委員会（副委員長）"
+    ]
+  },
+  {
+    "seat_number": 8,
+    "name": "高橋隆光",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "行政常任委員会",
+      "議会運営委員会（委員長）",
+      "議会広報特別委員会"
+    ]
+  }
+]
