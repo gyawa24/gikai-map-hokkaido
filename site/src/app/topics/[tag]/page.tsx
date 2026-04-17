@@ -8,7 +8,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params;
-  const decoded = decodeURIComponent(tag);
+  const decoded = tag;
   return {
     title: `${decoded} | テーマ別議事録 | 北海道議会情報マップ`,
     description: `北海道内の市町村議会で「${decoded}」が議論された議事録の一覧です。`,
@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export async function generateStaticParams() {
   const tags = getAllTags();
-  return tags.map(({ tag }) => ({ tag: encodeURIComponent(tag) }));
+  return tags.map(({ tag }) => ({ tag }));
 }
 
 export default async function TopicTagPage({ params }: Props) {
   const { tag } = await params;
-  const decoded = decodeURIComponent(tag);
+  const decoded = tag;
   const records = getByTag(decoded);
 
   return (
