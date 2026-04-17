@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { getMunicipalities } from "@/lib/municipalities";
 import type { Member } from "@/types/member";
 import type { Decision } from "@/types/decision";
 
@@ -10,7 +11,6 @@ function getMemberCount(cityId: string): number {
     const members = JSON.parse(fs.readFileSync(fp, "utf-8")) as Member[];
     return members.length;
   } catch {
-    // members.json がなければ election.json の当選者数で代替
     try {
       const fp = path.join(process.cwd(), "data", cityId, "election.json");
       const data = JSON.parse(fs.readFileSync(fp, "utf-8"));
@@ -52,241 +52,20 @@ function getMinutesCount(cityId: string): number {
 }
 
 
-const CITIES = [
-  {
-    id: "chitose",
-    name: "千歳市議会",
-    furigana: "ちとせし",
-    href: "/chitose",
-    region: "石狩",
-    hasMinutes: true,
-    hasSession: true,
-  },
-  {
-    id: "eniwa",
-    name: "恵庭市議会",
-    furigana: "えにわし",
-    href: "/eniwa",
-    region: "石狩",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "tomakomai",
-    name: "苫小牧市議会",
-    furigana: "とまこまいし",
-    href: "/tomakomai",
-    region: "胆振",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "asahikawa",
-    name: "旭川市議会",
-    furigana: "あさひかわし",
-    href: "/asahikawa",
-    region: "上川",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "hakodate",
-    name: "函館市議会",
-    furigana: "はこだてし",
-    href: "/hakodate",
-    region: "渡島",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "muroran",
-    name: "室蘭市議会",
-    furigana: "むろらんし",
-    href: "/muroran",
-    region: "胆振",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "kushiro",
-    name: "釧路市議会",
-    furigana: "くしろし",
-    href: "/kushiro",
-    region: "釧路",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "wakkanai",
-    name: "稚内市議会",
-    furigana: "わっかないし",
-    href: "/wakkanai",
-    region: "宗谷",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "kitami",
-    name: "北見市議会",
-    furigana: "きたみし",
-    href: "/kitami",
-    region: "オホーツク",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "obihiro",
-    name: "帯広市議会",
-    furigana: "おびひろし",
-    href: "/obihiro",
-    region: "十勝",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "nayoro",
-    name: "名寄市議会",
-    furigana: "なよろし",
-    href: "/nayoro",
-    region: "上川",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "date",
-    name: "伊達市議会",
-    furigana: "だてし",
-    href: "/date",
-    region: "胆振",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "fukushima",
-    name: "福島町議会",
-    furigana: "ふくしまちょう",
-    href: "/fukushima",
-    region: "渡島",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "hokuto",
-    name: "北斗市議会",
-    furigana: "ほくとし",
-    href: "/hokuto",
-    region: "渡島",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "ishikari",
-    name: "石狩市議会",
-    furigana: "いしかりし",
-    href: "/ishikari",
-    region: "石狩",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "kitahiroshima",
-    name: "北広島市議会",
-    furigana: "きたひろしまし",
-    href: "/kitahiroshima",
-    region: "石狩",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "nemuro",
-    name: "根室市議会",
-    furigana: "ねむろし",
-    href: "/nemuro",
-    region: "根室",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "noboribetsu",
-    name: "登別市議会",
-    furigana: "のぼりべつし",
-    href: "/noboribetsu",
-    region: "胆振",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "ashibetsu",
-    name: "芦別市議会",
-    furigana: "あしべつし",
-    href: "/ashibetsu",
-    region: "空知",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "memuro",
-    name: "芽室町議会",
-    furigana: "めむろちょう",
-    href: "/memuro",
-    region: "十勝",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "kamikawa",
-    name: "上川町議会",
-    furigana: "かみかわちょう",
-    href: "/kamikawa",
-    region: "上川",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "nakagawa",
-    name: "中川町議会",
-    furigana: "なかがわちょう",
-    href: "/nakagawa",
-    region: "上川",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "kutchan",
-    name: "倶知安町議会",
-    furigana: "くっちゃんちょう",
-    href: "/kutchan",
-    region: "後志",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "ikeda",
-    name: "池田町議会",
-    furigana: "いけだちょう",
-    href: "/ikeda",
-    region: "十勝",
-    hasMinutes: true,
-    hasSession: false,
-  },
-  {
-    id: "esashi",
-    name: "江差町議会",
-    furigana: "えさしちょう",
-    href: "/esashi",
-    region: "檜山",
-    hasMinutes: true,
-    hasSession: false,
-  },
-];
-
 export default function HomePage() {
-  const cities = CITIES.map((c) => ({
-    ...c,
-    memberCount: getMemberCount(c.id),
-    latestSession: getLatestSession(c.id),
-    decisionCount: getDecisionCount(c.id),
-    minutesCount: getMinutesCount(c.id),
+  const allMunis = getMunicipalities().filter((m) => m.active && m.level === "municipality");
+  const cities = allMunis.map((m) => ({
+    id: m.slug,
+    name: m.council_name,
+    furigana: m.furigana,
+    href: `/${m.slug}`,
+    region: m.region,
+    hasMinutes: m.features.includes("minutes"),
+    hasSession: m.features.includes("sessions"),
+    memberCount: getMemberCount(m.slug),
+    latestSession: getLatestSession(m.slug),
+    decisionCount: getDecisionCount(m.slug),
+    minutesCount: getMinutesCount(m.slug),
   }));
 
   const totalMembers = cities.reduce((sum, c) => sum + c.memberCount, 0);
@@ -329,7 +108,7 @@ export default function HomePage() {
       <section className="mb-8">
         <h3 className="text-sm font-semibold text-[#718096] uppercase tracking-wider mb-3">市議会を選ぶ</h3>
         {(() => {
-          const regionOrder = ["石狩", "胆振", "上川", "渡島", "十勝", "後志", "空知", "釧路", "宗谷", "オホーツク", "根室", "檜山"];
+          const regionOrder = ["石狩", "空知", "後志", "胆振", "日高", "渡島", "檜山", "上川", "留萌", "宗谷", "オホーツク", "十勝", "釧路", "根室"];
           const grouped = new Map<string, typeof cities>();
           for (const city of cities) {
             const list = grouped.get(city.region) ?? [];
