@@ -4,10 +4,22 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import type { SessionHit, MemberHit } from "@/app/api/search/route";
 
-function highlight(text: string, tokens: string[]): string {
-  if (!tokens.length) return text;
+function Highlight({ text, tokens }: { text: string; tokens: string[] }) {
+  if (!tokens.length) return <>{text}</>;
   const pattern = tokens.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
-  return text.replace(new RegExp(pattern, "gi"), (m) => `<mark>${m}</mark>`);
+  const parts = text.split(new RegExp(`(${pattern})`, "gi"));
+  const regex = new RegExp(`^(?:${pattern})$`, "i");
+  return (
+    <>
+      {parts.map((part, i) =>
+        regex.test(part) ? (
+          <mark key={i} className="bg-yellow-200 text-[#1A202C] rounded">{part}</mark>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  );
 }
 
 function tokenize(query: string): string[] {
@@ -197,10 +209,9 @@ export default function SearchClient() {
                 <span className="text-xs text-[#718096] ml-auto">{r.field}</span>
               </div>
               <p className="text-sm font-medium text-[#1B3A6B] mb-1">{r.title}</p>
-              <p
-                className="text-xs text-[#4A5568] leading-relaxed [&_mark]:bg-yellow-200 [&_mark]:text-[#1A202C] [&_mark]:rounded"
-                dangerouslySetInnerHTML={{ __html: highlight(r.context, tokens) }}
-              />
+              <p className="text-xs text-[#4A5568] leading-relaxed">
+                <Highlight text={r.context} tokens={tokens} />
+              </p>
             </Link>
           ))}
         </div>
@@ -218,10 +229,9 @@ export default function SearchClient() {
               <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-3">
                   <div>
-                    <span
-                      className="font-bold text-[#1B3A6B] text-base [&_mark]:bg-yellow-200 [&_mark]:text-[#1A202C] [&_mark]:rounded"
-                      dangerouslySetInnerHTML={{ __html: highlight(m.name, tokens) }}
-                    />
+                    <span className="font-bold text-[#1B3A6B] text-base">
+                      <Highlight text={m.name} tokens={tokens} />
+                    </span>
                     <span className="text-xs text-[#718096] ml-1.5">{m.furigana}</span>
                   </div>
                 </div>
@@ -229,16 +239,19 @@ export default function SearchClient() {
               </div>
               <div className="flex flex-wrap gap-1.5 mt-1.5">
                 {m.party && (
-                  <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] border border-[#CBD5E0] text-[#4A5568] rounded-full"
-                    dangerouslySetInnerHTML={{ __html: highlight(m.party, tokens) }} />
+                  <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] border border-[#CBD5E0] text-[#4A5568] rounded-full">
+                    <Highlight text={m.party} tokens={tokens} />
+                  </span>
                 )}
                 {m.faction && m.faction !== m.party && (
-                  <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] border border-[#CBD5E0] text-[#4A5568] rounded-full"
-                    dangerouslySetInnerHTML={{ __html: highlight(m.faction, tokens) }} />
+                  <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] border border-[#CBD5E0] text-[#4A5568] rounded-full">
+                    <Highlight text={m.faction} tokens={tokens} />
+                  </span>
                 )}
                 {m.committees.map((c) => (
-                  <span key={c} className="text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#1B3A6B] rounded-full"
-                    dangerouslySetInnerHTML={{ __html: highlight(c, tokens) }} />
+                  <span key={c} className="text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#1B3A6B] rounded-full">
+                    <Highlight text={c} tokens={tokens} />
+                  </span>
                 ))}
               </div>
             </Link>

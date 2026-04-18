@@ -811,6 +811,46 @@
       "completed_at": "2026-04-13T20:48:50.147Z",
       "elapsed_seconds": 458,
       "result_preview": "c/app/[city]/sessions/page.tsx` | 会議録・速報（features に \"sessions\" なし → 404） |\n| `site/src/app/[city]/sessions/[id]/page.tsx` | 会議録詳細 |\n| `site/src/app/[city]/election/page.tsx` | 選挙結果（features に \"election\" なし → 404） |\n\n## 更新したファイル\n\n- **`CityHeaderServer.tsx`**: `municipalities.json` から CITIES を動的構築（`esashi` 等の漏れ解消）、`pageExists()` が `[city]` 動的ルートも認識するよう拡張\n\n## 動作の仕組み\n\n- 既存の静的ルート（`/chitose`, `/eniwa` 等）は従来通り動作（静的ルートが優先）\n- 静的ページが未作成の市（`hakodate/minutes/[id]` 等）は動的ルートで処理\n- TypeScript エラーなし、コミット・プッシュ済み\n"
+    },
+    {
+      "id": "task-045",
+      "title": "CityHeader を municipalities.json ベースに変更し個別市ページを削除",
+      "category": "feature",
+      "priority": "high",
+      "status": "done",
+      "description": "task-044 の動的ルートが完成した後に実行する。\n\n## 1. CityHeader の動的化\nsite/src/components/CityHeader.tsx の FALLBACK_CITY_CONFIG と CITY_KEYS のハードコードを廃止し、\nmunicipalities.json から動的にナビを生成する。\n\n変更方針:\n- detectCity() を「pathname の第1セグメントが municipalities.json の slug に一致するか」で判定\n- nav items は municipality.features に基づいて動的生成:\n  - members → { href: '/{slug}', label: '議員一覧' }\n  - minutes → { href: '/{slug}/minutes', label: '議事録' }\n  - sessions → { href: '/{slug}/sessions', label: '会議録・速報' }\n  - decisions → { href: '/{slug}/decisions', label: '議決結果' }\n  - schedule → { href: '/{slug}/schedule', label: '行事予定' }\n  - newsletter → { href: '/{slug}/newsletter', label: '議会だより' }\n  - election → { href: '/{slug}/election', label: '選挙結果' }\n  - plan → { href: '/{slug}/plan', label: '総合計画' }\n  - 常に末尾に: { href: '/ai-search', label: '✦ AI検索' }\n\n注意: CityHeader は 'use client' なので、municipalities.json をクライアントで直接読めない。\nサーバーコンポーネント（CityHeaderServer.tsx）でデータを読んで Props として渡す既存パターンを活用すること。\n\n## 2. 個別市ディレクトリの削除\n以下のディレクトリを削除する（動的ルート [city]/ に置き換え済みのため）:\nsite/src/app/chitose/\nsite/src/app/eniwa/\nsite/src/app/tomakomai/\nsite/src/app/asahikawa/\nsite/src/app/hakodate/\nsite/src/app/muroran/\nsite/src/app/kushiro/\nsite/src/app/wakkanai/\nsite/src/app/kitami/\nsite/src/app/obihiro/\nsite/src/app/nayoro/\nsite/src/app/date/\nsite/src/app/fukushima/\nsite/src/app/hokuto/\nsite/src/app/ishikari/\nsite/src/app/kitahiroshima/\nsite/src/app/nemuro/\nsite/src/app/noboribetsu/\nsite/src/app/ashibetsu/\nsite/src/app/memuro/\nsite/src/app/kamikawa/\nsite/src/app/nakagawa/\nsite/src/app/kutchan/\nsite/src/app/ikeda/\nsite/src/app/esashi/\n\n削除後に npx tsc --noEmit でエラーがないことを確認すること。\nサイトをビルドして ( npm run build ) エラーがないことを確認すること。",
+      "acceptance_criteria": [
+        "CityHeader のナビが municipalities.json から動的生成されている",
+        "FALLBACK_CITY_CONFIG のハードコードが廃止されている",
+        "個別市ディレクトリ（chitose/, eniwa/ 等）が削除されている",
+        "npm run build が成功する",
+        "TypeScript エラーがない"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-13T20:48:52.159Z",
+      "completed_at": "2026-04-13T20:57:49.609Z",
+      "elapsed_seconds": 537,
+      "result_preview": "これは修正前の古いバックグラウンドジョブの通知です。その後に実行した `git push origin main` は正常に成功しており（`dca40e0..2dde1f9 main -> main`）、問題ありません。\n"
+    },
+    {
+      "id": "task-046",
+      "title": "テーマ別議員ランキングページを追加（/chitose/themes）",
+      "category": "feature",
+      "priority": "high",
+      "status": "done",
+      "description": "data/chitose/members_activity.json には各議員の themes（例: ['観光・交流', '教育', '防災']）と top_topics が含まれている。\nこのデータを使って「テーマ別に議員をランキング表示するページ」を作成する。\n\n## データ構造（確認済み）\nmembers_activity.json の各エントリ:\n- name: 議員名\n- themes: ['観光・交流', '産業・経済', '教育', ...] ← テーマリスト\n- top_topics: ['具体的な質問トピック1', ...] ← 主な質問内容\n- session_count: 発言回数\n\n## 作成するファイル\nsite/src/app/[city]/themes/page.tsx\n\n## ページ仕様\n\n### 上部: テーマ一覧タブ（フィルター）\n- 全議員の themes を集計して一覧化\n- 「すべて」「子育て・教育」「防災・安全」「経済・産業」などのタグボタン\n- タグをクリックすると下のランキングが絞り込まれる（URLSearchParams で状態管理）\n\n### 中部: ランキングリスト\n- 選択したテーマに該当する議員を session_count 順に表示\n- 各カードに:\n  - 議員名・写真（photo_url があれば）\n  - 会派バッジ（DESIGN.md の factionBadgeClass を使う）\n  - そのテーマでの発言トピック（top_topics から関連するものを表示）\n  - 「議員詳細へ」リンク（/[city]/members/[id]）\n\n### 下部: 「この問題は誰に相談すれば？」の説明文\n- サービスの使い方を市民向けに簡潔に説明\n\n## 技術仕様\n- サーバーコンポーネント（インタラクション部分のみ use client）\n- URLSearchParams でタブ状態を管理（?theme=教育）\n- generateMetadata で動的タイトル（「テーマ別議員 | 千歳市議会」）\n- DESIGN.md のカード・バッジパターンを厳守\n- [city] の動的ルートとして実装（千歳専用にしない）\n- members_activity.json がない市では notFound() を返す\n\n## municipalities.json への追加\nchitose の features に themes を追加すること。\nCityHeader のナビにも「テーマ別」リンクを追加（features に themes がある市のみ表示）。\n\n完了後 git commit && git push すること。",
+      "acceptance_criteria": [
+        "/chitose/themes にアクセスできる",
+        "テーマタグで議員が絞り込める",
+        "議員カードに会派・トピックが表示される",
+        "members_activity.json がない市では適切に処理される",
+        "TypeScript エラーなし"
+      ],
+      "created_at": "2026-04-14",
+      "started_at": "2026-04-14T23:12:41.293Z",
+      "completed_at": "2026-04-14T23:15:59.154Z",
+      "elapsed_seconds": 198,
+      "result_preview": "要）\n- `members_activity.json` がない市では `notFound()` を返す\n- テーマタブ: 全テーマを議員数順に並べ、`?theme=X` URLSearchParams で絞り込み\n- ランキングカード: 発言回数順に表示、会派バッジ・トピックタグ・議員詳細リンク付き\n- テーマ未選択時はテーマタグをクリック可能なリンクとして表示\n- 下部に「この問題は誰に相談すれば？」の市民向け説明文\n\n### 更新: `site/data/municipalities.json`\n- chitose の `features` に `\"themes\"` を追加\n\n### 更新: `site/src/components/CityHeaderServer.tsx`\n- `MASTER_NAV` に `{ key: \"themes\", label: \"テーマ別\", pageDir: \"themes\", dataFile: \"members_activity.json\" }` を追加\n- `members_activity.json` が存在する市にのみナビが表示される\n"
     }
   ]
 }

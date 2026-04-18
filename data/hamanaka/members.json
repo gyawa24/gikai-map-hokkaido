@@ -1,0 +1,115 @@
+[
+  {
+    "seat_number": 1,
+    "name": "三上浅雄",
+    "furigana": "みかみあさお",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議会運営委員長",
+      "総務経済常任副委員長",
+      "東部消防組合議員"
+    ],
+    "photo_url": "/members/hamanaka/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "渡邉秀治",
+    "furigana": "わたなべしゅうじ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務経済常任委員",
+      "広報公聴常任委員",
+      "東部消防組合議員"
+    ],
+    "photo_url": "/members/hamanaka/seat_2.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "三膳時子",
+    "furigana": "さんぜんときこ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "広報公聴常任副委員長",
+      "総務経済常任委員"
+    ],
+    "photo_url": "/members/hamanaka/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "川村義春",
+    "furigana": "かわむらよしはる",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務経済常任委員長",
+      "議会運営副委員長",
+      "東部消防組合議員"
+    ],
+    "photo_url": "/members/hamanaka/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "田甫哲朗",
+    "furigana": "たぼてつろう",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "広報公聴常任委員長",
+      "社会文教常任副委員長",
+      "議会運営委員"
+    ],
+    "photo_url": "/members/hamanaka/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "渡部貴士",
+    "furigana": "わたなべたかし",
+    "party": "参政党",
+    "faction": "参政党",
+    "committees": [
+      "社会文教常任委員長",
+      "議会運営委員"
+    ],
+    "photo_url": "/members/hamanaka/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "谷村敦",
+    "furigana": "たにむらあつし",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務経済常任委員",
+      "広報公聴常任委員",
+      "東部消防組合議員"
+    ],
+    "photo_url": "/members/hamanaka/seat_8.jpg"
+  },
+  {
+    "seat_number": 9,
+    "name": "成田良雄",
+    "furigana": "なりたよしお",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": [
+      "副議長",
+      "社会文教常任委員",
+      "議会運営委員"
+    ],
+    "photo_url": "/members/hamanaka/seat_9.jpg"
+  },
+  {
+    "seat_number": 10,
+    "name": "落合俊雄",
+    "furigana": "おちあいとしお",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議長"
+    ],
+    "photo_url": "/members/hamanaka/seat_10.jpg"
+  }
+]

@@ -165,7 +165,7 @@ function MemberCard({
               {policyTags.map((tag) => (
                 <Link
                   key={tag.policyId}
-                  href="/chitose/plan"
+                  href={`${memberHrefBase?.replace("/members", "/plan") ?? "/chitose/plan"}`}
                   className={`text-xs px-2 py-0.5 rounded border ${GOAL_BADGE_COLORS[tag.goalId] ?? "bg-gray-100 text-gray-700 border-gray-300"} hover:opacity-80 transition-opacity`}
                   title={`総合計画 基本目標${tag.goalId}: ${tag.goalTitle}`}
                 >

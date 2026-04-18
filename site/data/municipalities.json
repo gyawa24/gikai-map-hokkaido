@@ -2084,8 +2084,10 @@
     "region": "釧路",
     "furigana": "くしろちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "akkeshi",
@@ -2094,8 +2096,10 @@
     "region": "釧路",
     "furigana": "あっけしちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "hamanaka",
@@ -2104,8 +2108,10 @@
     "region": "釧路",
     "furigana": "はまなかちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shibecha",
@@ -2114,8 +2120,10 @@
     "region": "釧路",
     "furigana": "しべちゃちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "teshikaga",
@@ -2124,8 +2132,10 @@
     "region": "釧路",
     "furigana": "てしかがちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "tsurui",
@@ -2134,8 +2144,10 @@
     "region": "釧路",
     "furigana": "つるいむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shiranuka",
@@ -2144,8 +2156,10 @@
     "region": "釧路",
     "furigana": "しらぬかちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "betsukai",

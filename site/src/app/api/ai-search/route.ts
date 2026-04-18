@@ -11,9 +11,11 @@ const MAX_REQUESTS_PER_DAY = 10;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 function getClientIP(req: NextRequest): string {
+  // Vercelではx-forwarded-forの最初のIPがクライアントIP（Vercelが付与）
+  // x-real-ipはVercelが設定する信頼できるヘッダー
   return (
-    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
     req.headers.get("x-real-ip") ??
+    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
     "unknown"
   );
 }
@@ -422,6 +424,12 @@ export async function POST(req: NextRequest) {
     question = (body.question ?? "").trim();
     compareMode = body.compareMode === true;
     if (!question) throw new Error("empty");
+    if (question.length > 500) {
+      return NextResponse.json(
+        { error: "質問は500文字以内にしてください。" },
+        { status: 400 }
+      );
+    }
   } catch {
     return NextResponse.json(
       { error: "質問を入力してください。" },
