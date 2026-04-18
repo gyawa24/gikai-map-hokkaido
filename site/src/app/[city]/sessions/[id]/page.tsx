@@ -53,11 +53,17 @@ export async function generateMetadata({
     ? `${session.committee} — ${dateLabel}の会議録`
     : `${cityName}議会 ${dateLabel}の会議録`;
 
+  const ogImage = `/api/og-segment?city=${city}&session=${id}&seg=1`;
+
   return {
     title,
     description,
-    openGraph: { title, description },
-    twitter: { card: "summary" },
+    openGraph: {
+      title,
+      description,
+      images: [{ url: ogImage, width: 1200, height: 630 }],
+    },
+    twitter: { card: "summary_large_image" },
   };
 }
 

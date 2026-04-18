@@ -88,7 +88,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
               { href: "/topics", label: "テーマ別" },
               { href: "/chitose/sessions", label: "会議録・要約" },
               { href: "/search", label: "検索" },
-              { href: "/ai-search", label: "✦ AI検索" },
+              { href: "/ai-search", label: "AI検索（実験）" },
             ].map(renderNavLink)}
           </nav>
         )}
