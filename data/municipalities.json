@@ -2168,8 +2168,10 @@
     "region": "根室",
     "furigana": "べつかいちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "nakashibetsu",
@@ -2178,8 +2180,10 @@
     "region": "根室",
     "furigana": "なかしべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shibetsucho",
@@ -2188,8 +2192,10 @@
     "region": "根室",
     "furigana": "しべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "rausu",
@@ -2198,8 +2204,10 @@
     "region": "根室",
     "furigana": "らうすちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "hokkaido",
