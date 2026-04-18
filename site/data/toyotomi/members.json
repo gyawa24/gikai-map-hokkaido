@@ -1,0 +1,108 @@
+[
+  {
+    "seat_number": 1,
+    "name": "千葉 久",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": []
+  },
+  {
+    "seat_number": 2,
+    "name": "鎌倉 和雄",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員",
+      "予算決算常任委員",
+      "広報広聴常任委員"
+    ]
+  },
+  {
+    "seat_number": 3,
+    "name": "水戸部 正博",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員長",
+      "予算決算常任委員",
+      "広報広聴常任委員",
+      "議会運営委委員"
+    ]
+  },
+  {
+    "seat_number": 4,
+    "name": "竹中 隆浩",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員",
+      "予算決算常任副委員長",
+      "広報広聴常任委員長",
+      "議会運営委員"
+    ]
+  },
+  {
+    "seat_number": 5,
+    "name": "小笠原 照美",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員",
+      "予算決算常任委員長",
+      "広報広聴常任副委員長",
+      "議会運営委員"
+    ]
+  },
+  {
+    "seat_number": 6,
+    "name": "佐々木 誠",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員",
+      "予算決算常任委員"
+    ]
+  },
+  {
+    "seat_number": 7,
+    "name": "佐々木 政義",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任副委員長",
+      "予算決算常任委員",
+      "広報広聴常任委員",
+      "議会運営委員長"
+    ]
+  },
+  {
+    "seat_number": 8,
+    "name": "前田 孝一",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員",
+      "予算決算常任委員"
+    ]
+  },
+  {
+    "seat_number": 9,
+    "name": "多々良 勝",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員",
+      "予算決算常任委員",
+      "議会運営副委員長"
+    ]
+  }
+]

@@ -1582,8 +1582,10 @@
     "region": "宗谷",
     "furigana": "さるふつむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "hamatombetsu",
@@ -1592,8 +1594,10 @@
     "region": "宗谷",
     "furigana": "はまとんべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "nakatombetsu",
@@ -1602,8 +1606,10 @@
     "region": "宗谷",
     "furigana": "なかとんべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "esashi_souya",
@@ -1622,8 +1628,10 @@
     "region": "宗谷",
     "furigana": "とよとみちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "rebun",
@@ -1632,8 +1640,10 @@
     "region": "宗谷",
     "furigana": "れぶんちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "rishiri",
@@ -1642,8 +1652,10 @@
     "region": "宗谷",
     "furigana": "りしりちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "rishirifuji",
@@ -1652,8 +1664,10 @@
     "region": "宗谷",
     "furigana": "りしりふじちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "horonobe",
@@ -1662,8 +1676,10 @@
     "region": "宗谷",
     "furigana": "ほろのべちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "abashiri",
