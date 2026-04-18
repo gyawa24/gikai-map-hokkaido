@@ -1322,8 +1322,10 @@
     "region": "上川",
     "furigana": "とうまちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "pippu",
@@ -1356,8 +1358,10 @@
     "region": "上川",
     "furigana": "ひがしかわちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "biei",
@@ -1366,8 +1370,10 @@
     "region": "上川",
     "furigana": "びえいちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kamifurano",
@@ -1388,8 +1394,10 @@
     "region": "上川",
     "furigana": "なかふらのちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "minamifurano",
@@ -1458,8 +1466,10 @@
     "region": "上川",
     "furigana": "びふかちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "otoineppu",
@@ -1468,8 +1478,10 @@
     "region": "上川",
     "furigana": "おといねっぷむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "horokanai",
@@ -1478,8 +1490,10 @@
     "region": "上川",
     "furigana": "ほろかないちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "rumoi",
@@ -1572,8 +1586,10 @@
     "region": "留萌",
     "furigana": "てしおちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "sarufutsu",
@@ -1618,8 +1634,10 @@
     "region": "宗谷",
     "furigana": "えさしちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "toyotomi",
