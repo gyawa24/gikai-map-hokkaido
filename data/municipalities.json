@@ -1688,8 +1688,10 @@
     "region": "オホーツク",
     "furigana": "あばしりし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "monbetsu",
@@ -1698,8 +1700,10 @@
     "region": "オホーツク",
     "furigana": "もんべつし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "bihoro",
@@ -1708,8 +1712,10 @@
     "region": "オホーツク",
     "furigana": "びほろちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "tsubetsu",
@@ -1718,8 +1724,10 @@
     "region": "オホーツク",
     "furigana": "つべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shari",
@@ -1728,8 +1736,10 @@
     "region": "オホーツク",
     "furigana": "しゃりちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kiyosato",
@@ -1738,8 +1748,10 @@
     "region": "オホーツク",
     "furigana": "きよさとちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "koshimizu",
@@ -1748,8 +1760,10 @@
     "region": "オホーツク",
     "furigana": "こしみずちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kunneppu",
@@ -1758,8 +1772,10 @@
     "region": "オホーツク",
     "furigana": "くんねっぷちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "oketo",
@@ -1768,8 +1784,10 @@
     "region": "オホーツク",
     "furigana": "おけとちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "saroma",
@@ -1778,8 +1796,10 @@
     "region": "オホーツク",
     "furigana": "さろまちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "engaru",
@@ -1788,8 +1808,10 @@
     "region": "オホーツク",
     "furigana": "えんがるちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "yubetsu",
@@ -1798,8 +1820,10 @@
     "region": "オホーツク",
     "furigana": "ゆうべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "takinoue",
@@ -1808,8 +1832,10 @@
     "region": "オホーツク",
     "furigana": "たきのうえちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "okoppe",
@@ -1818,8 +1844,10 @@
     "region": "オホーツク",
     "furigana": "おこっぺちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "nishiokoppe",
@@ -1828,8 +1856,10 @@
     "region": "オホーツク",
     "furigana": "にしおこっぺむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "omu",
@@ -1838,8 +1868,10 @@
     "region": "オホーツク",
     "furigana": "おうむちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "oozora",
@@ -1848,8 +1880,10 @@
     "region": "オホーツク",
     "furigana": "おおぞらちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "otofuke",
