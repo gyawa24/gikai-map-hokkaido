@@ -1892,8 +1892,10 @@
     "region": "十勝",
     "furigana": "おとふけちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shihoro",
@@ -1902,8 +1904,10 @@
     "region": "十勝",
     "furigana": "しほろちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kamishihoro",
@@ -1912,8 +1916,10 @@
     "region": "十勝",
     "furigana": "かみしほろちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shikaoi",
@@ -1922,8 +1928,10 @@
     "region": "十勝",
     "furigana": "しかおいちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shintoku",
@@ -1932,8 +1940,10 @@
     "region": "十勝",
     "furigana": "しんとくちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shimizu",
@@ -1942,8 +1952,10 @@
     "region": "十勝",
     "furigana": "しみずちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "nakasatsunai",
@@ -1952,8 +1964,10 @@
     "region": "十勝",
     "furigana": "なかさつないむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "sarabetsu",
@@ -1962,8 +1976,10 @@
     "region": "十勝",
     "furigana": "さらべつむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "taiki",
@@ -1972,8 +1988,10 @@
     "region": "十勝",
     "furigana": "たいきちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "hiroo",
@@ -1982,8 +2000,10 @@
     "region": "十勝",
     "furigana": "ひろおちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "makubetsu",
@@ -1992,8 +2012,10 @@
     "region": "十勝",
     "furigana": "まくべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "toyokoro",
@@ -2002,8 +2024,10 @@
     "region": "十勝",
     "furigana": "とよころちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "honbetsu",
@@ -2012,8 +2036,10 @@
     "region": "十勝",
     "furigana": "ほんべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "ashoro",
@@ -2022,8 +2048,10 @@
     "region": "十勝",
     "furigana": "あしょろちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "rikubetsu",
@@ -2032,8 +2060,10 @@
     "region": "十勝",
     "furigana": "りくべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "urahoro",
@@ -2042,8 +2072,10 @@
     "region": "十勝",
     "furigana": "うらほろちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "kushirocho",
