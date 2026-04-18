@@ -1,0 +1,82 @@
+[
+  {
+    "seat_number": 1,
+    "name": "児玉眞澄",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/shimukappu/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "大谷元江",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/shimukappu/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "木村一俊",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/shimukappu/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "細谷誠",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/shimukappu/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "下川園子",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [],
+    "photo_url": "/members/shimukappu/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "藤岡幸次",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "議会運営委員会"
+    ],
+    "photo_url": "/members/shimukappu/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "小林潤",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員会"
+    ],
+    "photo_url": "/members/shimukappu/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "小尾雅彦",
+    "furigana": "",
+    "party": "",
+    "faction": "",
+    "committees": [
+      "総務産業常任委員会"
+    ],
+    "photo_url": "/members/shimukappu/seat_8.jpg"
+  }
+]

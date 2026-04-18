@@ -1,0 +1,121 @@
+[
+  {
+    "seat_number": 1,
+    "name": "大石隆",
+    "furigana": "おおいし たかし",
+    "party": "無所属",
+    "faction": "議長",
+    "committees": [],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 2,
+    "name": "青野敏",
+    "furigana": "あおの さとし",
+    "party": "無所属",
+    "faction": "副議長",
+    "committees": [
+      "総務文教常任委員会委員"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 3,
+    "name": "片山兵衛",
+    "furigana": "かたやま ひょうえ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務文教常任委員会委員長"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 4,
+    "name": "斉藤哲子",
+    "furigana": "さいとう てつこ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務文教常任委員会副委員長"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 5,
+    "name": "安達一幸",
+    "furigana": "あだち かずゆき",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務文教常任委員会委員"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 6,
+    "name": "阿戸伸一",
+    "furigana": "あと しんいち",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務文教常任委員会委員"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 7,
+    "name": "桑原芳文",
+    "furigana": "くわはら よしふみ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "経済福祉常任委員会委員長"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 8,
+    "name": "林川伸二",
+    "furigana": "はやしかわ しんじ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "経済福祉常任委員会副委員長"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 9,
+    "name": "坂根玲子",
+    "furigana": "さかね れいこ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "経済福祉常任委員会委員"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 10,
+    "name": "川原允",
+    "furigana": "かわはら まこと",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "経済福祉常任委員会委員"
+    ],
+    "photo_url": ""
+  },
+  {
+    "seat_number": 11,
+    "name": "佐竹晃",
+    "furigana": "さたけ あきら",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "経済福祉常任委員会委員"
+    ],
+    "photo_url": ""
+  }
+]

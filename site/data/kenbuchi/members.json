@@ -1,0 +1,95 @@
+[
+  {
+    "seat_number": 1,
+    "name": "早乙女晃隆",
+    "furigana": "さおとめ てるたか",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議会運営委員",
+      "総務厚生常任委員",
+      "産建文教副常任委員長",
+      "議会広報特別委員長"
+    ],
+    "photo_url": "/members/kenbuchi/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "古屋秀樹",
+    "furigana": "ふるや ひでき",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務厚生副常任委員長",
+      "産建文教常任委員",
+      "議会広報特別委員"
+    ],
+    "photo_url": "/members/kenbuchi/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "佐藤宏和",
+    "furigana": "さとう ひろかず",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議会運営委員",
+      "産建文教常任委員長",
+      "議会広報特別委員"
+    ],
+    "photo_url": "/members/kenbuchi/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "竹内佳明",
+    "furigana": "たけうち よしあき",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議会運営副委員長",
+      "総務厚生常任委員長",
+      "議会広報特別委員"
+    ],
+    "photo_url": "/members/kenbuchi/seat_4.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "岡康照",
+    "furigana": "おか やすてる",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議会運営委員長",
+      "総務厚生常任委員",
+      "議会広報特別委員"
+    ],
+    "photo_url": "/members/kenbuchi/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "酒井修",
+    "furigana": "さかい おさむ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "副議長",
+      "議会運営委員",
+      "総務厚生常任委員",
+      "産建文教常任委員",
+      "議会広報特別副委員長"
+    ],
+    "photo_url": "/members/kenbuchi/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "大澤秀明",
+    "furigana": "おおさわ ひであき",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議長",
+      "産建文教常任委員"
+    ],
+    "photo_url": "/members/kenbuchi/seat_8.jpg"
+  }
+]

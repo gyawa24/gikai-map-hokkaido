@@ -1,0 +1,127 @@
+[
+  {
+    "seat_number": 1,
+    "name": "片原 康夫",
+    "furigana": "かたはら やすお",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議会運営委員会副委員長",
+      "総務文教常任委員会委員",
+      "ICT活用特別委員会委員"
+    ],
+    "photo_url": "/members/toma/seat_1.jpg"
+  },
+  {
+    "seat_number": 2,
+    "name": "上杉 達則",
+    "furigana": "うえすぎ たつのり",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務文教常任委員会委員長",
+      "議会運営委員会委員",
+      "議会報特別委員会委員",
+      "ICT活用特別委員会副委員長"
+    ],
+    "photo_url": "/members/toma/seat_2.jpg"
+  },
+  {
+    "seat_number": 3,
+    "name": "加藤 功",
+    "furigana": "かとう いさお",
+    "party": "共産党",
+    "faction": "共産党",
+    "committees": [
+      "産業福祉常任委員会副委員長"
+    ],
+    "photo_url": "/members/toma/seat_3.jpg"
+  },
+  {
+    "seat_number": 4,
+    "name": "餌取 秀信",
+    "furigana": "えとり ひでのぶ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議会運営委員会委員長",
+      "産業福祉常任委員会委員",
+      "議会報特別委員会副委員長",
+      "ICT活用特別委員会委員長"
+    ],
+    "photo_url": "/members/toma/seat_4.jpg"
+  },
+  {
+    "seat_number": 5,
+    "name": "善光 英治",
+    "furigana": "ぜんこう えいじ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "産業福祉常任委員会委員"
+    ],
+    "photo_url": "/members/toma/seat_5.jpg"
+  },
+  {
+    "seat_number": 6,
+    "name": "深谷 俊文",
+    "furigana": "ふかや としふみ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務文教常任委員会委員",
+      "ICT活用特別委員会委員"
+    ],
+    "photo_url": "/members/toma/seat_6.jpg"
+  },
+  {
+    "seat_number": 7,
+    "name": "西川 泰弘",
+    "furigana": "にしかわ やすひろ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "総務文教常任委員会副委員長",
+      "議会報編集特別委員会委員長"
+    ],
+    "photo_url": "/members/toma/seat_7.jpg"
+  },
+  {
+    "seat_number": 8,
+    "name": "岸山 尚弘",
+    "furigana": "きしやま なおひろ",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "産業福祉常任委員会委員長",
+      "議会運営委員会委員",
+      "議会報編集特別委員会委員",
+      "ICT活用特別委員会委員"
+    ],
+    "photo_url": "/members/toma/seat_8.jpg"
+  },
+  {
+    "seat_number": 9,
+    "name": "澤田 なぎさ",
+    "furigana": "さわだ なぎさ",
+    "party": "公明党",
+    "faction": "公明党",
+    "committees": [
+      "副議長",
+      "産業福祉常任委員会委員",
+      "議会運営委員会委員"
+    ],
+    "photo_url": "/members/toma/seat_9.jpg"
+  },
+  {
+    "seat_number": 10,
+    "name": "中港 勝",
+    "furigana": "なかみなと まさる",
+    "party": "無所属",
+    "faction": "無所属",
+    "committees": [
+      "議長"
+    ],
+    "photo_url": "/members/toma/seat_10.jpg"
+  }
+]
