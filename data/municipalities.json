@@ -739,7 +739,7 @@
     "furigana": "すっつちょう",
     "level": "municipality",
     "features": [],
-    "active": false
+    "active": true
   },
   {
     "slug": "kuromatsunai",
@@ -1025,7 +1025,7 @@
     "furigana": "ひだかちょう",
     "level": "municipality",
     "features": [],
-    "active": false
+    "active": true
   },
   {
     "slug": "biratori",
