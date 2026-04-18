@@ -3,6 +3,7 @@ import CityHeaderServer from "@/components/CityHeaderServer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gikai-map-hokkaido.vercel.app"),
   title: {
     default: "北海道議会情報マップ",
     template: "%s | 北海道議会情報マップ",

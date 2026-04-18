@@ -74,7 +74,7 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const name = municipality?.council_name ?? "市議会";
-  const title = `テーマ別議員 | ${name} | 北海道議会情報マップ`;
+  const title = `テーマ別議員 - ${name}`;
   return {
     title,
     description: `${name}の議員を政策テーマ別にランキング表示します。気になるテーマを選んで、相談できる議員を探しましょう。`,

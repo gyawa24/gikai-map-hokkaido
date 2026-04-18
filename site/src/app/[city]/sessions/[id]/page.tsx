@@ -41,11 +41,11 @@ export async function generateMetadata({
   const session = getSession(city, id);
 
   if (!session) {
-    return { title: `会議録 | ${cityName}議会 | 北海道議会情報マップ` };
+    return { title: `会議録 - ${cityName}議会` };
   }
 
   const dateLabel = formatDate(session.date);
-  const title = `${session.title}（${dateLabel}）| ${cityName}議会 | 北海道議会情報マップ`;
+  const title = `${session.title}（${dateLabel}）- ${cityName}議会`;
   const firstSummary = session.segments.find((s) => s.summary)?.summary;
   const description = firstSummary
     ? firstSummary.slice(0, 100)

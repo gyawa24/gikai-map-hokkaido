@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params;
   const decoded = tag;
   return {
-    title: `${decoded} | テーマ別議事録 | 北海道議会情報マップ`,
+    title: `${decoded} - テーマ別議事録`,
     description: `北海道内の市町村議会で「${decoded}」が議論された議事録の一覧です。`,
   };
 }

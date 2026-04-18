@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getAllTags } from "@/lib/topics";
 
 export const metadata = {
-  title: "テーマ別議事録 | 北海道議会情報マップ",
+  title: "テーマ別議事録",
   description: "北海道内の市町村議会議事録をテーマ・タグ別に横断検索できます。",
 };
 

@@ -34,10 +34,10 @@ export async function generateMetadata({
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
   return {
-    title: `選挙結果 | 北海道議会情報マップ - ${cityName}`,
+    title: `選挙結果 - ${cityName}`,
     description: `${cityName}議会議員選挙の結果（得票数・当落）を掲載しています。`,
     openGraph: {
-      title: `${cityName}議会 選挙結果 | 北海道議会情報マップ`,
+      title: `${cityName}議会 選挙結果`,
       description: `${cityName}議会議員選挙の結果（得票数・当落）を掲載しています。`,
     },
   };

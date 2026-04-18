@@ -19,7 +19,7 @@ export async function generateMetadata({
     title: name,
     description: `${name}の議員一覧・議事録を掲載しています。`,
     openGraph: {
-      title: `${name} | 北海道議会情報マップ`,
+      title: `${name}`,
       description: `${name}の議員一覧・議事録を掲載しています。`,
     },
   };

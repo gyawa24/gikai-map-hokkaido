@@ -42,7 +42,7 @@ export async function generateMetadata({
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
   return {
-    title: `総合計画 | ${cityName}議会 | 北海道議会情報マップ`,
+    title: `総合計画 - ${cityName}議会`,
     description: `${cityName}の総合計画・基本目標と施策一覧`,
   };
 }

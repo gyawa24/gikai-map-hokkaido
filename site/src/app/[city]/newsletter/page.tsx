@@ -13,7 +13,7 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  return { title: `議会だより | 北海道議会情報マップ - ${cityName}` };
+  return { title: `議会だより - ${cityName}` };
 }
 
 function getNewsletter(city: string): Newsletter | null {

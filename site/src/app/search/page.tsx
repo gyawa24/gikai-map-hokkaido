@@ -1,6 +1,6 @@
 import SearchClient from "@/components/SearchClient";
 
-export const metadata = { title: "検索 | 北海道議会情報マップ" };
+export const metadata = { title: "検索" };
 
 export default function SearchPage() {
   return (

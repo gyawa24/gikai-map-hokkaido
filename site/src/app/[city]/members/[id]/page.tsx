@@ -36,7 +36,7 @@ export async function generateMetadata({
   const member = members.find((m) => m.seat_number === Number(id));
 
   if (!member) {
-    return { title: `議員詳細 | ${cityName}議会 | 北海道議会情報マップ` };
+    return { title: `議員詳細 - ${cityName}議会` };
   }
 
   const partyLabel = member.party ?? member.faction ?? "";
