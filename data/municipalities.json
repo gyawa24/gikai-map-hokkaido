@@ -2233,7 +2233,9 @@
     "council_name": "北海道議会",
     "region": "北海道",
     "furigana": "ほっかいどう",
-    "features": [],
+    "features": [
+      "members"
+    ],
     "level": "prefecture",
     "active": true,
     "system": "gijiroku_com"
