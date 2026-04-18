@@ -3,6 +3,33 @@ import fs from "fs";
 import path from "path";
 import type { MinutesIndexItem, MinutesSession } from "@/types/minutes";
 
+// ---------------------------------------------------------------------------
+// Rate limiting (in-memory)
+// ---------------------------------------------------------------------------
+const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
+const MAX_SEARCH_PER_MINUTE = 30;
+const MINUTE_MS = 60 * 1000;
+
+function getClientIP(req: NextRequest): string {
+  return (
+    req.headers.get("x-real-ip") ??
+    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
+    "unknown"
+  );
+}
+
+function checkSearchRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitStore.get(ip);
+  if (!entry || now > entry.resetTime) {
+    rateLimitStore.set(ip, { count: 1, resetTime: now + MINUTE_MS });
+    return true;
+  }
+  if (entry.count >= MAX_SEARCH_PER_MINUTE) return false;
+  entry.count++;
+  return true;
+}
+
 const CITY_NAMES: Record<string, string> = {
   chitose: "千歳市",
   eniwa: "恵庭市",
@@ -67,7 +94,15 @@ export type MemberHit = {
 };
 
 export async function GET(request: NextRequest) {
-  const q = request.nextUrl.searchParams.get("q") ?? "";
+  const ip = getClientIP(request);
+  if (!checkSearchRateLimit(ip)) {
+    return NextResponse.json(
+      { error: "検索回数の上限に達しました。少し待ってから再度お試しください。", sessionResults: [], memberResults: [] },
+      { status: 429 }
+    );
+  }
+
+  const q = (request.nextUrl.searchParams.get("q") ?? "").slice(0, 500);
   const tokens = tokenize(q);
 
   if (!tokens.length) {
