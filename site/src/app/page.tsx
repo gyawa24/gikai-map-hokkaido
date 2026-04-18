@@ -53,8 +53,10 @@ function getMinutesCount(cityId: string): number {
 
 
 export default function HomePage() {
-  const allMunis = getMunicipalities().filter((m) => m.active && m.level === "municipality");
-  const cities = allMunis.map((m) => ({
+  const allMunis = getMunicipalities().filter((m) => m.active);
+  const prefecture = allMunis.find((m) => m.level === "prefecture");
+  const municipalities = allMunis.filter((m) => m.level === "municipality");
+  const cities = municipalities.map((m) => ({
     id: m.slug,
     name: m.council_name,
     furigana: m.furigana,
@@ -81,9 +83,30 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* 市議会を選ぶ（地域別） */}
+      {/* 北海道議会 */}
+      {prefecture && (
+        <section className="mb-6">
+          <Link
+            href={`/${prefecture.slug}`}
+            className="group block bg-white rounded-lg border-2 border-[#1B3A6B] hover:bg-[#E8EEF7] px-4 py-4 shadow-sm hover:shadow-md transition-all duration-150"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-base font-bold text-[#1B3A6B] mb-0.5">{prefecture.council_name}</p>
+                <div className="flex flex-wrap gap-x-3 text-xs text-[#718096]">
+                  {getMemberCount(prefecture.slug) > 0 && <span>{getMemberCount(prefecture.slug)}名</span>}
+                  {!prefecture.features.includes("members") && <span>準備中</span>}
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </Link>
+        </section>
+      )}
+
+      {/* 市町村議会を選ぶ（地域別） */}
       <section className="mb-8">
-        <h3 className="text-sm font-semibold text-[#718096] uppercase tracking-wider mb-3">市議会を選ぶ</h3>
+        <h3 className="text-sm font-semibold text-[#718096] uppercase tracking-wider mb-3">市町村議会を選ぶ</h3>
         {(() => {
           const regionOrder = ["石狩", "空知", "後志", "胆振", "日高", "渡島", "檜山", "上川", "留萌", "宗谷", "オホーツク", "十勝", "釧路", "根室"];
           const grouped = new Map<string, typeof cities>();
