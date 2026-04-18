@@ -60,12 +60,14 @@ function MemberCard({
   activity,
   factionBadgeClass,
   memberHrefBase,
+  minutesHrefBase,
   policyTags,
 }: {
   member: Member;
   activity: MemberActivity | undefined;
   factionBadgeClass: (f: string) => string;
   memberHrefBase?: string;
+  minutesHrefBase?: string;
   policyTags?: PolicyTag[];
 }) {
   const [activityOpen, setActivityOpen] = useState(false);
@@ -203,7 +205,7 @@ function MemberCard({
                     <p className="text-xs font-semibold text-[#1B3A6B]">{s.session}</p>
                     {s.council_id > 0 && (
                       <Link
-                        href={`/chitose/minutes/${s.council_id}`}
+                        href={`${minutesHrefBase}/${s.council_id}`}
                         className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
                       >
                         全文
@@ -217,7 +219,7 @@ function MemberCard({
                         <span className="text-[#2A5298] shrink-0 mt-0.5">·</span>
                         {s.council_id > 0 ? (
                           <Link
-                            href={`/chitose/minutes/${s.council_id}?q=${encodeURIComponent(t)}`}
+                            href={`${minutesHrefBase}/${s.council_id}?q=${encodeURIComponent(t)}`}
                             className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
                           >
                             {t}
@@ -245,10 +247,11 @@ type Props = {
   factions: string[];
   activity?: Record<string, MemberActivity>;
   memberHrefBase?: string;
+  minutesHrefBase?: string;
   memberPolicies?: Record<string, PolicyTag[]>;
 };
 
-export default function MemberList({ members, factions, activity = {}, memberHrefBase, memberPolicies = {} }: Props) {
+export default function MemberList({ members, factions, activity = {}, memberHrefBase, minutesHrefBase = "/chitose/minutes", memberPolicies = {} }: Props) {
   const [factionFilter, setFactionFilter] = useState<string>("");
   const [partyFilter, setPartyFilter] = useState<string>("");
   const [sortKey, setSortKey] = useState<SortKey>("seat");
@@ -353,6 +356,7 @@ export default function MemberList({ members, factions, activity = {}, memberHre
               activity={memberActivity}
               factionBadgeClass={factionBadgeClass}
               memberHrefBase={memberHrefBase}
+              minutesHrefBase={minutesHrefBase}
               policyTags={memberPolicies[nameKey]}
             />
           );

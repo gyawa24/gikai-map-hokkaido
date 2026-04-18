@@ -87,6 +87,7 @@ export default async function CityMembersPage({
         factions={factions}
         activity={activity}
         memberHrefBase={`/${city}/members`}
+        minutesHrefBase={`/${city}/minutes`}
       />
     </>
   );
