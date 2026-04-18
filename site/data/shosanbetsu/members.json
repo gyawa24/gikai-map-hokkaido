@@ -1,0 +1,73 @@
+[
+  {
+    "seat_number": 1,
+    "name": "加藤一裕",
+    "furigana": "かとうかずひろ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務経済",
+      "議会運営（委員長）"
+    ]
+  },
+  {
+    "seat_number": 2,
+    "name": "髙場志津子",
+    "furigana": "たかばしずこ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務経済（副委員長）"
+    ]
+  },
+  {
+    "seat_number": 3,
+    "name": "鎌田健治",
+    "furigana": "かまだけんじ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務経済"
+    ]
+  },
+  {
+    "seat_number": 4,
+    "name": "斉藤勝博",
+    "furigana": "さいとうかつひろ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務経済"
+    ]
+  },
+  {
+    "seat_number": 5,
+    "name": "長谷川幸廣",
+    "furigana": "はせがわゆきひろ",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務経済（委員長）",
+      "議会運営（副委員長）"
+    ]
+  },
+  {
+    "seat_number": 7,
+    "name": "三谷博子",
+    "furigana": "みたにひろこ",
+    "party": "無所属",
+    "faction": "副議長",
+    "committees": [
+      "総務経済",
+      "議会運営"
+    ]
+  },
+  {
+    "seat_number": 8,
+    "name": "木村健一",
+    "furigana": "きむらけんいち",
+    "party": "無所属",
+    "faction": "議長",
+    "committees": []
+  }
+]

@@ -1488,8 +1488,10 @@
     "region": "留萌",
     "furigana": "るもいし",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "mashike",
@@ -1498,8 +1500,10 @@
     "region": "留萌",
     "furigana": "ましけちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "obira",
@@ -1508,8 +1512,10 @@
     "region": "留萌",
     "furigana": "おびらちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "tomamae",
@@ -1518,8 +1524,10 @@
     "region": "留萌",
     "furigana": "とままえちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "haboro",
@@ -1528,8 +1536,10 @@
     "region": "留萌",
     "furigana": "はぼろちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "shosanbetsu",
@@ -1538,8 +1548,10 @@
     "region": "留萌",
     "furigana": "しょさんべつむら",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "embetsu",
@@ -1548,8 +1560,10 @@
     "region": "留萌",
     "furigana": "えんべつちょう",
     "level": "municipality",
-    "features": [],
-    "active": false
+    "features": [
+      "members"
+    ],
+    "active": true
   },
   {
     "slug": "teshio",
