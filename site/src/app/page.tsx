@@ -123,22 +123,32 @@ export default function HomePage() {
                   {region}
                 </h4>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                  {grouped.get(region)!.map((city) => (
+                  {grouped.get(region)!.map((city) => {
+                    const featured = city.id === "chitose";
+                    return (
                     <Link
                       key={city.id}
                       href={city.href}
-                      className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-3 py-3 shadow-sm hover:shadow-md transition-all duration-150"
+                      className={`group rounded-lg px-3 py-3 shadow-sm hover:shadow-md transition-all duration-150 ${
+                        featured
+                          ? "bg-[#1B3A6B] border-2 border-[#1B3A6B] hover:bg-[#2A5298] col-span-2 sm:col-span-1"
+                          : "bg-white border border-[#CBD5E0] hover:border-[#1B3A6B]"
+                      }`}
                     >
-                      <p className="text-sm font-bold text-[#1A202C] group-hover:text-[#1B3A6B] leading-snug mb-1">
+                      <p className={`text-sm font-bold leading-snug mb-1 ${
+                        featured ? "text-white" : "text-[#1A202C] group-hover:text-[#1B3A6B]"
+                      }`}>
                         {city.name.replace("議会", "")}
+                        {featured && <span className="ml-1.5 text-[10px] font-normal bg-white/20 text-white/90 rounded px-1.5 py-0.5">議事録・速報・議決</span>}
                       </p>
-                      <div className="flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-[#718096]">
+                      <div className={`flex flex-wrap gap-x-3 gap-y-0.5 text-xs ${featured ? "text-white/70" : "text-[#718096]"}`}>
                         {city.memberCount > 0 && <span>{city.memberCount}名</span>}
                         {city.minutesCount > 0 && <span>議事録{city.minutesCount}件</span>}
-                        {city.hasSession && <span className="text-[#2A5298]">速報</span>}
+                        {city.hasSession && <span className={featured ? "text-white/90" : "text-[#2A5298]"}>速報</span>}
                       </div>
                     </Link>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             ));
