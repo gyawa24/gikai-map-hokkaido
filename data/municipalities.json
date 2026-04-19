@@ -487,9 +487,11 @@
     "furigana": "ふかがわし",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "gijiroku_com"
   },
   {
     "slug": "nanporo",
@@ -667,9 +669,11 @@
     "furigana": "さっぽろし",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "gijiroku_com"
   },
   {
     "slug": "ebetsu",
@@ -977,9 +981,12 @@
     "furigana": "あつまちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "tenant_id": 167,
+    "system": "dnp"
   },
   {
     "slug": "toyako",
@@ -2234,10 +2241,12 @@
     "region": "北海道",
     "furigana": "ほっかいどう",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "level": "prefecture",
     "active": true,
-    "system": "gijiroku_com"
+    "system": "gijiroku_com",
+    "gijiroku_subdomain": "pref-hokkaido"
   }
 ]

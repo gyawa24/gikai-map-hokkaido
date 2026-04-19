@@ -1,0 +1,1246 @@
+{
+  "total": 155,
+  "dnp_candidates": 1,
+  "results": [
+    {
+      "slug": "iwamizawa",
+      "name": "岩見沢市",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "yubari",
+      "name": "夕張市",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "bibai",
+      "name": "美唄市",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "akabira",
+      "name": "赤平市",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "mikasa",
+      "name": "三笠市",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "takikawa",
+      "name": "滝川市",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "sunagawa",
+      "name": "砂川市",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "utashinai",
+      "name": "歌志内市",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "fukagawa",
+      "name": "深川市",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "nanporo",
+      "name": "南幌町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "naie",
+      "name": "奈井江町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kamisunagawa",
+      "name": "上砂川町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "yuni",
+      "name": "由仁町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "naganuma",
+      "name": "長沼町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kuriyama",
+      "name": "栗山町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "tsukigata",
+      "name": "月形町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "urausu",
+      "name": "浦臼町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shintotsukawa",
+      "name": "新十津川町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "moseushi",
+      "name": "妹背牛町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "chippubetsu",
+      "name": "秩父別町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "uryu",
+      "name": "雨竜町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "hokuryu",
+      "name": "北竜町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "numata",
+      "name": "沼田町",
+      "region": "空知",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "sapporo",
+      "name": "札幌市",
+      "region": "石狩",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "ebetsu",
+      "name": "江別市",
+      "region": "石狩",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "tobetsu",
+      "name": "当別町",
+      "region": "石狩",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shinshinotsu",
+      "name": "新篠津村",
+      "region": "石狩",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "otaru",
+      "name": "小樽市",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shimamaki",
+      "name": "島牧村",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "suttsu",
+      "name": "寿都町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kuromatsunai",
+      "name": "黒松内町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "rankoshi",
+      "name": "蘭越町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "niseko",
+      "name": "ニセコ町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "makkari",
+      "name": "真狩村",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "rusutsu",
+      "name": "留寿都村",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kimobetsu",
+      "name": "喜茂別町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kyogoku",
+      "name": "京極町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kyowa",
+      "name": "共和町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "iwanai",
+      "name": "岩内町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "tomari",
+      "name": "泊村",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kamoenai",
+      "name": "神恵内村",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shakotan",
+      "name": "積丹町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "furubira",
+      "name": "古平町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "niki",
+      "name": "仁木町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "yoichi",
+      "name": "余市町",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "akaigawa",
+      "name": "赤井川村",
+      "region": "後志",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "toyoura",
+      "name": "豊浦町",
+      "region": "胆振",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "sobetsu",
+      "name": "壮瞥町",
+      "region": "胆振",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shiraoi",
+      "name": "白老町",
+      "region": "胆振",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "atsuma",
+      "name": "厚真町",
+      "region": "胆振",
+      "tenant_id": 167,
+      "status": "ok",
+      "is_dnp": true
+    },
+    {
+      "slug": "toyako",
+      "name": "洞爺湖町",
+      "region": "胆振",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "abira",
+      "name": "安平町",
+      "region": "胆振",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "mukawa",
+      "name": "むかわ町",
+      "region": "胆振",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "hidaka",
+      "name": "日高町",
+      "region": "日高",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "biratori",
+      "name": "平取町",
+      "region": "日高",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "niikappu",
+      "name": "新冠町",
+      "region": "日高",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "urakawa",
+      "name": "浦河町",
+      "region": "日高",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "samani",
+      "name": "様似町",
+      "region": "日高",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "erimo",
+      "name": "えりも町",
+      "region": "日高",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shinhidaka",
+      "name": "新ひだか町",
+      "region": "日高",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "matsumae",
+      "name": "松前町",
+      "region": "渡島",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shiriuchi",
+      "name": "知内町",
+      "region": "渡島",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kikonai",
+      "name": "木古内町",
+      "region": "渡島",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "nanae",
+      "name": "七飯町",
+      "region": "渡島",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shikabe",
+      "name": "鹿部町",
+      "region": "渡島",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "mori",
+      "name": "森町",
+      "region": "渡島",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "yakumo",
+      "name": "八雲町",
+      "region": "渡島",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "oshamambe",
+      "name": "長万部町",
+      "region": "渡島",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kaminokuni",
+      "name": "上ノ国町",
+      "region": "檜山",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "assabu",
+      "name": "厚沢部町",
+      "region": "檜山",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "otobe",
+      "name": "乙部町",
+      "region": "檜山",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "okushiri",
+      "name": "奥尻町",
+      "region": "檜山",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "imakane",
+      "name": "今金町",
+      "region": "檜山",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "setana",
+      "name": "せたな町",
+      "region": "檜山",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shibetsu",
+      "name": "士別市",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "furano",
+      "name": "富良野市",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "takasu",
+      "name": "鷹栖町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "higashikagura",
+      "name": "東神楽町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "toma",
+      "name": "当麻町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "pippu",
+      "name": "比布町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "aibetsu",
+      "name": "愛別町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "higashikawa",
+      "name": "東川町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "biei",
+      "name": "美瑛町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kamifurano",
+      "name": "上富良野町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "nakafurano",
+      "name": "中富良野町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "minamifurano",
+      "name": "南富良野町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shimukappu",
+      "name": "占冠村",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "wassamu",
+      "name": "和寒町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kenbuchi",
+      "name": "剣淵町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shimokawa",
+      "name": "下川町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "bifuka",
+      "name": "美深町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "otoineppu",
+      "name": "音威子府村",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "horokanai",
+      "name": "幌加内町",
+      "region": "上川",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "rumoi",
+      "name": "留萌市",
+      "region": "留萌",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "mashike",
+      "name": "増毛町",
+      "region": "留萌",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "obira",
+      "name": "小平町",
+      "region": "留萌",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "tomamae",
+      "name": "苫前町",
+      "region": "留萌",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "haboro",
+      "name": "羽幌町",
+      "region": "留萌",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shosanbetsu",
+      "name": "初山別村",
+      "region": "留萌",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "embetsu",
+      "name": "遠別町",
+      "region": "留萌",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "teshio",
+      "name": "天塩町",
+      "region": "留萌",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "sarufutsu",
+      "name": "猿払村",
+      "region": "宗谷",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "hamatombetsu",
+      "name": "浜頓別町",
+      "region": "宗谷",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "nakatombetsu",
+      "name": "中頓別町",
+      "region": "宗谷",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "esashi_souya",
+      "name": "枝幸町",
+      "region": "宗谷",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "toyotomi",
+      "name": "豊富町",
+      "region": "宗谷",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "rebun",
+      "name": "礼文町",
+      "region": "宗谷",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "rishiri",
+      "name": "利尻町",
+      "region": "宗谷",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "rishirifuji",
+      "name": "利尻富士町",
+      "region": "宗谷",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "horonobe",
+      "name": "幌延町",
+      "region": "宗谷",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "abashiri",
+      "name": "網走市",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "monbetsu",
+      "name": "紋別市",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "bihoro",
+      "name": "美幌町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "tsubetsu",
+      "name": "津別町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shari",
+      "name": "斜里町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kiyosato",
+      "name": "清里町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "koshimizu",
+      "name": "小清水町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kunneppu",
+      "name": "訓子府町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "oketo",
+      "name": "置戸町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "saroma",
+      "name": "佐呂間町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "engaru",
+      "name": "遠軽町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "yubetsu",
+      "name": "湧別町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "takinoue",
+      "name": "滝上町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "okoppe",
+      "name": "興部町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "nishiokoppe",
+      "name": "西興部村",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "omu",
+      "name": "雄武町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "oozora",
+      "name": "大空町",
+      "region": "オホーツク",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "otofuke",
+      "name": "音更町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shihoro",
+      "name": "士幌町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kamishihoro",
+      "name": "上士幌町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shikaoi",
+      "name": "鹿追町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shintoku",
+      "name": "新得町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shimizu",
+      "name": "清水町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "nakasatsunai",
+      "name": "中札内村",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "sarabetsu",
+      "name": "更別村",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "taiki",
+      "name": "大樹町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "hiroo",
+      "name": "広尾町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "makubetsu",
+      "name": "幕別町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "toyokoro",
+      "name": "豊頃町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "honbetsu",
+      "name": "本別町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "ashoro",
+      "name": "足寄町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "rikubetsu",
+      "name": "陸別町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "urahoro",
+      "name": "浦幌町",
+      "region": "十勝",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "kushirocho",
+      "name": "釧路町",
+      "region": "釧路",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "akkeshi",
+      "name": "厚岸町",
+      "region": "釧路",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "hamanaka",
+      "name": "浜中町",
+      "region": "釧路",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shibecha",
+      "name": "標茶町",
+      "region": "釧路",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "teshikaga",
+      "name": "弟子屈町",
+      "region": "釧路",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "tsurui",
+      "name": "鶴居村",
+      "region": "釧路",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shiranuka",
+      "name": "白糠町",
+      "region": "釧路",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "betsukai",
+      "name": "別海町",
+      "region": "根室",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "nakashibetsu",
+      "name": "中標津町",
+      "region": "根室",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "shibetsucho",
+      "name": "標津町",
+      "region": "根室",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "rausu",
+      "name": "羅臼町",
+      "region": "根室",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    },
+    {
+      "slug": "hokkaido",
+      "name": "北海道",
+      "region": "北海道",
+      "tenant_id": null,
+      "status": "404",
+      "is_dnp": false
+    }
+  ]
+}
