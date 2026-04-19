@@ -80,7 +80,7 @@ function AISearchInner({ cities, themes }: Props) {
       const res = await fetch("/api/ai-search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question: q, compareMode }),
+        body: JSON.stringify({ question: q, compareMode, cities: selectedCities.length > 0 ? selectedCities : undefined }),
         signal: abortRef.current.signal,
       });
 

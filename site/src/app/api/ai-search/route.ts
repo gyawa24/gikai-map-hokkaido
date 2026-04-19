@@ -348,7 +348,6 @@ function searchMinutesCore(
 // System prompts
 // ---------------------------------------------------------------------------
 const BASE_CONTEXT = buildBaseContext();
-const COMPARE_BASE_CONTEXT = buildCompareBaseContext();
 const MINUTE_CHUNKS = buildMinuteChunks();
 
 const SYSTEM_PROMPT_NORMAL = `あなたは北海道の市議会情報アシスタントです。
@@ -364,45 +363,69 @@ const SYSTEM_PROMPT_NORMAL = `あなたは北海道の市議会情報アシス�
 【千歳市議会データ】
 ${BASE_CONTEXT}`;
 
-const SYSTEM_PROMPT_COMPARE = `あなたは北海道の市議会情報アシスタントです。
-以下のテーマについて千歳市・恵庭市・苫小牧市の議会での議論を比較してください。
+function buildCompareSystemPrompt(cities: { id: string; name: string }[]): string {
+  const cityNames = cities.map((c) => c.name);
+  const cityLabel = cityNames.join("・");
+  const n = cities.length;
+
+  // 対象市のデータのみ収集
+  const sections: string[] = [];
+  for (const city of cities) {
+    const dir = path.join(process.cwd(), "data", city.id);
+    const tryRead = (file: string) => {
+      try { return fs.readFileSync(path.join(dir, file), "utf-8"); } catch { return "（データなし）"; }
+    };
+    sections.push(
+      `### ${city.name} 議員名簿\n` + tryRead("members.json"),
+      `### ${city.name} 議決結果（直近）\n` + tryRead("decisions.json"),
+    );
+    const enrichedDir = path.join(dir, "minutes", "enriched");
+    if (fs.existsSync(enrichedDir)) {
+      let files: string[];
+      try { files = fs.readdirSync(enrichedDir).filter((f) => f.endsWith(".json")).slice(-3); }
+      catch { files = []; }
+      for (const f of files) {
+        try {
+          const e = JSON.parse(fs.readFileSync(path.join(enrichedDir, f), "utf-8")) as {
+            name?: string; tags?: string[]; summary?: string;
+          };
+          if (!e.summary && !e.tags?.length) continue;
+          sections.push(
+            `### ${city.name} 議事録要約（${e.name ?? f}）\nタグ: ${(e.tags ?? []).join(", ")}\n要約: ${e.summary ?? ""}`
+          );
+        } catch { continue; }
+      }
+    }
+  }
+
+  const cityBlocks = cityNames.map((name) =>
+    `■ ${name}\n- 予算・規模: （金額・規模に関する情報）\n- 方針・特徴: （議会での方針や特徴的な取り組み）\n- 課題・議論: （議員が指摘した課題や議論の焦点）\n- 主な発言: （具体的な発言の引用）`
+  ).join("\n\n");
+
+  return `あなたは北海道の市議会情報アシスタントです。
+以下のテーマについて${cityLabel}の議会での議論を比較してください。
 
 【回答形式】
 必ず以下のフォーマットで回答してください。データがない項目は「記録なし」と記載してください。
 
 【テーマ: ○○】
 
-■ 千歳市
-- 予算・規模: （金額・規模に関する情報）
-- 方針・特徴: （議会での方針や特徴的な取り組み）
-- 課題・議論: （議員が指摘した課題や議論の焦点）
-- 主な発言: （具体的な発言の引用）
+${cityBlocks}
 
-■ 恵庭市
-- 予算・規模:
-- 方針・特徴:
-- 課題・議論:
-- 主な発言:
-
-■ 苫小牧市
-- 予算・規模:
-- 方針・特徴:
-- 課題・議論:
-- 主な発言:
-
-【3市の比較まとめ】
-similarities: （3市に共通する点）
-differences: （3市で異なる点・特色）
+【${n}市の比較まとめ】
+similarities: （共通する点）
+differences: （異なる点・特色）
 insights: （比較から見えてくる気づき・考察）
 
 【回答ルール】
 - 提供データに基づいた事実のみを記載してください
 - 議事録の発言を引用する際は「【市名 会議名 / 日付 / 発言者】」の形式で出典を示してください
 - データにない情報は「記録なし」と記載し、憶測で補わないでください
-- 3市すべてのデータを公平に扱い、偏りなく比較してください
+- ${n}市すべてのデータを公平に扱い、偏りなく比較してください
 
-【3市の議員・議決データ】
-${COMPARE_BASE_CONTEXT}`;
+【対象市の議員・議決データ】
+${sections.join("\n\n")}`;
+}
 
 // ---------------------------------------------------------------------------
 // Route handler
@@ -419,10 +442,12 @@ export async function POST(req: NextRequest) {
 
   let question: string;
   let compareMode: boolean;
+  let filterCities: string[] | undefined;
   try {
     const body = await req.json();
     question = (body.question ?? "").trim();
     compareMode = body.compareMode === true;
+    filterCities = Array.isArray(body.cities) ? body.cities : undefined;
     if (!question) throw new Error("empty");
     if (question.length > 500) {
       return NextResponse.json(
@@ -444,13 +469,25 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // 比較モード: 市ごとに均等 10 チャンク（計30）、スニペット 1200 字
-  // 通常モード: 全市合計 15 チャンク、スニペット 800 字
-  const minutesContext = compareMode
-    ? searchMinutesCompare(question, MINUTE_CHUNKS, 10)
-    : searchMinutesNormal(question, MINUTE_CHUNKS, 15);
+  // 選択市でチャンクをフィルタ
+  const filteredChunks = filterCities
+    ? MINUTE_CHUNKS.filter((c) => filterCities!.includes(c.city))
+    : MINUTE_CHUNKS;
 
-  const basePrompt = compareMode ? SYSTEM_PROMPT_COMPARE : SYSTEM_PROMPT_NORMAL;
+  const minutesContext = compareMode
+    ? searchMinutesCompare(question, filteredChunks, 10)
+    : searchMinutesNormal(question, filteredChunks, 15);
+
+  // 選択市に応じたsystem promptを動的生成
+  const targetCities = filterCities
+    ? CITY_META.filter((c) => filterCities!.includes(c.id))
+    : compareMode
+    ? CITY_META
+    : CITY_META;
+  const cityNames = targetCities.map((c) => c.name);
+  const basePrompt = compareMode
+    ? buildCompareSystemPrompt(targetCities)
+    : SYSTEM_PROMPT_NORMAL;
   const systemPrompt = minutesContext
     ? `${basePrompt}\n\n${minutesContext}`
     : basePrompt;
