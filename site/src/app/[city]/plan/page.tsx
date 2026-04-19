@@ -24,10 +24,28 @@ type ComprehensivePlan = {
   population_vision?: PopulationVision;
 };
 
+type GoalActivity = {
+  member_count: number;
+  topic_count: number;
+  topics: { topic: string; member: string }[];
+};
+type PlanActivity = {
+  goals: Record<string, GoalActivity>;
+};
+
 function getPlan(city: string): ComprehensivePlan | null {
   const fp = path.join(process.cwd(), "data", city, "comprehensive_plan.json");
   try {
     return JSON.parse(fs.readFileSync(fp, "utf-8")) as ComprehensivePlan;
+  } catch {
+    return null;
+  }
+}
+
+function getPlanActivity(city: string): PlanActivity | null {
+  const fp = path.join(process.cwd(), "data", city, "plan_activity.json");
+  try {
+    return JSON.parse(fs.readFileSync(fp, "utf-8")) as PlanActivity;
   } catch {
     return null;
   }
@@ -59,6 +77,7 @@ export default async function CityPlanPage({
   const plan = getPlan(city);
   if (!plan) notFound();
 
+  const activity = getPlanActivity(city);
   const cityName = municipality.name;
 
   return (
@@ -104,6 +123,11 @@ export default async function CityPlanPage({
                     {goal.title}
                   </span>
                   <span className="text-xs text-[#718096] shrink-0">{goal.policies.length}施策</span>
+                  {activity?.goals[String(goal.id)] && activity.goals[String(goal.id)].topic_count > 0 && (
+                    <span className="text-[10px] font-medium bg-[#1B3A6B] text-white rounded-full px-2 py-0.5 shrink-0">
+                      質問{activity.goals[String(goal.id)].topic_count}件
+                    </span>
+                  )}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-4 h-4 text-[#A0AEC0] shrink-0 transition-transform group-open:rotate-90"
@@ -129,6 +153,33 @@ export default async function CityPlanPage({
                       </li>
                     ))}
                   </ul>
+                  {(() => {
+                    const ga = activity?.goals[String(goal.id)];
+                    if (!ga || ga.topics.length === 0) return null;
+                    return (
+                      <div className="mb-3">
+                        <p className="text-xs font-medium text-[#718096] mb-1.5">
+                          議会での関連質問（{ga.member_count}人の議員が言及）
+                        </p>
+                        <div className="flex flex-wrap gap-1.5">
+                          {ga.topics.slice(0, 10).map((t) => (
+                            <span
+                              key={t.topic}
+                              className="text-[11px] px-2 py-0.5 bg-[#E8EEF7] text-[#2A5298] rounded"
+                              title={`${t.member} 議員`}
+                            >
+                              {t.topic}
+                            </span>
+                          ))}
+                          {ga.topics.length > 10 && (
+                            <span className="text-[11px] px-2 py-0.5 text-[#718096]">
+                              ほか{ga.topics.length - 10}件
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })()}
                   <Link
                     href={`/ai-search?q=${aiQ}`}
                     className="inline-flex items-center gap-1.5 text-xs text-[#2A5298] hover:text-[#1B3A6B] transition-colors"
