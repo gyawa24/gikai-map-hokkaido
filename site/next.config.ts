@@ -11,6 +11,19 @@ const nextConfig: NextConfig = {
       "./data/*/*_activity.json",
       "./data/*/index.json",
     ],
+    "/**/themes": [
+      "./data/*/minutes/**/*",
+      "./data/*/sessions/**/*",
+      "./data/*/???.json",
+      "./data/*/????.json",
+      "./data/*/newsletter.json",
+      "./data/*/schedule.json",
+      "./data/*/comprehensive_plan.json",
+      "./data/*/decisions.json",
+      "./data/*/election.json",
+      "./data/*/plan_activity.json",
+      "./data/*/index.json",
+    ],
   },
   async headers() {
     return [
