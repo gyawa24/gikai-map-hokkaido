@@ -160,6 +160,20 @@ PDF_CONFIGS: dict[str, dict] = {
             ],
         },
     },
+    "shiriuchi": {
+        "name": "知内町",
+        # 年度別ディレクトリ（r07, r06）、各PDF先頭に「令和7年第1回知内町議会定例会（1日目）」
+        "strategy": "pdf_header",
+        "title_regex": r"第(\d+)回[\s\S]{0,20}?(定例会|臨時会)",
+        "year_regex": r"令和(\d+)年",
+        "schedule_regex": r"\((\d+)日目\)",
+        "loose_year_regex": r"(?P<yyyy>20\d{2})",  # ファイル名 20250718... 形式
+        "era_base": 2018,
+        "index_urls": {
+            2025: "https://www.town.shiriuchi.hokkaido.jp/chosei/gikai/kaigiroku/r07/",
+            2024: "https://www.town.shiriuchi.hokkaido.jp/chosei/gikai/kaigiroku/r06/",
+        },
+    },
     "makubetsu": {
         "name": "幕別町",
         # 1ページに全年度、h2=令和N年の下にul/li/a (「第1回臨時会【1月16日開催】」)
@@ -409,76 +423,89 @@ def extract_pdf_links_by_pdf_header(cfg: dict, years: list[int]) -> list[dict]:
     - year_regex: (era_year) の1グループを返す
     - schedule_regex: (schedule_no) の1グループ（optional、同councilの号数）
     """
-    r = requests.get(cfg["index_url"], timeout=30, headers=HEADERS)
-    r.raise_for_status()
     title_re = re.compile(cfg["title_regex"])
     year_re = re.compile(cfg["year_regex"])
     schedule_re = re.compile(cfg["schedule_regex"]) if cfg.get("schedule_regex") else None
     loose_re = re.compile(cfg.get("loose_year_regex", r"R(?P<ey>\d+)"), re.I)
     era_base = cfg.get("era_base", 2018)
 
+    # index_url 単一 or index_urls (dict: year->url[s]) のどちらも対応
+    if "index_urls" in cfg:
+        url_year_pairs: list[tuple[str, int | None]] = []
+        for y, u in cfg["index_urls"].items():
+            if y is not None and not any(abs(y - t) <= 1 for t in years):
+                continue
+            urls_here = u if isinstance(u, list) else [u]
+            for uu in urls_here:
+                url_year_pairs.append((uu, y))
+    else:
+        url_year_pairs = [(cfg["index_url"], None)]
+
     target_set = set(years)
     records: list[dict] = []
     seen = set()
 
-    for m in re.finditer(r'href=["\']([^"\']+\.pdf[^"\']*)["\']', r.text, re.I):
-        href = m.group(1)
-        fn = href.rsplit("/", 1)[-1]
-        if fn in seen:
-            continue
-        seen.add(fn)
+    for base_url, _base_year in url_year_pairs:
+        r = requests.get(base_url, timeout=30, headers=HEADERS)
+        r.raise_for_status()
+        for m in re.finditer(r'href=["\']([^"\']+\.pdf[^"\']*)["\']', r.text, re.I):
+            href = m.group(1)
+            fn = href.rsplit("/", 1)[-1]
+            if fn in seen:
+                continue
+            seen.add(fn)
 
-        lm = loose_re.search(fn)
-        if not lm:
-            continue
-        lgd = lm.groupdict()
-        if lgd.get("yyyy"):
-            loose_year = int(lgd["yyyy"])
-        elif lgd.get("ey"):
-            loose_year = era_base + int(lgd["ey"])
-        else:
-            continue
-        if not any(abs(loose_year - y) <= 1 for y in target_set):
-            continue
+            lm = loose_re.search(fn)
+            if not lm:
+                continue
+            lgd = lm.groupdict()
+            if lgd.get("yyyy"):
+                loose_year = int(lgd["yyyy"])
+            elif lgd.get("ey"):
+                loose_year = era_base + int(lgd["ey"])
+            else:
+                continue
+            if not any(abs(loose_year - y) <= 1 for y in target_set):
+                continue
 
-        full_url = urljoin(cfg["index_url"], href)
-        print(f"    … {fn} ヘッダー確認", flush=True)
-        try:
-            pr = requests.get(full_url, timeout=60, headers=HEADERS)
-            pr.raise_for_status()
-            with pdfplumber.open(io.BytesIO(pr.content)) as pdf:
-                first_text = pdf.pages[0].extract_text() or ""
-        except Exception as e:
-            print(f"      ✗ ヘッダー取得失敗: {e}", flush=True)
-            continue
+            full_url = urljoin(base_url, href)
+            print(f"    … {fn} ヘッダー確認", flush=True)
+            try:
+                pr = requests.get(full_url, timeout=60, headers=HEADERS)
+                pr.raise_for_status()
+                with pdfplumber.open(io.BytesIO(pr.content)) as pdf:
+                    first_text = pdf.pages[0].extract_text() or ""
+            except Exception as e:
+                print(f"      ✗ ヘッダー取得失敗: {e}", flush=True)
+                continue
 
-        first_text = _zen_to_half(first_text)
-        tm = title_re.search(first_text)
-        ym = year_re.search(first_text)
-        if not tm or not ym:
-            print(f"      ✗ タイトル未マッチ: {fn}", flush=True)
-            continue
-        seq = int(tm.group(1))
-        ttype = tm.group(2)
-        year = era_base + int(ym.group(1))
+            first_text = _zen_to_half(first_text)
+            tm = title_re.search(first_text)
+            ym = year_re.search(first_text)
+            if not tm or not ym:
+                print(f"      ✗ タイトル未マッチ: {fn}", flush=True)
+                continue
+            seq = int(tm.group(1))
+            ttype = tm.group(2)
+            year = era_base + int(ym.group(1))
 
-        schedule_no = None
-        if schedule_re:
-            sm = schedule_re.search(first_text)
-            if sm:
-                schedule_no = int(sm.group(1))
+            schedule_no = None
+            if schedule_re:
+                sm = schedule_re.search(first_text)
+                if sm:
+                    schedule_no = int(sm.group(1))
 
-        link_text = f"第{schedule_no}号" if schedule_no else f"{ttype}本編"
-        records.append({
-            "type": ttype,
-            "year": year,
-            "seq": seq,
-            "filename": fn,
-            "link_text": link_text,
-            "url": full_url,
-            "sort_key": (schedule_no or 0, fn),
-        })
-        time.sleep(0.3)
+            link_text = f"第{schedule_no}号" if schedule_no else f"{ttype}本編"
+            records.append({
+                "type": ttype,
+                "year": year,
+                "seq": seq,
+                "filename": fn,
+                "link_text": link_text,
+                "url": full_url,
+                "sort_key": (schedule_no or 0, fn),
+            })
+            time.sleep(0.3)
 
     return records
 
