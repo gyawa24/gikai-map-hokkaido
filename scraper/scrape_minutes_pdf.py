@@ -122,6 +122,17 @@ PDF_CONFIGS: dict[str, dict] = {
         "loose_year_regex": r"(?P<yyyy>20\d{2})",
         "era_base": 2018,
     },
+    "nakasatsunai": {
+        "name": "中札内村",
+        # 年度ごとに別ディレクトリ配下にPDFが並ぶ構造
+        "strategy": "multi_index_html",
+        "index_urls": {
+            2025: "https://www.vill.nakasatsunai.hokkaido.jp/gikai/kaigiroku/kaigiroku_R7/",
+            2024: "https://www.vill.nakasatsunai.hokkaido.jp/gikai/kaigiroku/kaigiroku_R6/",
+        },
+        "council_tag": "h4",
+        # council見出し例: 「12月定例会」「9月定例会」「第5回臨時会」「第1回臨時会」
+    },
     "mukawa": {
         "name": "むかわ町",
         "index_url": "http://www.town.mukawa.lg.jp/2872.htm",
@@ -396,6 +407,89 @@ def extract_pdf_links_by_pdf_header(cfg: dict, years: list[int]) -> list[dict]:
     return records
 
 
+MONTH_TO_TEIREI_SEQ = {3: 1, 6: 2, 9: 3, 12: 4}
+
+
+def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[dict]:
+    """年度ごとの別ディレクトリ配下にPDFが並ぶ構造に対応する戦略。
+
+    各 index_url 内で council_tag（h4等）をcouncilヘッダーとしてグルーピングし、
+    その直下のPDFリンクを日程として拾う。
+    council見出し例:
+      - 「12月定例会」 → 定例会、月12
+      - 「9月定例会」  → 定例会、月9
+      - 「第5回臨時会」 → 臨時会、第5回
+    """
+    index_urls: dict = cfg["index_urls"]
+    council_tag = cfg["council_tag"].lower()
+    records: list[dict] = []
+
+    for year, url in index_urls.items():
+        if year not in years:
+            continue
+        r = requests.get(url, timeout=30, headers=HEADERS)
+        r.raise_for_status()
+        html = r.text
+
+        current_council = None  # {"type", "seq", "title"}
+        current_pdfs = []
+
+        def finalize():
+            nonlocal current_council, current_pdfs
+            if current_council and current_pdfs:
+                for order, (fn, full) in enumerate(current_pdfs, 1):
+                    records.append({
+                        "type": current_council["type"],
+                        "year": year,
+                        "seq": current_council["seq"],
+                        "filename": fn,
+                        "link_text": fn.replace(".pdf", ""),
+                        "url": full,
+                        "sort_key": (order, fn),
+                    })
+            current_council = None
+            current_pdfs = []
+
+        for m in TAG_RE.finditer(html):
+            tag = m.group("tag").lower()
+            text = re.sub(r"<[^>]+>", "", m.group("text")).strip()
+            attrs = m.group("attrs")
+
+            if tag == council_tag:
+                finalize()
+                # 月定例会 or 第N回臨時会 をパース
+                if "定例会" in text:
+                    mm_match = re.search(r"(\d+)\s*月", text)
+                    if mm_match:
+                        mm = int(mm_match.group(1))
+                        seq = MONTH_TO_TEIREI_SEQ.get(mm, mm)
+                        current_council = {"type": "定例会", "seq": seq, "title": text}
+                elif "臨時会" in text:
+                    sm = re.search(r"第\s*(\d+)\s*回", text)
+                    if sm:
+                        current_council = {
+                            "type": "臨時会",
+                            "seq": int(sm.group(1)),
+                            "title": text,
+                        }
+                continue
+
+            if tag == "a" and current_council:
+                href_m = HREF_RE.search(attrs)
+                if not href_m:
+                    continue
+                href = href_m.group(1)
+                if ".pdf" not in href.lower():
+                    continue
+                full = urljoin(url, href)
+                fn = href.rsplit("/", 1)[-1]
+                current_pdfs.append((fn, full))
+
+        finalize()
+
+    return records
+
+
 def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
     strategy = cfg.get("strategy", "html_sections")
     if strategy == "html_sections":
@@ -406,6 +500,8 @@ def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
         return extract_pdf_links_by_filename(cfg)
     if strategy == "pdf_header":
         return extract_pdf_links_by_pdf_header(cfg, years or [])
+    if strategy == "multi_index_html":
+        return extract_pdf_links_by_multi_index_html(cfg, years or [])
     raise ValueError(f"unknown strategy: {strategy}")
 
 
@@ -434,7 +530,8 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
         print(f"  [{slug}] 設定未登録", flush=True)
         return 0
 
-    print(f"  [{slug}] PDFリスト取得: {cfg['index_url']}", flush=True)
+    src = cfg.get("index_url") or cfg.get("index_urls") or "-"
+    print(f"  [{slug}] PDFリスト取得: {src}", flush=True)
     records = extract_pdf_links(cfg, years)
     print(f"    → {len(records)}件のPDFを検出", flush=True)
 
