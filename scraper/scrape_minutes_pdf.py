@@ -134,6 +134,25 @@ PDF_CONFIGS: dict[str, dict] = {
         "council_tag": "h4",
         "pdf_filter": ["kaigiroku", "会議録"],
     },
+    "setana": {
+        "name": "せたな町",
+        # R6/R7 サブディレクトリに各PDF、リンクテキストに全情報
+        # 例: 「令和７年第１回定例会（３月３日～４月３日）.pdf」
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.town.setana.lg.jp/gikai/kaigiroku/R7/",
+            2024: "https://www.town.setana.lg.jp/gikai/kaigiroku/R6/",
+        },
+    },
+    "oketo": {
+        "name": "置戸町",
+        # R7_kaigi/R6_kaigi 等、リンクテキストに「第N回定例会（令和7年3月10日～18日開催）」
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.town.oketo.hokkaido.jp/gikai/kaigiroku/R7_kaigi/",
+            2024: "https://www.town.oketo.hokkaido.jp/gikai/kaigiroku/R6_kaigi/",
+        },
+    },
     "niseko": {
         "name": "ニセコ町",
         # 年度ごとにディレクトリ分離
@@ -433,6 +452,57 @@ def extract_pdf_links_by_pdf_header(cfg: dict, years: list[int]) -> list[dict]:
 MONTH_TO_TEIREI_SEQ = {3: 1, 6: 2, 9: 3, 12: 4}
 
 
+def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[dict]:
+    """リンクテキストに year/seq/type 情報が全部含まれる構造向け戦略。
+
+    各 index_url ページの <a href=".pdf">リンクテキスト</a> を走査し、
+    リンクテキストから 年 (令和N年) / 回 (第N回) / 種別 (定例会|臨時会) を抽出。
+    年は index_urls の key (西暦) を優先、未ヒット時のみリンクテキストから。
+
+    例:
+      setana: 「令和７年第１回定例会（３月３日～４月３日）.pdf」
+      oketo:  「第2回定例会（令和7年3月10日～18日開催）」
+    """
+    era_re = re.compile(r"令和(\d+)年")
+    seq_re = re.compile(r"第\s*(\d+)\s*回")
+    type_re = re.compile(r"(定例会|臨時会)")
+
+    records: list[dict] = []
+    for year, url in cfg["index_urls"].items():
+        if year not in years:
+            continue
+        r = requests.get(url, timeout=30, headers=HEADERS)
+        r.encoding = r.apparent_encoding or "utf-8"
+        r.raise_for_status()
+        for m in re.finditer(
+            r'<a[^>]+href=["\']([^"\']+\.pdf)["\'][^>]*>([^<]{1,200})</a>',
+            r.text,
+            re.I,
+        ):
+            href = m.group(1)
+            text = _zen_to_half(m.group(2).strip())
+            tm = type_re.search(text)
+            sm = seq_re.search(text)
+            if not tm or not sm:
+                continue
+            # link_textの令和年が優先、なければ index_urls のkey
+            em = era_re.search(text)
+            actual_year = (2018 + int(em.group(1))) if em else year
+            if actual_year != year:
+                # 別の年度PDFが混入する可能性 → skip（年度ディレクトリ境界尊重）
+                continue
+            records.append({
+                "type": tm.group(1),
+                "year": year,
+                "seq": int(sm.group(1)),
+                "filename": href.rsplit("/", 1)[-1],
+                "link_text": m.group(2).strip()[:60],
+                "url": urljoin(url, href),
+                "sort_key": (href,),
+            })
+    return records
+
+
 def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[dict]:
     """年度ごとの別ディレクトリ配下にPDFが並ぶ構造に対応する戦略。
 
@@ -629,6 +699,8 @@ def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
         return extract_pdf_links_by_pdf_header(cfg, years or [])
     if strategy == "multi_index_html":
         return extract_pdf_links_by_multi_index_html(cfg, years or [])
+    if strategy == "linktext_pattern":
+        return extract_pdf_links_by_linktext_pattern(cfg, years or [])
     if strategy == "nested_html_sections":
         return extract_pdf_links_by_nested_html_sections(cfg, years or [])
     raise ValueError(f"unknown strategy: {strategy}")

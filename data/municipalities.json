@@ -1284,9 +1284,11 @@
     "furigana": "せたなちょう",
     "level": "municipality",
     "features": [
+      "minutes",
       "members"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "shibetsu",
@@ -1824,9 +1826,11 @@
     "furigana": "おけとちょう",
     "level": "municipality",
     "features": [
+      "minutes",
       "members"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "saroma",
