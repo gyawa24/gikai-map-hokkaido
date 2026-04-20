@@ -110,6 +110,18 @@ PDF_CONFIGS: dict[str, dict] = {
         "loose_year_regex": r"r(?P<ey>\d+)\.",
         "era_base": 2018,
     },
+    "furubira": {
+        "name": "古平町",
+        "index_url": "https://www.town.furubira.lg.jp/town/detail.php?id=59",
+        # 戦略: hokuryuと同じ形式のPDFヘッダー（第N回...定例会/臨時会 第N号）
+        # ファイル名は cassette_NN_pdfNN_yyyymmdd_HHMMSS.pdf （yyyymmdd=アップロード日）
+        "strategy": "pdf_header",
+        "title_regex": r"第(\d+)回[\s\S]{0,20}?(定例会|臨時会)",
+        "year_regex": r"令和(\d+)年",
+        "schedule_regex": r"第(\d+)号",
+        "loose_year_regex": r"(?P<yyyy>20\d{2})",
+        "era_base": 2018,
+    },
     "mukawa": {
         "name": "むかわ町",
         "index_url": "http://www.town.mukawa.lg.jp/2872.htm",
@@ -332,7 +344,13 @@ def extract_pdf_links_by_pdf_header(cfg: dict, years: list[int]) -> list[dict]:
         lm = loose_re.search(fn)
         if not lm:
             continue
-        loose_year = era_base + int(lm.group("ey"))
+        lgd = lm.groupdict()
+        if lgd.get("yyyy"):
+            loose_year = int(lgd["yyyy"])
+        elif lgd.get("ey"):
+            loose_year = era_base + int(lgd["ey"])
+        else:
+            continue
         if not any(abs(loose_year - y) <= 1 for y in target_set):
             continue
 
