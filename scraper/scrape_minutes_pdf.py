@@ -83,6 +83,33 @@ PDF_CONFIGS: dict[str, dict] = {
         "sort_groups": ["day"],
         "link_text_format": "第{day}日",
     },
+    "honbetsu": {
+        "name": "本別町",
+        "index_url": "https://www.town.honbetsu.hokkaido.jp/web/parliament/parliament04.html",
+        # 戦略: ファイル名に回数情報が無いため、PDF先頭ページのタイトルから抽出
+        # 例: teireikaiR7.3.pdf の PDF 1ページ目に
+        #     「令和７年 第１回 本別町議会定例会会議録」と書いてある
+        "strategy": "pdf_header",
+        "title_regex": r"第(\d+)回[\s\S]{0,30}?(定例会|臨時会)",
+        "year_regex": r"令和(\d+)年",
+        "loose_year_regex": r"R0?(?P<ey>\d+)",
+        "era_base": 2018,
+    },
+    "hokuryu": {
+        "name": "北竜町",
+        "index_url": "http://www.town.hokuryu.hokkaido.jp/tyousei/gikai/gikaikaigiroku/",
+        # 戦略: ファイル名に回数・種別がないため PDF1ページ目から取得
+        # 例: g_giroku_r7.3.11.pdf の PDF 1ページ目に
+        #     「第１回北竜町議会定例会 第１号\n令和７年３月１１日...」
+        # 同じ第N回定例会に複数日（第1号/第2号/第3号）ある → scheduleに展開
+        "strategy": "pdf_header",
+        "title_regex": r"第(\d+)回[\s\S]{0,20}?(定例会|臨時会)",
+        "year_regex": r"令和(\d+)年",
+        "schedule_regex": r"第(\d+)号",
+        # ファイル名 g_giroku_r7.3.11.pdf → r7 を loose year として拾う
+        "loose_year_regex": r"r(?P<ey>\d+)\.",
+        "era_base": 2018,
+    },
     "mukawa": {
         "name": "むかわ町",
         "index_url": "http://www.town.mukawa.lg.jp/2872.htm",
@@ -269,7 +296,89 @@ def extract_pdf_links_by_filename(cfg: dict) -> list[dict]:
     return records
 
 
-def extract_pdf_links(cfg: dict) -> list[dict]:
+def _zen_to_half(s: str) -> str:
+    return s.translate(str.maketrans("０１２３４５６７８９", "0123456789"))
+
+
+def extract_pdf_links_by_pdf_header(cfg: dict, years: list[int]) -> list[dict]:
+    """PDF先頭ページのテキストから年度・種別・回数・号数を抽出する戦略。
+
+    ファイル名からは種別・回数が判別できないケース（本別町・北竜町等）向け。
+    事前に loose_year_regex でファイル名から仮年度を絞ってダウンロードする。
+
+    - title_regex: (seq, type) の2グループを返す
+    - year_regex: (era_year) の1グループを返す
+    - schedule_regex: (schedule_no) の1グループ（optional、同councilの号数）
+    """
+    r = requests.get(cfg["index_url"], timeout=30, headers=HEADERS)
+    r.raise_for_status()
+    title_re = re.compile(cfg["title_regex"])
+    year_re = re.compile(cfg["year_regex"])
+    schedule_re = re.compile(cfg["schedule_regex"]) if cfg.get("schedule_regex") else None
+    loose_re = re.compile(cfg.get("loose_year_regex", r"R(?P<ey>\d+)"), re.I)
+    era_base = cfg.get("era_base", 2018)
+
+    target_set = set(years)
+    records: list[dict] = []
+    seen = set()
+
+    for m in re.finditer(r'href=["\']([^"\']+\.pdf[^"\']*)["\']', r.text, re.I):
+        href = m.group(1)
+        fn = href.rsplit("/", 1)[-1]
+        if fn in seen:
+            continue
+        seen.add(fn)
+
+        lm = loose_re.search(fn)
+        if not lm:
+            continue
+        loose_year = era_base + int(lm.group("ey"))
+        if not any(abs(loose_year - y) <= 1 for y in target_set):
+            continue
+
+        full_url = urljoin(cfg["index_url"], href)
+        print(f"    … {fn} ヘッダー確認", flush=True)
+        try:
+            pr = requests.get(full_url, timeout=60, headers=HEADERS)
+            pr.raise_for_status()
+            with pdfplumber.open(io.BytesIO(pr.content)) as pdf:
+                first_text = pdf.pages[0].extract_text() or ""
+        except Exception as e:
+            print(f"      ✗ ヘッダー取得失敗: {e}", flush=True)
+            continue
+
+        first_text = _zen_to_half(first_text)
+        tm = title_re.search(first_text)
+        ym = year_re.search(first_text)
+        if not tm or not ym:
+            print(f"      ✗ タイトル未マッチ: {fn}", flush=True)
+            continue
+        seq = int(tm.group(1))
+        ttype = tm.group(2)
+        year = era_base + int(ym.group(1))
+
+        schedule_no = None
+        if schedule_re:
+            sm = schedule_re.search(first_text)
+            if sm:
+                schedule_no = int(sm.group(1))
+
+        link_text = f"第{schedule_no}号" if schedule_no else f"{ttype}本編"
+        records.append({
+            "type": ttype,
+            "year": year,
+            "seq": seq,
+            "filename": fn,
+            "link_text": link_text,
+            "url": full_url,
+            "sort_key": (schedule_no or 0, fn),
+        })
+        time.sleep(0.3)
+
+    return records
+
+
+def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
     strategy = cfg.get("strategy", "html_sections")
     if strategy == "html_sections":
         return extract_pdf_links_by_html_sections(
@@ -277,6 +386,8 @@ def extract_pdf_links(cfg: dict) -> list[dict]:
         )
     if strategy == "filename_pattern":
         return extract_pdf_links_by_filename(cfg)
+    if strategy == "pdf_header":
+        return extract_pdf_links_by_pdf_header(cfg, years or [])
     raise ValueError(f"unknown strategy: {strategy}")
 
 
@@ -306,7 +417,7 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
         return 0
 
     print(f"  [{slug}] PDFリスト取得: {cfg['index_url']}", flush=True)
-    records = extract_pdf_links(cfg)
+    records = extract_pdf_links(cfg, years)
     print(f"    → {len(records)}件のPDFを検出", flush=True)
 
     # 対象年のみフィルタ

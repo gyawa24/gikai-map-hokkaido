@@ -2070,9 +2070,11 @@
     "furigana": "ほんべつちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "ashoro",
