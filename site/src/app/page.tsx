@@ -237,15 +237,17 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="/ai-search"
+            href="/search"
             className="group flex items-center gap-3 bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-4 py-3.5 shadow-sm hover:shadow-md transition-all duration-150"
           >
             <div className="w-9 h-9 rounded-lg bg-[#E8EEF7] flex items-center justify-center shrink-0 group-hover:bg-[#1B3A6B] transition-colors">
-              <span className="text-sm text-[#1B3A6B] group-hover:text-white transition-colors font-bold">✦</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#1B3A6B] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-[#1A202C]">AI検索</p>
-              <p className="text-xs text-[#4A5568]">議決内容を自然言語で検索</p>
+              <p className="text-sm font-semibold text-[#1A202C]">議事録検索</p>
+              <p className="text-xs text-[#4A5568]">キーワードで議会記録・議員を横断検索</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           </Link>

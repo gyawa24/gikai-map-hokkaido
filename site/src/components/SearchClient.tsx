@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import type { SessionHit, MemberHit } from "@/app/api/search/route";
 
@@ -45,8 +46,9 @@ const ALL_CITIES: { id: string; name: string }[] = [
   { id: "wakkanai",      name: "稚内市" },
 ];
 
-export default function SearchClient() {
-  const [query, setQuery] = useState("");
+function SearchClientInner() {
+  const searchParams = useSearchParams();
+  const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
   const [tab, setTab] = useState<"sessions" | "members">("sessions");
   const [cityFilter, setCityFilter] = useState<string>("all");
   const [sessionResults, setSessionResults] = useState<SessionHit[]>([]);
@@ -259,5 +261,13 @@ export default function SearchClient() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function SearchClient() {
+  return (
+    <Suspense>
+      <SearchClientInner />
+    </Suspense>
   );
 }

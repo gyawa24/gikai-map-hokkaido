@@ -25,9 +25,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
 
   function renderNavLink(item: NavItem) {
     const isActive =
-      item.href === "/ai-search"
-        ? pathname === item.href
-        : pathname === item.href || pathname.startsWith(item.href + "/");
+      pathname === item.href || pathname.startsWith(item.href + "/");
     return (
       <Link
         key={item.href}
@@ -86,7 +84,6 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
             {[
               { href: "/", label: "トップ" },
               { href: "/search", label: "検索" },
-              { href: "/ai-search", label: "AI検索（実験）" },
             ].map(renderNavLink)}
           </nav>
         )}

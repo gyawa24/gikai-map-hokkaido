@@ -97,9 +97,7 @@ function PolicyRow({
   color: (typeof GOAL_COLORS)[0];
 }) {
   const [excerptOpen, setExcerptOpen] = useState(false);
-  const searchQ = encodeURIComponent(
-    `千歳市議会での「${policy.title}」に関する議論を教えてください`
-  );
+  const searchQ = encodeURIComponent(policy.title);
 
   return (
     <li className="group">
@@ -132,17 +130,17 @@ function PolicyRow({
             {cnt}件
           </span>
         )}
-        {/* AI検索リンク */}
+        {/* 検索リンク */}
         <Link
-          href={`/ai-search?q=${searchQ}`}
+          href={`/search?q=${searchQ}`}
           className="shrink-0 text-xs text-[#2A5298] hover:text-[#1B3A6B] opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-0.5"
-          title="AI検索で議論を調べる"
+          title="議事録検索で議論を調べる"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
           </svg>
-          AI
+          検索
         </Link>
       </div>
 
@@ -296,7 +294,7 @@ export default function ComprehensivePlanClient({
       <h3 className="text-sm font-semibold text-[#4A5568] uppercase tracking-wide mb-3">
         基本目標と施策
         <span className="ml-2 text-xs font-normal text-[#A0AEC0] normal-case">
-          — 各施策にカーソルを当てるとAI検索リンクが表示されます
+          — 各施策にカーソルを当てると検索リンクが表示されます
         </span>
       </h3>
       <div className="space-y-3 mb-10">
@@ -340,9 +338,7 @@ export default function ComprehensivePlanClient({
         <p className="text-xs font-semibold text-[#4A5568] mb-3">重点プロジェクト</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {plan.population_vision.projects.map((p) => {
-            const searchQ = encodeURIComponent(
-              `千歳市議会での「${p.title}」に関する取り組みや議論を教えてください`
-            );
+            const searchQ = encodeURIComponent(p.title);
             return (
               <div
                 key={p.id}
@@ -358,9 +354,9 @@ export default function ComprehensivePlanClient({
                   </div>
                 </div>
                 <Link
-                  href={`/ai-search?q=${searchQ}`}
+                  href={`/search?q=${searchQ}`}
                   className="shrink-0 text-xs text-[#2A5298] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
-                  title="AI検索で議論を調べる"
+                  title="議事録検索で議論を調べる"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -375,7 +371,7 @@ export default function ComprehensivePlanClient({
                     <circle cx="11" cy="11" r="8" />
                     <line x1="21" y1="21" x2="16.65" y2="16.65" />
                   </svg>
-                  AI
+                  検索
                 </Link>
               </div>
             );

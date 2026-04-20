@@ -361,10 +361,10 @@ export default async function CityThemesPage({
             <span className="text-[#2A5298] shrink-0 mt-0.5" aria-hidden="true">·</span>
             <span>
               <Link
-                href="/ai-search"
+                href="/search"
                 className="text-[#2A5298] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
               >
-                AI検索
+                議事録検索
               </Link>
               を使うと、テーマに関する議会での議論を横断的に調べることもできます。
             </span>

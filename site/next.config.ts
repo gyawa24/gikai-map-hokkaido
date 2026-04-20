@@ -1,9 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  outputFileTracingIncludes: {
-    "/api/search": ["./data/**/*"],
-    "/api/ai-search": ["./data/**/*"],
+  outputFileTracingExcludes: {
+    "/api/search": [
+      "./data/*/???.json",
+      "./data/*/????.json",
+      "./data/*/newsletter.json",
+      "./data/*/schedule.json",
+      "./data/*/comprehensive_plan.json",
+      "./data/*/*_activity.json",
+      "./data/*/index.json",
+    ],
   },
   async headers() {
     return [

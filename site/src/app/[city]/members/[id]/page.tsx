@@ -79,9 +79,7 @@ export default async function CityMemberDetailPage({
   const activity = getActivity(city);
   const memberActivity = activity[member.name.replace(/\s/g, "")];
 
-  const aiSearchQ = encodeURIComponent(
-    `${member.name}議員の議会質問の傾向と主な主張を教えてください`
-  );
+  const memberSearchQ = encodeURIComponent(member.name);
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -176,17 +174,19 @@ export default async function CityMemberDetailPage({
         </dl>
       </section>
 
-      {/* AI検索ショートカット */}
+      {/* 検索ショートカット */}
       <div className="bg-[#E8EEF7] border border-[#C5D0E6] rounded-lg px-4 py-3 mb-5 flex items-center justify-between gap-3">
         <p className="text-sm text-[#1B3A6B]">
-          <span className="font-semibold">{member.name}</span> 議員の活動をAIに聞く
+          <span className="font-semibold">{member.name}</span> 議員の発言を横断検索
         </p>
         <Link
-          href={`/ai-search?q=${aiSearchQ}`}
+          href={`/search?q=${memberSearchQ}`}
           className="shrink-0 text-sm font-medium px-4 py-1.5 bg-[#1B3A6B] text-white rounded-lg hover:bg-[#2A5298] transition-colors flex items-center gap-1.5"
         >
-          <span aria-hidden="true">✦</span>
-          AI検索
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          検索
         </Link>
       </div>
 
@@ -207,13 +207,11 @@ export default async function CityMemberDetailPage({
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {memberActivity.all_topics.map((t) => {
-                  const q = encodeURIComponent(
-                    `${cityName}議会での「${t}」に関する議論を教えてください`
-                  );
+                  const q = encodeURIComponent(t);
                   return (
                     <Link
                       key={t}
-                      href={`/ai-search?q=${q}`}
+                      href={`/search?q=${q}`}
                       className="text-xs px-2 py-0.5 bg-white text-[#1B3A6B] border border-[#CBD5E0] rounded-full hover:bg-[#1B3A6B] hover:text-white transition-colors"
                     >
                       {t}
@@ -277,14 +275,12 @@ export default async function CityMemberDetailPage({
                           <span className="text-[#4A5568]">{t}</span>
                         )}
                         <Link
-                          href={`/ai-search?q=${encodeURIComponent(
-                            `${member.name}議員の「${t}」に関する質問内容を教えてください`
-                          )}`}
+                          href={`/search?q=${encodeURIComponent(`${member.name} ${t}`)}`}
                           className="shrink-0 text-xs text-[#A0AEC0] hover:text-[#2A5298] opacity-0 group-hover:opacity-100 transition-opacity"
-                          title="AI検索"
-                          aria-label={`${t}をAI検索`}
+                          title="議事録検索"
+                          aria-label={`${t}を検索`}
                         >
-                          ✦ AI
+                          検索
                         </Link>
                       </div>
                     </li>

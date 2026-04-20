@@ -107,9 +107,7 @@ export default async function CityPlanPage({
         </h3>
         <div className="flex flex-col gap-3">
           {plan.basic_goals.map((goal) => {
-            const aiQ = encodeURIComponent(
-              `${cityName}議会で「${goal.title}」に関してどのような議論がありましたか`
-            );
+            const searchQ = encodeURIComponent(goal.title);
             return (
               <details
                 key={goal.id}
@@ -181,11 +179,13 @@ export default async function CityPlanPage({
                     );
                   })()}
                   <Link
-                    href={`/ai-search?q=${aiQ}`}
+                    href={`/search?q=${searchQ}`}
                     className="inline-flex items-center gap-1.5 text-xs text-[#2A5298] hover:text-[#1B3A6B] transition-colors"
                   >
-                    <span aria-hidden="true">✦</span>
-                    この目標に関する議会の議論をAIに聞く
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    この目標に関連する議論を検索
                   </Link>
                 </div>
               </details>

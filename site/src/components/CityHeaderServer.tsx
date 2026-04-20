@@ -50,7 +50,6 @@ const MASTER_NAV: MasterNavItem[] = [
   },
   { key: "election", label: "選挙結果", pageDir: "election", dataFile: "election.json" },
   { key: "themes", label: "テーマ別", pageDir: "themes", dataFile: "members_activity.json" },
-  { key: "ai-search", label: "✦ AI検索", pageDir: "ai-search" },
 ];
 
 // Per-city label overrides for localized names
@@ -59,7 +58,6 @@ const LABEL_OVERRIDES: Record<string, Record<string, string>> = {
 };
 
 function pageExists(cityKey: string, pageDir: string): boolean {
-  if (pageDir === "ai-search") return true;
   // Check static city-specific route first
   const staticPath = pageDir
     ? path.join(process.cwd(), "src", "app", cityKey, pageDir, "page.tsx")
@@ -85,9 +83,6 @@ function computeCityNav(cityKey: string): NavItem[] {
     // Restrict to specific cities
     if (item.cityOnly && !item.cityOnly.includes(cityKey)) return false;
 
-    // AI search is always shown
-    if (item.key === "ai-search") return true;
-
     // Check page route exists (prevents 404)
     if (!pageExists(cityKey, item.pageDir)) return false;
 
@@ -96,12 +91,7 @@ function computeCityNav(cityKey: string): NavItem[] {
 
     return true;
   }).map((item) => ({
-    href:
-      item.key === "ai-search"
-        ? "/ai-search"
-        : item.key === "members"
-        ? baseHref
-        : `${baseHref}/${item.key}`,
+    href: item.key === "members" ? baseHref : `${baseHref}/${item.key}`,
     label: overrides[item.key] ?? item.label,
   }));
 }
