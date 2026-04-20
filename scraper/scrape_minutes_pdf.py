@@ -134,6 +134,17 @@ PDF_CONFIGS: dict[str, dict] = {
         "council_tag": "h4",
         "pdf_filter": ["kaigiroku", "会議録"],
     },
+    "niseko": {
+        "name": "ニセコ町",
+        # 年度ごとにディレクトリ分離
+        # h3 council見出し: 「令和7年(2025年)第1回ニセコ町議会臨時会」等
+        "strategy": "multi_index_html",
+        "index_urls": {
+            2025: "https://www.town.niseko.lg.jp/chosei/gikai/kaigi/r07/",
+            2024: "https://www.town.niseko.lg.jp/chosei/gikai/kaigi/r06/",
+        },
+        "council_tag": "h3",
+    },
     "nakasatsunai": {
         "name": "中札内村",
         # 年度ごとに別ディレクトリ配下にPDFが並ぶ構造
@@ -469,21 +480,22 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
 
             if tag == council_tag:
                 finalize()
-                # 月定例会 or 第N回臨時会 をパース
+                text_half = _zen_to_half(text)
+                # まず「第N回」があればそちらを優先（例: ニセコ「第2回ニセコ町議会定例会」）
+                sm = re.search(r"第\s*(\d+)\s*回", text_half)
                 if "定例会" in text:
-                    mm_match = re.search(r"(\d+)\s*月", text)
-                    if mm_match:
-                        mm = int(mm_match.group(1))
-                        seq = MONTH_TO_TEIREI_SEQ.get(mm, mm)
-                        current_council = {"type": "定例会", "seq": seq, "title": text}
-                elif "臨時会" in text:
-                    sm = re.search(r"第\s*(\d+)\s*回", text)
                     if sm:
-                        current_council = {
-                            "type": "臨時会",
-                            "seq": int(sm.group(1)),
-                            "title": text,
-                        }
+                        current_council = {"type": "定例会", "seq": int(sm.group(1)), "title": text}
+                    else:
+                        # フォールバック: 月→回数（中札内「12月定例会」形式）
+                        mm_match = re.search(r"(\d+)\s*月", text_half)
+                        if mm_match:
+                            mm = int(mm_match.group(1))
+                            seq = MONTH_TO_TEIREI_SEQ.get(mm, mm)
+                            current_council = {"type": "定例会", "seq": seq, "title": text}
+                elif "臨時会" in text:
+                    if sm:
+                        current_council = {"type": "臨時会", "seq": int(sm.group(1)), "title": text}
                 continue
 
             if tag == "a" and current_council:
