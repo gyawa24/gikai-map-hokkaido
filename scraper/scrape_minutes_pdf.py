@@ -144,6 +144,33 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.setana.lg.jp/gikai/kaigiroku/R6/",
         },
     },
+    "kikonai": {
+        "name": "木古内町",
+        # R7/teireikai.html と R7/rinji.html に分離
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: [
+                "https://www.town.kikonai.hokkaido.jp/gikai/kaigiroku/R7/teireikai.html",
+                "https://www.town.kikonai.hokkaido.jp/gikai/kaigiroku/R7/rinji.html",
+            ],
+            # R6のみ typo で reireikai.html（木古内町側のスペルミス）
+            2024: [
+                "https://www.town.kikonai.hokkaido.jp/gikai/kaigiroku/R6/reireikai.html",
+                "https://www.town.kikonai.hokkaido.jp/gikai/kaigiroku/R6/rinji.html",
+            ],
+        },
+    },
+    "hiroo": {
+        "name": "広尾町",
+        # 年度サブディレクトリ、リンクテキストに全情報
+        # ただしリンクに <i class="..."></i> アイコンが含まれるので regex改良対応
+        # 例: <a href="...kaigiroku_R7.1rin.pdf"><i></i>第1回臨時会（令和7年1月15日）</a>
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.town.hiroo.lg.jp/gikai/gikaikaigiroku/gikaikaigiroku_r07/",
+            2024: "https://www.town.hiroo.lg.jp/gikai/gikaikaigiroku/gikaikaigiroku_r06/",
+        },
+    },
     "oketo": {
         "name": "置戸町",
         # R7_kaigi/R6_kaigi 等、リンクテキストに「第N回定例会（令和7年3月10日～18日開催）」
@@ -468,38 +495,43 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
     type_re = re.compile(r"(定例会|臨時会)")
 
     records: list[dict] = []
-    for year, url in cfg["index_urls"].items():
+    for year, urls in cfg["index_urls"].items():
         if year not in years:
             continue
-        r = requests.get(url, timeout=30, headers=HEADERS)
-        r.encoding = r.apparent_encoding or "utf-8"
-        r.raise_for_status()
-        for m in re.finditer(
-            r'<a[^>]+href=["\']([^"\']+\.pdf)["\'][^>]*>([^<]{1,200})</a>',
-            r.text,
-            re.I,
-        ):
-            href = m.group(1)
-            text = _zen_to_half(m.group(2).strip())
-            tm = type_re.search(text)
-            sm = seq_re.search(text)
-            if not tm or not sm:
-                continue
-            # link_textの令和年が優先、なければ index_urls のkey
-            em = era_re.search(text)
-            actual_year = (2018 + int(em.group(1))) if em else year
-            if actual_year != year:
-                # 別の年度PDFが混入する可能性 → skip（年度ディレクトリ境界尊重）
-                continue
-            records.append({
-                "type": tm.group(1),
-                "year": year,
-                "seq": int(sm.group(1)),
-                "filename": href.rsplit("/", 1)[-1],
-                "link_text": m.group(2).strip()[:60],
-                "url": urljoin(url, href),
-                "sort_key": (href,),
-            })
+        url_list = urls if isinstance(urls, list) else [urls]
+        for url in url_list:
+            r = requests.get(url, timeout=30, headers=HEADERS)
+            r.encoding = r.apparent_encoding or "utf-8"
+            r.raise_for_status()
+            # リンクテキストに <i class=...> 等のアイコンタグが入るケースがあるので
+            # [\s\S]{,300}? で受けて内部のHTMLタグは後で除去する
+            for m in re.finditer(
+                r'<a[^>]+href=["\']([^"\']+\.pdf)["\'][^>]*>([\s\S]{1,300}?)</a>',
+                r.text,
+                re.I,
+            ):
+                href = m.group(1)
+                raw = re.sub(r"<[^>]+>", "", m.group(2))
+                text = _zen_to_half(re.sub(r"\s+", " ", raw).strip())
+                tm = type_re.search(text)
+                sm = seq_re.search(text)
+                if not tm or not sm:
+                    continue
+                # link_textの令和年が優先、なければ index_urls のkey
+                em = era_re.search(text)
+                actual_year = (2018 + int(em.group(1))) if em else year
+                if actual_year != year:
+                    # 別の年度PDFが混入する可能性 → skip（年度ディレクトリ境界尊重）
+                    continue
+                records.append({
+                    "type": tm.group(1),
+                    "year": year,
+                    "seq": int(sm.group(1)),
+                    "filename": href.rsplit("/", 1)[-1],
+                    "link_text": text[:60],
+                    "url": urljoin(url, href),
+                    "sort_key": (href,),
+                })
     return records
 
 

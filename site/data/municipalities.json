@@ -1152,9 +1152,11 @@
     "furigana": "きこないちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "nanae",
@@ -2046,9 +2048,11 @@
     "furigana": "ひろおちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "makubetsu",
