@@ -50,11 +50,38 @@ PDF_CONFIGS: dict[str, dict] = {
     "naie": {
         "name": "奈井江町",
         "index_url": "https://www.town.naie.hokkaido.jp/gikai/g_kaigiroku/",
+        # 戦略: HTML見出しで種別・年度セクションを把握
         # <h3>定例会</h3> / <h3>臨時会</h3> で種別セクション切替
         # <h4>令和7年</h4> で年度セクション切替
-        # 同じセクション内の連続した <a href=".pdf">会議録 第N回</a> を拾う
+        "strategy": "html_sections",
         "type_tag": "h3",
         "year_tag": "h4",
+    },
+    "makkari": {
+        "name": "真狩村",
+        "index_url": "https://www.vill.makkari.lg.jp/songikai/kaigiroku/",
+        # 戦略: PDFファイル名から年度・種別・回数・日付をパース
+        # 例: R7-3-10-1tei.pdf / 6-3-8-1tei.pdf
+        #   令和{ey}年{mm}月{dd}日 第{seq}回{tei=定例会|rin=臨時会}
+        "strategy": "filename_pattern",
+        "filename_regex": r"(?:R)?(?P<ey>\d+)-(?P<mm>\d+)-(?P<dd>\d+)-(?P<seq>\d+)(?P<t>tei|rin)\.pdf",
+        "era_base": 2018,
+        "type_map": {"tei": "定例会", "rin": "臨時会"},
+        "sort_groups": ["mm", "dd"],
+        "link_text_format": "{mm:02d}月{dd:02d}日",
+    },
+    "yoichi": {
+        "name": "余市町",
+        "index_url": "https://www.town.yoichi.hokkaido.jp/gikai/kaigiroku/index.html",
+        # 戦略: PDFファイル名から年度・種別・回数・日目をパース
+        # 例: R7.4tei1.pdf（令和7年第4回定例会1日目）/ R06.1tei.5.pdf / R7.6rin.pdf
+        # R 省略、先頭0桁の両方を吸収する
+        "strategy": "filename_pattern",
+        "filename_regex": r"R?0?(?P<ey>\d+)\.(?P<seq>\d+)(?P<t>tei|rin)\.?(?P<day>\d+)?\.pdf",
+        "era_base": 2018,
+        "type_map": {"tei": "定例会", "rin": "臨時会"},
+        "sort_groups": ["day"],
+        "link_text_format": "第{day}日",
     },
 }
 
@@ -98,7 +125,7 @@ TAG_RE = re.compile(
 HREF_RE = re.compile(r'href=["\']([^"\']+)["\']', re.I)
 
 
-def extract_pdf_links(
+def extract_pdf_links_by_html_sections(
     index_url: str, type_tag: str, year_tag: str
 ) -> list[dict]:
     r = requests.get(index_url, timeout=30, headers=HEADERS)
@@ -158,6 +185,79 @@ def extract_pdf_links(
     return records
 
 
+def extract_pdf_links_by_filename(cfg: dict) -> list[dict]:
+    """ファイル名パターンから年度・種別・回数・順序情報を抽出する戦略。"""
+    r = requests.get(cfg["index_url"], timeout=30, headers=HEADERS)
+    r.raise_for_status()
+    pattern = re.compile(cfg["filename_regex"], re.I)
+    era_base = cfg["era_base"]
+    type_map = cfg["type_map"]
+    sort_groups = cfg.get("sort_groups", [])
+    link_text_format = cfg.get("link_text_format")
+
+    records: list[dict] = []
+    seen = set()
+    for m in re.finditer(r'href=["\']([^"\']+\.pdf[^"\']*)["\']', r.text, re.I):
+        href = m.group(1)
+        full_url = urljoin(cfg["index_url"], href)
+        fn = href.rsplit("/", 1)[-1]
+        if fn in seen:
+            continue
+        seen.add(fn)
+        pm = pattern.search(fn)
+        if not pm:
+            continue
+        gd = pm.groupdict()
+        year = era_base + int(gd["ey"])
+        seq = int(gd.get("seq") or 0) or None
+        ttype = type_map.get((gd.get("t") or "").lower())
+        if not ttype:
+            continue
+
+        # 数値変換しておく（int→sortやformat引数に使う）
+        numeric = {}
+        for k, v in gd.items():
+            if v is None:
+                numeric[k] = 0
+                continue
+            try:
+                numeric[k] = int(v)
+            except ValueError:
+                numeric[k] = v
+
+        sort_key = tuple(numeric.get(g, 0) for g in sort_groups)
+
+        if link_text_format:
+            try:
+                link_text = link_text_format.format(**numeric)
+            except Exception:
+                link_text = fn
+        else:
+            link_text = fn
+
+        records.append({
+            "type": ttype,
+            "year": year,
+            "seq": seq,
+            "filename": fn,
+            "link_text": link_text,
+            "url": full_url,
+            "sort_key": sort_key,
+        })
+    return records
+
+
+def extract_pdf_links(cfg: dict) -> list[dict]:
+    strategy = cfg.get("strategy", "html_sections")
+    if strategy == "html_sections":
+        return extract_pdf_links_by_html_sections(
+            cfg["index_url"], cfg["type_tag"], cfg["year_tag"]
+        )
+    if strategy == "filename_pattern":
+        return extract_pdf_links_by_filename(cfg)
+    raise ValueError(f"unknown strategy: {strategy}")
+
+
 # ---------------------------------------------------------------------------
 # PDFテキスト抽出
 # ---------------------------------------------------------------------------
@@ -184,7 +284,7 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
         return 0
 
     print(f"  [{slug}] PDFリスト取得: {cfg['index_url']}", flush=True)
-    records = extract_pdf_links(cfg["index_url"], cfg["type_tag"], cfg["year_tag"])
+    records = extract_pdf_links(cfg)
     print(f"    → {len(records)}件のPDFを検出", flush=True)
 
     # 対象年のみフィルタ
@@ -202,57 +302,66 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
         except Exception:
             pass
 
-    saved = 0
+    # (year, type, seq) が同じPDFはひとつのcouncilに集約
+    # 日付順のschedulesとしてぶら下げる
+    groups: dict[tuple[int, str, int], list[dict]] = {}
     for r in target:
-        year = r["year"]
-        type_flag = TYPE_FLAGS.get(r["type"], 90)
-        seq = r["seq"] or 99
+        key = (r["year"], r["type"], r["seq"] or 99)
+        groups.setdefault(key, []).append(r)
+
+    saved = 0
+    for (year, ttype, seq), items in groups.items():
+        type_flag = TYPE_FLAGS.get(ttype, 90)
         council_id = year * 10000 + type_flag * 100 + seq
-
         council_file = out_dir / f"{council_id}.json"
+        name = f"{era_str(year)}第{seq}回{ttype}"
+
         if council_file.exists() and not force:
-            print(f"    [skip] {council_id} {r['link_text']} (既存)", flush=True)
-            if council_id not in index_map:
-                name = f"{era_str(year)}第{seq}回{r['type']}"
-                index_map[council_id] = {
-                    "council_id": council_id,
-                    "name": name,
-                    "year": str(year),
-                    "japanese_year": era_str(year),
-                    "type_label": f"全会議 > 本会議 > {r['type']}",
-                    "file": f"{council_id}.json",
-                    "schedule_count": 1,
-                }
+            print(f"    [skip] {council_id} {name} (既存)", flush=True)
+            index_map[council_id] = {
+                "council_id": council_id,
+                "name": name,
+                "year": str(year),
+                "japanese_year": era_str(year),
+                "type_label": f"全会議 > 本会議 > {ttype}",
+                "file": f"{council_id}.json",
+                "schedule_count": len(items),
+            }
             continue
 
-        name = f"{era_str(year)}第{seq}回{r['type']}"
-        print(f"    [{council_id}] {name} 取得中...", flush=True)
+        # sort_key があればそれでソート、なければリンクテキストで安定化
+        items.sort(key=lambda x: x.get("sort_key") or x.get("filename", ""))
+        print(f"    [{council_id}] {name} 日程{len(items)}件 取得...", flush=True)
 
-        try:
-            text = extract_pdf_text(r["url"])
-            print(f"      ✓ {len(text)}文字 ({r['url'].rsplit('/', 1)[-1]})", flush=True)
-        except Exception as e:
-            print(f"      ✗ 失敗: {e}", flush=True)
-            continue
+        schedules = []
+        for idx, r in enumerate(items, 1):
+            try:
+                text = extract_pdf_text(r["url"])
+                print(f"      ✓ {r['link_text']} ({len(text)}文字)", flush=True)
+            except Exception as e:
+                print(f"      ✗ {r['link_text']}: {e}", flush=True)
+                text = ""
+            schedules.append({
+                "schedule_id": idx,
+                "name": r["link_text"] or f"第{idx}日",
+                "page_no": idx,
+                "minutes": [{
+                    "minute_id": 1,
+                    "title": r["link_text"] or f"第{idx}日",
+                    "minute_type": "本会議",
+                    "text": text,
+                    "source_url": r["url"],
+                }],
+            })
+            time.sleep(REQUEST_INTERVAL)
 
         council_data = {
             "council_id": council_id,
             "name": name,
             "year": str(year),
             "japanese_year": era_str(year),
-            "type_label": f"全会議 > 本会議 > {r['type']}",
-            "schedules": [{
-                "schedule_id": 1,
-                "name": r["link_text"] or name,
-                "page_no": 1,
-                "minutes": [{
-                    "minute_id": 1,
-                    "title": r["link_text"] or name,
-                    "minute_type": "本会議",
-                    "text": text,
-                    "source_url": r["url"],
-                }],
-            }],
+            "type_label": f"全会議 > 本会議 > {ttype}",
+            "schedules": schedules,
         }
         council_file.write_text(
             json.dumps(council_data, ensure_ascii=False, indent=2),
@@ -263,12 +372,11 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
             "name": name,
             "year": str(year),
             "japanese_year": era_str(year),
-            "type_label": f"全会議 > 本会議 > {r['type']}",
+            "type_label": f"全会議 > 本会議 > {ttype}",
             "file": f"{council_id}.json",
-            "schedule_count": 1,
+            "schedule_count": len(items),
         }
         saved += 1
-        time.sleep(REQUEST_INTERVAL)
 
     # index.json 保存
     index_list = sorted(
