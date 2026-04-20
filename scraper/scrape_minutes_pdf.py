@@ -83,6 +83,18 @@ PDF_CONFIGS: dict[str, dict] = {
         "sort_groups": ["day"],
         "link_text_format": "第{day}日",
     },
+    "mukawa": {
+        "name": "むかわ町",
+        "index_url": "http://www.town.mukawa.lg.jp/2872.htm",
+        # 戦略: ファイル名先頭に yyyymmdd、後段にR年・回数・種別
+        # 例: 20240311-R06-1teirei.pdf / 20220616-17-R04-2teirei.pdf
+        # 「rinji」「rinnji」の揺れあり。日付範囲 (-17) は optional で吸収
+        "strategy": "filename_pattern",
+        "filename_regex": r"(?P<yyyy>\d{4})(?P<mm>\d{2})(?P<dd>\d{2})(?:-\d+)?-[Rr]\d+-(?P<seq>\d+)(?P<t>teirei|rinnji|rinji)\.pdf",
+        "type_map": {"teirei": "定例会", "rinji": "臨時会", "rinnji": "臨時会"},
+        "sort_groups": ["mm", "dd"],
+        "link_text_format": "{mm:02d}月{dd:02d}日",
+    },
 }
 
 TYPE_FLAGS = {
@@ -186,11 +198,16 @@ def extract_pdf_links_by_html_sections(
 
 
 def extract_pdf_links_by_filename(cfg: dict) -> list[dict]:
-    """ファイル名パターンから年度・種別・回数・順序情報を抽出する戦略。"""
+    """ファイル名パターンから年度・種別・回数・順序情報を抽出する戦略。
+
+    年の取り方:
+      - regex中に (?P<yyyy>\\d{4}) があれば西暦直読み
+      - そうでなければ cfg["era_base"] + (?P<ey>\\d+)
+    """
     r = requests.get(cfg["index_url"], timeout=30, headers=HEADERS)
     r.raise_for_status()
     pattern = re.compile(cfg["filename_regex"], re.I)
-    era_base = cfg["era_base"]
+    era_base = cfg.get("era_base")
     type_map = cfg["type_map"]
     sort_groups = cfg.get("sort_groups", [])
     link_text_format = cfg.get("link_text_format")
@@ -208,7 +225,12 @@ def extract_pdf_links_by_filename(cfg: dict) -> list[dict]:
         if not pm:
             continue
         gd = pm.groupdict()
-        year = era_base + int(gd["ey"])
+        if gd.get("yyyy"):
+            year = int(gd["yyyy"])
+        elif gd.get("ey") is not None and era_base is not None:
+            year = era_base + int(gd["ey"])
+        else:
+            continue
         seq = int(gd.get("seq") or 0) or None
         ttype = type_map.get((gd.get("t") or "").lower())
         if not ttype:
