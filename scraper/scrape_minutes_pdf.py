@@ -160,6 +160,13 @@ PDF_CONFIGS: dict[str, dict] = {
             ],
         },
     },
+    "makubetsu": {
+        "name": "幕別町",
+        # 1ページに全年度、h2=令和N年の下にul/li/a (「第1回臨時会【1月16日開催】」)
+        "strategy": "linktext_pattern",
+        "year_tag": "h2",
+        "index_urls": {None: "https://www.town.makubetsu.lg.jp/gikai/hongikai/gikaikaigiroku/1898.html"},
+    },
     "hiroo": {
         "name": "広尾町",
         # 年度サブディレクトリ、リンクテキストに全情報
@@ -486,15 +493,68 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
     リンクテキストから 年 (令和N年) / 回 (第N回) / 種別 (定例会|臨時会) を抽出。
     年は index_urls の key (西暦) を優先、未ヒット時のみリンクテキストから。
 
+    cfg["year_tag"] が指定されている場合は、1ページ内で year_tag 見出し
+    （例: h2「令和7年」）が現れるたびに year を切り替える（makubetsu向け）。
+    このモードでは index_urls は {None: [url...]} の形式で1ページのみ指定。
+
     例:
       setana: 「令和７年第１回定例会（３月３日～４月３日）.pdf」
       oketo:  「第2回定例会（令和7年3月10日～18日開催）」
+      makubetsu: h2=令和7年, 直下ul/li/a=「第1回臨時会【1月16日開催】」
     """
     era_re = re.compile(r"令和(\d+)年")
     seq_re = re.compile(r"第\s*(\d+)\s*回")
     type_re = re.compile(r"(定例会|臨時会)")
+    year_tag = cfg.get("year_tag")
 
     records: list[dict] = []
+
+    if year_tag:
+        # 単一ページ内 year_tag (h2等) 切替モード
+        urls = cfg["index_urls"].get(None) or cfg["index_urls"].get("page")
+        if isinstance(urls, str):
+            urls = [urls]
+        tag_re = re.compile(
+            r"<(?P<tag>" + year_tag + r"|a)(?P<attrs>[^>]*)>(?P<text>[\s\S]*?)</(?P=tag)>",
+            re.I,
+        )
+        for url in urls:
+            r = requests.get(url, timeout=30, headers=HEADERS)
+            r.encoding = r.apparent_encoding or "utf-8"
+            r.raise_for_status()
+            current_year = None
+            for m in tag_re.finditer(r.text):
+                tag = m.group("tag").lower()
+                raw_inner = m.group("text")
+                inner = re.sub(r"<[^>]+>", "", raw_inner).strip()
+                if tag == year_tag.lower():
+                    em = era_re.search(_zen_to_half(inner))
+                    current_year = (2018 + int(em.group(1))) if em else None
+                    continue
+                if tag == "a" and current_year in years:
+                    attrs = m.group("attrs")
+                    href_m = HREF_RE.search(attrs)
+                    if not href_m:
+                        continue
+                    href = href_m.group(1)
+                    if ".pdf" not in href.lower():
+                        continue
+                    text = _zen_to_half(re.sub(r"\s+", " ", inner))
+                    tm = type_re.search(text)
+                    sm = seq_re.search(text)
+                    if not tm or not sm:
+                        continue
+                    records.append({
+                        "type": tm.group(1),
+                        "year": current_year,
+                        "seq": int(sm.group(1)),
+                        "filename": href.rsplit("/", 1)[-1],
+                        "link_text": text[:60],
+                        "url": urljoin(url, href),
+                        "sort_key": (href,),
+                    })
+        return records
+
     for year, urls in cfg["index_urls"].items():
         if year not in years:
             continue
