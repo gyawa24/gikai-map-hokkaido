@@ -99,6 +99,7 @@ export default async function CitySessionPage({
 
   const members = getMembers(city);
   const hasContent = session.segments.length > 0;
+  const cityName = municipality.name;
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -145,7 +146,15 @@ export default async function CitySessionPage({
             </span>
           </h3>
           {session.segments.map((seg) => (
-            <TranscriptSegment key={seg.index} seg={seg} members={members} />
+            <TranscriptSegment
+              key={seg.index}
+              seg={seg}
+              members={members}
+              city={city}
+              sessionId={id}
+              cityName={cityName}
+              sessionTitle={session.title}
+            />
           ))}
           {session.generated_at && (
             <p className="text-xs text-[#718096] text-right">

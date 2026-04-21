@@ -1,17 +1,102 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { SessionSegment } from "@/types/session";
 import type { Member } from "@/types/member";
 import SegmentDetail from "./SegmentDetail";
 import { resolveSpeaker } from "@/lib/memberUtils";
 
-export default function TranscriptSegment({ seg, members = [] }: { seg: SessionSegment; members?: Member[] }) {
+type Props = {
+  seg: SessionSegment;
+  members?: Member[];
+  city: string;
+  sessionId: string;
+  cityName: string;
+  sessionTitle: string;
+};
+
+export default function TranscriptSegment({
+  seg,
+  members = [],
+  city,
+  sessionId,
+  cityName,
+  sessionTitle,
+}: Props) {
   const [open, setOpen] = useState(false);
   const [bodyOpen, setBodyOpen] = useState(false);
+  const [copied, setCopied] = useState<"link" | "cite" | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
+  const anchorId = `seg-${seg.index}`;
+  const speakerLabel = seg.detail ? resolveSpeaker(seg.detail.speaker, members) : seg.label;
+
+  // #seg-N で直接来たら該当セグメントを開いてスクロール
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (window.location.hash === `#${anchorId}`) {
+      setBodyOpen(true);
+      requestAnimationFrame(() => {
+        ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }, [anchorId]);
+
+  const buildPermalink = () => {
+    if (typeof window === "undefined") return "";
+    // 実際のページ URL に #seg-N を付与
+    return `${window.location.origin}/${city}/sessions/${sessionId}#${anchorId}`;
+  };
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(buildPermalink());
+      setCopied("link");
+      setTimeout(() => setCopied(null), 1800);
+    } catch {
+      /* noop */
+    }
+  };
+
+  const handleCopyCitation = async () => {
+    const body = seg.summary ?? seg.detail?.overview ?? "";
+    if (!body) return;
+    const header = `${speakerLabel}（${cityName}議会 ${sessionTitle} ${seg.label}）`;
+    const block = `${header}\n\n${body}\n\n出典: ${buildPermalink()}`;
+    try {
+      await navigator.clipboard.writeText(block);
+      setCopied("cite");
+      setTimeout(() => setCopied(null), 1800);
+    } catch {
+      /* noop */
+    }
+  };
+
+  const buildShareText = () => {
+    const topicLabel =
+      seg.detail?.topics?.slice(0, 2).map((t) => t.theme).join("・") ??
+      seg.topics?.slice(0, 2).join("・") ??
+      "";
+    const parts = [
+      `【${cityName}議会】${speakerLabel}`,
+      topicLabel ? `テーマ: ${topicLabel}` : "",
+      sessionTitle,
+    ].filter(Boolean);
+    return parts.join(" / ");
+  };
+
+  const xShareHref = (() => {
+    const url = buildPermalink();
+    if (!url) return "#";
+    const text = buildShareText();
+    return `https://x.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+  })();
 
   return (
-    <div className="bg-white rounded-lg border border-[#CBD5E0] overflow-hidden">
+    <div
+      id={anchorId}
+      ref={ref}
+      className="bg-white rounded-lg border border-[#CBD5E0] overflow-hidden scroll-mt-20"
+    >
       {/* セグメントヘッダー（タップで折りたたみ） */}
       <button
         onClick={() => setBodyOpen((v) => !v)}
@@ -25,7 +110,7 @@ export default function TranscriptSegment({ seg, members = [] }: { seg: SessionS
             <span className="text-sm text-[#718096]">{seg.start_time}〜</span>
           )}
           {seg.detail && (
-            <span className="text-xs text-[#718096]">{resolveSpeaker(seg.detail.speaker, members)}</span>
+            <span className="text-xs text-[#718096]">{speakerLabel}</span>
           )}
         </div>
         <svg
@@ -88,6 +173,49 @@ export default function TranscriptSegment({ seg, members = [] }: { seg: SessionS
               )}
             </div>
           )}
+
+          {/* 4. シェア動線 */}
+          <div className="flex items-center justify-end gap-1 pt-1 border-t border-[#E2E8F0]">
+            <button
+              onClick={handleCopyLink}
+              className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-1.5 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+              title="この発言へのリンクをコピー"
+              aria-label="この発言へのリンクをコピー"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+              </svg>
+              <span>{copied === "link" ? "コピー済" : "リンク"}</span>
+            </button>
+            {(seg.summary || seg.detail?.overview) && (
+              <button
+                onClick={handleCopyCitation}
+                className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-1.5 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                title="出典付きで本文をコピー（議員の発信用）"
+                aria-label="出典付きで本文をコピー"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+                <span>{copied === "cite" ? "コピー済" : "引用"}</span>
+              </button>
+            )}
+            <a
+              href={xShareHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-1.5 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+              title="X（旧Twitter）で共有"
+              aria-label="Xで共有"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              <span>Xでシェア</span>
+            </a>
+          </div>
         </div>
       )}
     </div>
