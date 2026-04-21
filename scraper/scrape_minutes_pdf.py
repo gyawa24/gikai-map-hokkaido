@@ -171,6 +171,16 @@ PDF_CONFIGS: dict[str, dict] = {
         "link_text_format": "第{day}日",
         "index_url": "https://www.city.otaru.lg.jp/docs/2020113000634/",
     },
+    "takikawa": {
+        "name": "滝川市",
+        # h2=council見出し「第N回定例会/臨時会」、直下のPDF=schedule（「3月3日」等）
+        # h1="令和7年本会議会議録" (1年1URL)
+        "strategy": "multi_index_html",
+        "index_urls": {
+            2025: "https://www.city.takikawa.lg.jp/page/18437.html",
+        },
+        "council_tag": "h2",
+    },
     "taiki": {
         "name": "大樹町",
         # ファイル名 R7Teirei1.pdf, R8Rinji1.pdf (CamelCase版)
@@ -750,6 +760,7 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
         if year not in years:
             continue
         r = requests.get(url, timeout=30, headers=HEADERS)
+        r.encoding = r.apparent_encoding or "utf-8"
         r.raise_for_status()
         html = r.text
 
