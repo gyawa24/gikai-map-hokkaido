@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Serverless Function の 250MB 制限対策。
+  // [city]/minutes/[id] 等の重量 [id] ページは force-static で静的化済なので
+  // そもそも function 化されない。残る dynamic 系 function から minutes/sessions
+  // の重いファイルを除外する。
   outputFileTracingExcludes: {
     "/api/search": [
       "./data/*/???.json",
@@ -10,6 +14,12 @@ const nextConfig: NextConfig = {
       "./data/*/comprehensive_plan.json",
       "./data/*/*_activity.json",
       "./data/*/index.json",
+    ],
+    // 以下は「本文JSONを必要としない」ルート一般に適用
+    "**": [
+      "./data/*/minutes/*.json",
+      "./data/*/minutes/enriched/*.json",
+      "./data/*/sessions/*.json",
     ],
     "/**/themes": [
       "./data/*/minutes/**/*",
@@ -24,6 +34,7 @@ const nextConfig: NextConfig = {
       "./data/*/plan_activity.json",
       "./data/*/index.json",
     ],
+    "/api/og-segment": ["./data/**/*.json"],
   },
   async headers() {
     return [

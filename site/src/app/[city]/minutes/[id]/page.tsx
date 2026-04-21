@@ -7,6 +7,10 @@ import type { MinutesSession, MinutesIndexItem, MinutesEnriched } from "@/types/
 import MinutesDetailClient from "@/components/MinutesDetailClient";
 import { getMunicipality } from "@/lib/municipalities";
 
+// ビルド時に全パラメータを生成し、サーバーレス関数を作らない（バンドルサイズ制限対策）
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 function getSession(city: string, id: string): MinutesSession | null {
   const fp = path.join(process.cwd(), "data", city, "minutes", `${id}.json`);
   try {

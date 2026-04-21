@@ -7,6 +7,9 @@ import type { Member } from "@/types/member";
 import TranscriptSegment from "@/components/TranscriptSegment";
 import { getMunicipality } from "@/lib/municipalities";
 
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 function getSession(city: string, id: string): Session | null {
   const fp = path.join(process.cwd(), "data", city, "sessions", `${id}.json`);
   try {

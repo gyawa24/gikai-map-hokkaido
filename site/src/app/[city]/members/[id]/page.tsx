@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import { getMunicipality } from "@/lib/municipalities";
 
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 function getMembers(city: string): Member[] {
   try {
     const fp = path.join(process.cwd(), "data", city, "members.json");
