@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 import CityHeaderServer from "@/components/CityHeaderServer";
+import { getSearchIndexGeneratedAt, formatJaDate } from "@/lib/dataFreshness";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -35,6 +38,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const updatedAt = getSearchIndexGeneratedAt();
+  const updatedLabel = formatJaDate(updatedAt);
   return (
     <html lang="ja">
       <body className="min-h-screen flex flex-col antialiased">
@@ -88,14 +93,19 @@ export default function RootLayout({
             <p className="text-xs text-blue-300 mb-2">
               本サイトは非公式の情報サイトです。公式情報は各市議会の公式サイトでご確認ください。
             </p>
+            {updatedLabel && (
+              <p className="text-xs text-blue-300 mb-2">
+                データ最終更新: {updatedLabel} 時点（以降の議事録は各市議会公式サイトをご覧ください）
+              </p>
+            )}
             <div className="text-xs text-blue-400 space-y-1">
-              <p>制作・運営: 小川陽平（千歳市議会議員・1990年生まれ）</p>
+              <p>運営: 株式会社オガワヤ（代表: 小川陽平 / 千歳市議会議員）</p>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
                 <a
-                  href="mailto:yohei@ogawaya.info"
+                  href="mailto:ogawayohei.hkd@gmail.com"
                   className="hover:text-white transition-colors underline decoration-blue-500"
                 >
-                  yohei@ogawaya.info
+                  ogawayohei.hkd@gmail.com
                 </a>
                 <a
                   href="https://x.com/yoheiogawa_DPFP"
@@ -105,11 +115,25 @@ export default function RootLayout({
                 >
                   X @yoheiogawa_DPFP
                 </a>
-                <span>お問い合わせはメールまたはDMにて</span>
+              </div>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 pt-1">
+                <Link
+                  href="/privacy"
+                  className="hover:text-white transition-colors underline decoration-blue-500"
+                >
+                  プライバシーポリシー
+                </Link>
+                <Link
+                  href="/terms"
+                  className="hover:text-white transition-colors underline decoration-blue-500"
+                >
+                  利用規約
+                </Link>
               </div>
             </div>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );

@@ -60,6 +60,27 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
+    // Content Security Policy
+    // - Next.js は hydration 用 inline script を出すため 'unsafe-inline' を許容
+    //   （nonce 化は複雑なので将来課題）
+    // - Tailwind で生成される inline style 用に style-src にも 'unsafe-inline'
+    // - 議員写真は各市公式サイトから配信されるため img-src は https: 全体を許可
+    // - 会議録ページで YouTube 埋込を行うため frame-src に youtube.com
+    // - Vercel Web Analytics のビーコン送信のため vitals.vercel-insights.com
+    const csp = [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: blob: https:",
+      "font-src 'self' data:",
+      "connect-src 'self' https://vitals.vercel-insights.com https://va.vercel-scripts.com",
+      "frame-src https://www.youtube.com https://www.youtube-nocookie.com",
+      "object-src 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
+      "frame-ancestors 'self'",
+    ].join("; ");
+
     return [
       {
         source: "/:path*",
@@ -67,6 +88,15 @@ const nextConfig: NextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Content-Security-Policy", value: csp },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+          },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
         ],
       },
     ];
