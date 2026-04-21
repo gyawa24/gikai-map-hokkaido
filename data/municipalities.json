@@ -406,11 +406,11 @@
     "furigana": "ゆうばりし",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "議事録のオンライン公開なし"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "bibai",
@@ -448,11 +448,11 @@
     "furigana": "みかさし",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "議事録のオンライン公開なし"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "takikawa",
@@ -476,11 +476,11 @@
     "furigana": "すながわし",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "令和元年までで以降未公開"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "utashinai",

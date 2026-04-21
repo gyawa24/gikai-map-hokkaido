@@ -171,6 +171,45 @@ PDF_CONFIGS: dict[str, dict] = {
         "link_text_format": "第{day}日",
         "index_url": "https://www.city.otaru.lg.jp/docs/2020113000634/",
     },
+    "yubari": {
+        "name": "夕張市",
+        # /site/gikai/6897.html (R7) に「第1回定例市議会 3月5日」等のPDFがフラット並び
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.city.yubari.lg.jp/site/gikai/6897.html",
+            2024: "https://www.city.yubari.lg.jp/site/gikai/3350.html",
+        },
+    },
+    "mikasa": {
+        "name": "三笠市",
+        # /assembly/detail/00016223.html (R7) に「会議録 令和7年 第4回定例会 12月18日」
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.city.mikasa.hokkaido.jp/assembly/detail/00016223.html",
+            2024: "https://www.city.mikasa.hokkaido.jp/assembly/detail/00014600.html",
+        },
+    },
+    "sunagawa": {
+        "name": "砂川市",
+        # /kaigiroku/2025/index.html に council URL リスト、詳細ページ内に 第N号PDF
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2025: "https://www.city.sunagawa.hokkaido.jp/shisei/shigikai/kaigiroku/2025/index.html",
+            2024: "https://www.city.sunagawa.hokkaido.jp/shisei/shigikai/kaigiroku/2024/index.html",
+        },
+        "pdf_filter": ["dai", "第", "mokuji", "gou", "号"],  # PDFファイル名・テキストに含まれる
+    },
+    "bibai": {
+        "name": "美唄市",
+        # /site/gikai/24889.html (R7) から council サブページ (/24887.html等)
+        # サブページ内に「目次」「1月30日」形式のPDF
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2025: "https://www.city.bibai.hokkaido.jp/site/gikai/24889.html",
+            2024: "https://www.city.bibai.hokkaido.jp/site/gikai/20254.html",
+        },
+        "pdf_filter": ["月", "目次", "号"],
+    },
     "abira": {
         "name": "安平町",
         # indexページに「令和N年第N回安平町議会定例会/臨時会」のリンク、
@@ -678,7 +717,8 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
     """
     era_re = re.compile(r"令和(\d+)年")
     seq_re = re.compile(r"第\s*(\d+)\s*回")
-    type_re = re.compile(r"(定例会|臨時会)")
+    # 「定例会」「臨時会」だけでなく「定例市議会」「臨時町議会」等にも対応
+    type_re = re.compile(r"(定例|臨時)(?:[^、\n]*?)会")
     year_tag = cfg.get("year_tag")
 
     records: list[dict] = []
@@ -724,7 +764,7 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
                     if not tm or not sm:
                         continue
                     records.append({
-                        "type": tm.group(1),
+                        "type": f"{tm.group(1)}会",
                         "year": current_year,
                         "seq": int(sm.group(1)),
                         "filename": href.rsplit("/", 1)[-1],
@@ -767,7 +807,7 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
                 if any(r["filename"] == fn for r in records):
                     continue
                 records.append({
-                    "type": tm.group(1),
+                    "type": f"{tm.group(1)}会",
                     "year": year,
                     "seq": int(sm.group(1)),
                     "filename": fn,
@@ -990,7 +1030,7 @@ def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list
     """
     era_re = re.compile(r"令和(\d+)年")
     seq_re = re.compile(r"第\s*(\d+)\s*回")
-    type_re = re.compile(r"(定例会|臨時会)")
+    type_re = re.compile(r"(定例|臨時)(?:[^、\n]*?)会")
     schedule_re = re.compile(r"第(\d+)号")
     pdf_filter = cfg.get("pdf_filter", ["会議録", "kaigiroku"])
     if isinstance(pdf_filter, str):
@@ -1032,7 +1072,7 @@ def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list
                     "url": full,
                     "year": actual_year,
                     "seq": int(sm.group(1)),
-                    "type": tm.group(1),
+                    "type": f"{tm.group(1)}会",
                     "title": text[:60],
                 })
 
