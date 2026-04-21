@@ -159,6 +159,20 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.city.furano.hokkaido.jp/shigikai/docs/541456.html",
         },
     },
+    "shibetsu": {
+        "name": "士別市",
+        # 年度別ページ(R7=6029.html等)に R7-1tei-1.pdf 等のPDFが並ぶ
+        "strategy": "filename_pattern",
+        "filename_regex": r"R(?P<ey>\d+)-(?P<seq>\d+)(?P<t>tei|rinn)([-_](?P<day>\d+))?\.pdf",
+        "type_map": {"tei": "定例会", "rinn": "臨時会"},
+        "era_base": 2018,
+        "sort_groups": ["day"],
+        "link_text_format": "第{day}日",
+        "index_urls": {
+            2025: "https://www.city.shibetsu.lg.jp/gyoseisaito/shiseijoho/gikai/1/kaigirokukekka/6029.html",
+            2024: "https://www.city.shibetsu.lg.jp/gyoseisaito/shiseijoho/gikai/1/kaigirokukekka/5304.html",
+        },
+    },
     "monbetsu": {
         "name": "紋別市",
         "strategy": "category_drilldown",
@@ -389,8 +403,14 @@ def extract_pdf_links_by_filename(cfg: dict) -> list[dict]:
       - regex中に (?P<yyyy>\\d{4}) があれば西暦直読み
       - そうでなければ cfg["era_base"] + (?P<ey>\\d+)
     """
-    r = requests.get(cfg["index_url"], timeout=30, headers=HEADERS)
-    r.raise_for_status()
+    # index_url（単一） or index_urls（dict: year -> url[s]）の両対応
+    if "index_urls" in cfg:
+        urls: list[str] = []
+        for _y, u in cfg["index_urls"].items():
+            urls.extend(u if isinstance(u, list) else [u])
+    else:
+        urls = [cfg["index_url"]]
+
     pattern = re.compile(cfg["filename_regex"], re.I)
     era_base = cfg.get("era_base")
     type_map = cfg["type_map"]
@@ -399,9 +419,12 @@ def extract_pdf_links_by_filename(cfg: dict) -> list[dict]:
 
     records: list[dict] = []
     seen = set()
-    for m in re.finditer(r'href=["\']([^"\']+\.pdf[^"\']*)["\']', r.text, re.I):
+    for base_url in urls:
+     r = requests.get(base_url, timeout=30, headers=HEADERS)
+     r.raise_for_status()
+     for m in re.finditer(r'href=["\']([^"\']+\.pdf[^"\']*)["\']', r.text, re.I):
         href = m.group(1)
-        full_url = urljoin(cfg["index_url"], href)
+        full_url = urljoin(base_url, href)
         fn = href.rsplit("/", 1)[-1]
         if fn in seen:
             continue
