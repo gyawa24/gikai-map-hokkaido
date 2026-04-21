@@ -46,11 +46,22 @@ const ALL_CITIES: { id: string; name: string }[] = [
   { id: "wakkanai",      name: "稚内市" },
 ];
 
+type SourceFilter = "all" | "minutes" | "session" | "decision";
+
+const SOURCE_FILTER_LABELS: Record<SourceFilter, string> = {
+  all: "すべて",
+  minutes: "議事録",
+  session: "会議録速報",
+  decision: "議決結果",
+};
+
 function SearchClientInner() {
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
   const [tab, setTab] = useState<"sessions" | "members">("sessions");
   const [cityFilter, setCityFilter] = useState<string>("all");
+  const [sourceFilter, setSourceFilter] = useState<SourceFilter>("all");
+  const [factionFilter, setFactionFilter] = useState<string>("all");
   const [sessionResults, setSessionResults] = useState<SessionHit[]>([]);
   const [memberResults, setMemberResults] = useState<MemberHit[]>([]);
   const [loading, setLoading] = useState(false);
@@ -59,6 +70,8 @@ function SearchClientInner() {
   useEffect(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
     setCityFilter("all");
+    setSourceFilter("all");
+    setFactionFilter("all");
     const q = query.trim();
     if (!q) {
       setSessionResults([]);
@@ -84,9 +97,24 @@ function SearchClientInner() {
 
   const tokens = tokenize(query);
   const hasQuery = query.trim().length > 0;
-  const filteredSessions = cityFilter === "all" ? sessionResults : sessionResults.filter((r) => r.city === cityFilter);
-  const filteredMembers = cityFilter === "all" ? memberResults : memberResults.filter((m) => m.city === cityFilter);
+
+  const sessionsAfterCity = cityFilter === "all" ? sessionResults : sessionResults.filter((r) => r.city === cityFilter);
+  const filteredSessions = sourceFilter === "all"
+    ? sessionsAfterCity
+    : sessionsAfterCity.filter((r) => r.sourceType === sourceFilter);
+
+  const membersAfterCity = cityFilter === "all" ? memberResults : memberResults.filter((m) => m.city === cityFilter);
+  const filteredMembers = factionFilter === "all"
+    ? membersAfterCity
+    : membersAfterCity.filter((m) => (m.faction || "無所属") === factionFilter);
+
   const totalResults = tab === "sessions" ? filteredSessions.length : filteredMembers.length;
+
+  // タブ切替時のフィルタ要件用に、「市フィルタ後の元データ」から集計
+  const availableSourceTypes = new Set(sessionsAfterCity.map((r) => r.sourceType));
+  const availableFactions = Array.from(
+    new Set(membersAfterCity.map((m) => m.faction || "無所属"))
+  ).filter(Boolean).sort();
 
   return (
     <div className="flex flex-col gap-4">
@@ -167,6 +195,65 @@ function SearchClientInner() {
           </button>
         ))}
       </div>
+
+      {/* 種別フィルタ (議会記録タブのみ) */}
+      {tab === "sessions" && hasQuery && availableSourceTypes.size > 1 && (
+        <div className="flex flex-wrap gap-1.5">
+          {(["all", "minutes", "session", "decision"] as SourceFilter[])
+            .filter((s) => s === "all" || availableSourceTypes.has(s))
+            .map((s) => (
+              <button
+                key={s}
+                onClick={() => setSourceFilter(s)}
+                className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+                  sourceFilter === s
+                    ? "bg-[#2A5298] text-white border-[#2A5298]"
+                    : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#2A5298] hover:text-[#2A5298]"
+                }`}
+              >
+                {SOURCE_FILTER_LABELS[s]}
+                <span className="ml-1 opacity-75">
+                  {s === "all"
+                    ? sessionsAfterCity.length
+                    : sessionsAfterCity.filter((r) => r.sourceType === s).length}
+                </span>
+              </button>
+            ))}
+        </div>
+      )}
+
+      {/* 会派フィルタ (議員タブのみ) */}
+      {tab === "members" && hasQuery && availableFactions.length > 1 && (
+        <div className="flex flex-wrap gap-1.5">
+          <button
+            onClick={() => setFactionFilter("all")}
+            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+              factionFilter === "all"
+                ? "bg-[#2A5298] text-white border-[#2A5298]"
+                : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#2A5298] hover:text-[#2A5298]"
+            }`}
+          >
+            すべての会派
+            <span className="ml-1 opacity-75">{membersAfterCity.length}</span>
+          </button>
+          {availableFactions.map((f) => (
+            <button
+              key={f}
+              onClick={() => setFactionFilter(factionFilter === f ? "all" : f)}
+              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+                factionFilter === f
+                  ? "bg-[#2A5298] text-white border-[#2A5298]"
+                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#2A5298] hover:text-[#2A5298]"
+              }`}
+            >
+              {f}
+              <span className="ml-1 opacity-75">
+                {membersAfterCity.filter((m) => (m.faction || "無所属") === f).length}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* 状態表示 */}
       {!hasQuery && (
