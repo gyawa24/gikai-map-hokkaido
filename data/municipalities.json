@@ -2025,11 +2025,11 @@
     "furigana": "しかおいちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "議案資料のみ、会議録本文は未公開"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "shintoku",

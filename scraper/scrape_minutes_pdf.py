@@ -289,6 +289,25 @@ PDF_CONFIGS: dict[str, dict] = {
         "strategy": "linktext_pattern",
         "index_url": "https://www.town.tsubetsu.hokkaido.jp/choseijoho/tsubetsugikai/2/1788.html",
     },
+    "shikaoi": {
+        "name": "鹿追町",
+        # ファイル名 20251209giziroku.pdf / 20251028rinzi.pdf / 20250918kessan.pdf 形式
+        # 月を seq として扱い、同月のPDFを同一councilに集約
+        "strategy": "filename_pattern",
+        "filename_regex": r"(?P<yyyy>\d{4})(?P<seq>\d{2})(?P<dd>\d{2})(?P<t>giziroku|rinzi|kessan|kaigiroku|yosansinsa)\w*\.pdf",
+        "type_map": {
+            "giziroku": "定例会", "kaigiroku": "定例会",
+            "rinzi": "臨時会",
+            "kessan": "決算特別委員会",
+            "yosansinsa": "予算審査特別委員会",
+        },
+        "sort_groups": ["dd"],
+        "link_text_format": "{seq:02d}月{dd:02d}日",
+        "index_urls": {
+            2025: "https://www.town.shikaoi.lg.jp/gikai/gijiroku/R7/",
+            2024: "https://www.town.shikaoi.lg.jp/gikai/gijiroku/R6/",
+        },
+    },
     "shibetsu": {
         "name": "士別市",
         # 年度別ページ(R7=6029.html等)に R7-1tei-1.pdf 等のPDFが並ぶ
