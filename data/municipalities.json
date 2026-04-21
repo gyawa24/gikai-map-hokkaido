@@ -420,11 +420,11 @@
     "furigana": "びばいし",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "議決結果（賛否一覧）のみ"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "akabira",

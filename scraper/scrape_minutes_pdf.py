@@ -1062,9 +1062,15 @@ def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list
                 em = era_re.search(text)
                 tm = type_re.search(text)
                 sm = seq_re.search(text)
-                if not (em and tm and sm):
+                # 年度がリンクテキストに無い場合、index_urls のkey yearをフォールバック
+                if not (tm and sm):
                     continue
-                actual_year = 2018 + int(em.group(1))
+                if em:
+                    actual_year = 2018 + int(em.group(1))
+                elif isinstance(year, int):
+                    actual_year = year
+                else:
+                    continue
                 if actual_year not in years:
                     continue
                 full = urljoin(url, href)
