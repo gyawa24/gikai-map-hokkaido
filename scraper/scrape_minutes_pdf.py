@@ -159,6 +159,20 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.city.furano.hokkaido.jp/shigikai/docs/541456.html",
         },
     },
+    "monbetsu": {
+        "name": "紋別市",
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2025: [
+                "https://mombetsu.jp/gikai/minutes/?category=233",  # 令和7年定例会
+                "https://mombetsu.jp/gikai/minutes/?category=234",  # 令和7年臨時会
+            ],
+            2024: [
+                "https://mombetsu.jp/gikai/minutes/?category=208",
+                "https://mombetsu.jp/gikai/minutes/?category=209",
+            ],
+        },
+    },
     # 以下は v2 で newly_classifiable と判定されたが手動検証で議事録本文ではなかった
     # ため対応保留:
     #   koshimizu/nakashibetsu/kaminokuni: 別カテゴリの記事だった（誤検出）
