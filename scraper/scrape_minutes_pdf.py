@@ -171,6 +171,18 @@ PDF_CONFIGS: dict[str, dict] = {
         "link_text_format": "第{day}日",
         "index_url": "https://www.city.otaru.lg.jp/docs/2020113000634/",
     },
+    "shiraoi": {
+        "name": "白老町",
+        # index /docs/6603.html のリンクテキストは「会議録へ」のみで council情報なし
+        # 詳細ページの H1 「令和7年白老町議会定例会3月会議」から year/type/月会議 を抽出
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2025: "https://www.town.shiraoi.hokkaido.jp/docs/6603.html",
+            2024: "https://www.town.shiraoi.hokkaido.jp/docs/5585.html",
+        },
+        "use_detail_title": True,
+        "pdf_filter": ["会議", "号"],
+    },
     "yubari": {
         "name": "夕張市",
         # /site/gikai/6897.html (R7) に「第1回定例市議会 3月5日」等のPDFがフラット並び
@@ -1031,8 +1043,12 @@ def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list
     era_re = re.compile(r"令和(\d+)年")
     seq_re = re.compile(r"第\s*(\d+)\s*回")
     type_re = re.compile(r"(定例|臨時)(?:[^、\n]*?)会")
+    # 「M月会議」形式（白老町等） — M月 を seq として扱う
+    month_kaigi_re = re.compile(r"(\d+)\s*月会議")
     schedule_re = re.compile(r"第(\d+)号")
     pdf_filter = cfg.get("pdf_filter", ["会議録", "kaigiroku"])
+    # 詳細ページのH1/titleから council情報を抽出するモード（shiraoi等、リンクテキストに情報がない場合）
+    use_detail_title = cfg.get("use_detail_title", False)
     if isinstance(pdf_filter, str):
         pdf_filter = [pdf_filter]
 
@@ -1059,10 +1075,42 @@ def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list
                 if href.startswith("#") or href.startswith("javascript:"):
                     continue
                 text = _zen_to_half(re.sub(r"<[^>]+>", "", m.group(2)).strip())
+                full = urljoin(url, href)
+
+                if use_detail_title:
+                    # 詳細ページを一度fetchしてH1/titleから council情報を取る（shiraoi等）
+                    if href.startswith(url) or href.startswith("/") or href.startswith("http"):
+                        if not any(d["url"] == full for d in detail_targets):
+                            try:
+                                pr = requests.get(full, timeout=15, headers=HEADERS)
+                                pr.encoding = pr.apparent_encoding or "utf-8"
+                                title_m = re.search(r"<h1[^>]*>([\s\S]{1,200}?)</h1>", pr.text, re.I)
+                                title_text = _zen_to_half(re.sub(r"<[^>]+>", "", title_m.group(1)).strip()) if title_m else ""
+                            except Exception:
+                                title_text = ""
+                            if not title_text:
+                                continue
+                            em = era_re.search(title_text)
+                            tm = type_re.search(title_text)
+                            sm = seq_re.search(title_text) or month_kaigi_re.search(title_text)
+                            if not (em and tm and sm):
+                                continue
+                            actual_year = 2018 + int(em.group(1))
+                            if actual_year not in years:
+                                continue
+                            detail_targets.append({
+                                "url": full,
+                                "year": actual_year,
+                                "seq": int(sm.group(1)),
+                                "type": f"{tm.group(1)}会",
+                                "title": title_text[:80],
+                            })
+                            time.sleep(0.2)
+                    continue
+
                 em = era_re.search(text)
                 tm = type_re.search(text)
                 sm = seq_re.search(text)
-                # 年度がリンクテキストに無い場合、index_urls のkey yearをフォールバック
                 if not (tm and sm):
                     continue
                 if em:
@@ -1073,7 +1121,6 @@ def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list
                     continue
                 if actual_year not in years:
                     continue
-                full = urljoin(url, href)
                 detail_targets.append({
                     "url": full,
                     "year": actual_year,

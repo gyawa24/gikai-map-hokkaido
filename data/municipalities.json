@@ -1006,11 +1006,11 @@
     "furigana": "しらおいちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "通告書類のみ"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "atsuma",
