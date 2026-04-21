@@ -397,5 +397,12 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  return NextResponse.json({ sessionResults: sessionResults.slice(0, 50), memberResults: memberResults.slice(0, 50) });
+  const MAX_RESULTS = 200;
+  return NextResponse.json({
+    sessionResults: sessionResults.slice(0, MAX_RESULTS),
+    memberResults: memberResults.slice(0, MAX_RESULTS),
+    sessionTotal: sessionResults.length,
+    memberTotal: memberResults.length,
+    truncated: sessionResults.length > MAX_RESULTS || memberResults.length > MAX_RESULTS,
+  });
 }

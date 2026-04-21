@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import QRCodeModal from "./QRCodeModal";
 
 type Props = {
   memberName: string;
@@ -22,6 +23,7 @@ export default function MemberShareButtons({
   themes = [],
 }: Props) {
   const [copied, setCopied] = useState(false);
+  const [qrOpen, setQrOpen] = useState(false);
 
   const buildUrl = () => {
     if (typeof window === "undefined") return "";
@@ -58,6 +60,24 @@ export default function MemberShareButtons({
   return (
     <div className="flex items-center justify-end gap-1">
       <button
+        onClick={() => setQrOpen(true)}
+        className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-2 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+        title="この議員ページのQRコードを表示（チラシ・名刺用）"
+        aria-label="QRコードを表示"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <rect x="3" y="3" width="7" height="7" />
+          <rect x="14" y="3" width="7" height="7" />
+          <rect x="3" y="14" width="7" height="7" />
+          <line x1="14" y1="14" x2="14" y2="17" />
+          <line x1="17" y1="14" x2="21" y2="14" />
+          <line x1="14" y1="21" x2="21" y2="21" />
+          <line x1="17" y1="17" x2="21" y2="17" />
+          <line x1="21" y1="17" x2="21" y2="21" />
+        </svg>
+        <span>QRコード</span>
+      </button>
+      <button
         onClick={handleCopyLink}
         className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-2 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
         title="この議員ページのリンクをコピー"
@@ -82,6 +102,14 @@ export default function MemberShareButtons({
         </svg>
         <span>Xでシェア</span>
       </a>
+      {qrOpen && (
+        <QRCodeModal
+          url={buildUrl()}
+          title={`${memberName} 議員ページ`}
+          description={`${cityName}議会 ${memberName} 議員`}
+          onClose={() => setQrOpen(false)}
+        />
+      )}
     </div>
   );
 }

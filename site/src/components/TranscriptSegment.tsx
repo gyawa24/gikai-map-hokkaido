@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import type { SessionSegment } from "@/types/session";
 import type { Member } from "@/types/member";
 import SegmentDetail from "./SegmentDetail";
+import QRCodeModal from "./QRCodeModal";
 import { resolveSpeaker } from "@/lib/memberUtils";
 
 type Props = {
@@ -26,6 +27,7 @@ export default function TranscriptSegment({
   const [open, setOpen] = useState(false);
   const [bodyOpen, setBodyOpen] = useState(false);
   const [copied, setCopied] = useState<"link" | "cite" | null>(null);
+  const [qrOpen, setQrOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const anchorId = `seg-${seg.index}`;
   const speakerLabel = seg.detail ? resolveSpeaker(seg.detail.speaker, members) : seg.label;
@@ -179,6 +181,24 @@ export default function TranscriptSegment({
           {/* 4. シェア動線 */}
           <div className="flex items-center justify-end gap-1 pt-1 border-t border-[#E2E8F0]">
             <button
+              onClick={() => setQrOpen(true)}
+              className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-1.5 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+              title="この発言のQRコードを表示（議会報告書・チラシ用）"
+              aria-label="QRコードを表示"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <line x1="14" y1="14" x2="14" y2="17" />
+                <line x1="17" y1="14" x2="21" y2="14" />
+                <line x1="14" y1="21" x2="21" y2="21" />
+                <line x1="17" y1="17" x2="21" y2="17" />
+                <line x1="21" y1="17" x2="21" y2="21" />
+              </svg>
+              <span>QR</span>
+            </button>
+            <button
               onClick={handleCopyLink}
               className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-1.5 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
               title="この発言へのリンクをコピー"
@@ -219,6 +239,14 @@ export default function TranscriptSegment({
             </a>
           </div>
         </div>
+      )}
+      {qrOpen && (
+        <QRCodeModal
+          url={buildPermalink()}
+          title={`${speakerLabel} の発言`}
+          description={`${cityName}議会 ${sessionTitle} ${seg.label}`}
+          onClose={() => setQrOpen(false)}
+        />
       )}
     </div>
   );

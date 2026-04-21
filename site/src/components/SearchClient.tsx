@@ -65,6 +65,7 @@ function SearchClientInner() {
   const [yearFilter, setYearFilter] = useState<string>("all");
   const [sessionResults, setSessionResults] = useState<SessionHit[]>([]);
   const [memberResults, setMemberResults] = useState<MemberHit[]>([]);
+  const [truncated, setTruncated] = useState(false);
   const [loading, setLoading] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -78,6 +79,7 @@ function SearchClientInner() {
     if (!q) {
       setSessionResults([]);
       setMemberResults([]);
+      setTruncated(false);
       setLoading(false);
       return;
     }
@@ -88,9 +90,11 @@ function SearchClientInner() {
         const data = await res.json();
         setSessionResults(data.sessionResults ?? []);
         setMemberResults(data.memberResults ?? []);
+        setTruncated(Boolean(data.truncated));
       } catch {
         setSessionResults([]);
         setMemberResults([]);
+        setTruncated(false);
       } finally {
         setLoading(false);
       }
@@ -310,6 +314,18 @@ function SearchClientInner() {
         <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
           <p className="text-sm">「{query.trim()}」の検索結果はありませんでした</p>
           <p className="text-xs mt-1">別のキーワードでお試しください</p>
+        </div>
+      )}
+
+      {hasQuery && !loading && truncated && (
+        <div className="bg-[#FFF7E6] border border-[#F7C948] rounded px-3 py-2 text-xs text-[#78451F] flex items-start gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <span>
+            検索結果が上限（各カテゴリ200件）に達しました。キーワードを追加するか、
+            市町村・種別・年度などのフィルタで絞り込んでください。
+          </span>
         </div>
       )}
 
