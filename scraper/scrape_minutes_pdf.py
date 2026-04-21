@@ -134,6 +134,29 @@ PDF_CONFIGS: dict[str, dict] = {
         "council_tag": "h4",
         "pdf_filter": ["kaigiroku", "会議録"],
     },
+    # ===== deep_discover v2 で新規判定した linktext_pattern =====
+    # いずれも単一ページにリンクテキスト「令和N年第N回定例会/臨時会…」のPDFが並ぶ構造
+    "horonobe": {
+        "name": "幌延町",
+        "strategy": "linktext_pattern",
+        "index_url": "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13.html",
+    },
+    "niki": {
+        "name": "仁木町",
+        "strategy": "linktext_pattern",
+        "index_url": "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6.html",
+    },
+    "akabira": {
+        "name": "赤平市",
+        "strategy": "linktext_pattern",
+        "index_url": "https://www.city.akabira.hokkaido.jp/docs/2013011000349.html",
+    },
+    # 以下は v2 で newly_classifiable と判定されたが手動検証で議事録本文ではなかった
+    # ため対応保留:
+    #   koshimizu/nakashibetsu/kaminokuni: 別カテゴリの記事だった（誤検出）
+    #   yakumo/ebetsu: 議会改革小委員会等の特殊会議のみ
+    #   numata/oshamambe: R2-R4の古いデータのみで2024-2025未掲載
+    #   bibai: 議決結果(賛否一覧)のみで会議録本文非公開
     "setana": {
         "name": "せたな町",
         # R6/R7 サブディレクトリに各PDF、リンクテキストに全情報
@@ -536,6 +559,11 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
 
     records: list[dict] = []
 
+    # 単一 index_url （複数年度が1ページに混在するケース）を index_urls に展開
+    if "index_urls" not in cfg and "index_url" in cfg:
+        cfg = dict(cfg)
+        cfg["index_urls"] = {y: cfg["index_url"] for y in years}
+
     if year_tag:
         # 単一ページ内 year_tag (h2等) 切替モード
         urls = cfg["index_urls"].get(None) or cfg["index_urls"].get("page")
@@ -610,11 +638,15 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
                 if actual_year != year:
                     # 別の年度PDFが混入する可能性 → skip（年度ディレクトリ境界尊重）
                     continue
+                fn = href.rsplit("/", 1)[-1]
+                # 単一URLを複数年度で回す場合の重複排除
+                if any(r["filename"] == fn for r in records):
+                    continue
                 records.append({
                     "type": tm.group(1),
                     "year": year,
                     "seq": int(sm.group(1)),
-                    "filename": href.rsplit("/", 1)[-1],
+                    "filename": fn,
                     "link_text": text[:60],
                     "url": urljoin(url, href),
                     "sort_key": (href,),

@@ -427,9 +427,11 @@
     "furigana": "あかびらし",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "mikasa",
@@ -919,9 +921,11 @@
     "furigana": "にきちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "yoichi",
@@ -1722,9 +1726,11 @@
     "furigana": "ほろのべちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "abashiri",
