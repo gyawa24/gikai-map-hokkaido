@@ -159,6 +159,18 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.city.furano.hokkaido.jp/shigikai/docs/541456.html",
         },
     },
+    "otaru": {
+        "name": "小樽市",
+        # 例: R07-01.pdf (令和7年第1回定例会), R07-R1.pdf (令和7年第1回臨時会)
+        # 末尾 -2 等は同一会期内の追加日程
+        "strategy": "filename_pattern",
+        "filename_regex": r"R(?P<ey>\d+)-(?P<t>R)?(?P<seq>\d+)(?:-(?P<day>\d+))?\.pdf",
+        "type_map": {"r": "臨時会", "": "定例会"},
+        "era_base": 2018,
+        "sort_groups": ["day"],
+        "link_text_format": "第{day}日",
+        "index_url": "https://www.city.otaru.lg.jp/docs/2020113000634/",
+    },
     "shibetsu": {
         "name": "士別市",
         # 年度別ページ(R7=6029.html等)に R7-1tei-1.pdf 等のPDFが並ぶ
