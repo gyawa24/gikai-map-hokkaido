@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
-import type { MinutesIndexItem, MinutesSession } from "@/types/minutes";
 import { getMunicipalities } from "@/lib/municipalities";
 
 // ---------------------------------------------------------------------------
@@ -182,66 +181,53 @@ export async function GET(request: NextRequest) {
   }
 
   // -----------------------------------------------------------------------
-  // 公式議事録（minutes/index.json がある全市）
+  // 公式議事録（build 時生成の _search-index.json から議題単位で検索）
+  // Vercel Function 250MB 制限の都合、議事録本文を Function に含められない
+  // ため、scripts/build-search-index.mjs で生成した軽量 index を使う。
   // -----------------------------------------------------------------------
   const seenMinutes = new Set<string>();
-  for (const city of allCities) {
-    const indexPath = path.join(dataRoot, city, "minutes", "index.json");
-    if (!fs.existsSync(indexPath)) continue;
-    const cityName = cityMap[city];
-    let index: MinutesIndexItem[];
-    try { index = JSON.parse(fs.readFileSync(indexPath, "utf-8")); } catch { continue; }
-    for (const entry of index) {
-      const fp = path.join(dataRoot, city, "minutes", entry.file);
-      if (!fs.existsSync(fp)) continue;
-      let s: MinutesSession;
-      try { s = JSON.parse(fs.readFileSync(fp, "utf-8")); } catch { continue; }
-      const committee = entry.type_label.split(">").pop()?.trim() ?? "";
-      const minuteKey = `${city}_${s.council_id}`;
-      let pushed = false;
-      for (let i = 0; i < s.schedules.length; i++) {
-        const sch = s.schedules[i];
-        const text = sch.minutes
-          .filter((m) => m.minute_type !== "名簿")
-          .map((m) => `${m.title} ${m.text}`)
-          .join("\n");
-        if (matchesAll(text, tokens)) {
-          sessionResults.push({
-            id: `${city}_minutes_${s.council_id}`,
-            city,
-            cityName,
-            sourceType: "minutes",
-            title: s.name,
-            committee,
-            href: `/${city}/minutes/${s.council_id}`,
-            segIndex: i,
-            label: sch.name,
-            startTime: "",
-            context: excerpt(text, tokens),
-            field: "議事録",
-          });
-          seenMinutes.add(minuteKey);
-          pushed = true;
-          break;
-        }
-      }
-      if (!pushed && matchesAll(s.name + committee, tokens)) {
-        sessionResults.push({
-          id: `${city}_minutes_${s.council_id}`,
-          city,
-          cityName,
-          sourceType: "minutes",
-          title: s.name,
-          committee,
-          href: `/${city}/minutes/${s.council_id}`,
-          segIndex: 0,
-          label: "",
-          startTime: "",
-          context: committee,
-          field: "会議名",
-        });
-        seenMinutes.add(minuteKey);
-      }
+  interface AgendaEntry {
+    city: string;
+    cityName: string;
+    council_id: number;
+    council_name: string;
+    schedule_index: number;
+    schedule_name: string;
+    agenda_title: string;
+    first_minute_id: number | null;
+    text: string;
+    truncated: boolean;
+  }
+  const searchIndexPath = path.join(dataRoot, "_search-index.json");
+  if (fs.existsSync(searchIndexPath)) {
+    let searchIndex: { agendas: AgendaEntry[] };
+    try {
+      searchIndex = JSON.parse(fs.readFileSync(searchIndexPath, "utf-8"));
+    } catch {
+      searchIndex = { agendas: [] };
+    }
+    for (const a of searchIndex.agendas) {
+      const haystack = `${a.agenda_title} ${a.text}`;
+      if (!matchesAll(haystack, tokens)) continue;
+      const minuteKey = `${a.city}_${a.council_id}`;
+      sessionResults.push({
+        id: `${a.city}_minutes_${a.council_id}_${a.schedule_index}_${a.first_minute_id ?? 0}`,
+        city: a.city,
+        cityName: a.cityName,
+        sourceType: "minutes",
+        title: a.council_name,
+        committee: a.agenda_title || "議題",
+        href:
+          a.first_minute_id !== null
+            ? `/${a.city}/minutes/${a.council_id}?q=${encodeURIComponent(q)}`
+            : `/${a.city}/minutes/${a.council_id}`,
+        segIndex: a.schedule_index,
+        label: a.schedule_name,
+        startTime: "",
+        context: excerpt(haystack, tokens, 100),
+        field: "議事録",
+      });
+      seenMinutes.add(minuteKey);
     }
   }
 
