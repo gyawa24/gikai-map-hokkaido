@@ -1789,9 +1789,11 @@
     "furigana": "つべつちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "shari",
@@ -1813,9 +1815,11 @@
     "furigana": "きよさとちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "koshimizu",
@@ -2057,9 +2061,11 @@
     "furigana": "たいきちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
-    "active": true
+    "active": true,
+    "system": "pdf_inhouse"
   },
   {
     "slug": "hiroo",

@@ -171,6 +171,27 @@ PDF_CONFIGS: dict[str, dict] = {
         "link_text_format": "第{day}日",
         "index_url": "https://www.city.otaru.lg.jp/docs/2020113000634/",
     },
+    "taiki": {
+        "name": "大樹町",
+        # ファイル名 R7Teirei1.pdf, R8Rinji1.pdf (CamelCase版)
+        "strategy": "filename_pattern",
+        "filename_regex": r"R(?P<ey>\d+)(?P<t>Teirei|Rinji)(?P<seq>\d+)\.pdf",
+        "type_map": {"teirei": "定例会", "rinji": "臨時会"},
+        "era_base": 2018,
+        "index_url": "https://www.town.taiki.hokkaido.jp/choseijoho/taikichogikai/1698.html",
+    },
+    "kiyosato": {
+        "name": "清里町",
+        # リンクテキスト「第2回定例会（3月10日） [PDF｜...]」形式
+        "strategy": "linktext_pattern",
+        "index_url": "https://www.town.kiyosato.hokkaido.jp/administration/?content=1244",
+    },
+    "tsubetsu": {
+        "name": "津別町",
+        # リンクテキスト「第1回臨時会（2月4日） [PDFファイル: ...]」形式
+        "strategy": "linktext_pattern",
+        "index_url": "https://www.town.tsubetsu.hokkaido.jp/choseijoho/tsubetsugikai/2/1788.html",
+    },
     "shibetsu": {
         "name": "士別市",
         # 年度別ページ(R7=6029.html等)に R7-1tei-1.pdf 等のPDFが並ぶ
