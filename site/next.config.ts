@@ -9,9 +9,11 @@ const nextConfig: NextConfig = {
   //       `**` をキーにすると全 Function に適用され、データを必要とする Function まで
   //       巻き添えで壊すので使わない。
   outputFileTracingExcludes: {
-    // /api/search は minutes + sessions + members + decisions + election を全て読む。
-    // 除外できるのは orphan / build-time only のファイルのみ。
+    // /api/search は 250MB 制限の都合、minutes 本文（202MB）は除外。
+    // sessions + members + decisions + election + minutes/enriched の要約のみで検索。
+    // TODO(ogawa): 本当は build 時に軽量 search index を作って full-text 検索を復活させる
     "/api/search": [
+      "./data/*/minutes/*.json",
       "./data/*/???.json",
       "./data/*/????.json",
       "./data/*/newsletter.json",
