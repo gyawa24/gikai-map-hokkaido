@@ -62,6 +62,7 @@ function SearchClientInner() {
   const [cityFilter, setCityFilter] = useState<string>("all");
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>("all");
   const [factionFilter, setFactionFilter] = useState<string>("all");
+  const [yearFilter, setYearFilter] = useState<string>("all");
   const [sessionResults, setSessionResults] = useState<SessionHit[]>([]);
   const [memberResults, setMemberResults] = useState<MemberHit[]>([]);
   const [loading, setLoading] = useState(false);
@@ -72,6 +73,7 @@ function SearchClientInner() {
     setCityFilter("all");
     setSourceFilter("all");
     setFactionFilter("all");
+    setYearFilter("all");
     const q = query.trim();
     if (!q) {
       setSessionResults([]);
@@ -99,9 +101,12 @@ function SearchClientInner() {
   const hasQuery = query.trim().length > 0;
 
   const sessionsAfterCity = cityFilter === "all" ? sessionResults : sessionResults.filter((r) => r.city === cityFilter);
-  const filteredSessions = sourceFilter === "all"
+  const sessionsAfterSource = sourceFilter === "all"
     ? sessionsAfterCity
     : sessionsAfterCity.filter((r) => r.sourceType === sourceFilter);
+  const filteredSessions = yearFilter === "all"
+    ? sessionsAfterSource
+    : sessionsAfterSource.filter((r) => r.year === yearFilter);
 
   const membersAfterCity = cityFilter === "all" ? memberResults : memberResults.filter((m) => m.city === cityFilter);
   const filteredMembers = factionFilter === "all"
@@ -115,6 +120,10 @@ function SearchClientInner() {
   const availableFactions = Array.from(
     new Set(membersAfterCity.map((m) => m.faction || "無所属"))
   ).filter(Boolean).sort();
+  // 年度は sourceFilter 適用後から集計し、降順（新しい順）で並べる
+  const availableYears = Array.from(
+    new Set(sessionsAfterSource.map((r) => r.year).filter(Boolean))
+  ).sort((a, b) => (a < b ? 1 : -1));
 
   return (
     <div className="flex flex-col gap-4">
@@ -219,6 +228,39 @@ function SearchClientInner() {
                 </span>
               </button>
             ))}
+        </div>
+      )}
+
+      {/* 年度フィルタ (議会記録タブのみ) */}
+      {tab === "sessions" && hasQuery && availableYears.length > 1 && (
+        <div className="flex flex-wrap gap-1.5">
+          <button
+            onClick={() => setYearFilter("all")}
+            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+              yearFilter === "all"
+                ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
+                : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+            }`}
+          >
+            全期間
+            <span className="ml-1 opacity-75">{sessionsAfterSource.length}</span>
+          </button>
+          {availableYears.map((y) => (
+            <button
+              key={y}
+              onClick={() => setYearFilter(yearFilter === y ? "all" : y)}
+              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+                yearFilter === y
+                  ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
+                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+              }`}
+            >
+              {y}年
+              <span className="ml-1 opacity-75">
+                {sessionsAfterSource.filter((r) => r.year === y).length}
+              </span>
+            </button>
+          ))}
         </div>
       )}
 

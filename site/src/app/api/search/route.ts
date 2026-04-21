@@ -42,6 +42,28 @@ function matchesAll(text: string, tokens: string[]): boolean {
   return tokens.every((t) => lower.includes(t.toLowerCase()));
 }
 
+// 日付文字列（"2026-03-02" 等）から西暦4桁を取り出す
+function yearFromDate(date: string | undefined | null): string {
+  if (!date) return "";
+  const m = date.match(/^(\d{4})/);
+  return m ? m[1] : "";
+}
+
+// 会議名（"令和７年 第１回定例会" 等）から西暦を推定する
+function yearFromCouncilName(name: string): string {
+  // 半角/全角数字を半角に揃える
+  const norm = name.replace(/[０-９]/g, (c) =>
+    String.fromCharCode(c.charCodeAt(0) - 0xfee0)
+  );
+  const reiwa = norm.match(/令和\s*(\d+)/);
+  if (reiwa) return String(2018 + Number(reiwa[1]));
+  const heisei = norm.match(/平成\s*(\d+)/);
+  if (heisei) return String(1988 + Number(heisei[1]));
+  const west = norm.match(/(\d{4})/);
+  if (west) return west[1];
+  return "";
+}
+
 function excerpt(text: string, tokens: string[], radius = 60): string {
   const first = tokens[0] ?? "";
   const idx = text.toLowerCase().indexOf(first.toLowerCase());
@@ -78,6 +100,8 @@ export type SessionHit = {
   startTime: string;
   context: string;
   field: string;
+  /** 西暦。不明な場合は空文字 */
+  year: string;
 };
 
 export type MemberHit = {
@@ -131,6 +155,7 @@ export async function GET(request: NextRequest) {
       let s: Record<string, unknown>;
       try { s = JSON.parse(fs.readFileSync(fp, "utf-8")); } catch { continue; }
       const committee = (s.committee as string) ?? "";
+      const sessionYear = yearFromDate(s.date as string | undefined);
       const segments = (s.segments as Array<Record<string, unknown>>) ?? [];
       let pushed = false;
       for (const seg of segments) {
@@ -154,6 +179,7 @@ export async function GET(request: NextRequest) {
               startTime: (seg.start_time as string) ?? "",
               context: excerpt(text, tokens),
               field,
+              year: sessionYear,
             });
             pushed = true;
             break;
@@ -175,6 +201,7 @@ export async function GET(request: NextRequest) {
           startTime: "",
           context: committee,
           field: "会議名",
+          year: sessionYear,
         });
       }
     }
@@ -197,6 +224,7 @@ export async function GET(request: NextRequest) {
     first_minute_id: number | null;
     text: string;
     truncated: boolean;
+    year?: string;
   }
   const searchIndexPath = path.join(dataRoot, "_search-index.json");
   if (fs.existsSync(searchIndexPath)) {
@@ -226,6 +254,7 @@ export async function GET(request: NextRequest) {
         startTime: "",
         context: excerpt(haystack, tokens, 100),
         field: "議事録",
+        year: a.year ?? yearFromCouncilName(a.council_name),
       });
       seenMinutes.add(minuteKey);
     }
@@ -237,6 +266,7 @@ export async function GET(request: NextRequest) {
   interface EnrichedDoc {
     council_id: number;
     name: string;
+    generated_at?: string;
     summary?: string;
     highlights?: string[];
     tags?: string[];
@@ -278,6 +308,7 @@ export async function GET(request: NextRequest) {
         startTime: "",
         context: contextText,
         field: "AI要約",
+        year: yearFromDate(doc.generated_at) || yearFromCouncilName(doc.name),
       });
       seenMinutes.add(minuteKey);
     }
@@ -308,6 +339,7 @@ export async function GET(request: NextRequest) {
           startTime: "",
           context: excerpt(text, tokens),
           field: "議決",
+          year: yearFromCouncilName(d.session),
         });
       }
     }

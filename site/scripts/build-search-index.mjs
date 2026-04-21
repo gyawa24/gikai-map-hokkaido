@@ -33,6 +33,20 @@ function cleanText(s) {
   return (s ?? "").replace(/\s+/g, " ").trim();
 }
 
+// 会議名から西暦を推定（令和◯年 → 2018+N）
+function yearFromCouncilName(name) {
+  const norm = (name ?? "").replace(/[０-９]/g, (c) =>
+    String.fromCharCode(c.charCodeAt(0) - 0xfee0)
+  );
+  const reiwa = norm.match(/令和\s*(\d+)/);
+  if (reiwa) return String(2018 + Number(reiwa[1]));
+  const heisei = norm.match(/平成\s*(\d+)/);
+  if (heisei) return String(1988 + Number(heisei[1]));
+  const west = norm.match(/(\d{4})/);
+  if (west) return west[1];
+  return "";
+}
+
 function getCityName(municipalities, slug) {
   const m = municipalities.find((x) => x.slug === slug);
   return m?.name ?? slug;
@@ -75,6 +89,7 @@ function buildIndex() {
 
       const councilId = council.council_id ?? entry.council_id;
       const councilName = council.name ?? entry.name;
+      const year = entry.year || yearFromCouncilName(councilName);
 
       for (let schIdx = 0; schIdx < (council.schedules ?? []).length; schIdx++) {
         const sch = council.schedules[schIdx];
@@ -91,6 +106,7 @@ function buildIndex() {
             cityName,
             council_id: councilId,
             council_name: councilName,
+            year,
             schedule_index: schIdx,
             schedule_name: schName,
             agenda_title: currentAgendaTitle ?? "",
