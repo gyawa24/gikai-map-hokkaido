@@ -43,8 +43,10 @@ export default function TranscriptSegment({
 
   const buildPermalink = () => {
     if (typeof window === "undefined") return "";
-    // 実際のページ URL に #seg-N を付与
-    return `${window.location.origin}/${city}/sessions/${sessionId}#${anchorId}`;
+    // SNS プレビューで seg 別 OG が出るように /s 短縮ルートを返す。
+    // クリック時は /s 側が canonical (/${city}/sessions/${id}#${anchorId}) に
+    // 即リダイレクトするため、利用者が辿る実体は同じ。
+    return `${window.location.origin}/s/${city}/${sessionId}/${seg.index}`;
   };
 
   const handleCopyLink = async () => {
