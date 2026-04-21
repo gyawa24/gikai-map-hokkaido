@@ -171,6 +171,15 @@ PDF_CONFIGS: dict[str, dict] = {
         "link_text_format": "第{day}日",
         "index_url": "https://www.city.otaru.lg.jp/docs/2020113000634/",
     },
+    "abashiri": {
+        "name": "網走市",
+        # リンクテキスト「7年第3回定例会 [PDFファイル／...]」形式（令和省略）
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.city.abashiri.hokkaido.jp/site/gikai/1568.html",
+            2024: "https://www.city.abashiri.hokkaido.jp/site/gikai/1568.html",
+        },
+    },
     "shiraoi": {
         "name": "白老町",
         # index /docs/6603.html のリンクテキストは「会議録へ」のみで council情報なし
@@ -747,6 +756,8 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
       makubetsu: h2=令和7年, 直下ul/li/a=「第1回臨時会【1月16日開催】」
     """
     era_re = re.compile(r"令和(\d+)年")
+    # fallback: 「7年第3回定例会」のように令和省略 + N年 + 第N回 でR era推定
+    era_fallback_re = re.compile(r"(\d+)年第\s*\d+\s*回")
     seq_re = re.compile(r"第\s*(\d+)\s*回")
     # 「定例会」「臨時会」だけでなく「定例市議会」「臨時町議会」等にも対応
     type_re = re.compile(r"(定例|臨時)(?:[^、\n]*?)会")
@@ -827,11 +838,23 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
                 sm = seq_re.search(text)
                 if not tm or not sm:
                     continue
-                # link_textの令和年が優先、なければ index_urls のkey
+                # 令和年の判定（厳密）:
+                #   1. 「令和N年」→ 2018+N
+                #   2. 「元年」→ 2019
+                #   3. 「N年第N回」(令和省略)→ 1<=N<=10 なら 2018+N
+                # どれにも当てはまらない場合は skip（index key にフォールバックしない
+                # → 同一URL複数年度iterで誤マッチを防ぐ）
                 em = era_re.search(text)
-                actual_year = (2018 + int(em.group(1))) if em else year
+                actual_year = None
+                if em:
+                    actual_year = 2018 + int(em.group(1))
+                elif "元年" in text:
+                    actual_year = 2019
+                else:
+                    efb = era_fallback_re.search(text)
+                    if efb and 1 <= int(efb.group(1)) <= 10:
+                        actual_year = 2018 + int(efb.group(1))
                 if actual_year != year:
-                    # 別の年度PDFが混入する可能性 → skip（年度ディレクトリ境界尊重）
                     continue
                 fn = href.rsplit("/", 1)[-1]
                 # 単一URLを複数年度で回す場合の重複排除

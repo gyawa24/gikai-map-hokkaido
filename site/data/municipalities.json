@@ -1773,11 +1773,11 @@
     "furigana": "あばしりし",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "委員会会議録のみで本会議録なし"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "monbetsu",
