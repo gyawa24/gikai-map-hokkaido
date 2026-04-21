@@ -490,11 +490,11 @@
     "furigana": "うたしないし",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "議事録のオンライン公開なし"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "fukagawa",
@@ -1047,11 +1047,11 @@
     "furigana": "あびらちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "議会ページに会議録リンクなし"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "mukawa",

@@ -171,6 +171,42 @@ PDF_CONFIGS: dict[str, dict] = {
         "link_text_format": "第{day}日",
         "index_url": "https://www.city.otaru.lg.jp/docs/2020113000634/",
     },
+    "abira": {
+        "name": "安平町",
+        # indexページに「令和N年第N回安平町議会定例会/臨時会」のリンク、
+        # 詳細ページ(/gyosei/kaigiroku/NNNN)に会議録PDF
+        "strategy": "category_drilldown",
+        "index_url": "https://www.town.abira.lg.jp/gyosei/kaigiroku",
+        "pdf_filter": ["会議録", "kaigiroku"],
+    },
+    "shimizu": {
+        "name": "清水町",
+        # /gikai/proceeding/7/ 等の年度ページから個別 council ページへ、そこにPDF
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2025: "https://www.town.shimizu.hokkaido.jp/gikai/proceeding/7/",
+            2024: "https://www.town.shimizu.hokkaido.jp/gikai/proceeding/6/",
+        },
+        "pdf_filter": ["会議録"],
+    },
+    "utashinai": {
+        "name": "歌志内市",
+        # 1ページに全年度のh2「令和7年 第3回定例会」と直下PDFが並ぶ
+        "strategy": "multi_index_html",
+        "index_urls": {None: "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003817.html"},
+        "council_tag": "h2",
+        "year_from_heading": True,
+    },
+    "shikaoi": {
+        "name": "鹿追町",
+        # R7/ R6/ ディレクトリに直接PDF配置
+        "strategy": "multi_index_html",
+        "index_urls": {
+            2025: "https://www.town.shikaoi.lg.jp/gikai/gijiroku/R7/",
+            2024: "https://www.town.shikaoi.lg.jp/gikai/gijiroku/R6/",
+        },
+        "council_tag": "h3",
+    },
     "takikawa": {
         "name": "滝川市",
         # h2=council見出し「第N回定例会/臨時会」、直下のPDF=schedule（「3月3日」等）
@@ -742,6 +778,9 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
     return records
 
 
+ERA_RE = re.compile(r"令和(\d+)年")
+
+
 def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[dict]:
     """年度ごとの別ディレクトリ配下にPDFが並ぶ構造に対応する戦略。
 
@@ -754,10 +793,12 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
     """
     index_urls: dict = cfg["index_urls"]
     council_tag = cfg["council_tag"].lower()
+    year_from_heading = cfg.get("year_from_heading", False)
     records: list[dict] = []
 
     for year, url in index_urls.items():
-        if year not in years:
+        # year_from_heading モードでは year=None を許容し、heading から年度を取る
+        if not year_from_heading and year not in years:
             continue
         r = requests.get(url, timeout=30, headers=HEADERS)
         r.encoding = r.apparent_encoding or "utf-8"
@@ -773,7 +814,7 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
                 for order, (fn, full) in enumerate(current_pdfs, 1):
                     records.append({
                         "type": current_council["type"],
-                        "year": year,
+                        "year": current_council.get("year", year),
                         "seq": current_council["seq"],
                         "filename": fn,
                         "link_text": fn.replace(".pdf", ""),
@@ -791,21 +832,28 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
             if tag == council_tag:
                 finalize()
                 text_half = _zen_to_half(text)
+                # year_from_heading: council見出しから年度を抽出
+                current_year = year
+                if year_from_heading:
+                    ym = ERA_RE.search(text_half)
+                    current_year = (2018 + int(ym.group(1))) if ym else None
+                    if current_year not in years:
+                        current_council = None
+                        continue
                 # まず「第N回」があればそちらを優先（例: ニセコ「第2回ニセコ町議会定例会」）
                 sm = re.search(r"第\s*(\d+)\s*回", text_half)
                 if "定例会" in text:
                     if sm:
-                        current_council = {"type": "定例会", "seq": int(sm.group(1)), "title": text}
+                        current_council = {"type": "定例会", "seq": int(sm.group(1)), "title": text, "year": current_year}
                     else:
-                        # フォールバック: 月→回数（中札内「12月定例会」形式）
                         mm_match = re.search(r"(\d+)\s*月", text_half)
                         if mm_match:
                             mm = int(mm_match.group(1))
                             seq = MONTH_TO_TEIREI_SEQ.get(mm, mm)
-                            current_council = {"type": "定例会", "seq": seq, "title": text}
+                            current_council = {"type": "定例会", "seq": seq, "title": text, "year": current_year}
                 elif "臨時会" in text:
                     if sm:
-                        current_council = {"type": "臨時会", "seq": int(sm.group(1)), "title": text}
+                        current_council = {"type": "臨時会", "seq": int(sm.group(1)), "title": text, "year": current_year}
                 continue
 
             if tag == "a" and current_council:
