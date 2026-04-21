@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import { getMunicipality } from "@/lib/municipalities";
+import MemberShareButtons from "@/components/MemberShareButtons";
 
 export const dynamicParams = false;
 
@@ -180,7 +181,7 @@ export default async function CityMemberDetailPage({
       </section>
 
       {/* 検索ショートカット */}
-      <div className="bg-[#E8EEF7] border border-[#C5D0E6] rounded-lg px-4 py-3 mb-5 flex items-center justify-between gap-3">
+      <div className="bg-[#E8EEF7] border border-[#C5D0E6] rounded-lg px-4 py-3 mb-2 flex items-center justify-between gap-3">
         <p className="text-sm text-[#1B3A6B]">
           <span className="font-semibold">{member.name}</span> 議員の発言を横断検索
         </p>
@@ -193,6 +194,17 @@ export default async function CityMemberDetailPage({
           </svg>
           検索
         </Link>
+      </div>
+
+      {/* シェア動線 — SNS先では議員名刺OG画像が表示される */}
+      <div className="mb-5">
+        <MemberShareButtons
+          memberName={member.name}
+          cityName={cityName}
+          factionLabel={member.faction ?? member.party ?? undefined}
+          sessionCount={memberActivity?.session_count}
+          themes={memberActivity?.themes ?? []}
+        />
       </div>
 
       {/* 質問活動 */}
