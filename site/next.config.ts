@@ -2,10 +2,15 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Serverless Function の 250MB 制限対策。
-  // [city]/minutes/[id] 等の重量 [id] ページは force-static で静的化済なので
-  // そもそも function 化されない。残る dynamic 系 function から minutes/sessions
-  // の重いファイルを除外する。
+  // 各 Function が必要とするデータだけ残し、それ以外を除外する。
+  //
+  // 注意: picomatch でキーが glob 評価されるため `[city]` はキャラクタクラス扱いになる。
+  //       動的ルートをターゲットにする時は `/**/themes` のようにワイルドカードを使うこと。
+  //       `**` をキーにすると全 Function に適用され、データを必要とする Function まで
+  //       巻き添えで壊すので使わない。
   outputFileTracingExcludes: {
+    // /api/search は minutes + sessions + members + decisions + election を全て読む。
+    // 除外できるのは orphan / build-time only のファイルのみ。
     "/api/search": [
       "./data/*/???.json",
       "./data/*/????.json",
@@ -15,12 +20,20 @@ const nextConfig: NextConfig = {
       "./data/*/*_activity.json",
       "./data/*/index.json",
     ],
-    // 以下は「本文JSONを必要としない」ルート一般に適用
-    "**": [
-      "./data/*/minutes/*.json",
-      "./data/*/minutes/enriched/*.json",
-      "./data/*/sessions/*.json",
+    // /api/og-segment は sessions + members だけ必要。minutes (202MB) を除外する。
+    "/api/og-segment": [
+      "./data/*/minutes/**/*",
+      "./data/*/???.json",
+      "./data/*/????.json",
+      "./data/*/newsletter.json",
+      "./data/*/schedule.json",
+      "./data/*/comprehensive_plan.json",
+      "./data/*/decisions.json",
+      "./data/*/election.json",
+      "./data/*/*_activity.json",
+      "./data/*/index.json",
     ],
+    // /[city]/themes は members + members_activity だけ必要。
     "/**/themes": [
       "./data/*/minutes/**/*",
       "./data/*/sessions/**/*",
@@ -34,7 +47,6 @@ const nextConfig: NextConfig = {
       "./data/*/plan_activity.json",
       "./data/*/index.json",
     ],
-    "/api/og-segment": ["./data/**/*.json"],
   },
   async headers() {
     return [
