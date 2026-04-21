@@ -136,8 +136,19 @@ function getItemStyle(minuteType: string): ItemStyle {
   };
 }
 
-function MinuteItemView({ item, highlight }: { item: MinuteItem; highlight?: string }) {
+function MinuteItemView({
+  item,
+  highlight,
+  anchorId,
+  citationContext,
+}: {
+  item: MinuteItem;
+  highlight?: string;
+  anchorId: string;
+  citationContext: { cityName: string; councilName: string; scheduleName: string };
+}) {
   const [expanded, setExpanded] = useState(false);
+  const [copied, setCopied] = useState<"cite" | "link" | null>(null);
   const style = getItemStyle(item.minute_type);
   const isLong = item.text.length > 400;
   const displayText = isLong && !expanded ? item.text.slice(0, 400) + "…" : item.text;
@@ -165,13 +176,69 @@ function MinuteItemView({ item, highlight }: { item: MinuteItem; highlight?: str
     );
   };
 
+  const buildPermalink = () => {
+    if (typeof window === "undefined") return "";
+    return `${window.location.origin}${window.location.pathname}#${anchorId}`;
+  };
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(buildPermalink());
+      setCopied("link");
+      setTimeout(() => setCopied(null), 1800);
+    } catch {
+      // クリップボード失敗時はフィードバックを出さない（古いブラウザのフォールバックは見送り）
+    }
+  };
+
+  const handleCopyCitation = async () => {
+    const { cityName, councilName, scheduleName } = citationContext;
+    const header = `${item.title}（${cityName}議会 ${councilName} ${scheduleName}）`;
+    const block = `${header}\n\n${item.text}\n\n出典: ${buildPermalink()}`;
+    try {
+      await navigator.clipboard.writeText(block);
+      setCopied("cite");
+      setTimeout(() => setCopied(null), 1800);
+    } catch {
+      // 失敗時はサイレント
+    }
+  };
+
   return (
-    <div className={`pb-3 last:pb-0 ${style.wrapperClass}`}>
-      <div className="flex items-center gap-2 mb-1">
+    <div id={anchorId} className={`scroll-mt-20 pb-3 last:pb-0 ${style.wrapperClass}`}>
+      <div className="flex items-center gap-2 mb-1 flex-wrap">
         {style.label && (
           <span className={`shrink-0 ${style.labelClass}`}>{style.label}</span>
         )}
-        <span className="text-sm font-semibold text-[#1A202C]">{item.title}</span>
+        <span className="text-sm font-semibold text-[#1A202C] flex-1 min-w-0">
+          {item.title}
+        </span>
+        <div className="flex items-center gap-1 shrink-0">
+          <button
+            onClick={handleCopyLink}
+            className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-1.5 py-0.5 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+            title="この発言へのリンクをコピー"
+            aria-label="この発言へのリンクをコピー"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+            </svg>
+            <span className="hidden sm:inline">{copied === "link" ? "コピー済" : "リンク"}</span>
+          </button>
+          <button
+            onClick={handleCopyCitation}
+            className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-1.5 py-0.5 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+            title="出典付きで本文をコピー（議員の発信用）"
+            aria-label="出典付きで本文をコピー"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+            </svg>
+            <span className="hidden sm:inline">{copied === "cite" ? "コピー済" : "引用"}</span>
+          </button>
+        </div>
       </div>
       <div className={style.textClass}>
         {renderText(displayText)}
@@ -196,12 +263,16 @@ function AgendaGroupView({
   scrollTo,
   activeTopic,
   query,
+  scheduleId,
+  citationContext,
 }: {
   group: AgendaGroup;
   defaultOpen: boolean;
   scrollTo: boolean;
   activeTopic: string | null;
   query: string;
+  scheduleId: number;
+  citationContext: { cityName: string; councilName: string; scheduleName: string };
 }) {
   const [open, setOpen] = useState(defaultOpen);
   const ref = useRef<HTMLDivElement>(null);
@@ -269,6 +340,8 @@ function AgendaGroupView({
                 key={item.minute_id}
                 item={item}
                 highlight={activeTopic ?? (query || undefined)}
+                anchorId={`minute-${scheduleId}-${item.minute_id}`}
+                citationContext={citationContext}
               />
             ))
           )}
@@ -282,16 +355,39 @@ function AgendaGroupView({
 
 type Props = {
   session: MinutesSession;
+  cityName: string;
   activeTopic?: string | null;
   query: string;
   onQueryChange: (q: string) => void;
 };
 
-export default function MinutesReader({ session, activeTopic = null, query, onQueryChange }: Props) {
+export default function MinutesReader({ session, cityName, activeTopic = null, query, onQueryChange }: Props) {
   const [activeScheduleIndex, setActiveScheduleIndex] = useState(0);
+
+  // 引用URLで来たとき (#minute-{scheduleId}-{minuteId}) は対応する日程タブを開いてスクロールする
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const m = window.location.hash.match(/^#minute-(\d+)-(\d+)/);
+    if (!m) return;
+    const targetScheduleId = Number(m[1]);
+    const idx = session.schedules.findIndex((s) => s.schedule_id === targetScheduleId);
+    if (idx !== -1) {
+      setActiveScheduleIndex(idx);
+      // タブ切替後の DOM 反映を待ってスクロール
+      requestAnimationFrame(() => {
+        const el = document.getElementById(window.location.hash.slice(1));
+        el?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }, [session.schedules]);
 
   const activeSchedule = session.schedules[activeScheduleIndex];
   const groups = buildAgendaGroups(activeSchedule.minutes);
+  const citationContext = {
+    cityName,
+    councilName: session.name,
+    scheduleName: parseScheduleName(activeSchedule.name),
+  };
 
   const filter = activeTopic ?? query.trim();
 
@@ -425,6 +521,8 @@ export default function MinutesReader({ session, activeTopic = null, query, onQu
                 scrollTo={isMatch && i === 0}
                 activeTopic={activeTopic}
                 query={query.trim()}
+                scheduleId={activeSchedule.schedule_id}
+                citationContext={citationContext}
               />
             );
           })

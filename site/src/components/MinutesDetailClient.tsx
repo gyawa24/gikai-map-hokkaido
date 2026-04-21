@@ -12,9 +12,10 @@ const ROLE_ORDER: Record<string, number> = {
 type Props = {
   session: MinutesSession;
   enriched: MinutesEnriched | null;
+  cityName: string;
 };
 
-export default function MinutesDetailClient({ session, enriched }: Props) {
+export default function MinutesDetailClient({ session, enriched, cityName }: Props) {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") ?? "";
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
@@ -167,6 +168,7 @@ export default function MinutesDetailClient({ session, enriched }: Props) {
       {/* 議事録リーダー */}
       <MinutesReader
         session={session}
+        cityName={cityName}
         activeTopic={activeTopic}
         query={query}
         onQueryChange={setQuery}
