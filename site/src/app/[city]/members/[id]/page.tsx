@@ -46,12 +46,13 @@ export async function generateMetadata({
     ? `${member.name}（${partyLabel}）- ${cityName}議会 | 北海道議会情報マップ`
     : `${member.name} - ${cityName}議会 | 北海道議会情報マップ`;
   const description = `${member.name}議員の活動テーマ・発言記録など`;
+  const ogImage = `/api/og-member?city=${city}&seat=${member.seat_number}`;
 
   return {
     title,
     description,
-    openGraph: { title, description },
-    twitter: { card: "summary" },
+    openGraph: { title, description, images: [{ url: ogImage, width: 1200, height: 630 }] },
+    twitter: { card: "summary_large_image" },
   };
 }
 
