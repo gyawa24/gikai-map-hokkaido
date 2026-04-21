@@ -12,6 +12,8 @@ export type Municipality = {
   active: boolean;
   tenant_id?: number;
   system?: string;
+  minutes_status?: "available" | "unavailable";
+  minutes_status_note?: string;
 };
 
 export function getMunicipalities(): Municipality[] {

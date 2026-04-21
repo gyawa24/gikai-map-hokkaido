@@ -68,6 +68,7 @@ export default function HomePage() {
     latestSession: getLatestSession(m.slug),
     decisionCount: getDecisionCount(m.slug),
     minutesCount: getMinutesCount(m.slug),
+    minutesUnavailable: m.minutes_status === "unavailable",
   }));
 
 
@@ -144,6 +145,9 @@ export default function HomePage() {
                       <div className={`flex flex-wrap gap-x-3 gap-y-0.5 text-xs ${featured ? "text-white/70" : "text-[#718096]"}`}>
                         {city.memberCount > 0 && <span>{city.memberCount}名</span>}
                         {city.minutesCount > 0 && <span>議事録{city.minutesCount}件</span>}
+                        {city.minutesUnavailable && (
+                          <span className={featured ? "text-white/80" : "text-[#A0AEC0]"}>議事録未公開</span>
+                        )}
                         {city.hasSession && <span className={featured ? "text-white/90" : "text-[#2A5298]"}>速報</span>}
                       </div>
                     </Link>

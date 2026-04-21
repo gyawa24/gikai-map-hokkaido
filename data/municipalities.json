@@ -408,7 +408,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議事録のオンライン公開なし"
   },
   {
     "slug": "bibai",
@@ -420,7 +422,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議決結果（賛否一覧）のみ"
   },
   {
     "slug": "akabira",
@@ -446,7 +450,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議事録のオンライン公開なし"
   },
   {
     "slug": "takikawa",
@@ -458,7 +464,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議事録のオンライン公開なし"
   },
   {
     "slug": "sunagawa",
@@ -470,7 +478,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "令和元年までで以降未公開"
   },
   {
     "slug": "utashinai",
@@ -482,7 +492,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議事録のオンライン公開なし"
   },
   {
     "slug": "fukagawa",
@@ -818,7 +830,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "審議結果PDFのみ、会議録本文は未公開"
   },
   {
     "slug": "kimobetsu",
@@ -866,7 +880,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議事日程・一般質問順序表のみ公開、会議録本文は未公開"
   },
   {
     "slug": "tomari",
@@ -992,7 +1008,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "通告書類のみ"
   },
   {
     "slug": "atsuma",
@@ -1031,7 +1049,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議会ページに会議録リンクなし"
   },
   {
     "slug": "mukawa",
@@ -1473,7 +1493,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議案・意見書のみ、会議録本文は未公開"
   },
   {
     "slug": "kenbuchi",
@@ -1753,7 +1775,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "委員会会議録のみで本会議録なし"
   },
   {
     "slug": "monbetsu",
@@ -1805,7 +1829,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議事日程・新聞折込のみ"
   },
   {
     "slug": "kiyosato",
@@ -2001,7 +2027,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議案資料のみ、会議録本文は未公開"
   },
   {
     "slug": "shintoku",
@@ -2025,7 +2053,9 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "議員賛否一覧のみ"
   },
   {
     "slug": "nakasatsunai",

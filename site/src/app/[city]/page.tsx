@@ -53,6 +53,9 @@ export default async function CityMembersPage({
   const activity = getMemberActivity(city);
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
   const { count: minutesCount, latestYear } = getMinutesSummary(city);
+  const municipality = getMunicipality(city);
+  const minutesUnavailable = municipality?.minutes_status === "unavailable";
+  const minutesUnavailableNote = municipality?.minutes_status_note;
 
   if (members.length === 0) {
     return (
@@ -82,6 +85,24 @@ export default async function CityMembersPage({
         minutesCount={minutesCount}
         latestYear={latestYear}
       />
+      {minutesUnavailable && (
+        <div className="max-w-2xl mx-auto mb-5 rounded-lg border border-[#E2E8F0] bg-[#F4F6F9] px-4 py-3">
+          <p className="text-sm font-semibold text-[#1B3A6B] mb-1">議事録未公開</p>
+          <p className="text-xs text-[#4A5568] leading-relaxed">
+            {minutesUnavailableNote ?? "現時点で議会会議録のオンライン公開を確認できていません。"}
+            （公式サイトの公開状況が変わった場合は{" "}
+            <a
+              href="https://github.com/gyawa24/gikai-map-hokkaido/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[#1B3A6B]"
+            >
+              GitHub Issue
+            </a>
+            でお知らせください）
+          </p>
+        </div>
+      )}
       <MemberList
         members={members}
         factions={factions}
