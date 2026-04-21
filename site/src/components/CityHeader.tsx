@@ -58,7 +58,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
             href="/"
             className="text-sm font-medium text-blue-100 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded"
           >
-            北海道議会情報マップ
+            地方議会ドットコム
           </Link>
           {city && (
             <>
@@ -70,7 +70,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
 
         {/* メイン見出し */}
         <h1 className="text-xl font-bold tracking-tight leading-snug">
-          {city ? city.name : "北海道議会情報マップ"}
+          {city ? city.name : "地方議会ドットコム"}
         </h1>
         {!city && (
           <p className="text-sm text-blue-200 mt-0.5">

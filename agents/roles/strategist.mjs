@@ -48,7 +48,7 @@ export async function runStrategist() {
   const completedSummary = getCompletedSummary();
   const prevStrategy = getLatestDiscussion("strategy-");
 
-  const prompt = `あなたは「北海道議会情報マップ」の企画責任者エージェントです。
+  const prompt = `あなたは「地方議会ドットコム」の企画責任者エージェントです。
 
 このサービスのコードベースとデータを調査し、**市民・議員・報道関係者の視点**から
 「次に何を作ると最も価値があるか」を戦略的に分析してください。

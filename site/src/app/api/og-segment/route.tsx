@@ -313,7 +313,7 @@ export async function GET(req: NextRequest) {
             }}
           >
             <span style={{ fontSize: "16px", color: "#718096" }}>
-              北海道議会情報マップ
+              地方議会ドットコム
             </span>
             <span style={{ fontSize: "16px", color: "#718096" }}>
               {formatDate(session.date)}

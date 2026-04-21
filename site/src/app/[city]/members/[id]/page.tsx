@@ -44,8 +44,8 @@ export async function generateMetadata({
 
   const partyLabel = member.party ?? member.faction ?? "";
   const title = partyLabel
-    ? `${member.name}（${partyLabel}）- ${cityName}議会 | 北海道議会情報マップ`
-    : `${member.name} - ${cityName}議会 | 北海道議会情報マップ`;
+    ? `${member.name}（${partyLabel}）- ${cityName}議会 | 地方議会ドットコム`
+    : `${member.name} - ${cityName}議会 | 地方議会ドットコム`;
   const description = `${member.name}議員の活動テーマ・発言記録など`;
   const ogImage = `/api/og-member?city=${city}&seat=${member.seat_number}`;
 

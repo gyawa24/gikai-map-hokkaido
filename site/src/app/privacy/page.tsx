@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
   description:
-    "北海道議会情報マップにおける個人情報・利用者情報の取扱いについて。",
+    "地方議会ドットコムにおける個人情報・利用者情報の取扱いについて。",
 };
 
 export default function PrivacyPage() {
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
       </header>
 
       <p className="text-base text-[#1A202C] leading-relaxed mb-6">
-        本サイト「北海道議会情報マップ」（以下「当サイト」）における個人情報・利用者情報の取扱いについて定めます。
+        本サイト「地方議会ドットコム」（以下「当サイト」）における個人情報・利用者情報の取扱いについて定めます。
       </p>
 
       <section className="mb-8">

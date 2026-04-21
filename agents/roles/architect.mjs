@@ -62,7 +62,7 @@ export async function runArchitect(strategy, count = 5) {
 
   const strategyText = strategy || getLatestDiscussion("strategy-") || "（戦略なし）";
 
-  const prompt = `あなたは「北海道議会情報マップ」の技術設計エージェントです。
+  const prompt = `あなたは「地方議会ドットコム」の技術設計エージェントです。
 
 企画エージェントの戦略を受け取り、コードベースを調査して
 **具体的・実装可能なタスク** ${count} 件を設計してください。

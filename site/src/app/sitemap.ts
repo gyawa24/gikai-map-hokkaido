@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://gikai-map-hokkaido.vercel.app";
+const BASE_URL = "https://chihougikai.com";
 
 interface MinutesIndexItem {
   council_id: number;

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "利用規約",
-  description: "北海道議会情報マップの利用規約。",
+  description: "地方議会ドットコムの利用規約。",
 };
 
 export default function TermsPage() {
@@ -19,7 +19,7 @@ export default function TermsPage() {
           第1条（目的）
         </h2>
         <p className="text-base text-[#1A202C] leading-relaxed">
-          本サイト「北海道議会情報マップ」（以下「当サイト」）は、株式会社オガワヤ（以下「当社」）が、北海道内の市町村議会に関する公開情報を市民が横断的に閲覧しやすくするために運営する、非公式の情報サイトです。
+          本サイト「地方議会ドットコム」（以下「当サイト」）は、株式会社オガワヤ（以下「当社」）が、北海道内の市町村議会に関する公開情報を市民が横断的に閲覧しやすくするために運営する、非公式の情報サイトです。
         </p>
       </section>
 

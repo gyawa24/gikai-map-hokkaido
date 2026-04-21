@@ -47,8 +47,8 @@ export async function generateMetadata({
   const enriched = getEnriched(city, id);
 
   const title = session
-    ? `${session.name} | ${cityName}議会 | 北海道議会情報マップ`
-    : `議事録 | ${cityName}議会 | 北海道議会情報マップ`;
+    ? `${session.name} | ${cityName}議会 | 地方議会ドットコム`
+    : `議事録 | ${cityName}議会 | 地方議会ドットコム`;
   const description = enriched?.summary
     ? enriched.summary.slice(0, 100)
     : session

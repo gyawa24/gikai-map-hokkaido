@@ -6,24 +6,24 @@ import { getSearchIndexGeneratedAt, formatJaDate } from "@/lib/dataFreshness";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gikai-map-hokkaido.vercel.app"),
+  metadataBase: new URL("https://chihougikai.com"),
   title: {
-    default: "北海道議会情報マップ",
-    template: "%s | 北海道議会情報マップ",
+    default: "地方議会ドットコム",
+    template: "%s | 地方議会ドットコム",
   },
   description:
     "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。",
   openGraph: {
-    title: "北海道議会情報マップ",
+    title: "地方議会ドットコム",
     description:
       "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。",
     type: "website",
     locale: "ja_JP",
-    siteName: "北海道議会情報マップ",
+    siteName: "地方議会ドットコム",
   },
   twitter: {
     card: "summary",
-    title: "北海道議会情報マップ",
+    title: "地方議会ドットコム",
     description:
       "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。",
   },
@@ -51,7 +51,7 @@ export default function RootLayout({
 
         <footer style={{ backgroundColor: "var(--color-primary)" }} className="text-white mt-8">
           <div className="max-w-5xl mx-auto px-4 py-6">
-            <p className="text-sm font-medium text-blue-100 mb-3">北海道議会情報マップ</p>
+            <p className="text-sm font-medium text-blue-100 mb-3">地方議会ドットコム</p>
             <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-blue-200 mb-4">
               <span className="text-blue-300">データ出典:</span>
               <a

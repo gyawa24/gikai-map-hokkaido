@@ -52,7 +52,7 @@ PASS
 | /topics に全タグ一覧が表示され上位タグが確認できる | ✅ `getAllTags()` で頻度降順ソート済み、バッジ形式で表示 |
 | /topics/予算 にアクセスすると複数市の関連議事録一覧が表示される | ✅ `getByTag(decoded)` で全市横断フィルタ |
 | 各議事録カードのリンクが正しい /{cityId}/minutes/{id} を指している | ✅ `/${record.cityId}/minutes/${record.council_id}` |
-| generateMetadata によりページタイトルにタグ名が入っている | ✅ `${decoded} \| テーマ別議事録 \| 北海道議会情報マップ` |
+| generateMetadata によりページタイトルにタグ名が入っている | ✅ `${decoded} \| テーマ別議事録 \| 地方議会ドットコム` |
 | CityHeader のグローバルナビに「テーマ別」リンクが追加されている | ✅ `{ href: "/topics", label: "テーマ別" }` をナビ配列に追加済み |
 
 ---

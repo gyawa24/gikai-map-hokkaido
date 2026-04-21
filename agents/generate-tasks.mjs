@@ -60,7 +60,7 @@ export async function generateTasks(count = 5) {
 
   const dataOverview = gatherDataOverview();
 
-  const prompt = `あなたは北海道議会情報マップ（Next.js + Tailwind CSS製）の改善エキスパートです。
+  const prompt = `あなたは地方議会ドットコム（Next.js + Tailwind CSS製）の改善エキスパートです。
 
 このリポジトリ（/Users/yohei/gikai-map-hokkaido）のコードベースを Read/Glob/Grep ツールで確認し、
 改善タスクを ${count} 件提案してください。

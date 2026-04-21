@@ -51,7 +51,7 @@ export async function runReviewer(task) {
     ? task.acceptance_criteria.map((c) => `- [ ] ${c}`).join("\n")
     : "（完了条件なし）";
 
-  const prompt = `あなたは「北海道議会情報マップ」のコードレビューエージェントです。
+  const prompt = `あなたは「地方議会ドットコム」のコードレビューエージェントです。
 
 直前に実装されたタスクをレビューして、**PASS** または **FAIL** を判定してください。
 

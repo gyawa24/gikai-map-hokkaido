@@ -80,7 +80,7 @@
       "category": "ux",
       "priority": "medium",
       "status": "done",
-      "description": "site/src/app/layout.tsx のメタデータ設定を改善する。\n\n実装内容:\n1. Metadata を確認し不足している場合は以下を追加:\n   - title: 「北海道議会情報マップ」\n   - description: サービス説明文\n   - openGraph: title, description, type: 'website'\n   - twitter: card: 'summary'\n2. 各都市ページ（/chitose, /eniwa, /tomakomai）に generateMetadata を追加\n   - 例: 「千歳市議会 | 北海道議会情報マップ」\n3. robots メタタグの設定\n\nNext.js 16 App Router の Metadata API を使用すること。",
+      "description": "site/src/app/layout.tsx のメタデータ設定を改善する。\n\n実装内容:\n1. Metadata を確認し不足している場合は以下を追加:\n   - title: 「地方議会ドットコム」\n   - description: サービス説明文\n   - openGraph: title, description, type: 'website'\n   - twitter: card: 'summary'\n2. 各都市ページ（/chitose, /eniwa, /tomakomai）に generateMetadata を追加\n   - 例: 「千歳市議会 | 地方議会ドットコム」\n3. robots メタタグの設定\n\nNext.js 16 App Router の Metadata API を使用すること。",
       "acceptance_criteria": [
         "layout.tsx に適切な Metadata が設定されている",
         "OGPタグが設定されている",
@@ -90,7 +90,7 @@
       "started_at": "2026-04-12T16:41:31.561Z",
       "completed_at": "2026-04-12T16:43:05.383Z",
       "elapsed_seconds": 94,
-      "result_preview": "完了しました。変更内容:\n\n**`site/src/app/layout.tsx`**\n- `title` に `template: \"%s | 北海道議会情報マップ\"` を追加（各ページタイトルが自動的にサフィックス付きになる）\n- `openGraph`: title・description・type・locale・siteName を設定\n- `twitter`: `card: \"summary\"` を設定\n- `robots`: `index: true, follow: true` を設定\n\n**各都市ページ（7都市）**\n- `chitose`, `eniwa`, `tomakomai`, `asahikawa`, `hakodate`, `muroran`, `kushiro` の `page.tsx` に `Metadata` を追加\n- タイトルは `\"千歳市議会\"` のように設定され、layout の template により `\"千歳市議会 | 北海道議会情報マップ\"` としてレンダリングされる\n- 各ページに固有の `openGraph` も設定済み\n"
+      "result_preview": "完了しました。変更内容:\n\n**`site/src/app/layout.tsx`**\n- `title` に `template: \"%s | 地方議会ドットコム\"` を追加（各ページタイトルが自動的にサフィックス付きになる）\n- `openGraph`: title・description・type・locale・siteName を設定\n- `twitter`: `card: \"summary\"` を設定\n- `robots`: `index: true, follow: true` を設定\n\n**各都市ページ（7都市）**\n- `chitose`, `eniwa`, `tomakomai`, `asahikawa`, `hakodate`, `muroran`, `kushiro` の `page.tsx` に `Metadata` を追加\n- タイトルは `\"千歳市議会\"` のように設定され、layout の template により `\"千歳市議会 | 地方議会ドットコム\"` としてレンダリングされる\n- 各ページに固有の `openGraph` も設定済み\n"
     },
     {
       "id": "task-006",
@@ -153,7 +153,7 @@
       "category": "seo",
       "priority": "medium",
       "status": "done",
-      "description": "site/src/app/{city}/minutes/[id]/page.tsx（chitose・eniwa・tomakomai・asahikawa・hakodate・muroran・kushiro の7ファイル）に Next.js の generateMetadata エクスポートを追加する。title は「{session.name} | {市名}議会 | 北海道議会情報マップ」、description は enriched.summary があれば先頭100文字、なければ session.type_label と session.japanese_year を組み合わせる。openGraph にも同じ title/description を設定し、twitter.card は 'summary' とする。getSession/getEnriched は既存実装を流用し、generateMetadata 内で同様に呼び出す（Next.js では generateMetadata と page 関数が独立して同じデータを取得するのが推奨パターン）。",
+      "description": "site/src/app/{city}/minutes/[id]/page.tsx（chitose・eniwa・tomakomai・asahikawa・hakodate・muroran・kushiro の7ファイル）に Next.js の generateMetadata エクスポートを追加する。title は「{session.name} | {市名}議会 | 地方議会ドットコム」、description は enriched.summary があれば先頭100文字、なければ session.type_label と session.japanese_year を組み合わせる。openGraph にも同じ title/description を設定し、twitter.card は 'summary' とする。getSession/getEnriched は既存実装を流用し、generateMetadata 内で同様に呼び出す（Next.js では generateMetadata と page 関数が独立して同じデータを取得するのが推奨パターン）。",
       "acceptance_criteria": [
         "全7都市の議事録詳細ページで <title> タグが議事録名を含む動的な文字列になる",
         "enriched.summary があるページでは <meta name='description'> に要約文が入る",
@@ -163,7 +163,7 @@
       "started_at": "2026-04-12T17:05:05.077Z",
       "completed_at": "2026-04-12T17:06:47.988Z",
       "elapsed_seconds": 103,
-      "result_preview": "完了しました。\n\n全7都市（千歳・恵庭・苫小牧・旭川・函館・室蘭・釧路）の議事録詳細ページに `generateMetadata` を追加しました。\n\n**実装内容:**\n- `import type { Metadata } from \"next\"` を各ファイルに追加\n- `generateMetadata` 関数を `generateStaticParams` の直前に配置\n- `title`: `{session.name} | {市名}議会 | 北海道議会情報マップ`\n- `description`: `enriched.summary` があれば先頭100文字、なければ `type_label（japanese_year）` 形式\n- `openGraph`: title/description を同じ値で設定\n- `twitter.card`: `\"summary\"`\n- TypeScript エラーなし（`npx tsc --noEmit` 通過）\n"
+      "result_preview": "完了しました。\n\n全7都市（千歳・恵庭・苫小牧・旭川・函館・室蘭・釧路）の議事録詳細ページに `generateMetadata` を追加しました。\n\n**実装内容:**\n- `import type { Metadata } from \"next\"` を各ファイルに追加\n- `generateMetadata` 関数を `generateStaticParams` の直前に配置\n- `title`: `{session.name} | {市名}議会 | 地方議会ドットコム`\n- `description`: `enriched.summary` があれば先頭100文字、なければ `type_label（japanese_year）` 形式\n- `openGraph`: title/description を同じ値で設定\n- `twitter.card`: `\"summary\"`\n- TypeScript エラーなし（`npx tsc --noEmit` 通過）\n"
     },
     {
       "id": "task-010",
@@ -364,7 +364,7 @@
       "description": "task-009 で全市の minutes/[id]/page.tsx に generateMetadata を実装済みだが、chitose 固有の site/src/app/chitose/sessions/[id]/page.tsx が対象外になっている。\n実装: site/src/app/chitose/sessions/[id]/page.tsx に generateMetadata 関数を追加する。data/chitose/sessions/{id}.json（または site/data/chitose/sessions/index.json）からセッション情報を読み込み、title（会議名・日付）と description（主要議題の冒頭 100 文字）を設定する。OGP タグ（og:title, og:description）も同時に設定すること。既存の minutes/[id]/page.tsx の generateMetadata 実装を参考にすること。",
       "acceptance_criteria": [
         "site/src/app/chitose/sessions/[id]/page.tsx に generateMetadata が実装されている",
-        "ページ title が「{会議名}（{日付}）| 千歳市議会 | 北海道議会情報マップ」形式になっている",
+        "ページ title が「{会議名}（{日付}）| 千歳市議会 | 地方議会ドットコム」形式になっている",
         "og:description にセッションの概要が設定されている",
         "存在しない id の場合に notFound() が返る"
       ],
@@ -372,7 +372,7 @@
       "started_at": "2026-04-12T23:14:23.448Z",
       "completed_at": "2026-04-12T23:15:28.678Z",
       "elapsed_seconds": 65,
-      "result_preview": "実装完了しました。\n\n**変更内容**: `site/src/app/chitose/sessions/[id]/page.tsx`\n\n- `Metadata` 型をインポート\n- `generateMetadata` 関数を追加:\n  - セッションが存在しない場合は `notFound()` に任せ、フォールバックタイトルを返す\n  - `title`: `{会議名}（{日付}）| 千歳市議会 | 北海道議会情報マップ` 形式\n  - `description`: セグメントの最初のsummaryの先頭100文字、なければ委員会名+日付、なければ汎用テキスト\n  - `openGraph` と `twitter` タグも設定\n"
+      "result_preview": "実装完了しました。\n\n**変更内容**: `site/src/app/chitose/sessions/[id]/page.tsx`\n\n- `Metadata` 型をインポート\n- `generateMetadata` 関数を追加:\n  - セッションが存在しない場合は `notFound()` に任せ、フォールバックタイトルを返す\n  - `title`: `{会議名}（{日付}）| 千歳市議会 | 地方議会ドットコム` 形式\n  - `description`: セグメントの最初のsummaryの先頭100文字、なければ委員会名+日付、なければ汎用テキスト\n  - `openGraph` と `twitter` タグも設定\n"
     },
     {
       "id": "task-021",
@@ -448,7 +448,7 @@
       "started_at": "2026-04-13T03:09:14.926Z",
       "completed_at": "2026-04-13T03:10:42.269Z",
       "elapsed_seconds": 87,
-      "result_preview": "実装完了。\n\n3ファイルに `generateMetadata` を追加しました：\n\n- `chitose/members/[id]/page.tsx` — `${name}（${party}）- 千歳市議会 | 北海道議会情報マップ`\n- `eniwa/members/[id]/page.tsx` — `${name}（${party}）- 恵庭市議会 | 北海道議会情報マップ`\n- `tomakomai/members/[id]/page.tsx` — `${name}（${party}）- 苫小牧市議会 | 北海道議会情報マップ`\n\n各 `generateMetadata` は `party` → `faction` の優先順でラベルを取得し、`og:title`・`og:description`・`twitter:card` も設定しています。存在しない ID の場合はフォールバックタイトルを返し、ページ本体の `notFound()` が 404 を処理します。TypeScript エラーなし・push 完了。\n"
+      "result_preview": "実装完了。\n\n3ファイルに `generateMetadata` を追加しました：\n\n- `chitose/members/[id]/page.tsx` — `${name}（${party}）- 千歳市議会 | 地方議会ドットコム`\n- `eniwa/members/[id]/page.tsx` — `${name}（${party}）- 恵庭市議会 | 地方議会ドットコム`\n- `tomakomai/members/[id]/page.tsx` — `${name}（${party}）- 苫小牧市議会 | 地方議会ドットコム`\n\n各 `generateMetadata` は `party` → `faction` の優先順でラベルを取得し、`og:title`・`og:description`・`twitter:card` も設定しています。存在しない ID の場合はフォールバックタイトルを返し、ページ本体の `notFound()` が 404 を処理します。TypeScript エラーなし・push 完了。\n"
     },
     {
       "id": "task-025",
@@ -757,7 +757,7 @@
       "category": "feature",
       "priority": "medium",
       "status": "done",
-      "description": "enriched タグを使った全市横断ブラウジングページを実装する。\n\n**site/src/app/topics/page.tsx（タグ一覧）**\nサーバーコンポーネント。全市の enriched JSON から tags を集計し、出現頻度の高い順にタグと件数を表示。カードまたはバッジリスト形式（例: 「予算（42件）」「子育て（31件）」）。各タグは /topics/{tag} へリンク。\n\n**site/src/app/topics/[tag]/page.tsx（タグ別一覧）**\nサーバーコンポーネント。params.tag でフィルタし、該当する enriched 議事録を全市横断で取得。表示項目: 市名バッジ・議事録名・summary・highlights 先頭1件・/{cityId}/minutes/{id} リンク。\n\n**ヘルパー関数（site/src/lib/topics.ts として切り出し推奨）:**\n```ts\nexport function loadAllEnriched(): EnrichedRecord[] // 全市の enriched JSON を読んで配列で返す\nexport function getAllTags(): { tag: string; count: number }[] // タグ集計\nexport function getByTag(tag: string): EnrichedRecord[] // タグフィルタ\n```\n\n**metadata 生成**: /topics/[tag] では `generateMetadata` で `title: \"${tag} | テーマ別議事録 | 北海道議会情報マップ\"` を設定する（SEO）。\n\n**ナビゲーション登録**: site/src/components/CityHeader.tsx のグローバルナビ（トップページ・地図・AI検索の横）に「テーマ別」リンクを追加。\n\nDESIGN.md 準拠: max-w-5xl mx-auto, px-4 py-8, 外部アイコン不可。",
+      "description": "enriched タグを使った全市横断ブラウジングページを実装する。\n\n**site/src/app/topics/page.tsx（タグ一覧）**\nサーバーコンポーネント。全市の enriched JSON から tags を集計し、出現頻度の高い順にタグと件数を表示。カードまたはバッジリスト形式（例: 「予算（42件）」「子育て（31件）」）。各タグは /topics/{tag} へリンク。\n\n**site/src/app/topics/[tag]/page.tsx（タグ別一覧）**\nサーバーコンポーネント。params.tag でフィルタし、該当する enriched 議事録を全市横断で取得。表示項目: 市名バッジ・議事録名・summary・highlights 先頭1件・/{cityId}/minutes/{id} リンク。\n\n**ヘルパー関数（site/src/lib/topics.ts として切り出し推奨）:**\n```ts\nexport function loadAllEnriched(): EnrichedRecord[] // 全市の enriched JSON を読んで配列で返す\nexport function getAllTags(): { tag: string; count: number }[] // タグ集計\nexport function getByTag(tag: string): EnrichedRecord[] // タグフィルタ\n```\n\n**metadata 生成**: /topics/[tag] では `generateMetadata` で `title: \"${tag} | テーマ別議事録 | 地方議会ドットコム\"` を設定する（SEO）。\n\n**ナビゲーション登録**: site/src/components/CityHeader.tsx のグローバルナビ（トップページ・地図・AI検索の横）に「テーマ別」リンクを追加。\n\nDESIGN.md 準拠: max-w-5xl mx-auto, px-4 py-8, 外部アイコン不可。",
       "acceptance_criteria": [
         "/topics に全タグ一覧が表示され、上位タグ（予算・子育て・防災など）が確認できる",
         "/topics/予算 にアクセスすると複数市の関連議事録一覧が表示される",

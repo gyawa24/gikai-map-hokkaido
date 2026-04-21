@@ -258,7 +258,7 @@ export default function HomePage() {
       <section className="bg-[#E8EEF7] rounded-lg p-5">
         <h2 className="text-base font-bold text-[#1B3A6B] mb-2">このサイトについて</h2>
         <p className="text-sm text-[#4A5568] leading-relaxed">
-          北海道議会情報マップは、北海道内の市議会情報を横断的に収集・整理する
+          地方議会ドットコムは、北海道内の市議会情報を横断的に収集・整理する
           非公式の情報サイトです。令和6〜7年の会議録・議決結果を収録しています。
           公式情報は各市議会の公式サイトでご確認ください。
         </p>
