@@ -6,7 +6,6 @@ import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import { getMunicipality } from "@/lib/municipalities";
 
-export const dynamic = "force-static";
 export const dynamicParams = false;
 
 function getMembers(city: string): Member[] {
@@ -56,14 +55,16 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams({
-  params,
-}: {
-  params: { city: string };
-}) {
-  const { city } = params;
-  const members = getMembers(city);
-  return members.map((m) => ({ id: String(m.seat_number) }));
+export async function generateStaticParams() {
+  const { getMunicipalities } = await import("@/lib/municipalities");
+  const params: { city: string; id: string }[] = [];
+  for (const m of getMunicipalities()) {
+    if (!m.active) continue;
+    for (const member of getMembers(m.slug)) {
+      params.push({ city: m.slug, id: String(member.seat_number) });
+    }
+  }
+  return params;
 }
 
 export default async function CityMemberDetailPage({

@@ -7,7 +7,6 @@ import type { Member } from "@/types/member";
 import TranscriptSegment from "@/components/TranscriptSegment";
 import { getMunicipality } from "@/lib/municipalities";
 
-export const dynamic = "force-static";
 export const dynamicParams = false;
 
 function getSession(city: string, id: string): Session | null {
@@ -70,19 +69,20 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams({
-  params,
-}: {
-  params: { city: string };
-}) {
-  const { city } = params;
-  const fp = path.join(process.cwd(), "data", city, "sessions", "index.json");
-  try {
-    const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as SessionSummary[];
-    return index.map((s) => ({ id: s.id }));
-  } catch {
-    return [];
+export async function generateStaticParams() {
+  const { getMunicipalities } = await import("@/lib/municipalities");
+  const params: { city: string; id: string }[] = [];
+  for (const m of getMunicipalities()) {
+    if (!m.active) continue;
+    const fp = path.join(process.cwd(), "data", m.slug, "sessions", "index.json");
+    try {
+      const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as SessionSummary[];
+      for (const s of index) params.push({ city: m.slug, id: s.id });
+    } catch {
+      // セッションデータがない自治体はスキップ
+    }
   }
+  return params;
 }
 
 export default async function CitySessionPage({

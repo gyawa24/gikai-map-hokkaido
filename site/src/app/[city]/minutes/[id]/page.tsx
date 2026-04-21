@@ -8,7 +8,6 @@ import MinutesDetailClient from "@/components/MinutesDetailClient";
 import { getMunicipality } from "@/lib/municipalities";
 
 // ビルド時に全パラメータを生成し、サーバーレス関数を作らない（バンドルサイズ制限対策）
-export const dynamic = "force-static";
 export const dynamicParams = false;
 
 function getSession(city: string, id: string): MinutesSession | null {
@@ -64,25 +63,20 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams({
-  params,
-}: {
-  params: { city: string };
-}) {
-  const { city } = params;
-  const fp = path.join(
-    process.cwd(),
-    "data",
-    city,
-    "minutes",
-    "index.json"
-  );
-  try {
-    const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
-    return index.map((item) => ({ id: String(item.council_id) }));
-  } catch {
-    return [];
+export async function generateStaticParams() {
+  const { getMunicipalities } = await import("@/lib/municipalities");
+  const params: { city: string; id: string }[] = [];
+  for (const m of getMunicipalities()) {
+    if (!m.active) continue;
+    const fp = path.join(process.cwd(), "data", m.slug, "minutes", "index.json");
+    try {
+      const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
+      for (const item of index) params.push({ city: m.slug, id: String(item.council_id) });
+    } catch {
+      // 議事録データがない自治体はスキップ
+    }
   }
+  return params;
 }
 
 function typeCategory(typeLabel: string): string {
