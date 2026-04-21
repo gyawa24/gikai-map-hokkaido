@@ -151,6 +151,14 @@ PDF_CONFIGS: dict[str, dict] = {
         "strategy": "linktext_pattern",
         "index_url": "https://www.city.akabira.hokkaido.jp/docs/2013011000349.html",
     },
+    "furano": {
+        "name": "富良野市",
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2025: "https://www.city.furano.hokkaido.jp/shigikai/docs/978780.html",
+            2024: "https://www.city.furano.hokkaido.jp/shigikai/docs/541456.html",
+        },
+    },
     # 以下は v2 で newly_classifiable と判定されたが手動検証で議事録本文ではなかった
     # ため対応保留:
     #   koshimizu/nakashibetsu/kaminokuni: 別カテゴリの記事だった（誤検出）
@@ -838,6 +846,107 @@ def extract_pdf_links_by_nested_html_sections(cfg: dict, years: list[int]) -> li
     return records
 
 
+def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list[dict]:
+    """カテゴリインデックスから会議詳細ページへ2段階クロールしてPDFを取得する戦略。
+
+    使い所: 富良野市のように
+      Step1: index ページに「令和7年 第1回富良野市議会定例会(会期...)」のような
+             詳細ページへのリンクが並ぶ
+      Step2: 各詳細ページに「令和7年第1回定例会 会議録 第1号(令和7年...)」の
+             PDF が並ぶ
+
+    config:
+      index_url or index_urls: インデックスページ
+      （詳細リンクは「令和N年」「第N回」「(定例会|臨時会)」を全部含むもの）
+    """
+    era_re = re.compile(r"令和(\d+)年")
+    seq_re = re.compile(r"第\s*(\d+)\s*回")
+    type_re = re.compile(r"(定例会|臨時会)")
+    schedule_re = re.compile(r"第(\d+)号")
+    pdf_filter = cfg.get("pdf_filter", ["会議録", "kaigiroku"])
+    if isinstance(pdf_filter, str):
+        pdf_filter = [pdf_filter]
+
+    if "index_urls" in cfg:
+        index_urls = cfg["index_urls"]
+    else:
+        index_urls = {y: cfg["index_url"] for y in years}
+
+    detail_targets: list[dict] = []
+    for year, urls in index_urls.items():
+        if year is not None and year not in years:
+            continue
+        url_list = urls if isinstance(urls, list) else [urls]
+        for url in url_list:
+            r = requests.get(url, timeout=30, headers=HEADERS)
+            r.encoding = r.apparent_encoding or "utf-8"
+            r.raise_for_status()
+            for m in re.finditer(
+                r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>([\s\S]{1,200}?)</a>',
+                r.text,
+                re.I,
+            ):
+                href = m.group(1)
+                if href.startswith("#") or href.startswith("javascript:"):
+                    continue
+                text = _zen_to_half(re.sub(r"<[^>]+>", "", m.group(2)).strip())
+                em = era_re.search(text)
+                tm = type_re.search(text)
+                sm = seq_re.search(text)
+                if not (em and tm and sm):
+                    continue
+                actual_year = 2018 + int(em.group(1))
+                if actual_year not in years:
+                    continue
+                full = urljoin(url, href)
+                detail_targets.append({
+                    "url": full,
+                    "year": actual_year,
+                    "seq": int(sm.group(1)),
+                    "type": tm.group(1),
+                    "title": text[:60],
+                })
+
+    print(f"    → 詳細ページ: {len(detail_targets)}件", flush=True)
+
+    records: list[dict] = []
+    seen_files = set()
+    for d in detail_targets:
+        try:
+            r = requests.get(d["url"], timeout=30, headers=HEADERS)
+            r.encoding = r.apparent_encoding or "utf-8"
+        except Exception as e:
+            print(f"      ✗ 詳細取得失敗 {d['url']}: {e}", flush=True)
+            continue
+        time.sleep(0.3)
+        for m in re.finditer(
+            r'<a[^>]+href=["\']([^"\']+\.pdf)["\'][^>]*>([\s\S]{0,300}?)</a>',
+            r.text,
+            re.I,
+        ):
+            href = m.group(1)
+            text = _zen_to_half(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(2))).strip())
+            haystack = f"{href.lower()} {text}"
+            if not any(kw.lower() in haystack for kw in pdf_filter):
+                continue
+            fn = href.rsplit("/", 1)[-1]
+            if fn in seen_files:
+                continue
+            seen_files.add(fn)
+            sch = schedule_re.search(text)
+            schedule_no = int(sch.group(1)) if sch else None
+            records.append({
+                "type": d["type"],
+                "year": d["year"],
+                "seq": d["seq"],
+                "filename": fn,
+                "link_text": text[:60],
+                "url": urljoin(d["url"], href),
+                "sort_key": (schedule_no or 0, fn),
+            })
+    return records
+
+
 def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
     strategy = cfg.get("strategy", "html_sections")
     if strategy == "html_sections":
@@ -854,6 +963,8 @@ def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
         return extract_pdf_links_by_linktext_pattern(cfg, years or [])
     if strategy == "nested_html_sections":
         return extract_pdf_links_by_nested_html_sections(cfg, years or [])
+    if strategy == "category_drilldown":
+        return extract_pdf_links_by_category_drilldown(cfg, years or [])
     raise ValueError(f"unknown strategy: {strategy}")
 
 
