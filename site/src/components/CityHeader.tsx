@@ -74,7 +74,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
         </h1>
         {!city && (
           <p className="text-sm text-blue-200 mt-0.5">
-            北海道内の市議会情報を横断的に検索・閲覧できます
+            北海道内の市町村議会の情報を横断的に検索・閲覧できます
           </p>
         )}
 

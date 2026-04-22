@@ -66,7 +66,7 @@ export default function PrivacyPage() {
             <strong>動画埋込</strong>：会議録ページで YouTube の埋込を利用する場合、YouTube のプライバシーポリシーが適用されます。
           </li>
           <li>
-            <strong>議員写真</strong>：各市議会公式サイトから直接配信しており、当サイト側では保存していません。
+            <strong>議員写真</strong>：各市町村議会の公式サイトから直接配信しており、当サイト側では保存していません。
           </li>
         </ul>
       </section>

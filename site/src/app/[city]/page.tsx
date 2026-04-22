@@ -14,7 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { city } = await params;
   const municipality = getMunicipality(city);
-  const name = municipality?.council_name ?? "市議会";
+  const name = municipality?.council_name ?? "市町村議会";
   return {
     title: name,
     description: `${name}の議員一覧・議事録を掲載しています。`,

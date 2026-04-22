@@ -305,7 +305,7 @@ export default function HomePage() {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold text-[#1A202C]">公式議事録</p>
-              <p className="text-xs text-[#4A5568]">千歳市 令和6〜7年</p>
+              <p className="text-xs text-[#4A5568]">千歳市 {getMinutesCount("chitose")}件</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           </Link>
@@ -342,7 +342,7 @@ export default function HomePage() {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold text-[#1A202C]">公式議事録</p>
-              <p className="text-xs text-[#4A5568]">恵庭市 令和6〜7年</p>
+              <p className="text-xs text-[#4A5568]">恵庭市 {getMinutesCount("eniwa")}件</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           </Link>
@@ -362,7 +362,7 @@ export default function HomePage() {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold text-[#1A202C]">公式議事録</p>
-              <p className="text-xs text-[#4A5568]">苫小牧市 令和6〜7年</p>
+              <p className="text-xs text-[#4A5568]">苫小牧市 {getMinutesCount("tomakomai")}件</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           </Link>
@@ -389,9 +389,9 @@ export default function HomePage() {
       <section className="bg-[#E8EEF7] rounded-lg p-5">
         <h2 className="text-base font-bold text-[#1B3A6B] mb-2">このサイトについて</h2>
         <p className="text-sm text-[#4A5568] leading-relaxed">
-          地方議会ドットコムは、北海道内の市議会情報を横断的に収集・整理する
-          非公式の情報サイトです。令和6〜7年の会議録・議決結果を収録しています。
-          公式情報は各市議会の公式サイトでご確認ください。
+          地方議会ドットコムは、北海道内の市町村議会の情報を横断的に収集・整理する
+          非公式の情報サイトです。
+          公式情報は各市町村議会の公式サイトでご確認ください。
         </p>
       </section>
     </div>
