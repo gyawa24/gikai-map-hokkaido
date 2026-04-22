@@ -517,6 +517,39 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.yuni.lg.jp/chosei/gikai/teireikai",
         },
     },
+    "akaigawa": {
+        "name": "赤井川村",
+        # WordPress、リンクテキスト「令和X年第Y回定例会本会議 第Z日（令和X年M月D日開催）」
+        "strategy": "linktext_pattern",
+        "index_url": "https://www.akaigawa.com/kurashi/gikai_jimukyoku/post_95.html",
+    },
+    "sobetsu": {
+        "name": "壮瞥町",
+        # ファイル名: R7_gikai_teireikai_gijiroku_1.pdf / R8_gikai_rinjikai_gijiroku_1.pdf
+        "strategy": "filename_pattern",
+        "filename_regex": r"R(?P<ey>\d+)_gikai_(?P<t>teireikai|rinjikai)_gijiroku_(?P<seq>\d+)\.pdf",
+        "type_map": {"teireikai": "定例会", "rinjikai": "臨時会"},
+        "era_base": 2018,
+        "index_url": "https://www.town.sobetsu.lg.jp/gikai.html",
+    },
+    "biratori": {
+        "name": "平取町",
+        # ファイル名: R070305teireikai.pdf / R070115rinjikai.pdf
+        # R{ey}{mm}{dd}{teireikai|rinjikai|yosan}.pdf
+        "strategy": "filename_pattern",
+        "filename_regex": r"R(?P<ey>\d{2})(?P<mm>\d{2})(?P<dd>\d{2})(?P<t>teireikai|rinjikai|yosan|kessan)\.pdf",
+        "type_map": {
+            "teireikai": "定例会", "rinjikai": "臨時会",
+            "yosan": "予算審査特別委員会", "kessan": "決算審査特別委員会",
+        },
+        "era_base": 2018,
+        "sort_groups": ["mm", "dd"],
+        "link_text_format": "{mm:02d}月{dd:02d}日",
+        "index_urls": {
+            2025: "https://www.town.biratori.hokkaido.jp/soshikikarasagasu/gikaijimukyoku/gijikakari_shomugakari/1/1/4/kaigiroku/2052.html",
+            2024: "https://www.town.biratori.hokkaido.jp/soshikikarasagasu/gikaijimukyoku/gijikakari_shomugakari/1/1/4/kaigiroku/1501.html",
+        },
+    },
     "shintoku": {
         "name": "新得町",
         # ファイル名: r7tei1kaigiroku.pdf / R7rin1gijiroku.pdf / r7yosantokubetukaigiroku.pdf

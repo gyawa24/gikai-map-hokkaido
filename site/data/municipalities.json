@@ -767,7 +767,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だより「かりば」のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "suttsu",
@@ -789,7 +792,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトの議会ページが2017年で更新停止しており、現在の会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "rankoshi",
@@ -856,7 +862,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには「議会だより」のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kyogoku",
@@ -880,7 +889,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには「議会だよりきょうわ」のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "iwanai",
@@ -919,7 +931,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議員名簿と「議会開催のお知らせ」のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "shakotan",
@@ -931,7 +946,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに掲載されているのは2ページ程度の「結果」サマリーのみで、本文発言録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "furubira",
@@ -983,7 +1001,8 @@
     "furigana": "あかいがわむら",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -997,7 +1016,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが「定例会M月会議」の通年会期制で標準パターンに合わず、現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "sobetsu",
@@ -1007,7 +1029,8 @@
     "furigana": "そうべつちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -1087,8 +1110,12 @@
     "region": "日高",
     "furigana": "ひだかちょう",
     "level": "municipality",
-    "features": [],
-    "active": true
+    "features": [
+      "minutes"
+    ],
+    "active": true,
+    "system": "dnp",
+    "tenant_id": 71
   },
   {
     "slug": "biratori",
@@ -1098,7 +1125,8 @@
     "furigana": "びらとりちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -1164,7 +1192,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトの会議録は HTML 主体（Shift_JIS）で PDF 化が一部年度のみ、現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "matsumae",

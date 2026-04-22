@@ -1,0 +1,65 @@
+[
+  {
+    "council_id": 20252004,
+    "name": "令和7年第4回臨時会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20252004.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 20252003,
+    "name": "令和7年第3回臨時会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20252003.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 20252002,
+    "name": "令和7年第2回臨時会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20252002.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 20251004,
+    "name": "令和7年第4回定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "20251004.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 20251003,
+    "name": "令和7年第3回定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "20251003.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 20251002,
+    "name": "令和7年第2回定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "20251002.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 20251001,
+    "name": "令和7年第1回定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "20251001.json",
+    "schedule_count": 1
+  }
+]
