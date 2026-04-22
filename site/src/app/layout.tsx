@@ -118,6 +118,12 @@ export default function RootLayout({
               </div>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 pt-1">
                 <Link
+                  href="/news"
+                  className="hover:text-white transition-colors underline decoration-blue-500"
+                >
+                  お知らせ
+                </Link>
+                <Link
                   href="/privacy"
                   className="hover:text-white transition-colors underline decoration-blue-500"
                 >

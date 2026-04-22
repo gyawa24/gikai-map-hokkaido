@@ -83,7 +83,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/map`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}/decisions`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.5 },
     { url: `${BASE_URL}/schedule`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.5 },
-    { url: `${BASE_URL}/newsletter`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.5 }
+    { url: `${BASE_URL}/newsletter`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.5 },
+    { url: `${BASE_URL}/news`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.5 },
+    { url: `${BASE_URL}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 }
   );
 
   // ── Full-feature cities (chitose, eniwa, tomakomai) ───────────────────────

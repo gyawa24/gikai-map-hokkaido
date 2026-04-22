@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { getMunicipalities } from "@/lib/municipalities";
+import { getNews, categoryClass } from "@/lib/news";
 import type { Member } from "@/types/member";
 import type { Decision } from "@/types/decision";
 
@@ -56,6 +57,7 @@ export default function HomePage() {
   const allMunis = getMunicipalities().filter((m) => m.active);
   const prefecture = allMunis.find((m) => m.level === "prefecture");
   const municipalities = allMunis.filter((m) => m.level === "municipality");
+  const latestNews = getNews().slice(0, 3);
   const cities = municipalities.map((m) => ({
     id: m.slug,
     name: m.council_name,
@@ -83,6 +85,39 @@ export default function HomePage() {
           北海道内の市町村議会の議事録・議決結果・議員名簿を横断的に収録。だれでも簡単に閲覧できます。
         </p>
       </section>
+
+      {/* 最新のお知らせ */}
+      {latestNews.length > 0 && (
+        <section className="mb-6 bg-[#F4F6F9] rounded-lg border border-[#E2E8F0] px-4 py-3">
+          <div className="flex items-center justify-between mb-2">
+            <h3 className="text-xs font-semibold text-[#718096] uppercase tracking-wider">お知らせ</h3>
+            <Link
+              href="/news"
+              className="text-xs text-[#2A5298] hover:text-[#1B3A6B] transition-colors"
+            >
+              すべて見る ›
+            </Link>
+          </div>
+          <ul className="space-y-1.5">
+            {latestNews.map((item, i) => (
+              <li key={i} className="flex items-start gap-2 text-sm">
+                <span className="text-xs text-[#718096] shrink-0 mt-1 tabular-nums">
+                  {item.date.slice(5).replace("-", "/")}
+                </span>
+                <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0 mt-0.5 ${categoryClass(item.category)}`}>
+                  {item.category}
+                </span>
+                <Link
+                  href="/news"
+                  className="text-sm text-[#1A202C] hover:text-[#1B3A6B] transition-colors line-clamp-1"
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {/* 北海道議会 */}
       {prefecture && (
