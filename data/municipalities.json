@@ -1470,7 +1470,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だよりと一般質問要約のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "pippu",
@@ -1497,7 +1500,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会開催日程と動画配信のみで、テキスト形式の会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "higashikawa",
@@ -1547,7 +1553,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会白書と議会だよりのみで、本会議会議録本文は未公開です（YouTubeライブ配信あり）。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "minamifurano",
@@ -1602,7 +1611,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議決結果のみで、本会議会議録本文は未公開です（令和5年以降順次掲載予定との記載あり）。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "shimokawa",
@@ -2035,7 +2047,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議記録PDFはありますがWordPress構造でリンクテキストに会議情報が含まれず現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "yubetsu",
@@ -2047,7 +2062,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが「会議結果」と「会議録」混在＋匿名ファイル名のため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "takinoue",
@@ -2059,7 +2077,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議内容PDFはありますが逐語議事録か要約か不明で現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "okoppe",
@@ -2098,7 +2119,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトの会議録ページがサーバ不通で確認できておらず現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "oozora",
@@ -2110,7 +2134,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトの会議録ページ構造が確認できておらず現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "otofuke",
@@ -2344,7 +2371,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが多階層ディレクトリ構造のため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "akkeshi",
@@ -2367,7 +2397,8 @@
     "furigana": "はまなかちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -2379,7 +2410,8 @@
     "furigana": "しべちゃちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },

@@ -517,6 +517,26 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.yuni.lg.jp/chosei/gikai/teireikai",
         },
     },
+    "hamanaka": {
+        "name": "浜中町",
+        # ファイル名: R7-1-1day.pdf / r6-3-2.pdf
+        "strategy": "filename_pattern",
+        "filename_regex": r"[Rr](?P<ey>\d+)-(?P<seq>\d+)-(?P<day>\d+)(?:day)?\.pdf",
+        "type_map": {"": "定例会"},
+        "era_base": 2018,
+        "sort_groups": ["day"],
+        "link_text_format": "第{day}日",
+        "index_url": "https://www.townhamanaka.jp/gyousei/kaigi/",
+    },
+    "shibecha": {
+        "name": "標茶町",
+        # 定例会 R07T4.pdf / 臨時会 R07R1.pdf / 委員会は除外
+        "strategy": "filename_pattern",
+        "filename_regex": r"R(?P<ey>\d+)(?P<t>T|R)(?P<seq>\d+)\.pdf",
+        "type_map": {"t": "定例会", "r": "臨時会"},
+        "era_base": 2018,
+        "index_url": "https://town.shibecha.hokkaido.jp/gikai/gijiroku.html",
+    },
     "akkeshi": {
         "name": "厚岸町",
         # ファイル名: R07-1honkaigi0305.pdf （本会議）/ rinji_YYMMDD.pdf （臨時会）
