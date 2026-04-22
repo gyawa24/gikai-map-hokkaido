@@ -548,7 +548,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録ページはありますが議決結果が主体で本文取得が確認できておらず現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "yuni",
@@ -588,7 +591,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトの定例会会議録はHTML形式で公開されており、PDF形式は臨時会のみのため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "tsukigata",
@@ -613,7 +619,8 @@
     "furigana": "うらうすちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -655,7 +662,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議記録ページはありますが構造確認が不十分で現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "uryu",
@@ -678,7 +688,8 @@
     "furigana": "ほくりゅうちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -692,7 +703,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますがCMS自動採番ファイル名と特殊なリンクテキスト構造のため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "sapporo",
@@ -745,7 +759,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会通信（議会だより）のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "otaru",
@@ -784,7 +801,10 @@
     "furigana": "すっつちょう",
     "level": "municipality",
     "features": [],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには「議会の日程」と議会だよりのみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kuromatsunai",
@@ -811,7 +831,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが年度別ページの巡回と日時タイムスタンプファイル名のため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "niseko",
@@ -881,7 +904,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議員紹介・議会概要のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kyowa",
@@ -923,7 +949,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kamoenai",
@@ -1271,7 +1300,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには本会議「審議結果」（議決結果）のみで、本会議会議録本文は未公開です（YouTube録画あり）。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "mori",
@@ -1386,7 +1418,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに「会務報告」PDFはありますが議決概要であり、本会議会議録本文は未公開と判断されます。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "setana",

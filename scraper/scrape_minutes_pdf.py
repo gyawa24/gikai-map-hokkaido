@@ -517,6 +517,16 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.yuni.lg.jp/chosei/gikai/teireikai",
         },
     },
+    "urausu": {
+        "name": "浦臼町",
+        # ファイル名: kaigirokuR6-1tei.pdf / kaigirokuR7-2rin.pdf
+        # giketu/tukoku 等の他PDFは "kaigiroku" prefix 無いので自然に除外される
+        "strategy": "filename_pattern",
+        "filename_regex": r"kaigirokuR(?P<ey>\d+)-(?P<seq>\d+)(?P<t>tei|rin)\.pdf",
+        "type_map": {"tei": "定例会", "rin": "臨時会"},
+        "era_base": 2018,
+        "index_url": "https://www.town.urausu.hokkaido.jp/kurashi/gyosei/urausutyo/kaigiroku.html",
+    },
     "hamanaka": {
         "name": "浜中町",
         # ファイル名: R7-1-1day.pdf / r6-3-2.pdf
