@@ -11,12 +11,20 @@ import { getMunicipality } from "@/lib/municipalities";
 export const dynamicParams = false;
 
 function getSession(city: string, id: string): MinutesSession | null {
-  const fp = path.join(process.cwd(), "data", city, "minutes", `${id}.json`);
-  try {
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesSession;
-  } catch {
-    return null;
+  // 一部自治体（旭川・函館・釧路など）は data/{city}/{id}.json 直下に置かれている。
+  // まず minutes/ サブディレクトリを試し、なければ city ルート直下を見る。
+  const candidates = [
+    path.join(process.cwd(), "data", city, "minutes", `${id}.json`),
+    path.join(process.cwd(), "data", city, `${id}.json`),
+  ];
+  for (const fp of candidates) {
+    try {
+      return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesSession;
+    } catch {
+      // try next
+    }
   }
+  return null;
 }
 
 function getEnriched(city: string, id: string): MinutesEnriched | null {
@@ -68,12 +76,20 @@ export async function generateStaticParams() {
   const params: { city: string; id: string }[] = [];
   for (const m of getMunicipalities()) {
     if (!m.active) continue;
-    const fp = path.join(process.cwd(), "data", m.slug, "minutes", "index.json");
-    try {
-      const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
-      for (const item of index) params.push({ city: m.slug, id: String(item.council_id) });
-    } catch {
-      // 議事録データがない自治体はスキップ
+    // minutes/index.json が基本形。ない場合は city 直下の index.json を見る。
+    const candidates = [
+      path.join(process.cwd(), "data", m.slug, "minutes", "index.json"),
+      path.join(process.cwd(), "data", m.slug, "index.json"),
+    ];
+    for (const fp of candidates) {
+      try {
+        const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
+        if (!Array.isArray(index)) continue;
+        for (const item of index) params.push({ city: m.slug, id: String(item.council_id) });
+        break;
+      } catch {
+        // try next
+      }
     }
   }
   return params;

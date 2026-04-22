@@ -23,12 +23,20 @@ export async function generateMetadata({
 }
 
 function getMinutesIndex(city: string): MinutesIndexItem[] {
-  const fp = path.join(process.cwd(), "data", city, "minutes", "index.json");
-  try {
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
-  } catch {
-    return [];
+  // 自治体によって data/{city}/minutes/index.json または data/{city}/index.json
+  const candidates = [
+    path.join(process.cwd(), "data", city, "minutes", "index.json"),
+    path.join(process.cwd(), "data", city, "index.json"),
+  ];
+  for (const fp of candidates) {
+    try {
+      const data = JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
+      if (Array.isArray(data)) return data;
+    } catch {
+      // try next
+    }
   }
+  return [];
 }
 
 function getEnriched(city: string, councilId: number): MinutesEnriched | null {
