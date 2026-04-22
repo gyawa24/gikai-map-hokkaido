@@ -5,8 +5,7 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "453.json",
-    "schedule_count": 6
+    "file": "453.json"
   },
   {
     "council_id": 447,
@@ -14,8 +13,7 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "447.json",
-    "schedule_count": 6
+    "file": "447.json"
   },
   {
     "council_id": 443,
@@ -23,8 +21,7 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "443.json",
-    "schedule_count": 6
+    "file": "443.json"
   },
   {
     "council_id": 439,
@@ -32,8 +29,7 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "439.json",
-    "schedule_count": 9
+    "file": "439.json"
   },
   {
     "council_id": 451,
@@ -41,8 +37,7 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "451.json",
-    "schedule_count": 1
+    "file": "451.json"
   },
   {
     "council_id": 435,
@@ -50,8 +45,7 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "435.json",
-    "schedule_count": 6
+    "file": "435.json"
   },
   {
     "council_id": 117,
@@ -59,8 +53,7 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "117.json",
-    "schedule_count": 6
+    "file": "117.json"
   },
   {
     "council_id": 116,
@@ -68,8 +61,7 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "116.json",
-    "schedule_count": 6
+    "file": "116.json"
   },
   {
     "council_id": 115,
@@ -77,7 +69,141 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "115.json",
-    "schedule_count": 9
+    "file": "115.json"
+  },
+  {
+    "council_id": 114,
+    "name": "令和 ５年 １２月 定例会",
+    "year": "2023",
+    "japanese_year": "令和5年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "114.json",
+    "schedule_count": 7
+  },
+  {
+    "council_id": 113,
+    "name": "令和 ５年  ９月 定例会",
+    "year": "2023",
+    "japanese_year": "令和5年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "113.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 112,
+    "name": "令和 ５年  ６月 定例会",
+    "year": "2023",
+    "japanese_year": "令和5年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "112.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 111,
+    "name": "令和 ５年  ２月 定例会",
+    "year": "2023",
+    "japanese_year": "令和5年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "111.json",
+    "schedule_count": 10
+  },
+  {
+    "council_id": 110,
+    "name": "令和 ４年 １２月 定例会",
+    "year": "2022",
+    "japanese_year": "令和4年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "110.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 109,
+    "name": "令和 ４年  ９月 定例会",
+    "year": "2022",
+    "japanese_year": "令和4年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "109.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 108,
+    "name": "令和 ４年  ６月 定例会",
+    "year": "2022",
+    "japanese_year": "令和4年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "108.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 107,
+    "name": "令和 ４年  ２月 定例会",
+    "year": "2022",
+    "japanese_year": "令和4年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "107.json",
+    "schedule_count": 10
+  },
+  {
+    "council_id": 103,
+    "name": "令和 ３年 １２月 定例会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "103.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 102,
+    "name": "令和 ３年  ９月 定例会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "102.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 101,
+    "name": "令和 ３年  ６月 定例会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "101.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 100,
+    "name": "令和 ３年  ２月 定例会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "100.json",
+    "schedule_count": 10
+  },
+  {
+    "council_id": 106,
+    "name": "令和 ３年 １１月 臨時会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "106.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 105,
+    "name": "令和 ３年  ８月 臨時会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "105.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 104,
+    "name": "令和 ３年  ５月 臨時会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "104.json",
+    "schedule_count": 1
   }
 ]
