@@ -630,7 +630,8 @@
     "furigana": "もせうしちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -654,7 +655,8 @@
     "furigana": "うりゅうちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -1249,7 +1251,8 @@
     "furigana": "おしゃまんべちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -1263,7 +1266,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトを確認したが本会議会議録は未公開（一般質問要旨PDFのみ掲載）。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "assabu",
@@ -1620,7 +1626,8 @@
     "furigana": "はぼろちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },

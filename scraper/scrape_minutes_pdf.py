@@ -440,6 +440,47 @@ PDF_CONFIGS: dict[str, dict] = {
         "council_tag": "h4",
         # council見出し例: 「12月定例会」「9月定例会」「第5回臨時会」「第1回臨時会」
     },
+    "uryu": {
+        "name": "雨竜町",
+        # ファイル名 uryugikai_kaigiroku_R7teirei01.pdf / R7rinzi01.pdf が R7以降の標準
+        # 旧来形式 R6_1_teireikai_uryutyou.pdf は別regexで吸収
+        "strategy": "filename_pattern",
+        "filename_regex": r"(?:uryugikai_kaigiroku_)?R(?P<ey>\d+)(?:_(?P<s1>\d+))?_?(?P<t>teirei|rinzi|teireikai|rinjikai)\w*?(?P<seq2>\d+)?\.pdf",
+        "type_map": {
+            "teirei": "定例会", "teireikai": "定例会",
+            "rinzi": "臨時会", "rinjikai": "臨時会",
+        },
+        "era_base": 2018,
+        "index_url": "https://www.town.uryu.hokkaido.jp/docs/4719.html",
+    },
+    "moseushi": {
+        "name": "妹背牛町",
+        # 親indexから各定例会詳細HTMLへドリルダウン
+        # 詳細ページのH1「令和6年第2回定例会」等から council情報を取る
+        "strategy": "category_drilldown",
+        "index_url": "https://www.town.moseushi.hokkaido.jp/gikai/gijiroku/",
+        "use_detail_title": True,
+        "pdf_filter": ["pdf"],
+    },
+    "oshamambe": {
+        "name": "長万部町",
+        # list28 親 → 年度HTML → 詳細ページ? 実は 年度HTML に直接PDFリンク + 豊富なリンクテキスト
+        # 「第1回定例会　第1日目(令和4年3月10日)」形式
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.town.oshamambe.lg.jp/site/gikai/8216.html",
+            2024: "https://www.town.oshamambe.lg.jp/site/gikai/6812.html",
+        },
+    },
+    "haboro": {
+        "name": "羽幌町",
+        # 年度別HTMLに直接PDFリンクと「第3回定例会（令和7年3月11日）」形式のリンクテキスト
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.town.haboro.lg.jp/gikai-iinkai/gikai/gijiroku/2025-0610-1529-17.html",
+            2024: "https://www.town.haboro.lg.jp/gikai-iinkai/gikai/gijiroku/R06kaigiroku.html",
+        },
+    },
     "mukawa": {
         "name": "むかわ町",
         "index_url": "http://www.town.mukawa.lg.jp/2872.htm",
@@ -597,7 +638,7 @@ def extract_pdf_links_by_filename(cfg: dict) -> list[dict]:
             year = era_base + int(gd["ey"])
         else:
             continue
-        seq = int(gd.get("seq") or 0) or None
+        seq = int(gd.get("seq") or gd.get("seq2") or gd.get("s1") or 0) or None
         ttype = type_map.get((gd.get("t") or "").lower())
         if not ttype:
             continue
@@ -1121,33 +1162,35 @@ def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list
 
                 if use_detail_title:
                     # 詳細ページを一度fetchしてH1/titleから council情報を取る（shiraoi等）
-                    if href.startswith(url) or href.startswith("/") or href.startswith("http"):
-                        if not any(d["url"] == full for d in detail_targets):
-                            try:
-                                pr = requests.get(full, timeout=15, headers=HEADERS)
-                                pr.encoding = pr.apparent_encoding or "utf-8"
-                                title_m = re.search(r"<h1[^>]*>([\s\S]{1,200}?)</h1>", pr.text, re.I)
-                                title_text = _zen_to_half(re.sub(r"<[^>]+>", "", title_m.group(1)).strip()) if title_m else ""
-                            except Exception:
-                                title_text = ""
-                            if not title_text:
-                                continue
-                            em = era_re.search(title_text)
-                            tm = type_re.search(title_text)
-                            sm = seq_re.search(title_text) or month_kaigi_re.search(title_text)
-                            if not (em and tm and sm):
-                                continue
-                            actual_year = 2018 + int(em.group(1))
-                            if actual_year not in years:
-                                continue
-                            detail_targets.append({
-                                "url": full,
-                                "year": actual_year,
-                                "seq": int(sm.group(1)),
-                                "type": f"{tm.group(1)}会",
-                                "title": title_text[:80],
-                            })
-                            time.sleep(0.2)
+                    # リンクテキストで明らかに関係なさそうなものは先にフィルタ
+                    if not ("定例会" in text or "臨時会" in text or "会議録" in text):
+                        continue
+                    if not any(d["url"] == full for d in detail_targets):
+                        try:
+                            pr = requests.get(full, timeout=15, headers=HEADERS)
+                            pr.encoding = pr.apparent_encoding or "utf-8"
+                            title_m = re.search(r"<h1[^>]*>([\s\S]{1,200}?)</h1>", pr.text, re.I)
+                            title_text = _zen_to_half(re.sub(r"<[^>]+>", "", title_m.group(1)).strip()) if title_m else ""
+                        except Exception:
+                            title_text = ""
+                        if not title_text:
+                            continue
+                        em = era_re.search(title_text)
+                        tm = type_re.search(title_text)
+                        sm = seq_re.search(title_text) or month_kaigi_re.search(title_text)
+                        if not (em and tm and sm):
+                            continue
+                        actual_year = 2018 + int(em.group(1))
+                        if actual_year not in years:
+                            continue
+                        detail_targets.append({
+                            "url": full,
+                            "year": actual_year,
+                            "seq": int(sm.group(1)),
+                            "type": f"{tm.group(1)}会",
+                            "title": title_text[:80],
+                        })
+                        time.sleep(0.2)
                     continue
 
                 em = era_re.search(text)
