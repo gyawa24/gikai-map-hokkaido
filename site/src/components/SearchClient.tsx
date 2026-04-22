@@ -112,6 +112,10 @@ function SearchClientInner() {
     ? sessionsAfterSource
     : sessionsAfterSource.filter((r) => r.year === yearFilter);
 
+  // 親フィルタ（city/source）が変わると子フィルタ（source/year/faction）の選択肢集合が
+  // 変わる。前の選択値が新しい選択肢集合に含まれない場合、pill は非表示になるのに
+  // state だけ残ってヒット数 0 の矛盾が起きるので "all" にリセットする。
+
   const membersAfterCity = cityFilter === "all" ? memberResults : memberResults.filter((m) => m.city === cityFilter);
   const filteredMembers = factionFilter === "all"
     ? membersAfterCity
@@ -128,6 +132,31 @@ function SearchClientInner() {
   const availableYears = Array.from(
     new Set(sessionsAfterSource.map((r) => r.year).filter(Boolean))
   ).sort((a, b) => (a < b ? 1 : -1));
+
+  // 親フィルタ変更で選択肢から外れた子フィルタ state を "all" にリセット。
+  // 依存配列には primitive 化したキーを渡して、配列の reference だけで
+  // 再発火しないようにする。
+  const availableSourcesKey = Array.from(availableSourceTypes).sort().join("|");
+  const availableYearsKey = availableYears.join("|");
+  const availableFactionsKey = availableFactions.join("|");
+  useEffect(() => {
+    if (sourceFilter !== "all" && !availableSourceTypes.has(sourceFilter)) {
+      setSourceFilter("all");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [availableSourcesKey]);
+  useEffect(() => {
+    if (yearFilter !== "all" && !availableYears.includes(yearFilter)) {
+      setYearFilter("all");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [availableYearsKey]);
+  useEffect(() => {
+    if (factionFilter !== "all" && !availableFactions.includes(factionFilter)) {
+      setFactionFilter("all");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [availableFactionsKey]);
 
   return (
     <div className="flex flex-col gap-4">
