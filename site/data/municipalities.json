@@ -600,7 +600,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが連番ファイル名でリンクテキストが「会議録」のみのため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "urausu",
@@ -727,7 +730,8 @@
     "furigana": "とうべつちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -1153,7 +1157,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが匿名タイムスタンプファイル名と複数階層のため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "samani",
@@ -1180,7 +1187,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だより（広報）のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "shinhidaka",
@@ -1445,7 +1455,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だより（広報）のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "toma",
@@ -1752,7 +1765,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトのPDFは「議会の動き」要約版6ページ程度で全文会議録の完全版は未公開と推定されます。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "sarufutsu",
@@ -1801,7 +1817,8 @@
     "furigana": "えさしちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -2120,7 +2137,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますがdetailページ経由と日付ベースファイル名のため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kamishihoro",
@@ -2281,7 +2301,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトの議会ページの構造が確認できておらず現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "rikubetsu",
@@ -2331,7 +2354,8 @@
     "furigana": "あっけしちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -2439,7 +2463,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには定例会・臨時会の審議事項（議案・議決結果）のみで、本会議会議録本文は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "rausu",
@@ -2451,7 +2478,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが日本語ファイル名と新旧形式混在のため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "hokkaido",

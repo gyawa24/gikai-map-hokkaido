@@ -517,6 +517,36 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.yuni.lg.jp/chosei/gikai/teireikai",
         },
     },
+    "akkeshi": {
+        "name": "厚岸町",
+        # ファイル名: R07-1honkaigi0305.pdf （本会議）/ rinji_YYMMDD.pdf （臨時会）
+        # 本会議のみ取得対象（yosan/hosei/jourei/gianは委員会・議案書なので除外）
+        "strategy": "filename_pattern",
+        "filename_regex": r"R(?P<ey>\d+)-(?P<seq>\d+)honkaigi(?P<mm>\d{2})(?P<dd>\d{2})\.pdf",
+        "type_map": {"": "定例会"},
+        "era_base": 2018,
+        "sort_groups": ["mm", "dd"],
+        "link_text_format": "{mm:02d}月{dd:02d}日",
+        "index_urls": {
+            2025: "https://www.akkeshi-town.jp/chogikai/minutes/r7/",
+            2024: "https://www.akkeshi-town.jp/chogikai/minutes/r6/",
+        },
+    },
+    "tobetsu": {
+        "name": "当別町",
+        # 年度別ページ→「令和X年第N回定例会(M月)」リンクテキスト
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.town.tobetsu.hokkaido.jp/site/gikai/50370.html",
+            2024: "https://www.town.tobetsu.hokkaido.jp/site/gikai/45944.html",
+        },
+    },
+    "esashi_souya": {
+        "name": "枝幸町",
+        # 単一ページに「令和X年第Y回定例会 第N号」リンク
+        "strategy": "linktext_pattern",
+        "index_url": "https://www.esashi.jp/gikai/meeting/minutes.html",
+    },
     "kamifurano": {
         "name": "上富良野町",
         # ファイル名: r06_1all.pdf (定例会全日合本) / r06_rinji01.pdf (臨時会)
