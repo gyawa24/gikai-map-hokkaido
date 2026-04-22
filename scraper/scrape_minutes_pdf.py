@@ -517,6 +517,65 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.yuni.lg.jp/chosei/gikai/teireikai",
         },
     },
+    "shintoku": {
+        "name": "新得町",
+        # ファイル名: r7tei1kaigiroku.pdf / R7rin1gijiroku.pdf / r7yosantokubetukaigiroku.pdf
+        "strategy": "filename_pattern",
+        "filename_regex": r"r(?P<ey>\d+)(?P<t>tei|rin|yosan|kessan)(?:tokubetu)?(?P<seq>\d+)?(?:kaigiroku|gijiroku)?\.pdf",
+        "type_map": {
+            "tei": "定例会", "rin": "臨時会",
+            "yosan": "予算特別委員会", "kessan": "決算特別委員会",
+        },
+        "era_base": 2018,
+        "index_urls": {
+            2025: "https://www.shintoku-town.jp/gyousei/gikai/kaigiroku/r7/",
+            2024: "https://www.shintoku-town.jp/gyousei/gikai/kaigiroku/r6/",
+        },
+    },
+    "rikubetsu": {
+        "name": "陸別町",
+        # ファイル名: No.4(R07.03.12).pdf / No.1(R06.12.09).pdf
+        "strategy": "filename_pattern",
+        "filename_regex": r"No\.(?P<seq>\d+)\(R(?P<ey>\d+)\.(?P<mm>\d+)\.(?P<dd>\d+)\)\.pdf",
+        "type_map": {"": "定例会"},  # 定例・臨時の区別がファイル名にない→定例会固定
+        "era_base": 2018,
+        "sort_groups": ["mm", "dd"],
+        "link_text_format": "{mm:02d}月{dd:02d}日 第{seq}号",
+        "index_urls": {
+            2025: "https://www.rikubetsu.jp/gikai/kaigiroku/R07/",
+            2024: "https://www.rikubetsu.jp/gikai/kaigiroku/R06/",
+        },
+    },
+    "toyokoro": {
+        "name": "豊頃町",
+        # リンクテキスト「令和7年第1回定例会第3号(3月13日)」
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.toyokoro.jp/site/gikai/5759.html",
+            2024: "https://www.toyokoro.jp/site/gikai/4642.html",
+        },
+    },
+    "bifuka": {
+        "name": "美深町",
+        # 見出し「令和7年第4回定例会」配下に「議事日程」「会議録」PDF
+        "strategy": "multi_index_html",
+        "index_urls": {
+            2025: "https://www.town.bifuka.hokkaido.jp/cms/section/gikai/nuv41p000000fpk7.html",
+            2024: "https://www.town.bifuka.hokkaido.jp/cms/section/gikai/nuv41p000000awkn.html",
+        },
+        "council_tag": "h3",
+    },
+    "bihoro": {
+        "name": "美幌町",
+        # 2段ドリルダウン: 年度トップ→「第N回臨時会（令和7年2月3日）」中間ページ→PDF
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2025: "https://www.town.bihoro.hokkaido.jp/site/gikai/1102.html",
+            2024: "https://www.town.bihoro.hokkaido.jp/site/gikai/1084.html",
+        },
+        "use_detail_title": True,
+        "pdf_filter": ["pdf"],
+    },
     "shimukappu": {
         "name": "占冠村",
         # リンクテキスト「第N回占冠村議会定例会（自 令和N年M月D日 …）」
@@ -699,6 +758,8 @@ def extract_pdf_links_by_filename(cfg: dict) -> list[dict]:
         gd = pm.groupdict()
         if gd.get("yyyy"):
             year = int(gd["yyyy"])
+        elif gd.get("yy") is not None:
+            year = 2000 + int(gd["yy"])
         elif gd.get("ey") is not None and era_base is not None:
             year = era_base + int(gd["ey"])
         else:
