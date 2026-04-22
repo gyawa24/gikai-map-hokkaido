@@ -517,6 +517,24 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.yuni.lg.jp/chosei/gikai/teireikai",
         },
     },
+    "kamifurano": {
+        "name": "上富良野町",
+        # ファイル名: r06_1all.pdf (定例会全日合本) / r06_rinji01.pdf (臨時会)
+        "strategy": "filename_pattern",
+        "filename_regex": r"r(?P<ey>\d+)_(?:(?P<t>rinji)(?P<seq>\d+)|(?P<seq2>\d+)(?P<t2>all))\.pdf",
+        "type_map": {"all": "定例会", "rinji": "臨時会"},
+        "era_base": 2018,
+        "index_url": "https://www.town.kamifurano.hokkaido.jp/index.php?id=152",
+    },
+    "nanae": {
+        "name": "七飯町",
+        # category_drilldown: hotnews/category/471 → detail/{ID} → PDF対
+        # 詳細リンクテキスト「令和X年第N回七飯町議会定例会会議録（…）」
+        "strategy": "category_drilldown",
+        "index_url": "https://www.town.nanae.hokkaido.jp/hotnews/category/471.html",
+        "use_detail_title": True,
+        "pdf_filter": ["pdf"],
+    },
     "akaigawa": {
         "name": "赤井川村",
         # WordPress、リンクテキスト「令和X年第Y回定例会本会議 第Z日（令和X年M月D日開催）」
@@ -798,7 +816,7 @@ def extract_pdf_links_by_filename(cfg: dict) -> list[dict]:
         else:
             continue
         seq = int(gd.get("seq") or gd.get("seq2") or gd.get("s1") or 0) or None
-        ttype = type_map.get((gd.get("t") or "").lower())
+        ttype = type_map.get((gd.get("t") or gd.get("t2") or "").lower())
         if not ttype:
             continue
 
