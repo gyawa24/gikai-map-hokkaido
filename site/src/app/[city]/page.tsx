@@ -56,6 +56,7 @@ export default async function CityMembersPage({
   const municipality = getMunicipality(city);
   const minutesUnavailable = municipality?.minutes_status === "unavailable";
   const minutesUnavailableNote = municipality?.minutes_status_note;
+  const minutesVerifiedAt = municipality?.minutes_verified_at;
 
   if (members.length === 0) {
     return (
@@ -87,10 +88,14 @@ export default async function CityMembersPage({
       />
       {minutesUnavailable && (
         <div className="max-w-2xl mx-auto mb-5 rounded-lg border border-[#E2E8F0] bg-[#F4F6F9] px-4 py-3">
-          <p className="text-sm font-semibold text-[#1B3A6B] mb-1">議事録未公開</p>
+          <p className="text-sm font-semibold text-[#1B3A6B] mb-1">議事録未公開（AIでは見つけられず）</p>
           <p className="text-xs text-[#4A5568] leading-relaxed">
             {minutesUnavailableNote ?? "現時点で議会会議録のオンライン公開を確認できていません。"}
-            （公式サイトの公開状況が変わった場合は{" "}
+            {minutesVerifiedAt && (
+              <span className="text-[#718096]">（最終確認: {minutesVerifiedAt}）</span>
+            )}
+            <br />
+            公式サイトで公開されていてもAI検索で見つけられなかった可能性があります。URLをご存じの方は{" "}
             <a
               href="https://github.com/gyawa24/gikai-map-hokkaido/issues"
               target="_blank"
@@ -99,7 +104,7 @@ export default async function CityMembersPage({
             >
               GitHub Issue
             </a>
-            でお知らせください）
+            でお知らせください。
           </p>
         </div>
       )}

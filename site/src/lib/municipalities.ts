@@ -14,6 +14,7 @@ export type Municipality = {
   system?: string;
   minutes_status?: "available" | "unavailable";
   minutes_status_note?: string;
+  minutes_verified_at?: string;
 };
 
 export function getMunicipalities(): Municipality[] {

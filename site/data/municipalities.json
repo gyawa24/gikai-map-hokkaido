@@ -834,7 +834,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "審議結果PDFのみ、会議録本文は未公開"
+    "minutes_status_note": "公式サイトに「審議結果」PDFの掲載はありますが、本会議会議録は見つかりませんでした。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kimobetsu",
@@ -884,7 +885,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "議事日程・一般質問順序表のみ公開、会議録本文は未公開"
+    "minutes_status_note": "公式サイトを確認したが本会議会議録の掲載は見つかりませんでした（議会だより・一般質問順序表のみ）。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "tomari",
@@ -1497,7 +1499,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "議案・意見書のみ、会議録本文は未公開"
+    "minutes_status_note": "公式サイトに「議事録のインターネット公開は未実施」と明記されています（議会図書室で閲覧可）。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kenbuchi",
@@ -1833,7 +1836,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "議事日程・新聞折込のみ"
+    "minutes_status_note": "公式サイト(gikai-sharitown.net)に議事日程・一般質問通告の掲載はありますが、本会議会議録は見つかりませんでした。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kiyosato",
@@ -2057,7 +2061,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "議員賛否一覧のみ"
+    "minutes_status_note": "公式サイトにHTML形式の議事録ページがありますが、PDF化されていないため現時点で取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "nakasatsunai",
