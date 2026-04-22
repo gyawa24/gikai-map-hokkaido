@@ -517,6 +517,15 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.yuni.lg.jp/chosei/gikai/teireikai",
         },
     },
+    "sarabetsu": {
+        "name": "更別村",
+        # リンクテキスト「令和6年第1回定例会第1日（令和6年3月11日）」
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.sarabetsu.jp/gikai/kaigiroku/r7/",
+            2024: "https://www.sarabetsu.jp/gikai/kaigiroku/r6/",
+        },
+    },
     "urausu": {
         "name": "浦臼町",
         # ファイル名: kaigirokuR6-1tei.pdf / kaigirokuR7-2rin.pdf

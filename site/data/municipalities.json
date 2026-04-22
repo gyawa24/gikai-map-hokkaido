@@ -1106,7 +1106,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが「定例会M月会議」の通年会期制で標準パターンに合わず、現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "abira",
@@ -1563,7 +1566,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに年度別の会議録ページはありますが2階層ドリルダウンが必要で現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kamifurano",
@@ -1733,7 +1739,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は非公開（情報開示請求制）です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "obira",
@@ -1745,7 +1754,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "tomamae",
@@ -1757,7 +1769,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "haboro",
@@ -1842,7 +1857,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議決結果・議事概要のみで、全文会議録は情報開示請求のみ閲覧可です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "nakatombetsu",
@@ -1854,7 +1872,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトのPDFは議事日程表のみで、本会議会議録本文は未公開と推定されます。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "esashi_souya",
@@ -1879,7 +1900,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが内容が要約・議事概要（200-600字）のみで全文会議録ではないため取込対象外です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "rebun",
@@ -1906,7 +1930,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに定例会ページはありますが全文会議録PDFが未確認で、議会だより中心です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "rishirifuji",
@@ -1918,7 +1945,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "horonobe",
@@ -2041,7 +2071,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに年度別の会議録ページはありますが構造確認が不十分で現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "oketo",
@@ -2127,7 +2160,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議会だより・日程・一般質問通告のみで、本会議会議録は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "nishiokoppe",
@@ -2214,7 +2250,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFはありますが各会議が個別エントリーページ経由のため現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "shikaoi",
@@ -2280,7 +2319,8 @@
     "furigana": "さらべつむら",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -2475,7 +2515,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには審議結果一覧のみで、本会議会議録は未公開です（YouTube動画あり）。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "shiranuka",
