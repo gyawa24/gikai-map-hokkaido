@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import type { Session, SessionSummary } from "@/types/session";
 import type { Member } from "@/types/member";
 import TranscriptSegment from "@/components/TranscriptSegment";
+import AIDisclaimer from "@/components/AIDisclaimer";
 import { getMunicipality } from "@/lib/municipalities";
 
 export const dynamicParams = false;
@@ -139,6 +140,7 @@ export default async function CitySessionPage({
 
       {hasContent ? (
         <div className="flex flex-col gap-4">
+          <AIDisclaimer sourceLabel="YouTubeで視聴" />
           <h3 className="text-base font-bold text-[#1B3A6B]">
             要約・文字起こし
             <span className="ml-2 text-sm font-normal text-[#718096]">

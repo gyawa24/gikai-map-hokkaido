@@ -53,9 +53,23 @@ export default function TermsPage() {
         <h2 className="text-lg font-bold text-[#1B3A6B] mb-3 pb-1 border-b border-[#E2E8F0]">
           第4条（削除・訂正依頼）
         </h2>
-        <p className="text-base text-[#1A202C] leading-relaxed">
-          議員氏名・発言内容・その他の記載に誤りがある場合、またはプライバシー上の懸念がある場合は、お問い合わせ窓口までご連絡ください。合理的な範囲で速やかに対応いたします。
-        </p>
+        <ol className="text-base text-[#1A202C] leading-relaxed space-y-2 list-decimal pl-6">
+          <li>
+            議員氏名・発言内容・所属会派・議決結果等の記載に誤りがある場合、またはプライバシー上の懸念がある場合は、第7条のお問い合わせ窓口までご連絡ください。
+          </li>
+          <li>
+            ご連絡を受けた後、原則として<strong>3営業日以内</strong>に内容を確認し、合理的な範囲で訂正・削除・非表示化等の対応を行います。
+          </li>
+          <li>
+            AIによる要約・タグ・テーマ分類・Q&amp;A抽出について、発言者ご本人または代理人から訂正依頼があった場合は、<strong>優先的に対応</strong>します（原則1営業日以内の初動）。
+          </li>
+          <li>
+            対応の結果（訂正・削除・判断理由等）は、ご連絡をいただいた方にメールでご報告します。
+          </li>
+          <li>
+            対応内容にご納得いただけない場合の最終的な判断は当社が行いますが、当社判断に疑義がある場合は別途協議の上対応します。
+          </li>
+        </ol>
       </section>
 
       <section className="mb-8">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getByTag, getAllTags } from "@/lib/topics";
+import AIDisclaimer from "@/components/AIDisclaimer";
 import type { Metadata } from "next";
 
 type Props = {
@@ -47,6 +48,8 @@ export default async function TopicTagPage({ params }: Props) {
           「{decoded}」が議題になった議事録の一覧です。複数の市町村議会から横断的に表示しています。
         </p>
       </section>
+
+      <AIDisclaimer sourceLabel="議事録原文" />
 
       {records.length === 0 ? (
         <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
