@@ -78,6 +78,8 @@ export default async function CityMinutesPage({
   }));
 
   const enrichedCount = items.filter((i) => i.enriched).length;
+  const restricted = municipality?.minutes_access === "restricted";
+  const restrictedNote = municipality?.minutes_access_note;
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -85,13 +87,33 @@ export default async function CityMinutesPage({
         <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">公式議事録</h2>
         <p className="text-base text-[#4A5568] leading-relaxed">
           {cityName}議会の公式会議録です。本会議・委員会の発言内容をすべて収録しています。
-          {enrichedCount > 0 && (
+          {enrichedCount > 0 && !restricted && (
             <span className="text-sm text-[#718096]">
               {" "}（{enrichedCount}件にAI要約・タグあり）
             </span>
           )}
         </p>
       </section>
+
+      {restricted && (
+        <div className="mb-5 rounded-lg border border-[#E0B040] bg-[#FFF8E1] px-4 py-3">
+          <p className="text-sm font-semibold text-[#7A5A00] mb-1">本サイトでの全文閲覧は一時停止中です</p>
+          <p className="text-xs text-[#5A4500] leading-relaxed">
+            {restrictedNote ?? `${cityName}公式サイトの著作権ポリシーで複製・転用に事前許可を要する旨が明記されているため、許諾確認が取れるまで本サイトでの全文閲覧を停止しています。データは保管しており、許諾後に公開を再開します。`}
+            <br />
+            会議録本体は{" "}
+            <a
+              href="https://github.com/gyawa24/gikai-map-hokkaido/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[#7A5A00]"
+            >
+              {cityName}議会事務局
+            </a>
+            の公式ページからご覧ください。
+          </p>
+        </div>
+      )}
 
       {items.length === 0 ? (
         <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
@@ -101,6 +123,7 @@ export default async function CityMinutesPage({
         <MinutesIndexClient
           items={items}
           minutesBasePath={`/${city}/minutes`}
+          restricted={restricted}
         />
       )}
     </div>

@@ -13,6 +13,7 @@ type MinutesWithEnriched = MinutesIndexItem & {
 type Props = {
   items: MinutesWithEnriched[];
   minutesBasePath?: string;
+  restricted?: boolean;
 };
 
 const PAGE_SIZE = 10;
@@ -140,7 +141,7 @@ function generatePageNumbers(current: number, total: number): (number | "...")[]
   return pages;
 }
 
-function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes" }: Props) {
+function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restricted = false }: Props) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -414,20 +415,23 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes" }: Prop
                       <div key={cat}>
                         <p className="text-xs font-semibold text-[#718096] uppercase tracking-wider mb-2 pl-1">{cat}</p>
                         <div className="flex flex-col gap-2">
-                          {byCategory[cat].map((item) => (
-                            <Link
-                              key={item.council_id}
-                              href={`${minutesBasePath}/${item.council_id}`}
-                              className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-5 py-4 shadow-sm hover:shadow-md transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
-                            >
+                          {byCategory[cat].map((item) => {
+                            const itemContent = (
                               <div className="flex items-start gap-4">
                                 <div
-                                  className="w-1 self-stretch rounded-full shrink-0 bg-[#1B3A6B] opacity-20 group-hover:opacity-100 transition-opacity mt-0.5"
+                                  className={`w-1 self-stretch rounded-full shrink-0 mt-0.5 ${
+                                    restricted
+                                      ? "bg-[#A0AEC0] opacity-50"
+                                      : "bg-[#1B3A6B] opacity-20 group-hover:opacity-100 transition-opacity"
+                                  }`}
                                   aria-hidden="true"
                                 />
                                 <div className="flex-1 min-w-0">
-                                  <p className="text-base font-semibold text-[#1A202C] leading-snug mb-1">{item.name}</p>
-                                  {item.enriched && item.enriched.tags.length > 0 && (
+                                  <p className={`text-base font-semibold leading-snug mb-1 ${restricted ? "text-[#718096]" : "text-[#1A202C]"}`}>{item.name}</p>
+                                  {restricted && (
+                                    <p className="text-xs text-[#A0522D] mt-1">閲覧停止中（規約確認のため）</p>
+                                  )}
+                                  {!restricted && item.enriched && item.enriched.tags.length > 0 && (
                                     <div className="flex flex-wrap gap-1 mt-2">
                                       {[...new Set(item.enriched.tags.map(normalizeTag))].slice(0, 6).map((tag) => (
                                         <span
@@ -447,18 +451,40 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes" }: Prop
                                     </div>
                                   )}
                                 </div>
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  className="w-5 h-5 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 mt-0.5 transition-colors"
-                                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                  strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                                  aria-hidden="true"
-                                >
-                                  <polyline points="9 18 15 12 9 6" />
-                                </svg>
+                                {!restricted && (
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-5 h-5 text-[#CBD5E0] group-hover:text-[#1B3A6B] shrink-0 mt-0.5 transition-colors"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                                    aria-hidden="true"
+                                  >
+                                    <polyline points="9 18 15 12 9 6" />
+                                  </svg>
+                                )}
                               </div>
-                            </Link>
-                          ))}
+                            );
+                            if (restricted) {
+                              return (
+                                <div
+                                  key={item.council_id}
+                                  className="bg-[#F7F8FA] rounded-lg border border-[#E2E8F0] px-5 py-4 cursor-not-allowed"
+                                  aria-disabled="true"
+                                >
+                                  {itemContent}
+                                </div>
+                              );
+                            }
+                            return (
+                              <Link
+                                key={item.council_id}
+                                href={`${minutesBasePath}/${item.council_id}`}
+                                className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-5 py-4 shadow-sm hover:shadow-md transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                              >
+                                {itemContent}
+                              </Link>
+                            );
+                          })}
                         </div>
                       </div>
                     ))}

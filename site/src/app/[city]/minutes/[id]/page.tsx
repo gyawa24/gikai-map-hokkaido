@@ -103,6 +103,41 @@ export default async function CityMinutesDetailPage({
   const session = getSession(city, id);
   if (!session) notFound();
 
+  const restricted = municipality?.minutes_access === "restricted";
+  if (restricted) {
+    const note = municipality?.minutes_access_note;
+    return (
+      <div className="max-w-2xl mx-auto">
+        <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
+          <a href={`/${city}`} className="hover:text-[#1B3A6B] transition-colors">
+            {cityName}議会
+          </a>
+          <span aria-hidden="true">›</span>
+          <a
+            href={`/${city}/minutes`}
+            className="hover:text-[#1B3A6B] transition-colors"
+          >
+            議事録
+          </a>
+        </nav>
+        <div className="rounded-lg border border-[#E0B040] bg-[#FFF8E1] px-5 py-5">
+          <p className="text-base font-semibold text-[#7A5A00] mb-2">本サイトでの全文閲覧は一時停止中です</p>
+          <p className="text-sm text-[#5A4500] leading-relaxed">
+            {note ?? `${cityName}公式サイトの著作権ポリシーで複製・転用に事前許可を要する旨が明記されているため、許諾確認が取れるまで本サイトでの全文閲覧を停止しています。データは保管しており、許諾後に公開を再開します。`}
+          </p>
+          <p className="text-sm text-[#5A4500] leading-relaxed mt-3">
+            会議録本体は{cityName}議会事務局の公式ページからご覧ください。
+          </p>
+          <p className="text-xs text-[#7A5A00] mt-4">
+            <a href={`/${city}/minutes`} className="underline hover:text-[#5A4500]">
+              ← {cityName}議事録一覧に戻る
+            </a>
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   const enriched = getEnriched(city, id);
   const category = typeCategory(session.type_label);
 
