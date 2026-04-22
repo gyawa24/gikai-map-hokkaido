@@ -1103,7 +1103,8 @@
     "furigana": "にいかっぷちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -1129,7 +1130,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには「議会だより」広報誌のみで、会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "erimo",
@@ -1479,7 +1483,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトで公開されている「会議結果」PDFは決議要約のみで、本会議会議録本文は未公開です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "shimukappu",
@@ -1489,7 +1496,8 @@
     "furigana": "しむかっぷむら",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -1554,7 +1562,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議員紹介と「議会だより」広報誌のみで、会議録本文は掲載されていません。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "horokanai",
@@ -1641,7 +1652,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "会議録PDFは公開されていますがスキャン画像のためOCR処理が必要で現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "embetsu",
@@ -1868,7 +1882,8 @@
     "furigana": "こしみずちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -1908,7 +1923,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトの会議録は令和2年度(2020)までで、令和3年以降はWeb公開されていません。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "engaru",
@@ -2293,7 +2311,8 @@
     "furigana": "べつかいちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -2307,7 +2326,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトで公開されているのは一般質問の議員別PDFのみで、全文会議録は「ホームページ掲載用であり正式な会議録とは異なる」と注記。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "shibetsucho",

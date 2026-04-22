@@ -481,6 +481,35 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.haboro.lg.jp/gikai-iinkai/gikai/gijiroku/R06kaigiroku.html",
         },
     },
+    "shimukappu": {
+        "name": "占冠村",
+        # リンクテキスト「第N回占冠村議会定例会（自 令和N年M月D日 …）」
+        "strategy": "linktext_pattern",
+        "index_url": "https://www.vill.shimukappu.lg.jp/shimukappu/section/gikai/nmudtq000000cgh1.html",
+    },
+    "koshimizu": {
+        "name": "小清水町",
+        # /gikai/detail/00009799.html に全リスト、リンクテキストに日付・種別
+        "strategy": "linktext_pattern",
+        "index_url": "https://www.town.koshimizu.hokkaido.jp/gikai/detail/00009799.html",
+    },
+    "niikappu": {
+        "name": "新冠町",
+        # 見出し「令和N年第N回定例会」配下にPDF日付リスト
+        "strategy": "multi_index_html",
+        "index_urls": {None: "https://www.niikappu.jp/gyose/gikai/gikai_kaigiroku.html"},
+        "council_tag": "h3",
+        "year_from_heading": True,
+    },
+    "betsukai": {
+        "name": "別海町",
+        # 年度別URL、リンクテキスト「令和N年第N回定例会 第N号（令和N年M月D日）」
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://betsukai.jp/gikai/kaigikekka/kaigiroku/R07/",
+            2024: "https://betsukai.jp/gikai/kaigikekka/kaigiroku/R06/",
+        },
+    },
     "mukawa": {
         "name": "むかわ町",
         "index_url": "http://www.town.mukawa.lg.jp/2872.htm",
