@@ -558,7 +558,8 @@
     "furigana": "ゆにちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -572,7 +573,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトには議決結果と議案書PDFのみで、本会議会議録本文は掲載されていません。議会中継動画は公開あり。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "kuriyama",
@@ -620,7 +624,10 @@
     "features": [
       "members"
     ],
-    "active": true
+    "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトに会議録PDFは掲載されていますが、近年はファイル名がタイムスタンプ形式に変わったため自動取込が困難で現時点は取り込み未対応です。",
+    "minutes_verified_at": "2026-04-22"
   },
   {
     "slug": "moseushi",
@@ -1167,7 +1174,8 @@
     "furigana": "まつまえちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },
@@ -1433,7 +1441,8 @@
     "furigana": "ひがしかわちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true
   },

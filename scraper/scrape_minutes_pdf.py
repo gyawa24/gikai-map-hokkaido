@@ -481,6 +481,42 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.haboro.lg.jp/gikai-iinkai/gikai/gijiroku/R06kaigiroku.html",
         },
     },
+    "matsumae": {
+        "name": "松前町",
+        # ファイル名: 07_1tei_kaigiroku.pdf / 06_3tei.pdf / 07_5rinzi_kaigiroku.pdf
+        # rinji/rinzi 両表記あり
+        "strategy": "filename_pattern",
+        "filename_regex": r"(?P<ey>\d+)_(?P<seq>\d+)(?P<t>tei|rinji|rinzi)(?:_kaigiroku)?\.pdf",
+        "type_map": {"tei": "定例会", "rinji": "臨時会", "rinzi": "臨時会"},
+        "era_base": 2018,
+        "index_url": "https://www.town.matsumae.hokkaido.jp/hotnews/detail/00000317.html",
+    },
+    "higashikawa": {
+        "name": "東川町",
+        # ファイル名: gikai_2025.03.11_teirei1-1.pdf / gikai_2023.03.31_rinji2.pdf
+        "strategy": "filename_pattern",
+        "filename_regex": r"gikai_(?P<yyyy>\d{4})\.(?P<mm>\d{2})\.(?P<dd>\d{2})_(?P<t>teirei|rinji)(?P<seq>\d+)(?:-(?P<day>\d+))?\.pdf",
+        "type_map": {"teirei": "定例会", "rinji": "臨時会"},
+        "sort_groups": ["mm", "dd", "day"],
+        "link_text_format": "{mm:02d}月{dd:02d}日",
+        "index_url": "https://higashikawa-town.jp/portal/machi/panel/105",
+    },
+    "yuni": {
+        "name": "由仁町",
+        # ファイル名: R07_1定_01.pdf / R06_１定_01.pdf (R5以降は統一形式)
+        # 日本語文字 '定' をファイル名に含む → regex literal で対応
+        # 全角/半角数字揺れ対応
+        "strategy": "filename_pattern",
+        "filename_regex": r"R(?P<ey>\d+)_(?P<seq>[\d０-９]+)定_(?P<day>\d+)\.pdf",
+        "type_map": {"": "定例会"},  # 定例会固定
+        "era_base": 2018,
+        "sort_groups": ["day"],
+        "link_text_format": "第{day}日",
+        "index_urls": {
+            2025: "https://www.town.yuni.lg.jp/chosei/gikai/teireikai",
+            2024: "https://www.town.yuni.lg.jp/chosei/gikai/teireikai",
+        },
+    },
     "shimukappu": {
         "name": "占冠村",
         # リンクテキスト「第N回占冠村議会定例会（自 令和N年M月D日 …）」
