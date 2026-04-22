@@ -66,32 +66,15 @@ export default function RootLayout({
             <p className="text-sm font-medium text-blue-100 mb-3">地方議会ドットコム</p>
             <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-blue-200 mb-4">
               <span className="text-blue-300">データ出典:</span>
-              <a
-                href="https://www.city.chitose.lg.jp/docs/30520.html"
-                target="_blank"
-                rel="noopener noreferrer"
+              <span className="text-blue-100">
+                北海道内の各市町村議会 公式ウェブサイト
+              </span>
+              <Link
+                href="/"
                 className="hover:text-white transition-colors underline decoration-blue-400"
               >
-                千歳市議会
-              </a>
-              <span className="text-blue-400" aria-hidden="true">·</span>
-              <a
-                href="https://www.city.eniwa.hokkaido.jp/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors underline decoration-blue-400"
-              >
-                恵庭市議会
-              </a>
-              <span className="text-blue-400" aria-hidden="true">·</span>
-              <a
-                href="https://www.city.tomakomai.hokkaido.jp/gikai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors underline decoration-blue-400"
-              >
-                苫小牧市議会
-              </a>
+                収録自治体一覧
+              </Link>
               <span className="text-blue-400" aria-hidden="true">·</span>
               <a
                 href="https://github.com/gyawa24/gikai-map-hokkaido"
@@ -103,11 +86,11 @@ export default function RootLayout({
               </a>
             </div>
             <p className="text-xs text-blue-300 mb-2">
-              本サイトは非公式の情報サイトです。公式情報は各市議会の公式サイトでご確認ください。
+              本サイトは非公式の情報サイトです。公式情報は各市町村議会の公式サイトでご確認ください。
             </p>
             {updatedLabel && (
               <p className="text-xs text-blue-300 mb-2">
-                データ最終更新: {updatedLabel} 時点（以降の議事録は各市議会公式サイトをご覧ください）
+                データ最終更新: {updatedLabel} 時点（以降の議事録は各市町村議会の公式サイトをご覧ください）
               </p>
             )}
             <div className="text-xs text-blue-400 space-y-1">
