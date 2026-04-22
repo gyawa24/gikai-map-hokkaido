@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Noto_Sans_JP } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import CityHeaderServer from "@/components/CityHeaderServer";
 import { getSearchIndexGeneratedAt, formatJaDate } from "@/lib/dataFreshness";
 import "./globals.css";
+
+// next/font/google は build 時にフォントをダウンロードし同一オリジンから配信するため
+// CSP の font-src 'self' のまま使える（外部フェッチなし）。
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "800"],
+  display: "swap",
+  variable: "--font-noto-sans-jp",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chihougikai.com"),
@@ -41,7 +51,7 @@ export default function RootLayout({
   const updatedAt = getSearchIndexGeneratedAt();
   const updatedLabel = formatJaDate(updatedAt);
   return (
-    <html lang="ja">
+    <html lang="ja" className={notoSansJP.variable}>
       <body className="min-h-screen flex flex-col antialiased">
         <CityHeaderServer />
 

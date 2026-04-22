@@ -3,6 +3,7 @@ import path from "path";
 import Link from "next/link";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getNews, categoryClass } from "@/lib/news";
+import { getSiteStats } from "@/lib/siteStats";
 import type { Member } from "@/types/member";
 import type { Decision } from "@/types/decision";
 
@@ -58,6 +59,7 @@ export default function HomePage() {
   const prefecture = allMunis.find((m) => m.level === "prefecture");
   const municipalities = allMunis.filter((m) => m.level === "municipality");
   const latestNews = getNews().slice(0, 3);
+  const stats = getSiteStats();
   const cities = municipalities.map((m) => ({
     id: m.slug,
     name: m.council_name,
@@ -77,13 +79,90 @@ export default function HomePage() {
   return (
     <div className="max-w-2xl mx-auto">
       {/* ヒーローセクション */}
-      <section className="mb-8">
+      <section className="mb-6">
         <h2 className="text-2xl font-bold text-[#1B3A6B] leading-snug mb-3">
-          北海道の市議会情報を<br className="sm:hidden" />ひとつの場所で
+          地方議会の「なか」を、<br className="sm:hidden" />わかりやすく。
         </h2>
         <p className="text-base text-[#4A5568] leading-relaxed">
-          北海道内の市町村議会の議事録・議決結果・議員名簿を横断的に収録。だれでも簡単に閲覧できます。
+          まずは北海道から。市町村議会の議員・議事録・議決を横断的にまとめて、
+          <br className="hidden sm:block" />
+          どんな議論が行われているか、だれでもかんたんに追えるようにしています。
         </p>
+      </section>
+
+      {/* サイト規模ダッシュボード */}
+      <section className="mb-8 grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+        {[
+          {
+            label: "対象自治体",
+            value: stats.municipalityCount,
+            unit: "",
+            accent: "bg-[#E8EEF7] text-[#1B3A6B]",
+            icon: (
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M3 21h18" />
+                <path d="M5 21V7l7-4 7 4v14" />
+                <path d="M9 9h1M9 12h1M9 15h1M14 9h1M14 12h1M14 15h1" />
+              </svg>
+            ),
+          },
+          {
+            label: "議員",
+            value: stats.memberCount,
+            unit: "名",
+            accent: "bg-[#FEF3C7] text-[#78451F]",
+            icon: (
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            ),
+          },
+          {
+            label: "会議録",
+            value: stats.minutesCount,
+            unit: "件",
+            accent: "bg-[#D1FAE5] text-[#065F46]",
+            icon: (
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            ),
+          },
+          {
+            label: "議題",
+            value: stats.agendaCount,
+            unit: "件",
+            accent: "bg-[#E0F2FE] text-[#075985]",
+            icon: (
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M7 8h10M7 12h10M7 16h7" />
+                <rect x="3" y="4" width="18" height="16" rx="2" />
+              </svg>
+            ),
+          },
+        ].map((card) => (
+          <div
+            key={card.label}
+            className="bg-white rounded-xl border border-[#E2E8F0] px-3 py-3 sm:px-4 sm:py-4 flex items-center gap-3 shadow-sm"
+          >
+            <div className={`shrink-0 w-9 h-9 rounded-lg flex items-center justify-center ${card.accent}`}>
+              <span className="w-4 h-4 block">{card.icon}</span>
+            </div>
+            <div className="min-w-0 flex-1">
+              <p className="text-[11px] text-[#718096] leading-tight mb-0.5">{card.label}</p>
+              <p className="text-xl sm:text-2xl font-bold text-[#1A202C] leading-none tabular-nums">
+                {card.value.toLocaleString()}
+                {card.unit && <span className="text-xs font-normal text-[#718096] ml-0.5">{card.unit}</span>}
+              </p>
+            </div>
+          </div>
+        ))}
       </section>
 
       {/* 最新のお知らせ */}

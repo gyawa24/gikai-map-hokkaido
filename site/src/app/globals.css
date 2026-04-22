@@ -18,9 +18,16 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+  /* next/font 経由で配信される Noto Sans JP を最優先。失敗時は OS の日本語ゴシックにフォールバック */
+  font-family: var(--font-noto-sans-jp), "Hiragino Sans", "Hiragino Kaku Gothic ProN",
     "Yu Gothic UI", sans-serif;
-  line-height: 1.7;
+  line-height: 1.75;
+  /* 和文の詰め・カーニングを効かせる */
+  font-feature-settings: "palt" 1, "kern" 1;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {
