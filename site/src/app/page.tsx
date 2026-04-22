@@ -77,10 +77,23 @@ export default function HomePage() {
 
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto relative">
+      {/* 背景の薄いグラデーション装飾（入口感） */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 -top-8 h-56 -z-10 rounded-b-3xl"
+        style={{
+          background:
+            "radial-gradient(ellipse at 20% 0%, rgba(232,238,247,0.9) 0%, rgba(255,255,255,0) 60%), radial-gradient(ellipse at 85% 10%, rgba(254,243,199,0.55) 0%, rgba(255,255,255,0) 55%)",
+        }}
+      />
+
       {/* ヒーローセクション */}
       <section className="mb-6">
-        <h2 className="text-2xl font-bold text-[#1B3A6B] leading-snug mb-3">
+        <p className="text-xs font-semibold text-[#2A5298] tracking-wider mb-2">
+          LOCAL COUNCIL INFO · 地方議会ドットコム
+        </p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#1B3A6B] leading-tight mb-3">
           地方議会の「なか」を、<br className="sm:hidden" />わかりやすく。
         </h2>
         <p className="text-base text-[#4A5568] leading-relaxed">

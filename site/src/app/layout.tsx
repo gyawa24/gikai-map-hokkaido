@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Noto_Sans_JP } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import CityHeaderServer from "@/components/CityHeaderServer";
+import { ToastProvider } from "@/components/Toast";
 import { getSearchIndexGeneratedAt, formatJaDate } from "@/lib/dataFreshness";
 import "./globals.css";
 
@@ -53,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="ja" className={notoSansJP.variable}>
       <body className="min-h-screen flex flex-col antialiased">
+        <ToastProvider>
         <CityHeaderServer />
 
         <main className="flex-1 max-w-5xl mx-auto w-full px-4 py-8">
@@ -149,6 +151,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        </ToastProvider>
         <Analytics />
       </body>
     </html>

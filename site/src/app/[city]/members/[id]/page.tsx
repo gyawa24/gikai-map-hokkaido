@@ -99,7 +99,7 @@ export default async function CityMemberDetailPage({
       </nav>
 
       {/* プロフィールカード */}
-      <section className="bg-white rounded-lg border border-[#CBD5E0] shadow-sm p-6 mb-5">
+      <section id="profile" className="bg-white rounded-lg border border-[#CBD5E0] shadow-sm p-6 mb-4 scroll-mt-20">
         <div className="flex items-start gap-5">
           {member.photo_url && (
             // eslint-disable-next-line @next/next/no-img-element
@@ -180,24 +180,49 @@ export default async function CityMemberDetailPage({
         </dl>
       </section>
 
-      {/* 検索ショートカット */}
-      <div className="bg-[#E8EEF7] border border-[#C5D0E6] rounded-lg px-4 py-3 mb-2 flex items-center justify-between gap-3">
-        <p className="text-sm text-[#1B3A6B]">
-          <span className="font-semibold">{member.name}</span> 議員の発言を横断検索
-        </p>
-        <Link
-          href={`/search?q=${memberSearchQ}`}
-          className="shrink-0 text-sm font-medium px-4 py-1.5 bg-[#1B3A6B] text-white rounded-lg hover:bg-[#2A5298] transition-colors flex items-center gap-1.5"
+      {/* セクションナビゲーション */}
+      <nav
+        aria-label="議員ページ内ナビゲーション"
+        className="flex gap-1 mb-4 bg-white rounded-lg border border-[#E2E8F0] p-1 text-sm"
+      >
+        <a
+          href="#profile"
+          className="flex-1 text-center px-3 py-2 rounded-md text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors font-medium"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-          </svg>
-          検索
-        </Link>
-      </div>
+          プロフィール
+        </a>
+        <a
+          href="#activity"
+          className="flex-1 text-center px-3 py-2 rounded-md text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors font-medium"
+        >
+          活動記録
+        </a>
+        <a
+          href="#share"
+          className="flex-1 text-center px-3 py-2 rounded-md text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors font-medium"
+        >
+          シェア
+        </a>
+      </nav>
 
-      {/* シェア動線 — SNS先では議員名刺OG画像が表示される */}
-      <div className="mb-5">
+      {/* シェア・検索セクション */}
+      <section id="share" className="mb-5 scroll-mt-20">
+        <div className="bg-[#E8EEF7] border border-[#C5D0E6] rounded-lg px-4 py-3 mb-2 flex items-center justify-between gap-3">
+          <p className="text-sm text-[#1B3A6B]">
+            <span className="font-semibold">{member.name}</span> 議員の発言を横断検索
+          </p>
+          <Link
+            href={`/search?q=${memberSearchQ}`}
+            className="shrink-0 text-sm font-medium px-4 py-1.5 bg-[#1B3A6B] text-white rounded-lg hover:bg-[#2A5298] transition-colors flex items-center gap-1.5"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            検索
+          </Link>
+        </div>
+
+        {/* SNS先では議員名刺OG画像が表示される */}
         <MemberShareButtons
           memberName={member.name}
           cityName={cityName}
@@ -205,11 +230,11 @@ export default async function CityMemberDetailPage({
           sessionCount={memberActivity?.session_count}
           themes={memberActivity?.themes ?? []}
         />
-      </div>
+      </section>
 
       {/* 質問活動 */}
       {memberActivity ? (
-        <section>
+        <section id="activity" className="scroll-mt-20">
           <h3 className="text-base font-bold text-[#1B3A6B] mb-3">
             議会質問の記録
             <span className="ml-2 text-sm font-normal text-[#718096]">
@@ -308,9 +333,9 @@ export default async function CityMemberDetailPage({
           </div>
         </section>
       ) : (
-        <div className="bg-[#F4F6F9] rounded-lg p-6 text-center">
+        <section id="activity" className="scroll-mt-20 bg-[#F4F6F9] rounded-lg p-6 text-center">
           <p className="text-sm text-[#718096]">質問活動データは準備中です</p>
-        </div>
+        </section>
       )}
     </div>
   );

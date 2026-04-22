@@ -307,7 +307,25 @@ function SearchClientInner() {
       )}
 
       {hasQuery && loading && (
-        <p className="text-sm text-[#718096] text-center py-8">検索中...</p>
+        <div className="flex flex-col gap-3" aria-live="polite" aria-busy="true">
+          <span className="sr-only">検索中...</span>
+          {[0, 1, 2, 3].map((i) => (
+            <div
+              key={i}
+              className="bg-white rounded-lg border border-[#E2E8F0] px-4 py-3 animate-pulse"
+              style={{ animationDelay: `${i * 80}ms` }}
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <div className="h-4 w-16 rounded bg-[#E8EEF7]" />
+                <div className="h-3 w-20 rounded bg-[#F4F6F9]" />
+                <div className="h-3 w-12 rounded bg-[#F4F6F9] ml-auto" />
+              </div>
+              <div className="h-4 w-3/4 rounded bg-[#E2E8F0] mb-2" />
+              <div className="h-3 w-full rounded bg-[#F4F6F9] mb-1" />
+              <div className="h-3 w-5/6 rounded bg-[#F4F6F9]" />
+            </div>
+          ))}
+        </div>
       )}
 
       {hasQuery && !loading && totalResults === 0 && (

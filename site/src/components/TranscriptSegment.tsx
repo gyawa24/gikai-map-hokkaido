@@ -5,6 +5,7 @@ import type { SessionSegment } from "@/types/session";
 import type { Member } from "@/types/member";
 import SegmentDetail from "./SegmentDetail";
 import QRCodeModal from "./QRCodeModal";
+import { useToast } from "./Toast";
 import { resolveSpeaker } from "@/lib/memberUtils";
 
 type Props = {
@@ -26,8 +27,8 @@ export default function TranscriptSegment({
 }: Props) {
   const [open, setOpen] = useState(false);
   const [bodyOpen, setBodyOpen] = useState(false);
-  const [copied, setCopied] = useState<"link" | "cite" | null>(null);
   const [qrOpen, setQrOpen] = useState(false);
+  const toast = useToast();
   const ref = useRef<HTMLDivElement>(null);
   const anchorId = `seg-${seg.index}`;
   const speakerLabel = seg.detail ? resolveSpeaker(seg.detail.speaker, members) : seg.label;
@@ -54,10 +55,9 @@ export default function TranscriptSegment({
   const handleCopyLink = async () => {
     try {
       await navigator.clipboard.writeText(buildPermalink());
-      setCopied("link");
-      setTimeout(() => setCopied(null), 1800);
+      toast.show("発言リンクをコピーしました");
     } catch {
-      /* noop */
+      toast.show("コピーに失敗しました", "info");
     }
   };
 
@@ -68,10 +68,9 @@ export default function TranscriptSegment({
     const block = `${header}\n\n${body}\n\n出典: ${buildPermalink()}`;
     try {
       await navigator.clipboard.writeText(block);
-      setCopied("cite");
-      setTimeout(() => setCopied(null), 1800);
+      toast.show("出典つきの本文をコピーしました");
     } catch {
-      /* noop */
+      toast.show("コピーに失敗しました", "info");
     }
   };
 
@@ -208,7 +207,7 @@ export default function TranscriptSegment({
                 <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                 <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
               </svg>
-              <span>{copied === "link" ? "コピー済" : "リンク"}</span>
+              <span>リンク</span>
             </button>
             {(seg.summary || seg.detail?.overview) && (
               <button
@@ -221,7 +220,7 @@ export default function TranscriptSegment({
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
                   <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
                 </svg>
-                <span>{copied === "cite" ? "コピー済" : "引用"}</span>
+                <span>引用</span>
               </button>
             )}
             <a

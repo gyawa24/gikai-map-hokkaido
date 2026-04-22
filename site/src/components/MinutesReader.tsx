@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useMemo } from "react";
+import { useToast } from "./Toast";
 import type { MinutesSession, MinuteItem } from "@/types/minutes";
 
 // ---------- ユーティリティ ----------
@@ -148,7 +149,7 @@ function MinuteItemView({
   citationContext: { cityName: string; councilName: string; scheduleName: string };
 }) {
   const [expanded, setExpanded] = useState(false);
-  const [copied, setCopied] = useState<"cite" | "link" | null>(null);
+  const toast = useToast();
   const style = getItemStyle(item.minute_type);
   const isLong = item.text.length > 400;
   const displayText = isLong && !expanded ? item.text.slice(0, 400) + "…" : item.text;
@@ -184,10 +185,9 @@ function MinuteItemView({
   const handleCopyLink = async () => {
     try {
       await navigator.clipboard.writeText(buildPermalink());
-      setCopied("link");
-      setTimeout(() => setCopied(null), 1800);
+      toast.show("発言リンクをコピーしました");
     } catch {
-      // クリップボード失敗時はフィードバックを出さない（古いブラウザのフォールバックは見送り）
+      toast.show("コピーに失敗しました", "info");
     }
   };
 
@@ -197,10 +197,9 @@ function MinuteItemView({
     const block = `${header}\n\n${item.text}\n\n出典: ${buildPermalink()}`;
     try {
       await navigator.clipboard.writeText(block);
-      setCopied("cite");
-      setTimeout(() => setCopied(null), 1800);
+      toast.show("出典つきの本文をコピーしました");
     } catch {
-      // 失敗時はサイレント
+      toast.show("コピーに失敗しました", "info");
     }
   };
 
@@ -224,7 +223,7 @@ function MinuteItemView({
               <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
               <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
             </svg>
-            <span className="hidden sm:inline">{copied === "link" ? "コピー済" : "リンク"}</span>
+            <span className="hidden sm:inline">リンク</span>
           </button>
           <button
             onClick={handleCopyCitation}
@@ -236,7 +235,7 @@ function MinuteItemView({
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
               <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
             </svg>
-            <span className="hidden sm:inline">{copied === "cite" ? "コピー済" : "引用"}</span>
+            <span className="hidden sm:inline">引用</span>
           </button>
         </div>
       </div>
