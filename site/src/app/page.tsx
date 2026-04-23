@@ -90,8 +90,11 @@ export default function HomePage() {
 
       {/* ヒーローセクション */}
       <section className="mb-6">
-        <p className="text-xs font-semibold text-[#2A5298] tracking-wider mb-2">
-          LOCAL COUNCIL INFO · 地方議会ドットコム
+        <p className="text-xs font-semibold text-[#2A5298] tracking-wider mb-2 flex items-center gap-1.5 flex-wrap">
+          <span>LOCAL COUNCIL INFO · 地方議会ドットコム</span>
+          <span className="font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5 tracking-normal">
+            β
+          </span>
         </p>
         <h2 className="text-2xl sm:text-3xl font-bold text-[#1B3A6B] leading-tight mb-3">
           地方議会の「なか」を、<br className="sm:hidden" />わかりやすく。

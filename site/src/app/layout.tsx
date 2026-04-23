@@ -19,24 +19,24 @@ const notoSansJP = Noto_Sans_JP({
 export const metadata: Metadata = {
   metadataBase: new URL("https://chihougikai.com"),
   title: {
-    default: "地方議会ドットコム",
-    template: "%s | 地方議会ドットコム",
+    default: "地方議会ドットコム（β）",
+    template: "%s | 地方議会ドットコム（β）",
   },
   description:
-    "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。",
+    "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。（ベータ公開中）",
   openGraph: {
-    title: "地方議会ドットコム",
+    title: "地方議会ドットコム（β）",
     description:
-      "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。",
+      "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。（ベータ公開中）",
     type: "website",
     locale: "ja_JP",
-    siteName: "地方議会ドットコム",
+    siteName: "地方議会ドットコム（β）",
   },
   twitter: {
     card: "summary",
-    title: "地方議会ドットコム",
+    title: "地方議会ドットコム（β）",
     description:
-      "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。",
+      "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。（ベータ公開中）",
   },
   robots: {
     index: true,
@@ -57,13 +57,39 @@ export default function RootLayout({
         <ToastProvider>
         <CityHeaderServer />
 
+        {/* ベータ公開バナー */}
+        <div className="bg-[#FFF7E6] border-b border-[#F7C948]">
+          <div className="max-w-5xl mx-auto px-4 py-2 text-xs text-[#78451F] flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+            <span className="font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5 tracking-wide">
+              β
+            </span>
+            <span>ベータ公開中 — 機能追加・仕様変更があります</span>
+            <span aria-hidden="true" className="text-[#CBB46B]">·</span>
+            <Link href="/news" className="underline hover:text-[#1B3A6B]">
+              更新情報
+            </Link>
+            <span aria-hidden="true" className="text-[#CBB46B]">·</span>
+            <a
+              href="mailto:ogawayohei.hkd@gmail.com"
+              className="underline hover:text-[#1B3A6B]"
+            >
+              ご意見はこちら
+            </a>
+          </div>
+        </div>
+
         <main className="flex-1 max-w-5xl mx-auto w-full px-4 py-8">
           {children}
         </main>
 
         <footer style={{ backgroundColor: "var(--color-primary)" }} className="text-white mt-8">
           <div className="max-w-5xl mx-auto px-4 py-6">
-            <p className="text-sm font-medium text-blue-100 mb-3">地方議会ドットコム</p>
+            <p className="text-sm font-medium text-blue-100 mb-3">
+              地方議会ドットコム
+              <span className="ml-2 text-[10px] font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5 align-middle">
+                β
+              </span>
+            </p>
             <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-blue-200 mb-4">
               <span className="text-blue-300">データ出典:</span>
               <span className="text-blue-100">

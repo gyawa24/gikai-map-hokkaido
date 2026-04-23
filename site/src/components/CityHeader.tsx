@@ -56,9 +56,12 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
         <div className="flex items-center gap-2 mb-2">
           <Link
             href="/"
-            className="text-sm font-medium text-blue-100 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded"
+            className="text-sm font-medium text-blue-100 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded inline-flex items-center gap-1.5"
           >
             地方議会ドットコム
+            <span className="text-[10px] font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5">
+              β
+            </span>
           </Link>
           {city && (
             <>
@@ -69,8 +72,17 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
         </div>
 
         {/* メイン見出し */}
-        <h1 className="text-xl font-bold tracking-tight leading-snug">
-          {city ? city.name : "地方議会ドットコム"}
+        <h1 className="text-xl font-bold tracking-tight leading-snug flex items-center gap-2 flex-wrap">
+          {city ? (
+            city.name
+          ) : (
+            <>
+              地方議会ドットコム
+              <span className="text-xs font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-2 py-0.5 align-middle">
+                β
+              </span>
+            </>
+          )}
         </h1>
         {!city && (
           <p className="text-sm text-blue-200 mt-0.5">
