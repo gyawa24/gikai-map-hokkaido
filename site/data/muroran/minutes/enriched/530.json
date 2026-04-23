@@ -1,0 +1,468 @@
+{
+  "council_id": 530,
+  "name": "令和 ７年 一般会計決算審査特別委員会",
+  "generated_at": "2026-04-22",
+  "summary": "令和7年度の一般会計決算審査特別委員会では、市税収入や財政状況、行政運営の効率化などが議論されました。市民税は定額減税の影響で減少した一方、ふるさと納税の拡大策や電子決裁システム導入による業務効率化、LINEを活用した市民との情報連携、消防団員の確保策など幅広い課題が取り上げられました。また、投票所の統廃合への対応、外国人労働者との共生施策、町内会館の老朽化対応、こどもの見守り活動など、市民生活に密着したテーマも審議されました。",
+  "highlights": [
+    "市税収入と滞納徴収・債権放棄の対応について議論",
+    "ふるさと納税の収支均衡へ3.1億円目標と返礼品拡充",
+    "電子決裁システム導入で業務効率化を推進",
+    "投票所統廃合に伴う移動投票所の検討を要望",
+    "消防団員確保と若年層・学生団員獲得の取組"
+  ],
+  "tags": [
+    "決算",
+    "市税",
+    "財政",
+    "ふるさと納税",
+    "DX",
+    "選挙",
+    "広報",
+    "LINE",
+    "多文化共生",
+    "消防団",
+    "町内会",
+    "交通安全",
+    "見守り",
+    "電子決裁",
+    "業務効率化"
+  ],
+  "speakers": [
+    {
+      "name": "西岡委員",
+      "role": "議員",
+      "speech_count": 120
+    },
+    {
+      "name": "日沼委員",
+      "role": "議員",
+      "speech_count": 96
+    },
+    {
+      "name": "常磐井委員",
+      "role": "議員",
+      "speech_count": 95
+    },
+    {
+      "name": "渡辺委員",
+      "role": "議員",
+      "speech_count": 93
+    },
+    {
+      "name": "滝口委員",
+      "role": "議員",
+      "speech_count": 76
+    },
+    {
+      "name": "佐藤産業振興課長",
+      "role": "理事者",
+      "speech_count": 54
+    },
+    {
+      "name": "小澤委員",
+      "role": "議員",
+      "speech_count": 51
+    },
+    {
+      "name": "羽立［典］委員",
+      "role": "議員",
+      "speech_count": 50
+    },
+    {
+      "name": "山本学校教育課長",
+      "role": "理事者",
+      "speech_count": 44
+    },
+    {
+      "name": "大坂高齢福祉課長",
+      "role": "理事者",
+      "speech_count": 42
+    },
+    {
+      "name": "伊藤委員",
+      "role": "議員",
+      "speech_count": 41
+    },
+    {
+      "name": "立野［消防］総務課長補佐",
+      "role": "理事者",
+      "speech_count": 41
+    },
+    {
+      "name": "長岡委員",
+      "role": "議員",
+      "speech_count": 40
+    },
+    {
+      "name": "菅原都市政策課長補佐",
+      "role": "理事者",
+      "speech_count": 38
+    },
+    {
+      "name": "南川委員長",
+      "role": "議長",
+      "speech_count": 32
+    },
+    {
+      "name": "岩間［総務］総務課長",
+      "role": "理事者",
+      "speech_count": 32
+    },
+    {
+      "name": "小林委員",
+      "role": "議員",
+      "speech_count": 30
+    },
+    {
+      "name": "氏家都市建設部次長",
+      "role": "理事者",
+      "speech_count": 27
+    },
+    {
+      "name": "山口健康推進課長",
+      "role": "理事者",
+      "speech_count": 25
+    },
+    {
+      "name": "松野市営住宅課長",
+      "role": "理事者",
+      "speech_count": 25
+    },
+    {
+      "name": "中野生活環境部次長",
+      "role": "理事者",
+      "speech_count": 20
+    },
+    {
+      "name": "佐々木都市政策課主幹",
+      "role": "理事者",
+      "speech_count": 20
+    },
+    {
+      "name": "高橋土木課長補佐",
+      "role": "理事者",
+      "speech_count": 19
+    },
+    {
+      "name": "村井都市政策課長",
+      "role": "理事者",
+      "speech_count": 16
+    },
+    {
+      "name": "山本指導主事",
+      "role": "理事者",
+      "speech_count": 16
+    },
+    {
+      "name": "本間戸籍住民課主幹",
+      "role": "理事者",
+      "speech_count": 15
+    },
+    {
+      "name": "佐藤［教育］総務課長",
+      "role": "理事者",
+      "speech_count": 14
+    },
+    {
+      "name": "大石財政課長",
+      "role": "理事者",
+      "speech_count": 13
+    },
+    {
+      "name": "児玉委員",
+      "role": "議員",
+      "speech_count": 13
+    },
+    {
+      "name": "船山土木課主幹",
+      "role": "理事者",
+      "speech_count": 13
+    },
+    {
+      "name": "櫻井財政課主幹",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "船橋子育て支援課長",
+      "role": "理事者",
+      "speech_count": 12
+    },
+    {
+      "name": "水江委員",
+      "role": "議員",
+      "speech_count": 12
+    },
+    {
+      "name": "関市税課長",
+      "role": "理事者",
+      "speech_count": 11
+    },
+    {
+      "name": "福島職員課長",
+      "role": "理事者",
+      "speech_count": 11
+    },
+    {
+      "name": "西舘保健福祉部長",
+      "role": "理事者",
+      "speech_count": 11
+    },
+    {
+      "name": "大久保観光課長",
+      "role": "理事者",
+      "speech_count": 11
+    },
+    {
+      "name": "谷中生涯学習課主幹",
+      "role": "理事者",
+      "speech_count": 10
+    },
+    {
+      "name": "田中広報課長",
+      "role": "理事者",
+      "speech_count": 9
+    },
+    {
+      "name": "柴田市税課主幹",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "今野選挙管理委員会事務局長",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "西村地域生活課長補佐",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "開米警防課長",
+      "role": "理事者",
+      "speech_count": 8
+    },
+    {
+      "name": "宮下健康推進課主幹",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "那須原こども家庭センター課長補佐",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "高橋生活支援課長",
+      "role": "理事者",
+      "speech_count": 7
+    },
+    {
+      "name": "山下生涯学習課長補佐",
+      "role": "理事者",
+      "speech_count": 6
+    },
+    {
+      "name": "佐竹企画課長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "山﨑障害福祉課長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "伏見環境課長補佐",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "末尾都市建設部長",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "松村給食センター課長補佐",
+      "role": "理事者",
+      "speech_count": 5
+    },
+    {
+      "name": "加納市営住宅課主幹",
+      "role": "理事者",
+      "speech_count": 4
+    },
+    {
+      "name": "中島行政マネジメント課長",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "若濱障害福祉課長補佐",
+      "role": "理事者",
+      "speech_count": 3
+    },
+    {
+      "name": "佐野総務部長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "鶴巻警防課長補佐",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "本野［消防］総務課長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "坂本消防署長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "佐藤予防課長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "塩越こども家庭センター長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "伊藤生活環境部長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "鈴木土木課主幹",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "坂口教育部長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "藤谷給食センター所長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "高橋企画財政部長",
+      "role": "理事者",
+      "speech_count": 2
+    },
+    {
+      "name": "髙橋企画財政部長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "佐藤消防長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "舛田経済部長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "伊藤教育長",
+      "role": "理事者",
+      "speech_count": 1
+    },
+    {
+      "name": "太田教育部次長",
+      "role": "理事者",
+      "speech_count": 1
+    }
+  ],
+  "questioners": [
+    {
+      "name": "日沼委員",
+      "topics": [
+        "市民税と滞納徴収",
+        "選挙費と投票所",
+        "立会人の報酬・移動投票所"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "西岡委員",
+      "topics": [
+        "LINEリッチメニューの活用",
+        "市民からの通報システム",
+        "公式LINEスタンプラリー"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "渡辺委員",
+      "topics": [
+        "キャリア教育推進事業の不用額",
+        "交通安全啓発と指導員の補償"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "伊藤委員",
+      "topics": [
+        "電子決裁システム導入",
+        "職員研修費",
+        "時間外勤務の縮減"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "滝口委員",
+      "topics": [
+        "ふるさと応援寄附金",
+        "返礼品とらんらんPay",
+        "多文化共生・日本語教室"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "児玉委員",
+      "topics": [
+        "市税・固定資産税の収入動向",
+        "地方交付税の見通し",
+        "歳入確保策"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "常磐井委員",
+      "topics": [
+        "市税と納税義務者数",
+        "歳出の不用額の要因",
+        "物価高騰対策事業費"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "小澤委員",
+      "topics": [
+        "地域コミュニティ拠点整備費補助金",
+        "こどもを守る安全活動",
+        "消防団員報酬と人材確保"
+      ],
+      "ai_topics": []
+    },
+    {
+      "name": "羽立[典]委員",
+      "topics": [
+        "消防団員幹部教育の派遣",
+        "小型ポンプの点火プラグ管理"
+      ],
+      "ai_topics": []
+    }
+  ]
+}

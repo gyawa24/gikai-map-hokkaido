@@ -32,6 +32,8 @@ const get = (flag) => { const i = args.indexOf(flag); return i !== -1 ? args[i +
 // --city eniwa,tomakomai のようにカンマ区切りで複数指定可能
 const cities = (get("--city") ?? "chitose").split(",").map((s) => s.trim());
 const targetId = get("--id"); // 指定なしなら全件処理
+// --since-year 2025 で year>=2025 のみ処理（過去1年分絞り込み用）
+const sinceYear = get("--since-year") ? parseInt(get("--since-year"), 10) : null;
 
 // --- claude -p でMaxPlanを使ってテキスト生成 ---
 function claudeQuery(prompt, retries = 5) {
@@ -245,12 +247,17 @@ async function processFile(councilId, city) {
   fs.mkdirSync(enrichedDataDir, { recursive: true });
   fs.mkdirSync(enrichedSiteDir, { recursive: true });
 
-  const srcFile = path.join(dataMinutesDir, `${councilId}.json`);
+  // 一部自治体（旭川・函館・釧路など）は data/{city}/{id}.json に置かれる
+  const srcCandidates = [
+    path.join(dataMinutesDir, `${councilId}.json`),
+    path.join(ROOT, "data", city, `${councilId}.json`),
+  ];
+  const srcFile = srcCandidates.find((p) => fs.existsSync(p));
   const outDataFile = path.join(enrichedDataDir, `${councilId}.json`);
   const outSiteFile = path.join(enrichedSiteDir, `${councilId}.json`);
 
-  if (!fs.existsSync(srcFile)) {
-    console.error(`  ✗ ファイルが見つかりません: ${srcFile}`);
+  if (!srcFile) {
+    console.error(`  ✗ ファイルが見つかりません: ${councilId}`);
     return;
   }
 
@@ -319,14 +326,26 @@ async function processFile(councilId, city) {
 // --- 都市単位の処理 ---
 async function processCity(city) {
   const dataMinutesDir = path.join(ROOT, "data", city, "minutes");
-  const indexFile = path.join(dataMinutesDir, "index.json");
-  const index = JSON.parse(fs.readFileSync(indexFile, "utf-8"));
+  // minutes/index.json が基本、なければ city 直下
+  const indexCandidates = [
+    path.join(dataMinutesDir, "index.json"),
+    path.join(ROOT, "data", city, "index.json"),
+  ];
+  let index = null;
+  for (const fp of indexCandidates) {
+    try { index = JSON.parse(fs.readFileSync(fp, "utf-8")); break; } catch {}
+  }
+  if (!index) { console.log(`[${city}] インデックス無し、スキップ`); return; }
 
-  const targets = targetId
+  let targets = targetId
     ? index.filter((item) => String(item.council_id) === targetId)
     : index;
 
-  console.log(`\n[${city}] エンリッチ処理: ${targets.length}件`);
+  if (sinceYear !== null) {
+    targets = targets.filter((item) => parseInt(String(item.year), 10) >= sinceYear);
+  }
+
+  console.log(`\n[${city}] エンリッチ処理: ${targets.length}件${sinceYear ? ` (year>=${sinceYear})` : ""}`);
 
   let ok = 0, skip = 0, fail = 0;
   for (const item of targets) {
