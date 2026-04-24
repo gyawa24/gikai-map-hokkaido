@@ -234,7 +234,7 @@ export default async function CityMinutesDetailPage({
       </section>
 
       <Suspense>
-        <MinutesDetailClient session={session} enriched={enriched} cityName={cityName} />
+        <MinutesDetailClient session={session} enriched={enriched} cityName={cityName} slug={city} />
       </Suspense>
     </div>
   );
