@@ -65,6 +65,7 @@ export default async function CityMembersPage({
           memberCount={null}
           minutesCount={minutesCount}
           latestYear={latestYear}
+          city={city}
         />
         <div className="max-w-2xl mx-auto">
           <section className="mb-6">
@@ -85,6 +86,7 @@ export default async function CityMembersPage({
         memberCount={members.length}
         minutesCount={minutesCount}
         latestYear={latestYear}
+        city={city}
       />
       {minutesUnavailable && (
         <div className="max-w-2xl mx-auto mb-5 rounded-lg border border-[#E2E8F0] bg-[#F4F6F9] px-4 py-3">

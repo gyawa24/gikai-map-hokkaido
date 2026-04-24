@@ -1,15 +1,20 @@
+import Link from "next/link";
+
 type CitySummaryCardsProps = {
   memberCount: number | null;
   minutesCount: number | null;
   latestYear: string | null;
+  city?: string;
 };
 
 export default function CitySummaryCards({
   memberCount,
   minutesCount,
   latestYear,
+  city,
 }: CitySummaryCardsProps) {
-  const stats = [
+  const minutesHref = city ? `/${city}/minutes` : null;
+  const stats: Array<{ label: string; value: string; href?: string | null; icon: React.ReactNode }> = [
     {
       label: "議員数",
       value: memberCount !== null ? `${memberCount}名` : "―",
@@ -35,6 +40,7 @@ export default function CitySummaryCards({
     {
       label: "議事録件数",
       value: minutesCount !== null ? `${minutesCount}件` : "―",
+      href: minutesCount !== null && minutesCount > 0 ? minutesHref : null,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +64,7 @@ export default function CitySummaryCards({
     {
       label: "最新議事録",
       value: latestYear ?? "―",
+      href: latestYear ? minutesHref : null,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -81,16 +88,34 @@ export default function CitySummaryCards({
 
   return (
     <div className="grid grid-cols-3 gap-3 mb-6">
-      {stats.map((stat) => (
-        <div
-          key={stat.label}
-          className="bg-white rounded-lg border border-[#CBD5E0] p-4 text-center"
-        >
-          <div className="flex justify-center mb-2">{stat.icon}</div>
-          <div className="text-xl font-bold text-[#1B3A6B]">{stat.value}</div>
-          <div className="text-sm text-[#718096] mt-0.5">{stat.label}</div>
-        </div>
-      ))}
+      {stats.map((stat) => {
+        const inner = (
+          <>
+            <div className="flex justify-center mb-2">{stat.icon}</div>
+            <div className="text-xl font-bold text-[#1B3A6B]">{stat.value}</div>
+            <div className="text-sm text-[#718096] mt-0.5">{stat.label}</div>
+          </>
+        );
+        if (stat.href) {
+          return (
+            <Link
+              key={stat.label}
+              href={stat.href}
+              className="bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] hover:shadow-md p-4 text-center transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+            >
+              {inner}
+            </Link>
+          );
+        }
+        return (
+          <div
+            key={stat.label}
+            className="bg-white rounded-lg border border-[#CBD5E0] p-4 text-center"
+          >
+            {inner}
+          </div>
+        );
+      })}
     </div>
   );
 }
