@@ -47,7 +47,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
   }
 
   return (
-    <header style={{ backgroundColor: "var(--color-primary)" }} className="text-white">
+    <header data-no-print="true" style={{ backgroundColor: "var(--color-primary)" }} className="text-white">
       {/* 上部アクセントライン */}
       <div className="h-1 bg-[#F7C948]" />
 

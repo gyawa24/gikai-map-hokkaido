@@ -364,6 +364,27 @@ function SearchClientInner() {
         </div>
       )}
 
+      {/* 議員サジェスト: sessions タブで議員名がマッチした場合、議員タブへの動線を上部に出す */}
+      {tab === "sessions" && hasQuery && !loading && filteredMembers.length > 0 && (
+        <div className="bg-[#E8EEF7] border border-[#C5D0E6] rounded-lg px-4 py-2.5 flex items-center justify-between gap-3">
+          <p className="text-xs text-[#1B3A6B] flex-1 min-w-0">
+            <span className="font-semibold">議員</span>の検索結果が
+            <span className="font-bold mx-0.5">{filteredMembers.length}</span>
+            件あります:{" "}
+            <span className="text-[#4A5568]">
+              {filteredMembers.slice(0, 3).map((m) => `${m.name}（${m.cityName}）`).join(" / ")}
+              {filteredMembers.length > 3 && " ほか"}
+            </span>
+          </p>
+          <button
+            onClick={() => setTab("members")}
+            className="shrink-0 text-xs font-medium px-3 py-1 bg-[#1B3A6B] text-white rounded hover:bg-[#2A5298] transition-colors"
+          >
+            議員タブを見る
+          </button>
+        </div>
+      )}
+
       {hasQuery && !loading && truncated && (
         <div className="bg-[#FFF7E6] border border-[#F7C948] rounded px-3 py-2 text-xs text-[#78451F] flex items-start gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

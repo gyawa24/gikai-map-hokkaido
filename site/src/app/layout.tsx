@@ -61,7 +61,7 @@ export default function RootLayout({
         <CityHeaderServer />
 
         {/* ベータ公開バナー */}
-        <div className="bg-[#FFF7E6] border-b border-[#F7C948]">
+        <div data-no-print="true" className="bg-[#FFF7E6] border-b border-[#F7C948]">
           <div className="max-w-5xl mx-auto px-4 py-2 text-xs text-[#78451F] flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
             <span className="font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5 tracking-wide">
               β
@@ -78,7 +78,7 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer style={{ backgroundColor: "var(--color-primary)" }} className="text-white mt-8">
+        <footer data-no-print="true" style={{ backgroundColor: "var(--color-primary)" }} className="text-white mt-8">
           <div className="max-w-5xl mx-auto px-4 py-6">
             <p className="text-sm font-medium text-blue-100 mb-3">
               地方議会ドットコム

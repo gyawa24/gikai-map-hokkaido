@@ -178,7 +178,7 @@ export default function TranscriptSegment({
           )}
 
           {/* 4. シェア動線 */}
-          <div className="flex items-center justify-end gap-1 pt-1 border-t border-[#E2E8F0]">
+          <div data-no-print="true" className="flex items-center justify-end gap-1 pt-1 border-t border-[#E2E8F0]">
             <button
               onClick={() => setQrOpen(true)}
               className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-1.5 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"

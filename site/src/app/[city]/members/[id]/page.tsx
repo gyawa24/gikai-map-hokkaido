@@ -7,6 +7,20 @@ import type { Member, MemberActivity } from "@/types/member";
 import { getMunicipality } from "@/lib/municipalities";
 import MemberShareButtons from "@/components/MemberShareButtons";
 
+// 会議名から西暦を推定（令和◯年 → 2018+N）。グルーピング用。
+function yearFromSessionName(name: string): string {
+  const norm = (name ?? "").replace(/[０-９]/g, (c) =>
+    String.fromCharCode(c.charCodeAt(0) - 0xfee0)
+  );
+  const reiwa = norm.match(/令和\s*(\d+)/);
+  if (reiwa) return String(2018 + Number(reiwa[1]));
+  const heisei = norm.match(/平成\s*(\d+)/);
+  if (heisei) return String(1988 + Number(heisei[1]));
+  const west = norm.match(/(\d{4})/);
+  if (west) return west[1];
+  return "不明";
+}
+
 export const dynamicParams = false;
 
 function getMembers(city: string): Member[] {
@@ -264,16 +278,46 @@ export default async function CityMemberDetailPage({
             </div>
           )}
 
-          <div className="space-y-3">
-            {memberActivity.sessions.map((s, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-lg border border-[#CBD5E0] px-5 py-4"
-              >
-                <div className="flex items-center justify-between mb-2">
-                  <p className="text-sm font-semibold text-[#1B3A6B]">
-                    {s.session}
-                  </p>
+          {/* タイムライン */}
+          <ol className="relative border-l-2 border-[#E2E8F0] pl-5 ml-2 space-y-6">
+            {(() => {
+              // 年度グルーピング（新しい順）
+              const groups = new Map<string, typeof memberActivity.sessions>();
+              for (const s of memberActivity.sessions) {
+                const y = yearFromSessionName(s.session);
+                const list = groups.get(y) ?? [];
+                list.push(s);
+                groups.set(y, list);
+              }
+              const sorted = Array.from(groups.entries()).sort((a, b) =>
+                a[0] < b[0] ? 1 : a[0] > b[0] ? -1 : 0
+              );
+              const items: React.ReactNode[] = [];
+              for (const [year, sessionList] of sorted) {
+                items.push(
+                  <li key={`year-${year}`} className="relative -ml-2">
+                    <span
+                      aria-hidden="true"
+                      className="absolute -left-[15px] top-1.5 w-3 h-3 rounded-full bg-[#F7C948] border-2 border-white"
+                    />
+                    <p className="text-xs font-bold text-[#78451F] tracking-wider tabular-nums">
+                      {year === "不明" ? "年度不明" : `${year}年`}
+                    </p>
+                  </li>
+                );
+                for (let i = 0; i < sessionList.length; i++) {
+                  const s = sessionList[i];
+                  items.push(
+                    <li key={`${year}-${i}`} className="relative">
+                      <span
+                        aria-hidden="true"
+                        className="absolute -left-[25px] top-3 w-2.5 h-2.5 rounded-full bg-white border-2 border-[#2A5298]"
+                      />
+                      <div className="bg-white rounded-lg border border-[#CBD5E0] px-5 py-4">
+                        <div className="flex items-center justify-between mb-2">
+                          <p className="text-sm font-semibold text-[#1B3A6B]">
+                            {s.session}
+                          </p>
                   {s.council_id > 0 && (
                     <Link
                       href={`/${city}/minutes/${s.council_id}`}
@@ -296,41 +340,46 @@ export default async function CityMemberDetailPage({
                     </Link>
                   )}
                 </div>
-                <ul className="space-y-1.5">
-                  {s.topics.map((t) => (
-                    <li key={t} className="flex items-start gap-2 text-sm group">
-                      <span
-                        className="text-[#2A5298] shrink-0 mt-0.5"
-                        aria-hidden="true"
-                      >
-                        ·
-                      </span>
-                      <div className="flex-1 flex items-start justify-between gap-2">
-                        {s.council_id > 0 ? (
-                          <Link
-                            href={`/${city}/minutes/${s.council_id}?q=${encodeURIComponent(t)}`}
-                            className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors"
-                          >
-                            {t}
-                          </Link>
-                        ) : (
-                          <span className="text-[#4A5568]">{t}</span>
-                        )}
-                        <Link
-                          href={`/search?q=${encodeURIComponent(`${member.name} ${t}`)}`}
-                          className="shrink-0 text-xs text-[#A0AEC0] hover:text-[#2A5298] opacity-0 group-hover:opacity-100 transition-opacity"
-                          title="議事録検索"
-                          aria-label={`${t}を検索`}
-                        >
-                          検索
-                        </Link>
+                        <ul className="space-y-1.5">
+                          {s.topics.map((t) => (
+                            <li key={t} className="flex items-start gap-2 text-sm group">
+                              <span
+                                className="text-[#2A5298] shrink-0 mt-0.5"
+                                aria-hidden="true"
+                              >
+                                ·
+                              </span>
+                              <div className="flex-1 flex items-start justify-between gap-2">
+                                {s.council_id > 0 ? (
+                                  <Link
+                                    href={`/${city}/minutes/${s.council_id}?q=${encodeURIComponent(t)}`}
+                                    className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors"
+                                  >
+                                    {t}
+                                  </Link>
+                                ) : (
+                                  <span className="text-[#4A5568]">{t}</span>
+                                )}
+                                <Link
+                                  href={`/search?q=${encodeURIComponent(`${member.name} ${t}`)}`}
+                                  className="shrink-0 text-xs text-[#A0AEC0] hover:text-[#2A5298] opacity-0 group-hover:opacity-100 transition-opacity"
+                                  title="議事録検索"
+                                  aria-label={`${t}を検索`}
+                                >
+                                  検索
+                                </Link>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+                  );
+                }
+              }
+              return items;
+            })()}
+          </ol>
         </section>
       ) : (
         <section id="activity" className="scroll-mt-20 bg-[#F4F6F9] rounded-lg p-6 text-center">

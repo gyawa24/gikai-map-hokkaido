@@ -117,6 +117,24 @@ export default async function CityMembersPage({
         memberHrefBase={`/${city}/members`}
         minutesHrefBase={`/${city}/minutes`}
       />
+      {/* オープンデータ導線（議員名簿 CSV） */}
+      <div
+        data-no-print="true"
+        className="max-w-2xl mx-auto mt-8 pt-4 border-t border-[#E2E8F0] text-xs text-[#718096] flex items-center justify-end gap-2"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <a
+          href={`/api/export/members?city=${city}`}
+          download
+          className="underline hover:text-[#1B3A6B] transition-colors"
+        >
+          議員名簿をCSVでダウンロード
+        </a>
+      </div>
     </>
   );
 }

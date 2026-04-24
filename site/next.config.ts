@@ -44,6 +44,20 @@ const nextConfig: NextConfig = {
       "./data/*/*_activity.json",
       "./data/*/index.json",
     ],
+    // /api/export/members は members.json だけ必要。
+    "/api/export/members": [
+      "./data/*/minutes/**/*",
+      "./data/*/sessions/**/*",
+      "./data/*/???.json",
+      "./data/*/????.json",
+      "./data/*/newsletter.json",
+      "./data/*/schedule.json",
+      "./data/*/comprehensive_plan.json",
+      "./data/*/decisions.json",
+      "./data/*/election.json",
+      "./data/*/*_activity.json",
+      "./data/*/index.json",
+    ],
     // /[city]/themes は members + members_activity だけ必要。
     "/**/themes": [
       "./data/*/minutes/**/*",

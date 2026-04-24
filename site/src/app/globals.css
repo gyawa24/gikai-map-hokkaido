@@ -33,3 +33,30 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.3;
 }
+
+/* 印刷最適化: 議員が紙の報告書・議会活動レポートに使いやすいように
+ * ヘッダーナビ・ベータバナー・フッター・シェアボタンなどの装飾を削除。
+ * 本文・見出し・カードはそのまま残す。 */
+@media print {
+  html, body { background: #ffffff !important; color: #000000 !important; }
+  body { font-size: 12pt; line-height: 1.6; }
+  /* data-no-print が付いた要素（ヘッダー・ベータバナー・フッター・シェア群）を非表示 */
+  [data-no-print="true"],
+  .no-print,
+  [role="dialog"],
+  [aria-live="polite"] {
+    display: none !important;
+  }
+  /* リンクはURLを併記して印刷物でも辿れるように */
+  a { color: #1B3A6B !important; text-decoration: underline; }
+  a[href^="mailto:"]::after,
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+  }
+  /* ページ区切り */
+  section { page-break-inside: avoid; break-inside: avoid; }
+  /* main のパディングを詰めて紙面を有効活用 */
+  main { padding: 0 !important; max-width: none !important; }
+}
