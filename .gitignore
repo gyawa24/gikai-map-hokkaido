@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Temporary files
+tmp_audio/
+
+# MCP-only generated artifact (re-buildable via npm run build-restricted-index)
+mcp-server/_restricted-index.json
+
+# Restricted municipality raw data (license unclear — keep local only)
+data/sapporo/
+site/data/sapporo/

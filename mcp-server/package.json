@@ -1,0 +1,22 @@
+{
+  "name": "gikai-mcp",
+  "version": "0.1.0",
+  "description": "地方議会.com 横断検索 MCP サーバー（個人利用）",
+  "type": "module",
+  "private": true,
+  "main": "index.mjs",
+  "bin": {
+    "gikai-mcp": "index.mjs"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "build-restricted-index": "node build-restricted-index.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
