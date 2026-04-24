@@ -1,18 +1,64 @@
+---
+name: 地方議会ドットコム
+version: beta
+description: 北海道の市町村議会情報を横断閲覧する非公式サイトのデザイン仕様書
+colors:
+  primary: "#1B3A6B"        # ヘッダー・フッター背景、濃紺アクセント
+  primary-mid: "#2A5298"     # リンク・バッジ文字・ボタンhover
+  primary-light: "#E8EEF7"   # バッジ背景・ホバー面
+  accent-gold: "#F7C948"     # 北海道ゴールド、βバッジ、ヘッダー上部ライン
+  warn-bg: "#FFF7E6"         # AI注意喚起・βバナー背景
+  warn-fg: "#78451F"         # AI注意・警告の文字
+  success-bg: "#065F46"      # Toast 成功
+  background: "#F4F6F9"
+  foreground: "#1A202C"
+  foreground-muted: "#4A5568"
+  foreground-subtle: "#718096"
+  border: "#CBD5E0"
+  border-light: "#E2E8F0"
+  muted: "#A0AEC0"
+typography:
+  fontFamily: "var(--font-noto-sans-jp), Hiragino Sans, sans-serif"
+  fontFeature: "palt 1, kern 1"
+  display:  { fontSize: 24px, fontWeight: 700, lineHeight: 1.3 }
+  headline: { fontSize: 20px, fontWeight: 700, lineHeight: 1.3 }
+  title:    { fontSize: 18px, fontWeight: 700, lineHeight: 1.4 }
+  body:     { fontSize: 16px, fontWeight: 400, lineHeight: 1.75 }
+  label:    { fontSize: 14px, fontWeight: 400, lineHeight: 1.5 }
+  caption:  { fontSize: 12px, fontWeight: 500, lineHeight: 1.4 }
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 12px
+  lg: 16px
+  xl: 24px
+  2xl: 32px
+rounded:
+  sm: 0.25rem
+  md: 0.5rem
+  lg: 0.75rem
+  full: 9999px
+---
+
 # 地方議会ドットコム — DESIGN.md
 
 AIエージェントがこのリポジトリを編集する際に参照するデザイン仕様書。
 新しいページ・コンポーネントを追加するときは、必ずここに定義されたトークンとパターンを使うこと。
+上部 YAML はトークンの機械可読サマリ（google-labs-code/design.md の spec 準拠）。本文は **なぜ** そうしたかを説明する。
 
 ---
 
 ## プロジェクト概要
 
-- **サービス名**: 地方議会ドットコム
+- **サービス名**: 地方議会ドットコム（ベータ公開中）
+- **本番ドメイン**: `chihougikai.com`
 - **目的**: 北海道内市町村議会の情報（議員・議事録・議決・日程）を横断的に公開する市民向け情報サイト
-- **対象都市**: 千歳市 / 恵庭市 / 苫小牧市（順次追加予定）
-- **技術スタック**: Next.js 16 App Router + Tailwind CSS v4 + TypeScript
+- **収録範囲**: 北海道179市町村 + 北海道議会 = 180自治体。うち機能を完全に提供しているのは千歳・恵庭・苫小牧の3市（議員・議事録・議決・議会だより・行事予定）。残り自治体は議事録中心に順次拡充中
+- **運営**: 株式会社オガワヤ（代表: 小川陽平 / 千歳市議会議員）
+- **技術スタック**: Next.js 16 App Router (Turbopack) + Tailwind CSS v4 + TypeScript
+- **フォント**: `next/font/google` で Noto Sans JP をビルド時配信（CSP `font-src 'self'` のまま動く）
 - **デプロイ**: Vercel（rootDirectory: `site/`、データは `site/data/{city}/` に配置）
-- **コンセプト**: **公共性・信頼感・見やすさ** — 行政情報サイトとして全年齢に信頼されるデザイン。「AIっぽい汎用デザイン」を避け、北海道の公共情報サイトとしての固有性を持たせる。
+- **コンセプト**: **公共性・信頼感・親しみやすさ** — 行政情報サイトとして全年齢に信頼されるデザイン。「AIっぽい汎用デザイン」を避け、北海道の公共情報サイトとしての固有性を持たせる。ただしガチガチの堅さではなく、市民が読みやすい柔らかめのコピーライティングを採用。
 
 ---
 
@@ -36,8 +82,30 @@ CSS変数は `site/src/app/globals.css` で定義。Tailwindクラスでは直�
 | 値 | 用途 |
 |---|---|
 | `#E2E8F0` | カード内の薄い区切り線・内側ボーダー |
-| `#F7C948` | ヘッダー上部アクセントライン（北海道ゴールド） |
+| `#F7C948` | ヘッダー上部アクセントライン・β バッジ背景・注意喚起の縁（北海道ゴールド） |
 | `#A0AEC0` | 空欄・無効のダッシュ（―） |
+| `#FFF7E6` | **AI要約注意・ベータ公開バナーの背景**（warn-bg） |
+| `#78451F` | 同上の本文（warn-fg） |
+| `#065F46` | Toast 成功の背景（コピー完了通知など） |
+
+### 会派カラー（OG画像・バッジ）
+
+`og-segment` / `og-member` の `factionColors()` で会派名を正規表現マッチして使用。
+
+| 会派グループ | bar/chipFg/chipBg |
+|---|---|
+| 自民・自由民主 | `#B45309` / `#92400E` / `#FEF3C7` |
+| 公明 | `#0369A1` / `#075985` / `#E0F2FE` |
+| 共産 | `#B91C1C` / `#991B1B` / `#FEE2E2` |
+| 立憲・民主系（春風含む） | `#0E7490` / `#155E75` / `#CFFAFE` |
+| 維新 | `#6D28D9` / `#5B21B6` / `#EDE9FE` |
+| ちとせ未来・市民と歩・会派市民・改革フォーラム | `#047857` / `#065F46` / `#D1FAE5` |
+| 参政 | `#7E22CE` / `#6B21A8` / `#F3E8FF` |
+| 国民民主 | `#CA8A04` / `#A16207` / `#FEF9C3` |
+| 新緑 | `#65A30D` / `#4D7C0F` / `#ECFCCB` |
+| 諸派・無所属 | `#52525B` / `#3F3F46` / `#F4F4F5` |
+
+**重要**: 会派カラーの新設・変更は `og-segment/route.tsx` と `og-member/route.tsx` の両方で同期すること。
 
 ### 会派バッジカラー（`MemberList.tsx` の `factionBadgeClass` 参照）
 
@@ -55,10 +123,16 @@ CSS変数は `site/src/app/globals.css` で定義。Tailwindクラスでは直�
 ## タイポグラフィ
 
 ```css
-font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", sans-serif;
-line-height: 1.7;   /* body（globals.css） */
-line-height: 1.3;   /* h1–h4（globals.css） */
+/* globals.css で一括指定 */
+font-family: var(--font-noto-sans-jp), "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+             "Yu Gothic UI", sans-serif;
+font-feature-settings: "palt" 1, "kern" 1;  /* 和文の詰め */
+letter-spacing: 0.01em;
+line-height: 1.75;   /* body */
+line-height: 1.3;    /* h1–h4 */
 ```
+
+Noto Sans JP は `next/font/google` で build 時ダウンロード→同一オリジンから配信。CSP の `font-src 'self'` のまま動く。失敗時は Hiragino にフォールバック。
 
 | 要素 | Tailwindクラス | サイズ |
 |---|---|---|
@@ -70,6 +144,7 @@ line-height: 1.3;   /* h1–h4（globals.css） */
 | バッジ・タグ・ふりがな | `text-xs` | 12px |
 
 **ルール**: `text-xs`（12px）以下はバッジ・タグ・ふりがなのみ。説明文・本文への使用禁止。
+数値（件数・議席番号・年度・日付）は `tabular-nums` を付けて桁揃え。
 
 ---
 
@@ -178,6 +253,93 @@ line-height: 1.3;   /* h1–h4（globals.css） */
 <a class="text-sm px-3 py-2 border-b-2 border-transparent text-blue-100
           hover:text-white hover:border-blue-300 transition-colors">行事予定</a>
 ```
+
+---
+
+## 状態とインタラクション
+
+### ホバー・フォーカス・アクティブの原則
+
+- **ホバー**: `transition-colors`（150ms）で色を濃い方へ。浮き上がり（`translate`）は使わない
+- **フォーカス**: `focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]` を必ず付ける
+- **アクティブ（選択中）**: 背景反転（例: `bg-[#1B3A6B] text-white`）または下線
+- **無効**: `disabled:opacity-40 disabled:cursor-not-allowed`
+
+### リンク・ボタンの状態マトリクス
+
+| 種別 | 通常 | ホバー | フォーカス | 押下/選択 |
+|---|---|---|---|---|
+| プライマリボタン | `bg-[#1B3A6B] text-white` | `hover:bg-[#2A5298]` | ring-[#2A5298] | - |
+| 枠線ボタン | `bg-white text-[#1B3A6B] border-[#CBD5E0]` | `hover:border-[#1B3A6B] hover:bg-[#E8EEF7]` | ring-[#2A5298] | - |
+| 小型リンクボタン | `text-xs text-[#718096]` | `hover:text-[#1B3A6B] hover:bg-[#E8EEF7]` | ring-[#2A5298] | - |
+| pillフィルタ | `bg-white text-[#4A5568] border-[#CBD5E0]` | `hover:border-[#1B3A6B]` | ring-[#2A5298] | `bg-[#1B3A6B] text-white`（主要）または `bg-[#2A5298] text-white`（副次） |
+
+### アニメーション
+
+過剰演出しない。許可する範囲：
+
+- `transition-colors duration-150`（色変化）
+- `transition-all duration-150`（軽微な shadow/border の同時変化のみ）
+- `animate-pulse`（スケルトンローディング）
+- `animate-bounce`（入力待ちの3点）
+- Toast のスライドイン: `translate-y-2 → 0` + `opacity-0 → 100`（200ms）
+
+禁止: `translate-y-2` 以上の浮き上がり、派手な bounce/spin、`@keyframes` 自作。
+
+---
+
+## 近代UI規約（2026-04 以降の運用）
+
+### ベータ公開バナー
+
+ヘッダー直下に常設。全ページで表示する。
+
+```html
+<div class="bg-[#FFF7E6] border-b border-[#F7C948]">
+  <div class="max-w-5xl mx-auto px-4 py-2 text-xs text-[#78451F] flex flex-wrap items-center justify-center gap-x-3">
+    <span class="font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5">β</span>
+    <span>ベータ公開中 — 機能追加・仕様変更があります</span>
+    <a href="/news" class="underline hover:text-[#1B3A6B]">更新情報</a>
+    <a href="mailto:ogawayohei.hkd@gmail.com" class="underline">ご意見はこちら</a>
+  </div>
+</div>
+```
+
+### AI要約の注意書き（`AIDisclaimer`）
+
+AIが自動生成したコンテンツ（要約・タグ・Q&A抽出）を表示するページの**上部に常設**する。
+
+- 対象: `/[city]/sessions/[id]`, `/topics/[tag]`
+- 背景 `#FFF7E6`、縁 `#F7C948`、本文 `#78451F`
+- 「原文で確認を」と訂正依頼窓口（利用規約第4条）を明示
+- 発言者本人からの訂正依頼は**1営業日以内の初動・3営業日以内の対応**を約束（terms 第4条）
+
+### Toast 通知
+
+`ToastProvider` + `useToast().show("message")` で呼び出す。
+
+- 位置: `fixed bottom-4 left-1/2 -translate-x-1/2 z-50`
+- 成功: `bg-[#065F46] text-white`
+- 情報: `bg-[#1B3A6B] text-white`
+- 自動消去 2.5秒
+
+**原則**: コピー・保存など確定操作のフィードバックは Toast に統一する。インラインで「コピー済」を1.8秒表示する旧UIは廃止。
+
+### シェア導線
+
+- 議員ページ・発言カード・議事録発言行にリンクコピー・引用コピー・Xシェア・QRコードの4アクション
+- URL は **発言単位** で `/s/{city}/{session}/{seg}` 短縮ルート経由。SNSで発言ごとのOGカードが出る
+- QRコードは `QRCodeModal` で表示、SVGダウンロード可能
+
+### OG画像
+
+- `/api/og-segment?city=&session=&seg=` — 発言カード（会派カラー縦バー + 議員写真 + トピック）
+- `/api/og-member?city=&seat=` — 議員名刺（写真・会派chip・質問活動回数・テーマ上位4）
+- サイズは 1200×630、`next/og` の ImageResponse（sharp 依存）
+
+### ダッシュボード数字
+
+トップページの規模ダッシュボード（対象自治体・議員・会議録・議題）は `lib/siteStats.ts` がビルド時に集計する。数字は `tabular-nums` で揃え、ラベルは `text-[11px] text-[#718096]` の小さめに。
 
 ---
 
@@ -329,3 +491,8 @@ function getData(): T[] {
 | グラデーション背景・派手なシャドウ | 行政サイトらしさを損なう |
 | 外部アイコンライブラリのimport | バンドルサイズ増加。インラインSVGを使うこと |
 | `outputFileTracingIncludes` に `"/**"` を使う | Next.js 16ではAPIルートを個別に指定すること |
+| `outputFileTracingExcludes` のキーに `[city]` などブラケット名を直書き | picomatch がキャラクタクラスとして解釈するため。動的ルートをターゲットにする時は `/**/themes` のようにワイルドカードを使う |
+| 「市議会」単独表記（全自治体に言及する文脈で） | 町村議会も含むため「市町村議会」と表記する |
+| 「千歳・恵庭・苫小牧」の3市ハードコード | 180自治体対応のデータは `municipalities.json` から引く |
+| インラインで「コピー済」を1.8秒だけ表示するコピーフィードバック | Toast に統一する |
+| AI要約を載せるページに `AIDisclaimer` を置かない | 法的リスク低減と訂正依頼動線のため必須 |
