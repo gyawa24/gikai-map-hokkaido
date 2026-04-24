@@ -1,4 +1,4 @@
-import { kv } from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 
 export type LikeTarget =
   | { kind: "council"; slug: string; council_id: number }
@@ -11,34 +11,64 @@ export function likeKey(target: LikeTarget): string {
   return `like:minute:${target.slug}:${target.council_id}:${target.schedule_id}:${target.minute_id}`;
 }
 
+// Vercel + Upstash 連携時に付与される環境変数のいくつかのパターンを順に試す:
+//   - 標準（プレフィックスなし）: KV_REST_API_URL / KV_REST_API_TOKEN
+//   - Upstash 標準: UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN
+//   - Custom Prefix "STORAGE" 付き: STORAGE_KV_REST_API_URL / STORAGE_KV_REST_API_TOKEN
+function resolveCredentials(): { url: string; token: string } | null {
+  const env = process.env;
+  const candidates: Array<[string | undefined, string | undefined]> = [
+    [env.KV_REST_API_URL, env.KV_REST_API_TOKEN],
+    [env.UPSTASH_REDIS_REST_URL, env.UPSTASH_REDIS_REST_TOKEN],
+    [env.STORAGE_KV_REST_API_URL, env.STORAGE_KV_REST_API_TOKEN],
+    [env.STORAGE_UPSTASH_REDIS_REST_URL, env.STORAGE_UPSTASH_REDIS_REST_TOKEN],
+  ];
+  for (const [url, token] of candidates) {
+    if (url && token) return { url, token };
+  }
+  return null;
+}
+
+let _redis: Redis | null | undefined;
+function getRedis(): Redis | null {
+  if (_redis !== undefined) return _redis;
+  const creds = resolveCredentials();
+  _redis = creds ? new Redis(creds) : null;
+  return _redis;
+}
+
 export function isKvConfigured(): boolean {
-  return Boolean(process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN);
+  return getRedis() !== null;
 }
 
 export async function getCount(key: string): Promise<number> {
-  if (!isKvConfigured()) return 0;
-  const v = await kv.get<number>(key);
+  const r = getRedis();
+  if (!r) return 0;
+  const v = await r.get<number>(key);
   return typeof v === "number" ? v : 0;
 }
 
 export async function getCounts(keys: string[]): Promise<Record<string, number>> {
-  if (!isKvConfigured() || keys.length === 0) {
+  const r = getRedis();
+  if (!r || keys.length === 0) {
     return Object.fromEntries(keys.map((k) => [k, 0]));
   }
-  const values = await kv.mget<(number | null)[]>(...keys);
+  const values = (await r.mget<(number | null)[]>(...keys)) as (number | null)[];
   return Object.fromEntries(keys.map((k, i) => [k, values[i] ?? 0]));
 }
 
 export async function increment(key: string): Promise<number> {
-  if (!isKvConfigured()) return 0;
-  return await kv.incr(key);
+  const r = getRedis();
+  if (!r) return 0;
+  return await r.incr(key);
 }
 
 export async function decrement(key: string): Promise<number> {
-  if (!isKvConfigured()) return 0;
-  const v = await kv.decr(key);
+  const r = getRedis();
+  if (!r) return 0;
+  const v = await r.decr(key);
   if (v < 0) {
-    await kv.set(key, 0);
+    await r.set(key, 0);
     return 0;
   }
   return v;
