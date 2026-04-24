@@ -68,13 +68,6 @@ export default function RootLayout({
             <Link href="/news" className="underline hover:text-[#1B3A6B]">
               更新情報
             </Link>
-            <span aria-hidden="true" className="text-[#CBB46B]">·</span>
-            <a
-              href="mailto:ogawayohei.hkd@gmail.com"
-              className="underline hover:text-[#1B3A6B]"
-            >
-              ご意見はこちら
-            </a>
           </div>
         </div>
 
