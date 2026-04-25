@@ -40,6 +40,13 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
         { href: "/search", label: "検索" },
       ];
 
+  const mobileQuickLinks = city
+    ? []
+    : [
+        { href: "/search", label: "検索する" },
+        { href: "/#municipalities", label: "市町村一覧" },
+      ];
+
   function renderNavLink(item: NavItem) {
     const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
     return (
@@ -73,7 +80,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
           <div className="flex min-w-0 flex-col gap-3">
             <Link
               href="/"
-              className="inline-flex w-fit items-center gap-2 rounded-full border-[3px] border-[#1F2937] bg-white px-4 py-3 text-sm font-black text-[#111827] shadow-[0_8px_16px_rgba(27,58,107,0.08)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFD54F]"
+              className="hidden w-fit items-center gap-2 rounded-full border-[3px] border-[#1F2937] bg-white px-4 py-3 text-sm font-black text-[#111827] shadow-[0_8px_16px_rgba(27,58,107,0.08)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFD54F] sm:inline-flex"
             >
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#1F2937] text-white">
                 <TvIcon className="h-5 w-5" />
@@ -84,32 +91,50 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
 
             <div className="flex flex-wrap items-center gap-2">
               <div className="inline-flex items-center gap-3 rounded-[28px] border-[4px] border-[#1F2937] bg-white px-4 py-3 text-[#111827] shadow-[0_14px_24px_rgba(27,58,107,0.09)] sm:px-5 sm:py-4">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#1F2937] text-white">
-                  <TvIcon className="h-6 w-6" />
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#1F2937] text-white sm:h-12 sm:w-12">
+                  <TvIcon className="h-6 w-6 sm:h-7 sm:w-7" />
                 </span>
-                <span className="text-[1.65rem] font-black leading-none tracking-tight sm:text-[2.1rem]">
+                <span className="text-[1.2rem] font-black leading-none tracking-tight sm:text-[2.1rem]">
                   {city ? city.name : "地方議会ドットコム"}
                 </span>
               </div>
-              <span className="inline-flex items-center rounded-full border-2 border-[#E6C566] bg-[#FFF3BF] px-3 py-2 text-lg font-medium text-[#6B4C11]">
+              <span className="hidden items-center rounded-full border-2 border-[#E6C566] bg-[#FFF3BF] px-3 py-2 text-lg font-medium text-[#6B4C11] sm:inline-flex">
                 β
               </span>
             </div>
 
             {!city && (
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap">
                 <span className="rounded-full border-2 border-[#E6C566] bg-[#FFF8DB] px-4 py-2 text-sm font-black text-[#6B4C11]">
                   北海道内の市町村議会の情報を横断的に検索・閲覧できます
                 </span>
-                <span className="rounded-full border-2 border-[#D7DEE8] bg-white px-4 py-2 text-sm font-black text-[#475569]">
+                <span className="hidden rounded-full border-2 border-[#D7DEE8] bg-white px-4 py-2 text-sm font-black text-[#475569] sm:inline-flex">
                   みんなで見つける議会の入口
                 </span>
+              </div>
+            )}
+
+            {!city && mobileQuickLinks.length > 0 && (
+              <div className="flex gap-2 sm:hidden">
+                {mobileQuickLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`inline-flex flex-1 items-center justify-center rounded-full border-2 px-4 py-3 text-sm font-black ${
+                      item.label === "検索する"
+                        ? "border-[#E6C566] bg-[#FFF3BF] text-[#6B4C11]"
+                        : "border-[#D7DEE8] bg-white text-[#475569]"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
 
           {!city && (
-            <nav className="flex flex-wrap justify-start gap-2 sm:justify-end" aria-label="上部ナビゲーション">
+            <nav className="hidden flex-wrap justify-start gap-2 sm:flex sm:justify-end" aria-label="上部ナビゲーション">
               {[
                 { href: "/search?q=議員", label: "議員" },
                 { href: "/search?q=議事録", label: "議事録" },

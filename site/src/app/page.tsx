@@ -140,14 +140,14 @@ export default function HomePage() {
           { label: "会議録", value: stats.minutesCount.toLocaleString(), unit: "件", tone: "bg-[#DDF8E9] text-[#16624A]" },
           { label: "議題", value: stats.agendaCount.toLocaleString(), unit: "件", tone: "bg-[#E3F2FF] text-[#18507C]" },
         ].map((item) => (
-          <div key={item.label} className="theme-card rounded-[24px] px-4 py-4 sm:px-5 sm:py-5">
-            <div className={`mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl text-base font-black ${item.tone}`}>
+          <div key={item.label} className="theme-card rounded-[22px] px-4 py-4 sm:px-4 sm:py-4">
+            <div className={`mb-2 inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm font-black sm:h-10 sm:w-10 ${item.tone}`}>
               {item.label.slice(0, 1)}
             </div>
-            <p className="text-sm font-black text-[#475569]">{item.label}</p>
-            <p className="mt-1 text-[2rem] font-black leading-none text-[#111827] sm:text-[2.4rem]">
+            <p className="text-[13px] font-black text-[#475569] sm:text-sm">{item.label}</p>
+            <p className="mt-1 flex items-end gap-1 text-[1.8rem] font-black leading-none text-[#111827] sm:text-[2.1rem]">
               {item.value}
-              {item.unit && <span className="ml-1 text-lg text-[#475569]">{item.unit}</span>}
+              {item.unit && <span className="pb-1 text-base text-[#475569] sm:text-lg">{item.unit}</span>}
             </p>
           </div>
         ))}
