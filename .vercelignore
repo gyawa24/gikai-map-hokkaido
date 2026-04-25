@@ -1,10 +1,12 @@
-tmp_audio/
-data/
-scraper/
-mcp-server/
-agents/node_modules/
-.venv/
-gikaimap/
+# 先頭スラッシュ付きはリポジトリ root 直下のみにマッチ
+# （無いと "data/" のように site/data/ もマッチしてしまう）
+/tmp_audio/
+/data/
+/scraper/
+/mcp-server/
+/agents/node_modules/
+/.venv/
+/gikaimap/
 site/.next/
 site/node_modules/
 site/.vercel/
