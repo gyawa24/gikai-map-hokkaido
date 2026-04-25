@@ -13,8 +13,6 @@ import {
 } from "@/lib/metadata";
 import "./globals.css";
 
-// next/font/google は build 時にフォントをダウンロードし同一オリジンから配信するため
-// CSP の font-src 'self' のまま使える（外部フェッチなし）。
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
   weight: ["400", "500", "700", "800"],
@@ -24,6 +22,14 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: ["/favicon.ico"],
+    apple: ["/icon.svg"],
+  },
   title: {
     default: SITE_NAME,
     template: `%s | ${SITE_NAME}`,
@@ -75,108 +81,83 @@ export default function RootLayout({
 }) {
   const updatedAt = getSearchIndexGeneratedAt();
   const updatedLabel = formatJaDate(updatedAt);
+
   return (
     <html lang="ja" className={notoSansJP.variable}>
-      <body className="min-h-screen flex flex-col antialiased">
+      <body className="min-h-screen antialiased">
         <ToastProvider>
-          <CityHeaderServer />
+          <div className="flex min-h-screen flex-col">
+            <CityHeaderServer />
 
-        {/* ベータ公開バナー */}
-        <div data-no-print="true" className="bg-[#FFF7E6] border-b border-[#F7C948]">
-          <div className="max-w-5xl mx-auto px-4 py-2 text-xs text-[#78451F] flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
-            <span className="font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5 tracking-wide">
-              β
-            </span>
-            <span>ベータ公開中 — 機能追加・仕様変更があります</span>
-            <span aria-hidden="true" className="text-[#CBB46B]">·</span>
-            <Link href="/news" className="underline hover:text-[#1B3A6B]">
-              更新情報
-            </Link>
-          </div>
-        </div>
-
-        <main className="flex-1 max-w-5xl mx-auto w-full px-4 py-8">
-          {children}
-        </main>
-
-        <footer data-no-print="true" style={{ backgroundColor: "var(--color-primary)" }} className="text-white mt-8">
-          <div className="max-w-5xl mx-auto px-4 py-6">
-            <p className="text-sm font-medium text-blue-100 mb-3">
-              地方議会ドットコム
-              <span className="ml-2 text-[10px] font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5 align-middle">
-                β
-              </span>
-            </p>
-            <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-blue-200 mb-4">
-              <span className="text-blue-300">データ出典:</span>
-              <span className="text-blue-100">
-                北海道内の各市町村議会 公式ウェブサイト
-              </span>
-              <Link
-                href="/"
-                className="hover:text-white transition-colors underline decoration-blue-400"
-              >
-                収録自治体一覧
-              </Link>
-              <span className="text-blue-400" aria-hidden="true">·</span>
-              <a
-                href="https://github.com/gyawa24/gikai-map-hokkaido"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors underline decoration-blue-400"
-              >
-                GitHub
-              </a>
-            </div>
-            <p className="text-xs text-blue-300 mb-2">
-              本サイトは非公式の情報サイトです。公式情報は各市町村議会の公式サイトでご確認ください。
-            </p>
-            {updatedLabel && (
-              <p className="text-xs text-blue-300 mb-2">
-                データ最終更新: {updatedLabel} 時点（以降の議事録は各市町村議会の公式サイトをご覧ください）
-              </p>
-            )}
-            <div className="text-xs text-blue-400 space-y-1">
-              <p>運営: 株式会社オガワヤ（代表: 小川陽平 / 千歳市議会議員）</p>
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                <a
-                  href="mailto:ogawayohei.hkd@gmail.com"
-                  className="hover:text-white transition-colors underline decoration-blue-500"
-                >
-                  ogawayohei.hkd@gmail.com
-                </a>
-                <a
-                  href="https://x.com/yoheiogawa_DPFP"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors underline decoration-blue-500"
-                >
-                  X @yoheiogawa_DPFP
-                </a>
-              </div>
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 pt-1">
-                <Link
-                  href="/news"
-                  className="hover:text-white transition-colors underline decoration-blue-500"
-                >
-                  お知らせ
-                </Link>
-                <Link
-                  href="/privacy"
-                  className="hover:text-white transition-colors underline decoration-blue-500"
-                >
-                  プライバシーポリシー
-                </Link>
-                <Link
-                  href="/terms"
-                  className="hover:text-white transition-colors underline decoration-blue-500"
-                >
-                  利用規約
-                </Link>
+            <div
+              data-no-print="true"
+              className="border-b border-[#e6c566] bg-[linear-gradient(180deg,#fff8db_0%,#fffdf4_100%)]"
+            >
+              <div className="page-shell flex flex-wrap items-center justify-between gap-2 px-4 py-2.5 text-xs font-bold text-[#6b4c11] sm:text-sm">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <span className="theme-pill-soft border-[#e6c566] bg-[#ffd54f] text-[#1b3a6b]">β</span>
+                  <span>ベータ公開中</span>
+                  <span className="text-[#d4b254]">●</span>
+                  <span>機能追加・仕様変更があります</span>
+                </div>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <Link href="/news" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
+                    更新情報
+                  </Link>
+                  <Link href="/search" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
+                    横断検索
+                  </Link>
+                </div>
               </div>
             </div>
+
+            <main className="flex-1 px-4 py-6 sm:py-8">
+              {children}
+            </main>
+
+            <footer data-no-print="true" className="mt-10 border-t border-[#203a66] bg-[linear-gradient(180deg,#143055_0%,#0f2548_100%)] text-white">
+              <div className="page-shell px-4 py-8">
+                <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+                  <div>
+                    <div className="mb-3 flex flex-wrap items-center gap-2">
+                      <span className="portal-subhead border-white/25 bg-white/10 text-white">地方議会ドットコム</span>
+                      <span className="theme-pill-soft border-[#e6c566] bg-[#ffd54f] text-[#1b3a6b]">β</span>
+                    </div>
+                    <p className="max-w-3xl text-sm leading-relaxed text-[#d5def0]">
+                      北海道内の市町村議会の議員情報・議事録・議決結果を、横断的に見つけやすく整理する非公式の情報サイトです。
+                      情報の入口としての見やすさを重視しつつ、公共サイトとしての信頼感も保つよう設計しています。
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-2 text-xs font-bold text-[#c7d5eb]">
+                      <Link href="/" className="theme-pill-soft border-white/15 bg-white/10 text-white">収録自治体一覧</Link>
+                      <Link href="/news" className="theme-pill-soft border-white/15 bg-white/10 text-white">お知らせ</Link>
+                      <Link href="/privacy" className="theme-pill-soft border-white/15 bg-white/10 text-white">プライバシーポリシー</Link>
+                      <Link href="/terms" className="theme-pill-soft border-white/15 bg-white/10 text-white">利用規約</Link>
+                    </div>
+                  </div>
+
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-[22px] border border-white/10 bg-white/6 p-4">
+                      <p className="mb-2 text-xs font-black uppercase tracking-[0.12em] text-[#ffd54f]">データ出典</p>
+                      <p className="text-sm text-[#dbe7ff]">北海道内の各市町村議会 公式ウェブサイト</p>
+                      {updatedLabel && (
+                        <p className="mt-2 text-xs text-[#a9bbd8]">データ最終更新: {updatedLabel}</p>
+                      )}
+                    </div>
+                    <div className="rounded-[22px] border border-white/10 bg-white/6 p-4">
+                      <p className="mb-2 text-xs font-black uppercase tracking-[0.12em] text-[#ffd54f]">運営</p>
+                      <p className="text-sm text-[#dbe7ff]">株式会社オガワヤ</p>
+                      <p className="text-xs text-[#a9bbd8]">代表: 小川陽平 / 千歳市議会議員</p>
+                      <div className="mt-2 space-y-1 text-xs">
+                        <a href="mailto:ogawayohei.hkd@gmail.com" className="block text-[#dbe7ff] underline decoration-white/30">ogawayohei.hkd@gmail.com</a>
+                        <a href="https://x.com/yoheiogawa_DPFP" target="_blank" rel="noopener noreferrer" className="block text-[#dbe7ff] underline decoration-white/30">X @yoheiogawa_DPFP</a>
+                        <a href="https://github.com/gyawa24/gikai-map-hokkaido" target="_blank" rel="noopener noreferrer" className="block text-[#dbe7ff] underline decoration-white/30">GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
           </div>
-        </footer>
         </ToastProvider>
         <Analytics />
       </body>
