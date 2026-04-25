@@ -1,6 +1,11 @@
+import { buildPageMetadata } from "@/lib/metadata";
 import SearchClient from "@/components/SearchClient";
 
-export const metadata = { title: "検索" };
+export const metadata = buildPageMetadata({
+  title: "検索",
+  description: "北海道内の市町村議会議事録・議員情報をキーワードで横断検索できます。",
+  path: "/search",
+});
 
 export default function SearchPage() {
   return (

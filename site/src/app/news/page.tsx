@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { getNews, categoryClass } from "@/lib/news";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: "お知らせ・更新情報",
   description:
     "地方議会ドットコムの新機能・改善・自治体追加などのお知らせを時系列でご覧いただけます。",
-};
+  path: "/news",
+});
 
 function formatDateJa(iso: string): string {
   const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);

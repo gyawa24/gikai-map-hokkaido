@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: "利用規約",
   description: "地方議会ドットコムの利用規約。",
-};
+  path: "/terms",
+});
 
 export default function TermsPage() {
   return (

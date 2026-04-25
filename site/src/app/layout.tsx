@@ -5,6 +5,12 @@ import { Analytics } from "@vercel/analytics/next";
 import CityHeaderServer from "@/components/CityHeaderServer";
 import { ToastProvider } from "@/components/Toast";
 import { getSearchIndexGeneratedAt, formatJaDate } from "@/lib/dataFreshness";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_OG_IMAGE,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/metadata";
 import "./globals.css";
 
 // next/font/google は build 時にフォントをダウンロードし同一オリジンから配信するため
@@ -17,26 +23,41 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chihougikai.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "地方議会ドットコム（β）",
-    template: "%s | 地方議会ドットコム（β）",
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。（ベータ公開中）",
+  applicationName: SITE_NAME,
+  description: DEFAULT_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "地方議会ドットコム（β）",
-    description:
-      "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。（ベータ公開中）",
+    title: SITE_NAME,
+    description: DEFAULT_DESCRIPTION,
     type: "website",
     locale: "ja_JP",
-    siteName: "地方議会ドットコム（β）",
+    siteName: SITE_NAME,
+    url: SITE_URL,
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: SITE_NAME,
+      },
+    ],
   },
   twitter: {
-    card: "summary",
-    title: "地方議会ドットコム（β）",
-    description:
-      "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。（ベータ公開中）",
+    card: "summary_large_image",
+    title: SITE_NAME,
+    description: DEFAULT_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
+  },
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: "/favicon.ico",
   },
   robots: {
     index: true,
@@ -58,7 +79,7 @@ export default function RootLayout({
     <html lang="ja" className={notoSansJP.variable}>
       <body className="min-h-screen flex flex-col antialiased">
         <ToastProvider>
-        <CityHeaderServer />
+          <CityHeaderServer />
 
         {/* ベータ公開バナー */}
         <div data-no-print="true" className="bg-[#FFF7E6] border-b border-[#F7C948]">

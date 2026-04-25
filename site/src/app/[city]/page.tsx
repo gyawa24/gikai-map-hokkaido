@@ -6,6 +6,7 @@ import MemberList from "@/components/MemberList";
 import CitySummaryCards from "@/components/CitySummaryCards";
 import { getMinutesSummary } from "@/lib/cityStats";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -15,14 +16,11 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const name = municipality?.council_name ?? "市町村議会";
-  return {
+  return buildPageMetadata({
     title: name,
     description: `${name}の議員一覧・議事録を掲載しています。`,
-    openGraph: {
-      title: `${name}`,
-      description: `${name}の議員一覧・議事録を掲載しています。`,
-    },
-  };
+    path: `/${city}`,
+  });
 }
 
 function getMembers(city: string): Member[] {

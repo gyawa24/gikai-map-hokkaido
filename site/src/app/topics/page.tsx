@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { getAllTags } from "@/lib/topics";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = buildPageMetadata({
   title: "テーマ別議事録",
   description: "北海道内の市町村議会議事録をテーマ・タグ別に横断検索できます。",
-};
+  path: "/topics",
+});
 
 export default function TopicsPage() {
   const tags = getAllTags();

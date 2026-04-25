@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import type { MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesIndexClient from "@/components/MinutesIndexClient";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -15,11 +16,11 @@ export async function generateMetadata({
   const cityName = municipality?.name ?? city;
   const title = `議事録 - ${cityName}`;
   const description = `${cityName}議会の公式議事録一覧です。`;
-  return {
+  return buildPageMetadata({
     title,
     description,
-    openGraph: { title, description },
-  };
+    path: `/${city}/minutes`,
+  });
 }
 
 function getMinutesIndex(city: string): MinutesIndexItem[] {

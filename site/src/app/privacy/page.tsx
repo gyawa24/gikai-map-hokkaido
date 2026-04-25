@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: "プライバシーポリシー",
   description:
     "地方議会ドットコムにおける個人情報・利用者情報の取扱いについて。",
-};
+  path: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

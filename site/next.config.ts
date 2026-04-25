@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
   // Serverless Function の 250MB 制限対策。
   // 各 Function が必要とするデータだけ残し、それ以外を除外する。
   //
