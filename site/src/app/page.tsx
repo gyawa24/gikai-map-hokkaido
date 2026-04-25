@@ -106,14 +106,14 @@ export default function HomePage() {
     }));
 
   return (
-    <div className="page-shell space-y-6">
+    <div className="page-shell min-w-0 space-y-6">
       <section className="theme-panel rounded-[30px] px-4 py-5 sm:px-6 sm:py-6">
-        <h1 className="text-[2.2rem] font-black leading-[1.1] tracking-tight text-[#111827] sm:text-[4rem]">
+        <h1 className="text-[2.1rem] font-black leading-[1.1] tracking-tight text-[#111827] md:text-[3.1rem] xl:text-[4rem]">
           地方議会の「なか」を、
           <br />
           わかりやすく。
         </h1>
-        <p className="mt-4 max-w-4xl text-[15px] leading-relaxed text-[#475569] sm:text-lg">
+        <p className="mt-4 max-w-4xl text-[15px] leading-relaxed text-[#475569] md:text-[17px] xl:text-lg">
           まずは北海道から。市町村議会の議員・議事録・議決を横断的にまとめて、
           どんな議論が行われているか、だれでもかんたんに追えるようにしています。
         </p>
@@ -128,7 +128,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+      <section className="grid grid-cols-2 gap-3 xl:grid-cols-4">
         {[
           { label: "対象自治体", value: stats.municipalityCount.toLocaleString(), unit: "", tone: "border-[#DCE6F5]" },
           { label: "議員", value: stats.memberCount.toLocaleString(), unit: "名", tone: "border-[#F3E3AF]" },
@@ -149,19 +149,19 @@ export default function HomePage() {
       </section>
 
       {latestNews.length > 0 && (
-        <section className="theme-card rounded-[28px] px-4 py-4 sm:px-5">
-          <div className="mb-3 flex items-center justify-between gap-3">
+        <section className="border-t border-[#D8DEE8] px-1 pt-1">
+          <div className="mb-3 flex items-center justify-between gap-3 px-3 pt-3 sm:px-4">
             <h2 className="text-xl font-black text-[#111827]">更新情報</h2>
             <Link href="/news" className="text-sm font-black text-[#1B3A6B]">
               すべて見る ›
             </Link>
           </div>
-          <div className="space-y-2">
+          <div className="divide-y divide-[#E5E7EB] border-y border-[#E5E7EB] bg-white">
             {latestNews.map((item) => (
               <Link
                 key={`${item.date}-${item.title}`}
                 href="/news"
-                className="block rounded-[20px] border border-[#E5E7EB] bg-[#FAFAFA] px-4 py-3 transition-colors hover:border-[#CBD5E0]"
+                className="block px-4 py-4 transition-colors hover:bg-[#FAFBFD] sm:px-5"
               >
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-xs font-bold text-[#64748B]">{item.date}</span>
@@ -176,7 +176,7 @@ export default function HomePage() {
         </section>
       )}
 
-      <section id="municipalities" className="theme-card rounded-[28px] px-4 py-4 sm:px-5 sm:py-5">
+      <section id="municipalities" className="min-w-0 border-t border-[#D8DEE8] pt-6">
         <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
           <div>
             <h2 className="text-[1.7rem] font-black leading-tight text-[#111827] sm:text-[2rem]">市町村議会を選ぶ</h2>
@@ -192,16 +192,16 @@ export default function HomePage() {
             <details
               key={region}
               open={region === "石狩"}
-              className="overflow-hidden rounded-[24px] border-2 border-[#D8DEE8] bg-[#FBFCFE]"
+              className="overflow-hidden border-b border-[#D8DEE8] bg-transparent pb-3"
             >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-3">
                 <div className="flex min-w-0 flex-wrap items-center gap-2">
                   <span className="theme-pill px-4 py-2 text-sm text-[#1B3A6B]">{region}</span>
                   <span className="text-sm font-bold text-[#64748B]">{regionCities.length}自治体</span>
                 </div>
                 <span className="text-xl font-black text-[#8AA3CF]">⌄</span>
               </summary>
-              <div className="grid gap-3 border-t border-dashed border-[#D8DEE8] px-4 py-4 sm:grid-cols-2 xl:grid-cols-3">
+              <div className="grid gap-3 border-t border-dashed border-[#D8DEE8] pt-4 sm:grid-cols-2 2xl:grid-cols-3">
                 {regionCities.map((city) => {
                   const featured = city.id === "chitose";
                   return (
