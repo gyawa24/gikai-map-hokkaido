@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { createClient } from "@supabase/supabase-js";
 import { getMunicipalities } from "@/lib/municipalities";
 import {
   buildExpansionSummary,
@@ -656,4 +657,180 @@ export async function GET(request: NextRequest) {
     relatedExpandedTerms: expansionSummary.relatedTerms.slice(0, 12),
     searchSuggestions,
   });
+}
+
+// ---------------------------------------------------------------------------
+// POST handler — AI 検索
+// 議事録 embeddings (Supabase pgvector) を Gemini で埋め込んだクエリと照合し、
+// 上位 5 件を Groq llama-3.3-70b-versatile に渡して根拠付き回答を生成する。
+// ---------------------------------------------------------------------------
+export type AiSearchSource = {
+  municipality: string;
+  meeting_name: string;
+  speaker: string;
+  content: string;
+  similarity: number;
+};
+
+export type AiSearchResponse = {
+  answer: string;
+  sources: AiSearchSource[];
+};
+
+const AI_MAX_QUERY_LEN = 500;
+const AI_MATCH_COUNT = 5;
+
+export async function POST(request: NextRequest) {
+  const ip = getClientIP(request);
+  if (!checkSearchRateLimit(ip)) {
+    return NextResponse.json(
+      { error: "検索回数の上限に達しました。少し待ってから再度お試しください。" },
+      { status: 429 }
+    );
+  }
+
+  let body: { query?: string; municipality?: string };
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: "リクエストの形式が不正です。" }, { status: 400 });
+  }
+
+  const query = (body.query ?? "").trim().slice(0, AI_MAX_QUERY_LEN);
+  const municipality = (body.municipality ?? "").trim() || null;
+  if (!query) {
+    return NextResponse.json({ error: "質問を入力してください。" }, { status: 400 });
+  }
+
+  const {
+    GEMINI_API_KEY,
+    SUPABASE_URL,
+    SUPABASE_SERVICE_ROLE_KEY,
+    GROQ_API_KEY,
+  } = process.env;
+  if (!GEMINI_API_KEY || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY || !GROQ_API_KEY) {
+    return NextResponse.json(
+      { error: "AI検索の環境変数が未設定です。" },
+      { status: 500 }
+    );
+  }
+
+  // 1) クエリの埋め込み
+  let queryEmbedding: number[] | null = null;
+  try {
+    const r = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${GEMINI_API_KEY}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "models/gemini-embedding-001",
+          content: { parts: [{ text: query }] },
+          taskType: "RETRIEVAL_QUERY",
+          outputDimensionality: 768,
+        }),
+      }
+    );
+    if (!r.ok) {
+      return NextResponse.json(
+        { error: `Gemini embedding error: ${r.status}` },
+        { status: 502 }
+      );
+    }
+    const j = (await r.json()) as { embedding?: { values?: number[] } };
+    queryEmbedding = j.embedding?.values ?? null;
+  } catch (e) {
+    return NextResponse.json(
+      { error: `Gemini呼び出しに失敗しました: ${(e as Error).message}` },
+      { status: 502 }
+    );
+  }
+  if (!queryEmbedding || queryEmbedding.length === 0) {
+    return NextResponse.json({ error: "クエリの埋め込みに失敗しました。" }, { status: 502 });
+  }
+
+  // 2) Supabase pgvector で類似検索
+  const sb = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
+    auth: { persistSession: false },
+  });
+  const { data: matches, error: rpcErr } = await sb.rpc("match_council_chunks", {
+    query_embedding: queryEmbedding,
+    match_count: AI_MATCH_COUNT,
+    filter_municipality: municipality,
+  });
+  if (rpcErr) {
+    return NextResponse.json(
+      { error: `Supabase検索エラー: ${rpcErr.message}` },
+      { status: 500 }
+    );
+  }
+  const sources = (matches as AiSearchSource[] | null) ?? [];
+
+  // 3) Groq で根拠付き回答を生成
+  if (sources.length === 0) {
+    return NextResponse.json({
+      answer: "関連する議事録が見つかりませんでした。",
+      sources: [],
+    } satisfies AiSearchResponse);
+  }
+
+  const contextBlock = sources
+    .map(
+      (s, i) =>
+        `[${i + 1}] ${s.meeting_name}${s.speaker ? `／${s.speaker}` : ""}\n${s.content}`
+    )
+    .join("\n\n");
+
+  const userPrompt = `以下は北海道の地方議会の議事録抜粋です。これを根拠として、市民の質問に日本語で答えてください。
+
+ルール:
+- 抜粋に書かれていない事柄は推測しないこと
+- 不明な場合は「議事録から確認できませんでした」と答えること
+- 回答末尾で根拠とした抜粋番号を [1] [2] のように明記すること
+
+【参考議事録】
+${contextBlock}
+
+【質問】
+${query}`;
+
+  let answer = "";
+  try {
+    const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${GROQ_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: "llama-3.3-70b-versatile",
+        messages: [
+          {
+            role: "system",
+            content:
+              "あなたは地方議会の議事録に基づいて市民の質問に答えるアシスタントです。提示された抜粋以外の知識で回答してはいけません。",
+          },
+          { role: "user", content: userPrompt },
+        ],
+        temperature: 0.2,
+      }),
+    });
+    if (!r.ok) {
+      return NextResponse.json(
+        { error: `Groqエラー: ${r.status}` },
+        { status: 502 }
+      );
+    }
+    const j = (await r.json()) as {
+      choices?: Array<{ message?: { content?: string } }>;
+    };
+    answer = j.choices?.[0]?.message?.content ?? "";
+  } catch (e) {
+    return NextResponse.json(
+      { error: `Groq呼び出しに失敗しました: ${(e as Error).message}` },
+      { status: 502 }
+    );
+  }
+
+  return NextResponse.json({ answer, sources } satisfies AiSearchResponse);
 }
