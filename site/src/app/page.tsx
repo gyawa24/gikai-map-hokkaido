@@ -130,16 +130,19 @@ export default function HomePage() {
 
       <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         {[
-          { label: "対象自治体", value: stats.municipalityCount.toLocaleString(), unit: "", tone: "text-[#1B3A6B]" },
-          { label: "議員", value: stats.memberCount.toLocaleString(), unit: "名", tone: "text-[#6B4C11]" },
-          { label: "会議録", value: stats.minutesCount.toLocaleString(), unit: "件", tone: "text-[#16624A]" },
-          { label: "議題", value: stats.agendaCount.toLocaleString(), unit: "件", tone: "text-[#18507C]" },
+          { label: "対象自治体", value: stats.municipalityCount.toLocaleString(), unit: "", tone: "border-[#DCE6F5]" },
+          { label: "議員", value: stats.memberCount.toLocaleString(), unit: "名", tone: "border-[#F3E3AF]" },
+          { label: "会議録", value: stats.minutesCount.toLocaleString(), unit: "件", tone: "border-[#D8F0E4]" },
+          { label: "議題", value: stats.agendaCount.toLocaleString(), unit: "件", tone: "border-[#D7E9FB]" },
         ].map((item) => (
-          <div key={item.label} className="theme-card rounded-[20px] px-4 py-4 sm:px-5 sm:py-4">
-            <p className="text-[13px] font-black text-[#5B667A] sm:text-sm">{item.label}</p>
-            <p className="mt-2 flex items-end gap-1 text-[1.95rem] font-black leading-none text-[#111827] sm:text-[2.2rem]">
+          <div
+            key={item.label}
+            className={`rounded-[18px] border-2 bg-white px-4 py-3 shadow-[0_6px_16px_rgba(27,58,107,0.05)] sm:px-5 ${item.tone}`}
+          >
+            <p className="text-[12px] font-bold tracking-[0.02em] text-[#667085] sm:text-[13px]">{item.label}</p>
+            <p className="mt-1.5 flex items-end gap-1 text-[1.95rem] font-black leading-none text-[#111827] sm:text-[2.15rem]">
               {item.value}
-              {item.unit && <span className={`pb-1 text-base sm:text-lg ${item.tone}`}>{item.unit}</span>}
+              {item.unit && <span className="pb-1 text-base font-bold text-[#667085] sm:text-lg">{item.unit}</span>}
             </p>
           </div>
         ))}

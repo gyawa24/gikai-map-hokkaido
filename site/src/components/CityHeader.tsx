@@ -78,40 +78,27 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
       <div className="page-shell px-4 py-4 sm:py-5">
         <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex min-w-0 flex-col gap-3">
-            <Link
-              href="/"
-              className="hidden w-fit items-center gap-2 rounded-full border-[3px] border-[#1F2937] bg-white px-4 py-3 text-sm font-black text-[#111827] shadow-[0_8px_16px_rgba(27,58,107,0.08)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFD54F] sm:inline-flex"
-            >
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#1F2937] text-white">
-                <TvIcon className="h-5 w-5" />
-              </span>
-              <span>地方議会ドットコム</span>
-              <span className="rounded-lg bg-[#FFD54F] px-2 py-1 text-xs text-[#1B3A6B]">β</span>
-            </Link>
-
             <div className="flex flex-wrap items-center gap-2">
-              <div className="inline-flex items-center gap-3 rounded-[28px] border-[4px] border-[#1F2937] bg-white px-4 py-3 text-[#111827] shadow-[0_14px_24px_rgba(27,58,107,0.09)] sm:px-5 sm:py-4">
+              <Link
+                href="/"
+                className="inline-flex items-center gap-3 rounded-[28px] border-[4px] border-[#1F2937] bg-white px-4 py-3 text-[#111827] shadow-[0_12px_22px_rgba(27,58,107,0.08)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFD54F] sm:px-5 sm:py-4"
+              >
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#1F2937] text-white sm:h-12 sm:w-12">
                   <TvIcon className="h-6 w-6 sm:h-7 sm:w-7" />
                 </span>
-                <span className="text-[1.2rem] font-black leading-none tracking-tight sm:text-[2.1rem]">
+                <span className="text-[1.2rem] font-black leading-none tracking-tight sm:text-[2rem]">
                   {city ? city.name : "地方議会ドットコム"}
                 </span>
-              </div>
-              <span className="hidden items-center rounded-full border-2 border-[#E6C566] bg-[#FFF3BF] px-3 py-2 text-lg font-medium text-[#6B4C11] sm:inline-flex">
+              </Link>
+              <span className="inline-flex items-center rounded-2xl border-2 border-[#E6C566] bg-[#FFF3BF] px-3 py-2 text-base font-medium text-[#6B4C11]">
                 β
               </span>
             </div>
 
             {!city && (
-              <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap">
-                <span className="rounded-full border-2 border-[#E6C566] bg-[#FFF8DB] px-4 py-2 text-sm font-black text-[#6B4C11]">
-                  北海道内の市町村議会の情報を横断的に検索・閲覧できます
-                </span>
-                <span className="hidden rounded-full border-2 border-[#D7DEE8] bg-white px-4 py-2 text-sm font-black text-[#475569] sm:inline-flex">
-                  みんなで見つける議会の入口
-                </span>
-              </div>
+              <p className="max-w-3xl text-sm font-bold text-[#6B4C11] sm:text-[15px]">
+                北海道内の市町村議会の情報を横断的に検索・閲覧できます
+              </p>
             )}
 
             {!city && mobileQuickLinks.length > 0 && (
