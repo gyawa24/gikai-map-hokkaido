@@ -301,7 +301,15 @@ export function registerTools(server, options) {
     async ({ city, council_id, schedule_index, around_minute_id, max_chars }) => {
       const fp = path.join(dataDir, city, "minutes", `${council_id}.json`);
       if (!fs.existsSync(fp))
-        return ok({ error: `not_found: data/${city}/minutes/${council_id}.json` });
+        return ok({
+          error: `not_bundled: ${city}/minutes/${council_id}`,
+          note:
+            "この議事録本文はMCPのFunctionバンドルに含まれていません" +
+            "（Vercel 250MB制限のため運用3市=chitose/eniwa/tomakomaiに限定）。" +
+            "search_minutes の excerpt（80字前後）を引用根拠とするか、" +
+            "下記URLをユーザーに案内してください。",
+          url: `${PUBLIC_BASE}/${city}/minutes/${council_id}`,
+        });
       const data = JSON.parse(fs.readFileSync(fp, "utf-8"));
       const schedules = Array.isArray(data.schedules) ? data.schedules : [];
       const targetSchedules =

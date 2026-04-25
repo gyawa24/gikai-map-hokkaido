@@ -9,15 +9,22 @@ const nextConfig: NextConfig = {
   //       `**` をキーにすると全 Function に適用され、データを必要とする Function まで
   //       巻き添えで壊すので使わない。
   // /api/mcp は議員配布用のリモートMCP。
-  // グローバル excludes で落とされる minutes/sessions の本文 JSON を、明示的に戻す。
-  // 21MB の _search-index.json も Function バンドルに必要。
+  // グローバル excludes で落とされるデータを、明示的に戻す。
+  //
+  // minutes/*.json 全量は 834MB あり Vercel Function の 250MB 制限に収まらないため、
+  // 当面は運用3市（chitose/eniwa/tomakomai、計115MB）のみ get_minutes_excerpt を
+  // サポート。search_minutes は全市横断で _search-index.json を使うので
+  // 全道で動く（返る excerpt は 80 文字前後の抜粋）。
+  // TODO(ogawa): 全道対応が必要になったら minutes を Vercel Blob / R2 に退避する
   outputFileTracingIncludes: {
     "/api/mcp": [
       "./data/_search-index.json",
       "./data/municipalities.json",
       "./data/*/members.json",
-      "./data/*/minutes/*.json",
       "./data/*/sessions/*.json",
+      "./data/chitose/minutes/*.json",
+      "./data/eniwa/minutes/*.json",
+      "./data/tomakomai/minutes/*.json",
     ],
   },
   outputFileTracingExcludes: {

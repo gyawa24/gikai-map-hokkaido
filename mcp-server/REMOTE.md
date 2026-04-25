@@ -71,6 +71,14 @@ URL:  https://chihougikai.com/api/mcp
 
 ---
 
+## 現在の制限
+
+- **search_minutes（横断検索）** は北海道全市町村を対象（抜粋は80字前後）
+- **get_minutes_excerpt（本文取得）** は当面 **千歳・恵庭・苫小牧の3市のみ** 対応
+  - Vercel Function のサイズ制限（250MB）のため。834MBある全議事録の本文を一度にバンドルできない
+  - 3市以外は `search_minutes` の結果に付くURLを踏んで chihougikai.com で確認してください
+  - 全道の本文取得対応は外部ストレージ（Vercel Blob等）に載せ替え完了後
+
 ## やってはいけないこと
 
 - **API キーを他人に渡さない**。1人1キー発行で発言ログが追跡できる仕組み
