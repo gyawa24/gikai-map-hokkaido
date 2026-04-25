@@ -2,6 +2,9 @@
 
 北海道全市町村の議事録・議員データを Claude Code / Claude Desktop に**個人利用前提**で公開する MCP サーバー。Max Plan のトークンだけで動く（Anthropic API 課金は発生しない）。
 
+> **議員向けの配布版（リモート MCP / Claude.ai・ChatGPT 対応）は [REMOTE.md](./REMOTE.md) を参照。**
+> こちらの stdio 版は restricted 自治体（札幌等）も含む個人専用。配布版は restricted を除外している。
+
 ## できること
 
 | ツール | 用途 |

@@ -8,6 +8,18 @@ const nextConfig: NextConfig = {
   //       動的ルートをターゲットにする時は `/**/themes` のようにワイルドカードを使うこと。
   //       `**` をキーにすると全 Function に適用され、データを必要とする Function まで
   //       巻き添えで壊すので使わない。
+  // /api/mcp は議員配布用のリモートMCP。
+  // グローバル excludes で落とされる minutes/sessions の本文 JSON を、明示的に戻す。
+  // 21MB の _search-index.json も Function バンドルに必要。
+  outputFileTracingIncludes: {
+    "/api/mcp": [
+      "./data/_search-index.json",
+      "./data/municipalities.json",
+      "./data/*/members.json",
+      "./data/*/minutes/*.json",
+      "./data/*/sessions/*.json",
+    ],
+  },
   outputFileTracingExcludes: {
     // 全 Function 共通で除外する「どの dynamic/ISR route でも実行時には不要」なもの。
     // - minutes 本文(202MB): `[city]/minutes/[id]` は dynamicParams=false & revalidate なしで
