@@ -47,19 +47,52 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
   }
 
   return (
-    <header data-no-print="true" style={{ backgroundColor: "var(--color-primary)" }} className="text-white">
-      {/* 上部アクセントライン */}
-      <div className="h-1 bg-[#F7C948]" />
+    <header
+      data-no-print="true"
+      className="text-white relative overflow-hidden"
+      style={{
+        backgroundImage:
+          "linear-gradient(135deg, #0F1A2F 0%, #1B3A6B 45%, #243B6B 100%)",
+      }}
+    >
+      {/* 上部ストライプアクセント（ゴールド + わずかに細いライン） */}
+      <div className="flex">
+        <div className="h-1.5 bg-[#F7C948] flex-1" />
+        <div className="h-1.5 bg-[#FFB142] w-12" />
+        <div className="h-1.5 bg-[#F7C948] flex-1" />
+      </div>
 
-      <div className="max-w-5xl mx-auto px-4 py-4">
+      {/* 装飾的な背景ドット（ニコニコ風のテクスチャ感） */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+          backgroundSize: "20px 20px",
+        }}
+      />
+
+      <div className="relative max-w-5xl mx-auto px-4 py-4">
         {/* サイト名 + パンくず */}
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex items-center gap-2 mb-2 flex-wrap">
           <Link
             href="/"
-            className="text-sm font-medium text-blue-100 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded inline-flex items-center gap-1.5"
+            className="group text-sm font-medium text-blue-100 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded inline-flex items-center gap-1.5"
           >
+            {/* メガホン × スマイルアイコン */}
+            <span
+              aria-hidden="true"
+              className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#F7C948] text-[#1B3A6B] shadow-sm group-hover:scale-110 transition-transform"
+            >
+              <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="currentColor">
+                <path d="M3 11v2a1 1 0 0 0 1 1h1l3 4h2v-12h-2l-3 4h-1a1 1 0 0 0-1 1z" />
+                <path d="M14 8.5a3.5 3.5 0 0 1 0 7" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" />
+                <path d="M16.5 6a6 6 0 0 1 0 12" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" />
+              </svg>
+            </span>
             地方議会ドットコム
-            <span className="text-[10px] font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5">
+            <span className="text-[10px] font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5 shadow-sm">
               β
             </span>
           </Link>
@@ -72,21 +105,26 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
         </div>
 
         {/* メイン見出し */}
-        <h1 className="text-xl font-bold tracking-tight leading-snug flex items-center gap-2 flex-wrap">
+        <h1 className="text-2xl sm:text-3xl font-black tracking-tight leading-tight flex items-center gap-2 flex-wrap drop-shadow-sm">
           {city ? (
-            city.name
+            <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+              {city.name}
+            </span>
           ) : (
             <>
-              地方議会ドットコム
-              <span className="text-xs font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-2 py-0.5 align-middle">
+              <span className="bg-gradient-to-r from-white via-[#FFE9A8] to-[#F7C948] bg-clip-text text-transparent">
+                地方議会ドットコム
+              </span>
+              <span className="text-xs font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-2 py-0.5 align-middle shadow-md">
                 β
               </span>
             </>
           )}
         </h1>
         {!city && (
-          <p className="text-sm text-blue-200 mt-0.5">
-            北海道内の市町村議会の情報を横断的に検索・閲覧できます
+          <p className="text-sm text-blue-200 mt-1 font-medium">
+            <span className="text-[#F7C948]">●</span>{" "}
+            北海道内の市町村議会の情報を、横断的に。
           </p>
         )}
 
