@@ -47,20 +47,19 @@ export default async function CityDecisionsPage({
   const municipality = getMunicipality(city);
   if (!municipality?.features.includes("decisions")) notFound();
 
-  const cityName = municipality.name;
   const decisions = getDecisions(city);
 
   return (
-    <div>
-      <div className="mb-6">
-        <h2 className="text-lg font-bold text-[#1B3A6B]">議決結果</h2>
+    <div className="page-shell max-w-6xl">
+      <div className="mb-5">
+        <h2 className="theme-section-title text-2xl">議決結果</h2>
         <p className="text-sm text-[#4A5568] mt-1">
           直近4回の定例会の議決結果PDFを掲載しています。
         </p>
       </div>
 
       {decisions.length === 0 ? (
-        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+        <div className="theme-card px-6 py-8 text-center text-[#718096]">
           現在、掲載されている議決結果はありません。
         </div>
       ) : (
@@ -70,14 +69,14 @@ export default async function CityDecisionsPage({
             return (
               <div
                 key={d.session}
-                className="bg-white rounded-xl border border-gray-100 shadow-sm p-6"
+                className="theme-card p-6"
               >
                 <div className="flex flex-wrap items-center gap-3 mb-4">
                   <h3 className="text-base font-bold text-gray-900">
                     {d.session}
                   </h3>
                   {period && (
-                    <span className="text-xs bg-blue-50 text-blue-700 rounded-full px-2.5 py-0.5 font-medium">
+                    <span className="theme-pill-soft text-blue-700">
                       {period}
                     </span>
                   )}
@@ -90,7 +89,7 @@ export default async function CityDecisionsPage({
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1a3a6c] hover:bg-[#254d8f] rounded-lg px-4 py-2 transition-colors"
+                      className="theme-button theme-button-accent px-4 py-2 text-sm font-medium"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +115,7 @@ export default async function CityDecisionsPage({
                     href={d.source_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm text-[#718096] hover:text-[#1B3A6B] border border-[#CBD5E0] rounded-lg px-4 py-2 transition-colors"
+                    className="theme-button px-4 py-2 text-sm text-[#718096] hover:text-[#1B3A6B]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

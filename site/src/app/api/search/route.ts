@@ -2,6 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { getMunicipalities } from "@/lib/municipalities";
+import {
+  buildExpansionSummary,
+  buildQuerySuggestions,
+  buildTokenGroups,
+  normalizeForSearch,
+  type SearchTokenGroup,
+} from "@/lib/searchSynonyms";
 
 // ---------------------------------------------------------------------------
 // Rate limiting (in-memory)
@@ -37,9 +44,25 @@ function tokenize(query: string): string[] {
   return query.trim().split(/\s+/).filter(Boolean);
 }
 
-function matchesAll(text: string, tokens: string[]): boolean {
-  const lower = text.toLowerCase();
-  return tokens.every((t) => lower.includes(t.toLowerCase()));
+function bestGroupMatch(text: string, tokenGroup: SearchTokenGroup, mode: "exact" | "prefix" | "includes"): number {
+  const normalizedText = normalizeForSearch(text);
+  let best = 0;
+
+  for (const variant of tokenGroup) {
+    const hit =
+      mode === "exact"
+        ? normalizedText === variant.normalized
+        : mode === "prefix"
+          ? normalizedText.startsWith(variant.normalized)
+          : normalizedText.includes(variant.normalized);
+    if (hit) best = Math.max(best, variant.boost);
+  }
+
+  return best;
+}
+
+function matchesAll(text: string, tokenGroups: SearchTokenGroup[]): boolean {
+  return tokenGroups.every((group) => bestGroupMatch(text, group, "includes") > 0);
 }
 
 // 日付文字列（"2026-03-02" 等）から西暦4桁を取り出す
@@ -66,11 +89,118 @@ function yearFromCouncilName(name: string): string {
 
 function excerpt(text: string, tokens: string[], radius = 60): string {
   const first = tokens[0] ?? "";
-  const idx = text.toLowerCase().indexOf(first.toLowerCase());
+  const idx = normalizeForSearch(text).indexOf(normalizeForSearch(first));
   if (idx === -1) return text.slice(0, radius * 2);
   const start = Math.max(0, idx - radius);
   const end = Math.min(text.length, idx + first.length + radius);
   return (start > 0 ? "…" : "") + text.slice(start, end) + (end < text.length ? "…" : "");
+}
+
+function includesNormalized(text: string, token: string): boolean {
+  return normalizeForSearch(text).includes(normalizeForSearch(token));
+}
+
+function exactNormalized(text: string, query: string): boolean {
+  return normalizeForSearch(text) === normalizeForSearch(query);
+}
+
+function prefixNormalized(text: string, query: string): boolean {
+  return normalizeForSearch(text).startsWith(normalizeForSearch(query));
+}
+
+function computeSessionScore(params: {
+  query: string;
+  tokenGroups: SearchTokenGroup[];
+  title: string;
+  committee?: string;
+  label?: string;
+  context?: string;
+  field: string;
+  sourceType: SessionHit["sourceType"];
+  year?: string;
+}): number {
+  const { query, tokenGroups, title, committee = "", label = "", context = "", field, sourceType, year = "" } = params;
+  let score = 0;
+
+  if (exactNormalized(title, query)) score += 200;
+  else if (prefixNormalized(title, query)) score += 120;
+
+  if (exactNormalized(committee, query)) score += 140;
+  else if (prefixNormalized(committee, query)) score += 90;
+
+  if (exactNormalized(label, query)) score += 80;
+  if (includesNormalized(context, query)) score += 32;
+
+  for (const group of tokenGroups) {
+    const titlePrefix = bestGroupMatch(title, group, "prefix");
+    const titleIncludes = bestGroupMatch(title, group, "includes");
+    const committeePrefix = bestGroupMatch(committee, group, "prefix");
+    const committeeIncludes = bestGroupMatch(committee, group, "includes");
+    const labelIncludes = bestGroupMatch(label, group, "includes");
+    const contextIncludes = bestGroupMatch(context, group, "includes");
+
+    if (titlePrefix > 0) score += Math.round(26 * titlePrefix);
+    else if (titleIncludes > 0) score += Math.round(18 * titleIncludes);
+
+    if (committeePrefix > 0) score += Math.round(18 * committeePrefix);
+    else if (committeeIncludes > 0) score += Math.round(12 * committeeIncludes);
+
+    if (labelIncludes > 0) score += Math.round(10 * labelIncludes);
+    if (contextIncludes > 0) score += Math.round(6 * contextIncludes);
+  }
+
+  if (field === "会議名") score += 32;
+  if (field === "要約") score += 18;
+  if (field === "トピック") score += 16;
+  if (field === "議決") score += 12;
+  if (sourceType === "session") score += 14;
+  if (sourceType === "minutes") score += 8;
+  if (year) score += Math.min(20, Math.max(0, Number(year) - 2020));
+
+  return score;
+}
+
+function computeMemberScore(params: {
+  query: string;
+  tokenGroups: SearchTokenGroup[];
+  name: string;
+  furigana?: string;
+  party?: string;
+  faction?: string;
+  committees: string[];
+}): number {
+  const { query, tokenGroups, name, furigana = "", party = "", faction = "", committees } = params;
+  let score = 0;
+
+  if (exactNormalized(name, query)) score += 240;
+  else if (prefixNormalized(name, query)) score += 150;
+
+  if (exactNormalized(furigana, query)) score += 110;
+  else if (prefixNormalized(furigana, query)) score += 70;
+
+  if (exactNormalized(party, query) || exactNormalized(faction, query)) score += 90;
+
+  for (const group of tokenGroups) {
+    const namePrefix = bestGroupMatch(name, group, "prefix");
+    const nameIncludes = bestGroupMatch(name, group, "includes");
+    const furiganaIncludes = bestGroupMatch(furigana, group, "includes");
+    const partyIncludes = bestGroupMatch(party, group, "includes");
+    const factionIncludes = bestGroupMatch(faction, group, "includes");
+
+    if (namePrefix > 0) score += Math.round(30 * namePrefix);
+    else if (nameIncludes > 0) score += Math.round(20 * nameIncludes);
+
+    if (furiganaIncludes > 0) score += Math.round(14 * furiganaIncludes);
+    if (partyIncludes > 0) score += Math.round(10 * partyIncludes);
+    if (factionIncludes > 0) score += Math.round(10 * factionIncludes);
+
+    for (const committee of committees) {
+      const committeeIncludes = bestGroupMatch(committee, group, "includes");
+      if (committeeIncludes > 0) score += Math.round(6 * committeeIncludes);
+    }
+  }
+
+  return score;
 }
 
 // ---------------------------------------------------------------------------
@@ -129,6 +259,13 @@ export async function GET(request: NextRequest) {
 
   const q = (request.nextUrl.searchParams.get("q") ?? "").slice(0, 500);
   const tokens = tokenize(q);
+  const tokenGroups = buildTokenGroups(tokens);
+  const expansionSummary = buildExpansionSummary(tokenGroups);
+  const expandedTerms = Array.from(new Set([
+    ...expansionSummary.exactTerms,
+    ...expansionSummary.relatedTerms,
+  ])).slice(0, 16);
+  const searchSuggestions = buildQuerySuggestions(q, tokenGroups);
 
   if (!tokens.length) {
     return NextResponse.json({ sessionResults: [], memberResults: [] });
@@ -137,7 +274,7 @@ export async function GET(request: NextRequest) {
   const dataRoot = path.join(process.cwd(), "data");
   const cityMap = getCityMap();
   const allCities = Object.keys(cityMap);
-  const sessionResults: SessionHit[] = [];
+  const scoredSessionResults: Array<{ score: number; item: SessionHit }> = [];
 
   // -----------------------------------------------------------------------
   // 会議録・速報（sessions/ がある全市）
@@ -165,8 +302,8 @@ export async function GET(request: NextRequest) {
           { text: (seg.transcript as string) ?? "", field: "全文" },
         ];
         for (const { text, field } of fields) {
-          if (matchesAll(text, tokens)) {
-            sessionResults.push({
+          if (matchesAll(text, tokenGroups)) {
+            const item: SessionHit = {
               id: s.id as string,
               city,
               cityName,
@@ -180,6 +317,20 @@ export async function GET(request: NextRequest) {
               context: excerpt(text, tokens),
               field,
               year: sessionYear,
+            };
+            scoredSessionResults.push({
+              score: computeSessionScore({
+                query: q,
+                tokenGroups,
+                title: item.title,
+                committee: item.committee,
+                label: item.label,
+                context: item.context,
+                field: item.field,
+                sourceType: item.sourceType,
+                year: item.year,
+              }),
+              item,
             });
             pushed = true;
             break;
@@ -187,8 +338,8 @@ export async function GET(request: NextRequest) {
         }
         if (pushed) break;
       }
-      if (!pushed && matchesAll((s.title as string) + committee, tokens)) {
-        sessionResults.push({
+      if (!pushed && matchesAll((s.title as string) + committee, tokenGroups)) {
+        const item: SessionHit = {
           id: s.id as string,
           city,
           cityName,
@@ -202,6 +353,20 @@ export async function GET(request: NextRequest) {
           context: committee,
           field: "会議名",
           year: sessionYear,
+        };
+        scoredSessionResults.push({
+          score: computeSessionScore({
+            query: q,
+            tokenGroups,
+            title: item.title,
+            committee: item.committee,
+            label: item.label,
+            context: item.context,
+            field: item.field,
+            sourceType: item.sourceType,
+            year: item.year,
+          }),
+          item,
         });
       }
     }
@@ -236,9 +401,9 @@ export async function GET(request: NextRequest) {
     }
     for (const a of searchIndex.agendas) {
       const haystack = `${a.agenda_title} ${a.text}`;
-      if (!matchesAll(haystack, tokens)) continue;
+      if (!matchesAll(haystack, tokenGroups)) continue;
       const minuteKey = `${a.city}_${a.council_id}`;
-      sessionResults.push({
+      const item: SessionHit = {
         id: `${a.city}_minutes_${a.council_id}_${a.schedule_index}_${a.first_minute_id ?? 0}`,
         city: a.city,
         cityName: a.cityName,
@@ -255,6 +420,20 @@ export async function GET(request: NextRequest) {
         context: excerpt(haystack, tokens, 100),
         field: "議事録",
         year: a.year ?? yearFromCouncilName(a.council_name),
+      };
+      scoredSessionResults.push({
+        score: computeSessionScore({
+          query: q,
+          tokenGroups,
+          title: item.title,
+          committee: item.committee,
+          label: item.label,
+          context: item.context,
+          field: item.field,
+          sourceType: item.sourceType,
+          year: item.year,
+        }),
+        item,
       });
       seenMinutes.add(minuteKey);
     }
@@ -291,11 +470,11 @@ export async function GET(request: NextRequest) {
         ...(doc.highlights ?? []),
         ...(doc.tags ?? []),
       ].join(" ");
-      if (!matchesAll(searchText, tokens)) continue;
+      if (!matchesAll(searchText, tokenGroups)) continue;
       const contextText = doc.summary
         ? excerpt(doc.summary, tokens, 120)
         : (doc.highlights ?? []).slice(0, 2).join("、");
-      sessionResults.push({
+      const item: SessionHit = {
         id: `${city}_minutes_${doc.council_id}`,
         city,
         cityName,
@@ -309,6 +488,20 @@ export async function GET(request: NextRequest) {
         context: contextText,
         field: "AI要約",
         year: yearFromDate(doc.generated_at) || yearFromCouncilName(doc.name),
+      };
+      scoredSessionResults.push({
+        score: computeSessionScore({
+          query: q,
+          tokenGroups,
+          title: item.title,
+          committee: item.committee,
+          label: item.label,
+          context: item.context,
+          field: item.field,
+          sourceType: item.sourceType,
+          year: item.year,
+        }),
+        item,
       });
       seenMinutes.add(minuteKey);
     }
@@ -325,8 +518,8 @@ export async function GET(request: NextRequest) {
     try { decisions = JSON.parse(fs.readFileSync(decisionsPath, "utf-8")); } catch { continue; }
     for (const d of decisions) {
       const text = [d.session, d.description ?? ""].join(" ");
-      if (matchesAll(text, tokens)) {
-        sessionResults.push({
+      if (matchesAll(text, tokenGroups)) {
+        const item: SessionHit = {
           id: `${city}_decision_${d.session}`,
           city,
           cityName,
@@ -340,6 +533,20 @@ export async function GET(request: NextRequest) {
           context: excerpt(text, tokens),
           field: "議決",
           year: yearFromCouncilName(d.session),
+        };
+        scoredSessionResults.push({
+          score: computeSessionScore({
+            query: q,
+            tokenGroups,
+            title: item.title,
+            committee: item.committee,
+            label: item.label,
+            context: item.context,
+            field: item.field,
+            sourceType: item.sourceType,
+            year: item.year,
+          }),
+          item,
         });
       }
     }
@@ -348,7 +555,7 @@ export async function GET(request: NextRequest) {
   // -----------------------------------------------------------------------
   // 議員検索（members.json がある全市）
   // -----------------------------------------------------------------------
-  const memberResults: MemberHit[] = [];
+  const scoredMemberResults: Array<{ score: number; item: MemberHit }> = [];
   for (const city of allCities) {
     const cityName = cityMap[city];
     const membersPath = path.join(dataRoot, city, "members.json");
@@ -359,8 +566,8 @@ export async function GET(request: NextRequest) {
       for (const m of list) {
         const committees = Array.isArray(m.committees) ? m.committees.filter((c): c is string => typeof c === "string") : [];
         const searchText = [m.name ?? "", m.furigana ?? "", m.party ?? "", m.faction ?? "", ...committees].join(" ");
-        if (matchesAll(searchText, tokens)) {
-          memberResults.push({
+        if (matchesAll(searchText, tokenGroups)) {
+          const item: MemberHit = {
             city,
             cityName,
             href: `/${city}`,
@@ -369,6 +576,18 @@ export async function GET(request: NextRequest) {
             party: (m.party as string) ?? "",
             faction: (m.faction as string) ?? "",
             committees,
+          };
+          scoredMemberResults.push({
+            score: computeMemberScore({
+              query: q,
+              tokenGroups,
+              name: item.name,
+              furigana: item.furigana,
+              party: item.party,
+              faction: item.faction,
+              committees: item.committees,
+            }),
+            item,
           });
         }
       }
@@ -381,8 +600,8 @@ export async function GET(request: NextRequest) {
       for (const c of candidates) {
         if ((c.result as string) !== "当選") continue;
         const searchText = [c.name ?? "", c.furigana ?? "", c.party ?? ""].join(" ");
-        if (matchesAll(searchText, tokens)) {
-          memberResults.push({
+        if (matchesAll(searchText, tokenGroups)) {
+          const item: MemberHit = {
             city,
             cityName,
             href: `/${city}`,
@@ -391,6 +610,18 @@ export async function GET(request: NextRequest) {
             party: (c.party as string) ?? "",
             faction: (c.party as string) ?? "",
             committees: [],
+          };
+          scoredMemberResults.push({
+            score: computeMemberScore({
+              query: q,
+              tokenGroups,
+              name: item.name,
+              furigana: item.furigana,
+              party: item.party,
+              faction: item.faction,
+              committees: item.committees,
+            }),
+            item,
           });
         }
       }
@@ -398,11 +629,31 @@ export async function GET(request: NextRequest) {
   }
 
   const MAX_RESULTS = 200;
+  const sessionResults = scoredSessionResults
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      if (b.item.year !== a.item.year) return (b.item.year || "").localeCompare(a.item.year || "");
+      if (a.item.cityName !== b.item.cityName) return a.item.cityName.localeCompare(b.item.cityName, "ja");
+      return a.item.title.localeCompare(b.item.title, "ja");
+    })
+    .map((entry) => entry.item);
+  const memberResults = scoredMemberResults
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      if (a.item.cityName !== b.item.cityName) return a.item.cityName.localeCompare(b.item.cityName, "ja");
+      return a.item.name.localeCompare(b.item.name, "ja");
+    })
+    .map((entry) => entry.item);
+
   return NextResponse.json({
     sessionResults: sessionResults.slice(0, MAX_RESULTS),
     memberResults: memberResults.slice(0, MAX_RESULTS),
     sessionTotal: sessionResults.length,
     memberTotal: memberResults.length,
     truncated: sessionResults.length > MAX_RESULTS || memberResults.length > MAX_RESULTS,
+    expandedTerms,
+    exactExpandedTerms: expansionSummary.exactTerms.slice(0, 12),
+    relatedExpandedTerms: expansionSummary.relatedTerms.slice(0, 12),
+    searchSuggestions,
   });
 }

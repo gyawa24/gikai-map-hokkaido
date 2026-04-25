@@ -57,14 +57,14 @@ export default async function CityNewsletterPage({
 
   if (!nl) {
     return (
-      <div>
+      <div className="page-shell max-w-3xl">
         <div className="mb-6">
           <h2 className="text-lg font-bold text-[#1B3A6B]">議会だより</h2>
           <p className="text-sm text-[#4A5568] mt-1">
             {cityName}議会だよりの最新号を掲載しています。
           </p>
         </div>
-        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+        <div className="theme-card px-6 py-8 text-center text-[#718096]">
           現在、掲載されている議会だよりはありません。
         </div>
       </div>
@@ -75,7 +75,7 @@ export default async function CityNewsletterPage({
   const { label: pdfLabel, size: pdfSize } = parsePdfTitle(nl.pdf_title);
 
   return (
-    <div>
+    <div className="page-shell max-w-3xl">
       <div className="mb-6">
         <h2 className="text-lg font-bold text-[#1B3A6B]">議会だより</h2>
         <p className="text-sm text-[#4A5568] mt-1">
@@ -83,7 +83,7 @@ export default async function CityNewsletterPage({
         </p>
       </div>
 
-      <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 max-w-xl">
+      <div className="theme-panel px-5 py-5 sm:px-6">
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="text-xs font-semibold bg-blue-50 text-blue-700 rounded-full px-3 py-0.5">
             最新号
@@ -105,7 +105,7 @@ export default async function CityNewsletterPage({
             href={nl.pdf_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1a3a6c] hover:bg-[#254d8f] rounded-lg px-5 py-2.5 transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-[#1a3a6c] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#254d8f]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ export default async function CityNewsletterPage({
             href={nl.source_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-[#718096] hover:text-[#1B3A6B] border border-[#CBD5E0] rounded-lg px-4 py-2.5 transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-full border border-[#CBD5E0] px-4 py-2.5 text-sm text-[#718096] transition-colors hover:text-[#1B3A6B]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

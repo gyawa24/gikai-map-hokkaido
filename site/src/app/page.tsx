@@ -106,8 +106,8 @@ export default function HomePage() {
     }));
 
   return (
-    <div className="page-shell min-w-0 space-y-6">
-      <section className="theme-panel rounded-[30px] px-4 py-5 sm:px-6 sm:py-6">
+    <div className="page-shell min-w-0 max-w-6xl space-y-6">
+      <section className="theme-panel mx-auto max-w-5xl rounded-[30px] px-4 py-5 sm:px-6 sm:py-6">
         <h1 className="text-[2.1rem] font-black leading-[1.1] tracking-tight text-[#111827] md:text-[3.1rem] xl:text-[4rem]">
           地方議会の「なか」を、
           <br />
@@ -128,7 +128,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-3 xl:grid-cols-4">
+      <section className="mx-auto grid max-w-5xl grid-cols-2 gap-3 xl:grid-cols-4">
         {[
           { label: "対象自治体", value: stats.municipalityCount.toLocaleString(), unit: "", tone: "border-[#DCE6F5]" },
           { label: "議員", value: stats.memberCount.toLocaleString(), unit: "名", tone: "border-[#F3E3AF]" },
@@ -149,7 +149,7 @@ export default function HomePage() {
       </section>
 
       {latestNews.length > 0 && (
-        <section className="border-t border-[#D8DEE8] px-1 pt-1">
+        <section className="mx-auto max-w-[68rem] border-t border-[#D8DEE8] px-1 pt-1">
           <div className="mb-3 flex items-center justify-between gap-3 px-3 pt-3 sm:px-4">
             <h2 className="text-xl font-black text-[#111827]">更新情報</h2>
             <Link href="/news" className="text-sm font-black text-[#1B3A6B]">
@@ -176,7 +176,7 @@ export default function HomePage() {
         </section>
       )}
 
-      <section id="municipalities" className="min-w-0 border-t border-[#D8DEE8] pt-6">
+      <section id="municipalities" className="mx-auto min-w-0 max-w-[68rem] border-t border-[#D8DEE8] pt-6">
         <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
           <div>
             <h2 className="text-[1.7rem] font-black leading-tight text-[#111827] sm:text-[2rem]">市町村議会を選ぶ</h2>
@@ -239,7 +239,7 @@ export default function HomePage() {
       </section>
 
       {prefecture && (
-        <section className="theme-card rounded-[26px] px-4 py-4 sm:px-5">
+        <section className="theme-card mx-auto max-w-[68rem] rounded-[26px] px-4 py-4 sm:px-5">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <h2 className="text-xl font-black text-[#111827]">北海道議会</h2>

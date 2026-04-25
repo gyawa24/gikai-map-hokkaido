@@ -87,13 +87,14 @@ export default function CitySummaryCards({
   ];
 
   return (
-    <div className="grid grid-cols-3 gap-3 mb-6">
-      {stats.map((stat) => {
+    <div className="page-shell mb-4 max-w-5xl sm:mb-5">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3">
+      {stats.map((stat, index) => {
         const inner = (
           <>
-            <div className="flex justify-center mb-2">{stat.icon}</div>
-            <div className="text-xl font-bold text-[#1B3A6B]">{stat.value}</div>
-            <div className="text-sm text-[#718096] mt-0.5">{stat.label}</div>
+            <div className="mb-1 flex justify-center sm:mb-1.5">{stat.icon}</div>
+            <div className="text-base font-black text-[#1B3A6B] sm:text-2xl">{stat.value}</div>
+            <div className="mt-0.5 text-[11px] text-[#718096] sm:text-sm">{stat.label}</div>
           </>
         );
         if (stat.href) {
@@ -101,7 +102,9 @@ export default function CitySummaryCards({
             <Link
               key={stat.label}
               href={stat.href}
-              className="bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] hover:shadow-md p-4 text-center transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+              className={`theme-card px-2.5 py-3 text-center transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-4 sm:py-5 ${
+                index === stats.length - 1 ? "col-span-2 sm:col-span-1" : ""
+              }`}
             >
               {inner}
             </Link>
@@ -110,12 +113,15 @@ export default function CitySummaryCards({
         return (
           <div
             key={stat.label}
-            className="bg-white rounded-lg border border-[#CBD5E0] p-4 text-center"
+            className={`theme-card px-2.5 py-3 text-center sm:px-4 sm:py-5 ${
+              index === stats.length - 1 ? "col-span-2 sm:col-span-1" : ""
+            }`}
           >
             {inner}
           </div>
         );
       })}
+      </div>
     </div>
   );
 }

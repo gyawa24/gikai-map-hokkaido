@@ -84,7 +84,7 @@ export default function RootLayout({
 
   return (
     <html lang="ja" className={notoSansJP.variable}>
-      <body className="min-h-screen antialiased">
+      <body className="min-h-screen overflow-x-hidden antialiased">
         <ToastProvider>
           <div className="flex min-h-screen flex-col">
             <CityHeaderServer />
@@ -117,7 +117,7 @@ export default function RootLayout({
 
             <footer data-no-print="true" className="mt-10 border-t border-[#203a66] bg-[linear-gradient(180deg,#143055_0%,#0f2548_100%)] text-white">
               <div className="page-shell px-4 py-8">
-                <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+                <div className="grid gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
                   <div>
                     <div className="mb-3 flex flex-wrap items-center gap-2">
                       <span className="portal-subhead border-white/25 bg-white/10 text-white">地方議会ドットコム</span>

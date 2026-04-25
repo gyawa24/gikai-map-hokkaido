@@ -75,8 +75,8 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
         backgroundSize: "18px 18px, 100% 100%",
       }}
     >
-      <div className="page-shell px-4 py-4 sm:py-5">
-        <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+      <div className="page-shell min-w-0 px-4 py-4 sm:py-5">
+        <div className="mb-4 flex min-w-0 flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex min-w-0 flex-col gap-3">
             <div className="flex flex-wrap items-center gap-2">
               <Link
@@ -121,7 +121,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
           </div>
 
           {!city && (
-            <nav className="hidden flex-wrap justify-start gap-2 sm:flex sm:justify-end" aria-label="上部ナビゲーション">
+            <nav className="hidden flex-wrap justify-start gap-2 xl:flex xl:justify-end" aria-label="上部ナビゲーション">
               {[
                 { href: "/search?q=議員", label: "議員" },
                 { href: "/search?q=議事録", label: "議事録" },
@@ -140,7 +140,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
         </div>
 
         <div className="mobile-nav-fade">
-          <nav className="flex gap-2 overflow-x-auto pb-1 pr-8 sm:flex-wrap sm:overflow-visible sm:pb-0 sm:pr-0" aria-label="メインナビゲーション">
+          <nav className="flex gap-2 overflow-x-auto pb-1 pr-8 md:flex-wrap md:overflow-visible md:pb-0 md:pr-0" aria-label="メインナビゲーション">
             {navItems.map(renderNavLink)}
           </nav>
         </div>

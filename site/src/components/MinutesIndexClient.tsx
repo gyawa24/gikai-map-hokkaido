@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect, Suspense } from "react";
+import { useState, useMemo, Suspense } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import type { MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
@@ -153,10 +153,15 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
   const [searchText, setSearchText] = useState("");
   const [currentPage, setCurrentPage] = useState(initialPage);
 
-  // フィルタが変わったらページを1にリセット
-  useEffect(() => {
+  const updateSearchText = (value: string) => {
+    setSearchText(value);
     setCurrentPage(1);
-  }, [activeTag, searchText]);
+  };
+
+  const updateActiveTag = (tag: string | null) => {
+    setActiveTag(tag);
+    setCurrentPage(1);
+  };
 
   // ページ変更時にURLを更新
   const handlePageChange = (page: number) => {
@@ -243,11 +248,11 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
 
   const TagButton = ({ tag }: { tag: string }) => (
     <button
-      onClick={() => setActiveTag(activeTag === tag ? null : tag)}
-      className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+      onClick={() => updateActiveTag(activeTag === tag ? null : tag)}
+      className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
         activeTag === tag
-          ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
-          : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+          ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
+          : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
       }`}
     >
       {tag}
@@ -274,14 +279,14 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
             id="minutes-search"
             type="search"
             value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
+            onChange={(e) => updateSearchText(e.target.value)}
             placeholder="会議名・年度で検索…"
-            className="w-full pl-9 pr-4 py-2.5 text-sm border border-[#CBD5E0] rounded-lg bg-white text-[#1A202C] placeholder-[#A0AEC0] focus:outline-none focus:ring-2 focus:ring-[#2A5298] focus:border-transparent transition-colors"
+            className="theme-input w-full py-2.5 pl-9 pr-4 text-sm placeholder-[#A0AEC0]"
           />
           {searchText && (
             <button
-              onClick={() => setSearchText("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#A0AEC0] hover:text-[#4A5568] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
+              onClick={() => updateSearchText("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 rounded text-[#A0AEC0] transition-colors hover:text-[#4A5568] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
               aria-label="検索をクリア"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -294,13 +299,13 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
 
       {/* タグフィルター */}
       {sortedTags.length > 0 && (
-        <div className="mb-6 bg-white rounded-lg border border-[#CBD5E0] shadow-sm overflow-hidden">
+        <div className="theme-panel mb-5 overflow-hidden">
           <div className="px-4 py-3 border-b border-[#E2E8F0] flex items-center justify-between">
             <p className="text-sm font-semibold text-[#1B3A6B]">テーマで絞り込む</p>
             {activeTag && (
               <button
-                onClick={() => setActiveTag(null)}
-                className="text-xs text-[#718096] hover:text-[#1A202C] flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
+                onClick={() => updateActiveTag(null)}
+                className="flex items-center gap-1 rounded text-xs text-[#718096] hover:text-[#1A202C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                 絞り込みを解除
@@ -348,7 +353,7 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
             {/* トグルボタン */}
             <button
               onClick={() => setShowAllTags((v) => !v)}
-              className="mt-3 flex items-center gap-1 text-xs text-[#2A5298] hover:text-[#1B3A6B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
+              className="mt-3 flex items-center gap-1 rounded text-xs text-[#2A5298] transition-colors hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
               aria-expanded={showAllTags}
             >
               <svg
@@ -388,7 +393,7 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
       )}
 
       {filtered.length === 0 ? (
-        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+        <div className="theme-card px-6 py-8 text-center text-[#718096]">
           条件に一致する議事録が見つかりません
         </div>
       ) : (
@@ -406,8 +411,8 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
 
               return (
                 <section key={year}>
-                  <h3 className="text-base font-bold text-[#1B3A6B] mb-3 flex items-center gap-2">
-                    <span className="inline-block w-1 h-4 bg-[#1B3A6B] rounded-full" aria-hidden="true" />
+                  <h3 className="mb-3 flex items-center gap-2 text-base font-black text-[#1B3A6B]">
+                    <span className="inline-block h-4 w-1 rounded-full bg-[#E6C566]" aria-hidden="true" />
                     {year}
                   </h3>
                   <div className="flex flex-col gap-6">
@@ -438,8 +443,8 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
                                           key={tag}
                                           className={`text-xs px-2 py-0.5 rounded-full border ${
                                             tag === activeTag
-                                              ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
-                                              : "bg-[#F4F6F9] text-[#4A5568] border-[#E2E8F0]"
+                                              ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
+                                              : "bg-[#F8FAFC] text-[#4A5568] border-[#E2E8F0]"
                                           }`}
                                         >
                                           {tag}
@@ -468,7 +473,7 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
                               return (
                                 <div
                                   key={item.council_id}
-                                  className="bg-[#F7F8FA] rounded-lg border border-[#E2E8F0] px-5 py-4 cursor-not-allowed"
+                                  className="theme-card-soft cursor-not-allowed px-5 py-4"
                                   aria-disabled="true"
                                 >
                                   {itemContent}
@@ -479,7 +484,7 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
                               <Link
                                 key={item.council_id}
                                 href={`${minutesBasePath}/${item.council_id}`}
-                                className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] px-5 py-4 shadow-sm hover:shadow-md transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                                className="theme-card group px-5 py-4 transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                               >
                                 {itemContent}
                               </Link>
@@ -504,7 +509,7 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
               <button
                 onClick={() => handlePageChange(safePage - 1)}
                 disabled={safePage === 1}
-                className="px-3 py-2 text-sm rounded-md border border-[#CBD5E0] text-[#4A5568] bg-white hover:bg-[#E8EEF7] hover:text-[#1B3A6B] hover:border-[#1B3A6B] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#4A5568] disabled:hover:border-[#CBD5E0] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                className="px-3 py-2 text-sm rounded-full border border-[#CBD5E0] text-[#4A5568] bg-white hover:bg-[#F8FBFF] hover:text-[#1B3A6B] hover:border-[#9FB1D2] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#4A5568] disabled:hover:border-[#CBD5E0] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                 aria-label="前のページ"
               >
                 ‹ 前へ
@@ -525,10 +530,10 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
                     key={p}
                     onClick={() => handlePageChange(p)}
                     aria-current={p === safePage ? "page" : undefined}
-                    className={`min-w-[2.25rem] px-2 py-2 text-sm rounded-md border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+                    className={`min-w-[2.25rem] px-2 py-2 text-sm rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                       p === safePage
-                        ? "bg-[#1B3A6B] text-white border-[#1B3A6B] font-semibold"
-                        : "border-[#CBD5E0] text-[#4A5568] bg-white hover:bg-[#E8EEF7] hover:text-[#1B3A6B] hover:border-[#1B3A6B]"
+                        ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566] font-semibold"
+                        : "border-[#CBD5E0] text-[#4A5568] bg-white hover:bg-[#F8FBFF] hover:text-[#1B3A6B] hover:border-[#9FB1D2]"
                     }`}
                   >
                     {p}
@@ -540,7 +545,7 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
               <button
                 onClick={() => handlePageChange(safePage + 1)}
                 disabled={safePage === totalPages}
-                className="px-3 py-2 text-sm rounded-md border border-[#CBD5E0] text-[#4A5568] bg-white hover:bg-[#E8EEF7] hover:text-[#1B3A6B] hover:border-[#1B3A6B] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#4A5568] disabled:hover:border-[#CBD5E0] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                className="px-3 py-2 text-sm rounded-full border border-[#CBD5E0] text-[#4A5568] bg-white hover:bg-[#F8FBFF] hover:text-[#1B3A6B] hover:border-[#9FB1D2] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#4A5568] disabled:hover:border-[#CBD5E0] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                 aria-label="次のページ"
               >
                 次へ ›

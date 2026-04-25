@@ -123,7 +123,7 @@ export default async function CityMinutesDetailPage({
   if (restricted) {
     const note = municipality?.minutes_access_note;
     return (
-      <div className="max-w-2xl mx-auto">
+      <div className="page-shell max-w-6xl">
         <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
           <a href={`/${city}`} className="hover:text-[#1B3A6B] transition-colors">
             {cityName}議会
@@ -136,7 +136,7 @@ export default async function CityMinutesDetailPage({
             議事録
           </a>
         </nav>
-        <div className="rounded-lg border border-[#E0B040] bg-[#FFF8E1] px-5 py-5">
+        <div className="theme-alert px-5 py-5">
           <p className="text-base font-semibold text-[#7A5A00] mb-2">本サイトでの全文閲覧は一時停止中です</p>
           <p className="text-sm text-[#5A4500] leading-relaxed">
             {note ?? `${cityName}公式サイトの著作権ポリシーで複製・転用に事前許可を要する旨が明記されているため、許諾確認が取れるまで本サイトでの全文閲覧を停止しています。データは保管しており、許諾後に公開を再開します。`}
@@ -164,7 +164,7 @@ export default async function CityMinutesDetailPage({
   );
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="page-shell max-w-6xl">
       <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
         <a href={`/${city}`} className="hover:text-[#1B3A6B] transition-colors">
           {cityName}議会
@@ -182,16 +182,16 @@ export default async function CityMinutesDetailPage({
         </span>
       </nav>
 
-      <section className="mb-6">
+      <section className="mb-5">
         <div className="flex items-center gap-2 mb-2">
           {category && (
-            <span className="text-xs font-semibold px-2 py-0.5 bg-[#E8EEF7] text-[#2A5298] rounded">
+            <span className="theme-pill-soft text-[#2A5298]">
               {category}
             </span>
           )}
           <span className="text-xs text-[#718096]">{session.japanese_year}</span>
         </div>
-        <h2 className="text-xl font-bold text-[#1B3A6B] leading-snug mb-2">
+        <h2 className="theme-section-title mb-2 text-2xl leading-snug">
           {session.name}
         </h2>
         <div className="flex flex-wrap gap-4 text-sm text-[#4A5568]">

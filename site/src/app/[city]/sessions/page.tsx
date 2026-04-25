@@ -44,15 +44,15 @@ export default async function CitySessionsPage({
   ].sort();
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <section className="mb-6">
-        <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">会議録・速報</h2>
+    <div className="page-shell max-w-6xl">
+      <section className="mb-5">
+        <h2 className="theme-section-title mb-1 text-2xl">会議録・速報</h2>
         <p className="text-base text-[#4A5568] leading-relaxed mb-3">
           YouTube中継動画の文字起こしと要約を掲載しています。公式議事録の発行（約2ヶ月後）までの速報版です。
         </p>
         <Link
           href={`/${city}/minutes`}
-          className="inline-flex items-center gap-1.5 text-sm text-[#2A5298] hover:text-[#1B3A6B] transition-colors"
+          className="theme-button px-3 py-1.5 text-sm"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ export default async function CitySessionsPage({
       </section>
 
       {sessions.length === 0 ? (
-        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+        <div className="theme-card px-6 py-8 text-center text-[#718096]">
           現在、掲載されている動画はありません。
         </div>
       ) : (

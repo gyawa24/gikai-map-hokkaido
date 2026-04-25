@@ -9,8 +9,11 @@ export const metadata = buildPageMetadata({
 
 export default function SearchPage() {
   return (
-    <div className="max-w-2xl mx-auto">
-      <h2 className="text-xl font-bold text-[#1B3A6B] mb-5">検索</h2>
+    <div className="page-shell max-w-6xl">
+      <div className="mb-5">
+        <h2 className="theme-section-title text-2xl">検索</h2>
+        <p className="text-sm text-[#718096] mt-1">議事録・会議録・議員を横断して探せます。</p>
+      </div>
       <SearchClient />
     </div>
   );

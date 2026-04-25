@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import type { SessionHit, MemberHit } from "@/app/api/search/route";
 
@@ -27,26 +27,28 @@ function tokenize(query: string): string[] {
   return query.trim().split(/\s+/).filter(Boolean);
 }
 
-const ALL_CITIES: { id: string; name: string }[] = [
-  { id: "chitose",       name: "千歳市" },
-  { id: "eniwa",         name: "恵庭市" },
-  { id: "tomakomai",     name: "苫小牧市" },
-  { id: "asahikawa",     name: "旭川市" },
-  { id: "ashibetsu",     name: "芦別市" },
-  { id: "date",          name: "伊達市" },
-  { id: "hakodate",      name: "函館市" },
-  { id: "ishikari",      name: "石狩市" },
-  { id: "kitahiroshima", name: "北広島市" },
-  { id: "kitami",        name: "北見市" },
-  { id: "kushiro",       name: "釧路市" },
-  { id: "muroran",       name: "室蘭市" },
-  { id: "nayoro",        name: "名寄市" },
-  { id: "nemuro",        name: "根室市" },
-  { id: "obihiro",       name: "帯広市" },
-  { id: "wakkanai",      name: "稚内市" },
-];
+function normalizeForSearch(text: string): string {
+  return text
+    .normalize("NFKC")
+    .replace(/\u3000/g, " ")
+    .replace(/[ァ-ヶ]/g, (char) => String.fromCharCode(char.charCodeAt(0) - 0x60))
+    .toLowerCase()
+    .trim();
+}
+
+function groupByCity<T extends { city: string; cityName: string }>(items: T[]) {
+  const groups = new Map<string, { city: string; cityName: string; items: T[] }>();
+  for (const item of items) {
+    const existing = groups.get(item.city) ?? { city: item.city, cityName: item.cityName, items: [] };
+    existing.items.push(item);
+    groups.set(item.city, existing);
+  }
+  return Array.from(groups.values());
+}
 
 type SourceFilter = "all" | "minutes" | "session" | "decision";
+type SessionSort = "relevance" | "newest";
+type MemberSort = "relevance" | "name" | "city";
 
 const SOURCE_FILTER_LABELS: Record<SourceFilter, string> = {
   all: "すべて",
@@ -55,50 +57,131 @@ const SOURCE_FILTER_LABELS: Record<SourceFilter, string> = {
   decision: "議決結果",
 };
 
+const SEARCH_SUGGESTIONS = [
+  "子育て支援",
+  "学校給食",
+  "防災",
+  "除雪",
+  "ラピダス",
+  "議員名で検索",
+];
+
+const SEARCH_SHORTCUTS = [
+  { label: "議員を探す", tab: "members" as const, source: "all" as SourceFilter },
+  { label: "議事録を探す", tab: "sessions" as const, source: "minutes" as SourceFilter },
+  { label: "議決を探す", tab: "sessions" as const, source: "decision" as SourceFilter },
+  { label: "速報を探す", tab: "sessions" as const, source: "session" as SourceFilter },
+];
+
 function SearchClientInner() {
+  const router = useRouter();
+  const pathname = usePathname();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
-  const [tab, setTab] = useState<"sessions" | "members">("sessions");
-  const [cityFilter, setCityFilter] = useState<string>("all");
-  const [sourceFilter, setSourceFilter] = useState<SourceFilter>("all");
-  const [factionFilter, setFactionFilter] = useState<string>("all");
-  const [yearFilter, setYearFilter] = useState<string>("all");
+  const [tab, setTab] = useState<"sessions" | "members">(() => searchParams.get("tab") === "members" ? "members" : "sessions");
+  const [cityFilter, setCityFilter] = useState<string>(() => searchParams.get("city") ?? "all");
+  const [sourceFilter, setSourceFilter] = useState<SourceFilter>(() => {
+    const value = searchParams.get("source");
+    return value === "minutes" || value === "session" || value === "decision" ? value : "all";
+  });
+  const [factionFilter, setFactionFilter] = useState<string>(() => searchParams.get("faction") ?? "all");
+  const [yearFilter, setYearFilter] = useState<string>(() => searchParams.get("year") ?? "all");
+  const [sessionSort, setSessionSort] = useState<SessionSort>(() => searchParams.get("sessionSort") === "newest" ? "newest" : "relevance");
+  const [memberSort, setMemberSort] = useState<MemberSort>(() => {
+    const value = searchParams.get("memberSort");
+    return value === "name" || value === "city" ? value : "relevance";
+  });
   const [sessionResults, setSessionResults] = useState<SessionHit[]>([]);
   const [memberResults, setMemberResults] = useState<MemberHit[]>([]);
+  const [sessionTotal, setSessionTotal] = useState(0);
+  const [memberTotal, setMemberTotal] = useState(0);
+  const [exactExpandedTerms, setExactExpandedTerms] = useState<string[]>([]);
+  const [relatedExpandedTerms, setRelatedExpandedTerms] = useState<string[]>([]);
+  const [searchSuggestions, setSearchSuggestions] = useState<string[]>([]);
+  const [recentQueries, setRecentQueries] = useState<string[]>([]);
   const [truncated, setTruncated] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const requestIdRef = useRef(0);
 
   useEffect(() => {
-    if (timerRef.current) clearTimeout(timerRef.current);
-    setCityFilter("all");
-    setSourceFilter("all");
-    setFactionFilter("all");
-    setYearFilter("all");
+    try {
+      const saved = window.localStorage.getItem("gikai-search-recent");
+      if (!saved) return;
+      const parsed = JSON.parse(saved) as string[];
+      if (Array.isArray(parsed)) setRecentQueries(parsed.slice(0, 6));
+    } catch {}
+  }, []);
+
+  useEffect(() => {
     const q = query.trim();
+    if (timerRef.current) clearTimeout(timerRef.current);
     if (!q) {
       setSessionResults([]);
       setMemberResults([]);
+      setSessionTotal(0);
+      setMemberTotal(0);
+      setExactExpandedTerms([]);
+      setRelatedExpandedTerms([]);
+      setSearchSuggestions([]);
       setTruncated(false);
       setLoading(false);
+      setError("");
       return;
     }
     setLoading(true);
+    setError("");
+    const requestId = requestIdRef.current + 1;
+    requestIdRef.current = requestId;
+    const controller = new AbortController();
     timerRef.current = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
+        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`, { signal: controller.signal });
+        if (!res.ok) {
+          const data = await res.json().catch(() => ({}));
+          throw new Error(data.error || "検索に失敗しました");
+        }
         const data = await res.json();
+        if (requestIdRef.current !== requestId) return;
         setSessionResults(data.sessionResults ?? []);
         setMemberResults(data.memberResults ?? []);
+        setSessionTotal(data.sessionTotal ?? (data.sessionResults ?? []).length);
+        setMemberTotal(data.memberTotal ?? (data.memberResults ?? []).length);
+        setExactExpandedTerms(data.exactExpandedTerms ?? []);
+        setRelatedExpandedTerms(data.relatedExpandedTerms ?? []);
+        setSearchSuggestions(data.searchSuggestions ?? []);
         setTruncated(Boolean(data.truncated));
-      } catch {
+        setRecentQueries((prev) => {
+          const next = [q, ...prev.filter((item) => normalizeForSearch(item) !== normalizeForSearch(q))].slice(0, 6);
+          try {
+            window.localStorage.setItem("gikai-search-recent", JSON.stringify(next));
+          } catch {}
+          return next;
+        });
+      } catch (err) {
+        if (controller.signal.aborted) return;
         setSessionResults([]);
         setMemberResults([]);
+        setSessionTotal(0);
+        setMemberTotal(0);
+        setExactExpandedTerms([]);
+        setRelatedExpandedTerms([]);
+        setSearchSuggestions([]);
         setTruncated(false);
+        setError(err instanceof Error ? err.message : "検索に失敗しました");
       } finally {
-        setLoading(false);
+        if (requestIdRef.current === requestId) {
+          setLoading(false);
+        }
       }
-    }, 300);
+    }, 220);
+
+    return () => {
+      controller.abort();
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
   }, [query]);
 
   const tokens = tokenize(query);
@@ -121,13 +204,43 @@ function SearchClientInner() {
     ? membersAfterCity
     : membersAfterCity.filter((m) => (m.faction || "無所属") === factionFilter);
 
-  const totalResults = tab === "sessions" ? filteredSessions.length : filteredMembers.length;
+  const sortedSessions = [...filteredSessions].sort((a, b) => {
+    if (sessionSort === "newest") {
+      if (b.year !== a.year) return (b.year || "").localeCompare(a.year || "");
+      if (a.cityName !== b.cityName) return a.cityName.localeCompare(b.cityName, "ja");
+      return a.title.localeCompare(b.title, "ja");
+    }
+    return 0;
+  });
+  const sortedMembers = [...filteredMembers].sort((a, b) => {
+    if (memberSort === "name") return a.name.localeCompare(b.name, "ja");
+    if (memberSort === "city") {
+      if (a.cityName !== b.cityName) return a.cityName.localeCompare(b.cityName, "ja");
+      return a.name.localeCompare(b.name, "ja");
+    }
+    return 0;
+  });
+
+  const totalResults = tab === "sessions" ? sortedSessions.length : sortedMembers.length;
 
   // タブ切替時のフィルタ要件用に、「市フィルタ後の元データ」から集計
   const availableSourceTypes = new Set(sessionsAfterCity.map((r) => r.sourceType));
   const availableFactions = Array.from(
     new Set(membersAfterCity.map((m) => m.faction || "無所属"))
   ).filter(Boolean).sort();
+  const availableCities = Array.from(
+    new Map(
+      [...sessionResults, ...memberResults].map((item) => [item.city, item.cityName])
+    ).entries()
+  )
+    .map(([id, name]) => ({
+      id,
+      name,
+      count:
+        sessionResults.filter((r) => r.city === id).length +
+        memberResults.filter((m) => m.city === id).length,
+    }))
+    .sort((a, b) => (b.count !== a.count ? b.count - a.count : a.name.localeCompare(b.name, "ja")));
   // 年度は sourceFilter 適用後から集計し、降順（新しい順）で並べる
   const availableYears = Array.from(
     new Set(sessionsAfterSource.map((r) => r.year).filter(Boolean))
@@ -158,60 +271,274 @@ function SearchClientInner() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [availableFactionsKey]);
 
+  useEffect(() => {
+    const params = new URLSearchParams();
+    const trimmed = query.trim();
+    if (trimmed) params.set("q", trimmed);
+    if (tab !== "sessions") params.set("tab", tab);
+    if (cityFilter !== "all") params.set("city", cityFilter);
+    if (sourceFilter !== "all") params.set("source", sourceFilter);
+    if (yearFilter !== "all") params.set("year", yearFilter);
+    if (factionFilter !== "all") params.set("faction", factionFilter);
+    if (sessionSort !== "relevance") params.set("sessionSort", sessionSort);
+    if (memberSort !== "relevance") params.set("memberSort", memberSort);
+    const nextParams = params.toString();
+    if (nextParams === searchParams.toString()) return;
+    const next = nextParams ? `${pathname}?${nextParams}` : pathname;
+    router.replace(next, { scroll: false });
+  }, [pathname, router, searchParams, query, tab, cityFilter, sourceFilter, yearFilter, factionFilter, sessionSort, memberSort]);
+
+  const activeFilters = [
+    cityFilter !== "all" ? availableCities.find((city) => city.id === cityFilter)?.name ?? cityFilter : "",
+    tab === "sessions" && sourceFilter !== "all" ? SOURCE_FILTER_LABELS[sourceFilter] : "",
+    tab === "sessions" && yearFilter !== "all" ? `${yearFilter}年` : "",
+    tab === "members" && factionFilter !== "all" ? factionFilter : "",
+  ].filter(Boolean);
+  const exactOnlyTerms = exactExpandedTerms.filter(
+    (term) => !tokens.some((token) => normalizeForSearch(token) === normalizeForSearch(term))
+  );
+  const relatedOnlyTerms = relatedExpandedTerms.filter(
+    (term) =>
+      !tokens.some((token) => normalizeForSearch(token) === normalizeForSearch(term)) &&
+      !exactExpandedTerms.some((exactTerm) => normalizeForSearch(exactTerm) === normalizeForSearch(term))
+  );
+  const groupedSessions = groupByCity(sortedSessions);
+  const groupedMembers = groupByCity(sortedMembers);
+  const showGroupedSessions = cityFilter === "all" && groupedSessions.length > 1;
+  const showGroupedMembers = cityFilter === "all" && groupedMembers.length > 1;
+  const hasFilterBlocks =
+    hasQuery &&
+    ((tab === "sessions" && (availableSourceTypes.size > 1 || availableYears.length > 1 || availableCities.length > 1)) ||
+      (tab === "members" && (availableFactions.length > 1 || availableCities.length > 1)));
+
+  function clearFilters() {
+    setCityFilter("all");
+    setSourceFilter("all");
+    setFactionFilter("all");
+    setYearFilter("all");
+    setSessionSort("relevance");
+    setMemberSort("relevance");
+  }
+
+  function applyShortcut(tabValue: "sessions" | "members", sourceValue: SourceFilter) {
+    setTab(tabValue);
+    setFiltersOpen(true);
+    if (tabValue === "sessions") {
+      setSourceFilter(sourceValue);
+      if (sourceValue !== "all") setYearFilter("all");
+      return;
+    }
+    setSourceFilter("all");
+  }
+
   return (
-    <div className="flex flex-col gap-4">
-      {/* 検索ボックス */}
-      <div className="relative">
-        <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#718096]"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-          aria-hidden="true">
-          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-        </svg>
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="キーワードを入力（例: プール授業、市営住宅）"
-          className="w-full pl-9 pr-4 py-3 border border-[#CBD5E0] rounded-lg text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] focus-visible:border-[#2A5298]"
-        />
-        {query && (
-          <button onClick={() => setQuery("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#718096] hover:text-[#1A202C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded" aria-label="検索をクリア">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4" aria-hidden="true">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-          </button>
+    <div className="page-shell flex max-w-5xl flex-col gap-4">
+      <div className="theme-panel px-4 py-4 sm:px-5">
+        <div className="relative">
+          <svg className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#718096]"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+            aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="キーワードを入力（例: 子育て支援、学校給食、議員名）"
+            className="theme-input w-full py-3 pl-9 pr-20 text-base sm:pr-24"
+          />
+          {query && (
+            <button
+              onClick={() => setQuery("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 rounded text-xs font-bold text-[#718096] hover:text-[#1A202C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+              aria-label="検索をクリア"
+            >
+              クリア
+            </button>
+          )}
+        </div>
+
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {SEARCH_SHORTCUTS.map((shortcut) => (
+            <button
+              key={shortcut.label}
+              onClick={() => applyShortcut(shortcut.tab, shortcut.source)}
+              className="theme-button px-3 py-1.5 text-[11px] sm:text-xs"
+              type="button"
+            >
+              {shortcut.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {SEARCH_SUGGESTIONS.map((suggestion) => (
+            <button
+              key={suggestion}
+              onClick={() => setQuery(suggestion)}
+              className="theme-pill-soft text-[#4A5568] transition-colors hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
+            >
+              {suggestion}
+            </button>
+          ))}
+        </div>
+
+        {!hasQuery && recentQueries.length > 0 && (
+          <div className="mt-3">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#667085]">最近の検索</p>
+            <div className="flex flex-wrap gap-1.5">
+              {recentQueries.map((item) => (
+                <button
+                  key={item}
+                  onClick={() => setQuery(item)}
+                  className="theme-pill-soft text-[#1B3A6B]"
+                  type="button"
+                >
+                  {item}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {!hasQuery && (
+          <p className="mt-3 text-xs leading-relaxed text-[#667085] sm:text-sm">
+            議題名、政策テーマ、施設名、議員名、会派名などで探せます。複数語を入れると絞り込みます。
+          </p>
         )}
       </div>
 
+      {hasQuery && (
+        <div className="theme-card-soft px-4 py-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p className="text-sm font-black text-[#1B3A6B]">
+                「{query.trim()}」の検索結果
+              </p>
+              <p className="mt-1 text-xs text-[#667085] sm:text-sm">
+                議会記録 {loading ? "…" : sessionTotal.toLocaleString()} 件 / 議員 {loading ? "…" : memberTotal.toLocaleString()} 名
+              </p>
+              {activeFilters.length > 0 && (
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {activeFilters.map((filter) => (
+                    <span key={filter} className="theme-pill-soft text-[#1B3A6B]">
+                      {filter}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <label className="text-xs font-semibold text-[#667085]" htmlFor="search-sort">
+                並び順
+              </label>
+              <select
+                id="search-sort"
+                value={tab === "sessions" ? sessionSort : memberSort}
+                onChange={(e) => {
+                  if (tab === "sessions") {
+                    setSessionSort(e.target.value as SessionSort);
+                    return;
+                  }
+                  setMemberSort(e.target.value as MemberSort);
+                }}
+                className="theme-select min-w-[8rem] px-3 py-2 text-sm"
+              >
+                {tab === "sessions" ? (
+                  <>
+                    <option value="relevance">関連度順</option>
+                    <option value="newest">新しい順</option>
+                  </>
+                ) : (
+                  <>
+                    <option value="relevance">関連度順</option>
+                    <option value="name">名前順</option>
+                    <option value="city">市町村順</option>
+                  </>
+                )}
+              </select>
+              <button
+                onClick={clearFilters}
+                className="theme-button px-3 py-2 text-xs"
+                type="button"
+              >
+                条件をリセット
+              </button>
+              {hasFilterBlocks && (
+                <button
+                  onClick={() => setFiltersOpen((value) => !value)}
+                  className="theme-button px-3 py-2 text-xs sm:hidden"
+                  type="button"
+                >
+                  {filtersOpen ? "絞り込みを閉じる" : "絞り込みを開く"}
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {hasQuery && !loading && (exactOnlyTerms.length > 0 || relatedOnlyTerms.length > 0) && (
+        <div className="theme-card-soft px-4 py-3">
+          <p className="text-xs font-semibold text-[#6B4C11]">表記ゆれを含めて検索しています</p>
+          {exactOnlyTerms.length > 0 && (
+            <div className="mt-2">
+              <p className="mb-1 text-[11px] font-semibold text-[#667085]">同義語</p>
+              <div className="flex flex-wrap gap-1.5">
+                {exactOnlyTerms.slice(0, 8).map((term) => (
+                  <span key={term} className="theme-pill-soft text-[#6B4C11]">
+                    {term}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+          {relatedOnlyTerms.length > 0 && (
+            <div className="mt-2">
+              <p className="mb-1 text-[11px] font-semibold text-[#667085]">関連語</p>
+              <div className="flex flex-wrap gap-1.5">
+                {relatedOnlyTerms.slice(0, 8).map((term) => (
+                  <span key={term} className="theme-pill-soft text-[#4A5568]">
+                    {term}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      <div className={`${hasFilterBlocks && !filtersOpen ? "hidden sm:block" : "block"} space-y-4`}>
       {/* 市フィルタ */}
       {hasQuery && (sessionResults.length > 0 || memberResults.length > 0) && (
-        <div className="flex flex-wrap gap-1.5">
-          <button
-            onClick={() => setCityFilter("all")}
-            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
-              cityFilter === "all"
-                ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
-                : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
-            }`}
-          >
-            すべての市
-          </button>
-          {ALL_CITIES.filter((c) =>
-            sessionResults.some((r) => r.city === c.id) ||
-            memberResults.some((m) => m.city === c.id)
-          ).map((c) => (
+        <div className="space-y-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#667085]">市町村で絞る</p>
+          <div className="flex flex-wrap gap-1.5">
             <button
-              key={c.id}
-              onClick={() => setCityFilter(cityFilter === c.id ? "all" : c.id)}
-              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
-                cityFilter === c.id
-                  ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
-                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+              onClick={() => setCityFilter("all")}
+              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+                cityFilter === "all"
+                  ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
+                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
               }`}
             >
-              {c.name}
+              すべての市
             </button>
-          ))}
+            {availableCities.map((c) => (
+              <button
+                key={c.id}
+                onClick={() => setCityFilter(cityFilter === c.id ? "all" : c.id)}
+                className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+                  cityFilter === c.id
+                    ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
+                    : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
+                }`}
+              >
+                {c.name}
+                <span className="ml-1 opacity-70">{c.count}</span>
+              </button>
+            ))}
+          </div>
         </div>
       )}
 
@@ -221,16 +548,16 @@ function SearchClientInner() {
           <button
             key={t}
             onClick={() => setTab(t)}
-            className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded-t ${
+            className={`px-3 py-2 text-sm font-medium border-b-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] rounded-t sm:px-4 ${
               tab === t
-                ? "border-[#1B3A6B] text-[#1B3A6B]"
+                ? "border-[#8AA3CF] text-[#1B3A6B]"
                 : "border-transparent text-[#718096] hover:text-[#1A202C]"
             }`}
             aria-current={tab === t ? "true" : undefined}
           >
             {t === "sessions" ? "議会記録" : "議員"}
             {hasQuery && !loading && (
-              <span className="ml-1.5 text-xs bg-[#E8EEF7] text-[#1B3A6B] px-1.5 py-0.5 rounded-full">
+              <span className="ml-1.5 rounded-full bg-[#F4F8FF] px-1.5 py-0.5 text-xs text-[#1B3A6B]">
                 {t === "sessions" ? filteredSessions.length : filteredMembers.length}
               </span>
             )}
@@ -240,17 +567,19 @@ function SearchClientInner() {
 
       {/* 種別フィルタ (議会記録タブのみ) */}
       {tab === "sessions" && hasQuery && availableSourceTypes.size > 1 && (
-        <div className="flex flex-wrap gap-1.5">
+        <div className="space-y-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#667085]">記録の種類</p>
+          <div className="flex flex-wrap gap-1.5">
           {(["all", "minutes", "session", "decision"] as SourceFilter[])
             .filter((s) => s === "all" || availableSourceTypes.has(s))
             .map((s) => (
               <button
                 key={s}
                 onClick={() => setSourceFilter(s)}
-                className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+                className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                   sourceFilter === s
-                    ? "bg-[#2A5298] text-white border-[#2A5298]"
-                    : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#2A5298] hover:text-[#2A5298]"
+                    ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
+                    : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#2A5298]"
                 }`}
               >
                 {SOURCE_FILTER_LABELS[s]}
@@ -261,18 +590,21 @@ function SearchClientInner() {
                 </span>
               </button>
             ))}
+          </div>
         </div>
       )}
 
       {/* 年度フィルタ (議会記録タブのみ) */}
       {tab === "sessions" && hasQuery && availableYears.length > 1 && (
-        <div className="flex flex-wrap gap-1.5">
+        <div className="space-y-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#667085]">年度</p>
+          <div className="flex flex-wrap gap-1.5">
           <button
             onClick={() => setYearFilter("all")}
-            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
               yearFilter === "all"
-                ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
-                : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+                ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
+                : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
             }`}
           >
             全期間
@@ -282,10 +614,10 @@ function SearchClientInner() {
             <button
               key={y}
               onClick={() => setYearFilter(yearFilter === y ? "all" : y)}
-              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                 yearFilter === y
-                  ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
-                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+                  ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
+                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
               }`}
             >
               {y}年
@@ -294,18 +626,21 @@ function SearchClientInner() {
               </span>
             </button>
           ))}
+          </div>
         </div>
       )}
 
       {/* 会派フィルタ (議員タブのみ) */}
       {tab === "members" && hasQuery && availableFactions.length > 1 && (
-        <div className="flex flex-wrap gap-1.5">
+        <div className="space-y-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#667085]">会派</p>
+          <div className="flex flex-wrap gap-1.5">
           <button
             onClick={() => setFactionFilter("all")}
-            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
               factionFilter === "all"
-                ? "bg-[#2A5298] text-white border-[#2A5298]"
-                : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#2A5298] hover:text-[#2A5298]"
+                ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
+                : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#2A5298]"
             }`}
           >
             すべての会派
@@ -315,10 +650,10 @@ function SearchClientInner() {
             <button
               key={f}
               onClick={() => setFactionFilter(factionFilter === f ? "all" : f)}
-              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                 factionFilter === f
-                  ? "bg-[#2A5298] text-white border-[#2A5298]"
-                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#2A5298] hover:text-[#2A5298]"
+                  ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
+                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#2A5298]"
               }`}
             >
               {f}
@@ -327,12 +662,17 @@ function SearchClientInner() {
               </span>
             </button>
           ))}
+          </div>
         </div>
       )}
+      </div>
 
       {/* 状態表示 */}
       {!hasQuery && (
-        <p className="text-sm text-[#718096] text-center py-8">キーワードを入力してください</p>
+        <div className="theme-card px-5 py-7 text-center text-[#718096] sm:px-6 sm:py-8">
+          <p className="text-sm font-semibold text-[#4A5568]">キーワードを入力してください</p>
+          <p className="mt-1 text-xs">政策テーマ、施設名、議員名、会派名などで探せます。</p>
+        </div>
       )}
 
       {hasQuery && loading && (
@@ -341,7 +681,7 @@ function SearchClientInner() {
           {[0, 1, 2, 3].map((i) => (
             <div
               key={i}
-              className="bg-white rounded-lg border border-[#E2E8F0] px-4 py-3 animate-pulse"
+              className="theme-card-soft animate-pulse px-4 py-3"
               style={{ animationDelay: `${i * 80}ms` }}
             >
               <div className="flex items-center gap-2 mb-2">
@@ -357,16 +697,39 @@ function SearchClientInner() {
         </div>
       )}
 
+      {hasQuery && !loading && error && (
+        <div className="theme-alert px-4 py-3 text-sm text-[#78451F]">
+          {error}
+        </div>
+      )}
+
       {hasQuery && !loading && totalResults === 0 && (
-        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+        <div className="theme-card px-5 py-7 text-center text-[#718096] sm:px-6 sm:py-8">
           <p className="text-sm">「{query.trim()}」の検索結果はありませんでした</p>
-          <p className="text-xs mt-1">別のキーワードでお試しください</p>
+          <p className="mt-1 text-xs">別の語に変えるか、語を1つ減らすと見つかりやすくなります。</p>
+          {searchSuggestions.length > 0 && (
+            <div className="mt-4">
+              <p className="mb-2 text-xs font-semibold text-[#1B3A6B]">代わりにこの語を試せます</p>
+              <div className="flex flex-wrap justify-center gap-1.5">
+                {searchSuggestions.map((suggestion) => (
+                  <button
+                    key={suggestion}
+                    onClick={() => setQuery(suggestion)}
+                    className="theme-button px-3 py-1.5 text-xs"
+                    type="button"
+                  >
+                    {suggestion}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
 
       {/* 議員サジェスト: sessions タブで議員名がマッチした場合、議員タブへの動線を上部に出す */}
       {tab === "sessions" && hasQuery && !loading && filteredMembers.length > 0 && (
-        <div className="bg-[#E8EEF7] border border-[#C5D0E6] rounded-lg px-4 py-2.5 flex items-center justify-between gap-3">
+        <div className="theme-panel flex flex-col items-start gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:py-2.5">
           <p className="text-xs text-[#1B3A6B] flex-1 min-w-0">
             <span className="font-semibold">議員</span>の検索結果が
             <span className="font-bold mx-0.5">{filteredMembers.length}</span>
@@ -378,7 +741,7 @@ function SearchClientInner() {
           </p>
           <button
             onClick={() => setTab("members")}
-            className="shrink-0 text-xs font-medium px-3 py-1 bg-[#1B3A6B] text-white rounded hover:bg-[#2A5298] transition-colors"
+            className="theme-button shrink-0 px-3 py-1 text-xs"
           >
             議員タブを見る
           </button>
@@ -386,7 +749,7 @@ function SearchClientInner() {
       )}
 
       {hasQuery && !loading && truncated && (
-        <div className="bg-[#FFF7E6] border border-[#F7C948] rounded px-3 py-2 text-xs text-[#78451F] flex items-start gap-2">
+        <div className="theme-alert flex items-start gap-2 px-3 py-2 text-xs text-[#78451F]">
           <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
           </svg>
@@ -398,78 +761,109 @@ function SearchClientInner() {
       )}
 
       {/* 議会記録結果 */}
-      {tab === "sessions" && hasQuery && !loading && filteredSessions.length > 0 && (
+      {tab === "sessions" && hasQuery && !loading && sortedSessions.length > 0 && (
         <div className="flex flex-col gap-3">
-          {filteredSessions.map((r, i) => (
-            <Link
-              key={i}
-              href={r.href}
-              className="block bg-white border border-[#CBD5E0] rounded-lg px-4 py-3 hover:border-[#1B3A6B] hover:shadow-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
-            >
-              <div className="flex items-center gap-2 mb-1 flex-wrap">
-                <span className="text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5">{r.cityName}</span>
-                {r.sourceType === "minutes" ? (
-                  <span className="text-xs bg-[#F4F6F9] text-[#4A5568] px-1.5 py-0.5 rounded border border-[#E2E8F0]">公式議事録</span>
-                ) : r.sourceType === "decision" ? (
-                  <span className="text-xs bg-[#F4F6F9] text-[#4A5568] px-1.5 py-0.5 rounded border border-[#E2E8F0]">議決結果</span>
-                ) : (
-                  <span className="text-xs bg-[#E8EEF7] text-[#2A5298] px-1.5 py-0.5 rounded">会議録</span>
-                )}
-                {r.committee && r.sourceType !== "decision" && (
-                  <span className="text-xs bg-[#E8EEF7] text-[#1B3A6B] px-1.5 py-0.5 rounded">{r.committee}</span>
-                )}
-                {r.label && (
-                  <span className="text-xs bg-[#F4F6F9] text-[#4A5568] px-1.5 py-0.5 rounded">{r.label}{r.startTime ? ` ${r.startTime}〜` : ""}</span>
-                )}
-                <span className="text-xs text-[#718096] ml-auto">{r.field}</span>
+          {(showGroupedSessions ? groupedSessions : [{ city: "all", cityName: "すべて", items: sortedSessions }]).map((group) => (
+            <div key={group.city} className={showGroupedSessions ? "theme-card-soft px-4 py-4" : ""}>
+              {showGroupedSessions && (
+                <div className="mb-3 flex items-center justify-between gap-2">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="theme-pill-soft text-[#1B3A6B]">{group.cityName}</span>
+                    <span className="text-xs font-semibold text-[#667085]">{group.items.length}件</span>
+                  </div>
+                </div>
+              )}
+              <div className="flex flex-col gap-3">
+                {group.items.map((r, i) => (
+                  <Link
+                    key={`${group.city}-${i}`}
+                    href={r.href}
+                    className="theme-card block px-4 py-3 transition-all hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
+                  >
+                    <div className="mb-1.5 flex items-center gap-1.5 flex-wrap">
+                      {!showGroupedSessions && <span className="theme-pill-soft text-[#2A5298]">{r.cityName}</span>}
+                      {r.sourceType === "minutes" ? (
+                        <span className="theme-pill-soft opacity-85">公式議事録</span>
+                      ) : r.sourceType === "decision" ? (
+                        <span className="theme-pill-soft opacity-85">議決結果</span>
+                      ) : (
+                        <span className="theme-pill-soft text-[#2A5298] opacity-90">会議録</span>
+                      )}
+                      {r.committee && r.sourceType !== "decision" && (
+                        <span className="theme-pill-soft hidden text-[#1B3A6B] sm:inline-flex">{r.committee}</span>
+                      )}
+                      {r.label && (
+                        <span className="theme-pill-soft hidden sm:inline-flex">{r.label}{r.startTime ? ` ${r.startTime}〜` : ""}</span>
+                      )}
+                      <span className="theme-pill-soft ml-auto text-[#6B4C11]">ヒット: {r.field}</span>
+                    </div>
+                    <p className="mb-1 text-[15px] font-black leading-snug text-[#1B3A6B] sm:text-base">{r.title}</p>
+                    <p className="text-[12px] leading-relaxed text-[#556170] sm:text-xs">
+                      <Highlight text={r.context} tokens={tokens} />
+                    </p>
+                  </Link>
+                ))}
               </div>
-              <p className="text-sm font-medium text-[#1B3A6B] mb-1">{r.title}</p>
-              <p className="text-xs text-[#4A5568] leading-relaxed">
-                <Highlight text={r.context} tokens={tokens} />
-              </p>
-            </Link>
+            </div>
           ))}
         </div>
       )}
 
       {/* 議員結果 */}
-      {tab === "members" && hasQuery && !loading && filteredMembers.length > 0 && (
-        <div className="flex flex-col gap-2">
-          {filteredMembers.map((m, i) => (
-            <Link
-              key={i}
-              href={m.href}
-              className="block bg-white border border-[#CBD5E0] rounded-lg px-4 py-3 hover:border-[#1B3A6B] hover:shadow-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
-            >
-              <div className="flex items-center justify-between gap-2">
-                <div className="flex items-center gap-3">
-                  <div>
-                    <span className="font-bold text-[#1B3A6B] text-base">
-                      <Highlight text={m.name} tokens={tokens} />
-                    </span>
-                    <span className="text-xs text-[#718096] ml-1.5">{m.furigana}</span>
+      {tab === "members" && hasQuery && !loading && sortedMembers.length > 0 && (
+        <div className="flex flex-col gap-3">
+          {(showGroupedMembers ? groupedMembers : [{ city: "all", cityName: "すべて", items: sortedMembers }]).map((group) => (
+            <div key={group.city} className={showGroupedMembers ? "theme-card-soft px-4 py-4" : ""}>
+              {showGroupedMembers && (
+                <div className="mb-3 flex items-center justify-between gap-2">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="theme-pill-soft text-[#1B3A6B]">{group.cityName}</span>
+                    <span className="text-xs font-semibold text-[#667085]">{group.items.length}名</span>
                   </div>
                 </div>
-                <span className="text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5 flex-shrink-0">{m.cityName}</span>
-              </div>
-              <div className="flex flex-wrap gap-1.5 mt-1.5">
-                {m.party && (
-                  <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] border border-[#CBD5E0] text-[#4A5568] rounded-full">
-                    <Highlight text={m.party} tokens={tokens} />
-                  </span>
-                )}
-                {m.faction && m.faction !== m.party && (
-                  <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] border border-[#CBD5E0] text-[#4A5568] rounded-full">
-                    <Highlight text={m.faction} tokens={tokens} />
-                  </span>
-                )}
-                {m.committees.map((c) => (
-                  <span key={c} className="text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#1B3A6B] rounded-full">
-                    <Highlight text={c} tokens={tokens} />
-                  </span>
+              )}
+              <div className="flex flex-col gap-2">
+                {group.items.map((m, i) => (
+                  <Link
+                    key={`${group.city}-${i}`}
+                    href={m.href}
+                    className="theme-card block px-4 py-3 transition-all hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
+                  >
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="flex items-center gap-3">
+                        <div>
+                          <span className="text-base font-black text-[#1B3A6B]">
+                            <Highlight text={m.name} tokens={tokens} />
+                          </span>
+                          <span className="ml-1.5 text-xs text-[#718096]">{m.furigana}</span>
+                        </div>
+                      </div>
+                      {!showGroupedMembers && <span className="theme-pill-soft flex-shrink-0 text-[#2A5298]">{m.cityName}</span>}
+                    </div>
+                    <div className="mt-1.5 flex flex-wrap gap-1">
+                      {m.party && (
+                        <span className="theme-pill-soft opacity-90">
+                          <Highlight text={m.party} tokens={tokens} />
+                        </span>
+                      )}
+                      {m.faction && m.faction !== m.party && (
+                        <span className="theme-pill-soft opacity-90">
+                          <Highlight text={m.faction} tokens={tokens} />
+                        </span>
+                      )}
+                      {m.committees.slice(0, 3).map((c) => (
+                        <span key={c} className="theme-pill-soft text-[#1B3A6B]">
+                          <Highlight text={c} tokens={tokens} />
+                        </span>
+                      ))}
+                      {m.committees.length > 3 && (
+                        <span className="theme-pill-soft">+{m.committees.length - 3}</span>
+                      )}
+                    </div>
+                  </Link>
                 ))}
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       )}

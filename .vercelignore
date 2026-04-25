@@ -1,0 +1,10 @@
+tmp_audio/
+data/
+scraper/
+mcp-server/
+agents/node_modules/
+.venv/
+gikaimap/
+site/.next/
+site/node_modules/
+site/.vercel/

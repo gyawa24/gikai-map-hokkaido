@@ -11,11 +11,11 @@ type Props = {
  */
 export default function AIDisclaimer({ sourceLabel }: Props) {
   return (
-    <div className="bg-[#FFF7E6] border border-[#F7C948] rounded-lg px-4 py-3 mb-5 flex items-start gap-3">
-      <div className="shrink-0 w-7 h-7 rounded-full bg-[#F7C948] flex items-center justify-center mt-0.5">
+    <div className="theme-alert mb-5 flex items-start gap-3 px-4 py-3">
+      <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#FFF1B3]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-4 h-4 text-[#1B3A6B]"
+          className="w-4 h-4 text-[#6B4C11]"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

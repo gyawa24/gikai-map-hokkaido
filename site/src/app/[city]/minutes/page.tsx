@@ -91,9 +91,9 @@ export default async function CityMinutesPage({
   const restrictedNote = municipality?.minutes_access_note;
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <section className="mb-6">
-        <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">公式議事録</h2>
+    <div className="page-shell max-w-6xl">
+      <section className="mb-5">
+        <h2 className="theme-section-title mb-1 text-2xl">公式議事録</h2>
         <p className="text-base text-[#4A5568] leading-relaxed">
           {cityName}議会の公式会議録です。本会議・委員会の発言内容をすべて収録しています。
           {enrichedCount > 0 && !restricted && (
@@ -105,7 +105,7 @@ export default async function CityMinutesPage({
       </section>
 
       {restricted && (
-        <div className="mb-5 rounded-lg border border-[#E0B040] bg-[#FFF8E1] px-4 py-3">
+        <div className="theme-alert mb-5 px-4 py-3">
           <p className="text-sm font-semibold text-[#7A5A00] mb-1">本サイトでの全文閲覧は一時停止中です</p>
           <p className="text-xs text-[#5A4500] leading-relaxed">
             {restrictedNote ?? `${cityName}公式サイトの著作権ポリシーで複製・転用に事前許可を要する旨が明記されているため、許諾確認が取れるまで本サイトでの全文閲覧を停止しています。データは保管しており、許諾後に公開を再開します。`}
@@ -125,7 +125,7 @@ export default async function CityMinutesPage({
       )}
 
       {items.length === 0 ? (
-        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+        <div className="theme-card px-6 py-8 text-center text-[#718096]">
           現在、掲載されている議事録はありません。
         </div>
       ) : (

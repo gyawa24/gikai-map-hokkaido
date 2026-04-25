@@ -60,7 +60,7 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
       {enriched ? (
         <section className="mb-6 space-y-4">
           {/* 要約 */}
-          <div className="bg-[#E8EEF7] rounded-lg p-5">
+          <div className="theme-panel p-5">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-bold text-[#2A5298]">✦ AI要約</span>
             </div>
@@ -90,10 +90,10 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
                   <button
                     key={tag}
                     onClick={() => handleTagClick(tag)}
-                    className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+                    className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                       activeTopic === tag
-                        ? "bg-[#1B3A6B] text-white border-[#1B3A6B] shadow-sm"
-                        : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B] hover:text-[#1B3A6B]"
+                        ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566] shadow-sm"
+                        : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
                     }`}
                   >
                     {tag}
@@ -102,7 +102,7 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
                 {(activeTopic || query) && (
                   <button
                     onClick={clearAll}
-                    className="text-xs px-2.5 py-1 rounded-full border border-dashed border-[#CBD5E0] text-[#718096] hover:text-[#1A202C] transition-colors flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                    className="flex items-center gap-1 rounded-full border border-dashed border-[#CBD5E0] px-2.5 py-1 text-xs text-[#718096] transition-colors hover:text-[#1A202C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                     解除
@@ -114,7 +114,7 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
 
           {/* activeTopic 時のガイド */}
           {activeTopic && (
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg px-4 py-3 flex items-start gap-2">
+            <div className="theme-alert flex items-start gap-2 px-4 py-3">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-yellow-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
                 <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
               </svg>
@@ -127,7 +127,7 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
 
           {/* 質問議員 */}
           {enriched.questioners.length > 0 && (
-            <div className="bg-white rounded-lg border border-[#CBD5E0] p-4 shadow-sm">
+            <div className="theme-card p-4">
               <h3 className="text-sm font-bold text-[#1B3A6B] mb-1">質問に立った議員</h3>
               <p className="text-xs text-[#718096] mb-3">名前をクリックすると発言箇所へジャンプします</p>
               <div className="space-y-2">
@@ -135,7 +135,7 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
                   <div key={q.name} className="flex items-start gap-2">
                     <button
                       onClick={() => handleTopicSearch(q.name)}
-                      className={`text-sm font-medium shrink-0 w-28 text-left transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded ${
+                      className={`text-sm font-medium shrink-0 w-28 text-left transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] rounded ${
                         query === q.name
                           ? "text-[#1B3A6B] font-bold"
                           : "text-[#2A5298] hover:text-[#1B3A6B]"
@@ -154,7 +154,7 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
 
           {/* 執行部 */}
           {officialSpeakers.length > 0 && (
-            <div className="bg-white rounded-lg border border-[#CBD5E0] p-4 shadow-sm">
+            <div className="theme-card p-4">
               <h3 className="text-sm font-bold text-[#1B3A6B] mb-3">答弁した執行部</h3>
               <div className="flex flex-wrap gap-x-4 gap-y-1">
                 {officialSpeakers.map((s) => (
@@ -170,7 +170,7 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
           <p className="text-xs text-[#A0AEC0] text-right">AI要約生成日: {enriched.generated_at}</p>
         </section>
       ) : (
-        <div className="mb-6 bg-[#F4F6F9] rounded-lg p-4 border border-dashed border-[#CBD5E0]">
+        <div className="theme-card-soft mb-6 border-dashed p-4">
           <p className="text-sm text-[#718096] text-center">
             要約・タグ・発言者リストを準備中です
           </p>

@@ -71,41 +71,45 @@ function MemberCard({
   policyTags?: PolicyTag[];
 }) {
   const [activityOpen, setActivityOpen] = useState(false);
+  const visibleCommittees = member.committees.slice(0, 2);
+  const hiddenCommitteeCount = Math.max(0, member.committees.length - visibleCommittees.length);
+  const visibleThemes = activity?.themes?.slice(0, 3) ?? [];
+  const hiddenThemeCount = Math.max(0, (activity?.themes?.length ?? 0) - visibleThemes.length);
 
   return (
-    <div className="bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] shadow-sm hover:shadow-md transition-all duration-150 overflow-hidden">
-      <div className="p-5">
+    <div className="theme-card overflow-hidden transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2]">
+      <div className="p-4 sm:p-[18px]">
         {/* 写真 */}
         {member.photo_url && (
-          <div className="mb-4 flex justify-center">
+          <div className="mb-3 flex justify-center sm:mb-4">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={member.photo_url}
               alt={`${member.name}議員`}
-              className="w-20 h-28 object-cover rounded-lg border border-[#E2E8F0] shadow-sm"
+              className="h-24 w-[72px] rounded-[16px] border border-[#E2E8F0] object-cover shadow-sm sm:h-28 sm:w-20 sm:rounded-[18px]"
             />
           </div>
         )}
         {/* 議席番号 + 氏名 */}
-        <div className="flex items-start gap-3 mb-4">
-          <span className="mt-1 text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5 whitespace-nowrap shrink-0">
+        <div className="mb-3 flex items-start gap-2.5 sm:mb-4 sm:gap-3">
+          <span className="mt-1 shrink-0 whitespace-nowrap rounded-full border border-[#D5DCE6] bg-[#F8FAFC] px-2.5 py-0.5 text-xs font-semibold text-[#2A5298]">
             {member.seat_number}番
           </span>
           <div className="flex-1 min-w-0">
             {memberHrefBase ? (
               <Link
                 href={`${memberHrefBase}/${member.seat_number}`}
-                className="text-lg font-bold text-[#1B3A6B] hover:underline leading-snug focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
+                className="rounded text-[1.05rem] font-bold leading-snug text-[#1B3A6B] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:text-lg"
               >
                 {member.name}
               </Link>
             ) : (
               <p className="text-lg font-bold text-[#1A202C] leading-snug">{member.name}</p>
             )}
-            <p className="text-xs text-[#718096] mt-0.5">{member.furigana}</p>
+            <p className="mt-0.5 text-[11px] text-[#718096] sm:text-xs">{member.furigana}</p>
           </div>
           {activity && (
-            <span className="shrink-0 text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded-full px-2 py-0.5 whitespace-nowrap">
+            <span className="theme-pill-soft shrink-0 whitespace-nowrap px-2 py-1 text-[11px] text-[#2A5298] sm:px-[0.8rem] sm:text-[0.78rem]">
               質問 {activity.session_count}回
             </span>
           )}
@@ -125,7 +129,7 @@ function MemberCard({
         {member.faction && (
           <div className="flex items-start gap-2 mb-3">
             <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">会派</span>
-            <span className={`text-xs font-medium px-2 py-0.5 rounded ${factionBadgeClass(member.faction)}`}>
+            <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${factionBadgeClass(member.faction)}`}>
               {member.faction}
             </span>
           </div>
@@ -136,9 +140,21 @@ function MemberCard({
           <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">委員会</span>
           <div className="flex flex-wrap gap-1">
             {member.committees.length > 0 ? (
-              member.committees.map((c) => (
-                <span key={c} className="text-xs text-[#4A5568] bg-[#F4F6F9] border border-[#E2E8F0] rounded px-2 py-0.5">{c}</span>
-              ))
+              <>
+                {member.committees.map((c, idx) => (
+                  <span
+                    key={c}
+                    className={`rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-xs text-[#4A5568] ${idx >= 2 ? "hidden sm:inline-flex" : ""}`}
+                  >
+                    {c}
+                  </span>
+                ))}
+                {hiddenCommitteeCount > 0 && (
+                  <span className="rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-xs text-[#718096] sm:hidden">
+                    +{hiddenCommitteeCount}
+                  </span>
+                )}
+              </>
             ) : (
               <span className="text-sm text-[#A0AEC0]">―</span>
             )}
@@ -150,23 +166,33 @@ function MemberCard({
           <div className="flex items-start gap-2 mb-2">
             <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">テーマ</span>
             <div className="flex flex-wrap gap-1">
-              {activity.themes.slice(0, 5).map((t) => (
-                <span key={t} className="text-xs px-2 py-0.5 bg-[#F4F6F9] text-[#4A5568] border border-[#E2E8F0] rounded-full">{t}</span>
+              {activity.themes.map((t, idx) => (
+                <span
+                  key={t}
+                  className={`rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-xs text-[#4A5568] ${idx >= 3 ? "hidden sm:inline-flex" : ""}`}
+                >
+                  {t}
+                </span>
               ))}
+              {hiddenThemeCount > 0 && (
+                <span className="rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-xs text-[#718096] sm:hidden">
+                  +{hiddenThemeCount}
+                </span>
+              )}
             </div>
           </div>
         )}
 
         {/* 総合計画との対応施策 */}
         {policyTags && policyTags.length > 0 && (
-          <div className="flex items-start gap-2 mt-3 pt-3 border-t border-[#E2E8F0]">
+          <div className="mt-3 hidden items-start gap-2 border-t border-[#E2E8F0] pt-3 sm:flex">
             <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">施策</span>
             <div className="flex flex-wrap gap-1">
               {policyTags.map((tag) => (
                 <Link
                   key={tag.policyId}
                   href={`${memberHrefBase?.replace("/members", "/plan") ?? "/chitose/plan"}`}
-                  className={`text-xs px-2 py-0.5 rounded border ${GOAL_BADGE_COLORS[tag.goalId] ?? "bg-gray-100 text-gray-700 border-gray-300"} hover:opacity-80 transition-opacity`}
+                  className={`text-xs px-2 py-0.5 rounded-full border ${GOAL_BADGE_COLORS[tag.goalId] ?? "bg-gray-100 text-gray-700 border-gray-300"} hover:opacity-80 transition-opacity`}
                   title={`総合計画 基本目標${tag.goalId}: ${tag.goalTitle}`}
                 >
                   {tag.policyTitle.length > 16 ? tag.policyTitle.slice(0, 16) + "…" : tag.policyTitle}
@@ -183,7 +209,7 @@ function MemberCard({
         <>
           <button
             onClick={() => setActivityOpen((v) => !v)}
-            className="w-full flex items-center justify-between px-5 py-2.5 bg-[#F4F6F9] border-t border-[#E2E8F0] text-sm text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+            className="w-full flex items-center justify-between border-t border-[#E2E8F0] bg-[#FAFAF8] px-4 py-2.5 text-sm text-[#4A5568] transition-colors hover:bg-[#F5F8FD] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
             aria-expanded={activityOpen}
           >
             <span className="text-xs font-medium">質問履歴を見る</span>
@@ -198,7 +224,7 @@ function MemberCard({
           </button>
 
           {activityOpen && (
-            <div className="border-t border-[#E2E8F0] bg-white px-5 py-4 space-y-4">
+            <div className="space-y-4 border-t border-[#E2E8F0] bg-white px-4 py-4 sm:px-5">
               {activity.sessions.map((s, i) => (
                 <div key={i}>
                   <div className="flex items-center justify-between mb-1.5">
@@ -206,7 +232,7 @@ function MemberCard({
                     {s.council_id > 0 && (
                       <Link
                         href={`${minutesHrefBase}/${s.council_id}`}
-                        className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
+                        className="flex items-center gap-0.5 rounded text-xs text-[#718096] transition-colors hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                       >
                         全文
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
@@ -220,7 +246,7 @@ function MemberCard({
                         {s.council_id > 0 ? (
                           <Link
                             href={`${minutesHrefBase}/${s.council_id}?q=${encodeURIComponent(t)}`}
-                            className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
+                            className="rounded text-[#2A5298] transition-colors hover:text-[#1B3A6B] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                           >
                             {t}
                           </Link>
@@ -289,17 +315,17 @@ export default function MemberList({ members, factions, activity = {}, memberHre
   }, [members, factionFilter, partyFilter, sortKey]);
 
   return (
-    <>
+    <div className="page-shell max-w-5xl">
       {/* フィルター・ソートバー */}
-      <div className="bg-white rounded-lg border border-[#CBD5E0] px-5 py-4 mb-6 shadow-sm">
-        <div className="flex flex-wrap items-end gap-x-6 gap-y-3">
+      <div className="theme-panel mb-4 px-4 py-3 sm:mb-5 sm:px-5 sm:py-4">
+        <div className="grid grid-cols-1 gap-3 sm:flex sm:flex-wrap sm:items-end sm:gap-x-6 sm:gap-y-3">
           {hasParties && (
             <div className="flex flex-col gap-1">
               <label className="text-xs font-medium text-[#4A5568]">政党で絞り込む</label>
               <select
                 value={partyFilter}
                 onChange={(e) => setPartyFilter(e.target.value)}
-                className="text-base border border-[#CBD5E0] rounded px-3 py-1.5 bg-white text-[#1A202C] focus:outline-none focus:ring-2 focus:ring-[#2A5298] focus:border-[#2A5298] cursor-pointer min-w-[9rem]"
+                className="theme-select min-w-0 cursor-pointer px-3 py-2 text-base sm:min-w-[9rem]"
               >
                 <option value="">すべての政党</option>
                 {parties.map((p) => (
@@ -315,7 +341,7 @@ export default function MemberList({ members, factions, activity = {}, memberHre
               <select
                 value={factionFilter}
                 onChange={(e) => setFactionFilter(e.target.value)}
-                className="text-base border border-[#CBD5E0] rounded px-3 py-1.5 bg-white text-[#1A202C] focus:outline-none focus:ring-2 focus:ring-[#2A5298] focus:border-[#2A5298] cursor-pointer min-w-[9rem]"
+                className="theme-select min-w-0 cursor-pointer px-3 py-2 text-base sm:min-w-[9rem]"
               >
                 <option value="">すべての会派</option>
                 {factions.map((f) => (
@@ -330,7 +356,7 @@ export default function MemberList({ members, factions, activity = {}, memberHre
             <select
               value={sortKey}
               onChange={(e) => setSortKey(e.target.value as SortKey)}
-              className="text-base border border-[#CBD5E0] rounded px-3 py-1.5 bg-white text-[#1A202C] focus:outline-none focus:ring-2 focus:ring-[#2A5298] focus:border-[#2A5298] cursor-pointer min-w-[9rem]"
+              className="theme-select min-w-0 cursor-pointer px-3 py-2 text-base sm:min-w-[9rem]"
             >
               <option value="seat">議席番号順</option>
               <option value="party">政党順</option>
@@ -338,14 +364,14 @@ export default function MemberList({ members, factions, activity = {}, memberHre
             </select>
           </div>
 
-          <span className="ml-auto text-base text-[#4A5568] font-medium self-end pb-1">
+          <span className="text-right text-sm text-[#4A5568] font-medium sm:ml-auto sm:self-end sm:pb-1 sm:text-base">
             {filtered.length} 名
           </span>
         </div>
       </div>
 
       {/* カードグリッド */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((member) => {
           const nameKey = member.name.replace(/\s/g, "");
           const memberActivity = activity[nameKey];
@@ -368,12 +394,12 @@ export default function MemberList({ members, factions, activity = {}, memberHre
           <p className="text-base text-[#718096]">該当する議員が見つかりません</p>
           <button
             onClick={() => { setFactionFilter(""); setPartyFilter(""); }}
-            className="mt-3 text-sm text-[#2A5298] hover:text-[#1B3A6B] underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] rounded"
+            className="mt-3 rounded text-sm text-[#2A5298] underline hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
           >
             フィルターをリセットする
           </button>
         </div>
       )}
-    </>
+    </div>
   );
 }

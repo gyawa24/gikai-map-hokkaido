@@ -65,12 +65,12 @@ export default async function CityMembersPage({
           latestYear={latestYear}
           city={city}
         />
-        <div className="max-w-2xl mx-auto">
-          <section className="mb-6">
-            <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">議員一覧</h2>
+        <div className="page-shell max-w-6xl">
+          <section className="mb-4">
+            <h2 className="theme-section-title mb-1 text-2xl">議員一覧</h2>
             <p className="text-base text-[#4A5568] leading-relaxed">議員情報は準備中です。</p>
           </section>
-          <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+          <div className="theme-card px-6 py-8 text-center text-[#718096]">
             現在、議員情報は掲載されていません。
           </div>
         </div>
@@ -87,7 +87,7 @@ export default async function CityMembersPage({
         city={city}
       />
       {minutesUnavailable && (
-        <div className="max-w-2xl mx-auto mb-5 rounded-lg border border-[#E2E8F0] bg-[#F4F6F9] px-4 py-3">
+        <div className="theme-alert page-shell mb-5 max-w-6xl px-4 py-3">
           <p className="text-sm font-semibold text-[#1B3A6B] mb-1">議事録未公開（AIでは見つけられず）</p>
           <p className="text-xs text-[#4A5568] leading-relaxed">
             {minutesUnavailableNote ?? "現時点で議会会議録のオンライン公開を確認できていません。"}
@@ -118,7 +118,7 @@ export default async function CityMembersPage({
       {/* オープンデータ導線（議員名簿 CSV） */}
       <div
         data-no-print="true"
-        className="max-w-2xl mx-auto mt-8 pt-4 border-t border-[#E2E8F0] text-xs text-[#718096] flex items-center justify-end gap-2"
+        className="page-shell mt-6 flex max-w-6xl items-center justify-end gap-2 border-t border-[#E2E8F0] pt-4 text-xs text-[#718096]"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />

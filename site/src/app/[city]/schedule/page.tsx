@@ -62,26 +62,26 @@ export default async function CitySchedulePage({
   }, {});
 
   return (
-    <div>
-      <div className="mb-6">
-        <h2 className="text-lg font-bold text-[#1B3A6B]">行事予定</h2>
+    <div className="page-shell max-w-6xl">
+      <div className="mb-5">
+        <h2 className="theme-section-title text-2xl">行事予定</h2>
         <p className="text-sm text-[#4A5568] mt-1">
           {cityName}議会の直近の行事予定です。
         </p>
       </div>
 
       {events.length === 0 ? (
-        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
+        <div className="theme-card px-6 py-8 text-center text-[#718096]">
           現在、掲載されている行事予定はありません。
         </div>
       ) : (
         Object.entries(groups).map(([label, groupEvents]) => (
           <div key={label} className="mb-6">
-            <div className="text-xs font-semibold text-blue-700 bg-blue-50 rounded-lg px-3 py-1.5 mb-3 inline-block">
+            <div className="theme-pill-soft mb-3 inline-flex text-blue-700">
               {label}
             </div>
 
-            <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+            <div className="theme-card overflow-hidden">
               {groupEvents.map((ev, i) => {
                 const dow = extractDayOfWeek(ev.date);
                 const lines = formatContent(ev.content);

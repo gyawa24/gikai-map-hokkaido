@@ -102,7 +102,7 @@ export default async function CityMemberDetailPage({
   const memberSearchQ = encodeURIComponent(member.name);
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="page-shell max-w-6xl">
       {/* パンくず */}
       <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
         <Link href={`/${city}`} className="hover:text-[#1B3A6B] transition-colors">
@@ -113,23 +113,23 @@ export default async function CityMemberDetailPage({
       </nav>
 
       {/* プロフィールカード */}
-      <section id="profile" className="bg-white rounded-lg border border-[#CBD5E0] shadow-sm p-6 mb-4 scroll-mt-20">
+      <section id="profile" className="theme-card mb-4 scroll-mt-20 p-6">
         <div className="flex items-start gap-5">
           {member.photo_url && (
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={member.photo_url}
               alt={`${member.name}議員`}
-              className="w-28 h-40 object-cover rounded-lg border border-[#E2E8F0] shadow-sm shrink-0"
+              className="h-40 w-28 shrink-0 rounded-[20px] border border-[#E2E8F0] object-cover shadow-sm"
             />
           )}
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-1">
-              <span className="text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded px-2 py-0.5">
+              <span className="theme-pill-soft text-[#2A5298]">
                 {member.seat_number}番
               </span>
               {memberActivity && (
-                <span className="text-xs font-medium text-[#2A5298] bg-[#E8EEF7] rounded-full px-2 py-0.5">
+                <span className="theme-pill-soft text-[#2A5298]">
                   質問 {memberActivity.session_count}回
                 </span>
               )}
@@ -158,7 +158,7 @@ export default async function CityMemberDetailPage({
                 会派
               </dt>
               <dd>
-                <span className="text-sm text-[#1A202C] bg-[#F4F6F9] border border-[#E2E8F0] rounded px-2 py-0.5">
+                <span className="theme-pill-soft text-sm text-[#1A202C]">
                   {member.faction}
                 </span>
               </dd>
@@ -173,7 +173,7 @@ export default async function CityMemberDetailPage({
                 {member.committees.map((c) => (
                   <span
                     key={c}
-                    className="text-sm text-[#4A5568] bg-[#F4F6F9] border border-[#E2E8F0] rounded px-2 py-0.5"
+                    className="theme-pill-soft text-sm text-[#4A5568]"
                   >
                     {c}
                   </span>
@@ -197,7 +197,7 @@ export default async function CityMemberDetailPage({
       {/* セクションナビゲーション */}
       <nav
         aria-label="議員ページ内ナビゲーション"
-        className="flex gap-1 mb-4 bg-white rounded-lg border border-[#E2E8F0] p-1 text-sm"
+        className="theme-card mb-4 flex gap-1 p-1 text-sm"
       >
         <a
           href="#profile"
@@ -221,13 +221,13 @@ export default async function CityMemberDetailPage({
 
       {/* シェア・検索セクション */}
       <section id="share" className="mb-5 scroll-mt-20">
-        <div className="bg-[#E8EEF7] border border-[#C5D0E6] rounded-lg px-4 py-3 mb-2 flex items-center justify-between gap-3">
+        <div className="theme-panel mb-2 flex items-center justify-between gap-3 px-4 py-3">
           <p className="text-sm text-[#1B3A6B]">
             <span className="font-semibold">{member.name}</span> 議員の発言を横断検索
           </p>
           <Link
             href={`/search?q=${memberSearchQ}`}
-            className="shrink-0 text-sm font-medium px-4 py-1.5 bg-[#1B3A6B] text-white rounded-lg hover:bg-[#2A5298] transition-colors flex items-center gap-1.5"
+            className="theme-button shrink-0 px-4 py-1.5 text-sm font-medium"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>

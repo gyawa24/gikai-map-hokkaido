@@ -17,3 +17,5 @@ mcp-server/_restricted-index.json
 # Restricted municipality raw data (license unclear — keep local only)
 data/sapporo/
 site/data/sapporo/
+.vercel
+.env*.local
