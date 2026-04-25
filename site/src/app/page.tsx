@@ -108,12 +108,6 @@ export default function HomePage() {
   return (
     <div className="page-shell space-y-6">
       <section className="theme-panel rounded-[30px] px-4 py-5 sm:px-6 sm:py-6">
-        <div className="mb-3 flex flex-wrap items-center gap-2">
-          <span className="theme-pill-soft px-4 py-2 text-[11px] font-black tracking-[0.12em] text-[#334155]">LOCAL COUNCIL INFO</span>
-          <span className="theme-pill-soft px-4 py-2 text-sm font-black text-[#1B3A6B]">地方議会ドットコム</span>
-          <span className="rounded-lg bg-[#FFF3BF] px-3 py-2 text-base font-medium text-[#6B4C11]">β</span>
-        </div>
-
         <h1 className="text-[2.2rem] font-black leading-[1.1] tracking-tight text-[#111827] sm:text-[4rem]">
           地方議会の「なか」を、
           <br />
@@ -125,29 +119,27 @@ export default function HomePage() {
         </p>
 
         <div className="mt-4 flex flex-wrap gap-2">
-          <span className="theme-pill-soft px-4 py-2 text-sm">北海道</span>
-          <span className="theme-pill-soft px-4 py-2 text-sm">議員</span>
-          <span className="theme-pill-soft px-4 py-2 text-sm">議事録</span>
-          <span className="theme-pill-soft px-4 py-2 text-sm">議決</span>
-          <span className="theme-pill-soft px-4 py-2 text-sm">検索できます</span>
+          <Link href="/search" className="theme-button theme-button-accent px-4 py-2 text-sm">
+            横断検索
+          </Link>
+          <a href="#municipalities" className="theme-button px-4 py-2 text-sm">
+            市町村一覧
+          </a>
         </div>
       </section>
 
       <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         {[
-          { label: "対象自治体", value: stats.municipalityCount.toLocaleString(), unit: "", tone: "bg-[#E8EEF7] text-[#1B3A6B]" },
-          { label: "議員", value: stats.memberCount.toLocaleString(), unit: "名", tone: "bg-[#FFF3BF] text-[#6B4C11]" },
-          { label: "会議録", value: stats.minutesCount.toLocaleString(), unit: "件", tone: "bg-[#DDF8E9] text-[#16624A]" },
-          { label: "議題", value: stats.agendaCount.toLocaleString(), unit: "件", tone: "bg-[#E3F2FF] text-[#18507C]" },
+          { label: "対象自治体", value: stats.municipalityCount.toLocaleString(), unit: "", tone: "text-[#1B3A6B]" },
+          { label: "議員", value: stats.memberCount.toLocaleString(), unit: "名", tone: "text-[#6B4C11]" },
+          { label: "会議録", value: stats.minutesCount.toLocaleString(), unit: "件", tone: "text-[#16624A]" },
+          { label: "議題", value: stats.agendaCount.toLocaleString(), unit: "件", tone: "text-[#18507C]" },
         ].map((item) => (
-          <div key={item.label} className="theme-card rounded-[22px] px-4 py-4 sm:px-4 sm:py-4">
-            <div className={`mb-2 inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm font-black sm:h-10 sm:w-10 ${item.tone}`}>
-              {item.label.slice(0, 1)}
-            </div>
-            <p className="text-[13px] font-black text-[#475569] sm:text-sm">{item.label}</p>
-            <p className="mt-1 flex items-end gap-1 text-[1.8rem] font-black leading-none text-[#111827] sm:text-[2.1rem]">
+          <div key={item.label} className="theme-card rounded-[20px] px-4 py-4 sm:px-5 sm:py-4">
+            <p className="text-[13px] font-black text-[#5B667A] sm:text-sm">{item.label}</p>
+            <p className="mt-2 flex items-end gap-1 text-[1.95rem] font-black leading-none text-[#111827] sm:text-[2.2rem]">
               {item.value}
-              {item.unit && <span className="pb-1 text-base text-[#475569] sm:text-lg">{item.unit}</span>}
+              {item.unit && <span className={`pb-1 text-base sm:text-lg ${item.tone}`}>{item.unit}</span>}
             </p>
           </div>
         ))}
