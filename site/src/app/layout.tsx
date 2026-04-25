@@ -62,9 +62,6 @@ export const metadata: Metadata = {
     images: [DEFAULT_OG_IMAGE],
   },
   manifest: "/site.webmanifest",
-  icons: {
-    icon: "/favicon.ico",
-  },
   robots: {
     index: true,
     follow: true,
