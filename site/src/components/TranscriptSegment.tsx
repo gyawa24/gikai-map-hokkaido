@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useEffectEvent, useRef } from "react";
 import type { SessionSegment } from "@/types/session";
 import type { Member } from "@/types/member";
 import SegmentDetail from "./SegmentDetail";
@@ -34,14 +34,21 @@ export default function TranscriptSegment({
   const speakerLabel = seg.detail ? resolveSpeaker(seg.detail.speaker, members) : seg.label;
 
   // #seg-N で直接来たら該当セグメントを開いてスクロール
+  const handleHashNavigation = useEffectEvent(() => {
+    if (typeof window === "undefined") return;
+    if (window.location.hash !== `#${anchorId}`) return;
+    setBodyOpen(true);
+    requestAnimationFrame(() => {
+      ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (window.location.hash === `#${anchorId}`) {
-      setBodyOpen(true);
-      requestAnimationFrame(() => {
-        ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    }
+    const onHashChange = () => handleHashNavigation();
+    onHashChange();
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
   }, [anchorId]);
 
   const buildPermalink = () => {

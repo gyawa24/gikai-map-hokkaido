@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import CityHeader from "./CityHeader";
+import { AI_SEARCH_NAV_LABEL, AI_SEARCH_PATH } from "@/lib/aiSearch";
 import { getMunicipalities } from "@/lib/municipalities";
 
 export type NavItem = { href: string; label: string };
@@ -26,6 +27,7 @@ type MasterNavItem = {
   pageDir: string;
   dataFile?: string;
   cityOnly?: string[];
+  href?: string;
 };
 
 const MASTER_NAV: MasterNavItem[] = [
@@ -50,6 +52,7 @@ const MASTER_NAV: MasterNavItem[] = [
   },
   { key: "election", label: "選挙結果", pageDir: "election", dataFile: "election.json" },
   { key: "themes", label: "テーマ別", pageDir: "themes", dataFile: "members_activity.json" },
+  { key: "ai-search", label: AI_SEARCH_NAV_LABEL, pageDir: "", href: AI_SEARCH_PATH },
 ];
 
 // Per-city label overrides for localized names
@@ -89,6 +92,8 @@ function computeCityNav(cityKey: string): NavItem[] {
     // Restrict to specific cities
     if (item.cityOnly && !item.cityOnly.includes(cityKey)) return false;
 
+    if (item.href) return true;
+
     // Check page route exists (prevents 404)
     if (!pageExists(cityKey, item.pageDir)) return false;
 
@@ -97,7 +102,7 @@ function computeCityNav(cityKey: string): NavItem[] {
 
     return true;
   }).map((item) => ({
-    href: item.key === "members" ? baseHref : `${baseHref}/${item.key}`,
+    href: item.href ?? (item.key === "members" ? baseHref : `${baseHref}/${item.key}`),
     label: overrides[item.key] ?? item.label,
   }));
 }

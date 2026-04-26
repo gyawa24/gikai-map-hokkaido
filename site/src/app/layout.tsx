@@ -4,6 +4,7 @@ import { Noto_Sans_JP } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import CityHeaderServer from "@/components/CityHeaderServer";
 import { ToastProvider } from "@/components/Toast";
+import { AI_SEARCH_LABEL, AI_SEARCH_PATH } from "@/lib/aiSearch";
 import { getSearchIndexGeneratedAt, formatJaDate } from "@/lib/dataFreshness";
 import {
   DEFAULT_DESCRIPTION,
@@ -104,6 +105,9 @@ export default function RootLayout({
                   <Link href="/search" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
                     横断検索
                   </Link>
+                  <Link href={AI_SEARCH_PATH} className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
+                    {AI_SEARCH_LABEL}
+                  </Link>
                 </div>
               </div>
             </div>
@@ -127,6 +131,7 @@ export default function RootLayout({
                     <div className="mt-4 flex flex-wrap gap-2 text-xs font-bold text-[#c7d5eb]">
                       <Link href="/" className="theme-pill-soft border-white/15 bg-white/10 text-white">収録自治体一覧</Link>
                       <Link href="/news" className="theme-pill-soft border-white/15 bg-white/10 text-white">お知らせ</Link>
+                      <Link href={AI_SEARCH_PATH} className="theme-pill-soft border-white/15 bg-white/10 text-white">{AI_SEARCH_LABEL}</Link>
                       <Link href="/privacy" className="theme-pill-soft border-white/15 bg-white/10 text-white">プライバシーポリシー</Link>
                       <Link href="/terms" className="theme-pill-soft border-white/15 bg-white/10 text-white">利用規約</Link>
                     </div>

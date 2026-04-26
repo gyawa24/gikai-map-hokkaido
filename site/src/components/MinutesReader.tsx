@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useEffectEvent, useRef, useMemo } from "react";
 import { useToast } from "./Toast";
 import type { MinutesSession, MinuteItem } from "@/types/minutes";
 import LikeButton from "./LikeButton";
@@ -383,29 +383,27 @@ export default function MinutesReader({ session, cityName, slug, activeTopic = n
   const [activeScheduleIndex, setActiveScheduleIndex] = useState(0);
 
   // 引用URLで来たとき (#minute-{scheduleId}-{minuteId}) は対応する日程タブを開いてスクロールする
-  useEffect(() => {
+  const handleHashNavigation = useEffectEvent(() => {
     if (typeof window === "undefined") return;
     const m = window.location.hash.match(/^#minute-(\d+)-(\d+)/);
     if (!m) return;
     const targetScheduleId = Number(m[1]);
     const idx = session.schedules.findIndex((s) => s.schedule_id === targetScheduleId);
-    if (idx !== -1) {
-      setActiveScheduleIndex(idx);
-      // タブ切替後の DOM 反映を待ってスクロール
-      requestAnimationFrame(() => {
-        const el = document.getElementById(window.location.hash.slice(1));
-        el?.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    }
-  }, [session.schedules]);
+    if (idx === -1) return;
+    setActiveScheduleIndex(idx);
+    requestAnimationFrame(() => {
+      const el = document.getElementById(window.location.hash.slice(1));
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
 
-  const activeSchedule = session.schedules[activeScheduleIndex];
-  const groups = buildAgendaGroups(activeSchedule.minutes);
-  const citationContext = {
-    cityName,
-    councilName: session.name,
-    scheduleName: parseScheduleName(activeSchedule.name),
-  };
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const onHashChange = () => handleHashNavigation();
+    onHashChange();
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
 
   const filter = activeTopic ?? query.trim();
 
@@ -420,14 +418,20 @@ export default function MinutesReader({ session, cityName, slug, activeTopic = n
     });
   }, [filter, activeTopic, query, session.schedules]);
 
-  // クエリ/トピックが変わったとき、最初にマッチするタブへ自動ジャンプ
-  useEffect(() => {
-    if (!filter || !matchCountsPerTab) return;
+  const effectiveActiveScheduleIndex = useMemo(() => {
+    if (!filter || !matchCountsPerTab) return activeScheduleIndex;
     const firstMatch = matchCountsPerTab.findIndex((c) => c > 0);
-    if (firstMatch !== -1 && matchCountsPerTab[activeScheduleIndex] === 0) {
-      setActiveScheduleIndex(firstMatch);
-    }
-  }, [filter]); // eslint-disable-line react-hooks/exhaustive-deps
+    if (firstMatch === -1) return activeScheduleIndex;
+    return matchCountsPerTab[activeScheduleIndex] === 0 ? firstMatch : activeScheduleIndex;
+  }, [activeScheduleIndex, filter, matchCountsPerTab]);
+
+  const activeSchedule = session.schedules[effectiveActiveScheduleIndex];
+  const groups = buildAgendaGroups(activeSchedule.minutes);
+  const citationContext = {
+    cityName,
+    councilName: session.name,
+    scheduleName: parseScheduleName(activeSchedule.name),
+  };
 
   // フィルター適用後のグループ
   const visibleGroups = filter
