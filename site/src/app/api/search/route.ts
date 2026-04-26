@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
-import { createClient } from "@supabase/supabase-js";
 import { getMunicipalities } from "@/lib/municipalities";
 import {
   buildExpansionSummary,
@@ -223,107 +222,6 @@ function getCitySlugByName(): Record<string, string> {
   return _citySlugByName;
 }
 
-const minutesMeetingCache = new Map<string, Record<string, number>>();
-function getMinutesMeetingMap(slug: string): Record<string, number> {
-  const cached = minutesMeetingCache.get(slug);
-  if (cached) return cached;
-
-  const candidates = [
-    path.join(process.cwd(), "data", slug, "minutes", "index.json"),
-    path.join(process.cwd(), "data", slug, "index.json"),
-  ];
-
-  for (const fp of candidates) {
-    try {
-      const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as Array<Record<string, unknown>>;
-      const map = Object.fromEntries(
-        index
-          .filter((entry) => entry.name && typeof entry.council_id === "number")
-          .map((entry) => [entry.name as string, entry.council_id as number])
-      );
-      minutesMeetingCache.set(slug, map);
-      return map;
-    } catch {
-      // try next
-    }
-  }
-
-  minutesMeetingCache.set(slug, {});
-  return {};
-}
-
-function scoreAiSource(source: AiSearchSource, query: string, tokenGroups: SearchTokenGroup[]): number {
-  const haystack = [
-    source.municipality,
-    source.meeting_name,
-    source.agenda_title ?? "",
-    source.speaker_name ?? source.speaker,
-    source.content,
-  ].join(" ");
-  let score = (source.similarity ?? 0) * 100;
-
-  if (includesNormalized(haystack, query)) score += 12;
-  if (source.agenda_title && includesNormalized(source.agenda_title, query)) score += 6;
-  if (includesNormalized(source.meeting_name, query)) score += 4;
-
-  for (const group of tokenGroups) {
-    score += Math.round(bestGroupMatch(haystack, group, "includes") * 4);
-    if (source.agenda_title) {
-      score += Math.round(bestGroupMatch(source.agenda_title, group, "includes") * 6);
-    }
-    score += Math.round(bestGroupMatch(source.meeting_name, group, "includes") * 4);
-  }
-
-  return score;
-}
-
-function enrichAiSource(source: AiSearchSource): AiSearchSource {
-  if (source.href) return source;
-  const slug = source.slug ?? getCitySlugByName()[source.municipality];
-  if (!slug) return source;
-
-  const councilId = source.council_id ?? getMinutesMeetingMap(slug)[source.meeting_name];
-  if (!councilId) return { ...source, slug };
-
-  const hrefBase = `/${slug}/minutes/${councilId}`;
-  const href =
-    typeof source.schedule_id === "number" && typeof source.minute_id === "number"
-      ? `${hrefBase}#minute-${source.schedule_id}-${source.minute_id}`
-      : hrefBase;
-
-  return { ...source, slug, council_id: councilId, href };
-}
-
-function selectAiSources(sources: AiSearchSource[], query: string, tokenGroups: SearchTokenGroup[]): AiSearchSource[] {
-  const scored = sources
-    .map((source) => {
-      const enriched = enrichAiSource(source);
-      return { source: enriched, score: scoreAiSource(enriched, query, tokenGroups) };
-    })
-    .sort((a, b) => b.score - a.score);
-
-  const seenContents = new Set<string>();
-  const selected: AiSearchSource[] = [];
-  const meetingCounts = new Map<string, number>();
-
-  const take = (maxPerMeeting: number) => {
-    for (const entry of scored) {
-      if (selected.length >= AI_SOURCE_COUNT) break;
-      const meetingKey = `${entry.source.municipality}::${entry.source.meeting_name}`;
-      const contentKey = normalizeForSearch(entry.source.content).slice(0, 180);
-      if (seenContents.has(contentKey)) continue;
-      if ((meetingCounts.get(meetingKey) ?? 0) >= maxPerMeeting) continue;
-      seenContents.add(contentKey);
-      meetingCounts.set(meetingKey, (meetingCounts.get(meetingKey) ?? 0) + 1);
-      selected.push(entry.source);
-    }
-  };
-
-  take(1);
-  if (selected.length < AI_SOURCE_COUNT) take(2);
-  return selected;
-}
-
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
@@ -355,40 +253,44 @@ export type MemberHit = {
   committees: string[];
 };
 
-// ---------------------------------------------------------------------------
-// GET handler
-// ---------------------------------------------------------------------------
-export async function GET(request: NextRequest) {
-  const ip = getClientIP(request);
-  if (!checkSearchRateLimit(ip)) {
-    return NextResponse.json(
-      { error: "検索回数の上限に達しました。少し待ってから再度お試しください。", sessionResults: [], memberResults: [] },
-      { status: 429 }
-    );
-  }
+type SearchResponseBody = {
+  sessionResults: SessionHit[];
+  memberResults: MemberHit[];
+  sessionTotal: number;
+  memberTotal: number;
+  truncated: boolean;
+  expandedTerms?: string[];
+  exactExpandedTerms?: string[];
+  relatedExpandedTerms?: string[];
+  searchSuggestions?: string[];
+};
 
-  const q = (request.nextUrl.searchParams.get("q") ?? "").slice(0, 500);
-  const tokens = tokenize(q);
+type SearchQueryOptions = {
+  municipality?: string | null;
+  maxResults?: number;
+  includeMembers?: boolean;
+};
+
+function runSearchQuery(query: string, options: SearchQueryOptions = {}): SearchResponseBody {
+  const tokens = tokenize(query);
   const tokenGroups = buildTokenGroups(tokens);
   const expansionSummary = buildExpansionSummary(tokenGroups);
   const expandedTerms = Array.from(new Set([
     ...expansionSummary.exactTerms,
     ...expansionSummary.relatedTerms,
   ])).slice(0, 16);
-  const searchSuggestions = buildQuerySuggestions(q, tokenGroups);
+  const searchSuggestions = buildQuerySuggestions(query, tokenGroups);
 
   if (!tokens.length) {
-    return NextResponse.json({ sessionResults: [], memberResults: [] });
+    return { sessionResults: [], memberResults: [], sessionTotal: 0, memberTotal: 0, truncated: false };
   }
 
   const dataRoot = path.join(process.cwd(), "data");
   const cityMap = getCityMap();
-  const allCities = Object.keys(cityMap);
+  const scopedSlug = options.municipality ? getCitySlugByName()[options.municipality] : null;
+  const allCities = scopedSlug ? [scopedSlug] : Object.keys(cityMap);
   const scoredSessionResults: Array<{ score: number; item: SessionHit }> = [];
 
-  // -----------------------------------------------------------------------
-  // 会議録・速報（sessions/ がある全市）
-  // -----------------------------------------------------------------------
   for (const city of allCities) {
     const indexPath = path.join(dataRoot, city, "sessions", "index.json");
     if (!fs.existsSync(indexPath)) continue;
@@ -430,7 +332,7 @@ export async function GET(request: NextRequest) {
             };
             scoredSessionResults.push({
               score: computeSessionScore({
-                query: q,
+                query,
                 tokenGroups,
                 title: item.title,
                 committee: item.committee,
@@ -466,7 +368,7 @@ export async function GET(request: NextRequest) {
         };
         scoredSessionResults.push({
           score: computeSessionScore({
-            query: q,
+            query,
             tokenGroups,
             title: item.title,
             committee: item.committee,
@@ -482,11 +384,6 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // -----------------------------------------------------------------------
-  // 公式議事録（build 時生成の _search-index.json から議題単位で検索）
-  // Vercel Function 250MB 制限の都合、議事録本文を Function に含められない
-  // ため、scripts/build-search-index.mjs で生成した軽量 index を使う。
-  // -----------------------------------------------------------------------
   const seenMinutes = new Set<string>();
   interface AgendaEntry {
     city: string;
@@ -510,6 +407,7 @@ export async function GET(request: NextRequest) {
       searchIndex = { agendas: [] };
     }
     for (const a of searchIndex.agendas) {
+      if (scopedSlug && a.city !== scopedSlug) continue;
       const haystack = `${a.agenda_title} ${a.text}`;
       if (!matchesAll(haystack, tokenGroups)) continue;
       const minuteKey = `${a.city}_${a.council_id}`;
@@ -522,7 +420,7 @@ export async function GET(request: NextRequest) {
         committee: a.agenda_title || "議題",
         href:
           a.first_minute_id !== null
-            ? `/${a.city}/minutes/${a.council_id}?q=${encodeURIComponent(q)}`
+            ? `/${a.city}/minutes/${a.council_id}?q=${encodeURIComponent(query)}`
             : `/${a.city}/minutes/${a.council_id}`,
         segIndex: a.schedule_index,
         label: a.schedule_name,
@@ -533,7 +431,7 @@ export async function GET(request: NextRequest) {
       };
       scoredSessionResults.push({
         score: computeSessionScore({
-          query: q,
+          query,
           tokenGroups,
           title: item.title,
           committee: item.committee,
@@ -549,9 +447,6 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // -----------------------------------------------------------------------
-  // enriched議事録（index.jsonがない市のenriched/のみ）
-  // -----------------------------------------------------------------------
   interface EnrichedDoc {
     council_id: number;
     name: string;
@@ -601,7 +496,7 @@ export async function GET(request: NextRequest) {
       };
       scoredSessionResults.push({
         score: computeSessionScore({
-          query: q,
+          query,
           tokenGroups,
           title: item.title,
           committee: item.committee,
@@ -617,9 +512,6 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // -----------------------------------------------------------------------
-  // 議決結果（decisions.json がある全市）
-  // -----------------------------------------------------------------------
   for (const city of allCities) {
     const decisionsPath = path.join(dataRoot, city, "decisions.json");
     if (!fs.existsSync(decisionsPath)) continue;
@@ -646,7 +538,7 @@ export async function GET(request: NextRequest) {
         };
         scoredSessionResults.push({
           score: computeSessionScore({
-            query: q,
+            query,
             tokenGroups,
             title: item.title,
             committee: item.committee,
@@ -662,83 +554,82 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // -----------------------------------------------------------------------
-  // 議員検索（members.json がある全市）
-  // -----------------------------------------------------------------------
   const scoredMemberResults: Array<{ score: number; item: MemberHit }> = [];
-  for (const city of allCities) {
-    const cityName = cityMap[city];
-    const membersPath = path.join(dataRoot, city, "members.json");
-    if (fs.existsSync(membersPath)) {
-      let list: Array<Record<string, unknown>>;
-      try { list = JSON.parse(fs.readFileSync(membersPath, "utf-8")); } catch { continue; }
-      if (!Array.isArray(list)) continue;
-      for (const m of list) {
-        const committees = Array.isArray(m.committees) ? m.committees.filter((c): c is string => typeof c === "string") : [];
-        const searchText = [m.name ?? "", m.furigana ?? "", m.party ?? "", m.faction ?? "", ...committees].join(" ");
-        if (matchesAll(searchText, tokenGroups)) {
-          const item: MemberHit = {
-            city,
-            cityName,
-            href: `/${city}`,
-            name: (m.name as string) ?? "",
-            furigana: (m.furigana as string) ?? "",
-            party: (m.party as string) ?? "",
-            faction: (m.faction as string) ?? "",
-            committees,
-          };
-          scoredMemberResults.push({
-            score: computeMemberScore({
-              query: q,
-              tokenGroups,
-              name: item.name,
-              furigana: item.furigana,
-              party: item.party,
-              faction: item.faction,
-              committees: item.committees,
-            }),
-            item,
-          });
+  if (options.includeMembers !== false) {
+    for (const city of allCities) {
+      const cityName = cityMap[city];
+      const membersPath = path.join(dataRoot, city, "members.json");
+      if (fs.existsSync(membersPath)) {
+        let list: Array<Record<string, unknown>>;
+        try { list = JSON.parse(fs.readFileSync(membersPath, "utf-8")); } catch { continue; }
+        if (!Array.isArray(list)) continue;
+        for (const m of list) {
+          const committees = Array.isArray(m.committees) ? m.committees.filter((c): c is string => typeof c === "string") : [];
+          const searchText = [m.name ?? "", m.furigana ?? "", m.party ?? "", m.faction ?? "", ...committees].join(" ");
+          if (matchesAll(searchText, tokenGroups)) {
+            const item: MemberHit = {
+              city,
+              cityName,
+              href: `/${city}`,
+              name: (m.name as string) ?? "",
+              furigana: (m.furigana as string) ?? "",
+              party: (m.party as string) ?? "",
+              faction: (m.faction as string) ?? "",
+              committees,
+            };
+            scoredMemberResults.push({
+              score: computeMemberScore({
+                query,
+                tokenGroups,
+                name: item.name,
+                furigana: item.furigana,
+                party: item.party,
+                faction: item.faction,
+                committees: item.committees,
+              }),
+              item,
+            });
+          }
         }
-      }
-    } else {
-      const electionPath = path.join(dataRoot, city, "election.json");
-      if (!fs.existsSync(electionPath)) continue;
-      let data: Record<string, unknown>;
-      try { data = JSON.parse(fs.readFileSync(electionPath, "utf-8")); } catch { continue; }
-      const candidates = (data.candidates as Array<Record<string, unknown>>) ?? [];
-      for (const c of candidates) {
-        if ((c.result as string) !== "当選") continue;
-        const searchText = [c.name ?? "", c.furigana ?? "", c.party ?? ""].join(" ");
-        if (matchesAll(searchText, tokenGroups)) {
-          const item: MemberHit = {
-            city,
-            cityName,
-            href: `/${city}`,
-            name: (c.name as string) ?? "",
-            furigana: (c.furigana as string) ?? "",
-            party: (c.party as string) ?? "",
-            faction: (c.party as string) ?? "",
-            committees: [],
-          };
-          scoredMemberResults.push({
-            score: computeMemberScore({
-              query: q,
-              tokenGroups,
-              name: item.name,
-              furigana: item.furigana,
-              party: item.party,
-              faction: item.faction,
-              committees: item.committees,
-            }),
-            item,
-          });
+      } else {
+        const electionPath = path.join(dataRoot, city, "election.json");
+        if (!fs.existsSync(electionPath)) continue;
+        let data: Record<string, unknown>;
+        try { data = JSON.parse(fs.readFileSync(electionPath, "utf-8")); } catch { continue; }
+        const candidates = (data.candidates as Array<Record<string, unknown>>) ?? [];
+        for (const c of candidates) {
+          if ((c.result as string) !== "当選") continue;
+          const searchText = [c.name ?? "", c.furigana ?? "", c.party ?? ""].join(" ");
+          if (matchesAll(searchText, tokenGroups)) {
+            const item: MemberHit = {
+              city,
+              cityName,
+              href: `/${city}`,
+              name: (c.name as string) ?? "",
+              furigana: (c.furigana as string) ?? "",
+              party: (c.party as string) ?? "",
+              faction: (c.party as string) ?? "",
+              committees: [],
+            };
+            scoredMemberResults.push({
+              score: computeMemberScore({
+                query,
+                tokenGroups,
+                name: item.name,
+                furigana: item.furigana,
+                party: item.party,
+                faction: item.faction,
+                committees: item.committees,
+              }),
+              item,
+            });
+          }
         }
       }
     }
   }
 
-  const MAX_RESULTS = 200;
+  const maxResults = options.maxResults ?? 200;
   const sessionResults = scoredSessionResults
     .sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
@@ -755,38 +646,74 @@ export async function GET(request: NextRequest) {
     })
     .map((entry) => entry.item);
 
-  return NextResponse.json({
-    sessionResults: sessionResults.slice(0, MAX_RESULTS),
-    memberResults: memberResults.slice(0, MAX_RESULTS),
+  return {
+    sessionResults: sessionResults.slice(0, maxResults),
+    memberResults: memberResults.slice(0, maxResults),
     sessionTotal: sessionResults.length,
     memberTotal: memberResults.length,
-    truncated: sessionResults.length > MAX_RESULTS || memberResults.length > MAX_RESULTS,
+    truncated: sessionResults.length > maxResults || memberResults.length > maxResults,
     expandedTerms,
     exactExpandedTerms: expansionSummary.exactTerms.slice(0, 12),
     relatedExpandedTerms: expansionSummary.relatedTerms.slice(0, 12),
     searchSuggestions,
-  });
+  };
+}
+
+function buildAiSourcesFromHits(hits: SessionHit[]): AiSearchSource[] {
+  const seen = new Set<string>();
+  const sources: AiSearchSource[] = [];
+
+  for (const hit of hits) {
+    if (sources.length >= AI_SOURCE_COUNT) break;
+    const agendaTitle = [hit.committee, hit.label].filter(Boolean).join(" / ");
+    const dedupeKey = `${hit.href}::${normalizeForSearch(hit.context).slice(0, 180)}`;
+    if (seen.has(dedupeKey)) continue;
+    seen.add(dedupeKey);
+    sources.push({
+      id: hit.id,
+      municipality: hit.cityName,
+      slug: hit.city,
+      meeting_name: hit.title,
+      agenda_title: agendaTitle || undefined,
+      content: hit.context,
+      href: hit.href,
+    });
+  }
+
+  return sources;
+}
+
+// ---------------------------------------------------------------------------
+// GET handler
+// ---------------------------------------------------------------------------
+export async function GET(request: NextRequest) {
+  const ip = getClientIP(request);
+  if (!checkSearchRateLimit(ip)) {
+    return NextResponse.json(
+      { error: "検索回数の上限に達しました。少し待ってから再度お試しください。", sessionResults: [], memberResults: [] },
+      { status: 429 }
+    );
+  }
+
+  const q = (request.nextUrl.searchParams.get("q") ?? "").slice(0, 500);
+  return NextResponse.json(runSearchQuery(q));
 }
 
 // ---------------------------------------------------------------------------
 // POST handler — AI 検索
-// 議事録 embeddings (Supabase pgvector) を Gemini で埋め込んだクエリと照合し、
-// 上位 5 件を Groq llama-3.3-70b-versatile に渡して根拠付き回答を生成する。
+// 通常検索で候補を抽出し、その抜粋だけを LLM に渡して回答を生成する。
 // ---------------------------------------------------------------------------
 export type AiSearchSource = {
-  id?: number;
+  id?: number | string;
   municipality: string;
   slug?: string;
   meeting_name: string;
-  council_id?: number;
-  schedule_id?: number;
-  minute_id?: number;
-  speaker: string;
+  speaker?: string;
   speaker_name?: string;
   speaker_role?: string;
   agenda_title?: string;
   content: string;
-  similarity: number;
+  similarity?: number;
   href?: string;
 };
 
@@ -796,8 +723,8 @@ export type AiSearchResponse = {
 };
 
 const AI_MAX_QUERY_LEN = 500;
-const AI_RPC_MATCH_COUNT = 12;
 const AI_SOURCE_COUNT = 6;
+const AI_CANDIDATE_COUNT = 24;
 
 export async function POST(request: NextRequest) {
   const ip = getClientIP(request);
@@ -820,73 +747,22 @@ export async function POST(request: NextRequest) {
   if (!query) {
     return NextResponse.json({ error: "質問を入力してください。" }, { status: 400 });
   }
-  const tokenGroups = buildTokenGroups(tokenize(query));
 
-  const {
-    GEMINI_API_KEY,
-    SUPABASE_URL,
-    SUPABASE_SERVICE_ROLE_KEY,
-    GROQ_API_KEY,
-  } = process.env;
-  if (!GEMINI_API_KEY || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY || !GROQ_API_KEY) {
+  const { GROQ_API_KEY } = process.env;
+  if (!GROQ_API_KEY) {
     return NextResponse.json(
       { error: "AI検索の環境変数が未設定です。" },
       { status: 500 }
     );
   }
 
-  // 1) クエリの埋め込み
-  let queryEmbedding: number[] | null = null;
-  try {
-    const r = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${GEMINI_API_KEY}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "models/gemini-embedding-001",
-          content: { parts: [{ text: query }] },
-          taskType: "RETRIEVAL_QUERY",
-          outputDimensionality: 768,
-        }),
-      }
-    );
-    if (!r.ok) {
-      return NextResponse.json(
-        { error: `Gemini embedding error: ${r.status}` },
-        { status: 502 }
-      );
-    }
-    const j = (await r.json()) as { embedding?: { values?: number[] } };
-    queryEmbedding = j.embedding?.values ?? null;
-  } catch (e) {
-    return NextResponse.json(
-      { error: `Gemini呼び出しに失敗しました: ${(e as Error).message}` },
-      { status: 502 }
-    );
-  }
-  if (!queryEmbedding || queryEmbedding.length === 0) {
-    return NextResponse.json({ error: "クエリの埋め込みに失敗しました。" }, { status: 502 });
-  }
-
-  // 2) Supabase pgvector で類似検索
-  const sb = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
-    auth: { persistSession: false },
+  const search = runSearchQuery(query, {
+    municipality,
+    maxResults: AI_CANDIDATE_COUNT,
+    includeMembers: false,
   });
-  const { data: matches, error: rpcErr } = await sb.rpc("match_council_chunks", {
-    query_embedding: queryEmbedding,
-    match_count: AI_RPC_MATCH_COUNT,
-    filter_municipality: municipality,
-  });
-  if (rpcErr) {
-    return NextResponse.json(
-      { error: `Supabase検索エラー: ${rpcErr.message}` },
-      { status: 500 }
-    );
-  }
-  const sources = selectAiSources((matches as AiSearchSource[] | null) ?? [], query, tokenGroups);
+  const sources = buildAiSourcesFromHits(search.sessionResults);
 
-  // 3) Groq で根拠付き回答を生成
   if (sources.length === 0) {
     return NextResponse.json({
       answer: "関連する議事録が見つかりませんでした。",
@@ -897,7 +773,7 @@ export async function POST(request: NextRequest) {
   const contextBlock = sources
     .map(
       (s, i) =>
-        `[${i + 1}] ${s.municipality} ${s.meeting_name}${s.agenda_title ? `／${s.agenda_title}` : ""}${(s.speaker_name ?? s.speaker) ? `／${s.speaker_name ?? s.speaker}` : ""}\n${s.content}`
+        `[${i + 1}] ${s.municipality} ${s.meeting_name}${s.agenda_title ? `／${s.agenda_title}` : ""}\n${s.content}`
     )
     .join("\n\n");
 
@@ -907,6 +783,7 @@ export async function POST(request: NextRequest) {
 - 抜粋に書かれていない事柄は推測しないこと
 - 不明な場合は「議事録から確認できませんでした」と答えること
 - 回答末尾で根拠とした抜粋番号を [1] [2] のように明記すること
+- 議論の流れが複数ある場合は、自治体名や会議名を明記して整理すること
 
 【参考議事録】
 ${contextBlock}

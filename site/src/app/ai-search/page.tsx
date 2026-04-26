@@ -13,7 +13,7 @@ import { buildPageMetadata } from "@/lib/metadata";
 export const metadata = buildPageMetadata({
   title: `${AI_SEARCH_LABEL}（${AI_SEARCH_BADGE_LABEL}）`,
   description:
-    "千歳市議会の議事録に対して自然文で質問できる試験版ページ。回答はAIによる自動生成で、参照元の議事録抜粋を併せて表示します。",
+    "北海道内の市町村議会データに自然文で質問できる試験版ページ。回答はAIによる自動生成で、参照元の議事録抜粋を併せて表示します。",
   path: AI_SEARCH_PATH,
 });
 
@@ -55,7 +55,7 @@ export default function Page() {
 
       <div className="mx-auto max-w-4xl">
         <div className="theme-panel rounded-[26px] px-4 py-5 sm:px-6">
-          <AiSearch defaultMunicipality="千歳市" />
+          <AiSearch />
         </div>
       </div>
     </div>
