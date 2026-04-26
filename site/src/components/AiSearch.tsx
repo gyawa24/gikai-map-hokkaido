@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import type { AiSearchResponse, AiSearchSource } from "@/app/api/search/route";
 
@@ -129,9 +130,9 @@ export default function AiSearch({ defaultMunicipality }: Props) {
                       {s.municipality}
                     </span>
                   )}
-                  {s.speaker && (
+                  {(s.speaker_name ?? s.speaker) && (
                     <span className="text-xs text-[#4A5568] bg-[#F4F6F9] border border-[#E2E8F0] rounded px-2 py-0.5">
-                      {s.speaker}
+                      {s.speaker_name ?? s.speaker}
                     </span>
                   )}
                   {typeof s.similarity === "number" && (
@@ -143,9 +144,24 @@ export default function AiSearch({ defaultMunicipality }: Props) {
                 <p className="text-sm font-bold text-[#1A202C] leading-snug mb-1.5">
                   {s.meeting_name}
                 </p>
+                {s.agenda_title && (
+                  <p className="text-xs text-[#718096] mb-1.5">
+                    {s.agenda_title}
+                  </p>
+                )}
                 <p className="text-sm leading-relaxed text-[#4A5568] line-clamp-4">
                   {s.content}
                 </p>
+                {s.href && (
+                  <div className="mt-3">
+                    <Link
+                      href={s.href}
+                      className="text-sm font-medium text-[#2A5298] hover:text-[#1B3A6B] transition-colors"
+                    >
+                      この議事録を見る
+                    </Link>
+                  </div>
+                )}
               </li>
             ))}
           </ol>

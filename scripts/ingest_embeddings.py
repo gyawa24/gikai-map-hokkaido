@@ -11,6 +11,8 @@ Supabase council_chunks に投入する。
 
 Usage:
   python scripts/ingest_embeddings.py
+  python scripts/ingest_embeddings.py eniwa
+  EMBEDDING_SLUG=tomakomai python scripts/ingest_embeddings.py
 """
 
 from __future__ import annotations
@@ -35,8 +37,31 @@ SUPABASE_SERVICE_ROLE_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
 
 sb = create_client(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
 
-SLUG = "chitose"
-MUNICIPALITY = "千歳市"
+DEFAULT_SLUG = "chitose"
+DEFAULT_MUNICIPALITY = "千歳市"
+
+
+def municipality_name_from_slug(slug: str) -> str | None:
+    fp = PROJECT_ROOT / "data" / "municipalities.json"
+    if not fp.exists():
+        return None
+    try:
+        items = json.loads(fp.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+    for item in items:
+        if item.get("slug") == slug:
+            return item.get("name")
+    return None
+
+
+SLUG = os.environ.get("EMBEDDING_SLUG") or (sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SLUG)
+MUNICIPALITY = (
+    os.environ.get("EMBEDDING_MUNICIPALITY")
+    or (sys.argv[2] if len(sys.argv) > 2 else None)
+    or municipality_name_from_slug(SLUG)
+    or DEFAULT_MUNICIPALITY
+)
 MINUTES_DIR = PROJECT_ROOT / "data" / SLUG / "minutes"
 
 CHUNK_SIZE = 500
@@ -61,6 +86,21 @@ INSERT_HEADERS = {
     "Content-Type": "application/json",
     "Prefer": "return=minimal",
 }
+
+QUESTION_TYPES = {"◆質問", "○一般質問"}
+ANSWER_TYPES = {"◎答弁", "◎市長"}
+
+
+def speaker_role_from_minute_type(minute_type: str) -> str:
+    if minute_type in QUESTION_TYPES:
+        return "question"
+    if minute_type in ANSWER_TYPES:
+        return "answer"
+    if minute_type == "○議長":
+        return "chair"
+    if minute_type == "△議題":
+        return "agenda"
+    return "other"
 
 
 def chunk_text(text: str) -> list[str]:
@@ -231,16 +271,31 @@ def main() -> None:
             )
             continue
 
-        # この会議のチャンクを (speaker, chunk) ペアで全部集める
-        file_chunks: list[tuple[str, str]] = []
+        # この会議のチャンクをメタ付きで全部集める
+        file_chunks: list[dict] = []
         for sched in data.get("schedules", []) or []:
+            current_agenda = ""
             for m in sched.get("minutes", []) or []:
+                minute_type = (m.get("minute_type") or "").strip()
+                if minute_type == "△議題":
+                    current_agenda = (m.get("text") or "").replace("△", "").strip()
+                    continue
                 text = (m.get("text") or "").strip()
                 if not text:
                     continue
-                speaker = (m.get("minute_type") or "").strip()
                 for chunk in chunk_text(text):
-                    file_chunks.append((speaker, chunk))
+                    file_chunks.append(
+                        {
+                            "speaker": minute_type,
+                            "speaker_name": (m.get("title") or "").strip(),
+                            "speaker_role": speaker_role_from_minute_type(minute_type),
+                            "agenda_title": current_agenda,
+                            "schedule_id": m.get("schedule_id")
+                            or sched.get("schedule_id"),
+                            "minute_id": m.get("minute_id"),
+                            "content": chunk,
+                        }
+                    )
 
         if not file_chunks:
             print(f"[{fi:3d}/{len(files)}] {fp.name}: テキストなし", flush=True)
@@ -255,7 +310,7 @@ def main() -> None:
         file_inserted = 0
         for batch_start in range(0, len(file_chunks), EMBED_BATCH):
             batch = file_chunks[batch_start : batch_start + EMBED_BATCH]
-            texts = [c[1] for c in batch]
+            texts = [c["content"] for c in batch]
             t0 = time.time()
             embeddings = embed_batch(texts)
             elapsed = time.time() - t0
@@ -265,12 +320,20 @@ def main() -> None:
                 flush=True,
             )
 
-            for (speaker, chunk), emb in zip(batch, embeddings):
+            council_id = data.get("council_id")
+            for chunk_meta, emb in zip(batch, embeddings):
                 pending_rows.append({
                     "municipality": MUNICIPALITY,
+                    "slug": SLUG,
                     "meeting_name": meeting_name,
-                    "speaker": speaker,
-                    "content": chunk,
+                    "council_id": council_id,
+                    "schedule_id": chunk_meta["schedule_id"],
+                    "minute_id": chunk_meta["minute_id"],
+                    "speaker": chunk_meta["speaker"],
+                    "speaker_name": chunk_meta["speaker_name"],
+                    "speaker_role": chunk_meta["speaker_role"],
+                    "agenda_title": chunk_meta["agenda_title"],
+                    "content": chunk_meta["content"],
                     "embedding": fmt_vector(emb),
                 })
                 if len(pending_rows) >= INSERT_BATCH:

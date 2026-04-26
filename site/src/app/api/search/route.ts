@@ -215,6 +215,115 @@ function getCityMap(): Record<string, string> {
   return _cityMap;
 }
 
+let _citySlugByName: Record<string, string> | null = null;
+function getCitySlugByName(): Record<string, string> {
+  if (_citySlugByName) return _citySlugByName;
+  const munis = getMunicipalities().filter((m) => m.active);
+  _citySlugByName = Object.fromEntries(munis.map((m) => [m.name, m.slug]));
+  return _citySlugByName;
+}
+
+const minutesMeetingCache = new Map<string, Record<string, number>>();
+function getMinutesMeetingMap(slug: string): Record<string, number> {
+  const cached = minutesMeetingCache.get(slug);
+  if (cached) return cached;
+
+  const candidates = [
+    path.join(process.cwd(), "data", slug, "minutes", "index.json"),
+    path.join(process.cwd(), "data", slug, "index.json"),
+  ];
+
+  for (const fp of candidates) {
+    try {
+      const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as Array<Record<string, unknown>>;
+      const map = Object.fromEntries(
+        index
+          .filter((entry) => entry.name && typeof entry.council_id === "number")
+          .map((entry) => [entry.name as string, entry.council_id as number])
+      );
+      minutesMeetingCache.set(slug, map);
+      return map;
+    } catch {
+      // try next
+    }
+  }
+
+  minutesMeetingCache.set(slug, {});
+  return {};
+}
+
+function scoreAiSource(source: AiSearchSource, query: string, tokenGroups: SearchTokenGroup[]): number {
+  const haystack = [
+    source.municipality,
+    source.meeting_name,
+    source.agenda_title ?? "",
+    source.speaker_name ?? source.speaker,
+    source.content,
+  ].join(" ");
+  let score = (source.similarity ?? 0) * 100;
+
+  if (includesNormalized(haystack, query)) score += 12;
+  if (source.agenda_title && includesNormalized(source.agenda_title, query)) score += 6;
+  if (includesNormalized(source.meeting_name, query)) score += 4;
+
+  for (const group of tokenGroups) {
+    score += Math.round(bestGroupMatch(haystack, group, "includes") * 4);
+    if (source.agenda_title) {
+      score += Math.round(bestGroupMatch(source.agenda_title, group, "includes") * 6);
+    }
+    score += Math.round(bestGroupMatch(source.meeting_name, group, "includes") * 4);
+  }
+
+  return score;
+}
+
+function enrichAiSource(source: AiSearchSource): AiSearchSource {
+  if (source.href) return source;
+  const slug = source.slug ?? getCitySlugByName()[source.municipality];
+  if (!slug) return source;
+
+  const councilId = source.council_id ?? getMinutesMeetingMap(slug)[source.meeting_name];
+  if (!councilId) return { ...source, slug };
+
+  const hrefBase = `/${slug}/minutes/${councilId}`;
+  const href =
+    typeof source.schedule_id === "number" && typeof source.minute_id === "number"
+      ? `${hrefBase}#minute-${source.schedule_id}-${source.minute_id}`
+      : hrefBase;
+
+  return { ...source, slug, council_id: councilId, href };
+}
+
+function selectAiSources(sources: AiSearchSource[], query: string, tokenGroups: SearchTokenGroup[]): AiSearchSource[] {
+  const scored = sources
+    .map((source) => {
+      const enriched = enrichAiSource(source);
+      return { source: enriched, score: scoreAiSource(enriched, query, tokenGroups) };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  const seenContents = new Set<string>();
+  const selected: AiSearchSource[] = [];
+  const meetingCounts = new Map<string, number>();
+
+  const take = (maxPerMeeting: number) => {
+    for (const entry of scored) {
+      if (selected.length >= AI_SOURCE_COUNT) break;
+      const meetingKey = `${entry.source.municipality}::${entry.source.meeting_name}`;
+      const contentKey = normalizeForSearch(entry.source.content).slice(0, 180);
+      if (seenContents.has(contentKey)) continue;
+      if ((meetingCounts.get(meetingKey) ?? 0) >= maxPerMeeting) continue;
+      seenContents.add(contentKey);
+      meetingCounts.set(meetingKey, (meetingCounts.get(meetingKey) ?? 0) + 1);
+      selected.push(entry.source);
+    }
+  };
+
+  take(1);
+  if (selected.length < AI_SOURCE_COUNT) take(2);
+  return selected;
+}
+
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
@@ -665,11 +774,20 @@ export async function GET(request: NextRequest) {
 // 上位 5 件を Groq llama-3.3-70b-versatile に渡して根拠付き回答を生成する。
 // ---------------------------------------------------------------------------
 export type AiSearchSource = {
+  id?: number;
   municipality: string;
+  slug?: string;
   meeting_name: string;
+  council_id?: number;
+  schedule_id?: number;
+  minute_id?: number;
   speaker: string;
+  speaker_name?: string;
+  speaker_role?: string;
+  agenda_title?: string;
   content: string;
   similarity: number;
+  href?: string;
 };
 
 export type AiSearchResponse = {
@@ -678,7 +796,8 @@ export type AiSearchResponse = {
 };
 
 const AI_MAX_QUERY_LEN = 500;
-const AI_MATCH_COUNT = 5;
+const AI_RPC_MATCH_COUNT = 12;
+const AI_SOURCE_COUNT = 6;
 
 export async function POST(request: NextRequest) {
   const ip = getClientIP(request);
@@ -701,6 +820,7 @@ export async function POST(request: NextRequest) {
   if (!query) {
     return NextResponse.json({ error: "質問を入力してください。" }, { status: 400 });
   }
+  const tokenGroups = buildTokenGroups(tokenize(query));
 
   const {
     GEMINI_API_KEY,
@@ -755,7 +875,7 @@ export async function POST(request: NextRequest) {
   });
   const { data: matches, error: rpcErr } = await sb.rpc("match_council_chunks", {
     query_embedding: queryEmbedding,
-    match_count: AI_MATCH_COUNT,
+    match_count: AI_RPC_MATCH_COUNT,
     filter_municipality: municipality,
   });
   if (rpcErr) {
@@ -764,7 +884,7 @@ export async function POST(request: NextRequest) {
       { status: 500 }
     );
   }
-  const sources = (matches as AiSearchSource[] | null) ?? [];
+  const sources = selectAiSources((matches as AiSearchSource[] | null) ?? [], query, tokenGroups);
 
   // 3) Groq で根拠付き回答を生成
   if (sources.length === 0) {
@@ -777,7 +897,7 @@ export async function POST(request: NextRequest) {
   const contextBlock = sources
     .map(
       (s, i) =>
-        `[${i + 1}] ${s.meeting_name}${s.speaker ? `／${s.speaker}` : ""}\n${s.content}`
+        `[${i + 1}] ${s.municipality} ${s.meeting_name}${s.agenda_title ? `／${s.agenda_title}` : ""}${(s.speaker_name ?? s.speaker) ? `／${s.speaker_name ?? s.speaker}` : ""}\n${s.content}`
     )
     .join("\n\n");
 

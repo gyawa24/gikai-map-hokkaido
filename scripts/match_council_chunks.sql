@@ -1,6 +1,8 @@
 -- Supabase の SQL Editor で 1 度だけ実行する。
 -- council_chunks テーブルが既に存在している前提。
--- 期待カラム: id, municipality, meeting_name, speaker, content, embedding vector(768)
+-- 期待カラム:
+-- id, municipality, slug, meeting_name, council_id, schedule_id, minute_id,
+-- speaker, speaker_name, speaker_role, agenda_title, content, embedding vector(768)
 
 create or replace function match_council_chunks(
   query_embedding vector(768),
@@ -10,8 +12,15 @@ create or replace function match_council_chunks(
 returns table (
   id bigint,
   municipality text,
+  slug text,
   meeting_name text,
+  council_id bigint,
+  schedule_id bigint,
+  minute_id bigint,
   speaker text,
+  speaker_name text,
+  speaker_role text,
+  agenda_title text,
   content text,
   similarity float
 )
@@ -21,8 +30,15 @@ as $$
   select
     c.id,
     c.municipality,
+    c.slug,
     c.meeting_name,
+    c.council_id,
+    c.schedule_id,
+    c.minute_id,
     c.speaker,
+    c.speaker_name,
+    c.speaker_role,
+    c.agenda_title,
     c.content,
     1 - (c.embedding <=> query_embedding) as similarity
   from council_chunks c
