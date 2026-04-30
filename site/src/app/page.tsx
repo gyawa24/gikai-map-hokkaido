@@ -1,12 +1,6 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
-import {
-  AI_SEARCH_BADGE_LABEL,
-  AI_SEARCH_LABEL,
-  AI_SEARCH_PATH,
-  getAiSearchCoverageText,
-} from "@/lib/aiSearch";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getNews, categoryClass } from "@/lib/news";
 import { getSiteStats } from "@/lib/siteStats";
@@ -128,20 +122,10 @@ export default function HomePage() {
           <Link href="/search" className="theme-button theme-button-accent px-4 py-2 text-sm">
             横断検索
           </Link>
-          <Link href={AI_SEARCH_PATH} className="theme-button px-4 py-2 text-sm">
-            {AI_SEARCH_LABEL}
-            <span className="ml-2 theme-pill-soft border-[#E6C566] bg-[#FFF3BF] px-2 py-0.5 text-[10px] text-[#6B4C11]">
-              {AI_SEARCH_BADGE_LABEL}
-            </span>
-          </Link>
           <a href="#municipalities" className="theme-button px-4 py-2 text-sm">
             市町村一覧
           </a>
         </div>
-
-        <p className="mt-3 text-xs font-bold text-[#6B4C11]">
-          {getAiSearchCoverageText()}
-        </p>
       </section>
 
       <section className="mx-auto grid max-w-5xl grid-cols-2 gap-3 xl:grid-cols-4">

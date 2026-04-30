@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import CityHeader from "./CityHeader";
-import { AI_SEARCH_NAV_LABEL, AI_SEARCH_PATH } from "@/lib/aiSearch";
 import { getMunicipalities } from "@/lib/municipalities";
 
 export type NavItem = { href: string; label: string };
@@ -52,7 +51,6 @@ const MASTER_NAV: MasterNavItem[] = [
   },
   { key: "election", label: "選挙結果", pageDir: "election", dataFile: "election.json" },
   { key: "themes", label: "テーマ別", pageDir: "themes", dataFile: "members_activity.json" },
-  { key: "ai-search", label: AI_SEARCH_NAV_LABEL, pageDir: "", href: AI_SEARCH_PATH },
 ];
 
 // Per-city label overrides for localized names
