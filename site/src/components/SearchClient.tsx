@@ -49,6 +49,7 @@ function groupByCity<T extends { city: string; cityName: string }>(items: T[]) {
 type SourceFilter = "all" | "minutes" | "session" | "decision";
 type SessionSort = "relevance" | "newest";
 type MemberSort = "relevance" | "name" | "city";
+type SearchMode = "and" | "or";
 
 const SOURCE_FILTER_LABELS: Record<SourceFilter, string> = {
   all: "すべて",
@@ -91,6 +92,7 @@ function SearchClientInner() {
     const value = searchParams.get("memberSort");
     return value === "name" || value === "city" ? value : "relevance";
   });
+  const [searchMode, setSearchMode] = useState<SearchMode>(() => searchParams.get("op") === "or" ? "or" : "and");
   const [sessionResults, setSessionResults] = useState<SessionHit[]>([]);
   const [memberResults, setMemberResults] = useState<MemberHit[]>([]);
   const [sessionTotal, setSessionTotal] = useState(0);
@@ -138,7 +140,11 @@ function SearchClientInner() {
     const controller = new AbortController();
     timerRef.current = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`, { signal: controller.signal });
+        const params = new URLSearchParams({
+          q,
+          op: searchMode,
+        });
+        const res = await fetch(`/api/search?${params.toString()}`, { signal: controller.signal });
         if (!res.ok) {
           const data = await res.json().catch(() => ({}));
           throw new Error(data.error || "検索に失敗しました");
@@ -182,7 +188,7 @@ function SearchClientInner() {
       controller.abort();
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [query]);
+  }, [query, searchMode]);
 
   const tokens = tokenize(query);
   const hasQuery = query.trim().length > 0;
@@ -280,13 +286,14 @@ function SearchClientInner() {
     if (sourceFilter !== "all") params.set("source", sourceFilter);
     if (yearFilter !== "all") params.set("year", yearFilter);
     if (factionFilter !== "all") params.set("faction", factionFilter);
+    if (searchMode !== "and") params.set("op", searchMode);
     if (sessionSort !== "relevance") params.set("sessionSort", sessionSort);
     if (memberSort !== "relevance") params.set("memberSort", memberSort);
     const nextParams = params.toString();
     if (nextParams === searchParams.toString()) return;
     const next = nextParams ? `${pathname}?${nextParams}` : pathname;
     router.replace(next, { scroll: false });
-  }, [pathname, router, searchParams, query, tab, cityFilter, sourceFilter, yearFilter, factionFilter, sessionSort, memberSort]);
+  }, [pathname, router, searchParams, query, tab, cityFilter, sourceFilter, yearFilter, factionFilter, searchMode, sessionSort, memberSort]);
 
   const activeFilters = [
     cityFilter !== "all" ? availableCities.find((city) => city.id === cityFilter)?.name ?? cityFilter : "",
@@ -344,7 +351,7 @@ function SearchClientInner() {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="キーワードを入力（例: 子育て支援、学校給食、議員名）"
+            placeholder="キーワードを入力（例: 子育て支援 予算、学校給食、議員名）"
             className="theme-input w-full py-3 pl-9 pr-20 text-base sm:pr-24"
           />
           {query && (
@@ -356,6 +363,33 @@ function SearchClientInner() {
               クリア
             </button>
           )}
+        </div>
+
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          <span className="text-xs font-semibold text-[#667085]">複数語の条件</span>
+          <div className="inline-flex rounded-full border border-[#CBD5E0] bg-white p-1">
+            <button
+              type="button"
+              onClick={() => setSearchMode("and")}
+              className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
+                searchMode === "and" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
+              }`}
+            >
+              AND
+            </button>
+            <button
+              type="button"
+              onClick={() => setSearchMode("or")}
+              className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
+                searchMode === "or" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
+              }`}
+            >
+              OR
+            </button>
+          </div>
+          <p className="text-xs text-[#667085]">
+            {searchMode === "and" ? "すべての語を含む結果を優先" : "どれかの語を含む結果を表示"}
+          </p>
         </div>
 
         <div className="mt-3 flex flex-wrap gap-1.5">
@@ -403,7 +437,7 @@ function SearchClientInner() {
 
         {!hasQuery && (
           <p className="mt-3 text-xs leading-relaxed text-[#667085] sm:text-sm">
-            議題名、政策テーマ、施設名、議員名、会派名などで探せます。複数語を入れると絞り込みます。
+            議題名、政策テーマ、施設名、議員名、会派名などで探せます。複数語は AND/OR を切り替えて使えます。
           </p>
         )}
       </div>
