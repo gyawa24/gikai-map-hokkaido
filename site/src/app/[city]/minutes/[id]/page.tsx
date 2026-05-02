@@ -21,7 +21,9 @@ function getSession(city: string, id: string): MinutesSession | null {
   ];
   for (const fp of candidates) {
     try {
-      return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesSession;
+      return JSON.parse(
+        fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+      ) as MinutesSession;
     } catch {
       // try next
     }
@@ -39,7 +41,9 @@ function getEnriched(city: string, id: string): MinutesEnriched | null {
     `${id}.json`
   );
   try {
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesEnriched;
+    return JSON.parse(
+      fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+    ) as MinutesEnriched;
   } catch {
     return null;
   }
