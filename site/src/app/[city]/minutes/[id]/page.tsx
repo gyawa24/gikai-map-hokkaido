@@ -7,19 +7,38 @@ import type { MinutesSession, MinutesIndexItem, MinutesEnriched } from "@/types/
 import MinutesDetailClient from "@/components/MinutesDetailClient";
 import { getMunicipality } from "@/lib/municipalities";
 
-// ビルド時に全パラメータを生成し、サーバーレス関数を作らない（バンドルサイズ制限対策）
-export const dynamicParams = false;
+// Build時は recent N councils のみ static generate（generateStaticParams）。
+// それ以外の URL は ISR で初回アクセス時にレンダリングし、Vercel エッジでキャッシュ。
+// データソースは local（ある場合）→ GitHub Raw URL（fallback）。
+// 過去の URL を 404 にしないことで SEO を維持しつつ、build 時間を大幅短縮する。
+export const dynamicParams = true;
+export const revalidate = 86400; // 1 日
 
-function getSession(city: string, id: string): MinutesSession | null {
-  // 一部自治体（旭川・函館・釧路など）は data/{city}/{id}.json 直下に置かれている。
-  // まず minutes/ サブディレクトリを試し、なければ city ルート直下を見る。
-  // dynamicParams=false で build 時のみ実行されるため、turbopackIgnore で
-  // Function トレースを抑止する（13908ファイルの過剰追跡を回避）。
-  const candidates = [
+const RECENT_PRERENDER_COUNT = 5;
+const REPO_OWNER = process.env.GIKAI_REPO_OWNER ?? "gyawa24";
+const REPO_NAME = process.env.GIKAI_REPO_NAME ?? "gikai-map-hokkaido";
+const REPO_BRANCH = process.env.GIKAI_REPO_BRANCH ?? "main";
+const RAW_BASE = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${REPO_BRANCH}`;
+
+async function fetchRawJson<T>(remotePath: string): Promise<T | null> {
+  try {
+    const res = await fetch(`${RAW_BASE}/${remotePath}`, {
+      next: { revalidate: 86400 },
+    });
+    if (!res.ok) return null;
+    return (await res.json()) as T;
+  } catch {
+    return null;
+  }
+}
+
+async function getSession(city: string, id: string): Promise<MinutesSession | null> {
+  // 1) Local read（build時の SSG / Function バンドルにデータがある場合）
+  const localCandidates = [
     path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "minutes", `${id}.json`),
     path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, `${id}.json`),
   ];
-  for (const fp of candidates) {
+  for (const fp of localCandidates) {
     try {
       return JSON.parse(
         fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
@@ -28,10 +47,19 @@ function getSession(city: string, id: string): MinutesSession | null {
       // try next
     }
   }
+  // 2) GitHub Raw fallback（ISR時にデータが Function バンドルに無い場合）
+  const remoteCandidates = [
+    `site/data/${city}/minutes/${id}.json`,
+    `site/data/${city}/${id}.json`,
+  ];
+  for (const remotePath of remoteCandidates) {
+    const data = await fetchRawJson<MinutesSession>(remotePath);
+    if (data) return data;
+  }
   return null;
 }
 
-function getEnriched(city: string, id: string): MinutesEnriched | null {
+async function getEnriched(city: string, id: string): Promise<MinutesEnriched | null> {
   const fp = path.join(
     /*turbopackIgnore: true*/ process.cwd(),
     "data",
@@ -45,7 +73,10 @@ function getEnriched(city: string, id: string): MinutesEnriched | null {
       fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
     ) as MinutesEnriched;
   } catch {
-    return null;
+    // ISR fallback to GitHub Raw（enriched は欠損許容なので失敗で null）
+    return await fetchRawJson<MinutesEnriched>(
+      `site/data/${city}/minutes/enriched/${id}.json`
+    );
   }
 }
 
@@ -57,8 +88,8 @@ export async function generateMetadata({
   const { city, id } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  const session = getSession(city, id);
-  const enriched = getEnriched(city, id);
+  const session = await getSession(city, id);
+  const enriched = await getEnriched(city, id);
 
   const title = session
     ? `${session.name} | ${cityName}議会 | 地方議会ドットコム`
@@ -91,7 +122,11 @@ export async function generateStaticParams() {
       try {
         const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
         if (!Array.isArray(index)) continue;
-        for (const item of index) params.push({ city: m.slug, id: String(item.council_id) });
+        // council_id 降順で最新 N 件のみ static generate（残りは ISR）
+        const recent = [...index]
+          .sort((a, b) => Number(b.council_id ?? 0) - Number(a.council_id ?? 0))
+          .slice(0, RECENT_PRERENDER_COUNT);
+        for (const item of recent) params.push({ city: m.slug, id: String(item.council_id) });
         break;
       } catch {
         // try next
@@ -122,7 +157,7 @@ export default async function CityMinutesDetailPage({
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
 
-  const session = getSession(city, id);
+  const session = await getSession(city, id);
   if (!session) notFound();
 
   const restricted = municipality?.minutes_access === "restricted";
@@ -160,7 +195,7 @@ export default async function CityMinutesDetailPage({
     );
   }
 
-  const enriched = getEnriched(city, id);
+  const enriched = await getEnriched(city, id);
   const category = typeCategory(session.type_label);
 
   const totalSpeeches = session.schedules.reduce(
