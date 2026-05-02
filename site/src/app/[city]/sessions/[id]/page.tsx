@@ -1,32 +1,17 @@
-import fs from "fs";
-import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import type { Session, SessionSummary } from "@/types/session";
-import type { Member } from "@/types/member";
 import TranscriptSegment from "@/components/TranscriptSegment";
 import AIDisclaimer from "@/components/AIDisclaimer";
+import FullTranscriptBlock from "@/components/FullTranscriptBlock";
+import { getMembers, getSession, getSessionSummaries } from "@/lib/cityData";
 import { getMunicipality } from "@/lib/municipalities";
+import {
+  getSessionSourceLabel,
+  getSessionThumbnailUrl,
+  getSessionWatchUrl,
+} from "@/lib/sessionSources";
 
 export const dynamicParams = false;
-
-function getSession(city: string, id: string): Session | null {
-  const fp = path.join(process.cwd(), "data", city, "sessions", `${id}.json`);
-  try {
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Session;
-  } catch {
-    return null;
-  }
-}
-
-function getMembers(city: string): Member[] {
-  const fp = path.join(process.cwd(), "data", city, "members.json");
-  try {
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Member[];
-  } catch {
-    return [];
-  }
-}
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr);
@@ -75,12 +60,8 @@ export async function generateStaticParams() {
   const params: { city: string; id: string }[] = [];
   for (const m of getMunicipalities()) {
     if (!m.active) continue;
-    const fp = path.join(process.cwd(), "data", m.slug, "sessions", "index.json");
-    try {
-      const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as SessionSummary[];
-      for (const s of index) params.push({ city: m.slug, id: s.id });
-    } catch {
-      // セッションデータがない自治体はスキップ
+    for (const session of getSessionSummaries(m.slug)) {
+      params.push({ city: m.slug, id: session.id });
     }
   }
   return params;
@@ -99,8 +80,13 @@ export default async function CitySessionPage({
   if (!session) notFound();
 
   const members = getMembers(city);
-  const hasContent = session.segments.length > 0;
+  const hasSegments = session.segments.length > 0;
+  const hasFullTranscript = !!session.full_transcript?.trim();
+  const hasContent = hasSegments || hasFullTranscript;
   const cityName = municipality.name;
+  const watchUrl = getSessionWatchUrl(session);
+  const watchLabel = getSessionSourceLabel(session);
+  const thumbnailUrl = getSessionThumbnailUrl(session, "hero");
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -116,48 +102,68 @@ export default async function CitySessionPage({
 
       <div className="mb-6 rounded-lg overflow-hidden border border-[#CBD5E0] shadow-sm">
         <div className="relative bg-black" style={{ paddingBottom: "56.25%" }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={`https://img.youtube.com/vi/${session.youtube_id}/maxresdefault.jpg`}
-            alt={session.title}
-            className="absolute inset-0 w-full h-full object-cover opacity-80"
-          />
+          {thumbnailUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={thumbnailUrl}
+              alt={session.title}
+              className="absolute inset-0 w-full h-full object-cover opacity-80"
+            />
+          ) : (
+            <div className="absolute inset-0 bg-[linear-gradient(135deg,#102A43,#2A5298)] opacity-95" />
+          )}
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-            <a
-              href={`https://www.youtube.com/watch?v=${session.youtube_id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-[#FF0000] hover:bg-[#cc0000] text-white font-bold px-5 py-3 rounded-full shadow-lg transition-colors text-sm"
-            >
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-              YouTubeで視聴
-            </a>
+            {watchUrl ? (
+              <a
+                href={watchUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-[#FF0000] hover:bg-[#cc0000] text-white font-bold px-5 py-3 rounded-full shadow-lg transition-colors text-sm"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                {watchLabel}
+              </a>
+            ) : (
+              <div className="flex items-center gap-2 bg-white/15 text-white font-bold px-5 py-3 rounded-full shadow-lg text-sm">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                視聴リンク未設定
+              </div>
+            )}
           </div>
         </div>
       </div>
 
       {hasContent ? (
         <div className="flex flex-col gap-4">
-          <AIDisclaimer sourceLabel="YouTubeで視聴" />
-          <h3 className="text-base font-bold text-[#1B3A6B]">
-            要約・文字起こし
-            <span className="ml-2 text-sm font-normal text-[#718096]">
-              （{session.segments.length}部構成）
-            </span>
-          </h3>
-          {session.segments.map((seg) => (
-            <TranscriptSegment
-              key={seg.index}
-              seg={seg}
-              members={members}
-              city={city}
-              sessionId={id}
-              cityName={cityName}
-              sessionTitle={session.title}
-            />
-          ))}
+          <AIDisclaimer sourceLabel={watchLabel} />
+          {hasFullTranscript && (
+            <FullTranscriptBlock transcript={session.full_transcript ?? ""} />
+          )}
+          {hasSegments && (
+            <>
+              <h3 className="text-base font-bold text-[#1B3A6B]">
+                要約・文字起こし
+                <span className="ml-2 text-sm font-normal text-[#718096]">
+                  （{session.segments.length}部構成）
+                </span>
+              </h3>
+              {session.segments.map((seg) => (
+                <TranscriptSegment
+                  key={seg.index}
+                  seg={seg}
+                  members={members}
+                  city={city}
+                  sessionId={id}
+                  cityName={cityName}
+                  sessionTitle={session.title}
+                />
+              ))}
+            </>
+          )}
           {session.generated_at && (
             <p className="text-xs text-[#718096] text-right">
               要約生成日: {session.generated_at}

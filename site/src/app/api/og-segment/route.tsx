@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import type { Session } from "@/types/session";
 import { getMunicipality } from "@/lib/municipalities";
+import { isSafePathToken, parsePositiveInt } from "@/lib/security";
 
 export const runtime = "nodejs";
 
@@ -106,7 +107,12 @@ export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
   const city = searchParams.get("city") ?? "chitose";
   const sessionId = searchParams.get("session") ?? "";
-  const segIndex = Number(searchParams.get("seg") ?? "1");
+  const segIndex = parsePositiveInt(searchParams.get("seg"));
+  const municipality = getMunicipality(city);
+
+  if (!municipality || !isSafePathToken(sessionId) || segIndex === null) {
+    return new Response("Not found", { status: 404 });
+  }
 
   const session = getSession(city, sessionId);
   if (!session) {
@@ -118,7 +124,6 @@ export async function GET(req: NextRequest) {
     return new Response("Segment not found", { status: 404 });
   }
 
-  const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
   const detail = segment.detail;
   const speaker = detail?.speaker ?? segment.label;

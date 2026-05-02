@@ -14,37 +14,21 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 import path from "node:path";
 import { registerTools } from "@/lib/mcp/tools.mjs";
+import { checkRateLimit } from "@/lib/rateLimit";
+import { constantTimeEqual, getBearerToken, getClientAddress } from "@/lib/security";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-// In-memory rate limit。Vercel Function はリクエスト毎にコンテナ起き直しになるため
-// 厳密な制限ではないが、暴走系の保険にはなる。
-const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
 const MAX_PER_MINUTE = 60;
-const MINUTE_MS = 60 * 1000;
-
-function rateLimitOk(label: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitStore.get(label);
-  if (!entry || now > entry.resetTime) {
-    rateLimitStore.set(label, { count: 1, resetTime: now + MINUTE_MS });
-    return true;
-  }
-  entry.count += 1;
-  return entry.count <= MAX_PER_MINUTE;
-}
+const MCP_WINDOW_SECONDS = 60;
 
 type AuthResult =
   | { ok: true; label: string }
   | { ok: false; status: number; error: string };
 
 function authenticate(req: Request): AuthResult {
-  const header = req.headers.get("authorization") ?? "";
-  if (!header.startsWith("Bearer ")) {
-    return { ok: false, status: 401, error: "missing_bearer_token" };
-  }
-  const token = header.slice(7).trim();
+  const token = getBearerToken(req);
   if (!token) return { ok: false, status: 401, error: "empty_token" };
 
   const raw = process.env.MCP_API_KEYS;
@@ -56,7 +40,9 @@ function authenticate(req: Request): AuthResult {
     return { ok: false, status: 500, error: "MCP_API_KEYS_invalid_json" };
   }
   for (const [label, key] of Object.entries(keys)) {
-    if (typeof key === "string" && key === token) return { ok: true, label };
+    if (typeof key === "string" && constantTimeEqual(key, token)) {
+      return { ok: true, label };
+    }
   }
   return { ok: false, status: 401, error: "invalid_token" };
 }
@@ -71,7 +57,21 @@ function jsonError(status: number, error: string): Response {
 async function handle(req: NextRequest): Promise<Response> {
   const auth = authenticate(req);
   if (!auth.ok) return jsonError(auth.status, auth.error);
-  if (!rateLimitOk(auth.label)) return jsonError(429, "rate_limit_exceeded");
+  const rateLimit = await checkRateLimit({
+    bucket: "api-mcp",
+    key: `${auth.label}:${getClientAddress(req)}`,
+    limit: MAX_PER_MINUTE,
+    windowSeconds: MCP_WINDOW_SECONDS,
+  });
+  if (!rateLimit.ok) {
+    return new Response(JSON.stringify({ error: "rate_limit_exceeded" }), {
+      status: 429,
+      headers: {
+        "content-type": "application/json",
+        "retry-after": String(rateLimit.retryAfterSeconds),
+      },
+    });
+  }
 
   const server = new McpServer({ name: "gikai", version: "0.2.0" });
   registerTools(server, {

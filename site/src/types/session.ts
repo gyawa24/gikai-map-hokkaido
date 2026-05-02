@@ -1,3 +1,12 @@
+export type SessionSourceType = "youtube" | "web";
+export type SessionSourceSegment = {
+  title: string;
+  view_url: string;
+  media_url?: string;
+  player_url?: string;
+  thumbnail_url?: string;
+};
+
 export type SegmentDetailQA = { q: string; a: string };
 export type SegmentDetailTopic = {
   theme: string;
@@ -25,7 +34,13 @@ export type SessionSegment = {
 
 export type Session = {
   id: string;
-  youtube_id: string;
+  youtube_id?: string;
+  source_type?: SessionSourceType;
+  source_url?: string;
+  source_label?: string;
+  source_thumbnail_url?: string;
+  source_segments?: SessionSourceSegment[];
+  full_transcript?: string;
   title: string;
   date: string;
   city: string;
@@ -36,7 +51,11 @@ export type Session = {
 
 export type SessionSummary = {
   id: string;
-  youtube_id: string;
+  youtube_id?: string;
+  source_type?: SessionSourceType;
+  source_url?: string;
+  source_label?: string;
+  source_thumbnail_url?: string;
   title: string;
   date: string;
   committee?: string;

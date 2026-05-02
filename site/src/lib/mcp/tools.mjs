@@ -59,6 +59,12 @@ export function registerTools(server, options) {
   function getCityName(slug) {
     return getMunicipalities().find((m) => m.slug === slug)?.name ?? slug;
   }
+  function getActiveMunicipality(slug) {
+    return getMunicipalities().find((m) => m.slug === slug && m.active) ?? null;
+  }
+  function isSafeFileToken(value) {
+    return typeof value === "string" && /^[A-Za-z0-9._-]+$/.test(value);
+  }
 
   let _searchIndex = null;
   function getSearchIndex() {
@@ -299,6 +305,9 @@ export function registerTools(server, options) {
         .describe("最大文字数。デフォルト8000"),
     },
     async ({ city, council_id, schedule_index, around_minute_id, max_chars }) => {
+      if (!getActiveMunicipality(city)) {
+        return ok({ error: `unknown_city: ${city}` });
+      }
       const fp = path.join(dataDir, city, "minutes", `${council_id}.json`);
       if (!fs.existsSync(fp))
         return ok({
@@ -357,10 +366,10 @@ export function registerTools(server, options) {
   // Tool 5 ───────────────────────────────────────────────────────────────────
   server.tool(
     "get_session_segment",
-    "動画セッション（YouTube文字起こし＋AI要約）を取得する。現状は千歳市のみ。" +
+    "動画セッションの文字起こし＋AI要約を取得する。" +
       "seg_indexで特定セグメントの要約・トピック・Q&Aを返す。",
     {
-      city: z.string().describe("市町村slug（現状chitoseのみ対応）"),
+      city: z.string().describe("市町村slug（例: chitose, hokkaido）"),
       session_id: z
         .string()
         .describe("セッションID（例: r8-teireikai1-day1-20260302）"),
@@ -375,6 +384,12 @@ export function registerTools(server, options) {
         .describe("trueにすると原文文字起こしも返す（巨大）"),
     },
     async ({ city, session_id, seg_index, include_transcript }) => {
+      if (!getActiveMunicipality(city)) {
+        return ok({ error: `unknown_city: ${city}` });
+      }
+      if (!isSafeFileToken(session_id)) {
+        return ok({ error: "invalid_session_id" });
+      }
       const fp = path.join(dataDir, city, "sessions", `${session_id}.json`);
       if (!fs.existsSync(fp))
         return ok({ error: `not_found: data/${city}/sessions/${session_id}.json` });
@@ -402,6 +417,10 @@ export function registerTools(server, options) {
         date: data.date,
         committee: data.committee,
         youtube_id: data.youtube_id,
+        source_type: data.source_type ?? (data.youtube_id ? "youtube" : "web"),
+        source_url: data.source_url ?? null,
+        source_label: data.source_label ?? null,
+        source_thumbnail_url: data.source_thumbnail_url ?? null,
         segment_count: segments.length,
         url: `${PUBLIC_BASE}/${city}/sessions/${session_id}`,
         youtube_url: data.youtube_id

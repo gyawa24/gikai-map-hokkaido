@@ -7,12 +7,20 @@
     "prebuild": "node scripts/build-search-index.mjs",
     "build": "next build",
     "build-search-index": "node scripts/build-search-index.mjs",
+    "bootstrap:hokkaido:r8-1": "node scripts/bootstrap-hokkaido-stream-meeting.mjs --title '令和8年第1回定例会'",
+    "start:auto-superwhisper:r8-1": "node scripts/watch-batch-and-start-superwhisper.mjs --city hokkaido --title '令和8年第1回定例会'",
+    "start:scribe:r7-1": "node scripts/launch-scribe-watch-job.mjs --city hokkaido --title '令和7年第1回定例会'",
+    "stop:scribe:r7-1": "node scripts/launch-scribe-watch-job.mjs --city hokkaido --title '令和7年第1回定例会' --stop",
+    "start:superwhisper:r7-1": "node scripts/launch-superwhisper-db-job.mjs --city hokkaido --title '令和7年第1回定例会'",
+    "stop:superwhisper:r7-1": "node scripts/launch-superwhisper-db-job.mjs --city hokkaido --title '令和7年第1回定例会' --stop",
+    "start:superwhisper:r8-1": "node scripts/launch-superwhisper-db-job.mjs --city hokkaido --title '令和8年第1回定例会' --plenary-first",
+    "stop:superwhisper:r8-1": "node scripts/launch-superwhisper-db-job.mjs --city hokkaido --title '令和8年第1回定例会' --stop",
+    "watch:scribe": "node scripts/watch-scribe-exports.mjs --city hokkaido",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "@supabase/supabase-js": "^2.45.0",
     "@types/leaflet": "^1.9.21",
     "@upstash/redis": "^1.37.0",
     "@vercel/analytics": "^2.0.1",
@@ -23,6 +31,9 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "zod": "^3.23.8"
+  },
+  "overrides": {
+    "postcss": "8.5.12"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.82.0",

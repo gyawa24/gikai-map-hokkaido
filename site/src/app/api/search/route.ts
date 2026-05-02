@@ -1,11 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
 import { getDecisions, getMembers, getMinutesEnrichedDocs, getMinutesIndex, getSearchIndex, getSession, getSessionSummaries, readCityJson } from "@/lib/cityData";
 import { getMunicipalities } from "@/lib/municipalities";
 import { checkRateLimit } from "@/lib/rateLimit";
 import { buildSearchAssist, buildSearchQuery, evaluateSearchText, excerptSearchText, matchesSearchText, normalizeSearchText, scoreSearchText } from "@/lib/searchQuery";
 import { getClientAddress } from "@/lib/security";
-import type { SearchAssistGroup, SearchOperator, SearchQuery } from "@/lib/searchQuery";
+import type { SearchAssistGroup, SearchOperator } from "@/lib/searchQuery";
 
 const SEARCH_WINDOW_SECONDS = 60;
 const SEARCH_GET_LIMIT = 60;
@@ -42,32 +41,6 @@ function getCityMap(): Record<string, string> {
   const munis = getMunicipalities().filter((m) => m.active);
   _cityMap = Object.fromEntries(munis.map((m) => [m.slug, m.name]));
   return _cityMap;
-}
-
-let _citySlugByName: Record<string, string> | null = null;
-function getCitySlugByName(): Record<string, string> {
-  if (_citySlugByName) return _citySlugByName;
-  const munis = getMunicipalities().filter((m) => m.active);
-  _citySlugByName = Object.fromEntries(munis.map((m) => [m.name, m.slug]));
-  return _citySlugByName;
-}
-
-const minutesMeetingCache = new Map<string, Record<string, number>>();
-function getMinutesMeetingMap(slug: string): Record<string, number> {
-  const cached = minutesMeetingCache.get(slug);
-  if (cached) return cached;
-  const index = getMinutesIndex(slug);
-  if (index.length === 0) {
-    minutesMeetingCache.set(slug, {});
-    return {};
-  }
-  const map = Object.fromEntries(
-    index
-      .filter((entry) => entry.name && typeof entry.council_id === "number")
-      .map((entry) => [entry.name as string, entry.council_id as number])
-  );
-  minutesMeetingCache.set(slug, map);
-  return map;
 }
 
 // ---------------------------------------------------------------------------
@@ -640,97 +613,6 @@ export async function GET(request: NextRequest) {
   } satisfies SearchResponse);
 }
 
-// ---------------------------------------------------------------------------
-// POST handler — AI 検索
-// 議事録 embeddings (Supabase pgvector) を Gemini で埋め込んだクエリと照合し、
-// 上位 5 件を Groq llama-3.3-70b-versatile に渡して根拠付き回答を生成する。
-// ---------------------------------------------------------------------------
-export type AiSearchSource = {
-  municipality: string;
-  meeting_name: string;
-  speaker: string;
-  content: string;
-  similarity: number;
-  speaker_name?: string;
-  speaker_role?: string;
-  agenda_title?: string;
-  slug?: string;
-  council_id?: number;
-  schedule_id?: number;
-  minute_id?: number;
-  href?: string;
-};
-
-export type AiSearchResponse = {
-  answer: string;
-  sources: AiSearchSource[];
-};
-
-const AI_MAX_QUERY_LEN = 500;
-const AI_RPC_MATCH_COUNT = 12;
-const AI_SOURCE_COUNT = 6;
-
-function enrichAiSource(source: AiSearchSource): AiSearchSource {
-  if (source.href) return source;
-  const slug = source.slug ?? getCitySlugByName()[source.municipality];
-  if (!slug) return source;
-  const councilId = source.council_id ?? getMinutesMeetingMap(slug)[source.meeting_name];
-  if (!councilId) return { ...source, slug };
-  const hrefBase = `/${slug}/minutes/${councilId}`;
-  const href =
-    typeof source.schedule_id === "number" && typeof source.minute_id === "number"
-      ? `${hrefBase}#minute-${source.schedule_id}-${source.minute_id}`
-      : hrefBase;
-  return { ...source, slug, council_id: councilId, href };
-}
-
-function scoreAiSource(source: AiSearchSource, searchQuery: SearchQuery): number {
-  const haystack = [
-    source.municipality,
-    source.meeting_name,
-    source.agenda_title ?? "",
-    source.speaker_name ?? source.speaker,
-    source.content,
-  ].join(" ");
-  const match = evaluateSearchText(haystack, searchQuery, "and");
-  let score = (source.similarity ?? 0) * 100 + match.score;
-  if (source.agenda_title) {
-    score += scoreSearchText(source.agenda_title, searchQuery) * 0.6;
-  }
-  score += scoreSearchText(source.meeting_name, searchQuery) * 0.4;
-  return score;
-}
-
-function selectAiSources(sources: AiSearchSource[], searchQuery: SearchQuery): AiSearchSource[] {
-  const scored = sources
-    .map((source) => {
-      const enriched = enrichAiSource(source);
-      return { source: enriched, score: scoreAiSource(enriched, searchQuery) };
-    })
-    .sort((a, b) => b.score - a.score);
-
-  const seenContents = new Set<string>();
-  const selected: AiSearchSource[] = [];
-  const meetingCounts = new Map<string, number>();
-
-  const take = (maxPerMeeting: number) => {
-    for (const entry of scored) {
-      if (selected.length >= AI_SOURCE_COUNT) break;
-      const key = `${entry.source.municipality}::${entry.source.meeting_name}`;
-      const contentKey = normalizeSearchText(entry.source.content).slice(0, 180);
-      if (seenContents.has(contentKey)) continue;
-      if ((meetingCounts.get(key) ?? 0) >= maxPerMeeting) continue;
-      seenContents.add(contentKey);
-      meetingCounts.set(key, (meetingCounts.get(key) ?? 0) + 1);
-      selected.push(entry.source);
-    }
-  };
-
-  take(1);
-  if (selected.length < AI_SOURCE_COUNT) take(2);
-  return selected;
-}
-
 export async function POST(request: NextRequest) {
   const rateLimit = await checkRateLimit({
     bucket: "api-search-post",
@@ -748,155 +630,8 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  let body: { query?: string; municipality?: string };
-  try {
-    body = await request.json();
-  } catch {
-    return NextResponse.json({ error: "リクエストの形式が不正です。" }, { status: 400 });
-  }
-
-  const query = (body.query ?? "").trim().slice(0, AI_MAX_QUERY_LEN);
-  const municipality = (body.municipality ?? "").trim() || null;
-  if (!query) {
-    return NextResponse.json({ error: "質問を入力してください。" }, { status: 400 });
-  }
-  if (municipality) {
-    const validMunicipality = getMunicipalities().some((item) => item.active && item.slug === municipality);
-    if (!validMunicipality) {
-      return NextResponse.json({ error: "自治体指定が不正です。" }, { status: 400 });
-    }
-  }
-  const searchQuery = buildSearchQuery(query);
-
-  const {
-    GEMINI_API_KEY,
-    SUPABASE_URL,
-    SUPABASE_SERVICE_ROLE_KEY,
-    GROQ_API_KEY,
-  } = process.env;
-  if (!GEMINI_API_KEY || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY || !GROQ_API_KEY) {
-    return NextResponse.json(
-      { error: "AI検索の環境変数が未設定です。" },
-      { status: 500 }
-    );
-  }
-
-  // 1) クエリの埋め込み
-  let queryEmbedding: number[] | null = null;
-  try {
-    const r = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=${GEMINI_API_KEY}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "models/gemini-embedding-001",
-          content: { parts: [{ text: query }] },
-          taskType: "RETRIEVAL_QUERY",
-          outputDimensionality: 768,
-        }),
-      }
-    );
-    if (!r.ok) {
-      return NextResponse.json(
-        { error: `Gemini embedding error: ${r.status}` },
-        { status: 502 }
-      );
-    }
-    const j = (await r.json()) as { embedding?: { values?: number[] } };
-    queryEmbedding = j.embedding?.values ?? null;
-  } catch (e) {
-    return NextResponse.json(
-      { error: `Gemini呼び出しに失敗しました: ${(e as Error).message}` },
-      { status: 502 }
-    );
-  }
-  if (!queryEmbedding || queryEmbedding.length === 0) {
-    return NextResponse.json({ error: "クエリの埋め込みに失敗しました。" }, { status: 502 });
-  }
-
-  // 2) Supabase pgvector で類似検索
-  const sb = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
-    auth: { persistSession: false },
-  });
-  const { data: matches, error: rpcErr } = await sb.rpc("match_council_chunks", {
-    query_embedding: queryEmbedding,
-    match_count: AI_RPC_MATCH_COUNT,
-    filter_municipality: municipality,
-  });
-  if (rpcErr) {
-    return NextResponse.json(
-      { error: `Supabase検索エラー: ${rpcErr.message}` },
-      { status: 500 }
-    );
-  }
-  const sources = selectAiSources((matches as AiSearchSource[] | null) ?? [], searchQuery);
-
-  // 3) Groq で根拠付き回答を生成
-  if (sources.length === 0) {
-    return NextResponse.json({
-      answer: "関連する議事録が見つかりませんでした。",
-      sources: [],
-    } satisfies AiSearchResponse);
-  }
-
-  const contextBlock = sources
-    .map(
-      (s, i) =>
-        `[${i + 1}] ${s.municipality} ${s.meeting_name}${s.agenda_title ? `／${s.agenda_title}` : ""}${(s.speaker_name ?? s.speaker) ? `／${s.speaker_name ?? s.speaker}` : ""}\n${s.content}`
-    )
-    .join("\n\n");
-
-  const userPrompt = `以下は北海道の地方議会の議事録抜粋です。これを根拠として、市民の質問に日本語で答えてください。
-
-ルール:
-- 抜粋に書かれていない事柄は推測しないこと
-- 不明な場合は「議事録から確認できませんでした」と答えること
-- 回答末尾で根拠とした抜粋番号を [1] [2] のように明記すること
-
-【参考議事録】
-${contextBlock}
-
-【質問】
-${query}`;
-
-  let answer = "";
-  try {
-    const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${GROQ_API_KEY}`,
-      },
-      body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
-        messages: [
-          {
-            role: "system",
-            content:
-              "あなたは地方議会の議事録に基づいて市民の質問に答えるアシスタントです。提示された抜粋以外の知識で回答してはいけません。",
-          },
-          { role: "user", content: userPrompt },
-        ],
-        temperature: 0.2,
-      }),
-    });
-    if (!r.ok) {
-      return NextResponse.json(
-        { error: `Groqエラー: ${r.status}` },
-        { status: 502 }
-      );
-    }
-    const j = (await r.json()) as {
-      choices?: Array<{ message?: { content?: string } }>;
-    };
-    answer = j.choices?.[0]?.message?.content ?? "";
-  } catch (e) {
-    return NextResponse.json(
-      { error: `Groq呼び出しに失敗しました: ${(e as Error).message}` },
-      { status: 502 }
-    );
-  }
-
-  return NextResponse.json({ answer, sources } satisfies AiSearchResponse);
+  return NextResponse.json(
+    { error: "AI検索は終了しました。通常検索をご利用ください。" },
+    { status: 410 }
+  );
 }
