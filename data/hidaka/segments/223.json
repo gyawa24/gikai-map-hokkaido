@@ -1,0 +1,117 @@
+[
+  {
+    "id": "hidaka-223-1-001",
+    "municipality": "hidaka",
+    "council_id": 223,
+    "council_name": "令和 ６年  ２月第２回会議",
+    "schedule_id": 1,
+    "schedule_name": "02月21日－01号",
+    "date": "2024-02-21",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案書の１ページをお開き願います。議案第１号　令和５年度日高町一般会計補正予算（第11号）につきましてご説明を申し上げます。\n　このたびの補正につきましては、国の物価高騰対応重点支援地方創生臨時交付金の補正であります。\n　第１条は、歳入歳出予算の補正で、歳入歳出予算の総額に歳入歳出それぞれ4,501万8,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ121億8,861万8,000円といたそうとするものでございます。\n　４ページをお開きください。初めに、歳入でございます。15款国庫支出金、２項国庫補助金、２目民生費国庫補助金につきましては、物価高騰対応重点支援地方創生臨時交付金4,501万8,000円でございます。\n　次に、歳出でございます。５ページをお開き願います。３款民生費、１項社会福祉費、11目物価高騰対策費につきましては、日高町低所得世帯臨時特別給付金4,250万円と、それに対応する事務費173万2,000円、合計4,423万2,000円でございます。\n　13款職員給与費、１項職員給与費、１目職員給与費につきましては78万6,000円の増、低所得世帯臨時特別給付事業に伴う会計年度任用職員の報酬、共済費、費用弁償の増及び職員の時間外手当の増でございます。なお、この事業につきましても繰越協議が調い次第、繰越明許の予算提案を予定しております。\n　以上が本議案の内容でございます。ご承認くださいますようよろしくお願い申し上げます。",
+    "text_length": 627,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/223.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hidaka-223-1-002",
+    "municipality": "hidaka",
+    "council_id": 223,
+    "council_name": "令和 ６年  ２月第２回会議",
+    "schedule_id": 1,
+    "schedule_name": "02月21日－01号",
+    "date": "2024-02-21",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私何回でも要望しておったのですけれども、均等割世帯まで枠が広がったということでございます。それで、５ページの均等割のみの課税世帯数の見込みとこども加算の人数を教えていただきたいと思います。",
+    "text_length": 94,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/223.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hidaka-223-1-003",
+    "municipality": "hidaka",
+    "council_id": 223,
+    "council_name": "令和 ６年  ２月第２回会議",
+    "schedule_id": 1,
+    "schedule_name": "02月21日－01号",
+    "date": "2024-02-21",
+    "speaker": "副町長（深根英範君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまのご質問にお答えいたします。\n　均等割のみの世帯の件数でございますけれども、350件を予定してございます。また、こども加算の件数でございますけれども、150件を予定しているところでございます。\n　以上であります。",
+    "text_length": 110,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/223.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hidaka-223-1-004",
+    "municipality": "hidaka",
+    "council_id": 223,
+    "council_name": "令和 ６年  ２月第２回会議",
+    "schedule_id": 1,
+    "schedule_name": "02月21日－01号",
+    "date": "2024-02-21",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "確認させていただきたいのですが、課税世帯の被扶養者になっている方が別居等々でおられるかと思うのですが、その方についてはどのような方策で対象、あるいは対象にならないを判断されるのでしょうか。",
+    "text_length": 94,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/223.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hidaka-223-1-005",
+    "municipality": "hidaka",
+    "council_id": 223,
+    "council_name": "令和 ６年  ２月第２回会議",
+    "schedule_id": 1,
+    "schedule_name": "02月21日－01号",
+    "date": "2024-02-21",
+    "speaker": "副町長（深根英範君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまのご質問にお答えします。\n　これまで給付してきました非課税世帯の区分のときにも同じようなことで調査といいますか、申請をしていただいているのですけれども、チェックをつけていただいて、その扶養でないということを確認の上、支給するということになってございます。ですので、これまでの非課税世帯と同じやり方でやりますということでございます。",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/223.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        18
+      ]
+    }
+  }
+]

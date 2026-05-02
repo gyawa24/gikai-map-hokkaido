@@ -1,0 +1,554 @@
+[
+  {
+    "id": "hidaka-210-1-001",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案書の１ページを御覧ください。議案第１号　日高町企業版ふるさと納税基金条例の制定についてご説明申し上げます。\n　本条例は、地域再生法に規定するまち・ひと・しごと創生寄附活用事業に要する経費に充てるため、新たに企業版ふるさと納税基金を設置しようとするものでございます。\n　２ページを御覧ください。日高町企業版ふるさと納税基金条例であります。\n　第１条では設置目的について、第２条では基金積立てについて一般会計予算で定めることにし、第３条では基金の管理方法について、第４条については運用益金の処理方法について、第５条では基金の繰替え運用について、第６条では基金の処分方法について、第７条では委任について定めております。\n　附則としまして、この条例は、公布の日から施行しようとするものでございます。\n　以上が本議案の内容でございます。承認方よろしくお願いします。",
+    "text_length": 379,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-002",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "２点ほど質問させていただきます。\n　企業版ふるさと納税の関係なのですが、個人が寄附をしたと同様の税法上の恩恵というのはあるのでしょうか。税制を活用したということになっていますから、そうなのかなと思っているのですが、改めてお聞きします。\n　それから、これ納税基金条例ですから、現在のふるさと寄附の基金があるかと思うのですが、その基金とは一緒にはならないということで、別な基金をつくるということで解釈してよろしいのでしょうか。\n　以上です。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-003",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員のまず２点目のほうから答弁させていただきます。\n　基金条例のほうは、企業版ふるさと納税については管理については別に条例を定めなさいと国のほうから通知が来ておりまして、ですから例えば歳入の目としては個人のほうと一緒にしてもいいのですけれども、基金条例は別にして管理を確実に別にしなさいというふうになっておりますので、今回基金条例を設置したものでございます。\n　１点目の個人が起業した場合についてでございますが、そちらのほうについてはすぐに回答、調べていなくて勉強不足で申し訳ございませんが、ただ企業版ふるさと納税になっておりますので、企業ということなので、法人になっていないと多分駄目だと思います。法人で最高９割の控除額が得られるものですから、その中には法人住民税、法人税、国税、法人事業税ありますから、基本的には法人ではないと駄目だと思っております。\n　以上でございます。",
+    "text_length": 390,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-004",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "２番（堂前保志君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "２点ほど質問させてもらいます。\n　これに関しましては企業版のふるさと納税実施要綱というのが令和４年の９月26日に発行されているということで告示されておりますけれども、ほかの市町村を見ますと結構早い段階から企業版のふるさと納税に取り組んでいるということがあると思いますけれども、我が町はこう言ってはなんですけれども、少し遅かったのかなという気がしていますけれども、この時期になった理由についてというのと、もう一点は、この要綱の中にありますふるさと納税の寄附の申出書の中の使い道、日高町まち・ひと・しごと創生推進計画に掲げる事業を選択してくださいというふうに書いていますけれども、この日高町まち・ひと・しごと創生推進計画というのはいつ策定されたのか、その２点をお聞きします。",
+    "text_length": 335,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-005",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、堂前議員の１点目の質問からお答えします。\n　企業版ふるさと納税の基金条例について遅れた理由といいますか、出遅れたことについては申し訳ございません。遅れた理由につきましては、地方再生計画というのをつくるのに時間がかかっておりまして、先ほどのいつできたかというのは令和４年３月31日に日高町まち・ひと・しごと創生推進計画というのが国のほうに認められました。それが令和４年３月31日でしたから、それ以降に初めて基金条例を設置して企業版ふるさと納税ができるものですから、こちらのまち・ひと・しごと創生推進計画の策定が遅れたことによるものでございます。こちらにつきましては、最初のほうは国のほうもこの計画が厳しかったのですけれども、だんだん、だんだんかなりアバウトというか、大ざっぱな計画でも認めてくれるようになりましたので、そちらが認められることによって初めてつくったもので、それによって遅れたものでございます。\n　また、こちらの日高町まち・ひと・しごと創生計画につきましては、基本的に日高版の総合戦略の３本柱の事業に寄附金をいただいて、そちらの３本柱に寄附金を充当して事業を起こすようになっております。\n　以上でございます。",
+    "text_length": 512,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-006",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "２番（堂前保志君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　もう一点、今言われた推進計画は令和３年12月に策定された第２期の日高町創生総合戦略の中に含まれているというふうに理解していいのでしょうか。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-007",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "堂前議員のご質問にお答えします。\n　日高町総合戦略を基本にしまして、その後日高町まち・ひと・しごと創生推進計画を策定したものでございます。その中の３本柱というのが基本目標が３つございまして、１つ目が町の強みを雇用の場につなげる、２点目につきましては海があり、山を抱く町で子供を産み育てたい人を増やす、３点目がこの町に誇りを持ってアクティブに住み続けたいと思える生活を支える、この３点を目標にしております。\n　以上でございます。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-008",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "２番（堂前保志君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　最後ですけれども、ホームページ見させてもらうと、もう既に２件ほど企業版のふるさと納税でいただいているということで、今後どんどんＰＲをして我が町に納税をお願いしたいということを期待いたしまして質問を終わります。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-009",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "堂前議員の質問にお答えします。\n　ホームページに今２件載せていますけれども、まだ今年度中にお話が１件ございますので、今後ともこういう企業版ふるさと納税について寄附をいただければ町の事業にも充てれますので、ＰＲ等をしていきたいと思います。\n　以上でございます。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-010",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案書の３ページを御覧願います。議案第２号　令和４年度日高町一般会計補正予算（第１３号）についてご説明申し上げます。\n　このたびの補正につきましては、災害復旧事業の補正、新栄団地建設事業及び除雪費の増に伴う補正が主な内容でございます。\n　第１条は、歳入歳出予算の補正で、歳入歳出予算の総額に歳入歳出それぞれ３億8,226万円を追加し、歳入歳出予算の総額を歳入歳出それぞれ131億3,078万7,000円といたそうとするものでございます。\n　第２条、地方債の変更につきましては、第２表、地方債補正によりご説明いたします。\n　６ページをお開き願います。第２表、地方債補正でございます。公営住宅建設事業の限度額を１億5,700万円追加し、２億8,690万円に、現年単独災害復旧事業の限度額を2,890万円追加し、２億200万円に、現年補助災害復旧事業の限度額を730万円追加し、7,970万円とし、地方債の合計を14億2,858万1,000円といたそうとするものでございます。\n　８ページをお開き願います。初めに、歳入でございます。15款国庫支出金、１項国庫負担金、３目災害復旧費国庫負担金につきましては669万2,000円追加し、３億2,782万7,000円となるものでございます。\n　２項国庫補助金、４目土木費国庫補助金につきましては、新栄団地建設事業に伴う１億5,700万円の増でございます。\n　16款道支出金、２項道補助金、４目農林水産業費道補助金につきましては、林道災害復旧工事818万3,000円に対する補助金658万2,000円の増でございます。\n　19款繰入金、１項基金繰入金、１目財政調整基金繰入金につきましては1,878万6,000円の増、財源調整によるものでございます。\n　22款町債につきましては、第２表、地方債補正でご説明したので、省略させていただきます。\n　次に、歳出でございます。10ページをお開き願います。３款民生費、１項社会福祉費、２目社会福祉施設費につきましては、共同水道維持管理業務委託230万円の増でございます。\n　８款土木費、２項道路橋梁費、１目道路維持費につきましては、門別地区の除雪委託料1,700万円、日高地区の除雪委託料1,500万円の増によるものでございます。\n　６項住宅費、２目住宅建設費につきましては新栄団地に関する３億1,400万円増で、新栄団地工事監理委託350万円、解体前事前調査150万円、住棟建設として工事費２億3,700万円、周辺整備工事4,200万円、除却工事3,000万円でございます。\n　11款災害復旧費、１項農林水産業施設災害復旧費、１目農業用施設災害復旧費につきましては執行残の整理で、農業用施設応急復旧工事21万8,000円減、排水路土砂撤去工事10万4,000円減でございます。\n　次のページを御覧ください。２目林業用施設災害復旧費につきましては、委託料は執行残51万3,000円減、工事請負費については林道の補助災害として818万3,000円増、単独災害の執行残として158万9,000円の減、合わせて659万4,000円の工事請負費でございます。\n　２項公共土木施設災害復旧費、１目土木施設災害復旧費につきましては、委託料594万7,000円減は執行残の整理、工事請負費2,460万5,000円の増につきましては設計変更等による増額でございます。\n　２目現年災害復旧費につきましては、委託料につきましては執行残の整理で267万3,000円の減、工事請負費につきましては補助災害事業として1,366万3,000円の増、査定の結果と事業精査によるものでございます。\n　３項その他公共施設・公用施設災害復旧費、１目その他公共施設・公用施設災害復旧費につきましては執行残の整理で、日高デジタル中継局作業路が40万4,000円減、日高銀嶺作業路が30万円減でございます。\n　12ページをお開きください。４項文教施設災害復旧費、１目社会教育施設災害復旧費につきましては執行残８万7,000円の減。\n　５項厚生労働施設災害復旧費、１目民生施設災害復旧費につきましては執行残41万9,000円の減でございます。\n　なお、災害復旧事業では補助災害の林道災害復旧事業、公共土木現年災害復旧事業、公共土木の単独災害復旧事業、道営農地整備事業及び公営住宅建設事業が繰越明許の予定でございます。繰越協議後、３月会議または協議が調わない場合は専決等で繰越明許の追加補正を提案したいと思います。\n　以上が本議案の内容でございます。ご承認くださいますようよろしくお願い申し上げます。",
+    "text_length": 1915,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-011",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "１１番（真壁悦夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新栄団地の住棟建設工事なのですが、基本的に設計はこれまでと変わらないというお話だったのですけれども、内部についての改善というのは行われているのでしょうか。例えば一番問題になっている冬期間、入り口のドアを開けたら寒気が吹き込むと、風除室がないという問題を改善したのかどうかということをまずお聞きしたいと思います。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-012",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "管財建築課長（只野利一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまの質問にお答えいたします。\n　基本的に今回については前年と同じような形になっておりますので、風除室等についても今回も設置はしないというような住宅になっております。\n　以上です。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-013",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "１１番（真壁悦夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "多くの住民の方がこれは非常に不便だということで寒いということを共通の認識で言っているので、そういうことは改善してもらいたいということを何回も言ってきたのですけれども、全然改善の努力が見られないというふうに私は思うのですけれども、どうなのですか。それは制度的にできないのか、それとも行政としての地域の実情に応じて改善して努力して、それでもできないのか。その辺はどうなのですか。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-014",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "管財建築課長（只野利一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n　風除室につきましては、補助金のほうが対象から外れる部分が多くなってしまうということで町の持ち出しも結構増えてしまうという部分もありまして、その辺も考慮いたしまして設置のほうは申し訳ないのですけれども、考えていないというようなことになっております。\n　以上です。",
+    "text_length": 141,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-015",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "１１番（真壁悦夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一般住宅では考えられない話なのです。そういうことに住民の方に寄り添って改善していくというのが町の行政の在り方だと私は思います。福祉の一番大事なことだと思いますので、これからも努力していただきたいというふうに思います。\n　あと、新栄団地の建設というのは令和11年度までですか、除却も含めて非常に大きな、一つの大きなまちをつくるということになっていくのですが、きれいな美しい環境づくりというのは大事だと思うのです。あそこのまちが大きく生まれ変わると。そういう美しい環境づくり、美的な、誰が見ても快適な、住んでも快適な、そういう点での設計は心がけたのでしょうか。",
+    "text_length": 278,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-016",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "管財建築課長（只野利一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n　住宅の風除室等につきましては、機能的なものと町の持ち出し、財源の関係、そういうのも全部考慮しながら検討してきておりますし、これからも検討はさせていただきたいとは思います。\n　また、景観につきましては事業を始める前に全体の景観含めた基本設計のほうを発注しまして、基本設計のほうは出来上がっておりますが、今後工事を進めていく中で見直すところは見直していきながら進めていきたいと考えております。その中で、あそこの新栄団地につきましてはもともと団地として戸数の多い、昭和の40年の終わり頃から50年の前半にかけての住宅の密集しているところで、あそこで一つのまちというか、地域になっておりました。今後もそういったことも含めて、先ほども申し上げましたが、景観とそこに住んでいただく方に住みよいような景観なりを考慮しながら進めていきたいと考えております。\n　以上です。",
+    "text_length": 388,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-017",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "10ページの道路維持費の関係だったのですが、町道維持管理及び除雪業務委託増ということで今回3,200万ということなのですが、門別地区、日高地区それぞれ過去の補正、今回の補正入れまして門別地区が9,200万、日高地区が5,611万ということで先ほどの説明で計算されました。そのうち除雪費ってどの程度になっているか分かりますか。教えてください。",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-018",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "建設課長（吉田和彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまの質問にお答えいたします。\n　門別地区におきましては、除雪費につきましては今回補正させていただきましたら、おおよそ2,900万円程度という数字で押さえております。\n　以上です。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-019",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "地域経済課長（小野寺孝君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "日高地区につきましては、１月に補正いたしまして現行2,400万の除雪費で見ております。今回1,500万ということで3,900万。執行状況ですけれども、12月と１月でほぼ2,000万使っておりまして、執行残としては400万しかないということで今回1,500万の追加補正を提出をしております。\n　以上です。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-020",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申し訳ありません。日高のほうはおよそ幾らなのですか、除雪経費。ここの補正が5,611万なのですけれども、そのうち除雪費が、ちょっと今聞こえなかったのですけれども。",
+    "text_length": 81,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-021",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "地域経済課長（小野寺孝君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回補正を認めていただけると3,900万になります。",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-022",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それで、除雪経費、普通の道路と違いまして多分特別交付税の需要額になるかと思うのですが、その辺はどの程度申請されているのか、あるいは除雪費として特別交付税の中で入ってくる見込みがあるのかどうかお聞きをしたいと思います。",
+    "text_length": 108,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-023",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員の質問にお答えします。\n　特別交付税のほうにつきましては申請はしております。ただ、今回の分については申請は間に合わなかったというのが現状でございます。ただ、日高地区と門別地区２つありまして、当然分かりますけれども、要は普通交付税で門別地区はもらい過ぎている、日高地区は普通交付税で除雪費大体ちょんちょんというか、少し足りないかという部分を特別交付税なものですから、２つ合算しますと普通交付税でもらっている分で十分だというぐらいの計算になってしまうものですから、申請はするのですけれども、その分で特別交付税で、もっと雪が降れば別かもしれませんけれども、なかなか特別交付税のほうでは措置されないというのが現状でございます。\n　以上でございます。",
+    "text_length": 324,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "hidaka-210-1-024",
+    "municipality": "hidaka",
+    "council_id": 210,
+    "council_name": "令和 ５年  ２月会議",
+    "schedule_id": 1,
+    "schedule_name": "02月20日－01号",
+    "date": "2023-02-20",
+    "speaker": "水・くらしサービスセンター所長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案書の13ページを御覧願います。議案第３号　令和４年度日高町水道事業会計補正予算（第４号）につきましてご説明申し上げます。\n　第２条であります。予算第３条、収益的収入及び支出の予定額につきましては、最初に収入、第１款水道事業収益、第２項営業外収益を230万円増額し、6,045万円とし、水道事業収益総額を３億6,217万円といたそうとするものであります。\n　次に、支出、第１款水道事業費用、第２項営業外費用を230万円増額し、3,935万4,000円とし、水道事業費用総額を３億6,203万8,000円といたそうとするものであります。\n　次に、内容について予算説明書でご説明申し上げます。15ページをお開き願います。補正予算説明書であります。収益的収入につきましては、第１款水道事業収益、２項営業外収益、２目雑収益、その他雑収益が230万円の増額、合計2,616万9,000円となり、収益的収入の総額を３億6,217万円といたそうとするものであります。主な要因につきましては、里平地区共同水道維持管理業務委託の増であります。\n　次に、収益的支出、１款水道事業費用、２項営業外費用、３目共同水道管理費、修繕費が230万円の増額、合計1,807万9,000円となり、収益的支出の水道事業費用総額を３億6,203万8,000円といたそうとするものであります。里平地区共同水道施設修繕費の増が主な要因であります。\n　以上が本議案の内容であります。ご承認賜りますようよろしくお願いいたします。",
+    "text_length": 642,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        66
+      ]
+    }
+  }
+]

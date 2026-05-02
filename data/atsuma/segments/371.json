@@ -1,0 +1,94 @@
+[
+  {
+    "id": "atsuma-371-1-001",
+    "municipality": "atsuma",
+    "council_id": 371,
+    "council_name": "令和 ５年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月25日－01号",
+    "date": "2023-10-25",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案３件であります。\n　議案第１号　林業専用道（規格相当）幌里チケッペ線開設工事請負契約の締結について。\n　令和5年7月14日に契約締結した、本契約について工事施工中に設計変更の必要が生じたため、地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第２号、林道専用道（規格相当）幌内栄市線開設工事請負契約の締結について。\n　令和５年７月１４日に契約締結した、本契約について工事施工中に設計変更の必要が生じたため、地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第３号、財産の取得について。\n　文書管理システムの取得について、地方自治法及び厚真町議会の議決に付すべき契約等に関する条例に基づき議会の議決をいただこうとするものであります。\n　以上が本日ご提案申し上げております、議案の提案理由であります。よろしくご審議の上ご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 496,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/371.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-371-1-002",
+    "municipality": "atsuma",
+    "council_id": 371,
+    "council_name": "令和 ５年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月25日－01号",
+    "date": "2023-10-25",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/371.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-371-1-003",
+    "municipality": "atsuma",
+    "council_id": 371,
+    "council_name": "令和 ５年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月25日－01号",
+    "date": "2023-10-25",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/371.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "atsuma-371-1-004",
+    "municipality": "atsuma",
+    "council_id": 371,
+    "council_name": "令和 ５年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月25日－01号",
+    "date": "2023-10-25",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/371.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        34
+      ]
+    }
+  }
+]

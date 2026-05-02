@@ -1,0 +1,416 @@
+[
+  {
+    "id": "atsuma-369-1-001",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案３件であります。\n　議案第１号　厚真町交流促進センター外部等改修工事請負契約の締結について。\n　６月２６日に実施した入札の結果に基づき、工事請負契約を締結することについて地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき議会の議決を頂こうとするものであります。\n　議案第２号令和５年度厚真町一般会計補正予算（第５号）について。\n　今回の補正は歳入歳出予算の総額に歳入歳出それぞれ1,518万9,000万を追加し、歳入歳出予算の総額を歳入歳出それぞれ98億8,186万2,000円とするものであります。\n　歳出における補正の内容について。\n　総務費では、法人町民税や道、町道民税などの還付金及び還付加算金、農業費では、こぶしの湯あつまの修繕料としての交流促進センター運営事業費を計上。この補正の財源として一般財源の繰越金を1,518万9,000円と見積り、収支のバランスを取ったところであります。\n　議案第３号　令和５年度厚真町国民健康保険事業特別会計補正予算（第１号）について。\n　今回の補正は、歳入予算で特別財源を確保し、同額の一般財源を減額する歳入予算のみの補正であります。この補正により、加入者の負担する保険料額を軽減しようとするものであります。以上が、本日ご提案申し上げております議案の提案理由であります。\n　よろしくご審議の上、ご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 649,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-002",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-003",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-004",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "（吉岡議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉岡茂樹",
+    "member_faction": "",
+    "text": "今回の補正で、農林水産関係でもって交流センターの運営事業ということで修繕費等々で618万9,000円っていう数字があっておりますけれども、先ほど可決致しました外壁とか屋根の改修、これは予算通りでしたけれども、今回の補正ですね、修繕料でこのような金額上がってきているんですけれども、こぶしの湯については、もう５年前ですか、４年前になりますか。庁舎の関係が浮上する前にこぶしの湯の大改装という構想があったと思いますけれども、こういう修繕費が結構大きい金額が上がってきているんですけれども、これについて将来的な見通しとかそういうものはございますか。",
+    "text_length": 271,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-005",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "こぶしの湯については、一般的に経過年数だけ申し上げますと、２５年ほどの経過年数ということでございますので、そろそろかなりリフォーム等についてはお金がかかるようになるということでございますので、リフォームを中心にしていくのかあるいは、今のインバウンドを含めた流入人口を考慮しながら、思い切って改修をしていくべきなのか、それは検討する時期に来てるなと思います。\n　先般、当該法人の方の決算状況を聞かせていただきましたが、非情に稼働率が高くなってきているということでございます。部屋のですね。稼働率が高くなってきている、そういう情勢を見てますと単なるリフォームだけではなくて思い切った大規模改修、部屋等の増設も含めたことを検討していく時期に来てるなと思います。もちろん検討してすぐ建築というわけにもいきませんので、そろそろ準備を始めたいとそういうふうに考えてございます。以上です。",
+    "text_length": 387,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-006",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "（吉岡議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉岡茂樹",
+    "member_faction": "",
+    "text": "それと、今この交流センターの修繕費ということで、エアコン等の故障でそれに対する修繕っていうふうにあがってきたんですよ。これから北海道も夏本番っていう時期なんですけれども、それで備品購入で３０万程っていう金額があがっているんですけれどもこれでこの３０万で応急的な、なんか機器を導入して手当てをするということなんでしょうか。",
+    "text_length": 160,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-007",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えします。この備品購入につきましてはスポットクーラーと業務用送風機を各２台ずつ購入してその効果について検証しながら、これから猛暑期に入っていきますので、対応について上のほうと協議しながら対応していきたいと思っております。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-008",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-009",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "国保料問題は、随分前回も一般質問でやりましたし、今回の選挙の時にも随分訴えてきました。その時に、私は資料として３月の予算委員会に出された資料で、まだこれは確定ではもちろんありません。予定の資料でそれは承知してますからね。\n　その時の資料が１人あたり調定額と上昇率だけ比較しながら喋りますが、令和５年当初で１人あたり調定額１１万３,８６４円、そして上昇率が１４.９３％というふうに予算委員会の資料がありました。\n　１４％ですのでその前の前年は０.３３％、その前の令和３年４．２９％ですので、あまりにも高い１４％の上昇に対して訴えをし続けてきました。今回一般質問の中で町長から出たのが、今日の資料にもありますけど軽減前の上昇率１８．１１％になっています。ですのでまず１つ聞きたいのはもちろん６月１日の税金確定で数字っていうのは変わると思いますが、当初私は１４.９３％で思っていたのが１８％、これ一般質問していても「えっ１８％」と思ったんですが、１８％まで４％上がったまず1つ理由というかそれを１つ教えてください。それが1つです。\n　軽減前がそれで、当然今軽減８００万繰入れして軽減っていうことになりまして今度は１０．６５％、いわゆる１０％になりました。なりましたというか数字は変わります。ここでちょっと聞きたいのは１０％にした理由ですよね、私に言わせればもっと軽減できなかったのか、８００万は大きい額ですからそう簡単じゃないかも分かりませんけれども、１０.６５％、例えば９．６５％すれば一桁ですからね、１０％というのは私にしてみるとまだまだ大きいなという感じがあります。そのへんで、この１０％に留まったあたりの理由ですね、この２つをお聞きします。",
+    "text_length": 721,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-010",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１８％に増加した理由、当初の予算から４％程度でございますが、この増加した理由、主なものと致しましては被保険者の減少、あと医療費自然増の分ということでこれ合わせまして大体約４％ほど増加したということでございます。ちなみに前年度１８％になった理由でございますが、それらも合わせて説明をさせて頂きたいと思います。\n　まだ医療費指数反映率にかかる国、道補助金その他、国補助金の減少で７％ほど、昨年度の基金を繰り入れた影響で５％ほど、今申し上げました医療費自然増分で１．２％とそもそも納付金の上昇分で１．８％、合わせて３％それに加えまして、今説明いたしました被保険者数の減少分で３％、これらで約１８％前年度から増加したということでございます。\n　今回８００万円にした理由というところでございますが、まだ平成３０年に国保制度の改正によりまして北海道が、財政運営を行った際、北海道から示されております、平成３０年度を基準とする保険料の増加率の推計に置きまして、令和５年度は２２％上昇するものと当初から示されておりました。その示されている上昇率と同程度の水準とすることを目安の１つと致しまして、８００万円繰り入れることとさせていただいております。",
+    "text_length": 515,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-011",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "１０％に止まったの。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-012",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "その今申し上げましたとおり、北海道から示されている平成３０年度を基準とする令和５年度、これが２２％上昇すると示されておりまして、それに合わせるかたちで８００万円を繰入れさせていただくことによりまして、前年度で比較しますと１０％程の上昇率となるということでございます。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-013",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "一般質問でも言いましたけど、激変緩和が終わりですね、この後さらに町長答弁はありましたけど、上がってくだろうと予測がある中で、次年度や次々年度ってのはどういうふうになりますか。２２％に向けて今度はじゃあここまでにする、今度はここまでにするということになっていくんでしょうか。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-014",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今年度激変緩和措置終了しますが、この後国、道の補助金がですね、北海道の方で一律プールした形で計算されてくるという状況が来年度からございまして、それを見据えた形で考えていきたいというふうに考えておりますが、今現在のところ、もうちょっとどういった形にその影響がなってくのかというところが、ちょっと不透明な部分がございまして、具体的な資産等につきましては、今のところしていないという状況でございます。",
+    "text_length": 197,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-015",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "町長に聞きますね。あのどうですか、これはもう本当にこれからも本当に上がり続ける問題を抱えたものだというふうに思っています。それで対応っていうのは本当にどうなんですか。今後の対応をどういうふうに考えられておられるか、もうしょうがないんだと、これはもう医療費はかかるし、いわゆる一定の国保払う人数も世帯数も減ってくし、負担が大きくなるのはしょうがないんだみたいに思われているんでしょうか、どういうふうにこの問題については今後考えられておられるのかお聞きします。",
+    "text_length": 228,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-016",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず社会保障制度そのもので言いますと、税と社会保障制度合わせて国民の負担という形になります。税が投入されない限りですね社会保障料は歳出に合わせてどうしても保険料、いわゆる国民負担率は上がっていかざるを得ないという状況でございます。これについて国が大転換しない限りですね、実際の医療費そのものが徐々に徐々に上がっていく、いわゆる高度医療を受入れられる環境が整っている日本の中では実際に保険料としての負担率は上がっていくだろうというふうに思ってございます。\n　先ほどから話題になってます激変緩和が目標であった２０％というのはですね、厚真町におかれている特定の課題、問題だったわけでございます。\n　これは当面解消に向かっているということでございますが、どうしても自然上昇分については、今後下がっていくというよりは上がっていくんだろうなと、これは当然日本の高齢化率の上昇、健康寿命が延びていかない限りこれを食い止めるのは難しいだろうなとそういうふうに思ってございます。\n　昨今、各市町村で道立、あるいは国立の医療機関等は統廃合されていく中で、市町村立の医療機関も別途どうしていくかという話題が随分と新聞等でも掲載されているとおりでございます。決して国民は医療費を軽減していく医療費が減少していく事を望んでないという以上はですね、それなりの応分の負担をすべきだというふうに考えて、応分の負担がどうしても伴う、ただその応分の負担率をどの様に緩和していくべきなのかは工夫の余地はあるというふうに考えてございます。\n　特に国民健康保険料の場合はですね、応益応能負担というそういう負担割合を最終的に厚真町の６・４をですね６０％、４０％というその配分割合を５０、５０に国としては全国一律にしたいということを我々として強く指導を受けている立場からいくと先ほど申し上げております医療費の自然増とはべつに、６０、４０が５０、５０になるだけでですね、いわゆる受益者負担といわれているところが持ち上がりますので、この負担割合はどうしても上がっていくということになります。\n　やはり医療費全体を圧縮する努力、いわゆる健康寿命を延ばしていく、それから税と社会保障料の国民負担割合の在り方そのものをですね、原理原則あるいはおおもとにかえって議論しない限り、各市町村でそれを差配していく、あるいは調整していくのには限界があるだろうというふうに考えてございます。",
+    "text_length": 1011,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-017",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "軽減策をやるというよりも実際に今回の提案で進められたことに敬意は表してます。まずそれは伝えます。ただ私はやはり上昇率が非常に高いということでは気持ちは変わりません。非常に高いというふうに思ってます。そういう意味では今町長言いましたけど、なにかどういうふうな手立てなり工夫していくかっていうことは今後も絶対に必要だというふうに考えております。そういうようなことをしていくというかそれを進めていくためにも、今回反対の討論をして引き続きこの問題についてはしっかりと策を作っていっていただきたい。そういう意味で継承として反対していきたいと思います。",
+    "text_length": 270,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "atsuma-369-1-018",
+    "municipality": "atsuma",
+    "council_id": 369,
+    "council_name": "令和 ５年  ７月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月03日－01号",
+    "date": "2023-07-03",
+    "speaker": "（高田議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高田芳和",
+    "member_faction": "",
+    "text": "私は賛成の立場から討論をさせて頂きます。この国民健康保険料については自治体だけで解決できる問題ではございません。今回試算から減額する措置を講じてるその町の評価しまして賛成いたします。",
+    "text_length": 91,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/369.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        63
+      ]
+    }
+  }
+]

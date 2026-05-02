@@ -1,0 +1,600 @@
+[
+  {
+    "id": "atsuma-376-1-001",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案１件、承認２件であります。\n　議案第１号　令和５年度厚真町一般会計補正予算（第13号）について。\n　今回の補正は歳入歳出予算の総額に歳入歳出それぞれ1,029万2,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ108億4,126万3,000円とするものであります。\n　歳出における補正の内容については、総務費では、訴訟事件に係る供託金の追加、商工費では、上厚真市街地店舗整備事業の追加であります。この補正の財源として国道支出金の特定財源で280万円、財政調整基金繰入金の一般財源で749万2,000円と見積り、収支のバランスを取ったところであります。\n　承認第１号　専決処分の承認について。\n　令和５年度厚真町一般会計補正予算（第12号）について、地方自治法の規定により専決処分したので、同法の規定により議会の承認をいただこうとするものであります。\n　承認第２号　専決処分の承認について。\n　損害賠償請求事件に係る、訴訟の第一審判決に対し、控訴を提起することについて、地方自治法の規定により専決処分したので、同法の規定により議会の承認をいただこうとするものであります。\n　以上が本日ご提案申し上げております、議案の提案理由であります。\n　よろしくご審議の上ご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 607,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-002",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課財政担当参事",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-003",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書、資料により説明）",
+    "text_length": 13,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-004",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（秋永議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "秋永徹",
+    "member_faction": "",
+    "text": "被告会社と厚真町被告人でありますけれども、費用の分担について、払う気が無いと、課長から言われたのは話し合いで決めると。最初からそういう態度できてる被告会社に話し合って決めるのかどういう手法で決めるのか。",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-005",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "被告会社に弁護士が付いておりますので、その弁護士と厚真町で付いている弁護士の話し合いから始まるかと思います。\n　また、実際にそこの協議は一切していないという状況でありますが、これからになります。ただ、まだ判決が確定しておりませんので最終的な判決が確定してから、そういう話になっていくのかなと考えております。",
+    "text_length": 153,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-006",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（高田議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高田芳和",
+    "member_faction": "",
+    "text": "この供託金469万円の納付期限と、原告の法務と町税滞納してますので、この供託金を差押えすることが可能なのかお伺いします。",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-007",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "供託金の納付期限ですが、１月30日に強制執行の申し立てをしましたので、そこから２週間以内に供託金を法務局のほうに収めるということになっております。\n　この訴訟の一切を弁護士に委任しておりますので、まずは弁護士事務所に供託金を入金し、弁護士から来週の２月14日までに法務局に供託金を納めていただくという流れになります。供託金ですので、これを差押えるということは出来ないということでございます。ただ、相手滞納しておりますので、この損害賠償金ですとか、そういったものをこちらから払う損害賠償金について、それを差し押さえるという手続きが出来ないかということを弁護士事務所とまた相談しておりますので、何らかの方法で税は回収していきたいと考えております。",
+    "text_length": 321,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-008",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "機械２の取扱いですが、機械２は厚真町は争点にしないような、最初から機械額でも、機械２に250万、その時の時価でも払うような話になってますけれど、機械２にその物の争いって出来ないんですか。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-009",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "機械２については、原告は当然、機械２がその当時あったという主張をし続けています。これに対して被告、被告会社もそうですけれども、被告２社としては争ってないと言いますか、当然、町としてはその当時機械があったんだろうということを認めて、裁判に臨んでおりますので、２台分の損害賠償についてこちらは責任を負わなければならないというスタンスで裁判を進めていました。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-010",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "あったとしてもこれ対象外の物ですよね。それを持ってったわけですよね。ちょっと私はそういうふうに記憶しているんだけれども、そういう言い方悪いけど勝手に持ってった物に対して認めてしまうっていうところはどうなんでしょう。やっぱりこちら側に瑕疵があるからやむを得ないという状況なんですか。",
+    "text_length": 140,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-011",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "公売時に２台あったということは間違いないと考えておりまして、それが勝手に持ち出された、ただ持ち出されたその先どうなったかっていうのは、全く分からない状況ですので、まずその当時、２台あったということを認めて、それに関しては町の瑕疵であることを認めて、それに応じようという考えであります。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-012",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（澤口議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "澤口千里",
+    "member_faction": "",
+    "text": "説明を聞かせていただいてちょっと分からなかったので再度説明をいただければと思うんですけれども、15ページの（３）、この控訴の提起っていうところで、町としては出た判決に対して納得をしたけれども、これまでの理解としては、仮執行宣言だけは停止するように申しを立てるのかなと思いきや、控訴の内容というのを（４）を見ると判決に対しても納得いってないんだよということを書いているというふうに理解をしたんですが、この判決に対して町は納得をしているのか、それともしていないから控訴するのかそのへんをもう一度お伺いしてもよろしいですか。",
+    "text_length": 259,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-013",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "第一審の判決の内容については、裁判所の損害額の評価に関しても妥当であるというふうに考えております。それにその通りの損害賠償額を支払う気持ちはありますということなんですが、先ほど申し上げたとおりその強制執行を提出するために、それの手続きのためには、控訴しなければならないという法律上の話で、弁護士からの指示でそうなっております。控訴状に１項、２項、３項書いてありますが、控訴状の決まり文句ではないですけれども、枕詞的なかたちで、こういうふうな控訴の仕方をするということを弁護士からは聞いております。なので第一審の判決自体には不服ということではないのかなというところではあります。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-014",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（澤口議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "澤口千里",
+    "member_faction": "",
+    "text": "じゃあこの控訴を挙げたからといって裁判所側が、厚真町はこの判決に対して不服はあるっていうふうに必ずは認識しないという考えですか。一般司法業界においては、これはセットだから反対しているんじゃないんだなというふうに認識するということですか。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-015",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おそらくそうだと思うんですが、これからこの控訴第二審が始まりまして、多分原告と言いますか、相手方も不服として申し立ててくると思われるんですが、そうなってくるとまた、第二審の審理が継続していきますので、そのなかで、被控訴人の主張立証がなんらかされると思いますが、町側としては、そこまでこれに対してさらに深く立証、反論するということにはならないのかなと思いますが、ちょっとそれは弁護士のこれからの協議になるかと思います。",
+    "text_length": 208,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-016",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（高田議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高田芳和",
+    "member_faction": "",
+    "text": "先ほどの仮執行の関係なんですけれども、民間にそういうのが付くのはいつ倒産するから分からないから債権確保のために、それは付くのはよく分かるんですけれども、自治体逃げも隠れも出来ない、そこに付く背景っていうのを聞いていればお伺いしたいんですが。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-017",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これに関しては、裁判官が自らの判断で附するものということですので、うちの委任している弁護士さんも、何故付いているんだろうと、なんで町に対してこれが付くんだろうというのは非常に疑問であまりない、稀なパターンではないかという見解でした。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-018",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-019",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-020",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-021",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "重層的支援体制整備事業でお聞きします。\n　①地域包括支援センター運営事業委託が2,480万ってなっていますが、Ｒ４年の決算が1,218万。Ｒ５年の予算で1,179万というふうになっています。\n　1,000万以上多くなっている理由教えていただけますか。",
+    "text_length": 125,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-022",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地域包括支援センター運営事業委託料でございますが、こちらにつきましては今年度、令和５年度まで重層的支援体制整備事業の委託のなかで行っておりました、多機関協働の取組、こちらについて再編するかたちで地域包括支援センター運営事業とセットで行うことを予定をしておりまして、その分が増額となっているという状況でございます。多機関協働の取組はこちらのほうで加わったということでございます。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-023",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "多機関事業っていうのは1,000万ぐらい必要になってくるっていう事業ですか。それともう１つ。②、③も1,000万程違わないなんて言いませんけど、②でいけば200万ほど、③でいけば逆に200万ほど減になっているような背景も教えていただけますか。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-024",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "多機関協働部分で約500万円、人件費部分ですね。それに付随しまして、事務費、事業費、その他経費含めましてその程度増額になると。障がい者生活支援体制整備事業につきましてもこれはあくまでも限度額ということでございまして、国の補助金の関係もございまして、この金額でまずは限度額ということで、設定をさせていただいております。この公募の中でどういった事業者のほうから提案をされるかというところは審査のなかで我々確認をしてまいりたいというふうに考えております。",
+    "text_length": 224,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-025",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "（澤口議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "澤口千里",
+    "member_faction": "",
+    "text": "上厚真市街地店舗整備事業についてお伺いしたいんですが、第２回定例会の予算説明資料を拝見をさせていただきますと、改修工事に3,500万、再生可能エネルギー設備・設置工事に3，000万。こういうふうに予算ついているわけですが、これは（１）、（２）のどちらの工事に560万プラスするというふうに考えればいいんでしょうか。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "atsuma-376-1-026",
+    "municipality": "atsuma",
+    "council_id": 376,
+    "council_name": "令和 ６年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月06日－01号",
+    "date": "2024-02-06",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "上厚真市街地店舗改修工事については２つの工事で行うわけでありますけれども、今回の補正については（１）の改修工事、費用によると3,589万3,000円のほうの工事の補正予算の提案でございます。",
+    "text_length": 95,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/376.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        72
+      ]
+    }
+  }
+]

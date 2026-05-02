@@ -1,0 +1,324 @@
+[
+  {
+    "id": "nemuro-610-2-001",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "議会事務局長（大島裕司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\n　御報告申し上げます。\n　初めに、会議の出席状況でありますが、ただいまの出席は16名であります。\n　本日の議事日程及び諸般の報告は、お手元に御配付のとおりでありますので、朗読を省略いたします。\n　以上で報告を終わります。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-002",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "（遠藤輝宣君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\n　議長のお許しをいただきましたので、私から本定例会に関わる申合せ事項について、簡潔に御報告申し上げます。\n　会議の日程でありますが、通年議会の実施により、本定例会の会期を本日、令和５年９月１日より来年、令和６年８月31日までの366日間とし、本開会議会の議会期間は本日１日間とすべきことに意見の一致を見たところであります。\n　以上をもちまして私の報告といたします。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-003",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "財政課長（中野誠君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\n　議案の１ページをお開き願います。\n　議案第68号令和５年度根室市一般会計補正予算（第４号）について御説明いたします。\n　今回の補正は、第１条、歳入歳出予算の補正に記載のとおり、歳入歳出予算の総額に歳入歳出それぞれ8,833万7,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ280億3,200万1,000円とするものであります。\n　補正の内訳につきましては、生後６か月以上の全ての方を対象とした新型コロナウイルスワクチンの令和５年秋開始接種に要する経費であります。\n　財源につきましては、２ページの歳入に記載のとおり、国庫支出金、諸収入で措置するものであります。\n　３ページへ参ります。\n　歳出予算について御説明いたします。\n　４款衛生費、１項保健衛生費7,327万7,000円につきましては、ＸＢＢ対応ワクチンを基本としたワクチン接種に係る接種券発送業務、コールセンター業務などの委託料が主な内容であります。\n　13款職員費、１項職員費1,506万円につきましては、ワクチン接種に係る時間外勤務手当等の職員手当及び会計年度任用職員給与費であります。\n　以上の結果、歳出合計欄に記載のとおり、今回の補正額は8,833万7,000円となるものであり、詳細につきましては、別冊の事項別明細書２ページから13ページに記載のとおりでありますので、説明は省略をさせていただきます。\n　以上で説明を終わります。御審議のほど、よろしくお願い申し上げます。",
+    "text_length": 636,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-004",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\n　内容的には、全額国庫補助事業に当たりますし、ワクチン接種の事業で、これまでも継続してきている事業ですので、基本的には賛成の立場でございますが、ワクチン接種に関しては、やはり状況チェックみたいなものを、せっかくのこちら予算ですから、確認などをさせていただきたいと思いまして、質疑に立たせていただきました。\n　まず、今回の接種になるんですけど、何回目の接種にこれはなるんでしょう。その辺ちょっと詳しく説明していただきたいと思います。",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-005",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "新型コロナウイルスワクチン接種対策監（斉藤貴志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の接種、補正予算に関わります事業としましては、国でいうところの令和５年度秋冬接種という形になりますけれども、この秋冬接種の対象となります65歳以上、また一般の方を合わせてお答えをさせていただきます。\n　65歳以上及び基礎疾患等ある方、それから医療従事者の方というのは、今回７回目という形になります。また、そのほか一般の方につきましては、５回目の接種となります。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-006",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これでもう７回目になるということが分かりました。\n　それで、対象者は先ほどの説明でゼロ歳以上ということでしたけども、具体的に実際にこれを受けられる方というのはどういった条件の方になるか、もう少し詳しく説明していただきたいと思います。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-007",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "新型コロナウイルスワクチン接種対策監（斉藤貴志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の対象者につきましては、２回接種、いわゆる初回接種という表現をしますが、２回接種を終了された方で、前回接種から３か月以上の方で約１万9,000人という形になります。",
+    "text_length": 84,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-008",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そうすると、そういう方たちに対して、今回アナウンスをしていくということになると思うんですが、今回のワクチン、先ほどのお話ではいわゆる秋冬対応ということですけども、今回補正予算が通った後の、いわゆるワクチン接種の期間というか、時期的には、どういったタイミングでアナウンスをして、どういった形で接種がされていくか、その辺のところを少し詳しく説明していただきたいと思います。",
+    "text_length": 184,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-009",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "新型コロナウイルスワクチン接種対策監（斉藤貴志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の接種ということになります。\n　国といたしましては、令和５年12月までに接種を完了するという方針を出されておりまして、当市といたしましては、ワクチン、今後の確保状況にはよってくるんですけれども、今現在、10月の中旬から開始をしたいというふうに考えております。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-010",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、今、ワクチンのいわゆる確保状況ということですけど、今回、先ほどもＸＢＢ株というお話がありましたけど、具体的に今回接種するワクチンというのはどういうもので、その確保については順調にいくものかどうか、その辺の確認をしておきたいと思います。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-011",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "新型コロナウイルスワクチン接種対策監（斉藤貴志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回、秋冬接種に使用するワクチンにつきましては、オミクロン株の派生型でありますけれども、ＸＢＢの1.5の対応のワクチンという形になります。\n　本品につきましては、私の記憶ですが、７月７日に薬事承認されたものでありまして、ファイザー社、モデルナ社ということになりますが、そちらのワクチンの確保というのが、総数ベースではまだちょっと流動的というふうな情報も入っております。\n　ですので、当面、来る量に併せまして集団接種の期間等を設定していきたいなというふうには考えておりますが、国の方針としましては、12月中にはということなので、そこまでには終了できるものと見込んでおります。",
+    "text_length": 286,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-012",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、全体の流れをお聞きしたんですけども、実際、６回終わっていることになると思うんですけども、いろんな細かい、ニュース等々見ていると、副反応のある方が次は受けないといったケース等もかなりあるようにお聞きしています。\n　それで、現実的に、この今まで６回行ってきた、その接種状況というんですか、接種率というのは一定に保たれているんですか。それとも、今、言ったような副反応を恐れる方とか、回数も増えていますから、言い方は悪いんですけど、もう何かそこまで受けなくてもとか、あるいは５類に変わったということで、接種をされない方等々も出てくるような気がするんですけども、状況的にはどのようになっているか、確認の意味で、１回目からの推移を教えていただければと思います。",
+    "text_length": 326,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-013",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "新型コロナウイルスワクチン接種対策監（斉藤貴志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "接種の状況ということになります。\n　ワクチン接種に関して、スタート、初回接種と先ほど申しました１回目と２回目、そこの終了時の接種率でいきますと、初回接種を行った方、現在把握している率ですが、およそ全体で82％が実施していると。特に65歳以上の方に関しましては、93.4％というところからスタートをしております。\n　もちろん、それ以降に関しましても、集団接種ではありませんが、随時接種の機会は開放しておりますので、追加という形で新規に来られる方もいらっしゃるんですが。\n　そういった状況からスタートしまして、実は今年度、春接種は65歳以上の方、それから医療従事者の方ということで限定ではあったんですが、春接種におきましては、65歳以上の方での接種率は55％というような状況ではございました。\n　こちらにつきましては、相当、ですから下がっているなというところがございます。体感としましても、やはり集団接種会場においても、予約状況を見ますと、やはり相当減ってきているなというふうには捉えていますし、一般の方、65歳未満の方につきましては、さらに接種率は下がっているのかなというような、体感では感じております。\n　もちろん、その背景としましては、先ほど議員おっしゃったように、５類への移行ですとか、風評的なものではありますけれども、あまりコロナに関しての危機感が薄まっているというところもあるのかなとは、体感では思いますけれども、実績として、今、そういうような状況ではあります。",
+    "text_length": 635,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "nemuro-610-2-014",
+    "municipality": "nemuro",
+    "council_id": 610,
+    "council_name": "令和 ５年  ９月開会議会",
+    "schedule_id": 2,
+    "schedule_name": "09月01日－01号",
+    "date": "2023-09-01",
+    "speaker": "（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "状況的なこともよく分かりました。\n　ただ、予算的には、先ほどお話あったように、１万9,000人分を見ているってことですから、実際に接種率が落ちていく中では、執行の結果として、半分ぐらいしか執行されない可能性もあるというように、そういうふうに捉えておいてよろしいですよね。\n　それで、今、５類に変わりましたけども、やっぱり大変な、感染症対策をしっかりやんなきゃいけないコロナだと思っていますので。\n　先般も、いわゆる感染防止対策のチラシを入れていただいたりして、市がしっかりと対応、対策をやっていただいているなということを理解していますので、引き続き、いわゆる感染防止対策にしっかり努めながら、立ち向かっていくということと、あわせて接種率は落ちていますけども、しっかりと理解をしていただいて、やっぱり接種すべき方についてはしっかりしていただくようなアナウンスをやっていただいて、この事業をしっかりやることと、市内の感染防止対策、感染が拡大していかないことを秋冬に向かってしていかなければいけないと思いますので、その辺また定期的なチラシの配布ですとか、様々な対策を取っていただいて、立ち向かっていくと、やっていただきたいなということをお願いして終わりたいと思います。よろしくお願いいたします。",
+    "text_length": 544,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/610.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  }
+]

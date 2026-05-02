@@ -1,0 +1,209 @@
+[
+  {
+    "id": "hokuto-334-2-001",
+    "municipality": "hokuto",
+    "council_id": 334,
+    "council_name": "令和 ３年 １２月 臨時会（第６回）",
+    "schedule_id": 2,
+    "schedule_name": "12月22日－議案説明・質疑・討論・採決－01号",
+    "date": "2021-12-22",
+    "speaker": "市長（池田達雄君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "－登壇－\n　ただいま上程されました、議案第１号令和３年度北斗市一般会計補正予算につきまして、提案理由を御説明申し上げます。\n　今回の補正予算は、国のコロナ克服・新時代開拓のための経済対策における子育て世帯に対する給付金の支給について補正を行うものでございます。\n　本給付金の支給にあっては、先般、第４回定例市議会において、国の通達等を受け、対象となる１８歳以下の子供１人当たり１０万円の給付のうち、先行給付分の５万円を年内に支給開始するための関係経費を議決いただいたところでございますが、議決後の１２月１５日に、国より残りの５万円相当の給付については、クーポンによる給付を基本としながらも、自治体の実情に応じて現金での対応も可能であるとされたことから、近隣自治体の動向も勘案した中で、本市においては現金給付とすることを判断したところでございます。\n　初めに、歳出から申し上げますと、第２款総務費の諸費で、子育て世帯への臨時特別給付金について、給付金３億４,０５０万円及び支給事務を処理するための関係経費２２９万２,０００円を増額計上しており、クリスマスや年末の消費需要を踏まえ、最短では本年９月分の児童手当支給対象となる児童等について、いわゆるプッシュ型の給付により、合わせて１０万円の年内給付が可能となります。\n　なお、対象者は全体で２,９２４世帯、５,２７５人となり、最短の振込日は、さきに議決をいただいた先行給付分の５万円と合わせ、１２月２４日に一括して１０万円を入金することとし、対象者へはホームページ及び文書による通知でお知らせいたします。\n　歳入につきましては、歳出に見合う国庫支出金を増額計上しております。\n　以上の結果、歳入歳出にそれぞれ３億４,２７９万２,０００円を追加計上し、総額を２３５億１,１９９万８,０００円とするものでございます。\n　以上、よろしく御審議賜りますようお願い申し上げまして、提案理由の説明を終わります。",
+    "text_length": 822,
+    "source": {
+      "minutes_file": "data/hokuto/minutes/334.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hokuto-334-2-002",
+    "municipality": "hokuto",
+    "council_id": 334,
+    "council_name": "令和 ３年 １２月 臨時会（第６回）",
+    "schedule_id": 2,
+    "schedule_name": "12月22日－議案説明・質疑・討論・採決－01号",
+    "date": "2021-12-22",
+    "speaker": "７番（髙村智君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "児童手当の分ではない、高校生の分についてお聞きしたいと思います。\n　最短でいつ郵送されて、いつから受け付けて、一番早い振込、これ来た順に振り込んでいると、きっとばらばらになっていくと思いますので、市としていつを目がけてまとめていくのか、それとも本当にばらばらで来た順番に入れていくのか、ちょっとそこら辺教えていただければと思います。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/hokuto/minutes/334.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hokuto-334-2-003",
+    "municipality": "hokuto",
+    "council_id": 334,
+    "council_name": "令和 ３年 １２月 臨時会（第６回）",
+    "schedule_id": 2,
+    "schedule_name": "12月22日－議案説明・質疑・討論・採決－01号",
+    "date": "2021-12-22",
+    "speaker": "子ども・子育て支援課長（松本教恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "髙村議員の御質問にお答えしたいと思います。\n　高校生の分につきましては、今の一括給付が終わり、年が明けて１月４日以降に、こちらのほうになるべく早い時期に送付したいというふうに、連絡したいと思っております。\n　それで、その部分につきましては、１月の末くらいの振込給付になると思っております。\n　以上です。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/hokuto/minutes/334.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hokuto-334-2-004",
+    "municipality": "hokuto",
+    "council_id": 334,
+    "council_name": "令和 ３年 １２月 臨時会（第６回）",
+    "schedule_id": 2,
+    "schedule_name": "12月22日－議案説明・質疑・討論・採決－01号",
+    "date": "2021-12-22",
+    "speaker": "子ども・子育て支援課長（松本教恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "すみません。随時ではなくてまとめてと、ある程度まとめてという形になると思います。",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/hokuto/minutes/334.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hokuto-334-2-005",
+    "municipality": "hokuto",
+    "council_id": 334,
+    "council_name": "令和 ３年 １２月 臨時会（第６回）",
+    "schedule_id": 2,
+    "schedule_name": "12月22日－議案説明・質疑・討論・採決－01号",
+    "date": "2021-12-22",
+    "speaker": "１４番（工藤秀子君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤秀子",
+    "member_faction": "新政会",
+    "text": "今、高校生の分は髙村議員のほうからの説明で分かりました。\n　それでちょっと確認です。１０万円を一括で２４日にということでしたが、児童手当受給している方には全員それでそつなく行けるのかどうか。職員の方も大変な思いをして事務処理していると思うのですが、それで行けるのかどうか。\n　その中で何人か、銀行によって、ここは２４日ではなくて２８日になるかもしれない、そういうところはないのかどうかの確認と、それと前回のときも質問したのですが、所得制限ですね、９６０万円の撤廃することはないと思うのですが、一応確認で。\n　市民からもいろいろ言われました。そんなにもらっているのなら出す必要ないだろうという人と、それでも同じ税金払ったりしているのだから、不公平ではないかという話も出ていましたので、ぜひその辺の見解をもう一度、お知らせ願えればと思いますが、いかがですか。",
+    "text_length": 377,
+    "source": {
+      "minutes_file": "data/hokuto/minutes/334.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hokuto-334-2-006",
+    "municipality": "hokuto",
+    "council_id": 334,
+    "council_name": "令和 ３年 １２月 臨時会（第６回）",
+    "schedule_id": 2,
+    "schedule_name": "12月22日－議案説明・質疑・討論・採決－01号",
+    "date": "2021-12-22",
+    "speaker": "子ども・子育て支援課長（松本教恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "工藤議員の質問にお答えしたいと思います。\n　児童手当をいただいている世帯については、２４日に振込、確実にやります。ただ、振込不能となった場合、例えばこちらのほうで把握している口座でない口座に変わった場合とかは、また、こちらのほうに何件か戻ってくる場合もありますけれども、その部分についても早急にという形をとりたいと思っております。\n　あと、９６０万円以上の方についてですけれども、そこについては、今、国の制度にのっとってこの給付という部分を進めていますので、現在のところは９６０万円以上の世帯についての支給というのは考えておりません。\n　以上です。",
+    "text_length": 274,
+    "source": {
+      "minutes_file": "data/hokuto/minutes/334.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hokuto-334-2-007",
+    "municipality": "hokuto",
+    "council_id": 334,
+    "council_name": "令和 ３年 １２月 臨時会（第６回）",
+    "schedule_id": 2,
+    "schedule_name": "12月22日－議案説明・質疑・討論・採決－01号",
+    "date": "2021-12-22",
+    "speaker": "１６番（小泉征男君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "参考までにちょっとお尋ねしますけれども、今回の対象者の平均年収、もし分かりましたら教えてください。\n　それから、９６０万円というのは相当な収入だと思うのですが、この対象者の中の９００万円以上でも８００万円以上でもいいのですけれども、この人たちの人数がどのくらいいるのか、その辺、分かりましたら教えてください。分からなければ結構ですから。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/hokuto/minutes/334.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "hokuto-334-2-008",
+    "municipality": "hokuto",
+    "council_id": 334,
+    "council_name": "令和 ３年 １２月 臨時会（第６回）",
+    "schedule_id": 2,
+    "schedule_name": "12月22日－議案説明・質疑・討論・採決－01号",
+    "date": "2021-12-22",
+    "speaker": "子ども・子育て支援課長（松本教恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n　平均年収については、こちらのほうで把握しておりません。ただ、９６０万円以上の方については、特例給付の方になります。この方たちは２４４人いらっしゃいます。（発言する者あり）",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/hokuto/minutes/334.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "hokuto-334-2-009",
+    "municipality": "hokuto",
+    "council_id": 334,
+    "council_name": "令和 ３年 １２月 臨時会（第６回）",
+    "schedule_id": 2,
+    "schedule_name": "12月22日－議案説明・質疑・討論・採決－01号",
+    "date": "2021-12-22",
+    "speaker": "子ども・子育て支援課長（松本教恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申し訳ございません。\n　２４４人は９６０万円以上なのですけれども、８００万円、９００万円以上はどのくらいというのは分かりません。\n　以上でございます。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/hokuto/minutes/334.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        29
+      ]
+    }
+  }
+]

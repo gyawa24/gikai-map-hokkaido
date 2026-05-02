@@ -1,0 +1,485 @@
+[
+  {
+    "id": "fukushima-106-2-001",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "永年勤続功労者、在職15年以上、吉田栄光殿。",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-002",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "在職10年以上、佐藤政隆殿。",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-003",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、小林昭一殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-004",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、宮本しづえ殿。",
+    "text_length": 11,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-005",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、髙野光二殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-006",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、円谷健市殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-007",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、紺野長人殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-008",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、矢吹貢一殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-009",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、山田平四郎殿。",
+    "text_length": 11,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-010",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、星公正殿。",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-011",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、遊佐久男殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-012",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、佐藤雅裕殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-013",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、鈴木智殿。",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-014",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、佐久間俊男殿。",
+    "text_length": 11,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-015",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "議会事務局次長（星貴文君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、椎根健雄殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-016",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "知事（内堀雅雄君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "11月県議会臨時会が開催されるに当たり、緊急に対応すべき重要な議案を提出いたしましたので、その概要を御説明申し上げます。\n　去る10月７日に県人事委員会から期末手当の改定等を内容とする勧告があったところであり、県といたしましては、このうち期末手当の改定について、勧告制度の趣旨、その他諸般の事情を総合的に勘案した結果、勧告どおり所要の改定を行うこととし、「職員の給与に関する条例の一部を改正する条例」など条例５件を今臨時会に提出いたしました。\n　また、その他の議案といたしましては「専決処分の報告及びその承認について」１件を提出いたしております。\n　慎重に御審議の上、速やかな御議決をお願い申し上げます。",
+    "text_length": 302,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-017",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "18番（佐藤義憲君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "商労文教委員長報告。\n　本委員会に付託されました知事提出議案に対する委員会の審査経過及び結果について御報告申し上げます。\n　委員会は、本日開会、慎重に審査いたしました。\n　今回審査いたしました議案は、知事提出議案第６号専決処分の報告及びその承認についてのうち本委員会所管分、以上１件であります。\n　これが審査に当たりましては、関係当局から詳細な説明を聴取し、質疑応答を重ねた後、採決いたしました結果、承認すべきものと決定いたしました。\n　以上、御報告申し上げます。",
+    "text_length": 232,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-018",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "20番（宮川政夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "土木委員長報告。\n　本委員会に付託されました知事提出議案に対する委員会の審査経過及び結果について御報告申し上げます。\n　委員会は、本日開会、慎重に審査いたしました。\n　今回審査いたしました議案は、知事提出議案第６号専決処分の報告及びその承認についてのうち本委員会所管分、以上１件であります。\n　これが審査に当たりましては、関係当局から詳細な説明を聴取し、質疑応答を重ねた後、採決いたしました結果、承認すべきものと決定いたしました。\n　以上、御報告申し上げます。",
+    "text_length": 230,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-019",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "28番（先﨑温容君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "総務委員長報告。\n　本委員会に付託されました知事提出議案に対する委員会の審査経過及び結果について御報告申し上げます。\n　委員会は、本日開会、慎重に審査いたしました。\n　今回審査いたしました議案は、知事提出議案第１号県議会の議員の議員報酬等に関する条例の一部を改正する条例、同第２号職員の給与に関する条例の一部を改正する条例、同第３号特別職の職員の給与に関する条例の一部を改正する条例、同第４号一般職の任期付研究員の採用等に関する条例の一部を改正する条例、同第５号一般職の任期付職員の採用等に関する条例の一部を改正する条例、以上５件であります。\n　これが審査に当たりましては、関係当局から詳細な説明を聴取し、質疑応答を重ねた後、採決いたしました結果、知事提出議案第１号外１件については満場一致をもって、同第２号外２件については多数をもって、いずれも原案のとおり可決すべきものと決定いたしました。詳細は、議案審査報告書のとおりであります。\n　以上、御報告申し上げます。",
+    "text_length": 432,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-020",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "26番（吉田英策君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "日本共産党の吉田英策です。\n　日本共産党県議団を代表して、議案第２号「職員の給与に関する条例の一部を改正する条例」、議案第４号「一般職の任期付研究員の採用等に関する条例の一部を改正する条例」、議案第５号「一般職の任期付職員の採用等に関する条例の一部を改正する条例」について、県職員の期末手当に関する議案ですので、一括して反対の立場で意見を述べます。\n　以上３議案は、期末手当を一般職員は0.15か月、任期付職員については0.1か月引き下げようとするものです。\n　本県は、東日本大震災、原発事故、台風災害など数々の災害に見舞われ、さらに新型コロナウイルス感染拡大と幾多の困難を抱えています。その全てで、県職員は震災、災害からの復興の先頭に立ち、県民の命、暮らしを守っています。\n　新型コロナウイルスは、第５波が落ち着きを見せているものの、新型変異株オミクロンが世界各地で確認され、第６波の感染拡大も予想されるなど、全庁挙げて震災、災害からの復興と新型コロナウイルス感染拡大防止に備えなければなりません。\n　こうした中で、県職員の働き方は震災や新型コロナウイルス感染拡大の対応で長時間労働が常態化しつつあります。また、保健所の減少などで県民の命と健康を守るべき県職員の負担がますます増えています。\n　日本の国家公務員数は、フランス、アメリカなどと比べても極端に少なく、人事院は若年層の減少により技能等が世代間で継承されないなど職務遂行上の重大な支障と指摘し、その原因を継続的な定員削減、新規採用の抑制の影響と指摘するなど、国民の奉仕者としての公務員の減少に危惧を表明しています。\n　県職員に対し、その労苦に報いるためにも、期末手当の削減をすべきではなく、職員の増員と処遇の改善でこそ報いるべきです。\n　公務員給与の削減は、民間給与にも反映し、民間給与のさらなる削減につながり、負のスパイラルを招くことになります。新型コロナウイルスで痛手を受けた民間の事業者、労働者のなりわいと暮らしと雇用を守る施策こそが必要です。\n　また、今回の期末手当の引下げでは、一般職が0.15か月に対し、議員、特別職は0.1か月の引下げです。支給金額の多い議員、特別職の削減は当然であり、引き下げるのであれば職員と同様にすべきことを指摘しておきます。\n　以上、討論とします。（拍手）",
+    "text_length": 977,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "fukushima-106-2-021",
+    "municipality": "fukushima",
+    "council_id": 106,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月29日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2021-11-29",
+    "speaker": "知事（内堀雅雄君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "11月県議会臨時会の閉会に当たりまして、御挨拶を申し上げます。\n　今臨時会におきましては、職員の給与に関する条例の一部を改正する条例などの議案を提出いたしましたところ、議員の皆様には熱心に御審議の上、御議決を賜り、深く感謝を申し上げます。御議決をいただきました案件につきましては、その適正な執行に努めてまいります。\n　議員の皆様の今後一層の御尽力、御協力をお願い申し上げまして、挨拶といたします。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/106.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        89
+      ]
+    }
+  }
+]

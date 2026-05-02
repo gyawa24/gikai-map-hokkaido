@@ -1,0 +1,71 @@
+[
+  {
+    "id": "atsuma-326-1-001",
+    "municipality": "atsuma",
+    "council_id": 326,
+    "council_name": "令和 ４年  ７月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "07月04日－01号",
+    "date": "2022-07-04",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案２件であります。\n　議案第１号　厚真町最先端デジタル園芸施設設置工事請負契約の締結について。\n　令和４年６月28日に実施した、見積り合わせの結果に基づき、厚真町最先端デジタル園芸施設設置工事請負契約を締結することについて、地方自治法および厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第２号　町道幌内左岸線道路改良鋪装工事（その１）請負契約の締結について。\n　令和４年６月22日に実施した、入札の結果に基づき、町道幌内左岸線道路改良舗装工事（その１）請負契約を締結することについて、地方自治法および厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　以上が、本日ご提案申し上げております、議案の提案理由であります。よろしくご審議のうえご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 441,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/326.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "atsuma-326-1-002",
+    "municipality": "atsuma",
+    "council_id": 326,
+    "council_name": "令和 ４年  ７月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "07月04日－01号",
+    "date": "2022-07-04",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/326.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "atsuma-326-1-003",
+    "municipality": "atsuma",
+    "council_id": 326,
+    "council_name": "令和 ４年  ７月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "07月04日－01号",
+    "date": "2022-07-04",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/326.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        60
+      ]
+    }
+  }
+]

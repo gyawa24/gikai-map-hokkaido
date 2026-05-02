@@ -1,0 +1,715 @@
+[
+  {
+    "id": "muroran-519-2-001",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "議会事務局長（安田智樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告申し上げます。\n　今回提案されております案件は、市長提案に関わるもの３件でございます。\n　次に、関係法令の規定に基づき、市長並びに監査委員からお手元に配付のとおりそれぞれ報告がございました。\n　次に、議案説明のため、関係役職員の出席を求めております。\n　以上でございます。\n──────────────────────\n　　　　　諸　般　の　報　告\n１　地方自治法第１８０条第２項の規定に基づき、市長から報告のあった事件\n　　　専決処分の報告について（和解及び損害賠償の額の決定）\n２　地方自治法第２３１条の３第９項の規定に基づき、市長から報告のあった事件\n　　　審査請求の却下の報告について\n３　地方自治法第２３５条の２第３項の規定に基づき、監査委員から提出のあった事件\n　　　例月現金出納検査結果報告について（各会計　令和７年２月分～６月分）\n４　地方自治法第１２１条の規定に基づき、下記の者に対し出席を求めた\n　　　　　　　　　　記\n市　　　　　長　　　　　　青　山　　　剛\n教　　育　　長　　　　　　伊　藤　博　明\n代表監査委員　　　　　　　関　川　純　人\n　上記のとおり報告します。\n　令和７年８月２９日\n　　　　室蘭市議会議長　　　　柏　木　隆　寿\n──────────────────────",
+    "text_length": 556,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-002",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "副市長（奈良信一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました案件につきまして、順次御説明申し上げます。\n　議案第１号令和７年度室蘭市水道事業会計補正予算（第１号）についてでございます。\n　このたびの補正は、登別市内の私有地で発生しました本市上水道送水管の破損事故に伴う地権者及び周辺住民等への補償等に要する費用を計上するものでございます。\n　第２条では、予算第３条に定めた収益的収入及び支出を補正するもので、収入につきましては、営業外収益を４,２４９万２,０００円増額、収入合計額を２０億５,４８５万４,０００円とし、支出につきましては、営業費用を６,９４１万円増額し、支出合計額を１９億３,０６０万６,０００円とするものでございます。\n　第３条では、予算第４条に定めた資本的支出を補正するもので、建設改良費を６３０万円増額し、支出合計額を１３億８,６７３万４,０００円とするものでございます。\n　続きまして、議案第２号室蘭市病院事業の設置等に関する条例中一部改正の件についてでございます。\n　本件は、国の病床数適正化支援事業の内示の予定が示されたことから、病床数を改めるものでございます。\n　なお、実施時期につきましては、令和７年９月１日から施行してまいりたいと存じます。\n　以上で、説明を終わらせていただきます。\n　よろしく御審議賜りますようお願い申し上げます。",
+    "text_length": 565,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-003",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "（登壇）議案第１号令和７年度室蘭市水道事業会計補正予算（第１号）について、市民ネット・むろらんの一員として順次質問いたします。\n　令和７年７月２日９時頃、登別市美園町２丁目２０の１の私有地内で、民間住宅の建築工事のくい打ち作業時に室蘭市水道部所有の送水管が破損し、大規模な漏水や濁水が噴出し周辺民家等に被害を与えたということであります。\n　今回の事故は民間工事の際に発生したものでありますが、この私有地内に支障物件が存在しないことを施工業者は関係機関に確認し、地盤調査を行った上で工事着手したものであり、土地の所有者や施工業者には事故の責任はないものであるとのことですが、事故の詳細な経緯と原因について伺います。\n　また、本市の補償の内容と経費の内訳について伺います。",
+    "text_length": 334,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-004",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "水道事業会計補正予算に関する御質問にお答え申し上げます。\n　事故の詳細な経緯と原因についてでございますが、現在両市で経緯と原因について調査中であり、本市の施設台帳や当時の設計図書のほか、不動産登記簿や地籍図、航空写真等を突き合わせしながら調査しておりますほか、登別市に対して、この土地や市道の経緯等について確認できる資料がないかどうか伺っているところでございます。\n　次に、補償の内容と経費の内訳でございますが、補償内容としましては、建築主には住宅建築遅延による差額及び土地違約金、施工業者には土地の補償及び工事資材の損失分、周辺家屋には建物のほか、車両の被害による修理費用となってございます。経費の内訳につきましては、地権者及び建築主への補償金が１,６２９万円、周辺家屋及び車両への補償金が４,４４０万円、土地購入費用が６３０万円となってございます。\n　以上でございます。",
+    "text_length": 387,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-005",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "現段階での事業費内訳については分かりました。では、今後発生する費用はあるのか。あればどのようなものが考えられ、費用額はどれくらいを見込んでいるのでしょうか。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-006",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後かかる費用についてでございますが、大きな費用は発生しないと考えてございますが、予算の中で一部施工業者や周辺家屋への補償金については見積り概算額となっており、多少増減はあるものと考えておりますが、その場合には既存予算の中で対応してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-007",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "では次に、送水管の破損により、どの程度の漏水量や濁水の噴出があったのか、具体的な数字や影響範囲について伺います。",
+    "text_length": 56,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-008",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "破損による漏水量についてでございますが、２３３トンとなっており、被害のあった周辺住宅や車両の状況から半径６０メートルの範囲に影響を及ぼしたものと考えてございます。\n　以上でございます。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-009",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "７月２８日に行われた経済建設常任委員会での説明では、今回の施工業者が地盤調査を行ったとのことですが、その調査結果について伺います。",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-010",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地盤調査についてでございますが、施工業者が建物を建てるため支持地盤、支持力を調査する目的で実施した調査となりますが、敷地内で５か所貫入試験を行った結果、地中埋設物は確認されなかったと伺ってございます。\n　以上でございます。",
+    "text_length": 111,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-011",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "昭和４４年１２月に建物が新築されましたが、地権者は送水管の埋設情報を認識していたかどうか不明であり、また関係機関も申請時における図面等において建築等に支障があるような埋設物等の表記がない場合、関係法令に適合していると判断したと思われるとのことですが、昭和４４年に土地を売却したのは登別市です。\n　送水管は浄水場から配水場へ水を送る基幹管路であり、非常に重要なインフラです。送水管が地中に埋設されている土地は建築によって管を損傷するリスクがあるため、建築制限区域に指定されることもあると認識しております。\n　また、売却する際は送水管の存在や制限について重要事項説明書に明記するなど、重要インフラ保護の必要があったのではと考えますが、送水管が埋設されている当該地が建物の建築可能な民有地になった理由について伺います。",
+    "text_length": 356,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-012",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "建物が建築可能な民有地になった理由でございますが、現在両市で経緯と原因について調査中でございます。\n　以上でございます。",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-013",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "昭和４４年１２月に建物が新築されていますが、その際の申請時の図面において埋設物の表記を行っていたのでしょうか。\n　送水管の管路図は登別市、室蘭市の双方で管理されていなかったのでしょうか。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-014",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昭和４４年新築の建物についてでございますが、当時の詳細な図面等は把握できませんが、建築確認申請では埋設物の有無は求めていないことから、埋設物の表記はなかったものと考えてございます。\n　送水管の位置については、登別市と道路占用を交わしている中で道路敷地上に入っているものとの認識でございました。\n　以上でございます。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-015",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "登別市と送水管が埋設されている土地の取決めについてはどうなっているのでしょうか。",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-016",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "送水管の土地の取決めでございますが、基本登別市とは市道部の道路占用を交わしているほか、一部民有地の取得や管理についてこれまで確認しながら行ってきてございます。\n　以上でございます。",
+    "text_length": 90,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-017",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "当該地は本市で購入することとなりますが、そこに至った理由について伺います。\n　また、今後の調査で他の場所でも見つかった場合についても伺います。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-018",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当該地の購入理由でございますが、送水管のルート切替え工事を行う場合、送水管は大きな口径の鋼管であり、特注の材料で納期に時間を要し、竣工するまで１年程度期間を要することになります。また、建築主の意向で早く他の土地に新居を建てたいとのお話がありますことから、用地取得する方向で進めたいと考えてございます。\n　また、今後同様の場所があった場合については状況に応じて取得のほか、土地使用承諾の可能性なども検討しながら対応してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 234,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-019",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "送水管が埋設されている当該地が、なぜ建物の建築可能な民有地になったかについては、現在経緯等を調査中ということでしたが、それであれば本市で購入する必要があったのか疑問が残ります。登別市にも負担を求めるべきだと思いますが、見解を伺います。\n　また、購入した土地の活用方法についても伺います。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-020",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事故対応につきましては、損害を受けた方々に対し速やかに補償を行っていく必要があると考えており、まずは送水管管理者である本市が対応してまいりますが、今後経緯や原因について調査した上で、責任の所在について明らかにしてまいりたいと考えてございます。\n　土地の活用方法についてでございますが、事業用地としては狭小であり使用方法が限られることから、当面は送水管埋設地として管理してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-021",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "損害を受けた方に早急に補償しなければならないことで、まず本市が補償したことについては理解しています。\n　しかしながら、責任の所在については明確にし、しっかりと負担割合を明らかにしていただきたいと思いますが、今後の登別市との費用負担の割合について、どのようなスケジュールで、どのような基準に基づいて行われるのでしょうか。両市の間で合意が得られない場合の対応策についても伺います。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-022",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "費用負担に係る登別市との協議についてでございますが、今後経緯や原因について調査した上で、責任の所在についてできるだけ速やかに明らかにしたいと考えており、その結果に応じて検討してまいりたいと考えてございます。\n　合意が得られない場合の対応でございますが、速やかに補償を行っていく必要があることから被害を受けられた方に対して、まずは本市が責任を持って対応してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 203,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-023",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "今回の件についての対応をお聞きしましたが、今後同様の事故を防ぐために、どのような安全対策や監督体制の強化が検討されているのか伺います。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-024",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の安全対策や監督体制の強化でございますが、今回の事故と同様のケースがないか、宅地に近接する道路付近の状況を優先して調査してございます。これまで送水管ルートの一部は水道部職員が直営で毎年踏査調査として管路ルートを点検してきておりますが、今回の事故を契機に埋設ルートの把握や点検方法の見直しを検討してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-025",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "過去にも議会論議があったとおり、千歳浄水場の今後の在り方検討が必要な時期かと思っております。今後このようなトラブルが起きないためにも、本市が単独で水道事業を行っていく考えについて伺います。",
+    "text_length": 94,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-026",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "千歳浄水場の将来の在り方についてでございますが、千歳浄水場は本市から非常に遠い場所にあるという地理的な問題から、長大な管路を維持管理していかなければならないというデメリットや緊急時対応の出遅れといったリスクを抱えている一方で、豊富な水量を有するというメリットもございます。このため、これまで６０年近く本市の水道水の供給を担ってきたわけでございますが、今回の送水管の事故により千歳浄水場が抱えるリスクの大きさとこれからのリスク解消に向けた検討の必要性を改めて認識したところでございます。\n　千歳浄水場の今後の在り方につきましては、これまでも様々な選択肢について検討してきたところでございますが、今回の事故を教訓とした維持管理上のリスクの回避も十分念頭に置きながら、市民の皆様に安全で安価な水道水を安定的に供給し続けていくことを第一に検討を進めてまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 397,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-027",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "今回の事故を教訓に千歳浄水場の将来の在り方について検討を進めるとのことですが、具体的にどのような選択肢を検討しているのでしょうか。例えば、千歳浄水場からの取水を段階的に縮小し、室蘭市単独での水源確保を目指すのか、あるいは他の自治体との連携強化を検討するのかなど、現在考えている具体的な方向性について伺います。\n　また、その検討はいつ頃までに結論を出す予定なのでしょうか。先ほど述べましたが、今回のようなトラブルは避けるべきで、早急に方向を示すことが本市並びに市民のためと考えますので、見解を求めます。",
+    "text_length": 250,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-028",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "公営企業管理者（和野泰始）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "千歳浄水場の今後の在り方に関する具体的な検討状況につきましては、千歳浄水場現位置での建て替えや休止中の知利別浄水場の建て替えのほか、新たな建設地での可能性も選択肢とし、経済性や維持管理の効率性などについて慎重に検討を進めているところでございますが、将来にわたって安定的に水道水を供給していくためには、今回と同様の事故が発生するリスクを早期に取り除いていく必要もございますことから、できるだけ速やかに方向性をお示しできるよう検討を進めてまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 243,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-029",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "９番（長岡充洋）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "まずは、原因究明をしていただいて負担割合をしっかりお示しいただきたいです。また、千歳浄水場の方向性につきましても早期にお示しいただくよう求めて、質問を終わります。",
+    "text_length": 81,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-030",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "市長（青山剛）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）議案第３号副市長の選任について同意を求める件につきまして、提案理由を御説明申し上げます。\n　本市副市長の白熊　良平氏につきましては、本年８月３１日をもって任期満了となりますことから、その後任につきまして慎重に選考しました結果、再度、白熊　良平氏を選任したいと存じます。\n　白熊氏は、人格、識見ともに高く、適任と存じます。\n　ここに、地方自治法第１６２条の規定に基づき、御提案を申し上げますので、議会の御同意を賜りますようよろしくお願い申し上げます。\n　以上であります。",
+    "text_length": 238,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "muroran-519-2-031",
+    "municipality": "muroran",
+    "council_id": 519,
+    "council_name": "令和 ７年 第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "08月29日－01号",
+    "date": "2025-08-29",
+    "speaker": "副市長（白熊良平）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "このたびは副市長選任に御同意いただきありがとうございます。\n　思えば４年前、私室蘭に来たときにはまだコロナの緊急事態宣言下でありまして、当時は歓迎会、それから市内の挨拶回り、そういったものも極めて制限され、また庁内外の関係者とのコミュニケーションにもかなり制限がかかっていると、そういう状況でございました。\n　それを思えば、今、社会情勢大きく変わっているというふうに認識をしております。また、私は国からの出向者でございますので、当時、当然でございますが、このように長く務めさせていただくとは想像しなかったことも事実でございます。ということで、これまでの４年間、本当に世界も変わり、室蘭も変わり、また市の中も変わったなということを改めてこの機会に認識をしています。\n　思えばこの４年間、いろんな社会情勢あるいは周囲の環境にも恵まれまして、一定の成果を出せているものというふうには自負をしておりますが、当然全ての案件がうまくいくわけではございませんし、ポシャった案件もございます。また、現在取組中の案件もございますので、そういったところを一つ一つ取り組んでまいりたいと、身を引き締めて取り組んでまいりたいというふうに考えているところでございます。\n　周囲にはいつもいろんなことがあるたびに一喜一憂するなというふうに言っているんですが、実際としてはほぼ一喜一憂しまくっている毎日でございました。\n　そういった中ではありますけれども、引き続き市長をはじめ、市職員の皆様、市議会の皆様、庁内外の関係者の皆様と力を合わせて、室蘭の将来のために室蘭の将来が少しでもよくなるよう努力してまいりたいと思いますので、御指導、御鞭撻のほどよろしくお願いいたします。\n　今日はありがとうございました。",
+    "text_length": 738,
+    "source": {
+      "minutes_file": "data/muroran/minutes/519.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        78
+      ]
+    }
+  }
+]

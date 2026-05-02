@@ -1,0 +1,209 @@
+[
+  {
+    "id": "atsuma-292-1-001",
+    "municipality": "atsuma",
+    "council_id": 292,
+    "council_name": "令和 ３年  ６月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06月22日－01号",
+    "date": "2021-06-22",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案２件、承認１件であります。\n　議案第１号　厚真町国民健康保険条例の一部を改正する条例の一部改正について。\n　新型コロナウイルス感染症に感染した被保険者等に係る傷病手当金の適用期間を延長するため、厚真町国民健康保険条例の一部を改正する条例の一部を改正しようとするものであります。\n　議案第２号　町道上厚真小学校通り線道路改良舗装工事（その２）請負契約の締結について。\n　令和３年６月10日執行の入札の結果、町道上厚真小学校通り線道路改良舗装工事（その２）請負契約を締結することについて、地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　承認第１号　専決処分の承認（令和３年度厚真町一般会計補正予算（第５号））について。\n　令和３年度厚真町一般会計補正予算（第５号）について、地方自治法第179条第１項の規定に基づき専決処分したので、同条第３項の規定により、議会の承認をいただこうとするものであります。\n　以上が、本日ご提案申し上げております、議案の提案理由であります。よろしくご審議のうえご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 548,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/292.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-292-1-002",
+    "municipality": "atsuma",
+    "council_id": 292,
+    "council_name": "令和 ３年  ６月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06月22日－01号",
+    "date": "2021-06-22",
+    "speaker": "住民課長（青木雅人君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/292.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-292-1-003",
+    "municipality": "atsuma",
+    "council_id": 292,
+    "council_name": "令和 ３年  ６月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06月22日－01号",
+    "date": "2021-06-22",
+    "speaker": "総務課参事［財政］（高安正君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/292.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "atsuma-292-1-004",
+    "municipality": "atsuma",
+    "council_id": 292,
+    "council_name": "令和 ３年  ６月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06月22日－01号",
+    "date": "2021-06-22",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今の説明の中で、完成予定が本年の11月30日とありますけれども、事前の説明の中では通学路が１本しかないという中で、夏休み期間を利用して工事するような話もありましたけれども、大きな工事はこの夏休みに行うんでしょうか。",
+    "text_length": 107,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/292.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "atsuma-292-1-005",
+    "municipality": "atsuma",
+    "council_id": 292,
+    "council_name": "令和 ３年  ６月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06月22日－01号",
+    "date": "2021-06-22",
+    "speaker": "建設課参事［土木］（伊藤文彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "夏季休暇を活用しながら工事を進めていきますけれども、規模からして夏季期間中にすべてが終わるということにはなりませんので、グラウンドの裏側から登校していただきながら工事を契約工期としては11月いっぱいの中で進めていきたいと考えてございます。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/292.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "atsuma-292-1-006",
+    "municipality": "atsuma",
+    "council_id": 292,
+    "council_name": "令和 ３年  ６月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06月22日－01号",
+    "date": "2021-06-22",
+    "speaker": "総務課参事［財政］（高安正君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/292.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "atsuma-292-1-007",
+    "municipality": "atsuma",
+    "council_id": 292,
+    "council_name": "令和 ３年  ６月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06月22日－01号",
+    "date": "2021-06-22",
+    "speaker": "住民課参事［福祉・子育て支援］（中村信宏君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/292.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "atsuma-292-1-008",
+    "municipality": "atsuma",
+    "council_id": 292,
+    "council_name": "令和 ３年  ６月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06月22日－01号",
+    "date": "2021-06-22",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "４ページなんですけれども、エッセンシャルワーカーという言葉、皆さまはわかっているということで特に説明もなく、説明がされるわけですけれども、なかなか馴染みのない言葉だと思いますので、このエッセンシャルワーカーというのはどういう人たちなのか説明をお願いしたいと思います。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/292.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "atsuma-292-1-009",
+    "municipality": "atsuma",
+    "council_id": 292,
+    "council_name": "令和 ３年  ６月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06月22日－01号",
+    "date": "2021-06-22",
+    "speaker": "住民課参事［福祉・子育て支援］（中村信宏君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "エッセンシャルワーカーとは、人が社会生活をする上で、必要不可欠なライフラインを維持する仕事の従事者をいいます。新型コロナウイルスの世界的な感染拡大により、多くの人が自粛生活を送っていた中、感染リスクと戦いながら働き続ける人々への感謝と敬意を込めてこのように呼ばれるようになったとされております。具体的には、医療福祉関係、医師、看護師、薬剤師、介護士。また、教育、保育関係、教師、保育士が含まれます。そのほかに保安関係、警察官、消防士と運輸交通関係の配送ドライバー、公共交通機関の職員。また、広く小売業、販売業そして公共インフラ関係、その他、金融、郵便、清掃なども広義でのエッセンシャルワーカーに含まれます。",
+    "text_length": 303,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/292.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  }
+]

@@ -1,0 +1,416 @@
+[
+  {
+    "id": "atsuma-289-1-001",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案４件であります。\n　議案第１号　エネルギー６次産業化発電設備等設置工事請負契約の締結について。\n　令和３年４月１日の随意契約の結果、エネルギー６次産業化発電設備等設置工事請負契約を締結することについて、地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第２号　令和３年度厚真町災害復旧事業実施に係る道代行の細目協定の締結について。\n　令和３年度厚真町災害復旧事業実施に係る道代行の細目協定の締結について、地方自治法第96条第１項第５号の規定及び厚真町議会の議決に付すべき契約等に関する条例第２条に基づき、議会の議決をいただこうとするものであります。\n　議案第３号　豊沢地区大規模盛土造成地滑動崩落防止工事（その２）請負契約の締結について。\n　令和３年３月30日執行の入札の結果、豊沢地区大規模盛土造成地滑動崩落防止工事（その２）請負契約を締結することについて、地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第４号　令和３年度厚真町一般会計補正予算（第１号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ５億7,200万円を追加し、歳入歳出予算の総額を歳入歳出それぞれ94億9,700万円とするものであります。\n　歳出における補正の内容は、総務費でエネルギー地産地消事業の追加であります。\n　この補正の財源として、特定財源の基金繰入金で５億7,200万円と見積もり、収支のバランスをとったところであります。\n　以上が、本日ご提案申し上げております、議案の提案理由であります。よろしくご審議のうえご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 796,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-002",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-003",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "（下司議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議長の今の説明ですと、この議案第１号については決議をこの場ではしないということですか。",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-004",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "（下司議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "確認ですが、これ、議案第４号でこの予算について議決するわけですけれども、現状では予算化されていないものですよね。それについて、先に契約の締結の議決をできるかどうかということに関してはどうなんでしょうか。",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-005",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "建設課参事（土木）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "伊藤文彦　君）　（議案書及び資料により説明）",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-006",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "総務課参事（財政）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高安正　君）　（議案書及び資料により説明）",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-007",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "総務課参事（財政）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高安正　君）　（議案書及び資料により説明）",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-008",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-009",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "（下司議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＥＶ充電器のことについてお伺いしたいと思うんですけれども、今回この事業でＥＶ充電器を設置するわけですけれども、この件に関して今後の厚真町内でのＥＶ充電器の設置の計画といいますか、そういうことが今まで総合計画にもそういうものは出てきていないと思うんですが、どのように考えられているかお伺いしたいです。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-010",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "説明資料の９ページの上段をご覧ください。エネルギーマネジメントシステムのイメージ図を掲載しておりますけれども、その中のイラストの中に車の絵があると思うんですけれども、各５か所、ケアセンターゆくり、スポーツセンター、こぶしの湯、富里浄水場、給食センターこの５か所に当面はＥＶ充電器の設置を考えているところでございます。",
+    "text_length": 158,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-011",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "（下司議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事業ではそういうことになっていますけれども、厚真町内で考えれば南のほうにＥＶ充電器というのは設置するべきだと思うんですよ。そういうことを町の計画の中で位置づけて長期的に取り組んでいくということが必要だと思うんですがどうでしょうか。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-012",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の新しい総合計画の位置づけの中で、胆振東部地震の教訓を生かして防災拠点の整備や公共施設における非常電源の確保など災害に強い基盤整備を行うと位置づけておりますので、議員がおっしゃっております南部へのＥＶ充電器も今後考慮していかなければならないことかと承知しております。",
+    "text_length": 135,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-013",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "（下司議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "具体的な場所についての落とし込みはまだ難しいでしょうかね。フェリーターミナルとか、厚南会館とかそういうような位置づけをしていってもいい時期かなと思うんですがどうでしょうか。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-014",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それにつきましては、今後の課題化と思っております。当然、厚南会館並びにフェリーターミナルについても十分視野に入れて検討するべきことかと存じております。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-015",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "（伊藤議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤富志夫",
+    "member_faction": "",
+    "text": "説明資料８ページの大きい５番です。今後発生が見込まれる経費についてですが、先ほどの説明では精査中ということではありましたが、年間およそどのくらい掛かるものかというあたり、細かい数字ではなくて大体でいいですが、どうでしょうか。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-016",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これにつきましては、現在精査中でございまして、額がおおよそ確定できた段階で全員協議会等で議員の皆さまにはご報告をさせていただきたいと思っております。\n　以上です。",
+    "text_length": 81,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        67
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-017",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "（下司議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回太陽光パネルを設置するという計画なんですけれども、太陽光パネルの環境への影響というのが最近注目されています。やはり景観を損ねるとかそういうことが太陽光パネルは本来自然エネルギーを使うということで、そういう意味では自然に優しいということで始まったと思うんですけれども、実際は設置することによって自然を破壊していくというふうになっています。そういう意味では設置に関して十分な注意が必要だと思いますが、そのへんはこの今回随意契約をした業者とは十分に打合せはされているんでしょうか。",
+    "text_length": 239,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "atsuma-289-1-018",
+    "municipality": "atsuma",
+    "council_id": 289,
+    "council_name": "令和 ３年  ４月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "04月14日－01号",
+    "date": "2021-04-14",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事業については二箇年度で計画しておりまして、１年度については設計、部品、部材の調達を中心に考えておりまして、次年度が本格的な施工に入りますが、３年度期間中に事業者と十分に環境等々の打合せをさせていただいて、適切な設計にしていきたいと考えております。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/289.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        71
+      ]
+    }
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "obihiro-752-2-001",
+    "municipality": "obihiro",
+    "council_id": 752,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月11日－01号",
+    "date": "2022-01-11",
+    "speaker": "小池晃一事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告いたします。\n　本日の出席議員は29人全員であります。\n　次に、今期臨時会につきましては、市長から去る１月７日付をもって招集告示した旨の通知がありましたので、直ちに各議員宛通知いたしております。また、同日付をもって市長に対して説明員の出席要求をいたしております。\n　次に、議案の配付について申し上げます。\n　今期臨時会に付議事件として受理しております令和３年度帯広市一般会計補正予算（第16号）外１件につきましては、１月７日付をもって各議員宛送付いたしております。\n　最後に、本日の議事日程でありますが、お手元に配付の議事日程表第１号により御了承いただきたいと思います。\n　報告は以上であります。\n　　　　　～～～～～～ 〇 ～～～～～～",
+    "text_length": 321,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/752.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "obihiro-752-2-002",
+    "municipality": "obihiro",
+    "council_id": 752,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月11日－01号",
+    "date": "2022-01-11",
+    "speaker": "米沢則寿市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\n　議案第１号及び議案第２号について、一括して御説明いたします。\n　初めに、議案第１号令和３年度帯広市一般会計補正予算（第16号）につきましては、感染症の影響を受けた住民税非課税世帯等を支援するため、臨時特別給付金及びその支給に係る経費を追加し、その財源として国庫補助金を追加するものであります。\n　次に、議案第２号財産取得につきましては、都市計画緑地中島緑地の用地として、帯広市西21条北４丁目１番１ほか２筆、面積２万2,674平方メートルの土地を、金額4,829万5,620円で前田好紀氏ほか１名から取得するものであります。\n　以上、よろしく御審議賜りますようお願いいたします。",
+    "text_length": 301,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/752.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "obihiro-752-2-003",
+    "municipality": "obihiro",
+    "council_id": 752,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月11日－01号",
+    "date": "2022-01-11",
+    "speaker": "小池晃一事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告いたします。\n　ただいまの休憩中に議案審査特別委員長から付託案件に対する審査報告書が提出されましたので、お手元まで配付いたしております。\n　報告は以上であります。",
+    "text_length": 83,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/752.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "obihiro-752-2-004",
+    "municipality": "obihiro",
+    "council_id": 752,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月11日－01号",
+    "date": "2022-01-11",
+    "speaker": "１８番（杉野智美議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "杉野　智美",
+    "member_faction": "日本共産党帯広市議会議員団",
+    "text": "議案審査特別委員会における審査の概要並びに結果について御報告いたします。\n　議案は、本日の本会議において付託され、審査を行ったところであります。\n　以下、質疑の概要について申し上げます。\n　議案第１号令和３年度帯広市一般会計補正予算（第16号）では、住民税非課税世帯等に対する臨時特別給付金に関し、支援内容と家計急変世帯などの給付対象世帯の考え方、給付スケジュールと迅速な給付に努める考え、申請漏れ防止のため、丁寧で分かりやすい周知や相談対応に努める考え、不正受給の防止に努める考えなどについて質疑と意見がありました。\n　以上で質疑を終結し、討論はなく、続いて採決に入り、議案第１号及び議案第２号の２件について一括して採決を行った結果、全会一致でいずれも原案のとおり可決すべきものと決定した次第であります。\n　以上、御報告といたします。",
+    "text_length": 368,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/752.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  }
+]

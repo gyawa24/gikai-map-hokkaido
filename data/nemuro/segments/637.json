@@ -1,0 +1,48 @@
+[
+  {
+    "id": "nemuro-637-2-001",
+    "municipality": "nemuro",
+    "council_id": 637,
+    "council_name": "令和 ６年 １０月緊急議会",
+    "schedule_id": 2,
+    "schedule_name": "10月04日－01号",
+    "date": "2024-10-04",
+    "speaker": "議会事務局長（大島裕司）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\n　御報告申し上げます。\n　初めに、会議の出席状況でありますが、ただいまの出席は16名であります。\n　本日の議事日程並びに諸般の報告は、お手元に御配付のとおりでありますので、朗読を省略いたします。\n　以上で報告を終わります。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/637.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "nemuro-637-2-002",
+    "municipality": "nemuro",
+    "council_id": 637,
+    "council_name": "令和 ６年 １０月緊急議会",
+    "schedule_id": 2,
+    "schedule_name": "10月04日－01号",
+    "date": "2024-10-04",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\n　議案の１ページをお開き願います。\n　議案第74号令和６年度根室市一般会計補正予算（第４号）について御説明します。\n　今回の補正は、10月９日に衆議院を解散すると石破首相が正式表明したことを受け、第50回衆議院議員総選挙及び第26回最高裁判所裁判官国民審査が10月15日公示、10月27日投開票で予定されていることに伴い、その執行に要する経費として予算の補正を行うものであり、第１条、歳入歳出予算の補正に記載のとおり、歳入歳出予算の総額に3,600万円を追加し、歳入歳出予算の総額を306億2,986万1,000円とするもので、財源については全額道支出金で措置をするものです。\n　なお、補正の内容につきましては、別冊の事項別明細書１ページから９ページに記載のとおりでありますので、説明は省略をさせていただきます。\n　以上で説明を終わります。御審議のほどよろしくお願い申し上げます。",
+    "text_length": 401,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/637.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        6
+      ]
+    }
+  }
+]

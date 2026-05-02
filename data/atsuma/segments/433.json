@@ -1,0 +1,186 @@
+[
+  {
+    "id": "atsuma-433-1-001",
+    "municipality": "atsuma",
+    "council_id": 433,
+    "council_name": "令和 ７年 １２月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "12月29日－01号",
+    "date": "2025-12-29",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案２件、報告１件であります。\n　議案第１号　厚真町役場庁舎建設事業設計施工一括請負契約の締結について。\n　公募型プロポーザルの結果に基づき、設計施工一括請負契約を締結することについて、地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第２号　令和７年度厚真町一般会計補正予算（第１２号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ１億5,643万8,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ156億6,830万9,000円とするものであります。\n　歳出における補正の主な内容について、総務費では、情報ネットワーク総合管理事業などの追加。民生費では、医療機関・社会福祉施設等物価高騰対策支援金、物価高対応子育て応援手当支給事業などの追加。商工費では、物価高騰経済対策事業の追加。教育費では、庁舎周辺等整備に伴う教育委員会執務室及び図書室の仮移転経費の追加であります。この補正の財源として、国道支出金の特定財源を１億841万3,000円、地方交付税の一般財源を4,802万5,000円と見積り収支のバランスをとったところであります。\n　報告第１号　専決処分の報告について。\n　令和６年10月18日第７回臨時会で議決をいただいた豊沢地区大規模盛土造成地滑動崩落防止工事（その６）請負契約の締結について、工事施工中に設計変更が生じたため、地方自治法の規定に基づき、専決処分をしたので同法の規定により議会に報告するものであります。\n　以上が、本日ご提案申し上げております議案の提案理由であります。\n　よろしくご審議の上、ご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 778,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/433.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-433-1-002",
+    "municipality": "atsuma",
+    "council_id": 433,
+    "council_name": "令和 ７年 １２月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "12月29日－01号",
+    "date": "2025-12-29",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/433.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-433-1-003",
+    "municipality": "atsuma",
+    "council_id": 433,
+    "council_name": "令和 ７年 １２月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "12月29日－01号",
+    "date": "2025-12-29",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/433.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "atsuma-433-1-004",
+    "municipality": "atsuma",
+    "council_id": 433,
+    "council_name": "令和 ７年 １２月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "12月29日－01号",
+    "date": "2025-12-29",
+    "speaker": "生涯学習課社会教育担当参事（乾哲也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/433.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "atsuma-433-1-005",
+    "municipality": "atsuma",
+    "council_id": 433,
+    "council_name": "令和 ７年 １２月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "12月29日－01号",
+    "date": "2025-12-29",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/433.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "atsuma-433-1-006",
+    "municipality": "atsuma",
+    "council_id": 433,
+    "council_name": "令和 ７年 １２月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "12月29日－01号",
+    "date": "2025-12-29",
+    "speaker": "住民課健康推進子育て支援担当参事（宮本幸世君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/433.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "atsuma-433-1-007",
+    "municipality": "atsuma",
+    "council_id": 433,
+    "council_name": "令和 ７年 １２月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "12月29日－01号",
+    "date": "2025-12-29",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/433.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "atsuma-433-1-008",
+    "municipality": "atsuma",
+    "council_id": 433,
+    "council_name": "令和 ７年 １２月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "12月29日－01号",
+    "date": "2025-12-29",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料より説明）",
+    "text_length": 13,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/433.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  }
+]

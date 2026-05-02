@@ -1,0 +1,347 @@
+[
+  {
+    "id": "atsuma-308-1-001",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案１件、報告２件であります。\n　議案第１号　町道上厚真小学校通り線道路改良舗装工事（その１）請負契約の締結について。\n　令和３年３月18日に当初契約を行った、町道上厚真小学校通り線道路改良舗装工事（その１）請負契約について設計変更により契約金額を変更し締結することについて、地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　報告第１号　専決処分の変更（町道新町９号線道路舗装工事請負契約の変更）について。\n　令和３年６月８日開催の令和３年第２回厚真町議会定例会で議決をいただいた町道新町９号線道路舗装工事請負契約について、工事施工中に設計変更が生じたため、地方自治法第180条第１項の規定により専決処分したので同条第２項の規定により、議会に報告するものであります。\n　報告第２号　専決処分の報告（奥地林道幌内高丘線幌内工区災害復旧工事契約の変更）について。\n　令和３年３月29日開催の令和３年第３回厚真町議会臨時会で議決をいただいた奥地林道幌内高丘線幌内工区災害復旧工事請負契約について、工事施工中に設計変更が生じたため、地方自治法第180条第１項の規定により専決処分したので同条第２項の規定により、議会に報告するものであります。\n　以上が、本日ご提案申し上げております、議案の提案理由であります。よろしくご審議のうえご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 663,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-002",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "総務課参事［財政］（高安正君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-003",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "変更理由の中に埋蔵文化財を確認したというふうにありますが、どういった埋蔵文化財だったのか説明いただけますか。",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-004",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "建設課参事［土木］（伊藤文彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "文化財といたしましては、7,500年前の縄文土器、それから2,000年前の続縄文土器、900年前の擦文土器、500年前のアイヌ文化期の刀や鉄器、北寄貝の貝塚など総数741点を発掘してございます。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-005",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "総務課参事［財政］（高安正君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-006",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "総務課参事［財政］（高安正君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-007",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "このような芝の吹き付けでは十分ではなかったというか、こういう変更するときの手続きといいますか、どちらというか、施工業者からの提案になるんでしょうか。そのへんのいきさつを説明いただければと思うんですが。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-008",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "産業経済課参事［林業水産］（齋藤雪美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "施工中に請け負っている業者のほうから、設計と内容が違った場合、職員が出向いて行って、その設計の内容と確認しまして、設計と違った場合に現地を精査したうえで設計変更というかたちをとっております。\n　今回の場合は、当初、種子散布ということで、この種子散布は法面の砂地のところに種子を散布してやるんですが、施工したことによって崩れた土砂が撤去されたことによって、そこが岩盤であったということから今回種子、植生基材、吹き付け工というかたちになりました。",
+    "text_length": 221,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-009",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "産業経済課参事［林業水産］（齋藤雪美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それで、業者のほうからそういうことが挙がってきた段階で設計をもう一度見直しして、設計変更起工伺いを発議して、決裁をもらって所定の手続きをとって進めております。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-010",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "決算委員会の中でも同じようなことが大きな問題になったものですから、変更の手続きの時に業者から提案があって、それを町が受けて、その変更手続きをしていくのかというのが気になったんですよ。一度、種子の吹き付けの施工したところがうまくいかなかったから変更するという、そういう運びになったのか、現場を見た時点で種子の散布では施工はうまくいかないという判断がされて変更ということになったのか、そのへんをもう少し詳しく説明いただけないかなと思うんですね。",
+    "text_length": 220,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-011",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "産業経済課参事［林業水産］（齋藤雪美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現場を調査して、現地確認をした後に、そしてこの吹き付けというのは３ミリの吹き付けなんですね。種子散布が３ミリの種子散布でありまして、３ミリの種子散布では岩盤のところに種子を散布しても緑化されないということから、現地で判断して植生吹き付け工という吹き付け工で、その厚さというのは３センチになるんですけれども、おこなったところでございます。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-012",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "産業経済課参事［林業水産］（齋藤雪美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "業者のほうから設計と違うということで、岩盤が確認されたことから、岩盤吹き付け工というかたちにいたしました。",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-013",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "産業経済課参事［林業水産］（齋藤雪美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "林道の復旧なものですから、ちょうど林道の上のほうから土砂が崩れてきて、法面の上に封土が落ちているという現場の状況になっていまして、その施工をしたところが土砂を撤去しますので、施工に当たっては。封土を撤去しますので、その封土を撤去した段階で岩盤が出てきたということです。その報告が施工業者のほうからあって、こういうふうに設計変更というかたちになりました。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-014",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "建設課参事［土木］（伊藤文彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一般的な今の場合の設計変更手順で行きますと、まず、法面を現場で業者が切って、設計条件では普通土という条件だったと思うんです。それが、現場、法面を切った状態で業者から設計条件と違うという申出があって、監督員が立会いをして当初の吹き付けでは植生が不可能だということで決定したものと、一般的にはそういう手順で設計変更をしてまいります。",
+    "text_length": 164,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "atsuma-308-1-015",
+    "municipality": "atsuma",
+    "council_id": 308,
+    "council_name": "令和 ３年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月30日－01号",
+    "date": "2021-11-30",
+    "speaker": "建設課参事［土木］（伊藤文彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回もそのような手順ということです。",
+    "text_length": 18,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/308.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        57
+      ]
+    }
+  }
+]

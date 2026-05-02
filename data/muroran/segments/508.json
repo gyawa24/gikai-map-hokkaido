@@ -1,0 +1,5062 @@
+[
+  {
+    "id": "muroran-508-3-001",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "おはようございます。それでは、私のほうから、第２款総務費中、公共施設等整備事業費、アイヌ慰霊碑改修費等について一問一答で質問させていただきます。\n　まず、予算内訳、事業概要について伺います。",
+    "text_length": 95,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        5
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-002",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "アイヌ慰霊碑等改修費の予算内訳でございますが、工事請負費となっており、事業概要といたしましては、慰霊碑老朽化に伴い、国のアイヌ推進交付金を活用し、慰霊碑の改修と周辺のバリアフリー整備を行うものでございます。\n　以上でございます。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-003",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "次に、財源内訳について伺います。",
+    "text_length": 16,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-004",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業費５，５１６万３，０００円の財源内訳でございますが、国庫支出金４，４１３万円、地方債１，１００万円、一般財源３万３，０００円となってございます。\n　以上でございます。",
+    "text_length": 85,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-005",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "次に、慰霊碑改修の内容について、デザインや碑文の文言含め具体的にどのような改修を行う予定なのか、詳細について伺います。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-006",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "慰霊碑の改修内容でございますが、現在の慰霊碑を忠実に再現し製作する予定でございまして、デザインは現在と同様になると考えてございます。また、碑文の文言は文面をそのままに、文字を現在よりも見やすくする形で整備することを予定してございます。\n　以上でございます。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-007",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "現在の慰霊碑のデザインをそのまま改修するというようなことで理解いたしました。\n　次に、慰霊碑について建立からの年数と今後の耐用年数の見込みについて伺います。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-008",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "建立からの年数と今後の耐用年数でございますが、現在の慰霊碑は昭和３７年９月に建立されており、現時点で６１年が経過しております。また、今後整備する慰霊碑の耐用年数でございますが、約５０年となってございます。\n　以上でございます。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-009",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "今後の耐用年数は５０年ほどということで理解いたしました。\n　次に、絵鞆岬の展望台の中にこの慰霊碑ありますけれども、慰霊碑の横に絵鞆岬の地名の由来を記載してある由来板というものがございますが、地名の由来としてアイヌの歴史等々が記されております。こちらの地名由来板も、文字は読めますけれども、側の老朽化は非常に進んでいるのかなと思いますが、今回こちらは整備対象になっているのか伺います。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-010",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "絵鞆岬の地名由来板でございますが、今回の改修の範囲には含まれてございません。\n　以上でございます。",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-011",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "今回は対象ではないとのことでしたが、ぜひこちらも補修等進めていただきたいなと思います。また、ほかのタイミングで補修、改善のタイミングがあるかなと思いますので進めていただきたいと思いますが、今回の交付金を使用して改修するしないについての検討はあったのか、また検討されていれば対象としなかった理由について伺いたいと思います。",
+    "text_length": 160,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-012",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地名由来板の補修等についてでございますが、今回の改修は国の交付金を活用するということもございまして慰霊碑とバリアフリー化に伴う部分の改修としてございます。地名由来板につきましては他の観光施設等の案内板と同様に、劣化の状況を確認しながら随時補修等の対応をしてまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 154,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-013",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "分かりました。\n　次に、バリアフリー整備の内容について詳細を伺います。また、要望などはどういったものがあったのか併せて伺います。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-014",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "バリアフリーの整備内容と要望でございますが、室蘭アイヌ協会からの要望によりバリアフリー化を実施するものでございまして、整備の内容は、現在駐車場部分と慰霊碑は約２メートルの高低差がございますが、慰霊碑周辺の盛土、コンクリート、れんが等を撤去し、既存の園路から緩やかにアクセスできるようにするものでございます。\n　以上でございます。",
+    "text_length": 164,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-015",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "駐車場部分から慰霊碑までの高低差を解消するというものですが、緩やかにという表現があるのですけれども、完全に段差解消になるのかというのはまだ決定していないのかなというふうに思います。スロープのようなイメージでよろしいのか、またスロープになると直接最短距離で行ければいいのですけれども、少し回るようなイメージかなと思うのですけれども、距離が長くなった場合、手すりの設置、こちらについては予定や検討はありますでしょうか、伺いたいと思います。",
+    "text_length": 217,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-016",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "慰霊碑までの高低差解消のイメージでございますが、既存の園路から慰霊碑までの高低差を解消するものでございますが、スロープよりも勾配の緩い園路で慰霊碑にアクセスできるよう整備する予定でございます。また、手すりにつきましては、バリアフリーの基準に基づき、安全に利用できるように検討してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-017",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "今後の建築の想定に合わせて手すりを設置するというような考えと理解いたしました。来場者の身体的負担軽減もしっかり考えていただいて、そういったところ検討して進めていただければと思います。\n　今回改修で慰霊碑については既存のアイヌ文様が施されるということでしたけれども、バリアフリーの整備のほうにおいてアイヌ文様等の模様をアイヌ慰霊碑のＰＲのために施す予定等はあるのか、伺いたいと思います。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-018",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "アイヌ文様についての考えでございますが、慰霊碑に施すアイヌ文様以外に予定はしてございませんが、絵鞆岬のすばらしい景観と併せてアイヌ慰霊碑のＰＲに努めてまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-019",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "特に慰霊碑以外にそういった文様の予定はないというようなことでしたが、トイレの改修でスロープの部分だったり外壁のところにアイヌ文様がありまして、慰霊碑に近づいてしっかり見ないと文様のことだとか碑文のことだとか分からない部分もあるかなと思いますので、公園内に入ったときにアイヌに関連する場所なのだなというような認識を市民の方、また観光客の人にしてもらえる非常に有効な手段かなというふうに思いますので、そういったところも含めて改修計画をするときに進めていただけたらというふうに思います。\n　次に、改修スケジュールについて伺いたいと思います。",
+    "text_length": 267,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-020",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "慰霊碑改修のスケジュールでございますが、本年８月上旬頃に入札等を実施し、９月中旬頃より改修に着手いたしまして、年度内に改修を完了させる予定でございます。\n　以上でございます。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-021",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "年度内の改修ということでありました。改修後、改修したことの市民の方への周知方法や、改修に関連した事業の展開等の予定はあるのか、伺いたいと思います。",
+    "text_length": 73,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-022",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "改修後の市民周知や関連事業についてでございますが、アイヌ協会より取壊し前と完成後に土地の神様などに感謝をささげるアイヌ文化の儀式を執り行うと伺っており、アイヌ文化の理解や普及啓発のため、広く市民の方に見ていただけるようホームページ等での周知を予定してございます。\n　以上でございます。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-023",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "関連するものとしてそういった儀式だったり普及啓発の周知をしていただくということでした。ぜひ広く市民へ周知して、改修したということをしっかり認識していただいて、室蘭市として残していくというような意識というものを市民の方にもお示しいただけたらと思います。\n　今回の交付金の活用は慰霊碑の改修、バリアフリー整備等のハード整備なのですけれども、この交付金を活用した事業はほかに予定はあるのでしょうか、伺います。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-024",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今年度予定しております交付金活用予定事業でございますが、慰霊碑の改修のほか、教育部においてアイヌ文化に関する体験学習会をイタンキ生活館で行うほか、外部の専門家を招聘してアイヌの文化や歴史に対する講演会を予定してございます。\n　以上でございます。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-025",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小澤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小澤悠",
+    "member_faction": "市政結和",
+    "text": "こちらの改修以外にも体験学習や講演会の予定もされているとのことでした。ぜひそういったソフトのほうの事業も上手に関連させながら今回の改修、ただのハード整備で終わるのではなく、どう効果的にできるか、どうこの改修をより意味のあるものにできるかというところを引き続き検討して進めていただきたいと思います。また、ほかのアイヌの関連施設に関しては他課管理、絵鞆岬展望台に関しては観光課管理ということでもありますので、ぜひ市内の方々のみならず観光客の皆様に対してもこの改修をしっかり周知してアプローチしていただくこと、さらに連携して取り組んでいただくことをお願いして、私からの質問を終わりたいと思います。\n　以上です。",
+    "text_length": 302,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-026",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "おはようございます。私のほうからは、議案第１号令和６年度室蘭市一般会計補正予算中、第１１款教育費、第２項小学校費、第１目学校管理費、小学校冷房設備整備事業費について一問一答方式にて質問させていただきます。\n　まず初めに、小学校冷房設備整備事業費、委託料１，１４８万４，０００円の主な委託内容と委託期間について伺います。",
+    "text_length": 159,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-027",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "委託の主な内容につきましては、小学校９校のエアコン設置に係る機械設備及び電気設備の設計、積算、エアコン設置で電力負荷が増えることに伴う各学校の電気室改修の必要性、これを検討するための調査等を予定しております。また、委託期間は契約日から今年度末までを予定しております。\n　以上でございます。",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-028",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "委託内容と委託期間について理解いたしました。\n　では、今回外部へ委託する理由をお伺いいたします。",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-029",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回直営ではなく外部に委託する理由といたしましては、専門的な知見、ノウハウが必要なことと次年度予算へ反映するための期間等を考慮し、委託するものであります。\n　以上でございます。",
+    "text_length": 88,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-030",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "専門的知見やノウハウの必要性と次年度予算へ反映するための期間を考慮とのことですが、業務委託の完了は今年度末までに間に合うのか、また入札方法はどう考えられているのか伺います。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-031",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "入札方法につきましては一般競争入札を予定しております。また、業務内容が今年度中に完了するのかにつきましては、本補正予算の議決をいただきましたら夏までに速やかに入札を実施し、来年３月までに設計を終えられるような工程を組んでございます。\n　以上でございます。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-032",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "入札方法や業務内容が今年度中の工程とのこと理解いたしました。\n　それでは、本市小学校、中学校の２か年でのエアコン導入のスケジュールについてお伺いいたします。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-033",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "小中学校へのエアコン整備のスケジュールについて、来年度は小学校への設置工事となりますが、国からは例年では４月下旬に交付金の内定を受け、５月頃に入札を行い、夏休み期間中に普通教室を優先して集中的な作業を実施し、一台でも多くのエアコンを設置することとし、秋までには設置を終えたいと考えております。また、中学校につきましては令和７年度に実施設計、令和８年度に設置工事を予定しております。\n　以上でございます。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-034",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "小中学校のエアコン整備のスケジュールについて、来年度の小学校の設置工事が夏休み期間とのことで、国からの交付金を受けてのスケジュールでは仕方がないことなのかなと思いました。\n　それでは、今年度小学校分の実施設計から始まり、小学校は約２５０台、中学校は約１６０台と相当数のエアコン設置の工事となりますが、小中学校へのエアコン整備に関わる工事費の総額を伺います。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-035",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現時点での設置工事費の概算額といたしましては、小中学校合わせて約６億円程度と見込んでおります。\n　以上でございます。",
+    "text_length": 58,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-036",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "では次に、エアコン設置工事費の財源の内訳について伺います。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-037",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "財源内訳については、設置工事費約６億円のうち、国の交付金が３分の１で約２億円、地方債が３億円、一般財源が１億円程度になるものと見込んでおります。\n　以上でございます。",
+    "text_length": 83,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-038",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "それでは、本市財政への影響についてお聞かせください。",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-039",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市の財政負担への影響について、国の交付金と地方債の交付税措置を除いた実質的な地方負担といたしましては約３億円程度になるものと見込んでございます。\n　以上でございます。",
+    "text_length": 84,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-040",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "空調整備に大きな財源が必要なことから、初期費用を抑えることができて、学校間の教育環境の公平性の維持や毎年かかる維持管理コストを平準化できるリース型というものもあると思いますが、リース型の検討などはあったのかお聞かせください。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-041",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "いわゆるリース契約によるエアコン整備の検討状況については、リース契約により初期費用や修繕等のメンテナンス費用の抑制が図れるメリットがあると考えますが、一方で国の交付金の対象外でありますことから、総合的に検討し、購入というような整備と判断いたしました。\n　以上でございます。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-042",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "リース型の検討に関し、国の交付金の対象外であることから購入による整備判断とのこと理解いたしました。\n　では次に、光熱水費についてお伺いしますが、電気料金等の価格変動の状況等も踏まえ、仮に本市全ての小中学校でエアコンが設置された場合のランニングコストについてはどのように考えておられるのかお聞かせください。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-043",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "計画どおり設置した場合、現時点における消費電力から算出したエアコン整備に伴う電気料の増加分は、小学校で月額約３００万円程度、中学校で同じく２００万円程度と想定しております。仮に７月～９月の３か月間稼働すると想定した場合、年間１，５００万円程度となるものと考えてございます。\n　以上でございます。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-044",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "エアコン整備に伴う電気料金の増加分が年間１，５００万円程度と想定されているとのことで、それなりのランニングコストがかかることが分かりました。学校の環境整備において、エアコンを取り付けていく一方で、蘭中・蘭西地区では学校再編の動きが出ております。その点に関して考慮した計画になっているのか伺います。",
+    "text_length": 148,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-045",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "蘭中・蘭西地区の協議会においては、現在学校の形の方向性を検討しており、その結論は今年度中に打ち出すことを目標としておりますことから、設計や工事に際してはその動きを踏まえた対応をしてまいりたいと考えております。\n　以上でございます。",
+    "text_length": 115,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-046",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "設計や工事に関して蘭中・蘭西地区の学校の動きを踏まえての対応とのことで理解いたしました。\n　では次に、このたび本市小中学校に整備された約２００台のスポットクーラーについて、エアコン設置後の使用場所についてはどのように考えておられるのか伺います。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-047",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "エアコン整備後のスポットクーラーの活用方法については、基本的には学校運営を考慮した学校長の判断に委ねるところではございますが、例えば職員室、児童会室、会議室等、今回整備対象外とさせていただいた部屋での活用を想定しております。\n　以上でございます。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-048",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "小林委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林由美",
+    "member_faction": "自民保守クラブ",
+    "text": "本市小学校９校、中学校６校、合わせて１５校の普通教室、特別教室の３１４室、約４１０台のエアコンの設置に向けての財源や今後の考えられる計画をお伺いしました。児童生徒の安全・安心を守る学習環境をいかに確保すべきかは大変重要なことだと思います。令和５年の本市の出生数が３４３人であり、学校の統廃合の可能性が深刻化している中、課題は山積していると思いますが、今後も学校整備の柔軟な対応を求めて、私からの質問を終わります。\n　以上です。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-049",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "私のほうからは、歳入第１６款道支出金、予防接種健康被害救済措置事業費補助金、諸収入、衛生費雑入、新型コロナ定期接種ワクチン確保事業費助成金、歳出第４款衛生費、予防接種費についてそれぞれ質問させていただきます。\n　最初ですが、特定財源の道支出金、諸収入の内訳及び使途について伺います。",
+    "text_length": 141,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-050",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "道支出金、諸収入の内訳と使途についてでございますが、道支出金２万７，０００円は、予防接種健康被害救済措置事業費補助金の補助対象額３万６，０００円に補助率４分の３を掛けたものになってございます。補助対象額には、予防接種健康被害救済制度の申請がなされた場合、本市の調査委員会を開催する必要がございますため、調査委員の報酬を計上してございます。諸収入につきましては、新型コロナ定期接種ワクチン確保事業費助成金でございまして、定期接種移行への激変緩和のための国からの助成金で、接種１件当たり８，３００円に接種見込み人数を掛けた金額となってございます。\n　以上でございます。",
+    "text_length": 282,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-051",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "今の御説明で内訳及び使途については理解いたしました。\n　次ですけれども、予防接種健康被害救済制度について伺いますけれども、申請までの流れ及び申請期限についてあるのであれば伺います。",
+    "text_length": 90,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-052",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予防接種健康被害救済制度の申請の流れについてでございますが、申請には医師の見解も要するため、まずは受診していただく必要がございます。担当の医師とも十分相談の上、必要書類を準備していただき、本市へ提出いただきます。書類が提出された後、本市の調査委員会を経て北海道へ申達し、道での書類確認後に北海道から厚生労働省へ申達するという流れになってございます。申請の期限についてはございません。\n　以上です。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-053",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "申請の流れについては理解いたしました。申請の流れを聞いていても手続等大変ではないかなと思うのですけれども、申請するには個人の負担がかなり大きいと思いますので、市としてどのような支援をされているのかについて伺います。",
+    "text_length": 107,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-054",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申請に対しての支援についてでございますが、個別の相談に対しては丁寧に聞き取りをさせていただき、必要な申請書類をお渡ししたり、記入方法や医療機関から発行してもらう書類について御説明するなど、個々に応じて対応させていただいているところでございます。\n　以上でございます。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-055",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "市のほうで相談についてはバックアップをしていただけるということで理解いたしました。\n　それでは、本市においての新型コロナワクチンの被害に対しての申請数、認定数及び認定された場合いつから遡及して補償されていくのかどうか、これらについて伺います。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-056",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市の新型コロナワクチンに関する予防接種健康被害救済制度の申請と認定数についてでございますが、現在７件の申請がございます。厚生労働省の審査が終了しているケースもございますが、認定、否認の詳細の内訳につきましては個人情報保護の観点から差し控えさせていただきたく存じます。補償の開始につきましては、厚生労働省が個々に定めた日からというふうになってございます。\n　以上でございます。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-057",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "厚生労働省が個々に定めた日に遡及するということになってございます。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-058",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "遡及については個々ということで、はっきりこうということはないということで理解いたしました。\n　次に、定期接種の対象者について伺いますけれども、定期接種の対象者及び人数の見込みについて伺います。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-059",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "本野健康推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "定期接種の対象者及び人数の見込みについてでございますが、６５歳以上と６０歳～６４歳で心臓、腎臓、呼吸器、ヒト免疫不全による身体障害者手帳１級の方であり、年１回の接種となります。なお、接種人数は約１万７，０００人を見込んでございます。\n　以上でございます。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-060",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "１万７，０００人が対象と伺いましたけれども、１万７，０００人とした根拠と、１万７，０００人を超えてしまったというような場合はどうなるのかについて伺います。",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-061",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "本野健康推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "見込み人数の根拠についてでございますが、昨年度の高齢者インフルエンザ予防接種の接種率５８．３％を根拠に、６５歳以上人口に乗じたものを基にして算出してございます。見込み数を超えた場合でも接種を打ち切ることはなく、接種期間内であれば皆さんに受けていただきたいと思っております。\n　以上でございます。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-062",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "インフルエンザと同じ割合での算出ということで、数を超えても確保できるということで了解いたしました。\n　次の質問ですが、今回の定期接種対象者の方たちですけれども、どこで受けることができるのか、あと開始時期について伺います。",
+    "text_length": 110,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        67
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-063",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "本野健康推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "接種場所と開始時期についてでございますが、個別接種となりますことから、実施医療機関で受けていただきます。開始時期につきましては秋頃とされておりまして、後日厚生労働省から指示がある予定でございます。\n　以上でございます。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-064",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "秋頃開始ということなのですね。昨年度までは定期接種ということで御案内とか行っていたのですけれども、その中でもそごがあったりということもあったのですが、今回については個別通知等はないのかということと、保健センターを使うとかそういうような集団接種はないのかどうかについて伺います。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-065",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "本野健康推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "個別通知などにつきましては、現在は予定してございません。厚生労働省から指示があり開始日が決まり次第、実施医療機関も含め広報紙や市ホームページなどでお知らせする予定でございます。また、集団接種の実施についてでございますが、臨時特例接種開始時には短期間に集中して接種を進める必要がありましたことから集団接種を実施しておりましたが、今後は対象者が限られておりますことから、集団接種は実施する予定はございません。\n　以上でございます。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-066",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "それでは、次の質問ですけれども、新型コロナワクチン定期接種の自己負担額でございますけれども、３，３００円というふうに聞いておりますが、この根拠と、自己負担なく無料にできないのかという点について伺います。",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        71
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-067",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナワクチン定期接種の自己負担額３，３００円の根拠についてでございますが、ワクチン代を御負担いただきたいというふうに考えてございます。令和６年度につきましては国からの１件当たり８，３００円の助成金がございますため、国が示すワクチン単価１万１，６００円との差額３，３００円を自己負担として設定してございます。自己負担額につきましては、道内他都市とも情報交換しながら検討してまいりました。なお、自己負担につきましては、非課税世帯、生活保護世帯に属する人は無料としてございます。\n　以上でございます。",
+    "text_length": 250,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-068",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "今の御説明で、今年度については自己負担が発生するということで理解いたしました。来年度のことについてなのですけれども、今年度まだ始まってもいない状態ではありますが、来年度の動向といたしましては負担額等どのようになるか伺いたいと思います。",
+    "text_length": 117,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-069",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "来年度以降の自己負担額についてでございますが、自己負担額につきましてはワクチンの価格や国の助成金により算出しておりますことから、今後流通いたしますワクチンの価格や国の動向によって変わるものというふうに考えてございます。\n　以上でございます。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-070",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "国の動向、道の動向については随時お知らせいただければと思います。\n　それでは、定期接種以外の一般の方たちということになりますけれども、対象外の市民の方たちについてはどのように接種を受けることができるのか、また場所についてはどのようなところで受けるのかということと、先ほども出ておりましたけれども、一般であれば１万１，６００円ということでかなり高額になると思うのですけれども、この点について伺いたいと思います。",
+    "text_length": 204,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-071",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "定期接種対象以外の方の接種についてでございますが、医療機関のほうで任意接種として接種を受けることは可能であるというふうに認識してございます。費用につきましては、各医療機関で定めた金額を全額御負担いただくようになると存じます。\n　以上でございます。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-072",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "インフルエンザと同じ考え方というふうになるかと思うのですけれども、各医療機関で多少値段の差異が出てくるかもしれないということで理解いたしました。\n　最後の質問になりますが、今までもワクチンの流通、いつ入ってくるのかとか予定どおり入ってこないとかいろいろなことがございましたけれども、今回についてはワクチンの流通が滞らないのかどうなのかということ、ワクチンは必要なときに必要な人に行き渡るのかということについて質問いたします。",
+    "text_length": 212,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-073",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンの流通についてでございますが、ワクチンは一般の医薬品と同様に今後は流通していくというふうに伺ってございます。流通量につきましては、使用する株に対応したワクチンの開発状況にもよると考えられますことから、現時点では分かりかねるところでございます。\n　以上でございます。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-074",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "日沼委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日沼順子",
+    "member_faction": "市政結和",
+    "text": "こちらでは分からないということなのですけれども、きちんと流通できるように市のほうでもよろしく御支援のほどお願いいたします。\n　新型コロナウイルス感染症が５類になってから１年が経過したわけなのですけれども、感染者の数は増減しながらも終息ということには至っていない現状があります。今後も健康被害、予防接種のワクチン、それについては課題として継続していくことと思います。ですので、健康被害であるとか、感染予防の対策であるとか、費用の助成であるとか、そういったものの拡充を今後も求めて、私の質問を終わらせていただきたいと思います。",
+    "text_length": 261,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-075",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "渡辺委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "渡辺房代",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "おはようございます。私からは、議案第１号令和６年度室蘭市一般会計補正予算（第２号）のうち、歳出の第７款商工費、商工業振興費について伺います。\n　まず、ＰＣＢ廃棄物適正処理推進事業費２７８万で予定されている事業の概要と内訳について伺います。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-076",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＰＣＢ廃棄物適正処理事業費の内訳についてでございます。\n　当該事業につきましては、先行して解体工事が行われている施設について、ＰＣＢ監視円卓会議及び処理施設立地地域の町会を対象にした視察を実施し、周辺環境や安全対策など解体事業に関するリスクコミュニケーションを図るものとしてございます。実施日程につきましては本年秋頃を予定してございまして、事業費の内訳といたしましては全額委託料となってございますが、具体的には視察参加者の交通費、宿泊等の旅費等となってございます。なお、財源につきましては一般財源となってございます。\n　以上でございます。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-077",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "渡辺委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "渡辺房代",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "ＰＣＢ監視円卓会議の参加者や地域の町会を対象としているということでしたけれども、委託先はどこで、何人ぐらいの参加を予定していますか、伺います。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-078",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当該事業の委託先につきましては、例年このリスクコミュニケーション事業をお願いしております室蘭工業大学の専門家の先生を想定してございます。なお、参加人数につきましては２０名程度を想定して積算してございます。\n　以上です。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-079",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "渡辺委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "渡辺房代",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "この事業は補正予算で出てきたのですけれども、なぜ実施することになったのでしょうか。西日本のＰＣＢ廃棄物の受入れについて市民説明会が何度か行われておりますが、そういうものから実施するということが計画されたのでしょうか、伺います。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        84
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-080",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当該事業の補正予算計上に至った経緯でございます。\n　１つは、現有施設について、これまで本市は有効活用ということをお話ししてまいりましたけれども、昨年１２月以降環境省からのいろいろな説明の中においても現有施設の有効活用は難しいというお話があったことによって解体に進んでいく、こういうお話になってございます。併せて、その後の市民説明会の中におきまして解体について、例えば方法とかスケジュール、こういったことについても市民の皆様から御興味を示されるような声がございましたので、今回リスクコミュニケーションが必要というような判断に至ったところでございます。\n　以上です。",
+    "text_length": 281,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-081",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "渡辺委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "渡辺房代",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "市民の声などに応じて計画したということで、それについてはとてもよいことなのではないかと思いますが、ＰＣＢ廃棄物処理に関することというと所管が違うのではないかと思うのですけれども、いかがでしょうか。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        86
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-082",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "所管が違うというようなお話ですけれども、我々は違うとは思っていなくて、当初本市への施設誘致ということもございまして、経済部が主に担当してございました。誘致ですとか建設、こういった経済効果に関してです。その後、施設が立地し、処理開始に伴って安全の監視、そういった部分で生活環境部も携わるようになり、本件については事務分掌上も経済部と生活環境部双方が担当することとなってございます。リスクコミュニケーションに関する経費につきましては、これまで我々経済部が商工費により支出して室蘭工業大学とやってきたという経過もございますので、今回経済部担当の商工費ということで予算計上してございます。\n　以上です。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        87
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-083",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "渡辺委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "渡辺房代",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "今の御説明で分かりましたが、商工費の一般財源からの支出となっていますけれども、全額一般財源からとなるのでしょうか。",
+    "text_length": 57,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        88
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-084",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＰＣＢ廃棄物適正処理推進事業費に関する歳入につきましては、例年環境省より委託費ということでいただいてございまして、リスクコミュニケーション事業はそれらに該当するということになるのですけれども、当初予算では、既にいろんな事業を組み立てた中で、そこの財源として充当する計画となっていると。しかしながら、例年２００万～３００万程度の執行残というのが状況によってございますので、当初は一般財源での措置としますけれども、最終的には国からの委託費を調整して、それを財源として充当していきたいと、そういうふうに考えてございます。\n　以上です。",
+    "text_length": 264,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        89
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-085",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "渡辺委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "渡辺房代",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "説明ありがとうございました。\n　次に、視察してきた知見を今後、ＰＣＢ処理事業が終了するまで時間があるのですけれども、どのように生かしていく予定でいらっしゃいますか、伺います。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        90
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-086",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "視察してきた知見の生かし方についてでございます。\n　本事業、できるだけ多くの市民の方に安心・安全の部分を御理解いただくということが目的となってございますので、参加した委員の皆様には、例えばＰＣＢ処理の円卓会議において御報告いただき、それをＰＣＢ円卓会議だより、こういった媒体を通じて広く市民の皆様にもフィードバックしてまいりたいなというふうに考えてございます。\n　以上です。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-087",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "渡辺委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "渡辺房代",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "ぜひ広く市民に知らせて、市民が安心して暮らせるようにしていただきたいと思います。\n　以上で終わります。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        92
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-088",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "私からは、水道事業会計、用地取得費について質問いたします。\n　まず初めに、事業の概要について伺います。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        93
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-089",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業の概要についてでございますが、水道事業、下水道事業ともに東町の既存埋設管管路用地を取得するものでございます。\n　以上でございます。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-090",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "今回は補正予算ということでしたが、なぜ当初予算ではなかったのでしょうか。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        95
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-091",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補正予算での計上になった理由でございますが、本件につきましては令和４年から行ってきた協議が先月合意に至ったこと、また所有者が早期の契約を望んでいることから、今定例会に補正予算を提案させていただいたものでございます。\n　以上でございます。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        96
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-092",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "次に、これまで買ってきた管路用地みたいなところがあれば、実績を教えてください。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-093",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これまでの購入実績についてでございますが、送水管の管路用地として過去１０年間で２件ございます。\n　以上でございます。",
+    "text_length": 58,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        98
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-094",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "送配水管はどこから来て、どこに配水しているのか、また下水道管についてもどこの処理場へ流れているのか伺います。",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        99
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-095",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "各埋設管についてでございますが、送水管につきましては千歳浄水場から御崎配水池へ、配水管につきましては知利別配水池から東町地区と輪西地区へ、下水道管につきましては中島ポンプ場から蘭東下水処理場へつながってございます。\n　以上でございます。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        100
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-096",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "次に、なぜ取得しなければならなかったのか、取得に至った経緯について伺います。",
+    "text_length": 38,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        101
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-097",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "取得に至った経緯についてでございますが、令和４年に所有者が変更になる旨のお話を伺い、賃貸借契約変更についての協議を行っていく中で、当該土地売却についてのお話をいただいたところ、当該土地の埋設管は代替性がなく、今後も永続的に使用する管でございますことから、取得に至ったものでございます。\n　以上でございます。",
+    "text_length": 153,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        102
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-098",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "今回もし取得しなければ、どのようなことが想定されたのでしょうか。",
+    "text_length": 32,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-099",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "取得しなかった場合についてでございますが、現行賃借料の増額要求や管の移設要求なども想定しなければならないものと考えたところでございます。\n　以上でございます。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        104
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-100",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "民有地に埋設している管は、ほかにどれくらいあるのでしょうか。",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-101",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "民有地に埋設している管についてでございますが、契約件数で水道が１５９件、下水道が１７件、合計１７６件でございます。\n　以上でございます。",
+    "text_length": 68,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        106
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-102",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "分かりました。\n　次に、ほかにも買わなければならない土地はあるのでしょうか。",
+    "text_length": 38,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-103",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在のところ、ほかに購入を予定している土地はございません。\n　以上でございます。",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        108
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-104",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "取得額はどのように決めたのでしょうか、また妥当な金額と考えているのでしょうか。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-105",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "取得額についてでございますが、本市が鑑定を依頼した不動産鑑定士による鑑定額に分筆費用など今回の売買における必要経費を加えた金額としたところでございます。\n　以上でございます。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        110
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-106",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "次に、取得後の活用についてはどのように考えているのでしょうか。",
+    "text_length": 31,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        111
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-107",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "取得後の活用についてでございますが、現在当該土地はコンビニエンスストアの駐車場や北海道工業用水の管路としても利用されておりますことから、引き続き貸し付けていくことで活用してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        112
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-108",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "ただいまの答弁で、取得後に貸し付けるということですが、収入についてはどれぐらいを見込んでいるのでしょうか。",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        113
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-109",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "阿部下水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貸し付けることによる収入についてでございますが、年額で駐車場が約３６万円、工業用水の管路が約３５万円の合計約７１万円を見込んでございます。\n　以上でございます。",
+    "text_length": 80,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        114
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-110",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "現在の賃借料は幾ら払っているのでしょうか。",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        115
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-111",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "阿部下水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在の賃借料についてでございますが、年額で水道事業会計から１９万５８０円、下水道事業会計から１８万７，４００円の合計３７万７，９８０円を支出してございます。\n　以上でございます。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        116
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-112",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "民地を借りる場合の地代の計算方法について伺います。",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        117
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-113",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "阿部下水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "民地を借りる場合の地代の計算方法でございますが、室蘭市公有財産規則の貸付料の算定方法に準じ、１平方メートル当たりの固定資産評価額に１００分の６と貸付面積を掛けて算出してございます。\n　以上でございます。",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        118
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-114",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "確認ですが、民地を借りる場合、市が地代を計算し決定し、地主は地代を決められないということでよいのでしょうか。",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        119
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-115",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "阿部下水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "民地を借りる際の地代の決定方法でございますが、まずは市で算出した地代を提示し、そこから所有者と交渉の上決定していくものと考えてございます。\n　以上でございます。",
+    "text_length": 80,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        120
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-116",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "民地を借りた場合、水道部以外、基本的に土地の所有者等は立入りできない土地と考えてよいのでしょうか。",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        121
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-117",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "阿部下水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "借りた民地についてでございますが、管を埋設することとなるため、地上に建物を建設することはできなくなりますが、それ以外の制約は基本的にはございません。\n　以上でございます。",
+    "text_length": 85,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        122
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-118",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "昨今の物価高騰等により地代を上げてほしい旨の申出があった場合の対応についてはどのように考えていますか。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        123
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-119",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "阿部下水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地代を上げてほしい旨の申出があった場合についてでございますが、基本的には現状での継続をお願いしていくことになるものと考えてはございますが、賃借料増額の理由など、その時々の状況を考慮し、土地購入も含め所有者と協議していかなければならないと考えてございます。\n　以上でございます。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        124
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-120",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "支出のなくなる分も含め月に１１０万円程度収支がよくなりますが、ペイするまでに４０年弱かかるということになりますが、回収するまでに時間がかかり過ぎと感じますが、見解を伺います。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        125
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-121",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "阿部下水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "投資した金額を回収するまでの期間についてでございますが、本来、水道・下水道管は安定的な事業運営のためにも自らの所有地に敷設することが望ましいものと考えておりますので、今回の投下資金の回収期間についての評価は難しいところではありますが、例えば月ぎめ駐車場などの面活用についても検討し、可能な限り資金回収を早められるよう努めてまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        126
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-122",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "現在借りている民地について、埋設管の更新等で上屋などが障害となる土地はないのでしょうか。ある場合、どのぐらいあるのか。市内の管の老朽化が進んでいるので、いつか更新しなければならないときが来ると思います。更新するときの手法について伺います。また、更新に問題がある土地については、土地を買い取る考えはあるのか伺います。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        127
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-123",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "阿部下水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在、埋設管の更新工事等で支障となる上屋などは存在しておりません。\n　以上でございます。",
+    "text_length": 44,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        128
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-124",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "市有地と借りている民地の埋設管が老朽化により更新しなければならないときには、市有地の工事より民地の工事のほうが相手との折衝や手続的にもハードルが高いと思いますが、それぞれどのような手続を行うのでしょうか。",
+    "text_length": 102,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        129
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-125",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "竹島水道部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市有地及び民地の工事についてどのような手続を行っているかについてでございますが、市有地につきましては、主に公道内に管を埋設してございまして、室蘭市や国、北海道の各道路管理者との協議の下、埋設管工事を実施してございます。民地につきましては、工事概要や民地への埋設管工事等の必要性につきまして土地所有者様への説明を行い、土地使用承諾等工事の許可をいただくための交渉を実施してございます。\n　以上でございます。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        130
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-126",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "今後も取得したほうがよいというような民有地、購入しなければいけなくなるような土地が出てくるかもしれませんが、このまま購入し続けていく考えなのでしょうか。",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        131
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-127",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "和野公営企業管理者",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の土地購入についての考えでございますけれども、原則的には管の維持管理を考えた場合、自らの所有地に敷設するということが望ましいというふうに考えてございますけれども、今後の財政負担を考慮して、現在賃借している土地に関してはこれを継続するということを基本にしたいと考えてございます。一方、所有者が変わるということで、これまでの使用条件を変更してほしいですとか、あるいは悪意のある第三者に転売されるといったリスクもありますので、対象となる管の代替性ですとか、あるいは相手方の事情、購入する場合の金額、財政負担、そういったものを考慮しながら総合的に判断していきたいということでございます。\n　以上でございます。",
+    "text_length": 302,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        132
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-128",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "長岡委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長岡充洋",
+    "member_faction": "市民ネット・むろらん",
+    "text": "現在のところほかに買う土地はないというところでしたが、今後絶対ないということでもないと思っております。土地購入には多額の費用がかかります。本市でも人口減少が顕著です。今後の水道部の財政状況によっては十分な資金を確保することが難しい場合も考えられますので、複数のシナリオを想定した計画などを検討し、柔軟に対応していってほしいと申し上げ、私の質問を終わります。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-129",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "伊藤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤勉",
+    "member_faction": "市民ネット・むろらん",
+    "text": "それでは、私から第２款総務費、第１項総務管理費、第３目情報処理費、情報処理システム整備費について伺ってまいります。\n　まず、今回の補正予算２，５８３万３，０００円は全額サーバーの使用料及び賃借料と伺っていますが、全て行政用サーバーの分なのか、期間はいつからいつまでの分なのかを伺います。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        134
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-130",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "行政用サーバー更新に係る補正額２，５８３万３，０００円についてでございますが、サーバー総数全１４台のうち１１台の更新に係るリース料でございます。期間は、本年１０月～令和７年３月の半年分に係るリース料の補正となってございます。\n　以上でございます。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        135
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-131",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "伊藤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤勉",
+    "member_faction": "市民ネット・むろらん",
+    "text": "今年の１０月からリース開始ということと、今年度は半年分ということで理解しました。\n　それでは、なぜ仮想基盤全体を見直すのか、理由について伺います。",
+    "text_length": 73,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        136
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-132",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "仮想基盤全体を見直す理由についてでございますが、本市で利用しておりますサーバー仮想化ソフトウエアの提供企業が他社に買収されたことに伴いましてサービス提供方式が大きく変更となり、ライセンス利用料が高騰することが明らかになったことから、コスト抑制に向けてサーバーやソフトウエアの調達方法を含む仮想基盤構成全体の見直しを行うものでございまして、最終的に従前の物理サーバーと仮想化ソフトウエアライセンスの個別購入方式よりも仮想化ソフトウエアを搭載した物理サーバーのリース方式に移行したほうが、中長期的に見たトータルコストの抑制につながると判断したところでございます。\n　以上でございます。",
+    "text_length": 290,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        137
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-133",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "伊藤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤勉",
+    "member_faction": "市民ネット・むろらん",
+    "text": "現在利用している仮想化ソフトのライセンス利用料が上がるということですが、具体的に現状のままだと年間の費用がどの程度増える見込みなのか、また仮想基盤全体を見直すことでどの程度費用の増加を抑えられるのか伺います。",
+    "text_length": 104,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        138
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-134",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現状維持の場合の費用の増加と見直しを行った場合の費用の増加の比較についてでございますが、ソフトウエアライセンス料の大幅な値上げにより、従来の仮想基盤構築方式を維持した場合、年間費用は７，０００万円増の約１億２，４００万円となりますが、今回の見直しにより年間費用は仮想化ソフトウエアを搭載したサーバーのリース料約５，２００万円に抑えられるため、平均７，２００万円の抑制効果があると考えてございます。\n　以上でございます。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        139
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-135",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "伊藤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤勉",
+    "member_faction": "市民ネット・むろらん",
+    "text": "非常に大きい額の増加を抑えられるということで理解しました。\n　それでは、今回の対応がなぜ当初予算ではなく補正予算になったのか伺います。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        140
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-136",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の補正予算計上となった理由についてでございますが、仮想化ソフトウエアの提供企業が他社に買収されたのは昨年１１月でございましたが、本市が使用しておりますソフトウエアの新たなライセンス価格が公表されたのが本年３月であったことから、当初予算には間に合わなかったところでございます。\n　以上でございます。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        141
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-137",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "伊藤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤勉",
+    "member_faction": "市民ネット・むろらん",
+    "text": "製品の価格見直しの発表が３月だったために今回の補正予算での対応になったということで分かりました。\n　今回サーバーをリースする予定であるということですが、現在運用しているサーバーは所有しているものなのかどうか、それと今回リースを選択した理由について伺います。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        142
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-138",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在運用しておりますサーバーにつきましては全て物品購入により調達してございまして、本市において所有しているものでございます。また、今回リースを選択した理由についてでございますが、物理サーバーの購入費や仮想化ソフトウエアのライセンス料など仮想サーバーの構築に要する総費用の比較検証を行った結果、リース方式に優位性があると判断したところでございます。\n　以上でございます。",
+    "text_length": 184,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        143
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-139",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "伊藤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤勉",
+    "member_faction": "市民ネット・むろらん",
+    "text": "今回の対応がベストな方法であろうという判断に至った経緯、いろいろ調査だとか検討を重ねてだと思いますが、その判断に至った経緯について伺います。",
+    "text_length": 70,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        144
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-140",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市がリース方式を採用しました理由は先ほど申し上げましたとおりコスト比較によるところでございますが、検討に当たりましては道内他都市に聞き取り調査を行ってございまして、本市と類似する規模の団体におきましてはリース方式を採用する団体が多くを占めていたと認識してございます。また、近年、物理サーバーやソフトウエアライセンスの価格がともに値上がりの傾向にございますことから、毎年度の値上がりのリスクを一定期間回避できることもリース方式を採用することとした理由の一つでございます。\n　以上でございます。",
+    "text_length": 246,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        145
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-141",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "伊藤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤勉",
+    "member_faction": "市民ネット・むろらん",
+    "text": "道内他都市への調査だとか価格変動のリスクを考慮しての判断ということで理解しました。\n　今回のサーバー更新によって、市民サービスや職員のシステムなどの使い勝手に影響があるかどうか伺います。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        146
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-142",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の更新による影響についてでございますが、本件は現行とは別の仮想化ソフトウエアを搭載したサーバーへの移行という内部的な運用の変更のみでありますことから、職員の各種システムの操作感や市民サービスへの影響についてはないものと考えてございます。\n　以上でございます。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        147
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-143",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "伊藤委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤勉",
+    "member_faction": "市民ネット・むろらん",
+    "text": "今回の対応は、市民やシステムを使用する職員への影響なく費用負担を抑えようというものなので、非常に評価に値するものだと思います。今後も引き続き市民や職員にとっての利便性向上や費用負担を抑えることを検討していただきたいと思います。\n　以上で終わります。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        148
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-144",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "南川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "南川達彦",
+    "member_faction": "市政結和",
+    "text": "それでは、私のほうから第２款総務費、情報処理費と第１１款教育費、学校管理費について一問一答で伺いたいと思います。同僚委員との重複を避けながら簡潔に伺いたいと思います。\n　まず、情報処理費の情報処理システム整備費について、ただいまるる質問がありました。今回サーバーをリースするということで、現行１４台あるうち１１台を更新されるということでありましたけれども、現行のサーバーはどのようになるのか、まず伺いたいと思います。",
+    "text_length": 208,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        149
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-145",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現サーバーはどうするのかということについてでございますが、現サーバー１４台のうち５台は再構築により転用が可能なため、活用を予定しております。残りのうち７台につきましてはサポートが受けられなくなるものでございますが、現行の仮想化ソフトウエアの運用については可能でございますため、検証環境や影響範囲の少ない内部用のツールを稼働させる基盤として利用いたします。残る２台につきましては保守切れになってしまいますことから、来年で廃止とさせていただきます。\n　以上でございます。",
+    "text_length": 233,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        150
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-146",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "南川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "南川達彦",
+    "member_faction": "市政結和",
+    "text": "現行１４台のこの後の活用について伺いましたけれども、全部が使えるわけではないということですけれども、確認で伺いたいのですけれども、サーバーは全部更新しないということでありましたけれども、本庁内のどの業務に関わることになるのか、その部分伺いたいと思います。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        151
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-147",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "どの業務へということでございますが、一般的に共同電算で行っております総合行政等の業務以外、全ての業務に関わる対応となってございます。\n　以上でございます。",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        152
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-148",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "南川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "南川達彦",
+    "member_faction": "市政結和",
+    "text": "共同電算以外の全ての本庁の業務だということで理解いたしました。今、国のほうで自治体のシステムの標準化、共通化をこれから進めるということがあるのですが、そこで確認なのですけれども、今回のサーバー変更については、これから国のほうで主導してやっていく標準化、共通化するシステムについて影響があるのかどうか、その点について確認させていただきたいと思います。",
+    "text_length": 174,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        153
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-149",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本件とシステム標準化・共通化との関係という御質問でございますが、今回の更新につきましては、現行とは別の仮想化製品を搭載したサーバーへの移行という内部的な運用の変更ということでございますので、直接的には標準化、共通化とは関係なく、影響はしないというところで考えてございます。\n　以上でございます。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        154
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-150",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "南川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "南川達彦",
+    "member_faction": "市政結和",
+    "text": "国がやろうとしているシステムの標準化、共通化とは関係ないということで、二重のコストにはならないということで理解させていただきました。\n　国のほうでやる分に関してはセキュリティー、非常に厳しいものをかけていくという話もありますけれども、今回はそうではないサーバーの更新ということで、今回の更新によってセキュリティーが現行のものと比べてどうなっていくのか、その辺り考え方があれば伺いたいと思います。",
+    "text_length": 197,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        155
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-151",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "セキュリティー関係の御質問でございますが、今回更新するサーバーでございますが、従前のサーバーと同等の高いセキュリティー機能を有しているものを選択しているというふうに判断してございます。\n　以上でございます。",
+    "text_length": 103,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        156
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-152",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "南川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "南川達彦",
+    "member_faction": "市政結和",
+    "text": "昨今、セキュリティー問題がいろいろと問題になっているところでもありますので、高いセキュリティー機能を持っているということで安心するところではありますけれども、先ほどサーバーの今後の活用で２台は使えなくなっていくという話がありましたけれども、今後国のほうで進められるシステムとか含めて、クラウド化とかいろんなことが進められていくと思うのですけれども、クラウドサービスとかいろんなことが拡大していく中でサーバーの台数というのは減っていくのではないかなと思うのですけれども、今後のサーバーの台数の見込みについて伺いたいと思います。",
+    "text_length": 262,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        157
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-153",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "荒井ＩＣＴ推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後のサーバー台数の見込みというところでございますが、委員おっしゃいますとおり、クラウドサービスの拡大によります物理サーバーの容量の減少のほか、来年度以降三層分離に係る製品の見直しも行ってまいりますことから、当方としましても継続的にサーバーのダウンサイジングを図りまして台数の減少を図ってまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        158
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-154",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "南川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "南川達彦",
+    "member_faction": "市政結和",
+    "text": "今回質問させていただきましたけれども、システム改修、日進月歩で技術が革新していく中でついていくのが大変だというところで、これまでも情報処理にたけた人材を市で確保していただきたいということも申し上げさせていただいておりますけれども、その部分しっかり見ていかないとコストがかかる部分にもなりますので、情報のアップデートも含めて適切な運用をしていただきながら、予算を抑えられるように努めていただきたいということをお願いして、次の質問に移りたいと思います。\n　続いて、教育費の学校管理費のうち小学校冷房設備整備事業費について、先ほど同僚委員からもありましたので具体的に内容を伺いたいと思いますけれども、今回小学校のエアコンの実施設計が補正予算で組まれて、令和７年度に小学校の設置工事、そして中学校の実施設計、令和８年度に中学校の設置工事をしていくということであります。先ほども工事は夏までにというお話がありましたけれども、夏休み期間を利用すると思うので、それが終わってからとなるとこどもたちがいい環境になるのが早くて９月以降ということで、実質１年間を通してこどもたちがそういった環境の恩恵を受けるというのが、小学校に関しては令和８年、中学校に関してはこのスケジュールでいくと令和９年になるということを先ほどの質問で理解させていただきました。導入に関しては先般も求めていたところで、こういったスケジュールを示していただいたことについては評価するところではあるのですけれども、できる限り早くやっていただきたいという思いで一つ聞きたかったのが、小学校に関しては今年度実施設計、来年度やるというところについては理解するのですけれども、中学校についても早くやるのであれば実施設計を早めにやっておいてもいいのではないかなと思うので、今年度補正予算で組んでもよかったのではないかなと思うのですけれども、その点について御見解を伺いたい。あと、中学校の工事についても令和８年度に繰り越すのではなくて、小学校を先にやるというスケジュールについては分かるのですけれども、工事の関係私も詳しいことは分からないのですけれども、夏休み中に小学校が終われば、その後、冬休み、春休み、そういったところで中学校の整備を早めに、令和７年度に中学校の整備をすることはできないのか、その辺についてこれまで検討があったのかどうか含めて伺いたいと思います。",
+    "text_length": 1002,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        159
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-155",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御質問のありました中学校の設計の前倒しですとか、中学校の整備を早めに行うべく検討があったのかといったところにつきましては、今回教育委員会の中でもこの年数の適正性について協議させていただき、その後財源含めて市長部局ともこれまで協議してまいりました。一台でも多く早めにつけたいという思いにつきましては同じ気持ちでございましたが、昨今の事業者の人的な確保ですとか資機材の整備についての様々な部分での難しさですとか、本市以外にもエアコン設置を予定している自治体がございます。そういったことも総合的に考えまして、また財政的な負担も考慮して今回このような方針とさせていただきました。とは申しましても様々社会情勢は流動的でございます。そういったことから教育委員会といたしましては、一日でも早く整備したいという思いは教育委員会もそうですし、室蘭市としても同じ思いでございますので、社会情勢等を敏感に察知しながら、一日でも早い設置に向けて進めてまいりたいというふうに考えております。\n　以上でございます。",
+    "text_length": 443,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        160
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-156",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "南川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "南川達彦",
+    "member_faction": "市政結和",
+    "text": "思いについては今までも質問させていただいて、その部分は教育委員会の皆さんとも共有しているところだと思っているのですが、テクニック的な話になるのかもしれないですけれども、予算編成の仕方含めて御提案いただいている令和６年、７年、８年の流れにしても、変わるのは１年しかないのです。起債をしたりとかしながら、返済の計画も１年しか変わらない。中学校を早めるとなれば財政はその分大きくなるのかもしれないですけれども、たった１年しか変わらないという部分で進められて、工事のほうがいかないとなれば繰越明許なりなんなりかけるというテクニックもあるのかもしれないので、令和７年度予算については今後編成等々あると思いますので、市職員の皆さんの知見を生かしていただいて、先にできるようなものがあればそうした進め方をお願いしておきたいと思います。\n　エアコン導入に関してもう一点、導入した後心配になるのはランニングコストというところがあるかと思うのですけれども、現状として設置する台数と学校でのエアコンの稼働によってどれぐらいランニングコストがかかるのか、その辺り試算されているようでしたら伺いたいと思います。",
+    "text_length": 492,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        161
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-157",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "計画どおり設置した場合におきましては、小学校で月額３００万円程度、中学校で２００万円程度のランニングコストかかかるのではないかと想定しております。７月～９月の３か月間の稼働と想定した場合、年間１，５００万程度と今のところ考えてございます。\n　以上でございます。",
+    "text_length": 130,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        162
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-158",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "南川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "南川達彦",
+    "member_faction": "市政結和",
+    "text": "想定ではありますが、小学校で月額３００万、中学校で２００万ということで少なからず大きな財政負担を強いる。その中で進めていただくことについては敬意を払うところではあるのですけれども、できる限り知見含めて工夫しながら抑えていくということも継続利用には必要かと思うのですけれども、ランニングコストを抑えることについて方策等々考えられているものがあれば伺いたいと思います。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        163
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-159",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "船橋［教育］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ランニングコストにつきまして、今のところこれといったところはございませんが、これまで本市におきましては、国の交付金を活用しながら小中学校の照明ＬＥＤ化を進めることでランニングコストの抑制、省エネ化に取り組んできたところでございます。今後におきましてもランニングコストの抑制につきまして考えてまいります。\n　以上でございます。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        164
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-160",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "南川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "南川達彦",
+    "member_faction": "市政結和",
+    "text": "ランニングコストについてですけれども、まだ設置しておりませんので、実際どれぐらい費用がかかるのかというのは設置して使ってみないと分からないところではありますけれども、設置することを決めるということであれば、時間的にはまだありますので、運用の中とか様々な工夫をしてその部分圧縮できるように考えていただきたいと思いますし、私も勉強させていただいて、提案できるものについてはまた議会で提案させていただきたいと思いますので、併せてお願いしたいと思います。\n　以上で質問を終わります。",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        165
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-161",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "それでは、私のほうからは、第２款総務費、第１項総務管理費の中の第７目財産管理費中、公共施設等整備事業費、また第７款商工費、第１項商工費中、第１目商工業振興費、ＰＣＢ廃棄物適正処理推進事業費について一問一答でお伺いします。\n　まず初めに、先ほど同僚委員のほうからも質問がありましたが、公共施設等整備事業費、絵鞆岬展望台整備事業費についてであります。整備費の内訳と財源の内容等はお聞きしていますので、老朽化したということではありますけれども、それだけではないかなという整備の目的、そういう部分についてまず伺いたいなと思います。",
+    "text_length": 261,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        166
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-162",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "絵鞆岬展望台の整備目的でございますが、アイヌ文化等の次世代への継承を確実にするとともに、地域に存在するアイヌ文化等を発信し、内外におけるアイヌ関連の交流活動を活発化させ、魅力ある地域社会の形成を目的として今回慰霊碑の改修を行う予定でございます。\n　以上でございます。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        167
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-163",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。\n　それでは、この絵鞆岬展望台、先ほど同僚委員からの質問の中にトイレの改修等も入っていましたけれども、これまでの整備実績についてはどのようになっているのか伺います。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        168
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-164",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "絵鞆岬展望台のこれまでの整備でございますが、平成２年５月に整備を完了いたしまして、その後平成２４年にトイレの電源設備やインターロッキング、令和２年度に外灯、令和３年度にトイレ電源引込み開閉器盤、令和４年度にトイレのバリアフリー化、洋式化などの改修等を行ってございます。\n　以上でございます。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        169
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-165",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。令和２年度から引き続き改修が続いているということなのですけれども、先ほど同僚委員のほうに対して具体的な改修内容等答弁あったわけなのですが、地名の由来板、私も思います。枠が木製で老朽化しているということで、ぜひこれも近日中に改修していただきたいなと。エンルムという名が絵鞆岬の由来だということでありますから、そういう部分しっかりとやっていただきたいなと思います。\n　平成３１年４月にアイヌの人々の誇りが尊重される社会を実現するための施策の推進に関する法律、いわゆるアイヌ施策推進法が成立しまして、同年５月から施行されて５年が経過しました。この間本市ではアイヌ施策推進事業としてどのような施策を行ってきたのか伺いたいと思います。また、先ほど同僚委員からも若干質問ありましたけれども、今年度以降の他の推進事業についてもどのようになっているのか伺います。",
+    "text_length": 380,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        170
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-166",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "アイヌ施策推進法成立後、本市が取り組んできた事業についてでございますが、令和元年度にｅｎとーく等でアイヌ協会から要望を受け、協議を重ね、室蘭市アイヌ施策推進地域計画を令和２年度から５年間の計画として策定し、保健福祉部を中心に事業を推進してきており、これまでイタンキ生活館の建て替えやアイヌ文化の理解促進に資する資料の保存、市民向けの講演会や講座の開催、慰霊碑周辺の整備として絵鞆岬展望台のトイレのバリアフリー化などを実施し、今年度は慰霊碑等の整備を予定してございます。今年度以降のアイヌ施策推進事業でございますが、引き続き庁内関係各課と連携して、アイヌ協会と協議の上、事業について検討する予定でございます。\n　以上でございます。",
+    "text_length": 314,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        171
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-167",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。先ほど整備実績についてお聞きしたときに、アイヌ施策推進法によって本市がアイヌ施策推進地域計画を令和２年度から５か年計画でやっているということで、その一環として絵鞆岬のほうも整備されてきたというふうに理解いたします。\n　先ほど同僚委員の質問の中で、今回の慰霊碑は全面造り替えというような御答弁がありました。昭和３７年９月に建立されたものでありまして６０年以上たっています。碑文の話もありました。碑文は当時の室蘭市長、熊谷　綾雄氏のものでありますけれども、慰霊碑の裏側には図案化されたアイヌ民族の墓標とされる男女一対のくわがはめ込まれているということでありまして、これについても、慰霊碑は同じ形でというお話でしたけれども、同じものが作成されてはめ込まれるのか、その点について確認したいと思います。",
+    "text_length": 353,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        172
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-168",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "慰霊碑造り替えに伴います墓標の扱いでございますが、当初墓標につきましては碑文と同様に既存のものを残して利用する方法を検討してございましたが、老朽化による腐食が著しくて、再利用がほぼ不可能な状態でありましたため、室蘭アイヌ協会の御意見、御要望等をお聞きしまして、墓標を含めて全部新しいものに造り替えることといたしてございます。\n　以上でございます。",
+    "text_length": 173,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        173
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-169",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "全て新しく造り替えていただくということであります。室蘭の観光情報サイト「おっと！むろらん」というものがあるのですが、これには現慰霊碑はアイヌ文様の碑面に風が吹くと「ヒューヒュー」と、あたかも先住民の雄叫びが聞こえるように設計されていますというふうに載っていまして、風が強い地域ですから、同じ形にすると古代に遡ってというか、アイヌ民族の方々の心情に触れることもできるのかなと。本当に聞こえるかどうか私は聞いたことがないのですけれども。\n　そこで、絵鞆岬展望台というのは室蘭八景の一つでもありまして、絵鞆岬の景観が望める場所でありまして、直近では毎年度整備されてきましたが、今回の慰霊碑整備で一区切りつくのかなというふうに考えるわけなのですが、次年度以降の整備計画はあるのかお聞きしたいと思います。",
+    "text_length": 347,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        174
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-170",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "絵鞆岬展望台の次年度以降の整備でございますが、大規模な改修につきましては今年度で一区切りとなりまして、次年度以降は必要に応じまして通常の管理の中で修繕などの対応をしていく予定でございます。\n　以上でございます。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        175
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-171",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。\n　慰霊碑が高い位置にあって、階段を上っていかなければならないようなものだということで、造り替えるに当たってバリアフリー化するというお話なのですが、現在駐車場の周辺が、安全対策ということでしょうけれども、幅員１．３メーター程度の歩道で囲われております。そういう部分、今回の整備ではどのようになるのか。また、令和４年に整備されたトイレのバリアフリー化、洋式化、これについては評価するわけなのですが、電動車椅子の大きいものであると車幅が７０センチぐらいになるということで、大体はそれ以下の車椅子ということなのですが、車椅子の方にとってこの歩道幅員というのはちょっと狭いというふうに感じられますし、車椅子の方がトイレに行くには歩道の段差、大体十二、三センチあるのですけれども、この段差を車椅子で乗り越えられますかということなのです。車椅子の方が歩道に上がれるスロープ的なものを造らないと、トイレはバリアフリーになっているけれども、そこまでたどり着けないという場合もあります。介助者だって持ち上げなければならないから大変なのです。そういうようなこともしっかりと考えてほしいなというふうに思うのですけれども、その点については今回の整備には入っていませんよね。どうですか。",
+    "text_length": 537,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        176
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-172",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "歩道の幅員についてでございますが、現況の歩道は車椅子の方が利用するには狭い幅員となってございますため、歩道幅員の拡幅や車椅子が転回できる広さの場所を設ける、段差の対策など、安全に利用できるような整備を検討してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 130,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        177
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-173",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "今回は慰霊碑に関しての予算づけということですけれども、絵鞆岬展望台ですから、慰霊碑とともに展望というような部分もあります。そういう部分ではしっかりやっていただきたいなと思います。この件については後でまた言います。\n　次に、室蘭市のアイヌ施策推進事業においては、成果として絵鞆岬展望台の入り込み数については令和２年度実績が年間６，４１０人、中間目標としての令和４年度が年間６，５００人、最終目標の今年度－－令和６年度が１万人となっています。達成できるのかということなのですが、先ほど同僚委員からの質問でありました工事スケジュール、これから入札をかけて、８月、９月ですか、そういうような形からスタートして年度内ということなのですが、真冬に観光客の方とか来ることはなかなかないかと思うのですが、秋のちょうどいいシーズンのときに工事をやっていると、来訪者、入り込み数に対して影響があるのではないのかな、目標を達成できるのかというふうな懸念があるのですけれども、その点についてはどのようにお考えですか。",
+    "text_length": 446,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        178
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-174",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和６年度におきます絵鞆岬展望台の入り込み数の目標達成の見通しでございますが、中間目標であります令和４年度におきましては目標６，５００人に対しまして入り込み数が６，９３１人、昨年度が８，１９３人となってございまして、工事等の懸念はございますが、引き続き大黒島を含めます絵鞆岬周辺のすばらしい自然景観をＰＲしながら、目標の１万人を達成できるように取り組んでまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 203,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        179
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-175",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "どうしても市の事業ですから観光シーズン等も含めた中で年度内にという部分はあるかもしれませんけれども、もうちょっと柔軟に一部繰越し部分もあって工期が年度をまたぐというようなことも考えていただきたかったなというふうに思います。\n　それで、今後のアイヌ文化等の関連施設整備についてはどのようにお考えか伺います。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        180
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-176",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "舛田経済部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "アイヌ文化等の関連施設整備の考え方についてでございますが、令和２年に整備しましたイタンキ生活館には新たにアイヌ民具類等の展示室を設けたほか、民俗資料館におきましてもアイヌ関連の民具や遺跡出土品の複製作成など展示内容の充実化に努めており、また今年度予定している慰霊碑の整備は展望台を訪れる観光客など多くの人へのアイヌ文化発信に寄与することになり、これまでに整備してきた施設、資料等を有効活用し、アイヌ文化に対する理解の促進、アイヌの人々の民族としての誇りが尊重される共生社会の実現に向けて取り組んでまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 274,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        181
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-177",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。慰霊碑とともに整備後の絵鞆岬展望台の活用ということであります。平成２４年１月に国の名勝地として指定された名勝ピリカノカ絵鞆半島外海岸や室蘭八景とどのように今後連携していく考えなのか。また、地域のアイヌ文化等の展示施設でもある室蘭市民俗資料館とんてん館との連携も視野に入れた場合、施設等への誘客に向けた情報発信、これについてもどのように行う考えなのか伺いたいと思います。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        182
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-178",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "舛田経済部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "名勝ピリカノカや室蘭八景との連携、民俗資料館等施設への誘客についてでございますけれども、今回整備する絵鞆岬の慰霊碑は水族館を含む祝津・絵鞆エリアに立地しており、今後様々な観光資源を活用した面的な魅力づくりの検討を始める予定となってございまして、絵鞆岬展望台を含めてエリアにおける機能分担、回遊性などの整理、検討を進め、本市への交流人口拡大、市内の施設等への誘客に向けて取り組んでまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        183
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-179",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。絵鞆岬展望台という部分では、皆さん御存じかと思いますけれども、展望台スペースというのが帆船の船首をイメージした展望台、突き出ているわけです、船の船首のように。建設当時は絵鞆岬からの景観がより美しく見える状況であって、そのため室蘭八景にも選定されたかと思うのですが、現在は樹木が繁茂していまして、海岸線が特に見えづらいような状況であります。せっかく慰霊碑等の整備が完了してもすばらしい景観が見えなければ魅力は半減してしまうのではないかなと思います。以前、チャラツナイの展望台も同様の状況であり、是正を求めたわけなのですけれども、展望台から見える景観も来訪者が来てよかったと思える対応をすべきではないでしょうか、その点について見解を伺います。",
+    "text_length": 326,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        184
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-180",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "大久保観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "絵鞆岬展望台の樹木繁茂により景観が見えにくい点についてでございますが、これまでも市内の展望台において樹木繁茂により景観が見えにくいなどの苦情を受けており、業者への樹木剪定依頼や観光課職員等による樹木の剪定を行っているところでございます。今後におきましても来訪者の方々が景観に満足していただけるよう適切に剪定作業等を実施してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        185
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-181",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "本市の貴重な観光資源でもありますし、先住民であるアイヌ民族の方々の部分も含めて本市の観光の売り、そういうものにもなっておりますので、しっかり整備していただきたいなと思います。\n　それでは次に、商工費、ＰＣＢ廃棄物適正処理推進事業費、先ほど同僚委員に対して内訳と財源等答弁がありました。そこでお聞きしますけれども、今回はリスクコミュニケーション事業として委託をするということなのですが、本来公費を使っていくというような部分では、我々も政務活動費とかいただいたりして、支出する場合には旅費と宿泊費ということで充当する部分になるかと思うのですが、多くの宿泊先で朝食は無料提供されている部分があるかと思うのです。ただ、昼食や夕食というのは自己負担による場合が通常であります。どこに行っても食事はするということでありますけれども、今回の事業においては参加者の自己負担等もこのような形でいくと発生するのか、その点について確認したいと思います。",
+    "text_length": 415,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        186
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-182",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "参加者の方の自己負担についてでございます。\n　基本的には発生しないというような考え方でございまして、今回は室蘭工業大学に委託ということで室蘭工業大学の旅費規程で、本市も同様なのですけれども、朝食、夕食については宿泊費に含まれるという下で定額で支出します。昼食につきましては日当に含まれるということで積算してございますけれども、実際としては昨今の物価高騰で宿泊費も高騰してございますし、食費も上がってきておりますので、旅費に含まれるということで積算してございますけれども、実質は自己負担というものも多少は発生する可能性があるというふうに認識してございます。\n　以上でございます。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        187
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-183",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "細かいことを聞いて申し訳なかったですけれども、一般市民から見ると、公費ですからお金の使い方という部分では、そこら辺どうなっているのだと我々も聞かれた場合お答えしなければならないので、そういう部分でお聞きしました。\n　今回の参加予定者はＰＣＢ処理事業監視円卓会議の委員及び近隣町会の計２０人とのことでしたが、参加者の選定基準はどのようになっているのか、円卓会議で何名、町会関係者で何名というような部分で決まっているのでしょうか、その点について伺います。",
+    "text_length": 225,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        188
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-184",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の視察参加者の選定基準と内訳についてでございます。\n　選定基準につきましては、これまで北海道事業所において高濃度ＰＣＢ処理事業の監視という公の立場を持って携わってきていただいた団体ということで監視円卓会議を中心とさせていただいたのと、日頃より処理施設で行われる防災訓練に一緒に参加したりとか、毎年の見学会、こういったものに積極的に参加されて意見交換を行っております、主に御崎町会になりますけれども、町会ということにさせていただきました。なお、内訳につきましては、監視円卓会議のメンバー１５名と町会から５名程度を想定して２０名ということで積算してございます。\n　以上でございます。",
+    "text_length": 291,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        189
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-185",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。\n　これから議員協議会も行われるということですけれども、西日本のＰＣＢ廃棄物受入れに関する市民説明会では町内会以外の各種団体からの参加者もいて、いろいろな御意見があったかと思うのですけれども、今回の参加対象としていない理由について伺います。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        190
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-186",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回広く市民を対象としていない理由についてでございます。\n　リスクコミュニケーションのそもそもの目的としては、市民の方とＰＣＢを安全に処理していくということでのリスクを共有していく、そういうことでのリスクコミュニケーションということになってございますので、できるだけ多くの方に参加いただきたいという気持ちは当然ございます。しかしながら、効率的な費用の考え方とか効果的な事業実施ということで、まずは今までＰＣＢの安心・安全の監視に携わってきた厳しい目を持って見に行くということで限定させていただいたということでございます。\n　以上でございます。",
+    "text_length": 271,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        191
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-187",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。\n　ＰＣＢ廃棄物処理業務終了施設の解体現場における周辺環境や安全対策などを調査するというお話でしたけれども、具体的にはどのような形で調査をするのか、内容について伺いたいと思います。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        192
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-188",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "具体的な調査の方法でございますけれども、現状解体が行われているのは豊田、大阪、北九州というふうになってございまして、環境省、ＪＥＳＣＯとも相談しながら、豊田もしくは北九州などがいいのではないかということで検討しているところでございますけれども、実際の現場に行って、外部に対する安全対策の現状ですとか、作業に従事される方の安全確保をどのように行っているか、それらを地域の方とどういうふうにコミュニケーションを図って共有しているかということを中心にヒアリングや実際に目で見てくる、こういったことをしたいと思っていまして、我々行政と円卓会議のメンバーだけではなくて、委託先である室蘭工業大学に吉田先生がいらっしゃるのですけれども、長らく廃棄物に関わってきている先生のアテンドというか、アドバイスをいただきながら知見を深めてくるというようなことを考えてございます。\n　以上です。",
+    "text_length": 385,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        193
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-189",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。\n　先ほど同僚委員のほうからの円卓会議等の質問に対して、御答弁では円卓会議内での報告だとか円卓会議だよりなどを通して市民に情報をフィードバックしていくというお話でありました。公費を投入した視察なので、参加者に対しても個々の視察報告的なもの、あまり難しく何ページにもなるものでなくても結構ですけれども、参加した方が個々にどういうふうに調査をして見てきたかということをいただきたいなと思います。個々に出してもらうというのが公金を使った調査ではないのかなと思うので、そこの点の見解を伺いたいなと思います。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        194
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-190",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告書提出の考え方についてでございます。\n　委員御指摘のとおり、今回公費を投じてリスクコミュニケーションを目的に視察に行くわけですから、そういったものは必要かなと思っております。その方法というのが、個々がいいのか、団体ごとなのか、もしくは視察団で取りまとめというのがいいのか、効果的な方法というのはあると思うのですけれども、今回はあくまでもリスクコミュニケーションを図るために委託して室蘭工業大学にお願いして皆さんに行ってもらうわけですから、行った皆さんがどう感じたか、それをどのように地域にフィードバックしていけるのかというようなことも含めて室蘭工業大学からは報告書の提出もいただきますし、個々の意見聴取、こういったこともしていく必要があるというふうに考えてございます。\n　以上でございます。",
+    "text_length": 347,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        195
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-191",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "分かりました。\n　はっきり言わせていただくと、今回のＰＣＢ廃棄物施設解体事業の先行施設調査という部分では、解体工事の安全性等をふだんから危惧されている方がいらっしゃるのではないかなと。本来ならそういう方々を中心に、現地の安全対策等も含めて自分の目で見ていただくと。なぜならば、その方々のほうが先行解体しているところの課題等が捉えられて、本市はこれから施設解体になると思いますけれども、それに対しての安全対策等について生かせると思うからであります。そこで、先般北九州市のＰＣＢ廃棄物施設解体をじかに視察された青山市長にお伺いしますけれども、解体状況及び安全対策等の取組に課題などを感じた部分があれば、この点について御教示願いたいと思います。",
+    "text_length": 319,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        196
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-192",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "青山市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北九州市の事業所のＰＣＢ廃棄物施設の解体状況について、５月に私も現地視察をさせていただきまして、そちらについてのお尋ねでありますので、私のほうからお答えをさせていただきたいと思います。\n　振り返りますと５月は、今回いろいろと西日本の関係で住民の皆さん方と意見交換を重ねておったさなかでありましたので、住民、市民の皆さん方が御心配に思うことを伺った中で見ることができたのかなというふうに思っております。北九州事業については既に終了してございまして、１期施設と２期施設、室蘭でいうと当初施設と増設施設という２つの建屋がございまして、解体が行われておりました。とりわけ１期施設については、私が最後の見学者といいましょうか、がらんとしていて、あとは建屋を壊すのみというような状況でありましたし、２期施設については室蘭同様プラズマ溶融炉があって、すぐそばで見ることができたというようなことでございます。\n　いずれにいたしましても事業所の皆さん方は処理が終了した後も安全管理といったことを徹底されていたというところが率直な感想でございまして、とりわけ管理区域においては、実際はそういったような機材がなくても入るときにはしっかりと装いもしたりだとか、そういったことで徹底されているなといったところを考えたところでありまして、機材の処理はもちろんでありますけれども、柱だとか壁とかも丁寧に拭き取られていたということがございます。特に印象に残りましたのは、解体工事でありますので足場なんかも使うところで、一般の建設工事の解体工事の足場というのはリースして、作業が終わったらリースバックするということなのですけれども、管理区域で使った機材なんかは購入をして、作業が終わった後は拭き取って、低濃度を確認した中で処理をするという徹底ぶりだったというようなことでございました。\n　今回は予算を持たせていただきまして、監視委員会の皆さんをはじめ関係する皆さん方に御視察いただくことで住民の皆さん方の不安解消に努めていきまして、処理終了後の解体といったことも本市にとりましては大変重要なことでございますので、先行して解体処理を行っているところを見ていただくことは意義深いものだというふうに感想を持ったところであります。\n　以上でございます。",
+    "text_length": 955,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        197
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-193",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "柏木委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "柏木隆寿",
+    "member_faction": "公明党室蘭市議会",
+    "text": "市長、ありがとうございます。\n　最後にもう一点お聞きしたいのですが、今回ＰＣＢ廃棄物処理施設は２施設とも解体という方向性で決定ということで認識しているのですけれども、解体工事に係ってはいろいろな市民の方々の御意見等もあるかと思うのです。ですから、解体工事に係る市民説明会だとか意見交換会等の開催というものは今後考えていらっしゃるのか、その点についてお伺いしたいと思います。",
+    "text_length": 186,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        198
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-194",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "佐々木産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "解体工事に伴う意見交換会とか市民説明会の開催の考え方についてでございます。\n　監視円卓会議の中でフィードバックというお話をさせていただきました。市民の皆さんに伝える方法はいろいろございまして、ネット、ホームページ、回覧板ですとか紙媒体、いろいろあると思っております。そういった中でマスコミ、新聞報道とかでもいろんな情報が出てくると思うのですけれども、そういったものを受けて、市民の皆さんの御反応というか、御興味、こういったことを伺いながら必要性について検討していって、そういう声が多い場合はリスクコミュニケーションという観点からも必要であるというふうに考えてございます。\n　以上でございます。",
+    "text_length": 296,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        199
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-195",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "それでは、私からは簡単に伺いたいというふうに思うのですけれども、一般会計の第１項保健衛生費について、先ほど同僚委員からも様々な質問がありましたので重複を避けながら伺いたいというふうに思うのですけれども、まず最初、道支出金で衛生費道補助金の予防接種健康被害救済措置事業費補助金について先ほど同僚委員の質問に対して答弁があったのですけれども、確認の意味で伺いたいのですけれども、予防接種健康被害救済措置、いろんな予防接種があるわけなのですけれども、先ほど申請件数７件という答弁があったかというふうに思うのですけれども、新型コロナワクチン接種に伴う申請件数というふうに理解してよろしいのかどうか、この点について確認したいと思います。",
+    "text_length": 313,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        202
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-196",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどお答えさせていただきました申請件数７件につきましては、新型コロナワクチンに関する申請になってございます。\n　以上でございます。",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        203
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-197",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "申請件数７件は分かったのですけれども、厚生労働省からの認定件数についてはプライバシーの関係、個人情報保護の関係でもってお答えできないという答弁だったのですけれども、認定件数を聞くことが個人情報保護に反するという規程というのは、どこをもってそういったことになるのか、この点について伺いたいと思います。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        204
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-198",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "西舘保健福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどお答えさせていただいた個人情報保護の関係でございますが、確たる規程において個人情報保護法に抵触するということではなくて、７件の内容等をお話しした際には病院に通っていらっしゃる方等々の個人が特定されてしまう可能性があるというところへの配慮を考えて、７件の内容については控えさせていただきたいと考えてございます。\n　以上です。",
+    "text_length": 164,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        205
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-199",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "どういった病院に通っているかということを聞いたわけではなくて、７件の申請件数に対して何件認定されたかということを聞いたわけで、それが個人情報保護に反するというふうには考えられないのですけれども、その辺はっきりする必要があると思うのです。新型コロナワクチン接種に関する健康被害は、個人によって様々な症状が出てきます。どういった症状が出てくるというのは個人情報には当たらないですよといった判例も出てきているわけです。新型コロナワクチン接種に対する健康被害が、７件の申請があって認定は何件ですと、個人情報の侵害には当たらないわけですからきちんとすべきだというふうに思います。",
+    "text_length": 284,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        206
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-200",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "西舘保健福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御指摘のとおり、個人情報保護法に抵触すると確定したものではございません。先ほど申し上げましたのは、個人が特定されてしまう可能性があるというふうに私どもが考えているというところで、申請された方への配慮として控えさせていただきたいというお話でございまして、そこら辺については御理解いただきたいと思います。\n　症状等につきましては、インターネット等で国のほうで具体的な内容を公表していると考えてございますので、具体的にどのような症状があるかということに関しましては厚生労働省がきちんと発表してございますので、そちらを参考に、今後私どもが必要に応じて皆様にお知らせするというのは可能だと考えてございます。\n　以上です。",
+    "text_length": 305,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        207
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-201",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "西舘保健福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどからお話ししていますのは、個人が特定されてしまうかもしれないという配慮の中で控えさせていただきたいということでございますので、今後関係機関とお話をさせていただいて、７件中何件認定されて、何件認定されていないのか、もしくは審査中なのかということを公にしてよろしいかどうかは検討させていただきたいと考えてございます。\n　以上です。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        209
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-202",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "申請件数に対して認定件数が何件というのは個人情報を侵すことにはならない。個人の症状含めてどういった医療機関にかかっているかということを聞いているわけではないのですから隠す必要はないし、申請件数に対して認定件数が何件というのは明らかにするべきだということを申し上げておきたいと思います。\n　次に、保健衛生費の予防接種費について伺いたいと思うのですけれども、財源内訳で一般財源が９，０００万ちょっと出ています。衛生費雑入が１億４，０５５万２，０００円というふうになっているのですけれども、衛生費雑入の内容について伺いたいと思います。",
+    "text_length": 264,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        210
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-203",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "衛生費雑入の内容についてでございますが、新型コロナ定期接種ワクチン確保事業費助成金でございまして、定期接種移行への激変緩和のための国からの助成金で、接種１件当たり８，３００円に接種見込み人数を掛けた金額となってございます。\n　以上でございます。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        211
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-204",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "１件当たり８，３００円に接種見込み人数を掛けた金額、これが激変緩和のため国から助成金で来ているということなのですけれども、この助成金なのですけれども、次年度以降減額されるという、そういったおそれはないのかどうか。接種１件当たりの単価というのは上下するかもしれませんけれども、助成金が次年度以降減額されるという、そういった懸念はないのかどうか、この点について伺いたいと思います。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        212
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-205",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "助成金の来年度以降の動向についてでございますが、厚生労働省からの説明につきましては、令和６年度についてはこの助成金で考えていますけれども、次年度以降はまだ不明というふうに説明を伺っているところでございます。\n　以上でございます。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        213
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-206",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "次年度以降は不明だということなのですけれども、１件当たり８，３００円というのはそれぞれの医療機関に支払われる接種委託料になるというふうに思うのですけれども、１件当たりの接種委託料は幾らと試算されているのか、この点について伺います。",
+    "text_length": 115,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        214
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-207",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "接種１件当たりの委託料につきましては、令和６年度は１万５，０７６円を予定してございます。\n　以上でございます。",
+    "text_length": 55,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        215
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-208",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "１件当たり１万５，０７６円、高額な委託料になるというふうに思うのですけれども、次にコロナワクチンの購入に係る費用、その中には自己負担額も含まれているのかどうか、この点について伺いたいと思います。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        216
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-209",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "含まれてございます。\n　以上です。",
+    "text_length": 17,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        217
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-210",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "自己負担額も含まれているということなのですけれども、２０２４年度から新型コロナワクチン接種が定期接種に位置づけられたわけなのですけれども、６５歳以上が対象、６０歳～６４歳の一定の基礎疾患を有する方というふうに言われているのですけれども、対象者を限定した理由、定期接種とした目的、あるいは対象となる人数、接種率を何％と見込んでいるのか、先ほど同僚委員の答弁にもあったのですけれども、５類になったからそういうふうにしたのだと思うのですけれども、定期接種となった理由について伺いたいと思います。",
+    "text_length": 244,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        218
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-211",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象者を限定した理由についてでございますが、予防接種法に基づく定期接種として実施いたしますことから、法に基づく対象者というふうにしてございます。定期接種とした理由についてでございますが、厚生労働省において令和６年度以降は蔓延予防上緊急の必要がある状況にはないというふうな判断により特例臨時接種が終了となってございます。安定的な制度の下で接種を継続していく方針ということで定期接種となったというふうに認識してございます。\n　以上でございます。",
+    "text_length": 220,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        219
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-212",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "臨時的な接種から定期的な接種に変更したということなのですけれども、５類移行後、保健所管内の指定医療機関が患者数含めて報告されているわけなのですけれども、本市は室蘭保健所管内にあって、基本的に１０人以上を超えれば注意報というふうな形でされるのですけれども、市民の側からすれば、今市内では感染者が増加傾向にあるのかどうかというのが分かりづらい。しかも指定医療機関も公表されていない。そういった中で、いかにコロナ感染を予防するかということが私たち市民にとって大変重要な問題になっているのです。指定医療機関以外の医療機関にかかってコロナと診断されても、全く報告されていないわけです。今の状況の中でそういったことがいい方向だというふうに考えているのかどうか、この点について伺いたいと思います。",
+    "text_length": 341,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        220
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-213",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "本野健康推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "国のほうで定点医療機関からの公表によって感染の動向をお知らせするという方向に変わっております。変わった理由につきましては、強制的に外出制限をしたり行動制限をするよりも、ウイルスの状況がだんだん分かってきて、重症化、お亡くなりになる方というのが大分少なくなってきたということから、行動制限をかけたり強い制限をする必要はないというふうに判断されたものになります。\n　定点医療機関には、国内で５，０００か所ぐらいの医療機関があらかじめ指定されています。西胆振は８医療機関ということは聞いておりますが、ここの医療機関にかかると報告されるということで殺到されても困りますので、全体の傾向、動向を知るということでの報告になっております。感染対策につきましては、今後も必要に応じてマスク、手洗い、換気、ワクチン接種、それにより感染対策を個々の判断で行っていただきたいことを周知してまいりたいと思います。\n　以上でございます。",
+    "text_length": 405,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        221
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-214",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "周知は分かるのですけれども、我々市民の中にそういった情報というのはなかなか入ってこないわけです。せんだって新聞報道にあった、室蘭の１週間の感染者数というのは先週１２．３８から今週８．３８に下がっている。しかも指定医療機関が分からないから、それ以外の医療機関で感染していると診断されても全く反映されていない。そうではなくて、公的機関からこういうふうな状況ですよということを周知するということが必要だというふうに思うのです。先ほどの健康被害の関係もそうなのですけれども、定期接種の対象者は６５歳以上。高齢者が圧倒的に多い。高齢者は感染すれば重症化しやすいということも併せて、きちんと公的機関で広報として周知していくということが必要だというふうに思います。そのことを指摘しておきたいというふうに思います。\n　もう一つは、定期接種以外の方、任意で接種を受ける方の自己負担額は、先ほどの同僚委員への答弁の中では各医療機関で設定されるもので分からないということなのですけれども、定期接種が開始されますと、対象者以外に私もワクチン接種を受けたいという方々が健康推進課に問い合わせるというふうに思うのです。それぞれの医療機関で接種料金が違うということはあり得るかと思うのですけれども、そういったときに健康推進課で対応するためにも目安の金額というのは問合せに対して丁寧にお知らせする必要があるのではないかというふうに思うのですけれども、この点についてどのように考えるか伺いたいと思います。",
+    "text_length": 635,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        222
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-215",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "本野健康推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "任意接種の料金につきましては医療機関で個々に設定することになってございますけれども、ワクチンは１万円以上するものでございますから、それ以上かかるのは確かだと思います。具体的な金額について個々に申し上げることはできませんけれども、主治医の先生と相談するように周知してまいりたいと思います。\n　以上でございます。",
+    "text_length": 154,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        223
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-216",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "ワクチンの単価だけで１万１，０００円を超えている。接種委託料で１件当たりの単価が１万５，０７６円。高価な接種料になるというふうに思うのですけれども、この点も含めて情報を収集して、相談された市民に対しては懇切丁寧に説明できるようにしていただきたいというふうに思うのですけれども、最後に定期接種の対象者の自己負担額、先ほど同僚委員からも質問があったのですけれども、先ほどの答弁では接種率５３．８％、大体１万７，０００人ぐらいになるのではないかということで、自己負担額３，３００円を掛けたら一体どれだけの市民負担になるのか、この点について伺いたいと思います。",
+    "text_length": 276,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        224
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-217",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "山口健康推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "自己負担額３，３００円をいただいた場合の市民負担につきましてですけれども、概算になりますが、総額で２，４８０万ほどになるというふうに見込んでございます。\n　以上でございます。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        225
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-218",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "いずれにしても定期接種を受ける方も自己負担を強いられるということになるのですけれども、なおかつ自己負担の設定についてはそれぞれの自治体で独自に決めることができると厚生労働省の通知にもあるのですけれども、そうであるならば自己負担額、現在３，３００円ですけれども、これを引き下げる手だてを取っていただきたい。一般会計からの繰入額を増やせばそれだけ自己負担額が減るわけですから、それが同時に高齢者の健康を守る、ワクチン接種を受けることによって感染を防ぐといったことにもなりますので、自己負担の接種金額３，３００円を引き下げる考えについて最後に伺いたいと思います。",
+    "text_length": 278,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        226
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-219",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "西舘保健福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "個人負担、なるべくであれば私どもも下げたいというふうに考えておりますが、財政状況等々考えまして、現在のところこの金額に設定させていただいているところでございます。高齢者のコロナワクチンに関する危険度は下がってきている、重症化のリスクも下がってきているというところでございます。\n　昨今、職員もそうなのですが、新型コロナではない状況で高熱が出たり、新たなウイルスかどうかも分かりませんが、いろいろな症状が出ていると職員の中でも聞いております。障害福祉センターでイベントがありましたときも来場者の方々、玄関に手指消毒は置いてあるのですが、手指消毒をしている方がほとんどいらっしゃらないという状況でございましたので、私が事務局の方に頼んで、手指消毒をしていただきという案内をさせていただいております。新型コロナワクチンに限らず皆様も私どもも手指消毒、うがいに気をつけて、どのようなウイルスにも対抗できるような健康な体を維持していただきたいと考えておりますので、よろしくお願いいたします。",
+    "text_length": 440,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        227
+      ]
+    }
+  },
+  {
+    "id": "muroran-508-3-220",
+    "municipality": "muroran",
+    "council_id": 508,
+    "council_name": "令和 ６年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月21日－02号",
+    "date": "2024-06-21",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "新型コロナに対する警戒感が薄れているというのはあり得るかというふうに思うのですけれども、市民の健康を守るという観点から、多くの対象者がワクチン接種を受けられるように自己負担額の減額を求めて、私の質問を終わります。",
+    "text_length": 106,
+    "source": {
+      "minutes_file": "data/muroran/minutes/508.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        228
+      ]
+    }
+  }
+]

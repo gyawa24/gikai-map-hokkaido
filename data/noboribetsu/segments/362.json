@@ -1,0 +1,1658 @@
+[
+  {
+    "id": "noboribetsu-362-2-001",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました報告第９号から報告第10号について、その概要を一括してご説明申し上げます。\n　報告第９号及び報告第10号は、専決処分についてであります。\n　和解に関することについて、地方自治法第180条第１項の規定に基づき専決処分を行ったことから、同条第２項の規定により報告するものであります。\n　初めに、報告第９号の専決処分の内容についてでありますが、市営住宅使用料の支払いについて、相手方との和解協議が整ったため申立てを行った、民事訴訟法第275条第１項の規定による市営住宅使用料の支払いに係る和解についてであります。\n　和解の概要は、一つ、滞納額に対し毎月１万5,000円を弁済する。一つ、支払いが２か月遅延した場合は一括で支払う。一つ、未納額が３か月分に達したときは明渡しを請求することができる。\n　専決処分の日は、令和３年３月３日であります。\n　次に、報告第10号の専決処分の内容についてでありますが、市営住宅使用料の支払いについて、相手方との和解協議が整ったため申立てを行った、民事訴訟法第275条第１項の規定による市営住宅使用料の支払いに係る和解についてであります。\n　和解の概要は、一つ、滞納額に対し毎月５万円を弁済する。一つ、支払いが２か月遅延した場合は一括で支払う。\n　専決処分の日は、令和３年３月３日であります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 593,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-002",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "それでは質問させていただきたいと思います。ただいまご説明がありましたが、実際に滞納額とまた毎月の返済額はお聞きしましたけれども、その設定に対して実質何回に分けて支払いをしていかれるのか、ご確認をさせていただきたいと思います。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-003",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "田中市民生活部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告第９号の事案につきましては、平成30年６月の法的措置対象者選定委員会の開催時における滞納額で申しますと96万2,700円で、滞納期間としましては平成25年度から平成29年度までとなります。その後、弁護士委託を行ってから令和３年３月の即決和解時までに35万2,800円の支払いがありましたので、和解時点の滞納総額といたしましては60万9,900円になります。滞納期間としましては、平成27年度から選定委員会後に滞納が生じました平成30年度までとなります。\n　なお、弁済期間につきましては、令和３年４月から令和６年８月までとなりまして、初回以降の40回は月１万5,000円、最終回の１回は9,900円となりまして、計41回の支払いで完済予定でございます。\n　以上です。",
+    "text_length": 334,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-004",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "ありがとうございました。この住宅使用料というのは、公債権ではなく私債権であると私も認識しておりますが、私債権の滞納は５年を超過すると滞納者が時効を宣言する、いわゆる時効の援用をすることによって５年以前のことは消滅されてしまうという認識が私自身ございます。今回の滞納分に対して、時効の援用というのがされたのかどうなのかについてご確認をしたいと思います。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-005",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "田中市民生活部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "時効の援用につきましては、基本、市税などの公債権につきましては納税者の意思等にかかわらず、時効期間が経過することで債務が消滅するところですが、住宅使用料などの私債権につきましては時効期間が経過した後、滞納者が消滅時効の援用を適用するとの意思表示を行うことによって初めて債務が消滅するところです。\n　市としましては、時効の援用の適用前に折衝をしまして、そのような形に努めておりますが、報告第９号の事案につきましては、時効期間の到来前に２回の分割納付誓約書を、弁護士委託後には連帯保証人を含めての支払い誓約書を徴取していますので、滞納額の一部を含めて時効の援用を適用した事実はございません。\n　以上です。",
+    "text_length": 300,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-006",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "時効の援用はなかったということで理解をさせていただきました。\n　次の質問なのですけれども、これ契約されてからかなり時間も経過していますので、当然契約時には連帯保証人という存在があるかと思います。中には連帯保証人の方も時間が経過したことにより、滞納者との連絡先も分からないというケースもあろうかということが想定されます。実際今回の場合、連帯保証人への対応について、どのようになっているのかをご確認させていただきたいと思います。",
+    "text_length": 212,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-007",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "田中市民生活部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "滞納者への督促等につきましては、督促状は本人に送付いたしますが、連帯保証人への通知といたしましては、入居者本人が３か月以上滞納している場合に、本人と連帯保証人に対して催告書を年３回送付して滞納状況をお知らせしております。今回の事例で申しますと、報告第９号では弁護士委託後において本格的に連帯保証人を含めた折衝を行いまして、最終的に本人と連帯保証人が室蘭簡易裁判所に出頭して和解に至ったところでございます。\n　以上です。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-008",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "すみません。同じ質問になってしまうのですが、まず初めに、今回の実際の滞納額及び毎月の返済額の設定に対して、何回で返済をされるのかということについてご確認をさせていただきます。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-009",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "田中市民生活部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告第10号の事案につきましては、令和元年６月の法的措置対象者選定委員会の開催時における滞納額は228万6,567円で、滞納期間としましては平成19年度から平成25年度までとなっております。その後、弁護士委託を行ってから令和３年３月の和解までに55万円の支払いがありましたので、和解時における滞納総額としましては173万6,567円で、滞納期間としましては平成20年度から平成25年度までの期間となります。\n　弁済期間につきましては、令和３年３月から令和６年１月までとなりまして、初回以降の34回が月５万円、最終回の１回は３万6,567円となりまして、計35回で完済予定でございます。\n　以上です。",
+    "text_length": 299,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-010",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "同じ質問になりますが、この案件に関しても時効の援用があったのか、なかったのかをご確認させていただきます。",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-011",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "田中市民生活部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "時効期間の到来前につきまして、２回の分納誓約分の分割納付誓約書を、弁護士委託後には本人から債務承認書を徴取しておりますので、滞納額の一部を含めて時効の援用を適用した事実はございません。\n　以上です。",
+    "text_length": 99,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-012",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "分かりました。ありがとうございます。同じように質問重複しますけれども、連帯保証人への対応についてご確認させていただきます。",
+    "text_length": 61,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-013",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "田中市民生活部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告第10号の事案では、入居時の連帯保証人でありました父親の死亡後に母親に変更になりましたが、その後母親も死亡し兄弟も死亡していたということですので、相続人に関しては不存在という形になっております。そういうことで、母親の死亡以降につきましては、連帯保証人には催告書の送付は行っていないような状況になります。\n　以上です。",
+    "text_length": 160,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-014",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "今回２つの事案があったのですけれども、今後の新規の案件、弁護士へ委託するような事案、事象という予定はあるのかということについてお伺いしたいと思います。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-015",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "田中市民生活部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "弁護士委託を行う際の滞納者の選定基準としましては、滞納額が30万円以上であること、分割納付開始後も納付もしくは連絡がなく、債務を返済する意思が見られないこと、滞納者及び連帯保証人に資力があること、これらのことを中心に目安にしております。\n　今年度におきましては、これらの目安に該当する件数が一、二件程度見受けられますので、この件数について法的措置対象者選定委員会に諮るかを都市整備部と連携しながら現在検討しているところでございます。\n　以上です。",
+    "text_length": 223,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-016",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。一、二件程度見受けられるというところです。滞っている方についてはしっかり相談を促すように対応していただいていると思いますけれども、その点についてもよろしくお願いしたいと思います。\n　次の質問ですけれども、非常にコロナ禍ということで収入が減っておられる方が多いのではないかというふうに思われます。住宅使用料の足元の滞納状況、収納状況、この辺についてお伺いしたいと思います。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-017",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "田中市民生活部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和２年度の現年度分の収納率で申し上げますと、調定額の約２億3,740万円に対して、３月末日現在の収納額は約２億2,010万円でございます。収納率としましては92.71％となります。前年度の令和元年度同月の収納率は92.51％となりますが、これと比較しましたら0.20％、令和２年度が上回っている状況にあります。参考に申しますと、令和２年度の前年度同月の伸び率は0.20％ですが、令和元年度の前年度同月の伸び率は、令和２年度よりも高い数字でありまして0.92％となっております。この伸び率につきましては、令和２年度が令和元年度を0.7％程度下回っているというような状況にございます。\n　以上です。",
+    "text_length": 298,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-018",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "了解いたしました。直近の分については、現年度については収納率は伸びているという状況は理解いたしました。コロナ禍を迎えて１年ちょっと過ぎていますので、この後も引き続き収納について、また滞っている方については先ほども申し上げましたけれども、対応の方をよろしくお願いいたします。\n　終わります。",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-019",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第37号から議案第43号までの議案７件について、その概要を一括してご説明申し上げます。\n　本市では、これまで新型コロナウイルス感染症関連事業として、切れ目なく対策を講じてきたところでありますが、今般新型コロナウイルス感染症対応地方創生臨時交付金などを活用し、第11弾となる緊急対策を取りまとめました。\n　今回の補正は、この緊急対策について予算措置を講じるとともに、その他の当面措置を要する経費について所要の予算措置を講じようとするものであります。\n　初めに、議案第37号は、令和３年度登別市一般会計補正予算（第３号）についてであります。\n　別冊、令和３年度登別市一般会計補正予算書及び予算説明書の１ページをご覧ください。\n　第１条は、歳入歳出予算の補正についてでありまして、歳入歳出予算の総額に歳入歳出それぞれ１億5,825万2,000円を追加し、221億9,397万8,000円とするものであります。\n　歳入歳出予算の補正の款・項の区分及び当該区分ごとの金額並びに補正後の歳入歳出予算の金額は、２ページの第１表、歳入歳出予算補正によるものであります。\n　歳入歳出それぞれの補正内容につきましては、３ページから８ページまでの歳入歳出補正予算事項別明細書に記載のとおりでありますが、歳出のうち商工費は、市内消費を喚起し市内経済の底上げを図るため、市内登録店舗で使用できるプレミアムつき商品券を発行するための経費として、赤鬼・青鬼チケット発行事業費を追加するほか、企業の進出を促進するため、テレワーク環境の整備に係る補助やプロモーションなどを実施する経費として、湯之国登別テレワーク推進事業費を追加するものであります。\n　消防費は、救急活動時の感染防止対策として、救急車等の車内や被服等の消毒に使用する感染対策機器及び救急隊員等が救急出動時に着用する感染防止衣を整備するため、消防本部署活動経費を追加するものであります。\n　教育費は、北海道教育委員会からの委託を受け、休日の部活動の段階的な地域移行に関する実践研究を行うため、地域運動部活動推進事業費を追加するものであります。\n　以上の補正に見合う歳入でありますが、特定財源として国庫支出金及び道支出金を追加するものであります。\n　次に、議案第38号は、登別市税条例等の一部改正についてであります。\n　地方税法等の一部を改正する法律、地方税法施行令等の一部を改正する政令、地方税法施行令の一部を改正する政令、地方税法施行規則等の一部を改正する省令及び地方税法施行規則の一部を改正する省令が令和３年３月31日にそれぞれ公布されたことに伴い、登別市税条例等について所用の改正を行うものであります。\n　付議事件資料５ページから６ページにより説明いたします。\n　最初に、個人市民税についてでありますが、１つ目として、住宅ローン減税の控除期間を13年間とする特例措置について、令和３年末までの入居を要件としていたものを令和４年末までの入居に延長し、この延長した部分に限り合計所得金額1,000万円以下の者は、床面積40平方メートル以上の住宅を対象とする措置を講ずるものであります。\n　２つ目として、セルフメディケーション税制について、平成30年度から令和４年度までの適用期間でありましたが、対象をより効果的なものに重点化した上で５年間の期間延長を令和５年度から講ずるものであります。\n　次に、固定資産税についてでありますが、宅地等及び農地の負担調整措置について、令和３年度から令和５年度までの間、現行の負担調整措置の仕組みを継続し、その上で令和３年度に限り、負担調整措置等により税額が増加する土地について、前年度の税額に据え置く特別な措置を講ずるものであります。\n　次に、軽自動車税についてでありますが、１つ目として、軽自動車税環境性能割の税率を１％軽減していた臨時的軽減措置の期限を延長し、令和３年４月から令和３年12月末までに取得したものを対象とする措置を令和３年度から講ずるものであります。\n　２つ目として、軽自動車税種別割において講じている燃費性能等に優れた軽自動車の税率を軽減する特例措置について、内容を変更した上で適用期限を２年間延長する措置を令和４年度から講ずるものであります。\n　次に、都市計画税についてでありますが、固定資産税の改正に伴う所要の改正を行うものであります。全体としてそのほか、条項の改正や関連する条文の整備を行うものであります。\n　次に、議案第39号は、登別市特定教育・保育施設及び特定地域型保育事業の運営の基準に関する条例の一部改正についてであります。\n　特定教育・保育施設及び特定地域型保育事業の運営に関する基準は、子ども・子育て支援法の規定により内閣府令で定める基準に従い市町村が定めることとされております。令和３年３月31日に特定教育・保育施設及び特定地域型保育事業並びに特定子ども・子育て支援施設等の運営に関する基準の一部を改正する内閣府令が公布され、同基準を引用している本条例について所用の改正を行うものであります。\n　なお、この条例は公布の日から施行し、令和３年４月１日から適用するものであります。\n　次に、議案第40号は、登別市指定地域密着型サービスの事業の人員、設備及び運営に関する基準を定める条例の一部改正についてであります。\n　指定居宅サービス等の事業の人員、設備及び運営に関する基準等の一部を改正する省令の公布による、指定地域密着型サービスの事業の人員、設備及び運営に関する基準の一部改正に基づき、本条例について所要の改正を行うものであります。\n　なお、この条例は公布の日より施行し、令和３年４月１日より適用するものであります。\n　次に、議案第41号は、登別市指定地域密着型介護予防サービスの事業の人員、設備及び運営並びに指定地域密着型介護予防サービスに係る介護予防のための効果的な支援の方法に関する基準を定める条例の一部改正についてであります。\n　指定居宅サービス等の事業の人員、設備及び運営に関する基準等の一部を改正する省令の公布による、指定地域密着型介護予防サービスの事業の人員、設備及び運営並びに指定地域密着型介護予防サービスに係る介護予防のための効果的な支援の方法に関する基準の一部改正に基づき、本条例について所要の改正を行うものであります。\n　なお、この条例は公布の日より施行し、令和３年４月１日より適用するものであります。\n　次に、議案第42号は、登別市指定介護予防支援等の事業の人員及び運営並びに指定介護予防支援等に係る介護予防のための効果的な支援の方法に関する基準等を定める条例の一部改正についてであります。\n　指定居宅サービス等の事業の人員、設備及び運営に関する基準等の一部を改正する省令の公布による、指定介護予防支援等の事業の人員及び運営並びに指定介護予防支援等に係る介護予防のための効果的な支援の方法に関する基準の一部改正に基づき、本条例について所要の改正を行うものであります。\n　なお、この条例は公布の日より施行し、令和３年４月１日より適用するものであります。\n　次に、議案第43号は、登別市指定居宅介護支援等の事業の人員及び運営に関する基準等を定める条例の一部改正についてであります。\n　指定居宅サービス等の事業の人員、設備及び運営に関する基準等の一部を改正する省令の公布による指定居宅介護支援等の事業の人員及び運営に関する基準の一部改正に基づき、本条例について所要の改正を行うものであります。\n　なお、この条例は公布の日より施行し、令和３年４月１日より適用するものであります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 3185,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-020",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それではまず前回の赤鬼・青鬼チケット発行事業の際の実施結果についての概要と、その際の課題やご意見ということについては、市としてはどのように評価をされているのでしょうか。",
+    "text_length": 84,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        71
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-021",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨年度に実施しました赤鬼・青鬼チケットの結果の概要についてでありますが、販売額は１冊当たり１万円でプレミアム率50％を上乗せし、額面は１万5,000円としておりました。この１万5,000円の内訳としましては、市内登録店舗の全店で使用可能な赤鬼チケットが１万2,000円分、市内登録店舗のうち地元店舗で使用可能な青鬼チケットが3,000円分でありまして、販売冊数は３万2,623冊、発行額面総額は４億8,934万5,000円でありました。\n　本事業については、新型コロナウイルス感染症の感染拡大を踏まえ、緊急経済対策として実施したものでありますが、チケットの使用期間後半と首都圏や札幌市を中心とした感染症の再拡大の時期が重なり、この影響などからとりわけ居酒屋やバー、スナックといった酒類の提供を行う飲食店での使用が少なくなったとの声も耳にしており、コロナ禍における実施の難しさを感じた面もございました。\n　ただ、その一方では、市内事業者からはおおむね好評を得ており、再度の実施を望む声もお聞きしております。市としての評価としましては、過去に例のない50％と高いプレミアム率としたこと。加えまして、初めて地元店舗のみ使えるチケットを組み合わせたこと。こうしたことによりまして、コロナ禍で売上げの減少に苦しむ地元店舗に一定程度の消費誘導が図られ、市内全体への波及効果として一定の成果を得られたものと捉えております。",
+    "text_length": 604,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-022",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一部の業種によっては、消費の先食いにつながって事業終了後の消費の落ち込みが大きかったといったようなご意見もございましたが、それらの実情についてはどのようにお捉えになっているのでしょうか。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-023",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議員がおっしゃいますように、赤鬼・青鬼チケットが消費の先食いとなるといったことも、一部の商品等では考えられるところであります。例えば、家電や家具などといった買換えサイクルが比較的長いものにつきましては、その購入が消費の先食いなのか、あるいは消費が購入の動機になったものなのか、購入者に直接聞かなければ分からないという部分もありまして一概には申し上げられませんが、消費者意識としてプレミアムのついた商品券によって消費が高まるということもあり、消費の先食いとなるということも考えられるところです。\n　ただ、いまだ感染症の収束の見通しが立たず、売上げの減少など経済が下押しされている状況にあるほか、コロナ禍にあって雇用不安や所得減少により消費マインドが落ち込み、消費を手控えてしまうような状況下におきまして、プレミアムをつけた地域限定の商品券事業により地域の消費を喚起するという意味におきましては、経済対策として一定の事業効果を見込めるものと考えております。",
+    "text_length": 426,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-024",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。それで様々ご意見は聞いた上で第２回目に入るということだと思いますが、前回と今回で改善を加えた点や変更点といったのはどういったことがありますでしょうか。",
+    "text_length": 82,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-025",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨年度と今回の変更点、改善点についてですが、１点目としまして、昨年度は登別商工会議所が実施主体となって事業を行いました。今回は、登別商工会議所や登別国際観光コンベンション協会、市、各商店会等による実行委員会を主体として進めることとしております。これにより早期に消費回復を図ることからも、それぞれの役割を果たすことでより円滑に事業を進めることが可能になると思われるほか、各団体が連携、協力し、市全体として本事業の盛り上がりですとか機運の醸成につながるものと考えております。\n　２点目は、購入対象者についてであります。昨年度は市民以外も含めた購入希望者とした一方で、今回は購入を希望する市民限定としております。こちらにつきましては、経済対策ということになりますので、市内での消費を喚起するということになりますが、そうした中においても、限られた財源を活用し広く市民に本事業を活用していただけるよう、購入対象者を市民に限定したものであります。\n　３点目は、プレミアム率についてであります。昨年度は50％、今回は40％としております。市内事業者の経営は、感染拡大地域との不要不急の往来、外出の自粛要請などの影響により依然として厳しい状況におかれているものと捉えており、制度設計に当たっては、限られた予算でできるだけ経済効果を上げられるよう考えてきたところであります。プレミアム率を抑え発行冊数を増やすことで、市内に回るお金を大きくすることが可能となる反面、プレミアム率を低く設定しますと商品券自体の魅力の低下につながり、このコロナ禍において所得が減少する方や雇用不安を持つ方も少なくないと思われる中、消費者に買っていただいて使ってもらわなければ事業効果が薄れてしまうことも懸念されます。プレミアム率については、こうしたバランスを考慮しつつ、本事業を実施した際の経済効果や財源であります国の交付金事業費総額、赤鬼チケットと青鬼チケットの割合の変更による地元店舗への影響など総合的に勘案し、発効冊数と併せて設定したところであります。\n　４点目は、赤鬼チケットと青鬼チケットの割合についてであります。昨年度は、額面１万5,000円に対し赤鬼チケットが１万2,000円、青鬼チケットは3,000円で、割合としましては赤鬼チケットが80％、青鬼チケットが20％としておりました。一方で、今回は額面7,000円に対し赤鬼チケットが4,000円、青鬼チケットが3,000円で、その割合は赤鬼チケットが約57％、青鬼チケットが約43％としており、コロナ禍で経営が厳しい状況の中において、より地元店舗に事業効果が波及するよう青鬼チケットの割合を引き上げております。\n　５点目は、販売額と購入可能冊数についてであります。昨年度は、１冊当たり販売額１万円で１人１冊までとしておりましたが、今回は１冊当たり販売額5,000円で１人４冊までとしております。こちらにつきましては、青鬼チケットの割合を引き上げており、地元店舗の使用を考えますと、飲食ですとかちょっとした買い物での使用といったことも想定されますので、お買い求めになりやすいよう１冊5,000円としたこと。また、経済対策といった観点から希望冊数が発行冊数に達するよう、幅を持たせて１人４冊までとしたところであります。\n　以上です。",
+    "text_length": 1377,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-026",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "確認をしていきたいと思うのですが、前回は商工会議所が実施主体となったということもありまして、商工会議所の会員さんと非会員の方で、この事業参加の登録料の有無で区別がされていました。今回は実行委員形式としてやるということでございますので、全ての市内事業者が同じ条件の下で参加ができる仕組みに変えたということでよろしいでしょうか。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-027",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回につきましては、登録店舗の参加料等につきましては、いただかないということで統一しております。",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-028",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "あくまでも登録期間を決めて、それまでに参加事業者が登録をしていただければ、市内事業者であればどなたでも参加できると、業種についても問わないということでよろしいでしょうか。",
+    "text_length": 85,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        87
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-029",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "業種につきましては前回同様、特に制限を設けるようなことは考えておりません。",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        89
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-030",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お買い求めになりやすいような工夫もされているということでございますけれども、さらにその販売だとか換金方法ということについては、どのような手法を検討されているのでしょうか。",
+    "text_length": 85,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-031",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず販売方法についてですが、販売、換金の方法につきましては登別商工会議所などと協議しているところでありまして、確定的なことは現在申し上げられませんが、購入対象者の中には子育て世帯で共働きであるなど日中や平日の商品券購入が難しい方もいらっしゃると思いますので、できる限り購入対象者の利便性が確保されるような販売方法を検討しておりまして、例えばですが、スーパーなどでの販売ができないかということを検討しているところでございます。\n　チケットの換金の部分につきましては、前回おおむね２か月半の使用期間に対しまして、換金振込日を５回設けて対応したところでありますが、比較的小規模の店舗などでは、換金回数を増やし振込を早めることで資金繰りが改善されて、安心してお客様にチケットの使用を促せることにつながるものと考えられます。チケットの換金につきましても、実行委員会としての資金繰りですとか事務手続上の都合もありますが、できるだけ換金回数を増やすなど登録店舗の事情等も考慮した中で、換金受付期間や振込日の設定を行ってまいりたいというふうに考えております。",
+    "text_length": 471,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        93
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-032",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "初めに、いただいた資料には、応募多数の場合は購入可能冊数を調整というふうに記載がされておりました。これ、具体的にどのような調整を行うのかについてお聞きしたいと思います。",
+    "text_length": 84,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        95
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-033",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の赤鬼・青鬼チケットにつきましては、発行冊数を５万冊とし、１人４冊まで購入可能としまして、応募多数の場合は購入可能冊数を調整することとしております。この調整方法につきましては、購入希望冊数が多い希望者から購入可能冊数を減らしていくことを想定しております。応募の状況にもよりますが、例えば４冊の購入を希望しているＡさんについては、購入希望可能冊数を３冊に減らし、３冊の購入を希望しているＢさんにつきましては、そのまま３冊を購入可能冊数とするなどの調整を行う予定であります。なお、市民を対象として今回５万冊を発行することとなりますので、１冊の購入を希望されている方が全く買えないといったことにならないような仕組みを考えているところであります。",
+    "text_length": 321,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-034",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "ありがとうございました。\n　次の質問なのですが、前回は発行冊数を上回る申請がありまして、それにより予算を追加して対応されたかと思います。今回仮に発行冊数を上回る申請があった場合は、前回のような予算を追加して対応する考えがあるのか、ないのかについてお聞きしたいと思います。",
+    "text_length": 135,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        99
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-035",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨年度に実施しました赤鬼・青鬼チケット発行事業費につきましては、当初３万冊の発行を想定し予算を計上していたところでありますが、市内外からの申請受付の結果、３万冊を超える約３万3,300冊の応募がありました。市では当初、応募多数の場合は抽選を行うことを予定しておりましたが、登別商工会議所から赤鬼・青鬼チケットの追加発行の承諾及び支援並びに財源の確保に関する要望があり、市内部においても協議、検討した結果、商品券の追加発行の効果を最大限にするためには迅速な対応が必要であり、これに要する費用について専決処分を行い予算措置したものであります。\n　今回につきましては、購入対象者を市民に限定し発行冊数を５万冊、１人４冊まで購入可能としまして、最低でも市民１人当たり１冊は購入できるものとしております。また、使用期間は８月上旬から９月末までを予定しており、申請受付から購入引換券の送付、チケット販売、使用まで非常にタイトなスケジュールであること。加えまして、本事業については国からの交付金の財源状況も踏まえながら事業予算を見込んでいること。こうしたことから、現状におきましては、発行冊数を上回る申請がありましても追加発行する予定はございません。",
+    "text_length": 518,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        101
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-036",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "分かりました。今のご答弁でいきますと、現状においては追加発行する予定はないというご答弁だったと思います。この現状においてはという部分なのですけれども、状況の変化などによっては追加発行の可能性も有するということも考えられるのかなというふうに私なりに理解しますが、可能性がある場合、もしその想定される状況等についてお聞きしたいと思います。",
+    "text_length": 167,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-037",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨年度に実施しました赤鬼・青鬼チケットの追加発行につきましては、実施主体でありました登別商工会議所からの強い要望があり、財源であります国の交付金の状況も勘案し、追加発行に要する予算を措置したものであります。今回の事業につきましては、実施に当たり非常にタイトなスケジュールとなっており、仮に発行冊数を上回る申請があった際、追加発行するためのチケットの印刷など、事務スケジュール上非常に厳しいものもあり、確定的なことは申し上げられませんが、現状での制度設計のまま追加発行することは難しいものと考えております。\n　ただ、感染症の感染状況も日々変化しております。仮に全国に緊急事態宣言が発出されるようなこととなれば、実施時期の見直しなどは検討することになろうかと考えております。",
+    "text_length": 335,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-038",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "二瓶議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私の方からも赤鬼・青鬼チケット発行事業費について質問させていただきます。さきに辻議員と今野議員が質問しましたので、そこにタブらないように、重複しないように質問していきたいと思います。\n　私も、前回の赤鬼・青鬼チケットは非常に好評だったというふうに認識しているところでございます。それで前回の赤鬼・青鬼チケットの販売に対しまして、換金率と言ったらいいのか、使用率と言ったらいいのか、どれだけ使用されたのかということをお聞きします。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-039",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨年度に実施しました赤鬼・青鬼チケット発行事業についてでありますが、販売冊数としましては３万2,623冊。枚数にしますと、赤鬼チケットと青鬼チケットを合わせまして58万7,214枚となります。使用された枚数としましては58万4,963枚ということになりますので、使用率としましては約99.6％となっております。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-040",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "二瓶議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありがとうございました。99.6％の使用率ということで、これは非常に高いのかなというふうに認識するところでございます。この効果はやはり、チケット購入方法から使用期限までの市民周知というのが非常に浸透した結果だなというふうに感じているところでございますけれども、それで、使用率が高くて一定の効果があったと考えますけれども、チケットを使用してもらうために何か対策を行ってきたのかということをお聞きします。また、今回も使用率を上げるために何か対策を講じる考えはあるのかという観点でお聞きします。",
+    "text_length": 244,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        111
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-041",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨年度の実施においては、赤鬼・青鬼チケット自体に使用期間を明記しているということはもちろんですが、使用期限近くを見計らって新聞広告に使用期限が迫っていますといった内容を掲載したこと、また、市の公式ウェブサイトやフェイスブックを用いまして、同様の内容で使用忘れがないよう周知しております。\n　前回の赤鬼・青鬼チケットがプレミアム率50％で、もともとチケット自体にお得感があったということもありますが、使用期間中における周知もあって高い使用率となったものと考えております。今回の実施に際しましても、前回同様分かりやすく効果的な周知に努めてまいりたいと考えております。",
+    "text_length": 281,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        113
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-042",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "二瓶議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありがとうございます。非常によく理解しました。先ほどの募集が多かった場合の対応の答弁を聞きましても、非常に不公平感が出ないように配慮されているなということと、経済効果がより多くなるような対応ということが答弁で分かりましたので、非常にいいことだなと。それと今答弁にありましたように、やはり使用期限が迫っていますといった内容の報道ですとか、そういったところを非常に配慮されて、高い使用率となるようにということでやられているのを聞きまして、非常に安心したところでございます。今後ともよろしくお願いします。",
+    "text_length": 249,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        115
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-043",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "565万1,000円ですけれども、この内訳をお伺いしたいと思います。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        119
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-044",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "中村消防次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業内容内訳についてですが、オゾン消毒器を２台。配置場所につきましては、消防署に１台、鷲別支署に１台の配置を予定しております。感染防止衣につきましては75着の購入予定であります。金額につきましては、オゾンガス消毒器が２台で344万8,000円。感染防止衣につきましては75着で220万3,000円となっており、事業費の合計につきましては565万1,000円となっております。\n　以上です。",
+    "text_length": 194,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        121
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-045",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。このオゾンガス消毒器なのですけれども、これの導入目的というのは何なのかというところをお伺いしたいと思います。",
+    "text_length": 61,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        123
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-046",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "中村消防次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "使用目的についてですが、オゾンガス消毒器につきましては、救急隊が救急活動終了後に救急車内にオゾンガスを発生させて、救急車内及び救急資機材等の殺菌消毒をすることを目的としております。感染防止衣につきましては、現在使用している使い捨てのタイプの感染防止衣から今回購入予定の感染防止衣に替えることにより、ウイルスのバリア性が向上し、また洗濯や消毒をすることにより繰り返し使用できるものということになります。現在使っている感染防止衣につきましては、物資不足によって安定供給が得られないというような情報も入っておりまして、そういうことも解消できるということと、あとディスポタイプの感染防止衣でありますと、出動１回につき行って１回ずつ廃棄している状態でありまして、医療廃棄物の廃棄量がすごく多くなってきており、そういった経費の削減につなげるというふうに考えております。",
+    "text_length": 378,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        125
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-047",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "了解いたしました。防止衣のほうについてもご説明いただきましてありがとうございます。廃棄物を削減するということになるということで、そういう導入目的だというところについては理解をいたしました。\n　オゾンガス消毒器の仕様はどういうものなのかというのと、それから使い方について、どのように使うのかというところをお伺いしたいと思います。",
+    "text_length": 163,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        127
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-048",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "中村消防次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "使用方法につきましては、市内で新型コロナウイルス感染症が疑われる患者の救急搬送時は、新型コロナウイルスに対応した救急車内の消毒作業が不可欠でありまして、オゾンを発生させ消毒することで、短時間で効率よく救急車内や資機材等の消毒作業が可能になり、早期の出動体制の構築が図れることになります。\n　感染防止衣につきましては、活動によって汚れた場合、水洗いが可能で繰り返し使用できものを購入予定でありまして、高度な防水性、結露防止機能、透湿性に優れている材質のものを購入予定としております。\n　以上です。",
+    "text_length": 247,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        129
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-049",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。気になるのは、ランニングコストが今後どのくらいかかるのかというところをお伺いしたいと思います。",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        131
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-050",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "中村消防次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ランニングコストにつきましては、オゾンガス消毒器につきましては空気中の酸素をオゾン生成の原料とするために、ランニングコストはかからないという認識でおります。消耗品等もありません。\n　以上です。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-051",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。消毒器自体が、物がちょっとよく分からなかったものですからこういう質問をさせていただきました。故障しない限りは、そういう費用はかからないと。今までであれば消毒をしたものを処分するだとかそういうところがかかるというところで、そういうものを解消するということを理解しました。\n　終わります。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        135
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-052",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "では質問させていただきます。\n　まず、この地域運動部活動推進事業費、この事業の目的について、今回なぜこの事業を実施することになったのかお聞きしたいと思います。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        139
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-053",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "近藤教育部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "スポーツ庁は、学校の働き方改革と持続可能な部活動の実現に向けて、令和５年度以降、休日部活動の段階的な地域移行を目指しております。本事業は、地域移行に係る様々な課題を整理するための実践研究となっております。学校の働き方改革と持続可能な部活動の実現は、本市においても喫緊の課題と認識しており、令和２年11月には地域スポーツのあり方検討委員会を設置し、スポーツに関する様々な課題解決に向けて取組を進めているところでございます。\n　このことから、いち早く本市の実情に合った部活動、ひいては地域スポーツの在り方を見い出すため、本事業の先行的な実施に応募したところであります。\n　以上です。",
+    "text_length": 289,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        141
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-054",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "続きまして、今回この部活動を実施する拠点校の学校数とその部活動数は幾つ想定されているのかお聞きしたいと思います。",
+    "text_length": 56,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        143
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-055",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "近藤教育部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事業につきましては、１校１部活動を想定してございます。\n　以上です。",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        145
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-056",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "１校１部活動となったということですが、なぜ１校１部活動となったのか。また、今回この拠点校や部活動の選定というのはどのように行っていくのかお聞きしたいです。",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        147
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-057",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "近藤教育部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本事業につきましては、北海道教育委員会からの再委託事業となっております。拠点校が原則１か所ということになっております。また、部活動については５部活まで対象とすることができますが、地域移行に関しては生徒や保護者、学校そして指導に当たる地域人材など様々な課題があるものと認識しておりますので、平日の部活動指導員配置事業の実施状況なども勘案しながら、１部活に限定して実施することとし、研究を重ねてまいりたいと考えております。\n　以上です。",
+    "text_length": 216,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        149
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-058",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。先月３月の令和３年度予算審査の中でも質問させていただいておりました部活動指導員配置事業というものがございます。この部活動指導員配置事業と今回の地域運動部活動推進事業、この違いにつきましてお聞かせください。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        151
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-059",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "近藤教育部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和２年度より実施している中学校における部活動指導員配置事業は、部活動の指導体制の充実及び教職員の負担軽減を図ることを目的としており、従前のとおり学校における教育活動の一環として行う部活動に指導員を配置するものであります。一方、本事業は休日における部活動を学校における教育活動としてではなく、地域におけるスポーツ活動として行うという点が大きく異なる点でございます。\n　また、部活動指導員は市の会計年度任用職員として配置しておりますが、本事業の指導員はあくまで地域のスポーツ活動の指導者としての立場で指導に当たっていただくこととなりますので、兼職、兼業での指導も可能となっております。\n　そのような違いはありますが、両事業は学校の働き方改革という点で共通しているとともに、生徒にとっては平日と休日の指導内容との一貫性も重要であると考えておりますので、連携させながら実施していきたいと考えております。\n　以上です。",
+    "text_length": 405,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        153
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-060",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。続きまして、この事業につきましては単年度事業ということでしたが、仮にこの事業が終わった後に、今後土日における部活動の地域移行というのはどのように進めていくのか。自主事業で継続していくのかということも含めてご答弁をお願いします。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        155
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-061",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "近藤教育部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本事業の委託期間は令和４年２月28日までとなっており、単年度の事業となりますが、令和５年度以降、休日の部活動の段階的な地域移行に向けて地域や生徒の実情を踏まえながら、次年度も同事業が実施された場合は積極的に手を挙げ、実施してまいりたいと考えております。\n　少子化が進む中、生徒にとって望ましい持続可能な部活動を実施していくためには、校区の枠組みを超えた柔軟な対応が求められているものと認識しておりまして、令和２年11月にはスポーツに関する様々な課題解決に向けて市内のスポーツに関する各種団体、教育関係機関、団体、青少年団体等で構成する地域スポーツのあり方検討委員会を設置したところでありますので、同委員会で議論を重ね、登別市における地域特性を生かした新たな部活動の在り方を探ってまいりたいと考えております。\n　以上です。",
+    "text_length": 360,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        157
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-062",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "すみません。もう１回質問させていただくのですけれども、この事業自体はスポーツ庁から北海道の教育委員会、そこから登別市に来ているかと思うのですけれども、今のところ単年度でやるということで、仮にもしも来年がなかった場合は同様に同じような事業を本市で考えてやっていくのか。また、この事業が終わってしまったらそれで終わってしまうのか。そちらの考えをお聞かせください。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        159
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-063",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "近藤教育部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほど説明させていただきましたが、この研究事業としては単年度となってございますが、令和５年度から全体的に地域移行ということでございますので、この検証事業がなかったとしても切れ目なく継続して、事業としては進めていきたいとそのように考えております。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        161
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-064",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。最初の事業目的の中で、地域移行に係る様々な課題を整理するための実践研究ということでお答えいただいておりましたが、この一つの課題としまして、人材確保というところが今後の課題になってくるのかなと思います。そこにつきまして、今後の人材確保の取組についてはどのようにお考えかお聞かせください。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        163
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-2-065",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "04月28日－01号",
+    "date": "2021-04-28",
+    "speaker": "近藤教育部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市内にはスポーツに関する各種協会や連盟のほか、サークル活動として活動されている様々な市民団体などがいらっしゃいます。まずは、そのような方々のつながりの中でご紹介いただくこととなろうかと思います。また、並行してそのような団体等の活動を引き続き支援することで、本市におけるスポーツ振興を図り、長期的な視点では地域の人材育成にもつなげていきたいと考えております。\n　以上です。",
+    "text_length": 185,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        165
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-3-066",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月07日－02号",
+    "date": "2021-05-07",
+    "speaker": "梅田議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "読み上げます。\n　辞職願。今般、下記の理由により議長を辞職したいので、会議規則第89条により許可されますよう願い出ます。\n　理由、一身上の都合により。\n　令和３年５月７日、登別市議会議長、工藤倶二雄。\n　登別市議会副議長、杉尾直樹様。\n　以上でございます。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-3-067",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月07日－02号",
+    "date": "2021-05-07",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕登別市議会議長選挙の立候補に際し、議会基本条例の規定に基づき所信を述べさせていただきます。\n　私が初当選した平成19年は、道内自治体が当時の財政再建団体に指定された年でもあり、地方自治体経営の在り方とともに、地方議会の存在意義について市民から厳しく問われていました。\n　そのような時代背景において、登別市議会は地方自治法の改正や全国の先進的事例に敏感に対応するとともに、社会の風潮を酌み取り、様々な議会改革を進めてきました。この議会改革の目的はシステムをつくることにはなく、初当選議員からベテラン議員まで、より多くの議員が同じステージで同じ権限を有して参画することで、住民福祉の増進に向けて多様性ある結果を出せるようにするための工夫でもありました。\n　おかげで、20代であった私でも議会質問に制限を受けることなく、また委員会をはじめとした各種議会活動においても積極的に機会をいただき、多くの経験を得てくることができました。\n　これまで登別市議会が議会改革に積極的に取り組んでこられた背景の一つには、様々な揺らぎを受け入れる寛容さがあったからだとも感じています。しゃくし定規にシステム構築するのではなく、多くの議員の意見を包摂するとともに実務に照らし合わせた運用を優先して議論を進めてきました。この揺らぎの受入れが、効率的に決断と改革を推し進めてこられた要所となったのではないでしょうか。\n　一方で、その揺らぎも放置したまま10年以上の時を経れば、大きな揺れとなって各種システム同士の矛盾を生じさせたり、時代の潮流に必ずしも一致しない事態を生じさせてきています。\n　これまで改革の実績を積み重ねてきた登別市議会にこれから必要なことは、既存のシステムの否定から始まる改革だけではなく、現状をアップデートしていく改善にあると私は考えています。例えば、特別委員会の常態化解消を目的とした常任委員会の設置など、新たに構築したシステムの全てが必ずしも目指していた方向に実務が向いているとは言えない状況にあります。\n　私たち議員の多様性を守り、住民のためによりよい仕事をするためにつくり上げてきたシステムが、高く堅い壁へと変化して私たちを支配したり、議会の価値を損ねるようなことになってはなりません。\n　私が最優先すべき議会運営は、前を向き続けてきた議会改革から一旦立ち止まり、後ろを振り返り、整理と改善を行うことにあります。その上で、次世代の議会の在り方を皆様と議論し、次世代につなげていく議会の起点となる仕組みの構築に向けて、必要な改革には不断に取り組ませていただきたく存じます。\n　具体案として、まずは地方自治法・条例に基づいた各種規則・要綱・規程・申合せ事項の総点検と改善、政務活動費のさらなる適正使用に向けた手引の作成と内部監査機能の設置、コロナ禍のみならず妊産期や障がいのある方の議会活動を支えるＩＣＴ利活用を目的とした条例改正に優先した取組を求めます。\n　また、議会事務局にもご協力をいただき、議員個々の政務活動の充実や住民議論の活性化を目的に、議会図書室の機能を強化。さらには来る統一地方選挙に向けて、より多くの市民に政治参加意識を持っていただくことを目的に、議会改善が図れないか議論を深めてまいります。\n　地方議会の存在意義が問われた時代における開かれた議会から、より成果を重視するとともに次世代につなげることを意識した信頼される議会に向けて、議会改革から議会改善に向けて誠心誠意取り組ませていただきますので、何とぞ皆様のご賛同とご協力を賜りたく心よりお願い申し上げます。",
+    "text_length": 1492,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-3-068",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月07日－02号",
+    "date": "2021-05-07",
+    "speaker": "米田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕登別市議会議長選挙における立候補に際して、議会基本条例に規定されております所信を述べさせていただきたく思います。\n　平成19年に初当選させていただき、はや14年の月日が流れましたが、その間一議員として経験したことも基としながら、私の取組の説明と決意を述べさせていただきます。\n　第１に、議会としてスムーズな運営を目指す。\n　私が当選した時に諸先輩が口にしていたことは、うちの市議会はほかのまちで聞かれるようなあつれきがないということです。確かに引退された議員からも、いろいろ教えられただとか伺いますし、私自身も今度教えたいことがあるからと呼び止められたこともあります。また、引退した議員の質問がすばらしかったと、他会派所属である議員から聞こえることがありましたが、お互いの存在を認め、切磋琢磨していたことを推察させます。\n　ところが、ここ数年の議会の様子が少し変化してきているように感じています。２年前に議会運営委員会が空転することがありました。そのお題は、本市議会における議長選挙の在り方の正当性に疑義があるというものでした。結局は本市の在り方に問題なしということで結論づけました。また、昨年、突然同委員会の会議において、ある提案が出されましたが、時間の制約のある中、十分な議論を尽くせずに終わったと感じています。\n　しかしながら、このことの現実が問題ということではなく、行政からも議員の諸先輩からも、日常的なコミュニケーションの必要性を言われていたので、その欠落が招いたのではないかと思っております。\n　そこで、私は副議長とともに、議会運営委員会正副委員長、各委員会委員長などとしっかりとコミュニケーションを取りながら、スムーズな議会運営を目指してまいりたいと思います。\n　第２に、女性議員連盟や超党派議員の連盟などの幅広い動きを助長させる。\n　最近、他会派所属の議員が、私の目を真っすぐに見据え、会派というのは必要なのでしょうかとおっしゃいました。各種委員会に所属することで政策課題を同じく捉える議員がいることを知り、共通認識を持ち政策提案などをしたいと強く思っている様子を知りました。北海道レベルだと、政党の垣根を越えた女性議員の会があります。今地方議会において定数削減が進む中、現状維持では課題解決が難しいと感じております。女性議員として共通認識を図りたい。そして普段接触の少ない中、公共施設における現状の課題の認識の共有を図ろうとしたときに、私の至らなさから理解を得られずに実現することがかなわず、じくじたる思いをしたことがあります。\n　また、逆の現象として、各会派の垣根を越えた活動をされている一部議員の活動も認識しております。私はそのような活動を活発化させ、しっかりと市政へ向き合いたいと考えております。\n　第３に、委員会外委員の発言の場の確保と委員会の強化について。\n　地方自治法では、委員会外委員の発言は許されております。しかし、その発言は公式のものとしては扱わないと記憶しておりますが、昨年度、登別市防災基本条例が議会へ提出される予定で、直前に全議員への説明がなされましたが、そこには委員会外委員から貴重な意見が出されたと認識しております。このようなことから、各委員会でも委員会外委員から参考意見を聴くということは有益だと感じるので、議会として今後ということですが、議論をいただく機会を設けたいと思っております。\n　また、委員会の強化ということですが、本市議会においては委員会中心主義を取っていますが、実際は本会議審議されるということで、付託案件など議論の深まりを抑制している状況にあります。\n　また、委員会の傍聴が極端に少ないと長年感じておりますが、一つとして委員会開催の告知についてどうあるべきかも考える時期に来ているのではないかと考えております。このことについても検討してまいります。\n　また、広聴・公開委員会などのように、議会運営に当たり重要な役割を担っているのにもかかわらず、しっかりと議会運営にリンクしているのか、言い難い状況ではないかと、委員一同感じております。いま一度議会としてどうあるべきか精査し、その期待される機能を発揮できるように検討します。\n　第４に、市民の声を大切にする。\n　私たち議会の一つの役割として、請願を受けることや意見書採択などがあります。しかしながら、現状意見書については各会派の代表が集まり、全会一致でなければ議会へ提出できません。そして、それはその存在ですら市民に知られずに却下されてしまうのです。\n　私は採択の有無は別としても、その存在は市民に知らされるべきと思うので、他自治体の扱いを参考にしつつ、検討をしていきたいと思います。\n　第５に、公明正大な議会運営について。\n　先日報道において、登別市議会において議長人事で某議員を内定させる方向で会派間の調整に入り、７日に再開する臨時議会で正式に決定するとありました。\n　しかし、この記事は現実とそごがあると思います。詳細は差し障りがあるので述べませんが、どういう状況になっているのかさっぱり分からないという声が聞こえる中、少なくともそこに少数会派の存在がないからです。\n　また、私はその内容に自分の目を疑いました。登別市議会においては議長選挙を導入し、誰もが立候補をすることができることになっています。私は、この制度は先駆的で、民主的なもので登別市議会の良心だと思っています。にもかかわらず、このような水面下の調整を思わせるような報道がされることは、登別市議会において、この制度の主旨にのっとって運用されているのか、市民から疑義を唱えられないかと危惧しております。\n　以前、札幌市議会において、臨時議長が議会の議長選出において甚だ疑問があると言って長時間居座り、大混乱でニュースになったことは記憶に新しいですが、内容は違うにしても、地方自治法においては議長は４年任期としているのにも関わらず、なぜ登別市議会においては２年任期を経て辞任届を提出し人事が変わるのか、市民に説明されたことがありません。ほとんどありません。改選ごとに丁寧な説明が必要と考えます。\n　いずれにせよ、登別市議会基本条例第３章、市民と議会の関係の第７条の５には「議会は、議会人事についてその経過を公表します」とありますので、それについては議会が責務を負うものであり、新議長の下、明らかにされるものと理解しております。\n　結びに正副議長、監査役の報酬の減額について、政務調査費の抑制、そして委員会視察の隔年実施について、市民の「コロナ禍により市税の減収が予測される中、新庁舎建設はどうなるのか」との声に呼応すべき対応を、過去の緊縮財政に対する議会の財政協力についても検討し、議論につなげていきたいと思います。\n　るる申し上げましたが、今後も市民の理解を得られるような取組を継続するとともに、私は引退された先輩も含め、議員諸氏の皆様が心血注いで取組をした議会改革を議会を充実させる取組、つまり深みを持たせたいと思っています。\n　以上の取組をするため、ワンチームになれるように粉骨砕身でその責任を全うしたいと決意するところでありますが、何とぞ皆様のご理解とご協力を賜りたくお願い申し上げます。\n　以上でございます。",
+    "text_length": 3001,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-3-069",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月07日－02号",
+    "date": "2021-05-07",
+    "speaker": "梅田議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは読み上げます。\n　辞職願。今般、下記の理由により副議長を辞職したいので、会議規則第89条により許可されますよう願い出ます。\n　理由、一身上の都合により。\n　令和３年５月７日、登別市議会副議長、杉尾直樹。\n　登別市議会議長、辻弘之様。\n　以上でございます。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-3-070",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月07日－02号",
+    "date": "2021-05-07",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "〔登壇〕市民・前進の千田文孝です。副議長選挙出馬への抱負を述べさせていただきます。\n　平成27年の統一地方選挙において登別市議会議員に初当選をさせていただき、現在２期目の折り返しを迎えました。\n　この間、１期目の後期は議会だより編集委員会にて委員長を仰せつかり、議会改革を進める中での課題を整理し、議会のホームページのリニューアルを図り、議会だよりでぃすかすでは予算審査の特集ページを増加し、市民への情報公開、広報の充実を図ることができました。\n　また、広聴機能を所管する委員会がなく、議会報告や市民の声を聴く議会フォーラムは議会運営委員会が所管しておりました。当時の議長の課題認識や議会運営委員会での調査結果を基に課題と捉え、広聴機能を所管事項に加えた広聴・公開委員会へと機能アップを図り、広聴機能を拡充していく入り口をつくることができました。\n　これらは、諸先輩のご指導や委員会の皆さん、事務局の皆さんのご理解とご協力により推進することができたものであります。\n　２期目では、生活・福祉委員会で請願の審査を行う機会をいただき、担当部局の皆さんと協議を重ね、対応すべきこと、対応不可のこと、できること、できないことなどを整理し、委員の皆さんと課題を抽出し、合意形成を成し遂げることで結果を得ることができました。\n　また、外部の研究会や研修会に参加し、識者の先生や他議会の方々と、議会活動や議会運営について研鑽し議論を重ねていく中で、種々の気づきをいただいてまいりました。その気づきの中から３つの点に重点を置いて、副議長の抱負として活動していきたいと考えております。\n　１つ目が、議会広報・広聴のさらなる活性化です。\n　情報公開は、これまで先達の皆さんの取組でおおむね達成できているものと思われます。今後も機能の追加や詳細な規定を網羅したことに対する結果を情報公開につなげていくものと考えます。\n　しかしながら、議会だよりの広報やホームページ等で情報公開していることが、市民になかなか届いていないと思われます。他議会と比較しても、議会だよりのページ数、文字数が圧倒的に少ない中で、重要事項や一部の紹介に絞った状態まで縮小して編集していることから、市民の身近なことについての議論や、質疑から提案に至る修正や改善を加えていること、議員がどのような仕事をしているのかを伝えるスペースや機会が極めて少ないと感じております。\n　広聴・公開委員会に改定後、各種改善の申し送りを行いましたが、各委員の皆さんがどのように実践すれば、より市民に情報を伝えられるか、市民の声を聴き傾注することができるのか。この２年間、委員会の中で議論を重ねていただきました。フェイスブックの開設や議会だよりのかわら版の試みなど、先進的な事例を取り組んでいただいております。コロナ禍で開催できなかった議会フォーラムに代わる議会報告会や広聴機能の検討など、最後まで諦めずに工夫ができないか議論していただいておりました。\n　興味のない方に振り向いていただくことは並大抵のことではございません。しかし、すぐに答えが出ない、財源が限られている中でいかに工夫し、少ない労力で効果を上げていくかが鍵だと思います。広聴機能の改善を進め、市民の声を議会・行政に反映させ、進捗、結果を広報していくサイクルを作り上げていくことで、議会の存在感を市民に示していけるものと考えますので、今後も議論や相談に努めてまいります。\n　２つ目が、質疑・質問の全体のレベルアップであります。\n　私自身も調査不足や課題の提示、改善の方向性など、論点・争点の明確化が絞れておらず、ぼやけた質問や回答となって残念な質問に終わっているもの、他の議員と同じような質問を行っているケースがあるように感じます。議会基本条例第11条の政策形成情報の明示について、政策立案等をする場合は論点を明確にするため、本条１項に掲げる６項目について質問の中に織り込んで行うことをうたっております。\n　また、他の議員が直近質問した項目に近い内容で、質問を組み立てていることが見受けられます。せっかくの貴重な質問機会を有効に使っていただくためにも、少なくとも１年から２年以内の質問内容を確認し、そこからさらに論点のステージを上げた質問を繰り広げられないかと感じております。研修会の開催や勉強会を通じて、一人一人が質疑・質問の質を上げることで求める答弁を引き出し、それが住民福祉の向上につながり、議会が活発になるものと思えることから、そのような活動にも取り組んでまいりたいと考えております。\n　３つ目が、先ほど議長も抱負の中で述べられておりましたが、議会図書室の活用・改善であります。\n　地方自治を研究する学識者は、議会図書室の活用を議会改革の一つとして取り上げられています。議長の改革案を受けながら、登別市議会の置かれている環境の中でできる議会図書室活用の活性化を検討・推進してまいりたいと考えています。\n　最後に、我々議会・議員の目的は、住民福祉の向上であります。\n　行政が進める事務事業について議論し、市民の声を反映し合意形成を図る。その先に住民福祉の向上につなげることが地方議会の最重要事項であり、その手段や進め方を整理していくことが肝要であると考えます。\n　最高規範である登別市議会基本条例を遵守することはもとより、時代背景やその内容がそぐわないものはしっかり議論し、本市、本市議会の特性にあったものに修正していくことも必要であります。\n　登別市議会では、年１回議会基本条例の自己評価を行っています。必ず議会基本条例を読み返し、自身や議会の活動の振り返りを行う仕組みがあります。このような機会があることで、議員自身の議会活動、政治活動を振り返り反省し、不足していたことは次の年に取組のギアを上げる確認ができます。このような活動を行っている議会は決して多くはありません。さらに第三者の評価を取り入れ、自己評価の過小評価や過大評価を見つめ直し、精度を上げる取組まで進めようと取り組んでいることは、大変評価に値するものと認識するところであります。この議会基本条例を遵守し、さらに充実したものに昇華させていくためにも、改革を進める手を緩めることなく改善を進めることは肝要であると考えます。\n　しかしながら、これらの活動は無理をして行うと、中には絵に描いた餅になってしまう危険性があります。できることをしっかりルール化し、皆さんが日常的に行う活動が議会基本条例の遵守につながり、それが住民福祉の向上につながることであると信じ、今後も議会活動に邁進していく所存であります。\n　議会は、議員一人一人の声を行政にぶつけるより、同じ考えを持つ議員同士が声を一つにして発言の機会を増やすことで、動かなかったものが動かせるようにもなります。我々登別市議会は合意形成を目指し、一体となって二元代表制の一翼を担うものと信じております。\n　議長をしっかりサポートし、少数会派の声に耳を傾け、議員の皆さんと議論しながら議会改革、活性化を推進していくことをお誓い申し上げて、私の抱負とさせていただきます。",
+    "text_length": 2937,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-3-071",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月07日－02号",
+    "date": "2021-05-07",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました、議案第44号は、登別市監査委員の選任についてであります。\n　議会議員の中から選任する登別市監査委員に村井寿行氏を選任いたしたく、地方自治法第196条第１項の規定により議会の同意を求めるものであります。\n　なお、村井寿行氏の略歴については、追加付議事件資料のとおりであります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-362-3-072",
+    "municipality": "noboribetsu",
+    "council_id": 362,
+    "council_name": "令和 ３年  第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月07日－02号",
+    "date": "2021-05-07",
+    "speaker": "若木議会運営委員会委員長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "それでは、西いぶり広域連合議会議員には、千田文孝副議長と総務・教育委員会委員長の天神林美彦議員を指名いたします。",
+    "text_length": 56,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/362.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        82
+      ]
+    }
+  }
+]

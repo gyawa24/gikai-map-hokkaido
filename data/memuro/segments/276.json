@@ -1,0 +1,71 @@
+[
+  {
+    "id": "memuro-276-2-001",
+    "municipality": "memuro",
+    "council_id": 276,
+    "council_name": "令和 ５年  １月 臨時会議",
+    "schedule_id": 2,
+    "schedule_name": "01月27日－01号",
+    "date": "2022-01-27",
+    "speaker": "事務局長（安田敦史）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "辞職願を朗読いたします。\n　令和５年１月17日、芽室町議会議長、早苗　豊様。\n　芽室町議会議員、黒田栄継。\n　議員辞職願。\n　このたび、一身上の都合により議員を辞職したいので、許可されるよう願い出ます。\n　以上であります。",
+    "text_length": 111,
+    "source": {
+      "minutes_file": "data/memuro/minutes/276.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "memuro-276-2-002",
+    "municipality": "memuro",
+    "council_id": 276,
+    "council_name": "令和 ５年  １月 臨時会議",
+    "schedule_id": 2,
+    "schedule_name": "01月27日－01号",
+    "date": "2022-01-27",
+    "speaker": "議会運営委員長（中村和宏）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中村 和宏",
+    "member_faction": "",
+    "text": "令和４年芽室町議会定例会１月臨時会議の運営について、去る１月20日に開催した議会運営委員会の審議結果を御報告いたします。\n　当日は、議長の出席を得て、総務課長の出席を求め、提案予定事項の説明を受け、１月臨時会議に提案される議案等の審議要領等について審議を行いました。\n　提案予定事項については、町長提案は３件で、内容は行政報告１件、補正予算２件であります。\n　また、議会提案は２件で、内容は議長発議１件、委員会報告１件であります。\n　これらの状況を考慮し、１月臨時会議の本会議については、本日１日とすることに決定いたしました。\n　次に、提案議案等の審議要領についてでありますが、令和４年度芽室町各会計補正予算２件については、予算決算特別委員会に付託し、本会議休憩中に審査を行うこととしました。\n　そのほかの町長提案１件、議会提案２件、合わせて３件については、いずれも本会議において審議報告を行うことにいたしました。\n　以上、議会運営委員会における審議結果報告といたします。",
+    "text_length": 436,
+    "source": {
+      "minutes_file": "data/memuro/minutes/276.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "memuro-276-2-003",
+    "municipality": "memuro",
+    "council_id": 276,
+    "council_name": "令和 ５年  １月 臨時会議",
+    "schedule_id": 2,
+    "schedule_name": "01月27日－01号",
+    "date": "2022-01-27",
+    "speaker": "町長（手島旭）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議長のお許しをいただきましたので、公立芽室病院の診療体制について行政報告をいたします。\n　医師の退職についてであります。\n　本年３月31日付をもちまして、総合診療科の松田卓也医長が退職することとなりました。\n　これにより、総合診療科医師数は６人となりますが、引き続き医師確保に努めるとともに、医療の質の向上と経営安定化を進めていく考えであります。\n　以上、行政報告といたします。",
+    "text_length": 189,
+    "source": {
+      "minutes_file": "data/memuro/minutes/276.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  }
+]

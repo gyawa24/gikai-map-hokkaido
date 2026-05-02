@@ -1,0 +1,3452 @@
+[
+  {
+    "id": "asahikawa-240-2-001",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "議会事務局長（林徳一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告申し上げます。\n　まず、欠席議員について、本日の会議に８番宮崎議員、２９番中川議員からそれぞれ欠席する旨の届出があります。\n　次に、議事日程について、本日の議事日程は、お手元に御配付申し上げております議事日程表のとおりでありますので、その朗読は省略いたします。\n　次に、説明員の出席要求について、本臨時会に提出議案等の説明のため、地方自治法第１２１条第１項の規定に基づき、市長をはじめ、各関係機関に対し、説明員の出席を求めております。\n　以上。\n――――――――――――――――――――――",
+    "text_length": 248,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-002",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "総合政策部長（佐藤幸輝）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号、令和２年度旭川市一般会計補正予算につきまして、提案理由を御説明申し上げます。\n　以下、補正予算書で御説明申し上げます。\n　議案第１号、令和２年度旭川市一般会計補正予算につきましては、１ページ及び２ページの第１表歳入歳出予算補正にお示しいたしておりますように、歳入歳出予算の総額にそれぞれ２２億４千２９３万５千円を追加し、２千４４億３千５９万２千円にしようとするものでございます。\n　その内容といたしましては、６ページから８ページの事項別明細書歳出にお示しいたしておりますように、２款　総務費では、新型コロナウイルス感染症対策基金積立金など２事業で１億８千２７０万４千円、４款　衛生費では、感染症予防対策費など３事業で１５億２０５万１千円、７款　商工費では、中小企業振興資金融資事業費など３事業で４億３千９万５千円、８款　土木費では、除雪費で２億９千２０４万円をそれぞれ追加し、３款　民生費では、介護サービス等事業者特別給付金など２事業で９０３万２千円、１０款　教育費では、学校ＩＣＴ環境整備費など２事業で１億５千４９２万３千円をそれぞれ減額しようとするものでございます。\n　これらの財源につきましては、４ページ及び５ページの歳入にお示しいたしておりますように、１７款　国庫支出金で１５億４千９４７万１千円、１８款　道支出金で１千１１９万円、１９款　財産収入で１万４千円、２０款　寄附金で１億９千８３０万円、２２款　繰越金で２億２千９２５万１千円、２３款　諸収入で５億８３３万円をそれぞれ追加し、２１款　繰入金で２億５千３６２万１千円を減額しようとするものでございます。\n　３ページ上段の第２表繰越明許費補正では、新型コロナウイルスワクチン接種事業費を繰越明許費として追加しようとするものでございます。\n　同じく、３ページ下段の第３表債務負担行為補正では、令和２年度旭川市中小企業振興資金（緊急対策資金（災害・景気対策融資））の融資に係る利子補給について限度額を変更しようとするものでございます。\n　以上、よろしく御審議の上、御決定賜りますようお願い申し上げます。",
+    "text_length": 887,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-003",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "おはようございます。\n　それでは、早速、進めさせていただきたいと思います。\n　初めて国内で新型コロナウイルスの感染が確認されてから１年を経過したところでありますけれども、いまだ世界的に終息が見えておりません。それどころか、変異株の発見によって一層振り回される状況なのかなと思います。専門家と言われている方々は、人それぞれに様々な見解をお話しされておりますし、要するに、何が正解で、何が間違っているのか分からない状態かなと。こればっかりは、民主主義にのっとって多数決という話にはなりませんので、もしかすると少数の意見の中に正解があるのかもしれないというふうに私は思っております。\n　それでは、通告に従いまして、４款１項２目にございます感染症予防対策費について伺ってまいります。\n　感染症予防対策としてこれまで様々な事業や対策を行ってきたわけでありますが、これまで行ってきた事業や対策について伺います。\n　また、今回、補正を計上した本事業の内訳についても併せてお伺いさせてください。",
+    "text_length": 439,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-004",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "感染症予防対策に係る事業につきましては、患者移送体制の整備や、ＰＣＲ検査の医療機関への委託、検体採取所やコールセンターの運営、感染防護具の購入などについてこれまで実施をしてまいりました。さらには、新しい生活様式の実践について、市民や事業者の皆様に御協力をいただき、感染症対策に取り組んでいただいているところであり、マスクの着用や手指消毒、せきエチケット、室内の換気、３つの密を避けることなどの感染防止対策の徹底について周知をしているところでございます。\n　次に、今回の感染症予防対策費に係る補正予算の内容についてでありますが、新型コロナウイルス感染者等の医療費の公費負担として１億４千１１２万４千円、大規模クラスター発生施設に派遣された医療従事者等への費用負担として１千１１９万円、患者移送時等や感染者等に対応する保健所職員の感染防護具の購入費用として１９０万１千円、新型コロナウイルス感染症対策担当執務室の備品や事務機器のリース代、電気・電話料金等の経費といたしまして５１４万８千円となっているところでございます。",
+    "text_length": 458,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-005",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "理事者の皆さんも未知の点が多くて、そんな中でも、何とか対策を講じながら、国の指針に沿って感染防止対策や経済対策と、時には市独自の支援策なども盛り込みながら対応されておりました。\n　これまで行ってきた対策などにおいて、この１年間、保健所として課題、難題として感じているところはどのようなものがあるのか、お伺いさせてください。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-006",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨年の２月に本市で初の新型コロナウイルス感染症の陽性者が確認され、その後、北海道の緊急事態宣言や全国一斉の緊急事態宣言が発出される中、本市の陽性者数の推移としては落ち着いていたところでありますが、１１月には、同時多発的に大規模なクラスターが発生したことによる感染者数の増加に伴い、保健所が果たすべき役割、業務が大幅に増大し、マンパワーや専門家の不足が課題として浮き彫りになったところでございます。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-007",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "確かに、建物とか設備とかには費用をかけることができても、専門的な知識を持った方がいないと操作のできない医療機器や資格の必要な業務など、法律上でいろいろな問題があるのかな、人員的な面は大きな課題だったのかなと思います。\n　先日も１０例目となるクラスターが発生したということで、まだ安心はできませんけども、幸い、想定される最悪の状況は防ぐことができたのかなと思っております。今後も、対応として、また、いつ、大規模なクラスターが発生するか分かりませんので、新たな対策も練っていただければというふうに思います。\n　次に移りますけれども、これまでに多くのＰＣＲ検査などを行っております。改めてＰＣＲ検査についてお聞きしたいのですけれども、このＰＣＲ検査について、どのような検査なのか、お示しください。",
+    "text_length": 345,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-008",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＰＣＲ検査につきましては、たん、鼻腔・鼻咽頭拭い液あるいは唾液などの体液を検体といたしまして、特定のＤＮＡだけを増やしてウイルスが体内に存在するかを調べる検査方法でありまして、これまでＳＡＲＳの検査にも使用されてきた手法でございます。他の検査方法に比べまして信頼性が高い一方で、検査結果が出るまで時間がかかるという面もございます。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-009",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "当初、ＰＣＲ検査というのは、メディアとかでも精度の点について問題視もされておりましたけれども、自分なりにいろいろと調べてみますと、様々な計算に基づいて割り出していく割合というものがあるようで、その中でも感度や特異度というものもあったりとか、やはり、１００％の精度は得られないということになるのかなと思います。\n　そうしますと、これまでの検査の中に、やはり、偽陽性、偽陰性という方がいらっしゃった可能性もございますし、そうなると、本来、一切ウイルスを持っていないのに、生活、活動を制限されてしまう、そういったことがあった可能性もあるのではないかと思っております。\n　陽性反応が出た場合には、イコール、感染者としてカウントされていると思いますけれども、その精度についてはどの程度のものなのか、お伺いさせてください。",
+    "text_length": 355,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-010",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、ＰＣＲ検査における感度とは、検査を行い、正しく陽性と分かる割合でございまして、特異度とは、検査を行い、正しく陰性と分かる割合でございます。\n　なお、それぞれの検体の採取の部位でありますとか種類、さらには、感染あるいは発症からの経過時間など、検査以外の要因による影響も大きいことから、具体的な精度の数値というものについては申し上げられないところでございますが、市保健所といたしましては、これまで、国立感染症研究所の御意見などもいただいておりますとともに、基幹病院や医師会等で構成される医療対策連絡会においても、このＰＣＲ検査の実施や陽性判定について協議を行っておりまして、今後も適正に判定されるよう注意を払ってまいりたいというふうに考えてございます。",
+    "text_length": 327,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-011",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "具体的な数値としては算出が難しいということでありますし、現実的にもやはり１００％にはならないのかなというふうに思います。ただ、やり取りさせていただいた中では、怪しいケースの際には再度検査をされたりとか、本市としてはできる限り慎重な対応をされているということでありますので、引き続き慎重に対応していただければと思っております。\n　本市としては、昨年１１月にクラスターが発生してから、大小含めて１０件のクラスターが発生しております。当時は日本で最大級と言われるような状況ではありましたけれども、関係者の皆様や市民の方々の支援など、様々な方のおかげでクラスターは終息させることができたと思っております。\n　そんな中、先日の国会において、西村大臣の発言の中で、旭川が悪い例ということで発言されておりました。それがまた新聞の記事にもなっていたりということでございましたけども、私としては、旭川が悪い例というよりは、終息させることができたのは、やはり多くの皆さんが身を削りながら大変頑張られた結果だと思いますし、全国的にも感染に歯止めがかかっていない現状を踏まえますと、また、北海道のグラフの状況、旭川のグラフの状況を比較して見た限りでは、やはり、悪い例とは言えないのかなというふうに思っているところであります。\n　クラスターの発生した施設などに対して、本市としてこれまでどのような取組を行ってきたのか、お伺いさせてください。",
+    "text_length": 607,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-012",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市では、同時多発的に大規模なクラスターが発生しまして、当初の想定を超え、今まで経験したことのないような状況の中、コロナ病床の確保や発熱外来、検査体制の整備、宿泊療養施設開設の要請など、スピード感を持った対応が必要であり、これまでも５つの基幹病院や医師会などと協議、調整を行い、連携協力をいただきながら対応してきたところでございます。\n　また、保健所内に新型コロナウイルス感染症対策担当を設置しまして、疫学調査、検体検査、入院調整及び相談受付など、感染拡大対策の強化を図り、さらには、国の災害派遣医療チームや自衛隊、北海道などの関係機関からの支援もいただきながら、事態の収束に向けて取り組んできたところでございます。",
+    "text_length": 308,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-013",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "クラスターが発生してから、特に保健所の皆さん、夜中まで走り回って一生懸命対応されておりましたし、クラスターが飛び火してしまって感染が止まらないというのは防いでいるわけであります。当然ながら、そこには現場で必死に対応していただいた多くの方々の努力があっての成果でありますので、市民の一人としては、悪い例と言われてしまうと、私の個人的な思いですけれども、それはやはり頑張ってこられた方に対して失礼に当たるのかなというふうに思っているところでございます。解釈としては、私の捉え方はそういう捉え方ですので、発言の真意は分かりませんけども、発言の渦中にある本市としては、ぜひ、どういった内容といいますか、何が悪かったのかというのを確認していただきたいなというふうに思うところでございます。\n　次に、項目を移りまして、新型コロナウイルスワクチン接種事業費について伺ってまいりたいと思います。\n　本市としても、ワクチンの接種が近づいているということもあって、新たな部署も設置されまして準備をされているところであります。本事業については、どういうものなのか、ワクチン接種事業を行う理由や事業費の内訳についてお伺いさせてください。",
+    "text_length": 506,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-014",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本事業は、予防接種法附則第７条の特例規定に基づく臨時に行う予防接種として、国の指示の下、都道府県の協力により、市町村において新型コロナウイルスワクチンの接種を実施するものであります。\n　本事業につきましては、全額、国の負担となり、総事業費１４億３千５７７万８千円のうち、医療機関への接種委託費用等で１０億７千９９３万７千円、接種に関する相談対応などを行うコールセンター業務委託費等に１億１８１万６千円、接種券の発送業務等に６千７０１万円などを見込んでおります。",
+    "text_length": 230,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-015",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "新型コロナウイルスの対抗策としてのワクチン接種というのは、既に各国で始まりまして、日々、話題になっておりますけれども、そもそもこのワクチンというのは一般的にどのようなものなのか、また、ワクチン接種によってどのような社会的効果を期待されているのか、その期待される内容について、お伺いさせていただきたいと思います。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-016",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一般的に、ワクチンは、病気に対する免疫をつけたり免疫を強くするために接種するものであり、新型コロナウイルスワクチンについてもそうした特徴があるものと考えられます。これにより、接種を受けた方の発症や重症化のリスクを抑え、また、多くの方が接種を受けることにより、社会全体の感染症の流行を防ぐことが期待されています。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-017",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "新型コロナウイルスに対するワクチンの接種が始まったとして、その社会的効果が現れるのはどういう状況になった場合で、どれくらいの期間を要すると想定されているのか、伺います。",
+    "text_length": 84,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-018",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンの効果が実際に現れる時期につきましては、薬事承認されたワクチンの特性や効果にもよりますが、多くの方がワクチンを接種して感染者数の抑制が確認できれば、その効果が現れたものと考えられます。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-019",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "多くの方がワクチンを接種して、初めて効果を期待できるということであります。\n　続いて、ワクチン自体の効果についてでありますけども、私の認識としては、ワクチンは、感染を抑えるのではなくて、発症を抑える、発病を抑えるというのですか、または重症化を防ぐということであると思っておりましたけれども、新型コロナワクチンについては、専門家の方も、感染防止効果があるということをおっしゃっている方もいれば、やはり感染は防げないとおっしゃっている方もいらっしゃって、これまた、どちらを信じればいいのか分からない状況ではあります。\n　ただ、厚生労働省のホームページでは、インフルエンザの場合だと、ワクチンは感染を完全に抑える働きはありませんと明記されていたり、昨年１２月に発表されました一部の海外開発の新型コロナワクチンの第３相の臨床試験の中間発表の中では、感染が防げるかどうかは明らかになっていないというふうに記載されております。可能性としては、重症や中等症の方は減る可能性はあるけれども、軽症、無症状の方は、減るわけではなくて、やはり、重症の方とかが減った分だけ増える可能性があるというふうに思っているわけであります。そうなると、陽性反応になってしまう人数は要するに変わらないわけでありまして、引き続き感染対策を続けていかなければならないということが考えられると思っております。\n　重症の方が減ると、医療現場としては負担が減るということになりますので、必要なことかなというふうには思いますけども、いわゆる患者さんの数が減らないということは、今後も今の対策を続けていかなければいけないということになると思いますけれども、この点について本市の見解を伺いたいと思います。",
+    "text_length": 725,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-020",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンは接種によって発症や重症化を抑える効果が期待されるものであり、その効果が現れるまでは、多くの人が接種を受け、抗体を獲得することが必要ですので、それまでは、引き続き、感染予防や発生対応の対策は行っていかなければならないものと認識しております。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-021",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "やはり、現状としては、これまでの対策を続けながら、ワクチンの接種によって抗体を持つ人を増やしていかなければならないということかと思います。ワクチンを接種したからといって、即座に現在の対策が不要になるわけではなくて、すぐに以前のような生活ができるようになるわけではないということになるかと思いますけれども、ただ、いつまでもずっと自粛や自粛解除だと繰り返しているわけにはいかないと思います。\n　これまで行ってきた感染予防対策と今後のワクチン接種について、今後においてどういった変化をもたらすのか、本市としての見解を伺わせていただきたいと思います。",
+    "text_length": 271,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-022",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これまでは、ワクチンや専門治療薬がない中での対応を余儀なくされていたため、感染の予防や、発生への対応や抑え込み、あるいは医療体制の整備など、発生対応に重点を置き、コールセンターの設置や発熱外来の整備、検査体制の拡充、病床数の確保、クラスター対応などの一連の対応を行ってきたところであります。今回、国によるワクチン提供が進められることから、全国民を対象としてワクチン接種をすることで、感染を抑え込む対策に移行することになると考えております。\n　今後は、ワクチン接種の体制を確保しつつ、問合せや相談への対応が予想されるとともに、引き続き検査や医療体制の確保も必要となりますことから、当面、ワクチン接種と今までの取組を並行して進めていくことになります。",
+    "text_length": 323,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-023",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "ワクチンの接種が始まることによって、これまでの特効薬のない状態での対策から、少しずつではありますけれども、ワクチンによってこの感染を抑え込む体制に入っていく、そういうことでありました。要するに、ワクチンを多くの方に接種していただかないと次の段階に移れない、そういった状況でもあるかと思います。\n　そこで、お伺いいたしますけども、このワクチン接種自体は、強制的なものなのか、任意的なものなのか、お伺いさせてください。",
+    "text_length": 207,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-024",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルスワクチンの接種は、予防接種法ではこれを受けるよう努めなければならないといういわゆる努力義務となりますが、あくまでも接種は本人の意思によって行われるものであります。",
+    "text_length": 90,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-025",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "努力義務ではあるけども、あくまで任意ということになりますね。\n　短期間に開発されたと言われているワクチンに対して、あるいは、ワクチンそのものに対して懐疑的といいますか、不安を抱いたりとか、接種したくないという方もいらっしゃるのは事実かと思っております。\n　本市の見解として、ワクチンの接種率の想定としてはどの程度を見込まれているのか、お伺いさせてください。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-026",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルスワクチンは、前例がない接種であり、ワクチンに対する理解や社会的な評価がまだ定まっていないことから、接種率を予想することは非常に難しいところであります。例えば、季節性インフルエンザの６５歳以上の方のワクチン接種率はおおよそ５０％でありますので、これを一つの目安として考えておりますが、この接種率にとらわれずに、より多くの方に接種していただくよう周知、啓発をしてまいります。",
+    "text_length": 194,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-027",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "接種に関しては任意ということですので、やはり、接種したくないと言う方も少なくないのかなと。正直、私も不安は持っているところです。\n　仮に、ワクチン接種に不安を抱く方が多くて接種率が低くなってしまった場合、どのような事態が予想されるのか、お伺いさせてください。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-028",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンの接種率が低いと、社会全体での発症や重症化の予防が期待できなくなりますことから、今までの状況から脱却することができず、感染症予防対策や発生対応、また、医療機関の負担も継続し、社会生活や経済の活性化がなかなか改善していかないことが想定されます。",
+    "text_length": 125,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-029",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "ワクチンに関して不安もあるけども、やはり、現状としては接種をしないと今のコロナ禍における生活からは脱却できないということでありますので、それは、イコール、経済的な回復もなかなか見いだせなくなってしまうというのは、おっしゃるとおりかと思います。ずるずる、ずるずると、より望ましくない状況になってしまう可能性もありますし、ワクチン以外での治療薬というのも研究されているところでありますので、できれば早期に治療薬を完成していただけると選択肢も増えていいのでしょうけれども、とにかく今は可能性のある手だてを講じていくしかないところでもあるのかなというふうに思います。\n　次に、接種対象者について伺いますけれども、実際のところ、優先順位についてどのような方針なのか、国から示されたものがあるのか、お伺いさせてください。",
+    "text_length": 354,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-030",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンの接種に関しましては、現在のところ、国の方針では、２月下旬から医療従事者、３月下旬から高齢者、４月以降に基礎疾患を有する方や高齢者施設等の従事者の予定となっております。",
+    "text_length": 88,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-031",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "現時点では、国内で未承認ながらもワクチンの供給に関しては契約が締結されたということでありますけども、いつまでに、どれだけの量がというのは、やはり不明な点であります。\n　本市が確保するワクチン数や接種の流れについてお伺いしたいと思います。\n　接種を行う際に、優先順位を決めるということは、それに応じた本数といいますか、数が用意されて、段階的に次の優先の方、次の優先の方と移っていくと思いますけれども、ここで気になるのは、やはり、任意であるからこそ、優先順位で該当している方も、例えば医療従事者の方のうち、仮に半数が接種をしないというふうに判断した場合に、余った半数の分は次の優先の方に行くのか、長期保管はできないでしょうし、この点についてどのように扱っていくのか、お伺いさせてください。",
+    "text_length": 342,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-032",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンの供給につきましては、国のワクチン接種円滑化システム、略してＶ－ＳＹＳと言いますが、このシステムによって、国や市町村、医療機関、卸業者がオンラインで結ばれ、予約を受けた医療機関がワクチン数をシステムに入力することにより、卸業者が接種に必要なワクチンを過不足なく医療機関に配送する仕組みとなる予定です。",
+    "text_length": 154,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-033",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "要するに、接種を希望した方からの予約制という形で必要な分だけが配られるということです。\n　次に、ワクチンの接種を始めるに当たりまして、どのような施設で、どの程度の接種場所を設置するのか、一般的な医療機関で接種可能となるのか、また、ワクチンの保管には冷凍保存が必要ということですけども、それらの体制についてはどのように行っていくのか、お伺いさせてください。",
+    "text_length": 177,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-034",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンの接種体制については、基本的に医療機関で接種していただくこととなりますので、具体的な接種場所やワクチンを保管する超低温冷凍庫、別名ディープフリーザーと呼ばれることが多いですが、その保管場所は、今後、医師会など関係機関と協議してまいります。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-035",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "医療機関での接種ということでありますけども、大勢の方が一気に集まってしまったり、何ていうんですか、現在もコロナの感染自体は収まっているわけではありませんので、医療機関の負担が多大になってしまわないように、医師会の方々との協議の中で最善の対応をしていただければなというふうに思います。\n　次に、ワクチンの安全性についてでありますけれども、分からないことが多いこともあって、先ほど申し上げたとおり、やはり、安全性に不安もあるところであります。高齢者の方や疾患を持っている方など、感染した場合にリスクの高い人ほどこういったワクチン接種でのリスクも高いのかなというふうなイメージなのですが、この点について見解を伺わせてください。",
+    "text_length": 310,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-036",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルスワクチンは、現在、薬事承認に向けて厚生労働省で審査が行われているところであり、承認後に国から様々な情報が提供されると思いますので、本市としても、市民の皆様に安心して接種していただけるよう、国からの情報が入り次第、丁寧な情報提供に努めてまいります。",
+    "text_length": 132,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-037",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "当然ながら、理事者の皆さんは、独自の見解ということでは発言できませんし、国の指針にのっとってやられるということでありますので、逐次、分かり次第、速やかに情報提供をお願いしたいというふうに思います。\n　私も含めて、国民であると同時に旭川市民でもありますので、やはり、旭川市役所というものは、旭川市民の安全を守るためにも、いろいろとこういった不安材料、分からないこと、新たなこと、懸念事項に対してしっかりと注視しながら安全を守っていただきたいなというふうに思っているわけであります。\n　次に、ワクチンは２回打たないといけないということであるようですけれども、副反応の件も含めて、しっかりとした接種後の体調把握というのは大変重要になってくるかと思います。\n　この点について、どのように行っていくのか、お示しください。",
+    "text_length": 355,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-038",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンは、医師または看護師によって設備の整った医療機関で接種する予定でありますので、接種後の体調の変化などについては、当該医療機関において対応をしていただくことになります。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-039",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "基本的には、医療機関において把握、対応していただくということでありますけれども、このワクチン接種による副反応については未知な点も多いでしょうし、医療機関のほうで対応というよりは、できる限り市のほうも連携しながら情報共有をして、やはり亡くなってしまう可能性もありますので、そういう方が一人でも発生してしまわないように対応していただきたいなと、副反応については、やはり、十分注意しながら連携していっていただきたいなというふうに思います。\n　もし仮に、副反応を起こして体に重大な影響が出てしまった場合、どのような対応をされるのか、お伺いさせてください。",
+    "text_length": 273,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        84
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-040",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一般的に、ワクチン接種によって接種部分の腫れや痛み、発熱、頭痛が起こることがあり、極めてまれに治療を要したり障害が残るなどの副反応が起こる可能性はなくすことができないと考えられます。\n　こうした事例に関しては、接種した医師がまずは対応することになりますが、治療が必要になったり障害が残った場合には、予防接種法に基づく救済制度が設けられておりますので、それで対応していくことになると思います。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        86
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-041",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "この救済制度自体には、結局のところ、関連性を判断する機関によって無関係と判断されてしまう、やはりそういった懸念もありますので、副反応による人体への被害というのがゼロではない以上は、できる限り市民に寄り添った対応をしていただきたいと思っております。\n　次に、ワクチン接種が任意であるというところに関してですけれども、昨年から、マスクをしないとマスク警察とか、自粛をしないと自粛警察など、そういった言葉が多く聞かれるようになりました。あと、医療従事者の方やその家族へ心ない言葉を発したり、感染してしまった人を悪者扱いしたり、場合によっては感染してしまった本人が罪悪感にさいなまれたり、そういったことはやはりよくないことかなというふうに思っております。\n　ただ、現実的には起こってしまうということで、今回のワクチン接種でも、やはり、接種しないことが悪いことだというようなレッテルを貼られてしまうおそれというのもあります。疾患を持っている方など、場合によっては接種したくてもできない方もいらっしゃるのかなというふうに思います。\n　そういった懸念されることに対して、どのように市として対応していくのか、お伺いさせてください。",
+    "text_length": 507,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        88
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-042",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチン接種は、新型コロナウイルス感染症の発症や重症化のリスクを抑えることが期待され、それにより医療体制を安定化させるなどの効果が見込まれますことから、多くの方に接種していただきたいと考えております。\n　ワクチン接種はあくまで本人の判断によりますことから、このことで接種を受けない方が不当な扱いを受けることがないように、ワクチン接種に関する正しい知識を持っていただき、理解していただけるよう、広報誌などをはじめ、様々な媒体を用いて周知、広報に努めてまいります。",
+    "text_length": 230,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        90
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-043",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "塩尻英明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "塩尻 英明",
+    "member_faction": "旭川市民連合",
+    "text": "行政としてできる範囲というのもあるかと思いますけれども、やはり、様々な懸念事項に対して可能な限り慎重な対応をお願いしたいというふうに思います。\n　今回、ワクチン接種事業に関しては、国のほうで決まっていないことも多いですし、明確に示されていないこともたくさんございます。そんな中で、やはり御答弁の中ではなかなか言えないことがあるのも重々承知の上でございますけれども、質疑を行わせていただきました。次回の質疑となると、もうワクチン接種が始まっている可能性がありますので、今回、いろいろとお聞かせいただいたわけでありますけれども、全体を通じて願うことは、やはり、できる限り早い終息でございます。それと同時に、旭川市民の方々の安心と安全を守っていただきたいなというところであります。\n　このワクチン接種事業に対しては、本当に命に関わる、直結する事業でもございますし、それだけ重要であって、それによって、やはり、経済的な面も今後の進み具合で大変大きな影響を受けていく、そういうふうに思っております。現在でも困っている方、大変な思いをしている方はたくさんいらっしゃると思いますので、できる限り早い終息に向けて、多くの方がワクチンを打つことで終息するのであれば、そのようにしっかりと対応していただきたいと思いますし、情報をできる限り多くの方に届けていただきたいなというふうに思います。\n　今後のこのワクチン接種事業を通じて一人でも多くの市民を守るんだという皆さんの決意を伺わせていただいて、私の質疑を終えたいと思います。",
+    "text_length": 653,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        92
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-044",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルス感染症の流行から約１年がたとうとしており、この間、感染予防や発生対応など感染拡大の防止に全力を挙げてきました。\n　こうした中、今回、ワクチンの接種が進められることになり、着実に推進していくためのワクチン接種チームを設置したところであります。コロナ禍の終息のためには、多くの方々にワクチンを接種していただくことが大切と考えており、市民の皆さんが正しく理解された上で受けていただけるよう広報に努め、また、実際の接種が円滑に進むような体制を構築していくことがチームの使命であると考えております。\n　今回のワクチン接種は、これまで経験したことのない大規模な接種事業となりますので、私たちも、知恵を絞り、あらゆる方策を探りながら精いっぱい取り組ませていただきます。",
+    "text_length": 336,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-045",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "最初に、この場をお借りいたしまして、コロナウイルス感染症により亡くなられた皆様に、謹んでお悔やみ申し上げますとともに、御遺族に衷心より哀悼の意を申し上げたいと思います。\n　さらに、いまだ治療途中の皆様の一日も早い回復を心より願っております。\n　あわせて、医療従事者の皆様には、心より感謝を申し上げる次第です。\n　それでは、３款１項３目、ＰＣＲ検査費用助成費１千８９８万８千円につきまして質疑をしたいと思います。\n　まず、事業の概要についてお聞かせください。",
+    "text_length": 228,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-046",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＰＣＲ検査費用助成費の事業目的についてでございますが、高齢者は、新型コロナウイルス感染症に感染した場合に重症化するリスクが高い特性があり、特に、高齢者が入所する施設で感染症が発生した場合、多くの高齢者に感染が広がり、重症者が多く発生するおそれがあることから、施設へのウイルスの持込みを未然に防ぐため、特別養護老人ホームなど１０種別の入所施設に新たに入所する高齢者及び新規採用職員に対し、ＰＣＲ検査を行った費用について補助を行うこととしたところでございます。\n　検査の実施に当たっては、各施設の嘱託医や協力医療機関、また、任意の検査を行っている医療機関や入院中の新規入所予定者については入院中の医療機関に相談いただき、検査を実施していただくほか、郵送による民間の検査機関での実施も想定しているところでございます。\n　事業費につきましては、補助金として１千８８０万円、事業者への周知文書等の郵送費など事務費として１８万８千円の合計１千８９８万８千円の予算を計上しております。",
+    "text_length": 435,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        99
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-047",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次に、事業の実施期間及び補助基準についてお伺いいたします。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        101
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-048",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業の実施期間につきましては、予算の議決をいただいた後、対象施設への周知期間等も考慮し、令和３年２月１０日から３月３１日までを予定しております。\n　補助対象費用につきましては、検査費用のほか、検査結果の証明書、郵送による検査の場合の送料等、検査の実施及びその結果の受領に係る費用について補助対象とし、ＰＣＲ検査につきましては１件当たり２万円、抗原定量検査を実施された場合には１件当たり７千５００円をそれぞれ補助の上限といたします。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-049",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "実施期間が２月１０日から３月３１日まで、ＰＣＲ検査で１件当たり２万円、抗原定量検査が１件当たり７千５００円の補助ということでありました。期間が非常に短いなというのは一つあります。\n　さらには、ＰＣＲ検査については、一般的に２万３千円ぐらいじゃないかというふうにもお聞きしていますから、その差額は施設負担ということでよろしいのかなというふうに思います。\n　それで、対象施設なんですが、いわゆる高齢者施設全般とのことでありますけれども、対象者が新規入所者と新規採用予定者とのことで、それぞれ何名ぐらいと見込んでおられるのか、お聞かせください。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-050",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象者数につきましては、同様の事業を実施しております他都市の状況や、本市の入所施設数などを踏まえ、既存の施設では、新規入所者と新規採用職員を合わせて１施設当たり２人とし、３月に開設される定員１００人の特別養護老人ホームの新規入所者と新規採用職員を勘案し、新規入所者を６９０人、新規採用職員を２５０人、合計９４０人と積算したところでございます。",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-051",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回、９４０名を想定しているということであります。\n　この対象者を新規分と定めた背景、これをお聞かせください。",
+    "text_length": 55,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-052",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高齢者が入所する施設で感染症が発生した場合、施設や入所者の特性から、多くの高齢者に感染が広がり、重症者が多く発生するおそれがあること、また、入所施設で多くの感染者が発生した場合には入所者の生活の場が失われることにもつながることから、施設へのウイルスの持込みを未然に防ぐため、新規入所者及び新規採用職員を対象とした補助事業を実施することで、施設側でも安心して受け入れる体制を確保していただくことを目指したものでございます。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        111
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-053",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、お話があったように、高齢者施設での感染拡大、それは、やはり、主に職員とか、外部要因によるものが強いのだろうなということなんです。\n　そこで、じゃ、新規分だけでいいのかなというのが、ちょっと私は疑問なんですが、既存の入所者及び職員のＰＣＲ検査を行わない理由についてお聞かせください。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        113
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-054",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "既存の入所者や職員の方々につきましては、日々の健康管理、体調の変化に留意いただき、体調が悪い場合は早めの受診をお願いするとともに、職員の方については、大事を取ってお休みいただきたいとお願いしているところでございます。\n　なお、全ての介護事業所を対象に、感染対策を徹底した上で事業を継続的に運営するための支援として、北海道が実施しております新型コロナウイルス感染症緊急包括支援交付金において、感染症対策に要する物品の購入やＰＣＲ検査の費用についても補助される制度があり、２月末が申請期限となっておりますので、御活用いただきたいと考えております。\n　また、利用者や職員に感染者が発生した施設、事業所や、濃厚接触者に対応した訪問系事業所、短期入所及び入所施設については、本市において、サービス継続支援事業による補助制度を実施しており、ＰＣＲ検査費用も補助対象としているところでございます。",
+    "text_length": 391,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        115
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-055",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、日々の健康管理、体調の変化、そういったことに留意をしていただきながら、職員の方が調子が悪いというときは大事を取って休んでいただきたいと、これは、当然やっていますよね。さらに、最善の新型コロナウイルスに対する防護策は十分にやっているわけであります。ＰＣＲ検査を受けて陰性であったとしても、後に陽性になれば、検査自体が一時的なものになってしまって、継続していかなければ施設側としては安心が保てないのが実態だと思います。\n　この点については、どのようにお考えですか。",
+    "text_length": 232,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        117
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-056",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議員の御指摘のとおり、ＰＣＲ検査は検査時点での感染の有無を確認するものであり、検査後に感染することなども考えられるところでございます。そのため、ＰＣＲ検査によって感染状況を把握していくためには定期的な検査を行う必要があると考えておりますが、定期的な検査を行っていくことにつきましては、検査体制や費用を含め、課題があると考えております。\n　そうしたことからも、重ねての御答弁にはなりますが、日々の健康管理や体調の変化に御留意いただき、体調が悪い場合は早めの受診、また、職員の方につきましては、大事を取ってお休みいただくことで感染予防に努めていただきたいと考えております。",
+    "text_length": 284,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        119
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-057",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、高齢者施設の全入所者、さらに職員、この方々にＰＣＲ検査等と、あえて等とつけますが、ＰＣＲ検査等を行った場合の費用は幾らぐらいになるかということをお聞かせください。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        121
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-058",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "入所者数につきましては、本年１月１日現在の定員数で申し上げますと、１万１千５５２人、職員数につきましては、平成２８年の経済センサスの結果に基づく特別養護老人ホーム、老人保健施設、認知症グループホーム、有料老人ホームの４種の入所施設における職員数で申し上げますと、４千７１６人となっており、単純に合計した場合、約１万６千３００人となります。\n　今回予算計上しておりますＰＣＲ検査の補助上限であります２万円を積算根拠とし、１件当たりの費用を２万円として計算した場合、１回の検査で約３億２千６００万円が必要となるところでございます。",
+    "text_length": 263,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        123
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-059",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "職員数のデータが古いので、直近の数字について、概算で結構ですから、これからちょっと大事な視点になりますので、お聞かせください。",
+    "text_length": 63,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        125
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-060",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "職員数についてでございますが、先ほど申し上げました数字は平成２８年のものでございまして、その後、施設等はまた新たに創設されておりますので、約５千人になるものと考えております。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        127
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-061",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５千人ですね。\n　先ほど来もお話が出ていましたけれども、北海道から新型コロナウイルス感染症緊急包括支援交付金が出ているので、既存の入所者と職員は、今回、対象としないということですけれども、実は、この議案を初めて我々が見たときに、いい試みだなと思って、当然、既存の方についてはやっているんだろう、認識しているんだろうということで、市内の高齢者施設を回らせていただきました。もちろん、全てじゃありません。事例としては、たった４件しかありませんが、確認をいたしましたところ、一様に道から通達があったとの認識がなくて、入所者及び職員のＰＣＲ検査は一切行っていないと。ただ、ただ、先ほど話していたように、感染しないように防止対策をしているということです。もちろん、衛生用品とか、そういう関係のことは認知をしていました。\n　ある施設では、検体を札幌の民間ＰＣＲ検査センターに、費用はもちろんかかるわけですが、１人税込み３千円かかったとしても、不安払拭のために持ち込む予定であると、そういう瀬戸際だったんですね。\n　高齢者施設での感染者発生は、濃厚接触者や風評被害と併せ、施設存続にも大きな影響が出てくるわけで、これは先ほど部長が言われたとおりで、大きな負担を覚悟で実施しなければならない、これは当然なわけです。しかし、施設自体はあんまりもうけちゃいけないというふうになっているので、この１人当たりの金額は、２万３千円から見たら少ないかもしれないけれども、人数がいるわけですから、負担は物すごくでかいわけですよ。\n　先ほど、これは国の事業だと思うんですけど、新型コロナウイルス感染症緊急包括支援事業で、既存の方の検査にも活用されているとのことですが、そういう認識なんですよね、担当部局としては。道や委託されている北海道国民健康保険団体連合会から丁寧な説明もされていないことから、各施設の認識も残念ながら薄いというのが現状だと思いますよ。国や道、そして、市からの膨大な通達や連絡が、ほとんど、ほとんどというか、もう全てと言っていいんじゃないでしょうか。ネット化されていて、現場は大変です。確認を怠れば、もうスルーしてしまう。これが現状だと思います。\n　今回の事業に併せて、本事業の対象施設に、再度、この資金が検査に使えるんだということを周知徹底すべきだと思うんですが、いかがでしょうか。",
+    "text_length": 985,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        129
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-062",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北海道の事業につきましては、これまでも、市のホームページや、感染対策徹底のお願いに併せ、周知を図ってまいりましたが、今回、本事業の実施につきまして、対象施設に直接郵送で事業の案内を送ることを予定しておりますので、その案内文に、北海道の事業においてＰＣＲ検査費用が補助の対象となっていることにつきましても記載し、改めて周知を図ってまいります。",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        131
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-063",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "その案内文は、いつ頃送られるんですか。",
+    "text_length": 19,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-064",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補正予算の議決後、速やかに発送を予定しております。",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        135
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-065",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどから出ている新型コロナウイルス感染症緊急包括支援事業については、２月末までの申請とお答えいただきましたけれども、正直、残された時間はありません。\n　本事業に基づいて検査した施設は、当然、把握されていると思います。押さえているんでしょうか。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        137
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-066",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルス感染症緊急包括支援交付金は、北海道が実施している事業であり、北海道も全道の事業所を対象に事業を実施していることから、交付実績から検査件数を精査することは困難な状況であると考えており、市として北海道の事業による検査件数については把握していない状況ではございますが、まずは、交付金を活用した検査の実施について市としても周知していくとともに、関係者等から御意見や要望も伺いながらその状況の把握に努めていきたいと考えております。",
+    "text_length": 219,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        139
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-067",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "困難な状況と言いますけど、何が困難なのかなと。結局、皆様方のホームページ、旭川市のホームページでリンクされているわけですよ。当然、市の資金だと思うじゃないですか。道も国保連合会に丸投げしている。お互いがやり合いっこしているんですよ、実態も押さえないで。せっかく、これはすばらしい事業なのに、こう批判せざるを得ない。早急に、これ、把握してくださいよ。よろしくお願いします。\n　新型コロナウイルス感染症緊急包括支援事業での検査実施件数を押さえていないということは、非常に残念。先ほどの答弁で、既存の高齢者施設の職員は約５千人で、入所者を合わせて約１万６千人とのことでありました。新型コロナウイルス感染リスクの高い最大の弱者は高齢者であり、重症化リスクも高い。しかし、今まで、老人施設の感染事例を見ても、外部との接触がない入所者自身からの発生ではなく、職員等を通しての感染になっていると思われます。\n　北海道国民健康保険団体連合会は、昨年７月２０日付で、新型コロナウイルス感染症緊急包括支援事業（介護分）に係る申請についてと題し、事務連絡を各介護事業所に通達しています。この中で検査等について触れられていないので、改めて、１１月２４日付で、厚生労働省から高齢者施設における感染拡大防止対策の再徹底についてと題し、初めて、具体的に自費検査を実施した場合の補助を明記しております。\n　しかし、この緊急包括支援事業については、感染リスクを回避するための支援や慰労金のことが中心であったため、補助限度を超えることになり、やむなく断念か、そのメニューすら分かっていない施設関係者が多いのだという事実から、制度はよいけれども、運用に課題があると言わざるを得ないなというふうに私は思います。制度自体はいいと思うんですよ。問題は先ほど指摘しましたけれども、それをつかさどる行政側、道も含めた、国保連も含めた、そういう行政側の、申し訳ないけど、怠慢と言わざるを得ないと。\n　ワクチン接種までにはまだ時間があるので、これ以上、本市から死亡者や重症患者を出さない、そして、クラスターの発生を防ぐ、その結果、医療現場の危機を可能な限り軽減していく。新規だけでも一歩踏み込んだ事業ですから、評価をしたいけれども、全国的に類を見ない全職員検査を併せて実行すべきと考えますが、市長、見解を求めたいと思います。",
+    "text_length": 986,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        141
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-068",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "市長（西川将人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高齢者入所施設で幅広く検査を定期的に実施してスクリーニングを行っていくということは、施設でのクラスター発生防止の一助になると考えておりますけれども、市内の医療機関で検査を行おうとした場合、現在の検査体制では約５千人の検査を定期的に行っていくということは困難であると考えております。\n　一方で、札幌などの大都市圏では、今朝も報道で紹介されておりましたけれども、民間のＰＣＲ検査センターの設置や郵送による検査なども広がっているという状況でありますが、民間の検査機関が行う検査は、あくまで行政検査ではありませんので、陽性と判断された場合には、改めて行政検査をする必要があることですとか、疫学調査、また療養体制の確保などといった課題もございます。\n　現時点では、まずはワクチンの接種に向けて全力で取り組んでいくことを考えているところでありますけれども、このＰＣＲ検査の体制についても、関係機関、あるいは国、道などの動向なども踏まえていきながら、必要に応じて今後検討を進めていきたいと考えております。",
+    "text_length": 445,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        143
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-069",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市長、これは動機づけだと思うんですよ。やはり、市もこうやって、全職員、とにかく、検査は１回しかできないけれども、応援しましょうと。その代わり、札幌等でも民間のＰＣＲ検査は３千円でしたか、それでできるので、とにかく少しでも多くの方々に検査を受けていただくよう、ぜひお願いをしたいというような動機づけだと思っていますから、もちろん、一回こっきり、何回も何回もやれなんて、僕は言っていません。ですので、そういう面では、再度、考えを改めていただいて、ぜひ、取組ができるものであれば、取り組んでいただきたいなと。最初から難しいなんて言わないでください、がっくりきますから。\n　それで、次なんですが、今、ワクチンの話が出ましたので、新型コロナウイルスワクチン接種事業費についてお聞きしたいと思います。\n　４款１項２目、新型コロナウイルスワクチン接種事業費１４億３千５７７万８千円について伺います。\n　本件、事業の目的は、言うまでもなく、市民が待ち望んだワクチン接種であります。政府が本腰を入れての事業であり、全額、国費で賄われることは周知のとおりであり、速やかな接種が課題となります。\n　最初に、基本的な考え方を含め、接種に向け、市の役割について伺います。",
+    "text_length": 522,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        145
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-070",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンの接種は、新型コロナウイルスの感染拡大を防止し、市民の生命及び健康を守ることを目的としており、多くの方が接種を受けることで社会全体の発症や重症化のリスクを低減することが期待されるものであります。\n　こうした事業の実施に当たり、国の指示の下、都道府県の協力により、市町村が実施主体を担うものとされています。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        147
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-071",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "公明党は、いち早く党内に新型コロナウイルスワクチン接種対策本部を設置し、地方議員とも連携し、円滑な接種体制を支援することになっています。そういう意味では、旭川市が接種担当部門を設けたことは大いに評価したいし、我々も、市民の命、医療提供体制の負荷軽減、そして、社会経済活動の維持、活性化へ向け、スムーズに接種が行われるよう、今後とも積極的に提案をさせていただきたいなというふうに思います。\n　ここで、ワクチン接種チームの具体的な役割についてお聞きしたいと思います。",
+    "text_length": 231,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        149
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-072",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回、全国的に実施される新型コロナウイルスワクチン接種事業の実施に当たり、保健所新型コロナウイルス感染症対策担当内にワクチン接種チームを設置したところであります。主な役割としましては、市民への円滑な接種を進めるため、接種実施体制の構築、市民への周知や相談窓口の開設、接種券の配付及び接種の管理などの業務を担います。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        151
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-073",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほど塩尻議員から事業の内容等について質疑がされて、おおむね確認をさせていただきました。\n　今回の補正で示されている額は１４億３千５７７万８千円、今後、自治体で行う独自の事業展開によっては不足が生じる可能性もあり得ると。補填はあるのでしょうか。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        153
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-074",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の補助につきましては、国において各自治体の上限額が示されておりますことから、特に措置がない限りはその範囲内での執行を想定しております。\n　ただし、今後の接種状況によっては予算執行に影響が生じる可能性もありますが、その際にも、市民の接種に支障が生じないよう必要な財源の確保に努めてまいります。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        155
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-075",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　ワクチン、ドライアイス、針、シリンジ、これは注射器ですが、さらにワクチンの保存のためのディープフリーザーは、国で確保するとお聞きしています。\n　国は、優先的にファイザー社とワクチンの契約をいたしました。報道等でも随分出ています。同社のワクチン保存のためには、マイナス７５度Ｃプラスマイナス１５度Ｃのディープフリーザーが必要になりますが、市が確保できる台数はどの程度なのか、お聞かせください。",
+    "text_length": 204,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        157
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-076",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "接種するワクチンや、その保管に必要なドライアイス、また、接種に必要な針、シリンジについては、実際の接種に必要とされる数量を国が確保、供給するものとなっております。\n　また、ワクチンの保管のためのディープフリーザーにつきましても、国から配置されることになっており、マイナス７５度保存に対応できるディープフリーザーは、当初は全国で３千台で、本市は５台と見込んでおりましたが、これが、全国で１万台、うち、道内で４７９台が配置されるとの情報があり、まだ調整段階ではありますが、本市には２０台程度割り当てられる可能性も出てまいりました。",
+    "text_length": 263,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        159
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-077",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨日、ニュースを見ていますと、ある地方では、そこそこの大きな市で、ちょっと名前は忘れてしまいましたけれども、３台とか２台とかと言っていましたね。それから見たらかなりたくさんの台数が来ると。\n　接種場所は、医療機関や市町村設置会場とのことですが、医師会との協議は既に始めているとは思いますけれども、どの程度の医療機関を想定しているのか。また、密を防ぐことも大切な要件でありますことから、例えば、アリーナとか市体育館、また住民センターなど大型施設、さらには、高齢者が接種しやすいようにするために、地域ごとの会場も考慮しなくてはならないのではないかというふうにも思います。\n　具体的にワクチンチームが想定している会場と、その箇所数についてお聞きしたいと思います。\n　また、集まっていただくだけでなく、高齢者施設などへ直接出向いて接種する、いわゆる出前接種ですね。出前接種なども考えられると思いますが、いかがでしょうか。",
+    "text_length": 406,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        161
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-078",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンの接種会場につきましては、医療機関または市町村が設置する接種会場とされていますが、現在のところ、市内の医療機関で接種いただけるよう関係機関と協議しております。その協議の結果を踏まえて具体的な接種会場を設定していく予定ではありますが、円滑な接種に支障を生じないためには最低でも３０か所以上は確保したいと考えております。\n　また、御提案いただきました出前事業、すなわち訪問による接種につきましても、接種を受けたくても接種会場に行くことができない方々に対して有効な方法であると考えられますので、実施に向けて医師会と協議してまいります。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        163
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-079",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、対策監がおっしゃったのは、出前事業じゃなくて出前接種ですので、よろしくお願いします。\n　出前接種については、具体的に高齢者施設や訪問介護を要する障害者等について十分把握されている包括支援センターなどと綿密に連携を取りながら、ぜひ進めていただきたいなというふうに思います。\n　次に、ワクチン接種の順位と想定人数について伺います。\n　政府は、１番目に医療従事者、２番目に高齢者、３番目に基礎疾患を有する者及び高齢者施設等の従事者、４番目にそれ以外の希望する者から順次接種していくという方針を示されております。\n　本市の接種順位はそれぞれ何名と想定しているのか、また、その積算根拠についてもお示しください。",
+    "text_length": 302,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        165
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-080",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず最初に、先ほどの答弁で言い間違いがありました。出前事業ではなくて、出前接種ということで改めさせていただきます。申し訳ありません。\n　本市で想定する各順位における人数につきましては、まず、医療従事者が約１万人、高齢者が約１１万人、基礎疾患を有する方が約２万人、高齢者施設等の従事者が約５千人、その他の方は約１８万人と見込んでおり、現時点では本市全市民約３３万１千人を対象としております。\n　この人数のうち、高齢者数は住民基本台帳によるものですが、そのほかにつきましては、厚生労働省が示す手引に従い、医療従事者が人口の３％、基礎疾患を有する方が人口の６．３％、高齢者施設等の従事者が人口の１．５％として算定したものでございます。",
+    "text_length": 314,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        167
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-081",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "だんだん、だんだん、これからやっていくことによって、高齢者以外の方々の具体的な人数も、こういうアバウトなものではなくて、しっかり掌握していただければなというふうに思います。\n　接種順位の１番目で医療従事者、これは、医師等、救急隊員等も入るというふうに思いますが、これが約１万人だと。２番目に６５歳以上の高齢者が約１１万人、そして、３番目に基礎疾患のある方が約２万人、高齢者施設等従事者が約５千人、そのほかは１８万人とのことであります。\n　また、想定人数の中で、昨日だったかな、報道等を見ますと１６歳から接種というふうにも伺っているので、当市においても接種人数が今後減るということも予想されるのかなというふうに思います。\n　先ほどの高齢者施設での新規入所者と新規採用予定者に対するＰＣＲ検査費用補助では、ちょっと理事者に失礼な言い方をしたかもしれませんが、私は、最も感染リスクの高い介護施設の既存職員にも検査を本当にすべきだというふうに思うんですね。それを考えると、今、この話が出てきているので、２番目の高齢者の中に３番目となっている高齢者施設の職員も含めることはできないのかなというふうに思うんです。今、国でもそれは協議されているようでございますけれども、お世話する職員が入所者より遅いというのは、これはいかがなものかというふうに思います。もちろんワクチン接種を嫌がる人も当然いると思いますし、丁寧に説明を行って、施設利用者を守るため、一人でも多くの高齢者施設の職員等に接種すべきと考えます。\n　あわせて、国や道が順番を認めないとこだわるのであれば、地方の声として、直接、関係機関に届けるべきであります。私どもも応援させてもらいます。\n　市の見解を求めたいと思います。",
+    "text_length": 734,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        169
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-082",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチン接種の優先順位につきましては、国から示されているものでありますが、今現在も、様々な団体から接種順位の要望などがあり、国でも検討している状況であると把握しています。その中でも、高齢者施設等に従事する方についても国で検討中ということでありますので、今後の動向を注視してまいります。\n　また、基本的には国の指示の下で行っていくことになりますが、本市の状況に合わせて柔軟に実施できる方法を検討しながら積極的に取り組んでまいります。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        171
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-083",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ぜひぜひ、よろしくお願いします。\n　次に、基礎疾患とはどのような症状を言われるのか。疾患を有する人は約２万人と想定されておりますけど、どのように把握されたのか、根拠をお聞かせください。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        173
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-084",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基礎疾患を有する方につきましては、慢性の呼吸器の病気や慢性の心臓病、腎臓病、肝臓病など、厚生労働省が示す１３種類の疾患により入院や通院をしている方などが現段階で想定されております。また、基礎疾患を有する方の人数につきましては、厚生労働省が示す手引において人口の６．３％で算定し、現在のところ約２万人と推計しております。",
+    "text_length": 159,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        175
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-085",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これは、２万人は少ないかなというふうに思います。僕はメタボじゃありませんけれども、恐らく、かなり増えるんでないかなというふうに思います。\n　接種事業について、これは、旭川市だけでよいのかなというふうに思うんです。医療過疎自治体が近郊でも大変多いわけでございまして、その現状を考慮して、近郊を含めた広域で考えるべきだと考えますが、この点、いかがでしょうか。",
+    "text_length": 177,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        177
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-086",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチン接種については、原則として住民票のある市町村で接種することとなっておりますが、国からの通知によれば、複数市町村が連携して接種の実施体制を構築することも一定程度認められているところであり、今後、近隣の自治体や医療関係機関の意向も踏まえながら効果的な接種体制の構築に努めてまいります。",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        179
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-087",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次に、接種の流れについてお聞きしたいと思います。",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        181
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-088",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、２月下旬から接種予定であります医療従事者等につきましては、北海道や医師会などの医療団体が中心となり、接種人数や接種場所を調整して進めていくことになります。次に、高齢者については、３月をめどに対象者の御家庭に接種券を郵送します。接種券が届きましたら事前に予約をしていただき、接種券をお持ちいただいて、予約した場所で接種を受けていただく流れを予定しております。その後、接種順位に従い、順次、接種券を郵送し、接種していただく予定と考えております。",
+    "text_length": 223,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        183
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-089",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　現在、想定している作業スケジュールについてもお聞かせください。",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        185
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-090",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "接種の実施に向けまして、現在のところ、医療機関との調整や接種券の印刷、予約システムの構築、コールセンターの体制確保等の業務が必要であり、３月に予定しております高齢者への接種券郵送時期までにはこれらの体制の準備を完了する予定であります。",
+    "text_length": 117,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        187
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-091",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "菅総理は、遅くとも２月下旬には接種を始めたいと、こう力強く言われている。やれるかどうか分かりません。今、そんな状態でありますけれども、本市のスケジュールでは、２月下旬に医療従事者から始め、２回目の接種は３月中に終わらせると。高齢者は３月下旬から５月中に完了、基礎疾患のある人や老人施設等従事者は５月中旬に１回目の接種とのことですが、２回目はいつ完了する予定なのか、また、一般市民の接種はいつから始まるのか、想定さえされていないのではないでしょうか。\n　市民が一番期待しているワクチンですので、最大限、努力をしていただきながら、早期接種を望みたいと思いますが、いかがでしょうか。\n　また、早期接種の課題は何であるとお考えなのか、お聞かせください。",
+    "text_length": 322,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        189
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-092",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在のところ、国から具体的な説明がなく、変動する可能性はありますが、基礎疾患を有する方や高齢者施設等従事者の接種は６月中に終了できればと考えております。また、それ以外の一般市民の方は、その後になると思いますが、現在のところ、未定であります。\n　まずは高齢者を対象に接種の準備を進めておりますが、そうした中で、早期に接種していただくための最大の課題は、接種会場と予約システムをしっかりと構築し、接種に係る大きな流れをつくり出すことだと考えており、そのためには庁内の各部や関係機関としっかり連携協力していくことが重要であると考えています。",
+    "text_length": 267,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        191
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-093",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "もちろん、ワクチン接種チームだけでは到底でき得ないことだと思いますので、しっかり市長を中心にして、庁内、さらには関係機関との連携もよろしくお願いしたいなと思います。\n　現在供用できるワクチンは、ファイザー社、アストラゼネカ社、モデルナ社の３社ということですが、どの会社のワクチンが来るのか、複数なのか、接種回数は２回と聞いているし、保存温度も各社でまちまちでありますことから、冷凍庫や冷蔵庫の確保も課題になっている、これは先ほども触れました。\n　準備を進めていくに当たって、国や道との綿密な協議が必要になってくると思いますけれども、現在、どのように想定し、準備を進めておられるのか、お聞かせください。",
+    "text_length": 300,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        193
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-094",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策監（長谷川伸一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "初めに供給されるワクチンは、マイナス７５度での保存が必要となるファイザー社製が想定されています。このため、国から供給されるディープフリーザーを必要な医療機関に適切に配分することが必要になってまいります。\n　その後に供給されるワクチンを含め、保存、配送の体制を構築することになりますが、国や道、関係医療機関との連携を保ちながら、様々なケースをシミュレーションしながら適切な供給体制を確保してまいります。",
+    "text_length": 200,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        195
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-095",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "室井安雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "最後の質問になるかと思うんですが、接種をどう考えているのか、お聞きをしたいなと。\n　接種に当たっては、医師立会いの下、看護師とかお医者さんがされるわけですが、日常業務を含め、多忙であります。そのため、医師会と連携、協議し、接種集中期間を設けて全力で取り組む必要があるのではないかと考えます。\n　副作用があるのではないか等の課題は確かにありますけれども、目に見えないコロナとの闘いのある意味では最後のとりでであることは間違いないことから、漫然と事業をこなすのではなく、医師会にも最大限の御尽力をいただきながら、市民の命を守るため、クラスターをはじめ、感染を撲滅するという気概で臨むべきと考えますが、市長の本事業に対する決意を伺いたいと思います。",
+    "text_length": 321,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        197
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-096",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "市長（西川将人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルス感染症は、日本、さらに世界中で人々の暮らしや経済に深刻な影響を及ぼしており、その終息に向けて、今、一丸となって臨んでいるところであります。こうした状況の中、今回のワクチンの接種は、全国規模で接種を行うことによって感染拡大を広く抑え込もうとするものであり、新型コロナウイルス克服のための大きな一歩であると考えており、期待しております。\n　３月下旬から高齢者の接種が始まる予定でありますが、医師会や関係機関と一致協力しながら、周知活動、そして、円滑な接種に向けた対策に取り組む中で、雪解けを迎える春が接種促進の大切なスタート時期であると考えております。このため、４月を集中的に取り組む期間として、多くの方に接種をしていただけるように周知をしながら、最大限取り組んでいきたいと考えております。",
+    "text_length": 352,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        199
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-097",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "それでは、質疑を行わせていただきます。\n　私からは、第８次緊急対策についてと、補正予算に計上されています除雪の費用のことについて伺ってまいりたいと思います。\n　まず、新型コロナウイルス感染症に関する第８次緊急対策の医療・検査体制の強化について触れたいと思います。\n　高齢者施設新規入所者等のＰＣＲ検査費用の助成ということで、午前中にも質疑が行われておりますが、この部分について触れながら、これまでの対応、そして、これからの対応について伺っていきたいと思います。\n　まず、その前に、先週も新たなクラスターが発生している状況でもあります。\n　最初に、現在の市内の感染状況に対する認識を伺いたいと思います。",
+    "text_length": 300,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        203
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-098",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在の市内の感染状況につきましては、市中感染については抑えられている状況にありますが、今ございましたけれども、１月２０日には市内１０例目となりますクラスターが発生し、このクラスターにおいては、昨日発表分までで２５人の感染者が確認されているところでございます。また、旭川厚生病院につきましては、本日、終息と判断いたしたいと考えており、これにより現在継続しているクラスターは全部で３つとなります。\n　そのような中、現在の市内におけるコロナ病床の使用率は約１８％となっておりまして、大規模なクラスターが複数発生していた１２月には最大で７０％強となったことに鑑みますと、予断は許さないものの、数字的には余裕がある状態であるというふうな認識でございます。",
+    "text_length": 322,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        205
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-099",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "まず、現在の状況について伺いました。\n　それで、質疑に入っていきたいと思いますが、私たち日本共産党会派は、昨年１１月２７日、西川市長に、２０２１年度の予算要望の中でも、ＰＣＲ検査実施の重要性を訴えてまいりました。そして、その強化も求めてまいりました。今回の第８次緊急対策では、高齢者施設の新規入所者、そして、新規の採用職員のＰＣＲ検査への費用の助成が含まれています。私たちの提案を取り入れたということに対しては、評価をしたいというふうに思います。\n　今回、補正予算に計上された高齢者施設新規入所者等のＰＣＲ検査費用の補助を行う理由、目的について伺いたいと思います。\n　また、ＰＣＲ検査を実施する機会が増えることにつながるということになると思いますが、保健所ではどのように受け止めているのでしょうか、見解を伺いたいと思います。",
+    "text_length": 362,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        207
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-100",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高齢者施設新規入所者等のＰＣＲ検査費用の補助を行う理由、目的でございますが、高齢者は、新型コロナウイルス感染症に感染した場合に重症化するリスクが高い特性があり、特に、高齢者が入所する施設で感染症が発生した場合、多くの高齢者に感染が広がり、重症者が多く発生するおそれがあることから、施設へのウイルスの持込みを未然に防ぐため、高齢者入所施設に対して、新規入所予定者及び新規採用予定職員に対して実施するＰＣＲ検査費用の補助を行うことで、施設側でも安心して受け入れる体制を確保していただくことを目指したものでございます。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        209
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-101",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＰＣＲ検査についてでございます。\n　ＰＣＲ検査の実施につきましては、症状の有無を問わず、医療従事者や介護などのエッセンシャルワーカー等に対して実施することは望ましいものと考えておりまして、今後も、必要な検査を迅速に行うなどして、感染者や感染動向の把握に努めてまいりたいと考えているところでございます。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        211
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-102",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "高齢者の感染リスクは、この資料は昨年１０月の厚生労働省の資料になりますけれども、３０歳代の重症化率を１と考えたときに、７０歳代の重症化率は４７倍、８０歳代は７１倍というふうになっています。高齢になればリスクが高くなる状況にあります。入り口で抑えるということが本当に大事だと思いますし、その上で、定期的に検査を実施することが必要だと私たちは思っております。\n　午前の質疑で、西川市長は札幌のことについて触れられておりましたけれども、新聞報道によれば、半年間、月１回の割合で検査をされるということなんですね。ぜひ、旭川でも研究していただきたいというふうに申し添えておきます。\n　それで、市内医療機関では、大規模なクラスターが発生し、病床が逼迫する事態となりました。今回の対策は、クラスター発生の防止や医療への負担を軽くすることにつながり、意義のあることだというふうに思っております。\n　高齢者施設に入所する方は、様々な基礎疾患を持っている方が多いと思います。感染してしまうと重篤化するリスクが高くなります。高齢者施設でのＰＣＲ検査実施には、今は本人の同意が必要というふうになっております。要介護度が高く、利用者本人の意思の疎通が困難な場合、これはどういうふうに対応されるのでしょうか、見解を伺いたいと思います。",
+    "text_length": 553,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        213
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-103",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部保険制度担当部長（向井泰子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "利用者本人の意思確認につきましては、御本人の意思が確認できない場合は御家族と協議していただくことを想定しておりますが、今回の検査費用の補助事業につきましては、施設入所に際しての検査の実施を必須とするものではなく、あくまでも任意に実施された検査について補助を行うものであり、個々の対象者により判断していただきたいと考えております。",
+    "text_length": 164,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        215
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-104",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "今回の提案ですけれども、高齢者施設に対する補助ということであります。旭川では、北海道療育園でクラスターが発生した経過もあります。障害者施設への対応も必要と思いますが、今回の補正予算には含まれていないということなんですが、検討は行われたのでしょうか、伺いたいと思います。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        217
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-105",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部長（金澤匡貢）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "障害者施設への対応につきましては、昨年末に、入所系の６０施設に対しまして、今後のＰＣＲ検査の実施意向調査や、新規利用者等の状況調査を行うほか、国の第３次補正予算に伴う北海道の新型コロナウイルス感染症緊急包括支援事業における補助事業での実施の可否などを北海道に確認するなど、本市独自の障害者施設に対するＰＣＲ検査費用の助成について検討を行ってまいりました。\n　その結果、回答のあった２９施設のうち、今後、ＰＣＲ検査の実施を予定している施設が約２割の６施設でございまして、施設が自費でＰＣＲ検査を実施した場合、北海道の新型コロナウイルス感染症緊急包括支援事業の補助対象となること、また、このたび高齢者入所施設で補助対象とする新規入所者と新規採用職員が、障害者入所施設全体では、新規入所者が月平均３．６人、また、新規採用職員が同じく３．３人と少ないことから、補正予算の計上はしなかったところでございます。",
+    "text_length": 399,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        219
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-106",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "障害者施設に関わっては、調査を行ってこられたということは分かりました。入所系の６０施設に調査を行った結果、回答があったのが２９の施設、今後、ＰＣＲ検査実施予定が６施設ということでした。この結果を聞きまして、私は追跡する必要があるというふうに思いました。医療機関でクラスターが発生している状況です。障害者施設で感染しないという保証はどこにもありません。全国では、マスクが着けられなくて感染するという報道もありました。\n　ＰＣＲ検査実施について、検体採取に苦労が伴うので積極的になれないといった、そういう運営者の御苦労というか、困難が存在するのではないかと思います。もう少し踏み込んだ調査が必要と思いますが、見解を伺いたいと思います。",
+    "text_length": 315,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        221
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-107",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "福祉保険部長（金澤匡貢）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "障害者施設における感染拡大防止につきましては、利用者や従事者に対するＰＣＲ検査が有効な取組の一つであると認識しておりますので、ただいま議員から御指摘のあった追跡調査などによりまして、今後、施設の実態等をさらに細かく把握した上で、北海道の補助事業を有効に活用し、施設において必要なＰＣＲ検査が実施されるよう、本市としましても、制度の周知など、必要な支援を実施してまいります。\n　また、その際には、議員の御指摘のとおり、障害者の特性として検体採取に苦労が伴うことも想定されますことから、障害者にできるだけ負担が少ない唾液を使ったＰＣＲ検査の積極的な活用なども促していきたいというふうに考えております。さらに、昨年９月に本市が策定しました新型コロナウイルス感染症対策マニュアルを改めて周知しまして、引き続き、各施設において適切に感染予防対策が徹底されるよう取り組んでまいります。",
+    "text_length": 386,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        223
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-108",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "ぜひ、そういう行き渡った対策をしていただきたいというふうに重ねてお願いをしたいと思います。\n　旭川市は、この間のクラスター発生から、行政検査というものを数多く実施されてきたのではないかというふうに思います。私は、１０月３０日の第５回臨時会で、第６次緊急対策で質疑をさせていただきました。そのときに、約２万５千件の検査ができるようにするという答弁があったと記憶をしています。\n　１１月から感染者が急増し、濃厚接触者もかなり増えたと思います。これまで、どのくらいのＰＣＲ検査を実施されてきたのか、伺いたいと思います。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        225
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-109",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コロナに係る行政検査数でありますけれども、ＰＣＲ検査以外にも検査方法がございまして、抗原検査あるいはＬＡＭＰ法等がございますが、これら検査手法を全て含めまして、これまで２万７千件以上というふうになってございます。また、昨年の１１月と１２月の２か月間だけで見ますと、約１万８千件というふうになってございます。\n　陽性率につきましては、１１月は６．４％、１２月は４．１％となってございます。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        227
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-110",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "検査件数と併せて陽性率についても、今、答弁いただきました。１１月は６．４％、１２月は４．１％と、これは、陽性率が非常に低いというふうに受け止めていいのかなというふうに思っております。\n　それで、１１月から２か月間で約１万８千件の検査を実施したことが今述べられましたが、行政検査をたくさん行うことで得られた教訓などはあるのでしょうか。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        229
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-111",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "医療機関で大規模なクラスターが発生した場合においては、患者さんはもちろんのことでありますけれども、医療スタッフでありますとかその家族、清掃業者等の委託業者など、関係する人数が多数となり、さらには、病棟ごとにスクリーニング検査を行う場合もあるため、必然的に行政検査の件数も多くなりますが、この検査の実施によりまして、感染動向でありますとか感染状況を的確に把握することができますものですから、これに合わせた、適切で、かつ必要な対応を導き出すことができるものでございます。",
+    "text_length": 233,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        231
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-112",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "今述べられましたように、行政検査を多く実施することにより、感染動向や感染状況を的確に把握することで、状況に応じた必要な対応を導き出すことができるということでありました。\n　この間、旭川市は、独自の対策として、発熱外来を設置、発熱難民を出さないように対応してきたと思います。また、市民も、市の情報発信によって外出の自粛を行ってきたということでもあると思います。\n　先ほどの答弁で、陽性率は１１月６．４％、１２月４．１％ということでした。この数字は、同時期の札幌市の半分以下に抑えてきたことを裏づけする数字だと私は思います。みんなが気をつけてきたから、基幹病院の患者受入れの厳しさはあったものの、２つの大規模クラスター以外は市中感染も大きくならなかったのではないでしょうか。認識を伺いたいと思います。",
+    "text_length": 348,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        233
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-113",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これまで、医療機関の御協力をいただきながら発熱外来の整備をするなど、感染防止の取組を進めてまいりましたが、何よりも、市民や事業者の皆さんの御理解、そして御協力があったからこそ、市中感染が抑制されているものと認識しているところでございます。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        235
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-114",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "そういう対応が行われている中で、１月１４日の参議院内閣委員会で、日本共産党の田村智子議員の質疑に対して、西村担当大臣が、答弁の中で、唐突に旭川のことを取り上げ、悪い例と言い放ちました。西村大臣は、旭川の状況を、医療機関で院内感染が広がって医療体制が崩壊をしたような状況と表現をしました。新型コロナウイルスは、無症状の感染者を早期に発見し、保護することが決定的に重要ですが、安倍政権においても、また、菅政権になってからも、ＰＣＲ等の検査を抜本的に拡充し、積極的検査戦略を一貫して持ってはいません。その反省なく、旭川を悪い例として批判することは許されないと思います。\n　昨年の第１波から、医療機関や高齢者施設での感染が起きました。そのときから、私たち日本共産党は、ＰＣＲ検査の拡大強化を求めてまいりました。今年に入ってから本庶佑氏らノーベル医学・生理学賞の受賞者が声明を発表し、ＰＣＲ検査能力の大幅な拡充と無症候感染者の隔離を強化することを提言しております。こうした提言に、政府は真摯に向き合わなければならないと思います。\n　西村大臣が医療体制が崩壊をしたような状況と表現をしましたが、旭川市内で医療崩壊が起きたとする判断基準はあるのでしょうか。逼迫したが、崩壊させずに頑張ってきたのではないでしょうか。市は、医療崩壊が起きたという認識なのでしょうか。医療機関クラスター対応について、旭川は、国や道のガイドラインとは違う対応を行ってきたのでしょうか。無症状者が一たびウイルスを持ち込めば広がってしまうこと、そのため、繰り返しＰＣＲ検査が必要と私たちは求めてまいりました。こうしたことは、どこでも起き得る重要な教訓として、今後の対策に生かすべきではないでしょうか、見解を伺いたいと思います。",
+    "text_length": 742,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        237
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-115",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健所新型コロナウイルス感染症対策担当部長（浅利豪）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "医療崩壊が起こったとする明確な判断基準というものは持ち合わせてございませんが、このたびの医療機関における大規模なクラスターの発生が続出した中においても、他の基幹病院をはじめ、医師会や発熱外来に対する医療機関の御協力もありまして、コロナ以外の重症疾患患者を受入れすることができなかったという報告は受けていないことから、本市の医療提供体制が成り立たなくなるという観点においては、医療崩壊は起こっていないものと認識しているところでございます。\n　また、国からは、災害派遣医療チームや地域健康危機管理対策専門官、国立感染症研究所や北海道からも専門家などの派遣をいただくとともに、市内の医療機関からも、医師や感染管理認定看護師などの派遣をいただき、様々な御意見やアドバイス、あるいはスキームづくりに御協力をいただきながらクラスターの対応に取り組んできたところでありまして、今後におきましても、これらの経験値を生かして感染拡大への対応を行ってまいりたいと考えてございます。\n　クラスターについては、いつ、どこで発生するかという部分については、どこも可能性があるものというふうな認識をしておりまして、今後におきましても、医療機関でありますとか福祉施設などを中心に注意喚起を行うとともに、感染者が発生した場合は、濃厚接触者や幅広な人々も含めて必要な検査を行ってまいります。",
+    "text_length": 578,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        239
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-116",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "西村大臣の答弁、これは、旭川市にとっても、新型コロナウイルス感染症に対して全力を挙げている地方自治体にとっても、適切な表現ではなかったと思います。勝負の３週間をもってしても感染拡大に歯止めをかけることができなかった大きな理由は、政府の後手後手の対応、小出しの対策にあったのではないでしょうか。\n　西川市長に伺いたいと思います。\n　これまでも、新型コロナウイルス感染症の感染拡大に市民の命や暮らしを守り抜くと答弁をされてきました。対策については、国や道と話合いを持ちながら担当部局に必要な指示をしてきたんだというふうに思います。一旦落ち着いたかのように見えた旭川の状況ですが、新たなクラスターの発生とそれに伴う病床の逼迫が起こり得る可能性があります。\n　そうしたときにどういう対策を取っていくのか、この間の教訓と今後の対策について伺いたいと思います。",
+    "text_length": 374,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        241
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-117",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "市長（西川将人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の対策とこれまでの教訓についてということでのお尋ねでありますけれども、まずは、市民の皆さんお一人お一人がコロナ禍であるということをこれまで同様に自覚していただいて、市民全体で日頃の手指消毒ですとかマスクの着用、また、３つの密を避けるなど、これまでも行っていただいております、いわゆる新しい生活様式、新北海道スタイルを引き続き実践していただくことが重要であると考えております。また、このことが市中感染やクラスターの発生を抑止する最も有効な手法であるとも考えております。\n　加えて、病院や施設などにおいては、感染対策のために、職員などの健康観察、これを十分行うとともに、患者などの来院者に対して適切な対応を行うことで、院内、施設内で感染を発生させない、感染を持ち込まないということを徹底していく必要があるものと考えております。\n　本市において、昨年１１月、１２月と２か月間、相次ぐ大規模なクラスターの発生と感染拡大により、全国的にも注目される中、国、北海道をはじめ、様々な機関から応援をいただきながら、市保健所を中心として、その収束に向けて様々な対応を全力で行ってきたところでありましたが、何よりも市民の皆さんの節度を持った行動によって、クラスターの発生と市中感染の拡大が同時に起こるという事態にならずに、何とかこの危機を乗り越えることができたと考えているところであります。\n　また、今回の本市におけるクラスターによる感染拡大の経験から、本市の医療提供体制の維持は大変重要であるということを改めて認識したところであります。医療従事者の懸命な努力によってクラスターが抑えられたものと考えておりまして、皆さんには本当に感謝をしなければいけないと思っております。\n　さらに、市立旭川病院におきましては、今回、感染症指定医療機関という大きな役割を担いながら、コロナ発生当初から患者の積極的な受入れを行い、また、発熱外来を設置するなど、市民のためにコロナ対応を率先して実施してまいりました。この間、公立病院としての使命を果たし、地域医療を懸命に支え続けてきております。\n　いずれにしましても、今回の経験と教訓をしっかりと次に生かすことができるように、引き続き、市民の命を守り抜く強い意志を持って、私自身も最大限努力をして、そしてまた、市民の皆さんの御協力をいただきながら、今後も市役所が一致団結して感染拡大対策に全力で取り組んでいきたいと考えております。",
+    "text_length": 1022,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        243
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-118",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "市長からの答弁をいただきましたので、この項目については終わりまして、補正予算に計上されています除雪費について伺っていきたいと思います。\n　今回、２億９千万円の補正予算が提案をされております。今回の補正予算はどういう目的に使われるのか、お示しをいただきたいと思います。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        245
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-119",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "土木部長（太田誠二）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の除雪費に関わります補正予算についてでございますけれども、本年度につきましては、１２月中旬から下旬にかけてまとまった降雪がございました。そのため、排雪量が当初見込みよりも大きく上回ったことから、今後、降雪量が平年並みになった場合におきましても２月中旬までの排雪作業で予算不足となることが判明したことから、市民生活及び経済活動に影響を与えないよう良好な道路環境を維持するため、今後予定されている幹線道路や生活幹線道路及び生活道路における連続した排雪作業が可能となるよう、必要な費用を補正しようとするものであります。",
+    "text_length": 258,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        247
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-120",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "今、答弁をいただきましたように、今年度は、昨年の１２月からまとまった降雪があったということでした。それを受けてというか、私たち会派としては、昨年１２月２５日に除排雪対応に関する緊急要請書というのを提出させていただいた経過もあります。昨年度に比較すると、非常に降雪が多い状況であるということが分かります。\n　改めてになりますが、今シーズンの降雪の状況や排雪についての特徴について伺いたいと思います。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        249
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-121",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "土木部長（太田誠二）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今シーズンは、平年に比べ、初雪が遅く、１２月上旬までは降雪量も積雪深も平年を下回ってございました。しかし、その後、１２月１２日から２６日までの１５日間で平年を大きく上回る１３２センチもの降雪があったことから、路面の圧雪厚が厚くなり、道路脇の雪山も大きくなるなど、道路状況が一変したところでございます。現在は、降雪量、積雪深とも平年並みより少し多いといった程度となっておりますけれども、昨年末に低温傾向の中で降雪が続いたことにより、排雪量が増加するほか、圧雪路面が形成されづらい状況となりまして、１月中旬の暖気により、市内一円でざくざく路面が発生したことなどが今シーズンの特徴と捉えております。\n　また、排雪につきましては、年末にかけて、交通量の多い幹線道路や生活幹線道路を中心に１回目の排雪作業を実施しましたが、降雪が重なったことから、急遽、除雪作業に切り替えるなどしたため、一部作業に遅れが生じた部分もありました。そのため、例年より早い年明けの４日からは、幹線道路の２回目の排雪や、始業式に合わせた通学路排雪を始めております。現在は、生活道路の排雪作業を実施してございますけれども、排雪量が多いほか、ざくざく路面の解消作業なども重なったことなどから、排雪作業計画の見通しが難しい状況にはございますけれども、２月上旬をめどに完了させる予定でございます。",
+    "text_length": 576,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        251
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-122",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "今シーズンは、排雪について、随分と多くの方から要望をいただきました。雪が降るのは自然現象だから仕方ない、降った後の排雪をしっかりやってほしいという声があったり、生活道路の排雪はいつになったら来るんだろうという声が多いのが特徴かなと思います。\n　そこで、排雪に対して、幾つかの視点で伺っていきたいと思います。\n　まず、雪堆積場の状況はどのようになっているのでしょうか。２月から市内中心部において雪堆積場が試行運用される予定ですが、この場所で雪堆積場の本格運用が開始されると、排雪作業がスムーズに行えるなどの効果は期待できるんでしょうか。",
+    "text_length": 267,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        253
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-123",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "土木部長（太田誠二）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今年度の雪堆積場の確保量につきましては、６３か所で７５９万立方メートルとなってございます。１月１７日時点での搬入状況につきましては、市道の排雪で約１４６万立方メートル、国道、道道の排雪で約１９万立方メートル、民間の排雪で約１０５万立方メートル、合わせますと約２７０万立方メートルとなってございまして、計画量に対する搬入率を申し上げますと約３６％程度となっているところであります。\n　また、市内中心部での雪堆積場の試行運用ということでございますが、日本製紙株式会社旭川工場敷地内の雪堆積場につきましては、先日、試行運用に係る契約を締結し、２月上旬をめどに、１週間程度、実際に排雪作業で発生した雪を搬入し、騒音など周辺地域に与える影響などについて検証する予定でございます。本格運用につきましては、今回の試行運用の結果を踏まえ、地域住民の皆様の合意が得られれば、改めて日本製紙側と最終協議を行い、令和３年１２月からの供用開始を目指しているところでございます。\n　こうした市内中心部における貴重な雪堆積場につきましては、中央・新旭川地区及び永山地区における安定した雪堆積場の確保につながるだけでなく、排雪作業の効率化によるダンプ台数の軽減が図られるなど、雪堆積場周辺の冬季道路環境の向上などにもつながっていくものと期待しているところでございます。",
+    "text_length": 569,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        255
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-124",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "今、示された数字なんですけど、雪堆積場は総量で７５９万立方メートルを用意されていて、現時点では約２７０万立方メートル、計画量に対して約３６％の搬入率ということでした。市道で言えば１４６万立方メートルということを数字で示していただきましたが、この状況は、平年や前年と比較するとどういう状況と考えているんでしょうか。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        257
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-125",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "土木部長（太田誠二）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "堆積場への搬入量は、雪の降り始め時期により大きく異なるところでございますが、昨年は少雪であったため、その前年の平成３０年度の率で申し上げますと大体２７％、過去５年の平均で申し上げますと２９％となってございますので、本年度の３６％と比較しますと、本年度はやや多いといった状況になっております。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        259
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-126",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "過去５年間の平均よりも多くの雪が搬入されているということですから、やっぱり今年は雪が多いんだなということが分かります。\n　さっきも述べましたが、昨年１２月２５日には、赤岡副市長にも出席をいただいた上で、意見交換、状況説明をしていただきました。排雪については、幹線道路と主要生活道路の排雪の実施割合、進捗率といいますか、具体的に示していただいた経過もあります。\n　年末までに除排雪作業はかなり進んだのではないかというふうに思いますが、あれから１か月が経過をしたわけです。現在はどのような状況なのか、道道、そして国道についても併せて状況を伺いたいと思います。",
+    "text_length": 277,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        261
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-127",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "土木部長（太田誠二）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市道排雪の進捗状況につきましては、年明けからの幹線道路の２回目と通学路排雪に引き続き、生活幹線やゾーンの排雪を進めており、少し作業に遅れが生じておりますが、作業の進捗率といたしまして、１月１７日時点で、幹線道路が当初設計排雪量に対して約７０％、生活幹線道路及び生活道路が約６１％となっております。\n　また、国道、道道の排雪の進捗状況につきましては、現在２回目の排雪作業を進めており、１月１７日時点で、国道では４割、道道は２割の作業を完了していると伺っているところでございます。",
+    "text_length": 238,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        263
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-128",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "一昨年だったかなと思いますが、排雪がなかなか進まない状況があったかなと思います。あのときには、ダンプの数量が足りないということも遅れた要因の一つと記憶をしています。\n　今年度は、幹線道路が約７０％、生活幹線道路、生活道路が当初設計排雪量に対して６１％ということが述べられました。生活幹線道路、生活道路が若干遅れているのかなというふうにも受け止めます。この数字をどう見ているのか、見解を伺いたいというふうに思います。\n　私たちも、会派の中で地域ごとの状況を話し合います。その中で、地域のセンターによって対応にばらつきがあるんじゃないかというような話も出てくるんですね。その辺については、どのように考えているんでしょうか。",
+    "text_length": 309,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        265
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-129",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "土木部長（太田誠二）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今年度の排雪作業の進捗率につきましては、排雪量が多くなったことに加えまして、途中、暖気によりますざくざく路面の改修作業などにより、遅れぎみになっているところでございます。生活道路の進捗率６１％を同時期の過去の実績と比較しますと、昨年度は少雪のため比較対象になりませんけれども、平成３０年度では５０％、平成２９年度は７１％となってございますので、その年の雪の降り方にも影響されるため、単純に比較するといったことは難しいところでございますけれども、例年と比べ、大きな違いや遅れといったものはないというふうに捉えております。\n　しかし、暖気によるざくざく路面の解消など緊急対応といったものにつきましては、その度合いにもよりますが、現状では、除雪企業に余力が少なくなっておりますので、機動力が低下するなど速やかな対応が難しくなってきていることが課題であるというふうには認識してございます。\n　また、こうした各地区の除雪企業の機動力の違いによるもののほか、地区ごとの降雪量や道路幅員などの地域の特性、さらには、近郊の雪堆積場の有無による排雪効率の差異など、様々な要因が重なり、地区ごとの進捗状況に多少のばらつきが生じているものと認識しているところでございます。",
+    "text_length": 525,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        267
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-130",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "ちょっと遅れぎみだというふうなことでありましたけど、その遅れに対する対応としては、この間、対応の仕方を検討してきたんじゃないかなと思うんですね。各地域の状況を把握して、遅れが生じているところに支援をするという取組があったと思います。\n　今シーズンは、そうした状況に当てはまらないのでしょうか。どういった場合に、あの枠組みというのは活用されるのか、そこについて伺いたいと思います。",
+    "text_length": 189,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        269
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-131",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "土木部長（太田誠二）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地区をまたいだ応援についてでございますけれども、地区をまたいだ応援につきましては、地区内の除排雪作業に著しく遅れを生じ、または生じることが見込まれ、当該地区の受託者の責任において作業の遅れを解消することが困難な場合に、応援を受けようとする地区の受託者からの要請、または委託者の判断により実施すると仕様書において規定しております。例えば、年末までの幹線道路の排雪や、２月上旬までの生活道路排雪などについて、進捗状況を勘案しながら運用しているといったところでございます。\n　今シーズンは、３地区の試行的統合によりまして厳密には地区をまたいだ応援には該当しませんが、統合地区内において従前の地区をまたいだ応援作業を実施したところでございます。今後におきましても、各地区の作業状況を把握しながら、できる限り地区ごとのばらつきが少ない排雪作業の実施に努めてまいりたいと考えております。",
+    "text_length": 387,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        271
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-132",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "次に、生活道路の対応について伺いたいと思います。\n　現在、３０センチになったら排雪が行われる圧雪管理になっていると思いますが、生活道路では、今、もっと高い状態、いわゆる馬の背状態となって、市民の方から早く解消してほしいという要望も寄せられます。\n　こうした馬の背になった道路の対処方法について、原則どおり行われていれば、暖気が入ったとしてもざくざく状態の解消はできるのではないかというふうに思います。ここについての見解を伺いたいと思います。",
+    "text_length": 220,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        273
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-133",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "土木部長（太田誠二）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "圧雪管理につきましては、まとまった降雪や季節外れの降雨があっても速やかな対応ができるよう、平成２６年度から、生活道路における圧雪管理基準を現在の３０センチに変更したところでございます。\n　しかし、今年度は、１２月中旬からまとまった降雪があり、特に朝方や日中に降ることが多かったため、路面に積もった雪が除雪される前に走行車両によって道路中央部で踏み固められ、一気に圧雪されることで想定よりも路面の厚さが厚くなり、いわゆる馬の背の状況が多く発生したものと捉えてございます。こうした状況に対応するため、現在、雪割り除雪において圧雪路面を削り取る作業を実施してございますけれども、作業の進捗によってはその解消が２月上旬になるエリアもございますので、その間、御不便をおかけしていることも認識しているところでございます。\n　圧雪管理は、作業の効率性と経費の両面から採用している手法ですが、一方で、議員の御指摘のとおり、急な暖気によりざくざく路面が発生することは圧雪管理の弱点といったことでもございますので、より効率的な路面管理の手法につきましては引き続き検討してまいります。",
+    "text_length": 481,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        275
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-134",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "まじま隆英議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "まじま 隆英",
+    "member_faction": "日本共産党",
+    "text": "今、圧雪管理の弱点というのも述べられました。様々な課題があると思います。毎年毎年、雪が降る状況が違う中でも、結果を求められていますので、市民の安心、安全を目指して取り組んでいただきたいと思います。\n　除排雪は、雪対策基本計画に基づいて行われていると思います。雪対策基本計画については、令和２年度は評価、検証を行う中間年ということでした。圧雪管理の弱点も見直しの中に含まれていると思いますが、見直しに向けた作業の進捗状況と現状の課題認識について伺って、私の質疑を終わりたいと思います。",
+    "text_length": 241,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        277
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-135",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "土木部長（太田誠二）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市では、これまで、旭川市雪対策基本計画に基づき、様々な施策を展開してまいりましたが、計画期間の折り返しを迎え、昨年度は基本計画の評価、検証を行い、今年度はアクションプログラムの見直しを行ってまいりました。\n　その結果、雪対策に関する市民ニーズが多様化していく中、近年における担い手不足などによる除雪業者の状況ですとか、あと、局地的な大雪、あるいは、今年もございましたが、厳寒期における暖気などの気候変動なども含め、本市の雪対策を取り巻く情勢は大きく変化しているといったことも踏まえまして、基本計画自体の中間見直しが必要と判断したところでございます。\n　そのため、令和２年第３回定例会におきまして旭川市雪対策審議会条例を制定し、これに基づき、昨年１２月に第１回の審議会を開催、雪対策基本計画の中間見直しに向けた議論を開始したところでございます。\n　今後は、除排雪に関わる現状と課題、市民、企業、行政に求められる役割や責務などを整理し、各種施策の在り方について議論を進めていくことになりますが、その中では、ざくざく路面の解消も含め、路面管理手法の在り方も一つの議題になっていくものと考えてございます。\n　また一方で、今年度からは、地域住民の協力による住宅前道路除雪の本格実施に加え、地区統合やＧＰＳ導入、市内中心部における雪堆積場の確保など、除排雪体制の強化に向けた試行的取組も行ってございます。こうした取組をより実効性の高いものとするためにも、しっかりとした検証を行いながら検討を進め、計画に反映させていく必要があると考えてもございます。\n　いずれにいたしましても、雪対策事業は、市民生活や経済活動に大きな影響を与えるものでございますので、基本計画の見直しに当たりましては、市民の声をしっかり受け止め、将来的に安定した除雪体制の確保と、市民が安心して生活できる道路環境の確保につながる本市に適した計画となるよう、見直し作業を進めてまいります。",
+    "text_length": 821,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        279
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-136",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "ひぐまとしお議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、早速、通告に従いまして、質疑を始めてまいります。\n　私からは、１項目となります。７款１項１目の中小企業振興資金融資事業費についてでございます。\n　今回の補正予算の中の中小企業振興資金融資事業費について、この追加支援の概要を伺います。\n　また、申請事業者の件数等々、追加支援に至った経緯をお聞かせください。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        282
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-137",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "経済部長（品田幸利）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和２年第３回定例会にて議決をいただきました旭川市中小企業振興資金融資制度における緊急対策資金の災害・景気対策融資について、新型コロナウイルス感染症の影響が長引いており、新規融資の申込額が１１月、１２月と伸びてきておりますことから、当該資金に係る新規融資枠を拡大することに伴う補助金及び貸付金を補正しようとするものでございます。\n　内容につきましては、新規融資枠２２億８千８００万円を３０億５千５０万円に拡大することに伴いまして、事業者への補助金２千２５６万５千円及び金融機関の預託に係る貸付金５億８３３万円の合計５億３千８９万５千円を補正し、あわせまして、利子補給金に係る債務負担行為につきましても、限度額を８千２３６万８千円から１億９８１万８千円へ変更しようとするものでございます。\n　また、新規申込みの実績につきましては、令和２年１２月末時点で１１７件、１９億５千５０万円の申込みがございまして、新規融資枠の８５．２％を執行したというところでございます。",
+    "text_length": 430,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        284
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-138",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "ひぐまとしお議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、本市の今の経済状況をどのように認識しているのか、伺います。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        286
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-139",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "経済部長（品田幸利）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市の経済状況についてでございますが、日本銀行旭川事務所が１２月１４日に公表した金融経済概況におきましては、道北地域の景気は、新型コロナウイルス感染症の影響から引き続き厳しい状態にあり、足元では持ち直しのペースが鈍化していると、景気の基調判断を下方修正したところでございます。\n　また、旭川商工会議所の早期景気観測調査におきましても、業況や売上げなどについて、景気の下向き傾向を表す企業の回答割合が依然として多く、加えまして、ゴー・トゥー・トラベルやゴー・トゥー・イートが一時停止されたほか、国の緊急事態宣言の発令や、北海道が新型コロナウイルスの集中対策期間を２月１５日まで延長したことなどから、観光や飲食、また、これに関連する業種では大変厳しい状況にあるものと認識しております。",
+    "text_length": 340,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        288
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-140",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "ひぐまとしお議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大変厳しい状況にあるということです。\n　経済対策として、今回、この補正予算ではこの１本だけでした。この１本だけとなった理由を伺います。\n　また、果たしてこれで十分なのか、見解を伺います。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        290
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-141",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "経済部長（品田幸利）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨年１１月に市内で大規模クラスターが発生したことに伴い、昨年１２月の第６回臨時会におきまして、特に大きな影響を受けている飲食店に対して、緊急的に１店舗当たり２０万円の応援金を支給する事業の議決をいただき、実施しているところでございます。その後も、市内の事業者への影響を調べるため、旭川商工会議所やあさひかわ商工会、業界団体等と意見交換を行うとともに、国や道の施策等も参考にしながら事業の構築を検討してきたところでございますが、今回は、事業の提案までには至らず、融資制度のみの提案となったものでございます。\n　本市経済は、新型コロナウイルス感染症の影響から、引き続き厳しい状況にありますことから、疲弊した地域経済の活性化を図るためにも、さらなる経済対策を行う必要があるものと認識しております。",
+    "text_length": 345,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        292
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-142",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "ひぐまとしお議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この融資枠の拡大で本市の経済状況に与える効果というものをどのように捉えているのか、伺います。",
+    "text_length": 46,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        294
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-143",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "経済部長（品田幸利）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本事業につきましては、新型コロナウイルス感染症の拡大により、経営に影響を受けた事業者の資金繰りを支援するため、国による融資制度では、信用保証料の全額補助や、当初３年間の利子補給に該当しない場合におきまして、本市独自に補助金の交付を行うことにより、中小・小規模事業者の事業継続を支援するという制度でございまして、これまで３回、新規融資枠を拡充してきたところでございます。\n　融資の効果でございますが、新型コロナウイルス感染症の感染拡大の影響が長引いておりますことから、本事業の活用により、中小・小規模事業者が資金に窮することなく、事業を継続し、経営の安定化を図ることで、本市経済活動が回復に向かう一助になるものと考えているところでございます。",
+    "text_length": 320,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        296
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-144",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "ひぐまとしお議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この中小規模の事業者への切れ目をつくらない支援ということで、反対するものではなくて、評価をしたいというふうに思っております。\n　でも、今回の補正予算では、この１件ということもあって、ちょっと物足りないといった印象を持っているのが本音のところなんです。\n　先日、政府から飲食店に関連する事業者への支援といったことが報道でありましたが、そのような国からの支援というのは入るのか、また、把握しているのか、伺います。",
+    "text_length": 204,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        298
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-145",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "経済部長（品田幸利）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報道や国のホームページによりますと、コロナ禍に伴う緊急事態宣言を受けまして、国は、時短要請に応じた飲食店と直接、また間接の取引がある全国の中小企業や個人事業主に対して、売上高の減少などを条件に最大４０万円を支給する方針とのことでございます。支援内容等の詳細につきましては、関係機関に問合せをしておりますが、現時点では把握できていないところでありますので、今後とも、国の動向を注視し、情報収集に努めてまいりたいと考えております。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        300
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-146",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "ひぐまとしお議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現時点ではまだはっきりと決まっていないということですが、前回の補正予算では、飲食店に緊急応援支援金がありました。非常に助かったという声も多く聞いております。高評価を得ております。\n　そのときの質疑でも触れたんですが、飲食店だけではなくて、関連する事業者も依然厳しい状況であるのは、答弁もいただきまして、共通認識であります。関連事業者への支援も必要というふうに考えております。今回も入っていませんが、今後のことを含めた本市の考えを伺いたいと思います。",
+    "text_length": 224,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        302
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-147",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "経済部長（品田幸利）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市内の業界等へのヒアリング調査などを通じて、飲食店だけではなく、関連する事業者につきましても大変厳しい状況であると認識してございます。\n　本市では、これまで、旭川市休業等協力支援金や、タクＤＥとれ～る、呑んでＬＯＶＥあさひかわなどにより飲食店支援を行い、また、しあわせの地酒やあさひかうＰＲＯＪＥＣＴなどを通じまして飲食店などの関連産業支援を行ってまいりましたが、今後につきましても、新型コロナウイルス感染症拡大による影響を直接受けている事業者や関連する事業者の支援につきまして、早急に効果的な対策を検討してまいります。",
+    "text_length": 260,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        304
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-148",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "ひぐまとしお議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "飲食店などに関連する事業者への支援でございますけれども、影響を直接受けている事業者や関連する事業者へ早急に効果的な対策を検討していくというお答えをいただきました。次につながっていくのではないかというふうに期待をしております。\n　一つ懸念がありまして、最近、デフレの傾向が強くなってきているのかなというふうに感じております。海産物であったり、ちょっと高級な牛肉とかであったり、価格が非常に下落してきている、投売り状態で売っているということをよく見ます。消費者にとってはすごくありがたくて、うれしいことなんですけども、実際のところ、生産者であったり、流通関係、市場業者、販売店などが適正な価格で売れていないということは非常に大きな影響がありまして、もちろんそういうデフレが続いていくと、普通の食材とかの消費もやっぱり鈍ってくるんですね。そうなると、やはり、必然的に失業者がどんどん増えていって、また消費が落ちていくといった、デフレスパイラルというような状況になっていきます。\n　なぜかというと、もう、要は年末年始の飲食店の宴会がなくなってきたからということなんです。前回のように給付金とか支援金とかが入ればすごく即効性があって効果的なんですけれども、根本的な問題解決にはなっていかないというところなんです。やはり、売上げがあって、物が売れてこそ、仕入れがあって、関係業者に波及していくのであります。何とか売れる方策というものが必要なのかなというふうに考えているところなんですけれども、やはり、飲食店だと、もう人が来るというのは今は厳しい状態です。最近、本市でも感染者は少なくなってはきていますが、やはり、まちを見ると、本当に人は出ていないですね。どうするかというと、もうテークアウトしかないのかなというふうにずっと自分は考えております。テークアウトを何とか市のほうで支援していただけないかというふうに一つ提案をしておきます。\n　各お店では、ばらばらなんですけれども、ＳＮＳに上げたりとかいろいろしていますが、やはり苦戦をしているんです。どうにか、うまく大きくまとめて、例えばフリーペーパーとかでエリアごとに広告を載せるとかですね。テークアウト自体は、決して需要がないわけではないんですね。うちの近所のお弁当屋さんなんかは、電話でつくり置き注文をしたら４０分待ちとか言われるぐらい、非常にテークアウトは需要があるんです。ですから、何とか市のほうで主導していただいて、フリーペーパーで特集を組んでいただけるとか、そういった支援をしていただけるとすごくありがたいなというふうに一つ提案をしておきます。\n　いずれにしても、効果的な対策というのを、昨年、いろんな事業をやって、いい点、反省点があると思いますので、それを踏まえて、今後の状況に合わせて経済対策をしっかりと取っていっていただきたいと申し上げて、質疑を終わります。\n　ありがとうございます。",
+    "text_length": 1218,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        306
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-149",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "総務部長（野﨑幸宏）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告第１号、専決処分の報告につきまして御説明を申し上げます。\n　本件は、いずれも庁用自動車によります交通事故に関わる損害賠償の額を定めたものでございます。\n　整理番号１につきましては、昨年１０月２３日、市内忠和６条１丁目におきまして、庁用の軽自動車が相手方の車両に接触し、損害を与えたもので、その損害賠償の額を４万７千５６０円と定め、１２月２４日に専決処分をさせていただいたものであります。\n　整理番号２につきましては、昨年１１月１３日、市内７条通１０丁目におきまして、庁用の小型乗用車が相手方の車両に接触し、損害を与えたもので、その損害賠償の額を７万９千４５３円と定め、また、整理番号３につきましては、昨年１２月９日、市内花咲町６丁目において、庁用の乗合自動車が相手方の車両に接触し、損害を与えたもので、その損害賠償の額を１２万５千４００円と定め、いずれも１２月２８日に専決処分をさせていただいたものであります。\n　以上、地方自治法第１８０条第２項の規定により、御報告を申し上げるものであります。\n　よろしくお願い申し上げます。",
+    "text_length": 465,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        312
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-240-2-150",
+    "municipality": "asahikawa",
+    "council_id": 240,
+    "council_name": "令和３年 第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "品田ときえ議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "品田 ときえ",
+    "member_faction": "民主・市民連合",
+    "text": "（登壇）　民生常任委員会に付託を受けておりました請願・陳情議案につきまして、結論を得ましたので、御報告申し上げます。\n　陳情第８号、生活保護における収入認定等に関することについて、陳情内容は理解できる部分もありますが、国の通知によって被保護世帯の自立更生に充てられる額は収入認定しないことが認められていること、また、最低限度の生活の保障と自立の助長を図るという生活保護制度の趣旨に鑑みると、生活保護費の返還金額の算定から控除する範囲については最低限の部分に限定すべきものであることから、願意に沿いがたく、不採択とすべきものと決定いたしました。\n　以上で、審査結果の報告を終わらせていただきます。（降壇）",
+    "text_length": 301,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        316
+      ]
+    }
+  }
+]

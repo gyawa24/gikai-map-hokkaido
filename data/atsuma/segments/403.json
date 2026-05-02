@@ -1,0 +1,347 @@
+[
+  {
+    "id": "atsuma-403-1-001",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和６年第８回厚真町議会臨時会にあたり、１０月２３日の大雨による新町のぞみ団地の被害についてご報告申し上げます。\n　１０月２３日午前２時から午後１０時までの雨量は７５.５ミリに達し、特に午後２時から午後３時までの１時間で１６.５ミリと短時間で集中的な大雨となりました。\n　この大雨により、新町のぞみ団地Ｃ・Ｄ・Ｅ棟１１戸のうち１０戸において、住宅基礎のすき間等から雨水が床下ピットへ侵入する事案が発生しました。直ちに被害調査を行うとともに、水抜き作業を開始し、１０月２５日に作業が完了したところです。\n　入居者の皆さまには、８月２７日の大雨に続き、度重なる雨水の侵入被害によりご迷惑をおかけしたこと、心からお詫び申し上げます。\n　今後の対策として、新町のぞみ団地全戸の床下ピット内において、雨水・地下水の侵入を防ぐため、止水性の高い止水材を基礎壁と基礎土間の打ち継ぎ部分に塗布し、住宅基礎への雨水・地下水の侵入対策を講じたところであります。\n　以上ご報告申し上げます。",
+    "text_length": 434,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-002",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案１件、承認２件であります。\n　議案第１号　令和６年度厚真町一般会計補正予算（第１２号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ６５，２３０千円を追加し、歳入歳出予算の総額を歳入歳出それぞれ１１，８４６，４９８千円とするものであります。\n　歳出における補正の内容は、災害復旧費で、農業施設等災害復旧事業を追加するものであります。\n　この補正の財源として、一般財源の繰越金を見積り収支のバランスをとったところであります。\n　承認第１号　専決処分の承認について。\n　令和６年度厚真町一般会計補正予算（第１０号）について、地方自治法の規定により専決処分しましたので、同法の規定により、議会の承認をいただこうとするものであります。\n　承認第２号　専決処分の承認について。\n　令和６年度厚真町一般会計補正予算（第１１号）について、地方自治法の規定により専決処分したので、同法の規定により、議会の承認をいただこうとするものであります。\n　以上が、本日ご提案申し上げております議案の提案理由であります。\n　よろしくご審議の上、ご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 542,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-003",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-004",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "建設課都市施設担当参事（田中紀嘉君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-005",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "（菅原文子君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "住民の方から連絡があったということだったのですけれども、住民の方、床下ですけれども、どのようなかたちで分かったのかお伺いいたします。それと、この新町だけではなくて同じような形状の公営住宅がほかのところにもあると思いますけれども、そこにつきましての検査というのは、どのようなかたちになるでしょうか。\n　お伺いいたします。",
+    "text_length": 159,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-006",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "建設課都市施設担当参事（田中紀嘉君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず１点目のこの浸水の状況が分かったことについては、入居者の方が直接床下をのぞかれて、浸水が判明しました。\n　二つ目のご質問なのですけれども、他の公営住宅については同じような建て方をしているところは、職員が現地に赴いて、全戸床下に潜り調査を行っております。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-007",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "（菅原文子君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１点目につきましては、分かりました。\n　２点目なのですけれども、ほかのところも確認をしていただいたということですけれども、今後このようなことが起こり得るかどうか、それも確認されたということでよろしいでしょうか。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-008",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "建設課都市施設担当参事（田中紀嘉君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほど申し上げた浸水がしてないところについては、今後についても大丈夫かと思われます。今回浸水した物件につきましては、基本的には先ほどご説明したとおり、止水モルタル、防水材をしっかり施しまして、今後止水性を高めることによって浸水しないように対応いたします。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-009",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この度のこういう雨水による浸水とか、そういう関係につきましては過去においてもいろいろ出て、それについていろいろ対策をしておりますけれども、今回もそのモルタルとケイ酸質系の塗膜材で、防水材を使うということで、これ見ますと内側ですよね。内側でやるということなのですけれども、補強してこういうものを浸水を止めるということになると、外側と内側をすることによってかなり浸水を防ぐことができるというふうに私は解釈しているのですけれども、今回内側だけということなのですけれども、その辺の心配はないのでしょうか。それと、このモルタルを５センチメートル幅でつけるということですけれども、既存のコンクリートの基礎にモルタルをあとから塗ったという部分については、これやっぱりはがれやすいというのは通常、常識ですよね。そういうかたちでやるのですけれども、その辺技術的なことになるのですけれども、その辺本当に大丈夫なのでしょうか。",
+    "text_length": 402,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-010",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "建設課都市施設担当参事（田中紀嘉君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基本的に今回、内側から作業を施すのですけれども、吉岡議員おっしゃるとおり本来であれば、外側からと内側からに施工をしまして対策するのは本来なのですけれども、現状考えますと外側から施工するのが困難な状況なので、現状の最善を尽くすというかたちで、床下ピット内から止水モルタルを施します。基本的には、これだけである程度止水性が高まるのですが、おっしゃったように今回外側から施工できませんので、さらに止水性を高めるために防水材を二次的に上塗りして施します。\n　以上です。",
+    "text_length": 230,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-011",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "施工の方法については分かりましたけれども、どちらにいたしましても、この新町のぞみ団地、災害公営住宅で移転されてから度重なる特に水の関係でこういうことが起きておりますけれども、本当に入居者の方々に対しては、本当に大変なご苦労をされているということでありますけれども、それに伴って、町としてもその対策費、今回１千万円ですけれども、掛けておりますけれども、本当にやっぱりどこまで根本的なことをきっちりやればいいのか、ちょっと私は理解できませんけれども、やはり入居者の方々にこういうことがもう二度とないようなかたち、それを十分検討して進めていただきたいと思っております。",
+    "text_length": 281,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-012",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "建設課都市施設担当参事（田中紀嘉君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おっしゃるとおり、入居者の方の平穏な暮らしを阻害してしまっているのは事実でございます。今後そうならないように、原因と考えられる部分にしっかり対策を講じてまいります。\n　以上です。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-013",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-014",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "atsuma-403-1-015",
+    "municipality": "atsuma",
+    "council_id": 403,
+    "council_name": "令和 ６年 １１月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "11月22日－01号",
+    "date": "2024-11-22",
+    "speaker": "産業経済課農業農村整備担当参事（中井徹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/403.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        58
+      ]
+    }
+  }
+]

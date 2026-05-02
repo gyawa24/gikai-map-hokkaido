@@ -1,0 +1,278 @@
+[
+  {
+    "id": "atsuma-368-1-001",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案３件であります。\n　議案第１号　令和５年度厚真町一般会計補正予算（第２号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ1,490万円を追加し、歳入歳出予算の総額を歳入歳出それぞれ96億7,912万8,000円とするものであります。\n　歳出における補正の主な内容について、議会費では議員費用弁償などの増額、総務費では姉妹都市交流事業の増額、衛生費では簡易水道事業特別会計繰出金の増額、農業費では基盤整備田等水田機能強化事業の追加であります。\n　この補正の財源として、繰越金の一般財源を1,490万円と見積り収支のバランスを取ったところであります。\n　議案第２号　令和５年度厚真町簡易水道事業特別会計補正予算（第１号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ1,214万9,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ７億8,214万9,000円とするものであります。\n　歳出における補正の主な内容については、会計年度任用職員報酬などの追加、地方公営企業会計法適用移行委託料の追加、排水管設置支援業務委託料の追加であります。\n　議案第３号　令和５年度厚真町公共下水道事業特別会計補正予算（第１号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ800万円を追加し、歳入歳出予算の総額を歳入歳出それぞれ２億7,320万円とするものであります。\n　歳出における補正の内容については、環境管理事業における修繕料の増額であります。\n　以上が、本日ご提案申し上げております議案の提案理由であります。よろしくご審議の上、ご決定賜りますようよろしくお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 766,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-002",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-003",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-004",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "産業経済課農業担当参事（中村信宏君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-005",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "（秋永議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "秋永徹",
+    "member_faction": "",
+    "text": "基盤整備等水田機能強化事業の中の事業内容の支援内容の中で、①、②の補助率65パーセントとなっております。その下のかっこ書きの中で、予定地区が65パーセント基盤整備済み地区については50パーセントということで、この基本的な考えを教えていただきたいと思います。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-006",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "産業経済課農業担当参事（中村信宏君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補助率を２段階に設定にした理由についてのお尋ねでございます。基盤整備を今後、行う地区につきましては現段階で用水等が十分整備されておらず場合によっては、土耕水路の浚渫、また河川からのポンプアップ等経費が多額になり農業者の負担も増すことが想定されますので、また基盤整備済みの地区につきましては、一度用水が整備をされているということが前提でございますので、農業者負担が増すことが想定される、これから基盤整備を行う地区についての補助率を高く設定しているため２段階の設定となっております。",
+    "text_length": 239,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-007",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "（吉岡議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉岡茂樹",
+    "member_faction": "",
+    "text": "私からも一点ご質問します。今の事業名と同じ中身なんですけれども、④のそ菜園芸施設永年作物等の移転とありますけれども、この永年作物等の移転というのはローテーション等を考えているから、こういう名称なんでしょうか。",
+    "text_length": 104,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-008",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "産業経済課農業担当参事（中村信宏君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "④の永年作物等の移転でございますが、こちらが永年作物ハスカップ等を想定しております。ブロックローテーションという意味ではなく、永年作物木が生えているものについて水張りを行う、ということがなかなか困難でございますので、別の畑地等がある場合にそちらに樹木を移転させる費用、そういったことをされて田に水を張ると、水活交付対象水田として移譲されるという場合につきましては、この移転費用についても補助対象としているところであります。",
+    "text_length": 211,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        87
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-009",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "（三國議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "三國和江",
+    "member_faction": "",
+    "text": "説明資料の２ページの事業概要の事業費の②の内訳の中で記念品、町の工芸品と10万円となっておりますが、何を記念品に持っていくのか内容を教えて下さい。",
+    "text_length": 73,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        89
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-010",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "前沢牛まつりの開催日が６月４日ということで、今から工芸品を発注しても間に合わないということですので、まつり当日は目録を交換させていただこうというふうに考えております。工芸品につきましては、今のところ町内の作家の方の陶芸品もしくは木工品を想定しておりますが、今の段階では、まだ決定してございません。",
+    "text_length": 148,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-011",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "建設課長（佐藤義彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        98
+      ]
+    }
+  },
+  {
+    "id": "atsuma-368-1-012",
+    "municipality": "atsuma",
+    "council_id": 368,
+    "council_name": "令和 ５年  ５月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "05月22日－01号",
+    "date": "2023-05-22",
+    "speaker": "建設課長（佐藤義彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/368.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        105
+      ]
+    }
+  }
+]

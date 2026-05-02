@@ -1,0 +1,1405 @@
+[
+  {
+    "id": "muroran-453-3-001",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "おはようございます。私のほうから日程１、議案第３号令和３年度室蘭市港湾整備事業会計補正予算（第１号）、港湾事業費用、１目施設管理費の港湾施設復旧補修費と第１款資本的支出、１目港湾施設整備事業費の入江地区中央埠頭荷さばき地整備の２点について一問一答で質問いたします。\n　初めに、港湾施設復旧補修費について質問いたします。港湾施設復旧補修費の工事請負費２，５３８万８，０００円の財源の内訳と工事内容についてお聞かせください。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        5
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-002",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "工事請負費の財源内訳についてでございますが、工事請負費２，５３８万８，０００円のうち一般会計から補助金として１，２６９万４，０００円、建物総合損害共済災害共済金として１，２６９万４，０００円でございます。\n　工事内容につきましては、令和３年２月１６日の暴風により被災しました西３号埠頭薫蒸上屋屋根の応急処理で張ったブルーシートの撤去や野地板、ルーフィング張り、屋根鉄板ふきの面積１，１１０平方メートルを復旧するものでございます。\n　以上でございます。",
+    "text_length": 225,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-003",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "西３号埠頭の薫蒸上屋屋根の復旧事業ということですが、この上屋の築年数や保管している貨物についてはどのようになっているのかお聞かせください。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-004",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "薫蒸上屋の築年数でございますが、昭和４４年に建設してございまして、５２年が経過してございます。また、保管貨物につきましては、主に精米を保管してございます。\n　以上でございます。",
+    "text_length": 88,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-005",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "主に精米を保管しているとのことですが、薫蒸上屋の使用料については港湾施設管理条例で定められておりますが、令和２年度の収入についてどのぐらいになっているのかお聞かせください。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-006",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和２年度の薫蒸上屋使用料収入でございますが、税抜きで４３１万８，９２０円でございます。\n　以上でございます。",
+    "text_length": 55,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-007",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "それでは、市が保管している公共上屋については、今回復旧する築地地区の上屋を含めて現時点で何棟あるのかお聞かせください。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-008",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市が管理している公共上屋でございますが、崎守地区に２棟、絵鞆漁港区に２棟、築地地区に６棟、入江地区に１棟でございます。\n　以上でございます。",
+    "text_length": 70,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-009",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "公共上屋については、崎守、絵鞆、築地、入江地区で計１１棟あるとのことですが、私もこれらの公共上屋については現地で見たことがありますが、その中でも特に築地、入江地区には古くからある上屋が集中しておりますが、築年数についてはどのくらい経過しているのかお聞かせください。",
+    "text_length": 132,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-010",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "築地地区の上屋の築年数でございますが、６棟全て建設から５２年～５７年経過し、入江地区の中央埠頭にございます市営３号上屋につきましては建設から６７年が経過し、老朽化が進行してございます。\n　以上でございます。",
+    "text_length": 103,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-011",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "先ほどの答弁で中央埠頭の入江地区に公共上屋が１棟あるとの答弁がありましたが、その並びには２棟の上屋があり、それらの上屋は民間の上屋と思いますが、どういった会社が管理していて、その上屋の築年数が分かればお聞かせください。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-012",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "中央埠頭に立地している民間上屋でございますが、２棟とも室蘭開発が所有してございまして、築年数は５９年と６４年が経過してございます。\n　以上でございます。",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-013",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "室蘭開発所有のもので、築年数は５９年と６４年が経過しているとのことですが、築地・入江地区の上屋については、全ての公共上屋の築年数が５０年以上経過し、民間上屋についても６０年以上経過しております。このように老朽化していることから、台風や暴風が発生するたびに被災する可能性が高いと考えますが、今後老朽化した上屋の管理をどのように考えているのか、室蘭開発の上屋への対応を含めてお聞かせください。\n　また、室蘭開発として今後この２棟の上屋に対しての将来構想の計画があればお聞かせください。",
+    "text_length": 240,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-014",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "老朽化した上屋の今後の考えでございますが、港湾会計の経営戦略の取組では今後１０年の間に中央埠頭の上屋をはじめ、築地地区西３号埠頭にある上屋２棟を取り壊し、荷さばき地に転換する考えでございます。\n　また、室蘭開発へは老朽度の高い上屋についての適切な管理をお願いしてございます。\n　次に、室蘭開発所有の２つの上屋に対しての将来構想等の計画は現在ございませんが、港湾会計の経営戦略の方針に沿って今後室蘭開発の経営計画を策定する中で自社倉庫の在り方について整備していくものと考えてございます。\n　以上でございます。",
+    "text_length": 253,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-015",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "築地地区の公共上屋について、１０年の間に西３号埠頭にある上屋２棟を取り壊すとのことですが、２棟を取り壊しても４棟が残りますが、老朽化した公共上屋について今後の市の考えについてお聞かせください。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-016",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "築地地区の４棟の上屋でございますが、経営戦略計画期間外の１０年後以降に老朽化の著しい上屋から取壊しをしていくことを想定してございます。\n　以上でございます。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-017",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "１０年後以降に老朽化の著しい上屋から取り壊していくことを想定しているとのことですが、今後の老朽化した上屋の取壊しについては、また後ほど伺いたいと思います。\n　次の質問をします。入江地区中央埠頭荷さばき地整備の工事請負費１億９，８００万円の工事内容についてお聞かせください。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-018",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "中央埠頭荷さばき地整備の工事内容についてでございますが、中央埠頭にございます市営３号上屋の解体及び舗装工事とクルーズ旅客の感染防止対策に必要なフェンスやサーモグラフィー、発熱者などを隔離するコンテナハウスの設置を行うものでございます。\n　以上でございます。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-019",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "上屋の解体及び舗装工事とクルーズ旅客の感染防止対策に必要なフェンスやサーモグラフィー、発熱者などが一時待機するコンテナハウスの設置とのことですが、財源についてはどのようになっているのかお聞かせください。",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-020",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "工事請負費１億９，８００万円の財源についてでございますが、港湾機能高度化事業費補助金として６，９００万円、港湾施設整備事業債として１億２，９００万円でございます。\n　以上でございます。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-021",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "１億９，８００万円のうち６，９００万円が港湾機能高度化事業費補助金とのことですが、この財源を使用する条件についてはどのようになっているのかお聞かせください。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-022",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "港湾機能高度化事業費補助金の採択要件についてでございますが、クルーズ旅客の安全性の向上に要する費用が条件となってございまして、繰り返しになりますが、クルーズ旅客の感染防止対策に必要なフェンスやサーモグラフィー、発熱者などを隔離するコンテナハウスの設置で条件を満たしてございます。\n　以上でございます。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-023",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "コンテナハウスの設置が条件となっていますが、このコンテナハウスのイメージは基礎ブロックを用いて簡易的に設置するイメージがありますが、どのような構造、仕様で、大きさについてはどのようになっているのかお聞かせください。",
+    "text_length": 107,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-024",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コンテナハウスの構造と仕様についてでございますが、今後の設計の中で決めてまいりますが、鉄筋コンクリート基礎にスチール製の一般的な２０フィートコンテナハウスの仕様で、大きさにつきましては長さ約６．１メートル、幅約２．５メートル、面積１４．８平方メートルの２基を想定してございます。\n　以上でございます。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-025",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "今の答弁でコンテナハウスについては一般的な２０フィートコンテナ２基を想定しているとのことですが、このようなサイズですとトラックでの移動も可能と考えますが、このようなコンテナハウスを想定しているのであれば移動も可能で、例えば今工事を進めている２２万トンクラスの大型客船の着岸可能な祝津岸壁でも使用が可能になると活用の幅も広がると思いますが、コンテナハウスを移動させて使用する考えについてお聞かせください。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-026",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コンテナハウスを移動させて使用する考えについてでございますが、国からの補助金はクルーズ旅客の安全性の向上に資する目的のものとして採択されていることから、目的外の使用が難しいものと考えてございますが、委員がおっしゃるような利用が可能かについて、関係機関に確認してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-027",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "コンテナハウスを移動させて使用することについては、補助金の関係上、目的外の使用が難しいとのことですが、コンテナハウスを多用途に使用できるよう、今後ぜひ確認、検討していただきたいと思い、次の質問をいたします。\n　それでは、上屋の解体について質問しますが、今まで上屋を解体することがなく、これまで多くの議員が老朽化した上屋について建て替え、解体、景観など、様々な観点で質問をしてきましたが、今回今まで例のない解体をすることになったが、解体に至った経緯についてお聞かせください。",
+    "text_length": 236,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-028",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "上屋の解体に至った経緯についてでございますが、２つございまして、初めにコロナウイルス感染防止対策を適切に講じ、クルーズ船が安心して寄港できる環境を整備すること。また、持続可能な港湾会計の維持に努めるため、経営戦略の基本方針に基づき、老朽化が進んでいる公共上屋を解体し、需要の高い荷さばき地などへの利用転換を図るためでございます。\n　以上でございます。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-029",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "それでは、今回解体する市営３号上屋の築年数と、解体後はコンテナハウスの設置と答弁がありましたが、この土地は結構広いので、そのほかに土地の利用の考えについて併せてお聞かせください。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-030",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市営３号上屋の築年数につきましては、昭和２９年に建設し、６７年が経過してございます。\n　また、解体した後の土地利用についてでございますが、先ほども答弁いたしましたが、現在のコロナ禍において感染防止対策に必要なコンテナハウスなどを設置し、クルーズ旅客の受入れ等に対応していくとともに、入江地区のにぎわい、交流空間の創出に寄与していくものと考えてございます。\n　以上でございます。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-031",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "コンテナハウスの設置と入江地区のにぎわい、交流空間の創出とのことですが、最近クルーズ船の入港時にはボランティア団体などによるお土産の物販などがテントを張って行われておりますが、コロナ禍においても従来どおりテントでの対応となると思いますが、埠頭における物販等について、コロナ対応はどのようになっているのかお聞かせください。",
+    "text_length": 160,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-032",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "埠頭における物販等についてでございますが、従来どおりテントでの対応と考えてございますが、コロナ禍においてクルーズ乗客との直接接触を防ぐため、テント正面にアクリル板の取付けやフェースシールドなど感染対策を行った上で対応していきたいと考えてございます。\n　以上でございます。",
+    "text_length": 135,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-033",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "クルーズ乗客との直接接触を防ぐため、アクリル板の取付けやフェースシールドなど感染対策を行うとのことですが、万が一クルーズ船でコロナ感染者が出た場合でも隔離対策を適切に講じ、感染拡大を防止すること、本市のクルーズ客船の受入れ環境の改善を図ることで船社の信頼向上や今後のクルーズ船誘致に向けても追い風になるものと考えておりますので、しっかり取り組んでいただきたいと申し上げまして、次の質問に移ります。\n　それでは、中央埠頭を含む入江地区をにぎわい、交流空間の創出として新しい港湾計画において位置づけしておりますが、今回の事業でクルーズ客船の受入れ施設の整備や老朽化した上屋の解体などを進めていきますが、港を活用したにぎわい、交流空間創出の今後の展望についてお聞かせください。",
+    "text_length": 335,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-034",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "佐藤港湾部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "入江地区におきます港を活用したにぎわい、交流空間創出の展望についてでございますが、入江地区は都市機能誘導区域の室蘭駅周辺地区の中核にございまして、港湾につきましては中央埠頭におけるクルーズ船の寄港、あとフェリーの発着場所としての機能はもとより、周辺には現在外構整備しております科学館・図書館、体育館、あと旧室蘭駅舎など、観光施設が近接します非常に高いポテンシャルを有しておるものと考えております。\n　こういった高いポテンシャルを有効に引き出すということも非常に重要だと考えておりまして、入江臨海公園と中央埠頭をつなぐ区間において、今土地利用区分というのが緑地用地と位置づけられておりまして、オープンスペースとか緑地、公園以外の使い方というのがなかなかできなくて、利用用途が限定的になっているところですけれども、今回の港湾計画の見直しによりまして、宿泊施設とか飲食店などが建設可能となりますので、そういった意味から申しますと港と町が一体となった港湾空間の形成が可能となりまして、にぎわい創出に寄与できる下地が整ったものと考えております。\n　今後は、都市建設部などまちづくり関連部局と連携を図って、具体的なにぎわい創出の施策の検討を行ってまいりたいと考えております。\n　以上でございます。",
+    "text_length": 542,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-035",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "にぎわい創出に寄与できる下地が整い、今後は都市建設部などまちづくり関係部局との連携を図り、具体的な施設の検討を行っていくとのことですが、現在都市建設部で行われている室蘭駅周辺地域のにぎわい創出と港湾部で今後進めていく港を活用したにぎわい創出は互いに連携して進めることで相乗効果を発揮し、よりよい土地活用ができるものと考えますので、具体的な施設の検討に当たっては港町室蘭ならではの要素を取り入れて検討していただきたいと考えます。\n　先ほど公共上屋の取壊しに関して、経営戦略では今後１０年の間で３棟取り壊すとのことでしたが、スクラップ・アンド・ビルドによりその後新しい上屋を建設することも想定されますが、１０年後の新たな上屋となりますと、現在本市が取り組んでいるカーボンニュートラルポートの形成、室蘭グリーンエネルギータウン構想や室蘭脱炭素社会創造協議会への参画などを踏まえますと、今後の上屋は全く違った、例えばＣＯ２排出ゼロ、再エネ由来エネルギーなどを活用した近代的な倉庫がイメージされます。先日、新部長の紹介が新聞に報道され、佐藤港湾部長はカーボンニュートラル－－温室効果ガス排出実質ゼロの実現に向けた新エネルギーの動きが加速する中、室蘭港が持つ静穏さ、大水深の岸壁、強固な地盤を持つ後背地が注目され、追い風を機微に捉え、港の活用をアピールしていき、経済部との両輪で港の活用につなげる覚悟を決めたと記載されていました。カーボンニュートラルや再エネ由来エネルギー、港を活用したにぎわい創出などを踏まえますと、初めの答弁にもありましたが、今後の入江地区の上屋等のスクラップ・アンド・ビルドの取組は重要と考えますが、今後の上屋整備の考えについてお聞かせください。",
+    "text_length": 728,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-036",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "佐藤港湾部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "カーボンニュートラルなどの時代の流れを踏まえた今後の室蘭港における上屋整備の考えということでございますが、このたび改訂の港湾計画におきましては、脱炭素社会への貢献、あとエネルギー拠点としての機能強化、また先般５月の常任委員会で報告させていただきました経営戦略につきましては、港湾物流の需要や動向を踏まえた持続可能な経営が図れるよう、ともに時代の要請を踏まえながら、そういうところを意識して策定したものでございます。\n　今後は、これらの計画や戦略に基づきまして、具体的な個別施設の整備においても、双方を意識して進めていく必要があるものと考えてございます。\n　このような中で、上屋の整備につきましては、経営戦略期間内におきましては新しい上屋の建設というものは想定しておりませんが、その後におきまして、当然ながら物流機能の維持というのが必要になりますので、適正な受益者負担の考えに基づく使用料をいただくということが前提になりますけれども、一定量の上屋の建て替えが必要になるものと考えてございます。\n　その際には、脱炭素社会への貢献なども意識した中で時代の要請を踏まえて上屋の整備について検討していく必要があるものと考えてございます。\n　以上でございます。",
+    "text_length": 524,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-037",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "早川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "早川昇三",
+    "member_faction": "市政結和",
+    "text": "今後脱炭素社会への貢献を意識した上で上屋の整備については検討していくことが必要との答弁がありましたが、海老名市では物流業界初となるＣＯ２排出量実質ゼロのクリーンエネルギー倉庫、三井不動産ロジスティクスパーク海老名Ⅰに着工したと報道がありました。この倉庫は、屋上の太陽光発電や設備の省エネ化、再生可能エネルギー由来のグリーン電力の利用により、建物のＣＯ２排出量を実質ゼロにする倉庫で２０２２年９月の竣工を目指しております。建物は、地上６階と大規模な倉庫でありますが、ＣＯ２排出がゼロと、まさに２０５０年を見据えた倉庫となっております。これを本市で取り入れることは難しいと思いますが、民間ではこういった取組を既に進めています。本市港湾においても、カーボンニュートラルポートの形成に向けて取組を進めていますが、今後２０年、３０年先を見据えますと、上屋建設を行う際にはＣＯ２排出量実質ゼロのような取組についても検討する必要があるものと考えますが、今後の上屋建設の考えについてお聞かせください。",
+    "text_length": 442,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-038",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "佐藤港湾部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "カーボンニュートラルの関連技術を取り入れた上屋の建設というところの取組でございますけれども、委員おっしゃられましたＣＯ２排出量ゼロの環境配慮型の倉庫というのは、当然ながらカーボンニュートラルの考えに合致しておりますけれども、現段階ではまだ着工段階ということでもございまして、今後はこれらの技術開発の動向とか、どういったような普及をしていくかというところなどに注視、着目していくことが必要だと考えております。\n　それとともに、今年度に国からカーボンニュートラルポート形成計画の作成マニュアルというものが示されますので、これらを踏まえて２０５０年のカーボンニュートラルということもございますけれども、今後の課題として室蘭市としても考えてまいりたいと思います。\n　以上でございます。",
+    "text_length": 338,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-039",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "それでは、私からは議案第１号一般会計補正予算の民生費の関係と港湾事業会計について一問一答で伺います。\n　まず最初に、港湾の関係、今同僚委員からいろいろと話をされましたので、簡単に聞きたいと思うのですけれども、財源の内訳が先ほど示されました。１億９，８００万円、企業債が１億２，９００万円で６，９００万円が港湾機能高度化事業費補助金ということなのですけれども、この１億９，８００万円のうち、上屋の解体費はどの程度なのか。それと、解体後の荷さばき地のコンテナハウス含めて、荷さばき地の整備にどれだけのお金がかかるのか、この点について、まず分かればお示しいただきたい。",
+    "text_length": 281,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-040",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "中央埠頭の市営３号上屋の解体費でございますが、取壊しに約８，０００万円程度、荷さばき地整備に約５，０００万円程度、残りコンテナハウスなどのコロナ対策について約１，８００万円程度、合計が合わないですが、全て合計しますと１億９，８００万円と考えてございます。\n　以上でございます。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-041",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "解体費が８，０００万円、荷さばき地整備が５，０００万円程度、コンテナハウス含めてそれが大体１，８００万円ということなのですけれども、高度化補助金、支援施設の中でいろいろあるのですけれども、この目的が「訪日クルーズ旅客数５００万人の実現に向けて、クルーズ旅客の利便性や安全性の向上及び物流機能の効率化を図るために実施する事業を対象として補助金の交付を行うことにより、クルーズ旅客の受入機能の高度化及び物流の効率化を促進することを目的とする」ということになっているのですけれども、この上屋を解体し、コンテナハウスを整備することがどう受入れ機能の高度化、さらには物流の効率化を促進することにつながるのか、この点について伺います。",
+    "text_length": 311,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-042",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "京納港湾管理課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の整備につきましては、港湾機能高度化事業費補助金を活用しての整備となってございますことから、先ほどお答えさせていただきましたコロナウイルス感染防止対策、これのほかクルーズ船寄港イベント実施スペース、こういったものとして活用できるものと考えてございます。\n　以上でございます。",
+    "text_length": 139,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-043",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "クルーズ船受入れに関して、感染症対策としてコンテナハウスの設置ということなのですけれども、基本的には臨時的なテントでも簡易テントでも感染対策というのは十分できるわけです。問題は、当然港湾事業会計ですから、企業会計ですから、いかにして上屋を解体した荷さばき地で利益を生み出すかということが主眼でなければならないというふうに思うのです。１億９，８００万円かけて整備した荷さばき地で全く利益を上げることができないのであれば、これは港湾事業会計としての意味をなさなくなるわけです。ましてや中央埠頭というのは、旅客船受入れのために整備をして、トイレあり、水飲み場あり、さらには一定の広さもある。そういった中で、当然旅客船受け入れたときのコロナ対応として仮のテントでも幾らでも対応できるというふうに私は思うのです。駄目だと言っているわけではないのですけれども、いろいろ苦労して老朽化した上屋を解体するというのは分かるのですけれども、ではこの解体した上屋をどう利益の上がる荷さばき地として活用していくか。旅客クルーズ船というのは毎週入ってくるわけではないですね。１年に数えるほどしか入ってこないわけです。そのために１億９，８００万円かけて上屋を解体してコンテナハウスにするのですけれども、いかにして整備した荷さばき地で利益を上げるかということをやはりもっと考えていただきたいというふうに思うのですけれども、その点についてどのように考えているのか伺いたいと思います。",
+    "text_length": 625,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-044",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "氏家港湾管理課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "クルーズ船の寄港に影響が出ない範囲で荷さばき地として短期的な貸付けを予定し、空きスペースとならないように今後は検討していきたいと考えてございますが、現在の上屋につきましては老朽化が激しく、使用にはなかなか難しいような状態になってきてございますので、今回この補助事業を活用しまして取壊すという判断をしたところでございます。\n　以上でございます。",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-045",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "補助事業を活用するのは悪いということを言っているわけではないのですけれども、問題は解体した後の荷さばき地としての活用をどう図って、その１億９，８００万円かけて整備した荷さばき地でどれだけの利益を上げていくかということにもうちょっと腐心してほしいということを申し上げたいと思います。\n　次に、民生費の関係で聞きたいと思うのですけれども、今回社協を通じて特例貸付けを受けている方々に対して、さらに期間を８月まで延長しながらも、新たな支援金給付事業を国が行うというものなのですけれども、この特例貸付けの貸付件数というのは全国的に５月１５日の段階で２２０万を実は超えている。累計の貸付決定総額が９，２４６億円というふうに言われているのですけれども、北海道及び市の特例貸付件数はどれくらいになっているのか、貸付決定額はどのくらいになっているのか、これについてまず最初に伺いたいと思います。",
+    "text_length": 389,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-046",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "伊賀生活支援課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北海道と本市におきます特例貸付けの件数と貸付決定額についてでございますが、今現在公表されている最新のものが５月末のものになりますが、北海道の貸付件数につきましては９，２６５件、本市の貸付件数につきましては５０件となってございます。\n　また、貸付決定額についてでございますが、これにつきましては北海道分や本市の決定額については公表されていないところで把握してございません。\n　以上でございます。",
+    "text_length": 196,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-047",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "全道で９，２６５件、本市が５０件ということなのですけれども、特例貸付けの対象者が今回の自立支援金給付事業の対象になるかというふうに思うのですけれども、議案説明の中でも示されたのですけれども、対象世帯については想定世帯数が大体１４１世帯ぐらいになるのではないかと述べられているのですけれども、先ほど答弁にあった全道で９，０００件を超えている、室蘭で５０件を超えているということなのですけれども、本市のこの５０件の特例貸付けの件数というのは他市と比べて多いのか少ないのか。当然コロナの感染者数が多いところはそういった貧困に陥る世帯が増えるということがあるかと思うのですけれども、この点についてどのようになっているのか。これは本市の貸付件数が多いかどうかの裏づけになるかというふうに思うのですけれども、他市と比べてどの程度なのか、この点について伺いたい。",
+    "text_length": 374,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-048",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "伊賀生活支援課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "他都市との比較についてでございますが、人口の多い市につきましては貸付件数も比較的多い状況にございますが、新型コロナウイルス感染症の状況が各市で異なり、借入れを受けた世帯ごとの状況が個別に異なりますことから、比較は難しいものというふうに考えてございます。\n　以上でございます。",
+    "text_length": 137,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-049",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "当然なかなか比較はできないというふうに思うのですけれども、それぞれの行政区での特例貸付けの件数の多い少ないというのは、その行政区での感染者の増減にも関連しているというふうに私は思うのですけれども、この特例貸付けというのは、これまで何度延長されてきたのか、この点について分かれば。",
+    "text_length": 139,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-050",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "伊賀生活支援課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の特例貸付けの延長につきましては、総合支援資金の当初貸付けで１度、３か月の延長と、再貸付けとして３か月の延長ということで、合わせて２回の延長が行われております。\n　以上でございます。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-051",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "合わせて２回の延長ということなのですけれども、当然今回の支援金給付事業の目的が感染症の長期化に伴い失業などによって生活に困窮する世帯に対し、実情を踏まえた支援を途切れなく行う観点から支援金制度を創設したというふうにしているわけなのですけれども、支給額が単身世帯で月額６万円、２人世帯で月額８万円、３人以上世帯で月額１０万円、この支給額については生活保護基準との比較でどの程度になっているのか、この点について伺います。",
+    "text_length": 208,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-052",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "伊賀生活支援課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "生活保護費基準額との支援金の支給基準の比較でございますが、生活保護基準と同程度となってございます。\n　以上でございます。",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-053",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "生活保護基準額と同程度ということなのですけれども、支給期間が７月以降の申請月から３か月というふうになっているのですけれども、支給期間を３か月とした理由というのはどこにあるのか、その点について伺います。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-054",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "伊賀生活支援課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支援金の支給期間につきましては、支援金の支給を受ける期間内に自立相談支援を活用した就労活動や生活保護の申請を行い、新たな就労や保護費の受給などにより生活の安定を図るための猶予期間として定められたものでございます。\n　以上でございます。",
+    "text_length": 117,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-055",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "生活の安定を図るための猶予期間３か月ということなのですけれども、この３か月の間に相手はコロナウイルスなわけですから、事態が改善されなければ、さらに支給期間の延長もあり得るのかなというふうに考えるのですけれども、この点についてどのように考えているのか、また国はどう考えているのか伺いたい。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-056",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "伊賀生活支援課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給期間の延長についてでございますが、現在のところ支給期間の延長については想定されていない状況でございます。\n　以上でございます。",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-057",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "支給期間の延長については想定されていないということなのですけれども、そうなったときにこの３か月の間に就労がうまくいかなかったと、経済的に困窮度がどんどんどんどん深まっていくということになれば、当然自立支援と同時に生活保護への誘導ということも考えられるかというふうに思うのですけれども、コロナ禍の影響で、本会議の質問でも私聞きましたけれども、全国的に２０２０年度生活保護受給世帯が増えているということが答弁されました。その中で、本市の２０２０年度の生活保護申請件数についても１９年度が１３５件、受給開始が１３３件に対し、２０２０年度は申請１４５件、受給開始が１４０件と、新規の受給者が増加しているというふうに述べられているのですけれども、今後支給期間の３か月間で改善されなかった方々に対して、どう生活保護の制度の受給へと誘導していくのか。当然支援課の仕事も多くなるかというふうに思うのですけれども、どのように誘導していくのか、この点について伺いたい。",
+    "text_length": 424,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-058",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "宮下生活支援課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の生活保護の実施についてでございますけれども、自立相談支援機関であります社会福祉協議会と連携を密にしまして、必要な方に必要な保護を行うという保護の実施機関としまして、最後のセーフティーネットとしての役割を果たしてまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-059",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "課長が言われたように、最後のセーフティーネットとしての役割を果たしていきたいということなのですけれども、今回のコロナの対策をめぐって国会のやり取りの中で菅総理が最後は生活保護があるということを発言し、厚生労働省のホームページにも生活保護は国民の権利ですということが記載されていますけれども、私はやはり日本の保護制度は２つ程度大きな問題があると思うのです。貧困率は高いのに保護率が少ない、いわゆる捕捉率が低い。実際に利用できている人が少ないことが指摘されて、なかなか保護に至らないということがあります。その原因の一つに厳しい資産要件があるというふうに言われていますし、同時に扶養義務が異常に広い、３親等以内ということで、さらに保護の申請をちゅうちょする人の中には、扶養親族の照会によって保護をためらう方がかなりいるということが言われていますけれども、本市の保護行政の中で、扶養親族の照会を嫌がって保護の申請を諦めたという方がおられるのかどうか、この点について。それと同時に、扶養親族の照会をどのように進めていっているのか、この点について伺いたい。",
+    "text_length": 472,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-060",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "宮下生活支援課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "保護の扶養義務照会につきましては、これを嫌がって保護申請をためらわれた方がいるかどうかということにつきましては、詳しくは把握してございません。しかしながら、その扶養能力調査につきましては、今般国の実施要領の見直しがありまして、若干緩和されたところでありますので、こういった実施要領に沿いまして調査を実施してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "muroran-453-3-061",
+    "municipality": "muroran",
+    "council_id": 453,
+    "council_name": "令和 ３年 第２回定例会予算審査特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "06月25日－02号",
+    "date": "2021-06-25",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "今回のコロナ感染症の拡大でもって生活困窮する世帯が増えていき、さらに菅総理の最後は生活保護があるという発言を受けて厚生労働省がそういった形で緩和の方向にと進んでいるのですけれども、なかなかそれでも保護は利用しづらいというのが実態だと思うのです。同時に、先ほど支給金額について保護と同程度ということなのですけれども、これも今まで改悪されてそういうふうな形になっているのですけれども、この間２００４年には老齢加算が廃止されて、母子加算も廃止される。生活扶助基準も２０１３年から最大の１割引下げと、住宅基準も引下げ、冬季加算も削減、今やられているのが生活扶助基準を２０１８年から最大５％引下げ。どんどんどんどん最後のセーフティーネットと言われる生活保護制度が改悪に次ぐ改悪を続けている。このことがさらに貧困に拍車をかけている。\n　今回のコロナ禍の下で、さらに全体的には保護を受給する方は増えているのですけれども、なかなか保護の受給に至らないということがあるというふうに言われています。今回のコロナの下で苦しんでいる方もたくさんいるわけです。さらに、まだ収束も見えない。デルタ株がどんどんどんどん感染力を増して増え続けている。さらには、デルタプラスによる変異株も出てきている。こういったことから考えて、これからますますそういった保護を受給する世帯が増えてくると思うのですけれども、ぜひ懇切丁寧な対応を取っていただいて、生活困窮される方については直ちに保護に誘導していくことを心がけていただきたいということをお願いして、私の質問を終わります。",
+    "text_length": 666,
+    "source": {
+      "minutes_file": "data/muroran/minutes/453.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        65
+      ]
+    }
+  }
+]

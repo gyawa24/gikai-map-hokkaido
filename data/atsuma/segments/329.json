@@ -1,0 +1,94 @@
+[
+  {
+    "id": "atsuma-329-1-001",
+    "municipality": "atsuma",
+    "council_id": 329,
+    "council_name": "令和 ４年  ７月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "07月28日－01号",
+    "date": "2022-07-28",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案１件であります。\n　議案第１号　令和４年度厚真町一般会計補正予算（第３号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ4,264万5,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ87億1,407万6,000円とするものであります。歳出における補正の主な内容について、民生費では住民税非課税世帯等臨時特別給付金支給事業・高齢者世帯等生活支援事業・子育て世帯生活支援特別給付金支給事業等の追加。林業費では森林再生林業復興整備事業の追加。商工費では観光イベント支援事業の追加。教育費ではスクールバス運行管理費の追加であります。この補正の財源として国庫国道支出金・給付金等の特定財源で3,960万円。繰越金の一般財源で304万5,000円と見積り、収支のバランスを取ったところであります。\n　以上が、本日ご提案申し上げております、議案の提案理由であります。よろしくご審議のうえご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 474,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/329.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-329-1-002",
+    "municipality": "atsuma",
+    "council_id": 329,
+    "council_name": "令和 ４年  ７月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "07月28日－01号",
+    "date": "2022-07-28",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/329.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-329-1-003",
+    "municipality": "atsuma",
+    "council_id": 329,
+    "council_name": "令和 ４年  ７月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "07月28日－01号",
+    "date": "2022-07-28",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/329.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "atsuma-329-1-004",
+    "municipality": "atsuma",
+    "council_id": 329,
+    "council_name": "令和 ４年  ７月 臨時会（２）",
+    "schedule_id": 1,
+    "schedule_name": "07月28日－01号",
+    "date": "2022-07-28",
+    "speaker": "産業経済課森林再生担当参事",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/329.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  }
+]

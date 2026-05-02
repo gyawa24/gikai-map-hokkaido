@@ -1,0 +1,945 @@
+[
+  {
+    "id": "noboribetsu-372-2-001",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "［登壇］　ただいま議題となりました報告第1号及び報告第２号について、その概要を一括してご説明申し上げます。報告第1号及び報告第２号は専決処分についてであります。和解に関すること及び損害賠償の額を定めることについて、地方自治法第180条第1項の規定に基づき専決処分を行ったことから、同条第２項の規定により報告するものであります。\n　初めに、報告第1号の専決処分の内容についてでありますが、令和３年11月22日午後７時30分頃、相手方車両が市道富士７号線を時速30 キロメートル程度で走行していたところ、市道上にあった舗装の剥離により生じた穴に左後ろのタイヤが落ちて、左後ろタイヤをパンクさせ、アルミホイールに傷をつけたことから、相手方との和解及び損害賠償の額を定めるものであります。和解の概要は、一つ、市は相手方に対し損害賠償を支払う。一つ、今後いかなる事情が発生しても、双方とも異議の申立てをしない。損害賠償の額は２万6,487円。専決処分の日は令和３年12月24日であります。\n　次に、報告第２号の専決処分の内容についてでありますが、令和３年11月22日午後８時30分頃、相手方車両が市道富士７号線を時速30キロメートル程度で走行していたところ、市道上にあった舗装の剥離により生じた穴に左後ろのタイヤが落ちて、左後ろタイヤをパンクさせ、また、その衝撃により頸椎を捻挫させたことから、相手方との和解及び損害賠償の額を定めるものであります。和解の概要は、一つ、市は相手方に対し損害賠償を支払う。一つ、今後いかなる事情が発生しても、双方とも異議の申立てをしない。損害賠償の額は1万2,095円。専決処分の日は令和４年１月７日であります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 738,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-002",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "報告第１号及び第２号、２つまとめて質問したいと思います。いずれも11月22日19時30分と20時30分、相次いでこういった事例が発生しているというところでございますが、事故の原因となった道路の穴、大きさ、位置、また、その状況をお知らせいただきたいと思います。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-003",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "対馬都市整備部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "穴の状態ですけれども、大きさは約40センチ掛ける60センチ、深さが約８センチでございます。穴の位置は道路の外側線から約30センチほど内側、車道寄り、ちょうど車両の左タイヤが通過するような位置関係でございました。また、そのときの状況ですけれども、その日は暴風警報が発令されておりまして、断続的に降雨がございました。時折強い雨もありまして、舗装の穴に水がたまりまして、運転手からは穴が確認しにくい状態であったということでございます。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-004",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。穴の大きさが40センチ掛ける60センチで深さが約８センチということで、かなり大きなものではないかと考えますけれども、これにつきましては今ご説明をいただきましたとおり、降雨によりまして、大きくは穴に水がたまっており、なかなか視認しにくかったというようなことが主たる要因ではないかと考えてございますが、報告第２号にございました頚椎を捻挫なされたという方でございますが、これにつきましての診断書の提出ですとか、そういったものはあったかどうか確認をいたします。",
+    "text_length": 233,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-005",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "対馬都市整備部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "診断書ですけれども、これは令和３年12月１日付の診断書を提出いただいているというところでございます。",
+    "text_length": 50,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-006",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "頚椎を捻挫なされた方も示談に応じたということでございますけれども、これに至るまでの概要の経緯をご説明いただきたいと思います。",
+    "text_length": 62,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-007",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "対馬都市整備部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "頚椎を捻挫された方につきましては、令和３年11月22日に事故が発生しまして、11月26日に病院で診察を受け、その後リハビリの治療を行ったものということで確認しています。11月24日に事故発生の報告があってから市の担当者が当事者と今回の事故における損害賠償について何度か協議を行ったところ、当事者からの示談に応じる意向が示されまして、令和４年１月７日に示談書を取り交わしたものでございます。",
+    "text_length": 194,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-008",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。示談書を1月7日に取り交わしたということでございますけれども、１件の専決処分であればこういった質問はしなかったのでございます。というのも、同日において、１時間をおいてこういった事例が発生しているということになりますと、私が思ったのはハインリッヒの法則という、１対29対300、１件の重大事故の発生には29件の軽微な案件、そして300件のヒヤリハット、こういったものが介在するというのはもう皆さんご存知のことかと思います。ということは、この１件において、１時間において２件ものこういったものが発生したということは、報告はないにしましても、こういった被害を受けている市民の方が何人か介在しているという可能性が私はあると思うのです。そう考えますと、やはり今後この事故と同じような場所でこういった事故に遭ったということが、また報告がある可能性もあります。これに関しまして、どういった対応をなされるかどうか、これを確認したいと思います。",
+    "text_length": 420,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-009",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "対馬都市整備部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当該場所で、今後、事故に遭われたという連絡がございますれば、今回と同様に相手のお話を聞きまして事故の事実を確認できれば交渉を進めるということになると思います。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-010",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。こういった事例に関しまして、やはり再発防止というのは非常に難しいかと思いますけれども、今後こういった事例があった際、また市道富士7号線において同様の被害があったという連絡がもしあった場合につきましては、ぜひ前向きと申しましょうか、誠実なご対応のほうを一つよろしくお願いしたいと思います。 これについて何かございますれば。",
+    "text_length": 167,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-011",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "対馬都市整備部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事故につきましては、１件目、２件目とも、１件目がその当日、２件目も２日後ということでございました。事実関係が容易であったということから、損害賠償については問題なく行えたというふうに思っています。先ほどのように時間をおいてからということであれば、損害保険会社とのいろいろな話にもなるかと思いますけれども、相手の話を聞き、適切に対応してまいりたいというふうに考えております。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-012",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "対馬都市整備部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほど答弁の中で、今損害賠償に出ている２件の発生時期を誤って答弁しましたので、再度、修正してお答えします。１件目が夜の７時半に発生しまして、２件目が当該同じ場所で８時半に発生したということで、同日に発生したということでございます。そのように内容の訂正をお願いしたいと思います。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-013",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "［登壇］　ただいま議題となりました議案第１号から議案第３号までの議案３件について、その概要を一括してご説明申し上げます。\n　議案第１号　令和３年度登別市一般会計補正予算（第12号）は、緊急に措置を要する経費について所要の予算措置を講じようとするものであります。別冊、令和３年度登別市一般会計補正予算書及び予算説明書の１ページをご覧ください。\n　第１条は、歳入歳出予算の補正についてでありまして、歳入歳出予算の総額に歳入歳出それぞれ７億8,629万6,000円を追加し、243億3,676万7,000円とするものであります。\n　歳入歳出予算の補正の款・項の区分及び当該区分ごとの金額並びに補正後の歳入歳出予算の金額は２ページの第１表、歳入歳出予算補正によるものであります。\n　第２条は、繰越明許費の補正についてでありまして、繰越明許費の追加は３ページの第２表、繰越明許費補正によるものであります。\n　歳入歳出それぞれの補正内容につきましては、４ページから７ページまでの歳入歳出補正予算事項別明細書に記載のとおりでありますが、歳出は民生費に新型コロナウイルス感染症の影響が長期化する中、様々な困難に直面した方々が速やかに生活、暮らしの支援を受けられるよう住民税非課税世帯等に対し臨時特別給付金を給付するため、住民税非課税世帯等臨時特別給付金給付事業費を追加するものであります。\n　以上の補正に見合う歳入でありますが、特定財源として国庫支出金を追加するものであります。\n　次に、議案第２号は、登別市特別職の職員の給与に関する条例の一部改正についてであります。飲酒運転により職員が逮捕、起訴されたことを受け、市民の信頼を著しく損ねた責任の一端を表して、令和４年２月に支給する給料について、市長にあっては条例に規定する金額に100分の90を乗じて得た額とし、副市長にあっては条例に規定する金額に100分の95を乗じて得た額とするため、所要の改正を行うものであります。なお、この条例は交付の日から施行するものであります。\n　次に、議案第３号は、登別市国民健康保険条例の一部改正についてであります。健康保険法施行令等の一部を改正する政令が公布され、産科医療補障制度が見直されること等を踏まえ、出産育児一時金等の支給額の内訳を見直すことから、本条例について所要の改正を行うものであります。なお、この条例は交付の日から施行し、令和４年１月１日から適用するものであります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 1048,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-014",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "二瓶議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、住民税非課税世帯等臨時特別給付金給付事業費歳出について質問させていただきます。議案の４番に書かれています事業費内訳なのですけれども、住民税非課税世帯の世帯数7,598世帯は分かるのですが、家計急変世帯数で159世帯ということで計上しております。そこの159世帯なのですけれども、ある一定の基準でカウントしたものなのか、また前例があって想定したものなのかということで、根拠についてお聞きしたいと思います。",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-015",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "平田保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "家計急変世帯の積算についてでございますが、この積算については、国から示された算出方法例にのっとり算出、積算してございます。その具体的な方法としましては、住民税非課税世帯の対象世帯数に令和２年度に実施しておりますひとり親世帯臨時特別給付金の本市における家計急変世帯への給付割合、この率を掛けて算出してございます。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-016",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "二瓶議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。令和２年のひとり親世帯の関係で、前例があってということで、それに準じてやられているのかなということで理解しました。この家計急変世帯なのですけれども、申請の流れについてお聞きしたいのですが、通常は市から確認書が郵送されまして、本人が内容を確認して市に申請書を提出するのかなというふうに思われるのですけれども、この家計急変世帯の対象者についてはどのような流れになっているのか、お聞きします。",
+    "text_length": 200,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-017",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "平田保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "家計急変世帯の申請事務の流れでございますけれども、基本的には市役所、本庁舎であったり、各支所であったり、そういったところに申請書を備え付けたいと。その申請書を提出していただき、審査の後、給付決定をするという形になります。申請していただき給付する形になります。そのため、周知が重要なのかなというふうにも考えておりますので、公式ウェブサイトであったり、広報紙であったり、市の各種相談窓口であったり、特例貸付けの窓口であります社会福祉協議会であったりと、そういった窓口に相談に来られた方にはこういった制度がありますよということでしっかり周知を行い、困窮される方が制度を知らなくて申請できなかったといったことがないよう取り組んでまいりたいというふうに考えてございます。",
+    "text_length": 330,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-018",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "二瓶議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。ただいまの回答でウェブサイトですとか広報紙、そういうのがメインで周知されるのかなというふうに思うのですけれども、159世帯に対して申請忘れですとか、そういった不具合がないのかなと思うのですが、個人情報の関係がありますので、こちらから電話を差し上げることはないと思うのですけれども、そういったこちらからのアクションということは特に考えてないですか。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-019",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "平田保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在、困窮者の相談、支援ということで定期的に関わりを持っている方もございます。ですので、そういった方については個別にご案内というか、口頭になるか文書になるかは別にして個別にお知らせしたいというふうに考えてございます。",
+    "text_length": 108,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        67
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-020",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "二瓶議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。十分にその辺の配慮をしながら、しっかりと給付できるような体制でお願いしたいと思います。\n　最後の質問なのですけれども、住民税非課税世帯も家計急変世帯も共通なのですが、給付を申請する際に本人が確認して申請するのですけれども、本人とか配偶者等で給与明細が書面提出できないような場合もあろうかと思うのですが、そういった場合どういった形というか、表現になるのかなということをお聞きしたいと思います。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-021",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "平田保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "給与明細ですとかがないといった場合については、例えば預金通帳にそういった振込がないのかですとか、いろんなパターンの確認できる書類をご相談させていただき、それでもない場合というのが想定されますので、どうしてもない場合については、収入が新型コロナウイルス感染症の影響により、いわゆる住民税の均等割が非課税の世帯相当の水準となったことについて記載した申立書というのをご本人に出していただきます。具体的には新型コロナウイルス感染症の影響により退職したですとか、収入がなくなったですとか、休業していたですとか、そういった内容についてまず記載していただくと。その旨、本人の自署により申請者氏名を記載してですとか、そういった書類を提出していただき、その内容が適切というか、妥当であれば給付を行うという形になろうかというふうに考えてございます。",
+    "text_length": 364,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        71
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-022",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "二瓶議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。申請等々のいろいろな場面を想定したことで、よく理解できました。そういったことも踏まえまして、この非課税世帯の部分は問題ないと思うのですけれども、家計急変世帯の159世帯以上に、市で押さえていない部分も申請する可能性もありますので、それ以上となった場合も10万円の給付というのを受けられるかどうかというのを確認したいと思います。",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-023",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "平田保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今予算で見込んでいる以上に、もし、対象者が出たということであれば、何らかの措置を行い、しっかりと給付していきたいというふうには考えてございます。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-024",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給対象について伺いたいと思います。ひとり親家庭で実際に養育していない者への支給されている件は、今問題になっていますが、手続をしに来たときに窓口でどのような対応をしているのか、その辺を伺いたいと思います。",
+    "text_length": 102,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-025",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の特別給付金を給付するに当たって、該当者でない方が受け取るような場合が出てくる。そのことについて、どう対応するかということについては、質問とはかけ離れているということですか。提案とはかけ離れているというようなことなのでしょうか。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-026",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "理解不足のために質問を間違えてしまいました。取り消したいと思います。申し訳ありません。",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-027",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "今回の給与の改正の理由として、職員の飲酒運転によりその職員が逮捕、起訴されたということを受けて、市民の信頼を著しく損ねたことに対する責任ということですけれども、この責任なのですが、どのようなところに責任があるという認識だったのか。それから、今回こういうことに至ったことについて、何が足りなかったのか、その課題というのは何だったのか、それをどのように捉えているのかというところをまずお聞きしたいと思います。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-028",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "飲酒運転につきましては、近年厳罰化が進んでおりまして、公務員であるか否かにかかわらず、社会的非難が高まっている状況にございます。飲酒運転をした職員、同乗した職員については、それらの意識が希薄であったものと考えられ、組織、職場としても意識の醸成が不足していたと改めて認識したところでございます。職員に対しては、従前より服務規律の徹底について周知しておりまして、飲酒運転、酒気帯び運転は絶対しないことですとか、管理職にあっては服務規律の徹底や法律や条例等の遵守について、部下に対して趣旨が伝わるように指導を行うことなど、具体的な内容についても記載しておりました。今後はこれまで以上に実際の法令違反、非違行為等による処分事例や処分量定などについても職員に周知して、その大きな影響をしっかりと職員に認識させるなど意識の醸成を図ってまいりたいと考えてございます。\n　以上です。",
+    "text_length": 383,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        93
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-029",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。一部今の答弁と重なるかもしれませんけれども、今回の職員の不祥事に対して実施した職員の指導、教育、意識の向上策です。より具体的に行ったということなのですけれども、それの確認というか、継続的に行うようなことをされているのかというところなのです。弊社ですとコンプライアンス教育というのを年に１回必ず行いまして、研修ですとか、教育などをしているわけですが、今回起きたことに対してのことというのは分かるのですけれども、年間を通じてですとか、そういうことに対して現在どのように行われているのかお聞きしたいと思います。",
+    "text_length": 259,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        95
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-030",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "職員に対しては、本事案発生後すぐに職員が飲酒運転で交通事故を起こして、さらに救護措置義務違反を行ったこと、また、その乗用車に職員が同乗していたことを伝え、公務員としての自覚や服務規律の徹底、法令の遵守について訓令を発しました。この訓令は年に２回から３回、年末年始等で飲酒が増える機会ですとか、お盆の時期、これもまた飲酒の増える時期、そういう時期を狙いまして毎年行ってきたところでございます。今回このような事案が起きたことから、これだけでは足りないだろうということで、今後全職員を対象とした飲酒運転の根絶も含めた交通安全に係る研修を実施する準備を現在進めてございます。これは千田議員おっしゃられたとおり、定期的なものとして、これから取り組んでまいりたいと考えております。また、新規採用職員の研修におきましても、交通安全研修を実施することとして再発防止のための取組、こういったものを進めてまいりたいと考えてございます。\n　以上です。",
+    "text_length": 414,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-031",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。弊社では年に１回、コンプライアンスに関するアンケートというのをｅラーニングで行いまして、コンプライアンスの遵守状況ですとか、それから認識の状況、各種ハラスメントの確認、管理職の皆さんが把握しているものですとか感じているものと、いろいろな職場におられる職員の方が感じるものと認識のずれというのがあると思いますので、こういうようなことをやっているということであります。いろいろな研修はやられているのでしょうけれども、ぜひとも年に１回アンケートを取って、どういう意識状態でいるか、どういう認識をしているかというところをしっかり把握をしていただいて、そこから見えてくる課題ですとか、その課題に対して翌年度どういう取組、教育、研修を行っていくのかというところをしっかり繰り返しながら、ＰＤＣＡを回しながら職員の認識のレベルを上げていただくような取組をしていただければなと思います。このようなことについてどのようにお考えか、今行われているものに、さらにこのようなことを行っていただければということなのですけれども、この点についてどのようにお考えか伺いたいと思います。",
+    "text_length": 484,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        99
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-032",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、千田議員のほうからアンケートなどによる職員の意識の把握ということをご提案いただきました。これから、どのようなことに取り組んでいくのかということに関して、職員の今考えていること、考え方、どの程度の認識なのかという非常に大事になってくるかと思いますので、参考にさせていただきまして今後の再発防止に取り組んでまいりたいと思います。",
+    "text_length": 164,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        101
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-033",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "検討のほう、よろしくお願いいたします。今回職員が懲戒免職、それから４か月の停職、管理職の方は訓戒処分ですか、これに至ってしまったことに対して、市長、副市長の責任として非常に重く受け止められたのかなというふうに思います。今回の減額措置の内容、考えについてお伺いしたい。一般企業ですと、一職員の不祥事に対し所属長までの処分ということは理解するところなのですけれども、トップまで責任を取るというところの、その辺の考えについて確認をさせていただきたいと思います。",
+    "text_length": 227,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-034",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事案につきましては、飲酒運転のみならず事故後の措置義務違反もありまして、市としては重大な事案であると認識しております。これまでも市は、交通安全協会や室蘭警察署、連合町内会などの市内関係団体と連携しまして飲酒運転根絶に係る啓発や運動、繁華街でのパトロールを続けてまいりました。しかし、平成29年11月に登別市内で飲酒運転による死亡交通事故が発生するなど、いまだ飲酒運転による事故が後を絶たず、市としましても飲酒運転の根絶を重要な課題とし、取り組んでいる中で職員が起こした事件となりました。今回運転していた職員は懲戒免職、同乗していた職員にも停職４か月と厳しい処分を行いましたが、今回の事案によって市民の信頼を大きく損ねたことを鑑みまして、組織のトップとして市長が自らを戒める意味を込めまして給料の減額を決断したと考えてございます。\n　以上です。",
+    "text_length": 374,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-035",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。職員の教育ですとか、そういうところをしっかり行っていれば、もしかしたらこの職員、普段の職務態度ですとかは私たちは知り得るところではありませんが、懲戒免職にまで至ったということは非常に重いのかなと。逆に言うと、そういうことからどうして守ってあげられなかったのかなというふうに感じるところであります。今後このようなことが二度とないようにしっかり対応していただきたいと思います。\n　終わります。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-036",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "田中議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回起きた事案に対しての職員監督責任の在り方として、給与条例の一部改正に至ったのでしょうけれども、市民感覚からいたしますと、起きた事案、あまりにも重大かつ悲しい事案であります。それに比べて給与の１か月10％、並びに５％の減額で、全職員に対してのトップの責任の示し方及び市民に対しての責任の示し方として、果たしてこれでいいのでしょうか。その点をお聞きいたします。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-037",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "小笠原市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事案について、千田議員からもご質問があったことについては、土門総務部次長が答えたとおりでございます。しかしながら、ただいま田中議員のほうからありました処分の内容についてでございますが、減額における金額の大小とは関係なく、やはりトップが社会的な責任の一端ということを鑑みますと、本人が事故を起こし、複数の違反をしたという件についての組織のトップとしての責任。それと先ほど土門総務部次長のほうからも説明がありましたけれども、普段啓発活動を率先している組織の側から見て、組織の中で啓発をしていながらも、このことについての事案を起こしてしまった社会的責任ということをこれから未来にかけて、様々な啓発を改めて責任を持って自覚をし、活動していくことこそが皆さんに対しての礼になるのかなと思っております。ただ、先ほど千田議員のほうからは逆のお立場でご質問ありました。所属長としてでいいのではないかというご質問があったり、人によっては多くの考え方がございます。したがいまして、私としては金額の大小ではなくて、けじめとして、まずこういうことをさせていただき、これをまた皆さんにご承知おきいただいた上で未来の部分、行動もしっかりと注視していただければなという思いで今回の動きに至ったというふうにご理解いただければなと思っております。",
+    "text_length": 559,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        111
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-038",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "田中議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今までの一般質問において、過去に私は市長の覚悟ということでお尋ねしたこともあろうかと思うのです。今回自らの戒めということでの条例改正ということなのでしょうが、そこには市長としての覚悟、市民に対する覚悟、全職員に対する市長としての在り方というものが常に問われているのではないかなと私は考えるのです。だから10％減額したからいい、私は数字の多寡を申し上げているわけではないのです。そこにどういうような思いや考え方が含まれているのか、そういったものをきちんとお示しする必要があるのではないのかなと。そういうふうに考えますので、今のような質問をいたしました。この点について何かありましたらお願いします。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        113
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-039",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "小笠原市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "質問の内容につきまして、私どものほうの説明不足があったことにつきましては、おわびを申し上げたいと思います。しかしながら、この件に関しましては私たちにとっても、とても重大な案件で捉えておりますので、この議論の中でしっかりとした自覚を職員、そして私、皆で持つということをやはり大事にしていきたいなと思いますので、それが未来への行動の結果につながっていくというふうに私も信じております。日頃から、私自身は５つの徳というものを職員の皆さんと体現をしながらしているつもりですが、やはりその中に思いやり、真心を持つための仁であったり、駄目なものは駄目だというふうに、なすべきことをすべき義に対して、まだまだ足りなかったのかもしれません。そういったところをもっと礼を尽くしながら、市民の皆様にご理解いただけるように精進してまいりたいなと思っております。",
+    "text_length": 369,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        115
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-040",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "田中議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありがとうございます。当然でしょうが、二度とこういった事故等は起こさないという決意はあろうかと思うのですが、最後に市長として二度とこういったことは起こさないといった決意についてお伺いいたします。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        117
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-372-2-041",
+    "municipality": "noboribetsu",
+    "council_id": 372,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月24日－01号",
+    "date": "2022-01-24",
+    "speaker": "小笠原市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "少し重複するところがあると思いますけれども、まず今回の事案については、職員一人の行動が多くの職員、そして私たちの信頼に非常に関わっておりました。この信頼につきましては、一朝一夕ではつくられるものではなくて、日頃の市民への対応であったり、もしくは市民のことへの思いというのですか、そういった心をどうやって一人一人に宿していくかということが必要だというふうに思っておりますので、私自身いま一度自分を戒めるつもりで、職員と共に市民のために何ができるかということをしっかりと言葉で職員の皆さんと語りながら、その方向性についてぶれがないようにしっかりとした行政の立場としての動きを様々な分野で行っていくことを決意をさせていただきたいと思います。",
+    "text_length": 317,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/372.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        119
+      ]
+    }
+  }
+]

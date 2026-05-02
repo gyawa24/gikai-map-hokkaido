@@ -1,0 +1,877 @@
+[
+  {
+    "id": "hidaka-201-1-001",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "建設課長（吉田和彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず最初に、議案書の１ページ、２ページでありますが、一部訂正する箇所がありましたので、本日お配りしたものと差し替えをお願いいたします。\n　それでは、議案書の１ページを御覧願います。議案第１号　工事請負契約についてご説明申し上げます。\n　令和４年６月28日入札に付した令和４年度道路メンテナンス事業橋梁長寿命化修繕工事（川越橋）の予定価格が5,000万円以上となりましたので、地方自治法第96条第１項第５号の規定に基づき、請負契約を締結することについて議会の議決を賜りたくご提案申し上げます。\n　本工事入札は、町内５者により指名競争入札にて執行いたしました。落札率につきましては99.3％でございます。\n　次に、工事内容についてご説明申し上げます。次のページを御覧ください。工事名、令和４年度道路メンテナンス事業橋梁長寿命化修繕工事（川越橋）、工事場所、沙流郡日高町字豊郷地内で、施工位置につきましてはお手元配付の資料のとおりとなっております。工事の概要でありますが、橋梁補修Ｌイコール51.7メートル。工期につきましては、契約締結日の翌日（閉庁日の場合は翌開庁日）から令和４年12月20日まで。契約金額は6,270万円。契約の相手方は、沙流郡日高町富川南３丁目２番32号、株式会社磯田組代表取締役、磯田洋一氏であります。\n　以上が本議案の内容でございます。ご承認方よろしくお願いいたします。",
+    "text_length": 595,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-002",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "教えていただきたくて質問いたします。\n　工期の、今さらなのですけれども、契約締結日の翌日ということで、括弧書きもあるのですが、多分入札が６月28日ということですから、仮契約済んでいるのでないかと思うのですけれども、議会の議決を得てから契約ということになるのかなと思いますので、例えば今日議決になったらいつの日が契約締結日になるか教えていただきたいと思います。執行側で考えている部分です。\n　それと、契約金額について予算額を教えていただきたいと思います。予定価格等々については今日入札の執行調書が回ってまいりましたので、確認できましたのですが、予算額を教えてください。",
+    "text_length": 283,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-003",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "建設課長（吉田和彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまの質問にお答えいたします。\n　まず、１点目の契約締結日の関係だったのでございますが、本日議会の議決をいただきましたら、相手の都合にもよるのですけれども、準備ができ次第、今日もしくは明日契約を締結できればなというふうに考えてございます。\n　次に、予算額でございますが、４月の第２回会議におきまして補正予算を組まさせていただきまして、予算現額が6,500万円でございます。\n　以上です。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-004",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "教育委員会管理課長（本間一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日配付いたしました議案書の３ページを御覧願います。議案第２号　スクールバスの取得についてご説明申し上げます。\n　令和４年７月４日入札に付しました小中学校用スクールバスの取得につきましては、３業者による入札を行ったものでありますが、予定価格が1,000万円以上となりましたので、議会の議決に付すべき契約及び財産の取得又は処分に関する条例第３条の規定に基づき議会の議決をいただこうとするものであります。\n　内容につきましてご説明申し上げます。４ページを御覧願います。財産の種類は中型自家用バス。数量等は、中型自家用バス一式１台、乗車定員41名。取得価格は2,281万920円。取得先は、日高町富川西３丁目５番１号、株式会社伊藤商会スズキアリーナ富川代表取締役、伊藤健一氏であります。\n　なお、落札率につきましては84.17％であります。\n　以上が本議案の内容でございます。承認方よろしくお願い申し上げます。",
+    "text_length": 402,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-005",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "３点ほどお聞きします。\n　このバス、どちらに配車になるのか予算のときに聞いたかも分からないのですが、再度教えていただきたいのと、予算額と予定価格を教えていただきたいのと、今日配付になりました入札の執行調書にこの部分がなかったように、僕見落としているのかも分からないのですが、朝頂いたものですから、どのような形で行っているのかお聞かせをいただきたいと思います。入札です。",
+    "text_length": 184,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-006",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "教育委員会管理課長（本間一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員のご質問にお答えします。\n　まず、どちらに配車ということになりますけれども、門別中央線の入替えとなりますので、路線としては門別小学校、中学校区の主に庫富だとか旭町方面を走る車になっております。\n　続きまして、予定価格ですけれども、2,710万円となっております。予算額につきましては、予算書持ってきていませんので、申し訳ありません。\n　あと、処分のほうでありますけれども、今後車のほう一応……\n　　　　　　　　　　　　（「入札の方法聞いただけです」の声あり）\n入札の方法は……",
+    "text_length": 242,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        25,
+        26
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-007",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "技術審議室長（矢野雅章君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員の３点目の質問にお答えいたします。\n　まず、最初に触れておられました入札執行調書の部分なのですけれども、実は工事については入札適正化法の該当ということもありまして、公表の原則があるものですから、調書を配りますし、あとホームページにも結果は全て載せております。ただ、物品、役務につきましては公表の法律、規則等はございません。それから、予定価格等につきましても財務規則上公開することができるような規定がございませんので、その調書を出すことが今までもきっとお渡ししていないのではないかと思います。ただ、入札の詳細についてはお答えいたしますので、昨日、７月４日入札を執行させていただきまして、入札案内した業者は16業者ございました。町内、町外業者に対して入札案内をかけました。ただ、それに対して、特殊な車と言うのはあれなのですけれども、３業者応札されまして、そのうち１者、先ほど管理課長から説明いたしました伊藤商会スズキアリーナ富川さんが税込みの金額で今回入札したのですけれども、それで落札したという形になっております。\n　以上です。",
+    "text_length": 467,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-008",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予算額はいつお答えいただけますか。今でなくてもいいのですけれども、議決してしまってからというのもいいのですけれども。",
+    "text_length": 58,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-009",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "教育委員会管理課長（本間一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申し訳ありませんでした。６月補正予算で計上させていただいております金額ですけれども、合計で2,826万1,000円、内訳としましては備品購入費で2,819万3,000円、スクールバス購入と。あと、役務費で保険料２万7,000円、公課費で自動車重量税で４万1,000円となっております。その合計が2,826万1,000円となっております。\n　以上です。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-010",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "要は僕聞いているのは2,281万920円に対する予定価格と予算額をお聞きしたつもりなのですけれども、この2,281万920円の中に重量税だとか保険だとか入っているのですか。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-011",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "教育委員会管理課長（本間一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n　結論から言いますと、入っております。といいますのも消費税等の部分で課税、非課税の部分出てきます。重量税だとか非課税になってくる部分出てきますので、消費税の分抜くと煩雑な部分になりまして、業者のほうとしても見積りの部分で支障出てきますので、全ての税金を金額含めた部分で計上しておりますので、諸経費等も含めての金額となっておりますので、全て含めた金額となっております。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-012",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "１番（高橋克徳君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "16業者に案内をされて３者の入札ということで、この入札に当たっての仕様書、例えばバス、定員41名で何㏄のバスをということでご案内したのか、その辺の内訳をお教えいただきたいと思います。",
+    "text_length": 91,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-013",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "教育委員会管理課長（本間一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えします。\n　中型自家用バスで5,200㏄です。仕様書等いろいろありますけれども、どうしてもバスということで16者案内出しても地元業者等はなかなか難しかったという形になっております。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-014",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "１番（高橋克徳君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私勉強不足なのですけれども、スズキのバスというのはあるのでしょうか。これのメーカーはスズキではないのでしょうか。その辺もお教えいただきたいと思います。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-015",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "教育委員会管理課長（本間一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えします。\n　スズキ自体にはバスは造っていないと思います。教育委員会としまして想定していたのは日野かいすゞのバスということで考えておりました。どこでも車が入るという形になりますので、落札業者からどちらかの仕様の、日野といすゞのバスの仕様、元が一緒というか、ほぼ同じものなので、それが入ることを想定されています。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-016",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "１番（高橋克徳君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そうしますと、仕様書配付のときに日野あるいはいすゞの5,200㏄の41名乗りのバスということでご案内をなさったのか、そして今回入られたのはどこのメーカーなのでしょうか。",
+    "text_length": 84,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-017",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "教育委員会管理課長（本間一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今仮契約行っていますけれども、そちらのほうでは製造メーカーは日野の自動車という形になっております。仕様書のほうにはメーカー自体は明記せず、こういう仕様でという形ですので、それに当てはまるものというのがこちらで想定している２社の部分となっております。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-018",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案書の５ページを御覧願います。議案第３号　令和４年度日高町一般会計補正予算（第３号）につきましてご説明申し上げます。\n　このたびの補正につきましては、新型コロナウイルス感染症対応地方創生臨時交付金事業、踏切工事に係る道路整備事業が主なものであります。\n　第１条は、歳入歳出予算の補正で、歳入歳出予算の総額に歳入歳出それぞれ１億5,074万3,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ111億4,892万5,000円といたそうとするものでございます。\n　10ページをお開き願います。初めに、歳入でございます。15款国庫支出金、２項国庫補助金、１目総務費国庫補助金につきましては、新型コロナウイルス感染症対応地方創生臨時交付金１億1,800万円の増。\n　６目農林水産業費国庫補助金につきましては、経営継承・発展等支援事業補助金で50万円の増でございます。\n　16款道支出金、２項道補助金、２目民生費道補助金につきましては、低所得の子育て世帯に対する子育て世帯生活支援特別給付事業費補助金70万円の増。\n　６目商工費道補助金につきましては、プレミアム付商品券発行支援事業費補助金1,260万円の増でございます。\n　19款繰入金、１項基金繰入金、１目財政調整基金繰入金につきましては154万3,000円の増、財源調整によるものでございます。\n　６目まちづくり推進事業基金繰入金につきましては1,740万円の増、道路整備事業に対する基金繰入れでございます。\n　次に、歳出でございます。11ページをお開きください。３款民生費、２項児童福祉費、１目児童福祉総務費につきましては10万6,000円の増、国庫支出金の精算による返還金でございます。\n　２目児童措置費につきましては1,000円の増、歯科健診等の歯科医への報酬から委託への組替えでございます。\n　４款衛生費、１項保健衛生費、８目感染症対策費につきましては１億3,190万1,000円の増、地域応援商品券発行事業で、需用費、役務費、補助金で１億2,686万7,000円、飲食店等利用促進事業補助金で433万4,000円、低所得の子育て世帯に対する子育て世帯生活支援特別給付金で70万円の増でございます。\n　６款農林水産業費、１項農業費、３目農業振興費につきましては、経営継承・発展等支援事業100万円でございます。\n　12ページをお開きください。８款土木費、２項道路橋梁費、２目道路新設改良費につきましては1,740万円の増、富川西南１号線ほか３路線道路整備工事費でございます。こちらが踏切工事についてでございます。\n　10款教育費、２項小学校費、１目学校管理費につきましては19万円の増、学校歯科医報酬の組替えによるものでございます。\n　３項中学校費、１目学校管理費につきましては14万5,000円の増、学校歯科医報酬の組替えによるものでございます。\n　以上が本議案の内容でございます。ご承認くださいますようよろしくお願い申し上げます。",
+    "text_length": 1248,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-019",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "11ページの農業振興費の関係なのですが、経営継承・発展等支援事業補助金ってどんな内容なのか、それとこの事業について規則、要綱等があるのでしょうか、あれば提示をお願いしたいと思います。\n　それから、12ページです。工事請負費1,740万ということで、ただいま執行側の説明で踏切ということだったのですが、私６月の議会でも予算書の記載の仕方については一般質問で質問させていただきました。その中で、この記載の仕方ではどこの道路をやるのかということが全く分かりません。しつこいですが、踏切ということなのですが、私の６月会議の一般質問が全然踏襲されていないというふうに私は思います。私に対して不親切な予算のつくり方だなというふうに思います。\n　それから、この件について踏切何か所なのか、町内の道路にかかる踏切、ＪＲの廃止の関係でお聞きしてはいたかと思うのですけれども、何か所、ここでほか３路線とありますから、４か所の踏切ということなのか、日高町内にある踏切４か所だけでしょうか。私だけの見た目でいくと結構あるような気するのですが、その辺お聞かせをいただきたいと思います。",
+    "text_length": 479,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-020",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "産業課長（湯村篤司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員の１点目のご質問にお答えいたします。\n　経営継承・発展等支援事業につきまして、内容のほう簡単に説明させていただきます。本事業は令和３年度から新たに措置されました国の補助事業になっておりまして、大まかに令和３年１月１日以降に農業の経営を継承した後継者に対して要件を満たした場合には補助金が交付されるというような内容になってございます。この事業の町の要綱なのですけれども、新たな事業ということと、今までこの事業の対象になった方がいらっしゃらなかったので、まだ整備できていません。それで、今回の支出に間に合うように要綱等は整備したいというふうに考えております。\n　以上です。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-021",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "建設課長（吉田和彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員の２点目の質問にお答えいたします。\n　まず、富川西南１号線ほか３路線道路整備工事でございますけれども、これは当初予算でこのようなタイトルで予算を計上させていただいたところでございます。まず、箇所数でございますが、今回予定しているのは４か所ということで計画してございます。町内にあります踏切の数でございますけれども、町内全域にある踏切自体はかなりあるのですけれども、町道として管理している踏切につきましては９か所となってございます。今回４か所ということになってございますので、残り５か所につきましては次年度以降の計画となってございます。\n　以上です。",
+    "text_length": 278,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-022",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予算書の記載の仕方でございますが、今建設課長もお答えしたとおり、当初予算でこういう表記になっておりましたので、もし今回変えるとしたら当初予算のこれを全部ゼロにして、また新たに表現するというのもやり方としてはやんちゃなのがありまして、当初予算と比較するために同じ表現としています。ただ、今後どうするかというのはまた、ほかというような表現を使うかどうかというのは別でございますけれども、当初予算でそうだったので、今回はこのような表現にいたしました。\n　以上です。",
+    "text_length": 229,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-023",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　農業振興費の要綱等々についてはまだできていないということなのですが、案というか、執行側の権限ということなのでしょうから、できましたらお示しをいただきたいと思います。\n　それと、今の道路の関係だったのですが、私の記憶では富川西南１号線ほか３路線というこの中身については私も聞いておりません。質問をしておりません。これが踏切なんていうことは、私は想定もしていませんでした。先ほど執行側の答弁で当初予算どおりということなのですが、私に対する説明としては大変不親切な説明だなというふうに思います。当初予算から踏切ということで説明があれば私どもも分かりますし、今日の説明で納得いくわけです。そういう意味ではこの予算書の記載の仕方については具体的な名前で今後とも対応していただかなければ、私が判断するのには困難を極めるということです。",
+    "text_length": 370,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-024",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員の予算書の記載の仕方でございますが、６月の一般質問のこちらの答弁でもお伝えしたのですけれども、こちらとしてはこちらで検討しますし、前の予定価格と工事の金額が分かるということがありますので、議会としては議会のほうで協議していただければと思いますので、そこのすり合わせをしながら来年度の予算書の記載については考えたいと思います。\n　以上です。",
+    "text_length": 173,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-025",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "建設課長（吉田和彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員の２点目の、２点目といいますか、ご質問だったのですけれども、まず工事名の関係だったのですけれども、踏切撤去に伴う道路整備工事ということでございまして、踏切撤去が原因なのですけれども、それに併せて部分的な改良をやりたいというふうに考えていまして、例えば踏切の部分だけでしたらその部分だけの撤去工事になるのですけれども、それに併せて縦断勾配だとか排水工事も含めますので、そういったことで道路整備という表記の仕方をさせていただいております。\n　あと、先ほど財政課長のほうも答弁していただいたところでございますけれども、今後表記の関係につきましては全庁的に統一されるのかどうかこれから検討されるということですので、それに合わせてこちらも表記していきたいなと。\n　それとさらに、当初予算の場合は全員協議会のほうで説明いたしますので、そのときにもう少し詳しく説明できればなと思っておりますので、今後ともどうぞよろしくお願いいたします。\n　以上です。",
+    "text_length": 422,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-026",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "９番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "いずれにしても、前向きな答弁ですので、そのように取り扱っていただきたいと思いますし、具体名がないと分からないのです。そういう意味で今の答弁に従って今後とも対応をしていただきたいと思います。いずれにしても答弁は要りません。",
+    "text_length": 110,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-027",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "１１番（真壁悦夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "10ページの新型コロナウイルス感染症対応地方創生と、あるいはプレミアム付商品券発行支援事業補助金の問題ですが、この３年間にわたって臨時交付金が積み重ねられてきたと思うのですが、総額は幾らになるのでしょうか。\n　それから、今回提案された２つの事業、原油価格や電気、ガス料金等の高騰が大変だということで中小企業を応援するという内容なのですけれども、今大変な問題になっているのは農業者の肥料代とかが倍化していて、とてもやっていけないという状況が生まれてきていますが、そういうことは町としてどのように、中小企業に対してはこういうふうにやりたいということなのですが、農業者とか漁業者とか、そういうほうの支援策というのは考えているのかということをお聞きしたいと思います。",
+    "text_length": 329,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-028",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "企画財政課長（林谷昌美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今までの金額全部というのはちょっと、令和２年からやっているので、２年度の資料は持ってきていないので、その金額については後で議会事務局のほうに届けたいと思います。\n　先ほどの農業についてでございますが、全員協議会でもお答えしたのですけれども、まだ国の方針等が決まっていませんし、そちらが決まってからこちらのほうも対応したいと思いますし、そのためにまだコロナの交付金については残しているということでございますので、具体的な国の方針についてはこれから産業課長のほうが答弁すると思います。\n　以上です。",
+    "text_length": 247,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-029",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "産業課長（湯村篤司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "真壁議員のご質問にお答えします。\n　第１次産業、特に農業者の肥料の高騰等は新聞報道等で大きく取り上げられているところでございます。肥料や飼料の高騰の情報につきましては早い段階から押さえておりまして、この地方創生臨時交付金のほうを活用した第１次産業への事業というのも継続して検討はしているところでありますが、今企画財政課長から答弁いただいたとおり、国の動向ですとか道の動きを確認させていただいて、その中で町として何ができるかというところを引き続き検討はしていきたいと思っております。今国のほうでは肥料高騰に対しては７割補填ですとかそういう話が出ておりますが、まだ明確なといいますか、正式決定されたものではありませんので、今後説明会等も予定されておりますので、そのような説明会に出席して内容を確認しながら町の支援策、農業者のほか燃油高騰に影響を受けるような部分というのは第１次産業もそうですし、ほかの業界も大きく影響すると思いますので、その辺総合的に判断をしまして事業を検討していきたいというふうに考えております。\n　以上です。",
+    "text_length": 462,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-030",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "１１番（真壁悦夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私どもは、長年の政策の弊害が今出ている、特にアベノミクスなどの失政というものも今回のウクライナ侵略に加えて大きな問題になっていると思うのですけれども、これ重大な政策課題だと思うのです。そういう点では町は日々値上がりというのはしていると思うのですけれども、１次産業の現状というものを調査したりしているのでしょうか。\n　それから、第一は国の政策です。国が予算を立てないと解決しない問題ですから、これについては徹底的に地方自治体が国にきちっと要求していくということ、特にここは軽種馬産業ですから、軽種馬産業でいうと飼料が膨大に上がっているということの地元の要望として国に反映させていくということが大事だと思うのですが、今こそそういうことをきちっとやっていかなければ大変な時期だと思うのです。そういう点で調査、そして国への要望、それをきちっとやっていくべきではないかと思うのですが。",
+    "text_length": 387,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-031",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "産業課長（湯村篤司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n　町のほうでも肥料の高騰を受けまして、町内でどれぐらい肥料の購入件数があるのかですとか、そのようなことは今調査をしていまして、件数の把握等は行っております。あと、個別の価格については把握するのに時間がかかりますので、ＪＡさんからの協力をいただきながらですとかほかの関係団体にも問合せを行いまして、細かい部分はまだまだこれから押さえていかなければならない部分だと考えておりますので、継続して調査は行っていきたいと思っております。真壁議員おっしゃられるとおり、地域の実情を訴えるというのは重要なことだと思いますので、北海道を通じてでも、あと説明会のような会議の場がありましたら地域の要求というのをしていきたいというふうに考えております。\n　以上です。",
+    "text_length": 333,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-032",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "１１番（真壁悦夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大変な国難情勢だと思うのです。こういうときこそ地方自治体が本当に力を発揮しなければならないときでないかなと。１次産業の方にきちっと寄り添ってやっていかなければならないなと思うのですけれども、町長、どうですか。",
+    "text_length": 104,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        84
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-033",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "町長（大鷹千秋君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、今回みたいな急激な、しかも大幅な高騰、その対策というのは地方自治体レベルの話でないものですから、今言われたように要望というのは今月日高総合開発期成会、町村会、道の要望、あるいは東京の中央要望行きますけれども、もちろんその中に入っていますし、日高にとどまらず、道の町村会、全国町村会、あるいは市長会みんな含めて似たような要望を地方各団体挙げてやっている最中です。それで、今内閣府のほうで物価・賃金・生活総合対策本部会議みたいなものがありまして、６月の下旬から会議をやって、今月も１回やったはずですけれども、先ほど産業課長答えたように、その中に肥料のほうは具体的に今プラン練られている最中です。そういったような国の動向と、この間道からも説明を受けたのですけれども、道は飼料のほうで事業を１つ考えていると。これは直接の価格の補填ではなくて飼料の自家生産の設備の補助みたいな説明を受けましたけれども、そんなことこれから出てくると思います。そうしたものを見極めながら、我々の役目としては隙間を埋める、あるいは国や道の制度に上乗せをすると、そういう役割だと思います。これまで各事業者、商工業の方中心ですけれども、コロナ対策で町で給付金出したときも例えば国の基準に乗らなかったもの、乗れなかったもの、そこを手当てするですとか、一定割合売上げ下がった、国が例えば50％だとしたら町は20％下がったらいいですよとか、そういう役割だと思っていますので、特に農業ですね、今肥料、飼料ですから。農業に関しては国の補填策になると思いますけれども、そういうのを見た上で今言った地方自治体としての役割をどういうふうに設計しようかなと思っていまして、内々こんな感じかなみたいなのはありますけれども、国の全容をまず見極めてからというふうに考えています。いずれにしても、何らかの手当ては必要だと思っていますので、今後そういうことでまた新たに予算提案する機会があると思います。",
+    "text_length": 822,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        86
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-034",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "３番（井上義生君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "11ページの産業振興費、産業課長ばかりで誠に申し訳ないのですが、後継者のチャレンジを応援します。上限100万円というような触れ込みで今回やっておられて、法人化だとか、生育のデータ管理のソフトを導入するとか、販路開拓、機械化導入だとか、非常に後継者の方をこんな大変なときにサポートすると、応援するというような大変いい補助事業だとは思います。100ほどの予算補正されているのですが、多分これ国と町で２分の１だと思うのですが、これ一応今のところ２件ぐらい出ているかとか、見込みがあるからということでよろしいのでしょうか。",
+    "text_length": 257,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        88
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-035",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "産業課長（湯村篤司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "井上議員のご質問にお答えいたします。\n　この事業につきましては、当初予算の編成段階では対象者がいないということで当初予算には計上していなかったのですけれども、議員もお調べになっているのかなと思うのですが、第１次募集ということで７月29日まで募集期間がありまして、このタイミングで１件対象になって、この事業に申し込みたいというような情報が入りまして、急遽補正予算のほうを計上させていただいたところでございます。\n　以上です。",
+    "text_length": 211,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        90
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-036",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "３番（井上義生君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１次募集ということなので、２次、３次があるのかどうかあれなのですが、先ほどもお話がありましたように大変な時期でございますので、このようなバックアップ、少しでも力になれるようなことがあればいいと思いますので、もっと周知をしていただいて、これを活用できるような環境を備えていただければよろしいかなと思います。\n　以上でございます。",
+    "text_length": 163,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        92
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-037",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "産業課長（湯村篤司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貴重なご意見ありがとうございます。事業の内容的にはかなり限られた、絞られた内容になっておりますので、周知につきましては各ＪＡなり関係機関通じてこの事業の周知を図っていきたいと思っております。\n　以上です。",
+    "text_length": 102,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "hidaka-201-1-038",
+    "municipality": "hidaka",
+    "council_id": 201,
+    "council_name": "令和 ４年  ７月会議",
+    "schedule_id": 1,
+    "schedule_name": "07月05日－01号",
+    "date": "2022-07-05",
+    "speaker": "水・くらしサービスセンター所長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案書の13ページをお開き願います。議案第４号　令和４年度日高町下水道事業会計補正予算（第２号）についてご説明申し上げます。\n　今回の補正予算は、ストックマネジメント計画で富川浄化センター更新協定の一括設計に伴う継続費の計上でございます。\n　第１条、令和４年度日高町下水道事業会計の補正予算（第２号）は、次に定めるところです。\n　第２条、令和４年度日高町下水道事業会計予算第９条を第10条とし、第５条から第８条までを１条ずつ繰り下げ、第４条の次に第５条とし、次の１条を加える。\n　第５条、継続費の総額及び年割額は、次のとおりと定める。\n　14ページをお開きください。継続費に関する調書でございます。１款資本的支出、１項建設改良費、事業名、ストックマネジメント計画富川浄化センター更新協定委託料につきましては、総額２億900万円、令和４年度が4,000万円、令和５年度が１億6,900万円であります。当初はストックマネジメント計画に基づき、汚泥脱水設備及び監視制御設備等の更新のため、令和４年度、令和５年度２か年、それぞれ単年度会計において事業を計画し、３月議会では令和４年度事業4,000万円の予算のみを議決していただきましたが、その後北海道との交付金事業協議の結果、令和４年度に製作機器までを、翌令和５年度に既存の設備の撤去と更新機器の据付けを２か年事業として一括実施することが望ましいという判断に至り、４月１日申請の上、承認されましたので、このたび令和５年度の継続費として補正いたそうとするものであります。\n　承認くださいますようよろしくお願い申し上げます。",
+    "text_length": 681,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/201.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        101
+      ]
+    }
+  }
+]

@@ -1,0 +1,485 @@
+[
+  {
+    "id": "obihiro-816-2-001",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "小池晃一事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告いたします。\n　本日の出席議員は29人全員であります。\n　次に、今期臨時会につきましては、市長から去る５月２日付をもって招集告示した旨の通知がありましたので、直ちに各議員宛て通知いたしております。また、同日付をもって市長及び関係機関の長に対して説明員の出席要求をいたしております。\n　次に、議案の配付について申し上げます。\n　今期臨時会に付議事件として受理しております専決処分の報告並びに承認について外１件につきましては、５月２日付をもって各議員宛て送付いたしております。\n　最後に、本日の議事日程でありますが、お手元に配付の議事日程表第１号により御了承いただきたいと思います。\n　報告は以上であります。\n　　　　　～～～～～～ 〇 ～～～～～～",
+    "text_length": 325,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-2-002",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "小池晃一事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "選挙の手続につきまして御説明申し上げます。\n　議長選挙につきましては、後ほど行われます副議長選挙も同様でありますが、地方自治法第118条第１項の規定によりまして、公職選挙法第46条第１項及び第４項、第47条、第48条、第68条第１項並びに第95条が準用されます。したがいまして、投票は単記無記名でありますので、被選挙人の氏名お一人を自ら記載されまして、帯広市議会会議規則第29条の規定により職員の点呼に応じ、順に演壇の上にございます投票箱に投票用紙を投入することになります。\n　なお、白紙、他事記載、あるいは２名以上を記載した投票等は無効になります。\n　説明は以上であります。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-2-003",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "米沢則寿市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和５年第２回帯広市議会臨時会に当たりまして、一言御挨拶申し上げます。\n　去る４月23日の帯広市議会議員選挙において、市民の負託を受け、当選された皆様に心からお喜びを申し上げます。\n　先ほど議長、副議長が選出をされ、第23次帯広市議会の体制が発足しました。地方自治を担ういわゆる車の両輪として、議員の皆様と活発な議論を交わし、誰もが幸せに暮らし続けられる住みよいまちづくりに取り組んでまいりたいと考えております。\n　ポストコロナの時代において、この地域がさらに発展し明るい未来を切り開いていくためには、経済や環境、暮らし、それぞれの視点から互いの取組みを結びつけ、新しい価値を生み出していくことが重要であるものと考えております。これまで高めてきました地域の魅力や強みを最大限に生かし、十勝・帯広の活力ある未来づくりに取り組んでまいりますので、御理解、御協力のほどよろしくお願い申し上げます。\n　結びに、議員の皆様の御健勝と御活躍を祈念し、私の挨拶といたします。どうぞよろしくお願いいたします。（拍手）",
+    "text_length": 450,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-004",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "小池晃一事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告いたします。\n　本日の出席議員は29人全員であります。\n　次に、追加議案の付議について申し上げます。\n　本日付、市長から帯広市監査委員の選任についてを追加付議する旨通知がありましたので、本日お手元まで議案を配付いたしております。\n　次に、会議案の提出について申し上げます。\n　石井宏治議員外５人から会議案第２号が提出されておりますので、本日お手元まで配付いたしております。\n　なお、会議案第２号については、議会側付議事件として市長に対し告示依頼をいたしております。\n　次に、会派届出事項変更届について申し上げます。\n　５月12日付、立憲民主・市民連合会長から楢山直義副議長が所属会派を離脱した旨及び役員を変更した旨の届出が、市政会会長から横山明美議長が所属会派を離脱した旨及び役員を変更した旨の届出がそれぞれありましたので、変更後の会派所属名簿を本日お手元まで配付いたしております。\n　最後に、本日の議事日程でありますが、お手元に配付の議事日程表第２号により御了承いただきたいと思います。\n　報告は以上であります。\n　　　　　～～～～～～ 〇 ～～～～～～",
+    "text_length": 480,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        5
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-005",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "２６番（石井宏治議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石井　宏治",
+    "member_faction": "自由民主党・無所属の会",
+    "text": "会議案第２号帯広市議会委員会条例の一部改正につきまして、提案理由の説明をいたします。\n　本案は、新たな議会構成に伴い、議会運営委員の定数を７人から８人とするものであります。\n　よろしく御審議賜りますようお願い申し上げます。",
+    "text_length": 111,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-006",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "１８番（播磨和宏議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "播磨　和宏",
+    "member_faction": "日本共産党帯広市議会議員団",
+    "text": "先ほど行われました総務委員会で、委員長に私播磨和宏が、副委員長に今識史委員がそれぞれ互選されました。\n　今、デジタル社会が速いスピードで進む中で、帯広市議会でも総務委員会の中でしっかりと議論を尽くしていく、そして円滑に運営していくために全力を尽くしていきます。よろしくお願いいたします。（拍手）",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-007",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "４番（椎名成議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "椎名　成",
+    "member_faction": "公明党",
+    "text": "ただいま休憩中に厚生委員会が開かれまして、私椎名成が委員長に、そして大平亮介委員が副委員長に互選されました。\n　委員会の中において地域の実情をしっかりと受け止めて、そして議論を深めて、よりよい行政の運営に資することができるように努めてまいりたいと思いますので、各委員の皆様、そして理事者の皆様、どうかよろしくお願いいたします。（拍手）",
+    "text_length": 167,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-008",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "８番（林佳奈子議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "林　佳奈子",
+    "member_faction": "",
+    "text": "ただいま休憩中に経済文教委員会が開かれまして、委員長に私林佳奈子が、そして副委員長に三浦勇利委員が選任されました。\n　経済文教委員会は、経済、教育を中心として様々な所管事項がございます。皆様の御協力を得ながら、しっかりと議論してまいりますよう努めてまいります。どうか理事者の皆様、そして各委員の皆様、今後よろしくお願いいたします。（拍手）",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-009",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "１４番（上野庸介議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま休憩中に行われました建設委員会において、委員長に私上野庸介が、副委員長に工藤進委員がそれぞれ互選されました。２年間どうぞよろしくお願いします。（拍手）",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-010",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "２６番（石井宏治議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石井　宏治",
+    "member_faction": "自由民主党・無所属の会",
+    "text": "ただいま休憩中に議会運営委員会が開催されまして、委員長に私石井が、副委員長に菊地ルツ委員がそれぞれ互選されました。\n　円滑な議会運営はもとより、より積極的な議会運営を目指してまいります。ただ、何分不慣れな点も多々あります。委員会の皆様の御支援、御協力をお願い申し上げまして、委員長就任の挨拶に代えさせていただきます。どうぞよろしくお願いいたします。（拍手）\n　　　　　～～～～～～ 〇 ～～～～～～",
+    "text_length": 199,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-011",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "２６番（石井宏治議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石井　宏治",
+    "member_faction": "自由民主党・無所属の会",
+    "text": "ここで動議を提出いたします。\n　ただいまの十勝圏複合事務組合議会議員の選挙につきましては、地方自治法第118条第２項の規定により指名推選によることとし、なお私から指名することの動議を提出いたします。よろしくお取り計らい願います。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-012",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "２６番（石井宏治議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石井　宏治",
+    "member_faction": "自由民主党・無所属の会",
+    "text": "それでは、指名いたします。\n　十勝圏複合事務組合議会議員には、同組合規約第５条第２項の規定による議員として横山明美議長を、また同条第３項の規定による議員として大和田三朗議員をそれぞれ指名いたします。よろしくお願いいたします。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-013",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "２６番（石井宏治議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石井　宏治",
+    "member_faction": "自由民主党・無所属の会",
+    "text": "ここで動議を提出いたします。\n　ただいまのとかち広域消防事務組合議会議員の選挙につきましては、地方自治法第118条第２項の規定により指名推選によることとし、なお私から指名することの動議を提出いたします。よろしくお取り計らい願います。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-014",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "２６番（石井宏治議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石井　宏治",
+    "member_faction": "自由民主党・無所属の会",
+    "text": "それでは、指名いたします。\n　とかち広域消防事務組合議会議員には、横山明美議長、椎名成議員、今識史議員、岡坂忠志議員、鬼塚英喜議員、大和田三朗議員、大林愛慶議員、稗貫秀次議員、佐々木勇一議員及び杉野智美議員をそれぞれ指名いたします。よろしくお願いいたします。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-015",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "２６番（石井宏治議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石井　宏治",
+    "member_faction": "自由民主党・無所属の会",
+    "text": "ここで動議を提出いたします。\n　ただいまの十勝中部広域水道企業団議会議員の選挙につきましては、地方自治法第118条第２項の規定により指名推選によることとし、なお私から指名することの動議を提出いたします。よろしくお取り計らい願います。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-016",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "２６番（石井宏治議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石井　宏治",
+    "member_faction": "自由民主党・無所属の会",
+    "text": "それでは、指名いたします。\n　十勝中部広域水道企業団議会議員には、同組合規約第６条第２項の規定による議員として横山明美議長を、また同条第３項の規定による議員として菊地ルツ議員をそれぞれ指名いたします。よろしくお願いいたします。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-017",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "米沢則寿市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "公金支出差止等請求控訴事件について御報告いたします。\n　この裁判は、帯広市在住の市民らが、西３・９周辺地区第一種市街地再開発事業への補助金支出の差止めなどを求め提訴していたものでございます。\n　これに対して、昨年４月19日、釧路地方裁判所において原告らの請求を却下及び棄却するとの判決が言い渡されたことは、同年５月16日に本議会で報告いたしたとおりであります。\n　その後、原告らはこの判決を不服として札幌高等裁判所に控訴しておりましたが、去る４月14日、同裁判所において控訴人らの請求を却下及び棄却するとの判決が言い渡され、一審の判決と同様に帯広市の主張が全面的に認められたものであります。\n　なお、控訴人らからは期限までに上告されなかったことから、帯広市の勝訴が確定したものであります。\n　以上、御報告といたします。",
+    "text_length": 359,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-018",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "米沢則寿市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第39号専決処分の報告並びに承認について御説明いたします。\n　本案は、令和５年４月１日に逝去された田本憲吾元市長のお別れの会を開催するため、実施に係る経費を追加し、その財源として地方交付税を追加したものであります。\n　よろしく御審議賜りますようお願いいたします。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-019",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "米沢則寿市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第40号令和５年度帯広市一般会計補正予算第３号のうち、歳出について御説明いたします。\n　第15款民生費は、電力、ガス、食料品などの価格高騰により負担が増加した住民税非課税世帯を支援するため、給付金及びその支給に係る経費を追加するものであります。\n　第65款職員費は、事業実施に伴い、会計年度任用職員の任用に係る経費などを追加するものであります。\n　次に、歳入について御説明いたします。\n　第40款地方交付税は、普通交付税及び特別交付税を追加するものであります。\n　第60款国庫支出金は、事業実施に伴う補助金を追加するものであります。\n　よろしく御審議賜りますようお願いいたします。",
+    "text_length": 292,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-020",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "米沢則寿市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第41号帯広市監査委員の選任について御説明いたします。\n　本案は、本市の監査委員のうち、議員から選任する監査委員に大竹口武光氏を選任いたしたく、地方自治法第196条第１項の規定により同意を得ようとするものであります。\n　よろしく御同意賜りますようお願いいたします。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "obihiro-816-3-021",
+    "municipality": "obihiro",
+    "council_id": 816,
+    "council_name": "令和 ５年第２回 ５月臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月16日－02号",
+    "date": "2023-05-16",
+    "speaker": "小池晃一事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告いたします。\n　先ほどの休憩中に各常任委員長及び議会運営委員長から、それぞれ閉会中継続調査の申出がありましたので、閉会中継続調査の申出について、議会側付議事件として市長に対して告示依頼をいたしております。\n　なお、付議事件につきましては、お手元まで配付いたしております。\n　報告は以上でございます。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/obihiro/minutes/816.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        74
+      ]
+    }
+  }
+]

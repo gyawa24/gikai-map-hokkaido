@@ -1,0 +1,1451 @@
+[
+  {
+    "id": "atsuma-340-1-001",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案２件、承認２件、報告５件であります。\n　議案第１号　財産の取得について。\n　ゼロカーボン・モビリティ導入事業における公用電気自動車の取得について、地方自治法および厚真町議会の議決に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第２号　令和４年度厚真町一般会計補正予算（第７号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ3,695万7,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ89億2,503万7,000円とするものであります。\n　歳出における補正の主な内容について、議会費では、各常任委員会の道外視察に係る議員費用弁償、職員旅費などの追加。総務費では、議会、各常任委員会の道外視察に係る随行職員旅費の追加。民生費では、電気、ガス、食料品等、価格高騰緊急支援給付金支給事業の追加。商工費では、大沼野営場管理事業における委員報酬等の追加であります。この補正の財源として、国庫支出金の特定財源で3,393万7,000円。繰越金の一般財源で、302万円と見積り収支のバランスを取ったところであります。\n　承認第１号　専決処分の承認（令和４年度厚真町簡易水道事業特別会計補正予算《第２号》）について。\n　地方自治法の規定により、専決処分したので同法の規定に基づき議会の承認をいただこうとするものであります。\n　承認第２号　専決処分の承認（令和４年度厚真町公共下水道事業特別会計補正予算《第１号》）について。\n　地方自治法の規定により、専決処分したので同法の規定に基づき議会の承認をいただこうとするものであります。\n　報告第１号　専決処分の報告（損害賠償）について。\n　報告第２号　専決処分の報告（損害賠償）について。\n　報告第３号　専決処分の報告（損害賠償）について。\n　報告第４号　専決処分の報告（損害賠償）について。\n　以上４件については、令和４年６月９日に◯◯◯において発生した草刈り作業中の飛び石による車両の破損事故について、当該物損事故に係る示談に必要な損害賠償額が議会において、指定されている専決処分事項に該当し、当該額の決定について専決処分しましたので、地方自治法の規定により報告するものであります。\n　報告第５号　専決処分の報告（豊沢地区大規模盛土造成地滑動崩落防止工事（その３）請負契約の変更）について。\n　令和４年８月10日開催の令和４年第７回厚真町議会臨時会で議決をいただいた、豊沢地区大規模盛土造成地滑動崩落防止工事（その３）請負契約について。工事施工中に設計変更が生じたため、地方自治法の規定に基づき専決処分したので、同法の規定により議会に報告するものであります。\n　以上が、本日ご提案申し上げております、議案の提案理由であります。よろしくご審議のうえご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 1248,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-002",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-003",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（大捕孝吉君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "説明資料のところなんですけれども、仕様のところで２ＷＤなんですけれども、この車種については４ＷＤというのは、ないのかどうか確認をしたんですか。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-004",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "４ＷＤについては、ございません。",
+    "text_length": 16,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-005",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "指名業者なんですけれども、◯◯◯の言ってみれば、本社と支社を競争させようとしたわけですよね。それで支店のほうが辞退したという状況のわけですけれども、同等の支店間で入札することが、できなかったかどうか。それについて、お伺いしたいと思います。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-006",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の指名業者につきましては、取得する物品仕様に書いてあるニッサンリーフ、こちらのほうの取扱いをしているディーラーということで、２社のほうを選定させていただきました。まず、この車種の選定について、ご説明させていただきたいと思いますが、品名、必要な選定の考え方ですが、本事業はＶ２Ｂいわゆる電気自動車の蓄電池の機能を活用して、施設に電力供給を行うことを基本としておりまして、必要とする容量電池については120ｋＷｈの容量を未来の電気自動車で賄う設計でございました。このことから１台当たり60ｋＷの蓄電容量が必要となりますが、現時点ではこの条件を満たす国産車種、数車種しかないということで、この日産の車種ということで選定させていただいたところでございます。この車種を取り扱っている会社のほうで、決めさせていただいたというところでございます。\n　以上です。",
+    "text_length": 375,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-007",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本社といいますか、どちらもこの車種の取扱いをしているディーラーということになりまして、この２社に選定をさせていただいたというところでございます。\n　以上です。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-008",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "このニッサンリーフの取扱いのある会社ということで、それぞれ違う会社という認識で、違うディーラーという認識でこの２社のほうを指名業者とさせていただいております。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-009",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "入札をするにあたって、同等の位置にある会社かどうかということなんですよ。苫小牧市の場合、支店ですよね。◯◯◯の場合は、本店じゃないですか。だからその位置関係が、ちょっと違うのではないかと。◯◯◯の例えばどこかの支店と、◯◯◯の苫小牧支店が入札で競争したというんだったら正当な競札と言えると思うんですけれども、この場合は会社の中の位置関係が違うのではないかなということなんですよ。それについてどうかという。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-010",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本社と支社の関係ではなく、別々の法人格ということで認識をしておりまして、この２社のほうを指名業者とさせていただいております。",
+    "text_length": 62,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-011",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-012",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-013",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "建設課長（佐藤義彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-014",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "建設課長（佐藤義彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-015",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        71
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-016",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（大捕孝吉君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この４件について、まず最初にどういう機械を使って草刈りをしたのか。それに対しての対応をどのようにやっていたのか、そのへんちょっとお聞きします。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-017",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、どういう機械かということですが、◯◯◯で保管している刈払機で行っております。なお、刃については円盤型のものを使っております。",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-018",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（大捕孝吉君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "円盤型の刃といいますと、俗に言う我々が言うチップソーという感じなんですか。ナイロンカッターとかではなくて。であれば、続けて質問しますけれども、我々も通常そういった機械は使うんですけれども、なぜこんなに石が飛ぶのかちょっと不思議に思うんですけれども。それと、４台の車ですよね。１台は破損は、なかったようですけれども。いずれにしてもこれだけの１台目に石がぶつかった時に、通常は気が付いて対策をすると思うんです。４台いっぺんに一振りで破損するなんてことは、考えられないんですよね。そのへんの対応をちょっとお聞きしたいんですけれども。",
+    "text_length": 263,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-019",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、事故が発生した経緯をご説明いたします。６月９日金曜日ですが、午前10時20分から午前10時50分の間に、この場所の草刈りを行っておりました。当時行っていた者については、草刈りをしている最中に車に損害を与えたということには気づいておりませんでした。その後、夕方、午後３時20分頃に教員の方が車のところに行って気づいた、発見されたということになっております。なお、翌日、その草刈りを行っていた者に校長と教頭が話を聞いた限り、実際、行っていた時には気づかず、今回その草刈りの時に損害を与えてしまったのではないかと、本人も了承をしているというところでございます。なお、そのワイヤーではなく円盤型のものを使っておりました。今、申し上げたとおり本人が気づいていなかったために、１回の振りではなくて数回の振りで４台に損害を与えたものと思われます。\n　以上です。",
+    "text_length": 376,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-020",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（大捕孝吉君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この内容、事故の概要についてですけれども、これガラスを破損しているんですよね。なぜ、その時に分からないで、本人が夕方まで分からないなんてことありますか。これ報告をしていただいていますけれども、我々納得できませんよ。たしかに被害にあった方には申し訳ないけれども、補償するのはそれは当たり前のことなんですけれども、この作業をしたことに対しての責任というのは、これ相当重いと思うんですよ。どうなんですか。ガラスが割れたのが分からなかったということですか。",
+    "text_length": 224,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-021",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ガラスが割れたことについては、本人には校長のほうから確認はしておりますが、やはりエンジン音等々で、ガラスが割れた損害について気づかなかったということであります。\n　以上です。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-022",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この件に関しては、ここに書かれている以上に非常に危険因子が含まれているということにやはり、気づかないといけないですよね。それは、この作業していた方が刈払機を使って作業する時に、石が飛ぶということを想定できなかったということなんですよ。これは、たまたま今回、被害にあわれた方には大変申し訳ないとは思いますが、一方で子どもたちでなかったからよかったということも言えるんですよね。基本的な考え方の中で、リスク管理が徹底というか一般常識なんですよ。そういうことができていなかったのかという疑問があるんです。そのあたりに関してはどうですか。",
+    "text_length": 265,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-023",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、この草刈りをしていた時間帯についてなんですが、10時20分から10時50分で児童に関しましては、この間、学習準備と３時間目に入っている状態で、近くに児童はいなかったということになります。校長からは基本、児童がいる近隣では行わないよう、まず指導はさせていただいております。\n　以上です。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        87
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-024",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そういうことを聞いているんではないんですよ。刈払機を使って作業する時に、石が飛ぶということをこの方は想定できなかったから、今回の事故が起きたということです。その時間たまたま児童がいなかっただけで、児童がいてもこの方は石が飛ぶということを想定しないのであれば、作業する可能性があるということです。ですから今回は、たまたまいなかったというだけですよ。でも、石が飛ばないという想定をしているんだったら、作業する可能性あるじゃないですか。そこのことを今、聞いたんです。",
+    "text_length": 230,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        89
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-025",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "その石が飛ぶことに関しましては、校長からまず作業員の方に改めて可能性があることをきちんと伝えまして、教育委員会からは校長のほうに厳重注意というかたちで、指導はさせていただいております。下司議員がおっしゃるとおり、本人に石が飛ぶという認識が欠けていたかもしれません。なので、そこを今一度、校長のほうからは指導させていただいております。\n　以上です。",
+    "text_length": 173,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-026",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（木本清登君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一つだけ質問します。この事故が起こったのは分かりましたが、今後の対策ですけれども、どのように対応していこうと考えていますか。具体的に教えてください。",
+    "text_length": 74,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        93
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-027",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の対策等につきましては、まず、草刈りを行う場合には、教員または、その周りに物を置いている方には、必ず草刈りを行う旨を周知すること。続いて、場所にもよりますが可能な限り複数人で行い、片方の方が防護ネットなどを活用して、飛び石があった場合にも損害が起こらないように対策をさせていただくとところでございます。なお、防護ネットにつきましては、今現在、予算のこともあります。そのへんも考慮して今後、対応していきたいと考えております。\n　以上です。",
+    "text_length": 220,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        95
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-028",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この刈払機による草刈りに伴う車両事故、車両に損害を与えた事故というのは今回、実は初めてではない。過去にもあったわけです。今回、再発した、起きたということは過去の教訓がそこに生かされていないということなんです。防災関係の研修をいろいろやりながらも、身近な防災ということに関して欠けている部分があるんではないかなというふうに、これで見えてくるということですね。ここは、こういう方がいるっていうことです。今回の方が特別ではないかもしれないんですよ。こういうことを想定できない方がいるということをそれを想定しながら、全体的な対策を求めたいというふうに思います。これは教育委員会だけの問題ではないと私は思いました。",
+    "text_length": 302,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-029",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "教育長（遠藤秀明君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この草刈り作業における損害賠償の報告をさせていただいたところなんですけれども、たしかに私ども、どのような事象であっても想像つかない、常識と思われているものがそうではないというものが存在したということが、今回の教訓でございます。これは、過去にも同様な事故等によって、被害につながってしまったということでございます。教育委員会といたしましても、これは各学校で今回の事例につきましては、既に共有させていただいております。ただ、これはこの草刈り作業だけに限らず、今後の学校における教育活動であったり、日常の生活におけるあらゆる活動に対して、何でもないだろうではなくて、常にそのことについて、改めて見つめ直すというきっかけ作りを常にするようにということで、これは学校長に対しても、しっかり指導させていただいたところでございます。また、これは教育委員会に限らず、この情報につきましては、町長部局としっかり情報を共有しながら、または町長部局からも私どものほうに、情報をいただきながら積み重ねをして再発、また新たな事象に対する事故防止のために取り組んでいくように、町長部局ともしっかり勉強させていただきたいと思っております。まずは、被害にあわれた方々に対して、私からもお詫び申し上げたいと思います。\n　以上でございます。",
+    "text_length": 552,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        99
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-030",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "副町長（西野和博君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "町といたしましても、町および関係機関における、そういう作業等につきまして危険等の洗い出しを進めながら、この対応について検証させていただき、周知をさせていただきたいと考えております。",
+    "text_length": 90,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        101
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-031",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "もう一つ質問させていただきたいと思います。今回は、校舎と教員住宅の間の草刈りということで、車両に関しては被害があったということですけれども、飛び石ですから建物のほうにも当然、飛んでいると思うんですが、そのへんの検証はされましたか。",
+    "text_length": 115,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-032",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "学校管理者の校長、教頭からの確認では、建物等に損害はなかったというふうに報告を受けています。\n　以上です。",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-033",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（三國和江君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この草刈りは、その日に決まったわけではないと思うんですよね。ある程度の日にちを決めてやっているんですから、やはりそこの各学校の目配り気配り。今日、作業が入ると言った時に、車をよけるとかいろんな面で配慮をするのが、私は本当だと思うんですよね。作業をする方には本当に申し訳ないんですけれども、そういう点も欠けていたのかなと思いますけれども、やはり一番上のトップの方がそういったことを目配り気配りいつもそういう状態でいなければならないというのは、これは一つの問題だと思います。やはりこれからも、そういったことを気を付けて、やる時にはまず最初に物があるかないか、そこらへんきちっと目配り気配りして、やっていただきたいと思います。\n　以上です。",
+    "text_length": 317,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-034",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この度の件につきましては、◯◯◯のみならず、ほかの学校とも先ほど教育長から申し上げたとおり、共有しております。三國議員がおっしゃるとおり、目配り気配りを徹底し、このような草刈り等を行う場合には、必ず教員、または学校関係者に周知するように徹底しております。\n　以上でございます。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-035",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（木本清登君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "いろいろ聞いていたんですけれども、町にもこういう作業員はいるから、毎日いろんな仕事がありますよね。作業というのは、まず初めにＫＹ活動って分かりますよね。それから始まるんだと思うんですけれども。普通、作業員はどこでもやっているんですけれども。今、１回もＫＹという言葉が出てきていないんですよね。まず、それから始めますというのが、作業の常識だと思うんですよ。そのへんどう考えていますか。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        111
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-036",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、木本議員のご質問、どのようなスケジュールで草刈り等を行っているかということだと解釈しておりますが、この度、◯◯◯につきましては校長から、今回の草刈り用務の人には年間スケジュールというかたちで状況を見ながら、草が伸びていれば刈るように指示をされておりました。今回、草刈りをするというのは校長のほうで把握はしておりましたが、他の教員等に周知がされていなかったということでございます。\n　以上です。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        113
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-037",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（木本清登君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "理解してくれてなかったのかなと思いますけれども、作業というのは毎朝、必ず、ＫＹって分かりますか。分からないんですよね。危険予知活動。これＫＹ活動です。所管の建設だと分かると思うんですけれども、まずそれを毎日、朝礼をやって今日はどんな危険があってどういうことが起きる、それを話し合ってそれではどうするか。こういうことを防いでいこうというその打ち合わせをやって、それから作業がどこでも始まるものなんです。前もあったから言おうかなと思って言わなかったんですけれども、その作業の原点というか危険を防ぐ方法、作業の危険の意識がないんじゃないですか。ＫＹ活動というのは一番大事なんじゃないですか。それから、いろんなことをやっていく。草刈りだけではなくていろんな作業の安全を確保してやっていけると思うんですけれども、そのへんどう思いますか。",
+    "text_length": 363,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        115
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-038",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "失礼いたしました。毎朝、学校においては朝礼、学校の職員の会議として、その日行われる教育活動、または催し物などについては、情報は共有され危険なもの、注意しなければいけないものは、共有されるところではありますが、今回のケースにつきましては、この草刈りについてきちんと職員間に情報が共有されていなかったということになります。\n　以上です。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        117
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-039",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（橋本豊君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事故の概要の中で、実際に作業されていた方は教員業務支援員となっておりますけれども、この方は普段からこういうような作業をされていたのかということをお聞きしたいと思います。それと同時に、常識的には、もしその場所を草刈りしたいということであれば、すぐそばに車両等があれば移動させてもらうとか、そのようなことを我々が一般的には考えると思いますけれども、そこらへんはいかがでしょうか。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        119
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-040",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、教員業務支援員につきましてですけれども、この方につきましては、学校において教員業務の円滑な実施に必要な支援に従事する者になっております。業務内容としましては、学習のプリントや家庭への配布物などの印刷、または新型コロナウイルスの感染症対策に係る業務の補助ですとか、その他、教員として専門的な知識および技能を要しない業務を行うことになっています。この方につきましては、草刈りを始めとした学校周辺の環境整備に係ることを行っておりまして、草刈りも行っておりました。ただ、この度、その活動業務を行う前に教職員皆さんに通知する、連絡するということは欠如していたという状況になっています。\n　以上です。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        121
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-041",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（伊藤富志夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今の教員業務支援員のことですが、私、現場にいた時には例えば簡単に、公務補さんなんて言い方をしていたんですが、公務補さんですよね、これが、一つ。あと、経験はその学校でどのくらいやられているか年数ですね。それを教えてください。",
+    "text_length": 111,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        123
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-042",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、公務補かどうかというところですが、公務補ではございません。また、別業務のことで携わっている方です。次に、経歴になりますが今年の３月、細かい具体的な日数のところは今、資料はないので申し訳ないのですが、３月より任用され今に至っているところでございます。\n　以上です。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        125
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-043",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（森田正樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今のお話を聞くと、３月ということは草刈りをやったことがない方なんでしょうか。基本的にやはり、草刈りをする時、先ほども皆、議員の方も言っていましたけれども、基本的に物があったら、そこはやらないとかよけるとかという考え方があるんですけれども。だから支援員の方は、草刈りのやったことがない方なのか、ちょっとそこらへんを教えていただきたいし、やはりそこらへんがきちんと先ほどもいろんな議員の方の説明もありましたけれども、しっかりした対応を取らないと本当、子どもに当たったら大変なことになるということをやはり危険ですよね。これで終わったからいいという問題ではないということで、もう一回見つめ直したほうがいいのではないかなと思います。そこらへんちょっとお願いします。",
+    "text_length": 327,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        127
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-044",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この方の経歴、面接は町教委のほうでやらさせていただいておりますが、前職においても草刈り等の作業は行っていた方で、経験も十分でございます。かつ◯◯◯に勤務してからも、この１回ではなくて数回、業務は行っている方です。\n　以上です。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        129
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-045",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回、この事故によって、そういうことが表に出たということは、逆に言うとそれが分かってよかったなと思います。一方で、この教員業務支援員の業務に関して、草刈り業務というのは、この業務の範囲に入るのかどうかということに関して、若干疑問があるんですが、そのへんはどうですか。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        131
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-046",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この方の業務として、環境衛生という観点で業務の一部として、町教委としては解釈しています。\n　以上です。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-047",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本当にその環境衛生の範囲で、この草刈り業務まで入るのかどうかというのは、ちょっと疑問なんですよね。学校側が都合のいいように、この方を使っていたという可能性はないですか。業務外の仕事でという話で。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        135
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-048",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この業務内容につきましては、町教委としては業務の中として解釈をしておりますが、内容につきましては、今一度、北海道のほうに確認をして精査をさせていただきたいと思います。\n　以上です。",
+    "text_length": 90,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        137
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-049",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（大捕孝吉君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今の教員業務支援員のことなんですけれども、たまたま今回、◯◯◯でこういうことが起きたわけですけれども、厚真町にほかの小中学校ありますよね。その中で、各学校にこの方々もいると思うんですね。この方々もこういうことをやっているという理解でよろしいんでしょうか。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        139
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-050",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "各学校におきまして、この教員業務支援員、各１人配置されておりますが、その人の能力を校長のほうで判断して、業務内容のほうはある程度、学校が判断して指示をしております。\n　以上です。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        141
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-051",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この問題すごい時間がかかっていますけれども、常識では起こりえないことなんですよ。今回の事故というか、何か別な要因があったのかなというものが見えるということですよ。それが先ほど私が言った、教員業務支援員というものに対する学校側の姿勢がどうだったのかということが、重要かなというふうに思うんです。これは公務補さんに対する態度からも見えてくるところがあるんですよ。非常にこれは異常な事故です。もう少し、損害賠償で終わらせるのではなくて、しっかりとした調査を私はするべきだと思います。",
+    "text_length": 238,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        143
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-052",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "教育長（遠藤秀明君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどの申し上げました、私からの回答と重複する部分がありますけれども、いずれにしましてもこの要因というのは、危険度が想定できるものについての事故というのは、なかなかあるんですけれども、全く想定していないものが起きたというのが、今回の事例でございます。という意味では、この学校の管理を今、学校長に委ねている部分も一部ございます。そういった中でその作業等、いろんな活動等がどのような影響があるのかということも含めて、しっかりとこの場合、今回は、教育委員会等を通してしっかり確認し合って、今後、再発の防止へしっかり結び付けたいというふうに考えてございます。この業務の在り方、各用務員の皆さんも含めて、それぞれの持っている業務でございます。ただ、今回の関わっていただいた、作業をされた方々そういう方の本来の作業の在り方だったり、どういうことが原因でこういうふうになったかというのを再度、改めて学校間と私たち教育委員会と含めて、確認させていただきたいというふうに考えております。",
+    "text_length": 434,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        145
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-053",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一応、今、教育長の発言中、用務員という言葉を使ったんですけれども、今、用務員という言葉を使わないと思うんですが、もしよかったら訂正をお願いしたいと思います。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        147
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-054",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "教育長（遠藤秀明君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大変失礼申し上げました。現在は公務補という、先ほどの用務員という表現につきましては、公務補に訂正させていただきます。失礼いたしました。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        149
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-055",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（大捕孝吉君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これらの一連の事故について、それぞれ、例えば学校長の指示によって教員支援員が作業をしたと。要は補償は町でやろうとしている、やっているんですけれども、これらの責任の所在というのはどうなんですか。先ほどの話から聞いていると、調査に対しても報告を受けて、説明を我々にしているわけですから、教育委員会としては全く現場へ行って見ていないというやり方で押していくということなのか、きちっと現場へ行ってやっているのか。それと一番大事なのは、やはりやった方々の責任の所在というのは、どういうふうになっているのか説明していただきたいと思います。",
+    "text_length": 263,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        151
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-056",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、この度、責任の所在というところになりますが、校長を含めた県費負担教職員の転任配置のところから入っていきますが、こちらにつきましては地方教育行政組織および運営に関する法律第38条に基づいて、町の教育委員会の内申をもって同法37条において、北海道教育委員会が任命をする者と定められております。また、同法第43条において、市町村教育委員会は県費負担教職員も含むの監督をしなければならないことが、うたわれております。さらに厚真町立学校管理規則において、校長は職員に対して公務を分掌させ、管理者として学校の適正かつ円滑な管理運営を行わなければならないとしております。つまり、今回の件につきましては、厚真町教育委員会として、学校の管理者として定めた者の指示によって損害が発生したということになります。なお、学校長または教頭のみだけで、現場を確認したのみならず、こちら教職員のほうも現場を確認して実施しております。\n　以上です。",
+    "text_length": 410,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        153
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-057",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（森田正樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今までの話の中で、現場の写真とか車の破損の画像をこちらのほうに載せて提出してもらうことはできるんでしょうか。やはり、話だけでは何か分からないというか、車がどういう状態になったのか。ガラスが割れたといってもどこの部分のガラスが割れたかというのも分からないし、飛び石が細かく飛んでいれば、車の横のサイドに細かくぶつかっているのを塗装しなければいけないとか、そういう部分で写真とかというのは、多分、補償の問題だから撮っていると思うので、場所はどこなのか。どこにどういうふうな配置で車を置いて、どのような草刈りをしたのかという詳細の画像などいただければ。どうでしょう。",
+    "text_length": 280,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        155
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-058",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "写真等については、後日皆さんにお示しいたします。",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        157
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-059",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "（大捕孝吉君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどの質問の続きなんですけれども、規定規則は今、説明していただいたんですけれども、それはそれでいいと思うんです。ただ、今回のこの事故についての責任の所在を聞いているんです。町教育委員会にあるのは分かりますけれども、この指示した人たち、あるいは作業していた人に対しての対応というのはどのようにしているのか。それともう一つは、報告を受けたという話は聞きましたけれども、こちらから確認に行っているのかどうかということも先ほど質問しているんですけれども、その答弁がないんですよね。そのへんちょっと。",
+    "text_length": 246,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        159
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-060",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、校長に教育委員会より厳重注意をさせていただいております。校長からこの草刈りを行っていた者に対して、指導指示をさせていただいております。なお、現場の確認につきましては、当日こちらのほうでは行けなかったのですが、後日、現場を確認しております。なお、先ほどの写真につきましては、学校長のほうで撮った写真を提供することになります。\n　以上です。",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        161
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-061",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほど皆さまに写真を提示するという件で、ただ今、電子データで掲載をいたしましたので、その説明をさせていただきます。\n　まず、場所につきましては図面によりますと、校舎それと左のほうに四角が２つ記載されていますが、これは校長公宅と教頭公宅になります。この校舎と住宅の間、赤色で塗りつぶした部分でございます。この部分につきましては、砂利の状態でありまして、そこに教職員が車両を駐車しているという状態になります。\n　続きまして、車両の物損の状況の写真を皆さんに説明いたします。まず１枚目、２枚目、３枚目、４枚目、５枚目、６枚目につきましては、同一車両になっております。これにつきましては、議案書本冊40ページの車両になります。サイドガラス、サイドミラー、それとフロントのボディに傷を負っています。枚数を開いていただきまして、続いて赤色の車両が出てきております。これにつきましては、議案書本冊44ページの車両になります。側面全体に対して、飛び石による傷の損害が発生しております。ページをめくっていきまして、灰色の車両になります。こちらが議案書本冊42ページの車両になります。サイドの運転席側のガラスに飛び石が当たり、損傷をしております。続いてページをめくっていただきまして、最後に黒い車になります。議案書本冊の46ページの車両になります。こちらにつきましては、ボディにへこみ傷がございますが、確認のための車両点検で、今回は、この草刈りの影響により負った傷ではないと断定されましたので、その検査に要した間に借りたレンタカーの費用だけが、補償の対象となっております。\n　写真の説明は、以上でございます。",
+    "text_length": 694,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        169
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-062",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "生涯学習課学校教育担当参事（中村真吾君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "なお、処分につきましては、この教職員の処分については、北海道が決定することでございます。北海道には、この旨のことを伝えておりまして、その点で町教員のほうには厳重注意、指導というかたちでされました。したがって町教委としましては、今回の校長または草刈りを行っていた者の処分を行うことは事実上できませんので、すべて管理者として、こちらが内申した者ということで保険会社と協議をしまして、保険会社のほうで町が責任を持って賠償すべき案件というふうに認められた次第でございます。なので、町教委としましては繰り返しになりますが、校長には厳重注意、校長から行った者に対しての厳重注意となっております。\n　以上です。",
+    "text_length": 298,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        171
+      ]
+    }
+  },
+  {
+    "id": "atsuma-340-1-063",
+    "municipality": "atsuma",
+    "council_id": 340,
+    "council_name": "令和 ４年 １０月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月17日－01号",
+    "date": "2022-10-17",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/340.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        176
+      ]
+    }
+  }
+]

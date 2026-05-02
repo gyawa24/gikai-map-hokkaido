@@ -1,0 +1,1544 @@
+[
+  {
+    "id": "kitami-307-2-001",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "皆さん、おはようございます。この後、令和４年第２回臨時北見市議会が開催されますが、本臨時会は一般選挙後、最初の議会でありますので、議長が選挙されるまでの間、地方自治法第107条の規定により、年長の議員が臨時に議長の職務を行うことになっております。本日の出席議員中、西垣内義章議員が年長議員でありますので、西垣内議員に臨時議長をお願い申し上げます。\nそれでは、西垣内議員、どうぞ議長席にお着き願います。\n　　　　　　　〔臨時議長着席〕",
+    "text_length": 216,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-002",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "三浦亨君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。市民・連合クラブ、三浦亨でございます。どうぞよろしくお願いいたします。",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-003",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "久保田貴行君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。市民・連合クラブの久保田貴行と申します。よろしくお願いいたします。",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-004",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "吉田哲君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。次代、新人の吉田哲です。よろしくお願いします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-005",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "林裕君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。次代、新人の林裕です。よろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-006",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "髙橋宜嗣君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。次代、新人の髙橋宜嗣でございます。よろしくお願いいたします。",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-007",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "髙田有修君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。次代、新人の髙田有修でございます。よろしくお願いいたします。",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-008",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "木村則夫君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。市政みらいの木村則夫です。どうぞよろしくお願いいたします。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-009",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "田村淑江君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市政みらい、田村淑江でございます。どうぞよろしくお願いいたします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-010",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "小野卓也君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市民・連合クラブ、小野卓也です。よろしくお願いいたします。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-011",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "川島章則君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市民・連合クラブの川島章則でございます。どうぞよろしくお願い申し上げます。",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-012",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "飯田修司君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。市民・連合クラブの飯田修司でございます。どうぞよろしくお願いいたします。",
+    "text_length": 46,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-013",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "高橋善治君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次代、高橋善治です。よろしくお願いいたします。",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-014",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "森谷隆文君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "かけはし、森谷隆文です。よろしくお願いします。",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-015",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "桜井由美子君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "日本共産党、桜井由美子です。よろしくお願いいたします。",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-016",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "菊池豪一君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "日本共産党、菊池豪一でございます。よろしくお願いいたします。",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-017",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "安藤憲彦君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。市政みらいの安藤憲彦でございます。どうぞよろしくお願いいたします。",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-018",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "高橋克博君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市政みらいの高橋克博でございます。どうぞよろしくお願いいたします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-019",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "長南幸子君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市民・連合クラブ、長南幸子でございます。よろしくお願いいたします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-020",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "浦西孝浩君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市民・連合クラブ、浦西孝浩です。よろしくお願いします。",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-021",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "加城博志君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次代、加城博志です。よろしくお願いいたします。",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-022",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "中崎孝俊君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。次代、中崎孝俊です。どうぞよろしくお願いします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-023",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "斎藤昭利君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "公明党、斎藤昭利です。どうぞよろしくお願いいたします。",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-024",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "合田悦子君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "公明党の合田悦子でございます。どうぞよろしくお願いいたします。",
+    "text_length": 31,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-025",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "鈴木建夫君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。市民クラブの鈴木建夫でございます。よろしくお願いいたします。",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-026",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "松谷隆一君",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "26番、市民クラブ、松谷隆一でございます。どうぞよろしくお願い申し上げます。",
+    "text_length": 38,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-027",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "副市長（浅野目浩美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "副市長の浅野目浩美でございます。どうぞよろしくお願いいたします。\n　本来であれば、辻市長から御挨拶を始めるところでありますが、既に報道発表等で皆様御承知のとおり、市長においては一昨日の４月19日にせきの症状が見られたため、病院を受診し、ＰＣＲ検査を実施したところ、新型コロナウイルス感染症の陽性が確認されたところであります。容体については軽症であり、現在自宅療養中でありますことから、大変恐縮ながら本日の本会議を欠席させていただくこととなりましたので、よろしくお願い申し上げます。\n　それでは、以下それぞれ理事者の自己紹介をさせていただきますので、よろしくお願いいたします。",
+    "text_length": 287,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-028",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "端野自治区長（杉浦豊君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "端野自治区長の杉浦豊でございます。どうぞよろしくお願いいたします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-029",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "常呂自治区長（須藤勇一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "常呂自治区長の須藤勇一でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-030",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "留辺蘂自治区長（皆川毅君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "留辺蘂自治区長の皆川毅でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-031",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "総務部長（我妻学君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "総務部長の我妻学でございます。どうぞよろしくお願いいたします。",
+    "text_length": 31,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-032",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "企画財政部長（船戸清司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "企画財政部長の船戸清司でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-033",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "総務部防災危機管理担当部長（小原智君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "防災危機管理担当部長の小原智でございます。どうぞよろしくお願いいたします。",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-034",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "市民環境部長（岡田和広君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市民環境部長の岡田和広でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-035",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "保健福祉部長（武田雅弘君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "保健福祉部長の武田雅弘でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-036",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "子ども未来部長（堀越順巧君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "子ども未来部長の堀越順巧でございます。どうぞよろしくお願いいたします。",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-037",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "農林水産部長（伊藤智則君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "農林水産部長の伊藤智則でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-038",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "商工観光部長（山田孝雄君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "商工観光部長の山田孝雄でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-039",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "都市建設部長（藤原義隆君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "都市建設部長の藤原義隆でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-040",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "地域医療対策室長（髙田直樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地域医療対策室長の髙田直樹でございます。どうぞよろしくお願いいたします。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-041",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "会計管理者（清水知彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "会計管理者の清水知彦でございます。どうぞよろしくお願いいたします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-042",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "選挙管理委員会事務局長（関口篤司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "選挙管理委員会事務局長の関口篤司でございます。どうぞよろしくお願いいたします。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-043",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "総務部次長（伊集院健介君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "総務部次長の伊集院健介です。どうぞよろしくお願いいたします。",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-044",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "教育長（志賀亮司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "教育長の志賀亮司でございます。どうぞよろしくお願いいたします。",
+    "text_length": 31,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-045",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "公営企業管理者（大江修君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "公営企業管理者の大江修でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-046",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "監査委員（加藤直信君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "代表監査委員の加藤直信でございます。どうぞよろしくお願いいたします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-047",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "第一・第二農業委員会事務局長（今出友浩君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "第一農業委員会並びに第二農業委員会事務局長の今出友浩でございます。どうぞよろしくお願いいたします。",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-048",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "学校教育部長（佐々木賢一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "学校教育部長の佐々木賢一です。どうぞよろしくお願い申し上げます。",
+    "text_length": 32,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-049",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "社会教育部長（塩浜浩二君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "社会教育部長の塩浜浩二と申します。どうぞよろしくお願いいたします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-050",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "上下水道局長（田中恵輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "上下水道局長の田中恵輔です。どうぞよろしくお願いいたします。",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-051",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "監査事務局長（安井留美代君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "監査事務局長の安井留美代でございます。どうぞよろしくお願いいたします。\n\n　　　　　午前１０時１１分　開　会",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-052",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "副市長（浅野目浩美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕　おはようございます。本日、ここに令和４年第２回臨時市議会が開会されるに当たり、提案いたしております諸議案の説明に入ります前に、市長に代わり一言御挨拶を申し上げます。\n　議員の皆様におかれましては、さきの市議会議員選挙において市民の皆様の御支持を受けられ、御当選されましたことを心からお喜び申し上げますとともに、今後より一層の御活躍を御祈念申し上げる次第でございます。\n　さて、新年度を迎え、また市議会議員の改選が行われてから初めての議会でもありますので、令和４年度市政運営の基本的な考え方などについて若干申し上げたいと思います。\n　まず、新型コロナウイルス感染症への対応は、今なお最優先で取り組まなくてはならない喫緊の課題であると同時に、そうした中にあっても新たな社会変革の波や気候変動への対応も待ったなしの大きな課題であります。人口減少、少子高齢化社会にあって本市が活力ある地域社会を維持していくためには、直面する課題に迅速かつ的確に対応していく必要があります。そのため、ＳＤＧｓの理念の下、誰もが住みやすい持続可能な地域社会の実現を目指してまいります。コロナ禍は、社会のあらゆる分野においてデジタルトランスフォーメーション、いわゆるＤＸの機運を高め、本市が先んじて推進してきたテレワークなどの急速な普及をもたらしております。本市の書かない窓口の取組を足がかりに行政手続のデジタル化を加速させ、デジタルファーストな自治体ＤＸを推進してまいります。\n　また、自然に優しい持続可能なまちづくりのさらなる推進を図るため、本市における温室効果ガスの排出量と吸収量を2050年までに均衡させる、いわゆる2050年カーボンニュートラルの実現に向けた施策にも取り組んでまいります。\n　ただいま申し上げました基本的な考え方をはじめ、特に令和４年度におきましては屋内子ども遊戯場パラきたＫｉｄｓの整備、独立した健診会場や調理実習室のほか、健康増進に活用できるウオーキングコースなどを備えた保健センターの整備、また中央大通沿道地区第一種市街地再開発事業への支援など中心市街地のにぎわい創出につながる取組を進め、第２期北見市総合計画前期基本計画に掲げる指標の達成に向け、一歩一歩着実に進めてまいります。\n　今後の市政の推進に当たり、改めまして議員の皆様、市民の皆様の御支援、御協力を心からお願い申し上げ、御挨拶とさせていただきます。どうぞよろしくお願いいたします。",
+    "text_length": 1027,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-053",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告を申し上げます。\n　ただいまの出席議員数は26名、全員出席であります。\n　次に、本日の議事日程表をお手元に配付いたしてございます。\n　以上であります。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-054",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、ただいまからお名前を申し上げますので、順次投票願います。\n　１番、三浦議員、２番、久保田議員、３番、吉田議員、４番、林議員、５番、髙橋宜嗣議員、６番、髙田議員、７番、木村議員、８番、田村議員、９番、小野議員、10番、川島議員、11番、飯田議員、12番、高橋善治議員、13番、西垣内議員、14番、森谷議員、15番、桜井議員、16番、菊池議員、17番、安藤議員、18番、高橋克博議員、19番、長南議員、20番、浦西議員、21番、加城議員、22番、中崎議員、23番、斎藤議員、24番、合田議員、25番、鈴木議員、26番、松谷議員。",
+    "text_length": 267,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-055",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議長就任の御挨拶は、副議長選挙後に副議長とともに行っていただくことにいたしたいと思いますので、よろしくお願い申し上げます。",
+    "text_length": 61,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-056",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、ただいまからお名前を申し上げますので、順次投票願います。\n　１番、三浦議員、２番、久保田議員、３番、吉田議員、４番、林議員、５番、髙橋宜嗣議員、６番、髙田議員、７番、木村議員、８番、田村議員、９番、小野議員、10番、川島議員、11番、飯田議員、12番、高橋善治議員、13番、西垣内議員、14番、森谷議員、15番、桜井議員、16番、菊池議員、17番、安藤議員、18番、高橋克博議員、19番、長南議員、20番、浦西議員、21番、加城議員、22番、中崎議員、23番、斎藤議員、24番、合田議員、25番、鈴木議員、26番、松谷議員。",
+    "text_length": 267,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-057",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、ただいま副議長が決定いたしましたので、ここで議長並びに副議長の就任の御挨拶がございます。\n　　　　　　　〔正・副議長登壇〕",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-058",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告を申し上げます。\n　ただいま議員提出議案第１号をお手元に配付いたしてございます。\n　以上であります。",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-059",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、各常任委員会の所属議員のお名前を申し上げます。\n　まず、総務教育常任委員会、三浦亨議員、高橋善治議員、髙橋宜嗣議員、高橋克博議員、斎藤昭利議員、菊池豪一議員、森谷隆文議員。\n　次に、福祉民生常任委員会、小野卓也議員、久保田貴行議員、吉田哲議員、安藤憲彦議員、松谷隆一議員、合田悦子議員。\n　次に、産業経済常任委員会、浦西孝浩議員、長南幸子議員、髙田有修議員、林裕議員、木村則夫議員、鈴木建夫議員。\n　次に、建設上下水道常任委員会、川島章則議員、中崎孝俊議員、加城博志議員、田村淑江議員、桜井由美子議員、西垣内義章議員。\n　以上であります。",
+    "text_length": 274,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        100
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-060",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "総務教育常任委員会委員長（高橋善治君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": "高橋　善治",
+    "member_faction": "新市政みらい",
+    "text": "誠に僣越ではございますが、ただいま選任いただきました各常任委員会の委員長を代表いたしまして、一言御挨拶を申し上げます。\n　急速に進む人口減少や少子高齢化の中で、これからもオホーツク圏域の中核都市として、さらなる市政の発展と豊かな市民生活の実現を目指し、行政事務の調査、審査機関として各常任委員会が十分に役割を果たし、市民の意思を市政に反映させるよう、誠心誠意努力をいたす所存でございます。議員の皆様、理事者の皆様におかれましては、様々な委員会活動に対し、御理解と御協力を賜りますよう切にお願い申し上げまして、甚だ簡単ではございますが、御挨拶に代えさせていただきます。どうぞよろしくお願いいたします。〔拍手〕",
+    "text_length": 303,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-061",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告を申し上げます。\n　ただいま各常任委員会の所管事項調査に関わる閉会中継続調査申出書をお手元に配付いたしてございます。\n　以上であります。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        110
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-062",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議会運営委員会の所属議員のお名前を申し上げます。\n　長南幸子議員、小野卓也議員、加城博志議員、髙橋宜嗣議員、木村則夫議員。\n　以上であります。",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        113
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-063",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "議会運営委員会委員長（長南幸子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": "長南　幸子",
+    "member_faction": "市民・連合クラブ",
+    "text": "〔登壇〕　このたび議会運営委員会の委員長に御選任いただきましたことに対し、心から厚く御礼を申し上げます。\n　今後におきましても民主的で円滑な議会運営の一助となるよう、委員一丸となって努めてまいる所存でございますので、議員各位におかれましては御理解と御協力を賜りますよう心からお願いを申し上げまして、簡単ではございますが、御挨拶に代えさせていただきます。どうぞよろしくお願い申し上げます。〔拍手〕",
+    "text_length": 197,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        120
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-064",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "事務局長（武田嘉憲君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告を申し上げます。\n　ただいま議会運営委員会の所管事項調査に関わる閉会中継続調査申出書をお手元に配付いたしてございます。\n　以上であります。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        123
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-065",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "副市長（浅野目浩美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕　それでは、議案書１ページ、議案第１号監査委員の選任について御説明申し上げます。\n　議員のうちから選任いたします監査委員に高橋克博議員を選任いたしたく、地方自治法第196条第１項の規定により議会の同意を求めるものであります。\n　なお、高橋克博議員は北見市議会議員として市政発展に尽力され、議長を務められるなど、御活躍されてこられた方であります。\n　以上で提案いたしております議案の説明を終わらせていただきますが、よろしく御審議の上、御決定くださいますようお願い申し上げます。",
+    "text_length": 241,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        131
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-066",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "18番（高橋克博君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高橋　克博",
+    "member_faction": "新市政みらい",
+    "text": "〔登壇〕　ただいま監査委員の選任に当たり、議員各位の御理解を賜り、選任の同意をいただきました。心から厚くお礼を申し上げます。\n　北見市の令和４年度の当初予算は1,166億円余りであり、この行財政を監査するに当たり、その職責の重さを痛感しております。議員各位、理事者の皆様の御協力を賜りながら、誠心誠意その職務に精励してまいる所存でございますので、皆様にはさらなる御指導を賜りますよう心からお願い申し上げまして、御挨拶に代えさせていただきます。どうぞよろしくお願い申し上げます。〔拍手〕",
+    "text_length": 242,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        135
+      ]
+    }
+  },
+  {
+    "id": "kitami-307-2-067",
+    "municipality": "kitami",
+    "council_id": 307,
+    "council_name": "令和 ４年  ４月 臨時会（第２回）",
+    "schedule_id": 2,
+    "schedule_name": "04月21日－01号",
+    "date": "2022-04-21",
+    "speaker": "副市長（浅野目浩美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕　それでは、提案いたしております議案第２号及び議案第３号の議決案件について御説明申し上げます。\n　初めに、議案書２ページ、議案第２号北見市税条例の一部を改正する条例の専決処分についてでありますが、今回の改正は地方税法等の一部を改正する法律が可決、成立いたしましたことに伴い、その内容に準じて北見市税条例の一部について改正を行ったものであります。\n　改正の主なものとして、固定資産税及び都市計画税につきまして、特定都市河川浸水被害対策法に規定する貯留機能保全区域の指定を受けた土地に係る課税標準額に一定の割合を乗じる特例措置を３年間講じるとともに、商業用地等に係る課税標準額の上昇幅を令和４年度に限り半減させるものであります。\n　なお、本条例につきましては施行期日の関係から急を要するため、地方自治法第179条第１項の規定に基づき、本年３月31日をもって専決処分し、公布いたしましたので、同条第３項の規定により御報告申し上げ、承認を求めるものであります。\n　次に、議案書７ページ、議案第３号工事請負契約の締結についてでありますが、公園団地建替事業につきましては令和４年第１回臨時市議会において予算の議決をいただいたところであります。\n　今回提案いたしております公園団地３、４号棟の工事の概要でありますが、木造平家建て２棟８戸の新築工事を令和４年10月の完成をめどに実施するものであります。\n　工事請負契約を締結するに当たり、予定価格が１億5,000万円を超えるため、北見市議会の議決に付すべき契約及び財産の取得又は処分に関する条例第２条の規定により議会の議決を求めるものであります。\n　以上で提案いたしております議案の説明を終わらせていただきますが、よろしく御審議の上、御決定くださいますようお願い申し上げます。",
+    "text_length": 759,
+    "source": {
+      "minutes_file": "data/kitami/minutes/307.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        137
+      ]
+    }
+  }
+]

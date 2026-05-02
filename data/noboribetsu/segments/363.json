@@ -1,0 +1,140 @@
+[
+  {
+    "id": "noboribetsu-363-2-001",
+    "municipality": "noboribetsu",
+    "council_id": 363,
+    "council_name": "令和 ３年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月01日－01号",
+    "date": "2021-10-01",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第79号について、その概要をご説明申し上げます。\n　議案第79号　令和３年度登別市一般会計補正予算（第８号）は、新型コロナウイルス感染症関連事業として、緊急に措置を要する経費について、所要の予算措置を講じようとするものであります。別冊、令和３年度登別市一般会計補正予算書及び予算説明書の１ページをご覧ください。\n　第１条は、歳入歳出予算の補正についてでありまして、歳入歳出予算の総額に歳入歳出それぞれ4,440万円を追加し、226億4,062万1,000円とするものであります。歳入歳出予算の補正の款・項の区分及び当該区分ごとの金額並びに補正後の歳入歳出予算の金額は、２ページの第１表、歳入歳出予算補正によるものであります。\n　歳入歳出それぞれの補正内容につきましては、３ページから６ページまでの歳入歳出補正予算事項別明細書に記載のとおりでありますが、歳出は、商工費に売上高等が減少しているなど一定の要件を満たす市内事業者に対し、経営や新型コロナウイルス感染症の感染対策等の支援として給付金を給付する経営等エール給付金給付事業費を追加するものであります。\n　以上の補正に見合う歳入でありますが、特定財源として国庫支出金を追加するとともに、一般財源として、繰越金を追加するものであります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 579,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/363.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-363-2-002",
+    "municipality": "noboribetsu",
+    "council_id": 363,
+    "council_name": "令和 ３年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月01日－01号",
+    "date": "2021-10-01",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "議案第79号について、若干お聞きいたします。\n　議案第79号、この事業に関しましては、私は反対するものは何もありませんので、ぜひやっていただきたい。そのように考えてございますが、資料の中を見させていただきますと、特定財源としまして国庫支出金、新型コロナウイルス感染症地方創生臨時交付金3,522万6,000円でございますけれども、補正予算計上額が4,400万円ということになってございます。残りの917万4,000円でございますが、これにつきましては議案第79号資料だけを見ると、どこからきているのかということがなかなか分かりにくいのではないかと。もちろん、補正予算書及び付議事件要旨等を見れば、残り900万円というのはどこからきているかということは分かるのですが、あえて議案第79号資料に917万円を載せなかったというのはどういった理由なのでしょうか。ここをお知らせください。",
+    "text_length": 389,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/363.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-363-2-003",
+    "municipality": "noboribetsu",
+    "council_id": 363,
+    "council_name": "令和 ３年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月01日－01号",
+    "date": "2021-10-01",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご質問がありました付議事件資料の財源の欄の関係ですけれども、これまでも財源につきましては特定財源のみを表記してきたかと思います。それで、一般財源の金額についてここに表記しなかったというのは、特に意図があって表記しなかったわけではなく、これまで特定財源のみ表記してきたという事務の流れのみでございます。\n　以上です。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/363.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-363-2-004",
+    "municipality": "noboribetsu",
+    "council_id": 363,
+    "council_name": "令和 ３年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月01日－01号",
+    "date": "2021-10-01",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "かしこまりました。歳入につきましては前年度繰越金ということでございますが、歳出については一般財源と。私もこういった場があればよく口酸っぱく言っているのですが、一般財源の重要性というのは当然私どものみならず、執行部の皆さんは御存知のことかと思いますので、これからも一般財源の使い道、用法につきましては、何とぞお大事にお使いいただくよう、ここに重ねて申し上げまして私の質問を終わります。\n　以上です。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/363.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-363-2-005",
+    "municipality": "noboribetsu",
+    "council_id": 363,
+    "council_name": "令和 ３年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月01日－01号",
+    "date": "2021-10-01",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "私も、まずは反対するものはないのですが、一点だけご確認をさせていただきたいと思います。事業概要で令和３年５月から令和３年９月までのいずれかの月で、売上高等が前々年の同月比で30％減少し、かつ新北海道スタイルを実践する市内の事業者に対しというふうにありますけれども、これは対象が個人事業主、フリーランスと３番目のところにありますけれども、例えば３年前の同月で大きなスポット的な売上げがあった事業者が全くコロナには影響はないのだけれども、３年前にすごく大きな商談があったので３割減っていますよというような場合も、この対象になるのかどうなのか。そこを一点だけご確認させていただきたいと思います。",
+    "text_length": 294,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/363.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-363-2-006",
+    "municipality": "noboribetsu",
+    "council_id": 363,
+    "council_name": "令和 ３年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月01日－01号",
+    "date": "2021-10-01",
+    "speaker": "渡部観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまのご質問についてですけれども、あくまでも対象月での比較ということになりますので、その内容がどうだったかという部分については考慮しないということになろうかと思います。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/363.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "muroran-516-2-001",
+    "municipality": "muroran",
+    "council_id": 516,
+    "council_name": "令和 ７年 第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月23日－01号",
+    "date": "2025-05-23",
+    "speaker": "議会事務局長（安田智樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告申し上げます。\n　今回提案されております案件は、議長付議に関わるもの１件でございます。\n　次に、関係法令の規定に基づき、市長からお手元に配付のとおり報告がございました。\n　次に、関係役職員の出席を求めております。\n　以上でございます。\n──────────────────────\n　　　　　諸　般　の　報　告\n１　地方自治法第１８０条第２項の規定に基づき、市長から報告のあった事件\n　　　専決処分の報告について（和解及び損害賠償の額の決定）\n２　地方自治法第１２１条の規定に基づき、下記の者に対し出席を求めた\n　　　　　　　　　　記\n市　　　　　長　　　　　　青　山　　　剛\n教　　育　　長　　　　　　伊　藤　博　明\n代表監査委員　　　　　　　関　川　純　人\n　上記のとおり報告します。\n　令和７年５月２３日\n　　　　室蘭市議会議長　　　　柏　木　隆　寿\n──────────────────────",
+    "text_length": 404,
+    "source": {
+      "minutes_file": "data/muroran/minutes/516.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "muroran-516-2-002",
+    "municipality": "muroran",
+    "council_id": 516,
+    "council_name": "令和 ７年 第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月23日－01号",
+    "date": "2025-05-23",
+    "speaker": "議事課長（小田桐浩明）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（氏名点呼）\n　　　　　（各議員投票）",
+    "text_length": 19,
+    "source": {
+      "minutes_file": "data/muroran/minutes/516.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  }
+]

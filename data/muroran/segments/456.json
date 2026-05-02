@@ -1,0 +1,4855 @@
+[
+  {
+    "id": "muroran-456-4-001",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "おはようございます。朝一番の質問は慣れていませんので、よろしくお願いしたいと思います。それでは、私からは認定２号及び認定５号、国保会計と後期高齢者医療会計について一問一答で伺いたいと思います。\n　まず最初に、国保会計についてであります。保険料について伺いたいと思います。歳入歳出決算書では、予算現額９億２，１２４万３，０００円、調定額が１４億９，９４８万５，８９７円、収入済額が１１億９，１０９万８，７１８円、不納欠損額が１，３６６万５，６４０円で、収入未済額が２億９，４７２万１，５３９円生じています。予算現額と収入済額との比較で２億６，９８５万５，７１８円と保険料収入が増加していますが、この要因についてまず伺います。",
+    "text_length": 311,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-002",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "岩間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予算現額に対し保険料収入が増加となった要因についてでございますが、新型コロナウイルス感染症の影響により収入が減少となった被保険者に係る保険料の減免、以下コロナ減免と申しますが、この減免対象の世帯が多数見込まれましたことから、年度途中に補正予算を組み、現年度分保険料のうちコロナ減免により免除となる保険料を２億８，４２４万円と見込みまして、免除分を交付金の種別に合わせ、国庫支出金と道支出金にそれぞれ財源振替し、保険料としての予算額を減額しております。結果といたしまして、免除となった現年度保険料は６，４４１万円で、当初の減免見込みを下回りましたことから、減額した予算額に対し保険料収入が上回ったものでございます。\n　以上でございます。",
+    "text_length": 317,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        5
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-003",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "コロナ減免で保険料減免の予算額を大幅に見込んだという。結果的には免除となった保険料というのは６，４４１万円、当初の減免見込みを下回ったということなのです。次に、保険料収入の主体である被保険者の推移について伺いたいと思うのですけれども、監査の意見書では歳入の保険料について減少したというふうに指摘しているわけなのですけれども、当初予算額の１２億５４８万３，０００円から２億８，４００万余り減額補正されています。これは、先ほどのコロナ減免による保険料も含まれているかと思うのですけれども、この減額補正、コロナ特例を除いた被保険者の減少による影響もあるのかというふうに思いますけれども、この点について伺いたいと思います。",
+    "text_length": 307,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-004",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "岩間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、被保険者の推移について年間平均で申し上げますが、平成３０年度は１万６，８２５人、令和元年度は１万６，１１１人、令和２年度は１万５，４２７人となっております。\n　次に、保険料の減額補正の要因については、先ほどお答え申し上げましたコロナ減免によって財源振替という形で減額補正してございます。そういったことで被保険者数も当然減少していますので、そういった部分での収入の減少というのも若干はあろうかと思います。\n　以上でございます。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-005",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "年々被保険者の数が減少しているわけなのですけれども、今被保険者の人数についてそれぞれ伺ったのですけれども、保険者の減少の推移というのはどのような形になっているのか、併せて世帯当たりの所得についてもどれだけの変化が見られるのか、この点についても伺いたいと思います。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-006",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "岩間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "被保険者の減少の推移でございますが、平成３０年度は前年度から９３２人の減、令和元年度は前年度から７１４人の減、令和２年度は前年度から６８４人の減となってございます。\n　次に、世帯当たりの所得の推移でございますが、平成３０年度は７３万７，８９３円、令和元年度は７１万７，２６７円、令和２年度は７１万８，４７５円となってございます。\n　以上でございます。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-007",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "令和２年度は、前年度から見て１，０００円ちょっと上がっているのですけれども、これは高齢化の進展に伴って退職者が国保に加入するということで若干上がっているのかというふうに思います。\n　次に、法定減免について伺いたいと思うのですけれども、今７割、５割、２割減免と低所得者に配慮していると言われていますけれども、それぞれの減免率に応じた被保険者の数とその増減についてどのように変化してきたのか、この点について伺います。",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-008",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和２年度における軽減区分ごとの被保険者数とその増減についてでございます。７割軽減につきましては、前年度から２６７人減少し５，４２２人、５割軽減につきましては前年度から１１８人減少し３，７２８人、２割軽減につきましては前年度から１６７人減少し２，３０２人となっております。\n　以上でございます。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-009",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "法定減免を受けている世帯が全世帯１万５，０００何がしのうち１万２，０００世帯に近いということで、本当に低所得者の世帯が国保に加入しているのだなというふうに思います。\n　次に、国庫支出金、道支出金、一般会計からの繰入金がそれぞれ１億２，０００万余り、１億３，０００万余り、６，７００万余りが減となっているのですけれども、その理由について伺いたいと思います。",
+    "text_length": 177,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-010",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "岩間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予算に比べ決算額が減少となった理由についてでございます。初めに、国庫支出金ですが、コロナ減免額が見込みを下回ったことにより、免除分として交付される交付金が減少したものでございます。\n　次に、道支出金ですが、保険給付費の減少による交付金の減少、また国庫支出金同様コロナ減免額が見込みを下回ったことにより、交付金が減少したものでございます。\n　次に、一般会計繰入金ですが、保険基盤安定事業における軽減世帯数の減少や職員の新陳代謝による人件費の減少によるものでございます。\n　以上でございます。",
+    "text_length": 244,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-011",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "軽減世帯の減少もあるということです。\n　次に、不用額について伺いたいと思うのですけれども、保険給付費が６，０００万余り、保健事業費で３，３００万余り、諸支出金で４，４００万余り、全体で１億６，３００万余りの不用額を出していますけれども、その理由について伺います。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-012",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "岩間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "不用額の理由について、初めに保険給付費ですが、保険給付費は北海道から示された算出方法などを基に見込んでございますが、主に療養給付費で見込みを下回ったことによるものでございます。\n　次に、保健事業費ですが、緊急事態宣言などの影響もございまして特定健康診査や各種健診における件数の減少によるものでございます。\n　次に、諸支出金ですが、コロナ減免は過年度保険料の令和元年度９期、１０期分も対象となってございまして、補正予算にて過年度の免除分に対する還付額を予算計上しておりましたが、減免額が見込みを下回ったことにより、還付金が見込みほど発生しなかったことによるものでございます。\n　以上でございます。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-013",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "保険給付費は北海道から示された算出方法などを基に算出していると、それが見込みを下回ったと。道の算出基準に基づいて算出するわけですから、それぞれの自治体で当然条件が違うわけですから、それが全ての道内の市町村に当てはまるわけではないということで、毎年そういった形で出ることは明らかだというふうに思います。\n　次に、保険料の収入未済額について伺いますけれども、全体で２億９，０００万を超える収入未済というふうになっています。それぞれ区分別に現年度分、過年度分、医療、介護、後期高齢、退職者医療などの未済額が明細表に記載されておりますけれども、収入未済となっている理由について、また新型コロナウイルス感染症による収入減少となった被保険者に係る保険料減免の実績についても伺いたいと思います。",
+    "text_length": 340,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-014",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "保険料収入未済の理由についてでございますが、主に被保険者の滞納によるものとなっております。また、コロナ減免の実績についてでございますが、令和２年度中に４２５件、約７，５４７万１，０００円分を実施してございます。\n　以上でございます。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-015",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "コロナ減免の実績が４２５件、７，５４７万１，０００円ということで、被保険者の滞納によるものという未済の理由なのですけれども、当然滞納するから入ってこないわけなのですけれども、この滞納の理由というのはどういった理由によるものが大半を占めているのか、例えば収入が減っているだとか、あるいは支払い困難だとか、保険料が高いだとか、そういった滞納理由というのはどういったものなのか、この点について分かれば教えていただきたいと思います。",
+    "text_length": 212,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-016",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "滞納の理由についてでございますが、それぞれの生活実態により様々だとは考えておりますが、基本的には生活に苦しんでいて保険料を払えないというのが多く聞いているところでございます。\n　以上でございます。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-017",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "生活苦による滞納が圧倒的に多いのだろうというふうに思います。\n　次に、今回の決算というのは、保険料の最高限度額が６３万円に引き上げられたものであり、中間所得者層に配慮した料金設定になるという答弁が昨年の予算委員会でも述べられていますけれども、医療分で１世帯当たり２１０円、介護分で１世帯当たり２３４円の軽減効果が考えられているということ、要するに最高限度額を引き上げることによってその下の中間層の保険料が減額になるということだと答えられているのですけれども、実際の保険料の減額というのはどのような形になったのか、この点について伺いたいと思います。",
+    "text_length": 273,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-018",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "最高限度額の引上げに伴う軽減効果ということでございますが、実際の保険料軽減でお答えさせていただきますと、令和２年度の１世帯当たりの保険料を前年度と単純比較した場合、医療分では約３，５００円の軽減、介護分では約１，５００円の軽減となってございます。こちら単純比較と申し上げましたが、限度額変更のほか、対象世帯の人数や所得、また特に昨年度はコロナ減免の実施など様々な影響を受けたものとなってございます。\n　以上でございます。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-019",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "当然中間所得者層が減免の対象ということで、５割、７割減免を受けている方というのはほとんど適用されていないということだと思うのですけれども、同時に介護保険料の限度額、いわゆる介護支援分の限度額が１６万から１７万に引き上げられ、保険料の増額となる世帯が４９世帯というふうな答弁がされておりますけれども、実情はどうであったのか、この点について伺いたいと思います。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-020",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和２年度において介護保険料限度額引上げの影響を受けた世帯数は６３世帯となってございます。\n　以上でございます。",
+    "text_length": 56,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-021",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "６３世帯ということで、当初の見込みよりも影響を受けた世帯が増えているということだと思うのです。昨年の予算委員会でも聞きましたけれども、給与収入３００万円、２人家族、４０代のモデルケースで国民健康保険料が３４万３，１００円、一方協会けんぽは１９万３，２００円、国民健康保険料が１５万２，７８０円高くなっていることも昨年の予算委員会で明らかになっていますけれども、その要因の一つは事業主負担がないこと、同時に均等割という人頭割が保険料を高騰させる要因になっているということは明らかなわけです。それで国は世論に押されて均等割の軽減ということで、来年は子供の均等割保険料の軽減措置を実施するとしておりますけれども、その内容と軽減対象、世帯数及び軽減額についてどのように試算されているのか伺いたいと思います。",
+    "text_length": 349,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-022",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "子供に係る均等割保険料の軽減措置についてでございます。先般の法改正により、令和４年４月から施行されるものでございまして、子育て世帯の経済的負担軽減の観点から、国保に加入する全世帯の未就学児を対象に均等割保険料の５割を公費により軽減するものとなってございます。本市における対象世帯数についてでございますが、令和３年度の当初賦課時点で見込んだ場合で申し上げますと１５１世帯、同じく軽減額は約１９５万円となってございます。\n　以上でございます。",
+    "text_length": 219,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-023",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "対象世帯が１５１世帯で軽減額が１９５万ということなのですけれども、この１９５万の軽減額の負担について国・道・市含めてどういった負担割合になっているのか、この点について伺います。",
+    "text_length": 88,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-024",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "負担の割合についてでございますが、国が２分の１、都道府県が４分の１、市町村が４分の１となってございます。先ほどの１９５万円で申し上げますと、国が９７万５，０００円、道と市が４８万７，５００円となります。\n　以上でございます。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-025",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "市の負担が４分の１と、２５％の負担だということで本当に微々たるものだというふうに思うのです。未就学児を対象に実施した場合での軽減額が１９５万円、そのうち４分の１が市の負担ということなのですけれども、これについて例えば対象を市独自で１８歳まで引き上げた場合、軽減に要する費用はどれくらい増加するのか、この点について伺いたいと思います。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-026",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象を１８歳まで独自拡大した場合の試算についてでございますが、こちらも先ほどと同様令和３年度当初賦課時点をベースに試算した場合、さらに３００世帯５１３人が対象となりまして、軽減に要する費用は先ほどの１９５万円に加えまして約５０２万円増加することとなります。\n　以上でございます。",
+    "text_length": 139,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-027",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "１９５万を加えても５０２万にしかならないということなので、当然その４分の１ですから、大した負担額にはならないというふうに思います。\n　それで、市長にお聞きしたいのですけれども、私は子供の医療費の助成でも伺いましたけれども、来年４月から実施される未就学児の負担軽減、これを上乗せして本市として独自に実施する考えはあるかどうか、この点について伺います。",
+    "text_length": 174,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-028",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐野生活環境部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "独自拡大に関する考え方でございますが、現在国保制度につきましては北海道が中心となりまして保険料率の統一に向けた検討が道内自治体で進められているところでございます。その中で課題といたしまして、法定外繰入金の解消も一つ挙げられてございます。本市におきましては、現状法定外繰入金はありませんけれども、独自拡大を実施する際にはこういった繰入れが必要となってくることでございまして、現在国保の広域化で取組が進められている中では趣旨にそぐわないものと考えているところでございます。しかしながら、少子化対策という観点では、子育て世帯の負担軽減を図るために対象年齢や軽減割合の拡大など、さらなる制度拡充というのは望ましいと考えているところでございますことから、国に対しましては全国市長会を通じて要望を行っているところでございまして、国においても議論を継続すると伺っておりますので、動向をしっかりと注視してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 420,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-029",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "本市の国保会計に対する繰入れというのは、法定内の繰入れだけで、法定外の繰入れというのはしたことがないのです。国は、当然法定外の繰入れを認めない方針で、なおかつ事業者支援の制度をつくってそれぞれの市町村が滞納対策や何かで実績上げれば、それに応じてお金をあげますという、とにかく法定外の繰入れをやめさせようという制度を徹底していると。私は、少なくとも法定外の繰入れをしなければそういった制度の実現ができないわけですから、それはやはり市の英断一つだというふうに思うのです。ですから、ぜひ来年４月からそういった方向で上乗せ実施するよう求めておきたいというふうに思います。\n　次に、認定第４号の後期高齢者医療について、歳入の保険料から伺いたいのですけれども、予算現額で１１億７，９６９万６，０００円に対して調定額が１１億６，５１２万１，５９４円と調定額が予算現額を下回っていますけれども、この理由について伺いたいと思います。",
+    "text_length": 407,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-030",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "岩間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "調定額が予算現額を下回った理由についてでございますが、現年度保険料につきましては後期高齢者医療広域連合より示されます各種試算と本市住民基本台帳における数値などを基に試算いたしまして保険料予算額を算出してございますが、予算時に試算した被保険者数よりも実態が下回ったこと、またコロナ減免により調定額が減少したことなどによるものでございます。\n　以上でございます。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-031",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "原因は、コロナ減免と予算時に試算した被保険者数より実態が下回ったと。普通、予算より被保険者数が実態を下回るということはほとんどないかというふうに思うのです。当然行政から、市から道の広域連合にデータが行くわけですから、下回ることはないというふうに思うのですけれども。\n　次に、特別徴収保険料の収入済額が７億２，２５４万２，１００円で、収入未済額がありません。当然これは年金から天引きされますから、ほとんどないと。普通徴収が現年度分で４億３，３３９万６，７０４円、過年度滞納分が２９６万６，９８０円となっているわけなのですけれども、この特別、普通のそれぞれの被保険者数というのはどのようになっているのか、この点について伺いたいと思います。",
+    "text_length": 317,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-032",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "特別徴収と普通徴収それぞれの被保険者数についてでございます。令和３年３月末時点では、特別徴収が１万１，８２１人、普通徴収が４，７５８人となっております。\n　以上でございます。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-033",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "普通徴収が４，７５８人、この普通徴収の方々が滞納されているわけなのです。収入未済の全ては普通徴収、納付書で保険料を納める方々なのですけれども、この方々の所得の水準というのはどのようになっているか、これについて伺います。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-034",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "普通徴収の方々の所得水準についてでございます。後期高齢者医療保険料につきましては、原則対象となる年金が年額１８万円を超えている場合は特別徴収となるものでございますので、基本的にはそれ以外の方が普通徴収の対象となっているというふうに考えております。\n　以上でございます。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-035",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "年額１８万円以上の方は特別徴収、基本的にはそれ以外の方々が普通徴収になるということは、僅か１万数千円の年金額の人たちが普通徴収、同時にそういった普通徴収の方々が滞納されているということでは今の制度というのはこれで本当にいいのかなというふうに思うわけです。同時にそういった後期高齢者の被保険者の数の推移について伺いたいと思います。国民健康保険における被保険者は漸減傾向にある、毎年のように五、六百人ずつ減っていくわけなのですけれども、この後期高齢者医療制度というのは７５歳という年齢で区切って別枠の保険制度に移行させたことによって被保険者数は高齢化の進展もあり増加傾向にあるわけなのですけれども、この間の被保険者数の推移についてどのようになっているか伺いたいと思います。",
+    "text_length": 334,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-036",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "岩間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "被保険者の推移について３月末の人数で申し上げますが、平成３０年度は１万６，３９２人、令和元年度は１万６，５３７人、令和２年度は１万６，５７９人となってございます。\n　以上でございます。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-037",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "令和２年度で１万６，５７９人、国保の被保険者数よりも１，０００人近く多く、既に逆転しているということになるかと思います。\n　次に、保険料の特例軽減の廃止と保険料率の見直しに基づいて令和２年度の保険料総額が１１億６，５１２万１，５９４円というわけなのですけれども、この特例軽減の段階的な見直しと保険料率の引上げによる被保険者の負担分というのは令和２年度でどのようになっているのか伺いたいと思います。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-038",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "被保険者の負担についてでございます。本市における令和２年度の１人当たり保険料は６万９，８７６円でございました。おっしゃっていた軽減特例の段階的廃止前の平成２８年度については６万５，２９４円でございましたので、こちらと比較して約４，６００円の増となってございます。\n　以上でございます。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-039",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "これは単純比較で４，６００円ですから、被保険者の中にはそれ以上の負担増になっている方がたくさんいるということであります。\n　次に、昨年の予算委員会で特例軽減の廃止に伴う令和２年度の保険料への影響額が約５，７００万、保険料率の引上げや賦課限度額が６２万から６４万に引き上げられた影響で総額８，２００万の負担が増えるということが答弁されています。その上にマクロ経済スライドで０．１％の年金カット、まさに高齢者いじめそのものではないかというふうに思うのですけれども、この点について伺いたいと思います。",
+    "text_length": 247,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-040",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "後期高齢者の医療費につきましては、高齢者の保険料のほか、現役世代や公費によっても支えられているものでございます。軽減特例の見直しにつきましては、高齢化が進展する中で世代間の負担の公平性など、後期高齢者医療制度の持続可能性を高める観点から、平成２９年度より段階的に実施されてきたものと認識してございまして、保険料率の引上げにつきましては１人当たり医療費の増加という実情を踏まえたものというふうに伺ってございます。一方で、高齢者だけが負担増とならないような対策を講ずることも必要というふうに考えておりまして、必要な財政支援等につきまして全国市長会等を通じて国に要望してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 308,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-041",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "今述べられたように、全国市長会を通じて国に要望していくということなのですけれども、それでもなかなか国は動かないということで、今回の国保の均等割の改正もやっと重い腰を上げたということであります。\n　次に、新型コロナウイルス感染症の影響による保険料の減免を行っているかと思うのですけれども、本市の保険料減免の件数と減免額について伺いたいと思います。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-042",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "本間保険年金課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コロナ減免の実績についてでございます。令和２年度に１３０件、約９６９万４，０００円分を実施してございます。\n　以上でございます。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-043",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "１３０件の保険料減免を実施しているということであります。コロナの影響というのは、被保険者の収入に対する影響ばかりでなくて、保健事業にも現れているのではないかというふうに考えるのですけれども、例えば健康診査事業１，１４６万余りの不用額、人間ドック等の助成事業で５８０万の不用額を出しています。感染症の影響で健診、人間ドックを控えている結果の現れなのかどうか、この点について伺いたいと思います。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-044",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "山﨑保険年金課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルス感染症の影響による健康診査等の受診控えということでございますが、まず初めに健康診査につきましては受診者数は前年度から９６３人減の２，９９７人となりますが、実績の積算方法の変更がありましたことから、令和２年度につきましては実質１０か月分の支払いとなったこと、また緊急事態宣言期間中は実施機関側でも健診を中止していたことなどにより受診者数が減少したものと考えてございます。\n　次に、短期人間ドックの受診者数につきましては、前年度から１４１人減の３９６人となってございまして、同様に緊急事態宣言中の中止などにより、こちらも受診者数が減少したものと考えてございます。ミニドックの受診者数につきましては、前年度から６人減の９３人となってございます。\n　以上でございます。",
+    "text_length": 339,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-045",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "新型コロナ感染症の影響というのは、被保険者の収入に影響を与えるばかりではなく、予防にも大きな影響を与えているということが明らかなわけです。\n　次に、今述べたことも含めて、保険料の特例軽減の廃止、保険料率の引上げと年金減額、さらに新型コロナウイルスの影響による収入減、これにさらに追い打ちをかけるように来年１０月からの窓口の２割負担の導入、これだけ高齢者を痛めつける政治を行っているのは当然政府与党なわけですけれども、こういった高齢者いじめの政策を続ける政治をよしとするのかどうか、この点について市長に伺いたいと思います。",
+    "text_length": 260,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-046",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐野生活環境部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "後期高齢者医療保険制度におきましては、少子高齢化の進行によりまして、その一部を負担する現役世代が減少する一方で、被保険者が増加傾向でございまして、軽減特例措置の廃止のほか、窓口２割負担の導入が予定されていることなど、制度を持続させていく上で様々な課題等を抱えているものと認識してございます。しかしながら、後期高齢者医療保険制度につきましては、制度開始から１４年が経過してございまして、制度といたしましては十分定着してきていると考えておりまして、本市といたしましては高齢者が安心して医療を受けることができ、世代間の公平性に配慮された持続可能な社会保障制度として将来にわたって継続していくことを望むところでございます。来年１０月からの窓口２割負担につきましても、一定以上の所得がある高齢者の皆様に御負担をいただくことで若い世代の保険料上昇を抑制し、全ての世代の方々が安心できる社会保障制度となるよう見直すものと認識してございまして、また２割負担により急激な負担増とならないよう導入後３年間は配慮措置の実施も予定されているところでございます。\n　今後も現行制度を基本としながらも、持続可能な社会保障制度の確立を図るために必要な改善を実施していくことが適切と認識しているところでございますが、まずは国の責任におきまして十分な財政措置を講じることを求めるとともに、制度の見直しの際には被保険者の負担感に十分配慮いただき、また受診抑制につながることがないよう慎重に進めていただきたいと考えてございまして、本市といたしましても全国市長会等を通じまして要望してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 698,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-047",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "少子高齢化の進展でもって現役世代にも一定割合の負担をということで、２割負担増に関して国はそういった形で現役世代にも負担してもらうと。ところが、実際には現役世代の負担というのは、月額で僅か２０円か３０円の負担にすぎないわけです。同時に配慮措置として３年間、今回特例軽減措置が廃止になりましたけれども、これだって元に戻していくわけです。この配慮措置だって３年の経過が過ぎれば、さらに負担が増えていく、さらに対象者を拡大するためには所得制限を拡大していく、あるいは狭めていく、そういった形でもってどんどんどんどん負担だけを増やしていくことになるわけですから、７５歳以上の高齢者については当然今の日本の基礎を築いてきた方々ですから、そういう方々に対してこういった冷たい政治というのは私はあり得ないと思います。当然保険料、税の負担というのは負担能力に応じた負担が原則ですから、それにふさわしい保険料にすべきだということを申し上げて、私の質問を終わります。",
+    "text_length": 422,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-048",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。それでは、私のほうから認定第３号介護保険特別会計と認定第７号病院事業会計について一問一答で行いたいと思います。よろしくお願いいたします。\n　初めに、病院事業会計から伺っていきたいと思いますが、その前に今コロナと闘うソーシャルワークの最前線にあって、市民のみでなく自らと家族も守り、一部の心なき偏見とも闘い、ようやく第５波が収まるところまで頑張ってきている病院関係者の皆様に心よりねぎらいと励ましを送らせていただき、御苦労さまですと申し上げ、以下質問に入りたいと思います。\n　令和２年度室蘭市病院事業会計収益費用明細書を見ますと、２２ページに記載のある新型コロナウイルス感染症緊急包括支援事業費補助金６億２，７１０万１，０００円があります。かなり大きな金額になっておりますが、この補助金の内訳はどのようになっているのでしょうか、伺います。",
+    "text_length": 378,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-049",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "弘瀬病院経営企画室主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補助金の内訳についてでございますが、感染症病床確保促進事業費補助金が５億４，９３０万１，０００円、感染疑い患者受入医療機関設備整備等事業費補助金が５，７０９万８，０００円、その他設備の整備などを対象とした補助金が２，０７０万２，０００円となってございます。\n　以上でございます。",
+    "text_length": 139,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-050",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　それでは、今の答弁の中で一番大きな金額である感染症病床確保促進事業費補助金について具体的にどのような病床確保策を講じて交付されたものなのでしょうか、答えられる範囲で結構ですが、答弁お願いします。",
+    "text_length": 106,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-051",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "弘瀬病院経営企画室主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "病床確保策についてでございますが、この補助金は感染症患者の増加に備え、さらなる入院の受入れを可能とするため、新型コロナウイルス感染症患者等入院医療機関が実施する入院病床の確保に伴う経費に対して補助するものでございまして、新型コロナウイルス感染症患者の入院に備えまして道からの要請を受け、病床を確保することにより交付されたものでございます。\n　以上でございます。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-052",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "詳細のほうは分かりました。これまでの間、新型コロナウイルス感染症に対し、西胆振で唯一感染症病床を有する本市立病院が先頭に立ち、患者さんの受入れ、そして市民に対する新型コロナウイルスワクチン接種の対応など様々な場面で尽力いただいていることに対し、改めて感謝申し上げるとともに、公立病院が身近にある心強さも感じるところです。\n　先ほど病床確保策をお伺いしましたが、市立病院は４床の感染症病床を有していると記憶しておりますが、これまでの間新型コロナウイルス感染症患者を受け入れるために施してきた病床体制についてどのように対応していたのか伺います。",
+    "text_length": 270,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-053",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "又平医事課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルス感染症患者さんの受入れ病床についてでございますが、当院は４床の感染病床を有しておりますが、患者さんの増加に伴いまして北海道からの要請を受け、病床を増床して対応してございます。令和２年度におきましては、１日最多で１２床稼働という時期もございました。\n　以上でございます。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-054",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これまでかなりの労力を費やし、新型コロナウイルスに対応してきたことが分かります。しかしながら、日本の医療をコロナ禍の中で見ますと、問題が山積しています。診療報酬はこれでよいのか、病院経営逼迫の問題が起きていますし、コロナ禍の中で明らかになった日本の医師、看護師不足はＯＥＣＤの中でも決定的です。その面からもう少し伺いたいと思いますが、コロナ対応に関する補助金については分かりました。同様に、医業収益に直接関係する診療報酬での臨時的取扱いもあったと聞きますが、令和２年度ではどのようになっているのでしょうか、また今年度新たに新設された特例加算についても併せて伺います。",
+    "text_length": 283,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-055",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "又平医事課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和２年度の新型コロナウイルス感染症対策での診療報酬上の臨時的な取扱いといたしまして、感染を疑われる患者さんの動線を一般患者さんと区別することなどにより院内トリアージ実施料を算定しておりますほか、入院につきましては感染病棟の看護配置をＨＣＵと同等の４対１配置といたしましてハイケアユニット入院医療管理料の３倍の点数を算定してございます。また、今年度におきましては、感染症対策実施加算といたしまして、９月末までの半年間ですが、外来は初診・再診１回当たり５点、入院は入院患者１人１日につき１０点の加算が可能となってございます。\n　以上でございます。",
+    "text_length": 272,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-056",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "診療報酬上では、臨時的な取扱いや特例加算で対応されていることが分かりました。これまでコロナに対応した補助金や診療報酬により、病院の収益上プラスに働いている状況は理解しました。\n　それでは、現在取り組んでいる経営改善策に関して質問いたします。市立病院の収益改善につきましては、監査法人のトーマツに業務委託をして令和２年２月１日から金戸病院事業管理者を中心に職員一丸となって取り組んでいると伺っておりますが、令和２年度の決算にはどのように現れているのでしょうか、伺います。",
+    "text_length": 234,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-057",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "舛田病院経営企画室長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和２年度決算への経営改善効果でございますが、コロナ禍により主な取組の成果が年末頃から徐々に反映され始めた結果となっており、トーマツ算出による効果額としましては１，３３９万４，０００円となってございます。\n　以上でございます。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-058",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、本年度の効果額の見込みについて伺います。また、その評価と経営改善の取組を職員一丸となって進めるために行っている具体的取組についても伺います。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-059",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "舛田病院経営企画室長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和３年度の効果額見込みと評価でございますが、トーマツ算出による効果額の８月までの実績は３，４９５万８，０００円となっており、令和３年度予算に盛り込んだ経営改善効果額９，５８０万円を若干下回る推移となってございますが、一般病床の入院及び外来の診療単価が予算編成時に設定した金額を上回って推移しており、経営改善の効果は反映されていると考えてございます。\n　次に、職員一丸となって進めている具体的な取組でございますが、５月に全職員を対象に経営改善に取り組む必要性や具体的な取組内容などについて金戸管理者、髙橋病院長、新井事務局長が説明員となり、直接の説明会を８回、出席できなかった方へのビデオ上映会を２０回行い、計４７７名、約７０％の職員が参加したほか、毎月の収支改善取組状況を院内ネットワークで周知し、現在の状況について認識していただく取組を進めてございます。\n　以上でございます。",
+    "text_length": 390,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-060",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これまで公立病院としての役割である感染症対応、その対価としての交付された補助金、そしてまた収支改善に取り組み、その効果について伺ってきました。これまで市立病院は、公立病院としての役割を十分に果たしてきており、またこれからも担っていかなければならないと考えます。コロナの終息も見通しがつかない状況にあっては、なおさらのことですが、そのような中、本市は室蘭市地域医療連携・再編等推進協議会を立ち上げ、３病院を統合しようとしています。もし公立病院としての市立病院がなくなれば、どこがその役割を担っていくのでしょうか。民間は、利益重視の考えの下、不採算となるものに関しては目を背ける、その結果市民の医療への安心・安全は担保されず、市長の目指すものとは正反対の道に進むことになりはしませんか。ここは、きっぱりと市立病院を守るため３病院統合はやめる、協議会も中止するべきではありませんか。市長の明快な答弁を求めます。",
+    "text_length": 402,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-061",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "小泉副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "３病院の再編協議に関することでございますけれども、この再編協議につきましてはこの間も例えば地域医療構想の中で将来的に圏域人口が減少し余剰の病床が出てくるといったこともありますし、また特に地方都市においては非常に医師確保が難しくなってきている、またそれはこれからますますそうなるであろうというところもございますので、本市において有する医療資源を将来的にも安定的に継続的に確保すると、こういった意味ではやはり再編の検討が必要なものということで考えているところでございます。\n　そういった中で昨年３月に再編協議の中での第２次中間取りまとめが行われまして、その中では東室蘭地域に高度急性、急性、また蘭西地域には主には回復、慢性、そういった役割分担が必要であるということで、それを今後どのような経営形態の中で行うのか、また各病院がどういった形で参加するのか、これはまさにこれから協議すべきところということで、まだまだ詰めなければいけないという部分で未確定なところであります。そういった中にあっても市立病院、公立病院の果たすべき役割でありますが、現下のコロナ禍において特に見直しが行われました感染症対策に寄与する役割、あるいは結核も含めての感染症、加えて不採算における医療部門の実施、そういった部分については今後の再編の中にあってどういった経営形態においても公的役割というのは安心した地域医療を守る上でも必須の役割と考えているところでございます。現在各病院ともコロナ対応の中で協議が停滞しているところでございますが、この間におきましても市立病院としては現在求められております経営改善、経営の健全化、この確実な取組とさらなる健全化に向けた方策の検討、これをしっかりと進め、コロナの状況も見ながら、今後の協議の再開に向けた方策について検討を進めてまいりたいと考えております。\n　以上でございます。",
+    "text_length": 790,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-062",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、副市長のほうからいろいろ説明がありました。私は、その中で余剰ベッドの問題とか、医師確保の問題、こういうものの安定的な確保のためには統合は必要なのだというふうに受け止めました。しかし、私が根本的に室蘭市の考え方がずれているのかなと思うのは、余剰ベッドにしても医師確保にしてもやはり大本は国の医療政策にあるのではないかと考えます。これを３病院だけで、いわゆるコップの中かたらいの中か分かりませんけれども、そこでいろいろ考えたって、ぐるぐるぐるぐる回ったって日本全国、国が進めている政策の中でやはり余剰ベッドは削ろうとしているし、先ほども申し上げましたが、医師や看護師などはＯＥＣＤの先進国の中でも最低のラインで本当に厳しい状況。だから、室蘭の市立病院だけがよければ、室蘭地域の３病院だけが、西胆振だけがよければいいという、そういう考え方で病院というのは成り立つのかということ。ですから、ここは大本から、やはり国に対して根本問題を解決するように、多くの公立病院とも連携しながら、自治体の応援も得て、そしてこの問題を根本から変えていく。そして不採算についても、これは副市長言ったように、それから今日の答弁でもありましたけれども、病院内でも頑張って経営改善にしっかりと取り組んでいると、そうであれば経営改善に取り組んで黒字または黒字化の方向に行くならば、３病院統合するその根底さえ崩れるのではありませんか。ですから、コロナの中で公立病院が果たすべき役割というのは、本当に全国どこに行ってもその認識は共通して、今の状況の中で病院の統廃合進めようとか、３病院統合進めようという、そういう論議というのは全くそぐわないのだと私は思います。\n　ですから、市長に伺いますが、市長にはコロナの先が見えますかということなのです。社会そのものがコロナ以前には戻れないし、未知のパンデミックに備え、大きく言えば人類の生き残りをかけて新たな世界を目指すと言われているのに、どうして化石みたいな頭になってしまったのでしょうか。先が見えないのにいつまでも結論を引き延ばす、これも失礼ではありませんか。市長は、そういう意味で３病院統合をきっぱりと諦めて、そしてコロナ後にやってくる新しい世界、そして新しい室蘭を見据え、病院統合に対してもきちっと打ち切るという決意で臨んでいただきたいと思いますけれども、伺っておきます。",
+    "text_length": 992,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-063",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "青山市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "田村委員から病院の経営改善、あるいは国の医療制度の関係についてお話をいただきました。今回のコロナの関係では、まさしく全国的には感染症病床を有する公的病院の役割、その重要性が改めて全国的にも皆さん方再認識したのではないかと、私自身もその一人であります。そういった中で当地域においては感染症病床を有する市立病院もありますし、また他の病院の連携もあって地域の皆さん方の感染症に対してしっかりと対応していただいているのではないかなというふうに感謝するところでございます。\n　国のほうも先ほどの保険制度、社会保障制度全般もそうだと思うのですけれども、やはり少子高齢化社会にあって持続的な安心できる社会保障制度、医療政策が取られているのだというふうに考えてございまして、そういった中において当地域においては市内、地域に医療資源を有し、連携しながら将来どういうふうな姿にあるべきかといったようなことをこれまで協議を重ねてきたところでございます。それに当たって市立病院の経営改善が強く御指摘もある中で、これまでもお答えさせていただいておりますとおり、今経営改善に病院一丸となって取り組んでおるところでございます。したがいまして、やはり私が求めるところは、これ何回もお話ししているのですけれども、将来にわたってこの地域で市民が安心して医療を受けられる体制がどうあるべきかといったようなところに全て起因してございますので、引き続きその観点でしっかりと政策を進めていくことが必要であると考えておりますし、また国に対しても市長会等々いろんなところで実情に合うような医療政策について訴えていくことが大切だと考えております。",
+    "text_length": 698,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-064",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コロナ禍で今の状況を再認識したと言いますが、安心して市民の皆さんが、この地域の皆さんが医療を受けられるためにこそ市立病院の存続を図ることが大事であると申し上げます。\n　次、介護決算について、まず介護保険料収入の内訳から伺っていきます。",
+    "text_length": 117,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        67
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-065",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "今野高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "介護保険料収入総額１４億１，４２６万５，３５４円の内訳についてでございますが、年金からの天引きによります特別徴収が１２億９，３５５万９，６６０円、納付書や口座振替による普通徴収が１億１，２０３万１，０８９円、過年度からの滞納繰越分として８６７万４，６０５円となってございます。\n　以上でございます。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-066",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、７期、８期の基金状況と活用状況及び使い道と課題について伺います。",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-067",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "今野高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基金の状況についてでございますが、現時点で８億４，８４６万３，６９５円となっております。今後の活用についてでございますが、第８期計画におきまして保険料の増嵩を抑えるため基金を２億３，５２０万円取り崩すこととしており、残りにつきましても第９期以降の保険料の増嵩の抑制に活用してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 163,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-068",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基金は既に８億を超えていると、しかし今８期の保険料の増嵩を抑えるために２億ちょっとを取り崩すと。そういってもまだまだ６億も残っている。そのようにため込まないで高齢者が元気で生きていくために、例えば老人クラブの活性化を図るとか、有償ボランティアの支援を強化するとか、本市独自の施策も考えてこの活用を図ってはいかがですか。",
+    "text_length": 159,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        71
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-069",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "今野高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市独自の政策についてでございますが、今期第８期より保健福祉事業といたしまして家族介護用品助成事業、あったか移送サービス事業、介護人材確保支援事業を実施予定としているところでございます。\n　以上でございます。",
+    "text_length": 104,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-070",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まだまだ足りないと申し上げておきます。\n　それでは次、本市独自の低所得者対策についてはいかがでしょうか。",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-071",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "今野高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市独自の低所得者対策についてでございますが、まず保険料につきましては保険料段階の多段階化によりまして低所得者の保険料を軽減することとしております。そのほか、低所得者に対する介護保険料や利用料の軽減策につきましては、国の責任において財政措置を含め、総合的かつ統一的な対策を講じるよう引き続き全国市長会を通じて国に要望してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 186,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-072",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "つまり国の言うとおりにやるのだということなのですけれども、この辺は後でまた。\n　それでは、制度改正と本市への影響について伺っておきます。",
+    "text_length": 68,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-073",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "今野高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の制度改正についてでございますが、新型コロナウイルス感染症や大規模災害が発生する中で感染症や災害への対応力強化を図るとともに、団塊の世代の全てが７５歳以上となる２０２５年に向けて、２０４０年も見据えながら地域包括ケアシステムの推進、自立支援、重度化防止の取組の推進、介護人材の確保、介護現場の革新、制度の安定性、持続可能性の確保を図るため、介護報酬全体で０．７％の増となり、うち令和３年９月末までの間、新型コロナウイルス感染症に対応するための特例的な評価が０．０５％となってございます。本市への影響についてでございますが、今回の制度改正からまだ半年しか経過していませんことから、今後の動向を注視しながら対応してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 333,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-074",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この点もまた後で伺います。\n　次に、補足給付の支給要件が改正されましたが、この内容について具体的に伺います。",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-075",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "今野高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補足給付の改正内容についてでございますが、従前まで年金収入等に応じて３段階に区分されておりましたところを、現行の第３段階をさらに年金収入により２つに区分した上で第２、第３段階の預貯金等の資産の上限を現状単身１，０００万、夫婦で２，０００万円以下から第２段階におきましては単身６５０万、夫婦で１，６５０万、第３段階の１におきましては単身５５０万、夫婦１，５５０万、第３段階の２におきましては単身５００万、夫婦１，５００万とし、施設入居者で年金収入等が１２０万円を超える第３段階の２に該当する方の食費が現行６５０円から１，３６０円となり、ショートステイ利用時の食費が第２段階で現行３９０円から６００円、第３段階の１で６５０円から１，０００円、第３段階の２で６５０円から１，３００円に見直されたところでございます。令和３年度の対象者数は、９月２７日現在で６６３名となっており、内訳は第１段階が５９名、第２段階が１２４名、第３段階の１が１１６名、第３段階の２が３６４名となっております。また、今回の預貯金等の上限変更によりまして申請が却下となりました件数は２９件となってございます。\n　以上でございます。",
+    "text_length": 498,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-076",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "何十年も本当に汗水流して働いてようやくもらった年金が１２０万を超える、たった一月１０万円ではありませんか。そして、預貯金についても他人の懐に手を突っ込んで、そして５００万、５５０万あるではないかと、だからもっともっと負担してくれと、これは本当に高齢者にとってもやりきれない、ここを改善する必要があると思うのです。そして、その少ない中からさらに、年金１２０万というのは１０万円なのですから、ここから衣食住が引かれるのです。そして、食費が６５０円から１，３００円に跳ね上がると。では、やむなく施設を出る人、サービスを削る人がいないのかということです。こういう市民にこそ福祉の心が大事です。基金は８億４，８００万円もたまった、それを取り崩しても６億円も残るではありませんか。それを使って福祉の心を取り戻してはいかがですか、考え方を伺います。",
+    "text_length": 367,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-077",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "塩越保健福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "介護保険施設におきます食費、居住費、こういった補足給付の支給要件が８月１日から今お答えしたように変わってございます。こういった変更の背景にあるのは、高齢化が進む中で必要なサービスを必要な方に提供できるようにしつつ、在宅で行われている介護との負担の公平性、それから制度の維持可能性を高める視点から、一定以上の収入のある方に対して負担能力に応じた負担を求める見直しとなってございます。一方で、基金につきましては、全ての被保険者の方々が負担軽減につながりますことから、９期以降の保険料の増嵩を抑えるために活用するということで考えてございます。また、低所得者に対する対策につきましては、ちょっと繰り返しになりますけれども、国の責任におきまして財政措置を含めた総合的かつ統一的な財政措置を講じていただけるよう引き続き全国市長会を通じ国に要望してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 393,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-078",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどの国保、後期高齢の中でも同僚委員に対しての答弁がありましたが、負担の公平とか制度の維持といって、制度は残っても肝腎の市民の暮らし、これが成り立たなくなる、ここが大事なのです。ですから、もうちょっと制度の運営の在り方の話をしますが、答弁の中で感染や災害への対応力強化が課題で取り組んでいると言いました。しかし、今年８月１０日でしたか、大雨で市内の幾つかが冠水したことを御存じと思います。そのため、ある介護事業所でトイレなどが使用不能となり、臨時休業を余儀なくされた、御存じですね。事業所が下水道担当へ連絡したら、排水ポンプをフル稼働させると他への影響が出るので、排水能力を抑えたと、誠に申し訳ありませんとのことでした。そこで、本市の介護に連絡を取り、訳を話して、僅かですが何とか補償してもらえないかとお願いしたのだけれども、国の決めた規則ですから、報酬は３０分の１を削ると言われたと、これが市のやることかということです。苫小牧市など関連事業所に連絡を取ってみると、そんなに室蘭市は冷たいのかと絶句されたそうです。国の責任だとか、国の決めた規則だとか、いつも室蘭市はよそごとではありませんか。ここに福祉に冷たい、市民に寄り添うことのない姿勢が現れてくるのです。ですから、介護制度、先ほどからずっと申し上げてきましたけれども、例えば低所得者に対しては利用するときはせめて半分を補助するとか、そういう福祉に温かい町こそつくるべきではありませんか、考えを伺います。",
+    "text_length": 630,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-079",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "今野高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の大雨に対する経過についてでございますが、国が示しております災害時の取扱いに基づいて実施しておりまして、保険者といたしましてはサービス利用に即した負担を利用者に求めることが適当と考えておりまして、他の利用者との公平性の観点からも御理解いただきたいと考えてございます。\n　以上でございます。",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-080",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "制度上は理解していますが、しかし今回の場合、室蘭市の下水道設備に不具合があってというか、設計ミスかどうか分かりませんけれども、とにかく下水道の担当者はその事業所に対して申し訳ありませんでしたと謝ったというのですから、そういうときにこそ介護保険制度にはなくても室蘭市独自でそういうところにきちっと補償するという、そういう温かい心、これをつくってほしいということです。\n　それでは次に、介護職員確保の見通しと国・道の調査状況及び結果について伺います。",
+    "text_length": 223,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-081",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "花島高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "介護職員確保の国・道の見通しについてでございます。第８期介護保険事業計画の介護保険サービス見込み量に基づいた介護職員の必要量は、２０２５年には全国で２４３万人、現状より３２万人増、全道で１１万２，０００人、１万人増と試算されてございます。このため国では、介護職員の処遇改善、多様な人材確保、離職防止等に取り組むことが掲げられてございます。\n　以上でございます。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        84
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-082",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、本市の従事者の就職・離職状況についてはどうでしょうか。",
+    "text_length": 32,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-083",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "花島高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市の介護保険サービス従事者の就職、離職の現状についてでございます。令和２年に実施した介護人材実態調査では、６７事業所で令和元年４月１日～令和２年３月３１日の１年間の採用人数で１７７人、１事業所平均２．６人で、一方離職者は１３４人、１事業所平均２人となってございます。介護職員の定着につきましては、安定している、ほぼ安定しているとの回答が合わせて７５％を占めておりますが、現在就業している職員の年齢構成を考慮すると職員の世代交代が必要なものと認識してございます。\n　以上でございます。",
+    "text_length": 242,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        86
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-084",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "室蘭市の場合は、全国的な介護士不足とか、そういう問題には直面はしていないと言いますけれども、やはり高齢化してきて先が思いやられるという状況なのだと思うのですけれども、その介護士不足の状況及び処遇改善の考えと課題について伺います。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        87
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-085",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "花島高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "介護士の不足状況及び処遇改善の考えと課題についてでございますが、前回の報酬改定において新たな処遇改善加算が創設されており、第８期計画策定協議会の委員からも処遇については改善されつつあるとの意見もあったところでございます。また、課題についてでございますが、従業員の確保は事業者の責務と考えてございますが、本市といたしましては介護人材確保支援事業で事業者の取組を補助し、また室蘭市奨学金返還支援事業給付金や企業連携ＵＩＪターン促進事業などの周知にも努めてまいりたいと考えてございます。\n　以上です。",
+    "text_length": 247,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        88
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-086",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コロナ禍の中で介護にどのような影響が現れたかということなのですけれども、保険財政、介護事業所収入減、利用者減について伺っておきます。",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        89
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-087",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "今野高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "介護保険におきます新型コロナウイルスの影響についてでございますが、令和元年度と令和２年度での年間比較におきまして全体として件数、給付費ともに増加傾向となっておりますことから、事業所収入等におきましては大きな影響が出ていないと考えてございますが、事業所への影響につきましては今後の情報収集及び分析に努めてまいりたいと考えてございます。また、被保険者につきましては、コロナの影響により収入が減少した場合、保険料の軽減措置を実施してございまして、対象者は令和２年度で１７１名、令和３年度が現時点で１１名となってございます。\n　以上でございます。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        90
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-088",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大きな影響は出ていないと言います。しかし、私たちがいろいろ聞いてみると、本当にどこもぎりぎり、これ以上コロナが長引けば本当に倒産するところも出てくる、そのような懸念もあるのです。ですから、この点については、調査もきちっとしながら、経営難対策、補助、こういったことも考えていかなければならないのでないかと思うのですけれども、この辺について考えを伺っておきます。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-089",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "今野高齢福祉課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業所に対する補助についての考え方でございますが、国や道が実施しております事業所への緊急経済対策の周知などを引き続き国・道と連携して進めてまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 95,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        92
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-090",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "とにかく国の言うとおりという室蘭市の姿勢を改めなければ、豊かな財政的にも心配のない、そういう町でないのは室蘭だけではないわけですから、全国的な動き、それから室蘭市の実態をきちっとつかまえて、そして支援するところには支援する、国の制度がなければ市自らがそういう補助制度、支援制度も考えて、介護も福祉もですけれども、温かい町にしなければならないと私は思います。そういう意味で保険者から見た制度改善の課題について利用者と保険者の両方の状況を考えて室蘭市は今後どうしていくのか、この辺についても伺っておきたいと思います。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        93
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-091",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "塩越保健福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "保険者から見た制度の課題、それから利用者、保険者を考えて今後どうしていくのかということでございますが、介護保険制度の安定性、持続性の確保のためには、先ほども少し述べましたけれども、介護人材の確保ということについてはやはり喫緊の課題であるというふうに考えてございます。私どもとしましては、引き続き国・道が実施する施策と連携を図りながら対応してまいりたいと考えてございますが、４月から始まりました私どもの８期計画の中にもＳＤＧｓの基本的な理念でございます誰一人取り残さないと、こういったことを計画の中にも同様に取り入れて考えてございますので、私どもとしましては誰一人取り残さないように高齢者施策をしっかりやってまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 329,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-092",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "田村委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "るる聞いてまいりましたけれども、やはり最後の部長答弁のように誰一人残さない、そういう温かい町をつくるということが大事なのです。しかし、答弁にも随所に出てくるように、室蘭市は国の決めたとおり、国の制度のとおりということで独自支援をしようとしない、ここが私は室蘭市における介護保険制度の最大の欠陥だと申し上げて、質問を終わりたいと思います。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        95
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-093",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、私のほうから病院事業会計決算について病院経営改善の方向性を見据えて質問していきたいと思っております。\n　初めに、同僚議員の一般質問だったのですけれども、看護師が５年前に４０７人いました、現在は３７８人、２９名の減という答弁がありました。それだけ多くの看護師がいないとなると、具体的にどのような業務対応を取られているのか、例えば３人いなければならないところを２人で対応するとか、過度に職員に負担がかかっているという現状はないのかどうなのか、まずこの辺からお聞きしたいと思います。",
+    "text_length": 243,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        96
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-094",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "山﨑［病院］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "看護師減少に伴います具体的な対応についてでございますが、新人看護師に対しまして必要な知識と技術などの早期習得や教育に関する充実度の向上を図る上での教育カリキュラムの改定、また病棟の運用を一部変更するなどの対策を講じてございます。一方では、現在新型コロナウイルス患者の受入れ体制も保持しながらの運用となってございまして、そういった意味では負担増になっているものと考えてございます。\n　以上でございます。",
+    "text_length": 200,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-095",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "負担増になっていると、こういう答弁がありました。やはり職業柄無理のない業務対応が必要ではないのかと、負担増にならないような体制をしっかりつくっていくことが大事ではないかということについては強く要望しておきたいと思います。\n　それでは次に、医師及び薬剤師など他の医療技術者の状況はどうなのでしょうか。特に５年前と比較して減少しているのでしょうか。内容的なことについてお聞かせください。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        98
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-096",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "山﨑［病院］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "医師やほかの医療技術者の人員状況についてでございます。５年前と比較いたしますと、ほとんどのコメディカル職員数は維持または増員されている状況になってございます。\n　以上でございます。",
+    "text_length": 90,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        99
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-097",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "増員になっているということでございますから、一定の方向性が示されて行われているというふうに判断するところでございます。\n　それでは次に、病院運営に必要な人員確保がうまく進んでいないのでないかというような話も聞きますけれども、その要因について教えていただきたい。",
+    "text_length": 130,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        100
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-098",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "山﨑［病院］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "人員確保に関する御質問でございますが、医師に関しましてはやはり医局入局者の減少、看護師に関しましてはライフスタイルの変化や市立室蘭看護専門学院の定員割れなどが要因であると考えてございまして、医師、看護師ともに共通項目といたしましては都会派志向が強く、都市圏に集中する傾向があるものと考えてございます。\n　以上でございます。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        101
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-099",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。方向性が都市圏のほうに行っているのだということなのです。\n　それでは、特に医師の減少は、病院運営上大きな問題であります。全国的に医師不足が言われている中で道内の公立病院の状況はどうであるのか、また道内の公立病院の結束体制についてもお聞かせください。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        102
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-100",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "山﨑［病院］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、道内の公立病院の医師数についてでございますが、札幌や函館などの都市圏にある公立病院の医師数につきましては現状維持や増加傾向にございまして、他の地域につきましては現状維持あるいは減少傾向が見られる状況となってございます。\n　あと、道内公立病院の医師の結束状況でございますけれども、公立病院にかかわらず、私的病院に対しましても診療援助等で医師が行き来してございますので、その辺に関しては手薄なところはそれぞれの病院が相手方に対してカバーしていくというような状況となってございます。\n　以上でございます。",
+    "text_length": 252,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-101",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。何といってもお医者さんがいなければ収益確保もままならないと、病院としても死活問題であると、このように思うわけでございます。内容的には、今お聞きしましたら、現状維持か減少傾向が見られるということでございまして、そして結束力についてもそれなりに努力をされていると思うわけでございます。それでは、取り組まれている内容、大学に行ってこれから医師をお願いしますと言ってもなかなかその方向性が見えてこないのではないかというふうに思いますけれども、どういうふうな努力をしているのか、その具体的な内容についてお聞かせください。",
+    "text_length": 262,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        104
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-102",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "山﨑［病院］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "医師の確保策についてでございますけれども、医師派遣要請につきましては一朝一夕で何とかなるものではなく、粘り強く続けていかなければならないものと考えており、従前より市長や管理者が継続して医育大学に訪問し、要請活動を実施していくことが重要であると考えてございます。また、そのほか人材紹介の業務委託による確保策も非常に有効的であると考えてございまして、これまで常勤医１名の確保につながっているところでございます。\n　以上でございます。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-103",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　それでは、特徴的なことについてお伺いしたいと思います。麻酔科の医師の問題も昨年ありました。多くの問題が発生しました。それによって歳出のほうも相当大幅に増えたということもあります。市立病院の収支の関係で収益の問題、あるいは費用の問題ということで具体的な特徴的なことがあるのかどうなのか、その内容について提示していただきたい。",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        106
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-104",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "弘瀬病院経営企画室主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "麻酔科医の影響についてでございますが、まず１０月に２名の退職に伴い人件費が減となりましたが、１１月から民間法人と契約いたしまして麻酔科医を確保いたしましたことから、費用面では約６，５００万円増加しております。さらに、感染患者の対応による病棟運用の変更などに伴う収入減やマスクなど材料費の増加がございます。\n　以上でございます。",
+    "text_length": 163,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-105",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。特徴点ということで、費用面では約６，５００万円の増加を、あるいはマスクなど材料費の増加ということでいいことがないのかなというような感じもいたしますけれども、それではコロナの補助金があろうかというふうに思いますけれども、その内容についてお聞かせください。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        108
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-106",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "弘瀬病院経営企画室主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コロナの補助金の影響についてでございますが、コロナ関係の国と道からの補助金収入は７億３８１万円でございました。先ほど申し上げましたとおり、感染患者の増加に伴う病棟運用の変更に伴う減収や材料費の増加など様々な要因が重なっておりますことから、現段階では具体的な試算は困難なものと考えてございます。\n　以上でございます。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-107",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　それでは、コロナが終結するということもあり得るのではないかというふうに思いますけれども、そうなると今答弁がありましたけれども、市立病院はどうするのか、どの方向に進めていくのか、この内容について、コロナが終わった後の体制について検討されているのかどうかお聞かせください。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        110
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-108",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "新井病院事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の市立病院が目指すべきものについてでございます。まずは、現在職員一丸となって取り組んでおります収支改善に注力することが最重要と考えてございます。また、コロナ終息後におきましても当院としましては感染症や救急医療など公的病院として担うべき医療を維持するため、医師や医療従事者の確保、そして収支改善を着実に遂行しながら地域医療体制の保持に努めてまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 197,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        111
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-109",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　それでは、青山市長にお伺いしたいと思います。大変厳しい状況が続いていることは間違いありません。そういう中で市立病院の関係について、今年の２月２６日の市政方針の説明の中に市立病院の体制についてこう述べております。ちょっと読み上げます、大事なことですから。「市立室蘭総合病院の常勤麻酔科医など医師確保について、北海道と連携し医育大学に粘り強く要請していくとともに、経営健全化に向けた増収策を着実に実行しながら、さらなる収支改善に向けた取組を進めます」と、こういうふうに市政方針で明らかにしておりますけれども、この内容的にはどうでしょうか。市長のほうから答弁を。",
+    "text_length": 287,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        112
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-110",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "青山市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "２月に市政方針で書かせていただいたとおりでございまして、これまでも昨年特に、副委員長御指摘のとおり麻酔科医の問題は今も継続してございまして、この間道への要請はもちろんでありますけれども、何といっても医師派遣元の札医大には私も２か月に１度は大学のほうに通いながら、当然それ以上に管理者、事務局長は通いながら医師の確保に関する様々な情報を得てきておりますけれども、結果として今は医育大学のほうからの麻酔科医の派遣は限定的だといったようなことでございます。全般的に医療の問題、今御指摘の中の医師、看護師といった医療従事者をどう確保していくかということが病院の将来、そしてまた地域医療の将来につながるわけでございますけれども、そういった部分で道のほうから示された地域医療構想に基づいて我々もそれに向かいながらも将来にわたって住民の皆さん方が安心して医療を受けられる環境に今汗をかいているところでございます。なかなか結果が現れていないところは申し訳なく思ってございますけれども、引き続き地道な取組を進めていきたいと考えております。",
+    "text_length": 460,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        113
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-111",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "短く答弁してください。私がお聞きしたのは、北海道と連携しと、こういうふうにあるのです。北海道に顔を出したというのではないのです。顔出すのは誰でも出せるのです。だから、北海道と連携し、この連携しということが極めて大事なのです。そのことが今後スムーズな運営を進めていくことができるのかできないのか、こういうことが私は極めて重要だと思っているのです。ですから、こういうふうに市政方針の中で明らかにした以上は、しっかりとしたその体制をつくっていくと、室蘭市といったら青山市長だというふうに言われるぐらい体制を整えていくという考え方についてはいかがですか。",
+    "text_length": 273,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        114
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-112",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "青山市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私も道庁にふだんから保健福祉部をはじめ、いろんなところに地域の実情、そしてまた道の置かれている状況についてお話を伺い、そしてそういった部分で今も次長職を道から派遣していただいておりまして、日頃から道とのいろんな情報のやり取りをさせていただいているところでございます。北海道の立場とすると、北海道全体の中の医師含めた医療スタッフの確保といったところで、我々からしたら室蘭にたくさん来てくださいと当然お願いするわけでありますけれども、北海道は北海道の立場で北海道全体の中でどういうふうに医療資源を配分していくかといったようなお考えもあるようであります。いずれにしても、私の立場としては、この地域の医療体制の確保に向けてしっかりと引き続き道とも連携を図りながら、地域の実情について訴えさせていただきたいと考えております。",
+    "text_length": 357,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        115
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-113",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市長、言葉だけでは駄目なのです。やはり内容的なことをしっかり、ああ、なるほどなというふうに室蘭市民の誰が言ってもそういう方向が示されるような体制をつくっていくことが大事なのです。正直言いますと、今、市長の言っていることは道のほうとしては全て受入れしていないのです。ちょっと確認してみてください。もう少し真剣にその内容を思っていただかないと、言葉では何ぼでも言えます。しかし、内容的なことが一番大事なわけです。札幌行って道庁に行ったら、もちろんそこに顔出します。ただ顔出しただけでは駄目です。何をしなければならぬかということです。そういうことをぜひもう少し真剣に取組をやっていただきたいというふうに思います。この件はこの辺で終わりますけれども、北海道と連携しと、こういう体制がしっかり整うように努力をして、それらを今後見てまいりたいと、このように思っております。\n　それで、これも市長に聞きたいのですけれども、私がこういう質問するのはなぜかというと、これは私が３月の予算議会で、市長が市立病院の将来について職員の前で分からないと言ったという話を取り上げたところ、ふだんから話し合っていれば、このように病院職員が聞くはずがないと思い、青山市長と病院理事者との間で意思疎通が足りないのでないかと、今の北海道との関係もありますけれども、これと似たようなものなのです。そういうことで意思疎通をしっかり保つということが大事だと思いますけれども、市長、病院の理事者と市長とはうまく意思疎通が図られているというふうに思っていますか。今どうですか。",
+    "text_length": 665,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        116
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-114",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "青山市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "どう思っているかというところは、職員に直接は聞いておりませんけれども、ただ、今地域医療の問題、そして市立病院の経営改善の問題というのは本市において大変最重要なテーマでありますことから、金戸管理者、髙橋院長、新井事務局長とは頻繁に今の状況、そしてまたその対応について、とりわけこの１年半においてはコロナのことも多くやり取りがあったわけでありまして、私も都度病院のほうに足を運ぶなりして実情について確認しております。いずれにしても、従前以上に管理者、院長、局長ともそこら辺の確認を密にやり取りさせていただいているというふうに考えております。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        117
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-115",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市長は病院の課題については最重要課題と自ら言っているわけです。今まで以上に顔出した、それは当たり前のことなのです。しかし、その割には緊張感がないし、そういう対応の仕方というものが感じられない。お聞きしますけれども、いろいろ緊張感云々というようなこと言いましたけれども、どういう意識の中で市長は行動しているのかなと思っているのです。なかなか言葉で、あるいは内容的にこうだというようなことは出ていないかもしれないけれども、分かっている範囲でどのような意識で行動されているのか、今日は病院の職員も来ていますから、そういうことで感じると思いますので、教えてください。",
+    "text_length": 279,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        118
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-116",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "青山市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどの再編協議会の中でも御指摘があったように、今は市立病院の経営改善といったところが大変大きいし、また地域の公的医療機関としての使命をしっかりと果たしていってほしいといったようなことがやはり大きいと思います。そのためにも、コンサルタントを入れた中での業務改善で成果も少しずつ上がってきているなというふうに職員、スタッフに対して感謝しておりますし、またそれをさらに進めていく中で引き続き将来の地域医療の中でどのような役割、機能を果たしていくかということをしっかりと都度意識を確認しながら対応していきたいと考えております。",
+    "text_length": 260,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        119
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-117",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市長、やはり言葉で表さなかったら表しようがないのです、実際問題どういうことかということを。その言葉自体も聞きたくないという人もいるし、内容的にももう少し中身の濃いものを聞きたいという人もいるし、様々なのです。ですから、もう少し頭を使ってしっかりと対応していただきたい。私聞く範囲では、病院の問題だけでなく、これも今回の第３回定例会の中で同僚議員の皆さん方が質問していますけれども、第４定で本庁舎の問題についてやるとか、あるいは公共施設の存廃についてやるとか、市長の政治生命に係るような大きな問題が山積しているわけです。それをしっかり取り組むには、やはり市長を信用していないと誰もついていかないわけです。そういうことを考えると、市長はもう少し真剣な姿というものを職員に、あるいは市民に見せていくということが極めて大事でないかと思っていますけれども、そういう感覚をお持ちなのかどうなのかお聞きしたい。",
+    "text_length": 398,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        120
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-118",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "青山市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これまでも佐藤委員のほうからもいろいろと御指摘いただいて、都度しっかりと考え方について私としても自分自身に言い聞かせながら職員と対応しているつもりでありますし、まだまだ不十分であるところもあろうかと思いますけれども、引き続き大きなテーマ、大きな課題に対して職員と共にしっかりと前に進めていきながら、市民の皆さんの将来にわたって安心したまちづくりに評価していただけるように誠心誠意努めていきたいと考えております。",
+    "text_length": 205,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        121
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-119",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "佐藤副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。もうこれ以上お話ししませんけれども、いずれにしましてもやはり市民から室蘭の市長は青山だと、こういうふうに見える姿で、あるいは話もしたくないなんて言われるようなことあったら、追っていって話をするぐらいの気持ちになるぐらいの体制をつくっていただきたいと申し上げて、私の質問を終わります。ありがとうございました。",
+    "text_length": 160,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        122
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-4-120",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 4,
+    "schedule_name": "09月29日－03号",
+    "date": "2021-09-29",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "日本共産党室蘭市議団は、認定２号、３号、４号について反対であります。\n　まず、認定２号国保会計についてであります。何よりも国民健康保険料の高さの要因である事業主負担のなさ、さらには人頭割と言われる均等割の存在が大きな要因となっております。こういった問題を抜本的に解決するために、あるいは保険料引下げのために市独自の法定外繰入れ、これをいまだに一切してこなかった、こういった点が大きな問題として指摘しておきたいと思います。\n　次に、認定３号介護保険会計についてであります。介護保険の最大の問題は、何よりも介護会計の５割を被保険者の保険料で賄い、国の負担は僅か４分の１にすぎない、ここに最大の問題があります。さらには、自助、共助の名の下に相次いで介護保険法を改悪し、自己負担を押しつける、こういった事態が進行しております。今決算は、第７期の最終年度の決算であります。第７期の保険料、取り過ぎた保険料、さらには積み上げた基金を活用しての保険料の引下げに一切応じてこなかったものであります。\n　次に、認定第４号後期高齢者医療保険会計についてであります。今決算は、保険料の特例軽減措置を廃止、さらに保険料率の引上げで大幅に被保険者である後期高齢者、７５歳以上の高齢者に負担を課したものであり、認めることはできません。\n　以上、反対理由を述べ、認定２号、３号、４号について日本共産党室蘭市議団は反対といたします。",
+    "text_length": 600,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        125
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-121",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "おはようございます。港湾整備事業会計について一問一答で質問させていただきます。\n　港湾事業会計決算の経営状況について、収益的収入２億８，２３７万５，５０１円に対して収益的支出６億１，６１０万３，４３０円、差引き３億３，３００万ちょっと当年度純損失を生じています。これの内容、土地、倉庫、ガントリークレーンと、こうなるわけなのですけれども、それぞれの営業についてどのような決算だったのか、具体的な数字について伺います。",
+    "text_length": 208,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-122",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "京納港湾管理課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "営業収益の決算額の内訳でございますが、施設用地収入が１億３，１３１万７，０３３円、倉庫上屋収入が３，６７１万４，４０３円、荷役機械収入、ガントリークレーンが６０万２，７６８円で、これら全体の収益は予算額を上回っておりますが、当年度の純損失の主な要因といたしましてはコールセンター廃止に伴います祝津埠頭のアンローダー撤去に係る資産減耗費が３億６，８８３万９６６円となったことでございます。\n　以上でございます。",
+    "text_length": 204,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        5
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-123",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "資産減耗費が大きかったということで、現金を伴わないということになりますけれども、ガントリークレーン６０万何がしで、これ室蘭開発への委託料とその内容についてお伺いします。",
+    "text_length": 84,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-124",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "京納港湾管理課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "室蘭開発への支払額の内訳でございますが、運転前の保守点検代が１５０万５，４９８円、修繕費や備品代が２２万４，４６１円、年次点検代が２３７万３，８００円、合計で４１０万３，７５９円となってございます。\n　以上でございます。",
+    "text_length": 110,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-125",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "４１０万の経費で６０万の収入ということで、ちょっとこれはまずいなというふうに思います。さらにこのガントリークレーン、これから元本償還等々大きく始まっていくと思いますけれども、今後の償還の金額、年数、それから毎年どれくらいの償還額になるのかお示しいただきたいと思います。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-126",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "京納港湾管理課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ガントリークレーンに係ります今後の償還金額についてでございますが、元利合計で８億５，４７２万１，５１４円、償還年数は令和１６年までの１４年間で、償還開始年と終了年を除いては毎年約６，３００万円の償還額となってございます。\n　以上でございます。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-127",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "ガントリークレーンを運用して収入が６０万何がし、そして毎年４００万ぐらいのお金がかかっている、さらに償還が６，３００万、ガントリークレーンだけ見れば大赤字の状態です。新しいガントリークレーンを導入しても、まず活用策というのがこの間全く見えてこないというふうに思っております。今のコンテナの取扱貨物の内容、それから今後拡大するためにどのような取組をしているのか、その際の課題、今後の活用策についてどのように考えているのかお伺いいたします。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-128",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "髙井港湾政策課長補佐",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "室蘭港におけるコンテナ取扱貨物の内容につきましては、主に輸入は製鉄副原料としての鉄鋼、輸出は鋼材となっております。また、取扱い拡大の取組としましては、コロナ禍で昨年と今年は行っておりませんが、東京での室蘭港利用促進懇談会の開催のほか、海外ポートセールス等を行っております。\n　次に、課題としましては、本市の基幹産業である鉄鋼業のほか、臨港部の製造業の企業からは御利用いただいておりますが、その他の利用を図っていくことが課題と考えるところでございます。また、ガントリークレーンの活用につきましては、鋼材などのばら積み貨物の荷役においても実績がございまして、コンテナに限らず活用できる点など今後ＰＲに努めてまいりたいと考えております。\n　以上でございます。",
+    "text_length": 326,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-129",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "現状主に地元企業向けの活用となっているということで、いわゆる海外ポートセールスの活用というのはほとんどされていないのではないかと。ガントリークレーンは、以前横浜港から無償提供というか、結構組み立てたり用地整備するのに数億円かかっておりますけれども、横浜から運び込んで、それが老朽化して故障が相次いで今般新しいものに替えたということで、基本的な考え方としてはフィーダー港として何とか室蘭港崎守埠頭のマイナス１１メートル岸壁、これを活用しながらやっていこうという方針の下にずっと続けてきて、後で言いますけれども、青山市長も鉄道貨物の研究会なんかを立ち上げてやってきたということなのです。だけれども、現状見ると、打開策が全く見えていないのでないのかなと。例えば日本海における物流の中で釜山は非常に大きいですけれども、そこから内航フィーダーにつなげる、室蘭港がどういう役割を果たすかだとか、何かそういう展望が見えてきていないのではないのかなと。こういう状態がずっと続いていくと、確かに土地の収入、貸付け、売却、いろいろあります。それから、倉庫もあります。今新しくして更地にして土地として稼いでいくというような考え方も持っているようですけれども、ほとんどそっちのほうで何とか企業会計が維持していく、ガントリークレーンをせっかく更新してもそれが稼ぎの主体になっていないという実態なのです。これはガントリークレーンを新しくするときの見通しが極めて甘かったのではないのかなと。古くなって故障が続くから仕方なく新しくする、ただそれだけの話で今回新しくして、結局後々の借金ばかりが残ってしまったということなのです。見通しが甘かったのでないのかなと。こんなことで港湾企業会計を今後維持していけるものなのでしょうか。",
+    "text_length": 746,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-130",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "京納港湾管理課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ガントリークレーンにつきましては、室蘭港の物流拠点として利用企業の経済活動を支えるために必要不可欠な荷役機械でございまして、港湾整備事業会計全体として収支均衡が図れますよう先般策定いたしました経営戦略に盛り込んでいるところでございます。\n　以上でございます。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-131",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "それでは、具体的にちょっと話を移します。先ほど言いました市長１期目の平成２４年ですか、肝煎りの公約の鉄道貨物研究会を立ち上げてやってきましたと。これまでの取組の経緯についてお知らせいただきたいと思います。",
+    "text_length": 102,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-132",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "髙井港湾政策課長補佐",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "室蘭港貨物等輸送研究会につきましては、平成２４年２月に立ち上げまして、室蘭港で物流を行う企業や関係団体・機関の皆様に参加いただいて平成３１年２月まで計８回開催し、平成２８年の新青森－新函館北斗間の北海道新幹線の開業に向けた北海道発着貨物への影響のほか、その後はフェリー貨物の動向等について幅広い情報共有や各種取組に関しての意見交換などに取り組んできたところでございます。\n　以上でございます。",
+    "text_length": 196,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-133",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "それでは、鉄道貨物についての取組については、現在のところ休止状態ということなのでしょうか。",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-134",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "髙井港湾政策課長補佐",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貨物等輸送研究会は、平成３１年２月を最後に開催しておりませんが、港湾部内におきましては各種関連情報の収集などは継続しております。\n　以上でございます。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-135",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "情報収集といってもしっかりとした企業会計ですから、稼ぐという先の見通しを持った上で焦点を絞って情報収集、戦略的にやらなければ駄目なのです。この話は後でします。\n　ところで、崎守の鉄道引込線あります。今遮断機というのか、止まっている状態です。これを生かしていろいろとポートセールス行ってきたようなのですけれども、現在は引込線は使われていないようなのですけれども、この引込線というのは今すぐ使用可能なのですか。",
+    "text_length": 203,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-136",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "京納港湾管理課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "崎守埠頭の引込線につきましては、平成２０年３月１２日を最後に定期使用しておりません。また、現状は踏切の遮断桿などが撤去されておりますので、現状のままでは使用ができないものと伺っております。\n　以上でございます。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-137",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "そもそもこの引込線は、陣屋に駅ありますが、そこから引き込まれています。崎守埠頭までずっと来ているのです。線路と、それからトンネルもあります。どのぐらいの年数がたっているものなのか、相当老朽化していると思いますけれども、この引込線はどこの所有なのか、これについて伺います。",
+    "text_length": 135,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-138",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "京納港湾管理課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "線路及びトンネルの設置年でございますが、室蘭市史などによりますと大正１４年に輪西－伊達紋別間を長輪東線として鉄道が開通した当時に建造されたものと考えられます。また、引込線の大部分の線路やトンネルにつきましては、ＪＲ貨物の所有となってございます。\n　以上でございます。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-139",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "９６年ぐらいたっているのです。北海道の中には１００年たっているトンネルというのも幾つかあるようで、小樽の近郊は結構１００年たっているのがあるようです。国のほうは、構造物に関して５０年が一つのめどという考え方を持っていて、これ何年か前の資料なのですけれども、何とか手を加えながら１００年もたせようという考え方あるようなのです。これ途中で手加えているかどうか分かりませんけれども、もう１００年になろうとしています。\n　先ほど言いました２４年度から貨物輸送の取組に対していろいろやってきたわけなのですけれども、ＪＲ貨物が独自で線路を持っているというのは珍しいです。単独で持っているというのはなかなかないです。以前はたしか苫小牧東港区にもありましたけれども、あれは今廃線になっています。大体ＪＲ貨物は、ＪＲ旅客の線路を借りてお金を払って商売しているのです。もしやったとしても第三セクター方式でいろいろ地元の自治体も含めて出資し合ってやっているということです。なかなか単独で持っているというのは珍しいところなのですけれども、ＪＲ貨物さんはこの引込線について将来どのような考え方を持っているのか、将来展望。そこら辺は２４年から貨物の取組をやっていたわけだから、当然そういう会話は今までしてきたというふうに思いますけれども、将来展望だとかＪＲ貨物の考え方、どのような考え方を持っていると認識していますか。",
+    "text_length": 595,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-140",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "京納港湾管理課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "引込線の活用についてでございますが、貨物鉄道会社は荷主の需要に応じて運ぶということでございますので、一定程度の貨物需要が断続的に続くことが確実と見込まれなければ利用再開は難しいものと伺ってございます。この中では、単発的に鉄道車両の輸出などを行うのみでは利用再開には至らないと伺ってございます。\n　以上でございます。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-141",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "先ほど来お話を聞いていますと、室蘭港の崎守埠頭をフィーダー港として大きな貨物を取り扱うというような展望はなかなか見えてこないと。市長の肝煎りの貨物の研究会も今立ち消え状態になっていると。この線路の保有者の貨物会社も相当な物量がなければ再開はしないということであれば、ほとんど使えないということなのではないですか。それから、先ほどの経過の年数を見ても１００年に迫る構築物、これを使用するにしても相当な投資が必要なのではないのかなというふうに思います。ということであれば、崎守の引込線を活用した室蘭港の貨物としての取組というのを今語るのは現実的ではないのでないのかなというふうに思いますけれども、どうでしょうか。",
+    "text_length": 304,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-142",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "佐藤港湾部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "崎守の引込線の使用に関しての投資と、あと今後の活用についての御質問でございますけれども、初めに引込線の再開に当たりましては室蘭市の事業の主体という部分は想定しておりませんが、まず再開のために必要な補修等につきましては一定の費用がかかるものと考えてございます。一方で、仮に青函の鉄道貨物輸送に一定程度シフトするということになりますと、新たに操車場、鉄道コンテナ、荷さばき施設といった各種施設、相当の投資が必要と考えられますが、全体から見ますと現在の引込線の補修費用が占める割合というものは限定的と考えてございます。いずれにいたしましても、現時点の状況におきましては貨物事情や施設メンテナンスの関係から申しまして、活用に向けたハードルについては高いものと考えてございます。\n　以上でございます。",
+    "text_length": 345,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-143",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "今現状から見ると、不可能に近いと思います。皆さんもそういう認識なのではないかなというふうに思います。それから、青函というお話出ましたけれども、これはキーワードになりますので、また後でちょっとお話しします。\n　これ長期構想にがっちりと入っているのです、崎守の埠頭を貨物活用した室蘭港の活用ということで長期構想にがっちり載っかっています。これ何年も前の話ではない、２年前の話です。先般私も商工会議所の陳情会に出席しましたけれども、当然のことながら商工会議所も載っけています。その場でも私言わせていただいたけれども、使えないよ、ほとんど使えませんよ、こう言ったのですけれども、いや、長期構想に載っているから載せましたと。こういうことになってしまうのです、市長。だから、引込線を活用した港の活用策ということ自体は私は否定しません。これを考えるのであれば、やはり崎守というところ一辺倒ではなくて、練り直したほうがいいのではないですか。どうでしょうか。",
+    "text_length": 420,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-144",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "亀井港湾政策課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "長期構想におきましては、中長期的な視点で今後の物流動向や社会経済情勢に大きな変化が生じる可能性を踏まえまして、崎守地区における鉄道貨物輸送を長期構想に含めたものでございます。\n　以上でございます。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-145",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "先ほども言いましたように、企業会計ですから、待っていては駄目なのです。目的、目標を持って、それに向かって進んでいくと。どうすればいいのか、それで営業すると、いろんなところから情報収集すると。目的を持たない情報収集というのは意味ありませんから、これ後でちょっと言います。\n　市長、貨物等輸送研究会、これ２年半も開催されていないということになります。情報収集は行っていると言いますが、私からすると情報収集は十分とは言えません。ほとんどなっていないのではないかと思います。今言ったように、現状ではほぼ使えない状態の引込線の活用をそのまま長期構想に載せているというのは、市長の１期目からの肝煎りの政策課題について市長は真剣に取り組もうとしているのかどうか、これ甚だ疑問に感じています。市長にお伺いしますけれども、どうですか。",
+    "text_length": 358,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-146",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "佐藤港湾部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "初めに、室蘭港貨物等輸送研究会の件についてでございますけれども、新青森－新函館北斗間という北海道新幹線の開業を控えていた当時、ＪＲ貨物への影響による海上輸送への展開を見据えて設置したという経緯がございますことから、現状におきましてはもう開通しておりますので、開業後現在においては活動休止しているといったところでございます。\n　次に、長期構想におきます引込線の活用の考え方でございますけれども、崎守地区という場所が鉄道輸送と海上輸送の結節点に位置してございますことから、この優位性を生かしまして将来的に物流体系がシフトした際に活用の可能性というものが考えられますので、そういった意味から長期構想のほうに位置づけているものでございます。また、引込線の活用に当たりましては、繰り返しになりますけれども、既存施設の補修等に加えまして、新たに操車場や荷さばき施設などの関連施設の整備が前提となるものと考えてございます。\n　以上でございます。",
+    "text_length": 415,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-147",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "何回も言っているように、目標をしっかり持たなければ駄目だということなのです。市長はお答えにならないのだけれども、市長がお答えにならないということは要するに思考停止状態になっているなと、私はこういう受け止めをしますね、残念ながら。もしそうでないというのであれば、何か発言してください。２年半も開催されていないという状況の中で長期構想に載っけています。中期というのは、長期構想の中で５年～１５年と言っています。長期というのは、さらにその後ということです。では、短期、中期、長期の段落、段落の中で何を目指していくのかというのが全体を通して大ざっぱに書かれているだけで、タイムスケジュールがないのです。\n　これ後で言いますけれども、苫小牧港はやっぱり踏み込んだ書き方しています、長期構想は。長期的に室蘭港が貨物の結節点になるというのであれば、やっぱり荷の動きがどうなのかだとかをよく分析してください。例えば、後で言うけれども、農産物が今どうなっているのか、貨物で動いている道内の農産物が何万トン年間あるのか、トラック便が何万トンあるのか、船便が何万トンあるのか、それがどういう動きになって今後どうなる可能性があるのか、そういうのをちゃんと研究してくれないと、何となく将来的に必要になるかもしれないからって誰も手は差し伸べてくれません。苫小牧に集まりますから。苫小牧は東港区をしっかりとやっていくという考え方持っていますから、幾らでも土地あります。うちの崎守の用地なんて、もう皆さん分かっていると思うけれども、全然比べ物になりませんから。引込線もありますし、日高線もありますから、新苫小牧駅からスイッチバックして日高線へ入っていけばいいわけですから。\n　それで、ちょっとお話が長くなってしまった。先ほど言った中期的な視点ということであれば５年～１５年、この点では物流問題で今非常に大きな問題になっている２０３０年札幌延伸、これに伴う道内の貨物が抱える課題というのが今内部的にいろいろ議論されていますけれども、この点についてどのように認識していますか。",
+    "text_length": 870,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-148",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "髙井港湾政策課長補佐",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北海道新幹線札幌延伸に伴います道内の貨物が抱える課題につきましては、貨物列車が青函トンネル内で速度を引き上げた新幹線と擦れ違う際に圧力変動等によって安全性への影響があるものと考えられておりますし、また貨物列車が走行する函館－長万部間の新幹線との並行在来線の取扱いなど、本州との物流の要を担っております鉄道貨物輸送への影響が考えられております。これらにつきましては、鉄道関係者において検討が進められていると伺っているところでございます。\n　以上でございます。",
+    "text_length": 228,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-149",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "決算委員会なので、あまりたくさんやりませんけれども、今の新幹線２０３０年問題、先ほど青函が通って終わりと、貨物研究会休止状態ということです。私から言わせれば、これから第２ステージが始まるよ、もう始まっているよと。やはりそこに突っ込んでいろいろ研究したり、情報収集しなければならない時期になっています。中期的な見通し、長期構想の中の５年～１５年の中にすっぽり２０３０年というのが入りますから。青函あって、そしていさりび鉄道、第三セクター方式でつないで何とか今つながっているという状態なのだけれども、今並行在来線の問題、これ各ブロックごとにいろいろ地元自治体の町長さんやらが議論深めています。果たして線路として、鉄路として残せるのか、その場合は第三セクター方式になろうかなというふうに思いますけれども、もしくはバス転換をするのか、あとは金額がどうなるのかというお話ぐらいまでもう相当突っ込んだ話になっています。ですから、そんな先の話ではないのです。\n　北海道は、札幌開業の５年前に結論を出すというようなお話になっているようです。もしＪＲの線路が廃止ということになれば、止まってしまうわけです。長万部から北に向かうところは旅客専用ですから、噴火湾沿いが貨物も使っているということになります。ですから、函館五稜郭－長万部間の線路がバス転換になって線路使えませんよと、もし万が一そういうふうになると、そこで止まってしまうのです。そうしたら、北海道の特に農産物、これが果たしてどうなるのかという心配も、これは北海道の経済界の中でも研究会が立ち上がって去年あたりからいろいろやっているようです。\n　国は、もっともっと前から言っているようにモーダルシフトという考え方を持って、その中では引込線がある室蘭港、それから苫小牧港、これが有力だよと。苫小牧港は、東弁天埠頭を使えるということで相当長期構想の中でも踏み込んだ記載がされています。一方で、これまでるるずっとお話ししてきたように、どうも室蘭の取組というのは目標も持っていないし、この認識というのもちょっと甘いし、情報収集というのも十分ではないと、出遅れ感が否めないわけですけれども、これからでも中期の取組としてやはり２０３０年の新幹線札幌延伸問題、これをにらんだ室蘭港の活用策、これについて本腰を入れて部内でしっかりと情報収集含めた検討を始めるべきだというふうに思いますけれども、どうですか。",
+    "text_length": 1014,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-150",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "白熊副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n　まず、出遅れですとか、踏み込んでいないという指摘でございますけれども、そちらは我々としては当たらないというふうには考えておりまして、内容的なこともございますけれども、その理由といたしましては例えば本年６月に室蘭港の港湾計画について国土交通省の港湾分科会で審議がなされているわけでございますけれども、当日国土交通省において作成された資料におきましても崎守地区は洋上風力関連への活用検討と鉄道引込線を生かした新たな物流の構築を視野にという言葉で今後の方針が示されてございます。国土交通省の港湾分科会の資料において鉄道引込線に触れられているのは、道内では室蘭港が唯一というふうに認識しているためでございます。ただ、いずれにせよ、地理的な不利というのは認識しておりますし、室蘭港の活用策の検討、これは重要なことでございますので、引き続き繰り返しになりますけれども、青函トンネルの擦れ違い問題、それから函館－長万部間の並行在来線問題につきまして関係者の協議、検討の推移を注視し、情報収集を進めてまいりたいというふうに考えてございます。\n　ただ、そこでは鉄道貨物が現状どおり青函トンネルを輸送されていく可能性も残っているものと思っております。もし貨物の一部を船舶輸送に切り替える方向性になれば、当然室蘭港の活用がなされますよう当方といたしましても柔軟な対応に努めてまいります。また、その場合どこの北海道内の港を経由するにしろ、北海道内の輸送をそもそも貨物鉄道で輸送し続けるのか、あるいはそれ自体もトラックに切り替えるのかといったところからの議論となるものと承知しておりまして、それは北海道の中での議論で決まるものではなく、本州側でどう輸送するかということも含めて議論して決まっていくものというふうに認識しております。これらのように、室蘭港といたしましては現時点では今まだ様々な可能性が残っておりますので、それを前提に柔軟に対応してまいりたいと考えてございます。\n　以上です。",
+    "text_length": 842,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-151",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "副市長さん相当専門的な知見をお持ちのようなので、期待しております。今お話いただきましたけれども、北海道の貨物、私は農産物しか焦点当てて調べていませんけれども、将来的に厳しいです。なぜかというと、道東・道北方面からのＪＲ貨物が使っている貨物輸送の路線というのはみんな赤字路線です。ですから、いつまでそこの線路がもつのかというお話もあります。国のほうは、２０３０年の開業以降、あと１０年ぐらいですか、集中改革期間というような話で相当な赤字体質を脱却するというほうにＪＲ北海道はかじを切っていかなければならぬということになると、果たして長期的に見てそこの赤字路線をそのまま維持し続けることができるのかどうなのか、こうなります。これから２０年、３０年先になりますけれども、そういう心配があります。では、主に道東方面からの農産物ということになります。貨物で２００万トンか、結構な数あるのです。それが将来的にどうなるのかという心配が当然湧いてくるわけなのです。どういう方策、片やトラック便といっても今トラックドライバー不足の問題、労働環境の問題、いろいろあります。無人走行みたいな実証試験もこれから苫小牧東港区ではいろいろやりますというような話も長期構想には載っていますけれども、私は２０３０年問題というのはその入り口になるのかなと、北海道の物流の大きな流れの転換点の入り口になるのかなという感じを持っているわけなのです。\n　ですから、今のうちにどういう情報収集をして室蘭港をどう生かせるのかというのをしっかり検討していただきたいなというふうに思います。副市長さん、位置づけているというふうなお話でしたけれども、ぜひ位置づけではなくてお金を持ってきてほしいなと思うのです。問題はそこなのです。位置づけるのは誰でも位置づけられます、紙に書くだけだったら。地元で毎年２０億出してください、３０億出してください、出せませんから。地方自治体というのは、私日程２でもやったけれども、毎年２億お金減ってきているのです。とてもではないけれども、何かをやるためには何かを大幅に削らなければいけないのです。ですから、企業会計としてちゃんと自立してくださいと最初に言ったのです。そこから稼いだ金で新たな投資するというのだったら分かります。だけれども、それだけではあの老朽化した施設を全部トンネルも架け替えるとか、線路も架け替えるとか、できると思えません。国が国策として開発予算をつけてくれて、北海道の農産物は重要だから、やっぱり運び出さないと困るのだという大きな視点を持っていただいてお金をつけますというのだったらいいです。そことセットでなければ、絵に描いた餅だったら駄目なのです。そこら辺は、しっかりと今後協力をいただいてぜひ我々と一緒に取り組んでいただきたいなというふうに思います。\n　最後に、もう時間だから終わりますけれども、市長に伺います。先ほどの苫小牧の長期構想にどうやって記載されているかといいますと、ちょっと読みます。「将来的に『北海道新幹線の高速化』を実現する１つのオプションとして、弁天ふ頭に鉄道貨物の引込線を導入し、海上輸送と鉄道輸送と連携することにより、鉄道貨物輸送力の一部を苫小牧港で担える可能性がある。また、市街地から離れていることから広大な用地確保が可能な特性を活かして、より高度で円滑な自動運転の実現など、生産性の高い物流拠点を目指す。」と具体的に書いているのです。相当あそこでやりたいということを意識的に書いています。\n　一方で、本市の長期構想では、先ほど来ありましたように崎守の引込線に対する将来展望も具体性がない。新幹線札幌延伸２０３０年、この並行在来線の問題で今危惧されているのは、青函まで鉄路がつながらなくなった場合、北海道の農産物の相当数が本州へ運べなくなるということ、特に収穫期である９月～１１月には、これは苫小牧港が何ぼ頑張っても苫小牧港１つだけではオーバーフローを起こすのではないかと、こういう分析もあります。ですから、室蘭港にもチャンスはあると思います。新幹線の並行在来線問題が佳境に差しかかっているこの時期に港湾に精通した副市長さんを招聘できたのは、まさしく絶好のタイミングではというふうに私は大いに歓迎したいと思います。だからこそ港湾管理者としての市長の強い決意、思い、取組、これが必要なのではないかというふうに思いますけれども、市長、もう一回頭活性化させて答えてください。",
+    "text_length": 1848,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-152",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "青山市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この１０年来私がいつも考え、そして取り組んでいたことを水江委員に紹介していただいたのかなというふうに思って聞いていましたし、また水江委員も平成２３、２４年度と議長に就任されていらっしゃいましたから、その当時の大変な状況をよく御記憶にあっての御質問というふうに聞かせていただきました。室蘭港、今はフェリー１往復しておりますけれども、当時はフェリーもなくなってこれからどうやって港湾を活性化していこうかといったようなところがありました。室蘭港における内航の大きな視点というのは、北海道、東日本の、要は津軽海峡をどう渡るかといったようなところが大きな視点で、先ほどの内航フィーダーも同じような話ですけれども、そんな中で青函トンネルの話があって、そこに可能性をかけながら鉄道の研究会というのを平成２４年に、お話があったとおりでございます。ほかのほうでも皆さん御記憶にあろうかと思いますけれども、鷲別機関区の廃止の話もありました。あのときは室蘭から５０名以上の雇用が失われるといった大変大きな話がありました。そこで、もちろん今室蘭港の話なので、港の話なのですけれども、やはり地域の雇用を守るといったようなこと、鷲別機関区の問題に端を発しながら、私も足を運んできたと。輪西にもＪＲ貨物の工場があって、そういった部分では鉄道インフラというのは室蘭の港、そしてまた室蘭の発展に寄与した大きな歴史があるのだというのは同じ平成２４年度の開港１４０年・市制９０年のときにＳＬが走った中で、そのときに再確認をしたのかなと記憶してございます。\n　今回のお話にありました青函トンネルの擦れ違い問題というのは、この間ずっと言われていまして、本当にたくさんステークホルダーがいるものですから、非常にデリケートな問題です。ですので、私も都度足を運びながらいろいろとロビー活動にこの間努めてきまして、そんなところで国の分科会でも室蘭港のお話に言及いただいてきたというところもございまして、全く何もやっていないといったことではございません。また、港湾計画の改訂を先般させていただいたときも、委員からお話があったように２０３０年に札幌延伸と明記されていらっしゃいますので、例えばそれが決まってから港湾計画を変えては時間がかかるということで、柔軟に対応できるような方策がないだろうかといったようなことで前鈴木副市長ともよくお話をしながら、長期構想あるいは計画の中にも少しそういったようなところを含みも持たせながら取り組んできたところでございます。\n　お話ししたとおり、北海道の鉄道貨物の物流というのは農産品が多くて、東室蘭にもＪＲ貨物のターミナルがありますけれども、例えばジャガイモの産地であります羊蹄山近郊の鉄道の輸送は全部東室蘭のほう来ているということで、苫小牧というのも一つ大きなポイントかもしれませんけれども、現状そういったことがあるという実情、あるいは全国にネットワークが展開されているところをＪＲ貨物さんとしても機能を維持したいといったお話、一方で委員御指摘の並行在来線の問題、もろもろあります。私もこの１０年間資料を作りながら、いろんなところに営業活動しながら、最終的には政治的あるいは国の判断がなくしては室蘭が、私が声を上げてもなかなかそれは国策の中でどう位置づけていくかといったようなところでございますので、私もそのタイミングを、チャンスを狙いながらこれまでもロビー活動し、そしてまたしっかりとした内部の情報もいただければといったようなことで国土交通省から歴代キャリアの方を招聘し、今回白熊副市長にも激励の言葉もいただいたわけでありますけれども、いずれにしてもタイミングがあればすぐに対応できるような取組もしていきたいと。鉄道貨物輸送研究会がしばらく休んでいるではないかというお話もいただきましたけれども、今触れたようにフェリー、そして津軽海峡、北海道と東北の荷物をどう輸送するかといったところに話の肝があるわけでありまして、平成３０年にフェリー航路が復活して、今そちらの維持にしっかりと努めながら、そしてまた鉄道と、そしてトラックドライバーの問題、様々な大きな視点も踏まえた中でこれからも室蘭港、国内の内航物流の中でもしっかりとした役割を果たすべく戦略を練っていきたいと考えております。",
+    "text_length": 1782,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-153",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "水江委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "水江一弘",
+    "member_faction": "市民ネット・むろらん",
+    "text": "せっかく白熊さんを招聘されたわけだから、港湾部組織としてしっかりと取組を今後前にどんどん進めていただきたいというふうに思います。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-154",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、私のほうからは認定第５号水道事業会計決算について一問一答でお願いしたいと思います。\n　まず最初に、資本的支出のうち第１項に建設改良費９億１，８２２万４，９５５円が掲示されておりますけれども、その内訳についてお伺いしたいと思います。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-155",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮川［水道］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "建設改良費９億１，８２２万４，９５５円の内訳についてでございますが、水道施設整備事業費として７億４，６３６万６，２７７円、量水器整備事業費として１億１，０７９万９，０９５円、職員給与費として５，２２０万１，８３３円、固定資産取得費として８８５万７，７５０円となってございます。\n　以上でございます。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-156",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。\n　それでは、水道施設整備事業費のうち工事請負費の決算額についてお伺いいたします。",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-157",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮川［水道］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "工事請負費の決算額でございますが、６億９，７６３万３，２００円となってございます。\n　以上でございます。",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-158",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和元年度の工事請負費決算額５億３，９４９万５，２００円から大きく増加しておりますが、その理由についてお伺いしたいと思います。",
+    "text_length": 63,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-159",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "竹島水道施設課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和２年度の工事請負費決算額が増加している理由でございますが、平成３１年３月に策定しました室蘭市水道ビジョンの更新計画に基づき、老朽化施設の更新、耐震化を推進するため、事業費が増加したものでございます。\n　以上でございます。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-160",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "耐震化を推進するために事業費を増加したということですが、令和元年度からの耐震化の進捗状況についてお伺いしたいと思います。",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-161",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "竹島水道施設課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "耐震化の進捗状況でございますが、令和元年度末時点における管路の耐震適合率７４．７％に対しまして令和２年度末時点の耐震適合率は７５．４％まで進捗してございまして、対前年比で０．７％増加してございます。\n　以上でございます。",
+    "text_length": 110,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-162",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１．６億円もの財源を追加投入したにもかかわらず、耐震化が僅か０．７％しか増加していないと。事業の進捗、効果についてどのように認識しているのかお伺いしたいと思います。",
+    "text_length": 82,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-163",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "竹島水道施設課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業の進捗、効果についての認識でございますが、本市が管理しております管路の全長は約６００キロメートルございますことから、割合にいたしますと０．７％の進捗率となりますが、施工延長で見てみますと令和元年度に耐震化した管路延長が約２．５キロメートルであるのに対しまして令和２年度の耐震化延長は約４．５キロメートル、対前年比で約１．８倍の進捗となってございまして、事業費の増加により着実に耐震化の促進が図られているものと認識してございます。\n　以上でございます。",
+    "text_length": 227,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-164",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "耐震化率については分かりました。\n　水道ビジョンについては、安全、強靱、持続を目標として令和１０年度までの１０年間を計画期間としており、現在３年目となっておりますが、これまでの２年間の取組について伺います。まず、安全に関連する水質のことについてですが、水道ビジョンの数値目標として平均残留塩素濃度が１ミリリットル当たり０．３ミリグラムとなっていますが、過去２年の実績値についてお伺いしたいと思います。",
+    "text_length": 200,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-165",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "高橋水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平均残留塩素濃度の実績値についてでございますが、令和元年度が１リットル当たり０．３０ミリグラム、令和２年度が０．３２ミリグラムと目標値をほぼ達成している状況でございます。\n　以上でございます。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-166",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市の水源は、良好な水質が維持されており、残留塩素濃度も適正に管理されているということでおいしい水道水を提供できると考えますが、そのＰＲ不足ではないのかというふうに考えます。例えば来年は開港１５０年・市制施行１００年の記念事業としてあるわけですけれども、１０年前と同様にペットボトル水を製作する予定はないのかお伺いしたいと思います。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-167",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "高橋水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ペットボトル水の製作につきましては、製造単価が非常に高く、道内で製造できる工場も減少してきていることから、実施の予定はございません。\n　また、本市の水道水のおいしさのＰＲについてでございますが、現在はコロナ禍ということもあり、浄水場の見学会やイベントにおける利き水などＰＲの機会を確保することが難しい状況でありますが、水道水利用の拡大のためホームページなどＳＮＳの活用を含めおいしさのＰＲに取り組んでいきたいと考えてございます。\n　以上でございます。",
+    "text_length": 225,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-168",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "室蘭市の水道水は大変おいしいです。ＰＲは現在コロナ禍でございますので、御苦労されていることはよく分かります。ペットボトルの水の製作の予定はないということでございますが、それに代わる来年度に向けた企画があるのかについてお伺いしたいと思います。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-169",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "高橋水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１５０・１００周年記念のイベント等の企画についてでございますが、これまでは浄水場だけであった施設見学に加え、通常入ることのできない水源を開放して見学していただくことを検討しております。\n　以上でございます。",
+    "text_length": 103,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-170",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１００年記念として初めて水源を開放して見学するということでございますが、イベントの内容としては少しインパクトに欠けるのではないかなというふうに感じるわけですけれども、参加者の記憶に残るような企画は考えられないのかお伺いしたいと思います。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-171",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "高橋水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "浄水場の施設見学の際に、現在は簡単な沈殿やろ過の装置による水処理体験などを行っておりますが、さらに参加者が楽しめるような企画ができないか検討していきたいと考えてございます。\n　以上でございます。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-172",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ぜひイベント参加者の記憶に残る企画を考えていただきたいと思います。また、水の様々な特性があるわけですけれども、企画次第では、企財の部長もおりますけれども、お金をかけないでしっかり効果の出るやつやりなさいということで水道部だけでなくて各部に恐らくいろんな情報発信しているのではないかなと思いますので、これは知恵の勝負だなと思っておりますので、しっかり取り組んでいただきたいなというふうに思っております。\n　次に、強靱についてですが、耐震化の推進についての考えをお伺いしたいと思います。",
+    "text_length": 241,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-173",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "竹島水道施設課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "耐震化の推進につきましては、室蘭市水道施設耐震化計画に基づき実施してございます。これまでに重要給水施設配水管として、日鋼記念病院、市立室蘭総合病院までの管路の耐震化が終了いたしまして、今年度からは製鉄記念室蘭病院、大川原脳神経外科病院までの耐震化を令和１０年度までに実施する計画となってございます。また、令和２年度に国からの補助対象の制度拡充により、耐震化済みの日鋼記念病院ルートの分岐点から地球岬小学校、星蘭中学校に至るルートが補助事業の採択要件を満たしましたことから、令和６年度までに優先的に耐震化する計画で今年度から整備を開始してございます。\n　以上でございます。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-174",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今耐震化の推進の状況をお伺いしたわけですけれども、病院中心に耐震化をしっかりやっていると、製鉄記念病院とか大川原脳神経外科は１０年度までに実施する計画となっているということで、それでさらに補助対象拡充になり、耐震化済みになっている日鋼記念病院ルートの分岐から今度は学校のほうへしっかりやっていきますよという御答弁でございましたので、優先順位はいろいろあると思いますけれども、国から示されていたり、道の指示があったりするかもしれませんけれども、これから学校の適正配置もございますので、その辺も考えながらしっかり取り組んでいただきたいことをお願いしたいと思います。\n　次に、胆振東部地震において稼働したばかりの浄水場が土砂崩れにより長期間使用不能になったという事業体もありました。本市は、現在２つの浄水場が稼働しておりますが、片方の浄水場が長時間停止した場合、それをバックアップする機能についてお伺いしたいと思います。",
+    "text_length": 407,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-175",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "竹島水道施設課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "浄水場が停止した場合のバックアップ機能でございますが、現在千歳浄水場からの水は御崎配水池に送水することができるようになっておりますので、チマイベツ浄水場が停止した際にも蘭西地区に給水を継続することが可能でございますが、知利別配水池を中心とした千歳系の配水区域にチマイベツ系の水を給水することはできない状態でございます。このため、チマイベツ系の水を知利別配水池に送水することができるバックアップ管の整備を令和２年度から実施しており、令和６年度に完成する計画となってございます。\n　以上でございます。",
+    "text_length": 248,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-176",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "バックアップ管の整備は非常に重要ではないかなと思っております。このような災害対策の取組についてもしっかり市民にＰＲすべきではないかなというふうに思っているところでございます。\n　さて、耐震化と併せて毎年全国各地で発生する豪雨災害に対しても対策が必要であると考えるところであります。特に最近では、線状降水帯の発生により激しい雨が長時間にわたって続くことにより甚大な被害が発生しております。多くの地域で断水も発生しました。千歳浄水場の水源上流のカルルスは、北海道でも有数の大雨の降る地域でありますが、昨年度の大雨の状況と対応についてお伺いしたいと思います。",
+    "text_length": 276,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-177",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "高橋水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "カルルスの昨年度の大雨の状況についてでございますが、日降水量が５０ミリを超えたのは１１日、そのうち１００ミリ以上は３日でございました。大雨時の対応についてでございますが、予報データに基づき浄水場や各配水池の水位を事前に高くしておき、雨の影響により水源の濁度が上昇した場合は取水制限やろ過停止を行ってございます。\n　以上でございます。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-178",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大雨が長期間になると、ろ過停止の時間も長くなることが予想されますが、浄水場はどれくらいの時間止められるものなのかお伺いしたいと思います。",
+    "text_length": 68,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-179",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "高橋水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "浄水場の停止可能時間についてでございますが、停止する時間帯にもよりますが、先ほど申しました水位を事前に高くしておく準備をしておけば８時間前後は停止可能でございます。\n　以上でございます。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-180",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北海道において線状降水帯を伴った長時間の激しい雨というのは、まだ経験しておりませんが、気候変動の影響によりいつ北海道でもそのような大雨が発生してもおかしくないと思われます。そのような場合、浄水場の停止時間が８時間を超えることも想定されますが、何か対策はあるのかお伺いしたいと思います。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-181",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "高橋水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "浄水場の停止時間が８時間を超えるような大雨の場合の対応についてでございますが、現在の施設規模では厳しいというのが現状でございます。理想としましては、１日分の使用水量をためておけるような大きな配水池を造ることでありますが、例えば給水人口や給水量の減少に伴い配水池の容量に現在余剰が発生していますが、今後施設の更新や再編の際に災害対策用としてそのままの規模を維持し続けることにより災害時のバックアップ機能を確保することが可能であると考えてございます。\n　以上でございます。",
+    "text_length": 234,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-182",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "なかなか８時間雨が降り続けるということは、特に大雨であったとしたら大変厳しい体制になるというようなことでございます。配水池は室蘭市内の地下に埋めてあり、様々なときに利用するわけですけれども、しっかり整備をしていただくと同時に、日常点検もされていると思いますけれども、災害時のバックアップ機能としてしっかり使えるということと、さらには訓練のときにも、市民はなかなか配水池ってどこにどうなっているのかとか、そういうこともありますので、訓練でもしそういったものが見れたり、また訓練のときにその水を利用したりするようなこともあってもいいのではないかなというふうに思いますので、ぜひ御検討していただきたいと思います。\n　それでは最後に、持続についてでありますが、水道ビジョンの中で水道施設の更新を効率的、効果的に行うためダウンサイジングや目標耐用年数の設定を行うこともあります。管路施設のダウンサイジングについては、将来の給水量の減少を見込んで更新の際に管の口径を小さくすることにより工事費を大きく削減する効果があるとされております。一方で、今後人口減少が進み、コンパクトなまちづくりが進められている中で全ての水道管を更新していくことは、工事費や維持管理費の負担が大きくなることが予想されるわけですが、管の延長におけるダウンサイジングの考え方についてお伺いしたいと思います。",
+    "text_length": 582,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-183",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "高橋水道施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "管の延長におけるダウンサイジングの考え方についてでございますが、これは今、委員がお話しされたとおりまちづくりの在り方と密接な関係があるため、本市だけではなく多くの事業体で今後取り組まなければならない課題であると認識してございます。本市においては、まだ管の延長におけるダウンサイジングに取り組む段階ではございませんが、将来的には費用対効果や市民負担の公平を考慮した検討が必要になると考えてございます。\n　以上でございます。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-184",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "水道ビジョンの取組について確認させていただきました。水道ビジョンの計画期間は令和１０年度までとなっていますが、定期的な評価、検討を行い、その結果や社会情勢の変化等に応じてビジョンの内容を見直すこととなっておりますが、具体的な見直し時期が決まっているのか伺います。\n　また、地震や大雨の災害が甚大化しており、それがいつ起きてもおかしくない状況であることを考えて、見直しの際に更新や耐震化の前倒しの検討はできないのかお伺いしたいと思います。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        67
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-185",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "佐藤公営企業管理者",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "水道ビジョンについては、３年～５年内に見直しを行うことが重要とされており、水道料金の算定期間が令和６年度となっていることもありますことから、その時期に合わせてアセットマネジメントを含めた評価、検討を行い、その結果に応じて見直しが必要と考えてございます。\n　また、水道施設の更新や耐震化については効果的、効率的に行うとともに、スピード感を持って行うことも重要でありますことから、水道ビジョンの見直しの際には老朽度や漏水状況などにより優先順位を考慮するとともに、更新や耐震化を少しでも加速して行えるよう検討したいと考えてございます。\n　以上でございます。",
+    "text_length": 275,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-186",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは最後に、広域連携についてお伺いしたいと思います。国は水道法の改正に伴い基盤強化のため広域連携を推進するように通知しております。全国的に広域連携を具体的に行っている事業体も既にあると聞いております。北海道においても現在水道広域化推進プランが令和４年度に完成する予定となっておりますが、本市における広域連携の取組についてお伺いしたいと思います。",
+    "text_length": 174,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-187",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "佐藤公営企業管理者",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市における広域連携の取組についてでございますけれども、これまで具体的な検討はまだ実施してございませんけれども、関連の会議への出席、他都市との情報交換に努めてきたところでございます。水道広域化推進プランが令和４年度完成ということで、現在具体的な内容は示されておりませんけれども、ソフト、ハード両面における広域連携の手法についてメリット、デメリットを確認しながら、本市への活用の可能性について検討したいと考えてございます。\n　以上でございます。",
+    "text_length": 221,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-188",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "細川委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北海道の水道広域化推進プランが令和４年度に完成する予定で、本市もそれに合わせてというよりもそういったものを基本に考えていくわけですけれども、メリット、デメリットは当然あると思います。そういった意味では、御案内のとおり今官民連携ということも言われております。コンセッションというふうに言うわけですけれども、来年の４月から２０年間宮城県で、運営する上下水道、それから工業用水、３事業を官民連携していくということでございます。そういった意味では、時代は広域連携、それから官民連携、そういったことを今後様々な形で検討していかなければならないわけです。水道事業も順調だというふうに言ってきているわけですけれども、先ほども委員からあったとおり稼ぐという視点も、水商売ですからしっかり稼いで別な意味でいただくという、企業会計の在り方もこれでいいということありませんので、そういった意味では連携することによってのメリット、デメリットもあるし、様々な検討をしていただくことになると思いますけれども、今後道の推進プランを見ながら検討していっていただきたいとお願いして、終わります。\n　以上でございます。",
+    "text_length": 491,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        71
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-189",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "それでは、私から水道事業会計について一問一答で伺いたいと思います。\n　まず最初に、監査の意見書というのがあり、公営企業に対して全般に意見を述べているわけなのですけれども、その意見の中で「水道事業会計の令和２年度決算においては、当年度純利益は前年度から１６９．１％増加した２億８，５３０万円で、その他未処分利益剰余金変動額を加えた当年度未処分利益剰余金は、前年度から１５．７％減少した３億９，１３１万円となっており、当年度末の資金剰余金は１３億５８１万円で、前年度と比較すると１億２，１８３万円、１０．３％の増加となっている。」というふうに述べておりますけれども、今年度の収支について監査の意見を水道部としてどう捉えているのか、この点について伺いたいと思います。",
+    "text_length": 330,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-190",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮川［水道］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今年度の収支についてでございますが、昨年４月に料金改定をしたことにより、昨年度決算に比べ、純利益で約１億７，９００万円の増で約２億８，５００万円、資金剰余金が約１億２，１００万円の増で約１３億５００万円となっており、当初見込みより良好な収支となってございます。\n　以上でございます。",
+    "text_length": 141,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-191",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "料金改定によって当初見込みより良好な収支となっていると、その根源は市民の負担だというふうに思うのですけれども、「経営成績及び財政状態を見ると、経常収支比率や総収支比率などの経営分析比率、流動比率などの財務分析比率は、いずれも良好な水準を維持しており、健全な経営状況と認められるが、給水人口の減少傾向が続く中で、老朽施設の更新と耐震化のための資金需要が見込まれるとして、令和２年度に水道料金を改定した。」と監査が述べておりますけれども、つまり老朽化対策と耐震化のための資金確保のために料金改定したと、値上げしたということで理解してよろしいですか。",
+    "text_length": 272,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-192",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮川［水道］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "料金改定の理由についてでございますが、委員お話しのとおり人口減少や節水機器の普及に伴う給水収益の減少が予想される中、今後も安心・安全な水を安定的に供給し続けるためには、老朽施設の更新や耐震化を進めるための投資とその資金が必要となるために料金改定したものでございます。\n　以上でございます。",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-193",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "市民感情からすると、営業利益の減少によって営業が大変だと、危機的な状態になるという状況であれば市民も一定程度納得するというふうに思うのですけれども、老朽化施設の更新だとか耐震化のための値上げというのはなかなか市民はすんなりと納得しないのではないかということを申し上げておきたいと思います。\n　それで、当年度純利益が２億８，５００万余り生じているわけなのですけれども、この純利益のうち料金改定による利益は幾らになるのか、この点について伺いたいと思います。",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-194",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮川［水道］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当年度純利益のうち料金改定による利益についてでございますが、料金改定をしなかった場合の令和２年度の給水収益を約１３億２，６００万と見込んでおりましたので、決算額１５億５，７００万との差額約２億３，０００万円が料金改定による利益と考えてございます。\n　以上でございます。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-195",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "つまり２億３，０００万の市民負担が増えたということだと思います。それで、昨年の予算委員会で令和２年度末の純利益について約２億円と推計しているという答弁があったわけなのですけれども、推計よりも実態は８，５００万ほど上回っていることになるのですけれども、この理由と、資金剰余金についても約１１億４，５００万と推計値を示されていますけれども、これを１億５，０００万ほど上回っているわけですけれども、この点についても伺いたいと思います。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-196",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮川［水道］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "純利益と資金剰余金の昨年の予算委員会での推計との差額についてでございますが、様々な要素がございますが、純利益につきましては物件費や減価償却費の減などが主な要因となってございます。また、資金剰余金の差額につきましては、先ほどの物件費のほか、令和２年度決算における建設改良費の翌年度への繰越額５，４７８万円が主な要因となってございます。\n　以上でございます。",
+    "text_length": 177,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-197",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "次に、業務量について伺いたいと思います。令和２年度の業務量、普及率を除いて全ての面で前年比で減少しています。２０２８年度における１日平均給水量が２万１，８２９立方メートルというふうに推計されているわけなのですけれども、当然給水量の減少とともに収益も減少するわけですが、２０２８年度時点での資金剰余金の推計額はどれほどと見ているのか、この点について伺いたいと思います。",
+    "text_length": 183,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-198",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮川［水道］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "２０２８年度における資金剰余金の推計額についてでございますが、今後の人口減少等の動向にもよりますが、令和２年度決算を受けての推計では約７億６，８００万円と見込んでございます。\n　以上でございます。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-199",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "２０２８年度の資金剰余金の推計額７億６，８００万というふうに見込んでいるということなのですけれども、監査の意見では「今後においては、施設・設備の耐震化など計画的な更新を進めるとともに、新たな水道ビジョンと経営戦略に基づき経営の効率化と財政基盤の強化を図りながら、健全な経営を維持する」よう求めています。そこで、現年度の未収、過年度の未収の合計調定額が２６億４，６８９万５，０８１円に対して収入額が２４億３，４３７万１，６１９円、不納欠損額が３９万７，８０２円であり、未収入額が２億１，２１２万５，６６０円となっているのですけれども、この未収入額の内訳と未収理由について伺いたいと思います。",
+    "text_length": 294,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-200",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮崎料金課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、未収入額２億１，２１２万５，６６０円の内訳でございます。まず、営業未収金１億５，９３４万７，２０５円、営業外未収金１，１１８万６，５７５円、その他未収金３，８９３万２，４３１円、過年度の営業未収金２６５万９，４４９円となってございます。\n　次に、未収理由についてでございますが、３月などの年度末における調定分の多くが翌年度収入となることが主な要因となってございます。\n　以上でございます。",
+    "text_length": 197,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-201",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "営業未収金が１億５，９３４万７，２０５円になっているのですけれども、この営業未収金は全て年度が替われば当然入ってくるかというふうに思うのですけれども、年度が過ぎても未収になる、いわゆる純然たる令和２年度の未収金額というのを分かればお示しいただきたいと思いますけれども。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        84
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-202",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮崎料金課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "総体的な未収額ですけれども、取りあえず５月の収入率で申し上げさせていただきたいと思います。今お話しのように、毎年度３月の賦課調定分は翌年度に収入になりますので、令和２年度の調定額、５月時点での数字で申しますと、調定額１７億１，２８０万５，０００円に対して収入済額は１７億４，８７５万７，０００円、未収入額で７９４万８，０００円となります。収入率としては９９．５４％となります。\n　以上でございます。",
+    "text_length": 199,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-203",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "令和２年度の純然たる未収額というのは７９４万何がしということで理解いたしました。\n　それで、新型コロナウイルス感染症の拡大によって公共料金の支払い猶予制度が導入されて、水道料金もその中に入っているかというふうに思うのですけれども、この７９４万何がしの中にコロナ禍の影響で経済的な困窮状態にある人に対する水道料金の支払い猶予というのも入っているのか、また件数も分かればお示しいただきたいと思います。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        86
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-204",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮崎料金課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "あくまで調定額についての未収額として上げております。コロナに対する猶予につきましては、１年間の猶予という形で行っておりますので、もしも年度内収入がない場合には未収金として課されることになると思います。\n　ちなみに、令和２年度のコロナに関する猶予関係でございますが、相談件数が５７件に対し、実際に猶予させていただいた件数は４７件となってございます。また、猶予金額でございますが、令和２年度につきましては２７万６，９７７円となってございます。\n　以上でございます。",
+    "text_length": 230,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        87
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-205",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "実際に猶予できたのは４７件と、金額として２７万と、そんな多くはないというふうに思うのです。それでも一定程度、新型コロナウイルス感染症の影響が市民生活を脅かしているということになるわけです。そういった中で令和２年度は２０％の料金改定がなされたということであります。\n　次に、企業債について伺いたいと思うのですけれども、企業債の未償還残高が６４億６，５９９万２，７７０円と企業債明細書に記載されておるわけなのですけれども、令和２年で２億、令和３年３月３０日で３億６，６００万を発行しているわけなのですけれども、水道ビジョンの最終年である２０２８年までの企業債の発行計画、資金計画含めて企業債の発行計画がどのようになっているのか、この点について伺います。",
+    "text_length": 324,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        88
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-206",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "宮川［水道］総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の企業債の発行計画についてでございますが、将来の過度な負担を避けるため、原則として償還額の範囲内と考えており、今後の収支の状況にもよりますが、２０２１年～２０２８年の８年間でおおよそ３０億円を見込んでございます。\n　以上でございます。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        89
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-207",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "２８年までの発行計画含めて８年間で約３０億ということでありまして、それにプラスして水道料金含めた剰余金で水道ビジョンを進行していくことになるかと思うのです。水道ビジョンでは１０年間で９３億を超える投資を行うわけなのですけれども、企業債と剰余金がその原資になります。令和２年度に料金改定によって生み出された利益がいつまでも続くわけでは当然ありませんし、人口減少によって給水戸数も減っていくわけで、当然剰余金も減少していくわけなのですけれども、次の料金改定の時期も当然想定にあるというふうに思いますけれども、その点について見解を伺いたいと思います。",
+    "text_length": 272,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        90
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-208",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "佐藤公営企業管理者",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の料金改定についてでございますけれども、昨年の料金改定によって経営状況は改善されたところでございますけれども、これからも給水人口の減少や節水機器の普及などにより給水収益の減少が予想されているところでございます。一方で、市民生活に欠かせない安全・安心で安定した水を供給するためには、老朽化した施設や管路の更新、耐震化も確実に行っていく必要がございます。今後は、ライフラインを守ることを第一としまして、水道ビジョンに掲げている目標を確実に進めていくほか、経費節減や有効率の向上など経営努力に努め、料金算定期間でございます令和６年度頃に適正であるかどうかの検証を行った上で料金の見直し時期について適切に判断してまいる考えでございます。\n　以上でございます。",
+    "text_length": 327,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-209",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "次期の料金改定についての検討は、料金算定期間である令和６年度頃に適正であるかどうか検証含めて行うと、その上で料金の見直し時期などについて適切に判断していくということなのですけれども、業務量の推移を見ても大体毎年給水戸数が３００～４００戸数減少していっていると。今日の道内紙を見ても前年比で室蘭市の人口減少が１，５００を超えていると。年々そういった形でもって人口減少、給水戸数も減っていく、当然営業収益も落ちてくる、そういった中で企業努力をしながら検証し、そして次期の料金改定を見据えているということだと思うのですけれども、私はやっぱりそれを負担する市民の立場からすれば、それはちょっと待ってほしいと、今回の料金改定で先ほど言いましたように２億を超える利益を上げているわけですから、少し待ってほしいというのが多くの市民の声だというふうに思うのです。その辺は、ぜひ慎重に慎重を期していただきたいと同時に、もちろん営業努力と同時に、私がこのままの状況で水道ビジョンを２０２８年度まで進めていく上で一番気にかけているのは、水道技術者の技術が継承されていくのかということに危惧を抱いている。水道職員もどんどんどんどん減少していっていますし、技術を受け継ぐ職員の数が減ってきているのではないかと、技術をそのまま継承できていないのではないかというふうに考えるのですけれども、今後どう水道技術者の人材を育成、確保していくのか、この点について最後に伺いたいと思います。",
+    "text_length": 625,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        92
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-210",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "佐藤公営企業管理者",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "水道技術者の今後の関係でございます。なかなかこれまでベテランと言われていた方々の退職が多くなりまして、過去から比べると水道に関係する人数も減ってきたところでございます。これから、今もやっていますけれども、それをできるだけ継続できるような体制づくりというものがやっぱり必要だと思いますので、これも含めてこの辺の関係を今後どうしていったらいいのかということもしっかり見据えて検討してまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        93
+      ]
+    }
+  },
+  {
+    "id": "muroran-456-5-211",
+    "municipality": "muroran",
+    "council_id": 456,
+    "council_name": "令和 ３年 特別会計決算審査特別委員会",
+    "schedule_id": 5,
+    "schedule_name": "09月30日－04号",
+    "date": "2021-09-30",
+    "speaker": "常磐井委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常磐井茂樹",
+    "member_faction": "日本共産党室蘭市議団",
+    "text": "日本共産党室蘭市議団は、認定第５号室蘭市水道事業会計決算に反対であります。\n　日本共産党室蘭市議団は、水道会計の当初予算に対しても反対してまいりました。その第一の理由は、元年の消費税の増税による負担と、それに加えて料金改定２０％の引上げは大きな市民負担となりました。料金改定による市民負担は２億３，０００万にも上り、しかもその改定理由に老朽施設の更新や耐震化などを上げ、市民負担に対して配慮する姿勢が感じられません。それは、何よりもコロナ禍の下で経済的に困窮する市民生活に配慮し、改定時期を考えるよう求めたにもかかわらず引き上げたものであり、人口減少が加速化し、給水戸数の減少は収益に大きく影響し、水道ビジョンの資金計画にも及び、さらなる料金改定につながりかねません。市民に大きな負担を強いた本決算に対して不認定といたします。\n　以上です。",
+    "text_length": 370,
+    "source": {
+      "minutes_file": "data/muroran/minutes/456.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        96
+      ]
+    }
+  }
+]

@@ -22,6 +22,12 @@ const PROCEDURAL_SPEAKER_PATTERNS = [
 const ADMIN_ROLE_KEYWORDS = [
   "副市長",
   "市長",
+  "副町長",
+  "町長",
+  "副村長",
+  "村長",
+  "副知事",
+  "知事",
   "教育長",
   "部長",
   "局長",
@@ -32,6 +38,7 @@ const ADMIN_ROLE_KEYWORDS = [
   "主任",
 ];
 const MEMBER_ROLE_KEYWORDS = ["議員", "議長", "委員長", "委員"];
+const SEAT_NUMBER_PREFIX_RE = /^[0-9０-９]+番/;
 
 function isProceduralSpeaker(speaker) {
   if (!speaker) return false;
@@ -41,7 +48,9 @@ function isProceduralSpeaker(speaker) {
 function isMemberRoleSpeaker(speaker) {
   if (!speaker) return false;
   if (ADMIN_ROLE_KEYWORDS.some((kw) => speaker.includes(kw))) return false;
-  return MEMBER_ROLE_KEYWORDS.some((kw) => speaker.includes(kw));
+  if (MEMBER_ROLE_KEYWORDS.some((kw) => speaker.includes(kw))) return true;
+  // N番 prefix without explicit role keyword still implies a member (e.g., ishikari "５番（神代知花子）")
+  return SEAT_NUMBER_PREFIX_RE.test(speaker);
 }
 
 function toHalfWidthDigits(s) {
@@ -73,6 +82,9 @@ function extractNameInfo(speaker) {
 
   // Strip trailing role token (only the role keyword, not preceding committee name)
   s = s.replace(/(?:副|臨時|仮)?(?:議員|議長|委員長|委員)$/, "");
+
+  // Strip honorific suffix (君/氏/殿) used in formal council records
+  s = s.replace(/(?:君|氏|殿)$/, "");
 
   // Capture disambiguation bracket content as given-name hint, then strip
   const bracketMatch = s.match(/[［\[]([^］\]]+)[］\]]/);
@@ -173,10 +185,15 @@ function matchMember(speaker, memberIndex) {
     }
   }
 
-  // 4. Surname-only / prefix match — only when exactly one member matches.
-  // Multiple matches without a disambiguator are left unmatched for accuracy.
+  // 4. Prefix match — bidirectional, only when exactly one member matches.
+  //    a) candidate begins with member surname (e.g., "大山総務文教" → 大山)
+  //    b) member fullname begins with candidate (handles no-space names like
+  //       muroran "滝口紘子": speaker "滝口委員" → candidate "滝口" → match "滝口紘子")
+  if (candidate.length < 2) return null;
   const candidates = memberIndex.filter(
-    (m) => m.surname && candidate.startsWith(m.surname)
+    (m) =>
+      (m.surname && candidate.startsWith(m.surname)) ||
+      (m.fullname && m.fullname.startsWith(candidate))
   );
   if (candidates.length === 1) {
     return { name: candidates[0].fullname, faction: candidates[0].faction };

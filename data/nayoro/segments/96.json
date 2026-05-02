@@ -1,0 +1,140 @@
+[
+  {
+    "id": "nayoro-96-2-001",
+    "municipality": "nayoro",
+    "council_id": 96,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月21日－01号",
+    "date": "2022-01-21",
+    "speaker": "市長（加藤剛士君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。議案第１号　令和３年度名寄市一般会計補正予算について、提案の理由を申し上げます。\n　今回の補正は、住民税非課税世帯等に１世帯当たり１０万円の給付を行う特別給付金の給付に係る経費を補正しようとするものであり、歳入歳出それぞれ４億５，０００万円を追加し、予算総額を２３５億６，４７７万６，０００円にしようとするものでございます。\n　補正の内容を歳出から申し上げます。２款総務費におきまして情報化推進事業費１１０万円の追加は、特別給付金給付のためのシステム改修委託料を追加しようとするものであります。\n　３款民生費におきまして住民税非課税世帯等臨時特別給付金給付事業費４億４，８９０万円の追加は、特別給付金のほか、給付に係る事務費を追加しようとするものでございます。\n　次に、歳入について申し上げます。１６款国庫支出金におきまして特別給付金給付に対して交付される補助金４億５，０００万円を追加しようとするものでございます。\n　よろしく御審議くださいますようお願い申し上げます。",
+    "text_length": 445,
+    "source": {
+      "minutes_file": "data/nayoro/minutes/96.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "nayoro-96-2-002",
+    "municipality": "nayoro",
+    "council_id": 96,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月21日－01号",
+    "date": "2022-01-21",
+    "speaker": "１０番（川村幸栄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "川村幸栄",
+    "member_faction": "無所属（日本共産党）",
+    "text": "ただいま御説明がありました特別給付金給付事業費に関わって中身詳しくお話をいただければというふうに思いますが、どうでしょうか。",
+    "text_length": 62,
+    "source": {
+      "minutes_file": "data/nayoro/minutes/96.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "nayoro-96-2-003",
+    "municipality": "nayoro",
+    "council_id": 96,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月21日－01号",
+    "date": "2022-01-21",
+    "speaker": "市民部長（宮本和代君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の給付金につきましては、支給対象世帯が大きく２通りとなっておりまして、１つは非課税世帯ということで、令和３年１２月１０日を基準日といたしまして、その日に住民登録を有している世帯の中で世帯全員の方が令和３年度分の住民税が非課税となる世帯となっております。また、もう一つにつきましては、家計急変世帯ということで、令和３年１月以降に新型コロナウイルス感染症の影響で家計が急変しまして非課税世帯と同様の事情にあると認められる世帯が対象となっております。それぞれの世帯に対しまして給付金が１０万円ということで、非課税世帯につきましては２月に入りましてから確認書を送らせていただきますので、その世帯の方から返信をいただいた後こちらで確認し、給付してまいりたいと考えております。また、家計急変世帯の方については、申請をいただいて把握していくことになりますので、必要書類などと併せて状況をお伺いしながら申請につなげてまいりたいと考えております。",
+    "text_length": 416,
+    "source": {
+      "minutes_file": "data/nayoro/minutes/96.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "nayoro-96-2-004",
+    "municipality": "nayoro",
+    "council_id": 96,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月21日－01号",
+    "date": "2022-01-21",
+    "speaker": "１０番（川村幸栄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "川村幸栄",
+    "member_faction": "無所属（日本共産党）",
+    "text": "状況も把握しながらというお話も最後のほうでされていらっしゃいましたけれども、ただ今回世帯への給付ということであります。この間コロナ禍の中で家庭内の暴力等々ある中で避難されて家を出た方もいらっしゃる、そういった方々になかなか給付金が届かないということが全国的にも大きな問題になっているところであります。例えばそういった部分の方々が御相談したいというふうに、自分のところには当たらないというふうなことで生活が大変だから何とかしてもらいたいというような御相談をさせてもらうにはどのようにしていったらいいでしょうか。",
+    "text_length": 254,
+    "source": {
+      "minutes_file": "data/nayoro/minutes/96.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "nayoro-96-2-005",
+    "municipality": "nayoro",
+    "council_id": 96,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月21日－01号",
+    "date": "2022-01-21",
+    "speaker": "市民部長（宮本和代君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＤＶの対象者などとなってくるかと思うのですけれども、ＤＶの対象者につきましては基本的には住民基本台帳における支援決定ということで市民課のほうで事情を把握している方と健康福祉部のほうで御相談受けたりして事情把握している方がいますので、その方々についてはこちらのほうから該当する状況であれば御案内をさせていただきたいと思います。そのほかの方で何らかの事情があって在住していらっしゃるけれども、通知がないという方については、お電話で御相談をいただければ、こちらのほうで調査して対応させていただきたいと思います。",
+    "text_length": 252,
+    "source": {
+      "minutes_file": "data/nayoro/minutes/96.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "nayoro-96-2-006",
+    "municipality": "nayoro",
+    "council_id": 96,
+    "council_name": "令和 ４年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月21日－01号",
+    "date": "2022-01-21",
+    "speaker": "１０番（川村幸栄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "川村幸栄",
+    "member_faction": "無所属（日本共産党）",
+    "text": "なかなか声を出しづらい状況にある方がいるかなというふうに思いますけれども、今お電話でもというふうなお話がありましたので、お電話で御相談受けながら親切なといいますか、親身な対応をしていただくことをお願いして終わりたいと思います。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/nayoro/minutes/96.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  }
+]

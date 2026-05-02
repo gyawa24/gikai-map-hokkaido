@@ -1,0 +1,2256 @@
+[
+  {
+    "id": "noboribetsu-361-2-001",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第１号は、令和２年度登別市一般会計補正予算（第12号）についてであります。\n　市では、これまで８度にわたり新型コロナウイルス感染症に関する緊急対策を取りまとめ、予算措置を講じてきたところでありますが、昨年末以降、感染症の再拡大により市内経済が深刻な状況に直面していることを踏まえ、第９弾となる緊急対策を取りまとめました。\n　議案第１号　令和２年度登別市一般会計補正予算（第12号）は、この緊急対策について予算措置を講じるほか、新型コロナワクチンに関する国の動向を踏まえ、接種体制の確保に係る予算を計上しようとするものであります。\n　別冊、令和２年度登別市一般会計補正予算書及び予算説明書の１ページをご覧ください。第１条は、歳入歳出予算の補正についてでありまして、歳入歳出予算の総額に歳入歳出それぞれ１億3,257万7,000円を追加し、283億4,604万9,000円とするものであります。\n　歳入歳出予算の補正の款・項の区分及び当該区分ごとの金額並びに補正後の歳入歳出予算の金額は、２ページから３ページまでの第１表、歳入歳出予算補正によるものであります。\n　第２条は、繰越明許費の補正についてでありまして、湯之国登別クーポン発行事業補助金について翌年度に繰り越して執行できるよう追加するものであり、その内容については４ページから５ページまでの第２表、繰越明許費補正によるものであります。\n　第３条は、債務負担行為の補正についてでありまして、ワクチン接種に関するコールセンター業務の委託に関し、令和３年度執行分についても令和２年度中に契約を締結するため、債務負担行為を追加するものであり、その内容については４ページから５ページまでの第３表、債務負担行為補正によるものであります。\n　歳入歳出それぞれの補正内容につきましては、６ページから16ページまでの歳入歳出補正予算事項別明細書に記載のとおりでありますが、歳出のうち衛生費は、ワクチンの供給が開始され次第、迅速に接種を開始できるよう、新型コロナウイルスワクチン接種体制確保事業費を計上するものであります。\n　商工費は、感染症の再拡大により売上高が大きく落ち込んだ市内事業者に支援金を給付するため、経営等エール給付金給付事業費を追加するほか、登別国際観光コンベンション協会より感染拡大収束後に当初予定を上回る規模で事業を実施したい旨の申入れがあったことから、既に予算措置を行った湯之国登別クーポン発行事業補助金を増額するとともに、同事業補助金の増額に伴い、既に予算措置を行ったウェルカムキャンペーン事業補助金を減額するものであります。\n　以上の補正に見合う歳入でありますが、特定財源として国庫支出金を追加するほか、一般財源として繰入金を追加するものであります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 1191,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-002",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "伊藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤　健太",
+    "member_faction": "市民・前進",
+    "text": "私のほうから何点か質問させていただきます。さきの生活・福祉委員会のほうでも情報提供はありましたが、改めて２月１日付で対策グループも設置されて、また、報道ベースで我々知り得ている部分もありますので、何点か確認をさせていただければと思います。\n　１点目なのですけれども、対策グループの増員の検討はされないのかということについて、自治体向けの手引などでも全庁的に体制を確保するようにといったようなことが示されてはいるのですけれども、委員会のほうでは健康推進グループが兼務ということでありましたが、やはり今後、何かあった時のことなども考えて、増員体制などすぐにまた代替が利くような体制の構築が必要かなと考えるのですが、その点についての見解をお聞かせください。",
+    "text_length": 325,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-003",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "２月１日付で保健福祉部内に新型コロナワクチン接種対策室を設置し、健康推進グループ全職員を兼務として対応することとしております。新型コロナワクチン接種対策グループの今後の増員につきましては、ワクチンの供給状況ですとか、業務の進捗状況に応じまして、適宜検討してまいりたいというふうに考えてございます。",
+    "text_length": 148,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-004",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "伊藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤　健太",
+    "member_faction": "市民・前進",
+    "text": "分かりました。今回のこの確保事業なのですけれども、すごく重責のようなもので、職員の方たちも多大な勤務の中で、大変な状況である中で健康管理もしていかなければいけないという、これから大変な仕事に就かれるのではないのかなというところの観点からも聞いたところではあるのですけれども、しっかりその点も踏まえて、事業が止まらないような形で適宜検討していっていただきたいなと思います。\n　次の質問になります。コールセンターの設置ということで、報道でも一部お知らせがありましたけれども、改めてこの詳細についてお聞かせください。",
+    "text_length": 255,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-005",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コールセンターにつきましては、現在想定しております委託内容としましては、まず新型コロナワクチンの集団接種の予約受付、あるいは新型コロナワクチン接種に対する、そのものに対する問合せの対応ですとか、あとは業務報告等をお願いするような形で今検討しております。また予約システムの提供業務といたしまして、ウェブ予約の受付ですとか、予約者に対するｅメールによる予約内容の送信等を予定してございます。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-006",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "伊藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤　健太",
+    "member_faction": "市民・前進",
+    "text": "分かりました。私事で申し訳ないのですけれども、コールセンターに勤めていたという経験もありまして、もう少し掘り下げて確認させていただきたいのですけれども、実際に発番する連番とかはフリーダイヤルなのか、またはナビダイヤルという有料のものなのか。また、開設される時間帯、その点につきましてや、あとは受ける担当者が、席数というような言葉にはなるのですけれども、何席設けられる予定なのか。そういったところについて、今の現時点での検討段階についてお聞かせください。",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-007",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コールセンターにつきましては、今現在、ナビダイヤルを登録いたしまして、そちらのほうにかけていただくということで検討してございます。コールセンターの設置時間につきましては、平日、休日を問わず朝９時から夜８時まで、席数に関しましては４人体制ということで、ただいま検討しているところでございます。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-008",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "伊藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤　健太",
+    "member_faction": "市民・前進",
+    "text": "分かりました。４人体制ということですね。これも経験のお話で申し訳ないのですけれども、やはりこのナビダイヤルというのが有料の形になります。それで４人体制でこの４万7,000人の人口の中で、まずは65歳以上の方からというところで問合せが約１万8,000人という形の中で、予約または問合せ業務を業務委託されるということなのですけれども、専門用語で申し訳ないのですが、待ち子というのがあります。４人とも対応者が全て埋まっていて、ただしナビダイヤルでつながっているので、つながってお待ちいただいている間も電話の料金が発生すると。ここではお客様という表現になりますけれども、その間次の方を対応する時に待っていた時間から始まってクレームに発展するですとか、なかなか最初からすぐにお問合せの業務に移ることができないといったようなハンディも考えられるというところがありまして、そういった中でも問合せが多い時間帯ですとか、65歳以上なので時間帯というのはなかなか厳しいかもしれないのですが、今後65歳以下の方々も問い合わせされてくるということになると、こちらも専門用語なのですけれども、コアタイムといったような集中する時間帯というのが予想されてきます。そういったことも詳しくしっかり検討していただいて、また待っている間にも電話を切られてしまうという呼損というものがあるのですけれども、そういった形でもやはり市民の方にご迷惑をおかけしていくということも考えられます。そういった中で、やはりＫＰＩといったような一定の成果指標も市の考えとして持った中で、業務委託先との協議が必要だとは思うのですけれども、そういったことについて、何か今お考えはありますでしょうか。",
+    "text_length": 718,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-009",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチン接種につきましては、今現在検討しておりますのは、市内の公共施設等でします集団接種と、あとはかかりつけ医のいらっしゃる医療機関での個別接種ということで室蘭市医師会と協議中でございまして、65歳以上の高齢者ですとか基礎疾患のある方につきましては、できましたらかかりつけ医のいらっしゃる個別接種ということで、医療機関のほうに予約をしていただいて、そちらのほうで接種をしていただくという体制を取りたいというふうに考えております。そうなりますと、実際にコールセンターのほうに電話されて集団接種の受付をされる方というのは、接種を希望される方の半数程度になるのではないかというふうに考えてございます。けれども、実際に接種が開始されますと混み合うことは十分考えられますので、その辺につきましては広報等で周知しながら、空いていると思われる時間に電話していただくなど、分散できるような体制を皆様にお願いしていきたいというふうには考えてございます",
+    "text_length": 416,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-010",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "伊藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤　健太",
+    "member_faction": "市民・前進",
+    "text": "分かりました。個別接種、集団接種といった中でも入電の軽減ができるのではないかという点など、また始まってみてから調整等必要になってくるかとは思いますので、その点におきましても、委託先としっかり連携が取れる形でスムーズなコールセンター運営を図っていただきたいと思います。\n　次の質問になります。勧奨をしていく中で、委員会のほうでは一旦勧奨して宛先がいらっしゃらなければ追跡しないというようなお話だったのですけれども、勧奨後、接種率の目標値ですとか、そういったものが国から示されているのかということについてお聞きします。",
+    "text_length": 257,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-011",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "国のほうからワクチンの接種率の目標等は示されておりませんが、市といたしましては、接種を希望される市民の方が必ず受けられる体制というものを整備してまいりたいというふうに考えてございます。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-012",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "伊藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤　健太",
+    "member_faction": "市民・前進",
+    "text": "分かりました。この接種率なのですけれども、自治体ごとに広域で比較されてくるような数値になってくるのかなということも考えられると思いますので、その中でほかの自治体がどのような接種率でできているのかというものもはかりながら、どうやって市民にしっかり周知していけるのかということも検討していっていただきたいなと思います。\n　次で最後になりますけれども、予防接種法の中の根拠法の中で予防接種健康被害救済制度というものがあります。このワクチンについては、インフルエンザワクチンのように長く、何年も前からあるものではないものですから市民も不安になっているところがあり、またその副作用、副反応がどうなのかといったようなことも情報が飛び交っている中で、この予防接種健康被害救済制度の周知については、本市としてはどのように考えているのか、見解をお聞かせください。",
+    "text_length": 372,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-013",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予防接種健康被害救済制度につきましては、予防接種法に基づく各種予防接種に関わるものでございますので、市公式ウェブサイトにより既に周知しているところでありますが、新型コロナワクチンにつきましても分かりやすく周知してまいりたいと考えております。また、健康被害に関しましては、都道府県において副作用等に対応する専門機関ですとかコールセンターを設置することが国から求められているところでございますので、それらの情報についても周知してまいりたいというふうに考えてございます。",
+    "text_length": 232,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-014",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "伊藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤　健太",
+    "member_faction": "市民・前進",
+    "text": "分かりました。まずこの救済制度の周知に関しては、案としては盛り込まれてなかったということで理解はしているのですけれども、やはり統一様式を今用いてご案内を進められると思うのですが、本市の独自なりにでもある程度Ｑ＆Ａを作って、ご案内のところに折り込んだりですとか、また、この救済制度の案内も折り込むなどを検討していただいたりすることによって、コールセンター業務の問合せが軽減されるのではないかということも図れるかと思いますので、ぜひそちらについても検討の余地があればお願いしたいなと思います。\n　また65歳以下の方々への今後の周知に対しても、市のＬＩＮＥのＱＲコードを添えるといったようなことで、登録してもらうことで随時ＬＩＮＥで情報配信ができるなども図ることができれば、これもまた、紙ベースではない周知の方法で瞬時に行き渡るといったようなことで、予防接種のご案内を届けることができるのではないかなと。そういったことも想定されるかと思いますので、ぜひその点につきましても、市民に分かりやすい周知の検討材料の中で参考にしていただければと思います。\n　私からは以上です。",
+    "text_length": 481,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-015",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "私のほうから幾つかご質問させていただきたいと思います。\n　初めに、今回の西いぶり広域連合負担金としまして、健康管理システム改修に232万6,000円というような記載がありました。これ恐らく広域ですので、額面から見てもかなり大規模なシステム改修なのかなというふうに感じられますが、実際に高齢者向けの優先接種が始まる段階で活用をすることが間違いなく可能なのかどうなのか、ご確認をさせていただきたいと思います。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-016",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在国からの情報によりますと、65歳以上の高齢者向けのワクチン接種の開始時期につきましては、４月以降からというふうにされております。ご質問の健康管理システムの改修につきましては、今年度中に終わることを西いぶり広域連合に確認してございますので、高齢者のワクチン接種の開始に間に合う予定となっております。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-017",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "間に合う予定ということで理解をいたしました。\n　次の質問なのですが、このたびのワクチン関連において報道各社の情報を見ると、いい情報、悪い情報いろんな情報が交錯する中で、ワクチン接種を鑑みて適時適切な広報活動を進める必要があるのではないかなというふうに私自身感じておりますが、現時点での本市の広報活動の対応の考え方についてお聞きしたいと思います。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-018",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナワクチンにつきましては、今月中に薬事承認される見込みとなってございます。ワクチンの薬事承認に当たっては、有効性や安全性について慎重に審査され、承認を得たワクチンはいずれも一定以上の効果があるものと認識しております。インフルエンザのワクチン等々各種ワクチンと同様に、新型コロナワクチンにも副反応が生じることが想定されますことから、ワクチン接種により起こり得る副反応等につきまして、国からの情報を基に広報のぼりべつですとか市公式ウェブサイト、町内会回覧等を活用して適時情報発信してまいりたいと考えてございます。",
+    "text_length": 258,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-019",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "ありがとうございます。\n　次の質問なのですけれども、ワクチン接種の在り方についてお尋ねしたいと思います。先月27日にワクチン接種会場運営訓練が川崎市で実施されたと報道されましたが、川崎市は集団接種方法という前提で訓練されていたかというふうに思いますけれども、それとは別に診療所で実施をする個別接種という対応方法もあるかと思います。例えばある自治体では、診療所での個別接種をメインにしながら集団接種会場でカバーをしていこうという考え方で進めている自治体もあるとお聞きしております。本市において、この集団接種と個別接種のすみ分けに対する考え方についてお尋ねしたいと思います。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-020",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "４月以降に予定されております高齢者を対象にしたワクチン接種から、市民がまずはかかりつけ医のいる医療機関で個別接種を行う方法と、市内の公共施設等で実施する集団接種の方法の２通りの方法から選択できるように、今現在検討を進めているところでございます。特に高齢者ですとか基礎疾患を有する方につきましては、可能な限りかかりつけ医のいる医療機関でワクチンの接種を受けることにより、安心安全に接種できるものと考えており、現在室蘭市医師会や室蘭市等と協議を重ね、準備を進めているところでありますが、こちらの想定といたしましては、個別接種が50％、集団接種が50％程度ということで検討しているところでございます。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-021",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "それでは、少し似たようなものについてまとめながら質問させていただきたいと思います。\n　まずはワクチン接種ができない要件とか条件、例えば熱があるだとか、何かそういうような症状についてどのようなものがあるのか。それによって当日、実施予定日に接種できなかった場合の対応というのはどうされるのか。３つ目になりますけれども、一番心配されているのが妊婦さんですとか妊娠の可能性がある場合の方々への説明ですとか、そういう対応というのはどのように考えられているのか。さらに、予定日に接種を受けないですとか、いろんな症状で受けられなかったような場合、委員会での説明では100人程度ぐらいで集団のところではまとめてやりたいというふうなことをお伺いしたのですけども、例えば100人分用意していて、90人受けて10名分が余ってしまった。こういう余った場合のワクチンの処置の対応というのは、どのようにされるのか。もし廃棄するのであれば、接種者を当日増やすだとか、何かそういうことができないかどうかということを検討すべきではないかというふうに思うのですけれども、まずこの４つについて、ご質問させていただきたいと思います。",
+    "text_length": 496,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-022",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず新型コロナワクチンの接種ができない要件につきましては、今現在薬事承認を受けた新型コロナワクチンがまだないということですので示されておりませんが、ほかのワクチン同様、発熱等の症状がある場合などは接種を控えていただくことになろうかと思います。今後は薬事承認がされ次第、国から詳細が示されるものと思われますので、その際には周知してまいりたいと思っております。また実施予定日に接種できなかった場合につきましては、改めて接種予約を行っていただくことになります。妊婦さんですとか妊娠の可能性のある方につきましても、今現在薬事承認されておりませんので、薬事承認がされ次第、国から詳細が示されるものというふうに認識しております。また、当日接種を受けなくて余った場合にどうしたらということだと思いますが、具体的な方法につきましては今後検討していくことになりますけれども、ワクチン管理を適切に行った上で、できる限り廃棄が生じないように対応してまいりたいと思っております。今現在出ておりますファイザー製のものですと、１バイアルにつき６人まで受けられるということになっておりますので、６の倍数でできる範囲で接種をしていくという形になろうかと思います。バイアルを希釈しないうちは、次の日などにも接種が可能ですので、そういった管理を適切にした上で、できる限り廃棄のないような状態で対応してまいりたいというふうに考えてございます",
+    "text_length": 601,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-023",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "まだ示されていないものについては、示され次第対応していくということで了解しました。\n　接種時間なのですけれども、受付から終了まで１人当たり大体どのくらいかかりそうなのかというところ、どのように考えられているのか。それから接種を受ける、受けないというのは、先日の委員会でもそれは本人の判断することだということだったのですけども、ワクチン接種を受けた、受けてない、それから接種回数の管理、１回目受けた、２回目受けた、１回目は例えば医療機関で受けた、次は例えば公共施設での集団接種を受けただとか。それから、一人一人の接種情報、接種の履歴ですとかデータ管理、そういうのはどのようにするのかというところを２つ目としてお伺いしたい。その後、例えば市内で感染が発生した場合、それらの調査等に活用するという考えはあるのかどうか。また、１回目は接種しても２回目は接種できなかった市民への勧奨方法というのはどのように考えられているのか。それから、接種数ですとか接種率、最終的に当初の計画に対して、終わった段階で公表を行うという考え方はあるのかどうかというところをお伺いしたいと思います。",
+    "text_length": 483,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-024",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず接種時間ですけれども、受付から終了まで１人当たり30分程度を見込んでおります。ワクチンの接種自体につきましては、個人個人の判断ということになりますけれども、市としましてはできる限り受けていただけるように周知してまいりたいと思っております。ご本人が受けたか、１回目を受けて２回目を受けてないというような状況につきましては、接種券、クーポンを２回分まとめてお送りする形になりますので、１回目を受けていれば、１回目の接種済証が渡されますので、それを基に２回目受けていないというのはご本人が管理いただければと思うのですが、接種の履歴につきましては全て健康管理システムのほうに入力して管理することになってございますので、市としましても２回目受けていない、または全く受けていないという方も把握することは可能ですので、１回目の接種、あるいは２回目の接種につきまして、勧奨の方法につきましては今後検討していかなければならないというふうに考えてございます。また、全体の接種数ですとか接種率につきましては、日々のものというものは個別接種もございますので、把握が難しいものというふうに考えてございます。令和２年度、あるいは令和３年度の予算で計上する内容になってございますので、決算時においては最終的に何人が受けられたということはお示しすることになろうかと思います。",
+    "text_length": 573,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-025",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "１人当たり大体30分ぐらいというところ了解いたしました。それからシステムで完了されるということで、誰が受けている、誰が受けていないというところは、しっかり市のほうで管理をしていくということです。あと接種については、最終的には公表をするという考えではあるというところ了解いたしました。\n　次に、実際に接種を受ける時なのですけれども、接種可能な判断というのは誰が行うのか。医師が行うのか、看護師なのか保健師なのか。それから接種時間中、やはり一番気になるのは医師がいるかどうかというところだと思うのですけれども、医師の常駐があるのかどうかというところを確認させていただきたいと思います。",
+    "text_length": 290,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-026",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "接種に関しましては、必ず医師の配置が必要になります。ですので、まず接種の可否の判断というのは医師が行うことになりますし、その後の状況確認につきましても医師が判断して対応していただく形になります。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-027",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "了解いたしました。報道等を見ますと、ワクチン自体が実績が全然ないものですから、報道によって結構不安視をされている方が多いのかなと。特にアナフィラキシーショックですか、これを発症した場合、すぐに対応していただけるのかどうかというところも不安で、そういうところが気になって接種しないという方もいらっしゃるのではないのかなということで、今の質問をさせていただきました。アメリカあたりのこれまでの接種の実績ですと、ワクチンの会社によって、20万人から30万人に１人というような発症ということで、これまでは発症後すぐに処置をされていて亡くなった方はいないという情報ですので、それよりも感染して亡くなる方が圧倒的に多いということですから、できるだけ接種していただければというふうに考えております。統計的にも、接種する方が圧倒的に安全性は高いのかなと。亡くなるということを、危険性ということを考えると、そちらのほうがよいかなというふうに思われます。\n　次に、２回目の接種までの期間なのですけれども、これはどのぐらい空けて次の接種を行うのか。それの案内とか手続というのはどのように行われるのか。最終的に、当初計画されているものに対して、いつぐらいまでに希望者のワクチン接種が完了する見込みでいるのかというところをお伺いしたいと思います。",
+    "text_length": 560,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-028",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ワクチンの種類によりまして、２回目の接種が３週間のもの、４週間のものというふうな形で、期間を空けて接種することになります。２回目の接種案内につきましては、忘れずに接種いただける効果的な方法について現在検討を重ねているところです。ワクチン接種完了の時期の見込についてでございますけれども、接種完了時期はワクチンの供給状況に大きく左右されるものというふうに認識してございますが、半年以上はかかるものというふうに認識しております。",
+    "text_length": 212,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-029",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "３週間から４週間を空けて接種するというところ、半年もしくはそれ以上、供給によって変わってくるというところを理解いたしました。\n　非常に大規模に接種するということで、皆さんも、国としても初めての経験ということで、手探りの状態で進めるということでありますけれども、経済の回復にもつながることだと思いますので、ぜひとも少しでも接種率を上げていただきたい。大変だと思いますが先ほど伊藤議員もお話しされていましたけれども、皆さんの健康もしっかり管理をしながら対応していただければというふうに思います。よろしくお願いします。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-030",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "何点か質問させていただきます。\n　先日の生活・福祉委員会の中でも提案がありましたけれども、現時点における接種対象者、順番が決められているのですけれども、これは医療従事者、高齢者、その他という順番に接種するということなのでしょうか。それとも、まずはこの１番から６番、国が指定する対象者が接種を行った上で、例えば60歳から64歳の者以外の人たちが接種をするとか、そういう順番は厳密なものなのかどうか、どういう人数把握によって対応しようとしているのか、お知らせください。",
+    "text_length": 232,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-031",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "接種順位につきましては、まずは医療従事者からということで、国のほうで定めております。順番につきましても、国のほうでいついつから開始してくださいというような情報が随時来ることになってございますので、その順番を市のほうで変えたりですとか、早めたりというのは、なかなか難しいのかなというふうに認識してございます。",
+    "text_length": 153,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-032",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私たち、昨年の11月に市政に関わっての市民アンケートを取ったわけですけれども、その中で多かったのは病院や学校、保育所、施設、公共機関などに従事する方とか、子供とかお年寄りのＰＣＲ検査を急ぐことというふうなことで、とにかくたくさんの人たちと接する人たちを優先してほしいというような要望があったわけですけれども、今回の接種の場合には、そういう対応の仕方をするというふうなことは考えられているのかどうかというところを伺います。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-033",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コロナワクチンの接種に関しましては、国の方針に基づいて接種を開始していくものでございますので、国のほうで今後そういった順番等が変わるようであれば、それに対応してまいりたいというふうに考えてございます。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-034",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そうしたら、状況によっては職種、医療従事者等については、ほかの業務のために後回しになるというふうなことも考えられる、そういう人もいるということが考えられるというふうに受け止めてよろしいですか。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-035",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現時点では、まず医療従事者等の中には、新型コロナウイルス感染症の患者と直接接触する機会の多い方ということになってございますので、医療従事者あるいは自衛隊員、救急隊員、そういった方も医療従事者等には含まれております。ですが、あくまで国の方針にのっとって順次接種を行ってまいりますので、市として、その方が新型コロナウイルス感染症の患者と常時接触する危険性があるかどうかという判断はできませんので、それにつきましては各医療機関等で判断していただく形になろうかと思います。",
+    "text_length": 232,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        84
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-036",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "接種の開始日時なのですが、 幾つか案が出ているようですけれども、それらが決定するのはいつ頃と連絡いただいていますか。",
+    "text_length": 58,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        86
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-037",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これは報道ベースのものでしかこちらのほうも情報等はございませんので、医療関係者による先行接種といわれるものについては２月中旬ぐらいから、あるいは医療従事者につきましては３月ぐらいですか、あと高齢者につきましては４月以降ということで、実際にはいつから開始されるのか。ワクチンそのものが薬事承認されておりませんので、具体的な日時等々はまだこちらのほうに情報としては入ってございません。",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        88
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-038",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "業務のリハーサルのようなものが先日テレビで報道されましたけれども、本市の場合にもそういうふうなことを想定してリハーサル的なことをやるということは、どのように受け止めていますか。",
+    "text_length": 88,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        90
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-039",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先日川崎市が行ったような大がかりなリハーサルは考えてございません。まずは、接種会場において職員の動作確認ですとか、動線の状況ですとか、そういったものを確認し、当日に備えるといったところで準備してまいりたいと考えてございます。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        92
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-040",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "接種会場、本市の場合にも想定している部分があると思いますけれども、その会場まで行くのが大変だというふうな高齢者の方もいらっしゃるので、せんだって生活・福祉委員会でバスあるいはタクシーのようなものを市のほうでは考えていないのかというふうなことを話したら、考えていないということで、その話を聞いて、こういうふうな体制になるらしいよというふうなことの話で盛り上がると言っては変ですけれども、タクシーで行くにしても遠い人であれば結構な出費になるのではないかと。交通不便地に住んでいらっしゃる方への対応の仕方を考えてくれるべきでないかという声も上がっていましたけれども、その点についてもう一度お伺いいたします。それと交通不便地に住んでいる方への対応の仕方について、どのように対応しようと考えているのかお知らせください。",
+    "text_length": 354,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-041",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在のところ、交通の不便な方に関しまして何か手立てがあるかと言われますと、特段考えてはいないところでございますけれども、そういった方々は常に病院等にかかってらっしゃるのではないかなというふうに理解しておりますので、常日頃かかりつけ医のある医療機関に行かれる際に予約をしていただいて、接種をお受けいただければというふうに考えてございます。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        96
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-042",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "渡辺議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "では確認させていただきます。かかりつけ医のある方については、かかりつけ医のところへ行って接種していただくというふうなことも可能というふうなお話になると、接種会場が市内たくさんできるというふうな押さえでよろしいのですか。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        98
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-043",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "舘下保健福祉部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "個別接種と集団接種の２通りの方法を現在検討しております。個別接種につきましては、かかりつけ医のいる医療機関で、今までのインフルエンザのワクチンのように予防接種をしていただくということになります。集団接種の場合は、公共施設等に来ていただいて接種をお受けいただくという形になります。",
+    "text_length": 139,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        100
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-044",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、お聞きしていきます。\n　まず、今回の本事業の発案の目的としては、市内の事業者の経営状況の悪化ということがあるんであろうというふうに思いますが、まず概要的に市内事業者の経営状況であったり、年末年始の景況感というのはどのようなものと把握されているのかお知らせください。",
+    "text_length": 137,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-045",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在、国においては首都圏を中心に緊急事態宣言が発出され、北海道においても集中対策期間として感染拡大の防止対策に取り組んでいる状況にあります。景気の部分については、新型コロナウイルス感染症の影響により、本市においても観光関連産業や飲食業をはじめ幅広い業種が影響を受け、市内企業等の経営は依然として厳しい状況に置かれているものと捉えております。登別商工会議所においても市内事業者に向けたアンケート調査を実施しておりますが、その中では売上げや受注、顧客数の減少など、感染症により地域経済に大きく影響が及んでいることが見て取れるものとなっております。市ではこれまで商工分野、観光分野それぞれにおいて緊急経済対策を講じており、一部事業者からの聞き取りでは秋口から年末、あるいは年始にかけてなど、その効果を実感する声もお聞きしておりますが、感染症の拡大が長期化している中において引き続き状況に応じた対策が必要であるものと考えております。\n　以上です。",
+    "text_length": 419,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-046",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本市としては切れ目ない経済対策ということをされてきたということだと思いますけれども、やはり年末年始の商戦がかなり厳しい状況にあったということは聞いております。そういったことを考えていくと、そういった厳しい状況もあるだろうから、できる限りの方を対象に何とか支援をしていきたいという、その姿勢は当然行政としてはお持ちだと思いますけれども、今回そう考えたときに、給付対象の出し方が今回お示してされている内容でいいのかどうかということについて確認をしていきたいと思います。\n　まずはその給付対象としては、令和２年の１月から12月の合計売上高等を前年比と比較するということでございます。ただ、登別市の状況を見ていったときに、消費マインドが急激に悪化したのは１月とかではなくて、２月の28日だったということで、私としては記録をしております。恐らく北海道に緊急事態宣言が独自で出された、そこから急激に消費マインドが落ち込んだということは皆さんもご承知かというふうに思っております。その前の段階、１月の段階においては、確かに報道等では新型コロナウイルスの危険性ということは報道されていましたが、それに対して消費マインドが急激に落ち込むというところまでではなかったということでございます。そういった状況を考えていくと、令和２年１月から12月の合計売上高ということで見るのではなくて、むしろ様々な、赤鬼・青鬼をされたりだとか、経営アシスト給付金をされたりだとか、そのほか国として持続化給付金を出したりだとか、そういった対応を行っていない12月、１月、ここの短期間で見たときの消費マインドの悪化に対して何とか年度を越えて、これから２月、３月、４月と経営を持続していただくための一時的な支援策金として、この給付金を支給されるのが私はよかったのではないかなというふうに思います。それを考えていくと、もう少し12月、１月の売上高等を前年比と比較するだとかそういった形のほうが適切だったのではないかと思いますが、そこについてはどのようにお考えになったのでしょうか。",
+    "text_length": 867,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-047",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この事業の制度設計に当たりましては、登別商工会議所の意見や他の自治体の事例などを参考としながら検討を重ねてきました。その中では昨年実施しました経営持続化アシスト給付金のように、売上げの比較対象をひと月に絞って行う方法もその一つであろうというふうに考えているところであります。検討段階では市内事業者への聞き取り調査も行いましたが、その中ではエール飲食券やエール建設券のほか、赤鬼・青鬼チケット、特に地元のみで使用できる青鬼チケットの効果が大きかったという声もありました。売上げ減少の対象期間を限定してしまうことで、経営に苦しむ事業者が対象外となってしまうことも想定されるのではないかということと、感染症の影響を大きく受ける事業者は年間を通して30％程度以上の売上げが減少しているものではないだろうかというお話も伺っております。また、登別商工会議所からも年間を通じて売上高30％以上の減少を提案されているところでもあり、こうしたことを勘案し、年間比較として今回実施することとしたところであります。\n　以上です。",
+    "text_length": 453,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-048",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "その分析だとか見方によって様々ありまして、同じ飲食店であっても、いわゆるターゲットとしている客層によっても対応がばらばらということで、なかなか全ての方を拾うのは難しいというのは承知はしております。ただ、やはり金額としては例えば100万円だとか、決して経営の方向性を大きく変えられるほどの給付金は出せない。あくまでも一時的な支援策としてお出しするという金額であることを考えれば、そういった１年という長期的な期間で見るのではなくて、短期でまずこの春を越えていくということに対して寄り添う視点というほうが、私は重要だったのではないかというふうに思っております。\n　もう少し具体的に、この売上高等のところについて確認をしていきたいと思います。かなりざっくりとした書き方をされていますので、行政側の対応、運用の在り方によっては、より多くの方を拾えるのではないかという趣旨で確認をしてきたいと思います。まず、先ほどご答弁にもございましたけれども、経営持続化アシスト給付金、あるいは国のほうで行った持続化給付金、こういったお金はお調べしてみると、いわゆる課税対象になる、収入として見られるということでございます。ですので、場合によってはこの売上高等の中に、せっかく事業継続していただくために出した持続化給付金であったり、アシスト給付金が収入として見られてしまって、今回お示ししている30％以下のところに該当しないというおそれも出てきております。そこは恐らく行政側としても本意ではないということを考えたときに、その他収入でございますから、その他収入のところはこの売上高等には入れていかないというような対応も私は必要ではないかというふうに思いますが、ここについてはどのように区分けをしていきたいとお考えでしょうか。",
+    "text_length": 748,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        111
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-049",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "比較の要件の部分でいきますと、先日、観光・経済委員会の中で村井委員からもそのようなご質問がありました。また、国の支援等から経営持続化給付金だとか、市からのアシスト給付金もそうですが、いろんな支援の中で収入ベースとなる部分での比較となりますと、国の持続化給付金など各種行政機関における給付金なども収入として計算に含まれることとなりますが、場合によっては売上げの比較だけではなく、収入ベースの比較が適している事例も考えられるのかなというふうに、私どもも十分検討させてもらって、この辺が一つの大きな課題になってくるかと思っておりました。これらを踏まえまして、市としてはこの給付制度を少しでも市内事業者の経営等の一助となるよう支援してまいりたいというふうに思っておりますので、柔軟な対応をしていきたいと考えておりますし、また申請段階、またはその以前の相談段階からもいろんな対応をしていきたいというふうに考えております。\n　以上です。",
+    "text_length": 412,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        113
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-050",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。しっかり確認をしていきたいと思うのですが、今のご答弁の意味合いとしては、売上高等ということですので、等の中に売上げだけではなくて、収支差額の収益の比較でも対象30％の数字を見ていくことをするということでよろしいでしょうか。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        115
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-051",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "その辺の部分については柔軟に対応していきたいというふうに考えております。ただ、これまでの商工会議所のアンケートの中でも、おおむね今のコロナ禍においては、売上高等で30％を超えている事業者がほぼほぼ大多数ではないかというふうに思われますので、そういった部分については柔軟に対応していきたいと思いますし、そういった相談にも十分に対応していきたいと考えております。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        117
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-052",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "あわせて、その前に私のほうでも質問いたしましたその他収入、ここについては収入の中には含めないで、例えば確定申告書等で比較をしていくということでよろしいでしょうか。",
+    "text_length": 81,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        119
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-053",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今私どものこれまでの制度設計の中では、まず確定申告してもらうというのが大前提というふうに思っておりますので、議員今おっしゃるとおりだと思います。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        121
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-054",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。できる限り運用面においては、対象者を多く確保できるような運用をしていただければと思います。ただ、先ほども少しお話をいたしましたけれども、決して事業者にとっては大きな金額ではないと。あくまでもこの春を乗り切っていただくための一時的な支給、援助であろうということを感じているところであります。私としては、さらに追加で今後何をしていくのかといったことを、ぜひとも政治的な姿勢も含めてお示しをいただきたいと思いますが、その前に確認をしておきたいのは、今回の補正予算額を見ていったときの財源としては、新型コロナウイルス対応地方創生臨時交付金が追加されることを見込んで立てた補正予算であろうということを鑑みたとき、これまでの交付限度額を加えた交付見込額は全体のパイとして幾らになったのか。今後さらに追加される臨時交付金をプラスして、さらに今回補正を組んだものを引いた、最終的にまだこれから使える見込みがある財源というのはどれぐらいを見込んで、今回の事業というのは立案されているでしょうか。",
+    "text_length": 445,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        123
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-055",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、国の第３次補正予算によって成立されました地方創生臨時交付金、こちらの金額ですけれども、２月２日に交付限度額が示されました。本市の交付限度額は２億5,956万9,000円とされました。これまでの交付限度額を加えた交付見込額の合計につきましては約11億2,000万円となりました。既に12月定例会までで約８億5,300万円、臨時交付金を財源として予算編成を行ってきておりますので、残額は約２億6,700万円と見込んでいるところでございます。本定例会に提案させていただきました経済対策の財源として、財政調整基金から１億2,415万円、こちらの繰入れを見込んでおりますけれども、議員おっしゃるとおり今後、地方創生臨時交付金、交付の限度額制度も示されましたので、財源の振替ということを考えていくこととなります。そのため、先ほどの金額から差し引いた残額につきましては約１億4,000万円になろうかと考えてございます。\n　以上です。",
+    "text_length": 412,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        125
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-056",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました。つまり、この１億4,000万円と、さらには交付金を既に予算化したけれども執行残が一部出れば、１億4,000万円以上の財源がまだ市内の市民の方に対して、コロナ対策として使える財源としては確保されていると。そこに対する次なる手をどう考えていくかというのは、すごく大事だと思っています。いろいろな事業者の方にお聞きすると、この12月、１月の消費の落ち込みというのは、かなり例年と比較したら100ゼロというような事業体のお店の方もいらっしゃるような状況でした。そういったところが何とか維持しようと思っているのは、今は単に消費マインドが落ち込んでいるだけなので、ワクチン接種が進んで消費マインドが戻れば、必ずお客さんが戻って来てくれるだろうという思いで何とか耐え忍ぼうということをされているのだと思います。ただ、もしかしたらですけれども、そういったかなり厳しい状況の事業者であっても、今回１年間という期間の中で対象者を出そうとしたことによって、もしかすると対象にならない事業者もいるかもしれません。さらには、当然ボーダーと呼ばれるような30％以上の落ち込みではなくて、28、27％でとどまった事業者もいるかもしれません。どこかでラインを引いて、どこかで基準を作って、できるだけ多くの方を運用面で拾い上げていくという姿勢はもちろんお持ちだと思いますが、さらにそれに加えて、事業者が求めているのは、登別市として今後消費マインドが戻ってきた時に備えてどういったことをやっていくのだと、そこの姿勢をもっと発信してほしいということは言われております。ですので、今回はあくまでも一時的にエールをするために給付金を出されましたけれども、ぜひとも今後もし仮にですが、消費低迷がさらに落ち込むのであれば追加の給付をするのか、あるいは消費マインドがどうなっているのかを見極めた上で、プレミアム商品券だとか消費喚起策を取っていきたいのか。そこに対する政治的な方針というのはどのようにお持ちなのか。そこについて最後、市内の事業者に向けての発信という意味も込めて姿勢をお示しいただきたいと思いますが、どのようにお考えになるでしょうか。",
+    "text_length": 906,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        127
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-057",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "国の３次補正予算によって、先ほど申し上げたとおり臨時交付金のほうが示されました。臨時交付金の活用に当たっては、庁内におきましては１月中旬から臨時交付金の活用、様々な事業案の検討を各部に依頼し、準備を進めてきております。国から２月２日に交付金の限度額、昨日２月４日に制度要綱が示されましたので、今後令和２年度補正予算または令和３年度補正予算になるかと思いますけれども、経済対策を中心として予算を計上する方向で様々な事業の検討、精査を進めていくこととしてございますので、今後とも検討を進めていきたいと考えてございます。\n　以上です。",
+    "text_length": 264,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        129
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-058",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "辻議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "その様々なというところについて、どういったことをやっていきたいということについては、議論はまだ進んでいないという状況でしょうか。今回のこのエール給付金給付事業で、多くの苦しむ事業者の経営を持続化させていく力は恐らくないのだと思います。ただ、当市としてはできる限りのことをされているわけですから、次なる一手としてこういったことを考えているので、それまでぜひとも頑張ってほしいというメッセージとしても、その方針ということは現段階でしっかり示されていく必要があるのではないかというふうに私は思いますが、そこについてはどのようにお考えになっているのでしょうか。",
+    "text_length": 276,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        131
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-059",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "松田観光経済部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今現状において、どうしてもやっぱり緊急事態宣言だとか、北海道の集中対策期間等の対策が取られている中においては消費喚起、拡大対策という部分について実施することは、今現状については難しいのかなと。そういった面で、今回については給付事業というようなことをさせていただきました。本来的には経済対策として大きく持っていけるのは消費喚起、拡大対策。赤鬼・青鬼チケットのような、そういった対策が本来必要なのかなというように思っております。ただ、現状において各商店会だとか商工会議所の意見を聞きつつ、その中では、今現在の中では給付事業が適当だろうということで判断させていただきました。この後については、今現状においても消費喚起策という部分については現在検討しております。商工会議所とともに、また、商工会議所がこの間来られた中では、商店会あるいは飲食店においてそれぞれの取組といいますか、ＰＲ、お客さんを呼び込むためのイベント事業だとか、そういうものに対して支援をいただきたいというような要請も受けております。こうしたことも含めて、経済活性化となるような消費喚起策については切れ目なく実施できるよう、財政の部分では当然限りはございますけれども、市としてでき得る限りの切れ目ない経済対策というものは今後も検討していきたいというように考えております。\n　以上でございます。",
+    "text_length": 575,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-060",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "それでは、この件につきまして整理をしながら質問させていただきたいと思います。この事業につきましては、前回５月の臨時会の際にも第１弾でこのクーポン発行事業というものを実施してきたかと思います。 その際にも、今回と同様に宿泊施設に対して5,000円分、また、その他飲食店ですとかテーマパークに使うためのクーポン3,000円分、合計8,000円分を応募された方に対して発行するというものでした。前回につきましては5,000人という対象者、さらに登別市民の方のみというふうになっていたのですけれども、今回につきましては、補助金額については一人一人の補助金額8,000円というところは変わらないのですが、対象者が１万2,500人というふうになっております。今回この対象者の人数がかなり大幅に変わっておりますが、今回の対象者というものをどのように考えているのかお聞かせください。",
+    "text_length": 383,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        137
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-061",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６月に実施した湯之国キャンペーンについては、議員おっしゃるとおり市民限定でやらせていただきました。今回の部分については、対象は市民以外の方に広げて実施していこうというふうに登別国際観光コンベンション協会のほうから言われております。そういった事業に対して補助をしていきたいというふうに考えております。ただ、今の対象人員、金額部分等いろいろありますが、現状の緊急事態宣言や北海道の集中対策期間の解除を見据えた上でこの事業を実施していきたいと考えておりますので、その第１弾、第２弾、例えば第１弾については胆振管内の方だとか、第２弾については道内の方とか、期間もそういった意味でいけば、現状の状況を見ながら対象者を変更していき、事業を実施していく可能性もなきにしもあらずかなというふうに思っておりますので、国際観光コンベンション協会とは十分に協議しながら実施していきたいというふうに考えております。\n　以上です。",
+    "text_length": 402,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        139
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-062",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "続きまして、このクーポンが実際に手元に届くまで、ホテルの宿泊施設の予約から受け取りまで、どのような流れなのかお聞きしたいと思います。",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        141
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-063",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "実施主体である登別国際観光コンベンション協会で現在想定している流れについてでありますが、まず、市内宿泊施設のホームページ、または電話等で宿泊予約をしていただいた後、登別国際観光コンベンション協会のホームページ内の申込フォーム、または電話でクーポン券利用の申込みを行っていただく。なお、クーポン券の受け取りについては、各宿泊施設でチェックインの際にお受け取りいただくような形を考えているというふうに聞いております。\n　以上です。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        143
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-064",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。前回のクーポン事業の際には、登別市民が対象であったということもあると思うのですけれども、全員に郵送されて周知されてきたかと思います。今回につきましては市民以外の方も対象になる可能性があるということでしたが、実際に周知方法については今後どのように考えているのかお聞かせください。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        145
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-065",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の周知方法につきましては、市民以外の方もおりますので、有効的な、例えば新聞広告だとかポスターの掲示、フリーペーパーの作成など幅広い形の中でＰＲ広告をしなければいけないというふうに考えております。ウェブ広告などを活用していきながら、周知方法をこれまで以上に拡大して実施していきたいというふうに考えております。\n　以上です。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        147
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-066",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。前回の時は全員に郵送されたということで、それでもまだ理解しきれなかったりですとか、そういった問合せもあったかと思いますので、また今回さらにもう少し簡単にと言いますか、知れる方法が少し少なくなってしまうかと思いますので、そちらにつきましてはぜひ工夫をしていただきたいなと思います。\n　続きまして、この事業実施のスケジュール、いつ頃から広告が始まって、いつ頃から申込みが始まって、いつから宿泊等ができるのかというスケジュールについてお聞きしたいと思います。",
+    "text_length": 233,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        149
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-067",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "観光・経済委員会の資料においては、２月中旬以降という形でお示しさせていただきましたが、まだ首都圏等に緊急事態宣言が発出されております。また、それが３月７日まで延びるような状態でありますので、ＧｏＴｏトラベルだとか道民割等の部分についても停止しております。そうした中で、現状今すぐにこの事業を実施するということは、市民感情から見ればまだまだ実施時期ではないのかなというふうに考えておりますので、こういったことを踏まえながらも登別国際観光コンベンション協会と準備を進めながら、実施時期を見定めてこの事業を展開していきたいと思っていますので、その際には市民の方、または市民以外の方についても広く周知していきたいというふうに考えております。現状、議員がおっしゃる具体的なスケジュールについては、まだはっきりしたことは言えないような状況にあります。\n　以上です。",
+    "text_length": 376,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        151
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-068",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。前回この事業をやったときには、5,000人対象というところで、本当にあともう少しで5,000人に達さなかったという状況であったと思います。今回、予定する人数がかなり増えているということで、もしこの予算の上限に至らなかった場合、どのようにしていくのかお聞きしたいと思います。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        153
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-069",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この事業については、前回の６月の湯ったりキャンペーンの分については申込期間を１か月に限定させてもらいました。そういったことも踏まえながらも、今回の事業については予算の許す限り使用期間の延長も考えながら、令和３年度中という形を取りたいなというふうに思っておりますので、そういった意味でいくと、例えば１万人、２万人であれば、通常の年であればあっという間に申込みが終わってしまうのかなというふうに思いますが、ただ選択としてはＧｏＴｏトラベルや道民割といった選択の方もおりますので、私ども予算の許す限り、また期間についても精算の許す限り延ばしていって、この事業を残すことなく事業展開していきたいというふうに考えております。\n　以上です。",
+    "text_length": 314,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        155
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-070",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。今回このクーポンが使用できるホテルですとか飲食店など、どういったところがあるのか、前回との違い等あるのかお聞きしたいと思います。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        157
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-071",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大きな変更点はないのですが、あくまでもこの事業については登別国際観光コンベンション協会の事業としてやりますので、主となる部分については強化会員という方を率先して、まず宿泊施設、飲食店、土産店などなど利用可能となっておりますので、６月にキャンペーンをやった部分と大きく変わる点は特にないかなというふうに考えています。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        159
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-072",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。前回も聞いたかもしれないですけれども、このクーポンの対象になるお店、事業者の基準等がありましたらお聞かせください。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        161
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-073",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "あくまでも協会会員というのが大原則でやらせてもらっていて、コンベンション協会のほうについても、あくまでもコンベンション協会は登別温泉だけでなく、登別市内の観光協会というような位置づけもありますので、そういった意味でいけば、会員の周知の部分についても広く周知してもらって会員になってもらうというのがいいのかなというふうに思っておりますので、そういった部分も踏まえた上で、協会のほうにはそういった会員の売り込みというか、新規会員の勧誘だとか、そういった部分も視野に入れながら事業を進めてほしいというふうに考えております。\n　以上です。",
+    "text_length": 265,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        163
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-074",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。ちょっと違う事業になるのですけれども、赤鬼・青鬼チケットの際には、その赤鬼・青鬼チケットが使える対象のお店については商工会議所に入っている方、会員の方と非会員の方で負担金の金額を違った形で参加できるようにしているということでしたが、実際今回のこのキャンペーン、今回のクーポンにつきましても、例えば会員である、会員でないという違いによって負担金を変えることで、もっと多くの事業者がこの事業に参加できるような仕組みというものは考えていないのでしょうか。",
+    "text_length": 231,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        165
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-075",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "特にそのような額を変えるだとか、そういう話の部分については協会から聞いていませんし、例えば今回は金額を大幅に下げて会員になってくださいとか、そういった周知をするということも聞いておりませんので、今回が特別とかそういう部分については、特段コンベンション協会のほうからは聞いておりません。通常の会員取組という形になると思います。\n　以上です。",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        167
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-076",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "宮武議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮武　祥子",
+    "member_faction": "市政クラブ",
+    "text": "すみません。伝え方が間違っていたのかもしれないのですけれども、会員の価格を下げてということではなくて、現状会員の方はこの金額で。やり方が赤鬼・青鬼とは違うと思うのですけれども、会員の方は例えば負担金がかからないのだとしたら、非会員の方はこういった負担金を払えばこの事業に参加できますというような、前回とはちょっと違う仕組みで、コンベンション協会に入っている方もそうじゃない方ももっと幅を広げて、使う側が選択できるような取組といいますか、そういう考えはありませんかという質問でした。",
+    "text_length": 240,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        169
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-077",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "失礼しました。一応私どももコンベンション協会の事業でありますので、そういった部分は検討の余地はありませんかという投げかけはさせてもらっていて、また市民も含めて、市民以外の方もそういった新たな、今まで会員になっていない方の所にも行けるような仕組みづくりはできませんかというふうな部分についての投げかけはしていきたいと思います。\n　以上です。",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        171
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-078",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "歳入の繰入金についてお伺いをいたします。まず確認ですが、商工費の経営等エール給付金給付事業費8,520万円。あわせまして湯之国登別クーポン発行事業補助金、国庫支出金を差引きますと3,895万円です。この２つを合わせますと１億2,415万円。この金額を財政調整基金を取り崩して充当した。こういった理解でよろしいかどうかを確認いたします。",
+    "text_length": 167,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        175
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-079",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議員おっしゃるとおりでございます。",
+    "text_length": 17,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        177
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-080",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。今回の取崩しによって、基金の残高は今回の繰り出しでどれくらいであるのか。また、特に財政調整基金は今回の繰り出しで残高は幾らであるのか。この２つについてお聞きします。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        179
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-081",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今般の経済対策に係る補正予算の財源につきましては、財政調整基金を活用することとさせていただいていますが、こちらにつきましては、国の第３次補正予算で新型コロナウイルス感染症対応地方創生臨時交付金が措置されるとされていたものの、予算編成作業時点では交付限度額や制度要綱などが示されておりませんでしたので、そのような形を取らせていただきました。それで先ほどもご答弁させていただきましたけれども、先日限度額や制度要綱が示されましたので、今後の補正予算において財政調整基金から地方創生臨時交付金へ財源振替を行いたいと、そのように考えてございます。\n　それで財政調整基金の残高ということですけれども、令和元年度末の残高が約６億7,000万円、それで登別マリンパークニクスの売却収入の関係で２億200万円を積むこととしておりますので約８億7,000万円ですか、ここから先ほどの１億2,415万円を引いた額が現在の予算上の残高の見込みになろうかと考えておりますが、先ほど申し上げましたとおり、今後地方創生臨時交付金を活用することで財源振替を行いたいと考えておりますので、財政調整基金は最終的には繰入れしない予定で考えてございます。\n　以上です。",
+    "text_length": 514,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        181
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-082",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "基金全体で８億7,000万円なのでしょうか。それとも財政調整基金が８億7,000万円で全体は幾らなのか。この辺はもし数字がなければまたお伺いに行きますが、これ財政全体、基金全体で８億7,000万円あるのですか。財政調整基金は幾らあるのか、この辺をちょっとお伺いしたいです。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        183
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-083",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "12月補正予算時点での財政調整基金、こちらの残高でお答えさせていただきます。財政調整基金の残高としては約３億3,100万円となります。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        185
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-084",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。財政調整基金は３億3,100万円程あるということで、そこから今回の取崩しということですね。新型コロナウイルス感染症対応地方創生臨時交付金が先般示されまして、先ほど井上次長がおっしゃられました、今回は地域経済対応対策分で１億8,528万円が交付予定であるといった見通しでございますが、今回の補正予算の当該事業、この２つに関しまして、さきの事業等の執行残、これを使い切るという議論は当初なかったのかについてお伺いします。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        187
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-085",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "臨時交付金の関係につきましては、直近でいうと先ほど申し上げましたとおり、12月定例会で予算を計上させていただいておりまして、今まさに執行していっているところでございます。それでこれまでの執行残も含めて現在精査をしているところでございますので、今後の補正予算においてそのような整理は必要になってくるかと思いますが、今回につきましては財政調整基金を繰り入れることとさせていただいたところでございます。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        189
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-086",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "例えば本事業に対して執行残額の一定額を充当し、また不足分を一時的に一時借入金というような方法、これは地方自治法の二百三十幾条に多分書いてあるのですが、こういっても借入れは自治体として認められているわけなのですが、例えば執行残を１億円充てるとしまして、残りの2,000万円を一時借入金で対応するといった、そういった考えはあったのかどうか、議論はなされたのかどうかを確認します。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        191
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-087",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "財政調整基金残高４億5,500万円の中に、さきに売却いたしましたマリンパークの売却益も含まれているかどうか確認します。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        194
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-088",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "含まれております。",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        196
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-089",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "２億2,660万円の売却が含まれておりましたが、今回の繰り出しで、また貴重な基金は減ってしまったということになるのですが、この基金の目減り分を今後どのように補充、補填していくのかどうか、この辺を教えてください。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        198
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-090",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルス感染症対応地方創生臨時交付金につきまして、国の第３次補正予算の金額、登別市に交付される額が予算編成作業時点では示されておりませんでしたので、財政調整基金を繰り入れることとさせていただきましたけれども、今後の補正予算におきまして財政調整基金の繰入れを取りやめ、地方創生臨時交付金を充当するような形で財源振替を行いたいと考えております。\n　以上です。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        200
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-091",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "若木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若木　康夫",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。今後の臨時交付金を財源振替をいたしまして、その部分に補充とそういったことでございますね。１点確認ですが、臨時交付金は特定財源だと思うのですが、この特定財源というものは財源振替ということはできるのでしょうか。ここだけ教えてください。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        202
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-092",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "井上総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "臨時交付金、様々な事業にこれまでも財源として充ててきておりますが、今回の経済対策に係る財源として臨時交付金を充当していきたいと考えてございます。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        204
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-093",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "今回経済対策ということで、経営等エール給付金、それから湯之国登別クーポンの補助金事業というのをされているのですけれども、経営等エール給付金給付事業費では市内業者に対する支援、それから湯之国登別クーポン発行事業補助金については観光客の皆さんに来て利用していただいて、そういうことによって観光事業に関わる業者の収益の改善等を狙った支援であるというふうに認識をしております。事業者へ支援することによって、ここで働く正規採用者の方の職の確保ですとか、事業主は当然何とか廃業を免れる、事業の継続をするというようなことになるのかなというふうに思います。そういうところで、そこで働かれる方の収入の確保ですとか、そういうことにはなると思うのですけれども、非正規のアルバイトやパート労働者の方までは支援の効果というものは薄いのではないかなというふうに思われます。なかなか今正規採用がなくて、独り親家庭であったり、アルバイトで生活費を捻出しようというふうに考えて来られた専門学校の学生ですとか大学生ですとか、あと年金生活をされていても年金の受給額が少ない方はアルバイト、パートなどしながら収入の足しにしているというような形。それから教育費や生活費を少しでも貯めようという考えで、扶養から外れない程度の範囲で収入を得ようとしているパート労働者、このような方はそういうところがほとんどなくなっているような状況で、非常に厳しい状況でないかなというふうに推察されるところであります。そのような方の救済ですとか支援について、どのようにお考えなのかというところをお伺いしたいと思います",
+    "text_length": 676,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        207
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-094",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "緊急経済対策第６弾につきましては、新型コロナウイルス感染症の感染拡大による影響を踏まえ、市内事業者の経営、感染対策等に対する支援を行うとともに、観光需要を喚起し本市への旅行者の早期回復を図るために実施するものであります。これらの事業は、国の臨時交付金の活用を視野に実施するものであり、決して十分な金額とは言えませんが、市内事業者の経営等を応援できればというふうに考えているものであります。議員がおっしゃいますように、雇用を守るといった観点では金額的には十分でないものかもしれませんが、この支援により間接的に従業員雇用を守ることにつながるものと考えております。現在国では、事業者が労働者に休業手当等を支払う場合、その一部を助成する雇用調整助成金の特例措置を実施しており、１日１人１万5,000円を上限とし、労働者へ支払う休業手当等のうち最大10分の10が助成されますし、アルバイトなどの雇用保険被保険者以外も対象となる緊急雇用安定助成金もございます。また、感染症の影響により休業させられた中小企業の労働者のうち、休業中に休業手当を受けることができなかった方に対して直接支給する新型コロナウイルス感染症対応休業支援金給付金といった制度もあります。市としましては、これらの国の制度の周知を図り、活用を促しているところであります。\n　以上です。",
+    "text_length": 568,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        209
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-095",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "雇用調整助成金、特に休業支援金ですとか給付金については、事業主が行うということだと思うのですが、その周知というのはパート労働者までには行っていないのではないのかなと。もっとさらに周知をするということが必要ではないかというふうに思われるのですけれども、その辺のお考えというのはどうなのか、お聞きをしたいと思います。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        211
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-096",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市としましては、これまでも市の公式ウェブサイトやメールマガジンでの周知に加え、登別商工会議所などと共に連携しながら、様々な場面において市内企業に対してこれらの制度の活用を促してきたところであります。新型コロナウイルス感染症対応休業支援金給付金につきましては、労働者が直接国に申請する制度でありますので、改めましてこれらの国の制度について、これまで以上に一層の周知を図ってまいりたいというふうに現状考えております。\n　以上です。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        213
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-097",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。直接国に請求、申請する制度というものは、 本人がされる点についてはいいと思うのですけれども、中には事業主が対応しなければいけないというものもあると思いますが、それを例えば継続的にパートで雇われている方が、事業主の方に給付の手続をしてほしいというようなことというのはなかなか勇気がいることではないかなと。その後、雇い止めだとか、あくまでもアルバイトという形であればアルバイトを切られてしまうというふうなことも考えられるのではないかな。そういう不安がよぎって、それでなかなかそういう声を上げられないという方がいるのではないか。また短期でアルバイトをされているような方は、バイトを切られた段階で雇い主との関係も疎遠になってしまうということで、雇い主の方がきちんと気を遣われて、考えて連絡を取るということもなかなかされないのではないのかなというふうに思います。支援のメニューというのは、いろいろあるというふうには聞いているのですけれども、それまではたどり着けないですとか、学生の方であればいろいろとパソコンですとかスマホなんかを駆使して、いろいろなメニューを探されるということもあると思うのですが、例えば高齢者であれば、なかなかそういうところの情報を得にくいようなところもあるというふうに考えられますし、そういうところをお知らせするというか、例えば北海道の事業だからそこは北海道の仕事でしょうということは理解できるのですが、やはり市民に対してもう少しフォローというか、そういう知るすべを、周知を図ってまいるということなのですけれども、特に全国的にもパート労働者、非正規の方がやはり一番声を上げられない、犠牲になっているというふうに聞きますので、何とかその辺のところを、こういうところに問合せしたらこういうメニューがあるよだとか、そういう周知を何とかしていただきたいというふうに考えますけれども、改めてその辺についてどうお考えかというところをお伺いしたいと思います。",
+    "text_length": 835,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        215
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-361-2-098",
+    "municipality": "noboribetsu",
+    "council_id": 361,
+    "council_name": "令和 ３年  第１回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "02月05日－01号",
+    "date": "2021-02-05",
+    "speaker": "森元観光経済部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議員おっしゃるとおりだと思います。私どももこれまで以上にＰＲというか周知方法を考えながら、例えば登別商工会議所や登別国際観光コンベンション協会と連携しながら、そういった周知方法をこれまで以上にやっていきたいというふうに、そういった部分の連携も図りながらという部分でいきたいなと思います。また、テレビのＣＭだとか新聞報道等でのこういった雇用調整交付金のいろいろな新聞記事等も載っておりますが、何分にも、一時的にも新聞を読むだけではなかなか分かりづらい部分も、また私どもの広報等において、また市のウェブサイト、また関係団体等からの連絡においてもなかなか分かりづらい部分もあるのかなというふうに思いますので、もうちょっと分かりやすい話の中で周知方法を考え、また、こういった機関にご相談くださいといった周知方法も十分に考えていきたいというふうに思います。",
+    "text_length": 373,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/361.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        217
+      ]
+    }
+  }
+]

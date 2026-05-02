@@ -1,0 +1,48 @@
+[
+  {
+    "id": "atsuma-395-1-001",
+    "municipality": "atsuma",
+    "council_id": 395,
+    "council_name": "令和 ６年  ９月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2024-09-27",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案１件であります。\n　議案第１号　厚真町野営場設置条例の一部改正について。\n　大沼野営場の指定管理者によるリニューアルオープンに伴い、使用料の改定を行うため、厚真町野営場設置条例の一部を改正しようとするものであります。\n　以上が、本日ご提案申し上げております議案の提案理由であります。\n　よろしくご審議の上、ご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 228,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/395.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-395-1-002",
+    "municipality": "atsuma",
+    "council_id": 395,
+    "council_name": "令和 ６年  ９月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2024-09-27",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書、資料により説明）",
+    "text_length": 13,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/395.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        19
+      ]
+    }
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "id": "kutchan-123-2-001",
+    "municipality": "kutchan",
+    "council_id": 123,
+    "council_name": "令和 ５年 第２回 臨時会（ ５月）",
+    "schedule_id": 2,
+    "schedule_name": "05月09日－01号",
+    "date": "2023-05-09",
+    "speaker": "事務局長（菅原康二君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。事務局長の菅原です。\n　本臨時会は、一般選挙後初めての議会です。議長が選挙されるまでの間、地方自治法第１０７条の規定により、出席議員の中で年長の議員が臨時に議長の職務を行うことになっております。\n　年長の盛多勝美議員を紹介いたします。\n　　　　　（年長議員盛多勝美君、議長席に着く）",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/kutchan/minutes/123.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "id": "kutchan-123-2-002",
+    "municipality": "kutchan",
+    "council_id": 123,
+    "council_name": "令和 ５年 第２回 臨時会（ ５月）",
+    "schedule_id": 2,
+    "schedule_name": "05月09日－01号",
+    "date": "2023-05-09",
+    "speaker": "事務局長（菅原康二君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議席番号１番木村聖子議員、２番藪中聡史議員、３番木村俊一議員、４番唐澤隆博議員、５番早川貴士議員、６番波方真如議員、７番笠原啓仁議員、８番佐藤英俊議員、９番坂井美穂議員、１０番小川不朽議員、１１番原田芳男議員、１２番古谷眞司議員、１３番門田淳議員、１４番森禎樹議員、１５番作井繁樹議員、１６番盛多勝美議員。",
+    "text_length": 153,
+    "source": {
+      "minutes_file": "data/kutchan/minutes/123.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "kutchan-123-2-003",
+    "municipality": "kutchan",
+    "council_id": 123,
+    "council_name": "令和 ５年 第２回 臨時会（ ５月）",
+    "schedule_id": 2,
+    "schedule_name": "05月09日－01号",
+    "date": "2023-05-09",
+    "speaker": "事務局長（菅原康二君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "諸報告を申し上げます。\n　まず第一に、今臨時会に町長から同意第１号の提出がありましたので、お手元に配付いたしておきました。\n　次に、今臨時会に出席を求めた者及び議案説明のため出席通知のありました者の職、氏名を一覧表にしてお手元に配付いたしておきました。\n　次に、任期満了に伴う各種附属機関の委員の推薦依頼が町長及び教育委員会教育長からありましたので、その内訳を一覧表にしてお手元に配付いたしておきました。\n　以上でございます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 249,
+    "source": {
+      "minutes_file": "data/kutchan/minutes/123.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "kutchan-123-2-004",
+    "municipality": "kutchan",
+    "council_id": 123,
+    "council_name": "令和 ５年 第２回 臨時会（ ５月）",
+    "schedule_id": 2,
+    "schedule_name": "05月09日－01号",
+    "date": "2023-05-09",
+    "speaker": "事務局長（菅原康二君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議席番号１番木村聖子議員、２番藪中聡史議員、３番木村俊一議員、４番唐澤隆博議員、５番早川貴士議員、６番波方真如議員、７番笠原啓仁議員、８番佐藤英俊議員、９番坂井美穂議員、１０番小川不朽議員、１１番原田芳男議員、１２番古谷眞司議員、１３番門田淳議員、１４番森禎樹議員、１６番盛多勝美議員、１５番作井繁樹議員。",
+    "text_length": 153,
+    "source": {
+      "minutes_file": "data/kutchan/minutes/123.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "kutchan-123-2-005",
+    "municipality": "kutchan",
+    "council_id": 123,
+    "council_name": "令和 ５年 第２回 臨時会（ ５月）",
+    "schedule_id": 2,
+    "schedule_name": "05月09日－01号",
+    "date": "2023-05-09",
+    "speaker": "副議長（坂井美穂君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "坂井美穂",
+    "member_faction": "公明党",
+    "text": "お許しをいただきましたので、一言御挨拶を申し上げます。\n　ただいま、副議長に選任をいただき、大変光栄に思いますとともに、皆様に心より厚く御礼申し上げます。\n　御推挙をいただきましたからには、作井議長を補佐し、議員の皆様のお力添えをいただきながら、円滑なる議会運営と議会のさらなる活性化に努めてまいる所存でございます。\n　どうか、皆様方には心温かい御支援と御指導を賜りますよう心からお願い申し上げ、簡単ではございますが、就任の挨拶とかえさせていただきます。どうもありがとうございました。（拍手）",
+    "text_length": 246,
+    "source": {
+      "minutes_file": "data/kutchan/minutes/123.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "kutchan-123-2-006",
+    "municipality": "kutchan",
+    "council_id": 123,
+    "council_name": "令和 ５年 第２回 臨時会（ ５月）",
+    "schedule_id": 2,
+    "schedule_name": "05月09日－01号",
+    "date": "2023-05-09",
+    "speaker": "事務局長（菅原康二君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議席番号１番木村聖子議員、２番藪中聡史議員、３番木村俊一議員、４番唐澤隆博議員、５番早川貴士議員、６番波方真如議員、７番笠原啓仁議員、８番佐藤英俊議員、９番作井繁樹議員、１０番坂井美穂議員、１１番小川不朽議員、１２番原田芳男議員、１３番古谷眞司議員、１４番門田淳議員、１５番森禎樹議員、１６番盛多勝美議員。\n　以上でございます。",
+    "text_length": 164,
+    "source": {
+      "minutes_file": "data/kutchan/minutes/123.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "kutchan-123-2-007",
+    "municipality": "kutchan",
+    "council_id": 123,
+    "council_name": "令和 ５年 第２回 臨時会（ ５月）",
+    "schedule_id": 2,
+    "schedule_name": "05月09日－01号",
+    "date": "2023-05-09",
+    "speaker": "町長（文字一志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同意第１号監査委員の選任につき同意を求めることについて。\n　監査委員に次の者を選任したいので、地方自治法第１９６条第１項の規定により、議会の同意を求める。\n　令和５年５月９日提出、倶知安町長。\n　記といたしまして、住所、倶知安町北２条東。\n　氏名は、門田淳。\n　生年月日は、昭和５１年４月６日であります。\n　なお、裏面には経歴を載せさせていただいておりますので、御参照を願いたいと思います。\n　どうぞよろしくお願いいたします。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/kutchan/minutes/123.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        95
+      ]
+    }
+  },
+  {
+    "id": "kutchan-123-2-008",
+    "municipality": "kutchan",
+    "council_id": 123,
+    "council_name": "令和 ５年 第２回 臨時会（ ５月）",
+    "schedule_id": 2,
+    "schedule_name": "05月09日－01号",
+    "date": "2023-05-09",
+    "speaker": "事務局長（菅原康二君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "各種附属機関の委員の推薦について。\n　倶知安町表彰審議委員会委員。森禎樹議員、門田淳議員、唐澤隆博議員、佐藤英俊議員、原田芳男議員、藪中聡史議員。\n　後志労働福祉センター運営委員会委員。笠原啓仁議員。\n　花園牧場運営委員会委員。唐澤隆博議員、小川不朽議員、坂井美穂議員、藪中聡史議員。\n　倶知安町企業振興審議会委員。森禎樹議員、木村俊一議員。\n　倶知安町都市計画審議会委員。早川貴士議員、佐藤英俊議員、木村俊一議員。\n　倶知安町営住宅入居者選考委員会委員。波方議員、笠原議員、原田議員。\n　奨学生選考委員会委員。門田議員、小川議員。\n　倶知安町下水道事業運営審議会委員。唐澤議員、坂井議員、木村聖子議員。\n　倶知安町地方卸売市場運営委員会委員。波方議員、早川議員、木村聖子議員。\n　倶知安町水道事業運営審議委員会委員。早川議員。\n　以上でございます。",
+    "text_length": 375,
+    "source": {
+      "minutes_file": "data/kutchan/minutes/123.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        101
+      ]
+    }
+  }
+]

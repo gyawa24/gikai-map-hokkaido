@@ -1,0 +1,278 @@
+[
+  {
+    "id": "atsuma-355-1-001",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案２件、承認１件、報告１件であります。\n　議案第１号　財産の取得について。\n　まちなか交流館厨房機器の取得について、地方自治法および厚真町議会の議決に付すべき契約等に関する条例の規定に基づき、議会の議決をいただこうとするものであります。\n　議案第２号　令和４年度厚真町一般会計補正予算（第19号）について。\n　今回の補正は、繰越明許費の補正として、新型コロナウイルス感染症緊急経済対策事業３件を追加するものであります。\n　承認第１号　専決処分の承認について。\n　令和４年度厚真町一般会計補正予算（第18号）について、地方自治法の規定により専決処分したので、同法の規定に基づき、議会の承認をいただこうとするものであります。\n　報告第１号　専決処分の報告について。\n　令和５年２月６日に表町団地２号棟において発生した漏水による物損事故について、当該物損事故に係る示談に必要な損害賠償額が、議会において指定されている専決処分事項に該当し、当該額の決定について専決処分しましたので、地方自治法第180条の規定により報告するものであります。\n　以上が、本日ご提案申し上げております、議案の提案理由であります。よろしくご審議のうえご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 583,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-002",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-003",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "（高田芳和君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "指名業者の中に町内業者が入っていないんですけれども、そのへんの理由をお聞きします。",
+    "text_length": 41,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-004",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "町内事業者につきましては、数社確認をとりましたが取り扱いをしていないということのご返事をいただきましたので、記載の会社のほうを指名をさせていただいております。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-005",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-006",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "（大捕孝吉君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この住宅は築何年になりますか。",
+    "text_length": 15,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-007",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "建設課建築住宅担当参事（森本雅彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "築について、建設は平成14年に整備しておりまして、21年ほど経過してございます。",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-008",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "（大捕孝吉君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "21年ということで多少古さもあるのかもしれませんけれども、たまたま空き家で空いているという話と、それから今説明の中では凍結防止策をとっているということなんですけれども、これからもうそういったことが、ほかの住宅も同じなんですけれども、やはりそういったことをある程度点検してきちんと防止対策をしていかないと、これから今年もそうだったんですけれども、極端に温度が下がる年もありますから、そういったことをやはり考慮していかないとこれからも大変なことになっていくのかなという気がしますので、そのへんどのように対策していくのかちょっとお聞きしたい。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-009",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "建設課建築住宅担当参事（森本雅彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回この建物の造りですとか築年数だとかを考慮いたしまして、今回１階の部屋、それから住まわれてて２階、３階、空き部屋がずっと続いていたという状態でこういう事故が起こってしまったということでございますので、そういう入居の状態だとかになりえる、なった時には凍結対策、パイプシャフトだとか凍れのおきやすいところに断熱の付加をしていって、今後こういうことのないように対応してまいりたいというふうに考えております。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-010",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-011",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "atsuma-355-1-012",
+    "municipality": "atsuma",
+    "council_id": 355,
+    "council_name": "令和 ５年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2023-03-30",
+    "speaker": "新庁舎周辺等整備調査検討特別委員長（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/355.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        61
+      ]
+    }
+  }
+]

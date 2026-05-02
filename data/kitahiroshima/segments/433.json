@@ -1,0 +1,324 @@
+[
+  {
+    "id": "kitahiroshima-433-2-001",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "副市長（水口真）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第1号　令和3年度北広島市一般会計補正予算（第10号）　につきまして、提案理由を申し上げます。\n　このたび提案いたします補正予算の総額は、1億2,740万円の増額で、これを既決予算に加えますと、予算総額は290億2,220万5,000円となるものであります。\n　補正の概要につきましては、歳出の教育費において、新型コロナウイルス感染対応地方創生臨時給付金の用途として認められているGIGAスクール構想の推進のための児童のパソコン端末などのICT環境の整備に要する経費を増額するとともに、歳入、国庫支出金の新型コロナウイルス感染症対応地方創生臨時交付金を1億190万円増額し、繰入金2,550万円により収支の均衡を図ったものであります。\n　なお、ただいま説明いたしました内容につきまして、担当部長よりご説明をさせていただきます。よろしくご審議のほどお願い申し上げます。",
+    "text_length": 385,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-002",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "教育部長（千葉直樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第1号　令和3年度北広島市一般会計補正予算（第10号）の補正内容につきましてご説明申し上げます。\n　このたび提案いたします補正は、教育費、教育総務費、教育振興費の学校ICT環境整備事業でございます。学習者用コンピューターの整備につきましては、昨年度、国のGIGAスクール構想の加速化を受け、本市の児童生徒の3分2に当たる3,002台を導入したところでありますが、新型コロナウイルス感染症等により、やむを得ず登校できない児童生徒に対し、ICTを活用した学びの保障が強く求められていることや、端末の活用状況及び学校現場の意見等を踏まえ、今年度末までに児童生徒一人1台環境を整備するものであり、予備機を含む未整備分1,420台及び端末を補完するための充電保管庫75台の購入に係る経費として、1億2,740万円を増額するものでございます。\n　以上で、提案理由の説明を終わらせていただきます。よろしくご審議のほどお願い申し上げます。",
+    "text_length": 413,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-003",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "14番議員（藤田豊）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "藤田 豊",
+    "member_faction": "公明党",
+    "text": "では、確認も含めてちょっとお聞きします。\n　今までGIGAスクールでコンピューターが入っていまして、今、部長の説明では、小学校5年生から中3までは一人1台、そうすると小学校は5、6年が一人1台で授業を行ってきたと思うのですが、その5、6年生のコンピューターを使っての授業の頻度と、それから、1年生から4年生までは、3、4人に1台でしたから、その授業の頻度なり形態はどうだったのか。\n　それから2点目は、1年生から4年生までの担任の先生方は、今後一人1台になると、また授業の方法なりコンピューターを使う頻度も違ってくるのかと思うのですが、この1年生から4年生の担任の先生等に向けて、コンピューターの研修等々は今後どうしていくのか、この2点をお聞きいたします。",
+    "text_length": 328,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-004",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "教育部長（千葉直樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご質問にお答え申し上げます。\n　授業で使用している頻度につきましては、まだ統計等は取ってございませんが、本市におきましては、現在、北広島市学校教育情報化推進計画というものを、これにつきましてはICT環境の安定的かつ計画的な整備、それと教職員のICT活用能力の向上というものを盛り込んだ計画となっています。\n　もう一つの計画は、ICT活用推進計画ということで、こちらにつきましては、児童生徒の発達段階に合わせて児童生徒がそれぞれステップアップできるような推進計画ということで、この2本立ての計画をもちまして今年度から取り組んでいるところでございまして、令和4年度から段階的にステップアップして取り組んでいくということになってございます。\n　以上でございます。",
+    "text_length": 328,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-005",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "６番議員（鶴谷聡美）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鶴谷 聡美",
+    "member_faction": "市民ネットワーク北海道",
+    "text": "2点、お伺いします。\n　今、主な活用について伺ったのですけれども、加えてお伺いしたいのが、この間の端末の現場での活用について、持ち帰り学習などに活用した例があったのかどうかをお聞きしたいと思います。\n　それともう1点が、インターネット通信環境についてなのですけれども、そもそも、このインターネットの通信工事が行き届いていない地域が、本市にもあるのではないかと思います。それで、通信が整っていない都合上、その不安定な地域にお住まいの児童生徒のいる家庭の方から、「持ち帰り学習になった場合、自分の家の、我が家ではその学習に取り組めるかどうかというのが心配なので、それがどのようになるのか。どのように対応してくれるのか。」という声が寄せられています。そのような場合の家庭への対応について、どのように検討されているのか、伺います。",
+    "text_length": 361,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-006",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "教育部長（千葉直樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　まず、端末の持ち帰りの状況でございますが、年度当初から新型コロナウイルス感染症の陽性者や濃厚接触者、不登校など、やむを得ず登校できない児童生徒に対する貸出しを可能としておりましたが、各学校における活用状況なども踏まえまして、2学期からは各学校の教育活動のために全て貸出しできるようにということで段取りをつけたところでございます。実態としまして、濃厚接触とかによりまして不登校となった児童生徒の方で、持ち帰って学校の先生とやり取りをしたという例もあるところでございます。\n　続きまして、インターネット環境でございますが、市内においてインターネットの電波状況が芳しくない地域があるということも承知しているところでありますが、もし、そういう家庭があった場合につきましては、現段階では電波が届いていないので、どうすることもできないのですけれども、場合によっては、その児童生徒に学校のほうに登校していただいて、環境の整った場所でICTを活用するということについて、今、検討しているところでございます。\n　以上であります。",
+    "text_length": 467,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-007",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "11番議員（山本博己）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "山本 博己",
+    "member_faction": "日本共産党",
+    "text": "今、世界的な半導体不足の中で、このパソコンについても納入期限がどうなるのかということと、学校のほうでは納入時期に合わせて、いろいろ教育計画というのを、つくると思うのですけれども、先生方の教育計画の策定などを含めて、今後の導入状況というのはどのように見込んでいるのか、お伺いしたいと思います。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-008",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "教育部長（千葉直樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、議員からご指摘がありましたとおり、世界的な半導体需要の逼迫のため、パソコンを含む機器の調達が潤沢に入っていない状況にございます。このことから、このたび本日提案いたしております議決をいただきました後、直ちに入札、仮契約等を行いまして、その後、第4回定例会におきまして、初日で即決をお願いしたいということを、今考えております。このことによりまして、令和3年度末、令和4年3月末までの納入が可能であると、各メーカーのほうに問い合わせて、確認をしているところでございます。\n　以上であります。",
+    "text_length": 244,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-009",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "11番議員（山本博己）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "山本 博己",
+    "member_faction": "日本共産党",
+    "text": "4月からの授業では、全部端末を使って授業を行うという形での教育計画を今進めているというように理解してよろしいのでしょうか。",
+    "text_length": 61,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-010",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "教育部長（千葉直樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "4年度からスタートするということで、来年度の教育の計画のほうを策定していくというように予定しております。\n　以上であります。",
+    "text_length": 62,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-011",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "12番議員（永井桃）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永井 桃",
+    "member_faction": "日本共産党",
+    "text": "これで全児童生徒に1台ずつ当たるということなのですけれども、特別支援学級での状況と、あと、みらい塾、確か以前はみらい塾のほうには配付されていないということでしたので、その点について伺います。",
+    "text_length": 95,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-012",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "教育部長（千葉直樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。特別支援教室につきましても一人一台配付されます。\n　また、みらい塾につきましては、9月からポケットWi-Fiを配置しまして、みらい塾の生徒も自校に配備している機器を活用することが可能であるとなったところでございます。\n　以上であります。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-013",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "12番議員（永井桃）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永井 桃",
+    "member_faction": "日本共産党",
+    "text": "そうしますと、みらい塾のほうは、環境は設備されたけれども、実際にタブレットはまだ配付されていないということ、それとも、もう一人1台みらい塾のほうも今回の補正で行き渡るということでよろしいのでしょうか。\n　あと、特別支援学級のほうなのですけれども、やっぱりちょっとなかなか使うことが難しい子どもたちがいると思うのです。その子どもたちに対しての教え方だとか、やっぱり工夫が必要だと思うのですけれども、その点について、教員のほうでどのように工夫しているのか、その辺りを把握していましたらお知らせください。",
+    "text_length": 249,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-433-2-014",
+    "municipality": "kitahiroshima",
+    "council_id": 433,
+    "council_name": "令和 ３年  第５回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "10月07日－01号",
+    "date": "2021-10-07",
+    "speaker": "教育部理事（後藤章夫）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "永井議員の質問にお答えいたします。\n　まず、みらい塾の児童生徒についてでありますが、自分の在籍学校のほうに自分のタブレットが1台ありますので、それをみらい塾で使うように持ってきまして、みらい塾でも活用できるような形で今考えているところであります。\n　それから、特別支援学級についてでありますが、特別支援学級にはその専門家がいますので、同じ学年の子どもたちと同等の使い方というのは、なかなか難しい部分もありますし、また、成果が出ない部分もありますので、その子どもたちに合った使い方というのを研究しながら、子どもたちに活用させていっていると聞いております。\n　以上であります。",
+    "text_length": 286,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/433.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        40
+      ]
+    }
+  }
+]

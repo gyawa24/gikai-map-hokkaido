@@ -1,0 +1,693 @@
+[
+  {
+    "id": "atsuma-381-1-001",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。事務局長の甫です。本臨時会は、一般選挙後、初めての議会です。議長が選出されるまでの間、地方自治法第107条の規定により、本日の出席議員の中で、年長の議員が臨時に議長の職務を行うこととなっております。\n　年長の三國和江議員をご紹介いたします。三國議員、議長席にお着きください。\n　ここで、傍聴にお越しの皆さま並びに議会中継をご覧の皆さまにお知らせいたします。\n　本日の議会は、正副議長の選出や、各種委員会、正副委員長の選出などを行うため、何度も休憩を挟むこととなりますので、あらかじめお知らせいたします。\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　（午前９時３０分）\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 341,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-002",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（当選のお祝い、町の現状と町の決意）\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 58,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-003",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "副町長（西野和博君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（町理事者、管理職職員の紹介）",
+    "text_length": 15,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-004",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "副議長（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉岡茂樹",
+    "member_faction": "",
+    "text": "（副議長就任のあいさつ）\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-005",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議席番号と議員名を申し上げます。こちらから向かって右側から\n　１番　澤口議員、２番　寺坂議員、３番　折坂議員、４番　菅原議員、\n　５番　秋永議員、６番　橋本議員、７番　伊藤議員、８番　高田議員、\n　９番　三國議員、10番　吉岡副議長、11番　渡部議長。\n　以上でございます。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-006",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "各常任委員会の委員長及び副委員長の互選の結果を報告いたします。総務文教常任委員会、委員長　伊藤富志夫委員、副委員長　澤口千里委員。\n　次に、産業建設常任委員会、委員長　橋本豊委員、副委員長　折坂泰宏委員。\n　以上でございます。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-007",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "副議長（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉岡茂樹",
+    "member_faction": "",
+    "text": "ただいま総務文教常任委員に選任された議長から、常任委員を辞任したい旨の申し出があります。\n　議長は地方自治法第105条の規定により、いずれの委員会にも出席して発言することが許されております。また、その職務の公正・中立性を考慮するとき、１つの委員会に委員として所属することは適当でないことから、議長については、常任委員の辞任が認められております。\n　お諮りいたします。\n　議長の常任委員の辞任について、申し出のとおり同意することにご異議ありませんか。\n　　　　　（「異議なし」と呼ぶ者あり）\n異議なしと認めます。\n　したがって、そのように決定いたします。\n　議長の入場を許可し、議長と交代いたします。\n　ここで、暫時休憩といたします。",
+    "text_length": 316,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        86,
+        87
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-008",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議会運営委員会の委員長及び副委員長の互選の結果について報告いたします。\n　委員長　三國和江委員、副委員長　伊藤富志夫委員。\n　以上でございます。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        99
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-009",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-010",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議会広報特別委員会委員の委員長及び副委員長の互選の結果を報告いたします。\n　議会広報特別委員会、委員長　秋永徹委員、副委員長　寺坂康生委員、以上でございます。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        118
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-011",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        122
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-012",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北海道胆振東部地震復興特別委員会の委員長及び副委員長の互選の結果を報告いたします。\n　北海道胆振東部地震復興特別委員会、委員長　伊藤富志夫委員、副委員長　秋永徹委員、以上でございます。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-013",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        137
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-014",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新庁舎周辺等整備調査検討特別委員会の委員長及び副委員長の互選の結果を報告いたします。\n　新庁舎周辺等整備調査検討特別委員会、委員長　吉岡茂樹委員、副委員長　高田芳和委員、以上でございます。",
+    "text_length": 94,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        148
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-015",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和５年第３回厚真町議会臨時会にあたり、こども園つみきにおける新型コロナウイルスの感染状況についてご報告いたします。\n　４月20日に園児１人の陽性が確認された以降、５月２日までの間に園児21人、職員３人の感染が確認されました。このたびの感染拡大における町の対応については、これまでと同様に、園内での濃厚接触が疑われる園児及び職員に対して、抗原定性検査キットを配布し、自己検査を行っていただき、陽性でないことを確認した上で登園していただく対応をとっております。また、職員における消毒や換気等の基本的な感染予防についても徹底を図っております。保育所等は、このような感染拡大状況下においても、社会機能の維持のために事業の継続が求められている事業者として位置づけられているところであり、町としても、必要な方に対する保育が継続して実施されるよう、感染予防に最大限配慮しつつ原則開所することとしています。\n　同月８日には、最後の感染者が療養期間を終え、現在宮の森こども園を含め、園児、職員ともに感染者はいないことを確認しています。このたび罹患された園児とご家族の皆さまには、あらためてお見舞いを申し上げます。\n　こども園における新型コロナウイルス感染拡大防止に向けた取組については、同感染症が５月８日に感染症法上の５類感染症へ移行したことを受け、こども園つみきにおける感染拡大の終息が確認できた時点で一部変更しています。\n　主な変更内容については、園内で陽性者が発生した場合における濃厚接触が疑われる園児のリストアップと、当該園児への登園前の抗原検査キットの配布による任意検査は行わないこととしています。また、園児が感染した場合は、発症日を０日として５日間かつ症状軽快後24時間程度経過するまで登園自粛とし、園児の同居家族が感染した場合も可能な限り登園を控えていただくようご協力をお願いしています。なお今後も、園内の換気や手指消毒の励行等の基本的な感染防止対策は継続いたします。保護者に対しては、園内の感染状況について速やかに情報提供を行うとともに、お子さんの健康観察と、発熱・咳などの風邪症状がある場合は登園を控えていただくようご協力をお願いし、園における感染リスク軽減にご理解とご協力を求めてまいります。\n　以上ご報告申し上げます。",
+    "text_length": 962,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        173
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-016",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、同意１件、議案３件、承認１件、報告１件であります。\n　同意第１号　厚真町監査委員の選任について。\n　厚真町監査委員に、高田芳和氏を選任することについて、議会の同意をいただこうとするものであります。\n　議案第１号　厚真町税条例の一部改正について。\n　地方税法の一部改正に伴い厚真町税条例の一部を改正しようとするものであります。\n　議案第２号　ダム湖眺望広場整備工事請負契約の締結について。\n　令和５年４月19日に実施した入札の結果に基づき、ダム湖眺望広場整備工事請負契約を締結することについて、地方自治法及び厚真町議会の議決に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第３号　令和５年度厚真町一般会計補正予算（第１号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ422万8,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ96億6,422万8,000円とするものであります。\n　歳出における補正の内容は、民生費における、子育て世代生活支援特別給付金支給事業などの追加であります。\n　この補正の財源は、全額特定財源の国道支出金で、422万8,000円であります。\n　承認第１号専決処分の承認について。\n　厚真町課設置条例の一部改正について、地方自治法の規定により専決処分したので同法の規定に基づき、議会の承認をいただこうとするものであります。\n　報告第１号専決処分の報告について。\n　令和４年11月15日に発生した人身事故について、当該事故に係る損害賠償額が議会において指定されている専決処分事項に該当し当該額の決定について、専決処分しましたので地方自治法の規定により報告するものであります。\n　以上が、本日、ご提案申し上げております議案の提案理由であります。よろしくご審議の上、ご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 847,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        178
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-017",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案書別冊２の３ページをお開きください。\n　同意第１号、厚真町監査委員の選任について。\n　厚真町監査委員に次のものを選任することについて、地方自治法第196条第１項の規定に基づき厚真町議会の同意を求めるものでございます。４ページをお開きください。厚真町新町470番地、高田芳和氏であります。生年月日は記載のとおりでございます。\n　同氏について、議会のご推薦をいただきましたので、監査委員として提案をさせていただきます。ご承認賜りますようお願い申し上げまして、説明とさせていただきます。",
+    "text_length": 242,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        182
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-018",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "住民課税務町民生活担当参事（阿部雄史君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        197
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-019",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        204
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-020",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "総務課財政参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        211
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-021",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        213
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-022",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "（高田議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高田芳和",
+    "member_faction": "",
+    "text": "支給要件対象見込児童数で、家計急変者が養育する対象児童はどのように判定をされるのでしょうか。",
+    "text_length": 46,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        215
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-023",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず家計急変の方ですが、想定してございます。令和５年度６月１日付けで、住民税の決定通知が出されます。その決定通知の内容のほうを税務グループに照会をかけまして、把握してその方については家計急変の対象になるというふうに国のほうから言われておりますので、この方は積極的に我々のほうで確認をしてまいりたいというふうに考えております。\n　どうしても確認できない方、具体的には１月１日以降に移住してきた方、もしくは１月以降に家計が急変された方、この方につきましては、こちらのほうで確認ができないものですから、できれば自発的に申請をしていただくよう周知を徹底しながら、関係書類を出していただいて確認をしてまいりたいと考えてございます。\n　以上です。",
+    "text_length": 317,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        217
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-024",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "（高田議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高田芳和",
+    "member_faction": "",
+    "text": "住民税が確定するのが６月、その時に急変者が把握できるということなんですけれども、把握した人に対しては個々に通知されるのでしょうか。",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        219
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-025",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和５年度の住民税非課税の方のうち、令和４年度の住民税も非課税の方については、既にプッシュ型の支給が終えているということでございます。その人を除いた令和５年度分の住民税非課税の方につきましては、こちらから能動的に案内通知を送付させていただきまして、しっかり申請をしていただくよう働きかけてまいりたいと考えております。",
+    "text_length": 158,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        220
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-026",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        227
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-027",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        234
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-028",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "（高田議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高田芳和",
+    "member_faction": "",
+    "text": "確認なんですけれども指定管理での事故で、こういったケースでも町の責任になるのでしょうか。",
+    "text_length": 44,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        236
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-029",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "総務課長（佐藤大輔君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この当時、指定管理者との協定の中では、車両事故に関する損害は町のほうで持つという協定になってございました。ただ新年度になりまして、指定管理者が変わりました。現協定の中では、車両事故。車両の保険自体を指定管理者のほうで掛けるというふうになってございます。",
+    "text_length": 126,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        238
+      ]
+    }
+  },
+  {
+    "id": "atsuma-381-1-030",
+    "municipality": "atsuma",
+    "council_id": 381,
+    "council_name": "令和 ５年  ５月 臨時会（１）",
+    "schedule_id": 1,
+    "schedule_name": "05月12日－01号",
+    "date": "2023-05-12",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "所管事務調査の申し出内容について説明いたします。議会運営委員会から事務調査として、次期議会の会期日程など議会運営に関する事項についてと、議長の諮問に関する事項についての２件でございます。以上でございます。",
+    "text_length": 102,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/381.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        243
+      ]
+    }
+  }
+]

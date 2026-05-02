@@ -1,0 +1,646 @@
+[
+  {
+    "id": "kitahiroshima-408-2-001",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "市長（上野正三）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和３年第１回臨時会の開会に当たり、行政報告を申し上げます。\n　新型コロナウイルス感染症に係るワクチン接種についてでありますが、国では予防接種法を改正し、接種費用の全額を国が負担することや実施主体を市町村とすることとしたところであり、本市におきましては、速やかな接種への対応を図るため、準備に着手をしたところであります。現在、実施方法等について北広島医師会と協議を行っており、接種場所については各医療機関での接種に加え、公共施設等の集団接種の実施を検討しているところであり、特定の医療機関に集中したり接種会場が密になることがないよう、コールセンターを設置した上で予約制とする予定としているところであります。なお、新型コロナウイルス感染症に係るワクチン接種を円滑に実施するため、２月１日付で保健福祉部に担当参事を配置するなど組織体制の強化を図るとともに、本臨時会において、ワクチン接種に必要な経費の補正予算を提案させていただいたところであります。\n　以上申し上げ、行政報告といたします。\n────────────────────────────────────────────────────",
+    "text_length": 495,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-002",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "副市長（水口真）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号　令和２年度北広島市一般会計補正予算（第12号）につきまして、提案理由を申し上げます。\n　このたび提案いたします補正予算の総額は３億3,828万6,000円の増額で、これを既決予算に加えますと、予算総額は365億7,447万3,000円となるものであります。\n　補正の概要につきましては、歳出の衛生費において、新型コロナウイルスワクチンの接種経費及び接種体制の構築に係る経費を増額するとともに、歳入において国庫支出金の新型コロナウイルスワクチン接種体制確保事業費補助金及び接種対策費補助金を３億3,828万6,000円増額し、収支の均衡を図ったものであります。また、当該接種事業について、繰越明許費を設定するものであります。\n　なお、ただいま説明いたしました内容につきまして、保健福祉部長からご説明をさせていただきます。よろしくご審議のほどお願い申し上げます。",
+    "text_length": 385,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-003",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号　令和２年度北広島市一般会計補正予算（第12号）の補正内容につきまして、配付しております「参考資料１」に沿って説明を申し上げます。\n　新型コロナウイルスのワクチン接種につきましては、国におきまして令和２年12月に予防接種法を改正し、接種費用の全額を国が負担することや実施主体を市町村とすることとしたところであり、市町村の主な役割としては、医療機関との委託契約、接種費用の支払い、接種場所の確保、住民への接種勧奨などであります。\n　接種方法等の詳細につきましては、現在北広島医師会と協議を行っておりますが、特定の医療機関に集中し、通常の診療に支障が生じることがないよう、市がコールセンターを設置した上で予約制とすることや、通常の診療時間内に医療機関に行くことが難しい方も相当数いらっしゃるであろうことから、日曜日等に公共施設におきまして、集団接種の実施を検討しているところであります。\n　接種の勧奨につきましては、広報やホームページで周知を行うほか、全市民へ個別に無料クーポン券を送付する予定としております。スケジュールにつきましては、国が示しております優先順位の考え方に基づき、まずは高齢者、次に基礎疾患を有する方などとされており、市におきましては国がワクチンを承認した場合、速やかに高齢者への接種が可能となるよう準備に着手したところであり、接種に係る費用として２億6,807万2,000円、その他の事務経費等として7,021万4,000円、合計３億3,828万6,000円を増額するものであり、全額が補助金として交付されることから、歳入におきましても同額の増額を行うものであります。なお、予算の執行が令和３年度に及ぶことから、繰越明許費を設定するものであります。\n　以上で、提案理由の説明を終わらせていただきます。よろしくご審議のほどお願い申し上げます。",
+    "text_length": 783,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-004",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "11番議員（山本博己）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "山本 博己",
+    "member_faction": "日本共産党",
+    "text": "まず、ワクチンの接種のスケジュールが示されているのですけれども、これについては５月とか６月とかいろいろな情報が出されているのですけれども、実際にこのワクチンの接種の見込といった辺りですとか、あとコールセンターの開設、予約の開始ですとか、その辺りのスケジュールはどのように今見込まれているのかお聞きしたいと思います。\n　２点目は、このワクチンの接種、こういうスケジュールもそうなのですけれども、副反応の問題ですとかいろいろな情報が交錯しているわけで、市民に対して丁寧な情報というのは必要だと思います。それでコールセンターを設置するということなのですけれども、市として市民に対するそうしたワクチン接種に対する広報については、どういう取組をされる予定なのかお聞きしたいと思います。",
+    "text_length": 337,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-005",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　ワクチン接種に関しましては、12月18日に開催された国の説明会においてスケジュールが示されたところでありますが、２月下旬に医療従事者を優先的に接種を開始し、その後３月下旬に一般市民、高齢者を優先的にということでございますが、一般市民を対象とした接種を開始できるように３月上旬にはクーポン券を発送できるようにということのスケジュールが示されたところでありますので、国から示された行程を円滑に実施できるよう準備を進めているところであり、コールセンターにつきましても３月上旬に開設できるように進めております。\n　また、副反応等につきましては、ワクチンにつきましては体内に異物を投与するため、何らかの副反応が起こる可能性を皆無にすることはできないとされているので、副反応等を懸念して接種をしないという人も一定程度いらっしゃるものと想定しております。今後、国から副反応等に関する情報が示されてくると思いますので、市民の皆様におかれましては、リスクを承知していただいた上で判断していただく必要があると考えますので、副反応等に関しても丁寧な周知や説明を行う必要があるものと考えてございます。以上です。",
+    "text_length": 505,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-006",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "11番議員（山本博己）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "山本 博己",
+    "member_faction": "日本共産党",
+    "text": "そうしますと、今、報道などで５月とか６月とかそういうような報道をされていますけれども、今のところ３月下旬から一般市民に対してはワクチンの接種が可能になるという見込で考えてよろしいと理解していいのかどうか、それで、遅れた場合についての周知などの考え方についてもお聞かせ願いたいと思います。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-007",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　国から示されたスケジュールは、３月下旬にクーポン券を発送し、３月下旬に一般市民ということでございますが、この一般市民は高齢者を優先的にということでございまして、その後順次優先順位を下げていくというような形で考えているという説明を受けたところであります。ワクチン供給等のスケジュールが今後詳細に示される中で、住民へ周知を図っていかなければならないものと考えてございます。以上です。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-008",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "２番議員（藤田豊）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "藤田 豊",
+    "member_faction": "公明党",
+    "text": "それでは簡潔に４点ほど、確認の意味も含めてお聞きします。\n　まず１点目、各医療機関の個別接種、それから公共施設の集団接種、両方を想定していますけれども、比率は市としてどのように考えているのか。いわゆる医療機関で十分受け入れていただけており、足りない部分を公共施設なのか、その辺の割合はどのようになるのか、今現在での状況をちょっとお知らせください。\n　２点目、コールセンターに関しては土日も対応するのかどうか、平日だけなのか、ここはどのように想定しているのかお聞きします。\n　それから３点目、コールセンターに関連しますが、障がい者等の方でコールセンターに電話することができない方、こういう方もいらっしゃるかと思うのですが、そういう方への対応はどのように考えているのか。\n　４点目、在宅で自宅療養で病気等で療養している方もいらっしゃるかと思いますが、そのような方でなかなか接種会場、接種医療機関に行くのが難しい方に対して、いわゆるかかりつけ医等がいる場合、自宅でのかかりつけ医による接種というのは可能なのかどうか、この４点お聞きいたします。",
+    "text_length": 468,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-009",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　まず、個別接種と集団接種の比率はということでございますけれども、現在市内の各医療機関にお願いし、意向を調査しているところであり、現段階では一定程度の割合で医療機関での個別接種が可能であると考えてございますが、正確な比率については今の段階では申し上げられない状況でございます。\n　２点目、コールセンターについてでございますが、現在のところ平日のみの運用で土日はお休みをいただく予定で考えてございます。\n　３点目、障がい者等におかれまして電話等ができない方ということでございますが、高齢者支援センターや障害者支援センターの関係機関のご協力もいただきながら、対応してまいりたいと考えてございます。\n　４点目、在宅でなかなか会場まで行けない方ということでございますが、訪問診療、かかりつけ医等の対応について、今、医師会にもお願いしているという状況でございます。以上です。",
+    "text_length": 393,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-010",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "２番議員（藤田豊）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "藤田 豊",
+    "member_faction": "公明党",
+    "text": "では、再質問で１点だけ。先ほど山本議員からもちょっと質問が出ましたが、副反応、副作用の関係、これはちょっと心配な市民の方も当然いらっしゃると思うのですが、打とうと思うための相談体制として、これコールセンターでその副反応、副作用の質問というのをして、答えられるような体制になっているのか、そういう話はやはり市のしかるべき部署が対応するということになるのか、その辺りの今後の相談の窓口はどうなるのかお聞きします。",
+    "text_length": 204,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-011",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　コールセンターは基本的に予約の電話を受け付けていただくという予定としておりますが、その中でそういったご心配の声も当然届くと思いますので、担当において適切に対応してまいりたいと考えてございます。以上です。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-012",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "15番議員（小田島雅博）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小田島 雅博",
+    "member_faction": "民主市民連合",
+    "text": "私からも何点かご質問させていただきたいと思います。先般、会派にこの関係の予算についてご説明いただいて、一通りはお聞きしたのですけれども、ちょっと再確認させていただきたいと思うのです。\n　主にこのワクチンというのは、ファイザー製のワクチンを使うということでございますけれども、新聞報道とかテレビの報道等で、このワクチンというのはマイナス75度で保存するということですけれども、北広島市の場合はその保存が一括管理をしていくものなのかどうかということと、ワクチンの解凍後、溶かした後の使用期限というのが限られていると思うのですけれども、その後ワクチンを使用期限の中に使うワンパックを解凍するということになりますと、この解凍したワクチンを接種するのが何人程度の接種になるかということになると、先ほども質問の中にありましたけれども、集団接種、それから個々の病院での接種、今医師会の報告と相談されていると思いますけれども、それを小分けにしてどのように配置をするのか、そしてロスを少なくするためにどうするのかということが必要だと思うのです。ですから、その辺りの考え方、それと一日のワクチンの接種は大体全市的に何人程度を振り分けていくのか、その中身についてお聞きしたいと思います。\n　それと、副反応の関係が出てきています。大変重要なことだと思います。何万人かにやって、数人というのはテレビ報道等で言われておりますけれども、実際北広島市で接種をした後にこういう副反応がありましたよというのは、やはり常時私どもとしては心配事がたくさんあって、全てが皆さんすぐワクチン接種したいというようにはなっていない状況があると思うのです。ためらっている部分もたくさん報道等でもありますので、それで全ての副反応報告情報は、市の場合はどこに一元化をされて、その情報をどのように市民の皆さんに公開するのか、私は公開すべきだと思いますけれども、その辺りの考え方についてお伺いしたいと思います。以上です。",
+    "text_length": 831,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-013",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　まずワクチンにつきましては、マイナス75度で冷凍された状態で保存をしなければいけないので、市においてディープフリーザーという冷凍庫を配置、保管をしていきたいと考えてございまして、その後、解凍したワクチンを各医療機関に配付することで検討をしてございます。解凍後におきましては、使用期限が５日間と限定されておりますので、５日間のうちに接種が可能な人数分を各医療機関に配付して、ロスを一つでも少なくするように考えていきたいと考えてございます。\n　それから、１日当たり何人ぐらいの接種をというお話でしたが、これも各医療機関において何人ぐらい接種していただけるかということを、医療機関と調整中でございますので、現段階では申し上げられる数値ではございませんが、平日各医療機関で接種していただいて、さらに足りない分を土日の集団接種で接種していこうと考えてございます。\n　それから、副反応の発生でためらう方もいらっしゃるというお話でございましたが、市内においてどういった副反応が発生するかというのは、現時点では何とも申し上げられないという状況ではございますが、決して隠すことなく、こういったことがあったという情報は、公開しなければならないと考えてございます。\n　以上です。",
+    "text_length": 540,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-014",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "15番議員（小田島雅博）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小田島 雅博",
+    "member_faction": "民主市民連合",
+    "text": "ありがとうございました。\n　一点だけ確認させていただきたいと思うのです。これもテレビ報道ですけれども、ワンパッケージ、ファイザーの場合、約1,170回分のワクチンだと言われています。ですから、これを５日間で使い切る、予約の状況もありますけれども、この小分けにするというのは非常に大変かという気はするのです。それが効果的にできるような方法をぜひしっかりと協議されて実施されることを求めておきたいと思います。\n　以上です。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-015",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "18番議員（佐々木百合香）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐々木 百合香",
+    "member_faction": "市民ネットワーク北海道",
+    "text": "私からは接種の対象者について伺います。\n　市内でもコロナに既に感染されて治ったという方も回復された方もいらっしゃいますが、そういった既にかかった方も対象となるのか伺います。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-016",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健推進課長（高嶋真一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "佐々木議員の質問にお答え申し上げます。\n　ワクチンの接種に係る注意事項や予診に係ることなどにつきましては、ワクチンの承認のタイミングに併せまして、国から詳細な情報が提供される予定でございますので、国からの情報を注視いたしまして市民に対しましても周知をしてまいりたいと考えおります。\n　以上です。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-017",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "18番議員（佐々木百合香）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐々木 百合香",
+    "member_faction": "市民ネットワーク北海道",
+    "text": "そういった情報がよく分かるような広報、クーポンの発送のときなどにもきっと文書が入ると思うのですけれども、よろしくお願いいたします。",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-018",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "12番議員（永井桃）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永井 桃",
+    "member_faction": "日本共産党",
+    "text": "コールセンターについて伺うのですけれども、ちょっと藤田議員の質問とかぶるところあるかもしれませんが、会計年度任用職員３人を新しく雇用して、そのほか参事などを設けて対応するということですけれども、例えば、Q&Aだとかマニュアル的なものは示されているのでしょうか。国のほうで示されているものと、あと市独自の内容としてどのように検討しているのか伺います。\n　あと障がい者への対応として、各関係機関と協力してやっていくということですけれども、例えば聴覚障がいをお持ちの方への対応として、このコールセンターにリモートで受付できるような形で、手話通訳者を設置するなど、そこまで詳しい内容は考えられているのでしょうか、伺います。",
+    "text_length": 307,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-019",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　まず、Q&Aにつきましては、現時点におきましても国から一定程度のものは示されているところでございますが、さらに詳細なものについて、今後示されると伺っているところであります。また、市におきましても独自のQ&Aにつきまして、マニュアルも含めて作成をしなければいけないと考えております。\n　２点目、聴覚障がい者の方への対応という部分につきましては、コールセンターに手話通訳者を配置するというのは難しいと考えておりますので、福祉課に配置しています手話通訳者の活用を考えていきたいと思います。以上です。",
+    "text_length": 258,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-020",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "12番議員（永井桃）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永井 桃",
+    "member_faction": "日本共産党",
+    "text": "市独自のマニュアルというのが、このスケジュールの中では２月、３月、今年度中に策定される予定でしょうか。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-021",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　２月末までには完成させたいと考えております。以上です。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-022",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "５番議員（坂本覚）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "坂本 覚",
+    "member_faction": "きたひろ五和会",
+    "text": "副反応のことについてなのですけれども、先ほど三上部長のほうからもお話があったように、どのような反応が出るのか、やはりまだ想像もできないことなのですけれども、それに対して対応できる医療機関というのは確保しているのか、それともどこの病院でもいいのか、指定される病院を設けるのか、その辺りはどうなっていますか。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-023",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　各医療機関におきまして、接種した場合におきまして接種後の体調を観察するために、医療機関において15分から30分程度留まっていただき、その中でもし副反応が出た場合につきましては、その医療機関で対応していただく、集団接種の会場におきましても同様に30分程度留まっていただくことを想定してございまして、その会場に医師がおりますので、その方に対応していただくことになろうかと思いますが、やはり数日おいてからということもあるかと思いますので、そういった場合には市に連絡をいただいて、適切な対応を図らなければいけないと考えております。以上です。",
+    "text_length": 278,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-024",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "５番議員（坂本覚）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "坂本 覚",
+    "member_faction": "きたひろ五和会",
+    "text": "副反応が出た時は、病院等にまず行かないで、市に連絡すればいいのですね。それは土日関係なく対応できるような状況がつくってあるのかと、例えば、家族全員で一緒に受けて、家族全員が何か出た時とかというのも、そこはもう動けないと思うのです。家族で時間や日にちをずらして打つのか、それともみんな一緒に行って、そういう対応がちゃんとできるのかという事がすごく心配なのですけれども、その辺りの対応というのはどのように考えていますか。",
+    "text_length": 208,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-025",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　詳細につきましては、今後さらに検討を進めてまいりたいと考えます。以上です。",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-026",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "17番議員（鶴谷聡美）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鶴谷 聡美",
+    "member_faction": "市民ネットワーク北海道",
+    "text": "私のほうからは、本日配付の資料には載っていないのですけれども、接種後の副反応などの健康被害のことはこれまでもいろいろな意見や質問がされていますが、この被害の対応について、従来の予防接種法に基づく救済の手続など法律で定められたものがあるかと思うのですが、それに準じ、同様の扱いとなるという理解で良いのかどうか、まず確認いたします。",
+    "text_length": 164,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-027",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "保健福祉部長（三上勤也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。\n　議員のおっしゃるとおり、予防接種法に基づく従来の救済措置が講じられることになります。以上です。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "kitahiroshima-408-2-028",
+    "municipality": "kitahiroshima",
+    "council_id": 408,
+    "council_name": "令和 ３年  第１回 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月26日－01号",
+    "date": "2021-01-26",
+    "speaker": "17番議員（鶴谷聡美）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鶴谷 聡美",
+    "member_faction": "市民ネットワーク北海道",
+    "text": "分かりました。\n　それで再質問なのですけれども、接種が始まった後、本当にどのような状況になるかは未知な部分もあると思うのですけれども、症状の大きい小さい、いろいろ起きた場合の申請については、やはり医療機関の認定というのが必要になって、それがもらえた段階で初めて申請になるというように法律のほうの規定などで掲載されています。それで、すごく時間が掛かる申請手続になるかと思いますので、その対応期間の間、健康被害が起きた市民にとっては、最寄りの行政機関が頼りの窓口になると私は考えますので、丁寧な対応ができる体制づくりを要望したいと思います。これは申し上げておきます。よろしくお願いします。",
+    "text_length": 292,
+    "source": {
+      "minutes_file": "data/kitahiroshima/minutes/408.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        67
+      ]
+    }
+  }
+]

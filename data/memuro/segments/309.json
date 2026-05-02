@@ -1,0 +1,255 @@
+[
+  {
+    "id": "memuro-309-2-001",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "政策推進課長（有澤勝昭）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第18号について御説明いたします。\n　歳出から御説明しますので、７ページをお開き願います。\n　１款１項１目議会費の事務事業、議会運営活動事業の８節旅費、細節２常任委員会費用弁償54万6,000円から細節９職員旅費７万8,000円の追加は、厚生文教常任委員会の先進地事務調査に係る経費を追加するものであります。\n　２款５項１目統計調査総務費の事務事業、統計調査事務の１節報酬、細節１国勢調査指導員・調査員報酬214万2,000円の追加は、国勢調査実施に伴い、当初予算編成時には参酌できなかった調査員・指導員報酬の単価が国から示されたことから、単価上昇分を追加するものであります。\n　12節委託料、細節22国勢調査員業務委託料４万9,000円の追加は、調査区の一つである公立芽室病院における調査員の業務について、法人への委託が認められていることから、業務委託として実施するための経費を追加するものであります。\n　13節使用料及び賃借料、細節12電話借上料５万7,000円の追加は、国勢調査に係る調査員や町民からの問合せに対応するため、携帯電話２台の借り上げに係る経費を追加するものであります。\n　なお、特定財源として、国勢調査道委託金254万7,000円を追加するものであります。\n　８ページにお進み願います。\n　６款１項１目商業振興費の事務事業、町中小企業融資事業の22節償還金利子及び割引料、細節１過年度分保証料等補給費国庫補助金返還金15万6,000円の追加は、新型コロナウイルス感染症対応地方創生臨時交付金を財源として、過年度に保証料の全額補給を行った融資について繰上償還がされたことから、当該交付金の返還に係る経費を追加するものであります。\n　13款１項１目予備費56万1,000円の減額は、収支調整を図るものであります。\n　２ページにお戻り願います。\n　第１表歳入歳出予算補正でありますが、２ページ、３ページにかけて、歳入歳出ともに254万7,000円を追加し、歳入歳出予算の総額を144億3,946万4,000円とするものであります。\n　以上で説明を終わります。",
+    "text_length": 888,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-002",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "商工労政課長（西田昌樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第19号令和７年度芽室町地域開発特別会計補正予算（第１号）について御説明いたします。\n　まず、７ページ、歳出につきましてです。\n　７ページ、２款１項１目東工業団地内施設管理費の事務事業、東工業団地内公園維持管理事業14節、細節１東工北二公園パーゴラ撤去工事において、146万3,000円を計上しています。\n　同公園内の木製パーゴラが、経年劣化により屋根や柱の腐敗が進行し、屋根部分の木材落下などが発生し、倒壊の危険性があるため、撤去工事を行うものです。\n　続いて、歳入について御説明いたしますので、６ページにお戻りください。\n　６ページ、３款１項１目工業団地事業基金繰入金の１節、細節１工業団地事業基金繰入金において、歳出と同額の146万3,000円を計上するものです。\n　２ページにお戻りください。\n　２ページ、第１表歳入歳出予算補正の最下段の歳入合計欄及び３ページ目を御覧ください。\n　歳出、最下段の歳出合計欄に記載のとおり、歳入歳出ともに146万3,000円を追加し、補正後の予算額を2,932万2,000円にしようとするものであります。\n　以上で説明を終わります。",
+    "text_length": 488,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-003",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "委員（常通直人）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常通 直人",
+    "member_faction": "",
+    "text": "７ページのパーゴラ撤去工事、このことについては、腐食ということで、危険ということかなというふうに思いますけれども、撤去後、再度違う新たなものを設置しようとするものなのか、それとも撤去後については、現状維持で使われようとするのか。撤去は分かりますけれども、その後の考え方についてお伺いしたいなというふうに思います。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-004",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "商工労政課長（西田昌樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後についてなんですけれども、現状では利用者もいらっしゃるという部分であったりとか、東工業団地の特性で、工業団地内誘致をした中で、環境整備等の意味合いも強いことですから、今後においては、今現段階では何をするというのは確定ではないですけれども、関係団体等、それから現状を確認しながら、今後については検討していくというような段階であります。\n　以上です。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-005",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "委員（常通直人）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "常通 直人",
+    "member_faction": "",
+    "text": "分かりました。\n　公園ということで、団地内だけではなくて、いろんな町民の方も使われる施設でございますので、しっかりと安全管理の上、そういった利用者、また団地内等の協議も含めて、しっかりと整備をしていただきたいと思いますけれども、再度その辺について、お伺いしたいなというふうに思います。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-006",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "商工労政課長（西田昌樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今、議員おっしゃったとおり、全体的に総合的に鑑みながら、検討を進めていきたいというふうに考えています。\n　以上です。",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-007",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "委員（西尾一則）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "西尾 一則",
+    "member_faction": "",
+    "text": "同じような質問になるのかなという気がするんですが、この撤去、150万ぐらいかけて撤去するのがどうなのか、それとも修繕とか補修というのは考えなかったのか、そこらについてお伺いしたいと思います。",
+    "text_length": 95,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-008",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "商工労政課長（西田昌樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n　私たちも最小限の補修というところで、数年前にも一旦、一度やらせてもらっているんですけれども、そこができないのかというところで、専門家の判断を仰がせていただいたんですけれども、今回見つかった部分だけでなく、ほかのところもたたいたりとかしながら検査した結果、同様に中がかなり腐敗しているということで、目視では分からない部分だったんですけれども、これは続くだろうというような判断でしたので、全体的に今回、取壊しさせていただくというような判断をさせていただきました。\n　以上です。",
+    "text_length": 247,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-009",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "委員（西尾一則）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "西尾 一則",
+    "member_faction": "",
+    "text": "分かりました。\n　そこで、あのパーゴラを撤去すると、あそこの公園というのは、芝生の上に噴水がただ出るような、何か公園らしくなくなるような感じもしないでも、撤去してすぐ何か建てるということなんだろうけれども、あのパーゴラ、結構、公園の意味、すごく大事じゃないかなという感じがして、撤去するならすぐ建て替えたほうがいいんじゃないかなという感じがしておりますので、見に行ったときにはそういう感じがしました。\n　それから、１か所か２か所ぐらい、上の崩れているのは確かに分かったので、でも直せないのかな、でもたたいてみて、専門家が駄目だというんであれば、仕方がないのかなと思います。\n　そういった意味では、ぜひ、結構イベントではテント代わりに使ったりしているのかなという気がしておりますので、ぜひすぐ建て替えたほうがいいんじゃないかと、そう思います。\n　以上です。",
+    "text_length": 377,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-010",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "委員（西尾一則）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "西尾 一則",
+    "member_faction": "",
+    "text": "はい、それでよろしいです。",
+    "text_length": 13,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "memuro-309-2-011",
+    "municipality": "memuro",
+    "council_id": 309,
+    "council_name": "令和 ７年 第３回 予算決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "07月29日－03号",
+    "date": "2025-07-29",
+    "speaker": "商工労政課長（西田昌樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "改築等、新しいものをまた建てるということになりますと、今の単価でいきますと、相当額かかるというふうに試算されています。ですので、全体的な費用対効果を考えながら、また工期も、これから予算立てて、それから補正予算に上げて工事となりますと、冬になってしまいますので、そこは今年度は非常に難しいかなと思っています。\n　それよりも、その前に検討とか、関係団体との協議もしなきゃなりませんので、新年度予算に向けて協議していきたいなと、検討していきたいなというふうに考えています。\n　以上です。",
+    "text_length": 240,
+    "source": {
+      "minutes_file": "data/memuro/minutes/309.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  }
+]

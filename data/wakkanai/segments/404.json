@@ -1,0 +1,3245 @@
+[
+  {
+    "id": "wakkanai-404-1-001",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月13日－01号",
+    "date": "2021-09-13",
+    "speaker": "議会事務局長（中川徹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：御報告申し上げます。\n　田森和文委員は、所用のため欠席する旨の届出がありました。\n　以上でございます。",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-002",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "議会事務局長（中川徹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：御報告申し上げます。\n　本日配付の資料といたしましては、決算特別委員会審査日程表及び認定第１号第２款総務費審査順一覧でございます。",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-003",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "横澤輝樹委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "横澤 輝樹",
+    "member_faction": "自民政友会",
+    "text": "：職員研修費について一つお聞きします。\n　例年、いろいろと話を聞いていると、その年によって、今年はこういう研修が多かった、こちらは少なかったという話があるのですけれども、今回はどのような感じだったのでしょうか。意識が変わってきて、こういうふうになったなど、そういうものが見えていたら教えていただけるとありがたいです。",
+    "text_length": 158,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-004",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "人材育成課長（堀江美奈君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えをさせていただきます。\n　令和２年度の研修につきましては、新たに意識した取組としまして、仕事に対する考え方や意識の変化につながる研修に取り組んでいこうということで計画しました。\n　やはり、デジタルの推進が進んでおりましたので、Ｓｏｃｉｅｔｙ5.0に向けた研修なども行いましたし、職員の階層別の研修の中でも、意識の変革については、講師の方や庁内の講師も含め、意識するように受講する職員に話をしながら理解を進めました。",
+    "text_length": 211,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-005",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "横澤輝樹委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "横澤 輝樹",
+    "member_faction": "自民政友会",
+    "text": "：今のお話というのは、そちら側でこういう研修をやっていきましょうという話だと思うのです。それだけではなく、課や個人でも研修を受けられるようになっていますよね。それはどうなっていますか。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-006",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "人材育成課長（堀江美奈君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　担当課からこういった研修を受講しませんかという御案内はしていますし、各担当課の職員からもこういった研修を受けたいという希望はありました。しかしながら、令和２年度は、どうしてもコロナの影響が大きく、また、先方の受入れの体制もあり、個人の研修についてはかなわなかった状況であります。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-007",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：情報推進費の105ページの社会保障と税番号システム整備事業についてです。\n　委託料は305万9,100円となっており、昨年度は509万5,440円となっております。\n　中身を見ますと、個人住民税や国保税、介護保険、児童手当などのシステムの改修整備ということです。確かに、その年によってシステムの改修の内容は変わると思いますけれども、まず、金額の違いと改修内容についてお尋ねします。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-008",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "デジタル化推進担当主幹（新井俊幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　内容につきましては、今、委員がおっしゃった内容がほとんどです。\n　マイナンバー制度が始まりまして、平成29年７月より、日本全国の自治体のデータを連結する中間サーバーができております。各自治体は、そこでの決まったルールに基づき、そこにデータを置かなければいけません。\n　そのデータにつきましては、先ほど委員おっしゃったとおり、毎年、法改正や制度改正で、データを変更するほか、レイアウトを変え、日本全国の自治体が共通して使えるようにしなければいけないのですが、その作業工数が毎年違い、値段も違っているということです。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-009",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：例えば、健康保険証がひもつきになるなど、いろいろな情報がマイナンバーカードにひもづくという将来に向けての中間サーバーへのデータ収集となるのでしょうか。",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-010",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "デジタル化推進担当主幹（新井俊幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　マイナンバーの利活用につきましては、現在、税社会保障の制度について、行政間のデータのやり取りで連携することになっていますし、今、委員がお話の保険証の利活用につきましては、今後、マイナポータルなどの形で運用が進んでいくものと思われます。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-011",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：恐らく、私の言ったようなものに進んでいくため、国ではデータを集めて、活用へ向けてということになるのかなと思います。\n　また、今言われたマイナポータルは個人としての登録が必要ですよね。それはどこでマイナンバーカードを使用したかなどが記録されると思うのですけれども、保険証についてもマイナポータルの中で手続し、国としては10月20日という話でしたけれども、そういうふうに進んでいくのかを確認します。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-012",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　マイナンバーカードを健康保険証として利用するためには事前に登録が必要となります。\n　先ほどおっしゃられたとおり、事前登録は行政手続に関する専用サイトであるマイナポータルから行うことができます。こちらは、御自宅のパソコンやスマートフォンのほか、市役所の総合窓口課に設置しております端末からも手続をすることが可能です。",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-013",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：この前の一般質問でもやり取りがあったとおりですし、保険証につきましては、マイナンバーカードの普及は別項目であるとは思うのですけれども、そんなに進んでいないような気がしています。また、この保険証登録を自分でやるか、窓口に来てやるかということすら知らない方が多くいると思うのです。\n　病院の窓口は保険証の確認などで結構混んだりするわけです。でも、マイナンバーカードが入ることによって流れがスムーズになるということになると思うのですけれども、普及啓発については今後どのようにされていくのか、お尋ねいたします。",
+    "text_length": 252,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-014",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：マイナンバーカードを健康保険証として利用する際の普及啓発についてですが、令和３年３月の稚内市の広報紙でも載せておりますし、今後も引き続き普及啓発に努めていきたいと思います。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-015",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：実際、広報紙に掲載してから、手続というか、普及は進んだのか、実感としてはいかがでしょうか。",
+    "text_length": 46,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-016",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　今年度に入り、４月から６月までの間に、全てが健康保険証利用のためとは限らないですけれども、申請件数は増えてきております。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-017",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：これについてはマイナンバーカードのほうでもまた触れたいと思いますけれども、先ほどのひもつきの件です。\n　保険証。あるいは、特別定額給付金では大変な目に遭って遅くなったので、口座を管理する、登録するなど、いろいろとあると思うのですけれども、そうしたことは今後の改修に入ってくるのか、確認します。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-018",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "デジタル化推進担当主幹（新井俊幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：現在のところ、口座項目の改修の予定はありません。",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-019",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：ちまたでは、マイナンバーで管理されていないのかという話もありますけれども、今のところはなく、登録を推進していきたいという方向であるということですね。\n　これは前にもお話をしましたけれども、セキュリティーの問題があります。これは国の問題ですから、自治体としては責任が持てないかもしれませんけれども、そうした心配な部分もありますので、安心・安全をＰＲしていただきたいと思います。\n　国が普及に非常に前向きになっておりますが、反対の人も結構いまして、そのはざまに自治体がいるということだと思いますけれども、その辺も含め、頑張っていただきたいということを申し添えまして、終わります。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-020",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "近藤文恵委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "近藤 文恵",
+    "member_faction": "公明党",
+    "text": "：107ページの災害対策事業について伺いたいと思います。\n　昨年の大雨で土砂災害などがあったかと思うのですけれども、そのときに避難所として使われていたところで雨漏りがあったのです。全てを見て回っているわけではなく、私が分かっているところは１か所ですが、雨漏りなど、施設の不具合について、点検や修理はどのように行っているのでしょうか。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-021",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "防災担当主幹（小室宏明君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えをさせていただきます。\n　点検、修理につきましては、それぞれの管理している所管にお願いし、確認していただいております。",
+    "text_length": 63,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-022",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "近藤文恵委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "近藤 文恵",
+    "member_faction": "公明党",
+    "text": "：それぞれの所管で管理していただいているということでした。\n　ここで確認が取れるかどうかは分かりませんけれども、その雨漏りのあった施設は修理をされたのでしょうか。施設名を言っていいかは分かりませんけれども、もしお答えできるのであればお願いします。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-023",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "防災担当主幹（小室宏明君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えをさせていただきます。\n　昨年８月の大雨のときには、実際のところ、雨漏りがあったということは聞いておりません。\n　ただ、カビ臭いということはありました。それから、昨年、川の増水で水かさが増したということは聞いておりまして、その避難所については移転ということで対処させていただきました。",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-024",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "近藤文恵委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "近藤 文恵",
+    "member_faction": "公明党",
+    "text": "：雨漏りについては聞いていないということでしたけれども、私は、実際に目にしていますし、バケツが置いてあったことも目にしています。\n　それぞれの所管で管理しているということでありましたけれども、避難所として使っていくわけですから、所管と連携を取りながら環境をしっかりと整えていただければなと思います。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-025",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "企画総務部長（土門伸一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：今、近藤委員から避難所の雨漏りについてのお尋ねがありましたけれども、箇所を確認した上で、そこの管理者を含め、しっかりと対応をさせていただきたいと思います。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-026",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "相内玲子委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "相内 玲子",
+    "member_faction": "無所属",
+    "text": "：111ページの映画鑑賞特別奨励事業についてお伺いいたします。\n　この事業の人数、また、どのぐらいの実績がいらっしゃったのかを教えてください。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-027",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "社会教育課長（青木秀貴君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　７月から３月までの実績ですが、未就学児、小学生、中学生、高校生、保護者を含め、4,115名の利用になっています。",
+    "text_length": 68,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-028",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "相内玲子委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "相内 玲子",
+    "member_faction": "無所属",
+    "text": "：今回から、子どもと親、あるいは、親と親など、見る組合せが変わったわけですが、よかったと思うなど、そうしたアンケートは取ったのでしょうか。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-029",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "社会教育課長（青木秀貴君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　令和２年度のこの事業につきましては、あくまでも支援ということで、アンケートは取っておりません。今年度は、今、アンケートをやりながら実施しているところです。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        84
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-030",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "近藤文恵委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "近藤 文恵",
+    "member_faction": "公明党",
+    "text": "：戸籍住民基本台帳費の通知カード・個人番号カード関連事務負担金について伺います。\n　先ほどもマイナンバーカードのことについて触れられていましたけれども、昨年、マイナポイント制度を行い、これから保健所として活用されていくということですし、普及率も増加しているという先ほどのお話でした。\n　現在の普及率はどのぐらいになっているのか、お聞かせください。",
+    "text_length": 173,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        92
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-031",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　令和３年９月１日現在になりますが、１万1,891件、交付率が36.0％となっております。",
+    "text_length": 56,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-032",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "近藤文恵委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "近藤 文恵",
+    "member_faction": "公明党",
+    "text": "：私も、以前から、マイナンバーカードの普及に向け、利活用をもっとしていただきたいということでお願いしてきたところでありますけれども、普及率はそんなに高くないのかなと思います。\n　今、コンビニで住民票が取れるところもありますが、稚内ではそれがまだできておりません。今後の利活用に向け、今考えていることがあればお聞かせください。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        96
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-033",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　今後のマイナンバーカードの利活用についてです。\n　様々なことが考えられますけれども、窓口の在り方など、いろいろな手法を検討しているところであります。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        98
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-034",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "近藤文恵委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "近藤 文恵",
+    "member_faction": "公明党",
+    "text": "：窓口での利活用ということになるのでしょうか。今のお話はちょっとよく分からなかったのですけれども、もう一度お願いします。",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        100
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-035",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "総務防災課長（田中克良君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　マイナンバーカードの利活用につきましては、先ほどもお話がありましたとおり、健康保険証はもちろん、国では運転免許証での利活用も考えております。\n　また、本市の行政サービスでいきますと、行政のデジタル化に向けて、時間や場所を選ばない、家庭からも申請ができるデジタル申請を考えておりますし、現状、児童手当はマイナポータルから既に利用できるようになっております。\n　このように幅広く使えるものと考えておりますけれども、具体的に今ここで全てを申し上げられるところまでは検討が進んでおりませんので、検討が進み次第、どこかでお示しできればと考えております。",
+    "text_length": 283,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-036",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "近藤文恵委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "近藤 文恵",
+    "member_faction": "公明党",
+    "text": "：やはり、利活用者が増えていくことで普及率も上がっていくのかなと思います。デジタル系が苦手な人でも利活用できるよう、今後、検討していっていただきたいと思います。",
+    "text_length": 80,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-037",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：先ほども触れましたが、マイナンバーカードの普及についてです。\n　国では、令和４年度末までに全国民に普及するとしています。国の目標値があると思うのですけれども、市の目標値は掲げているのか、確認します。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-038",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　国では、詳細な目標値というわけではありませんが、先ほどおっしゃられたとおり、令和４年度末までに100％にすると示しております。これに合わせて、マイナンバーカード交付円滑化計画を稚内市で策定しておりまして、この中での令和２年度末の交付率の目標は37.8％としております。",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-039",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：９月１日で36.0％ですから目標は達成されていないということだと思うのですが、もう一度お願いします。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        111
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-040",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　稚内市といたしましても、国で言っております令和４年度末までに100％ということで計画しております。",
+    "text_length": 61,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        114
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-041",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：先ほどは令和３年９月１日で36％ということでしたが、あと１年半後には100％とするということですね。\n　月１回ですか、日曜日も開庁し、御尽力されていることには敬意を表しますけれども、その割にはなかなか普及がされていないのかなと思います。先ほども触れましたが、個人情報の流通やセキュリティーの関係など、不安を持っている市民もおりまして、それが普及の足かせになっているのかもしれません。そこを乗り越えて普及率を上げていくための取組といいますか、その見解についてお聞かせいただきたいのです。",
+    "text_length": 243,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        116
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-042",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "松本勝利委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：マイナンバーカードの普及率についての議論がされていますけれども、国がマイナンバーカードをつくらなければならないという法整備はしていませんよね。\n　もししているのであれば別ですし、稚内市として計画をつくることには異議を挟むところではないのですが、私の知る限り、これには強制力がないのです。そこで、自治体でそれをどこまでやるのだと幾ら言っても、つくる側の自由なわけですから、難しいのではないかなと思うのです。\n　普及するにこしたことはないですよ。それは総務省も言っていますけれども、だからといって、自治体が責められる必要もないのだと私は思うのですが、その辺はどう考えていますか。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        118
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-043",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "副市長（川野忠司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：私からお答えをさせていただきます。\n　マイナンバーカードにつきましては、今、国でデジタル庁が創設されましたが、これからもいろいろな方策で普及をしていくと思います。このように、国がそういったことを進めていこうというのであれば、自治体としても同じような方向でやっていくことになっていくかと思います。\n　なお、マイナンバーカードの普及率について、稚内市の状況をお知らせしていますが、ほかの自治体と比べても極端に高いわけでもなく、極端に低いわけでもなく、平均的な数値です。今の数字が高いか低いかについて、個人の考え方はあると思うのですが、私たちとしてはそんなに低い数字ではないと思っています。\n　これから国が方針を示し、私たちとしてはその推移を見ながら進めていくとしかお答えようがありませんけれども、御理解をいただきたいと思います。",
+    "text_length": 363,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        120
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-044",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "鈴木茂行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 茂行",
+    "member_faction": "公明党",
+    "text": "：確かに、国の100％ということ自体、どうなのかなと思います。個人の考え方ではありますし、今、松本委員が言われたように、いろいろな人がいるでしょう。そのはざまに自治体があるということで苦労されているのは十分承知しています。\n　そんな中、デジタル庁ができました。国がちょっと推し進め過ぎているところもあるかもしれませんけれども、最善の努力をしながら、いい意味での普及について、今後とも努力をしていただきたいと申し添えまして、終わります。",
+    "text_length": 217,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        122
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-045",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：私からは、119ページのひきこもりサポート事業と121ページの生活困窮者自立支援事業の中の就労準備支援事業について伺いたいと思います。\n　これは、どちらも令和２年度に新規で行われた事業です。\n　質問に入る前に今回の決算資料を見せていただきました。しかし、ひきこもりサポート事業の資料と生活困窮者自立支援事業に関しては資料そのものがありませんでした。これらは２年度に新しく行った事業でありますので、資料の中身をもう少し具体的に示していただければということを最初に要望しておきたいと思います。\n　そこで質問です。\n　まず、ひきこもりサポート事業についてですが、何をやったかというと、相談窓口の設置、専用ダイヤルの開設、あるいは、学習会の開催ということで、内容については分かりました。\n　ただ、この事業での相談実績、あるいは、相談内容について、話せる範囲で構いませんので、どういった内容のものがあったのか、また、それは本人からなのか御家族からなのか、そして、その対応、今も継続して対応されているのかについてお聞きします。\n　それから、学習会を開催したということですが、どのような方たちが、大体何名が参加されたのかもお聞かせください。",
+    "text_length": 514,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        126
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-046",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "社会福祉課長（新田浩司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　まず、ひきこもりサポート事業の令和２年度の細かな内容についてです。\n　相談窓口を設置しまして、対象者６名、18件の相談がございました。\n　相談の相手方は全てが家族によるものでありまして、御本人との電話や面談はありません。\n　対応方法ですが、来庁による面談が９件、訪問が２件、電話が７件となっております。\n　具体的な内容ですけれども、まず、御家族の方から自分のところにひきこもりになっている者がいるのだという状況をお話しいただき、その相談を受けているということです。\n　それから、学習会についてです。\n　当初は、講演会やセミナーを予定しておりましたが、コロナの状況もありましたので、学習会という形にいたしました。\n　参加者数につきましては、教育関係者、福祉関係者、市職員など、42人でした。\n　なお、ひきこもりの御本人や御家族の方々に配慮しまして、参加者名簿はつくっておらず、誰が参加したかは押さえておりません。\n　また、最初にありました新規事業で主要施策の成果報告書の記載がないということについてですが、もう少し分かりやすいようにしていきたいと思います。",
+    "text_length": 489,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        128
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-047",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：対象が６名で、18件の相談ということでした。１年目としてはどういう評価なのかはあるのですけれども、多分、現在も引き続き対応をされているのだと思います。\n　昨年度は、コロナ禍ということで、その他の事業もそうですけれども、思ったような展開がなかなかできなかったのではないかということも前提にしつつ、当初、いただいた資料を見ますと、家族会を立ち上げることを視野に入れた勉強会の開催、生活困窮者自立支援事業における就労準備支援事業などとの連携ということも書かれていたのですね。家族会の立ち上げは非常に大事だなと私もその当時は思っていたのですが、今はどのような進捗状況になっているのでしょうか。\n　あるいは、就労準備支援事業との連携について、具体的にやられたことがありましたら教えていただければと思います。",
+    "text_length": 349,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        130
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-048",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "生活福祉部副部長（高師伸恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答え申し上げます。\n　佐藤委員がおっしゃったように、４月15日から開設したわけですけれども、コロナ禍ということもあり、数か月間、特に前半は周知らしいことがほとんどできなかったという実態は確かにあります。\n　家族会の立ち上げにつきましては、当然、視野には入れていまして、１人２人とどんどん増えてはいきましたけれども、昨年は数か月間しかありませんでしたので、立ち上げまでは至っていないのが正直なところです。\n　実際、先ほど啓発事業をやりましたという学習会の話もしましたが、当事者ではなかったにせよ、御家族の方が数人いらっしゃいまして、そこから相談につながったという事例もありました。\n　それから、就労準備支援事業へのつなぎについてです。\n　どちらも私どもの社会福祉課が担当しておりますので、ひきこもりの御家族の親で、その息子さんのことだったのですけれども、将来の仕事、今の途切れ途切れになっている就労状況など、いろいろなことを心配されておりましたので、こういうものがあるよと御紹介できるツールをお渡ししております。御本人と話すタイミングもありますので、無理強いはせず、非常に息の長いといいますか、長くかかる支援だということを御家族には説明し、我々も承知しながら、ゆっくりの歩みではありますけれども、つないでいくべく、日々取り組んでいるところです。",
+    "text_length": 573,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        132
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-049",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：家族会に関しては行く行くはという話だと思うのです。急に今すぐというのは、副部長がおっしゃったように、なかなか難しいのかなと思います。\n　ただ、同じような立場に置かれている方たちが情報を共有し合ったり、悩みを相談し合ったりする場をつくることはすごく大事なことだなと思いますし、認知症については家族会があります。今、その段階まではまだ行けていないということでしたが、そういったことも目的にしているわけですから、今後、取り組んでいっていただければと思います。\n　今回、コロナ禍ということもあるのですけれども、１年間やってみての評価といいますか、これをやったことでの状況について、原課としてはどう捉えているのか、教えていただきたいと思います。",
+    "text_length": 318,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        134
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-050",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "社会福祉課長（新田浩司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　ひきこもりサポート事業につきましては令和２年度から開始したところであります。\n　これまで、ひきこもりの相談やひきこもりに特化した事業については明確にありませんでしたが、ひきこもり相談窓口の設置などにより実際に相談もありました。ただ、ひきこもりについては、相談が多かったからいいといったものではございません。\n　先ほど副部長から答弁もしましたが、周知がすぐにできなかったにもかかわらず、そういった方々がいたということです。最終的な支援や解決には至っていないものの、御家族の方が相談をしたことによって少しは心の問題が解決に向かったのではないかなと思いますし、次のステップに行ける方もいらっしゃると思っておりまして、そういう意味では効果があったと考えてもいいのかなと思っております。\n　一方、ひきこもりにつきましては、時間がかかることが多いですし、家族や地域の協力も不可欠であります。引き続き、窓口の周知、ひきこもりの理解を深める啓発事業などに取り組みながら、将来的には、社会参加や就労の支援につながるよう、支援の輪を広げながら進めたいと思っております。",
+    "text_length": 486,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        136
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-051",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：今、課長に答弁していただいたとおり、今まで特化したものがなかったので、今回、令和２年度にこういうように目に見えて分かりやすくなったというのは、そのことで非常に悩んでいる方たちにとってはよかったのかなという気がします。\n　今、今年度の評価についてもお話をいただいたのですが、やはり、多くの方が悩んでいるというのは、まだ見え切れていない、つかみ切れていないものがあると思います。これから周知にもっと力を入れていかれるのだと思うのですけれども、来年度に向けて、ひきこもりの窓口や学習会など、２年度に始め、３年度に入りましたが、ここが問題だ、ここは改善したらいい、来年度にはこう生かしていこうなど、改善点といいますか、整理していることがあればお聞かせください。",
+    "text_length": 327,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        138
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-052",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "社会福祉課長（新田浩司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　まず、先ほども申しましたが、具体的に相談のあった人については相談までで止まっているのが現状です。\n　その先のアプローチといいますか、こちら側から、あるいは、相談された方側からということもあるかと思いますけれども、時間のかかることですので、お互いの関係を親密にするということも必要になろうかと思います。\n　また、先ほども申し上げましたが、今年度はセミナー的なものの開催を準備しているところでございます。",
+    "text_length": 212,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        140
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-053",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：本当にデリケートな問題でして、人と人との信頼関係がすごく重要になってくる事業だと私も思っています。多分、今までもそうだったと思うのですけれども、今後も寄り添ったきめ細やかな対応を心がけていただければなと思います。",
+    "text_length": 107,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        142
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-054",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "相内玲子委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "相内 玲子",
+    "member_faction": "無所属",
+    "text": "：私も引きこもりについて関連質問します。\n　この問題は、すごく複雑で、いろいろことも絡み合っているかと思います。\n　最初に言われた周知について思ったのですけれども、たしか、市では、ひきこもりの名刺大の青いカードをつくっていますよね。それが、トイレなど、いろいろなところにあって、結構目立つなと思ったのです。これはこれからも続けてほしいと思いますが、配置の方法については来年度に向けて考えてもらいたいと思っております。\n　あのカードが意外と効いて、もしかしたらそちらの窓口に御相談に行った方もいらっしゃるのかなと思ったのです。目につくところというのはなかなか難しいかと思うのですけれども、市の公共施設のトイレに置かれていたのをよく見ていたので、来年度もそれを周知徹底のためにつなげてください。\n　また、相談しに行く一歩がなかなか出ないので、相談を受けやすい窓口をつくっていただくことを要望します。よろしくお願いいたします。",
+    "text_length": 410,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        144
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-055",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：次に、生活困窮者自立支援事業の任意事業の就労準備支援事業についてです。\n　これも令和２年度から新規でスタートしたということです。これについてはあまり細かく言うつもりはないのですけれども、２年度における実績です。相談件数のほか、具体的に何人の方にどのような支援が行われたのかを伺いたいと思います。",
+    "text_length": 148,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        146
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-056",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "社会福祉課長（新田浩司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　就労準備支援事業のお尋ねについてですが、まず、支援をした人数は15人です。相談、連絡、面接が82件で、実際の就労や社会参加の体験利用が51件で、合計で133件でございます。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        148
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-057",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：123ページの老人福祉費について伺います。\n　簡易型緊急通報装置給付運営事業に関し、後ろの資料の369ページのいのちのバトンの利用状況について質問したいのですけれども、これはどこの項目に入っているのでしょうか。",
+    "text_length": 106,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        150
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-058",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：高齢者サービス事業の中のいのちのバトン事業についてです。\n　利用状況が出ておりまして、昨年度の令和元年度は115名ですけれども、令和２年度が21名と激減しています。これはなぜなのか、教えてください。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        153
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-059",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "長寿あんしん課長（佐藤由美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　配付数が減っている理由についてです。\n　幾つかの配付方法がある中、令和元年度までは、配付数が一番多かった65歳以上の独居高齢者を対象とした火災予防や見守り訪問である防火査察というものがございましたけれども、令和２年度からは、消防職員が同伴できなくなったことがあります。\n　また、名称を独居高齢者見守り活動に変えましたけれども、その事業の対象年齢を75歳以上に絞ったことにより、既に配付済みの方が多かったということで配付数が減少したと捉えています。",
+    "text_length": 235,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        155
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-060",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：そうすると、今後も65歳以上の方は対象にならないということなのでしょうか。\n　今月、敬老の日がありましたけれども、敬老の日の趣旨と反するのではないかと思うのです。65歳以上を75以上にということであれば、今後、対象者が減ることになってくるのではないかと思うのですけれども、65歳以上にはならないのですか。",
+    "text_length": 153,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        157
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-061",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "長寿あんしん課長（佐藤由美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　独居高齢者の見守り訪問につきましては、今後も対象者を75歳以上にする予定で考えております。\n　今回、75歳以上に変更した理由につきましては、対象となる高齢者の方が年々増加している中で、集中した一定期間の中では見守り訪問をしていましたけれども、不在が多く、認定を受けていない元気な方が多いということで対象を絞らせていただきました。\n　ただし、日頃の在宅介護支援センターの訪問が定期的にございますので、その中で、必要な方がありましたら、いのちのバトンのほうの配付をしていただきたいと考えております。",
+    "text_length": 259,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        160
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-062",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：元気な高齢者が増えているということは大変いいことだと思うのですけれども、やはり、命の問題なのです。75歳以上ということでしたが、これから65歳以上を迎える方の中にもバトンが必要な方がいるかと思いますので、年齢でばっつりと切るのではなくて、柔軟な対応をお願いしたいということを要望します。",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        162
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-063",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "相内玲子委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "相内 玲子",
+    "member_faction": "無所属",
+    "text": "：特定不妊治療費助成事業についてお伺いいたします。\n　昨年度は70万円ぐらいの実績で、今回は150万円と倍ぐらいになっているのですけれども、この１年間でどのぐらいの方が御利用なさって、どのぐらいの実績があったのか、お教えください。",
+    "text_length": 115,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        168
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-064",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "保健事業担当主幹（堀昌恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　令和２年度の実績ですけれども、利用者の実人数が11名、延べ18件の申請がされています。",
+    "text_length": 55,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        170
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-065",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "相内玲子委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "相内 玲子",
+    "member_faction": "無所属",
+    "text": "：昨年度から条件がちょっと緩くなったといいますか、収入などの条件がなくなったということで、多分、利用しやすくなったのかなと思っています。\n　今は少子化ですから、たくさんのお子様が生まれたらいいなと思うのですけれども、利用を増やすため、周知の仕方について、考えていることがありましたら教えてください。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        172
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-066",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "保健事業担当主幹（堀昌恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　周知の方法についてですけれども、内容的には大変デリケートなものになります。そこで、現在のところ、広報や産婦人科など、限定的なところに限らせていただいております。しかし、特定不妊治療費の申請というのは、道の申請がスタートしまして、その後、不足する部分を補うために市が申請できるというものでして、道とも連携し、市のほうにも申請するように勧めていただくよう、声かけを行っております。",
+    "text_length": 200,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        174
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-067",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：131ページの乳幼児健診相談事業についてです。\n　これも資料をいただきました。大変すばらしい受診率で、ほとんど100％ということです。こちらとこんにちは赤ちゃん事業についても併せて伺いたいと思います。\n　ほとんどの皆さんが受診されていると思うのですけれども、受診できなかった方の理由と、その後の対応について、言える範囲で教えていただければと思います。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        176
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-068",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "保健事業担当主幹（堀昌恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　健診の未受診者についてです。\n　詳細は割愛させていただきますが、保護者の仕事の状況、御兄弟の都合で来られなかったということが理由になります。\n　対象者になる方には、月齢が近くなりましたら御案内を差し上げているのですけれども、未受診の場合はこちらから連絡します。それでも未受診の場合は、必ず会えるように、電話や来所、場合によっては訪問で対応させていただいています。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        178
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-069",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：様々な理由からなかなか来られなかったということでしたが、その後の対応として、電話連絡、場合によっては訪問とおっしゃっていたのですが、全て行かれているということになるのですか。\n　これは受診数ですよね。来ていただいた方は受診するということで終わっているとは思うのですけれども、残りの１名は、連絡し、訪問されているということですか。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        180
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-070",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "保健事業担当主幹（堀昌恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　母子保健法に基づいての健診になりますので、その規定に基づき、医師の診察、あるいは、場合によっては歯科健診を受けることで受診数をカウントできることになっています。\n　そのため、全お子さんに対して確認しているのですけれども、訪問や電話確認をした場合に関しては受診数から省いております。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        182
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-071",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：規定があって、それで受診数は考えるということでした。ただ、実態としては、それを放っておくということではなく、数には入らないけれども、きちんとアプローチし、訪問なり連絡なりを取っているということで、皆さんが受診しているとはならないかもしれないけれども、きちんとされているのだなということでした。\n　昨年度は、コロナの中での出産や育児ということで、お母さん、あるいは、お父さんもそうだと思うのですけれども、ふだん以上に神経を使っていたと思うのです。特に初めてのお子さんとなると、なおさらそういった思いや不安があったと思います。\n　そこで、例えば、健診や健康相談のときに、コロナよってこういう相談が増えたよなど、今までと違ったものが何かありましたら教えていただきたいと思います。",
+    "text_length": 337,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        184
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-072",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "保健事業担当主幹（堀昌恵君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　様々な健診に関する相談の中身についてです。\n　コロナに関することでは、やはり、外出する機会がなく、外で子どもを遊ばせることができないということでストレスを抱える方もいらっしゃいました。それに対しては、その場面だけではなく、その後も追ってお電話をしたり訪問したりということで対応をさせていただいております。\n　また、協力者に関しては、聞き取りの中では、割と協力してくれる方がいて、育児はできているというような状況把握をしております。",
+    "text_length": 227,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        186
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-2-073",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 2,
+    "schedule_name": "09月29日－02号",
+    "date": "2021-09-29",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：本市の保健師さんたちは本当に頑張っているなと思っています。\n　今までも一生懸命やられていますし、100％に近い受診率ということでありますけれども、ぜひ、お母さんたち、保護者に寄り添った支援をしていってほしいなと思います。",
+    "text_length": 111,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        188
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-074",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "鈴木利行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 利行",
+    "member_faction": "公明党",
+    "text": "：151ページの観光振興事業の中の地域おこし協力隊についてです。\n　昨年10月、途中から始まった事業ということです。10月から就任され、本来であれば、稚内のよさを来訪した外国人などに伝える予定だったのですけれども、御存じのとおり、新型コロナウイルス拡大の影響から、ＳＮＳで情報発信をしているということが中心になっているということでした。\n　そこで、本来、どのような事業内容を展開しようとしていたのか、お聞かせください。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-075",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "観光交流課長（岡田丈生君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　地域おこし協力隊のもともとの役割についてです。\n　今、委員が言われたとおり、ウェブ等を介しての発信、それ以外には、多言語化に向けての翻訳作業、また、インバウンドの方々が来たときの通訳業務、もしくは、例えば、台湾や香港など、そういったところに出かけていくときの通訳業務を想定しておりました。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-076",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "鈴木利行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 利行",
+    "member_faction": "公明党",
+    "text": "：現在は１人でやられているということですけれども、この事業を今後展開する予定はあるのでしょうか。また、今後、増員する予定はあるのかどうか、お聞かせください。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-077",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "観光交流課長（岡田丈生君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　特に、インバウンドの関係の動きが止まっております。この後、それがどう回復するかによると思いますけれども、今のところ、観光の面での増員の予定はございません。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-078",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "鈴木利行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 利行",
+    "member_faction": "公明党",
+    "text": "：観光の面では今のところは考えていないということでしたが、それでは、他事業では考えているのかどうか、お聞かせください。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-079",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "企画総務部副部長（遠藤直仁君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：地域おこし協力隊についてです。\n　前回もちょっとお話ししたかと思うのですが、上勇知地区へ地域おこし協力隊を導入したいということで今年度から動いています。今、人が決まりましたので、10月１日付で辞令を交付し、１年ごとの更新ということになるのですが、３年間、地域に入って地域活動を支える、生活支援を行うということになります。\n　今のところ、地域おこし協力隊については、観光のほうとうちの２件になっています。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-080",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "鈴木利行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 利行",
+    "member_faction": "公明党",
+    "text": "：上勇知のほうでやるということでしたが、できるだけ定住、移住していただけることを目指して増員していっていただくことをお願いいたします。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-081",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "鈴木利行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 利行",
+    "member_faction": "公明党",
+    "text": "：157ページの道路等維持管理業務委託料についてです。\n　令和元年度と今年度の決算を見ると130万円ぐらい違っていたのです。これは、補修する箇所が少なかったのか、その辺をお聞かせ願います。",
+    "text_length": 94,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-082",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "土木課長（笠原浩之君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　道路等維持管理業務委託料が少ない要因についてです。\n　通常は、北門神社祭等が終わった後にそこの道路を清掃するのですが、祭りが行われませんでしたので、行っておりません。また、毎年、側溝が凍結した場合、融雪の解氷作業がございますが、それが思いのほか少なかったため、この金額になってございます。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-083",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "鈴木利行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 利行",
+    "member_faction": "公明党",
+    "text": "：今回、そういう理由で少なかったということですけれども、市内のあちこちを回ると、道路が破損していたり、割れていたりするところが非常に多いのです。\n　いつもは、道路工事や水道管の布設などでアスファルトを切りますよね。これは前にも話したとおり、切った後、維持管理として、アスファルトを塗るのかどうかは分からないですけれども、そうして亀裂が入っているところは、春先だけではなく、秋や冬でも水が入ったら膨れていき、亀裂が大きくなると思うのです。\n　その対応はできないのか、お聞かせください。",
+    "text_length": 241,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-084",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "土木課長（笠原浩之君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えをさせていただきます。\n　道路の舗装のクラックなどにつきまして、パトロールで確認します。また、穴もございますが、穴とクラックについては早急に直すよう対応しております。\n　クラックについては、全部が全部、舗装修繕できるものではございませんが、大きなものについては適時修繕してきております。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-085",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "鈴木利行委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 利行",
+    "member_faction": "公明党",
+    "text": "：大きく亀裂が入っているところは、当然、パトロールしていれば分かるのですけれども、ずっとそうなっているから、そこに水が入り、それが凍ってということになるわけで、そうしたところがあちこちに見られるということです。\n　それは業者に委託しているのかどうかは分からないですけれども、きちんと埋めてもらうようにできないのでしょうか。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-086",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "土木課長（笠原浩之君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　亀裂等が市道の各所に見受けられることは私どもも確認しておりますが、そこに水が入り、冬場の凍結で割れるということにならないよう、舗装業者等にお願いし、修繕してもらっております。\n　管理の中で舗装業者が常に修繕をするということではなく、我々の指示で動いてもらうことになっておりますので、パトロール等を強化し、その都度、指示ができるようにしたいと考えております。",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-087",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "横澤輝樹委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "横澤 輝樹",
+    "member_faction": "自民政友会",
+    "text": "：除雪に関してお聞きします。\n　毎回、除雪体制についてはなかなか厳しい状況になっているとお聞きしていたのですけれども、令和２年度はどのような状況だったのか、教えていただきたいと思います。\n　年々厳しくなってきており、人が足りない、業者が少なくなってきているというようなことでしたが、現状維持できているのか、また、前よりも厳しくなってきているのか、あるいは、少しは改善されているのか、または、コロナによって人の体制が厳しくなったなどがあれば教えていただきたいです。",
+    "text_length": 231,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-088",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "土木課長（笠原浩之君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　除排雪につきましては、確かに、昨シーズンの令和２年度につきましては、おおむね16社の会社で、127台の除雪機械を借り上げ、市道の除雪を行っております。\n　確かに、委員の言うとおり、高齢化、オペレーターの少なさから、だんだんと人数が少なくなっていると伺っております。それでいて雪は毎年降ってきます。これから入札をいたしますけれども、業者の話を聞きながら、適時、市道の除雪を行っていきたいと考えております。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-089",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：171ページの教育総務費のスクールソーシャルワーカー活用事業について質問いたします。\n　令和２年度は、コロナ禍ということで、児童生徒はストレスがたまった状態で１年間を過ごしたのではないかなと思うのですが、そういう中でスクールソーシャルワーカーの果たす役割は大変大きなものがあったのではないかなと思います。\n　資料を伺いますと、お２人の方が市内の９校を回って、12項目について、いじめや不登校や貧困問題など、多岐にわたった支援をされたとなっております。でも、２人で９校を回るということでは、１週間に１回か２回しか学校を回れないわけです。そういうことに対し、学校現場からはどのような声があるのか、それから、スクールソーシャルワーカーの方の声や感想についても教えていただきたいと思います。",
+    "text_length": 342,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-090",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　スクールソーシャルワーカー、学校の声にはどういうものがあるかについてです。\n　先ほどおっしゃっていたように、学校へは週１回ぐらいしか行けていないのですけれども、数多く来ていただけて助かるという声を聞いています。いない場合については、学校の養護教諭や一般教員が声を聞きつつ、来たときにスクールソーシャルワーカーにつなぐというふうにやっております。\n　また、スクールソーシャルワーカーの声についてです。\n　本人たちから直接聞くことはないのですけれども、相談所にいつも行っていらっしゃいまして、相談所からの情報でいくと、学校での相談業務だけではなく、児童相談所など、いろいろなところにつなげるという役目も持っており、動き回っているので、仕事は大変だというお話は聞いています。",
+    "text_length": 346,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-091",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：資料もいただきましたけれども、かなりの項目の支援をされていると載っています。しかし、これ以外にも、家庭訪問をしたり、間接的な支援といいますか、ネットワークづくりのためのコーディネートをやるなど、今、課長がおっしゃったように、仕事は多岐にわたっているのではないかなと思います。\n　私も過去に民生委員児童委員をやっていたことがあるのですけれども、子ども支援ネットワークというものを組織し、その中でスクールソーシャルワーカーの方がコーディネートされているという場面に出くわしたことがあります。\n　それから、こういう支援もされているということで私も大変驚いたのですけれども、例えば、卒業してからも、その女の子が成人式に着ていくものの支援をしたり、社会人になる第一歩のときの服装の支援など、本当に多岐にわたって大変な仕事をされていまして、私は２人体制というのはどうかなといつも思っているのです。\n　教育委員会としては２人体制についてどのような評価というか、判断をされているのか、伺いたいと思います。",
+    "text_length": 445,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-092",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "教育部長（佐伯達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　スクールソーシャルワーカーは、コロナ禍の令和２年度は非常に役割が大きかったというのはそのとおりだと認識しておりますし、業務量も増えていると思っております。本市においては、２名体制で、教育相談所に配置し、市内の五つの小学校、四つの中学校に巡回して訪問する体制を取っております。\n　これまでも増員すべきという御指摘をいただいておりました。できれば、中学校区単位で１名ずつ固定して配置することが相談体制の強化の上では望まれていますし、それが理想なのかなと我々も認識しております。\n　スクールソーシャルワーカーの仕事自体、これまでの繰り返しになりますけれども、問題を抱えた児童生徒の置かれた環境に働きかけるため、福祉や医療の関係機関につないだり、ネットワークを構築して連絡調整を行いながら状況の改善を図って問題解決に導いたりということで、福祉や教育に精通した方、また、活動の経験がある方が適任者とされておりますので、人材の確保は非常に難しいところです。\n　道内の主要都市についても調べているのですけれども、配置数を見る限り、やはり、１名から２名のところが多く、本市に限らず、人材確保には全道的に苦労している状況にあります。\n　そういった状況とはいえ、スクールソーシャルワーカー２名体制については継続していきたいと思っておりますが、相談支援業務はスクールソーシャルワーカー２名だけに依存しているわけではなく、相談所の所長やアドバイザーをはじめ、教育委員会もそうですけれども、チームとして組織的に対応しております。そういった形ができておりますし、また、役割は違いますけれども、道費で配置していますスクールカウンセラーもおります。この方たちは子どもたちのカウンセリングを担うのですけれども、セットで動くということで効果を上げている事例もございます。\n　こういった連携を取りながら、２人というのは決して十分な数ではないのですけれども、負担を最小化し、連携を取りながらチームとして対応することで課題の解決に当たっていけると考えております。",
+    "text_length": 872,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-093",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：もう少し人数が多ければ、もっと行き届いた支援ができるのだと思います。ただ、現実的には、人がいないので、２名体制もやむを得ないとしつつ、不足部分については関係機関が連携して対応するということでした。\n　スクールカウンセラーの話もありましたけれども、家庭訪問するのはスクールソーシャルワーカー固有の役割だと思うのです。そういう面ではカウンセラーの限界もありますので、スクールソーシャルワーカーの増員を考えていただきたいと思います。\n　これについては何回も質問していますし、コロナ禍という子どもたちにストレスがたまっているこのときに各学校に配置することは非常に大事なのではないかと思っています。\n　そこで、具体的な提案ですが、人を探すのはなかなか難しいと思うので、教育委員会として人材を養成してはどうでしょうか。人間性もありますけれども、社会福祉士の資格を持っていれば一番望ましいわけですよね。実際、今の２名の方は、資格はないけれども、本当に児童生徒に寄り添って支援を続けているわけです。しかし、社会福祉士の資格を持っていれば福祉面での支援も手厚くなると思います。\n　教育委員会として、来年にすぐということではなく、数年間かけて資格を有する人材を養成していくというような計画をなすべきではないかなと思うのですけれども、その点についてはいかがでしょうか。",
+    "text_length": 574,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-094",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "教育部長（佐伯達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　時間をかけてでも教育委員会として社会福祉士等の資格を持った人材を養成していくべきではないかという御提案についてです。\n　スクールソーシャルワーカーは、今の方がいつまでということはありますけれども、一つに、先ほどもお話がありましたように、卒業した後も頼りにする、子どもたちから頼られるというところが確かにあります。それは、まさに信頼関係でして、そうしたものは時間をかけて構築してきているわけです。\n　時間をかければそういったことは可能かと思いますけれども、現状ででき得る最善策としては、少ない人数ですけれども、チームとしてしっかり対応していくということだと思っておりますので、繰り返しになりますけれども、今の体制で臨んでいきたいと考えております。",
+    "text_length": 334,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-095",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：現実的には現在の体制で、チームで支援していくということはよく分かります。ぜひ今後もそうしてやっていっていただきたいと思うのですけれども、私が提案しているのは、今すぐにということではないのです。\n　望ましい姿というのは、２人体制ではなく、もっと手厚い支援が行き届くように、児童へ直接支援や間接支援ができる、また、家庭訪問もできるよう、スクールソーシャルワーカーを数年かけて育てていくことだと思うのです。\n　社会福祉士は、教育の面だけではなく、福祉の面でも役割を発揮することができますので、そういう意味では、他の部局とも連携し、そういう人材を育てて養成していくことが必要ではないかなということなのですが、いかがでしょうか。",
+    "text_length": 310,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-096",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "教育部長（佐伯達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　福祉部局とも連携しながらということについてです。\n　時間はかかりますけれども、そういった人材について、教育だけではなく、福祉とともに手当てをする、そういう対応を取っていくということに異論はございません。ただ、時間がかかりますので、福祉部局と具体的な検討をするということはなかなか申し上げられないのですけれども、そういったお話を今後させていただきたいと思います。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-097",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "吉田孝史委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉田 孝史",
+    "member_faction": "無所属",
+    "text": "：関連です。\n　ＳＳＷの事業について、中尾委員の提案は至極ごもっともで、ましてや、教育にとどまらず、福祉面でも強化されるとなれば、それは年月をかけてもぜひやっていただきたいと思います。\n　さらに言えば、今の事業の資料を見ましたら、いじめや不登校など、教育関係が主ですけれども、昨今問題になっているのは、稚内ではそんなにいないと思うのですけれども、ヤングケアラーの問題でして、そういう中身も入れて増強を図ってもらえればなと思います。\n　そこで、今のヤングケアラーの実態を教育委員会等ではどう押さえているのかをお聞きしたいし、ぜひ補強していただきたいと思っておりますが、いかがでしょうか。",
+    "text_length": 292,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-098",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　ヤングケアラーの実態把握についてです。\n　学校教育課で全体像を押さえているわけではないのですが、各学校でケース会議等がある中では、きょうだいが多い御家庭のヤングケアラーについては日々課題として挙げられております。それは、それこそ、各地区、あるいは、先ほど言った子育て支援ネットワークなどで把握し、地域みんなで支えていく、学校でも支えていくということがそういった場で話され、確認し合っている状況です。",
+    "text_length": 211,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-099",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：先ほどのスクールソーシャルワーカーのことに戻ります。\n　子どもたちの心の問題というのは、コロナ禍において本当に深刻になっています。なっていない子もいますけれども、大変深刻なこともたくさんあるのではないかと私は思っているのです。毎朝、子どもたちと会い、私はそれを感じています。毎日、マスクをしての登校も本当に大変だなと思っているのです。市内９校を１週間で回っているということでしたけれども、市内９校に限らず、悩みを抱えているお子さんや苦しんでいる家庭もあるのではないかと思うのです。\n　チームということは分かりますけれども、今の体制をもっと強化するような方向で、ぜひ前向きに、他の部局とも具体的な検討していただいて、人材の養成に努めていただきたいことを要望します。\n　次に、同じく、171ページの子どもの貧困対策推進事業についてです。\n　令和２年度の取組を通じ、どのような成果があって、どのような課題が残っていると教育委員会では総括しているのでしょうか。",
+    "text_length": 427,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-100",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：子どもの貧困対策事業についてです。\n　貧困対策の成果と課題でいきますと、子どもの貧困対策本部が開き、２年間ぐらい検討をしてきました。その中では、どんな家庭においても、教育を受ける権利をというところでの……",
+    "text_length": 103,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-101",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：大変申し訳ありません。\n　貧困対策会議から奨学金制度の創設をという御提案をいただいたており、それが成果ではありますが、この後、子どもたちが平等に社会に出ていけるようにというキャリア教育が、今、頻繁に話し合われているところで、現在、そこにつながっているのかなと考えているところです。",
+    "text_length": 141,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-102",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：成果として、給付制の奨学金制度をぜひ創設してほしいという要請を市長にしたということでした。これは貧困対策のプロジェクトチームの大きな一歩だと思いますので、ぜひ、実現に向け、前向きに、急いで実らせていただきたいと思うのです。\n　令和２年度の足跡はあまり見えなかったのですが、それはコロナ禍ということもあったと思うのです。でも、その前の年、その前の年と、研究紀要という形でかなり膨大な資料を出し、貧困対策の取組を市民に知らしめたということがあったと思うのです。\n　令和２年度は、やはり、コロナ禍があってそういうまとめができなかったということなのでしょうか。",
+    "text_length": 277,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-103",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　令和２年度については、おっしゃるとおり、コロナで相当の会議が中止になっています。講習会も企画していたのですが、どうしても開けなかったということがあります。ただ、キャリア教育の研修会として、稚内高校が進める稚内学というものを小・中学校の先生等を集めて稚内高校でやったり、稚内南中学校で授業を見たりなど、そうしたものはやっているところです。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-104",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：昨年度は、そういうことで活動が思うようにできなかったということでした。コロナは終息の兆しが見えていますので、次年度以降は、具体的な対策を取り、ぜひ打って出る必要があるかなと思っています。\n　最後ですけれども、先ほど給付制の奨学金制度や就学援助制度の充実なんかもうたわれておりましたので、具体的な貧困対策に向け、今後ともぜひ取り組んでいただきたいとい思います。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-105",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：私からは、同じく、171ページの教育相談・不登校対策事業と放課後学力グングン塾開催事業について伺いたいと思います。\n　まず、教育相談・不登校対策事業についてです。\n　令和２年度におけるつばさ学級に通っている児童生徒の人数とその通い方についてお聞きします。\n　学校には行けないけれども、つばさ学級には通えている子、要するに、つばさ学級のみに常時通っている子、そして、つばさ学級に行くのだけれども、学校にも度々行ける子、つばさ学級にも学校にも全く行けていない児童生徒がいるのかをお聞きしたいと思います。",
+    "text_length": 250,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-106",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　つばさ学級に通っている子どもについて、今、佐藤委員が言われた分類まで細かく分けてはおりません。ただ、つばさ学級に通うときには必ず登録してもらいまして、そこで登録した人数や来ている人数は押さえております。\n　令和２年度の登録人数は26名でして、その中で常時来ているのは多くて七、八名ぐらいとなります。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-107",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：登録されている人数は分かりましたけれども、先ほど私が言ったつばさ学級にも学校にも通えていない児童生徒は存在をしていないのかといいますか、その把握はされているのでしょうか。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-108",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　学校にもつばさ学級にも全く行けていない子は、令和２年度中はおりません。ただ、行けたり行けなかったりしていて、つばさ学級に週１回だけは行けるというような子は中にはいたと考えています。",
+    "text_length": 102,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-109",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：外との関わりが全くない子たちはいなかったということで、ちょっと安心しました。\n　子どもと相談所とのつながりはあると思いますし、相談所と保護者とのつながりも当然あると思います。ですから、何かあれば、そこを通して相談や支援をしているのだと思うのですが、例えば、保護者同士のつながりです。昨日もちょっとお話ししましたけれども、ひきこもりサポート事業で家族会を立ち上げていきたいという話がありましたよね。あるいは、認知症の関係ではそういった会がもうありますけれども、不登校の児童生徒の家族や保護者の集まりや会についてはあまり聞いたことがないのですね。\n　そういったものは何かあるのでしょうか。",
+    "text_length": 293,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-110",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　現在、つばさ学級に通っている子どもたちの保護者同士のつながりといいますか、団体みたいなものはありません。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        84
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-111",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：当事者でしか分からない思いや悩みがあり、それを共有できる場所が必要なのではないかなと思うのです。それで保護者も気持ちの切替えができたり、子どもに接する対応が変わったり、そういったプラス面があるのではないかなと思うのです。\n　今はそういったものがないということですが、それこそ、相談所に相談してもらって、こういったものを検討していただけないかと思うのです。\n　今通っている子の保護者に限らず、ここまで行かなくても、登校を渋ったり、なかなか行けないという、相談所に関わらなくても、そういった子の保護者とはまだいっぱいいると思いますし、そういった方たちが相談できる機会や場所があればいいのかなと思うのです。\n　ですから、今、つばさ学級に通っている子の保護者だけではなくても関わりが持てるようなものが何かできないのかということで相談をしていただけないかと思うのですが、いかがでしょうか。",
+    "text_length": 390,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        86
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-112",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "教育長（表純一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えをさせていただきます。\n　先ほど今はないと言ったのですけれども、私の経験からお話ししますと、かつて、保護者の会はありましたし、私も要請を受けたことがあります。今はそうしたものがないので、委員のおっしゃるとおり、残念だなと思っています。\n　豊富では、不登校だった人たちがある意味、社会活動をしているような方々もいらっしゃいます。あるいは、そこのＯＢで、悩みを克服した方もいらっしゃいますので、そういう方たちを含めたネットワークをつくっていきたいと思っていますので、ぜひ検討をさせていただきたいなと思います。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        88
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-113",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：かつてはあったということでしたし、つくっていくことに関しては問題ないと思います。本当に悩んでいる方は本当にいっぱいいると思いますので、積極的に取り組んでいっていただければと思います。\n　次に、放課後学力グングン塾に関してです。\n　これは毎回取り上げられてきた事業ですけれども、資料もいただきました。私は、参加率が高いからいいとか低いから駄目だとかと言うつもりは全くありません。ただ、令和２年度に関して言えば、とりわけ参加率が低いなと感じました。\n　これはコロナの影響があるのかは分からないのですけれども、必要性をあまり感じてもらえていないのか、市教委としてはこの要因をどのように捉え、どのように分析されているのか、伺いたいと思います。",
+    "text_length": 318,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        90
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-114",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　令和２年度のグングン塾への参加率が低いことについてです。\n　間違いなくコロナはあります。学校が完全閉校になった時期もありましたし、冬休みも夏休みも短縮されたということがあります。さらに、授業時数も、１日６時間といったことがずっと続いていましたので、保護者が子どもの疲れを見て敬遠してしまったということが原因ではないかなと分析しているところです。",
+    "text_length": 184,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        92
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-115",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：確かに、そういった学校の状況だったので、コロナも大きく関わっているのだろうなと思います。子どもたちとしても休みが短かったり授業が増えたりで大変だったのだろうなと私も思います。\n　グングン塾というのは、基礎学力を身につけてもらう、あるいは、学力の向上につなげるということが目的ですが、学力的に心配だといいますか、基礎学力をもう少ししっかりさせてあげたいなと思うような児童たちが本当に参加ができているのかどうか、これは以前にも聞いたことがあるのですが、もし押さえられているのであればお聞かせください。",
+    "text_length": 249,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-116",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　必要な子どもたちが参加できているのかですが、基本的にグングン塾は自由参加となっています。学校の先生から声をかけていただいているとは思うのですが、そうした子どもたちが必ず参加しているかと言われると、そこまではできていないといいますか、思うような人が集まってはいないと思っております。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        96
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-117",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：これは自由参加なので、確かにそういったことが起こり得るのだと思います。\n　そこに参加している子たちは、基礎学力が身についたり、どんどん学力が向上していくと思うのです。その一方、もう少ししっかりと身につけさせてあげたいと思える、必要としている子どもたちがそこに参加できていないということで、逆に差が広がってしまうような側面もあるのではないかと心配するのです。\n　ただ、これは自由参加で、強制はできないのですよね。子どもたちへの促しは教員の皆さんもやられていると思うのですけれども、学力を底上げしていくということについてはどういうお考えを持っているでしょうか。",
+    "text_length": 279,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        98
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-118",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　グングン塾は、基本的には補助的な役割だと考えています。やはり、学力の向上については学校での教育が一番で、学校の先生たちがきちんと見て、できない子たちには放課後学習をさせるなど、そういったことは今も一生懸命やっていますけれども、そういったことで学力の向上につなげていっていただいていると思っております。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        100
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-119",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：本当にそのとおりだと思うのです。学校の授業できちんと身につけていくのが一番いい姿であると思います。これはなかなか難しい問題ではあると思うのですが、学力が向上するような取組について、いろいろな関係機関とも連携しながら取り組んでいってもらいたいと思います。\n　ただ、一方で指導員がなかなか確保できないということも言われていたかと思います。これについて、令和２年度においてはどういった努力をされて、今後はどのような取組を、あるいは、強化をしていこうと思っているのか、伺いたいと思います。",
+    "text_length": 241,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        102
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-120",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "学校教育課長（山川忠行君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　教員の確保という問題についてです。\n　令和２年度は６名、令和３年度は６名という状況ではあるのですが、基本的には退職教員の方々に声をかけ、やっていただける方を探しているところです。しかし、学校教員が足りない状況もあり、そこに向けていくということもあり、グングン塾のほうまで手がなかなか回らないというのが正直なところです。\n　次年度に向けても同じようなことしかできないのかもしれないのですが、有資格者の掘り起こしは行っておりまして、実際に１人、２人と入っていただいておりますので、そういった人をさらに探っていきたいと思っています。",
+    "text_length": 275,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        104
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-121",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "相内玲子委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "相内 玲子",
+    "member_faction": "無所属",
+    "text": "：179ページの文化財保護事業についてお聞きいたします。\n　修繕費が上がっているのですけれども、どういう文化財を修理し、その点数が何点あったのか、お教えください。",
+    "text_length": 81,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        108
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-122",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "教育総務課長（西角尚人君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　文化財の修繕についてですけれども、稚内公園の短歌の道の看板の修繕に使わせていただいております。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        110
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-123",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "相内玲子委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "相内 玲子",
+    "member_faction": "無所属",
+    "text": "：一つお教えいただきたいのですが、北海道縄文のまち連絡会負担金というものがあります。\n　稚内には昔から縄文時代の土器が結構出ています。縄文時代のものは文化遺産などになっていますけれども、稚内市としては、文化財を通し、これからもっと連携していくという考えなのでしょうか。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        112
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-124",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "教育総務課長（西角尚人君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　北海道縄文のまち連絡会との連携についてですけれども、現在もパンフレットなどの作成で連携していますし、今後もそうした関係を続けていこうと思っています。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        114
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-125",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "相内玲子委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "相内 玲子",
+    "member_faction": "無所属",
+    "text": "：稚内市では、アイヌ文化や縄文文化のものなど、すごく古くからあるものがどんどん出てくるのではないかと思うのですけれども、今後、そうしたものを連絡会からもっと発信していただき、稚内市もその中に入れてもらうといいますか、縄文文化があるのだよ、アイヌ文化もあるとどんどん発信していただくことを要望します。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        116
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-126",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：183ページの水族館施設維持管理事業について質問いたします。\n　以前、稚内北星学園大学の研究発表がありまして、その中で大変印象に残ったものがありまして、ドクターフィッシュの展示についてです。これは、日本語での解説しかないので、外国人の方がなぜ人がこんなに集まっているのだろうかと困っていたという場面に出くわしたけれども、展示については、英語や中国語や韓国語など、多言語での解説を加えたほうが親切ではないかという研究発表だったのです。\n　その後、改善されたかなと思って何回かお邪魔したのですけれども、まだ日本語しかありませんでした。現状はどのようになっているか、教えてください。",
+    "text_length": 289,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        118
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-127",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "科学振興課長（谷原敏夫君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えをさせていただきます。\n　昨年度、観光交流課でＱＲコードの説明のものをつくっていただきまして、その中には韓国語と日本語と英語のものがあります。\n　その他、小さい水槽に関しましては、今、中尾委員がおっしゃったとおり、まだ日本語での表示しかございませんので、今後は内部で検討させていただきたいと思います。",
+    "text_length": 154,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        120
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-128",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "中尾利一委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：少し改善されたということなので、よかったなと思っています。ぜひ、今後は、外国人の方でも分かるよう、ほかの水槽についても対応をお願いしたいと思います。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        122
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-129",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "横澤輝樹委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "横澤 輝樹",
+    "member_faction": "自民政友会",
+    "text": "：１点だけ確認させてください。\n　185ページのみどりスポーツパーク維持管理事業の燃料費についてです。\n　予想の３分の２ぐらいで済んでいるのですけれども、これは予想以上に熱効率がよかったからなのでしょうか。令和２年度は燃料代が下がった記憶がなかったので、その辺を教えていただけますか。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        126
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-130",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "スポーツ・レクリエーション担当主幹（中村直樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　燃料費についてですが、令和２年度は燃料単価が下がったことにより減額しておりまして、その分、下がったということです。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        128
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-131",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：１点だけ、206ページの保険給付費等交付金について伺います。\n　令和２年度決算ですけれども、減額が１億6,000万円ほどあったということです。元年度決算は1,172万円ほどの減額でしたが、２年度においてこれほど大きな減額となった要因といいますか、理由をお聞かせください。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        141
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-132",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　主な減額の理由についてですが、一般被保険者療養給付費負担金の減額でありまして、前年度に比べ、決算額で約１億4,000万円の減額となっております。\n　こちらの主な理由につきましては、新型コロナウイルス感染症の影響により、受診を控える傾向があったことに加え、マスク着用やうがい手洗いなどが徹底されたことなどによって、インフルエンザなど、ほかの感染症の流行が抑えられたことが要因であると考えています。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        143
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-133",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：おおよそコロナの影響なのかなと私も思っていました。\n　結局、１億6,000万円が余ったことになるわけですけれども、この使い道です。例えば、道から示されているものはあるのでしょうか。これは基金に積む、あるいは、自治体の裁量で自由に使っていいとされているのかなど、そういう道の方針というのはありますか。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        145
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-134",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　保険給付費につきましては、都道府県単位化により、その財源を北海道から交付金で必要額が賄われておりますので、保険給付費で減額になった分につきましては、収入が減額になるということになります。ですから、市の裁量で何かできるということはございません。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        148
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-135",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：これが市の裁量で使えるのだったら保険料の抑制に使ってほしいなということを要望したかったのですけれども、それは不可能だと分かりました。\n　ただ、市独自でも保険料の減額等に今後も努めていってもらえたらということを申し述べておきたいと思います。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        150
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-136",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：後期高齢者医療特別会計のうち、健診について伺いたいと思います。\n　以前にもお聞きしたことがあったのですけれども、稚内市における後期高齢者の健診率は全道でも非常に低いところに位置しているということで、人口が同規模の自治体と比べても、かなりの開きがあるのです。例えば、令和元年度であれば、稚内市は4.84％ですが、網走市では12.65％、伊達市では12．16％ということで、10％を超えているところもある中、稚内市はかなり低いなという印象を持っているところです。\n　そこで、２年度における健診の受診率はどのような数字になっているのか、また、引き上げるためにどんな手だてを取られてきたのかを伺いたいと思います。\n　コロナがあったので、思うように事業が進まなかったのだろうなとは思うのですけれども、結果としてはどのような健診率になったのでしょうか。",
+    "text_length": 371,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        162
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-137",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "総合窓口課長（新井久美子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　受診率につきましては、4.16％となっております。\n　また、受診勧奨の手だてですけれども、春と秋に勧奨文書を対象者に送付しておりましすし、受診していただいた方たちに簡単なアンケート調査も実施しておりますので、今後はそのアンケート結果を参考に取り組んでいきたいと思います。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        165
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-138",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：コロナ禍の下でも受診率は毎年度とあまり変化がなかったのだな、それは意外だなという気がしますが、そうはいっても、受診率がもともと低いですよね。\n　今、春と秋に文書を送付し、お知らせしているとおっしゃっていたのですが、果たして本当にそれだけでいいのかなということがあります。\n　令和２年度の当初予算の審議のとき、私から、令和２年度から、高齢者の保健事業と介護予防の一体的な実施ということで、フレイルのおそれのある高齢者全体を支援することを目的に、専任の保健師の配置に対し、国と広域連合から保健師１人当たり580万円を上限として補助金が出される事業がスタートしますので、ぜひ、ここに配置を検討してみたらいかがでしょうかとお聞きしています。\n　その当時、現状では新たな保健師の確保は難しいということもあって、２年度はこの事業を活用しないけれども、今後、関係者間において、体制づくりや取組内容について引き続き検討を行っていきたいという答弁をいただいておりました。\n　そこで、２年度において検討が行われてきたのかどうか、そして、来年度に向け、この配置は可能になりそうなのかをお聞きしたいと思います。",
+    "text_length": 494,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        167
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-139",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "生活福祉部長（藤原淳君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　先ほどコロナ禍の中で受診率がという話をいただきましたが、その前の年の受診率に比べると、コロナ禍の中でも受診率は多少上がっているということですので、少しずつ成果は上がってきているのだろうと思っております。ただ、稚内市の状況で言いますと、長年、ぎりぎりまで悪くならないと受診されないという方が多いという分析もしていますので、そういった方々にはより勧奨し、早めの受診を促すようにしたいと考えております。\n　また、今の御質問の件ですが、保健師、専門職の配置ということになりますと、今の健康づくり課の中で事業に対応するだけで精いっぱいとなりまして、配置換えは困難なところです。\n　健康づくり課に配置はしておりますが、高齢者については健康づくり課の保健師のフォローもしながら、フレイル予防も含め、ふだんの健診の中で対応している状況になっております。\n　ですから、新年度に向かって配置ということも難しいですが、今の体制で高齢者の健康維持に関しては継続して事業展開していきたいと考えております。",
+    "text_length": 451,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        170
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-140",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "佐藤由加里委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 由加里",
+    "member_faction": "日本共産党",
+    "text": "：健診率は、前年度より若干上がっているということでしたが、全道的に見れば低いところにあり、それは事実なわけで、やはり、その引上げを図っていくためには、先ほど私からもお話をしたとおり、計画や地域の現状をよく知り、高齢者の病気の予防につなげていくなど、そういった専門的な配置をすることが望ましいのではないかなと思います。\n　これは、新しく職員を採用しなくても、今いる保健師の中で専門に配置することも可能だと思います。ただ、部長がおっしゃったように、今、十分に確保されていて余裕のある状況ではないということは私も理解するところです。とはいえ、高齢者の健診率の向上、ひいては、医療費の抑制にもつながっていくものだと思いますし、これは補助金も出ますので、うまく活用できればいいのだろうなと思います。\n　これは人材のことですので、なかなか簡単にはいかないと思いますが、引き続き積極的な検討をしていただきたいと思います。いかがでしょうか。",
+    "text_length": 412,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        172
+      ]
+    }
+  },
+  {
+    "id": "wakkanai-404-3-141",
+    "municipality": "wakkanai",
+    "council_id": 404,
+    "council_name": "令和 ３年  決算特別委員会",
+    "schedule_id": 3,
+    "schedule_name": "09月30日－03号",
+    "date": "2021-09-30",
+    "speaker": "生活福祉部長（藤原淳君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "：お答えいたします。\n　先ほどお話ししたとおり、保健師につきましては健康づくり課、長寿あんしん課、地域包括支援センターに配置しております。\n　現状で言いますと、毎年の採用計画において、一般職のほかに、そういう専門職の募集をしておりますが、なかなか採用に至っておりませんし、採用されましたということになりましても、今お話になったほうに配置をするのではなく、健康づくり課の体制も不足しているという状況から、配置換えをするということにはならないのかなと考えております。\n　これは今後の市全体の採用計画にも関わることですけれども、専門職の採用については積極的にお願いをしながら、可能であればそちらへの配置を考えていただきたいと私どもからも働きかけたいと思っています。しかし、現状では少し難しいかなとも思っていますので、先ほどお話ししたとおり、現状の中での体制づくりで継続してまいりたいと考えております。",
+    "text_length": 397,
+    "source": {
+      "minutes_file": "data/wakkanai/minutes/404.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        174
+      ]
+    }
+  }
+]

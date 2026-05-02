@@ -1,0 +1,531 @@
+[
+  {
+    "id": "noboribetsu-389-2-001",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "［登壇］　ただいま議題となりました報告第28号は、専決処分について（支払遅延）であります。\n　支払い遅延に係る損害賠償の額を定めることについて地方自治法第180条第１項の規定に基づき専決処分を行ったことから、同条第２項の規定により報告するものであります。\n　防災行政無線等に係る令和５年５月請求分の電気料８万8,454円の支払い処理を失念し支払いが遅延したことから、当該事業者に対し防災行政無線等71か所のうち58か所分の延滞利息を損害賠償として支払うものであります。\n　損害賠償の額は712円、専決処分の日は令和５年10月５日であります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 292,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-002",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "足立議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "足立　知也",
+    "member_faction": "無所属・無会派",
+    "text": "先日21日の総務・教育委員会で、説明資料として提示していただいたものの中に最後、不適切な事務処理についてということで本事案において支払い遅延した５月請求分の光熱水費、通信運搬費の支払いについて職員個人の自費により支出するといった不適切な事務処理が判明したので併せて報告するとありました。これは、８月29日同じように総務・教育委員会での説明資料の中で、インターネット光回線の回線使用料4,954円、そして防災行政無線の聞き逃しダイヤルに係る電話回線使用料7,929円、そして今回の報告書にも上がっている電気料８万8,450円の支払い全てを職員の方が自費で支出したということなのかというところの確認と、８月にこのようなことが示されていなかったものが11月になって今月の資料で提示されたことの詳細と経緯について説明をお願いします。",
+    "text_length": 362,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-003",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、まず不適切な支払いを行うに至った経緯から詳細にお答えさせていただきたいと思います。今回の不適切な支払いにつきましては、令和５年５月請求分のＮＴＴファイナンス株式会社に対する回線使用料7,929円、光回線使用料4,950円、北海道電力株式会社に対する防災行政無線等電気料金８万8,454円の合計10万1,333円の支払いが遅延し、総額824円の延滞金が生じたものですが、経緯といたしましては、この業務を担当する職員がＮＴＴファイナンス株式会社と北海道電力株式会社からの令和５年５月請求分の納付書を紛失いたしました。その後、ＮＴＴファイナンス株式会社からの請求につきましては、７月11日に未納になっていることに気がつき、納付書の再発行を依頼し７月下旬に納付書を受領しました。この際に、７月31日までに入金がない場合については利用を停止する旨の通知を受けております。\n　北海道電力株式会社からの請求につきましては、７月24日に相手方より５月請求分が未納となっているとの連絡を受け、その際に納付書の再発行を依頼しております。両支払いとも、支払い遅延により利用停止になっては大変になるということを考えまして、上司に報告、相談することなく７月29日及び31日にＮＴＴファイナンス株式会社への支払いを、８月３日に北海道電力株式会社への支払いをコンビニから再交付された納付書により自費で支払いしたものです。\n　担当部署におきましては、本人への聞き取りなどによりまして８月上旬に自費での支払いというものを把握しておりました。その後、領収書の確認や相手方との協議などを行っておりましたが、市議会への報告につきましては延滞金の総額が確定した後の最後の専決報告時に行うこととし、取り組んでおりました。\n　以上です。",
+    "text_length": 750,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-004",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "足立議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "足立　知也",
+    "member_faction": "無所属・無会派",
+    "text": "経緯と詳細については理解しました。そして、８月のときに再発防止策ということも示されていますけれども、改めて再発防止策というのをお聞かせください。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-005",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事案につきましては、全庁に共有し支払い漏れや支払遅延が発生しないよう改めて啓発を図ってまいります。また、職員個人の自費による支払いや支払遅延等を未然に防ぐため、口座自動振替払いによる支払い方法に変更するとともに、グループ内において独自様式の支払い台帳を作成しまして複数人による定期的な確認を行うなどのチェック体制を強化し、再発防止を図っております。\n　以上です。",
+    "text_length": 184,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-006",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "足立議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "足立　知也",
+    "member_faction": "無所属・無会派",
+    "text": "分かりました。10万円を超える金額を自費というのは、相当な負担だと思います。私も10万円をすぐに負担できるかといったらできません。そう考えたときに、職員の方はかなり悩まれたのではないかなと。ミスというのは誰にでもあります。だけれども、やはりミスをみんなでカバーし合う、グループ内で複数人による定期的な確認、チェック体制というのももちろん重要ですけれども、私は上司や部下や仲間たちと相談できるような関係の構築というのも非常に重要ではないかと。もし、それ以上の金額のことが今後起きてしまった場合、そういうミスを犯してしまった職員がどのように金策に走るかとか、誰にも相談できずに１人で悩みを抱え込むということを考えたら、私は非常にこれはもっと考えていかなければいけないのではないかなと感じています。そこで、やはりそのためには、今回上司に相談できなかったという部分も踏まえて、そういったところの相談体制の構築というところに対しての考えをお聞かせください。",
+    "text_length": 423,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-007",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事案につきましては、本来であれば未払いというものが生ずることのないように組織によるチェックが働くことが、まずは第一であると考えてございます。今回そのチェックが働かなかったこと、さらには担当者が支払い遅延によりサービスが利用停止になることをおそれ、誰にも相談することなく自費で支払うという不適切な事務処理を行ったことにつきましては大変遺憾に思っています。グループ内においては、日々の業務の進捗状況の確認や声かけなどによりコミュニケーションを図って、課題がある業務や滞っている業務を把握するなど、風通しのよい環境づくりがなされていると考えておりました。しかし、今回の事案において上司も支払いが滞っていることに気がつくことができず、また担当職員も未払いについて誰にも報告、相談せず、自費で払うという不適切な事務処理を行ったことというのは大変遺憾と思うとともに、組織としても反省すべき点であると認識しております。同様の問題が起こることのないよう、仕事上の問題を相談しやすい職場づくりにより一層努めてまいりたいと考えてございます。",
+    "text_length": 463,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-008",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "工藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　俱二雄",
+    "member_faction": "市民・前進",
+    "text": "それでは、私もさきに総務・教育委員会で報告がありました専決処分について質疑したいと思います。今、足立議員がほとんど私と同じような質問内容でありましたので、ほぼ聞いておくことはないのですけれども、支払いを忘れていたということも一番の原因ではなかったかなと。用紙をなくしたということでありましたけれども、それは毎月のことでありますから、すぐに職員自身が把握して相手から電話が来ることなく再発行の手続とかをすれば、また違う結果になったのかと思うのですけれども、今質問の中で答弁があったとおりに本人は防災無線なものですから緊急時に何かがあったら困るということで、大分追い込まれて早く支払いをしなければならないというふうに私も推察するわけではありますけれども、この職員が立替え払いをしたという事案をどういうふうに捉えているのかということをお伺いしたいと思います。",
+    "text_length": 376,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-009",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほども答弁させていただきましたけれども、今回誰にも相談することなく、まずは遅れていることを相談できなかったということが非常に私どもとしてはショックといいますか、まず一番そこで相談してほしかったという思いがございます。その後の判断につきましては、確かに本人も誤った判断を取ってしまったという事例になりますけれども、上司なり、同僚なりに相談していただければ自費で払うというところについては防げたものと考えてございます。決して私どもから見ても風通しの悪い部署ではなかったと思うのですけれども、まずそこで相談していただけなかったということを、そこを重く捉えておりまして、まずはチェック体制を強化すること、相談がなくても気づけるという体制と、あとは上司に対して自分の失敗ですとかそういうことについても相談できる環境づくり、雰囲気づくりに努めてまいりたいと考えてございます。",
+    "text_length": 382,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-010",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "工藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　俱二雄",
+    "member_faction": "市民・前進",
+    "text": "それで先ほどの質疑の中で、支払いの関係や今後のことになったのですけれども、ちょっと聞き取れなかったのですけれども、自動引き落としをするかしないかということを検討しているのかということをお伺いしたいです。",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-011",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事案につきましては毎月支払いが生ずるものでございますので、総務グループ内において支払い漏れや支払遅延等を未然に防ぐために、既に口座自動振替による支払い方法に変更して事務処理が済んでおります。\n　以上です。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-012",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "工藤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　俱二雄",
+    "member_faction": "市民・前進",
+    "text": "質疑はこれで終わらせていただきたいと思いますけれども、うっかりということはあり得ることでありまして、相談し忘れた、なくした、支払いが滞る、サービスの提供が停止するということで、本人も追い込まれていたのではないかなというふうに思うのです。今チェック体制であるとか再発防止策をお伺いしましたけれども、これから自動引き落としもされるということでそういうミスは少なくなってくるのではないかなと思いますが、ゼロではないと。人的ミスは必ず出てきますので、先ほどの再発防止策を考えながらグループ内だけではなく全庁的にこの事案を報告していただいて、ほかにもこういうミスがあり得る可能性があるので、その辺は全庁的に取り組んでいただきたいなというふうに思いまして、質問を終わらせていただきたいと思います。",
+    "text_length": 342,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-013",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "今野議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "今野　幹大",
+    "member_faction": "公明党",
+    "text": "すみません。１点だけご確認させていただきたいのですが、先ほど職員の方が立て替えたというお話だったのですけれども、その支払ったお金は、登別市としては本人にお金を返したのかどうなのか、そのお金がどうなったのかをちょっと確認させていただきたいと思います。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-014",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず結論から申しますと、まだ本人には返せていない状況にございます。ただ、関係する請求のあった企業ですとかにもいろいろ相談しながらこれまで進めてきていたのですけれども、最終的には市が本人にその分を補償するというか支払うこととして今事務を進めております。",
+    "text_length": 125,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-015",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "［登壇］　ただいま議題となりました議案第75号は、登別市職員の給与に関する条例等の一部改正についてであります。\n　令和５年、人事院勧告において民間給与との較差に基づく国家公務員の給与の改定が行われました。本市としては、国家公務員に準じた給与の改定を行うこととするため人事院勧告に基づいた所要の改正を行うほか、文言等規定の整備を行うため所要の改正を行うものであります。\n　なお、この条例は公布の日から施行し、令和５年４月１日から適用するほか、一部は令和６年４月１日から施行するものであります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 267,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-016",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "岩田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "岩田　恵",
+    "member_faction": "市政クラブ",
+    "text": "市民の皆様に共有していただけるように分かりやすい質問に努めてまいりたいと思います。よろしくお願いいたします。\n　このたび登別市職員の給与に関する条例等の一部改正により職員給与等の引上げが行われることになりますが、その引き上げられる職員給与等は市の財源で賄われることになると思います。本市の財源の一部は市税収入であると認識しておりますが、本市の市税収入の増減と職員給料等の引上げに関連性はあるのでしょうか。お願いします。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-017",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "登別市職員の給与に関する条例等の一部改正による給料の引上げ、引下げにつきましては、これまでも本市の市税収入の状況とは切り離して考えておりますので、本市の市税収入の増減と職員給与等の引上げに関連性はございません。しかしながら、市の財源にも限りがございますので、収入と人件費と事業費のバランスの取れた行財政運営が重要であると認識しております。\n　以上です。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-018",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "岩田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "岩田　恵",
+    "member_faction": "市政クラブ",
+    "text": "分かりました。令和３年から令和４年までコロナの影響等で助成金や補助金などが本市にもありまして、財政もちょっと上向きになっていたかなというふうに思います。前回の一般質問で天神林議員もその件について質問いたしておりましたが、私もその件に関して懸念をしておりまして、確かに財源がよくなっていると。このたび１人何千円ぐらいずつのお給料のアップかもしれませんが、それも集まると結構な金額になるのかなというふうに思っておりますので懸念をしておりますが、引き上げられるということは承知いたしました。\n　もう一つですけれども、市内には給与等が上がっていない民間企業が多々あるのではないかなというふうに思っています。このたび職員の給与が引き上げられる理由について決定的なものを教えていただけますか。よろしくお願いします。",
+    "text_length": 351,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-019",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まずは、本市の給与決定の基本的な考え方をご説明させていただきます。本市では、国家公務員の給与水準を常勤の民間企業従業員の給与水準と均衡させる、いわゆる民間準拠を基本とする人事院勧告に基づきまして国家公務員の給与に準拠することとしております。このため、国家公務員の給与が引き上げられる際には本市の給与を引き上げて、国家公務員の給与が引き下げられるときには本市の給与を引き下げてまいりました。令和５年人事院勧告につきましては、民間給与との較差に基づきまして月例給及び一時金を引き上げる旨の勧告となっておりますので、今回国家公務員に準じた給与改定を行うこととするため、本市の給与条例を改正しまして職員給与を引き上げるものであります。",
+    "text_length": 313,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-020",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "岩田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "岩田　恵",
+    "member_faction": "市政クラブ",
+    "text": "今人事院という言葉が出てまいりました。人事院、国のほうに伴ってということですね。人事院が決めたからといって登別市が必ずしもそれに準じなければいけないということはないというふうに認識をいたしておりますが、今までもそれに準じてきたということで上げるときも下げるときも今までちょっと下がっていたみたいなことを承知しておりますが、それは仕方がなく今回は上がるのかなというふうに承知いたしました。人事院は、民間の企業との較差ということでこのたび言われておりますが、民間の企業と言われましても50人以上の企業というふうに認識をしておりましたけれども、人数の多いところの企業との較差なのかなというふうに思っておりまして、登別市の中にはそれが当てはまるのかなというふうなところで、ちょっと腑に落ちないところもございますが、分かりました。\n　質問は以上なのですけれども、このお話をちょっとしておきたいなというふうに思います。今回職員の給料が上がることで、市民の中で助成金だったり、補助金だったり、もらえる世帯、確かに非課税世帯にはそのような手厚いものがあるのですけれども、課税世帯にはないと。課税世帯でもぎりぎりのところで苦しいと言って頑張っていらっしゃる家庭がいっぱいあるということをぜひ忘れないでほしいなというふうに思っております。職員のことを考えますと、この給料アップでメンタルヘルス向上につながるのかなというふうには思っておりますので、ぜひ今後このメンタルヘルスを向上することによりましてサービスの質の向上をさらなる願いとして、この質問を終えたいと思います。\n　以上です。",
+    "text_length": 681,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-021",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "民間給与との較差に基づく給与改定ということで、今回はその較差平均0.96％ということですけれども、これに基づいて引上げを行うということでありますけれども、今回の条例改正により職員給与に係る影響額についてまずお聞きしたいです。それから、今回の増額に係る予算について、今回どのように対応されるのかというところをお聞きしたいと思います。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-022",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本条例改正による全会計での主な影響額についてでありますけれども、当初予算ベースではなく実態に即した職員の実数ベースでお答えしますと、給料月額につきましては、給料表の改正により年間で2,300万円程度の増となります。また、この給料月額の増額による６月の期末勤勉手当の差額支給影響額は、全会計で400万円程度の増となります。12月の期末勤勉手当の支給月数が、それぞれ0.05月分増加となることによる影響額については、全会計で2,600万円ほどの増となります。そのほか、管理職手当の増額分を含めると合計で5,900万円程度の増となっております。\n　なお、今般の増額に係る対応についてでありますけれども、人件費に係る毎年度の当初予算につきましては、当該年度に必要な職員数を確保できることを前提に登別市定員適正化計画上の職員数で組んでおります。しかしながら、本年度においては保健師や技師等の専門職の必要数を確保できておらず、実態として当初予算で計上した人数よりも少なくなっていることから、当初予算の範囲内で今回の改正につきましては対応することができる見込みとなってございます。\n　以上です。",
+    "text_length": 490,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-389-2-023",
+    "municipality": "noboribetsu",
+    "council_id": 389,
+    "council_name": "令和 ５年  第３回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月24日－01号",
+    "date": "2023-11-24",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。合計で5,900万円程度の増ということですけれども、当初の予算につきましては必要な職員数を確保できる人数で予算を組んでいたと。それに対して今回の補正等々の対応についてですけれども、専門職等々の数が確保できなかったということで、実態としては当初予算で計上した額の差の範囲内で対応できるということについては理解をいたしました。逆に気になるのが、採用できなかったことによってしっかりその各職場の仕事がちゃんと回し切れているのかなというところ。それから健康面ですとか懸念がありますけれども、予算については了解をいたしました。\n　終わります。",
+    "text_length": 273,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/389.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        63
+      ]
+    }
+  }
+]

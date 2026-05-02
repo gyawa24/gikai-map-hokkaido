@@ -1,0 +1,140 @@
+[
+  {
+    "id": "noboribetsu-375-2-001",
+    "municipality": "noboribetsu",
+    "council_id": 375,
+    "council_name": "令和 ４年  第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月25日－01号",
+    "date": "2022-11-25",
+    "speaker": "伊藤副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕　ただいま議題となりました議案第80号は、登別市職員の給与に関する条例等の一部改正についてであります。\n　令和４年、人事院勧告において民間給与との較差に基づく国家公務員の給与の改定が行われたことから、国家公務員に準じた給与の改定を行うこととするため、登別市職員の給与に関する条例等について所要の改正を行うものであります。\n　なお、この条例は公布の日から施行し、令和４年４月１日から適用するほか、一部は令和５年４月１日から施行するものであります。\n　以上であります。よろしくご審議ください。",
+    "text_length": 248,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/375.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-375-2-002",
+    "municipality": "noboribetsu",
+    "council_id": 375,
+    "council_name": "令和 ４年  第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月25日－01号",
+    "date": "2022-11-25",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "登別市職員の給与に関する条例の改正ということで、給料表の改定、民間給与との較差、平均0.23％に基づいて引上げを行うと。それから期末勤勉手当の支給月数の改定、２つ目として登別市特別職の職員の給与の改正、３つ目で登別市任期付職員の採用に関する条例の一部改正ということで、ここも改正されるということですけれども、今回の改正によって会計年度任用職員の報酬への影響というのはどのような状況なのかというところを確認したいと思います。",
+    "text_length": 211,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/375.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-375-2-003",
+    "municipality": "noboribetsu",
+    "council_id": 375,
+    "council_name": "令和 ４年  第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月25日－01号",
+    "date": "2022-11-25",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の改正では、給料表を改定することになりますけれども、ほぼ全ての会計年度任用職員の報酬額は当該給料表に連動して設定していることから、該当する会計年度任用職員の報酬については令和４年４月１日に遡及し、引き上げることとなります。\n　また、期末勤勉手当の支給月数の改定につきましては、今回は勤勉手当の支給月数を引き上げるということとしておりますことから、期末手当のみを支給される会計年度任用職員の支給月数に影響はありません。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/375.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-375-2-004",
+    "municipality": "noboribetsu",
+    "council_id": 375,
+    "council_name": "令和 ４年  第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月25日－01号",
+    "date": "2022-11-25",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。当該給料表に連動して改定するということで、４月１日に遡及して引き上げるということになるというところ、理解をしました。\n　次に、３つ目の登別市任期付職員についてなのですが、任期付職員の給料表も改正されるということなのですが、これの影響というのはどのようなものなのかというところをお伺いしたいと思います。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/375.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-375-2-005",
+    "municipality": "noboribetsu",
+    "council_id": 375,
+    "council_name": "令和 ４年  第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月25日－01号",
+    "date": "2022-11-25",
+    "speaker": "土門総務部次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "人事院勧告に基づく国家公務員の給与の改正につきましては、一般職の職員の給与に関する法律等の一部を改正する法律により行われますが、この中に国家公務員の任期付職員の給料月額についても、一般職の職員の改正に伴い改正が行われていることから、この内容に準じ改正を行うものであります。\n　この給料表の適用対象となっている任期付職員は、登別市任期付職員の採用等に関する条例第２条第１項に規定する高度の専門的な知識を有する者及び優れた識見を有する者でありますが、現在は本条例に基づき採用している職員がいないことから、実際には影響がないところでございます。\n　なお、その他の任期付職員につきましては、登別市職員の給与に関する条例の給料表が適用されることとなりますが、今回の改正による給料月額に変動がないことから、影響はないこととなってございます。\n　以上です。",
+    "text_length": 371,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/375.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "noboribetsu-375-2-006",
+    "municipality": "noboribetsu",
+    "council_id": 375,
+    "council_name": "令和 ４年  第４回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月25日－01号",
+    "date": "2022-11-25",
+    "speaker": "千田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千田　文孝",
+    "member_faction": "市民・前進",
+    "text": "分かりました。任期付職員というのは現在は本市にはいないということで、影響がないというところについては理解をいたしましたし、任期付職員について登別市職員の給与に関する条例、これが適用するということで、今回の改正については変動がないということについても理解をいたしました。\n　終わります。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/noboribetsu/minutes/375.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  }
+]

@@ -1,0 +1,899 @@
+[
+  {
+    "id": "atsuma-411-1-001",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "教育長（遠藤秀明君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和７年第２回厚真町議会臨時会にあたり、学校給食における異物混入についてご報告申し上げます。\n　厚真町学校給食センターが提供した１月16日の給食において、金属片の異物が混入したことについて、ご報告申し上げます。\n　金属片は、中学校のご飯の配膳時に生徒が発見したもので、混入の連絡を受け、こども園、小中学校に米飯の喫食中止の連絡を行い、中止できたのが159食、すでに喫食を終えていて中止できなかったのが365食でした。喫食前であった一部の学校については、学校に保管している非常食での対応をおこなったところです。\n　保護者には16日に経過説明の文書、18日に小中学校の保護者、20日にこども園の保護者に調査結果の文書を配信しております。\n　園児、児童生徒の健康被害については、翌日17日にこども園、小中学校に聞き取り調査を実施し、被害がないことを確認しております。\n　混入した異物を特定するため、機器類の導入業者に調査、点検を依頼し、金属片は未使用と推測される直径15ミリメートルのワッシャーであることが判明し、混入の可能性としては、12月末に米貯蔵庫の更新作業をおこなっており、作業後に試運転、清掃作業をおこなっていますが、何らかの原因で米貯蔵庫内に混入した可能性が高いと思われます。\n　17日に、米貯蔵庫の総点検並びに試運転を実施し、安全確認を徹底した後、20日から給食の提供を再開しております。\n　このたびの異物混入によって、園児、児童生徒、教職員、保護者の方々に多大なご不安とご迷惑をお掛けしましたことに対して、深くお詫びを申し上げますとともに、再発防止を徹底し安心安全な給食提供に努めてまいります。\n　以上、ご報告申し上げます。",
+    "text_length": 717,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-002",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（秋永徹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、教育長からお話は聞きましたけれども、平ワッシャーか、スプリングワッシャーか、よく分かりませんけれども、それは配膳の中で発見された１個ですか。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-003",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "生涯学習課長（阿部雄史君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "混入されたものは１個と、こちらのほうでは断定しております。\n　以上です。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-004",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事故については、ワッシャーが発見されたというところから、これが発覚しているわけですけれども、報告の中に12月に米の貯蔵庫ですか、これの更新をおこなったということなのですけれども、普通こういうものの組み立ての段階で、その機械に必要なボルトの数、それに伴うワッシャーの数、これというのは、きちんと組み立てる前から決まっているはずなのです。私の経験からいっても。そうすると、そこでワッシャーが１個、ボルトのところに付けなかったというのがあるはずなのです。組み立て業者、それやっぱりその辺の指導をきっちりやらなかったら、少なくとも今後納入に関して、一時停止するとか、そういう措置は必要でないかと思われますけれども、いかがですか。",
+    "text_length": 313,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-005",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "教育長（遠藤秀明君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回導入業者に、専門の技術の方々に、すぐ翌日に点検をしていただきました。私たちも、そのワッシャーがどこから混入したかという原因をまず追究しなければならないということで、12月の末におこなった際の、新しい貯蔵庫の部分のワッシャーとナット、ボルト、すべて確認をいたしました。ところが、脱落している箇所はないということが確認されました。それで業者のほうにお伝えした、または業者と確認したのが、それでは予備のワッシャー、ボルト等があったのではないかということなのです。それで今、吉岡議員おっしゃったとおり、私どもが考えても、必ずその設置に必要、また組み立てに必要な部品の数は開始前と開始後、必ず総点検というのは必ず必要であろうと、それを徹底しなければ、この事故は防げないと。ただ今回については、先ほどの報告の中で申し上げましたとおり、完全な確定というところまでは至っておりません。あくまでも可能性が高いということでございます。ただ今後も、これを未然に防止するために、また再発防止するためには、少なくともそういう作業の前、作業の終了後、こういった点検を徹底していただくということを私からも、直接私に業者との、技術者と代表者来られたときに、指導というかたちというか、お願いということを再度させていただいたところでございます。",
+    "text_length": 556,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-006",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案２件、承認１件であります。\n　議案第１号　林業専用道（規格相当）幌里チケッペ線開設工事請負契約の変更について。\n　林業専用道（規格相当）幌里チケッペ線開設工事請負契約について、工事施工中に設計変更が生じたため、地方自治法及び厚真町議会に附すべき契約等に関する条例の規定に基づき、議会の議決をいただこうとするものであります。\n　議案第２号　令和６年度厚真町一般会計補正予算（第１６号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ２２７，７９３千円を追加し、歳入歳出予算の総額を、歳入歳出それぞれ１２，６３７，０３７千円とするものであります。\n　歳出における補正の主な内容について、総務費では、移住促進・関係人口創出事業、ふるさと応援基金費の追加。\n　民生費では、医療機関・社会福祉施設等物価高騰対策支援事業、子育て支援給付事業などの追加。\n　農林水産業費では、物価高騰経済対策事業、漁業燃油高騰対策事業の追加。\n　商工費では、物価高騰経済対策事業の追加。\n　教育費では、青少年センターの燃料費の追加であります。\n　この補正の財源として、国庫支出金、寄付金、基金繰入金の特定財源で２１１，８１８千円、普通交付税の一般財源で１５，９７５千円と見積り収支のバランスをとったところであります。\n　承認第１号　専決処分の承認について。\n　令和６年度厚真町介護保険事業特別会計補正予算（介護サービス事業勘定補正予算（第３号））について、地方自治法の規定により専決処分したので、同法の規定により、議会の承認をいただこうとするものであります。\n　以上が、本日ご提案申し上げております議案の提案理由であります。よろしくご審議の上、ご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 790,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-007",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-008",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-009",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "地方創生担当理事（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-010",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-011",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "住民課健康推進子育て支援担当参事（宮本幸世君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-012",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "産業経済課農業担当参事（中村信宏君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-013",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-014",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（菅原文子君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１点だけお伺いいたします。\n　資料の３ページ、新規事業として移住促進・関係人口創出事業なのですけれども、この構成員が今月からということですが、自宅で仕事ができるような方も対象になると思います。その際、ここの構成員の中に情報通信関係とか、例えば電波受信だとか、いろんなことの複雑なことも入ってくるかと思うのですけれども、そこの構成員に入るのかどうか、１点だけお伺いいたします。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-015",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "地方創生担当理事（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えさせていただきます。\n　それで今回の協議会の構成員、まだ協議会立ち上がってないので、あくまでも想定している協議会のメンバーの方々なのですけれども、今質問ありました情報通信の方は、今回のメンバーには、当初のメンバーには入っていないという状況にあります。ただ、この構成員につきましても必要に応じてというのでしょうか、その状況に応じて追加していくこと、あるいはメンバーを入れ替えることも可能になってくるので、もしそういった方が、今後、二地域居住を進める上で、必要であろうということであれば、それは柔軟に対応していきたいというふうに考えております。",
+    "text_length": 273,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-016",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（菅原文子君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この厚真地区では、山沿いだとかいろんな地区があって、やはり電波が受け取りづらいとか、いろんなことがあると思います。なので、この年２回において、やってみてそれから考えるということで、理解はいたしましたけれども、そういうことも視野に入れて今後お願いしたいと思います。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-017",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "地方創生担当理事（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そういったことも視野に入れさせていただきますし、あくまでも、これ今年度２回ですから、２月、３月で２回の協議会を開くということで、新年度につきましては、また新たに予算計上させていただきますので、決して年２回ということでないということはご理解いただければと思います。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-018",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（澤口千里君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私からも、二つの事業についてお伺いをいたします。\n　まず１点目、移住促進・関係人口創出事業なのですが、昨年の11月に法改正があったということで、ガイドラインも確認をさせていただきました。この協議体の構成員について、先ほども質問ありましたが、そのガイドラインの中には、宅地建物取引業者という方が突出をして職種として書かれていましたが、そのことについてどのようにお考えか、特定居住推進計画というのを今後立てていくのだろうなというふうに推察をするのですが、大きな青写真でいいので、どういうスケジュールで、どういう地域でというお考えが今あれば、少しだけお伺いいたします。",
+    "text_length": 281,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-019",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "地方創生担当理事（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ガイドラインの中で、不動産関係の方もというふうに書かれていることは、もちろん認識してございます。ただ、今現状で町内に不動産業を営まれている方がいらっしゃらないということもあります。それで、決して町内に限定されている話ではなくて、この協議会のメンバーについては、町外の方でも構わないのですけれども、11月の法の改正から現在までということで、その町外の方とのそういった協議をする時間も、実は正直ないような状況にありましたので、その不動産関係の部分については、これからいろいろと情報収集させていただいて、先ほどの菅原議員からのご質問にも被るのですけれども、必要、状況に応じて、そういった方もメンバーに入っていただけるような、そういうかたちをとっていきたいというふうに考えております。それと、促進地域についてなのですけれども、これも正に今回の協議会で協議をいただいた中で、策定していく、その仮称と言いますか、通称二地域居住促進法という言い方をしているのですけれども、その法律の中に、二地域居住を特に、もちろん全町で進めるのですけれども、特に進める地域を指定して、それでこの二地域居住を進めていくということになります。それで、具体的に、それでは地域指定とはどういうことかということを簡単にご説明させていただくと、例えば市街化調整区域の農業者の住宅があります。空き家がありますよね。今までは、基本的には農業者の空き家については、農業に従事される方しか利用できないという、そういうある意味縛りがありました。それを、この二地域居住の地域指定をしていくことによって、かなりフレキシブルに、具体的に言うと、農業者以外の方にも住んでいただくことが可能ですし、なおかつ例えば宿泊業をやりたいですとか、あるいは店舗的なことをやりたいですとか、そういった活用も可能になってくるという、そういう制度になってございます。それとか、あともう一つ、公営住宅についてなのですけれども、公営住宅についても今までは、あくまでも公営住宅法という法律があって、それでその入居できる方がかなり制限されていたということがあるのですけれども、この二地域居住法の地域指定をすることによって、公営住宅もかなり自由度が高く、例えばその住まわれている方をうんぬんということではなくて、あくまでも空いている部屋ということになるのですけれども、そこをその二地域居住で来ていただく方に利用していただくだとか、あるいはその地区のコミュニティを活性化させるために、空いた空室を活用するですとか、かなり公営住宅についても利用度が高くなると言うのでしょうか、自由度が高くなる。そういった計画の策定になるものですから、そういったことでいろいろな分野の方に入っていただいて、いろんなご意見をいただきながら、計画をまとめていくと、そういう予定でおります。",
+    "text_length": 1187,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-020",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（澤口千里君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありがとうございます。\n　次の事業を、漁業燃油高騰対策事業についてもお伺いをしたいのですが、これ積算が14漁業者かける４万円ということで、漁業の燃油を使う漁業者というのは、漁業者本人ということよりも、その船舶の所有者が燃油を使っているという認識で現状だと思うのですが、これだと燃油を使っていない漁業者にも支援をされるようなふうに見えるのですが、もちろん協議はされていると思うので、その協議の内容も含めてお話をお伺いできますか。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-021",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の対策については、澤口議員おっしゃるとおり所有者以外の方にも、漁業者の方にも支援するものでございます。この考え方については、例えば商工とか農業者と同様に、一律に漁業をやっている方、組合員の方に対して、一律に支援金を支給することでございます。燃油高騰対策もありきですけれども、経済対策という意味合いも込めて、今回このように制度設計をしたところでございます。\n　以上です。",
+    "text_length": 186,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-022",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私からも物価高騰対策について、質問いたしますけれども、中身は説明資料を読みますと、農業者の関係、漁業者の関係、そして商工業者の関係で３本に分かれております。そんな中で、事業費の関係で国庫補助金が主体になっておりますけれども、国庫補助金と農業関係であれば一般財源、ちょうど１／２やっておりますけれども、この物価高騰対策で国庫補助金と一般財源が導入されている内訳、３部門の。それと、今も質問に対する答弁がありましたけれども、特に農業関係で、一事業者に対して一律４万円の補助ということで、物価の高騰対策、この燃油に関して、これ農家の形態によっては、年間に何千リットルという使用量、それと反対に何百リットルの使用量ということで、こういう補助金の公平性という観点からいきますと、ちょっと乱暴なやり方に見えるのですけれども、いかがですか。",
+    "text_length": 363,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-023",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回本町の全産業者に対する物価高騰対策では、国の交付金を最大限に活用させていただきながら、限りある財源である一般財源も投入し、農業者、漁業者、林業者を含む商工業者に対して、一律に４万円を支援するものでございますが、今回事業者の経営規模等に関わらず一律とさせていただきましたのは、地域通貨消費拡大事業において、各課税世帯に対し、一律で１万円を付与する高騰対策と同様で、これについても所得の高低や家族の人数に関わらず、一律に１万円を支援するという考え方と同様に、全産業者に対して一律４万円というふうに支援するものでございます。\n　以上です。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-024",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "質問の中身で、国庫補助金と一般財源というかたちで、部門によって分かれているというのは、例えば農業部門であれば、1,144万円に対して、半額が国庫補助金、半額が一般財源ということで、これは町の財源として農業者にこういう支援をするということなのですか。そして、次の漁業者に対しては、全額国庫補助金ですよね。これ町の補助金はないですよね。商工業者についても、農業者と同じで一般財源を投入しているわけですけれども、その辺のバランスと、やはりものによって、数字がはじけるものについては、やはり公平という考え方からいったら、その数字をはじいて交付するというのが基本でないかと私は思うのですけれども、再度確認します。",
+    "text_length": 301,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-025",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私のほうからは、財源のほうについてご説明させていただきたいと思います。\n　まず第一に、現在国から示されている国庫補助金が2,505万円、こちらのほうは限りある財源としてあります。充当の仕方だと思うのですけれども、まず町の事業として経済対策を行うということで、今回、各全町内の事業者様に対して、経済支援を行うということは、これは町の決定事項でございました。そうすると、町としては商工業者、農業者、漁業者等ございます。それぞれによって、事業予算というのは、またそれぞれ事業者さんの数で変わってきますので、事業費のほうもバラバラな金額が出てまいります。この限りある2,500万円をどのように充当していくかということで、漁業者に対しては、金額的にはほかの事業とは違いまして、金額が60万円弱というところでございます。充当の仕方としては、それぞれ半額でほかの事業は充当してございますけれども、漁業者に対しては、金額が少ないのでそのまま全額充当というかたちにさせていただきました。その中で、一般財源の町の単独の事業としての支援ということで、バラつきがあるのではないかという吉岡議員の指摘のほうも、十分こちらとしては考えなければいけない視点だったとは思うのですが、こちらは財政的と言いますか、財政的にシステマティックに充当してしまったという一面もあることにはあるかと思います。漁業に対して全額国庫補助金を、国庫で町の支出はないままで、事業の支援を行うという意図というのは、しいて言えば、なかったというふうに思ってございます。",
+    "text_length": 655,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-026",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "まちづくり推進課長（宮下桂君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申し訳ありません、物価高騰対策の窓口はまちづくり推進課で行っておりますが、今充当の話、財政上の充当のバランスの関係でこうなったということは事実なのですが、国庫補助金が充当されていないから、町に責任がないということでは決してございませんで、限りある国庫財源を有効に活用して、町が各事業者を支援する事業ということですので、充当される国庫補助金の割合に応じて、その町の支援度合いが違うのではないかというご指摘は、そういうことではないというふうにご理解をいただければというふうに思います。",
+    "text_length": 240,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-027",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の国の補助金を、最終的にはすべての事業が終わった段階で精算をするということになります。そのときに、いわゆる少し予算より実績が落ちた場合に、返納するという、そういういわゆる足枷がございますので、全体の事業としてある程度一般財源を少し多めに用意をさせてもらったと。そのバランスについては、どちらかに寄せてあったという事業そのものに対する最終的な精算をにらんでの、一般財源の配分ということでございますので、事業全体としてある程度、多めに見させていただいて、その足りない部分については、一般財源を入れたというだけの考え方でございますので、財源がバラつきがあるということについては、あくまでも補助事業を最大利用するというテクニカルな話でございますので、事業の中身に影響するというものではございません。\n　以上です。",
+    "text_length": 354,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-028",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事前にそういう説明があれば、私も理解できるのですけれども、そういうのがなしで、たまたま三つの部門に分かれて、説明があったらどうしてもそういうふうに解釈するのが普通ですよね。今、町長も、それと課長から説明がありましたので分かりました。この４万円が一律に交付されるということに対して、平等性がないのではないかという私も質問しておりますけれども、それに対して例えば農業の関係で言えば、補正の目的ですよね。この軸が、あくまでも営農掛かり増し費用に対する補助という書き方していますよね。だとしたら、この文章はやはり変えなくてはならんというふうに、私は思うのです。言っていることわかりますか。その辺どうなのでしょうか。",
+    "text_length": 303,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-029",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の物価高騰対策事業で、特に燃料費に着目したということでございます。総額が、先ほど言ったように、金額はあまり大きくない。金額を全町民に公平に活用していただくというのが主眼でございます。それから、掛かり増し経費と言いつつも、農業者の場合は、掛かり増し経費については、12月の補正予算で、いわゆる価格転嫁ができない酪農、畜産にのみＪＡと相談の上、補填をさせていただいたと。それ以外については、価格転嫁がある程度進んでいるということで、いわゆる農業者にとっての掛かり増し経費は、一般町民、皆さんが必要とする燃料系、これについて一律に、公平に配分をするという、そういう主眼で今回の産業界、経済界、それから福祉事業、あるいは医療関係者に、皆さんにお配りさせていただく。そして、プラスアルファ、今回は子育て世帯にも充当額は、国庫支出金は使ってはおりませんが、子育て世代の方々にも給食費相当分について、応援をさせていただく。そういうパッケージになっていたということでございますので、それ以外の一般町民については、一世帯１万円ということで、限りある財源を特定の分野に投入するのではなくて、物価高騰という大きな目で見ると、全員が影響を受けているということもございますので、できるだけ公平に配らせていただいたと。事業量の多い、少ないに限らず、生活者目線で少し今回は設計をさせていただいたということでございますので、いわゆる一律、できるだけ公平にという視点でございます。",
+    "text_length": 625,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-030",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今町長から説明ありましたけれども、そういう説明があればあれです、これ一般農業者から町として経済対策ということで、特に燃油の関係でこうやって補助、助成しますと。それが一律、形態の大きさに関係なく、一律４万円でしたということになったら、お前ら何考えてるのよと、これ一般的になりますよね。ですから、この補助の目的だとか、事業の概要の部分で、やはり一工夫しなければ、誤解を招く可能性があるということで、私も質問したわけですけれども。交付にあたっては、その辺の細工というのか、分かりやすいような文面で整理してほしいと思います。",
+    "text_length": 258,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        84
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-031",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "説明不足、記載に不備があったこと、大変申し訳なく思ってございます。次回からは、その分かりいいように、補正の目的等々の記述をさせていただきたいと思います。",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        86
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-032",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（高田芳和君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "説明資料５ページ、子育て支援給付事業についてお伺いをいたします。\n　支給対象者で、低所得世帯給付金受給者を除くというふうになっているのですけれども、これの除く内容についてお伺いいたします。",
+    "text_length": 94,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        88
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-033",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "住民課健康推進子育て支援担当参事（宮本幸世君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１月10日の臨時会で、福祉グループのほうから、低所得世帯給付金支給事業で補正を計上させていただいておりますが、その中にその低所得世帯給付金の支給の中に、一世帯あたり３万円、子ども一人２万円を加算するとあります。よって、この場合２万円すでに加算額もらっていらっしゃる方々を除いて、今回は支給するというかたちで設定しております。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        90
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-034",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（高田芳和君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "第１回臨時会で補正組んだ部分については、物価高騰の影響を受けている低所得者ということで、予算組みしていると思うのですけれども、今回のこの子育て支援給付事業については、理由は似ていますけれども、給食費等相当額の一部を還元ということですので、ダブらないと思うのですけれども、あえて除く必要があるのかどうか。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        92
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-035",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "住民課健康推進子育て支援担当（宮本幸世君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "給食費相当額とさせていただいておりまして、今回給食費相当額というこの１万２千円の基準を出したのが、小学生の給食費、月４千円程度を３か月分ということで、１万２千円設定させていただいております。今回、ダブらないということが、すみません、低所得の方につきましては前回の２万円、子ども加算２万円が入りますので、そちらで対応していただき、こちらのほうは課税世帯の方の減額ということで考えておりますので、対象者についてはダブらないという判断でしております。",
+    "text_length": 222,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-036",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当然低所得者向けに、いわゆる現金等に、そして給付金をすでに支払っていると。今回の2,500万円、そして前回2,300万円。併せて4,900万円ぐらいの厚真町に対する国からの交付金がございました。その内の低所得者向けを先に出して、そして今回はいわゆる2,500万円をどう配分するかということで、配分させていただいた上で、この子育て世帯の軽減を、いわゆる低所得者以外の方々に一切、いわゆる追加、子ども一人あたりの追加給付ができてなかった部分を、いわゆる２万円から見ると内数になる１万２千円相当を、この給食費相当額として、別枠で厚真町のエンゼル基金を活用して、追加支給をさせていただくということになりますので、そういう意味では、すでに現金給付を一人あたり２万円受けている子どもたちとは被らないにしようと。十分に低所得者の方々には配らせていただいていますので、配分させていただいていますので、エンゼル基金から持ち出す分には、それ以外の子どもたちというふうに、整理をさせていただいたわけでございます。",
+    "text_length": 445,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        96
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-037",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "（澤口千里君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどの吉岡副議長とのご答弁を聞いていても、ちょっと腑に落ちないのですが、この漁業燃油高騰対策事業について、農業者は形態ですから数、分かるのですが、漁業者に対しては、燃油代を払っていない人たちに対しても払うという、船主とそうでない漁業者に対する平等性が違う方向に働くと思うのです。なので、船主に対して例えば金額、差額を示すかたちでも構わないので、何らか差をつけるべきでないかと思うのですが、いかがですか。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        98
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-038",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "産業経済課長（木戸達也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回は組合員の方すべて一律に４万円を支給するということで、差をつけるということは、今回は考えてございません。\n　以上です。",
+    "text_length": 61,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        100
+      ]
+    }
+  },
+  {
+    "id": "atsuma-411-1-039",
+    "municipality": "atsuma",
+    "council_id": 411,
+    "council_name": "令和 ７年  ２月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日－01号",
+    "date": "2025-02-03",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/411.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        107
+      ]
+    }
+  }
+]

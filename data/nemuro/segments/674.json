@@ -1,0 +1,4073 @@
+[
+  {
+    "id": "nemuro-674-1-001",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "それでは、よろしくお願いいたします。\n　まず、説明書の２６ページの操業体制緊急構築実証事業の地元負担金からお伺いしていきたいと思います。\n　この部分、負担金ということで３，０００万円ということで書かれておりまして、資料もいただいてはおりますけれども、さすがにちょっとこれだけでは内容がわからないかなというところもありますので、まず事業費の規模ですとか内容ですね。それについて教えていただけたらと思います。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-002",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "水産振興課長（西田悟）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業の規模、概要等でありますけれども、先般、議員協議会の方で既に資料の方、配付されていると思いますが、不漁に対応した操業体制緊急構築実証事業の資料の中の中段事業の内容、左側の方ですが、ここに１と２ということで、一つ目が漁業複合化等対策事業、二つ目がサケ定置合理化等実証事業とありまして、それの一番上の１の漁業複合化等対策事業に位置づけられるこのたびの事業であります。\n　それで、その事業概要でありますけれども、近年のサンマ漁でありますが、資源の減少や回遊経路の変化に伴い漁場が遠隔化しており、その結果、燃油価格の高どまりによる経費の増加や乗組員の確保が困難になるなど、主猟を断念、廃業する漁船が増加している状況にあることから、漁業収益の確保が喫緊の課題となっているところであります。\n　このため、国においては、こうした近年のサンマ漁の不漁を背景に、１隻で複数の漁業種類に従事可能な漁船の兼業化、これはマルチパーパス化と言いますが、これを新たな操業モデルとして推進しているところであり、国が令和８年１月から根室船籍の大型サンマ漁船を活用して紅ズワイガニの兼業化を目指し、通年操業体制の構築及び漁業経営の収益性を検証する実用可能調査を実施する実証事業であり、このたびの国の実証事業にかかわる地元負担金ということの３，０００万円ということになっております。",
+    "text_length": 575,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-003",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "国の水産庁の実証事業ということで、今回は内容の確認だけですので詳細だけ伺っておきたいと思いますけれども、こういうのはデータなどの内容とかがネットとかで上がっているのかなといろいろ検索もしてみたのですけれども、見つけられることができなかったものですから、この実証事業の実用可能調査ということで、その事業概要、事業計画みたいのがあるのかなと思ったのですけれども、事業概要というのがわからなかった。どういった期間でやるのか、人員ですとかサンマ漁船を活用することということですので、そういった装備というのはどのようなふうになるのかというところを、詳細についてお尋ねしたいなと思います。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-004",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "水産振興課長（西田悟）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、実用可能調査の目的というところでいきますと、大型サンマ漁船の複合漁法化として、カニかご操業の実施体制を確立すること。それと、カニかご兼業化に必要な船体改造及び追加装備の内容を定め、操業方法を実証すること。\n　また、紅ズワイガニ等の深海性カニ類を対象とした兼業体制による採算性を検証することとなっておりまして、それにかかわる調査といたしまして、調査機関としては令和８年１月から、おおむね３カ月間と。\n　それと調査海域につきましては、道東太平洋の共同漁業権漁業区域を除く水深が８００メートルから２，０００メートル、人員体制につきましては１３名、艤装内容につきましては、カニかごウインチ、ワインダー装置、ワインダー移動ウインチ、カニかご搬送コンベヤー、カニかご収納用の鉄鋼艤装の搭載・設置ということになります。かご数につきましては８００個ということの予定をしているところであります。",
+    "text_length": 391,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-005",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "内容については理解いたしました。\n　それで、この点については最後にお伺いするところなのですけれども、地元負担金が今回３，０００万円ということで発生しているわけですけれども、今回根室の漁船を使って行われるということで、この３，０００万円、これがどういったものに充てられるのかというところを確認させていただいて、次に進みたいと思います。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-006",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "水産振興課長（西田悟）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この３，０００万円の中身でありますけれども、調査船の運航経費で主に人件費、燃油費、えさ代、氷代といったものが主なものであります。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-007",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "今回、実証事業ということですし、国の事業に対する負担金ということですから、紅ズワイガニ、海洋の環境の変化によって、そういったところも見込めるのかどうかというところも含めて、令和６年度にも赤イカの実証事業も行われていて、それなりの漁獲もあったとかという情報もあったかなと思っておりますけれども、そういった期待を込めながら水産庁も報告書ということで上がっているものもありますので、それを重視していきたいなというふうに思います。どうもご説明ありがとうございました。\n　それでは、ページを戻っていきまして１５ページの人事一般事務経費についてお伺いをしていきたいと思います。\n　今回１０９万５，０００円ということで上がっておりますけれども、今回の補正の内容、詳細について教えていただけたらと思います。",
+    "text_length": 345,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-008",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総務課長（新宏之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず内訳になりますが、人材派遣会社から派遣を受けております保健師２名の５カ月に係る人材派遣手数料が４９万５，０００円と、また同じくこの保健師２名に係る各５カ月分のアパートの借り上げ料として６０万円を計上させていただいております。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-009",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "それで今回、人材派遣ということで保健師の方ということで、まず今回、派遣会社への支払いという部分についての積算の根拠というのはどのようになっているのでしょうか。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-010",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総務課長（新宏之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "積算根拠になりますが、まず人材派遣会社に対しましては保健師の給与月額、こちら一人当たり５４万円としておりまして、これに併せて時間外勤務が発生した場合があれば、その手当を合わせた合計額の１０％を手数料として払うというようなこととなっております。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-011",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "人材派遣会社のホームページを見たところ、就業した分の時間単価掛ける労働時間プラス交通費と消費税というふうな、そういった何か支払い方法もあるようですが、それとは今回は別に積算されていると、そういうような状況ですね。\n　今回、保健師の方の追加の派遣ということになっておりますけれども、そもそもの現在の保健師の体制というのはどのようになっているのでしょうか。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-012",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総務課長（新宏之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在の保健師の体制になりますが、こちらにつきましては定数が１１名となっております。そのうち実人数が今現在、職員５名でありまして、差引の６名が欠員の状況というふうになっております。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-013",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "それで今回派遣を受けたということで、仕組みというか、それをお尋ねしたいのですけれども、派遣をされましたよといった中で派遣をする期間というのはあると思いますが、その中で派遣される方自体が交代するというようなことは今までもあったのかどうかなど、そういった詳細についてお尋ねしたいと思います。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-014",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総務課長（新宏之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "派遣された方ということなのですけれども、これまでも派遣された方は何度も人が変わって交代をしております。大体当初の段階では、おおむね３カ月から６カ月程度の派遣期間を設定しまして、その後、職場と本人と相談・協議の上、状況によっては派遣期間の延長を受けるという場合もございます。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-015",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "当初予算の部分で持っている２名プラスまた今回２名ということなのですけれども、そうすると、今回は令和７年度末までのということになるのですけれども、気になるのは、やはり今後の体制というところになるかなと思いますけれども、その点のお考えをお尋ねしたいなと思います。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-016",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総務課長（新宏之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "保健師につきましては採用試験の都度募集を行っておりますが、やはり受験者自体がほとんどないというような状況が続いており、非常に厳しい体制というふうになっております。そのため、まず職員としての保健師の確保が優先事項ではありますが、やはり確保されるまでの間は、当面こういった人材派遣会社からの受け入れを継続していく必要があるというふうにとらえております。",
+    "text_length": 174,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-017",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "参考までにもう一点お伺いしますけれども、こういった人材派遣を受けているという、今回は保健師ということですけれども、病院では看護師も派遣を受けているということで伺っておりますけれども、ほかの今回の派遣会社、それ以外も含めてですけれども、人材派遣の会社の利用というのでしょうか、ほかの職というのも以前には検討されたことがあるのかどうか、お伺いしたいと思います。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-018",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総務課長（新宏之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "他の専門職についての検討というところなのですが、具体的には保育士等で派遣の検討をしたことは過去ございます。\n　ただ、いろいろ職場の担当課とも話し合いの中で、その点は協議していくところなのですが、正式に派遣を依頼したというものに関しましては、本庁では保健師のみというふうな状況となっております。",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-019",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "今回の経費についての内容はわかりました。\n　ただ何でしょうね。職員体制、専門職以外も非常に厳しい中でありますけれども、本当将来のことを考えると、こういった派遣をされていく方が非常に増えていくかもしれないというようなことも想像されるわけですけれども、正職、一般職も含めて、なかなか足りていないという部分、非常に厳しい状態ではあると思いますけれども、私から言えることは、本当に職員の確保について努めていただきたいということしかないのですけれども、ただ保健師の部分は、資格の取得に向けた流れというのでしょうかね。大半は看護師の方に行ってしまうという実態もあると思います。\n　ただ、そういった中でも、こういった利用ができるというところを大いにに活用していただいて、何とかこの体制というものを維持していただいて、市民サービスの部分とか低下しないように対策していただければというふうに思います。\n　それでは、最後にページ数で言いますと消防費の部分になりまして、２９ページの部分お伺いしていきたいなと思います。\n　広報車の更新ということで上がっておりますけれども、一応資料もいただいてはおりますけれども、改めて今これから更新する前の現在の広報車、それの購入年度ですとか、あと走行距離が今どうなっているのか、そういった部分、改めてご説明をお願いいたします。",
+    "text_length": 570,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-020",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "消防課長（酒井正充）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現広報車の購入年度、走行距離等についてですが、こちらの現在運用しております広報車、三菱パジェロですが、平成２２年１０月に購入したもので、令和７年１２月で１５年が経過し、経年劣化等に伴う不具合が発生している状況です。特に車体下周りの不具合が著しい状況で、タイヤの摩耗、片減りが顕著であり、走行が不安定であります。アライメントの調整が必要ですが、フレーム部分の腐食、孔食等により調整できない状況で、修理を行うには多額の費用が発生する状況であります。\n　走行距離は、現在になりますが２９万６，７３３キロになっております。",
+    "text_length": 257,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-021",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "約３０万キロほど走っているというところですけれども、広報車の移動の範囲というのは市内だけなのか、あるいは若干遠出があるのかという部分、その走行範囲についてお伺いしたいと思います。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-022",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "消防課長（酒井正充）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "広報車の走行範囲、走行程度についてですが、緊急車両として災害現場、悪路、降雪時など、他の車両では進入できない場所、特に山間部など走行しております。\n　また、市内要務等、各種会議、出張等でも使用しているため、道内各地まで走行している現状であります。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-023",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "なるほど。わかりました。\n　ちょっと先に進みますが、車検等も当然行われていると思います。メンテナンスというのは、どのように行われていたのかということと、アライメントの部分調整ができなくなったということですけれども、それはいつ判明したのか、お伺いしたいと思います。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-024",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "消防課長（酒井正充）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "広報車の車検のメンテナンス、アライメントの調整ができなかった時期についてですが、車検につきましては２年に一度、定期に受けております。\n　また、定期点検、６カ月点検、１２カ月点検につきましても実施し、必要な整備は行ってきております。車検整備を行った際には、不具合等は発生しておりませんでした。\n　アライメントの調整が不可能であると判明したのは、タイヤの極端な片減りを発見したことにより、整備工場において現車両の現状確認を行った上で、６月中旬ごろになります。\n　以上であります。",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-025",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "それで消防車両というところ、分離されるのかわかりません。これまでの質疑の中で、計画的にこういうのは更新されていくというところで質疑があったということも記憶をしているところなのですけれども、広報車についての更新のタイミングというのは、計画的になっていたのかどうかという部分、お伺いしたいなと思います。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-026",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "警防課長（酒井一弘）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "消防車両の更新についてでありますが、消防車両更新計画につきましては、消防ポンプ自動車、はしご車、救助工作車などの消防車及び救急車の更新の計画をしておりますが、広報車につきましては、経年の劣化状況や保証等の状況により、その都度協議して更新している状況であります。",
+    "text_length": 130,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-027",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "ただ、災害いえばもとよりですれども、山間部に行ったりとか出張にも使われているということですよね。結構使用頻度が、かなり高い車だと思います。ちゃんと点検は、当然消防の皆さんですから細かくやられているとは思いますけれども、６月に判明して１０月補正でもよかったのではないかなという部分はありますけれども、そこはいろいろ手続等々があったのかなというのは推測します。\n　ただ、これだけ使う車ですから、余りにも我慢しない方が良いのかなというふうにも私思いますので、その都度協議はされているというところでしたけれども、１５年もこういった山間部ですとか出張、あるいは当然災害現場に使われているというところですから、ちょっと辛抱し過ぎかなというふうな印象を受けました。\n　それで、今後の方針の車両のお話をお聞きしたいなと思うのですけれども、さきの決算審査でも多少触れたところでありますけれども、こういった車載のカメラというのは広報車にも搭載される予定というか、されるのでしょうか。",
+    "text_length": 431,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-028",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "警防課長（酒井一弘）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "車載カメラ、ドライブレコーダーの搭載についてと思いますが、ドライブレコーダーについては、現状の消防車両全台に搭載して設置しております。更新車両につきましても使用でも搭載する予定としております。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-029",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（須崎和貴）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "須崎 和貴",
+    "member_faction": "会派紬",
+    "text": "繰り返しになりますけれども、非常に活用頻度が高い車ですし、今回一般質問でも防災の部分お話させていただきましたけれども、本当に大地震の可能性が高まっているという中で、こういう状態になって、いざ災害が起きたときに、うまく動きませんみたいなことにはならないようにしていただきたいというふうに思っておりますので、余り我慢せずに市長部局というか、財政の皆さんともそうですけれども、相談をして、しっかり整備していただければなというふうに思います。\n　参考までに私も、公用車全体がどうなっているのかなというふうにも総務の方にもお尋ねもしましたけれども、公用車でも先ほど言ったように３０万キロ走っていますよとか、平成２１年ぐらいに購入しました。もう１６年たっていますよと。最新のものでは令和６年度に購入しました。非常に出張に使われることも多くて、経年劣化というもの、激しいものもあるのかなというふうに思いますので、ぜひ先ほど言ったように、災害の部分、今後強く懸念されますので、公用車の部分全体も含めて、しっかり災害時にも対応できるような体制にしていただければというふうに思います。\n　以上で、私からの質問は終わります。よろしくお願いいたします。",
+    "text_length": 514,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-030",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "追加の補正予算第７号の説明書３ページになります。３款民生費２項児童福祉費２目児童措置費のうち、主に１８節負担金補助及び交付金の６，２００万円等々の物価高騰対応子育て応援手当に関してお伺いをいたします。\n　国の先般成立した補正予算に基づくものと認識をしておりますが、改めて根室市の補正予算が成立後、どのようなスケジュールで動かれるのかについて、ご説明をいただければと思います。どうぞよろしくお願いします。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-031",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども子育て課長（大沼このみ）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今般の子ども物価高対応子育て応援手当の今後のスケジュールにつきましては、予算成立後１２月中に支給にかかわります周知関係等の準備作業を行いまして、年明け早々に児童手当支給対象者に支給案内通知を発送し、希望の有無等を把握の上、おおむねこの期間につきましては、国から２週間程度の期間を設けることとしておりますから、それからの作業となりますので、１月の最終週に最終的には手当が支給されるものと思っております。",
+    "text_length": 200,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-032",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　まず、支給を受けるかどうかについて希望を取るということのご説明をいただいたところであります。私知らなくて、ちょっとだけ驚いたのですけれども、従来の児童手当についても受給を希望せずに当該の市町村等に対して寄附をできるという制度があるのだそうです。そんな奇特な人が世の中にいるのだと思って衝撃を受けたのですが、今回の手当についても同様に、こういったような寄附のような仕組みというのはあるのでしょうか。",
+    "text_length": 211,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-033",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども子育て課長（大沼このみ）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給者からの支給拒否の届出等があった場合、その方が申し出等により寄附すること等の希望があれば、そういった対応も取れるように聞いております。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-034",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "一応そういったような案内も含めてされるということですね。",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-035",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども子育て課長（大沼このみ）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一応問い合わせがあった場合にという感じで行いたいと思います。",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-036",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。それをするとチラシもいじらなければならないですしね。はい、わかりました。\n　プッシュ型で支給をされるということが基本原則かと思いますが、一部基準日以降に出生をされた方などをはじめ、本人から申請が必要なケースがあるというふうにして認識をしておりますが、どういったようなケースがあるかについて再度ご説明願います。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-037",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども子育て課長（大沼このみ）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ブッシュ型以外での申請のケースということでございます。\n　申請時以外につきましては、一応公務員が主な対象になるかと思います。また、あと基準日以降に離婚した場合等々さまざまなケースがございますので、個別なケース、ご不明な点等がございましたら、まずはこども子育て課の方にご相談いただければと思っております。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        87
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-038",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　申請の今のお話に絡んでなのですけれども、これ自体は別な制度ではあるのですが、ホームページをちらっと見ていて、さいたま市のホームページのケースです。配偶者やその他親族からの暴力（ＤＶ）等を理由にさいたま市へ避難されている方の申請手続についてという記事がありました。対象となるご本人様からの申請に基づいて、市が相談を受けて支給の手続をされるという仕組みかと認識をいたしました。今回の物価対応子育て応援手当支給についてもこのような仕組みが全国的に取られるというふうに理解してよろしいでしょうか。",
+    "text_length": 257,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        89
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-039",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども子育て課長（大沼このみ）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "委員おっしゃいますとおり、全国的に自治体同様の取り扱いとしております。\n　また、ＤＶ被害者家庭につきましては、市にもそういった登録簿がございますので同様に対応していきたいと思っておりますが、ただ登録のまだない家庭の把握というところができないものですから、それぞれのケースについてご相談いただいた際には適切に対応してまいりたいと思っております。",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-040",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　要するに、住民登録をされている方については認識はできるけれども、住民登録をせずに避難をされている方については、何らかの形で広く申請するように呼びかけなければわからないというふうにして理解してよろしいですか。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        93
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-041",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども子育て課長（大沼このみ）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そのようにとらえております。",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        95
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-042",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　ちょっとだけ別件なのですけれども、少し今回のケースで、もし根室市内にそういう方が実際におられるのかどうかを私、ごめんなさい、存じませんが、気になったのは、要するに、そういう方は、そもそも児童手当自体を多分受給していない可能性があるのではないかなという気がしたのですけれども、実情がどうなっているのかについて、もしご承知でしたらご説明いただけますか。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-043",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども子育て課長（大沼このみ）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどご答弁させていただいた中で、市にそういった被害者家庭の登録名簿ということがございます。その中で対象者につきましては直接申請等、児童手当もそうですけれども、支給しておりますので、同様の対応を取りたいと思っております。",
+    "text_length": 110,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        99
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-044",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "わかりました。そうしたら、何らかの別な形で市が名簿として管理しているものに関しては、自動的に今回の手当についてもプッシュ型というか、そういうような形で支給されるということですね。理解いたしました。ありがとうございます。\n　全体を通してなのですけれども、先ほどスケジュールの中で、第１弾が１月の下旬に支給をされる予定であるということのご説明をいただきました。\n　一方で、今回の国の制度設計自体が主に児童手当を受給されている方、子どもを養育されている主たる父母に対しては、プッシュ型で支給をすることが可能であるという仕組みになっております。児童手当の支給回数が拡充されましたので、直近で言えば来年の２月に児童手当そのものが支給をされるということになりますが、担当課のこれまでのご説明等を踏まえますと、今回の子育て応援手当そのものは、児童手当と別に支給するような仕組みになっているというご説明だと認識をしております。\n　非常に私、懸念をするのは、同じ部署でやっている作業だというふうにして思いますが、このような形で二重というか、２回に分けて支給することが過重な事務処理の負担となっていないだろうかということを懸念するものであります。改めてこのような形で別立てで支給をしなければならなかった理由についてご説明いただいてよろしいでしょうか。",
+    "text_length": 565,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        101
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-045",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども子育て課長（大沼このみ）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "このたびの支給措置につきましては、通常の児童手当に２万円をただ上乗せする同様の制度であれば委員ご指摘のとおり、事務負担の軽減も図れたものではないかなと推測されます。\n　ただ、物価高対応子育て応援手当の趣旨は児童手当の上乗せではなく、臨時特別の一時金であると示されております。また、国からもできるだけ早く市民の手に支援が届くよう、児童手当の支給日を待たずに早急に支給するように指示があったものであります。このことから、これまでの同じような給付金等のノウハウを生かしながら、早期支給に向けて作業を進めていきたいと考えております。",
+    "text_length": 262,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-046",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。これが２カ月、３カ月遅れますというならともかく、２月の支給か１月末の支給の差ですから、そういうような形で担当課の方でも鋭意準備を進められているというふうにして認識をしておりますので、この点について引っくり返すつもりは当然ありませんが、今後恐らく似たようなケースが生じてきた場合に、市としても仕事の進め方については再度ご検討いただければなというふうにして思っています。\n　根室市は本当に私すごいなと思うのは、前のコロナの給付金のときもそうなのですけれども、すごい一生懸命職員の皆さん、市長の号令のもと頑張って早く支給されてきたではないですか。そういう頑張りに対しては心から敬意を表するものでありますけれども、そうした対応を必ずしなければならないと過度な負担にならないように、ぜひ理事者の皆さんからも気をかけていただければなというふうにして思っております。答弁は求めません。\n　次の質問に移ります。\n　ちょっと順番をさかのぼっていきます。補正予算第６号の説明書、ページ数３１ページをお願いいたします。\n　１０款教育費の２項小学校費、そして３目学校建設費のうち１４節工事請負費旧花咲小学校校舎解体工事が１億９０４万２，０００円減額となっております。減額となった理由については６月でしたかね。工事契約の締結がされて担当所管の常任委員会の中でもさまざま厳しいご論議があったというふうにして認識をしておりますので、この点については理解をしております。\n　改めて全体の工事費を確認をさせていただきたいのですけれども、令和７年度、令和８年度の継続費として予算化をされております。６月時点で工事請負契約が２年間の総体で６億５，８９０万円ということになっております。令和７年度は今回このような形で１億９０４万２，０００円を減額しておりますので、令和７年度の予算額が現計が１億４，４９５万８，０００円になるかと思います。\n　したがって、来年度、令和８年度に計上する予算額としては、残りの５億１，３９４万２，０００円が予算として計上される見込みであるというふうにして理解してよろしいでしょうか。",
+    "text_length": 896,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-047",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "教育総務課長（大沼公治）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次年度の予算措置についてでございますが、現在、今予算要求中であり、これから査定を受けるものと考えておりますけれども、委員ご指摘のとおりになる見込みではないかと考えております。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-048",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "そうしたら、一応この解体工事については、現時点では令和７年６月２日に工事請負契約を締結したその状態のまま、特に工事内容については変更の予定が今のところはないよというふうに理解してよろしいですか。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-049",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "教育総務課長（大沼公治）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現時点で契約額の変更の予定はございません。",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        111
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-050",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　参考までにお伺いしたいのですけれども、説明書ではなくて議案の３８ページに継続費が載っているのですけれども、令和８年度の旧花咲小学校解体事業の継続予定費が当初の見込みのまま５億４，７５９万４，０００円は、これはいじってはいないのは、一応３，０００万円ぐらい予備で持っておきたいなという担当課の気持ちのあらわれと理解してよろしいですか。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        113
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-051",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "教育総務課長（大沼公治）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "継続費の関係ですけれども、今回の１２月補正では調整中ということで、継続費の補正にまでは至らなかったところでございますが、しかるべき時期に財政課との調整の上、契約金額に見合った区画に補正を行う予定と考えております。",
+    "text_length": 106,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        115
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-052",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　例の歴史ある門柱を残すのに結構予算がかかるのかなとか勝手に妄想を広げていたのですけれども、今のところ、そういう話ではないということですね。とりあえず理解しました。\n　参考までに、もしわかったら教えてほしいのですけれども、私前から職員室の隣にある木の歴史ある看板を保存してほしいなと思っていたのですけれども、ちゃんとうまく取り出せましたか。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        117
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-053",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "教育総務課長（大沼公治）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "あの木製の看板につきましては取り外す予定で考えておりますけれども、今はまだ物までは手元には届いておりません。",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        119
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-054",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "すごく趣のある看板なので、ぜひ上手に外してほしいなと思っています。\n　すいません、余談でした。今回この質問に関してお伺いをしたかったのは、教育委員会に限らないことになりますが、結局ここの旧花咲小学校跡地という、あそこの広大なスペースをどのように利用していくのかという問題です。これまで市が立てたグランドデザイン構想の中では、健康福祉機能エリアの一角として位置づけられているというふうにして認識をしています。その当時の段階では、社会福祉協議会だったり保育所だったりということで出ておりますが、そもそもその後どういうような検討をしている、そういう体制とかで検討するようなことは進んでおられるのでしょうか。つまり何にするか決まっているかではなくて、検討はされているものなのですか。",
+    "text_length": 337,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        121
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-055",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "教育総務課長（大沼公治）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "跡地の利用にかかわってですけれども、委員もおっしゃられたとおり、教育目的での利用については今のところなく、グランドデザイン構想の中では２０４５年の将来イメージとして医療福祉エリアに位置づけられております。これについてはさまざまな意見あると伺ってはおりますけれども、現時点で協議には至ってはいないものと承知しております。",
+    "text_length": 159,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        123
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-056",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "教育委員会から答弁いただいたので答えられるかどうかわからないですけれども、どこかで全庁的に、こういう問題は協議する予定はあるのですか。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        125
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-057",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "副市長（竹本勝哉）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "花咲小学校跡の利用については、グランドデザイン構想での福祉的な位置づけはしておりますけれども、その後、具体的にまだ協議は行っていないというのが現実であります。\n　また、どういうエリアにするかというのは、また大きな視点で、まちづくりでさまざまな人口減少に伴う環境の変化等も見据えながら、どういった形が良いのかというのは、総合政策部中心に、どういった形の協議あるいは、そこにもう一回市民も入れて協議するのかどうかも含めて考えなければならないというふうに考えています。大型の事業が続く中で将来的なものとすれば、それをそのままにしておくのか、一段階何かに使うのか、そういったことも含めて検討は必要かなというふうに考えておりますので、そういった意識で検討に入りたいというふうに考えております。",
+    "text_length": 341,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        127
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-058",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　すぐにということではないと思いますけれども、どういう形で検討するのかということも含めて、公開しないように全体的な組織的なものも含めて考えていただければなと思っています。\n　予算の話に戻ります。\n　すいません、３１ページの先ほどの学校建設費の部分についてなのですけれども、補正予算額の財源内訳というところで、一般財源が２億３，９４４万２，０００円減額となっておりますので、ここら辺も含めて、どういうような財政措置の変更があったのかについて改めてご説明いただいてよろしいでしょうか。",
+    "text_length": 252,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        129
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-059",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "財源の補正につきましては、今回地方債を充当する内容としています。地方債の活用につきましては、これまでもいろいろな場面で交付税措置などを踏まえまして、可能な限り有利な地方債を活用していくといった方針をお示ししてきております。花咲小学校の旧校舎解体事業につきましては、当初予算の編成時点において、公共施設等適正管理推進事業債というのがあるのですけれども、そのメニューの一つに除却債というのがありまして、これには交付税措置というのがなかったものですから、そのかわり、代替策として財政調整基金の活用を見込んでいたところです。これについては当初予算のときにも繰り返しご説明をさせていただいたところであります。\n　しかしながら、令和７年度におきまして公共施設の集約化等に伴う除却に限ってなのですけれども、これに対しては交付税措置５０％が算入される制度の拡充というのが行われました。すので、これを活用することが財政運営的にも最も有利であるといった判断から、今回地方債を活用することとした次第であります。",
+    "text_length": 444,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        131
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-060",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　令和７年度については、そのような形で公共施設等適正管理推進事業債が活用することになりました。次年度、令和８年度についても同様に、この公共施設等適正管理推進事業債というのを活用する予定であると理解してよろしいでしょうか。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-061",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご指摘のとおりです。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        135
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-062",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　参考までに、その場合、市としてはどのような財政的なメリットというか、利点があるのかについてご説明いただいてよろしいでしょうか。",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        137
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-063",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "財政運営上の効果というかメリット、利点ですね。これについては、お答えがちょっと難しいところがあるのですけれども、地方交付税措置が講じられることにあると認識をしています。\n　具体的に申し上げますと、元利償還金の５０％を普通交付税の算定過程の基準財政需要額というのがあるのですけれども、そこに算入できるといった仕組みになっています。この仕組みについては、あくまでも理論上のお話であって、交付税としてその金額が具体的に交付されるわけではないのですね。ですので、具体的に効果額にまで言及するのは、今回差し控えたいと思います。",
+    "text_length": 258,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        139
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-064",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　一応考え方としては、最初に継続費の関係で聞いた来年度の予定だと５億１，３００万円ぐらい予算計上するとして、そのうちの９０％を起債に充てるつもりなのは間違いないですね。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        141
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-065",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご指摘のとおりです。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        143
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-066",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "わかりました。ぜひ、さまざまな手法で国の補助金、そして交付税措置、それがどれぐらい入ってくるかどうかというのは別にしてですけれども、本当に今、自治体の財政が各地で大変な状況が表面化してきているということを踏まえると、我々の根室市においても、そういう一定の危機感を持ちながら運用していかなければならないなというふうにして思っています。\n　参考までにお伺いをしたいのですけれども、このほかに市が予定しているいろいろな事業があると思うのですけれども、今し方ご説明いただいたご説明いただいた公適債で活用できそうなものはまだありそうですか。",
+    "text_length": 265,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        145
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-067",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "花咲小学校旧校舎解体事業のほかに令和８年度の活用先としましては、新庁舎建設事業と道路長寿命化事業の二つを想定しています。\n　しかし、現在は予算編成の作業中ですので、具体的な事業費ですとか活用額については、今後の事業内容の精査ですとか財政状況を踏まえた上で、予算編成の中で整理をしていきたいと考えておりますので、現時点では控えたいと思います。",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        147
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-068",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　ちょっと関連する項目でお伺いをしたいのですが、同じく６号補正予算の説明書のページ数１１ページについてです。２０款繰入金の１項基金繰入金１０目の公共施設等維持補修基金繰入金が、先ほどの金額２億３，９５０万円減額になっております。簡単で結構ですので、これが減額された経過について、先ほどのご説明と重複する部分もあるかと思いますが、ご説明いただければと思います。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        149
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-069",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これについては議員協議会でもご説明をしたとおりなのですけれども、花咲小学校旧校舎解体事業におきまして、まずは地方債を活用したことと、それから入札減が生じたことによって合計で２億３，９５０万円の財源の節約が可能になっています。通常であれば、これを受けまして財源とした財政調整基金繰入金の方を減額するところなのですけれども、令和８年度の予算編成を見据えまして、公共施設等維持補修基金の残高を一定程度確保しておく必要があると判断をしまして、今回は財政調整基金ではなくて維持補修基金繰入金を減額することとしたものです。",
+    "text_length": 255,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        151
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-070",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "その措置自体に別に私、何の不満もないのですけれども、参考までにお伺いしたいのですけれども、要するに、やり方として財調から公共施設等維持補修基金に積みかえたという実態かと思うのですけれども、それは財政上、何かメリットがあるのですか。",
+    "text_length": 115,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        153
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-071",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基金を積みかえたというご指摘については、やや解釈が飛躍しているというふうに感じました。先ほどご説明したのですけれども、今回の対応は、あくまでも財政調整基金を減額する一方で、維持補修基金への繰入金を減額したまでです。\n　ですので、基金間で資金を移動させた、いわゆる積みかえを行ったものではありませんので、この点については、まず誤解のないようにご理解いただければと思います。\n　財政運営上の利点についてのご質問があったと思うのですけれども、これは特段、新たな効果を生み出すというよりも、先ほど申し上げた内容そのものが答えになっていると考えておりまして、令和８年度の予算編成を見据えまして医療収益基金の残高を一定程度確保しておく必要があるといった判断なのですけれども、この点にあると考えております。\n　結果として、新年度の予算編成に当たって、公共施設の維持補修に対応できる財源的な余裕ですね。ある程度のバッファーを確保した状態で予算編成作業を進めることが可能になるといったところがまずありまして、持続可能な財政運営という意味においては、一定の意義があるというふうに考えています。\n　以上です。",
+    "text_length": 493,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        155
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-072",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "わかりました。ありがとうございます。ごめんなさい。\n　財調を崩すと何か赤字だという気分になりますから、公共施設でどうしてもかからなければならないお金を、そちらの方によっこしておきたいという気持ちはわかります。すいません。余談でした。この質問については、以上です。\n　最後、ページ数２３ページです。４款の衛生費１項保健衛生費１目保健衛生総務費のうち、１２節委託料についてです。産後ケア事業委託料の１３７万９，０００円ということですが、改めてこの産後ケア事業委託料について、過去の推移、通年の推移についてご説明いただいてよろしいでしょうか。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        157
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-073",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども支援課長（浅野良幸）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "過去の推移でございますけれども、令和５年度から申し上げますと、総体で１４９件の１９名ということで、内訳いろいろあるのですけれども、総体で述べさせていただいてございます。\n　また、令和６年度につきましては総体で１３７件ということで、実人数が７９名ということになってございまして、中身的には産前産後の相談事業に係る人数、それから乳房ケアの人数、そして日帰り型の人数、最後に宿泊型の人数というような中身になってございます。",
+    "text_length": 208,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        159
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-074",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "そうすると、ごめんなさい。今回の補正予算額が増額になった理由について、改めて教えていただけますか。",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        161
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-075",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども支援課長（浅野良幸）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回増額の補正の要因でございますけれども、乳房ケア自体については一定程度、当初予算で見込んでいる人数というところで推移しておりますが、日帰り型の利用をされるお客様、それから宿泊型の利用をされるお客様が増える見込みであると。特に宿泊型については、もう既に予算を超過しているといったところでございます。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        163
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-076",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　産後ケアは去年、令和６年度も令和５年度も、これまで減額補正したり予算をかなり余していたイメージがあったのですれども、今年に限って日帰り型とか宿泊型とかが増えている理由は何かあるのですか。",
+    "text_length": 106,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        165
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-077",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども支援課長（浅野良幸）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "実際利用されている方、それから利用限度が決まっておりまして、そういった利用限度いっぱい、一人で何回か使う方もいらっしゃると。その人数が少し増えているかなというところが主な要因かなと思っております。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        167
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-078",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　日帰り型と宿泊型それぞれお一人３回まで利用されることができるのでしたか。そういうリピーターと言って良いのかあれですけれども、そういう方が増えているというご説明でした。ありがとうございます。\n　それでは、逆に言うと、今年度の出生数から見てあれですかね。どのぐらいの方が産後ケア事業を何らかの形で利用されているとかというのは、わかったりしますか。",
+    "text_length": 184,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        169
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-079",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども支援課長（浅野良幸）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "失礼いたしました。８％くらいの割合ということになってございます。",
+    "text_length": 32,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        172
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-080",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　思ったより割合としては少ないですよね。いろいろと通告しないでやっているので、余り迷惑かけないように終わりますけれども、本当は全道的な傾向と比べて、その割合はどうなのかなというのとかも知りたかったのですけれども、要するに今国の方で全体的にこども子育て支援を拡充させていて、その中の取り組みとして産後ケアも含めて充実させていこうということになっています。主には希望する方がみんな受けられるように、そういう施設整備を進めていくという方針で、根室市の場合は支援事業計画を見ると、その枠は大体確保されているよという評価されているので、それは良いと思うのです。\n　あとはできるだけ、ただ根室の場合は中標津に行ったりとか、釧路に行かなければならない、小さなお子さんを連れて２時間の移動をされるというのが、なかなか大変な状況もあるのかな。そうした部分で利用者の直接の声というか、そういうアンケートなんかも含めて、ぜひやっていただければなと思っています。\n　先ほど須崎委員の話で保健師が足りない状況だということで、できることは限られていると思います。コアな業務を守るのに今深刻な状況だとは理解するのですけれども、例えば母子手帳アプリ使ったアンケートだとか、いろいろな形でニーズをできるだけリアルタイムで生の声として把握できるような仕組みが簡便にできると良いなと思っておりますので、感想だけ述べて終わってもあれなので、最後、課長の感想だけ伺って終わります。",
+    "text_length": 631,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        174
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-081",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "こども支援課長（浅野良幸）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "産後ケア事業につきましては令和２年度からスタートして、これまで国の通知をもとに、さまざまな取り組みをしておりますけれども、現在妊娠届が出てきた際に、保健師の方からこういった制度についての周知は図っているところでありますけれども、そういったところで少しずつではありますが、制度の浸透はしているのかなという評価はしてございます。\n　今後につきまして、今委員からご意見あったように、我々としてももっとニーズを聞いた上で、更なる制度の拡充も含めた見直しを進めていきたいなというところは今課内でも話しておりますので、今後そういったアンケート等については、しっかりと進めて行きたいなと考えてございます。",
+    "text_length": 295,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        176
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-082",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "まず、ページ１５のふるさと納税の部分で確認をしたいと思います。\n　数日前のニュースで、ふるさと納税とは関係あるのか、ないのかわからないのですが、制度的にふるさと移住だか、ふるさと住民というような制度を国の方でつくってやるのだということが報道でされておりましたが、これはふるさと納税とは直接関係ないのか、どういうものなのか、情報があれば教えていただきたいと思います。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        180
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-083",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "地域創生主査（塩原康之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ふるさと納税制度とふるさと住民登録制度、かかわりあるのかどうかというご質問かと思いますけれども、ふるさと納税制度におきましては、立てつけとして地方税法に定められている寄附の向上という仕組みになりますので、ご質問のふるさと住民登録制度とは直接的な関係性はないのかなというふうに思うのですけれども、ただ関係人口という点においては、そういった意味で副次的なかかわりというのは今後あるのかなというふうにも考えてございます。\n　以上です。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        182
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-084",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "こりに関してもあれですよね。根室市としては積極的に取り組むなり、取り組んでいくという考え方で良いのですか。",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        184
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-085",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総合政策室長（鵜飼豪生）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ふるさと住民登録制度の今後の取り扱いでございます。\n　国が地方創生２．０の実現に向けた取り組みとして、住所地以外の地域に断続的にかかわる方々を登録できる制度として、ふるさと住民登録制度、これを創設したというふうに認識しております。それと現在のところ、具体的な取り組みについての検討はしておりませんが、今後この制度の内容等々について調査研究して取り組みを進めてまいりたいというふうに考えてございます。\n　以上です。",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        186
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-086",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "これ以上やると関連質問の延長になってしまいますので、この程度にとどめますが、しっかりと取り組んで根室市活性化のために生かしていただきたいなと思っております。\n　続きまして、単純に確認ですが、ページ２１ページの老人福祉センターの空調なのですが、老人福祉センターは、西浜の老人福祉センターと考えれば良いのですか。それとも成央小学校のところなのか、その辺の確認です。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        188
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-087",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "介護福祉課長（飯澤洋樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回補正を出していただいている老人福祉センターにつきましては、西浜町にあります老人福祉センターとんがり荘になっております。\n　以上です。",
+    "text_length": 68,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        190
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-088",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "その確認だけだったので、ここでするなよと思われるかもしれませんが、聞いて確認しておきました。\n　続きまして、ページ２３の蒼香苑のエアコンの関係なのですけれども、八、九年前からいろいろとかかわってやってきたところなのですが、今年度中に新しい空調設備が完備されると考えて良いのですか。",
+    "text_length": 140,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        192
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-089",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "生活環境課長（干野満広）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "直ちに入札行為を行うのですが、工事の部分なのですけれども、実際に工事は物があるとすぐできるのですけれども、受注発注なものですから、大体発注するまでに２カ月ぐらいかかる。物が来たら２週間程度でできるということで３月末を目指しているのですが、６月末までの期間で考えております。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        194
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-090",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "空調できるエリアというのはどういうふうになっているのだろう。今までだと、確かにお客さんがいらっしゃる部分、待合室とテレビのある部分また収骨室だったと思うのですが。それ以外の台所とか事務室、裏方の職員が休憩するエリアというのは、エアコンなかったと思うのですが、その辺もこのエアコンの対象エリアになるのかどうなのかとの確認です。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        196
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-091",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "生活環境課長（干野満広）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今委員おっしゃったとおり、従前のところの部分が、まず対象になるという、入れかえと。あと事務室と調理実習室、そこは新規にエアコンを設置するという形になります。\n　以上です。",
+    "text_length": 85,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        198
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-092",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "ということは、今年度ではなくて来年度に、そういう対応すると考えて良いのですね。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        200
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-093",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "生活環境課長（干野満広）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一応今年度中に通っていだたけましたら直ちに準備を始めますけれども、若干ずれ込む可能性があるということです。\n　以上です。",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        202
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-094",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "それなら安心しました。調理室も結構あそこで準備してくれるお姉さんたちが、常に暑いという話をしておりましたし、あそこで働いている従業員というか担当の方々も、裏へ行くとボイラーでめちゃくちゃ暑いのですよね。その対応をしてあげなければだめではないかなと思っていましたので、それはやるということで確認で良いですね。はい、わかりました。よろしくお願いします。\n　続きまして、これも確認なのですが、ページ２３と２５、ごめんなさい。この説明のとき、よく聞いていなかったのですが、この手当というのは、予算措置というのはどういう理由でしたか。",
+    "text_length": 262,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        204
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-095",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "すいません。では２３ページ、水道会計で、水道会計の補助金なのですが、何のための措置でしたか。その確認です。単純に会計的な措置なだけですか。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        206
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-096",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "建設水道部長（伊東英輔）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "水道会計支出金につきましては、水道料金の基本料金免除に係る部分の支出金となっております。",
+    "text_length": 44,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        208
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-097",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "思い出しました。そこで確認しておきたいのですが、一般的に水道を使っている人と水道ではない人いますよね。要は井戸水でやっている方々がいらっしゃるのですが、その部分に対する何らかの支援というのはないのでしょうか。予算委員会でやったかどうかわからないのですけれども、前の何かこういった支援のときに対応してもらった記憶があるのですが、その辺はどうなっていますか。",
+    "text_length": 177,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        210
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-098",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご指摘の世帯に対する支援については、事項別明細書の２０ページをご覧いただきたいと思うのですけれども、１８節の負担金補助及び交付金の中に、上水道未給水世帯生活支援給付金とかございますので、それが該当するかと思います。",
+    "text_length": 107,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        212
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-099",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "確認しておきますが、対象件数は何件になりますか。井戸水を利用しているという対象件数というのは。わかりますか。",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        214
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-100",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "社会福祉課長（白川哲也）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "根室市上水道未給水世帯生活支援給付金でございます。\n　こちらの対象世帯につきましては、令和６年度支給対象者として４１件を予定しております。\n　以上です。",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        217
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-101",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "その確認だけでした。以前の更に前は、こういう制度があっても井戸水利用者には何の支援もなかったものですから、今後そういうことはないとは思いますけれども、注意していっていただきたいなと思っております。\n　続きまして、ページ２６ページの水産振興費になりますが、これも確認だけです。御存じの方いらっしゃるかもしれませんが、数日前の報道で気になることがあったのですが、要は根室市も今、花咲港の中で海面養殖やっていますよね。それと同じようなケースが、ちょっと地域忘れましたが、ほかの地域でありまして、次の朝に現場を見に行ったら、養殖していたものがすべて全滅していたと。トラウトサーモンか何かだったと思うのですが、その原因がイワシか何かが港に大量に入って酸欠になったことがあったのですが、根室市の場合は、そのような事態が想定されるのでしょうか。",
+    "text_length": 365,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        219
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-102",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "水産振興課長（西田悟）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基本的にこの件につきましては、水産指導課の方が専門的にやっているかと思いますけれども、自然のものなので、そういうこともあり得るのではないかというふうに私個人的には、ちょっとそういう考えであります。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        221
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-103",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "水産経済部長（藤田隆人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の道内で起きた件なのですけれども、上ノ国とかそこら辺、道南地域だと思います。今回の酸欠の原因というのが、イワシの大群が港に押し寄せて、そこのエリアの酸欠状態をつくってしまったといったところに起因するのではないのかといったところなので、それを根室花咲港に例えますと、例えば花咲港にイワシの大群が押し寄せてきたといったところになれば、同じような現象が起きるというふうに考えていますけれども、過去の経過から見ますと、花咲港にイワシの大群が押し寄せたといったところも多分ないのかなというふう思いますので、今の状況が続けば、自然状況が続けば、道南地域で起きたようなトラウトサーモンの海面養殖の酸欠というのは、イワシに由来することは多分ないのかなというふうには思っております。",
+    "text_length": 334,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        223
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-104",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "本当に申しわけありませんでした。関連と言えば関連質問で、この予算には直接関係ないのですが、すごく気になるニュースだったもので、根室も養殖をやっている以上、そういうことが起こり得るかなと思って、どういった状況かなというのを確認させていただいたところです。\n　続きまして最後、２７ページになりますが、これも財源内容の補正ということなので直接関係ないといえば関係ないのですが、この公園費全体の中で、いろいろな公園があるのですが、ときわ台公園に焦点を絞って１点お話したい点があります。\n　ときわ台公園には木がいっぱい生えているのですが、そこの老木化が進んで近隣の住民から、あれを退除しろと多分９月、１０月以前に市の方にも要望があったはずなのですね。それがその後の対応はされていないのですが、その後の嵐で相当数、倒れたり何だりして、市の方でかなり切ったのですよね。そういうことがあるので、今後子どもに当たったりして危険だという指摘もされていたものですから、その辺を今後ちゃんと公園管理として木の老木かどうかというのをチェックして管理していただきたいなと思うのですが、その辺の見解ありますか。",
+    "text_length": 490,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        225
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-105",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "建設水道部長（伊東英輔）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま委員の方からお話ありました件ですが、ときわ台公園に限らず、複数の公園でそういった樹木の部分ございます。\n　また、低気圧等々の突風被害に遭った場合、やはり倒木、枝落ちといった状況も確認はしております。\n　そういった部分を含めて委員おっしゃるとおり、まず安全に利用していただくといったことを心がけておりますので、そういったところを作業員等々もおりますので、まずは目視含めて、そういった部分、対応してまいりたいというふうには考えております。\n　ただ大きな老木といったところの判断というのが、専門的な見地からすべきところなのか、単純に外側から見て、かなり危ないと判断できるものについては、早急に対応してまいりたいというふうに考えております。",
+    "text_length": 320,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        227
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-106",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（永洞均）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "永洞 均",
+    "member_faction": "創志クラブ",
+    "text": "それで、もう一点だけ申し上げたいのです。対応はそのようにしていただきたいし、そのとおりだと思うのですが、もう一点は、同じときわ台公園で、せっかく伐採してくれた事業だったと思うのです。\n　そうしたら、あそこに石の記念碑あるではないですか。あれが作業中に恐らく壊れたと思うのですよね。その辺の確認はしているのかどうなのか。よく行って見るのだけれども、いまだに多分修理されていないはずなのですが、その辺はどのように認識しておりましたか。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        229
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-107",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "建設水道部長（伊東英輔）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま委員ご指摘の件についてですが、申しわけございません。私の方では現状の部分については把握できておりませんけれども、そういったご指摘ありました部分については、公園担当の方、確認していただいて、記念碑といったことで所管の部分等々ございますけれども、破損しているというような状況であれば、そこを確認して補修なり何なりといったような対応をしていきたいというふうに考えております。\n　以上です。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        232
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-108",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "それでは、順番に行きたいと思いますので、１５ページ、１６ページになります。\n　まず、ふるさと応援寄附金関連ですが、今回の補正自体、ふるさと納税推進事業経費に関しては３１億２，５００万円ですから、寄附金のところでは６２億５，０００万円、今回積むことにしましたので、その２分の１ということで、ルールどおりの予算措置になっていることは理解しました。\n　それで、前回もお聞きしているのですが、報償費の中で記念品自体が２１億８，７５０万円で寄附金額の３５％相当ということで、全体５０％以内の中で事業者に渡るとなっているのですが、前回も聞いてちょっと驚いたのは、実際の返戻金自体が多くて２８％ぐらいで、悪いところだったら２２％ぐらいまでで、残りは多分送料等になっていると思うのですけれども、全体的にこの動きとして変わっていないか、変わっているか、同じような状況かどうかというだけ確認したいと思います。",
+    "text_length": 394,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        236
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-109",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "地域創生主査（塩原康之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ふるさと納税推進事業の関連経費についてのご質問でございます。７節報償費、細節記念品についてでございます。\n　補正の内容といたしましては、今後の寄附の受け入れを見越しまして、寄附者の皆様への返戻を記念品の贈呈費用として２１億８，７５０万円を増額補正するものでございます。\n　内訳といったところでございますけれども、前回補正のときと基本的には変更ございません。寄附額の区分に応じまして、返戻品調達費用を寄附額の２０％から２５％、また発送に要する経費として１０％から１５％を計上いたしまして、合わせて３５％として積算してございます。\n　以上です。",
+    "text_length": 270,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        238
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-110",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。全体として変わらないということですね。何とか３０に近づけるところをやってもらいたいなという思いはあるのですが、そうなると、いつも言っている送料の部分が問題になるのですけれども、ここは根室市としては位置が日本の一番端っこだというところで、やむを得ないなという部分はあるので、そういったところで本来であれば寄附者への感謝の気持ちを伝える部分の金額を３０に近づけるという話は、これからも課題だと思いますので、そういうのも含めて、ぜひこの辺は検討をしっかり続けていただきたいと思います。よろしくお願いいたします。\n　あと、残りの役務費ですとか、これについては従前からお聞きしていますので、大体ルールにのっとったパーセンテージになっていますので、この点についても予算そのものについては別段ルールどおりならということでわかりました。\n　それで、積み立ての方も含めて全体的にお聞きしたいのが、まず今回ふるさと納税関連の寄附金トータルで６２億５，０００万円をルールどおりに対して、いろいろ振り分けて積み立てました。当初から２回の補正で、今持っている１０カ年計画の中の目標値である１２５億円に到達するということで、今回すごい早いタイミングで補正になっているのですが、実績に基づいて、これまでも予算措置してきたというふうに認識しているのですが、ほぼ計画どおり、この１２月までの見込みで達成できるということで措置されたと思うのですが、そういった今年度の状況といいますか、動きをどうとらえているか、そこを大きな意味で確認したいと思います。",
+    "text_length": 664,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        240
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-111",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "地域創生主査（塩原康之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基金積立金も含めた全体の予算感といったところのご質問かと思います。\n　本市に対するふるさと納税の受入額につきましては、本年度末までに１２５億円を今回補正予算で見込ませてもらいました。そうしたことを踏まえまして、関連基金への積立金につき、今回増額補正をするものでございます。\n　ご質問にありました今年度の見込み想定といったところになりますけれども、実績といたしまして、まず本年の４月から１１月までなのですけれども、この間ふるさと納税の関連イベントへの出店等々、あとはクラウドファンディング型ふるさと納税のそうした取り組みも経て、実績といたしまして、およそ約６５億８，０００万円、１１月末までで６５億８，０００万円となってございます。\n　委員ご承知のとおり、本年は制度改正による夏場の駆け込み需要等々の影響が非常に大きくて、同様のケースとなったのは、おととし令和５年度かと思います。その年と比べますと、１１月末時点で約９７％となっております。ほぼほぼ同水準で推移していることになっておりますので、この令和５年度、最終的な受け入れ実績１２５億円となりましたけれども、その金額を本年度末までの受け入れ見込みとして、今回計上させていただいたということでございます。\n　以上です。",
+    "text_length": 534,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        242
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-112",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。基本的には、では実績ベースでは６５億８，０００万円ですけれども、過去の水準と比較して、そこまで行けるだろうということで見込みの予算を持ったということですね。了解しました。ここの１２５億円に関して、それぞれの基金への積み立ての考え方も私も分析して資料を自分でもつくっているので、積み立て比率がちゃんとルールにのっとってやられているということも理解していますので、それぞれの目標値に向かった積み立てがされるということで理解しました。\n　それで、どっちかというと、過去の流れで行くと、実績ベースで近いところを予算措置して、今回みたく、かなり４０億円ぐらいまだ見込みの方があるというのは、余り今までないケースだったと思いますので、私自身それに近い部分までもう来ているのだろうなという想定をしたものですから、仮に１２５億円に関しては、ルールどおりの積み立てだということで今も予算もそうなりました。そこは理解しました。\n　その上で、ここを上回った場合については、同じルールどおりの積み立てをしていくのか、あるいはどこか目的基金で、例えば今重点的にやっている体育館の建設のところに上乗せしていくとか、１２５億円を仮に超えた場合の基本的な考え方についてお伺いしておきたいなと思います。",
+    "text_length": 541,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        244
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-113",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "地域創生主査（塩原康之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "積立額といったところのご質問かと思います。\n　先ほど来、ルールというふうにおっしゃっていただいているのは、既にお示ししております地方創生の推進等に関する基金の管理方針でございます。こちらの中で１０年間で１，２５０億円、これを単年度に置きかえますと１年当たり１２５億円と、そういった積み立て計画を我々持ってございます。ですが、過去には先ほどお話したように、本年のような制度改正がある年は影響が大きくて、寄附額をぐっと下げてしまうような年もございました。\n　ですので、当然ながら毎年の受入額というのは、増減するものであるというふうに認識してございます。その上でなのですけれども、ご質問のありましたように、仮に上振れとなった場合については、まず計画どおり積み増しを進めて行く、これは大前提でございますけれども、ただ必要に応じまして寄附者のご指定いただいた使い道、こういったものも考慮しながら、必要に応じて特定の基金へ積み増しを行うといったことも想定しているところでございます。\n　以上です。",
+    "text_length": 442,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        246
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-114",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。私も皆さんからもらった資料をベースに１２５億円の分析を全部かけて、従前の積立率とかでチェックを入れていますので、そうすると現状では前回１０月のときに確認しましたけれども、ふるさと応援寄附金のところを少し落として、その分を総合体育館の建設基金の方に回すということで、通常の今までやってきたルールから比べると、そこのところで今１１億円ぐらいひっくり返っているところあるのですが、これは４７億円を３年間で積むというところで優先順位を上げたと、そういうふうにとらえています。\n　そういった意味で、積み増しがもしもあるのであれば、そういう今急ぐべきものとか目的あるものに対して、しっかり重点的に積むというのもありかなと思いましたので、今後どのような状況になるかは見えませんけれども、はっきりしていく中で、そういった手法も取り入れながら必要なものへの重点的なもの、あるいは分散の正しいやり方も含めてご検討いただいて、しっかりとした対応をしていただきたいなと思います。よろしくお願いいたします。\n　その上で今回お聞きしたいのが、ふるさと応援寄附金のプロジェクトの中で元気ファンドの部分が今回また１億円積み増ししています。それで当初１億円でしたが２億円になった、これはルールに基づいた積み増しだと思うのですが、一方でこちらに関する支出の予算が一切ないのですが、初年度として元気ファンドを立ち上げましたと。今１２月も終わろうとしていますけれども、初年度で事業実績というか、相談等も含めて実際あったのかどうか、その辺の事業の推進状況についても確認させていただきたいと思います。",
+    "text_length": 685,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        248
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-115",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総合政策室長（鵜飼豪生）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "共創のまちづくり元気ファンドの事業についてであります。\n　本年度スタートしました第１０期総合計画に掲げるテーマ共創のまちづくり、これまで以上に官民が一体となったまちづくりを加速するため、ＮＰＯ法人や企業等のまちづくりへの参画を促進し、地域課題の解決、地域活性化を目的とした根室共創のまちづくり元気ファンド、これを本年度創設したところでございます。\n　運用初年度の本年度につきましては、既に官民一体となったまちづくりに意欲的な３件の事業者から、賑わいづくり関連事業など、新たな事業展開などに当たっての事前相談が寄せられているところでございます。現在、開始年度含めまして、詳細について継続的に協議をさせていただいております。明らかになり次第、予算計上も含めまして詳細をお示ししたいと考えております。\n　また、そのほかの制度の活用に関しての問い合わせ、意見交換等につきましては、そのほか３件寄せられているというような状況でございます。\n　以上です。",
+    "text_length": 421,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        250
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-116",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "当初予算の中でもこの事業のあり方については議論しているのですが、基本的には立ち上げ資源ですよね、１億５，０００万円。あとファンディングをやって、更にプラス１億５，０００万円、３億円貯まれば１億５，０００万円は上乗せできると、３億円マックスの立ち上げ資源なのですけれども、現時点でファンディングも立ち上がっていないということは、まだ事業がないというふうにとらえていまして、相談はあったけれども、現状ではまだ具体的な動きには至っていないということも理解しました。\n　ただ、新しいアプローチですので、こういった部分をしっかり市民の皆さんに知っていただいて、ここを活用すると地域の元気活性化するための大切な新しいアプローチですから、ここついても何とか一つでも二つでも事業が動くようにしていただきたいですし、併せていろいろな皆さんとの協議の中から、アプローチの仕方が立ち上げ資源だけで良いのか。更にその後の運営のところまでサポートする必要性がないのかとか、そういったいろいろな要望を聞きながら、この事業の活用についてはしっかり考えていただきたいなというふうに思います。\n　ですから、当初もお話したとおり、なかなか立ち上げ資源だけだと、その後事業を回せないといって手を挙げられない人も相当いるのではないかという思いも個人的には感じますので、そういったところの見極め含めて、しっかりここについては対応していただきたいなと思います。\n　それで、今回ファンディングのところを、今何動いているのかなと調べたら、実際今動いているのは花咲線の関係のファンディング、ことしは。それとあとはホタテの関係と二本立てなのですよね。それで、花咲線に関しては今回１１月の２２日ですか、地球探索鉄道花咲線のサミットが開催されまして、私全部ここも参加させていただいて、いろいろ勉強させてもらいましたが、ビジネスパートナーであったり、あるいは沿線自治体との関係、あるいは鉄道ファンの皆様、思いのある皆さんとの意見交換をやりながら共創の形で動くのだと。今回はまた新しいスタートだという言い方をされたのですよね。\n　その結果、では今までやった基金自体、どのような状態になっているのかと調べましたら、今年度も寄附、ファンディングをやっていまして、金額的には２６０万円しか今年度はなかったのですが、その資料の中を見ていくと、この３０年からですかね、ずっと継続して、この花咲線に関してはファンディングが行われていて、寄附額が相当な金額になっているのですね。それで寄附の一覧表の中に、前は、うちファンディング型が幾らとか出ていたのですけれども、今そこ全くなくなったものですから、見つけられませんでした。\n　ところが今回、今までお話したような中からファンディングのところを少し調べましたら、花咲線に関しましては、何と３０年から去年までで寄附額が６億５，３００万円になっています。３０年からの活用が１億２，３００万円ですから、まだ基金としては約５億３，０００万円近く残高があるのですね。これは目的を持った基金ですから、ここにしか使えないお金だと思うのですが、こういったところをもうちょっと見えるようにしていただきたいなというのが一つのお願いです。\n　併せて今回、新しいアプローチとしてサミットやられて、いろいろな意見が出てきました。この後、ではこの基金を活用してどのような展開を想定されているのかというところもなかなか見えないのですね。ですから、とりあえず３０年からやってきた取り組みの中で、基金の積み立て状況をどう押さえているかと、あと活用に対して、現在までのところでどんな評価しているのか、まずそこの２点についてご説明していただけないかなと思います。",
+    "text_length": 1548,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        252
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-117",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "地域創生主査（塩原康之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "クラウドファンディング型ふるさと納税に関するご質問でございます。\n　ご質問の中でＪＲ花咲線のプロジェクトの実績について触れられておりましたけれども、すいません、その点について一つ訂正させてもらいたいなと思います。\n　本年度、実はＪＲ花咲線のプロジェクトを二つのサイトで行っておりました。恐らく今ご質問の中にあったのは、ふるさとチョイスさんのページかなと思うのですけれども、もう一つサイトございまして、そこと合わせますと実績ベースで１万８，３１０名の方から合計で３億５，８８２万９，０００円のご寄附がございました。まず、その点だけ訂正させていただければなと思います。\n　いずれにいたしましてもこのクラウドファンディングの取り組み、この制度に関しましては、官民連携事業との親和性も非常に高く、民間事業者のプロジェクト実施に向けた資金調達を支援する仕組みとしての運用も期待されておりますので、市といたしましても引き続き積極的に取り組んでまいりたいと考えております。",
+    "text_length": 429,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        254
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-118",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "そうすると、私は今見ているのはふるさとチョイスさんの中ですけれども、その中の積み立ての実績ももう一個あるということですよね、そうすると。今ここに出ている中で行くと、３０年から６年までで先ほど私６億５，３００万円と言いましたけれども、それはふるさとチョイスさんの分だけですか。それとも全体と見て良いのですか。そこの確認ですね。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        256
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-119",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "地域創生主査（塩原康之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そうですね。基本的には、ふるさとチョイスさんの方で実施してきた経過もございますけれども、ただ、それ以外のサイトも年によっては実施しております。合計で。大丈夫ですか。\n　以上です。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        258
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-120",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "それで言いたいのは、いろいろなサイトを使ってやるようになっていますから、なかなか我々見ようと思っても見られなくなってきているのも事実です。それと、お示しいただいている資料に関しても先ほど言ったとおり、それぞれの事業ごと、持っている１３の基金の話しかないのですよ。\n　ですから、ファンディング型というのは、また意味合いがちょっと違いますから、直接的に事業に対して応援してもらうという部分ですから、そこが幾らあって、そこからどれだけ活用したかというのをもうちょっと見えるように、それであれば資料の整理をしていただきたいなと。\n　それで、今のお話でいくと、私がさっき言った５億２，９００万円プラス３億円ちょっとの話になりますから、８億円、９億円近い基金残が花咲線に関して今あるということになりますので、それであれば、この後、では多額の寄附金を活用して寄附者にお願いしたときに、ファンディングですから、こういう目的に使うと示しているわけですよね。そこに対してどんなアプローチをこれからしていくかというところも、もっともっとアップデートしながら、効率的に効果的な事業をいろいろ展開していかなければいけないのではないかと感じます。\n　併せて今回やったような皆さんの思いを聞いて、鉄道ファンの方の思いから出てきたアイデアもありますし、いろいろ調べている方から出てきたアイデアもあって、何をではやっていくのかという部分、それと沿線自治体との連携でどうしていくのかとか、そういった部分をもっともっと踏み込む必要性があるのではないですかね。かなり大きな金額をご寄附いただいていて、その目的が明確になっているわけですから、そこに対して、しっかりとまた事業の内容をアップデートしていただいて、効果的な取り組みをしっかりやっていただきたいなと。\n　今回のああいうサミット自体もその切り口だと思うのですけれども、今回サミットをやったことを踏まえながら、この後、課題ある花咲線に関して、どんなようなアプローチをしていくのか、そういった方向性についても少しお聞かせいただきたいなと思います。",
+    "text_length": 879,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        260
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-121",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "交通政策主幹（前田純志）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "花咲線の取り組みについてでありますが、委員おっしゃった１１月２２日のサミットですが、こちらにつきましては、来場された方が４５０名、オンラインの方で配信していたのですけれども、そちらの方では全国から２６０名の方に来ていただいて、皆さんに花咲線のサミットを盛り上げていただいたと認識しています。\n　また、花咲線の取り組みにつきましては、今年度東京の方でも東京カメラ部と協力してイベントをやったりだとか、その中でいろいろお話は聞いたのですけれども、花咲線の方に乗ってみたいだとか行ってみたいといういろいろな意見もありました。今回花咲サミットの中で、それぞれの中から沿線の魅力発信をもっとするべきではないかだとか、観光路線としてもっと発展させるべきではないか、あと地域連携強化の重要性といった、こういった点がいろいろ聞かれましたので、今回サミットの中でいただいた意見をこれからどういう形で具現化していくのか、ここら辺の今は整理をしていきたいと思っております。",
+    "text_length": 425,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        262
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-122",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "会議の中でもさまざま、いろいろな意見出ましたし、本当に面白いなと思ったのは、どっちかというと厚岸の取り組みみたく、ウイスキーだったりビールだったりと結びつけて食とつなげるとか、あの話の中でも釧路の福司があって、厚岸でそれがあって、根室の北の勝と、こんな話も出たりとかしていますし、食であったりとの連携というのも非常に大事なキーワードになってくると思いますので、この後そういったプランニングをしっかりしていただいて、出たアイデアの中から具現化、実現できそうなものをしっかり取り組むと。それに関しては私はもっと民間の力をしっかり組み入れた官民連携のあり方ですね、いわゆる共創というキーワードを今回出しましたけれども、ともにつくり上げるというようなイメージをもっとしっかり前に出してもらいたいなと思います。\n　非常に新しい取り組みなので、なかなか完全に理解できている人、まだそんなにいないかもしれませんけれども、私もサミットの少し前に官公庁かどこかでやったオンライン会議に少し参加したら、今は行政と民間事業者、これは自分の住んでいるところも外も含めて、それと金融機関、それと個人、全体が一つになって新しいものをつくり上げていくという時代に入っていますという、まさに今、このまちがやろうとしていることに近いことが全国的にもそういうテーマだというふうになっていますから、最先端のことを私はやっていると思いますので、関連して支援していただいている、例えばこの間サミットを仕切ってくれた事業者みたい、ああいう新しいノウハウというのは、今まで地域になかったノウハウですから、ああいったものをしっかり組み入れて、しっかりと私たちのいろいろな考え方もアップデートして、ああいうことができるまちになっていくと、そういったことも目指しながら取り組んでいただきたいなと思います。\n　そういった中で、しっかりとした方向性を示しながらやることが大事だと思いますので、今回花咲線の話をしましたが、今動いたホタテの方も一つファンディング立ち上げてやっていますので、そういったところもどう動いているのかというのは、なかなか見えてこないところもありますので、その辺をしっかり見えるようにしていただきたい。プラス元気ファンドのところは、出てくれば、これは恐らくファンディングになるわけですから、そういったところを見れば、どんな動きになっているかなというのも我々も見ることができますし、それ一つ一つが、まちの元気につながる大事な取り組みだと思いますので、しっかりやっていただきたいと。\n　それと、花咲線に関しては細かいいろいろな、例えばもっともっと市民の皆さんにアイデア募集して、こんなことやったらいいのではないのかとか、いろいろなことあるのではないかと思います。あと乗ってみようも一つだし、なかなか乗る機会のない人もいますけれども、年に１回でも２回でも一人１回でも２回でも乗ったら、それだけ実績が変わるのだと。かなり五、六年前の北海道ベースのＪＲの廃止問題に対する対策で、私聞きに行ったのですけれども、やっぱり使うこと、利用することが一番大事だと。今観光に特化した話ばかりですけれども、我々も定期的に使うのだと。車で行った方が釧路も良いですけれども、たまに乗ってみようよという、そういうふうなアプローチをして、とにかくみんなで大事なものだというか、この地域にとって大事な鉄路だということをしっかり支える、押さえることも考えていただきたいなと思います。\n　私個人としては、北方領土返還原点のまちとして、ここから鉄路がなくなることは絶対許せませんので、とにかく残す方向で、皆さんのアプローチにしっかり我々も協力して、やれることはしっかりやっていきたいと思っていますから、そういった思いをつなぎながら、アイデアも市民からの声も聞きながら、この事業については取り組んでいただきたいなということをお願いして今回は終わりたいと思います。\n　全体的にはルールにのっとった積み立てをしているということはチェックできていますので、冒頭言ったように、１２５を超えた分についてのアプローチの仕方はまた、しっかりご検討していただいて対応していただければなと、よろしくお願いいたします。\n　それでは、次になりますが、はじめに、そうですね財源対策のところは橋本委員のやりとりも理解はできるのですが、どっちかというと先ほど議論はなかったのですけれども、じん芥焼却費のところで、その他財源で２億３，４５０万円三角にして一般財源化していると、こっち側はね。\n　そして、先ほど橋本委員とやりとりした部分でいくと、地方債の方を落として、そして一般財源を三角していると。一般財源の三角の部分が結局じん芥のところとの入れ替えなのですよね。要は、財政調整基金自体はそのまま動かさないで、違うところに振り替えたという形に見えるのですよ。落ちた分に関しては地方債で救える部分は救いながら、そうですね、その他財源ですから、公共施設等総合管理計画の財源をよっことしたという、そういうふうに見えるのですけれども、二つの事業でそういうふうに動かしたというふうにとらえて良いですか。",
+    "text_length": 2142,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        264
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-123",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご指摘のとおりです。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        266
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-124",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "それで、ここのところもお金の動きでちょっとチェックしたいのは、公共施設等総合管理計画に関しては１３本の基金の一つなのですよ。だから本来であれば、この２億幾らも含めて減額が２億何ぼという数字が、企画の方の資料の数字に出てこなければいけないのですけれども、企画の方の数字は５００万円しか三角になっていないのですよね。\n　そうすると、基金の管理がどうなっているのかなというのは私自身、はてなマークがついています。私は前は、この基金もともと２億円の原資を持って緊急的に維持補修が必要になった部分に対する財源ですよ、ですから、予算措置はそこからすれば、例えばどこか破損したといったときに出せるお金だということで基金を積むのだというふうに認識していました。それが方向性が大分変わって、今回のふるさと応援寄附金の関連の中で、ここに関しては将来的な公共施設の整備等の裏の財源に当たることにも使えるのだというような部分で、そこに対しても積み始めたというふうに認識しているのですよね。\n　そうすると、書いている、いただいている内容でいけば、三角５００万円なのに実際は２億円を超える金額が落ちているというのは、そこが納得いかなかったものですから、全体のお金の動き、あるいはこの基金の管理の内容について少し説明していただきたいなと思います。",
+    "text_length": 558,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        268
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-125",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "財政課長（中野誠）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "公共施設等維持補修基金につきましては、一般財源を原資として積み立てたものと、ふるさと応援寄附金を原資として積み立てたものとに区分をして管理、整理をしております。このため、お配りしている資料の数値と予算事項別明細書に記載している数値が一致していないようにも見えるのですけれども、これは原資の区分が異なることによるものです。\n　今回の補正予算なのですけれども、維持補修基金繰入金を２億３，９５０万円減額をしておりますが、その内訳は、ふるさと応援寄附金を原資するものが５００万円、残りの２億３，４５０万円が一般財源を原資とする分になっております。\n　参考までに申し上げますと、令和７年度末時点における維持補修基金の残高なのですけれども、約４億３，７００万円となる見込みでありまして、このうちふるさと応援寄附金を原資とするものが約１億８，４００万円。それから従来の一般財源を原資とするものが約２億５，３００万円となっております。\n　以上です。",
+    "text_length": 417,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        270
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-126",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "そこがほとんど見えていませんでした。制度変わった時点で、全体がふるさと納税の原資として積み増しをしていくと、そこに色があるというふうにはとらえなかったので、今お聞きして理解しましたけれども、では果たして、そのアプローチで良いのかなと。今後の基金管理として中が二本立てになっているということ自体、非常にわからづらいではないですか。\n　ですから、基金条例そのものがありますから、そこをどうしていくかというところにもなるのですけれども、基本的に公共施設の維持管理補修基金、維持管理の補修ですから、冒頭私が話したように、もともとの基本的な考え方ありますよね。緊急時にそこから出して予算措置をスピーディにやるための基金がそっちですよね。\n　それともう一個は、今後の新しい公共施設の整備にもつながるような部分で、ここに積み立てるという話もありますから、ここが本来、別の基金になるべきではないかなと。そうすると、企画の方で管理している数字はそのまま、新しく使う部分だなと、そこにある上乗せ分の一般財源分は入っていないなという方がわかりやすいと思いますので、これはこれからの運用になりますから、現状は理解しました。理解しましたけれども、その辺ちょっと問題点ではないかなということを今日は指摘しますので、今後管理のあり方、基金を分けることも含めて、ぜひご検討していただきたいなと思います。ここはお願いですので、ご答弁は求めません。そこは理解しましたけれども、そんなふうにとらえましたので、ちょっとご検討してください。\n　それでは、先に時間を見てやりますから、３２ページの社会体育施設費の中の普通旅費１２９万８，０００円で、すごい大きな金額の補正になっていますので、これはどういった中身のものになるのか説明していただきたいなと思います。",
+    "text_length": 758,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        272
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-127",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総合体育会館整備推進課長（能崎嘉）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今のご質問なのですけれども、これは補正内訳といたしまして、新総合体育会館建設費に対する財源対策として、国の補助制度併用に向けた関係省庁協議に要する出張経費を計上するものでございまして、主な内訳といたしましては、理事者を含めます関係職員３名分の普通旅費として、東京での国土交通省、防衛省との協議が２回分、札幌での北海道開発局、北海道防衛局、北海道庁との協議が２回分の合わせて１２９万８，０００円を計上するものでございます。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        274
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-128",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "このタイミングの補正ですから、本来はこれは先に使うことを想定なのですけれども、既に他の予算を使いながら動いた部分も当然あるのだろうなと思いますし、お話あったように、東京、札幌に関して理事者も含めて補助金の部分であったりとか、起債の対象どうなるかというところのアプローチをされたのだろうなと思いますが、一般質問でも教育長の方からご答弁いただいている案件ではありますけれども、今回のこういった活動を通して、どのような感触を現状得ている、持っているのか、その辺お話できる範囲で結構です。お答えいただければなと思います。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        276
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-129",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "総合体育会館整備推進課長（能崎嘉）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、協議の経過も含めてお話させていただきたいと思います。\n　これまでの協議といたしましては、本年度１年間を中心といたしまして、東京での協議は国土交通省が１回、防衛省２回、札幌での出先機関協議として北海道開発局が２回、北海道防衛局が３回、北海道庁の３回の計１１回となっておりまして、来週も既に実は予定されておりまして、開発局、道庁それぞれ１回を含めますと、年内までに計１３回に及ぶ協議を数えるところでございます。\n　その中身なのですけれども、前、常任委員会等でもご説明したことがあるかと思うのですけれども、この公立スポーツ施設に対する国の補助制度というのは非常にほとんどないという状況の中で、唯一文科省の学校施設環境改善交付金というのがあるのですけれども、これはスポーツ施設に限らず義務教育学校とか、そういったところの配分、要するに、ここは予算の取り合いというか、そういうところがありまして、もともとがごく小額だというところで、これはほとんど期待のできないところでございます。\n　そういった中で、公立スポーツ施設単体としてとらえるのではなくて、広義的な例えば防災拠点とか、そういった整備に発想を展開する、いわば施設から拠点への視点を変えたアプローチが必要ということで判断をしたところ、これまで叶わなかった他の国の補助制度活用に向けた新たな取り組みを進めるということで、省庁をまたぐ併用に向けた何とか活用を考えて、今協議を続けているところでございます。\n　内容につきましては、実務者レベルも含めてさまざまな補助メニューにおける制度要件とのマッチング、更には省庁間の補助制度併用に対する諸条件の整理等々を今進めているところでございまして、検証も含めてやっているところでございます。\n　ですので、今後国との協議が整ったしかるべき段階において、最終的な補助メニュー等について決まれば、改めてご説明させていただきたいと存じます。\n　以上です。",
+    "text_length": 816,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        278
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-130",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。実施設計やるためには、そういった方向性決まらなければ前に進めませんので、大変ご苦労されているなということも理解しました。\n　それで行かれているところを見ると、国交省だとか防衛省というと、基地対策のこともきっと考えているのだろうなとか、今お話にあったような防災・減災対策のところをしっかり考えてやろうとしているのかなとか、もともと社会教育施設の補助金が少ないというのは前から聞いていましたから、何とかそこの３０億円、残りの部分をどう財源対策していくかという部分ですから、非常に厳しいところだと思いますけれども、何とか方向性を見いだしていただいて、事業化に向けてやっていただきたいなと。\n　あと、我々が本当に動けることあれば協力しなければいけない案件だと思っていますし、皆さんが１３回もやっていて、更に議会としても後押し、後方支援できるようなことあれば、これはやらなければ、なかなか難しいのではないかなと思いますから、ある程度の方向性見えてくる段階でも結構ですし、何かあれば議会にもご説明していただいて、我々なりに協力できることあればしっかり動いて、事業の実現に向けて取り組む必要性があるかなと思っています。\n　基本的に一般質問の中でもやりましたから重複になりますけれども、とにかく実施設計をまずやらないことには、全体の事業の方向性、金額もはじけませんので、とにかくそこを進ませるということになるので、これは一般会計とも調整していかなければなりませんし、新年度の予算の中で議論していただかなければいけないテーマだと思いますけれども、そこのところを早く見えるようにして、そこで示したものを、そしてそういった数字を持っていかなければ国との協議も最終的には進まないのではないかなと、そういった点も危惧されますので、担当されている部署として、そういった思いを市長部局にしっかり伝えていただいて、全市的な大きな課題としてとらえて取り組んでいただきたいなと。\n　市長自身もこの必要性については１０月も今回もそういった答弁されていますから、とにかくこれは現行の計画を何とか、そのまま成功させるというか、そこで進めるというところの思いが市長にもあるなと私は感じていますので、我々もそこをしっかり応援したいと思いますけれども、本当にこれだけの予算をかけて取り組んでいるということを今回示していただいて見えましたから、そこをもっともっと後押ししなければいけないなという思いにもなりましたので、とにかくそういった情報提供もしていただきながら、これは前に進めていただきたいなと思います。\n　本当にたくさんの時間をかけて皆さんの意見をいただきましたし、議会に対しても１３回も説明なんか本来そんなにないはずですけれども、そこまですごく真剣にというか、時々の情報を提供していただいて、議論して我々もそこにも意見も言わせてもらったし、よし、それで行こうといった事業なので、何とか実現させるべきだなというふうに感じていますので、そういった意味で、今回この中で確認させていただきましたけれども、しっかり取り組んでいただきたいと。何かあれば我々にも言っていただければ、しっかり協力していきたいと思います。とにかく時間がなくて最後の３秒で教育長に実施設計やってくださいみたいで終わってしまいましたけれども、本当にそこも大事なことだと思っていますし、とにかく次のステップに向かえるように、しっかり一緒にやりたいと思います。よろしくお願いいたします。\n　それでは、あとちょっとしかありませんので、ここについては理解しました。\n　それで、あと、これは福祉灯油のところも念のために、議論まだありませんし、今回国の経済対策等々と絡めての事業ということは理解していますけれども、今年度の事業の概要についてご説明していただきたいと思います。",
+    "text_length": 1598,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        280
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-131",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "介護福祉課長（飯澤洋樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の福祉灯油の事業の概要の説明でございます。\n　今年度で５年連続ということにはなってはおりますが、長引く燃料価格の高騰を踏まえまして、冬期間の暖房用灯油等の購入価格が低所得者にとって大きな負担となっております。この負担を軽減するために対象世帯に昨年度よりそのまま給付を行い、生活の安定を図るものでございまして、具体的に言いますと、一般世帯の方には１万円、生活保護世帯の方には５，０００円を支給し、施設に入所されている方については、施設を運営する法人に対しまして１入所者当たり５．０００円を支給するものでございます。\n　以上です。",
+    "text_length": 265,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        282
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-132",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "そうすると、基本的に従前行ってきた金額と一緒ですかね。そこも確認です。",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        284
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-133",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "介護福祉課長（飯澤洋樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "前年度と同様の金額になっております。",
+    "text_length": 18,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        286
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-134",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "やり方としては従前と同じかもしれませんが、基本的にこれはあれですか。最近プッシュ型がどうのこうのという議論よくなるのですけれども、今回のこの事業に関しては７年度の市民税が非課税の世帯であることが条件というのは、税情報を見ればチェックできたりするのですけれども、担当課としてどんな準備をされて、どんな流れで支給までたどり着こうとされているのか、そこの流れを教えてください。",
+    "text_length": 185,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        288
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-135",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "介護福祉課長（飯澤洋樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず実施に向けての部分なのですが、税情報につきましては担当課の方では権限的にないものですから、まずは前年度の情報、申請いただいた方の昨年度の情報を押さえまして、今年度の見込み件数を、ほぼ変わらないのですけれども、その年によって課税、非課税の方がいらっしゃいますので、そこをまず押さえさせていただきます。その中で年齢要件やその他の要件の部分を踏まえて対象人数をおおよそ把握させていただきまして、予算成立後の発送準備ということで申請書等、印刷の準備を進めながら、実際的には、これまでで行きますと、送って返していただけるような形、申請書を持って来ないで済むような形の段取りまでつけて実施に向けて進めているところであります。\n　以上です。",
+    "text_length": 315,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        290
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-136",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "中身はわかりました。基本的には、だから申請書を送って、それに対しての返事が来た方に対して支給していくというような流れだと思うのですけれども、最近、子どもたちの部分でも意外とそこをプッシュ型でやっていくような手法も出てきていますから、すぐやってくださいということよりも税情報を管理している税務課と、あるいは情報管理課とも調整は必要になるかもしれませんけれども、もっともっと早くお渡しできるような仕組みとして、内部チェックが整えば、やれないことではないかなと思うし、もっと言うと、過去のデータベースもあろうかと思いますから、そういったものを上手にひもづけて、しっかりプッシュ型でも出せるものについてはやれるようなことも考えたらどうかなと思います。\n　これは意見ですから、さまざま費用がかかったり簡単ではないぞというところもあるのかもしれませんが、そういった関係部署とも協議しながら効率的な仕事を一刻も早くといいますか、早く対象者のところに届くようなやり方をしっかりやっていただきたいなということをお願いしておきたいと思います。実際、支給の開始時期は大体どのくらいになりますか。今回のスパンでいくと。",
+    "text_length": 497,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        292
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-137",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "介護福祉課長（飯澤洋樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象者の方ということでいきますと、高齢者世帯でいきますと２，０５０世帯、障がい者世帯でいきますと２００世帯、ひとり親世帯でいきますと１００世帯、生活保護世帯３５０世帯の計２，７００世帯を見ているところであります。実際的に、ここから申請される方は例年でいきますと、およそ９割弱になっていますので、それらの方の分が実際の対象者になるのではと推測しております。\n　以上です。",
+    "text_length": 184,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        294
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-138",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "今は私、いつぐらいにやってもらえますかと聞いたので、それもあとで聞こうと思っていたのでＯＫです。ありがとうございます。\n　それで、もう一点、今２，７００ぐらいの対象者の方に対して、いつぐらいに支給できるかなと。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        296
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-139",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "介護福祉課長（飯澤洋樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "すいません。言葉が足りませんでした。対象者の方、送らせていただいている部分でございまして、予算成立後、１２月中に発送させていただきまして、実際に申請書を送り返していただきます。これらの方々に対して。そこで税情報のチェックとかという部分がありますので、年明け後となると実際に口座に振り込まさせていただくとなると、１月中旬くらいになってくるかと予想しております。\n　以上です。",
+    "text_length": 186,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        298
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-140",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。本当にこの時期、福祉関係の分野では、こういう支給業務もかなり大変だと思いますけれども、午前中お話した子育ての分でも、子どもたちの分でも結構チェックが大変だという話を聞いていますので、この辺しっかり対応していただきたいと思いますし、本当にいろいろなシステムを充実させることをこれから考えていった方が良いですし、恐らくＲＰＡだとか、いろいろなものを組み合わせれば、もっと効率的になると思うのですよね。そういった部分、企画サイドがふるさと納税で、そういったロボットのロジックも使ったりとかしていますから、そういった情報をもらいながら全体的に効率化していくということもぜひ考えてください。\n　というのは、これだけ職員数が足りない状態でやっているのであれば、正しく短縮できるところは短縮するというロジックで、一つ一つ改善していった方が良いと思いますので、そういう面で原課からも声を上げて、全市的に改善できるものは改善する、効率化する、スピードアップを図るというような形でしっかりやっていただければと、よろしくお願いいたします。\n　最後に財政の方ですけれども、今回２７ページ、２８ページで財源内訳の補正があるのですが、要するに地方債に振り替えた部分。特に４，５００万円が国費だったものを地方債に振り替えている分、一般財源も振り替えていると。その２７、２８、二つあるのですけれども、この辺、基本的な考え方、財源内訳の変更ですね。構成の考え方について説明していただきたいと。",
+    "text_length": 636,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        300
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-141",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "港湾課長（鈴木勝彦）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "港湾整備に係る補助金、国庫の方の減額分のところでございます。\n　当初予算編成時に事業全体のうちの補助率で言う１０分の６に値する１億５，０００万円を計上しておりました。その後、国の方と要望を出して調整が入りまして、交付決定ありましたのが１億５００万円、４，５００万円の減額での手続というふうになったところでございます。\n　以上であります。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        303
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-142",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。いや、同じ金額が４ページのまた社会資本総合整備交付金のところで４，５００万円落ちているので、相変わらずこのパターンだなと思いながら、そこのところが気になったのと、もう一方、逆に一般財源を一つ上の公園のところでは起債に変えていますから、そういうことで、一般財源でそのままにしておいた方が良いのではないかなという思いがありました。\n　なので、なぜ起債にしたのかなというところ、考え方を聞きたかったのですね。今の港湾のところはわかりました。全体の補助率が落ちたという部分ですから、恐らくそれも金額的には今のところ、４ページのところだと思うので、国の方で補助対象額が削減されたという部分ではないかなというふうにとらえましたけれども、それでよろしいですかね。",
+    "text_length": 331,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        305
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-143",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "港湾課長（鈴木勝彦）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１億５，０００万円から１億５００万円、率でいきますと７０％ついたというような状況でございます。その４，５００万円につきましては財政とも協議いたしまして、一般財源なのか地方債でいくのか、それを協議した結果、地方債を充てると、そういうふうにさせていただいたということでございます。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        307
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-144",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（本田俊治）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。細かいところまで入ってしまったのですけれども、財源のあり方というのは非常に大事なところで、先ほど言いましたように、地方債にすれば後年次負担が出てきますから、一般財源でそのままにしておけば　今年度苦しいかもしれませんけれども、そこで済むお金だなと思いましたので、どういうスタイルで組み替えをしたのかどうか確認したかったところです。\n　それで今の国庫に対する部分については、これまでも常にあることなので、そういった部分を起債に委ねざるを得ないというところも理解していますけれども、全体的に国に対してしっかり要求したものがつくような、こちらが事業計画立てやすいような、運営しやすいような補助金制度であるべきだということは、やっぱり訴え続けなければいけないなということを改めて感じていますので、そういった面も含めながら、また一緒にいろいろな部分をチェックをしながら進めさせていただきたいなと思います。\n　以上で、終わりたいと思います。",
+    "text_length": 420,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        309
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-145",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "よろしくお願いいたします。\n　説明書の４５ページになります。１款１項１目の委託料１１０万円、子ども・子育て支援金システム改修委託料についてお伺いいたします。\n　はじめに、この子ども・子育て支援金とは何かについて、概要をご説明いただければと思います。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        313
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-146",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "保険・年金主査（武田圭一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "子ども・子育て支援金制度の概要についてでありますが、国では少子化、人口減少により、若年人口が急激に減少する２０３０年代を見据え、令和５年１２月２２日に閣議決定されたこども未来戦略において、総額３．６兆円規模に及ぶ子ども・子育て支援加速化プラン、いわゆる加速化プランを取りまとめ、その後、子ども・子育て支援金制度の創設を内容に含む法律を、令和６年６月１２日に成立させたものであります。\n　この法律には社会全体で子ども・子育て世帯を応援していくため、こども未来戦略に基づき、児童手当の拡充をはじめとした抜本的な給付拡充の財源の一部を少子化対策のための特定財源と位置づけた子ども・子育て支援金で充てることが盛り込まれており、約３．６兆円のうち１兆円程度を確保することとされています。支援金は医療、介護の徹底した歳出改革と賃上げによる実質的な社会保険負担軽減効果の範囲内で導入することとし、令和８年度から令和１０年度にかけて段階的に構築することとされており、高齢者をはじめ、事業主層を含む全世帯、前経済主体から医療保険料と合わせて負担するものとなっております。\n　以上です。",
+    "text_length": 483,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        315
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-147",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。すばらしいですね。ものすごく聞きやすくて、びっくりしました。\n　それで具体的に医療保険に負担額をかけるということでありますが、根室市が管轄する国民健康保険、そして対象外ではあるのですが、同じことを聞くよりも省略させていただきたいのですが、後期高齢者について、では具体的に加入者の負担額というのはどのぐらいになったのかについて教えてください。",
+    "text_length": 181,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        317
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-148",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "保険・年金主査（武田圭一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "加入者負担額についてでありますが、北海道からは、国から省令や納付金、ガイドライン等の詳細が示されていないとの回答があったところであり、現時点においては、当市被保険者の個別具体的な負担は明らかになっておりません。\n　また、国が公表している資料によりますと、案段階ではありますが、激変緩和の措置として令和８年度から１０年度まで段階的に負担額を引き上げることを想定しており、すべての医療保険制度の加入者で平均すると、令和８年度は一人当たり月額２５０円、令和１０年度では一人当たり月額４５０円となる試算をしているところであります。\n　このうち市町村国保においては、令和８年度２５０円、令和９年度３００円、令和１０年度４００円と試算されており、年額に置きかえますと、令和８年度では３，０００円、令和１０年度では４，８００円の負担額となります。\n　なお、繰り返しとなりますが、これらの金額については現段階では確定しておらず、今後、北海道から指定される金額をもって子ども・子育て支援金を決定することとなりますことを申し添えいたします。\n　以上です。",
+    "text_length": 467,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        319
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-149",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　そうすると、そもそも税率自体、まだ決まっていないというふうにして認識をしておりますが、その税率の決め方だけでもわかればと思うのですが、これは市町村国保の場合は全国一律で税率が設定されるのでしょうか。それとも税率を決めるのは、あくまでもそれぞれの市町村が決定するのか、その仕組みだけ教えてください。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        321
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-150",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "保険・年金主査（武田圭一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "子ども・子育て支援金の税率についてでありますが、国において歳入である子ども・子育て支援納付金総額を決定の上、保険料負担に応じて市町村国保、後期高齢者医療保険、被用者保険等に案分し、そこから加入者割合に応じて各都道府県の負担額を決定するものであります。今後、北海道から子ども・子育て支援金に関する税率が示されますが、北海道では令和１２年度の統一保険料化を見据え、北海道統一とすることとされており、実質的には北海道が定めた税率をもって負担額が決定することとなるため、市独自で税率を定めるものではありません。",
+    "text_length": 251,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        323
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-151",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　今時点も基本的に北海道から標準保険料率が示されていますが、それとは独立して市町村で保険税率を定めているではないですか。ただ子ども・子育て支援金に関しては、北海道の示す金額のとおりやりますよということなのですね。理解いたしました。\n　要するに、今の国保の仕組み自体なのですけれども、本体の医療分、そして後期高齢者医療に対してお金を回す支援分、そして４０歳以上の方については介護保険料も取られているという三重の構造で保険税が設定をされています。基本的に仕組みについてお伺いしますが、その上に更に子育て支援金というのが同じように所得割、均等割、平等割で計算されて、今度は要するに医療、支援、介護、子ども・子育ての四重構造になるというふうにして理解してよろしいですか。",
+    "text_length": 343,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        325
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-152",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "保険・年金主査（武田圭一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "委員お見込みのとおり、子ども・子育て支援金についても所得割、均等割、平等割からなる、いわゆる３方式で計算されるものとなっております。",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        327
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-153",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　基本的に、それぞれの国保の中で会計処理上がどのようになるのかということ決まっていればで良いのですけれども、教えていただきたいのと、先ほど道が決定する保険税率掛けてくださいということだったのですが、要するに、支援納付金は北海道から示される納付金額をそのまま上納するというふうにして理解してよろしいでしょうか。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        329
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-154",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "保険・年金主査（武田圭一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "国保会計の予算処理についてでございますけれども、国保会計につきましては、保険税に子ども・子育て支援金を新設し、被保険者から納税された歳入を子ども・子育て支援納付金を含めた北海道により算定された国民健康保険事業納付金を納付するための財源として計上することとなります。\n　以上です。",
+    "text_length": 139,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        331
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-155",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "先ほどのご説明から言うと、まだ幾らぐらい支援納付金が払うかというのは当然決まっていないということで良いですよね。",
+    "text_length": 56,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        333
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-156",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "保険・年金主査（武田圭一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "繰り返しになりますが、北海道より国から省令や納付金、ガイドライン等の詳細が示されていないという回答がありましたので、納付金の算定作業についても遅れが生じるということで認識しております。\n　しかしながら、市町村連携会議の場におきまして、各市町村から予算編成事務への影響について指摘が多数あったことから、北海道では例年の納付金確定係数、来月でございますけれども、１月に確定計数を出す段階で、何らかの方法により暫定的に金額を算定する方針が示されています。\n　以上です。",
+    "text_length": 231,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        335
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-157",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　あとで市町村で条例改正しなければならないですものね。間に合わないですよね、それがわからなければ。\n　それで気になるのは、要するに仮に国が今試算した１カ月一人当たり３００円とか４００円とかぐらいの金額で、根室市の国保の加入者数は５，９００何人ぐらいなのですけれども、それをざっくり掛けると、令和８年度で言うと１，６００万円ぐらいかな。令和１０年度になると２，８００万円ぐらいかな。ちょっと計算間違えているかもしれませんが、そのぐらいになるのかなという気はいたします。\n　気になるのは、収納１００％みんな払ってくれれば、その額納めれば良いのですけれども、収納率、根室の場合９４％ぐらいですかね。ごめんなさい、わからないですけれども、そうなってくると、保険税の収入率が落ちれば北海道への納付金の差額が当然生じるわけで、国保財政の影響を心配するのですけれども、担当課としてはそのあたり、どのように押さえていらっしゃいますでしょうか。",
+    "text_length": 425,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        337
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-158",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "保険・年金主査（武田圭一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "収納率の減少による会計への影響についてでございますけれども、北海道による国民健康保険事業納付金の算定においては予定収納率が設定されておりまして、これを下回ることでご指摘のとおり収支不足が生じる形になり、運営基金の取り崩しにより補てんすることとなります。\n　以上です。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        339
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-159",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "保険税が上がると取り立てが大変苦しくなるなと、今佐藤課長の顔を見ながら思っていました。\n　それで、今後具体的に税条例を改正して、具体的な金額を設定します。先ほどのご答弁で言うと、国試算で国保の場合、保険税率が令和８年度だと年間で３，０００円ぐらい、令和１０年度になると４００円掛ける１２カ月で４，８００円の上乗せになるでしょうというご説明でした。\n　ただ、どうやって国が計算したのかわからないですけれども、平均額を示しているわけで、国保とか後期高齢者もそうですけれども、収入がない、余りない方も含めての平均額なので、ここにおられる高所得者の皆さんや当然、根室のような一次産業が中心となる部分においては影響が大きいのかなというふうにして思います。本当に低所得者世帯も含めてなのですけれども、多人数世帯の負担が過度にならないような対応、税額の設定等もしっかりと検討していく必要があるのかなと思っておりますので、ぜひご意見をいただければと思います。",
+    "text_length": 421,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        341
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-160",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "市民生活部長（中村健悦）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "低所得者等が過度にならないような対応についてでございますが、国民健康保険、これにつきましては、他の医療保険と比べ中高年齢者が多く加入、また医療費水準も高いといった中、中低所得者の加入割合も高いといった構造的な問題を抱えていると認識しているところでございます。\n　また、この物価高高騰の中、被保険者だけではないのですが、非常に暮らしは大変厳しいという状況であるという認識は私も持っているところでございます。\n　そういった中におきまして、先ほど主査の方からご答弁いたしましたけれども、子ども・子育て支援制度について国の説明によりますと、少子化対策に充てる費用について全世帯、全経済主体が子育て世帯を支える新しい分かち合い・連帯の仕組みであり、社会保障改革の徹底、それと賃上げによって社会保険負担の軽減の効果を生じさせ、その範囲で支援金制度を構築することによって実質的な負担が生じさせないようにしますと、国はそう言っております。\n　そういったことから、当市といたしましても引き続き国の制度運用等の動向を注視するとともに、被保険者の過度の負担とならないよう先ほども申し上げましたけれども、市町村連携会議の場において北海道へ対しても意見を述べていってまいりたいという考えでおります。\n　以上です。",
+    "text_length": 543,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        343
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-161",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　根本的に国の制度の仕組みでありますので、北海道にも当然それに配慮した財政運営をしていただきたいということと同時に、その制度のあり方、法制度のあり方がこのままで本当に良いのかどうなのかということは、ぜひ市町村からもしっかりと声を上げていただきたいなと思いつつ、具体的な態度自体は後で長文を述べますが、この場では質疑としては終了をいたします。\n　ありがとうございます。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        345
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-162",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "よろしくお願いいたします。ページ数で言うと何ページだ、説明書の６４ページになります。１款１項１目給水収益で今回７，５５３万２，０００円の減額となっております。\n　それで一般質問で、ごめんなさい、もしかしたらご答弁いただいていたような気もするのですが、改めて今回の減額の対象となる世帯数及び事業者の数を教えていただけますでしょうか。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        353
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-163",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "上下水道総務課長（中谷泰輝）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回行いますエネルギー・食料品等価格高騰支援にかかわる水道料金基本料金免除の対象者数についてであります。\n　対象者につきましては、官公庁を除くすべての水道使用者としているところでありまして、その件数につきましては、昨年度同期の使用者数をもとに１万１，６２８件と試算をしているところあります。\n　以上です。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        355
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-164",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　それで、その１万１，６２８件を基本料金を減額をしたのが今回の収益減の７，５５３万２，０００円の見込みであるということだと思いますが、トータルの収益の見込みが現時点で６億７，８０９万９，０００円の見込みとして立てられております。それで、予算なのでこれで良いのですけれども、実際の決算見込みの額としては、どの程度になりそうですか。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        357
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-165",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "上下水道総務課長（中谷泰輝）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今年度の給水収益の決算見込みということでございます。\n　現時点の状況をまずお伝えをさせていただきますと、家事用については若干予算の見込みを下回っている状況でありますが、業務用、工業用について予算を若干上回っているという状況で、総体で基本的には、ほぼ予算額を確保できるというような見込みであります。\n　以上です。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        359
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-166",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　参考までにお伺いしたかったのは、先般、一般質問で吉田議員が質疑をされた市の渇水対策ですね。１０月２０日から１１月２７日まで約１カ月間を節水のお願いとされてきたのですけれども、実際問題、これをお願いすることによって給水量とか使用量とか給水収益でも良いのですけれども、それがどのぐらい影響額として生じたのかはわかりますか。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        361
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-167",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "上下水道総務課長（中谷泰輝）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "渇水対策の影響額というお尋ねでございます。\n　市民の皆様に１２月２０日以降、節水を依頼してからの総排水量について前年度同期と比較したところ、若干の変化が認められたという状況であります。\n　ただ、節水の効果としての評価をすることは大変難しいというふうに考えてございまして、影響額の見込みにつきましては、試算をしていないという状況でございます。\n　以上です。",
+    "text_length": 177,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        363
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-168",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　そうしたら、そんなに影響はないのかなという気はするのですけれども、参考までに考え方だけ教えてほしいのですけれども、こういう渇水対策とかにかかる費用は、一般会計の基準の繰り入れとの関連で言うと、どのように考えられるものなのですか、これは。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        365
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-169",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "上下水道総務課長（中谷泰輝）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一般会計の繰入金との関係ということで、国が示している企業会計に対する基準内の繰り入れというお尋ねであれば、その基準については、今回の渇水対策に係る経費についてはないという状況であります。\n　以上です。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        367
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-170",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　実際のところ、お願いレベルでその動きがどうなったのかというのを科学的に判別しづらいところではあるのですけれども、私個人的に、これは災害対策なのだったら、もう少し水道会計にそれが影響を及ぼすようなことがあれば、全体で見る必要があるのではないかなと思っています。これは感想です。\n　それで予算に戻りますけれども、今回、要するに物価高騰対策として、来年の１月から３月まで水道料金の基本料金を免除しますということの対策です。大変優れた施策だと思っております。参考までにお伺いしたいのですけれども、仮に下水道でやったとしたら、どのぐらいお金かかりそうなものなのですか。",
+    "text_length": 292,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        369
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-171",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "上下水道総務課長（中谷泰輝）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "下水道使用料の基本料金免除を水道料金と同様に実施した場合ということのお尋ねでございます。\n　官公庁を除く対象件数を８，６５０件というふうに仮定をしますと、３カ月でおよそ５，７００万円になるというところでございます。\n　以上です。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        371
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-172",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "ありがとうございます。\n　当然下水ですから入っていないところもあるので、そこのところも同額ぐらいの何らかの手当をするということが必要なのだと思うのですが、政策判断の話を聞いていなくて、純粋に事務作業的に、そういう対策が今の緊急的なときにぱっと取れるものなのかどうなのか、ちょっとそこら辺の仕組みとして教えていただけますか。やるか、やらないかではなくて、作業としてやろうと思ったらすぐできるものなのですか、それは。",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        373
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-173",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "上下水道総務課長（中谷泰輝）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "下水道使用料の基本料金を免除する事務作業ということでお答えをさせていただきますと、まずは官公庁を除くという作業が必要となるということから、使用者の状況から官公庁に当たるかどうかという判別をする種分けが、まず必要になります。その上で、その情報に基づくシステムの改修に移ることとなりますが、そのシステム改修と併せて今度検針のテスト等で、料金が正確に反映するかどうかというような作業が必要となります。\n　ちなみに、水道料金を実施したときのこれらの作業につきましては、大体１カ月程度を要したというところになります。\n　以上です。",
+    "text_length": 260,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        375
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-174",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "わかりました。ありがとうございます。\n　ちょっと水道料金だけだと寂しい部分もあるから、下水道とか等加えると、もう少し助けられている感が増すかなと思っていたのですけれども、現実的に手間暇を考えるのだったら、もしやるとしたら、その減免の期間を延長する方がまだ楽そうかな。感想で終わっても良いですけれども、担当課の考えだけちらっと聞いて、担当課ではなく部長の思いだけ聞いて終わります。",
+    "text_length": 189,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        377
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-175",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "建設水道部長（伊東英輔）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま委員の方からご提案というか、そういったことが可能かといったようなことでお話ございました。今し方課長の方から説明もありましたが、やはりそういったところで時間、また人員的な部分というのが取られるところでございます。\n　また、委員の方からもお話ありましたけれども、下水道使用料といった場合、やはり対象者がかなり絞られてきて、それら以外に対する人の対応といったところも出てきますので、下水道使用料のみならず、更に別な事務が発生するといったことが懸念されますので、どういった方を対象に、どういうふうに公平で行き渡るような施策といったところになりますと、やはり政策的に判断して今後進めていくといったような形になろうかなと思います。\n　以上でございます。",
+    "text_length": 324,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        379
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-176",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "すいません。ご丁寧に、いろいろとありがとうございました。\n　これから市もいろいろと更なる対策を考えるということでありますので、我々も何か良いアイデアが思いついたら要望しにいきたいと思いますので、どうぞよろしくお願いいたします。\n　ありがとうございました。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        381
+      ]
+    }
+  },
+  {
+    "id": "nemuro-674-1-177",
+    "municipality": "nemuro",
+    "council_id": 674,
+    "council_name": "令和 ７年１２月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "12月19日－01号",
+    "date": "2025-12-19",
+    "speaker": "委員（橋本竜一）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 竜一",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "それでは、議案第１０５号　令和７年度根室市国民健康保険特別会計事業勘定補正予算（第４号）及び議案第１０８号　令和７年度根室市後期高齢者医療特別会計補正予算（第３号）に対し、日本共産党根室市議会議員団の態度を表明いたします。\n　先ほど来、丁寧にご説明をいただいていたとおり、子ども・子育て支援金の制度は、少子化対策の特定財源であり、子ども・子育て支援法２０２３年のこども未来戦略に基づき、児童手当の拡充や妊娠・出産時の１０万円の給付金など、子ども・子育て支援施策を大幅に充実させるために必要な財源とされております。政府はこれを非課税など、低所得世帯にも一定の負担をさせるために、税ではなく保険料、保険税に上乗せをする措置をいたしました。\n　問題は医療と関係のない目的外の施策のために、健康保険料の負担を増額したことです。このような手法が許されるなら、これからも理由をこじつけて法律を変えれば、例えば道路工事でも何にでも同じように保険料に上乗せをする財源負担が使えることになってしまいます。しかも医療と関係のない施策の経費を勝手に保険料、保険税に上乗せしたのに、こども家庭庁は支援金として拠出いただく１兆円については、医療・介護の徹底した歳出改革で社会保険負担軽減をするとしております。\n　今、物価高騰の中で生活の苦しさを感じる勤労者世帯が増えております。家計所得に占める社会保険料負担の重さに対し、医療費がかかる高齢者のせいだ、低所得者のせいだ、あるいは外国人が国保に加入するせいだと社会を分断する世論が広がっておりますが、そうした傾向にますます拍車をかけるものではないかと懸念をしております。\n　ましてや全国的な子育て支援であるにもかかわらず、加入する医療保険によって同じ所得でも負担額が異なる不可思議な仕組みです。国保は被用者保険と違って労使折半ではありませんので、そうなっております。このような制度運用を押しつけられた根室市行政の責任というわけでは当然ありませんが、以上の観点から、本制度のシステム改修を行うための予算案に対し、反対の態度を表明いたします。",
+    "text_length": 880,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/674.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        386
+      ]
+    }
+  }
+]

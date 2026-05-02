@@ -1,0 +1,462 @@
+[
+  {
+    "id": "asahikawa-288-2-001",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2023-05-19",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\n　ただいまから令和５年第２回臨時会が開会されることになるわけでありますが、御承知のとおり、今回は、一般選挙後、初の議会でありますので、議長が選挙されるまでの間、地方自治法第１０７条の規定により、年長の議員が臨時に議長の職務を行うことになっております。\n　出席議員中、年長議員は杉山允孝議員でありますので、杉山議員に臨時議長をお願いすることといたします。\n　杉山議員は、議長席にお越しいただきたいと存じます。\n（杉山議員、議長席に着席）",
+    "text_length": 228,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-2-002",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2023-05-19",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告申し上げます。\n　議事日程について、本日の議事日程は、お手元に御配付申し上げております議事日程表のとおりでありますので、その朗読は省略いたします。\n　以上。\n――――――――――――――――――――――――――――――――――――――――――――",
+    "text_length": 126,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-2-003",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2023-05-19",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "投票に当たりましては、議長席に向かって左側から御登壇いただき、投票が終わりましたら、右側のほうに降りていただきたいと存じます。\n　それでは、点呼を行います。\n　　のむらパターソン和孝議員　　横　山　啓　一　　議員　　　笠　井　まなみ　　議員\n　　あ　べ　な　お　　議員　　　上　野　和　幸　　議員　　　中　村　みなこ　　議員\n　　小　林　ゆうき　　議員　　　植　木　だいすけ　議員　　　江　川　あ　や　　議員\n　　駒　木　おさみ　　議員　　　皆　川　ゆきたけ　議員　　　たけいしよういち　議員\n　　石　川　まさゆき　議員　　　沼　﨑　雅　之　　議員　　　金　谷　美奈子　　議員\n　　まじま　隆　英　　議員　　　塩　尻　英　明　　議員　　　髙　橋　紀　博　　議員\n　　高　木　ひろたか　議員　　　中　野　ひろゆき　議員　　　えびな　安　信　　議員\n　　高　橋　ひでとし　議員　　　菅　原　範　明　　議員　　　佐　藤　さだお　　議員\n　　石　川　厚　子　　議員　　　能登谷　　　繁　　議員　　　品　田　ときえ　　議員\n　　高　見　一　典　　議員　　　高　花　えいこ　　議員　　　中　村　のりゆき　議員\n　　松　田　たくや　　議員　　　福　居　ひでお　　議員　　　安　田　よしまさ　議員\n　　杉　山　允　孝　　臨時議長\n　以上でございます。",
+    "text_length": 567,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-2-004",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2023-05-19",
+    "speaker": "福居ひでお議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福居 秀雄",
+    "member_faction": "自民党・市民会議",
+    "text": "（登壇）　お許しをいただいたので、一言、御挨拶申し上げます。\n　ただいま、栄誉ある旭川市議会の第３９代議長に選任されて、本当に心から感謝を申し上げる次第でございます。ありがとうございました。\n　本当に、私自身として限りなく光栄に思うとともに、その責任の重さをひしひしと感じている次第でございます。\n　皆様方、議員各位の御理解と御支援をいただくことを念頭に、速やかな議会運営、そして、議会のさらなる活性化に努めてまいりたいと思っている次第でございます。\n　地方自治の究極の目的は地域住民の福祉の向上という形を、私が初めて当選したときに教えていただきました。その目的に従って、議会と執行部で議論を重ね、そして切磋琢磨して、少しでも旭川市民の負託に応えるような議会運営をするのが二元代表制だと思っておりますので、どうかよろしくお願いしたいと思います。\n　今後とも、私自身に対しても御指導、御鞭撻を賜ることを心からお願いして、就任の挨拶に代えさせていただきます。ありがとうございました。（拍手）（降壇）",
+    "text_length": 447,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-2-005",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2023-05-19",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "投票の手順につきましては、先ほどと同様であります。\n　それでは、点呼を行います。\n　１番　のむらパターソン和孝　議員　　　　２番　横　山　啓　一　　議員\n　３番　笠　井　まなみ　　議員　　　　　　４番　あ　べ　な　お　　議員\n　５番　上　野　和　幸　　議員　　　　　　６番　中　村　みなこ　　議員\n　７番　小　林　ゆうき　　議員　　　　　　８番　植　木　だいすけ　議員\n　９番　江　川　あ　や　　議員　　　　　１０番　駒　木　おさみ　　議員\n１１番　皆　川　ゆきたけ　議員　　　　　１２番　たけいしよういち　議員\n１３番　石　川　まさゆき　議員　　　　　１４番　沼　﨑　雅　之　　議員\n１５番　金　谷　美奈子　　議員　　　　　１６番　まじま　隆　英　　議員\n１７番　塩　尻　英　明　　議員　　　　　１８番　髙　橋　紀　博　　議員\n１９番　高　木　ひろたか　議員　　　　　２０番　中　野　ひろゆき　議員\n２１番　えびな　安　信　　議員　　　　　２２番　高　橋　ひでとし　議員\n２３番　菅　原　範　明　　議員　　　　　２４番　佐　藤　さだお　　議員\n２５番　石　川　厚　子　　議員　　　　　２６番　能登谷　　　繁　　議員\n２７番　品　田　ときえ　　議員　　　　　２８番　高　見　一　典　　議員\n２９番　高　花　えいこ　　議員　　　　　３０番　中　村　のりゆき　議員\n３１番　松　田　たくや　　議員　　　　　３３番　安　田　よしまさ　議員\n３４番　杉　山　允　孝　　議員\n　　　　福　居　ひでお　　議長\n　以上でございます。",
+    "text_length": 659,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-2-006",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2023-05-19",
+    "speaker": "中村のりゆき議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中村 のりゆき",
+    "member_faction": "公明党",
+    "text": "（登壇）　それでは、一言、御挨拶を申し上げます。\n　ただいま副議長として選出していただきましたことに、心より御礼を申し上げます。\n　脱コロナ、経済再生へ向かう大切なときに重責を賜りましたことに、ただただ身の引き締まる思いでいっぱいでございます。\n　少子高齢化、人口減少社会、経済雇用対策などの諸課題を克服し、希望あふれる旭川をつくるためには、二元代表の一翼を担う旭川市議会として、議会提案の条例についても積極的に取り組む必要があるものと思っております。\n　また、低投票率を改善するため等の議会改善の推進や円滑な議会運営におきましても、福居議長を支えながら、この２年間、全身全霊で重責を全うする決意でございますので、何とぞよろしくお願い申し上げます。\n　最後になりますが、議員各位の皆様の御指導、御協力、そして、理事者の皆様、報道関係者の皆様方の御協力を心からお願いを申し上げまして、就任に当たっての挨拶に代えさせていただきます。\n　どうぞよろしくお願いいたします。（拍手）（降壇）",
+    "text_length": 440,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-2-007",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2023-05-19",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議会運営委員会委員の氏名を申し上げます。\n　なお、敬称は省略させていただきます。\n　　５番　上　野　和　幸　　　　　９番　江　川　あ　や　　　　１２番　たけいしよういち\n　１６番　まじま　隆　英　　　　１７番　塩　尻　英　明　　　　１９番　高　木　ひろたか\n　２０番　中　野　ひろゆき　　　２１番　えびな　安　信　　　　２２番　高　橋　ひでとし\n　２４番　佐　藤　さだお　　　　２５番　石　川　厚　子　　　　２９番　高　花　えいこ\n　以上、１２名でございます。",
+    "text_length": 230,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-2-008",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2023-05-19",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議会運営委員会の正副委員長の氏名を申し上げます。\n　なお、敬称は省略させていただきます。\n　議会運営委員会\n　　　　　委員長　２０番　中　野　ひろゆき\n　同じく副委員長　２４番　佐　藤　さだお\n　以上でございます。",
+    "text_length": 107,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-3-009",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月22日－02号",
+    "date": "2023-05-22",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告申し上げます。\n　議事日程について、本日の議事日程は、お手元に御配付申し上げております議事日程表のとおりでありますので、その朗読は省略いたします。\n　次に、説明員の出席要求について、本臨時会に提出議案等の説明のため、地方自治法第１２１条第１項の規定に基づき、市長をはじめ、各関係機関に対し、説明員の出席を求めております。\n　以上。\n――――――――――――――――――――――――――――――――――――――――――――",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-3-010",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月22日－02号",
+    "date": "2023-05-22",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "各常任委員会委員の氏名を申し上げます。\n　なお、敬称は省略させていただきます。\n　総務常任委員会委員\n　　５番　上　野　和　幸　　　　　８番　植　木　だいすけ　　　１１番　皆　川　ゆきたけ\n　１２番　たけいしよういち　　　１６番　まじま　隆　英　　　　１７番　塩　尻　英　明\n　２１番　えびな　安　信　　　　３１番　松　田　たくや\n　以上、８名。\n　民生常任委員会委員\n　　７番　小　林　ゆうき　　　　１３番　石　川　まさゆき　　　１４番　沼　﨑　雅　之\n　１５番　金　谷　美奈子　　　　１８番　髙　橋　紀　博　　　　２０番　中　野　ひろゆき\n　２６番　能登谷　　　繁　　　　３３番　安　田　よしまさ　　　３４番　杉　山　允　孝\n　以上、９名。\n　経済建設常任委員会委員\n　　１番　のむらパターソン和孝　　４番　あ　べ　な　お　　　　１９番　高　木　ひろたか\n　２２番　高　橋　ひでとし　　　２３番　菅　原　範　明　　　　２５番　石　川　厚　子\n　２８番　高　見　一　典　　　　３０番　中　村　のりゆき　　　３２番　福　居　ひでお\n　以上、９名。\n　子育て文教常任委員会委員\n　　２番　横　山　啓　一　　　　　３番　笠　井　まなみ　　　　　６番　中　村　みなこ\n　　９番　江　川　あ　や　　　　１０番　駒　木　おさみ　　　　２４番　佐　藤　さだお\n　２７番　品　田　ときえ　　　　２９番　高　花　えいこ\n　以上、８名。\n　以上でございます。",
+    "text_length": 620,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-3-011",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "05月22日－02号",
+    "date": "2023-05-22",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "各常任委員会の正副委員長の氏名を申し上げます。\n　なお、敬称は省略させていただきます。\n　総務常任委員会\n　　　　　委員長　２１番　えびな　安　信\n　同じく副委員長　１７番　塩　尻　英　明\n　民生常任委員会\n　　　　　委員長　１８番　髙　橋　紀　博\n　同じく副委員長　１３番　石　川　まさゆき\n　経済建設常任委員会\n　　　　　委員長　２３番　菅　原　範　明\n　同じく副委員長　　１番　のむらパターソン和孝\n　子育て文教常任委員会\n　　　　　委員長　２９番　高　花　えいこ\n　同じく副委員長　　９番　江　川　あ　や\n　以上。",
+    "text_length": 261,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-4-012",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月23日－03号",
+    "date": "2023-05-23",
+    "speaker": "議会事務局長（酒井睦元）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御報告申し上げます。\n　議事日程について、本日の議事日程は、お手元に御配付申し上げております議事日程表のとおりでありますので、その朗読は省略いたします。\n　以上。\n――――――――――――――――――――――――――――――――――――――――――――",
+    "text_length": 126,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-4-013",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月23日－03号",
+    "date": "2023-05-23",
+    "speaker": "総合政策部長（熊谷好規）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号の令和５年度一般会計補正予算につきまして、提案理由を御説明申し上げます。\n　以下、補正予算書で御説明申し上げます。\n　今回の補正予算につきましては、１ページの第１表歳入歳出予算補正にお示しいたしておりますように、歳入歳出予算の総額にそれぞれ２２億５千７４４万１千円を追加し、１千７１８億９千７９０万７千円にしようとするものでございます。\n　その内容といたしましては、４ページの事項別明細書歳出にお示しいたしておりますように、２款総務費では、庁舎整備推進費で６千３２２万７千円、３款民生費では、物価高騰重点支援給付金支給費など２事業で２１億９千４２１万４千円をそれぞれ追加しようとするものでございます。\n　これらの財源につきましては、３ページの歳入にお示しいたしておりますように、１７款国庫支出金で１９億７千８７４万８千円、１８款道支出金で２億１千５４６万６千円、２１款繰入金で６３２万７千円、２４款市債で５千６９０万円をそれぞれ追加しようとするものでございます。\n　２ページ中段の第２表継続費では、庁舎整備推進費の総額及び年割額を変更しようとするものでございます。\n　２ページ下段の第３表地方債補正では、庁舎整備推進事業の限度額を変更しようとするものでございます。\n　以上、よろしく御審議の上、御決定いただきますようお願い申し上げます。",
+    "text_length": 573,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-4-014",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月23日－03号",
+    "date": "2023-05-23",
+    "speaker": "総務部長（和田英邦）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号、株式会社旭川振興公社の株主総会における議決権の行使につきまして御説明を申し上げます。\n　本件は、株式会社旭川振興公社役員の任期満了に伴い、定時株主総会において同公社取締役９名及び監査役２名を選任するため、議決権を行使する必要がありますことから、旭川市議会の議決すべき事件に関する条例第２条の規定により、議会の議決を得ようとするものでございます。\n　以上、よろしく御審議の上、御決定賜りますようお願いを申し上げます。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-4-015",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月23日－03号",
+    "date": "2023-05-23",
+    "speaker": "総務部長（和田英邦）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告第１号、専決処分の報告につきまして御説明を申し上げます。\n　本案は、庁用自動車による交通事故に関し、損害賠償の額を定めたものでございまして、本年３月３１日、市内東旭川町米原におきまして、庁用の普通貨物車が相手方の車両と接触し、損害を与えたもので、その損害賠償の額を１３万７千４０５円と定め、４月２０日に専決処分をいたしましたことから、地方自治法第１８０条第２項の規定により、御報告を申し上げます。\n　以上、よろしくお願いを申し上げます。",
+    "text_length": 220,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-4-016",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月23日－03号",
+    "date": "2023-05-23",
+    "speaker": "消防長（松尾彰）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告第２号、専決処分の報告につきまして御説明申し上げます。\n　本件は、施設管理の瑕疵により発生しました事故に関わるものでございまして、本年２月２８日、市内南２条通２１丁目において、旭川市消防団第３分団詰所の屋根から落下しました雪が同施設敷地内に駐車しておりました車両に当たり損害を与えたもので、その損害賠償の額を９０万７千６００円と定め、４月２０日に専決処分いたしましたことから、地方自治法第１８０条第２項の規定により、御報告申し上げるものでございます。\n　以上、よろしくお願い申し上げます。",
+    "text_length": 246,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-4-017",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月23日－03号",
+    "date": "2023-05-23",
+    "speaker": "総務部総務監（川邊仁）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告第３号、専決処分の報告について御説明申し上げます。\n　整理番号１と２、いずれも令和２年３月２６日に現契約を議決いただいた総合庁舎建替新築工事でありますが、今般、９階展望ラウンジ壁面に設置する銘板の刻印数の減に伴う設計変更に対処するため、整理番号１の（Ａ）工事につきましては、契約金額６０億１千２０４万８５３円を６０億１千１７７万７千２９円に、整理番号２の（Ｂ）工事につきましては、契約金額３３億９千８０７万８千３７６円を３３億９千７０２万２千３１９円にそれぞれ変更するもので、令和５年４月２０日に専決処分させていただいたものでございます。\n　以上、地方自治法第１８０条第２項の規定により、御報告いたします。よろしくお願い申し上げます。",
+    "text_length": 319,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-4-018",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月23日－03号",
+    "date": "2023-05-23",
+    "speaker": "市長（今津寛介）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第３号、旭川市監査委員の選任について、提案理由を御説明申し上げます。\n　旭川市監査委員、髙花詠子氏及び上村有史氏は、本年５月１日をもって任期満了となりましたので、その後任として石川厚子氏及び高見一典氏を選任いたしたく御提案申し上げます。\n　お二人とも、本市議会議員として市政各般にわたり豊かな識見を持たれ、監査委員といたしまして誠にふさわしい方々でございますので、何とぞ御同意を賜りますようお願い申し上げます。",
+    "text_length": 207,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-4-019",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月23日－03号",
+    "date": "2023-05-23",
+    "speaker": "石川厚子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石川 厚子",
+    "member_faction": "日本共産党",
+    "text": "（登壇）　ただいま監査委員という重責を伴う任務に選任されました。このことに身の引き締まる思いです。このような職に就くことができましたのも、議員皆さんのおかげです。心より感謝申し上げます。\n　旭川市では、行政、議会、監査がそれぞれの役割を果たすことにより、市民の皆さんの願いに応える旭川市政、そういうものを構築していけるものと考えております。\n　何分、不慣れではありますが、監査委員という職を楽しみながら、緊張感を持って務めてまいりたいと思います。\n　どうぞ、皆さんの御指導を賜りますようお願い申し上げまして、挨拶に代えさせていただきます。\n　どうぞよろしくお願い申し上げます。（拍手）（降壇）\n（高見議員入場）",
+    "text_length": 305,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "asahikawa-288-4-020",
+    "municipality": "asahikawa",
+    "council_id": 288,
+    "council_name": "令和５年 第２回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月23日－03号",
+    "date": "2023-05-23",
+    "speaker": "高見一典議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高見 一典",
+    "member_faction": "民主・市民連合",
+    "text": "（登壇）　おはようございます。\n　ただいま、監査委員の就任に当たりまして、一言、御挨拶を申し上げます。\n　本日、先ほど、議員各位より監査委員の御承認をいただきましたこと、まずもって心より深くお礼と感謝を申し上げます。ありがとうございます。\n　旭川市の会計では一般会計と特別会計が主でありますけれども、特に、一般会計におきましては、既に３年が経過している新型コロナウイルス感染症に絡むワクチン接種含めたそういったコロナ対策費、さらには、コロナによる飲食業界の休業補償費、そして、もう既に１年経過しているロシア・ウクライナ紛争によってあらゆる諸物価が高騰している、高騰物価対策費含めて、非常に一般会計においては、近年、膨れ上がっている状況であります。\n　旭川市の一般財源も含め、こうした会計監査において、今回就任いたしました監査委員として、その任をしっかりと全うしていきたいと思っておりますので、各議員、皆様方の今後とも御指導、御鞭撻をよろしくお願い申し上げ、言葉は足りませんけれども、監査委員としての就任の御挨拶とさせていただきます。\n　どうかよろしくお願いいたします。（拍手）（降壇）\n――――――――――――――――――――――――――――――――――――――――――――",
+    "text_length": 537,
+    "source": {
+      "minutes_file": "data/asahikawa/minutes/288.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        37
+      ]
+    }
+  }
+]

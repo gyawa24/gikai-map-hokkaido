@@ -1,0 +1,370 @@
+[
+  {
+    "id": "fukushima-451-2-001",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "議会事務局次長（佐藤尚美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "永年勤続功労者、在職20年以上、長尾トモ子殿。",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-002",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "議会事務局次長（佐藤尚美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "在職10年以上、佐藤義憲殿。",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-003",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "議会事務局次長（佐藤尚美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、高宮光敏殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-004",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "議会事務局次長（佐藤尚美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、橋本徹殿。",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-005",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "議会事務局次長（佐藤尚美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、大場秀樹殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-006",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "議会事務局次長（佐藤尚美君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく、三瓶正栄殿。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-007",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "公安委員会委員（江尻陽子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "去る10月18日付をもって公安委員会委員に任命されました江尻陽子です。どうぞよろしくお願いいたします。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-008",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "知事（内堀雅雄君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "11月県議会臨時会が開催されるに当たり、さきに提出いたしました議案につきまして、その概要を御説明申し上げます。\n　「専決処分の報告及びその承認について」でありますが、これはツキノワグマ被害防止緊急対策事業を行うための経費を専決処分いたしましたので、報告申し上げ、その承認を求めようとするものであります。\n　慎重に御審議の上、速やかな御議決をお願い申し上げます。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-009",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "21番（江花圭司君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "企画環境委員長報告。\n　本委員会に付託されました知事提出議案に対する委員会の審査経過及び結果について御報告申し上げます。\n　委員会は、本日開会、慎重に審査いたしました。\n　今回審査いたしました議案は、知事提出議案第１号専決処分の報告及びその承認についてのうち本委員会所管分、以上１件であります。\n　これが審査に当たりましては、関係当局から詳細な説明を聴取し、質疑応答を重ねた後、採決いたしました結果、承認すべきものと決定いたしました。\n　以上、御報告申し上げます。",
+    "text_length": 232,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        106
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-010",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "24番（佐藤郁雄君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "総務委員長報告。\n　本委員会に付託されました知事提出議案に対する委員会の審査経過及び結果について御報告申し上げます。\n　委員会は、本日開会、慎重に審査いたしました。\n　今回審査いたしました議案は、知事提出議案第１号専決処分の報告及びその承認についてのうち本委員会所管分、以上１件であります。\n　これが審査に当たりましては、関係当局から詳細な説明を聴取し、質疑応答の後、採決いたしました結果、承認すべきものと決定いたしました。\n　以上、御報告申し上げます。",
+    "text_length": 227,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        108
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-011",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "知事（内堀雅雄君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日追加提出いたしました議案につきまして御説明申し上げます。\n　これは、議員のうちから選任されておりました監査委員の満山喜一委員及び三瓶正栄委員が辞任いたしましたので、後任委員の選任につきまして、それぞれ同意を求めようとするものであります。\n　速やかな御議決をお願い申し上げます。",
+    "text_length": 140,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        119
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-012",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "４番（西山尚利君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一言御挨拶を申し上げます。\n　議員の先生方、知事はじめ執行部の皆様方、報道関係の皆様方、そして全ての県民の皆様方には、この２年間、大変お世話さまになりました。\n　歴史と伝統のある福島県議会議長の重責を、皆様の御指導のおかげさまで無事に務めさせていただくことができました。心から御礼と感謝を申し上げます。ありがとうございました。\n　今後、一議員といたしまして、全ての県民の皆様の負託に応える強い決意でもって、さらに精進を重ねてまいります。\n　引き続きの御指導をよろしくお願い申し上げまして、退任に当たりましての御礼の御挨拶に代えさせていただきます。ありがとうございました。（拍手）",
+    "text_length": 289,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        141
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-013",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "45番（矢吹貢一君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お許しをいただきまして、一言御挨拶を申し述べさせていただきます。\n　ただいま第77代福島県議会議長に選任されました矢吹貢１でございます。歴史と伝統を誇る福島県議会の議長としての重責を担うことになり、その使命と責任の大きさに身の引き締まる思いであります。県民の皆様の期待と信頼に応えるべく、公正かつ円滑な議会運営と県政進展に全力を尽くしてまいる所存であります。このたびは、身に余る御信任を賜りましたこと、心からお礼を申し上げます。\n　さて、東日本大震災と原発事故から14年８か月、この間、国内外からの温かい御支援と県民の皆様のたゆまぬ御努力によりまして、本県の復興は着実に前進しております。福島の未来を切り開く明るい話題も増えてまいりました。\n　一方で、本県は今、時間の経過に伴い、複雑化、多様化する復興への課題に加え、激甚化、頻発化する自然災害や急速に進む少子高齢化、人口減少、そして終わりの見えない物価、エネルギー価格の高騰など、様々な困難に直面いたしております。\n　明治11年、全国に先駆けて最初の議会が開かれてから147年、私ども県議会といたしましては、その間に培われた責任、使命、覚悟を持って県民の皆様の負託に応えるべく、誠心誠意努めてまいる所存であり、県当局、市町村及び関係機関と連携しながら、ふるさと福島の真の復興・創生に向け、総力を挙げて邁進する覚悟であります。\n　内堀知事をはじめとする執行部の皆様方、そして議員各位にはさらなる御指導、御鞭撻を賜りますよう、そしてさらには県民の皆様の議会に対する深い御理解と御支援、御協力をいただけますように心からお願いを申し上げ、議長就任に当たっての御挨拶とさせていただきます。御清聴誠にありがとうございました。（拍手）",
+    "text_length": 736,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        155
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-014",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "42番（山田平四郎君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "退任に当たり、一言御挨拶を申し上げます。\n　県議の先生をはじめ内堀知事、執行部の皆様方、そして多くの方々の御指導をいただきまして、２年間の副議長の職務を全うさせていただきました。心から御礼を申し上げます。ありがとうございました。\n　北海道・東北六県議会議長会、福島・茨城・栃木・群馬・新潟五県議会議長会など、多くの道県の議長、副議長と意見交換をさせていただきました。そういった経験を生かし、一議員としてさらなる福島の復興・創生に向けて頑張っていく所存であります。\n　どうぞ皆様方には、さらなる御指導をお願いいたしまして、退任の御挨拶に代えさせていただきます。本当にありがとうございました。（拍手）",
+    "text_length": 298,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        167
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-015",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "44番（佐藤雅裕君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま副議長に御選任をいただきました佐藤雅裕でございます。栄誉ある福島県議会の第81代副議長に選任を賜り、大変光栄に存じますとともに、心より御礼を申し上げます。ありがとうございました。\n　県民の皆様の期待に応えるべく、議長を補佐し、公正かつ円滑な議会運営と県政進展のために全力を尽くしてまいる所存でありますので、今後とも皆様の御支援と御協力を心よりお願い申し上げまして、就任の御挨拶とさせていただきます。どうぞよろしくお願い申し上げます。（拍手）",
+    "text_length": 224,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        181
+      ]
+    }
+  },
+  {
+    "id": "fukushima-451-2-016",
+    "municipality": "fukushima",
+    "council_id": 451,
+    "council_name": "令和 ７年 １１月 臨時会",
+    "schedule_id": 2,
+    "schedule_name": "11月12日－開会～知事説明・委員長報告～閉会－01号",
+    "date": "2025-11-12",
+    "speaker": "知事（内堀雅雄君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "11月県議会臨時会の閉会に当たりまして、御挨拶を申し上げます。\n　今臨時会におきましては、ツキノワグマ被害防止緊急対策事業を行うための経費に係る専決処分の報告及びその承認などの議案を提出いたしましたところ、議員の皆様には熱心に御審議の上、御議決を賜り、深く感謝を申し上げます。\n　議員の皆様の今後一層の御尽力、御協力をお願い申し上げまして、挨拶といたします。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/451.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        185
+      ]
+    }
+  }
+]

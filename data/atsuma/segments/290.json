@@ -1,0 +1,370 @@
+[
+  {
+    "id": "atsuma-290-1-001",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案３件であります。\n　議案第１号　厚真町税条例等の一部改正について。\n　地方税法の一部改正に伴い、厚真町税条例等の一部を改正しようとするものであります。\n　議案第２号　令和３年度厚真町一般会計補正予算（第２号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ1,170万8,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ95億870万8,000円とするものであります。\n　歳出における補正の内容について、総務費で胆振東部地震慰霊碑等整備事業及び地域公共交通対策事業の追加であります。\n　この補正の財源として、特定財源の国庫支出金及び繰入金で1,097万8,000円、一般財源の繰越金で73万円と見積もり収支のバランスをとったところであります。\n　議案第３号　令和３年度厚真町国民健康保険事業特別会計補正予算（第１号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ33万4,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ５億8,473万4,000円とするものであります。\n　歳出における補正の内容について、傷病手当金の追加であります。\n　以上が、本日ご提案申し上げております、議案の提案理由であります。よろしくご審議のうえご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 609,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-002",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "住民課長（青木雅人君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-003",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "74条の３の関係なんですけれども、実際の現所有者の申告を求めるものですけれども、かなりの事務量が予想されるんですが、その件についてどのように考えているかお伺いしたいと思います。\n　もう一つは、先に予算化した関係人口創出事業の遊休不動産の活用に向けた調査委託費というのがあるんですけれども、この事業とこの条例との改正とのリンクについてどのように解釈しているか説明をお願いしたいんですけれども。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-004",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "住民課長（青木雅人君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、１点目の条例第74条の３、第75条の登記人等が死亡している場合の土地の所有者を現住者の申告について、大変な事務量がかかるのではないかということでございますが、現時点で基本的に所有者が変わっていない場合においても申告時に納税義務者のほうを選定していただいておりまして、その方に対して今納付書を送付しているところでございます。そこに合わせて、新しい届書を一緒に送付する予定となってございます。すみません、もう１件の２点目は…。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-005",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "復興担当理事（まちづくり推進課参事〔復興推進〕）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大坪秀幸　君）　２点目の関係人口の関係の事業とこの税条例の改正の関係についてのご質問ですが、関係人口の事業についてはこれから着手、考えておりますので、この今回の税条例の改正を具体的にといいますか、よく確認しながら事業に着手していきたいと思います。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-006",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "総務課参事（財政）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高安正　君）　（議案書及び資料により説明）",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-007",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "防災担当理事（総務課長）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "吉田良行　君）　（議案書及び資料により説明）",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-008",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "慰霊碑のことについてお伺いしたいと思います。\n　一つは慰霊碑の耐震性についてどのようになっているかということです。\n　もう一つは、３案から庁舎内の検討でこの案に絞ったということでしたが、町民を巻き込むことができなかったかということに関して質問させていただきます。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-009",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "防災担当理事（総務課長）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "吉田良行　君）　まず１つ目の耐震性についでございますが6ページに記載のとおり、基礎部分もしっかりしておりますし、設置に関してそういった耐震の部分を検討しながら設計をされておりますので、支障はないというふうに考えております。\n　２点目の町民を巻き込んでということでございましたが、町民の方々の思いは人それぞれということもございまして、特にご遺族の方等に対して意見聴取を今回はしてございません。やはり、今申し上げましたとおり、皆さまそれぞれ色んな思いがございますので、このデザインに関しては今回は庁舎内で一般職及び管理職それぞれの立場で検討を重ねて決定したというプロセスを踏んでいるところでございます。",
+    "text_length": 299,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-010",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "耐震性に関して十分という抽象的な説明になっていますけれども、実際に震度いくつまで対応できるのかということに関してはどうかということです。構造的にやはり弱い方向がありますので、それがどうかということ。\n　それともう一つ町民を巻き込んでという部分に関して、３案だったわけですから、その３案を示してそれに対して町民に投票してもらうというようなこともできたのではないかと思うんですよ。それに関して遺族の思いがという部分とは切り離して取り組むことができたと思うんですがどうでしょうか。",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-011",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "防災担当理事（総務課長）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "吉田良行　君）　まず、１点目の耐震性に関しましては、抽象的な発言になって申し訳ございませんでした。今後、発注をしていく中で具体的に再度検討させていただきたいと思います。\n　それから２点目の町民の意見を幅広くというご意見でございますが、今回に関してはデザインが３月末に上がってきたということもありまして、町の思いとしては３年を迎える今年の９月６日には建立を間に合わせたいという思いもございます。それで町民の方々の意見を聞きながらということは議員がおっしゃるとおりかもしれませんが、今回に関しては町の考え方として町民のご意見を聞く時間的な余裕もなかったということもございまして、今回は庁舎内で検討し、職員の幅広い意見を聞きながら３案の中からこの案に決定をさせていただいたということでございますので、ご理解いただきたいと思います。",
+    "text_length": 362,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-012",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この慰霊碑の設置に関しての追悼式が行われるわけですけれども、ここで例えば町民に案内してそれに対して町民が選択をしていくというようなことに取り組むとしたら、その時点から追悼式のセレモニーは始まっているんですよ。ですから、追悼式のセレモニーというのはその１日だというふうに、基本的な考え方ですよ、そういうことではなくて、そこまでいくプロセスも全部追悼式ということなんだという立ち位置に立てば、この３つの案に対する投票行為から取り組んでいこうという発想になるんですね。ですから、おそらく発想のスタートがちょっと違うと思うんです。今後も同じようなことが起きますよ。だから、その時点で町民にどういうふうにその情報を公開して、どのように関わってもらうかというのはこういうところに姿勢が出てくるんですよ。ぜひ、これはもう決めてしまったものですから今回はこのままいくんでしょうけれども、ぜひ次回とかこういう機会があればそういう考え方で進めていただきたいというふうに思います。",
+    "text_length": 429,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-013",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "防災担当理事（総務課長）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "吉田良行　君）　今、下司議員がおっしゃることを今後は十分肝に銘じながら様々な事業で町民の意見を幅広く聞きながら進めていきたいというふうに考えております。",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-014",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "住民課長（青木雅人君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-015",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "（三國和江君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案書別冊１の１ページをお開きください。\n　議案第４号　特別委員会の設置について。\n　提案理由を説明いたします。\n　厚真町議会委員会条例第３条の規定により、厚真町議会に次の特別委員会を置く。\n　名称は議会改革調査特別委員会。\n　委員定数は議長を除く全議員10名。\n　所管事項は議員定数、議員報酬であり、特別委員会を設置し、調査及び審査が終了するまで閉会中の継続審査とするものであります。\n　以上、よろしくご審議いただき、ご決定賜りますようお願い申し上げ、提案理由といたします。",
+    "text_length": 238,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "atsuma-290-1-016",
+    "municipality": "atsuma",
+    "council_id": 290,
+    "council_name": "令和 ３年  ５月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月07日－01号",
+    "date": "2021-05-07",
+    "speaker": "議会事務局長（甫一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご報告いたします。\n　委員長に高田委員、副委員長に大捕委員が互選されました。\n　以上でございます。",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/290.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        69
+      ]
+    }
+  }
+]

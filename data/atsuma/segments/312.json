@@ -1,0 +1,439 @@
+[
+  {
+    "id": "atsuma-312-1-001",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案２件であります。\n　議案第１号　新町地区大規模盛土造成地滑動崩落防止工事（その３）請負契約の締結について。\n　令和３年12月22日の入札の結果、新町地区大規模盛土造成地滑動崩落防止工事（その３）請負契約を締結することについて、地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第２号　令和３年度厚真町一般会計補正予算（第12号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ9,191万4,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ105億4,795万4,000円とするものであります。\n　歳出における補正の主な内容について、総務費では、ゼロカーボン推進事業の追加、民生費では、住民税非課税世帯等臨時特別給付金支給事業などの追加であります。\n　この補正の財源として、特定財源の国庫支出金で9,191万4,000円と見積り、収支のバランスをとったところであります。\n　以上が、本日ご提案申し上げております、議案の提案理由であります。よろしくご審議のうえご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 547,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-002",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "総務課参事［財政］（高安正君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-003",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "総務課参事［財政］（高安正君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-004",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "復興担当理事［まちづくり推進課参事〔復興推進〕］（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-005",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "住民課参事［福祉・子育て支援］（中村信宏君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-006",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ゼロカーボン推進事業についてお伺いします。温室効果ガスの削減のための取組ということもあるわけですけれども、火力発電所はこの事業の調査対象になるんでしょうか。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-007",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "復興担当理事［まちづくり推進課参事〔復興推進〕］（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大規模な発電所が厚真町に立地している状況は皆さんがご周知の通りです。ゼロカーボンにつきましては、発電所自体ではなくて、電気を利用する側ということになります。ですから、厚真の発電所では発電をした電気を全道各地に届けているわけですけれども、今回の対象としてはあくまでも厚真町が使っている電気、この分のみがゼロカーボンの対象になるということでご理解いただければと思います。\n　参考までなんですけれども、大規模な石炭発電については、ご存じの通り、今ゼロカーボンの関係で話題になっているんですけれども、これは国並びに北海道電力が独自に、例えばアンモニアの混焼による二酸化炭素の削減、そういったことを検討していると、そういう状況にございます。",
+    "text_length": 315,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-008",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "（伊藤富志夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私もゼロカーボンのところで、もう少し具体的にこの中身というか、推進事業の中身を教えてもらえないかなと思っています。1,000万円かけて先ほど言った新年度からですから、９月の５か月くらい、具体的にどういう展開がされていくのか。\n　あと、おそらくコンサルがどこか指定されていくのではないかというふうに思っているんですが、もう少しそのへんの中身も含めてどういう展開がされていくか教えてください。",
+    "text_length": 194,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-009",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "復興担当理事［まちづくり推進課参事〔復興推進〕］（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の調査内容については、説明資料にも記載させていただいた内容になります。それで、なかなかわかりにくい部分もあると思いますので、かみ砕いてといいますか、もう少しわかりやすく説明させていただくと、実際これからの公共事業を含めた特に国の補助事業、交付金事業については、このカーボンニュートラルという部分を避けて通ることができない。ですから、基本的にはいかにその事業がゼロカーボンに配慮された事業であるかということが採択の大きな要件になってくるであろうということを想定しております。そのためには厚真町が現在どれだけの二酸化炭素、温室効果ガスを排出しているかという状況を把握することとあわせて今後どのように厚真町としては温室効果ガスを削減していくかそういった計画を厚真町として持ち合わせている必要があります。それは、国からの交付金等を受ける場合に、その状況を判断されて、状況を見極めた上で、国のほうも交付金を出す、出さないということが今後は出てくるであろうということもありますので、それに備える意味も含めて今回調査をおこないたい。\n　それともう一点ですけれども、これも説明の中で簡単に説明させていただいたところだったんですけれども、今の環境省で選定しております脱炭素選考地域、これは全国で100か所程度選考しようということで国が進めているんですけれども、この選考地域に指定されることによって、今後特にゼロカーボンに関する事業については交付金等が重点的に充当される、そういった方向で国も動いております。この選考を受けるためには、先ほどお話したように現在の排出量、今後の削減目標、そういった具体的な数字をもってこの申請を行わなければいけないというそういった部分もありますので、そのための準備も含めて今回この国の補助金を使いながらこの調査を進めていこうというふうに考えているところです。\n　どういった事業者にこの業務を委託するのかということなんですけれども、今回の補助金を取り扱っているところの、一応いろいろな方法はもちろんあるんですけれども、基本的には一般競争入札で募集しなさいと。ただ、状況によっては指名競争入札あるいはプロポーザルによる随意契約、そういったことも可能ですよということもありますので、今後調査の準備を進めていく中で、厚真町にとってどういった選定、選定というか事業者の決定がいいのかということを検討させていただきながらもっとも効果的に、しかもより良い内容の計画が策定できるような事業者の選定方法を考えていきたいというふうに考えております。",
+    "text_length": 1071,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-010",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私からは２点説明を求めます。\n　このゼロカーボン事業の関係ですけれども、今参事のほうからいろいろと今後の町として公共事業等に対する査定段階で一つの物差しになるのではないだろうかという説明がありました。だとすれば、たしかに今の地球環境問題というのは大きな問題になっておりますし、日本国内でもそのようなかたちで推進はしておりますけれども、具体的にこういう事業に取り組んでいく中で、北海道内でもこのような取組を今、進めている自治体があるのか。新しい事業ですからどれだけ手を挙げているかということは把握できないかもわかりませんけれども、わかる範囲で説明をお願いしたいと思います。\n　それともう一つ、２番目の住民税非課税の関係の支給対象者、これは①と②がありまして、合計で766世帯というふうになっていますけれども、この①と②の振り分けた戸数がわかれば報告願いたいと思います。",
+    "text_length": 383,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-011",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "復興担当理事［まちづくり推進課参事〔復興推進〕］（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１点目のゼロカーボンの取組、道内でどの程度進んでいるかというご質問なんですけれども、今回のこの調査を実施している自治体については、正確な数までは把握できていないんですけれども、数自治体というふうに認識しております。まだほんとに数えるほどの自治体が現在すでに取り組んでいて、実は今回追加募集が国のほうであって、それに今回厚真町が手を挙げさせていただいたことから今回この時期での補正予算の提案をさせていただいているという状況にあります。この取組自体は今お話ししたように、まだほんとにごくわずかの自治体なんですけれども、ゼロカーボン宣言をしている道内の自治体はすでに全道で40自治体ほどあって、ゼロカーボンに対する取組というのはどんどん活発になってきているというんでしょうか、そういう状況にあるということです。\n　以上です。",
+    "text_length": 359,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-012",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "住民課参事［福祉・子育て支援］（中村信宏君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "住民税非課税世帯等臨時特別給付金の対象者の内訳でございます。766世帯のうち、①令和３年度分市町村民税非課税世帯が618世帯。②令和３年１月以降の家計急変世帯の見込みが148世帯、計760世帯で見込んでおります。\n　以上です。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-013",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "（吉岡茂樹君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどのゼロカーボンの関係で、説明の中でも今後のいろいろな公共事業等の補助金等にも触れておりましたけれども、これは今後推進されるであろう庁舎周辺の整備事業、これらにも紐づいてくる前提というふうに捉えてよろしいんでしょうか。",
+    "text_length": 111,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-014",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "復興担当理事［まちづくり推進課参事〔復興推進〕］（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まだ実際の補助事業、交付金事業のメニューというのは具体的に示されていない状況にありますが、先ほどからお話ししているように、ゼロカーボンの取組というのは国を挙げて進めていくということになっておりますので、今後庁舎関係についても、もちろん庁舎全般というわけにはいかないと思うんですけれども、ゼロカーボン、二酸化炭素を削減する、そういった部分にはゼロカーボン関連の、国からの支援メニューが出てくるものと考えております。",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-015",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "厚真町の場合は、すでに進めております地産地防、地産地消エネルギー推進事業というものもございまして、北海道からは厚真町が公共施設群の地産地消再生可能エネルギーを活用していくと、そういう先進地として評価していただいているということもありますし、先ほど大坪理事の説明にありました被災森林の再生、これは吸収源としてのそういった評価、これを元の能力に戻していくという取組も非常に重要だというふうに考えておりますし、復旧復興計画の中にありますように、これから市街地の宅地開発や、それから今吉岡議員からご指摘のあったこの公共施設周辺の再編整備、こういったものも当然ゼロカーボンを一つのコンセプトにして取り組んでいくということは承知、皆さん方がすでに把握していることと、コンセプトとしてこのゼロカーボンという効果をどの程度発揮できるかというそういうしっかりとした数値、現状と数値目標を立てなければならないというふうに考えてございまして、これは単純に厚真町がどの程度全体として町民の皆さんに協力をいただくかということももちろん建前上はあるんですが、厚真町として今後進める主要なプロジェクト等について、ゼロカーボンと意識していかなければならないということもあって、現状の調査と、それらのプロジェクトを通して、どういった効果を獲得できるかそういったことを具体化していくために、調査をさせていただきたいという意味でご説明申し上げております。一般論ではなくて、様々なプロジェクトに当てはめながら効果を測定していくと。あるいは見通しを立てていくというふうに考えてございます。",
+    "text_length": 673,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-016",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "（下司義之君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ゼロカーボン推進事業を受託できる事業者の条件を説明いただけますか。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-017",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "復興担当理事［まちづくり推進課参事〔復興推進〕］（大坪秀幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "具体にどういった条件が付いているかというのはここで資料がありませんので、詳しい説明ができないんですけれども、基本的にはコンサルタントであれば受託できるものというふうに理解しています。ただ、中身が非常に、ゼロカーボンということで特殊なといいますか、非常に高度な内容になってきますので、それに対応できるコンサルタントというのはおのずと限られてはくるのかなというふうに考えてございます。",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-018",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "（高田芳和君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私のほうは住民税非課税世帯と臨時特別給付金支給事業についてをお尋ねをいたします。これの周知方法どのようにされるのか、それと最短でいつ頃に支給されるのか、この２点についてお伺いします。",
+    "text_length": 91,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "atsuma-312-1-019",
+    "municipality": "atsuma",
+    "council_id": 312,
+    "council_name": "令和 ４年  １月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月12日－01号",
+    "date": "2022-01-12",
+    "speaker": "住民課参事［福祉・子育て支援］（中村信宏君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず周知方法でございますが、①の住民税非課税世帯の方には２月の下旬に確認書を送付させていただきます。すべて該当世帯の方にはダイレクトメールでこの確認書を送付させていただきまして、口座情報そして課税者のみの扶養世帯ではないことにチェックを入れていただきまして返信をしていただきます。この返信がなされ次第、支給をしていきますので、早くても３月の中旬から支給をしていく予定で考えてございます。\n　②の家計急変世帯については、申請が必要となりますので、広報誌、町のホームページ、防災無線等で周知をしていく予定でございます。\n　以上です。",
+    "text_length": 264,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/312.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        59
+      ]
+    }
+  }
+]

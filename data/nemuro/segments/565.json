@@ -1,0 +1,3015 @@
+[
+  {
+    "id": "nemuro-565-1-001",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "では、よろしくお願いします。\n　事項別明細書の１０ページです。民生費、社会福祉総務費の扶助費の中で、生活物資給付費ということで５４万円追加となっておりますので、まずこれの内容から教えていただきたいと思います。",
+    "text_length": 104,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-002",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "社会福祉課長（井平雄司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "生活物資給付費のお尋ねについてでございます。\n　本事業は、新型コロナウイルス感染症に罹患した方、もしくは濃厚接触者となられたご家族等につきまして、自宅待機を要されることにより外出機会が制限されるというような状況になりますことから、例えば買い物等で外出ができなくなると、そういったところを支援するために、私どもの方で日常生活必需品を購入して、置き配という形でご家庭に届けるというような仕組みにしてやっております。\n　以上です。",
+    "text_length": 212,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-003",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "罹患された方にとっては、大変ありがたいというか、大切な取り組みだと思うんですが、日常生活必需品というお話でしたけれども、もう少し具体的に、その中身について教えていただけますでしょうか。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-004",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "社会福祉課長（井平雄司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "日常生活必需品の主な内容についてでございますが、中身といたしましては、まず米飯、パック入りの米飯ですね。あとレトルト食品、カップめん、缶詰等の比較的常温で長期保存が可能な食料です。さらに、お茶もしくはスポーツドリンク等の飲料、それとマスク、手指用消毒液等の衛生用品を１件につき１万２，０００円の範囲内で用意してございます。\n　以上です。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-005",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "大体２週間程度が想定されるというふうに思っているんですけれども、今教えていただきましたこの内容につきましては、何か指針といいますか、マニュアルといいますか、こういうものを用意するというような、そういうものがあるのでしょうか。基準的なものがあるのかどうか。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-006",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "社会福祉課長（井平雄司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基準というものは、明確に文章化したものは持ってはいないんですが、今回のコロナ感染症に感染したことによって、外出できなくなるというところについて、私どもとしては、災害に相当するような状況と位置づけた上で対応させていただいているところでございますので、２週間買い物に出られないというところを見て、保存が可能なものを優先的に用意すると。なおかつ脱水症状とかの可能性もあるので、飲料とかも改めて必要になる。当然ご自宅にも多少なりとも食材があると思いますので、そういった手持ちの食材も活用しながら、バランスよく食事をとっていただいて、２週間回復に向けて待機していただくと、そういうような趣旨でやっているところでございます。",
+    "text_length": 306,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-007",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "よくわかりました。ここからは、若干要望も含めてという話になってしまうんですけれども、今お答えになられたことについては、全く否定するつもりもありませんし、正しいことはされていると思うんです。ただ、やはり罹患された方、あるいはそのご家族、濃厚接触者といえば、さまざまな、それこそ多様性といいますか、いろんな方がいらっしゃって、それこそ衛生用品等については特段問題ないでしょうけれども、例えば食べ物ですと、場合によってはアレルギーですとか、もっと極端な話でありますと宗教上の理由等で食べられないものとかって、当然あったりするわけですよね、その人にとってね。あるいは、その方が抱えている健康の問題も、基礎疾患といいますか、そういう問題もあると思うんですよね。\n　ですので、基本的にはご自宅にある食材を活用されるということもおっしゃっていましたけれども、それを補完する形での提供だと思うんですけれども、場合によっては、せっかくいただいたのに全然食べられないものもあるというような状況も考えられるので、そこはどうなのでしょうね、決められた予算の中で、比較的日もちのするものという条件はありますけれども、最近はいろいろレトルト食品なんかも本当に内容が豊かになっていますよね。いろんな選択肢もあると思いますので、そういったニーズにこたえるといいますか、どういったものが必要なのかということを把握することも必要になってくるのではないかなと。その点、どうでしょうか。",
+    "text_length": 623,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-008",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "社会福祉課長（井平雄司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議員ご指摘の内容につきましては、こちらとしても承知するところでございます。確かにいろんな方がいらっしゃいますので、ベストを考えるのであれば、そういったきめ細かな対応をというところについては、私どもとしても理解できるところでございます。\n　ただ、例えば過去にあったケースなんですけれども、罹患した方にはあらかじめこちらから文書を配布しておりまして、その中には、おおむねこういうものが行きますという内容は明示してあるんです。その上で、その品目について、これをちょっとふやしてほしいというような個別のご要望とかは受けたことがございまして、そういったご要望があれば、私ども買いに走るときに、そのあたりは考慮して対応したというケースも実はございました。\n　ただ、これ１日１件とか２件とかであれば、多少融通はきくのかなと思うんですが、例えば緊急事態宣言が出ました、長期化しました、感染状況は拡大になりましたとなった場合、かなり殺到する可能性もあると思います。そうなったときに、一、二件のときと同じように対応ができるかとなると、ちょっと体制的に難しいところはあるのかなと思います。\n　私どもとしましては、先ほども申し上げましたように、罹患して家から出られなくなったというところが非常に大きな災害であると、そういう認識に立ちまして、可能な範囲でなるべく迅速に物資が届けられるところを第一に考えて実施しておりますので、そのあたりご理解いただければと思います。",
+    "text_length": 620,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-009",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "いや、わかります、よくわかります。それで、あらかじめこういうものが配付されますというようなことで、ペーパーが出されて、もし何かご希望があればということをそこに記載されているのであれば、それはやはり本当に受け取る側の方が気軽にお願いを、それこそ課長が言われたようにケース・バイ・ケースだと思うんですよ。たくさん集団的に、クラスター的に発生した場合は、本当に大変だとは思うんですけれども、それでもやっぱり実際自宅で一歩も出られないで療養となると、やっぱり食事というのは大切なんですよね。そういうことを踏まえて、できる範囲で構いませんので、ぜひ柔軟なニーズに合った対応というのを改めてお願いしておきます。よろしくお願いします。\n　では、続きまして、１４ページになります。商工費の商工業振興費、負担金補助及び交付金の中で、中小企業等応援臨時助成金４，５６０万円減となっております。これはコロナの影響を受けた市内の中小業者に対する応援臨時助成金の関係だとは思うんですけれども、改めまして、まず内容からご説明いただければと思います。",
+    "text_length": 460,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-010",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "商工労働観光課長（得能浩志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、根室市中小企業等応援臨時助成金の概要です。これにつきましては、新型コロナウイルス感染症拡大に伴いまして、経営に影響を受け、事業収入が大きく減少している市内に拠点を持つ中小企業等の皆様に対し、使途を限定しない臨時的な助成金を交付したものでございます。\n　金額につきましては、１事業者当たり１０万円といたしまして、助成の対象業種といたしましては、全業種が対象となりました。\n　助成の対象要件といたしましては、市内に事業所、店舗を構える中小企業者等であること。また、令和３年４月３０日以前より営業しており、申請日現在継続して事業を行い、廃業、解散及び清算手続をしておらず、今後も事業を継続する意思があること。３点目といたしまして、新型コロナウイルス感染症の影響により、令和３年５月または６月、いずれかの事業収入が令和２年の同月比、または令和元年の同月比で３０％以上減少していること。４点目といたしまして、暴力団等に関与していないこと。これらを条件に、助成金を交付したものでございます。",
+    "text_length": 442,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-011",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "それで今回補正予算として４，５６０万円減額補正したということになっていますが、このことについても教えていただきたい。",
+    "text_length": 58,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-012",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "商工労働観光課長（得能浩志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "中小企業等応援臨時助成金の予算と実績が乖離したとのご質問かと思いますが、市といたしましては、予算に対しまして実績が少なかったことは、対象月の事業収入が３０％以上減少しなかった事業者が、市の想定より少なかったものととらえております。\n　その点に関しましては、各事業者におきましても、コロナ禍の中、さまざまな努力や工夫によりまして事業収入の減少幅を抑えた、あるいは確保した事業者いたものととらえております。\n　しかしながら、対象となりました事業者の申請書に記載されております事業収入の減少率を見てみますと、５０％を超えた事業者が全体の６割を超えておりまして、緊急事態宣言の影響等を受けた、直接受けました飲食店、事業者を中心に、対象事業者は依然として厳しい状況にあったものと理解しております。",
+    "text_length": 343,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-013",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "すみません。ちょっと逆になってしまったんですけれども、一応確認まで。当初想定としては何件分想定されていて、実際に給付、助成されたのが何件だったかということを参考までに教えていただければ。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-014",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "商工労働観光課長（得能浩志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予算額の積算根拠と実績についてであります。\n　まず、予算額の１億２，０００万円とした積算根拠から申し上げますと、市内の対象となる事業者は、計２，３２０事業所と推計した上で、申請率を５０％程度の想定で見込みまして約１２００事業者分としたところでありますが、令和２年度に実施しました同様の中小企業等応援臨時助成金の交付実績が１，１６６事業者であったこと、さらに申請受付期間中における予算不足を回避しながら、事業者に対しまして速やかに支給すること、この２点も加味しまして、本金額を予算措置したところでございます。\n　実績といたしましては、法人が１５１件、個人事業者５９３件の合わせて７４４件、金額で７，４４０万円、予算の執行率で申し上げますと１億２，０００万円に対しまして６２％となったところでございます。",
+    "text_length": 350,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-015",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "わかりました。それで、その前の課長のご答弁にあったような状況だったと思います。ただ、総体としては、課長ご答弁されたように、要件となっている３０％以上の減少の事業者が想定よりも少なかったという、結果としてはそういうことだと思うんですけれども、ただ、５０％以上減少された事業者が、その中で６割を超えていたというご答弁をお聞きしましたので、そこはやはりかなり深刻だったんだなということは、改めて認識をさせていただいたところでございます。\n　今は緊急事態宣言も解けまして、患者数も徐々に下がっている状況にありますけれども、やっぱりこれはいつどうなるかわからないということでありますし、基準日、今の市中経済を見れば、まだまだ影響は続いているものと私は思っているんですけれども、今後におきまして、こういった市内の中小企業等に対する支援の状況等について、現段階でお考えがあればお聞きをして次の質問に行きたいと思います。",
+    "text_length": 402,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-016",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "商工労働観光課長（得能浩志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在行っている中小企業向けの支援の状況でございます。\n　現在、事業者向けの支援といたしましては、三密の解消や飛沫接触感染等の防止につながる店舗等の改修、備品設置事業といたしますと、ウィズコロナ、アフターコロナを見据えた販路開拓事業で構成されます新しい生活様式導入店舗等支援助成金や、停滞する市中経済から回復を図るための市内消費喚起商品券発行事業、いわゆるプレミアム商品券になりますけれども、その事業を実施しているところであります。\n　コロナ禍の影響が特に大きかった飲食店をはじめ、小売業や生活関連サービス業など幅広い業種向けの対策を現在講じているところであります。",
+    "text_length": 282,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-017",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "今後についてどのようになるかというのはわかりませんけれども、またかなり厳しい状況になるようになってきたら、コロナ対策としては根室市はかなりスピーディに対応されておりますので、引き続きそういうことで対応していっていただきたいと思っております。\n　恐らく最後になると思うんですけれども、１６ページ、教育費の総合文化会館費でございますが、総合文化会館管理運営経費ということで、工事、それから備品購入などが計上されておりますので、この主な内容について、まず教えていただければと思います。",
+    "text_length": 239,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-018",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "総合文化会館館長（餅崎幸寛君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "鈴木議員の質問にお答えいたします。\n　総合文化会館の管理の経費で今回補正に上げました内容につきましては、新型コロナウイルス感染対策が必要不可欠となっている状況の中、今後、文化会館においても必要とされる新たな活動に向け、大小ホール等で行われる行事の影像や音声の配信等に必要な機材等と配信環境を整備するものであります。\n　内容といたしましては、文化庁の補助事業を活用しまして、ホールで行う行事の配信等に必要なパソコンや撮影カメラなどの機器購入と、大小ホール等のＬＡＮケーブル等の配線工事であります。\n　あわせて、この事業の中で、今回の工事の中で補助対象外、今回の文化庁の補助事業がホールで行われるものに関しての補助となっておりまして、各部屋で行うものについては対象外ということになっておりますが、視聴覚室とのＬＡＮケーブルも今回の事業の中で配線工事を行いまして、今後市民活動の中でそういったオンラインを活用した事業が必要になると想定しておりますので、今回の工事の中で対応したいと考えております。",
+    "text_length": 445,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-019",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "以前に私、一般質問でこれからの新しい市民活動のあり方等についても若干議論をさせていただいた経緯がありまして、それがきっかけかどうかはわかりませんけれども、そういうことも含めてさまざまな措置をされたと理解をしております。\n　ちょっと整理いたしますと、大小多目的ホールで行われるいろんな行事について、カメラ等を利用してオンラインで配信できるようにするということですね。これが文化庁の補助事業になっておりますと。あわせて、補助事業ではないけれども、視聴覚室をはじめとした各講座室等で行われる講演会、講座関係についても、すぐに配信できるということで理解をさせていただきました。\n　当面、これは運用についてはどのようにお考えになっていらっしゃいますでしょうか、具体的に。",
+    "text_length": 330,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-020",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "総合文化会館館長（餅崎幸寛君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "恐らくは、当面は市等の教育委員会の主催の事業がメインとなるとは思いますが、今後市民活動においても、そういった要求、使いたいというような希望がありましたら、そういったところへも活用してまいりたいと考えております。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-021",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "主催事業ですから、例えば成人学校ですとか、あるいは事業協会の事業なども含まれるのでしょうか。そこは、はてなですかね。その辺は検討されるということになると思うんですけれども、当面はそのようにやられていくということで、行く行くは市民の皆さんにも使っていただくということになるというご答弁だったと理解いたしましたけれども、そうなりますと、そういった機器については、今まで文化会館で行っておりますモニターですとか、マイク等、一般的に貸し出されていますけれども、それと同じような扱いになるという、そういう理解でよろしいのでしょうか。",
+    "text_length": 261,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-022",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "総合文化会館館長（餅崎幸寛君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、議員が申したとおり、今後はそういった料金体系を整備して、一応貸し館備品の扱いにしたいと考えています。",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-023",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "わかりました。ただ、どうなんでしょうね。ちょっと表現が難しいな。私なんかは、きっと恐らく使いこなせないような気がいたします。ただ、それでもやっぱりそういうのを活用して、自分たちのそういう事業を多くの人に見てもらいたい。直接来れなくても、配信して見てもらいたいと思っている方はいらっしゃると思うんですね。そういう方々には、そういう機器に関するレクチャーみたいなものはされるのかどうかということをちょっとお聞きをしておきたい。",
+    "text_length": 211,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-024",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "総合文化会館館長（餅崎幸寛君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議員のご質問のありました、いわゆる機器の使い方というところに関しましては、私もそれほど得手ではないんですけれども、その辺も含めて、ご利用希望をされる団体等と協議しながら、その辺のところのサポートはしていきたいと考えております。",
+    "text_length": 117,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-025",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（鈴木一彦君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴木 一彦",
+    "member_faction": "日本共産党根室市議会議員団",
+    "text": "わかりました。ぜひそのようにしていただきたいと思います。\n　私ごとになってしまうんですけれども、今回、文化祭の音楽大会も残念ながら中止になったということで、ほかの団体のことはよくつかまえていないんですけれども、音楽団体に限って言っても、発表の場というのがどんどん失われて、これはある面感染拡大の防止ということを優先しているので、やむを得ない部分では当然あるんですけれども、それでもそういう趣味として活動されている側にとっては、やりがいというか、発表の場が失われるというのは、やっぱりちょっとつらいものがあるんです。\n　そういう意味では、そういう新たな機材なんかも活用した方向というのが今後選択肢として生まれてくるというのは、歓迎すべきことだなと思っておりますので、大いにその辺は市民の方にも周知されて、多くの方が利用できるような、そういうシステムに、レクチャーの関係も含めてしていっていただきたいということもお願い申し上げまして終わりにいたします。",
+    "text_length": 424,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-026",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "それでは、補正予算の関係の説明資料の歳出２の９ページ、償還金利子及び割引料、これ税外収入払戻金で２，０１９万３，０００円ほどになっています。最初、この内容についてまずお尋ねをしたいと思います。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-027",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "こども子育て課長（福田光夫君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の税外収入払戻金２，０１９万３，０００円につきましては、全額こども子育て課で所管するものでございます。事業の国及び道の補助金交付金の令和２年度の実績に基づきまして精算された不用額で、令和３年度１０月以降に返還するものであります。\n　内訳としましては、コロナ感染症対策のひとり親世帯臨時特別給付金補助金の不用額１，３４６万４，０００円をはじめ、国の児童扶養手当負担金１１３万７，９２０円、母子家庭自立支援給付金事業費補助金７３万９，０００円など、全部で１３のメニューとなっております。",
+    "text_length": 243,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        67
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-028",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。少し確認をさせていただきたいのが、今、この国あるいは道の方に根室市の方の所管からこういった、今のお知らせをいただいた事業に対して、補助金ですから、こういった申請をして、その中で補助金額として歳入として入ってくると、そういうような内容だと思っています。そういった意味で、ご説明あったとおりに、基本的には２，０１９万円というものに対して、使わなかったものに対して２０１９万円がありましたと。今お知らせいただいた１３メニューのうちの、その中が２，０１９万円ですというような解釈でよろしいですか。",
+    "text_length": 255,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-029",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "こども子育て課長（福田光夫君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そのとおりでございます。",
+    "text_length": 12,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        71
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-030",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "今お知らせをいただいた中で、１つ数字の乖離というもの、１つ大きく目立ったものがあったものですから、そこをまず内容として確認したいと思います。\n　今お知らせのあった中で、国の関係で母子家庭自立支援給付金事業費補助金、この内容ですよね。この今の数字的なものでいくと、補助額と実績についての乖離があるのではないかと思いますので、その辺、ちょっと概要の方、説明をいただきたいと思います。",
+    "text_length": 189,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-031",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "こども子育て課長（福田光夫君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "母子家庭自立支援給付金事業費補助金の中身でございます。\n　これにつきましては、母子家庭の母の就職、父子の父も対象にはなりますけれども、それに向けた能力開発の支援を図るために、教育訓練講座などを受講した場合の費用の一部を助成しているものです。国庫補助として４分の３の補助があります。\n　令和２年度の実績なんですけれども、予算上では４人分１０５万１，０００円の助成を計上しておりました。そのうち４分の３に当たる７８万８，０００円を国庫補助金として申請し、事前に交付されていたものでございます。令和２年度の実績としましては１件だけございました。中身につきましては、介護福祉士実務者研修を受講した方でございます。受講費用の１０９万６７０円の６０％をこの国の補助、要項で決められたものでございまして、６０％に当たる６万５，８０２円をこの給付金から助成したものであります。",
+    "text_length": 380,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-032",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。金額的には、歳入歳出でいくと非常に大きな額が、今７３万って大きな額と表現しましたけれども、７３万９，０００円に対して、最終的に執行したのが６万５，０００円というようなことだったものですから、その乖離の数字がいったいどういうような状態だということを確認しました。\n　改めて、今、内容をお聞きした中では、いわゆる母子家庭の母親、あるいは父親という方々を対象に、能力開発をしようじゃないかということで、就業に対しての、そういったスキルアップのための支援だというふうにとらえていいと思いますが、基本的には、メニューとしては、今おっしゃられた介護福祉士に対しての今回の対象内容だったんですが、そのほかの対象枠という、つまりスキルアップのための事業というものは、どれだけの範囲にあるのか。\n　例えばホームヘルパーとか、今、介護福祉士の話が出ましたけれども、そういった介護の分野に対してのみの話なのかどうか、それをあわせてお答えいただきたいと思います。",
+    "text_length": 430,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-033",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "こども子育て課長（福田光夫君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "国の要項を見ますと、介護職ばかりでなく、例えば看護師、それから保育士、歯科衛生士とか、そういう部分についての資格取得についても適用されるということでございます。",
+    "text_length": 80,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-034",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。そうすると、人それぞれ、またスキルアップしようというそれぞれ内容が違いますので、今の範疇の中に対して支援をしてもらうというような内容だと思っています。\n　たまたま今回の予算を見ますと、お１人だということに対して減額ということですから、それに対して、予算が４名に対して１人ということですから、大きなあらあらとして、対象者がいるかいないかによって大きく変わると思うんですが、予算を立てて、４人を予算立てていますから、それに対して１人だということになりますから、こういった制度の枠組みの中で、周知あるいは、恐らくハローワーク等との当然連携も必要ではないかという想像はするんですが、そういうことも含めて、周知方法について改めてお聞きしたいと思います。",
+    "text_length": 332,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-035",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "こども子育て課長（福田光夫君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、窓口等でこういうような相談を受けましたら、この制度とかのお知らせもありますし、ハローワークで相談を受けた場合でも、国としてこういうような補助金があるということで周知をしているということであります。\n　市のホームページ上でちょっと確認したら、この項目が見当たらなかったということでございます。今まで対象者も少なく、窓口だけというような部分でございます。ただ、今回ひとり親家庭の支援ということで、１項目の部分を紹介したいと考えております。",
+    "text_length": 220,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-036",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。いずれにしましても、大体概要をお聞きしましたので、これは対象者がいるということが、ふえればいいという話ではもちろんなくて、それを利用する人が、自分のスキルアップ、あるいはそれに可能性としてそこに到達できるという、そういった制度になろうかと思いますので、その辺の周知、あらあらわかる範囲で、なるたけ手の届く、そういったような範疇の中の数値をお願いしたいということを申し上げたいと。\n　次に行きたい思います。続きまして、説明書の１２ページ、衛生費の関係です。この中で、保健衛生費の感染拡大防止対策事業経費として４６７万円追加補正されておりますが、その概要についてお聞きをしたいと思います。",
+    "text_length": 303,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-037",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回補正に上げました感染症拡大防止対策事業、こちらの趣旨につきまして説明させていただきます。\n　本年１月から６月まで実施しました、医療従事者等ＰＣＲ検査事業におきまして、アンケート調査を行った結果、各施設より評価の声をいただくとともに、事業計画の要望も多数いただいたことを踏まえまして、結果を得るまで時間を要するＰＣＲ検査から、結果が即時に判明する抗原定性検査に変更の上、陽性者を早期発見することにより、施設内における集団感染の未然防止と従事者が安心して働ける環境を維持することを目的として実施したいと考えているものであります。",
+    "text_length": 264,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        87
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-038",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "概要については、今お聞きしたとおりにアンケート調査をしたという。そういった中で、結果を早く知りたいというような要望があったという、そういったあらあらの中で、結果が即時に判明する抗原定性検査ということに切りかえようじゃないかと、そういうような内容だと思っていますが、これについて、事業概要の内容について。目的についてはわかるんですが、対象者について、どういった対象者の枠になるのか、お知らせいただきたいと思います。",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        89
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-039",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象者につきましては、１月から６月まで対象としておりました市内医療施設、介護福祉施設と幼稚園、保育所の従事者等はもとより、今回、教育関係従事者も追加することで実施しようと考えております。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        91
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-040",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。以前、ＰＣＲ検査の時に、私、一般質問等々でＰＣＲ検査を市民全員にという、そういったお話をさせてもらって、市長はどこかで切らなきゃならないと。これは行政の役割だ等々の話をしたことを覚えています。その中で、基本的に対象者の枠を少しずつふやしているという、そういった現実もあるんだろうなと思っています。\n　基本的には、今、ワクチン接種の関係でも、１２歳以下の子供たちというんですかね、それを世界中の中で進められるという方向性もあるようでございます。そういう中でも、そういう理由としては、やはり若年層というか、そういった若い世代にもコロナという、そういう感染症が拡大しているという、そういった背景もあるのかなと思っています。それで、今、子供たちに対応する先生方、あるいは高校生の生徒方というところの先生を中心に、抗原検査をするという、そういったキットの内容だ思っていますが。\n　もう一つ、例えば従事される方、例えば清掃、あるいは調理、そういった方々も対象となるのかどうか。ここを改めてお聞きしたいと思います。",
+    "text_length": 461,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        93
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-041",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象者の部分のご質問でございます。以前まで、従来やっておりました時でも、清掃、あと調理業者等の部分に関しましては対象でございました。\n　今回、抗原検査のキットを配付するというところでございまして、対象者といたしましては、出勤後で施設従事者の方が発熱等の症状があった場合に、すぐ検査できるようにというところで進めておりますけれども、清掃、調理業者等はもとより、あとは市外から来訪された方たちにも気軽に検査を進めていただいて、施設の運用で幅広く検査キットを使用していただきたいという想定で考えてございます。",
+    "text_length": 251,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        95
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-042",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "今、施設のお話が出ましたので、基本的なところは最初にお聞きをしていなかったんですが、基本的にその配付数ということと、同時に、その配付先の件数ですよね。それで基本的には金額が幾らになるのか。改めて３つお願いしたいと思います。",
+    "text_length": 111,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-043",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまのご質問ですけれども、全体で配付数５，０００個を想定をしておりまして、今回配付する施設数、大体合計で７５施設を予定しております。そこに勤務する従事者数は約１，５００人に上るところでございます。\n　配付数の試算としましては、従事者数をもとに試算しておりますけれども、先ほど申し上げましたとおり、今回の検査キットを使用する場面として、出勤している施設の従事者、それと施設に出入ります清掃、調理業者等の部分、それとその従事者が出張して帰ってきた場合、根室に帰ってきて不安だというところで検査をする、そういったところで幅広く設けておりまして、あとは予備検査キットを潤沢に用意したいという観点から５，０００個を計上したものでございます。",
+    "text_length": 317,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        99
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-044",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "もう一点お聞きしたいのが、この事業期間ですよね。これ事業期間はいつからいつまででしたか。それを確認しておきたいと思います。",
+    "text_length": 61,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        101
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-045",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業期間につきましては、今月１０月から令和４年３月までと考えてございます。",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        103
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-046",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "そうしますと、５カ月強ということになると。１０、１１、１２、１、２、３で６カ月ですね。失礼。半年間で５，０００個ということになると思います。７５施設に１，５００人対象で５，０００個ということになりますと、単純に割り算をしていくと、要するにもう一回あとで説明していただきますけれども、１日１回検査をするというような数ではもちろんないですよね。ですから、検査をするというタイミングというのは、どういうタイミングなのかということと、同時に１人頭どの程度の検査の数になるのかということを改めてお聞きしたいと思います。",
+    "text_length": 254,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        105
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-047",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまご質問の検査をするタイミングにつきましては、発熱、せき、のどの痛みなど体調の悪化が認められた場合に、気軽に使っていただきたいというところで考えてございます。\n　ですので、１人頭何個という考え方ではなくて、必要に応じて使ったらその都度配付して提供していきたいなと考えているものでございます。",
+    "text_length": 148,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-048",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "そこの説明はわかるんですが、例えば１施設に１０人いましたといった場合に、１人当たり幾らということの数はないにしても、例えば１施設１０人いましたら３０個配付するのかというような意味合いで、おおよその１人３回程度なのか、あるいは４回程度を施設に応じて配付をするのかということによって、数の配分って変わってきますよね。そういった意味でお聞きしたかったんです。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-049",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ちょっと疑問があります。１人１回分にしますと、１，５００人ですから１，５００回分になるんじゃないですか。それが５，０００個用意ということになれば、少し間違いありませんか。もう一度お聞きしたいと思います。",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        112
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-050",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そうですね、試算の中では２回、３回というような形で持ってはいなくて、施設の中でも例えば１人１回というふうに配る想定ではおりますけれども、例えば施設の数が７人とか４人とかってありましたら、切れのいいところ、１０個単位で配付するとかというようなことも考えてございますので、単純に１人１回だから大体１，５００というところで２回または３回に相当するのかというような考え方で計上してはおりませんので。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        114
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-051",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "納得する部分と納得のいかない部分がなかなかあるというのは、例えば幅があり過ぎますよね、５，０００に対して１，５００ですから。それがちょっと今見ると１人１回分しか予定していないのに１，５００プラス１０個の単位とすれば、相当な数が各施設ごとに多く配付するという形にはなろうかと想像するんですけれども、そういう想像の仕方、プラス・アルファーで５，０００個を配付するという、そういうとらえ方でよろしいですか。",
+    "text_length": 200,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        116
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-052",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今の議員のお話というよりは、まず最初に１人１回分相当、プラス切れのいいところで切り上げた数字で、まず一たん配付したいと考えております。それは必ず毎回定期的に検査してくださいというものではございませんので、各施設によって減り方は違うと思います。ですので、それで申請していただいて、報告していただいて、その数の分をさらにストックしているところから配付していきたいというような考えのもと５，０００個にしているというところでございます。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        118
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-053",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "そうしますと、５，０００個でもういきなり全部配付するのではなくて、一応ストックとして置いておいて、不足する分について随時そこの施設等々にお配りすると、そういう考え方でよろしかったですか。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        120
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-054",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そのとおりでございます。",
+    "text_length": 12,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        122
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-055",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ようやくわかりました。ありがとうございます。\n　続きまして、同じ説明資料の環境衛生費の関係、負担金補助及び交付金２１６万円の増額になっています。最初にこの事業目的についてのお知らせをいただきたいと思います。",
+    "text_length": 103,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        124
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-056",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "市民環境課長（白川哲也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "合併処理浄化槽設置補助金の事業目的でございます。\n　こちらは根室市内の下水道区域外の生活排水の向上、公共水域の水質汚濁を防止するため、生活環境の保全、公共衛生の向上に寄与することを目的に、平成２４年度から合併処理浄化槽の設置補助を実施しているところでございます。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        126
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-057",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "今回２１６万円というのが補正増額されていますけれども、これについては、例えば、今、合併処理浄化槽ですから、基本的には何件ふえて、どの地区に大体配分をされるのかという、そういうような内容を最初に確認したいと思います。",
+    "text_length": 107,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        128
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-058",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "市民環境課長（白川哲也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本事業につきましては、処理区域外になりますので、市内下水道区域内の下水道認可区域外。ちょっと待ってください、すみません。",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        130
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-059",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "市民環境課長（白川哲也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の補正要因でございますけれども、本事業、当初予算におきまして１７基分を予定して事業を進めてまいりました。８月末現在、１０件の申請をいただいておりまして、さらに７件の申込みを受け付けしているところで１７件の予定がされていると。\n　さらに３件、９月以降の実施について問い合わせがございましたので、この３件分を今回補正するような形で予定をしているところでございます。\n　それで、令和３年度の実施の状況でございますけれども、区域でいきますと、おおむね別当賀や厚床、落石、珸瑤瑁、友知といったところを予定しておりまして、今回新築のところでいきますと１２件、増改築１件、既存住宅７件、合計見込みで約２０基を予定しているというところでございます。",
+    "text_length": 318,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-060",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "今回の補正を入れた上で２０件という、２０基という、そういうような解釈でよろしかったですか。",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        135
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-061",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "市民環境課長（白川哲也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補正込みの見込みで２０基ということでございます。",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        137
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-062",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。そうしますと、その２０件、これから新築、増築あるいは改築というような内容になってくると思うんですが、それについてはこれからの要請というか、補正ですから、これから新築分なのか改築分なのか増築分なのか、それによって恐らく変わってくるんだろうと思いますけれども。\n　恐らくこの合併処理浄化槽が始まって、全体としての施工数というのは、ちなみにふえていっている状態なんですか。顕著にふえていっている状態なんですかね。例えばこの１０年で、どの程度の設置数というのはあるのか。改めてそこを確認できますか。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        139
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-063",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "市民環境課長（白川哲也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "２４年から本事業を実施しておりまして、これまで、令和２年度までの実績ですけれども、浄化槽としましては１２５基、補助事業により設置しているところでございます。\n　以上です。",
+    "text_length": 85,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        141
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-064",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。いずれにしましても、合併処理浄化槽というのは、私たち市街地の下水道が接続している部分についてはいいんですが、やはり市街地以外の方ではまだ未整備という状態ですから、これもそこに下水道をつなげるとなれば、相当なるインフラ整備というのはかかってくると。それでそれに対応するために、合併処理浄化槽というのは出てきているという、そういった制度の内容だというのは当然理解をしています。\n　そういった意味で、合併処理浄化槽自体が、やっぱりふえることがいいのかどうかというのは当然あると思うんです。それは補助の制度の枠組みの中のありようだと思っていますけれども、これからの推移というのは、なかなかそれぞれの地区の方でそういった家を改築されるとか、そういったことは、手を挙げていかない限りは読み取れない部分がありますよね。そういった意味では、こういった推進するための周知というんでしょうか、もう皆さん知っていますけれども、そういった方法というのは、漁協等々を通じておやりになっているということはあるのでしょうか。",
+    "text_length": 458,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        143
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-065",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "市民環境課長（白川哲也君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本事業の周知につきましては、年１度、年度当初において市広報紙を使って周知、毎年周知を行っているところでございます。\n　以上でございます。",
+    "text_length": 68,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        145
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-066",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。大体概要についてはわかりましたので、まず補正額２１６万円の内容については、これから２０基という、そういった全体像をつかまえて今進めていると。それにプラスして３件ほど、３基ほどがプラスになったので１７基ですか、１７基になると。そういった補正だということも理解をいたしました。\n　そういった意味で、周知の方法もそれなりにおやりになっているということもあわせて、担当課としてはこの辺もしっかりと進めていただきたいということを申し上げて次に行きたいと思います。",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        147
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-067",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "説明書の１３ページ、農林水産業費の関係から、農林水産物消費拡大推進事業補助金、これ９００万円が減額をされています。まずその減額の理由についてお聞きをしたいと思います。",
+    "text_length": 83,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        150
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-068",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "水産指導主幹（長瀬桂一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "農水産物消費拡大推進事業補助金９００万円についてであります。\n　本補助金は、国土交通省所管の北方領土隣接地域振興等事業推進費補助金を活用しまして、根室沖ホタテ貝再生漁場における漁場環境改善事業、ヒトデの駆除に対する補助金であります。\n　事業の概要等につきましては、本年５月から６月にかけまして、根室沖ホタテ貝再生漁場におきまして、根室漁業協同組合が事業実施主体となり、ヒトデによるホタテ貝への食害を防止することを目的として、桁引き網漁法により２００トンのヒトデを駆除する計画でありました。\n　総事業費１，９９７万５００円、消費税などを差し引いた補助対象経費１，８１５万５，０００円の２分の１となる９００万円を当初予算に計上したものでございます。\n　補正の理由についてでありますが、事業実施予定海域のヒトデの生息密度が、事業計画策定時より低下しており補助事業の目標値を下回ったこと、また、新型コロナウイルス感染拡大に伴う販売不振により、漁業経営悪化のため、事業実施にかかる経費負担が厳しい状況となりまして、事業実施主体の根室漁業協同組合において事業を取り下げたものでございます。",
+    "text_length": 488,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        152
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-069",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。ホタテに対する天敵というか、食害をするヒトデをいかに駆除するかという、そういったことの事業だというふうには、今、理解をしています。\n　その中にあって、今ご説明のあったとおりに、ヒトデを駆除するための事業に対して、今の現状の中で、その減額した理由もそうなのでしょうけれども、基本的には２００トンを駆除する予定だったものが、それ以下になっているという現状があって、ヒトデの今の状況というのが、密度がどんどん下がっている状況にあるのかないのか、ここら辺はわからないので、その辺正確に教えていただければと思います。",
+    "text_length": 264,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        154
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-070",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "水産指導主幹（長瀬桂一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、ヒトデの生息密度についてでございますけれども、補助事業の目標値ということにつきましては、海域によっては違いがあるんですけれども、根室沖ホタテ貝漁場の場合におきましては、種苗放流前のヒトデの生息密度が１平米当たり０．２個体以下ということを基準にしております。この基準値以下になるまで漁場を整備してから、種苗放流を実施しているところでございます。\n　本年、事業取り下げに至った際のヒトデの密度につきましては、まず昨年２月の調査におきまして、１平米当たり０．３９個体という生息密度でございました。この密度をもとに、事業計画を策定し、道の方にも提出しております。その後、１１月の調査で１平米当たり０．１７個体という規準値以下にまで減少しているということが確認されたことから、事業を取り下げたということでございます。",
+    "text_length": 356,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        156
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-071",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "わかりました。結果として、事業費が云々ということもあるのでしょうけれども、基本的にはヒトデが減っているという、そういったことの、調査結果を見れば減っているということになりますよね。これは月というか、この数年にわたっての推移というのは、多少のヒトデの上限というのはあると思うんですけれども、これふえる傾向にあるのか、あるいは減る傾向にあるのか、あるいは同等レベルの、今の個体数の０．３９程度のものになっていくのか。その辺は、どういう状況に対して、事業も執行されるということになりますので、今の状況というのは、推移としてはどういうような推移で見ていればよろしいのでしょうか。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        158
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-072",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "水産指導主幹（長瀬桂一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ヒトデの生息密度の推移でございますけれども、根室沖のホタテ貝漁場におきましては、把握されている数字があります。平成３０年の１２月では０．２４個体、令和元年の１１月に０．３８個体、そして、先ほど申し上げました令和２年２月には０．３９個体ということで、徐々にふえる傾向にはございました。\n　その後、令和２年１１月に調査したところ０．１７個体というように、増減を繰り返すような形になってございます。",
+    "text_length": 196,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        160
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-073",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "これヒトデが減るという、海水温の問題、あるいは今、私たちの漁場も大変赤潮の問題もありますけれども、そういったことが影響するということは、科学的見地というか、分析というものは、何かしら見地というのはおありなのでしょうか。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        162
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-074",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "水産指導主幹（長瀬桂一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "赤潮に対するヒトデへの影響につきましては、今のところ知見がございませんので、どういった影響を及ぼすかということは不明でございます。\n　ホタテにつきましても、赤潮の影響というものが、これも知見がありませんので、現在のところ不明でございます。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        164
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-075",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "わかりました。これはまた別な機会にまたお聞きをすることになろうと思いますけれども、いずれにしましても、減っていた状況の中で減額をしたということになりますので、改めて総論とすれば、減っている状況ですから、改めて予算をつけなくてもよかったかという、結果としてはそういうことになると思っています。それで確認しましたので、次に移りたいと思います。\n　最後になりますけれども、教育委員会の関係で、説明書の１５ページ、工事請負費９９８万円ということで、教職員住宅の改修工事ということで名目は上がっています。改めて、概要についてお聞きをしたいと思います。",
+    "text_length": 270,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        166
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-076",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "教育総務課長（藤澤進司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "教職員住宅環境整備事業９９８万５，０００円の増額につきましては、光洋町２丁目１５番地、東根室の駅前にあります平成１１年度建築の鉄筋コンクリート造の２階建て１棟４戸の教員住宅の改修に係る経費でございます。\n　改修の内訳でございますが、１棟４戸のうち１戸が内部結露により壁下の断熱材まで水を含んだ状態となったことから、１戸全体が使用不能となりました。このことから、この１戸につきまして、内部をすべて断熱材ごと床、内壁、天井などすべて取りかえる工事でございます。\n　また、再度の内部結露防止のために、各部屋の換気口の改修や熱交換式換気扇、いわゆるロスナイを取りつけいたします。\n　なお、同じ棟の３戸については、調査の結果、内部結露は発生しておりませんでしたが、予防措置として、こちらにつきましても各戸１個のロスナイ換気扇を新たに設置するものでございます。\n　以上でございます。",
+    "text_length": 385,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        168
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-077",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "私、金額を見た時に驚いたんですが、最初９９８万円というから、１，０００万円ですよね。これ１，０００万円の住宅改修となれば、相当な中身を直さないとこれぐらいの金額にならないので、改めてお尋ねをしているわけですけれども、基本的にはこれＲＣでしたか。ＲＣですよね。要するに、いわゆるコンクリで固めたものに対しての家だという、木造じゃないわけですから、だから、結露が発生するというのは、私も経験上理解する部分もあるんですが、基本的には４軒入っていて、そのうちの１軒が結露がするというのは、別に建築のそのものが悪いというんじゃないなくて、使い方の問題だったり、あるいは日当たりの問題も多少あるのかもしれませんし、今おっしゃられた換気の問題。要するに閉め切っておくと、ＲＣというのは結露するというのが当然あると、私も過去に習ったことがあるんですが、そういったこともいろいろあるので、そういった部分を総合してこういった原因になっているのかというのが。どういう分析をされているのかということをお尋ねしたいと思います。",
+    "text_length": 450,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        170
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-078",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "教育総務課長（藤澤進司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回改修する部屋の入居者の、たまたま共働きのご家庭の方が４月まで入っていまして、お子さんもいることから、夜洗濯して室内に干すというような環境で、夏場は土日窓を開けて換気する程度で、なかなかそういう世帯についてはいたし方ないなというような状況で、内部結露が発生してしまったというふうにとらえております。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        172
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-079",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。私なぜ確認したかというと、これ工事で問題になったら大変だということの認識に立って上です。そういった意味で、使い勝手の問題があるということであれば、当然それは市教委の方で使っている方に対して、こういった近い方はどうだということが進言できると思いますので、その辺あらあら整理しながら、使い勝手についてはぜひとも周知をしていただきたいということを申し上げたいと思います。\n　もう一点お聞きしたいのは、今、全体的に教職員住宅自体が、今、現行どの程度あって、足りている状態なのかどうかというのが、この辺確認だけさせていただきたいと思います。",
+    "text_length": 276,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        174
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-080",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "教育総務課長（藤澤進司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在、教職員約２００名、市内にいらっしゃいます。うちの管理している教員住宅は１３０戸ございますが、入居率で申しますと、入居しているのが８６戸、空き住宅が１５戸、さまざまな事情で使用不能な住宅が２９戸ありまして、民間のアパートに入っている先生もおりますし、今回ＰＦＩで建てているアパートに入った先生もおりますので、全体として見ると若干足りないかなという押さえでいます。",
+    "text_length": 183,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        176
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-081",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "確認だけさせていただきますが、いわゆる、今はこういった教員住宅が、今ＰＦＩの話も出ましたし、私たちも審議をした経過がありますけれども、いわゆる外出ししてＰＦＩをしていくということになれば、全体の１３０のうち使えないもの、要するに入居不能というものがあるために足りなくなるのか、あるいは１３０を用意しておけば、それは十分足りていくのかということが、少し目安としてわかりにくい部分もありますので。ということは、何を言いたいかといいますと、ＰＦＩの民間建設住宅が、これからふえていくという形になるのかどうかということなんです。\n　そういった意味も含めて、使用不可能な場合は壊していくのかということの当然考え方もあると思いますけれども、それらも総合的に、余り深くは今回お示しをしませんが、お聞きをしませんが、そういったあらあらの内容について確認をさせていただきたいと思います。",
+    "text_length": 384,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        178
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-082",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "教育総務課長（藤澤進司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まずＰＦＩの教員住宅の建設についてでございますが、今次の計画につきましては６棟２４戸の計画でございまして、今ちょうど５棟目、６棟目を建設中でございます。これをもちまして、今次の計画は終了ということでございます。以降のＰＦＩについては、現段階では計画がございません。\n　あと使用不能の教員住宅につきましては、財源が確保でき次第、順次取り壊していきたいと考えております。\n　以上でございます。",
+    "text_length": 194,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        180
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-083",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "次に、確認になると思いますけれども、全体として今、教職員が２００名の方々がおられるということですから、全体の１３０戸というものが、壊していくと同時に少なくなりますよね。それで足りていくのかどうかということの簡単なことなんですよ。\n　足りないとすれば、根室市内の教職員住宅以外の住宅に入っていただくのかという、そういったことになろうかと思うんですが、そういった計画の考え方でよろしいのかどうか。これをちょっとお聞きしたいと思います。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        182
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-084",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "教育総務課長（藤澤進司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の動きを考えると何とも言えないんですが、まず２００人のうち教員同士で結婚されていて、２人で１戸を使っている場合もありますし、市内に持ち家を持っている先生もいまして、その動向もありますことから、なかなか今後の推移を考えていく上では難しいところでございますが、とにかく次に、教員のアンケートの結果で次に欲しいという要望の多かった３ＬＤＫにつきましては、なかなかこのＰＦＩの方式でもできづらい規模の住宅でございますので、現有の住宅を適切に維持管理しながら、長期間使っていくという方向で考えております。\n　以上でございます。",
+    "text_length": 260,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        184
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-085",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（久保田陽君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "久保田 陽",
+    "member_faction": "会派紬",
+    "text": "ありがとうございます。最後になると思いますが、今までの教員住宅って、今までといったらどのぐらいの今までかというはあるんですけれども、相当古い時に、かまだってボイラーじゃなくて追いだき式のかまを使っていた時代がありますよね。シャワーをつけてもらいたいとかって、いろんな要望があったと記憶しています。今の時代に、ユニットバスだったり、それが入るのが普通になってくるという、そういった関係もあると思っていますが、そういう中で、今後教職員住宅そのものについての考え方として、今後しっかりとまとめていかなきゃならないんだろうと思っています。\n　それについては、児童数の関係もありますし、全体もありますから、その辺鋭意努力されて、計画にぜひとも反映していただきたいということを申し上げて終わりたいと思います。",
+    "text_length": 348,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        186
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-086",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "それでは、事項別明細書の８ページになりますね。一般管理費、旅費、外国旅費３１４万４，４００円減額になりますと。まず内容について、何を減額したかについてお知らせいただきたいと思います。",
+    "text_length": 91,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        189
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-087",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "北方領土対策部長（織田敏史君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "国際交流経費の減額ということでございます。令和３年度国際交流事務経費につきましては、シトカ市との姉妹都市交流をもう一度復活させようということで、ことしに関しては、高校生を連れてシトカの方に一度訪問して、今後の交流のあり方等含めて再キックオフといいますか、そういったところのきっかけとして一度訪問したいということで、その節を当初計上おりました。しかし、今般新型コロナウイルスの影響で、今年度の実施はかなり難しいということで、事業の実施を１年間延ばしたいということで見送ったものでございます。\n　以上です。",
+    "text_length": 251,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        191
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-088",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "去年に引き続きといいますか、令和２年度予算でも持っていた事業ですよね。残念ながら、コロナの関係で２年続けて実施できなかったことは、非常に残念なんですが、お話の中で見送って来年以降もというような話がちらっとありましたが、まずこういった事業をやられるに当たって、高校生の派遣をということですが、実質的に今年度も含めて、事業実施に当たっての準備というか、どういった取り組みをしようというか、そういったことを地元として作業は何かされてきましたか。その活動の内容について、確認させていただきたいと思います。",
+    "text_length": 248,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        193
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-089",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "北方領土対策部長（織田敏史君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "シトカ市との交流につきましては、特段直接シトカと我々行政側とのやりとりは具体的には行われておりません。ただ、シトカと以前から、市との間にはいっていただいております方を通じて、その方とお会いして相談をしながら、今後のこうしていきましょう、ああしていきましょうという協議を経て、去年とことし、事業化に踏み切ったところでございまして、その方ともやりとりをしながら、引き続き調整してまいりたいなと思っています。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        195
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-090",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "実際やるとなると、お話にあったように、高校生の派遣というような形になれば、学校との、根室高校との連携とか必要になりますので、やはり市としてこの事業をなぜ復活させるんだとか、やるんだというところの学校のご理解を先に得なければ、なかなかご協力してもらうところも難しいんじゃないかなと思うんですよね。\n　過去は、本当に正直に言いますと、私、１９９９年にうちのジャズバンドで訪問しています。その時も、今お話ししていた方にガイドしてもらいましたし、姉妹都市提携４０周年の時に勝手に訪問団を組みまして、６人で訪問しましたけれども、その時もその方が全部ガイドをやってくれて、大変そういった方がいなければなかなか姉妹都市交流も現在は厳しいと思っていますので、ぜひその方とのコンタクト、パイプをしっかり持っていただいて、まずシトカとのやり方、進め方も検討もしていただきたいですけれども、何よりもこちらの機運というか、思いというか、そっちの方がもっと大事だと思います。\n　行ってきた経験のある者として、非常に治安のいい、すばらしい町であると。人口は１万人を割っていますけれども、非常に今、観光業でも漁業プラス観光で頑張っている町ですから、地域にとっても魅力ある、子供たちにとってもそういった経験をすることは非常に重要ではないかと思いますので、大変な重要な事業だという位置づけてご検討はしてもらいたいなと思いますが、先ほども言ったように、とにかくその思いは、訪問しなければ目的は達成できませんので、先ほど確認したかったのは、前段の取り組みとして、地域、地元として、コーディネートしてくれる方とではなくて、地域の中で子供たち、あるいは学校の先生とのコンセンサスを得ること、そういった作業もしっかりやっていただいて、魅力的な事業に組み立てていくということが非常に大事だと思いますので、ぜひそういった取り組みをこの後していただいて、次年度しっかりまた予算措置を検討いただいて、事業の交流の復活について全力で取り組んでいただければなと思います。お考えがあればお聞きして。",
+    "text_length": 870,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        197
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-091",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "北方領土対策部長（織田敏史君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "シトカとの姉妹都市交流につきましては、先ほどもご説明させていただきましたが、当面といいますか、去年、ことしと計画したのが、高校生をぜひ連れて行きたいということで事業実施を計画したところでございます。姉妹都市交流、シトカとの交流、セベロもそうなんですけれども、もともとは経済的な交流からスタートしていると我々も認識しておりまして、経済交流自体が、今、ストップしているために、国際姉妹都市の交流がずっと停滞してきたものと考えております。\n　先ほど本田委員からもご紹介ありましたけれども、数年前、本田委員が民間の有志を引き連れてシトカに訪問してきたと。それはご報告いただいておりますし、その際にもいろんなお話をいただきました。そういったものも含めて、やっぱり今後は経済的な交流はまず厳しいだろうというこで、であれば国際交流という観点から、高校生の交流、一度シトカとも何年か留学生交換、交換留学生を行っていたという歴史もありますので、高校の方に相談をしまして、そういったご同意も、ご同意というか了解もいただきまして、今回、では数名であれば一度試しに行って経験をさせて、それを将来どうしていきましょうということをこれからじっくり考えていきましょうということで、まず根室高校とも、校長先生含めて了解をいただいた上で、今回、去年、ことしと予算化をしたという実態もございますので、その辺しっかりと引き続き検討しながら、高校とも認識を図りながら、引き続き調査研究していきたいと思っています。\n　以上です。",
+    "text_length": 643,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        199
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-092",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "うちもこれ大事な事業だということで、かなり何度も提案させていただいて、実現するということで本当に楽しみにしていましたけれども、コロナのおかげでこうやって遅れてしまったことは残念でなりませんが、しっかり取り組んでいただきたいなと思います。\n　お話あったように、私、１９９９年に行った時に、ちょうど１０月の１５日ぐらいがアラスカデーといいまして、アラスカそのものはロシアが売却しましたよね。アメリカが買っているんですけれども、そのお祝い、いわゆる式典が行われているのがシトカなんですね。ロシアの国旗がおろされてアメリカの国旗が揚がるという、そういうイベントがあって、それが１０月の中旬にありまして、その当時、確かに根室高校の生徒が何人か行っていました。そして、シトカ高校に行っていましたので、何をやったかというと、そこで、今だったらできますけれども、テレビ会議システムをつないで根室高校の子供たちと手を振って頑張ってねと、そういうやりとりをさせたりとか、とにかく子供たちにとってはそういった経験が非常に大事だと思いますし、昔は北海道でもオーロラスクールというがあって、小学生とか中学生がアラスカに行っているんですね。たまたま私の息子もそれに参加させてもらったり、今でもその時の経験を思い出して、いろんな話になります。\n　ですから、子供たちにとって、そういう貴重な経験をさせるというのは、非常に大事な事業の一つであると思いますので、先ほどお話にあったような内容でしっかり根室高校と連携していただいて事業を、まず調査ですね、しっかりしていただいて、事業を具体化するようなことを取り組んでいただきたいなと思います。よろしくお願いいたします。\n　次に、ページ数では１２ページになりますが、まず予防費の方のがん検診システム改修事業委託料、事業の内容についてご説明いただきたいと思います。",
+    "text_length": 786,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        201
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-093",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "がん検診システム改修業務委託、こちらの内容について説明させていただきます。\n　本年５月に、デジタル社会の形成を図るための関係法律の整備に関する法律が一部施行されたことに伴い、健康増進法施行規則の一部を改正する省令が公布施行されたことから、同施行規則に基づきまして、ほかの市町村と情報連携の上、住民の検診結果等の情報をより精緻に把握し、適切な保健指導や検診の受診勧奨等につなげるほか、将来的にマイナポータルを介した個人の保健医療情報の閲覧を目指す基盤整備として、既存のがん検診システムを改修するものでございます。",
+    "text_length": 255,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        203
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-094",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "そうすると、事業自体は国が進めているデジタルガバメントの一環になるんだなととらえていいかなと思います。そういった中で、いつもこういったシステム改修のところでは思うところなんですが、データ収集とかそういったことを新たに始める場合については、当然個人情報の保護条例の関係とかあるんですが、こういう今作業を進めるに当たって、今も収集するデータのお話についても一部お話があったんですけれども、そういう庁内的なルールにのっとった形でこれは作業を今後進められることになるんでしょうか。確認です。",
+    "text_length": 241,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        205
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-095",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "庁内的な改修に伴う個人情報の取り扱いというところでございますけれども、今回改修するがん検診システムにつきましては、昨年公開されました住民情報総合システムにおけます既存業務の一つとして、従来から運用しているものでございます。自治体クラウド等を基盤とした住民情報総合システムの公開に当たりましては、入れかえ当時に、根室市個人情報保護条例に基づきまして個人情報保護審議会にお諮りいただいていることを踏まえますと、改めて諮問の必要はないものと理解しておりますが、いずれにいたしましても、市民の検診情報という機微な情報を取り扱いますことから、今後におきましても、これまで同様最新の注意を払いながらシステムの運用に努めてまいりたいと考えております。",
+    "text_length": 318,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        207
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-096",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "大事なところですので、新たに既存のがんシステムの改修だということで、管理項目はふえないのであれば今言われたご答弁の内容になると思いますが、システム改修の中で、管理する項目等がふえていくようであれれば、当然新たなチェックになる、新たな情報を保管することになりますので、確認が必要になると思いますし、あと保管場所の問題も、最近はいろんなものがクラウド化されて、自分たちの管理じゃなくて外に出ていくようになっていってますので、そういった点についても配慮されながら、しっかりチェックをしていただきたいなと思いますので、その確認をしながら、情報管理の徹底に努めていただきたいということをお願いしておきたいと思います。\n　それと、今回システム改修によるメリットといいますか、期待される効果という点では、どういったものが考えられますでしょうかね。特に、行政にとっての効果も当然ありますが、いわゆるマイナンバーの活用も含めてというふうになると、市民側の、利用者としての市民にとっても効果が考えられると思いますが、今回の改修にはどういった効果が想定されているか、わかる範囲で結構ですのでご答弁いただければと思います。",
+    "text_length": 499,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        209
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-097",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市民にとってのメリットというところですけれども、今回の改修の内容につきましては、２つの改修がございますが、市民のメリットにつながるものといたしましては、がん検診システムの副本登録改修業務委託というのがございます。こちらは実施期間から提供のあった検診結果等を、情報をマイナンバー制度を活用の上、マイナポータルでの閲覧や市町村間での情報連携を開始するため、情報提供ネットワークの橋渡し役を担う中間サーバーという登録をする改修をいたしますので、市民にとりましては、そこを通じて自分の情報を閲覧等ができるというところが市民のメリットになろうかと考えております。",
+    "text_length": 276,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        211
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-098",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "恐らくこの事業も、マイナンバーカードといいますか、マイナンバー制度ですね。マイナンバーポータルの活用も含めて、カードの充実を求めるような事業の一環じゃないかなとは感じるんですが、現実にまだまだ全国的にも普及率は低いですし、市内が直近でどうなっているかは調べておりませんが、春の段階ではまだ２０％にも満たないような利用状態でした。\n　ですから、こういったものが改修されて活用していくに当たっては、やっぱり市民のカードの利用についても利用促進が必要になりますので、市民課の皆さんと連携しながら、このカードの普及についてもしっかりやっていただきたいと思いますし、そういったことがなければ、利用できると言っても情報を持っていなければ利用はどうなのかなと。多分スマホ等を使ったアプリもこれから出てくるとは思いますけれども、そういった普及なんかについてもしっかりやっていただきたいなと思います。この点については、議論してもどうにもなりませんので、そこをしっかりやっていただきたいと。\n　それと、当然こういった部分でいけば、保険証に関してもこれからマイナンバーカードが利用できる制度になってきますし、自動車の免許証もという話もございますので、そういった一連の流れの中で、行政としてしっかり、まず普及活動をやっていただいて、多くの皆様が、市民が、こういったものを利用することによって得られる権利といいますか、メリットを最大限発揮できるような取り組みをしていただきたいなと思います。内容については理解しましたので、これはこの程度にしておきます。\n　それで、先ほど久保田委員が議論していただいた感染症防止対策のところなんですが、大体流れは全部お話を聞いて理解はできたんですが、要するにこれまでやっていた６カ月間というのは、感染症防止対策として月に１回ＰＣＲ検査をまずやりましょうと、チェックをしようというのが今まででしたよね。これからやる作業、１０月以降はそうではなくて、あくまでも従事している方たちが発熱等体調不良が生じた場合に、抗原検査をやってその方の状態を確認して、そういった方をまず自宅に戻して感染拡大をさせないという、スタイルが変わったと思うんですけれども、認識としてはそういう仕組みを完全に変えたものをやるというとらえでよろしいですか。",
+    "text_length": 964,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        213
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-099",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "保健課長（高澤富春君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま本田委員からのご質問の部分でございますが、委員お見込みのとおり、これまでは定期的にひと月に１度というところの検査でしたけれども、コロナワクチンの接種も順調に進んでいるというところもございますので、あとはアンケート調査を踏まえまして、この抗原検査キットの配付といったところに切りかえたところでございます。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        215
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-100",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "確かにワクチン接種も進みましたので、いわゆる重症化する方を抑えられることは多分できるだろうなと思います。ただ、ワクチンを接種したからといって、その方たちが感染しないかといったらそうではないので、そういった面では、まだまだ感染症対策をしっかりしていかないといけない。\n　市長のご答弁にもありましたが、どこかで線を引かなければならないという中で、こういった医療従事者であったり、介護、保健、福祉関係の方、そして子供たちと接する方の対策を今回やるということですが、これもこの先の状況次第だと思いますけれども、やっぱり感染拡大を抑えるため、あるいは市中経済を活性化させていくためには、この今とったロジックをさらに深堀りしていく必要性があるように感じます。というのは、今、１０月からの補正予算で、この先まずここから行きましょうということで上がってきていますので、この点については、なるほどなという理解をしていますけれども、まだまだ経済を回すというところまで目を向けると、いろんな対策が必要になろうかと思うんですけれども、一般質問で足立議員が質疑していた点もありますので、重複するかもしれませんけれども、今回のこういった１０月補正の考え方を踏まえつつ、感染症防止対策、感染拡大防止対策としての市としての取り組みといいますか、それについて、ここを踏まえて現時点でどのような考えをもってこの先取り組まれようとしているか、お考えがあればお聞きしておきたいと思います。",
+    "text_length": 624,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        217
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-101",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "市民福祉部長（齋藤博士君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今の本田委員のご質問でございますが、今回の取り組みにつきましては、先ほど本田委員からありましたとおり、抗原検査キットの配付ということで、症状があらわれた方々に対しては、すぐ取り組めるような取り組みとして抗原検査キットということで、ＰＣＲ検査につきましては、定期的に実施できますけれども、今回につきましては、症状があらわれた方にはすぐそういう部分、検査キットで症状を確認させていただいて、保健機関、医療機関につなげていくという部分でございます。\n　また、今回児童生徒の部分につきましては、１２歳以下の方々につきましては、ワクチン接種がされていないと、できないというような状況でございますので、そういうことを踏まえまして、学校の関係者の方々の対象者を拡大しております。ワクチンも２回接種しても、今、報道でもありますようにブレークスルー感染という部分がございます。これ絶対的ではございませんので、そういう部分では、すぐわかるような体制を敷きたいという部分で今回キットの配付ということになりましたし、あと子供たちのワクチンがされていないという部分で、ひとたび感染拡大がしてきたとき、クラスターが発生した時には、すぐに多くの方々の検査も必要になってくるということになりますので、そういう分は予備の部分として５，０００個今回ご用意させていただきますけれども、そういう形で早期にそういう方々を発見させていただいて、医療機関につなげていく。そして、学校等の閉鎖等々もすぐにできるような形にしていきたいと考えております。\n　それで今後の考え方でございますけれども、ワクチンが今後３回目というようなこともございますので、そういう推移も見きわめながらいきたいと思いますけれども、最近では障害者施設でクラスターが発生しているだとかという部分もございますので、今後の感染状況を見据えながら、拡大も含めて検討していきたいと考えてございます。\n　以上です。",
+    "text_length": 813,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        219
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-102",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "本当に経験のないことをずっとやり続けているわけですから、何が正解ということはないと思います。ただ、やっぱり地域の中の感染症拡大防止ということはしっかりやらないといけませんので、できることを一つ一つ積み上げるしかないと思うんですね。ここから経済がまた動き出して、交通トラベルみたいなのが始まってというと、またいろんな人も入ってくることになりますから、そうなった場合に、回す部分と守る部分の両立を常に考えないといけないことになりますので、非常にお金のかかることではあるにしても、ルールづくりというのは非常に大事だと思います。\n　今回も業務の流れとしては、検査キットを準備します。体調悪化した方については調査します。その後どうするこうするというルールがあると思いますので、そういった今やっている範疇ではこれでいいのかもしれませんけれども、この後、両輪に当たる経済を回すという部分を考えたときの対策というのは、もう少ししっかりとしたフローを地域でつくっていかないといけないと思いますので、こういった抗原検査キットの活用、そして、その次にＰＣＲ検査をどうするんだとか、あるいは隔離をどうするんだとかという、非常事態を想定した中では必要になると思います。\n　また、多くの方がワクチン接種終わっていますが、実際打てない方もいるわけですから、そういった方が差別を受けないような、地域の中で一緒に行動、生活活動ができるようなことについて、やっぱりフォローする仕組みというのが、同時にこれから検討する必要性がある思いますので、ぜひそういったこともあわせて検討していただいて、まず１０月はここからスタートすることは理解しましたので、二の矢、三の矢で、そういったことを含めた対応、対策についてもご検討していただきたいなと思います。よろしくお願いいたします。\n　それでは、次にまいります。先に文化会館の方のお話を。\n　先ほど鈴木委員がやりとりしまして、中身はなるほどなと思って聞いていました。理解したんですが、少し整備するＰＣですとかカメラを入れるという話でしたので、その台数と工事内容、少し詳しく説明していただければと思います。",
+    "text_length": 902,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        221
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-103",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "総合文化会館館長（餅崎幸寛君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま本田委員のご質問で、購入する機器等ということですので、購入する機器につきましては、配信用のパソコンを１台、それから撮影用のカメラを３台、あとスイッチャー１台というようなところで、まず撮影するための機器を整備します。\n　そのほかに、大小ホール、多目的ホールにＬＡＮの使える配線コンセントといいますか、そういったところをつなぐようにするシステムを工事します。\n　以上です。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        223
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-104",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "そうすると、配信用ですから、外に出すためにですよね。そのパソコンが１台とカメラを３台用意して、あとネットワーク環境を整備するから必要なところに持っていって使うということですね。ということは、物がワンセットの整備ですね。わかりました。\n　それでネットワークのお話も出たんですけれども、これからやるのはやっぱり動画配信になりますよね。そうすると、今、予算の中でも通信運搬費が余り、４万円ちょっとかなこうやって出ているのは。２万１，０００円ですか。であれば、新たに専用の回線を引くわけではないように見えるんですけれども、今回のこの事業の中で、外に情報配信するということをメインで考えるのであれば、当然通信系が一番大事になると思うんですが、そこの予算措置についてはどうなっていますでしょうか。",
+    "text_length": 342,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        225
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-105",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "総合文化会館館長（餅崎幸寛君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまご質問の通信運搬費等でございますが、まずその通信をするための光回線の工事といいますか、ＮＴＴ等での予算を今回計上、２万１，０００円させていただいております。\n　ランニングコストの方は、市に、いわゆる電話料に相当する部分につきましては、今年度につきましては、計上の通信運搬費の中で何とかやりくりできるのではないかということで、今回のこの中には盛り込んでおりません。\n　以上です。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        227
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-106",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。そうすると、専用回線、専用というか、これ用の回線を引くということですね。あとはそこのランニングコストに関しては、既定の予算の中ということですが、そこはそこでわかりましたので。\n　こういった新たな取り組み、非常に大事だと思いますし、先ほども少しお話があったと思いますけれども、これだけコロナで動きが鈍くなれば、こういった配信機能を使った情報交換というのは、文化の活動においてもかなり有効に活用できるのではないかなと思います。\n　また、今もう教育委員会が一生懸命情報発信をやられていますので、そういった中に、また新しい切り口が１つ加わるんだなと僕は感じておりますので、文化会館でやられる各事業に対して、それを外に配信するというのも一つでしょうし、それを活用して、市民の皆さんがこういった機器をもしも使えるのであれば、市民に使い方などをどんどん伝達してもらって、いわゆるユーチューバ－になってくれということではありませんけれども、しっかりと地域の情報を発信できるような、地域の文化ですね、芸術文化に関して発信できるような仕組みづくりについてもあわせてご検討していただければなと思いますので、これはこの先の活用に期待をしたいと思いますので。\n　あと、ネットワークさえ、線だけ引けていれば、どこの部屋でも使えると思いますので、補助対象外でも、ほか、例えば多目的ホールもやれるようにしようとか、そういうことがあればいろいろ考えて、この後ご検討していただきたいと思いますし、あとは、こういうことを始めるのであれば、この次のステップは建物全体のネットワークの充実、いわゆるＷｉ－Ｆｉ環境の充実というのも大きな課題になってくると思いますので、ぜひそれらも検討していただいて、利用される市民の皆様にとって有効な情報発信機能になるようなこともご検討していただければ思います。これもお願いして終わりたいと思います。\n　あと最後になりますが、順番が逆になりましてすみません。１４ページで商工振興、これ鈴木委員が質疑したところになりますが、よろしいですかね。\n　中身については、先ほど全部説明をいただいて、結果、今回予算の執行率６２％ということでお話しになりましたよね。それで何となく、緊急度をもってやられたことも理解します。ただ、非常に短い期間だったんじゃないかなと考えます。それと、いわゆる３０％と１０％引き上げたこと、前年度に比べて。それで対象にならなかった方もあるんじゃないかなと思います。一応事業終了に伴う実績ということでご報告いただいているので、評価といいますか、今回行ったことで基幹的な部分にもうちょっと広げていれば違う効果もあったのか、その点。あるいは、３０％と２０％、１０％違うだけでも影響があるような気もするんですけれども、そういった面、どのような評価をされているのかというところをお聞きしておきたいと思います。",
+    "text_length": 1209,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        229
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-107",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "商工労働観光課長（得能浩志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "中小企業等応援臨時助成金の結果に対する評価ということでございます。\n　中小企業等応援臨時助成金につきましては、令和２年度においても対象月を令和２年の２月から５月の４カ月で、売り上げの減少要件につきましては２０％以上ということで実施した経過がございます。\n　令和２年度の実績では、法人事業者が２７９件、個人事業者が８８７件の計１，１６６件でありまして、個人事業者の占める割合は約７６％でありました。\n　一方で、令和３年度につきましては、先ほど申し上げましたとおり、対象月を令和３年の５月及び６月、この２カ月間としたところでありまして、売り上げの減少要件につきましては３０％以上ということでやらせていただいたところでございます。\n　この結果、法人事業者が１５１件、個人事業者が５９３件の計７４４件となりまして、個人事業者の占める割合は約８０％となりまして、その割合が高まったところであります。\n　市といたしましては、コロナの影響が長期化する中において、法人と比較すると、資本力やマンパワーが不足する個人事業者の方が、コロナによる影響を受けやすい、あるいは対応しにくい、そういう面もあったのではないかと考えております。\n　また、業種的な傾向では、全体の申請者における製造業や建設業の構成比率が低下する一方で、飲食店の構成比率が高まっており、本年５月から６月にかけての緊急事態宣言における北海道からの休業要請が大きく影響したものととらえております。\n　以上でございます。",
+    "text_length": 631,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        231
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-108",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "詳しく状況を説明していただきました。やはりここに来て、個人事業主であったり、飲食店等々に相当影響があったということも、これで見えてきたということですよね。\n　だから、この期間設定等についても、緊急度をもってほぼ１カ月ちょっと事業なんですね、事業期間も。でもその間でもこれだけの申請があったということをやっぱり重くとらえていく必要性があるし、去年やられた４カ月間というのも、それはそれでまた大事な作業だったと思うんですね。それで、今回みたいに定額で１０万円というところがどうだったのかなというのも、若干疑問が残るところがあるんですが、これは制度設計ですから、どこかに線を引くということで、こういうやり方について否定するものでもありませんし、この結果を踏まえて、やっぱり先ほどアンケートみたいなこともやって、影響額が５０％以上あった人が６割以上もまだいたというお話がございましたので、そういったことを踏まえて、今やっているプレミアムつき商品券、こういった効果も踏まえながら、痛手を受けている各事業者に対するさらなる支援策についても、ぜひ検討していただきたいなと。\n　これについては、やはり分析作業が伴いますので、やれやれという話ではないと思うんですね。ですから、事情、実態をチェックする作業があって、ピンポイントで必要なところには今回のようにスピード感を持った対策、政策というのは重要だと思っておりますので、ぜひ今の厳しい状況を確認していただいた上で、国、道のさまざまな支援策に加えて、根室市としてできる新たな支援策についても、ぜひご検討していただきたいなと思います。\n　この点について、お考えがあればお聞きして終わりたいと思います。",
+    "text_length": 715,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        233
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-109",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "商工労働観光課長（得能浩志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "コロナ禍における中小企業の支援という点でのご質問だと思います。\n　根室市といたしましては、先ほど鈴木委員のご答弁に申し上げましたとおり、消費喚起の対策としてのプレミアム商品券の事業、あるいは新しい生活様式の支援金というのをやらせていただいております。\n　また、この経済活動回復への支援といたしまして、緊急事態宣言が明けてすぐ、この１０月から、市内の宿泊の観光客の誘客と、市内消費喚起を促すための「ｗｅｌｃｏｍｅ　ｔｏ　ねむろクーポン券」を発行します観光客誘客促進支援事業、さらには市内宿泊の団体客を増加させるための旅行商品造成促進支援事業を開始いたしまして、緊急事態宣言の影響が特に大きかった観光業全般、これらの事業喚起を図っているところでありまして、今回の緊急事態宣言明けの経済活動回復に向けた支援につきまして、総合的に講じてまいる考えであります。",
+    "text_length": 375,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        235
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-110",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "大変厳しい中で、さまざまな取り組みをされているわけですから、一つ一つに効果を期待しながら、やはりそのチェックをしていただいて、もっともっと効果が上げられる部分がないのかとか、苦しい人たちに寄り添うことができないのかとか、そういった目線も必要だと思います。そういったことを我々もしっかり調べて、業者に対してお伝えすることも大事な役割だと思っていますので、厳しいこの状況下の中で、地域が一日も早く元気を取り戻すための努力というのは、一緒にやらないといけないと思っておりますので、しっかりとまた提案型で考えを打ち出していただきたいと思います。この後も全力で取り組んでいただきたいなということをお願いして終わりたいと思います。",
+    "text_length": 309,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        237
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-111",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "それでは、説明書の２０ページになりますね。医業費用のところからお伺いしたいと思います。\n　まず給与費ということで、事務職員給が１７６万６，０００円増になっていますが、これは今回の補正予算自体が、全体がコロナ感染症対策になりますので、その仕事に従事される方の職員給になるのかなと考えますけれども、この増要因についてまずお伺いしたいと思います。",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        242
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-112",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今お尋ねの関係につきましては、新型コロナウイルス感染症の院内対策にかかわりまして、現在１階のエレベーター前で２名の職員を雇用しまして、感染予防の院内感染対策を行っているところでありまして、これら事務の職員２名の給与というふうになっております。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        244
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-113",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "そうすると、今言ったような院内感染症対策で職員が配置されて、会計年度任用職員ということでよろしいですね。この配置が２名分あって、予算措置されたということですね。わかりました。\n　それと、同じページなんですけれども、経費のところでも、いわゆる感染症廃棄物の処理委託料がかなり大きくふえていますが、この金額というのはコロナ禍に伴う感染症対策のさまざまなものの処理にこれだけ費用がかかるということになるんだと思うんですが、積算の考え方についてお伺いしておきたいと思います。",
+    "text_length": 233,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        246
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-114",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "感染性廃棄物処理委託料１，２４４万７，０００円増ということで、こちらにつきましては、この補助事業につきましては、９月までということで、国の方で補助事業の事業実施の中身が出ておりまして、４月から７月までの実績、それから、当初でも感染性廃棄物は通常でも出ますので、そういった経費等の差額、それから、８月、９月につきましては、この段階では４月から７月までの実績の平均をとったといったところで積算をさせていただいてございます。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        248
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-115",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "補正の内容からすると、完全にコロナ対策に係る分だけを出したんだなというふうにとらえていたものですから、そうすると、未来のことではなくて、これまでの実績を踏まえて９月末までにかかる諸経費について今回補正をされたということでとらえてよろしいですか。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        250
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-116",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当該補助事業は、先ほど申し上げましたように、国の方からこの緊急事態宣言、そういったものが期間が延長されるたびに、この補助事業の期間も延長されるといったようなことがございまして、これまでも国に対しては何度も申請を、それに合わせて、期間が延びる分、延びる分ということで申請をさせていただいております。\n　今回につきましては、９月末、９月までということで、この緊急事態宣言も９月末で終わりましたので、ここの期間までといったところで、その間は補助で対処しますよということになっておりますので、その経費が今回計上した予算ということになっております。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        252
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-117",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "ちなみに、その廃棄物の処理になるんですけれども、実際に担当される業者さんというのは、地元にあるんですか。それともどこか地方の業者さんが扱うことになるのでしょうか。",
+    "text_length": 81,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        254
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-118",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "根室の業者でございます。",
+    "text_length": 12,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        256
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-119",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。そうすると、ものによっては地元で扱えないものがあるというふうに聞いていたんですけれども、今回のコロナに関するようなものについては、地元で廃棄処理ができるというふうに、そういうふうにとらえてよろしいでしょうかね。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        258
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-120",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "集荷というか、そういったものについては根室の業者が行っておりますけれども、その廃棄物については、釧路地方の方に送っているというような状況でございます。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        260
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-121",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。そうすると、流れとしては、ちゃんと処理する業者というか、場所は地方ですけれども、釧路ですけれども、処理は地元の業者が窓口になれるということで、地元が対応しているととらえてよろしいですね。わかりました。\n　それでは、今回一番聞きたかったのは、建設改良費のところで医療機器の購入がありますけれども、今回の補正はあくまでも、先ほど来言っていますが新型コロナウイルス感染症対策で、国、北海道等の助成があって行っている事業になると思いますので、今回の１，５４９万９，０００円の内容について、どのような機器の整備を予算措置されたのかお聞きしておきたいと思います。",
+    "text_length": 282,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        262
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-122",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当該医療機器、医療機械器具の整備１，５４９万９，０００円につきましては、国の新型コロナウイルス感染症対策に伴う包括緊急支援事業の中の、それぞれ感染症医療提供体制整備事業ですとか、それから感染症検査機関等設備整備事業補助事業、そういったもの、それから感染疑い患者受け入れ医療機関設備整備事業とそれぞれメニューがございまして、それの中で必要な医療機器についての購入も可能というような形になっております。\n　中身としましては、簡易陰圧ユニット、それから回診用のエックス線の撮影装置、それからＰＣＲのリアルタイムの検査装置といったものを計上しておりまして１，５４９万９，０００円というふうになっております。",
+    "text_length": 299,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        264
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-123",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "導入されるのは、補助がついて感染症対策だということも理解していますが、具体的に今回それぞれ、今、３つの機械を導入されるということですけれども、どんな効果とか、入れることでどういったメリットが出てくるのかなと。そういった目線についても、少し説明していただければなと思います。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        266
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-124",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今お話ししました簡易陰圧ユニットにつきましては、コロナ専用の感染症病棟のベット、要するに感染の汚染区域ですね、そういったところと、それからクリーンな部分、グリーンのゾーンとをきっちり分ける、その中で感染症の院内感染の拡大、そういったものも防いで安全を担保すると、そういったような観点から、当該陰圧ユニットを設置していると、整備するといったようなことであります。\n　また、回診用のエックス線の撮影装置、こちらにつきましては、こういった機器を整備することで、新型コロナウイルス感染症患者の入院、医療を提供するに当たりまして、回診用のエックス線撮影装置を購入する、そういったことで感染症のゾーニング内での迅速かつ適切な医療提供が図られるものと、そういった観点からの整備。\n　それから、リアルタイムのＰＣＲ装置につきましては、当該機器を整備することによりまして、新型コロナウイルス感染症の検査体制の整備を整えて、迅速な検査が、現在でもございますけれども、リアルタイムで行える機器を整備することによりまして、迅速な検査体制をとることが可能となる。そういったことで、充実整備が図られるといった観点から整備をするものであります。",
+    "text_length": 507,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        268
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-125",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "わかりました。それで、今、基本的には病院の中の感染症対策をしっかりするといった、いわゆるレッドゾーンですよね、そこで使われる部分の陰圧ユニットですとか、あとはそういった部分に置くいわゆるエックス線装置ですね。そういうものが整備できるということ。\n　一番ちょっと興味があるのは、リアルタイム、迅速なＰＣＲ検査ができるものが入るということで、これまでも病院としてＰＣＲ検査をされていると思うんですけれども、今までやっていたことに比べて、今回の機器を導入することでどのくらい、何が変わってくるのか。どういったプラス効果があるのかということをもう少し詳しく説明していただきたいと思います。",
+    "text_length": 290,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        270
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-126",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当該リアルタイムＰＣＲ検査装置との、既存、今あるＰＣＲ検査装置とのメリット、比較といったところでございますけれども、現在院内にありますＰＣＲ検査装置では、現在検査に大体３時間程度かかるといったようなところがございます。ただ、検査件数とすれば９０件超できますので、件数は多くできる。ただ、検査に非常に時間がかかると。そういったところがあります。\n　今回、このリアルタイムＰＣＲ検査装置につきましては、所要時間が４０分から１時間程度と非常に短い間隔で検査の結果が出る。かつ、今ある機械は検査している間は一切追加の検査はできないんですけれども、リアルタイムＰＣＲ検査装置につきましては、例えば検体を途中で追加していけて、随時に、一遍に入れたのを、例えば何件、全部ということではなくて、順次追加で、例えば今とって、別な検体が３０分後に来てもそれを入れてというような検査もできると。そういったような緊急時の対応の向上が見込まれる、追加検査も見込まれる。\n　ただ、これにつきましては、検査件数がリアルタイムのＰＣＲ検査装置については４件の検査といったような、そういったところで、数は非常に少ないんですけれども、迅速かつ追加検査が可能になるといったところで大きなメリットがあると、そういうふうに考えております。",
+    "text_length": 548,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        272
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-127",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "そうすると、従前あったシステムは１回に９０件ぐらいはできるけれども、３時間かかるし、一度に検査すると、その間はほかのものはできないシステムだったと。それが、今回入れる機器は、１回には４件しかできないけれども、時間的にも非常に短時間でできて、追加でもう一人の方が来たら、そこにあいていれば入れることができると。そういったスピード感を上げた検査もできる効果があるということですね。わかりました。\n　そうすると、やはり市内唯一のいわゆる医療機関、検査機関になるのではないかと思いますけれども、きょう午前中も、コロナ禍の感染症対策において、検査の重要性について少しお話をして、抗原検査をしっかりまずやっていきましょうと。その後の流れもしっかりつくっていただきたいという話をしながら議論したんですが、病院にこういった機器が入るということは、そこへの対応がかなり効果的な対応ができるんじゃないかなと思います。というのは、もともとあった機械がなくなるわけじゃないですよね。ある意味２台体制になって、急ぐものへの対応も可能になるということですから、そういったところをしっかり、きょうこうやってお聞きしてわかったことですけれども、ＰＲも入れながら、検査体制の充実だということも、これは恐らく感染症対策本部なんかの中でもご報告していただいて、これからのＰＣＲ検査のルールですね、こういった形のものをこの新しい機械でやるんだとか、そうじゃないものについては従来型でやるとか、そういった線引きについても整備されながら、迅速な体制整備に努めていただきたいなと。そういったことが可能というふうに考えてよろしいですか。",
+    "text_length": 694,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        274
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-128",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、委員がおっしゃった、例えば院内の検査体制の充実、強化といったところで、当該リアルタイムＰＣＲ検査装置が入った場合には、院内におきましても、言うなれば夜間も検査が可能となる。そういったようなメリットがございますので、そういった点なども含めて、より迅速な、かつ感染症対策に有効な対応をとっていきたいと、このように考えております。",
+    "text_length": 164,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        276
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-129",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "夜間も対応できることになれば、また職員の負担もふえるんですけれども、ただ、こういう非常事態ですのでね、そこにしっかり迅速な対応ができる環境整備というのは非常に重要ですし、今回北海道の補助をいただいて、こういった環境が整えられたということは、心強いといいますか、力強いことになろうかと思いますので、ぜひ周知も徹底していただいて、その対応、対策に努めていただきたいなと思います。\n　あと、ちょっと全体的なことですが、今回のこの建設改良費のところを見ても、今回は国の補助をいただいていますが、全体として今年度も１億８，０００万円ぐらいの医療機器整備になると思うんですね。改革プランの資料なんかもきのういただいて、きょう正式版をいただきましたけれども、やっぱり昨年あたりから、医療機器の更新についてかなり金額がふえてきているように感じます。今年度、これはもう当初予算でつけていることですから、議論ということにはならないかもしれませんけれども、こういうふうにふえてきている実態をしっかり整理していただきたいですし、ちょっと高額、ふえてきている要因について、新しい病院になってからの経緯等もあると思うんですけれども、この１億８，０００万円ぐらいになるという部分についての見解と今後の一定程度の見通しについて、お話をお伺いしておきたいなと思います。",
+    "text_length": 567,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        278
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-130",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "企画管理課長（鳥井憲昭君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "医療機器の整備更新の関係ということになるかと思います。\n　昨年、今年度も含めて、こういったコロナ対策の関係で、国の補助等も活用しながら、必要な分を、後年度の負担がございますので、用はランニングコスト、導入費用は補助でいいんですけれども、ランニングコストがかかってくる問題がありますので、そういったところも含めて、国の補助があるとはいえ、必要最低限、そういったところで整備を図らせていただいているといったようなところでございます。\n　今年度においても、今、上程させていただいております機械の整備でまた１，５００万円とまた予算がふえるといったようなこともございますので、当初予算の中においても、入札等、そういったものを行った中で経費の節減もはかる、そういったこともあわせて行いながら、医療機器の整備、そういったところは十分、後年度のことも含めて、対策を考えていかなきゃならないなと。\n　また、そういったものも、更新については院内でも財政収支試算等である程度５年程度のスパンで役所の方と、一般会計と合わせた形でその期間で更新計画を立てておりますので、そういった中でこういった不測の事態での整備、そういったものの機器も含めて、コストの平準化をどのように図っていくかといったような観点から、今後の整備についても考えていきたいと思っております。",
+    "text_length": 566,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        280
+      ]
+    }
+  },
+  {
+    "id": "nemuro-565-1-131",
+    "municipality": "nemuro",
+    "council_id": 565,
+    "council_name": "令和 ３年１０月 予算審査特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "10月08日－01号",
+    "date": "2021-10-08",
+    "speaker": "委員（本田俊治君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本田 俊治",
+    "member_faction": "市民クラブ",
+    "text": "中身は、この後は来週、再来週ですね、決算審査もありますから、そこのところで議論させていただきたいと思いますし、きょう正式版の配られた改革プランも、令和２年度の決算ベースが入っていますので、そこをしっかり読ませていただいてチェックをさせていただきたいなと。\n　ただ、いずれにしましても、こういう非常に厳しい状況下の中で、一番見えたのは、やっぱり先生方をはじめ医療従事者の皆様の努力、頑張りといいますかね、本当に地域を支えていただいたなと思っています。そこは本当に心から感謝申し上げたいと思います。\n　ただ、一方で経営自体も、こう見ますとやっぱり国の補助があったり、当初予算で示されたような財源対策債が発行できたということで、一定程度経営状況が、一般会計の繰り出しを抑えることができているようには見えますけれども、まだまだ私は厳しい状況だと思っておりますので、本来であれば、中間の１０月にこういう補助金に対する補正だけではなくて、経営見通しに立った後半戦に向かうための収支状況なんかの補正があってもいいぐらいではないかなというぐらい思うほど、今年度はやっぱり昨年度に続いて特殊な状況だと思っております、\n　そういったこともしっかり踏まえて、今後経営対策をやっていただいて、少しでも改善できるところはしっかり改善していただく。そして、こういうコロナ対策に万全を期していただくということもしっかりＰＲもしていただいて、みんなでここを乗り切るために頑張っていただきたいなと思っていますので、よろしくお願いしたいと思います。\n　以上で、終わります。",
+    "text_length": 668,
+    "source": {
+      "minutes_file": "data/nemuro/minutes/565.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        282
+      ]
+    }
+  }
+]
