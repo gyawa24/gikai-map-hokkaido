@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import type { SessionSummary } from "@/types/session";
+import { getSessionSourceLabel, getSessionThumbnailUrl } from "@/lib/sessionSources";
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr);
@@ -45,22 +46,22 @@ export default function SessionsClient({ sessions, city, allSpeakers }: Props) {
     <div>
       {/* 進行中 / 最新バナー */}
       {recent && (
-        <div className={`mb-5 flex items-center gap-3 rounded-[22px] px-4 py-3 ${
+        <div className={`rounded-lg px-4 py-3 mb-5 flex items-center gap-3 ${
           ongoing
-            ? "border border-[#E6C566] bg-[#FFF6D1] text-[#6B4C11]"
-            : "theme-panel"
+            ? "bg-[#1B3A6B] text-white"
+            : "bg-[#E8EEF7] border border-[#C5D0E6]"
         }`}>
           <span className={`shrink-0 text-xs font-bold px-2 py-0.5 rounded-full ${
             ongoing
-              ? "border border-[#E6C566] bg-white text-[#6B4C11]"
-              : "border border-[#D5DCE6] bg-white text-[#1B3A6B]"
+              ? "bg-white text-[#1B3A6B]"
+              : "bg-[#1B3A6B] text-white"
           }`}>
             {ongoing ? "開催中" : "最新"}
           </span>
-          <span className={`text-sm font-medium ${ongoing ? "text-[#6B4C11]" : "text-[#1B3A6B]"}`}>
+          <span className={`text-sm font-medium ${ongoing ? "text-white" : "text-[#1B3A6B]"}`}>
             {sessions[0]?.title}
           </span>
-          <span className={`ml-auto shrink-0 text-xs ${ongoing ? "text-[#8C6B1B]" : "text-[#718096]"}`}>
+          <span className={`text-xs ml-auto shrink-0 ${ongoing ? "text-blue-200" : "text-[#718096]"}`}>
             {formatDate(latestDate)}
           </span>
         </div>
@@ -75,8 +76,8 @@ export default function SessionsClient({ sessions, city, allSpeakers }: Props) {
               onClick={() => setSelectedSpeaker(null)}
               className={`text-xs px-3 py-1 rounded-full border transition-colors ${
                 selectedSpeaker === null
-                  ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
-                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2]"
+                  ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
+                  : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B]"
               }`}
             >
               すべて
@@ -87,8 +88,8 @@ export default function SessionsClient({ sessions, city, allSpeakers }: Props) {
                 onClick={() => setSelectedSpeaker(selectedSpeaker === name ? null : name)}
                 className={`text-xs px-3 py-1 rounded-full border transition-colors ${
                   selectedSpeaker === name
-                    ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
-                    : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2]"
+                    ? "bg-[#1B3A6B] text-white border-[#1B3A6B]"
+                    : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#1B3A6B]"
                 }`}
               >
                 {name}
@@ -105,7 +106,7 @@ export default function SessionsClient({ sessions, city, allSpeakers }: Props) {
 
       {/* セッション一覧 */}
       {filtered.length === 0 ? (
-        <div className="theme-card px-6 py-8 text-center text-[#718096]">
+        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
           該当するセッションはありません。
         </div>
       ) : (
@@ -114,16 +115,20 @@ export default function SessionsClient({ sessions, city, allSpeakers }: Props) {
             <Link
               key={s.id}
               href={`/${city}/sessions/${s.id}`}
-              className="theme-card group p-5 transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2]"
+              className="group bg-white rounded-lg border border-[#CBD5E0] hover:border-[#1B3A6B] p-5 shadow-sm hover:shadow-md transition-all duration-150"
             >
               <div className="flex items-start gap-4">
                 <div className="shrink-0 w-24 h-16 rounded overflow-hidden bg-[#E8EEF7] relative">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={`https://img.youtube.com/vi/${s.youtube_id}/mqdefault.jpg`}
-                    alt=""
-                    className="w-full h-full object-cover"
-                  />
+                  {getSessionThumbnailUrl(s) ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={getSessionThumbnailUrl(s) ?? ""}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-[linear-gradient(135deg,#E8EEF7,#C5D0E6)]" />
+                  )}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-7 h-7 bg-black/60 rounded-full flex items-center justify-center">
                       <svg className="w-3 h-3 text-white ml-0.5" viewBox="0 0 24 24" fill="currentColor">
@@ -143,21 +148,24 @@ export default function SessionsClient({ sessions, city, allSpeakers }: Props) {
                   <p className="text-sm text-[#4A5568]">{formatDate(s.date)}</p>
                   <div className="mt-2 flex flex-wrap gap-2">
                     {s.has_summary ? (
-                      <span className="inline-flex items-center gap-1 rounded-full border border-[#D5DCE6] bg-[#F4F8FF] px-2 py-0.5 text-xs font-medium text-[#2A5298]">
+                      <span className="inline-flex items-center gap-1 text-xs px-2 py-0.5 bg-[#E8EEF7] text-[#2A5298] rounded-full font-medium">
                         ✦ 要約あり
                       </span>
                     ) : (
-                      <span className="inline-flex items-center gap-1 rounded-full border border-[#E2E8F0] bg-[#F4F6F9] px-2 py-0.5 text-xs text-[#718096]">
+                      <span className="inline-flex items-center gap-1 text-xs px-2 py-0.5 bg-[#F4F6F9] text-[#718096] rounded-full">
                         要約準備中
                       </span>
                     )}
                     {s.segment_count > 0 && (
-                      <span className="rounded-full border border-[#E2E8F0] bg-[#F4F6F9] px-2 py-0.5 text-xs text-[#718096]">
+                      <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] text-[#718096] rounded-full">
                         {s.segment_count}部構成
                       </span>
                     )}
+                    <span className="text-xs px-2 py-0.5 bg-[#F4F6F9] text-[#718096] rounded-full">
+                      {getSessionSourceLabel(s).replace("で視聴", "")}
+                    </span>
                     {selectedSpeaker && s.speakers?.includes(selectedSpeaker) && (
-                      <span className="rounded-full border border-[#E6C566] bg-[#FFF3CD] px-2 py-0.5 text-xs font-medium text-[#856404]">
+                      <span className="text-xs px-2 py-0.5 bg-[#FFF3CD] text-[#856404] rounded-full font-medium">
                         {selectedSpeaker}議員 発言あり
                       </span>
                     )}
