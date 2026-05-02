@@ -26,12 +26,14 @@ export async function generateMetadata({
 function getMinutesIndex(city: string): MinutesIndexItem[] {
   // 自治体によって data/{city}/minutes/index.json または data/{city}/index.json
   const candidates = [
-    path.join(process.cwd(), "data", city, "minutes", "index.json"),
-    path.join(process.cwd(), "data", city, "index.json"),
+    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "minutes", "index.json"),
+    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "index.json"),
   ];
   for (const fp of candidates) {
     try {
-      const data = JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
+      const data = JSON.parse(
+        fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+      ) as MinutesIndexItem[];
       if (Array.isArray(data)) return data;
     } catch {
       // try next
@@ -42,7 +44,7 @@ function getMinutesIndex(city: string): MinutesIndexItem[] {
 
 function getEnriched(city: string, councilId: number): MinutesEnriched | null {
   const fp = path.join(
-    process.cwd(),
+    /*turbopackIgnore: true*/ process.cwd(),
     "data",
     city,
     "minutes",
@@ -50,7 +52,9 @@ function getEnriched(city: string, councilId: number): MinutesEnriched | null {
     `${councilId}.json`
   );
   try {
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesEnriched;
+    return JSON.parse(
+      fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+    ) as MinutesEnriched;
   } catch {
     return null;
   }
