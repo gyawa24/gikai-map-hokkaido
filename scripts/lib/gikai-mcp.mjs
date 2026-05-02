@@ -65,3 +65,13 @@ export async function searchMinutes(args) {
     return parseToolText(result);
   });
 }
+
+export async function searchSegments(args) {
+  return withClient(async (client) => {
+    const result = await client.callTool({
+      name: "search_segments",
+      arguments: args,
+    });
+    return parseToolText(result);
+  });
+}

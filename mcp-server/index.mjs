@@ -17,12 +17,14 @@ import { registerTools } from "../site/src/lib/mcp/tools.mjs";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "site", "data");
+const SEGMENTS_DIR = path.join(ROOT, "data");
 const RESTRICTED_INDEX_PATH = path.join(__dirname, "_restricted-index.json");
 
 const server = new McpServer({ name: "gikai", version: "0.2.0" });
 registerTools(server, {
   dataDir: DATA_DIR,
   restrictedIndexPath: RESTRICTED_INDEX_PATH,
+  segmentsDir: SEGMENTS_DIR,
 });
 
 const transport = new StdioServerTransport();

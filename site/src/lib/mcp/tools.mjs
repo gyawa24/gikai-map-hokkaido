@@ -44,9 +44,10 @@ function ok(payload) {
  * @param {object} options
  * @param {string} options.dataDir            data/ ディレクトリ絶対パス
  * @param {string} [options.restrictedIndexPath]  指定された場合のみ restricted を merge する（stdio個人利用専用）
+ * @param {string} [options.segmentsDir]       segments/ を含む別ディレクトリ（指定時のみ search_segments を登録 — stdio専用）
  */
 export function registerTools(server, options) {
-  const { dataDir, restrictedIndexPath } = options;
+  const { dataDir, restrictedIndexPath, segmentsDir } = options;
   const SEARCH_INDEX_PATH = path.join(dataDir, "_search-index.json");
   const MUNICIPALITIES_PATH = path.join(dataDir, "municipalities.json");
 
@@ -430,4 +431,237 @@ export function registerTools(server, options) {
       });
     }
   );
+
+  // 議事録は英数字を全角で記録することが多い（例: ＤＸ／ＡＩ／２０２５）。
+  // 半角/全角差で hit を逃さないよう、segments 検索だけは正規化して比較する。
+  function normalizeFullWidth(s) {
+    return (s ?? "")
+      .toLowerCase()
+      .replace(/[Ａ-Ｚａ-ｚ０-９]/g, (c) =>
+        String.fromCharCode(c.charCodeAt(0) - 0xfee0)
+      );
+  }
+  function matchesAllNormalized(text, tokens) {
+    const lower = normalizeFullWidth(text);
+    return tokens.every((t) => lower.includes(normalizeFullWidth(t)));
+  }
+
+  // Tool 6 (stdio専用) ─────────────────────────────────────────────────────
+  // segmentsDir が渡されたときだけ登録。HTTP配布版では使わない。
+  if (segmentsDir) {
+    const segmentIndexCache = new Map();
+    function getSegmentIndex(slug) {
+      if (segmentIndexCache.has(slug)) return segmentIndexCache.get(slug);
+      const fp = path.join(segmentsDir, slug, "segments", "_index.json");
+      if (!fs.existsSync(fp)) {
+        segmentIndexCache.set(slug, []);
+        return [];
+      }
+      try {
+        const data = JSON.parse(fs.readFileSync(fp, "utf-8"));
+        const arr = Array.isArray(data) ? data : [];
+        segmentIndexCache.set(slug, arr);
+        return arr;
+      } catch {
+        segmentIndexCache.set(slug, []);
+        return [];
+      }
+    }
+
+    const councilSegmentsCache = new Map();
+    function loadCouncilSegments(slug, councilId) {
+      const key = `${slug}/${councilId}`;
+      if (councilSegmentsCache.has(key)) return councilSegmentsCache.get(key);
+      const fp = path.join(segmentsDir, slug, "segments", `${councilId}.json`);
+      if (!fs.existsSync(fp)) {
+        councilSegmentsCache.set(key, []);
+        return [];
+      }
+      try {
+        const data = JSON.parse(fs.readFileSync(fp, "utf-8"));
+        const arr = Array.isArray(data) ? data : [];
+        councilSegmentsCache.set(key, arr);
+        return arr;
+      } catch {
+        councilSegmentsCache.set(key, []);
+        return [];
+      }
+    }
+
+    function getSegmentFullText(slug, councilId, segmentId) {
+      return (
+        loadCouncilSegments(slug, councilId).find((s) => s.id === segmentId)
+          ?.text ?? null
+      );
+    }
+
+    server.tool(
+      "search_segments",
+      "議事録を発言（話者交代単位）で横断検索する。speaker/会派/役割/日付で絞り込み可能。" +
+        "search_minutes が議題単位なのに対し、search_segments は1発言単位で粒度が細かい。" +
+        "発言者の特定や、政党別・議員別の発言比較に使う。",
+      {
+        query: z
+          .string()
+          .optional()
+          .describe(
+            "検索キーワード。空白区切りで複数指定可（AND）。省略するとフィルタのみで絞り込み"
+          ),
+        cities: z
+          .array(z.string())
+          .optional()
+          .describe("市町村slug配列。省略時は全市横断"),
+        member_name: z
+          .string()
+          .optional()
+          .describe(
+            "議員名で絞り込み（部分一致）。member_name フィールドに対する検索"
+          ),
+        faction: z
+          .string()
+          .optional()
+          .describe("会派/政党名で絞り込み（部分一致、例: '自民', '共産'）"),
+        speaker_role: z
+          .enum(["質問", "答弁"])
+          .optional()
+          .describe("発言の役割（質問 or 答弁）で絞り込み"),
+        exclude_procedural: z
+          .boolean()
+          .default(true)
+          .describe(
+            "議長・委員長・事務局長などの進行発言を除外する。デフォルトtrue"
+          ),
+        date_from: z
+          .string()
+          .regex(/^\d{4}-\d{2}-\d{2}$/)
+          .optional()
+          .describe("日付下限 YYYY-MM-DD（含む）"),
+        date_to: z
+          .string()
+          .regex(/^\d{4}-\d{2}-\d{2}$/)
+          .optional()
+          .describe("日付上限 YYYY-MM-DD（含む）"),
+        include_text: z
+          .boolean()
+          .default(false)
+          .describe(
+            "trueにすると発言全文も返す（excerpt より長い、token消費注意）"
+          ),
+        limit: z
+          .number()
+          .int()
+          .min(1)
+          .max(100)
+          .default(20)
+          .describe("最大件数。デフォルト20"),
+      },
+      async ({
+        query,
+        cities,
+        member_name,
+        faction,
+        speaker_role,
+        exclude_procedural,
+        date_from,
+        date_to,
+        include_text,
+        limit,
+      }) => {
+        const tokens = query ? tokenize(query) : [];
+        const munis = getMunicipalities();
+        const cityFilter = cities && cities.length ? new Set(cities) : null;
+        const targetSlugs = cityFilter
+          ? munis.filter((m) => cityFilter.has(m.slug)).map((m) => m.slug)
+          : munis.map((m) => m.slug);
+
+        const memberNameLower = member_name?.toLowerCase() ?? null;
+        const factionLower = faction?.toLowerCase() ?? null;
+
+        const hits = [];
+        let total = 0;
+        const cityCounts = {};
+
+        for (const slug of targetSlugs) {
+          const idx = getSegmentIndex(slug);
+          if (!idx.length) continue;
+          for (const seg of idx) {
+            if (exclude_procedural && seg.is_procedural) continue;
+            if (speaker_role && seg.speaker_role !== speaker_role) continue;
+            if (date_from && seg.date && seg.date < date_from) continue;
+            if (date_to && seg.date && seg.date > date_to) continue;
+            if (
+              memberNameLower &&
+              !(seg.member_name ?? "").toLowerCase().includes(memberNameLower)
+            )
+              continue;
+            if (
+              factionLower &&
+              !(seg.member_faction ?? "").toLowerCase().includes(factionLower)
+            )
+              continue;
+            // Keyword match: try excerpt first (fast), fall back to full text
+            // when excerpt doesn't match (excerpt is only ~100 chars).
+            // Use normalized matcher so 半角/全角 英数字 are equivalent.
+            if (tokens.length) {
+              const speakerText = seg.speaker ?? "";
+              const haystackExcerpt = `${speakerText} ${seg.excerpt ?? ""}`;
+              if (!matchesAllNormalized(haystackExcerpt, tokens)) {
+                const fullText = getSegmentFullText(slug, seg.council_id, seg.id);
+                if (!fullText) continue;
+                if (!matchesAllNormalized(`${speakerText} ${fullText}`, tokens))
+                  continue;
+              }
+            }
+            total++;
+            cityCounts[slug] = (cityCounts[slug] ?? 0) + 1;
+            if (hits.length < limit) {
+              const hit = {
+                id: seg.id,
+                city: slug,
+                city_name: getCityName(slug),
+                council_id: seg.council_id,
+                council_name: seg.council_name,
+                date: seg.date,
+                speaker: seg.speaker,
+                speaker_role: seg.speaker_role,
+                is_procedural: seg.is_procedural,
+                member_name: seg.member_name,
+                member_faction: seg.member_faction,
+                excerpt: seg.excerpt,
+                text_length: seg.text_length,
+                url: `${PUBLIC_BASE}/${slug}/minutes/${seg.council_id}${
+                  tokens.length ? `?q=${encodeURIComponent(query)}` : ""
+                }`,
+              };
+              if (include_text) {
+                hit.text = getSegmentFullText(slug, seg.council_id, seg.id);
+              }
+              hits.push(hit);
+            }
+          }
+        }
+
+        return ok({
+          query: query ?? null,
+          filters: {
+            cities: cities ?? null,
+            member_name: member_name ?? null,
+            faction: faction ?? null,
+            speaker_role: speaker_role ?? null,
+            exclude_procedural,
+            date_from: date_from ?? null,
+            date_to: date_to ?? null,
+          },
+          total_hits: total,
+          returned: hits.length,
+          by_city: cityCounts,
+          hits,
+          note:
+            "結論を出すときは hits[].url を引用根拠として併記すること。" +
+            "発言の全文が必要なときは include_text=true にするか、" +
+            "search_minutes / get_minutes_excerpt と組み合わせて文脈確認すること。",
+        });
+      }
+    );
+  }
 }
