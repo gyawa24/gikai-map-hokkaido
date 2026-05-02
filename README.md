@@ -52,7 +52,7 @@ gikai-map-hokkaido/
 
 | ファイル | 内容 |
 |---|---|
-| [`CLAUDE.md`](CLAUDE.md) | プロジェクト方針・AI エージェント向け作業指針 |
+| [`AGENTS.md`](AGENTS.md) | プロジェクト方針・AI エージェント向け作業指針（Claude Code / Codex / Cursor 等共通、`CLAUDE.md` はシンボリックリンク） |
 | [`DESIGN.md`](DESIGN.md) | UI 仕様（カラー・タイポ・コンポーネント） |
 | [`SECURITY.md`](SECURITY.md) | セキュリティ・脆弱性報告 |
 | [`site/AGENTS.md`](site/AGENTS.md) | Next.js 16 固有の注意事項 |
