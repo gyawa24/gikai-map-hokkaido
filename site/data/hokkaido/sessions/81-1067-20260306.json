@@ -1,0 +1,60 @@
+{
+  "id": "81-1067-20260306",
+  "title": "令和8年第1回定例会 3月6日",
+  "date": "2026-03-06",
+  "city": "hokkaido",
+  "committee": "本会議",
+  "source_type": "web",
+  "source_url": "https://pref-hokkaido.gijiroku.com/g07_Video_Search.asp?Sflg=1&kaigi=81&NitteiID=1067",
+  "source_label": "録画配信ページ",
+  "source_thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/58/23/U4IHPYIaOkKS/o.jpg",
+  "archive_kaigi_id": "81",
+  "archive_nittei_id": "1067",
+  "stream_only": true,
+  "source_segments": [
+    {
+      "title": "令和8年第1回定例会 / 会議日：令和8年3月6日（本会議）",
+      "speaker": "令和8年第1回定例会",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5747",
+      "player_url": "https://www.videog.jp/player/_dzkfYs83h9q",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage32/58/23/U4IHPYIaOkKS/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/58/23/U4IHPYIaOkKS/o.jpg"
+    },
+    {
+      "title": "民主・道民連合\n\n山根 まさひろ議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5748",
+      "player_url": "https://www.videog.jp/player/KNC6IFTbjyXA",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage52/58/25/xflUx11svj9v/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage52/58/25/xflUx11svj9v/o.jpg"
+    },
+    {
+      "title": "自民党・道民会議\n\n前田 一男議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5749",
+      "player_url": "https://www.videog.jp/player/c3JuifigLkT5",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage32/58/26/EyexPTsOxi8c/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/58/26/EyexPTsOxi8c/o.jpg"
+    },
+    {
+      "title": "公明党\n\n中野渡 志穂議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5750",
+      "player_url": "https://www.videog.jp/player/VjRwL5Qra1QP",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage4/58/28/rwHjZVkfBcjg/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/58/28/rwHjZVkfBcjg/o.jpg"
+    },
+    {
+      "title": "自民党・道民会議\n\n浅野 貴博議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5751",
+      "player_url": "https://www.videog.jp/player/5luuobqlEDTb",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage32/58/29/bnx6nzwJw5j0/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/58/29/bnx6nzwJw5j0/o.jpg"
+    },
+    {
+      "title": "北海道結志会\n\n赤根 広介議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5752",
+      "player_url": "https://www.videog.jp/player/_FHhvU00uZuk",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage4/58/30/ktZgSlhpzz5s/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/58/30/ktZgSlhpzz5s/o.jpg"
+    }
+  ],
+  "segments": []
+}

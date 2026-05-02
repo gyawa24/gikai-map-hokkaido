@@ -1,69 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+import { getDecisions, getMembers, getMinutesEnrichedDocs, getMinutesIndex, getSearchIndex, getSession, getSessionSummaries, readCityJson } from "@/lib/cityData";
 import { getMunicipalities } from "@/lib/municipalities";
-import {
-  buildExpansionSummary,
-  buildQuerySuggestions,
-  buildTokenGroups,
-  normalizeForSearch,
-  type SearchTokenGroup,
-} from "@/lib/searchSynonyms";
+import { checkRateLimit } from "@/lib/rateLimit";
+import { buildSearchAssist, buildSearchQuery, evaluateSearchText, excerptSearchText, matchesSearchText, normalizeSearchText, scoreSearchText } from "@/lib/searchQuery";
+import { getClientAddress } from "@/lib/security";
+import type { SearchAssistGroup, SearchOperator } from "@/lib/searchQuery";
 
-// ---------------------------------------------------------------------------
-// Rate limiting (in-memory)
-// ---------------------------------------------------------------------------
-const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
-const MAX_SEARCH_PER_MINUTE = 30;
-const MINUTE_MS = 60 * 1000;
-
-function getClientIP(req: NextRequest): string {
-  return (
-    req.headers.get("x-real-ip") ??
-    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
-    "unknown"
-  );
-}
-
-function checkSearchRateLimit(ip: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitStore.get(ip);
-  if (!entry || now > entry.resetTime) {
-    rateLimitStore.set(ip, { count: 1, resetTime: now + MINUTE_MS });
-    return true;
-  }
-  if (entry.count >= MAX_SEARCH_PER_MINUTE) return false;
-  entry.count++;
-  return true;
-}
-
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-function tokenize(query: string): string[] {
-  return query.trim().split(/\s+/).filter(Boolean);
-}
-
-function bestGroupMatch(text: string, tokenGroup: SearchTokenGroup, mode: "exact" | "prefix" | "includes"): number {
-  const normalizedText = normalizeForSearch(text);
-  let best = 0;
-
-  for (const variant of tokenGroup) {
-    const hit =
-      mode === "exact"
-        ? normalizedText === variant.normalized
-        : mode === "prefix"
-          ? normalizedText.startsWith(variant.normalized)
-          : normalizedText.includes(variant.normalized);
-    if (hit) best = Math.max(best, variant.boost);
-  }
-
-  return best;
-}
-
-function matchesAll(text: string, tokenGroups: SearchTokenGroup[]): boolean {
-  return tokenGroups.every((group) => bestGroupMatch(text, group, "includes") > 0);
-}
+const SEARCH_WINDOW_SECONDS = 60;
+const SEARCH_GET_LIMIT = 60;
+const SEARCH_POST_LIMIT = 12;
 
 // 日付文字列（"2026-03-02" 等）から西暦4桁を取り出す
 function yearFromDate(date: string | undefined | null): string {
@@ -87,122 +32,6 @@ function yearFromCouncilName(name: string): string {
   return "";
 }
 
-function excerpt(text: string, tokens: string[], radius = 60): string {
-  const first = tokens[0] ?? "";
-  const idx = normalizeForSearch(text).indexOf(normalizeForSearch(first));
-  if (idx === -1) return text.slice(0, radius * 2);
-  const start = Math.max(0, idx - radius);
-  const end = Math.min(text.length, idx + first.length + radius);
-  return (start > 0 ? "…" : "") + text.slice(start, end) + (end < text.length ? "…" : "");
-}
-
-function includesNormalized(text: string, token: string): boolean {
-  return normalizeForSearch(text).includes(normalizeForSearch(token));
-}
-
-function exactNormalized(text: string, query: string): boolean {
-  return normalizeForSearch(text) === normalizeForSearch(query);
-}
-
-function prefixNormalized(text: string, query: string): boolean {
-  return normalizeForSearch(text).startsWith(normalizeForSearch(query));
-}
-
-function computeSessionScore(params: {
-  query: string;
-  tokenGroups: SearchTokenGroup[];
-  title: string;
-  committee?: string;
-  label?: string;
-  context?: string;
-  field: string;
-  sourceType: SessionHit["sourceType"];
-  year?: string;
-}): number {
-  const { query, tokenGroups, title, committee = "", label = "", context = "", field, sourceType, year = "" } = params;
-  let score = 0;
-
-  if (exactNormalized(title, query)) score += 200;
-  else if (prefixNormalized(title, query)) score += 120;
-
-  if (exactNormalized(committee, query)) score += 140;
-  else if (prefixNormalized(committee, query)) score += 90;
-
-  if (exactNormalized(label, query)) score += 80;
-  if (includesNormalized(context, query)) score += 32;
-
-  for (const group of tokenGroups) {
-    const titlePrefix = bestGroupMatch(title, group, "prefix");
-    const titleIncludes = bestGroupMatch(title, group, "includes");
-    const committeePrefix = bestGroupMatch(committee, group, "prefix");
-    const committeeIncludes = bestGroupMatch(committee, group, "includes");
-    const labelIncludes = bestGroupMatch(label, group, "includes");
-    const contextIncludes = bestGroupMatch(context, group, "includes");
-
-    if (titlePrefix > 0) score += Math.round(26 * titlePrefix);
-    else if (titleIncludes > 0) score += Math.round(18 * titleIncludes);
-
-    if (committeePrefix > 0) score += Math.round(18 * committeePrefix);
-    else if (committeeIncludes > 0) score += Math.round(12 * committeeIncludes);
-
-    if (labelIncludes > 0) score += Math.round(10 * labelIncludes);
-    if (contextIncludes > 0) score += Math.round(6 * contextIncludes);
-  }
-
-  if (field === "会議名") score += 32;
-  if (field === "要約") score += 18;
-  if (field === "トピック") score += 16;
-  if (field === "議決") score += 12;
-  if (sourceType === "session") score += 14;
-  if (sourceType === "minutes") score += 8;
-  if (year) score += Math.min(20, Math.max(0, Number(year) - 2020));
-
-  return score;
-}
-
-function computeMemberScore(params: {
-  query: string;
-  tokenGroups: SearchTokenGroup[];
-  name: string;
-  furigana?: string;
-  party?: string;
-  faction?: string;
-  committees: string[];
-}): number {
-  const { query, tokenGroups, name, furigana = "", party = "", faction = "", committees } = params;
-  let score = 0;
-
-  if (exactNormalized(name, query)) score += 240;
-  else if (prefixNormalized(name, query)) score += 150;
-
-  if (exactNormalized(furigana, query)) score += 110;
-  else if (prefixNormalized(furigana, query)) score += 70;
-
-  if (exactNormalized(party, query) || exactNormalized(faction, query)) score += 90;
-
-  for (const group of tokenGroups) {
-    const namePrefix = bestGroupMatch(name, group, "prefix");
-    const nameIncludes = bestGroupMatch(name, group, "includes");
-    const furiganaIncludes = bestGroupMatch(furigana, group, "includes");
-    const partyIncludes = bestGroupMatch(party, group, "includes");
-    const factionIncludes = bestGroupMatch(faction, group, "includes");
-
-    if (namePrefix > 0) score += Math.round(30 * namePrefix);
-    else if (nameIncludes > 0) score += Math.round(20 * nameIncludes);
-
-    if (furiganaIncludes > 0) score += Math.round(14 * furiganaIncludes);
-    if (partyIncludes > 0) score += Math.round(10 * partyIncludes);
-    if (factionIncludes > 0) score += Math.round(10 * factionIncludes);
-
-    for (const committee of committees) {
-      const committeeIncludes = bestGroupMatch(committee, group, "includes");
-      if (committeeIncludes > 0) score += Math.round(6 * committeeIncludes);
-    }
-  }
-
-  return score;
-}
-
 // ---------------------------------------------------------------------------
 // Build city name map dynamically
 // ---------------------------------------------------------------------------
@@ -212,14 +41,6 @@ function getCityMap(): Record<string, string> {
   const munis = getMunicipalities().filter((m) => m.active);
   _cityMap = Object.fromEntries(munis.map((m) => [m.slug, m.name]));
   return _cityMap;
-}
-
-let _citySlugByName: Record<string, string> | null = null;
-function getCitySlugByName(): Record<string, string> {
-  if (_citySlugByName) return _citySlugByName;
-  const munis = getMunicipalities().filter((m) => m.active);
-  _citySlugByName = Object.fromEntries(munis.map((m) => [m.name, m.slug]));
-  return _citySlugByName;
 }
 
 // ---------------------------------------------------------------------------
@@ -253,138 +74,197 @@ export type MemberHit = {
   committees: string[];
 };
 
-type SearchResponseBody = {
+export type SourceFilter = "all" | "minutes" | "session" | "decision";
+
+export type SearchFacet = {
+  value: string;
+  label: string;
+  count: number;
+};
+
+export type SearchResponse = {
   sessionResults: SessionHit[];
   memberResults: MemberHit[];
   sessionTotal: number;
   memberTotal: number;
+  sessionBaseTotal: number;
+  memberBaseTotal: number;
   truncated: boolean;
-  expandedTerms?: string[];
-  exactExpandedTerms?: string[];
-  relatedExpandedTerms?: string[];
-  searchSuggestions?: string[];
+  rescued: boolean;
+  sessionRescued: boolean;
+  memberRescued: boolean;
+  highlightTokens: string[];
+  queryAssist: SearchAssistGroup[];
+  exactExpandedTerms: string[];
+  relatedExpandedTerms: string[];
+  searchSuggestions: string[];
+  searchMode: SearchOperator;
+  facets: {
+    cities: SearchFacet[];
+    sessionSources: SearchFacet[];
+    sessionYears: SearchFacet[];
+    memberFactions: SearchFacet[];
+  };
 };
 
-type SearchQueryOptions = {
-  municipality?: string | null;
-  maxResults?: number;
-  includeMembers?: boolean;
-};
+type RankedSessionHit = SessionHit & { score: number };
+type RankedMemberHit = MemberHit & { score: number };
 
-function runSearchQuery(query: string, options: SearchQueryOptions = {}): SearchResponseBody {
-  const tokens = tokenize(query);
-  const tokenGroups = buildTokenGroups(tokens);
-  const expansionSummary = buildExpansionSummary(tokenGroups);
-  const expandedTerms = Array.from(new Set([
-    ...expansionSummary.exactTerms,
-    ...expansionSummary.relatedTerms,
-  ])).slice(0, 16);
-  const searchSuggestions = buildQuerySuggestions(query, tokenGroups);
+function sortSessionHits(results: RankedSessionHit[]): RankedSessionHit[] {
+  return results.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    if (b.year !== a.year) return (b.year || "").localeCompare(a.year || "");
+    return a.title.localeCompare(b.title, "ja");
+  });
+}
 
+function sortMemberHits(results: RankedMemberHit[]): RankedMemberHit[] {
+  return results.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    return a.name.localeCompare(b.name, "ja");
+  });
+}
+
+function buildCityFacets(
+  sessionResults: RankedSessionHit[],
+  memberResults: RankedMemberHit[]
+): SearchFacet[] {
+  const counts = new Map<string, { label: string; count: number }>();
+  for (const result of sessionResults) {
+    counts.set(result.city, {
+      label: result.cityName,
+      count: (counts.get(result.city)?.count ?? 0) + 1,
+    });
+  }
+  for (const result of memberResults) {
+    counts.set(result.city, {
+      label: result.cityName,
+      count: (counts.get(result.city)?.count ?? 0) + 1,
+    });
+  }
+  return Array.from(counts.entries())
+    .map(([value, meta]) => ({ value, label: meta.label, count: meta.count }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "ja"));
+}
+
+function buildCountFacets<T extends string>(
+  values: T[],
+  labelFor?: (value: T) => string
+): SearchFacet[] {
+  const counts = new Map<T, number>();
+  for (const value of values) {
+    counts.set(value, (counts.get(value) ?? 0) + 1);
+  }
+  return Array.from(counts.entries())
+    .map(([value, count]) => ({
+      value,
+      label: labelFor ? labelFor(value) : value,
+      count,
+    }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "ja"));
+}
+
+function stripSessionScore(results: RankedSessionHit[]): SessionHit[] {
+  return results.map((result) => ({
+    id: result.id,
+    city: result.city,
+    cityName: result.cityName,
+    sourceType: result.sourceType,
+    title: result.title,
+    committee: result.committee,
+    href: result.href,
+    segIndex: result.segIndex,
+    label: result.label,
+    startTime: result.startTime,
+    context: result.context,
+    field: result.field,
+    year: result.year,
+  }));
+}
+
+function stripMemberScore(results: RankedMemberHit[]): MemberHit[] {
+  return results.map((result) => ({
+    city: result.city,
+    cityName: result.cityName,
+    href: result.href,
+    name: result.name,
+    furigana: result.furigana,
+    party: result.party,
+    faction: result.faction,
+    committees: result.committees,
+  }));
+}
+
+// ---------------------------------------------------------------------------
+// GET handler
+// ---------------------------------------------------------------------------
+export async function GET(request: NextRequest) {
+  const rateLimit = await checkRateLimit({
+    bucket: "api-search-get",
+    key: getClientAddress(request),
+    limit: SEARCH_GET_LIMIT,
+    windowSeconds: SEARCH_WINDOW_SECONDS,
+  });
+  if (!rateLimit.ok) {
+    return NextResponse.json(
+      { error: "検索回数の上限に達しました。少し待ってから再度お試しください。", sessionResults: [], memberResults: [] },
+      {
+        status: 429,
+        headers: { "Retry-After": String(rateLimit.retryAfterSeconds) },
+      }
+    );
+  }
+
+  const q = (request.nextUrl.searchParams.get("q") ?? "").slice(0, 500);
+  const cityFilter = request.nextUrl.searchParams.get("city") ?? "all";
+  const yearFilter = request.nextUrl.searchParams.get("year") ?? "all";
+  const rawSourceFilter = request.nextUrl.searchParams.get("source") ?? "all";
+  const rawSearchMode = request.nextUrl.searchParams.get("op") ?? "and";
+  const sourceFilter: SourceFilter =
+    rawSourceFilter === "minutes" || rawSourceFilter === "session" || rawSourceFilter === "decision"
+      ? rawSourceFilter
+      : "all";
+  const searchMode: SearchOperator = rawSearchMode === "or" ? "or" : "and";
+
+  const searchQuery = buildSearchQuery(q);
+  const queryAssist = buildSearchAssist(q);
+  const exactExpandedTerms =
+    queryAssist.find((group) => group.kind === "exact")?.terms ?? [];
+  const relatedExpandedTerms =
+    queryAssist.find((group) => group.kind === "related")?.terms ?? [];
+  const searchSuggestions =
+    queryAssist.find((group) => group.kind === "suggestion")?.terms ?? [];
+  const tokens = searchQuery.highlightTokens;
   if (!tokens.length) {
-    return { sessionResults: [], memberResults: [], sessionTotal: 0, memberTotal: 0, truncated: false };
+    return NextResponse.json({
+      sessionResults: [],
+      memberResults: [],
+      sessionTotal: 0,
+      memberTotal: 0,
+      sessionBaseTotal: 0,
+      memberBaseTotal: 0,
+      truncated: false,
+      rescued: false,
+      sessionRescued: false,
+      memberRescued: false,
+      highlightTokens: [],
+      queryAssist: [],
+      exactExpandedTerms: [],
+      relatedExpandedTerms: [],
+      searchSuggestions: [],
+      searchMode,
+      facets: {
+        cities: [],
+        sessionSources: [],
+        sessionYears: [],
+        memberFactions: [],
+      },
+    } satisfies SearchResponse);
   }
 
-  const dataRoot = path.join(process.cwd(), "data");
   const cityMap = getCityMap();
-  const scopedSlug = options.municipality ? getCitySlugByName()[options.municipality] : null;
-  const allCities = scopedSlug ? [scopedSlug] : Object.keys(cityMap);
-  const scoredSessionResults: Array<{ score: number; item: SessionHit }> = [];
+  const allCities = Object.keys(cityMap);
 
-  for (const city of allCities) {
-    const indexPath = path.join(dataRoot, city, "sessions", "index.json");
-    if (!fs.existsSync(indexPath)) continue;
-    const cityName = cityMap[city];
-    let index: Array<{ id: string; has_summary?: boolean; segment_count?: number }>;
-    try { index = JSON.parse(fs.readFileSync(indexPath, "utf-8")); } catch { continue; }
-    for (const entry of index) {
-      if (!entry.has_summary || (entry.segment_count ?? 0) === 0) continue;
-      const fp = path.join(dataRoot, city, "sessions", `${entry.id}.json`);
-      if (!fs.existsSync(fp)) continue;
-      let s: Record<string, unknown>;
-      try { s = JSON.parse(fs.readFileSync(fp, "utf-8")); } catch { continue; }
-      const committee = (s.committee as string) ?? "";
-      const sessionYear = yearFromDate(s.date as string | undefined);
-      const segments = (s.segments as Array<Record<string, unknown>>) ?? [];
-      let pushed = false;
-      for (const seg of segments) {
-        const fields = [
-          { text: (seg.summary as string) ?? "", field: "要約" },
-          { text: ((seg.topics as string[]) ?? []).join(" "), field: "トピック" },
-          { text: (seg.transcript as string) ?? "", field: "全文" },
-        ];
-        for (const { text, field } of fields) {
-          if (matchesAll(text, tokenGroups)) {
-            const item: SessionHit = {
-              id: s.id as string,
-              city,
-              cityName,
-              sourceType: "session",
-              title: s.title as string,
-              committee,
-              href: `/${city}/sessions/${s.id}`,
-              segIndex: seg.index as number,
-              label: (seg.label as string) ?? "",
-              startTime: (seg.start_time as string) ?? "",
-              context: excerpt(text, tokens),
-              field,
-              year: sessionYear,
-            };
-            scoredSessionResults.push({
-              score: computeSessionScore({
-                query,
-                tokenGroups,
-                title: item.title,
-                committee: item.committee,
-                label: item.label,
-                context: item.context,
-                field: item.field,
-                sourceType: item.sourceType,
-                year: item.year,
-              }),
-              item,
-            });
-            pushed = true;
-            break;
-          }
-        }
-        if (pushed) break;
-      }
-      if (!pushed && matchesAll((s.title as string) + committee, tokenGroups)) {
-        const item: SessionHit = {
-          id: s.id as string,
-          city,
-          cityName,
-          sourceType: "session",
-          title: s.title as string,
-          committee,
-          href: `/${city}/sessions/${s.id}`,
-          segIndex: 0,
-          label: "",
-          startTime: "",
-          context: committee,
-          field: "会議名",
-          year: sessionYear,
-        };
-        scoredSessionResults.push({
-          score: computeSessionScore({
-            query,
-            tokenGroups,
-            title: item.title,
-            committee: item.committee,
-            label: item.label,
-            context: item.context,
-            field: item.field,
-            sourceType: item.sourceType,
-            year: item.year,
-          }),
-          item,
-        });
-      }
-    }
-  }
-
-  const seenMinutes = new Set<string>();
   interface AgendaEntry {
     city: string;
     cityName: string;
@@ -398,54 +278,6 @@ function runSearchQuery(query: string, options: SearchQueryOptions = {}): Search
     truncated: boolean;
     year?: string;
   }
-  const searchIndexPath = path.join(dataRoot, "_search-index.json");
-  if (fs.existsSync(searchIndexPath)) {
-    let searchIndex: { agendas: AgendaEntry[] };
-    try {
-      searchIndex = JSON.parse(fs.readFileSync(searchIndexPath, "utf-8"));
-    } catch {
-      searchIndex = { agendas: [] };
-    }
-    for (const a of searchIndex.agendas) {
-      if (scopedSlug && a.city !== scopedSlug) continue;
-      const haystack = `${a.agenda_title} ${a.text}`;
-      if (!matchesAll(haystack, tokenGroups)) continue;
-      const minuteKey = `${a.city}_${a.council_id}`;
-      const item: SessionHit = {
-        id: `${a.city}_minutes_${a.council_id}_${a.schedule_index}_${a.first_minute_id ?? 0}`,
-        city: a.city,
-        cityName: a.cityName,
-        sourceType: "minutes",
-        title: a.council_name,
-        committee: a.agenda_title || "議題",
-        href:
-          a.first_minute_id !== null
-            ? `/${a.city}/minutes/${a.council_id}?q=${encodeURIComponent(query)}`
-            : `/${a.city}/minutes/${a.council_id}`,
-        segIndex: a.schedule_index,
-        label: a.schedule_name,
-        startTime: "",
-        context: excerpt(haystack, tokens, 100),
-        field: "議事録",
-        year: a.year ?? yearFromCouncilName(a.council_name),
-      };
-      scoredSessionResults.push({
-        score: computeSessionScore({
-          query,
-          tokenGroups,
-          title: item.title,
-          committee: item.committee,
-          label: item.label,
-          context: item.context,
-          field: item.field,
-          sourceType: item.sourceType,
-          year: item.year,
-        }),
-        item,
-      });
-      seenMinutes.add(minuteKey);
-    }
-  }
 
   interface EnrichedDoc {
     council_id: number;
@@ -455,379 +287,351 @@ function runSearchQuery(query: string, options: SearchQueryOptions = {}): Search
     highlights?: string[];
     tags?: string[];
   }
-  for (const city of allCities) {
-    const enrichedDir = path.join(dataRoot, city, "minutes", "enriched");
-    if (!fs.existsSync(enrichedDir)) continue;
-    const cityName = cityMap[city];
-    let files: string[];
-    try { files = fs.readdirSync(enrichedDir).filter((f) => f.endsWith(".json")); }
-    catch { continue; }
-    for (const file of files) {
-      const fp = path.join(enrichedDir, file);
-      let doc: EnrichedDoc;
-      try { doc = JSON.parse(fs.readFileSync(fp, "utf-8")) as EnrichedDoc; }
-      catch { continue; }
-      const minuteKey = `${city}_${doc.council_id}`;
-      if (seenMinutes.has(minuteKey)) continue;
-      const searchText = [
-        doc.name,
-        doc.summary ?? "",
-        ...(doc.highlights ?? []),
-        ...(doc.tags ?? []),
-      ].join(" ");
-      if (!matchesAll(searchText, tokenGroups)) continue;
-      const contextText = doc.summary
-        ? excerpt(doc.summary, tokens, 120)
-        : (doc.highlights ?? []).slice(0, 2).join("、");
-      const item: SessionHit = {
-        id: `${city}_minutes_${doc.council_id}`,
-        city,
-        cityName,
-        sourceType: "minutes",
-        title: doc.name,
-        committee: "",
-        href: `/${city}/minutes/${doc.council_id}`,
-        segIndex: 0,
-        label: "",
-        startTime: "",
-        context: contextText,
-        field: "AI要約",
-        year: yearFromDate(doc.generated_at) || yearFromCouncilName(doc.name),
-      };
-      scoredSessionResults.push({
-        score: computeSessionScore({
-          query,
-          tokenGroups,
-          title: item.title,
-          committee: item.committee,
-          label: item.label,
-          context: item.context,
-          field: item.field,
-          sourceType: item.sourceType,
-          year: item.year,
-        }),
-        item,
-      });
-      seenMinutes.add(minuteKey);
-    }
-  }
 
-  for (const city of allCities) {
-    const decisionsPath = path.join(dataRoot, city, "decisions.json");
-    if (!fs.existsSync(decisionsPath)) continue;
-    const cityName = cityMap[city];
-    let decisions: Array<{ session: string; source_url: string; description?: string }>;
-    try { decisions = JSON.parse(fs.readFileSync(decisionsPath, "utf-8")); } catch { continue; }
-    for (const d of decisions) {
-      const text = [d.session, d.description ?? ""].join(" ");
-      if (matchesAll(text, tokenGroups)) {
-        const item: SessionHit = {
-          id: `${city}_decision_${d.session}`,
+  const collectResults = (
+    mode: "strict" | "fallback"
+  ): { sessionResults: RankedSessionHit[]; memberResults: RankedMemberHit[] } => {
+    const sessionResults: RankedSessionHit[] = [];
+    const memberResults: RankedMemberHit[] = [];
+
+    for (const city of allCities) {
+      const cityName = cityMap[city];
+      const index = getSessionSummaries(city);
+      if (index.length === 0) continue;
+      for (const entry of index) {
+        if (!entry.has_summary || (entry.segment_count ?? 0) === 0) continue;
+        const s = getSession(city, entry.id);
+        if (!s) continue;
+        const committee = (s.committee as string) ?? "";
+        const title = (s.title as string) ?? "";
+        const sessionYear = yearFromDate(s.date as string | undefined);
+        const sessionLabel = committee || title;
+        const segments = (s.segments as Array<Record<string, unknown>>) ?? [];
+        let bestHit: RankedSessionHit | null = null;
+
+        for (const seg of segments) {
+          const fields = [
+            { text: (seg.summary as string) ?? "", field: "要約", bonus: 24, radius: 100 },
+            { text: ((seg.topics as string[]) ?? []).join(" "), field: "トピック", bonus: 20, radius: 90 },
+            { text: (seg.transcript as string) ?? "", field: "全文", bonus: 10, radius: 100 },
+          ];
+          for (const field of fields) {
+            if (!matchesSearchText(field.text, searchQuery, mode, searchMode)) continue;
+            const score = scoreSearchText(field.text, searchQuery, searchMode, mode) + field.bonus;
+            if (bestHit && bestHit.score >= score) continue;
+            bestHit = {
+              id: s.id as string,
+              city,
+              cityName,
+              sourceType: "session",
+              title,
+              committee,
+              href: `/${city}/sessions/${s.id}`,
+              segIndex: seg.index as number,
+              label: (seg.label as string) ?? "",
+              startTime: (seg.start_time as string) ?? "",
+              context: excerptSearchText(field.text, tokens, field.radius),
+              field: field.field,
+              year: sessionYear,
+              score,
+            };
+          }
+        }
+
+        const titleSearchText = `${title} ${committee}`;
+        if (matchesSearchText(titleSearchText, searchQuery, mode, searchMode)) {
+          const score = scoreSearchText(titleSearchText, searchQuery, searchMode, mode) + 28;
+          if (!bestHit || score > bestHit.score) {
+            bestHit = {
+              id: s.id as string,
+              city,
+              cityName,
+              sourceType: "session",
+              title,
+              committee,
+              href: `/${city}/sessions/${s.id}`,
+              segIndex: 0,
+              label: "",
+              startTime: "",
+              context: sessionLabel,
+              field: "会議名",
+              year: sessionYear,
+              score,
+            };
+          }
+        }
+
+        if (bestHit) {
+          sessionResults.push(bestHit);
+        }
+      }
+    }
+
+    const seenMinutes = new Set<string>();
+    for (const agenda of getSearchIndex().agendas as AgendaEntry[]) {
+      const haystack = `${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
+      if (!matchesSearchText(haystack, searchQuery, mode, searchMode)) continue;
+      let score = scoreSearchText(haystack, searchQuery, searchMode, mode) + 14;
+      if (agenda.agenda_title && matchesSearchText(agenda.agenda_title, searchQuery, mode, searchMode)) {
+        score += 18;
+      }
+      if (matchesSearchText(agenda.council_name, searchQuery, mode, searchMode)) {
+        score += 10;
+      }
+      sessionResults.push({
+        id: `${agenda.city}_minutes_${agenda.council_id}_${agenda.schedule_index}_${agenda.first_minute_id ?? 0}`,
+        city: agenda.city,
+        cityName: agenda.cityName,
+        sourceType: "minutes",
+        title: agenda.council_name,
+        committee: agenda.agenda_title || "議題",
+        href:
+          agenda.first_minute_id !== null
+            ? `/${agenda.city}/minutes/${agenda.council_id}?q=${encodeURIComponent(q)}`
+            : `/${agenda.city}/minutes/${agenda.council_id}`,
+        segIndex: agenda.schedule_index,
+        label: agenda.schedule_name,
+        startTime: "",
+        context: excerptSearchText(`${agenda.agenda_title} ${agenda.text}`, tokens, 100),
+        field: "議事録",
+        year: agenda.year ?? yearFromCouncilName(agenda.council_name),
+        score,
+      });
+      seenMinutes.add(`${agenda.city}_${agenda.council_id}`);
+    }
+
+    for (const city of allCities) {
+      const cityName = cityMap[city];
+      for (const doc of getMinutesEnrichedDocs(city) as EnrichedDoc[]) {
+        const minuteKey = `${city}_${doc.council_id}`;
+        if (seenMinutes.has(minuteKey)) continue;
+        const summary = doc.summary ?? "";
+        const highlights = doc.highlights ?? [];
+        const searchText = [doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");
+        if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
+        let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 8;
+        if (matchesSearchText(doc.name, searchQuery, mode, searchMode)) score += 16;
+        if (summary && matchesSearchText(summary, searchQuery, mode, searchMode)) score += 12;
+        const contextText = summary
+          ? excerptSearchText(summary, tokens, 120)
+          : highlights.slice(0, 2).join("、");
+        sessionResults.push({
+          id: `${city}_minutes_${doc.council_id}`,
+          city,
+          cityName,
+          sourceType: "minutes",
+          title: doc.name,
+          committee: "",
+          href: `/${city}/minutes/${doc.council_id}`,
+          segIndex: 0,
+          label: "",
+          startTime: "",
+          context: contextText,
+          field: "AI要約",
+          year: yearFromCouncilName(doc.name) || yearFromDate(doc.generated_at),
+          score,
+        });
+      }
+    }
+
+    for (const city of allCities) {
+      const cityName = cityMap[city];
+      const decisions = getDecisions(city);
+      for (const decision of decisions) {
+        const text = [decision.session, decision.description ?? ""].join(" ");
+        if (!matchesSearchText(text, searchQuery, mode, searchMode)) continue;
+        let score = scoreSearchText(text, searchQuery, searchMode, mode) + 10;
+        if (matchesSearchText(decision.session, searchQuery, mode, searchMode)) score += 10;
+        sessionResults.push({
+          id: `${city}_decision_${decision.session}`,
           city,
           cityName,
           sourceType: "decision",
-          title: d.session,
+          title: decision.session,
           committee: "議決結果",
           href: `/${city}/decisions`,
           segIndex: 0,
           label: "",
           startTime: "",
-          context: excerpt(text, tokens),
+          context: excerptSearchText(text, tokens, 80),
           field: "議決",
-          year: yearFromCouncilName(d.session),
-        };
-        scoredSessionResults.push({
-          score: computeSessionScore({
-            query,
-            tokenGroups,
-            title: item.title,
-            committee: item.committee,
-            label: item.label,
-            context: item.context,
-            field: item.field,
-            sourceType: item.sourceType,
-            year: item.year,
-          }),
-          item,
+          year: yearFromCouncilName(decision.session),
+          score,
         });
       }
     }
-  }
 
-  const scoredMemberResults: Array<{ score: number; item: MemberHit }> = [];
-  if (options.includeMembers !== false) {
     for (const city of allCities) {
       const cityName = cityMap[city];
-      const membersPath = path.join(dataRoot, city, "members.json");
-      if (fs.existsSync(membersPath)) {
-        let list: Array<Record<string, unknown>>;
-        try { list = JSON.parse(fs.readFileSync(membersPath, "utf-8")); } catch { continue; }
-        if (!Array.isArray(list)) continue;
-        for (const m of list) {
-          const committees = Array.isArray(m.committees) ? m.committees.filter((c): c is string => typeof c === "string") : [];
-          const searchText = [m.name ?? "", m.furigana ?? "", m.party ?? "", m.faction ?? "", ...committees].join(" ");
-          if (matchesAll(searchText, tokenGroups)) {
-            const item: MemberHit = {
-              city,
-              cityName,
-              href: `/${city}`,
-              name: (m.name as string) ?? "",
-              furigana: (m.furigana as string) ?? "",
-              party: (m.party as string) ?? "",
-              faction: (m.faction as string) ?? "",
-              committees,
-            };
-            scoredMemberResults.push({
-              score: computeMemberScore({
-                query,
-                tokenGroups,
-                name: item.name,
-                furigana: item.furigana,
-                party: item.party,
-                faction: item.faction,
-                committees: item.committees,
-              }),
-              item,
-            });
-          }
+      const list = getMembers(city);
+      if (list.length > 0) {
+        for (const member of list) {
+          const committees = Array.isArray(member.committees)
+            ? member.committees.filter((committee): committee is string => typeof committee === "string")
+            : [];
+          const name = (member.name as string) ?? "";
+          const furigana = (member.furigana as string) ?? "";
+          const party = (member.party as string) ?? "";
+          const faction = (member.faction as string) ?? "";
+          const searchText = [name, furigana, party, faction, ...committees].join(" ");
+          if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
+          let score = scoreSearchText(searchText, searchQuery, searchMode, mode);
+          if (matchesSearchText(name, searchQuery, mode, searchMode)) score += 28;
+          if (furigana && matchesSearchText(furigana, searchQuery, mode, searchMode)) score += 20;
+          if (party && matchesSearchText(party, searchQuery, mode, searchMode)) score += 10;
+          if (faction && matchesSearchText(faction, searchQuery, mode, searchMode)) score += 12;
+          memberResults.push({
+            city,
+            cityName,
+            href: `/${city}`,
+            name,
+            furigana,
+            party,
+            faction,
+            committees,
+            score,
+          });
         }
-      } else {
-        const electionPath = path.join(dataRoot, city, "election.json");
-        if (!fs.existsSync(electionPath)) continue;
-        let data: Record<string, unknown>;
-        try { data = JSON.parse(fs.readFileSync(electionPath, "utf-8")); } catch { continue; }
-        const candidates = (data.candidates as Array<Record<string, unknown>>) ?? [];
-        for (const c of candidates) {
-          if ((c.result as string) !== "当選") continue;
-          const searchText = [c.name ?? "", c.furigana ?? "", c.party ?? ""].join(" ");
-          if (matchesAll(searchText, tokenGroups)) {
-            const item: MemberHit = {
-              city,
-              cityName,
-              href: `/${city}`,
-              name: (c.name as string) ?? "",
-              furigana: (c.furigana as string) ?? "",
-              party: (c.party as string) ?? "",
-              faction: (c.party as string) ?? "",
-              committees: [],
-            };
-            scoredMemberResults.push({
-              score: computeMemberScore({
-                query,
-                tokenGroups,
-                name: item.name,
-                furigana: item.furigana,
-                party: item.party,
-                faction: item.faction,
-                committees: item.committees,
-              }),
-              item,
-            });
-          }
-        }
+        continue;
+      }
+
+      const data = readCityJson<Record<string, unknown>>(city, "election.json");
+      if (!data) continue;
+      const candidates = (data.candidates as Array<Record<string, unknown>>) ?? [];
+      for (const candidate of candidates) {
+        if ((candidate.result as string) !== "当選") continue;
+        const name = (candidate.name as string) ?? "";
+        const furigana = (candidate.furigana as string) ?? "";
+        const party = (candidate.party as string) ?? "";
+        const searchText = [name, furigana, party].join(" ");
+        if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
+        let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 4;
+        if (matchesSearchText(name, searchQuery, mode, searchMode)) score += 24;
+        if (furigana && matchesSearchText(furigana, searchQuery, mode, searchMode)) score += 18;
+        memberResults.push({
+          city,
+          cityName,
+          href: `/${city}`,
+          name,
+          furigana,
+          party,
+          faction: party,
+          committees: [],
+          score,
+        });
       }
     }
-  }
 
-  const maxResults = options.maxResults ?? 200;
-  const sessionResults = scoredSessionResults
-    .sort((a, b) => {
-      if (b.score !== a.score) return b.score - a.score;
-      if (b.item.year !== a.item.year) return (b.item.year || "").localeCompare(a.item.year || "");
-      if (a.item.cityName !== b.item.cityName) return a.item.cityName.localeCompare(b.item.cityName, "ja");
-      return a.item.title.localeCompare(b.item.title, "ja");
-    })
-    .map((entry) => entry.item);
-  const memberResults = scoredMemberResults
-    .sort((a, b) => {
-      if (b.score !== a.score) return b.score - a.score;
-      if (a.item.cityName !== b.item.cityName) return a.item.cityName.localeCompare(b.item.cityName, "ja");
-      return a.item.name.localeCompare(b.item.name, "ja");
-    })
-    .map((entry) => entry.item);
-
-  return {
-    sessionResults: sessionResults.slice(0, maxResults),
-    memberResults: memberResults.slice(0, maxResults),
-    sessionTotal: sessionResults.length,
-    memberTotal: memberResults.length,
-    truncated: sessionResults.length > maxResults || memberResults.length > maxResults,
-    expandedTerms,
-    exactExpandedTerms: expansionSummary.exactTerms.slice(0, 12),
-    relatedExpandedTerms: expansionSummary.relatedTerms.slice(0, 12),
-    searchSuggestions,
+    return {
+      sessionResults: sortSessionHits(sessionResults),
+      memberResults: sortMemberHits(memberResults),
+    };
   };
-}
 
-function buildAiSourcesFromHits(hits: SessionHit[]): AiSearchSource[] {
-  const seen = new Set<string>();
-  const sources: AiSearchSource[] = [];
+  const strictResults = collectResults("strict");
+  let sessionResults = strictResults.sessionResults;
+  let memberResults = strictResults.memberResults;
+  let sessionRescued = false;
+  let memberRescued = false;
 
-  for (const hit of hits) {
-    if (sources.length >= AI_SOURCE_COUNT) break;
-    const agendaTitle = [hit.committee, hit.label].filter(Boolean).join(" / ");
-    const dedupeKey = `${hit.href}::${normalizeForSearch(hit.context).slice(0, 180)}`;
-    if (seen.has(dedupeKey)) continue;
-    seen.add(dedupeKey);
-    sources.push({
-      id: hit.id,
-      municipality: hit.cityName,
-      slug: hit.city,
-      meeting_name: hit.title,
-      agenda_title: agendaTitle || undefined,
-      content: hit.context,
-      href: hit.href,
-    });
+  if (sessionResults.length === 0 || memberResults.length === 0) {
+    const fallbackResults = collectResults("fallback");
+    if (sessionResults.length === 0 && fallbackResults.sessionResults.length > 0) {
+      sessionResults = fallbackResults.sessionResults;
+      sessionRescued = true;
+    }
+    if (memberResults.length === 0 && fallbackResults.memberResults.length > 0) {
+      memberResults = fallbackResults.memberResults;
+      memberRescued = true;
+    }
   }
 
-  return sources;
+  const baseCityFacets = buildCityFacets(sessionResults, memberResults);
+  const cityScopedSessions =
+    cityFilter === "all" ? sessionResults : sessionResults.filter((result) => result.city === cityFilter);
+  const cityScopedMembers =
+    cityFilter === "all" ? memberResults : memberResults.filter((result) => result.city === cityFilter);
+
+  const sessionSourceFacets = buildCountFacets(
+    cityScopedSessions.map((result) => result.sourceType),
+    (value) =>
+      ({
+        minutes: "議事録",
+        session: "会議録速報",
+        decision: "議決結果",
+      })[value] ?? value
+  );
+  const effectiveSourceFilter =
+    sourceFilter !== "all" && sessionSourceFacets.some((facet) => facet.value === sourceFilter)
+      ? sourceFilter
+      : "all";
+  const sourceScopedSessions =
+    effectiveSourceFilter === "all"
+      ? cityScopedSessions
+      : cityScopedSessions.filter((result) => result.sourceType === effectiveSourceFilter);
+
+  const sessionYearFacets = buildCountFacets(
+    sourceScopedSessions.map((result) => result.year).filter(Boolean)
+  );
+  const effectiveYearFilter =
+    yearFilter !== "all" && sessionYearFacets.some((facet) => facet.value === yearFilter)
+      ? yearFilter
+      : "all";
+  const filteredSessions =
+    effectiveYearFilter === "all"
+      ? sourceScopedSessions
+      : sourceScopedSessions.filter((result) => result.year === effectiveYearFilter);
+
+  const memberFactionFacets = buildCountFacets(
+    cityScopedMembers.map((result) => result.faction || "無所属")
+  );
+
+  const MAX_RESULTS = 200;
+  return NextResponse.json({
+    sessionResults: stripSessionScore(filteredSessions.slice(0, MAX_RESULTS)),
+    memberResults: stripMemberScore(cityScopedMembers.slice(0, MAX_RESULTS)),
+    sessionTotal: filteredSessions.length,
+    memberTotal: cityScopedMembers.length,
+    sessionBaseTotal: sessionResults.length,
+    memberBaseTotal: memberResults.length,
+    truncated: filteredSessions.length > MAX_RESULTS || cityScopedMembers.length > MAX_RESULTS,
+    rescued: sessionRescued || memberRescued,
+    sessionRescued,
+    memberRescued,
+    highlightTokens: tokens,
+    queryAssist,
+    exactExpandedTerms,
+    relatedExpandedTerms,
+    searchSuggestions,
+    searchMode,
+    facets: {
+      cities: baseCityFacets,
+      sessionSources: sessionSourceFacets,
+      sessionYears: sessionYearFacets,
+      memberFactions: memberFactionFacets,
+    },
+  } satisfies SearchResponse);
 }
-
-// ---------------------------------------------------------------------------
-// GET handler
-// ---------------------------------------------------------------------------
-export async function GET(request: NextRequest) {
-  const ip = getClientIP(request);
-  if (!checkSearchRateLimit(ip)) {
-    return NextResponse.json(
-      { error: "検索回数の上限に達しました。少し待ってから再度お試しください。", sessionResults: [], memberResults: [] },
-      { status: 429 }
-    );
-  }
-
-  const q = (request.nextUrl.searchParams.get("q") ?? "").slice(0, 500);
-  return NextResponse.json(runSearchQuery(q));
-}
-
-// ---------------------------------------------------------------------------
-// POST handler — AI 検索
-// 通常検索で候補を抽出し、その抜粋だけを LLM に渡して回答を生成する。
-// ---------------------------------------------------------------------------
-export type AiSearchSource = {
-  id?: number | string;
-  municipality: string;
-  slug?: string;
-  meeting_name: string;
-  speaker?: string;
-  speaker_name?: string;
-  speaker_role?: string;
-  agenda_title?: string;
-  content: string;
-  similarity?: number;
-  href?: string;
-};
-
-export type AiSearchResponse = {
-  answer: string;
-  sources: AiSearchSource[];
-};
-
-const AI_MAX_QUERY_LEN = 500;
-const AI_SOURCE_COUNT = 6;
-const AI_CANDIDATE_COUNT = 24;
 
 export async function POST(request: NextRequest) {
-  const ip = getClientIP(request);
-  if (!checkSearchRateLimit(ip)) {
+  const rateLimit = await checkRateLimit({
+    bucket: "api-search-post",
+    key: getClientAddress(request),
+    limit: SEARCH_POST_LIMIT,
+    windowSeconds: SEARCH_WINDOW_SECONDS,
+  });
+  if (!rateLimit.ok) {
     return NextResponse.json(
       { error: "検索回数の上限に達しました。少し待ってから再度お試しください。" },
-      { status: 429 }
+      {
+        status: 429,
+        headers: { "Retry-After": String(rateLimit.retryAfterSeconds) },
+      }
     );
   }
 
-  let body: { query?: string; municipality?: string };
-  try {
-    body = await request.json();
-  } catch {
-    return NextResponse.json({ error: "リクエストの形式が不正です。" }, { status: 400 });
-  }
-
-  const query = (body.query ?? "").trim().slice(0, AI_MAX_QUERY_LEN);
-  const municipality = (body.municipality ?? "").trim() || null;
-  if (!query) {
-    return NextResponse.json({ error: "質問を入力してください。" }, { status: 400 });
-  }
-
-  const { GROQ_API_KEY } = process.env;
-  if (!GROQ_API_KEY) {
-    return NextResponse.json(
-      { error: "AI検索の環境変数が未設定です。" },
-      { status: 500 }
-    );
-  }
-
-  const search = runSearchQuery(query, {
-    municipality,
-    maxResults: AI_CANDIDATE_COUNT,
-    includeMembers: false,
-  });
-  const sources = buildAiSourcesFromHits(search.sessionResults);
-
-  if (sources.length === 0) {
-    return NextResponse.json({
-      answer: "関連する議事録が見つかりませんでした。",
-      sources: [],
-    } satisfies AiSearchResponse);
-  }
-
-  const contextBlock = sources
-    .map(
-      (s, i) =>
-        `[${i + 1}] ${s.municipality} ${s.meeting_name}${s.agenda_title ? `／${s.agenda_title}` : ""}\n${s.content}`
-    )
-    .join("\n\n");
-
-  const userPrompt = `以下は北海道の地方議会の議事録抜粋です。これを根拠として、市民の質問に日本語で答えてください。
-
-ルール:
-- 抜粋に書かれていない事柄は推測しないこと
-- 不明な場合は「議事録から確認できませんでした」と答えること
-- 回答末尾で根拠とした抜粋番号を [1] [2] のように明記すること
-- 議論の流れが複数ある場合は、自治体名や会議名を明記して整理すること
-
-【参考議事録】
-${contextBlock}
-
-【質問】
-${query}`;
-
-  let answer = "";
-  try {
-    const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${GROQ_API_KEY}`,
-      },
-      body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
-        messages: [
-          {
-            role: "system",
-            content:
-              "あなたは地方議会の議事録に基づいて市民の質問に答えるアシスタントです。提示された抜粋以外の知識で回答してはいけません。",
-          },
-          { role: "user", content: userPrompt },
-        ],
-        temperature: 0.2,
-      }),
-    });
-    if (!r.ok) {
-      return NextResponse.json(
-        { error: `Groqエラー: ${r.status}` },
-        { status: 502 }
-      );
-    }
-    const j = (await r.json()) as {
-      choices?: Array<{ message?: { content?: string } }>;
-    };
-    answer = j.choices?.[0]?.message?.content ?? "";
-  } catch (e) {
-    return NextResponse.json(
-      { error: `Groq呼び出しに失敗しました: ${(e as Error).message}` },
-      { status: 502 }
-    );
-  }
-
-  return NextResponse.json({ answer, sources } satisfies AiSearchResponse);
+  return NextResponse.json(
+    { error: "AI検索は終了しました。通常検索をご利用ください。" },
+    { status: 410 }
+  );
 }

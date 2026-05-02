@@ -10,15 +10,19 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, "..", "data");
 
-// 対象都市（sessionsデータがある都市）
-const CITIES = ["chitose"];
+const args = process.argv.slice(2);
+const get = (flag) => {
+  const i = args.indexOf(flag);
+  return i !== -1 ? args[i + 1] : null;
+};
+const targetCity = get("--city");
 
 function extractSpeakers(sessionJson, memberLastnames) {
   const found = new Set();
   for (const seg of sessionJson.segments ?? []) {
     const text = seg.transcript ?? "";
     for (const ln of memberLastnames) {
-      const pattern = new RegExp(ln + "(?:委員|議員|委員長)", "g");
+      const pattern = new RegExp(ln + "(?:委員|議員|委員長|君)", "g");
       if (pattern.test(text)) {
         found.add(ln);
       }
@@ -35,7 +39,13 @@ function getMemberLastnames(city) {
   return members.map((m) => m.name.split(/[\s　]/)[0]).filter(Boolean);
 }
 
-for (const city of CITIES) {
+const cities = targetCity
+  ? [targetCity]
+  : fs.readdirSync(DATA_DIR).filter((city) =>
+      fs.existsSync(path.join(DATA_DIR, city, "sessions", "index.json"))
+    );
+
+for (const city of cities) {
   const indexPath = path.join(DATA_DIR, city, "sessions", "index.json");
   if (!fs.existsSync(indexPath)) {
     console.log(`[${city}] index.json not found, skip`);

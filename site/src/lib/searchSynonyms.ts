@@ -125,7 +125,7 @@ export function normalizeForSearch(text: string): string {
 function isLooseTermMatch(token: string, term: string): boolean {
   if (!token || !term) return false;
   if (token === term) return true;
-  if (token.length >= 2 && term.includes(token)) return true;
+  if (token.length >= 2 && term.includes(token) && term.length - token.length <= 2) return true;
   if (term.length >= 2 && token.includes(term)) return true;
   return false;
 }
@@ -152,10 +152,12 @@ export function buildTokenGroups(tokens: string[]): SearchTokenGroup[] {
 
     for (const entry of SEARCH_SYNONYMS) {
       const terms = [entry.canonical, ...entry.aliases];
-      const matched = terms.some((term) => isLooseTermMatch(normalizedToken, normalizeForSearch(term)));
-      if (!matched) continue;
+      const matchedTerms = terms.filter((term) =>
+        isLooseTermMatch(normalizedToken, normalizeForSearch(term))
+      );
+      if (matchedTerms.length === 0) continue;
 
-      for (const term of terms) {
+      for (const term of new Set([entry.canonical, ...matchedTerms])) {
         const normalized = normalizeForSearch(term);
         addCandidate({
           term,

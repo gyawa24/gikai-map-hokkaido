@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  staticPageGenerationTimeout: 300,
   // Serverless Function の 250MB 制限対策。
   // 各 Function が必要とするデータだけ残し、それ以外を除外する。
   //
@@ -101,9 +102,17 @@ const nextConfig: NextConfig = {
     // - 議員写真は各市公式サイトから配信されるため img-src は https: 全体を許可
     // - 会議録ページで YouTube 埋込を行うため frame-src に youtube.com
     // - Vercel Web Analytics のビーコン送信のため vitals.vercel-insights.com
+    const scriptSrc = [
+      "'self'",
+      "'unsafe-inline'",
+      "https://va.vercel-scripts.com",
+    ];
+    if (process.env.NODE_ENV !== "production") {
+      scriptSrc.push("'unsafe-eval'");
+    }
     const csp = [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com",
+      `script-src ${scriptSrc.join(" ")}`,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https:",
       "font-src 'self' data:",

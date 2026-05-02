@@ -3,6 +3,7 @@ import { NextRequest } from "next/server";
 import fs from "fs";
 import path from "path";
 import { getMunicipality } from "@/lib/municipalities";
+import { parsePositiveInt } from "@/lib/security";
 
 export const runtime = "nodejs";
 
@@ -76,7 +77,12 @@ function factionColors(faction: string | undefined): FactionColors {
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
   const city = searchParams.get("city") ?? "";
-  const seat = Number(searchParams.get("seat") ?? "0");
+  const seat = parsePositiveInt(searchParams.get("seat"));
+  const municipality = getMunicipality(city);
+
+  if (!municipality || seat === null) {
+    return new Response("Not found", { status: 404 });
+  }
 
   const members = getMembers(city);
   const member = members.find((m) => m.seat_number === seat);
@@ -84,7 +90,6 @@ export async function GET(req: NextRequest) {
     return new Response("Member not found", { status: 404 });
   }
 
-  const municipality = getMunicipality(city);
   const councilName = municipality?.council_name ?? `${city}議会`;
 
   const activityMap = getActivity(city);

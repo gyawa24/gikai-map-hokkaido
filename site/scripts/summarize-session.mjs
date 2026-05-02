@@ -4,6 +4,7 @@
  *
  * 使い方:
  *   node scripts/summarize-session.mjs \
+ *     --city chitose \
  *     --id r8-yosan-4th-20260323 \
  *     --transcript /path/to/transcript.txt
  *
@@ -13,8 +14,11 @@
  *     （Super Whisperの出力をそのまま使う場合は自動分割も可能）
  *
  * 出力:
- *   - ../data/chitose/sessions/{id}.json を更新
- *   - ./data/chitose/sessions/{id}.json を更新（サイト用コピー）
+ *   - ../data/{city}/sessions/{id}.json を更新
+ *   - ./data/{city}/sessions/{id}.json を更新（サイト用コピー）
+ *
+ * オプション:
+ *   --preview-only  data/ は更新せず tmp_audio/<id>.preview.json に出力
  */
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -33,21 +37,28 @@ const get = (flag) => {
   return i !== -1 ? args[i + 1] : null;
 };
 
+const city = get("--city") ?? "chitose";
 const sessionId = get("--id");
 const transcriptPath = get("--transcript");
+const previewOnly = args.includes("--preview-only");
 
 if (!sessionId || !transcriptPath) {
-  console.error("Usage: node summarize-session.mjs --id <session-id> --transcript <path>");
+  console.error("Usage: node summarize-session.mjs --city <slug> --id <session-id> --transcript <path>");
   process.exit(1);
 }
 
 // --- 既存のセッションJSONを読み込む ---
-const sessionFile = path.join(ROOT, "data", "chitose", "sessions", `${sessionId}.json`);
+const sessionFile = path.join(ROOT, "data", city, "sessions", `${sessionId}.json`);
 if (!fs.existsSync(sessionFile)) {
   console.error(`Session file not found: ${sessionFile}`);
   process.exit(1);
 }
 const session = JSON.parse(fs.readFileSync(sessionFile, "utf-8"));
+const municipalities = JSON.parse(
+  fs.readFileSync(path.join(ROOT, "data", "municipalities.json"), "utf-8")
+);
+const councilName =
+  municipalities.find((m) => m.slug === city)?.council_name ?? `${city}議会`;
 
 // --- 文字起こしテキストを読み込む ---
 const rawTranscript = fs.readFileSync(transcriptPath, "utf-8");
@@ -79,11 +90,11 @@ async function summarizeSegment(text, idx, total) {
   const response = await client.messages.create({
     model: "claude-haiku-4-5-20251001",
     max_tokens: 400,
-    system: "あなたは北海道千歳市議会の会議記録を整理するアシスタントです。",
+    system: `あなたは${councilName}の会議記録を整理するアシスタントです。`,
     messages: [
       {
         role: "user",
-        content: `以下は千歳市議会の会議文字起こし（${label}）です。
+        content: `以下は${councilName}の会議文字起こし（${label}）です。
 次のJSON形式のみで回答してください（余分なテキスト不要）:
 
 {
@@ -109,8 +120,6 @@ ${truncated}`,
 
 // --- 全セグメントを処理 ---
 const segments = [];
-let totalInputTokens = 0;
-let totalOutputTokens = 0;
 
 for (let i = 0; i < rawSegments.length; i++) {
   const result = await summarizeSegment(rawSegments[i], i, rawSegments.length);
@@ -132,18 +141,20 @@ for (let i = 0; i < rawSegments.length; i++) {
 // --- セッションJSONを更新 ---
 const updatedSession = {
   ...session,
+  city,
+  full_transcript: rawTranscript,
   generated_at: new Date().toISOString().split("T")[0],
   segments,
 };
 
 const save = (dir) => {
-  const dest = path.join(dir, "chitose", "sessions", `${sessionId}.json`);
+  const dest = path.join(dir, city, "sessions", `${sessionId}.json`);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.writeFileSync(dest, JSON.stringify(updatedSession, null, 2), "utf-8");
   console.log(`  保存: ${dest}`);
 
   // index.json も更新
-  const indexPath = path.join(dir, "chitose", "sessions", "index.json");
+  const indexPath = path.join(dir, city, "sessions", "index.json");
   if (fs.existsSync(indexPath)) {
     const index = JSON.parse(fs.readFileSync(indexPath, "utf-8"));
     const entry = index.find((e) => e.id === sessionId);
@@ -156,6 +167,15 @@ const save = (dir) => {
     console.log(`  index.json 更新: ${indexPath}`);
   }
 };
+
+if (previewOnly) {
+  const previewPath = path.join(ROOT, "tmp_audio", `${sessionId}.preview.json`);
+  fs.mkdirSync(path.dirname(previewPath), { recursive: true });
+  fs.writeFileSync(previewPath, JSON.stringify(updatedSession, null, 2), "utf-8");
+  console.log(`\nプレビュー保存: ${previewPath}`);
+  console.log("data/ と site/data/ は更新していません。");
+  process.exit(0);
+}
 
 console.log("\n保存中...");
 save(path.join(ROOT, "data"));

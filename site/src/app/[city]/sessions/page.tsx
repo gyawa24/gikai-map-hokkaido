@@ -1,9 +1,7 @@
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import type { SessionSummary } from "@/types/session";
+import { getSessionSummaries } from "@/lib/cityData";
 import { getMunicipality } from "@/lib/municipalities";
 import SessionsClient from "@/components/SessionsClient";
 
@@ -18,15 +16,6 @@ export async function generateMetadata({
   return { title: `会議録・速報 - ${cityName}` };
 }
 
-function getSessions(city: string): SessionSummary[] {
-  const fp = path.join(process.cwd(), "data", city, "sessions", "index.json");
-  try {
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as SessionSummary[];
-  } catch {
-    return [];
-  }
-}
-
 export default async function CitySessionsPage({
   params,
 }: {
@@ -36,7 +25,7 @@ export default async function CitySessionsPage({
   const municipality = getMunicipality(city);
   if (!municipality?.features.includes("sessions")) notFound();
 
-  const sessions = getSessions(city);
+  const sessions = getSessionSummaries(city);
 
   // speakers に登場する議員苗字を集計（フィルタUIに使用）
   const allSpeakers = [
@@ -44,15 +33,15 @@ export default async function CitySessionsPage({
   ].sort();
 
   return (
-    <div className="page-shell max-w-6xl">
-      <section className="mb-5">
-        <h2 className="theme-section-title mb-1 text-2xl">会議録・速報</h2>
+    <div className="max-w-2xl mx-auto">
+      <section className="mb-6">
+        <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">会議録・速報</h2>
         <p className="text-base text-[#4A5568] leading-relaxed mb-3">
-          YouTube中継動画の文字起こしと要約を掲載しています。公式議事録の発行（約2ヶ月後）までの速報版です。
+          議会中継動画や録画配信の文字起こしと要約を掲載しています。公式議事録の発行までの速報版です。
         </p>
         <Link
           href={`/${city}/minutes`}
-          className="theme-button px-3 py-1.5 text-sm"
+          className="inline-flex items-center gap-1.5 text-sm text-[#2A5298] hover:text-[#1B3A6B] transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +62,7 @@ export default async function CitySessionsPage({
       </section>
 
       {sessions.length === 0 ? (
-        <div className="theme-card px-6 py-8 text-center text-[#718096]">
+        <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
           現在、掲載されている動画はありません。
         </div>
       ) : (

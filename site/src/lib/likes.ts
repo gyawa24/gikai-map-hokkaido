@@ -11,6 +11,10 @@ export function likeKey(target: LikeTarget): string {
   return `like:minute:${target.slug}:${target.council_id}:${target.schedule_id}:${target.minute_id}`;
 }
 
+export function isLikeStorageKey(key: string): boolean {
+  return /^like:(council|minute):[a-z0-9-]+:\d+(?::\d+:\d+)?$/i.test(key);
+}
+
 // Vercel + Upstash 連携時に付与される環境変数のいくつかのパターンを順に試す:
 //   - 標準（プレフィックスなし）: KV_REST_API_URL / KV_REST_API_TOKEN
 //   - Upstash 標準: UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN

@@ -7,7 +7,8 @@
     "furigana": "はこだてし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "sessions"
     ],
     "level": "municipality",
     "active": true,
@@ -717,7 +718,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "sessions"
     ],
     "active": true,
     "system": "gijiroku_com",

@@ -4,7 +4,9 @@ import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import MemberList from "@/components/MemberList";
 import CitySummaryCards from "@/components/CitySummaryCards";
+import MinutesWordCloud from "@/components/MinutesWordCloud";
 import { getMinutesSummary } from "@/lib/cityStats";
+import { getMinutesWordCloud } from "@/lib/minutesWordCloud";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
 
@@ -55,6 +57,7 @@ export default async function CityMembersPage({
   const minutesUnavailable = municipality?.minutes_status === "unavailable";
   const minutesUnavailableNote = municipality?.minutes_status_note;
   const minutesVerifiedAt = municipality?.minutes_verified_at;
+  const wordCloud = getMinutesWordCloud(city);
 
   if (members.length === 0) {
     return (
@@ -88,14 +91,14 @@ export default async function CityMembersPage({
       />
       {minutesUnavailable && (
         <div className="theme-alert page-shell mb-5 max-w-6xl px-4 py-3">
-          <p className="text-sm font-semibold text-[#1B3A6B] mb-1">議事録未公開（AIでは見つけられず）</p>
+          <p className="text-sm font-semibold text-[#1B3A6B] mb-1">議事録未公開（未確認）</p>
           <p className="text-xs text-[#4A5568] leading-relaxed">
             {minutesUnavailableNote ?? "現時点で議会会議録のオンライン公開を確認できていません。"}
             {minutesVerifiedAt && (
               <span className="text-[#718096]">（最終確認: {minutesVerifiedAt}）</span>
             )}
             <br />
-            公式サイトで公開されていてもAI検索で見つけられなかった可能性があります。URLをご存じの方は{" "}
+            公式サイトで公開されていても確認できていない可能性があります。URLをご存じの方は{" "}
             <a
               href="https://github.com/gyawa24/gikai-map-hokkaido/issues"
               target="_blank"
@@ -107,6 +110,17 @@ export default async function CityMembersPage({
             でお知らせください。
           </p>
         </div>
+      )}
+      {!minutesUnavailable && (
+        <MinutesWordCloud
+          city={city}
+          cityName={municipality?.name ?? city}
+          modes={wordCloud.modes}
+          years={wordCloud.years}
+          meetings={wordCloud.meetings}
+          scopes={wordCloud.scopes}
+          datasets={wordCloud.datasets}
+        />
       )}
       <MemberList
         members={members}

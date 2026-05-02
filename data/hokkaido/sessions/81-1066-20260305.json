@@ -1,0 +1,60 @@
+{
+  "id": "81-1066-20260305",
+  "title": "令和8年第1回定例会 3月5日",
+  "date": "2026-03-05",
+  "city": "hokkaido",
+  "committee": "本会議",
+  "source_type": "web",
+  "source_url": "https://pref-hokkaido.gijiroku.com/g07_Video_Search.asp?Sflg=1&kaigi=81&NitteiID=1066",
+  "source_label": "録画配信ページ",
+  "source_thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/08/91/rz0p_9uxUzu3/o.jpg",
+  "archive_kaigi_id": "81",
+  "archive_nittei_id": "1066",
+  "stream_only": true,
+  "source_segments": [
+    {
+      "title": "令和8年第1回定例会 / 会議日：令和8年3月5日（本会議）",
+      "speaker": "令和8年第1回定例会",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5741",
+      "player_url": "https://www.videog.jp/player/Dk3YnxxKPMwE",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage32/08/91/rz0p_9uxUzu3/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/08/91/rz0p_9uxUzu3/o.jpg"
+    },
+    {
+      "title": "公明党\n\n森 成之議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5742",
+      "player_url": "https://www.videog.jp/player/-_5WCY4p0HK1",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage23/08/93/Bz85vZQLuns4/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage23/08/93/Bz85vZQLuns4/o.jpg"
+    },
+    {
+      "title": "自民党・道民会議\n\n戸田 安彦議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5743",
+      "player_url": "https://www.videog.jp/player/eZ7dfTZ-0yZ8",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage32/08/94/LDMWWO5-kat3/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/08/94/LDMWWO5-kat3/o.jpg"
+    },
+    {
+      "title": "民主・道民連合\n\n川澄 宗之介議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5744",
+      "player_url": "https://www.videog.jp/player/jSYr8-ShyuQ_",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage32/08/95/xlg05eukSibt/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/08/95/xlg05eukSibt/o.jpg"
+    },
+    {
+      "title": "自民党・道民会議\n\n鶴羽 芳代子議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5745",
+      "player_url": "https://www.videog.jp/player/NyYtagvE5TPy",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage52/08/96/i96f7nqCm1FO/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage52/08/96/i96f7nqCm1FO/o.jpg"
+    },
+    {
+      "title": "民主・道民連合\n\n小泉 真志議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5746",
+      "player_url": "https://www.videog.jp/player/WzMRo-uwxnrP",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage32/08/98/PsBgRIQ7vLfG/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/08/98/PsBgRIQ7vLfG/o.jpg"
+    }
+  ],
+  "segments": []
+}

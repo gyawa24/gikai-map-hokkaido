@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AI_SEARCH_LABEL, AI_SEARCH_NAV_LABEL, AI_SEARCH_PATH } from "@/lib/aiSearch";
 import type { CityNavConfig } from "./CityHeaderServer";
 
 type NavItem = { href: string; label: string };
@@ -39,14 +38,12 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
     : [
         { href: "/", label: "トップ" },
         { href: "/search", label: "検索" },
-        { href: AI_SEARCH_PATH, label: AI_SEARCH_NAV_LABEL },
       ];
 
   const mobileQuickLinks = city
     ? []
     : [
         { href: "/search", label: "検索する" },
-        { href: AI_SEARCH_PATH, label: AI_SEARCH_LABEL },
         { href: "/#municipalities", label: "市町村一覧" },
       ];
 
@@ -129,7 +126,6 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
                 { href: "/search?q=議員", label: "議員" },
                 { href: "/search?q=議事録", label: "議事録" },
                 { href: "/search", label: "検索" },
-                { href: AI_SEARCH_PATH, label: AI_SEARCH_NAV_LABEL },
               ].map((item) => (
                 <Link
                   key={item.href}

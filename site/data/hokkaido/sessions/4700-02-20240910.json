@@ -1,0 +1,41 @@
+{
+  "id": "4700-02-20240910",
+  "title": "令和6年第3回定例会 9月10日",
+  "date": "2024-09-10",
+  "city": "hokkaido",
+  "committee": "本会議",
+  "source_type": "web",
+  "source_url": "https://pref-hokkaido.gijiroku.com/g07_Video_Search.asp?Sflg=1&kaigi=71&NitteiID=924",
+  "source_label": "録画配信ページ",
+  "minutes_council_id": 4700,
+  "minutes_schedule_id": 2,
+  "minutes_schedule_index": 1,
+  "minutes_file": "4700.json",
+  "segments": [],
+  "source_thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/79/33/qnk0pUSUWfno/o.jpg",
+  "archive_kaigi_id": "71",
+  "archive_nittei_id": "924",
+  "source_segments": [
+    {
+      "title": "令和6年第3回定例会 / 会議日：令和6年9月10日（本会議）",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=4939",
+      "player_url": "https://www.videog.jp/player/7mjV_mt0yJjR",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage4/79/33/qnk0pUSUWfno/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/79/33/qnk0pUSUWfno/o.jpg"
+    },
+    {
+      "title": "日程第2 会期決定の件（9月10日から10月4日まで25日間）手話付き",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=4940",
+      "player_url": "https://www.videog.jp/player/u-gwdf_x3YNJ",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage52/79/35/iBNxl5RprvB9/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage52/79/35/iBNxl5RprvB9/o.jpg"
+    },
+    {
+      "title": "日程第3 議案第1号ないし第22号及び報告第1号ないし第6号\n\n提出議案に関する説明\n\n議案等調査のための休会日の決定（9月11日から9月12日まで）\n\n散会手話付き",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=4941",
+      "player_url": "https://www.videog.jp/player/ZoB_sVk724KE",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage32/79/34/5_o-2dgf3Iw4/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/79/34/5_o-2dgf3Iw4/o.jpg"
+    }
+  ]
+}

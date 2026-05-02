@@ -1,0 +1,27 @@
+{
+  "id": "4933-03-20250619",
+  "title": "令和7年第2回定例会 6月19日",
+  "date": "2025-06-19",
+  "city": "hokkaido",
+  "committee": "本会議",
+  "source_type": "web",
+  "source_url": "https://pref-hokkaido.gijiroku.com/g07_Video_Search.asp?Sflg=1&kaigi=76&NitteiID=997",
+  "source_label": "録画配信ページ",
+  "minutes_council_id": 4933,
+  "minutes_schedule_id": 3,
+  "minutes_schedule_index": 2,
+  "minutes_file": "4933.json",
+  "segments": [],
+  "source_thumbnail_url": "https://cf-pd01.videog.jp/media/storage52/41/68/PLoO9r8aY0bt/o.jpg",
+  "archive_kaigi_id": "76",
+  "archive_nittei_id": "997",
+  "source_segments": [
+    {
+      "title": "令和7年第2回定例会 / 会議日：令和7年6月19日（本会議）",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5323",
+      "player_url": "https://www.videog.jp/player/XcCKuoljDKzO/",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage52/41/68/PLoO9r8aY0bt/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage52/41/68/PLoO9r8aY0bt/o.jpg"
+    }
+  ]
+}

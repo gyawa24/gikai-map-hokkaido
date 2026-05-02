@@ -21,15 +21,15 @@
 
 ```bash
 # 1. 検索インデックスを作る（初回 / 議事録更新時）
-cd /Users/yohei/gikai-map-hokkaido/site
+cd /Users/yohei/gikai-map-hokkaido/gikaimap/site
 npm run build-search-index
 
 # 2. MCP サーバーの依存をインストール
-cd /Users/yohei/gikai-map-hokkaido/mcp-server
+cd /Users/yohei/gikai-map-hokkaido/gikaimap/mcp-server
 npm install
 
 # 3. Claude Code に登録
-claude mcp add gikai -- node /Users/yohei/gikai-map-hokkaido/mcp-server/index.mjs
+claude mcp add gikai -- node /Users/yohei/gikai-map-hokkaido/gikaimap/mcp-server/index.mjs
 
 # 4. Claude Code を再起動 → ツール `mcp__gikai__search_minutes` 等が使える
 ```
@@ -43,7 +43,7 @@ claude mcp add gikai -- node /Users/yohei/gikai-map-hokkaido/mcp-server/index.mj
   "mcpServers": {
     "gikai": {
       "command": "node",
-      "args": ["/Users/yohei/gikai-map-hokkaido/mcp-server/index.mjs"]
+      "args": ["/Users/yohei/gikai-map-hokkaido/gikaimap/mcp-server/index.mjs"]
     }
   }
 }
@@ -59,6 +59,18 @@ Claude に自然言語で投げるだけ：
 
 Claude は内部で `search_minutes` → `get_minutes_excerpt` を呼んで原文を確認した上で答える。返ってくる結果には常に `url`（chihougikai.com の該当ページ）が含まれるので、結論には必ずソースが付く。
 
+## ターミナルから直接使う
+
+このリポジトリには、ローカル `MCP` をそのまま叩く補助CLIも入れてある。
+
+```bash
+# 単発検索
+./scripts/gikai-search-minutes.mjs AI --limit 5
+
+# AI活用っぽい語をまとめて集計
+./scripts/gikai-ai-survey.mjs --year-from 2024
+```
+
 ## 制約
 
 - **検索インデックスは静的**: `site/data/_search-index.json` がビルド時生成。新しい議事録を反映するには `npm run build-search-index` を再実行する必要あり
@@ -70,7 +82,7 @@ Claude は内部で `search_minutes` → `get_minutes_excerpt` を呼んで原�
 `municipalities.json` で `minutes_access: "restricted"` が付いている自治体は、サイトのビルドフローからは除外されているが MCP の個人利用（私的使用の範囲）からは検索したい。そのために専用のインデックスを別ファイルで持てる。
 
 ```bash
-cd /Users/yohei/gikai-map-hokkaido/mcp-server
+cd /Users/yohei/gikai-map-hokkaido/gikaimap/mcp-server
 npm run build-restricted-index
 ```
 
