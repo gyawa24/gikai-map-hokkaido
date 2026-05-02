@@ -1,0 +1,32 @@
+{
+  "id": "81-1063-20260227",
+  "title": "令和8年第1回定例会 2月27日",
+  "date": "2026-02-27",
+  "city": "hokkaido",
+  "committee": "本会議",
+  "source_type": "web",
+  "source_url": "https://pref-hokkaido.gijiroku.com/g07_Video_Search.asp?Sflg=1&kaigi=81&NitteiID=1063",
+  "source_label": "録画配信ページ",
+  "source_thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/14/32/HjTA8zmg1aL9/o.jpg",
+  "archive_kaigi_id": "81",
+  "archive_nittei_id": "1063",
+  "stream_only": true,
+  "source_segments": [
+    {
+      "title": "令和8年第1回定例会 / 会議日：令和8年2月27日（本会議）",
+      "speaker": "令和8年第1回定例会",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5730",
+      "player_url": "https://www.videog.jp/player/tLlvbOqhjLPf",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage4/14/32/HjTA8zmg1aL9/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/14/32/HjTA8zmg1aL9/o.jpg"
+    },
+    {
+      "title": "民主・道民連合\n\n笹田 浩議員",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5731",
+      "player_url": "https://www.videog.jp/player/Kq39nwu3FPif",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage4/14/33/2hfd73NtUGHu/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/14/33/2hfd73NtUGHu/o.jpg"
+    }
+  ],
+  "segments": []
+}

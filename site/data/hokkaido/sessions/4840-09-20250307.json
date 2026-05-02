@@ -1,0 +1,27 @@
+{
+  "id": "4840-09-20250307",
+  "title": "令和7年第1回定例会 3月7日",
+  "date": "2025-03-07",
+  "city": "hokkaido",
+  "committee": "本会議",
+  "source_type": "web",
+  "source_url": "https://pref-hokkaido.gijiroku.com/g07_Video_Search.asp?Sflg=1&kaigi=75&NitteiID=983",
+  "source_label": "録画配信ページ",
+  "minutes_council_id": 4840,
+  "minutes_schedule_id": 9,
+  "minutes_schedule_index": 8,
+  "minutes_file": "4840.json",
+  "segments": [],
+  "source_thumbnail_url": "https://cf-pd01.videog.jp/media/storage52/79/42/UgKtQonPgDwI/o.jpg",
+  "archive_kaigi_id": "75",
+  "archive_nittei_id": "983",
+  "source_segments": [
+    {
+      "title": "令和7年第1回定例会 / 会議日：令和7年3月7日（本会議）",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=5205",
+      "player_url": "https://www.videog.jp/player/VgPQ2TBV5fQ_",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage52/79/42/UgKtQonPgDwI/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage52/79/42/UgKtQonPgDwI/o.jpg"
+    }
+  ]
+}

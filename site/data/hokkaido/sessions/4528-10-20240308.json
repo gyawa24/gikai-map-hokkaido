@@ -1,0 +1,27 @@
+{
+  "id": "4528-10-20240308",
+  "title": "令和6年第1回定例会 3月8日",
+  "date": "2024-03-08",
+  "city": "hokkaido",
+  "committee": "本会議",
+  "source_type": "web",
+  "source_url": "https://pref-hokkaido.gijiroku.com/g07_Video_Search.asp?Sflg=1&kaigi=68&NitteiID=892",
+  "source_label": "録画配信ページ",
+  "minutes_council_id": 4528,
+  "minutes_schedule_id": 10,
+  "minutes_schedule_index": 9,
+  "minutes_file": "4528.json",
+  "segments": [],
+  "source_thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/53/95/b4nIVhxJRXMf/o.jpg",
+  "archive_kaigi_id": "68",
+  "archive_nittei_id": "892",
+  "source_segments": [
+    {
+      "title": "令和6年第1回定例会 / 会議日：令和6年3月8日（本会議）",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=4544",
+      "player_url": "https://www.videog.jp/player/9WGmQRMZMtmR",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage4/53/95/b4nIVhxJRXMf/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/53/95/b4nIVhxJRXMf/o.jpg"
+    }
+  ]
+}

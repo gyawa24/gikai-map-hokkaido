@@ -1,0 +1,41 @@
+{
+  "id": "4626-02-20240618",
+  "title": "令和6年第2回定例会 6月18日",
+  "date": "2024-06-18",
+  "city": "hokkaido",
+  "committee": "本会議",
+  "source_type": "web",
+  "source_url": "https://pref-hokkaido.gijiroku.com/g07_Video_Search.asp?Sflg=1&kaigi=70&NitteiID=907",
+  "source_label": "録画配信ページ",
+  "minutes_council_id": 4626,
+  "minutes_schedule_id": 2,
+  "minutes_schedule_index": 1,
+  "minutes_file": "4626.json",
+  "segments": [],
+  "source_thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/10/79/omegVA5LGw3e/o.jpg",
+  "archive_kaigi_id": "70",
+  "archive_nittei_id": "907",
+  "source_segments": [
+    {
+      "title": "令和6年第2回定例会 / 会議日：令和6年6月18日（本会議）",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=4645",
+      "player_url": "https://www.videog.jp/player/KhFzD60neHqS",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage32/10/79/omegVA5LGw3e/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage32/10/79/omegVA5LGw3e/o.jpg"
+    },
+    {
+      "title": "日程第2 会期決定の件 （6月18日から7月5日まで18日間）",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=4646",
+      "player_url": "https://www.videog.jp/player/_ns6tQD99M-w",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage4/10/80/KsDpVlxSdJAQ/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage4/10/80/KsDpVlxSdJAQ/o.jpg"
+    },
+    {
+      "title": "日程第3 議案第1号ないし第13号及び報告第1号\n\n提出議案に関する説明\n\n議案等調査のための休会日の決定（6月19日及び6月20日）\n\n散会",
+      "view_url": "https://pref-hokkaido.gijiroku.com/g07_Video_View.asp?SrchID=4647",
+      "player_url": "https://www.videog.jp/player/_c0KoDs_8E-D",
+      "media_url": "https://c6938-vod11.videog.jp/media/storage23/10/82/IHe3wXsMipus/,svga.mp4,v.mp4,.urlset/master.m3u8",
+      "thumbnail_url": "https://cf-pd01.videog.jp/media/storage23/10/82/IHe3wXsMipus/o.jpg"
+    }
+  ]
+}
