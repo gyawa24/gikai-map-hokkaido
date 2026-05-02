@@ -3,6 +3,13 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   staticPageGenerationTimeout: 300,
+  // Vercel build machine は 2 cores だが、デフォルト cpus = (cores - 1) = 1 worker で
+  // 7164 ページの static generation に 23分かかる。明示的に2コア使わせて短縮を狙う。
+  // 加えて 1 worker 内の並列度も上げる（デフォルト 8 → 16）。
+  experimental: {
+    cpus: 2,
+    staticGenerationMaxConcurrency: 16,
+  },
   // Serverless Function の 250MB 制限対策。
   // 各 Function が必要とするデータだけ残し、それ以外を除外する。
   //
