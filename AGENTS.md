@@ -9,7 +9,9 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 ## プロジェクト一行要約
 
 北海道内の全市町村議会情報（議員・議事録・議決・行事・議会だより）を横断閲覧できる**市民向け非公式情報サイト**。
-作者は千歳市議会議員。現在は3市（千歳・恵庭・苫小牧）で運用中、**最終的には北海道179市町村すべてに拡張する**。
+作者は千歳市議会議員。議事録は **26 市町村 + 北海道議会**で運用中（うちフル機能は千歳・恵庭・苫小牧の 3 市）、**最終的には北海道179市町村すべてに拡張する**。
+
+公開URL: https://chihougikai.com / リポジトリ: https://github.com/gyawa24/gikai-map-hokkaido
 
 ---
 
@@ -21,6 +23,7 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 | `site/AGENTS.md` | Next.js 16 固有の注意（学習データより新しい） |
 | `node_modules/next/dist/docs/` | Next.js の正確なAPI仕様。**コード書く前に確認** |
 | `README.md` | プロジェクト概要 |
+| `docs/` | MCP API キー運用、リリースチェックリスト等 |
 
 ---
 
@@ -30,7 +33,7 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 
 - 「このタスクは本当に今必要か」を最初に問う。
 - 既存パターンを先に読む（`site/src/components/` と `DESIGN.md`）。車輪の再発明をしない。
-- 3市の既存実装をスキャンしてから新規実装に入る。
+- フル機能3市（千歳・恵庭・苫小牧）の既存実装をスキャンしてから新規実装に入る。
 
 ### 2. シンプル第一（Simplicity First）
 
@@ -62,11 +65,13 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 - `data/{slug}/` 単位で分離する。市町村ごとのフォルダ構造は統一する。
 - 市町村リストは `data/municipalities.json` を単一の真実源（single source of truth）とする。新しい市町村を足すときは必ずここを更新。
 - `features: ["members", "minutes", ...]` の有無で機能出し分けをする設計を維持する。すべての市町村が全機能を持つとは限らない。
+- **`data/{slug}/segments/`**: AI検索用にフラット化した発言単位データ。`scripts/build-segments.mjs <slug>` で minutes から生成。`_index.json`（軽量メタ）+ `{council_id}.json`（実体）の構成。
 
 ### UI層
 - ハードコードで市町村名を書かない。`municipalities.json` または `[city]` 動的ルートから引く。
-- 千歳・恵庭・苫小牧専用の分岐を書かない。3市に必要な機能は全市に必要、3市に不要な機能は全市に不要と考える。
+- 千歳・恵庭・苫小牧専用の機能分岐を書かない。3市に必要な機能は全市に必要、3市に不要な機能は全市に不要と考える。
 - `CityHeader.tsx` の `CITY_CONFIG` を単一の真実源とする。
+- ※build 最適化目的の優先度配列（`PRIORITY_CITIES_FOR_PRERENDER` 等、機能分岐でないもの）は例外として可。
 
 ### スクレイピング層
 - 市町村ごとの議会サイトは HTML 構造がバラバラ。しかし**出力JSONのスキーマは統一**する（`DESIGN.md` のデータ構造参照）。
@@ -81,20 +86,49 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 ## ディレクトリ構成
 
 ```
-/Users/yohei/gikai-map-hokkaido/
-├── site/          Next.js フロントエンド（メイン作業場所）
-│   ├── src/app/   ページ（[city]動的ルート + トップレベル機能）
-│   ├── src/components/  共通コンポーネント
-│   ├── data/      ビルド時に読む市町村データ
-│   └── AGENTS.md  Next.js 16 の注意書き
-├── scraper/       市町村別スクレイピングスクリプト
-├── data/          収集生データ（site/data/ に同期される）
-├── agents/        自動化パイプライン（orchestrator等）
-├── scripts/       バッチスクリプト
-└── DESIGN.md      UI 仕様書（必読）
+<repo>/
+├── site/                  Next.js フロントエンド（メイン作業場所）
+│   ├── src/app/           ページ（[city]動的ルート + トップレベル機能）
+│   ├── src/components/    共通コンポーネント
+│   ├── src/lib/mcp/       MCP ツール定義（共通）
+│   ├── data/              ビルド時に読む市町村データ（process.cwd()/data）
+│   └── AGENTS.md          Next.js 16 固有の注意書き
+├── mcp-server/            stdio 版 MCP サーバー（個人 Claude Code/Desktop 連携）
+├── scraper/               市町村別スクレイピングスクリプト
+├── data/                  収集生データ（site/data/ に同期される）
+│   └── {slug}/
+│       ├── minutes/       議事録 raw（{council_id}.json + index.json）
+│       ├── segments/      AI 検索用フラット化データ
+│       ├── members.json
+│       └── ...
+├── agents/                自動化パイプライン（orchestrator等）
+├── scripts/               バッチスクリプト（build-segments.mjs 等）
+├── docs/                  運用ドキュメント
+└── DESIGN.md              UI 仕様書（必読）
 ```
 
 ビルド時は `site/` がルートになる（Vercel `rootDirectory: site/`）。`process.cwd()` は `site/` を返す。
+
+---
+
+## ビルド・デプロイの掟
+
+2026年5月時点で確立した前提。崩すと build 時間が 10min → 31min に逆戻りする。
+
+### 静的生成
+- `next.config.ts` の `experimental.cpus = 2`、`staticGenerationMaxConcurrency = 16` を維持（Vercel build 並列化）。
+- 大量パスのルートは **ISR** にする: `dynamicParams = true` + `revalidate = 86400`。
+- `generateStaticParams` は recent N（`/[city]/minutes/[id]`）/ priority cities（`/[city]/members/[id]`）/ top tags（`/topics/[tag]`）のみ。残りは ISR で動的レンダ。
+
+### Function バンドル
+- Vercel Function は 250MB 制限あり。`next.config.ts` の `outputFileTracingExcludes` で minutes 等のサイズの大きいデータを除外している。
+- 古い minutes は ISR で **GitHub Raw URL**（`raw.githubusercontent.com/{owner}/{repo}/{branch}/site/data/{slug}/minutes/{id}.json`）から fetch して取得する。
+- 動的 `path.join(process.cwd(), ...)` / `fs.readFileSync(fp, ...)` には **`/*turbopackIgnore: true*/`** を必ず付ける。Turbopack のファイルトレースが暴走して Function バンドルが肥大化する。
+
+### MCP ツール配置
+- 新規 MCP ツール: `site/src/lib/mcp/tools.mjs`（stdio + HTTP 共通）。
+- stdio 専用ツール（個人利用のみ、HTTP 配布しないもの）: `if (segmentsDir)` のような optional オプションで隔離する。
+- HTTP 配布版で出したくないツール（restricted データ依存）はパラメータ未渡しで無効化。
 
 ---
 
@@ -104,11 +138,13 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 |---|---|
 | 頼まれていない「ついでの改善」 | 差分が大きくなりレビュー不能になる |
 | `DESIGN.md` のカラー・フォントルールを破る | 公共サイトとしての信頼感を損なう |
-| 千歳専用・恵庭専用のハードコード | 全道展開のときに全書き換えになる |
+| 千歳専用・恵庭専用の機能ハードコード | 全道展開のときに全書き換えになる（※build最適化用の priority 配列は除く） |
 | Next.js の古いAPI（Pages Router・`getServerSideProps` 等）を使う | Next.js 16 では挙動が違う。`node_modules/next/dist/docs/` で確認 |
 | データ読み込みでエラーページに飛ばす | 空配列フォールバックが基本（議会未対応市でも画面が出るように） |
 | コメントで「何をしているか」を説明する | コードを読めばわかる。**なぜ**そうしたかだけコメントに書く |
-| 議員の氏名・発言の改変 | 公共情報の正確性が命。AI要約を付ける場合も原文リンクを必ず併記 |
+| 議員の氏名・発言の改変 | 公共情報の正確性が命。AI要約を付ける場合も原文リンクを必ず併記。※冗長な定型句（segment 内の重複話者プレフィックス等）の正規化は改変に含まない |
+| `dynamicParams = false` に逆戻し | build 時間が 10min → 31min に逆戻り。ISR + GitHub Raw fallback の構成は維持する |
+| 動的 `path.join` を `turbopackIgnore` 無しで書く | Function バンドル肥大化、ビルド警告 |
 | 勝手にコミット・プッシュ | 明示的に頼まれたときだけ |
 
 ---
