@@ -19,6 +19,8 @@ const PROCEDURAL_SPEAKER_PATTERNS = [
   /事務局長$/,
   /書記$/,
 ];
+const MEMBER_ROLE_REMAINDER_RE =
+  /^(?:副|臨時|仮)?(?:議員|議長|委員長|委員)$|^.+(?:常任|特別)?委員長$/;
 
 function isProceduralSpeaker(speaker) {
   if (!speaker) return false;
@@ -34,13 +36,62 @@ function parseScheduleDate(year, scheduleName) {
   return `${year}-${month}-${day}`;
 }
 
+function escapeRegex(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function stripSpeakerPrefix(text, speaker) {
+  if (!text || !speaker) return text;
+  const re = new RegExp(`^[◆◎○△]?${escapeRegex(speaker)}[\\s　]+`);
+  return text.replace(re, "");
+}
+
 function makeExcerpt(text, max = 100) {
   return text.replace(/\s+/g, " ").trim().slice(0, max);
+}
+
+async function loadMembers(slug) {
+  const membersPath = path.join(PROJECT_ROOT, "data", slug, "members.json");
+  try {
+    const raw = await fs.readFile(membersPath, "utf8");
+    const data = JSON.parse(raw);
+    return Array.isArray(data) ? data : [];
+  } catch (err) {
+    if (err.code === "ENOENT") return [];
+    throw err;
+  }
+}
+
+function buildSurnameIndex(members) {
+  // surname → { name, faction }
+  // First entry wins for duplicate surnames.
+  const map = new Map();
+  for (const m of members) {
+    if (!m?.name) continue;
+    const surname = m.name.split(/[\s　]/)[0];
+    if (!surname || map.has(surname)) continue;
+    map.set(surname, { name: m.name, faction: m.faction ?? null });
+  }
+  return map;
+}
+
+function matchMember(speaker, surnameIndex) {
+  if (!speaker) return null;
+  const stripped = speaker.replace(/^[0-9０-９]+番/, "");
+  for (const [surname, info] of surnameIndex) {
+    if (!stripped.startsWith(surname)) continue;
+    const remainder = stripped.slice(surname.length);
+    if (MEMBER_ROLE_REMAINDER_RE.test(remainder)) return info;
+  }
+  return null;
 }
 
 async function buildSegmentsForMunicipality(slug) {
   const minutesDir = path.join(PROJECT_ROOT, "data", slug, "minutes");
   const segmentsDir = path.join(PROJECT_ROOT, "data", slug, "segments");
+
+  const members = await loadMembers(slug);
+  const surnameIndex = buildSurnameIndex(members);
 
   const files = (await fs.readdir(minutesDir))
     .filter((f) => /^\d+\.json$/.test(f))
@@ -50,6 +101,7 @@ async function buildSegmentsForMunicipality(slug) {
 
   const indexEntries = [];
   let totalSegments = 0;
+  let matchedMemberCount = 0;
 
   for (const file of files) {
     const minutesPath = path.join(minutesDir, file);
@@ -73,6 +125,8 @@ async function buildSegmentsForMunicipality(slug) {
         const ordinal = segments.length + 1;
         const id = `${slug}-${councilId}-${scheduleId}-${String(ordinal).padStart(3, "0")}`;
         const text = group.texts.join("\n");
+        const member = matchMember(group.speaker, surnameIndex);
+        if (member) matchedMemberCount += 1;
         segments.push({
           id,
           municipality: slug,
@@ -84,6 +138,8 @@ async function buildSegmentsForMunicipality(slug) {
           speaker: group.speaker,
           speaker_role: ROLE_MAP[group.minuteType] ?? group.minuteType,
           is_procedural: isProceduralSpeaker(group.speaker),
+          member_name: member?.name ?? null,
+          member_faction: member?.faction ?? null,
           text,
           text_length: text.length,
           source: {
@@ -103,20 +159,21 @@ async function buildSegmentsForMunicipality(slug) {
 
         const speaker = minute.title;
         const minuteType = minute.minute_type;
+        const cleanedText = stripSpeakerPrefix(minute.text, speaker);
 
         if (
           group &&
           group.speaker === speaker &&
           group.minuteType === minuteType
         ) {
-          group.texts.push(minute.text);
+          group.texts.push(cleanedText);
           group.minuteIds.push(minute.minute_id);
         } else {
           flush();
           group = {
             speaker,
             minuteType,
-            texts: [minute.text],
+            texts: [cleanedText],
             minuteIds: [minute.minute_id],
           };
         }
@@ -137,6 +194,8 @@ async function buildSegmentsForMunicipality(slug) {
         speaker: seg.speaker,
         speaker_role: seg.speaker_role,
         is_procedural: seg.is_procedural,
+        member_name: seg.member_name,
+        member_faction: seg.member_faction,
         text_length: seg.text_length,
         excerpt: makeExcerpt(seg.text),
       });
@@ -154,14 +213,22 @@ async function buildSegmentsForMunicipality(slug) {
   const indexPath = path.join(segmentsDir, "_index.json");
   await fs.writeFile(indexPath, JSON.stringify(indexEntries, null, 2) + "\n");
 
-  return { totalSegments, councilCount: files.length };
+  return {
+    totalSegments,
+    councilCount: files.length,
+    memberCount: members.length,
+    matchedMemberCount,
+  };
 }
 
 async function main() {
   const slug = process.argv[2] ?? "chitose";
-  const { totalSegments, councilCount } = await buildSegmentsForMunicipality(slug);
+  const result = await buildSegmentsForMunicipality(slug);
+  const matchPct = result.totalSegments
+    ? Math.round((result.matchedMemberCount / result.totalSegments) * 100)
+    : 0;
   console.log(
-    `[${slug}] ${totalSegments} segments across ${councilCount} councils → data/${slug}/segments/`
+    `[${slug}] ${result.totalSegments} segments / ${result.councilCount} councils / member match: ${result.matchedMemberCount} (${matchPct}%) → data/${slug}/segments/`
   );
 }
 
