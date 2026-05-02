@@ -16,9 +16,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// Build時は出現頻度上位 N タグのみ static generate。
+// 他のタグは ISR で初回アクセス時レンダリング、エッジでキャッシュ。
+export const dynamicParams = true;
+export const revalidate = 86400; // 1 日
+
+const TOP_TAGS_PRERENDER = 30;
+
 export async function generateStaticParams() {
-  const tags = getAllTags();
-  return tags.map(({ tag }) => ({ tag }));
+  const tags = getAllTags(); // 既に出現頻度降順
+  return tags.slice(0, TOP_TAGS_PRERENDER).map(({ tag }) => ({ tag }));
 }
 
 export default async function TopicTagPage({ params }: Props) {

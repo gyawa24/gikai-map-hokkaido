@@ -21,12 +21,20 @@ function yearFromSessionName(name: string): string {
   return "不明";
 }
 
-export const dynamicParams = false;
+// Build時は priority cities のみ static generate。それ以外の市町村の議員ページは ISR で
+// 初回アクセス時にレンダリング → エッジでキャッシュ。members.json は小さく Function バンドルに
+// 含まれるので GitHub Raw fallback 不要。
+export const dynamicParams = true;
+export const revalidate = 86400; // 1 日
+
+const PRIORITY_CITIES_FOR_PRERENDER = ["chitose", "eniwa", "tomakomai", "hakodate"];
 
 function getMembers(city: string): Member[] {
   try {
-    const fp = path.join(process.cwd(), "data", city, "members.json");
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Member[];
+    const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "members.json");
+    return JSON.parse(
+      fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+    ) as Member[];
   } catch {
     return [];
   }
@@ -34,8 +42,15 @@ function getMembers(city: string): Member[] {
 
 function getActivity(city: string): Record<string, MemberActivity> {
   try {
-    const fp = path.join(process.cwd(), "data", city, "members_activity.json");
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Record<string, MemberActivity>;
+    const fp = path.join(
+      /*turbopackIgnore: true*/ process.cwd(),
+      "data",
+      city,
+      "members_activity.json"
+    );
+    return JSON.parse(
+      fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+    ) as Record<string, MemberActivity>;
   } catch {
     return {};
   }
@@ -74,8 +89,10 @@ export async function generateMetadata({
 export async function generateStaticParams() {
   const { getMunicipalities } = await import("@/lib/municipalities");
   const params: { city: string; id: string }[] = [];
+  const prioritySet = new Set(PRIORITY_CITIES_FOR_PRERENDER);
   for (const m of getMunicipalities()) {
     if (!m.active) continue;
+    if (!prioritySet.has(m.slug)) continue; // 他市町村は ISR で動的レンダ
     for (const member of getMembers(m.slug)) {
       params.push({ city: m.slug, id: String(member.seat_number) });
     }

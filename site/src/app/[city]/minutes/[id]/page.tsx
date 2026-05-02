@@ -115,12 +115,14 @@ export async function generateStaticParams() {
     if (!m.active) continue;
     // minutes/index.json が基本形。ない場合は city 直下の index.json を見る。
     const candidates = [
-      path.join(process.cwd(), "data", m.slug, "minutes", "index.json"),
-      path.join(process.cwd(), "data", m.slug, "index.json"),
+      path.join(/*turbopackIgnore: true*/ process.cwd(), "data", m.slug, "minutes", "index.json"),
+      path.join(/*turbopackIgnore: true*/ process.cwd(), "data", m.slug, "index.json"),
     ];
     for (const fp of candidates) {
       try {
-        const index = JSON.parse(fs.readFileSync(fp, "utf-8")) as MinutesIndexItem[];
+        const index = JSON.parse(
+          fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+        ) as MinutesIndexItem[];
         if (!Array.isArray(index)) continue;
         // council_id 降順で最新 N 件のみ static generate（残りは ISR）
         const recent = [...index]
