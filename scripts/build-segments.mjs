@@ -19,12 +19,67 @@ const PROCEDURAL_SPEAKER_PATTERNS = [
   /事務局長$/,
   /書記$/,
 ];
-const MEMBER_ROLE_REMAINDER_RE =
-  /^(?:副|臨時|仮)?(?:議員|議長|委員長|委員)$|^.+(?:常任|特別)?委員長$/;
+const ADMIN_ROLE_KEYWORDS = [
+  "副市長",
+  "市長",
+  "教育長",
+  "部長",
+  "局長",
+  "課長",
+  "室長",
+  "主幹",
+  "主査",
+  "主任",
+];
+const MEMBER_ROLE_KEYWORDS = ["議員", "議長", "委員長", "委員"];
 
 function isProceduralSpeaker(speaker) {
   if (!speaker) return false;
   return PROCEDURAL_SPEAKER_PATTERNS.some((re) => re.test(speaker));
+}
+
+function isMemberRoleSpeaker(speaker) {
+  if (!speaker) return false;
+  if (ADMIN_ROLE_KEYWORDS.some((kw) => speaker.includes(kw))) return false;
+  return MEMBER_ROLE_KEYWORDS.some((kw) => speaker.includes(kw));
+}
+
+function toHalfWidthDigits(s) {
+  return s.replace(/[０-９]/g, (c) =>
+    String.fromCharCode(c.charCodeAt(0) - 0xff10 + 0x30)
+  );
+}
+
+function extractNameInfo(speaker) {
+  if (!speaker) return null;
+  let s = speaker;
+
+  // Capture leading N番 as seat-number hint, then strip
+  const seatMatch = s.match(/^([0-9０-９]+)番/);
+  const seatNumberHint = seatMatch
+    ? parseInt(toHalfWidthDigits(seatMatch[1]), 10)
+    : null;
+  s = s.replace(/^[0-9０-９]+番/, "");
+
+  // Pattern: {role}（{name}）
+  let m = s.match(/^([^（()]+)（([^（）()]+)）$/);
+  if (m) {
+    s = m[2];
+  } else {
+    // Pattern: （{name+role}）
+    m = s.match(/^（([^（）()]+)）$/);
+    if (m) s = m[1];
+  }
+
+  // Strip trailing role token (only the role keyword, not preceding committee name)
+  s = s.replace(/(?:副|臨時|仮)?(?:議員|議長|委員長|委員)$/, "");
+
+  // Capture disambiguation bracket content as given-name hint, then strip
+  const bracketMatch = s.match(/[［\[]([^］\]]+)[］\]]/);
+  const givenNameHint = bracketMatch ? bracketMatch[1].trim() : null;
+  s = s.replace(/[［\[][^］\]]*[］\]]/g, "").trim();
+
+  return { candidate: s, givenNameHint, seatNumberHint };
 }
 
 function parseScheduleDate(year, scheduleName) {
@@ -62,26 +117,69 @@ async function loadMembers(slug) {
   }
 }
 
-function buildSurnameIndex(members) {
-  // surname → { name, faction }
-  // First entry wins for duplicate surnames.
-  const map = new Map();
-  for (const m of members) {
-    if (!m?.name) continue;
-    const surname = m.name.split(/[\s　]/)[0];
-    if (!surname || map.has(surname)) continue;
-    map.set(surname, { name: m.name, faction: m.faction ?? null });
-  }
-  return map;
+function buildMemberIndex(members) {
+  // Each entry: { fullname, fullnameCompact, surname, given, seatNumber, faction }
+  return members
+    .filter((m) => m?.name)
+    .map((m) => {
+      const fullname = m.name;
+      const fullnameCompact = fullname.replace(/[\s　]/g, "");
+      const parts = fullname.split(/[\s　]/);
+      const surname = parts[0];
+      const given = parts.slice(1).join("");
+      return {
+        fullname,
+        fullnameCompact,
+        surname,
+        given,
+        seatNumber: typeof m.seat_number === "number" ? m.seat_number : null,
+        faction: m.faction ?? null,
+      };
+    });
 }
 
-function matchMember(speaker, surnameIndex) {
-  if (!speaker) return null;
-  const stripped = speaker.replace(/^[0-9０-９]+番/, "");
-  for (const [surname, info] of surnameIndex) {
-    if (!stripped.startsWith(surname)) continue;
-    const remainder = stripped.slice(surname.length);
-    if (MEMBER_ROLE_REMAINDER_RE.test(remainder)) return info;
+function matchMember(speaker, memberIndex) {
+  if (!isMemberRoleSpeaker(speaker)) return null;
+  const info = extractNameInfo(speaker);
+  if (!info?.candidate) return null;
+  const { candidate, givenNameHint, seatNumberHint } = info;
+
+  // 1. Disambiguate by seat number + surname (handles "１８番佐々木議員" → 佐々木 雅宏)
+  if (seatNumberHint != null) {
+    for (const m of memberIndex) {
+      if (m.seatNumber !== seatNumberHint) continue;
+      if (m.surname && candidate.startsWith(m.surname)) {
+        return { name: m.fullname, faction: m.faction };
+      }
+    }
+  }
+
+  // 2. Disambiguate by given-name bracket hint (handles "佐々木［雅宏］委員長")
+  if (givenNameHint) {
+    for (const m of memberIndex) {
+      if (!m.surname) continue;
+      if (candidate === m.surname || candidate.startsWith(m.surname)) {
+        if (m.given && m.given === givenNameHint) {
+          return { name: m.fullname, faction: m.faction };
+        }
+      }
+    }
+  }
+
+  // 3. Exact full-name / compact-name match (unambiguous when present)
+  for (const m of memberIndex) {
+    if (candidate === m.fullname || candidate === m.fullnameCompact) {
+      return { name: m.fullname, faction: m.faction };
+    }
+  }
+
+  // 4. Surname-only / prefix match — only when exactly one member matches.
+  // Multiple matches without a disambiguator are left unmatched for accuracy.
+  const candidates = memberIndex.filter(
+    (m) => m.surname && candidate.startsWith(m.surname)
+  );
+  if (candidates.length === 1) {
+    return { name: candidates[0].fullname, faction: candidates[0].faction };
   }
   return null;
 }
@@ -91,7 +189,7 @@ async function buildSegmentsForMunicipality(slug) {
   const segmentsDir = path.join(PROJECT_ROOT, "data", slug, "segments");
 
   const members = await loadMembers(slug);
-  const surnameIndex = buildSurnameIndex(members);
+  const memberIndex = buildMemberIndex(members);
 
   const files = (await fs.readdir(minutesDir))
     .filter((f) => /^\d+\.json$/.test(f))
@@ -125,7 +223,7 @@ async function buildSegmentsForMunicipality(slug) {
         const ordinal = segments.length + 1;
         const id = `${slug}-${councilId}-${scheduleId}-${String(ordinal).padStart(3, "0")}`;
         const text = group.texts.join("\n");
-        const member = matchMember(group.speaker, surnameIndex);
+        const member = matchMember(group.speaker, memberIndex);
         if (member) matchedMemberCount += 1;
         segments.push({
           id,

@@ -1,0 +1,370 @@
+[
+  {
+    "id": "hakodate-1113-2-001",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "財務部長（川村義浩）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号令和３年度函館市一般会計補正予算（第11号）について、提案理由を御説明申し上げます。\n　このたびの補正予算は、歳出では、国の対策である新型コロナウイルス感染症の影響を受けた子育て世帯への支援として、18歳以下の子供１人当たり先行給付する５万円に加え、現金５万円を追加で支給するための経費の計上をお願いするものでございます。\n　一方、歳入につきましては、歳出補正に関わる特定財源の補正をお願いするものでございます。\n　以下、予算の内容について御説明いたします。\n　第１条は、歳入歳出予算の補正でございますが、歳入歳出それぞれ14億3,500万円を追加いたしまして、補正後の歳入歳出予算の総額を1,450億7,442万2,000円とするものでございまして、その内容につきましては、第１表のとおりでございます。\n　なお、予算の内容の詳細につきましては、３ページ以降の明細書に記載のとおりでございます。\n　以上でございます。",
+    "text_length": 413,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-002",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "民主・市民ネットの板倉でございます。\n　それでは、質疑を行わせていただきたいと思います。\n　この給付金につきましては、政府の方針が二転、三転する中で、全国の自治体の担当者は大変御苦労されたと聞いております。函館市の担当者の方々も同様に翻弄されたのではないかとお察しを申し上げる次第でございます。\n　先月の臨時会でもこのことについて質疑を行いましたが、前回は１回目現金５万円、２回目はクーポンで５万円と、こういう方針を前提に質問をさせていただきましたので、改めて今回の給付について質問したいと思います。\n　この給付の対象者の数についてですけれども、前回の質疑でその対象の数をお聞きし、合計では２万8,000人と見込んでいると、こういうふうにお答えいただいておりましたが、児童手当受給者については、昨日──23日に振り込まれるとお聞きしておりますけれども、実際に振込が行われた数はどうだったのか、お聞かせいただきたいと思います。",
+    "text_length": 412,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-003",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昨日の振込実績についてのお尋ねでございます。\n　昨日の振込につきましては、先行給付金５万円を本市から児童手当を受給している世帯へ支給したもので、世帯に高校生相当の兄弟がいる場合は、この分も併せて支給しており、実績といたしましては、１万2,666世帯、対象児童数２万1,919人で、このうち高校生相当の対象児童数は1,978人となっております。\n　以上でございます。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-004",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "前回は児童手当の受給対象者数が約２万2,500人とおっしゃっておりましたが、昨日時点で振込が行われた対象児童数が２万1,919人、その中に児童手当を受給されている方のきょうだい──お兄ちゃんとかお姉さんとか、そういう方の高校生の数も含んでいるということのようです。\n　それでは、基準が９月末ということですけれども、この住民基本台帳によると、16歳から18歳までは5,967人となっておりますが、16歳から18歳までで対象にならない人、例えば働いている人ですとか、働いていないけれども、高校に行っていない方ですとか、そういうようなことがあるのかどうかも含めてですけれども、対象にならない方というのは、いるのかどうか、お聞かせいただきたいと思います。",
+    "text_length": 323,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-005",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "16歳から18歳までの児童についてのお尋ねでございます。\n　給付金の支給対象児童の取扱いについて国から指針が示されており、16歳から18歳までの高校生相当の児童につきましては、就職しているかや独立しているかといったことにかかわらず、父または母等から監護されていたり、生計関係がある場合に支給対象になるとされており、高校生相当の児童が結婚している場合は配偶者が監護することとなるため、支給対象とならないものであります。\n　以上でございます。",
+    "text_length": 219,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-006",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "結婚されていなければ、ほぼ支給対象になるというようなことだと思います。\n　それでは次に、児童手当の支給には、標準世帯で960万円という所得制限があり、今回の特別給付でも同様の取扱いになっています。\n　一方で、両親それぞれが950万円の所得で合算して1,900万円となる家庭も対象になると、こういうことで不公平な事態もあると言われておりますけれども、函館市において、児童手当の対象年齢で支給を受けていない方──非受給者といいますか、そういう方はどのくらいいらっしゃるのかお聞かせいただきたいと思います。",
+    "text_length": 250,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-007",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "所得制限により対象から外れた世帯についてのお尋ねでございます。\n　公務員につきましては、児童手当の受給者情報を有していないことから、本市から児童手当を給付している対象範囲で申し上げますと、所得制限により給付金の対象から外れた世帯は９月30日の基準日で600世帯、児童数としては981人となっております。\n　以上でございます。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-008",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "600世帯だということで、他の自治体などでは、所得制限を設けないで全児童に給付するといったところもあるようです。税負担ですとか、あるいは世帯所得の不公平感をなくすためにも、今お聞きしたら600世帯ということですから、18歳以下全員に給付すべきかなとなというふうにも考えておりますけれども、質疑ですから、そのことについては、ここではお聞きしませんが、そういうふうに考えています。\n　それでは、次に、今回残り５万円──２回目の５万円を現金で給付すると、こういうことにいたしましたけれども、その理由についてお聞かせいただきたいと思います。",
+    "text_length": 266,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-009",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "追加給付金の給付方法についてのお尋ねでございます。\n　追加給付金の給付方法につきましては、クーポン券のほか、現金での給付も自治体が地域の実情に応じて判断して実施できるものと国から指針が示され、庁内で検討を進めてきたところでありますが、クーポン券の場合、利用可能店舗の募集やクーポン券の印刷等の期間を考慮しますと、年度内に事業開始することが困難であること、一方現金給付の場合、速やかな給付が可能であるほか、市民から現金による給付を望む声が多く寄せられておりましたことから、現金による給付が望ましいと考えたところでございます。\n　以上でございます。",
+    "text_length": 272,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-010",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "給付を受ける方々にすると、現金とクーポンというよりも、現金で一括のほうがと考えるのは当然のことだというふうに思います。それでは、これはほかの自治体などでは、一括で10万円を給付すると、こういうふうなところもありました。そういうことができなかったのか、あるいは年内に給付するというような自治体もありますけれども、本市ではそれができなかったのかどうか、お聞かせいただきたいと思います。",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-011",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一括での10万円の給付等についてのお尋ねでございます。\n　本市では、先の第２回市議会臨時会において５万円の先行給付金について補正予算の議決をいただき、年内に給付するため、電算システム会社等との調整を進め、先行給付金を昨日振込したところでございます。年内での一括給付や追加給付をするとした場合、予算は５万円分しか措置していないため、追加分の補正予算の議決をはじめ、電算システムのプログラム変更や給付金の振込手続等が必要となり、これらに一定の時間を要するため、年内での対応は難しかったところでございます。\n　以上でございます。",
+    "text_length": 261,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-012",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "確かに短時間の中でそういったことを行わなければならないということになると、難しさがあるということも承知しております。一方では、一括で給付したところもありましたから、そういったことが可能になるような努力もできなかったのかどうかということについて、お聞きしてみました。\n　それで、次にですが、児童手当の給付支給情報を使うと、こういうことになっているわけですけれども、離婚されて独り親家庭になった子供の給付金が、夫の口座に振り込まれるというようなことなど、実際に子供に渡らないケースがあるということが問題になっています。先日の新聞にも、そういったケースについて、お困りになっていらっしゃる──これは女性のお話ですけれども──そういうようなことが載っておりました。\n　函館市においては、そうしたことに対する対応はどのように行っているのか、お聞かせいただきたいと思います。",
+    "text_length": 381,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-013",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "離婚した世帯における給付金についてのお尋ねでございます。\n　国が自治体に示している給付金事務の取扱指針では、９月30日の基準日において監護を行っていた方が対象者とされていることから、離婚により現在実際に子育てをしている方であっても、基準日に対象でなかった方には支給されないものとなっております。\n　なお、市が把握しているＤＶ避難者の方には、既に本給付金の制度や手続等について周知しておりますが、支給前であれば、基準日にかかわらずＤＶ避難者の方に支給されるものとなっております。\n　以上でございます。",
+    "text_length": 249,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-014",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりましたというか、できるだけ実際に子供を監護されていらっしゃる方の手元に給付金が届くということにしていただきたいというふうに思います。\n　先日の新聞ですと、地方創生担当大臣が独り親などに地方創生臨時交付金を活用することも可能だというような答弁をしているというお話もありましたので、そういった相談があった場合、どういう対応をするのか、市の中でも少し検討していただきたいなというふうに思います。\n　それでは、最後になりますが、児童手当受給者への給付の日程、それからそれ以外の方々への給付の日程、そういったことや、申請状況、詳しい状況は別にしても、それらの今後の日程について、お聞かせいただきたいと思います。",
+    "text_length": 303,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-015",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の給付日程についてのお尋ねでございます。\n　昨日振込をした児童手当受給者の追加給付金５万円につきましては、１月６日に振込を予定しております。また、それ以外の申請が必要な方につきましては、速やかにホームページ等で広く周知し、来週早々から申請の受付を開始し、申請書の受付後、給付まで早くておおむね２週間程度を要しますが、先行給付金との合算額10万円を一括で支給してまいりたいと考えているところでございます。\n　なお、過去の児童手当の受給者情報を基に、対象と思われる方に対しましては、年内に申請勧奨の通知を行ってまいりたいと考えております。\n　以上でございます。",
+    "text_length": 280,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1113-2-016",
+    "municipality": "hakodate",
+    "council_id": 1113,
+    "council_name": "令和 ３年第３回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月24日－01号",
+    "date": "2021-12-24",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。できるだけ早く、そして遺漏がないように給付に努めていただきたいと、このことをお願い申し上げまして、私の質疑を終わらせていただきます。",
+    "text_length": 73,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1113.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  }
+]

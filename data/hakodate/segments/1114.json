@@ -1,0 +1,1405 @@
+[
+  {
+    "id": "hakodate-1114-2-001",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "財務部長（川村義浩）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号令和３年度函館市一般会計補正予算（第12号）について、提案理由を御説明申し上げます。\n　このたびの補正予算は、歳出では、国の対策である世帯全員の住民税均等割が非課税である世帯等への支援として、１世帯当たり10万円の給付金の支給や、子育て世帯への支援として、国の子育て世帯への臨時特別給付金の対象とならない世帯に対し、子供１人当たり10万円の支給に要する経費を計上するほか、市民の消費喚起や地域経済の回復を図るため、プレミアム付商品券の発行などに係る準備を行うための債務負担行為の設定をお願いするものでございます。\n　一方、歳入につきましては、歳出補正に関わる特定財源の補正のほか、地方創生臨時交付金の増額補正をお願いするものでございます。\n　以下、予算の内容について御説明いたします。\n　第１条は、歳入歳出予算の補正でございますが、歳入歳出それぞれ59億8,180万円を追加いたしまして、補正後の歳入歳出予算の総額を1,510億5,622万2,000円とするものでございまして、その内容につきましては第１表のとおりでございます。\n　第２条は繰越明許費、第３条は債務負担行為のそれぞれの追加でございまして、その内容につきましては、第２表及び第３表のとおりでございます。\n　なお、予算の内容の詳細につきましては、５ページ以降の明細書及び調書に記載のとおりでございます。\n　以上でございます。",
+    "text_length": 598,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-002",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "民主・市民ネットの板倉でございます。\n　今臨時会に提案されました案件について、もっと早く実施の決断してほしかったものなどもありますけれども、基本的に理解いたします。\n　そこで、少し詳しく事業内容などについて確認してまいりたいと思います。\n　まず初めに、住民税非課税世帯等への特別給付金についてですけれども、まず、対象者についてですが、生活保護世帯を含む住民税非課税世帯が約５万2,400世帯、家計が急変し非課税相当の収入になった世帯が約3,600世帯としているわけですけれども、生活保護世帯を除く住民税均等割非課税世帯は何世帯あるのか。また、家計急変世帯数を3,600世帯とした根拠は何なのか、お聞かせください。",
+    "text_length": 306,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-003",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象世帯数についてのお尋ねですが、非課税世帯につきましては5万2,391世帯を見込んでおり、このうち、生活保護世帯数については、受給状況に基づき約9,300世帯と見込んでいるところでありますことから、生活保護世帯を除く非課税世帯といたしましては約４万3,000世帯と見込んでいるところであります。また、家計急変世帯数につきましては、申請していただいた上で要件を満たしているかどうかなどを審査し、支給決定することになりますことから、現時点では明確な世帯数を把握することが難しいことから、予算計上に当たっては、国への補助申請時に示された令和２年度実施のひとり親世帯臨時特別給付金実績の全体の支給対象児童数に占める家計急変者の割合である７％を、非課税世帯数に乗じて推計したところであります。\n　以上でございます。",
+    "text_length": 353,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-004",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "今お答えいただいた、特に家計急変世帯に関わってですけれども、これはお答えでは、令和２年度の独り親世帯臨時特別給付金実績と、こういうようなことをおっしゃっておりましたけれども、令和２年度のとき、あるいは独り親世帯の給付時と、状況や対象が異なっていますから、７％で推計するというのが妥当なのかどうかというのは少し疑問が残ると思います。\n　では、家計急変世帯数がこの推計より多く、予定を超えた場合、どのように対応するのか、お聞かせいただきたいと思います。",
+    "text_length": 224,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-005",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "家計急変世帯数が想定を超えた場合の対応についてのお尋ねですが、家計急変世帯につきましては、申請していただいた上で要件を満たしているかどうかなどを審査し、支給決定することになりますことから、想定を超える対象世帯数になることも想定しておりまして、この場合は、申請状況を踏まえながら予算を確保するなど、適切に対応してまいりたいと考えております。\n　以上でございます。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-006",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "超えた場合には適切に対応する。つまり、給付の対象──給付していくと、こういうようなことだというふうに思いますから、ぜひしっかりとお願いしたいと思います。\n　では、申請についてはどのように行うのか。また、申請はいつからいつまで行うのかについて、お伺いしたいと思います。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-007",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申請などの手続についてのお尋ねですが、非課税世帯に対しましては、現時点で２月中旬頃に市から支給要件の確認書を送付する予定で、世帯主名や口座番号などを確認の上、必要事項を記入し返送いただくこととなり、確認書の提出期限は発行日から３か月以内となっております。また、家計急変世帯に対しましては、現時点で２月下旬頃に公共施設をはじめとした様々な窓口に申請書類を用意し、対象となる方が入手しやすい環境を整えてまいりたいと考えており、申請書の提出期限は令和４年９月30日となっているところでございます。\n　いずれにいたしましても、予算の議決後、非課税世帯の確認書や家計急変世帯の申請書の作成を進めてまいりますので、確認書送付時期や受付開始時期などの詳細につきましては、整い次第、改めてお知らせしてまいりたいと考えております。\n　以上でございます。",
+    "text_length": 367,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-008",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "そのときの周知はどのように行っていくのか、お聞かせください。",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-009",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "周知についてのお尋ねですが、周知につきましては、市政はこだてや市のホームページへの掲載、新聞への広告掲載など、広く周知してまいりたいと考えており、また、視覚障がい者向けの点字版・録音版周知チラシも作成して対応してまいりたいと考えております。\n　以上でございます。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-010",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "先ほどのお答えにありましたように、非課税世帯に対しては現時点では２月中旬頃に確認書を送付するということ、それから、家計急変世帯に対しては２月の下旬頃に公共施設やいろいろな場所に申請書類を用意するというようなことでございました。\n　いずれにしても、周知をしっかりしていただいて、皆さんに理解いただくと、あるいはその申請をしていただくということを、遺漏のないように進めていただきたいというふうに思います。\n　それで、今のお答えにありましたけれども、非課税世帯に対する確認書を送付してから３か月──確認書の提出期限が発行日から３か月だということで、いただいた資料には、３か月経過して確認書の返送がない場合は辞退したものとみなすというふうに記載されておりましたが、非課税世帯というのは比較的高齢者世帯が多いというふうに思いますし、そういった世帯に確認書を送付してから３か月間で返送がない場合は辞退だというふうにするのは少し機械的過ぎるのではないかというふうに思うんですが、その辺についてお考え、何かありますか。",
+    "text_length": 451,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-011",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "確認書の返送についてのお尋ねですが、確認書の返送期限につきましては、国の支給要領などに基づき、発行日から３か月とするものでございますが、本市といたしましては、支給には確認書の提出が必要である旨の周知に努めるとともに、返送期限が近づいても確認書の返送がない場合には、改めて案内文書を送付するほか、国の取扱いなどを確認しながら、支給対象世帯に対しまして給付金を支給できるよう努めてまいりたいと考えております。\n　以上でございます。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-012",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "趣旨を踏まえて、支給漏れのないように丁寧に行っていただきたいと思います。\n　次に、発送またはその周知をして、確認書や申請書、こういったものが返送されるわけですけれども、市による確認及び支給にはどの程度の時間を見込んでいるのか、支給時期は３月上旬以降ということですが、上旬を目標にしているということなのか──できるだけ早期の支給が望まれるというふうに思いますけれども──そこについての考えというか、どのように行っていくのか、お聞かせいただきたいと思います。",
+    "text_length": 227,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-013",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給までに要する時間や支給開始時期についてのお尋ねですが、支給までに要する時間につきましては、市が確認書または申請書を受理した日から３週間程度で支給することを見込んでいるところでございます。また、支給開始の時期につきましては、税情報や生活保護情報等を抽出するなどの支給に必要なシステムの構築に１か月程度を要すると想定しているほか、確認書等の送付や申請受付・審査などの時間も必要となるところでありますが、国からは、可能な限り令和３年度内の早期に支給開始されることが望ましいと示されていることを踏まえ、本市におきましても早期に支給できるよう努めてまいりたいと考えております。\n　以上でございます。",
+    "text_length": 296,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-014",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "早期に支給開始したいということですので、ぜひ努力いただきたいというふうに思います。\n　基準日に関してなんですが、この基準日以降──令和３年12月10日というのが基準日になっておりますけれども──この基準日以降に転入された方、あるいはその認定をされた方、こういった方々についての取扱い、これについてはどのように考えているのか、お聞かせいただきたいと思います。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-015",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基準日以降に転入された方などの取扱いについてのお尋ねですが、非課税世帯の支給対象となる令和３年12月10日の基準日に住民基本台帳に記録されている方とは、国が定める支給要領において異動日により判断することとなっておりますことから、異動日が基準日の翌日以降の場合は、基準日における当該世帯の住所地である市町村が支給することとなります。なお、家計急変世帯につきましては、申請日における当該世帯の住所地である市町村が支給要件に該当するかを審査の上、支給することとなります。\n　以上でございます。",
+    "text_length": 243,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-016",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "異動というか、転出・転入してすぐ届出をすれば特に問題ないのかもしれませんけれども、少し時間が空くとか、そういうようなこともあるでしょうし、そういったことに関してどうなのかというようなことを疑問にお持ちになる方もいらっしゃるでしょうから、そういったところの相談といいますか、そういったことについても丁寧に行っていただきたいというふうに思います。\n　いずれにしろ、趣旨に沿って、先ほども申し上げましたけれども、できるだけ早く、そして、一人の漏れもないように支給できるようにお願いしたいというふうに思います。\n　それでは、この項については終わらせていただいて、次に、子育て世帯応援給付金給付事業に関わってですけれども、このことに関しては昨年12月の臨時会でも質問いたしました。今回、所得制限で対象にならなかった世帯、そして、離婚等により受け取れない──離婚だけではもちろんありませんけれども──受け取れない状況の世帯に対して支給するということになった、その理由についてお聞かせいただきたいと思います。",
+    "text_length": 447,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-017",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "子育て世帯応援給付金の支給理由についてのお尋ねでございます。\n　国の子育て世帯への臨時特別給付金におきましては、児童の養育者の年収が児童手当の所得制限を超える方や、離別により現在実際に児童を養育していても基準日に国の給付金の対象とならない独り親の方につきましては、給付の対象から外れているため、本市といたしましては、これらの方々への支援について検討していたところであります。こうした中、国から昨年12月27日に、地方公共団体が独自の判断で実施する子育て世帯への臨時特別給付金の対象世帯の拡大などについて、新型コロナウイルス感染症対応地方創生臨時交付金の活用が可能である旨示されましたことから、このたび事業を実施することとしたものでございます。\n　以上でございます。",
+    "text_length": 332,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-018",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "検討してきたというお話ですが、どのように検討されてきたのかちょっと分かりませんが、昨年12月の臨時会で、所得制限を設けないで全ての子供に支給すべきだと申し上げました。それから、独り親家庭に対しても行き渡るようにしてほしいと、全ての子供に行き渡るようにしてほしいというふうに検討を求めたつもりですけれども、そのときの答弁は、支給されないと、こういうことでした。要は、国の地方創生臨時交付金が今後は使えると、いいですよと、対象にしますと、こういうことになったからというふうに思えるわけでして、自治体としての、函館市としての子供施策としての独自性ですとか、あるいは主体性ですとか、そういったことは前回の答弁から考えると、ないというふうに言えるんではないだろうかというふうに思います。\n　そこで、今回対象児童数を約1,800人とするということですけれども、前回は児童手当の対象年齢児童に限ったとして、600世帯、981人というようなお話でしたけれども、今回約1,800人とした理由についてお伺いしたいと思います。",
+    "text_length": 452,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-019",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象児童数についてのお尋ねでございます。\n　本給付金の対象児童数につきましては、児童手当の給付状況などに基づき推計したところでございますが、児童手当の所得制限を超えている、いわゆる特例給付を受給している世帯につきましては、令和３年９月分の支給実績から600世帯、児童数981人、児童手当の所得制限を超えている高校生を養育する世帯につきましては、児童手当の対象年齢人口に対する支給割合を用いて推計し、345世帯、児童数543人、離別により国の給付金を受給できない世帯につきましては、昨年度の児童扶養手当の新規申請の実績に基づき推計し、195世帯、児童数295人、合計1,140世帯、児童数1,819人と見込んだところでございます。\n　以上でございます。",
+    "text_length": 325,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-020",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。児童手当の所得制限の実績から、前回お聞きした600世帯、児童数981人ということと、高校生あるいは他の支給割合等をそれぞれ掛け合わせて1,140世帯の1,819人と見込んだということでした。\n　それでは、申請に関わって、申請方法及び申請の時期についてはどうなのか。また、その際の周知はどのように行っていくのかについてお聞きしたいと思います。",
+    "text_length": 177,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-021",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申請方法等についてのお尋ねでございます。\n　児童手当の所得制限を超える方、いわゆる児童手当の特例給付を受給している方のほか、国の子育て世帯への臨時特別給付金の申請をしたものの、所得制限により支給対象外となった方に対しましては、市から子育て世帯応援給付金の申請書を送付する予定としているほか、その他の方につきましては、広報紙市政はこだてや市のホームページ、子育てアプリＧｒｕｃｃｏなどにより広く周知を行う予定であり、申請方法につきましては郵送または窓口等への提出を考えております。また、申請時期につきましては、２月中旬の受付開始を目指し、支給に向けた準備作業を進めることとしておりますが、準備が整い次第、速やかに受付を開始したいと考えております。\n　以上でございます。",
+    "text_length": 333,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-022",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "２月中旬の受付開始を目指すということでしたので、これもできるだけ早くそういったことが進められるようにお願いしたいというふうに思います。\n　次に、受付開始は２月中旬ということでしたが、支給開始時期について、これは前回所得の確認が必要だと、こういうような方に対しては少し時期が遅くなるということでしたけれども、今回所得制限もないということで、所得の確認が必要ではなくなったということですから、少し早めることができるんではないかというふうに考えるんですけれども、この支給開始についてはいつを予定しているのか、お聞きしたいと思います。",
+    "text_length": 263,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-023",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給開始時期についてのお尋ねでございますが、支給開始時期につきましては、申請書の受付後に内容を審査の上、子育て世帯への臨時特別給付金もありますので、そちらのほうとの重複等もきっちり確認してまいりたいと考えておりますので、まず支払い準備が整い次第、順次申請者の指定口座に振り込むこととしております。３月中旬の支給開始を目指してまいりたいと考えております。\n　以上でございます。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-024",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "３月中旬の支給開始を目指すということで、これもできるだけ早くそういったことが行われるようにお願いしたいと思います。\n　それで、先ほどの非課税世帯のときにもお聞きいたしましたが、基準日以降に転入された方々ですとか、そういった方々についても、全ての子どもが受給できるようにすべきではないだろうかというふうに考えますけれども、その取扱いについてどのようにお考えになっているのか、お聞かせいただきたいと思います。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-025",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "子ども未来部長（深草涼子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基準日以降の転入者についてのお尋ねでございます。\n　子育て世帯応援給付金の対象となる世帯につきましては、基準日を子育て世帯への臨時特別給付金と同じ令和３年９月30日と考えておりまして、基準日に本市に住民登録がある世帯としておりますことから、基準日以降に転入した方につきましては、本給付金の対象とはしていないものであります。\n　以上でございます。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-026",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "非課税世帯への給付金の場合は、国のあれですから、全国民が対象ということになるんでしょう。函館で受給できなくても、以前いたところ、あるいはここから転出した場合には転出先でということができるんでしょうが、これは全ての自治体が所得制限を廃止するとか、あるいは独り親家庭に支給するというふうに決まっているわけではありませんから、そういうことを考えていきますと、子供に優しい施策をしていくというようなことから考えると、基準日９月30日から10月、11月、12月と、３か月もありますから、全ての子供を対象にしてあげてほしいなというふうに思います。\n　いずれにしても、せっかくこうして全ての子供にそういった手当を支給するということですので、できるだけ多く子供たちにそういった手が差し伸べられることを希望したいというふうに思います。\n　それでは、次に、函館市プレミアム付商品券発行事業費について、お聞きしたいと思います。\n　このプレミアム付商品券というのは３回目の発行ということになるわけですけれども、今回この事業を実施するということにした理由について、お聞かせいただきたいと思います。",
+    "text_length": 485,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-027",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "経済部長（小林利行）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "プレミアム付商品券の発行事業の実施理由についてのお尋ねでございます。\n　本市におきましては、これまでも市民の消費を喚起し、コロナ禍により大きな打撃を受けている地域経済の回復を図るため、国からの交付金を活用し、令和２年度──2020年度及び令和３年度──2021年度にプレミアム付商品券を販売したところでございます。しかしながら、本市の地域経済につきましては、コロナ禍が長期化する中で依然として厳しい状況が続いておりまして、その影響は現在も小売業や飲食業など、多くの業種に及んでいるものと認識してございます。\n　全国的にいまだ収束の兆しが見えないコロナ禍におきましても、ウィズコロナとしての経済対策は必要であると考えているところでございまして、このたびの商品券の発行につきましても、これまでと同様に国からの地方創生臨時交付金を活用することが可能となりましたので、改めて地域経済の回復につながる取組といたしまして、このたびの事業を実施しようとするものでございます。\n　以上でございます。",
+    "text_length": 441,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-028",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "そこで、その販売額及び発行数ですが、これは同じではありませんが、前回、前々回と同程度というふうに思いますが、そうした数にした理由についてお聞かせいただきたいと思います。",
+    "text_length": 84,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-029",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "経済部長（小林利行）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "プレミアム付商品券の販売額、発行数についてのお尋ねでございます。\n　プレミアム付商品券の販売額につきましては、限られた財源の中で少しでも多くの方に購入していただけるよう、従来と同様にプレミアム率を20％に設定いたしまして、１冊当たり１万2,000円分を１万円で販売し、１人５冊までの購入としているところでございます。また、発行数につきましては、昨年は当初20万冊を発行したところでございますが、お申込みいただきました全ての方が購入できるよう、追加で７万冊を発行し、合計で27万冊を発行したことや、同時期に18歳以下の子供がいる世帯に３万2,000冊を発行していた子育てサポート商品券の対象世帯の潜在需要なども考慮いたしまして、このたびは30万冊の発行を予定しているところでございます。\n　以上でございます。",
+    "text_length": 353,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-030",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "前回27万冊、今回30万冊ということです。プレミアム率も、対象は違いますけれども、例えばＧｏＴｏイート北海道、あの商品券は8,000円で１万円ですから、プレミアム率が25％というようなことで、今回これは１万円で1万2,000円ですから20％と、いろいろ考え方なり、あるいはその対象なりによって変わってくるのかも分かりませんが、そういったことも考えてもよかったのかなというふうには思います。\n　これまでこのプレミアム付商品券の発行事業を２回行ってまいりましたけれども、この実績と、それから効果、これについてはどう分析し、どう評価しているのか、お聞きしたいと思います。",
+    "text_length": 282,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-031",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "経済部長（小林利行）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これまでのプレミアム付商品券の発行事業の実績と効果のお尋ねでございます。\n　これまでも市のほうでは２回ほど、御質問のとおり、プレミアム付商品券の発行事業をしてございまして、まず、令和２年度の実績で申し上げますと、１冊１万2,000円の商品券、当初10万冊、追加発行９万冊の合計19万冊、発行総額22億8,000万円に対しまして、最終的に21億8,608万円が利用されたところでございます。\n　次に、令和３年度の実績といたしましては、当初20万冊、追加発行７万冊の合計27万冊、発行総額32億4,000万円に対しまして、最終的に31億3,606万6,000円が利用されたところでございます。\n　なお、取扱店につきましては、令和２年度は2,320店舗、令和３年度は2,293店舗となっているところでございます。また、事業効果といたしましては、コロナ禍でネット通販などが伸びている中で、プレミアム感により地域内消費の潜在需要が喚起されるほか、市民が商品券を利用することで多くの店舗で売上げが上がったなどのお声をいただくなど、地域経済の回復に一定の効果があったと考えているところでございます。\n　以上でございます。",
+    "text_length": 503,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-032",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "お答えをいただいた、令和２年度については発行総額が22億8,000万円、利用されたものが最終的に21億8,608万円ということ。それから、令和３年度につきましては27万冊で、発行総額が32億4,000万円、最終的に31億3,600万円余りが利用されたということで、地域経済に対する効果はあったというふうに私も判断させていただきます。\n　ただ、発行総額と、それから実際に利用された金額の間に、どちらの年度も１億円ぐらいの差があるということで、使われないでそのままということも少しはあるのかというふうに思いますから、今回発行するに当たって、できるだけ利用していただくと、それが地域経済にとっても効果があるということになりますので、そういったところの周知の徹底をお願いしたいというふうに思います。\n　これから作業を行っていくというふうに思いますが、取扱店舗ですが、この取扱店舗への周知はいつから行うのか、それから、これまでの事業実施で、利用者やその取扱店舗から意見も上がっているというふうに思いますけれども、それをどのように生かしていくのかということについて、何かあればお聞かせいただきたいと思います。",
+    "text_length": 498,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-033",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "経済部長（小林利行）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "プレミアム付品券の取扱店舗からの意見などについてのお尋ねでございます。\n　まず、御質問の取扱店の募集期間でございますが、３月上旬から下旬までの１か月間を予定しているところでございます。また、この間寄せられた意見などについてでございますが、特にこの本事業につきましては大きな問題がこれまでも生じているところではございませんけれども、事業者からは取扱店の参加のための募集期間が短かったという意見や、利用者からはプレミアム付商品券を販売していることが分からなかった、応募はがきが足りない、Ｗｅｂ申込が複雑といった意見をお聞きしているところでございます。\n　こうしたことから、このたびの商品券の発行の際には、これまで２週間程度であった取扱店の募集を、ただいま御答弁申し上げたとおり、１か月間といたしまして、前回参加していただいた取扱店宛てに個別に周知するほか、新たな取扱店確保のため、商店街等の関係団体を通じた周知、さらには市政はこだてや市のホームページへの掲載、ラジオやタウン誌などにより広く周知し、多くの事業者に参加していただきたいと考えているところでございます。また、購入希望者の募集に関しましても、前回と同様、市政はこだてに商品券の応募はがきを折り込み、多くの市民に周知を図るほか、Ｗｅｂ申込についても利用しやすい環境とし、利便性の向上を図ってまいりたいと考えているところでございます。\n　以上でございます。",
+    "text_length": 604,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-034",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "そういった声をしっかりお聞きして、改善できるところは改善していただきたいと思います。\n　それでは、最後になりますが、今回その所要額８億円ということですが、その内訳についてお伺いしたいと思います。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-035",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "経済部長（小林利行）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "所要額８億円の内訳についてのお尋ねでございます。\n　所要額につきましては、販売総額30億円に対する20％のプレミアム分６億円と、事務費２億円の計８億円について、令和３年度──2021年度から令和４年度──2022年度までの債務負担行為を設定しようとするものでございまして、国の交付金を活用するほか、北海道の補助金を財源としているところでございます。\n　なお、事務費の２億円の内訳につきましては、商品券の発行をはじめ、商品券取扱店の募集や購入希望者の受付、購入引換券の発送、販売所の開設、使用済商品券の換金、商品券に係る各種問合せへの対応などに要する経費となっているところでございます。\n　以上でございます。",
+    "text_length": 303,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-036",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（板倉一幸議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "新型コロナウイルスもオミクロン株になって、最近また感染者が全国的に、これは爆発的に増えているというような状況、あるいは函館も最近少しまた感染者が確認されるというような状況になっておりまして、地域の事業者の皆さん大変心配されていらっしゃるというふうに思いますので、できるだけ多くの事業者の皆さんに参加いただいて、その効果が波及するということ、そして、できるだけ多くの市民の皆さんにこの事業に参加といいますか、加わっていただく、利用していただく、そういった事業にしていただくようにお願いして、私の質疑を終わらせていただきたいと思います。",
+    "text_length": 266,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-037",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "それでは、第１号議案の住民税非課税世帯等に対する臨時特別給付金の関係経費について、質疑したいと思います。\n　微妙に同僚議員と重複するところがありますが、若干御容赦願いたいというふうに思います。\n　最初に、57億9,580万円が関係経費として計上されていますが、予算額の内訳についてお聞きします。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-038",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予算額の内訳についてのお尋ねですが、このたびの給付金につきましては、対象世帯に１世帯当たり10万円を支給するものでありまして、支給対象世帯を５万6,058世帯と見込み、給付金分として56億580万円を計上しておりますほか、給付事務に要する経費といたしまして１億9,000万円を計上しているところであります。\n　以上でございます。",
+    "text_length": 164,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-039",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "事務費として１億9,000万円が計上されているという答弁でした。\n　次に、函館市の全体の世帯数がどのくらいなのか、そのうち今回該当するであろう非課税世帯の数はどのくらい見込んでいるのか。また、生活保護世帯はどの程度なのか、お聞きします。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-040",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "全世帯数に対する非課税世帯の割合と生活保護世帯数についてのお尋ねですが、本制度の対象となる世帯のうち、非課税世帯につきましては５万2,391世帯を見込んでおり、令和３年12月末現在の本市の全世帯数14万577世帯に対する割合で申し上げますと、37.3％となっております。また、支給対象となります非課税世帯のうち、生活保護世帯数につきましては、同年12月時点での受給状況に基づき、約9,300世帯と見込んでいるところであります。\n　以上でございます。",
+    "text_length": 224,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-041",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "今まで函館市は、生活保護世帯が全道的にも多いというふうに言われていたわけですが、非課税世帯についても全世帯の14万世帯中37.3％、約４割近い方が非課税世帯と。日本の全国的な非課税世帯の割合は、厚生労働省が2019年は23.3％というふうに出しているわけです。そういう点では、非常に非課税世帯の割合が函館市は多いということです。結果として、この10万円の恩恵を受ける人が函館市は大変多いということが言えるんじゃないかというふうに思います。\n　次に、事務費として１億9,000万円計上しているという答弁でしたが、どのような内容になっているのか、お聞きします。",
+    "text_length": 278,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-042",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給事務に要する経費の内訳と支給時期についてのお尋ねですが、支給事務に要する経費につきましては、給付金支給に必要なシステム構築及び封入封緘業務や事務補助の人材派遣業務などの委託料として１億2,105万2,000円、確認書等の郵送料や口座振込手数料などとして2,911万8,000円、事務用品等やパソコン・複写機賃借料などとして1,513万円、時間外勤務手当として2,470万円、合わせて１億9,000万円を計上しているところであります。\n　また、支給開始時期につきましては、税情報や生活保護情報等を抽出するなどの支給に必要なシステムの構築に１か月程度要すると想定しているほか、確認書等の送付や申請受付・審査などの時間も必要となるところでありますが、国からは可能な限り令和３年度内の早期に支給開始されることが望ましいと示されていることを踏まえ、本市におきましては３月上旬以降を予定しているところでございます。\n　以上でございます。",
+    "text_length": 414,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-043",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "主に委託料と郵便料とか口座振込手数料というのが事務経費の内容だというふうに分かりました。\n　次に、非課税世帯の確認書の内容ということで、どういう内容になっているのか、さらに、確認書がどのように対象者に届くようにしているのか、お聞きします。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-044",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "非課税世帯へ送付する確認書の記載事項などについてのお尋ねですが、確認書の記載事項といたしましては、確認書の発行日、世帯主の氏名、支給額、支給手続の方法、確認書の提出期限などのほか、昨年度全市民に支給した10万円の特別定額給付金の口座情報を記載し、他の口座への振込を希望する場合の口座情報の記入欄についても記載する予定であり、生活保護世帯も含め支給対象となる非課税世帯へ送付することとしております。\n　以上でございます。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-045",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "生活保護世帯は住所・口座が分かるにしても、全体としては昨年の全国民に対する10万円の支給したときの口座情報、それを記載して送るというふうな答弁でした。確実に確認書が函館市に返送される、そういう方法はどういう方法になっているのか、お聞きします。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-046",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "確認書の返送方法についてのお尋ねですが、市から送付する支給案内及び確認書に同封される料金受取人払の返信用封筒によりまして、返送していただくこととしております。\n　以上でございます。",
+    "text_length": 90,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-047",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "返信用封筒で送り返してもらうということですが、３か月というのは、いつの時点から３か月というふうにみなすのかどうか、その点についてお聞きします。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-048",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "確認書の返送期限についてのお尋ねですが、確認書の返送期限につきましては、国の支給要領などに基づき、発行日から３か月とするものでございます。\n　以上でございます。",
+    "text_length": 80,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-049",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "３か月ということですね。\n　次に、確認書が返送されない場合、これは同僚議員が質疑したので質問はしませんが、やはり３か月の中で長期入院している方だとか、あるいは施設に入っている方だとか、あるいは字がよく書けないというような人なんかもいるんじゃないかというふうに思うんですね。そういう場合に、機械的に３か月経過したからということで辞退させるようなことが起こらないように、市としても様々な努力をしていただきたいということをお願いしたいというふうに思います。\n　次に、給付金の口座振込についてお聞きしますが、申請手続が始まるのではということで、最近給付されている福祉灯油など、今までの給付事業については申請主義だということが主だったと。しかし、今回案内文書も含めて確認書を送付すると、口座番号を記載した内容を送付するということで、なぜ今回そのような丁寧な対応になっているのかどうか、その点についてお聞きします。",
+    "text_length": 401,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-050",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "手続の簡素化についてのお尋ねですが、今回の給付金につきましては、公的給付の支給等の迅速かつ確実な実施のための預貯金口座の登録等に関する法律に規定する特定公的給付に指定され、本給付金の支給要件の確認などのために必要となる課税情報などを、給付金担当が課税情報などを保有している部局から本給付金の支給事務のために取得・利用することができることとなったところであります。これにより、非課税世帯分の支給に当たりましては、本市が保有する住民情報や課税情報により、対象者をあらかじめ把握し、また、昨年度の特別定額給付金支給事務で把握した口座情報を利用して確認書の送付を行うことが可能となるものでございます。\n　以上でございます。",
+    "text_length": 307,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-051",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "法律に基づいて、今回は丁寧にそういう特別に取り計らうことができるということで、私は一般的に、給付金であれば全てこういう手続ができればいいなというふうに思います。\n　口座がない該当世帯についてはどのように対応するのかどうか、お聞きします。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-052",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "口座を持っていない場合の取扱いについてのお尋ねですが、原則口座振込により支給することになりますが、口座を持っていない方など、やむを得ない事情により口座振込ができない場合には、窓口における現金給付を行うことも差し支えないと、国の支給要領などで示されておりますことから、口座への振込による支給が困難であるかどうかを確認の上、窓口での現金支給も対応できるよう検討してまいりたいと考えております。\n　以上でございます。",
+    "text_length": 205,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-053",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "現金給付も最終的には考えるという答弁でした。\n　あと、ぜひお願いしたいことは、例えば世帯主に口座がない場合だとか、あるいは妻、息子にしか口座がない場合とかということもケースによってあると思うんですよね。そのあたりもぜひ柔軟に対応していただきたいというふうに思います。\n　それから、次に、家計急変ですが、これも同僚議員からいろいろあったわけですが、申請書類についてどのような確認内容になっているのかということについてお聞きします。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-054",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "家計急変の内容の確認についてのお尋ねですが、家計急変の内容につきましては、申請書類として提出していただく家計の状況に関する書類などにより、家計急変が新型コロナウイルス感染症の影響によるものかどうか、また、同一の世帯に属する方の令和３年度分の市町村民税均等割が課されている全員のそれぞれの１年間の収入見込額または１年間の所得見込額が、市町村民税均等割が非課税となる水準に相当する額以下であるかどうかを確認することとしております。\n　以上でございます。",
+    "text_length": 224,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-055",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "家計急変があった場合、申請書が備えつけでいろいろな場所に置いてあるということですけれど、それに記載して送れば──いろいろ審査はあると思うんですけれど、函館市の場合では家計急変の内容について──その書類だけで判断して、すぐ給付できるかどうかということで、何回も書類をやり取りせずにできるということですか。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-056",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "家計急変世帯の申請書類提出後についてのお尋ねですが、市が家計急変世帯分の申請書を受理したときは、当該申請者が支給要件に該当するかどうかを審査の上、支給を決定し給付金を支給いたしますが、申請書類に不足等がある場合につきましては、必要に応じて追加で根拠資料の提出を求めることなども想定しているところでございます。\n　以上でございます。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-057",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "家計急変の場合は、書類的にいろいろ所得の証明とかということであると思うんですね。そういう点で期間も長くおいて審査するというふうになっているとは思いますが、非常に微妙な内容なので、問合せ、その他も増えると思うんですよね。そういう場合の対応として、今まで新型コロナウイルス感染症対策でなかなか混雑して、相談や電話が通じないというケースが多々あったと思うんですよね。そういうことを想定して、複雑な問合せ等についても十分答えられるような体制が取れるのかどうなのかと、その点についてお聞きします。",
+    "text_length": 243,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-058",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "問合せ相談についてのお尋ねですが、本給付金に関しましては、既に内閣府がコールセンターを設置し、制度内容などについての問合せに対応しているところでありますが、本市におきましてもコールセンターを開設し、具体的な支給手続をはじめとする各種相談に対応してまいりたいと考えております。\n　以上でございます。",
+    "text_length": 148,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        67
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-059",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "コールセンターを開設して、いろいろな各種相談にも対応していきたいということで、やはり電話の回線も１本だけでなくて、それなりに本数を増やして十分対応できるように、ぜひお願いしたいというふうに思います。\n　次に、支給事務が、全て国の事業なので、なかなか市として独自の考え方で進めるということはできないというふうに思いますが、市の裁量でいろいろできることがあると思うんですね。今のコールセンターなんかも市の裁量でいろいろできることだというように思いますが、市の裁量によってできることがどの程度あるのかどうかということについてお聞きします。",
+    "text_length": 266,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-060",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給事務などに関わる市の裁量についてのお尋ねですが、本給付金の支給事務に当たりましては、国からの自治体向けのＱ＆Ａが現在もなお適宜更新されている中、例えば非課税世帯への支給と並行して家計急変の申請を受け付ける事務を行う体制を整えることが困難である場合、市町村の実情に応じて家計急変世帯の申請開始時期を遅らせるなど、段階的に給付することは差し支えないと示されているところでありますが、本市といたしましては、生活や暮らしに困難を抱える方に対する給付であるとの制度の趣旨を踏まえ、国の支給要領などに基づき、対象となる全ての方に早期に給付できるよう、迅速かつ円滑な事業実施に努めてまいりたいと考えております。\n　以上でございます。",
+    "text_length": 311,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1114-2-061",
+    "municipality": "hakodate",
+    "council_id": 1114,
+    "council_name": "令和 ４年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月13日－01号",
+    "date": "2022-01-13",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "生活保護も含めて、非課税世帯の方が特別な事情がない限り辞退者は大変少ないんじゃないかというふうに思うわけですね。そういう点では、全ての対象者が10万円を受け取れるように、遅滞なく丁寧に事務を進めていただきたいということを要望して、質疑を終わります。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1114.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        70
+      ]
+    }
+  }
+]

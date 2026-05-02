@@ -1,0 +1,209 @@
+[
+  {
+    "id": "hakodate-1067-2-001",
+    "municipality": "hakodate",
+    "council_id": 1067,
+    "council_name": "令和 ３年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月24日－01号",
+    "date": "2021-05-24",
+    "speaker": "財務部長（川村義浩）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号令和３年度函館市一般会計補正予算（第３号）から議案第３号令和３年度函館市介護保険事業特別会計補正予算（第１号）までにつきまして、一括して提案理由を御説明申し上げます。\n　このたびの補正予算につきましては、新型コロナウイルス感染症対策に係る経費として、一般会計では４億2,720万8,000円を、特別会計では1,658万2,000円を、合わせて４億4,379万円の増額補正をお願いするものであり、既定予算額と合わせた補正後の総額では、一般会計1,375億3,575万2,000円、特別会計893億6,401万6,000円となるものでございます。\n　以下、その主な内容につきまして御説明申し上げます。\n　まず、一般会計ですが、民生費では、老人短期入所施設の個室化改修に対する補助金や子育て世帯生活支援特別給付金のうち、低所得の子育て世帯分の支給に要する経費など２億3,720万8,000円、商工費では、函館市プレミアム付商品券の追加発行に要する経費１億9,000万円につきまして、それぞれ増額をお願いするものでございます。\n　また、歳入につきましては、歳出補正に係る特定財源の補正のほか、財政調整基金の繰入金の増額補正をお願いするものでございます。\n　次に、特別会計では、保険料減免に係る賦課事務所要経費として、国民健康保険事業特別会計で1,169万5,000円、介護保険事業特別会計で488万7,000円の増額をそれぞれお願いするものでございます。\n　以上でございます。",
+    "text_length": 639,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1067.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1067-2-002",
+    "municipality": "hakodate",
+    "council_id": 1067,
+    "council_name": "令和 ３年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月24日－01号",
+    "date": "2021-05-24",
+    "speaker": "市民部長（佐藤聖智子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第４号函館市国民健康保険条例の一部改正について、提案理由を御説明申し上げます。\n　このたびの改正は、新型インフルエンザ等対策特別措置法の一部改正に伴い規定を整備し、及び新型コロナウイルス感染症の影響により収入が著しく減少した被保険者等について、令和３年度分の保険料等に係る減免申請書の提出期限の特例に関する規定を整備しようとするものでございます。\n　なお、この条例の施行期日は公布の日とするものでございます。\n　以上でございます。",
+    "text_length": 217,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1067.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1067-2-003",
+    "municipality": "hakodate",
+    "council_id": 1067,
+    "council_name": "令和 ３年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月24日－01号",
+    "date": "2021-05-24",
+    "speaker": "保健福祉部長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第５号函館市介護保険条例の一部改正につきまして、提案理由を御説明申し上げます。\n　このたびの改正は、新型インフルエンザ等対策特別措置法の一部改正に伴い規定を整備し、及び新型コロナウイルス感染症の影響により収入が著しく減少した第１号被保険者等について、令和３年度分の保険料等に係る減免申請書の提出期限の特例に関する規定を整備しようとするものでございます。\n　なお、この条例の施行期日は公布の日とするものでございます。\n　以上でございます。",
+    "text_length": 220,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1067.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1067-2-004",
+    "municipality": "hakodate",
+    "council_id": 1067,
+    "council_name": "令和 ３年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月24日－01号",
+    "date": "2021-05-24",
+    "speaker": "財務部長（川村義浩）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第６号から議案第８号までの３件につきまして、順次提案理由を御説明申し上げます。\n　まず、議案第６号専決処分の報告についてでございますが、このたびの専決処分は、国の事業である子育て世帯生活支援特別給付金のうち、低所得者の独り親世帯分の支給に要する経費として、令和３年度函館市一般会計補正予算（第２号）を地方自治法第179条第１項の規定により、令和３年４月14日に専決したものでございます。\n　以下、予算の内容について御説明いたします。\n　第１条は、歳入歳出予算の補正でございますが、歳入歳出それぞれ３億1,915万円を追加いたしまして、補正後の歳入歳出予算の総額を1,371億854万4,000円とするものでございますが、その内容につきましては第１表のとおりでございます。\n　なお、予算の内容の詳細につきましては、３ページ以降の明細書及び調書に記載のとおりでございます。\n　次に、議案第７号専決処分の報告についてでございますが、このたびの専決処分は、令和３年３月31日の地方税法等の一部を改正する法律の公布を受けまして、函館市税条例等の一部を改正する条例を地方自治法第179条第１項の規定により、令和３年３月31日に専決処分し、同日公布したものでございます。\n　改正の概要でございますが、個人の市民税につきましては、特定公益増進法人等に対する寄附金について、出資業務に充てられることが明らかな場合には控除対象外とし、給与所得者の扶養親族申告書等について、一定の要件を満たす場合には電子提出に係る税務署長の承認を不要とし、住宅借入金等特別税額控除について、一定の要件を満たす場合には適用期限を１年延長し、また、固定資産税につきましては、東日本大震災に係る固定資産税の特例の適用期限を５年延長し、評価替えに伴う特例に関する規定等を整備し、軽自動車税につきましては、種別割及び環境性能割の特例の適用期限を延長するものでございます。\n　次に、議案第８号専決処分の報告についてございますが、このたびの専決処分は、令和３年３月31日の過疎地域の持続的発展の支援に関する特別措置法の公布及び過疎地域自立促進特別措置法の失効を受けまして、函館市過疎地域における固定資産税の課税の特例に関する条例の一部を改正する条例を地方自治法第179条第１項の規定により、令和３年３月31日に専決処分し、同日公布したものでございます。\n　改正の概要でございますが、製造の事業等の用に供する設備を令和３年３月31日以前に新設し、または増設した者で当該事業を営んでいる者について、本条例の失効後においても当該設備に対する固定資産税の免除をすることができることとするものでございます。\n　以上でございます。",
+    "text_length": 1135,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1067.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1067-2-005",
+    "municipality": "hakodate",
+    "council_id": 1067,
+    "council_name": "令和 ３年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月24日－01号",
+    "date": "2021-05-24",
+    "speaker": "事務局次長（宮田至）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "皆様に御案内申し上げます。\n　ここで、浜野　幸子議長、道畑　克雄副議長より就任の御挨拶があります。\n　初めに、浜野　幸子議長より御挨拶があります。",
+    "text_length": 73,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1067.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1067-2-006",
+    "municipality": "hakodate",
+    "council_id": 1067,
+    "council_name": "令和 ３年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月24日－01号",
+    "date": "2021-05-24",
+    "speaker": "事務局次長（宮田至）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次に、道畑　克雄副議長より御挨拶があります。",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1067.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1067-2-007",
+    "municipality": "hakodate",
+    "council_id": 1067,
+    "council_name": "令和 ３年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月24日－01号",
+    "date": "2021-05-24",
+    "speaker": "事務局次長（宮田至）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "以上で就任挨拶を終了いたします。\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n　　　　　　　　　　午後　１時１８分再開",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1067.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1067-2-008",
+    "municipality": "hakodate",
+    "council_id": 1067,
+    "council_name": "令和 ３年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月24日－01号",
+    "date": "2021-05-24",
+    "speaker": "市長（工藤壽樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第９号監査委員の選任の同意についてでございますが、このたび議員である監査委員が辞任いたしましたので、その後任として、金澤　浩幸氏を適任と認め、選任いたそうとするものでございます。よろしく御審議くださるよう、お願い申し上げます。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1067.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1067-2-009",
+    "municipality": "hakodate",
+    "council_id": 1067,
+    "council_name": "令和 ３年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月24日－01号",
+    "date": "2021-05-24",
+    "speaker": "市長（工藤壽樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第10号監査委員の選任の同意についてでございますが、このたび議員である監査委員が辞任いたしましたので、その後任として、池亀　睦子氏を適任と認め、選任いたそうとするものでございます。よろしく御審議くださるよう、お願い申し上げます。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1067.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        64
+      ]
+    }
+  }
+]

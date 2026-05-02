@@ -1,0 +1,5407 @@
+[
+  {
+    "id": "hakodate-1104-1-001",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 1,
+    "schedule_name": "12月01日－01号",
+    "date": "2021-12-01",
+    "speaker": "議会事務局議事調査課長（米谷公伸）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "設置後初めての委員会でありますので、函館市議会委員会条例第８条第２項の規定により、本日の出席委員中、年長の福島　恭二委員に臨時委員長をお願いいたします。\n　　　　　　　　　　　　　　　　　　（臨時委員長着席）",
+    "text_length": 104,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-002",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（吉田崇仁委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉田　崇仁",
+    "member_faction": "新市政クラブ",
+    "text": "今回の予算にはそんなに大きな問題はないんですけど、ただ、今回いさりび鉄道の経営安定化補助金額が、ささやかですけれども85万7,000円、増額になったと。それで、補助金の増額の理由とですね、また、今後の見通しといいますか、そして経営状況なんかをちょっと聞いてみたいなと。悪い意味で聞くのではないですから、10分かからないと思います。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-003",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（吉田崇仁委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉田　崇仁",
+    "member_faction": "新市政クラブ",
+    "text": "いや、10分で結構です。",
+    "text_length": 12,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-004",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＳＮＳ教育相談事業費が今回の補正予算でゼロになったんですね。それは、道が同じような事業をしているからということで、道の事業のほうに移るというか、そういう意味でゼロになったんですけれども、道のほうに子供たちがＳＮＳで相談をするんですけれども、もし緊急性があったり、深刻な内容であったりしたときに、その対応が遅れてしまったり、子供に不都合になるようなことってないんだろうかという、そういう意味で質問させていただきます。\n　10分にします。",
+    "text_length": 217,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-005",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ここのデジタルコンテンツ等整備事業費については、プロポーザルのための10万円と、それから全体的な整備補正事業ということで、債務負担行為3,000万円ありますけれども、同じような内容ですので、一括して質問させていただきたいなと思います。\n　事業の内容、それから予算の内訳、スケジュール、そして何よりも、やっぱりせっかくデジタルコンテンツなどを入れて体験できた、だけれども、一回見たらそれでいいよねということにならないようなものにしてほしいなという思いで質問したいと思います。\n　以上です。",
+    "text_length": 243,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-006",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。５分で。",
+    "text_length": 7,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-007",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "小山委員と同じ視点ですけれども、整備事業費の「100万円」（後刻「10万円」に訂正）と、債務負担行為の3,000万円、併せてお聞きするということになりますので、その目的と、補正の使途について、一緒にこれは聞いていこうと思っています。整備後の効果と、あと、デジタルに関しては、議会でも私も取り上げてきたことなので、しっかり確認していきたいなというものがありますので、あとは、今は新型コロナウイルス感染症でなかなか望めませんけれども、やはりインバウンドの準備というのはしっかりしていかなくてはいけないと思っていますので、ここで一回確かめておきたいなというふうに思います。\n　５分でお願いします。",
+    "text_length": 295,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-008",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（市戸ゆたか委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "３人目になりますので、デジタルコンテンツの10万円と、それからあと、それと債務負担行為の3,000万円と両方同時にお聞きしたいというふうに思っております。\n　大体、小山委員と池亀委員と同じような内容になると思うんですけど、何点かにダブらないようにしながら質問したいと思います。\n　15分と欲張りましたけど10分ぐらいで終わると思います。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-009",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "道のほうの川の工事に伴うその周辺の埋蔵文化財の発掘調査ということなんですけれども、その事業内容、予算の内容などとともに、文化財がもし発掘されたときに、どのような対応になっていくのかということについて、お聞きしたいと思います。\n　受託費が結構大きな額になっていますので、その予算が的確であるのかということをお聞きしたいと思います。\n　以上です。",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-010",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５分で。",
+    "text_length": 4,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-011",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "これもやはり、小山委員と全く同じ範囲のことなので、小山委員の質疑をお聞きして、質疑を判断していくことになろうかと思いますので。\n　一応５分もらっておきます。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-012",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "特に同じ内容ですので。",
+    "text_length": 11,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-013",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（福島恭二委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福島　恭二",
+    "member_faction": "民主・市民ネット",
+    "text": "この事業について、新しい事業になるそうなので、それの委託するに至った経過、あるいはその目的、それから何年間の委託なのか、従来の指定管理者とすれば３年ないし５年ということなんだけれども、それらのことについてどうなのか。\n　委託料の内容と、その根拠ですね、予算の根拠1,698万7,000円ですか──を確認したいなと思いまして、10分くらいでお願いいたします。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-014",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（市戸ゆたか委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "池亀委員が債務負担行為の補正についても触れると思うんですけれども、そこら辺どうですか。どうなんでしょうか。債務負担行為の3,000万円の事業内容についても質問に入っていくのではないかと思うんですけど。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-015",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "その予定で部局とは話をしていたんですけど、記載していないと駄目かな。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-016",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "関連で大丈夫と、部局とはそういうやり取りをしていたんです。いいかな。大丈夫。",
+    "text_length": 38,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-017",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "お願いします。",
+    "text_length": 7,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-2-018",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 2,
+    "schedule_name": "12月02日－02号",
+    "date": "2021-12-02",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "「100万円」と言ったのですけど、「10万円」の間違いです。すみません、訂正です。",
+    "text_length": 41,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-019",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "企業局の議案第６号ですね。交通事業の補正予算の関係ですけれど、これは減額補正ということで、定期外を大幅に減額補正すると。定期は増の補正になっていますけれど、全体として減になっている。これは、減額補正した、この運輸収益の増減の理由なりをポイントとしてお聞きしたいと思う。\n　それから、理事者に説明を求めるのは、補正額がこういう額になっているというところの理由なり根拠なり、内訳ですね。それから、年度を通して大幅に減額補正をしなければならなかった、これに伴う今後の対策、あるいは今後の見通しなどについてお聞きしたいと思います。\n　以上です。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-020",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "時間は15分ぐらいです。",
+    "text_length": 12,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-021",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "おはようございます。私のほうですけれども、創業支援事業負担金が減ということなんですけれども、非常に重要な取組だなと私はこの事業を思っておりまして、その減額となった理由。そしてまた、課題とか今後の取組について確認させていただきたいと思っております。\n　時間は10分程度ということで。",
+    "text_length": 140,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-022",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "創業バックアップ助成金だとか、これが一般枠だけでなくて、若者枠を新設したりとかしているんですけれども、具体的にその辺の事業はどういうふうにして行われたのかということなども確認させていただきたいと思っていまして、その上で減額となった理由。それからあと、この事業によっては地域に根差した地場産業が育成されたり、活性化されるということを望んでいるんですけれども、その取り組んできた中での課題だとかが見えてきているのではないかなと思うものですから、その辺りを確認したいということです。",
+    "text_length": 238,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-023",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "10分でお願いします。そこまでかからないかも、一応10分にしておきます。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-024",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "元町観光駐車場と函館山山麓観光駐車場、この指定管理者なんですけれども、候補者として適当と認められたということなんですけれども、適当と認められた理由の確認、それから今後の駐車場の活用法についてと。特に函館山山麓観光駐車場、こちらのほうはまだ１年しか経過していないんですけれども、ここが開設される前に、公民館の附帯駐車場として活用できないかというものが以前の経済建設分科会でも質疑されたりして、そこで検討してみたいというふうな答弁などもあったんですけれども、その辺りの経過などを、今後どういうふうに活用していくのかということを確認させていただければいいかなと思っております。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-025",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "指定管理者の業績シートとかいろいろ見ると、今後の活用法というものもちゃんとうたわれているんですね。それから、地域の人の声を聞いて、それを事業に生かしていくとかというのも業績シートとかにちゃんとうたわれていまして、だから活用法を今後どうしていくのかというのも、指定管理者としての責任もあるかなと。あれを見ますとね。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-026",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "その中にきちんと今後どうしていきたいか、声を聞いてそれを反映させるということもうたわれておりますので、指定管理者として、それをどういうふうに受け止めてどう活用していくか。活用方法も指定管理者として提案していくということもあるんですよ。だから、その辺のところを、今の公民館のことも併せて確認させていただきたいと思うんですけれども。ちょっとずれていますか。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-027",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "それに沿って。",
+    "text_length": 7,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-028",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。",
+    "text_length": 7,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-029",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "議案第11号から議案第13号までですが、議案第11号は函館市道路の構造の技術的基準等を定める条例の一部改正について。一通り読んでみたんですけれども、改正のポイントというものを教えていただければなというふうに思います。\n　そして、理事者に説明を求める部分については、その改正によって市民生活に影響が及ぶもの、またその改正によって予算措置が伴うもの、これらをお聞きしたいなというふうに思います。\n　議案第12号の函館市高齢者，障害者等の移動等の円滑化のために必要な道路の構造に関する基準を定める条例の一部改正についても、同じような考え方で、議案第13号の函館市道路占用料徴収条例の一部改正についても、同様の考え方で説明を求めたいというふうに思います。\n　30分程度を予定しています。",
+    "text_length": 339,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-030",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "そうですね、それをもって函館市においてどのような対応ができるのかということで。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-031",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "それは分かっています。分かっていますから、言われなくても。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-032",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "はい。",
+    "text_length": 3,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-033",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "議案では第２号で港湾事業特別会計補正予算ということで、今回は966万2,000円、大体1,000万円ぐらいの増額補正というふうになっているんですが、これは６月議会でもいろいろ議論した経過がありますが、クレーンが故障したり、また新しく買ったりということで、いろいろ議論してきたんですが、今回、これ全部委託しているので、委託料を増額するという形なので──利用料金制度を取っている委託ですね。なぜ、年度途中にこういう増額をしなければならなかったのか。ここで外航コンテナ航路休止というふうになっているんですけどね、その内容について、委託料を増額した理由について、まずポイントとしたいと。\n　それから、理事者に確認する事項として、なぜ増額したかという、この内容についてお聞きして、そしてこれがずっと続けば、大変委託料自体が非常に市のほうで補填しなければ駄目なことが、引き続きずっと続くのかどうかとかということも含めて、お聞きしたいというふうに。\n　以上です。",
+    "text_length": 424,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-3-034",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 3,
+    "schedule_name": "12月02日－03号",
+    "date": "2021-12-02",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "そうですね。15分ぐらいです。",
+    "text_length": 15,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-035",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "今回提案されていますのは、既定予算の2,400万円に1,030万円増額して、3,430万円にすると、こういうものですが、当初の予定より大幅に増えているわけですけれども、その増加の理由──貸付人数の増加に伴うものというふうに思いますけれども、その理由について確認させていただき、さらに、貸付金の今回の補正予算の積算の内訳について、確認させていただきたいと思います。\n　また、併せてこの貸付金による成果──人材確保の観点にどれだけ寄与しているのかというようなことなども含めて、確認させていただきたいと思います。\n　以上です。",
+    "text_length": 260,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-036",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "時間は10分で。",
+    "text_length": 8,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-037",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "私も板倉委員と２点について、ほぼ同じ内容でかぶります。ですので、質疑はないと思いますが、一点だけ、貸付人数ですね、この二、三年の推移をちょっと確認しようかなと思っています。それを見ても、今回はかなり増えているということで、その理由をきちんと聞きたいと思います。",
+    "text_length": 130,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-038",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "５分になりますかね。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-039",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "今回、システム改修ということで、どういうものかなというふうに、私ちょっと疑問に思いまして、この420万円を使っての改修ということでした。健診データ等を活用するということで、その活用方法ですね、確認したいと思います。\n　そして、この内訳とか、今、政府が進めている17業務のうち、今回は検診データの４項目について入れるということでしたので、それと、自治体間でデータのやり取りもするということだったので、そこをきちんと聞きたいと思います。\n　ただ、この項目に出ています４、５なんですけど、個人情報が保護されているということも確認しましたし、委託先もあまり公にしてもどうなのかなと思いまして、ここについては意見として言うだけにしたいと思いますので、省きます。\n　そうすると、５、６分で。",
+    "text_length": 339,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-040",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "５分にします。",
+    "text_length": 7,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-041",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "10分にします。すみません。迷っている。",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-042",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "今回の補正予算は、特定不妊治療助成事業費の増加ということで、既定予算3,422万7,000円に1,220万7,000円増額して、4,643万4,000円とするものですが、その補正する──事業費を増加する理由について、並びに、事業の効果、そして進め方、そのことについて確認させていただいて、この事業による成果、あるいは今後の考え方、こういったことについても確認させていただきたいと思います。\n　併せて指定医療機関も函館市は１箇所ですけれども、その辺の進め方というか、取組方などについても、確認させていただきたいと思います。\n　時間は15分でお願いします。",
+    "text_length": 276,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-043",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（荒木明美委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "荒木　明美",
+    "member_faction": "無所属",
+    "text": "私のほうは、確認事項を５点挙げていますが、板倉委員と重複するところは、あしたは質疑しないようにいたします。\n　まず、申請件数が増加した背景や要因は何なのかということと、あと、国が助成事業の拡充をしたことによって、恐らく函館市も同様に拡充したと思うんですけれども、その押さえでいいのかということが２点目。それと、申請件数が増えたという背景には、この助成事業の拡充があるのかという、ここの関係性を確認したいと思います。\n　それと、恐らく事業拡大の方向性は、国と同じようなスキームにしているので、そもそもの当事者ニーズというのは把握されているのか、国のほうと合致しているのかということを確認して、最後に1,200万円、この増額の積算根拠なりを確認したいと思います。\n　15分で出していましたが、恐らく10分程度かと思います。",
+    "text_length": 359,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-4-044",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 4,
+    "schedule_name": "12月02日－04号",
+    "date": "2021-12-02",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "私も、ほかの２名の方と重なる部分がありますので、そこは私も省きたいと思います。\n　あとは、２番の利用者数のこの間の推移と、やはり一気に上がったというところで、年齢構成はどうなんだろうかと、ある程度、43歳までという助成の上限があるということなので、その辺はどういうふうになっているかなということと、一人に対して６回まで助成があるんですが、平均利用回数はどうだろうかと。あと、指定医療機関は函館市内に１箇所しかないですが、実際に見ますと、道内とか道外に行っているという状況もありますので、その割合はどうなっているかということを確認したいと思います。\n　10分でお願いします。",
+    "text_length": 286,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-045",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（吉田崇仁委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉田　崇仁",
+    "member_faction": "新市政クラブ",
+    "text": "このたびの道南いさりび鉄道株式会社経営安定化補助金の補正の予算ですけれども、新型コロナウイルス感染症の影響もございましてですね、ＪＲ並びにいさりび鉄道も大変な苦戦を強いられている状況だと思います。市の発表によりますと、４月から９月の上半期の観光入込客数は200万人、ぷらぷらだというお話が報道されておりましたが、本来、新型コロナウイルス感染症以前は300万人から400万人近い観光客が入っていただけに、それだけに、この観光業界、さらにはホテル、また鉄道にも大きな影響が出たと思います。そうした中での今回の増額補正だと思いますけど、その理由についてお伺いしたいと思います。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        5
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-046",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "企画部計画推進室政策推進課長（田中恵）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "増額補正の理由についてのお尋ねですが、主な理由といたしましては、新型コロナウイルス感染症による影響の長期化に伴い、定期外などの利用客数が伸びなかったうえ、観光列車や寝台列車の運行中止もあったことで運輸収入が減収となり、さらには、ＪＲ北海道の運行する特急北斗の利用客数の減少により、五稜郭駅売店収入も減収となったことのほか鉄道施設保守費がかさんだことによるものであります。この結果、最終的な収支不足額が当初見込みを1,950万円ほど上回ることになり、そのうち沿線自治体における函館市負担分の4.4％相当額となります85万7,000円の増額補正をお願いするものであります。\n　以上です。",
+    "text_length": 291,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-047",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（吉田崇仁委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉田　崇仁",
+    "member_faction": "新市政クラブ",
+    "text": "大変な苦労をされております。それで、経営状況はどうなのか、お伺いしたいと思います。",
+    "text_length": 41,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-048",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "企画部計画推進室政策推進課長（田中恵）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "経営状況についてのお尋ねですが、平成28年３月の道南いさりび鉄道の開業から今年で６年目を迎えておりますが、この間、沿線地域の人口減少、さらには、昨年来の新型コロナウイルス感染症の影響などに伴う利用客数の減少に加え、施設の老朽化に伴う維持修繕費用や安全運行に係る人件費、車両検査費用の増など様々な要因により、当初の想定以上に厳しい経営状況が続いております。\n　こうした中、道南いさりび鉄道では、老人クラブや町内会など地域と密着した営業活動や北海道の支援制度を活用した定期乗車券「いさりび１日きっぷ」の販売促進による運輸収入の確保はもとより、開業５周年記念乗車券セットやクリアファイル、鉄印帳といったグッズ販売に取り組むとともに、経費の適正な執行に努めるなど経営改善に取り組んでいるところであります。\n　以上です。",
+    "text_length": 355,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-049",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（吉田崇仁委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉田　崇仁",
+    "member_faction": "新市政クラブ",
+    "text": "乗車券以外に、グッズの販売など取り組んでいるという経営努力にも感心させられました。\n　いさりび鉄道は、単なる通勤・通学だけではなく、観光にも訪れてみたいという、そうした魅力ある鉄道になってほしいと願っておりまして、私ごとですが、先週、京都に私用で行っておりました。そうしたら、京都の駅に、あるポスターが大変目につきまして、叡山電鉄というローカル線の会社ですけれども、その会社が鞍馬の中央に紅葉のトンネルがあるから行きませんかというポスターだったのですよね。私も行ってみたいなと、紅葉のトンネルを見たことないということでタクシーで行ったら、出町柳という駅から鞍馬まで大体30分なんですけれども、その駅に着いて、乗車券片道430円かかったんですけど、すごい人で、それも家族連れで、乗ったら中央に500メートル程度の、両側に広葉樹の木がざっと並んでいるんですね。大したことない、これでこんなに人が集まるのかなと思ったら、夜にその方々が鞍馬山に登った後に、４時半からのライトアップを目指して待っているんですね。それで、私も興味があるものですから、夜見ましょうと思って、帰りに30分足らずの中の、電車で２分か３分なんですけど、紅葉のトンネルが。ところが、電車内の電気を消して、夜のライトアップを見せるんですね。それがまた何とも言えないんですよ。それで、先週も来たと、リピーターがついてしまって、叡山電鉄はホクホク。ですから、考えてみますと、やり方次第では、いろいろローカルもお客さんを増やせるんじゃないかなと感じた次第でございまして、それで、まだこれ以上に──質問ですけれども──工夫した取組が必要と思いますけど、いかがでしょうか。",
+    "text_length": 711,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-050",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "企画部計画推進室政策推進課長（田中恵）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "利用促進についてのお尋ねですが、道南いさりび鉄道におきましては、これまで様々な工夫をする中で、海鮮バーベキューなどが楽しめる「ながまれ海峡号」や、「おでん列車」などの観光列車のほか、一定時間車内を暗くし、夕日やいさり火を楽しんでいただく夜景列車を運行してきたところであります。\n　また、地域住民の方々の協力もいただきながら、観光列車通過の際の旗振りや、沿線へのヒマワリの植栽のほか、クリスマスなど折々のイベントに応じ、車体や駅を飾るなど、ローカル路線としての魅力向上に努めてきたところでありますが、現状を踏まえると、さらなる工夫が必要でありますことから、ただいま吉田委員から御紹介のあった京都の事例につきましても、利用促進につながるような好事例として、道南いさりび鉄道にお伝えしてまいりたいと考えております。\n　以上です。",
+    "text_length": 361,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-051",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（吉田崇仁委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉田　崇仁",
+    "member_faction": "新市政クラブ",
+    "text": "これは、いさりび鉄道さんも、身近にある──現在、クリスマスファンタジーという、大変巨大なツリーを金森倉庫に飾っております──そのツリーを見に行こうという１枚のパンフレットだけでも、やはりそこに興味があって、鉄道に乗ってくれる。木古内といえば、みそぎ電車が大変有名ですね。そういった──いろいろあると思うんですよ。創意工夫しながら、大いに努力していただきたいと思っております。\n　それでは、最後、今後の見通しについて、どうなるんですか。伺いたいと思います。",
+    "text_length": 227,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-052",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "企画部計画推進室政策推進課長（田中恵）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の見通しについてのお尋ねですが、道南いさりび鉄道の利用客数につきましては、本年５月から９月にかけての国の緊急事態宣言等により団体利用のキャンセルなどが続いたことで、新型コロナウイルス感染症拡大前の同時期と比べますと３割程度減少しておりましたが、10月以降は宣言が解除されたことで、減少幅は１割程度まで収まってきているところであります。\n　今後におきましては、新型コロナウイルス感染症の状況を見極めながら、魅力ある地域密着の鉄道として、団体利用の促進などの営業活動を行うとともに、観光列車の運行や新たに函館バスとの共通フリー切符「いさりび１日カンパス」を発売するなど、運輸収入の確保に努めていくこととしており、市といたしましても、北海道や北斗市、木古内町と連携し、地域の生活交通路線を維持するための財政負担や沿線自治体・住民で組織する地域応援隊による利用促進の取組などを通じて、引き続き支援してまいりたいと考えております。\n　以上です。",
+    "text_length": 419,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-053",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（吉田崇仁委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉田　崇仁",
+    "member_faction": "新市政クラブ",
+    "text": "持続可能な鉄道──いさりび鉄道として頑張っていただきたいと思います。\n　ありがとうございました。",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-054",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＳＮＳ教育相談事務費について、お聞きをしたいと思います。\n　委員長、すみません、疑問点の２の部分から先に質問させていただきたいと思います。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-055",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、今回の補正の内容とその理由について、お聞きしたいと思います。",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-056",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会学校教育部教育指導課長（佐藤大輔）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＳＮＳ相談事業の補正の内容とその理由についてのお尋ねですが、ＳＮＳ教育相談事業につきましては、本市の事業として相談事業を開始する予定でありましたが、６月14日付で北海道教育長から、北海道教育委員会の事業として市町村立中学校の生徒を対象に含めて、ＳＮＳを活用した相談事業を実施する旨の通知があったことから、本市の事業としての実施を見送ることとし、事業費200万円全額について減額補正をお願いするものでございます。\n　以上でございます。",
+    "text_length": 216,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-057",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北海道の教育委員会のほうが、市が今まで行ってきた事業と同様の事業をするということで減額補正をしたという、そういう答弁でした。\n　それでは、市がこれまで行ってきたＳＮＳ教育相談事業と、それから道の事業の内容ということを併せてお聞きしたいと思います。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-058",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会学校教育部教育指導課長（佐藤大輔）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北海道と本市の事業の違いについてのお尋ねですが、北海道教育委員会が実施している、ＳＮＳを活用した教育相談事業は、札幌市を除く全道の公立の高校生と市町村立の中学生を対象とし、６月21日から翌年３月28日までの毎週月曜日のほか、６月21日から30日、７月19日から９月６日、１月10日から２月５日の毎日、午後５時から午後10時までの時間帯に相談を受けるものであります。\n　これに対し、本市が予定していた事業は、市内中学生を対象とし、大型連休明けの５月６日から15日、長期休業明けの８月18日から８月27日、１月18日から27日の各10日間で、午後５時から午後９時までの時間帯に実施する予定でありました。いずれの事業も、相談内容はいじめ問題や不登校、学校生活に関する相談、家庭での悩みなどの教育相談であり、相談方法はＳＮＳのＬＩＮＥを活用した双方向の相談となっております。\n　以上です。",
+    "text_length": 390,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-059",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "道が実施する教育相談事業のほうが、年間を通して６月21日から３月28日までは毎週月曜日受けられる、あるいは、そのほかの期間も長い期間、相談を受けることになっているということと、それから、相談を受ける時間帯についても、市内ですと９時までだったのが10時まで受けられるということで、違いがあるんだなということは分かりました。中学生ですから、早い時間で切られてしまうとなかなか相談できないということがあると思いますので、そういう意味では有意義だなと思います。\n　それで、もう少し詳しく道の事業の内容をお聞きしたいと思います。道の事業の実施状況などについても、お聞かせください。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-060",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会学校教育部教育指導課長（佐藤大輔）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "北海道の事業の現在の実施状況についてのお尋ねですが、事業開始から８月末までの実施状況は、匿名での相談事業でありますので、本市分についての相談件数は分かりませんが、北海道全体でＬＩＮＥの友だち登録件数が521件、相談アクセス数が501件、相談対応件数が501件と伺っております。\n　北海道教育委員会では、６月に生徒及び保護者向けチラシを、７月には生徒向けカードをそれぞれ作成し、各中学校及び道立高等学校宛てに配付し、９月には相談窓口を再周知したところであります。\n　以上です。",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-061",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "全道で相談件数501件程度ですから、そんなに、まだまだ多くないかなと、周知が行き届いてないのかなと思いますけれども、道のほうでは９月に再度、相談窓口を再周知したということですから、もう少し見守る必要があるのかなというふうには思います。\n　それでは、先ほどの御答弁で、市町村立の中学生を対象というふうな御答弁がありました。私立の中学校、市立以外の学校の対応がどうなるのかということをお聞かせください。",
+    "text_length": 199,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-062",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会学校教育部教育指導課長（佐藤大輔）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市立以外の学校への対応についてのお尋ねですが、中学生を対象とした本市の事業は、道内の他都市においても例のない取組であり、令和元年度から実施する期間や時間、対象者などを変更しながら、試行的に実施してきたものであります。対象者については、令和元年度は市立学校のみとしておりましたが、相談件数が少なかったこともあり、令和２年度には市立学校以外の中学生も対象としたところであります。\n　北海道の事業は、本市の事業と比べ、実施期間や時間が長く、生徒にとって、より相談しやすい形で実施されることになったため、本年度は北海道の事業で対応することとしたところであります。市立以外の生徒については、これまで以上に連携を図って対応するほか、市が実施している「函館市子どもなんでも相談110番」を紹介するなどしてまいります。また、こうした事業を先行して実施していたまちとして、本年度の北海道の全体の相談件数なども踏まえ、市立以外の生徒も対象とすることなどについて、北海道に提言してまいります。\n　以上です。",
+    "text_length": 442,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-063",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本当に、函館が試行としてですけれども、やっていた事業というのは、公立だけではなくて私立の中学生──全ての中学生を対象にという意味では、本当にすばらしい取組だったなと思います。「函館市子どもなんでも相談110番」などの相談窓口もありますよということですけれども、やはり時間が７時までだったり、電話での相談ということで、やはり思春期の子供にとって、かけにくいというようなこともあったりするのでね、本当は今の子供たち、ＳＮＳのこの教育相談のほうがハードルが低いのかなとは思っています。それでも今、市立以外の生徒も対象にすることなどについて、北海道に提言をしてくださるということで、ぜひ──そんなに多い数ではないと思うんですよね──ですから、ぜひ北海道のほうの事業に全ての中学生が対象となるように、提言をお願いしたいなと思います。\n　それでは、最後になりますけれども、道の相談事業になることで、市内の生徒の皆さんが相談しにくくなる、あるいは、相談内容が深刻な場合の対応が、道を経由してくるということになりますので、遅くなるというような、そういう不都合がないのかどうかということについて、お聞きいたします。",
+    "text_length": 498,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-064",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会学校教育部教育指導課長（佐藤大輔）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "道の事業になった場合の支障についてのお尋ねですが、北海道の事業においても、相談者の生命・身体などの安全が害されるおそれのある場合など、緊急対応が必要とされる場合は、相談者を保護するため、警察、市町村教育委員会、学校などの関係機関と情報共有しながら対応することとしており、市の事業における対応と同様の対応が可能であると捉えております。\n　以上です。",
+    "text_length": 173,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-065",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市と同様の対応が可能ということです。その辺は、ちょっと安心をしたんですけれども、市がこの相談事業を実施する意義というか、そうしますと、市内の相談の件数の増減ですとか内容ですとか、そういうのが把握できて分析ができるんじゃないのかなと思うんですね。そうしたときに、ＬＩＮＥの表面上の文から、道だと背景を探るとかというのが、なかなか難しいのかな、あるいは、市内で相談を受けていると、状況把握ができたり、子供たちへの対応、学校への対応というのが直できるという意味では、私はそれはそれで意義があったのではないかなと思いますけれども、まず、道がこういう手厚い相談事業を始めたということで、もう少し状況は見守りたいと思います。市のほうも、中学校の先生などは、空き時間にネットパトロールを学校のほうでも熱心にやられて、何か子供たちが悩んでいないだろうか、いじめがないだろうかということに目を配ってくださっていますので、あらゆる──そういう子供たちへの目配りをしながら、悩みの把握に努めていただきたいなと思います。\n　以上で終わります。",
+    "text_length": 459,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-066",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、史跡垣ノ島遺跡デジタルコンテンツ等整備事業費について、お聞きいたします。債務負担行為のほうと一緒に質問させていただきたいと思います。\n　それでは、まず、10万円のほうの予算の内訳と事業内容について、お聞かせください。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-067",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "史跡垣ノ島遺跡デジタルコンテンツ等整備事業費の今年度予算の内訳についてのお尋ねでございます。\n　史跡垣ノ島遺跡は、世界遺産登録が決定した翌日の本年７月28日に一般公開を開始しておりますが、より楽しく効果的に縄文文化を理解していただくために、最新のデジタル技術を活用したコンテンツ等を整備したいと考えております。今年度の予算といたしましては、デジタルコンテンツ等の整備を行う委託事業者選定のためのプロポーザル経費といたしまして10万円を計上しており、費用の内訳といたしましては、プロポーザル審査委員会委員への報償費として５万円、会議開催等に伴う消耗品費として３万5,000円、事務連絡用の郵便料として１万5,000円となっております。\n　以上でございます。",
+    "text_length": 327,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-068",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは続いて、債務負担行為の3,000万円のほうの内容について、お聞かせください。",
+    "text_length": 42,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-069",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "史跡垣ノ島遺跡デジタルコンテンツ等整備事業費の債務負担行為の内容についてのお尋ねでございます。\n　史跡垣ノ島遺跡のデジタルコンテンツ等を来年度整備するためには、今年度中に委託業者を選定する必要があることから、業務委託料の限度額3,000万円の債務負担行為を設定するものでございます。\n　整備内容といたしましては、ＡＲやＶＲなど、最新のデジタル技術を活用して、遺跡の概要を伝えるイントロダクションムービーや、縄文の暮らしや発掘調査の様子などをスマートフォンなどで再現するアプリケーションの作成、今後増加するインバウンドに向けた外国語対応などの整備を予定してございます。\n　以上でございます。",
+    "text_length": 294,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-070",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＡＲとかＶＲとかって、どういうものなんだろうって、ちょっと私には想像はまだつかないんですけれども、ちょっと調べたら、ポケモンＧＯみたいな、ああいう感じで、ポンと物が出てきたり、それを現実の私たちが追いかけたりということができたり、家具屋さんなどは、商品のところをクリックすると、自分の部屋にその家具がこういうふうに配置されると、これくらいの幅を取るよとかというのが、今は分かるようなシステムがあるんだそうです。そういうような技術を駆使するようなものらしいんですけれども、すごい世界だなと思っております。\n　それでは次に、今後のスケジュール、あるいは、いつ供用開始になるのかということを、まず、お聞きしたいと思います。",
+    "text_length": 308,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-071",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後のスケジュールについてのお尋ねでございます。\n　今年度につきましては、１月にプロポーザル審査委員会を設置して公募を開始し、年度内には受託者を選定して委託契約を締結し、来年度中に整備を完了したいと考えてございますが、来年夏頃には、多くの来訪者が訪れることが想定されてございますので、それまでに、コンテンツの一部を前倒しをして運用ができるよう、整備を進めてまいりたいと、そのように考えてございます。\n　以上でございます。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-072",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "少しでも早く、一部でも運用ができると本当にいいなと思います。見せていただいたときに、本当に緑の広場で、それはそれですてきなんですけれども、やはりガイドさんがつかないと、ここがどういう意味を持つのかというのが分かりづらいなと思っておりましたので、少しでも早く供用開始をお願いしたいなと思います。\n　それでは、整備による効果について、お聞きいたします。",
+    "text_length": 174,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-073",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "整備による効果についてのお尋ねでございます。\n　垣ノ島遺跡では、竪穴建物などの復元をしてございませんので、デジタル技術を活用して縄文時代の暮らしや風景を見える化することは、遺跡の価値や魅力を感じ取ることができる有効なツールとなると考えてございまして、デジタルコンテンツを整備することにより、縄文文化の普及啓発や国内外からの誘客拡大、ひいては地域の活性化の促進につながるものと、そのように考えてございます。\n　以上でございます。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-074",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本当に様々な効果があるのではないかなと思っております。ただ、心配するのは、見に行って、いやすごいねと感動はするんだけれども、１回見たら、もういいかなとなると困るんだと思うのですね。やはりリピーターになっていただくということが大切ですから、１回このアプリができたらそれで終わりというのではなくて、魅力のあるアプリづくりというか、そういうのが必要になってくると思いますが、その辺りは、どのようにお考えでしょうか。",
+    "text_length": 204,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-075",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "魅力あるアプリのコンテンツづくりについてのお尋ねでございますが、今回の整備ではデジタル技術を活用して、6,000年間にわたる縄文集落の変遷や縄文時代の狩猟、採集の様子、発掘調査時の土器や石器の出土状況などを見える化し、縄文文化の理解促進に努めてまいりたいと考えております。\n　特に、縄文時代から受け継がれている自然環境の四季の移ろいや、一日の時間経過による変化などをコンテンツに組み入れることで、来訪時には見られない季節の遺跡の景観を提供するなど、再来訪につなげる工夫も考えているところでございます。\n　なお、運用開始後も利用者などから御意見を伺いながら、継続的にコンテンツのブラッシュアップに努めてまいりたいと、そのように考えてございます。\n　以上でございます。",
+    "text_length": 332,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-076",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本当に、いろいろな技術を活用して、より分かりやすい、より理解しやすい、そんなものになってほしいなと思います。それから、利用者などの御意見を伺いながら、継続的にコンテンツをブラッシュアップ──変えていくということですから、そこにも期待をしたいと思います。\n　ただ、こういう技術にだけ特化するのではなくて、やはりガイドさんとの連携、あるいは展示物との連携というのをいろいろ工夫しなければいけないのかなと思います。\n　あるいは、修学旅行生などもこれからは随分多くなると思いますので、そういう子供たちがクイズラリー的なものと見学を併せてできる、こういう技術を活用できるというような、そういういろいろな方法で生かすという、ただそれを見ればいいというものじゃない工夫なども、今後、考えていただきたいなと思います。\n　終わります。",
+    "text_length": 358,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-077",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "私も、小山委員と全部かぶっていますので、ささやかな質問、頑張って質問したいと思います。\n　今、この垣ノ島のデジタルコンテンツ整備事業費、また、併せて債務負担行為、私も一緒にお聞きいたしますけれども、全部、今３項目までの質問内容がよく理解できました。例えば縄文トンネルとかがあって、バーチャルでそこを通ったら縄文文化を、遺跡のいろいろなこととかを体験できるようなとか、私も議会で言ってきたので、非常にこれは早い取組で、コロナ禍でなかなか大変な中、まずはこれをやってくださるんだなと。今そして小山委員を通して説明をお聞きしまして、聞きたいところは同じだったので、早く見たいなという思いになりました。それほど説明もしっかり分かるようにされていましたし、市民が聞いたら、早くできて見たいなという、そういう流れになるかなというような御説明でしたので、十分理解をさせていただきました。\n　１つだけ聞けるのは４番目で、インバウンド向けの外国語対応とか、その辺はどうなるのか、お聞きいたします。",
+    "text_length": 439,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-078",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "外国語対応についてのお尋ねでございます。\n　世界遺産登録により需要が見込まれるインバウンドへの対応といたしまして、デジタルコンテンツの中に多言語解説の導入を予定してございます。具体的には、来訪者へ提供する動画やアプリケーションの中で、外国語の字幕テキストの表示や音声によるガイドなどを行い、外国人の方でも縄文時代の文化や魅力について、容易に感じられるコンテンツにしてまいりたいと、そのように考えてございます。\n　なお、導入する言語につきましては、英語、中国語の繁体字及び簡体字、これを基本といたしまして、それ以外につきましては、観光部とも協議させていただきながら、より効果的な言語を選択して提供してまいりたいと、そのように考えてございます。\n　以上でございます。",
+    "text_length": 331,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-079",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "吉田委員は、いさりび鉄道で京都の話をされていましたけれど、かつて私も見ざる聞かざるの日光東照宮に世界遺産登録された後に訪れたことがあるんですけれども、本当に外国人の多さにはびっくりいたしました。だから、世界遺産マニアというか、本当に世界遺産を見て歩きたいという外国人の方がたくさんいらっしゃるんだなということが脳裏に残っていて、だから、外国人対応というのはなかなか今は望めませんけれども、しっかりこれは御準備されていく必要があるなと思いますので、ぜひ、よろしくお願いしたいと思います。\n　この項に関しては、私は終わります。",
+    "text_length": 261,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-080",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（市戸ゆたか委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "私で３人目になりますので、質問項目が少なくなりますけれども、質問したいと思います。\n　本年度の10万円の補正と、それから債務負担行為の3,000万円の中身について、質問したいと思います。\n　今、小山委員、それから池亀委員のほうからも質問ありましたので、内容は分かってきました。私が心配しているのは、まず、スマホを持っていない方への対応ということで、お聞きしたいと思います。",
+    "text_length": 186,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-081",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "スマートフォンをお持ちでない方への対応についてのお尋ねでございます。\n　遺跡内でのアプリケーションにつきましては、新型コロナウイルス感染症対策の観点などから、来訪者自身が所有いたしますスマートフォンを介しての利用を考えてございます。スマートフォンを所有していない来訪者に対しましては、現地の専門スタッフが、このアプリケーションをインストールしたタブレットを使って、案内ですとか解説をすることで、同様のサービスが提供できるものと、そのように考えてございます。\n　以上でございます。",
+    "text_length": 239,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-082",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（市戸ゆたか委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "分かりました。\n　私も、姫路城のほうに、世界遺産に行ったことあるんですけど、そこの箇所箇所でスマホからアプリを取ってかざすと、その場所でどういうことが行われていたのかというのが映像で見える。今スマホを持っていない方も、その案内の方がついて、タブレットで見せてくれるということなので、まず安心いたしました。\n　次に、障がい者の方、例えば視覚障がい、聴覚障がいの人たちへの配慮について、お聞きしたいと思います。",
+    "text_length": 203,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-083",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "障がい者に対する対応についてのお尋ねでございます。\n　垣ノ島遺跡には専門のスタッフが常駐しておりまして、案内ですとか解説を行ってございますので、これまでも障がい者への対応は、この専門スタッフが担っているところでございます。\n　今回、導入いたしますデジタルコンテンツにつきましては、解説の字幕テキストの表示や、音声によるガイド、これらを想定してございますので、視覚や聴覚に障がいのある方に対する解説の補完、これにつながるものと考えてございます。デジタルコンテンツ導入後につきましても、専門スタッフの対応と併せまして、障がい者を含めた全ての来訪者に御満足いただけるよう努めてまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 311,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-084",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（市戸ゆたか委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "分かりました。\n　障がい者を含めた全ての方が来訪できるという環境づくりが非常に大事だと思います。ただ、聾唖者の方の中には、字がなかなか読めない方もいらっしゃるので、手話通訳があれば最適だなとは思っておりますけれども、まずそういう環境づくりをするということが大事だと思っています。\n　実は、この総務常任委員会の平成30年のときに、遠山委員が委員長だった頃に、佐賀県の佐賀市三重津海軍所跡、吉田委員も一緒に調査に行きましたけれども、そのときに、そこも埋蔵なので、外を見ても何も見えないということで、そのときに、こういうスコープで見るという、そういうことも私たちも体験してきました。非常にそれがいいなと思って、私も何回か提言してきたんですけれども、今回、世界文化遺産登録による効果推進施策の在り方の中に、実はこのデジタル化は、検討で三角だったんですね。だけど、絶対、このデジタル化は必要だなと言ってきたかいがあったなと思って、三角が、二重丸になるということなので、非常に期待したいと思ってます。\n　それで、三重津に行ったときに言われたんですが、三重津は世界遺産登録してから３年目だったんですね。３年の経過を経て、いろいろな課題が見えてきているということだったんですけど、大体、世界遺産登録してオープンしたら、２年たったら来訪者が激減するということを言っておりましたので、さっき小山委員のほうから、いろいろなバージョンアップが必要だと言われていたんですけど、まさしくそのとおりだなと思っています。機械だけに頼るのではなくて、人のガイドさんが非常に有効だということも、三重津でも言っておりましたので、そこは重要視していただければなと思っていますので、期待したいと思います。\n　それで、ちなみに、今回本当に新型コロナウイルス感染症の真っ最中に登録されてオープンしたということもありまして、予想していた来訪者よりもかなり低いんじゃないかなと思うんですけど、まず、そこの実態はどうだったのか、お知らせいただけますか。",
+    "text_length": 850,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-085",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "垣ノ島遺跡に関しての入場者ということでのお尋ねだということで、答弁させていただきます。\n　垣ノ島遺跡のこれまでの入場者数でございますが、オープンから約４か月たってございまして、11月末現在ではございますが、２万3,107人の方が、来場しているところでございます。先ほど、お話しいただきました、新型コロナウイルス感染症の拡大ですとか、緊急事態宣言のため、オープン時期も１か月以上遅れるなど、こういった状況ではございましたが、そういう要因から当初の推計値には達していない、そういう状況ではございます。\n　しかしながら、これまでの縄文文化交流センターの年間の入場者数は、毎年約２万人でございました。それが、垣ノ島遺跡は実質４か月でその水準を超えているといったところでございますので、コロナ禍でありましても、多くの来訪者が訪れていると、そういうことになっているかなと思ってございます。\n　以上でございます。",
+    "text_length": 399,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-086",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（市戸ゆたか委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "登録初年度、この計画を見ますと、本当に垣ノ島遺跡だけで見ますと、15万2,000人を予定していたということで、今、４か月で２万3,000人ということですから、本当、コロナ禍の中でも、本当に来ていただいているなと思ってます。来年に向けてこのコンテンツが実施されていくと思うんですけれども、私は、今この混雑した中で、いろいろな事業をするよりも、今だからこそ、ゆっくりとこのコンテンツに向けて環境整備をしていただければと思っていますので、それを申し上げてこの質問は終わりたいと思います。\n　ありがとうございました。",
+    "text_length": 254,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-087",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "埋蔵文化財発掘調査受託事務費について、お聞きいたします。まず、事業の内容について、お聞かせください。",
+    "text_length": 50,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-088",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "埋蔵文化財発掘調査受託事業の内容についてのお尋ねでございます。\n　本事業は、２級河川常盤川洪水時の周囲への浸水を予防するために、北海道が実施する総合流域防災工事に伴い、桔梗町のサイベ沢遺跡の一部が要発掘調査区域となったため、北海道から埋蔵文化財発掘調査の委託の依頼が本年９月にあったことから、これを受託し、市が発掘調査を実施しようとするものでございます。\n　以上でございます。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-089",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今日のような、本当に荒れた天気で雨の量も多かったりすると、本当にこの川なども周囲への浸水の大変な心配があるということで、それを防ぐための流域防災工事をするんだけれども、それがサイベ沢遺跡の一部にかかっているということで、この調査をするということで理解いたしました。\n　それでは、予算の内訳について教えてください。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-090",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予算の内訳についてのお尋ねでございます。\n　教育委員会が現場管理をするための需用費といたしまして、７万円、発掘調査や現地測量、記録等を委託するための費用といたしまして、1,408万円、合計で1,415万円を措置するものでございます。\n　なお、財源につきましては、全額が北海道からの受託収入であります。\n　以上でございます。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-091",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、この事業のスケジュールについて、教えてください。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-092",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業のスケジュールについてのお尋ねでございますが、北海道からは今年度中の事業完了を依頼されてございますので、予算議決後すぐに北海道と受託契約を締結し、その後、入札によりまして委託業者を決定することとしてございます。\n　現地での発掘調査につきましては、３月初旬から実施いたしまして、３月末までの事業完了を予定してございます。\n　以上でございます。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-093",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "道のほうから今年度中の事業完了を依頼されているということで、大変な事業かなとは思います。\n　それでは、先ほどの答弁にもありましたけれども、サイベ沢遺跡の一部が要発掘調査区域になったということですので、この発掘調査で土器ですとか石器ですとか、そういうものが発見された場合というのは、どのような対応になるのか、教えてください。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-094",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会生涯学習部文化財課長（長谷山裕一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "調査によりまして出土した遺物への対応についてのお尋ねでございます。\n　今回の調査は、土木工事を実施するため遺跡を現状のまま保存できないことから、事前に発掘を行って写真や図面などで記録、保存することとしてございます。その際、土器や石器などの遺物が出土した場合には、所定の手続の下、函館市教育委員会が保管することとしてございます。\n　以上でございます。",
+    "text_length": 174,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-095",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "発掘された場合にも、きちんと保管、あるいは記録ができるということで理解いたしました。\n　以上で終わります。",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-096",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "道の事業を函館市教育委員会の流れの中で受けているということを、しっかり理解できました。\n　今、小山委員に対しての説明で全部クリアされましたので、最後の、何か文化財が発掘されたらどうなるのかというのは、私もそれは思っていたので、ぜひ何か大きなお宝が出て、また函館がまた話題になるといいなと思って終わります。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-097",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（福島恭二委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福島　恭二",
+    "member_faction": "民主・市民ネット",
+    "text": "今回の補正予算ですけれども、1,698万7,000円の補正が出ておりますけれども、南茅部地域通学バス運行業務委託料としてのものですけれども、これに至った経過とその目的について、お知らせをいただきたいと思います。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-098",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会教育政策推進室学校再編・地域連携課長（細川真喜）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業の経過と目的についてのお尋ねですが、本事業につきましては、南茅部地域の磨光小学校、臼尻小学校、大船小学校の３校の統合により、令和４年４月、現在の磨光小学校の位置に南茅部小学校が開校することに伴い、現在の臼尻小学校及び大船小学校区の児童の安全確保や身体的負担の軽減を図るため、バス事業者への委託により、スクールバス１台を運行しようとしているものでございます。\n　以上でございます。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        67
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-099",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（福島恭二委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福島　恭二",
+    "member_faction": "民主・市民ネット",
+    "text": "学校統合による、いわゆる足の確保ということだと思います。\n　それでは次に、この委託年数は何年なのか、事業者の選定について、どのような方法で取られるのか、お知らせください。",
+    "text_length": 85,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-100",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会教育政策推進室学校再編・地域連携課長（細川真喜）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "委託年数と事業者の選定方法についてのお尋ねですが、本事業の委託年数につきましては、令和４年度の単年度契約としているところですが、その理由といたしましては、令和５年度に尾札部中学校、臼尻中学校の統合により、南茅部中学校の開校を予定しており、新たにスクールバスを利用する生徒も想定されますことから、改めて、小・中学校合わせて効率的にスクールバスを運行するため、単年度契約としたところであります。\n　また、事業者の選定につきましては、財務部調度課において、旅客自動車運送事業の許可を有し、当該業務の履行が可能な事業者を選定の上、指名競争入札を行い、事業者を決定するものであります。\n　以上でございます。",
+    "text_length": 298,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-101",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（福島恭二委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福島　恭二",
+    "member_faction": "民主・市民ネット",
+    "text": "内容は分かりましたけれども、単年度というか、今、答弁があったように、中学校の統合も協議をされておりますことから、私も当然、それのスクールバスも運行されるのかなと思っておりましたけれども、年度がずれているということだと思いますけれども、いずれにしても、先に小学校のスクールバス、そして次年度から中学校のスクールバスの運行が予定されていることから、単年度だけの予算と運行ということですね。\n　ちなみに、今の答弁の中でも、小・中学校合わせてのスクールバスを運行するためと言っていましたけども、これは新たにまた決めることだと思うんですけれども、それでよろしいんでしょうか。\n　それと併せて、これは端から端まで、始発から終点までの距離はどのくらいあるのでしょうか。併せて教えてください。",
+    "text_length": 338,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-102",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会教育政策推進室学校再編・地域連携課長（細川真喜）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "スクールバスの運行についてのお尋ねですが、令和５年度の南茅部中学校の開校により、スクールバスを利用する生徒の増加が見込まれておりますことから、新たなスクールバスの運行を予定しているところであります。\n　また、片道につきましては、約18キロメートルとしております。\n　以上でございます。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        71
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-103",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（福島恭二委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福島　恭二",
+    "member_faction": "民主・市民ネット",
+    "text": "したがって、次年度から中学校も合わせたバスを運行する予定だと。\n　それでは、これは小・中学校一緒で運行されるということでよろしいのですね。ちょっと確認です。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-104",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会教育政策推進室学校再編・地域連携課長（細川真喜）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和５年度から、南茅部中学校及び南茅部小学校の開校によりまして、スクールバスにつきましては、開校に合わせて改めて小・中学校のスケジュールやバスの経路、運行走行距離など踏まえまして、南茅部のスクールバスの運行体制を見直すことで、効率的な運行を図りたいと考えております。\n　また、スクールバスの運行につきましては、今回と同様、バス事業者の委託を考えております。\n　以上でございます。",
+    "text_length": 189,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-105",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（福島恭二委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福島　恭二",
+    "member_faction": "民主・市民ネット",
+    "text": "大体分かりました。\n　いずれにしても、合併をされて、やむを得ないということもあるのでしょうけれども、どんどん人口が減って、合併された市町村が衰退していく様を考えると、大変寂しいものがあり、併せてまた、当時、合併の協議に携わった者の一人として、これでいいのかなと思ったりもしております。\n　いずれにしても、この地区においては、とかくこのスクールバスのみならず、やはり地域の足として、学校行事だけでなくて、やはり町内の移動にも利用が求められてくるのではないかなという感じもいたしますので、恐らくこれは、あくまでも今のところはスクールバスということで、生徒だけを中心とする運送だということで理解しておきますけれども、ともあれ、そういった要求が出てくるのではないかなと思いますので、今後、それらに柔軟に対応できるようなことも検討しておく必要があるのではないだろうかなと、要望ですけど申し上げておきたいと思います。\n　業者については、こういった運賃を取る事業でないから、委託料でやるがために、簡単に言うと、自家用車を持っている──バスを持っている業者であれば、どこでもいいというふうなこともあるんですけれど、あえてこの条件としては、運送事業の許可を持っているところを指名したいということですから、より安全な運行になるものだと思いますので、この辺は理解いたしました。\n　それでは、この委託料の1,698万7,000円の積算根拠について、教えてください。",
+    "text_length": 620,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-106",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "教育委員会教育政策推進室学校再編・地域連携課長（細川真喜）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "委託料の積算根拠についてのお尋ねでございますが、スクールバスの運行業務に係る委託料は、令和４年度の学校稼業日や校外学習等を踏まえ、年間の走行距離及び走行時間を算出し、北海道運輸局が設定している大型車における距離単価及び時間単価を参考に積算しているところであります。\n　以上でございます。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-107",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（福島恭二委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福島　恭二",
+    "member_faction": "民主・市民ネット",
+    "text": "そうしますと、これは、いわゆる国の基準に基づいて算定しているということでよろしいのですね。分かりました。\n　ともあれ、より安全な運行に努められるように要望して終わります。ありがとうございました。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-108",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（吉田崇仁委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "吉田　崇仁",
+    "member_faction": "新市政クラブ",
+    "text": "議案の賛否ですけれども、議案第１号から、議案第34号に至るまで、まずマルとしたいと思います。\n　その理由は、道南いさりび鉄道も先ほどお話ありましたけど、経営安定のために必要な措置であると確認しました。\n　また、その後、小山委員からのＳＮＳ教育相談事業費皆減ですけれども、しっかり情報の共有など、連携するというお話がありましたので、これもまず、よいとします。\n　そしてまた、小山委員、池亀委員、市戸委員から出ておりました史跡垣ノ島遺跡デジタルコンテンツ等整備事業費ですけれども、多くの来訪者に縄文文化の魅力を伝えるツールとして、いろいろな意見も出ましたけれども、大いに来年は、新型コロナウイルス感染症も収まって期待したいものだというふうにして、大変よい質疑だったと思います。\n　その後、埋蔵文化財の小山委員、池亀委員から出た、文化財の発掘された際の対応も、しっかりやると──保管するということで、よしとしたいと思います。\n　また、最終、福島委員から出ておりました南茅部地域通学バス運行業務委託料ですが、国の積算に沿って、積算の根拠を出したということでありますし、子供たちの安全のため、負担軽減のためにも、必要な内容であると、委託料であると賛成いたします。\n　ですから、議案第１号から議案第34号まで、マルといたします。",
+    "text_length": 558,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-109",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小山直子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "うちの会派としても、全ての議案にマルということで、内容につきましては、吉田委員から御質問のあったいさりび鉄道のほう、本当にやはり、コロナ禍の影響は大きかったと思います。その中で、地域に密着した取組をしようとしていたり、魅力ある鉄道にしようということで、努力をされているということで、それの応援をしたいなと思います。いろいろな御提案がありましたので、それを、きっと参考にしてくださるのではないかなと期待しております。\n　それから、ＳＮＳ教育相談事業費ですけれども、本当に、市が試行的に取り組んでいたこと、すばらしいことをやっていたんだなということ、改めて私のほうは感じました。それでも道のほうが、期間も時間も長く子供たちに寄り添った相談になるようにということで、今、始められているということで、私立の中学生にも拡大するように、市教委のほうがしっかりとお話をしてくださるということですので、良としたいなと思っております。\n　垣ノ島遺跡のデジタルコンテンツは、本当に魅力あるものになるといいなと思っております。外国人の方へも、それから障がい者の方へも、全ての方に対応した本当に魅力ある優しいコンテンツになるという御説明がありましたので、期待をしたいなと思います。\n　それから、埋蔵文化財の発掘調査のほうですけれども、こちらのほうも、もし、そういう石器ですとかそういうものが発掘された場合の対応ということもしっかり考えているということで、よしとしたいと思います。\n　最後の南茅部地域通学バスの運行についても、統合に伴うスクールバスの運行ということで、いいかなと思います。ただ、令和５年度からは中学校のほうも統合して、南茅部中学校が開校するということで、小・中一緒のスクールバスになるんですね。そうすると、小学校と中学校ってやはり時間帯いろいろ変わるんですね、スケジュール。それから学校行事なんかも変わったり、それから、南茅部の場合には、コンブ漁の手伝いというのが子供の頃からあるということもあって、季節的なこともあったりするので、その辺りを、きっちり事業者と協議の上、子供たちの負担がないような、そんな運行に努めていただきたいなと思います。\n　福島委員がおっしゃったように、行く行くは地域の足という形も考えていただきたいなと思います。\n　以上です。",
+    "text_length": 970,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-110",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（池亀睦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "池亀　睦子",
+    "member_faction": "公明党",
+    "text": "公明党も、まず賛否態度としては、議案第１号から議案第34号までマルということでお願いします。\n　質疑の中で、適正かは全て確認させていただきまして、吉田委員が道南いさりび鉄道を熱く語っていただきましたけれども、本当にそのとおりだなと思っておりましたし、何が訪れる方々のニーズなのかというところは、なかなか難しい。それぞれが訪ねてくる目的がいろいろあると思いますし、どこに合致するのかなというのは非常に難しい。いろいろな取組をしていかなければいけないんでしょうけれども、大事なことは、やはり道南いさりび鉄道に、頑張っていただきたいなというか、継続して走ってもらいたいなというのが、やはり私たち市民としては、その思いがありますので、これは本当に有効な補正であると、より強くいたしました。\n　次に、ＳＮＳに関しても、函館がやっていたことを道がやるという、小山委員からも懸念することをいろいろ申し上げてましたけど、全くそのとおりだなって。やはり地域性というのは、ますます大事な時代なので、それが、道一本でやっていくというところは、どうなのかなという部分と、しかし、あまり地域が近くて発信できない子もいるかもしれない。その両面があるのかなと、やり取りを聞いていて思いましたので、大事なことは、より多くの子供たちがＳＮＳに自分のＳＯＳを発信できることだと思いますので、これは、しっかり私たちも見守っていかなければいけないなと思ってお聞きいたしました。もちろん賛成ですけれど。\n　次、垣ノ島遺跡のデジタルコンテンツも併せて債務負担のほうと一緒にお聞きいたしまして、さらにまた垣ノ島遺跡の楽しさが増していくのかなという思いと、やはり縄文文化のなくしてはならない、この自然の中で一生懸命生きてきた人たちの痕跡を、やはり私たちはＳＤＧｓの視点からも学ばなければいけないので、そういうところもしっかり伝わるものであっていただきたいなということを強く思いながら聞いておりましたけれども、本当に楽しみだなという思いは、より深くいたしました。\n　あと、埋蔵文化財というのは、これは道教育委員会から函館市教育委員会に受託してくれということで来たのだなということを、しっかり確認させていただきましたので。\n　次、福島委員の通学バス運行業務委託料ですけれども、昨今、統合、統合で、学校が今後の人口減少、少子化、様々そういう中で、統合がどんどん進められています。そういう中にあって、子供たちの通学の安全、また、本当に楽しく通えているのかというところは、やはり、市民はしっかり、私たち大人が見守っていかなければいけないということだと思います。ですから、通学というのは、本当はもっと本当に楽しい時間帯で、いろいろなことを考えたり──自分の子供の頃を考えて──花が咲いたら、もうこの時期なのだなとか、本当は教育の視点からいけば、そういう歩きながら、いろいろな風を感じたり花を見たり、自然の変化を感じたりして通学できたら、これは本当にいい教育になるんだけれども、時代の流れの中で、こういう形を取らなくてはいけないですけども、安全に行われるということを重視していくことが、広範囲に距離があるので、そこは賛成できるなと思いました。\n　以上です。",
+    "text_length": 1347,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-111",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（市戸ゆたか委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "私たちも、この議案全てにマルということで、賛成いたします。\n　吉田委員のいさりび鉄道については、この間も、経営努力をかなりしてきていると私は見ておりまして、今回は本当に新型コロナウイルス感染症の影響が厳しかったなということで、この補正の予算については納得しました。ただ、これからもローカル路線の魅力向上のために努力していただきたいなと思って聞いておりました。\n　小山委員のＳＮＳについては、私もＬＩＮＥでいじめやそういう相談を受けるというのは非常にいいなと思っていまして、今回、道がそれを一括してやるということなので、少し見守りたいなと思っていますので、本当、道と市の違いがよく分かりましたので、見守っていきたいと思っています。\n　それと、垣ノ島遺跡のデジタルコンテンツ、今回、本当に予算がついてよかったなと思っております。来年の夏までに頑張ってこのデジタルが整備されればいいなと思っていますので、今後新型コロナウイルス感染症の状況にもよりますけれども、ぜひ期待したい内容だと思っていまして、何回も言っていますけど、機械だけに頼るのではなくて、ガイドさんの、本当に人と人との触れ合いも非常に大事だと思っていますので、障がい者を含めたいろいろな方にも、ぜひ来訪していただいて、この魅力を見ていただければなと思って、二重マルです。\n　それと、埋蔵については、全議員さんがいろいろと心配していたことがありまして、サイベ沢遺跡、きちんと発掘調査するということですので、本当に、遺物発見のときには、市教育委員会の保管ということで安心いたしました。南茅部地域の通学バスですけど、私もバス問題、いろいろ関わってきましたけど、今回、片道18キロメートルになるということで、非常に距離が長いということなので、本当に子供たちの安心・安全のために通学バス、よかったなと。令和５年の中学校についてもバスを考えるということですので、先ほど委員の皆さんから出ていた、課題をいろいろ調査しながら、よりよい通学バスにしていただければと。あと、住民の足のことも、今後、課題だなと思って聞いておりました。\n　以上をもちまして、私の議案についての意見を述べました。",
+    "text_length": 913,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        85
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-5-112",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 5,
+    "schedule_name": "12月03日－05号",
+    "date": "2021-12-03",
+    "speaker": "（小野沢猛史委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "特に反対する理由はありませんので、全件、賛成いたします。\n　以上です。",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        87
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-113",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "それでは、企業局の議案第６号で、交通事業会計の補正予算について質疑をいたします。\n　今回の補正は、記載のとおり、定期外旅客運賃が減の補正予算と定期については増額補正となっています。非常に大きな金額の減額補正となっているので、その補正額の根拠について、まずお聞きいたしたいと思います。",
+    "text_length": 141,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        5
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-114",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "企業局管理部経理課長（中村勇人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "運輸収益の補正額の根拠についてのお尋ねですが、令和３年度当初予算の運輸収益につきましては、新型コロナウイルス感染症の感染拡大の影響を受けた令和２年度決算見込みを勘案し、新型コロナウイルス感染症による影響の少ない令和元年度決算の運輸収益の75％程度の積算とするなど厳しく見込んだところでございますが、上半期において大半の期間で緊急事態宣言などが発出された影響により、観光需要が戻らなかったことなどから、当初予算と比較して減収となると見込んだところでございます。そのため、上半期の実績及び下半期の予算ベースを勘案いたしまして、年間総輸送人員につきましては、421万794人を371万871人に改めるとともに、運輸収益につきましては、定期外旅客運賃は６億7,091万8,000円を５億7,676万7,000円に、定期旅客運賃は9,338万1,000円を9,557万2,000円に、運輸収益合計では７億6,429万9,000円を６億7,233万9,000円とし、9,160万円の減額補正をしようとするものでございます。\n　以上でございます。",
+    "text_length": 466,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-115",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "新型コロナウイルス感染症の影響によって、もともと積算は75％程度に見たけれども、さらにそれから落ち込んで、予想としては人員──乗客が50万人近く落ち込むということで、その落ち込んだ計算の下で改めて旅客運賃を見ると、これだけの補正をせざるを得ないということが今の答弁にあったとおりだというふうに思います。全体として、その影響を受けて、新型コロナウイルス感染症による影響によって経営が大変厳しくなっていると思います。そういう点で新型コロナウイルス感染症の影響を本当に受けている、この令和３年度──2021年度、これは新型コロナウイルス感染症前の経営状態と比較して、どのように落ち込んでいるかということについてちょっとお聞きしたいと思います。",
+    "text_length": 318,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-116",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "企業局管理部経理課長（中村勇人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和３年度と新型コロナウイルス感染症拡大の影響を受ける前ということで、令和元年度と令和３年度の経営状況についての比較というお尋ねですが、乗車料金の売上げである運輸収益につきまして、新型コロナウイルス感染症の影響が少なかった令和元年度の上期実績との比較で申し上げますと、令和元年度では約５億4,000万円でしたが、本年度では約２億9,000万円となっており、約２億5,000万円の減収となっております。本年度の下期において、予算どおりの運輸収益を確保できたといたしましても、令和元年度決算に比べて、約３億1,000万円の減収になるものと見込んでおります。これにより、本年度の単年度財源過不足額は、令和元年度が約5,000万円の財源剰余であったのに対し、約２億9,000万円の財源不足となる見込みです。また、本年度末の累積財源過不足額については、令和元年度末が約４億8,000万円の財源剰余であったのに対し、特別減収対策企業債借入れ前で約１億1,000万円の財源不足となる予定です。新型コロナウイルス感染症の影響が本格化した令和２年度以降は、備品消耗品費や修繕費などの日常的な経費について、安全確保を前提に優先度や緊急性を考慮して予算の執行管理をきめ細かく行うなど、以前にも増して経費節減にも取り組んでいるところですが、観光需要の落ち込みによる減収が大幅なものでありまして、厳しい経営状況となっております。\n　以上でございます。",
+    "text_length": 612,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-117",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "今の答弁によると、令和元年度、新型コロナウイルス感染症影響前だと相当この旅客は、新幹線等の影響も受けて伸びていたと。そのときで今の答弁にあったとおり４億8,000万円の財源剰余があったと。しかし、令和元年度以降、２年度、３年度で、ほぼ新型コロナウイルス感染症の影響によって赤字を出して、その剰余金を全部食い潰して、さらに今年度末は、この補正にあるとおり財源不足額が1,000万円近く出るというのが交通事業の今の現状だということの答弁で、新型コロナウイルス感染症の影響が本当に交通事業に厳しく現れていると言えると思うんですね。やはりその減収が新型コロナウイルス感染症だから、今年度は9,415万1,000円の補正をするということで、さらにその上でも、今言ったとおり財源不足が生じるということですが、そうした減収による対策をどのように立てるのかということについてお伺いしたいと思います。",
+    "text_length": 391,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-118",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "企業局管理部経理課長（中村勇人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "減収に伴う対策についてのお尋ねですが、本年度の上期の減収によりまして、下期に予算どおりの運輸収益を確保できたといたしましても、年度末では累積財源が大きくマイナスとなる見込みとなりましたことから、資金不足額につきまして、国が講じております新型コロナウイルス感染症の影響に対する財政措置である特別減収対策企業債を活用し、長期借入金による資金手当てを行って、財源不足に対応してまいりたいと考えております。\n　以上でございます。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-119",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "今、答弁にあったんですが、議案の中でも第３条で特別減収対策企業債、これで１億770万円を借り入れるということで、第３条は今回新たに書き加えられているわけですが、これは国の新型コロナウイルス感染症に対する財政措置ということで、企業債の長期借入金ということですが、交通事業は大変厳しい状況で、若干この令和元年度では剰余、余裕があったけれども、日常的には大変厳しい経営状況にあると思うんですが、さらにそれを今回の赤字、収入不足によって長期の借入金を借りざるを得ないという状況になったということだと思うんですね。その影響で、この借金について、企業債についてどのように返済していくのか、これは非常に先の見通し、これは借金ですから返さなければ駄目だと思うんですね。その見通しについてどのようになっているのか。",
+    "text_length": 348,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-120",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "企業局管理部経理課長（中村勇人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "借入れした場合の返済の見通しについてのお尋ねでございますが、特別減収対策企業債につきましては、償還期間が15年以内の長期かつ低利の貸付けでございまして、元金償還は借入れの翌年度から３年程度の返済猶予期間が設けられているところでございます。予定どおりの借入れとした場合、元金償還は令和７年度から始まることとなりますが、それまでには観光需要の回復が見込まれることや償還期間が10年以上であることを勘案いたしますと、返済は可能であると考えております。\n　以上でございます。",
+    "text_length": 233,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-121",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "この国の新たなそういう制度では、非常に返済の猶予期間もあって、しかも低利だということです。しかし、それもやっぱり借金だから、いずれにしても返していかなければ駄目だということだと思うんですよね。大変厳しい中で、今年度は乗客の落ち込みによる収入不足と。これはいつまで続くかも分からないし、答弁では、観光需要が回復するといっても、今、新しい新型コロナウイルス感染症が出てきたということもあって、大変厳しいのではないかと思うんですね。\n　私は、国の今の補正予算でも、額が非常にたくさんの額、36兆円か何かでやられているということで、民間でも、例えば持続化給付金でそれなりにお金が出ると。それから、市の指定管理者なんかについても、利用料金制度をとってるところは市が補填するということで、そのまま補填するという制度が新型コロナウイルス感染症対策には非常に有効に働いていると。しかし、企業局の、やはり一番の交通事業で新型コロナウイルス感染症に影響を受けているのが借金しなければ駄目だという制度自体が、非常にこれは問題だと思うんですね。そういう点で、やはり赤字を抜け出すために企業局としては、ぜひ新型コロナウイルス感染症対策としての財源の確保を国なり道なりにきちんと要望していただきたいと思います。\n　以上で終わります。",
+    "text_length": 552,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-122",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "おはようございます。私のほうからは、商工費の中の新産業創出推進費減のことについてお伺いしたいと思います。\n　まず、この創業支援事業、この背景とか目的、これを見ますと、「創業の段階に合わせたセミナーの実施や優秀な事業計画に対する開業資金の補助、地域の専門家からなる支援者ネットワークによるフォローアップ等を行うこととし、起業・創業に興味を持っている方から創業して間もない方まで一貫した創業支援事業計画を実施いたします」、このようにあります。また、創業バックアップ助成金では、「令和元年度から、これまでの制度「一般枠」とは別に、35歳未満の方を対象とした「若者枠」を新設いたしました」と、このようにありました。まず最初に、この創業支援事業、この内容、そして実績についてお伺いします。",
+    "text_length": 339,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-123",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "経済部工業振興課長（米田剛）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "創業支援事業の内容と実績についてのお尋ねでございます。\n　創業は、新たな産業や就業機会の創出につながるものでありますことから、市においては平成27年度に国から認定を受けた創業支援等事業計画に基づき、函館地域産業振興財団など地域の創業支援機関と連携しながら、北斗市、七飯町との２市１町による地域での創業支援の強化を図っているところであります。具体的には、新規事業セミナーやビジネスプラン作成スクール、創業スキルアップ講座などの各種事業を開催し、今年度においては現時点で約240名の参加者に対して、創業意識の醸成や創業計画のブラッシュアップなどを図っているほか、資金面での支援として、一般枠と若者枠から成る創業バックアップ助成金を実施しており、創業予定者や創業５年以内の事業者を対象に、製品やサービス等の優位性などを専門家が審査した上で、今回、市内３者の事業計画が採択されたところであります。\n　以上でございます。",
+    "text_length": 405,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-124",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "次に、減額となった理由についてお伺いします。",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-125",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "経済部工業振興課長（米田剛）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "創業支援事業負担金が減額となった理由についてのお尋ねでございます。\n　当該負担金の予算減額につきましては、創業バックアップ助成金の交付決定に伴うものでありまして、今年度計上いたしました一般枠500万円、若者枠300万円、合計800万円の予算に対しまして、一般枠で10件、若者枠で４件の合わせて14件の応募があり、一次の書面審査、二次のプレゼン審査を行った結果、一般枠では助成額が合計で500万円となる２件の事業が採択され、若者枠では助成額100万円の事業が１件採択されたことから、若者枠で不用額となった200万円の減額補正をお願いしたいところであります。\n　以上でございます。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-126",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "減額となった理由については分かりました。\n　次に、この創業支援事業、これによって地域に根差した地場産業が育成される、あるいは活性化されることを望んでいるわけですけれども、今後の取組について課題、あるいは今後の取組についてどのように考えているのか、お伺いします。",
+    "text_length": 130,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-127",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "経済部工業振興課長（米田剛）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "課題と今後の取組についてのお尋ねでございます。\n　創業バックアップ助成金の若者枠につきましては、新事業の創出や地域課題の解決に取り組む若者を資金面からもサポートするべく、令和元年度にそれまでの創業バックアップ助成金に追加する形で新たに設けたものでありますが、全体の応募が増加傾向にあるものの、若者枠の応募件数は一般枠に比べて少ないことから、今後は創業者との交流カフェやチャレンジショップなど、創業を目指す若い事業者を支援する他の事業と合わせ、ＳＮＳの活用や若者が集う施設に協力をいただくなど、創業バックアップ助成金の若者枠についても積極的な周知に努めてまいりたいと考えております。\n　以上でございます。",
+    "text_length": 301,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-128",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。若者枠についても積極的な周知に努めてまいりたいということですけども、お聞きしますと、募集期間が４月１日から今年度は５月14日までだったということで、非常に募集期間が短いのではないかなと思うんですね。もう少し準備する──応募する側もその準備の時間であるとか、その辺をもう少し考えていただいて、もう少し参加しやすい、そういうふうな期間などもお考えいただければなと思います。\n　以上で終わります。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-129",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "公の施設の指定管理者の指定で、その中から函館市元町観光駐車場並びに函館市函館山山麓観光駐車場、このことについてお伺いしたいと思います。\n　まず、利用状況をお聞きしたいと思うんですが、元町観光駐車場、これは昨年、今年については新型コロナウイルス感染症の影響もあって、なかなか前年とかと比較するのは難しいと思うんですが、ここ５年間くらいの利用状況について、まずお伺いします。",
+    "text_length": 185,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-130",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "観光部観光企画課長（小林祐樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "元町観光駐車場の利用状況等についてのお尋ねでございますが、元町観光駐車場の利用状況につきましては、時間貸し利用の台数で申し上げますと、平成29年度から令和元年度まではおよそ２万7,000台から２万9,000台の間で推移をしておりましたが、新型コロナウイルス感染症の影響による利用者の減少によって、令和２年度については１万7,307台、令和３年度につきましては11月末時点でございますが、１万7,823台となってございます。また、月ぎめ駐車場につきましては、平成20年度に収容台数91台で開設をしたところでございまして、令和２年度には４台分増設し、95台としております。利用台数については、ほぼ満車で推移をしております。\n　以上でございます。",
+    "text_length": 320,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-131",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "元町観光駐車場の利用状況については分かりました。\n　次に、函館山山麓駐車場についてお伺いしたいんですが、こちらのほうは昨年４月に設置したばかりということですので、対前年との比較とかはできないと思うんですけども、令和２年度の利用状況は、６月30日に作成された実績シートを見ると２万2,649台、このようにあったと思うんですね。今回、ここの駐車場はシステム化によって時間帯も分かるというふうに聞いているんですけども、時間帯別の利用状況などが分かるのかどうか、その辺のことを併せて山麓駐車場のことについてお伺いします。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-132",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "観光部観光企画課長（小林祐樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "函館山山麓観光駐車場の利用状況についてのお尋ねでございます。\n　その利用状況につきましては、令和２年度は２万2,649台、令和３年度につきましては、11月末時点で１万4,967台となっております。また、時間帯別の利用状況につきましては、駐車場自動管理システムの導入によりデータのほうを蓄積しているところでございますが、現在、新型コロナウイルス感染症の影響により、利用者が減少している状況にありますことから、観光需要の回復状況を見ながらデータの集計・分析を行ってまいりたいと考えてございます。\n　以上でございます。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-133",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "そうしますと、現時点でのデータの集計・分析はしていないということですね。分かりました。ぜひこの辺も観光需要の回復を見ながら進めていただきたいと思います。\n　次に、候補者として適当と認められた理由についてお伺いしていきたいと思います。\n　まず初めに、元町観光駐車場並びに函館山山麓観光駐車場の概要、この中に指定管理者の自己評価、この中の業務の履行状況の課題と今後の対応、こういう欄がございまして、ここに「今後も利用者が安全・快適に利用できるよう適切な維持管理に努められたい」、このようにありました。また、サービスの質の状況の課題と今後の対応につきましても、「駐車場利用者に対しホスピタリティをもって対応するとともに，引き続き駐車場利用者確保に向けた宣伝等に努められたい」。また、団体の経営状況の課題と今後の対応には、「引き続き，健全な経営に努められたい」。この「努められたい」という文言が並んでおります。\n　一方、市の指定管理者に対する実績評価、ここの業務の履行状況、サービスの質の状況、団体の経営状況、これが、この中の課題と今後の対応の文言が、指定管理者の自己評価の文言と一字一句、全て一緒になっていました。多分、これは何か記載ミスというか、ではなかったのかなと思うんですね。ですから、もし記載ミスであれば、指定管理者の自己評価、自分の評価はどのように評価しているか内容が分からないものですから、そのことも含めてお伺いしたいと思います。",
+    "text_length": 618,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-134",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "観光部観光企画課長（小林祐樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "函館山山麓観光駐車場の指定管理者業務実績シートにつきましては、市の評価の記載内容と同じ内容について誤って指定管理者の評価の欄に記載をしたものでございまして、これについてはホームページの掲載内容を訂正したところでございます。\n　実際に指定管理者から提出された自己評価における課題と今後の対応について申し上げますと、区分は３つございますが、業務の履行状況につきましては、「今後も駐車場利用者が安全で快適に利用できるよう管理運営に努めたい」。また、サービスの質の状況につきましては、「丁寧な接客を心がけ，駐車場利用客の増加につなげたい」。また、団体の経営状況につきましては、「今後も安定した経営ができるよう努力していきたい」となってございます。\n　今後、このようなミスが生じないよう適切な事務処理に努めてまいりたいと考えてございます。",
+    "text_length": 364,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-135",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。記載ミスだということだったと思うんですけども、このような情報というのがきちんと記録に残っている、それをよりどころにして市民の方とか、いろんな方が理解をすることになりますので、今後、きちんとした対応をお願いしたいと思います。\n　次に、候補者として適当と認められた理由なんですけども、この選定結果の中の評価内容を見ると、評価基準に基づき、７名の選定委員が個別に評価を行い、適当と認められるため候補者としたと、このようにありました。募集の概要には、評価基準、評価項目、この中に様々な項目があるんですけども、施設設置の目的が達成できるか、あるいは市民の平等利用が確保され、市民サービスの向上が図られるか、そして、地域活動との関わりや地域に対する貢献が図られるか、このような項目があります。どのような評価が行われたのか、お伺いします。",
+    "text_length": 369,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-136",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "観光部観光企画課長（小林祐樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "評価についてのお尋ねですが、当該施設の指定管理者候補者の選定につきましては、公の施設の指定管理者制度運用取扱要綱に基づきまして、現指定管理者１団体のみの応募であったことから、指定管理者候補者選定委員会において、評価基準の各項目について点数化をして、総合点数により評価をする総合点数方式ではなく、評価基準の各項目に基づいて応募団体が適当かどうかを判断する採決方式により指定管理者候補者として選定されたものでございます。\n　なお、評価に当たっては、11の評価項目がございまして、申請書類の内容について、各項目ごとに設定された視点で評価をされた結果、指定管理者候補者として適当であると認められたものでございます。\n　以上でございます。",
+    "text_length": 314,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-137",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。\n　次に、今後の駐車場の活用法についてお伺いしたいと思うんですけども、まず初めに、元町観光駐車場の今後の活用法、令和２年３月31日現在の函館市公共施設カルテ、この中の元町観光駐車場を見ますと、今後の施設のあり方（当初）には、「繁忙期を除いては利用頻度が低いことから，月極駐車場の拡大も含めた効率的な管理運営について検討します」、このようにありました。また、現在の状況および方向性の変更等には、「令和２年５月１日から月極駐車場の収容台数を２台増台した」と、このようにありました。先ほどの利用状況でもお聞かせいただきましたけども、なかなか繁忙期とそうでない時期との兼ね合いとか難しいかと思うんですけども、元町観光駐車場の今後の活用についてはどのように考えているのか、お伺いします。",
+    "text_length": 345,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-138",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "観光部観光企画課長（小林祐樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "元町観光駐車場の今後の活用についてのお尋ねでございます。\n　今、御指摘のございましたとおり、施設カルテにおいても、今後、効率的な運営を行っていくという方針を持ってございまして、月ぎめ駐車場につきましては、３階建てのうち、１階と２階を現在、月ぎめ駐車場ということで活用してございます。令和２年度に増設した部分については、この１階、２階のスペースの中で工夫をしながら増設をしたというところでございまして、今後、財源確保の観点からも増設というのを考えた場合には、今、３階の時間貸しのスペースについて検討していく必要があると考えてございますので、その３階の時間貸しの部分の利用状況等を勘案しながら、今後も月ぎめ駐車場の収容台数増加が可能かどうか、こういったことについて検討してまいりたいと考えております。\n　以上でございます。",
+    "text_length": 359,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-139",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。\n　次に、函館山山麓観光駐車場のことについてお伺いしたいんですけども、指定管理者業務実績シート、この中には市民ニーズの把握の実施状況という項目がありまして、「利用者，周辺住民の声を直接聞いている」、このような表現がありました。また、指定管理者募集要項には、利用者ニーズの把握として、「指定管理者は，施設におけるサービス向上のため，利用者アンケートを実施するなど，利用者ニーズを把握し，管理業務に反映させることに努めなければなりません」。このようにありました。どのような方法で利用者、周辺住民の声を聞いているのか、また、どのようにして利用者のニーズを把握しているのか、お伺いします。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-140",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "観光部観光企画課長（小林祐樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市民ニーズの把握についてのお尋ねでございますが、元町観光駐車場につきましては、立体式の駐車場の出入口にアンケートボックスを設置し、利用者等のニーズの把握に努めているところでございます。\n　また、函館山山麓観光駐車場につきましては、警備員を配置していることから、直接、利用者から意見をお聞きし、対応しているところでございます。\n　なお、周辺住民のニーズにつきましては、施設のサービス向上を目的に把握をしているところでございまして、過去の事例といたしましては、駐車場の混雑による渋滞の発生に伴う生活への支障などの意見が寄せられているところでございます。\n　以上でございます。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-141",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。ぜひ適切な対応をお願いしたいと思うんですが、これまでもここの経済建設の予特などで函館市公民館、ここに駐車場がなくて多くの市民が不便を感じているので、何とか駐車場として公民館利用者の利便性を向上するような意味合いから、公民館の附帯駐車場として利用できないかというふうなことが何度も行われていたと思うんですね。ぜひ、この函館山山麓観光駐車場を公民館の附帯駐車場として利用できるように検討していただけないかということをお願い申し上げて質問を終わります。",
+    "text_length": 230,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-142",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "議案第11号から議案第13号まで、ほぼ同じ視点で質問をさせていただきたいと思います。\n　最初に、函館市道路の構造の技術的基準等を定める条例の一部改正を一通り読ませていただいたんですが、専門用語も含めて、なかなか理解することができなかったので、改正のポイントと併せて、改正によって市民生活に影響が及ぶものが出てくるのか、また、改正によって、それらを具現化するにはどうしても予算措置が伴うものというふうに考えますので、この２つの案件について教えていただければと思います。",
+    "text_length": 233,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-143",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "土木部道路建設課長（荒谷哲次）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "改正のポイントや改正による市民生活への影響、予算措置についてのお尋ねですが、本条例につきましては、道路を新築し、または改築する場合における道路の構造の技術的基準と、道路に設ける道路標識の寸法を規定したものでありまして、道路法第30条第３項及び第45条第３項の規定に基づき、道路管理者である地方公共団体が政令や省令で定める基準等を参酌して定めることとされております。法改正がありますと条例改正が必要になるということで、本改正内容は政令と同様の内容となっております。\n　改正内容といたしましては、道路法の政令であります道路構造令が改正されたことに伴いまして、自転車通行帯を設ける道路や、歩行者利便増進道路、通称ほこみちと言われておりますけども、その構造基準等を新たに規定するほか、交通安全施設に電磁誘導線や磁気マーカーといった自動運行補助施設を新たに位置づけるというものであります。\n　本改正は道路の構造基準等の規定でありますことから、市民生活への影響はないものと考えております。また、本市におきましては、自転車通行帯や歩行者利便増進道路、自動運行補助施設は現時点で整備の予定がないため、予算措置の必要はないというふうに考えております。\n　以上でございます。",
+    "text_length": 527,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-144",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "分かりました。ただ、具体的には自転車の歩行帯を確保するとか、その場合も道路を新築し、または改築する場合ということで、その場合は安全性が高まるということになると思うんですよ、受け止めると。しかし、ここは参酌して決めることができると、定めることができるということになりますので、できる規定ということですよね、そういう意味ではね。だからやらなくてもいいんだと、逆に言えば、ということになるわけですが、いずれにしてもこれはやることによって市民生活には好影響を与えるということにはなると思うんですよ。ただ、お話を聞くと政令で決まったので条例を決めるのであって、実質的な取組、実際の取組というのはないというふうに今理解したんですよね。そういう意味では、予算措置の必要はないというふうに分かりますが、新しく、例えばするときに、できる規定なので、当面、函館市において、そういうことが予想されるというか期待されるということがあり得るのでしょうか。",
+    "text_length": 414,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-145",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "土木部道路建設課長（荒谷哲次）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "自転車通行帯を設ける可能性についてのお尋ねでございます。\n　函館市の場合、道路幅員が規定の状態である一定の幅員で限られているものですから、この通行帯を設ける場合、新たな用地の確保が必要となります。そういった場合に、現況の道路を広げる、もしくは用地買収をして補償して、この用地を確保するということが、なかなか困難な場合が多いと想定されております。よって、新設するときには、今、委員がおっしゃられたように、安全性という意味では必要性は十分、我々も認識しておりますので、可能である場合については、当然、そのような通行帯も確保した形での将来の可能性というものはあるものと認識しております。\n　以上です。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-146",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "分かりました。いい方向性の政令を基に条例を決めたということなんですが、具体的に具現化するということは、当面見通せないという理解でよろしいですね。分かりました。\n　続きまして、いいですか。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-147",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "次、議案第12号に移ります。これも同じなんです。考え方としては、読んでいくと。特に高齢者のエレベーターの関係とかということが出てきましたから、いいことかなと思って、このことによって好影響が与えられるのかなと思ったんですが、先ほどと同じような考え方なんでしょうか。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-148",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "土木部道路建設課長（荒谷哲次）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そうですね。",
+    "text_length": 6,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-149",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "ちょっとそこを具体的に教えて。",
+    "text_length": 15,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-150",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "土木部道路建設課長（荒谷哲次）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "改正のポイントや改正による市民生活の影響、予算措置についてのお尋ねですが、本条例につきましては、特にバリアフリー化が必要である道路、特定道路と言われるものですけども、それにおける移動等の円滑化のために必要な道路の構造に関する基準を規定したものでありまして、高齢者、障害者等の移動等の円滑化の促進に関する法律、通称バリアフリー法と言われておりますけども、それの第10条第１項の規定に基づいて、道路管理者が省令で定める基準を参酌して定めることとされております。\n　改正内容といたしましては、バリアフリー法の省令であります移動等円滑化のために必要な道路の構造に関する基準を定める省令が改正されたことに伴いまして、自転車歩行者専用道路や歩行者専用道路、旅客特定車両停留施設の構造に関する基準等を新たに規定するものでございます。本市におきまして、現時点で特定道路に指定されている自転車歩行者専用道路や歩行者専用道路がなく、また、既存のバスターミナルを特定車両停留施設として位置づける予定がないため市民生活への影響はなく、予算措置の必要性はないというふうに考えております。\n　以上です。",
+    "text_length": 487,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-151",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "分かりました。ただ、先ほども言いましたけれども、これを実現、具現化することによって市民生活、特に高齢者、障がい者に対しては好影響を与えるということになると思われますので、ぜひそういう視点に立った方向性を見いだしていただければ大変ありがたいなというふうに思いますので、御努力をお願いしたいというふうに思います。\n　続きまして、議案第13号の函館市道路占用料徴収条例の一部を改正する条例です。これもこの前の２つの考え方を踏襲しているんですが、その辺を簡単に教えていただければと思います。",
+    "text_length": 241,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-152",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "土木部道路管理課長（春山英之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の改正のポイントや改正による市民生活への影響、予算措置についてのお尋ねでございますが、道路占用につきましては、道路法第32条の規定に基づきまして、市が道路管理者として市道に係る占用許可を行っております。このたびの改正につきましては、議案第11号においても先ほど御説明させていただきましたとおり、自動運行車の運行を補助する施設が新たな占用物件としても位置づけられたことから、本条例を一部改正しまして、自動運行補助施設に係る占用料の額を新たに定めるものとなっております。\n　なお、国のほうでは、自動運転のサービス普及促進のために、令和13年３月31日までの期間におきましては、占用料を免除することとしておりまして、市もこれに準じる予定としております。\n　また、お尋ねにあります、この改正により、直接、市民生活に影響を及ぼすものではございませんが、また歳入の増加についても、特に具体的に予定はございません。\n　以上でございます。",
+    "text_length": 413,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-153",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "分かりました。自動運転、最近、テレビなんかでもよく言われていますよね。それを試験的に導入するというか、する場合に道路占用料を免除すると、そういう理解でいいですよね。そうすると、令和13年３月までですから、ほぼ函館市においては導入されるような、中央でそういうふうな話はありますけど、函館市においてはそういうことはほとんどないという理解でよろしいですか、見通しとしては。",
+    "text_length": 183,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-154",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "土木部道路管理課長（春山英之）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "自動運転につきましては、皆様御存じのとおり、その研究進歩が日進月歩になっておりますので、当面という考えはございますけども、10年となりますと私どもも、もしかすると函館でもつけなければならない時期が来るのかなとは考えております。\n　以上でございます。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-155",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "分かりました。そういうことが来れば、ここにいるみんな、だんだん高齢化していって、運転するのも大変な状況になるのでしょうから、ぜひ具現化されればいいなというふうに思います。ありがとうございます。\n　なお、これから冬に向かいます。除雪のほう、大変でしょうが、よろしくお願いします。\n　以上です。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-156",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "議案第２号の港湾事業特別会計補正予算について質疑をします。\n　今回の増額補正は、港町ふ頭コンテナヤード施設運営費増ということで増額補正になっております。外航コンテナ航路休止関係経費ということですので、委託料を増額したということですが、休止に伴っての増額だというふうに思いますが、その増額の根拠について、まず教えてください。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-157",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "港湾空港部管理課長（中村謙三）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "増額の根拠についてのお尋ねでございますが、港町ふ頭コンテナヤードの指定管理委託料につきましては利用料金制を導入しており、これまでの実績を基にコンテナ取扱い本数を外航コンテナ3,216本、内航コンテナ3,408本、合計で年間6,624本と見込み、それに伴う大型クレーンなどの荷役機械等の使用料収入2,609万4,000円と、施設の維持管理等に要する経費4,239万2,000円の差額、1,629万8,000円を令和３年度の当初の委託料として予算計上していたところでございます。しかしながら、本年３月の大型クレーンの故障により、外航コンテナ航路が休止し、当面、再開の見込みがなく、外航コンテナ分の収入・支出が見込めないことから、コンテナの取扱い本数を内航のみの3,408本とし、改めて利用料金収入を積算したところ、年間の利用料金収入額1,079万6,000円に対し、維持管理費等に要する経費は3,675万6,000円となり、この収支不足額2,596万円が見直し後の委託料となります。この見直し後の委託料2,596万円と当初積算した委託料1,629万8,000円の差額が966万2,000円となり、この差額分について今回、補正予算をお願いするものでございます。\n　以上でございます。",
+    "text_length": 538,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-158",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "数字がかなりたくさん出てきて、ちょっとよく、詳しくは分からないんですけれど、当初の予算で、委託していますから委託料なんですけど、当初の予算で見込んでいたコンテナ収入、コンテナによる収入ですね、これは指定管理者の収入になるわけですが、当初はコンテナの、これはたしか６月議会で、３月にクレーンが故障したから修理してということで、たしか５月に直ったと。その間の故障していた間は、やはり収入が減になるということを見込んで予算を組んだと。しかし、さらに外航コンテナですか、外航航路ということだと思うんですけど、それが見込めないということで、委託料について、委託料の収入減に対して市が一定程度補償せざるを得なくなったということだというふうに思いますが、今、その外航コンテナが入らなくなったということを答弁でもおっしゃっていたんですけど、これはどういうことでそういうふうになってきたのか、その点についてちょっとお聞きしたい。",
+    "text_length": 405,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-159",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "港湾空港部港湾空港振興課長（細越清朗）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "外航コンテナ定期航路の休止の経過といいますか、現状についてのお尋ねだと思いますけれども、令和３年３月に故障いたしました大型クレーンにつきましては５月に復旧をし、現在まで順調に稼働しております。しかし、外航コンテナ定期航路につきましては、運航会社として大型クレーンの老朽化や故障による寄港スケジュールへの影響、それに伴うサービス低下などの理由から再開に至っていないというものでございます。\n　また、コロナ禍において外航コンテナ航路については、コンテナ不足と海上輸送運賃の高騰により、多くの貨物量がある港にコンテナ船が集中する状況から、全国的な航路再編もあり、地方港においては寄港の中止となった港も出てきているという状況でございます。\n　以上です。",
+    "text_length": 322,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-160",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "今、答弁にあったんですけど、外航コンテナがコンテナ不足によって、海上輸送運賃の高騰などによって地方港に寄港しなくなったと、中止しているということだと思うんですけどね。ちょっと、地方港というのはどういう、函館は地方港に当たって、地方港でない港というのはどういうところなのか、それをちょっとお聞きしたいんですけど。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-161",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "港湾空港部港湾空港振興課長（細越清朗）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地方港というものについて、特に定義をされているものはないとは思うんですけれども、北海道で言えば苫小牧や室蘭というところは拠点港として非常に貨物量も多いので、そういうところについては現状、コンテナ船の寄港もあるというところにはなっていますけれども、やはり函館であったり、東北のほうであったりだとか、九州とかの港においては航路の休止といいますか、寄港をやめているという港も出てきておりますので、そういうところを総称して地方港という言い方をさせていただいております。\n　以上です。",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-162",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "そうすると、頻繁にコンテナの荷揚げを行っているところについては、引き続き外航航路がつながっているけれども、地方のこういう小さい港については、なかなか新型コロナウイルス感染症の影響もあって、そういう航路が途絶えているということでいいんですか。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-163",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "港湾空港部港湾空港振興課長（細越清朗）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。",
+    "text_length": 3,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-164",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "その航路が途絶えていることによってコンテナの荷揚げの料金が入ってこないと。それを函館市が委託料の中で補填していくということだと思うんですよね。それが1,000万円近くに今年度はなるということだと思うんですよ。これは新型コロナウイルス感染症が続く限りそういう状態なのかどうかというのもよく分からないんですけど、そういう状態が続けば、毎年どれぐらいになるか分からないけど、今年度は1,000万円と、来年度は幾らということで、料金制度を取っているから利用料金が減になると、それを補填していかなければ駄目だということになると大変なことになると思うんですよね。たしかクレーンは新しく、今、買うということで６月のときも７億円か何かで新たに買うということも予定されているということで、非常に支出がコロナ禍の下でどんどん拡大していくという可能性があるというふうに思います。そういう点で、この外航コンテナの、これを荷揚げしてほしいということの見通しは実際あるのかどうかと。ずっとこのコロナ禍の中では赤字をずっと続けるということになると、不足額が生じると常に補填していかなければ駄目だということになる可能性があるわけですね。そういう点で、このコンテナの定期航路の再開はどのように、今、見通しているのかどうか。",
+    "text_length": 544,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-165",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "港湾空港部港湾空港振興課長（細越清朗）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "外航コンテナ定期航路の再開に向けての対策ということについてのお尋ねだと思います。\n　現在、２基目の大型クレーンの整備に着手をいたしまして、令和５年１月に稼働する予定となっていることから、運航会社に対しまして安定的な荷役が可能となることなど、再開に向けた要請を今後も続けていくこととしているほか、苫小牧港などを経由して輸出入が可能となる国内フィーダー航路の可能性を検討しながら引き続き外航コンテナ航路の再開に向けた取組を進めていくということにしております。\n　以上です。",
+    "text_length": 234,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-166",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "苫小牧から経由してということが今、答弁にあったんですけど、その点について少し詳しく、この点が可能になると外航コンテナが入ってくる可能性があるということだと思うんですけどね。その辺をちょっと詳しく、もう少し。",
+    "text_length": 103,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-167",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "港湾空港部港湾空港振興課長（細越清朗）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これまで外航コンテナ定期航路につきましては、外国から函館に入ってきている船につきましては、釜山を経由した後に国内の港を経由して函館に入ってきていたという現状がございます。その航路につきましては、函館の後に苫小牧に行ったり、釧路を寄ったりというところで行っている航路でございまして、現状はその航路が休止をしている関係にありますから、それ以外、北海道内であれば苫小牧港であったり、室蘭港、あるいは石狩湾新港、東京のほうで言えば京浜港などにはまだ定期外航航路──コンテナ航路がございますので、そこに一度寄った船から、今度は国内のフィーダー航路を使って函館に運んできていただく、あるいは函館から輸出する貨物については苫小牧や京浜港に一度国内フィーダー航路を使って輸送をしていただき、その後、外航コンテナ航路に積み替えて輸出をするというようなことができるかということを、国内の船社だとかにいろいろお話を聞きながら検討を進めていくことによって、輸出入のコンテナも今後も継続して出せるようにしていきたいということで考えているところでございます。\n　以上です。",
+    "text_length": 472,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-168",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "分かりました。要するに、外航コンテナを苫小牧や石狩、室蘭を経由して函館港にも来てもらうということをやれば、どの程度復活するかどうかはちょっとあれですけどね、外航航路コンテナについても荷揚げが可能だということだと思うんですね。これも新型コロナウイルス感染症の影響でクレーンが働かないで休んでいるという期間が増えて、その分だけ利用料金が入ってこないということだと思うので、ぜひコロナ禍でも何とかそういう方法を考えるなりして、内航のコンテナも頑張って、それをカバーするだけ増加させるという方策もぜひ含めて検討していただきたいということを申し述べて質問を終わります。",
+    "text_length": 279,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-169",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤恵美委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　恵美",
+    "member_faction": "新市政クラブ",
+    "text": "まず、結果的には、議案全て賛成です。\n　それから、質疑のありました項目に関しましては、まず、新産業創出推進費の創業支援事業についてで、もうちょっと質疑を聞きたかったなと思ったのは、新しい事業で、14件の申込みに対して採択されたのが３件だったと。それはどういうものがあったのかとか、なぜ３件だけだったのかというのをもう少しお聞きしたかったと思いますが、新規事業でございますので、賛成いたします。\n　それから、今、質疑がありました港湾のほうでございますが、港湾につきましても、外国航路の利用再開の見通しなど、ダブルパンチなんでしょうか、クレーンの故障とコロナ禍で利用料が少なくなったということ、ダブルパンチなんでしょうが、外国航路の利用再開の見通しについても、今後の函館市の課題であるのかなと思いながら、まずはこの補正についてはもちろん賛成いたします。\n　全体的には、各事業、あらゆることがコロナ禍の中での事業はマイナスの影響が出ていることがよく分かりまして、その対策についても、いろいろこれから課題となっていくわけですが、国の財政支援だとか特別対策事業債のものだとか、これからも考えていきたいと思って、まずはこの議案は賛成でございます。",
+    "text_length": 517,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-170",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（島昌之委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "島　昌之",
+    "member_faction": "民主・市民ネット",
+    "text": "うちの会派としても全て賛成ということです。\n　第１号議案の中で私が質問した新産業創出推進費減とか、この減となった理由であるとか、あるいは課題などもそれなりの説明をいただきましたので内容を理解することができましたし、第２号議案について、先ほど紺谷委員のほうからの質問で委託料の増額の理由なども分かりましたけども、ただ、今後の見通しとかという中では、なかなか厳しいところもあるのかなというふうなものを感じました。\n　それからあと、第６号議案ですけども、これも紺谷委員からで運輸収益の減額、これらの理由、あるいは今後の対策なども理解したんですけども、やはり新型コロナウイルス感染症というものがいろんな面で影響が出ているんだろうなということを改めて感じております。\n　それからあと、議案第11号、議案第12号、議案第13号の議案については、工藤　篤委員からの改正のポイント、こちらのほうについてもいい方向で進んでいるというふうなことなので、具体的に市民生活への影響が及ぶとか予算措置はないんだけども、今後に向けて、好影響につながるのではないかなというふうなことも理解をすることができました。\n　それから、議案第22号の公の施設の指定管理者ですけども、記載ミスがあったというふうなことも指摘されたわけですけども、今後、このようなことがないように取り組んでいただきたいということなど、あと、候補者として適当と認められた理由などもそれなりに理解ができたのかなと思っております。\n　以上です。",
+    "text_length": 638,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-171",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（松宮健治委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松宮　健治",
+    "member_faction": "公明党",
+    "text": "公明党は、全て議案にマルです。賛成です。\n　それぞれ、各委員が各部局とのやり取りして大体理解はできました。ただ、多くの事案が、やっぱりこの大変なコロナ禍の中で減収があったりとか、運用が滞ったり、期間が短くなったりという影響が出ているんだなということが分かりましたので、ただ、ここで自助努力ができる部分と国からの支援との兼ね合いも必要だと思いますので、そこら辺は、各部局は国からの支援と、北海道も含め支援等は情報収集していると思いますけれども、当然、最終的には市民生活に特に直結する部分に関しては、しっかりそこら辺はよろしくお願いしたいなと思っております。\n　各部分なんですけども、特に議案第６号の軌道事業収益の減についても了解をいたしました。早く新型コロナウイルス感染症が終わって増収になればいいなと思っております。\n　それから、商工業振興費の創業支援事業負担金の減ということですが、これも理由を聞いて、しようがないのかなとも思いながら、せっかくいい事業なのに減になってしまったのは非常に残念だと思っております。次回また、ぜひこれはもうちょっときちんとできるように期待をしたいと思っております。\n　それから、観光駐車場の２か所ですが、観光部所管ということで、これは指定管理の部分なんですけど、どっちも函館にとっては大事な駐車場でありますので、今後も推移をしっかり見守っていきたいと思っています。\n　それから、道路のことについて専門でないので、ちょっと聞いていて分かりにくかったです。分かりにくいというか、自分は理解が及ばなかったんですが、少なくとも市民にプラスということで了解といたしました。\n　最後のコンテナヤードですが、僕も見たんですけども、結構なお金がかかる代物なんですよね。それで休止をしてしまって本当に残念だと思っておりますし、委託料を増額しないと、これは運営できないということではやむを得ないのかなとも思いながら、いろいろ意見を聞いていて、これも了解をいたしました。\n　様々、各部局としては補正をしたりとか減額をしたりとか様々やっているんですが、ミスのないように今後ともしっかり行政運営をしていただきたいという要望を申し上げて終わりにしたいと思います。\n　以上です。",
+    "text_length": 939,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-172",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "私どもも議案については全てマルでございます。私の質問の関係で言うと、やはり先ほどもおっしゃったとおり、新型コロナウイルス感染症の影響が非常に出てきているということで、企業局も今までは新幹線などがあって非常に好調だったけれども、新型コロナウイルス感染症でダウンしたということだと思うんですね。今後、さらに収入が減ってくるんじゃないかということが想定されるわけですが、やはり、先ほども言いましたけど、国の補正が数十兆円ということであります。その中には入っていないということだと思うんですよね。貸し付ける制度は新しくできたというけど、そういうのは入っていないと。さらに市からの支援もないということで、一定額が毎年、市からは入っているんですけど、新型コロナウイルス感染症ですから、やはり努力してもなかなか収入が増にならない、それ以前の収入は保てないということは、はっきりしていると思うんですよね。だから、そういう点で国に対する要望なり、それから函館市も、企業会計にお金を入れるというのは、いろいろ問題があるというふうなこともあると思うんですけれども、新型コロナウイルス感染症ですから、これは通常と違うので、一般会計からも少し企業会計に支援したらどうかというふうに思うんですよね。そういう点も今後の課題ではないかというふうに思います。\n　それから、道路の問題で、自転車についてはまだやらないということですけど、今、地球温暖化でエネルギーの消費から見ても車から自転車に切り替えるというのは、通勤とかも含めて、それは全国的な課題にもなっているんですよ。したがって、今、地球温暖化の対策を進めていく上でも自転車を奨励するということになってくると思うんです。そうなると、やっぱり安全に──結構事故がありますから、安全にルールどおり自転車を走らせるという上では、これは非常に急務だというふうに思うんですね。とりわけ高校生、中学生とかが自転車に乗ると、横断歩道なんかは非常に危険な状況があるわけですね。高齢者とか障がい者にぶち当たったりということで。だから、そういう点では、子供たちにきちんとしたルールを教えていくという点と、それからエコを求める点でも、自転車については、これはまず障がい者、高齢者もそうですけど、とりわけ自転車についてはできる規定だからやればいいんじゃないかと、逆にね、というふうに思いますね。道路の幅員云々というのがあったけれども、広い市道もあるんですよね。みんなできないというのではなくて。だから、できるところはやり始めるというふうなことが必要じゃないかというふうに思うんですよね。もちろん開発とか北海道とかとのいろいろ打合せはしなければ駄目ですけどね。そういうことをしながら、やはりエコ、地球温暖化の対策としても有効だということも含めてありますので、やるべきではないかなというふうに思います。\n　それから、島さんのほうの指定管理者の問題は、そういう間違いでそういうことをやっているということは、やっぱり軽視している証拠じゃないかというふうに思うんですよね。そういう点で、最後におっしゃった公民館の問題ももっと柔軟に考えていただきたいなというふうに思います。\n　以上です。",
+    "text_length": 1336,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-173",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（工藤篤委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤　篤",
+    "member_faction": "無所属",
+    "text": "全て賛成です。\n　ちょっとやり取りを聞いていて、各会派からも出ていましたけれども、電車というか、軌道事業収益ですね、確かにコロナ禍におけるマイナス要因ですが、しかし、借金をすることになるので、それをどうしていくかという議論を、これは企業局の中でも議論してもらいたいと思いますが、赤字になったから一般会計からそれを補填すると。それだけでいいのかなというのはちょっと疑問に思いました。\n　それと、自助努力が必要です、確かに。国からの支援やそういうものを求めようとしても限界がありますから、その辺を少し議論していかなければならないのかなというふうに思いました。\n　それと、道路の関係、ちょっと誤解があるんですけれども、政令が決まって条例を直したというだけで、具体的な取組はなしということですから、影響も悪影響も現状維持というふうに受け止めるしかないのかなと。ただ、紺谷委員がおっしゃったような状況の中でそれを推し進めていくということと、またちょっと自転車の歩行の関係で交通安全上云々という話は、これは別問題で、別な視点から進めていかなければならないのではないかなと思いました。\n　それと、紺谷委員が最後におっしゃっていた外航航路のコンテナの関係ですね。新聞等にもいろいろ出ていますし、非常に難しくなってきているんですよね、受け入れるにしても、状況が。そうすると、現状受入れが難しくなったときには、どうなんでしょう、この委託料の積算の見直しなども含めて課題になるのではないかなとふと思いましたので、少し勉強していかなければならないのかなというふうに思いました。\n　以上です。",
+    "text_length": 683,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-6-174",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 6,
+    "schedule_name": "12月03日－06号",
+    "date": "2021-12-03",
+    "speaker": "（紺谷克孝委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "コンテナですけどね、外航航路が入らなくて、外航コンテナが入らなくてぐっと減ってきているんだけども、クレーンというのは結構維持費がでかいものだから、維持費、人件費とかというのがかかるから、だから委託料を減らすといっても、維持管理していくだけでも相当、１基買うだけでも、たしか７億円だとか、特殊なもの。だからそういう点で金がかかるからね。このままずっとやっていく、今の状態であれば赤はもっと続くのではないかなというふうには思うんですけどね。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-175",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "それでは、病院事業会計補正予算について質疑させていただきたいと思います。\n　まずはじめに、なかなか病院局の皆さんともこうして委員会の席──委員会というか、こうした席でお話しするという機会も数多くありませんので、この間、新型コロナウイルス感染症に関わって、病院局の皆さん、大変御苦労されていらっしゃったかと。私の立場からも感謝申し上げたいというふうに思います。\n　さて、今回、修学資金貸付金が増額になっておりますけれども、既定予算2,400万円を1,030万円増額して3,430万円にすると、こういうことですが、この貸付金が増額になった理由についてお聞かせいただきたいと思います。",
+    "text_length": 289,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        5
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-176",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "病院局管理部経理課長（熊木武）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貸付金増の理由についてのお尋ねでございますが、今年度の当初予算では、高等看護学院の学生等38名分の貸付に必要な金額2,400万円を計上しておりました。一方で、市立函館病院におきましては、新型コロナウイルス感染症への対応のため、一般病棟の病床制限を行わなければならなかったことや、重症患者に対応するＩＣＵの看護体制の強化などを目指すため、令和４年度からの看護職員の増員を検討しておりました。\n　この貸付金を受けた学生は、函病に就業し、貸付けを受けた期間以上勤務することで、償還が免除になる仕組みとなっておりますので、新入生と今年度卒業予定の学生に対して、改めてこの制度を紹介したところ、57名分の希望があり、予算に対して19名の増となったことから、1,030万円の貸付金の増額をお願いしているものであります。\n　以上でございます。",
+    "text_length": 364,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-177",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "当初38名の予定のところ、19名増えて57名になったので補正すると、こういうようなことですが、ちょうどその38名から19名増ですから、1.5倍になるということですが、補正の金額は、既定予算と補正額を見ますと1.5倍ということでもないようなので、貸付人員が単純に19人増えたから1,030万円増になるとは思えないわけですけれども、その辺の貸付人数の内訳というか、積算の内訳といいますか、それについてはどういうふうになっているのでしょうか。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-178",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "病院局管理部経理課長（熊木武）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貸付人数の内訳についてのお尋ねでございますが、修学資金貸付金は、高等看護学院の学生に月額５万円を貸付けする制度となっておりますが、今回補正をお願いしている57名の内訳といたしましては、１年生が４名、２年生が２名、３年生が51名となっております。貸付けを行う金額は、高等看護学院の学生が月額５万円、助産師養成課程に進んだ方は月額15万円となっております。今年度の当初予算におきましては、１年生５名、２年生２名、３年生30名、助産師養成課程１名、合計38名分の貸付けに必要な金額を計上しておりましたが、１年生及び助産師養成課程では、各１名予定を下回ったものの、３年生では最終的に21名予定を上回ったこと等から、貸付金の増額が1,030万円となっているものでございます。\n　以上でございます。",
+    "text_length": 343,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-179",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。１年生が４名、２年生が２名、３年生51名と、こういうことで57名ということですが、当初38名を予定していたのが19名増えたということで、これは特段の何か理由とか原因とかあって──人数が1.5倍になるというようなことが、何か特に理由とかあるんでしょうかね。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-180",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "病院局管理部経理課長（熊木武）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貸付金増額の理由についてでございますが、先ほどもお話しさせていただきましたように、市立函館病院のほうで、新型コロナウイルス感染症への対応のため、一般病床の病床制限を行わなければいけなかった等、看護職員の体制強化を目指していたというところが１点ございます。それに合わせまして、高等看護学院の学生さんの中から、函病に就職したいという方が一定程度いらっしゃったということが、このたびの増の理由ではないかと考えているところでございます。\n　以上でございます。",
+    "text_length": 225,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-181",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。それで、論点には効果と書いてありますが──効果というよりも成果と言ったほうがいいというふうに思いますけれども、この修学資金貸付金を増額するということで、当然、より多くの学生さんに修学資金が貸与されると、こういうことになるわけですけれども、その辺のところについては、どのようにお考えになっていらっしゃるのか、お聞かせいただきたいと思います。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-182",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "病院局管理部経理課長（熊木武）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貸付金増の効果、成果についてのお尋ねでございますが、高等看護学院の学生が卒業後、一人でも多く市立函館病院に就職し、医療提供体制が強化されることにより、今後の新型コロナウイルス感染症への対応の強化や、道南の３次救急医療の充実につながっていくものと考えております。\n　以上でございます。",
+    "text_length": 141,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-183",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。最後ですが、それぞれ病院によって──民間ももちろん、高等看護学院も持っているわけですけれども、あと全国の自治体もいろいろと、こうした修学援助制度をお持ちになっているというふうに思いますけれども、当然、人材を確保していくということが重要になってくるわけですが、人材確保のために、さらにこの制度、あるいは貸付金を拡充していくというようなお考えは、今の時点であるのでしょうか。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-184",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "病院局管理部経理課長（熊木武）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高等看護学院の学生に対する貸付けの充実についてのお尋ねでございます。市立函館病院高等看護学院の授業料は、３年ほど前に2万6,000円から３万円に引き上げさせていただきました。その際に、他都市の高等看護学院の授業料を──その時点でございますが、比較したところ、３万円になっている団体さんは二つだけほかにございまして、ほかは皆さんうちよりも低い金額というふうになっておりました。その時点で一度、貸付金の増額についても検討させていただきましたが、今のところまだ増額するところまで達していないのではないかというふうに考えまして、現在の金額を継続しているところでございます。\n　以上でございます。",
+    "text_length": 293,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-185",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。ただ、新型コロナウイルス感染症に関連して、例えば政府も、看護師さんの給与を引上げていくということも考えているようですけれども、人材を確保するという非常に重要な制度にもつながっていくものだと思いますので、こうした制度の拡充に今後も努めていただきたいということをお願いして、私の質疑を終わりたいと思います。",
+    "text_length": 158,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-186",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "私の質疑と板倉さんの質疑が、ほぼ重なっていまして、私のほうは１点いきたいと思います。\n　貸付金制度の内容については今の答弁で分かりましたので、それでは、看護学院に入学される方の過去３年間の修学資金貸付金、貸付人数などはどのようになっているか、その推移をお願いいたします。",
+    "text_length": 135,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-187",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "病院局管理部経理課長（熊木武）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "過去３年の貸付人数の推移についてのお尋ねでございます。まず、平成30年度ですが、全体で37名に貸付けしており、学年ごとの内訳といたしましては１年生５名、２年生６名、３年生25名、助産師養成課程１名となっております。令和元年度は、全体で35名、学年ごとの内訳は１年生３名、２年生５名、３年生27名となっております。令和２年度は、全体で38名、学年ごとの内訳は１年生２名、２年生２名、３年生33名、助産師養成課程１名となっております。\n　以上でございます。",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-188",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "分かりました。先ほどの、今回増えた──増額された中身についても聞きましたので、大体、全体で38人ぐらいが毎年借りていると。その中でも、今年は３年生においては、21名プラスになったということで増額したということがよく分かりました。\n　この看護学院の卒業生──毎年70名ぐらいいると思うんですが、そのうちどのくらいの人数が函病さんに就職するんでしょうか。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-189",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "病院局管理部長（桐澤睦巳）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "例年ですと、35人から40人弱、そのくらいが函病のほうに入ってこられます。ただ、近年は、やはり新型コロナウイルス感染症の影響もございまして、札幌方面だとか、東京、首都圏のほうに就職しづらくなってきていると、行きづらいということもありまして、来年は函病に入ってくるのが50人とかというふうに、10人くらいは増えているというような状況にあります。\n　以上でございます。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-190",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "分かりました。今回は、このコロナ禍ということで、病院も大変だし、またさらに看護師さんたちの環境がかなり厳しいという状況もあって、例年よりも退職者が多く出るということなんですけど、やはり看護学生が本当にたくさん残ってほしいなと、こういう状態で、そうすると体制も充実するというふうに考えます。\n　こういうことで、増額理由、その他全部分かりましたので、私の質疑はこれで終わりたいと思います。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-191",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "それでは、質疑いたします。今回、健康管理システム改修経費ということで、420万8,000円計上されましたけれども、このシステム改修の目的と内訳について伺います。",
+    "text_length": 80,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-192",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "保健福祉部健康増進課長（三上敦誉）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "改修の目的と内容についてのお尋ねでございますが、このたびの改修は検診結果の利活用に向けた情報標準化整備事業実施要綱に基づき、令和４年６月から転居時において、検診結果データを市町村間で引継ぎされることや、受診者本人が検診結果を閲覧できるようにするためのものでございます。\n　なお、対象となる検診につきましては、健康増進法施行規則第４条の２に定める歯周疾患検診、骨粗鬆症検診、肝炎ウイルス検診、がん検診となっております。\n　以上でございます。",
+    "text_length": 219,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-193",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "この事業の目的については、分かりました。この事業は、国の進めるＤＸ──デジタルトランスフォーメーションのこの推進計画に沿って進められているということで、このシステム改修については標準化だと、全国どこでも同じデータを見られるということで、来年の６月からスタートするということで分かりました。\n　そして、私もびっくりしたんですけど、私たちの検診結果が市町村間で──例えば北斗市でも見られると。例えば転居したときに、私のデータがそこにいくということで、全国どこでも見れるということで、ちょっとびっくりいたしました。本人の、私自身のデータも見ようかとなると見られるという、そういうシステムだと分かりました。\n　あと、このシステム改修の中には、４つの検診項目が入るということで。これは全国全てでこの同じ項目を共有できるということでいいのでしょうか。",
+    "text_length": 369,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-194",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "保健福祉部健康増進課長（三上敦誉）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、富山委員がおっしゃったとおり、この４つの検診結果につきましては、全国どこでも、転居先で見られるようになってございます。\n　以上でございます。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-195",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "分かりました。先ほどちょっと間違えましたけど、次、この事業の内訳について伺います。",
+    "text_length": 41,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-196",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "保健福祉部健康増進課長（三上敦誉）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業費の内訳についてのお尋ねでございますが、医療機関から提出される検診結果のデータ取込みを可能とする改修分で23万1,000円、転居時における検診結果データの市町村間での引継ぎや、受診者本人が閲覧できるようにする改修分で397万7,000円、合計420万8,000円となっております。なお、当該経費に対する国庫補助といたしまして、196万3,000円を特定財源として計上しております。\n　以上でございます。",
+    "text_length": 203,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-197",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "分かりました。次に、この事業をやることでの効果、どのようになるのか伺います。",
+    "text_length": 38,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-198",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "保健福祉部健康増進課長（三上敦誉）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "このたびの改修で、転居時に市町村間で検診データが引き継がれるとともに、受診者本人が検診結果を閲覧できることにより、これまでの検診結果に基づいた受診勧奨の強化を図ることができるほか、受診者自身も健康状態の変化を確認できることから、将来的な受診率向上の効果が図られると考えております。\n　以上でございます。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-199",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "効果については、そういうふうになるのかなというふうに思いますが、一番はやはり事務的処理が──今までは手でやっていたものが、電子カルテなりそういうもので、データが入るということでよろしいのでしょうか。",
+    "text_length": 99,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-200",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "保健福祉部健康増進課長（三上敦誉）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事務的作業のお尋ねでございますが、これまでは医療機関から紙ベースで検診結果が出たものを、我々職員が健康管理システムのほうに打ち込んでいたと。それが今後、医療機関がデータでの提供が可能な機関でございましたら、その媒体を我々のほうに引き継いでいただけることにより、例えば、ＣＤ－ＲＯＭやＵＳＢメモリーを読み込んで自動的に取り込むことができるようになるというようなものでございます。\n　以上でございます。",
+    "text_length": 199,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-201",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "分かりました。\n　最後に意見なんですけれども、かなりデータが積み重なっていくと、だから過去のデータが全て出てくるということであれば、個人情報保護保護の面で、私たちのそのデータがどこかに漏れないかなという懸念はちょっとありますけれども、本当にその点はしっかり守ってほしいなというふうに思います。今後も、このマイナンバーカードなどの──私たちはマイナンバーカードを反対しておりますけど、今きちんとしたセキュリティーがないということで、そのカードにひもづけされたデータが、やはり流出することがないようにということで、しっかりとその辺はチェックしていただきたいなと思います。\n　以上で終わります。",
+    "text_length": 294,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-202",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "今回の補正は、特定不妊治療助成事業費の増額ということで、既定予算3,422万7,000円に1,220万7,000円増額して、総額で4,643万4,000円にすると、こういうものですが、出産を希望しても妊娠に結びつかず、不妊治療を受けようとしても、高額な治療費が必要だというようなことで、その治療費を助成しようということで、大変重要な事業だというふうに、私も理解しております。\n　国も本年１月から制度を拡充しているわけですけれども、今回、この1,220万7,000円を増額した理由について、伺いたいと思います。",
+    "text_length": 254,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-203",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "特定不妊治療助成事業費を増額補正する理由についてのお尋ねでございます。このたび提案している補正予算につきましては、特定不妊治療費の助成申請件数が増加していることによる助成金の増額分の経費を補正しようとするものであります。\n　国の令和２年度第３次補正予算において、特定不妊治療の保険適用までの暫定措置として、令和３年１月１日以降に終了した特定不妊治療費について、所得制限の撤廃、助成金の増額、助成回数の増など、助成内容を拡充したことに伴い、本市においても国の制度に準じて拡充したところでありますが、助成申請件数が増加していることから、当初予算に対し57件分の申請件数の増を見込み、これに伴う助成金の増額分として、1,220万7,000円を計上したところでございます。\n　以上でございます。",
+    "text_length": 343,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-204",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。所得制限の撤廃、助成金の増額、助成回数の増と、こういうような制度内容の拡充を行ったということと、助成申請件数が増加をしているということで、57件の申請件数の増を見込みというふうにお答えいただきました。\n　これは、何件を見込んで当初予算の計上をされたのでしょうか。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-205",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当初予算といたしましては、154件を計上しております。\n　以上でございます。",
+    "text_length": 38,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-206",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "当初154件見込まれて57件の申請が増えると、こういうようなことで増額すると、こういうようなお答えがありました。\n　今回、この増額されますけれども、特定不妊治療助成事業、その事業の効果といいますか、これは当然なことでもありますけれども、改めてお聞かせいただきたいと思います。",
+    "text_length": 137,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-207",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業の効果についてのお尋ねでございます。晩婚化、晩産化の影響により、今後も特定不妊治療等を必要とする夫婦の増加が見込まれますが、体外受精や顕微授精といった特定不妊治療は保険適用外となり、費用が高額であるため、治療に伴う身体的、精神的負担に加え、経済的負担が大きいものとなっております。このたびの所得制限の撤廃などの助成内容の拡充により、これまで全額自己負担で治療せざるを得なかった夫婦も助成対象となりましたことも申請件数が増加した要因と考えられますので、本事業が妊娠、出産を望む方々の負担軽減の一助を担っているものと考えているところでございます。\n　以上でございます。",
+    "text_length": 284,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-208",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。高額な医療費がかかるということで、少しでも負担を少なくしていくということで、不妊治療に当たられる方々の精神的な負担も含めて、そういった負担を減らしていくということについて、大変効果があると、こういうことでした。\n　この事業、今後どういうような形で進められていく予定なのか、お聞かせいただきたいと思います。",
+    "text_length": 159,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-209",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の事業の進め方についてのお尋ねでございます。\n　国においては、特定不妊治療に対し、令和４年４月からの医療保険の適用を目指しており、適用となる治療の範囲などについて検討を進めているところでございます。また、現行の特定不妊治療助成事業につきましては、保険適用の円滑な実施に向け、移行期の不妊治療計画に支障を生じることがないよう、年度をまたぐ当該治療については、経過措置として助成の対象とする予定となっておりますので、本市においても、国の動向を注視し、市民や医療機関への適切な周知に努めてまいりたいと考えております。\n　以上でございます。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-210",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。一般不妊治療は既に保険適用になっていますし、またいろいろと来年の４月から保険適用の対象になると、こういうようなことで、保険適用になったほうがいいのか、ならないほうがいいのか──こういった助成を拡充していったほうがいいのかというのは、ケース・バイ・ケースでいろいろとあるんだろうというふうに思いますが、保険適用になるということですから、少しは安心して、そうした治療に当たられることができるのかなというふうには思います。\n　それで、今後の進め方の中の一つでもあるんですが、現在、北海道にこの特定不妊治療助成事業の指定医療機関というのが31か所あるわけですけれども、そのうち23か所は道央圏ということになっていて、道南では函館に１件、指定病院があるというだけなんですが、後ほど他の委員からそれぞれの指定病院で治療されていらっしゃる方の人数ですとか、質疑があるというふうに思いますが、指定病院を増やしていくという、そうした考えはないんでしょうか。やはり、多ければ多いほどとは言いませんけれども、１件よりは、もう少し病院の数が多ければ治療を受けられる方々も、より利便性が高まるのではないかなと思うのですが、その辺はどうでしょうか。",
+    "text_length": 517,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-211",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市内の指定医療機関の現況に対する市の認識等についてのお尋ねでございます。\n　特定不妊治療にかかる医療機関の指定を受けるためには、採卵室や胚の移植室、培養室、凍結保存設備などが必要であるほか、配置人員や実施責任者の資格などの厳しい要件が課せられており、産婦人科医自体が減少している中で、新たに指定医療機関を増設することは、なかなか厳しい状況にあるものと考えております。\n　以上でございます。",
+    "text_length": 194,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-212",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "条件がいろいろありますから、確かに厳しいのかもしれませんが、そうはいってもやはり、申請の件数ですとか、やはりかなり増えているということもありますし、来年度から保険適用になるというようなことも考えていくと、やはりそうした指定病院を少し増やしていくということも──これは勝手にこっち側が増やしていくということはできませんが、そういったものを要請していくなり、検討いただくというようなことも必要だというふうに私は思いますので、その辺のところは少し、実際に医療機関等とも御検討や協議をしていただきたいなということを要請して、私の質疑を終わります。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-213",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（荒木明美委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "荒木　明美",
+    "member_faction": "無所属",
+    "text": "今、板倉委員の質疑で全体的なことは分かりましたので、私は、確認事項を五つ出していますが、三つ目のところから入りたいと思います。\n　女性が社会進出することによってライフスタイルも変わったりして、どんどん毎年、この申請件数は上がってきてはいると思いますが、特に今回1,200万円増額したというのは、国の助成事業の拡充、それに伴って市も拡充したことによって増えたのではないかなというふうに感じております。今、国そして函館市でも拡充した内容として、事実婚の夫婦も対象とするとか、助成の上限額、所得制限、あとは助成回数が変わってきたんですけれども、今回、この1,200万円分増額したというのは、拡充内容のうち、どの部分が効いたというふうに分析しているのか、お伺いします。",
+    "text_length": 330,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-214",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "助成申請件数の増加と助成事業拡充の関係性についてのお尋ねでございます。\n　年度ごとに助成申請の実人数に占める初めて申請する者の割合を見ますと、平成30年度は40.0％、令和元年度は55.3％となっておりまして、このたびの助成拡充を令和３年１月から開始いたしました令和２年度につきましては、初めて申請する者の割合が63.5％と割合が高くなっており、今年度も９月末現在で58.2％と高い割合で推移しております。\n　このことから、これまでも少子化対策の一環として、国に準じて助成内容を徐々に拡大してまいりましたが、特にこのたびの拡充で所得制限が撤廃されましたことから、助成を受けることが可能となった対象者が増え、申請件数が増加したものと分析しているところでございます。\n　以上でございます。",
+    "text_length": 342,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-215",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（荒木明美委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "荒木　明美",
+    "member_faction": "無所属",
+    "text": "分かりました。今伺った数字でいくと、拡充内容が広がったことによってというよりも、やはり社会的にこの申請件数が増えてきているということのほうが大きいのかなというふうに感じてはいたんですけれども。では、実際に、この不妊治療をしたいという当事者の方のニーズというのは、ふだんどうやって把握されているのでしょうか。",
+    "text_length": 153,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-216",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当事者のニーズの把握についてのお尋ねでございます。\n　本市では現在、不妊を含む妊娠に関わる相談には、マザーズ・サポート・ステーションの助産師などの専任相談員が対応しており、その中で当事者が抱える不安や悩みの把握に努めておりますが、相談内容のほとんどが、治療費に係る助成申請手続に関することとなっております。\n　今後も、晩婚化などの影響により、不妊治療等を必要とする夫婦の増加が見込まれますので、経済的のみならず、身体的、精神的な負担や不安の軽減を図れるよう、専門的知識を有する医師などを配置して対応するなど、当事者のニーズの把握と相談支援体制の強化を図ることが必要であると考えております。\n　以上でございます。",
+    "text_length": 305,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-217",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（荒木明美委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "荒木　明美",
+    "member_faction": "無所属",
+    "text": "分かりました。では、最後に、今回1,200万円増額したその積算根拠について伺います。",
+    "text_length": 42,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-218",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "増額の積算根拠についてのお尋ねでございます。\n　令和３年１月１日以降に終了した特定不妊治療費について、助成内容が拡充されましたことから、令和２年度の下半期の助成申請件数は延べ70件で、上半期の延べ54件に対し、130％の増加率となっております。\n　令和３年度の上半期の助成申請件数は延べ91件となっており、これに令和２年度の増加率130％を用いて下半期を延べ120件、計延べ211件になると見込み、当初予算の延べ件数154件から57件の増と見込みまして、さらに過年度の治療ステージの実績割合から、体外受精が対象となる30万円の助成上限額に相当する件数が57件のうち33件で980万7,000円、以前に凍結保存した受精卵を解凍して移植する治療が対象となる10万円の助成上限額に相当する件数が24件で240万円、計1,220万7,000円の助成額の増額と積算したところでございます。\n　以上でございます。",
+    "text_length": 400,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-219",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（荒木明美委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "荒木　明美",
+    "member_faction": "無所属",
+    "text": "分かりました。増加率の根拠が恐らく拡充する前の数字でやっているので、もしかしたらこの拡充というのが本当に効いているのか、それが理由で増えているのかどうかというのは、もしかしたらまたこれで予算が足りなくなるというか、申請数が増えてきたらそうなるのかなというふうには感じるんですけど、今日確認したいことは以上で分かりましたので、終わります。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-220",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "私のほうも重なっておりますので、それでは、利用者数の推移と年齢構成を伺います。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-221",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "利用者数の推移と年齢構成についてのお尋ねでございます。\n　特定不妊治療費助成の利用実績といたしましては、平成30年度は実人員で80人、延べで125人、うち初回申請者は実32人となっております。令和元年度は実人員で85人、延べで130人、うち初回申請者は実47人、令和２年度は実人員で85人、延べで124人、うち初回申請者は実54人となっております。\n　利用者の年齢構成といたしましては、治療開始時の妻の年齢が43歳未満であることという要件がありますので、妻の年齢で見ますと、平成30年度の実80人中20歳代が５人、30歳代が54人、40歳代が21人、令和元年度の実85人中20歳代が５人、30歳代が58人、40歳代が22人、令和２年度の実85人中20歳代が５人、30歳代が50人、40歳代が30人となっております。\n　以上でございます。",
+    "text_length": 368,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-222",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "今の利用者の推移を見ますと、本当にだんだん申請者が増えてきているということと、年齢構成についても30歳代が圧倒的に占めているということが分かりました。\n　次に、この平均利用回数ですね。100％利用しますと６回まではとにかく助成があるということで使えるんですが、一人の平均利用回数、その点についてお願いいたします。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-223",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平均利用回数についてのお尋ねでございます。\n　過去３か年度の１年度ごとの利用回数を見ますと、一人につきおおむね1.5回となっております。なお、助成回数につきましては、拡充前は生涯で利用できる通算回数として、治療開始時の妻の年齢が40歳未満の場合は６回まで、40歳以上43歳未満は３回までとなっておりましたが、拡充後は通算ではなく、１子ごとに６回または３回となったところであります。\n　以上でございます。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-224",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "ありがとうございました。やはり１子ごとにというところから、だんだん増えていくというふうな予想がされるのと、６回あるから６回なんかすぐ使えないし、いろんな形でやはり大変な思いでやらなければならない不妊治療ですので、このぐらいだということが分かりました。\n　次に、その不妊治療のためのこの指定医療機関、市内それから道内、道外の割合について伺います。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-225",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "子ども未来部母子保健課長（長舩法子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "治療を受けている指定医療機関についてのお尋ねでございます。\n　過去２か年度の実績を見ますと、令和元年度は助成人数延べ130人のうち、市内の指定医療機関で治療を受けた方が延べ47人で全体の36％、道内が延べ79人で全体の61％、道外が延べ４人で全体の３％、令和２年度は助成人数延べ124人のうち、市内の指定医療機関で治療を受けた方が延べ54人で全体の44％、道内が延べ70人で全体の56％となっており、道外で治療を受けた方はおりませんでした。\n　以上でございます。",
+    "text_length": 231,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-226",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "本当に、市内で受ける人数よりも、道内いろんなところ──函館以外で不妊治療する人数が多いということが結果として分かりました。そして、コロナ禍になりまして道外には行けなくなったという内容です。本当にこの不妊治療というのはお金がかかるということで、30万円でも本当に助かると思うんですけれども、つい先日見た資料の中に、日本産科婦人科学会に登録している医療機関を対象に不妊治療のアンケートをやった結果がちょっとありまして、この治療でどのくらいお金がかかっているのだろうかということになりますと、２種類の治療ステージがあるんですけど、このうち、凍結胚移植のほうで見ますと最小で21万円から最大で98万円かかるということです。さらに市外に行くとなれば時間も必要だし、お金も必要だし──私の知っている人もやはり宿泊して札幌などに行っていますけれど、さらにプラスしなければならないと、大変なお金がかかるという話なので、もっともっと、このことについて改善されればいいかなと思います。\n　これで、私の質疑を終わります。",
+    "text_length": 449,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-227",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（藤井辰吉委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "全部マルです。今、ここまでで。",
+    "text_length": 15,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-228",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（藤井辰吉委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、病院事業会計の修学資金貸付金増に関しましては、人数の増加と。あと、その助産師養成課程に関しては貸付金の額面がまた違うということで。なぜ増加になったのかというと、コロナ禍の病床の制限だとか、あと一定の勤務期間函病に勤めた場合、返還の免除というようなことも混ざり合ってといいますか、それで増加になったんだよと。それをカバーするためのものだと。効果につきましても、体制の強化につながるということで、有意義な増加だと思っておりますので、こちらに関してはすごくいい補正だったなというふうに感じております。\n　健康管理システムに関しましては、市区町村間でデータの引継ぎができるということと、本人が閲覧できるというところはすごく画期的だなと思っておりました。あと、それを通じて受診率の向上ということと、何か様々なメディア媒体から取り込むことができるというのはすごくいいなと思いましたので、この改修はぜひやってもらいたいなと思っております。\n　特定不妊治療に関しましても、皆様からの質疑に対する答弁で、申請件数は増加傾向にあると──顕著な増加傾向、人口が減っているにもかかわらず増加しているなと。年齢構成の話も聞きましたけれども、出産したいなと願っている方々が、特に30歳代の方々が悩まれて、実際にその治療を受けたがっているというデータも顕著に差が出ておりますので、そこに対する支援・助成を手厚くしているのはすごくいいことだなと思います。\n　あと、板倉委員が意見として述べられていましたけども、指定医療機関、こちらに関しては設備面とか実施者の条件が、ハードルがあるとはいえやはり増えたほうが──身近なところに増えたほうが、恐らくより安心できるのかなと思いましたので──ちょっと質疑とは違って意見でしたけれども、私は本当にそこの点も注目したいなと思いました。\n　それ以外──条例の改正や指定管理者の指定につきましても、こちらは特に異論を挟むようなものはありませんでしたので、全てマルということで、以上でございます。",
+    "text_length": 851,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-229",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（板倉一幸委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "板倉　一幸",
+    "member_faction": "民主・市民ネット",
+    "text": "まず、議案第１号の一般会計補正予算中本分科会に関わるものですが、保健福祉部が所管をする事柄については、富山委員が質疑されていた健康管理システムの改修、これは質疑の中でも意見としてありましたが、個人情報の保護に関わって十分留意をした上で事業を進めていただきたいというふうに思います。\n　また、老人福祉費の補助金増で、地域密着型サービス拠点整備費等補助金増、これについては特に質疑いたしませんでしたが、しっかりと進めていただきたいというふうに思います。\n　次に、子ども未来部所管に関わる事柄、これも他の事項については了解いたしました。特定不妊治療助成事業については、私も質疑させていただきましたし、藤井委員からも注目したいというお話がありましたが、富山委員の質疑に対する答弁で、市内の医療機関は１か所しかないわけですけれども、ここよりも道内の他の医療機関で治療されている方の割合が非常に高いということを踏まえても、やはり市内の指定医療機関の整備、これはこれからもしっかり図っていくべきだというふうに思います。とりわけ、来年度から保険適用と、こういうことで少しハードルが下がってくるということもあると思いますので、その辺のところはこれからも十分に進めていただきたいというふうに思っています。\n　あと、環境部所管の事業もありましたが、事業費の減額というようなことなので、これは了解いたしました。\n　次に、後期高齢者医療事業特別会計補正予算についても、負担金に関わる──納付金に関わる事柄でしたので、これは了解いたしました。\n　病院事業会計補正予算につきましては、修学資金貸付の事業について増額補正すると、こういうことでした。それ自体は大変結構だと思いますし、しっかり人材確保を図っていくというような観点からも、今後も事業の継続・拡充をしていただきたいと思っています。\n　あと、議案第10号の国民健康保険条例の一部改正については、出産育児一時金の支給額を4,000円増額するというものですので、それについては理解いたしました。\n　指定管理者の指定については、全て了解いたしましたので、各議案については全てマルという形にしたいと思います。",
+    "text_length": 913,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-230",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（茂木修委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "茂木　修",
+    "member_faction": "公明党",
+    "text": "まず、議案全てマルでございます。質疑がありました病院局の修学資金貸付金増、函病の体制強化という、そういう方針もあって、この補正をすることによって、結果的に職員の確保にもつながるという一面があるということでございますので、これは賛成いたします。\n　それから、子ども未来部の体外受精等の特定不妊治療助成、これは言うまでもなく、本当に当該者の経済的負担は大変大きいということで、国も保険適用までの暫定措置として拡充をしてきて、函館市もそれに伴って拡充されてきているということでございまして、答弁にもありましたけれども、所得制限等によって今回申請件数が増加したということについては、大変理解できるし、大事なことだと思いますので、賛成いたします。\n　また、後期高齢者医療事業特別会計の繰越理由についても、適正であるというふうに確認いたしましたので、賛成でございます。また、公の施設の指定管理者の指定についても、結果については理解いたしましたので、全てマルでございます。\n　以上です。",
+    "text_length": 436,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-231",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（富山悦子委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "富山　悦子",
+    "member_faction": "日本共産党",
+    "text": "私のほうで今回３部局に質疑いたしました。その中身としては、看護学院のところについては、本当に努力しているなということで、大体卒業生の半分が残るというのはすごいなというふうに思いました。もう少し例えば、助産婦さんとか少ないので聞きましたら──助成をもらっているというか、貸付金制度を利用している助産師が少ないから、もう少しお金を出してもいいかなとか思います。やはり地元に学校がないので、やはり札幌などの学校に行かなければないので、そういうところではお金を少し出して、助産師さんも増やしてほしいなと思いました。\n　あとは、健康管理システム改修については理解しましたので、今後またどんなふうにしてやっていくのかをちょっと見守りたいなと思います。\n　あと、大体それで、皆さんと同じで、日本共産党としても、この全ての賛否についてはマルということで、報告したいと思います。",
+    "text_length": 380,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-7-232",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 7,
+    "schedule_name": "12月03日－07号",
+    "date": "2021-12-03",
+    "speaker": "（荒木明美委員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "荒木　明美",
+    "member_faction": "無所属",
+    "text": "私が質疑しました特定不妊治療助成事業について、疑問点が明らかになりましたし、ほかの補正予算ですとか、ほかの議案についても特に疑義を生じるものはありませんでしたので、全てマルです。今、お話があった指定医療機関──特定不妊治療の指定医療機関については、今、函館に１件ということで、もちろんこれは増えればいいことだなとは思うんですが、これは例えば、札幌に資格を取りに行くとか、試験を受けられるようにするというのともちょっと違って、治療の成功率だとか、経験とか、投資額ということを考えると難しいのか、そこは行政が助成なりすることによって超えられるのか、いろいろちょっと思うところもありましたので、そういうことは一般質問でクリアにしたいと思っています。\n　以上です。",
+    "text_length": 328,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 7,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-8-233",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 8,
+    "schedule_name": "12月08日－08号",
+    "date": "2021-12-08",
+    "speaker": "総務分科会委員長（出村ゆかり）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "出村　ゆかり",
+    "member_faction": "新市政クラブ",
+    "text": "おはようございます。\n　総務分科会が審査を分担する議案６件について、その審査の経過と主な内容を報告いたします。\n　分科会は、まず審査を分担する議案についての論点整理を行い、議案第１号令和３年度函館市一般会計補正予算について、主な事業のうち、道南いさりび鉄道株式会社経営安定化補助金増、ＳＮＳ教育相談事業費皆減、史跡垣ノ島遺跡デジタルコンテンツ等整備事業費、埋蔵文化財発掘調査受託事業費増、南茅部地域通学バス運行業務委託料に関して、事業の目的や効果、今後の見通しなどを疑問点として整理、確認し、理事者にただしました。\n　その後、委員間討議を行い、議案第１号について、道南いさりび鉄道株式会社経営安定化補助金増に関わり、コロナ禍の影響が大きかったと思うが、その中にあっても、地域に密着した取組や、魅力ある鉄道にしようということで、努力されている。道南いさりび鉄道に頑張って継続して走ってもらうためにも、有効な補正である。経営安定のために必要な措置である。\n　次に、ＳＮＳ教育相談事業費皆減に関わり、北海道で行う事業が期間も時間も長く、子供たちに寄り添った相談になるよう始めているということ、私立の中学校にも拡大するよう、市からも提言するということでよしとしたい。大事なことは、多くの子供たちが自分のＳＯＳを発信できるということであり、しっかりと見守っていきたい。\n　次に、史跡垣ノ島遺跡デジタルコンテンツ等整備事業費に関わり、多くの来訪者へ、縄文文化の魅力を伝えるツールとして期待できる。外国人の方や障がいのある方など全ての方へ対応した、魅力ある優しいコンテンツになるということで、期待したい。\n　次に、埋蔵文化財発掘調査受託事業費増に関わり、北海道からの受託事業であり、遺物が出土した場合の対応も、市教育委員会で保管するということがはっきりしているのでよしとしたい。\n　次に、南茅部地域通学バス運行業務委託料に関わり、小学校の統合に伴うスクールバスの運行ということで納得できる。始発から終点まで片道18キロと、距離が非常に長いことから、子供たちの安全・安心のためにも通学バスの運行はよいと思うなどの理由で、賛成であるとの発言がありました。\n　なお、本分科会に分担された各議案に対する賛否態度につきましては、お手元に配付の分科会審査報告書のとおり取りまとめておりますが、詳細については分科会記録によって御承知願いたいと存じます。\n　以上で、総務分科会の報告を終わります。",
+    "text_length": 1033,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 8,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-8-234",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 8,
+    "schedule_name": "12月08日－08号",
+    "date": "2021-12-08",
+    "speaker": "経済建設分科会委員長（小林芳幸）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "小林　芳幸",
+    "member_faction": "公明党",
+    "text": "経済建設分科会が審査を分担する議案21件について、その審査の経過と主な内容を御報告いたします。\n　分科会は、まず審査を分担する議案について論点整理を行い、議案第１号令和３年度函館市一般会計補正予算について、創業支援事業負担金減に関わり、減額理由、今後の取組、議案第２号令和３年度函館市港湾事業特別会計補正予算について、外航コンテナ航路休止関係経費に関わり、増額理由、今後の見通し、議案第６号令和３年度函館市交通事業会計補正予算について、補正額の根拠、減収に伴う対策、議案第22号公の施設の指定管理者の指定について、函館市元町観光駐車場・函館山山麓観光駐車場について、候補者として適当と認められた理由、今後の駐車場の活用法について、疑問点として整理、確認し、理事者に質疑を行いました。\n　その後、委員間討議を行い、議案第１号について、申込み数に対して採択された件数が少なかったことから、減額になったということで、やむを得ない。\n　議案第２号について、大型クレーンの故障に加え、新型コロナウイルス感染症の影響を受け、外航航路を再開できず、利用料が少なくなったことにより、委託料の増額が必要ということで理解した。\n　議案第６号について、新型コロナウイルス感染症の影響により収益が減額となったことや、国からの財源措置を活用することで対策していくということが理解できたなどの理由で、賛成であるとの発言がありました。\n　なお、本分科会に分担された各議案に対する賛否態度につきましては、お手元に配付の分科会審査報告書のとおり取りまとめておりますが、詳細については、分科会記録によって御承知願いたいと存じます。\n　以上で、経済建設分科会の報告を終わります。",
+    "text_length": 720,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 8,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1104-8-235",
+    "municipality": "hakodate",
+    "council_id": 1104,
+    "council_name": "函館市議会予算特別委員会（令和 ３年第４回定例会）",
+    "schedule_id": 8,
+    "schedule_name": "12月08日－08号",
+    "date": "2021-12-08",
+    "speaker": "民生分科会委員長（見付宗弥）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "見付　宗弥",
+    "member_faction": "民主・市民ネット",
+    "text": "民生分科会が審査を分担する議案10件について、その審査の経過と主な内容を御報告いたします。\n　分科会は、まず審査を分担する議案について論点整理を行い、議案第１号令和３年度函館市一般会計補正予算について健康管理システム改修経費に関わり、改修の目的と内容、改修費の内訳、改修による効果、特定不妊治療助成事業費増に関わり、事業費増の理由、補正額の根拠、利用者数の推移と年齢構成、事業の効果、事業の進め方、指定医療機関、議案第７号令和３年度函館市病院事業会計補正予算について、修学資金貸付金増に関わり、貸付金増の理由、貸付人数の内訳、効果について、理事者にただしました。\n　その後、委員間討議を行い、議案第１号について、健康管理システム改修経費に関わり、本改修により、市町村間での検診結果データの引継ぎや受診者本人の検診結果閲覧が可能になるということで、画期的なことだと思う。本改修が、受診率向上にもつながるということで、ぜひ進めていただきたいなどの理由で、賛成であるとの発言がありましたが、個人情報の保護には十分留意していただきたいとの意見がありました。\n　特定不妊治療助成事業費増に関わり、国が、特定不妊治療の保険適用までの暫定措置として助成内容を拡充したことに伴い、本市も、国の制度に準じて拡充したところであるが、このことが、助成申請件数の増加につながったということを理解できたなどの理由で、賛成であるとの発言がありましたが、指定医療機関については、現在、市内に１か所しかなく、設備面や実施責任者の資格要件など多くのハードルはあるものの、やはり身近なところに増えたほうがより安心できると思うので、検討や協議を進めていただきたい。市内に増えるのはよいことだが、設置には、治療の成功率や経験、投資額なども関わってくることから、そこは行政が助成することによってクリアできるのか、今後検討する必要がある。との意見がありました。\n　議案第７号について、貸付金増により、医療提供体制の強化につながるということで、有意義な増額補正だと思っている。本貸付制度については、人材確保を図るという観点からも、しっかりと継続・拡充をしていただきたいなどの理由で、賛成であるとの発言がありました。\n　なお、本分科会に分担された各議案に対する賛否態度につきましては、お手元に配付の分科会審査報告書のとおり取りまとめておりますが、詳細については分科会記録によって御承知願いたいと存じます。\n　以上で、民生分科会の報告を終わります。",
+    "text_length": 1049,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1104.json",
+      "schedule_id": 8,
+      "minute_ids": [
+        8
+      ]
+    }
+  }
+]

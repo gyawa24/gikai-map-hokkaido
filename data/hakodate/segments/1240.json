@@ -1,0 +1,1037 @@
+[
+  {
+    "id": "hakodate-1240-2-001",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "財務部長（島田文弘）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号令和５年度函館市一般会計補正予算（第９号）につきまして、提案理由を御説明申し上げます。\n　このたびの補正予算は、歳出では、物価高騰支援対策として、子育て世帯への児童１人当たり２万円の給付金の支給に加え、社会福祉施設等への食材料費高騰に対する支援に係る経費を計上するほか、肥料及び飼料の購入費に対する助成並びにＬＰガス工業利用者に対する販売事業者を通じた支援に係る経費の増額補正や繰越明許費の設定をお願いするものでございます。\n　一方、歳入につきましては、地方創生臨時交付金及び財政調整基金の繰入金の増額補正をお願いするものでございます。\n　以下、予算の内容について、御説明いたします。\n　第１条は、歳入歳出予算の補正でございますが、歳入歳出それぞれ６億9,463万1,000円を追加いたしまして、補正後の歳入歳出予算の総額を1,540億2,797万4,000円とするものでございまして、その内容につきましては、第１表のとおりでございます。\n　第２条は、繰越明許費の追加でございまして、その内容につきましては、第２表のとおりでございます。\n　なお、予算の内容の詳細につきましては、４ページ以降の明細書に記載のとおりでございます。\n　以上でございます。",
+    "text_length": 529,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-002",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "市民部長（柏弘樹）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号函館市手数料条例の一部改正について、提案理由を御説明申し上げます。\n　このたびの改正は、戸籍法の一部改正に伴い、本籍地以外における戸籍証明書等の交付等に関する事務について手数料を徴収しようとするものでございます。\n　なお、この条例の施行期日は、令和６年３月１日とするものでございます。\n　以上でございます。",
+    "text_length": 158,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-003",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "それでは、提案のありました議案第１号一般会計補正予算について、質疑させていただきます。\n　まず１つ目の──科目の順番にいきますけれども、社会福祉施設等食材料費支援事業費についてです。\n　資料を拝見いたしますと、食料品などの物価高騰の影響を受けている施設の負担軽減を図るため、北海道の制度の対象とならない社会福祉施設等に給付金を支給するということになってございますけれども、例示として、資料では老人ホーム等が書かれておりますけれども、この取扱いについて、どのような施設が支援の対象となるのか、あと、もし件数等もお分かりになっているのでしたら、どのくらいの件数が対象になるのかについて、お聞きします。",
+    "text_length": 298,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-004",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "このたびの支給の対象施設についてのお尋ねでございます。\n　このたび、北海道におきましては、物価高騰の影響により食材料費の負担が増加している医療機関や介護障がい福祉施設等の負担軽減を図るため、これらの施設に対し支援金を支給することとなりましたが、類似施設である有料老人ホームやサービス付高齢者向け住宅などの一部施設が北海道制度の対象外となっているところでございます。\n　このため、これら対象外の施設に対する本市独自の支援といたしまして、市内に所在する特定施設入居者生活介護の指定を受けていない有料老人ホームやサービス付高齢者向け住宅80施設のほか、生活支援ハウス２施設に対しまして給付金を支給しようとするものでございます。\n　以上でございます。",
+    "text_length": 321,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-005",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "市内の82施設ということになるんでしょうか──に対してということでございましたけれども、それで支給額についてですけども、資料では定員１人当たり6,400円というふうに書かれておりますが、この支給額の考え方についてお聞きします。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-006",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給額についての考え方についてのお尋ねでございます。\n　北海道の制度におきましては、令和５年10月１日現在で施設を開設し入居されている方に食事の提供を行っている施設に対しまして、同年10月から令和６年３月までの半年分として、定員１人当たり6,400円を支援することとしております。\n　本事業におきましては、北海道の制度と同様に、定員１人当たり6,400円を支援することとし、施設全体で3,000人分として、1,920万円を計上したところでございます。\n　以上でございます。",
+    "text_length": 236,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-007",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "6,400円──北海道と同じ金額でということで、施設全体では食事が提供されているところの定員は3,000人ということの計算だということでございましたけれども、それではこの申請の方法などについてですけれども、これはどのような形で申請をすることになるんでしょうか。",
+    "text_length": 130,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-008",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本事業に係る申請についてのお尋ねでございます。本事業の申請につきましては、市から対象となる施設を運営する事業者に対しまして申請について御案内し、申請を希望する事業者は、交付申請書に必要事項を記載の上、申請期限までに提出していただくこととしております。\n　以上でございます。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-009",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "先ほど御答弁いただいたように、対象が分かっているので、そこに案内をしてということかというふうに思いますけれども、漏れの心配はないのかなというふうに受け止めましたが、この事業について、申請はいつから受付をして、支給はいつになるのか、あるいは申請の期限というのはいつということで設定されるのかについて、お聞きします。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-010",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申請及び支給の時期についてのお尋ねでございます。\n　申請の御案内につきましては、令和６年１月中旬頃を予定しておりまして、施設を運営する事業者から提出された申請書の内容を審査し、令和６年２月中旬から順次支給してまいりたいと考えております。\n　なお、申請の期限でございますが、令和６年２月末日を予定しておりまして、年度内には事業を完了できるものと見込んでいるところであります。\n　以上でございます。",
+    "text_length": 197,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-011",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "申請期限が２月の末日までと設定されてということで、支払いも含めて年度内に事業を完了できるものということだということでございました。\n　（１）については以上でございます。\n　次に、（２）の子育て世帯物価高騰対策給付金給付事業関係経費について伺います。\n　資料によりますと、物価高騰の影響を受けている子育て世帯への支援として給付金を支給するということでございますけれども、事業の考え方や対象者選定の考え方について、お聞きします。",
+    "text_length": 212,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-012",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業の概要等についてのお尋ねでございます。\n　本給付金につきましては、現在も続いております食料品などの物価高騰が、所得の状況にかかわらず、全ての子育て世代の家計に厳しい影響を及ぼしていることを踏まえまして、地域社会全体で子育てを応援するという観点から、市独自の給付金を支給しようとするものでありまして、その対象につきましては、令和５年12月31日現在、本市に住民登録をされております18歳まで──一般的には高校生までの児童を養育する世帯のほか、令和６年４月１日までに生まれた児童についても含めることとしております。\n　また、本給付金の支給対象となる世帯数につきましては、これまでの給付金の支給実績等を踏まえまして、約１万8,000世帯、児童数につきましては約３万人と推計したところでございます。\n　以上です。",
+    "text_length": 354,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-013",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "それで、支給額が児童１人につき２万円と設定されておりますけども、２万円という部分についての考え方はどのような考え方でしょうか。",
+    "text_length": 63,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-014",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給額についてのお尋ねでございます。\n　市といたしましては、これまでもコロナ禍や物価高騰に苦しむ子育て世帯を対象に、国の給付金とは別に市独自の給付金を支給してきたところでございまして、今回の給付金給付事業の実施に当たりましては、この間の給付状況等を踏まえまして、児童１人につき２万円としたところでございます。\n　以上です。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-015",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "過去の実績というんでしょうか、そういったことも含めて勘案されたということでのお話かなというふうに受け止めますけれども、それで、この支給に当たっての支給方法ですけれども、資料では過去に支給実績のある方等については手続がいらないような形で書かれておりますけれども、申請の仕方なり、あるいは申請しなければならない方がどういった方なのか、また、その取扱いについてはどのようになりますでしょうか。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-016",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給手続や支給方法等についてのお尋ねでございます。\n　本給付金の支給に関しましては、公務員を除く令和６年１月分の児童手当を受給される世帯や、今年度、市から既に国や市の子育て世帯への給付金を受給された世帯につきましては申請不要の取扱いとし、事前通知を行った上で、口座振込みにより給付金を支給することとしております。\n　また、児童手当やこれらの給付金を受給されていない世帯につきましては申請が必要となりますことから、支給対象と思われる世帯に可能な限り申請書類を送付するとともに、申請が漏れることがないよう、広報紙市政はこだてのほか、市のホームページや公式ＬＩＮＥ、子育てアプリ「はこっこ」などにより広く周知を図った上で、郵送または窓口での申請受付を予定しております。\n　以上です。",
+    "text_length": 338,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-017",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "申請の必要な方についても、できるだけこちらからお知らせできるような方法を取っていきたいということのお話でございましたので、そのように受け止めさせていただきますけれども、あと、事業のスケジュールということですが、支給の開始時期や、あるいは申請が必要な方の申請の開始及び支給の開始時期、それからまた支給対象者が令和６年４月１日までにお生まれになった児童だというふうにすれば、年度をまたぐということになりますけれども、この給付金の申請の受付期限、あるいは支給業務の完了はいつまでということで設定されるのか、スケジュールについてお聞かせください。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-018",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業のスケジュールについてのお尋ねでございます。\n　本給付金の支給に当たりましては、今後システムの構築に３か月程度必要となるため、支給開始時期につきましては３月下旬を予定しております。\n　本給付金の支給対象者のうち、申請不要の取扱いとなる方から順次、支給口座に振り込むこととしております。\n　また、申請受付につきましては、３月中旬の開始を予定しておりまして、申請受付後に内容を審査の上、支払い準備が整い次第──４月以降になると思いますが──順次申請者の指定口座に振り込むこととしております。\n　なお、本給付金の申請受付期間は令和６年６月末までとし、７月までに本給付金の支給業務を終了する予定となっております。\n　以上でございます。",
+    "text_length": 315,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-019",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "申請の受付期限は令和６年６月末ということで、７月までには支給業務がある程度完了するということだということでございますので、そのように受け止めさせていただきたいと思います。\n　それでは次、（３）にいきます。これは資料を拝見しますと、第２回臨時会──６月の臨時会ですけれども、これであったもので、その事業の継続だということでございますから、基本的には例えば交付の単価であったりとか、そういったものは、対象であったりというのは変わらないのかなというふうに受け止めましたけれども、肥料価格高騰対策支援補助金の事業の、今回提案されている部分で、例えば基本的な制度で変更点があるのかどうかと、それから当然継続ですけども、継続ということであれば、対象期間がまた設定されるんだというふうに思いますけども、その対象期間、あるいは支払われる時期、こういったものについては、今回はどのような取扱いになるのかについて、お聞かせください。",
+    "text_length": 406,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-020",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "農林水産部長（松浦眞人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "肥料価格高騰対策支援補助金についてのお尋ねでございます。\n　肥料価格高騰対策支援補助金につきましては、市内で農業を営む個人または法人を対象とし、本年６月から12月までの間に化学肥料を合計で１トン以上発注し、令和６年５月末までに納品を受ける方に対して、１トン当たり3,125円を上限として交付しようとするものであり、議案可決後、申請を受け付け、５月には補助金を交付したいと考えております。\n　また、補助制度の内容は前回とほぼ同様となっておりますが、一部、肥料の発注期間を昨年６月から本年５月までの１年間としていたものを、本年６月から12月までの７か月間とする。発注量については、下限を２トン以上から１トン以上とすることとしたものであり、この理由としては、対象となる肥料の発注がおおむね年内に終えている実態等を反映し、期間と発注量をそれぞれ見直ししたものであります。\n　以上でございます。",
+    "text_length": 392,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-021",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "基本的な制度は変わらないんでしょうけれども、発注量の取扱いですとか、そうしたものが変わったということでございます。そういうふうに受け止めさせていただきます。\n　次に、（４）の飼料価格高騰対策支援補助金増について伺います。これも６月の第２回臨時会で出された内容で、その継続ということでございますけれども、これも基本的な制度、例えば対象ですとか、それから交付の単価についても変わらないのかなというふうに思いますし、あと対象で、これは頭数でもってということでございましたけれども、今回計上されている予算を見れば、それも変わらないのかなというふうに受け止めましたけれども、この事業について、先ほどと同じように変更点なり、あるいは補助金の交付時期等について、どのような取扱いになるのか、お聞かせください。",
+    "text_length": 347,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-022",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "農林水産部長（松浦眞人）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "飼料価格高騰対策支援補助金についてのお尋ねでございます。\n　飼料価格高騰対策支援補助金につきましては、市内で酪農業や畜産業を営んでいる方を対象に、乳用牛及び肉用牛１頭当たり6,800円を交付するものであり、議案可決後、申請を受け付け、２月には補助金を交付したいと考えております。\n　なお、補助対象や補助額については、前回からの変更はないものであります。\n　以上でございます。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-023",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "特に変更はないものということで、継続されるということで受け止めさせていただきました。\n　次に、（５）のＬＰガス利用者負担軽減支援事業費増について伺います。これも６月の第２回臨時会で出された事業の継続ということでございますけれども、これも条件、内容等については変わらないものというふうに受け止めておりますけど、今回の提案されている分の対象期間がいつからいつまでの分になるのか、あるいは支払いの時期等について、いつになるのかについて、お聞かせください。",
+    "text_length": 224,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-024",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "経済部長（氣田聖大）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "前回の事業との変更点についてのお尋ねでございます。\n　このたびの支援につきましては、北海道の支援制度の対象とならない工業用利用者に対して、販売事業者を通じて10万円を上限に支援金を交付するものでございまして、補助対象や支援内容とも前回と変更はございませんが、延長された国による電気・都市ガスの支援期間を踏まえ、支援金額を判定するための対象期間を令和５年11月検針分から令和６年６月検針分までとし、支援金の交付につきましては、６月から開始する予定でございます。\n　以上でございます。",
+    "text_length": 240,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-025",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "制度等には何も変更がなくてということで、継続なので今回は11月から来年６月までの検針分だということのお話でございました。\n　最後になりますけども、財源の関係でお伺いします。財政調整基金繰入金ということで今回、約１億605万円が計上されておりますけども、今回の補正が行われたとすれば、繰入れされた後の財政調整基金の残高については幾らになるのか、確認させてください。",
+    "text_length": 181,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-026",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "財務部長（島田文弘）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補正後の財政調整基金の残高についてのお尋ねでございます。\n　今臨時会におきましては、物価高騰支援対策として、総額６億9,463万1,000円を歳出予算に計上したところであり、その財源といたしまして、地方創生臨時交付金５億8,858万5,000円を活用することとし、対策総額とこの臨時交付金の差引額１億604万6,000円について、財政調整基金の繰入で対応することとしたものでありまして、これにより補正後の財政調整基金の残高は約70億5,600万円となるものでございます。\n　以上でございます。",
+    "text_length": 246,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-027",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（道畑克雄議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "道畑　克雄",
+    "member_faction": "民主・市民ネット",
+    "text": "残高が約70億5,600万円だということで確認させていただきました。\n　以上で私の質疑を終わります。",
+    "text_length": 50,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-028",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "日本共産党、市戸　ゆたかです。\n　私は、議案第１号令和５年度一般会計補正予算について、質疑いたします。\n　先に質疑した道畑議員と重複するところがあると思いますけれども、御了承いただきたいと思います。\n　議長にお願いですけれども、（１）の物価高騰対応重点支援地方創生臨時交付金と、（２）の財政調整基金繰入金について、一括して質疑したいと思いますが、よろしいでしょうか。",
+    "text_length": 183,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-029",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "ありがとうございます。\n　それでは、物価高騰支援対策の総額と財政内訳、それと財政調整基金の残高について伺います。",
+    "text_length": 56,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-030",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "財務部長（島田文弘）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "物価高騰支援対策の総額と財源内訳及び財政調整基金の残高についてのお尋ねでございます。\n　このたびの物価高騰支援対策につきましては、子育て世帯への物価高騰対策給付金の支給など、総額で６億9,463万1,000円を歳出予算に計上したところであり、財源の内訳といたしましては、国の補正予算における総合経済対策の地方創生臨時交付金の配分額５億8,858万5,000円を活用するとともに、財政調整基金１億604万6,000円の繰入れにより対応することとしたものでございます。\n　また、財政調整基金の残高につきましては、今回の活用によりまして、約70億5,600万円となるものでございます。\n　以上でございます。",
+    "text_length": 300,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-031",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "国からの地方創生臨時交付金の配分額が５億8,858万5,000円と、さらに函館市として財政調整基金を１億604万6,000円繰入れしたということで、総額６億9,463万1,000円ということで、今回の支援策は、先ほどの道畑議員の質疑にもありましたけれども、子育て世帯への物価高騰対策給付金の支給に充てたということですね。\n　私は予算特別委員会でも何回も財政調整基金の残高を伺っておりますけれども、今回も財政調整基金を繰入れした後の残高は約70億5,600万円ということで、多いか少ないかということもありますけれども、まだ70億円あるということを確認させていただきました。\n　前回の第４回定例会で追加議案として議決した非課税世帯の７万円の特別給付金は、総額約39億円ですから、今回の地方創生臨時交付金の額が少ない額だということで、まず分かりました。\n　しかし、市民は平等に支援対策を求めております。非課税世帯で扶養されている方には今回の７万円の支給がありません。国は、今後も重点支援地方交付金なども追加提案するようですので、そのときには十分市民の期待に応えられるよう御配慮いただきたいと思います。\n　次に、（３）子育て世帯物価高騰対策給付金給付事業関係経費について、順次質問いたします。\n　先ほどの道畑議員の質疑に対しての答弁で、目的と事業内容については分かりました。次の、所要経費について伺います。",
+    "text_length": 599,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-032",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業に係る経費についてのお尋ねでございます。\n　本給付金の支給対象となる児童数につきましては、これまでの給付金の支給実績等を踏まえ約３万人と推計したところであり、給付金として６億円、また給付金支給システムの構築に係る委託料、事前通知や申請書等の印刷代や送付に係る郵送料、職員手当などの事務費として6,000万円、合計で６億6,000万円を見込んでおります。\n　以上でございます。",
+    "text_length": 189,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-033",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "子育て世帯物価高騰対策給付事業の合計が、約３万人を見込んで６億6,000万円ということで分かりました。\n　先ほど、財務部長から、今回の物価高騰支援対策の総額が６億9,463万1,000円ということでしたから、今回の補正予算のほとんどが子育て世帯への支援策ということで分かりました。\n　順次また聞いていきます。対象者について伺います。半年前の６月に決定した子育て世帯物価高騰緊急給付金の対象者は令和５年３月31日現在、住民登録されている18歳までの児童で、令和６年２月29日までに生まれた児童です。今回の対象者は令和５年12月31日に住民登録されている児童で、令和６年４月１日までに生まれた児童となっております。今回の対象者を年度内までに延長した理由について伺います。",
+    "text_length": 333,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-034",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象児童の考え方についてのお尋ねでございます。\n　今年の６月に決定し、現在も支給しております市独自による子育て世帯物価高騰緊急給付金につきましては、国の低所得者の子育て世帯に対する特別給付金が支給されない世帯を対象とするため、国の給付金と同じく令和５年３月31日を基準日としており、また、支給の完了についても、国と同じく令和５年度末とするため、令和６年２月29日までに生まれた児童を対象としたところでございますが、このたびの全ての子育て世帯を対象とした市の給付金につきましては、令和５年12月31日を基準日としており、支給の完了予定が令和６年７月末と翌年度まで繰り越されることになるため、基準日以降に生まれた児童の対象範囲を従前より拡大し、同じ学年となる令和６年４月１日生まれまでとしたところでございます。\n　以上です。",
+    "text_length": 360,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-035",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "支給の完了予定が令和６年７月末まで、来年度以降繰り越されるということで延長が可能になったということですよね。\n　それでは次に、これから誕生するであろう子供さんが２月29日までに生まれた場合、６月の緊急支援給付２万円と、それから今回の給付２万円と、両方支給対象となります。けれども、来年３月１日以降４月１日までに生まれた子供さんは、今回の２万円のみということになると思うんですけれども、それでよろしかったですか。",
+    "text_length": 205,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-036",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和６年３月１日から４月１日までに生まれた子供に対する給付についてのお尋ねでございます。\n　議員が今お話ししたように、令和６年３月１日から４月１日までに生まれた児童につきましては、このたびの子育て世帯物価高騰対策給付金のみが支給対象となります。\n　以上です。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-037",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "そうなんですよね。６月の緊急給付金は、来年２月29日までに生まれたお子さん、今回の給付金は４月１日までに生まれたお子さんということで、同じ年度内に生まれる子供さんの中でちょっと差ができてしまうということですね。\n　今回、年度内に生まれるお子さんまで延長したということについては大変評価したいというふうに思いますけれども、６月の緊急給付金との不平等が生まれてしまったということで、私は市の別の制度で給付できるように、平等にすべきではなかったかなというふうに思います。\n　来年３月１日から４月１日までに生まれてくるお子さんが仮に100人だとして、今、年間1,000人ちょっとしか生まれておりませんから、１か月100人だとしても、２万円掛ける100人で200万円です。何とか検討すべきだというふうに思います。\n　そういうことで御配慮よろしくお願いしたいと思います。別の機会に御検討いただきたいということを申し述べておきます。\n　次に、非課税世帯臨時特別給付金給付事業で支給された世帯にも今回の給付金は支給されるのでしょうか、伺います。",
+    "text_length": 464,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-038",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "住民税非課税世帯臨時特別給付金との併給についてのお尋ねでございます。\n　このたびの子育て世帯への給付金につきましては、所得の状況にかかわらず、市独自の取組として給付金を支給するものでありますので、住民税非課税世帯臨時特別給付金との併給は可能となっております。\n　以上でございます。",
+    "text_length": 140,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-039",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "可能ということで分かりました。\n　次に、生活保護制度を利用されている方は、今回の２万円が収入認定になるのでしょうか、伺います。",
+    "text_length": 63,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-040",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "生活保護世帯の収入認定についてのお尋ねでございます。\n　本給付金を含めまして、自治体独自の給付金につきましては、生活保護制度上、国に対して必要な手続を行うことで、収入認定の対象にはならないものと考えております。\n　以上です。",
+    "text_length": 112,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-041",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "収入認定の対象とならないということで分かりましたので、周知をよろしくお願いしたいと思います。\n　次に、ＤＶ避難者や児童養護施設に入所している子供さんへの対応について伺います。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-042",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＤＶの避難者等への対応についてのお尋ねでございます。\n　ＤＶを理由に避難されている方につきましては、基準日──12月31日時点で本市において対象児童を養育していることが確認できた場合は、本給付金を支給することとしております。\n　また、児童養護施設につきましては、児童を養育する世帯には該当しませんので、本給付金の支給対象とはならないものでございます。\n　以上です。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-043",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "ＤＶを理由に避難されている方については給付金が支給されるということで分かりましたけれども、児童養護施設に入所している場合は支給対象外ということなんですよね。子供さんへの給付ではないということで、分かりますけれども、何らかの形で給付できるような方法があればというふうに私は思いました。残念ですけれども、分かりました。\n　次に、支給方法ですけれども、先ほどの道畑議員の質疑に対しての答弁では、ほとんどの世帯は申請が不要と、一部申請する人もいるということですけれども、ほとんどが不要ということですけれども、支給時期を早めることはできないのでしょうか、伺います。",
+    "text_length": 277,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-044",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "子ども未来部長（宿村篤由）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "給付金の支給時期についてのお尋ねでございます。\n　本給付金につきましては、これまでの国や市の子育て世帯への給付金と基準日が異なりまして、給付に係る新たなシステムの構築にどうしても３か月程度必要となりますので、支給開始時期につきましては３月下旬を予定しているところでございますが、今後、支給事務が滞ることのないよう適切に対応してまいりたいと考えております。\n　以上です。",
+    "text_length": 184,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1240-2-045",
+    "municipality": "hakodate",
+    "council_id": 1240,
+    "council_name": "令和 ５年第４回１２月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "12月26日－01号",
+    "date": "2023-12-26",
+    "speaker": "（市戸ゆたか議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "市戸　ゆたか",
+    "member_faction": "日本共産党",
+    "text": "分かりました。３月下旬までには支給するということですけれども、できれば早くに準備する方もいらっしゃいますので、できるだけ早急に体制も整えていただきたいということを申し述べて、私の質疑を終わります。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1240.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        55
+      ]
+    }
+  }
+]

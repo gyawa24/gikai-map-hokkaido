@@ -1,0 +1,439 @@
+[
+  {
+    "id": "hakodate-1194-2-001",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "事務局長（手塚祐一）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一般選挙後最初の議会でありますので、議長が選ばれるまでの間、地方自治法第107条の規定により、年長の議員が臨時に議長の職務を行うこととなっております。\n　出席議員中、年長の福島　恭二議員に臨時議長をお願いいたします。\n　福島議員、議長席へ御着席ください。\n　　（福島臨時議長着席）",
+    "text_length": 140,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-002",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "市長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和５年第１回市議会臨時会の開会にあたりまして、一言御挨拶を申し上げます。\n　議員の皆様には、このたびの市議会議員選挙におきまして、市民から多くの御支持を得られ、当選されましたことに、心からお喜びを申し上げます。\n　私自身も、市民の皆様から御支持をいただき、このたび、市政を担わせていただくこととなりました。光栄に存じますとともに、責任の重さと使命感に身の引き締まる思いであります。\n　さて、世界中で猛威を振るった新型コロナウイルス感染症が５類感染症へと移行しましたが、ウイルスそのものが変わったわけではなく、引き続き感染対策に留意をしながら、社会経済活動を進めていくことが大事であると考えております。本市においては、急速に進行する人口減少や少子高齢化、さらには物価高騰対策など待ったなしの課題が山積している状況ではありますが、私はこれからまちづくりのかじを取るにあたって、市民に温かく、そして寄り添う行政の推進に全力で取り組んでまいる決意であります。\n　議員の皆様や市民の皆様には、特段の御理解と御協力をいただきますよう、お願い申し上げます。\n　議員の皆様の一層の御健勝と御活躍を祈念申し上げまして、簡単ではございますが、御挨拶とさせていただきます。よろしくお願いいたします。",
+    "text_length": 539,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        5
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-003",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "事務局次長（川口洋）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "皆様に御案内申し上げます。\n　ここで、吉田　崇仁議長並びに見付　宗弥副議長より就任の御挨拶があります。\n　初めに、吉田　崇仁議長より御挨拶があります。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-004",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "事務局次長（川口洋）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次に、見付　宗弥副議長より御挨拶があります。",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-005",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "事務局次長（川口洋）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "以上で就任挨拶を終了いたします。\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n　　　　　　　　　　午後　１時０３分再開",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-006",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "市長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第10号監査委員の選任の同意についてでございますが、議員である監査委員として、浜野　幸子氏を適任と認め、選任いたそうとするものでございます。よろしく御審議の上、御同意くださるようお願い申し上げます。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-007",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "市長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第11号監査委員の選任の同意についてでございますが、議員である監査委員として、斉藤　佐知子氏を適任と認め、選任いたそうとするものでございます。よろしく御審議の上、御同意くださるようお願い申し上げます。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-008",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "市長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第５号副市長の選任の同意についてでございますが、本年４月30日をもって退職いたしました副市長の後任として、田畑　浩文氏を適任と認め、選任いたそうとするものでございます。よろしく御審議の上、御同意くださるようお願い申し上げます。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-009",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "市長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第６号副市長の選任の同意についてでございますが、本年４月30日をもって退職いたしました副市長の後任として、佐藤　聖智子氏を適任と認め、選任いたそうとするものでございます。よろしく御審議の上、御同意くださるようお願い申し上げます。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-010",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "市長（大泉潤）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第７号監査委員の選任の同意についてでございますが、本年５月22日に任期満了となります小野　浩氏につきましては、適任と認め、再度選任いたそうとするものでございます。よろしく御審議の上、御同意くださるようお願い申し上げます。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        88
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-011",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "財務部長（島田文弘）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号及び議案第２号の２件につきまして、順次、提案理由を御説明申します。\n　まず、議案第１号令和５年度函館市一般会計補正予算第２号についてでございますが、このたびの補正予算は、歳出では、国の物価高騰対策であります、低所得の子育て世帯への児童一人当たり５万円の給付金支給に係る経費の計上をお願いするものでございます。\n　一方、歳入につきましては、歳出補正に関わる特定財源の補正をお願いするものでございます。\n　以下、予算の内容について、御説明いたします。\n　第１条は、歳入歳出予算の補正でございますが、歳入歳出それぞれ３億7,500万円を追加いたしまして、補正後の歳入歳出予算の総額を1,411億9,740万6,000円とするものでございまして、その内容につきましては、第１表のとおりでございます。\n　なお、予算の内容の詳細につきましては、３ページ以降の明細書に記載のとおりでございます。\n　次に、議案第２号函館市税条例の一部改正についてでございますが、このたびの改正は、地方税法施行規則の一部改正に伴い、一定の三輪以上の特定小型原動機付自転車に係る軽自動車税の種別割の税率を改定するものでございます。\n　なお、この条例の施行期日は令和５年７月１日とするものでございます。\n　以上でございます。",
+    "text_length": 548,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        94
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-012",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "市民部長（佐藤聖知子）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第３号函館市国民健康保険条例の一部改正について、提案理由を御説明申し上げます。\n　このたびの改正は、新型コロナウイルス感染症の影響により収入が著しく減少した被保険者等について、令和４年度分の保険料に係る減免申請書の提出期限の特例に関する規定を整備しようとするものでございます。\n　なお、この条例の施行期日は公布の日とするものでございます。\n　以上でございます。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        95
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-013",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第４号函館市介護保険条例の一部改正につきまして、提案理由を御説明申し上げます。\n　このたびの改正は、新型コロナウイルス感染症の影響により収入が著しく減少した第１号被保険者等について、令和４年度分の保険料に係る減免申請書の提出期限の特例に関する規定を整備しようとするものでございます。\n　なお、この条例の施行期日は公布の日とするものでございます。\n　以上でございます。",
+    "text_length": 185,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        96
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-014",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "財務部長（島田文弘）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第８号及び議案第９号の２件につきまして、順次、提案理由を御説明申し上げます。\n　まず、議案第８号専決処分の報告でございますが、このたびの専決処分は、令和５年３月31日の地方税法等の一部を改正する法律の公布を受けまして、函館市税条例の一部を改正する条例を地方自治法第179条第１項の規定により、令和５年３月31日に専決処分し、同日公布したものでございます。\n　改正の概要でございますが、大規模の修繕等が行われたマンションに対する固定資産税の減額の規定の適用を受けようとする者が提出すべき申告書に関する規定並びに軽自動車税の種別割及び環境性能割の税率の特例等に関する規定の整備をするものでございます。\n　次に、議案第９号専決処分の報告でございますが、このたびの専決処分は、令和５年３月31日の租税特別措置法等の一部改正に伴い、函館市認定半島産業振興促進計画区域における固定資産税の課税の特例に関する条例を廃止する条例を地方自治法第179条第１項の規定により、令和５年３月31日に専決処分し、同日公布したものでございます。\n　廃止の内容でございますが、本条例の適用区域が半島振興法に基づく認定産業振興促進計画の区域に該当しなくなることにより本条例を廃止し、本条例の廃止後においても、令和５年３月31日以前に本条例第２条に規定にする施設等を新設し、または増設した者で、当該施設等に係る事業を営んでいるものの固定資産について、不均一課税を適用させることができることとするものでございます。\n　以上でございます。",
+    "text_length": 652,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        97
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-015",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "事務局次長（川口洋）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "皆様に御案内申し上げます。\n　先ほど、副市長の選任に同意されました田畑　浩文氏、佐藤　聖智子氏より御挨拶がありますので御清聴のほどお願い申し上げます。初めに田畑浩文氏、お願いいたします。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        106
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-016",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "田畑浩文氏",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "田畑でございます。このたび、副市長の選任について、御同意していただきまして、誠にありがとうございました。\n　函館市にとりまして、非常に厳しい時代を迎えてまいります。市長を支えることはもとよりですが、市民一人ひとりの幸せのために、そしてまた市政の発展のために、精いっぱい努力してまいりたいと思っております。\n　今後とも、議員の皆様の御協力をいただきたいなと思っておりますので、どうぞよろしくお願いを申し上げます。\n　本日はありがとうございました。（拍手）",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        107
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-017",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "事務局次長（川口洋）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次に、佐藤　聖智子氏、お願いいたします。",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        108
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-018",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "佐藤聖智子氏",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "副市長の選任に当たり、議会の皆様から御同意をいただきました佐藤でございます。\n　身に余る光栄に存じ、深く感謝申し上げます。\n　また、同時にその重責を痛感しているところでございます。\n　もとより私一人の力は甚だ微力でございますけれども、市長の補佐役として、田畑副市長とともに職員の皆様と力を合わせ、本市の持続的な発展と、それとともに市民の皆様が安全に安心して暮らしていただけますよう、全力で取り組んでまいります。\n　議員の皆様におかれましては、これまでにも増して御指導と御鞭撻を賜りますようお願い申し上げ、簡単ではございますが、お礼の御挨拶とさせていただきます。\n　本日は誠にありがとうございました。（拍手）",
+    "text_length": 303,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        109
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1194-2-019",
+    "municipality": "hakodate",
+    "council_id": 1194,
+    "council_name": "令和 ５年第１回 ５月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "05月18日－01号",
+    "date": "2023-05-18",
+    "speaker": "事務局次長（川口洋）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "以上をもちまして終了いたします。御清聴ありがとうございました。\n　　　　　　　　　　午後　３時０１分\n\n　　地方自治法第１２３条第２項の規定により署名します。\n\n　　函館市議会臨時議長　　　　福　島　恭　二\n\n　　函館市議会議長　　　　　　吉　田　崇　仁\n\n　会議録署名者\n　　函館市議会議員　　　　　　松　宮　健　治\n\n　　函館市議会議員　　　　　　山　口　勝　彦\n\n　　函館市議会議員　　　　　　島　　　昌　之",
+    "text_length": 207,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1194.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        110
+      ]
+    }
+  }
+]

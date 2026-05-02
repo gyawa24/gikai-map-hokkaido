@@ -1,0 +1,715 @@
+[
+  {
+    "id": "hakodate-1247-2-001",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "財務部長（島田文弘）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号令和５年度函館市一般会計補正予算（第10号）につきまして、提案理由を御説明申し上げます。\n　このたびの補正予算は、歳出では、国の総合経済対策であります令和５年度の住民税均等割のみ課税世帯に対する１世帯当たり10万円の給付金の支給に加え、令和５年度の住民税非課税及び均等割のみ課税となる子育て世帯に対し、子供１人当たり５万円の給付金の支給に係る経費の計上や、繰越明許費の設定をお願いするものでございます。\n　一方、歳入につきましては、地方創生臨時交付金及び財政調整基金の繰入金の増額補正をお願いするものでございます。\n　以下、予算の内容について、御説明いたします。\n　第１条は、歳入歳出予算の補正でございますが、歳入歳出それぞれ10億6,180万円を追加いたしまして、補正後の歳入歳出予算の総額を1,550億8,977万4,000円とするものでございまして、その内容につきましては、第１表のとおりでございます。\n　第２条は、繰越明許費の追加でございまして、その内容につきましては、第２表のとおりでございます。\n　なお、予算の内容の詳細につきましては、４ページ以降の明細書に記載のとおりでございます。\n　以上でございます。",
+    "text_length": 514,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-002",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（斉藤佐知子議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "斉藤　佐知子",
+    "member_faction": "民主・市民ネット",
+    "text": "おはようございます。民主・市民ネットの斉藤です。\n　まずは最初に、能登半島地震で多くの方が亡くなられたことに、心からお悔やみを申し上げたいと思っております。そして、今なお多くの方が避難をしている。その方々にも、本当に一刻も早い復興を心からお祈りしております。\n　それでは、質疑に入りたいと思います。\n　まず、質疑の１点目です。この時期でのまず予算計上となった理由について、お伺いしたいと思います。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-003",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "予算計上の時期についてのお尋ねでございますが、このたびの低所得者支援臨時特別給付金給付事業につきましては、国におきまして低所得者支援及び定額減税を補足する給付として、定額減税の実施と合わせて個人住民税均等割のみの課税がなされる世帯への給付、こども加算などを実施することが決定され、物価高騰対応重点支援地方創生臨時交付金の増額について、令和５年12月22日付で閣議決定されたことを受け、この間、必要な経費の積算や実施体制の検討などを進めてきたところでありまして、その内容がまとまりましたことから、今臨時会におきまして、必要な経費の補正をお願いするものでございます。\n　以上です。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-004",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（斉藤佐知子議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "斉藤　佐知子",
+    "member_faction": "民主・市民ネット",
+    "text": "２点目は、今回のこの低所得者支援臨時特別給付金給付事業関係経費として、10億6,180万円が計上されております。そのうち、財政調整基金繰入金が３億7,771万3,000円、まずはこの繰入の理由、そして国からの地方創生臨時交付金６億8,408万7,000円ですが、今後この交付金の追加の有無があるのかどうか、そこをお聞きしたいと思います。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-005",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "財務部長（島田文弘）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "財政調整基金の繰入れ理由等についてのお尋ねでございます。\n　財政調整基金につきましては、突発的な災害などへの対応経費や臨時的に多額の財政需要が生じる場合などに、今後の財政見通しなどを踏まえながら活用することとしているところでありますが、このたびの補正予算では、国の総合経済対策における低所得世帯への支援であります令和５年度の住民税均等割のみ課税世帯への給付や、当該均等割のみ課税世帯または令和５年度の住民税非課税世帯のうちの子育て世帯に対する加算給付に係る経費10億6,180万円を歳出予算に計上したところでありまして、その財源といたしましては、概算配分額として国から示されました地方創生臨時交付金６億8,408万7,000円を活用することとし、歳出額と臨時交付金の差引額３億7,771万3,000円につきましては、財政調整基金の繰入れで対応することとしたものでございます。\n　なお、地方創生臨時交付金につきましては、国が全国共通のモデルを用いて算定いたしました額の８割に相当する金額を概算配分額として、各自治体に示したところであり、残りの額につきましては、基本的には市の給付実績に基づき精算し、追加交付されることになるものでございます。\n　以上でございます。",
+    "text_length": 530,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-006",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（斉藤佐知子議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "斉藤　佐知子",
+    "member_faction": "民主・市民ネット",
+    "text": "ありがとうございます。今の御答弁で、地方創生臨時交付金に関しては、あくまでも全国共通のモデルを用いて算定した額ということで、基本的には全額がきっちりまた追加で交付されるか否かというのは、今の時点では、はっきりしないというのが分かりました。\n　それでは次、３点目ですが、支給対象者の人数と、それから支給手続について、お伺いしたいと思います。",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-007",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給対象者の人数と支給手続についてのお尋ねでございます。\n　今回の給付金の支給対象のうち、住民税均等割のみ課税世帯につきましては6,000世帯、こども加算につきましては、住民税均等割非課税世帯の児童が4,550人、住民税均等割のみ課税世帯の児童が750人、計5,300人を見込んでいるところでございます。\n　また、支給手続につきましては、給付の対象と見込まれる方に対して、現在のところ３月中旬をめどに市から確認書を発送し、その後、市において返送された書類を審査して支給決定を行い、約３週間後をめどに支給が開始できるよう、作業を進めていく予定としておりますが、作業の進捗状況によりスケジュールが前後することも想定されますことから、確認書の発送時期が確定した時点で、改めて市民の皆様にお知らせしたいというふうに考えてございます。\n　以上でございます。",
+    "text_length": 373,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-008",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（斉藤佐知子議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "斉藤　佐知子",
+    "member_faction": "民主・市民ネット",
+    "text": "ありがとうございます。対象は計5,300人を見込んでいるのが分かりました。\n　この支給手続につきましては、今までもいろいろな給付の事業がございます。そういう中で、自分の家がとか、自分が該当するのかどうかが、なかなか分からないという、そういうお話も聞いております。\n　改めてお聞きするんですが、この３月中旬をめどに市から確認書が来た方、その方が対象というふうに考えて、その確認書を待っているといいのでしょうか。そこを改めてちょっとお聞きしたいと思います。",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-009",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給手続についての再度のお尋ねでございます。\n　給付の対象と見込まれる方に対しましては、市から確認書を発送させていただきまして、その内容を確認の上、確認書を返送していただくことになるものでございまして、基本的に支給の対象として市が把握している方々には市から確認書を発送させていただくというのが基本的な流れでございます。\n　ただし、令和５年１月２日以降に函館市に転入された方など、市において課税状況が把握できない方につきましては、申請書を発送し、課税証明書などの必要書類とともに、その申請書を返送していただくこととしてございます。\n　なお、手続に当たりまして疑義がある場合につきましては、コールセンターを設置することから、そちらのほうにお問合せをいただきたいというふうに考えてございます。\n　以上でございます。",
+    "text_length": 354,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-010",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（斉藤佐知子議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "斉藤　佐知子",
+    "member_faction": "民主・市民ネット",
+    "text": "分かりました。ありがとうございます。\n　それでは４点目。今回の給付事業に関わる職員体制はどのようになるのか、お聞きしたいと思います。",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-011",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給に伴う体制についてのお尋ねでございます。\n　今回の支給に当たりましては、現在、住民税非課税世帯に対する給付金支給業務を担っております職員６名に加え、新たに専任の職員を４名配置するほか、業務の状況に応じ、人材派遣や他部局からの応援職員により、迅速かつ円滑な事業実施のための体制を確保してまいりたいと考えております。\n　以上でございます。",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-012",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（斉藤佐知子議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "斉藤　佐知子",
+    "member_faction": "民主・市民ネット",
+    "text": "御答弁では、新たに専任の職員を４人配置するということで、計10名でやっていくということでございます。\n　聞くところによるとというか、この４人の配置は、もちろんほかの部局から１人ずつ出していただいて配置をするということでございます。\n　様々な部局から１名ずつ４人配置するんですが、その部局はこの体制のために職員を配置する。そうすると、そこの職員を出した部局は欠員１というふうになるわけですね。以前は、新型コロナウイルス感染症とかがございまして、各部局は事業ができなかったとか、そういう部局もあったと思います。\n　しかし今は、新型コロナウイルス感染症も落ち着き、どこの部局もその職員の定数できっちりと仕事をいっぱいでやっているというふうに思うんですね。\n　その中で私は、いろいろ職員のほうから、欠員１になったところは、その分業務量が増えるだとか、それから今回新しく配置される４人の職員の方々にも、最初から時間外勤務、休日出勤を前提にして職員の配置を頼んでいると。そういう体制がいいのかどうか。なかなか不満がいろいろ職員から出ているというふうに、私は聞いております。\n　今日は質疑でありますから、意見だとか要望だとか、そういうことは言えないので、それはまた別の機会にしたいというふうに思っておりますが、やはり市民のためにきちんと万全な体制でしっかりと職員体制もしていただいて、この給付金事業を遂行していただきたいというふうに思いますので、よろしくお願いいたしまして、早いですが、私の質疑を終わらせていただきます。",
+    "text_length": 653,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-013",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "それでは、通告に従い、今質疑があった給付金関係について、質疑いたします。\n　この給付金は大きく２つの内容から成り立っているということで、一つは住民税均等割のみの課税世帯への給付だと。まず、この均等割のみの課税対象者の内訳と内容について、これはちょっと重複する点もあるかもしれませんが、答弁をお願いします。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-014",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象世帯と世帯数についてのお尋ねでございます。\n　このたびの給付金の支給対象となる世帯につきましては、令和５年12月１日現在本市に住民登録があり、令和５年度分の住民税について、住民税均等割のみ課税されている方だけで構成される世帯及び住民税均等割のみ課税されている方と非課税の方だけで構成される世帯となっておりまして、その対象世帯数は6,000世帯を見込んでいるところでございます。\n　この世帯数には、今回支給の対象外となる住民税均等割が課税されている方の扶養親族等のみで構成される世帯が含まれますことから、実際に支給対象となる世帯は、これよりやや少なくなるものと考えております。\n　以上です。",
+    "text_length": 296,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-015",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "対象世帯が6,000世帯で、対象は均等割のみの課税世帯ということで、その中で課税されている者の扶養親族の世帯については対象外だと。だから、若干6,000世帯より減るのではないかということだと思います。\n　次に、今後の対応として、今答弁のあった被扶養者のみの世帯は対象外だが、今後その世帯に対する対応について、どのようなことが考えられるか、お聞きします。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-016",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "被扶養者のみで構成される世帯への対応についてのお尋ねでございます。\n　住民税均等割が課税されている方の扶養親族等のみで構成される世帯につきましては、ただいま申し上げたように、このたびの給付金の対象外となるものでございますが、今後、所得税及び個人住民税の定額減税や、これを補足する給付におきまして、扶養親族等の人数に応じた措置の対象となりますことから、その枠組みにより対応することになるものと考えております。\n　以上です。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        26
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-017",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "今回は対象にならなくても、今後は定額減税などがあった場合は、対象の親族となるということで、減税の対象になるという答弁でした。\n　次に、課税時に課税されていたが、家計が急変して収入が激変したという方については、かつてはその人たちも申請があれば給付するというふうにやっていたんですけど、今回については、そのような対応はないのかどうか、お聞きします。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-018",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "家計急変世帯への対応についてのお尋ねでございます。\n　これまでの新型コロナウイルス感染症の影響などを踏まえた住民税非課税世帯に対する給付金につきましては、緊急事態宣言の発出や社会活動の自粛要請などにより、職を失ったり収入が急減するケースが数多く発生したことなどを踏まえ、国において家計急変世帯も支給対象とすることが示されたことを受けまして、本市においても同様の対応を行ってきたところでございますが、今回の給付金に関しましては、国から示されている交付金の条件に家計急変世帯が含まれておりませんことから、本市といたしましても、家計急変世帯は対象としていないところでございます。\n　以上でございます。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-019",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "今回は家計急変世帯については対応しないということだという答弁でした。\n　やはり、家計急変の場合は新型コロナウイルス感染症のときは救済していたという経過がありますので、それほど状況は変わらないというふうに思いますので、今後、市費等で検討していただきたいというふうに思います。\n　次に、これも先ほどの答弁もあったんですが、支給日はいつ頃になるのか、またそのための手続はどのようになるのか、お聞きします。",
+    "text_length": 199,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-020",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "給付金の支給日と手続についてのお尋ねでございます。\n　このたびの補正予算の議決後、速やかに事業実施に当たり必要なシステム改修や支給対象世帯の選定など、確認書発送に向けた準備を進めることとしておりまして、現在のところ、３月中旬をめどに対象者と見込まれる方へ市から確認書を発送する予定となっております。\n　その後、市におきまして、返送された書類を審査して支給決定を行い、約３週間後をめどに支給が開始できるよう、作業を進めていく予定としておりますが、先ほども御答弁申し上げましたとおり、作業の進捗状況によりスケジュールが前後することも想定されますことから、確認書の発送時期が確定した段階で、改めて市民の皆様にお知らせしてまいりたいと考えております。\n　以上です。",
+    "text_length": 328,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-021",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "３月中旬に確認書を送って、その後、支給まで３週間ぐらいかかるという答弁でした。大体４月上旬頃になるということだと思います。\n　ぜひ、遅滞なく準備を進めていただきたいというふうに思います。\n　次に、２つ目の内容として、住民税非課税または均等割のみの課税の子育て世帯への加算ということで、お聞きします。\n　まず、住民税非課税世帯と住民税均等割のみ課税世帯の対象児童の内訳を、先ほども答弁あったんですが、お聞きします。",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        31
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-022",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "加算対象の児童の人数についてのお尋ねでございます。\n　このたびの給付金におけるこども加算につきましては、平成17年４月２日生まれ以降の児童が対象となっておりまして、住民税均等割非課税世帯の児童が4,550人、住民税均等割のみ課税世帯の児童が750人の計5,300人を見込んでいるところでございます。\n　また、市全体の児童数に対する加算対象児童の割合といたしましては、令和５年12月１日現在における児童数に基づきまして算出した割合で申し上げますと、約19％となるものでございます。\n　以上です。",
+    "text_length": 246,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-023",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "今答弁があったとおり、非課税と均等割のみの世帯の児童数が、市内全体の児童数の19％、５人に１人が大変な世帯の子供だということが分かりました。\n　次に、非課税世帯、均等割のみの世帯の対象児童の基準とその範囲について、お聞きします。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-024",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基準日と対象児童の範囲についてのお尋ねでございますが、こども加算につきましては、令和５年12月１日現在、本市に住民登録がある世帯のうち、令和５年度分の住民税均等割非課税世帯及び均等割のみ課税世帯に対する給付への加算として措置されるものであり、その対象児童の範囲につきましては、当該世帯の世帯員であって、18歳に達する日以降最初の３月31日までの間にある児童、具体的に申し上げますと、平成17年４月２日生まれ以降の児童となっております。\n　なお、基準日以降に出生した児童の取扱いにつきましては、国から改めて示されることとなっておりますことから、詳細が分かり次第、対象児童のいる世帯に対し、確認書の発送などの対応を行ってまいりたいと考えております。\n　以上です。",
+    "text_length": 329,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-025",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "もう生まれている子供についての基準は分かるわけですが、今後、基準日以降に誕生される子供の取扱いについては、まだ詳細に示されてないという。これは、ぜひ示された以降、早急に市民に知らせ、そして周知徹底されるように、ぜひお願いしたいというふうに思います。\n　次に、全体の事務の執行についてお聞きします。事務費が１億9,680万円というふうになっておりますが、その内訳についてお聞きします。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        35
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-026",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事務費の内訳についてのお尋ねでございます。\n　このたびの補正予算におきましては、事業実施に必要な事務費として、１億9,680万円を計上しており、その内訳につきましては、システム改修や入力作業などに係る委託料としまして１億6,223万5,000円、確認書発送などに係る郵送料など役務費として745万1,000円、消耗品費などの需用費といたしまして601万2,000円、従事する職員の時間外勤務手当として1,322万2,000円などとなっております。\n　以上でございます。",
+    "text_length": 234,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-027",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "事務費が１億9,680万円ということで、システム改修や入力作業などの委託料の占める額が非常に多いんですが、１億6,223万5,000円という答弁ですね。非常に委託料にお金がかかるということで、この委託に関わって、どのような業務内容を委託するのか、また委託業者の選定方法について、どのような選定方法で行うのか、お聞きします。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-028",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "委託業務の内容等についてのお尋ねでございます。\n　このたびの補正予算における委託業務につきましては、システム改修などに関する業務など６業務となっております。また、業者選定に当たりましては、支給要件確認書内容確認等業務に係る労働者派遣など、４つの労働者派遣業務につきましては、競争入札により選定し、給付システムの改修や視覚障がい者向け周知チラシの点字版及び録音版の作成・配付業務の２つの業務につきましては、随意契約により委託する予定となってございます。\n　以上です。",
+    "text_length": 232,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-029",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "６つの業務について、委託するというふうな答弁です。\n　この６つの業務というのが、システム改修などに関する６業務というふうになっているんですけれども、幾つかあるわけですが、正確に６つの業務というのは、どういう業務に分けて委託するのか、業務の中身について、どのような業務になっているのか、お知らせください。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-030",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "保健福祉部長（佐藤任）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "委託業務の内訳についてのお尋ねでございます。\n　このたびの補正予算において計上しております委託業務につきましては、事務処理を迅速かつ的確に行うためのシステムの開発運用などに関する業務、業務の状況に応じて各種作業を執行するための人材派遣業務、給付金を周知するお知らせについて点字版、録音版を作成及び配付する業務となっておりまして、このうち人材派遣業務につきましては、返送された確認書などを審査する業務、確認書などに基づき必要事項をシステムに入力する業務、申請に不備があった場合などの対応に関する業務、申請手続を補助する業務にそれぞれ分割し、委託することとしております。\n　なお、人材派遣業務につきましては、これまでの取扱いでは市内に本店または支店を有する業者を対象としているところでございます。\n　以上です。",
+    "text_length": 353,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "hakodate-1247-2-031",
+    "municipality": "hakodate",
+    "council_id": 1247,
+    "council_name": "令和 ６年第１回 １月臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月22日－01号",
+    "date": "2024-01-22",
+    "speaker": "（紺谷克孝議員）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "紺谷　克孝",
+    "member_faction": "日本共産党",
+    "text": "いろいろシステムの改修運用とか、入力作業とか審査、案内などの、６つの内容に分けて、それぞれ委託するということだと思います。\n　競争入札が４つで、それから随意契約が２つということで、しかも人材派遣などを使うということで、今回は質疑しませんが、どういう内容で、今後こういうような仕事が委託されるというケースが非常に増えてくると思いますので、今後はもっと明らかにしていきたいと思います。\n　そういう中で、函館市の執行体制などについて、前段、斉藤議員のほうから、それぞれ、函館市がどういう執行体制の中でやるかという中で、昨年末の第４回定例会で決まった７万円の給付金については、６人の市の職員で行っていると。これは他の課から派遣された応援部隊だと。そしてさらに新たに先ほどの答弁で、４人配置して10人の体制でやるというふうに答弁がありました。\n　一般の業務に影響がないかということで、議員のほうから、いろいろ質問があったわけですが、2024年度にも、引き続き住民税非課税世帯や均等割のみの課税対象者への給付──これは定額減税を補足する給付──が予定されているというふうになっているんですよね。\n　だから、今回と同様の業務が、来年度も実施されるということがはっきりしているわけです。しかも、定額減税そのものも、これは非常に複雑で、私も十分承知していないんですけれど、税金を納めている方に対する定額減税も行われると。その定額減税に付随して、もう一回今回のような住民税非課税や均等割のみの課税世帯への給付が予定されているんじゃないかというふうに思います。\n　したがって、今10人でやって、しかも短期で発送とかそういうときになると、この10人以外にも、短期的に職員の応援をかけるということも、当然やられるというふうに聞いております。そういう点で、やはりもう少し人員を配置──前の斉藤議員の質問にもあったんですけど、もう少し非常的、臨時的な体制でなくて、来年度も同様のことが実施されるということで、人員を配置して、体制を取って、きちんとやっていただきたいと──これは意見等を言ったら駄目だって前の議員も言われたので、私もあまり強調はしませんけど、ぜひ来年度実施に当たって、そういうことが必要ではないかということを、一応主張しまして、質疑を終わらせていただきます。\n　以上です。",
+    "text_length": 978,
+    "source": {
+      "minutes_file": "data/hakodate/minutes/1247.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        41
+      ]
+    }
+  }
+]
