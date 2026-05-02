@@ -27,8 +27,8 @@ function readJson<T>(filePath: string): T | null {
 function getMinutesIds(city: string): number[] {
   const cwd = process.cwd();
   // Try minutes/ subdir first (chitose, eniwa, tomakomai), then direct (asahikawa, hakodate, muroran, kushiro)
-  const minutesPath = path.join(cwd, "data", city, "minutes", "index.json");
-  const directPath = path.join(cwd, "data", city, "index.json");
+  const minutesPath = path.join(/*turbopackIgnore: true*/ cwd, "data", city, "minutes", "index.json");
+  const directPath = path.join(/*turbopackIgnore: true*/ cwd, "data", city, "index.json");
   const data =
     readJson<MinutesIndexItem[]>(minutesPath) ??
     readJson<MinutesIndexItem[]>(directPath);
@@ -36,13 +36,13 @@ function getMinutesIds(city: string): number[] {
 }
 
 function getMemberIds(city: string): number[] {
-  const fp = path.join(process.cwd(), "data", city, "members.json");
+  const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "members.json");
   const data = readJson<Member[]>(fp);
   return data ? data.map((m) => m.seat_number) : [];
 }
 
 function getSessionIds(city: string): string[] {
-  const sessionsDir = path.join(process.cwd(), "data", city, "sessions");
+  const sessionsDir = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "sessions");
   try {
     const files = fs.readdirSync(sessionsDir);
     return files
@@ -54,7 +54,7 @@ function getSessionIds(city: string): string[] {
 }
 
 function hasFile(city: string, file: string): boolean {
-  const fp = path.join(process.cwd(), "data", city, file);
+  const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, file);
   return fs.existsSync(fp);
 }
 

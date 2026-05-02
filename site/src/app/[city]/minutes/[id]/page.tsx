@@ -13,9 +13,11 @@ export const dynamicParams = false;
 function getSession(city: string, id: string): MinutesSession | null {
   // 一部自治体（旭川・函館・釧路など）は data/{city}/{id}.json 直下に置かれている。
   // まず minutes/ サブディレクトリを試し、なければ city ルート直下を見る。
+  // dynamicParams=false で build 時のみ実行されるため、turbopackIgnore で
+  // Function トレースを抑止する（13908ファイルの過剰追跡を回避）。
   const candidates = [
-    path.join(process.cwd(), "data", city, "minutes", `${id}.json`),
-    path.join(process.cwd(), "data", city, `${id}.json`),
+    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "minutes", `${id}.json`),
+    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, `${id}.json`),
   ];
   for (const fp of candidates) {
     try {
@@ -29,7 +31,7 @@ function getSession(city: string, id: string): MinutesSession | null {
 
 function getEnriched(city: string, id: string): MinutesEnriched | null {
   const fp = path.join(
-    process.cwd(),
+    /*turbopackIgnore: true*/ process.cwd(),
     "data",
     city,
     "minutes",

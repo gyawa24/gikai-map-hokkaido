@@ -38,14 +38,14 @@ function countSearchIndex(dataRoot: string): number {
 
 export function getSiteStats(): SiteStats {
   const munis = getMunicipalities().filter((m) => m.active);
-  const dataRoot = path.join(process.cwd(), "data");
+  const dataRoot = path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
 
   let memberCount = 0;
   let minutesCount = 0;
   let decisionCount = 0;
 
   for (const m of munis) {
-    const cityDir = path.join(dataRoot, m.slug);
+    const cityDir = path.join(/*turbopackIgnore: true*/ dataRoot, m.slug);
     memberCount += countJsonArray(path.join(cityDir, "members.json"));
     decisionCount += countJsonArray(path.join(cityDir, "decisions.json"));
 

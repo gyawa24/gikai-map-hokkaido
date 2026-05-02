@@ -72,11 +72,11 @@ function pageExists(cityKey: string, pageDir: string): boolean {
 }
 
 function dataExists(cityKey: string, dataFile: string): boolean {
-  const dataPath = path.join(process.cwd(), "data", cityKey, dataFile);
+  const dataPath = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", cityKey, dataFile);
   if (fs.existsSync(dataPath)) return true;
   // 議事録は旭川・函館等で data/{city}/index.json 直下の形式もあるため補完
   if (dataFile === "minutes/index.json") {
-    const alt = path.join(process.cwd(), "data", cityKey, "index.json");
+    const alt = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", cityKey, "index.json");
     if (fs.existsSync(alt)) return true;
   }
   return false;
