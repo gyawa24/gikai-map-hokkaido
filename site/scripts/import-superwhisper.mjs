@@ -4,6 +4,7 @@
  *
  * 使い方:
  *   node scripts/import-superwhisper.mjs \
+ *     --city chitose \
  *     --id r8-teireikai1-day3-20260310 \
  *     --meta /path/to/meta.json
  */
@@ -21,11 +22,12 @@ const SITE_ROOT = path.resolve(__dirname, "..");
 const args = process.argv.slice(2);
 const get = (flag) => { const i = args.indexOf(flag); return i !== -1 ? args[i + 1] : null; };
 
+const city = get("--city") ?? "chitose";
 const sessionId = get("--id");
 const metaPath  = get("--meta");
 
 if (!sessionId || !metaPath) {
-  console.error("Usage: node import-superwhisper.mjs --id <id> --meta <path/to/meta.json>");
+  console.error("Usage: node import-superwhisper.mjs --city <slug> --id <id> --meta <path/to/meta.json>");
   process.exit(1);
 }
 
@@ -33,6 +35,17 @@ if (!sessionId || !metaPath) {
 function loadVocabulary(city) {
   const fp = path.join(ROOT, "data", city, "vocabulary.json");
   try { return JSON.parse(fs.readFileSync(fp, "utf-8")); } catch { return null; }
+}
+function getCouncilName(city, vocab) {
+  if (vocab?.council_name) return vocab.council_name;
+  try {
+    const municipalities = JSON.parse(
+      fs.readFileSync(path.join(ROOT, "data", "municipalities.json"), "utf-8")
+    );
+    return municipalities.find((m) => m.slug === city)?.council_name ?? `${city}議会`;
+  } catch {
+    return `${city}議会`;
+  }
 }
 function applyCorrections(text, vocab) {
   if (!vocab?.corrections) return text;
@@ -51,20 +64,24 @@ function claudeQuery(prompt) {
 }
 
 // --- セッションJSONを読み込む ---
-const sessionFile = path.join(ROOT, "data", "chitose", "sessions", `${sessionId}.json`);
+const sessionFile = path.join(ROOT, "data", city, "sessions", `${sessionId}.json`);
 if (!fs.existsSync(sessionFile)) {
   console.error(`Session file not found: ${sessionFile}`);
   process.exit(1);
 }
 const session = JSON.parse(fs.readFileSync(sessionFile, "utf-8"));
-const city = "chitose";
 const vocab = loadVocabulary(city);
+const councilName = getCouncilName(city, vocab);
 if (vocab) console.log(`語彙辞書: ${vocab.corrections?.length ?? 0}件の補正ルール`);
 
 // --- meta.json を読み込む ---
 console.log("meta.json 読み込み中...");
 const meta = JSON.parse(fs.readFileSync(metaPath, "utf-8"));
 const allSegs = meta.segments; // [{start, end, text}, ...]
+const fullTranscript = allSegs
+  .map((s) => String(s.text ?? "").trimEnd())
+  .filter(Boolean)
+  .join("\n");
 
 // --- ノイズフィルター ---
 const NOISE_PATTERNS = [
@@ -100,19 +117,16 @@ for (let pi = 0; pi < boundaries.length - 1; pi++) {
 
   // ノイズを除去し、連続する同一テキストを1つにまとめる
   const cleaned = [];
-  let prev = "";
   for (const s of partSegs) {
-    const t = s.text.trim();
-    if (!isNoise(t) && t !== prev && t.length > 0) {
+    const t = s.text.trimEnd();
+    if (!isNoise(t) && t.trim().length > 0) {
       cleaned.push(s);
-      prev = t;
     }
   }
 
   if (cleaned.length === 0) continue;
 
-  const rawText = cleaned.map((s) => s.text.trim()).join("\n");
-  const text = applyCorrections(rawText, vocab);
+  const rawText = cleaned.map((s) => s.text.trimEnd()).join("\n");
   const startTime = cleaned[0].start;
   const endTime   = cleaned[cleaned.length - 1].end;
 
@@ -121,8 +135,8 @@ for (let pi = 0; pi < boundaries.length - 1; pi++) {
     label: `第${parts.length + 1}部`,
     start_time: formatTime(startTime),
     end_time:   formatTime(endTime),
-    transcript: text,
-    char_count: text.length,
+    transcript: rawText,
+    char_count: rawText.length,
   });
 }
 
@@ -134,12 +148,13 @@ parts.forEach((p) =>
 // --- 要約生成（claude -p / MaxPlan） ---
 function summarize(text, label, total) {
   process.stdout.write(`  ${label}（全${total}部） 要約生成中... `);
-  const truncated = text.length > 6000 ? text.slice(0, 6000) + "\n…（省略）" : text;
+  const summarySource = applyCorrections(text, vocab);
+  const truncated = summarySource.length > 6000 ? summarySource.slice(0, 6000) + "\n…（省略）" : summarySource;
   const vocabNote = vocab
     ? `【正しい固有名詞】議員名：${(vocab.members ?? []).join("、")}。重要用語：${(vocab.key_terms ?? []).slice(0, 8).join("、")}。\n\n`
     : "";
-  const prompt = `あなたは北海道千歳市議会の会議記録を整理するアシスタントです。
-以下は千歳市議会の文字起こし（${label}）です。次のJSON形式のみで回答してください:
+  const prompt = `あなたは${councilName}の会議記録を整理するアシスタントです。
+以下は${councilName}の文字起こし（${label}）です。次のJSON形式のみで回答してください:
 {"summary":"3〜4文の日本語要約（誰が・何について・どう議論したか）","topics":["キーワード1","キーワード2","キーワード3","キーワード4"]}
 
 ${vocabNote}文字起こし:
@@ -168,17 +183,19 @@ for (const part of parts) {
 // --- 保存 ---
 const updated = {
   ...session,
+  city,
+  full_transcript: fullTranscript,
   generated_at: new Date().toISOString().split("T")[0],
   segments,
 };
 
 const save = (dir) => {
-  const dest = path.join(dir, "chitose", "sessions", `${sessionId}.json`);
+  const dest = path.join(dir, city, "sessions", `${sessionId}.json`);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.writeFileSync(dest, JSON.stringify(updated, null, 2), "utf-8");
   console.log(`  保存: ${dest}`);
 
-  const indexPath = path.join(dir, "chitose", "sessions", "index.json");
+  const indexPath = path.join(dir, city, "sessions", "index.json");
   if (fs.existsSync(indexPath)) {
     const index = JSON.parse(fs.readFileSync(indexPath, "utf-8"));
     const entry = index.find((e) => e.id === sessionId);
@@ -199,7 +216,7 @@ console.log(`\n完了！ ${segments.length}部の要約を生成しました。`
 console.log("\n次のステップ:");
 console.log("  cd /Users/yohei/gikai-map-hokkaido");
 console.log("  git add data/ site/data/");
-console.log('  git commit -m "Add transcript: 令和8年予算特別委員会第4日目"');
+console.log(`  git commit -m "Add transcript: ${city} ${session.title}"`);
 console.log("  git push");
 
 // --- ユーティリティ ---
