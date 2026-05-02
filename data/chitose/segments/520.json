@@ -1,0 +1,254 @@
+[
+  {
+    "id": "chitose-520-1-001",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "山崎議長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "text": "◆山崎議長　９月２０日の本会議において設置されました補正予算特別委員会の委員長を選任いただくために、委員会条例第１０条第１項の規定に基づき、議長において本日の委員会を招集いたしました。\n　委員長の互選については、委員会条例第１０条第２項の規定に基づき、年長の委員が臨時にその職務を行うこととなっております。この委員会の年長委員は、落野委員であります。\n　それでは、落野委員、よろしくお願いいたします。",
+    "text_length": 200,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-002",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "渡部副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "text": "◆渡部副委員長　ただいま、副委員長に選任されました自民党議員会の渡部でございます。\n　平川委員長をしっかりとサポートし、スムーズな議事運営に努めますので、どうぞよろしくお願いいたします。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-003",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "小田事務局次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎小田事務局次長　御報告いたします。\n　審査日程につきましては、本日１日間といたします。\n　審査要領につきましては、令和４年度各会計補正予算案を一括議題といたします。\n　なお、提案説明は、本会議での説明と重複するため省略いたします。\n　質疑は一問一答とし、質疑の順序及び答弁時間を含まない時間の配分は、公明党議員団３０分以内とします。\n　次に、質疑終了後、議案に対する修正案及び附帯意見があれば、文書で委員長に提出していただきます。\n　討論があるときは、討論の後、採決に入っていただきます。\n　少数意見の留保があれば、ほかに１人以上の賛成者を得て、文書をもって委員長に提出していただきます。\n　報告は、以上であります。",
+    "text_length": 309,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-004",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "仲山委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆仲山委員　公明党議員団、仲山でございます。\n　令和４年度千歳市各会計補正予算書、８ページ、９ページの項目について質疑させていただきます。\n　歳出予算の１０款教育費、６項保健体育費、３目体育振興費の温水プール施設管理経費についてお伺いします。\n　この経費は、指定管理者事業協議負担金として、本補正予算において１,２４２万２,０００円が計上されています。\n　９月２０日の本会議の議案提出に際しての説明では、新型コロナ感染防止のための休館措置による減収分を補填する経費とお聞きしました。詳細な背景についてお伺いします。",
+    "text_length": 257,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-005",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "千田観光スポーツ部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎千田観光スポーツ部長　お答えいたします。\n　新型コロナウイルス感染症の拡大に伴い、市は、令和３年５月から６月まで、８月から９月まで、断続的に指定管理施設について、休館措置としたところであります。\n　このことにより、指定管理料のほか、利用料金等で運営している温水プールは減収となり、指定管理者の収支状況が悪化したところであります。\n　市と指定管理者が締結しています施設の管理に関する協定において、不可抗力による損失や追加費用があるときは、合理性の認められる範囲で市が負担することとなっておりますことから、緊急事態宣言やまん延防止等重点措置の指定に伴う市の指示による休館の措置はこれに該当するため、両者の協議を踏まえて、当該期間の減収分を補填することとしたものであります。\n　具体的には、新型コロナウイルス感染症の拡大に伴い、令和３年５月１７日から６月３０日、８月１６日から９月３０日の間、休館となったことから、令和３年５月から６月まで、８月から９月までの期間における、新型コロナの影響をほとんど受けていない直近の５年間の収入料や、水泳教室の授業料等の平均収入額と、令和３年度の収入額との差を減収額として、また、休館に伴い、不要となった燃料費や光熱水費等の経費は減収額から差し引き、損失補填額としたところであります。\n　以上であります。",
+    "text_length": 567,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-006",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "仲山委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆仲山委員　細かい説明をありがとうございます。\n　これ、ちなみに、今回の補正額を考えると、利用者が市内の大人の方であれば、２万人に相当します。\n　令和２年度も同様な状況があったと思いますが、休館による利用者の減少は、コロナ禍以前と比較し、どの程度だったのか、お伺いします。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-007",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "千田観光スポーツ部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎千田観光スポーツ部長　お答えいたします。\n　新型コロナウイルスの影響を全く受けていない直近５年間の年間の利用者数は、平均して年間１０万人程度でありましたが、コロナ禍の影響を大きく受けた令和２年度は、４月中旬から５月末日まで休館措置となり、年間利用者数は８万８５人、令和３年度は、５月中旬から６月末日までと８月中旬から９月末日までが休館措置となり、年間利用者数は４万７,７３０人となっております。\n　なお、令和２年度も休館期間中の収入は減少となりましたが、年度全体での決算では赤字とならなかったことから、損失補填の対象外となったところであります。\n　以上であります。",
+    "text_length": 283,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-008",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "仲山委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆仲山委員　分かりました。\n　半減以上になってしまったということで、利用者が大幅に減少して大変な状況だったということは理解できました。\n　公共施設を指定管理として委託し、運営している事業は、温水プールだけではなく、ほかにもあります。休館が施設の減収につながっていると思われますが、収支不足による問題はないと捉えてよいのか、お伺いします。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-009",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "佐藤総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎佐藤総務部長　施設の減収が収支に影響する利用料金制を採用している指定管理施設につきましては、この温水プールのほかに、共同利用施設、これは東雲会館、それから、末広会館になります。それから、市営牧場及び育成畜舎、体育施設、道の駅サーモンパーク千歳、市民文化センター及び市民ギャラリー、千歳公民館の６施設であるところであります。\n　このうち、共同利用施設、体育施設、文化センター及び市民ギャラリー、公民館の４施設につきましては、令和３年度の収支が黒字でありました。\n　また、市営牧場及び育成畜舎と道の駅サーモンパーク千歳、この施設については赤字でありましたけれども、臨時休館を行っていないことから補填の対象外としておりまして、これは指定管理者との協議の上、決定しているものでございますので、問題はないものというふうに捉えております。\n　以上であります。",
+    "text_length": 374,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-010",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "仲山委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆仲山委員　分かりました。\n　ちなみになのですけども、新型コロナ対応、あと、物価高騰対応の地方創生臨時交付金というのが国から交付金として交付されていますけども、この公共施設に対して、こういう交付金を使った形というのはできるようになっているのかどうか、お伺いします。",
+    "text_length": 132,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-011",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "佐藤総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎佐藤総務部長　新型コロナウイルス感染症の拡大に伴う休館に対して生じた減収に対する補填事業に対しては、地方創生臨時交付金の使途に当たるということになっております。対象になっております。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "chitose-520-1-012",
+    "municipality": "chitose",
+    "council_id": 520,
+    "council_name": "令和 ４年 第３回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "09月27日－01号",
+    "date": "2022-09-27",
+    "speaker": "仲山委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆仲山委員　分かりました。\n　引き続き、よろしくお願いいたします。\n　以上で、終わります。",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/chitose/minutes/520.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  }
+]

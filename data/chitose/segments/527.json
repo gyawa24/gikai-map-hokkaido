@@ -1,0 +1,695 @@
+[
+  {
+    "id": "chitose-527-1-001",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "山崎議長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "text": "◆山崎議長　３月１日の本会議において設置されました補正予算特別委員会の委員長を選任していただくために、委員会条例第１０条第１項の規定に基づき、議長において本日の委員会を招集いたしました。\n　委員長の互選については、委員会条例第１０条第２項の規定に基づき、年長の委員が臨時にその職務を行うことになっております。この委員会の年長委員は、落野委員であります。\n　それでは、落野委員、よろしくお願いいたします。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-002",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "丸岡副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "text": "◆丸岡副委員長　日本維新の会・新党大地の丸岡伸幸でございます。\n　委員長の足手まといにならないように、活発な議論ができるように、皆様のお力添えをいたしますので、どうぞよろしくお願いいたします。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-003",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "小田事務局次長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎小田事務局次長　御報告いたします。\n　審査日程につきましては、本日１日間といたします。\n　審査要領につきましては、令和４年度各会計補正予算案及び関連議案を一括議題といたします。\n　なお、提案説明は、本会議での説明と重複するため省略いたします。\n　質疑は一問一答とし、質疑の順序及び答弁時間を含まない時間の配分は、無所属３０分以内とします。\n　次に、質疑終了後、議案に対する修正案及び附帯意見があれば、文書で委員長に提出していただきます。\n　討論があるときは、討論の後、採決に入っていただきます。\n　少数意見の留保があれば、ほかに１名以上の賛成者を得て、文書をもって委員長に提出していただきます。\n　報告は、以上であります。",
+    "text_length": 312,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-004",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　順次、質問させていただきます。\n　４項目ありますけど、１から３までは、補正予算書の３０ページ、３１ページでございます。\n　最初は、２款総務費、１項１目一般管理費、法令調査、訴訟等事務経費４９５万円でございます。\n　これは和解の費用と弁護士費用などを計上されたわけですが、通常、市の顧問弁護士さんは、年間８０万３,０００円で弁護士相談業務をなさっていると思うのですが、この和解業務は、これとは別の形でなさったのでしょうか。",
+    "text_length": 216,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-005",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "佐藤総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎佐藤総務部長　お答えをいたします。\n　訴訟行為につきましては、弁護士との顧問契約とは別の契約となっているところでございます。\n　以上であります。",
+    "text_length": 73,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        37
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-006",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　中学校の部活動に関わる事故なのですが、部活動というと、今、大問題になっています地域移行ということになるわけですね。今回のような形態とは変わるわけですね。\n　地域移行ということで、今度は外部の団体に委託するということになると思うのですが、今回のような事故とか訴訟とか和解などについてどのように変化するのか、説明をお願いします。",
+    "text_length": 168,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-007",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "磯部教育部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎磯部教育部長　お答えいたします。\n　御質疑が部活動の地域移行に関連してのものでございましたので、このことの説明を加えまして御答弁申し上げたいと思います。\n　現在、中学校における学校部活動におきましては、文部科学省から発出されております運動部活動での指導のガイドライン等に基づきまして適切な指導に取り組んでいるほか、顧問教員がそれぞれの種目に応じた研修会や講習会を受講するなどして、事故等の発生防止に努めているところでございます。\n　一方で、学校部活動は、スポーツ庁、文化庁の提言等に基づきまして、将来的に子供たちが継続してスポーツに親しむことができる機会を確保することや、教員の働き方改革などを目的として、部活動を地域に移行することが求められております。\n　部活動を地域に移行する場合の運営団体といたしましては、市や体育協会、スポーツ協会、総合型地域スポーツクラブ、民間事業者などが想定されておりますが、事故等の発生を防止するための事前の対策はとても重要でありますことから、運営団体において、研修会や講習会への参加、実践などの対策を講じるほか、万が一に備え、部活動の地域移行に関する運営団体が適切な保険に加入することも想定しているところであります。\n　御質疑の部活動の地域移行後に発生した事故等の市の責任についてでありますが、今回の補正予算に関する事故につきましては、学校の部活動中に発生しているため、国家賠償法の対象となるものであり、学校の設置者であります市を相手方として、訴訟の提起があったものであります。\n　先ほども申し上げましたが、部活動の地域移行後につきましては、体育協会やスポーツ協会、民間事業者等が運営を行うことも想定しており、運営団体の管理下において事故等が発生した場合、一義的に運営団体が責任を問われることになるものと考えておりますが、事故の発生に伴う責任問題につきましては、市と運営団体との事前の取決めや事故等が発生した状況などによっても変わってまいりますので、現状において一律に申し上げることはできませんが、今後、部活動の地域移行の在り方について検討していく中において、しっかりと整理してまいりたいと考えております。\n　以上でございます。",
+    "text_length": 931,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        39
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-008",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　では、２番目、同じところの８目企画費、ふるさと納税推進事業費９,７２９万２,０００円です。\n　これは、当初予算では２１億５,４０７万１,０００円ということでしたが、この当初予算に対応するような寄附金額、経費の出し方とかいろいろ細かいところもあると思うのですが、当初予算の寄附金額の予定、それから、今回の補正９,７２９万２,０００円に対応する寄附金額についてお示しください。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-009",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "品田企画部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎品田企画部長　お答えをいたします。\n　当初予算に計上している２１億５,４０７万１,０００円につきましては、年度中のふるさと納税受入れ相当額を約３８億円と見込んで計上した経費となっております。\n　令和４年度のふるさと納税につきましては、当初予算の想定金額を上回るペースで受入れが続いておりまして、昨年１２月に開催された令和４年第４回定例会における補正予算（第６回）において、当初の寄附金想定額約３８億円から約４６億２,８００万円に見直し、経費の不足分４億８,２３８万３,０００円を追加計上したところでありましたが、以降、さらに想定以上の寄附が寄せられているところであります。\n　３月末までに約４８億円の寄附を見込んでおりますことから、本定例会の補正予算において９,７２９万２,０００円を追加計上しているところであります。\n　以上です。",
+    "text_length": 367,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        41
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-010",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　寄附金が集まって大変望ましいことですが、日本国全体を見ますと、３割オーバー云々ということがあるので、そういうことについて、懸念がないということを確認したくて、以下質問します。\n　まず、返礼品は、寄附金額の３割までと言われますが、千歳の場合はどのくらいの比率ですか。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-011",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "品田企画部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎品田企画部長　お答えをいたします。\n　返戻品調達経費につきましては、国が定めた制度によりまして、寄附金額の３割以下とするように定められております。\n　本市におきましても、この取決めを遵守し、返礼品調達経費が寄附金額の３割以内となるよう、寄附金額を設定しております。\n　以上です。",
+    "text_length": 140,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-012",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　３割以下であって、あまり細かい数字は公表しないのですか。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-013",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "品田企画部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎品田企画部長　お答えいたします。\n　３割以下の細かい数字との御質疑でございますが、予算上におきましては、３割として当初予算を決定しておりますが、返礼品の品々によっては、３割以内で端数が出て、３割ちょうどの数字にならない場合がありまして、決算上は、最終的に３割以内に収まるように実施をしているというところでございます。\n　以上でございます。",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        45
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-014",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　素朴な質疑ですけど、一つ一つの返礼品で換算するのですか、トータルして３割以下にするのですか。",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-015",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "品田企画部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎品田企画部長　お答えをいたします。\n　３割以内につきましては、あくまで寄附をいただいた方それぞれに対しまして３割以内とするように運用してございます。\n　以上でございます。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        47
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-016",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　総務省は、令和元年度、返礼品の調達費や送料を寄附金額の５割以下と通知し、それに反しているところが出ているわけですね。令和３年度に１３６市町村を公表しました。\n　ここでいう調達費には、消耗品費、通信運搬費、手数料、業務委託料、これは事業者がなかなか盛んにやっているようですけれども、こういったものが含まれるのですか。\n　それから、千歳の場合、５割以下なのだと思いますが、どのような経費がどのくらいなのかをお示しください。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-017",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "品田企画部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎品田企画部長　お答えをいたします。\n　本年度の事業全体の事務経費といたしましては、寄附金額の約５７％を見込んでおりますが、総務省からの通知では、返礼品の調達費用や送料などのいわゆる募集対象経費を５割以下とする旨が定められております。\n　本市における募集対象経費の内訳といたしましては、返礼品の調達費用が３割や送料、決済手数料、広告料のほか、返礼品調整やサイト掲載等に係る事務経費などを、寄附金額の５割以下となるように運用しているところであります。\n　このうち、今回の補正予算を計上した費目の中では、その他手数料３８２万９,０００円及び業務委託料９,２７３万８,０００円のうち８,２０６万２,０００円が募集対象経費５割に含まれております。\n　その他の消耗品費２０万円や書類発送に係る通信運搬費５２万５,０００円、また業務委託料のうち、証明書の発行業務やコールセンター業務などの寄附募集以外に要する経費１,０６７万６,０００円につきましては、募集対象経費に含まれておりません。\n　本市におきましては、国により募集対象経費が明確化された令和元年度以降、国の取決めの範囲内で適正に事業を実施しております。\n　以上でございます。",
+    "text_length": 510,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        49
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-018",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　３番目の予算に移ります。\n　１３目空港費の中の新千歳空港応援商品券発行事業費です。\n　これは全体では、当初１億７,５９４万８,０００円でしたが、今回は減額補正４,０１８万６,０００円ということです。\n　これは、予算の執行がこれだけにとどまったから減額するということなのですが、この比率はどのぐらいになりますか。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-019",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "品田企画部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎品田企画部長　お答えをいたします。\n　本予算の執行率についてですが、年度途中であるため、現時点での見込みの執行率となりますが、新千歳空港応援商品券発行事業の予算全体では７７.２％となっております。\n　また、送付した引換券を商品券と交換をした方の割合については、７５.１％となっております。\n　以上でございます。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        51
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-020",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　２２％から２５％の減額ということですね。\n　それで、今度は第３次なのかな、物価高騰対策でまた商品券を出しますね。\n　いろいろな補助が新型コロナ対策で行われたのですが、割引ではなくて、無償で市民に交付される商品券はほかに幾つあって、それらの執行率はどうなっていますか。",
+    "text_length": 139,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-021",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "品田企画部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎品田企画部長　お答えをいたします。\n　新型コロナウイルスの感染拡大に伴う経済対策として実施した市民に対する無償の商品券配布事業につきましては、令和２年度に、ちとせ市民応援商品券発行事業を１回、令和４年度に、ちとせ市民応援商品券２０２２発行事業を当初分と２次分の２回、合計３回実施しております。\n　次に、この執行率でございますが、令和２年度に実施したちとせ市民応援商品券につきましては、送付した引換券を商品券と交換した方の割合は９６.６％となっております。\n　また、令和４年度に実施中のちとせ市民応援商品券２０２２につきましては、当初、２次のいずれの事業も、商品券の利用期間を令和５年３月３１日までとしており、３月１日現在の交換率では、当初分が９４％、２次分が９７.３％となっております。\n　以上です。",
+    "text_length": 351,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        53
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-022",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　９４％とか９７％と比べると、今回のは低いですよね。今回は７５％とか７７％ということですよね。\n　その分析というと大げさですが、この場合、申請するということ、空港に行かなければならないということ。\n　余談になりますけれども、私の知り合いの障がい者が、私らは空港に行くなどできないので、何とか代替措置を取ってほしいと僕に話したのですけど、これは空港の活性化で、空港の商店を盛り上げるためだから、それは我慢して、家族などが使うようにしたらというようなことを言ったわけですが、案の定低いと。\n　このことについては、しょうがないと分析されるのか、もう少しやり方があったのかなと考えるのか、どうお考えでしょうか。",
+    "text_length": 306,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        54
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-023",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "品田企画部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎品田企画部長　お答えいたします。\n　今回の空港応援商品券と市民応援商品券の執行率の違いについての御質疑でございますが、まず、市民応援商品券発行事業につきましては、市民生活への支援として、市民が利用しやすいよう、引換え場所を市内郵便局など複数箇所に設置するなどしたほか、参加店舗はおよそ９００店舗でありまして、日用品や食料品などの小売業をはじめ、飲食業、建設業、サービス業など幅広い業種の店舗で利用可能であったのに対しまして、今回の空港応援商品券は、空港の支援というものを目的にいたしまして、引換え場所は新千歳空港国内線ターミナルビルで、かつ、利用先につきましては、空港内の商業施設１６９店舗であったことから、利用場所や対象店舗などによりまして執行率に差が生じたもの、このように考えております。\n　また、先ほどの御本人が引換えに行けない場合につきましても、今回の空港応援商品券につきましては、御家族の方が受け取ることができるなどの配慮をさせていただいたところでございます。\n　今回の事業につきまして、空港の活況化に向けた取組として、空港での利用に限定した商品券でありましたが、最終的には、積極的な広報周知等によりまして、多くの市民に御利用いただけたもの、このように感じております。\n　以上でございます。",
+    "text_length": 551,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        55
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-024",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　その広告ですが、広告費１５万円を計上していたのが、皆減ですよね。全然使わなかったのですね。これはやむを得なかったのですか。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-025",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "品田企画部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎品田企画部長　お答えをいたします。\n　今回の広告費につきましては、当初、空港応援商品券単独で広告を掲載することを考えておりましたけれども、今回の空港応援キャンペーンといたしまして、その他の事業、例えば、ようこそ・ちとせ事業などその他の空港事業等もありましたことから、そういった事業と合わせて広告を出すとか、あるいは、無料で掲載できるちゃんとに広告する、また、市のホームページを活用したことやＳＮＳなど様々な情報媒体を使いながら周知を図ったところでありまして、結果として、この費用を活用するという場面がなかったということでございます。\n　以上でございます。",
+    "text_length": 278,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        57
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-026",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　ようこそ・ちとせ、とびたて・ちとせで、３点セットみたいに順調にいったということですね。分かりました。\n　では、最後の４項目めですけども、４０ページ、４１ページ、８款土木費、２項３目道路橋梁整備事業費の中の橋梁長寿命化対策事業費１億６,７３１万３,０００円です。\n　これは当初予算より補正のほうが大きくなったのですけども、どのような経緯、背景があるのでしょうか。",
+    "text_length": 186,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-027",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "吉田建設部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎吉田建設部長　お答えいたします。\n　橋梁長寿命化対策事業は、平成２４年度に策定した千歳市橋梁長寿命化修繕計画により、それまでの事後対処的修繕や更新を計画的かつ予防的な修繕へと転換することにより、維持管理コストの縮減と平準化を図り、橋梁の長寿命化を目指すものであります。\n　本事業は、国土交通省の社会資本整備総合交付金を主な財源としていたため、橋梁長寿命化修繕計画で定めた修繕目標の達成を見込み、例年国に予算要望を続けておりましたが、要望に見合う交付金の配分を受けられない状況となっておりました。\n　このような状況の中、昨年１２月に成立した国の第２次補正予算は、国土交通省関連として、防災・減災、国土強靱化の推進などを掲げていたことから、本市も予算要望していたところ、事業推進に必要な多くの予算の配分を受けられることとなったため、増額補正しようとするものであります。\n　以上でございます。",
+    "text_length": 394,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        59
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-028",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　国の方針には逆らえないですから、今回予算がついたことは大変よかったと思います。\n　専門的にはいろいろなことがあると思うのですが、今回、長寿命化ということですが、概略的に言えば、どのぐらいの寿命というか、耐久年数といったものがあるのか、お答え願えますか。",
+    "text_length": 132,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-029",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "吉田建設部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎吉田建設部長　お答えいたします。\n　橋の寿命については、財務省令で定められた減価償却資産の耐用年数では、鉄筋コンクリート造りの橋で６０年、金属造りの橋は４５年となっており、一般的には５０年程度と言われています。\n　その一方で、橋の設計基準書である道路橋示方書が平成２９年に改定され、適切な維持管理と橋の耐久性向上により、橋の設定供用期間が１００年に定められたところであります。\n　本市においては、橋梁長寿命化修繕計画により、定期的な点検、診断に基づき予防的修繕を継続的に実施することにより、維持管理コストの縮減と平準化を図りつつ、橋の供用期間を１００年に近づけていきたいと考えております。\n　以上でございます。",
+    "text_length": 306,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-030",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　橋が落ちると大変ですから、万全を期さなければならないと思うのですが、まず、確認ですが、今回の予算の中で実施設計というのが出ていますけども、これはそのまま順調に来年は実施できるのですか。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-031",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "吉田建設部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎吉田建設部長　お答えいたします。\n　今回、実施設計を予定している橋梁は、清水橋、真緑橋、泉川橋、上長都第４橋の４橋であります。\n　このうち、道東自動車道に架かる上長都第４橋は、東日本高速道路株式会社との工事施工に係る協議の結果、道路利用者の安全確保のために交通規制を要することから、令和６年度の修繕に変更しますが、残り３橋については、令和５年度の修繕を実施する予定でございます。\n　以上でございます。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-032",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "落野委員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "text": "◆落野委員　最後の質疑になりますが、俯瞰すると市内の橋全体は幾つあるのか、そのうち、修繕や長寿命化を必要とする数はどのぐらいあるのか、大体のアウトラインをお示し願います。",
+    "text_length": 85,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "chitose-527-1-033",
+    "municipality": "chitose",
+    "council_id": 527,
+    "council_name": "令和 ５年 第１回定例会補正予算特別委員会",
+    "schedule_id": 1,
+    "schedule_name": "03月07日－01号",
+    "date": "2023-03-07",
+    "speaker": "吉田建設部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "text": "◎吉田建設部長　お答えいたします。\n　千歳市で管理している橋梁は、現在１５７橋ありますが、この１５７橋を道路橋点検士の管理の下、５年に１度の法定点検により、橋の各部材の損傷度、橋の健全性を診断し、緊急輸送道路や人口集中地区、ほかに、橋の規模など橋の重要度区分も考慮した上で修繕する橋梁の優先順位を定め、橋梁が致命的に劣化する前に予防的修繕を行うサイクルで長寿命化を図っております。\n　橋梁長寿命化修繕計画では、令和５年度までに修繕予定の橋梁は２５橋、今年度見直した令和１５年度までの次期計画では３８橋を修繕予定でありますが、今後も、５年ごとに全ての橋梁で法定点検を行い、その診断結果を踏まえ計画を、順次、見直しますので、橋梁によって修繕時期の前後は考えられますが、将来的には１５７橋全て長寿命化対策を実施してまいります。\n　以上でございます。",
+    "text_length": 371,
+    "source": {
+      "minutes_file": "data/chitose/minutes/527.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        65
+      ]
+    }
+  }
+]
