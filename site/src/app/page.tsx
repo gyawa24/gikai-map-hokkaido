@@ -4,8 +4,17 @@ import Link from "next/link";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getNews, categoryClass } from "@/lib/news";
 import { getSiteStats } from "@/lib/siteStats";
+import { getAllTags } from "@/lib/topics";
+import { buildPageMetadata } from "@/lib/metadata";
 import type { Member } from "@/types/member";
 import type { Decision } from "@/types/decision";
+
+export const metadata = buildPageMetadata({
+  title: "北海道の市町村議会・議事録検索",
+  description:
+    "北海道の市町村議会と北海道議会の議員名簿、議事録、議決結果を横断して調べられます。自治体別一覧とテーマ別入口から探せます。",
+  path: "/",
+});
 
 function getMemberCount(cityId: string): number {
   try {
@@ -72,6 +81,7 @@ export default function HomePage() {
   const municipalities = allMunis.filter((m) => m.level === "municipality");
   const latestNews = getNews().slice(0, 3);
   const stats = getSiteStats();
+  const topTags = getAllTags().slice(0, 12);
   const regionOrder = ["石狩", "空知", "後志", "胆振", "日高", "渡島", "檜山", "上川", "留萌", "宗谷", "オホーツク", "十勝", "釧路", "根室"];
 
   const cities: CitySummary[] = municipalities.map((m) => ({
@@ -170,6 +180,35 @@ export default function HomePage() {
                   </span>
                 </div>
                 <p className="mt-2 text-sm font-black text-[#111827]">{item.title}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {topTags.length > 0 && (
+        <section className="mx-auto max-w-[68rem] border-t border-[#D8DEE8] pt-6">
+          <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <h2 className="text-[1.7rem] font-black leading-tight text-[#111827] sm:text-[2rem]">よく探されるテーマ</h2>
+              <p className="mt-1 text-sm text-[#64748B]">
+                子育て、除雪、防災など、暮らしに近い論点から議事録を横断して探せます。
+              </p>
+            </div>
+            <Link href="/topics" className="text-sm font-black text-[#1B3A6B]">
+              すべてのテーマを見る ›
+            </Link>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            {topTags.map(({ tag, count }) => (
+              <Link
+                key={tag}
+                href={`/topics/${encodeURIComponent(tag)}`}
+                className="inline-flex items-center gap-1.5 rounded-full border border-[#D8DEE8] bg-white px-3 py-2 text-sm font-bold text-[#1B3A6B] transition-colors hover:border-[#1B3A6B] hover:bg-[#E8EEF7]"
+              >
+                <span>{tag}</span>
+                <span className="text-xs text-[#64748B]">{count}件</span>
               </Link>
             ))}
           </div>

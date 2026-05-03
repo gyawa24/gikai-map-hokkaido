@@ -4,8 +4,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
+import JsonLd from "@/components/JsonLd";
 import { getMunicipality } from "@/lib/municipalities";
 import MemberShareButtons from "@/components/MemberShareButtons";
+import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
+import { buildBreadcrumbList } from "@/lib/structuredData";
 
 // 会議名から西暦を推定（令和◯年 → 2018+N）。グルーピング用。
 function yearFromSessionName(name: string): string {
@@ -73,17 +76,17 @@ export async function generateMetadata({
 
   const partyLabel = member.party ?? member.faction ?? "";
   const title = partyLabel
-    ? `${member.name}（${partyLabel}）- ${cityName}議会 | 地方議会ドットコム`
-    : `${member.name} - ${cityName}議会 | 地方議会ドットコム`;
-  const description = `${member.name}議員の活動テーマ・発言記録など`;
+    ? `${member.name}（${partyLabel}）- ${cityName}議会`
+    : `${member.name} - ${cityName}議会`;
+  const description = `${cityName}議会 ${member.name}議員の会派、委員会、得票数、活動テーマ、発言記録を掲載しています。`;
   const ogImage = `/api/og-member?city=${city}&seat=${member.seat_number}`;
 
-  return {
+  return buildPageMetadata({
     title,
     description,
-    openGraph: { title, description, images: [{ url: ogImage, width: 1200, height: 630 }] },
-    twitter: { card: "summary_large_image" },
-  };
+    path: `/${city}/members/${member.seat_number}`,
+    image: ogImage,
+  });
 }
 
 export async function generateStaticParams() {
@@ -117,9 +120,40 @@ export default async function CityMemberDetailPage({
   const memberActivity = activity[member.name.replace(/\s/g, "")];
 
   const memberSearchQ = encodeURIComponent(member.name);
+  const councilName = municipality?.council_name ?? `${cityName}議会`;
+  const breadcrumb = buildBreadcrumbList([
+    { name: "地方議会ドットコム", path: "/" },
+    { name: councilName, path: `/${city}` },
+    { name: member.name, path: `/${city}/members/${id}` },
+  ]);
+  const profilePage = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    name: `${member.name} - ${councilName}`,
+    description: `${councilName} ${member.name}議員のプロフィールと発言記録ページです。`,
+    url: absoluteUrl(`/${city}/members/${id}`),
+    mainEntity: {
+      "@type": "Person",
+      name: member.name,
+      alternateName: member.furigana || undefined,
+      image: member.photo_url || undefined,
+      jobTitle: `${councilName}議員`,
+      memberOf: {
+        "@type": "GovernmentOrganization",
+        name: councilName,
+      },
+      affiliation: member.faction
+        ? {
+            "@type": "Organization",
+            name: member.faction,
+          }
+        : undefined,
+    },
+  };
 
   return (
     <div className="page-shell max-w-6xl">
+      <JsonLd data={[breadcrumb, profilePage]} />
       {/* パンくず */}
       <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
         <Link href={`/${city}`} className="hover:text-[#1B3A6B] transition-colors">

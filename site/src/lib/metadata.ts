@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const SITE_URL = "https://chihougikai.com";
-export const SITE_NAME = "地方議会ドットコム（β）";
+export const SITE_NAME = "地方議会ドットコム";
 export const DEFAULT_DESCRIPTION =
-  "北海道内の市町村議会の議員情報・議事録・議決結果を横断的に公開する市民向け情報サイトです。（ベータ公開中）";
+  "北海道の市町村議会・北海道議会の議員名簿、議事録、議決結果を横断検索できる市民向け情報サイトです。";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/api/og-site`;
 
 function fullTitle(title: string): string {
@@ -62,4 +62,3 @@ export function buildPageMetadata({
     },
   };
 }
-

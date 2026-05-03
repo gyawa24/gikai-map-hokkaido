@@ -2,6 +2,9 @@ import Link from "next/link";
 import { getByTag, getAllTags } from "@/lib/topics";
 import AIDisclaimer from "@/components/AIDisclaimer";
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { buildPageMetadata } from "@/lib/metadata";
+import { buildBreadcrumbList } from "@/lib/structuredData";
 
 type Props = {
   params: Promise<{ tag: string }>;
@@ -10,10 +13,11 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params;
   const decoded = tag;
-  return {
+  return buildPageMetadata({
     title: `${decoded} - テーマ別議事録`,
-    description: `北海道内の市町村議会で「${decoded}」が議論された議事録の一覧です。`,
-  };
+    description: `北海道内の市町村議会で「${decoded}」が議論された議事録の一覧です。自治体を横断して確認できます。`,
+    path: `/topics/${encodeURIComponent(decoded)}`,
+  });
 }
 
 // Build時は出現頻度上位 N タグのみ static generate。
@@ -32,9 +36,15 @@ export default async function TopicTagPage({ params }: Props) {
   const { tag } = await params;
   const decoded = tag;
   const records = getByTag(decoded);
+  const breadcrumb = buildBreadcrumbList([
+    { name: "地方議会ドットコム", path: "/" },
+    { name: "テーマ別議事録", path: "/topics" },
+    { name: decoded, path: `/topics/${encodeURIComponent(decoded)}` },
+  ]);
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
+      <JsonLd data={breadcrumb} />
       {/* パンくずナビ */}
       <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
         <Link href="/topics" className="hover:text-[#1B3A6B] transition-colors">

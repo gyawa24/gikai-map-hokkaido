@@ -4,11 +4,13 @@ import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import MemberList from "@/components/MemberList";
 import CitySummaryCards from "@/components/CitySummaryCards";
+import JsonLd from "@/components/JsonLd";
 import MinutesWordCloud from "@/components/MinutesWordCloud";
 import { getMinutesSummary } from "@/lib/cityStats";
 import { getMinutesWordCloud } from "@/lib/minutesWordCloud";
 import { getMunicipality } from "@/lib/municipalities";
-import { buildPageMetadata } from "@/lib/metadata";
+import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
+import { buildBreadcrumbList } from "@/lib/structuredData";
 
 export async function generateMetadata({
   params,
@@ -18,9 +20,13 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const name = municipality?.council_name ?? "市町村議会";
+  const cityName = municipality?.name ?? city;
+  const featureLabels = municipality?.features.includes("minutes")
+    ? "議員一覧、議事録"
+    : "議員一覧";
   return buildPageMetadata({
     title: name,
-    description: `${name}の議員一覧・議事録を掲載しています。`,
+    description: `${cityName}議会の${featureLabels}を掲載しています。会派や委員会、話題のテーマも確認できます。`,
     path: `/${city}`,
   });
 }
@@ -58,10 +64,33 @@ export default async function CityMembersPage({
   const minutesUnavailableNote = municipality?.minutes_status_note;
   const minutesVerifiedAt = municipality?.minutes_verified_at;
   const wordCloud = getMinutesWordCloud(city);
+  const councilName = municipality?.council_name ?? `${municipality?.name ?? city}議会`;
+  const cityName = municipality?.name ?? city;
+  const breadcrumb = buildBreadcrumbList([
+    { name: "地方議会ドットコム", path: "/" },
+    { name: councilName, path: `/${city}` },
+  ]);
+  const collectionPage = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${councilName}の議員一覧・議事録`,
+    description: `${cityName}議会の議員一覧や議事録の入口ページです。`,
+    url: absoluteUrl(`/${city}`),
+    isPartOf: {
+      "@type": "WebSite",
+      name: "地方議会ドットコム",
+      url: absoluteUrl("/"),
+    },
+    about: {
+      "@type": "GovernmentOrganization",
+      name: councilName,
+    },
+  };
 
   if (members.length === 0) {
     return (
       <>
+        <JsonLd data={[breadcrumb, collectionPage]} />
         <CitySummaryCards
           memberCount={null}
           minutesCount={minutesCount}
@@ -83,6 +112,7 @@ export default async function CityMembersPage({
 
   return (
     <>
+      <JsonLd data={[breadcrumb, collectionPage]} />
       <CitySummaryCards
         memberCount={members.length}
         minutesCount={minutesCount}

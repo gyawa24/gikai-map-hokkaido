@@ -1,10 +1,12 @@
 import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
 import type { MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesIndexClient from "@/components/MinutesIndexClient";
 import { getMunicipality } from "@/lib/municipalities";
-import { buildPageMetadata } from "@/lib/metadata";
+import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
+import { buildBreadcrumbList } from "@/lib/structuredData";
 
 export async function generateMetadata({
   params,
@@ -15,7 +17,7 @@ export async function generateMetadata({
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
   const title = `議事録 - ${cityName}`;
-  const description = `${cityName}議会の公式議事録一覧です。`;
+  const description = `${cityName}議会の公式議事録一覧です。本会議や委員会の会議録を年度別・テーマ別に探せます。`;
   return buildPageMetadata({
     title,
     description,
@@ -93,9 +95,31 @@ export default async function CityMinutesPage({
   const enrichedCount = items.filter((i) => i.enriched).length;
   const restricted = municipality?.minutes_access === "restricted";
   const restrictedNote = municipality?.minutes_access_note;
+  const breadcrumb = buildBreadcrumbList([
+    { name: "地方議会ドットコム", path: "/" },
+    { name: `${cityName}議会`, path: `/${city}` },
+    { name: "議事録", path: `/${city}/minutes` },
+  ]);
+  const collectionPage = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${cityName}議会の議事録一覧`,
+    description: `${cityName}議会の本会議・委員会の議事録一覧ページです。`,
+    url: absoluteUrl(`/${city}/minutes`),
+    isPartOf: {
+      "@type": "WebSite",
+      name: "地方議会ドットコム",
+      url: absoluteUrl("/"),
+    },
+    about: {
+      "@type": "GovernmentOrganization",
+      name: `${cityName}議会`,
+    },
+  };
 
   return (
     <div className="page-shell max-w-6xl">
+      <JsonLd data={[breadcrumb, collectionPage]} />
       <section className="mb-5">
         <h2 className="theme-section-title mb-1 text-2xl">公式議事録</h2>
         <p className="text-base text-[#4A5568] leading-relaxed">

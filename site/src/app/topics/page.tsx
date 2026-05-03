@@ -3,8 +3,8 @@ import { getAllTags } from "@/lib/topics";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata = buildPageMetadata({
-  title: "テーマ別議事録",
-  description: "北海道内の市町村議会議事録をテーマ・タグ別に横断検索できます。",
+  title: "テーマ別議事録検索",
+  description: "子育て、除雪、防災など、北海道内の市町村議会議事録をテーマ・タグ別に横断検索できます。",
   path: "/topics",
 });
 
@@ -14,7 +14,7 @@ export default function TopicsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       <section className="mb-6">
-        <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">テーマ別議事録</h2>
+        <h1 className="text-xl font-bold text-[#1B3A6B] mb-1">テーマ別議事録</h1>
         <p className="text-base text-[#4A5568] leading-relaxed">
           北海道内の市町村議会の議事録をテーマ別に横断検索できます。
           タグをクリックすると関連する議事録の一覧を表示します。

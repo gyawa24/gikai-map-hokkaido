@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Noto_Sans_JP } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import CityHeaderServer from "@/components/CityHeaderServer";
+import JsonLd from "@/components/JsonLd";
 import { ToastProvider } from "@/components/Toast";
 import { getSearchIndexGeneratedAt, formatJaDate } from "@/lib/dataFreshness";
 import {
@@ -11,6 +12,7 @@ import {
   SITE_NAME,
   SITE_URL,
 } from "@/lib/metadata";
+import { buildSiteStructuredData } from "@/lib/structuredData";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -78,10 +80,12 @@ export default function RootLayout({
 }) {
   const updatedAt = getSearchIndexGeneratedAt();
   const updatedLabel = formatJaDate(updatedAt);
+  const structuredData = buildSiteStructuredData();
 
   return (
     <html lang="ja" className={notoSansJP.variable}>
       <body className="min-h-screen overflow-x-hidden antialiased">
+        <JsonLd data={structuredData} />
         <ToastProvider>
           <div className="flex min-h-screen flex-col">
             <CityHeaderServer />
