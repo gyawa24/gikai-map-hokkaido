@@ -309,8 +309,7 @@
     ],
     "level": "municipality",
     "active": true,
-    "tenant_id": 69,
-    "system": "dnp"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "esashi",
@@ -351,12 +350,13 @@
     "region": "上川",
     "furigana": "かみかわちょう",
     "features": [
-      "members",
-      "minutes",
-      "themes"
+      "members"
     ],
     "level": "municipality",
     "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトで確認できるのは議会日程・議会広報・YouTube配信で、会議録本文のWeb公開は確認できていません。",
+    "minutes_verified_at": "2026-05-03",
     "tenant_id": 73,
     "system": "dnp"
   },
@@ -383,11 +383,13 @@
     "region": "十勝",
     "furigana": "いけだちょう",
     "features": [
-      "members",
-      "minutes"
+      "members"
     ],
     "level": "municipality",
     "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトでは議案等一覧・議会中継は公開されていますが、会議録は議会事務局または図書館で閲覧と案内されています。",
+    "minutes_verified_at": "2026-05-03",
     "tenant_id": 353,
     "system": "dnp"
   },
@@ -398,12 +400,13 @@
     "region": "上川",
     "furigana": "なかがわちょう",
     "features": [
-      "members",
-      "minutes",
-      "themes"
+      "members"
     ],
     "level": "municipality",
     "active": true,
+    "minutes_status": "unavailable",
+    "minutes_status_note": "公式サイトで確認できるのは議会だより等で、会議録本文のWeb公開は確認できていません。",
+    "minutes_verified_at": "2026-05-03",
     "tenant_id": 527,
     "system": "dnp"
   },

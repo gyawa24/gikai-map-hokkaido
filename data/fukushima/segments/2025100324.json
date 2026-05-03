@@ -1,0 +1,739 @@
+[
+  {
+    "id": "fukushima-2025100324-1-001",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "出出席席議議員員（（９９名名））",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議 長 １０番 溝 部 幸 基 副議長 ９番 平 野 隆 雄",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-002",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "欠欠席席議議員員（（００名名））",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "◎出出席席説説明明員員\n町 長 鳴 海 清 春 副 町 長 小 鹿 一 彦\n総 務 課 長 小 鹿 浩 二 企 画 課長 村 田 洋 臣\n町民課長兼吉岡支所長兼認定こども園福島保育所園長 深 山 肇 建 設 課 長 紙 谷 一\n教 育 長 小野寺 則之 事務局長兼給食センター長 石 川 秀 二\n監 査 委員 本 庄 屋 誠 監 査 委員 高 田 重 美\n◎職職務務ののたためめ議議場場にに出出席席ししたた議議会会事事務務局局職職員員\n議会事務局長 鍋 谷 浩 行 議会事務局議事係長 山 下 貴 義\n議会事務局議事係 角 谷 里 紗\n－ 1 －\n\n－ 2 －\n\n（開会 ９時５９分）\n◎開開 会会 ・・ 開開 議議 宣宣 告告",
+    "text_length": 314,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-003",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "町町長長（（鳴鳴海海清清春春））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "改めまして、おはようございます。\n定例会３月第２回会議の開催にあたり一言ご挨拶を申し上げます。\n議員の皆様には年度末の大変お忙しい中、定例会３月第２回会議にご出席をいただき、誠にありがと\nうございます。\n早いもので３月も残り１週間となり、周りの山々や残雪が残っておりますが、ようやく町並みから雪\nも消え、木々が芽吹き始めて来ており、日に日に春の訪れを感じているところでございます。\nさて、昨年、千軒に工場を持つ株式会社北雄産業から多額の企業版ふるさと納税をいただき、青少年\n交流センター新潮学舎の増築棟などに活用させていただいているところでありますが、今年度も当社から\n１千万円の寄付のお話しがあり、この３１日に寄付をいただくこととなってございます。\n今議会へ関連予算を計上してございますので、ご理解をいただきたいと思います。\nそれでは本日の案件についてですが、令和６年度一般会計の補正予算が１件となってございます。\nなお、令和６年度の一般会計の補正の主な内容についてですが、歳出において、防災用資機材等整備\n事業として災害時における大型トイレカー等の購入などの増額補正となってございます。\n歳入においては、防災用資機材等整備事業に係る国庫支出金として新しい地域経済生活環境創生交付\n金及び防災用資機材等整備事業債並びに除雪費に係る社会資本整備総合交付金の増額補正となってござい\nます。それに伴い、財政調整基金からの繰入を減額してございます。\nなお、議案につきましては、担当課長から説明をいたしますので、ご審議のうえ議決賜りますようよ\nろしくお願いをいたします。\n以上、簡単ではありますが開催にあたっての挨拶とさせていただきます。\n本日は、どうぞよろしくお願いいたします。",
+    "text_length": 736,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-004",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "のあいさつを終わります。\n◎会会 議議 録録 署署 名名 議議 員員 のの 指指 名名",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-005",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "５５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（平平沼沼昌昌平平））\n令和６年度定例会３月第２回会議の開会に際し、本日開催いたしました議会運営委員会の協議結果に\nついて、報告いたします。\n議事日程につきましては、お手元に配付のとおりでございます。\n審議日数については、本日１日を予定いたしましたので、議事運営にご協力いただきますようお願いを\n申し上げまして、報告を終わります。",
+    "text_length": 167,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-006",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議案の５ページをお開き願います。\n議案第８０号 令和６年度福島町一般会計補正予算（第１０号）。\n令和６年度福島町の一般会計補正予算（第１０号）は次に定めるところによる。\n第１条、歳入歳出予算の総額に歳入歳出それぞれ８，６２４万円を追加し、歳入歳出予算の総額を歳\n入歳出それぞれ４６億９，５７２万４千円とする。\n第２条、地方自治法第２１３条第１項の規定により翌年度に繰り越して使用することができる経費は、\n「第２表 繰越明許費」による。\n第３条、地方債の追加及び変更は、「第３表 地方債補正」による。\n令和７年３月２４日提出、福島町長。\nはじめに、「第２表 繰越明許費」について説明をしますので、８ページをお願いいたします。\n第２表 繰越明許費（３事業）でございます。\nはじめに、３款民生費、１項社会福祉費、事業名が低所得者世帯支援給付事業、金額が４８８万円で、\n給付金の申請期限が７月３１日となるためでございます。\n次の、９款消防費、１項消防費、防災用資機材等整備事業７，６００万円は、国の補正予算による事\n業実施で、今議会に補正予算を計上している事業でございます。\n次の、渡島西部広域事務組合負担金は、消防部門の事業で、金額が１，２３２万１千円、指揮広報車\nの納入期限が延長となったことによるものでございます。\nいずれの事業においても、年度内に事業が完了しないことから繰越明許費として令和７年度に繰り越\nすものでございます。\n次に、地方債補正について説明いたしますので、９ページをお願いいたします。\n第３表 地方債補正（追加）でございます。\n起債の目的は、防災用資機材等整備事業債で、限度額３，２９０万円、起債の方法、利率については\n記載のとおりとなってございます。\n１０ページをお願いいたします。\n地方債の変更でございますが、今回の変更は対象事業の追加などが主なものとなってございます。\n内容につきましては、説明資料で説明いたしますので、資料の５ページをお願いいたします。\n上段の、防災用資機材等整備事業債は３，２９０万円で、一般補助施設整備等事業債で、事業実施に\nよる追加。\n－ 4 －\n\n次の段の、消防広報作業車整備事業債５０万円の増は、過疎対策事業債で、実績見込みによるものと\nなってございます。充当率、交付税算入率、算入方法については記載のとおりとなってございます。\n次に、補正予算の歳出から説明いたしますので、８ページをお願いいたします。\n上段の、２款総務費、７項５目ふるさと応援基金費、事務事業予算名も同様で、１千万円の追加は積\n立金で、企業版ふるさと納税の実績見込みによるものでございます。\n２段目の、８款土木費、２項２目道路維持費、事務事業予算名も同様で、除雪費に係る社会資本整備\n総合交付金の交付決定に伴う財源繰替でございます。\n下段の、９款消防費、１項１目災害対策費、事務事業予算名、防災用資機材等整備事業費７，６００\n万円の追加につきましては、事業概要について歳入の説明のあとにご説明いたします。\n９ページをお願いいたします。\n上段の、２目広域事務組合費、事務事業予算名も同様で、先ほど地方債の変更で説明しておりますの\nで、省略いたします。\n２段目の、１０款教育費、１項３目教育振興費、事務事業予算名、奨学資金貸付費２４万円の追加は、\n小笠原実奨学金の貸付の増によるものでございます。\n下段の、１２款諸支出金、２項１目繰出金、事務事業予算名も同様で、国庫補助金等の確定による財\n源繰替でございます。\n以上で、歳出の説明を終わります。\n次に、歳入を説明いたしますので６ページをお願いいたします。\n１３款国庫支出金、１項１目民生費国庫負担金４７５万２千円の減額は、実績見込みによるものでご\nざいます。\n２項４目土木費国庫補助金１，７７２万円の追加は、令和６年度の除排雪事業費に対する交付決定に\nよる追加でございます。\n６目消防費国庫補助金３，８００万円の追加は、防災用資機材等整備事業に対する交付決定による追\n加でございます。\n１４款道支出金、１項１目民生費負担金は、介護保険低所得者保険料軽減負担金の９０万７千円は、\n実績見込みによる増額でございます。\n１６款寄付金、１項２目総務寄付金１千万円の追加は、企業版ふるさと納税による増額でございます。\n７ページをお願いいたします。\n１７款繰入金、２項１目財政調整基金繰入金９２７万５千円の減額は、今回の補正予算に係る財源調\n整によるものであり、これにより今年度の財政調整基金からの繰入額は１億２，１１８万７千円となりま\nす。\n２目福島町小笠原実奨学金基金繰入金で２４万円の追加は、実績見込みによるものでございます。\n町債につきましては、先ほど第３表の地方債で説明していますので、省略させていただきます。\n以上で、歳入の説明を終わります。\nそれでは、防災用資機材等整備事業につきまして、事業概要を説明しますので１０ページをお願いいた\nします。\n事業概要ですが、国では、避難所の生活環境改善をはじめ、防災・減災に必要な資機材整備を支援する\n交付金を新たに創設しました。\n町として、新たな交付金を活用し、避難所などでのトイレ不足や衛生面の課題の解消及び避難者の安\n心・安全な生活環境の充実を図るため、トイレカー等の資機材を整備することといたしました。\n総事業費は７，６００万円で、財源として国の交付金が２分の１の３，８００万円、交付税措置がある\n地方債が３，２９０万円、一般財源５１０万円となっており、一般財源の一部は特別交付税措置がござい\nます。\n整備する資機材ですが、大型トイレカー１台、車庫及び備蓄倉庫１棟、資機材運搬車１台、テント式パ\nーテーション２００台、エアーベッド４００台、衛星携帯電話１台となっております。\n１１ページをお願いいたします。\n資機材の詳細ですが、１の大型トイレカーですが、自走式で、仕様についてはこれから詰めますが、基\n本的には洋式便器５基を設置する予定でございます。トイレを使用できる回数としては概ね３００回から\n－ 5 －\n\n４００回を想定してございます。\n２の備蓄倉庫は、図面等もありますので最後に説明いたします。\n３の防災資機材運搬車は、軽トラックに発電機等も運べるよう昇降装置を付けたタイプのものを１台と\nしております。\n４のテント式パーテーションは、プライバシー等確保するようなものとしており、２００セットを予定\nしてございます。\n５のエアーベッドですが、４のパーテーションに２つの設置を想定しており４００台としています。\n６の衛星電話ですが、携帯電話網が寸断された場合に対応するため１台を購入いたします。\n四角枠の資機材の平時の利活用ですが、トイレカー及び防災資機材については、防災訓練や各種イベン\nト会場にて利用し、地域住民へ周知しながら防災知識向上を図るものでございます。\nそれでは、倉庫の詳細について説明しますので、１２ページをお願いいたします。\n整備する車庫兼倉庫ですが、プレハブタイプの１棟で、面積は８１平方メートルとなっております。\n主要シャッターを３つ付けるタイプとして、トイレカーや資機材運搬車、付属品備蓄品の保管を予定\nしてございます。\nあと、１３ページにあるとおり現在の備蓄倉庫の隣に建設しまして、既存の備蓄倉庫も含めた備蓄品\nの搬出をスムーズにできるように配置する予定でございます。\n説明は以上でございます。\nご審議のほどよろしくお願いいたします。",
+    "text_length": 3094,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-007",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "７７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（熊熊野野茂茂夫夫））\n防災の装備について、若干お伺いいたします。\nこれは、ここに乗っかっていることは、いわゆる集中的な状態で、いわゆる今の防災倉庫の隣に、そこ\nで装備してっていうことなんですけども、計画の中でそれぞれの避難先の具体的なことっていうのは、ま\nだ進んでいないということですか。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-008",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "具体的なそれぞれの避難所は想定しておりませんで、今想定しているのは、例えば災害が発生して総合\n体育館とかに１回に来た場合の想定をして台数とかを計算しておりますけども、それぞれの地区について\nはこれから、今回整備したものも含めて分散するのか一括集中で備蓄するのか、それはちょっと今まだ検\n討中の段階でございます。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-009",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "９９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（平平野野隆隆雄雄））\n自走式の大型トイレカーのところで、洋式の水洗便器５基、これはもちろん水洗だから水を使うと思う\nんですが、これは冬期間でも水入っていますか。",
+    "text_length": 83,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-010",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "常時保管している場合には水は入れておりません。災害発生した場合に一応給水の部分入れまして、あ\nと平時のイベントの時とかについてはそれも合わせてその都度入れるという予定でしております。",
+    "text_length": 91,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-011",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "９９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（平平野野隆隆雄雄））\n－ 6 －\n\n今の話しを聞くと、現場で水を入れるということですけども、現場に水がなかったらどうしますか。",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-012",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現場で水を入れるということではなくて、例えばここに備蓄倉庫に入れております。出発する時は庁舎\nの水道なりで水を入れてから出発する想定としてございます。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-013",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "９９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（平平野野隆隆雄雄））\n常に水は無いということで、いいですか。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-014",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今現在の段階としては、通常保管している場合には水は入っていない状態で保管する予定としておりま\nす。",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-015",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "１１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（藤藤山山大大））\n８ページの道路維持費の部分で聞きたいんですけど、この主な増減の部分の除雪分という部分で、これ\nは除雪分だけじゃなくて本当は排雪も入る部分じゃないですかね。要は、除雪分だけじゃなくて見方とし\nたら完全に除雪だけみたいな見方になりますので、その辺ってどうなのかお尋ねします。\n番（（藤藤山山大大））\n防災の部分、防災の今の車ですが、今回トイレの部分で入れていると思うのですが、これ以外の機能と\nして例えば昔であれば、防災というか何かあった場合というのはラジオ等必要とされていますよね。\nその部分で、車に今であれば携帯電話これは充電どうこうという機能も備わっているのか。要は携帯電\n話の充電器ですね。その辺の機能は備わっているのかお聞きしたいと思います。",
+    "text_length": 336,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021",
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-016",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "トイレカーにつきましては、特に携帯電話に特化した充電装置というのは今のところ付いてございませ\nん。通常の運転の部分については通常のトラックと同じですので付いて、後ろのほうの設備には特段その\n部分での充電装置とかは今のところ付ける予定はございません。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-017",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "１１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（藤藤山山大大））\nということは今回はトイレだけに特化しているという形になるんですね。そうであれば、今後やっぱり\n防災になったら必要というのは携帯電話の充電等の機能も本来であれば備わってなければいけないなと思\nうんですけど、その辺のことは完全にトイレ特化ということでよろしいですか。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-018",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "－ 7 －\n\n基本的にはトレイに特化した車輌となっておりますので、その他当然電源設備もありますので、それに\nもし追加して充電ができるようなものがあれば、随時そこで調整してまいります。",
+    "text_length": 91,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-019",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "５５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（平平沼沼昌昌平平））\nちょっと建設課長にお聞きします。\nこの車庫の立ち位置と車庫の屋根の勾配度で積雪があった場合、これは市販のプレハブかなと思うんで\nすけども、今の例えば設置しようとする場所にこれを置いた時の屋根の積雪量ってある程度計算してこの\n形になっていますか。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-020",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "建建設設課課長長（（紙紙谷谷一一））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これは多雪区域用のもので一応設定しておりますので、雪は屋根に乗っかった状態でも大丈夫というよ\nうな構造になっております。水勾配付いておりますので、雨降った時には水が落ちるように、また雪が融\nけた時にはそれが融けて落ちるようにというような勾配のみ取ってございます。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-027"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-021",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "３３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（佐佐藤藤孝孝男男））\nこのトイレカーを見ますと、この図面からトラックに上がる階段、階段に手摺りが必要と思うんだけど、\nどうなんでしょう。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-028"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-022",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "その辺りもちょっと、具体的な本当のこまい使用はこれから詰める予定でございますので、ちょっとそ\nの辺りも検討して、もし付けられるものであれば付けられるし、それが付けられない状態の車輌の仕様で\nあれば、ちょっとできないかもしれません。一応その辺はこれから詰めたいと思います。",
+    "text_length": 135,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-029"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-023",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "７７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（熊熊野野茂茂夫夫））\n各避難先の状況はこれからということなんですけども、あくまでもこのトイレカーだったり、その付随\nする運搬車輌だったり、また、保管の建物ということは今までの庁舎の所での集中した防災用の設備等の\n管理という装備のいわゆる準備ということでなってくると思うんですけども、そのことはそれとして準備\nはしておくことが大事なんだろうと思いますけども、テント式のパーテーションだったりエアーベッドな\nりというこれは台数出ていますよね。２００セットだったりそれからベッドは４００台ということになっ\nてくると、この数字の根拠というのは、１年かけてそれぞれの一定の津波を想定しての避難ということで、\nこれまで色々と計画現状分析も含めてやってこられたと思うんですけども、この数字の決定というのは何\nを根拠にしてこの数字出されたんですか。",
+    "text_length": 369,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-032"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-024",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、パーテーションの２００台につきましては総合体育館のアリーナの面積で、めいいっぱい広げた\n－ 8 －\n\nらどれぐらい入るのかということを想定して台数設定しました。\nそれで、長さ等を確認すると、やっぱり２００台が限度なのかなということで２００台と設定しており\nます。それでエアーベッドですが、そのパーテーションに大体２人入った場合を想定して、エアーベッド\nをその中に２台おけるような台数を計算して倍の４００台ということにしております。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-025",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "７７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（熊熊野野茂茂夫夫））\n今聞いているのはですね、一次避難する時の当町そのものの避難するいわゆる想定される人数をどうい\nう風にして想定して考えたんですかということを聞いたんです。",
+    "text_length": 90,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-034"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-026",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "実は福島町の災害備蓄計画というのがございまして、そこで想定している人数が今回の日本海溝の場合\nでいきますと１，８００人、そのうち避難所で対応する人数はその３６パーセントということで、全体で\n６５０人ということで北海道の試算が出ておりますので、それを基に考えております。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-037"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-027",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "７７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（熊熊野野茂茂夫夫））\nそうすると、先ほどの質疑のところで最初に確認したんですけども、このものというのは二次避難地そ\nのものに対応する装備という考え方なんですか。基本的には。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-038"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-028",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "総総務務課課長長（（小小鹿鹿浩浩二二））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "二次避難というか避難所になりますと総合体育館とか福祉センターになりますので、そこを想定した部\n分のパーテーションとかの台数となっております。",
+    "text_length": 70,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-039"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-029",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "７７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（熊熊野野茂茂夫夫））\nそうするとですね、この数というのは二次避難所のいわゆる総合体育館、今前提にしたところであえて\n総合体育館ということになってくると、一次避難先へのこのパーテーションだったりそれの設置だとかト\nイレもそうなんでしょうけども、そういうところっていうのは今後これから更に具体的な計画を策定して\n進めていくという考え方ですか。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-040"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-030",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "町町長長（（鳴鳴海海清清春春））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "前からお話ししてますとおり、今、防災の計画を見直していますので、各地区の避難先での避難設備と\nいいますか、そういったものはこれから順次避難路を含めて計画の中で登載しますので、ただ、我々今一\n番備えとしては、どこで何が起こるか分からないというなかで、まず最終的に二次避難所としては体育館\nが今想定されていますので、そこの中でとりあえず必要な物品を先ず、今回国の補助金が補正でつきます\nのでそれを使わせていただきたい。\n先ほど今、熊野議員さんおっしゃっているのは各避難先で、例えば月崎だったらニュータウンに逃げる\n－ 9 －\n\nとか色々あると思います。それについてはこれから計画、今まとめている最中でありますので、そういっ\nたなかで想定できるものを準備・制度を活用しながら整備していくという形になる。現在の中ではまだそ\nこまでいきませんけども、ただ、二次避難所に保管なり今備蓄倉庫に避難した場所は、いざ災害が起きた\n場合はそこに持ち出せるという数字は確保できますので、そういったものでとりあえずは緊急的に起きた\n災害には対応できるのかなという気がしてございます。",
+    "text_length": 479,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-041"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-031",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "７７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "番（（熊熊野野茂茂夫夫））\n総額で今回の総事業費７，６００万、それぞれ国庫補助金だったり地方債一般財源いわゆる半分ぐらい\nは起債と一般財源の中で持っていくということで、これは総合的にあれするってことで今町長の話しであ\nってても、総合体育館にそれを装備するような、いわゆる細かく言うと二次避難地のことだと。一次避難\n地についてはこれからだという言い方なんですけども、このいわゆるトイレカーそのものも１台というこ\nとであれば何箇所か大きな風に考えてもですね、町内であっても大きく分けると災害の規模にもよるだろ\nうと思いますけども２箇所３箇所に大きく出てくるでしょうし、吉岡地区のこともあるでしょうし、そう\nするとトイレ云々かんぬん一次避難のことを考えて、一次避難地から各地域の二次避難ということも考え\nてでも、ここではこの考え方では十分足りてはいませんよね実際の話しは。\nですから、その辺のことが今後のことということであれば、もう少しこのエアーベッドだったりパーテ\nーションだったりということも一定の数値を総合的な数値をきちっと押さえたうえで、運搬車輌もここで\nもって軽トラですよね。いわゆる小さなトラックだろうと思うんですけども、これで果たして十分なのか。\nほかに町には運搬トラックもおそらくあると思いますので、ただ、災害時になった時にはその移動すらな\nかなか道路等のことも被害を受けた状態受けたところで移動ということも結構大変なことになるので、そ\nこのところも十分一次避難のことも考慮したうえでのこういう装備の準備というのも必要なんだろうと思\nうんですけども、改めてそこのところを確認したいと思います。",
+    "text_length": 701,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-042"
+      ]
+    }
+  },
+  {
+    "id": "fukushima-2025100324-1-032",
+    "municipality": "fukushima",
+    "council_id": 2025100324,
+    "council_name": "定例会3月第2回会議 (2025-03-24)",
+    "schedule_id": 1,
+    "schedule_name": "定例会3月第2回会議",
+    "date": null,
+    "speaker": "町町長長（（鳴鳴海海清清春春））",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "熊野議員おっしゃるとおり、それは理想でありまして、ただ、なかなかそこまで全部財源を求めて配置\nできるかというと厳しい状況がありますので、我々今全体俯瞰できるようなものを計画でまとめあげる中\nで、有利の財源を使わせていただきたいと。\nただ、今回はですね、たまたま国の補正予算がこういった形で動きましたので、まずは、なかなかこれ\nだけの財源を求めて整備できるというのは少ないんですよね。やっぱりこのチャンスを逃すことはないの\nかなということもありましたので、急遽、こういった形で補正をお願いした経緯もありますので、我々は\n今最前の有利な条件としてこれを一般財源を使わないで、活用できる方法として今お願いしていますので、\nこれから順次色んな形で整備していくことになります。\nただ、このトイレカーにつきましては先ほど言いましたとおり、非常時に本当はきちっと使えば問題な\nんでしょうけども、じゃあ非常時がいつ来るか、色んな形でこれからありますけども、我々はそういった\n備えと言いますか災害に備えていただく一つのＰＲ材料にもなりますので、色んな形でこういったものを\n活用をして、これから計画をまとめてあげていくなかで地域の説明会だったり色んな形の活用も図れるの\nかなと。それに一番はやはり、今回かなり有利な財源を活用させていただいていますので、そこのとこを\n少しご理解いただきたいなと思っています。",
+    "text_length": 593,
+    "source": {
+      "minutes_file": "data/fukushima/minutes/2025100324.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-043"
+      ]
+    }
+  }
+]
