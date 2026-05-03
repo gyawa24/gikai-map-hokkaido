@@ -10,9 +10,17 @@ type Props = {
   params: Promise<{ tag: string }>;
 };
 
+function decodeTagParam(tag: string) {
+  try {
+    return decodeURIComponent(tag);
+  } catch {
+    return tag;
+  }
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params;
-  const decoded = tag;
+  const decoded = decodeTagParam(tag);
   return buildPageMetadata({
     title: `${decoded} - テーマ別議事録`,
     description: `北海道内の市町村議会で「${decoded}」が議論された議事録の一覧です。自治体を横断して確認できます。`,
@@ -34,7 +42,7 @@ export async function generateStaticParams() {
 
 export default async function TopicTagPage({ params }: Props) {
   const { tag } = await params;
-  const decoded = tag;
+  const decoded = decodeTagParam(tag);
   const records = getByTag(decoded);
   const breadcrumb = buildBreadcrumbList([
     { name: "地方議会ドットコム", path: "/" },
