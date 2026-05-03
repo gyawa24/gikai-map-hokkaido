@@ -1,1 +1,3383 @@
-[]
+[
+  {
+    "id": "biratori-20252099-1-001",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月15日",
+    "date": "2025-01-15",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日招集されました、令和７年第１回平取町議会臨時会の議会運営等につきま",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-1-002",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月15日",
+    "date": "2025-01-15",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "しては、本日開催しました議会運営委員会において協議し、会期については、\n本日、１月１５日の１日間とすることで、意見の一致をみておりますので、議\n長よりお諮り願います。",
+    "text_length": 83,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-1-003",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月15日",
+    "date": "2025-01-15",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "要望経過報告をさせていただきます。要望事項は、ホッカイドウ競馬に関する\n要望でございます。内容は、これまで以上に出走馬を確保した魅力ある番組づ\nくりや、老朽化の進むインフラ整備に必要な予算の確保、２０２４年の販売額\nは、５４３億円を超え、過去最高額を更新する結果となっておりますが、この\n収益を競馬事業へ優先的に還元すること、また、既に着工されている、厩舎・\n厩務員住宅等の移転新築など、老朽化の進む施設整備をスケジュールどおり、\n着実に、確実に進めることなどを要望しております。要望先は北海道知事、北\n海道農政部、北海道議会議長、副議長であります。要望月日は、１２月２５日、\n要望者は日高町村会、日高総合開発期成会、軽種馬生産構造改革推進会議、日\n高軽種馬振興対策協議会として、私を含む管内７町の町長となっております。\n以上、要望経過報告とさせていただきます。",
+    "text_length": 381,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-1-004",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月15日",
+    "date": "2025-01-15",
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま説明を受けまして、入札が終わって、議会に諮るということでありま",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-1-005",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "01月15日",
+    "date": "2025-01-15",
+    "speaker": "千葉議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千葉 良則",
+    "member_faction": "",
+    "text": "すけども、１点だけちょっと伺っておきたいのは、今の説明の中でいうと、外\n構工事っていうかな、給排水含めて、駐車場もということなんですけども、時\n期的に工期が３月の２８日でしたか。ということでかなり何ていうかな、冬期\n間の施工ということで、特に外構とか水回りとか、手直しが必ずつきまとって\nくると思うんですけども、建物ができて運営を開始する時期というのはいつぐ\nらいを目途に考えてるのかその辺をちょっとお知らせください。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-006",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日招集されました、令和７年第２回平取町議会臨時会の議会運営等につきま",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-007",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "しては、本日開催しました議会運営委員会において協議し、会期については、\n本日、１月２９日の１日間とすることで、意見の一致を見ておりますので、議\n長よりお諮り願います。",
+    "text_length": 83,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-008",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号につきまして、ご説明させていただきますので、１ページをお開き\nください。令和６年度平取町一般会計補正予算第９号は、次に定めるところに\nよります。第１条、歳入歳出予算の補正ですが、歳入歳出にそれぞれ１億５７\n４３万円を追加し、予算の総額を７６億２３５６万７０００円にしようとする\nものです。第２項、歳入歳出予算の補正の区分及び金額等については、第１表、\n歳入歳出予算補正によります。第２条、地方自治法第２１３条第１項の規定に\nより、翌年度に繰り越して使用することができる経費は、第２表、繰越明許費\nによります。それでは、歳入歳出予算事項別明細書の歳出からご説明いたしま\nすので、７ページをお開き願います。上段、２款１項１目一般管理費、財源内\n訳の変更です。これは畑作物の産地づくりに向けた体制構築等のための調整費\nに道補助金を申請し、採択の見込みとなったことから、その事務を行う職員の\n人件費の一部に補助金を充当し、一般財源からの振り替えを行うものです。次\nに、下段、３款１項１目社会福祉総務費に２０３６万３０００円の追加です。\nこれは国の経済総合対策として実施される物価高騰対応事業の一つで、住民税\n非課税世帯等に対する臨時給付金を支給するための事務費として、１０節需用\n- 1 -\n費、消耗品費には、印刷機用トナーやその他、事業実施に必要な事務用消耗品\n費１００万２０００円を計上しております。１１節役務費、通信運搬費は、通\n知書等の郵送料を７万７０００円として、振込手数料７万７０００円、合わせ\nて１５万４０００円を計上しました。１２節委託料６０万５０００円の追加で\nすが、これはシステム改修委託料です。１８節負担金、補助及び交付金１８６\n０万２０００円の追加です。これは非課税世帯等に対する臨時特別給付金とし\nて１世帯当たり３万円の７００世帯分２１００万円の算出額から、８月臨時会\nで補正させていただいた給付金の執行残となる見込みの３４０万円を差し引い\nた１７６０万円、同様にこの項目の３項目目に記載した低所得世帯に対する臨\n時特別給付金、三角の７０万円、次の定額減税調整給付金、三角の２１２万円\nも８月補正の給付金の執行残として減額補正しようとするものです。また、２\n項目目の社会福祉施設等物価上昇軽減補助金３８２万２０００円は、物価高騰\n対応事業として、障害者支援施設すずらん等の給食費、燃料費について、令和\n３年度と比較した場合の物価上昇分の２分の１を補助しようとするものです。\n財源は全額、国の物価高騰対応の臨時交付金を充当します。８ページをお開き\nください。上段、３款１項２目老人福祉費、１８節負担金、補助及び交付金４\n７９万８０００円の追加です。これは物価高騰対応事業として、平取かつら園、\nこころのホームふれない、生活支援ハウスきずなに係る給食費、燃料費につい\nて、令和３年度と比較した場合の物価上昇分の２分の１を補助しようとするも\nのです。財源は全額、国の物価高騰対応の臨時交付金を充当します。なお、給\n食費の上昇率は２１．８％、光熱費の上昇価格はＡ重油で６．７円、灯油で８．\n５円、電気料で２．５５円、ガスで３５．９円として算出しております。次に、\n下段、３款１項４目福祉施設費１８節負担金、補助及び交付金１０６万７００\n０円の追加です。これは、物価高騰対応事業として、公衆浴場としてのびらと\nり温泉ゆからに係る燃料費について令和５年度と比較した場合の上昇単価を\n９．２円として算出し、その２分の１の額を補助しようとするものです。財源\nは全額、国の物価高騰対応の臨時交付金を充当します。９ページをご覧くださ\nい。上段、３款２項１目児童福祉総務費１３０万円の追加です。これは住民税\n非課税世帯の中に１８歳以下の子どもがいる場合に加算される給付金の補正と\nなります。１０節需用費、消耗品費について、印刷機用トナーやその他、事業\n実施に必要な事務用消耗品費５０万円を計上しております。１８節負担金、補\n助及び交付金８０万円の追加です。これは非課税世帯に１８歳以下の子どもが\nいる場合、１人あたり２万円を給付するもので、対象者４０人と推計し算出し\nております。財源は全額、国の物価高騰対応の臨時交付金を充当します。次に、\n下段、５款１項２目農業振興費１４８０万２０００円の追加です。１２節委託\n料１５４万円の追加ですが、これは一般管理費でも申し上げました畑作物の産\n地づくりに向けた体制構築等のための調整を行うにあたって、畑地化された農\n地を整理することが必要なため、地図情報システムである統合型ＧＩＳシステ\nムを改修するための委託料を補正しようとするものです。財源は道補助金１５\n- 2 -\n０万円、一般財源が４万円となります。１８節負担金、補助及び交付金１３２\n６万２０００円の追加です。経営所得安定対策等畑地化協力金１１９６万２０\n００円については、水田から畑地化された農地に対し、地域の各施設維持管理\n組合において、新たに畑として減額した賦課金単価を設定した場合、維持管理\n費に不足が生じることから、その賦課金差額の残耐用年数分について、畑地化\n協力金が国から市町村等を経由し、土地改良区に交付されることとなったこと\nから、補正をしようとするものです。財源は全額、国庫補助金を充当します。\n次の項目の平取町農業水利施設電気料金高騰対応緊急支援事業補助金１３０万\n円については、物価高騰対応事業として沙流土地改良区が管理している農業水\n利施設のうち、揚水機場などの電気料について、令和３年度と比較した場合の\n電気料上昇分を補助しようとするものです。財源は全額、国の物価高騰対応の\n臨時交付金を充当します。１０ページをご覧ください。上段、５款１項４目畜\n産業費１８節負担金、補助及び交付金１０６０万円の追加です。これは物価高\n騰対応事業として、肉用牛生産者の生産コストの上昇や消費意欲減退がもたら\nす子牛等の市場価格低迷など、経営が圧迫する状況が続いていることから、１\n２か月齢以上の登録繁殖雌牛１頭あたり１万円、１経営体あたり３０万円を限\n度に補助しようとするもので、算出にあたっては対象頭数を６２０頭分と推計\nし計上しております。次の項目も物価高騰対応事業ですが、依然として配合飼\n料価格が高止まりしている中、令和６年４月より配合飼料価格安定制度積立金\nの生産者分が引き上げになるなど、畜産経営の負担が増加していることから、\n当該基金積立金に相当する額を支援しようとするものです。算出にあたっては、\n配合飼料の年間数量を５５００トンと推計し、これにトンあたり８００円を乗\nじた金額、４４０万円を計上しております。財源は全額、国の物価高騰対応の\n臨時交付金を充当します。次に下段、６款１項１目商工総務費１億円の追加で\nす。これは、ふるさと納税寄附金について、当初予算においては寄附金額を２\n億円と計上していたものですが、決算見込みにおいては予算を大きく超える見\n込みであることから、寄附額とそれに係る経費を補正しようとするものです。\nなお、寄附額は３億円として歳出の補正額を算出しております。１１節役務費、\n手数料１２５万円の追加です。これはクレジットカード会社などに支払う決済\n手数料等ですが、算出は寄附額１億円の５０％に手数料率２．５％を乗じて計\n上しております。１２節委託料４８２０万円の追加です。これは、ポータルサ\nイトへの掲載や返礼品送付などの委託料です。１３節使用料及び賃借料４４万\n５０００円の追加です。これは、ふるさと納税の運用手続きをワンストップで\n行うことのできるサービスの利用料です。追加利用件数２７００件と推計し、\n１件当たり１６５円を乗じて計上しております。２４節積立金５０１０万５０\n００円の追加です。これは、寄附額から諸経費を差し引いた残額を基金に積み\n立てるものです。財源は全額、寄附金を充当しております。１１ページをご覧\nください。６款１項２目商工振興費４５０万円の追加です。これは物価高騰対\n応事業として、商工業小規模事業者に対し１事業者３万円を給付しようとする\n- 3 -\nものです。算出は１５０事業者と推計し計上しております。財源は全額、国の\n物価高騰対応の臨時交付金を充当します。歳出については以上です。次に、歳\n入についてご説明いたしますので、５ページをお開きください。上段、１０款\n１項１目１節地方交付税１４６万円の減額です。これは、歳出の補正額から特\n定財源を差し引いた一般財源合計額がマイナスとなり、それを普通交付税から\n減額するものです。続いて下段、１５款２項１目総務費国庫補助金１節総務管\n理費補助金４３９２万８０００円の追加です。これは、国の物価高騰対応重点\n支援地方創生臨時交付金を各種事業に充当するものです。次に６ページ上段、\n１６款２項４目農林水産業費道補助金１節農業費補助金１４９６万２０００円\nの追加です。これは歳出農業振興費でご説明しました経営所得安定対策等畑地\n化協力金１１９６万２０００円の全額、一般管理費及び農業振興費でご説明し\nました産地づくりに向けた体制構築等のための調整事務費３００万円に対する\n道補助金です。次に、下段、１８款１項１目１節寄附金１億円の追加ですが、\nふるさと納税寄附金の歳入追加額を補正するものです。事項別明細書のご説明\nについては以上となります。続いて第２表、繰越明許費についてご説明させて\nいただきますので、３ページをお開きください。３款民生費１項社会福祉費、\n住民税非課税世帯等に対する臨時特別給付金事業について、給付が年度内に完\n了しないことが見込まれるため、これを繰越明許としようとするものです。下\n段、３款民生費２項児童福祉費、住民税非課税世帯等に対する加算給付金事業\nについても同様の理由により繰越明許としようとするものです。以上、議案第\n１号のご説明をさせていただきましたので、審議のほどよろしくお願いいたし\nます。",
+    "text_length": 4131,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-009",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "足し算がよく分からないので教えていただきたいんですけども、歳入の５ペー",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-010",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "ジ目、１５款２項１目の今回の国から来る交付金４３９２万８０００円の内訳\nは、今の説明でいくと３１１の２０００飛び３６万３０００円、３１２の４７\n９万８０００円、３１４の１００飛び６万７０００円、３２１の１３０万円、\n５１４の１０００飛び６０万円、６１２の４５０万円、これと５１２の農業振\n興費で出てる１３０万円を足すと、この４３９２万８０００円になるんだと思\nうんですよね。きっとここのところは間違いないと思うんですけども、その次\nのページの、農林水産業道補助金、６ページ目ですね、１４９６万２０００円、\nこれが９ページ目の農業振興費の委託料１５４万円、それと負担金補助の１３\n２６万２０００円、これ負担金補助は、１３０万円が物価高騰のやつですから、\nここに出されてる、国との補助金１４７６万２０００円から、この１３０万円\nを引いた額が１３４６万２０００円になるんだと思うんですよね。上の４万円\nの関係ありますけども、この１３４６万２０００円が、６ページの農林水産業\n- 4 -\n費道補助金の１４９６万２０００円と突合しないので、先ほど何か一般管理費\nの当初の説明で１５０万円を財源を移行したという話なんですけども、先ほど\nの説明では３００万円という話もあったんですけども、そのところ、何か分か\nりやすく説明をいただければなと思います。",
+    "text_length": 568,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-011",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６ページの１６款２項４目１節の中の、説明の２行目ですね、産地づくりに向\nけた体制構築支援事業費補助金３００万円とあります。これにつきましては、\n歳出一般管理費に、財源の中で特定財源、国・道補助金にあります１５０万円\nと、９ページの下段、５款１項２目、１２節委託料１５４万円のうちの、ここ\nには道補助金１５０万円があたってるんですが、この一般管理費との足し合わ\nせた額３００万円が、６ページの先ほどの、１６款２項４目１節の２行目の３\n００万円に該当してきます。大変分かりにくい部分かと思いますが、ご理解願\nいたいと思います。",
+    "text_length": 261,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-012",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "分かりました、すみませんもう少し読み込めばよかったんですけども、計算機",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-010"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-013",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "はたいてて、どうも合わないところが出てきたんで、ちょっとどうなのかなと\n思って質問させてもらいました。先日の常任委員会の議論を受けまして過去の\n臨時交付金の資料をいただきました、ありがとうございます。また、委員会議\n論を受けて役場の中でいろいろ協議検討されたんだと思います。それで本日提\n案の補正予算になったというふうには考えております。この議会との議論を受\nけて、行政側で協議をし、補正の提案となる、このやり方は議会と行政の機能、\nこれが今回は十分に果たされたんじゃないかなというふうに考えております。\nさてこの物価高騰対策につきましては、多くの町でこの１月の臨時会でいろん\nな補正対応をしていることが新聞で報道されてきております。今朝の北海道新\n聞では、鷹栖町においては全町民に対して生活支援米として、町民１人に５キ\nロの鷹栖町産のななつぼしを配布することが報道されておりました。ななつぼ\nし５キロ３０００円で計算したら、６４７０人ですから、１９００万円の使い\n方です。また１月１５日の北海道新聞においては、苫小牧市が、これは独自政\n策でありますけれども、住民税均等割世帯に対しても、非課税世帯同様の１世\n帯３万円、子ども１人に２万円ということを支援するという報道がされており\nます。３３００世帯で３万円、単純に世帯だけでいけば９９００万円、１億円\nです。財政規模にもよりますから、一概には言えないんですけども、それぞれ\nの町が独自な取り組みをしていることだと思います。関係課が議論し、今回の\n補正になったと考えますので否定はいたしませんが、現在の賃上げ価格転嫁の\n流れ、物価高騰としてはですね、まだまだ続いていきそうであります。正常な\n- 5 -\nインフレの経済成長、いわゆる好景気までは、まだ時間がかかりそうですので、\n今後の取り組みとしては、今以上に他の市町村の取り組みも注視をし、町民に\n向けて何が求められているのかを、引き続き検討をしていただきたいというふ\nうに考えております。意見でありますけれども、できれば町長のお考えを伺い\nたいと思います。",
+    "text_length": 880,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-014",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貴重なご意見ありがとうございます。まさにそのとおりだというふうに思って\nおりましてですね、いわゆる、国のこういった制度資金を活用してさらに、自\n治体独自で横出しをして制度を充実させていくというやり方を以前、コロナの\n時も、何か所かやった記憶があるんですけども、やっぱりそういう、今町内の、\n地域のそういった経済状況、様々な状況判断しながらそういう制度の構築は非\n常に重要な部分だというふうに思っておりますので、今後、こういう状況まだ\nまだ続くような予想も出ておりますので、また国のなんていいますか、制度等\nの情報等も注視しながら、独自にどういうものができるかというようなことも、\nまた議会とのいろんなやりとりの中で、検討させていただけばと思います。以\n上です。",
+    "text_length": 330,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-015",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "いろいろ協議はしてるんだと思いますけども、前回の委員会の中でも言ったん",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-016",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "ですけども、できれば、水平な部分について、垂直じゃなく、縦じゃなく、横\nの、要は所得収入割に応じただとか、全世帯にとかっていうところに、少しは\n力を入れてもらえればなと思いますので、最後に意見を述べて質問を終わりた\nいと思います。ありがとうございます。",
+    "text_length": 126,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-017",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１０ページの６款１項１目２４節のふるさと納税の積立金の関係についてちょ",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-018",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "千葉議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千葉 良則",
+    "member_faction": "",
+    "text": "っとお尋ねしたいと思います。昨年の時点で、我々議会として説明を受けたふ\nるさと納税額の見込みなんですけども、２億円から２億５０００万円ぐらいに\nはいくんじゃないのかという当初見込みでしたけども、いい意味での増額とい\nうことで推移してるわけですけども、今までの取り扱い方あるいは、サイトの\n数も相当増やしたんですけども、このような状況で３億円弱ぐらいまで持って\nいかれたのは、担当課としての分析もあると思うんですけども、どのような状\n況で推移してきてるのか、今現在の状況で雑駁でも構いませんので、その辺の\nご説明を加えていただければというふうに思います。\n- 6 -",
+    "text_length": 282,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-019",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "いただいて、今回３億円の寄附金の見込みということでございまして、現状の\n寄附額で申しますと、今現在で２億６０００万円を超えている寄附額が入って\nいる状況でございます。それであと１月の少しと、２月と３月ということで、\n３億円近くまでいくんじゃないかという見込みを立てているところでございま\nす。常任委員会等でも、このふるさと納税の関係をご説明をさせていただいた\nところではございますけれども、新年度入ってから、令和６年ですね、４月に\n入ってから、おおむね２倍、令和５年の時の大体２倍ぐらいで推移をしている\nという状況でございまして、それには、いろいろ中身を見直したりとか、サイ\nトの関係を増やしたりとか、いろいろ手だてをしたところで、２倍の推移とな\nってるんですけれども、なかなかこう、本当にずっと２倍ぐらいの推移という\nことで、どこかで増減出てくるのかなとは思ったんですけれども、今のところ\nおおむね２倍ぐらいの形で、今年度については来ているというような状況でご\nざいます。",
+    "text_length": 437,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-020",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本当大変数字を聞いてびっくりしていたんですけど、今回応援基金の積立金と",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-021",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "千葉議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千葉 良則",
+    "member_faction": "",
+    "text": "いうことで、５０００万円ほど計上されているわけでございますけども、本当\nにいい意味で、まだまだ私はふるさと納税に対しては、平取町、伸ばしていく\n要素が陰ながら潜めてる部分がまだたくさんあるのかなというふうに思ってい\nまして、これからの積立金に対するその扱いというか使われ方について、町民\nに還元できるような方法も含めてですね、様々な要素があると思いますけども、\n今後ふるさと納税、まだまだ伸びていく要素を踏まえましてですね、その使い\n道に対してはやっぱりかなり、議会にもつぶさにご報告いただければありがた\nいなというふうに思ってますけども、その辺の考え方だけ伺っておきたいと思\nいます。",
+    "text_length": 293,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-020"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-022",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "やっていくとか、そういったことも含めて常任委員会等でご説明する機会を設\nけさせていただければというふうに思います。",
+    "text_length": 57,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-022"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-023",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８ページなんですけども、上段、下段とも負担の軽減のための補助金というこ\n- 7 -",
+    "text_length": 41,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-024",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "となんですけども、上のほうの社会福祉施設のほうはですね、令和３年と比較\nっていうことだったんですけども、びらとり温泉ゆからのほうは令和５年と比\n較っていうことで、比較する対象の年数の違いといいますか、どのように比較\nするっていうことなのか、決まりがあってこのような違いがあるのかどうか、\nちょっとお聞きしたいんですけども。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-024"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-025",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "務課長から５年度ということだったんですけれども、令和３年度と令和６年度\nの単価の比較、９．２円ほどございまして、その半分、４．６円を増額分の単\n価ということでそれに使用料、重油の使用料を掛けた金額ということで、ご了\n承いただければと思います。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-026"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-026",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これは令和３年っていうのは例えば２年前とか、そういうことで令和３年なの",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-027",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "か、ということで、この普通なら前年度とかなのかな、とちょっと思ったもん\nですから、この３年まで遡る理由っていうのは。",
+    "text_length": 58,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-028"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-2-028",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "01月29日",
+    "date": "2025-01-29",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まずご説明に誤りがありますことにおわび申し上げます。今回、物価高騰対応\n臨時交付金を事業化するにあたって、令和５年度との比較は最初に考えたもの\nですけども、令和５年度と比較すると、物価そのものはさほど上昇していない\nということで、負担の軽減ということにはなかなかあたらないだろうというこ\nとで、物価高騰前の令和３年度を基準として比較しようということになりまし\nた。以上でございます。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-029"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-029",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日招集されました、令和７年第４回平取町議会臨時会の議会運営等につきま",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-030",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "しては、本日開催しました議会運営委員会において協議し、会期については、\n本日、４月３０日の１日間とすることで、意見の一致をみておりますので、議\n長よりお諮り願います。",
+    "text_length": 83,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-031",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは議案第１号、公の施設に係る指定管理者の指定についてご説明申し上\nげますので、議案書の１ページをお開きください。公の施設に係る指定管理者\nの指定について地方自治法第２４４条の２第６項に基づき、平取町の公の施設\nに係る指定管理者に指定するものでございます。１の管理を行わせる施設の名\n称及び所在地につきましては、３月に設置条例の議決をいただきました平取町\n多目的機能型施設で、施設の所在地は、沙流郡平取町字二風谷６６番地１１で\nす。２の指定管理者となる団体の名称は、株式会社平取町アイヌ文化振興公社、\n３の管理を行わせる期間につきましては、令和７年５月１日から令和１０年３\n月３１日の３年間となります。４の選定理由等につきましては、平取町公の施\n設に係る指定管理者の指定手続等に関する条例第５条第１号の規定により、公\n募によらない方法として、設置目的を効果的かつ効率的に管理が可能と期待で\nきることによるものです。この施設の指定管理に係る公募につきましては、３\n月２４日に公募を開始して、４月８日を参加表明の提出期限とし、その後現地\n説明会等の実施をして、提案書類の提出を４月１８日期限と予定としておりま\nしたけれども、参加表明書につきましては１社から提出があり、現地説明会も\nその１社が参加をしておりましたが、提案書類の提出の締め切りである４月１\n- 1 -\n８日に参加表明書の提出があった１社より辞退の届出の提出となりました。平\n取町公の施設に係る指定管理者の指定手続等に関する条例第５条の規定は、公\n募によらない指定管理者の候補者の選定を定めた条項で、第１号の規定のとお\nり、条例第２条の公募を行ったが、条例第３条の提案書の提出がないというこ\nとの状況になりましたので、施設の性格、設置目的等を考慮し、町と株式会社\n平取町アイヌ文化振興公社で協議を行い、４月２１日に開催されたアイヌ文化\n振興公社の臨時取締役会で了承を得て、指定管理者として指定するものでござ\nいます。以上、説明を申し上げましたのでご審議のほどよろしくお願いいたし\nます。",
+    "text_length": 874,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-032",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の議案第１号につきまして、指定管理そのものについては私は異議がない",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-033",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "千葉議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千葉 良則",
+    "member_faction": "",
+    "text": "んですけど、むしろ地元の平取町内の事業所ということで、その部分では非常\nによかったなというふうに思っていますけども、やはり今回かなり早いペース\nでこの宿泊施設に対して、事が進んできたという経緯が、私はちょっとどうな\nのかなという部分があったんですけれども。問題はこの指定管理が決まった以\n降も、やはり様々な中身についての協議というんですか、それをやっぱり詰め\nていく必要が私はあるなというふうに思っております。特に今までの常任委員\n会の説明の中では、同業者含めての説明はもう終了して、一定の同意をもらっ\nているということでありましたけども、やはり詰めの作業によって、様々なわ\nだかまりもなく、同業者にも納得していただけるような方針をきっちり立てて\nいく必要があると思っているんですけど、その辺について了承していただけま\nすでしょうか。",
+    "text_length": 367,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-034",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これから指定管理団体となる、アイヌ文化振興公社と打ち合せを行って、詳細\nな打ち合せを行った後は、宿泊業者全社集めて、その辺の状況を含めて説明を\nしていきたいと思っていますので、そのような形で進めていきたいと思ってま\nす。",
+    "text_length": 110,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-035",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今説明をいただきました。３月２５日にこのプロポーザルはホームページに公",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-036",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "開され、３月２４日から募集が始まったという形で確認をしております。４月\n８日の参加表明書の提出、４月１１日の現地説明会、これは今の説明で１社１\n社あったというふうに理解をしました。最終的には４月１８日の提出期限には\n- 2 -\n辞退ということで、要は業者がいなくなったということですね。それでプロポ\nーザルを行って、要は参加業者がいない場合なんですけども、今の説明では指\n定管理の手続きで、いないので淡々と作業を進めたということなんですけども、\nプロポーザルを行っていない場合、応募がなかったというか、１社はあったん\nだけども辞退した、その理由の分析だとかプロポーザルの条件を見直すだとか、\n関連団体にもう一度告知をするだとかという形をして、２回目の募集を行うべ\nきだったというふうに考えて、私はそう思うんですけども、その辺の考え方に\nついてお伺いをしたいと思います。",
+    "text_length": 384,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-037",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の件につきましては、今回参加表明があって結果的には辞退というふうに\nなりましたけれども、改めて公募するという考えはございませんし、できるだ\nけ早めにこの施設を動かしていきたいという思いもありましたので、最終的に\n公募によらない形で振興公社と協議をして、この結果に至ったというところで\nす。",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-038",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１回でそういう判断をしたということなんですけども、やはりなぜプロポーザ",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-039",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "ルにかけるのかっていうことを、なぜ指定管理にするのかっていう部分を考え\nていくと、町の判断が間違っているとは言いませんけれども、もう一度、丁寧\nな手続きをとっていくのが、中身の問題にしてもそうですけども、この案件非\n常にタイトな日程の中で、昨年の１０月から作業が進められております。時間\nがないがゆえに、いろんなソフトの部分でも、ハードな部分は分かりませんけ\nれども、ソフトの部分で手続き手順の問題で担当者が仕事に追われて、厳しい\n状態になっているんだと思います。丁寧な説明ができてないという話も聞いて\nおります。そういう意味ではそのオープンの日が確定しているから、なるべく\n早く運用させたいからという理由で、いきなり条例、規則に則って次の者を指\n名するっていうのは、私は、先ほど言いましたけども、いかがなものかと思い\nます。それで今回出されたのが株式会社平取町アイヌ文化振興公社というとこ\nろに指定管理を任すということなんですけども、当然、振興公社としては、ど\nのように運営をするのかというのは町側に示しているということですよね。プ\nロポーザルで示された内容について示されて、それで、それに基づいて町は判\n断をするという形になっているんじゃないかなと思うんですけども、そうであ\nれば、その中身についてはいいですけども、審査会の結果について、点数等に\nついて教えていただければなと思いますけど。",
+    "text_length": 597,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-040",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の場合は、選定委員会は開催しておりませんので、そういう、今回参加表\n明があって、申請書が提出されれば、それに基づいて選定委員会を開催すると\nいう予定でしたけれども、それは行っておりませんので、その辺の審査会など\nは行っていないということで、点数等も特にありません。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-041",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "審査会を行っていないので点数はないということで、わかりました。そういっ",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-042",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "た場合、これからこの会社がこの事業を運営するにあたり、自らが計画をし、\n自らが決定をし、自らが手を挙げて、この事業をやるんだという意思ではなく、\n町から頼まれてやる、やりたくはなかったと言わないですけども、思いもして\nなかったけれども、町から要請があったからこの事業をやるっていうことにな\nると、どうしてもこれ以降運営にあたって、いやもう言われたからやるんだよ\nね、自らこの事業に参加をするという、そこの部分がうまくいかないんじゃな\nいんですかね。ですからそういった意味でも僕は２回目の募集をし、プロポー\nザルにかけて、そして、その判断をすべきだというふうに考えているんですけ\nども、それについてはいかがお考えでしょうか。",
+    "text_length": 311,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-043",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回、４月１８日、結果的には参加表明といいますか、応募がなかったという\nことでございまして、その後条例上、どういった団体なり、機関といいますか、\n組織にこれを受けていただけるかというような判断を町としてもしなければな\nらないということでございまして、いろいろですね、応募がなかったという理\n由の一つにもなるかもしれませんけれども、今こういった事業を展開するうえ\nでのスタッフの確保ですとか、それから尚早でありますけども、やはり初期投\n資にかかるというようなところもありますし、それからアイヌ文化に特化した\n施設利用、宿泊等も含めて非常に条件があったということで、この施設の整備\nするという基本的な目的をもってしますと、どうしてもそういった施設の管理、\n運営になってしまうということでございまして、いろいろ町としても示した結\n果、そういった条件を満たすような団体として、それから独自事業として、さ\nらにこの施設を使ったアイヌ関連の事業を展開するという意味では、本当にも\nう５年という、設立以降５年という時間が経っておりますけども、公社として、\nそういったものに対する蓄積が相当できているというようなところもあるとい\nう判断で、町としては公社にお願いをしたというところでございまして、ただ\nこういう宿泊業としては、まだまだ未知なところが、未開なところがあります\nので、今後いろんな方の力を公社として借りながら、先ほど言いましたように、\n民業へのいろんな影響も公社として考えながら、何とかうまく運営をしていき\n- 4 -\nたいなということで、私は公社の社長という立場もございますが、非常に微妙\nな立場でございますけども、当初プロポーザルの仕様に則ったことを、公社だ\nからいいかげんにやってるんじゃないかとか、そういうことを言われることの\nないようなことで、ぜひこの施設を運用していきたいというふうに思っていま\nすので、ご理解お願いしたいというふうに思ってます。",
+    "text_length": 827,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-044",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほど千葉議員の質問に対する、副町長の答弁をちょっと確認したいんですけ",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-020"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-045",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "ども、先ほど指定業者の公社の方たちとお話をして、詳細を決めた後に、説明\n会を宿泊業者の方とっていうふうに聞いたんですけども、決めてから宿泊業者\nの方と会議ということで、ちょっとひっかかったのが、決めてしまった後やる\nことによって、その方たちがもしいろんな意見といいますかね、要望といいま\nすか、そういうことが出た場合は、詳細決めたことも中身を変えていくってい\nう柔軟な会議になるんでしょうか。それをちょっとお聞きしたいんですけれど\nも。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-046",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "その辺は柔軟に対応していきたいと思っていますので、何もなしでご説明とい\nうよりは、少し形があったほうがいろいろ意見は言ってもらえるかなというふ\nうに思っていますんで、その後、調整してから会議を開きたいと思います。",
+    "text_length": 106,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-022"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-047",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今様々な意見ありましたけども、僕はちょっと常任委員会が違うので、最後の",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-048",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "木村議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村 英彦",
+    "member_faction": "",
+    "text": "説明ちょっと聞いていなくて、内容のほうは深くはわかっていませんけども、\n聞いた話によると、かなり縛りがきつい要綱になっていたというふうに聞いて\nおります。アイヌ文化に関わる人しか泊めちゃ駄目だとか、何かそういうよう\nなことも書いてあったというふうに聞いてますけども、要綱についても、これ\nきちっと１回こういう縛りが結構きついからプロポーザルのほうで、合意がで\nきなかったんではないかなっていうこともあると思うんですよね。だからそれ\nもあってこの要綱も１回精査したらいいんじゃないかなと思っています。当然\n合同常任委員会の中でも地元の業者ときちっと話して仲よくやってくれよって\n話は、各委員の中で出ていた経緯もあります。それを含めてですね、アイヌ施\n策推進課長のほうがきちっとやっていきますっていう経緯があったので、地域\nのやっぱりきちっと理解得られなければならない、そのためにアイヌの関係す\nる、そういう人たちしか泊めないよとかそういう要綱が入ったっていうふうに、\n僕は思っているんですよね。そういうこともそれは別に悪いことじゃないと思\n- 5 -\nっています。そういうことをきちっと世間に見てもらって、そういう関係の人\nしか泊まれないんだとかね、そうなれば、周りの人たちも自分らのお客さんが\n泊まれるわけじゃないんだなっていうことをわかると思うんですよ。そういう\nのも含めてきちっと議論して、もう１回要綱を作り直して、プロポーザルで人\nはいなかったわけだから、だから、今は公社が受けると。その中でやっぱり作\nり上げて、もう１回練り直して、１回議会のほうにね、出していただく、いけ\nないかなと思っているんですけども、そこら辺はどうでしょうか。",
+    "text_length": 721,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-024"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-049",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。その辺も旅館業法の関係とかもありますので、少しその辺は保健所等々、\n宿泊機関とも、協議をしながら作り上げて、また議会には当然説明していきた\nいと思っていますので、よろしくお願いしたいと思います。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-050",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号につきましてご説明いたしますので、２ページをご覧ください。令\n和７年度平取町一般会計補正予算第１号は次に定めるところによるものとしま\nす。第１条、歳入歳出予算の補正ですが、歳入歳出にそれぞれ７００万円を追\n加し、予算の総額を７４億６，０００万円にしようとするものです。第２項で、\n歳入歳出予算の補正の区分及び金額等については第１表、歳入歳出予算補正に\nよるものとしております。それでは歳入歳出予算事項別明細書の歳出からご説\n明いたしますので、６ページをお開き願います。２款１項９目企画費、１４節\n工事請負費７００万円の追加です。これは国道２３７号線振内歩道整備事業に\n係る仮道の撤去が予定していた時期より早まったことから、仮道に設置してい\nた街路灯９基について移設するための工事費７００万円を補正しようとするも\n- 6 -\nのです。財源は全額一般財源となります。歳出については以上です。次に歳入\nについてご説明いたしますので、５ページをご覧ください。２０款１項１目１\n節繰越金７００万円の追加です。ただいま歳出でご説明の補正額の財源を繰越\n金に求めるものです。以上議案第２号のご説明とさせていただきますので、ご\n審議のほどよろしくお願いいたします。",
+    "text_length": 529,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-3-051",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "04月30日",
+    "date": "2025-04-30",
+    "speaker": "税務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告第１号、専決処分報告についてご説明申し上げます。議案書の７ページ目\nをご覧ください。報告第１号、平取町税条例の一部を改正する条例について、\n別紙のとおり専決処分をいたしましたので、地方自治法第１７９条第３項の規\n定に基づき、議会に報告し、承認を求めようとするものであります。次の８ペ\nージ目をご覧ください。令和７年専決処分第１号、平取町税条例の一部を改正\nする条例につきまして、令和７年３月３１日、地方自治法第１７９条第１項の\n規定により専決処分をするものです。今回の改正は、地方税法及び地方税法施\n行令さらに関係政令が改正され、３月３１日に公布、同年４月１日から施行さ\nれたことにより条例を改正する必要が生じ、専決処分をしたものでございます。\nそれでは、本日お配りしました資料により概要を説明させていただきたいと思\nいます。改正の内容になりますけれども、今回の改正は大まかに５点となって\nございます。まず一つ目は公示送達関係、二つ目は町民税関係、三つ目は軽自\n動車税関係、四つ目は固定資産税関係、五つ目はたばこ税関係の改正でござい\nます。まず、１、公示送達ですが、これは省令の改正に合わせて公示送達の方\n法について改正を行うものでございます。公示送達とは、税に関する通知書類、\n郵便等で交付を行いますけれども、住所や居所が明らかでなく交付できない場\n合、町の掲示板に必要な書類を掲示することで書類の送達があったとみなす制\n- 7 -\n度でございます。この掲示板に掲示する公示送達を町のホームページに公示事\n項を表示するとともに、従来の掲示板もしくは事務所に設置した電子計算機の\n画面表示で行うことでも可能とするものでございます。次に町民税の特定親族\n特別控除について、こちらは年齢１９歳以上２３歳未満の特定親族について、\n扶養控除となる所得を超えた場合でも新たに特別控除の枠を設け、段階的に控\n除が逓減する改正でございます。次に３、軽自動車税関係の改正でございます。\n（１）で、１２５ｃｃ以下で最高出力４キロワット以下の新基準バイク、こち\nらをこれまでの原付と同じ年間２，０００円として税率区分に追加する改正で\nございます。（２）では、軽自動車税の減免申請時に運転免許証を掲示する義務\nについて、マイナ免許証の掲示でも適用ができるとする改正でございます。次\nに４、固定資産税関係の改正でございます。長寿命化の大規模修繕を行ったマ\nンションについて、所有者から申告書の提出がなくても管理組合の管理者から\n提出があれば、減額の特例の適用ができるとして令和５年４月に施行した制度\nでございまして、この期限が２年間延長され令和９年３月３１日までとする改\n正でございます。次に５、たばこ税関係の改正でございます。加熱式たばこの\n課税方式を見直すもので、２段階に分けて一本あたりの税額を紙巻きたばこと\n同等にする改正でございます。次に、条例の施行日ですが、令和７年４月１日\nの施行、ただし、公示送達については地方税法等の一部を改正する法律の施行\nの日、町民税の特定親族特別控除については令和８年１月１日、たばこ税につ\nいては令和８年４月１日を施行日とします。以上が主な改正点でございまして、\n議案のほうで具体的な改正箇所の説明をさせていただきたいと思います。議案\nの１４ページ、新旧対照表をご覧ください。右が改正前、左が改正後でありま\nして、改正の下線部分について説明いたします。まず、最初に記載の第１８条\nの下線部分については、公示送達についてホームページと電子掲示を用いる方\n法の提供する改正でございます。次に第１８条の３の改正になりますけれども、\nこちらは先ほどの第１８条の改正に伴って文言の省略をする整理であり、内容\nに変更はございません。次に第３４条の２の下線部分は、所得の控除に特定親\n族特別控除額を追加するものでございます。次に１５ページに移りまして、第\n３６条の２第１項の下線部分は、特定親族特別控除の創設に伴って町民税の申\n告規定を整備するものでございます。次に１６ページ目に移りまして、同じ同\n条第１０項の下線部分になります。こちらは法改正に伴って、法律の条ずれの\n整理をするものでございます。次に第３６条の３の２第１項第３号の下線部分\nですが、こちらは給与所得者の扶養親族等申告書の記載事項に特定親族を追加\nするものでございます。次に第３６条の３の３第１項ですが、次の１７ページ\n目の最初の下線部分になります。こちらは特定扶養親族特別控除の創設に伴っ\nて、公的年金受給者の扶養親族等申告書の規定を整備するものでございまして、\nその下の下線部分、第３号の部分では申告書の記載事項に特定親族を追加する\nものでございます。次に第６３条の２第１号の下線部分ですが、こちらは個人\n番号の利用等に関する法律の改正に伴って項ずれの整理をするものでございま\n- 8 -\nす。次に１８ページ目に移ります。第８２条の第１項第１号の下線部分になり\nますが、こちらは軽自動車税の種別割の税率の改正でありまして、新たにハの\n部分に２輪で１２５ｃｃ以下かつ、出力４キロワット以下である新基準原付バ\nイクの税率、年額２，０００円の条文を追加し、これに合わせて、イ、ロ、ニ、\nホで示している各記号のずれの整理をするものでございます。次に８９条第２\n項は、次の１９ページ目になりまして、第２号の下線部分になりますけれども、\n第６３条の２と同じく個人番号の利用等に関する法律、こちらの改正に伴って\n項ずれの整理とします。その下、第５号については先ほどの新基準原付バイク\nの税率区分の創設に伴って減免申請書の記載事項の追記をいたします。次に、\n第９０条第２項は身体障害者に対する種別割の減免でございまして、まず、最\n初の下線部分は身体障害者に係る文言の整理、その下の次２０ページ目にかけ\nてになりますけれども、第５号の下線部分については減免申請時に運転免許証\nの掲示をマイナ免許証でも提供できるとするものでございます。またその下、\n第３項についてはマイナ保険証の提示を受けた場合、免許証情報を確認する措\n置を受ける規定を新たに追加し、それに伴って４項と５項の項ずれを整理する\nものでございます。次に第１３９条の３第２項第１号の下線部分と、次の２１\nページ目に移りまして、第１４７条の下線部分については、第６３条の２の改\n正と同じく、個人番号の利用等に関する法律の改正に伴って項ずれの整理をす\nるものでございます。次に附則の第１０条の２第２３項から第２６項までにな\nりますけれども、こちらは法律の附則の改正に伴って項ずれを整理するもので\nございます。次に附則第１０条の３ですが、こちらは次の２２ページ目に移り\nまして、第１５項の追加条文については特定マンションの減額特例ができる期\n限の２年延長がこちらの改正になるものでございます。次に附則第１６条の２\nの２第１項は加熱式たばこ税の課税標準の特例に関する条文の新設になるもの\nでございます。令和８年４月１日以降に売り渡しが行われた加熱式たばこに関\nする新たな規定を追加し、第１号では葉たばこを紙や類する材料のもので巻い\nた加熱式たばこ０．３５グラムを紙巻たばこ１本に換算する規定となるもので\nございます。次に第２号については２３ページ目にかけてなりますけれども、\n第１号以外の加熱式たばこの場合、０．２グラムを紙巻たばこ１本と換算し、\n品目ごと、１個が４グラム未満の場合は、紙巻たばこ２０本に換算するとした\n規定でございます。次に第２項は、加熱式たばこは紙たばこと同様、売り渡し\nが行われた段階で課税するという規定になるものでございます。次の第３項で\nは、加熱式たばこの換算は品目ごと、１個あたりの重量に０．１未満の０．１\nグラム未満の端数がある場合は、切り捨てるとした規定でございます。次の第\n４項第１号と第２号については、加熱式たばこと併せて喫煙に供されるもの、\nこれは喫煙に必要な器具や部品をいうものでございますけれども、こちらは同\n条第１項第１号、第２号の規定でする、たばこ税の重量の換算には含めないと\nする規定になるものでございます。以上が改正部分の説明でございまして、説\n明のページを戻りますけれども、１１ページ目をご覧ください。１１ページ目\n- 9 -\nの真ん中から少し下の附則の部分になるものでございます。第１条、施行期日\nとして、令和７年４月１日を施行日とします。ただし、第１号として、特定扶\n養親族特別控除に関する規定は施行日を令和８年１月１日とし、第２号、加熱\n式たばこに関する規定は令和８年４月１日を施行日とします。第３号、公示送\n達に関する規定は地方税法等の一部を改正する法律規定の施行の日とします。\n第２条、公示送達に関する経過措置ですが、施行日以後に行う公示送達に適用\nし、同日前の公示送達については従前の例とします。第３条、町民税に関する\n経過措置ですが、第１項から第４項まで全て特定扶養親族特別控除に関連した\n規定でございまして、令和８年度以後の町民税について適用し、令和７年度ま\nでについては従前の例とするものでございます。第４条、固定資産税に関する\n経過措置ですが、特定マンションの固定資産税減額特例に関する規定は、令和\n７年度以降の固定資産税に適用し、令和６年度までの固定資産税については、\n従前の例とするものでございます。第５条、軽自動車税に関する経過措置です\nが、新基準、原付バイクに係る規定は令和７年度以後の軽自動車税に適用し、\n令和６年度までの軽自動車税については、従前の例とするものでございます。\n第６条、町たばこ税に関する経過措置ですが、第１項、加熱式たばこに係るた\nばこ税の規定は、令和８年４月１日以前のたばこ税については従前の例とする\nものでございます。第２項では、令和８年４月１日から９月３０日までは現行\nの換算と新換算それぞれに０．５を乗じて、合算した本数で換算するとして、\n第３項では換算において端数が生じた場合は切り捨てるとした規定でございま\nす。以上で、平取町税条例の一部を改正する条例の説明を終了させていただき\nます。ご承認賜りますよう、よろしくお願いいたします。",
+    "text_length": 4229,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-029"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-052",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日招集されました、令和７年第５回平取町議会臨時会の議会運営等につきま",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-053",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "しては、本日開催しました議会運営委員会において協議し、会期については、\n本日、５月３０日の１日間とすることで、意見の一致をみておりますので、議\n長よりお諮り願います。",
+    "text_length": 83,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-054",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは互選により選考委員長となりました中川でございます。先ほど開催さ",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-055",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "中川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中川 嘉久",
+    "member_faction": "",
+    "text": "れました各常任委員の選考結果についてご報告いたします。総務文教常任委員、\n崎廣議員、千葉議員、金谷議員、四戸議員、高山議員でございます。産業厚生\n常任委員、中川議員、萱野議員、木村議員、松澤議員、四戸議員でございます。\nそれから議会広報広聴常任委員会、平取町議会委員会条例第２条により、９名\nとなっているところ、議会の運営に関する基準１１１先例２により、議長を除\nく全議員とすることとしております。現在１名欠員ですので、委員は議長除く\n８名とすることとする。以上のとおり選考結果をご報告しますので、議長より\nお諮り願います。",
+    "text_length": 262,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-056",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま、総務文教常任委員に選任されました高山議長から、常任委員を辞任",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-057",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "四戸議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "四戸 正彦",
+    "member_faction": "",
+    "text": "したい旨の申し出がありました。議長は、その職責上、どの委員会にも出席す\n- 2 -\nる権限を有しているほか、可否同数の場合における採決権など、議長固有の権\n限を考慮するとき、ひとつの委員会に委員として所属することは適当ではなく、\nまた行政実例でも議長については、辞任を認めているところでもあり、総務文\n教常任委員を辞任したいとするものです。辞任について許可することにご異議\nございませんか。\n（異議なしの声）\n異議なしと認めます。したがって、議長の総務文教常任委員の辞任については、\n同意することに決定いたしました。\n休憩します。\n（休憩：午前 ９時５４分）\n（再開：午前 ９時５５分）\n再開いたします。\nただいまの辞任により、総務文教常任委員会が１名欠員となりました。お諮り\nします。この欠員について、再度選考委員会を開催し、補充したいと思います。\nご異議ありませんか。\n（異議なしの声）\n異議なしと認めます。それでは、常任委員選考と同じ選考委員により、再度の\n選考をお願いいたします。\n休憩します。\n（休憩：午前 ９時５５分）\n（再開：午前 ９時５７分）\n再開いたします。\n選考の結果を選考委員長より報告をお願いいたします。中川議員。",
+    "text_length": 519,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-058",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま選考委員で決めましたので発表したいと思います。総務文教常任委員",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-010"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-059",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "中川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中川 嘉久",
+    "member_faction": "",
+    "text": "に松澤委員を加えたいと思います。以上です。",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-060",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議会運営委員の選任については、四戸議員、金谷議員、私中川、松澤議員、木",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-061",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "中川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中川 嘉久",
+    "member_faction": "",
+    "text": "村議員でございます。以上のとおり選考結果をご報告しますので、議長よりお\n- 4 -\n諮り願います。",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-062",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ジをご覧いただきたいと思います。本件につきましては、議会の議決に付すべ\nき契約及び財産の取得または処分に関する条例第３条の規定によりまして、取\n得する財産が１，０００万円以上となりますことから、議会の議決を得ようと\nするものでございます。今回取得する財産は、タブレット型教育用パソコン４\n０９台でございます。取得金額は２，１４６万２３０円で、取得相手方は、東\n日本電信電話株式会社、執行役員、北海道事業部長、島津泰氏でございます。\n今回取得しますタブレット型パソコンにつきましては、小中学校の全児童、生\n徒、教員が授業等で使用するパソコンとなってございます。内訳につきまして\nは、児童、生徒３５１台、教員用５８台となってございます。現在、児童、生\n徒が使用しておりますタブレット型パソコンにつきましては、令和２年度に購\n入したものでございまして、今年度で５年を経過し、Ｗｉｎｄｏｗｓ１０のＯ\nＳのサポートが今年度終了しますことから更新時期となりますので、当初予算\nに計上させていただきまして今回購入することとなりました。また更新した後\nの古いタブレットにつきましては、児童、生徒の情報や画像などがタブレット\nの中に入っていますことと、データ消去にかかる費用もある程度かかりますこ\nとから、学校で利用できる分を残しまして、それ以外のタブレットの活用につ\nきましては今後検討していきたいと考えております。また道からの補助金につ\nきましては、児童、生徒に係る台数３５１台が補助の対象となってございまし\nて、３分の２が補助率ということになってございます。説明は以上となります\nので、ご審議のほどよろしくお願いいたします。以上です。",
+    "text_length": 711,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-063",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当初予定が４１１台だったんで生徒、児童の数が減ったんだと思うんですけど",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-064",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "も。納入業者の関係なんですけども東日本電信電話株式会社ということになっ\nてますけど、これは見積り合わせですか、それとも入札ですか。そして、町内\nの業者に門戸は開かれていたのかどうか。それと、当初の恐らく設定した数字\nがあるとは思うんですけども入札率がどれぐらいになったのか、その辺のとこ\nろ分かれば教えていただきたいなと思います。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-065",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "札をとってございます。それで全道各市町村から希望するタブレットをある程\n度、仕様ごとにまとめまして入札を行っているというところでございます。ま\nた入札の結果、落札した業者とは市町村ごとで契約をするというような手続き\n- 6 -\nになっております。以上です。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-066",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "道教委で全道一斉に購入ということで、そのような取り扱いということはわか",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-022"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-067",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "りました。わかりましたということなんですけど。それと再利用の関係なんで\nすけども、現有タブレットの中に入っているものの消去の関係でかなり厳しい\nようなお話をされてました。これから検討というのも発言ありましたけども、\n文科省は再利用をかなり積極的に進めていると思うんですけども、例えば子ど\nも達にそのまま貸与をするだとか、塾で使うだとか、自治体の窓口で使うだと\nか、図書館で使うだとかいろいろケースが考えられると思うんですけども、現\n時点でどのように、経費のかかることだという言い方をしてますから厳しいん\nだと思うんですけども、公的な使い方をすれば使えるのかなと思うんですけど\nも、もう少し具体的に再利用について教えてください。",
+    "text_length": 313,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-068",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ころもありまして、今後使用するのもＷｉ−Ｆｉ環境のあるところに限られる\nかなというふうに思っておりますが、まずは公共施設のほうで使える、利用し\nたいという希望を募りまして、まずそちらのほうに利用できれば利用したいと\nいうふうに考えているところでございます。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-069",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "をご覧ください。本件につきましては、議会の議決に付すべき契約及び財産の\n取得または処分に関する条例第３条の規定によりまして、取得する財産が１，\n- 7 -\n０００万円以上となりますことから、議会の議決を得ようとするものでござい\nます。今回取得する財産は、空調設備、ルームエアコン２６台でございます。\n設置箇所は、町立小中学校７校の普通教室等でございます。取得金額は２，２\n１１万円で、取得の相手方が有限会社ハウビングショップ樫野、代表取締役、\n樫野恭範氏でございます。今回取得しますルームエアコンの設置につきまして\nは、近年、地球温暖化の影響によりまして、北海道でも夏の気温が上昇してお\nりますので、児童、生徒を熱中症による体調不良のリスクから守り、健康面を\n確保するため、今年度当初予算に計上させていただきまして、今回購入するこ\nととなりました。設置箇所につきましては、小中学校の普通教室と平取中学校\nの音楽室に設置いたします。平取中学校の音楽室は３階にございまして、授業\nだけでなく部活動でも使用すること、窓を開けての演奏ができないため教室に\n熱がこもりやすいこと、湿気の多いと高価な楽器の故障につながることなど、\n総合的に判断しまして設置することといたしました。なお、納期につきまして\nは７月２２日を予定しておりますが、なるべく早く付けられるよう契約者と相\n談しながら進めるように考えております。ご説明は以上となりますので、ご審\n議のほどよろしくお願いいたします。",
+    "text_length": 635,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-070",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大変待ちに待ったエアコンかなというふうに思っておりまして、その分につい",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-029"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-071",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "千葉議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千葉 良則",
+    "member_faction": "",
+    "text": "ては全然何も問題なく考えております。取得金額の中に取付工事費も当然のこ\nとながら含まれての金額だと思うんですけど、ただ２６台、小中学校７校に設\n置するということになったら、結構時間的に、ハウビングショップさんのほう\nの考え方もあると思うんですけども、その辺できるだけ、さっき７月２１日っ\nていうことなんですけども、できれば１日も早い設置をやっぱり望んでいるの\nが、各教室、各学校の要望だと思っているんですよね。その辺の打ち合せに対\nしてはハウビングショップさんのほうと、何かこう詳細的な取付工事に対する\n打ち合せとか、品物がいつ入ってくるとか、詳細は打ち合せしてるんでしょう\nか。",
+    "text_length": 290,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-030"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-072",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "月２２日までには納入できそうだということで聞いておりますので、こちらを\n納期とさせていただいたところですけれども、現在もハウビングショップ樫野\nさんとは協議しておりまして、１日も早くというお話はさせていただいており\nます。またちょっと電気工事が必要な箇所もございますので、そちらもあわせ\nてスケジュールを立てながら、なるべく早く設置できるようにというふうに進\n- 8 -\nめている段階でございます。よろしくお願いします。",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-032"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-073",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これ予算説明の時も確認したと思うんですけども、ほぼこれで普及率は１００",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-033"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-074",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "パーセントになるんだとは思うんですけど、今回おそらく平中が５台、振中が\n３台、平小６台、残り小学校４小が各３台っていうことでの１８台というふう\nに予算書では確認をさせてもらいました。これに以前付いたものがあるので、\nこれがもう最後でというお考えなんですかね。まだ可能性はこれから増えると\nいうような感じになってきますかね。その辺ところを教えてください。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-034"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-075",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "きましては今回の台数で全て設置されるということになってございます。それ\nで昨年付けさせていただいたエアコンが普通教室以外の教室にも、１、２台ず\nつ付いてございますので、当分はこの台数で生徒達の授業に支障なく授業がで\nきるというふうに考えておりますので、今回のこれで全て一旦は完了というこ\nとになってございます。以上です。",
+    "text_length": 160,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-036"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-076",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第３号につきましてご説明いたしますので、３ページをご覧ください。令\n和７年度平取町一般会計補正予算（第２号）は次に定めるところによるものと\nします。第１条、歳入歳出の補正ですが、歳入歳出にそれぞれ７４６万２，０\n００円を減額し、予算の総額を７４億５，２５３万８，０００円にしようとす\nるものです。第２項で、歳入歳出予算の補正の区分及び金額等については、第\n１表歳入歳出予算補正によるものとしております。第２条、地方債の変更は、\n- 9 -\n第２表地方債補正によります。それでは、歳入歳出予算事項別明細書の歳出か\nらご説明いたしますので９ページをお開き願います。上段、６款２項１目観光\n振興費２２３万８，０００円の追加です。これは日高山脈襟裳十勝国立公園の\n指定一周年を記念し、当町の自然資源の魅力発信及び観光振興を目的に著名人\nを招いたトークショー及び記念登山イベントを開催しようとするものです。８\n節旅費３０万１，０００円の追加ですが、これは著名人及びマネージャーの費\n用弁償を計上しております。１０節需用費、食糧費１万８，０００円は２人の\n昼食費を計上し、印刷製本費２万１，０００円はチラシ４，０００枚、ポスタ\nー３００枚の印刷費を計上しております。１１節役務費、手数料１８９万８，\n０００円の追加です。これは著名人及びマネージャー、登山ガイドを手配する\n業者への手数料を計上したものです。財源はコミュニティ助成事業助成金を２\n００万円充当し、残額２３万８，０００円は一般財源となります。下段、７款\n４項３目住宅建設費、委託料９７０万円の減額です。本町緑ヶ丘団地における\n町住宅の建て替えについて、当初は町が直接建設する方式で計画しておりまし\nたが、民間活用による建設方式に移行したため、当初予算措置を行った実施設\n計業務委託料１，３００万円を減額し、新たに民間活用方式による建設事業実\n施に必要となる調査等支援業務委託料として３３０万円を計上しようとするも\nのです。財源には国庫補助金と地方債を特定財源として充当しますが、減額と\nなる額と増額となる額の差引額、国庫補助金は３２３万円、地方債は８４０万\n円をそれぞれ減額し、一般財源は１９３万円となります。歳出については以上\nです。次に歳入についてご説明いたしますので、７ページをお開きください。\n上段、１５款２項５目土木費国庫補助金、２節住宅建設費補助金３２３万円の\n減額です。これは歳出住宅建設費でご説明申し上げました委託料９７０万円の\n減額に伴う国庫補助金を算出したものとなっております。下段、２０款１項１\n目１節繰越金２１６万８，０００円の追加です。これは歳出の補正額から特定\n財源を差し引いた一般財源合計額２１６万８，０００円を繰越金に求めるもの\nです。８ページをお開きください。上段、２１款４項１目諸収入、２節雑入２\n００万円の追加です。これは歳出観光振興費でご説明申し上げました、補正額\n２２３万８，０００円のうち、コミュニティ助成事業助成金２００万円を計上\nしております。下段、２２款１項６目土木債、３節住宅債８４０万円の減額で\nす。これは歳出住宅建設費でご説明申し上げました委託料９７０万円の減額に\n伴う公営住宅建設事業債を減額するものです。事項別明細書のご説明について\nは以上となります。続いて第２表地方債補正についてご説明させていただきま\nすので、５ページをお開きください。公営住宅建設事業については、補正額の\n限度額８４０万円を限度額ゼロとし、限度額の合計としては補正前５億３，７\n７０万円のところ、補正額は５億２，９３０万円となります。１０ページには\n地方債現在高に関する調書を添付しており、本補正額を反映した現在高を記載\nしておりますので、後ほどお読み取り願います。以上、議案第３号のご説明と\nさせていただきますので、ご審議のほどよろしくお願いいたします。\n- 10 -",
+    "text_length": 1628,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-038"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-077",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ちょっと聞き逃したかもわかんないですけど、９ページの６款２項１目、節で",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-040"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-078",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "千葉議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "千葉 良則",
+    "member_faction": "",
+    "text": "いうと８節の旅費と１１節の役務費の関係なんですけども、費用弁償というの\nはこれ、あくまでも交通費の関係だと思うんですけども、手数料の部分では講\n演してくれるトークショーにかかる費用かなと思うんですけども、ちょっと手\n数料の中身、この１８９万８，０００円、紐解いてどういったことで充てられ\nてこの合計額になったのか、ちょっと教えてください。すいません。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-041"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-079",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず１６０万円が石丸謙二郎側の事務所への部分となってございます。そのほ\nかアテンドしていただく野村良太さんという方も一緒に来られますので、その\n方に対する部分が１９万８，０００円となります。そのほかいろいろ手配をし\nていただきます地元の平取町山岳会に対しては１０万円ということで合わせま\nして、１８９万８，０００円ということでございます。以上でございます。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-043"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-080",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今と同じところなんですけども、先日、常任委員会で説明のあった資料による",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-044"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-081",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "と、今の手数料というのは事務所手数料５０万円、そして報償費として、石丸\n謙二郎氏に１１０万円、野村氏に１９万８，０００円、山岳会に１０万円、そ\nれで１３９万８，０００円ということだと思うんですけど、これ科目の扱いな\nんですけども、手数料の、役務費のこの科目でいいんですかね、この報償費の\n１３９万８，０００円をこの中にぶち込むというのは、別科目で計上するのが\n筋じゃないかなと思うんですけども、科目の扱い方について教えていただきた\nいと思います。",
+    "text_length": 223,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-045"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-082",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "経費につきましては、説明時点では個人に対する謝礼という意味での報償費を\n想定しておりましたが、事務所、会社側に支払うものであれば、手配、手数料\nを含めた手数料で計上すべきという判断をさせていただきまして、常任委員会\nの説明資料とは異なりましたけども、手数料での計上とさせていただいており\nます。\n- 11 -",
+    "text_length": 154,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-046"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-083",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９ページの下の部分なんですけども、土木費のところなんですが、これ団地の、",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-047"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-084",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "木村議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村 英彦",
+    "member_faction": "",
+    "text": "町がやろうとしてるものを民間に委託するということで、この前説明あった時\nにですね、あそこの、みどりが丘全体をどうするのかっていうこともですね、\nまだきちっと定まっていなかったと思います。何年か前にあったグランドデザ\nインのことなんかもあって、そういうのをきちっと精査した中で、あそこを本\n当にやるのかやらないのか、そこも含めてですね、これから議論されるものだ\nというふうにして考えていたんですけども。ここでこの予算をつけて何をやる\nのか。要するにこれからまだグランドデザインを含めてどういうふうにするの\nかも、町としての方針も決まってない中で、ここで何をやるのかっていうのを\nちょっと教えてもらいたいんですけど、この予算つけて。",
+    "text_length": 314,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-048"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-085",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本町みどりが丘住宅団地建替基本計画の概要についてご説明させていただいた\nものは、確かにまだ経過という話もさせていただいておりますけれども、進み\n方としまして、民活を利用した建替計画をしていくという方針でいきたいとい\nうことでご説明させていただいておりましたので、今回民活を来年度から始め\nていきたいということもありまして、一応プロポーザルの、要は、要綱とかで\nすね、その辺の中身をちょっと整理していこうというのが今回の補正での委託、\n支援となります。その間、これからまたそれに向けて内部で調整しながら、ま\nた議会にも報告しながら、方向性をまず８月、９月、１０月というところを目\n途にして今進めておりますので、それをにらんだ補正ということでご理解いた\nだいて、今回６月、７月にはもう発注していくんですけども、とっていただい\nた業者さんと協力しながら整理をしていくというところの今回業務を計画した\nものですから、今回の補正ということでご理解いただければというふうに思っ\nております。",
+    "text_length": 439,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-050"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-086",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、説明わかりました。これからやっていくにあたっていろいろな資料が必要",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-051"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-087",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "木村議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村 英彦",
+    "member_faction": "",
+    "text": "だっていうこともあると思います。なんて言うんですかね。みどりが丘につい\nては今、平取高校の寮の話もあったりですね、いろいろこう、町としては中心\nになる地域だと思っています。その中でうちはバイオマスに関してもですね、\n率先してやっている町っていうこともあって、この前の常任委員会でもその部\n分は話させていただいたと。だからやっぱりなかなかね、行き当たりばったり\nの工事じゃなくてですね、ぜひ今回はがっちり腰を据えてですね、もう本当、\n- 12 -\n１００年後の子どもたちに胸を張って残していけるようなまちづくりをするん\nだと、やっぱりそのぐらいの思いを持ってですね、計画を立てていただきたい\nなと思っていますので、これが予算をつけて調査したからもう絶対やらなきゃ\nならないんだっていうことではないと思いますので、ぜひそこら辺を考えなが\nら進めていただきたいなと思います。",
+    "text_length": 384,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-052"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-088",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "常任委員会でも、今日も、また改めてご意見もいただきましたので、打ち合せ\nの中では、いわゆるゼロカーボンシティを標榜している当町でもありますので、\nできるだけそういったバイオマス系の利活用ですとか、そういうことも含めて、\n合わせて検討をして参りたいというふうに思っていますし、みどりが丘につき\nましてはですね、基本住環境として、住宅地としてですね、運営、活用するの\nが方向性として、というふうに私ども思っていますので、またいろいろ、ほか\nの施設の兼ね合いとかもございますので、あとトータル的なものもいろいろ検\n討の中でお示しさせていただきながら、説明させていただきたいと思いますの\nで、よろしくお願いします。",
+    "text_length": 303,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-053"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-089",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今の科目なんですけども、この予算書だけだとよくわかりにくかったんですけ",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-054"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-090",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "ども、要は１，３００万円を減額し、３３０万円を予算計上したということな\nんだっていうふうに理解はしました。当初予算のときに１，３００万円をその\nまま委託料で上げてた。これが減額になったということなんでしょうけど、総\n合計画と当初予算の時と先日の説明と今回の補正と余りにもころころころころ\n変わってきて、何か計画の意味合いというか総合計画そのものがこんな形でこ\nろころ変わってていいんですかっていう気持ちなんですけど。わかりにくい、\n一言で言うと。それでちょっと、この何日か、町のホームページなんかも見て\nたんですけども、総合計画の時には長寿命化計画に基づいてやっていくんだっ\nていう、そういえばその計画ってどんなふうになっているのかなと思って見た\nら、僕の探し方が悪かったのかもしれませんけども、ホームページでは見つけ\nることができなかった。だから何か情報の提供の仕方もよくわからないですし、\n何かその都度その都度、今木村議員が言ったとおり場当たり的に計画が動いて\nいる。それは計画と言わないんだと思うんですよね。その辺のところをもう少\nし整理して進んでいかないと、議会は何度か説明を受けてるからわかりますけ\nど、一般町民の方には全然わからなくて、一体何がどうなってるのっていうこ\nとになるんだと思うんですよね。その辺のところを以降ですね、きちんと計画\nに沿って、その計画を変更するときには、手続き、手順をきちんと踏みながら\n情報公開をして進めていってもらいたいなと思います。思いますという意見な\n- 13 -\nんですけども、何か回答があればお願いします。",
+    "text_length": 678,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-055"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-091",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "が現状です。ですので今後はせっかく作成させていただいた住環境計画もござ\nいますし、先ほどの公営住宅の長寿命化計画もございますので、その辺もホー\nムページのほうに掲載をしていきながら、皆様に見えるようにということで工\n夫をしていきたいというふうに考えます。今回の計画が確かに総合計画から変\nわったということで、ご意見だったと思うんですけども、申し訳ございません\nがちょっと検討の時期が若干ずれてたということもあってですね、ちょっとこ\nういう後手後手の提案となってしまったことはお詫び申し上げます。今後につ\nいてはこれらを糧にきちっとやっていけるように運用していきたいと思います\nので、ご理解いただければと思います。ありがとうございます。",
+    "text_length": 317,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-057"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-092",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "提出されました陳情４件について、本日開催しました議会運営委員会で協議を",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-059"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-4-093",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "05月30日",
+    "date": "2025-05-30",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "した結果、次のとおり常任委員会に付託して審査をすることで意見の一致を見\nています。陳情第２号、第３号、第４号、この３件については、総務文教常任\n- 14 -\n委員会への付託、陳情第５号については産業厚生常任委員会への付託としてお\nりますので、議長よりお諮り願います。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-table-060"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-094",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日招集されました、令和７年第７回平取町議会臨時会の議会運営等につきま",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-095",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "しては、本日開催しました議会運営委員会において協議し、会期については、\n本日、８月７日の１日間とすることで、意見の一致をみておりますので、議長\nよりお諮り願います。",
+    "text_length": 82,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-096",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "行政報告といたしまして要望の経過を報告いたします。はじめに日高総合開発\n期成会要望でございます。令和８年度の日高地方の総合開発に関する提案・要\n望をしてございます。要望の重点項目といたしまして、災害に強く安全で安心\nして暮らせる地域づくり、農業・林業・水産業の振興、住みよい生活環境の整\n備、特色ある地域文化の創造、地域医療・福祉体制の整備などとなってござい\nます。あわせて、高規格幹線道路「日高自動車道」の早期整備に関する提案と\n室蘭開発建設部、室蘭建設管理部への重点事項を要望してございます。当町か\nらは国道沿線の電線の地中化やオーバーレイ、道道平取静内線貫気別市街地の\n早期整備などについて要望をしてございます。要望先は北海道知事、北海道教\n育長、道議会議長ほか管内選出議員、各会派議員、北海道開発局長、室蘭開発\n建設部長、室蘭建設管理部長ほかでございます。要望月日は７月１６日から１\n７日の２日間、要望者は日高総合開発期成会といたしまして、私と四戸副議長\nが参加してございます。また日高総合開発期成会として道内要望と同様の内容\nと公共事業関係予算に関する内容で中央要望を行ってございます。要望先は道\n内選出国会議員、国土交通大臣、農林水産大臣、厚生労働大臣、環境大臣、財\n務大臣、文部科学大臣ほか関係省庁となってございます。要望月日は７月２９\n- 1 -\n日から３０日。要望者は日高総合開発期成会として、私が参加してございます。\n次に要望項目３のアイヌ総合政策推進に関する要望でございます。要望内容は、\nアイヌ総合政策推進交付金の潤沢な予算配分等について及び平取地域イオル再\n生に関し、エコミュージアムという概念を基本とする国営公園制度の活用、ア\nイヌ伝統工芸（アットゥシ）の重要無形文化財の指定・各個認定保持者の認定に\n関し要望してございます。要望先は道内選出国会議員、内閣府特命担当大臣、\n国土交通省北海道局長、内閣官房アイヌ総合政策室長でございます。また環境\n省には、日高山脈襟裳十勝国立公園の保全・活用の推進にあたりまして、地域\nのアイヌ文化とアイヌの人々との連携と参画に関し要望して参りました。要望\n先は自然環境局国立公園課長、自然環境整備課長でございます。要望月日は７\n月３０日から７月３１日で、私と平取アイヌ協会木村会長、宇南山副会長、川\n奈野副会長で要望してきてございます。以上、行政報告とさせていただきます。",
+    "text_length": 1017,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-097",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。それでは私のほうからヒグマ注意報発出の経過及びヒグマ目撃情報に対\nしての対応について報告をさせていただきます。まず、７月２９日の午後７時\n頃、小学生２人が町道本町グラウンド線でクマらしきものを目撃したとの情報\nを翌日の３０日に町の担当者が報告を受け、その後、猟友会と町で現地を確認\nをしましたけども、痕跡は見つからなかったということですが、猟友会による\n朝夕の巡回を行うことといたしました。次に７月３１日の夕方ですけども、町\nの担当者が民家のベランダに動物とみられる足跡があり不安視しているという\n情報を得ましたけども、当日は家主が不在だったため、翌日の８月１日に連絡\nをとり、家主の了解のもと、午後に警察、猟友会、そして町の担当者が足跡が\nある２階のベランダを確認したところ、子グマとみられる足跡が数か所、往復\nしたような足取りが確認されたということです。この足跡を家主が確認したの\nは７月２９日の朝７時頃ということで、朝夕の時間帯は違いますけども、町道\n本町グラウンド線の目撃情報と重なり、北海道と協議のうえ住宅街での出没や\n目撃が重なったことから、ヒグマ注意報を発することとし、期間は８月１日か\nら８月３１日の１か月となっております。町としての対応は、本町、荷菜地区\nに対し消防の広報用屋外スピーカーによる啓発と、車両による広報、新聞折込\nによるチラシの配布、ホームページでの周知を行っています。また門別警察署\nは夜間巡回を行っているところです。このほか学校等の関係機関にも周知を行\nっております。そのほか各自治会においては独自のチラシの配布を行っていた\nだきました。次に８月６日、昨日ですけども、朝５時頃、本町のふれあいセン\nターびらとり近くのアパートの住民から、室内犬が外を見て吠えていたため住\n民が外を見てみると、小柄なクマが歩いていたと町に通報があり、その後、猟\n友会、警察、町で現地を確認したところ、近くの草むらに何者かが通った跡と\n思われる痕跡が発見されまして、それ以外は特に見つけることはできませんで\n- 2 -\nした。また同じく、昨日の朝６時頃ですけども、義経公園付近で住民が町道病\n院住宅線の舗装道路上に濡れた動物の足跡を発見し、その後猟友会、警察、町\nで確認したところ、濡れた足跡は乾いてしまって発見はできませんでしたけど\nも、違う近くの場所で幅１０センチくらいのクマの足跡が発見されました。猟\n友会の見解では、母グマの足跡は発見できなかったことから、巣立って間もな\nい子グマと推測されるということでした。対応としては、義経公園を封鎖し園\n内に箱わなを設置、注意看板と監視カメラを設置しています。また消防の広報\n用屋外スピーカーによる啓発、車両による広報の実施、また本町墓地、荷菜墓\n地には、クマ出没注意及び供物の持ち帰りをという周知の看板を設置し、また\nホームページに掲載をしています。また本町、荷菜地区に対しては今週のまち\nだよりに啓発のチラシを折り込む予定となっています。そのほかの学校関係等\nについても周知をしているところです。このほか、門別警察署に夜の巡回と、\n本町自治会では該当町内会へのチラシの配布を行っていただいているところで\nす。以上報告します。",
+    "text_length": 1348,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-098",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号、固定資産評価員の選任についてを説明申し上げます。固定資産を\n適正に評価し、かつ町長が行う価格の決定を補助するための評価員の選任につ\nいて、地方税法第４０４条第２項の規定によりまして、議会の同意を求めるも\nのでございます。選任する者は、住所、沙流郡平取町字荷菜３５番地１８、氏\n名、松島和寿氏、生年月日、昭和４３年１２月１９日、５６歳でございます。\n令和７年７月１日付けの異動によりまして、税務課長となったことでの選任で\nございます。ご審議のほどお願い申し上げます。",
+    "text_length": 238,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-099",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号につきましてご説明申し上げますので、２ページをお開きください。\n令和７年度平取町一般会計補正予算第４号は次に定めるところによるものとし\nます。第１条、歳入歳出予算の補正ですが、歳入歳出にそれぞれ１,０５９万円\nを追加し、予算の総額を７５億３,９２３万８,０００円にしようとするもので\nす。第２項で、歳入歳出予算の補正の区分及び金額等については、第１表、歳\n入歳出予算補正によるものとしています。第２条、地方債の変更は、第２表地\n方債補正によります。それでは、歳入歳出予算事項別明細書の歳出からご説明\nいたしますので、９ページをお開き願います。上段、２款１項１２目ゼロカー\nボン推進費、１８節負担金、補助及び交付金３４６万円の追加です。これは住\nまいのゼロカーボン化推進事業として、当初予算において太陽光発電設備や蓄\n電池などの再生エネルギー設備への支援と、エアコン２０台を含む省エネルギ\nー設備導入支援補助金として３４９万円を措置しましたが、７月後半の猛暑の\n影響を受け、省エネルギー型エアコンの導入希望者が急増したことを受け、予\n算の範囲内での補助とするか、追加補正し対応するかを検討しましたが、北海\n道内にあって４０度に迫る異常気象が発生していること、地域経済の活性化に\n寄与していることなどを考慮し、北海道からの支援を受けられている本年度で\nの補正が妥当と判断し、導入済みとこれまでに導入希望のある台数３７件に加\nえ、締切日である８月３１日までの追加需要を３０台と見込み、合計６７台分\nのエアコン補助の予算の確保のため、３４６万円を追加補正しようとするもの\nです。財源は道補助金１７３万円、地方債１７０万円、残額３万円が一般財源\nとなります。下段、３款１項７目アイヌ施策推進費７１３万円の追加です。１\n０節需用費、修繕料４２８万９,０００円の追加ですが、これは二風谷にあるイ\nオルの森の作業道が雨により洗掘され通行に支障が生じていることから、道路\n延長５００メーターの補修や排水対策工施工のための費用を補正しようとする\nものです。１４節工事請負費２８４万１,０００円の追加ですが、これは本町親\n水公園内に水辺空間としてガマを育成している箇所がありますが、エゾシカな\nどの有害獣による食害発生の懸念があるため、侵入防止柵４００メーターの設\n置をするものとし、必要な経費を補正しようとするものです。これらの財源は\n国庫補助金５７０万４,０００円、地方債を１３０万円充当し、残額１２万６,\n０００円が一般財源となります。歳出については以上です。次に、歳入につい\nてご説明いたしますので、６ページをお開きください。上段、１５款２項２目\n民生費国庫補助金、１節社会福祉費補助金５７０万４,０００円の追加です。こ\nれは歳出アイヌ施策推進費でご説明申し上げました修繕料と工事請負費の８０\nパーセントをアイヌ政策推進交付金として計上しております。下段、１６款２\n項１目総務費道補助金、２節企画費補助金１７３万円の追加です。これは歳出\nゼロカーボン推進費でご説明申し上げました住まいのゼロカーボン化推進事業\n補助金の２分の１の額を計上しております。７ページをお開きください。上段、\n２０款１項１目１節繰越金１５万６,０００円の追加です。これは歳出の補正額\n- 4 -\nから特定財源を差し引いた一般財源合計額１５万６,０００円を繰越金に求め\nるものです。下段、２２款１項１目１節総務債１７０万円の追加です。これは\n歳出ゼロカーボン推進費でご説明申し上げました住まいのゼロカーボン化推進\n事業の財源として過疎債を充当するものです。８ページをお開きください。２\n２款１項２目１節民生債１３０万円の追加です。これは歳出アイヌ施策推進費\nでご説明申し上げました事業費の補助残に対し、教育・福祉施設等整備事業債\nを充当しようとするものです。事項別明細書のご説明については以上となりま\nす。続いて、第２表、地方債補正についてご説明させていただきますので、４\nページをお開きください。地方債の合計額については、補正前で５億２,９３０\n万円でしたが、この度の補正により３００万円追加となり、補正後の限度額は\n５億３,２３０万円となります。１０ページには地方債現在高に関する調書を添\n付しており、本補正額を反映した現在高を記載しておりますので後ほどお読み\n取り願います。以上、議案第２号のご説明をさせていただきましたので、ご審\n議のほどよろしくお願いいたします。",
+    "text_length": 1870,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-010"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-100",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６番崎廣です。９ページ、ゼロカーボンの補助金なんですけども、今のご説明",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-101",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "でいくと追加の３０台分の補正というふうに理解してよろしいですか。",
+    "text_length": 32,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-102",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい、２番中川です。同じく９ページの下の水辺空間整備事業工事とあります",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-103",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "中川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中川 嘉久",
+    "member_faction": "",
+    "text": "けども、これ、設置するのはいいんですけども、管理についてはどこがするの\nかちょっと教えてもらえますか。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-104",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい、わかりました。公社のほうで管理をするということなんですけども、ど",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-5-105",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 5,
+    "schedule_name": "08月07日",
+    "date": "2025-08-07",
+    "speaker": "中川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中川 嘉久",
+    "member_faction": "",
+    "text": "うしてもシカ柵というのは、どうしてもシカが寄ってきたら壊されるもんで、\n一応修理はしていかなきゃいけないというふうになると思います。今農業のほ\nうでもシカ柵ついていますけども、確実に修理が必要となっております。そこ\nで、その公社のほうでね、修理をするのかどうかわかりませんけども、その修\n理費というのはどこから出るのか、またどこから出すのかちょっとそこら辺も\n教えてもらえますか。",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-table-020"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-106",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。本日招集されました、令和７年第９回平取町議会臨時会の議会運営等に",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-107",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "松澤議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松澤 以久子",
+    "member_faction": "",
+    "text": "つきましては、本日開催しました議会運営委員会において協議し、会期につい\nては、本日、１１月２６日の１日間とすることで、意見の一致をみております\nので、議長よりお諮り願います。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-108",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "要望経過報告をさせていただきます。（１）から（３）までは日高総合開発期成\n会の要望となってございます。最初に（１）のホッカイドウ競馬の永続的な発\n展に関する要望でございます。内容は、これまで以上に出走馬を確保、魅力あ\nる番組づくりや、老朽化の進むインフラ整備に必要な予算の確保、２０２５年\nの販売額は５７３億円を超え、過去最高額を更新する結果となっておりますけ\nれども、この収益を競馬事業へ優先的に還元すること。また、すでに工事が進\nんでいる厩舎、厩務員住宅等の移転・新築など、老朽化の進む施設整備をスケ\nジュール通り着実に進めることなどを要望してきてございます。要望先は北海\n道知事、副知事、北海道農政部長、北海道競馬事業室長、北海道議会議長、副\n議長他でございます。要望月日は１１月４日、要望者は日高総合開発期成会と\nして、私を含む管内７町の町長となってございます。また同日、（２）の大規模\n災害に備えた代替（避難）道路の新設に関する要望も行ってまいりました。近\nい将来予想される日本海溝、千島海溝沖地震に伴う津波など、これらによって\n日高沿岸の主要道路が被災を受けた場合、交通手段の確保のため、代替となる\n道路の新設に関し要望をしてございます。特に様似、えりもの沿岸線の道路に\nついては、他に代替するところがほとんどない状況でございまして、早期の検\n- 1 -\n討計画的推進を要望してきてございます。要望先は北海道知事、北海道建設部\n長、北海道建設部技監、北海道建設部土木局長、北海道議会議員でございます。\n次に（３）の高規格道路「日高自動車道」の整備促進についての中央要望でご\nざいます。令和７年度内には新冠インターまでの開通が予定されているところ\nでございますけれども、その先の早期整備に関し、下記の重点要望と同様の内\n容で要望してきたところでございます。要望先は道内選出国会議員、財務省主\n計官、国土交通省北海道局他でございます。要望月日は１１月１８日から１９\n日の２日間、要望者は高規格道路日高自動車早期建設促進期成会・日高総合開\n発期成会として、私が参加してございます。次に（４）北海道アイヌ振興対策\n事業推進協議会の要望といたしまして、アイヌ政策推進交付金の予算の確保、\n生活環境改善施設整備事業の拡充と予算確保、アイヌ農林漁業対策事業の推進\nについてを要望してきてございます。要望先は道内選出国会議員、内閣官房ア\nイヌ総合政策室長他で、１１月１９日、北海道アイヌ振興対策事業推進協議会\nとして私が要望活動に参加をしてきてございます。以上、要望経過報告とさせ\nていただきます。",
+    "text_length": 1097,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-109",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号、職員の給与に関する条例の一部を改正する条例についてご説明申\nし上げます。令和７年度職員の給与改定に関する概要につきまして、別紙で配\n付させていただいた説明資料によりご説明させていただきます。別紙の説明資\n料をご覧いただきたいと思います。始めに、表の左側、職員の給与に関する人\n事院勧告（抜粋）についてご説明いたします。１番、勧告の骨子としましては、\n（１）勧告月日は令和７年８月７日です。（２）民間給与との較差についてとい\nうことで、①月例給は平均年齢４１．９歳で比較した場合、１万５，０１４円、\n３．６２パーセント、②ボーナスは民間４．６５か月に対して、公務員は４．\n６か月となっております。２番の給与改定の内容と考え方についてですが、民\n間給与との較差を解消するため、給料、ボーナスとも引き上げの改定となって\nおります。（１）給料表については改定率平均で３．３パーセントの引き上げと\nなっております。初任給が民間との間に差があることを踏まえ、大卒程度で１\n万２，０００円、高卒者で１万２，３００円の引き上げ、改定率については、\n初任給を始め、若年層に重点を置き、上位級を低減させる形で１級５．２パー\nセント、２級４．２パーセント、全体で３．３パーセントの引き上げ改定とな\nっております。また、定年前再任用職員の基準俸給月額についても、各級の改\n定額を踏まえ引き上げる改定となっております。（２）ボーナスについては、年\n４．６か月から４．６５か月へと０．０５月分の引き上げとなっており、期末\n手当と勤勉手当をそれぞれ年０．０２５月分引き上げする勧告となっておりま\n- 2 -\nす。また、定年前再任用職員についても、年２．４か月分から２．４５か月分\nへと０．０５月分の引き上げとなっております。次に、町の措置方針案ですが、\n表の右側に記載させていただいている通り、職員の給与改定にあたりましては、\n町は従来から国家公務員給与に関する人事院勧告の内容を尊重してきた経緯が\nありますので、本年度につきましても同様に措置する方針で、表の左側でご説\n明いたしました人事院勧告の内容と通勤手当を除き、同じ内容の改定を行おう\nとするものです。本条例による改正内容については、新旧対照表でご説明いた\nしますので、議案の３ページをお開きください。職員の給与に関する条例の一\n部を改正する条例の第１条関係において、条例第１５条第２項及び第３項で、\n令和７年１２月の期末手当について、一般職は１００分の１２５を１００分の\n１２７．５に、再任用職員は１００分の７０を１００分の７２．５に改めるも\nのです。次に、第１６条第２項第１号及び第２号で、令和７年１２月の勤勉手\n当について、一般職は１００分の１０５を１００分の１０７．５に、再任用職\n員は１００分の５０を１００分の５２．５に改めるものです。また、給料表に\nついては、５ページから１１ページのとおり改正するものです。次に４ページ\nをご覧ください。条例の第２条関係にかかる新旧対照表です。第１５条は、６\n月、１２月の期末手当について、一般職は１００分の１２６．２５、再任用職\n員は１００分の７１．２５にそれぞれ改め、１６条の勤勉手当について、一般\n職は１００分の１０６．２５、再任用職員は１００分の５１．２５にそれぞれ\n改めようとするものです。２ページをお開きください。附則第１条第１項で、\nこの改正条例について、第１条の規定は公布の日から、第２条の規定は令和８\n年４月１日から施行するものです。第２項で給料に関しては、本年４月１日に\n遡って適用するものとしております。以上、議案第１号についてご説明いたし\nましたので、ご審議のほどよろしくお願いいたします。",
+    "text_length": 1550,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-110",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号、平取町会計年度任用職員の給与及び費用弁償に関する条例の一部\nを改正する条例について、ご説明申し上げます。会計年度任用職員の給与改定\nに関する概要につきましては、先ほどの別紙配付の概要の資料にも記載させて\nいただいているところですが、職員と同様の給料、期末勤勉手当となっており\nますので、ご説明を省略させていただきたいと存じますが、職員給と異なる点\nとしましては、１５ページをご覧いただきたいと思いますので、１５ページを\nお開きください。そこには給料表が掲載されておりますが、その給料表が２級\nまでとなっておりまして、６級までとされている職員とは、ここが異なる点と\nなっておりますことを申し添えます。以上、議案第２号のご説明とさせていた\nだきますので、ご審議のほどよろしくお願いいたします。",
+    "text_length": 350,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-111",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６番崎廣です。令和２年の４月からこの会計年度任用職員制度ってのは始まっ",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-112",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "たんだと思うんですけども、毎年総務省から事務処理マニュアルが変更されて\nいるというふうに聞いております。それで本年度の事務処理マニュアルの変更\nで、報酬水準の見直しにおいて上限を設ける必要はないというふうに記載され\nたというふうに聞いておりますけども、うちの町の考えとしてもそれでよろし\nいでしょうか。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-113",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。ご質問にお答えいたします。方針においては、３年ごとに更新を行うと\nされていたものが、方針そのものはなくなっておりますが、平取町においては\n引き続き３年を上限とした更新を本年度についてはしたいと思っております。\n以降につきましては、また再度協議させていただきながら進めさせていただき\nたいと考えております。以上です。大変失礼いたしました。手当というのは何\n手当に関してでしょうか。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-114",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "回数制限があるからあれなんですけども、要は１級なり２級の上限ありますよ",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-115",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "ね。５０なん号俸でしたっけ。９３号俸。ここまでいった人は当然に２級に上\nがれるという上限撤廃、今までは上限がおそらくあったんだと思うんですけど\nも、その上限を撤廃されたっていうふうに総務省のマニュアルが変わったとい\nうふうに聞いてますけど、うちの町の考えとしてもそれでよろしいですねって\nいう質問なんですけど。\n- 4 -",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-116",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大変失礼いたしました。給料表に関するご質問ということで給料表については、\n必要な部分で定めていっておりますが、現在のところ、ただいま提案させてい\nただいている給料、号俸の上限で不足するものはないんですけども、もしこれ\nが不足する状況が出てくれば、また、号俸を付け足す形で定めていきたいとい\nうふうに考えております。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-117",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "総務省の通達はそうではなかったと私は認識をしております。うちの町の考え",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-118",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "方としては、上限に達したときには、付け足し、下駄を履かしてやるというふ\nうに、ただいまの回答はいただきました。それはうちの町の考え方としてそう\nだっていうふうに、私は納得しませんけれども、そういう考えだということは\nわかりました。それで今、３回なんであれなんすけど、ちょっと気になった答\n弁が最初なされましたんで、３年で更新という要は公募のことをお答えしたん\nじゃないかなと思うんですけども、公募についても公募の必要はないというふ\nうに、これは昨年度変わったというふうに聞いてはいるんですけども、そこは\n変わってないということですかね。公募は必ずやるという考えですか。今回も\nこないだ週報に入っておりましたけども、４８名プラス何名かな、パートとフ\nル、両方とも公募になったんだと思うんですけども、公募はしなくていいとい\nうふうに変わって全道でも結構多くの、ちょっと全部の市町村を調査してませ\nんけれども、学園大学の川村先生の調べでいけば、市の中ではほぼほぼ半分以\n上がもう公募をやめたっていうふうに聞いております。そこのところをもう一\n度確認します。公募は相変わらずやるということなんですか。",
+    "text_length": 496,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-119",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。お答えいたします。３年に１度の更新をするという指針はなくなりまし\nたけども、それはその町その町で判断していくことになります。令和７年度、\n本年度においては、平取町は更新の手続きを行っていきたいと考えております\nが、以降の年度においては、また再度検討させていただきたいと考えておりま\nす。",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-120",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１８ページからの議案第３号、平取町長等の給与に関する条例の一部を改正す\nる条例についてご説明申し上げます。改正理由は、人事院勧告により職員の期\n末手当に改正があった場合、これに準じて町長等の期末手当についても改定し\nてきておりますことから、この度、職員の期末手当が０．０２５月分引き上げ\nられたことに合わせ改正しようとするものです。概要につきましては、別紙で\n配付させていただいた説明資料によりご説明させていただきます。上段の表に\n記載しておりますが、期末手当について、令和７年は１２月期に０．０２５月\n期分を追加し、１．８５０か月とし、令和８年度は６月と１２月にそれぞれ０．\n０１２５月分を追加して、それぞれ１．８３７５月分の支給率となります。議\n案の１９ページをお開きください。附則についてですが、この条例の第１条の\n改正は公布の日から施行し、第２条の改正は令和８年４月１日から施行するも\nのです。以上、議案第３号についてご説明いたしましたので、ご審議のほどよ\nろしくお願いいたします。",
+    "text_length": 445,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-121",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "２１ページからの議案第４号、平取町議会議員の議員報酬及び費用弁償に関す\nる条例の一部を改正する条例についてご説明申し上げます。改正理由は町長等\n- 6 -\nの給与について人事院勧告に準じて期末手当を改定する際、議員の期末手当に\nついても改正を図っていることによります。概要につきまして、別紙で配付さ\nせていただいた説明資料によりご説明させていただきます。下段の表に記載し\nておりますが、期末手当について、令和７年度は１２月期に０．０２５月分を\n追加し、１．６か月とし、令和８年度は６月と１２月にそれぞれ０．０１２５\n月分を追加して、それぞれ１．５８７５月分の支給率となります。２２ページ\nをお開きください。附則についてですが、この条例の第１条の改正は公布の日\nから施行し、第２条の改正は令和８年４月１日から施行するものです。以上議\n案第４号のご説明とさせていただきますので、ご審議のほどよろしくお願いい\nたします。",
+    "text_length": 407,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-122",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第５号につきましてご説明させていただきますので、２４ページをお開き\nください。令和７年度平取町一般会計補正予算第８号は次に定めるところによ\nります。第１条、歳入歳出予算の補正ですが、歳入歳出にそれぞれ６，７００\n万２，０００円を追加し、予算の総額を７７億２４５万９，０００円にしよう\nとするものです。第２項、歳入歳出予算の補正の区分及び金額等については、\n第１表、歳入歳出予算補正によります。それでは、歳入歳出予算事項別明細書\nの歳出からご説明いたしますので、３３ページをお開き願います。上段、３款\n１項１目社会福祉総務費６４８万５，０００円の追加です。これは灯油価格を\nはじめとした燃料費や光熱費の高騰が続いているため、昨年度に引き続き非課\n税世帯のうち、高齢者世帯、障害者世帯、ひとり親世帯に平取町金券を給付す\nるための費用を補正しようとするものです。１０節需用費、印刷製本費３９万\n６，０００円は金券５，０００枚の印刷費です。１１節役務費、通信運搬費２\n３万円は金券を簡易書留で送付するための郵送料を計上しております。１９節\n扶助費５００万円は、冬の生活支援事業給付金として１万円の平取町金券を５\n- 7 -\n００世帯に給付するとして算出しております。２７節繰出金は国民健康保険特\n別会計への繰出金を８５万９，０００円追加しようとするものですが、これは\n国が進めている行政システムの標準化・共通化に伴い、北海道の国保事務の運\n営主体である北海道国保団体連合会のシステム機能強化を行うための追加負担\n金がこの度確定したため補正しようとするものです。財源は冬の生活支援事業\nに国庫補助金１９５万円を充当し、残りの４５３万５，０００円が一般財源と\nなります。次に下段、３款１項４目福祉施設費、１０節需用費、修繕料１１８\n万円の追加です。これはびらとり温泉ゆからの客室２室について、エアコンの\n老朽化により冷暖房機能の低下が見られることから、エアコンの更新を行うた\nめの補正となります。財源は全額一般財源となります。３４ページをお開きく\nださい。上段、３款１項６目生活館費、１７節備品購入費１，１７２万１，０\n００円の追加です。これは生活館活動を行う上で、近年の猛暑による熱中症対\n策が必要なことから、平取生活館、本町生活館、紫雲古津生活館、去場生活館、\n小平生活館、貫気別生活館の６生活館に１７台のエアコンを設置しようとする\nものです。また、このエアコンは冬期の暖房にも対応できるものとします。財\n源は国庫補助金９３７万６，０００円、地方債２３０万円を充当し、残額４万\n５，０００円が一般財源となります。次に下段、５款１項２目農業振興費、１\n８節負担金、補助及び交付金３，２８０万２，０００円の追加です。１項目と\nして、産地生産基盤パワーアップ事業補助金２，８３４万３，０００円の追加\nです。これは収益力強化に計画的に取り組む産地に対し、農家が行う収量増加、\n作業省力化にかかる機械施設の導入に対する国の補助事業ですが、びらとり農\n協で実施希望を取りまとめたところ、１４戸のトマト農家から自動換気装置や\n自動潅水装置導入の希望があり、これに対する事業採択を受けたことから、間\n接補助金として補正するものです。２項目目は、農地利用効率化支援交付金３\n００万円の追加です。これは地域の担い手が経営改善に取り組む場合に必要な\n機械導入に対する国の補助事業ですが、農協を通じて１戸の担い手農家からト\nラクター導入の実施希望があり、これに対する事業採択を受けたことから、間\n接補助金として補正するものです。３項目目は経営所得安定対策等畑地化協力\n金１４５万９，０００円の追加です。これは水田から畑地化された農地に対し、\n地域の各施設維持管理組合において、新たに畑として減額した賦課金単価を設\n定した場合、維持管理費に不足が生じることから、その賦課金差額の残耐用年\n数分について、畑地化協力金が国から市町村を経由し、土地改良区に交付され\nることとなったことから、間接補助金として補正するものです。財源は全額道\n補助金として交付されます。３５ページをお開きください。上段、６款１項２\n目商工振興費５７５万２，０００円の追加です。１８節負担金、補助及び交付\n金７５万２，０００円の追加ですが、これは中小企業・小規模事業者借入資金\n利子補給費補助金について融資申し込み件数が増加し、利子補給費補助金予算\nが不足することとなるため補正しようとするものです。２０節貸付金５００万\n円の補正です。これは中小企業特別融資資金貸付金について、事業者から金融\n- 8 -\n機関への融資申し込み件数の増加により、金融機関への預託金が不足すること\nとなるため補正しようとするものです。財源はその他の財源として貸付金の償\n還金５００万円を充当し、残額の７５万２，０００円が一般財源となります。\n下段、９款１項２目事務局費２００万円の追加です。これは文化庁の委託事業\nとして、危機言語話者の育成事業がありますが、アイヌ語が国の危機言語とし\nての位置付けをされており、この度、アイヌ語学習のための合宿とアイヌ語学\n習教材の制作を実施する計画で本事業に応募し、話者育成を図ろうとするもの\nです。８節旅費４１万７，０００円の追加です。これはアイヌ語や口承文芸に\n関心を持つ研究者、教育者等の費用弁償４０万９，０００円及び送迎職員の旅\n費８，０００円を計上しております。１０節需用費１２４万７，０００円の追\n加です。消耗品費１万７，０００円はコピー用紙代等です。食糧費２３万円は\n伝統料理を食体験するための３６人分の費用です。印刷製本費１００万円はア\nイヌ語学習教材を５００部制作するための費用を計上しております。１３節使\n用料及び賃借料３３万６，０００円の追加です。これはアイヌ語学習合宿を行\nうための会場として、交流と宿泊が可能な２施設を３日間借り上げる費用を計\n上しております。財源は全額国庫委託金を充当します。３６ページをお開きく\nださい。上段、９款４項３目文化財保護費５９６万２，０００円の追加です。\n７節報償費１６万４，０００円、８節旅費、費用弁償５２６万１，０００円の\nうち１５万４，０００円、１０節需用費、消耗品費５万１，０００円、食糧費\n１万７，０００円の追加です。これは萱野茂生誕１００年の節目にあたり、記\n念事業を実施するため実行委員会を組織しますが、この実行委員会の開催経費\nとしての出席者費用弁償、事務用消耗品費、会議飲料代を計上したものです。\nまた、８節旅費、費用弁償５２６万１，０００円のうちの５１０万７，０００\n円及び普通旅費４６万９，０００円は、令和８年２月から開催されるリトアニ\nア国立博物館主催の展覧会へ当町のアイヌ文化振興に携わる地域住民を派遣す\nるための費用弁償１１名分と随行職員１名分の旅費を計上しております。財源\nは国庫補助金４７６万８，０００円を充当し、残額１１９万４，０００円が一\n般財源となります。下段、１０款２項１目農業施設災害復旧費、１０節需用費、\n修繕料１１０万円の追加です。これは９月２０日の豪雨により農業用排水路に\n土砂が埋塞し、周辺の農地に影響を及ぼすため、６０メーター分の浚渫費用に\nかかる復旧費を計上したものです。財源は全額災害復旧債を充当しております。\n歳出については以上です。次に歳入についてご説明いたしますので、２９ペー\nジをお開きください。上段、１５款２項１目１節総務管理費国庫補助金１９５\n万円の追加です。これは歳出社会福祉総務費の冬の生活支援事業に充当する物\n価高騰対応重点支援地方創生臨時交付金です。続いて下段、１５款２項２目１\n節社会福祉費国庫補助金１，４１４万４，０００円の追加です。これはアイヌ\n政策推進交付金ですが、歳出、生活館費の備品購入に充当する９３７万６，０\n００円と、文化財保護費に充当する４７６万８，０００円を合計したものです。\n３０ページをお開きください。上段、１５款３項４目２節教育費国庫委託金２\n- 9 -\n００万円の追加です。これは歳出事務局費でご説明いたしました危機言語話者\nの育成事業に充当する国庫委託金です。下段、１６款２項４目１節農業費等補\n助金３，２８０万２，０００円の追加です。これは歳出、農業振興費でご説明\nしましたそれぞれの補正項目に、それぞれ全額を充当するものとなります。３\n１ページをお開きください。上段、２０款１項１目１節繰越金７７０万６，０\n００円の追加です。これは歳出の補正額から特定財源を差し引いた一般財源合\n計額７７０万６，０００円を繰越金に求めるものです。下段、２１款３項２目\n１節中小企業融資貸付金元金収入５００万円の追加です。これは歳出、商工振\n興費でご説明しました中小企業特別融資資金貸付金の償還金です。３２ページ\nをお開きください。上段、２２款１項２目１節民生債２３０万円の追加です。\nこれは歳出、生活館費の補正財源として、補助金の残分に教育福祉施設等整備\n事業債を充当するものです。下段、２２款１項９目２節農林水産業施設災害復\n旧事業債１１０万円の追加です。これは歳出、農業施設災害復旧費の補正財源\nとして単独災害復旧事業債を充当するものです。事項別明細書のご説明につい\nては以上となります。続いて第２表、債務負担行為補正についてご説明させて\nいただきますので、２７ページをお開きください。中小企業・小規模事業者借\n入資金利子補給金については、期間を令和１７年度までの１０年間、限度額を\n１，０００万４，０００円へと変更します。なお、限度額の算出にあたっては、\n融資額を１億４，０００万円、利率は１．８パーセントから２．５パーセント\nとして算出しております。次に第３表、地方債補正についてですが、地方債の\n合計額については補正前で５億７，１００万円でしたが、この度の補正により\n３４０万円追加となり、補正後の限度額は５億７，４４０万円となります。３\n７ページには、地方債現在高に関する調書を添付しており、本補正額を反映し\nた現在高を記載しておりますので、後程お読み取り願います。以上、議案第５\n号のご説明とさせていただきますので、ご審議のほどよろしくお願いいたしま\nす。",
+    "text_length": 4239,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-123",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９番四戸です。３３ページの１９節の扶助費について伺いたいと思います。冬",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-124",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "四戸議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "四戸 正彦",
+    "member_faction": "",
+    "text": "の要するに生活支援事業の給付金でございますが、過去においては福祉灯油で\nなかったかなと思います。現在は金券に変わっておりますが、令和６年度も１\n世帯あたり１万円の金券であったと思います。令和７年度も物価の上昇は止ま\nらなくて、本当に甚だしい上がり方をしております。特に米の単価は倍以上に\nなっています。灯油の単価も現在は１２０円以上になっていると思います。こ\nの支援の対象となる５００世帯の家庭は大変な毎日を送られていると思いま\nす。こういう状況の中で、町としてもう少し給付金を上げてあげるべきじゃな\nいかと私は思いますが、その考え方について伺いたいと思います。\n- 10 -",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-028"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-125",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。ただいまのご質問にお答えさせていただきます。議員がおっしゃったと\nおり以前は福祉灯油として実施しておりましたこの事業、数年前から金券とし\nて、灯油代に限らずいろんな食料品とかにも使えるような制度になっておりま\nす。確かに現在のところ１万円という想定で行っております。昨今の物価上昇\nも鑑みた場合は確かに上げるというのも一つの手かもしれませんけども、今年\n度につきましては、それはそのまま据え置きの１万円ということで計上させて\nいただきました。確かに米の値段、灯油の値段、それぞれ他のものについても\nいろいろ上がっているのは重々承知ではございますが、今回については１万円\nという想定でさせていただきました。",
+    "text_length": 305,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-029"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-126",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "課長の答弁はわからないわけじゃないんですけども、今回このように扶助費を",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-030"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-127",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "四戸議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "四戸 正彦",
+    "member_faction": "",
+    "text": "組まれているので、どうすることもできないのかなと思いますけども、まず国\nもガソリン税下げるとは言っておりますけれども、まだまだこの寒い、これか\nら冬を迎える中で、やっぱり１２０円以上の灯油の単価というのは、やっぱり\n低所得家庭においては大変なことなんですよね。だから、当然さっきも話しま\nしたけども、米も倍以上になっている。しかし、その他にもいろんなもろもろ\nのものが上がっています。やっぱりこういう家庭を救ってあげるために、町と\nしても温かい手を差し伸べるべきじゃないかと私は思いますけども、町長か副\n町長の考え方を伺いたいと思います。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-031"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-128",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。お答え申し上げます。この冬の生活支援事業給付金は高齢と言ってはな\nんですけども、その時の灯油価格の状況を見て判断をするというようなことで\nすけれども、ただ灯油だけに限定しますと、なかなか申請数が伸びないという\nようなこともあって、灯油を使っていない家庭も中にはあるということで、そ\nの辺の改良型といいますか、こちらから申請型ではなくてプッシュ式で、そう\nいった対象家庭にこういった金券を送るというような方式に変えさせていただ\nいたというところでございまして、ご質問はもっともっと手厚いやり方でとい\nうようなことですけれども、現在の制度は、今回補正に上げさせていただいた\nものは、この内容でやらせていただいて、今、この国全体のそういった物価高\n対策でどうしようかということで、非常に困っている家庭の方がいるというよ\nうな現状の中で、今、国の経済対策もきっと出てくるというようなことも考え\nられますし、臨時的なものになりますけども、当町としてもそういったものに\n- 11 -\n今年度対応したいというふうに思っておりますので、その辺の予算的な配分を\nどうするかをこれから検討が進むと思いますけども、こういった恒常的と言わ\nれるような制度も、やはり昨今の物価高の非常に高い上昇率等も、やっぱりち\nょっと検討すべきところにきているのではないかというふうに思いますので、\nまた来年度こういう制度を執行する場合には、そういうところも勘案しながら、\nぜひもう少し手厚くなるような、皆様方がそういう印象を持っていただくよう\nな制度にするような検討をぜひしたいというふうに思っていますので、よろし\nくお願いたいと思います。",
+    "text_length": 704,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-032"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-129",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。２番中川です。３３ページ、３款１項６目の生活館費、これについてち",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-033"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-130",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "中川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中川 嘉久",
+    "member_faction": "",
+    "text": "ょっと質問したいと思います。この中で備品購入費、これエアコン買うという\nことで、今後各生活館につけてくれることで本当にこれはありがたい事業だと\nいうふうに思います。この中でね、備品購入費ということで、エアコンを設置\nしてくれるとは思うんですけども、この中にですね、この金額の中に、まず工\n事費、電気工事費とかそういうのもありますけども、それが含まれているのか\nどうか確認したいと思います。",
+    "text_length": 194,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-034"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-131",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "わかりました。工事費が含まれているということで、そのような形なのかなと",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-036"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-132",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "中川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中川 嘉久",
+    "member_faction": "",
+    "text": "いうふうに思います。それでですね、もう１点ちょっとお聞きしたいのが、ま\nずこのエアコンの種類、どのようなものがつくのかなと。こういうような縦型\nなのか、一般家庭についてる横型なのかちょっとわかんないんですけど、なぜ\nこれを聞くかというと、以前にですね、コロナの時期にやると、確か生活館に\n空気清浄器かなんか置いてくれたと思うんですよね。これは本当にコロナの時\n期としてはありがたいなと思ったんですけど、実際に来てみるとね、その規模\nに合わないような空気清浄機が来たような気もします。それで今回このエアコ\nンがどのぐらいの大きさのものなのかとか、ちゃんとつけてくれるのか、ちょ\nっとそこら辺のことを確認したいと思います。\n- 12 -",
+    "text_length": 316,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-037"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-133",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６番崎廣です。３３ページに３款１項４目ですね、福祉施設費のゆからの修繕",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-040"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-134",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "料なんですけども、これ一般財源１１８万設定されてるんすけど、これ入湯税\nを使うっていうことは考えられないんですか。",
+    "text_length": 57,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-041"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-135",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ことで出させていただいておりますけれども、改めてですね、実際入湯税がど\nういう形で使えるかっていうのは、財政部局のほうとも相談をさせていただき\nたいというふうに思っております。現在、ちょっと急ぎの部分の修繕が必要と\nいうことで、一般財源で計上させておりますけれども、改めて財源のほうは検\n討させていただければというふうに思います。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-043"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-136",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。変えれっていうことじゃなくて、入湯税って今どこに充当してるんでし",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-044"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-137",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。入湯税については特定財源欄には記載しておりません。一\n般財源欄として記載させていただいておりますが、基本的な考えとしては、こ\nれまでは消防対策のところで充当させていただいている、入湯税の使途のいく\nつか選択肢がある中で消防対策にこれまでは充当させていただいているという\nところです。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-045"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-138",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。わかりました。もう一本お願いします。３６ページ、９款４項３目文化",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-046"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-139",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "財保護費の報償費の部分であります。ここの分だけじゃなく、報償費に対する\n考え方なんですけども、この報償費の意味合いっていうのは、地方自治法施行\n規則第１５条の２項、別記によりますと、報酬に掲げる以外のものを謝礼金を\n含むというふうに記載になってるんですけども、平取町としてこの報償費の取\nり扱いについて、法律や条例によらない委員会等における報償費の取り扱い、\nこれについて決め事があるのであれば教えていただきたい。こういうふうに扱\nってますよ、こういうところには出して、こういうところには出さない。金額\nはいくらぐらいという設定をしてますよっていうのは、今わかればお願いしま\nす。",
+    "text_length": 290,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-047"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-140",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。お答えいたします。特段の明確な決めはございませんけども、報償費で\n区分する分には報酬で掲げる項目、それは条例の中で、どの委員会審議会に支\n給するかというのを定めておりますが、それ以外に設置される委員会などにつ\nいて報償費を支給させていただいているというところでございます。またこの\n他に臨時的に参考意見をお聞きするような場合だとか、そういった場合には報\n償費としての支給をせずに、費用弁償として町内日当に相当する額を支給して\nいるという例もございます。基本的には数回にわたり開催されるような会議に\nおいては、それとか毎年開催されるとか、そういう部分については報償費の中\nで報酬と同額の報償費と費用弁償を支給させていただいているというところで\nございます。",
+    "text_length": 330,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-048"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-141",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。前回委員会で質問して以降ですね、ちょっと調べさせてもらいました。",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-049"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-142",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "報償費と報酬、よくわからないでいたんですけども、報償費について今回調べ\nたんですけども結構件数があります。地域おこし協力隊の部分はこの報償費に\n含まれておりますし、あとは選挙関係の部分、生活館関係の部分、そのほかア\nドバイザーの謝金なんかも含まれております。あとドクター、乳幼児健診の心\n理士の謝金だとかそういった部分。これはエゾシカの駆除の謝金もこの報償費\nで出されていて、結構幅広い。要は報酬で見れないものをここで見ているとい\nう部分で、そこは要は決めがあまりなく、単価についても具体は指示がなく、\n担当課でいわゆる報酬以外のものはこの報償費にまわしてきて、予算査定のと\nきにチェックをしてるというか、今言ったものはほとんど継続されてるもんだ\nと思いますから、スルーだとは思うんですけども、あくまでも担当課任せで来\nてるというようなことでよろしいですか。\n- 14 -",
+    "text_length": 386,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-050"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-143",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。報償費につきましては、以前は賃金という項目がありましたので、そこ\nで計上されることが多いものでしたけども、会計年度任用職員制度の創設によ\nって、報酬で定めるもの、それ以外のもともとの賃金だとか、もともと報償費、\n謝金として支給させていただいたものとが幅広くこの科目で計上されることに\nなっております。そういった意味ではかなり多くの種類の性質のものがここで\n計上されることになったんですけども、額については話し合いや協議の類につ\nいて、会議の類については報酬に準じた取り扱いをしております。それ以外の\n謝金については、基本的には、その対価に見合うものであれば報酬なんですけ\nども、対価に見合わない、あくまでお礼、謝礼という意味合いのものが報償費\nに入ってきます。ただ、もともとの賃金というものがここに計上されたことで、\n賃金は対価に見合うものですので、その辺の考えが非常に混在してしまうよう\nになっておりますが、その都度、予算においてどの程度の額が適正かというと\nころを判断しながら予算計上をさせていただいているという状況でございま\nす。",
+    "text_length": 471,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-051"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-144",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。わかりました。確かに賃金になるような部分、例えば公民館費で代替運",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-052"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-145",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "崎廣議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "崎廣 秀樹",
+    "member_faction": "",
+    "text": "転手の謝金、これは賃金だとは思うんですけども、そんなのがこれに入ってい\nるとすごい幅広い範囲で入ってて、一体報償費とは何ぞやっていうのはよくわ\nからなくなってきてるんですけども。これはおそらく法定で定められた条例だ\nとかで定められたものもあるんだと思うんですけども、それぞれもしかしたら\n要綱、設置要綱、会議の設置要綱だとか、委員会の設置要綱っていうのも定め\nられて、この報償費で出されてるっていうのもあると思うんですけども、その\n設置要綱がない場合でもこの報償費の支出は可能だということでよろしいです\nか。",
+    "text_length": 254,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-053"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-146",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。可能かどうかで言うならば可能ですけれども、できるだけそのようなこ\nとがないように会議関係については設置要綱を定めて、それに従って設置する\nことに努めているというところが現状でございます。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-054"
+      ]
+    }
+  },
+  {
+    "id": "biratori-20252099-6-147",
+    "municipality": "biratori",
+    "council_id": 20252099,
+    "council_name": "令和7年第99回臨時会",
+    "schedule_id": 6,
+    "schedule_name": "11月26日",
+    "date": "2025-11-26",
+    "speaker": "町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第６号、令和７年度平取町国民健康保険特別会計補正予算第１号につきま\nしてご説明いたしますので、議案の３８ページをお開きください。国民健康保\n険特別会計補正予算第１号は次に定めるところによります。第１条、歳入歳出\n予算にそれぞれ１８１万円を追加し、予算の総額を７億３，１２１万円にしよ\nうとするものです。それでは、事項別明細書の歳出からご説明させていただき\nますので、議案の４２ページをお開き願います。１款１項１目１８節負担金、\n補助及び交付金１８１万円の追加です。これは国が進めている行政システムの\n標準化・共通化に伴い、北海道国保連合会のシステム機能強化を行うための追\n加負担金が確定したため補正するものです。続きまして、歳入についてです。\n４１ページをご覧ください。４款１項１目２節特別交付金９５万１，０００円\nの追加です。これは先ほどご説明申し上げました歳出の補正財源を道補助金に\nより充当いたします。次に下段、６款１項１目１節一般会計繰入金８５万９，\n０００円の追加です。これは先ほどご説明申し上げました歳出の補正財源を一\n般会計繰入金に求めるものです。以上、議案第６号についてのご説明とさせて\nいただきますので、ご審議のほどお願いいたします。",
+    "text_length": 528,
+    "source": {
+      "minutes_file": "data/biratori/minutes/20252099.json",
+      "schedule_id": 6,
+      "minute_ids": [
+        "1-table-056"
+      ]
+    }
+  }
+]

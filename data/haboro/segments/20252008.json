@@ -1,1 +1,96 @@
-[]
+[
+  {
+    "id": "haboro-20252008-1-001",
+    "municipality": "haboro",
+    "council_id": 20252008,
+    "council_name": "令和7年第8回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第8回臨時会（令和7年8月8日）",
+    "date": "2025-08-08",
+    "speaker": "森淳町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和７年第８回羽幌町議会臨時会の招集に当たりまして、議員の\n皆様におかれましては、何かとご多忙のところご出席を賜り厚くお礼を申し上げます。\nさて、本臨時会に提案しております案件は補正予算案１件であります。よろしくご審議\n賜りますようお願い申し上げまして、招集の挨拶とさせていただきます。\n◎開議の宣告",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252008.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-003"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252008-1-002",
+    "municipality": "haboro",
+    "council_id": 20252008,
+    "council_name": "令和7年第8回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第8回臨時会（令和7年8月8日）",
+    "date": "2025-08-08",
+    "speaker": "森淳町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま提案となりました一般会計の補正予算につきまして、そ\nの提案理由をご説明申し上げます。\n既定の予算総額に歳入歳出それぞれ１，８８８万５，０００円を追加し、予算の総額を\n歳入歳出それぞれ８２億３，７５０万７，０００円とするものであります。\n補正をいたします内容でありますが、歳出の３款民生費、社会福祉費において６月定例\n会の補正予算によりシステムを導入し、低所得者支援及び定額減税補足給付金支給事業に\n係る給付金額を算出いたしましたので、その事務費を含めて増額するものであり、財源に\nつきましては全額国庫支出金で賄えるものであります。\n以上が補正をいたします予算の内容であります。よろしくご審議の上、ご決定賜ります\nようお願い申し上げまして提案の理由とさせていただきます。",
+    "text_length": 338,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252008.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252008-1-003",
+    "municipality": "haboro",
+    "council_id": 20252008,
+    "council_name": "令和7年第8回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第8回臨時会（令和7年8月8日）",
+    "date": "2025-08-08",
+    "speaker": "金木直文君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "金木直文",
+    "member_faction": "",
+    "text": "もうちょっと詳しい説明あるのかなと思っていたのですが、今年\nもう既に実施されている、あくまでも補正ということなのだと思うのですが、町内で対象\nとなる今回の補正、補足対象となる人数、件数とか、どのようにお知らせするのか、あと\nそういった書類が来ても、何のことやらさっぱり分からぬという場合の個別の対応など、\nどんな対応を取られるのかお聞きしたいと思います。\n分かりました。今一番最後のほうで本人からの問合せ等に対する\n対応として、何も問合せ等がなければそのままの流れでいくということになるのか、それ\nすらも分からなくて、問合せしていいのかどうかも分からないというような人に対しては\nこちら、町側でチェック漏れするような、そんな可能性はないのかどうか、その点だけち\nょっとお聞きしたいと思います。",
+    "text_length": 346,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252008.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011",
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252008-1-004",
+    "municipality": "haboro",
+    "council_id": 20252008,
+    "council_name": "令和7年第8回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第8回臨時会（令和7年8月8日）",
+    "date": "2025-08-08",
+    "speaker": "工藤正幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "工藤正幸",
+    "member_faction": "",
+    "text": "これは１人に幾らということは教えていただけませんか。\n１人４万円というのは今聞いたのですけれども、そのほかに扶養\nの方というのも何か言ったような気がするのですけれども、例えばそういう世帯であって\n扶養の方が何人かいればその分にプラスされて支給になるのか、その辺ちょっと教えてく\nださい。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252008.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013",
+        "1-inline-014"
+      ]
+    }
+  }
+]

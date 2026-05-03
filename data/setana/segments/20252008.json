@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "id": "setana-20252008-1-001",
+    "municipality": "setana",
+    "council_id": 20252008,
+    "council_name": "令和7年第8回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第８回臨時会（１１月２８日）.pdf",
+    "date": null,
+    "speaker": "１１名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n７番 橋 本 一 夫 君 ９番 吉 田 実 君\n１０番 大 湯 圓 郷 君 １１番 菅 原 義 幸 君\n１２番 平 澤 等 君",
+    "text_length": 137,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252008.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252008-1-002",
+    "municipality": "setana",
+    "council_id": 20252008,
+    "council_name": "令和7年第8回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第８回臨時会（１１月２８日）.pdf",
+    "date": null,
+    "speaker": "１名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８番 熊 野 主 税 君\n１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 河 原 泰 平 君\n１．町長、選挙管理委員会委員長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 中 川 譲 君\n総 務 課 長 髙 橋 純 君\n財 政 課 長 佐 藤 英 美 君\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n次 長 松 原 孝 樹 君\n主 事 神 野 翔 亜 君\n- 1 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 272,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252008.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252008-1-003",
+    "municipality": "setana",
+    "council_id": 20252008,
+    "council_name": "令和7年第8回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第８回臨時会（１１月２８日）.pdf",
+    "date": null,
+    "speaker": "本多浩君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "本多 浩",
+    "member_faction": "",
+    "text": "それでは委員会報告をいたします。\n令和７年４月３日開催の第１回せたな町議会定例会において設置された当特別委員会の調査\n結果報告をいたします。\n当特別委員会は１１月１４日開催の第６回当特別委員会まで５回にわたり人口ビジョン・デ\nジタル田園都市国家構想総合戦略に関しての調査をしたところであります。調査結果について\nは、この件に関しては議会の議決事項ではないが計画目標を達成するための中身の議論を議会\nを含めて行う必要があることから、今後は年度末ではなく早めの報告を望むとするものであり\nます。\n以上で報告を終わります。",
+    "text_length": 258,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252008.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252008-1-004",
+    "municipality": "setana",
+    "council_id": 20252008,
+    "council_name": "令和7年第8回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第８回臨時会（１１月２８日）.pdf",
+    "date": null,
+    "speaker": "中川譲副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回提案をいたします補正予算につきましては、現在の歳入歳出予\n算の総額に１２万円を追加し、補正後の予算総額を９７億２，２８１万７，０００円とするも\nのでございます。\nその主な内容でございますが、議案４ページの歳出におきまして１款１項１目共に議会費、\n議会改革に向けた勉強会講師謝礼として１２万円について補正をお願いするものでございます。\nこれに係る歳入でございますが、同じく議案４ページ、上段１９款１項１目共に繰越金、前\n年度繰越金をもって収支の均衡を図ってございます。\n以上で説明を終わります。\nご審議賜りますようよろしくお願い申し上げます。",
+    "text_length": 272,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252008.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  }
+]

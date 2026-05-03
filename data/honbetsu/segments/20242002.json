@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "id": "honbetsu-20242002-1-001",
+    "municipality": "honbetsu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "１１名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議 長 １２番 篠 原 義 彦 副議長 １１番 高 橋 利 勝\n１番 宮 本 やよい ２番 加 藤 徹 己\n３番 丑 若 浩 行 ４番 水 谷 令 子\n５番 梅 村 智 秀 ６番 石 山 憲 司\n７番 藤 田 直 美 ８番 方 川 一 郎\n１０番 阿 保 静 夫\n─────────────────────────────────────────\n- 1 -",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/honbetsu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "honbetsu-20242002-1-002",
+    "municipality": "honbetsu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "─────────────────────────────────────────\n○説明のため出席した者の職氏名\n町 長 佐々木 基 裕 副 町 長 村 本 信 幸\n会 計 管 理 者 藤 野 和 幸 総 務 課 長 三 品 正 哉\n住 民 課 長 宮 口 淳 哉 健康・こども課長 髙 橋 紀 尊\n建 設 水 道 課 長 加 藤 勉 企 画 財 政 課 長 松 本 秀 規\n未 来 創 造 課 長 野 崎 昌 也 国 保 病 院 事 務 長 小 川 芳 幸\n総 務 課 主 幹 上 原 章 司 総 務 課 長 補 佐 石 川 雅 康\n教 育 長 高 橋 哲 也 代 表 監 査 委 員 井 出 英 彦\n─────────────────────────────────────────\n○職務のため議場に出席した者の職氏名\n事 務 局 長 中 川 雅 之 事 務 局 次 長 越 後 忠\n総 務 担 当 主 事 今 井 綾 香\n- 2 -\n\n開会宣告（午前１０時００分）\n───────────────────────────────────────────\n◎開会宣告",
+    "text_length": 487,
+    "source": {
+      "minutes_file": "data/honbetsu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  }
+]

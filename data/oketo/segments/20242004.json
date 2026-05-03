@@ -1,1 +1,209 @@
-[]
+[
+  {
+    "id": "oketo-20242004-1-001",
+    "municipality": "oketo",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会（令和6年6月17日開催）",
+    "date": "2024-06-17",
+    "speaker": "８名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 嘉 藤 均 議員 ２番 前 田 篤 議員\n３番 石 井 伸 二 議員 ４番 石 村 吉 博 議員\n５番 柏 原 勝 議員 ６番 山 田 耕 平 議員\n７番 阿 部 光 久 議員 ８番 岩 藤 孝 一 議員",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242004-1-002",
+    "municipality": "oketo",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会（令和6年6月17日開催）",
+    "date": "2024-06-17",
+    "speaker": "なし議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "- 1 -\n\n○地方自治法第１２１条の規定により説明のため出席した者の職氏名\n《町 長 部 局》\n町 長 深 川 正 美 副 町 長 蓑 島 賢 治\n会 計 管 理 者 菅 原 嘉 仁 企画財政課長 坂 森 誠 二\n総 務 課 長 鈴 木 伸 哉 町民生活課長 田 中 耕 太\n施設整備課長 名 和 祐 一 地域福祉センター所長 石 森 実\n企画財政課長補佐 高 橋 秀 典 総務課総務係長 鈴 木 良 知\n《教育委員会部局》\n教 育 長 平 野 毅 社会教育課長 須 貝 智 晴\n《監査委員部局》\n代表監査委員 小 鷹 浩 昭\n○職務のため出席した事務局職員の職氏名\n事 務 局 長 岡 部 信 一 議 事 係 加 藤 洋 聖\n臨時事務職員 中 田 美 紀\n- 2 -\n\n開会 午前９時３０分\n◎開会宣言",
+    "text_length": 353,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242004-1-003",
+    "municipality": "oketo",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会（令和6年6月17日開催）",
+    "date": "2024-06-17",
+    "speaker": "岡部事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今期臨時会に町長から提出された議案は、次のとおりです。\n・議案第３２号。\n・同意第１号。\n・承認第１号から承認第３号。\n・報告第４号。\n今期臨時会に議会から提出された事件は、次のとおりです。\n・報告第５号。\n今期臨時会に議案等説明のため出席を求めた者及び委任を受けて出席する者は、お手\n元に配付した名簿のとおりです。\n本日の議事日程は、お手元に配付のとおりです。\n報告を終わります。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242004-1-004",
+    "municipality": "oketo",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会（令和6年6月17日開催）",
+    "date": "2024-06-17",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました承認第１号、専決処分の承認につきましては、町\n民生活課長より説明をいたします。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242004-1-005",
+    "municipality": "oketo",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会（令和6年6月17日開催）",
+    "date": "2024-06-17",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました、承認第２号 専決処分の承認につきましては、\n企画財政課長より説明申し上げます。並びに、承認第３号 専決処分の承認につきまし\nては、地域福祉センター所長より説明申し上げます。",
+    "text_length": 99,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242004-1-006",
+    "municipality": "oketo",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会（令和6年6月17日開催）",
+    "date": "2024-06-17",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました報告第４号、令和５年度置戸町繰越明許費繰越計\n算書の報告につきましては、企画財政課長より説明申し上げます。",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-036"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242004-1-007",
+    "municipality": "oketo",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会（令和6年6月17日開催）",
+    "date": "2024-06-17",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました、議案第３２号、工事請負契約の締結について\nは、総務課長より説明申し上げます。",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-044"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242004-1-008",
+    "municipality": "oketo",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会（令和6年6月17日開催）",
+    "date": "2024-06-17",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました、同意第１号は、置戸町副町長の選任についてで\nあります。\n本町副町長に、次の者を選任いたしたく、地方自治法第１６２条の規定により議会の\n同意を求めるものでございます。\n氏名は、蓑島賢治氏。住所、生年月日は、議案に記載のとおりであります。\n蓑島賢治氏の経歴等について申し上げます。昭和５７年３月、道立北見柏陽高等学校\nを卒業後、同年４月に置戸町役場に奉職。建設課管理係を振り出しに、当時常元にあり\nました、養護老人ホーム総務係、その後、林務商工課林務係、商工観光係、農務課農政\n係、農業委員会農地係の産業分野を担当し、平成１１年には、介護保険制度発足に向け\nて地域福祉センター介護保険係。翌１２年に、介護保険係長に昇格をしております。民\n生や産業分野の担当が長かった後、平成１５年には、総務課職員係長、町民生活課医療\n給付係長、産業振興課農業振興係長を歴任し、平成２５年４月に教育委員会出向と共に\n学校教育課長に昇格し、その後、社会教育課長、図書館長を経て、平成３１年４月より、\n前職、産業振興課長、農業委員会事務局長を務め、令和２年６月１９日より現職に就任\nされ、本年６月１８日に任期満了を迎えます。\n- 13 -\n\n以上、蓑島賢治氏の経歴の概略を申し上げましたけれども、蓑島賢治氏を引き続き副\n町長として選任致したく議会の同意を求めるものでございます。宜しくお願い申し上げ\nます。",
+    "text_length": 603,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-053"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242004-1-009",
+    "municipality": "oketo",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会（令和6年6月17日開催）",
+    "date": "2024-06-17",
+    "speaker": "岡部事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告第５号について申し上げます。\n地方自治法第１８０条第１項の規定に基づく、議会の委任による専決処分について、\n同条第２項の規定により、お手元に配付のとおり処分の報告がありました。\n報告を終わります。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-059"
+      ]
+    }
+  }
+]

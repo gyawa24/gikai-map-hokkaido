@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "id": "monbetsu-20242002-1-001",
+    "municipality": "monbetsu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第2回紋別市議会臨時会会議録（第1日） [PDF｜140KB]",
+    "date": null,
+    "speaker": "佐藤健吾議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、ご指名を申し上げます。\nまず、総務経済常任委員会、定数８人でございます。\n委員名は、１番田中勝彦議員、３番保村幸二議員、５番梶川友子議員、７番佐藤昌\n樹議員、10番加藤裕貴議員、13番宮川正己副議長、14番石田久就議員、15番阿部秀明\n議員、以上８名でございます。\n次に、福祉文教常任委員会、定数８人でございます。\n委員名は、２番石井友也議員、４番橘有三議員、６番野村淳一議員、８番宮川法親\n議員、９番鈴木敏弘議長、11番山﨑彰則議員、12番喜多俊晴議員、16番飯田弘明議員、\n以上８名でございます。",
+    "text_length": 255,
+    "source": {
+      "minutes_file": "data/monbetsu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "monbetsu-20242002-1-002",
+    "municipality": "monbetsu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第2回紋別市議会臨時会会議録（第1日） [PDF｜140KB]",
+    "date": null,
+    "speaker": "佐藤健吾議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、ご指名を申し上げます。\n議会運営委員会、定数７人でございます。\n委員名は、１番田中勝彦議員、２番石井友也議員、３番保村幸二議員、８番宮川法\n親議員、10番加藤裕貴議員、14番石田久就議員、15番阿部秀明議員、以上７名でござ\nいます。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/monbetsu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "monbetsu-20242002-1-003",
+    "municipality": "monbetsu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第2回紋別市議会臨時会会議録（第1日） [PDF｜140KB]",
+    "date": null,
+    "speaker": "佐藤健吾議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、ご報告を申し上げます。\n総務経済常任委員会委員長に佐藤昌樹議員、副委員長に田中勝彦議員。\n福祉文教常任委員会委員長に石井友也議員、副委員長に宮川法親議員。\n議会運営委員会委員長に加藤裕貴議員、副委員長に保村幸二議員。\n以上でございます。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/monbetsu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  }
+]

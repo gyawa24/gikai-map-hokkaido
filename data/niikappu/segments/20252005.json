@@ -1,1 +1,324 @@
-[]
+[
+  {
+    "id": "niikappu-20252005-1-001",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "島田和義総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第５９号、令和７年度新冠町一般会計補正予算について\n提案理由を申し上げます。\n１ページをお開き願います。\n令和７年度新冠町一般会計補正予算、このたびは５回目の補正となります。歳入歳出予\n算の補正、第１条、既定の歳入歳出予算の総額に歳入歳出それぞれ１１１５万７千円を追\n加し、歳入歳出予算の総額を歳入歳出それぞれ７０億６３４万８千円にしようとするもの\nです。\n事項別明細書の歳出より説明いたしますので、８ページから９ページをお開き願います。\n６款、１項ともに商工費、２目観光費、１１１５万７千円の追加。説明欄の事業１、道の\n駅事業の１４節工事請負費１０９３万４千円の増額は、道の駅トイレ改修工事で、老朽化\nによる漏水、排水詰まり等の修繕のほか、便器交換２基、温水洗浄便座への交換８基など\nを行うもの。１７節備品購入費２２万３千円の増額は、道の駅共用スペースに設置してい\nるＦＦ式ストーブ１台を更新するもので、詳細は説明資料１ページのとおりです。\n次に、歳入について説明いたしますので、６ページから７ページをお開き願います。１\n８款繰入金、１項基金繰入金、１目ふるさとづくり基金繰入金、１１１５万７千円の追加\nは、歳出に計上した道の駅事業の財源として繰り入れるものです。\n以上が議案第５９号、令和７年度新冠町一般会計補正予算の提案理由でございます。御\n審議を賜り、提案のとおり御決定くださいますようお願い申し上げます。",
+    "text_length": 609,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-002",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "酒井益幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "酒井 益幸",
+    "member_faction": "",
+    "text": "１番酒井です。道の駅事業のトイレ改修ということで、この説明\n資料には事業の評価課題等の欄に暗い、汚いといったマイナスのイメージを利用者には与\nえやすい状況となっているという記載があります。そこでちょっと質疑したいんですが、\nこの便座を交換するということで、先ほど説明ありましたように、このトイレのただの便\n座を取り替えるか、それとも便器ごと全て交換するのかという確認と、あと暗いといった\nイメージの場所のＬＥＤ化を進めるわけなんですけれども、この明るさというのはどの程\n度改善されるのか、このちょっと説明を求めます。",
+    "text_length": 258,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-003",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "佐渡健能企画課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。詳細申し上げますと、女子トイレの便器丸ごと交換す\nるのは１基、そしてまた、誰でもトイレといいますか、身体者の方が、身体に障害のある\n方が利用されるトイレのほう、こちらを全て取り替える予定になっています。そのほかに\n温水洗浄用の便座として、男子トイレの便座１基と女子トイレは６基交換することとして\nございます。そしてまた、照明の度合いのことなんですが、従来からも古い照明であった\nものをＬＥＤ化しまして、明るいものに取り替えたいと考えております。これはトイレの\n4\n\nエントランス部分、そしてトイレの内部も含めて、照明は交換したいというふうに考えて\nいます。",
+    "text_length": 281,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-004",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "酒井益幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "酒井 益幸",
+    "member_faction": "",
+    "text": "今の説明だと、必要最低限の改修工事なのかなという印象を受け\nました。そこで、まず多目的トイレにおきましては、これはやはり結構重要なのかなとい\nうふうに私も認識してるとこなんですけども、便座を取り替えるということであれば、感\n染症対策もすべきなのではないかなというふうに思っていまして、例えばオートで蓋が開\nくですとか、オートで便座が、便器から汚水、汚物を流せるような仕組みをとってはいか\nがということが１点と、あと、そのＬＥＤの部分に関しても、もう少し照明の個数を増や\nしてはどうかというところなんですけど、その点いかがでしょうか。",
+    "text_length": 266,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-005",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "佐渡健能企画課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。今回の改修につきましては、必要最小限といったニュ\nアンスではございません。あくまでも必要なものは交換、修繕させていただく、使えるも\nのはそのまま使わせていただきたいというふうに考えております。そういった部分で申し\n上げますと、現在使われている便器、便座の必要なものは交換しますし、今、議員さんが\nおっしゃったようなオートにするかどうかといったところはちょっとまだ詳細把握できて\nないところありますが、できる限りのところまでは進めたいというふうに思っております。",
+    "text_length": 233,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-006",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "伹野裕之君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伹野 裕之",
+    "member_faction": "",
+    "text": "はい、８番伹野です。まず１点目なんですけども、男子トイレの\n大きいほうの部分で、スペースが非常に狭いですよね。スペースはあのままの状況で改修\nするのかどうか、広げるのかどうか、まずこの１点お願いいたします。",
+    "text_length": 103,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-007",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "佐渡健能企画課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい、現在の男子トイレの大便器のスペースの拡大というこ\nとまでは考えてございません。",
+    "text_length": 42,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-008",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "伹野裕之君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伹野 裕之",
+    "member_faction": "",
+    "text": "次の質問です。改修工事を行うわけですけども、この期間中、利\n用者に大変不便をかけると思うんですけども、その部分仮設トイレからなにか設置するん\nでしょうか。",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-009",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "佐渡健能企画課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。工事期間がどうしても厳冬期ということもありまして、\n日中はレ・コード館のほうへ御利用していただくような誘導したいというふうに考えてお\nります。また、夜間につきましては、大変申し訳ございませんが、これ工事期間は３週間\n予定してございます。この間は、利用できないということについて、御協力を求めるとい\nった形をとりたいというふうに考えております。",
+    "text_length": 174,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-010",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "伹野裕之君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伹野 裕之",
+    "member_faction": "",
+    "text": "日中はレ・コード館のほうへ誘導して利用してもらうということ\nなんですけども、月曜日休館日となってますけども、その月曜日の対応はどうするんでし\nょうか。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-011",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "佐渡健能企画課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。この大変申し訳ないなというふうに思ってございます\nが、隣接するコンビニエンスストア等に御協力を求めるような形をとりたいというふうに\nは考えてございまして、これにつきましては、今、協議を進めているところですが、理解\nを求めたいというふうに考えております。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-012",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "佐藤正秀副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "月曜日、レ・コード館は職員がおりますので、できる範囲でト\nイレのほう使用できるようにですね、職員はいますんで、完全閉鎖してるわけでありませ\nんので、そこら辺はできる範囲で月曜日も使えるようにさせていただきます。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-013",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "武田修一君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "武田 修一",
+    "member_faction": "",
+    "text": "はい。トイレの改修というところで長年そういう希望があった\n部分ですし、昨年から私たち議会もＲＥ議会ということで町民の方との意見交換の場も設\nけていますけども、去年もそのような中で、道の駅のトイレの改修という要望意見も出て\nおりました。その中の一つ、先ほど説明にもありましたけども、体の不自由な人がより利\n用しやすいトイレになればいいなというような意見もあったんですけれども、その辺も従\n来よりは、より改善されたものになるのかどうか、その辺お伺いしたいと思います。",
+    "text_length": 231,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252005-1-014",
+    "municipality": "niikappu",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.11.25gijiroku",
+    "date": null,
+    "speaker": "佐渡健能企画課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい、やはりそういった多目的のトイレにつきましても、で\nきる限りの配慮を進めた中で、今できる修繕を解消したいというふうに考えてますので、\nその詳細についてこの場で申し上げることはなかなか難しいことでございますが、そうい\nった善処を図りたいというふうに考えています。",
+    "text_length": 132,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  }
+]

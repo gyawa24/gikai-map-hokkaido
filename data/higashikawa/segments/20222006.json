@@ -1,1 +1,348 @@
-[]
+[
+  {
+    "id": "higashikawa-20222006-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８． 出 席 議 員 応招議員に同じ\n９． 欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "町長松",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岡 市 郎 保健福祉課長 佐々木 英 樹",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平 田 章 洋 税務定住課長 吉 原 敬 晴\n市 川 直 樹 産業振興課長 菊 地 伸",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003",
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "杉 山 昌 次 都市建設課長 矢ノ目 俊 之",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "企画総務課長佐藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "文 泰\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次長 塚原 裕美 書記 阪部 友洋\n12．町長提出議案の題目\n議案第１号 令和４年度 東川町一般会計補正予算（第７号）について\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙のとおり報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 147,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "６番畑中雅晴議員、７番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "藤倉智恵子議員。\n0 【東川町議会第６回臨時会】\n○開 会",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） 今日は、令和４年の東川町議会第６回の臨時会でありますが、全員の\n議員の皆様方の御出席をいただきまして、誠にありがとうございます。\n今回、補正予算になりますけれども、今まで、コロナ、コロナ、コロ\nナの新年でありましたけれども、来年は少しでも笑顔で新年が迎えられ\nるようにと、原油価格等の独自の支援対策を盛り込んだ補正予算となっ\nておりますので、どうか全会一致で議決を賜りますようにお願い申し上\nげます。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 231,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "畑中雅晴議員、７番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "藤倉智恵子議員を指名いたします。\n○日程第２ 会期の決定",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-010",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありません。\n市郎君）\n1 【東川町議会第６回臨時会】",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-011",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今の件で、ちょっと補足をさせていただきたいと思いますけれど\n市郎君） も、一般財源の財源を何にするのかと、こういうお話しであったかと思\nいます。１つは繰越金を充てているわけですけれども、繰越金が何で３\n億以上も出たかということですが、これは１つは、町の活性化施策で、\n人口増加を図ってきた。地方交付税が増加になったというようなこと。\nあるいは、極力、他の財源に振り替えをすると。特別交付税の対象にな\nるものについては、しようというようなことで、令和３年も取り組んで\nまいりました。\nそういった結果、一般財源が増えた、それが繰り越された。その財源\nを中心として充てていこうと。さらに佐藤課長が説明いたしましたよう\nに、今のような形で他の財源を振り替えれるものは、積極的に振り替え\nをし、一般財源は極力最小にしようと、こういう考え方で組まさせてい\nただいております。",
+    "text_length": 383,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-012",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "副町長（市",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当初、説明をさせていただきましたように、この中には２つの事業が\n川直樹君） 入っておりまして、国が５万円を給付する非課税世帯の支給分について\nは全額国からまいります。それが、ここでいう消耗品、通信費、そして\nシステム改修業務委託料、そして7,285万円のお金。これが５万円の分を\n積算しますと7,285万円で、それに係る事務費が入っているということで\nす。そして町が独自に行う、先ほどの５万円と３万円という説明をさせ\nていただきましたが、その分が8,460万円とＨＵＣの手数料の110万円、\nこれを合わせたものが、この中に混在をしているので、ちょっと分かり\nずらいということです。そして、この説明資料の中には、国の制度の分\nについては載せておりませんので、町の単独事業分だけ、表の上の段２\nつで整理をしているというふうに御理解をいただければと思います。",
+    "text_length": 376,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-032"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-013",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "副町長（市",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。ただいまの御質問でございますが、今の10％の部分については、\n川直樹君） 低所得者に対しては５万円というところでの、きちっと対応をさせてい\nただいた上で、一般の方についても物価は上がっております。灯油、燃\n料も含めて上がっているというところで、その方々も通常の生活をされ\nてもそれなりの影響を受けているという、そういうところを解消するた\nめに、実際に買い物をした分の金額、例えば、5,000円の買い物をしたと\nしても、500円という部分の１割分については、その物価高騰というとこ\nろでの還元をすることによって、低所得者に対してはしっかり別枠で対\n応し、さらに一般の住民の方についても、低所得でない方についても影\n響は受けているというところでの買い物をしたら、その分の１割を戻し\nますという考え方で公平性を保つと言いますか、低所得者以外の方々の\n物価高騰に対する対応をしていきたいという考え方で整理をしておりま\nすので、低所得者であっても、それなりに自分で消費する分の買い物も\nしますので、その分については物価高騰の分でも対応をさせていただき\nますということですので、特にこれから冬の需要に入りまして、燃料関\n係も当然高騰します。先ほど電気の話しもありましたが、電気について\nも対応するのはなかなか難しいですが、それ以外の生活の部分でその１\n割というものを還元することによって、この物価高騰に対する住民全体\nに対しての対応をさせていただきたいという考え方で整理をしておりま\nすので、御理解をいただければというふうに思います。",
+    "text_length": 664,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-034"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-014",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "期間ですけれども、12月１日からということで、12月１月ということ\n市郎君） でしたけれども、できるだけ早く実施をするということがいいことだと\n思うんです。ですから、今、杉本議員がおっしゃったように、やっぱり\n告知期間もいると思うんですね。ですから議決をいただいて、内容を詰\nめれば、住民の皆さんにいろいろな方法でこの告知をする。今日、道新\nさんも来ておられますけれども、書いていただければ、住民にもいち早\nく告知がされるんではないかと思いますけれども。告知をしていただい\nて理解をいただく。で、12月って言ってますけれども、もし間に合えば\n11月の20日ぐらいからやって、できるだけ灯油の供給に間に合うような\n形がいいのかなあと思ったりしますが。今のところ事務的には12月の１\n日から１か月か２か月ぐらいと。消費も年末時期ですので、消費が１か\n月で終わる可能性もあると。４億円が。あるいは、従前からいくと２億\n円ぐらいで終わるんではないかという話しもありますが、ちょっとこれ\n12 【東川町議会第６回臨時会】\n分かりませんので、4,000万円の範囲内で実施をするということで御理解\nをいただいておきたいと思います。",
+    "text_length": 508,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-046"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222006-1-015",
+    "municipality": "higashikawa",
+    "council_id": 20222006,
+    "council_name": "令和4年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月24日",
+    "date": "2022-10-24",
+    "speaker": "会議録署名議員藤倉",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "智恵子\n13 【東川町議会第６回臨時会】",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-049"
+      ]
+    }
+  }
+]

@@ -1,1 +1,416 @@
-[]
+[
+  {
+    "id": "setana-20252001-1-001",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "１２名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n７番 真 柄 克 紀 君 ８番 熊 野 主 税 君\n９番 吉 田 実 君 １０番 大 湯 圓 郷 君\n１１番 菅 原 義 幸 君 １２番 平 澤 等 君",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-002",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 高 橋 貞 光 君\n１．町長、選挙管理委員会委員長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 佐 々 木 正 則 君\n総 務 課 長 髙 橋 純 君\nまちづくり推進課長 阪 井 世 紀 君\n財 政 課 長 佐 藤 英 美 君\n保 健 福 祉 課 長 増 田 和 彦 君\nまちづくり推進課長補佐 奥 村 大 樹 君\n保 健 福 祉 課 長 補 佐 水 野 万 寿 夫 君\n保 健 福 祉 課 長 補 佐 栗 谷 一 樹 君\nまちづくり推進課主幹 稲 船 洋 志 君\n商 工 労 働 観 光 係 長 山 崎 英 人 君\n- 1 -\n\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n次 長 松 原 孝 樹 君\n主 事 神 野 翔 亜 君\n- 2 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 435,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-003",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "高橋貞光町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは職員の酒気帯び運転について行政報告をさせていただきます。\n令和６年１２月２８日午前０時４５分頃、町職員が酒気帯び運転によりせたな警察署に検挙さ\nれました。当該職員は、町内の飲食店で飲酒し、徒歩で自宅に帰宅したあと自家用車を運転し\n検挙されたものであります。日頃から職員に対して、交通事故違反等について注意するよう徹\n- 3 -\n\n底して指導しているところでありますが、このような事案が発生したことは、公務員としての\n自覚欠如であり誠に遺憾であります。今後、行政処分、刑事処分が確定後、町として処分をし\nてまいります。そのあとまた改めて議会へ報告をさせていただきます。\nこのたびこのような事案が発生したことに対し深くお詫びを申し上げます。\n申し訳ありませんでした。\n以上でございます。",
+    "text_length": 345,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-004",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "議事進行に関する発言をさせていただきたいと思います。ご承知の\nように行政報告に対する質疑はルール上できないことになっております。私はただいまの行政\n報告に対する若干の質疑を行いたいと思いますので、本日午後の政策審査特別委員会の開会時\n間を繰下げて、午後１時半から第１回全員協議会を開催することを要求いたしたいと思います。\n全員協議会の招集権は議長にございますし、特別委員会の委員長でもありますから議長の決断\nを求めたいと思います。即答というのは無理でしょうから速やかにご判断を希望いたします。\n以上であります。",
+    "text_length": 255,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-005",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回提案をいたします補正予算につきましては、現在の歳入歳出\n予算の総額に１億３，５５８万９，０００円を追加し、補正後の予算総額を９９億８，２７８\n万３，０００円とするものでございます。\nその内容でございますが、物価高騰対応重点支援地方創生臨時交付金事業に係る経費の追加\nについて補正をお願いするものでございます。なお予算に合わせまして、繰越明許費の設定１\n件をお願いしてございます。\n内容につきましては担当課長から説明をいたします。\nご審議賜りますようお願い申し上げます。",
+    "text_length": 236,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-006",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "佐藤英美財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでははじめに議案の３ページでございます。第２表繰越明許\n- 4 -\n\n費補正でございます。２款総務費、１項総務管理費、住民税非課税世帯給付金事業４，９７０\n万５，０００円は、年度内に事業の完了が見込めないことから翌年度に繰越しをお願いするも\nのでございます。\nそれでは議案の６ページの歳出から説明いたします。２款総務費、１項総務管理費、１７目\n物価高騰対応重点支援地方創生臨時交付金事業費令和６年度分１億３，５５８万９，０００円\nの追加は、国の物価高騰対応重点支援地方創生臨時交付金事業補助金を活用し、住民税非課税\n世帯給付金事業及び生活応援商品券発行事業、介護障害施設等物価高騰対応、支援金支給事業\nを実施するため必要な経費を補正するものでございます。住民税非課税世帯給付金事業での主\nなものは、１８節負担金補助及び交付金、物価高騰重点対策世帯支援給付金で４，８２０万円\nの追加で、住民税非課税世帯に３万円、住民税非課税世帯のうち子育て世帯に子供１人あたり\n２万円を加算し給付するものでございます。次に生活応援商品券発行事業の主なものは、１０\n節需用費の消耗品費で６，８００万円の追加は、商品券を購入し町民１人あたり１万円の商品\n券を配布するものでございます。介護障害施設等物価高騰対策支援金支給事業の主なものは、\n１８節負担金補助及び交付金、介護障害施設等物価高騰対策支援金１，５３９万円の追加で物\n価高騰により影響を受けている介護障害施設等へ支援するものでございます。\nこれらに係る歳入でございますが５ページでございます。１０款１項１目共に地方交付税４，\n０１９万３，０００円の追加は財源調整でございます。\n１４款国庫支出金、２項国庫補助金、１目総務費国庫補助金９，５３９万６，０００円の追\n加は物価高騰対応重点支援地方創生臨時交付金事業補助金でございます。\n以上で説明を終わります。\nご審議のほどよろしくお願い申し上げます。",
+    "text_length": 818,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-007",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "確認させていただきたいんですけど、今財政課長のほうから詳細なご\n説明がありましたが、この配付された資料の中で口頭説明のみであって、そういった詳細が記\nされていないと思われるんですが、私は総務厚生常任委員会の委員なんで既に常任委員会の中\nでは今手元にもありますし資料配付されてるんです。こういったことで扱いとしてどうなのか\nなということで、問い合わせていただきたいと思います。確認させください。",
+    "text_length": 196,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-008",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "例えば、私はこういった方向になるよと数人の町民の方にはお伝えし\nたんですが、我が町は商品券ですけど住民あたり１万円こういう方向で今協議されていますと\nいう趣旨のお伝えの仕方というか、そういうことは既に実はしているんです。そういったこと\n- 5 -\n\nも、せっかくなんでそういったことがきちんと口頭ではなくて資料として目に見えるような形\nで段取りできないものなのかなというふうな感覚を持ったので、今確認させていただいている\nところです。",
+    "text_length": 217,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-009",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "石原議員の発言に対する関連でありますが、私も議案書は勉強して\nまいりました。議案書の限りで。ただ今朝、机上の資料を見ますと、総務厚生常任委員会所管\n事務調査資料というのがございますから、これどうでしょうまちづくり推進課からこの場で説\n明を願うということで、その説明を受けたあと質疑に入るという運びでどうですか。議長にお\nいて検討願います。",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-010",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "稲船洋志まちづくり推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは１月１５日に開催しました総務厚生常任委\n員会所管事務調査の資料に基づきまして事業の内容について説明させていただきます。\nまず資料は１ページをご覧ください。こちらは国の令和６年度の補正予算で措置いたしまし\nた物価高騰対応重点支援地方創生臨時交付金に関しました事業になっております。\n資料の２事業内容というところですが、まずここが１点目、低所得世帯支援枠分としまして、\n物価高騰重点対策世帯支援事業としまして住民税非課税世帯に対しまして、１世帯あたり３万\n円の給付、そしてその世帯が子育て世帯であった場合、子供１人あたり２万円の給付というこ\nとでこちらの事業費につきまして４，９７０万５，０００円計上しております。\n次に（２）のほうの推奨事業メニュー分でございますが、①生活応援商品券発行事業、こち\nらは町民１人あたり１万円の商品券を給付するものでございます。それの予算が７，０４９万\n４，０００円。②の介護、障がい施設等物価高騰対策支援金支給事業、こちらが１，５３９万\n円となりまして、推奨事業メニュー分の合計が８，５８８万４，０００円となっております。\n交付限度額につきましては記載のとおりとなっております。\n資料２ページをご覧ください。こちらでは生活応援商品券発行事業についての詳細を記載し\nております。事業の目的、効果２番目から説明いたします。住民１人あたり１万円分の生活応\n援商品券を配布して、生活者の負担軽減を図るとともに町内循環型の経済対策を目的といたし\nます。事業費の内訳ですが、普通旅費７，０００円、消耗品費６，８００万円、印刷製本費６\n万３，０００円、通信運搬費２０１万６，０００円、手数料４０万８，０００円で、こちら事\n業費の合計が７，０４９万４，０００円となっております。こちらの財源内訳としましては、\n国の補助金であります物価高騰対応重点支援地方創生臨時交付金、こちらが３，０３０万１，\n０００円、一般財源が４，０１９万３，０００円となっております。支給対象の基準日等でご\nざいますが、令和７年２月１日現在で住民基本台帳に登録されてる方に対して給付を行います。\n- 6 -\n\n商品券の使用期間についてですが、令和７年２月１日から令和７年７月３１日までの６カ月間\nとなっております。\n続きまして資料は３ページになります。こちらは介護障害施設等物価高騰対策支援金支給事\n業についてでございます。支援金の額でございますが、居宅サービスの訪問系、相談系、こち\nらにつきましては４５万円、通所サービス、日中活動系サービスにつきましては２万２，５０\n０円掛ける定員数、入所居住系サービスにつきましては４万５，０００円掛ける定員数となっ\nております。支給対象の事業所につきましては、町内の指定介護サービス事業所及び障害福祉\nサービス事業所となっております。支給要件につきましては、基準日であります令和７年１月\n１日現在において指定を受けている介護もしくは障がい福祉サービス事業所等であり開設をし\nていること。もう１点が申請日時点において廃止及び休止していないこととなっております。\n申請につきましては、支給対象事業所に対しまして交付申請書を送付いたしますので、そちら\nが届きましたら内容確認の上保健福祉課まで提出していただくという形になっております。申\n請の受付期間につきましては令和７年１月２７日から２月１５日までとなっております。財源\n内訳につきましては、物価高騰対応重点支援地方創生臨時交付金１，５３９万円、全額国費で\n対応してまいります。\n次のページ以降につきましては、国の今回の補正の事業に関する説明の資料の参考に付けて\nおります。こちらの説明は省略させていただきます。\n以上で説明を終わります。\nよろしくお願いします。",
+    "text_length": 1573,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-011",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "桝田道廣君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "桝田 道廣",
+    "member_faction": "",
+    "text": "よその町でもされていることですので、私も何人かの方に聞かれてお\n答えしてるんですけれども確認という意味でお尋ねしたいと思います。この商品券につきまし\nては、非課税世帯関係なく町民１人に対して１万円の商品券ということで理解してよろしいの\nかなと思うんですけれども、この資料の１ページになるんですけども、この低所得者世帯、こ\nれは１世帯３万円、それで例えば低所得者の世帯に子供さんが３人いたら、３人分で６万円プ\nラス３万円プラス商品券が両親で５人いたら５万円と全部加算された総額という形で理解して\nよろしかったですか。",
+    "text_length": 257,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-012",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "阪井世紀まちづくり推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまのご質問ですが、桝田議員おっしゃるとおり\nのことで世帯３万円、お子さんがいたらそれぞれの掛ける人数、そして商品券が１人あたり１\n万円ということでもらえるということでご理解のほうでよろしいかと思います。",
+    "text_length": 104,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-013",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "常任委員会で聞き漏れてたのでこの場で確認させください。支援金の\n- 7 -\n\n額、ここに居宅サービスとあって、その下支給対象事業所、これが指定介護サービス事業所と\n指定障がい福祉サービス事業所、それぞれの件数、参考までにお伝えいただければと思います。",
+    "text_length": 125,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-027"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-014",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "水野万寿夫保健福祉課長補佐",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "支給対象事業所数につきましては、介護事業所が２０\n事業所、障がい事業所が３事業所、合わせて２３事業所となっております。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-028"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-015",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "藤谷容子君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "藤谷 容子",
+    "member_faction": "",
+    "text": "今の資料の２ページ目の財源内訳なんですけれども、これの一般財源\nとなっている部分がどうして一般財源なのかな、ちょっとわからないので教えてください。",
+    "text_length": 73,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-029"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-016",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "稲船洋志まちづくり推進課主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "藤谷議員の質問にお答えします。資料の１ページご\n覧いただいてもよろしいですか。資料の１ページの３番目に交付限度額がございまして、低所\n得世帯の支援枠分と推奨事業メニュー分としまして、今おっしゃってるところが推奨事業メニ\nュー分となります。こちらの交付限度額が４，５６９万１，０００円で、これから介護事業所\nにかかる分の経費１，５３９万円を控除した残りの分が３，０３０万１，０００円というふう\nになります。それに対しましてこの生活応援商品券の発行事業が７，０４９万４，０００円か\nかりますので、残りの部分を一般財源で対応してこの事業を行っていくという形で整理されて\nます。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-030"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-017",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "藤谷容子君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "藤谷 容子",
+    "member_faction": "",
+    "text": "わかりました。限度額を超える事業だということに全体がなってると\nいうことでよくわかりました。もう一つ質問なんですけども、この商品券というのは商工会に\n入ってない事業所でも使えるような商品券なんでしょうか。",
+    "text_length": 102,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252001-1-018",
+    "municipality": "setana",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第１回臨時会（１月２０日）.pdf",
+    "date": null,
+    "speaker": "阪井世紀まちづくり推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "過去に、令和５年、それから令和４年度にもこの事業\nを実施しておりますが、基本は商工会の商品券を町が購入して配布するという形になりますの\nで、商工会に加盟している事業所でしか使えないという形になります。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-032"
+      ]
+    }
+  }
+]

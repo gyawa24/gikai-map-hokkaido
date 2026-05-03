@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "id": "horonobe-20242005-1-001",
+    "municipality": "horonobe",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第5回臨時会（PDF：195KB)",
+    "date": null,
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岩 川 実 樹\n総 務 財 政 課 長 藤 井 和 之\n住 民 生 活 課 長 早 坂 敦\n保 健 福 祉 課 長 村 上 貴 紀\n企 画 政 策 課 長 藤 田 秀 紀\n産 業 振 興 課 長 山 本 基 継\n建 設 管 理 課 長 島 田 幸 司\n総務グループ主幹 伊 藤 崇\n- 1 -\n教 育 次 長 伊 藤 一 男\n国民健康保険診療所事務長事務取扱 （岩 川 実 樹）",
+    "text_length": 189,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "horonobe-20242005-1-002",
+    "municipality": "horonobe",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第5回臨時会（PDF：195KB)",
+    "date": null,
+    "speaker": "農業委員会事務局長（山本",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基 継）\n総 務 係 長 繁 宮 健太郎\n議会事務局職員出席者 事 務 局 長 植 村 美佐子\n主 事 満 保 希 来\n- 2 -\n（１０時００分 開 会）",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "horonobe-20242005-1-003",
+    "municipality": "horonobe",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第5回臨時会（PDF：195KB)",
+    "date": null,
+    "speaker": "総務財政課長藤井",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "和 之 君\n議案第１号「平成３１年度 幌延町一般会計補正予算（第２号）」について、提案理由の\n説明を申し上げます。\n今回の補正予算につきましては、早期に着工を要する老朽化した問寒別除雪センターの補\n修及び破損した道路横断管の改修に対応するための予算を計上しております。\n１ページをお開きください。\n第１条第１項 歳入歳出予算の補正につきましては、既定の歳入歳出予算にそれぞれ２,\n２７８万１千円を追加し、歳入歳出それぞれの予算総額を５０億６,７６４万９千円にしよ\nうとするものです。\n第２項、第１表 歳入歳出予算補正の内容について説明いたします。\n２ページをお開きください。\n２ページの歳入ですが、１９款 繰越金２,２７８万１千円の増、歳入合計も同額の増額補\n正です。\n３ページの歳出ですが、８款 土木費２,２７８万１千円の増、歳出合計も同額の増額補正\nです。\n- 3 -\n以下、歳出、歳入の順でご説明いたします。\n８ページをお開きください。\n８款２項１目 道路維持費の工事請負費、問寒別除雪センター補修事業は、既存の除雪セ\nンターが老朽化しているため、屋根や軒天等に係る補修工事１,３２１万１千円の新規計上\nです。\n同じく、町道幌延２２号線道路横断管改修事業については、昨年４月に道路横断管の破損\nにより道路本線が陥没したため、一部の区間を通行止めにしております。通行止め区間の解\n消を図るため、道路横断管改修工事９５７万円の新規計上です。\n次に歳入ですが、６ページをお開きください。\n１９款１項１目 繰越金は、今回の補正に必要な財源の全額２,２７８万１千円の増です。\n平成３０年度からの繰越金については、繰越明許費分を除いた純繰越金が２億５３８万円\nになったことから、繰越金の現行予算額と今回の補正財源を除きますと、１億１,１７１万\n７千円が今後の補正に備えた留保財源となります。\n以上、議案第１号「平成３１年度幌延町一般会計補正予算（第２号）」の提案理由といた\nします。",
+    "text_length": 838,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "horonobe-20242005-1-004",
+    "municipality": "horonobe",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第5回臨時会（PDF：195KB)",
+    "date": null,
+    "speaker": "建設管理課長島田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "幸 司 君\nお答えします。\n町内業者としましては、建設の許可を持っているのが３業者おります。基本的には５社以\n上ですので、それ以外は町外の業者になると思います。",
+    "text_length": 80,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  }
+]

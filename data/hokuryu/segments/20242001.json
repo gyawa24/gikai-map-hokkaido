@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "id": "hokuryu-20242001-1-001",
+    "municipality": "hokuryu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "沖野学君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "沖野 学",
+    "member_faction": "",
+    "text": "このたびの補欠選挙で、無投票当選しました沖野学です。一つずつ覚え\nて皆さんと一緒に色々と北竜町のために働きたいと思いますので、よろしくお願いいたします。",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/hokuryu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-003"
+      ]
+    }
+  },
+  {
+    "id": "hokuryu-20242001-1-002",
+    "municipality": "hokuryu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "林佳子君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "林 佳子",
+    "member_faction": "",
+    "text": "林佳子です。まだ何もわかりませんので、皆さまや先輩議員にご指導い\nただきながら勉強してまいりたいと思いますので、よろしくお願いいたします。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/hokuryu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "hokuryu-20242001-1-003",
+    "municipality": "hokuryu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "澤田正人君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "澤田 正人",
+    "member_faction": "",
+    "text": "私は９年ぶりの再登板ということで、また皆さんと一緒に議会活動を\nやっていきたいと思っております。一般質問を通して、色々な政策を実現出来たらと思います。\nよろしくお願いいたします。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/hokuryu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "hokuryu-20242001-1-004",
+    "municipality": "hokuryu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "高橋淳局長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番沖野学議員、２番林佳子議員、３番寺垣信晃議員、４番佐藤稔議員、\n５番木村和雄議員、６番澤田正人議員に指定と変更をいたします。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/hokuryu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  }
+]

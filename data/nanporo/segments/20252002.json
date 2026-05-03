@@ -1,1 +1,600 @@
-[]
+[
+  {
+    "id": "nanporo-20252002-1-001",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "５議員の出席出席１１名",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "欠席 ０名\n６ 議案件数 ６件 （うち議員提出 ０件）\n７ 議決の状況 (1)原案可決 ２件\n(2)原案承認 ３件\n(3)報告済 １件\n８ その他 傍聴者 ３名\n９ 会議録の写し 別紙のとおり添付\n１０ 議案書の写し 別紙のとおり添付\n令和７年 第２回南幌町議会臨時会 会議録\n令和７年５月７日（水）\n午前 ９時３０分 開 会\n１．出席議員\n１番 湯 本 要 ２番 西 股 裕 司\n３番 星 真 希 ４番 熊 木 惠 子\n５番 佐 藤 妙 子 ６番 細 川 美喜男\n７番 加 藤 真 悟 ８番 石 川 康 弘\n９番 高 橋 修 平 １０番 家 塚 雅 人\n１１番 側 瀬 敏 彦\n２．欠席議員\nなし\n３．会議録署名議員\n８番 石 川 康 弘 ９番 高 橋 修 平\n４．職務のため、会議に出席した者の職・氏名\n事 務 局 長 藤 田 雅 章 議 事 係 長 富 木 孝 郎\n議事係主任 鈴 木 真 衣\n５．地方自治法第１２１条第１項により、説明のため会議に出席した者の職・氏名",
+    "text_length": 437,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-002",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "町長大",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "崎 貞 二 教 育 長 西 田 篤 人\n監 査 委 員 白 倉 敏 美\n６．町長の委任を受けて出席した説明員",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-003",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "小 林 史 典 総 務 課 長 笠 原 大 介",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-004",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "まちづくり課長斉藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "隆 住 民 課 長 渡 辺 広 貴\n税 務 課 長 砂 田 隆 樹 保健福祉課長 谷 藤 朋 代\n保健福祉課参事 蛯 沢 千 晴 産業振興課長 岩 本 聖",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-005",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "都市整備課長黒島",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "滋 規 会計管理者 池 畑 憲 一\n病院事務長 渡 部 浩 二\n７．教育長の委任を受けて出席した説明員",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-006",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "生涯学習課長鈴木",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "潤 也\n８．選挙管理委員長の委任を受けて出席した説明員",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-007",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "書記長（総務課長）笠原",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大 介\n９．公平委員長の委任を受けて出席した説明員",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-008",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "公平委員会事務員（総務課長）笠",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "原 大 介\n１０．農業委員会長の委任を受けて出席した説明員",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-009",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "農業委員会事務局長山本",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "篤\n１１．議事日程・会議に付した事件・会議の経過は別紙のとおり\n令和７年第２回南幌町議会臨時会会議録 ５月 ７日\n（午前９時３０分）",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-010",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "８番石川康弘議員、９番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石川康弘",
+    "member_faction": "",
+    "text": "高橋 修平議員。以上、御両名を指\n名いたします。\n●日程２ 会期の決定をいたします。\nお諮りいたします。本臨時会の会期は、５月７日、本日１日限りと\nいたしたいと思いますが、御異議ありませんか。\n（なしの声。）\n御異議なしと認めます。よって本臨時会は５月７日、本日１日限り\nと決定をいたしました。\n●日程３ 諸般報告をいたします。\n・１番目 会務報告は、お手元に配付したとおりでございます。\nこれをもちまして報告済みといたします。\n・２番目 例月出納検査結果報告は、監査委員より令和７年２月分\n及び３月分の例月出納検査結果の報告がありました。その内容につい\nては、お手元に配付したとおりでございます。\nこれをもちまして報告済みといたします。\n●日程４ 常任委員の選任を行います。\n常任委員の選任につきましては、委員会条例第７条第４項の規定に",
+    "text_length": 369,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-011",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "議員、細川美喜男議員、石川",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "康弘議員。以上のとおり指名いたし\nたいと思いますが、御異議ありませんか。\n（なしの声。）\n御異議なしと認めます。よって、ただいまの指名いたしましたとお\nり、常任委員に選任することに決定をいたしました。\n暫時休憩をいたします。そのままお待ち願います。\n（議長、退席する。）\n（副議長、議長席に着く。）\n（午前 ９時３３分）\n（午前 ９時３４分）",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-012",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "川康弘議員、家塚",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "雅人議員。以上のとおり指名いたしたいと思い\nますが、御異議ありませんか。\n（なしの声。）\n御異議なしと認めます。よって、ただいま指名をいたしましたとお\nり、議会運営委員に選任することに決定をいたしました。\n各常任委員会及び議会運営委員会の正副委員長の互選のため休憩\nをいたします。\n（午前 ９時３７分）\n（午前 ９時４７分）",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-013",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "員。産業経済常任委員会委員長に石川",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "康弘議員、副委員長に細川\n美喜男議員。以上のとおり互選された旨の報告がありました。\n２番目、議会運営委員長及び副委員長の選任報告をいたします。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-014",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "議会運営委員会委員長に佐藤",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "妙子議員、副委員長に熊木惠子議\n員。以上のとおり互選された旨の報告がありました。\n●日程７ 議案第３０号 専決処分の承認を求めることについて\n（令和６年度南幌町一般会計補正予算（第１３号））を議題といたし\nます。\n理事者より提案理由の説明を求めます。町長。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-015",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程をいただきました議案第３０号 専決処分の承認を\n求めることにつきましては、（令和６年度南幌町一般会計補正予算（第\n１３号））であり、歳出では、ふるさと応援寄附事業、町道除排雪事\n２\n業等に係る経費の減額、歳入では、町税、地方譲与税、地方交付税等\nの最終確定に伴う精査が主な理由です。その結果、既定の歳入歳出予\n算の総額から歳入歳出それぞれ８，８０９万９，０００円を減額し、\n歳入歳出予算の総額を歳入歳出それぞれ７７億２，６１８万円とする\nものです。\n詳細につきましては、副町長が説明いたしますので、御承認賜りま\nすようよろしくお願い申し上げます。",
+    "text_length": 279,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-016",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議案第３０号 専決処分書（令和６年度南幌町一般会計\n補正予算（第１３号））の説明を行います。初めに歳出から説明いた\nします。予算書１４ページをごらんください。\n２款総務費１項３目財産管理費、補正額２，９４９万１，０００円\nの減額です。財産管理経費で、南幌温泉ハート＆ハート基金積立金３\n５１万５，０００円、ふるさと応援基金積立金２，６０８万２，００\n０円の減額、森林環境譲与税基金積立金１０万６，０００円を追加す\nるものです。\n次に、４款衛生費１項２目予防費、補正額１７８万７，０００円の\n減額です。成人保健事業で、各種検診事業の確定により精査するもの\nです。\n次に、６款商工費１項１目商工振興費、補正額１，１６４万１，０\n００円の減額です。ふるさと応援寄附事業で、次ページにかけまして、\nふるさと応援寄附金額の確定により、関連する経費を精査するもので\nす。なお、お手元に令和６年度のふるさと応援寄附金実績資料をお配\nりしています。寄附金実績は、１５，８２８件、１億７，３９１万８，\n０００円となっております。\n次に、７款土木費２項２目道路維持費、補正額４，１３５万７，０\n００円の減額です。町道除排雪事業で、事業費の確定により精査する\nものです。なお、令和６年度除排雪業務の実績資料をお配りしていま\nすので参考としてください。\n４項１目住宅管理費、補正額１７０万円の減額です。次ページにか\nけて、空き家対策事業で、事業実績により精査するものです。\n次に、８款消防費１項１目消防費、補正額１１０万２，０００円の\n減額です。南空知消防組合負担金を減額するものです。内容につきま\nしては、消防費に関する明細書で説明いたします。予算書１７ページ\nをごらんください。歳入、消防費、補正額１１０万２，０００円を追\n加するものです。市町村職員退職手当組合事前納付金に係る清算還付\n金を追加するものです。\n次に、９款教育費１項３目教育振興費、補正額１０２万１，０００\n円の減額です。高等学校等通学費補助事業で、事業費の確定により精\n査するものです。１３６名に対し補助金を交付しています。\n次に、歳入の説明を行います。予算書９ページをごらんください。\n１款町税１項１目個人、補正額７８６万４，０００円の減額です。\n２目法人、補正額１，８００万７，０００円の追加です。\n２項１目固定資産税、補正額８５２万４，０００円の追加です。\n３\n５項１目入湯税、補正額３５１万５，０００円の減額です。次ペー\nジにまいります。\n２款地方譲与税２項１目自動車重量譲与税、補正額３６０万７，０\n００円の減額です。\n３項１目森林環境譲与税、補正額１０万６，０００円の追加です。\n４款配当割交付金１項１目配当割交付金、補正額１６７万３，００\n０円の追加です。\n５款株式等譲渡所得割交付金１項１目株式等譲渡所得割交付金、補\n正額４１５万円の追加です。次ページにまいります。\n６款法人事業税交付金１項１目法人事業税交付金、補正額２８４万\n１，０００円の追加です。\n７款地方消費税交付金１項１目地方消費税交付金、補正額２，２０\n９万１，０００円の追加です。\n８款ゴルフ場利用税交付金１項１目ゴルフ場利用税交付金、補正額\n１３０万３，０００円の追加です。\n９款環境性能割交付金１項１目環境性能割交付金、補正額２７７万\n２，０００円の追加です。次ページにまいります。\n１０款地方特例交付金２項１目新型コロナウイルス感染症対策地\n方税減収補填特別交付金、補正額８万５，０００円の追加です。\n１１款地方交付税１項１目地方交付税３，１８９万３，０００円の\n追加です。特別交付税の確定によるもので、これにより令和６年度の\n特別交付税の交付額は、４億４，１８９万３，０００円となります。\n１５款国庫支出金２項４目土木費国庫補助金、補正額９２２万３，\n０００円の追加です。１節道路橋梁費国庫補助金、補正額８７７万７，\n０００円の減額。４節臨時道路除雪事業費補助金、補正額１，８００\n万円の追加です。それぞれ、補助金の確定によるものです。次ページ\nにまいります。\n１８款寄附金１項１目一般寄附金、１０万円の追加です。青葉自治\n区、東 紀美子様より御寄附をいただいたものです。\n３目ふるさと応援寄附金、補正額２，６０８万２，０００円の減額\nです。令和６年度ふるさと応援寄附金の確定によるものでございま\nす。\n次に、１９款繰入金１項１目財政調整基金繰入金、補正額５，３５\n６万８，０００円の減額です。財源調整を行うものです。これにより、\n令和６年度末基金残高は８億９，９０３万２，９８９円となります。\n２目減債基金繰入金、補正額９，５２３万１，０００円の減額です。\n財源調整を行うものです。これにより、令和６年度末基金残高は１億\n９，１６２万３，８５８円となります。\n４目ふるさと応援基金繰入金、補正額１００万円の減額です。財源\n調整を行うものです。これにより、令和６年度末基金残高は２億１，\n０７６万４，３０８円となります。\n以上、歳入歳出それぞれ８，８０９万９，０００円を減額し、補正\n後の総額を７７億２，６１８万円とするものです。以上で議案第３０\n号の説明を終わります。\n４",
+    "text_length": 2161,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-020"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-017",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程をいただきました議案第３１号 専決処分の承認を\n求めることにつきましては、地方税法等の改正に伴い、町税条例の一\n部を改正する必要があるため、本案を提案するものです。\n詳細につきましては、税務課長が説明いたしますので、御承認賜り\nますようよろしくお願い申し上げます。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-022"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-018",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "税務課長それでは、議案第３１号",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "専決処分の承認を求めることについて\n（町税条例の一部を改正する条例）制定について御説明いたします。\n地方税法等を改正する法律が３月３１日に公布され、４月１日施行\nに伴い、町税条例の一部を改正する条例を３月３１日専決処分として\n公布したところであり、本日の議会で報告し、承認を求めるものです。\n改正の主な内容は、関係法令の改正に伴う条文規定の整備です。\nそれでは、別途配布いたしました議案第３１号資料 新旧対照表で\n御説明いたします。左が改正後の新条例、右が改正前の旧条例であり、\n下線の箇所が改正部分です。\n第３６条の２は町民税の申告に関する規定で、行政手続における特\n定の個人を識別するための番号の利用等に関する法律の改正に伴う\n改正で、第１０項中の引用条項の項ずれの整理です。\n次に、１ページ下段から２ページ上段にかけて、第６３条の２は施\n行規則第１５条の３第３項並びに第１５条の３の２第４項及び第５\n項の規定による補正の方法の申出に関する規定で、行政手続における\n特定の個人を識別するための番号の利用等に関する法律の改正に伴\nう改正で、第１号中の引用条項の項ずれの整理です。中段、第８２条\nは種別割の税率に関する規定で、軽自動車税種別割の標準税率の区分\nの見直しに伴う税率の区分の改正で第１号中、ウに新たな区分を加\nえ、以下を繰り下げ、ア、イ、エに引用する区分の整理です。\n次に、３ページ、第８９条は種別割の減免に関する規定で、第２項\n第２号中、行政手続における特定の個人を識別するための番号の利用\n５\n等に関する法律の改正に伴い引用条項の項ずれの整理です。第５号\nは、軽自動車税種別割の標準税率の区分の見直しに伴う減免申請書の\n記載事項に係る規定の整備です。\n次に、３ページ下段から５ページにかけて、第９０条は身体障害者\n等に対する種別割の減免の規定で、道路交通法の改正に伴う改正で、\n第２項、第３項はマイナ免許証の運用開始に伴う減免申請時の運転免\n許証の提示義務に係る規定等の整備を行い、以下、項を繰り下げるも\nのです。\n次に、５ページ上段、第１３９条の３は特別土地保有税の減免の規\n定で、行政手続における特定の個人を識別するための番号の利用等に\n関する法律の改正に伴う改正で第２項第１号中の引用条項の項ずれ\nの整理です。中段から６ページ上段かけて、第１４７条は入湯税に係\nる特別徴収義務者の経営申告の規定で、行政手続における特定の個人\nを識別するための番号の利用等に関する法律の改正に伴う改正で、第\n１号中の引用条項の項ずれの整理です。\n次に、制定附則第１０条の２は法附則第１５条第２項第１号等の条\n例で定める割合の規定で第４項、第５項は、法律改正に合わせて引用\n条項の項ずれの整理です。\n次に、改正附則第１条は、施行期日を規定するものです。第２条は、\n固定資産税に関する経過措置、第３条は軽自動車税に関する経過措置\nを規定するものです。以上で、議案第３１号 町税条例の一部を改正\nする条例制定についての説明を終了いたします。",
+    "text_length": 1269,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-019",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程をいただきました議案第３２号 専決処分の承認を\n求めることにつきましては、地方税法施行令の改正に伴い、南幌町国\n民健康保険税条例の一部を改正する必要があるため、本案を提案する\nものです。\n詳細につきましては住民課長が説明いたしますので、御承認賜りま\n６\nすようよろしくお願い申し上げます。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-020",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "住民課長それでは、議案第３２号",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "専決処分書南幌町国民健康保険税条例の\n一部を改正する条例制定について、御説明いたします。\n本条例の制定につきましては、地方税法施行令の一部を改正する政\n令が本年３月３１日に公布、４月１日に施行されたことに伴い、南幌\n町国民健康保険税条例の一部を改正する条例制定を３月３１日に専\n決処分し、公布したところでございます。本議会臨時会において報告\nし、承認を求めるものです。\n初めに、改正の概要について申し上げます。１点目は、国民健康保\n険税課税限度額の見直しでございます。国民健康保険の被保険者間の\n保険税負担の公平の確保及び中間層に配慮した保険税設定を図るた\nめ、医療分の基礎課税分及び後期高齢者支援金等課税分の課税限度額\nを合わせて３万円引き上げ、介護納付金課税分との合計の上限額総額\nを、現行１０６万円から１０９万円に改正するものでございます。２\n点目は、国民健康保険税の軽減判定所得基準の改正でございます。国\n民健康保険制度では、一定の所得以下であると、応益割である均等割\nと平等割について、７割、５割、２割の軽減措置が受けられますが、\nこのたびの改正では、５割軽減と２割軽減の基準を改め、低所得者に\n対する保険税減額の対象世帯数を拡大するものでございます。\nそれでは、別途配布しています議案第３２号資料 新旧対照表をご\nらんください。左側が改正後、右側が改正前、下線の部分が改正箇所\nでございます。\n第２条、課税額の第２項の規定につきましては、基礎課税分の限度\n額を６５万円から１万円引き上げ６６万円に改めるものです。この改\n正により、限度額世帯数は６０世帯で、改正前と比較し１世帯の減と\nなっております。第３項の規定につきましては、後期高齢者支援金等\n課税額の限度額を２４万円から２万円引き上げ２６万円にするもの\nでございます。この改正により、限度額世帯数は３０世帯となり、改\n正前と比較し５世帯の減となっております。\n次に、第２６条国民健康保険税の減額の第１項の規定につきまして\nは、第２条の限度額の改正に伴い、改めるものです。２ページにまい\nります。\n第２号は、５割軽減基準の改正でございます。５割軽減の対象とな\nる世帯の判定所得の算定における被保険者の数に乗ずべき金額を、現\n行２９万５，０００円から３０万５，０００円に引き上げるものでご\nざいます。第３号は、２割軽減基準の改正でございます。２割軽減の\n対象となる判定所得の算定における被保険者の数に乗ずべき金額を、\n現行の５４万５，０００円から５６万円に引き上げるものでございま\nす。\n次に、附則の改正になります。改正附則第１項は、施行期日の規定\nで、この条例は、令和７年４月１日から施行する。第２項は、国民健\n康保険税条例の経過措置を規定するものでございます。以上で、議案\n第３２号の説明を終わります。\n７",
+    "text_length": 1187,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-026"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-021",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程をいただきました議案第３３号 工事請負契約につ\nきましては、準工業用地等整備工事第１工区にあたり、過日入札を執\n行したところです。\n契約の内容につきましては、都市整備課長が説明いたしますので、\nよろしく御審議賜りますようお願い申し上げます。",
+    "text_length": 126,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-028"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-022",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "都市整備課長議案第３３号",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "工事請負契約につきまして御説明を申し上げます。\n次ぺージをごらん願います。\n１契約の目的、準工業用地等整備工事第１工区。工事の主な内容に\nつきましては、準工業用地等整備工事のうち、東側の区画内道路、下\n水道管渠の新設、工業団地看板設置に係る工事を行うものです。２契\n約方法、指名競争入札。３契約金額、３億７，８４０万円、内消費税\n及び地方消費税の額３,４４０万円。本件につきましては、去る４月\n２５日、指名５社による入札を執行しております。なお、落札率は９\n８.８％でございます。４契約の相手方、玉川・土井総業特定建設工\n事共同企業体。代表者、恵庭市相生町４丁目６番３０号、株式会社玉\n川組 代表取締役社長 玉川 裕一。構成員、空知郡南幌町南１１線\n西６番地、株式会社土井総業 代表取締役 土井 義博。参考としま\nして、工期は、契約締結日より令和７年１２月１９日までとしていま\nす。以上で、議案第３３号の説明を終わります。",
+    "text_length": 411,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-029"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-023",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程をいただきました議案第３４号 工事請負契約につ\nきましては、準工業用地等整備工事第２工区にあたり、過日入札を執\n行したところです。\n契約の内容につきましては、都市整備課長が説明いたしますので、\nよろしく御審議賜りますようお願い申し上げます。",
+    "text_length": 126,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-031"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-024",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "都市整備課長議案第３４号",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "工事請負契約につきまして御説明を申し上げます。\n次ページをごらん願います。\n１契約の目的、準工業用地等整備工事第２工区。工事の主な内容に\nつきましては、準工業用地等整備工事のうち、西側の区画内道路、下\n水道管渠の新設工事を行うものです。２契約方法、指名競争入札。３\n契約金額、３億９，７１０万円、内消費税及び地方消費税の額３,６\n１０万円。本件につきましては、去る４月２５日、指名５社による入\n札を執行しております。なお、落札率は９８.３％でございます。４\n契約の相手方、中山・南幌土建特定建設工事共同企業体。代表者、札\n幌市東区北１９条東１丁目１番１号、株式会社中山組 代表取締役社\n長 中山 茂。構成員、空知郡南幌町元町１丁目４番５号、株式会社\n南幌土建 代表取締役 峰尾 義明。参考としまして、工期は、契約\n締結日より令和７年１２月１９日までとしています。以上で、議案第\n３４号の説明を終わります。",
+    "text_length": 402,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-032"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-025",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程をいただきました報告第２号 令和６年度南幌町下\n９\n水道事業会計予算繰越計算書につきましては、地方公営企業法第２６\n条第３項の規定により、報告するものです。\n詳細につきましては、都市整備課長が説明いたしますので、よろし\nく御審議賜りますようお願い申し上げます。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-034"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252002-1-026",
+    "municipality": "nanporo",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第２回臨時会会議録",
+    "date": null,
+    "speaker": "都市整備課長それでは、報告第２号令和６年度",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "南幌町下水道事業会計予算繰\n越計算書について、御説明を申し上げます。次ページをごらん願いま\nす。\n地方公営企業法第２６条第１項の規定による建設改良費の繰越額、\n１款資本的支出１項建設改良費、準工業用地等下水道整備事業、翌年\n度繰越額２億７，３１２万円。準工業用地下水道管渠新設に係る工事\n請負費です。本事業につきましては、追加分として国の補助金採択を\n受けたもので、令和６年度に執行することができないため翌年度に繰\nり越すものです。\n以上で、報告第２号の説明を終わります。",
+    "text_length": 236,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-035"
+      ]
+    }
+  }
+]

@@ -1,1 +1,163 @@
-[]
+[
+  {
+    "id": "setana-20252006-1-001",
+    "municipality": "setana",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第６回臨時会（８月２０日）.pdf",
+    "date": null,
+    "speaker": "１１名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n８番 熊 野 主 税 君 ９番 吉 田 実 君\n１０番 大 湯 圓 郷 君 １１番 菅 原 義 幸 君\n１２番 平 澤 等 君",
+    "text_length": 137,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252006-1-002",
+    "municipality": "setana",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第６回臨時会（８月２０日）.pdf",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 高 橋 貞 光 君\n教 育 委 員 会 教 育 長 小 板 橋 司 君\n１．町長、選挙管理委員会委員長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 佐 々 木 正 則 君\n総 務 課 長 髙 橋 純 君\n財 政 課 長 佐 藤 英 美 君\n（２）教育委員会教育長の委任を受けて出席する説明員\n事 務 局 長 古 畑 英 規 君\n次 長 斉 藤 哲 章 君\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n- 1 -\n\n次 長 松 原 孝 樹 君\n主 事 神 野 翔 亜 君\n- 2 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 354,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252006-1-003",
+    "municipality": "setana",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第６回臨時会（８月２０日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号物品購入契約の締結についての提案理由を説明いたし\nます。学習用パソコン購入について、せたな町議会の議決に付すべき契約及び財産の取得また\nは処分に関する条例第３条の規定により、予定価格が７００万円を超えるため契約締結上必要\n- 3 -\n\nな議会の議決を求めるものでございます。\n内容につきましては担当課長から説明いたします。\nご審議賜りますようお願いいたします。",
+    "text_length": 185,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252006-1-004",
+    "municipality": "setana",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第６回臨時会（８月２０日）.pdf",
+    "date": null,
+    "speaker": "古畑英規教育委員会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号物品購入契約の締結についてでございます。\n売買契約を締結する物品は、学習用パソコン３２６台となります。契約の金額は１，７９３万\n円、契約の相手方は、函館市西桔梗町５８９番地４２、大丸株式会社道南支店支店長、半澤修、\n納入期日につきましては、契約締結の日の翌日から令和８年２月２７日までとなっております。\nなお入札参加資格者及び入札結果一覧につきましては５ページの議案第１号関係資料に掲載さ\nれております。\n以上で説明を終わります。\nよろしくご審議賜りますようお願い申し上げます。",
+    "text_length": 244,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252006-1-005",
+    "municipality": "setana",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第６回臨時会（８月２０日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "１点お尋ねいたします。これは参加者が１社であって１落と、しか\nも予定価格１００％です。１社であれば予定価格公表してますからこういうことになるのは当\n然だと思うんですが、指名発送は何社にしたんですか。",
+    "text_length": 99,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252006-1-006",
+    "municipality": "setana",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第６回臨時会（８月２０日）.pdf",
+    "date": null,
+    "speaker": "古畑英規教育委員会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これにつきましては単価契約のほうで、北海道のほう\nが入札を行ってまして単価を決定しております。それに基づきましてこちらのほうで随意契約\nという形で７００万を超えるものですから議決をいただくのに今回上げさせていただいており\nます。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252006-1-007",
+    "municipality": "setana",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第６回臨時会（８月２０日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "そうしますと、一般競争入札もしくは指名競争ではなくて、事実上、\n随意契約を行ったということで理解してよろしいですか。",
+    "text_length": 58,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  }
+]

@@ -1,1 +1,462 @@
-[]
+[
+  {
+    "id": "setana-20252004-1-001",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "１０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n８番 熊 野 主 税 君 １０番 大 湯 圓 郷 君\n１１番 菅 原 義 幸 君 １２番 平 澤 等 君",
+    "text_length": 126,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-002",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "２名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "７番 真 柄 克 紀 君 ９番 吉 田 実 君\n１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 高 橋 貞 光 君\n１．町長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 佐 々 木 正 則 君\n総 務 課 長 髙 橋 純 君\n財 政 課 長 佐 藤 英 美 君\n福 祉 課 長 中 川 譲 君\n建 設 水 道 課 長 平 田 大 輔 君\n総 務 課 長 補 佐 尾 野 裕 也 君\n財 政 課 長 補 佐 中 山 康 春 君\n福 祉 課 長 補 佐 栗 谷 一 樹 君\n- 1 -\n\n情 報 管 理 係 長 又 村 智 君\n財 政 係 長 髙 森 直 也 君\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n次 長 松 原 孝 樹 君\n主 事 神 野 翔 亜 君\n- 2 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 425,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-003",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "高橋貞光町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは行政報告を申し上げます。\nそれでは町立国保病院常勤医師の退職についてでございます。このたび国保病院内科医長大\n成診療所長としてご勤務いただいております恩田先生から一身上の都合により、本年６月３０\n- 3 -\n\n日をもって退職したい旨の退職願の提出があり受理したところであります。恩田先生は北海道\nの地域医療に貢献したいという思いから本年１月に着任され、その間せたな町の医療と町民の\n健康維持増進にご尽力をいただきました。先生には心から感謝を申し上げる次第でございます。\n後任の大成診療所長につきましては、国保病院内科医長の庄田先生にお願いすることとしてお\nります。また当面、国保病院両診療所における診療体制については、出張医師の協力を得なが\nら診療への影響を最小限にとどめられるよう対応してまいります。なお医師の確保については、\nさらなる招聘に向けて引き続き取り組んでまいります。\n以上でございます。",
+    "text_length": 404,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-004",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今上程になりました報告第１号繰越明許費の繰越しにつきま\nしては、令和６年度せたな町一般会計予算繰越明許費におきまして、繰り越した予算について\n地方自治法施行令第１４６条第２項の規定に基より報告をするものでございます。\n内容につきましては担当課長から説明いたします。\nご審議賜りますようお願い申し上げます。",
+    "text_length": 154,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-005",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "佐藤英美財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは議案の２ページでございます。令和６年度せたな町一般\n会計予算繰越明許費繰越計算書でございます。記載されている事業につきましては、年度内の\n事業の完了が見込めないことから、令和６年度補正予算の中で繰越明許費を設定しているとこ\nろでございますが、それぞれ事業に係る翌年度への繰越額が確定いたしましたのでご報告いた\nします。翌年度の繰越額でございますが、２款総務費、１項総務管理費、住民税非課税世帯給\n付金事業４，９７０万５，０００円から９款１項共に消防費、檜山広域行政組合消防費負担金、\n水槽付消防ポンプ自動車整備事業９，３１８万４，０００円まで６事業の合計で２億６，２３\n４万６，０００円を令和７年度に繰越しをいたしました。この繰越額の財源内訳の合計は未収\n入の特定財源として２億３，３６１万２，０００円、一般財源として２，８７３万４，０００\n円となっております。\n以上で説明を終わります。\nよろしくお願い申し上げます。",
+    "text_length": 413,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-006",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今上程になりました報告第２号繰越明許費の繰越しにつきま\nしては、令和６年度せたな町下水道事業会計予算繰越明許費におきまして、繰り越した予算に\nついて地方公営企業法第２６条第３項の規定に基より報告をするものでございます。\n内容につきましては担当課長から説明いたします。\nご審議賜りますようお願い申し上げます。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-007",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "平田大輔建設水道課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは議案の４ページでございます。令和６年度せたな町\n下水道事業会計予算繰越計算書でございます。記載の２事業につきましては、年度内の事業の\n完了が見込めないことから繰越明許費を設定しているところでございますが、それぞれの事業\nに係る翌年度への繰越額が確定いたしましたのでご報告いたします。翌年度繰越額ですが、１\n款資本的支出、１項建設改良費、北檜山下水処理場改築更新工事委託業務が１，６７３万円、\n大成浄化センター改築更新工事委託業務で３，１００万円を令和７年度へ繰越しをいたしまし\nた。この繰越額に係る財源内訳はそれぞれ記載のとおりとなっております。\n以上で説明を終わります。\nよろしくお願いいたします。",
+    "text_length": 304,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-008",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号物品購入契約の締結についての提案理由を説明いたし\nます。行政情報ネットワーク用パソコン購入について、せたな町議会の議決に付すべき契約及\n- 5 -\n\nび財産の取得または処分に関する条例第３条の規定により、予定価格が７００万円を超えるた\nめ契約締結上必要な議会の議決を求めるものでございます。\n内容につきましては担当課長から説明いたします。\nご審議賜りますようお願いいたします。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-009",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "髙橋純総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは内容について説明いたします。このたびの物品購入契約\nにつきましては、行政情報ネットワーク用パソコン、１７３台の購入についてでございます。\n物品の種類はパソコン契約金額は４，１１４万円、契約の相手方は、札幌市中央区大通西１４\n丁目７番地、東日本電信電話株式会社、北海道事業部、執行役員北海道事業部長、茂谷浩子、\n納入期日は、契約締結の日の翌日から令和８年３月３１日までとなります。なお入札参加資格\n者及び入札結果一覧につきましては９ページに掲載しておりますのでご参照願います。\n以上で説明を終わります。\nよろしくお願い申し上げます。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-027"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-010",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号土地の無償貸付けについての提案理由を説明いたしま\nす。社会福祉法人雄心会に無償貸付している町有地について、本年６月３０日をもって契約期\n間が満了となることから引き続き無償貸付けするため、地方自治法第９６条第１項第６号の規\n定により議会の議決を求めるものでございます。\n内容につきましては担当課長から説明いたします。\nご審議賜りますようお願いいたします。\n- 6 -",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-011",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "中川譲福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは議案の８ページをお願いいたします。議案第２号土地の\n無償貸付けについてご説明をいたします。はじめに１、無償貸付けする土地でございますが、\n地域密着型小規模特別養護老人ホームせたな雅荘の用地でございます。所在は、久遠郡せたな\n町瀬棚区本町５０４番２、地目は宅地で、地積については２，６１１．８７平方メートルでご\nざいます。\n２、無償貸付けする期間につきましては、令和７年７月１日から令和１２年６月３０日まで\nの５年間でございます。\n３、無償貸付けの相手方でございますが、北斗市清水川４番地１、社会福祉法人雄心会、理\n事長、伊藤正明でございます。\n以上で説明を終わります。\nご審議のほどよろしくお願い申し上げます。",
+    "text_length": 309,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-035"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-012",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "２点のお尋ねをいたします。まず１点目は、契約の起点はいつなの\nかお尋ねいたします。５年間だったのかと思いますが正確にご答弁を求めたいと思います。そ\nれからもう１点は土地ではございませんが建物の関係です。建物の所有権は現在どこにあるの\nか合わせてお尋ねをしておきたいと思います。\n以上です。",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-037"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-013",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "中川譲福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "契約の起点ということで多分最初の契約の始まりということでよ\nろしいですか。最初の１回目の契約が平成２２年８月１６日から元号変わりましたけども令和\n２年６月３０日までっていうのが１回目です。２回目につきましては令和２年７月１日から令\n和７年６月３０日までということになっております。\n建物の所有権は社会福祉法人雄心会が建物所有権ということになります。",
+    "text_length": 174,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-038"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-014",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "町長にお尋ねいたしますが、建物はたしかせたな町に寄附したと、\n寄附採納願の扱いはそのようになっていたと思うんですが、いつ福祉法人のほうに所有権が移\n転になったんですか。これ土地建物ワンセットですからそこはきちんとしておいていただきた\nいと思います。それからなお、もうこれ質問回数制限されてますから合わせてお尋ねいたしま\nすが、所有権が法人側にあるのだとすれば固定資産税はどうなってますか。合わせてお尋ねし\nておきたいと思います。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-039"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-015",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答え申し上げます。まず建物の件でございますけれども、これ\nは平成２２年６月１７日、議案第１２号ということで建物の譲与について議決をいただいてご\n- 7 -\n\nざいまして雄心会の所有ということでございます。\n固定資産税につきまして今ちょっと手元に資料がございませんので調べさせていただきたい\nと思います。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-040"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-016",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "時間をいただきまして申し訳ございません。建物につきましては\n非課税ということでございますけれども、その根拠について今担当で調査をしているというこ\nとで、しばらく時間をいただきたいと思います。",
+    "text_length": 95,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-043"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-017",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "時間を与えるのはいいですけども所有権移転してから何年になりま\nすか。これ即答できなきゃおかしいんです。非課税にした措置の根拠が即答できないほど曖昧\nなままに今日まで至ったということは私は非常に問題があると見てます。どういう理由づけす\nるのか知りませんが大変遺憾だという１点に限定して申し上げておきたいと思います。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-044"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-018",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大変申し訳ございませんでした。固定資産税の関係でございます\nけれども、令和４年４月４日でございます。社会福祉法人雄心会につきましては、同じく社会\n福祉法人北檜山恵福会を吸収合併し土地家屋について同日付で所有権移転登記を行ってござい\nます。それで社会福祉法人北檜山恵福会がもともと所有してございました各固定資産につきま\nしては、地方税法第３４８条第２項、第１０条の５号及びせたな町税条例第５７条の規定によ\nり非課税となっているところでございます。",
+    "text_length": 222,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-047"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-019",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "もうこれ最後の質疑になりますからいくつか申し上げたいと思うん\nですが、まず口頭で答弁いただきましたが書面できっちり出していただきたいと思います。\n- 8 -\n\nそれからもう一つお尋ねしておきますが、即答できないこと自体が私はみっともないと思い\nます。細かいことを揚げ足取るつもりはありませんが、これだけの物件ですから当然、土地と\n建物はワンセットなので、菅原あたりから質問出るかもしらんぞとこういう予想のもとで答弁\n用意されていなきゃおかしいんです。これは２つ目に申し上げておきます。\nそれから３つ目は、私、雄心会に一方的に利益を供与し過ぎているんではないかという疑問\nを一貫して持っております。町長もう９月で辞めますからそこをほじるつもりはありませんけ\nれども、やっぱり公平な扱いをしなくちゃいかんと思います。特に契約そのものをやるときに\n脱法行為があったのではないかという疑い、疑問を今でも捨て切れないでおります。それは合\n併手続き前に雄心会との例えば債務負担行為でありますとか、その他法的締結行為をやったこ\nとについて、町長は町村会の特定セクションの方に相談したらいいって言ったから大丈夫なん\nだと胸張りましたがそんな問題じゃないです。これはこの問題も含めて私は未処理案件として\n今後とも議席を有する限りにおいて正していきたいと思います。本契約については承認をいた\nします。",
+    "text_length": 590,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-048"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252004-1-020",
+    "municipality": "setana",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会（６月１９日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま３点質問をいただきました。まず書面での提出というこ\nとでございます。そこは町長名で議長宛てに提出をいたします。\nそれから即答できなかったということについては大変申し訳なく思ってございます。同様の\n社会福祉法人がもう一つございますので、そういったことでは何ら答弁に遅くなるというよう\nなことがないというふうに思います。\nそれから３点目でございますけれども、これはいろいろご議論があるところでございますの\nで受け止めました。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-049"
+      ]
+    }
+  }
+]

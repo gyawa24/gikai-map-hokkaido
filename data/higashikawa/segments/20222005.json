@@ -1,1 +1,371 @@
-[]
+[
+  {
+    "id": "higashikawa-20222005-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８． 出 席 議 員 応招議員に同じ\n９． 欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "町長松",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岡 市 郎 文化交流課長 藤 井 貴 慎",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平 田 章 洋 東川スタイル課長 高 石 大 地\n市 川 直 樹 産業振興課長 菊 地 伸",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003",
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "杉 山 昌 次 都市建設課長 矢ノ目 俊 之",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "企画総務課長佐藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "文 泰 診療所事務長 金 山 裕 之\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次長 塚原 裕美 書記 栁澤 奨一郎\n12．町長提出議案の題目\n議案第１号 令和４年度 東川町一般会計補正予算（第６号）について\n議案第２号 野花南第１号道路災害復旧工事１工区請負契約について\n議案第３号 キャンモアスキービレッジクワッドリフト大規模改修工事\n請負契約について\n議案第４号 西５号西 1 丁目道路改良工事外２路線請負契約について\n議案第５号 東川町立診療所スプリンクラー設備設置工事請負契約につ\nいて\n報告第１号 専決処分の報告について（萬二橋架替工事１工区）\n報告第２号 専決処分の報告について（東川第二小学校校舎長寿命化改良\n工事第１工区）\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙のとおり報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 364,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "４番薦田敏次議員、５番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "薦田 敏次",
+    "member_faction": "",
+    "text": "能登暢吉議員。\n0 【東川町議会第５回臨時会】\n○開 会",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） おはようございます。\n今回、令和４年の東川町議会第５回の臨時会招集させていただきまし\nたところ、全員の議員の皆様方の御出席をいただきまして、誠にありが\nとうございます。\n今回私共が、提案させていただきます案件につきましては、一般会計\nの補正予算を始め、工事請負契約関係が４件と合わせて５件となってお\nりますし、報告が２件でございます。どうか御決定賜りますようによろ\nしくお願い申し上げます。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "薦田敏次議員、５番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "薦田 敏次",
+    "member_faction": "",
+    "text": "能登暢吉議員を指名いたします。\n○日程第２ 会期の決定",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-010",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありません。\n市郎君）\n1 【東川町議会第５回臨時会】",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-011",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "ル課長（高",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ずこの２巻の発行の経緯という部分につきましては、元文化庁長官\n石大地君） の近藤誠一様が中心となり、広く全体に日本の心をという部分を伝えさ\nせていただくということで、今回の書籍を発行させていただきました。\n財源につきましては、国宝という部分について「日本の心」を広く伝え\nさせていただくということで、国内外の企業の方、また個人の方からい\nただき、発行させていただくということで、考え方については、財源が\n集まり次第、都度、今後についても発行させていただくという考え方に\nなっております。また、１巻の成果につきましては、国内の約5,000校の\n高校に東川町から「日本の心」を近藤誠一様と共に発信、伝えさせてい\nただくということで配布をさせていただいております。そして、約100件\nなんですが、「ありがとうございます」というようなお礼を頂いている\nというような状況と愛媛県の今年度の高校の学力統一、学力テストの出\n題の文章にもなったということで、東川町を通じ「日本の心」を高校生、\n次世代に伝えるという部分では、少しずつではありますが、届いている\nのかなと思っております。",
+    "text_length": 485,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-012",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "ル課長（高",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ず第１巻につきましては、昨年12月に発行させていただきました。\n石大地君） そちらにつきましては、制作費用が2,000万円で６社の企業、個人の方か\nら御支援を頂いて制作をさせていただいたというような経緯になってお\nります。そして、第１巻につきましては、「日本の心」をテキストで伝\n7 【東川町議会第５回臨時会】\nえるっていう部分ですので、発行費用のほうが2,000万円ということにな\nっております。第２巻につきましては、今回補正をさせていただきまし\nた制作費用2,400万円ということになっております。こちらにつきまして\nも、７社の個人、法人の方から御支援を頂きまして、補正予算書の歳入\n６ページ、７ページにございます、18款、19款の地方創生応援税制寄附\n金ということで、先ず企業版ふるさと納税で1,700万円の御支援を頂いた\nという部分、あとその下にございます株主制度、個人の方がこちらの趣\n旨に賛同頂いたということでふるさと納税を通じて200万円を基金から\n下ろさせていただいております。もう一つ、まち・ひと・しごと創生基\n金繰入金ということなんですが、年度で言いますと昨年度、今年の３月\nに企業版ふるさと納税で頂いた基金に積ませていただいて、崩させてい\nただいたということで、内訳としましては、1,700万、200万、500万とな\nっておりますが、企業版ふるさと納税が2,200万円、個人のふるさと納税\nで頂いた御支援が200万円ということになっております。今回オールカラ\nーで、人間国宝の方々の作品を伝えるということで、制作費については\n2,400万円ということになっております。",
+    "text_length": 696,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-031"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-013",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "ル課長（高",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "頂いた寄附者につきましては、１巻２巻を通じて６社の方から頂いてお\n石大地君） ります。個人の方につきましては、非公表という部分で希望されており\nますが、企業の方で公表をしていいと仰っている方のみ、御報告させて\nいただきたいと思います。\n先ず北浜グローバル経営株式会社様、株式会社ビックワン様の２社が\n６社の頂いた御寄附の内、公表を希望されているというようなことにな\nっております。",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-034"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-014",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "ル課長（高",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ず内容につきましては、東川町の文化、具体的には映像コンテンツ\n石大地君） で連携をさせていただくということで、家具、又お米を通じた東川町の\n農業の発信、又、移住定住というような方々のそれぞれ１年を通じた映\n像コンテンツを作成する連携をさせていただきたいというような内容に\nなっております。また事務費等につきましては、こちらの地域活性化企\n業人の制度の中で契約又は事前調整につきます事務費について、特別交\n付税の措置がされるということで計上をさせていただいているところで\nあります。",
+    "text_length": 241,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-038"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-015",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "ル課長（高",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "入れ替わりという企業さんとの連携としては考えておりません。全く別\n石大地君） のコンテンツでまた新たな東川町の魅力を発信していただく連携と考え\nております。\n9 【東川町議会第５回臨時会】",
+    "text_length": 94,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-041"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222005-1-016",
+    "municipality": "higashikawa",
+    "council_id": 20222005,
+    "council_name": "令和4年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "09月28日",
+    "date": "2022-09-28",
+    "speaker": "営業部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "堀ノ内俊仁でございます。\n次に工事概要について御説明申し上げます。お手元の第５回臨時会資\n料２ページから４ページを併せて御覧ください。\nキャンモアスキービレッジのクワッドリフトは、山頂まで一本で行け\nるメインリフトで、４人乗りの高速リフトであります。\n平成２年に供用を開始してから 30 年以上経過しており、近年は大規模\nな改修が増えてきている状況であり、直近では昨年度、令和３年度に大\n規模改修を行い、山麓駅舎及び山頂駅舎内のリフト稼働で 10 年ごとに整\n備が必要となる、減速機関係、油圧ユニット、制御装置や走行レール等\nの改修を行いました。\nそのような中、昨シーズン終了時期に、一部の搬器にワイヤーロープ\nを掴む圧搾装置の不具合が発覚し、今年度に入り全台数 103 台の調査を\n行ったところ、約半数の圧搾装置が劣化し早急な更新が必要であること\nが判明したことから、今後の運行において不具合や故障が起きる危険性\nが高いと判断し、搬器全台数における圧搾装置の更新整備を行うもので\nあります。\n図面には今回の主要施工箇所を色付けしております。改修工事の主な\n内容ですが、圧搾装置の各部位であるロンググリップやハブ、テンショ\nンピースといった部品を製作し、シーズン終了後にリフトから搬器を下\nした状態で、部品の組み換え作業を実施することになりますが、組み換\nえ作業が本年度内に完了することが難しいことから、本年度は部品等の\n製作を行い、翌年４月以降に組み換え作業を行う２年度に跨る一括契約\nといたします。以上が工事概要であります。\n支出科目につきましては、６款商工費、２項森林公園費、１目キトウ\nシ森林公園家族旅行村費、14 節工事請負費で、財源は辺地債を活用して\n執行し、工事契約期間は、令和５年６月 30 日までを予定しており、補正\n予算第５号で議決いただきましたとおり、継続費を設定し予算執行する\nものであります。\n以上簡単ではございますが、議案第３号の提案理由の説明とさせてい\nただきますので、よろしく御審議、御決定くださいますようお願い申し\n上げます。",
+    "text_length": 880,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-048"
+      ]
+    }
+  }
+]

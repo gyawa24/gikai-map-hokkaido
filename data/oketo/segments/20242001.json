@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "id": "oketo-20242001-1-001",
+    "municipality": "oketo",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会（令和6年1月31日開催）",
+    "date": "2024-01-31",
+    "speaker": "８名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 嘉 藤 均 議員 ２番 前 田 篤 議員\n３番 石 井 伸 二 議員 ４番 石 村 吉 博 議員\n５番 柏 原 勝 議員 ６番 山 田 耕 平 議員\n７番 阿 部 光 久 議員 ８番 岩 藤 孝 一 議員",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242001-1-002",
+    "municipality": "oketo",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会（令和6年1月31日開催）",
+    "date": "2024-01-31",
+    "speaker": "なし議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "○地方自治法第１２１条の規定により説明のため出席した者の職氏名\n《町 長 部 局》\n町 長 深 川 正 美 副 町 長 蓑 島 賢 治\n会 計 管 理 者 菅 原 嘉 仁 企画財政課長 坂 森 誠 二\n総 務 課 長 鈴 木 伸 哉 施設整備課長 名 和 祐 一\n企画財政課長補佐 高 橋 秀 典 総務課総務係長 鈴 木 良 知\n《教育委員会部局》\n教 育 長 平 野 毅\n《監査委員部局》\n代表監査委員 小 鷹 浩 昭\n- 1 -\n\n○職務のため出席した事務局職員の職氏名\n事 務 局 長 今 西 美紀子 議 事 係 加 藤 洋 聖\n臨時事務職員 中 田 美 紀\n- 2 -\n\n開会 午前９時３０分\n◎開会宣言",
+    "text_length": 306,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242001-1-003",
+    "municipality": "oketo",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会（令和6年1月31日開催）",
+    "date": "2024-01-31",
+    "speaker": "今西事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今期臨時会に町長から提出された議案は、次のとおりです。\n・議案第１号。\n今期臨時会に議案等説明のため出席を求めた者及び委任を受けて出席する者は、お手\n元に配付した名簿のとおりです。\n本日の議事日程は、お手元に配付のとおりです。\n報告を終わります。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242001-1-004",
+    "municipality": "oketo",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会（令和6年1月31日開催）",
+    "date": "2024-01-31",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました、議案第１号 令和５年度置戸町一般会計補正予\n算（第７号）につきましては、企画財政課長より説明をさせます。",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  }
+]

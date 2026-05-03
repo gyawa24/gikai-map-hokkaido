@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "id": "setana-20242005-1-001",
+    "municipality": "setana",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第５回臨時会（９月２４日）",
+    "date": null,
+    "speaker": "１２名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n７番 真 柄 克 紀 君 ８番 熊 野 主 税 君\n９番 吉 田 実 君 １０番 大 湯 圓 郷 君\n１１番 菅 原 義 幸 君 １２番 平 澤 等 君",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242005-1-002",
+    "municipality": "setana",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第５回臨時会（９月２４日）",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 高 橋 貞 光 君\n１．町長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 佐 々 木 正 則 君\n総 務 課 長 髙 橋 純 君\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n次 長 松 原 孝 樹 君\n主 事 神 野 翔 亜 君\n- 1 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 234,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242005-1-003",
+    "municipality": "setana",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第５回臨時会（９月２４日）",
+    "date": null,
+    "speaker": "１２名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n７番 真 柄 克 紀 君 ８番 熊 野 主 税 君\n９番 吉 田 実 君 １０番 大 湯 圓 郷 君\n１１番 菅 原 義 幸 君 １２番 平 澤 等 君",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242005-1-004",
+    "municipality": "setana",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第５回臨時会（９月２４日）",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 高 橋 貞 光 君\n１．町長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 佐 々 木 正 則 君\n総 務 課 長 髙 橋 純 君\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n次 長 松 原 孝 樹 君\n主 事 神 野 翔 亜 君\n- 1 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 234,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  }
+]

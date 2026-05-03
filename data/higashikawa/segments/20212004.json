@@ -1,1 +1,210 @@
-[]
+[
+  {
+    "id": "higashikawa-20212004-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20212004,
+    "council_name": "令和3年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月10日",
+    "date": "2021-05-10",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８． 出 席 議 員 応招議員に同じ\n９． 欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212004-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20212004,
+    "council_name": "令和3年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月10日",
+    "date": "2021-05-10",
+    "speaker": "町長松",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岡 市 郎 企画総務課長 窪 田 昭 仁",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212004-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20212004,
+    "council_name": "令和3年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月10日",
+    "date": "2021-05-10",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平 田 章 洋 産業振興課長 菊 地 伸\n市 川 直 樹 都市建設課長 矢ノ目 俊 之",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003",
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212004-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20212004,
+    "council_name": "令和3年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月10日",
+    "date": "2021-05-10",
+    "speaker": "教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "杉 山 昌 次\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212004-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20212004,
+    "council_name": "令和3年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月10日",
+    "date": "2021-05-10",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "書記 畑山 美里 書記 栁澤 奨一郎\n12．町長提出議案の題目\n議案第１号 令和３年度東川町一般会計補正予算（第２号）について\n議案第２号 令和３年度東川町公共下水道事業特別会計補正予算（第１\n号）について\n議案第３号 キャンモアスキービレッジクワッドリフト大規模改修工事\n請負契約について\n議案第４号 西 10 号道路改修工事請負契約について\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙のとおり報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212004-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20212004,
+    "council_name": "令和3年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月10日",
+    "date": "2021-05-10",
+    "speaker": "８番安原芳博議員、９番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "正満正義議員。\n0 【東川町議会第４回臨時会】\n○開 会",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212004-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20212004,
+    "council_name": "令和3年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月10日",
+    "date": "2021-05-10",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） 改めまして、おはようございます。\n今日は、令和３年に入りまして４回目でありますけれども、臨時会を\n招集させていただきましたところ、全員の議員の皆様方のご出席をいた\nだきまして、誠にありがとうございます。\n今回、私共の方から提案させていただきます案件につきましては４件\nでございます。どうか全会一致で議決を賜りますようにお願いを申し上\nげ、挨拶とさせていただきます。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-010"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212004-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20212004,
+    "council_name": "令和3年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月10日",
+    "date": "2021-05-10",
+    "speaker": "安原芳博議員、９番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "正満正義議員を指名します。\n○日程第２ 会期の決定",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212004-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20212004,
+    "council_name": "令和3年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月10日",
+    "date": "2021-05-10",
+    "speaker": "索道営業部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "堀ノ内俊仁であります。\n次に、工事概要についてご説明申し上げます。\nお手元の第４回臨時会資料の１頁を併せてご覧ください。\nキャンモアスキービレッジにおけるクワッドリフトは、山頂まで一本\nで行けるメインリフトで、４人乗りの高速リフトであります。\n平成２年に供用を開始してから 30 年が経過しており、近年の大規模改\n修工事の実施は、平成 27 年に場内押送装置の一部と支柱索受の圧搾装置\n５基、平成 28年は主原動機整備と保安装置の運転制御盤及び監視制御盤、\n令和元年にはワイヤーロープ交換と山麓駅舎内の安全対策を実施するな\nど、主要箇所の更新整備を順次行ってきておりますが、安全対策に万全\nを期すことが必要とされることから、今回についても不具合や故障が起\nきる危険が予見される前に更新整備を行うものであります。\n図面には今回の主要施工箇所を旗揚げしております。\n今回の大規模改修の内容ですが、山麓駅舎及び山頂駅舎内のリフト稼\n働部分で 10 年毎に整備が必要となる、主減速機、原動軸継手、緊張装置\n油圧ユニット、制動装置、走行レール等の整備で、通常の分解整備及び\n交換に加えて、経年劣化により動作不良が発生しやすい部分の更新を行\nうものです。\nまた、搬器を一定間隔に押し出すチェーンコンベアに経年劣化による\n6 【東川町議会第４回臨時会】\n部品の割れが確認されたことから交換を行い、それに伴いギヤードモー\nターについても 2008 年山麓側、2010 年山頂側の整備を行っているところ\nですが、昨シーズン中、－20°以下の運転開始時にスムーズに回らない\n不具合が生じ、更新改善が必要となったため含めて実施します。\nさらに、支柱 20 本の索受装置は 10 年を目安にベアリング交換等が必\n要ですが、2015 年に圧搾支柱５基の索受装置分解整備を行っており、今\n回は残り 15 基の整備を行います。\n以上が工事概要でございます。\n支出科目につきましては、６款 商工費、２項 森林公園費、１目 キ\nトウシ森林公園家族旅行村費、14 節 工事請負費で、財源は辺地債を活\n用して執行し、工事契約期間は、令和３年 12 月 20 日までを予定してお\nります。\n以上、簡単ではございますが、議案第３号の提案理由の説明とさせて\nいただきますので、よろしくご審議、ご決定いただきますようお願い申\nし上げます。",
+    "text_length": 996,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-026"
+      ]
+    }
+  }
+]

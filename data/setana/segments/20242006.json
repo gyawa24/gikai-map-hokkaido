@@ -1,1 +1,140 @@
-[]
+[
+  {
+    "id": "setana-20242006-1-001",
+    "municipality": "setana",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第６回臨時会（１０月３日）",
+    "date": null,
+    "speaker": "１１名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n７番 真 柄 克 紀 君 ９番 吉 田 実 君\n１０番 大 湯 圓 郷 君 １１番 菅 原 義 幸 君\n１２番 平 澤 等 君",
+    "text_length": 137,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242006-1-002",
+    "municipality": "setana",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第６回臨時会（１０月３日）",
+    "date": null,
+    "speaker": "１名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８番 熊 野 主 税 君\n１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 高 橋 貞 光 君\n選挙管理委員会委員長 大 坪 観 誠 君\n１．町長、選挙管理委員会委員長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 佐 々 木 正 則 君\n総 務 課 長 髙 橋 純 君\n財 政 課 長 佐 藤 英 美 君\n町 民 児 童 課 長 河 原 泰 平 君\n総 務 課 長 補 佐 中 山 康 春 君\n町 民 児 童 課 長 補 佐 黒 澤 美 知 子 君\n町 民 児 童 課 主 幹 三 浦 三 津 枝 君\n（２）選挙管理委員会委員長の委任を受けて出席する説明員\n- 1 -\n\n書 記 長 髙 橋 純 君\n書 記 次 長 中 山 康 春 君\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n次 長 松 原 孝 樹 君\n主 事 神 野 翔 亜 君\n- 2 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 462,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242006-1-003",
+    "municipality": "setana",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第６回臨時会（１０月３日）",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回提案をいたします補正予算につきましては、現在の歳入歳出\n予算の総額に１，３８８万円を追加し、補正後の予算総額を９７億１，５６２万６，０００円\nとするものでございます。\n- 3 -\n\nその内容でございますが、１０月２７日執行の衆議院議員選挙に係る経費の追加について補\n正をお願いするものでございます。\n内容につきましては財政課長から説明いたします。\nご審議賜りますようお願い申し上げます。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242006-1-004",
+    "municipality": "setana",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第６回臨時会（１０月３日）",
+    "date": null,
+    "speaker": "佐藤英美財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは議案の５ページの歳出から説明いたします。２款総務費、\n４項選挙費、２目衆議院議員選挙費１，３８８万円の追加は、１０月２７日執行の衆議院議員\n選挙に伴う執行経費で主なものを説明いたします。１節報酬では、投票管理者等１０３人に対\nする報酬１７９万円、３節職員手当等では、選挙事務に従事する一般職員の時間外手当や管理\n職職員の手当５６１万７，０００円、１０節需用費では、掲示板などの購入費用や投票場開設\nに伴う賄い費などの経費１３９万７，０００円、１１節役務費では、選挙公報や入場券等の発\n送費用や計数器などの点検等手数料など１９９万６，０００円、１２節委託料では、３区のポ\nスター掲示場の設置及び撤去業務として１８７万７，０００円の追加など補正をお願いするも\nのでございます。\n次に歳入ですが４ページでございます。１０款１項１目共に地方交付税５０万円の追加は財\n源調整でございます。\n１５款道支出金、３項委託金、１目総務費委託金１，３３８万円の追加は、衆議院議員選挙\n費委託金でございます。\n以上で説明を終わります。\nご審議のほどよろしくお願い申し上げます。",
+    "text_length": 481,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242006-1-005",
+    "municipality": "setana",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第６回臨時会（１０月３日）",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案の７ページでございます。議案第２号せたな町国民健康保険\n条例の一部を改正する条例についての提案理由を申し上げます。国民健康保険法の改正により\n罰則規定が変更となったことから本条例の一部を改正しようとするものであります。\n内容につきましては担当課長から説明いたします。\nご審議賜りますようお願い申し上げます。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242006-1-006",
+    "municipality": "setana",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第６回臨時会（１０月３日）",
+    "date": null,
+    "speaker": "河原泰平町民児童課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは内容につきまして議案書９ページ、新旧対照表でご\n説明いたします。第１０条は罰則について規定されておりますが、国民健康保険法の改正に伴\nい、市町村が定めることができる罰則規定が変更となり参照箇所が変更となったこと。また改\n正前、下線部、または同条第３項もしくは第４項の規定により被保険者証の変更を求められて、\nこれに応じない場合の一文を法に基づき削除するものでございます。附則として第１項では、\nこの条例は令和６年１２月２日から施行すること。第２項では、経過措置について定めるもの\nでございます。\n以上で説明を終わります。\nご審議のほどよろしくお願いいたします。",
+    "text_length": 284,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  }
+]

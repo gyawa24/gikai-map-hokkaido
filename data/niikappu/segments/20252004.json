@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "id": "niikappu-20252004-1-001",
+    "municipality": "niikappu",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.10.2gijiroku",
+    "date": null,
+    "speaker": "佐渡健能企画課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第５８号、東川・共栄地区共同受信施設光化（高度化）\n改修工事請負契約の締結について。\n令和７年９月２５日、指名競争入札に付した東川・共栄地区共同受信施設光化（高度化）\n改修工事について、下記のとおり請負契約を締結するため、地方自治法第９６条第１項第\n５号及び議会の議決に付すべき契約及び財産の取得または処分に関する条例第２条の規定\nに基づき、議会の議決を求めるものでございます。\n１、契約の目的、東川・共栄地区共同受信施設光化（高度化）改修工事。２、契約の方\n法、指名競争入札。３、契約金額、５１１５万円。４、契約の相手方、北海道札幌市東区\n北２１条東１６丁目１番地の６、マスプロ電工株式会社札幌支店支店長石橋貴志。\n御手元に配付の議案第５８号資料を御覧ください。\n本事業は、字東川共栄地区のテレビ難視聴地域における共同受信施設の同軸ケーブルを\n光ケーブルに共架、仮設替えする工事を実施するものです。\n資料太線の箇所が施工範囲です。施工範囲上段が道道ブケマ橋手前の箇所であり、同じ\nく下段は道道共栄橋手前の箇所に当たります。\n施工範囲総延長は３４３６メートル、受益対象世帯は３５世帯となっています。\nこのたびの改修工事は、老朽化を起因とするものですが、工事の実施によって同軸ケー\nブルでは概ね１０年程度とされていた耐用年数が光ケーブルに架設替えすることで２０年\n以上に大幅に伸び、より安定した受信環境が長期間にわたって確保されることとなります。\n以上が議案第５８号、東川・共栄地区共同通信施設光化（高度化）改修工事請負契約の\n締結についての提案理由です。御審議賜り、提案どおり御決定くださいますよう、よろし\nくお願いいたします。",
+    "text_length": 716,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252004-1-002",
+    "municipality": "niikappu",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.10.2gijiroku",
+    "date": null,
+    "speaker": "武田修一君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "武田 修一",
+    "member_faction": "",
+    "text": "はい、１０番武田です。この指名競争入札には何社が参加して\nいたのか。それから工期についてもお伺いいたしたいと思います。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "niikappu-20252004-1-003",
+    "municipality": "niikappu",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "7.10.2gijiroku",
+    "date": null,
+    "speaker": "佐渡健能企画課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。２社が参加してございまして、工期については令和８\n年３月１０日までとなっております。",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/niikappu/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  }
+]

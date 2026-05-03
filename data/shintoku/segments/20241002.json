@@ -1,1 +1,2464 @@
-[]
+[
+  {
+    "id": "shintoku-20241002-1-001",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "１２人議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１ 番 大 澤 一 文 議員 ２ 番 貴 戸 愛 三 議員\n３ 番 森 本 洋 子 議員 ４ 番 櫻 田 郷 史 議員\n５ 番 村 田 博 議員 ６ 番 齊 藤 芳 恵 議員\n７ 番 青 柳 茂 行 議員 ８ 番 若 杉 政 敏 議員\n９ 番 福 原 智 幸 議員 １０番 菊 地 康 雄 議員\n１１番 湯 浅 真 希 議員 １２番 長 野 章 議員",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-002",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "なし議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "○地方自治法第１２１条の規定により、本会議に説明のため出席した者は、次のとおり\nである。\n町 長 浜 田 正 利\n教 育 長 渡 會 崇 善\n監 査 委 員 木 村 秀 光",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-003",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "教育委員会教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "の委任を受けて説明のため出席した者は、次のとおりである。\n学 校 教 育 課 長 岡 田 徳 彦\n社 会 教 育 課 長 大 山 康 幸\n○農業委員会会長の委任を受けて説明のため出席した者は、次のとおりである。\n事 務 局 長 野 々 村 寿 一\n○職務のため出席した議会事務局職員\n事 務 局 長 佐 々 木 隼 人\n書 記 大 澤 恵 介\n- 5 -\n\n◎開 会 の 宣 告",
+    "text_length": 189,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-003"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-004",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "若杉政敏議会運営委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": "若杉　政敏",
+    "member_faction": "",
+    "text": "議長の指名により、議会運営委員会における協議の結果に\nついて、ご報告申し上げます。\n本日招集になりました、第２回定例町議会の会期につきましては、去る５月23日、午\n前10時から、議員控室において議会運営委員会を開催し、提出予定の議件の説明を受け、\nそれらを勘案し日程等について審議を行いました。\nその結果、会期は本日から６月21日までの18日間とし、その間の会議等については、\n別紙会議予定表のとおりであります。\n以上、報告を終わります。\n［若杉政敏議会運営委員長 降壇］",
+    "text_length": 236,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-005",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "３月４日、定例第１回町議会以降の行政報告をさせていただきます。\n４ページまで飛びまして、３月31日、根室本線富良野－新得間の廃線セレモニーが行\nわれました。\n振り返りますと、明治40年、1907年９月８日に鉄道が開通をし、以来、鉄道の町とし\nて発展をしてきましたが、時の流れの中で117年の歴史に幕を下ろす日になりました。\nこれまで、鉄道に携わってきた全ての方々にあらためて感謝を申し上げるところであり\nます。\n翌日からは都市間バスということで、帯広－旭川間、増便をいたしまして、新しい交\n通体系ができたというところであります。\n今後も交通の要所という意味で、町の対応につきましても関係者と努力をしていきた\nいというふうに思っております。\n次に５ページの４月６日、拓鉄キノコタン開業セレモニーが開催されました。拓鉄バ\nスさんが観光農園としてバスに乗るお客さまを増やすことを目的に、これらの１つとし\nて整備を進めてきたものでありまして、路線の維持を含めまして、拓鉄バスさんともこ\nれからお互い協力しながら事業運営につきましても努力をしていきたいというふうに思\nっております。\nあらためて多くの方々の利用につきまして、お願いをさせていただきます。\n次の６ページになります。４月10日であります。第９回新得高等支援学校の入学式が\n開催されまして、木工科、家庭総合学科、それぞれに合計12名が入学をされました。\nちなみに、２年生が現在５名、３年生が11名在籍をしておりまして、学校運営全般に\n協力をしていくことはもちろんのことというふうに思いますが、今後の大きな課題の１\nつとして、卒業生の出口対策につきましても、行政としても対応していくことを今まで\n以上に努力をしていきたいというふうに考えているところであります。\n次に５月24日、第94回新得町農業協同組合通常総会ならびに14ページ、５月30日に第\n55回西十勝森林組合通常総会、それぞれが開催をされまして、あらためて持続できる産\n業という立場で、それぞれが事業経営につきまして努力をいただいていることにあらた\nめて敬意を表するとともに、とりわけ今後は環境問題も大きな柱になるというふうに思\nっておりまして、今後も両組合と連携を図りながら、産業という立場でも推進をしてい\nきたいというふうに思っております。\n次、13ページに戻りまして、５月25日に屈足消防団創設100周年記念式典ならびに祝\n賀会が開催をされました。\nこちらも歴史を振り返ると、大正13年、1924年５月に私設消防組として設立されて以\n来、地域の安心安全のために先頭に立って活動を積み重ねた消防団でありまして、この\n間も全ての団員ならびに関係した方々に敬意を表し、あらためてお礼を申し上げたいと\nいうふうに思っておりまして、この後もご活躍をいただくことを切に願うところであり\nます。以上であります。\n［浜田正利町長 降壇］\n- 7 -\n\n◎日程第３ 報告第１号 専決処分の報告について",
+    "text_length": 1248,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-006",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "佐藤博行副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第34号、固定資産評価審査委員会委員の選任同意についてご説\n明を申し上げます。\n固定資産評価審査委員会委員として平成27年６月から９年にわたり、また令和４年７\n月から約１年１カ月間、委員長としてご尽力をいただきました鳥本晃氏が６月28日の任\n期満了をもって辞任の申し出がありました。これまでの評価審査業務に関するご労苦に\n心から感謝を申し上げます。\n後任といたしまして、新得町字屈足東１線39番地、五十嵐広良氏を選任いたしたく、\n地方税法第423条第３項の規定により、議会の同意を求めるものであります。\n五十嵐氏は昭和38年４月生まれの61歳で、現在、株式会社萌和農場に勤めておられま\nすが、誠実で識見も高く固定資産評価審査委員として適任と存じますので、議会のご同\n意を賜りますようお願い申し上げます。\n［佐藤博行副町長 降壇］",
+    "text_length": 366,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-007",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第35号、工事請負契約の締結についてご説明申し上げます。\n１．契約の目的、駅前周辺再整備複合施設建設工事、建築主体でございます。\n２．契約の方法、１企業体と単体３社による指名競争入札でございます。\n３．契約の金額、８億960万円でございます。\n- 10 -\n\n４．契約の相手方といたしまして、古川・植村・田村特定建設工事共同企業体、代表\n者、新得町西１条南１丁目51番地２、古川建設株式会社、代表取締役 古川雅信。\n構成員といたしまして、新得町１条北１丁目２番地、植村土建株式会社、代表取締役\n社長 植村高愛。同じく新得町西１条南５丁目１番地、株式会社田村工業、代表取締役\n田村記男。\nなお、工期につきましては、令和７年２月28日といたしてございます。\n次のページから資料といたしまして、建築主体工事概要、配置図、１階・２階平面図、\n東西南北の立面図、駐輪場平面図を添付しております。\n以上、よろしくご審議をお願い申し上げます。\n［東川恭一総務課長 降壇］",
+    "text_length": 430,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-037"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-008",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "湯浅真希議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ここの工事、全体に伴ってというところになってくるんですけれども、\n町営浴場の駐車場が６月、７月利用できないということであります。この期間の対応と\nいうことと、８月以降、どの程度町営浴場の駐車場が確保できる見通しなのか、お伺い\nいたします。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-039"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-009",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "安達貴広町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "湯浅議員のご質問にお答えいたします。\n現状の駐車できるスペースなんですが、もともとの町営浴場の駐車スペース８台ほど、\nそれから、出入りする通路と今、なっておりますところに７台ほどのスペースが、合わ\nせて15台程度のスペースが現状、ございます。\n６月、７月末までの工事の期間、今の現状の場所に工事が入りますので、同じ部分に\nついては止めることができなくなります。\nその対策として、町営浴場の西側、それから、玄関付近になりますけれども、臨時の\n駐車スペースというものを取る計画になってございます。台数につきましては、８台か\nら９台程度と現状からはどうしても少なくなってしまうわけなんですが、この間、工事\nの協議をさまざましてきた中で最大限いろいろ確保する検討をしてきた中で、どうして\nも６月、７月の工事期間については、少なくなってしまう、ご迷惑をかけてしまうとい\nうことになりますが、その点につきましては、何とぞご理解をいただきたいと思います。\nもう１点、それ以降、その工事が終わった後の話ということだと思いますけれども、\n工事が終わった後の場所に、これも臨時のスペースという形にはなりますが、町営浴場\nの前で６台程度、それから今、通路で使っているところ、その近辺で10台程度、合わせ\nて16台ほどの駐車スペースができあがる予定になっております。\nいずれにしろ、出入りの通路も仮設の通路がまたできあがるということで利用者の方\nにはご不便かけるかと思いますが、できるだけ周知させていただきたいと考えておりま\nす。以上です。",
+    "text_length": 658,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-040"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-010",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "青柳茂行議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "青柳　茂行",
+    "member_faction": "",
+    "text": "１階と２階の平面図があるんですけれども、これはいろいろ書いてあ\nりますけれども、この活用方法、使用目的といいますか、どのように使われるのかとい\nうのは、ここに書いてあるのが決定的なのかどうなのか、まだ変更される部分があるの\nかどうなのか、その点、確認したいと思います。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-041"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-011",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "森本洋子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "森本　洋子",
+    "member_faction": "",
+    "text": "今、青柳議員も言っていましたが、１階平面図、そして、隣の６ペー\nジの南面の図なんですけれども、将来、金融機関が隣接する予定というふうになってい\nると思うのですが、金融機関がもし隣に来た場合、ここは通路として活用される予定に\nなるのかどうか、そこをお聞きしたいのですけれども。\n１回外に出て、別棟になるのか、それともこの通路、今、一番左端に風除室というの\nがあるのですけれども、そこから出入りができるようになるのかどうかというその将来\n像、その辺をお聞きしたいのですけれども。\n分かりました。増築して、そこの通路から行けるようにという話です\nので、便利はいいのかなとは思うのですが、南面のこの図面でいくと、通路になる扉が\n後で改修するような形になるのかなという、この図面でいくと、ドアではないような、\n窓かなという気がするんですよね。その辺なんですけれども。",
+    "text_length": 378,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-042",
+        "1-inline-043"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-012",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第36号、工事請負契約の締結についてご説明申し上げます。\n- 12 -\n\n１．契約の目的、駅前周辺再整備複合施設建設工事、電気設備でございます。\n２．契約の方法、１企業体と単体４社による指名競争入札でございます。\n３．契約の金額、１億1,660万円でございます。\n４．契約の相手方といたしまして、川岸・マキ・金田特定建設工事共同企業体、代表\n者、帯広市西２条南38丁目４番14号、川岸電設株式会社、代表取締役 北健介。\n構成員といたしまして、新得町４条南１丁目５番地、有限会社マキ電気、代表取締役\n槙正光。同じく新得町屈足緑町３丁目３番地、有限会社金田電業社、代表取締役 金田\n誠。\nなお、工期につきましては、令和７年２月28日といたしてございます。\n次のページから資料といたしまして、電気設備工事概要、構内配電線路図、１階・２\n階電灯図、１階・２階コンセント図を添付いたしております。\n以上、よろしくご審議をお願い申し上げます。\n［東川恭一総務課長 降壇］",
+    "text_length": 431,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-048"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-013",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第37号、工事請負契約の締結についてご説明申し上げます。\n１．契約の目的、駅前周辺再整備複合施設建設工事、機械設備でございます。\n２．契約の方法、３企業体と単体４社による指名競争入札でございます。\n３．契約の金額、１億2,100万円でございます。\n４．契約の相手方といたしまして、奥原・カンキョウ・金田特定建設工事共同企業体、\n代表者、帯広市西20条北１丁目３番30号、株式会社奥原商会、代表取締役 奥原宏。\n構成員といたしまして、新得町字新得東１線32番地８、株式会社カンキョウ、代表取\n締役 根本健史。同じく新得町屈足緑町３丁目３番地、有限会社金田電業社、代表取締\n役 金田誠。\nなお、工期につきましては、令和７年２月28日といたしてございます。\n次のページから資料といたしまして、機械設備工事概要、屋外配管図、１階・２階空\n気調和設備図、１階・２階換気設備図を添付いたしております。\n以上、よろしくご審議をお願い申し上げます。\n- 13 -\n\n［東川恭一総務課長 降壇］",
+    "text_length": 440,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-054"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-014",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第38号、工事請負契約の締結につきましてご説明をいたしま\nす。\n１．契約の目的でありますが、公民館エアコン整備工事でございます。\n２．契約の方法は、３社による指名競争入札でございます。\n３．契約の金額、5,137万円。\n４．契約の相手方といたしまして、新得町西１条南５丁目１番地、株式会社田村工業、\n代表取締役 田村記男でございます。\nなお、工期は、令和６年11月19日としております。\n２ページ以降に資料といたしまして、工事概要および１階平面図、２階平面図を添付\nしております。\n以上で説明を終わりますが、ご審議のほど、よろしくお願い申し上げます。\n［東川恭一総務課長 降壇］",
+    "text_length": 291,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-060"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-015",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第39号、工事請負契約の締結につきましてご説明をいたしま\nす。\n１．契約の目的でありますが、図書館エアコン整備工事でございます。\n２．契約の方法は、３社による指名競争入札でございます。\n３．契約の金額、7,590万円。\n４．契約の相手方といたしまして、新得町１条北１丁目２番地、植村土建株式会社、\n代表取締役社長 植村高愛でございます。\nなお、工期は、令和７年３月17日としております。\n２ページ以降に資料といたしまして、工事概要および１階平面図、２階平面図を添付\nしております。\n以上で説明を終わりますが、ご審議のほど、よろしくお願い申し上げます。\n［東川恭一総務課長 降壇］",
+    "text_length": 291,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-066"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-016",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "湯浅真希議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "工期、来年の３月17日までということなんですけれども、この間、休\n館等は予定されているのか、お伺いいたします。",
+    "text_length": 55,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-068"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-017",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大山康幸社会教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えします。\n予定では、この期間１カ月間ほど休館を予定しております。",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-069"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-018",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "湯浅真希議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１カ月間ということなんですけれども、具体的にどこら辺ということ\nはまだ決まっていないのか、お伺いします。",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-070"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-019",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大山康幸社会教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本契約がこれからということもありまして、まだ請負業者の\nほうとは打ち合わせしていない状況なんですけれども、設計の段階では９月頃、秋口の\n１カ月間程度ということで考えております。以上です。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-071"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-020",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "森本洋子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "森本　洋子",
+    "member_faction": "",
+    "text": "湯浅議員と同じような質問を考えていたのですが、休館される間、１\nカ月の間、もし図書を借りたいといった場合、これを借りられるような対策はあるのか\nどうか、その辺、お聞きしたいと思います。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-072"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-021",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大山康幸社会教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まだ詳しくは詰めてはいないのですけれども、工事自体が天\n井等の張り替えも全部行いますので、本棚等、そのまま養生しながらすることになりま\nす。本とかも特に移動させる予定は今のところありませんので、その間の貸し出し等と\nいうのは対応できる部分はしていきたい、特に学校等の貸し出しもありますので、そう\nいうところは対応していきたいのですけれども、全てということにはならないかなとい\nうふうには考えております。以上です。",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-073"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-022",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "森本洋子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "森本　洋子",
+    "member_faction": "",
+    "text": "ありがとうございます。\n- 15 -\n\n一番懸念するのは、やはり子どもたちが本を借りられるかどうかということを心配し\nていましたので、この辺ちゃんと対策をしていただいて、例えば児童館のほうに少し移\nすとか、あと、学校の先生方から何か借りたいと言われたときに何か出せるような、そ\nの辺の仕組みをよろしくお願いしたいと思います。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-074"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-023",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大山康幸社会教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "通常でも学校図書ということで、図書館の本とかも持って行\nっておりますので、極力、特に児童生徒さんに影響がないように進めていきたいと考え\nています。以上です。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-075"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-024",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第40号、工事請負契約の締結につきましてご説明をいたしま\nす。\n１．契約の目的でありますが、街路事業工事、駅前広場でございます。\n２．契約の方法は、３社による指名競争入札でございます。\n３．契約の金額、１億7,820万円。\n４．契約の相手方といたしまして、新得町１条北１丁目２番地、植村土建株式会社、\n代表取締役社長 植村高愛でございます。\nなお、工期は、令和７年２月20日としております。\n２ページ以降に資料といたしまして、工事概要および図面を添付しております。\n以上で説明を終わりますが、ご審議のほど、よろしくお願い申し上げます。\n［東川恭一総務課長 降壇］",
+    "text_length": 283,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-080"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-025",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第41号、工事請負契約の締結につきましてご説明をいたしま\nす。\n１．契約の目的でありますが、中央監視装置移設工事でございます。\n２．契約の方法は、３社による指名競争入札でございます。\n３．契約の金額、6,787万円。\n４．契約の相手方といたしまして、札幌市中央区北12条西15丁目４番１号、新栄クリ\nエイト株式会社、代表取締役 佐々木雅一でございます。\nなお、工期は、令和７年３月21日としております。\n２ページ以降に資料といたしまして、工事概要、施工範囲図、テレメータおよびサー\nバーラック盤姿図を添付しております。\n以上で説明を終わりますが、ご審議のほど、よろしくお願い申し上げます。\n［東川恭一総務課長 降壇］",
+    "text_length": 310,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-086"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-026",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第42号、物品購入契約の締結についてご説明いたします。\n１．契約の目的、町有バス購入でございます。\n２．購入契約をする物品名及び数量、中型バス、42人乗り、１台でございます。\n３．型式、２ＤＧ－ＲＵ２ＡＨＤＪでございます。\n４．契約の方法、２社よる指名競争入札でございます。\n- 17 -\n\n５．契約の金額、3,828万円でございます。\n６．契約の相手方といたしまして、帯広市西20条北１丁目３番２号、東北海道いすゞ\n自動車株式会社帯広支店、支店長 澤里一樹でございます。\nなお、納期は令和６年12月31日としてございます。\n次のページに資料としまして、前・後面、側面、座席配列図を掲載しております。\n以上、よろしくご審議のほどをお願いいたします。\n［東川恭一総務課長 降壇］",
+    "text_length": 340,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-092"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-027",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "森本洋子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "森本　洋子",
+    "member_faction": "",
+    "text": "確認なんですが、今、これを購入したら町有バスは３台になるという\nことでよろしいでしょうか。",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-094"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-028",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "安達貴広町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n現在、町バス２台運行しておりまして、大きいほうの背の高いほうのバス２号車なん\nですが、それをこちらの新しいバスで更新するという計画でございます。以上です。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-095"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-029",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大宮将利税務出納課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第43号、専決処分の承認についてご説明申し上げます。\n２ページを御覧ください。\n専決処分書、町税条例の一部を改正する条例の制定について、地方自治法第179条第\n１項の規定により専決処分をしたものでございます。\n16ページを御覧ください。\n中段にあります提案理由でございますが、地方税法等の一部を改正する法律および地\n方税法施行令の一部を改正する政令、その他関係する政令および省令が令和６年４月１\n日から施行されることに伴い、本条例の一部を改正しようとするものであります。\n改正内容でございますが、第34条の７、附則第４条の２関係では、公益信託の見直し\nに伴う規定の整備であります。\n第56条、附則第６条関係では、法律改正にあわせて所要の規定の整理であります。\n第51条、第71条、第139条の３関係では、職権による減免を可能とする規定の追加で\n- 18 -\n\nあります。\n附則第５条の２関係では、能登半島地震災害に係る災害関連支出がある場合、本来令\n和６年度分の申告対象である雑損控除を令和５年度分の控除として適用できる規定の新\n設であります。\n附則第７条の５、附則第７条の６、附則第７条の７関係では、令和６年度分の個人町\n民税の特別税額控除に係る規定の新設であります。\n附則第７条の８関係では、令和７年度分の個人町民税の特別税額控除に係る規定の新\n設であります。\n附則第８条関係では、特別税額控除額の算定に用いる所得割の額について、肉用牛の\n売却による事業所得に係る課税の特例規定の適用後のものとなるよう読み替え規定を追\n加、および条例の条ズレに伴う規定の整理であります。\n附則第10条の２関係では、再生可能エネルギー発電設備に係る課税標準の特例措置の\nうち、一定のバイオマス発電設備について、わがまち特例の割合を７分の６と定める規\n定を新設、特定事業所内保育施設の用に供する固定資産に課する固定資産税の特例措置\nについて、期間が終了するため規定を削除、および法律改正にあわせて、条例の項ズレ\nに伴う規定の整理であります。\n附則第10条の３関係では、認定長期優良住宅に係る特例について、申告書の提出がな\nい場合でも、一定の要件に該当すると認められる場合には特例を適用できることとする\n規定を新設、および法律改正にあわせて所要の規定および条例の項ズレに伴う規定の整\n理であります。\n附則第11条、附則第11条の２、附則第12条、附則第13条関係では、固定資産税に係る\n特例について、３年間延長する規定の整理であります。\n附則第15条関係では、法律改正にあわせて、所要の読み替え規定を削除するものであ\nります。\n附則第15条の２関係では、特別土地保有税の課税の特例について、３年間延長する規\n定の整理、および条例の条ズレに伴う規定の整理であります。\n附則第15条の３から附則第15条の８関係では、条例の条ズレに伴う規定の整理であり\nます。\n附則第16条の３、附則第16条の４、附則第17条、附則第18条、附則第19条、附則第20\n条、附則第20条の２、附則第20条の３関係では、特別税額控除の対象となる所得割の額\nについて、課税の特例に係る分離課税分の所得割の額を含める読み替え規定の追加であ\nります。\n15ページに戻りまして、下段にあります附則でございますが、第１条では施行期日を、\n第２条では固定資産税に関する経過措置をそれぞれ定めております。\n条例本文については朗読を省略させていただきます。\n以上で説明を終わりますが、よろしくご審議のうえ、ご承認をお願いいたします。\n［大宮将利税務出納課長 降壇］",
+    "text_length": 1504,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-100"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-030",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大宮将利税務出納課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第44号、専決処分の承認についてご説明申し上げます。\n２ページを御覧ください。\n専決処分書、過疎地域の持続的発展の支援に関する特別措置法の適用に伴う固定資産\n税の課税の特例に関する条例の一部を改正する条例の制定について、地方自治法第179\n条第１項の規定により専決処分をしたものでこざいます。\n下段にあります提案理由でございますが、奄美群島振興開発特別措置法第38条の地方\n税の課税免除または不均一課税に伴う措置が適用される場合等を定める省令等の一部を\n改正する省令が令和６年４月１日から施行されることに伴い、地方税の課税免除の対象\nとなる事業用設備を取得等する期限について３年間延長するため、本条例の一部を改正\nしようとするものであります。\n改正内容でございますが、附則第２項関係で、対象となる事業用設備を取得等する期\n限を３年間延長し、令和９年３月31日までとするものであります。\n２ページに戻りまして、下段にあります附則でございますが、この条例は、令和６年\n３月31日から施行するものであります。\n条例本文については朗読を省略させていただきます。\n以上で説明を終わりますが、よろしくご審議のうえ、ご承認をお願いいたします。\n［大宮将利税務出納課長 降壇］",
+    "text_length": 532,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-106"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-031",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大宮将利税務出納課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第45号、専決処分の承認についてご説明申し上げます。\n２ページを御覧ください。\n専決処分書、国民健康保険税条例の一部を改正する条例の制定について、地方自治法\n第179条第１項の規定により専決処分をしたものでございます。\n３ページを御覧ください。\n提案理由でございますが、地方税法施行令の一部を改正する政令が令和６年４月１日\nから施行されることに伴い、国民健康保険税の課税限度額の引上げおよび低所得者に係\nる国民健康保険税軽減の拡充が図られるため、本条例の一部を改正しようとするもので\nあります。\n改正内容でございますが、第２条関係では、国民健康保険税の課税限度額の見直しで、\n後期高齢者支援金等課税額の上限を22万円から24万円に改正し、２万円引き上げるもの\nでございます。\n第23条関係では、低所得者の国民健康保険税を軽減するため、軽減判定所得の基準の\n見直しを行うもので、５割軽減判定所得基準では、被保険者１人につき加算する金額を\n29万円から29万5,000円に改正し、5,000円引き上げ、２割軽減判定所得基準では、同じ\nく加算する金額を53万5,000円から54万5,000円に改正し、１万円引き上げるものであり\nます。\n２ページに戻りまして、下段にあります附則でございますが、第１条の施行期日では、\nこの条例は、令和６年４月１日から施行するものであります。\n第２条の適用区分では、改正後の規定は、令和６年度以後の年度分の国民健康保険税\nについて適用し、令和５年度分までの国民健康保険税については、なお従前の例による\nことを定めております。\n条例本文については朗読を省略させていただきます。\n以上で説明を終わりますが、よろしくご審議のうえ、ご承認をお願いいたします。\n［大宮将利税務出納課長 降壇］",
+    "text_length": 756,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-112"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-032",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "青柳茂行議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "青柳　茂行",
+    "member_faction": "",
+    "text": "今回の改正で主に後期高齢者の課税限度額というのが２万円引き上げ\nられているわけですけれども、確認したいのですけれども、この間、後期高齢者だけで\nはなくて、国民健康保険税、その都度引き上げられているわけですけれども、今回は後\n期高齢者の限度額、この間の引き上げの推移といいますか、何年にどのくらい上がった\nのか、その辺、教えていただきたいと思います。",
+    "text_length": 174,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-114"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-033",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大宮将利税務出納課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "青柳議員の質問にお答えします。\nこの間の値上げの引き上げの状況ということですけれども、引き上げについては10年、\n20年くらい前からずっと引き上げてきているんですけれども、後期高齢者につきまして\nは、昨年度も２万円プラス、令和４年度に１万円プラス、その前になりますと平成28年\nに２万円、27年度に１万円、26年度に２万円というような形で、少しずつ毎年上がって\nきているような状況にあります。以上です。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-115"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-034",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "青柳茂行議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "青柳　茂行",
+    "member_faction": "",
+    "text": "一般的に国保税は非常に高いといわれております。なぜ高いのかとい\nうと、いわゆる一般のサラリーマンの方が入っている協会けんぽというのがあるのです\nけれども、この協会けんぽの保険料に比べて約２倍ほど高い。しかも、国保に加入して\nいる方々というのは低所得者層が非常に圧倒的に多いという中で、全国の知事会も国に\n対して、公費負担あるいは国庫負担、これを増やしてほしいという要望もしているとこ\nろであります。\n今、大宮課長から説明いろいろありましたけれども、後期高齢者が始まったのが平成\n20年なんです。この間、今、課長がおっしゃるように２万円とか１万円とか、その都度\n引き上げられてきまして、ちょうど今、令和５年度で22万円であったものが今回、２万\n円引き上げられますから24万円になるわけです。そうすると、ちょうどこの間に約２倍\nの後期高齢者の保険料が上がるということになるわけです。\nでは、年金はこの20年間に２倍も上がっているかというと、逆に上がるどころか、実\n際に下がっているというのが今の物価高の状況ですから、手取りというか、実質の年金\n手取額というのは非常に減っている。\nこういう状況の中で、これはもともと国が決めるわけですから、責任は国にあるわけ\nですけれども、そういう意味で非常に生活苦に追い打ちをかけるものだということを判\n断いたしまして、今回、この議案には反対したいと思います。以上です。",
+    "text_length": 600,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-118"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-035",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "佐藤博行副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第46号、専決処分の承認についてご説明申し上げます。\n- 22 -\n\n２ページをお開き願います。\n専決処分書、令和５年度新得町一般会計補正予算、専決第１号につきまして、地方自\n治法第179条第１項の規定により、別紙のとおり専決処分をするものでございます。\n次のページに移りまして、この補正予算は、第１条で歳入歳出予算の総額に歳入歳出\nそれぞれ2,968万3,000円を減額し、予算の総額を88億1,911万2,000円とするものでござ\nいます。\n第２条は地方債の変更によるものでございます。\n６ページをお開き願います。\n第２表、地方債補正は、起債対象事業費の確定に伴う限度額の変更でございます。\n21ページ、歳出をお開き願います。\n２款、総務費、企画費の24節、積立金では、ふるさと思いやり寄附がありましたので、\nふるさと思いやり基金積立金を増額しております。\n22ページをお開き願います。\n３款、民生費、福祉対策費、27節、繰出金では、国民健康保険事業特別会計繰出金お\nよび介護保険特別会計繰出金につきまして、決算に伴い減額をしております。\n後期高齢者医療費では、後期高齢者医療特別会計繰出金におきましても、決算に伴い\n後期高齢者医療特別会計基準繰出金を増額しております。\n23ページに移りまして、４款、衛生費、予防費の18節、負担金、補助及び交付金では、\nこれも決算に伴いまして、医療施設等運営補助を減額しております。\n25ページをお開き願います。\n７款、商工費、商工振興費の各費目におきまして、ふるさと納税寄附返礼品費等の実\n績に伴いまして、それぞれ減額をしております。\n27ページをお開き願います。\n10款、教育費、社会教育総務費では、文化・スポーツ振興基金積立金を増額しており\nます。\n９ページに戻りまして、歳入を御覧ください。\n３款、利子割交付金から15款、国庫支出金につきましては、交付額の確定等に伴いま\nして、それぞれ補正をしております。\n18ページをお開き願います。\n18款、寄附金、総務費寄附金では、決算に伴いまして、総務費寄附金を減額しており\nます。\n19ページに移りまして、19款、繰入金では、今回の補正の財源調整のため、財政調整\n基金繰入金を減額しております。\n20ページをお開き願います。\n22款、町債では、事業費の確定等に伴いまして、それぞれ起債の予算を減額しており\nます。\n以上で説明を終わりますが、ご審議のほど、よろしくお願いいたします。\n［佐藤博行副町長 降壇］",
+    "text_length": 1051,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-126"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-036",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "菊地康雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "18ページなんですけれども、基本的なことで申し訳ありません、総務\n費寄附金の減額ということについて、説明願いたいと思います。\n- 23 -",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-128"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-037",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "菊地議員の質問にお答えいたします。\nふるさと納税の実績に伴って減額したもので、当初予算よりも低くなったため、減額\nしているものであります。以上であります。",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-129"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-038",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "佐藤博行副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第47号、専決処分の承認についてご説明を申し上げます。\n２ページをお開き願います。\n専決処分書、令和５年度新得町国民健康保険事業特別会計補正予算、専決第１号につ\nきまして、地方自治法第179条第１項の規定により、別紙のとおり専決処分をするもの\nでございます。\n次のページに移りまして、この補正予算は、第１条で歳入歳出予算の総額から歳入歳\n出それぞれ3,717万9,000円を減額し、予算の総額を６億1,582万9,000円とするものでご\nざいます。\n12ページ、歳出をお開き願います。\n12ページの１款、総務費から16ページの６款、保健事業費につきましては、医療費等\nの実績により、それぞれ減額および財源移動を行っております。\n８ページに戻りまして、歳入をお開き願います。\n１款、国民健康保険税では、課税実績により減額し、２款、道支出金から10ページの\n４款、繰入金の一般会計繰入金では、医療費および事業費の実績により、それぞれ増額\nまたは減額をしております。\n基金繰入金は、今回の補正の財源調整のため、増額をしております。\n以上で説明を終わりますが、ご審議のほど、よろしくお願いいたします。\n［佐藤博行副町長 降壇］",
+    "text_length": 511,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-134"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-039",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "佐藤博行副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第48号、専決処分の承認についてご説明を申し上げます。\n２ページをお開き願います。\n専決処分書、令和５年度新得町後期高齢者医療特別会計補正予算、専決第１号につき\nまして、地方自治法第179条第１項の規定により、別紙のとおり専決処分をするもので\nございます。\n次のページに移りまして、この補正予算は、第１条で歳入歳出予算の総額から歳入歳\n出それぞれ494万6,000円を減額し、予算の総額を１億1,804万8,000円とするものでござ\nいます。\n10ページ、歳出をお開き願います。\n２款、広域連合納付金では、実績により減額をしております。\n８ページにお戻り願います。\n８ページ、歳入では、１款、後期高齢者医療保険料では、実績により減額し、９ペー\nジ、２款、繰入金では、今回の補正の財源調整のため、一般会計繰入金を増額しており\nます。\n以上で説明を終わりますが、ご審議のほど、よろしくお願いいたします。\n［佐藤博行副町長 降壇］",
+    "text_length": 414,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-140"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-040",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "佐藤博行副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第49号、専決処分の承認についてご説明申し上げます。\n- 25 -\n\n２ページをお開き願います。\n専決処分書、令和５年度新得町介護保険特別会計補正予算、専決第１号につきまして、\n地方自治法第179条第１項の規定により、別紙のとおり専決処分をするものでございま\nす。\n次のページに移りまして、この補正予算は、第１条で歳入歳出予算の総額から歳入歳\n出それぞれ365万5,000円を減額し、予算の総額を７億7,377万9,000円とするものでござ\nいます。\n10ページ、歳出をお開き願います。\n１款、総務費は財源の移動でございます。\n11ページに移りまして、２款、保険給付費および13ページの３款、地域支援事業費で\nは、介護サービス給付費等の実績により、それぞれ減額をしております。\n８ページに戻りまして、歳入を御覧ください。\n１款、介護保険料、９ページの６款、繰入金では、実績によりそれぞれ減額をしてお\nります。\n以上で説明を終わりますが、ご審議のほど、よろしくお願いいたします。\n［佐藤博行副町長 降壇］",
+    "text_length": 453,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-146"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-041",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "安達貴広町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第50号、太陽光発電施設の設置及び管理に関する条例の制定\nについてご説明いたします。\n議案をおめくりいただき、７ページの中段を御覧ください。\n条例制定の提案理由でございますが、太陽光発電施設が生活環境や自然環境に及ぼす\n影響に鑑み、その設置および管理について必要な事項を定めることにより、災害の防止\nや良好な住環境、自然環境等の保全に寄与することを目的に本条例を制定しようとする\nものであります。\n続いて、条例の制定内容でございますが、下の表を御覧ください。\n１点目、設置に関する規制や手続き関係についての規定でございますが、条例の対象\n- 26 -\n\nとなる太陽光発電事業を第２条で規定してございます。\n次に８ページを御覧ください。\n対象となる太陽光発電事業の実施を禁止する区域につきまして、第６条および第７条\nで規定しております。\n禁止区域以外で実施される場合の手続きに関しましては、第８条から第12条でそれぞ\nれ規定するものでございます。\n次に中段の表、２、維持管理等条例の施行に必要な調査等に関する規定でございます\nが、禁止区域以外に設置されてから廃止されるまでの間において、町は必要な報告、資\n料の提出を求めることができる規定を第10条、第13条、第14条で規定し、必要の際は立\n入調査を実施することを第15条に規定をしてございます。\n次に３、必要な措置に関する規定を第16条、第17条で規定をしております。\nまず、必要な措置を講ずるよう助言または指導ができること、また、指導等に従わな\nいときに勧告できることをそれぞれ第16条で規定し、勧告に従わない場合、事業者の住\n所、氏名などを公表することを第17条で規定をしてございます。\nこのほか、第18条では災害復旧の対応を、第19条で国等の特例を、第20条で規則への\n委任等についてそれぞれ規定をしてございます。\n１ページからの条例本文につきましては、朗読を省略させていただきます。\n７ページに冒頭に戻りまして、附則といたしまして、施行期日でありますが、この条\n例は、令和６年９月１日から施行するものであります。\n続きまして、経過措置でありますが、３点ほど規定をさせていただいております。\n１点目はこの条例の適用除外に関する事項を、２点目は第12条から第18条の規定は全\nての事業者に適用する旨を、３点目は既存施設を増設または更新することによって、第\n２条第２項の対象事業となる場合この条例を適用する旨を、それぞれ附則で規定してご\nざいます。\n以上で説明を終わりますが、ご審議のほど、よろしくお願いを申し上げます。\n［安達貴広町民課長 降壇］",
+    "text_length": 1102,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-152"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-042",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "桑野恒雄保健福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第51号、屋内ゲートボール場設置条例の一部を改正する\n条例の制定についてご説明申し上げます。\n下段の提案理由でございますが、屈足市街地区屋内ゲートボール場について、今後の\n活用のため町有財産利活用方針にのっとり行政財産としての用途を廃止し、普通財産へ\nの分類替えを行った後、広く利用希望者の公募を行うため、本条例の一部を改正しよう\nとするものであります。\n改正内容といたしまして、第２条の表中、屈足市街地区屋内ゲートボール場の項を削\nるものであります。\n附則といたしまして、この条例は、公布の日から施行するものであります。\n以上で説明を終わりますが、ご審議のほど、よろしくお願いいたします。\n［桑野恒雄保健福祉課長 降壇］",
+    "text_length": 313,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-158"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-043",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "佐藤博行副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第52号、令和６年度新得町一般会計補正予算、第１号につきま\nしてご説明を申し上げます。\n第１条、歳入歳出予算の総額に歳入歳出それぞれ9,350万7,000円を追加し、予算の総\n額を117億4,450万7,000円とするものでございます。\n第２条、地方債の変更は、第２表、地方債補正によるものでございます。\n４ページをお開き願います。\n第２表、地方債補正では、駅前周辺再整備施設建設事業ほか６事業の起債限度額を変\n更しております。\n13ページ、歳出をお開き願います。\n２款、総務費、一般管理費の18節、負担金、補助及び交付金では、人事給与システム\nの定額減税に対応するシステム改修が必要であるため、北海道自治体情報システム協議\n会負担金を新たに計上しております。\n下段の地域協力活動費、11節、役務費では、地域おこし協力隊の募集に係る広告を強\n化するため、広告料を新たに計上しております。\n- 28 -\n\n14ページをお開き願います。\n諸費の22節、償還金、利子及び割引料では、令和４年度感染症予防事業費等国庫負担\n金の確定および令和５年度新型コロナウイルス感染症対応地方創生臨時交付金の確定に\n伴う返還金が生じましたので、補助金等返還金を増額しております。\n15ページに移りまして、３款、民生費、常設保育所費の10節、需用費では、新得保育\n所内遊戯室入口の引き戸のレールが破損したため、修繕料を増額しております。\n16ページをお開き願います。\n４款、衛生費、予防費の17節、備品購入費では、寄附金を財源に保健福祉センター用\n全自動血圧計を購入するため、施設用備品購入費を新たに計上しており、18節、負担金、\n補助及び交付金では、新型コロナウイルスワクチン接種に起因する健康被害が認定され\nた方への医療費等の給付として、新型コロナウイルス予防接種健康被害給付費を新たに\n計上しております。\n17ページに移りまして、６款、農林水産業費、農地費の18節、負担金、補助及び交付\n金では、今年度の道営事業費の配分額が確定したことに伴い、道営事業地元負担金を増\n額しております。\n18ページをお開き願います。\n７款、商工費、商工振興費の18節、負担金、補助及び交付金では、商工業活性化事業\nにおいて、新規開店支援事業のほか、経営革新事業、既存店舗機能向上事業、商工業者\n支援事業に該当する事業の申請がありましたので、商工業活性化事業補助金を増額し、\n屈足地区にグランピングコテージ２棟を建設する地域振興事業該当事業の申請がありま\nしたので、地域振興事業補助金を新たに計上しております。\n狩勝高原整備費、10節、需用費では、狩勝高原キャンプ場の配電盤の故障により、修\n繕料を増額しております。\n19ページに移りまして、10款、教育費、教員住宅費の18節、負担金、補助及び交付金\nでは、教職員用として整備をした民間賃貸住宅において、人事異動などにより４室の空\nき部屋が生じている状況を踏まえ、教職員の福利厚生施設の要素を考慮し、家賃の２分\nの１を補助するため、学校教職員賃貸住宅家賃補助金を新たに計上しております。\n公民館費、10節、需用費では、公民館暖房に係る配管の機能が下がっており、洗浄等\nを含めた修繕が必要であるため、修繕料を増額しております。\n７ページに戻りまして、歳入を御覧ください。\n13款、分担金及び負担金、農林水産業費分担金では、今年度の道営事業費の配分額確\n定に伴い、道営事業受益者分担金を増額しております。\n８ページをお開き願います。\n15款、国庫支出金、衛生費負担金では、新型コロナウイルス予防接種健康被害給付費\nの財源として、同負担金を新たに計上しております。\n９ページに移りまして、16款、道支出金、総務費補助金では、駅前複合施設整備の財\n源として見込んでおりました都市構造再編集中支援事業補助金の交付内示額が減額され\nたため、予算を減額しております。\n農林水産業費補助金では、道営事業各事業費の確定に伴い、中心経営体農地集積促進\n事業補助金を減額し、次世代農業促進生産基盤整備特別対策事業補助金を増額しており\nます。\n10ページをお開き願います。\n- 29 -\n\n18款、寄附金、衛生費寄附金では、健康推進用として寄付がありましたので、新たに\n計上しております。\n11ページに移りまして、19款、繰入金では、今回の補正の財源調整のため、財政調整\n基金繰入金を新たに計上しております。\n12ページをお開き願います。\n22款、町債、総務債では、役場庁舎建設事業債の一部を財源措置の有利な緊急・減災\n防災事業債に振り替えるほか、駅前周辺再整備の財源として申請していた補助金の減額\nにより、財源を過疎債へ振り替えるため駅前周辺再整備施設建設事業債を増額しており\nます。\n農林水産業債では、道営事業費の増額に伴い、新屈足地区農道特別対策事業債ほか３\n事業の地方債を増額しており、教育債では、過疎債ソフト事業分の発行限度額の確定に\n伴い、健康増進施設運営事業債を増額しております。\n以上で説明を終わりますが、ご審議のほど、よろしくお願いいたします。\n［佐藤博行副町長 降壇］",
+    "text_length": 2140,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-164"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-044",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "菊地康雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "19ページ、教員住宅費の中で、学校教職員賃貸住宅家賃補助金という\nことで、４室の空き部屋ができたということですけれども、生徒が増える予定もない中\nで、今後ともこのような空き部屋が続く恐れというのがあると思うんですけれども、事\n務局としてはどのように考えているでしょうか。",
+    "text_length": 135,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-166"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-045",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "岡田徳彦学校教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "菊地議員の質問にお答えいたします。\n今回のような空き室ですけれども、今後もこのような児童生徒数、それから、それに\n伴う教員の数によりましては、今後も可能性としては空き室は出る可能性は否定できな\nいと押さえております。以上です。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-167"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-046",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "菊地康雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "空き室に対して民間に半額の補助ということで、半額は民間が負担し\nなければならないということですよね。\nということは、今後とも空き部屋が出る可能性があるということは、どこまで民間に、\nあくまでも教員住宅なので、入る教員がいなければ空き部屋になる負担をどこまで強い\nるのが妥当なのかという思いもあるんです。\n今後とも定期的に空き部屋が出るということは、そこに教職員という限定を外して入\nれることを可能にするというような流れは今後できるものでしょうか。していかなけれ\nばならないと思うのだけれども、空き部屋として教職員のために確保するという必要性\nは感じつつも、全額補助であればそれでもいいのだけれども、半額ということになると、\n要するに４室のうち２部屋は空きのままで、今後とも経営していかなければならないと\nなるとどうなのかなということもあるんですけれども、その辺で今後、考え方を変えて\nいく可能性はあるかどうか、お聞きしたいと思います。",
+    "text_length": 417,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-168"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-047",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "岡田徳彦学校教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "学校教職員賃貸住宅建設補助要綱に基づいて整備した住宅で\nございますので、一応、入居にあたっては教職員というふうになってございます。\n今現在はこのような空き室が出ておりますけれども、今後、どの程度の空き室が出て\n- 30 -\n\nいくのかという推移を今後見ながら、今、現状では用途を変更すると補助金の返還とい\nうことも考えられるのですけれども、それも含めて、今後、状況を見ながら検討を進め\nていきたいというふうに考えています。以上です。",
+    "text_length": 216,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-169"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-048",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "森本洋子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "森本　洋子",
+    "member_faction": "",
+    "text": "９ページになるんですけれども、道支出金の中で、都市構造再編集中\n支援事業補助金というのが結構かなり大きな金額で減らされるのですが、これは何かこ\nれからの事業において影響を受けるものというのはないのかどうか、お聞きしたいので\nすけれども。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-170"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-049",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "１２人議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１ 番 大 澤 一 文 議員 ２ 番 貴 戸 愛 三 議員\n３ 番 森 本 洋 子 議員 ４ 番 櫻 田 郷 史 議員\n５ 番 村 田 博 議員 ６ 番 齊 藤 芳 恵 議員\n７ 番 青 柳 茂 行 議員 ８ 番 若 杉 政 敏 議員\n９ 番 福 原 智 幸 議員 １０番 菊 地 康 雄 議員\n１１番 湯 浅 真 希 議員 １２番 長 野 章 議員",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-189"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-050",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "なし議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "○地方自治法第１２１条の規定により、本会議に説明のため出席した者は、次のとおり\nである。\n町 長 浜 田 正 利\n教 育 長 渡 會 崇 善\n監 査 委 員 木 村 秀 光",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-190"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-051",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "教育委員会教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "の委任を受けて説明のため出席した者は、次のとおりである。\n学 校 教 育 課 長 岡 田 徳 彦\n社 会 教 育 課 長 大 山 康 幸\n○農業委員会会長の委任を受けて説明のため出席した者は、次のとおりである。\n事 務 局 長 野 々 村 寿 一\n○職務のため出席した議会事務局職員\n事 務 局 長 佐 々 木 隼 人\n書 記 大 澤 恵 介\n- 35 -\n\n◎開 議 の 宣 告",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-191"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-052",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "貴戸愛三議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "通告に従いまして、１項目一般質問をさせていただきますけれども、\n諸般の事情で議長のお許しをいただいて、帽子をかぶったまま質問させていただきます。\nご容赦いただきたいと思います。\n今回の一般質問でございますけれども、昨日から北海道議会が開催されて、その中で\n鈴木知事が発表いたしました2026年、２年後に宿泊税を導入するという趣旨の発言でご\nざいましたけれども、これに関連してでございます。北海道と連動して新得町も宿泊税\nを導入したらどうだという一般質問でございます。\n１．北海道と連動して新得も宿泊税導入を\n今年の３月７日、北海道は宿泊税を2026年までに制度設計を行い、導入すると発表い\nたしました。新得町もこれに連動し宿泊税を導入すべきと考えます。\n十勝管内の１市・16町・２村の中で、新得ほど宿泊施設のバリエーションのある町は\nほかになく、街中の宿泊施設、クラブメッド、サホロリゾート等、税を導入することに\nよって、それを原資に宿泊客へのサービス向上、宿泊施設への施設整備、改修などへの\n対応が可能になると考えます。新得の産業の一翼を担う、観光のさらなる充実のために\nも宿泊税導入は必要と考えます。\n町長の考えをお伺いいたします。",
+    "text_length": 518,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-195"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-053",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貴戸議員のご質問にお答えいたします。\n宿泊税は、地方自治体が条例に基づき、ホテルや旅館などに宿泊する方に対して課税\nする、われわれの中では法定外目的税というふうに言っておりまして、道内におきまし\nては、倶知安町が令和元年11月から導入をしており、ニセコ町が本年11月から導入を開\n始することとしているようであります。\nまた、現在、北海道や帯広市なども令和８年４月の導入に向けて検討を進めていると\nころであり、北海道が道内179市町村を対象に実施した宿泊税の検討状況調査によりま\nすと、本年４月現在、道内で導入済みを除く22自治体が導入を検討していると回答して\nおります。\n昨年、新型コロナウイルス感染症が５類へ移行され、急速に国内旅行が活発化し、加\n- 36 -\n\nえてインバウンドの回復が順調に進む中で、宿泊税は観光客の受け入れ、環境整備など\nの財源確保の方法として、今後も全国的に導入の検討が広がっていくものと考えている\nところであります。\nその上で、ご提案のありました、本町における宿泊税の導入についてでありますが、\n観光産業は本町の経済を支える極めて重要な産業と捉えており、今後さらに多くの観光\n客を誘致するためには、観光資源の魅力向上をはじめ、情報発信の強化や受け入れ環境\nを充実していくことが必要であります。\nその財源を安定的に確保する１つの方法として、宿泊税の導入は非常に有効であると\n考えておりますので、先進自治体の事例を参考にするとともに、関係機関や宿泊事業者\nとの意見交換などを行い、導入に向けた検討を進めてまいりたいと考えております。以\n上であります。\n［浜田正利町長 降壇］",
+    "text_length": 699,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-196"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-054",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "貴戸愛三議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "再質問をするにあたって、２年後をめどに宿泊税導入をこれから考え\nていくという前提で再質問しても構わないですよね、町長。そうしないと再質問がなか\nなかもう。\nそれでもって、私は導入すべきだと思っている。なぜ導入しなくてはいけないのかと\nいうふうになれば、それはもう例えば新得町に泊まりに来てくれた方々に対するサービ\nスの向上、それから、そういった宿泊施設に対する施設の改修や何か、最終的にはお客\nさんのためのサービスになるんですけれども、そのための原資して、私は宿泊税はどう\nしても必要だろうという立ち位置なので、再質問させていただきます。\n恐らく２年後、もし新得町が宿泊税を導入しますということになると、お金が実際た\nまって、法定外目的税という形の中でというのは４年後とか５年後になる。すぐ使い切\nれるかどうかは分からないということがあると思うので、私はそういったときにこの宿\n泊税をある程度基金として積み上げて、大きく使えるときに利用したほうがいいんじゃ\nないのか。まず、宿泊税を基金として、宿泊税基金を創設すると。これが１つ。\nそれから、例えば宿泊施設がお客さまのために何らかの施設改修をやりたいといった\nときに、過去にも地域振興補助金とか、併設できる事案があったんですけれども、そう\nいったものと併用して、この宿泊税を活用できるようにすべきだと。ただし、100パー\nセントは絶対にないので、あのときも１つの議論になったのですけれども、75パーセン\nトとか、そのくらいは補助として対象にして、残りの分は事業所が自分で払っていくと。\nそういった形の中で制度設計してはどうだろうか。これが２つ目。\nそれから、町長はあまり興味がないから「ああ、そうかい」という話になるかもしれ\nないのですけれども、１月から２月にかけて屈足湖で十勝屋さん、十勝毎日新聞、地元\nのＴＡＣの野村さんがやっているアヴァントという、サウナに入って、氷に穴を開けて、\nそこに漬かるといったらおかしいのだけれども、氷を丸く回転させるようなところで、\n俗にいうととのうサウナという人たち、私は新得というのは十勝屋さんたちが新得にあ\nあいうすごいイベントというわけじゃない、彼らは本当にあれが好きでやっている。実\n際にあそこに来る人たちは帯広空港に着いたら、そこからタクシーで真っすぐレイク・\nインまで走るそうです。要するにお金なんか気にしていない。今年で八百何十人と言っ\nていたかな、利用した人がいる。そうすると、2,000万円を超える売り上げをあそこで、\n私はこれを利用しない手はないと。\n- 37 -\n\n今回、東大雪荘、有償指定管理という形の中で、公社がやっていくというふうになっ\nた。あそこにはどこもまねができない60度のスチームサウナと、そして、もしそれに、\n前も、去年の12月に言ったのですけれども、もしあそこでロウリュウができる乾式サウ\nナがあったら鬼に金棒なんです。その目的は何かといったら、最終的には町民の皆さん\nの健康保持のために、この積極的な設備投資に文句を言う議員なんかこの中にいるわけ\nがない。町民の健康保持のために設備投資をやりますといったときに、「そんなものや\nる必要はない」なんていう議員のほうがいないと信じている。お前、勝手に言っている\nというかもしれないですけれども。だけれども町長、私はそういう取り組み、やるべき\nだと思う。再質問をお願いします。",
+    "text_length": 1424,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-197"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-055",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "あらためて導入という意味では、私も前に進めるべきだという立場で、\nあえて２回目させていただきますが、まず、現状の問題でいけば、導入の目的などの制\n度上のいろんな論点整理というのを当然、進めていかなくてはならない。まず、これは\n入口の問題、１つ。\nその上で、関係者との協議というのは、これも絶対条件。そして、トータルとしてい\nつまでに目指すか、普通は道税ときっと一緒になるのが一般論かなと思っていますけれ\nども、そういった意味でのスケジュール管理、今、それの論点整理を含めてきちんと内\n部で固めていくと。\n当然、その中では、貴戸議員からあった使途がやはり一番重要になってくると私も思\nっていますので、何点か、具体的なこともありましたが、それも当然、議論されていく\nというふうに認識をしておりますので、そういった中で提案につきましては、議論を深\nめていく１つの材料にさせていただきたいなというふうに思っています。以上でありま\nす。",
+    "text_length": 413,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-198"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-056",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "貴戸愛三議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "最終的に法定外目的税で宿泊税を導入して、ある程度のお金がたまっ\nてきて、そして、それをいかに有効に使うか。産業課ともいろいろ議論をさせてもらっ\nて、そこのところが一番大事で、いくら法定外目的税であってもやはり町民の皆さんが\nちゃんと納得できる形でそれが使われている状況というのはやはり行政として絶対考え\nなくてはいけない部分だと思いますので、それはぜひやっていただきたい。\nただ、それを有効に活用することで、新得町に来た、泊まりに来た方も含めて、本当\nに良かったと、サービス向上につながる有効な財源にしていただければいいと。これか\nら役場内、２年間時間がありますので、その中でいろんな先進地の話を聞くのもいいで\nしょうし、難しい部分もあるかもしれない。それでも、最終的にはほかの町から新得町\nに泊まりに来た方々へのサービス向上、そして、新得町民の健康保持のために有効に活\n用することをお願いして、一般質問を終了させていただきます。",
+    "text_length": 415,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-199"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-057",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "提案は分かりました。\nその上で、一般論という言い方になってしまうかもしれない。やはり受益と負担は必\nずついて回る。\nその上で、やはり税を納めていただく方、それから、その税をお客さまからいただい\nて、そして、納付していただく事業者、こういった方々の本当に理解がないと現実、結\n構難しい問題かなという認識をしておりまして、ちょっと話が飛ぶんですけれども、町\n- 38 -\n\n内に法定外目的普通税というか、入湯税が実をいうと町で持っています。\n要するに、法律以外の条例で定める目的税という意味で、入湯税というのがありまし\nた。これもいろんな議論もないわけではないので、そういったこともきちんとあらため\nて整理も私、必要かなという認識を持っています。\nそれから、法定外ではないのですけれども、場合によっては、受益と負担の観点から\nも使われ方の中でもしかしたら参考としてゴルフ利用税というのもやはり場合によって\nは議論をしていただくこともあるかもしれないなという、そんな今、予想をしておりま\nす。\nいずれにしても、制度設計を含めて、税というものはやはり慎重にいかなくてはなら\nないというのも現実でありますので、貴戸議員の提案も含め、十分頭に入れた中で、少\nしでも前に進むよう努力をしていきたいなというふうに思っています。以上であります。\n［貴戸愛三議員 降壇］",
+    "text_length": 575,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-200"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-058",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "福原智幸議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原　智幸",
+    "member_faction": "",
+    "text": "通告に従いまして、有害鳥獣の被害防止対策について、エゾシカの被\n害対策を中心に質問をさせていただきます。よろしくお願いします。\n１．有害鳥獣の被害拡大防止対策について\nシカ、カラス、アライグマなど農林水産業や住民生活に被害を及ぼす害獣の管理は、\n野生鳥獣の保護及び狩猟の適正化に関する法律のもと、北海道の許可によりほとんどが\n狩猟または有害鳥獣駆除業務によって行われております。\n昨年11月に公表されたエゾシカによる全道の農林業の被害額は、10年前の平成26年の\n46億円に比べ、令和４年には48億4,000万円へと２億4,000万円増加しており、一時減少\nした年もありますが、直近３年では被害額が３億円ずつ増加しております。\n農地での農作物をはじめ、森林での植林した苗木の食害にとどまらず、長い年月をか\nけて育てた植栽木の枝葉や、樹皮までが食べられたり剥がされたりしてしまい、結果、\n枯死したり正常に生育できなくなる被害を受けております。それらの被害は市街地周辺\nまで及んでおり、手間暇をかけた家庭菜園の野菜などが一夜にしてなくなるという話が\n珍しくなくなりました。\n平成26年に改正された鳥獣保護法では、第２条で鳥獣の管理について「生育数を適正\nな水準に減少させ、その生育地を適正な範囲に縮小させること」とされております。温\n暖化により、冬期間、寒さと積雪によって自然淘汰（とうた）されていたシカが越冬す\nる個体数も増加しており、被害の拡大が懸念されております。今後の被害防止のための\n野生鳥獣の管理計画について考えをお聞かせ願います。",
+    "text_length": 670,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-202"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-059",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "福原議員のご質問にお答えいたします。\n有害鳥獣の被害拡大防止対策についてのご質問でありますが、議員ご指摘のとおり、\n有害鳥獣による道内の農林業被害の調査結果を見ると年々増加をしており、本町におき\nましても、農業被害は毎年1,000万円を超えていると把握しており、被害防止の有効な\n対策が求められているところであります。\nこのため、町では平成20年度に「鳥獣被害防止計画」を策定し、被害の状況や軽減目\n- 39 -\n\n標、今後の取り組み方針などの事項を定めるとともに、対象鳥獣の捕獲頭数や処理の方\n法、さらには被害対策の実施体制などを計画に盛り込み、この計画を基に駆除対策とし\nて、ヒグマでは猟銃と箱わなでの駆除、エゾシカでは猟銃と箱わな、囲いわななどの捕\n獲のほか、身近なところでは新得山での一斉駆除や国有林内での駆除を実施しており、\nキツネやアライグマでは町内の農地周辺に約80基の箱わなを設置し、駆除に努めている\nところであります。\nまた、農業者におきましては、エゾシカの侵入防止対策として、町とＪＡによる助成\n事業を活用し、侵入防止柵やモンスターウルフの設置を行うなど、有害鳥獣による被害\n防止に取り組んでいるところであります。\nこうした取り組みにより、駆除頭数は増える一方で、個体数は減らない状況にあり、\n本町をはじめとする北海道の各自治体も苦慮しているところでありますが、今後におき\nましても、関係機関と新たな対応策を研究しながら、さらに効果的な鳥獣被害防止対策\nに取り組んでまいりたいと考えております。以上であります。\n［浜田正利町長 降壇］",
+    "text_length": 677,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-203"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-060",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "福原智幸議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原　智幸",
+    "member_faction": "",
+    "text": "鳥獣被害の防止計画については理解をいたしました。\n北海道が昨年８月に公表した道内のエゾシカの生息数は、令和４年現在、72万頭であ\nり、この３年間毎年２万頭ずつ増えている状況にあります。\n一方で、捕獲頭数は14万5,000頭となっており、そのうち有害鳥獣駆除によって捕獲\nされた頭数は11万1,000頭にのぼり、全体の８割近くを占めております。\n増えすぎた野生鳥獣を駆除するには、狩猟のできる資格を持っていることが前提とな\nっております。そうした資格を持つ人の多くは、各市町村の猟友会に所属していること\nが少なくありませんが、彼らが行うその業務については、ボランティア的な要素を多く\n含んでおります。\n新得町においても、有害鳥獣駆除により毎年800頭以上のシカが捕獲されております\nが、有害鳥獣駆除業務にあたる方の高齢化、従事者数の減少という近年の傾向を考える\nと、地元の猟友会および関係者の努力と工夫により、かろうじて被害を食い止めている\n状況にあると言えます。\n農業被害について一例を挙げますと、町内の農業者に聞き取りをしたシカの嗜好（し\nこう）性の高い作物ですが、圧倒的にビート、続いて小麦、豆類、牧草の順になってお\nり、秋になりスイートコーン、デントコーンなどのコーン類が加わります。特に移植苗\nで栽培するビートに至っては、春の植え付け作業から収穫時期まで、その被害を受け続\nけることになると聞いております。\n自衛策として、先ほどもお話しありましたけれども、町と農協による助成の対象とな\nっているネットまたは電気による侵入防止柵、音あるいは高周波技術による威嚇防除装\n置などがありますが、作物の輪作体系上、毎年、広大な面積での設置と管理、それらの\n回収作業、複数回食害を受けた後の原状復帰にかかる補植に伴う苗代などの費用は、統\n計上の被害額には反映されないこととなります。\n新得町の農業系の自動車保険加入者の有害鳥獣との衝突事故の受付件数ですが、令和\n４年が13件、令和５年が11件となっております。そのほかの自動車保険会社の加入者、\nまたは保険会社に届けず、自分で事故対応する方を含めると相当数の件数にのぼります。\nこれらのことからも、行政が被害の内容、背景なども再確認し、多様な被害防止策を\n- 40 -\n\n考える必要があるのではないかと思われます。\n現行の駆除対策に加え、一般狩猟が終了した後、春先の被害拡大時期だけでも定期的\nな専門員による巡回、銃器の使用が禁止されている区域での動物駆逐用煙火、これは動\n物追い払い用の携帯用の花火ですが、さまざまな対策を講じる必要があると考えますが、\n対応についてあらためてお聞きいたします。",
+    "text_length": 1121,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-204"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-061",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n町村長、全道それぞれ集まる機会があって、野生鳥獣に対するいわゆる被害というも\nのについてはそれぞれの地域、かなり深刻ということでありまして、結果、次どうする\nかというところに行き着くのですけれども、ヒグマについてはご承知のとおり、指定鳥\n獣ということでランクが上がって、それからもう１つ、やはりハンターの絶対数の確保\nといかに年齢の上がったハンターの集団の次の人をどう作っていくか。それから、狩猟\nにかかる個人への報酬の問題、それぞれみんないろんな悩みを抱えながらやっています。\n町内的には、村田議員もいらっしゃいますけれども、われわれもいつも聞かされてお\nりまして、深刻な問題というのは十分認識した上で、では、先ほど言った、次どうする\nかということで、ハンターの確保だけのことをいいますと、道内いろんな自治体の中で、\n例えば自衛隊のＯＢの方を雇用するという話も聞こえてきていまして、なかなか需要と\n供給の中でお願いしてもうまくいかないという話もありますが、選択肢の１つとしてあ\nるかなと。\nそれから、狩猟免許を取ろうとする方たちへの支援、これもあるかなという、そうい\nう思いがありますので、その辺、狩猟していただけるハンター部分と、それから、それ\nに伴って出てくる費用と、もう１つはやはり先ほど言った囲いにかかる費用の維持管理\nと負担軽減、これも当然出てくるかなという、そんな思いをしております\nいずれにしても、担当のほうもいろいろ悩みながら次どうするかというのを考えてお\nります。\nそれからもう１点、話が飛ぶんですけれども、今、車の話がありましたけれども、立\n場上、ＪＲの方といろいろ懇談する機会があるんですけれども、ＪＲにおいても深刻と\nいうことで、お互い何かいい方法がないかという、そんな状況になっておりまして、あ\nる意味、言葉としてはきついかもしれないけれども、災害級の問題かなという、そんな\n認識もしていますので、次どうするかというのはいろんな方とまた相談しながら対応し\nていくよう努力をしていきたいなというふうに思っています。以上であります。",
+    "text_length": 888,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-205"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-062",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "福原智幸議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原　智幸",
+    "member_faction": "",
+    "text": "ありがとうございます。\n今回、話題の一例として、エゾシカを重点的にあげさせていただきましたが、アライ\nグマなど、近年捕獲頭数が急増しているもの、家畜のサルモネラ症の発生源にもなる保\n菌化したカラスも一定数いると考えられます。今後もさまざまな害獣との知恵比べが続\nくものと思われます。\n先進的な対策例の農林業者への情報発信など、関係者との情報共有を図りながら、被\n害対策が一層進むことを願いまして、質問を終えさせていただきます。どうもありがと\nうございました。\n［福原智幸議員 降壇］\n- 41 -",
+    "text_length": 248,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-206"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-063",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "青柳茂行議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "青柳　茂行",
+    "member_faction": "",
+    "text": "今回は、第２期新得町まち・ひと・しごと創生総合戦略に基づく人口\n減対策について、お尋ねしたいと思います。\n１．第２期新得町まち・ひと・しごと創生総合戦略に基づく人口減対策は\n民間団体「人口戦略会議」がこのほど発表した報告書では、全国の４割744市町村で\n若年女性が半減し、将来消滅する可能性があると発表しました。\n十勝管内19市町村のうち６町が消滅可能性自治体に該当するとされ、2014年の「日本\n創成会議」による推計時で「消滅可能性自治体」とされた新得町は減少率が改善された\nとして、対象から今回外れております。\n全国町村会長の吉田隆行会長は、将来消滅する可能性のある自治体名を公表したこと\nを受けて、総務省を訪れ、抜本的な少子化対策を早急に実行することや、東京一極集中\nを是正するための抜本的対策を講じることなど６項目の要望書を提出し、「20歳から39\n歳の女性人口が半減するという一面的な指標をもって『消滅』という過激なことばで線\n引きするもの」として遺憾の意を表明しています。\nそこで３点についてお伺いいたします。\n１点目、今回発表された「消滅自治体」論について町長のご見解をまずお尋ねしたい\nと思います。\n２点目、創生総合戦略では、自然動態の改善に向けて、人口の減少は自然減の要素も\n大きく、出生率の向上が重要であるため、若者が結婚し、安心して子どもを産み育てら\nれる環境整備を進め、切れ目のない子育て支援を行うとされていますが、具体的にどの\nような対策をされているのか。\n３点目ですけれども、町にある資源や優位性を生かした産業と雇用の場を作るために、\n生産年齢層の人々に定住してもらうには、安定的な所得が得られる就業の場を確保する\n必要があるとされていますが、具体的な取り組みについてお伺いいたします。",
+    "text_length": 757,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-208"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-064",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "青柳議員のご質問にお答えいたします。\n「消滅可能性自治体」とは、若年女性人口が2020年から2050年までの30年間で50パー\nセント以上減少する自治体と定義をされております。\n４月中旬の「人口戦略会議」の報告では、新得町は消滅可能性自治体から脱却したこ\nととされましたが、依然として人口減少は続いており、人口対策は喫緊の課題であると\n認識をしております。\n１点目のご質問でありますが、この指標は若年女性人口の減少率だけを基準にしたも\nのであり、国立社会保障・人口問題研究所の人口推計を見ても、2050年にその自治体が\n消滅するということではないと考えております。これまで自治体が取り組んできたさま\nざまな施策や努力に水を差すものであり、女性が子どもを産まないから人口減少になる\nとの印象を抱かせかねない懸念があると考えております。\nこのような指標に一喜一憂することなく、誰もが安心して住み続けられる持続可能な\nまちづくりに向けて、なりふり構わず努力してまいります。\n２点目のご質問についてでありますが、町では新得町まち・ひと・しごと創生総合戦\n略や新得町子ども・子育て支援事業計画に基づき、誰もが安心して出産し、子育てがで\n- 42 -\n\nきるように不妊治療費助成をはじめ、不育症治療費助成、出産祝金支給や乳幼児医療費\n助成などさまざまな支援施策を行っているほか、保健師と子育て支援担当職員、保育士\n等が連携し乳児期からの発達相談対応も行っており、安心して子育てができる環境を整\nえているというふうに考えているところであります。\n３点目のご質問についてでありますが、さまざまな産業において担い手不足にある中\nで、産業の維持拡充と担い手の確保は、人口の維持にもつながるものであると考えてお\nり、産業振興会議の中でも就業の場の確保に向けた議論のほか、労働力確保対策事業、\n商工業活性化事業や地域振興事業など産業振興を図るための施策に取り組んでいるとこ\nろであり、引き続き努力をしていきたいと考えております。以上であります。\n［浜田正利町長 降壇］",
+    "text_length": 872,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-209"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-065",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "青柳茂行議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "青柳　茂行",
+    "member_faction": "",
+    "text": "町長の答弁をいただいたわけであります。町長の答弁にあるように、\n今回のいわゆる自治体消滅論なんですけれども、これまで自治体が取り組んできた施策\nや努力に水を差すものだと、一喜一憂するものではないと。こういう考え方は私自身は\n正しいんじゃないかなと思っております。あたかも人口減少が女性と自治体に責任があ\nるかのような、こういう論調というのはやはり本末転倒なものではないかなというふう\nに自分自身も思っております。\nそこで、この自治体消滅論、実は2014年、ちょうど10年前になるわけですけれども、\nいわゆる増田レポートというのがありました。日本創成会議、座長増田寛也、元総務大\n臣なんですけれども、若年女性が2040年までに５割以上減少する自治体を消滅可能性都\n市として、それが896自治体あると。そのうち人口１万人未満の市町村を消滅可能性自\n治体と名指しして、自治体名を公表しております。この中に新得町も当時、含まれてい\nたわけであります。\n今回も同様な性格の中で発表されているわけですけれども、新得町はかろうじてこの\n中には入っていなかったわけなんですけれども、この新得町が14年の創成会議の推計時\nで消滅可能性自治体とされていたわけなんですけれども、今回、その対象から外れたわ\nけであります。この外れた要因はどのようなものなのかなという点で、町長の見解を１\nつはお伺いしたいと思います。\nそれからもう１つ、今回、これも最近ですけれども、厚生労働省が2018年から2022年\nの４年間の市区町村別の合計特殊出生率というのですけれども、発表しております。こ\nれを見ると、全国平均が1.33、これは過去最低なんですけれども、北海道については1.\n21となっています。東京に次いで２番目に低い。ちなみに東京は0.99ということで、１\n人に満たない数字になっています。\n以前、2013年から2017年にも、同様の発表を厚生労働省はしているんですけれども、\n新得は1.44と出ております。今回、新得町はどうだったのかというと、1.20ということ\nで、今回、十勝管内平均が1.38です。この1.38というのは、十勝管内平均でいえば、全\n国、全道を上回っているんですけれども、新得町の1.20というのは北海道の平均よりも\n低い。十勝管内では、最も低いところに数字を示しています。\n2013年から2017年のときは、管内で一番低かったのが豊頃町なんです。このときは1.\n30です。今回は0.9ポイント上げて1.39人となっています。ですから、最下位だった豊\n頃町が1.39というのはちょうど真ん中くらいまで上がっているんじゃないかなと思いま\nす。\n- 43 -\n\nいわゆる社人研、社人研というのは国立社会保障・人口問題研究所の略称なんですけ\nれども、将来の人口シミュレーションというのも今回、新得町のまち・ひと・しごと創\n生総合戦略ということで、報告も出されているわけですけれども、ここが2060年までの\n将来人口について分析しているわけです。\nこれを見ると、将来人口シミュレーションというのがあって、シミュレーション１、\nシミュレーション２、シミュレーション３、この３通りが示されているわけです。\nこれは2015年から2065年まで何と50年間、向こう50年間にわたって想定されたものな\nんですけれども、新得町についていえば、この出生数にかかる仮定として2030年までに\n1.80、2040年までに2.10に上昇すると一応算出されているわけです。\n今回、2030年ですから、2024年なのであと６年なんですけれども、今回2022年で1.20\nという数字が出されているわけですけれども、あと５年、６年で1.80まで持っていくと\nいうのは非常に難しいんじゃないかなというふうに思っているのですが、もう１つ質問\nとして、この間、この４年の間に新得町の出生率が下がっている原因、これをどのよう\nに分析しているのかなと。\nそれから、一応シミュレーションでは1.20の出生率を2030年まで1.80まで到達する見\n込み、非常に厳しい数字なんですけれども、展望はどのように持っているのか、この点\nについてお尋ねしたいと思います。",
+    "text_length": 1752,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-210"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-066",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、個別の話は置いておいて、今回、先ほど言ったように、一喜一\n憂という話をさせていただきましたけれども、これは私、裏を返せば日本の国の在り方、\n有り様といいましょうか、日本全体がこういう状態なんだというのをあえて私は国に言\nってくれたというふうに、私はそういうふうに今、実をいうと捉えています。要するに\n基礎自治体だけが努力をしても、私はムダだと言わないです、当然努力しますから。\nしかし、やはり国全体の中で議論して、そして、方向性を決めてもらって、いろんな\n対応をしていただかないと、私は現実、厳しいものがあるなという、そういう認識のも\nとで、消滅可能性自治体から外れた理由、これは担当のほうから、あくまでも数字上の\n私、テクニックの問題だというふうに思っていますので、分母と分子がどうなるかとい\nう、そういう問題だなというふうに思っています。\nそれからもう１つ、出生率の話がありました。私も人口は常に気になっているので、\n率は置いておいて、10年前なんですけれども、子ども34人生まれています。去年は17名、\nその上で、死亡が10年前は93名、去年は123名、単純にいったら自然減だけで100名を今、\nずっといっていると。\nこういう状態かなと思ったのが、転入と転出は、去年は５名増えています。それはや\nはり仕事の問題を含めていろんな問題があって、努力もした１つの評価かなというふう\nに思っています。\nそれから、もう１つ驚いたのが婚姻の数なんですけれども、10年前は75件届け出があ\nりました。去年は54件届け出があります。それで、戸籍の担当のほうに聞いたのですけ\nれども、婚姻届イコール婚姻した人が新得に住むかとなると、これはイコールではない。\n届け出だけが新得にという方もいるので、数字は一喜一憂できないのですけれども、そ\nういう数字があると。その結果、婚姻されて婚姻届を出された方もやはり新得に住んで\nもらうためにわれわれ何をしなくてはならないのかなというのがもう１つ。\nその上で、出生に戻りますが、やはり１つは私、よく分からないのが正直なところな\n- 44 -\n\nんですけれども、やはり結婚してもらって、そして、結果として子宝に恵まれるという、\nそういう自然の流れの中で世の中全体が回っていくようなものを、われわれが環境とし\nて作っていくことが必要かなと今、思っています。\nなかなかお金が出たから、「はい、そうですか」という、私はそんな問題ではないな\nという、そんな認識を持っていまして、青柳議員の質問には答えていないと思うんです\nけれども、自分、不安の中で今、答えていますので、なかなか明確なことは言えないと\nいう、本当に申し訳ないというふうに思っていますが、いずれにしても、数字だけを見\nて物事は判断しきれないのと、一地方公共団体だけで努力はするけれども、国全体の中\nできちんと整理していただかないと前に進まないと。\n極めて、答弁にならないような、嘆きに近いような答弁になってしまったのですけれ\nども、認識としてはそういうふうに思っていまして、今、ただわれわれが言えるのはも\nう与えられた環境の中で努力をしていくというしか、答弁が思いつかないのですけれど\nも、そういった中でぜひ、議員のほうからももっといい話がありましたら、提案をいた\nだければありがたいなというのが正直なところであります。以上であります。\nその上で、担当課のほうで質問があった部分の答弁ができるのなら、それぞれ答弁し\nていただければいいなと思っています。よろしくお願いします。",
+    "text_length": 1480,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-211"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-067",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "桑野恒雄保健福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私のほうから出生率のことで回答させていただきます。\n合計特殊出生率ですけれども、19歳から49歳までの女性の数に対し生まれた子どもの\n数を表す指標の１つとなっております。\n一般的に１人の女性が一生の間に子どもを産む数に相当するといわれておりますが、\n人口動態の指標の１つということで、直接政策の数値という感じではなく、指標として\n捉えております。\nその上で、要因ということなんですけれども、先ほど言った社会的な要因、また減少\nというのは新得だけではなく、全国的な流れとなっており、これが要因というのは１つ\nではないかなというふうに考えております。また、よくいわれている経済的な負担や子\nどもを抱えながら働く環境など、社会的要因というのが大きいかなと考えております。\nその上で、何をするというのは明確には言えないのですけれども、努力目標数値とい\nうふうに掲げているものですから、これからも安心して産み育てる環境づくりというこ\nとに対しては、努力は必要かなというふうに考えております。以上です。",
+    "text_length": 445,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-212"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-068",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "青柳茂行議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "青柳　茂行",
+    "member_faction": "",
+    "text": "それぞれお２人の課長からも答弁をいただいたわけでありますけれど\nも、主に人口減少の大きな要因は社会的要因ということで、社会的要因というよりも、\n今回、出生率の問題も取り上げたのですけれども、私自身は出生率が低いから、一体ど\n- 45 -\n\nうするという立場で質問しているわけではないです。\nつまり、今、答弁もあったように、これは一自治体の問題ではなくて、おおかたやは\nり国の施策に大きな原因があるというふうに私自身も考えています。ですから、やはり\n国の対策、政策そのものを根本的に変えていかない限り、この問題は解決できない、そ\nういう問題ではないかなというふうに思っています。\n最近、２日、３日前に昼のテレビを見ていたのですけれども、今、東京都知事選が始\nまろうとしていますけれども、その点についての報道番組だったのですけれども、東京\n都は先ほど言ったように出生率が0.99人ですよね。全国で一番低い。そのことがあまり\n大きな問題になっていないわけですよね、地方町村よりも。\nところが、その中のテレビの報道番組の中で言っていたのですけれども、東京都の都\n全体の予算規模が16兆5,000億円、これはスウェーデンの国家予算とほぼ同じ規模だと\nいうような報道の内容でありました。\nつまり、出生率が低くてもいかに東京だけが一極集中が進んでいるのか、ひとつこの\n現れではないかなと思うんですよね。\nいわゆる今、地方創生というのがちょうど10年くらい前から第１期が始まったのです\nけれども、これがちょうどまち・ひと・しごと創生総合戦略、先ほど言った題名と全く\n同じなんですけれども、では、これは何のためにこの地方創生というのができあがった\nのかというと、地方の活性化を目指す政策、取り組みを進める。それから、人口減少を\n抑止して持続可能な社会の形成を目指すというふうになっているんです。\n新得では、この10年間どのような現象が起きたかというと、いわゆる普通高校、新得\n高校が廃校になってしまった。つい最近では、根室本線も廃線になってしまう。つまり\n人口がだんだん少なくなっていく、いわゆる過疎化現象ですよね。過疎化現象に拍車を\nかける政策、対策を国が取っているということになるんですよね。\nですから、そういう意味からいっても、この地方創生戦略というのは実際に破綻して\nいるんじゃないかなと。そういう点で、かといって、先ほど町長も言っているように、\n非常に悩む問題であるのは間違いないのだけれども、ここに来て国の責任ばっかり言っ\nているというのも、それではあまり芸もないということも言えると思いますので、非常\nに厳しい局面なんですけれども、町長も２問目の答弁もしていますけれども、再度、町\n長の立場からこの局面をどのように打開するのか、いかに手腕を振るっていくのか、そ\nの点、あらためてお伺いしたいと思います。",
+    "text_length": 1199,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-213"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-069",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私も人口問題については結構興味があって、この間、新聞の切り抜き\nとか、いろんなものを取って資料として整理をしているんですけれども、その中に、人\n口減少は静かな有事という、そういう切り口がありまして、「ああ、なるほどな」と思\nって、読ませていただきました。\nそういったことを思いつつ、では、青柳議員に具体的に答えができるか。これだとい\nう答えは、申し訳ない、私は持っていない。全部国が悪いと私も言わない、われわれ基\n礎自治体の中で地域の方々と一緒になってやはり努力をしていくという、そういう雰囲\n気づくりというのは当然していかなくてはならない。\nその上で、言葉、本当に乱暴で申し訳ないんですけれども、答弁しているのは男性な\nんです。作っているのも男性で、その中に、場合によっては女性の視点がもしかしたら\n欠けているかもしれないので、そういう女性の視点、社会を一緒になって作っていただ\n- 46 -\n\nいている、そういう方たちのいろんな意見をどう吸い上げて、そして、そこに少しでも\n次につながるものを作っていくのかというのが今、極めて曖昧な言葉で、表現で申し訳\nないのですが、今、そういう答弁しか思いつかないのが１つ。\nその上で、そこに生活するために私、経済というのは絶対必要だというふうに思って\nいますので、そういう意味で、地域の経済を支える産業というものをやはりこれからも\nきちんと応援をしていくと、そういう２本立ての中で今後も進めていきたいというふう\nに思っております。\n青柳議員の質問の答えにあまりなっていないかもしれませんけれども、そういう中で\n対応していきたいなというふうに思っています。以上であります。\n［青柳茂行議員 降壇］",
+    "text_length": 718,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-214"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-070",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大澤一文議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私のほうから、屈足地域の活性化についてお伺いいたします。\n１．屈足地域の活性化について\n本町では現在、駅前再整備、新庁舎、公園、道の駅等、多くの事業が計画・実行され\nております。\n一方で、屈足地域の住民からは、新得地域だけ整備され、屈足地域には何もないねと\nいう声も現実に聞こえてきています。\n現在、屈足地域では、高齢化、過疎化が進んでおり、これ以上の過疎化を防がなけれ\nばなりません。\nそこで、町として、屈足地域に何かのアクションを起こして、地域に人を集める施策\nが必要と考えております。これは例えばですけれども、町が購入した拓鉄の土地を活用\nした、新得地域、清水町・鹿追町にある公園よりもスケールの大きい公園を作り、屈足\n地域に人を呼ぶとか、また、１年中作物が栽培できる大型ハウスを建設し、未利用排熱\nを利用した冬季農産物のブランド化など、屈足地域に新しい産業を作り出せると考えて\nおりますが、町長の考えをお伺いいたします。",
+    "text_length": 414,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-218"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-071",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大澤議員のご質問にお答えいたします。\n屈足地域は木材関連産業の撤退や営林署の統廃合などもあり、人口の減少や高齢化率\nも高まっていることは認識をしており、議員が懸念されていることは、私も同じ思いで\nあります。\nしかし、本町における少子高齢化、人口減少は屈足地域にかかわらず、町全体の大き\nな課題であり、先ほどの青柳議員のご質問にお答えしたとおり、誰もが安心して住み続\nけられる持続可能なまちづくりに最大限努力をしてまいりたいと考えております。\nその上で、地域の活性化は１つはやはり既存の産業の活性化が大きな要素と考えてお\n- 47 -\n\nり、産業振興を図るため、地域振興事業や商工業活性化事業、農林業の各種支援策など\nさまざまな産業振興施策に取り組んでおり、近年、屈足地区においても家畜用サプリメ\nントの製造やくったり温泉レイク・インではオートキャンプ場の整備のほか、グランピ\nング施設の整備など民間の新たな投資も見られるところであります。\n新たな産業という面では、自然エネルギーである地熱エネルギーの調査や、木材関連\nとして種苗の苗畑の整備による林福連携事業などの検討を進めているところでありま\nす。\nいずれにいたしましても、新たな産業の創設は一朝一夕にいかないものであることも\n現実でありまして、引き続き努力をしていきますが、地域の方々との協力も欠かせない\nものでありますので、例えば「屈足を考える会」を含めた地域の皆さんとの議論も深め\nることも必要というふうに思っておりまして、議員からも地域を変えていく視点を持っ\nてご提言をいただければありがたいというふうに思っております。以上であります。\n［浜田正利町長 降壇］",
+    "text_length": 710,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-219"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-072",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大澤一文議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありがとうございます。\n私も地域を変えていく視点を持って、建設的な意見を言ったつもりなんですけれども。\n私も新得町全体の人口減少、高齢化は自分でも認識しております。\nただ、今、屈足地域の高齢化・少子化はかなり進んでいて、商店を見ても何店舗もな\nく、また、店主も高齢化でいつ廃業するか分からない状態にあります。店がなくなれば\n地域で生活している住民、特に高齢者は不安が募る一方だと思います。やはり屈足地域\nに人が集まり、住んでもらえる地域にする取り組みが必要であると考えております。\nそこで、やはり公営住宅の件でいえば、国の予算を使って公営住宅を造るために所得\n制限で入れない人もいますし、そういう国の制限が多くあって、利用したい人ができな\nいような状態である中で、やはりひとつ公営住宅にしてみれば、トムラウシの教員住宅\nみたく、町が全面的にお金を出して、町が管理している店の近くの土地に建てる、誰で\nも入れるようにしていただく、そういう方法もあるのではないかと考えております。\nいずれにしても、先ほど言った民間の新たな投資、これはやはり協力していかなけれ\nばなりません。まして、７月に屈足の若い人たちが何年か前からガンケフェスティバル\nをしています。こういうのにも町として、参加、協力していかなければならないかなと\n考えております。\n最後にですけれども、例えばの中に１年中作物が栽培できる大型ハウスと言いました\nが、これは新得町が令和５年２月に環境基本計画の中に、冬季作物栽培ブランド化が書\nかれております。これは、将来的に今後、道の駅の野菜の供給とか雇用にもつながりま\nすので、ぜひ、早急に検討していただきたいと思いますし、拓鉄の土地だけではなくて、\nまだまだ屈足には町が抱えている土地はあると思いますので、苗畑事業も考えておられ\nるのであれば、拓鉄の土地だけではなく、ほかの土地も利用しながら、屈足地域の活性\n化に向けて取り組んでいただきたいと思いますが、いかがでしょうか。",
+    "text_length": 839,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-220"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-073",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず議員、産業の振興というのは行政が全てやるという認識を持って\nいらっしゃるとしたら、私とちょっと距離がある。行政が自らやる、これは私は否定し\nない。だけれども、産業は持続を考えたら、私、民間の人たちが腹を据えてやはり努力\nしていかなくてはならないというふうに私は思っている。そういう人たちをわれわれは\n- 48 -\n\n応援すると。これが基本。\nその上で、どうしてもやはりどうしようもないものは第３セクターになるかもしれま\nせんけれども、それはそれで腹をくくってやります。これが１つ。\nそれから、あえて私の頭の中に入っている産業というものを、かみ合うかどうかこれ\nからも議論があるので、あえてお話しをさせていただくのですけれども、まず基本は、\n持続できる産業とは何かと、やはりどうしても私、考えます。目先のところといいます\nか、近いところで私、やはり農業しか浮かばない。\nそれから、環境問題を考えると、持続を含めて両方いくのは私、林業しか浮かばない。\nそれから、地域の問題を考えたときに何かといったら、屈足はやはりエネルギーが私、\n重要だというふうに思っています。水もある、木質もある、畜産系もある。あと、地熱、\n先ほど言ったように、これは私、努力して姿、形にしていくのがわれわれ行政の１つの\n役割かなと今、思っています。\nそれから、さっき、新得、新得と話しましたけれども、確かに新得駅前やっている、\n高速やっている。しかし、全てとは言わないですけれども、屈足は必ず通り道に私、な\nると思っていますから、そういう意味で、出口と入口を整備した結果、道路を使うお客\nさまをどう捉えていくかと、私、屈足これからの１つのポイントかなというふうに思っ\nています。\n具体的な提案がありました。住宅問題、私もこの住宅問題というのは公住に限らない\nのですけれども、大切な要件だというふうに思っていますので、民の方々とも相談しな\nがらどういうことができるか、悩んでいきたいなというふうに思っています。\nそれから、公園の話、頭に私、入れています。ただし、現状の中で本当にそういう合\n意形成ということを考えたときに、われわれ行政側としてどこまで進むのかというのは\n不安な部分もありますけれども、提案は提案として受けていきたいなというふうに思っ\nています。\nそれからもう１つ、商店街の話がありました。商店街の自らの次の承継を考えてどう\nするかという動きと、やはりどうしてもそこには購買力というのがないと、店は私、持\n続しないというふうに思っていますので、その辺をどう考えていくか、口で言うのは簡\n単なのは十分分かっています。その上で、現実の厳しさというのを身に染みている部分\nもありますので、そういったことをお互い知恵を出しながら進めていきたいなというふ\nうに思っています。\nそれから、１年中の作物というのも、それはそれで分かりました。頭に入れていきた\nいと思っています。\nくどいですけれども、われわれやはりトータルとして、町全体をどう底上げしていく\nかというのが基本でありまして、あとは、地域、地域によるそれぞれの持っている宝を\nどう磨き上げるかというのが私たちの使命だというふうに思っていますので、決して屈\n足をないがしろにしているわけでもないし、トムラウシをないがしろにしているわけで\nはないし、佐幌、上佐幌もないがしろにしているわけではないと。その辺だけ誤解のな\nいようにこれからも共に町政という中で前に進めていければいいかなと思っています。\n私からは以上であります。",
+    "text_length": 1476,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-221"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-074",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "大澤一文議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありがとうございます。\n私も町長とは考え方は一緒なんですけれども、ただ、産業というのはやはり屈足でい\n- 49 -\n\nえば農業と林業は欠かせないと思っていますけれども、苗畑を持ってくるにしても、や\nはり町がかなり関わらないと、そこに個人的にやろうかなという方はなかなかいないか\nなと思っています。\nそういう意味で私は言ったつもりなので、ぜひ、待っているんじゃなくて、こういう\nことがあるから、もしかしたら森林組合があるなら森林組合のところに行って、こうい\nうことをやってくれないかという話を進めたり、率直に現実として農家がいっぱいある\nのですから、変な話ですけれども、農家にレディースファームスクールの方が働きに行\nっても、仕事が冬の間ないんですよね。そうすると、やはりどっちかというと、生き物\nを飼っている方のほうに行きやすくなるような傾向もあると思うんです。だから、そう\nいうのも含めて、一年中、屈足地域で作物が栽培できるような環境を作っていただけれ\nばなと思っていますけれども、最終的には待っていないで、町も含めて、いろんなこと\nをやっていただきたいなということで。\n最後にもう１点だけ、地熱の関係ですけれども、やはり屈足地域といってもあそこは\nトムラウシ地域というのもありまして、そこの意見を十分に聞いてから決断しないと。\n私が言っている屈足地域はトムラウシは申し訳ないですけれども含まれていなかったの\nで、屈足の街の中をといったイメージでしゃべっていました。申し訳ございません、説\n明不足でした。\nそれはともかく、やはり屈足に私は人を集める施策を、何でも町が一緒にやっていた\nだきたいなということと、それもぜひ、われわれも協力していきたいなと考えておりま\nすので、よろしくお願いします。",
+    "text_length": 748,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-222"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-075",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ぜひ、トムラウシ地区も屈足地域に入れていただくようにお願いした\nいなと思います。\nその上で、議員からの見た目では、われわれの動きが鈍いというのは何となく分かり\nました。そういう強い思いというのが分かりました。\nそれで、あえて言いますけれども、リスク管理は私、たいへん大切というか、大変な\nことなので、では、全部民間で、普通は民間なんですけれども、そこにどうしてもやは\nり背中を押す１つの材料としてリスク管理の中で行政も分散してくれと、これはこれで\n私、ひとつあり得るかなと思っています。ただ、あと、程度と限度が今の段階まだ言え\nませんけれども。\nそれから、苗畑だけの問題、話しますけれども、森林組合と私、組合長と直接、今、\nやり合っているのですけれども、どうしてもやはり１年の流れの中でこの人をどう雇用\nしていくかという、そこが今、１つ大きな問題と、実際、苗畑として種苗を支援できる\n人が本当にいるのだろうかというのは、現実問題としていろいろあるようでありまして、\nただ、そうは言いながらも苗は足りないというふうに聞いていますので、その辺、需要\nと供給も含めて誰が受け皿になって前に進めるかというのは、あらためて私自身も直接\n今、動いている部分もありますので、組合のほうとも努力をしていきたいなというふう\nに思っています。\nあらためて言います。われわれの動きが悪いというのは分かりましたけれども、最大\n限、あまり言わないほうがいいかもしれませんけれども、汗をかくように努力します。\n以上であります。\n［大澤一文議員 降壇］\n- 50 -",
+    "text_length": 668,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-223"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-076",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "菊地康雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、本日最後の質問をさせていただきたいと思います。ふるさ\nとに対する誇りと郷土資料館についてという題で提出しましたけれども、「ふるさと」\nという言葉、広い意味で捉えていただいて、今、住んでいる町という意味にも取ってい\nただきたいと思います。\n１．ふるさとに対する誇りと郷土資料館について\n過日、道北の小さな町の郷土資料館や町立博物館を見学する機会がありました。こぢ\nんまりとした施設ではありましたが、館内ではその町の自然と生き物、あるいは出土し\nた遺跡、アイヌ民族の生活、近世から近代の町の様子と生活・教育の推移、その町の主\n要産業の道具や写真など、実に分かりやすく展示してありました。\n聞けばやはり学芸員が中心となり、展示資料と展示方法を考えたそうであります。\nそこには、町を作ってきた人々や町を形成している自然に対するその町の誇り、郷土\nの教育に対する熱意を十分に感じさせてくれるものでありました。\n新得町の町史にもそれらが詳しく書いてありますが、やはり百聞は一見にしかず、ぜ\nひ参考にしたいものとの思いを強く感じて帰宅いたしました。\n今年を含めてここ数年、大型プロジェクトが新得町ではめじろ押しですので、すぐに\nとは言えませんけれども、空き物件の有効利用を考える上でも、郷土に住む人たちの教\n育のためにも、本町内に町民が誇りを持てるような郷土資料館の立ち上げをぜひ、提言\nしたいと思います。よろしくお願いいたします。",
+    "text_length": 614,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-225"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-077",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "渡會崇善教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "菊地議員のご質問にお答えします。\n郷土資料館の整備についてのご質問でありますが、新得町には郷土資料館はございま\nせんが、類似する施設として、平成26年に旧上佐幌小学校を改修した郷土資料収蔵庫「ふ\nるさと館」を開館しております。\nふるさと館には、昔、使われていた農機具や生活用品、土器などの郷土資料、約2,00\n0点を商工業の部屋、林業の部屋、昭和の部屋など８つの分野に分けて展示しておりま\nす。\nまた、資料の展示や整理、見学者の対応につきましては、専門の職員を配置していな\nいため、新得町郷土研究会の皆さまのご協力をいただきながら対応しているのが現状で\nあります。\nご質問にありました本町内での郷土資料館の整備でありますが、教育委員会としても、\n以前よりご説明を申し上げておりますとおり、今のふるさと館の場所が最適地だとは考\nえておらず、できれば町民の方が足を運びやすい市街地にあるのが望ましいと考えてお\nります。\nしかしながら、資料館を開設するにあたっては、場所であるとか規模、運営方法など\n多くの課題がございますし、以前より、菊地議員もおっしゃっていたとおり、やはり専\n門的な知識を要している学芸員等の人材も必要となってまいります。\n当面は、ふるさと館において、新得町に関する資料の充実や展示方法の工夫、また、\n公開日を設けるなど、できる限りのことからまず始め、今以上にふるさとの歴史を感じ、\n- 51 -\n\n学んでいただけるよう努力してまいりたいと考えております。以上であります。\n［渡會崇善教育長 降壇］",
+    "text_length": 656,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-226"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-078",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "菊地康雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "答弁、ありがとうございます。\n問題は、学んでいただけるように今後とも努力してまいりますという、この言葉の中\nの努力の方法であります。具体的にどうするか。これはもう以前から今の係長が前回い\nたときからの課題として、ずっと引きずっている努力内容でもございます。\n私、今までぜひ地域おこし協力隊でもいいから専門の学芸員が新得に必要だというこ\nとを口を酸っぱくして述べてきたし、また、教育委員会でもそれに対応して学芸員を導\n入するいろいろな努力を今までしてこられたことは十分に承知しております。\nけれども、学芸員を雇うとなれば時間もかかる、それから、例えば地域おこし協力隊\nなら３年以降どうする、いろんな課題も抱えていることは十分承知している中で、180\n度考え方を変えました。どういうことかというと、近隣には帯広を中心としてたくさん\nの学芸員がおられます。その方たちを利用させていただく。それが今の新得町における\n時間的な制約をなくする上でも一番最適な方法だということに気づいたわけでありま\nす。\nいろんな専門の方がいらっしゃるので、その方たちの知識を利用させていただくこと\nを最優先にしていただきたい。それが時間的にも、有効利用を促進するためにも、今の\nふるさと館を充実させるためにも、一番必要なことだということを提言したいと思いま\nす。\n新しい資料館ということでの提言でございましたけれども、やはりそこに移動してい\nく上でも今のふるさと館の展示方法を充実させて、すぐに新しいほうにも持っていける\nようなことをしなければなりません。それには今回見てきた、小さな町でしたけれども、\nこぢんまりとした中に、本当に上手に地図を使ったり、グラフを使ったり、年表を使っ\nたり、そのものの展示の説明ばかりではなく、ジオラマ的にその当時の昔の生活を再現\nしていたり、さまざまな工夫が見られました。\nそこにはやはりその町に住んで生まれた子どもたちがその町を愛するというのでしょ\nうか、その町に誇りを持つというのでしょうか、それを町として作っていかなければな\nらないという熱意を強く感じたわけで、この熱意はやはり新得町にも早急に導入してい\nかなければならない。\n確かに、今回新しく出た120年史を読むと本当にこと細かく、詳しく書いてあります\nけれども、あの膨大なものを読んで覚えなさいというのは酷です。好きな人はもう読ん\nでいる人もいるかもしれないけれども、やはりパッと見てそれをすぐに自分のものとし\nて先人の苦労を身をもって感じる施設というのは今、新得町に欠けていると思いますの\nで、それに向けて、努力をしていただきたいと思います。\n今、ふるさと館の中で、職員の配置がないので、郷土研究会の協力を得ながらという\nことで、私も郷土研究会の一員として、子どもたちが来たときには説明役として何回か\n出ることがあるのですけれども、やはり郷土研究会は専門家の集団ではなくて、素人集\n団、趣味の集団でございます。それぞれの興味のある部分というのは限られているので、\n子どもたちに対してきちっとした説明ができているのかという、いつも忸怩（じくじ）\nたる思いをしながらの説明で、その説明が終わってから会員同士の話の中で、異口同音\nにそのことの悩みが出てきているわけであります。\n- 52 -\n\n一人一人がもっと勉強すればいいんじゃないかといえばそれまでなんですけれども、\n当然、その努力も続けていきながら、同じ努力を教育委員会のほうにもしていただきた\nいというふうに思います。\n少しでも見やすい施設にすることが早急に必要である。それから、先ほども言ったよ\nうに、もし新しい施設ができたなら、そのまま横滑りでそこに持っていけるような展示\n方法をやはり身近な学芸員の知恵を借りながら、展示の深さというのか、専門性を作っ\nていくということが必要だと思いますけれども、教育長、いかがでしょう。",
+    "text_length": 1624,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-227"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-079",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "渡會崇善教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "いろいろふるさとに対する熱い思いをまたあらためて感じながらお\n話しを伺わせていただきました。\n近隣の市町村の学芸員の活用については、アドバイスはきっといただけると思います。\nただ、活用という部分で、やはり本町の職員なり、関わるものではないので、どこまで\nしていただけるかは分かりませんけれども、この部分、確認しながら今後の活動にまず\n役立てたいと思います。\nあと、今、おっしゃっていた部分で、まず、ふるさと館の整備なり何なり、できる範\n囲でやはりここは少しずつでも確実に手を付けていかないと、資料館を造るというふう\nになった場合、そこからまたゼロからのスタートではなくて、それも想定しながら整理\nとともに、やはり今も小中高等支援の児童生徒の皆さんが活用していただいております\nので、より一層、この部分では創意工夫をしながら、見やすく分かりやすくという部分、\nまた、郷土研究会の皆さんにもお力添えをいただきながらも、教育委員会でも努力して\nまいりたいと思いますので、今後ともご指導いただければと思っております。以上です。\nすいません、答えになったかどうか分かりませんけれども。",
+    "text_length": 487,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-228"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-080",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "菊地康雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありがとうございます。教育委員会の熱意は十分伝わってきておりま\nすので。\n例えば百年記念館を中心にしてでも、どの程度の助言というのか、力を貸していただ\nけるのか、早急に調べていただければたいへんありがたいなというふうに思います。\n2,000点を超える資料がそろっているとは言いながら、皆さんもたぶんご承知だと思\nうんだけれども、半分ほこりにまみれたものは、見方によってはごみです。だけれども、\n磨けば宝です。いかに上手に磨くかということがわれわれに課せられた使命でもあると\nいうふうに思っていますので、郷土研究会のメンバーも徐々に増えていますので、その\n力をフルに活用するようにしていただいたらいいのかなというふうに思います。\n次に、町長にぜひ考え方を聞かせていただきたいなと思うんですけれども、質問、ダ\nブるかもしれませんけれども、郷土資料館についてはかねてから学芸員による整理・収\n集・展示などを提言し、それに対する募集行動も行っていただきました。\nこのたび、実際に小さな町の資料館展示を見学の機会を得て、わが町に欠けているも\nのについて感じることがあったので、今回の質問になったわけであります。\n今から10年前、公演した新得町開拓劇には、浜田町長を先頭に役場の若手を中心に町\n民130人という多くの協力と努力を得て、東根市との友好都市盟約提携20周年を大いに\n盛り上げることができました。\nそして、その30周年を迎える今年、どのように盛り上げることができるか、有志に相\n談したところ、今後もこともあるのでできれば若手、特に新得出身者がほとんどいない\n- 53 -\n\n役場の若手に託すことができれば新得の開拓の歴史に触れることもできるし、今後、40\n年、50年という、次の時代のためにも最善ではないかという助言がありました。\nしかし、その若手にうまく記念式の意義を伝えることができずに時間ばかりが過ぎて\nいく中で、町長がいつも口にする「歴史の重み」に加えて、東根との友好の意味が町民、\n中でも特に庁舎内の職員にうまく伝わっているのか、心配になった次第であります。\nそこに道北の小さな町の郷土資料館の展示に対するその町の自然を知ろうとする努\n力、先人に対する尊敬など、自分が住む町への誇りがじんじんと伝わってきたわけであ\nります。\n今、新得町に必要なものはこれではないかと思いました。最初にも言ったように、12\n0年史には詳しく書いてありますが、それを補完する、町民にも分かりやすくする、小\n中学生の教育にも分かりやすく活用できるなど、多くの利点からあらためて郷土資料館\nの整備の必要性を理解していただきたいのであります。\n郷土研究会の中でも、以前から郷土資料館の設置を要望してまいりました。その中で\nのふるさと館の整備ではありましたけれども、教育長の答弁の中で、町民が足を運びや\nすい場所が望ましいということもありますし、このたび、空き物件となる予定の現サホ\nロクリニックの建物でこの郷土資料館、将来的にご検討願えれば、町内の学校にも近く\nて利用しやすくなり、町民の新得町を誇る気持ちの向上に大いに貢献すると確信してお\nりますけれども、町長の見解をお聞きしたいと思います。",
+    "text_length": 1338,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-229"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-081",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、道北の小さな町の郷土資料館というのは興味があります。私も\nいつも口ばっかりでなかなかそういう歴史の重みというのは具体的に伝えきれていない\n部分もあるかなと思うので、なるべく早いときにどういう雰囲気なのかを自分の体で覚\nえたいなというのがまず１つ。\nその上で、職員も含めて、町民の方全体なんですけれども、いかにそういうものの大\n切さというのを伝えられるように努力をしていきたいなというふうに思っています。\n次に、今、具体的に建物の場所ということで提案ということでありましたので、今、\n私の段階でどうのこうのと言える立場ではないのですけれども、教育委員会、さっき言\nったように、現在の場所ではやはり不都合だという認識を持っているということですか\nら、選択肢の１つとして否定は私、しません。\nいずれにしても、建物の有効利用を考えたときに、空いたところを利用するのはもち\nろんいいのですけれども、そもそも本当に先ほど言った歴史の重みを町民全体の中で盛\nり上げていく場所という、そういうふうな醸成といいましょうか、そういうほうが私は\nまず大切かなという気もしていないわけではないので、卵とどっちが先かという話とは\nちょっとずれてしまうかもしれませんけれども。\nいずれにしても、歴史というものをあらためて認識していただくという意味では、サ\nホロクリニックの跡はどうか別にしましても、教育委員会も現状では満足していないと\nいう、そういう部分は私も一致していますので、次どうするかという中では、よく教育\n委員会とも相談しながら対応していきたいなというふうに思っています。以上でありま\nす。\n［菊地康雄議員 降壇］",
+    "text_length": 701,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-230"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-082",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "１２人議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１ 番 大 澤 一 文 議員 ２ 番 貴 戸 愛 三 議員\n３ 番 森 本 洋 子 議員 ４ 番 櫻 田 郷 史 議員\n５ 番 村 田 博 議員 ６ 番 齊 藤 芳 恵 議員\n７ 番 青 柳 茂 行 議員 ８ 番 若 杉 政 敏 議員\n９ 番 福 原 智 幸 議員 １０番 菊 地 康 雄 議員\n１１番 湯 浅 真 希 議員 １２番 長 野 章 議員",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-235"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-083",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "なし議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "○地方自治法第１２１条の規定により、本会議に説明のため出席した者は、次のとおり\nである。\n町 長 浜 田 正 利\n教 育 長 渡 會 崇 善\n監 査 委 員 木 村 秀 光",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-236"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-084",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "教育委員会教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "の委任を受けて説明のため出席した者は、次のとおりである。\n学 校 教 育 課 長 岡 田 徳 彦\n社 会 教 育 課 長 大 山 康 幸\n○農業委員会会長の委任を受けて説明のため出席した者は、次のとおりである。\n事 務 局 長 野 々 村 寿 一\n○職務のため出席した議会事務局職員\n事 務 局 長 佐 々 木 隼 人\n書 記 大 澤 恵 介\n- 58 -\n\n◎開 議 の 宣 告",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-237"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-085",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第53号、工事請負契約の締結についてご説明申し上げます。\n１．契約の目的、終末処理場受変電設備更新工事でございます。\n２．契約の方法、２企業体と単体３社による指名競争入札でございます。\n３．契約の金額、１億648万円でございます。\n４．契約の相手方といたしまして、川岸・マキ特定建設工事共同企業体、代表者、帯\n広市西２条南38丁目４番14号、川岸電設株式会社、代表取締役 北健介。\n構成員といたしまして、新得町４条南１丁目５番地、有限会社マキ電気、代表取締役\n槙正光。\nなお、工期につきましては、令和８年３月10日といたしてございます。\n次のページから資料といたしまして、工事概要、施工箇所、閉鎖配電盤外形図、配置\n単線結線図を添付いたしております。\n以上、よろしくご審議をお願い申し上げます。\n［東川恭一総務課長 降壇］",
+    "text_length": 363,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-241"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-086",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第54号、物品購入契約の締結についてご説明いたします。\n１．契約の目的、新得町役場新庁舎備品購入（その１）でございます。\n２．購入契約をする物品名及び数量、２ページの購入品一覧表のとおりでございます。\n３．契約の方法、２社よる指名競争入札でございます。\n４．契約の金額、3,063万5,000円でございます。\n５．契約の相手方といたしまして、新得町本通南１丁目５番地、株式会社相馬商店、\n代表取締役 中村実希子でございます。\nなお、納期は令和６年12月13日としてございます。\n以上、よろしくご審議のほどをお願いいたします。\n［東川恭一総務課長 降壇］",
+    "text_length": 278,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-247"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-087",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第55号、物品購入契約の締結についてご説明いたします。\n１．契約の目的、新得町役場新庁舎備品購入（その２）でございます。\n２．購入契約をする物品名及び数量、２ページの購入品一覧表のとおりでございます。\n３．契約の方法、２社よる指名競争入札でございます。\n４．契約の金額、3,041万5,000円でございます。\n５．契約の相手方といたしまして、新得町本通南２丁目26番地、有限会社石川家具店、\n代表取締役 石川雅規でございます。\nなお、納期は令和６年12月13日としてございます。\n以上、よろしくご審議のほどをお願いいたします。\n［東川恭一総務課長 降壇］",
+    "text_length": 279,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-253"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-088",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "東川恭一総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第56号、物品購入契約の締結についてご説明いたします。\n１．契約の目的、新得町役場新庁舎備品購入木製デスクでございます。\n２．購入契約をする物品名及び数量、木製デスク91台でございます。\n内訳といたしまして、①両袖デスク16台、幅1,400ミリ、高さ730ミリ、奥行き700ミ\nリ。②片袖デスク75台、幅1,400ミリ、高さ730ミリ、奥行き700ミリ。\n３．契約の方法、１社よる随意契約でございます。\n４．契約の金額、1,683万円。\n５．契約の相手方といたしまして、新得町西３条北１丁目、社会福祉法人厚生協会わ\nかふじ寮、施設長 東貴志でございます。\nなお、納期は令和６年12月13日としてございます。\n２ページ以降に資料としまして、詳細図を添付しております。\n以上で説明を終わりますが、ご審議のほど、よろしくお願いいたします。\n［東川恭一総務課長 降壇］",
+    "text_length": 382,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-259"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-089",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "佐藤博行副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第57号、令和６年度新得町一般会計補正予算、第２号につきま\nしてご説明を申し上げます。\n第１条、歳入歳出予算の総額に歳入歳出それぞれ３億6,632万4,000円を追加し、予算\nの総額を121億1,083万1,000円とするものでございます。\n９ページ、歳出をお開き願います。\n２款、総務費、車両管理費の13節、使用料及び賃借料では、町有バス２号車が故障に\nより使用不能となったため、新たに購入するバスが納入されるまでの間の対応として、\n必要な民間バスの借り上げ料を増額しております。\n９ページから10ページにかけての物価高騰等対策支援事業費では、令和６年度住民税\nの課税の状況により、新たに給付対象となる方への物価高騰対応緊急支援給付金の支給\nに係る費用として、必要な予算を各費目において新たに計上しております。\n併せて、令和６年度に行われる定額減税において、減税額に満たない方の不足を補う\n定額減税補足給付金の支給に係る費用として、必要な予算を各費目において新たに計上\nしております。\n６款、農林水産業費、畜産業費の20節、貸付金では、酪農業を主として運営する町内\nの株式会社シントクアユミルクに対し、施設・設備の整備などに要する費用への貸付金\nを新たに計上しております。\n同法人は、生乳生産を主業とする法人でありますが、将来の農業事業者の維持を図る\nため、担い手を育成する研修牧場の役割も担っている公益性を踏まえ、新型コロナウイ\nルス感染症や生乳生産抑制、飼料資材等の高騰などの影響による厳しい経営状況を鑑み、\n経営改善に向けた支援として、設立時に貸し付けた農協転貸による搾乳牛導入支援資金\nの一括繰上償還ならびに、家畜ふん尿処理の改善を図るためのふん尿等貯留槽の整備に\n対する支援として、新たに貸し付けを行おうとするものであります。\n牧場運営費、14節、工事請負費では、旧狩勝牧場の施設を活用するにあたり、既存の\nポンプや圧力タンクなどを更新する必要があるため、旧狩勝牧場施設・設備改修工事費\nを新たに計上しております。\n12ページをお開き願います。\n10款、教育費、学校管理費の10節、需用費では、屈足南小学校の校内放送設備が故障\nしたため、修繕料を増額しております。\n６ページに戻りまして、歳入を御覧願います。\n15款、国庫支出金、総務費補助金では、物価高騰に対応する緊急支援給付金および定\n額減税の補足給付金の財源として、物価高騰対応重点支援地方創生臨時交付金を新たに\n計上しております。\n７ページに移りまして、19款、繰入金では、今回の補正の財源調整として、財政調整\n基金繰入金を増額しております。\n８ページをお開き願います。\n21款、諸収入では、新得町農業協同組合からの転貸で株式会社シントクアユミルクに\n貸し付けておりました搾乳牛導入支援資金貸付金の未償還分が繰上償還されるため予算\nを増額し、今回、同法人に新たに貸し付けをする施設・設備等資金の今年度償還分につ\nいて、新たに計上しております。\n- 62 -\n\n以上で説明を終わりますが、ご審議のほど、よろしくお願いいたします。\n［佐藤博行副町長 降壇］",
+    "text_length": 1313,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-265"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-090",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "青柳茂行議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "青柳　茂行",
+    "member_faction": "",
+    "text": "これまで何回か説明を受けているんですけれども、この場であらため\nて確認したいなと思います。\nこの家畜ふん尿処理に伴う支援ということで説明を受けているわけですけれども、当\n初の計画では５戸の農場から１日当たり105.2トンの排水等を含むふん尿、これを処理\nする計画であったと。\nしかし、実際には162.8トンということで、57.6トンの増加ということで、いわゆる\nメタンガスの発生に非常に大きな支障が起きたということで、発電量も大幅に減る非常\nに支障が起きたということで、今回、そういう提案になっているわけですけれども。\n実際に、メタンガスの発生量が減少した原因、説明によりますと、いわゆる搾乳機と\nいうか、ロボットの使用によって大量の水を使用することによって、はっきり言えば非\n常に薄まってしまって効果が出なくなってしまう、それが大きな原因ということのよう\nなんですけれども。\n併せて、当初５戸の農場ということなんですけれども、この５戸というのは今現在も\n変わっていないのかどうなのか。もし、変わっていないということであれば、その当初\nの計画というのが非常に甘かったのではないかというような印象を受けるわけです。そ\nの点、さらに説明をお願いしたいなと思います。",
+    "text_length": 530,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-267"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-091",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "桂田聡産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\nまず、農場の数５戸ということで、その内訳でございますが、現在も１軒、屈足の農\n場、離農した後に新たに入っている農場がありますので、そこの入れ替えがありました\nが、５戸の農場については変更ございません。\nあと、議員も今、おっしゃったとおり、当初の計画105トン、それが今、162トンとい\nうことになっている理由でございますが、アユミルク分のロボット導入のときの補助事\n業、バイオ施設を造るにあたって補助事業をいただいておりますので、それを計算する\nときの数値が補助事業で決まっております。それで計算したときの数量がアユミルクで\nいくと１日当たり32トンということで計算していたものが、実際、稼働したときには75.\n5トンということで、そこで非常に増えているのが現在、過剰に投入している理由にな\nってございます。\nそれによりまして、バイオガスのほうの発生が悪くなって今、ＦＩＴ（フィット）の\nほうの売電収入が得られていないというような状況になってございます。以上でござい\nます。",
+    "text_length": 447,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-268"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-092",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "青柳茂行議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "青柳　茂行",
+    "member_faction": "",
+    "text": "今32トン、では、これはもう当初全く予想されていなかったというよ\nうな性格のものなのか、それにしても、ここまで文明の利器といいますか、そういう時\n代に入ってきて、全く予想できなかったのかなという１つの疑問がわくわけなんですけ\nれども。\nもう１つ、いわゆるラグーン、今回、ここに7,500万円つぎ込まれる形になっている\nのですけれども、当面、ラグーン建設１基の予定なんですけれども、この１基で正常な\n- 63 -\n\n形に戻るのか、それで戻れば問題はないのかなと思うんですけれども、もしこれで後々\nまた足りなくなってしまって、もう１基追加とかとなってくると、これはもうたいへん\n大きな問題になってくるのではないかと思うんだけれども、その辺の懸念というのがな\nいのかどうなのか、その辺をもう１回確認したいと思います。",
+    "text_length": 355,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-269"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-093",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "桂田聡産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。ラグーンの容量のことをまず説明させていただ\nきます。\n現在、ラグーン建設予定しております容量が１万5,120トンの容量になってございま\nして、今、アユミルクから出る部分が１万2,600トンということで、今、計算のほうし\nてございます。\nアユミルクのほかに近隣の農場で冬期間あふれる可能性がある農場、３農場あるので\nすが、そこの部分の2,520トンを足して、１万2,600トンプラス2,520トンということで、\n１万5,120トンの容量ということで今、ラグーンのほう計算させてもらっておりますの\nで、新たに２基、３基というような形で造る必要はなく、この１基で対応のほうできる\nということで今、お聞きしております。以上でございます。",
+    "text_length": 323,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-270"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-094",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "青柳茂行議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "青柳　茂行",
+    "member_faction": "",
+    "text": "今、この１万5,120トンというのは、これから造るラグーンのことな\nのか、今現在のラグーンというのはどのくらいの容量でできているのか。その辺の兼ね\n合いといいますか、もう１基造れば合わせて１万5,120トンだから大丈夫だということ\nなんだけれども、そのとおりでいいのかどうなのか、もう１回、確認したいと思います。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-271"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-095",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "桂田聡産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n現在、アユミルクにラグーンは１基もないので、これを造ることによって、初めての\nラグーンというような形になります。以上でございます。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-272"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-096",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "森本洋子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "森本　洋子",
+    "member_faction": "",
+    "text": "今の関連なんですけれども、私、２日前に農協の方が説明に来ていた\nだきまして、その点で後で考えて分からなかったことで、今、これが担当の方が答えら\nれるかどうか分からないのですけれども。\n町が担保にするものは農協だというふうに説明があったと思うんですけれども、この\n間の質問をされた議員の質問なんですけれども、農協の組合員の方たちのその資産とか\nそういうものには影響がないのか。\nそれから、そういうことを皆さん、農協の組合員が知っているのかという質問をした\nと思うのですが、そのときに農協の方が、その資産の中に牛がおりますというような質\n問をしたのですけれども、農協の牛なのか、アユミルクの牛なのか、その辺、牛の存在\nというのはどういうことなんでしょうか。",
+    "text_length": 326,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-273"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-097",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "桂田聡産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\nこの間農協さんが説明していただいた牛、３億円の価値があるということで説明して\nいたかなと思うのですが、それにつきましては、シントクアユミルクの現在いる牛の価\n値ということでなってございます。以上でございます。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-274"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-098",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "湯浅真希議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私のほうから４点ほど、質問させていただきたいと思います。\n- 64 -\n\n現在、いろんな厳しい状況が続いて、債務超過が続いているということだったのです\nが、今後の経営改善策というものをどのように聞いているのか、お伺いします。\nそれと、連帯保証人、新得町農協さんということなんですが、これは参考までにお伺\nいしたいのですが、今後の将来的な農家さんの推移というものはどういうふうに押さえ\nられているのか、お伺いします。\n３点目、今回、起業時とかの支援とは違って、経営の中での要因での融資ということ\nで、イレギュラーな判断が必要なのかなというふうに感じて、私たちもとても判断が難\nしいところでありました。やはり私たち金融業ではありませんので、なかなか難しいな\nと思いました。第三者、経営指導員など中小企業診断士とかこういった方々の客観的視\n点も必要かなというふうに思ったのですが、そういった点はどういうふうに考えるのか、\nお伺いします。\n最後なんですが、ラグーン建設であったり、トラクター購入部分の1.5億円の部分な\nんですが、町からの説明でアユミルクにラグーンを新たに造ってそれを活用し、町内全\n域の家畜ふん尿処理を図りたいというふうにご説明がありました。具体的にどういった\n活用の方法で、町内全域というふうにありますけれども、何軒くらいを想定されている\nのか、お伺いします。",
+    "text_length": 586,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-275"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-099",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "桂田聡産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\nまず１点目の今後、アユミルクがどうなるのかということについて、ご回答させてい\nただきます。\n令和４年度から続いていた生乳の生産抑制が今後緩和されることから、令和６年度か\nら７年度にかけまして、乳牛100頭の増頭を図り、560頭とする計画で現在、進めており\nます。\nこれにより、令和７年度は令和５年度に比べまして、生乳生産量で1,000トン増える\nことになりまして、6,700トンになるのかなと。また、売上高はそれによって２億円増\nになりまして、10億円を超えるということで現在、見込んでおります。\nまた、当期純利益につきましても、令和７年度で6,400万円となりまして、プラスに\n転じる見込みでございます。その後も当期純利益につきましては、4,000万円強で推移\nする見込みとなってございます。\nさらに自己資本額は計画６年目の令和11年度にプラスに転じることから、債務超過状\n態からの脱却が見込まれております。\n借入金の返済につきましては、運転資金となります現預金を確保しながら、毎年8,70\n0万円程度の償還を継続することで、令和22年から償還圧が下がりまして、令和26年に\nは町からの貸し付けを完済する予定でございます。\n２つ目の今後の農家戸数の推移でございますが、農業担い手の対策の中で、今年度農\n業者を対象に意識調査を実施することとなっており、その中で、農業者自身の離農のタ\nイミング等々についても、調査することとなってございます。\nまた、今年度は農協によります第８次の農業振興計画の最終年でもあり、新たに作成\nするタイミングとなってございます。今後、農家戸数の推移につきましては、これらの\nデータを集めた中で、今後、推計していく予定となっておりますので、ご理解ください。\n３番目の第三者の意見を聞くべきじゃないのかということに関しましては、アユミル\nクは昨年金融機関以外の第三者機関、これは北海道酪農畜産協会になるのですが、そち\n- 65 -\n\nらによります経営分析を受けており、そのアドバイスも参考にしながら今回、経営改善\n計画を策定しているとお聞きしております。\n町といたしましては、その経営改善計画を確認した中で貸し付けの判断としておりま\nして、町が現時点で第三者による意見を聞く考えはございません。\n最後、ラグーンにつきましては、先ほど青柳議員のときにもお答えさせていただいた\nのですが、今、町内でアユミルクのほかに３戸の農家さんが利用ということで、お聞き\nしております。以上でございます。",
+    "text_length": 1064,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-276"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-100",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "湯浅真希議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありがとうございます。\nアユミルクさん、研修農場という役割を担っていますので、引き継ぎというか、新た\nに新規就農につながるようにやはり将来的な農家さんの戸数も押さえながら、スムーズ\nに就農につながるようにしていただければなというふうに思っております。\n最後に質問した部分なんですが、町内全域ということで３戸ということなんですけれ\nども、これは増える可能性というのはないのか、お伺いします。",
+    "text_length": 194,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-277"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-101",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "桂田聡産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n現状、農協から聞いているのは３戸ということですが、今後また、使用形態の変更等\n々によりまして、牛の増頭等、各農場のほうで行った際は増える可能性はあるのかなと\nは思いますが、現状のアユミルクで今回、もし造らせていただいた場合のラグーンにつ\nきまして、その中で対応のほうはできるのかなということで、お聞きしております。以\n上でございます。",
+    "text_length": 177,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-278"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-102",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "湯浅真希議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今の議案第57号、令和６年度新得町一般会計補正予算、第２号に\n対する修正動議を提出いたします。",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-280"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-103",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "湯浅真希議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "修正動議の説明を申し上げます。\n議案第57号、令和６年度新得町一般会計補正予算、第２号に対する修正動議。\n上記の修正動議を地方自治法第115条の３および新得町議会会議規則第17条第２項の\n- 66 -\n\n規定により、別紙の修正案を添え提出いたします。\n令和６年６月21日、発議者、新得町議会議員湯浅真希。発議者、新得町議会議員森本\n洋子。\n修正の内容につきましては、歳出予算、第６款、農林水産業費、第１項、農業費、畜\n産業費の貸付金にかかります補正額３億円を１億5,000万円に減額するため、所要の修\n正を要するものであります。\n修正案をご説明いたします。\n令和６年度新得町一般会計補正予算、第２号、第１条第１項中、３億6,632万4,000円\nを２億1,632万4,000円に、歳入歳出総額をそれぞれ121億1,083万1,000円を119億6,083\n万1,000円に、第２項第１表を改めるものでございます。\n歳入につきましては、補正予算書２ページをお開きください。\n第19款、繰入金、第１項、基金繰入金１億7,478万3,000円を3,228万3,000円に、第21\n款、諸収入、第３項、貸付金元利収入１億3,426万6,000円を１億2,676万6,000円に、歳\n入合計119億6,083万1,000円に改め、歳出につきましては３ページ、第６款、農林水産\n業費、第１項、農業費、補正額３億142万6,000円を１億5,142万6,000円に、歳出総額11\n9億6,083万1,000円に改めるものでございます。\nなお、補正額の修正に伴う修正額は、修正案に記載のとおりでございますので、お目\n通しいただきますようお願い申し上げます。\nそれでは、提案理由を申し上げます。\nまず、本町の基幹産業でもある一次産業に携わっている皆さまには、ここ数年続いて\nおります物価高などのあおりを受ける中、事業に対する日々の努力に敬意を表します。\n今回、不良債権先となっている株式会社シントクアユミルクは、研修事業や酪農ヘル\nパー事業なども担っていること、そして新得町農協の不良債権比率の問題は多くの組合\n員の皆さまも憂慮するところであり、町が貸し付けをし、繰上償還をしてもらうことが\n本町にとっても広く有益であると考えます。\n一方で、ふん尿処理のためのラグーン建設やトラクターなどの購入資金のための１億\n5,000万円の融資についてですが、アユミルクなどの家畜ふん尿を使用し、発電事業を\n行っている十勝新得バイオガス株式会社における家畜ふん尿の受け入れ量の問題でもあ\nり、債務超過の解消が数年見込めないアユミルクに対し、追加の融資は思慮を重ねるべ\nきではないでしょうか。\n新型コロナや資材の高騰など、さまざまな事業環境の変化に対応しきれず、債務超過\nが続いたということは理解するところではありますが、酪農だけではなく、ほかの産業\nにおいても、同じくたいへん厳しい事業環境の中、商工業界はじめそれぞれの町内事業\n者がこれまでも努力されているところであります。\n今後の人口減少を鑑みれば、農業だけではなく、町内全ての産業が今後もより大切に\nなってくると考えます。\n20年後に完済してもらえればよいという考えのもと、債務超過が続いている株式会社\nであるアユミルクに対し、漫然と設備投資のための１億5,000万円、税金を原資とする\n追加融資をすることは、町全体の産業を考えると残念ではありますが、たいへん厳しい\nと言わざるを得ません。ただ、家畜ふん尿対策における十勝新得バイオガスの事業は、\n町としても重要な事業であると考えますので、問題に対し、いま一度熟考されることを\n望むものであります。\n- 67 -\n\nよって、これらの理由により本修正案を提出するものであります。何とぞ、ご審議の\n上、ご決断を賜りますようお願い申し上げます。\n［湯浅真希議員 降壇］",
+    "text_length": 1619,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-284"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-104",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "若杉政敏議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "若杉　政敏",
+    "member_faction": "",
+    "text": "本町の基幹産業でもある酪農業を持続するためのその働く場、このシ\nントクアユミルクの存在価値は単なる大規模酪農法人にとどまらず、新得町の酪農振興\nを担っている公益性の高い事業者でもあります。\nまずは研修農場であることで人材育成を担っており、実際に２名の新規就農につなげ\nた実績もあります。さらに、現在も２名の希望者が就農に向かって日々実習していると\nのことです。\nまた、シントクアユミルクが一手に引き受けている酪農ヘルパー事業と乳牛検定事業\nは、いずれの事業も町内の酪農経営者にとってなくてはならないものであります。\n酪農情勢は今も非常に厳しい状況が続いており、近年の物価高騰や生乳生産抑制が経\n営に与えた影響は今後しばらく続くと予想されております。\n新規企業誘致もままならない昨今、既存する事業者が本町の生産強化のための支援策\nが重要であると考えます。\nどの案件にも言えますが、議会として行うべきは、町が行っている事業、中にはリス\nクを伴うものもございますが、それらの事業、予算が町のため、町民のためになってい\nるか、執行されているか、チェックしていく役割があります。\n今回の案件については、原案では補助金や出資金ではなく、貸付金とした今年度から\nの償還が始まる内容となっており、町民の不利益にはつながらないと私は考えます。長\n期間の貸付期間となりますので、町はもちろんのこと、議会としても今後もチェックし\nていく必要がありますが、原案にある貸し付けを行うことで、シントクアユミルクの事\n業が維持され、また、家畜ふん尿を適切に処理し、循環することにより、課題の解決が\n見込まれるとともに、新得町の酪農振興に寄与する施策であり、つながる補正予算であ\nると考えますので、今回の修正案に反対、原案に賛成の討論といたします。以上でござ\nいます。",
+    "text_length": 768,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-288"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-105",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "森本洋子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "森本　洋子",
+    "member_faction": "",
+    "text": "私は今回の発議者の１人でもありますけれども、まず、一昨日急きょ\n農協の方がこの件に関する説明にお越しいただいたこと、たいへんありがたいと思って\nおります。もっと前にやっていただければ、もっと議論も深まって、町長もここで混乱\nすることもなかったのではないかと思うんですけれども。\nそのときの説明の中での事業効果では、シントクアユミルクが独自にラグーンを建設\nしふん尿処理することで、十勝新得バイオガスのプラントが正常稼働し、売電収入の増\n加による経営の安定と消化液の改善が図られ、肥料として利用することで購入肥料の減\n肥対策につながるとあり、また、町の支援策の連帯保証人は新得町農業協同組合で、担\n- 68 -\n\n保になるものは牛だという説明を受けました。\n先ほど質問した中で、担保になる牛はＪＡの物ではなく、アユミルクの物だという回\n答がございました。そのような流動資産を担保にということに私はたいへん不安に感じ\nているところであります。\nさらに償還期間、これは20年という計画でありましたけれども、最近の気象、気候変\n動、そして、人口減社会における農業の変化を想像すると、この20年という長期の返済\n計画がそのとおり進むのであるかという疑問を思いました。私は、いろいろ説明を受け\nた中で、これはもう本当に絵に描いた餅ではないかと、そういうふうに言葉はきついか\nもしれませんけれども、そのくらい想像したところであります。\n担当の方もたいへんご苦労され、よく考えての計画ではあるでしょうが、ある方に言\nいますと、焼け石に水というお言葉をおっしゃった方もおりました。\n農業の応援につきましては、私たちも３月の議会では十勝新得バイオガスの返済計画\nの繰り下げ、これは３月の定例議会などでも繰り下げを承認しております。それから、\n農業に関しましては、物価高騰対策などそういったものが国からの支援などもあります。\n農業に従事されている方々は基幹産業ということで、毎日誇りを持ってお仕事をされ\nていると思いますが、それは観光業、福祉事業者、商工業者、新得町全てにも言えるこ\nとであります。\n私はいくつかの理事になっているわけなんですが、やはりその理事になるには、何か\nあったとき金銭的なことでも責任が伴うということをいつも覚悟を持って臨んでおりま\nす。\n町民から預かる大切なお金の使い道を公平公正に考えるのが私たち議員の仕事なの\nで、不良債権をいわれているアユミルクへの支援に対しては、もう少し皆さんが考えて\nいただければいいなというふうに思いました。\nというふうに、私は今回の修正動議に賛成として、意見を申し上げます。",
+    "text_length": 1104,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-290"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-106",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "福原智幸議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原　智幸",
+    "member_faction": "",
+    "text": "修正案に反対の立場から討論させていただきます。\nコロナ禍以来、円安による物価高騰、エネルギーの争奪戦など、産業活動、住民活動\nについては、生活が一変するほどの変化が起こっておるだろうと思っております。\n電気、燃料など、住民の生活する部分については、大幅な値上がりが続いており、生\n活に必要な水については新得町で自前で賄っておりますけれども、食糧につきましては、\n再三白物３品などと話題にあげられます米、砂糖、牛乳３品など、高騰しないというの\nは農業が安定して命に関わるものということで、そこの緩衝材を果たしておるものと理\n解をしております。農協、アユミルクについても、それらの緩衝的な役割を果たしてお\nるというふうに考えております。\n特に個人の酪農家につきましては、365日休みのない酪農家の休日の確保のため、ま\nた、安定した乳質を保持するための乳質の検査業務など、アユミルクが支えている役割\nは大きいだろうと思っております。何よりも、酪農家を衰退させないための後継者対策、\nそれから、酪農家の振興としての役割を多く果たしている部分があるだろうと思ってお\nります。\n金融の内容に触れる部分につきましては、形態もそれぞれの皆さんの判断により、複\n雑に評価が分かれるところであり、慎重でなければならないだろうと思っております。\n今回の金融支援の手続きについては、丁寧さ、緻密さに欠ける要素が多いという指摘も\n- 69 -\n\n皆さんから寄せられておるのも、私どもも耳にしておりますので、今後とも丁寧な説明\nは必要かと思っております。\n公金が投入されるため、経営の改善計画が確実に実施なされておるか、定期的な検証\nが今後とも必要とは思っておりますが、金融支援とふん尿処理に対しては、喫緊の緊急\n性のある支援のため、今回、それぞれアユミルクに対しては酪農のシンボルという観点\nからもその担保については農協の連帯保証がつくという信用性が担保されておるため、\n今回については原案どおりでいくべきものと考えております。以上です。",
+    "text_length": 856,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-292"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20241002-1-107",
+    "municipality": "shintoku",
+    "council_id": 20241002,
+    "council_name": "令和6年第2回定例会",
+    "schedule_id": 1,
+    "schedule_name": "R6tei2gijiroku.pdf",
+    "date": null,
+    "speaker": "菊地康雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "町長はじめ組合長を含め、普段から親しいお付き合いをさせていただ\nいている人たちにたいへん心苦しい思いを持ちながら、眠れない夜を過ごしてまいりま\nした。\nマスコミに支援策が出てから、電話の鳴らない日はありませんでした。それは町民が\n直接に感じていることかなというふうに受け止めながら、さまざまな方に聞き、さまざ\nまに調べてまいりました。\nまず、基本的なことから申し上げたいと思います。株式会社シントクアユミルクの設\n立目的、減りつつある酪農を下支えする酪農人材育成研修牧場ということであります。\n４つの分野を集約した会社の形態であります。筆頭に来るのが生乳生産であります。２\n番目が人材育成であります。そして、営農支援、乳牛検定というふうに続いております。\n酪農の基本と先端を強く意識し、効率、省力化、高生産性、これの地域支援型モデル\n農場として高い目的のために生乳生産基盤の維持・強化を図り、地域酪農の盤石化を目\n指すということが設立の目的であり、たいへん夢があり、地域的にも大いに貢献される\nだろう施設でありました。\nその後、コロナ禍とウクライナ戦争の後、酪農四重苦といわれる飼料費、肥料費、人\n件費、養畜肥、肉用子牛の価格下落、需要減少などが重なり、経営の環境の激変から経\n営状態の悪化はまるで数年前の高収入が夢のように感じられます。それに加えて、最先\n端技術と高生産性への偏りすぎがあったのではないかなと。それが今回の結果を招いた\nように感じられます。\n先ほどの質問にもありましたけれども、十勝バイオに対するふん尿処理、予定の倍く\nらい、十勝バイオが予定どおりの発電熱量が出ないということを聞いたときに、その原\n因は何かということをずっとしつこく聞いてまいりましたが、今回までその原因を耳に\nすることはありませんでした。\n私は商人であり、酪農経営は全くの素人でございます。従って、何人かの方に助言を\n求めました。総じて、今後の見通しは明るいものではありませんでした。最近、北大の\n大学院農学研究員がまとめた論文がありました。今年の５月の下旬にまとめた論文であ\nります。\n今後への期待として、持続的発展に向けた課題と支援との在り方を明確にすることと\nいうのが大きな目的です。そのための提言として１つ、2018年の経済状況に戻る状況は\n想定しにくい。２つ、酪農危機以前の経営モデルがより経営的に厳しい状況にあるため、\nその転換が必要である。３、経営状況に経営の現状に応じた複数のモデルを提示しなけ\nればならない。４、そして、安定的な経営を目指す、これが大きな柱です。これは要す\nるに先ほども言ったように、生産量確保という目的からの脱却というただし書きがつい\nております。そして５番目、生乳の販売先である乳業会社、そことの連携によって、持\n- 70 -\n\n続的な経営ができる支援をいただくこと。そして最後に、資金返済が経営転換の障害と\nなっている場合は、前向き資金としての借り換えとして資金支援を行う。この前向きの\n資金というところが今回の修正案の反対者と賛成者との違いということになるかもしれ\nません。\n今回、農協から説明があったときに、１つの、20年間にわたる経営計画の提示がござ\nいました。そのほかの計算をしたことがないのか、ちまたで言われる、いったんここで\n立ち止まってみてはどうかということに対する計算をしたことがないかと聞いたときに\nは、ないという判断でありました。20年間の頭数を増やして、それに向けて黒字化を図\nると。要するに大規模化を図るということが唯一の選択肢であるというのが農協の説明\nでございました。\nたぶんその説明を受けての役場の今回の支援策でありますので、提案の支援策以外に\nはたぶん考えられないのかなと思いますけれども、さまざまなプランを提示するという\nこと、これは大事なことだと思います。ほかにもありますけれども、現在、酪農家の85\nパーセントが赤字であるということもありますので、いかに持続的な経営ができるかと\nいうことを、やはり私も商人として一番大事なことかなというふうに思っております。\n今回、例えば修正案があって、１億5,000万円削られたとしても、今後とも、その削\nられたものの支援はできないということではありません。私は、１回立ち止まって、さ\nまざまな案を、時間的に急ぐということは分かりますけれども、もう一度いろいろな角\n度から見て、最終的に出てきたいろいろな案の経営計画の中で、最も町民が納得できる\n案、それは最終的には３億円かもしれません。そこまでもう少し時間をいただいて、精\n査をしていただきたい。あるいはそれを提案していただきたいということを含めて、修\n正案に賛成いたします。",
+    "text_length": 1965,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20241002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-294"
+      ]
+    }
+  }
+]

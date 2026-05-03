@@ -1,1 +1,416 @@
-[]
+[
+  {
+    "id": "higashikawa-20222004-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８． 出 席 議 員 応招議員に同じ\n９． 欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "町長松",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岡 市 郎 都市建設課長 矢ノ目 俊 之",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平 田 章 洋 生涯学習推進課長 佐々木 貴 行",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "企画総務課長佐藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "文 泰\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次長 塚原 裕美 書記 栁澤 奨一郎\n12．町長提出議案の題目\n議案第１号 専決処分の承認を求めることについて（令和４年度東川町一\n般会計補正予算（第３号））\n議案第２号 令和４年度 東川町一般会計補正予算（第４号）について\n議案第３号 萬二橋架替工事２工区請負契約について\n議案第４号 キトウシ保養施設外構工事請負契約について\n議案第５号 全世代共生型”交流×活躍×健康”プラザ外構工事請負契約\nについて\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙の通り報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 286,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "11番鶴間松彦議員、１番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鶴間 松彦",
+    "member_faction": "",
+    "text": "杉本岳大議員。\n0 【東川町議会第４回臨時会】\n○開 会",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） 皆さん、おはようございます。\n今日は、令和４年東川町議会第４回の臨時会招集させていただきまし\nた。全員の皆様方の御出席をいただきまして、誠にありがとうございま\nす。\n今回私共が、提案させていただきます案件につきましては５件という\nことで、議長の挨拶の中にもございましたけれども、一般会計の補正予\n算を始め、５件となっておりますが、どうぞよろしく御審議をいただき\nまして、全会一致で議決を賜りますようお願い申し上げます。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 240,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "鶴間松彦議員、１番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鶴間 松彦",
+    "member_faction": "",
+    "text": "杉本岳大議員を指名いたします。\n○日程第２ 会期の決定",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありません。\n市郎君）\n1 【東川町議会第４回臨時会】",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-010",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "いて御説明申し上げます。\n（佐々木貴 ＥＵジャパンフェストにつきましては、欧州諸国と日本とで活躍する\n行君） 芸術文化活動を支援する団体としまして、平成２年に設立された団体で\nございます。かねてから写真の町東川町と交流を行ってきまして、平成\n23 年１月に町に対して 239 点。時価総額 2,000 万円相当の作品の寄贈を\nいただきまして、本議会でも善行表彰の議決をいただきましたが、ＥＵ\nジャパンフェスト日本委員会に対して表彰を行ったという団体でござい\nます。かねてからＥＵジャパンフェストさんのほうから東川町の日頃の\n文化活動、芸術活動に対する取り組みについて注目していただいており\nまして、2020 年に開催になる予定でした欧州文化首都のアイルランド・\nゴールウェイで開催される音楽祭に東川町の参加の推薦をいただいたと\nいうところであります。しかしながらコロナによりまして２年間参加が\nできなかったということになりますが、今回、アイルランド国内でのコ\nロナの感染状況も落ち着いてる状況も踏まえ安全に行えるだろうという\n見込みの中で、今回参加をさせていただくということになります。以上\nです。\n6 【東川町議会第４回臨時会】",
+    "text_length": 515,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-024"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-011",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "よろしいですか。今、欧州文化首都について話しをいたしましたけれ\n市郎君） ども、欧州文化首都というのがいつできたかというと、1985 年なんです。\nＥＵに加盟している加盟国が文化、それぞれが持っている加盟国の文化\nを大切にしながらその地域を発展させていこうというようなことで 1985\n年にギリシャの当時の首相でしょうか、その方によって提案がされ、第\n１回目がアテネで開催されたと、以後毎年継続をいたしまして未来に向\nかっても加盟国２、３か国が首都宣言をして回ってるという状況であり\nます。この 1985 年という年はどんな年かといいますと、私達の町の写真\nの町宣言が行われたのが 1985 年なんです。時を同じくして欧州では欧州\n文化首都、この日本では小さな町ですけども、写真の町宣言を行ったと\nいうことであります。そして私共が 2014 年に「写真文化首都」という宣\n言をさせていただいておりますけども、この写真文化首都というのは、\n欧州文化首都にヒントを得て宣言をした、この写真文化でもって多くの\n国々、人々と交流しようではないか、そして、北海道には北海道独自の\n写真文化がある、こういうものをしっかり守っていこうというようなこ\nとで宣言をさせていただきました。\n約 10数年に渡りまして欧州文化首都とは交流が進められているという\n状況にあるわけでして、その中でこの東川で頑張っている若い人達をゴ\nールウェイの音楽祭、音楽祭といいましょうか、欧州文化首都の行事の\n中にお招きをしたいとこういうお話しで進んできたものであるというこ\nとを御理解をいただきたいと思います。",
+    "text_length": 686,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-012",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高校吹奏楽部生徒８名、そして、ＯＢ、ＯＧということで、本来開催さ\n（佐々木貴 れます 2020 年、その翌年 2021 年と吹奏楽部に各中学校、高校の吹奏楽\n行君） 部に加入しておりましたＯＢ、ＯＧが 18 名、吹奏楽部の顧問の先生４名、\n町職員６名の計 70 名になります。以上です。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-028"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-013",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "の先生、町、教育委員会とで、参加するメンバーの判定をしまして、本\n（佐々木貴 事業の趣旨を理解していただける生徒の方ということで選考し、決定し\n行君） たということになります。",
+    "text_length": 88,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-031"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-014",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回参加者につきましては、これまで吹奏楽部に加入していた人、加\n（佐々木貴 入している人というのが、先ず前提になりまして、今回の事業趣旨を御\n行君） 理解いただける生徒の方の参加ということになります。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-033"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-015",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高校の吹奏楽部で持ち込む楽器、並びにアイルランドの現地でレンタル\n（佐々木貴 する楽器などを使用するということとなってございます。\n行君）",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-036"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-016",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "教育長（杉",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えしたいと思いますが、なかなかスパッと答えられない、難しい\n山昌次君） 質問ではないかなというふうにとらえております。私達が考えなければ\nいけないのは、やはり未来と世界を見つめながら、将来子ども達が活躍\nする社会、生きていく社会でしっかり活躍していける人材を輩出してい\nく必要があると考えております。その中で、頑張っている、あるいはチ\nャンスに恵まれた子ども達をきちんと育成していくことが大切ではない\nかと思っております。スポーツであれ、文化であれ、いろんな場面で東\n川町の子ども達は頑張っています。そういった方々を応援することでそ\nこに乗っからなかった、触れなかった子ども達も、自分達も何か得意な\n分野を見つけて頑張れば、支援してもらえるんだということを意識する\nことが大切ではないかと思います。例えば、高校から大学に行くときに\n奨学金を支給していたり、あるいは、高校生の年代から、今年から始ま\nりましたけれども、公設塾でしっかり進学できるような相談を受けたり、\n進路指導したり、学力アップしたりする、そういったことの中にいろん\nな施策があると思います。生涯学習の様々な事業、例えば、わくわくプ\nレスについては、今 100 数十名登録しておりますけれども、子ども達が\n自主自立の精神をもって創造性を育む、そういった子ども達が東川町の\n例えば、小学生の２割になればですね、普段の学習の中でグループ学習\nを通じて、その得た知識だとかスキルを周りの子ども達に広げていくこ\nとができるということがあるんではないかと思います。そういったこと\nを期待しております。また、不登校等の話しがございましたけれども、\n昨年から少し不登校の児童生徒が増えている観点から、今年の５月から\n教育支援室を置いて、不登校の支援にもしっかり力を入れていこうとい\nうことで取り組んでいるところでございます。なお、不登校の１人の子\nが吹奏楽部に所属していて、今回、派遣メンバーに入っていることにな\nっておりますので申し上げます。以上です。",
+    "text_length": 854,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-038"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-017",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私共の町としては、町づくりを行っているわけでして、町づくりとい\n市郎君） うのは、町の価値をどう高めていくのかということも非常に重要なこと\nだと思います。その町の価値を高めていくものの中に教育というのがあ\nる。時代にある子ども達は何で成長するかというと学校だけで学ぶこと\nだけではないと思うんです。いかに多くの経験を積むか、その経験こそ\n9 【東川町議会第４回臨時会】\n最良の講師になり、その経験の数によって子ども達は成長していくとい\nうのは大いに考えられるんではないかと思います。ですから、今、東川\n町内にいる若者達が様々な機会を通じて経験できるような、そういう支\n援というものを私共はやっていこうと考えておりまして、スポーツの世\n界、文化の世界においても、同じでございますけれども、活躍をしてい\nる方々については、大いに経験をしていただくということが大切ではな\nいかと思っておりますので、そういった視点からも御理解をいただきた\nいと思います。特に差別をするということではなくて、頑張っているよ\nうに、頑張れるように、頑張ったらこんなことがあるんだというような\n夢を持っていただく、志を持っていただくというような視点からも、大\n切なことではないかと思っておりますので、よろしくお願いをしたいと\n思います。",
+    "text_length": 553,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-040"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222004-1-018",
+    "municipality": "higashikawa",
+    "council_id": 20222004,
+    "council_name": "令和4年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "08月05日",
+    "date": "2022-08-05",
+    "speaker": "進課長先ず今回の参加者、それぞれ",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "34 名、高校生８名につきましては、それ\n（佐々木貴 ぞれ吹奏楽部の部員の方全員の参加となります。ＯＢ、ＯＧの年齢層で\n10 【東川町議会第４回臨時会】\n行君） すけども、こちら中学校卒業して現高校生、もしくは、高校を卒業して\n現大学の１年生、ですので、高校生、大学生がＯＢ、ＯＧということに\nなります。\nもう１点、選考の方法等につきましては、基本的に吹奏楽部の顧問の\n先生が選出する判断を先ずし、それを受けて、町と教育委員会と吹奏楽\n部の先生方とをもって最終決定したということになります。以上です。",
+    "text_length": 250,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-043"
+      ]
+    }
+  }
+]

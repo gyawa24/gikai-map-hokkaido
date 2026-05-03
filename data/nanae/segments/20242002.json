@@ -1,1 +1,232 @@
-[]
+[
+  {
+    "id": "nanae-20242002-1-001",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "杉原太町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和６年第２回七飯町議会 す。\n臨時会開会にあたりまして、一言御挨拶申し上げ ○統括監（公共施設整備担当）兼都市住宅課長\nます。 （川島篤実） 川島です。よろしくお願いしま\n本日は、令和６年第２回七飯町議会臨時会を招 す。\n集申し上げましたところ、議員の皆様に御参集を ○町長（杉原 太） 次に、教育長を補佐し、連\n賜り、熱くお礼申し上げます。 携を図る必要がある事務並びに教育委員会各課及\nさて、おとといの４月１６日に松前町で桜の開 び町長部局との調整を図る必要がある事務の教育\n花宣言があり、北海道にも桜前線が上陸しまし 監として、教育監の俉楼司でございます。\nた。昨年に続き、ゴールデンウィークが始まる前 ○教育監（俉楼 司） 俉楼です。どうぞよろし\nから満開になりそうです。 くお願いいたします。\nまた、先週４月１１日から函館港に大型クルー ○町長（杉原 太） 次に、政策推進課長の笠原\nズ船の入港が始まり、それに合わせて大沼国定公 泰之でございます。\n園の遊覧船の今季営業も始まりました。大型ク ○政策推進課長（笠原泰之） 笠原です。よろし\nルーズ船の入港は、今年度、過去最多の５８回予 くお願いいたします。\n定されているということで、道南全体の観光振興 ○町長（杉原 太） 次に、健康推進課長の竹内\nに向けて期待しているところでございます。 圭介でございます。\nそして道の駅の浄化槽対策等について、時間を ○健康推進課長（竹内圭介） 竹内です。よろし\n要しておりましたが、方向性を定め、改善に向け くお願いいたします。\nて進めてまいりますので、どうぞ御理解と御協力 ○町長（杉原 太） 次に、演台左側になります\nよろしくお願い申し上げます。 が、商工労働観光課長の岩上剛でございます。\n次に、本臨時会に提出いたします議案は、専決 ○商工観光課長（岩上 剛） 岩上です。どうぞ\n処分の承認２件、令和６年度一般会計補正予算１ よろしくお願いします。\n件、委任による専決処分の報告１件の計４件でご ○町長（杉原 太） 次に、演台の右側になりま\n－ 2 －\n\nすが、土木課長の松本博和でございます。 いますが、御異議ございませんか。",
+    "text_length": 918,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-003"
+      ]
+    }
+  },
+  {
+    "id": "nanae-20242002-1-002",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "土木課長（松本博和）松本です。よろしくお（「異議なし」と呼ぶ者あり）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "願いいたします。 ○議長（木下 敏） 御異議なしと認めます。",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "nanae-20242002-1-003",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "杉原太町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次に、会計管理者兼会計課 よって、本臨時会の会期は、本日１日とするこ\n長の佐々木宏美でございます。 とに決定いたしました。",
+    "text_length": 61,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "nanae-20242002-1-004",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "佐々木宏美会計管理者兼会計課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "佐々木 ───────────────────\nです。よろしくお願いいたします。 諸 般 の 報 告",
+    "text_length": 50,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "nanae-20242002-1-005",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "杉原太町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次に、教育総務課長の磯場 ───────────────────\n嘉和でございます。 ○議長（木下 敏） この際、諸般の報告を行い",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "nanae-20242002-1-006",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "磯場嘉和教育総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "磯場です。どうぞ ます。\nよろしくお願いいたします。 地方自治法第１２１条の規定により本会議に出",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "nanae-20242002-1-007",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "杉原太町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "最後になりますが、生涯教 席を求めた説明員は、その職、氏名を印刷してお\n育課長の花巻亘でございます。 手元に配付のとおりであります。",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "nanae-20242002-1-008",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "花巻亘生涯教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "花巻です。どうぞ 次に、町政動向報告が町長より提出されており\nよろしくお願いいたします。 ますので、お手元に配付しております。",
+    "text_length": 63,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "nanae-20242002-1-009",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "杉原太町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "以上で、管理職員の紹介と 以上で、諸般の報告を終わります。\nさせていただきます。 ───────────────────\n本日の臨時議会に対しましては、御審議を十分 日程第３\nにしていただき、議決賜りますようよろしくお願 承認第１号 専決処分の承認を求めるこ\nい申し上げまして、私からの御挨拶とさせていた とについて\nだきます。どうぞよろしくお願いいたします。 ───────────────────",
+    "text_length": 200,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "nanae-20242002-1-010",
+    "municipality": "nanae",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年（2024年）4月18日（第1号）会議録",
+    "date": "2024-04-18",
+    "speaker": "岩上剛商工労働観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回、改修さ これより、討論を許します。\nせていただきます浄化槽の前処理槽については、 平松俊一議員。\n補助内容いろいろ調査させていただきまして、三 ○１０番（平松俊一） 今回の道の駅の合併浄化\nつの国の補助の存在を確認しております。 槽に関する多額の費用、この補正予算に関しまし\nその中でも制度の趣旨に該当していないだと て、反対の討論をいたしたいと思います。\nか、事業の対象となる地域に該当しない。また、 私は、道の駅の全体の計画を見直す必要がある\nそれ以外にも今回整備するというか、改修するも のではないかということを感じております。例え\nのの種別としましては、単独浄化槽から合併浄化 ば、現在の道の駅というのは、災害対応をするた\n槽に切替える際には補助対象になるのだけれど めに造ったはずなのですが、川の洪水で水没する\nも、そもそも今回の道の駅の内容につきましては という状況に陥っております。駒ヶ岳の噴火です\n合併浄化槽になっている。 とか、いろいろな災害が起きた場合に、あそこに\n－ 8 －\n\n資機材を集めるという当初の計画が満たされてい 以上でございます。\nない道の駅であります。 ○議長（木下 敏） ほか、討論ございません\nまた、広域下水道の見直し計画が道の方から推 か。\n奨されておりまして、大沼の特環下水道を函館の （「なし」と呼ぶ者あり）\n流域下水道に注いではどうかという話も出ており ○議長（木下 敏） 討論終わります。\nます。こういったことができると、合併浄化槽そ これより、起立により採決を行います。\nのものが要らなくなるという可能性も残っており 議案第２８号令和６年度七飯町一般会計補正予\nます。これは時間的には相当タイムラグがあるか 算（第１号）について、原案のとおり可決するこ\nと思うのですが、それと、せっかく施設を直すの とに賛成の議員の起立を求めます。\nであれば、例えば売り場ですとかね、そういうも （賛成者起立）\nのも見直し、今は事業者に町の方から毎年３,０ ○議長（木下 敏） 起立多数であります。\n００万円近いお金を出してやっていただいてい よって、本案は、原案のとおり可決されまし\nる。これを町の方に収益の上がるそういう体制に た。\n直していく、そういうことも検討すべきではない ───────────────────\nかなと思います。 閉 会 宣 告\n合併浄化槽の修理の補助メニュー、確かに今は ───────────────────\n間に合いません。ただし、暫定的にあと半年くら ○議長（木下 敏） 以上で、本臨時会に付議さ\nい、もしくはもう少し延ばすことによって、この れた全ての案件の審議は終了いたしました。\n補助メニューに合致するという可能性もあります よって、令和６年第２回七飯町議会臨時会を閉\nので、もう少ししっかりと見直す必要があるので 会いたします。\nはないか。もう６年近く放置をしてきた合併浄化 お疲れさまでした。\n槽の処理問題、急いでやる必要あるといえばある 午前１０時３９分 閉会\nのですが、とりあえず当面の対策を取りながら、\n将来的に道の駅のしっかりとした形を洗い直す、\nこういう必要があるということで、今回の補正予\n算に対して、反対の討論といたします。",
+    "text_length": 1363,
+    "source": {
+      "minutes_file": "data/nanae/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  }
+]

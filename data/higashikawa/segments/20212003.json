@@ -1,1 +1,302 @@
-[]
+[
+  {
+    "id": "higashikawa-20212003-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８． 出 席 議 員 応招議員に同じ\n９． 欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "町長松",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岡 市 郎 保健福祉課長 佐々木 英 樹",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平 田 章 洋 産業振興課長 菊 地 伸\n市 川 直 樹 診療所事務長 金 山 裕 之",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003",
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "杉 山 昌 次 東川スタイル課長 高 石 大 地",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "企画総務課長窪田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昭 仁\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "書記 畑山 美里 書記 栁澤 奨一郎\n12．町長提出議案の題目\n議案第１号 専決処分の承認を求めることについて（令和２年度東川町一\n般会計補正予算（第 12 号））\n議案第２号 令和３年度 東川町一般会計補正予算（第１号）について\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙のとおり報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 199,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "６番畑中雅晴議員、７番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "藤倉智恵子議員。\n0 【東川町議会第３回臨時会】\n○開 会",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） 今日は第３回の臨時会、招集させていただきましたけれども、全員の\n議員の皆様方のご出席をいただきまして、誠にありがとうございます。\n令和３年度入りまして早々の臨時会ということになりましたけれど\nも、今回の提出案件につきましては、今年１月に内閣府にあげておりま\nした地方創生推進交付金等が決定したということと、併せてコロナワク\nチンの接種にかかる補正などを行おうということでご提案をさせていた\nだく訳でございますが、全会一致で議決を賜りますようにお願いを申し\n上げます。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 264,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "畑中雅晴議員、７番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "藤倉智恵子議員を指名します。\n○日程第２ 会期の決定",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-010",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま２つの補正予算の関係で町が描く構想についてお話をしてほ\n市郎君） しいと、こういう話でございました。\n特に、今回コロナが１年余りにわたって感染をしておりますし、また、\nいつ終息するかわからないと、こういう状況になっている訳です。\nこういう中で、社会の基盤であるとか、構造であるとか、規範という\nものが変わってきております。どういうふうに変わってきているかとい\nうと、また、変わってきておりますし、変えなければいけないと思うん\nですが、一つは過密から密を避けた適疎のような、我が町のように過密\nでもない過疎でもない程よい疎のある空間への構想といいましょうか、\n基盤が変わりつつある。さらにまた、垂直の社会から水平社会というこ\nとで、東京のような高層ビルから横に長いような空間の移行といいまし\nょうか、そういうことも考えていかなきゃなりませんでしょうし、或い\nはSDGsというんでしょうか。そういう環境問題を考えるときにはコンク\nリートから木造社会への変更なんかも出てくるのではないかと思いま\nす。\nですから、こういう時代の中に、我々としてどういうことができるか\nということをしっかり考えながら、そして、それを考えて、住民の皆さ\nん方の福祉の向上にどう役立てていくかということを考えていかなけれ\nばいけないと思っております。\n農村の人口というのは間違いなくどの自治体も減っていくというよう\nな見込みというのは立っている訳でありまして、私たちだけの町が人口\nが減らないなんていうことはそう続くものではないと思っています。\nそういう中で、地域の消費を停滞させない、そういう仕組みを作るた\n7 【東川町議会第３回臨時会】\nめにはどうするかというと、やっぱり町の魅力、こんなものをしっかり\nと発信をしながら、多くの方々に来ていただく。それは関係人口、住民\nと色々な面で関わりのある関係人口を確保していくということが大変重\n要ではないかと思っています。\nまず一つは、人口対策を考えるということなんですけれども、人口対\n策を考える場合に、定住者もしっかりと確保しなきゃなりません。そし\nて、減少しないように考えていくということが非常に重要だと思います\nけれども、一方においては、ハブ機能といいましょうか。東川町の様々\nな魅力を求めて多くの方々に来ていただく。それは交流人口もあるでし\nょうし、関係人口もある。特に、住民の皆さんと様々な関係を持っても\nらって、関係人口として東川へ訪れていただく。その関係人口の方々が\n１時間でも１日でも１週間でも１カ月でも長く東川町に滞在をしていた\nだくということをまず考えていく必要があると思うんです。そのことに\nよって減少する人口をカバーする。そして、消費の減退を食い止めると\nいうことに繋がっていくのではないかと思っています。ですから、そう\nいう意味での人口対策ということ。\n今、地方創生ということが行われておりますけれども、この地方創生\nは、私はいつもお話を申し上げるんですけれども、３Genを確保して、そ\nれを循環させるということで地方創生というのは成り立っていくのでは\nないかと。\nその３Genというのは、一つは人間です。人間を確保するためにはハブ\n機能ということで移住者、定住者を確保する。そして、ハブ機能という\nことで関係人口を確保する。そういう人間が。そして、資源。様々な資\n源がありますし、文化的な資源もあるし自然的な資源もある。或いはこ\nれから我々がつくり出す資源も含めている訳ですけれども、そういった\n資源を利活用しながら、財源をどう確保するかということだと思うんで\nす。確保した財源を人間、人口、東川の住民に対してどう還元していく\nかということだと思うんです。\n高齢化がどんどん進んでくる、少子化も進んでくる。そういう中で住\n民が求めるサービスというのは大変多い訳ですけども、そういうニーズ\nに応えるためには財源がなければ応えることができないんです。\nですから、今我々がやろうとしているのは、将来に向かってどう財源\nを確保していくか、その財源確保対策でもあるというご理解をいただき\nたいと思うんです。\n適疎ワーキングということでありますが、先程お話し申し上げたよう\nに、都会から東川町へ来ていただいて、１日でも１時間でも長く滞在を\nしていただけるような、そして仕事をしていただけるような仕組みの関\n係をしっかり作っていこうということでありますし、それから、テレワ\nークの３カ所の話、家族の問題もありましたけれども、住民の皆さんが\nテレワークするということはまず考えづらい。我々は適疎な良いところ\nに住んでいる訳ですから、それをわざわざ自分の職場を放棄してそこに\n行って働くということは極めて考えづらい訳ですけれども、東川住民以\n外、住民も中にいるかもしれませんが、住民以外、周辺の方々、或いは\n都会から来る方々含めて、町中に滞在していただいて利用していただく\nと。そして、お金を東川町で使っていただくような、そういう仕組み。\n準人口的な扱いを確保していくということで、これらの事業というもの\nを展開しようとしている訳です。\nですから、先程お話を申し上げましたように、人間、資源、財源、そ\n8 【東川町議会第３回臨時会】\nして、人間という住民に対してサービスの向上を図るためにこれらの事\n業を展開するということでご理解をいただきたいと思います。",
+    "text_length": 2246,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-026"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-011",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "副町長（市",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま観光立国の関係のご質問いただきました。\n川直樹君） まず、財源の内訳の関係でございますけども、提案説明の方でもご説\n明を申し上げましたように、その他というのは株主基金の45,000千円を\n予定しているということ。それと、一般財源の45,000千円については、\n特別交付税が45,000千円ということで、基本的な町の一般財源というの\nは支出しないという考え方で計上させていただいておりまして、昨日も\nご説明しましたように、ポストコロナ、コロナ明けに向けての取り組み\nということで、令和２年度の事業として、北の残照という写真集兼映像\n兼物語を記載した写真集というものを制作しておりまして、それを新年\n度の予算の中で10カ国の言語に訳をつけて、東川の魅力、或いは大雪山\nの魅力というものを発信し、往来が再開した時に来てもらえるようなこ\nとを、現在、東川町の方で働いていただいているCIRだとか、或いは大使\n館だとかというところを通じて広くPRするための準備をしていきたいと\nいうものでございます。\nそれと併せまして、映像という部分では、説明させていただきました\n知里幸恵さんの映像化というところを踏まえた60,000千円というのも併\nせて90,000千円ということでございますが、これは先程の飯塚議員のご\n説明にもありましたように、当初は適疎ワーキングという中での展開を\n考えていた訳ですけども、実際には400,000千円の事業申請をして\n140,000千円ということの決定をいただいたものですから、その部分につ\nいては別枠で特別交付税で予算をまず確保して事業を推進させていただ\nく。併せて、６月頃に予定があります地方創生の方で新たにこの事業を\n別事業として申請させていただく予定をしておりますので、もし予算が\nつけば、特別交付税で計上した部分については執行せずに実行できると\nいうような予定をしておりますので、そういった意味でご理解をいただ\nければというふうに思います。",
+    "text_length": 837,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-028"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-012",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先程の飯塚議員の関係で、財源の話、私ちょっと忘れていたのではな\n市郎君） いかと思うんですが、当初400,000千円であげておりまして、最終的に\n140,000千円になりましたけれども、勿論、補助金の額も400,000千円か\nら140,000千円と減少になっている訳ですけども、財源負担の割合等につ\nいては何も変わってない訳で、400,000千円が140,000千円になったから\nといって一般財源を多く増やすというようなことは全くありません。\n当初から交付金、特別交付税。そして、残りはふるさと納税を充てる\nという、ひがしかわ株主の投資を充てるという予定でございましたので、\n充てる金額が減ったというだけの話でございまして、それがいわば先程\nの映画の方の観光の方に変更になったという程度でございまして、財源\n的にはなんら大きく変わるところはないということでご理解いただきた\nいと思います。",
+    "text_length": 394,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-030"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212003-1-013",
+    "municipality": "higashikawa",
+    "council_id": 20212003,
+    "council_name": "令和3年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月09日",
+    "date": "2021-04-09",
+    "speaker": "会議録署名議員藤倉",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "智恵子\n12 【東川町議会第３回臨時会】",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-037"
+      ]
+    }
+  }
+]

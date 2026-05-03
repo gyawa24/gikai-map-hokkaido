@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import { getMunicipality } from "@/lib/municipalities";
@@ -94,34 +93,32 @@ export default async function CityThemesPage({
   const { city } = await params;
   const { theme: selectedTheme = "" } = await searchParams;
 
-  const activity = getMemberActivity(city);
-  if (!activity) notFound();
-
   const members = getMembers(city);
-  const municipality = getMunicipality(city);
-  const cityName = municipality?.name ?? city;
+  const activity = getMemberActivity(city) ?? {};
 
   // Build member lookup by stripped name
-  const memberMap = new Map<string, Member>();
-  for (const m of members) {
-    memberMap.set(m.name.replace(/\s/g, ""), m);
-  }
+  const activityMap = new Map(Object.entries(activity));
 
   // Collect all themes with member counts
   const themeCount = new Map<string, number>();
-  const rows: MemberRow[] = Object.entries(activity).map(([key, act]) => {
-    const member = memberMap.get(key) ?? memberMap.get(act.name.replace(/\s/g, "")) ?? null;
+  for (const act of Object.values(activity)) {
     for (const t of act.themes ?? []) {
       themeCount.set(t, (themeCount.get(t) ?? 0) + 1);
     }
+  }
+
+  const rows: MemberRow[] = members.map((member) => {
+    const key = member.name.replace(/\s/g, "");
+    const act = activityMap.get(key);
+
     return {
-      name: act.name,
-      seat_number: member?.seat_number ?? 0,
-      faction: member?.faction ?? "",
-      photo_url: member?.photo_url,
-      session_count: act.session_count,
-      top_topics: act.top_topics ?? [],
-      themes: act.themes ?? [],
+      name: member.name,
+      seat_number: member.seat_number,
+      faction: member.faction ?? "",
+      photo_url: member.photo_url,
+      session_count: act?.session_count ?? 0,
+      top_topics: act?.top_topics ?? [],
+      themes: act?.themes ?? [],
     };
   });
 
@@ -135,7 +132,7 @@ export default async function CityThemesPage({
     selectedTheme
       ? rows.filter((r) => r.themes.includes(selectedTheme))
       : rows
-  ).sort((a, b) => b.session_count - a.session_count);
+  ).sort((a, b) => b.session_count - a.session_count || a.seat_number - b.seat_number);
 
   // For each member, pick relevant topics when a theme is selected
   // (top_topics are general; show all when no filter)

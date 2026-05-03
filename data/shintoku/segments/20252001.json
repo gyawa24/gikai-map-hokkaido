@@ -1,1 +1,233 @@
-[]
+[
+  {
+    "id": "shintoku-20252001-1-001",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "１０人議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１ 番 大 澤 一 文 議員 ３ 番 森 本 洋 子 議員\n４ 番 櫻 田 郷 史 議員 ５ 番 村 田 博 議員\n６ 番 齊 藤 芳 恵 議員 ７ 番 青 柳 茂 行 議員\n８ 番 若 杉 政 敏 議員 ９ 番 福 原 智 幸 議員\n１１番 湯 浅 真 希 議員 １２番 長 野 章 議員",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20252001-1-002",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "１人議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１０番 菊 地 康 雄 議員\n- 1 -\n\n○地方自治法第１２１条の規定により、本会議に説明のため出席した者は、次のとおり\nである。\n町 長 浜 田 正 利\n教 育 長 渡 會 崇 善\n監 査 委 員 木 村 秀 光",
+    "text_length": 108,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20252001-1-003",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "佐々木隼人議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご起立願います。黙とう始め。\n［黙とう］\n黙とうを終わります。ご着席ください。\n◎開 会 の 宣 告",
+    "text_length": 50,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-004",
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20252001-1-004",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "浜田正利町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６年12月２日、定例第４回町議会以降の行政報告をさせていただきま\nす。\n12月３日、企業版ふるさと納税をいただき、直接、会社のほうに伺いまして、お礼を\nしてきたところであります。\nほかにも、１月16日に同じように東京のほうまで行きまして、お礼をしてまいりまし\nた。\nまた、町内の企業からも多額の寄付をいただいておりまして、12月９日には岩野建設\nさま、１月29日には石丸測量社さま、それぞれに感謝を申し上げてきました。\n４ページまで飛びます。７年１月６日、宿泊税検討会議から検討の報告書をいただき\nました。本町の現状を含め、将来を見据えた内容の報告書でありました。たいへん重た\nいものを感じたところであります。\n結果、条件が整えば、報告書第９章のとおり、進めていきたいというふうに考えてお\nります。以上であります。\n［浜田正利町長 降壇］\n◎日程第３ 議案第１号 令和６年度新得町一般会計補正予算",
+    "text_length": 398,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20252001-1-005",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "佐藤博行副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号、令和６年度新得町一般会計補正予算、第７号につきま\nしてご説明を申し上げます。\n第１条、歳入歳出予算の総額に歳入歳出それぞれ１億1,116万2,000円を追加し、予算\nの総額を122億5,459万5,000円とするものでございます。\n第２条、繰越明許費の追加は、第２表、繰越明許費補正によるものでございます。\n４ページをお開き願います。\n第２表、繰越明許費補正では、物価高騰等対策支援事業ならびに物価高騰対応重点支\n援給付金事業について、完了が令和７年度中になるため、翌年度に繰り越して使用でき\nる金額の限度額を計上しております。\n９ページ、歳出をお開き願います。\n今回の補正は、食料品や燃料、電気などをはじめ、農業資材・飼料等の高騰などによ\nりその影響が大きい状況に鑑み、物価高騰への対応として、２款、総務費、物価高騰等\n対策支援事業費の各費目に予算を計上しております。\n７節、報償費では、町民１人当たりに5,000円分の商品券を配布するための予算を計\n上し、10節、需用費から12節、委託料は、関連する事務費を計上しております。\n10ページをお開き願います。\n18節、負担金、補助及び交付金では、非課税世帯への給付金および子どもへの加算給\n付を行う物価高騰対応緊急支援給付金の計上に加え、国の給付金対象外となっている子\nどもを対象に、町独自の子育て世帯特別給付金を計上しております。\nまた、農業資材等の高騰に対する支援として、農業資材等価格高騰緊急支援金支給事\n業交付金を計上し、輸送事業者への支援として、地域公共交通事業者・運送事業者臨時\n- 4 -\n\n支援金支給事業交付金を、福祉医療関係事業者への支援として、社会福祉施設等物価高\n騰対策支援金支給事業交付金をそれぞれ計上しております。\nなお、これらの事業は完了が令和７年度中になるため、繰越明許費を計上しておりま\nす。\n７ページの歳入にお戻り願います。\n15款、国庫支出金、総務費補助金では、物価高騰対策事業の財源として、物価高騰対\n応重点支援地方創生臨時交付金を増額しております。\n８ページをお開き願います。\n19款、繰入金では、今回の補正の財源調整のため、財政調整基金繰入金を増額してお\nります。\n以上で説明を終わりますが、ご審議のほど、よろしくお願いいたします。\n［佐藤博行副町長 降壇］",
+    "text_length": 982,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20252001-1-006",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "湯浅真希議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の物価高騰対策なんですけれども、いろんな事業に対してご配慮\nいただいて良かったかなと思います。\nその中でも９ページなんですけれども、報償費、こちらが全ての町民に対して商品券\nを配るという生活応援商品券発行事業でございます。令和７年６月中に郵送により交付\n予定ということで説明を受けていますけれども、あらためてこちらの使用期間のスケジ\nュールなどをお知らせいただきたいと思います。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20252001-1-007",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "小林健利産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補佐 お答えいたします。\n商品券事業のスケジュールというところでありますけれども、先日の議員協議会のほ\nうでご説明させていただいた時期につきましては、５月１日時点で住民登録をされてい\nる方というものを想定いたしまして、交付時期については６月中にということで進めて\nまいったところであります。\nその後、いち早く皆さまのもとにお届けするということが重要であるというふうに考\nえていますので、これを少し早めて、交付時期については４月中に郵送することで進め\nたいと考えております。\n使用期間につきましては、９月末までと考えております。以上です。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20252001-1-008",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "森本洋子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "森本　洋子",
+    "member_faction": "",
+    "text": "今と同じ項目のところなんですけれども、商品券5,000円ですよね。\n発送するということなんですけれども、現金は現金書留でないとできない。ただ、商品\n券に関しては、普通郵便でも発送できるということで、こういう手続きになるのかと思\nうんですけれども、何せ金額が金額になる方もいると思うんですよね。１人の人は5,00\n0円ですけれども、かける５人いる家族でしたら２万5,000円。そうすると、普通郵便で\nいきますと、そういった何というんですか、不正な使用、不正な配達、ちょっと言葉は\nあれですけれども、ちゃんと届いたかどうかという確認というのがどうなるのかなとい\nう、そこを私はちょっと心配するところでありまして、これは委託しますよね。商品券\n換金等業務委託料というところで、この業務委託はどちらのほうがされるのでしょうか。",
+    "text_length": 359,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20252001-1-009",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "小林健利産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補佐 お答えいたします。\n- 5 -\n\nまず、この商品券をお届けする方法といたしまして委託ですけれども、結論からいう\nと、郵送についてはゆうパックになるのですが、その前段の作業といたしまして、郵便\n局のロジスティクスという物流作業専門の業務を扱っている場所がありまして、ここに\n住民基本台帳のデータというのを送付すれば、商品券の印刷の発注からラベル印刷、ま\nた商品券の封入作業などを一括した業務というものを行うところがあります。\nこれにつきましては、ほかの町村でもこういう商品券をお送りする際にこういうとこ\nろを使っておりますので、そこを参考にさせていただいたところでありまして、森本議\n員がおっしゃった不正とかそういうのはない、ちゃんと確認できるような方法で進めて\nいきたいと考えております。以上です。",
+    "text_length": 352,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "shintoku-20252001-1-010",
+    "municipality": "shintoku",
+    "council_id": 20252001,
+    "council_name": "令和7年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R7rin1gijiroku.pdf",
+    "date": null,
+    "speaker": "森本洋子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "森本　洋子",
+    "member_faction": "",
+    "text": "業務委託先を考えていらっしゃるところは分かりました。\nただ、やはり商品券と言いつつも金券ですので、取り扱いには十分注意していただき\nたいなということと、あと、一人暮らしでも、施設に入居されている方とか、そういう\n方々もやはりいらっしゃると思いますし、全町民に一応配られるわけですから、その辺\nの配慮をこれからちゃんと考えていただきたいなと思っております。その辺、お願いと\nいうことになります。\nそれと、今回、このようないろんな支援を考えていただいたこと、本当にありがとう\nございました。以上です。",
+    "text_length": 248,
+    "source": {
+      "minutes_file": "data/shintoku/minutes/20252001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  }
+]

@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "id": "honbetsu-20252002-1-001",
+    "municipality": "honbetsu",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "１１名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議 長 １２番 篠 原 義 彦 副議長 １１番 高 橋 利 勝\n１番 宮 本 やよい ２番 加 藤 徹 己\n３番 丑 若 浩 行 ４番 水 谷 令 子\n５番 梅 村 智 秀 ６番 石 山 憲 司\n７番 藤 田 直 美 ８番 方 川 一 郎\n１０番 阿 保 静 夫\n─────────────────────────────────────────\n- 1 -",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/honbetsu/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "honbetsu-20252002-1-002",
+    "municipality": "honbetsu",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "─────────────────────────────────────────\n○説明のため出席した者の職氏名\n町 長 佐々木 基 裕 副 町 長 村 本 信 幸\n会 計 管 理 者 藤 野 和 幸 総 務 課 長 三 品 正 哉\n農 林 課 長 篠 原 順 彦 保 健 福 祉 課 長 長 屋 和 幸\n住 民 課 長 宮 口 淳 哉 健康・こども課長 髙 橋 紀 尊\n建 設 水 道 課 長 加 藤 勉 企 画 財 政 課 長 松 本 秀 規\n未 来 創 造 課 長 野 崎 昌 也 老 人 ホ ー ム 所 長 前 佛 清 治\n国保病院事務長 小 川 芳 幸 総 務 課 主 幹 上 原 章 司\n建設水道課主幹 小 出 勝 栄 建 設 水 道 課 主 幹 薩 田 尚 文\n健康管理センター主幹 前 佛 友 子 総 務 課 長 補 佐 石 川 雅 康\n教 育 長 高 橋 哲 也 教 育 次 長 武 田 敏 英\n社 会 教 育 課 長 田 野 美 妃 農 委 事 務 局 長 舛 舘 憲\n代 表 監 査 委 員 井 出 英 彦 選 管 事 務 局 長 三 品 正 哉\n─────────────────────────────────────────\n○職務のため議場に出席した者の職氏名\n事 務 局 長 中 川 雅 之 事 務 局 次 長 越 後 忠\n総 務 担 当 主 事 今 井 綾 香\n- 2 -\n\n開会宣告（午前１０時００分）\n───────────────────────────────────────────\n◎開会宣告",
+    "text_length": 670,
+    "source": {
+      "minutes_file": "data/honbetsu/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "honbetsu-20252002-1-003",
+    "municipality": "honbetsu",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "髙橋紀尊健康・こども課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "梅村議員の質問にお答えいたします。\nまず発生日なんですけれども、発生日につきましては令和７年３月１１日火曜日午後\n１時３０分頃ということであります。保険については、今保険の申請中でありまして、\n今回の歳入のほうには計上しておりません。\nそれと予期できなかったのかということなんですけれども、ここ数年こういう事故も\nなく、今回令和７年２月３日から４日に大雪が降りまして、その大雪が残ってそれが溶\nけたり固まったり、溶けたり固まったりということで、落雪する雪が固くて重くて、そ\nれでそれが室外機に当たり破損したということであります。以上です。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/honbetsu/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  }
+]

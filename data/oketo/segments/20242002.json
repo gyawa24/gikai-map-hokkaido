@@ -1,1 +1,117 @@
-[]
+[
+  {
+    "id": "oketo-20242002-1-001",
+    "municipality": "oketo",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時会（令和6年2月15日開催）",
+    "date": "2024-02-15",
+    "speaker": "８名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 嘉 藤 均 議員 ２番 前 田 篤 議員\n３番 石 井 伸 二 議員 ４番 石 村 吉 博 議員\n５番 柏 原 勝 議員 ６番 山 田 耕 平 議員\n７番 阿 部 光 久 議員 ８番 岩 藤 孝 一 議員",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242002-1-002",
+    "municipality": "oketo",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時会（令和6年2月15日開催）",
+    "date": "2024-02-15",
+    "speaker": "なし議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "○地方自治法第１２１条の規定により説明のため出席した者の職氏名\n《町 長 部 局》\n町 長 深 川 正 美 副 町 長 蓑 島 賢 治\n会 計 管 理 者 菅 原 嘉 仁 企画財政課長 坂 森 誠 二\n総 務 課 長 鈴 木 伸 哉 町民生活課長 田 中 耕 太\n施設整備課長 名 和 祐 一 地域福祉センター所長 石 森 実\n企画財政課長補佐 高 橋 秀 典 総務課総務係長 鈴 木 良 知\n《教育委員会部局》\n教 育 長 平 野 毅\n- 1 -\n\n《監査委員部局》\n代表監査委員 小 鷹 浩 昭\n○職務のため出席した事務局職員の職氏名\n事 務 局 長 今 西 美紀子 議 事 係 加 藤 洋 聖\n臨時事務職員 中 田 美 紀\n- 2 -\n\n開会 午前９時３０分\n◎開会宣言",
+    "text_length": 338,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242002-1-003",
+    "municipality": "oketo",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時会（令和6年2月15日開催）",
+    "date": "2024-02-15",
+    "speaker": "今西事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今期臨時会に町長から提出された議案は、次のとおりです。\n・議案第２号から議案第４号。\n今期臨時会に議案等説明のため出席を求めた者及び委任を受けて出席する者は、お手\n元に配付した名簿のとおりです。\n本日の議事日程は、お手元に配付のとおりです。\n報告を終わります。",
+    "text_length": 130,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242002-1-004",
+    "municipality": "oketo",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時会（令和6年2月15日開催）",
+    "date": "2024-02-15",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今議題となりました、議案第２号 置戸町手数料徴収条例の一部を改正\nする条例につきましては、町民生活課長よりご説明申し上げます。また、議案第４号\n工事請負変更契約の締結につきましては、総務課長より説明を申し上げます。なお、こ\nの間の各議案につきましては、担当する所管の課長がご説明申し上げます。",
+    "text_length": 148,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20242002-1-005",
+    "municipality": "oketo",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時会（令和6年2月15日開催）",
+    "date": "2024-02-15",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、総務課長から説明を過去の経過も含めて説明をさせていただきました\nが、本来的には国が大きな責任を持ってですね、被災者支援にあたることになっており\nますが、これは町民の総意ということで、金額については、各町村とも状況を見ながら\n町民の総意としてのお見舞金ということで額を決めさせていただきましたので、ご理解\nいただきたいと思います。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  }
+]

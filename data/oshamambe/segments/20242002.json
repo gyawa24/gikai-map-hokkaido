@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "id": "oshamambe-20242002-1-001",
+    "municipality": "oshamambe",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時会(令和6年2月22日) [PDFファイル／141KB]",
+    "date": "2024-02-22",
+    "speaker": "増田理恵議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "諸般の報告をいたします。\n監査委員から１２月分例月出納検査結果報告書、及び令和５年度定期監査結果報告書が提出され\nましたので、それぞれの写しを配付いたしました。\n次に、本臨時会に議案等の説明のため、あらかじめ町長及び委任を受けた説明員の出席を求めて\nおります。以上であります。",
+    "text_length": 138,
+    "source": {
+      "minutes_file": "data/oshamambe/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-003"
+      ]
+    }
+  },
+  {
+    "id": "oshamambe-20242002-1-002",
+    "municipality": "oshamambe",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時会(令和6年2月22日) [PDFファイル／141KB]",
+    "date": "2024-02-22",
+    "speaker": "佐藤久総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました、議案第１号令和５年度長万部町一般会計補正予\n算（第１１号）について、その内容をご説明いたします。\n- 3 -\n\n今回の補正額は、歳入歳出にそれぞれ６,８００万円を追加し、補正後の予算総額を７３億３,４\n５０万２,０００円とするものであります。\n内容は、補正予算書に添付しております概要により、歳出からご説明いたします。\n土木費６,８００万円の追加は、道路橋梁維持費、委託料で、降雪量の増加に伴う町道等除排雪\nに係る、道路維持管理委託であります。\n次に、歳入についてご説明いたします。繰入金６,８００万円の追加は、財政調整基金繰入金で、\n今回の補正財源を当基金から取り崩し、収支の均衡を図るものであります。この基金取崩し後の当\n基金残高見込額は、３億４,４５９万２,０００円となります。\n以上がただいま上程されました、令和５年度長万部町一般会計補正予算（第１１号）の内容であ\nります。よろしくご審議のほどお願いいたします。",
+    "text_length": 422,
+    "source": {
+      "minutes_file": "data/oshamambe/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "oshamambe-20242002-1-003",
+    "municipality": "oshamambe",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時会(令和6年2月22日) [PDFファイル／141KB]",
+    "date": "2024-02-22",
+    "speaker": "６番高森功治議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高森 功治",
+    "member_faction": "無所属",
+    "text": "おおざっぱでいいので、積算根拠をちょっとお聞きいたします。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/oshamambe/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "oshamambe-20242002-1-004",
+    "municipality": "oshamambe",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時会(令和6年2月22日) [PDFファイル／141KB]",
+    "date": "2024-02-22",
+    "speaker": "上野訓建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまのご質問でございますが、経費の算出の根拠といたしまして、例\n年の除排雪業務の実績及び本年度の実績及び今後の見込みを勘案して積算しており、今年の実績と\nいたしましては、１２月に除雪が９回出動しており、路面整正が１回。１月に除雪が１９回、路面\n整正が７回、排雪が１５回の実績があります。今後の見込みといたしまして、２月に除雪が６回、\n路面整正が４回、排雪が５回。３月に除雪が５回、路面整正が３回、排雪を５回と想定しており計\n上しております。以上でございます。",
+    "text_length": 231,
+    "source": {
+      "minutes_file": "data/oshamambe/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  }
+]

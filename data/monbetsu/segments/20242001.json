@@ -1,1 +1,140 @@
-[]
+[
+  {
+    "id": "monbetsu-20242001-1-001",
+    "municipality": "monbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第1回紋別市議会臨時会会議録（第1日） [PDF｜252.8KB]",
+    "date": null,
+    "speaker": "西田尚市保健福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、ただいま上程されました報告第１号\n専決処分の報告についてご説明申し上げます。\n本報告は、地方自治法第180条第１項の規定により、議会の議決により指定された事\n項に基づき専決処分した、議決を得た契約金額の変更について、同条第２項の規定に\nより報告させていただくものであります。\n次のページの専決処分一覧をご覧願います。\n本件は、令和５年第１回定例会議案第39号紋別高等看護学院移転建替工事のうち校\n舎棟機械設備工事について、契約議決された契約金額２億5,575万円について、換気設\n備、給水・給湯設備等工事の設計変更により、契約金額を561万円増加の２億6,136万\n円として専決し、変更契約を締結したものであります。\n以上、ご報告させていただきますので、よろしくお願い申し上げます。（降壇）\n－ 3 －",
+    "text_length": 356,
+    "source": {
+      "minutes_file": "data/monbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "monbetsu-20242001-1-002",
+    "municipality": "monbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第1回紋別市議会臨時会会議録（第1日） [PDF｜252.8KB]",
+    "date": null,
+    "speaker": "宮川良一市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました議案第１号及び議案第２号の提\n案理由をご説明申し上げます。\n初めに、議案第１号紋別市会計年度任用職員の給与及び費用弁償に関する条例等の\n一部改正についてであります。\n本案は、地方自治法の一部改正に伴い、会計年度任用職員に対する勤勉手当の支給\nが可能となったことから、所要の改正をしようとするものであります。\n次に、議案第２号紋別市税条例の一部改正についてであります。\n本案は、地方税法等の一部を改正する法律による地方税法の一部改正に伴い、一つ\nには、令和６年能登半島地震災害に係る雑損控除額等の特例の新設、二つには、個人\n市民税の特別税額控除に係る規定の新設、三つには、再生可能エネルギー発電設備に\n係る課税標準の特例措置の拡充、四つには、土地に係る固定資産税の負担調整措置の\n延長、五つには、国民健康保険税における課税限度額の引上げ及び軽減判定所得の見\n直し等を行うため、所要の改正をしようとするものであります。\n以上で提案理由のご説明を終わりますので、よろしくご審議いただきますようお願\nい申し上げます。（降壇）",
+    "text_length": 469,
+    "source": {
+      "minutes_file": "data/monbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "monbetsu-20242001-1-003",
+    "municipality": "monbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第1回紋別市議会臨時会会議録（第1日） [PDF｜252.8KB]",
+    "date": null,
+    "speaker": "阿部秀明議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "阿部 秀明",
+    "member_faction": "市政会",
+    "text": "本委員会に付託された議案\n第１号紋別市会計年度任用職員の給与及び費用弁償に関する条例等の一部改正につい\nて、議案第２号紋別市税条例の一部改正について、以上２件について、審査の結果を\nご報告いたします。\n本委員会は、慎重審査の結果、議案第１号及び議案第２号については原案可決すべ\nきものと決定いたしましたのでご報告をいたします。（降壇）",
+    "text_length": 167,
+    "source": {
+      "minutes_file": "data/monbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "monbetsu-20242001-1-004",
+    "municipality": "monbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第1回紋別市議会臨時会会議録（第1日） [PDF｜252.8KB]",
+    "date": null,
+    "speaker": "宮川良一市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました議案第３号紋別高等看護学院移\n転建替工事のうち校舎棟建築主体工事の請負契約の議決変更について、提案理由をご\n説明申し上げます。\n本案は、令和５年第１回定例会議案第37号により、北栄・大和・渡辺特定建設工事\n共同企業体と契約金額９億3,830万円で、令和５年３月23日に契約を締結しております\nが、建具工事、内装工事、仕上げユニット工事等の設計変更により1,793万の増加とな\nったことから、請負契約額の変更を求めるものであります。\n以上、提案理由の説明を終わりますので、よろしくご審議いただきますようお願い\n申し上げます。（降壇）\n－ 5 －",
+    "text_length": 282,
+    "source": {
+      "minutes_file": "data/monbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "monbetsu-20242001-1-005",
+    "municipality": "monbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第1回紋別市議会臨時会会議録（第1日） [PDF｜252.8KB]",
+    "date": null,
+    "speaker": "宮川良一市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました議案第４号紋別高等看護学院移\n転建替工事のうち校舎棟電気設備工事の請負契約の議決変更について、提案理由をご\n説明申し上げます。\n本案は、令和５年第１回定例会議案第38号により、山本電工株式会社と契約金額１\n億9,910万円で、令和５年３月23日に契約を締結しておりますが、電灯設備、構内情報\n通信網設備、防犯入退室管理設備等の設計変更により990万円の増となったことから、\n請負契約額の変更を求めるものであります。\n以上で提案理由の説明を終わりますので、よろしくご審議いただきますようお願い\n申し上げます。（降壇）",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/monbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "monbetsu-20242001-1-006",
+    "municipality": "monbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第1回紋別市議会臨時会会議録（第1日） [PDF｜252.8KB]",
+    "date": null,
+    "speaker": "宮川良一市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました議案第５号紋別市固定資産評価\n員の選任同意を求めることについての提案理由をご説明申し上げます。\n本案は、固定資産評価員でありました税務課長森野憲道の４月１日付人事異動に伴\n－ 6 －\n\nい、後任の税務課長であります山本晃男を固定資産評価員といたしたく、地方税法第\n404条第２項の規定に基づき、議会の同意を求めるものであります。\n以上、ご提案申し上げますので、ご同意くださいますようお願い申し上げます。（降\n壇）",
+    "text_length": 217,
+    "source": {
+      "minutes_file": "data/monbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  }
+]

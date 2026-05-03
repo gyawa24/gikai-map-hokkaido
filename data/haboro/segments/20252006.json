@@ -1,1 +1,209 @@
-[]
+[
+  {
+    "id": "haboro-20252006-1-001",
+    "municipality": "haboro",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第6回臨時会（令和7年5月9日）",
+    "date": "2025-05-09",
+    "speaker": "森淳町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和７年第６回羽幌町議会臨時会の招集に当たりまして、議員の\n皆様におかれましては、何かとご多忙のところご出席を賜り厚くお礼を申し上げます。\nさて、本臨時会に提案しております案件は議案として物品購入契約の締結１件、工事請\n負契約の締結１件の計２件であります。よろしくご審議賜りますようお願い申し上げまし\nて、招集の挨拶とさせていただきます。\n◎開議の宣告",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-003"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252006-1-002",
+    "municipality": "haboro",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第6回臨時会（令和7年5月9日）",
+    "date": "2025-05-09",
+    "speaker": "酒井峰高建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました議案第５６号 物品購入契約の締結\nについて、提案いたします内容とその理由をご説明申し上げます。\n地方自治法第９６条第１項第８号の規定により、次のとおり物品購入契約を締結する。\n令和７年５月９日提出、羽幌町長。\n契約の内容について申し上げます。契約の目的は、ロータリ除雪車の購入でありまして、\n契約の方法は指名競争入札、契約の金額は６，４７９万円、うち消費税額５８９万円を含\nむものでございます。\n契約の相手方は、苫前郡羽幌町栄町１１２番地３、有限会社武田車輌工業羽幌店代表取\n締役、武田弘樹であります。\n提案の理由でありますが、契約の予定価格が１，５００万円を超えるため、議会の議決\nに付すべき契約及び財産の取得又は処分に関する条例第３条の規定により議会の議決を求\nめるものでございます。\n以上、ご決定賜りたく、よろしくお願い申し上げます。",
+    "text_length": 381,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252006-1-003",
+    "municipality": "haboro",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第6回臨時会（令和7年5月9日）",
+    "date": "2025-05-09",
+    "speaker": "酒井峰高建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました議案第５７号 羽幌小学校冷房設備\n工事請負契約について、提案いたします内容とその理由をご説明申し上げます。\n地方自治法第９６条第１項第５号の規定により、次のとおり契約を締結する。\n令和７年５月９日提出、羽幌町長。\n契約の内容について申し上げます。契約の目的は、羽幌小学校冷房設備工事。\n契約の方法は、指名競争入札。\n契約金額は６，８４２万円、うち消費税額６２２万円を含むものでございます。\n契約の相手方は、マツダ・不二特定建設工事共同企業体、代表者は羽幌町南１条１丁目\n１１番地の２、有限会社マツダ興業代表取締役、梅原重雄であります。\n提案の理由でありますが、本工事契約の予定価格が５，０００万円を超えるため、議会\nの議決に付すべき契約及び財産の取得又は処分に関する条例第２条の規定により議会の議\n決を求めるものでございます。\n以上、ご決定賜りたく、よろしくお願い申し上げます。",
+    "text_length": 400,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252006-1-004",
+    "municipality": "haboro",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第6回臨時会（令和7年5月9日）",
+    "date": "2025-05-09",
+    "speaker": "阿部和也君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "阿部和也",
+    "member_faction": "",
+    "text": "それでは、もしかしたら以前の予算委員会なんかでも話があった\nかもしれないですけれども、工期です。小学校ですので、どういった、時期的に学校がな\nいときに、夏休みであったり、長期休暇のときにやるのか、その辺を教えていただきたい\nと思います。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252006-1-005",
+    "municipality": "haboro",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第6回臨時会（令和7年5月9日）",
+    "date": "2025-05-09",
+    "speaker": "酒井峰高建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えをいたします。\nこの工事につきましては、一応工期は令和８年２月末まで持ってございます。ただ、基\n本的に入札の告示をした段階で原則、夏休み期間であります７月２６日から８月２０日ま\nでの間で工事を施工するということで公表しておりますが、ただ設備の工事でございます\nので、どうしても機械の調達等に時間が要するケースもありますので、遅れることも想定\nはしているのですけれども、基本的には夏休み期間での施工と考えてございます。",
+    "text_length": 211,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252006-1-006",
+    "municipality": "haboro",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第6回臨時会（令和7年5月9日）",
+    "date": "2025-05-09",
+    "speaker": "阿部和也君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "阿部和也",
+    "member_faction": "",
+    "text": "工期については分かりました。\n今回小学校に冷房設備をするということで、今後将来的には、中学校のほうはまだだっ\nたのかなとも思いますけれども、そういった町内の小学校、中学校のほうをしっかり設備\nしていくということでよろしいのかどうかお聞きして終わりたいと思います。",
+    "text_length": 131,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252006-1-007",
+    "municipality": "haboro",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第6回臨時会（令和7年5月9日）",
+    "date": "2025-05-09",
+    "speaker": "濱野孝教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えをいたします。\n羽幌小学校以外というふうな形でお答えをしたいと思います。羽幌小学校以外につきま\nしては、昨年スポットクーラー１５台、大型送風機４台、それから保健室等へのエアコン\nを６台設置しております。また、暑さ指数計というのを必要な台数分各学校に配置してご\nざいます。また、学校管理規則を改正しまして、夏休み期間というのを２５日間から３０\n日間へというふうに延長をすることができるような格好にしております。各学校と密接に\n協議をしながらハード、ソフト両面から対策を講じて児童・生徒の、そして学校の安全と\nいうのを図ってまいります。",
+    "text_length": 269,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252006-1-008",
+    "municipality": "haboro",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第6回臨時会（令和7年5月9日）",
+    "date": "2025-05-09",
+    "speaker": "阿部和也君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "阿部和也",
+    "member_faction": "",
+    "text": "スポットクーラー等については、以前も予算を措置されて設置さ\nれています。中学校等、今回の同等の工事であったり、設備等をするという考えでいいの\nかどうかだけお聞きしたいと思います。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20252006-1-009",
+    "municipality": "haboro",
+    "council_id": 20252006,
+    "council_name": "令和7年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第6回臨時会（令和7年5月9日）",
+    "date": "2025-05-09",
+    "speaker": "濱野孝教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "羽幌中学校のほうにつきましては、今羽幌小学校と同じような\nものができるかどうかというのはまだ流動的なところでございます。",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20252006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  }
+]

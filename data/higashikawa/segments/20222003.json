@@ -1,1 +1,186 @@
-[]
+[
+  {
+    "id": "higashikawa-20222003-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20222003,
+    "council_name": "令和4年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月28日",
+    "date": "2022-04-28",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８． 出 席 議 員 応招議員に同じ\n９． 欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222003-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20222003,
+    "council_name": "令和4年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月28日",
+    "date": "2022-04-28",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平 田 章 洋 都市建設課長 矢ノ目 俊 之",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222003-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20222003,
+    "council_name": "令和4年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月28日",
+    "date": "2022-04-28",
+    "speaker": "企画総務課長佐藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "文 泰\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222003-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20222003,
+    "council_name": "令和4年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月28日",
+    "date": "2022-04-28",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次長 塚原 裕美 書記 栁澤 奨一郎\n12．町長提出議案の題目\n議案第１号 キトウシ保養施設建設工事請負契約について\n議案第２号 萬二橋架替工事１工区請負契約について\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙の通り報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222003-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20222003,
+    "council_name": "令和4年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月28日",
+    "date": "2022-04-28",
+    "speaker": "９番正満正義議員、10番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "鈴木哉美議員。\n0 【東川町議会第３回臨時会】\n○開 会",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222003-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20222003,
+    "council_name": "令和4年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月28日",
+    "date": "2022-04-28",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） 皆さん、おはようございます。\n今日は、第３回の臨時会招集させていただきましたけれども、全員の\n議員の皆様方のご出席をいただきまして、誠にありがとうございます。\n今回私共が、ご提案申し上げますのは、ただいま議長からお話しがご\nざいましたように、工事請負契約２件でありますが、全会一致で議決を\n賜りますようにお願いを申し上げ、招集の挨拶と代えさせていただきま\nす。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 211,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222003-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20222003,
+    "council_name": "令和4年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月28日",
+    "date": "2022-04-28",
+    "speaker": "正満正義議員、10番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "鈴木哉美議員を指名いたします。\n○日程第２ 会期の決定",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222003-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20222003,
+    "council_name": "令和4年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月28日",
+    "date": "2022-04-28",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありません。\n市郎君）\n1 【東川町議会第３回臨時会】",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  }
+]

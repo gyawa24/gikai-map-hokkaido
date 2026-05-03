@@ -23,16 +23,23 @@ const city = process.argv[process.argv.indexOf("--city") + 1] ?? "chitose";
 const dataDir = path.join(ROOT, "data", city);
 const siteDataDir = path.join(SITE_ROOT, "data", city);
 const enrichedDir = path.join(dataDir, "minutes", "enriched");
+const segmentsDir = path.join(dataDir, "segments");
 
 // --- メンバー読み込み ---
 const members = JSON.parse(fs.readFileSync(path.join(dataDir, "members.json"), "utf-8"));
 const memberNames = members.map((m) => m.name.replace(/\s/g, ""));
+const memberNameMap = new Map(
+  members.map((m) => [m.name.replace(/\s/g, ""), m.name])
+);
 
 // --- 名寄せ関数 ---
 function normalizeQuestioner(raw) {
   return raw
     .replace(/[　\s]/g, "")
+    .replace(/^[0-9０-９]+番/, "")
+    .replace(/^.*?[（(]([^）)]+)[）)]$/, "$1")
     .replace(/(委員|議員|議長|副議長)$/, "")
+    .replace(/(君|氏|殿)$/, "")
     .trim();
 }
 
@@ -67,10 +74,52 @@ function findMember(raw) {
   return null;
 }
 
-// --- enrichedファイルを処理 ---
-const enrichedFiles = fs.readdirSync(enrichedDir)
-  .filter((f) => f.endsWith(".json"))
-  .sort();
+function uniqueTopics(items) {
+  return Array.from(new Set(items.filter(Boolean)));
+}
+
+function extractTopicsFromText(text) {
+  const source = String(text ?? "").replace(/\s+/g, " ").trim();
+  if (!source) return [];
+
+  const topics = [];
+  const patterns = [
+    /大項目\d+[、，\s　]+([^。\n]+?について)/g,
+    /中項目\d+[、，\s　]+([^。\n]+?について)/g,
+    /([^\n。]{8,40}?について)/g,
+  ];
+
+  for (const pattern of patterns) {
+    for (const match of source.matchAll(pattern)) {
+      const topic = match[1].trim();
+      if (topic && !topics.includes(topic)) topics.push(topic);
+    }
+    if (topics.length > 0) break;
+  }
+
+  if (topics.length > 0) return topics.slice(0, 6);
+
+  const fallback = source.slice(0, 40).trim();
+  return fallback ? [fallback] : [];
+}
+
+function loadEnrichedFiles() {
+  if (!fs.existsSync(enrichedDir)) return [];
+  return fs.readdirSync(enrichedDir)
+    .filter((f) => f.endsWith(".json"))
+    .sort();
+}
+
+function loadSegmentIndexes() {
+  const indexPath = path.join(segmentsDir, "_index.json");
+  if (!fs.existsSync(indexPath)) return [];
+  try {
+    const data = JSON.parse(fs.readFileSync(indexPath, "utf-8"));
+    return Array.isArray(data) ? data : [];
+  } catch {
+    return [];
+  }
+}
 
 // activity: { [memberName]: { sessions: [...], allTopics: Set } }
 const activity = {};
@@ -78,32 +127,87 @@ for (const name of memberNames) {
   activity[name] = { sessions: [], allTopics: new Set() };
 }
 
-for (const file of enrichedFiles) {
-  const data = JSON.parse(fs.readFileSync(path.join(enrichedDir, file), "utf-8"));
-  const sessionName = data.name;
-  const sessionYear = data.name.match(/令和\s*\d+年/)?.[0] ?? "";
-  const councilId = data.council_id;
+function hasAnyActivity() {
+  return Object.values(activity).some((entry) => entry.sessions.length > 0);
+}
 
-  for (const q of (data.questioners ?? [])) {
-    const memberName = findMember(q.name);
-    if (!memberName) {
-      console.log(`  名寄せ失敗: "${q.name}" (${sessionName})`);
-      continue;
+const enrichedFiles = loadEnrichedFiles();
+if (enrichedFiles.length > 0) {
+  for (const file of enrichedFiles) {
+    const data = JSON.parse(fs.readFileSync(path.join(enrichedDir, file), "utf-8"));
+    const sessionName = data.name;
+    const sessionYear = data.name.match(/令和\s*\d+年/)?.[0] ?? "";
+    const councilId = data.council_id;
+
+    for (const q of (data.questioners ?? [])) {
+      const memberName = findMember(q.name);
+      if (!memberName) {
+        console.log(`  名寄せ失敗: "${q.name}" (${sessionName})`);
+        continue;
+      }
+      const canonicalName = memberNameMap.get(memberName) ?? memberName;
+      const allTopics = uniqueTopics([
+        ...(q.topics ?? []),
+        ...(q.ai_topics ?? []),
+      ]);
+
+      if (!activity[canonicalName]) continue;
+      activity[canonicalName].sessions.push({
+        session: sessionName,
+        year: sessionYear,
+        council_id: councilId,
+        topics: allTopics,
+      });
+      for (const t of allTopics) {
+        activity[canonicalName].allTopics.add(t);
+      }
     }
-    // topics: 直接抽出 + AI補完を合体
-    const allTopics = [
-      ...(q.topics ?? []),
-      ...(q.ai_topics ?? []),
-    ].filter(Boolean);
+  }
+}
 
-    activity[memberName].sessions.push({
-      session: sessionName,
-      year: sessionYear,
-      council_id: councilId,
-      topics: allTopics,
+if (!hasAnyActivity()) {
+  const segmentIndex = loadSegmentIndexes();
+  const sessionMap = new Map();
+
+  for (const item of segmentIndex) {
+    const councilId = item.council_id;
+    if (councilId == null) continue;
+    const fp = path.join(segmentsDir, `${councilId}.json`);
+    if (!fs.existsSync(fp)) continue;
+
+    const segments = JSON.parse(fs.readFileSync(fp, "utf-8"));
+    for (const seg of segments) {
+      if (seg.speaker_role !== "質問") continue;
+      const memberName = findMember(seg.member_name ?? seg.speaker);
+      if (!memberName) continue;
+
+      const topics = extractTopicsFromText(seg.text ?? seg.excerpt);
+      const canonicalName = memberNameMap.get(memberName) ?? memberName;
+      const sessionKey = `${canonicalName}::${councilId}`;
+      const current = sessionMap.get(sessionKey) ?? {
+        session: item.council_name ?? item.name ?? seg.council_name ?? "",
+        year: item.council_name?.match(/令和\s*\d+年/)?.[0] ?? "",
+        council_id: councilId,
+        topics: [],
+      };
+      current.topics.push(...topics);
+      sessionMap.set(sessionKey, current);
+    }
+  }
+
+  for (const [sessionKey, session] of sessionMap.entries()) {
+    const [memberName] = sessionKey.split("::");
+    const activityKey = activity[memberName] ? memberName : memberName.replace(/[\s　]/g, "");
+    if (!activity[activityKey]) continue;
+    const normalizedTopics = uniqueTopics(session.topics);
+    activity[activityKey].sessions.push({
+      session: session.session,
+      year: session.year,
+      council_id: session.council_id,
+      topics: normalizedTopics,
     });
-    for (const t of allTopics) {
-      activity[memberName].allTopics.add(t);
+    for (const topic of normalizedTopics) {
+      activity[activityKey].allTopics.add(topic);
     }
   }
 }

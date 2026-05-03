@@ -1,1 +1,186 @@
-[]
+[
+  {
+    "id": "oketo-20252007-1-001",
+    "municipality": "oketo",
+    "council_id": 20252007,
+    "council_name": "令和7年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第7回臨時会（令和7年12月24日開催）",
+    "date": "2025-12-24",
+    "speaker": "８名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 嘉 藤 均 議員 ２番 前 田 篤 議員\n３番 石 井 伸 二 議員 ４番 石 村 吉 博 議員\n５番 柏 原 勝 議員 ６番 山 田 耕 平 議員\n７番 阿 部 光 久 議員 ８番 岩 藤 孝 一 議員",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20252007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20252007-1-002",
+    "municipality": "oketo",
+    "council_id": 20252007,
+    "council_name": "令和7年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第7回臨時会（令和7年12月24日開催）",
+    "date": "2025-12-24",
+    "speaker": "なし議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "○地方自治法第１２１条の規定により説明のため出席した者の職氏名\n《町 長 部 局》\n町 長 深 川 正 美 副 町 長 蓑 島 賢 治\n会 計 管 理 者 石 森 実 企画財政課長 大 戸 基 史\n総 務 課 長 坂 森 誠 二 産業振興課長 鈴 木 伸 哉\n地域福祉センター所長 菅 原 嘉 仁 総務課長補佐 尾 崎 岳 史\n企画財政課長補佐 小 島 敦 志\n《教育委員会部局》\n教 育 長 平 野 毅\n-1-\n\n《監査委員部局》\n代表監査委員 今 西 美紀子\n○職務のため出席した事務局職員の職氏名\n事 務 局 長 岡 部 信 一 議 事 係 前 元 皇 希\n臨時事務職員 中 田 美 紀\n-2-\n\n開会 午前９時３０分\n◎開会宣言",
+    "text_length": 318,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20252007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20252007-1-003",
+    "municipality": "oketo",
+    "council_id": 20252007,
+    "council_name": "令和7年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第7回臨時会（令和7年12月24日開催）",
+    "date": "2025-12-24",
+    "speaker": "岡部事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今期臨時会に町長から提出された議案は、次のとおりです。\n・議案第５９号及び議案第６０号。\n今期臨時会に議案等説明のため出席を求めた者及び委任を受けて出席する者は、お手\n元に配付した名簿のとおりです。\n本日の議事日程は、お手元に配付のとおりです。\n報告を終わります。",
+    "text_length": 132,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20252007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20252007-1-004",
+    "municipality": "oketo",
+    "council_id": 20252007,
+    "council_name": "令和7年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第7回臨時会（令和7年12月24日開催）",
+    "date": "2025-12-24",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました、議案第５９号 令和７年度置戸町一般会計補正\n予算につきましては、企画財政課長より説明申し上げます。また、議案第６０号 財産\nの処分につきましては、総務課長より説明をいたします。",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20252007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20252007-1-005",
+    "municipality": "oketo",
+    "council_id": 20252007,
+    "council_name": "令和7年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第7回臨時会（令和7年12月24日開催）",
+    "date": "2025-12-24",
+    "speaker": "大戸企画財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の交付金の中身としましては、議員おっしゃられるとおりの部\n分も含めますけれども、食料品の物価高騰ということで、飲食店の方々の食材費、材料\n費ですか、その部分も高騰しているというところも加味しまして、それとこういう状況\nの中で飲食店も元気になっていただきたいというところも合わせての今回の対応となっ\nております。",
+    "text_length": 157,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20252007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20252007-1-006",
+    "municipality": "oketo",
+    "council_id": 20252007,
+    "council_name": "令和7年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第7回臨時会（令和7年12月24日開催）",
+    "date": "2025-12-24",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今、議員の方から広く使えるということなんですけども、こちらの方で\n十分検討した中でこの対策を打ったんですけども、まず、産業振興課長の方から後段申\nし上げましたとおり、町内で消費を喚起したいという思いもあります。そんな中でお米\n券も推奨メニューで政府の方からも提示されましたし、食料品の特別加算分ということ\nも今回示されたんですけども、その分も含めますとですね、飲食の方が商工会からお聞\nきしますと非常に厳しいと。これは、コロナ明けということもありますけども、時代の\n流れでしょうか、令和２年度のコロナ発症以来、外での外食、外食をしなくなった。そ\nれから、宴会の回数が減っていると、そんなことから経営が著しく厳しくなっている状\n況から３，０００円を配分したわけでございまして、今回のこの配分については、地方\nでその地方に合った工夫をして使ってくれということで政府の方から言われて、推奨メ\nニューというものはありますが、それ以外のものも含めてですね、検討しながら配分を\nしていきたいというふうに議論してきた経過にあります。なお、企画課長から申し上げ\nましたとおり、まだ限度額になってませんので、年明けにですね、早急に新たな対策、い\nろんな産業で厳しいところを補えるような対策を練っていきたいというふうに思ってお\nりますので、今回の補正分については、どうぞご理解をいただきたいというふうに思っ\nております。\n-8-",
+    "text_length": 606,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20252007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20252007-1-007",
+    "municipality": "oketo",
+    "council_id": 20252007,
+    "council_name": "令和7年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第7回臨時会（令和7年12月24日開催）",
+    "date": "2025-12-24",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９８％、９７．なんぼなんで利用率としては高いんですが、実際には、先程、灯\n油の時にも言いましたが、私は支援はお断りしますという人もいます。それから、入院\nして交付がされないという場合もあるかと思います。できる限りですね、３，０００円\nは町内の飲食店に使っていただきたいという制作を進めている以上、簡単に交換できま\nすよということになると、その制作がある意味、有効ではなくなってくることもありま\nすので、できる限り飲食店で３，０００円は使っていただきたいですし、それから、７，\n０００円は町内で消費していただきたいと思います。交付率のこともありますけども、町\n内でどうしてもそういう不具合がある、今回の施設入所者のように食堂にいけないよう\nなことが確定しているような方については、そういう対応を今までも取ってきましたの\nで、それについては行いますが、どれぐらいの交付率になるか、それから、私は、本当\nに飲食はしないでいりませんというような人が出てくるのかどうか含めてですね、見定\nめながら対応していきたいと思いますので、どうぞご理解いただきたいと思います。",
+    "text_length": 477,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20252007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  },
+  {
+    "id": "oketo-20252007-1-008",
+    "municipality": "oketo",
+    "council_id": 20252007,
+    "council_name": "令和7年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第7回臨時会（令和7年12月24日開催）",
+    "date": "2025-12-24",
+    "speaker": "深川町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先程、企画財政課長の方から国から交付金の限度額が示されて、その使途に\nついてこれから検討していくということなんですけども、先程も申し上げましたが、本\n当に困っているところから優先していきたい、これは物価高騰対策もありましたので、先\n程の今回の１万円については、町民の方に広く配布をして、そして合わせて町内での消\n費を喚起していきたいと。商工業者さんだとかお店屋さんにも影響が出るようにという\nことで考えました。次の対策についは庁舎内でいろんな部署からまとめておりますの\nで、新年度明けてまた議会をお願いを申し上げてですね、対策を議論いただきたいと思\nっております。",
+    "text_length": 282,
+    "source": {
+      "minutes_file": "data/oketo/minutes/20252007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-045"
+      ]
+    }
+  }
+]

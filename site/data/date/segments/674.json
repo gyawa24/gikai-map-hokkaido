@@ -1,0 +1,48 @@
+[
+  {
+    "id": "date-674-2-001",
+    "municipality": "date",
+    "council_id": 674,
+    "council_name": "令和 ７年  ５月 臨時会（第３回）",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2025-05-19",
+    "speaker": "事務局長（櫛田太郎）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "諸般の報告をいたします。\n　（報告の詳細については以下のとおりである。）\n　１　地方自治法第121条及び伊達市議会委員会条例第21条の規定による説明員は次のとおりである。\n　　　〇説明員\n　　　　（市長部局）\n　　　　　市　　　　　長　　堀　井　敬　太　　　副　　市　　長　　星　　　洋　昭\n　　　　　建　設　部　長　　三　浦　顕　多　　　建設部建設課長　　金　子　直　記\n\n　　　　（監査委員）\n　　　　　代 表 監査委員　　山　下　　　茂　　　事　務　局　長　　片　平　敬　之\n\n　２　本会議の事務に従事する職員は次のとおりである。\n　　　　　事　務　局　長　　櫛　田　太　郎　　　庶　務　課　長　　木　村　雅　和\n　　　　　総 務 議事係長　　福　士　洋　恵　　　総 務 議 事 係　　片　平　めぐみ\n　　　　　総 務 議 事 係　　髙　山　　　脩",
+    "text_length": 377,
+    "source": {
+      "minutes_file": "data/date/minutes/674.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "date-674-2-002",
+    "municipality": "date",
+    "council_id": 674,
+    "council_name": "令和 ７年  ５月 臨時会（第３回）",
+    "schedule_id": 2,
+    "schedule_name": "05月19日－01号",
+    "date": "2025-05-19",
+    "speaker": "副市長（星洋昭）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議案第１号についてご説明いたします。\n　本案件は、予定価格が2,000万円以上の財産の取得につきまして地方自治法及び議会の議決に付すべき契約及び財産の取得又は処分に関する条例の規定により議会の議決を求めるものであります。\n　今回取得する財産は、老朽化に伴い更新する除雪トラックであり、本年５月８日に指名競争入札を行った結果、ＵＤトラックス北海道株式会社室蘭支店が落札し、翌日仮契約を締結したところであります。取得する財産の概要につきましては、議案説明資料にお示ししたとおりであります。\n　以上で提案説明を終わります。よろしくご審議賜りますようお願い申し上げます。",
+    "text_length": 286,
+    "source": {
+      "minutes_file": "data/date/minutes/674.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        20
+      ]
+    }
+  }
+]

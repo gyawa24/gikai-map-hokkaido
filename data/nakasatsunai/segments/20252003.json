@@ -1,1 +1,393 @@
-[]
+[
+  {
+    "id": "nakasatsunai-20252003-1-001",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "森田匡彦村長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "提案の趣旨についてご説明申し上げます。\n本案件は、北海道内において令和１２年度に予定している保険料水準の統一化を見据え、\n段階的な税率等の見直しの必要性があること、並びに地方税法施行令の一部改正に伴い、現\n行条例の内容を調整する必要が生じたことから、国保税条例の一部改正を行うものです。\n詳細につきましては、担当課長より説明申し上げますので、よろしくご審議、ご決定くだ\nさいますようお願い申し上げ、説明を終わります。",
+    "text_length": 208,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-002",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "平山直人住民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２４号、中札内村国民健康保険税条例の一部改正をする\n- 3 -\n\n条例の制定について、補足説明をさせていただきます。\n議案資料、黒ナンバー３番、議案関係資料の１ページ、中札内村国民健康保険税条例の一\n部を改正する条例の改正概要について、により補足説明申し上げます。\nなお、３ぺージから５ページに新旧対照表がありますが、こちらは説明を省略させていた\nだきます。\n今回の改正は、全道で公平に税負担を行うために北海道が算定する保険料水準の統一化\nを見据え、段階的な保険税率等の見直しの必要性があることから税率の一部見直しを図り、\nまた、あわせて上部法改正に伴う課税限度額等の一部見直しを図る改正を行うものです。\nまず、１ページ、（１）の保険税率についてですが、令和１２年度北海道標準統一保険料\nに向けた保険料率の改正についてですが、条例第３条、第６条及び第８条の関係となります\nが、医療分の所得割１００分の４.８０を０.５アップの５.３０に、後期高齢者支援金分の所\n得割１００分の１.９５を０.１５アップの２.１０に、介護分の所得割１００分の１.０５を\n０.１５アップの１.２０に改正するものです。\nなお、均等割、平等割については、同額、据え置きとしております。\n下段の表につきましては、参考として、改正前、改正後、令和７年度に示された統一保険\n料率を比較表示しております。\n次に、２ページ、（２）は課税額を規定するもので、賦課限度額の引き上げについてです\nが、こちらは上部法の改正により改正するもので、条例第２条第２項及び第３項の関係とな\nりますが、国民健康保険税の賦課限度額について見直し、増額が図られ、現行の医療分６５\n万円が１万円アップの６６万円に、後期高齢者支援金分２４万円が２万円アップの２６万\n円に改正されたことによるものです。\nなお、介護分の１７万円につきましては、同額、据え置きとなっているところです。\n次に、下段の（３）は、国民健康保険税の減額を規定する減額措置に係る軽減判定所得の\n基準額の見直しについてですが、（２）同様に上部法の改正により改正するもので、条例第\n１５条の関係となりますが、国民健康保険税の減額措置に係る軽減判定所得の基準額につ\nいて見直し、増額が図られ、５割軽減は被保険者１人当たり１万円、２割軽減は被保険者１\n人当たり１万５，０００円がそれぞれ増加し、軽減を受けられる範囲を広げる改正となりま\nす。\nなお、７割軽減につきましては、同額、据え置きとなっているところです。\n最後に、本改正は公布の日から施行し、令和７年４月１日から適用するとともに、改正後\nの規定は令和７年度以降の国民健康保険税に適用いたします。\nまた、今回の改正内容につきましては、過日開催されました、５月１９日開催されました\n国民健康保険運営協議会において承認を得ておりますことをご報告申し上げ、補足説明を\n終わります。",
+    "text_length": 1215,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-003",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "森田匡彦村長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "提案の趣旨についてご説明申し上げます。\n本案件は、小中学校で使用する学習者用コンピュータ等の調達業務について、３月１８日\nに行った北海道公立学校情報機器整備共同調達会議による一般競争入札において落札した\n業者と売買契約を締結しようするものであります。\n詳細につきましては、教育次長より説明申し上げますので、よろしくご審議、ご決定くだ\nさいますようお願い申し上げ、説明を終わります。",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-004",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "木村優子君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村 優子",
+    "member_faction": "",
+    "text": "議案関係資料の方から、それを参考に質問させていただきます。\n当初予算の金額と単価が７，０００円ぐらい下がっているというふうに見受けられたの\nですけれども、仕様書を統一して、道で全体で買うということですので、たくさん買うから\nその分単価が下がったのかなというふうに推測できるのですけれども、例えば、内容ですね、\n今使っているタブレットと更新されるタブレットの仕様の内容というのですか、機能の内\n- 5 -\n\n容、子供たちが新しい物になっても戸惑ったりしないのかとか、何が違うか、違うところが\nあるならちょっと説明をいただきたいのと、安くなった理由を確認させてください。",
+    "text_length": 283,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-005",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "福原一斉君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原 一斉",
+    "member_faction": "",
+    "text": "先ほどの質問に関連するのですけれども、共同購入によって単価が\n下がったという説明でございましたけれども、初期設定をする費用の分がこの５万１，００\n０円の中に入っているのかどうか、というところを確認させていただきたいと思います。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-006",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "森田匡彦村長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "提案の趣旨についてご説明申し上げます。\n既定の歳入、歳出予算の総額に、それぞれ３１８万８，０００円を追加し、総額を５７億\n１，４８６万７，０００円に調整したものであります。\n詳細につきましては、担当課長より説明申し上げますので、よろしくご審議、ご決定くだ\nさいますようお願い申し上げ、説明を終わります。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-007",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "中道真也総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２６号、令和７年度一般会計補正予算の補足説明を申し\n上げます。\n黒ナンバー２番、一般会計補正予算書をご用意いただき、７ページをお開きください。\nはじめに歳出からご説明いたしますが、関連する歳入についてもあわせてご説明いたし\nますので、歳入での説明は省略をさせていただきます。\n６款農林業費、２項農業費、２目農業振興事業費、説明欄上段、農業次世代人材投資事業\n補助金２２５万円の追加は、次世代を担う農業者となることを志向する経営開始直後の新\n規就農者に対する支援資金夫婦型を交付するため、追加するもので、このたび、道の補助内\n示が示されたことから、特定財源である道の経営開始支援資金交付金を同額追加するもの\nです。\n次に、その下段、３項畜産費、３目牧場費、説明欄下段、草地支障木伐採委託９３万８，\n０００円の追加は、道営事業により整備する元更別牧区内における工種変更に伴い、牧草地\n内の雑木等の処理をするため追加をするものです。\n次に、歳入の説明になります。\n戻っていただき、６ページをご覧ください。\n下段、１９款繰越金、１項、１目繰越金、９３万８，０００円の追加は、決算認定前では\nございますが、財源として見込めることが可能ですので、財源調整をするものです。\n以上で一般会計補正予算の補足説明を終わります。",
+    "text_length": 556,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-008",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "福原一斉君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原 一斉",
+    "member_faction": "",
+    "text": "補正予算書の７ページ、牧場管理費、支障木伐採ということで説明\nがございましたけれども、この支障木の伐採に関して、詳しく内容等説明いただけないでし\nょうか。\nどの程度の本数の支障木が発生しているのか、また、どこが伐採をするのか、というとこ\nろ、合わせて説明いただければというふうに思います。",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-009",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "尾野悟里産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、私の方から支障木伐採事業の委託の概要について、\n説明をさせていただきます。\n今年度から道営事業による草地更新に着手しまして、作業につきましては６月下旬から\nを予定しているところです。\n今回、支障木の伐採を行うのは、今年度、草地更新を予定しております元更別牧区の一番\n西側の牧区になりますが、こちらの方の牧区はもともと放牧で使っていた牧区ですが、今後\n採草地として使っていく予定になっております。\n- 7 -\n\n当初の事業計画では、雑木を避け、もともと雑木というのは牛が日除けで休憩をするため\nに生えている木なのですけれども、それを避けるように草地の起伏調整を行うということ\nで計画では見込んでおりましたけれども、事業着手前の協議、設計におきまして、雑木を処\n理して、起伏調整を行った方が将来的にも利便性が向上すると判断しまして、今回雑木の処\n理を行おうというものでございます。\n積算に当たってはチェンソーでの伐採、だいたい１０人区程度を、予算に積算をさせてい\nただいているところでございます。\n具体的な本数までは数えては・・・。概ね現場で確認はしながら、伐採できる業者と打合\nせは行っておりますけれども、詳細の方までは、具体的な本数までは把握していないところ\nです。",
+    "text_length": 538,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-027"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-010",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "福原一斉君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原 一斉",
+    "member_faction": "",
+    "text": "今の説明で概ね理解をさせていただきました。\n放牧地として使っていたところを採草地にするということで、もともと生えていたもの\nが、日陰として使っていたものを伐採するという考え方でよろしかったかなというふうに\n思います。\n支障木と書いてあったので、だんだん大きくなって、邪魔になってきたのかなというもの\nであれば、事前に当初予算等に入れ込めれたのかなというふうに思いましたけれども、仕様\n変更ということでございますので理解をしました。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-028"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-011",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "戸水隆君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "戸水 隆",
+    "member_faction": "",
+    "text": "今の件で付随して質問したいと思います。\n上物をチェンソーで切るという、伐採するという説明でしたけれども、草地に更新するの\nであれば、根っこは邪魔にならないものなのか、伐根してきれいにしないのかなということ\nをお聞きたいと思います。",
+    "text_length": 115,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-030"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-012",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "尾野悟里産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の支障木伐採につきましては、この後、道営事業による草\n地更新を控えてますので、まずは上物と言いますか、上に立っている木の伐採を今回の経費、\n計上させていただいた予算で行いまして、伐根も含めた草地更新につきましては道営事業\nの中で対応する形になります。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-013",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "宮部修一君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮部 修一",
+    "member_faction": "",
+    "text": "７ページの農業次世代人材投資事業補助金ですけれども、これにつ\nきまして、たぶん第三者継承者の方への補助金かなと思うのですけれども、第三者継承者に\nついては村として、奨励金として１年目６００万円、２年目、３年目で１００万円ずつとい\nうことで、合計８００万円ほどの奨励金があったのかなと思うのですけれども、今回２２５\n万円というのは道の補助金かなと思うのですけれども、これについては先ほどの説明にも\nありましたように、１人最大１５０万円でたぶん奥さんの分が半額出て、２２５万円かなと\n思うのですけれども、この支援資金については単年度なのか、３年ぐらい継続されて出るも\nのなのか、その点について１点お伺いいたします。\nもう１点につきましては、ちょっと調べてみますと、所得制限があるということも書かれ\nているのですけれども、通常６００万円以下というようなことが謳われているのですけれ\n- 8 -\n\nども、そういった所得制限がかけられるのかどうなのか、その点について説明をお願いした\nいと思います。",
+    "text_length": 444,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-014",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "尾野悟里産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、次世代人材投資事業について説明をさせていただき\nますが、まず、この事業の期間ですけれども、基本的に最長３年間、就農してからですね。\n最長３年間支援できるというような制度となっております。\nまた、宮部議員のおっしゃるとおり、この制度につきましては前年度の世帯所得が６００\n万円以下であることという条件が付いております。今年度につきましては新規就農という\nことで、世帯の所得についても制限がそこまでかかってきてはいませんが、この後営農を行\nっていく場合には、当然この限度額というのが適用される形になっていきます。",
+    "text_length": 259,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-034"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-015",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "宮部修一君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮部 修一",
+    "member_faction": "",
+    "text": "所得の制限ですけれども、初年度はそんなに出ないだろうというこ\nとでたぶん該当とならないと思うのですけれども。\nこの新規就農者が軌道に乗せるのは大変だと思うのですけれども、他の町村では、この所\n得制限の６００万円というのをある程度取っ払ってといいましょうか、多少出ても生活面\nやら営農支援なども含めて、そういった制限を設けないで支援をしている町村もあるみた\nいですけれども、うちの村としてはやっぱりこの６００万円以下ということを基準にして\n進めていくということで理解をしてよろしいでしょうか。",
+    "text_length": 245,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-035"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-016",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "尾野悟里産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "こちらの制度につきましては、国の補助制度になりますので、\n基本的な交付要件につきましては、国の方で所得制限６００万円以下という要件を定めて\nおりますので、そこは村としてもこの制度の運用上は国の制度に則っていきたいというふ\nうに考えております。\nただ、先ほど宮部議員もお話があったとおり、村として今、単独で新規就農者に対する支\n援の助成金を、初年度６００万円、２年目、３年目に１００万円、１００万円という形で補\n助しておりますので、村としてはそちらの制度で対応していきたいというふうに考えてお\nります。",
+    "text_length": 250,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-036"
+      ]
+    }
+  },
+  {
+    "id": "nakasatsunai-20252003-1-017",
+    "municipality": "nakasatsunai",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "2025.5.30",
+    "date": null,
+    "speaker": "森田匡彦村長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議長のお許しをいただきましたので、私の出処進退について述べさ\nせていただきたいと思います。\n社会経済情勢が不透明感を増し、激しく変動する中、村政運営のバトンを託すという結論\nには至りませんでした。\n次の村長選挙に出馬をいたします。\n今回が私にとっての最後の挑戦となります。\n２期８年、行政の常識に囚われず、変革を積み重ね、様々な課題に取り組み、ふるさと中\n札内村の活路向上に寄与できたと考えております。\nそれでもなお、私に残された仕事があります。\n自立と責任の文化を組織の土壌に根付かせ、中札内村役場を日本一の組織に育て上げる\nこと、そして、まちづくりに率先垂範し、住民の頑張りに寄り添い、協働の流れを更に太く、\n強くすることです。\nこれからも成長を続け、中札内村の未来を守る。\n希望の花がこれからも、いつまでも咲き誇るための豊かな土壌を耕しきる。\n健康で文化的な優しく、穏やかな美しい村の土台をしっかりと強固なものとし、４年後に\n自信をもって託したい、そのように考えております。",
+    "text_length": 440,
+    "source": {
+      "minutes_file": "data/nakasatsunai/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-041"
+      ]
+    }
+  }
+]

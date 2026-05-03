@@ -7,7 +7,9 @@
     "furigana": "はこだてし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "sessions",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -22,7 +24,8 @@
     "furigana": "あさひかわし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -37,7 +40,8 @@
     "furigana": "むろらんし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -52,7 +56,8 @@
     "furigana": "くしろし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -67,7 +72,8 @@
     "furigana": "おびひろし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -82,7 +88,8 @@
     "furigana": "きたみし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -98,7 +105,8 @@
     "features": [
       "members",
       "minutes",
-      "election"
+      "election",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -113,7 +121,8 @@
     "furigana": "わっかないし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -128,7 +137,8 @@
     "furigana": "あしべつし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -143,7 +153,8 @@
     "furigana": "なよろし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -158,7 +169,8 @@
     "furigana": "ねむろし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -195,7 +207,8 @@
     "furigana": "のぼりべつし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -211,7 +224,8 @@
     "features": [
       "members",
       "minutes",
-      "election"
+      "election",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -226,7 +240,8 @@
     "furigana": "だてし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -241,7 +256,8 @@
     "furigana": "きたひろしまし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -256,7 +272,8 @@
     "furigana": "いしかりし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -271,7 +288,8 @@
     "furigana": "ほくとし",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -286,7 +304,8 @@
     "furigana": "ふくしまちょう",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -301,7 +320,8 @@
     "furigana": "えさしちょう",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -316,7 +336,8 @@
     "furigana": "くっちゃんちょう",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -331,7 +352,8 @@
     "furigana": "かみかわちょう",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -346,7 +368,8 @@
     "furigana": "めむろちょう",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -376,7 +399,8 @@
     "furigana": "なかがわちょう",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
@@ -392,7 +416,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "gijiroku_com",
@@ -407,7 +432,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -421,7 +447,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -435,7 +462,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -449,7 +477,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -463,7 +492,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -477,7 +507,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -491,7 +522,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -505,7 +537,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "gijiroku_com"
@@ -519,7 +552,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -533,7 +567,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -562,7 +597,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -620,7 +656,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -648,7 +685,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -676,7 +714,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -689,7 +728,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -717,7 +757,9 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "sessions",
+      "themes"
     ],
     "active": true,
     "system": "gijiroku_com",
@@ -733,7 +775,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "html_inhouse"
@@ -747,7 +790,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -775,7 +819,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -847,7 +892,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -861,7 +907,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -995,7 +1042,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1009,7 +1057,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1023,7 +1072,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1037,7 +1087,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1065,7 +1116,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1078,7 +1130,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1092,7 +1145,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "tenant_id": 167,
@@ -1122,7 +1176,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1136,7 +1191,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1149,7 +1205,9 @@
     "furigana": "ひだかちょう",
     "level": "municipality",
     "features": [
-      "minutes"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "dnp",
@@ -1164,7 +1222,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1177,7 +1236,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1250,7 +1310,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1263,7 +1324,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1277,7 +1339,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1291,7 +1354,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1349,7 +1413,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1437,7 +1502,8 @@
     "level": "municipality",
     "features": [
       "minutes",
-      "members"
+      "members",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1451,7 +1517,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1465,7 +1532,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1554,7 +1622,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1582,7 +1651,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1625,7 +1695,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1683,7 +1754,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1726,7 +1798,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "gijiroku_com"
@@ -1785,7 +1858,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1888,7 +1962,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -1961,7 +2036,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1975,7 +2051,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -1989,7 +2066,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -2003,7 +2081,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2016,7 +2095,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -2045,7 +2125,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -2059,7 +2140,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2087,7 +2169,8 @@
     "level": "municipality",
     "features": [
       "minutes",
-      "members"
+      "members",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -2266,7 +2349,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -2280,7 +2364,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2308,7 +2393,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -2322,7 +2408,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2335,7 +2422,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -2349,7 +2437,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -2363,7 +2452,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse",
@@ -2379,7 +2469,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2392,7 +2483,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "system": "pdf_inhouse"
@@ -2421,7 +2513,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2464,7 +2557,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2477,7 +2571,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2490,7 +2585,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2548,7 +2644,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true
   },
@@ -2605,7 +2702,8 @@
     "furigana": "ほっかいどう",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "prefecture",
     "active": true,

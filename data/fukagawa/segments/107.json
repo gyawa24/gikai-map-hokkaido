@@ -1,1 +1,3073 @@
-[]
+[
+  {
+    "id": "fukagawa-107-1-001",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・香川経済・地域振興部長………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "４１\n質疑・佐々木一夫君…………………… ４１\n４１\n質疑・佐々木一夫君…………………… ４２",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001",
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-002",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・藤井建設水道部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "４２\n賛成討論・佐々木一夫君…………………… ４３\n日程第１４ 議案第４９号 深川市監査委員の選任について……………………………………………… ４３\n日程第１５ 認定第 １号 令和５年度深川市一般会計歳入歳出決算認定について…………………… ４４\n認定第 ２号 令和５年度深川市介護保険特別会計歳入歳出決算認定について………… ４４\n認定第 ３号 令和５年度深川市国民健康保険特別会計歳入歳出決算認定について…… ４４\n認定第 ４号 令和５年度深川市後期高齢者医療特別会計歳入歳出決算認定について… ４４\n認定第 ５号 令和５年度深川市水道事業会計決算認定について………………………… ４４\n認定第 ６号 令和５年度深川市下水道事業会計決算認定について……………………… ４４\n認定第 ７号 令和５年度深川市病院事業会計決算認定について………………………… ４４\n日程第１６ 一般質問…………………………………………………………………………………………… ４４\n１−１．１２番・宮澤孝司君……………………… ４４",
+    "text_length": 456,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-003",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・伊藤教育部長……………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "４５\n２． 質問・宮澤孝司君……………………… ４６",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-004",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "４６\n３． 質問・宮澤孝司君……………………… ４７",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-005",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・三浦教育長………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "４８\n４． 質問・宮澤孝司君……………………… ４８",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-006",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・藤井建設水道部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "４９\n２−１．１４番・山本時雄君……………………… ４９",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-007",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５０\n２． 質問・山本時雄君……………………… ５０",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-008",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・香川経済・地域振興部長………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５１\n３． 質問・山本時雄君……………………… ５１",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-009",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・米澤市民福祉部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５１\n４． 質問・山本時雄君……………………… ５１",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-010"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-010",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５２\n５． 質問・山本時雄君……………………… ５２",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-011",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・米澤市民福祉部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５２\n３−１． ５番・松原やす子君…………………… ５３\n５３\n２． 質問・松原やす子君…………………… ５４",
+    "text_length": 55,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-012",
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-012",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５４\n３． 質問・松原やす子君…………………… ５５",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-013",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・米澤市民福祉部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５５\n４． 質問・松原やす子君…………………… ５６",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-014",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・佐藤企画総務部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "５６\n第２号（９月４日）\n日程第１ 一般質問……………………………………………………………………………………………… ６０\n４−１． ７番・大前昭代君……………………… ６０",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-015",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・米澤市民福祉部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６１\n２． 質問・大前昭代君……………………… ６２",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-016",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６３\n３． 質問・大前昭代君……………………… ６３",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-017",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・香川経済・地域振興部長………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６４\n４． 質問・大前昭代君……………………… ６５",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-018",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・佐藤企画総務部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６６\n５−１． １番・伊藤美恵子君…………………… ６６",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-020"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-019",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・宮森副市長………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６７\n２． 質問・伊藤美恵子君…………………… ６８",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-020",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "６８\n３． 質問・伊藤美恵子君…………………… ６９\n６９\n４． 質問・伊藤美恵子君…………………… ７０",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-022",
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-021",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・佐藤企画総務部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "７１\n６−１． ６番・佐々木一夫君…………………… ７２",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-024"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-022",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・米澤市民福祉部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "７２\n２． 質問・佐々木一夫君…………………… ７２\n７３\n３． 質問・佐々木一夫君…………………… ７３",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-025",
+        "1-table-026"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-023",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "７４\n再質問・佐々木一夫君…………………… ７４\n７４\n再々質問・佐々木一夫君…………………… ７５\n７５\n４． 質問・佐々木一夫君…………………… ７５\n議事進行・大前昭代君……………………… ７６\n発言取消し確認・近沢弘幸君……………………… ７６\n答弁・佐々木一夫君…………………… ７６\n発言取消し命令・近沢弘幸君……………………… ７６\n５． 質問・佐々木一夫君…………………… ７６",
+    "text_length": 197,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-027",
+        "1-table-028",
+        "1-table-029"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-024",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・佐藤企画総務部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "７６\n再質問・佐々木一夫君…………………… ７７\n７７\n６． 質問・佐々木一夫君…………………… ７７",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-030",
+        "1-table-031"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-025",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・米澤市民福祉部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "７７\n再質問・佐々木一夫君…………………… ７７\n７８\n再々質問・佐々木一夫君…………………… ７９\n７９\n７． 質問・佐々木一夫君…………………… ７９",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-032",
+        "1-table-033",
+        "1-table-034"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-026",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・高田市立病院事務部長…………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８０\n８． 質問・佐々木一夫君…………………… ８０",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-035"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-027",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・伊藤教育部長……………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８１\n再質問・佐々木一夫君…………………… ８１\n８２\n再々質問・佐々木一夫君…………………… ８２",
+    "text_length": 50,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-036",
+        "1-table-037"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-028",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・佐藤企画総務部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８２\n９． 質問・佐々木一夫君…………………… ８２",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-038"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-029",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・香川経済・地域振興部長………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８２\n再質問・佐々木一夫君…………………… ８３\n８３\n１０． 質問・佐々木一夫君…………………… ８３",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-039",
+        "1-table-040"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-030",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・高田市立病院事務部長…………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８３\n１１． 質問・佐々木一夫君…………………… ８３",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-041"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-031",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・香川経済・地域振興部長………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８３\n７−１． ８番・田畑陽美君……………………… ８４\n８５\n２． 質問・田畑陽美君……………………… ８６",
+    "text_length": 55,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-042",
+        "1-table-043"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-032",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８７\n３． 質問・田畑陽美君……………………… ８７",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-044"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-033",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・伊藤教育部長……………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８８\n４． 質問・田畑陽美君……………………… ８９",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-045"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-034",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・米澤市民福祉部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９０\n第３号（９月５日）\n日程第１ 一般質問……………………………………………………………………………………………… ９２\n８−１． ２番・新田旺君………………………… ９２",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-046"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-035",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９２\n２． 質問・新田旺君………………………… ９３",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-047"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-036",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・高田市立病院事務部長…………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９３\n３． 質問・新田旺君………………………… ９４",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-048"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-037",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・宮森副市長………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９４\n４． 質問・新田旺君………………………… ９５",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-049"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-038",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・三浦教育長………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９５\n９−２． ９番・北村薫君………………………… ９６",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-050"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-039",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・佐藤企画総務部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９６\n３． 質問・北村薫君………………………… ９７",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-051"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-040",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・田中市長…………………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９７\n４． 質問・北村薫君………………………… ９８",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-052"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-1-041",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 1,
+    "schedule_name": "09月03日-目次",
+    "date": "2024-09-03",
+    "speaker": "答弁・佐藤企画総務部長………………",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "９９\n１０−１．１１番・鶴岡恵司君……………………… ９９\n答弁・菊入農業委員会会長……………１００\n２． 質問・鶴岡恵司君………………………１０１\n答弁・米澤市民福祉部長………………１０１\n３． 質問・鶴岡恵司君………………………１０１\n答弁・宮森副市長………………………１０２\n４． 質問・鶴岡恵司君………………………１０２\n答弁・田中市長…………………………１０３\n第４号（９月１９日）\n日程第 １ 委員会報告第８号…………………………………………………………………………………１０６\n議案第３７号 市税の納期の特例に関する条例を廃止する条例について\n議案第４２号 市道の路線廃止について\n議案第４３号 市道の路線認定について\n日程第 ２ 委員会報告第９号…………………………………………………………………………………１０７\n議案第３８号 深川市地域包括支援センターの包括的支援事業の実施に関する基準を定める条例の一部を改正する条例について\n議案第３９号 深川市国民健康保険条例の一部を改正する条例について\n陳情第 ２号 物価上昇に見合う老齢基礎年金等の引き上げを求める陳情\n日程第 ３ 委員会報告第１０号………………………………………………………………………………１０８\n認定第 １号 令和５年度深川市一般会計歳入歳出決算認定について\n認定第 ２号 令和５年度深川市介護保険特別会計歳入歳出決算認定について\n認定第 ３号 令和５年度深川市国民健康保険特別会計歳入歳出決算認定について\n認定第 ４号 令和５年度深川市後期高齢者医療特別会計歳入歳出決算認定について\n認定第 ５号 令和５年度深川市水道事業会計決算認定について\n認定第 ６号 令和５年度深川市下水道事業会計決算認定について\n認定第 ７号 令和５年度深川市病院事業会計決算認定について\n反対討論・佐々木一夫君……………………１１１\n日程第 ４ 議案第５０号 令和６年度深川市一般会計補正予算（第３号）……………………………１１２\n日程第 ５ 意見案第 ８号 物価上昇に見合う老齢基礎年金等の引き上げを求める意見書…………１１３\n日程第 ６ 意見案第 ９号 国土強靱化に資する社会資本整備等に関する意見書……………………１１３\n意見案第１０号 地方財政の充実・強化を求める意見書……………………………………１１３\n意見案第１１号 女性差別撤廃条約選択議定書の批准に向けた速やかな検討を求める意見書\n……………………………………………………………………………………………………１１３\n意見案第１２号 地方議会議員の厚生年金への加入を求める意見書………………………１１３\n意見案第１３号 訪問介護報酬引き上げの再改定を早急に求める意見書…………………１１３\n日程第 ７ 閉会中の所管事務調査について…………………………………………………………………１１３",
+    "text_length": 1207,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-053"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-042",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "本多孝二議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "初めに、本定例会に付議されます事件は、市長から提出のありました議案15件、報告２件及び認定７件であります。\n 次に、監査委員から３月分、５月分及び６月分に関する例月出納検査結果報告の提出がありましたので、お手元に配付しております。\n 次に、本定例会に説明員として出席通知のありました者の職・氏名を一覧表としてお手元に配付しております。\n 次に、第３回定例会１日目の議事日程は、お手元に配付のとおりであります。\n 以上で報告を終わります。\n ──────────────────",
+    "text_length": 238,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-043",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "本多孝二議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和６年第２回市議会定例会後の６月27日以降、昨日までの議会の動静概要は、お手元に配付のとおりであります。\n 以上で議長諸般報告を終わります。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-044",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕令和６年第３回市議会定例会の開会に当たり、一般行政の報告を申し上げます。\n 初めに、７月24日の大雨等への対応及び被害状況について申し上げます。\n ７月23日から24日にかけて、前線を伴った低気圧が北海道付近を通過した影響により、７月としては日降水量が観測史上１位となる大雨となり、７月24日午前３時50分に深川市において洪水警報が発表されました。その後も雨竜川の水位は上昇し、８時40分から10時にかけて氾濫警戒情報、氾濫危険情報が発表され、11時10分に氾濫発生情報が発表されました。\n このように雨竜川の水位が避難判断水位を超え、氾濫危険水位を超えることが予想されたことから、午前９時45分に災害への確実な対応を図るため、深川市災害対策本部を設置し、10時40分に鷹泊を除く多度志地域全域へ避難指示を発令いたしました。避難所につきましては、市の指定避難所のうち、多度志小学校、幌成コミュニティセンターの２か所を開設いたしましたが、避難された方はおりませんでした。雨竜川の水位は、12時以降下降を続け、氾濫危険水位を下回ったことから、17時10分に避難所を閉鎖いたしました。\n 次に、今回の大雨に関しての被害について申し上げます。幸いにも人命や建物に関わる被害はございませんでした。一方、河川・道路等公共土木施設の被害につきましては、河川被害が22か所、道路被害が40か所、被害額は約8,280万円、農業被害につきましては、冠水などによる農作物への被害が水稲、ソバ、大豆、小麦の合計で約32ヘクタール、被害額は約107万円で、被害総額は約8,387万円を見込んでおります。\n 被災されました皆様にお見舞いを申し上げますとともに、市といたしましては、被災箇所の早期復旧に向けた対応を行ってまいります。\n 次に、深川市明るく住みよいまちづくり市民総ぐるみ運動について申し上げます。\n 交通事故や犯罪、非行のない明るく住みよい平和なまちづくりのため、社会を明るくする運動をはじめ、青少年の非行・被害防止、夏の交通安全、薬物乱用防止などの各種運動が７月に集中的に展開されることから、これらの運動の一体的取組を進めるため、７月１日に文化交流ホールみ・らいにおいて総決起大会を開催しました。\n 当日は約300人の市民の参加をいただき、社会を明るくする運動の内閣総理大臣メッセージの伝達、音江小学校の児童による決意表明、本運動に市民一丸となって取り組む旨の大会決議の採択、そして北海道警察音楽隊・カラーガード隊の演奏、演技が行われたところであります。今年もこれらの行事や取組を通じて、明るく住みよいまちづくりを推進するという本運動の趣旨が、市民に浸透するよい機会になったものと考えております。\n 次に、2024ふかがわ夏まつりについて申し上げます。\n 本市の夏の最大イベントであります2024ふかがわ夏まつりが７月27日、28日の両日、深川商工会議所を主体として組織されたふかがわ夏まつり実行委員会の主催の下、多くの関係機関・団体、企業などの協力により開催されました。\n 初日の27日は、オープニングセレモニーに引き続き、餅まきが行われ、御家族連れをはじめ、多くの皆様の御参加の下、にぎやかな祭りの幕開けとなりました。駅前通りの子供広場ではふわふわアトラクションが人気を集め、仲町通りを会場とする屋台広場では大勢の方々が多彩なメニューを楽しまれたほか、北海道警察音楽隊・カラーガード隊の演奏会、スローフードフェスタ、子ども盆踊り、市民参加型アトラクションやバンドステージライブが行われ、参加された方々の笑顔と歓声であふれ、大いににぎわったところであります。そして２日目には、石狩川河川敷において花火大会が行われ、今年も市内外から大勢の方々に御来場いただき、夜空に打ち上がる7,000発の花火を存分に楽しんでいただいたところであります。\n こうして２日間開催された今年の夏まつりは、天候も心配されましたが、多くの皆様方の御参加、御来場いただき、夏のひとときを楽しんでいただくとともに、本市の観光振興、商工振興にも大きな成果が得られたものと考えているところであります。\n 次に、石狩川クリーンアップ作戦について申し上げます。\n 石狩川の大きな恵みに感謝するため、８月７日は石狩川の日と定められております。本市におきましては、この日にちなんだ取組として石狩川クリーンアップ作戦を石狩川右岸の緑地公園で実施しております。本年は、花火大会終了後の７月31日に実施し、当日は、ふかがわ夏まつり実行委員会関係者や市民の皆さん約200人の参加をいただき、空き缶や紙くずなどを収集する清掃活動が行われました。これらの活動を通じて、本年も良好な河川環境の保全や河川の愛護意識の一層の高揚を図る上で、よい機会になったものと考えております。\n 次に、農作物の生育及び収穫の状況について申し上げます。\n 空知農業改良普及センター北空知支所の８月15日現在の農作物生育状況調査などによりますと、水稲につきましては、生育は好天に恵まれたことから平年より５日早く進んでおり、総じて順調に推移しております。小麦につきましては、高温により生育は早まり、収穫作業も順調に終了し、平年よりやや良い品質となっております。大豆、ソバにつきましては、気温が平年より高く推移したことから、生育は平年より早めに推移しております。リンゴにつきましては、開花期以降の好天により順調に生育し、果実肥大は良好に推移しております。\n ７月23日から24日にかけての大雨等により、先ほど申し上げましたように農作物の一部に冠水などの被害がありましたが、今後天候が順調に経過し、無事出来秋を迎えられますよう、関係機関・団体と連携しながら、適切な対応に努めてまいりたいと考えております。\n 以上、行政の一端を申し上げ、報告とさせていただきます。",
+    "text_length": 2437,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-045",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "三浦浩二教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕令和６年第３回市議会定例会の開会に当たり、教育行政報告を申し上げます。\n 初めに、全国学力・学習状況調査について申し上げます。\n 令和６年度全国学力・学習状況調査は、４月18日に全国の小学校６年生と中学校３年生を対象として、それぞれ国語と算数・数学の２教科が実施され、その結果が文部科学省から７月29日に公表されたところであります。\n 深川市の小学生の平均正答率につきましては、国語が67％で、全国の67.7％に比べ、0.7ポイント下回り、北海道の67％と等しくなる結果となりました。また、算数は60％で、全国の63.4％に比べ3.4ポイント、北海道の61％に比べ１ポイント、それぞれ下回る結果となりました。\n 次に、深川市の中学生の平均正答率につきましては、国語が61％で、全国の58.1％に比べ2.9ポイント、北海道の58％に比べ３ポイント、それぞれ上回りました。数学は52％で、全国の52.5％に比べ0.5ポイント下回り、北海道の51％に比べ１ポイント上回る結果となりました。\n また、同時に行われました学習状況調査では、学校の授業以外に１日当たり１時間以上学習すると回答した小学生が40.7％で、全国の54.6％に比べ13.9ポイント、中学生が41.5％で全国の64.3％に比べ、22.8ポイントそれぞれ下回る状況となっております。\n 次に、学習サポートプログラム事業について申し上げます。\n 児童生徒の確かな学力を育むため、深川市の独自事業として実施する学習サポートプログラム事業は、小学生を対象としたチャレンジ深川と小学校放課後教室、中学校放課後教室を実施しているところであります。\n 初めに、チャレンジ深川につきましては、長期休業中の望ましい生活習慣や学習習慣を身につけることを目的に、全小学校において夏季休業期間中に３日間実施し、348人、率にして51.9％の児童が参加いたしました。\n このチャレンジ深川の講師には、現職の教職員や特別支援教育支援員のほか、ボランティアとして退職教員や保護者、地域の方17人をはじめ、大学生、高校生45人の協力を得て実施いたしました。また、昨年度冬に一部の小学校で試行的に実施しました中学生のボランティア講師については、本年度から全小学校で15人が母校である小学校において参加しております。\n 次に、小学校放課後教室につきましては、全小学校の全学年を対象に、基礎的・基本的な学力の定着などを目的として、退職教員や特別支援教育支援員、保護者及び地域の方々の協力を得て６月から実施しており、８月30日現在の参加者数は274人で、参加率は40.9％となっております。\n また、中学校放課後教室は、全中学校の３年生を対象に、基礎的・基本的な学力の定着などを目的として、民間学習塾の協力を得て８月下旬から実施しており、８月30日現在の参加者数は73人で、参加率は64.6％の過去最高となっております。\n 教育委員会といたしましては、これらの学習サポートプログラム事業を継続して実施することにより、学校、家庭、地域との連携を深めながら、よりよい学習習慣の形成を図ってまいりたいと考えております。\n 次に、ホクレン・ディスタンスチャレンジについて申し上げます。\n 国際的に活躍できる陸上中長距離選手の育成・強化と開催都市の地域振興を目的とするホクレン・ディスタンスチャレンジ2024第４戦深川大会を、７月17日に本市陸上競技場において開催いたしました。本大会には、パリ2024オリンピック陸上男子3,000メートル障害日本代表の三浦龍司選手をはじめ、ニューイヤー駅伝や箱根駅伝に出場する選手など、国内の第一線で活躍する選手340人がエントリーいたしました。\n 当日は、天候にも恵まれた好条件の下、約500人の陸上競技ファンが大声援を送る中、自己ベストを更新する選手が続出したほか、観客を対象とした抽せん会を開催するなど、盛会裏に大会が終了したところであります。\n また、競技の模様は全国ニュースで報じられたほか、インターネットにおいても生中継され、その後の配信を含めますと、８月26日現在８万2,000回の閲覧をいただきましたことから、深川市のＰＲにもつながったものと考えております。\n 以上、教育行政の一端を申し上げ、報告といたします。",
+    "text_length": 1791,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-046",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕報告第３号健全化判断比率の報告について及び報告第４号資金不足比率の報告についての２件について、一括して説明申し上げます。\n 報告第３号及び報告第４号は、地方公共団体の財政の健全化に関する法律第３条第１項及び第22条第１項の規定に基づき、令和５年度決算における健全化判断比率及び資金不足比率を監査委員の意見を付して報告するものであります。\n このうち、財政健全性に関する指標となる各比率について、前年度の数値と比較して申し上げますと、健全化判断比率の中の実質赤字比率及び連結実質赤字比率は、前年度に引き続き生じなかったものであります。\n 実質公債費比率は３か年平均により算定されるものでありますが、前年度より1.0ポイント増加し15.5％になったものであり、将来負担比率は前年度より0.9ポイント増加し、122.1％になったものであります。\n 次に、資金不足比率については、今年度は水道事業会計、下水道事業会計及び病院事業会計において資金不足額が発生しておりませんので、資金不足比率はありません。\n このように指標となる比率は、一部に若干ですが上昇している指標もありますが、いずれも早期健全化基準等を下回っておりますので、引き続き健全な財政運営に努めてまいりたいと考えております。\n 以上、２件につきまして報告させていただきますので、よろしくお願い申し上げます。",
+    "text_length": 584,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-047",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第35号損害賠償の額を定めることの専決処分の承認について提案理由を申し上げます。\n 令和６年７月12日午後２時45分頃、深川市音江町字向陽436番地20地先交差点において、市職員が運転する公用車が市道須８号線を南方向に直進中、市道稲田向陽北側道線を東方向へ直進してきた相手方車両の前部と市公用車の右後部が衝突し、双方の車両が損傷する事故が発生いたしました。\n 詳細につきましては、別紙専決処分書のとおりでありますが、本件につきましては、市と相手方の賠償額を相殺し、56万1,656円を市が支払うことで相手方と協議が調いましたことから、地方自治法第179条第１項の規定に基づき、令和６年８月６日をもって専決処分を行ったものであります。\n なお、賠償金につきましては、全国市有物件災害共済会の自動車損害共済から全額支払われるものであります。\n よろしく御審議の上、承認くださいますようお願い申し上げます。",
+    "text_length": 406,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-048",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第36号深川市功労者の表彰について提案理由を申し上げます。\n 本市では、市勢の発展と市民生活の向上に特に功労のあった方を深川市功労者として毎年表彰しておりますが、今年度は公益功労者として10人及び２法人の方々を表彰することといたしたく、深川市功労者表彰条例第２条第１項の規定に基づき、議会の同意を得ようとするものであります。\n 表彰対象者の方を功労区分ごとに申し上げますと、住民自治の向上発展に貢献された遠藤晃一さん、市民の消費生活の安定向上に貢献された��橋貞子さん、地域産業の発展向上に貢献された倉本茂子さん、社会福祉の向上発展に貢献された高橋泰雄さん、地域保健医療の向上発展に貢献された三木田光さん、地域環境衛生の向上に貢献された西山育宏さん、北村幸吉さん、地域防災の推進と消防団活動に貢献された岩渕修さん、安念敏弘さん、教育の振興のため私財を寄附された廣野勝利さん、株式会社ホッコンさん、市政の振興のため私財を寄附されたコスモヘルス株式会社さんの10人及び２法人であります。\n 以上の方々を本年の市政功労者として表彰することにつきまして、よろしく御審議の上、御同意くださいますようお願い申し上げます。",
+    "text_length": 510,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-049",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第37号市税の納期の特例に関する条例を廃止する条例について提案理由を申し上げます。\n 本市においては、農業協同組合の組合員勘定から口座振替で市税を納税される方の納期について、税務システムを独自にカスタマイズし、通常の納期とは異なる11月に１年分の税額を口座振替する対応をしてまいりましたが、令和３年９月１日に地方公共団体情報システムの標準化に関する法律が施行されたことにより、７年度から税務システムを標準化するに当たり、システムを独自にカスタマイズすることができなくなるため、組合員勘定を利用されている方についても通常の納期にて対応することとし、納期の特例について定めた市税の納期の特例に関する条例を廃止しようとするものであります。\n よろしく御審議の上、議決くださいますようお願い申し上げます。",
+    "text_length": 354,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-050",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第38号深川市地域包括支援センターの包括的支援事業の実施に関する基準を定める条例の一部を改正する条例について提案理由を申し上げます。\n 本条例案は、介護保険法施行規則及び指定介護予防支援等の事業の人員及び運営並びに指定介護予防支援等に係る介護予防のための効率的な支援の方法に関する基準の一部を改正する省令が令和６年３月29日に公布され、地域包括支援センターにおける職員配置基準を柔軟化する改正が行われたことから、本市においても国と同様の基準を定めている深川市地域包括支援センターの包括的支援事業の実施に関する基準を定める条例について、同趣旨の改正を行おうとするものであります。\n 改正の内容といたしましては、現在の職員配置に係る基準を引き続き原則とした上で、深川市保健福祉施策推進協議会が必要と認める場合には、地域包括支援センターの職員の勤務延べ時間数を、当該地域包括支援センターにおいて常勤の職員が勤務すべき時間数で除することにより、当該地域包括支援センターの職員数を常勤の職員数に換算する方法により配置基準を満たすことが認められるようにするもののほか、所要の整備を行うものであります。\n よろしく御審議の上、議決くださいますようお願い申し上げます。",
+    "text_length": 532,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-035"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-051",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第39号深川市国民健康保険条例の一部を改正する条例について提案理由を申し上げます。\n 本条例案は、新型コロナウイルス感染症が５類感染症に位置づけられたことに伴い、新型コロナウイルス感染症に感染した被保険者等に係る傷病手当金の支給に対する国の財政支援が終了したことから、深川市国民健康保険条例における当該傷病手当金に係る規定を削除しようとするほか、同条例において、国民健康保険法に基づく罰則を定めておりますが、同法の改正が令和６年12月２日から施行され、現行の被保険者証の廃止に伴い、同法から引用する条文が改められることから、改正後の同法の規定と同様の規定に改めようとするものであります。\n よろしく御審議の上、議決くださいますようお願い申し上げます。",
+    "text_length": 331,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-039"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-052",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第40号北海道後期高齢者医療広域連合規約の変更について提案理由を申し上げます。\n 北海道後期高齢者医療広域連合は、75歳以上の高齢者が加入する後期高齢者医療制度について、その事務を広域的に処理するために設立され、北海道内の全ての市町村をもって組織されておりますが、行政手続における特定の個人を識別するための番号の利用等に関する法律等の一部を改正する法律が令和５年６月９日に公布され、現行の被保険者証が廃止される改正が行われることから、被保険者証の用語を使用している北海道後期高齢者医療広域連合規約の一部を変更しようとするものであります。\n 当該規約の変更につきましては、地方自治法第291条の３及び第291条の11の規定により、広域連合を構成する関係地方公共団体の協議によりこれを定め、関係地方公共団体の議会の議決を経なければならないとされておりますことから、議会の議決を得ようとするものであります。\n よろしく御審議の上、議決くださいますようお願い申し上げます。",
+    "text_length": 438,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-043"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-053",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第41号財産の譲渡について提案理由を申し上げます。\n 本市の所有する光ファイバケーブル設備及び附属設備につきましては、平成21年12月に東日本電信電話株式会社とＩＲＵ契約を締結して、各種サービスを提供してまいりましたが、令和２年、総務省により、公設光ファイバケーブル及び関連設備の民間移行に関するガイドラインが制定され、公設設備を保有する自治体は財政負担、人的負担、災害復旧における迅速な対応等を総合的に考慮の上、自治体業務の簡素化・効率化を図り、地域住民への安定的なブロードバンドサービス提供を継続するため、民間移行を促進することが望ましいとされました。\n このことを受け、本市においてもこれまで安定したサービスを提供している東日本電信電話株式会社へこれら設備を無償譲渡し、当該設備の運営を継続することが、住民に、より安定的なサービスを継続的に提供できるとともに、本市の財政的負担も軽減できると判断し、同社と設備譲渡に向けた協議を進めてまいりまして、今般、同社より譲渡を受ける方針が示されましたことから、光ファイバケーブル設備等の無償譲渡について、地方自治法第96条第１項第６号の規定に基づき、議会の議決を得ようとするものであります。\n よろしく御審議の上、議決くださいますようお願い申し上げます。",
+    "text_length": 556,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-049"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-054",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第42号市道の路線廃止について及び議案第43号市道の路線認定についての２件について、一括して提案理由を申し上げます。\n 議案第42号は、市道１路線について、当該市道の延長線上にある私道を市道に認定するに当たり、当該市道を分割する必要が生じたものであり、一旦市道を廃止するため、道路法第10条第３項の規定に基づき、議会の議決を得ようとするものであります。\n 次に、議案第43号は、議案第42号により廃止の提案をいたしました市道１路線について、起点・終点を変更して再認定するもの、またその延長線上にあった私道の生活環境の向上を図り、安全で安心な道路とするため、市道に認定するものが１路線のほか、同様に私道を市道に認定するものが２路線、さらに広里工業団地の利便性向上のため、団地内の通路を市道に認定するものが１路線であり、これら５路線について、道路法第８条第２項の規定に基づき、議会の議決を得ようとするものであります。\n よろしく御審議の上、議決くださいますようお願い申し上げます。",
+    "text_length": 444,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-055"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-055",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第44号令和６年度深川市一般会計補正予算（第２号）について説明申し上げます。\n 別冊の補正予算書を御覧ください。\n 一般会計補正予算（第２号）は、第１条で歳入歳出予算の総額にそれぞれ14億1,036万4,000円を追加し、予算の総額を202億2,655万2,000円とするものであり、第２条で債務負担行為の追加及び変更を、第３条で地方債の追加及び変更を行うものであります。\n 初めに、歳出予算について説明申し上げます。\n 16ページをお開きください。\n ２款総務費、１項６目市勢振興費、説明欄１、企業版ふるさと納税110万円は、企業版ふるさと納税のマッチングを行う仲介企業からの紹介により寄附を確保することができたため、成功報酬型の契約に基づき支払う経費を追加するものであります。\n ７目地域創造費、説明欄１、ＵＩＪターン新規就業支援事業200万円は、デジタル田園都市国家構想交付金の地方創生移住支援事業の一つとして実施するＵＩＪターン新規就業支援事業について、テレワークの要件を満たし本市へ移住した対象者より移住支援金の申請があったことから、補助金を追加するものであります。\n 14目納内時計台プラザ費、説明欄１、時計台プラザ施設維持管理37万4,000円は、納内時計台プラザ給湯室の電気温水器が故障したため、取替え修繕を行うものであります。\n 15目情報化推進費、説明欄１、ブロードバンド施設維持管理2,300万円は、次年度以降にブロードバンド施設の民間移行を予定しており、以降に生じる第三者対応上不可欠な対応に要する事務経費を負担するものであります。\n 16目協働推進費、説明欄１、協働推進15万4,000円は、大師町内会が実施する大師会館の修繕に対し、深川市地区集会施設設置補助金交付規則に基づき、対象事業費の３分の１を補助するものであります。\n 18目物価高騰対応重点支援地方創生臨時交付金事業、説明欄１、定額減税調整給付金事業1,330万円は、令和６年度市・道民税課税前の試算時より対象となる世帯が155世帯増えたことから、不足する交付金を追加するものであります。\n 18ページをお開きください。\n ２項１目税務総務費、説明欄１、税務管理1,600万円は、ふるさと納税寄附金について寄附が増加する見通しとなったことから、必要な経費を追加するものであります。\n 20ページをお開きください。\n ３款民生費、１項４目介護保険費、説明欄１、介護保険特別会計繰出金29万円は、令和５年度低所得者介護保険料軽減負担金の精算に伴い、超過交付額を国及び北海道へ返還するものであります。\n 22ページをお開きください。\n ２項１目子育て支援推進費、説明欄１、児童手当支給事業9,769万7,000円は、子ども・子育て支援法等の一部を改正する法律が令和６年６月12日に公布され、10月から児童手当制度の内容が大幅に拡充されることに伴い必要な経費を追加するもので、拡充内容としましては、所得制限及び上限撤廃に伴う特例給付の廃止、多子加算額の増額、支給対象年齢を高校生までに拡充、多子加算算定範囲の拡大であります。\n 24ページをお開きください。\n ３項１目生活保護総務費、説明欄１、生活保護適正実施推進事業66万円は、生活保護受給世帯の子供が高等学校等を卒業後に就職して自立する際、新生活立ち上げ費用として一時金を支給することとなったことから、生活保護システムの必要な改修を行うものであります。\n 26ページをお開きください。\n ４款衛生費、１項６目養育医療費支給事業、説明欄１、養育医療費支給事業58万9,000円は、令和６年度養育医療の医療費の支出が当初予算を上回ることが見込まれるため、扶助費を追加するものであります。\n ７目後期高齢者医療費、説明欄１、後期高齢者医療特別会計繰出金47万8,000円は、総合行政システムの標準化に伴い増額となる保守費用に対する繰出金であります。\n 28ページをお開きください。\n ５款労働費、１項１目労働諸費、説明欄１、育児休業取得支援事業60万円は、当初申請予定より新たに２件の申請が見込まれることから、不足する補助金を追加するものであります。\n 30ページをお開きください。\n ６款農林水産業費、１項３目農業振興費、説明欄１、畑地化促進事業9,231万3,000円は、令和６年度に畑地化に取り組む農業者に対して、畑地化に伴い地区除外決済金等を土地改良区に支払う必要が生じた場合に当該決済金等を支援するものであります。\n 説明欄２、持続的畑作生産体制確立緊急支援事業5,070万7,000円は、国が畑作物の重要品目として位置づけている種子バレイショの罹病率低減の取組、ソバの安定生産を図るため、湿害対策技術の導入及び複数年の契約取引を導入し、供給体制を構築する取組、てん菜の褐斑病発生状況調査などによる病害発生率低減のための取組を主体となり行うＪＡ北空知に対し支援するものであります。\n ５目農業後継者対策費、説明欄１、経営発展支援事業956万1,000円は、新規就農者に対し就農後の経営発展のための必要な農業用機械施設導入に係る経費を支援する事業について、北海道の補助金の交付決定を受けたため、補助金を追加するものであります。\n 32ページをお開きください。\n ２項２目林業振興費、説明欄１、地域おこし協力隊（有害鳥獣対策）68万8,000円は、地域おこし協力隊有害鳥獣支援員２人を採用することに伴い、活動費を追加するものであります。\n 34ページをお開きください。\n ７款商工費、１項２目商工振興費、説明欄１、ふるさと納税４億8,400万円は、ふるさと納税の寄附額が当初予算の５億7,000万円を上回ることから、返礼品等に係る経費等を追加するものであります。\n 説明欄２、夏冬まつり等1,100万円は、ふかがわ氷雪まつりの開催に向けた準備等に係る必要経費を計上するものであります。\n ３目観光振興費、説明欄１、オートキャンプ場維持管理360万円は、まあぶオートキャンプ場コテージＣ棟、Ｅ棟の修繕費であります。\n 説明欄２、道の駅維持管理129万8,000円は、道の駅ライスランドふかがわ２階レストランの床等の修繕費であります。\n ４目消費経済費、説明欄１、消費生活事業163万円は、消費者センターの相談員に係る人件費が不足する見込みであるため、経費を追加するものであります。\n 36ページをお開きください。\n ８款土木費、２項２目道路維持費、説明欄１、除排雪1,240万円は、市道除排雪及び雪堆積場管理委託において、予算編成以降に労務単価改定や燃料単価上昇のほか、新規路線認定等に伴う増、雪堆積場の稼働実績の増加に伴い、予算を追加するものであります。\n また、事業名は表示されておりませんが、雪寒機械整備において、車両センター建て替えの特定財源について、社会資本整備総合交付金の配分が大幅に下回ったことから、不足分について地方債を活用し、財源振替を行うものであります。\n ３目道路新設改良費につきましては、社会資本整備総合交付金事業（道路改良）において、社会資本整備総合交付金の配分が大幅に下回ったことから、不足分について地方債を活用し、財源振替を行うものであります。\n 38ページをお開きください。\n 10款教育費、１項２目事務局費、説明欄１、学校教育調査振興260万円は、令和７年度から両中学校で新制服が導入されることにより、譲受けやリユースができなくなるため、保護者負担軽減を目的に制服購入代の一部を助成するものであります。\n 40ページをお開きください。\n ５項５目文化施設費、説明欄１、文化交流ホール施設維持管理450万円は、ステージの引割幕が破損したため、取替え修繕を行うものであります。\n 説明欄２、図書館運営1,070万5,000円は、令和７年４月に契約更新する図書館システムの機器やソフトの更新作業を行うものであります。\n 42ページをお開きください。\n 11款災害復旧費、２項１目土木施設災害復旧費、説明欄１、単独事業4,280万円は、７月23日、24日の大雨により市道ののり面崩壊、路盤流出及び河川の河岸崩壊や河道内に土砂が堆積し、隣接する農地への被害拡大防止のため、災害復旧費を計上するものであります。\n 説明欄２、現年補助事業1,500万円は、７月23日から24日の豪雨災害に係る河川復旧費について、公共土木施設災害復旧事業（補助）を活用し、被災箇所の復旧工事を行うものであります。\n 44ページをお開きください。\n 13款諸支出金、１項２目財政調整基金費、説明欄１、財政調整基金積立金1,132万円は、広里工業団地内の土地売払収入について積立てするものであります。\n ４目公共施設整備基金費、説明欄１、公共施設整備基金積立金５億円は、ふるさと納税寄附金のうち返礼品等の必要経費を除いた額を公共施設整備基金に積立てするものであります。\n 次に、戻りまして４ページをお開きください。\n 第２表債務負担行為補正について説明いたします。\n 追加する拓殖大学北海道短期大学振興助成金は、拓殖大学北海道短期大学の学生確保を支援するための助成であり、令和６年度中から開始する事業であるため、深川医師会附属准看護学院振興助成は、令和６年度中に事業の周知を行うため、深川市立図書館システム利用料は、新年度当初からの業務について、本年度中に契約等を行う必要があることから、それぞれ債務負担行為を追加するものであります。\n 変更する深川市市道等除排雪業務委託ほか１件は、労務単価改定や燃料単価上昇等により不足が生じたため、債務負担行為を変更するものであります。\n 第３表地方債補正について説明いたします。\n 追加する災害復旧債については、災害復旧事業の実施に伴う追加であり、変更する道路橋梁整備事業債は、事業の財源振替に伴う変更であり、臨時財政対策債は地方債の同意予定による変更であります。また、発行限度額を合計欄のとおり22億2,593万7,000円とするものであります。\n 10ページをお開きください。\n 歳入予算について説明いたします。\n 今回の歳出の補正に係る財源といたしましては、15款国庫支出金、16款道支出金、12ページにまいりまして、17款財産収入、18款寄附金、19款繰入金、21款諸収入、22款市債により対応するものであり、不足する財源につきましては、20款繰越金7,858万2,000円により対応するものであります。\n 以上、一般会計補正予算（第２号）について説明申し上げましたが、御審議の上、原案に御賛同賜りますようよろしくお願い申し上げます。",
+    "text_length": 4412,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-059"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-056",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第45号令和６年度深川市介護保険特別会計補正予算（第２号）について説明申し上げます。\n 別冊補正予算書の１ページを御覧ください。\n 第１条で歳入歳出予算の総額に、歳入歳出それぞれ789万円を追加し、予算の総額を24億４万7,000円にしようとするものであります。\n 初めに、歳出予算について説明申し上げますので、10ページをお開きください。\n ６款１項１目償還金及び還付加算金673万6,000円の増額は、地域支援事業のうち、北空知在宅医療介護連携推進事業のほか３事業の業務委託における消費税過払い分について、国、北海道からの交付金及び北空知４町からの負担金並びに深川市一般会計からの繰出金を返還するための経費であります。\n なお、返還金の該当期間につきましては、平成30年度に遡り、返還するものであります。\n 次に、12ページをお開き願います。\n ７款１項１目予備費115万4,000円の増額は、地域支援事業での業務委託における消費税過払い分について、委託先事業者から返納いただく額の総額から、先ほど６款で説明した国、北海道等への返還金額を除く余剰額について、予備費として計上しようとするものであります。\n 次に、歳入予算について説明申し上げます。\n 戻りまして、８ページをお開きください。\n ９款３項４目雑入789万円の増額は、地域支援事業における消費税過払い分について、委託先事業者である深川市立病院ほか３事業者から、平成30年度に遡り、返納いただく返納額を計上するものであります。\n 以上が介護保険特別会計補正予算（第２号）についての説明であります。\n 次に、議案第46号令和６年度深川市後期高齢者医療特別会計補正予算（第２号）について説明申し上げます。\n 別冊の補正予算書を御覧ください。\n 深川市後期高齢者医療特別会計補正予算（第２号）は、第１条で歳入歳出予算の総額にそれぞれ47万8,000円を増額し、予算の総額を４億7,227万8,000円にするものであります。\n 初めに、歳出予算について説明申し上げます。\n 10ページをお開きください。\n １款１項１目一般管理費47万8,000円の増額は、総合行政システムの標準化に伴い保守費用が増となることから、委託料を増額するものであります。\n 次に、歳入予算について説明申し上げます。\n 戻りまして、８ページをお開きください。\n ３款繰入金47万8,000円の増額は、先ほど歳出予算で説明いたしました委託料の増額によるものであります。\n 以上、後期高齢者医療特別会計補正予算（第２号）について説明申し上げましたが、議案第45号及び議案第46号の２特別会計に係ります補正予算について御審議の上、原案に御賛同賜りますようよろしくお願い申し上げます。",
+    "text_length": 1158,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-061"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-057",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "藤井紀久也建設水道部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第47号令和６年度深川市下水道事業会計補正予算（第１号）について説明申し上げます。\n 別冊の補正予算書を御覧ください。\n 今回の補正につきましては、社会資本整備総合交付金事業に係る国庫補助金の配分額が事業必要額を大幅に下回ったことから、不足分について企業債を充当し、財源振替を行うものであります。\n 第２条では、予算第４条に定めた第１款資本的収入の総額に増減はありませんが、第１項及び第５項は変更となります。\n 第３条では、予算第６条に定めた企業債の限度額を事業費の財源内訳変更に伴い、１億200万円を増額し、５億7,290万円に改めるものであります。\n ３ページをお開きください。\n 資本的収入について説明申し上げます。\n １款１項１目企業債１億200万円の増額と５項１目国庫補助金１億200万円の減額は、事業費の国庫補助金の確定による財源内訳の振替を行おうとするものであります。\n 以上、下水道事業会計に係る補正予算について説明申し上げましたが、御審議の上、原案に御賛同賜りますよう、よろしくお願い申し上げます。",
+    "text_length": 464,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-063"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-058",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "高田光徳市立病院事務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第48号令和６年度深川市病院事業会計補正予算（第１号）について説明申し上げます。\n 別冊の補正予算書を御覧ください。\n 予算本文について申し上げます。\n 第２条では、予算第３条に定めた収益的収入及び支出について、収入の予定額を298万5,000円増額し、総額を45億9,303万5,000円に、支出の予定額を565万4,000円増額し、総額を50億5,965万8,000円に改めるものであります。\n ３ページをお開きください。\n 収益的収入及び支出の補正予算内容について説明申し上げます。\n 初めに、収入について説明申し上げます。\n １款４項２目過年度損益修正益298万5,000円の増額は、過年度に納付しております消費税について、申告に用いる委託料収入の一部を課税収入から非課税収入に修正し、消費税の更正の手続を行うことにより還付金が発生するためであります。\n 次に、支出であります。\n １款４項２目過年度損益修正損565万4,000円の増額は、先ほど議案第45号深川市介護保険特別会計補正予算で説明のありました北空知在宅医療介護連携推進事業について、委託元である市担当課から、本来非課税事業であり、その委託料に含まれる消費税相当額が過払いであることから返還を求められましたので、その該当額を補正するものであります。\n なお、消費税の還付金及び市への返還金の該当期間につきましては、平成30年度から令和５年度の６年間分であります。\n 以上、病院事業会計補正予算（第１号）について説明申し上げましたが、御審議の上、原案に御賛同賜りますようよろしくお願い申し上げます。",
+    "text_length": 689,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-065"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-059",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "香川貴敬経済・地域振興部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ふかがわ氷雪まつりに係る補正予算についてお答えいたします。\n ふかがわ氷雪まつりは、市民に雪や氷との触れ合いの中で楽しみと交流を深める場を提供し、冬でも活気あるまちづくりと商工振興、観光振興に寄与することを目的として開催する本市の冬の最大イベントでありまして、今回はふかがわ氷雪まつりの開催に係る費用1,100万円を上程させていただいたものであります。\n １点目の前年度から300万円増額となっている理由についてでありますが、氷雪まつりの準備や運営に関わる関係者などの人手が年々減少し、会場製作など、作業スケジュールに影響を及ぼしている状況であるため、今年度は会場内に設置するテントの設営・撤去を事業者に委託する予定としているほか、昨今の急激な物価高騰により資材費や燃料費、人件費などの全体的な費用がかさむことから増額となったものであります。\n 次に、２点目の開催費用や温暖化の影響によって、イベントの在り方について見直しの時期に来ているのではないかという質疑ですが、御指摘のように、温暖化の影響によりまして近年降雪時期や降雪量、気温が不安定な状況が顕著になっているため、作業の計画を立てることが難しくなっており、雪不足や融雪などによって１か月以上の準備期間を要する作業スケジュール、そして雪像制作にも大きく支障を来しているところであります。\n また、融雪による安全確保も大きな課題となっており、加えて開催費用につきましても、先ほども触れましたとおり、物価高騰の影響を大きく受け、コストが年々増加している状況にあります。\n 温暖化や開催費用に関する課題につきましては、本市だけではなく、さっぽろ雪まつりをはじめ、道内の冬のイベントに影響を及ぼしているところであり、こういったことから、議員御提言のようにイベントの在り方などについて見直しを行う時期に来ていると考えているところでありますので、本年度の氷雪まつりを開催する中で、前段申し上げた気象変動の影響、コスト、安全面の確保など、総合的な観点に立って、抜本的な見直しを含めて検討を進めてまいりたいと考えております。",
+    "text_length": 882,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-069"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-060",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "香川貴敬経済・地域振興部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "消費生活事業に係る補正予算につきまして、２点の質疑をいただきましたので順次お答えさせていただきます。\n 今回の補正予算は、深川地域消費者センターに配置している、消費生活相談員に係る人件費及び通勤費の増額に伴う補正予算であります。\n 初めに、相談員の交代内容ですが、消費生活相談は２人体制で相談業務を行ってきておりますが、令和５年度中に、残念ながら２人とも退職されましたことから、今年度新たに２人の相談員を採用したところであります。現在の相談員につきましては、１人は消費生活コンサルタントの資格を有しており、もう１人は資格取得に向けて意欲的に研修などを受講しているところであります。\n 次に、報酬増の理由についてですが、昨年度、相談員から退職の相談を受けまして、新たな相談員を採用すべく公募を開始いたしましたが、なかなか応募がなかったことから報酬を見直し、公募を続けた結果、２人の相談員の採用に至ったものでありまして、報酬見直しに伴う人件費の不足分については本年度の当初予算に計上できなかったことから、人事院勧告によるベースアップ分も含め、今回補正予算として上程させていただいたものであります。\n 次に、旅費に関しては、相談員の通勤費でありまして、１人の相談員においては、現在旭川市から通勤しており、市内に居住する意向ではあるものの、年度内の転居は難しい状況のため、今回通勤費の不足分を計上したものであります。また、通勤費の実績については、北空知管内以外からの通勤ケースは今回が初めてとなっております。なお、今回の補正額については、そのほとんどを国の消費者行政強化補助金により対応するものであります。",
+    "text_length": 699,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-072"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-061",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "藤井紀久也建設水道部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "道路維持費及び道路新設改良費について質疑をいただきましたので、順次お答えいたします。\n まず、財源振替についてでありますが、補正予算の説明にもありましたように雪寒機械設備及び社会資本整備総合交付金事業（道路改良）に対する交付金の配分が今回大幅に下回ったことから、その不足分について過疎債を活用し、財源振替を行うものであります。\n 次に、財源振替による市の負担増は幾らかについてでありますが、今回、交付金が減額となり過疎債が増額となりますので、過疎債の交付税措置が70％を考慮しますと、残り30％が市の負担となるもので、地方債の補正額２億1,510万円の30％に当たる6,453万円が負担増となるものでございます。\n 次に、今回のような財源振替は初めてかについては、議員も御承知のとおり、交付金要望に対して必要額が十分に配分されないことにより、事業の財源振替は少なからず生じるものでございますが、今回のような額での財源振替はこれまでなかったものと認識しております。\n しかし、今回補正予算に計上しました雪寒機械設備につきましては、旧倉庫が既に取り壊されており、昨年度のシーズンにおいては除雪機等が野ざらしの状態で保管を余儀なくされるなど、高額な雪寒機械の長寿命化、またメンテナンスの観点からも、今年度は何としても降雪前までに早急に倉庫が必要ということで、今回やむを得ず交付金の不足額を過疎債に財源を振り替え、対応させていただくものでございます。\n 最後に、市長の陳情等の対応につきましては、空知地方総合開発期成会、北海道市長会などを通じまして、道内選出国会議員はもとより、国土交通省、農林水産省、財務省、北海道に対し関係する市町村長が一丸となり、毎年合同要望として予算確保に向けた要請活動を行っております。",
+    "text_length": 752,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-079"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-062",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第49号深川市監査委員の選任について提案理由を申し上げます。\n 本市の監査委員のうち、識見を有する者から選任しております金山泰明さんは、令和６年９月19日をもって任期が満了となりますが、後任の委員として再び同氏を選任することについて、地方自治法第196条第１項の規定に基づき、議会の同意を求めるものであります。\n 金山泰明さんの生年月日、住所につきましては、お手元の議案書に記載のとおりでありますが、平成28年９月から監査委員としてその職務に専念し、公正で効率的な行政運営の確保に貢献され、人格高潔にして識見豊かであり、監査委員として適任と考えますので、よろしく御同意くださいますようお願い申し上げます。",
+    "text_length": 308,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-093"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-063",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕認定第１号令和５年度深川市一般会計歳入歳出決算認定についてないし認定第７号令和５年度深川市病院事業会計決算認定については、地方自治法第233条第３項の規定及び地方公営企業法第30条第４項の規定に基づき、それぞれ議会の認定を得ようとするものであります。\n よろしく御審議の上、認定くださいますようお願い申し上げます。",
+    "text_length": 161,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-099"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-064",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "本多孝二議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほど決算審査特別委員会が開催され、正副委員長互選の結果、委員長に伊藤委員、副委員長に宮澤委員が当選されました。\n 以上で報告を終わります。\n ──────────────────",
+    "text_length": 90,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-106"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-065",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "伊藤正志教育部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "総合運動公園の整備について２点の質問をいただきましたので、順次お答えいたします。\n １点目の体育館前通路の整備についてでございますが、総合体育館前通路につきましては、平板ブロックを組み合せてデザイン性を持たせた形で敷設されており、整備から35年以上が経過した現在、宮澤議員の御指摘にありますとおり、経年劣化や除排雪作業等により表面が崩れ、凸凹が目立ってきている状況にあります。\n 傷みが進み、歩行者の通行に支障が生じるおそれがある場合は、指定管理者がアスファルトやセメントなどで塞いで応急処置したり、企業による地域貢献事業により同様の措置を施していただくなどにより、今までのところ大きな事故なく使用いただいているところでございます。\n 通路を構成する平板ブロックは、既に当初のデザインと同様の資材はないことや代替資材の価格も高騰している現状からも、全面改修には多額の費用を要すると想定されますことから、抜本的な改修には至っていない状況でございますが、今後も総合運動公園利用者、歩行者の安全面に配慮し、通行に支障のないような維持管理に努めてまいりたいと考えているところでございます。\n 続きまして、２点目の陸上競技場周辺のトレーニング走路整備についてでございますが、陸上競技場周辺でのサブトラックの整備につきましては、これまでも陸上競技関係団体の方から要望をいただいているところでございます。\n しかしながら陸上競技場内と同様のウレタン舗装による走路の整備、さらには、冬期間も含めて通年利用できるような施設整備となりますと、建設費はもとより管理人の人件費、除排雪経費、暖房に係る燃料費や電気料など、その後の維持管理にも多額の費用を要することとなります。\n １点目で質問いただいた総合体育館前通路の整備にも共通することでございますが、市内スポーツ施設全般において、経年劣化や使用頻度などにより現有施設の機能を維持していくだけでも多額の費用を要しており、限られた予算の中で修繕や整備は安全面を最優先として対応してきておりますことから、新たな施設となりますサブトラックの整備は難しい状況であります。",
+    "text_length": 895,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-108"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-066",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "自然エネルギーの利用についてお答えいたします。\n １点目の公共施設等の自然エネルギーの利用状況についてでありますが、市内の公共施設に自然エネルギーを取り入れている施設は、現在３か所ございまして、それらの状況についてエネルギー種別を含めて申し上げますと、昨年10月から供用しているこの現市役所新庁舎には太陽光パネルの設置と冷暖房に地中熱を活用しております。また、新庁舎に隣接する健康福祉センターデ・アイと道の駅ライスランドふかがわには太陽光パネルを設置しているところであります。\n 次に、２点目の今後の自然エネルギー導入の考え方についてでありますが、本市では昨年３月にゼロカーボンシティふかがわを宣言しておりまして、これを受けて、本年３月に地球温暖化対策実行計画（事務事業編）を策定したところであります。\n 事務事業編の中では、市公共施設への自然エネルギー、いわゆる再生可能エネルギーの有効活用を基本方針の一つとして掲げており、既存施設で利用されている化石由来のエネルギーを再生可能エネルギーへ転換することを順次検討するとともに、再生可能エネルギーの利用割合の増加に努めることとしているものであります。\n また、今後新たに策定を予定している市内全域を対象とする、地球温暖化対策実行計画（区域施策編）では、市内の各家庭や事業所におけるＣＯ2の排出削減活動を含めた深川市全体のＣＯ2削減目標を定めるほか、再生可能エネルギーの導入や転換についても盛り込んでいく必要があると考えております。\n 近年は市内事業者の取組も見られ、旧多度志中学校校舎を活用されているベンチャー企業では、植物工場と陸上養殖事業を行うエネルギーとして、風力発電と太陽光発電の導入が進められており、こうした先進的な取組をしている市内事業者とも積極的に連携を進めるとともに、市内の各家庭や事業所において再生可能エネルギーの導入や転換などの意義を啓発し、カーボンニュートラルな社会を目指してまいりたいと考えております。",
+    "text_length": 838,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-110"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-067",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "三浦浩二教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "スポーツ都市宣言についての質問にお答えいたします。\n 深川市スポーツ都市宣言の概要につきましては、議員も触れられておりますけれども、深川市民はスポーツを愛好し、スポーツを通じて健康でたくましい心と体を鍛え、豊かで明るい都市をつくるためといたしまして、五つの目標を掲げて、昭和42年12月15日に、道内の都市では苫小牧市に続き２番目に議決されたところでございます。\n そこで、１点目のスポーツ都市宣言の制定に至った経緯についてでありますけれども、新深川市史によりますと、昭和36年にスポーツ振興法が公布されたことを機に体育指導員の設置など、地方におけるスポーツが飛躍的に発展する中で、本市では市制施行以来、まだ日の浅い郷土を先進都市並みに体育施設が整備されることを目指して、スポーツ都市宣言を議決したと記されているところであります。\n また、当時の記録では、宣言を具体的に推進するために、宣言の議決前に実施要領を作成しており、その実施要領には、スポーツに関する施設の充実、スポーツ団体の育成、スポーツ行事の促進の３項目を掲げておりまして、宣言直後には北海道青少年スポーツセンターの誘致や学校開放事業の促進、体育協会の会員の増加などが進められたとされているところであります。\n そして、現在に至るまで各種スポーツ施設の整備や団体の育成、多くのスポーツ行事の開催などに取り組んできたところであります。\n 次に、２点目の改定を含めた今後の考えについてでありますけれども、質問にありました市はスポーツ合宿のまちとして取り組み、全国に発信しているが、宣言文と合致していないのではないかという趣旨のお尋ねと思いますけれども、このことにつきましては、スポーツ合宿の招致がもたらす効果は多方面で期待されるものと考えておりまして、一例を申し上げますと、合宿チームによる市民対象のスポーツ教室なども開催しておりますので、宣言の目標に掲げる市民がスポーツに親しんだり、楽しむ場所づくりにもつながっているものと考えているところでございます。\n また、宣言から60年目に向けたイベント等の開催などの考えについての質問がございましたが、スポーツ都市宣言から50年を迎えた今から７年前の平成29年度におきましては、深川市体育協会、現在は深川市スポーツ協会の名称になっておりますけれども、この協会の創立70周年等の記念式典の席上をお借りし、深川市スポーツ都市宣言50周年記念表彰と題して、宣言を実現するために多大な御貢献をいただいた５人の方を表彰したところでございます。\n ３年後の60周年に向けましては、今後関係する方とも協議をする中で、開催の有無を含め、しかるべき時期に判断してまいりたいと考えているところであります。\n いずれにいたしましても、本市のスポーツ都市宣言は、今も色あせることなく本市のスポーツ施策の根幹を成すものと考えておりますので、引き続き宣言に基づいて各種のスポーツ施策の推進に努めてまいりたいと考えているところでございます。",
+    "text_length": 1257,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-112"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-068",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "藤井紀久也建設水道部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市道整備についてお答えいたします。\n 市道仲町通線の概要について若干申し上げますと、生きがい文化センターから市役所までの約２キロメートルの路線でありまして、中心市街地では繁華街を形成するなど、本市の重要な路線の一つであると考えております。\n 質問にあります市道仲町通線の10番から西側と駅前通りを挟んだ８番、９番の市道片町線から市道８丁目線までの約270メートル区間につきましては、先ほども申し上げました繁華街地域となっております。\n また都市計画マスタープランでは、中心市街地ゾーンに位置づけられるとともに、バリアフリー基本構想におきましても道路特定事業として位置づけられ、また、現在進められています都市再生整備計画においても区域内であることから、交通安全対策事業として整備すべき路線であると所管では考えておりますが、道路事業に対する国庫補助等の配分が低くなっている状況から、財源確保の面や継続路線がまだ完了していないといった状況の中で、早急な整備は困難な状況と考えております。\n しかしながら、市道仲町通線は飲食店が立ち並ぶ繁華街として、また議員のお話にもありましたように、今年度は夏まつりの会場として、市の経済面においても重要な路線と認識しておりますので、今後につきましても当該路線の状況を注視しつつ、財源確保を含めた整備の方針について、検討してまいりたいと考えております。",
+    "text_length": 590,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-114"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-069",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ふるさと納税につきまして、２点の質問がありましたのでお答えいたします。\n １点目の本年８月末現在の寄附額でありますが、８月末時点で既に10億1,000万円に達しており、前年同時期の約１億円と比較し約10倍、９億1,000万円の増となっており、議員の質問でもありましたように、現時点で前年度の最終実績６億3,349万円を大きく上回っております。\n ふるさと納税を通じて全国の皆様から応援をいただいておりますことに、心から感謝を申し上げさせていただきます。\n 次に、２点目の今年度の寄附が好調に推移している要因でありますが、昨年度から実施しています北海道深川市の名前と地場産品のすばらしさを広く知っていただくＰＲ活動や、運用代行業者が行う専門的な寄附サイト運営による訴求力の向上の取組、また昨年度に寄附件数が大きく増えたことによりリピーターの獲得につながっていること。\n 加えて、本市の返礼品の主力であるお米については、山本議員からもお話ありましたように、全国的に小売店で品薄になっている状況などにより、お米への社会的な注目度が高まったことが相乗的にリンクし、想定をはるかに超える多くの寄附獲得につながったものと推察しているところであります。\n 今後につきましては、返礼品の主力であるお米の収穫が始まり、そしてふるさと納税が本格化する時期を迎えますことから、何といってもお米の生育、収穫作業が順調に進み、豊穣の秋となることを願いつつ、返礼品確保に努め、その上で全国からふるさと納税を通じて引き続き本市を御支援いただけるよう、おいしいお米をはじめとした北海道深川市の魅力を発信するなど、ＰＲの取組に一層力を注ぎ、ふるさと納税を推進してまいりたいと考えております。",
+    "text_length": 728,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-117"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-070",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地域おこし協力隊について２点の質問をいただきましたが、私からは、１点目の現在活動している隊員の状況についてお答えいたします。\n 最初に、隊員数でありますが、９月１日現在において、本年度７人の隊員を新たに任用しており、前年度から継続して任用している隊員を合わせ、まち未来推進課に２人、農政課に13人、商工労働観光課に３人、合計で18人の方に本市で活動いただいております。任用年度別に申し上げますと、任用１年目が７人、任用２年目が10人、最終の任用年度に当たる３年目が１人となっております。\n 次に、各隊員の活動内容でありますが、まち未来推進課所属の２人は、地域や地域産品に関するＳＮＳ等を利用した情報発信やＰＲのほか、移住支援に係る活動に従事しております。\n 農政課所属の13人のうち、深川未来ファームを活動拠点とし、水稲やトマト、キュウリなどの農産物の栽培技術の習得やふかがわポークの加工品製造に係る活動が９人、都市農村交流センターを活動拠点とし、農業体験等の受入れや観光ＰＲなど、都市部との交流活動の企画、実施に係る活動が２人、農業被害防止のための有害鳥獣の捕獲に係る活動が２人となっております。\n また、商工労働観光課に所属している隊員のうち、アップルランド山の駅おとえを活動拠点として、ふかがわシードルの醸造技術の習得やＰＲ活動に２人、地域や地域産品に関するＳＮＳ等を利用した情報発信やＰＲに係る活動に１人が従事しているところであります。\n 18人の隊員には、自身の才能や能力を生かし、熱意と行動力で本市に刺激を与える活動をしていただけるよう引き続きサポートしてまいりたいと考えておりますし、今後におきましても柔軟に地域協力活動を担っていただける方が本市で従事いただけるよう、募集についても続けてまいる考えでございます。",
+    "text_length": 763,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-119"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-071",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "香川貴敬経済・地域振興部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私からは、２点目の有害鳥獣対策支援員の業務内容についてお答えいたします。\n 有害鳥獣対策支援員につきましては、有害鳥獣による農作物被害等の発生防止を図るため、８月１日から２人任用しているものであります。\n 業務内容といたしましては、主なもので申し上げますと、エゾシカについては銃やくくりわなによる捕獲、アライグマなどの小動物については箱わなによる捕獲のほか、熊の出没時には猟友会との連携による現地確認や痕跡調査、箱わなでの捕獲、わなの見回りとしており、それ以外に農業被害防止に向けた効率的な捕獲方法の調査研究、捕獲従事者への技術の普及なども担っていただくこととしているものであります。\n なお、有害鳥獣の円滑な駆除を行うためには、民家や農地の所在など、地理的な状況や有害鳥獣の生息状況等を踏まえた対応を行う必要がありますので、地元に精通している猟友会の協力をいただき、支援員に対し指導いただくなど、有害鳥獣捕獲の担い手として自立できるよう育成することとしており、今後、猟友会等と一体となって、より一層の農作物被害等の発生防止につながるよう取り進めてまいりたいと考えております。",
+    "text_length": 488,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-120"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-072",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "学童保育の状況についてお答えいたします。\n 学童保育は、就労などにより保護者が日中家庭にいない世帯の小学生を対象に放課後における遊びや生活の場を提供し、その健全な育成を図ることを目的として、市内全ての小学校区６か所において、保育所や認定こども園を運営する社会福祉法人やＮＰＯ法人へ市が委託し実施しているところであります。\n 開設時間は、各施設によって違いはありますが、平日は小学校の授業終了後から、土曜日及び学校長期休業期間は午前８時頃からの開設となっており、終了時間は保育所や認定こども園と同じ午後６時頃までとしております。\n なお、学校の行事等により下校時間が早まることもございますので、こういった場合には小学校と連携しながら開設時間を早めるなど、柔軟な対応をいただいているところであります。\n 続いて、本年度における児童の登録状況につきましては、深川小学校区のまなびが56人、一已小学校区の北光クラブが68人、音江小学校区のすずらんクラブが20人、北新小学校区のあけぼの児童クラブが15人、納内小学校区の納内放課後児童クラブが13人、多度志小学校区の多度志学童クラブが13人、合計で185人が登録、利用されております。登録者数につきましては、その年により多少の増減はございますが、ほぼ横ばいで推移している状況であります。\n 子供の放課後生活をめぐっては、子供の数や兄弟の数は減少しておりますが、女性の就業率の上昇に伴い、共働き家庭の増加や就労形態の多様化により、子供の放課後の居場所におけるニーズは大きくなっているところであり、学童保育の重要性も増しているものと認識しておりますので、よりよい保育環境を提供するため、委託事業者と連携しながら、学童保育の充実を図ってまいります。",
+    "text_length": 741,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-122"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-073",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "有害鳥獣処理施設の利用等についてお答えいたします。\n 初めに、１点目の施設の利用状況についてでありますが、昨年度の処理施設での処理頭数につきましては、エゾシカが515頭、アライグマ825頭、その他の有害鳥獣を含め1,500頭となっており、議員が触れられたとおり、過去最高の捕獲頭数となっております。\n また、昨年８月末時点での処理頭数につきましては、エゾシカ186頭、アライグマ401頭、その他の有害鳥獣を含め、合計で669頭であったのに対し、本年８月末時点ではエゾシカが５頭減の181頭、アライグマにつきましては44頭増の445頭、その他の有害鳥獣を含め、合計で14頭増の683頭となっており、エゾシカについてはほぼ横ばい、アライグマについては増加傾向にあります。\n 次に、２点目の施設の管理についてでありますが、当該施設の当初の処理計画では、年間エゾシカ340頭、アライグマ140頭などの有害鳥獣を菌床１か所で処理することとしておりましたが、処理頭数が年々増加しており、処理計画時の数量を大幅に超える搬入数となったことから、分解処理を行う菌床設置の技術指導をしていただいている業者とも協議し、現在は切替え作業を省くことにより、分解処理に要する時間が本来エゾシカで３日のところ７日から10日かかるようにはなりますが、以前よりも大きな菌床を３か所設置することにより、対応しているところであります。\n なお、今後処理計画をさらに超える事態が生じた場合には、隣接するハウス格納庫に一時的に保管するなどして対応したいと考えております。\n 今後におきましても鳥獣個体の適正な処理を行いつつ、猟友会や関係機関・団体などの協力をいただきながら有害鳥獣駆除を推進し、さらなる農作物被害の防止に努めてまいりたいと考えております。",
+    "text_length": 756,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-124"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-074",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "生活保護世帯等についてお答えいたします。\n １点目の市内各地区における生活保護世帯数の現状についてでありますが、本市では、市街地を深川Ａと深川Ｂの２地区に分割、このほかに一已地区、あけぼの地区、音江地区、納内地区、多度志地区の５地区に、長期入院患者や施設等へ入所されている方々を単身地区として合計８地区に分けて担当者を配置し、被保護者の対応を行っております。\n 令和６年８月１日現在の各地区における世帯数及び人員状況につきましては、深川Ａ地区37世帯43人、深川Ｂ地区45世帯56人、一已地区45世帯55人、あけぼの地区19世帯19人、音江地区４世帯５人、納内地区15世帯16人、多度志地区１世帯１人、単身58世帯59人、合計224世帯254人で、人口減少に伴い被保護者数も年々減少している状況にございます。\n 次に、２点目の保護世帯の現状把握についてでありますが、現在４人のケースワーカーが８地区を対応していますが、世帯ごとに年間の訪問月を定め、定期的に訪問、被保護者が来庁時には面談を行うなど、状況把握を行っております。\n 世帯の年間訪問回数を定めるに当たり、訪問ケースをＡからＥの５区分としておりまして、ケースＡは常時実態の把握を必要とする世帯や重点的に指導を要する世帯で、主に早期就労に向け継続的な求職活動等に指導を要するケースとして、毎月訪問や面接を実施。ケースＢは、課題等について一定の改善や解決に向け、継続的に状況把握と指導を要する世帯で、主に就労指導を行っているが継続的に状況を把握し指導を要する世帯として、２か月ごとに訪問。ケースＣは、主に高齢者世帯で、安定的に日常生活が維持されている場合で、３か月ごとに訪問。ケースＤは、高齢者及び障がい者世帯で、グループホームに入所している場合は６か月ごとに訪問。最後にケースＥは、長期入院患者や特別養護老人ホームなどの施設に入所している世帯等で、年１回の訪問としており、個々の世帯状況に即した訪問回数としております。\n なお、定期訪問とは別に緊急時や被保護者からの要望による訪問など、予期せぬ訪問もありますことから、４人のケースワーカーで年間700回から1,000回程度、被保護者の訪問や面談を実施している状況でございます。\n 被保護者への訪問計画は、当該年度の初めに世帯の状況に即し、訪問回数を策定していますが、世帯の状況に変化があった場合は、必要に応じ訪問回数を変更するなど、適切な訪問回数の実施により、今後も被保護者の状況把握に努めてまいります。",
+    "text_length": 1055,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-126"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-075",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "介護老人保健施設についてお答えいたします。\n 市内には、介護老人保健施設は一つございまして、このたび休止されると運営法人から伺っております。\n 本市で把握している休止までの経緯についてですが、当該施設は入所定員が96床でありましたが、本年３月１日に29床に規模を縮小し、系列病院のサテライト型老人保健施設に変更されました。このことにつきましては、前もって令和５年８月に本市に対して報告があったところであります。\n その後、運営法人から令和６年７月上旬に休止の報告があり、18日付文書にて、当該施設の通所サービスについては９月末、入所については10月末をめどに休止する予定である旨の通知を受領したところでございます。\n 休止される主な要因としましては、施設開設から33年経過し施設が老朽化したこと、施設で働く職員の確保が十分ではなく労働力不足によるものと伺っております。\n 質問の１点目、施設入所等の待機者の現状についてお答え申し上げます。\n 現状における施設入所希望者とデイサービス、デイケア利用希望者の待機数についてでありますが、入所やサービス利用については、各施設が窓口となり随時受け付けておりますので、待機者数の実数は把握していないところでありますが、市内の介護保険サービス事業者を参集し、本市が月１回開催しております地域ケア会議にて、施設入所や各介護サービスの利用状況、待機状況について情報共有しております。\n その共有されている情報において、施設及びデイサービス、デイケアの待機状況につきましては、その種類によって待機者がいる状況はありますが、待機者がなく、利用が可能な事業所もあると把握しております。\n このたび休止する老人保健施設から休止する旨の報告を受けた際、入所者については御本人や家族の希望も確認しながら、同じ法人が運営する施設への転院・転所で対応可能であること、デイケアに通所されている方についても関連デイサービスの定員数を変更し、受入れ予定であり、希望によっては訪問リハビリ等の訪問型のサービスの対応が可能であると報告を受けております。\n 次に、２点目の施設休止による本市の介護保険事業計画の見直しについてでありますが、介護保険事業計画につきましては、介護保険法に基づき、３年を１期として、本市が行う介護保険事業に係る保険給付の円滑な実施に関する計画として策定しており、現在は令和６年度から８年度までを計画の期間として、第９次深川市介護保険事業計画を本年３月に策定したところであります。\n 現行の計画においては、当該施設が本年３月１日に規模を縮小した状況については、事前に運営法人から伺っておりましたことから、現行の計画に反映しているところです。当該施設の休止を前提とした計画とはなっておりませんが、現行の計画の実施に大きな支障はないものと考えておりますので、今のところ計画の見直しは考えていないところであります。",
+    "text_length": 1219,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-129"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-076",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ＰＦＡＳ、有機フッ素化合物汚染についてお答えします。\n まず、ＰＦＡＳの概要について申し上げますと、有機フッ素化合物のうち、ペルフルオロアルキル化合物及びポリフルオロアルキル化合物を総称してＰＦＡＳと呼ぶものでありまして、１万種類以上の物質があるとされており、ＰＦＡＳのうち特に関心が高いＰＦＯＳ及びＰＦＯＡにつきましては、半導体や繊維、また身近なものではフローリングや食品包装紙など、様々な用途で使用されております。\n 今年８月に環境省から通知された資料によりますと、この物質による健康被害が懸念される要因といたしましては、環境や食物連鎖を通じて人の健康や動植物の生息、生育に影響を及ぼす可能性が指摘されていることから、国は2020年、ＰＦＯＳ及びＰＦＯＡを水道水における水質管理項目に指定するとともに、暫定目標値50ナノグラムパーリットルを定め、飲料水中の値が暫定目標値を超えることがないよう水道事業者による水質の管理を求めております。\n 現在、この物質に対しては水質検査の法的な義務はありませんが、道内や道外においても水源となる河川から高濃度のＰＦＯＳ及びＰＦＯＡが検出されるなど、水源が汚染されている可能性が否定できないものであることから、当市と受水先である北空知広域水道企業団では、安全で安心な水を確保するために数年前から自主的に水質検査を行っております。\n なお、この検査結果につきましては、市、企業団、いずれも暫定目標値の50ナノグラムパーリットル未満となっており、数値としては検知されていないため、これらの有害物質は含まれていないものと考えられます。\n 今後も市民の皆様が安心して暮らせるよう、安全な水の供給に努めてまいりたいと考えております。",
+    "text_length": 730,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-131"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-077",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今後の健康保険証についてお答えいたします。\n 本年12月２日以降の健康保険証におきまして、マイナンバーカードと健康保険証をひもづけされた方につきましては、被保険者証は交付されず、マイナ保険証に変更となり、またマイナ保険証をお持ちでない方につきましては、資格確認書を交付する取扱いに変更となります。\n 質問で触れられたマイナ保険証の使用方法等については、現時点においても窓口への来庁や電話でお問合せが寄せられる場合があり、その都度、担当職員が対応している状況にあります。\n 今後においてもそうした問合せには丁寧に対応するとともに、市の広報紙やホームページ等へ関連する情報を掲載するほか、分かりやすいリーフレットの作成及び配布など、今後マイナンバーカード交付窓口などの関係所管と連携を図りながら、市民の方にマイナ保険証や資格確認書等について御理解いただけるよう、情報発信の方法について検討してまいりたいと考えております。",
+    "text_length": 408,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-133"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-2-078",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 2,
+    "schedule_name": "09月03日-01号",
+    "date": "2024-09-03",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "自衛隊への個人情報提供について、２点質問いただいておりますが、関連がありますので、一括して答弁させていただきます。\n 自衛隊への個人情報の提供に関しましては、自衛隊が自衛官募集事務を行うに当たり必要となる氏名、住所等の名簿を提供しているもので、本市では、昨年度から紙媒体での提供を行っております。\n この自衛官募集事務に関する資料の提出につきましては、令和３年に防衛省及び総務省から発出された通知において、自衛官及び自衛官候補生の募集に関し必要となる情報に関する資料の提出は、自衛隊法及び自衛隊法施行令の規定に基づき実施可能である旨が示されており、本市といたしましては、この通知を踏まえるとともに、個人情報保護法にも照らした上で情報提供として名簿の提供を行っているものであります。\n また、情報提供に際しましては、本人の同意の取得が定められているものではないことから、情報の提供を希望されない方への配慮として、除外申請の提出をお願いしているところであり、現行の手法により当該事務を継続していく考えであります。\n しかしながら、自衛隊への名簿提供につきましては、他の自治体で訴訟となり、係争中の案件もございますので、こうした裁判の動向などを注視した上で、今後の事務の在り方を見直す必要があると考えられる場合には、必要な対応に努めてまいる考えでございます。",
+    "text_length": 576,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-135"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-079",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "本多孝二議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "第３回定例会２日目の議事日程は、お手元に配付のとおりであります。\n 以上で報告を終わります。\n ──────────────────",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-080",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "プレコンセプションケアにつきまして、順次お答えいたします。\n プレコンセプションケアにつきましては、妊娠前の女性とカップルに、医学的、行動学的、社会的な保健介入を行うこととＷＨＯで定義されております。\n 本市における、将来の妊娠を考え若い世代が自分たちの生活や健康に向き合う取組といたしましては、中学校３年生を対象に赤ちゃんふれあい教室を実施しております。\n 内容としましては助産師による妊娠・出産に関する講話や、妊婦体験ジャケットを着用し身体変化や負担を感じていただく妊婦疑似体験、乳児期の赤ちゃんとお母さんに協力いただき生徒が直接赤ちゃんと触れ合うなどの体験を通じ、中学生が命や性について知り、自分と人を大切にする行動が取れることを目的に実施しているものであります。\n このほかにも、子宮頸がんワクチン接種の推進や子宮がん検診の実施、日頃の相談支援など様々な機会を通して若い世代からの健康づくりに対する啓発活動を行っているところであります。\n 次に２点目、本市が捉えているプレコンセプションケアの考えと取組の推進についてでありますが、プレコンセプションケアにおける健康管理の内容につきましては、全てのライフステージにも通じる健康維持の重要な要素ですので、市として積極的に取り組むべき課題であると捉えております。\n 現時点においてプレコンセプションケアに特化した事業は行っておりませんが、若いうちから健康管理の必要性などについての市民周知や相談体制の拡充など、本市での取組について検討してまいりたいと考えております。",
+    "text_length": 659,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-081",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "災害対策の見直しについての、深川市耐震改修促進計画についてお答え申し上げます。\n 深川市耐震改修促進計画は、阪神・淡路大震災の教訓を踏まえ、建築物の耐震改修の促進に関する法律が制定され、その後北海道の耐震改修促進計画の策定や全国各地で大地震が頻発していることを受け、平成21年３月に深川市耐震改修促進計画を策定し、東日本大震災や耐震改修促進法の改正及び北海道の計画の見直しを踏まえて、令和３年に深川市耐震改修促進計画（第２期）を策定したところであります。\n 質問にあります避難施設につきましては、36の施設が指定避難所に指定されており、全ての施設で耐震性を有しております。\n 一方、学校、病院、賃貸住宅などの多数の方が利用する建築物で、階数・面積の要件に該当する多数利用建築物は市内に71棟あり、そのうち55棟が耐震性を有しており、計画策定時の耐震化率は大前議員御指摘のとおり77.5％となっているところであります。\n このうち、公共施設で耐震性のない建築物は３棟ありましたが、高等看護学院と市庁舎は建て替えが完了したため、残りは中央公民館の１棟のみとなっており、公共施設は現状39棟中38棟が耐震性を有しており、耐震化率は97.4％となっております。\n 民間施設につきましては、32棟中19棟が耐震性を有しており、耐震化率は59.4％となっております。\n 市内全体としましては、現状71棟中57棟が耐震性を有しており、耐震化率は80.3％となっております。\n 次に、２点目の防災ガイドブックの見直しについてお答えいたします。\n 本市の防災ガイドブックは、洪水など大きな災害が発生したときに、市民一人一人が命を守る行動を取ることができるように作成したものでありまして、ハザードマップや非常時の持ち出し品、避難所などについてまとめてあり、市内全世帯へ配布しているほか、地域での防災教室などにおいて活用しております。\n 大前議員も述べられていたとおり、地震が発生した際には、建物等が倒壊し避難所までの経路が通行できない場合なども想定されますので、市民の皆さん一人一人が避難経路の危険箇所を事前に確認することは大変重要な取組の一つであると認識しております。\n したがって、防災ガイドブックを改正する際には、避難経路の危険箇所やその事前確認の重要性等について、より皆さんに伝わりやすいものとなるよう、掲載内容について十分検討してまいりたいと考えております。\n また、避難所における電源確保対策としてのソーラーパネルの設置につきましては、発災時を想定した場合、有効な取組の一つであり、地球環境の保全にも効果のある取組であると考えておりますが、こうした電源設備等の整備に関しましては、避難所に限らず公共施設全体の維持・管理の中で検討していく必要がありますので、各施設の利用状況や施設全体における改修等の必要性、整備に向けた財源等も含め総合的に研究してまいります。",
+    "text_length": 1225,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-082",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "香川貴敬経済・地域振興部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "宿泊税導入の考えについてお答えいたします。\n 宿泊税につきましては、地方税として人口減少が進む中、税収入の大幅な増加が期待できず、高度化、多様化する観光ニーズ、人手不足、移動利便性の向上などの課題に対応する施策展開が困難なことを背景に、観光振興のための安定的財源の確保を目的に観光都市などで導入が進んでいるものであります。\n 議員からもお話がありましたように、北海道では2026年４月から導入する方針を表明しており、また、道内市町村でも既に倶知安町が導入しているほか、把握している範囲では19の市町村で導入検討を表明しているところであります。\n しかしながら、宿泊税につきましては、税収が期待できる一方で、課題としまして議員御指摘のように、北海道と市の二重課税といいますか、宿泊者は北海道と市の両者に対して納税を求められることや、観光面のブランド力に乏しい都市では宿泊者の減少につながる可能性が指摘されているところであり、議員が危惧されております合宿やビジネスといった観光以外の宿泊ニーズに及ぼす影響も想定されるところであります。\n さらに、北海道では本年７月から８月にかけて宿泊税の導入検討を表明している19市町村を除いた全市町村を対象に、宿泊税に関する検討状況調査を実施しており、回答があった133市町村のうち導入検討に消極的といいますか慎重な意見が127市町村という結果となっているところであります。\n このようなことから、本市が宿泊税を導入することに関しましては、税収増というメリットよりも課題のほうが大きいと考えますし、さらに他市町村の状況も踏まえますと、現段階では本市として宿泊税導入の考えには至っていないものであります。",
+    "text_length": 717,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-083",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市民が訪れやすい庁舎についてお答えいたします。\n １点目の、ＢＧＭによる市民が訪れやすい環境づくりについてでありますが、庁舎にＢＧＭを流すことについては、来庁される皆様にとって快適な環境を提供するための一つの手段として研究されており、公共施設等で働く職員も含め音楽が持つリラックス効果やストレス軽減効果などによる業務効率向上も期待されております。\n 本市の新庁舎に整備いたしました放送設備においても、ＢＧＭ等を流す機能を備えてはおりますが、窓口における会話が聞き取りづらくなる可能性があることや、様々な来庁者がいらっしゃる中で、全ての方々に好まれる音楽を選ぶことは難しい面もございますし、音量や曲調によっては逆に不快感を与えるおそれがあること、また、著作権等の課題もあることなどから、現在実施はしていないところであります。\n 一方で、この施策はＢＧＭ導入による効果だけではなく、市政情報やイベント告知などを音声で流すことで、市民への情報提供手段としても活用できるものと考えております。\n 市では現在、１階市民生活課窓口前で手続をお待ちの方のためにテレビ放送を放映しているほか、ロビー正面のモニターでは地域のイベント情報やＰＲ動画を流すデジタルサイネージとして情報提供を行っているところであります。\n 新庁舎の正面玄関が、今週から御利用いただけるようになりましたので、まずは開放後の人の流れを見ながら、現在利用しているテレビやデジタルサイネージの音源等の調整によりまして、待合環境の向上を図るとともに、他市の取組について情報収集を行い、来庁者の皆様が心地よく訪れやすい庁舎環境について研究してまいりたいと考えているところでございます。\n ２点目の、庁舎利用に関するアンケート調査についてでありますが、庁舎を利用される皆様からの御意見は、行政サービスの改善や新たな施策の立案について欠かせない要素でありまして、重要な取組と認識しております。\n これまで庁舎利用に内容を絞ったアンケート調査については実施しておりませんが、待ち時間を利用し、来庁された皆様から気軽に御意見をいただけるよう、１階ロビー西側の待合スペースにみんなの声ポストを設置しております。\n こちらは、庁舎の利用に限らず広く御意見を投書いただくものでありまして、中には新庁舎についての御意見もいただいており、いただいたご意見を踏まえまして改善に努めているところでもあります。\n 今後におきましても、庁舎利用に関する御意見も含め、来庁される皆様から様々な観点での御意見をいただけるよう、みんなの声ポストの設置場所ですとか周知について工夫してまいる考えであります。",
+    "text_length": 1110,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-084",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "宮森栄治副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "犯罪のない安心・安全なまちづくりについてお答えいたします。\n 本市では、平成21年に犯罪のない安全で安心なまちづくり条例を制定しておりまして、その中で、市、市民の皆さん、事業者の皆さん、そして市民団体が相互に連携を図りながら、犯罪のない安全で安心なまちづくりを行うという基本理念を掲げているところでございます。\n そうした理念の下、社会を明るくする運動や青少年の非行防止活動に取り組んでいるほか、市庁舎内に更生保護や深川地区保護司会の活動拠点となる更生保護サポートセンターを設置いただき、駐在する企画調整保護司の皆さんが保護司の活動支援をはじめ関係機関や団体との連携、犯罪や非行の予防活動の企画、更生保護に関する情報提供などの活動を推進されているところでもございます。\n 特に、令和２年度からは、更生保護サポートセンターが主体となり、行政との連絡会議が設置され、本市や周辺６町が参画する中で更生保護サポートセンターとの連携が強化されております。\n そこで、お尋ねの地方再犯防止推進計画策定の考えについてでありますが、当該計画につきましては、平成28年12月に施行されました再犯の防止等の推進に関する法律におきまして、議員もおっしゃっておりましたけれども、地方自治体も策定の努力義務が課せられたところです。\n 道内における計画の策定状況といたしましては、法務省のホームページの情報となりますけれども、35市中19市が策定済みとなっておりますけれども、再犯防止に特化した単独の計画は１市程度で、残りの市につきましては、総合計画や福祉系の計画に包含されているようでありまして、国においても、政策的に関連の深い他の計画などと一体的に策定することも可能といった見解が示されているところです。\n 本市といたしましては、こうした事例などを参考に、まずは既存の計画の中で再犯防止推進計画の要素を包含することができるものがないか確認を行いまして、その上で対応を考えてまいりたいと思っております。\n 現状、本市では計画を有しておりませんが、再犯を防止する取組の重要性は十分認識しておりますので、前段申し上げました犯罪のない安全で安心なまちづくりに向けた各種の取組などを通じ、引き続きしっかりと推進してまいりたいと考えております。",
+    "text_length": 954,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-085",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地方交付税の決定額と2024年度予算の執行状況について質問いただきましたので、順次お答えいたします。\n 初めに、１点目の本年度の普通交付税及び臨時財政対策債の決定額と予算に与える影響についてでありますが、普通交付税及び臨時財政対策債は、７月23日に決定額が通知されまして、普通交付税は65億7,571万6,000円、臨時財政対策債は2,043万7,000円となり、合計は65億9,615万3,000円となっております。\n 本年度の当初予算計上額は、普通交付税が65億3,000万円、臨時財政対策債が2,000万円の合計で65億5,000万円でありますので、4,615万3,000円の増となっております。\n 当初予算を上回った主な理由でありますが、基準財政需要額において、こども子育て費が新設されたことや、地域デジタル社会推進費などが見込みより増加したこと、基準財政収入額では地方消費税交付金や地方特例交付金のうち定額減税減収補填特例交付金分が減少したことなどが挙げられます。\n 次に、予算に与える影響についてですが、本年度は当初予算において財政調整基金などの繰入金を計上しておりますので、今回のプラスは、今後の状況にもよりますが、これら繰入金を一定程度削減することができるものと考えております。\n 次に、２点目の2024年度予算の執行状況についてお答えいたします。\n ８月末現在での予算の執行率でありますが、一般会計における現年度予算と令和５年度からの繰越分を合わせた執行率で申し上げますと、歳入の執行率が29.9％、歳出の執行率が31.1％となっております。\n 歳入のうち、市税につきましては、調定額19億5,019万円に対し、収入済額は９億762万円、収納率は46.5％となっており、前年同月での収納率は49.4％でありますので、前年度に比べ若干低く推移しております。この要因といたしましては、定額減税の実施により住民税が減額されたことによるものであります。\n その他の歳入につきましては、特別交付税やふるさと納税など、年度末まで見込みを判断することが困難なものが多数ありますが、現時点で収入されているものについては、おおむね堅調に推移しております。\n 歳出では、昨年と比べ新庁舎建設事業費の減少や北空知葬斎場建設に係る負担金の増加などの増額要因がありますが、全体の執行率は前年とほぼ同水準で推移しており、こちらもおおむね例年どおりの執行状況となっております。\n 今後、引き続き物価高騰による影響や、議員御指摘の人件費の上昇などによる影響が大きく出てくることが想定されますが、国の動きを注視しながら引き続き健全な財政運営に努めてまいります。",
+    "text_length": 1122,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-086",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市役所の開庁時間と職員の勤務時間について２点の質問をいただきましたので、順次お答え申し上げます。\n 初めに、１点目のコンビニエンスストアでの証明書の発行開始に伴う市役所窓口への来庁者数の変化についてであります。\n 本年３月から開始しておりますコンビニ交付サービスの利用状況について申し上げますと、現在コンビニエンスストアから取得できる証明書は、住民票、印鑑登録証明書、戸籍謄本、戸籍抄本、戸籍の付票、所得証明書、課税証明書、所得・課税証明書の８種類となっておりまして、利用時間は午前６時30分から午後11時までのそれぞれの店舗の営業時間内となっております。\n 本年３月から７月末までの５か月間の利用状況につきましては、各種証明書の交付件数は749件、月に平均しますと150件となり、このうち市役所開庁時間外の交付件数は431件、月平均にして86件であります。\n 平日の時間外や休日の利用率は57.5％で、半数以上が時間外に利用されており、支所を含む本市全体の証明書交付件数8,024件の9.3％がコンビニ交付を利用されている状況となっております。\n 窓口への来庁者数につきましては、コンビニ交付サービス開始前である令和５年同時期と比較しまして15.2％減少しており、窓口の混雑緩和にもつながっているものと考えているところであります。\n 今後におきましても、住民の皆さんのニーズに対応できるコンビニ交付サービス制度の利用について、市のホームページ等を通じて周知に努めてまいります。\n ２点目の市役所開庁時間の見直しについてでありますが、近年、労働環境の改善や生産性向上が求められる中で、行政機関においても柔軟な働き方を実現することが求められております。\n 本市においても、職員の働き方改革を実現する方策として、時間外勤務を削減するために、時間外勤務が多い所管にヒアリングを実施しているほか、削減事例を周知するなど就業環境の見直しに努めております。\n しかし、一部窓口業務を担当する所管等においては、開庁時間から円滑に事務手続が進められるよう、先ほど伊藤議員も指摘されているとおり、始業前に業務等の受付準備を行ったり、終業後にその日に受付した業務の整理を行うため、一定の時間を要しているところであります。\n 始業前の準備時間においては、窓口業務を担当する所管に限らず、受付準備のほか職員同士でその日の業務に関する情報共有や連携を図るための時間として確保することができれば、職員が効率的に業務を遂行するための一助にもなるものと考えますことから、そうした時間を確保する上でも、御提言のありました開庁時間を見直すことは有効な手法の一つと考えます。\n 現在、本市の開庁時間については、職員の勤務時間である午前８時45分から午後５時15分に合わせておりますが、これを変更する場合は、開庁時間が変わることによる各種業務への影響や問題点を洗い出した上で、その改善を図る必要があることや、市民への周知にも一定の時間を要するものと思われます。\n したがって、まずは今週９月２日の正面玄関利用開始時から１階フロアのリンググリルシャッターの開錠時間について、窓口業務を担当する職場において少しでも始業前準備がスムーズに執り進められるよう、従前の午前７時30分から勤務時間に合わせた午前８時45分に見直したところであります。\n 今後においては、他市の取組等について情報収集を行い、業務効率の向上や働き方改革の観点から、効果的な開庁時間の見直しについて検討してまいりたいと考えております。",
+    "text_length": 1479,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-087",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "職員に対するカスタマーハラスメント対策についてお答えいたします。\n 初めに、１点目の本市におけるカスタマーハラスメントの実態と、働きやすい職場環境づくりのためのカスタマーハラスメント対策についてでありますが、昨年度、全課を対象に行ったカスタマーハラスメントの対応状況調査では、大声で叱責される暴言型や長時間に及ぶ電話やクレームを受ける拘束型のほか、同じ内容を何度も繰り返されるリピート型と言われる行為を受けるなどの実態がこれまで多くの所管であったことを確認しており、その結果を受けまして、特にクレームの多い所管に録音機能を備えた電話機を設置したところであります。\n また、来庁者の方の行為が、御本人はカスタマーハラスメントと気づかずに該当していることもあるため、札幌市が作成しておりますカスタマーハラスメント防止啓発ポスターを活用させていただき、窓口カウンターに設置するなどハラスメントについての周知とともに注意喚起を促しているところであります。\n さらに、昨年の第４回市議会定例会で伊藤議員からも御提案いただきましたが、職員の名札から顔写真をなくし、フルネーム表記から名字だけの表記に変更し、個人が特定されストーカー被害やハラスメントトラブル防止に努めているところでございます。\n カスタマーハラスメント行為は、公務に支障が生じるだけではなく、職員が精神疾患を発症するなどといった被害が全国的に増加していることが報じられているところであり、本市といたしましても、職員が心身ともに健康で快適に働くことができる職場環境を確保するため、引き続きハラスメント防止対策に努めてまいる考えであります。\n 次に、２点目の窓口での悪質事例への職員の対応訓練や火災を想定した避難訓練についてでありますが、いずれの訓練も職員はもとより来庁された市民の皆様の安全を確保するためにも重要な取組であると認識しているところであります。\n まず、火災を想定しての避難訓練でありますが、旧庁舎のときには職員を対象とした避難訓練を実施した経過がございますが、新庁舎に移転し、庁舎の消防設備や避難経路、職員の役割分担も変更となっておりますことから、改めて実施が必要と考えているところであります。\n 外構の整備状況も考慮した上で、深川消防署とも具体的な内容等について協議し、市民及び職員の安全確保を図るために必要な訓練を実施してまいりたいと考えております。\n 次に、暴漢等への対応についてでありますが、本市では職員に対する暴力的行為に対して、深川市不当要求行為等の防止に関する要綱を定め、組織的な取組を行うことにより適切な対応を行い、職員の安全を確保することとしております。\n 同要綱においては、事態が急迫していると認めるときは、直ちに警察関係機関に通報するものとしておりますが、高浜市のような事案が起きた場合には、通報から警察関係機関の方が到着するまでの間、職員自らがその場にいる方々の安全を守る取組が必要になるものと考えております。\n 現庁舎には、警備用の備品として１階と３階にさすまたを設置してございますが、職員による対応を前提とした場合には、これらの用具の効果的な使い方など、事前に身につけておくことが望ましいと考えておりますので、他市の取組事例なども参考にしながら、深川警察署など関係機関の指導に基づく訓練の実施など、必要な対応について、今後検討してまいりたいと考えております。",
+    "text_length": 1426,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-088",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現行保険証の有効期限及びマイナ保険証と資格確認書についてお答えいたします。\n 初めに、現行の健康保険証の有効期限でございますが、国民健康保険と後期高齢者医療の被保険者の方につきましては、本年７月の被保険者証更新時に、８月１日から令和７年７月31日までの有効期間１年間の被保険者証を送付しておりまして、その期限までお手元にある被保険者証をお使いいただくことが可能となります。\n 次に、健康保険証の廃止及び資格確認書の対応の質問ですが、12月２日以降、75歳の年齢到達により後期高齢者医療に切り替わる方や新規で国民健康保険に加入される方、被保険者証を紛失または毀損された方などにつきましては、マイナ保険証に切り替えていただくか資格確認書を交付することとなります。\n この資格確認書は、マイナンバーカードをお持ちでない方やマイナンバーカードを持っていても健康保険証とひもづけされていない方に、本人が申請することなく郵送する、いわゆるプッシュ型の対応で交付するものでありまして、被保険者証の代わりとして、これまでと同様に医療機関で受診する際に１年間利用できるものとなっており、毎年期限が近くなりましたら、プッシュ型で交付してまいります。\n また、マイナンバーカードと健康保険証をひもづけされている方であっても、本人の希望により資格確認書を交付することができるものとなっております。",
+    "text_length": 586,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-089",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "高田光徳市立病院事務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "病院・薬局のマイナ保険証支援金と患者へのマイナ保険の権限について、２点の質問をいただきましたので、私からは１点目についてお答え申し上げます。\n マイナ保険証普及に関するポスター掲示等に市立病院は対応しているか、薬局はどうかについてでありますが、当院におきましては、いろいろな啓発ポスターがある中から、昨年12月より厚生労働省と日本医師会の名称が記載されているポスターを院内に掲示するなどの対応をしております。\n そのポスターの内容は、マイナ保険証の利用メリット２点を周知しているもので、薬剤情報等の提供に同意すると、データに基づく適切な医療が受けられる、さらに健康保険証で受診した場合と比べて初診時等の窓口負担が低くなることと、限度額適用認定証等がなくても手続なしで高額療養費の限度額を超える支払いが免除されることが記載されておりますので、メリットの紹介として院内掲示しているものです。\n なお、他の薬局の状況については把握しておりません。",
+    "text_length": 420,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-090",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私からは、２点目についてお答えいたします。\n マイナ保険証利用促進のための支援につきましては、マイナ保険証の利用勧奨に取り組む医療機関等へ、マイナ保険証の利用率の増加に応じて国からの支援金が交付されるものでありますので、確認や勧奨について法的な拘束力が発生するものではないと認識しております。\n また、本事業に係る周知につきましては、国や社会保険診療報酬支払基金から直接医療機関等になされているものでありますので、このことについて本市が市民に向けて周知を行う考えはございません。\n なお、市内の民間病院や薬局でのマイナ保険証の対応の実態につきましては、病院や薬局は社会保険診療報酬支払基金からの情報を得て、本事業の取組についてそれぞれ判断されているものと認識しておりますので、本市ではその実態について把握しておりません。",
+    "text_length": 360,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-027"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-091",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高落札率問題に対する市長答弁につきまして、質問いただきましたので、順次お答えいたします。\n １点目の、根拠なく疑いをかけるのは失礼に当たると答弁しましたのは、令和３年第３回定例会の庁舎建設工事関連工事７件の契約議決の際の佐々木議員の反対討論に対する、当時議員でありました私の議事進行について説明したものであります。\n その時点で談合の事実や談合情報などが何もない中で、佐々木議員が落札率の高さを根拠に談合であるかのように発言したために、議長に対し議事進行を行い、議事録精査を申し出たものであります。\n よって、私は虚偽発言も歪曲しての発言も一切しておりません。\n ２点目の、95％超えは談合の疑いの見識が社会に存在すると認めとの質問ですが、佐々木議員がそのような見識が社会的に存在すると主張されていることについて否定する立場にはないと、私が否定する立場にはないと再三申し上げているものでありまして、私は95％超え入札が談合であるとか談合の疑いがあるとかという見識には立っていないと、これまでも申し上げております。\n また、議事進行からの発言取消しが正常な議場発言を封じ、議会機能を否定した言論封殺ではないかにつきましては、令和３年第３回定例会での私の発言は、議長に対し議事録精査を申し入れる発言をしたまでであり、その後の議会運営委員会での議事録精査の審議に私は出席しておりません。\n したがって、発言取消し命令は議長の議会運営に対する正当な権限であります議事整理権の中で行われたもので、一議員の私の一存でできることではないことは明白でありますことから、私が言論封殺を行ったなどとおっしゃるのはお控えいただきたいところです。\n ３点目、悪影響は懸念されないかについては、市の発注事業の入札参加者は公正な手続と事業者の皆さんの高度な技術力を駆使して入札に応じているものと考えますので、そのような懸念は持ちませんし、その入札結果による契約・事業実施は税の適正な執行であり、有効な税の活用と考えております。\n 一方、談合につきましては、談合は犯罪行為であり、絶対に許してはならないものと固く認識しておりますし、談合を行えばその者たちは法律に従い処罰が課せられるものと認識しております。",
+    "text_length": 938,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-029"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-092",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今の、理由を別に話されたと言われておりますが、確かに令和３年の第３回定例会の反対討論のときに、いわゆる１者については別の理由も言われております。\n しかし、その大前提としては、高落札率ということを話されておりますし、私が一企業に対して失礼だと言っているのは、その会社についてと言っているのではなくて、全ての企業のそれぞれ一企業に対してということで言っているのでありますので、捉え方が違っているのかと思います。\n 私はあくまでも一つの企業、それぞれの企業に対してそのような談合というような、そういった疑いをかけるような発言は失礼に当たるということで、前回の第２回の定例会のときにも同じ話をさせていただいているつもりでございます。\n あと、今言われた、社会的な見識という部分については、これは何度も申し上げさせていただいておりますが、社会的見識と佐々木議員が主張されることについては、それは佐々木議員がおっしゃるとおりで、それについては、私はどうこう言う立場にはないということも何度も発言させていただいておりますし、私はその考えに立っていないということで、それについて証明という話をされておりますけれども、私はないと思っています。\n 談合があったということを何か提示していただけるのであれば、それについて私も答えることができますが、そうではない状態で、私は談合が行われていないと認識しているという発言をさせていただいているところであります。\n もう一つ、議会運営委員会でそのことが想定できたのではないかということでありますが、決定権のところに私はいなかったのですけれども、当然、その発言を取り消すべきだと考えて、あえて議事録精査を申し出ておりますので、その気持ちというところではおっしゃるとおりかもしれませんけれども、それが言論封殺につながるとは思っておりませんし、あくまでも議場というものは適切な発言を基に発言する場だと考えておりますので、その考えに沿って行った行為だと思っています。",
+    "text_length": 841,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-093",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和３年のときに、私は佐々木議員が反対討論の中で、談合以上の、談合を超越するような行為だといった発言をされたという記憶を持っています。\n ですから、それは聞いている側からすれば、談合と主張されているとしか捉えませんでしたので、疑いとか疑いではないという話をされておりますけれども、その企業からすればそういった疑いをかけられること自体が、非常に迷惑な話だと私は思います。\n もし議会で犯罪をしたでしょうと佐々木議員が誰かに言われたときに、佐々木議員はそれを全く放っておいていいと認識されているかどうかというのも、私はそういった立場にはないと考えておりますので、私の考えについては、一貫してこれまで言わせていただいている考えだということです。",
+    "text_length": 319,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-094",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "自衛隊の個人情報提供についてお答えいたします。\n まず、議員が適用されると指摘されている個人情報保護法第27条の規定につきましては、個人情報取扱事業者が、第三者に個人情報を提供する際の制限について定められている条項でありまして、この個人情報取扱事業者につきましては、同法第16条において、地方公共団体を除くと定義されているものであります。\n 市といたしましては、昨日の松原議員の一般質問の答弁でも申し上げているように、令和３年に防衛省及び総務省から発出された通知を踏まえ、行政機関の長が個人情報を利用及び提供する際の制限について定められております同法第69条に照らした上で、個人情報の提供を行っているものであります。\n 議員からは法の定め、自衛隊法ではないと、個人情報の関係、指摘でありますが、本件につきましては、国の通知の中にもあるように、自衛隊法第97条第１項に基づく市区町村の長が行う自衛官及び自衛官候補生の募集に関する事務として、自衛隊法施行令第120条の、防衛大臣は市区町村の長に対し、必要な報告または資料の提出を求めることができる、この規定に基づく求めに対し提供するもので、法に基づくものであると、私どもは認識しているところであります。",
+    "text_length": 524,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-041"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-095",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "個人情報保護法第69条は、同法第27条は準用というお話でございましたが、第27条をもって、この通告では違法という表現をされていますけれども、この辺は、はっきり地方公共団体は適用されないと明記されています。この通告自体本当に正しいかということもあるのですが、個人情報保護法第69条につきましては、確かに法令の定めによると規定されてございます。\n 先ほどお答えしたとおり、自衛隊法及び施行令の規定に基づくものと認識しておりますので、これは議員の見解とは相違しているということで、我々の考えを述べたまでです。",
+    "text_length": 251,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-043"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-096",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "保険証送付の個人番号の一部利用についてお答え申し上げます。\n 前定例会の後期高齢者医療特別会計補正予算（第１号）で、佐々木議員より、被保険者への加入者情報等の送付に当たり、下４桁の個人番号を記載することの法的論拠は何か、厚生労働省はどのような権限で通知を示したのかとの質疑をいただきました。\n 前回も答弁しておりますとおり、本年１月９日付厚生労働省の通知により、被保険者等への加入者情報等の送付につきまして、個人番号の下４桁を含む加入者情報を通知することとされ、またこの中で、個人番号の下４桁等の送付の事務につきましては、個人番号の下４桁のみをもって個人番号に該当するものではなく、各保険者等が保有するデータの正確性を確保するために行うもので、医療保険の保険給付の事務処理に関する加入者情報の管理等といった利用目的の範囲内であり、通知できるとされておりますことから、市としましても、国からの通知により対応したところであります。",
+    "text_length": 413,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-045"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-097",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "再質問にお答えいたします。\n 前回の答弁で法的論拠を述べていない、一部改正法でマイナンバーカードと健康保険証の一体化により、保険証の廃止と資格確認書の提供が決定したことを論拠にしたとおっしゃっておりますが、前回の質問でお答えしている内容としましては、厚生労働省の通知についても触れております。\n 内容としましては、令和５年６月にマイナンバー法等の一部改正で、マイナンバーカードと健康保険証の一体化により、健康保険証の廃止と資格確認書の提供が決定し、５年12月に現行の健康保険証の発行は６年12月２日に終了すると閣議決定され、これを受けて、円滑にマイナ保険証に移行するための対応として、本年１月９日付厚生労働省の事務連絡により、被保険者等への加入者情報等の発送について、個人番号の下４桁を含む加入者情報を通知することになったもので、この通知に基づき、市が対応するものであるとお答えしております。\n もう１点ですが、通知に個人番号を記載することは、いわゆる番号法に違反するのではないかというところですが、個人番号の下４桁は、それのみをもって行政手続における特定の個人を識別するための番号利用等に関する法律第２条第５項及び第８項に規定する個人番号そのものではないとされておりますので、そこに論拠を求める必要はないのではないかと考えております。",
+    "text_length": 568,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-047"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-098",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま個人番号の部分利用というお言葉をお話しされていらっしゃいましたが、下４桁は個人番号の一部を切り取った番号であり、個人番号ではないと言われておりますので、この個人番号の法令に書かれるものではないと考えております。\n （発言する者あり）",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-057"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-099",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "再々質問にお答えいたします。\n 先ほども答弁させていただいたのですが、個人番号の下４桁等の送付事務につきましては、個人番号の下４桁のみをもって個人番号に該当するものではなく、各保険者等が保有するデータの正確性を確保するために行うもので、医療保険の保険給付の事務処理に関する加入者情報の管理等といった利用目的の範囲内であるということで、厚生労働省からの通知があり、ここにはっきりと、下４桁のみをもって個人番号に該当するものではないと通知がされております。",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-067"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-100",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "高田光徳市立病院事務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "個人情報の扱いの認識について質問いただきましたので、お答え申し上げます。\n これまでの議会において、議員から答弁要求のありました案件につきましては都度、法や国の示す指針などを基に判断し、プライバシーの保護に努め、また、係争中でもありましたことから、答弁を控えることが必要なことについてはその旨、答弁したものでありますが、病院以外での市民の個人情報の扱いに関しましては、お答えする立場にはないと考えておりますし、比較してお答えするものでもないと私は捉えております。\n 公務員の個人情報に関して、一般論で申し上げますと、本市の情報公開制度や個人情報保護制度の審査基準などにおいて、公務員の氏名公表の取扱いについては、該当個人が公務員の場合でも、民間人と同様に個人情報は保護されます。\n しかし、公務員の担当する職務を遂行する場合における当該活動に係る情報であるときは、民間人と異なって、一定の個人情報を公開すべき場合があると考え、当該公務員の職務活動についての情報のうち、当該公務員等の職、氏名及び当該職務活動の内容は公開することとしております。\n ただし、公務員の職務活動に係る情報であっても、開示することにより、当該公務員の権利を不当に侵害し、または生活に不当に影響を与えるなど、それが不開示事由に該当する場合は、その職、氏名及び職務活動の内容を含めて全体が不開示とされることもあります。\n また、公務員の人事管理上保有する勤務成績、健康情報、分限処分、その他の行政措置や所得情報等は、当該公務員等にとっては、職務に関連した私事に関する情報でありますので、職務活動に係る情報には該当しないとされ、これらの考え方は、地方公務員法の規定に抵触しているとは考えておりませんし、これらの考え方と各事案の内容に基づいて、総合的に判断するものと考えております。",
+    "text_length": 774,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-077"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-101",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "職員労働組合事務所について２点質問いただきましたが、私からは１点目についてお答えいたします。\n 職員労働組合の新庁舎での事務室設置につきましては、昨年の第４回定例会及び本年第２回定例会でも佐々木議員の一般質問にお答えしているように、市として、施設の用途や目的を妨げるものではないと判断し、使用を許可しており、その使用許可に際しては、深川市公有財産規則第22条に基づき、文書決裁により使用を許可することを決定しているものであり、使用許可に係る起案文書には、深川市公有財産規則第22条に基づく総合庁舎の使用許可について、次のとおり許可することとしてよろしいですかと明記してあるものでございます。\n また、使用料の積算に関しましては、職員労働組合同様に、庁舎の使用許可申請のありました他の団体も含め、公有財産規則の第25条及び第37条に規定されている貸付料算定基準に基づき算定しております深川市総合庁舎会議室等使用条例で定める新庁舎大会議室の使用料を基準に積算しておりまして、他施設との比較にはならないものと考えております。\n また、電気料等の加算料金につきましても、公有財産規則第29条及び第38条の規定に基づき負担額を決定しているものであり、いずれも規則に基づき決定するよう定められておりまして、適正に積算しておりますので、民間相場との比較は行っていないものであります。",
+    "text_length": 584,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-079"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-102",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "伊藤正志教育部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私からは、職員労働組合事務所についての２点目、北海道教職員組合に小中学校校舎の使用を認めるかについてお答えいたします。\n 初めに、市立小中学校の施設の使用については、深川市立学校施設使用条例の第２条において、学校教育法第137条の範囲内において、教育委員会は学校長の意見を聞き、これを使用させることができること及び第４条に施設使用料を定めております。\n 学校教育法第137条につきましては、学校教育上支障のない限り、学校には、社会教育に関する施設を附置し、または、学校の施設を社会教育その他公共のために利用させることができると定めているものでございます。\n また、深川市立学校管理規則の第26条において、学校施設は、法令及び条例に定めがある場合を除き、次のいずれかに該当するものは、これを利用することができないとしておりまして、例えば宗教団体のほか、私的営利を目的とする場合などを定めています。\n 本市においては、北海道教職員組合に事務所としての使用を認めた例はなく、これまでそのような申請を受けたこともありません。\n 質問につきましては、具体的な申請があった場合には、申請内容を十分に確認した上で、これらの法令や条例等により判断するものでございます。",
+    "text_length": 526,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-080"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-103",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "再質問にお答えいたします。\n まず、深川市公有財産規則第22条のどの号に基づいているのかと、それが無効ではないかということで、それに当たり、市長が特に認めたものについてと思いますので、お答えします。\n 詳細の記載がなく、分かりにくい起案内容ということでの指摘と思いますけれども、公有財産規則第22条では、財産の使用を許可することができること、許可申請を提出しなければならないこと、許可書の交付をしなければならないこと、このような規定がされており、これらの行為が第22条に基づくこと、また、起案文書では第22条に基づくとして、許可申請についてと、許可することとしてよろしいですかと並列で表記しており、許可することを決定している決裁になりますので、決裁自体は有効であると考えております。\n また、どの号にということでございますが、職員労働組合については第22条第１項第７号、その他市長が適当と認めるときに該当するものとして許可することとしており、これは答弁でも申し上げましたように、市として、施設の用途や目的を妨げるものではないとの判断から、市長が適当と認めているもので、当然そう判断する際には、関連する使用料の協議、条例の改正等ございましたので、そのときには市長に確認しており、決裁には、決裁規定に基づき部長の決裁となってございますが、市長まで確認いただいた中での同意の決裁ということであります。",
+    "text_length": 597,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-082"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-104",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "伊藤正志教育部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "佐々木議員からの再質問にお答えいたします。\n 学校教育法の第137条の部分でございますが、議員が質問された北海道教職員団体につきましては、地方公務員法の第52条に基づく職員団体となりますが、学校管理規則第26条の利用できない事項に職員団体は明記されておらず、学校教育法第137条の範囲については、利用内容や目的により判断するものと考えますことから、職員団体であることのみをもって判断はできないものと考えているところでございます。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-083"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-105",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "再々質問にお答えいたします。\n 先ほど申し上げたとおり、しっかりと意思決定した上での部長までの決裁としておりますので、決裁自体は有効と考えております。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-085"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-106",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "香川貴敬経済・地域振興部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "食料・農業・農村基本法改正による今後の農業への影響についてお答えいたします。\n 初めに、食料安定供給から食料安全保障・食料自給率の位置づけ後退と食料輸入拡大思想についてですが、食料・農業・農村基本法の中では、食料安全保障を基本理念の柱として位置づけた上で、その定義を、良質な食料が合理的な価格で安定的に供給され、かつ、国民一人一人がこれを入手できる状態としており、この中に食料安定供給は含まれているものであります。\n また、食料の安定供給については、国内の農業生産の増大を図ることを基本とし、これと併せて安定的な輸入、備蓄の確保を図るとされておりますが、国会の中では、国内で作れるものは国内で供給、それができないものについて輸入の安定化、備蓄を組み合わせていくとの答弁がなされているものであります。\n さらに、食料自給率については、国内で生産される食料が、国内消費をどの程度充足しているかを示す指標として、引き続き位置づけることとされておりますので、市といたしましては、その位置づけの低下や輸入が拡大するといった捉え方はしていないものであります。\n 次に、輸入米への影響と対策についてでありますが、米国産米が国産米より半値程度で販売され、大手総菜会社が輸入米へ切替えを行っていることにつきましては、詳細については不明なため、影響についても不明ですけれども、国内の人気スーパーが、総菜で使用するお米を輸入米と国産米のブレンド米に切り替えたというような内容のインターネットへの書き込みは確認しているものであります。",
+    "text_length": 655,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-088"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-107",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "香川貴敬経済・地域振興部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "確かに法の中では、安定的な輸入といった言葉が書いております。\n これについては、国会の答弁をもう一度見たのですけれども、現在の消費に合わせた生産を図るためには、国内の農地の３倍以上が必要であるといった試算がある中で、どうしても自給できないものについては、輸入による供給も不可欠であるため、輸入の相手国の多角化などにより、輸入の安定化を図っていくといった答弁がございました。\n あくまで、自給できないものについての対応と理解しております。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-091"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-108",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "高田光徳市立病院事務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市立病院入院患者の新型コロナウイルス感染について質問いただきましたので、お答え申し上げます。\n 看護師からの感染が疑われる患者への補償についてでありますが、質問の患者さんの感染状況などについては分かりませんが、感染のルートとしましては、入院前から感染しており、入院後に発病、陽性が確認される場合、入院後に同室者や面会者から感染する場合、医療従事者からの感染など、幾つもの感染ルートが考えられます。\n 感染したと思われる日から１週間程度、陽性の確認に時間を要する患者さんもおられますし、無症状の感染者も多く、様々な感染防止対策を取っていても、完全に感染を阻止することは非常に難しいことであると捉えております。\n 現状の医療費の仕組みとしまして、新型コロナウイルス感染症患者への公費負担や補償といった制度はございませんし、医療従事者は、その状況に対応した感染対策をして業務に当たっておりますので、故意に感染させることはありません。\n 入院患者さんの感染が確認された都度、本人、家族へ説明を行い、理解いただいているところであります。\n 入院中に新型コロナウイルスに感染しますと、入院治療が必要な主病の治療が遅延する患者さんもいらっしゃることは承知いたしておりますけれども、新型コロナウイルス感染症が治り次第、早期に退院いただけるよう治療しております。",
+    "text_length": 572,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-094"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-109",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "香川貴敬経済・地域振興部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "こめッちカードに関わって質問がありましたので、お答えいたします。\n こめッちカードにつきましては、深川市商店街振興組合連合会が実施しているものでありますので、議員の提言につきましては、実施団体のほうにお伝えしてまいりたいと考えております。\n また、助成に関する質問もありましたが、市では、当該事業のＰＲ等の面で、実施団体に助成を行っているところでございます。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-097"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-110",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "香川貴敬経済・地域振興部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "持続可能な農業の実現に向けた取組についてお答えいたします。\n 初めに、１点目の本市の離農の現状と今後の担い手対策についてでありますが、離農の状況につきましては、農業委員会の農地台帳によりますと、直近の５年間で103戸が減少しており、平均すると、年に20戸程度が離農している状況となっております。\n 主な離農理由といたしましては、高齢化や後継者不在によるものとなっており、年々農家戸数は減少してきていることから、担い手の確保は農業、農村の維持のために大変重要であると認識しております。\n 次に、本市における担い手対策についてですが、新規就農の確保・育成に向け、市、ＪＡきたそらち、深川未来ファーム、新規就農等受入協議会など関係機関・団体が連携し、大阪や東京、札幌などで開催される新規就農フェア等のイベントへ積極的に参加し、新規就農希望者の確保を図っているところであります。\n また、市内での研修から就農に当たっては、深川未来ファームの研修生を中心に、深川市新規就農等受入協議会、深川市新規就農支援会議と連携した新規就農育成プログラムを展開しており、深川未来ファームの自社農場での研修のほか、研修受入れが可能な農業者の下で実践的な研修を行うとともに、就農に向けた経営計画の作成や補助事業の活用検討を進めております。\n さらに、就農後は深川地区担い手プロジェクトチームと連携し、定期的な巡回訪問により生産指導等を図るなど、募集から定着までを一連の流れとしてフォローアップする体制により、新規就農者の確保・育成に取り組んでいるところであります。\n こうした中で、市内では、今年の１月から２人の方が新たに独立就農されたところでありまして、効果が徐々に出てきていることから、今後におきましても、引き続き、関係機関・団体と連携を図りながら取り進めてまいりたいと考えております。\n なお、深川未来ファームにつきましては、円滑に研修を行うために重要な役割を担っており、現在９人の研修生がそれぞれ就農に向けて、社内及び農業者の下で研修を進めているところでありますが、その深川未来ファームの活動が、より分かりやすく市民の皆様に知っていただくことは重要でありますので、効果的な方法について考えてまいりたいと思っております。\n 次に、２点目のスマート農業の本市の現状についてでありますが、農林水産省ではスマート農業を、ロボット技術やＩＣＴ等の先端技術を活用し、超省力化や高品質生産等を可能にする新たな農業と定義しており、農作業の省力化や労力軽減、生産性向上等を目的に、活用促進が図られているものであります。\n 市内におけるスマート農業の取組につきましては、主に田に設置し、時間と場所を問わず水位が分かり、リアルタイムで通知が届くなどの機能を有した水管理機器、主に農薬散布に使用され、圃場がぬかるんでいても関係なく、上空から防除を行うことができるドローン、ＧＰＳガイダンスシステムによって、農業機械の最適な作業ルートによる自動走行が可能になるＧＰＳガイダンス装置並びにハンドルを自動制御し、設定された経路の自動走行が可能になる自動操舵装置を搭載したトラクターや田植機、コンバインなどが活用されており、平成28年以降、把握している範囲で257台の機器等が導入され、年々増加している状況にあります。\n そうした中で、いわゆるスマート農業技術活用促進法が本年10月１日に施行されることから、これまで以上にスマート農業の開発、普及が促進されることが期待されますので、本市におきましても、持続可能な農業の実現に向けて、国の事業を活用するなど、スマート農業の普及、拡大に向けた取組を推進してまいりたいと考えております。",
+    "text_length": 1539,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-101"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-111",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "森林環境譲与税についてお答えいたします。\n 森林環境譲与税につきましては、市町村及び都道府県が実施する森林の整備及びその促進に関する施策の財源として、令和元年度より譲与されているものでありまして、本市におきましては、森林整備に関する施策を中心に、森林整備への市民に向けた普及啓発、木材の利用の促進などに活用しているところであります。\n その一方で、田畑議員が触れられたとおり、本年度から、森林環境譲与税の財源となる森林環境税が、個人住民税均等割の枠組みを用いて、国税として１人年額1,000円が徴収されることとなったものであります。\n 初めに、１点目の配分基準の変更に伴い、森林環境譲与税がどのように変わるかについてでありますが、令和６年度税制改正の大綱により、森林環境譲与税の譲与基準が変更され、先ほど質問の中にもありましたとおり、これまで私有林の人工林面積で50％、就業従業者数20％、人口30％の譲与割合であったものが、私有林の人工林面積においては50％を５％アップして55％へ、人口においては、その分30％から５％削減し、25％に変更になったことに伴いまして、私有林人工林面積の多い深川市への譲与額につきましては、北海道の試算によりますと、3,416万円から453万円増の3,869万円となる見込みとなっております。\n 次に、２点目の森林づくりに係るＪ−クレジット制度の導入など今後の取組についてですが、本市におきましては、昨年３月２日にゼロカーボンシティふかがわを宣言したところでありますが、その実現に向けては、森林を適切に整備、保全し、森林によるＣＯ２吸収量の維持、増加を推進していくことが非常に重要と考えているところであります。\n 質問のＪ−クレジット制度の導入についてですが、本制度につきましては、森林管理等による温室効果ガスの排出削減量や吸収量を、クレジットとして国が認証する制度であり、クレジットを創出、販売することで木材販売収入以外の売却益の獲得が可能となります。\n また、さらなる森林整備につながることなどのメリットがあるものですが、これらの取組については、有効な手段であると考えるものの、航空レーザーによる森林調査、クレジット発行までの事務手続や現地調査の実施、二酸化炭素吸収量の報告、クレジットの販売先の確保など様々な事務作業が発生するほか、細かな要件等もあります。\n このため、現在北海道において試行的に実施している道有林での取組について、そのノウハウが提供されることになっておりますので、それらを参考に検討してまいりたいと考えております。\n なお、森林づくりに関する本市の取組といたしましては、現在、私有林の保育間伐や森林作業道の補修等に対する支援などのほか、本年度から新たな取組として、被害地造林や下刈り事業に対しても支援を行うこととしておりますが、今後におきましても、これまで取り組んできた森林整備に対する支援を継続しながら、林業専用道の新規整備にも取り組むなど、より一層の森林づくりの促進に努めてまいりたいと考えております。\n 次に、３点目の森林環境譲与税の活用に係る市民からの意見聴取についてですが、森林環境譲与税の活用に当たっては、現在、関係団体からの提案などを踏まえ、使途の方向性を決定しておりますけれども、市民の意見・提案を踏まえ、その使途を検討することは、市民の森林や木材に対する意識の向上や、使用方法の視野を広げる上でも非常に重要なことと考えております。\n このため、現在、専門的知識を有しております市有林運営委員会の委員さんから意見をいただくことを検討しておりますが、それ以外からの意見を募ることについても、どういった手法があるのかを含め、十分検討してまいりたいと考えております。",
+    "text_length": 1566,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-103"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-112",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "伊藤正志教育部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "スポーツ振興についての質問にお答えいたします。\n スポーツ振興くじ助成は、独立行政法人日本スポーツ振興センターが、スポーツくじの販売により得られる収益を基に、地方公共団体及びスポーツ団体が行うスポーツ振興を目的とする事業に対して助成するもので、スポーツ競技施設の新設、改修や機器の整備などハード事業に対するもの、スポーツ教室や大会開催などソフト事業に対するものなど、七つの助成事業がございます。\n 本市での活用事例といたしましては、スポーツ施設整備として、平成28年度に陸上競技場改修、令和元年度に市民球場改修、２年度に市民テニスコート改修を実施し、対象経費の３分の２から４分の３以内の割合で、事業費の総額５億5,550万円のうち、２億400万円の助成を受けたところでございます。\n また、陸上競技場の機器整備として、令和元年度に円盤・ハンマー投げ用囲い、２年度に棒高跳び用マット、３年度に写真判定装置、４年度にハードル一式を購入し、対象経費の５分の４以内の割合で、事業費の総額2,877万円のうち、1,789万4,000円の助成を受けたところでございます。\n スポーツ振興くじ助成は、開設から37年が経過している総合体育館はもとより、一番直近に建設された温水プールでも開設から24年経過するなど、経年劣化が進んでいる多くのスポーツ施設を所有している本市にとりまして、その改修や備品等の更新のための貴重な財源の一つであります。\n 助成要件が毎年のように見直されるほか、助成事業が必ず採択されるわけではないとともに、助成事業が採択されたとしても、申請額どおりに決定されるとは限らないなどの制約が伴うことがございます。しかし、将来を担う子供たちが様々なスポーツを経験することができるよう、既存スポーツ施設の適切な整備や活用促進に心がけますとともに、幅広い年代の方に安心・安全に、生涯にわたりスポーツを続けていただくためにも、スポーツ振興くじ助成は今後も積極的、計画的に活用してまいりたいと考えております。",
+    "text_length": 850,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-105"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-3-113",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 3,
+    "schedule_name": "09月04日-02号",
+    "date": "2024-09-04",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ダブルケアについての質問に順次お答えいたします。\n １点目、ダブルケアラーの本市における現状についてでありますが、ダブルケアラーについて、介護申請等の相談や、要介護者の家族からは具体的な相談やケースの把握はほとんどなく、また、子育て世帯からの相談も現在までに受けていないところであります。\n 本市の状況としては、一つ目に、介護を受けている方の子供世代は子育てを終了しているケースが多いこと、二つ目に、若くして介護を受けることになった方の場合は、配偶者が介護者となる場合が多いこと、三つ目に、市内で介護を受けている方で、子供は市外で生活して、キーパーソンとして支援しているケースも多いことから、現状では、当市で実際にダブルケアをされている方は多くはないと考えられますが、今後高齢化が進行していくことが見込まれることから、当市も増加していくものと考えられます。\n ２点目のダブルケアなどによる孤立を防ぐ支援策についてでありますが、まずは、必要な方に必要な支援が届いているかどうかを把握することが大切であり、毎年高齢者現況把握として、民生委員の方に70歳以上の高齢者宅へ個別訪問を行っていただき、高齢者の状況を把握しております。\n また、介護予防事業や地域包括支援センター業務においても、地域に出向く中で、ケースの把握に努めているところであります。\n ダブルケアなどにより孤立している方がいた場合は、その方の置かれている状況を十分確認し、庁内の関係部署やサービス事業所などの関係機関と連携し、住み慣れた地域で生活を続けられるよう、必要なサービスへつなげていく支援を行ってまいります。\n ３点目の本市でのケアラー支援条例策定の考えについてでありますが、北海道ケアラー支援条例の内容は大きく、基本理念、道民・事業者・関係機関・支援団体の役割、普及啓発の促進、早期発見及び相談の場の確保、ケアラー支援等が上げられております。\n 普及啓発につきましては、毎年11月に、北海道でケアラー支援推進月間と定められていることから、本市でもホームページや公式ＬＩＮＥにおいて、ケアラーの定義、相談窓口などを周知することを検討しております。\n 本市での条例策定につきましては、現在のところ考えておりませんが、日々の介護予防事業や地域包括支援センター業務において、ケアラー支援の普及啓発を行うとともに、要介護者とケアラーが周囲から大切にされ、社会から孤立することなく、希望を持って暮らすことができるよう、支援を行ってまいりたいと考えております。",
+    "text_length": 1058,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-107"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-114",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "本多孝二議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "第３回定例会３日目の議事日程は、お手元に配付のとおりであります。\n 以上で報告を終わります。\n ──────────────────",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-115",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市長タウンミーティングについて２点の質問いただきましたが、関連がございますので一括してお答えいたします。\n 市長タウンミーティングにつきましては、昨年の第４回市議会定例会において、新田議員からも御提言いただきましたが、私もかねてより市政や地域の課題について市民の皆さんと直接意見を交換することは、まちづくりを進めていく上で大変重要な機会であると捉えておりましたことから、今年度、市民の皆さんと本市の課題や未来などについて直接語り合う市長タウンミーティングを６月28日から７月８日までの間に、音江公民館、市役所、多度志コミュニティセンター、中央公民館、納内時計台プラザの市内５会場において開催したところであります。\n 今回、初めて開催したこの会では、御出席いただいた延べ73人の皆さんから、人口減少やまちづくり、子育てや住環境など、90件の御意見をいただき、小中高校生を含む市民の皆さんの思いを直接聞くことのできる大変貴重な機会となりました。\n また、各会場でいただきました御意見につきましては、庁内で共有し、今後の施策に生かしていくとともに、広報ふかがわと市ホームページに主な意見の内容とそれに対する私のコメントを掲載し、当日出席できなかった皆さんにもその状況について紹介させていただいております。\n 今回は、初の試みということもあり、特定のテーマや対象者、世代などに縛りを設けず、広く市民の皆さんと意見交換を行ったところでありますが、より多くの皆さんに御出席いただけるよう、開催する場所や曜日、時間帯、テーマの設定や開催方法などを含め、広く検討を進めながら今後もこのタウンミーティングを発展、継続してまいりたいと考えております。",
+    "text_length": 715,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-116",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロナウイルス感染症について２点質問いただきましたが、私からは１点目、流行を最小限にとどめるための市の対応についてお答えいたします。\n 新型コロナウイルス感染症につきましては、令和５年５月８日より法律上の位置づけが５類感染症へ移行した後は、季節性インフルエンザなどのほかの感染症と同様に手洗いや手指消毒、換気など日常的な予防方法や症状がある場合には、マスクの着用、無理をしないで静養するなど、基本的な感染症対策について市民向けの周知を継続的に行っているところであります。\n 今後、秋から冬にかけましては、感染症が流行しやすい季節になってまいりますので、感染症の拡大を最小限にとどめるため、基本的な感染症対策の必要性について市民周知を継続するとともに、国や北海道の情報等を注視しながら、情報の発信や啓発活動に努めてまいりたいと考えております。",
+    "text_length": 372,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-117",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "高田光徳市立病院事務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "私からは、２点目の待ち時間への影響と感染者の適切な診察についてお答え申し上げます。\n これまでも外来診療に関する待ち時間の問題につきましては各議員から御指摘などいただいておりますが、現状においても根本的な解決には至っていない状況であります。\n 議員からの質問の新型コロナウイルスに起因する待ち時間への影響はほとんどないと捉えております。その理由としましては、現在は救急外来やドライブスルー方式で対応する方法を５月中旬に中止しましたので、１階フロアの一部に新型コロナウイルス感染症対応専用室を設け、発熱者や感染者と一般患者の動線を隔離した上で、外来担当とは別に医師、看護師を配置し、診察、検査、説明などを行い、速やかにお帰りいただいているためであります。\n 新型コロナウイルス感染症による受診者数が多い場合の待ち時間や検査結果待ちの時間は要しますが、適切なタイミングで診察を受けられていると捉えております。また、各診療科においても看護師が熱や体調不良について問診を行い、その予兆があれば発熱外来へ案内し、適切な対応を取れるように努めております。\n 今後の再流行が懸念されておりますので、感染拡大時には対応方法、人員配置などの見直しを含め、院内に設置しております医師をはじめとする多職種で構成する感染管理委員会で検討しつつ、医療提供体制の維持に努めてまいりたいと考えております。",
+    "text_length": 587,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-118",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "宮森栄治副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "食品ロス削減のための30・10運動についてお答えさせていただきます。\n 30・10運動につきましては、平成23年に長野県松本市が残さず食べよう30・10運動を始めたことを機に広まった運動で、その後、令和元年10月に施行されました食品ロスの削減の推進に関する法律の第９条におきまして、10月を食品ロス削減月間に、そして10月30日を食品ロス削減の日と規定しておりまして、その10月の10と30日の30が30・10運動に由来すると言われているところでございます。\n 30・10運動については、新田議員も述べられておりましたように、飲食店で行われる宴会などの際に、開始後の30分間と閉会前の10分間は自席で食事を楽しみ、食べ残しを減らそうという運動でありまして、この運動に係る本市の取組を申し上げますと、市内飲食店に30・10運動のポスターの掲示を依頼するといったことや、市内事業所に文書で30・10運動の取組を依頼してきたところです。\n また、30・10運動を包含する食品ロス削減月間におきまして、市内スーパーや市の指定ごみ袋販売店に毎年ポスターを配付しているほか、市広報紙やホームページでも周知しているところです。\n こうした中、食品ロスの現状を国の公表資料で見てみますと、国民１人当たりの１日の食品ロス量がおにぎり１個分となり、年間にいたしますと約38キログラムにもなることから、本市といたしましては、30・10運動を重要な取組の一つとして捉えまして、引き続き推進してまいりたいと考えております。\n 特に新型コロナウイルス感染症が５類に移行後、飲食機会が増加していることや来月が食品ロス削減月間に位置づけられていることから、様々な機会や広報媒体を活用し30・10運動の普及を図り、市民の皆さんに食品ロス削減への理解と関心が一層深まるよう努めてまいりたいと考えております。",
+    "text_length": 785,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-119",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "三浦浩二教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "教職員のワーク・ライフ・バランスについての質問にお答えいたします。\n 近年、全国的に教員の人員不足や長時間労働が課題となっており、教育現場における働き方改革の推進が急務であります。深川市教育委員会におきましては、平成31年２月に学校における働き方改革アクションプランを策定し、令和２年１月に改定も行っております。このアクションプランでは、年間の時間外在校時間の目安を360時間以内とすることやワーク・ライフ・バランスに関する取組などを示し、これまで学校と連携しながら働き方改革を進めてまいりました。\n しかしながら、長時間労働につきましては、本市においても全国的な課題と同様の状況にありまして、令和５年度１年間の市内小中学校に勤務する校長、教頭を含めた127人の教員の時間外在校時間について、アクションプランの目標としている年間360時間以内を達成した者は59人で、達成率は46.5％となっており、過半数が目標未達成となっております。\n こうした状況もありますことから、現在深川市教育委員会では、近々アクションプランの改定を目指しておりまして、その中では、校務の効率化と役割分担の推進、部活動指導に関する負担の軽減などを柱として整理するとともに、ワーク・ライフ・バランスに関しては、これまでの月２回以上の定時退勤日の設定に加えまして、15日以上の年次有給休暇の取得促進を盛り込むことなどについて校長会等と協議しながら検討を進めているところであります。\n また、ワーク・ライフ・バランスの実現に向けましては、校務の効率化による負担軽減策も必要なことから、その取組の一つとして、本年度は校務支援システムを導入し、校務ＤＸを進めることで効率化を図り、時間外在校時間の縮減につなげていきたいと考えているところです。\n 議員の質問にもありましたように、教職員が働きやすい環境をつくることは、児童生徒や保護者にとっても安心感や充実につながるものと考えますので、本市といたしましては、次期の学校における働き方改革アクションプランを策定しまして、引き続きワーク・ライフ・バランスを含む働き方改革に努めてまいりたいと考えております。",
+    "text_length": 907,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-120",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "夏場の避難所開設時の対応についてお答えいたします。\n 市が指定しております避難所は、現在36施設ございまして、このうち市が所有している公共施設による避難所31施設のうち冷房設備が設置されている施設は、文化交流ホールみ・らいや経済センター、高等看護学院など約３分の１の10施設となっております。質問で述べられておりました公民館やコミュニティセンター等には冷房設備の設置はない状況であります。\n 現段階では、指定避難所のうち冷房設備が設置されていない施設に新たに冷房設備を設置する予定はないことから、夏の暑さ対策につきましては避難所を運営する際の課題の一つでありまして、御提言のありました移動式空調機を整備することは課題解決のための有効な手法の一つであると考えております。\n ただし、避難所となっている施設につきましては、施設ごとに避難スペースとなる部屋の広さや形状などが様々であることから、同一機種でそれぞれの施設に利用することが可能か、またどのような移動式空調機の設備が有効かなどの検証に加え、整備に際して有利な財源等がないか、さらに今後の各避難所施設における冷房設備の整備状況なども踏まえた上で、避難所運営に際しての課題解決に向けた検討を進めてまいりたいと考えております。",
+    "text_length": 537,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-121",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大雨による災害時の対応について３点質問いただきましたので、順次お答えします。\n 具体的な数値が入りますので、答弁が若干長くなることを御承知願いたいと思います。\n １点目と３点目については関連いたしますので、一括してお答えさせていただきます。\n 本年７月23日から24日にかけての大雨では、おとといの行政報告でも申し上げておりますように、７月としては日降水量が106ミリメートルの観測史上１位の豪雨となり、また昨年８月３日から６日にかけての大雨では降水量が69.5ミリメートルと、前線の影響による断続的な激しい豪雨となりましたことから、深川市災害対策本部を設置し、多度志地区へ避難指示を出すなど、市民の安全確保を第一に各所管において深川市地域防災計画に基づいた災害対策の対応に努めたところでございます。\n 災害復旧に向けた体制につきましては、道路、河川などの土木施設に係る対応として、公共土木施設災害復旧事業対応マニュアルに基づき、豪雨の終息後、速やかに都市建設課職員が手分けして、危険区域の警戒、巡視、道路通行の禁止の措置を講じたほか、復旧箇所の把握に努めたところです。\n また、農業被害につきましても同様に農政課職員が手分けして、被災箇所の把握を行ったほか、農業者からの連絡やＪＡきたそらち、各土地改良区などからいただいた情報の確認作業を行うなど、両課の連携はもとより、国と北海道を含めた関係機関と横断的な協力体制を取りながら、調査、取りまとめに当たったところでございます。\n これらの調査の結果、本年の大雨に関しての被害状況につきましては、まず河川、道路等の土木施設の被害は、河川被害が22か所、道路被害が40か所で約8,280万円。農業被害につきましては、冠水などによる農作物への被害が水稲、ソバ、大豆、小麦の合計で約32ヘクタール、約107万円のほか、農地への土砂流入などの被害が発生しており、被害の総額は約8,387万円を見込んでいるところでございます。\n また、令和５年の被害状況につきましても行政報告ベースでお答えさせていただきますが、河川、道路等の土木施設の被害につきましては、河川被害が４か所で約340万円。農業被害につきましては、冠水などによる農作物への被害が水稲、ソバ、合計で約12ヘクタール、約135万円のほか、農地等への土砂流入被害が発生しており、被害の総額は約475万円を見込んだところでございます。\n 続きまして、２点目の平成28年と30年の災害復旧の工事内容についてお答えします。\n まず、平成28年災害でありますが、これは三つの台風が相次いで北海道に上陸、接近し、北海道の天候に大きな影響を及ぼし、本市におきましても甚大な被害を被ったところであります。\n 平成30年災害につきましては、前線や台風７号の影響により全国的に広い範囲で記録的な大雨となり、本市においては観測史上１位となる３時間降水量72ミリメートルを観測するなど、28年災害を上回る被害を被ったところでございます。\n 両災害ともに北海道全域で大雨となり、市内を流れる石狩川、雨竜川ともに避難判断水位を超えたことから、農地と道路の冠水、河川の護岸決壊などの災害となったところでございます。\n 質問の市の工事内容のうち、まず平成28年度農地災害復旧工事について申し上げますと、石狩川の水位上昇に伴い、納内・内園地区の農地へ流入した土砂の撤去、圃場の整地を行ったもので、これは５工区、面積約20ヘクタール、事業費合計は、個人への支援38件を含め約１億1,000万円。\n 平成30年度農地災害復旧工事は、28年度と同様の工事を行い、１工区、面積約７ヘクタール、事業費合計は、個人への支援54件を含め約4,700万円。農地災害復旧工事合計は、延べ面積27ヘクタール、事業費１億5,700万円となったところであります。\n 次に、補助対象となる公共土木施設災害復旧事業と起債対象となる単独事業でございますが、平成28年災害では、公共土木施設は河岸決壊などが22か所ありまして、積みブロックなど護岸復旧を行ったもので、事業費約１億6,100万円。単独事業では道路路盤材の流出等の道路被害が11か所、河岸決壊、土砂埋塞などの河岸被害が29か所でありまして、事業費約2,400万円、土木施設災害復旧の合計は、河川被害51か所、道路被害11か所の事業費約１億8,500万円となったところであります。\n 平成30年災害では、公共土木施設は、河岸決壊などが22か所ありまして、積みブロックなど護岸復旧を行い、道路ののり面崩壊の復旧が１か所で事業費約１億5,300万円。単独事業では、道路路盤材の流出等の道路被害が56か所、河岸決壊、土砂埋塞などの河岸被害が47か所ありまして、事業費約3,700万円。土木施設災害復旧の合計は、河川被害69か所、道路被害57か所の事業費約１億9,000万円となったところであります。\n 最後に、国が行った工事についてですが、洪水により堆積した土砂等による流下断面不足を解消する河道掘削や流木除去、樹木伐採について、石狩川、雨竜川において予防保全も兼ねて取り組んでいただいております。\n 石狩川では、平成28年度と30年度において、納内地区を中心に14万2,800立方メートルの河道掘削を実施していただき、令和元年度には24万9,500平方メートルの伐木、抜根、いわゆる樹木撤去を行っております。また、雨竜川では、令和２年度に多度志・宇摩・ウッカ地先において25万5,000平方メートルの樹木撤去を実施し、本年度についても多度志地区において樹木撤去を行うと札幌開発建設部滝川河川事務所より伺っております。\n なお、北海道開発局では、近年頻発化する災害に備え、令和４年に雨竜川ダム再生事業を盛り込む雨竜川河川整備計画を改定し、６年度から雨竜第２ダムのダム堤体のかさ上げ工事に着手したところでございます。\n また、私が雨竜川治水促進期成会の会長という任に併せて、石狩川治水促進期成会の副会長という任もございますので、今後におきましてもほかの道内の治水関連の期成会と連携し、国土交通省や財務省等に対し、引き続き流域治水の促進に向けた要請活動に努めてまいりたいと考えます。",
+    "text_length": 2582,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-122",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市道一已８丁目線５番通り交差点の一灯点滅式信号機についてお答えいたします。\n 信号機の設置等の判断は、北海道公安委員会が行うこととなっているもので、事故等の発生状況や交通量等、様々な条件に基づき、新設や更新あるいは撤去等を判断していると伺っております。\n 質問にありました一灯点滅式信号機につきましては、通行ルールが浸透せず、かえって事故を引き起こすおそれがあるといったことから、警察庁から不必要と見られる一灯点滅式の撤去を検討するよう都道府県警察に通達が出されており、全国各地で設置数が減少してきている状況にあり、北海道公安委員会としても今後撤去していくものとして検討している信号機であるとお聞きしているものであります。\n 本年４月の交通事故により市道一已８丁目線と５番通りの交差点の信号機が破損した際には、深川警察署から地元の町内会にも十分説明した上で、破損した一灯点滅式信号機が撤去され、新たに一時停止の標識が設置されたものであります。\n 市におきましては、これまでも地域の町内会や関係団体等から信号機等の設置に関する御意見や御要望等をお聞きし、必要と思われるところに信号機等の設置が進められるよう、深川警察署を通じて北海道公安委員会に要望書を提出してきているところであります。\n 質問いただきました交差点も含めて、今後におきましても引き続き地元の町内会等の意見を広く聞きながら、公安委員会に対し、地域の実情も含め皆様の声をお伝えし、市内における交通の安全が図られるよう取り組んでまいりたいと考えております。",
+    "text_length": 657,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-123",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "菊入等議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "質問の農地の耕作状況についてお答えいたします。\n 今後、農家戸数の減少により耕作が難しくなる農地が発生することが予想されるが、農業委員会としての今後の農地の在り方についての見解を伺うについてですが、先日の田畑議員の一般質問での離農状況の答弁でありましたとおり、直近の５年間で103戸が離農している状況です。また、令和５年度末時点における１戸当たりの平均経営面積は22.5ヘクタールとなっております。\n 農家戸数の減少や１戸当たりの経営面積の増大等により、山間地に限らず、条件不利地まで手が回らなく、結果として議員の指摘のとおり、耕作が難しくなる農地が今後はより発生することが予想されます。\n しかしながら、本農業委員会としては、離農等によりあっせんの申出があった場合、優良農地のみが取得され、条件不利地が取得されないといったことがないようあっせんに努めております。\n 市内の農家戸数は減少しておりますし、１戸当たりの平均経営面積も増大しておりますが、まだまだ規模拡大に意欲的な農業者も多いことなどから、条件不利地であってもこういった農業者に耕作してもらい、遊休農地は発生していない状況にあります。\n 今後、１戸当たりの経営面積が限界に達し、条件不利地の耕作まで手が回らなくなるなど、地域での耕作が困難になる場合には、計画的な植林転用等の非農地化も視野に入れ検討すべきと考えています。",
+    "text_length": 591,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-124",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "米澤弘美市民福祉部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "市が行う助成金等の交付要件の緩和について２点質問いただきましたので、順次お答えいたします。\n まず、１点目、福祉関係の助成金で住民税が非課税世帯に限られる市の事業につきましては、重度障がい者ハイヤー料金助成事業、人工透析患者通院交通費助成事業、訪問看護ステーション交通費助成事業の３事業が福祉関係において非課税世帯を対象とする事業であります。\n 各種助成の対象といたしまして、一つ目の重度障がい者ハイヤー料金助成事業の対象者につきましては、障がい等級が１・２級で移動に制限のある身体障がい者や療育手帳Ａ判定の知的障がい者や児童を対象としております。\n 二つ目の人工透析患者通院交通費助成事業の対象者につきましては、腎臓機能障害により身体障害者手帳の交付を受け、人工透析のため、市内の医療機関に通院している方を対象としております。\n 三つ目の訪問看護ステーション交通費助成事業の対象者につきましては、医療保険の適用による訪問看護を利用している方が対象で、訪問看護ステーションの看護師が訪問する際の交通費の利用者負担分の一部を助成しています。\n ３事業とも非課税世帯を対象とし、通院などの交通費を助成することで障がい者等の福祉の増進や社会参加の促進など、利用者の負担の軽減を図ることを目的とし、支援を行っております。\n ２点目、住民税の非課税世帯に限る要件はなくすべきとの質問ですが、要件をなくすことで事業の対象者を拡大することとなりますことから、現状見直しは考えておりませんが、今後全道各市の状況などを把握し、事業の趣旨がより生かされ、個々の状況に応じた制度となるよう今後研究してまいります。",
+    "text_length": 695,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-125",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "宮森栄治副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "納内にある工場跡地についての質問にお答えいたします。\n この件につきましては、かなり時間が経過しておりますことから、これまでの経過について少し申し上げさせていただきたいと思います。\n 平成28年10月に遡りますけれども、当時納内の工場跡地に特別管理産業廃棄物倉庫建設予定地といった看板の設置を発端とし、その後東京に本店を置く企業がこの工場跡地にＰＣＢ廃棄物を保管する倉庫業を開始しようとする計画が判明いたしました。\n 農業を基幹産業とする本市にとって、また地域住民の健康管理面において様々な懸念が生じることから、納内地域では対策会議を開催し、対応を検討したり、地域や関係団体の連名でＰＣＢ廃棄物の持込みを反対する決議書を関係者へ送付したほか、本市といたしましても情報の収集や弁護士への相談などの対応に努めてきたところです。\n そこで、１点目の所有者との接点についてでありますが、工場跡地の所有者については、当時ＰＣＢ廃棄物を保管する倉庫業を行おうとする企業の代表取締役の方であることを確認しており、現在も同じ方が所有されています。\n 工場跡地については、これまで職員が現地を確認するなどして状況を把握していますが、当時設置されていた看板は現在倒れた状態で放置されており、また特別管理産業廃棄物行政の所管である北海道に対する企業の動きもないことから、市として土地所有者や企業と接点を持つまでには至っておりませんが、固定資産税に係る書類などのやり取りはできている状況にございます。\n 次に、２点目の市としての対応についてでありますが、ＰＣＢ廃棄物を保管する倉庫業への対応につきましては、全国のＰＣＢ廃棄物の処理が一定程度進んできている状況を踏まえますと、事業が開始される可能性は低くなってきているかもしれませんが、今後も北海道をはじめ、関係機関と情報共有を図りながら状況を注視してまいりたいと考えております。\n また、工場跡地ということで、時間の経過とともに瓦礫の飛散など、環境衛生上の懸念も高まってくるかと思います。跡地が民有地ということで、行政で対応できることに限界があるかもしれませんが、一度、関係する地域の皆さんから事情などをお伺いさせていただき、その上で対応を考えてまいりたいと思っております。",
+    "text_length": 950,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-4-126",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 4,
+    "schedule_name": "09月05日-03号",
+    "date": "2024-09-05",
+    "speaker": "田中昌幸市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "若い世代の交流の創出についての質問にお答えいたします。\n 全国的に都市部への人口流出が進むことに併せて、少子化も急速に進んでいる状況であり、特に若い世代の都市部への流出は、農業の担い手や企業の人手不足を引き起こすなど、経済全体に大きな影響を与えるに至っております。\n こうした中、国ではこども家庭庁において、若い世代の描くライフデザインや出会いを考えるワーキンググループを立ち上げるなど、若い世代からの意見を聞いた上で施策を推進するという取組の手法が進められているところであります。\n このように、若者が社会で果たす役割は重要度を増し、若者の力を生かすことが持続可能な社会に向けた重要なポイントとなっております。\n 鶴岡議員からは、農業や各分野の施設など、本市の魅力ある多くの資源を活用してまちづくりを進め、その推進のため若い世代から意見を聞くあるいは交流の場を創出してはという趣旨の御提言がございました。\n 本市といたしましても地域社会の活性化や次世代の育成、さらには少子化対策など、本市のまちづくりに関する内容につきまして若い世代から意見を聞いた上で各種施策を検討していくことは大変重要であると考えております。\n また、先ほど新田議員にもお答えいたしましたが、今回、６月から７月にかけて市長タウンミーティングを行いまして、参加された皆様からあらゆる分野にわたって様々な意見をお伺いし、大変参考になったところであります。\n 鶴岡議員御提言の取組については、若い世代が例えばまちづくりをテーマに自主性を持って交流していただくことが大切で、発展的あるいは創造的な交流に資するのではないかと考えております。そういった体制づくりのきっかけとして私が率先して声かけをするなど、若い世代の話を聞く機会を設け、その方たちが創出する交流の場を支えてまいりたいと考えます。",
+    "text_length": 778,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-5-127",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 5,
+    "schedule_name": "09月19日-04号",
+    "date": "2024-09-19",
+    "speaker": "本多孝二議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "初めに、総務経済常任委員長から議案３件、厚生文教常任委員長から議案２件及び陳情１件、決算審査特別委員長から認定７件の審査の結果報告がありました。\n 次に、厚生文教常任委員長から意見案１件、鶴岡議員外から意見案５件、市長から議案１件の提出がありました。\n 次に、教育委員会から令和５年度深川市教育委員会の活動状況に関する点検・評価報告書の提出がありましたので、お手元に配付しております。\n 次に、第３回定例会４日目の議事日程は、お手元に配付のとおりであります。\n 以上で報告を終わります。\n ──────────────────",
+    "text_length": 263,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-5-128",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 5,
+    "schedule_name": "09月19日-04号",
+    "date": "2024-09-19",
+    "speaker": "宮澤孝司議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "宮澤 孝司",
+    "member_faction": "令和公明クラブ",
+    "text": "〔登壇〕ただいま議題となりました議案第37号市税の納期の特例に関する条例を廃止する条例について、議案第42号市道の路線廃止について及び議案第43号市道の路線認定についての３件について、総務経済常任委員会で審査しました概要と結果について御報告申し上げます。\n 本議案は、今定例会において当委員会に付託され、９月６日に委員会を開催し、所管の部課長等の出席を求め、審査を行いました。\n 初めに、議案第37号市税の納期の特例に関する条例を廃止する条例について、質疑の中から主なものを申し上げます。\n 問い、ＪＡの組合員勘定を利用した地方税の一括納付の取扱いについて、道内各市や近隣町の状況はどうなっているか伺う。\n 答え、確認できる範囲では、道内35市中、士別市、名寄市、芦別市が同様の特例を設けており、士別市は、本市と同様に、本年度中か来年度には廃止する予定と聞いています。また、近隣町では、秩父別町も組合員勘定により一般の方とは異なる納期での取扱いをしていますが、一括ではなく４期で分納となっています。\n 問い、一括納付を廃止した場合、市が負担する手数料等にどのような違いがあるのか。\n 答え、組合員勘定による一括納付は、ＪＡに対して１件当たり100円の交付金を支出しています。一括納付廃止後は、金融機関に１件当たり数十円の振替手数料が必要となり、納付回数の増による手数料の増加は若干見込まれますが、大幅な増大ではありません。\n 質疑終結後、採決に入り、議案第37号は、全会一致をもって可決すべきものと決定しました。\n 次に、議案第42号市道の路線廃止について及び議案第43号市道の路線認定について、質疑の中から主なものを申し上げます。\n 問い、それぞれの路線の市道認定に至った経緯を伺う。\n 答え、西町５号線と西町５号南線は、既存の西町５号線が昭和57年に市道認定され、延長線上にある私道の市道認定について、地元町内会から相談を受け協議を行ってきた路線です。今回、沿線住民等の承諾を得ることができたことから、既存の市道を北側と南側で分割し、改めて北側を西町５号線とし、南側を西町５号南線として、新たに認定するものです。\n 二十四孝北４号線と二十四孝北６号中通線については、行き止まりの道路のため、平成27年以前の基準では、市道認定の対象にならなかったものですが、沿線住民等の申出により、認定要件に合致する路線であることから、除雪を行わない限定管理の市道として認定しようとするものです。\n 工業団地２号線については、新たな工場が新設されることもあり、広里工業団地の利便性向上のため、新たに市道認定するものです。\n 問い、市道認定要件を緩和し、平成28年度から限定管理市道としての認定が始まったが、これまでの認定路線数を伺う。\n 答え、平成28年度以降に認定した限定管理市道は16路線あり、今回の２路線を加えると18路線となります。\n 質疑終結後、採決に入り、議案第42号及び議案第43号は、全会一致をもって可決すべきものと決定いたしました。\n 以上で総務経済常任委員会の報告を終わります。",
+    "text_length": 1292,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-5-129",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 5,
+    "schedule_name": "09月19日-04号",
+    "date": "2024-09-19",
+    "speaker": "田畑陽美議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "田畑 陽美",
+    "member_faction": "民主クラブ",
+    "text": "〔登壇〕ただいま議題となりました議案第38号深川市地域包括支援センターの包括的支援事業の実施に関する基準を定める条例の一部を改正する条例について、議案第39号深川市国民健康保険条例の一部を改正する条例について及び陳情第２号物価上昇に見合う老齢基礎年金等の引き上げを求める陳情の３件について、厚生文教常任委員会で審査しました概要と結果について御報告申し上げます。\n 議案第38号及び議案第39号は、今定例会において当委員会に付託され、９月６日に委員会を開催し、所管の部課長等の出席を求め、審査を行いました。\n また、陳情第２号は、第２回定例会において当委員会に付託され、委員会を６月21日、７月９日及び９月６日の３回開催し、審査を行いました。\n 初めに、議案第38号深川市地域包括支援センターの包括的支援事業の実施に関する基準を定める条例の一部を改正する条例について、質疑の中から主なものを申し上げます。\n 問い、国の省令により、地域包括支援センターの職員配置基準を柔軟化する改正だが、本市における人員確保の状況と体制について伺う。\n 答え、これまで人員に不足が生じたことはなく、現在の体制でも十分に基準を満たしており、条例改正後もこれまで同様に対応していく考えです。\n 問い、深川市地域包括支援センターの事業実績のうち、権利擁護に関する延べ相談件数が令和５年度に増加しているが、主な相談内容を伺う。\n 答え、主に成年後見や消費生活に関する問題等の相談が多く、これらは１件に対して複数回にわたり相談に応じるケースが多いため、今後も延べ相談件数は増加することが予想されます。\n 質疑終結後、採決に入り、議案第38号は、全会一致で可決すべきものと決定いたしました。\n 次に、議案第39号深川市国民健康保険条例の一部を改正する条例について、質疑の中から主なものを申し上げます。\n 問い、新型コロナウイルス感染症に感染した被保険者に対する傷病手当金は、５類移行に伴い廃止されたが、コロナ禍における支給実績について伺う。\n 答え、傷病手当金の対象期間である令和２年１月１日から５年５月７日までの間で、４年度に３件の申請があり、総額10万8,212円を支給しました。\n 問い、現行の被保険者証の廃止に伴い、被保険者証の返還に関する罰則規定が削除されるが、被保険者証に代わり、今後発行される資格確認書の返還等は想定されないのか。\n 答え、これまでは、健康保険の資格を喪失した際に被保険者証の返還を求めておりましたが、今後はオンラインシステムで資格の有無を確認できるようになるため、資格確認書の返還等は想定していません。\n 質疑終結後、採決に入り、議案第39号は、全会一致で可決すべきものと決定いたしました。\n 次に、陳情第２号物価上昇に見合う老齢基礎年金等の引き上げを求める陳情について申し上げます。\n 陳情者は、全日本年金者組合深川支部支部長北風一憲氏で、陳情の趣旨は、近年、食料品や灯油・ガソリンなどの石油製品、電気代の値上げなど、生活に必要な物価の上昇が大きな負担となっているほか、女性の低年金問題の深刻化、年金生活者の単身世帯では、生活保護世帯へ移行する高齢者も増えてきていることから、高齢者も若者も安心して老後を暮らせるように、物価上昇に見合う老齢基礎年金等の支給額を引き上げることを要望する関係省庁への意見書の提出を求めるものです。\n 審査の中で、有働副委員長から、陳情の趣旨は賛同するものであるが、付された意見書の細部を修正し、公的年金が開始されることとなった目的、物価上昇などにより生活の変化が起きている現状や、陳情の趣旨を踏まえた上で、より強く訴える内容の意見書を提出したいとの発言があり、発言趣旨に沿った意見書が提出され、委員会は、有働副委員長から提出されました意見書も併せて審査に入りました。\n その後、採決に入り、委員会は、有働副委員長から提出のあった意見書を全会一致により関係機関に送付すべきものとし、本件を本会議に提出することを決定し、併せて陳情第２号は、全会一致をもって趣旨採択すべきものと決定いたしました。\n 以上で厚生文教常任委員会の報告を終わります。",
+    "text_length": 1735,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-5-130",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 5,
+    "schedule_name": "09月19日-04号",
+    "date": "2024-09-19",
+    "speaker": "伊藤美恵子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "伊藤 美恵子",
+    "member_faction": "民主クラブ",
+    "text": "〔登壇〕\nただいま議題となりました認定第１号令和５年度深川市一般会計歳入歳出決算認定についてないし認定第７号令和５年度深川市病院事業会計決算認定についての７件について、決算審査特別委員会で審査しました概要と結果について御報告申し上げます。\n 本件は、今定例会初日の９月３日に市長から提案があり、同日、決算審査特別委員会が設置され、付託されたものです。\n 付託後、最初の委員会では、正副委員長の互選、資料要求について協議を行うとともに、９月４日には要求資料の確認のための委員会を開催いたしました。\n その後、９月11日から13日までの３日間、委員会を開催し、11日には市長から各会計の決算認定について、企画総務部長及び担当部長から会計ごとの決算概要について、また監査委員から決算審査意見に係る概要の説明等を受けた後、書面審査に入りました。\n 13日午後からは、総括質疑を行いましたので、数多い質疑の中から主なものについて申し上げます。\n 問い、住民票等コンビニ交付サービス導入事業について、令和５年度のコンビニ交付の利用状況と利用方法の支援について伺う。\n 答え、本年３月から開始したコンビニ交付サービスは、郵便局の利用を含め、令和５年度の住民票等の各種証明書の交付件数は181件で、このうち55.8％が早朝、深夜、休日に交付されています。利用に当たっては、個人情報漏えい防止のため、マイナンバーカード所有者本人に操作していただくことから、取得方法や操作手順を市のホームページ等を通じて周知するほか、各店舗における操作方法の支援については、利用者の問合せに対応できるよう、店舗の協力を得ながら手順書を設置するなどの方法を検討したいと考えています。\n 問い、河川整備単独事業について、進捗状況と今後の進め方について伺う。\n 答え、本事業は、吉住川の延長約３キロメートルの区間の護岸整備を行うもので、令和４年度より詳細設計、工事に着手しています。令和４年度は延長47メートル、工事費1,557万円、５年度は延長156メートル、工事費6,215万円で、おおむね計画どおりに進捗しています。\n 今後については、令和６年度は予算額7,000万円で、延長約175メートルの工事発注準備を進めているところで、７年度以降は、残りの約2.6キロメートルの区間について、詳細設計を行う中で、適切な箇所への護岸効果を見極めながら事業を進めていきたいと考えています。\n 問い、公式ＬＩＮＥは、市からの情報がダイレクトに届き、災害などの場合もリアルタイムで情報が入手できる便利なツールだと思うが、導入からの登録者数の推移と年代別の割合を伺う。\n 答え、昨年８月に運用を開始した本市の公式ＬＩＮＥは、令和５年度末時点で約1,600人が登録し、本年９月11日時点では1,810人となっています。登録者の年代別の割合は、直近の登録者で誕生年が未回答などにより年代が不明な410人を除いた1,400人の内訳として、10代が20人で1.4％、20代が135人で9.6％、30代が268人で19.1％、40代が264人で18.9％、50代が324人で23.1％、60代が253人で18.1％、70代が110人で7.9％、80代以上が26人で1.9％となっており、より多くの方に利用していただけるよう、今後も周知等に努めていきます。\n 問い、新規事業として、北空知１市４町で設置した北空知成年後見相談センターについて、その活動内容と令和５年度の実績を伺う。\n 答え、活動内容は、成年後見制度等の普及啓発、市民や関係機関等からの成年後見制度等に関する相談業務、担い手の確保育成等の推進、意思決定支援チームの体制整備、成年後見制度の利用促進、後見人支援体制の整備、運営協議会の開催などがあります。令和５年度は、チラシ、パンフレット、ポスターを作成し、関係市町の施設や医療機関へ配布したほか、サロン等での出前講座、医療福祉関係者による研修会等での周知活動など、センター事業の普及啓発を図りました。\n センターへの相談件数は、深川市分として実件数19件、延べ22件の相談があり、内訳は電話７件、窓口での相談が７件、自宅訪問が８件となっています。また、担い手確保の取組として、市民後見人養成講習修了者を対象としたフォローアップ研修を２回開催し、計25人の参加がありました。そのほか、法定後見制度や任意後見制度の利用に際し、司法書士や弁護士との面談に同行するなどの活動も行っています。\n 問い、育児休業取得支援事業は、令和５年度中に増額補正を行った事業だが、最終的な実績を伺う。\n 答え、当初予算は150万円を計上しましたが、申請が当初の見込みよりも多くなったことから、第２回及び第３回定例会で補正予算を議決いただき、最終的な予算を300万円として事業を実施したもので、助成件数が９件、助成額は270万円となっています。\n 問い、まちなか居住推進助成事業について、リフォーム、新築、解体など各助成制度の実績を伺う。\n 答え、住宅リフォーム助成が163件、2,734万円、住宅持家促進助成が11件、1,040万円、中古住宅等取得助成が４件、130万円、老朽空き家解体助成が23件、480万円、その他助成とチラシ代を含め、全体で4,417万9,196円となっています。\n 問い、スポーツ合宿招致について、令和５年度の合宿実績が前年度と比べて増えた要因と、合宿チームと市民との交流事業などの考えについて伺う。\n 答え、令和５年度のスポーツ合宿の実績は、実業団、大学、少年団など合わせて延べ369団体、１万6,872泊で、４年度と比較して202団体、6,441泊の増となっています。合宿実績が増えた要因について、合宿団体へのアンケートなどからの推察ですが、空港などへの送迎やレンタカーの貸出し、合宿助成金の交付など、これまで継続して取り組んでいる本市の充実した合宿サービスが広く浸透してきていることや、各宿泊施設の丁寧な対応に高い評価をいただいたものと考えているほか、新型コロナウイルス感染症が５類感染症に移行され、各種大会などが再開されたことも関連するものではないかと考えています。\n 市民と合宿チームとの交流事業については、令和４年に続き、本年９月７日に本市で合宿を行っていた創価大学駅伝部の指導による陸上教室を開催し、市内外から35人が参加するなど、既に取組を始めているところです。合宿地での交流事業に理解を示されるチームもあり、どのような各種交流事業が可能か、合宿を予定されるチームと相談していきたいと考えています。\n 問い、マイナンバーカードの交付率と個人番号カード交付事務費補助金の内訳について伺う。\n 答え、本市のマイナンバーカードの交付率は、令和６年３月末日現在で78.2％となっており、全国交付率78.7％より0.5ポイント低く、北海道の交付率76.6％より1.6ポイント高い状況です。補助金の内訳については、マイナンバーカードの交付事務に当たる経費として、職員の時間外勤務手当等の人件費や申請に係る顔写真撮影の用紙・インク代等の消耗品費、マイナンバーカードの本人への送付や受け取り通知の郵送料が補助対象となっています。加えて、令和５年度は９月末まで、国によるマイナポイント事業が実施されていたことから、ポイント申請の支援事務に当たる会計年度任用職員の報酬等の人件費や、事業周知のための新聞折り込みの印刷等の経費についても補助されたものです。\n 問い、令和５年から開始された出産・子育て応援交付金事業について、事業の内容と実績を伺う。\n 答え、本事業は、妊婦や子育て期の家庭に寄り添い、出産・育児等の見通しを立てるための面談や継続的な情報発信等を行うことを通じて、必要な支援につなぐことを目的に、妊娠届出や出産届出を行った妊婦等に対し、伴走型相談支援の充実と経済的支援の計10万円相当の交付を一体として実施するもので、令和５年度の実績は、経済的支援として、妊娠中に出産応援分交付金の５万円を75人に、出産後に子育て応援分交付金の５万円を70人に交付しています。\n また、伴走型支援の充実としては、妊娠届出時に妊婦さんとの面談において、妊娠期の過ごし方、出産までの体の変化や出産に向けた準備などの情報提供のほか、妊娠８か月頃には分娩予定施設の確認や産後のサポート体制の有無などのアンケート、出産後のメンタルヘルスケアを目的としたアンケートを実施し、これらの結果も活用するなどして、妊産婦に寄り添った支援を行っています。\n 問い、看護学院は、これまで募集定員を上回る応募があり定員を満たしている状況ではあるが、今後、応募数の減少など、学生確保が難しくなることも想定される。直近３年の出願状況と学生確保のための取組について伺う。\n 答え、看護学院への出願状況については、４年制課程の看護系大学の増加と少子化等により、出願者数は減少傾向にあります。各年度の出願者数と入学者数、また、深川西高等学校からの出願者数と入学者数は、令和３年度入学の出願者は87人、うち深川西高校から４人出願し３人が入学、４年度は出願者107人、うち深川西高校から５人出願し３人が入学、５年度は出願者102人、うち深川西高校から10人出願し５人が入学しており、入学者は各年度22人の定員を確保できている状況です。\n 学生確保の取組としては、深川西高校や管外の滝川西高校、旭川実業高校など、五つの高校を訪問して、当看護学院の案内の実施、さらにはオープンキャンパスを開催し、新築の看護学院施設の案内や最新の実習シミュレーターなど充実した機能を持つ魅力ある学院の情報発信を行っています。このほか、高校推薦の枠拡大による学生確保の強化にも取り組んでおり、令和２年度入学の指定校推薦枠６校11人から、５年度入学までに８校16人まで推薦枠を拡大し、学校が推薦する優秀な学生の確保にも努めています。\n 以上が質疑応答の概要です。\n 質疑終結後、討論に入り、初めに松原委員から、一般会計、国民健康保険特別会計及び後期高齢者医療特別会計の決算について認定反対の立場で、一般会計については、自衛隊への名簿提供について不同意である。個人情報保護法を遵守すべきであり、名簿提供するのであれば、本人の意思確認を封書等ですべきであると考える。マイナンバー制度に関する支出に不同意である。任意であるはずのマイナンバーカードが健康保険証との紐づけにより強制的要素を持ち、多くの市民を困惑させている状況がある。ゆえに、マイナンバーカード制度の推進のための一般会計に反対する。国民健康保険特別会計においては、令和５年度の決算概要の中の一文で、被用者保険に比べて低所得者や高齢者の加入割合が高く、これが国保財政基盤を脆弱化させ、財政不安の大きな要素になっているとあった。令和５年度の深川市における国保の減免割合は65％であり、これは家族数に応じた均等割負担が重く保険料にのしかかり、払いたくても払えない状況が生まれていると考えられる。後期高齢者医療制度においては、75歳以上の高齢者を別建ての保険制度にしている。夫婦別々の保険料があり、２ないし３世代同居生活者にとって、国保と後期高齢者医療保険の負担がかかってくる。\n 以上のことから、国民健康保険特別会計及び後期高齢者医療特別会計に反対するとの討論がありました。\n 次に、大前委員から７会計の決算全てに認定賛成の立場で、令和４年３月に新型コロナウイルス感染症の拡大防止の取組であるまん延防止等重点措置が全て解除され、昨年５月には５類感染症に移行となり、徐々に経済社会活動の正常化が進んでいた状況下で、ロシアのウクライナ侵攻による国際的な原材料価格の上昇や円安による海外からの輸入コストの増加など、世界的な物価上昇が生じ、日本においても40年ぶりの物価上昇となり、家庭や企業の活動に影響が出ている状況にある。このような状況の中、本市の財政運営は、新型コロナウイルス感染症への対策のため、国が実施した新型コロナワクチン接種事業や子育て世帯生活支援特別給付金、また国・北海道の補助金を活用した市独自の対策として、新型コロナウイルス感染症及びエネルギー・食料品価格等の物価高騰対策を、地方創生臨時交付金事業ほか各事業に補正予算を組み、きめ細やかな対応を実施した。このような中でも、市税の徴収、地方交付税や各種交付金など歳入の確保に努め、中でもふるさと納税においては、積極的なＰＲ活動により、寄附金総額は約６億3,300万円となり、前年度に比べ72.4％増となっており、一般会計においては約１億3,000万円の剰余となったほか、特別会計においても約1,900万円の剰余となるなど、成果を残している。また、数多くの重要施策にも取り組み、北空知成年後見相談センター運営事業、妊娠・出産応援交付金事業（コウノトリ応援プラン）、複合施設整備事業、パートナーシップ制度導入事業など、行政サービスの向上に努めている。水道事業、下水道事業、病院事業会計については、依然として厳しい財政状況が続く中ではあるが、今後もなお一層の企業努力により、健全経営を目指していただくことを期待する。\n 田中市長を先頭に、必要な施策を効果的に進め、住民福祉の向上に邁進するよう期待するとの討論がありました。\n 討論終結後、採決に入り、認定第１号、認定第３号及び認定第４号の３件は賛成多数をもって、認定第２号、認定第５号ないし認定第７号の４件は全会一致をもって、認定すべきものと決定いたしました。\n 以上で決算審査特別委員会の報告を終わります。",
+    "text_length": 5618,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-5-131",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 5,
+    "schedule_name": "09月19日-04号",
+    "date": "2024-09-19",
+    "speaker": "佐藤秀樹企画総務部長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "〔登壇〕議案第50号令和６年度深川市一般会計補正予算（第３号）について説明申し上げます。\n 別冊の補正予算書を御覧ください。\n 一般会計補正予算（第３号）は、第１条で歳入歳出予算の総額にそれぞれ５億円を追加し、予算の総額を207億2,655万2,000円とするものであります。\n 初めに、歳出予算について説明申し上げます。\n 10ページをお開きください。\n ２款総務費、２項１目税務総務費、説明欄１、税務管理800万円は、ふるさと納税寄附金について寄附が増加する見通しとなったことから、必要な経費を追加するものであります。\n 12ページをお開きください。\n ７款商工費、１項２目商工振興費、説明欄１、ふるさと納税２億4,200万円は、ふるさと納税の寄附額が補正予算（第２号）後の15億7,000万円を上回ることから、返礼品等に係る経費等を追加するものであります。\n 14ページをお開きください。\n 13款諸支出金、１項４目公共施設整備基金費、説明欄１、公共施設整備基金積立金２億5,000万円は、ふるさと納税寄附金のうち返礼品等の必要経費を除いた額を公共施設整備基金に積立てするものであります。\n 戻りまして、８ページをお開きください。\n 歳入予算について説明いたします。\n 今回の歳出の補正に係る財源といたしましては、18款寄附金により対応するものであります。\n 以上、一般会計補正予算（第３号）について説明申し上げましたが、御審議の上、原案に御賛同賜りますようよろしくお願い申し上げます。",
+    "text_length": 646,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-inline-028"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-5-132",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 5,
+    "schedule_name": "09月19日-04号",
+    "date": "2024-09-19",
+    "speaker": "田畑陽美議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "田畑 陽美",
+    "member_faction": "民主クラブ",
+    "text": "〔登壇〕ただいま議題となりました意見案第８号物価上昇に見合う老齢基礎年金等の引き上げを求める意見書について、厚生文教常任委員会を代表し、提案理由の説明を申し上げます。\n 本件につきましては、委員会報告第９号で報告しました陳情第２号の審査に関連して、委員会で意見案を提出することに全会一致をもって決定したものであります。\n つきましては、お手元に配付しております内容により関係機関に提出するもので、内容の説明は省略いたしますが、議決くださいますようよろしくお願い申し上げます。",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-inline-034"
+      ]
+    }
+  },
+  {
+    "id": "fukagawa-107-5-133",
+    "municipality": "fukagawa",
+    "council_id": 107,
+    "council_name": "令和6年第3回定例会",
+    "schedule_id": 5,
+    "schedule_name": "09月19日-04号",
+    "date": "2024-09-19",
+    "speaker": "北村薫君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "北村 薫",
+    "member_faction": "公政クラブ",
+    "text": "〔登壇〕ただいま議題となりました意見案第９号国土強靱化に資する社会資本整備等に関する意見書ないし意見案第13号訪問介護報酬引き上げの再改定を早急に求める意見書について、提出者を代表し提案理由の説明を申し上げます。\n 本件につきましては、お手元に配付しております内容により関係機関に提出するもので、内容の説明は省略いたしますが、議決くださいますようよろしくお願い申し上げます。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/fukagawa/minutes/107.json",
+      "schedule_id": 5,
+      "minute_ids": [
+        "1-inline-039"
+      ]
+    }
+  }
+]

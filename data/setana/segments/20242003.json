@@ -1,1 +1,301 @@
-[]
+[
+  {
+    "id": "setana-20242003-1-001",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "１２名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n７番 真 柄 克 紀 君 ８番 熊 野 主 税 君\n９番 吉 田 実 君 １０番 大 湯 圓 郷 君\n１１番 菅 原 義 幸 君 １２番 平 澤 等 君",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-002",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 高 橋 貞 光 君\n１．町長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 佐 々 木 正 則 君\n総 務 課 長 髙 橋 純 君\nまちづくり推進課長 阪 井 世 紀 君\n財 政 課 長 佐 藤 英 美 君\nまちづくり推進課長補佐 奥 村 大 樹 君\nまちづくり推進課主幹 稲 船 洋 志 君\n- 1 -\n\n商 工 労 働 観 光 係 長 山 崎 英 人 君\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n次 長 松 原 孝 樹 君\n- 2 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 334,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-003",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回提案をいたします補正予算につきましては、現在の歳入歳出\n予算の総額に３，５２０万円を追加し、補正後の予算総額を９３億４，２１４万９，０００円\nとするものでございます。\n- 3 -\n\nその内容でございますが５ページ歳出でございます。２款総務費、１項総務管理費、１７目\n物価高騰対応重点支援地方創生臨時交付金事業費（令和６年度分）において、委託料の低所得\n者支援及び定額減税補足給付金事業システム改修業務３５２万円について補正をお願いするも\nのでございます。\n４ページの歳入では、１４款国庫支出金、２項国庫補助金、１目総務費国庫補助金、物価高\n騰対応重点支援地方創生臨時交付金事業補助金をもって収支の均衡を図ってございます。\n説明は以上でございます。\nご審議を賜りますようお願い申し上げます。",
+    "text_length": 346,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-004",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "７ページでございます。議案第２号工事請負契約の締結について\nの提案理由を申し上げます。せたな町議会の議決に付すべき契約及び財産の取得または処分に\n関する条例第２条の規定により、予定価格が５，０００万円を超えるため契約締結上必要な議\n会の議決を求めるものでございます。\n内容につきましては担当課長から説明をいたします。\nご審議賜りますようお願い申し上げます。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-005",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "阪井世紀まちづくり推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号で議決をお願いいたします工事請負契約に\nつきましては、温泉ホテルきたひやま長寿命化計画に基づく長寿命化改修工事の建築主体でご\n- 4 -\n\nざいます。\n主な内容につきましては、ホテル全体の外壁及び屋根の改修とエレベーターの新設などでご\nざいます。工事の名称は、温泉ホテルきたひやま長寿命化改修工事、建築主体、契約の金額は\n１億４，２３４万円、契約の相手方、井上建設・高橋建設せたな本店経常建設共同企業体、代\n表者は、久遠郡せたな町北檜山区豊岡１６７番地１、井上建設株式会社代表取締役、秋元勝、\n構成員は、久遠郡せたな町瀬棚区本町７３９番地１、株式会社高橋建設せたな本店専務取締役\n本店長、坂下正治、参考といたしまして、工期は契約締結の日の翌日から令和６年１２月２０\n日まででございます。なお指名業者及び入札結果一覧につきましては、議案書８ページ、議案\n第２号関係資料のとおりでございます。\n以上で説明を終わります。\nご審議のほどよろしくお願いいたします。",
+    "text_length": 432,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-006",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "高橋貞光町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これにつきましては、このとおりこの施設の老朽化に伴う工事でござ\nいます。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-007",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "高橋貞光町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "施設の老朽化に伴う長寿命化工事ということでご理解いただきたいと\n思います。",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-008",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "阪井世紀まちづくり推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず１点目のご質問になりますが、今回の温泉ホテル\nきたひやま長寿命化改修工事、これは３本に分かれております。これが建築主体、それから電\n気設備、機械設備ということで、建物に付随するものとして電気設備、それから機械設備とい\nう形でそれぞれ工事のほう発注するということで実施のほうさせていただいております。\n１点目は以上でございます。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-009",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "佐藤英美財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "２点目の資料のほうですけども、作成次第、提出いたします。",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-010",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第３号工事請負契約の締結についての提案理由を申し上げま\nす。せたな町議会の議決に付すべき契約及び財産の取得または処分に関する条例第２条の規定\nにより、予定価格が５，０００万円を超えるため契約締結上必要な議会の議決を求めるもので\nございます。\n内容につきましては担当課長から説明をいたします。\nご審議賜りますようお願い申し上げます。",
+    "text_length": 167,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-011",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "阪井世紀まちづくり推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第３号で議決をお願いいたします工事請負契約に\nつきましては、温泉ホテルきたひやま長寿命化計画に基づく長寿命化改修工事の機械設備でご\nざいます。\n主な内容につきましては、給排水管の洗浄更新などでございます。工事の名称は、温泉ホテ\nルきたひやま長寿命化改修工事、機械設備、契約の金額は６，６１６万５，０００円、契約の\n相手方、池田煖房・北部工営経常建設共同企業体、代表者は函館市昭和２丁目３７番１８号、\n池田煖房工業株式会社函館支店執行役員支店長、杉本辰、構成員は、久遠郡せたな町北檜山区\n豊岡１６７番地１、北部工営株式会社代表取締役、佐瀬敏秀、参考といたしまして、工期は契\n約締結の日の翌日から令和６年１２月２０日まででございます。なお指名業者及び入札結果一\n覧につきましては、議案書１０ページ議案第３号関係資料のとおりでございます。\n以上で説明を終わります。\n- 7 -\n\nご審議のほどよろしくお願いいたします。",
+    "text_length": 408,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-035"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-012",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第４号工事請負契約の締結についての提案理由を申し上げま\nす。せたな町議会の議決に付すべき契約及び財産の取得または処分に関する条例第２条の規定\nにより、予定価格が５，０００万円を超えるため契約締結上必要な議会の議決を求めるもので\nございます。\n内容につきましては担当課長から説明いたします。\nご審議賜りますようお願い申し上げます。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-041"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242003-1-013",
+    "municipality": "setana",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第３回臨時会（５月３１日）",
+    "date": null,
+    "speaker": "阪井世紀まちづくり推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第４号で議決をお願いいたします工事請負契約に\nつきましては、温泉ホテルきたひやま長寿命化計画に基づく長寿命化改修工事の電気設備でご\nざいます。\n主な内容につきましては、街灯更新や非常用発電機設置などでございます。工事の名称は、\n温泉ホテルきたひやま長寿命化改修工事、電気設備、契約の金額は１億１２０万円、契約の相\n手方、大倉・三幸経常建設共同企業体、代表者は、函館市本通２丁目５５番地５号、大倉電気\n株式会社代表取締役、大倉直、構成員は、久遠郡せたな町北檜山区豊岡１１８番地１５、有限\n会社三幸電気工業所代表取締役、矢部末吉、参考といたしまして工期は、契約締結の日の翌日\nから令和６年１２月２０日まででございます。なお指名業者及び入札結果一覧につきましては、\n議案書１２ページ議案第４号関係資料のとおりでございます。\n- 8 -\n\n以上で説明を終わります。\nご審議のほどよろしくお願いいたします。",
+    "text_length": 400,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-043"
+      ]
+    }
+  }
+]

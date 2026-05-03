@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "id": "tobetsu-20252002-1-001",
+    "municipality": "tobetsu",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和7年第2回臨時会(12月) [PDFファイル／220KB]",
+    "date": null,
+    "speaker": "後藤正洋町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました報告第１号 専決処分の承認を求める\nことにつきまして、提案の説明を申し上げます。\n令和７年６月５日に発生した公用車の人身事故につきまして、当別町が支払う損害賠償\n額を105万5,171円と定め和解することについて、地方自治法第179条第１項の規定により\n令和７年12月16日付をもって専決処分をいたしましたので、これを報告し、ご承認をいた\nだこうとするものであります。\nよろしくご審議をいただきまして、ご承認をお願い申し上げます。",
+    "text_length": 227,
+    "source": {
+      "minutes_file": "data/tobetsu/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "tobetsu-20252002-1-002",
+    "municipality": "tobetsu",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和7年第2回臨時会(12月) [PDFファイル／220KB]",
+    "date": null,
+    "speaker": "後藤正洋町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第１号 令和７年度当別町一般会\n計補正予算（第６号）につきまして、提案の説明を申し上げます。\n本補正予算は、歳入歳出ともに１億5,369万8,000円を増額し、その総額を146億9,825万\n6,000円といたしました。\n補正額につきましては、１ページと２ページに記載の「第１表 歳入歳出予算補正」を\nお目通しいただきたいと存じます。\n歳出といたしましては、水道事業会計繰出金１億1,226万8,000円、物価高対応子育て応\n- 5 -\n\n援手当事業4,143万円を増額するもので、この財源といたしましては国庫支出金１億5,013\n万円、繰越金356万8,000円を増額して措置いたしました。\nよろしくご審議をいただきますようお願い申し上げます。",
+    "text_length": 337,
+    "source": {
+      "minutes_file": "data/tobetsu/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "tobetsu-20252002-1-003",
+    "municipality": "tobetsu",
+    "council_id": 20252002,
+    "council_name": "令和7年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和7年第2回臨時会(12月) [PDFファイル／220KB]",
+    "date": null,
+    "speaker": "後藤正洋町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題となりました議案第２号 令和７年度当別町水道事\n業会計補正予算（第２号）につきまして、提案の説明を申し上げます。\n本補正予算は、収益的収入においてその他営業収益6,035万2,000円を増額し、給水収益\n5,860万8,000円を減額して、収入総額を６億2,073万2,000円といたしました。\n次に、収益的支出において総係費174万4,000円を増額して、支出総額を６億698万8,000\n円といたしました。\nよろしくご審議をいただきますようお願い申し上げます。",
+    "text_length": 238,
+    "source": {
+      "minutes_file": "data/tobetsu/minutes/20252002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  }
+]

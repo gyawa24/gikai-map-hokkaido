@@ -1,1 +1,302 @@
-[]
+[
+  {
+    "id": "higashikawa-20212005-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８． 出 席 議 員 応招議員に同じ\n９． 欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "町長松",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岡 市 郎 都市建設課長 矢ノ目 俊 之",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平 田 章 洋 保健福祉課長 佐々木 英 樹\n市 川 直 樹 診療所事務長 金 山 裕 之",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003",
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "杉 山 昌 次 学校教育課長 佐 藤 文 泰",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "企画総務課長窪田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昭 仁 生涯学習推進課長 佐々木 貴 行",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "産業振興課長菊地",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "伸\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "書記 畑山 美里 書記 栁澤 奨一郎\n12．町長提出議案の題目\n議案第１号 令和３年度東川町一般会計補正予算（第４号）について\n議案第２号 令和３年度国民健康保険東川町立診療所特別会計補正予算\n（第２号）について\n議案第３号 いきいき農園管理棟等建設工事請負契約について\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙のとおり報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 219,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "１番杉本岳大議員、２番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "杉本 岳大",
+    "member_faction": "",
+    "text": "山家祥幸議員。\n0 【東川町議会第５回臨時会】\n○開 会",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） 皆さん、おはようございます。\n今日は、第５回の臨時会を招集させていただきましたところ、全員の\n皆様方のご出席をいただきまして、誠にありがとうございます。\n今回提案させていただきます案件につきましては３件でございます\nが、特に補正予算関係では、コロナ対策の関連補正、そしてまた、辺地\n枠が私共が予想いたしましたよりかなり枠が拡大されたということに伴\nう補正でございますが、どうか全会一致で議決を賜りますようにお願い\nを申し上げたいと思います。\n以上を申し上げまして招集者の挨拶とさせていただきます。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 279,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-010",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "杉本岳大議員、２番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "杉本 岳大",
+    "member_faction": "",
+    "text": "山家祥幸議員を指名します。\n○日程第２ 会期の決定",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-011",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは報告をさせていただきたいと思いますが、新型コロナウイル\n市郎君） スの集団感染についての報告でございます。\n1 【東川町議会第５回臨時会】\n新聞などの報道にございますように、東川町内の小学校で予期せぬ新\n型コロナウイルスの集団感染が発生をいたしております。\n昨日 15 日分の公表はまだ行われておりませんので、７月 14 日現在の\n報告をさせていただきたいと思います。\n７月 10 日から７月 14 日までの感染者数でございますが、学校感染が、\n児童が 11 名、先生が３名、その家庭でもって２名ということで、16 名の\n感染。それから、７月８、９の合同修学旅行による感染者でありますけ\nれども、児童が２名、先生が１名、計３名ということで、両方合わせま\nして 19 名の感染者が出たところであります。内３名の方が入院、ホテル\n療養が２名、自宅療養が 14名という内訳になっているところであります。\n感染されました皆様には心からお見舞いを申し上げますとともに、１\n日も早いご回復をご祈念させていただきたいと思います。\nなお、このコロナ感染は、いつどこで誰が感染するかわからないもの\nであり、誰もが感染者となる可能性を有しているものであります。感染\nされました人や家族への差別など、人権侵害につながらないように、共\nにコロナ収束に向けて取り組むことが重要であり、住民各位のご協力を\nお願いするものでございます。\n私たちは感染拡大の防止に向け、早期検査、早期発見、早期対応に配\n慮いたしまして、集団感染拡大防止に配慮しながら、変化に柔軟に対応\nできるよう保健所と十分連携をしていきたいと考えております。\n今後は特にワクチン接種希望者に対しての早期対応に配慮をしていき\nたいと考えております。\nなお、今回の集団感染につきまして、記者会見を開くべきとのアドバ\nイスもいただきましたが、保健所が発表する内容以上の情報を有してい\nないということ、感染拡大対策に万全を期し取り組みを進めていること、\n或いはホームページや無線放送を通じて住民へ、学校を通じて保護者へ\n伝達しているところであり、改めて記者会見は行っていないということ\nも報告をさせていただきたいと思います。\nまた、公共施設については、18 日まで閉鎖することで取り組んでおり\nますけれども、保健所とも協議をし、今回の感染地区外への感染が拡大\nしていないことを確認できれば、室内施設の閉鎖解除は 19 日月曜日に向\nけて取り組む予定であることを申し上げておきたいと思いますので、ご\n理解を申し上げたいと思います。\n以上申し上げまして、集団感染の報告とさせていただきます。\nありがとうございます。",
+    "text_length": 1124,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-012",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "教育長（杉",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "２つ目にご質問がございましたＢ＆Ｇプールの修繕についてでござい\n山昌次君） ます。\nＢ＆Ｇプールについては、６月開設準備の時に漏れ水が発生してしま\nったということで、原因究明に当たっておりましたが、当初、毎分15.8\nリットルぐらい漏れているということでありました。\n大きな原因のところは修繕いたしまして、再度満水にして調査したと\nころ、まだ毎分0.75リットル漏れているということであります。\n5 【東川町議会第５回臨時会】\nこの程度であれば、なんとか子どもたちにプールを開放して、去年も\n水泳事業ができなかったので、開設できないかということで協議をしま\nして、若干の漏れはありますけれども、一旦ここでオープンをさせてい\nただき、終了後に抜本的な調査をして修繕するという計画でございまし\nて、早ければ来週中にプールをオープンしていきたいと思っております\nけれども、先程からお話が出ております新型コロナウイルスの感染の関\n係がございまして、本日、保健所を交えて会議がございます。そこで相\n談をして、いつぐらいからオープンできるかということを話しまして、\nその結果をもってオープン日を決めていきたいなというふうに考えてお\nります。\nまた、温水プールの設置というお話がありましたけれども、今回のま\nちづくり計画には、整備をするということにはなっておりません。です\nから、町民皆さん交えてきちんと議論をした上で計画を作っていくべき\nではないかなと考えておりまして、早急に対応するようなことはなかな\nか難しいと思っております。\nそれから、小学生の水泳事業についてでございます。\n残念ながら７月中の水泳の授業はできませんけれども、８月、休み明\nけから水泳事業を各学校で予定通り行うこととしております。\nただ、東川小学校については、全て行うことは難しいことから、泳げ\nない子をつくらないという観点から、低学年を中心に複数回実施するな\nどして対応していきたいというふうに考えております。\n以上です。",
+    "text_length": 842,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212005-1-013",
+    "municipality": "higashikawa",
+    "council_id": 20212005,
+    "council_name": "令和3年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07月16日",
+    "date": "2021-07-16",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "温水プールの関係でありますけれども、鶴間議員なり藤倉議員さんか\n市郎君） らお話をいただいております。けれども、この建設には、2,000千円の先\n程お話で出ましたけれども、その数百倍の予算を必要とするということ\nだと思います。\n特に、令和３年、そして令和４年にかけましては、共生エリアの施設\nであるとか、或いはキトウシの温泉施設であるというところがございま\nすので、この２年間の中で前倒しをしてやるというのは大変厳しい、予\n算確保の上からも非常に厳しいと思います。\nですから、令和３、４、５、６年も結構経済的な施設の支援なんかも\n出てきますので、ですから、令和５年以降の中で、住民のニーズなんか\nも把握をしながら、どういう形で進めるのがいいのか検討することがい\nいのではないかと考えております。\n今回もまちづくりの中でローリングいたしまして、あと２年でしょう\nか。来年、再来年の事業等について見直しをする訳ですけれども、その\n見直しの中でもちょっと厳しいのではないかと思います。\nですから、やるとすれば、財源をしっかり確保した上で進めていくと\nいうことがベストではないかと思っています。",
+    "text_length": 493,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-033"
+      ]
+    }
+  }
+]

@@ -1,1 +1,141 @@
-[]
+[
+  {
+    "id": "horonobe-20242007-1-001",
+    "municipality": "horonobe",
+    "council_id": 20242007,
+    "council_name": "令和6年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第7回臨時会（PDF：199KB)",
+    "date": null,
+    "speaker": "出席説明員町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "野々村 仁\n農 業 委 員 会 会 長 夘子澤 芳 彦\n代 表 監 査 委 員 利 波 隆 造",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "horonobe-20242007-1-002",
+    "municipality": "horonobe",
+    "council_id": 20242007,
+    "council_name": "令和6年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第7回臨時会（PDF：199KB)",
+    "date": null,
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岩 川 実 樹\n総 務 財 政 課 長 藤 井 和 之\n住 民 生 活 課 長 早 坂 敦\n保 健 福 祉 課 長 村 上 貴 紀\n- 1 -\n企 画 政 策 課 長 藤 田 秀 紀\n産 業 振 興 課 長 山 本 基 継\n建 設 管 理 課 長 島 田 幸 司\n総務グループ主幹 伊 藤 崇\n建設管理課技術長 植 村 光 弘\n教 育 次 長 伊 藤 一 男\n国民健康保険診療所事務長事務取扱 （岩 川 実 樹）",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "horonobe-20242007-1-003",
+    "municipality": "horonobe",
+    "council_id": 20242007,
+    "council_name": "令和6年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第7回臨時会（PDF：199KB)",
+    "date": null,
+    "speaker": "選挙管理委員会事務局長(藤井",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "和 之)\n議会事務局職員出席者 事 務 局 長 植 村 美佐子\n主 事 満 保 希 来\n- 2 -\n（１０時００分 開 会）",
+    "text_length": 62,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "horonobe-20242007-1-004",
+    "municipality": "horonobe",
+    "council_id": 20242007,
+    "council_name": "令和6年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第7回臨時会（PDF：199KB)",
+    "date": null,
+    "speaker": "町長野々村",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "仁 君\n同意第１号「教育委員会委員の任命について」提案理由を申し上げます。\nこれまで教育委員としてご尽力いただいておりました能藤貞一氏が、一身上の都合により、\n９月３０日をもって辞任されましたので、その後任として、佐藤友子氏を教育委員に任命い\nたしたく、議会の同意を求めるものです。\n佐藤氏の住所は、幌延町元町２３番地１４、生年月日は昭和５１年８月２日で満４３歳、\n任期は前任者の残任期間である令和元年１１月１日から令和４年９月３０日まででありま\nす。\n佐藤氏は、社会教育委員や教育支援委員会委員以外に、幌延町の社会教育、学校教育の振\n興に寄与され、教育関係にも深く関わりを持たれておりました。\nまた、民生委員としても社会奉仕の精神を持ち、常に住民の立場に立って相談に応じると\nともに、必要な援助を行って、社会福祉の増進に努めておられます。\n地域からの信望も厚く、これまでに培われた知識や経験をもとに、幌延町の教育の発展に\nご尽力いただけるものと考えておりますので、ご同意のほどお願い申し上げ、提案理由の説\n- 3 -\n明といたします。",
+    "text_length": 468,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "horonobe-20242007-1-005",
+    "municipality": "horonobe",
+    "council_id": 20242007,
+    "council_name": "令和6年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第7回臨時会（PDF：199KB)",
+    "date": null,
+    "speaker": "建設管理課長島田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "幸 司 君\n議案第１号「工事請負契約の締結について」提案理由を申し上げます。\n本件につきましては、議会の議決に付すべき契約及び財産の取得または処分に関する条例\n第２条の規定に基づき、議案記載の工事請負契約の締結について提案するものであります。\n契約の目的については、平成３１年度施行問寒別除雪センター建設工事であります。\n契約の方法については、指名競争入札であります。\n契約金額は５,３６８万円で、契約の相手方は、天塩郡幌延町字問寒別３９番地、株式会\n社森崎組、代表取締役森崎英典氏で、現在仮契約中であります。\n建設しようとする建物の規模につきましては、鉄骨造平屋建て１３９.９１平米でござい\nます。\n工期につきましては、令和２年７月３１日であります。\n工事概要につきましては、別紙資料のとおりですので、よろしくお願いいたします。\n以上、議案第２号の提案理由といたします。",
+    "text_length": 386,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "horonobe-20242007-1-006",
+    "municipality": "horonobe",
+    "council_id": 20242007,
+    "council_name": "令和6年第7回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和元年第7回臨時会（PDF：199KB)",
+    "date": null,
+    "speaker": "建設管理課長島田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "幸 司 君\n委託料と事業費ですか。\n（斎賀議員「はい」）\n委託料につきましては、予算どおりで執行予定であります。\n２ 番 斎 賀 弘 孝 君\n- 4 -\n総事業費でいくらになるんですか。他に電気工事とかも入ったりはしないんですか。\n幸 司 君\n今ご説明いたしました５,３６８万円の中に電気設備工事等も全て含まれておりますので、\nよろしくお願いします。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/horonobe/minutes/20242007.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-010",
+        "1-table-011"
+      ]
+    }
+  }
+]

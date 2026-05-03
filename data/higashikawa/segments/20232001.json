@@ -1,1 +1,302 @@
-[]
+[
+  {
+    "id": "higashikawa-20232001-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８．出 席 議 員 応招議員に同じ\n９．欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 76,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "町長松",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岡 市 郎 産業振興課主幹 工 藤 和 博",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平 田 章 洋 都市建設課長 矢ノ目 俊 之\n市 川 直 樹 診療所事務長 金 山 裕 之",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003",
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "企画総務課長佐藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "文 泰\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次長 塚原 裕美 書記 栁澤 奨一郎\n12．町長提出議案の題目\n議案第１号 キトウシ保養施設本体工事請負契約の変更について\n報告第１号 専決処分の報告について（キトウシ保養施設太陽光発電設備\n整備工事請負契約の変更）\n報告第２号 専決処分の報告について（サテライトオフィス群１号棟建設\n工事請負契約の変更）\n報告第３号 専決処分の報告について（サテライトオフィス群２号棟建設\n工事請負契約の変更）\n報告第４号 専決処分の報告について（東川町立診療所スプリンクラー設\n備設置工事請負契約の変更）\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙のとおり報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 330,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "１番杉本岳大議員、２番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "杉本 岳大",
+    "member_faction": "",
+    "text": "山家祥幸議員。\n0 【東川町議会第１回臨時会】\n1 【東川町議会第１回臨時会】\n○開 会",
+    "text_length": 44,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） おはようございます。\n今回、令和５年東川町議会の第１回臨時会、招集させていただきまし\nたところ、全員の議員の皆様方の御出席をいただきまして、誠にありが\nとうございます。\n今回、私どもが提案をさせていただきます議事案件については１件、\n報告案件が４件となっておりますけれども、全会一致で議決承認くださ\nいますようにお願い申し上げまして挨拶とさせていただきます。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 210,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-010"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "杉本岳大議員、２番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "杉本 岳大",
+    "member_faction": "",
+    "text": "山家祥幸議員を指名いたします。\n○日程第２ 会期の決定",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありません。\n市郎君）\n1 【東川町議会第１回臨時会】",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-010",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "副町長（平",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御質問のありましたオープン日の部分でございますけれども、こちら\n田章洋君） につきましては、現在のところ調整中ではありますけれども、しっかり\n準備を行ったうえでのオープンとなります。\n現在の予定といたしましては、まず町民対象のプレオープンを６月下\n旬に予定しております。\nその後、全面的なオープンにつきましては、７月から、上旬ですね。\nその時期になろうかと思いますが、これにつきましても、今現在のとこ\n3 【東川町議会第１回臨時会】\nろ、調整中でございまして、あくまでも予定という形で御理解をいただ\nきたいと思いますので、よろしくお願いいたします。",
+    "text_length": 274,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-011",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "副町長（平",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま御質問のありました料金設定の部分でございますけれども、\n田章洋君） 今こちらの入浴施設のほうを管理運営するトーホウリゾートさん、そこ\nと調整をしておりますけども、その中でまず条件として、町内、町外の\n料金を予定としては区別する形をとって、町民料金については、低く設\n定をした上で、高齢者についてはさらに低料金で御利用いただけるよう\nな仕組みを今検討中でございまして、今この段階で料金のほうを明示す\nることはできませんが、そこの部分については、町民料金も含め、町外\nの料金も含め、特に高齢者の方含め、そこを十分に検討させていただい\nて、利用しやすい施設にということで考えておりますので、もう少々お\n時間いただきたいと思いますので、よろしくお願いいたします。",
+    "text_length": 331,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-024"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-012",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "副町長（平",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまの質問でございますけれども、レストラン、あと区切られた\n田章洋君） 部分の食事提供できる場所もございますので、そこの部分で提供は出来\nると思うんですが、いずれにしましても、受託の業者さんとそこの部分\nもさらに詳細を詰めていきたいと思っております。\nそれともう１点、御質問のございました送迎につきましては、再度調\n整をさせていただいて、サービスがきっちりできるような形で調整をさ\nせていただくというところで、今現在、検討中ということで御理解をい\nただきたいと思います。\nよろしくお願いいたします。",
+    "text_length": 251,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-032"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232001-1-013",
+    "municipality": "higashikawa",
+    "council_id": 20232001,
+    "council_name": "令和5年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "02月03日",
+    "date": "2023-02-03",
+    "speaker": "副町長（平",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま、御質問をいただいた部分でございますけれども、負担金と\n田章洋君） 料金の部分でございますけれども、まず建物については補助金が入って、\nその後、有利な起債を借りて、その部分での２割負担という基本線はご\nざいます。\nそこの部分は基本であるんですけれども、今現在、その部分につきま\nしても、営業形態が入浴、それとレストラン、そしてお土産売り場と言\nいましょうか、ショップございますね。\nそこの部分が、振興公社で運営ということになりますので、２業体が\n営業することになります。\nその中で、先ほど申し上げました２割負担の部分、町の一般財源持ち\n出しの部分につきましては、そこは基本線で押さえておりますけれども、\nその中で１年間様子を見ながら、売り上げ等を踏まえて１年間、その実\n績を基に最終的に決めるような形になろうかと思います。\n今現在の段階で、月額いくらというところは、今まさに協議含めて、\n検討中でございますので、もうちょっとお時間をいただきたいと思って\nおりますので、よろしくお願いいたします。",
+    "text_length": 451,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-037"
+      ]
+    }
+  }
+]

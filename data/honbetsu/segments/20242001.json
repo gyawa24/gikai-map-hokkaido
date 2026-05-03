@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "id": "honbetsu-20242001-1-001",
+    "municipality": "honbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "１２名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議 長 １２番 篠 原 義 彦 副議長 １１番 柏 崎 秀 行\n１番 宮 本 やよい ２番 加 藤 徹 己\n３番 丑 若 浩 行 ４番 水 谷 令 子\n- 1 -\n\n５番 梅 村 智 秀 ６番 石 山 憲 司\n７番 藤 田 直 美 ８番 方 川 一 郎\n９番 高 橋 利 勝 １０番 阿 保 静 夫\n─────────────────────────────────────────",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/honbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "honbetsu-20242001-1-002",
+    "municipality": "honbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "─────────────────────────────────────────\n○説明のため出席した者の職氏名\n町 長 佐々木 基 裕 副 町 長 村 本 信 幸\n会 計 管 理 者 藤 野 和 幸 総 務 課 長 三 品 正 哉\n保 健 福 祉 課 長 長 屋 和 幸 住 民 課 長 宮 口 淳 哉\n健康・こども課長 髙 橋 紀 尊 企 画 財 政 課 長 松 本 秀 規\n老人ホーム所長 前 佛 清 治 国 保 病 院 事 務 長 小 川 芳 幸\n総 務 課 主 査 石 川 雅 康 教 育 長 高 橋 哲 也\n教 育 次 長 武 田 敏 英 代 表 監 査 委 員 井 出 英 彦\n─────────────────────────────────────────\n○職務のため議場に出席した者の職氏名\n事 務 局 長 中 川 雅 之 総 務 担 当 主 査 越 後 忠\n総 務 担 当 主 事 今 井 綾 香\n- 2 -\n\n開会宣告（午前１０時０１分）\n───────────────────────────────────────────\n◎開会宣告",
+    "text_length": 483,
+    "source": {
+      "minutes_file": "data/honbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "honbetsu-20242001-1-003",
+    "municipality": "honbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "髙橋紀尊健康・こども課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは梅村議員の質問にお答えいたします。\n今回修繕する車両情報でありますけれども、この循環バスについては、北回りの循環\nバスです。それで帯広２００さ６７の２５人乗りのバスになりまして、年式は平成１３\n年車で、走行距離は２６万キロとなっております。以上です。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/honbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "honbetsu-20242001-1-004",
+    "municipality": "honbetsu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "髙橋紀尊健康・こども課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "梅村議員の質問にお答えいたします。\nまず、現在の車の評価なんですけれども、これについては評価をしておりません。\nそれと修繕の検討の結果ということなんですけれども、まず新しいものを更新すると\nいうよりも、まず、今、地域公共計画の中でいろいろ検討されている中で、ちょっと今\n後いろいろまた運行状況が変わるということもありまして、現在の車両を修繕していく\nことのほうがいいという判断で修繕の提案をさせていただきました。\nそれで検討結果の中身なんですけれども、一応リビルト品を使用しての修繕も検討し\nましたけれども、リビルト品を使用しての修繕の場合、部品と車の接続部分が合わない\n場合、より経費がかかるとの見積りが業者から話があったことから、確実性と経済性を\n考慮し、新品の部品と交換するということで検討してまいりました。以上です。",
+    "text_length": 362,
+    "source": {
+      "minutes_file": "data/honbetsu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-036"
+      ]
+    }
+  }
+]

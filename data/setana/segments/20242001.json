@@ -1,1 +1,486 @@
-[]
+[
+  {
+    "id": "setana-20242001-1-001",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "１２名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n７番 真 柄 克 紀 君 ８番 熊 野 主 税 君\n９番 吉 田 実 君 １０番 大 湯 圓 郷 君\n１１番 菅 原 義 幸 君 １２番 平 澤 等 君",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-002",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 高 橋 貞 光 君\n教 育 委 員 会 教 育 長 小 板 橋 司 君\n１．町長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 佐 々 木 正 則 君\n総 務 課 長 原 進 君\n財 政 課 長 佐 藤 英 美 君\n情 報 管 理 係 長 又 村 智 君\n１．教育委員会教育長の委任を受け出席する説明員は、次のとおりである。\n事 務 局 長 古 畑 英 規 君\n次 長 山 本 亨 君\n主 幹 藤 谷 希 君\n- 1 -\n\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n次 長 松 原 孝 樹 君\n主 事 大 辻 省 吾 君\n- 2 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 380,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-003",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "高橋貞光町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは北檜山区太櫓海岸に漂着したイワシについてご報告を申し上\nげます。１月１０日午後４時頃、道道北檜山大成線をパトロールしていた業者よりイワシの死\n骸が漂着していると町に連絡がありました。報告を受け担当者が現地確認を行ったところ、太\n櫓の海岸において大量の死骸を確認いたしました。翌日１１日に再度確認したところ、鷹の巣\n- 3 -\n\n岬から太櫓海水浴場までの範囲で死骸が発見され、檜山振興局とともに現地調査を行い、本日、\n檜山振興局２０名、町職員２０名の計４０名体制でイワシの回収作業にあたることとしており\nます。なお回収したイワシの処理については、北部桧山衛生センター組合において焼却処分を\n行うこととしております。またイワシの漂着に伴い、漂着や死亡の原因が不明であることや一\n定時間が経過していることから持ち帰りは控えるよう防災無線等で注意喚起したところでござ\nいます。\n以上でございます。",
+    "text_length": 398,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-004",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "すみません。行政報告に対してはすぐ質問できないということを認識\nしてるんです。ただ細かいことですけど、処理について、職員もかなり苦労しながら片づけて\nるんでしょうけど。北部桧山衛生センター組合において焼却処分、これは町民にも伝わるわけ\nです。ただ３年前は埋立て処分してるんです。ちょっとした違いですが、処理の状況できちん\nとそこ確認したいと思いまして、お諮りいただいてありがとうございます。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-005",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回提案をいたします補正予算につきましては、現在の歳入歳出\n予算の総額に１，８８６万５，０００円を追加し、補正後の予算総額を９６億２，４３９万７，\n０００円とするものでございます。\nその内容でございますが、行政情報ネットワーク用光ケーブルの修繕や大成中学校暖房改修\n工事の追加について補正をお願いするものでございます。\n内容につきましては担当課長から説明をいたします。\nご審議を賜りますようお願い申し上げます。",
+    "text_length": 205,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-006",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "佐藤英美財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは議案書４ページの歳出から説明いたします。２款総務費、\n１項総務管理費、１目一般管理費８５２万５，０００円の追加は、檜山トンネル内の行政情報\nネットワーク用光ケーブルが損傷したため修繕料の追加、１０款教育費、３項中学校費、３目\n学校施設整備費１，０３４万円の追加は、大成中学校の暖房用真空式ヒーターが故障したため\n改修工事をするものでございます。\n- 4 -\n\nこれらに係る歳入でございますが同じページの上段でございます。１０款１項１目ともに地\n方交付税１，８８６万５，０００円の追加は財源調整でございます。\n以上で説明を終わります。\nご審議のほどよろしくお願い申し上げます。",
+    "text_length": 291,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-007",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "一般管理費、修繕料、これ原因って特定できましたか。年末にこの情\n報が入ったんですが。",
+    "text_length": 42,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-008",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "原進総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これについては国道２２９号檜山トンネル内側面の側面に通じて\nる情報ボックス、これ函館開発建設部所有のものなんです。これについては、当初事故発生報\n告を受けたのが８月３０日に受けております。それで、その際に通信試験したところ、所有者\n５個、情報ボックスを使ってる団体が５団体あるんですが、５団体が９月１日に集まりまして\n現地確認をしたのちに異常ないよと、ボックスはずれてたんですけども、通信自体は異常ない\nよということで９月１５日に応急的な修繕を実施しております。当町としても、情報ボックス\n自体は国の持ちものですから、中の線が傷んでないということで一切費用は、もともとすごい\n軽微なものということで捉えたんですが、実際にこの１２月になりまして占有者の一つのＮＴ\nＴドコモさんに通信異常がちょっと見られるということで、ドコモさん自体が線を直すという\n話になりました。それで町も、その際何ともないというものの再度ケーブルの疎通試験を実施\nしました。使えたんですけども、使えたんですけども疎通試験を実施した結果、４本光の線が\n１本に入ってるんですが、４芯のうち２芯に異常が見られたことから、これやっぱりダメージ\n的にあるんだなということで急遽ドコモさん、空き管が一つあるもんですから順番に直してい\nかなければならないんです。一つドコモさん終わったあと空いた線うちが通すだとかっていう\nような感じで、現在は何とか使えてる状態、じゃその２本が異常をきたさないとも限らないも\nのですから、これは至急直すということで今回補正させていただいたということです。ただし\n今ご質問の原因については、函館開発建設部さんのほうで９月２２日に、せたな警察署に被害\n届を出していますが、いまだに犯人というか、原因者は特定されてございません。ちなみにう\nちも当初、軽微なものということで捉えたんですが、金額がこのように８５２万５，０００円\n補正するということで、改めて１２月２８日にせたな警察署には、町として、町も併せて被害\n届を提出しているところです。いまだに原因者はわかってございません。\n以上です。",
+    "text_length": 886,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-009",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "遡って昨年の８月３０日ですよねこれ事故情報があったと。この情報\nというのは議会に何らかのその情報って一切ないままで今回に至ったというふうに捉えていい\nんですか。質問しないと今の情報もなかったのかなあというふうに私個人的に捉えてしまうん\nですがいかがですか。\n- 5 -",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-010",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "原進総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "８月３０日の時点では、確認したのが９月１日、情報ボックス占\n有者の５つの団体で調査したところ線に異常がないということで、金銭的にも発生微々たるも\nの、どのぐらい請求来るかわかんなかったですけども、事故報告はしていませんでした。\n以上です。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-011",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "質問がないと今の情報なども知り得ることがなかったのかなあという\nふうに思うんで、説明の段階で先にそちらから説明をいただきたかったと。これはもう要望さ\nせていただいて。議長、次よろしいですか。\n教育費の改修工事ですが、これ参考までに例の体育館の暖房はこれと\nは関係ないですか。そこ確認させてください。\n藤谷主幹。",
+    "text_length": 155,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022",
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-012",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "藤谷希教育委員会事務局主幹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "体育館の暖房設備ではなくて学校本体の暖房設備に\nなります。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-013",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "あくまでも願望なんですけど、合わせわざで体育館の暖房も直して欲\nしかったなあと、教育長これは父兄からものちのち要望として出ています。どうですか今後の\n課題としてお答えいただければと。",
+    "text_length": 91,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-014",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "小板橋司教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "体育館の暖房は前にも説明したかと思うんですけども、そもそも部\n品がないと古くなって、ということですので、今回のこのタイミングではなかなか難しいとい\nうことでこれからも考えていきますけども、とりあえずこのたびの１２月の補正でもストーブ\n用意してますし、去年用意して、今年も用意して、学校ともとりあえずこれで十分だろうとい\nうことで今やってます。",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-015",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "担当と学校側とのやりとりは今の教育長の説明でそのとおりなんです。\nただいち早い対応としては、教育委員会のほうは対応していただいたんです。後々の情報です\nけど、それがきちんと父兄のほうに伝わってなくて、やりとりが要は何でこれ直してくれない\nのっていうふうになって、一部には私なりに説明したんですが、教育長のように説得力がなく\nなかなか理解得れない部分があったものですから、今後、推移を見て適宜適切に対応していた\nだきたいと思います。願望です。お答えがあれば教育長お願いします。",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-027"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-016",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "小板橋司教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "機会ありましたら、学校のほうから保護者等々に説明するように伝\nえたいと思います。\n- 6 -",
+    "text_length": 46,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-028"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-017",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "財政課長にお尋ねします。財源としては、地方交付税１，８８６万\n５，０００円が計上されております。それでこの交付金はいつ交付された金額になるのか伺っ\nておきたいと思います。そのほかにもし手元に保留されている交付税交付金があれば金額を伺\nいたいと思います。\n以上です。",
+    "text_length": 132,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-029"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-018",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "佐藤英美財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地方交付税につきましては６月に交付なっております第１回目。\n追加交付ということで１２月に交付されております。それが５，０００万くらいだったという\nふうに記憶。今、手元に詳細の資料ないもんですから、たしか記憶では５，０００万ぐらいだ\nったというふうに思います。留保財源ということのご質問だと思うんですけども、現在２億ほ\nど留保財源はございます。\n以上でございます。",
+    "text_length": 181,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-030"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-019",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "２億の留保財源というと相当なもんです。これこのまま年度内の支\n出がなければ、それはそのままそっくり残ることになるわけです。だから予算たっぷりあるん\nですよ財源は。今日この補正の予算の歳出メニューにはありませんけれども、取り残しになっ\nている町民や議会側から提出された要望、政策というのは相当数ありますけれども、結局、町\n長答弁、財政困難だ、収支バランスが取れないとかって言ってるけども、どうも実態が違うん\nじゃないでしょうか。この予算案は賛成いたしますが、年度内の全体の状況を見通しの中で２\n億の財源の見通しについて町長はどのように判断しておられるのか。この財源捻出と合わせて\n伺っておきたいと思います。",
+    "text_length": 302,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-020",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "高橋貞光町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "財政運営についてでありますが、私たちとしては、令和５年度につい\nても、これまで同様この決算がこのマイナスにならないようにということで、その辺しっかり\n考えながら財政運営をさせていただいております。このあとも当然補正も出てまいりますので、\nそうした財源にしっかり対応してまいりたいというふうに考えているところでございます。",
+    "text_length": 160,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-032"
+      ]
+    }
+  },
+  {
+    "id": "setana-20242001-1-021",
+    "municipality": "setana",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和６年第１回臨時会（１月１２日）",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "これで３回目ですから終わりますが、今のは私が聞いたことに対す\nる答えになっていませんよ。思い起こしていただきたいんですが、平成２５年度のときに年度\n末４億の交付税交付金をバーンと議会に出してきたことあるんです。それは私も反対討論しま\nしたが、全員一致で否決しましたこのときは。金額４億円上回っていたと思いますが。その金\n額を議会に年度末に出してきたときに、建物解体費に充てる財源にするんだという提案であり\nました。その年度、私も随分、町民から要求を頂戴いたしまして各課との折衝した記憶があり\nますが、各課は既定予算のことを言ってるんでしょうが、財源ありませんと、だから無理なん\n- 7 -\n\nです。かなり断られました。ところが年度末になったら４億以上の財源がバーンと交付税交付\n金これありましたと。解体費の基金に積立てていくというようなやり方しました。これは絶対\nやっちゃならんことだと思います。町民の皆さんは、財源がないから我慢してくれという説明\nを私どものほうでするわけですが、そうなのかと我慢するわけです。豈図らんや４億を上回る\n財源あるじゃないですか。これが平成２５年の時の全員一致の否決の経過なんです。同じこと\nやってませんか今も。数字は４億台と２億台の違いがありますけれども、よろしくないと思い\nます。だから私はこの予算には賛成はいたしますが、住民要望と議会側が提起するそんなに大\nきくない金額についての予算付け、これは根本から考え直していただきたいと思います。\n質疑を終わります。",
+    "text_length": 647,
+    "source": {
+      "minutes_file": "data/setana/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  }
+]

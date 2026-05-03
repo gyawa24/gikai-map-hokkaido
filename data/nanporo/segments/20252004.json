@@ -1,1 +1,278 @@
-[]
+[
+  {
+    "id": "nanporo-20252004-1-001",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "５議員の出席出席１１名",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "欠席 ０名\n６ 議案件数 １件 （うち議員提出 ０件）\n７ 議決の状況 (1)原案可決 １件\n８ その他 傍聴者 ２名\n９ 会議録の写し 別紙のとおり添付\n１０ 議案書の写し 別紙のとおり添付\n令和７年 第４回南幌町議会臨時会 会議録\n令和７年１１月２８日（金）\n午前 ９時３０分 開 会\n１．出席議員\n１番 湯 本 要 ２番 西 股 裕 司\n３番 星 真 希 ４番 熊 木 惠 子\n５番 佐 藤 妙 子 ６番 細 川 美喜男\n７番 加 藤 真 悟 ８番 石 川 康 弘\n９番 高 橋 修 平 １０番 家 塚 雅 人\n１１番 側 瀬 敏 彦\n２．欠席議員\nなし\n３．会議録署名議員\n７番 加 藤 真 悟 ８番 石 川 康 弘\n４．職務のため、会議に出席した者の職・氏名\n事 務 局 長 藤 田 雅 章 議 事 係 長 富 木 孝 郎\n５．地方自治法第１２１条第１項により、説明のため会議に出席した者の職・氏名",
+    "text_length": 404,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-002",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "町長大",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "崎 貞 二 教 育 長 西 田 篤 人\n監 査 委 員 白 倉 敏 美\n６．町長の委任を受けて出席した説明員",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-003",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "小 林 史 典 総 務 課 長 笠 原 大 介",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-004",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "まちづくり課長斉藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "隆 住 民 課 長 渡 辺 広 貴\n税 務 課 長 砂 田 隆 樹 保健福祉課長 谷 藤 朋 代\n保健福祉課参事 蛯 沢 千 晴 産業振興課長 岩 本 聖",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-005",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "都市整備課長黒島",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "滋 規 会計管理者 池 畑 憲 一\n病院事務長 渡 部 浩 二\n７．教育長の委任を受けて出席した説明員",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-006",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "生涯学習課長鈴木",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "潤 也\n８．選挙管理委員長の委任を受けて出席した説明員",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-007",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "書記長（総務課長）笠原",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大 介\n９．公平委員長の委任を受けて出席した説明員",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-008",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "公平委員会事務員（総務課長）笠",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "原 大 介\n１０．農業委員会長の委任を受けて出席した説明員",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-009",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "農業委員会事務局長山本",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "篤\n１１．議事日程・会議に付した事件・会議の経過は別紙のとおり\n令和７年第４回南幌町議会臨時会会議録 １１月２８日\n（午前９時３０分）",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-010",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "７番加藤真悟議員、８番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "加藤真悟",
+    "member_faction": "",
+    "text": "石川 康弘議員。以上御両名を指名\nいたします。\n●日程２ 会期の決定をいたします。\nお諮りいたします。本臨時会の会期は、１１月２８日、本日１日限\nりといたしたいと思いますが、御異議ありませんか。\n（なしの声。）\n御異議なしと認めます。よって本臨時会は１１月２８日、本日１日\n限りと決定をいたしました。\n●日程３ 諸般報告をいたします。\n・１番目 会務報告は、お手元に配付したとおりでございます。\nこれをもちまして報告済みといたします。\n・２番目 例月出納検査結果報告は、監査委員より令和７年８月\n分、９月分及び１０月分の例月出納検査結果の報告がありました。そ\nの内容については、お手元に配付したとおりでございます。\nこれをもちまして報告済みといたします。\n●日程４ 議案第５８号 南幌きららパークキャンプ場の設置及\nび管理に関する条例制定についてを議題といたします。\n理事者より提案理由の説明を求めます。町長。",
+    "text_length": 405,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-011",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程をいただきました議案第５８号 南幌きららパーク\nキャンプ場の設置及び管理に関する条例制定につきましては、南幌き\nららパークキャンプ場の整備に伴い、本案を提案するものです。\n詳細につきましては、都市整備課長が説明いたしますので、よろし\nく御審議賜りますようお願い申し上げます。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20252004-1-012",
+    "municipality": "nanporo",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第４回臨時会",
+    "date": null,
+    "speaker": "都市整備課長それでは、議案第５８号",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "南幌きららパークキャンプ場の設置及び\n管理に関する条例制定について御説明いたします。\n初めに、条例の概要について申し上げます。本条例制定につきまし\nては、現在整備工事を進めています南幌きららパークキャンプ場の設\n置及び管理に関し必要な事項を新たに定めるものでございます。\nそれでは、内容の説明を行います。条例の構成は、第１条から第１\n５条までの構成となります。\n第１条は、本条例の趣旨を規定するものです。\n１\n第２条は、名称及び位置を定めるもので、名称は南幌きららパーク\nキャンプ場。位置は、空知郡南幌町南９線西１４番地、１５番地。き\nららパーク、親水公園、南幌温泉駐車場内としています。\n第３条は、管理の代行の規定で、地方自治法第２４４条の２第３項\nの規定により、キャンプ場の管理に関する第１号から第４号に掲げる\n業務を指定管理者に行わせることを規定しています。\n第４条は、職員の配置、第５条は、開設期間及び利用時間等、第６\n条から次ページの第８条までは、利用に関する内容をそれぞれ規定し\nています。\n第９条は、利用料金の規定で、第３項では、利用料金の額は別表に\n定める入場料及び使用料の金額の範囲内において指定管理者があら\nかじめ町長の承諾を得て定めるとしています。\n第１０条は、利用料金の割引及び減免、次ページにかけまして、第\n１１条は利用料金の前納及び返還、第１２条は、利用者の損害賠償、\n第１３条は、指定の取消し等による損害賠償の免責、第１４条は、指\n定管理者に対して、当該管理に係る業務又は経理の状況に関し報告を\n求め、実地に調査し、又は必要な指示をすることができることを規定\nしています。\n第１５条は、委任規定で、この条例に定めるもののほか、必要な事\n項は、町長が別に定めるとしています。\n最後に附則として、この条例は、令和８年４月１日から施行する。\n以上で、議案第５８号の説明を終わります。",
+    "text_length": 803,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  }
+]

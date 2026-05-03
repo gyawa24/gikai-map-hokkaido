@@ -1,1 +1,96 @@
-[]
+[
+  {
+    "id": "makkari-20242003-1-001",
+    "municipality": "makkari",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月09日",
+    "date": "2024-05-09",
+    "speaker": "会議録署名議員は、会議規則第125条の規定によって、3番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "安藤義\n明君及び、6番 福田恵子君を指名します。\n日程２ 〃 日程 ２\n会期の決定についてを議題とします。\n本臨時会の会期は、本日1日としたいと思います。\n御異議ありませんか。\n（異議なし）\n異議なしと認めます。\nしたがって会期は、本日1日と決定しました。\n諸般の報告を行います。\n第1に、本臨時会に村長から別冊のとおり提出がありましたので、お\n手元に配布しております。\n次に、真狩村監査委員から、令和6年3月分の例月出納検査結果報告\nがありましたので、お手元に配布しております。\n次に、本臨時会に出席を求めた者及び、説明員として出席通知のあり\nました者の職氏名を一覧にして、お手元に配布しております。\n日程３ 〃 日程 ３\n議案第1号 動産の取得についてを議題とします。\n提案理由の説明を求めます。",
+    "text_length": 350,
+    "source": {
+      "minutes_file": "data/makkari/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002",
+        "1-table-003",
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "makkari-20242003-1-002",
+    "municipality": "makkari",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月09日",
+    "date": "2024-05-09",
+    "speaker": "副村長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第1号 動産の取得について\n(長船敏行) 下記により動産を取得したいので、地方自治法第96条第1項第8号及\nび議会の議決に付すべき契約及び財産の取得又は処分に関する条例第3\n2\n議 事 の 経 過\n日 程 発 言 者 発 言\n条の規定により、議会の議決を求める。\n令和6年5月9日提出",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/makkari/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "makkari-20242003-1-003",
+    "municipality": "makkari",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月09日",
+    "date": "2024-05-09",
+    "speaker": "真狩村長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岩原清一\n動産の種類\n名称 スクールバス\n規格 排気量5,193cc/240馬力\n数量 1台\n取得価格 29,244,629円\n契約の相手方 小樽市築港6番10号 北海道いすゞ自動車株式会社\n小樽支店 支店長 大原和幸\n提案理由につきましては、財産の取得での動産の買入れ契約の予定価\n格が1,000万円を超えるため、議会の議決を得る必要があることから提\n案するものです。\n事業概要ですが、平成22年度に購入したスクールバスは、経年劣化に\nより故障が増え、毎年車検時の整備費も高額になっており、児童・生徒\nの安全確保と維持管理費の軽減を図るため更新するものです。\nなお、次のページに入札状況を記載した参考資料を添付しております。\n5月1日にそこに記載の指名業者4社、うち2社の辞退がありましたの\nで、2社により指名競争入札を行いまして、落札率99.2％で北海道いすゞ\n自動車株式会社小樽支店が落札いたしました。納期を令和6年10月31\n日として、現在仮契約中です。\n以上、御審議のほどよろしくお願いいたします。",
+    "text_length": 454,
+    "source": {
+      "minutes_file": "data/makkari/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "makkari-20242003-1-004",
+    "municipality": "makkari",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "05月09日",
+    "date": "2024-05-09",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "参考のために教えていただきたいと思います。\n(大平愼一郎) 落札率が99.2％ということでございますけれども、じゃあ予定価格は\n幾らだったのかということと、入札回数は何回目で落札されたのか、そ\nれをお聞きいたしたいと思います。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/makkari/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  }
+]

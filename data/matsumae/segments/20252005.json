@@ -1,1 +1,370 @@
-[]
+[
+  {
+    "id": "matsumae-20252005-1-001",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "１１名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議 長 １１番 伊 藤 幸 司 君 副議長 １０番 堺 繁 光 君\n１番 齋 木 良 太 君 ２番 勇 谷 鷹 宇 君\n３番 三 浦 昭 雄 君 ４番 飯 田 幸 仁 君\n５番 沼 山 雄 平 君 ６番 福 原 英 夫 君\n７番 近 江 武 君 ８番 梶 谷 康 介 君\n９番 斉 藤 勝 君",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-002",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "◎出席説明員\n町 長 若 佐 智 弘 君 副 町 長 尾 坂 一 範 君\n総 務 課 長 斉 藤 明 君 総務課長補佐 佐 藤 朋 英 君\n政策財政課長 五十嵐 愛 之 君 会 計 管 理 者 斉 藤 浩 君\n産業振興課長 熊 谷 直 実 君 産業振興課主幹 岩 島 朋 也 君\n建設水道課長 横 山 義 和 君 教 育 長 宮 島 武 司 君\n監 査 委 員 藤 﨑 秀 人 君 監査委員事務局長 白 川 義 則 君\n◎職務のため議場に出席した事務局職員\n議会事務局長 白 川 義 則 君 議会事務局次長 小野寺 孝 也 君\n議会事務局主任 倉 田 歩 実 君\n- 2 -\n\n（開会 午前 ９時５９分）",
+    "text_length": 302,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-003",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "沼山雄平議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "沼山雄平",
+    "member_faction": "",
+    "text": "先程開催された議会運営委員会において、本臨時\n会の会期は本日１日限りと致しまして、議事日程につきましては、お手元に配布のとおり\n進めることに決定致しました。以上でございます。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-004",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "五十嵐愛之政策財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\nただ今議題となりました議案第４５号、令和７年度松前町一般会計補正予算(第４回)に\nついて、その内容をご説明申し上げます。\n令和７年度松前町の一般会計補正予算(第４回)は、次に定めるところによるものです。\n第１条、歳入歳出予算の補正です。既定の歳入歳出予算の総額に歳入歳出それぞれ２２\n０万６千円を追加し、歳入歳出予算の総額を歳入歳出それぞれ６９億９千７７０万８千円\nとするものでございます。第２項と致しまして、歳入歳出予算の補正の款項の区分及び当\n該区分ごとの金額並びに補正後の歳入歳出予算の金額は、「第１表歳入歳出予算補正」に\nよるものでございます。\nそれでは、歳入歳出の詳細を事項別明細により説明させていただきます。まずは、歳出\nからです。７ページをご覧願います。\n３．歳出です。６款２項１目林業振興費で、２２０万６千円の追加計上です。１７節鳥\n獣被害防止対策備品購入費で、２２０万６千円の計上です。これは、近隣町で鳥獣被害に\nより、ヒグマ注意報が発令されている状況等を踏まえ、当町においても市街地等における\n鳥獣被害を未然に防止するため、電気柵を購入するための費用の計上です。\n以上が歳出です。次に歳入です。６ページをご覧願います。\n２．歳入です。１０款１項１目１節地方交付税で、２２０万６千円の追加計上です。こ\nれは、歳出額に対しての財源調整による計上です。\n以上が歳入です。２ページをご覧願います。\n第１表歳入歳出予算補正で、歳入です。歳入合計が、補正前の額６９億９千５５０万２\n千円に補正額２２０万６千円を追加し、補正後の額を６９億９千７７０万８千円にするも\nのでございます。\n３ページです。歳出です。歳出合計につきましても歳入同様、補正前の額に補正額２２\n０万６千円を追加し、補正後の額を６９億９千７７０万８千円にするものでございます。\n以上で、議案第４５号、令和７年度松前町一般会計補正予算(第４回)の説明とさせてい\nただきます。ご審議のほどよろしくお願い申し上げます。",
+    "text_length": 854,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-005",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "福原英夫君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原英夫",
+    "member_faction": "",
+    "text": "松前町は人的被害がないんですけども、スマホの松前町の欄をよく\n見ますと、クマが出没している件数が結構多いんですけれども、今回の補正はその件数に\n見合う、対応できるような補正のボリュームなんでしょうか。まず、そのことを答弁願い\nます。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-006",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "熊谷直実産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今のクマの対応、現在のクマの出没に合った部分の購\n入費かという部分でございます。\n令和７年度においては、クマの捕獲の頭数ですけども、現在まで６頭を捕獲している状\n況があります。\n- 4 -\n\n今回の備品購入費ですけれども、町と致しましては現在５セット分、１千メーターの電\n気柵を捕獲しておりまして、現在２セット使用している状況があって、３セットを保有し\nております。\n今回購入しようとしておるのは、６セット分、２千４００メートルの電気柵を、直線距\n離にして２千４００メートルを購入をしようとしておりますんで、今回購入すると電気柵、\n直線にして３キロ分の電気柵を設置することができる対応をしたいと思っております。\n令和６年度は、差ほどクマの出没が少なかった状況がありますが、令和５年度、４４頭\n捕獲するような、市街地への出るような状況がありました。その際は、９月１０月に出没\nすることが多かったので、それに備え、今回補正予算を挙げさせたものでございます。よ\nろしくお願い致します。",
+    "text_length": 441,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-007",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "福原英夫君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原英夫",
+    "member_faction": "",
+    "text": "私も上川の奥によくジョギングで、ほぼ毎日のように走っていく、\n今年はクマの傾向が見えないです、はっきり言いまして。ただ、江良方面でしょうか、あ\nっちの方がスマホから見ると出てるっていうことは聞きますので、これで十分なのかなあ\nっていう、ちょっと不安を覚えたんです。\nそれとまたもう一つは、負担、補助の、補助率の負担割合なんですよ。やはり家庭菜園\nが中心なもんですからね、松前町は。産業としてやってる方が少ない、家庭菜園の方々負\n担が大きいかなあって思ってたもんですから、前回の時は質問しませんでしたけども、十\n分だというふうにお考えでこのような補正を組んだんでしょうか。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-008",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "熊谷直実産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の補正につきましては、農作物の被害を防止するため\nの町民への補助金ではなく、町と致しまして、出没に対する町民への人的被害がおきない\nようにという部分で対応するために、町で保有しようとするものを補正予算計上させてい\nただいております。\nなお、町の補助金の関係、農家用、それから家庭菜園などの補助金につきましては、今\n年度においては１件、家庭菜園用に対しまして、１５万９千円ほどのものを設置したもの\nに対しまして、家庭菜園用の上限額になる５万円を補助している状況があります。以上で\nす。",
+    "text_length": 243,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-009",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "福原英夫君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "福原英夫",
+    "member_faction": "",
+    "text": "私の、そうしますと勘違いでしたね。町で保有して、町で危険な地\n域に電気柵をやるっていうことなんですね。失礼しました。\n先ほど家庭菜園の個人の関係で、５万円補助でほとんどあまり申請がないようですけど\nも、申請はしたいけれども、我が上川町はですよ、申請はしたいけれども、それに投資し\nて見合うだけの効果が疑問視してるんです。きっともって効果があると思うんですけれど\nも。これ昨日一昨日もまた立ち話で話してたんですけど、いやあ悩むなあというふうに思\nってて結論を出せない。それで、クマの対策については、やはり慎重に日常生活を送って\nいるということだけでございます。\nわかりました。いろんな意味でもうちょっと探って、地域の実態、実情をもう少し進化\nさした中で、もうちょっと補正等々を考えていただければな。やはり、やりたいけどもや\nれない人達がほとんどだなあと思っているからの質問でございました。何か答えがあれば、\n答弁願います。",
+    "text_length": 410,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-010",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "熊谷直実産業振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の補正の計上の部分ではなく、農作物への被害防止の\n- 5 -\n\nための、町民の方への補助金の関係の質問でございました。\nこの関係の補助の周知に致しましては、広報の３月号で周知をさせていただいておりま\nす。なかなか補助を受ける方が今年度も１件ということでありますので、今後、周知の方\n法などをちょっと検討させていただきまして、利用される方が増えるようにという部分で\n対応していきたいと思います。\nまた、今回使用される方も春先、シカによる被害がちょっと農作物、家庭菜園のシカに\nよる被害ということが主な部分で、補助を活用したいということで利用されている状況が\nあるところでございます。以上です。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-011",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "斉藤明総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\nただ今議題となりました議案第４６号、契約の締結について、その内容をご説明申し上\nげます。\n本議案は、議会の議決に付すべき契約及び財産の取得又は処分に関する条例第２条の規\n定に基づき、議会の議決を求めようとするものであります。\n工事の名称は、公共施設ＬＥＤ照明設備工事（その１）。契約の方法は、指名競争入札\nで、去る７月２８日に入札を執行しております。契約の金額は、１億４２８万円、契約の\n相手方は、樺電・真友経常建設共同企業体、代表者は、函館市港町１丁目３２番３７号、\n樺電工業株式会社代表取締役社長平沼冠三でございます。\nなお、入札の結果等につきましては、参考資料として添付しておりますのでご参照願い\nます。\n以上が、議案第４６号の内容でございます。よろしくご審議賜りますようお願い申し上\nげます。",
+    "text_length": 361,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-012",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "齋木良太君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "齋木良太",
+    "member_faction": "",
+    "text": "額が少し大きいですので、１点だけ確認さしてください。全町を３\n地区に分けて、この後も議案ありますけれども、指名された事業者は三つでそれぞれが落\n札。入札において正当性やら競争原理っていうのは、しっかり担保できて、して、行って\nいるっていう認識でいいのか。その点だけお答えください。\n- 6 -",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-028"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-013",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "斉藤明総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そうです、７月２８日に厳正なる入札を執行致しまして、そのよ\nうな結果になっております。入札でそのような、きちんとした入札を執行してですね、こ\nのような結果になっておりますので、ご理解お願いします。",
+    "text_length": 98,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-029"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-014",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "斉藤明総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今議題となりました議案第４７号、契約の締結について、そ\nの内容をご説明申し上げます。\n本議案は、議会の議決に付すべき契約及び財産の取得又は処分に関する条例第２条の規\n定に基づき、議会の議決を求めようとするものであります。\n工事の名称は、公共施設ＬＥＤ照明設備工事（その２）。契約の方法は、指名競争入札\nで、去る７月２８日に入札を執行しております。契約の金額は、１億２千２８７万円、契\n約の相手方は、タマツ・阿部経常建設共同企業体、代表者は、函館市港町３丁目１８番３\n８号、タマツ電機工業株式会社代表取締役玉津眞史でございます。\nなお、入札の結果等につきましては、参考資料として添付しておりますのでご参照願い\nます。\n以上が、議案第４７号の内容でございます。よろしくご審議賜りますようお願い申し上\nげます。",
+    "text_length": 354,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-035"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-015",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "斉藤明総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただ今議題となりました議案第４８号、契約の締結について、そ\nの内容をご説明申し上げます。\n本議案は、議会の議決に付すべき契約及び財産の取得又は処分に関する条例第２条の規\n定に基づき、議会の議決を求めようとするものであります。\n工事の名称は、公共施設ＬＥＤ照明設備工事（その３）。契約の方法は、指名競争入札\nで、去る７月２８日に入札を執行しております。契約の金額は、９千３５０万円、契約の\n相手方は、大鎌・森経常建設共同企業体、代表者は、函館市赤川町５７６番地２、大鎌電\n気株式会社代表取締役大鎌幸雄でございます。\nなお、入札の結果等につきましては、参考資料として添付しておりますのでご参照願い\nます。\n以上が、議案第４８号の内容でございます。よろしくご審議賜りますようお願い申し上\nげます。",
+    "text_length": 345,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-041"
+      ]
+    }
+  },
+  {
+    "id": "matsumae-20252005-1-016",
+    "municipality": "matsumae",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "07_5rinzi_kaigiroku.pdf",
+    "date": null,
+    "speaker": "堺繁光君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "堺繁光",
+    "member_faction": "",
+    "text": "３件とも今説明を受けました。ただ、工事の概要っていうんですか、\nそれがちょっとわからないもんですから。ただ器具の取り替えだけなのか、それに伴った\n配線のあれなのか。",
+    "text_length": 82,
+    "source": {
+      "minutes_file": "data/matsumae/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-043"
+      ]
+    }
+  }
+]

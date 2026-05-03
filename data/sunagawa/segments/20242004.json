@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "sunagawa-20242004-1-001",
+    "municipality": "sunagawa",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1号(85KB)",
+    "date": null,
+    "speaker": "総務部長板垣喬博議員",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号 財産の取得についてご説明申し上げま\nす。\n提案の理由は、経年劣化による更新のため、除雪ドーザを取得することについて議会の\n議決に付すべき契約及び財産の取得又は処分に関する条例第３条に規定する予定価格２，\n０００万円以上の財産の取得に該当することから、議会の議決を求めるものであります。\n１、財産の種類は、除雪ドーザ１台であります。２、設置場所は砂川市車両センターで\nあります。３、契約価格は２，７４９万９，１１６円であります。４、契約の相手方は砂\n川市西１条北２１丁目１番３０号、北海道運搬機株式会社空知支店支店長、前谷義之氏で\nあります。\n以上、よろしくご審議賜りますようお願い申し上げます。",
+    "text_length": 303,
+    "source": {
+      "minutes_file": "data/sunagawa/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  }
+]

@@ -1,1 +1,439 @@
-[]
+[
+  {
+    "id": "setana-20252005-1-001",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "１１名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番 石 原 広 務 君 ２番 桝 田 道 廣 君\n３番 藤 谷 容 子 君 ４番 福 嶋 豊 君\n５番 横 山 一 康 君 ６番 本 多 浩 君\n８番 熊 野 主 税 君 ９番 吉 田 実 君\n１０番 大 湯 圓 郷 君 １１番 菅 原 義 幸 君\n１２番 平 澤 等 君",
+    "text_length": 137,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-002",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "０名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１．地方自治法第１２１条の規定により、説明のため出席を求めた者は次のとおりである。\n町 長 高 橋 貞 光 君\n選挙管理委員会委員長 大 坪 観 誠 君\n１．町長、選挙管理委員会委員長の委任を受け出席する説明員は次のとおりである。\n（１）町長の委任を受けて出席する説明員\n副 町 長 佐 々 木 正 則 君\n総 務 課 長 髙 橋 純 君\n財 政 課 長 佐 藤 英 美 君\n総 務 課 長 補 佐 尾 野 裕 也 君\n（２）選挙管理委員会委員長の委任を受けて出席する説明員\n書 記 長 髙 橋 純 君\n書 記 次 長 尾 野 裕 也 君\n- 1 -\n\n１．本会議の事務に従事する職員は次のとおりである。\n事 務 局 長 上 野 朋 広 君\n次 長 松 原 孝 樹 君\n主 事 神 野 翔 亜 君\n- 2 -\n\n開会 午前１０時００分\n◎開会宣告",
+    "text_length": 373,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-003",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回提案をいたします補正予算につきましては、現在の歳入歳出\n予算の総額に４０７万円を追加し、補正後の予算総額を９５億６，９１０万９，０００円とす\nるものでございます。\n- 3 -\n\nその主な内容でございますが、９月７日執行の町長選挙に新たに町議会議員補欠選挙の執行\nが加わったことからそれに係る経費の追加について補正をお願いするものでございます。\n内容につきましては担当課長から説明をいたします。\nご審議賜りますようお願い申し上げます。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-004",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "佐藤英美財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは議案の４ページの下段の歳出から説明をいたします。２\n款総務費、４項選挙費、２目町長選挙、町議会議員補欠選挙費４０７万円の追加で、９月７日\n執行の町長選挙に新たに町議会議員補欠選挙が加わったことに伴う補正で目の名称を町長選挙\n費から町長選挙、町議会議員補欠選挙費に変更するものでございます。１節報酬、３節職員手\n当等は、投票管理者などや投開票従事者などの増に伴う追加、１０節需用費の追加は、ポスタ\nー掲示板などの購入経費など、１１節役務費では、計数機などの点検手数料などの追加、１２\n節委託料では、ポスター掲示場設置及び撤去業務の追加、１８節負担金補助及び交付金では選\n挙公営負担金の追加でございます。\nこれらに係る歳入ですが上段でございます。１９款１項１目共に繰越金４０７万円を追加し\n収支の均衡を図ったものでございます。\n以上で説明を終わります。\nご審議のほどよろしくお願い申し上げます。",
+    "text_length": 399,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-005",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "この報酬に関してなんですが、これは今さらなんですけど投票管理者\nですか、一般の方が投票に関わって朝から１日従事していただけるんですけど、この報酬に関\nして食事代がこの中に含まれてるといった少数の苦情というか、批判の声があるんですが、そ\nれは致し方ない措置なのでしょうか。というのは食事代別に出せないものなのかと率直な意見\nがあるんです。今後の検討課題にするべきところなのでしょうが、考え方としてお聞かせいた\nだければと思います。",
+    "text_length": 214,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-006",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "髙橋純総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "投票立会人の報酬につきましては食事代は含まれておりません。\n昼食代につきましては、個人で弁当を持ってきたりそういう対応をしております。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-007",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "私の質問の仕方が少しこう誤りだったのかと思うんですが。要はこう\nいった日当から引かれてしまうと。もちろん課長おっしゃるとおり、いや首かしげるとこじゃ\nなくて、ご自身でお弁当を持参する方もそれはいらっしゃるでしょう。ただ職員と同様に例え\nば出前を取る時にそこから引かれてしまうんだよね何とかならないのかねっていう率直なそう\nいった要望を含めた意見が出てるんです。ですから今後の検討課題というか、そういったとこ\nろもそれから一々時間をとって、このような大事な場に携わっていただいている町民がいらっ\n- 4 -\n\nしゃるので、そういったところもぜひ要は食事代は別に出していただけるとか、そういった良\nい方向に是非考えていただきたいとこれは要望させていただきますけどいかがですか。",
+    "text_length": 336,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-008",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "髙橋純総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報酬額につきましては国の基準に基づいて支給しているところで\nございます。当日の立会人の昼食につきましては職員も選挙事務に従事しますので、職員は昼\n食で出前とか頼んでたりそういう対応しますが、そのときに立会人につきましても職員は出前\nを取りますけども立会人の皆さんどうですかということで伝えて、昼食一緒に頼みますという\n場合は一緒に頼んで、その分、現金でお金をいただいてるという対応をとっております。",
+    "text_length": 199,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-009",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "石原広務君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "ですからそういったところに少数意見ではありますけど、そういった\n昼食代なども別にこれはいただけないものなのかなという率直な意見が出ていますので、実態\nはわかります。報酬の決め方も今課長おっしゃるように国の基準ということも十分認識してる\nんです。そういった素朴と言ったら語弊がありますけど、そういった率直な意見が出されてい\nますので、ぜひ内部で協議方、今後の対応も含めご検討いただきたいと思います。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-010",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "髙橋純総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "立会人の昼食につきましては基本的には立会人の負担となります\nが、そういう意見もありますので今後検討させていただきます。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-011",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "選管書記長にお尋ねします。以前、求めたことでありますけれども、\n移動投票所の設置問題について、その後どのように検討なさったのかお尋ねしたいと思います。",
+    "text_length": 75,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-012",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "髙橋純議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の選挙から瀬棚区の北島歌２区地区につ\nきましては、投票所を島歌３区地区の投票所に統合いたしました。北島歌２区地区につきまし\nては、投票所までの距離が長いということから移動期日前投票所を実施することにしておりま\nす。参議院の選挙につきましては、明日、移動期日前投票で対応するということで考えており\nます。期日前投票できなかった方につきましては、選挙当日、投票所までの送迎を考えており\nます。\n以上です。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-013",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "わかりました。それは北島歌２区に特化しての話ですか。それで提\n起しておきたいんですが、特定の箇所を上げることがどうなのかちょっとはばかられますから、\n一般論として出しておきますが、海岸方面のある地区の方からも、個人的に送迎をしているの\nで先進地に学んでせたな町でも移動投票所検討してほしいという具体的な要望が出されたんで\n前回お尋ねをしたんです。ここ個別の問題を申し上げるのははばかられますから、そうした余\n地があるっていうことを申し上げておきたいと思うんです。個別具体の対応が可能であるなら\n- 5 -\n\nば後ほど書記長とも打合せしたいと思いますがどうですか。",
+    "text_length": 281,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-014",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "髙橋純議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "選挙管理委員会で考えているのは、あくまで\nもその地区の投票所を廃止して統合した場合、そういう場合につきましては期日前移動投票所\nの開設というのを考えております。海岸地区につきましては、今後、選挙人人数の減少等考え\nられますので、将来的にはそういう方向で考えていきたいと考えております。",
+    "text_length": 142,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-015",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "将来というのが今到来してるということなんです。やっぱり高齢者\nになると足の問題、問題になりますからせたなの海岸だけに限定しないで、よく地域ごとの実\n態も調査していただきながら、できるだけ投票率を高く維持するという観点から個別具体の問\n題についても柔軟な対応をなさるように提起をしておきたいと思います。特に答弁を求めませ\nん。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-016",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "佐々木正則副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号せたな町議会の議員及び長の選挙におけるポスター掲\n示場の設置に関する条例の一部を改正する条例についての提案理由を説明いたします。せたな\n町選挙管理委員会が定める投票区において投票区の統合が行われたことから、本条例の一部を\n改正しようとするものであります。\n内容につきましては担当課長から説明いたします。\nご審議賜りますようお願いいたします。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-030"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-017",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "髙橋純議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは内容について説明いたします。議案\n書８ページ及び９ページの新旧対照表をご覧ください。このたびの改正は、瀬棚区北島２区地\n区の第２３投票区を第２２投票区へ統合し統合したため、各投票区のポスター掲示場の設置数\nの別表を整理するものでございます。改正前、第２３投票区を、改正後は第２２投票区へ統合\nし、改正前、第２４投票区を、改正後は第２３投票区に繰り上げるものでございます。なおポ\nスター掲示場の設置するには変更はありません。附則としてこの条例は公布の日から施行する\nものであります。\n以上で説明を終わります。\nよろしくお願いいたします。",
+    "text_length": 271,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-032"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-018",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "菅原義幸君議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "菅原 義幸",
+    "member_faction": "",
+    "text": "確認をしておきます。２４投票区は現行、大里生活改善センターで\nすよね現行、ここが廃止になったんではなくて北島歌の投票区が廃止になったんで、これを２\n３のほうに入れたということで、大里生活改善センターそのものは引き続き存続しているとい\nう理解でよろしいですか。",
+    "text_length": 129,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-034"
+      ]
+    }
+  },
+  {
+    "id": "setana-20252005-1-019",
+    "municipality": "setana",
+    "council_id": 20252005,
+    "council_name": "令和7年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年第５回臨時会（７月１６日）.pdf",
+    "date": null,
+    "speaker": "髙橋純議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そのとおりでございます。第２３投票区を２\n２投票区に統合して２４投票区大里地区を２３投票区に変更するものでございます。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/setana/minutes/20252005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-035"
+      ]
+    }
+  }
+]

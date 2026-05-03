@@ -1,1 +1,347 @@
-[]
+[
+  {
+    "id": "higashikawa-20232002-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議長が指名する議会運営委員の氏名を読み上げます。\n（本多大樹 １番 山家 議員\n君） ２番 安原 議員\n３番 鶴間 議員\n８番 薦田 議員\n11 【東川町議会第２回臨時会】\n11番 飯塚 議員\n以上５名です。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議会報編集特別委員会の委員の氏名を読み上げます。\n（本多大樹 総務文教常任委員会から４番 津谷議員、９番 高橋議員。\n君） 産業建設常任委員会から６番 杉本議員、７番 今議員、８番 薦田議員、",
+    "text_length": 101,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "10番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "尾崎議員、以上の６名となります。\n12 【東川町議会第２回臨時会】",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "当選人となりました議員が議場にいますので、会議規則第",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "33 条第２項の規\n定により、当選の告知をいたします。\n○日程第 15 議案第１号 監査委員の選任について",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "（杉本岳大議員退席",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "13：13）\n提案理由と議案の説明を求めます。\n菊地町長。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "町長（菊地",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n伸君） ただいま議題となりました議案第１号「監査委員の選任について」、同意を\n求めることにつきましては、能登暢吉議員の任期満了に伴い、後任の選任に\nついて同意を求めるものであります。\n下記の者を監査委員に選任したいので、地方自治法第 196 条第１項の規定\nにより、議会の同意を求める。\n本日提出、町長名であります。\n住所 ○○○○○○○○○○\n氏名 杉本 岳大 氏\n生年月日 ○○○○○○○○であります。\n以上、提案申し上げますので、御審議いただき賛同賜りますよう、お願い\nいたします。",
+    "text_length": 249,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "（杉本岳大議員着席",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "13：16）\n○日程第 16 議案第２号 令和４年度東川町一般会計補正予算（第 11 号）について",
+    "text_length": 49,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "ル課長（高",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "説明させていただきます。\n石大地君） こちら先ず、令和３年度決算でのふるさと納税は、９億 5,000 万円という\nことでありました。\nそして、東川町のふるさと納税の収入、寄附をいただいている額、寄附の\n内容の 80％が約お米というような状況になっております。\nそして、令和３年度産米を令和３年度決算でほぼ受けたところではありま\nすが、令和３年度の寄附が好調だったということがあり、令和３年度産米が、\n東川町と東川町農協さんとで掌握していたお米が、令和４年１月、決算年度\nで言うと令和３年度中にお米を全量寄附として吐き出させていただいたとい\nう経緯がございまして、令和４年１月から令和４年産の新米が出来る時まで、\nお米の寄附のほうがさせていただけなかったという経緯があり、今回、１億\n円を令和４年度決算で落とさせていただくというようなことで、減額補正と\nいうことになっております。\nそして、今後の対策としましては、10 億円のうち約 80％がお米ということ\nで、８億円を寄附いただける相当分、トータル 10 億円を目指して、ＪＡひが\nしかわさんと連携をして、お米の総量を確保しているので、来年度以降は、\n減額とならないように、寄附のほうを推進していきたいと考えております。",
+    "text_length": 535,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "（佐藤企画総務課長退席",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "13：20）\n提案理由と議案の説明を求めます。\n菊地町長。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-026"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-010",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "町長（菊地",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n伸君） 議案第３号、副町長の選任について、提案理由を申し上げます。\n平成 29 年４月１日に副町長に選任された市川直樹氏、さらには、令和３年\n４月１日に就任された平田章洋氏につきましては、それぞれ令和５年３月 30\n17 【東川町議会第２回臨時会】\n日をもって、退任する旨の申し出がありました。\n今回の議会におきまして、本日より私の東川町長としての任期が始まるこ",
+    "text_length": 186,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-011",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "とに併せて、副町長２名の選任について、地方自治法第",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "162 条の規定により、\n議会の同意をお願いするものであります。\n初めに、市川直樹氏は、○○○○○○○○生まれの 60 歳で、昭和 56 年に\n東川町役場へ奉職し、職員として教育委員会を振り出しに、特別対策室次長、",
+    "text_length": 107,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-028"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-012",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "写真の町課長、議会事務局長、企画総務課長を歴任し、その後、平成",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "29 年４\n月からは、副町長として６年間にわたり、松岡町政の下、町の横断的な政策\n課題、及び政策上の重要案件について尽力をなされました。\n次に、佐藤文泰氏は、○○○○○○○○○生まれの 56 歳。昭和 61 年に東\n川町役場へ奉職。総務課を振り出しに、係職時代は、商工観光課、農林課を\n中心に産業全般の振興に関わり、課長職としては、子ども未来課長、産業振\n興課長、学校教育課長、企画総務課長など、多岐にわたる業務経験により、\n重要施策を担当する職を歴任しております。\nお二人は共に、温厚かつ実直な人柄で、職員からの信望も厚く、これまで\n培われた行政経験を生かし、副町長として、町民の福祉向上のさらなる実現\nに取り組んでいただけるものと確信するとともに、識見、人格ともに信頼で\nきる人物であり、東川町副町長として適任であると考えております。\nなお、副町長としての任期につきましては、市川氏は、本日令和５年３月\n31 日から令和９年３月 30 日、佐藤氏につきましては、令和５年４月１日から\n令和９年３月 31 日まで、それぞれ４年間とするものであります。\n以上、提案理由といたしますので、議会の同意を賜りたくよろしくお願い\nを申し上げます。",
+    "text_length": 519,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-029"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-013",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "町長（菊地",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま、飯塚議員から御質問いただきました２名の配置ということにつ\n伸君） いて、御説明申し上げたいと思います。\n松岡町政の時代、第２期目だったかと思うんですが、二人体制ということ\nで、副町長を二人選任をしたということの経緯がございます。\n副町長にする理由として、その当時、補助金等の貴重な財源をしっかりと\n把握をして、財源確保するということで、課長職の給料、そして、副町長の\n給料の差額については、二人体制にすることについて節穴なく、しっかりと\n財源確保するための事務を行おうと進めてきたところであります。\nその後、16 年度にわたり、副町長２名体制ということで、進めて来られま\nしたけれども、私の任期が始まったことについて、最初は少し悩みもしまし\nたけれども、同様に二人体制にさせていただき、それぞれ、総務・福祉部門、\n産業・建設部門ということを引き継いでいただいて、それぞれの課長さんの\nほうをまとめていただいて、重要政策等の推進にしっかりと取り組んでいき\n18 【東川町議会第２回臨時会】\nたいということを考えております。\n理由については、松岡町政と全く同じことを申し上げていることになりま\nすけども、市川副町長については、現在、これまでの総務・福祉部門から、\n産業・建設部門のほうに担当を代わっていただき、佐藤副町長については、\n総務・福祉部門ということで、役割を少し代えさせていただいて、お願いを\nしたいと考えております。以上です。",
+    "text_length": 622,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-031"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-014",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "副町長（市",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n川直樹君） 議会本会議中の貴重な時間を拝借をいたしまして、発言の機会をいただき\nまして、ありがとうございます。\nただいま私の副町長の選任に対しまして、議会の皆様方の御同意をいただ\nき、心より感謝を申し上げます。ありがとうございます。\n先日の第１回定例会において、退任の御挨拶をさせていただいたばかりで\nはありますが、これまで 20 年間にわたる松岡町政の後を受け、さらに成熟し\nた町づくりを進めようと立起されました菊地町政の一員として御指名いただ\nきましたことは、私にとって身に余る光栄なことであり、また、その責任の\n重さを痛感しているところでもございます。\n菊地町長が抱く、町づくりへの思いと町の将来像を職員や皆様方としっか\nりと共有をし、菊地町長をしっかりと支えながら、将来にわたって東川らし\nい町づくりが進められるよう、心新たに最善を尽くす覚悟でございます。\n引き続き、町づくりに取り組むことが出来ることに感謝をしながら、微力\nではありますが、精いっぱい努めてまいりたいと思いますので、今後とも議\n会の皆様、そして、町民の皆様方の御指導、御支援をお願い申し上げ、簡単\nではございますが、お礼の挨拶とさせていただきます。\n今後ともどうぞよろしくお願いします。ありがとうございます。\n19 【東川町議会第２回臨時会】",
+    "text_length": 564,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-033"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20232002-1-015",
+    "municipality": "higashikawa",
+    "council_id": 20232002,
+    "council_name": "令和5年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月31日",
+    "date": "2023-03-31",
+    "speaker": "申し出の内容は、各委員長から会議規則第73",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "条の規定により提出された申\n出書のとおりです。\n各委員長からの申し出のとおり、承認することに御異議ございませんか。\n20 【東川町議会第２回臨時会】\n（「異議なし」の声あり。）\n異議なしと認めます。\nよって、各委員長からの申し出のとおり承認することに決しました。\n○閉 会",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20232002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-037"
+      ]
+    }
+  }
+]

@@ -1,1 +1,325 @@
-[]
+[
+  {
+    "id": "higashikawa-20212002-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８． 出 席 議 員 応招議員に同じ\n９． 欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "町長松",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岡 市 郎 保健福祉課主幹 波 潟 聖 子",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "長 原 淳 都市建設課長 平 田 章 洋\n市 川 直 樹 診療所事務長 金 山 裕 之",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003",
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "杉 山 昌 次 東川スタイル課長 菊 地 伸",
+    "text_length": 22,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "税務定住課長吉原",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "敬 晴\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "書記 畑山 美里 書記 小西 亜実\n12．町長提出議案の題目\n議案第１号 令和２年度東川町一般会計補正予算（第 11 号）について\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙のとおり報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 149,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "４番薦田敏次議員、５番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "薦田 敏次",
+    "member_faction": "",
+    "text": "能登暢吉議員。\n0 【東川町議会第２回臨時会】\n○開 会",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） 皆さん、おはようございます。\n今日は令和３年の東川町議会第２回臨時会、招集させていただきまし\nたけれども、全員の議員の皆様方のご出席をいただきまして、誠にあり\nがとうございます。\n今回、私共が提案させていただきます案件は１件でございますが、ど\nうか全会一致で議決を賜りますようにお願いを申し上げ、挨拶とさせて\nいただきます。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "薦田敏次議員、５番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "薦田 敏次",
+    "member_faction": "",
+    "text": "能登暢吉議員を指名します。\n○日程第２ 会期の決定",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-010",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "ル課長（菊",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、一つ目のご質問の株主基金の残高275,000千円からの取り崩しで\n地伸君） いいかということだと思うんですが、それについては、令和元年度、昨\n年度末の残高が275,000千円ほど残っておりまして、今、令和２年度につ\nいては、積立額、今のところ予定280,000千円ということで予定しており\nますので、それら合わせたところから今回基金を取り崩すということに\nなります。\nそれによって、令和２年度、本年度の取り崩し残高というのは370,000\n千円程度に、これを取り崩したとしても残高はあるということになりま\nす。\nまた、株主基金の幾つかメニューがございますけども、その中のどこ\nの部分から取り崩すかということについては、お示しいつもしていると\nころの１番上の写真文化首都「写真の町」プロジェクト事業から取り崩\nしをするという考え方でございます。",
+    "text_length": 374,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-011",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "ル課長（菊",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "積み立てるということで設定しておりますけども、細かく、例えばオリ\n地伸君） ンピック選手育成だとか、デザインミュージアムだとか、はっきりした\nメニューを組んでいるものと、写真の町に関しては、ある程度広く使え\nるようにということで、色んな、写真の町全体、町の施策に関わるよう\nな整備に関わる政策だとか、その辺に使えるというような意味合いでプ\nロジェクト設定をしておりますので、今回についてはそちらの方からと\nいうことであります。\nこれについては、ホームページ等でも概要についてはプロジェクト毎\nに設定した内容について掲載して株主さんにも周知をしているというこ\nとであります。",
+    "text_length": 286,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-026"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-012",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "ル課長（菊",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "的な実施設計を発注して、年度末までということで進めているところで\n地伸君） あります。\nこの後、４月に入りましたら残りの３棟分プラス調整的な実施設計に\nついて再度発注をかけ、大体６月中に完成予定ということで先方とは今\n進めようと話をしているところでありまして、着工については、その後、\n入札をかけて、早くても６月末、７月頭の着工予定ということで今進め\nているところであります。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-029"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-013",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "ル課長（菊",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はこれまで説明してきたとおりであります。\n地伸君） ４棟の使い方、それぞれ１棟ごとの使い方というところの想定の話で\nすけども、１棟については、今のところ隈研吾事務所から５名程度入居\nしたいということで申し受けておりますので、賃貸という形での入居と\nいうことになると思います。\n残り３棟ですけども、どういう形ということはこれから詳細詰めてい\nきますけども、今想定としては、拠点整備交付金の実施計画にも記載を\nしているんですけども、残り３棟のうち２棟は個別の企業様に賃貸でお\n貸しする。共同で使うのか、単体で使うのかというのもこれから家賃設\n定も含めて調整を図り、募集をかけていくということを想定しておりま\nす。\n先程の町民の交流もというところについては、４棟のうち１棟につい\nて、テレワークという考え方は何も変わりありません。今ギャラリーZen\nもテレワーク施設ということでオープンさせますけども、町内、町外問\nわず、テレワークのコワーキングスペースとか、打ち合わせスペース等\nについて使えるように整備を考えているというところでありまして、そ\nの意味が、町民も使える交流施設的な機能も備えた施設ということで今\n検討しているということでありますので、ご理解いただきたいと思いま\nす。\n7 【東川町議会第２回臨時会】",
+    "text_length": 555,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-032"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20212002-1-014",
+    "municipality": "higashikawa",
+    "council_id": 20212002,
+    "council_name": "令和3年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月26日",
+    "date": "2021-03-26",
+    "speaker": "ル課長（菊",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "株主基金について同額を繰り入れるということで、ご質問通り45,434\n地伸君） 千円を株主基金から取り崩すということで計上しておりますけども、今\n回の補正の仕方としては、未収入特定財源ということで計上しておりま\nすので、基金から取り崩すということで、まだ収入されていないという\n中で取り崩しをして、新年度に取り崩しをするということで計上してい\nるのがこの方法であります。\nそして、取り崩しをした後の残高がいくらになるかということであり\nますけども、今現在700,000千円寄附があった場合の積立額を措置した令\n和２年度末の基金の残高見込みが373,990千円というふうに今見込んで\nいるので、それから取り崩し額予定を差し引きまして328,556千円という\nことで、細かく出すとそのような数字が出てきます。\n併せて、令和２年度、700,000千円の現計予算を組んで寄附金を見込ん\nでいる訳ですけども、今の現状どうかというご質問ですが、700,000千円\nを超えるのがちょっと今難しい状態になっているのが正直なところであ\nりまして、大体680,000千円ぐらいになりそうだということで、３月末ま\nだ迎えておりませんので、ちょっと700,000千円は到達難しいというよう\nな今状況で進めていますが、４月以降、様々な企画を今整理したり、情\n報発信、株主のＰＲ含めて新たに対策を打とうとしておりますので、新\n年度についてはまた大きく収入が伸びるように努力をしているというと\nころであります。",
+    "text_length": 640,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20212002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-040"
+      ]
+    }
+  }
+]

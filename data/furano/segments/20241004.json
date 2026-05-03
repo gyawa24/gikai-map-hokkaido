@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "furano-20241004-1-001",
+    "municipality": "furano",
+    "council_id": 20241004,
+    "council_name": "令和6年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "令和6年第4回定例会 会議録 (目次) (PDF 348KB)",
+    "date": null,
+    "speaker": "会議録署名議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "の指定\n○ 会期の決定\n市長行政報告\n○ （６年第３定）\n認定第 １号 （令和５年度 一 般 会 計 決算認定 ）\n認定第 ２号 （ 〃 国民健康保険特別会計 〃 ）\n認定第 ３号 （ 〃 介 護 保 険 特 別 会 計 〃 ）\n認定第 ４号 （ 〃 後期高齢者医療特別会計 〃 ）\n認定第 ５号 （ 〃 簡易水道事業特別 会計 〃 ）\n認定第 ６号 （ 〃 水 道 事 業 会 計 〃 ）\n認定第 ７号 （ 〃 下 水 道 事 業 会 計 〃 ）\n認定第 ８号 （ 〃 ワ イ ン 事 業 会 計 〃 ）\n決算審査特別委員長\n本 会 議 ○ 所管事項に関する委員会報告及び都市事例調査報告\n12/３ 火 10:00 調査第 ４号 総務文教委員長\n１ 日 目\n調査第 ３号 市民福祉委員長\n都市事例調査 〃\n調査第 ５号 経済建設委員長",
+    "text_length": 368,
+    "source": {
+      "minutes_file": "data/furano/minutes/20241004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  }
+]

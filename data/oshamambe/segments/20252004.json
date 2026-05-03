@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "oshamambe-20252004-1-001",
+    "municipality": "oshamambe",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回臨時会(令和7年10月17日) [PDFファイル／163KB]",
+    "date": "2025-10-17",
+    "speaker": "佐々木学議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "諸般の報告をいたします。\n監査委員から８月分の例月出納検査結果報告書が提出されましたので、その写しをお手元に配付\nいたしました。\n次に、本臨時会に議案等の説明のため、あらかじめ町長及びそれぞれ委任を受けた説明員の出席\nを求めております。以上であります。",
+    "text_length": 126,
+    "source": {
+      "minutes_file": "data/oshamambe/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-003"
+      ]
+    }
+  }
+]

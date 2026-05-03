@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "id": "furano-20242002-3-001",
+    "municipality": "furano",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 3,
+    "schedule_name": "令和6年第2回臨時会 会議録 第1号 (PDF 509KB)",
+    "date": null,
+    "speaker": "北猛俊市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "-登壇- 代車の費用を合わせて44万7,722円でございます。\nおはようございます。 事故の状況から、富良野市の過失割合を10割とし、損\n- 4 -\n\n害賠償額を44万7,722円として、３月21日に示談を交わし 金活用を見込むスポーツ振興基金積立金の追加、執行確\nております。 定によるふるさと納税推進事業費の手数料、ふるさと納\n幸い、今回の事故においては、双方に人身等の被害は 税返礼品発送業務委託料、複合庁舎維持管理経費の燃料\nなく、大事には至りませんでしたが、今後も、職員の自 及び光熱水費の減額、７目自治振興費、14目電算管理費、\n動車運転に際しては、安全運転に十分留意するよう指導 20目体育振興費の財源振替、差引きいたしまして５億\nを徹底してまいります。 2,133万5,000円の追加でございます。",
+    "text_length": 357,
+    "source": {
+      "minutes_file": "data/furano/minutes/20242002.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "furano-20242002-4-002",
+    "municipality": "furano",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 4,
+    "schedule_name": "令和6年第3回臨時会 会議録(第1号) (PDF 272KB)",
+    "date": null,
+    "speaker": "佐藤秀靖議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀靖",
+    "member_faction": "ふらの未来の会",
+    "text": "-登壇- 17款道支出金は、３項委託金で、衆議院議員選挙委託\n議会運営委員会より、本日をもって招集されました令 金1,727万8,000円の追加でございます。\n- 3 -\n\n以上、よろしく御審議の上、御承認賜りますようお願 戻りまして、６ページ、７ページでございます。\nい申し上げます。 １款市税は、２項固定資産税で、償却資産164万8,000",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/furano/minutes/20242002.json",
+      "schedule_id": 4,
+      "minute_ids": [
+        "1-inline-003"
+      ]
+    }
+  }
+]

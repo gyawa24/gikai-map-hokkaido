@@ -1,1 +1,417 @@
-[]
+[
+  {
+    "id": "higashikawa-20222002-1-001",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "７．不応招議員な",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "し\n８． 出 席 議 員 応招議員に同じ\n９． 欠 席 議 員 な し\n10. 地方自治法第 121 条の規定により提出議案等の説明のため出席した者の職氏名",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-002",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "平 田 章 洋 都市建設課長 矢ノ目 俊 之\n市 川 直 樹 東川スタイル課長 高 石 大 地",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002",
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-003",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "企画総務課長佐藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "文 泰\n11．本会議に職務のため出席した者の職氏名",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-004",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "事務局長本多大樹",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "次長 塚原 裕美 書記 阪部 友洋\n12．町長提出議案の題目\n議案第１号 専決処分の承認を求めることについて（令和３年度東川町一\n般会計補正予算（第 11 号））\n議案第２号 令和４年度 東川町一般会計補正予算（第１号）について\n議案第３号 キトウシ高原ホテル解体工事請負契約について\n議案第４号 「ＫＡＧＵの家」ヴィレッジ外構整備工事請負契約について\n13．議員提出議案の題目\nな し\n14． 議 事 日 程\n議長は、議事日程を別紙のとおり報告した。\n15．会議録署名議員\n議長は、会議録署名議員に次の２人を指名した。",
+    "text_length": 260,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-005",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "７番藤倉智恵子議員、８番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "藤倉 智恵子",
+    "member_faction": "",
+    "text": "安原芳博議員。\n0 【東川町議会第２回臨時会】\n○開 会",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-006",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（登壇）\n市郎君） 皆さん、こんにちは。\n今日は第２回の臨時会、招集させていただきましたけれども、ご出席\nをいただきまして、誠にありがとうございます。\n今回私共が提出申し上げますのは、報告案件を含め４件でございます。\n全会一致で議決を賜りますようにお願いを申し上げ、挨拶に代えさせて\nいただきます。\nありがとうございます。\n○議事日程の報告",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-007",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "藤倉智恵子議員、８番",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "藤倉 智恵子",
+    "member_faction": "",
+    "text": "安原芳博議員を指名いたします。\n○日程第２ 会期の決定",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-008",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "町長（松岡",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありません。\n市郎君）\n1 【東川町議会第２回臨時会】",
+    "text_length": 27,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-009",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "ル課長（高",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "事業に賛同いただきました、東京都〇〇〇の「竹村コーポレーション」\n石大地君） という会社様にいただいております。本年度については〇〇〇万円。な\nお、令和２年度については、〇〇〇万円の寄付をいただいているという\n経緯がございます。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-020"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-010",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "課長（矢ノ",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題提案となりました、議案第３号「キトウシ高原ホテル解体\n目俊之君） 工事請負契約について」、提案理由をご説明申し上げます。\n令和４年４月 12 日、地方自治法施行令第 167 条及び、東川町財務規則\n第 133 条の規定に基づき、指名競争入札に付した「キトウシ高原ホテル解\n体工事」について、それぞれ下記のとおり請負契約を締結するため、地方\n自治法第 96 条第１項第５号の規定により議会の議決を求めるものでござ\nいます。\n契約の目的は、議案第３号「キトウシ高原ホテル解体工事請負契約につ\nいて」であります。\n契約の方法は、指名競争入札による請負契約であり、入札は令和４年４\n月 12 日、役場大会議室において午前 10 時から。\n株式会社尾田工業、株式会社高組、株式会社橋本川島コーポレーション、\n株式会社藤田組、株式会社ベスト、吉宮建設株式会社、以上６社による指\n名競争入札を行いました。\n入札は、第１回目の入札価格 7,200 万円に、消費税相当額 100 分の 10\nを加算した価格 7,920 万円で、「株式会社尾田工業」が落札いたしました。\n落札率は 94.29％です。\n従いまして、契約の金額は 7,920 万円で、契約の相手方は、旭川市東光\n７条５丁目３番 21 号、株式会社尾田工業代表取締役髙橋一利であります。\n次に工事概要について、ご説明申し上げます。\n5 【東川町議会第２回臨時会】\nお手元の第２回臨時会資料の１頁から４頁を併せてご覧ください。\n東川町西４号北 46 番地、キトウシ高原ホテルの解体工事です。\nキトウシ高原ホテルは、昭和 59 年建設、鉄筋コンクリート造一部鉄骨\n造２階建ての建築物で、温浴宿泊施設として休憩所・食堂と共に利用され、\n令和４年３月 31 日をもって営業を終了しております。\nなお、併設されておりましたレストハウスは昨年度中に解体済みとなっ\nております。今後、次年度春の開業に向けて、建築主体工事、外構工事等\nの入札を行ってまいります。\n最後になりましたが、支出科目につきましては、令和４年度予算、５款\n農林費、１項農業費、３目農業振興特別対策費、14 節工事請負費であり\nます。工事契約期間は、令和４年８月 31 日までを予定しております。\n以上簡単ではありますが、議案第３号の提案理由の説明とさせていただ\nきますので、よろしくご審議、ご決定くだきますようお願い申し上げます。",
+    "text_length": 1021,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-011",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "課長（矢ノ",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま議題提案となりました、議案第４号「「ＫＡＧＵの家」ヴィレ\n目俊之君） ッジ外構整備工事請負契約について」、提案理由をご説明申しあげます。\n令和４年４月 12 日、地方自治法施行令第 167 条及び、東川町財務規則\n第 133 条の規定に基づき、指名競争入札に付した「「ＫＡＧＵの家」ヴィ\nレッジ外構整備工事」について、それぞれ下記のとおり請負契約を締結\nするため、地方自治法第 96 条第１項第５号の規定により議会の議決を求\nめるものでございます。\n契約の目的は、議案第４号「「ＫＡＧＵの家」ヴィレッジ外構整備工事\n請負契約について」であります。\n契約の方法は指名競争入札による請負契約であり、入札は令和４年４\n月 12 日、役場大会議室において午前 10 時５分から。\n株式会社小岩組、高橋建設株式会社、花本建設株式会社、株式会社藤\n田組、株式会社ベスト、以上５社による指名競争入札を行いました。\n入札は、第１回目の入札価格 6,700 万円に、消費税相当額 100 分の 10\nを加算した価格 7,370万円で、「花本建設株式会社」が落札いたしました。\n6 【東川町議会第２回臨時会】\n落札率は 97.07％です。\n従いまして、契約の金額は 7,370 万円で、契約の相手方は、東川町南\n町１丁目 19 番 1 号、花本建設株式会社、代表取締役花本金行であります。\n次に工事概要についてご説明申し上げます。お手元の第２回臨時会資\n料の５頁から９頁を併せてご覧ください。\n外構整備の主な内容は、資料５頁全体平面図に記載の園路約 100 メー\nトル、広場１箇所、モニュメント一式、駐車場３箇所となります。\n園路及び広場は、資料６頁園路詳細図に記載の園路幅 1.5 メートル、\n広場は半径６メートル、路盤厚は、園路・広場共に 27 センチ、舗装はウ\nッドチップ舗装一層３センチで整備します。\nモニュメントは、資料７頁の写真資料にある、彫刻家安田侃氏の作品\n「天秘」のブロンズ作品を設置いたします。\n駐車場は、１棟当たり５台とし、資料９頁２号棟の駐車場詳細図に記\n載の、路盤厚 50 センチ、舗装はアスファルト舗装一層４センチで整備し\nます。\n最後になりましたが、支出科目につきましては、令和４年度予算、２\n款総務費、２項企画費、８目地方創生推進費、14 節工事請負費でありま\nす。\n工事契約期間は、令和４年 8 月 31 日までを予定しております。\n以上簡単ではありますが、議案第４号の提案理由の説明とさせていた\nだきますので、よろしくご審議、ご決定くださいますようお願い申し上\nげます。",
+    "text_length": 1097,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-030"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-012",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "課長（矢ノにつきましては、設置費、輸送費含みで、約",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "3,500 万円となっておりま\n目俊之君） す。よろしくお願いいたします。",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-033"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-013",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "課長（矢ノ",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "いまして、１点はアルテピアッツァ美唄に展示されているもので、もう\n目俊之君） １点は、まだどこにも展示されていないものですので、その１点を購入\nするという形で整備を行わさせていただきます。",
+    "text_length": 94,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-036"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-014",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "課長（矢ノ",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "国の天に、秘密の秘と書いて、「天秘」という作品になります。\n目俊之君）",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-039"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-015",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "課長（矢ノ",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "を埋めることにはならないので、先ずは一時的に押すスペースとしての\n目俊之君） 空間の位置付けということになっております。ただ、これをどこまで運\n用するかっていうのは、この冬迎えて、現場で判断するということには\nなりますけども、これはあくまでも当初の計画での話しですので、そう\nいうふうにご理解いただければと思います。",
+    "text_length": 158,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-042"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-016",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "課長（矢ノ",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申し上げますけども、については、多少残るということもありますけど\n目俊之君） も、それ以外の道路沿いから見えるようなところについては、定期的に\n排雪は必要かというふうには考えております。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-045"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-017",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "課長（矢ノ",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ことになっております。ただ、一般的な公園の芝生の状況とはちょっと\n目俊之君） 違う部分もありますけども、基本的には雪を押して、重機があまり奥に\n入るようなことがないように、ということで考えていますのと、ここの\n除雪については、町が実施するのではなくて、管理する側の方で除雪を\nするということになっておりますので、公園が損傷することのないよう\nに、指示はしていきたいなというように思っておりますので、よろしく\nお願いいたします。",
+    "text_length": 213,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-048"
+      ]
+    }
+  },
+  {
+    "id": "higashikawa-20222002-1-018",
+    "municipality": "higashikawa",
+    "council_id": 20222002,
+    "council_name": "令和4年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "04月13日",
+    "date": "2022-04-13",
+    "speaker": "課長（矢ノ",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "通り、真ん中が窪んでいる状況にあります。この作品はブロンズの作品\n目俊之君） でして、ちょうど真ん中に目で見て分からない程度の穴が開いておりま\nして、水は全部下に流れる構造になっておりますので、常時水が溜まる\nということはございません。また、ここの公園の草管理含めて、やる時\nには、ここの清掃というか落ち葉が落ちてたりとかということもありま\nすので、それも管理の方でするということで、今考えております。\nまた、２点目の遊歩道については、ウッドチップ舗装ということです\nね。ウッドチップではなくて、ウッドチップとアスファルトを混合した\nものの整備ということで、長期間耐え得るということと、環境にも配慮\nして、アスファルトだけではなくて、天然素材を使うということも配慮\nした設計になっております。ただ、冬については、ここは除雪を今のと\nころは予定しておりませんので、春から秋にかけての利用ということに\nなるかと思います。よろしくお願いいたします。",
+    "text_length": 421,
+    "source": {
+      "minutes_file": "data/higashikawa/minutes/20222002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-052"
+      ]
+    }
+  }
+]

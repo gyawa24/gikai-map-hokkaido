@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "id": "haboro-20242005-1-001",
+    "municipality": "haboro",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第5回臨時会（令和6年7月29日）",
+    "date": "2024-07-29",
+    "speaker": "森淳町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和６年第５回羽幌町議会臨時会の招集に当たりまして、議員の\n皆様におかれましては、何かとご多忙のところご出席を賜り厚くお礼を申し上げます。\nさて、本臨時会に提案いたしております審議案件は物品購入契約の締結１件であります。\nよろしくご審議賜りますようお願い申し上げまして、招集の挨拶とさせていただきます。\n◎開議の宣告",
+    "text_length": 158,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-003"
+      ]
+    }
+  },
+  {
+    "id": "haboro-20242005-1-002",
+    "municipality": "haboro",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第5回臨時会（令和6年7月29日）",
+    "date": "2024-07-29",
+    "speaker": "酒井峰高建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました議案第５１号 物品購入契約の締結\nにつきまして、その内容と提案理由についてご説明申し上げます。\n令和６年７月２９日提出、羽幌町長。\n内容について申し上げます。契約の目的は、除雪ドーザ１４トン（旧１３トン）級１台\nの購入でありまして、契約の方法は指名競争入札、契約の金額は４，０９０万９，０００\n円、うち消費税額３７１万９，０００円を含むものでございます。\n契約の相手方は、苫前郡羽幌町北３条１丁目９番地、有限会社羽幌自動車工業代表取締\n役、金子卓であります。\n提案の理由でございますが、契約の予定価格が１，５００万円を超えるため、議会の議\n決に付すべき契約及び財産の取得又は処分に関する条例第３条の規定に基づきまして議会\nの議決を求めるものでございます。\n以上、ご審議、ご決定賜りたくよろしくお願い申し上げます。",
+    "text_length": 367,
+    "source": {
+      "minutes_file": "data/haboro/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  }
+]
