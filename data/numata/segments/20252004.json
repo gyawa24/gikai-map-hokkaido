@@ -1,0 +1,278 @@
+[
+  {
+    "id": "numata-20252004-1-001",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "瀧本周三建設課長建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第６７号、沼田深川間運行用バス車両購入事業\nに係る物品の購入契約について。下記の通り物品購入契約を締結するため、地方自治\n法第９６条第１項第８号の規定によって、議会の議決を求める。記。１、契約の目的。\n沼田深川間運行用バス車両購入事業。２、契約の方法。一般競争入札。３、契約金額。\n６９，５６７，３６０円。４、契約の相手方。札幌市東区東苗穂２条３丁目２番１５\n号。北海道日野自動車株式会社代表取締役平井孝。５、内容。中型バス２台購入。６、\n納期。本契約締結通知日から令和８年９月３０日まで。令和７年１０月１７日提出。",
+    "text_length": 260,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-002",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "名でございます。本事業の概要についてご説明申し上げます。今回購入する中型\nバスは令和８年４月から自家用有償運送で沼田深川間を運航するバスを２台購入す\nるもので、９月定例会におきまして、一般会計補正予算において、債務負担行為の設\n3\n\n定について、可決いただいたところでございます。車両につきましては、受注生産の\nため、令和８年式を購入することとし、納期は令和８年９月３０日としており、購入\n財源はＪＲ北海道からの支援金を充てるものでございます。なお、今回の契約にあた\nっての入札は一般競争入札により実施しており、９月２２日に公告し、９月２２日か\nら１０月３日まで入札参加の申込を受付し、２社により１０月１０日入札を実施い\nたしました。参考までに入札の参加資格は、沼田町の競争入札参加資格者名簿に登録\nされており、北海道内に本店又は支店等を有し、これまでの実績を判断する基準とし\nて、過去１０年間に北海道内において、同等の中型バスの納入実績があることを主な\n条件と致しました。次のページには、資料といたしまして、入札参加業者を記載して\nおりますので、お目通しをお願いいたします。以上、沼田深川間運行用バス車両購入\n事業の概要説明とさせていただきます。御審議のほどよろしくお願い致します。",
+    "text_length": 542,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-003",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "畑地 誉",
+    "member_faction": "副議長",
+    "text": "（畑地誉議員）１番畑地です。納期のことでお伺いしたいのですが、４月１日\nでＪＲが廃線となりますし、旅客業が沼田町で申請しているとお伺いしているので\nすが、納期が４月１日じゃないのはどういう理由なのか。そしてその間の車両はどう\nいう風に扱っているのか。お伺いしたいです。",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-004",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "岡田敏行産業創出課長産業創出課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい。お答えいたします。確かに３月末を\nもってＪＲが廃線ということで、４月１日からバスに転換されます。今回購入する空\n知中央バス。こちらは４月１日から９月３０日の間、これは今まで通り路線バスとし\nて空知中央バスが運行されます。この有償バス。沼田町の町営バスについては、１０\n月１日からスタートということで、それに間に合わせるための９月３０日納期とな\nっております。以上です。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-005",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "畑地 誉",
+    "member_faction": "副議長",
+    "text": "（畑地誉議員）法律上の理屈がわかっていないのですが、旅客業者が２社同じ\n路線を走ってて、被ってる期間があっても問題奈ということでよろしいですか。",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-006",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "岡田敏行産業創出課長産業創出課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "旅客業者というのは道北バス、空知中央バ\nスということでよろしいですか。（「沼田町の」の声あり）沼田町の町営バスについて\n4\n\nは、４月１日から９月３０日までは沼田深川間は運行しないです。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-007",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "畑地 誉",
+    "member_faction": "副議長",
+    "text": "（畑地誉議員）そうですか。わかりました。",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-008",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "大沼 恒雄",
+    "member_faction": "",
+    "text": "（大沼恒雄議員）バスの仕様についてお尋ねしたいのですが、ドライブレコー\nダーとか、バスの中のカメラとかそれの仕様はどうなっているのでしょうか。別の予\n算で組んだんだっけか。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-009",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "岡田敏行産業創出課長産業創出課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えします。これについては、全て備え\n付けのオプションについては、記載は無いですが、ドライブレコーダー等々の必要と\nなる備品については、備えついてあります。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-010",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "小玉好紀総務財政課長総務財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第６８号、令和７年度沼田町一般会計\n補正予算について。令和７年度沼田町一般会計補正予算を別冊の通り提出する。令和\n７年１０月１７日提出。町長名でございます。会議資料０３－１、令和７年度沼田町\n一般会計補正予算（第４号）の２ページをご覧ください。令和７年度沼田町一般会計\n補正予算（第４号）。令和７年度沼田町の一般会計の補正予算（第４号）は次に定め\nるところによる。歳入歳出予算の補正。第１条歳入歳出予算の総額に歳入歳出それぞ\nれ１，８３７万２，０００円を追加し、歳入歳出予算の総額を歳入歳出それぞれ７８\n5\n\n億８，４５５万７，０００円と定める。２項、省略させていただきます。令和７年１\n０月１７日提出。町長名でございます。８ページをご覧ください。歳出でございます。\n２款総務費、１項２６目物価高騰対策事業費１，３６１万７，０００円の増額補正で\nございますが、この１０月から３，０００品目を超える食料品等の値上げ、また電\n気・ガスの政府補助金の終了による町民生活への影響を踏まえまして、町民１人当た\nり５，０００円の第１２弾となる元気応援商品券を配布することとし、必要となる所\n要額を、それぞれ予算計上するものでございます。なお、財源については、国からの\n交付金を活用し、不足する部分についてはふるさとづくり基金を充当することとし\nております３款民生費、１項２目高齢者福祉費５０万円の増額補正ですが、先ほど、\n物価高騰対策事業でご説明いたしましたとおり、町民への生活支援として元気応援\n商品券を配布することとしておりますが、施設入所者に対しましては、食による楽し\nみを提供することといたしまして、和風園養護老人ホーム特別会計に繰出すもので\nございます。同じく３目介護支援費４４万５，０００円の増額補正ですが、特別養護\n老人ホーム特別会計及び、高齢者グループホーム特別会計へ、先ほどの和風園と同様\nに、繰出しを行うものでございます。６款農林水産業費、１項２目農業総務費１８節\n負担金補助及び交付金３８１万円の増額補正ですが、農業の担い手の育成・確保への\n支援を目的に、北海道が実施しております担い手確保・経営強化支援事業補助金につ\nきましては、町を経由して、対象者へ交付される、いわゆるトンネル予算であります\nが、農業者１件に対する、機械導入に係る補助が決定されたことを受け、北海道から\nの歳入と同額を、補正計上するものでございます。７ページにお戻りください。歳入\nでございます。１６款国庫支出金、２項１目総務費国庫補助金３５０万６，０００円\nにつきましては、国から交付される物価高騰対応重点支援地方創生臨時交付金を計\n上し、歳出で説明いたしました元気応援商品券事業の、財源の一部とするものでござ\nいます。１７款道支出金、２項４目農林水産業費道補助金３８１万円につきまして\nは、歳出で説明いたしました、農業者１件に交付される、北海道からの補助金を計上\nするもの。２０款繰入金、１項４目ふるさとづくり基金繰入金１，１０５万６，００\n０円につきましては、町民への元気応援商品券配布事業に対し、国からの交付金を充\nてても、なお、不足する部分について、その財源とするため、補正計上するものでご\nざいます。以上、申し上げまして、提案説明とさせていただきます。御審議のほどよ\nろしくお願い致します。",
+    "text_length": 1394,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-011",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "大沼 恒雄",
+    "member_faction": "",
+    "text": "（大沼恒雄議員）第１２弾の関係はありがとうございますといった方がいいの\n6\n\nかな。ただ中身ですね。いつ頃配られて、いつ頃配布などの手法について教えてくだ\nさい。",
+    "text_length": 81,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "numata-20252004-1-012",
+    "municipality": "numata",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第4回（令和7年10月17日） (PDF 302KB)",
+    "date": "2025-10-17",
+    "speaker": "小玉好紀総務財政課長総務財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "こちらにつきましては、印刷等々の準備が\n結構かかるところでありまして、出来れば年度中というか早い時期に配りたいと思\nいますが、去年も１２月中には配り、お正月には間に合うようにしました。今年も最\n悪でもそこまでには配れるようにしたいと思います。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/numata/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  }
+]

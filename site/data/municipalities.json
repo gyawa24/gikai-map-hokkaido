@@ -584,12 +584,12 @@
     "furigana": "かみすながわちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録ページはありますが議決結果が主体で本文取得が確認できておらず現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "yuni",
@@ -744,12 +744,12 @@
     "furigana": "ぬまたちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますがCMS自動採番ファイル名と特殊なリンクテキスト構造のため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "sapporo",
@@ -1638,12 +1638,12 @@
     "furigana": "びえいちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに年度別の会議録ページはありますが2階層ドリルダウンが必要で現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "kamifurano",
@@ -1741,12 +1741,12 @@
     "furigana": "しもかわちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが日本語ファイル名と分類PDFのため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "bifuka",
@@ -2156,12 +2156,12 @@
     "furigana": "くんねっぷちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに年度別の会議録ページはありますが構造確認が不十分で現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "system": "pdf_inhouse"
   },
   {
     "slug": "oketo",
@@ -2380,12 +2380,12 @@
     "furigana": "しみずちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトにHTML形式の議事録ページがありますが、PDF化されていないため現時点で取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "system": "html_inhouse"
   },
   {
     "slug": "nakasatsunai",

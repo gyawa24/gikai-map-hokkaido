@@ -82,6 +82,10 @@ function mark(value) {
   return value ? "○" : "—";
 }
 
+function normalizeName(text) {
+  return String(text ?? "").replace(/[\s\u3000]/g, "");
+}
+
 function readFirstMinutesSample(cityDir) {
   const indexCandidates = [
     path.join(cityDir, "minutes", "index.json"),
@@ -107,7 +111,35 @@ function readFirstMinutesSample(cityDir) {
   return "";
 }
 
+function detectSourceMismatch(entry, cityDir, files) {
+  if (!files.minutes) return "";
+
+  const sample = readFirstMinutesSample(cityDir);
+  if (!sample) return "";
+
+  const normalized = normalizeName(sample);
+  const expectedNames = [entry.name, entry.council_name]
+    .map((value) => normalizeName(value))
+    .filter(Boolean);
+
+  if (expectedNames.some((value) => normalized.includes(value))) {
+    return "";
+  }
+
+  const municipalityMatches = Array.from(
+    new Set(
+      [...sample.matchAll(/([一-龠々ぁ-んァ-ヶA-Za-z]+(?:市|町|村))(?:議会|長|役場)?/g)]
+        .map((match) => match[1])
+        .filter((value) => value.length >= 2)
+    )
+  );
+  const alternative = municipalityMatches.find((value) => !expectedNames.includes(normalizeName(value)));
+  return Boolean(alternative);
+}
+
 function classifyParserIssue(entry, cityDir, files) {
+  const mismatch = detectSourceMismatch(entry, cityDir, files);
+  if (mismatch) return "source mismatch";
   if (!files.minutes || files.themes) return "";
   if (!files.members) return "議員名簿未整備";
   if (files.segments && hasQuestionMemberSegments(cityDir)) return "themes 名寄せ調整";
@@ -130,6 +162,9 @@ function nextAction(entry, files, parserIssue) {
   }
   if (!files.members && hasFeature(entry, "members")) {
     return "members.json の補完";
+  }
+  if (parserIssue === "source mismatch") {
+    return "tenant_id/source の見直し";
   }
   if (!files.minutes && entry.minutes_status === "unavailable") {
     return "議事録未公開の確認更新";

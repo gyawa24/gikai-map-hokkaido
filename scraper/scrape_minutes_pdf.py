@@ -26,6 +26,8 @@ import json
 import re
 import sys
 import time
+from html import unescape
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -241,13 +243,13 @@ PDF_CONFIGS: dict[str, dict] = {
     },
     "shimizu": {
         "name": "清水町",
-        # /gikai/proceeding/7/ 等の年度ページから個別 council ページへ、そこにPDF
-        "strategy": "category_drilldown",
+        # 年度ページ → 議事日程表 → 「当日の全会議録へ」HTML本文。
+        # PDFではないが本文が公式HTMLで公開されているため minutes スキーマへ変換する。
+        "strategy": "html_daily_minutes",
         "index_urls": {
             2025: "https://www.town.shimizu.hokkaido.jp/gikai/proceeding/7/",
             2024: "https://www.town.shimizu.hokkaido.jp/gikai/proceeding/6/",
         },
-        "pdf_filter": ["会議録"],
     },
     "utashinai": {
         "name": "歌志内市",
@@ -291,6 +293,15 @@ PDF_CONFIGS: dict[str, dict] = {
         # リンクテキスト「第2回定例会（3月10日） [PDF｜...]」形式
         "strategy": "linktext_pattern",
         "index_url": "https://www.town.kiyosato.hokkaido.jp/administration/?content=1244",
+    },
+    "kunneppu": {
+        "name": "訓子府町",
+        # 年度ページに「令和N年第M回定例会/臨時会会議録（M月D日）」のPDFが並ぶ。
+        "strategy": "linktext_pattern",
+        "index_urls": {
+            2025: "https://www.town.kunneppu.hokkaido.jp/gikai/kaigiroku/10989.html",
+            2024: "https://www.town.kunneppu.hokkaido.jp/gikai/kaigiroku/9800.html",
+        },
     },
     "tsubetsu": {
         "name": "津別町",
@@ -737,6 +748,61 @@ PDF_CONFIGS: dict[str, dict] = {
         "sort_groups": ["mm", "dd"],
         "link_text_format": "{mm:02d}月{dd:02d}日",
     },
+    "numata": {
+        "name": "沼田町",
+        # 年度別ページ内で h4「定例会/臨時会」を切り替え、
+        # 直下のPDFリンク「第N回（令和N年M月D日）」を会議録として拾う。
+        "strategy": "year_page_type_sections",
+        "index_urls": {
+            2026: "https://www.town.numata.hokkaido.jp/section/gikai/juegn8000000165x.html",
+            2025: "https://www.town.numata.hokkaido.jp/section/gikai/h0opp2000000rbtu.html",
+            2024: "https://www.town.numata.hokkaido.jp/section/gikai/h0opp2000000mzi1.html",
+        },
+        "type_tag": "h4",
+    },
+    "kamisunagawa": {
+        "name": "上砂川町",
+        # 年度別の定例会/臨時会ページから個別会議ページへ辿り、
+        # 個別ページ内の「会議録」PDFだけを拾う。
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2026: [
+                "https://town.kamisunagawa.hokkaido.jp/gikai_jimukyoku/kekka/teirei/r8/index.html",
+                "https://town.kamisunagawa.hokkaido.jp/gikai_jimukyoku/kekka/rinji/r8/index.html",
+            ],
+            2025: [
+                "https://town.kamisunagawa.hokkaido.jp/gikai_jimukyoku/kekka/teirei/r7/index.html",
+                "https://town.kamisunagawa.hokkaido.jp/gikai_jimukyoku/kekka/rinji/r7/index.html",
+            ],
+            2024: [
+                "https://town.kamisunagawa.hokkaido.jp/gikai_jimukyoku/kekka/teirei/r6/index.html",
+                "https://town.kamisunagawa.hokkaido.jp/gikai_jimukyoku/kekka/rinji/r6/index.html",
+            ],
+        },
+        "pdf_filter": ["会議録", "kaigiroku"],
+    },
+    "shimokawa": {
+        "name": "下川町",
+        # 年度別記事内のPDF title属性に「令和N年M月...会議録」が入る。
+        # リンク本文は「議案審議」固定なので title から会議情報を読む。
+        "strategy": "pdf_title_pattern",
+        "index_urls": {
+            2025: "https://www.town.shimokawa.hokkaido.jp/section/2025/11/7-12.html",
+            2024: "https://www.town.shimokawa.hokkaido.jp/section/2024/09/6-6.html",
+        },
+    },
+    "biei": {
+        "name": "美瑛町",
+        # 年度別「会議録」ページの h3 見出しを会議単位にし、
+        # 「令和N年M月D日開催」のPDFだけを本文として拾う。
+        "strategy": "multi_index_html",
+        "index_urls": {
+            2025: "https://www.town.biei.hokkaido.jp/administration/parliament/proceedings/proceedings7.html",
+            2024: "https://www.town.biei.hokkaido.jp/administration/parliament/proceedings/proceedings.html",
+        },
+        "council_tag": "h3",
+        "pdf_filter": ["開催"],
+    },
 }
 
 TYPE_FLAGS = {
@@ -1026,6 +1092,174 @@ def extract_pdf_links_by_pdf_header(cfg: dict, years: list[int]) -> list[dict]:
 MONTH_TO_TEIREI_SEQ = {3: 1, 6: 2, 9: 3, 12: 4}
 
 
+def extract_pdf_links_by_year_page_type_sections(cfg: dict, years: list[int]) -> list[dict]:
+    """年度別ページ + 種別見出し + PDFリンクの構造向け戦略。
+
+    PDFリンクテキストに種別が含まれず、直前の見出し（例: h4「臨時会」）から
+    定例会/臨時会を補う自治体に使う。
+    """
+    index_urls: dict = cfg["index_urls"]
+    type_tag = cfg.get("type_tag", "h4").lower()
+    seq_re = re.compile(r"第\s*(\d+)\s*回")
+    era_re = re.compile(r"令和(\d+)年")
+    date_re = re.compile(r"令和\d+年\s*(\d+)月\s*(\d+)日")
+
+    records: list[dict] = []
+    seen = set()
+
+    class SectionLinkParser(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.current_type = None
+            self._type_text: list[str] | None = None
+            self._link_href = None
+            self._link_text: list[str] | None = None
+            self.links: list[tuple[str, str, str]] = []
+
+        def handle_starttag(self, tag, attrs):
+            tag = tag.lower()
+            if tag == type_tag:
+                self._type_text = []
+                return
+            if tag == "a":
+                href = dict(attrs).get("href")
+                if href and ".pdf" in href.lower():
+                    self._link_href = href
+                    self._link_text = []
+
+        def handle_data(self, data):
+            if self._type_text is not None:
+                self._type_text.append(data)
+            if self._link_text is not None:
+                self._link_text.append(data)
+
+        def handle_endtag(self, tag):
+            tag = tag.lower()
+            if tag == type_tag and self._type_text is not None:
+                text = _zen_to_half(re.sub(r"\s+", " ", "".join(self._type_text)).strip())
+                self.current_type = next((ttype for ttype in TYPE_FLAGS if ttype in text), None)
+                self._type_text = None
+                return
+            if tag == "a" and self._link_href and self._link_text is not None:
+                text = _zen_to_half(re.sub(r"\s+", " ", "".join(self._link_text)).strip())
+                self.links.append((self.current_type, self._link_href, text))
+                self._link_href = None
+                self._link_text = None
+
+    for year, url in index_urls.items():
+        if year not in years:
+            continue
+        r = requests.get(url, timeout=30, headers=HEADERS)
+        r.encoding = r.apparent_encoding or "utf-8"
+        r.raise_for_status()
+
+        parser = SectionLinkParser()
+        parser.feed(r.text)
+        for current_type, href, text in parser.links:
+            if not current_type:
+                continue
+
+            seq_m = seq_re.search(text)
+            era_m = era_re.search(text)
+            if not seq_m or not era_m:
+                continue
+            actual_year = 2018 + int(era_m.group(1))
+            if actual_year != year:
+                continue
+
+            full_url = urljoin(url, href)
+            if full_url in seen:
+                continue
+            seen.add(full_url)
+
+            date_m = date_re.search(text)
+            sort_key = (
+                int(date_m.group(1)) if date_m else 0,
+                int(date_m.group(2)) if date_m else 0,
+                full_url,
+            )
+            records.append({
+                "type": current_type,
+                "year": actual_year,
+                "seq": int(seq_m.group(1)),
+                "filename": href.rsplit("/", 1)[-1],
+                "link_text": text[:60],
+                "url": full_url,
+                "sort_key": sort_key,
+            })
+    return records
+
+
+def extract_pdf_links_by_pdf_title_pattern(cfg: dict, years: list[int]) -> list[dict]:
+    """PDFリンクのtitle属性に会議情報が入る構造向け戦略。"""
+    index_urls: dict = cfg["index_urls"]
+    title_re = re.compile(r'title=["\']([^"\']*会議録[^"\']*\.pdf)["\']', re.I)
+    link_re = re.compile(r'<a[^>]+href=["\']([^"\']+\.pdf)["\'][^>]*>', re.I)
+    era_re = re.compile(r"令和(\d+)年")
+    month_re = re.compile(r"(\d+)月")
+    second_re = re.compile(r"第\s*(\d+)\s*回")
+
+    records: list[dict] = []
+    seen = set()
+    for page_year, url in index_urls.items():
+        if page_year not in years:
+            continue
+        r = requests.get(url, timeout=30, headers=HEADERS)
+        r.encoding = r.apparent_encoding or "utf-8"
+        r.raise_for_status()
+
+        for m in re.finditer(r"<a[^>]+>", r.text, re.I):
+            tag = m.group(0)
+            lm = link_re.search(tag)
+            tm = title_re.search(tag)
+            if not lm or not tm:
+                continue
+            href = lm.group(1)
+            title = _zen_to_half(tm.group(1))
+            if "目次" in title or "議案名" in title or "表紙" in title:
+                continue
+
+            era_m = era_re.search(title)
+            month_m = month_re.search(title)
+            if not era_m or not month_m:
+                continue
+            actual_year = 2018 + int(era_m.group(1))
+            if actual_year not in years:
+                continue
+
+            month = int(month_m.group(1))
+            if "定例" in title:
+                ttype = "定例会"
+                seq = MONTH_TO_TEIREI_SEQ.get(month, month)
+            elif "臨時" in title:
+                ttype = "臨時会"
+                second_m = second_re.search(title)
+                seq = month * 10 + int(second_m.group(1)) if second_m else month * 10 + 1
+            else:
+                continue
+
+            full_url = urljoin(url, href)
+            if full_url in seen:
+                continue
+            seen.add(full_url)
+            fn = href.rsplit("/", 1)[-1]
+            schedule_no = 0
+            schedule_m = re.search(r"会議録(\d+)", title)
+            if schedule_m:
+                schedule_no = int(schedule_m.group(1))
+            records.append({
+                "type": ttype,
+                "year": actual_year,
+                "seq": seq,
+                "filename": fn,
+                "link_text": title.removesuffix(".pdf")[:60],
+                "council_name": re.sub(r"会議録\d*$", "", title.removesuffix(".pdf")),
+                "url": full_url,
+                "sort_key": (month, schedule_no, fn),
+            })
+    return records
+
+
 def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[dict]:
     """リンクテキストに year/seq/type 情報が全部含まれる構造向け戦略。
 
@@ -1175,6 +1409,9 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
     index_urls: dict = cfg["index_urls"]
     council_tag = cfg["council_tag"].lower()
     year_from_heading = cfg.get("year_from_heading", False)
+    pdf_filter = cfg.get("pdf_filter", "")
+    if isinstance(pdf_filter, str):
+        pdf_filter = [pdf_filter] if pdf_filter else []
     records: list[dict] = []
 
     for year, url in index_urls.items():
@@ -1192,13 +1429,13 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
         def finalize():
             nonlocal current_council, current_pdfs
             if current_council and current_pdfs:
-                for order, (fn, full) in enumerate(current_pdfs, 1):
+                for order, (fn, full, link_text) in enumerate(current_pdfs, 1):
                     records.append({
                         "type": current_council["type"],
                         "year": current_council.get("year", year),
                         "seq": current_council["seq"],
                         "filename": fn,
-                        "link_text": fn.replace(".pdf", ""),
+                        "link_text": link_text or fn.replace(".pdf", ""),
                         "url": full,
                         "sort_key": (order, fn),
                     })
@@ -1244,9 +1481,13 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
                 href = href_m.group(1)
                 if ".pdf" not in href.lower():
                     continue
+                if pdf_filter:
+                    haystack = f"{href.lower()} {text}"
+                    if not any(kw.lower() in haystack.lower() for kw in pdf_filter):
+                        continue
                 full = urljoin(url, href)
                 fn = href.rsplit("/", 1)[-1]
-                current_pdfs.append((fn, full))
+                current_pdfs.append((fn, full, text[:60]))
 
         finalize()
 
@@ -1500,6 +1741,118 @@ def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list
     return records
 
 
+def _html_to_text(fragment: str) -> str:
+    fragment = re.sub(r"(?i)<br\s*/?>", "\n", fragment)
+    fragment = re.sub(r"(?i)</p\s*>", "\n", fragment)
+    fragment = re.sub(r"(?i)</(?:div|tr|li|h[1-6])\s*>", "\n", fragment)
+    fragment = re.sub(r"<script[\s\S]*?</script>", "", fragment, flags=re.I)
+    fragment = re.sub(r"<style[\s\S]*?</style>", "", fragment, flags=re.I)
+    text = re.sub(r"<[^>]+>", "", fragment)
+    text = unescape(text)
+    text = re.sub(r"[ \t\r\f\v]+", " ", text)
+    text = re.sub(r"\n\s*\n\s*\n+", "\n\n", text)
+    return text.strip()
+
+
+def extract_html_text(url: str) -> str:
+    r = requests.get(url, timeout=30, headers=HEADERS)
+    r.encoding = r.apparent_encoding or "utf-8"
+    r.raise_for_status()
+    html = r.text
+    m = re.search(
+        r'<div[^>]+class=["\'][^"\']*content-inner[^"\']*["\'][^>]*>([\s\S]*?)<div[^>]+class=["\'][^"\']*inquiry-box',
+        html,
+        re.I,
+    )
+    body = m.group(1) if m else html
+    return _html_to_text(body)
+
+
+def extract_pdf_links_by_html_daily_minutes(cfg: dict, years: list[int]) -> list[dict]:
+    """年度一覧から日別HTML会議録を取得する戦略（清水町など）。"""
+    index_urls: dict = cfg["index_urls"]
+    detail_link_re = re.compile(
+        r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>([\s\S]{1,220}?)</a>',
+        re.I,
+    )
+    title_re = re.compile(r"<title[^>]*>([\s\S]{1,240}?)</title>", re.I)
+    heading_re = re.compile(r"<h1[^>]*>([\s\S]{1,240}?)</h1>", re.I)
+    page_title_re = re.compile(
+        r'<div[^>]+class=["\'][^"\']*page-title[^"\']*["\'][^>]*>([\s\S]{1,240}?)</div>',
+        re.I,
+    )
+    council_re = re.compile(r"令和(\d+)年第\s*(\d+)\s*回.*?(定例|臨時)会")
+    date_re = re.compile(r"(\d+)月\s*(\d+)日")
+
+    records: list[dict] = []
+    seen = set()
+
+    for year, index_url in index_urls.items():
+        if year not in years:
+            continue
+        r = requests.get(index_url, timeout=30, headers=HEADERS)
+        r.encoding = r.apparent_encoding or "utf-8"
+        r.raise_for_status()
+
+        schedule_urls: list[str] = []
+        for m in detail_link_re.finditer(r.text):
+            href = m.group(1)
+            text = _zen_to_half(_html_to_text(m.group(2)))
+            if "議事日程表" not in text:
+                continue
+            full = urljoin(index_url, href)
+            if full not in schedule_urls:
+                schedule_urls.append(full)
+
+        for schedule_url in schedule_urls:
+            sr = requests.get(schedule_url, timeout=30, headers=HEADERS)
+            sr.encoding = sr.apparent_encoding or "utf-8"
+            sr.raise_for_status()
+            title_match = page_title_re.search(sr.text) or heading_re.search(sr.text) or title_re.search(sr.text)
+            schedule_title = _zen_to_half(_html_to_text(title_match.group(1))) if title_match else ""
+            cm = council_re.search(schedule_title)
+            if not cm:
+                continue
+            actual_year = 2018 + int(cm.group(1))
+            if actual_year not in years:
+                continue
+            seq = int(cm.group(2))
+            ttype = f"{cm.group(3)}会"
+
+            for p in re.finditer(r"<p[^>]*>([\s\S]{1,500}?)</p>", sr.text, re.I):
+                paragraph = p.group(1)
+                if "当日の全会議録" not in paragraph:
+                    continue
+                text = _zen_to_half(_html_to_text(paragraph))
+                dm = date_re.search(text)
+                sort_key = (
+                    int(dm.group(1)) if dm else 0,
+                    int(dm.group(2)) if dm else 0,
+                    text,
+                )
+                for lm in detail_link_re.finditer(paragraph):
+                    link_text = _html_to_text(lm.group(2))
+                    if "当日の全会議録" not in link_text:
+                        continue
+                    full = urljoin(schedule_url, lm.group(1))
+                    if full in seen:
+                        continue
+                    seen.add(full)
+                    records.append({
+                        "type": ttype,
+                        "year": actual_year,
+                        "seq": seq,
+                        "filename": full.rsplit("/", 1)[-1],
+                        "link_text": text[:60],
+                        "url": full,
+                        "source_type": "html",
+                        "sort_key": sort_key,
+                    })
+            time.sleep(0.2)
+
+    return records
+
+
 def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
     strategy = cfg.get("strategy", "html_sections")
     if strategy == "html_sections":
@@ -1512,12 +1865,18 @@ def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
         return extract_pdf_links_by_pdf_header(cfg, years or [])
     if strategy == "multi_index_html":
         return extract_pdf_links_by_multi_index_html(cfg, years or [])
+    if strategy == "year_page_type_sections":
+        return extract_pdf_links_by_year_page_type_sections(cfg, years or [])
+    if strategy == "pdf_title_pattern":
+        return extract_pdf_links_by_pdf_title_pattern(cfg, years or [])
     if strategy == "linktext_pattern":
         return extract_pdf_links_by_linktext_pattern(cfg, years or [])
     if strategy == "nested_html_sections":
         return extract_pdf_links_by_nested_html_sections(cfg, years or [])
     if strategy == "category_drilldown":
         return extract_pdf_links_by_category_drilldown(cfg, years or [])
+    if strategy == "html_daily_minutes":
+        return extract_pdf_links_by_html_daily_minutes(cfg, years or [])
     raise ValueError(f"unknown strategy: {strategy}")
 
 
@@ -1525,8 +1884,19 @@ def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
 # PDFテキスト抽出
 # ---------------------------------------------------------------------------
 def extract_pdf_text(url: str, max_pages: int = 500) -> str:
-    r = requests.get(url, timeout=60, headers=HEADERS)
-    r.raise_for_status()
+    last_error = None
+    for attempt in range(3):
+        try:
+            r = requests.get(url, timeout=60, headers=HEADERS)
+            r.raise_for_status()
+            break
+        except Exception as e:
+            last_error = e
+            if attempt == 2:
+                raise
+            time.sleep(2 * (attempt + 1))
+    else:
+        raise last_error
     with pdfplumber.open(io.BytesIO(r.content)) as pdf:
         pages = pdf.pages[:max_pages]
         texts = []
@@ -1547,13 +1917,13 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
         return 0
 
     src = cfg.get("index_url") or cfg.get("index_urls") or "-"
-    print(f"  [{slug}] PDFリスト取得: {src}", flush=True)
+    print(f"  [{slug}] 議事録リスト取得: {src}", flush=True)
     records = extract_pdf_links(cfg, years)
-    print(f"    → {len(records)}件のPDFを検出", flush=True)
+    print(f"    → {len(records)}件の議事録を検出", flush=True)
 
     # 対象年のみフィルタ
     target = [r for r in records if r["year"] in years]
-    print(f"    → 対象年({years})のPDF: {len(target)}件", flush=True)
+    print(f"    → 対象年({years})の議事録: {len(target)}件", flush=True)
 
     out_dir = DATA_DIR / slug / "minutes"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -1575,10 +1945,12 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
 
     saved = 0
     for (year, ttype, seq), items in groups.items():
+        # sort_key があればそれでソート、なければリンクテキストで安定化
+        items.sort(key=lambda x: x.get("sort_key") or x.get("filename", ""))
         type_flag = TYPE_FLAGS.get(ttype, 90)
         council_id = year * 10000 + type_flag * 100 + seq
         council_file = out_dir / f"{council_id}.json"
-        name = f"{era_str(year)}第{seq}回{ttype}"
+        name = items[0].get("council_name") or f"{era_str(year)}第{seq}回{ttype}"
 
         if council_file.exists() and not force:
             print(f"    [skip] {council_id} {name} (既存)", flush=True)
@@ -1593,14 +1965,15 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
             }
             continue
 
-        # sort_key があればそれでソート、なければリンクテキストで安定化
-        items.sort(key=lambda x: x.get("sort_key") or x.get("filename", ""))
         print(f"    [{council_id}] {name} 日程{len(items)}件 取得...", flush=True)
 
         schedules = []
         for idx, r in enumerate(items, 1):
             try:
-                text = extract_pdf_text(r["url"])
+                if r.get("source_type") == "html":
+                    text = extract_html_text(r["url"])
+                else:
+                    text = extract_pdf_text(r["url"])
                 print(f"      ✓ {r['link_text']} ({len(text)}文字)", flush=True)
             except Exception as e:
                 print(f"      ✗ {r['link_text']}: {e}", flush=True)

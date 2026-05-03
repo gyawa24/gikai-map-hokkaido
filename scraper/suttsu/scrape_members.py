@@ -20,11 +20,15 @@
 import re
 import sys
 from pathlib import Path
+import json
 
 import requests
 from bs4 import BeautifulSoup
 
 MEMBERS_URL = "http://www.town.suttu.lg.jp/town/detail.php?id=61"
+ROOT = Path(__file__).parent.parent.parent
+DATA_DIR = ROOT / "data" / "suttsu"
+SITE_DATA_DIR = ROOT / "site" / "data" / "suttsu"
 
 HEADERS = {
     "User-Agent": (
@@ -119,6 +123,15 @@ def try_pdf_scrape(soup: BeautifulSoup) -> list[dict]:
     return members
 
 
+def write_members(members: list[dict]) -> None:
+    for out_dir in (DATA_DIR, SITE_DATA_DIR):
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "members.json").write_text(
+            json.dumps(members, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+
+
 def main() -> int:
     print("寿都町議会 議員名簿を収集中...")
     soup = fetch(MEMBERS_URL)
@@ -129,23 +142,13 @@ def main() -> int:
     members = try_html_scrape(soup)
     if members:
         # 現状ここは到達しないが、将来 HTML テキスト化された際の受け皿
-        out_dir = Path(__file__).parent.parent.parent / "site" / "data" / "suttsu"
-        out_dir.mkdir(parents=True, exist_ok=True)
-        import json
-        (out_dir / "members.json").write_text(
-            json.dumps(members, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+        write_members(members)
         print(f"取得議員数: {len(members)}名 (HTML)")
         return 0
 
     members = try_pdf_scrape(soup)
     if members:
-        out_dir = Path(__file__).parent.parent.parent / "site" / "data" / "suttsu"
-        out_dir.mkdir(parents=True, exist_ok=True)
-        import json
-        (out_dir / "members.json").write_text(
-            json.dumps(members, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+        write_members(members)
         print(f"取得議員数: {len(members)}名 (PDF)")
         return 0
 
