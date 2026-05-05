@@ -21,6 +21,7 @@ Checks:
   - feature flags match expected files
   - site/data/{slug}/ is synced from data/{slug}/
   - segments exist when minutes/index.json exists
+  - themes feature matches members_activity.json
 `);
 }
 
@@ -124,10 +125,13 @@ async function main() {
   const minutesAltSite = path.join(siteDir, "index.json");
   const segmentsIndexRoot = path.join(rootDir, "segments", "_index.json");
   const segmentsIndexSite = path.join(siteDir, "segments", "_index.json");
+  const themesRoot = path.join(rootDir, "members_activity.json");
+  const themesSite = path.join(siteDir, "members_activity.json");
 
   const hasMembersFile = await pathExists(membersRoot);
   const hasMinutesIndex = (await pathExists(minutesIndexRoot)) || (await pathExists(minutesAltRoot));
   const hasSegmentsIndex = await pathExists(segmentsIndexRoot);
+  const hasThemesFile = await pathExists(themesRoot);
 
   if (hasMembersFile) {
     checks.push(`members data exists`);
@@ -164,6 +168,18 @@ async function main() {
       checks.push(`segments index exists`);
       await compareFiles(issues, segmentsIndexRoot, segmentsIndexSite, "segments/_index.json");
     }
+  }
+
+  if (hasThemesFile) {
+    checks.push(`themes data exists`);
+    await compareFiles(issues, themesRoot, themesSite, "members_activity.json");
+  }
+
+  if (rootEntry?.features?.includes("themes") && !hasThemesFile) {
+    issues.push(`feature mismatch: themes enabled but data/${slug}/members_activity.json is missing`);
+  }
+  if (!rootEntry?.features?.includes("themes") && hasThemesFile) {
+    issues.push(`feature mismatch: members_activity.json exists but features does not include "themes"`);
   }
 
   if (rootEntry?.minutes_status === "unavailable" && rootEntry?.features?.includes("minutes")) {

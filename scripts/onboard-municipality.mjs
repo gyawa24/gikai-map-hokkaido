@@ -53,6 +53,7 @@ Optional:
   --minutes-access <restricted>
   --minutes-access-note <text>
   --build-segments            Build data/{slug}/segments when minutes exist
+  --verify                    Run scripts/verify-municipality.mjs at the end
   --dry-run                   Print actions without writing files
   --help
 
@@ -66,7 +67,8 @@ Examples:
     --features members,minutes \\
     --tenant-id 999 \\
     --system dnp \\
-    --build-segments
+    --build-segments \\
+    --verify
 
   node scripts/onboard-municipality.mjs \\
     --slug suttsu \\
@@ -79,6 +81,7 @@ Examples:
 function parseArgs(argv) {
   const options = {
     buildSegments: false,
+    verify: false,
     dryRun: false,
   };
 
@@ -90,6 +93,10 @@ function parseArgs(argv) {
     }
     if (arg === "--build-segments") {
       options.buildSegments = true;
+      continue;
+    }
+    if (arg === "--verify") {
+      options.verify = true;
       continue;
     }
     if (arg === "--dry-run") {
@@ -262,6 +269,28 @@ async function runBuildSegments(slug, dryRun) {
   });
 }
 
+async function runVerify(slug, dryRun) {
+  if (dryRun) {
+    console.log(`[dry-run] node scripts/verify-municipality.mjs ${slug}`);
+    return;
+  }
+
+  await new Promise((resolve, reject) => {
+    const child = spawn("node", [path.join(REPO_ROOT, "scripts", "verify-municipality.mjs"), slug], {
+      cwd: REPO_ROOT,
+      stdio: "inherit",
+    });
+    child.on("exit", (code) => {
+      if (code === 0) {
+        resolve();
+        return;
+      }
+      reject(new Error(`verify-municipality failed for ${slug} with exit code ${code}`));
+    });
+    child.on("error", reject);
+  });
+}
+
 function mergeEntry(existingEntry, options) {
   const base = existingEntry ? { ...existingEntry } : {};
   const next = {
@@ -325,6 +354,10 @@ async function main() {
   if (options.buildSegments) {
     await runBuildSegments(options.slug, options.dryRun);
     await syncMunicipalityDirectory(options.slug, options.dryRun);
+  }
+
+  if (options.verify) {
+    await runVerify(options.slug, options.dryRun);
   }
 }
 

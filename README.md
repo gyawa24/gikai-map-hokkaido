@@ -57,8 +57,11 @@ gikai-map-hokkaido/
 | [`SECURITY.md`](SECURITY.md) | セキュリティ・脆弱性報告 |
 | [`site/AGENTS.md`](site/AGENTS.md) | Next.js 16 固有の注意事項 |
 | [`docs/add-municipality-workflow.md`](docs/add-municipality-workflow.md) | 1市町村追加の実務フロー（metadata, data, segments, 画面確認） |
+| [`docs/ai-operations.md`](docs/ai-operations.md) | AI前提で `今やる / 次にやる / そのうちやる` を回すための運営ガイド |
+| [`docs/operations-board.md`](docs/operations-board.md) | 直近で着手する作業のボード（Now / Next / Later） |
 | [`docs/news-workflow.md`](docs/news-workflow.md) | トップ/`/news` の更新情報の運用ルール |
 | [`docs/municipality-coverage.md`](docs/municipality-coverage.md) | 市町村ごとの機能充足一覧と次の一手 |
+| [`docs/minutes-expansion-candidates.md`](docs/minutes-expansion-candidates.md) | 次に `minutes` 化しやすい自治体候補メモ |
 | [`docs/`](docs/) | MCP API キー運用、リリースチェックリストなど |
 
 ## ローカル開発

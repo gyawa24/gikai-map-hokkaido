@@ -1,0 +1,48 @@
+[
+  {
+    "id": "toyoura-20241081-1-001",
+    "municipality": "toyoura",
+    "council_id": 20241081,
+    "council_name": "令和6年定例会8月会議",
+    "schedule_id": 1,
+    "schedule_name": "定例会8月会議 （8月19日）",
+    "date": "2024-08-19",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "阿部和之",
+    "member_faction": "",
+    "text": "（小川晃司君） 議長の許可をいただきましたので、去る８月９日に開催されました議\n会運営委員会における協議、結果等についてご報告をいたします。\n令和６年定例会８月会議の議事日程等につきましては、お手元に配付のとおりでございます。\n会議に付議されている案件等につきましては、町長からの提案として、令和５年度各会計決\n算の認定及び国民健康保険病院事業会計決算の認定の２件であります。\nまた、議会からは、議員の派遣の発議案が１件でございます。\n以上のことから、定例会８月会議の会期につきましては、１日間としたところであります。\n短期間ではありますが、円滑な議会運営に特段のご協力を賜りますことをお願い申し上げ、\n議会運営委員会からの報告といたします。",
+    "text_length": 321,
+    "source": {
+      "minutes_file": "data/toyoura/minutes/20241081.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "toyoura-20241081-1-002",
+    "municipality": "toyoura",
+    "council_id": 20241081,
+    "council_name": "令和6年定例会8月会議",
+    "schedule_id": 1,
+    "schedule_name": "定例会8月会議 （8月19日）",
+    "date": "2024-08-19",
+    "speaker": "委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告に対し質疑はございませんか。\n（「なし」と言う人あり）",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/toyoura/minutes/20241081.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  }
+]

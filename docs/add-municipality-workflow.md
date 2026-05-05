@@ -53,7 +53,7 @@ node scripts/onboard-municipality.mjs \
 議事録がある市町村では、次で `segments` まで一気に揃える。
 
 ```bash
-node scripts/onboard-municipality.mjs --slug sample --build-segments
+node scripts/onboard-municipality.mjs --slug sample --build-segments --verify
 ```
 
 このコマンドは:
@@ -61,12 +61,28 @@ node scripts/onboard-municipality.mjs --slug sample --build-segments
 - `data/{slug}/minutes/` の有無を確認
 - `scripts/build-segments.mjs <slug>` を実行
 - 生成された `data/{slug}/segments/` を `site/data/{slug}/segments/` に同期
+- 最後に `scripts/verify-municipality.mjs <slug>` を実行
 
 議事録が無い場合は `segments` を自動でスキップする。
+
+既存自治体の `minutes` 更新をまとめて回したい時は、スクレイパの種類を意識せず次を使う。
+
+```bash
+node scripts/refresh-minutes.mjs --all-published --years 2025,2026 --verify --coverage
+```
+
+このコマンドは:
+
+- 自治体ごとの既知スクレイパを自動判定して `minutes` を再取得
+- `build-segments.mjs` まで続けて実行
+- 必要なら `verify-municipality.mjs` と `generate-municipality-coverage.mjs` も実行
+- `members only` で新規に公開できそうな自治体は、別途 `municipalities.json` の feature 反映判断を残す
 
 ## 4. 導線の整合性を確認する
 
 画面確認の前に、metadata と data の食い違いがないかを機械的に確認する。
+
+`onboard-municipality.mjs --verify` を使わない場合だけ、単独で次を実行する。
 
 ```bash
 node scripts/verify-municipality.mjs sample

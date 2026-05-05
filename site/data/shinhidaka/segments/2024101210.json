@@ -1,0 +1,1799 @@
+[
+  {
+    "id": "shinhidaka-2024101210-1-001",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "保健福祉部長上田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "賢 朗 君\n保健福祉部参与 小 松 幹 志 君\n総合ケアセンター総合施設長\n新ひだか町立病院長",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-002",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "まちづくり推進課長森勝",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "利 君\nまちづくり推進課参事 田 中 孔 洋 君",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-003",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "税務課長千葉",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "憲 児 君\n税務課参事 佐 々 木 直 子 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-004",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "健康推進課長及川",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "啓 明 君\n地域包括支援センター長\n新ひだか町立病院事務長 渡 辺 智 之 君\n地域連携室長",
+    "text_length": 46,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-005",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "農政課長及川",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "敦 司 君\n農政課参事 飯 田 裕 紀 君\n農政課参事 伊 藤 静 生 君",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-006",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "水産林務課長新川",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "兼 一 君\n水産林務課参事 渡 辺 英 樹 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-007",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "地域振興課長渡辺",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "浩 之 君\n会計管理者 大 久 保 信 男 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-008",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "福祉課長補佐齋藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "亜 希 子 君\n福祉課主幹 及 川 美 和 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-009",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "生活環境課長補佐五十",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "川 敏 君\n生活環境課主幹 村 田 弘 明 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-010",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "健康推進課長補佐土井",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "里 治 君\n地域包括支援センター長補佐 戸 子 台 弘 一 君\nこども家庭センター長補佐 海 馬 澤 晴 香 君\nこども家庭センター長補佐 中 村 香 君\n健康推進課主幹\nこども家庭センター長補佐 山 田 直 樹 君\n地域包括支援センター主幹\n静内保育所長 木 村 清 美 君\n新ひだか町立病院事務長補佐 山 下 恵 治 君\n地域連携室主幹\n新ひだか町立病院事務長補佐 小 島 知 恵 子 君\n地域連携室主幹",
+    "text_length": 204,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-010"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-011",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "建設課長補佐村田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "弘 明 君\n建設課主幹 但 野 成 康 君",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-012",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "上下水道課長補佐五十",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "嵐 克 昭 君\n上下水道課主幹 酒 井 裕 美 君\n上下水道課主幹 小 田 正 志 君\n静内終末処理場主幹\n三石浄化センター主幹",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-013",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "農政課長補佐木村",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "研 一 君\nハウス団地主幹\n農政課主幹 太 田 康 紀 君\n農業実験センター主幹",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-014",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "水産林務課長補佐土井",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "朋 英 君\n水産林務課主幹 及 川 わ た る 君",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-015",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "地域振興課長補佐坂田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一 洋 君\n地域振興課主幹 小 野 寺 聡 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-016",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "地域振興課長補佐森崎",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "忍 君\n会計課主幹\n地域振興課主幹 齋 藤 伊 君\n会計課主幹",
+    "text_length": 31,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-017",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "会計課長補佐斉藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "智 恵 美 君\n〇教育委員会教育長より通知のあった議事説明者",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-018",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "文化振興課長村田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "美 穂 君\n文化振興課参事 斉 藤 大 朋 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-019",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "管理課長補佐寺田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "巧 君\n管理課主幹 岩 渕 元 希 君\n学校給食センター長 三 上 泰 範 君",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-020",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "生涯学習課長補佐工藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "郁 子 君\n生涯学習課主幹 小 瀧 健 二 君\nライディングヒルズ静内施設長 内 記 一 馬 君",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-020"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-021",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "文化振興課長補佐佐藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ま ゆ み 君\n〇水道事業及び下水道事業の管理者より通知のあった議事説明者",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-022",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "上下水道課長補佐五十",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "嵐 克 昭 君\n上下水道課主幹 小 田 正 志 君\n上下水道課主幹 酒 井 裕 美 君\n〇農業委員会会長より通知のあった議事説明者",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-022"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-023",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "事務局長森宗",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "厚 志 君\n事務局参事 及 川 敦 司 君",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-024",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "事務局長補佐神谷",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貴 史 君\n〇選挙管理委員会委員長より通知のあった議事説明者",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-024"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-025",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "事務局長補佐海馬",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "澤 賢 君\n〇公平委員会委員長より通知のあった議事説明者",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-1-026",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 1,
+    "schedule_name": "1号（12月10日）",
+    "date": "2024-12-10",
+    "speaker": "事務局長補佐阿部",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "容 子 君\n〇代表監査委員より通知のあった議事説明者\n容 子 君\n職務のため出席した事務局職員",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-026",
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-027",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "保健福祉部長上田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "賢 朗 君\n保健福祉部参与 小 松 幹 志 君\n総合ケアセンター総合施設長\n新ひだか町立病院長",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-028",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "まちづくり推進課長森勝",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "利 君\nまちづくり推進課参事 田 中 孔 洋 君",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-029",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "税務課長千葉",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "憲 児 君\n税務課参事 佐 々 木 直 子 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-030",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "健康推進課長及川",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "啓 明 君\n地域包括支援センター長\n新ひだか町立病院事務長 渡 辺 智 之 君\n地域連携室長",
+    "text_length": 46,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-031",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "農政課長及川",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "敦 司 君\n農政課参事 飯 田 裕 紀 君\n農政課参事 伊 藤 静 生 君",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-032",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "水産林務課長新川",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "兼 一 君\n水産林務課参事 渡 辺 英 樹 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-033",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "地域振興課長渡辺",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "浩 之 君\n会計管理者 大 久 保 信 男 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-034",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "福祉課長補佐齋藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "亜 希 子 君\n福祉課主幹 及 川 美 和 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-035",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "生活環境課長補佐五十",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "川 敏 君\n生活環境課主幹 村 田 弘 明 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-036",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "健康推進課長補佐土井",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "里 治 君\n地域包括支援センター長補佐 戸 子 台 弘 一 君\nこども家庭センター長補佐 海 馬 澤 晴 香 君\nこども家庭センター長補佐 中 村 香 君\n健康推進課主幹\nこども家庭センター長補佐 山 田 直 樹 君\n地域包括支援センター主幹\n静内保育所長 木 村 清 美 君\n新ひだか町立病院事務長補佐 山 下 恵 治 君\n地域連携室主幹\n新ひだか町立病院事務長補佐 小 島 知 恵 子 君\n地域連携室主幹",
+    "text_length": 204,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-010"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-037",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "建設課長補佐村田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "弘 明 君\n建設課主幹 但 野 成 康 君",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-038",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "上下水道課長補佐五十",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "嵐 克 昭 君\n上下水道課主幹 酒 井 裕 美 君\n上下水道課主幹 小 田 正 志 君\n静内終末処理場主幹\n三石浄化センター主幹",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-039",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "農政課長補佐木村",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "研 一 君\nハウス団地主幹\n農政課主幹 太 田 康 紀 君\n農業実験センター主幹",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-040",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "水産林務課長補佐土井",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "朋 英 君\n水産林務課主幹 及 川 わ た る 君",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-041",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "地域振興課長補佐坂田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一 洋 君\n地域振興課主幹 小 野 寺 聡 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-042",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "地域振興課長補佐森崎",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "忍 君\n会計課主幹\n地域振興課主幹 齋 藤 伊 君\n会計課主幹",
+    "text_length": 31,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-043",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "会計課長補佐斉藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "智 恵 美 君\n水産林務課水産係長 田 村 尚 之 君\n〇教育委員会教育長より通知のあった議事説明者",
+    "text_length": 50,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-044",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "文化振興課長村田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "美 穂 君\n文化振興課参事 斉 藤 大 朋 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-045",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "管理課長補佐寺田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "巧 君\n管理課主幹 岩 渕 元 希 君\n学校給食センター長 三 上 泰 範 君",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-046",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "生涯学習課長補佐工藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "郁 子 君\n生涯学習課主幹 小 瀧 健 二 君\nライディングヒルズ静内施設長 内 記 一 馬 君",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-020"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-047",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "文化振興課長補佐佐藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ま ゆ み 君\n〇水道事業及び下水道事業の管理者より通知のあった議事説明者",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-048",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "上下水道課長補佐五十",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "嵐 克 昭 君\n上下水道課主幹 小 田 正 志 君\n上下水道課主幹 酒 井 裕 美 君\n〇農業委員会会長より通知のあった議事説明者",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-022"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-049",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "事務局長森宗",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "厚 志 君\n事務局参事 及 川 敦 司 君",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-050",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "事務局長補佐神谷",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貴 史 君\n〇選挙管理委員会委員長より通知のあった議事説明者",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-024"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-051",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "事務局長補佐海馬",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "澤 賢 君\n〇公平委員会委員長より通知のあった議事説明者",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-2-052",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 2,
+    "schedule_name": "2号（12月11日）",
+    "date": "2024-12-11",
+    "speaker": "事務局長補佐阿部",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "容 子 君\n〇代表監査委員より通知のあった議事説明者\n容 子 君\n職務のため出席した事務局職員",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-table-026",
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-053",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "保健福祉部長上田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "賢 朗 君\n保健福祉部参与 小 松 幹 志 君\n総合ケアセンター総合施設長\n新ひだか町立病院長",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-001"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-054",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "まちづくり推進課長森勝",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "利 君\nまちづくり推進課参事 田 中 孔 洋 君",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-002"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-055",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "税務課長千葉",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "憲 児 君\n税務課参事 佐 々 木 直 子 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-003"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-056",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "健康推進課長及川",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "啓 明 君\n地域包括支援センター長\n新ひだか町立病院事務長 渡 辺 智 之 君\n地域連携室長",
+    "text_length": 46,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-004"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-057",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "農政課長及川",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "敦 司 君\n農政課参事 飯 田 裕 紀 君\n農政課参事 伊 藤 静 生 君",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-005"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-058",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "水産林務課長新川",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "兼 一 君\n水産林務課参事 渡 辺 英 樹 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-059",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "地域振興課長渡辺",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "浩 之 君\n会計管理者 大 久 保 信 男 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-007"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-060",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "福祉課長補佐齋藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "亜 希 子 君\n福祉課主幹 及 川 美 和 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-008"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-061",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "生活環境課長補佐五十",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "川 敏 君\n生活環境課主幹 村 田 弘 明 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-009"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-062",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "健康推進課長補佐土井",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "里 治 君\n地域包括支援センター長補佐 戸 子 台 弘 一 君\nこども家庭センター長補佐 海 馬 澤 晴 香 君\nこども家庭センター長補佐  中 村 香 君\n健康推進課主幹\nこども家庭センター長補佐 山 田 直 樹 君\n地域包括支援センター主幹\n静内保育所長 木 村 清 美 君\n新ひだか町立病院事務長補佐 山 下 恵 治 君\n地域連携室主幹\n新ひだか町立病院事務長補佐 小 島 知 恵 子 君\n地域連携室主幹",
+    "text_length": 205,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-010"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-063",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "建設課長補佐村田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "弘 明 君\n建設課主幹 但 野 成 康 君",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-064",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "上下水道課長補佐五十",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "嵐 克 昭 君\n上下水道課主幹 酒 井 裕 美 君\n上下水道課主幹 小 田 正 志 君\n静内終末処理場主幹\n三石浄化センター主幹",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-012"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-065",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "農政課長補佐木村",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "研 一 君\nハウス団地主幹\n農政課主幹 太 田 康 紀 君\n農業実験センター主幹",
+    "text_length": 40,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-013"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-066",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "水産林務課長補佐土井",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "朋 英 君\n水産林務課主幹 及 川 わ た る 君",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-014"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-067",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "地域振興課長補佐坂田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一 洋 君\n地域振興課主幹 小 野 寺 聡 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-068",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "地域振興課長補佐森崎",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "忍 君\n会計課主幹\n地域振興課主幹 齋 藤 伊 君\n会計課主幹",
+    "text_length": 31,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-069",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "会計課長補佐斉藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "智 恵 美 君\n〇教育委員会教育長より通知のあった議事説明者",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-070",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "文化振興課長村田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "美 穂 君\n文化振興課参事 斉 藤 大 朋 君",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-018"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-071",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "管理課長補佐寺田",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "巧 君\n管理課主幹 岩 渕 元 希 君\n学校給食センター長 三 上 泰 範 君",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-072",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "生涯学習課長補佐工藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "郁 子 君\n生涯学習課主幹 小 瀧 健 二 君\nライディングヒルズ静内施設長 内 記 一 馬 君",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-020"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-073",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "文化振興課長補佐佐藤",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ま ゆ み 君\n〇水道事業及び下水道事業の管理者より通知のあった議事説明者",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-074",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "上下水道課長補佐五十",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "嵐 克 昭 君\n上下水道課主幹 小 田 正 志 君\n上下水道課主幹 酒 井 裕 美 君\n〇農業委員会会長より通知のあった議事説明者",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-022"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-075",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "事務局長森宗",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "厚 志 君\n事務局参事 及 川 敦 司 君",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-076",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "事務局長補佐神谷",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "貴 史 君\n〇選挙管理委員会委員長より通知のあった議事説明者",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-024"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-077",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "事務局長補佐海馬",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "澤 賢 君\n〇公平委員会委員長より通知のあった議事説明者",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "shinhidaka-2024101210-3-078",
+    "municipality": "shinhidaka",
+    "council_id": 2024101210,
+    "council_name": "12月定例会（第7回） (2024-12-10)",
+    "schedule_id": 3,
+    "schedule_name": "3号（12月12日）",
+    "date": "2024-12-12",
+    "speaker": "事務局長補佐阿部",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "容 子 君\n〇代表監査委員より通知のあった議事説明者\n容 子 君\n職務のため出席した事務局職員",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/shinhidaka/minutes/2024101210.json",
+      "schedule_id": 3,
+      "minute_ids": [
+        "1-table-026",
+        "1-table-027"
+      ]
+    }
+  }
+]
