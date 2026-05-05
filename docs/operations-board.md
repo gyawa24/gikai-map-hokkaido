@@ -57,6 +57,7 @@
 
 ## Done
 
+- `rankoshi` の `minutes` / `segments` 整備（年別会議録ページのh1見出し直下PDFを会議単位に束ねる、themes は話者名寄せ待ち）
 - `shintotsukawa` の `minutes` / `segments` 整備（タイムスタンプ形式PDFをPDF本文ヘッダーで判定、themes は話者名寄せ待ち）
 - `mori` の `minutes` / `segments` 整備（通年会期の月会議PDF対応、themes は話者名寄せ待ち）
 - `tsukigata` の `minutes` / `segments` 整備（年別会議結果ページの日別PDF対応、themes は議員名簿ミスマッチ解消待ち）

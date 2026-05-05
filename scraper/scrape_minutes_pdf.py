@@ -419,6 +419,17 @@ PDF_CONFIGS: dict[str, dict] = {
         "year_tag": "h2",
         "index_urls": {None: "https://www.town.makubetsu.lg.jp/gikai/hongikai/gikaikaigiroku/1898.html"},
     },
+    "rankoshi": {
+        "name": "蘭越町",
+        # 年別ページ内で h1 の会議見出し直下に日別PDFが並ぶ。
+        "strategy": "multi_index_html",
+        "council_tag": "h1",
+        "index_urls": {
+            2026: "https://www.town.rankoshi.hokkaido.jp/administration/town/detail.html?content=867",
+            2025: "https://www.town.rankoshi.hokkaido.jp/administration/town/detail.html?content=778",
+            2024: "https://www.town.rankoshi.hokkaido.jp/administration/town/detail.html?content=656",
+        },
+    },
     "hiroo": {
         "name": "広尾町",
         # 年度サブディレクトリ、リンクテキストに全情報

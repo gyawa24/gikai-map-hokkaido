@@ -885,12 +885,14 @@
     "furigana": "らんこしちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが年度別ページの巡回と日時タイムスタンプファイル名のため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "蘭越町議会の年別会議録ページから会議録PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "niseko",
