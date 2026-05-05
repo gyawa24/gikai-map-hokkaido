@@ -24,18 +24,18 @@
 
 ### Coverage
 
-- `chippubetsu` の `minutes` / `segments` を追加する
-  - 目的: members only 残件から、公式サイトに本文会議録PDFがある自治体を1件進める
-  - 完了条件: `data/chippubetsu/minutes/` と `segments/` を生成し、metadata 同期、verify、画面確認まで通す
-  - 主に触る場所: `scraper/scrape_minutes_pdf.py`, `data/chippubetsu/`, `site/data/chippubetsu/`, `data/municipalities.json`, `site/data/municipalities.json`
+- `minutes` 追加候補を再選定する
+  - 目的: members only 残件から、公式サイトに本文会議録PDFがある自治体を次に進める
+  - 完了条件: `docs/minutes-expansion-candidates.md` の優先候補を次の2件程度に更新する
+  - 主に触る場所: `docs/municipality-coverage.md`, `docs/minutes-expansion-candidates.md`
 
 ## Next
 
 ### Coverage
 
-- `minutes` 追加候補を再選定する
-  - 目的: `chippubetsu` 完了後も members only から追加しやすい自治体を切らさない
-  - 完了条件: `docs/minutes-expansion-candidates.md` の優先候補を次の2件程度に更新する
+- `members` 名寄せミスマッチ自治体を確認する
+  - 目的: `tsukigata` / `chippubetsu` など、議事録はあるが themes 化できない自治体の原因を切り分ける
+  - 完了条件: 1自治体について、名簿側の表記ゆれか議事録側の話者抽出問題かを特定する
 
 ## Later
 
@@ -59,6 +59,7 @@
 
 - `mori` の `minutes` / `segments` 整備（通年会期の月会議PDF対応、themes は話者名寄せ待ち）
 - `tsukigata` の `minutes` / `segments` 整備（年別会議結果ページの日別PDF対応、themes は議員名簿ミスマッチ解消待ち）
+- `chippubetsu` の `minutes` / `segments` 整備（議決結果リンク直後の会議録PDF対応、themes は議員名簿ミスマッチ解消待ち）
 - `minutes` 追加候補を再選定し、`tsukigata` / `chippubetsu` を次候補に更新
 - 自治体ページに `データ更新日 / 議事録確認日` の共通表示を追加
 - `minutes_verified_at` が古い未公開自治体の再確認ルールを `list-stale-minutes-verifications.mjs` と workflow に整理

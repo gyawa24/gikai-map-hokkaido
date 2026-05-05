@@ -797,6 +797,16 @@ PDF_CONFIGS: dict[str, dict] = {
         "council_tag": "h3",
         "pdf_filter": "月",
     },
+    "chippubetsu": {
+        "name": "秩父別町",
+        # 議決結果リンクに会期情報があり、その直後に会議録PDFが並ぶ構造。
+        "strategy": "result_following_minutes",
+        "index_urls": {
+            2026: "https://www.town.chippubetsu.hokkaido.jp/category/detail.html?category=town&content=636",
+            2025: "https://www.town.chippubetsu.hokkaido.jp/category/detail.html?category=town&content=588",
+            2024: "https://www.town.chippubetsu.hokkaido.jp/category/detail.html?category=town&content=543",
+        },
+    },
     "yakumo": {
         "name": "八雲町",
         # 令和6年は年別ページ配下の「定例会会議録」「臨時会会議録」詳細ページに
@@ -1837,6 +1847,109 @@ def extract_pdf_links_by_nested_html_sections(cfg: dict, years: list[int]) -> li
     return records
 
 
+def _dates_from_japanese_text(text: str) -> list[str]:
+    text_half = _zen_to_half(text)
+    m = re.search(
+        r"(\d+)\s*月\s*(\d+)\s*日(?:\s*[～〜~-]\s*(?:(\d+)\s*月\s*)?(\d+)\s*日)?",
+        text_half,
+    )
+    if not m:
+        return []
+    start_month = int(m.group(1))
+    start_day = int(m.group(2))
+    end_month = int(m.group(3) or start_month) if m.group(4) else None
+    end_day = int(m.group(4)) if m.group(4) else None
+    dates = [f"{start_month}月{start_day}日"]
+    if end_month and end_day:
+        dates.append(f"{end_month}月{end_day}日")
+    return dates
+
+
+def extract_pdf_links_by_result_following_minutes(cfg: dict, years: list[int]) -> list[dict]:
+    """議決結果リンクの直後に並ぶ会議録PDFを会期単位へ束ねる戦略。
+
+    例: 秩父別町
+      h2 「定例会」
+      a 「第1回町議会定例会議決結果（3月11日～12日）」
+      a 「会議録（3月11日）」
+      a 「会議録（3月12日）」
+    """
+    records: list[dict] = []
+    years_set = set(years)
+
+    for year, urls in cfg["index_urls"].items():
+        if isinstance(year, int) and year not in years_set:
+            continue
+        url_list = urls if isinstance(urls, list) else [urls]
+        for index_url in url_list:
+            r = requests.get(index_url, timeout=30, headers=HEADERS)
+            r.encoding = r.apparent_encoding or "utf-8"
+            r.raise_for_status()
+
+            current_type: str | None = None
+            current_seq: int | None = None
+            current_dates: list[str] = []
+            date_cursor = 0
+
+            for m in TAG_RE.finditer(r.text):
+                tag = m.group("tag").lower()
+                text = _zen_to_half(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group("text"))).strip())
+                attrs = m.group("attrs")
+
+                if tag == "h2":
+                    if text in ("定例会", "臨時会"):
+                        current_type = text
+                        current_seq = None
+                        current_dates = []
+                        date_cursor = 0
+                    continue
+
+                if tag != "a":
+                    continue
+                href_m = HREF_RE.search(attrs)
+                if not href_m:
+                    continue
+                href = href_m.group(1)
+                if ".pdf" not in href.lower():
+                    continue
+
+                if "議決結果" in text:
+                    if not current_type:
+                        for ttype in ("定例会", "臨時会"):
+                            if ttype in text:
+                                current_type = ttype
+                                break
+                    sm = re.search(r"第\s*(\d+)\s*回", text)
+                    current_seq = int(sm.group(1)) if sm else None
+                    current_dates = _dates_from_japanese_text(text)
+                    date_cursor = 0
+                    continue
+
+                if "会議録" not in text or not current_type or current_seq is None:
+                    continue
+                link_dates = _dates_from_japanese_text(text)
+                if link_dates:
+                    link_text = link_dates[0]
+                elif date_cursor < len(current_dates):
+                    link_text = current_dates[date_cursor]
+                    date_cursor += 1
+                else:
+                    link_text = f"第{date_cursor + 1}日"
+                    date_cursor += 1
+
+                records.append({
+                    "type": current_type,
+                    "year": year,
+                    "seq": current_seq,
+                    "filename": href.rsplit("/", 1)[-1],
+                    "link_text": link_text,
+                    "url": urljoin(index_url, href),
+                    "sort_key": (current_seq, date_cursor, href),
+                })
+
+    return records
+
+
 def extract_pdf_links_by_category_drilldown(cfg: dict, years: list[int]) -> list[dict]:
     """カテゴリインデックスから会議詳細ページへ2段階クロールしてPDFを取得する戦略。
 
@@ -2117,6 +2230,8 @@ def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
         return extract_pdf_links_by_monthly_meeting_table(cfg, years or [])
     if strategy == "nested_html_sections":
         return extract_pdf_links_by_nested_html_sections(cfg, years or [])
+    if strategy == "result_following_minutes":
+        return extract_pdf_links_by_result_following_minutes(cfg, years or [])
     if strategy == "category_drilldown":
         return extract_pdf_links_by_category_drilldown(cfg, years or [])
     if strategy == "html_daily_minutes":

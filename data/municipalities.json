@@ -703,12 +703,14 @@
     "furigana": "ちっぷべつちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議記録ページはありますが構造確認が不十分で現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "秩父別町議会の会議録PDFを議決結果ページから取り込みました。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "uryu",
