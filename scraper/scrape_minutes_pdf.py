@@ -782,6 +782,21 @@ PDF_CONFIGS: dict[str, dict] = {
         "default_type": "定例会",
         "council_name_from_month": True,
     },
+    "tsukigata": {
+        "name": "月形町",
+        # 年度ページ内の h2=定例会/臨時会、h3=第N回、会議録の日別PDFを取得する。
+        # 議決結果・一般質問もPDFなので、日付リンクだけを対象にする。
+        "strategy": "nested_html_sections",
+        "index_urls": {
+            2026: "https://www.town.tsukigata.hokkaido.jp/page/6952.html",
+            2025: "https://www.town.tsukigata.hokkaido.jp/page/4071.html",
+            2024: "https://www.town.tsukigata.hokkaido.jp/page/1607.html",
+        },
+        "year_tag": "h1",
+        "type_tag": "h2",
+        "council_tag": "h3",
+        "pdf_filter": "月",
+    },
     "yakumo": {
         "name": "八雲町",
         # 令和6年は年別ページ配下の「定例会会議録」「臨時会会議録」詳細ページに
@@ -1708,97 +1723,117 @@ def extract_pdf_links_by_nested_html_sections(cfg: dict, years: list[int]) -> li
       h4 「第1回定例会」/「第1回臨時会」 → council (seq)
       その下のPDFリンクから pdf_filter にマッチしたものを schedule として拾う
     """
-    r = requests.get(cfg["index_url"], timeout=30, headers=HEADERS)
-    r.raise_for_status()
-    html = r.text
     year_tag = cfg["year_tag"].lower()
     type_tag = cfg["type_tag"].lower()
     council_tag = cfg["council_tag"].lower()
     pdf_filter = cfg.get("pdf_filter", "")
     years_set = set(years)
-
-    current_year: int | None = None
-    current_type: str | None = None
-    current_seq: int | None = None
-    current_pdfs: list[tuple[str, str]] = []
     records: list[dict] = []
 
-    def finalize():
-        nonlocal current_pdfs
+    if "index_urls" in cfg:
+        index_urls = cfg["index_urls"]
+    else:
+        index_urls = {None: cfg["index_url"]}
+
+    def finalize(current_year, current_type, current_seq, current_pdfs):
         if (
             current_year in years_set
             and current_type
             and current_seq is not None
             and current_pdfs
         ):
-            for order, (fn, full) in enumerate(current_pdfs, 1):
+            for order, (fn, full, link_text) in enumerate(current_pdfs, 1):
                 records.append({
                     "type": current_type,
                     "year": current_year,
                     "seq": current_seq,
                     "filename": fn,
-                    "link_text": fn.replace(".pdf", ""),
+                    "link_text": link_text or fn.replace(".pdf", ""),
                     "url": full,
                     "sort_key": (order, fn),
                 })
-        current_pdfs = []
 
-    for m in TAG_RE.finditer(html):
-        tag = m.group("tag").lower()
-        text = re.sub(r"<[^>]+>", "", m.group("text")).strip()
-        attrs = m.group("attrs")
-        text_half = _zen_to_half(text)
-
-        if tag == year_tag:
-            finalize()
-            current_seq = None
-            ym = re.search(r"(\d{4})\s*年", text)
-            if ym:
-                current_year = int(ym.group(1))
-            else:
-                jy = japanese_year_to_int(text)
-                if jy:
-                    current_year = jy
+    for expected_year, urls in index_urls.items():
+        if isinstance(expected_year, int) and expected_year not in years_set:
             continue
+        url_list = urls if isinstance(urls, list) else [urls]
+        for index_url in url_list:
+            r = requests.get(index_url, timeout=30, headers=HEADERS)
+            r.encoding = r.apparent_encoding or "utf-8"
+            r.raise_for_status()
+            html = r.text
 
-        if tag == type_tag:
-            finalize()
-            current_seq = None
-            for ttype in ("定例会", "臨時会"):
-                if ttype in text:
-                    current_type = ttype
-                    break
-            continue
+            current_year: int | None = None
+            current_type: str | None = None
+            current_seq: int | None = None
+            current_pdfs: list[tuple[str, str, str]] = []
 
-        if tag == council_tag:
-            finalize()
-            sm = re.search(r"第\s*(\d+)\s*回", text_half)
-            if sm:
-                current_seq = int(sm.group(1))
-            else:
-                current_seq = None
-            continue
+            for m in TAG_RE.finditer(html):
+                tag = m.group("tag").lower()
+                text = re.sub(r"<[^>]+>", "", m.group("text")).strip()
+                attrs = m.group("attrs")
+                text_half = _zen_to_half(text)
 
-        if tag == "a" and current_seq is not None:
-            href_m = HREF_RE.search(attrs)
-            if not href_m:
-                continue
-            href = href_m.group(1)
-            if ".pdf" not in href.lower():
-                continue
-            if pdf_filter:
-                filters = pdf_filter if isinstance(pdf_filter, list) else [pdf_filter]
-                haystack = f"{href.lower()} {text}"
-                if not any(kw.lower() in haystack for kw in filters):
+                if tag == year_tag:
+                    finalize(current_year, current_type, current_seq, current_pdfs)
+                    current_pdfs = []
+                    current_seq = None
+                    ym = re.search(r"(\d{4})\s*年", text)
+                    if ym:
+                        current_year = int(ym.group(1))
+                    else:
+                        jy = japanese_year_to_int(text)
+                        if jy:
+                            current_year = jy
                     continue
-            full = urljoin(cfg["index_url"], href)
-            fn = href.rsplit("/", 1)[-1]
-            # 同一URLの重複排除（「会議録」「ダウンロード」等の並列リンク対応）
-            if any(u == full for _, u in current_pdfs):
-                continue
-            current_pdfs.append((fn, full))
 
-    finalize()
+                if tag == type_tag:
+                    finalize(current_year, current_type, current_seq, current_pdfs)
+                    current_pdfs = []
+                    current_seq = None
+                    for ttype in ("定例会", "臨時会"):
+                        if ttype in text:
+                            current_type = ttype
+                            break
+                    continue
+
+                if tag == council_tag:
+                    finalize(current_year, current_type, current_seq, current_pdfs)
+                    current_pdfs = []
+                    for ttype in ("定例会", "臨時会"):
+                        if ttype in text:
+                            current_type = ttype
+                            break
+                    sm = re.search(r"第\s*(\d+)\s*回", text_half)
+                    if sm:
+                        current_seq = int(sm.group(1))
+                    else:
+                        current_seq = None
+                    continue
+
+                if tag != "a" or current_seq is None:
+                    continue
+                href_m = HREF_RE.search(attrs)
+                if not href_m:
+                    continue
+                href = href_m.group(1)
+                if ".pdf" not in href.lower():
+                    continue
+                if pdf_filter:
+                    filters = pdf_filter if isinstance(pdf_filter, list) else [pdf_filter]
+                    haystack = f"{href.lower()} {text}"
+                    if not any(kw.lower() in haystack for kw in filters):
+                        continue
+                full = urljoin(index_url, href)
+                fn = href.rsplit("/", 1)[-1]
+                label = re.sub(r"\s*(?:\[PDF[^\]]+\]|［PDF[^］]+］)", "", text).strip()
+                # 同一URLの重複排除（「会議録」「ダウンロード」等の並列リンク対応）
+                if any(u == full for _, u, _ in current_pdfs):
+                    continue
+                current_pdfs.append((fn, full, label))
+
+            finalize(current_year, current_type, current_seq, current_pdfs)
+
     return records
 
 

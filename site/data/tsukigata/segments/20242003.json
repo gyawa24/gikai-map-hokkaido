@@ -1,0 +1,48 @@
+[
+  {
+    "id": "tsukigata-20242003-1-001",
+    "municipality": "tsukigata",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月22日",
+    "date": "2024-10-22",
+    "speaker": "午後２時１２分休憩議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（藤原住民課長 午後 ２時１２分入室）\n3\n\n令和６年第３回月形町議会臨時会（１０月２２日）",
+    "text_length": 46,
+    "source": {
+      "minutes_file": "data/tsukigata/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "tsukigata-20242003-1-002",
+    "municipality": "tsukigata",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "10月22日",
+    "date": "2024-10-22",
+    "speaker": "教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "の任命につきまして、ご同意賜りますようよろしくお願い申し上げま\nす。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/tsukigata/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  }
+]

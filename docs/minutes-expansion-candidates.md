@@ -6,12 +6,11 @@
 
 ## 優先候補
 
-2026-05-06 時点で、このメモの旧上位候補だった `numata` / `kamisunagawa` / `shimokawa` / `biei` / `kuriyama` / `shinhidaka` / `toyoura` / `yakumo` / `toyako` / `mori` は対応済み。
+2026-05-06 時点で、このメモの旧上位候補だった `numata` / `kamisunagawa` / `shimokawa` / `biei` / `kuriyama` / `shinhidaka` / `toyoura` / `yakumo` / `toyako` / `mori` / `tsukigata` は対応済み。
 
 | 優先 | 自治体 | slug | 公式ページ | 取込方式 | 理由 | 主に触るファイル |
 |---:|---|---|---|---|---|---|
-| 1 | 月形町 | `tsukigata` | https://www.town.tsukigata.hokkaido.jp/page/4071.html | 年別ページの見出し + 日付PDFリンク | `h2` に定例会/臨時会、`h3` に第N回、会議録本文PDFは日付リンクとして並ぶ。既存 `nested_html_sections` に「会議録ブロック内の日付PDFだけ拾う」条件を足せば対応しやすい。令和8年ページも同構造。 | `scraper/scrape_minutes_pdf.py` |
-| 2 | 秩父別町 | `chippubetsu` | https://www.town.chippubetsu.hokkaido.jp/category/detail.html?category=town&content=588 | 年別ページの議決結果リンク + 会議録リンク | 令和7年ページで会議録PDFが確認できる。議決結果リンクの直後に日別/会期別の「会議録」リンクが並ぶため、直前の議決結果リンクから会期情報を持ち回る戦略で対応できそう。 | `scraper/scrape_minutes_pdf.py` |
+| 1 | 秩父別町 | `chippubetsu` | https://www.town.chippubetsu.hokkaido.jp/category/detail.html?category=town&content=588 | 年別ページの議決結果リンク + 会議録リンク | 令和7年ページで会議録PDFが確認できる。議決結果リンクの直後に日別/会期別の「会議録」リンクが並ぶため、直前の議決結果リンクから会期情報を持ち回る戦略で対応できそう。 | `scraper/scrape_minutes_pdf.py` |
 
 ## 完了済み
 
@@ -27,6 +26,7 @@
 | 八雲町 | `yakumo` | 共通 `scrape_minutes_pdf.py` の `multi_index_html` を年別複数URL対応に広げ、令和6年の定例会・臨時会PDFから `minutes` / `segments` / `themes` まで対応済み。 |
 | 洞爺湖町 | `toyako` | 共通 `scrape_minutes_pdf.py` に月会議テーブル戦略を追加し、令和6年・令和7年の通年会期PDFから `minutes` / `segments` まで対応済み。 |
 | 森町 | `mori` | 共通 `scrape_minutes_pdf.py` の月会議リンク戦略を拡張し、令和6年・令和7年・令和8年1月の通年会期PDFから `minutes` / `segments` まで対応済み。 |
+| 月形町 | `tsukigata` | 共通 `scrape_minutes_pdf.py` の見出し構造戦略を年別複数ページ対応に広げ、令和6年・令和7年・令和8年1月の会議結果ページから `minutes` / `segments` まで対応済み。 |
 
 ## 見送り
 
@@ -40,6 +40,5 @@
 
 ## 次の実装順
 
-1. `tsukigata` の年別会議結果ページに対応する。
-2. `tsukigata` 完了後、`chippubetsu` の議決結果リンク直後の会議録PDFを会期ごとに束ねる。
-3. どちらも既存PDF抽出の小拡張で済む見込み。詰まったら、候補再選定より先に抽出戦略を共通化する。
+1. `chippubetsu` の議決結果リンク直後の会議録PDFを会期ごとに束ねる。
+2. 完了後、`docs/municipality-coverage.md` の members-only から次候補を再選定する。
