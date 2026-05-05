@@ -1164,12 +1164,14 @@
     "furigana": "とうやこちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが「定例会M月会議」の通年会期制で標準パターンに合わず、現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "通年会期制の月会議PDFを取り込みました。テーマ別データは話者名寄せの追加対応待ちです。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "abira",
@@ -1387,12 +1389,14 @@
     "furigana": "もりまち",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが「X月会議」の通年会期制で混在ファイル名のため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "森町議会の通年会期制の月会議PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "yakumo",

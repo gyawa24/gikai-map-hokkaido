@@ -95,7 +95,32 @@ node scripts/verify-municipality.mjs sample
 - `data/{slug}/` と `site/data/{slug}/` の主要ファイル同期を確認
 - 議事録がある市で `segments/_index.json` が揃っているか確認
 
-## 5. 画面確認
+## 5. 議事録未公開確認の鮮度を保つ
+
+`minutes_status: unavailable` は一度確認したら終わりにせず、`minutes_verified_at` を基準に再確認する。
+候補抽出は次を使う。
+
+```bash
+node scripts/list-stale-minutes-verifications.mjs
+```
+
+期限前も含めて全件を見たい場合:
+
+```bash
+node scripts/list-stale-minutes-verifications.mjs --all
+```
+
+再確認間隔:
+
+- `minutes_verified_at` が無い: すぐ再確認
+- 公式サイトに会議録PDF等があるが未取込: 30日ごと
+- 通常の未公開確認済み: 90日ごと
+- 「インターネット公開は未実施」「情報開示請求」「議会図書室で閲覧」等の明記あり: 180日ごと
+
+再確認後は `onboard-municipality.mjs` で `minutes_status_note` と `minutes_verified_at` を更新する。
+会議録本文の公開を確認した場合は、`minutes_status` を `available` にする前に `minutes` / `segments` まで生成する。
+
+## 6. 画面確認
 
 ```bash
 cd site

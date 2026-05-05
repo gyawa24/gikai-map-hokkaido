@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import MemberList from "@/components/MemberList";
 import CitySummaryCards from "@/components/CitySummaryCards";
+import CityDataStatus from "@/components/CityDataStatus";
 import JsonLd from "@/components/JsonLd";
 import MinutesWordCloud from "@/components/MinutesWordCloud";
 import { getMinutesSummary } from "@/lib/cityStats";
@@ -97,6 +98,7 @@ export default async function CityMembersPage({
           latestYear={latestYear}
           city={city}
         />
+        <CityDataStatus municipality={municipality} />
         <div className="page-shell max-w-6xl">
           <section className="mb-4">
             <h2 className="theme-section-title mb-1 text-2xl">議員一覧</h2>
@@ -119,6 +121,7 @@ export default async function CityMembersPage({
         latestYear={latestYear}
         city={city}
       />
+      <CityDataStatus municipality={municipality} />
       {minutesUnavailable && (
         <div className="theme-alert page-shell mb-5 max-w-6xl px-4 py-3">
           <p className="text-sm font-semibold text-[#1B3A6B] mb-1">議事録未公開（未確認）</p>

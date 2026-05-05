@@ -24,24 +24,18 @@
 
 ### Coverage
 
-- `toyako` の `minutes` 追加
-  - 目的: `toyoura` で追加した通年会期制の `月会議` 戦略をそのまま横展開する
-  - 完了条件: `data/toyako/minutes/` と `segments/` が生成されている
-  - 主に触る場所: `scraper/scrape_minutes_pdf.py`, `data/toyako/`, `data/municipalities.json`
+- `tsukigata` の `minutes` / `segments` を追加する
+  - 目的: members only 残件から、公式サイトに本文会議録PDFがある自治体を1件進める
+  - 完了条件: `data/tsukigata/minutes/` と `segments/` を生成し、metadata 同期、verify、画面確認まで通す
+  - 主に触る場所: `scraper/scrape_minutes_pdf.py`, `data/tsukigata/`, `site/data/tsukigata/`, `data/municipalities.json`, `site/data/municipalities.json`
 
 ## Next
 
-### Freshness
+### Coverage
 
-- `minutes_verified_at` が古い未公開自治体の再確認ルール整理
-  - 目的: `未公開確認済み` の信頼性維持
-  - 完了条件: どの条件で再確認するかが docs か script に落ちている
-
-### Discoverability
-
-- 自治体ページに `データ更新日 / 議事録確認日` の表示方針を揃える
-  - 目的: 更新が続いているかを利用者に見せる
-  - 完了条件: 少なくとも1つの共通表示パターンを決めて実装
+- `chippubetsu` の `minutes` 追加方式を実装する
+  - 目的: 年別ページの「議決結果 + 会議録」リンク構造を次の共通抽出パターンにする
+  - 完了条件: `minutes` / `segments` 生成まで通るか、構造上の見送り理由を候補メモに残す
 
 ## Later
 
@@ -63,6 +57,11 @@
 
 ## Done
 
+- `mori` の `minutes` / `segments` 整備（通年会期の月会議PDF対応、themes は話者名寄せ待ち）
+- `minutes` 追加候補を再選定し、`tsukigata` / `chippubetsu` を次候補に更新
+- 自治体ページに `データ更新日 / 議事録確認日` の共通表示を追加
+- `minutes_verified_at` が古い未公開自治体の再確認ルールを `list-stale-minutes-verifications.mjs` と workflow に整理
+- `toyako` の `minutes` / `segments` 整備（通年会期の月会議PDF対応、themes は話者名寄せ待ち）
 - `refresh-minutes.mjs` を追加し、既知スクレイパごとの議事録再取得を一括実行できるようにした
 - 自治体追加の一気通しコマンド化（`onboard-municipality.mjs --verify` 追加）
 - `verify-municipality.mjs` に `themes` 整合性チェックを追加

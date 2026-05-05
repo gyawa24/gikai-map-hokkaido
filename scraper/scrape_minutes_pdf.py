@@ -758,6 +758,30 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.toyoura.hokkaido.jp/hotnews/detail/00005917.html",
         },
     },
+    "toyako": {
+        "name": "洞爺湖町",
+        # 表見出し「洞爺湖町議会令和7年9月会議」配下に日別PDFが並ぶ通年会期制。
+        # 目次PDFは除外し、同じ月会議の日別PDFを schedules に束ねる。
+        "strategy": "monthly_meeting_table",
+        "index_urls": {
+            None: "http://www.town.toyako.hokkaido.jp/town_administration/town_council/toc006/",
+            2024: "http://www.town.toyako.hokkaido.jp/town_administration/town_council/toc006/toc101/3972",
+        },
+    },
+    "mori": {
+        "name": "森町",
+        # 通年会期制の「令和7年第1回森町議会12月第2回会議」形式。
+        # 年度ページ内に翌年1月会議も載るため、リンクテキストの令和年を優先する。
+        "strategy": "monthly_meeting_linktext",
+        "index_urls": {
+            None: [
+                "https://www.town.hokkaido-mori.lg.jp/soshiki/gikai/proceedings/proceedings/3274.html",
+                "https://www.town.hokkaido-mori.lg.jp/soshiki/gikai/proceedings/proceedings/253.html",
+            ],
+        },
+        "default_type": "定例会",
+        "council_name_from_month": True,
+    },
     "yakumo": {
         "name": "八雲町",
         # 令和6年は年別ページ配下の「定例会会議録」「臨時会会議録」詳細ページに
@@ -1426,6 +1450,7 @@ def extract_pdf_links_by_monthly_meeting_linktext(cfg: dict, years: list[int]) -
       定例会1月会議（1月27日）
     """
     type_re = re.compile(r"(定例|臨時)(?:[^、\n]*?)会")
+    era_re = re.compile(r"令和\s*(\d+)\s*年")
     month_meeting_re = re.compile(r"(\d+)\s*月(?:第(\d+)回)?会議")
     schedule_re = re.compile(r"第(\d+)号")
     date_re = re.compile(r"(\d+)\s*月\s*(\d+)日")
@@ -1434,7 +1459,7 @@ def extract_pdf_links_by_monthly_meeting_linktext(cfg: dict, years: list[int]) -
     index_urls = cfg["index_urls"] if "index_urls" in cfg else {y: cfg["index_url"] for y in years}
 
     for year, urls in index_urls.items():
-        if year not in years:
+        if isinstance(year, int) and year not in years:
             continue
         url_list = urls if isinstance(urls, list) else [urls]
         for url in url_list:
@@ -1451,7 +1476,22 @@ def extract_pdf_links_by_monthly_meeting_linktext(cfg: dict, years: list[int]) -
                 text = _zen_to_half(re.sub(r"\s+", " ", raw).strip())
                 tm = type_re.search(text)
                 mm = month_meeting_re.search(text)
-                if not tm or not mm:
+                if not mm:
+                    continue
+                if tm:
+                    ttype = f"{tm.group(1)}会"
+                else:
+                    ttype = cfg.get("default_type")
+                    if not ttype:
+                        continue
+                em = era_re.search(text)
+                if em:
+                    actual_year = 2018 + int(em.group(1))
+                elif isinstance(year, int):
+                    actual_year = year
+                else:
+                    continue
+                if actual_year not in years:
                     continue
 
                 month = int(mm.group(1))
@@ -1462,12 +1502,16 @@ def extract_pdf_links_by_monthly_meeting_linktext(cfg: dict, years: list[int]) -
                 date_m = date_re.search(text)
                 day = int(date_m.group(2)) if date_m else 0
 
-                council_text = re.sub(r"第\s*\d+号.*$", "", text).strip()
-                council_text = re.sub(r"（\s*\d+\s*月\s*\d+\s*日\s*）", "", council_text).strip()
-                council_name = f"{era_str(year)}{council_text}"
+                if cfg.get("council_name_from_month"):
+                    round_label = f"第{monthly_round}回" if monthly_round > 1 else ""
+                    council_name = f"{era_str(actual_year)}{month}月{round_label}会議"
+                else:
+                    council_text = re.sub(r"第\s*\d+号.*$", "", text).strip()
+                    council_text = re.sub(r"（\s*\d+\s*月\s*\d+\s*日\s*）", "", council_text).strip()
+                    council_name = f"{era_str(actual_year)}{council_text}"
                 records.append({
-                    "type": f"{tm.group(1)}会",
-                    "year": year,
+                    "type": ttype,
+                    "year": actual_year,
                     "seq": seq,
                     "filename": href.rsplit("/", 1)[-1],
                     "link_text": text[:80],
@@ -1475,6 +1519,80 @@ def extract_pdf_links_by_monthly_meeting_linktext(cfg: dict, years: list[int]) -
                     "url": urljoin(url, href),
                     "sort_key": (month, monthly_round, schedule_no, day, href),
                 })
+    return records
+
+
+def extract_pdf_links_by_monthly_meeting_table(cfg: dict, years: list[int]) -> list[dict]:
+    """通年会期制の月会議テーブルを会期単位へ束ねる戦略。
+
+    会議名は表見出し、日程名は各PDFリンクに分かれている構造を扱う。
+    """
+    heading_re = re.compile(r"(?:洞爺湖町議会)?令和\s*(\d+)\s*年\s*(\d+)\s*月(?:第(\d+)回)?会議")
+    link_re = re.compile(r'<a[^>]+href=["\']([^"\']+\.pdf)["\'][^>]*>([\s\S]{0,200}?)</a>', re.I)
+    day_re = re.compile(r"第\s*(\d+)\s*日目")
+    date_re = re.compile(r"(\d+)\s*月\s*(\d+)日")
+
+    records: list[dict] = []
+    seen: set[str] = set()
+    index_urls = cfg["index_urls"] if "index_urls" in cfg else {None: cfg["index_url"]}
+
+    for expected_year, urls in index_urls.items():
+        if expected_year is not None and expected_year not in years:
+            continue
+        url_list = urls if isinstance(urls, list) else [urls]
+        for url in url_list:
+            r = requests.get(url, timeout=30, headers=HEADERS)
+            r.encoding = r.apparent_encoding or "utf-8"
+            r.raise_for_status()
+            parts = re.split(
+                r"(<td[^>]*colspan=[\"']?7[\"']?[^>]*>[\s\S]{1,200}?会議[\s\S]{0,100}?</td>)",
+                r.text,
+                flags=re.I,
+            )
+            for i in range(1, len(parts), 2):
+                heading = _zen_to_half(_html_to_text(parts[i]))
+                hm = heading_re.search(heading)
+                if not hm:
+                    continue
+                year = 2018 + int(hm.group(1))
+                if year not in years:
+                    continue
+                month = int(hm.group(2))
+                monthly_round = int(hm.group(3) or 1)
+                seq = month * 10 + monthly_round
+                body = parts[i + 1] if i + 1 < len(parts) else ""
+
+                link_texts: dict[str, list[str]] = {}
+                for m in link_re.finditer(body):
+                    href = m.group(1)
+                    text = _zen_to_half(_html_to_text(m.group(2)))
+                    if not text or "目次" in text:
+                        continue
+                    link_texts.setdefault(href, []).append(text)
+
+                for href, texts in link_texts.items():
+                    if href in seen:
+                        continue
+                    text = "".join(texts)
+
+                    day_match = day_re.search(text)
+                    date_match = date_re.search(text)
+                    schedule_no = int(day_match.group(1)) if day_match else 0
+                    day = int(date_match.group(2)) if date_match else 0
+                    if schedule_no == 0 and day == 0:
+                        continue
+
+                    seen.add(href)
+                    records.append({
+                        "type": "定例会",
+                        "year": year,
+                        "seq": seq,
+                        "filename": href.rsplit("/", 1)[-1],
+                        "link_text": text[:80],
+                        "council_name": f"{era_str(year)}{month}月会議",
+                        "url": urljoin(url, href),
+                        "sort_key": (month, monthly_round, schedule_no, day, href),
+                    })
     return records
 
 
@@ -1960,6 +2078,8 @@ def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
         return extract_pdf_links_by_linktext_pattern(cfg, years or [])
     if strategy == "monthly_meeting_linktext":
         return extract_pdf_links_by_monthly_meeting_linktext(cfg, years or [])
+    if strategy == "monthly_meeting_table":
+        return extract_pdf_links_by_monthly_meeting_table(cfg, years or [])
     if strategy == "nested_html_sections":
         return extract_pdf_links_by_nested_html_sections(cfg, years or [])
     if strategy == "category_drilldown":
