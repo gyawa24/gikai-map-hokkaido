@@ -1,0 +1,163 @@
+[
+  {
+    "id": "shintotsukawa-20242005-1-001",
+    "municipality": "shintotsukawa",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "鈴井康裕議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴井 康裕",
+    "member_faction": "",
+    "text": "皆さん、おはようございます。議長の指示がございま\nしたので、議会運営委員会からの報告をいたします。\n議会運営委員会は、先ほど９時15分から行っております。出席者は記載のとおり。説明\n員として、寺田副町長、久保田総務課長にお越しをいただいております。\n協議結果でございます。\n（１）付議案件は、令和６年度会計補正予算１件である旨、総務課長から説明を受けて\nおります。\n（２）令和６年第５回町議会臨時会の会期は、10月10日１日間とする。\n（３）日程については、裏面の記載のとおり取り進めるということで、裏面を参照願い\nます。\n以上で、議会運営委員会からの報告を終了します。",
+    "text_length": 285,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242005-1-002",
+    "municipality": "shintotsukawa",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "谷口秀樹町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "皆さん、おはようございます。議長のお許しをいただきましたの\nで、議案の内容の説明を申し上げます。\nただいま上程いただきました議案第41号、令和６年度新十津川町一般会計補正予算第６\n号。\n令和６年度新十津川町一般会計補正予算第６号は、次に定めるところによる。\n歳入歳出予算の補正。\n第１条、既定の歳入歳出予算の総額に歳入歳出それぞれ641万７千円を追加し、歳入歳\n出予算の総額を歳入歳出それぞれ77億1,188万３千円とする。\n２、歳入歳出予算の補正の款項の区分及び当該区分ごとの金額並びに補正後の歳入歳出\n予算の金額は、第１表歳入歳出予算補正による。\nなお、３ページから７ページは、第１表歳入歳出予算補正の概要でございますので、お\n目通しを頂きたいと思います。\n詳細につきましては、副町長からご説明申し上げますので、議決賜りますよう、よろし\nくお願い申し上げます。",
+    "text_length": 382,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242005-1-003",
+    "municipality": "shintotsukawa",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "寺田佳正副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、ただいま上程いただきました議案第41号、令和６年\n度新十津川町一般会計補正予算第６号の内容をご説明申し上げます。\nこのたびの補正につきましては、衆議院議員選挙費用の計上でございまして、歳入歳出\n予算補正事項別明細書により、歳出から説明いたしますので、12、13ページをお開き願い\nます。\n２款４項２目衆議院議員選挙費。補正額366万４千円。財源は、国道支出金641万７千円\nで、全額衆議院議員選挙費委託金。一般財源は275万３千円のマイナスでございます。\n一般財源のマイナス分は、この後説明いたします13款、職員費において計上する職員人\n件費などに係る委託金を予算の編成上、この科目に一括計上していることによるものでご\nざいます。\n内容を申し上げます。",
+    "text_length": 331,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242005-1-004",
+    "municipality": "shintotsukawa",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "村上 敏晃",
+    "member_faction": "",
+    "text": "（加藤敏晃君） お伺いいたします。職員費の部分で人件費なんですけれども、そ\nれぞれ何人分を見込んでいるのか確認させてください。",
+    "text_length": 63,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242005-1-005",
+    "municipality": "shintotsukawa",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "久保田篤司総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番議員のご質問にお答えいたします。\n人数というところでございますが、期日前投票の部分でいきますと、投票管理者が11日\nの１名ということになります。投票立会人も同じように２名となります。\n投票日当日の投開票のところになりますが、投票事務従事者で60人、開票の事務従事者\nも60人という形で考えて計上してございます。以上でございます。",
+    "text_length": 166,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242005-1-006",
+    "municipality": "shintotsukawa",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "村上 敏晃",
+    "member_faction": "",
+    "text": "（加藤敏晃君） もう一点お伺いいたします。ニュースで解散までの期間が短くて\n準備が間に合わないとかで、期日前投票の期間が短くなる地域があるというようなものを\n見たんですけれども、当町の予定といいますか、期日前投票の期間が短くなるとかそうい\nうような状況があるのか確認させていただきたいと思います。",
+    "text_length": 148,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242005-1-007",
+    "municipality": "shintotsukawa",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "久保田篤司総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "１番議員のご質問にお答えいたします。\n15日公示ということでございまして、それに向けて進めてございまして、現状ですね、\n特に問題なく進められる状態にあります。以上でございます。",
+    "text_length": 88,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  }
+]

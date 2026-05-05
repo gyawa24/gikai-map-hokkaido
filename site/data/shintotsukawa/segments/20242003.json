@@ -1,0 +1,48 @@
+[
+  {
+    "id": "shintotsukawa-20242003-1-001",
+    "municipality": "shintotsukawa",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "鈴井康裕議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴井 康裕",
+    "member_faction": "",
+    "text": "皆さん、おはようございます。議長の指示がございま\nしたので、議会運営委員会からの報告をいたします。\n議会運営委員会は、６月26日に行われております。出席者は、記載のとおり。説明員と\nして、寺田副町長、久保田総務課長にお越し願っております。\n協議結果です。\n付議案件は、工事請負契約の締結１件である旨、総務課長から説明を受けました。",
+    "text_length": 165,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242003-1-002",
+    "municipality": "shintotsukawa",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "谷口秀樹町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "改めまして、おはようございます。議長のお許しをいただきまし\nたので、提案理由と内容の説明を申し上げます。\nただいま上程いただきました議案第30号、工事請負契約の締結について。\n町は、次のとおり請負契約を締結する。\n提案理由でございます。\n議会の議決に付すべき契約及び財産の取得又は処分に関する条例第２条の規定により、\n議決を求めるものでございます。\n内容を申し上げます。\n１、契約の目的、菊水団地内道路改築工事。\n２、契約の方法、指名競争入札。\n３、工事場所、新十津川町字中央。\n４、契約金額、金6,028万円。\n５、契約の相手方、樺戸郡新十津川町字中央530番地１、株式会社久保田組、代表取締\n役、久保田哲也。\n次のページをご覧ください。\n参考資料として、指名業者名、工事の概要が記載されておりますので、お目通し願いま\nす。なお、履行期限は、本年12月20日となっております。\n以上、提案理由と内容の説明といたします。議決賜りますようよろしくお願いを申し上\nげます。",
+    "text_length": 434,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  }
+]

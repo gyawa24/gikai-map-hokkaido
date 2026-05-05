@@ -6,7 +6,7 @@
 
 ## 優先候補
 
-2026-05-06 時点で、このメモの旧上位候補だった `numata` / `kamisunagawa` / `shimokawa` / `biei` / `kuriyama` / `shinhidaka` / `toyoura` / `yakumo` / `toyako` / `mori` / `tsukigata` / `chippubetsu` は対応済み。
+2026-05-06 時点で、このメモの旧上位候補だった `numata` / `kamisunagawa` / `shimokawa` / `biei` / `kuriyama` / `shinhidaka` / `toyoura` / `yakumo` / `toyako` / `mori` / `tsukigata` / `chippubetsu` / `shintotsukawa` は対応済み。
 
 次候補は `docs/municipality-coverage.md` の members-only から再選定する。
 
@@ -26,6 +26,7 @@
 | 森町 | `mori` | 共通 `scrape_minutes_pdf.py` の月会議リンク戦略を拡張し、令和6年・令和7年・令和8年1月の通年会期PDFから `minutes` / `segments` まで対応済み。 |
 | 月形町 | `tsukigata` | 共通 `scrape_minutes_pdf.py` の見出し構造戦略を年別複数ページ対応に広げ、令和6年・令和7年・令和8年1月の会議結果ページから `minutes` / `segments` まで対応済み。 |
 | 秩父別町 | `chippubetsu` | 共通 `scrape_minutes_pdf.py` に議決結果直後の会議録PDFを束ねる戦略を追加し、令和6年・令和7年・令和8年1月の会議録PDFから `minutes` / `segments` まで対応済み。 |
+| 新十津川町 | `shintotsukawa` | 共通 `scrape_minutes_pdf.py` のPDFヘッダー戦略を実年度で再絞り込み、タイムスタンプ形式PDFから令和6年・令和7年・令和8年4月までの会議録を `minutes` / `segments` まで対応済み。 |
 
 ## 見送り
 

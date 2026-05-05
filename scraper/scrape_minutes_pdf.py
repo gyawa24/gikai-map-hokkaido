@@ -402,6 +402,16 @@ PDF_CONFIGS: dict[str, dict] = {
             2024: "https://www.town.shiriuchi.hokkaido.jp/chosei/gikai/kaigiroku/r06/",
         },
     },
+    "shintotsukawa": {
+        "name": "新十津川町",
+        # 近年はPDFファイル名がアップロード日時のみのため、PDF先頭ページの会議名から抽出する。
+        "strategy": "pdf_header",
+        "index_url": "https://www.town.shintotsukawa.lg.jp/hotnews/detail/00001787.html",
+        "title_regex": r"第\s*(\d+)\s*回[\s\S]{0,30}?(定例会|臨時会)",
+        "year_regex": r"令和\s*(\d+)\s*年",
+        "loose_year_regex": r"(?P<yyyy>20\d{2})",
+        "era_base": 2018,
+    },
     "makubetsu": {
         "name": "幕別町",
         # 1ページに全年度、h2=令和N年の下にul/li/a (「第1回臨時会【1月16日開催】」)
@@ -1140,6 +1150,8 @@ def extract_pdf_links_by_pdf_header(cfg: dict, years: list[int]) -> list[dict]:
             seq = int(tm.group(1))
             ttype = tm.group(2)
             year = era_base + int(ym.group(1))
+            if target_set and year not in target_set:
+                continue
 
             schedule_no = None
             if schedule_re:

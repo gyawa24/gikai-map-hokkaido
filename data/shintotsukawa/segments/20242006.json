@@ -1,0 +1,117 @@
+[
+  {
+    "id": "shintotsukawa-20242006-1-001",
+    "municipality": "shintotsukawa",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "鈴井康裕議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴井 康裕",
+    "member_faction": "",
+    "text": "皆さん、おはようございます。議長の指示がございま\nしたので、議会運営委員会の報告をいたしたいと思います。\n日時、場所、出席者については、記載のとおりでございます。説明員として、寺田副町\n長、久保田総務課長にお越しを願っております。\n協議結果でございます。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242006-1-002",
+    "municipality": "shintotsukawa",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "谷口秀樹町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "改めまして、おはようございます。議長のお許しをいただきまし\nたので、議案の提案理由と内容の説明を申し上げます。\nただいま上程いただきました議案第42号、令和６年度新十津川町一般会計補正予算第７\n号。\n令和６年度新十津川町一般会計補正予算第７号は、次に定めるところによる。\n歳入歳出予算の補正。\n第１条、既定の歳入歳出予算の総額に歳入歳出それぞれ１億3,512万２千円を追加し、\n歳入歳出予算の総額を歳入歳出それぞれ78億4,700万５千円とする。\n２、歳入歳出予算の補正の款項の区分及び当該区分ごとの金額並びに補正後の歳入歳出\n予算の金額は、第１表歳入歳出予算補正による。\nなお、３ページから７ページは、第１表歳入歳出予算補正の概要でございますので、お\n目通しの方をお願いをいたします。\n詳細につきましては、副町長からご説明申し上げますので、議決賜りますようよろしく\nお願い申し上げます。",
+    "text_length": 394,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242006-1-003",
+    "municipality": "shintotsukawa",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "寺田佳正副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "改めまして、おはようございます。ただいま上程いただきまし\nた議案第42号、令和６年度新十津川町一般会計補正予算第７号の内容をご説明申し上げま\nす。\n初めに、このたびの補正の概要についてですが、ふるさと応援寄附金の増額と、これに\n伴う基金への積立て及び返礼品等に係る予算の増額。昨年度、国が打ち出した新たな経済\nに向けた給付金定額減税の一体措置に基づく各種給付金支給事業の整理。中学校外壁の修\n繕、学校給食牛乳保管用保冷庫購入費用の計上となってございます。\nそれでは、補正の内容につきまして、歳入歳出予算補正事項別明細書により、歳出から\nご説明いたしますので、18、19ページをお開き願います。\n２款１項10目諸費。補正額9,611万９千円。財源は、すべてその他財源で、ふるさと応\n援寄附金5,000万円。ふるさと応援基金繰入金4,611万９千円でございます。\n内容を申し上げます。",
+    "text_length": 390,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242006-1-004",
+    "municipality": "shintotsukawa",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "鈴井 康裕",
+    "member_faction": "",
+    "text": "（鈴井康裕君） それでは、教育費の学校給食運営費についてお伺いします。牛乳\nの保管庫が必要になったということですけれども、これ、雨竜町の分はどうなっているん\nでしょうか。雨竜分の雨竜町の負担とか、本町の保管庫だけなのか、その辺をちょっと聞\nかせていただきたいなと思います。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "shintotsukawa-20242006-1-005",
+    "municipality": "shintotsukawa",
+    "council_id": 20242006,
+    "council_name": "令和6年第6回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "臨時会本編",
+    "date": null,
+    "speaker": "小松敬典教育委員会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、８番議員の質疑にお答えさせていただ\nきます。\n学校給食につきましては、主食、副食については、雨竜町の分も本町の給食センターの\n方から配送ということになっておりますが、牛乳につきましては、それぞれの町が納入業\n者も違いますので、雨竜町は雨竜町の方で納入されているというような状況でございます。\n以上です。",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/shintotsukawa/minutes/20242006.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  }
+]

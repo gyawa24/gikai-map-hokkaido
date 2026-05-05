@@ -674,12 +674,14 @@
     "furigana": "しんとつかわちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFは掲載されていますが、近年はファイル名がタイムスタンプ形式に変わったため自動取込が困難で現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "新十津川町議会の会議録PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "moseushi",
