@@ -29,7 +29,7 @@ type SearchIndex = {
 
 function getDataRoots(): string[] {
   const cwd = process.cwd();
-  return [path.join(cwd, "data"), path.join(cwd, "..", "data"), path.join(cwd, "site", "data")]
+  return [path.join(/*turbopackIgnore: true*/ cwd, "data")]
     .filter((value, index, list) => list.indexOf(value) === index)
     .filter((value) => fs.existsSync(value));
 }
