@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, Suspense } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import type { SessionHit, MemberHit } from "@/app/api/search/route";
+import type { SessionHit, MemberHit, SearchFacet } from "@/app/api/search/route";
 
 function Highlight({ text, tokens }: { text: string; tokens: string[] }) {
   if (!tokens.length) return <>{text}</>;
@@ -81,6 +81,7 @@ function SearchClientInner() {
   const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
   const [tab, setTab] = useState<"sessions" | "members">(() => searchParams.get("tab") === "members" ? "members" : "sessions");
   const [cityFilter, setCityFilter] = useState<string>(() => searchParams.get("city") ?? "all");
+  const [cityLabelHint] = useState(() => searchParams.get("cityName") ?? "");
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>(() => {
     const value = searchParams.get("source");
     return value === "minutes" || value === "session" || value === "decision" ? value : "all";
@@ -97,12 +98,17 @@ function SearchClientInner() {
   const [memberResults, setMemberResults] = useState<MemberHit[]>([]);
   const [sessionTotal, setSessionTotal] = useState(0);
   const [memberTotal, setMemberTotal] = useState(0);
+  const [cityFacets, setCityFacets] = useState<SearchFacet[]>([]);
+  const [sessionSourceFacets, setSessionSourceFacets] = useState<SearchFacet[]>([]);
+  const [sessionYearFacets, setSessionYearFacets] = useState<SearchFacet[]>([]);
+  const [memberFactionFacets, setMemberFactionFacets] = useState<SearchFacet[]>([]);
   const [exactExpandedTerms, setExactExpandedTerms] = useState<string[]>([]);
   const [relatedExpandedTerms, setRelatedExpandedTerms] = useState<string[]>([]);
   const [searchSuggestions, setSearchSuggestions] = useState<string[]>([]);
   const [recentQueries, setRecentQueries] = useState<string[]>([]);
   const [truncated, setTruncated] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [hasSearchResponse, setHasSearchResponse] = useState(false);
   const [error, setError] = useState("");
   const [filtersOpen, setFiltersOpen] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -125,15 +131,21 @@ function SearchClientInner() {
       setMemberResults([]);
       setSessionTotal(0);
       setMemberTotal(0);
+      setCityFacets([]);
+      setSessionSourceFacets([]);
+      setSessionYearFacets([]);
+      setMemberFactionFacets([]);
       setExactExpandedTerms([]);
       setRelatedExpandedTerms([]);
       setSearchSuggestions([]);
       setTruncated(false);
       setLoading(false);
+      setHasSearchResponse(false);
       setError("");
       return;
     }
     setLoading(true);
+    setHasSearchResponse(false);
     setError("");
     const requestId = requestIdRef.current + 1;
     requestIdRef.current = requestId;
@@ -144,6 +156,10 @@ function SearchClientInner() {
           q,
           op: searchMode,
         });
+        if (cityFilter !== "all") params.set("city", cityFilter);
+        if (tab === "sessions" && sourceFilter !== "all") params.set("source", sourceFilter);
+        if (tab === "sessions" && yearFilter !== "all") params.set("year", yearFilter);
+        if (tab === "members" && factionFilter !== "all") params.set("faction", factionFilter);
         const res = await fetch(`/api/search?${params.toString()}`, { signal: controller.signal });
         if (!res.ok) {
           const data = await res.json().catch(() => ({}));
@@ -155,10 +171,15 @@ function SearchClientInner() {
         setMemberResults(data.memberResults ?? []);
         setSessionTotal(data.sessionTotal ?? (data.sessionResults ?? []).length);
         setMemberTotal(data.memberTotal ?? (data.memberResults ?? []).length);
+        setCityFacets(data.facets?.cities ?? []);
+        setSessionSourceFacets(data.facets?.sessionSources ?? []);
+        setSessionYearFacets(data.facets?.sessionYears ?? []);
+        setMemberFactionFacets(data.facets?.memberFactions ?? []);
         setExactExpandedTerms(data.exactExpandedTerms ?? []);
         setRelatedExpandedTerms(data.relatedExpandedTerms ?? []);
         setSearchSuggestions(data.searchSuggestions ?? []);
         setTruncated(Boolean(data.truncated));
+        setHasSearchResponse(true);
         setRecentQueries((prev) => {
           const next = [q, ...prev.filter((item) => normalizeForSearch(item) !== normalizeForSearch(q))].slice(0, 6);
           try {
@@ -172,10 +193,15 @@ function SearchClientInner() {
         setMemberResults([]);
         setSessionTotal(0);
         setMemberTotal(0);
+        setCityFacets([]);
+        setSessionSourceFacets([]);
+        setSessionYearFacets([]);
+        setMemberFactionFacets([]);
         setExactExpandedTerms([]);
         setRelatedExpandedTerms([]);
         setSearchSuggestions([]);
         setTruncated(false);
+        setHasSearchResponse(true);
         setError(err instanceof Error ? err.message : "検索に失敗しました");
       } finally {
         if (requestIdRef.current === requestId) {
@@ -188,7 +214,7 @@ function SearchClientInner() {
       controller.abort();
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [query, searchMode]);
+  }, [query, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter, tab]);
 
   const tokens = tokenize(query);
   const hasQuery = query.trim().length > 0;
@@ -229,28 +255,25 @@ function SearchClientInner() {
 
   const totalResults = tab === "sessions" ? sortedSessions.length : sortedMembers.length;
 
-  // タブ切替時のフィルタ要件用に、「市フィルタ後の元データ」から集計
-  const availableSourceTypes = new Set(sessionsAfterCity.map((r) => r.sourceType));
-  const availableFactions = Array.from(
-    new Set(membersAfterCity.map((m) => m.faction || "無所属"))
-  ).filter(Boolean).sort();
-  const availableCities = Array.from(
-    new Map(
-      [...sessionResults, ...memberResults].map((item) => [item.city, item.cityName])
-    ).entries()
-  )
-    .map(([id, name]) => ({
-      id,
-      name,
-      count:
-        sessionResults.filter((r) => r.city === id).length +
-        memberResults.filter((m) => m.city === id).length,
+  const availableSourceTypes = new Set(
+    sessionSourceFacets
+      .map((facet) => facet.value)
+      .filter((value): value is SourceFilter => value === "minutes" || value === "session" || value === "decision")
+  );
+  const sourceFacetCounts = new Map(sessionSourceFacets.map((facet) => [facet.value, facet.count]));
+  const sessionSourceTotal = sessionSourceFacets.reduce((sum, facet) => sum + facet.count, 0);
+  const availableFactions = memberFactionFacets.map((facet) => facet.value).filter(Boolean).sort();
+  const factionFacetCounts = new Map(memberFactionFacets.map((facet) => [facet.value, facet.count]));
+  const availableCities = cityFacets
+    .map((facet) => ({
+      id: facet.value,
+      name: facet.label,
+      count: facet.count,
     }))
     .sort((a, b) => (b.count !== a.count ? b.count - a.count : a.name.localeCompare(b.name, "ja")));
-  // 年度は sourceFilter 適用後から集計し、降順（新しい順）で並べる
-  const availableYears = Array.from(
-    new Set(sessionsAfterSource.map((r) => r.year).filter(Boolean))
-  ).sort((a, b) => (a < b ? 1 : -1));
+  const availableYears = sessionYearFacets.map((facet) => facet.value).filter(Boolean).sort((a, b) => (a < b ? 1 : -1));
+  const yearFacetCounts = new Map(sessionYearFacets.map((facet) => [facet.value, facet.count]));
+  const sessionYearTotal = sessionYearFacets.reduce((sum, facet) => sum + facet.count, 0);
 
   // 親フィルタ変更で選択肢から外れた子フィルタ state を "all" にリセット。
   // 依存配列には primitive 化したキーを渡して、配列の reference だけで
@@ -259,23 +282,26 @@ function SearchClientInner() {
   const availableYearsKey = availableYears.join("|");
   const availableFactionsKey = availableFactions.join("|");
   useEffect(() => {
+    if (!hasSearchResponse) return;
     if (sourceFilter !== "all" && !availableSourceTypes.has(sourceFilter)) {
       setSourceFilter("all");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [availableSourcesKey]);
+  }, [availableSourcesKey, hasSearchResponse]);
   useEffect(() => {
+    if (!hasSearchResponse) return;
     if (yearFilter !== "all" && !availableYears.includes(yearFilter)) {
       setYearFilter("all");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [availableYearsKey]);
+  }, [availableYearsKey, hasSearchResponse]);
   useEffect(() => {
+    if (!hasSearchResponse) return;
     if (factionFilter !== "all" && !availableFactions.includes(factionFilter)) {
       setFactionFilter("all");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [availableFactionsKey]);
+  }, [availableFactionsKey, hasSearchResponse]);
 
   useEffect(() => {
     const params = new URLSearchParams();
@@ -317,6 +343,7 @@ function SearchClientInner() {
     hasQuery &&
     ((tab === "sessions" && (availableSourceTypes.size > 1 || availableYears.length > 1 || availableCities.length > 1)) ||
       (tab === "members" && (availableFactions.length > 1 || availableCities.length > 1)));
+  const scopedCityLabel = cityFilter !== "all" ? cityLabelHint || cityFilter : "";
 
   function clearFilters() {
     setCityFilter("all");
@@ -437,7 +464,10 @@ function SearchClientInner() {
 
         {!hasQuery && (
           <p className="mt-3 text-xs leading-relaxed text-[#667085] sm:text-sm">
-            議題名、政策テーマ、施設名、議員名、会派名などで探せます。複数語は AND/OR を切り替えて使えます。
+            {scopedCityLabel
+              ? `${scopedCityLabel}に絞った状態です。議題名、政策テーマ、施設名、議員名、会派名などで探せます。`
+              : "議題名、政策テーマ、施設名、議員名、会派名などで探せます。"}
+            複数語は AND/OR を切り替えて使えます。
           </p>
         )}
       </div>
@@ -619,8 +649,8 @@ function SearchClientInner() {
                 {SOURCE_FILTER_LABELS[s]}
                 <span className="ml-1 opacity-75">
                   {s === "all"
-                    ? sessionsAfterCity.length
-                    : sessionsAfterCity.filter((r) => r.sourceType === s).length}
+                    ? sessionSourceTotal
+                    : sourceFacetCounts.get(s) ?? 0}
                 </span>
               </button>
             ))}
@@ -642,7 +672,7 @@ function SearchClientInner() {
             }`}
           >
             全期間
-            <span className="ml-1 opacity-75">{sessionsAfterSource.length}</span>
+            <span className="ml-1 opacity-75">{sessionYearTotal}</span>
           </button>
           {availableYears.map((y) => (
             <button
@@ -656,7 +686,7 @@ function SearchClientInner() {
             >
               {y}年
               <span className="ml-1 opacity-75">
-                {sessionsAfterSource.filter((r) => r.year === y).length}
+                {yearFacetCounts.get(y) ?? 0}
               </span>
             </button>
           ))}
@@ -678,7 +708,7 @@ function SearchClientInner() {
             }`}
           >
             すべての会派
-            <span className="ml-1 opacity-75">{membersAfterCity.length}</span>
+            <span className="ml-1 opacity-75">{memberFactionFacets.reduce((sum, facet) => sum + facet.count, 0)}</span>
           </button>
           {availableFactions.map((f) => (
             <button
@@ -692,7 +722,7 @@ function SearchClientInner() {
             >
               {f}
               <span className="ml-1 opacity-75">
-                {membersAfterCity.filter((m) => (m.faction || "無所属") === f).length}
+                {factionFacetCounts.get(f) ?? 0}
               </span>
             </button>
           ))}

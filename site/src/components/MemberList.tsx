@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import type { Member, MemberActivity } from "@/types/member";
 import type { PolicyTag } from "@/lib/planUtils";
@@ -52,6 +52,7 @@ function factionBadgeClass(faction: string): string {
 }
 
 type SortKey = "seat" | "party" | "kana";
+const MOBILE_INITIAL_MEMBER_COUNT = 12;
 
 // ---------- MemberCard ----------
 
@@ -86,6 +87,10 @@ function MemberCard({
             <img
               src={member.photo_url}
               alt={`${member.name}議員`}
+              width={80}
+              height={112}
+              loading="lazy"
+              decoding="async"
               className="h-24 w-[72px] rounded-[16px] border border-[#E2E8F0] object-cover shadow-sm sm:h-28 sm:w-20 sm:rounded-[18px]"
             />
           </div>
@@ -281,6 +286,16 @@ export default function MemberList({ members, factions, activity = {}, memberHre
   const [factionFilter, setFactionFilter] = useState<string>("");
   const [partyFilter, setPartyFilter] = useState<string>("");
   const [sortKey, setSortKey] = useState<SortKey>("seat");
+  const [isCompactList, setIsCompactList] = useState(false);
+  const [showAllMembers, setShowAllMembers] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 639px)");
+    const update = () => setIsCompactList(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
 
   const parties = useMemo(() => {
     const seen = new Set<string>();
@@ -313,6 +328,10 @@ export default function MemberList({ members, factions, activity = {}, memberHre
       return 0;
     });
   }, [members, factionFilter, partyFilter, sortKey]);
+  const visibleMembers = isCompactList && !showAllMembers
+    ? filtered.slice(0, MOBILE_INITIAL_MEMBER_COUNT)
+    : filtered;
+  const hiddenMemberCount = Math.max(0, filtered.length - visibleMembers.length);
 
   return (
     <div className="page-shell max-w-5xl">
@@ -324,7 +343,10 @@ export default function MemberList({ members, factions, activity = {}, memberHre
               <label className="text-xs font-medium text-[#4A5568]">政党で絞り込む</label>
               <select
                 value={partyFilter}
-                onChange={(e) => setPartyFilter(e.target.value)}
+                onChange={(e) => {
+                  setPartyFilter(e.target.value);
+                  setShowAllMembers(false);
+                }}
                 className="theme-select min-w-0 cursor-pointer px-3 py-2 text-base sm:min-w-[9rem]"
               >
                 <option value="">すべての政党</option>
@@ -340,7 +362,10 @@ export default function MemberList({ members, factions, activity = {}, memberHre
               <label className="text-xs font-medium text-[#4A5568]">会派で絞り込む</label>
               <select
                 value={factionFilter}
-                onChange={(e) => setFactionFilter(e.target.value)}
+                onChange={(e) => {
+                  setFactionFilter(e.target.value);
+                  setShowAllMembers(false);
+                }}
                 className="theme-select min-w-0 cursor-pointer px-3 py-2 text-base sm:min-w-[9rem]"
               >
                 <option value="">すべての会派</option>
@@ -355,7 +380,10 @@ export default function MemberList({ members, factions, activity = {}, memberHre
             <label className="text-xs font-medium text-[#4A5568]">並び順</label>
             <select
               value={sortKey}
-              onChange={(e) => setSortKey(e.target.value as SortKey)}
+              onChange={(e) => {
+                setSortKey(e.target.value as SortKey);
+                setShowAllMembers(false);
+              }}
               className="theme-select min-w-0 cursor-pointer px-3 py-2 text-base sm:min-w-[9rem]"
             >
               <option value="seat">議席番号順</option>
@@ -372,7 +400,7 @@ export default function MemberList({ members, factions, activity = {}, memberHre
 
       {/* カードグリッド */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((member) => {
+        {visibleMembers.map((member) => {
           const nameKey = member.name.replace(/\s/g, "");
           const memberActivity = activity[nameKey];
           return (
@@ -389,11 +417,27 @@ export default function MemberList({ members, factions, activity = {}, memberHre
         })}
       </div>
 
+      {hiddenMemberCount > 0 && (
+        <div className="mt-4 flex justify-center sm:hidden">
+          <button
+            type="button"
+            onClick={() => setShowAllMembers(true)}
+            className="theme-button px-4 py-2 text-sm"
+          >
+            さらに{hiddenMemberCount}名を表示
+          </button>
+        </div>
+      )}
+
       {filtered.length === 0 && (
         <div className="text-center py-16">
           <p className="text-base text-[#718096]">該当する議員が見つかりません</p>
           <button
-            onClick={() => { setFactionFilter(""); setPartyFilter(""); }}
+            onClick={() => {
+              setFactionFilter("");
+              setPartyFilter("");
+              setShowAllMembers(false);
+            }}
             className="mt-3 rounded text-sm text-[#2A5298] underline hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
           >
             フィルターをリセットする

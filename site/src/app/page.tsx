@@ -130,10 +130,10 @@ export default function HomePage() {
 
         <div className="mt-4 flex flex-wrap gap-2">
           <Link href="/search" className="theme-button theme-button-accent px-4 py-2 text-sm">
-            横断検索
+            まとめて検索
           </Link>
           <a href="#municipalities" className="theme-button px-4 py-2 text-sm">
-            市町村一覧
+            市町村から見る
           </a>
           <Link href="/sources" className="theme-button px-4 py-2 text-sm">
             掲載情報と出典
@@ -195,7 +195,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-[1.7rem] font-black leading-tight text-[#111827] sm:text-[2rem]">よく探されるテーマ</h2>
               <p className="mt-1 text-sm text-[#64748B]">
-                子育て、除雪、防災など、暮らしに近い論点から議事録を横断して探せます。
+                検索のきっかけになる代表テーマです。市町村をまたいで、関連する議事録へ進めます。
               </p>
             </div>
             <Link href="/topics" className="text-sm font-black text-[#1B3A6B]">

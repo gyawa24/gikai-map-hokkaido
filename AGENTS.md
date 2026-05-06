@@ -121,6 +121,13 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 - 大量パスのルートは **ISR** にする: `dynamicParams = true` + `revalidate = 86400`。
 - `generateStaticParams` は recent N（`/[city]/minutes/[id]`）/ priority cities（`/[city]/members/[id]`）/ top tags（`/topics/[tag]`）のみ。残りは ISR で動的レンダ。
 
+### Vercel Pro 移行時の費用優先ルール
+- 速度より安定した低コスト運用を優先する。Pro 移行直後は **Standard Build Machine を基本**とし、Turbo Build Machine は原則使わない。
+- Vercel の Spend Management で月額上限を低めに設定してから本格運用する。上限設定なしで重いデプロイを連発しない。
+- build 時間短縮は、まず「不要な Preview デプロイを減らす」「docs だけの変更はデプロイをスキップする」「静的生成対象を絞る」で対応する。高価なビルドマシンへの切り替えは最後の手段。
+- 作業中はローカルで確認し、push はまとまった区切りで行う。ブランチを細かく push すると Preview デプロイが増え、Build Minutes を消費する。
+- Pro/Enhanced/Turbo 等の料金・無料枠は変わり得るため、設定変更前に Vercel 公式 Pricing / Builds ドキュメントで現行条件を確認する。
+
 ### Function バンドル
 - Vercel Function は 250MB 制限あり。`next.config.ts` の `outputFileTracingExcludes` で minutes 等のサイズの大きいデータを除外している。
 - 古い minutes は ISR で **GitHub Raw URL**（`raw.githubusercontent.com/{owner}/{repo}/{branch}/site/data/{slug}/minutes/{id}.json`）から fetch して取得する。

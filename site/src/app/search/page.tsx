@@ -6,7 +6,7 @@ import { buildBreadcrumbList } from "@/lib/structuredData";
 import SearchClient from "@/components/SearchClient";
 
 export const metadata = buildPageMetadata({
-  title: "議事録・議員検索",
+  title: "横断検索",
   description:
     "北海道の市町村議会・北海道議会の議事録、議決結果、議員名をキーワードで横断検索できます。テーマや自治体からも探せます。",
   path: "/search",
@@ -23,18 +23,18 @@ export default function SearchPage() {
     <div className="page-shell max-w-6xl">
       <JsonLd data={breadcrumb} />
       <div className="mb-5">
-        <h1 className="theme-section-title text-2xl">議事録・議員検索</h1>
+        <h1 className="theme-section-title text-2xl">横断検索</h1>
         <p className="mt-1 text-sm text-[#718096]">
-          議事録・会議録速報・議決結果・議員名を横断して探せます。気になるテーマ名、議員名、自治体名で検索してください。
+          まずはここでまとめて探せます。議事録、議決結果、議員名を同じ検索窓から調べられます。
         </p>
       </div>
 
       <section className="mb-6 rounded-[22px] border border-[#D8DEE8] bg-white px-4 py-4 shadow-[0_6px_14px_rgba(27,58,107,0.05)]">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-2xl">
-            <h2 className="text-lg font-black text-[#111827]">よくある探し方</h2>
+            <h2 className="text-lg font-black text-[#111827]">検索の入口</h2>
             <p className="mt-1 text-sm leading-relaxed text-[#64748B]">
-              生活課題で探すならテーマ名、だれが何を言ったか調べるなら議員名、特定地域の動きを追うなら自治体名で始めるのが最短です。
+              下のボタンは検索窓に入れる言葉の例です。迷ったらテーマ名、議員名、市町村名のどれかから始めてください。
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -58,7 +58,10 @@ export default function SearchPage() {
 
         {topTags.length > 0 && (
           <div className="mt-4 border-t border-[#E2E8F0] pt-4">
-            <p className="mb-2 text-sm font-bold text-[#475569]">テーマ別ページから探す</p>
+            <p className="mb-2 text-sm font-bold text-[#475569]">テーマ別入口</p>
+            <p className="mb-2 text-sm leading-relaxed text-[#64748B]">
+              よく出るテーマを先にまとめた入口です。詳しく絞るときは、このページの検索窓に戻れます。
+            </p>
             <div className="flex flex-wrap gap-2">
               {topTags.map(({ tag, count }) => (
                 <Link

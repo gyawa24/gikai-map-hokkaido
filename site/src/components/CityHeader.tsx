@@ -54,7 +54,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
         key={item.href}
         href={item.href}
         aria-current={isActive ? "page" : undefined}
-        className={`inline-flex items-center rounded-full border-2 px-4 py-2 text-sm font-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFD54F] ${
+        className={`inline-flex shrink-0 items-center whitespace-nowrap rounded-full border-2 px-4 py-2 text-sm font-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFD54F] ${
           isActive
             ? "border-[#9FB1D2] bg-[#FFF3BF] text-[#1B3A6B]"
             : "border-[#D7DEE8] bg-white text-[#475569] hover:border-[#BFC9D9] hover:text-[#1B3A6B]"

@@ -1,14 +1,13 @@
 import fs from "fs";
 import path from "path";
+import Link from "next/link";
 import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import MemberList from "@/components/MemberList";
 import CitySummaryCards from "@/components/CitySummaryCards";
 import CityDataStatus from "@/components/CityDataStatus";
 import JsonLd from "@/components/JsonLd";
-import MinutesWordCloud from "@/components/MinutesWordCloud";
 import { getMinutesSummary } from "@/lib/cityStats";
-import { getMinutesWordCloud } from "@/lib/minutesWordCloud";
 import { getMunicipality } from "@/lib/municipalities";
 import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
 import { buildBreadcrumbList } from "@/lib/structuredData";
@@ -50,6 +49,105 @@ function getMemberActivity(city: string): Record<string, MemberActivity> {
   }
 }
 
+function CityExploreLinks({
+  city,
+  cityName,
+  hasMembers,
+  hasMinutes,
+  hasThemes,
+}: {
+  city: string;
+  cityName: string;
+  hasMembers: boolean;
+  hasMinutes: boolean;
+  hasThemes: boolean;
+}) {
+  const links = [
+    {
+      href: `/${city}#members`,
+      label: "議員を見る",
+      description: "議員名、会派、委員会から探す",
+      enabled: hasMembers,
+      icon: (
+        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+        </svg>
+      ),
+    },
+    {
+      href: `/${city}/minutes`,
+      label: "議事録を見る",
+      description: "会議名や年度から公式議事録へ",
+      enabled: hasMinutes,
+      icon: (
+        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <line x1="16" y1="13" x2="8" y2="13" />
+          <line x1="16" y1="17" x2="8" y2="17" />
+        </svg>
+      ),
+    },
+    {
+      href: `/${city}/themes`,
+      label: "テーマから探す",
+      description: "政策テーマ別に議員の発言を見る",
+      enabled: hasThemes,
+      icon: (
+        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M20.59 13.41 12 22l-8.59-8.59A2 2 0 0 1 3 12V4a1 1 0 0 1 1-1h8a2 2 0 0 1 1.41.59l7.18 7.18a2 2 0 0 1 0 2.83Z" />
+          <circle cx="7.5" cy="7.5" r="1.5" />
+        </svg>
+      ),
+    },
+    {
+      href: `/search?city=${city}&cityName=${encodeURIComponent(cityName)}`,
+      label: "この市町村内を検索",
+      description: `${cityName}に絞って横断検索する`,
+      enabled: true,
+      icon: (
+        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+      ),
+    },
+  ].filter((link) => link.enabled);
+
+  if (links.length === 0) return null;
+
+  return (
+    <section className="page-shell mb-5 max-w-5xl">
+      <div className="mb-3">
+        <h2 className="theme-section-title text-xl sm:text-2xl">この市町村で探す</h2>
+        <p className="mt-1 text-sm leading-relaxed text-[#4A5568]">
+          まずは入口を選んでください。議員、議事録、テーマ、市町村内検索をここにまとめました。
+        </p>
+      </div>
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="theme-card flex min-h-[8.5rem] flex-col justify-between px-4 py-4 transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+          >
+            <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#D7E1F0] bg-[#F4F8FF] text-[#1B3A6B]">
+              {link.icon}
+            </span>
+            <span>
+              <span className="block text-base font-black text-[#1B3A6B]">{link.label}</span>
+              <span className="mt-1 block text-xs leading-relaxed text-[#718096]">{link.description}</span>
+            </span>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default async function CityMembersPage({
   params,
 }: {
@@ -64,9 +162,9 @@ export default async function CityMembersPage({
   const minutesUnavailable = municipality?.minutes_status === "unavailable";
   const minutesUnavailableNote = municipality?.minutes_status_note;
   const minutesVerifiedAt = municipality?.minutes_verified_at;
-  const wordCloud = getMinutesWordCloud(city);
   const councilName = municipality?.council_name ?? `${municipality?.name ?? city}議会`;
   const cityName = municipality?.name ?? city;
+  const hasThemes = Object.keys(activity).length > 0;
   const breadcrumb = buildBreadcrumbList([
     { name: "地方議会ドットコム", path: "/" },
     { name: councilName, path: `/${city}` },
@@ -98,6 +196,13 @@ export default async function CityMembersPage({
           latestYear={latestYear}
           city={city}
         />
+        <CityExploreLinks
+          city={city}
+          cityName={cityName}
+          hasMembers={false}
+          hasMinutes={Boolean(minutesCount && minutesCount > 0)}
+          hasThemes={hasThemes}
+        />
         <CityDataStatus municipality={municipality} />
         <div className="page-shell max-w-6xl">
           <section className="mb-4">
@@ -120,6 +225,13 @@ export default async function CityMembersPage({
         minutesCount={minutesCount}
         latestYear={latestYear}
         city={city}
+      />
+      <CityExploreLinks
+        city={city}
+        cityName={cityName}
+        hasMembers={members.length > 0}
+        hasMinutes={Boolean(minutesCount && minutesCount > 0)}
+        hasThemes={hasThemes}
       />
       <CityDataStatus municipality={municipality} />
       {minutesUnavailable && (
@@ -144,24 +256,15 @@ export default async function CityMembersPage({
           </p>
         </div>
       )}
-      {!minutesUnavailable && (
-        <MinutesWordCloud
-          city={city}
-          cityName={municipality?.name ?? city}
-          modes={wordCloud.modes}
-          years={wordCloud.years}
-          meetings={wordCloud.meetings}
-          scopes={wordCloud.scopes}
-          datasets={wordCloud.datasets}
+      <div id="members" className="scroll-mt-24">
+        <MemberList
+          members={members}
+          factions={factions}
+          activity={activity}
+          memberHrefBase={`/${city}/members`}
+          minutesHrefBase={`/${city}/minutes`}
         />
-      )}
-      <MemberList
-        members={members}
-        factions={factions}
-        activity={activity}
-        memberHrefBase={`/${city}/members`}
-        minutesHrefBase={`/${city}/minutes`}
-      />
+      </div>
       {/* オープンデータ導線（議員名簿 CSV） */}
       <div
         data-no-print="true"

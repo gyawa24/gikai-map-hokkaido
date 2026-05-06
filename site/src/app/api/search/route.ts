@@ -218,6 +218,7 @@ export async function GET(request: NextRequest) {
   const q = (request.nextUrl.searchParams.get("q") ?? "").slice(0, 500);
   const cityFilter = request.nextUrl.searchParams.get("city") ?? "all";
   const yearFilter = request.nextUrl.searchParams.get("year") ?? "all";
+  const factionFilter = request.nextUrl.searchParams.get("faction") ?? "all";
   const rawSourceFilter = request.nextUrl.searchParams.get("source") ?? "all";
   const rawSearchMode = request.nextUrl.searchParams.get("op") ?? "and";
   const sourceFilter: SourceFilter =
@@ -585,16 +586,24 @@ export async function GET(request: NextRequest) {
   const memberFactionFacets = buildCountFacets(
     cityScopedMembers.map((result) => result.faction || "無所属")
   );
+  const effectiveFactionFilter =
+    factionFilter !== "all" && memberFactionFacets.some((facet) => facet.value === factionFilter)
+      ? factionFilter
+      : "all";
+  const filteredMembers =
+    effectiveFactionFilter === "all"
+      ? cityScopedMembers
+      : cityScopedMembers.filter((result) => (result.faction || "無所属") === effectiveFactionFilter);
 
   const MAX_RESULTS = 200;
   return NextResponse.json({
     sessionResults: stripSessionScore(filteredSessions.slice(0, MAX_RESULTS)),
-    memberResults: stripMemberScore(cityScopedMembers.slice(0, MAX_RESULTS)),
+    memberResults: stripMemberScore(filteredMembers.slice(0, MAX_RESULTS)),
     sessionTotal: filteredSessions.length,
-    memberTotal: cityScopedMembers.length,
+    memberTotal: filteredMembers.length,
     sessionBaseTotal: sessionResults.length,
     memberBaseTotal: memberResults.length,
-    truncated: filteredSessions.length > MAX_RESULTS || cityScopedMembers.length > MAX_RESULTS,
+    truncated: filteredSessions.length > MAX_RESULTS || filteredMembers.length > MAX_RESULTS,
     rescued: sessionRescued || memberRescued,
     sessionRescued,
     memberRescued,

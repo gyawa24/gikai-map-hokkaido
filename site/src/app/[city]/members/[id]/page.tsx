@@ -171,6 +171,10 @@ export default async function CityMemberDetailPage({
             <img
               src={member.photo_url}
               alt={`${member.name}議員`}
+              width={112}
+              height={160}
+              loading="lazy"
+              decoding="async"
               className="h-40 w-28 shrink-0 rounded-[20px] border border-[#E2E8F0] object-cover shadow-sm"
             />
           )}

@@ -249,6 +249,10 @@ export default async function CityThemesPage({
                         <img
                           src={row.photo_url}
                           alt={`${row.name}議員`}
+                          width={56}
+                          height={80}
+                          loading="lazy"
+                          decoding="async"
                           className="w-14 h-20 object-cover rounded border border-[#E2E8F0] shadow-sm"
                         />
                       </div>
