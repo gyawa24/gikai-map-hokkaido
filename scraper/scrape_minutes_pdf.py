@@ -927,6 +927,46 @@ PDF_CONFIGS: dict[str, dict] = {
         },
         "pdf_filter": ["議事録本文"],
     },
+    "urahoro": {
+        "name": "浦幌町",
+        # 年別ページ内で h3 の定例会・臨時会見出しごとに日別PDFが並ぶ。
+        "strategy": "multi_index_html",
+        "index_urls": {
+            2026: "https://www.urahoro.jp/council/?content=2976",
+            2025: "https://www.urahoro.jp/council/?content=2287",
+            2024: "https://www.urahoro.jp/council/?content=1513",
+        },
+        "council_tag": "h3",
+    },
+    "horokanai": {
+        "name": "幌加内町",
+        # 年別ページの表から、開催日・会議名・PDFを読む。委員会は除外して本会議のみ対象。
+        "strategy": "minutes_table_rows",
+        "index_urls": {
+            2026: "https://www.town.horokanai.hokkaido.jp/gikai/giroku/2026",
+            2025: "https://www.town.horokanai.hokkaido.jp/gikai/giroku/2025",
+            2024: "https://www.town.horokanai.hokkaido.jp/gikai/giroku/2024",
+        },
+    },
+    "urakawa": {
+        "name": "浦河町",
+        # 年別の本会議一覧 → 会議詳細 → 会議録PDF。
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2026: "https://www.town.urakawa.hokkaido.jp/gyosei/council/?category=347",
+            2025: "https://www.town.urakawa.hokkaido.jp/gyosei/council/?category=331",
+            2024: "https://www.town.urakawa.hokkaido.jp/gyosei/council/?category=309",
+        },
+        "pdf_filter": ["pdf"],
+    },
+    "engaru": {
+        "name": "遠軽町",
+        # 単一ページ内で h3 が年、h5 が会議見出し。その直下に日別PDFが並ぶ。
+        "strategy": "multi_index_html",
+        "index_urls": {None: "https://engaru.jp/life/page.php?id=398"},
+        "year_tag": "h3",
+        "council_tag": "h5",
+    },
 }
 
 TYPE_FLAGS = {
@@ -1689,6 +1729,7 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
     """
     index_urls: dict = cfg["index_urls"]
     council_tag = cfg["council_tag"].lower()
+    year_tag = cfg.get("year_tag", "").lower()
     year_from_heading = cfg.get("year_from_heading", False)
     pdf_filter = cfg.get("pdf_filter", "")
     if isinstance(pdf_filter, str):
@@ -1697,7 +1738,7 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
 
     for year, urls in index_urls.items():
         # year_from_heading モードでは year=None を許容し、heading から年度を取る
-        if not year_from_heading and year not in years:
+        if not year_from_heading and not year_tag and year not in years:
             continue
         url_list = urls if isinstance(urls, list) else [urls]
         for url in url_list:
@@ -1708,6 +1749,7 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
 
             current_council = None  # {"type", "seq", "title"}
             current_pdfs = []
+            current_section_year = year
 
             def finalize():
                 nonlocal current_council, current_pdfs
@@ -1730,11 +1772,16 @@ def extract_pdf_links_by_multi_index_html(cfg: dict, years: list[int]) -> list[d
                 text = re.sub(r"<[^>]+>", "", m.group("text")).strip()
                 attrs = m.group("attrs")
 
+                if year_tag and tag == year_tag:
+                    finalize()
+                    current_section_year = japanese_year_to_int(_zen_to_half(text))
+                    continue
+
                 if tag == council_tag:
                     finalize()
                     text_half = _zen_to_half(text)
                     # year_from_heading: council見出しから年度を抽出
-                    current_year = year
+                    current_year = current_section_year
                     if year_from_heading:
                         ym = ERA_RE.search(text_half)
                         current_year = (2018 + int(ym.group(1))) if ym else None
@@ -2317,6 +2364,61 @@ def extract_pdf_links_by_entry_pdf_attachments(cfg: dict, years: list[int]) -> l
     return records
 
 
+def extract_pdf_links_by_minutes_table_rows(cfg: dict, years: list[int]) -> list[dict]:
+    """開催日・会議名・PDF列を持つ表から本会議PDFを取得する戦略。"""
+    index_urls: dict = cfg["index_urls"]
+    records: list[dict] = []
+    seen = set()
+
+    for page_year, url in index_urls.items():
+        if page_year not in years:
+            continue
+        r = requests.get(url, timeout=30, headers=HEADERS)
+        r.encoding = r.apparent_encoding or "utf-8"
+        r.raise_for_status()
+
+        for row_m in re.finditer(r"<tr[\s\S]*?</tr>", r.text, re.I):
+            row = row_m.group(0)
+            href_m = re.search(r'href=["\']([^"\']+\.pdf)["\']', row, re.I)
+            if not href_m:
+                continue
+            cells = re.findall(r"<td[^>]*>([\s\S]*?)</td>", row, re.I)
+            if len(cells) < 2:
+                continue
+            date_text = _zen_to_half(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", cells[0])).strip())
+            title = _zen_to_half(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", cells[1])).strip())
+            if "定例会" not in title and "臨時会" not in title:
+                continue
+
+            dm = re.search(r"(\d{4})年\s*(\d+)月\s*(\d+)日", date_text)
+            sm = re.search(r"第\s*(\d+)\s*回", title)
+            if not dm or not sm:
+                continue
+            year = int(dm.group(1))
+            if year not in years:
+                continue
+            ttype = "定例会" if "定例会" in title else "臨時会"
+            schedule_m = re.search(r"第\s*(\d+)\s*号", title)
+            schedule_no = int(schedule_m.group(1)) if schedule_m else 1
+            href = href_m.group(1)
+            full = urljoin(url, href)
+            if full in seen:
+                continue
+            seen.add(full)
+
+            records.append({
+                "type": ttype,
+                "year": year,
+                "seq": int(sm.group(1)),
+                "filename": href.rsplit("/", 1)[-1],
+                "link_text": title,
+                "url": full,
+                "sort_key": (int(dm.group(2)), int(dm.group(3)), schedule_no, full),
+            })
+
+    return records
+
+
 def _html_to_text(fragment: str) -> str:
     fragment = re.sub(r"(?i)<br\s*/?>", "\n", fragment)
     fragment = re.sub(r"(?i)</p\s*>", "\n", fragment)
@@ -2461,6 +2563,8 @@ def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
         return extract_pdf_links_by_category_drilldown(cfg, years or [])
     if strategy == "entry_pdf_attachments":
         return extract_pdf_links_by_entry_pdf_attachments(cfg, years or [])
+    if strategy == "minutes_table_rows":
+        return extract_pdf_links_by_minutes_table_rows(cfg, years or [])
     if strategy == "html_daily_minutes":
         return extract_pdf_links_by_html_daily_minutes(cfg, years or [])
     raise ValueError(f"unknown strategy: {strategy}")

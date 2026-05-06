@@ -1263,12 +1263,14 @@
     "furigana": "うらかわちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが匿名タイムスタンプファイル名と複数階層のため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "浦河町議会の年別本会議一覧から、定例会・臨時会の会議録PDFを取り込みました。令和8年第2回定例会は作成中のため未取得です。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "samani",
@@ -1803,12 +1805,14 @@
     "furigana": "ほろかないちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますがWordPressの特殊構造（ハッシュファイル名＋短文リンクテキスト）のため現時点は自動取込困難です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "幌加内町議会の年別会議録・審議結果ページから、本会議の定例会・臨時会PDFを取り込みました。令和6年ページはPDF掲載がないため対象外です。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "rumoi",
@@ -2219,12 +2223,14 @@
     "furigana": "えんがるちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議記録PDFはありますがWordPress構造でリンクテキストに会議情報が含まれず現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "遠軽町議会の会議録ページから、令和6年・令和7年・令和8年2月の定例会・臨時会PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "yubetsu",
@@ -2551,12 +2557,14 @@
     "furigana": "うらほろちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますがcontent_YYYYMMDD形式の匿名ファイル名と年度別contentIDのため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "浦幌町議会の年別会議録ページから、定例会・臨時会の日別会議録PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "kushirocho",

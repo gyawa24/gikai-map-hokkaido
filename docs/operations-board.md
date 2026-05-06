@@ -24,10 +24,10 @@
 
 ### Coverage
 
-- `urahoro` の `minutes` / `segments` を整備する
-  - 目的: 年別会議録ページに直接並ぶ「第N回第M号」PDFを会議単位に束ねる
-  - 完了条件: 令和6年・令和7年の本会議PDFが `/urahoro/minutes` で閲覧できる
-  - 主に触る場所: `scraper/scrape_minutes_pdf.py`, `data/urahoro/`, `site/data/urahoro/`
+- `urakawa` の `minutes` / `segments` 可否を確認する
+  - 目的: 親一覧から本会議詳細ページを辿り、日別会議録PDFを取得できるか確認する
+  - 完了条件: 取得可能なら `minutes` 化、不可なら `minutes_status_note` を最新化する
+  - 主に触る場所: `scraper/scrape_minutes_pdf.py`, `data/urakawa/`, `site/data/urakawa/`
 
 ## Next
 
@@ -57,6 +57,8 @@
 
 ## Done
 
+- `horokanai` の `minutes` / `segments` 整備（表形式の会議録PDFから本会議のみ取得、令和6年ページはPDF掲載なし）
+- `urahoro` の `minutes` / `segments` 整備（年別会議録ページのh3見出し直下PDFを会議単位に束ねる）
 - `assabu` の `minutes` / `segments` 整備（年別一覧から会議詳細の「議事録本文」PDFのみ取得、themes は議員名簿ミスマッチ解消待ち）
 - `minutes` 追加候補を再選定し、`urahoro` / `horokanai` を次候補に更新
 - `kamishihoro` の `minutes` / `segments` 整備（一覧ページから記事詳細の添付PDFを取得、令和7年は本会議録未掲載のため令和6年分を対象）

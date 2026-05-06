@@ -26,6 +26,8 @@ Options:
   --no-build-segments        Skip build-segments
   --verify                   Run verify-municipality after scraping
   --coverage                 Regenerate municipality coverage after completion
+  --concurrency <n>          Run scraper jobs in parallel (default: 1)
+  --parallel <n>             Alias for --concurrency
   --dry-run                  Print commands without executing
   --help
 
@@ -36,7 +38,7 @@ Selection:
 Examples:
   node scripts/refresh-minutes.mjs --slug yakumo --years 2024 --verify
   node scripts/refresh-minutes.mjs --slugs chitose,eniwa,tomakomai --years 2025,2026
-  node scripts/refresh-minutes.mjs --all-published --years 2025,2026 --coverage
+  node scripts/refresh-minutes.mjs --all-published --years 2025,2026 --coverage --concurrency 2
 `);
 }
 
@@ -120,6 +122,31 @@ function csvToList(raw) {
     .split(",")
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function parsePositiveInteger(raw, flagName) {
+  const value = Number.parseInt(String(raw), 10);
+  if (!Number.isInteger(value) || value < 1 || String(value) !== String(raw).trim()) {
+    throw new Error(`${flagName} must be a positive integer`);
+  }
+  return value;
+}
+
+async function runWithConcurrency(items, concurrency, worker) {
+  const results = [];
+  let nextIndex = 0;
+
+  async function runWorker() {
+    while (nextIndex < items.length) {
+      const index = nextIndex;
+      nextIndex += 1;
+      results[index] = await worker(items[index], index);
+    }
+  }
+
+  const workerCount = Math.min(concurrency, items.length);
+  await Promise.all(Array.from({ length: workerCount }, runWorker));
+  return results;
 }
 
 async function resolveRunner(slug, municipalitiesMap, pdfConfigSlugs) {
@@ -216,6 +243,7 @@ async function main() {
   if (years.length === 0) {
     throw new Error("years is empty");
   }
+  const concurrency = parsePositiveInteger(options.concurrency ?? options.parallel ?? "1", "--concurrency");
 
   const municipalities = await readJson(ROOT_MUNICIPALITIES_PATH);
   const municipalitiesMap = new Map(municipalities.map((item) => [item.slug, item]));
@@ -228,6 +256,7 @@ async function main() {
   }
 
   const failures = [];
+  const targets = [];
 
   for (const slug of slugs) {
     const runner = await resolveRunner(slug, municipalitiesMap, pdfConfigSlugs);
@@ -236,14 +265,36 @@ async function main() {
       console.error(`\n[${slug}] unsupported slug`);
       continue;
     }
+    targets.push({ slug, runner });
+  }
 
+  const scraperResults = await runWithConcurrency(targets, concurrency, async ({ slug, runner }) => {
     console.log(`\n=== ${slug} (${runner.label}) ===`);
     try {
       const [command, baseArgs] = runner.command;
       const args = [...baseArgs, years.join(",")];
       if (options.force) args.push("--force");
       await run(command, args, options.dryRun);
+      return { slug, ok: true };
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`[${slug}] failed: ${message}`);
+      return { slug, ok: false, error: message };
+    }
+  });
 
+  const failedScraperSlugs = new Set();
+  for (const result of scraperResults) {
+    if (!result?.ok) {
+      failures.push({ slug: result.slug, error: result.error });
+      failedScraperSlugs.add(result.slug);
+    }
+  }
+
+  for (const { slug } of targets) {
+    if (failedScraperSlugs.has(slug)) continue;
+
+    try {
       const onboardArgs = [path.join(REPO_ROOT, "scripts", "onboard-municipality.mjs"), "--slug", slug];
       if (options.buildSegments) onboardArgs.push("--build-segments");
       if (options.verify) onboardArgs.push("--verify");
