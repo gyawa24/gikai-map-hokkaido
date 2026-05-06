@@ -108,6 +108,9 @@ export default function RootLayout({
                   <Link href="/search" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
                     横断検索
                   </Link>
+                  <Link href="/sources" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
+                    掲載情報と出典
+                  </Link>
                 </div>
               </div>
             </div>
@@ -131,6 +134,7 @@ export default function RootLayout({
                     <div className="mt-4 flex flex-wrap gap-2 text-xs font-bold text-[#c7d5eb]">
                       <Link href="/" className="theme-pill-soft border-white/15 bg-white/10 text-white">収録自治体一覧</Link>
                       <Link href="/news" className="theme-pill-soft border-white/15 bg-white/10 text-white">お知らせ</Link>
+                      <Link href="/sources" className="theme-pill-soft border-white/15 bg-white/10 text-white">掲載情報と出典</Link>
                       <Link href="/privacy" className="theme-pill-soft border-white/15 bg-white/10 text-white">プライバシーポリシー</Link>
                       <Link href="/terms" className="theme-pill-soft border-white/15 bg-white/10 text-white">利用規約</Link>
                     </div>

@@ -135,6 +135,9 @@ export default function HomePage() {
           <a href="#municipalities" className="theme-button px-4 py-2 text-sm">
             市町村一覧
           </a>
+          <Link href="/sources" className="theme-button px-4 py-2 text-sm">
+            掲載情報と出典
+          </Link>
         </div>
       </section>
 

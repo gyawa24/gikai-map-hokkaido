@@ -12,6 +12,7 @@ export type Municipality = {
   active: boolean;
   tenant_id?: number;
   system?: string;
+  gijiroku_subdomain?: string;
   minutes_status?: "available" | "unavailable";
   minutes_status_note?: string;
   minutes_verified_at?: string;

@@ -68,6 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     toEntry("/search", "weekly", 0.9),
     toEntry("/topics", "weekly", 0.8),
     toEntry("/news", "weekly", 0.6),
+    toEntry("/sources", "weekly", 0.6),
     toEntry("/decisions", "weekly", 0.5),
     toEntry("/schedule", "weekly", 0.5),
     toEntry("/newsletter", "weekly", 0.5),
