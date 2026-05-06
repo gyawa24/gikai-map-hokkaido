@@ -1,0 +1,90 @@
+[
+  {
+    "seat_number": 1,
+    "name": "友山 大信",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務常任委員会委員長",
+      "議会運営委員会副委員長"
+    ]
+  },
+  {
+    "seat_number": 2,
+    "name": "早瀬 良樹",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "産業常任委員会委員"
+    ]
+  },
+  {
+    "seat_number": 3,
+    "name": "越前谷由樹",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "産業常任委員会委員"
+    ]
+  },
+  {
+    "seat_number": 4,
+    "name": "木村 眞男",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務常任委員会副委員長",
+      "産業常任委員会委員",
+      "議会運営委員会委員長"
+    ]
+  },
+  {
+    "seat_number": 5,
+    "name": "川地 正人",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務常任委員会委員",
+      "産業常任委員会委員長",
+      "議会運営委員会委員"
+    ]
+  },
+  {
+    "seat_number": 7,
+    "name": "吉野 卓壽",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "産業常任委員会副委員長",
+      "議会運営委員会委員"
+    ]
+  },
+  {
+    "seat_number": 8,
+    "name": "石澤 洋二",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [
+      "総務常任委員会委員",
+      "産業常任委員会委員",
+      "議会運営委員会委員"
+    ],
+    "role": "副議長"
+  },
+  {
+    "seat_number": 9,
+    "name": "小西 正尚",
+    "furigana": "",
+    "party": "無所属",
+    "faction": "",
+    "committees": [],
+    "role": "議長"
+  }
+]

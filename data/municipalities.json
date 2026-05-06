@@ -319,12 +319,16 @@
     "furigana": "えさしちょう",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "level": "municipality",
     "active": true,
     "tenant_id": 371,
-    "system": "dnp"
+    "system": "pdf_inhouse",
+    "minutes_status": "available",
+    "minutes_status_note": "江差町議会の令和6年・令和7年会議結果ページから会議録PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "kutchan",
@@ -354,8 +358,8 @@
     "level": "municipality",
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトで確認できるのは議会日程・議会広報・YouTube配信で、会議録本文のWeb公開は確認できていません。",
-    "minutes_verified_at": "2026-05-03",
+    "minutes_status_note": "公式サイトで確認できるのは議会日程・議会広報・YouTube配信で、会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06",
     "tenant_id": 73,
     "system": "dnp"
   },
@@ -388,7 +392,7 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトでは議案等一覧・議会中継は公開されていますが、会議録は議会事務局または図書館で閲覧と案内されています。",
-    "minutes_verified_at": "2026-05-03",
+    "minutes_verified_at": "2026-05-06",
     "tenant_id": 353,
     "system": "dnp"
   },
@@ -404,8 +408,8 @@
     "level": "municipality",
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトで確認できるのは議会だより等で、会議録本文のWeb公開は確認できていません。",
-    "minutes_verified_at": "2026-05-03",
+    "minutes_status_note": "公式サイトで確認できるのはなかがわ議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06",
     "tenant_id": 527,
     "system": "dnp"
   },
@@ -616,8 +620,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議決結果と議案書PDFのみで、本会議会議録本文は掲載されていません。議会中継動画は公開あり。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会の結果・議会だより・議会中継録画などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "kuriyama",
@@ -628,7 +632,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -644,7 +649,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -675,7 +681,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -706,7 +713,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -816,8 +824,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会通信（議会だより）のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるPDFは議決結果と一般質問で、本会議全体の会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "otaru",
@@ -846,8 +854,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だより「かりば」のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会状況・議会構成・議会広報かりばなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "suttsu",
@@ -856,11 +864,13 @@
     "region": "後志",
     "furigana": "すっつちょう",
     "level": "municipality",
-    "features": [],
+    "features": [
+      "members"
+    ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには「議会の日程」と議会だよりのみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議員名簿・委員会構成・議会日程・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "kuromatsunai",
@@ -874,8 +884,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトの議会ページが2017年で更新停止しており、現在の会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議事日程・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "rankoshi",
@@ -886,7 +896,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -936,8 +947,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに「審議結果」PDFの掲載はありますが、本会議会議録は見つかりませんでした。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の記事、活動状況、議事日程・議決結果で、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "kimobetsu",
@@ -951,8 +962,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには「議会だより」のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "kyogoku",
@@ -966,8 +977,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議員紹介・議会概要のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だより・議員紹介・議会概要などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "kyowa",
@@ -981,8 +992,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには「議会だよりきょうわ」のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "iwanai",
@@ -996,8 +1007,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトを確認したが本会議会議録の掲載は見つかりませんでした（議会だより・一般質問順序表のみ）。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議事日程・議会だより・一般質問順序表などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "tomari",
@@ -1011,8 +1022,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "kamoenai",
@@ -1026,8 +1037,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議員名簿と「議会開催のお知らせ」のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議員名簿と議会開催のお知らせなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "shakotan",
@@ -1041,8 +1052,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに掲載されているのは2ページ程度の「結果」サマリーのみで、本文発言録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の結果PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "furubira",
@@ -1112,7 +1123,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -1173,7 +1185,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -1264,7 +1277,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -1284,8 +1298,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには「議会だより」広報誌のみで、会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "erimo",
@@ -1299,8 +1313,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だより（広報）のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だより・議会構成などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "shinhidaka",
@@ -1311,7 +1325,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -1388,8 +1403,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには本会議「審議結果」（議決結果）のみで、本会議会議録本文は未公開です（YouTube録画あり）。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトのYouTube配信ページに、公式記録である会議録は議会事務局で閲覧できると案内されており、Web本文公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "mori",
@@ -1400,7 +1415,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -1451,8 +1467,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトを確認したが本会議会議録は未公開（一般質問要旨PDFのみ掲載）。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるPDFは一般質問の質問・答弁要旨で、本会議全体の会議録本文としては扱えないため取込対象外です。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "assabu",
@@ -1463,7 +1479,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -1483,8 +1500,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには「議会だより」と議員名簿のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイト検索では議会だより・議員名簿などが中心で、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "okushiri",
@@ -1498,8 +1515,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには「おくしり議会だより」のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのはおくしり議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "imakane",
@@ -1509,12 +1526,14 @@
     "furigana": "いまかねちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに「会務報告」PDFはありますが議決概要であり、本会議会議録本文は未公開と判断されます。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "今金町議会の会議録閲覧ページから、令和6年・令和7年・令和8年2月の定例会・臨時会PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "setana",
@@ -1573,8 +1592,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だより「孔雀草」のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だより孔雀草・議会開催のお知らせ・議決結果などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "higashikagura",
@@ -1588,8 +1607,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だより（広報）のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "toma",
@@ -1603,8 +1622,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だよりと一般質問要約のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは町議会定例会の一般質問と答弁で、本会議全体の会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "pippu",
@@ -1618,8 +1637,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには「議会だより」と議員名簿のみで、本会議会議録PDFは公開されていません。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会開会のお知らせ・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "aibetsu",
@@ -1633,8 +1652,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会開催日程と動画配信のみで、テキスト形式の会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは本会議日程・議会だより・一般質問動画で、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "higashikawa",
@@ -1691,8 +1710,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会白書と議会だよりのみで、本会議会議録本文は未公開です（YouTubeライブ配信あり）。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だより・議会白書などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "minamifurano",
@@ -1706,8 +1725,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトで公開されている「会議結果」PDFは決議要約のみで、本会議会議録本文は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで公開されているPDFは会議結果と一般質問で、本会議全体の会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "shimukappu",
@@ -1735,8 +1754,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに「議事録のインターネット公開は未実施」と明記されています（議会図書室で閲覧可）。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトに、本会議の議事録は町立図書館で公開し、インターネット公開は未実施と明記されています。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "kenbuchi",
@@ -1750,8 +1769,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議決結果のみで、本会議会議録本文は未公開です（令和5年以降順次掲載予定との記載あり）。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイト内検索と議会ページを再確認しましたが、公開されているのは議会だより・YouTube配信・議会情報中心で、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "shimokawa",
@@ -1794,8 +1813,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議員紹介と「議会だより」広報誌のみで、会議録本文は掲載されていません。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのはおといねっぷ議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "horokanai",
@@ -1806,7 +1825,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -1841,8 +1861,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は非公開（情報開示請求制）です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会構成・傍聴案内・議会広報・開催案内などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "obira",
@@ -1856,8 +1876,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは会議予定・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "tomamae",
@@ -1871,8 +1891,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイト検索では議会だよりなどが中心で、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "haboro",
@@ -1900,8 +1920,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "会議録PDFは公開されていますがスキャン画像のためOCR処理が必要で現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "会議録PDFは公開されていますが、令和6年・令和7年PDFも現行のPDFテキスト抽出では本文0文字の画像系PDFのためOCR処理が必要です。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "embetsu",
@@ -1911,12 +1931,14 @@
     "furigana": "えんべつちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますがインデックスページがJavaScriptレンダリングのため現時点は自動取込困難です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "遠別町議会会議録ページから、令和6年・令和7年・令和8年1月の定例会・臨時会PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "teshio",
@@ -1930,8 +1952,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトのPDFは「議会の動き」要約版6ページ程度で全文会議録の完全版は未公開と推定されます。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるPDFは議会だより・視察研修報告書などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "sarufutsu",
@@ -1945,8 +1967,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますがファイル名がタイムスタンプ形式で中間詳細ページ経由のため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで公開されている村議会議事録PDFは一般質問全員分・質問者別PDFで、本会議全体の会議録本文としては扱えないため取込対象外です。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "hamatombetsu",
@@ -1960,8 +1982,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議決結果・議事概要のみで、全文会議録は情報開示請求のみ閲覧可です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議決結果・議事概要などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "nakatombetsu",
@@ -1971,12 +1993,14 @@
     "furigana": "なかとんべつちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトのPDFは議事日程表のみで、本会議会議録本文は未公開と推定されます。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "公式サイトの年別会議録ページから、令和6年・令和7年の定例会PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "esashi_souya",
@@ -2000,12 +2024,14 @@
     "furigana": "とよとみちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが内容が要約・議事概要（200-600字）のみで全文会議録ではないため取込対象外です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "豊富町議会の議事録ページから、令和6年の定例議会・臨時議会PDFを取り込みました。令和7年分は議事概要PDFのため取込対象外です。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "rebun",
@@ -2019,8 +2045,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには審議結果（議決一覧）PDFのみで、本会議会議録本文は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の審議結果で、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "rishiri",
@@ -2034,8 +2060,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに定例会ページはありますが全文会議録PDFが未確認で、議会だより中心です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会概要・議会だより等で、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "rishirifuji",
@@ -2049,8 +2075,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だよりのみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会だより利尻富士・議会概要などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "horonobe",
@@ -2138,8 +2164,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイト(gikai-sharitown.net)に議事日程・一般質問通告の掲載はありますが、本会議会議録は見つかりませんでした。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議事日程・一般質問通告などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "kiyosato",
@@ -2212,8 +2238,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトの会議録は令和2年度(2020)までで、令和3年以降はWeb公開されていません。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトの会議録ページは令和2年までの掲載で、令和3年以降の本会議会議録本文はWeb公開が確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "engaru",
@@ -2224,7 +2250,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -2244,8 +2271,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが「会議結果」と「会議録」混在＋匿名ファイル名のため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトに会議録PDFはありますが、現行のPDFテキスト抽出では本文が取得できない画像系PDFのためOCR処理が必要です。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "takinoue",
@@ -2259,8 +2286,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議内容PDFはありますが逐語議事録か要約か不明で現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるPDFは会議結果・議会広報・瓦版などの要約資料で、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "okoppe",
@@ -2274,8 +2301,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だより・日程・一般質問通告のみで、本会議会議録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の日程、一般質問事項、議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "nishiokoppe",
@@ -2289,8 +2316,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトは議会のあらまし・議員名簿のみで、会議録PDFは公開されていません。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会のあらまし・議員名簿などで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "omu",
@@ -2304,8 +2331,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトの会議録ページがサーバ不通で確認できておらず現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "議会議事録検索ページは確認できましたが、公開対象は一般質問単位の議事録が中心で、本会議全体の会議録本文としては扱えないため取込対象外です。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "oozora",
@@ -2315,12 +2342,14 @@
     "furigana": "おおぞらちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトの会議録ページ構造が確認できておらず現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "大空町議会の本会議会議録ページから、令和6年の定例会・臨時会PDFを取り込みました。令和7年以降の会議録PDFは公式ページで未確認です。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "otofuke",
@@ -2330,12 +2359,14 @@
     "furigana": "おとふけちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトはDBSR系の検索ビューア型で、PDFリンクがなくHTMLビューア配信のため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "音更町議会会議録検索の会議録ライブラリから、令和6年・令和7年・令和8年1月の定例会・臨時会本文HTMLを取り込みました。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "shihoro",
@@ -2346,7 +2377,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -2363,7 +2395,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -2528,12 +2561,14 @@
     "furigana": "あしょろちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトの議会ページの構造が確認できておらず現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "足寄町議会会議録ページの年別表から、令和6年・令和7年・令和8年1月の定例会・臨時会PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "rikubetsu",
@@ -2558,7 +2593,8 @@
     "level": "municipality",
     "features": [
       "members",
-      "minutes"
+      "minutes",
+      "themes"
     ],
     "active": true,
     "minutes_status": "available",
@@ -2574,12 +2610,14 @@
     "furigana": "くしろちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが多階層ディレクトリ構造のため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "釧路町議会の年別一覧から会議録詳細ページを辿り、本会議の定例会・臨時会PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "akkeshi",
@@ -2635,8 +2673,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには議会だよりと議会動画のみで、テキスト形式の会議録は未公開です（YouTube動画あり）。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会動画と会議結果PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "tsurui",
@@ -2650,8 +2688,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには審議結果一覧のみで、本会議会議録は未公開です（YouTube動画あり）。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは議会の活動状況と審議結果PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "shiranuka",
@@ -2665,8 +2703,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトのPDFは「議事日程表・議決結果」のみで、本文発言記録は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるPDFは議事日程表・会議結果で、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "betsukai",
@@ -2694,8 +2732,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトで公開されているのは一般質問の議員別PDFのみで、全文会議録は「ホームページ掲載用であり正式な会議録とは異なる」と注記。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで公開されているのは一般質問・委員会代表質問のホームページ掲載用PDFで、正式な本会議会議録本文とは異なると明記されているため取込対象外です。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "shibetsucho",
@@ -2709,8 +2747,8 @@
     ],
     "active": true,
     "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトには定例会・臨時会の審議事項（議案・議決結果）のみで、本会議会議録本文は未公開です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会日程と審議事項PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "rausu",
@@ -2720,12 +2758,14 @@
     "furigana": "らうすちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes",
+      "themes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが日本語ファイル名と新旧形式混在のため現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "羅臼町議会会議録ページから、令和6年・令和7年の定例会・臨時会PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06"
   },
   {
     "slug": "hokkaido",

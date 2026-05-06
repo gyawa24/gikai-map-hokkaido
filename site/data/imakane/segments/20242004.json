@@ -1,0 +1,393 @@
+[
+  {
+    "id": "imakane-20242004-1-001",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "森朋彦副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。それでは議案第 1 号令和 6 年度今金町一\n般会計補正予算（第 5 号）について提案理由を申し上げます。今回の補正予算につき\nましては、既定の歳入歳出予算の総額にそれぞれ 1,104 万 9,000 円を追加し、予算の\n総額を歳入歳出それぞれ 64 億 1,210 万 9,000 円にしようとするものであります。補\n正の主なものについて歳入より 1 ページをお願いいたします。15 款道支出金において\n585 万 6,000 円の追加は、委託金です。18 款繰入金において 519 万 3,000 円の追加は\n基金繰入金です。次に歳出は 2 ページです。2 款総務費において 753 万円の追加は選\n挙費です。9 款消防費においては 351 万 9,000 円の追加です。以上が概要でございま\nす。本案に関わる各事業の概要について添付の参考資料に基づきまして、総務費につ\nいては選挙管理委員会書記長より、消防費についてはくらし安心課長よりそれぞれ順\n次説明を申し上げます。\n御審議頂き議決賜りますようよろしくお願いをいたします。\n- 2 -",
+    "text_length": 482,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-002",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 説明資料の中にございますけども、ちょっと 2 点ほど今聞きた\nいことがあるんですけども、まず 1 点目、説明資料 1 ページ、備品購入費の計数機 1\n台っていうのはこれ、新規でということでありますけども、これ入替えということに\nなるのか、増台ということになるのかちょっと教えてください。",
+    "text_length": 151,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-003",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "山田薫議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今 3 台の計数機がありまして、1 台がちょっ\nと老朽化といいますか古いもんですから、国政選挙等ということで、委託金もありま\nすので、こちらのほうで 1 台更新をさせていただきたいというふうに思っております\nので、よろしくお願いします。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-004",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 分かりました。ちょっと質問変えます。期日前投票にちょっと\n関わるお話なんですけども、前回の選挙のとき、前回の町の選挙のときですね。その\nときには、移動投票というものは移動期日前投票ですか、っていうものをやっていら\nっしゃったんですけども今回もそのように、移動期日前投票というのは行われるのか\n教えてください。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-005",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "山田薫議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "選挙区の変更がありまして、美利河から種川\nまでの上地区において選挙区が一本化になりましたので、それを契機にですね、期日\n前の移動投票所というものを実施しております。それ以外の全ての選挙で期日前移動\n投票はやっておりますので、今回の衆議院議員選挙も、移動期日前は実施してまいり\nます。日付でございますが、10 月 23 日を予定しております。各か所で 8 か所予定を\nしております。この 8 か所の中には、今金高等養護学校前も含んでおりますので、そ\nちらのほうにも投票のほうを呼びかけてまいりたいというふうに思っております。",
+    "text_length": 261,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-006",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 分かりました。移動期日前と投票日と期日前投票っていうもの\nがあると思うんですけどもそのどこかでですね、その場所にアクセスできない方とか、\nその都合に合わなかった方っていう方々も多分いると思うんですよね。国政選挙にお\nいて今金町の投票率ってのをちょっと見てみたんですけども、60％から 70％って前回\nが 70％だったか 60％ちょっと位だったと思うんですけども、その中で投票率を上げ\n- 3 -\n\nるということについて、そのアクセスその場所にアクセス出来づらい方っていうこと\nに関して今金町、デマンドバスも走っておりますのでそういうものを活用して、その\n期間でアクセスしやすくするという考え方もできると思うんですがそのような考え\nは今のところあるか教えてください。",
+    "text_length": 340,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-007",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "山田薫議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "前回の衆議院議員選挙は、令和 3 年 10 月に\n施行されておりまして、その際の投票率が 70.53％ということとなっています。その\n中で期日前投票で投票された方の投票率が 41.38 ということで、大半が期日前投票で\n行われているということの実績があります。今回も、移動期日前ですとか、役場ロビ\nーで期日前投票所を設置しており、設置しますが、なるべく私たちも投票率が上がる\nように、広報活動を力入れてまいります。先ほど御質問ありました、移動期日前の場\n所に移動のアクセスができないという方々への対応ということでありますけども、そ\nちらをですねなかなか私たちも、デマンドバスとの時間との兼ね合いですとか、次の\n投票所に行く時間帯ですとかいろいろこう、タイトなスケジュールではやらせていた\nだいておりますので、そこはですね、移動期日前投票所の区域内にある住民に対して\nは、改めて、この日の何時に期日前投票所が開設されますということの、PR に力を注\nいでですね、あとは御近所の皆様に乗り合いで来ていただいて、投票を行っていただ\nくというような方策で今考えておりますので、よろしくお願いします。",
+    "text_length": 495,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-008",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 説明資料の 1 ページ。ここにイメージ図というものがございま\nすけども、まず、ちょっと 2 点ほどあるんですけどまず 1 点目高視認性雨衣って言う\nんですかね。その高視認性活動服のほうには後ろに今金町消防団というのが書いてあ\nるけどこっちの雨具のほうには、それが表記されるのか、ちょっと教えてください。",
+    "text_length": 159,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-009",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "宮崎吉広くらし安心課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "活動服のほうのイメージ図のほうに、背中の部分に\n今金町消防団ということで記載のほうありますが、雨衣のほうにも、このような形で\n同じように消防団の名前をさせていただく予定としております。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-010",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 分かりました。ありがとうございます。それでですね、このよ\nうに今金町消防団というふうに表記されるわけでありますが、今後においてというか、\n外国人の方など山に入るとかっていうことも今後考えうるという風に思いますと、日\n本語での表記のほかに、英語での表記っていうものもあったほうがいいのかなと思う\nんですけどもその辺の考え方をちょっと教えてください。",
+    "text_length": 181,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-011",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "宮崎吉広くらし安心課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "消防団の活動服につきましては、消防団の装備の基\n準等というものが国のほうで設けられておりまして、こちらの基準にのっとった形で\n制服のほうをつくらせていただく形となっております。そういったことから、背中の\n後ろの部分の表記につきましては、今のところそちらの基準の中で、何々消防団とい\nう形で、日本語のみの表記となっておりますので、今回もですね、こういった表記の\n記載の予定としておりますのでよろしくお願いいたします。",
+    "text_length": 207,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-012",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 基準もあるんでしょうけどちょっと僕調べてみるとですね、こ\nの英語で表記されている場所もあったように見受けられましたので、その基準等々も\nありますが、そういうことも考え得るのではないかなというふうなこともございます\nので、ぜひ検討していただければなと思いますがいかがですか。",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-013",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "宮崎吉広くらし安心課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、国の基準では先ほど答弁させていただいた内容\nとなっておりますが、そういった他の自治体等の活動服の制作状況もありますので、\nそこまで英語の表記ができるのかどうかも含めて確認をさせていただいて、対応でき\nる場合、対応させていただきたいと思います。",
+    "text_length": 123,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-014",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "岸徹也",
+    "member_faction": "",
+    "text": "（岸 徹也君） この被服の更新事業についてはしっかり準備をして進めていた\nだきたいなという思いではいるわけですけれども、もう少し補足をお願いしたかった\nのが、補正を提案された背景というんでしょうか理由という部分、これ平成 15 年に\n購入したもので更新が必要だということですから、大分もう年数たってますのでね、\n傷んできて破れたりとか、そういうこともあるのかなという、想像はできるわけです\nけれども、今回、補正に至ったその背景の部分というのももう少し補足説明頂きたい\nと思いますが、いかがでしょうか。",
+    "text_length": 250,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-015",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "宮崎吉広くらし安心課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の活動服雨衣の関係につきましては、昨年度、\n令和 5 年度に国への補助申請のほうをさせていただいております。その際には採択の\nほう、ちょっと見込みがなかったもんですから、今回国のほうから補助金の追加採択\n予定があるよということで御連絡のほうを頂いておりますので、そういった背景を踏\nまえて補正のほうをさせていただいておりますので、よろしくお願いいたします。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-016",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "６番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "岸徹也",
+    "member_faction": "",
+    "text": "（岸 徹也君） はい、分かりました。ですねもう 1 点は、この予算が通った後\nに、90 着ですね、かなりの数になるんですけど用意されるわけですけど、これのスケ\nジュール的にいつ頃までにこの 90 着が納品されるのかっていうことと、期日という\nものがある、あるんだと思われるんですけどもし期日に遅れる場合というものも想定\nされているのか、遅れた場合は、何か対応策みたいなのは考えているのか、何かその\n辺のお話を聞かせていただきたいと思います。\n- 5 -",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242004-1-017",
+    "municipality": "imakane",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "宮崎吉広くらし安心課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "活動服雨衣の納期につきましては、発注から 3 か月\nほどということで、情報を得ておりますので、今のスケジュールでいきますと、この\n10 月の 11 日までに、国への補助金の要望内容の提出がありまして、11 月 8 日までに\n補助金の交付申請書の提出、12 月初旬には交付決定となっておりますので、12 月の\n中旬には入札と発注という形になっておりますので、年度内には完了する予定となっ\nております。補助金の申請上、納期につきましては、今年度中に納めていただきたい\nということで言われておりますので、スケジュール的にも間に合う形で、今年度中、\n3 月頃になると思いますが、納めていただくことで、準備のほうを進めてまいりたい\nと思います。",
+    "text_length": 317,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  }
+]

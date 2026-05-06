@@ -1,0 +1,72 @@
+[
+  {
+    "id": "toyotomi-20242005-1-001",
+    "municipality": "toyotomi",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第5回臨時議会（令和6年8月27日開催） （PDF:149KB）",
+    "date": "2024-08-27",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "から発言の申し出がありますので、これを許可します。",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/toyotomi/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "toyotomi-20242005-1-002",
+    "municipality": "toyotomi",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第5回臨時議会（令和6年8月27日開催） （PDF:149KB）",
+    "date": "2024-08-27",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "の本会議欠席につきまして、ご報告を申し上げます。\nにつきましては、８月２５日夜に、体調が悪くなり、現在稚内市立病院にて、入院、加療が必要との診断がされまし\nたので、ご報告申し上げ、本日の本会議欠席につきまして、特段のご理解をお願い申し上げます。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/toyotomi/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-003",
+        "1-inline-004"
+      ]
+    }
+  },
+  {
+    "id": "toyotomi-20242005-1-003",
+    "municipality": "toyotomi",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第5回臨時議会（令和6年8月27日開催） （PDF:149KB）",
+    "date": "2024-08-27",
+    "speaker": "小泉孝一副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日招集の令和６年第５回町議会臨時会にご提案を、申し上げております。\n議案につきましては、工事請負契約についての１件をご提案申し上げております。\nなお、内容につきましては、担当課長よりご説明申し上げますので、よろしくご審議お願い申し上げます。",
+    "text_length": 121,
+    "source": {
+      "minutes_file": "data/toyotomi/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  }
+]

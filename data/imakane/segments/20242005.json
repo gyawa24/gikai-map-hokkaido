@@ -1,0 +1,393 @@
+[
+  {
+    "id": "imakane-20242005-1-001",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "森朋彦副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。それでは報告第 1 号、専決処分の報告に\nついて、提案理由を申し上げます。令和 6 年 5 月 24 日開催の第 3 回今金町議会臨時\n会において議決いただきました、田代橋長寿命化修繕工事につきまして、当該議決に\n関わる契約金額の 1 割を超えない範囲で、請負契約の変更を専決処分したことから、\n地方自治法第 180 条第 2 項の規定に基づき、議会へ報告するものでございます。\n内容につきましては、総務財政課長が朗読説明いたしますので、よろしくお願い申し上\nげます。",
+    "text_length": 244,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-002",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日置紳一",
+    "member_faction": "",
+    "text": "（日置紳一君） 専決処分ということで、町長の権限だと思いますけども、一\n応、競争入札で行っていて、たびたびこやって増額が出てくるんで、これ出して一応\n報告と、こういう形だけの報告じゃなくてどうしてこれ増額になったのかということ\nは、担当課から説明をいただきたいなと思うんですよ。今後おいても、今回もその中\n身について、できれば教えてください。",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-003",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "杉山輝希公営施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "日置議員のご質問にお答えをいたします。当該工事に\nつきましては、田代橋の長寿命化ということで、年次計画を持ちながらやっていると\nころでございます。多くの部分が目視で、ここは多分大きな手をかけなくても大丈夫\nだろう、これくらいの工法で、修繕が可能じゃないか。そういった部分も含みながら、\n設計等を組み立てているところでございます。しかしながら実際橋に対して、例えば\n塗料を剥がしてみたら、中が出てきて、目視では確認できなかったような修繕が追加\nで必要になったり、そういった場面も多々あるところでございます。今回につきまし\nては、塗装の部分について、追加をしようとするものでありまして、内容としまして\nは、現場塗装工が当初 1,530 平米の塗装を見込んでたところが、実際に現地で帳票を\n当てた結果、1,580 平米。プラス 50 平米程度、塗装を追加しなければならないという\n状況になったところでございます。合わせてその部分につきまして、塗膜を剥がした\nりして、産廃物が出てきますので、その処理に関わる部分も増加したところでありま\nして、当初の見込みでは 16 立米であったものが、実施の段階では、21 立米というこ\nとで、設計変更をしたところでございます。よろしくお願いいたします。",
+    "text_length": 541,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-004",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日置紳一",
+    "member_faction": "",
+    "text": "（日置紳一君） やってみないとわかんないってことは理解はするんですけど\nも、競争入札でやって、これ 10 万ぐらいの違いなんですよね。大概、落札してるの\nは。してやってしまったら、そういうのが出たから追加してもらえるんであれば、こ\nれはそれなりの今回だって 400 何十万も上乗せになるわけですよ。普通はそこを責任\n持つような話になるんじゃないですか。本来であれば、そのくらいしっかりと見積も\nり取った中での入札でないと、やってみなきゃわからないような入札で、これたまた\nま 3.5％だからいいですけども、1 割超えた場合は、この中では間に合いませんよね。",
+    "text_length": 278,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-005",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "のあれだけでは。この専決事項のことになってしまうんであれですけども、金額\nの多い、こういう契約金額があった場合はそれ 1 割と言っても、とんでもない金額に\nなるんで、やはりこの見積もり段階でもう少しきちっと把握してやってもらいたいな\nと。できればそう思うんですけども、いかがですか。",
+    "text_length": 141,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-006",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "杉山輝希公営施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "工事の中で本当に軽微な変更であったり、追加調整で\nあれば、業者といろいろとご相談をさせていただきながら、当初契約の中で納めてい\nただくいうことは当然、やってるところでございますが、今回の部分については、工\n事費として 400 万円を超えるような多額となっていることから、なかなか当初の契約\nの中では賄いきれないということでありますので、設計変更の方をさせていただいた\n- 3 -\n\nところであります。それから設計の段階で、そういった細かなところまで見込んでい\nくというのは当然なのかもしれませんけども、今回の橋梁工事のようなものであれば、\n例えば着手前に設計をするために、塗膜を全部剥いで見て、中を全部見てだとか、そ\nういった経費もかかってきますし、どちらが損得っていうふうには難しいところがあ\nるんですけども、ある程度見込みを立てた中で、やむを得ず追加的な費用が発生した\n場合には今回のような処置対策を組むしかないのかなというふうに原課の方では考\nえておりますので、ご理解をいただければと思います。",
+    "text_length": 450,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-007",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "森朋彦副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第 1 号令和 6 年度今金町一般会計補正予算（第 6 号）につ\nいて、提案理由を申し上げます。今回の補正予算につきましては、既定の歳入歳出予\n算の総額にそれぞれ 3 億 6,430 万 5,000 円を追加し、予算の総額を歳入歳出それぞれ\n67億7,641万4,000円にしようとするものであります。補正の概要について歳入より、\n申し上げます。1 ページお願いをいたします。15 款、同支出金において、3 億 6,430\n万 5,000 円の追加は、道補助金です。次に歳出は、2 ページです。6 款農林水産業費\nにおいて、3 億 6,430 万 5,000 円の追加は、農業費です。以上概要でございます。本\n補正予算に関わる事業の概要について、添付の説明資料に基づきまして、農林振興課\n長より説明を申し上げます。\nご審議いただき、議決賜りますよう、よろしくお願いいたします",
+    "text_length": 389,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-008",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 説明資料の 6 ページなんですけども。今回、この事業によって\nですね、多くの農作業機器が導入されるということで、スマート農業もこれで格段に\n進んでいくんだろうなというイメージ、期待するところでありますけども、ここの 6\nページにありますように、6 ページの上の上段のですね、4 番目で、RTK 基地局のこと\nが書いてありまして、町内の耕作地でもですね、不干渉地帯といいますか、電波が届\nかないっていうところもあってこれの整備も今後これ必要になってくるんだろうな\n- 4 -\n\nと思いますが現段階のその考え方として、どのように進めていこうかというふうに考\nえているかちょっとお聞かせいただければと思います。",
+    "text_length": 310,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-009",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "川平秀明農林振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "RTK 基地局の不干渉地帯というか電波の届かないとこ\nろのことを言われてると思うんですけれども、これについて当初から言われていたの\nは確かに存じてるんですけども、具体的にまだ調査したことはございません。ただ、\nこれについては今後どうするかということで例えば中継のアンテナ等を立てるとい\nうこともできるんですけれども、かなりの高額な費用負担になります。ですのでこの\n辺は今後どうしていくかということは協議していかなきゃいけないなと思っており\nますが、今のところこういう形でやろうというものは何も進んでございません。",
+    "text_length": 256,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-010",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） わかりました。このようにですね、自動操舵とか自動コンバイ\nンですか、全自動コンバインとかトラクターみたいなものがこれ、今後またさらに必\n要性が増してきて省力化のため等において、効率化等のためにおいて、必要になって\nくると思いますのでその辺の議論もですね、ぜひ活発にしていただいて、道なり国な\nりっていうところも含め、要請していっていただきたいと思いますがその辺はいかが\nでしょうか。",
+    "text_length": 199,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-011",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "川平秀明農林振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これ RTK 基地局自体が町の設備ではないので、今持っ\nてる JA の方の考え方がやはり重要になってくると思いますので、その辺はいろいろ\n考えながらやっていきたいなと思っております。ただほとんどのところが電波が通じ\nると、山間ですとか、一部なので、そこに果たして高額に、何か新しいことできるか\nどうかというのはやはりちょっと費用負担だとかいろんなことが出てくると思いま\nすので、今後その辺は前も言っております農業振興プロジェクトですとか、我々関係\n機関の集まりもありますので、その辺の中でいろいろ協議をしていきたいと思ってお\nります。",
+    "text_length": 267,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-012",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "村上忠弘",
+    "member_faction": "",
+    "text": "（村上忠弘君） ちょっと、4 ページのロークロップタイヤとそれから、色彩選\n別機のチャンネル数について、お知らせください。",
+    "text_length": 61,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-013",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "川平秀明農林振興課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "色彩選別機のチャンネルは240チャンネルであります。\nそれからロークロップタイヤにつきましてはノーマルタイヤの若干細いタイヤとい\nう認識しかないんですけども、もっと詳しく、わかったほうがよろしいでしょうか。\n幅ですとか、であればちょっとお時間いただければ、幅がどうだとかそういうことが\nわかりますけど。通常のタイヤがノーマルタイヤで、防除ですとか使うのに、どうし\nても細いタイヤが必要だということですので、通常よりも若干細いタイヤのものだと\nいうことであります。\n- 5 -",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-014",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） すいません。さきほどの発言でちょっと誤解がありまして、私\nの勉強不足で大変申し訳ありません。RTK の電波はほぼ届いていると、届いてないと\nころもあるようですが、すべてほぼ届いているということで、携帯の電波の方ってい\nうことでした。大変申し訳ありませんでした。訂正させていただきます。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-015",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "森朋彦副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第 2 号工事請負契約の締結について、提案理由を申し上げ\nます。令和 6 年 10 月 21 日に指名競争入札した今金中学校外構工事について、議会の\n議決に付すべき契約及び財産の取得、または処分に関する条例第 2 条の規定により、\n議会の議決を求めるものであります。\n議案につきましては、総務財政課長が朗読説明をいたします。\nご審議いただき、議決賜りますよう、よろしくお願いをいたします。",
+    "text_length": 196,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-016",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 2 ページ目なんですけども、工期に関してですけども、来年の\n8 月 29 日までということなんですけど、中学校の運動会は確か 5 月頃にあったと思う\nんですけども、その時にはグランドは使用できるような状態に考えておられるのかそ\nれとも別の場所をお借りしてやるのかちょっとその辺教えていただけますか。\n- 6 -",
+    "text_length": 163,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242005-1-017",
+    "municipality": "imakane",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "澁澤篤憲議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "工期の方は若干当初より遅れて始まるように\nなるんですが、運動会体育祭の使用に関しては、当初の予定通り今金中学校の場所で\n行うことと確認しております。よろしくお願いいたします。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-034"
+      ]
+    }
+  }
+]

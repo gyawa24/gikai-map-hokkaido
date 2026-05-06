@@ -1,0 +1,25 @@
+[
+  {
+    "id": "toyotomi-20242002-1-001",
+    "municipality": "toyotomi",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第2回臨時議会（令和6年2月7日開催） （PDF:127KB）",
+    "date": "2024-02-07",
+    "speaker": "河田誠一町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "提出議案について申し上げます。\n本日招集の、令和６年第２回町議会臨時会にご提案申し上げております議案につきましては、令和５年度豊富町一般会計\n補正予算案の１件をご提案申し上げております。\nなお、内容につきましては、担当課長等よりご説明申し上げますので、よろしくご審議を賜りますようお願い申し上げま\n\nす。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/toyotomi/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  }
+]

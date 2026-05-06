@@ -1,0 +1,25 @@
+[
+  {
+    "id": "toyotomi-20242003-1-001",
+    "municipality": "toyotomi",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第3回臨時議会（令和6年5月15日開催） （PDF:160KB）",
+    "date": "2024-05-15",
+    "speaker": "河田誠一町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "提出議案について申し上げます。\n本日招集の、令和６年第３回町議会臨時会に提案申し上げております議案につきましては、豊富町家庭的保育事業等の設\n備及び運営に関する基準を定める条例の一部を改正する条例改正議案が１件、令和６年度豊富町一般会計並びに特別会計及\nび公営企業会計補正予算案が３件、専決処分した事件についての承認議案が１件の、合わせて５件を提案申し上げておりま\nす。\nなお、内容につきましては、担当課長より説明を申し上げますので、よろしくご審議を賜りますようお願いを申し上げま\nす。",
+    "text_length": 243,
+    "source": {
+      "minutes_file": "data/toyotomi/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  }
+]

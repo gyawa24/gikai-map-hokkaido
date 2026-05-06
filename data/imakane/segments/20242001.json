@@ -1,0 +1,324 @@
+[
+  {
+    "id": "imakane-20242001-1-001",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "森朋彦副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。報告第１号から報告第３号までいずれ\nも専決処分の報告でありますが、ご配慮を賜りましたので、一括で説明を申し上げま\nす。令和５年７月開催の第５回今金町議会臨時会において議決された今金中学校解体\n工事に係わる請負契約につきまして、当該議決に係る契約金額の１割を超えない範囲\nでの請負契約の変更を専決処分した事から、地方自治法第１８０条第２項の規定に基\nづき、議会へ報告するものです。報告第１号は今金中学校解体工事について、報告第\n- 3 -\n\n２号は今金中学校解体工事（その２）について、報告第３号は今金中学校解体工事（そ\nの３）について、それぞれ報告するものです。内容については総務財政課長が朗読説\n明いたしますので、よろしくお願いいたします。",
+    "text_length": 331,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-002",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日置紳一",
+    "member_faction": "",
+    "text": "（日置紳一君） この増加になる根拠といいますか、そこの中身を教えてもら\nえます。増加になった部分ありますね。燃料代が上がっただとかは分かりませんが、\nそこをまず。",
+    "text_length": 81,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-003",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "由浅和正公営施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "設計変更の主なものは、鉄くず、アルミ、ステンレス\n等の廃材の売却費の減という事で、本来当初設計におきましては、鉄くずを売却した\nお金が請負業者の収益になるものですから、その分を分離した事による増額、入って\n来るお金が無くなるものですから、その分を増額したという事であります。それが主\nな原因でございます。",
+    "text_length": 152,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-004",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "日置紳一",
+    "member_faction": "",
+    "text": "（日置紳一君） わかりました。その３なんですけれども、それからいくと１\n番工事面積が小さい所で、解体面積が少なく８．５パーセントの増となっています。\nそういう鉄くず等がここにはあまりなかったという事に、あったから減ったのか。増\nえたのか。この差はどうなっています。面積的には一番小さいのに増額が多い。ここ\nだけ教えて下さい。",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-005",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "由浅和正公営施設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "その３の工事につきましては体育館の解体工事でござ\nいまして、体育館には鉄骨が多かったためにですね、その分売却益が多く見らさって\nいたので、比率的にいきますと８．５とその分高くなっているという事でございます。",
+    "text_length": 103,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-006",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "森朋彦副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号、今金町町有地等有効活用譲渡条例の一部を改正\nする条例制定について、提案理由を申し上げます。町が所有する町有地の普通財産に\nおいて、譲渡を目的として本条例に掲載していた町有地の一部が土地表示の変更及び\n譲渡を完了したことから、本条例の一部を改正しようとするものです。説明について\n- 4 -\n\n総務財政課長補佐が行いますので、ご審議の上、議決賜りますようお願い申し上げま\nす。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-007",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "森朋彦副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号、令和５年度今金町一般会計補正予算（第５号）\nについて提案理由を説明いたします。今回の補正は規定の予算に歳入歳出それぞれ５，\n５２９万８千円を追加し、補正後の額を６６億８，５９２万９千円にしようとするも\nのです。補正の主なものについて歳入より申し上げます。１ページをお願いいたしま\nす。１４款、国庫支出金において、５，０７９万円の追加は国庫補助金です。１８款、\n繰入金において、４５０万８千円の追加は、基金繰入金です。次に歳出です。２ペー\nジです。２款、総務費において、５，５２９万８千円の追加は、総務管理費です。説\n明は以上です。それでは本予算に係る事業の概要について、添付の資料のとおり各所\n管にて説明をいたします。能登半島地震珠洲市災害派遣については総務財政課長補佐\nより、価格高騰支援対策商品券第２段発行事業に係る予算についは、まちづくり推進",
+    "text_length": 380,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-008",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補佐より、物価高騰対策支援給付金給付事業について、均等割のみ課税対象世帯\nへの事業については税務住民課長補佐より、子ども加算に係る事業については、保健\n福祉課長補佐より、それぞれ順次説明いたします。ご審議頂き、議決賜りますようお\n願い申し上げます。",
+    "text_length": 124,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-009",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋康裕君） まず能登半島地震における補正の話であります。この前も色々\n聞きましたけれども旅費等々が掛るという事であります。それと消耗品でございます\nけれども、これは３月くらいまでみた旅費だとは思うのですけれども、消耗品として、\n現地が相当寒いという事があったりだとか、防寒に関しても行った方に関しての健康\n管理だとかを考えるとこの２０万円といった消耗品の予算で賄えるのかという心配\nがありますけれども、その辺はどうでしょうか。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-010",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "山田薫総務財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回お願いしている２０万円の予算の内訳であります\nけれども、ほとんどが先ほどご質問にありました防寒や食糧や燃料は江差町が一括で\n購入をして準備をしておりますので、そちらの清算行為が終われば、各町に７等分し\nてくるという事でご理解を頂いて、その他個人が必要なものが今回２０万円です。例\nえば、マスクですとか、ドライシャンプー、歯磨き、ウエットティッシュ、貼るカイ\nロ、貼らないカイロですとか、個人で使うものは各町で用意して下さいという意味合\nいでの今回２０万円の予算計上ですので、よろしくお願いいたします。後、追加で先\nほど江差町から連絡がありまして、この前の常任委員会終了後のご説明の後に、派遣\n職員は車中泊でとのご説明をいたしましたが、いま行っている第５班は避難所の一室\nを間借りいたしまして、簡易ベッド、段ボールベッドで寝泊まりをしているという事\nでの変更があったとの連絡がありましたので、車中泊よりは手足を伸ばして寝て、健\n康管理が出来るのかなと思っておりますので、出来るだけ健康管理にきを付けながら\n災害派遣支援のお手伝いが出来ればと思っていますので、よろしくお願いいたします。",
+    "text_length": 493,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-011",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 質問を変えます。説明資料３の価格高騰支援商品券第２段の概\n要についてお聞きをしたいと思います。これは商品券として町内の皆様に配るという\n事なんですけれども、すでに非課税世帯に７万円という事と、均等割世帯のみに１０\n万円と今回あがってきておりますが、この商品券に関しては皆様町内一律で配るとい\nう事ですが、その意図というか、すでに７万円、１０万円貰っている方も貰えるとい\nう事ですが、その一律という意図を教えて頂けますか。",
+    "text_length": 218,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-012",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "鈴木正之まちづくり推進課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回この価格高騰応援商品券事業第２段の事業\n概要を設計するにあたっては、庁内内部でも色々と打ち合わせをさせて頂きました。\nその中で物価高騰の臨時交付金が国から今金町にもくる予定だという事で、色々その\n支給の要件や制限のあるものの他に、町として経済対策としてある程度の自由な裁量\nで使える予算枠がくるという事で財政からも聞いておりまして、その分に見合った事\n業という事で、どんな事業が出来るのかと色々内部で検討をした結果、やはり町民の\n方に等しく平等に使って頂けるような商品券、それから現金等ではなくて、商品券と\nいう事にすれば、町内、商店、内部での経済還流が出来るのではないかという事で、\n- 6 -\n\n今回この商品券第２段の発行という経過になったわけであります。",
+    "text_length": 332,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-013",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "苅屋泰裕",
+    "member_faction": "",
+    "text": "（苅屋泰裕君） 課税世帯の方もこの物価高騰に関しては大変な思いをされてい\nるというふうに思います。それでこの事業の性質上、ある程度配り方が決められてい\nるというのであれば、それは致し方ないとは思うのですけれども、非課税世帯や均等\n割課税世帯も大変な思いをしているという事で、国のほうからこのように来ているの\nでありますが、プラスアルファで頂けるという事もあったりですね、道の事業でも均\n等割世帯に１万２千円が出るという事業もあったりですね、そういう事で、少し課税\n世帯の方にも手厚く出来ないものかと。今回のこれでそういうふうにやるというのは\n中々ならないのかもしれませんが、また今後こういうような事があった場合に、バラ\nンス的にそういう所も考えて頂きたいと思うのですがいかがでしょうか。",
+    "text_length": 343,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "imakane-20242001-1-014",
+    "municipality": "imakane",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "schedule_id": 1,
+    "schedule_name": "会議録第1号",
+    "date": null,
+    "speaker": "森朋彦副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ありがとうございます。今、おっしゃって頂いたように、非\n課税世帯への給付金については、これは国が行う事業という事で、それが各市町村の\n予算に配分をされまして、それに基づいて行うという事業であります。その他に今お\nっしゃって頂きましたが、北海道が行う事業もありました。今金町が独自で行うとい\nう事業に関しましては、今までも様々な議論がありました。広く町民にという事もあ\nりますでしょうし、それから特に影響を受けているという分野があるとすれば、そこ\nに手厚くという事もあるのかもしれませんが、今金町のおかれている状況を見た時に\nは、果たしてどこかに色を付けて良いのかという議論も随分ありました。いずれにし\nても今の物価高騰は町民皆様が等しく受けている影響でありますので、そこに町とし\nては等しく応援をしていきたいという事で、昨年の８月に行いました商品券事業につ\nいても、あの時は２万円だったと思いますけれども、そういうような事業展開をさせ\nて頂いているところであります。事業主体がそれぞれ異なりますので、その事を加味\nしながらというのは中々自治体としては難しい部分があるのかなと思っております\nけれども、いま頂きました意見というのも決して否定をするものではありませんので、\nこの後の社会情勢がどのように動いていくのかという事も考えながら引き続き必要\nな手当があるとすれば、その事を検討して参りたいと思いますけれども、今回のこの\n事業は等しく皆様に支援をしたいという事の表れでありますので、ご理解をお願いし\nたいと思います。",
+    "text_length": 659,
+    "source": {
+      "minutes_file": "data/imakane/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-027"
+      ]
+    }
+  }
+]

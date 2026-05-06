@@ -53,6 +53,29 @@
     "schedule_id": 1,
     "schedule_name": "議事録本文 [PDFファイル／206KB]",
     "date": null,
+    "speaker": "高田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高田一弥",
+    "member_faction": "",
+    "text": "確認したいんですが、地上デジタル無線共聴施設の管理運営事業ということで、見ると相生・\n－４－\n共和が強風による断線に対する応急処置箇所のケーブル交換ということであります。途中どこか\nで、修理したんでしょうけれども、それに併せて新しく更新するという捉え方でしょうか。",
+    "text_length": 132,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242001-1-004",
+    "municipality": "assabu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／206KB]",
+    "date": null,
     "speaker": "副町長",
     "speaker_role": "答弁",
     "is_procedural": false,
@@ -69,7 +92,30 @@
     }
   },
   {
-    "id": "assabu-20242001-1-004",
+    "id": "assabu-20242001-1-005",
+    "municipality": "assabu",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／206KB]",
+    "date": null,
+    "speaker": "浜塚議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "浜塚久好",
+    "member_faction": "",
+    "text": "小中学校エアコンの設置の件でございます。小中学校４校あるわけでございますけども、エア\nコンの品不足、あるいは時間がかかるという部分が考えられます。エアコンの設置スケジュー\nル、この辺をお知らせ願いたいと思います。",
+    "text_length": 106,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242001-1-006",
     "municipality": "assabu",
     "council_id": 20242001,
     "council_name": "令和6年第1回臨時会",
@@ -92,7 +138,7 @@
     }
   },
   {
-    "id": "assabu-20242001-1-005",
+    "id": "assabu-20242001-1-007",
     "municipality": "assabu",
     "council_id": 20242001,
     "council_name": "令和6年第1回臨時会",

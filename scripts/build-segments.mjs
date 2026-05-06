@@ -81,6 +81,9 @@ function extractNameInfo(speaker) {
     if (m) s = m[1];
   }
 
+  // Some minutes put the member role before the surname (e.g. "議員東出").
+  s = s.replace(/^議員/, "");
+
   // Strip trailing role token (only the role keyword, not preceding committee name)
   s = s.replace(/(?:副|臨時|仮)?(?:議員|議長|委員長|委員)$/, "");
 
@@ -110,8 +113,24 @@ function escapeRegex(s) {
 
 function stripSpeakerPrefix(text, speaker) {
   if (!text || !speaker) return text;
-  const re = new RegExp(`^[◆◎○△]?${escapeRegex(speaker)}[\\s　]+`);
+  const re = new RegExp(`^[◆◎○△◇]?${escapeRegex(speaker)}[\\s　]+`);
   return text.replace(re, "");
+}
+
+function stripMemberNamePrefix(text, memberName) {
+  if (!text || !memberName) return text;
+  const parts = memberName.trim().split(/[\s　]+/).filter(Boolean);
+  const compactName = memberName.replace(/[\s　]/g, "");
+  const aliases = [compactName];
+  if (parts.length > 1) {
+    aliases.push(parts.join("[\\s　]*"));
+    const given = parts.slice(1).join("");
+    if (given.length >= 2) aliases.push(given);
+  }
+  const pattern = aliases.filter(Boolean).join("|");
+  if (!pattern) return text;
+  const re = new RegExp(`^[\\s　]*(?:${pattern})[\\s　、，:：]*`);
+  return text.replace(re, "").trimStart();
 }
 
 function makeExcerpt(text, max = 100) {
@@ -131,7 +150,22 @@ function normalizeSpeakerLabel(label) {
     .replace(/^[-－―]+/, "")
     .replace(/（登壇）/g, "")
     .replace(/\(登壇\)/g, "")
-    .replace(/^[●○◎◆△〇]\s*/, "")
+    .replace(/^[●○◎◆△◇〇]\s*/, "")
+    .replace(/^([0-9０-９]+)\s+番/u, "$1番")
+    .replace(/議\s+長/g, "議長")
+    .replace(/副\s+議\s+長/g, "副議長")
+    .replace(/委\s+員\s+長/g, "委員長")
+    .replace(/副\s+委\s+員\s+長/g, "副委員長")
+    .replace(/町\s+長/g, "町長")
+    .replace(/副\s+町\s+長/g, "副町長")
+    .replace(/村\s+長/g, "村長")
+    .replace(/副\s+村\s+長/g, "副村長")
+    .replace(/市\s+長/g, "市長")
+    .replace(/副\s+市\s+長/g, "副市長")
+    .replace(/教\s+育\s+長/g, "教育長")
+    .replace(/課\s+長/g, "課長")
+    .replace(/部\s+長/g, "部長")
+    .replace(/局\s+長/g, "局長")
     .trim();
 
   if (!compact) return "";
@@ -147,7 +181,7 @@ function normalizeSpeakerLabel(label) {
   if (m) return `${m[1].replace(/\s+/g, "")}議員`;
 
   m = compact.match(/^([0-9０-９]+)番[（(]([^()（）]+?)(?:議員)?[）)]$/);
-  if (m) return `${m[2].replace(/\s+/g, "")}議員`;
+  if (m) return `${m[2].replace(/\s+/g, "").replace(/(?:議員|君|氏|殿)$/, "")}議員`;
 
   m = compact.match(/^([^（()]+)[（(]([^()（）]+)[）)]$/);
   if (m) {
@@ -180,7 +214,23 @@ function inferMinuteTypeFromSpeaker(speaker) {
 }
 
 function trimToProceedings(text) {
-  const source = String(text ?? "").replace(/\r\n/g, "\n");
+  const source = String(text ?? "")
+    .replace(/\r\n/g, "\n")
+    .replace(/^[OＯ0]\s*([〇○])/gmu, "$1")
+    .replace(/^([〇○])?\s*議\s+長/gmu, "$1議長")
+    .replace(/^([〇○])?\s*副\s+議\s+長/gmu, "$1副議長")
+    .replace(/^([〇○])?\s*委\s+員\s+長/gmu, "$1委員長")
+    .replace(/^([〇○])?\s*副\s+委\s+員\s+長/gmu, "$1副委員長")
+    .replace(/^([〇○])?\s*町\s+長/gmu, "$1町長")
+    .replace(/^([〇○])?\s*副\s+町\s+長/gmu, "$1副町長")
+    .replace(/^([〇○])?\s*村\s+長/gmu, "$1村長")
+    .replace(/^([〇○])?\s*副\s+村\s+長/gmu, "$1副村長")
+    .replace(/^([〇○])?\s*市\s+長/gmu, "$1市長")
+    .replace(/^([〇○])?\s*副\s+市\s+長/gmu, "$1副市長")
+    .replace(/^([〇○])?\s*教\s+育\s+長/gmu, "$1教育長")
+    .replace(/^([〇○])?\s*課\s+長/gmu, "$1課長")
+    .replace(/^([〇○])?\s*部\s+長/gmu, "$1部長")
+    .replace(/^([〇○])?\s*局\s+長/gmu, "$1局長");
   const strongMarker = /\n(?:[（(]?\d{1,2}時\d{2}分[）)]|開会[ 　](?:午前|午後)\d|●\s*開会宣言|◎\s*開会(?:の宣告|宣言)?|開会・挨拶|開会宣告・開議宣告)/gu;
   const strongIndexes = [...source.matchAll(strongMarker)]
     .map((m) => m.index ?? -1)
@@ -191,8 +241,9 @@ function trimToProceedings(text) {
 
   const weakMarkers = [
     /\n議\s*事\s*の\s*経\s*過/u,
-    /\n[〇○◎●]\s*議\s*長/u,
+    /\n[〇○◎●◇]\s*議\s*長/u,
     /\n◎\s*議\s*長/u,
+    /\n[^\n]{0,80}を\s*開\s*会\s*します/u,
   ];
   const indexes = weakMarkers
     .map((re) => source.search(re))
@@ -203,13 +254,16 @@ function trimToProceedings(text) {
 
 function extractSpeakerHeader(chunk) {
   const patterns = [
-    /^[●○◎〇]\s*([0-9０-９]+番)\s*/u,
-    /^[●○◎〇]\s*((?:[0-9０-９]+番\s*)?[^()\n]{0,20}[（(][^()\n]{1,30}[）)])\s*/u,
-    /^[●○◎〇]\s*([^\s\n]{1,40}(?:議員|議長|委員長|事務局長|市長|町長|村長|知事|教育長|部長|課長))\s*/u,
-    /^(?:[0-9０-９]+、\s*)?([0-9０-９]+番[（(][^()\n]{1,30}[）)])\s*/u,
+    /^「([^」\n]{1,40})」(?:[（(][^）)\n]{1,30}[）)])?\s*/u,
+    /^[●○◎◇〇]\s*([0-9０-９]+\s*番)\s*/u,
+    /^([0-9０-９]+\s*番)\s*(?:\n|$)/u,
+    /^[●○◎◇〇]\s*((?:[0-9０-９]+番\s*)?[^()\n]{0,20}[（(][^()\n]{1,30}[）)])\s*/u,
+    /^[●○◎◇〇]\s*([^\s\n]{1,40}(?:議員|議長|委員長|事務局長|市長|町長|村長|知事|教育長|部長|課長))\s*/u,
+    /^(?:[0-9０-９]+、\s*)?([0-9０-９]+\s*番[（(][^()\n]{1,30}[）)])\s*/u,
     /^(?:[0-9０-９]+、\s*)?((?:議長|副議長|委員長|事務局長|市長|副市長|町長|副町長|村長|副村長|知事|教育長|事務局長|部長|課長)(?:[（(][^()\n]{1,30}[）)])?)\s*/u,
     /^(?:[0-9０-９]+、\s*)?(議員[（(][^()\n]{1,30}[）)])\s*/u,
-    /^([^\s\n]{1,20}(?:君|議員))\s*(?:\n|$)/u,
+    /^([0-9０-９]+\s*番\s*[^\n]{1,30}(?:君|議員))[。．.]?\s*(?:\n|$)/u,
+    /^([^\s\n]{1,20}(?:君|議員))[。．.]?\s*(?:\n|$)/u,
   ];
 
   for (const re of patterns) {
@@ -226,7 +280,7 @@ function extractSpeakerHeader(chunk) {
 
 function parseInlineTranscript(text, minuteIdBase = "raw") {
   const normalized = trimToProceedings(text);
-  const markerRe = /(?:^|\n)(?:[●○◎〇]\s*(?:[0-9０-９]+番|[^\n]{0,60}?(?:君|議員|議長|委員長|事務局長|市長|町長|村長|知事|教育長|部長|課長))|(?:[0-9０-９]+、\s*)?(?:[0-9０-９]+番[（(][^()\n]{1,30}[）)]|[0-9０-９]+番|議員[（(][^()\n]{1,30}[）)]|(?:議長|副議長|委員長|事務局長|市長|副市長|町長|副町長|村長|副村長|知事|教育長|部長|課長)(?:[（(][^()\n]{1,30}[）)])?)|[^\s\n]{1,20}君(?:\n|$))/gm;
+  const markerRe = /(?:^|\n)(?:「[^」\n]{1,40}(?:君|議員|議長|副議長|委員長|副委員長|事務局長|市長|副市長|町長|副町長|村長|副村長|知事|副知事|教育長|部長|課長)」(?:[（(][^）)\n]{1,30}[）)])?|[●○◎◇〇]\s*(?:[0-9０-９]+\s*番|[^\n]{0,60}?(?:君|議員|議長|委員長|事務局長|市長|町長|村長|知事|教育長|部長|課長))|(?:[0-9０-９]+、\s*)?(?:[0-9０-９]+\s*番\s*[^\n]{1,30}(?:君|議員)|[0-9０-９]+\s*番[（(][^()\n]{1,30}[）)]|[0-9０-９]+\s*番|議員[（(][^()\n]{1,30}[）)]|(?:議長|副議長|委員長|事務局長|市長|副市長|町長|副町長|村長|副村長|知事|教育長|部長|課長)(?:[（(][^()\n]{1,30}[）)])?)|[^\s\n]{1,20}君(?:\n|$))/gm;
   const matches = [...normalized.matchAll(markerRe)];
   if (matches.length === 0) return [];
 
@@ -305,7 +359,7 @@ function parseTableTranscript(text, minuteIdBase = "raw") {
     const line = rawLine.trimEnd();
     if (!line.trim()) continue;
 
-    const tableMatch = line.match(/^(?:(?:\d{1,2}[:：]\d{2})|(?:開会|閉会)|(?:日程\d+)|(?:〃))?\s*([^\s]{1,12}(?:\s*[^\s]{1,12}){0,2})\s+(.+)$/u);
+    const tableMatch = line.match(/^(?:(?:\d{1,2}[:：]\d{2})|(?:開会|閉会)|(?:日程\d+)|(?:〃))?\s*([^\s]{1,12}(?:\s*[^\s]{1,12}){0,4})\s+(.+)$/u);
     if (tableMatch) {
       const speakerToken = normalizeTableSpeaker(tableMatch[1]);
       if (isSpeakerish(speakerToken)) {
@@ -384,8 +438,8 @@ function parseQuestionNotice(text, memberIndex, minuteIdBase = "raw") {
   return entries;
 }
 
-async function loadMembers(slug) {
-  const membersPath = path.join(PROJECT_ROOT, "data", slug, "members.json");
+async function loadMembers(slug, membersPath = null) {
+  membersPath ??= path.join(PROJECT_ROOT, "data", slug, "members.json");
   try {
     const raw = await fs.readFile(membersPath, "utf8");
     const data = JSON.parse(raw);
@@ -478,11 +532,19 @@ function matchMember(speaker, memberIndex) {
   return null;
 }
 
-async function buildSegmentsForMunicipality(slug) {
-  const minutesDir = path.join(PROJECT_ROOT, "data", slug, "minutes");
-  const segmentsDir = path.join(PROJECT_ROOT, "data", slug, "segments");
+function resolvePath(fp) {
+  if (!fp) return null;
+  return path.isAbsolute(fp) ? fp : path.join(PROJECT_ROOT, fp);
+}
 
-  const members = await loadMembers(slug);
+export async function buildSegmentsForMunicipality(slug, options = {}) {
+  const minutesDir =
+    resolvePath(options.minutesDir) ?? path.join(PROJECT_ROOT, "data", slug, "minutes");
+  const segmentsDir =
+    resolvePath(options.segmentsDir) ?? path.join(PROJECT_ROOT, "data", slug, "segments");
+  const membersPath = resolvePath(options.membersPath);
+
+  const members = await loadMembers(slug, membersPath);
   const memberIndex = buildMemberIndex(members);
 
   const files = (await fs.readdir(minutesDir))
@@ -529,8 +591,8 @@ async function buildSegmentsForMunicipality(slug) {
         if (!group) return;
         const ordinal = segments.length + 1;
         const id = `${slug}-${councilId}-${scheduleId}-${String(ordinal).padStart(3, "0")}`;
-        const text = group.texts.join("\n");
         const member = matchMember(group.speaker, memberIndex);
+        const text = stripMemberNamePrefix(group.texts.join("\n"), member?.name);
         if (member) matchedMemberCount += 1;
         segments.push({
           id,
@@ -637,7 +699,9 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

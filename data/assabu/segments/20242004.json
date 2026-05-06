@@ -7,6 +7,29 @@
     "schedule_id": 1,
     "schedule_name": "議事録本文 [PDFファイル／217KB]",
     "date": null,
+    "speaker": "副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日１２月２４日、議会運営委員会を開催いたしました。本日をもって招集されました令和６\n年第４回厚沢部町議会臨時会の運営につきましては、議事日程によることとし、会期について\nは、本日１日間とすることに決定しましたので、報告いたします。\nなお、提出案件の審議については、質問者、答弁者とも簡潔明瞭な質疑、応答を心がけ、円滑\nな議会運営を行いますよう御協力をお願いし、委員会報告といたします。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242004-1-002",
+    "municipality": "assabu",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／217KB]",
+    "date": null,
     "speaker": "町長",
     "speaker_role": "答弁",
     "is_procedural": false,
@@ -19,6 +42,29 @@
       "schedule_id": 1,
       "minute_ids": [
         "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242004-1-003",
+    "municipality": "assabu",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／217KB]",
+    "date": null,
+    "speaker": "髙田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ページよりも説明資料の方の確認をした方が早いかと思うんですが、まず１つの確認が、この\n給付についてはいつ行われるのかということが１つ。それから、非課税世帯の後の転入により課\n税状況不明世帯とあるのですが、これはいつになったら不明が判明するのかということをご説明\nいただきたいと思います。",
+    "text_length": 143,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-019"
       ]
     }
   }

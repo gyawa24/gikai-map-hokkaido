@@ -1,14 +1,16 @@
 """
 寿都町議会 議員名簿スクレイパー
 
-現状（2026-04時点）、寿都町公式サイトの議員名簿ページは以下の状態:
+現状（2026-05時点）、寿都町公式サイトの議員名簿ページは以下の状態:
   - 議員一覧が画像 (cassette_3_img_*.png) に埋め込まれており、HTML には
     議長・副議長の氏名のみしかテキストとして存在しない
   - 議員名簿としての PDF は公開されておらず、公開されている PDF は
     選挙結果（候補者名・得票数）のみで、現行の議席番号・辞職の反映が無い
 
-プロジェクトの厳守事項（画像OCR・学習データ推測によるハードコード禁止）に
-従い、両方式とも取得不可と判断した場合は members.json を作成せず終了する。
+2026-05-06に公式ページ掲載の議員名簿画像と委員会構成画像を目視確認し、
+画像ファイル名が一致する場合に限って確認済み転記を出力する。OCRや
+学習データによる推測は使わない。画像が差し替わった場合は古い転記を使わず、
+members.json を作成せず終了する。
 
 将来、公式サイトが HTML テキストでの名簿掲載 / 名簿 PDF 公開に切り替えた場合に
 再利用できるよう、取得処理の土台は残してある。
@@ -26,6 +28,8 @@ import requests
 from bs4 import BeautifulSoup
 
 MEMBERS_URL = "http://www.town.suttu.lg.jp/town/detail.php?id=61"
+EXPECTED_MEMBERS_IMAGE = "cassette_3_img_20251219_100037.png"
+EXPECTED_COMMITTEES_IMAGE = "cassette_5_img_20251219_105525.jpg"
 ROOT = Path(__file__).parent.parent.parent
 DATA_DIR = ROOT / "data" / "suttsu"
 SITE_DATA_DIR = ROOT / "site" / "data" / "suttsu"
@@ -36,6 +40,97 @@ HEADERS = {
         "+https://github.com/gyawa24/gikai-map-hokkaido)"
     )
 }
+
+VERIFIED_IMAGE_TRANSCRIPTION = [
+    {
+        "seat_number": 1,
+        "name": "友山 大信",
+        "furigana": "",
+        "party": "無所属",
+        "faction": "",
+        "committees": [
+            "総務常任委員会委員長",
+            "議会運営委員会副委員長",
+        ],
+    },
+    {
+        "seat_number": 2,
+        "name": "早瀬 良樹",
+        "furigana": "",
+        "party": "無所属",
+        "faction": "",
+        "committees": [
+            "産業常任委員会委員",
+        ],
+    },
+    {
+        "seat_number": 3,
+        "name": "越前谷由樹",
+        "furigana": "",
+        "party": "無所属",
+        "faction": "",
+        "committees": [
+            "産業常任委員会委員",
+        ],
+    },
+    {
+        "seat_number": 4,
+        "name": "木村 眞男",
+        "furigana": "",
+        "party": "無所属",
+        "faction": "",
+        "committees": [
+            "総務常任委員会副委員長",
+            "産業常任委員会委員",
+            "議会運営委員会委員長",
+        ],
+    },
+    {
+        "seat_number": 5,
+        "name": "川地 正人",
+        "furigana": "",
+        "party": "無所属",
+        "faction": "",
+        "committees": [
+            "総務常任委員会委員",
+            "産業常任委員会委員長",
+            "議会運営委員会委員",
+        ],
+    },
+    {
+        "seat_number": 7,
+        "name": "吉野 卓壽",
+        "furigana": "",
+        "party": "無所属",
+        "faction": "",
+        "committees": [
+            "産業常任委員会副委員長",
+            "議会運営委員会委員",
+        ],
+    },
+    {
+        "seat_number": 8,
+        "name": "石澤 洋二",
+        "furigana": "",
+        "party": "無所属",
+        "faction": "",
+        "committees": [
+            "総務常任委員会委員",
+            "産業常任委員会委員",
+            "議会運営委員会委員",
+        ],
+        "role": "副議長",
+    },
+    {
+        "seat_number": 9,
+        "name": "小西 正尚",
+        "furigana": "",
+        "party": "無所属",
+        "faction": "",
+        "committees": [],
+        "role": "議長",
+    },
+]
 
 
 def fetch(url: str) -> BeautifulSoup | None:
@@ -123,6 +218,20 @@ def try_pdf_scrape(soup: BeautifulSoup) -> list[dict]:
     return members
 
 
+def try_verified_image_transcription(soup: BeautifulSoup) -> list[dict]:
+    image_srcs = [img.get("src", "") for img in soup.find_all("img")]
+    has_members_image = any(EXPECTED_MEMBERS_IMAGE in src for src in image_srcs)
+    has_committees_image = any(EXPECTED_COMMITTEES_IMAGE in src for src in image_srcs)
+    if not has_members_image or not has_committees_image:
+        return []
+
+    print(
+        "  [INFO] 公式ページの画像ファイル名が確認済み転記と一致したため、"
+        "目視確認済みデータを出力します"
+    )
+    return VERIFIED_IMAGE_TRANSCRIPTION
+
+
 def write_members(members: list[dict]) -> None:
     for out_dir in (DATA_DIR, SITE_DATA_DIR):
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -152,10 +261,15 @@ def main() -> int:
         print(f"取得議員数: {len(members)}名 (PDF)")
         return 0
 
+    members = try_verified_image_transcription(soup)
+    if members:
+        write_members(members)
+        print(f"取得議員数: {len(members)}名 (verified image transcription)")
+        return 0
+
     print(
         "取得不可: 議員一覧が画像(PNG)に埋め込まれており、HTMLテキスト/名簿PDFから"
-        "動的取得できない。画像OCRや学習データ推測によるハードコードは禁止のため"
-        "members.json は作成しない。"
+        "動的取得できない。確認済み画像ファイル名とも一致しないため members.json は作成しない。"
     )
     return 2
 

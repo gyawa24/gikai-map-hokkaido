@@ -1,0 +1,186 @@
+[
+  {
+    "id": "rausu-20242003-1-001",
+    "municipality": "rausu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1号",
+    "date": null,
+    "speaker": "湊屋稔町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議員の皆様、お疲れ様でございます。\n第３回の臨時議会をお願いしたところ、議員多数御出席を賜りましたことをお礼申し\n上げます。\n本日は議案１件でございます。議案の第３６号工事請負契約の締結についてでござい\nます。\n担当課長より説明をさせますので、ご審議下さいますよう、どうぞよろしくお願いい\nたします。",
+    "text_length": 150,
+    "source": {
+      "minutes_file": "data/rausu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "rausu-20242003-1-002",
+    "municipality": "rausu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1号",
+    "date": null,
+    "speaker": "佐野健二建設水道課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案の１ページをお開き願います。\n議案第３６号工事請負契約の締結について。\n次の工事請負契約を締結したいので、地方自治法第９６条第１項第５号並びに議会の議\n決に付すべき契約及び財産の取得又は処分に関する条例第２条の規定に基づき、議会の議\n決を求めるものでございます。\n１、契約の目的、羅臼町町営住宅緑町団地改修工事（１０号棟）。\n２、契約の方法、一般競争入札。\n３、契約金額、８，９２６万５，０００円。\n４、契約の相手方、住所、北海道目梨郡羅臼町栄町１１番地６。氏名、有限会社 酒井\n建設、代表取締役 酒井孝行でございます。\nなお、工事概要をお手元に配布の参考資料にて御説明させていただきますので、御配慮\n賜りますようよろしくお願い申し上げます。\nそれでは、参考資料１ページをお開き願います。\n資料１、羅臼町町営住宅緑町団地改修工事１０号棟の工事概要、位置図及び配置図で\nあります。\n羅臼町町営住宅等長寿命化計画に基づき、緑町団地の既存住棟９棟６０戸の長寿命化\n及び居住性向上を目的に改善事業を推進しているところでございます。\n本年度の工事につきましては、町営住宅緑町団地の１０号棟の改修工事で、工事内容\nといたしましては、既存住棟１棟８戸の屋根の張替え、断熱サッシへの取り換えと外断\n熱改修、合併処理浄化槽を設置し水洗化とするものでございます。\n予定工期といたしましては、令和６年１２月２５日までとなっております。\n以上でございます。どうぞよろしくお願いいたします。",
+    "text_length": 634,
+    "source": {
+      "minutes_file": "data/rausu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "rausu-20242003-1-003",
+    "municipality": "rausu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1号",
+    "date": null,
+    "speaker": "７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "髙島　讓二",
+    "member_faction": "",
+    "text": "（髙島讓二君） この建物の築年数を教えていただけますか。\nそれと、９棟あると言っているのですけれども、これは逐次行っていくのかどうなの\nか、その計画等を教えていただけますか。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/rausu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "rausu-20242003-1-004",
+    "municipality": "rausu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1号",
+    "date": null,
+    "speaker": "佐野健二建設水道課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "昭和６１年に建設の建物となってございまして、今後の\n計画につきましては、緑町の既存住棟が１４号までございます。１０号棟以降、１年ずつ\n改修を行っていく計画になっております。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/rausu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "rausu-20242003-1-005",
+    "municipality": "rausu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1号",
+    "date": null,
+    "speaker": "７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "髙島　讓二",
+    "member_faction": "",
+    "text": "（髙島讓二君） わかりました。\nこの外断熱の改修ということなのですけれども、方法を簡単に説明していただけます\nか。",
+    "text_length": 57,
+    "source": {
+      "minutes_file": "data/rausu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "rausu-20242003-1-006",
+    "municipality": "rausu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1号",
+    "date": null,
+    "speaker": "佐野健二建設水道課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "湿式外断熱工法ということで、今の外壁にプラスして\nビーズ法ポリエチレンフォームという素材を７５ミリ貼り付けるような形で行うものと\nなってございます。",
+    "text_length": 74,
+    "source": {
+      "minutes_file": "data/rausu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "rausu-20242003-1-007",
+    "municipality": "rausu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1号",
+    "date": null,
+    "speaker": "７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "髙島　讓二",
+    "member_faction": "",
+    "text": "（髙島讓二君） ７５ミリやって、その外側の方は金属なのか、モルタルなのかと\nいうことについてはどうなのですか。",
+    "text_length": 55,
+    "source": {
+      "minutes_file": "data/rausu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "rausu-20242003-1-008",
+    "municipality": "rausu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1号",
+    "date": null,
+    "speaker": "佐野健二建設水道課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "仕上げに関しましては、モルタルになってございます。",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/rausu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  }
+]

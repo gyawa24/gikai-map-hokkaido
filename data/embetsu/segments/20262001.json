@@ -1,0 +1,785 @@
+[
+  {
+    "id": "embetsu-20262001-1-001",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "髙田博之総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました議案第１号令和７年度遠別町一般会計補正予\n算（第８号）について、提案理由及び内容の説明をいたします。\n今回の補正は、歳入歳出予算の総額に、歳入歳出それぞれ４,４０１万円を追加し、歳入歳出\n予算の総額を歳入歳出それぞれ６４億４,２２１万７,０００円とするものであります。\n歳入歳出予算の補正の款項の区分ごとの金額は、第１表歳入歳出予算補正によります。\n- 5 -\n\n最初に６ページをお開き願います。\n歳出の説明をいたします。\n１款１項１６目物価高騰対応重点支援事業費、既定額に３,１９６万円追加し、８,０３３万４,\n０００円とするもので、１０節需用費から１９節扶助費については、物価高騰対応重点支援事業\nに係る生活支援助成券交付事業費の新規計上及び水道料金軽減事業費の増額であります。\n２款４項３目、新規に３２０万円追加するもので、１節報酬から７ページ、１３節使用料及び\n賃借料については、衆議院議員総選挙実施に伴う新規計上であります。\n次に、８ページをお開き願います。\n３款２項５目物価高対応子育て応援手当支給事業費、新規に７２０万円追加するもので、１０\n節需用費から１８節負担金補助及び交付金については、物価高対応子育て応援手当支給事業費の\n新規計上であります。\n８款１項１目土木総務費、既定額に１５万円追加し、３３５万３,０００円とするもので、１\n０節につきましては公用車に係る修繕料の増額であります。\n次に、９ページをお開き願います。\n８款４項１目住宅管理費、既定額に１５０万円追加し、２,３５３万５,０００円とするもので、\n１０節につきましては公営住宅に係る修繕料の増額であります。\n次に、５ページをお開き願います。\n歳入の説明をいたします。\n１４款２項１目総務費国庫補助金、既定額に２,７７９万６,０００円追加し、１億４,４９８\n万２,０００円とするもので、３節につきましては、推奨事業の追加に伴う物価高騰対応重点支\n援交付金の増額であります。\n同じく、２目民生費国庫補助金、既定額に７２０万円追加し、２,２９６万５,０００円とする\nもので、５節につきましては物価高対応子育て応援手当支給事業実施に伴う補助金の新規計上で\nあります。\n１５款３項１目総務費委託金、既定額に３２０万円追加し、１,４５４万６,０００円とするも\nので、５節につきましては衆議院議員総選挙実施に伴う委託金の新規計上であります。\n１８款１項１目財政調整基金繰入金、既定額に５８１万４,０００円追加し、３億５,２１３万\n８,０００円とするもので、１節につきましては財源調整による整理であります。\n以上、議案第１号について説明いたしましたので、御審議の上、原案のとおり議決くださいま\nすようよろしくお願いいたします。",
+    "text_length": 1158,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-002",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本初昭",
+    "member_faction": "",
+    "text": "（橋本初昭君） まず６ページ、物価高騰対応重点支援事業費の一般財源４１６万４,００\n０円の内訳を教えてください。",
+    "text_length": 56,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-003",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "髙田博之総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これにつきましては、今回新規で行います生活支援助成券と簡易水道\n事業会計補助金分で２,９５０万円充当しているんですけども、今回補正しているのが２,７７９\n- 6 -\n\n万６,０００円ということで、１７０万４,０００円分減額になっております。この分につきまし\nては、以前予算で計上しておりました非課税分の支援金等の整理分ということで、その分の補正\n額が確定したため、その分を一般財源として計上させていただいております。そのほかの２４６\n万円については、今回の事業費の一般財源分ということになっております。",
+    "text_length": 251,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-004",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本初昭",
+    "member_faction": "",
+    "text": "（橋本初昭君） だから具体的に２４６万円はどこの部分で一般財源化になっているのかと\nいう、項目で教えていただきたいんですよ。",
+    "text_length": 62,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-005",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "髙田博之総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "すみません。今、押さえておりませんので、少々お待ちください。",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-006",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "髙田博之総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "申し訳ありません。今回、補正の中でさせていただいております印刷\n製本費と通信運搬費につきましては、全額補助金を充てさせていただいております。\n次の補助金の中の簡易水道事業会計補助金につきましては、６０万円が一般財源、生活支援助\n成券交付金については１８５万８,０００円、次の１９節の扶助費の水道料金負担軽減支援金の\n２,０００円が一般財源となっております。",
+    "text_length": 178,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-007",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（白幡広喜君） ６ページ、２款１項総務管理費なんですが、この水道基本料金の軽減とい\nうことは、ほかの支援事業に比べて大変いいことだと思っております。その中でちょっと確認し\nたいんですが、説明資料の最後の段で、月３００万の用途別でこれ合計何か所の給水分なのか教\nえていただきたいと思います。",
+    "text_length": 144,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-008",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "千葉光彦建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n見込んだ栓水については、１,３００栓を見込んでおります。",
+    "text_length": 38,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-009",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（白幡広喜君） それと、１,３００給水ということで、その用途別、例えば一般だとか工\n業用だとかって多分あると思うんですけども、その種別で３００万になるその根拠を教えてくだ\nさい。",
+    "text_length": 89,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-010",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "千葉光彦建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "すみません。遅くなって申し訳ございません。\nすみません。回答させていただきます。\nまず一般用ですけども、１,１４５栓、金額のほうが２４０万４,０００円、それから次に、団\n体用４５栓、２５万６,０００円、それから営業用５５栓、１８万７,０００円、営農用４０栓、\n１３万２,０００円、それから会館等の使用料ですけども１５栓で、２万１,０００円、１,３０\n０栓の３００万円の内訳になっております。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020",
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-011",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本初昭",
+    "member_faction": "",
+    "text": "（橋本初昭君） 衆議院議員の総選挙費、一昨年、令和６年度に総選挙が行われたんですが、\nそのときの予算計上額。それともう一点、補正予算の中にポスター掲示場設置及び撤去業務委託\n料が計上されてますが、この発注時期はいつされたんでしょうか。",
+    "text_length": 117,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-012",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "髙田博之総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和６年度の衆議院議員総選挙の予算の金額につきましては、３３０\n万円となっております。\nポスター掲示場の発注時期ですが、それにつきましては解散が決まった１月の２３日になって\nおります。",
+    "text_length": 92,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-013",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本初昭",
+    "member_faction": "",
+    "text": "（橋本初昭君） 今、発注時期が１月２３日、今の補正予算を審議してて、予算の裏づけが\nないんですよね。予算の裏づけがないのに発注ってできるもんなんでしょうか。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-025"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-014",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "髙田博之総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回予算の計上前だったものですから、７年度に予算計上しておりま\nす参議院議員総選挙の費用が執行残がありましたので、そちらのほうを流用という形を取って、\n執行させていただいております。",
+    "text_length": 91,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-015",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本初昭",
+    "member_faction": "",
+    "text": "（橋本初昭君） 流用って、流用先ってどうやって決めたんですか。だって、予算が議決に\nなってないんですよ。それちょっとおかしいんですよね。ってことは、もう年明けてから、解散\n総選挙ありますよという情報が報道であったときに、私はてっきり専決処分でやるもんだと思っ\nてたんですよ。今回見たら補正予算で計上されてて、朝見たらポスターの掲示場は設置されてる\nわ、投票立会人はいるわ、予算の記述もないのに、そういう配置は普通であればできないんです\nよ、厳密に言うと。そこら辺の考え方、いま一度。",
+    "text_length": 241,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-027"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-016",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "髙田博之総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一応新設ということで、目間の流用させていただいてということで、\n今回執行させていただいたという考えでおります。",
+    "text_length": 55,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-028"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-017",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本初昭",
+    "member_faction": "",
+    "text": "（橋本初昭君） だって新設できるんですか。どうやってそれ、予算の裏づけもないのに。\nまずそこが分からないんですよ。だって僕の言ってることおかしいですか。だって予算の裏づけ\nがない。流用したって言うけど、流用先があっての流用であって、その流用先ってのは、じゃあ\n今課長の答弁では、架空の科目を設定して流用したってことになるんですよ。予算の議決がない\nんですから。そういうことですよね。\n- 8 -",
+    "text_length": 197,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-029"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-018",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "國部雅人町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御指摘ありがとうございます。\n私のほうも予算の裏づけというか、実際支出する時期はもう補正が終わっているということで\nのちょっと私の思い込みというかそういったところもあったもんですから、その契約、発注の時\n点での予算の裏づけというところで、やり方がちょっと不適切であったというふうには、御指摘\nはされるところは十分理解いたしましたので、次このようなことがないように、確実に執行して\nまいりたいと思いますので、御理解をお願いいたします。",
+    "text_length": 216,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-019",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "山下悟",
+    "member_faction": "",
+    "text": "（山下 悟君） ６ページの１６目の１８節の生活支援助成券なんですけども、説明のほう\nには特に配布時期等書かれてないんですけれども、配布の予定とか、あと有効期限などあれば教\nえてください。",
+    "text_length": 93,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-020",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "髙田博之総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "生活支援助成券の配布時期につきましては、２月中を予定しておりま\nす。有効期限につきましては、９月末日までということで予定をしております。",
+    "text_length": 68,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-034"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-021",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本初昭",
+    "member_faction": "",
+    "text": "（橋本初昭君） ８ページの物価高対応子育て応援手当支給事業で、主要施策の説明で、支\n給件数、児童手当９５件の１６４人、公務員・新生児分５５件の１０６人って、ちゃんと見込み\nだけどきちっと押さえてるんだけど、システム改修って何するんですか。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-036"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-022",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "小林大輔福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "資料のほうに書かせていただきました児童手当分９５件、公務員ほか\nで５５件ということで書かせていただいております。\nまず、児童手当につきましては、これまで出していた数字の押さえでありますが、公務員分に\nつきましては、こちらで把握している件数ではなくてあくまでも見込み数字という形となってお\nります。その中でシステム改修の必要性でございますが、適切な名簿の管理及び支給実績を適切\nに管理すること、誤った支給や重複支給を防止することを目的としておりまして、事後検証があ\nっても説明可能な体制を整えたいということで、システム改修をさせていただきたいと考えてお\nりますので、御理解いただきたいと思います。",
+    "text_length": 297,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-037"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-023",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本初昭",
+    "member_faction": "",
+    "text": "（橋本初昭君） あくまでも児童手当受給者分というのは、役場の児童手当の管理システム\nで押さえられるから、ある意味じゃこの１４３万円というのは、公務員の５５件分、役場１０６\n人に対するシステム改修が主なものってことは、公務員分ってことは遠別町に役場、国・道の出\n先、それと小中高、６件分しかないんですよ。その各施設というか機関に問合せればいいだけの\n話なんですよ、僕に言わせれば。それに１００％交付金と言いながら、システムをやっぱりかけ\nなきゃ駄目ですか。\n- 9 -",
+    "text_length": 233,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-038"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-024",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "小林大輔福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "御指摘のとおり、官公庁の部分につきましては数が限られてございま\nす。その中で多くの方、役場職員は別としまして、小中高、土木現業所さんにつきましては、単\n身赴任で来られている方も想定されておりますので、なかなかそこの把握が難しいなというふう\nに思っているところです。その中なんですが、手作業でやることによっての入力ミスであったり、\nそういったことがないようにシステムを導入させていただきたいというふうに考えております。",
+    "text_length": 208,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-039"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-025",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "２番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本初昭",
+    "member_faction": "",
+    "text": "（橋本初昭君） じゃあ手作業でミスがあるかもしれない、じゃあシステムで入れるとミス\nがない、それ本当に間違いないですか。最後の質問ですけど、やっぱり言っているのはだって役\n場が総務課でしょ、小中だって高だって事務官いるんですよ、道の出先機関の旧土現だって単身\n赴任は関係ないでしょう。だって子供の住所をこっちに持ってきていなければ、やっぱりその捉\nえは、やっぱりどうしてもシステムはいるのか。しつこいようですけど、このままこうやって制\n度できて、今回１００％ですけど、５０なりゼロであってもやる、ちょっとその考え方だけ教え\nてください。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-040"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-026",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "小林大輔福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "システムを導入することによって、誤りが１００％なくなるというふ\nうなところにはなりませんが、可能性として低減することができるというふうに考えております。\nまた、システムを今回１０分の１０だから入れるのかというところのお話だと思うんですけれど\nも、今後補助率の状況によりまして、同じような事業があったときにどうするかというのは、そ\nのときのタイミングで考えさせていただきたいと思いますが、基本的には今回は１０分の１０だ\nということを考えて、システムを導入というふうにさせていただきたいと考えておりました。",
+    "text_length": 251,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-041"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-027",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "國部雅人町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまの件に関しまして、私の考えを述べさせていただきたいと思いま\nす。\n私も以前から議員やっていたり、監査委員をやっていたときに、その程度の、その程度のって\n言ったらあれですけれども、改修で、１００％、７０％、５０％、いろいろ補助率がある中で、\nこの改修が必要なのかというのが、その内容は全てを把握していないまでも、システム改修と言\nいながら、今回の抽出作業だけに利用するような改修の場合、ちょっと疑問に思っていた部分も\nありまして、一般企業でいいますと、こういった仕事はじゃあ担当部署が抽出するのかといった\nらそういう場合もありますけれども、そういう情報処理担当の部署がまとめてやるという場合も\nありまして、私の理想としては、防災情報係という係も作ったので、例えばこういった作業をそ\nこに内部発注してできるような仕組みを作り上げれば理想かなというふうには実際思ってます。\nただ、この担当部署にやらせるということは、それぞれのスキル、異動に関して、そのスキルが\n一定しないで、この人がいたときはできたけどこの人がいなくなったらできない。それによって\nシステム改修が必要、システム導入が必要、不必要というのは、組織としておかしい話ですので、\nそういったところが組織としてそういうシステムができればいいなというのは、私の理想だとは\n考えております。ただ、そういった人材ですとかそういった組織づくりがまだできておりません\nので、今回の場合はシステムを導入させていただいて、その確実な執行をさせていただきたいと。\n- 10 -\n\nゴールとしては、私はそこまではちょっと考えてはいるんですけれども、実現できるかどうかは\n分からないですけれども、そういった組織でありたいなとは考えております。",
+    "text_length": 741,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-042"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-028",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（白幡広喜君） 今の関連なんですけど、今回の目的というのは、物価高の影響が長期化し、\nこの影響を強く受けている子育て世帯ということで、やはりこの１４３万というのはどのような\nものかというふうに私も思っているところです。やはりこの影響を受けている世帯に少しでも多\nく手当を支給するということが今回の物価高騰の支援だと思うんですが、やはりこのシステム料\nの１４３万というのはどうなのかということは、町民の皆さんにも納得してもらいづらいのかな\nというふうに思っておりますので、その辺はどのように考えているのかちょっと一言お願いしま\nす。",
+    "text_length": 265,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-043"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-029",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "小林大輔福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の事業につきましては、２万円は給付金として支給するものであ\nりまして、これは国の施策でございます。\n事務費につきましては、先ほどおっしゃったこの部分を減らしたからといって国の事業の１人\n当たり２万円という支給額が増えるわけではございませんので、御理解いただきたいと思います。",
+    "text_length": 139,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-045"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-030",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "山下悟",
+    "member_faction": "",
+    "text": "（山下 悟君） 今の件なんですけれども、既存のシステムを改修するのか、全く新しいシ\nステムを入れるのか教えてください。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-047"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-031",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（白幡広喜君） 歳出なんですけど、９ページ、住宅費なんですが、公営住宅の修繕料との\n先ほどの説明ありましたが、１５０万の内訳を教えてください。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-050"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-032",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "千葉光彦建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お答えいたします。\n公営住宅の修繕の内訳になるんですけども、現在ボイラーの取り替えを行ってるところが２か\n所ありまして、その２か所については緊急を要するということで流用をかけた状態で、先に修繕\nを行っている状況です。それが７０万円余りになっておりまして、今後またさらにボイラー等の\n故障があったときに対応ができないということで、さらにボイラー２台分くらい程度を予定して、\n- 11 -\n\n今、先に修繕させていただいている７０万円と残り８０万円程度を見させていただいて、１５０\n万円のほうを計上させていただいております。",
+    "text_length": 259,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-051"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-033",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "千葉光彦建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程されました議案第２号令和７年度遠別町簡易水道事業会\n計補正予算（第３号）について、提案理由及び内容の説明をいたします。\n第１条は、総則であります。\n第２条は、収益的収入及び支出の補正で、収入、第１款簡易水道事業収益、既決予定額に変更\nはありません。\n補正内容につきましては、補正予算説明書により説明いたします。\n第３条は、他会計からの補助金の補正で、一般会計からこの会計へ補助を受ける金額９,３９\n８万５,０００円を１億２９８万５,０００円に改めるものであります。\n次に、収益的収入及び支出の補正内容について、補正予算説明書により説明をいたします。\n２ページをお開き願います。\n収入の説明をいたします。\n１款１項１目給水収益、既決予定額から９００万円減額し、４,８６０万円とするもので、物\n価高騰対応重点支援事業に係る水道料金軽減事業の期間延長による減額であります。\n１款２項２目他会計補助金、既決予定額に９００万円追加し、７,２１４万３,０００円とする\nもので、物価高騰対応重点支援事業の財源調整による増額であります。\n以上、議案第２号について説明いたしましたので、御審議の上、原案のとおり議決くださいま\nすようよろしくお願いいたします。",
+    "text_length": 526,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-057"
+      ]
+    }
+  },
+  {
+    "id": "embetsu-20262001-1-034",
+    "municipality": "embetsu",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時会会議録(R08.1.29) (PDF 217KB)",
+    "date": null,
+    "speaker": "坂川敏文事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "発議第１号、議員派遣について、本町の懸案事項中の要望・促進を図\nるため及び議員の研修会並びに調査・研究のため、本日より３月までの間、本議会は必要と認め\nられる次の事案について、道内外の関係機関に議員を派遣する。\nなお、派遣する議員については、その都度議長において指名する。\n留萌管内町村議会議長会臨時総会、苫前町、２月９日。\n令和８年１月２９日、遠別町議会議長小森嘉孝。",
+    "text_length": 185,
+    "source": {
+      "minutes_file": "data/embetsu/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-064"
+      ]
+    }
+  }
+]

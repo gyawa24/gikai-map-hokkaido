@@ -1,0 +1,25 @@
+[
+  {
+    "id": "toyotomi-20242001-1-001",
+    "municipality": "toyotomi",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年1月16日開催） （PDF:159KB）",
+    "date": "2024-01-16",
+    "speaker": "河田誠一町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "提出議案について申し上げます。\n本日招集の、令和６年第１回町議会臨時会にご提案申し上げております議案につきましては、豊富町稚咲内生活館設置及\nび管理に関する条例の条例制定議案が１件、豊富町手数料条例の一部を改正する条例の条例改正議案が１件、令和５年度豊\n富町一般会計補正予算案が１件の合わせて３件をご提案申し上げております。\nなお、内容につきましては、担当課長等よりご説明申し上げますので、よろしくご審議を賜りますようお願い申し上げま\nす。",
+    "text_length": 220,
+    "source": {
+      "minutes_file": "data/toyotomi/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  }
+]

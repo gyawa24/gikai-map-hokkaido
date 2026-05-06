@@ -1,0 +1,485 @@
+[
+  {
+    "id": "kushirocho-20242005-1-001",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "などから詳細に説明させますので、適切 なお、本補正予算において、「１３款予備\nなる御審議をいただき、原案のとおり可決賜 費」を「１４款」に繰り下げ、「１３款」と\nりますようにお願い申し上げ、提案理由の説 して「災害復旧費」を追加することを申し添\n明とさせていただきます。どうぞよろしくお えます。\n願いを申し上げます。 それでは、説明資料３ページの歳出から御",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-002",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "長岡賢司財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "承認第１０号、専 の各施設に設置している消火器について、使\n決処分の承認について御説明いたします。 用期限切れが確認されたことに伴う更新費用\n本件は、地方自治法第１７９条第１項の規 として、５５万円を計上し、次に５ページ、\n定により、別記のとおり専決処分をしたので、 １３款災害復旧費１項公共土木施設災害復旧\n－ 3 －\n6⑤臨 10/3\n\n費１目道路橋梁災害復旧費１４節工事請負費 のほうから電話連絡があり、期限が切れてい\nでは、８月３１日の温帯低気圧接近に伴う大 るということが発覚いたしました。\n雨により、町道達古武５号線の一部法面が崩 ○議長（橋口春樹） 木村議員。\n壊したことによる復旧経費として、２００万 ○３番（木村隆明） 点検って毎年１回同じ\n円を計上するものであります。 ような時期にされるのでしょうか。\nこれらにかかる歳入といたしまして、 ○議長（橋口春樹） 社会教育課長。\n２ページの歳入、１９款繰入金１項基金繰入 ○社会教育課長（山内博志） 指定管理者の\n金１目１節財政調整基金繰入金において、 ほうで設備点検の業者のほうと契約を交わし\n２８０万３,０００円を増額したところであり て、毎年実施しているところでございます。\nます。 ○議長（橋口春樹） 木村議員。\n以上で、承認第１０号の説明を終わらせて ○３番（木村隆明） 毎年大体何月ぐらいに、\nいただきます。 同じ時期なのですか。今回やったのと。",
+    "text_length": 612,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-003",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村隆明",
+    "member_faction": "",
+    "text": "（木村隆明） おはようございます。 ○３番（木村隆明） ということは、これ",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-004",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "山内博志社会教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回の専決に の施設も管理、町の施設も消火器当然たくさ\nつきましては、消火器の期限が令和５年 んあるですからね、こういうのがあったとい\n１２月までだったということが判明いたしま うのが分かったことで大丈夫かということで、\nした。人命にかかわるということで、１日も ほかのところとかって確認されたりはされて\n早く交換するために専決させていただいたと いるのでしょうか。\nいうことになります。 ○議長（橋口春樹） 商工観光課長。\n令和６年８月１９日に指定管理者における ○商工観光課長（田河智） 指定管理の施設\n消防設備点検がありまして、その点検結果を ということで、私どもが所管しております別\n釧路消防署のほうに提出しております。 保公園の地産地消センター、あと達古武のキ\nその結果を受け、９月１１日に釧路消防署 ャンプ場、あと細岡のビジターズラウンジ、\n－ 4 －\n6⑤臨 10/3\n\nこれは令和５年度で更新してございます。 れども、指定管理者というのは例えば消火器",
+    "text_length": 433,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-005",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "松野修治住民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "公共施設、地区会 ことでは多分ないと思うのですけれども、そ\n館としては同様に令和５年度に更新をしてい ういうことを例えば１０年期間であれば、\nるという状況になってございます。 ５年だとか、３年だとかというようなことで",
+    "text_length": 108,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-006",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "柳谷忠男福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "保健福祉センター すれば、あとどのぐらいでということが多分\nについても同じようなことでやっております。 できたのかなというふうに思うのですけれど",
+    "text_length": 72,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-007",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "中野勝広総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "役場本庁舎につき 況になっていなかったのかどうかというとい\nましても、同様の対応で更新を終わっており うのはちょっと懸念されるところなのですけ\nます。 れども、その辺りはいかがでしょうか。",
+    "text_length": 94,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-008",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村隆明",
+    "member_faction": "",
+    "text": "（木村隆明） 今の総務と福祉のほう ○社会教育課長（山内博志） 期限切れが発\nから同様なということで、これ同様というの 覚してから、その購入状況から、１０年前の\nは年度も令和５年ということでよろしいです 購入状況からその失念するまでの経緯といい\nか。 ますか、原因を調べたところ、指定管理のほ",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-009",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "中野勝広総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そのとおりでござ 器が有効かどうかというところも当然チェッ\nいます。 クがあります。",
+    "text_length": 42,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-010",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村隆明",
+    "member_faction": "",
+    "text": "（木村隆明） 点検してというのは変 度の調査におきましても、その辺の消火器の\nえたということだから、今消火器１０年とか 管理について、指定管理者のほうからそうい\nでしょうから、また１０年後という認識でよ った期限が近いとか、切れるとかというよう\nろしいでしょうか。 な連絡がなかったという、そういう体制の不",
+    "text_length": 153,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-011",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "中野勝広総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "そのとおり１０年 のその消火器の備品としての管理を、やはり\n後。 当課のほうで怠っていたというふうに考えて",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-012",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中家治子",
+    "member_faction": "日本共産党",
+    "text": "（中家治子） ９番、中家です。４ペー 年やっているということであれば、例えば消\nジの今の３番議員の質疑にもあったのですけ 防に提出する部分を、役場の担当課のほうに\nれども、確かに令和５年度の当初予算のとこ も提出されるという仕組みになっていれば、\nろでは、今それぞれお答えになったように計 そういうことはなかったのかなというふうに\n上されていましたけれども、３番議員の答弁 も思うのですけれども、改善としてどういう\nを聞き漏らしたのかもしれないのですけれど 形でされていくのかというのがあればお答え\nも、指定管理者が点検によって判明したとい いただきたいと思います。\nうような、先ほど答弁だったと思うのですけ ○議長（橋口春樹） 社会教育課長。\n－ 5 －\n6⑤臨 10/3",
+    "text_length": 337,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-028"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-013",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "山内博志社会教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "消防設備の点 うのは結構あると思うのですけれども、例え\n検の結果というのも、指定管理者のほうで契 ば私が気にしているのは昆布森の地域でもや\n約して実施していたものでして、実はその点 っぱりそういうところがありますしね、別保\n検結果というのも、こちらのほうには見えて のほうでもあるのですけれども、例えばこう\nいなかった部分もあります。 いう大雨でいうと、多分、一部釧路町に洪水\n消防のほうにも確認したのですが、やはり 警報か何かが一時的に発令をされたかと思う\n消防のほうは指示書といいますか、ことが起 のですけど、何かテレビのテロップかなにか\nきてからといったらちょっと言葉があれです 出ていたのでね。\nけれども、そういう原因が分かったところで、 そういった場合、警報だとか、注意報でな\nこちらのほうに報告するという仕組みになっ くても、崩壊が心配されるようなところにつ\nております。 いては、どういうような態勢というか、状況\nその辺も消防のほうとも、ちょっとやり取 で点検するのかというのをちょっと教えてい\nりをしまして、こういったことのないような ただきたいと思います。\n仕組みを、ちょっとお互いに協議しましょう ○議長（橋口春樹） 道路河川課長。\nということに現在になっております。 ○道路河川課長（矢野誠） 通常時のパト",
+    "text_length": 564,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-029"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-014",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中家治子",
+    "member_faction": "日本共産党",
+    "text": "（中家治子） ぜひ、そのように進め 認しております。あと、大雨時とかは職員も\nていっていただければなというふうに思いま 交えて、そういう危険箇所の確認、パトロー\nす。 ルを実施しております。\n続きまして、５ページの関係なのですけれ ○議長（橋口春樹） 中家議員。\nども、のり面の崩壊による復旧の工事だとい ○９番（中家治子） 土砂災害って降雨時だ\nうことではあるのですけれども、金額が けではなくて、雨が止んだ後も地盤が緩んで\n２００万円ということなのですけれども、ど いるということで、何らかの影響で土砂災害\nの程度の被害で、どの程度の復旧工事がされ が起こる。能登半島での豪雨災害については、\nるのかというのが、ちょっと具体的に見えて そういう状況があったかというふうに思うの\nこないので、具体的に説明いただければと思 ですけれども、雨が降っているときはもちろ\nいます。 んですけれども、その後とかもやはり点検だ",
+    "text_length": 408,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-015",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中家治子",
+    "member_faction": "日本共産党",
+    "text": "（中家治子） それで、全町を見れば ですから、これで質疑を終わります。\n土砂災害が懸念される、そういうところとい これから、承認第１０号、専決処分の承認\n－ 6 －\n6⑤臨 10/3\n\nについてを採決いたします。 ７６号説明資料において、配置図及び平面図\nお諮りいたします。 などを添付しておりますが、鉄骨造３階建て\n本件は、原案のとおり承認することに御異 ６２４.０２平方メートルを新築するもので、\n議はありませんか。 予定工期は令和７年１０月３１日までとして\n（「異議なし」の声あり） おります。",
+    "text_length": 250,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-034"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-016",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "財政課長（長岡賢司）議案第７５号、工築工事（緑公園タワー）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "電気設備。\n事請負契約の締結について御説明いたします。 契約の方法は、一般競争入札。\n本案は、令和６年９月２７日、一般競争入 契約の金額は８,００２万５,０００円で、\n札に付した津波避難タワー新築工事（緑公園 うち取引に係る消費税及び地方消費税額は\nタワー）建築主体について、議会の議決に付 ７２７万５,０００円であります。\nすべき契約及び財産の取得処分に関する条例 契約の相手方は、釧路市入江町８番１９号、\n第２条の規定により、予定価格が５,０００万 株式会社東興電気工業、代表取締役東堂光春\n円以上の工事請負につき、議会の議決を求め であります。\nるものであります。 工事概要につきましては、附帯電気設備工\n初めに、契約の目的は、津波避難タワー新 事一式であり、予定工期は令和７年１０月\n築工事（緑公園タワー）建築主体。 ３１日までとしております。\n契約の方法は、一般競争入札。 なお、配置図などの資料につきましては、\n契約の金額は４億８,４００万円で、うち取 議案第７５、７６号説明資料に添付のとおり\n引に係る消費税及び地方消費税額は４,４００万 となっておりますので、説明につきましては\n円であります。 省略させていただきます。\n契約の相手方は、タカオ・富樫特定建設工 以上で、議案第７６号の説明を終わらせて\n事共同企業体で、代表者は釧路市住之江町 いただきます。",
+    "text_length": 586,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-037"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-017",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "藤井正樹防災安全課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本年３月の第 ンクリートされている分のお金のほうは大丈\n１回定例会において、いづみ公園に建設する 夫ということで、実際に当初予算とかも見て\n避難タワーの工事請負契約の締結議案を可決 みたら、これ持ち出し釧路町は３,０００万ぐ\nいただきましたけれども、その上程の際に国 らいで、二十数億の、これ２つずつやったと\nの交付金削減による影響、これにつきまして いうことで、釧路町一生懸命やっているなと\n議会のほうからも質疑をいただき、整備予定 いうところが評価に値すると思うのですけれ\nの４基の避難タワーのうち、当初１基が予定 ども、実際にこれ、今回入札とかされました。\nしていたスケジュールよりも遅れるというこ 大体当初の幾ら幾らというのに対して、実際\nとを、本年第１回定例会の中で答弁させてい に足りない分って本来交付されるべきものっ\nただいたところであります。 て、どれぐらいまだ交付されていないという\nこの考え方につきましては、町長も当時の ふうな見方をすればよろしいでしょうか。\n議会の中で発言させていただきましたけれど ○議長（橋口春樹） 防災安全課長。\nも、早い時期にこの残り１基についても整備 ○防災安全課長（藤井正樹） 今回、議会提\nを進めていくといったことで、その後本年、 案させていただきました緑公園の金額を含め\n先ほど議員からございましたように、６月の て、４期全てでおよそ２８億円ほどの整備費\n第２回定例会までの間に、整備時期について 用となっております。これに対しまして現在、\n現在国から交付される予定であるその交付金 国費として国から交付されているのが令和\nの中で対応できる事業の見合い分というので ５年度で２億２,４００万、令和６年度で\nすか、その分につきまして今回緑公園の整備 １４億１,６００万ということになっています\nを着手していくといったような考え方で、今 ので、総事業費の３分の２の割合の国費と考\n回上程に至ったということで御理解願いたい えた場合には、２億２,４００万ほどの交付金\nと思います。 が現在不足するということになりますので、",
+    "text_length": 886,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-039"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-018",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村隆明",
+    "member_faction": "",
+    "text": "（木村隆明） 分かりました。実際に、 まいりたいというふうに考えております。\n来年の１０月までということなので、２か年 ○議長（橋口春樹） 木村議員。\nにまたぐということなのですけれども、緑公 ○３番（木村隆明） 承知しました。最初言\n園ですか、緑公園の今回作るのは大体今年度 われたよりは大分少なくなっているみたいで、\n中どの辺まで進められそうだというめどとい 実際にこれ入札のほうなのですけれども、何\nうのは、どうなっているのでしょうか。予算 社ほど建設のほうと電気それぞれ入ったので\n－ 8 －\n6⑤臨 10/3\n\nしょうか。 取り回しですとか、あと高圧線が上をちょう",
+    "text_length": 287,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-041"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-019",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "長岡賢司財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず建築主体にな 部分につきましては非常にデリケートなとこ\nりますけれども、こちら共同企業体での入札 ろがあるのかなということは十分認識してお\n参加ということになります。共同企業体が りますので、その辺りは事業者さんのほうと\n５社といいますか、５団体参加しております。 十分、あと地元の町内会さんのほうと十分協\nそれと電気設備のほうになりますけれども、 議しながら、付近の住民の方々に迷惑をかか\nこちらも５事業者の参加となっております。 らないような形で、安全な施工について務め",
+    "text_length": 239,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-043"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-020",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中家治子",
+    "member_faction": "日本共産党",
+    "text": "（中家治子） ９番、中家です。懸念 いうふうに思います。いづみ公園、今建設中\nされていたというか、心配していた緑公園に のタワーについても、地元の方のいろんな要\nも工事に着工できる状況ができたということ 望ですとか、御心配を解消するような形で行\nは、大変喜ばしいかなというふうに思うので われてはいるのですけれど、何せちょっと緑\nすけれど、ただ緑公園の形状といいますか、 公園の場合は形状が一番心配かなということ\nそれと近隣の住宅との関係でいうと、大型車 と、あとは前もいづみ公園のときにお願いし\n両が入ってきて実際に工事をする場合につい たのですけれど、工事予定みたいなものをき\nて、幾つかの心配されることがあると思うの ちんと知らせていただくだとか、掲示するだ\nですよね。 とか、いづみ公園の場合については事業者の\nまず、道路が本当に広くないということと、 方の配慮で、公園で使用できる部分で囲って\nそれと大型車両が搬入できるような状況をつ いる部分に透明で中を見ることができるそう\nくるのであるとすれば、公園の反対側という いうものもあるのですけれども、その事業者\nのですかね、そっちのほうからなのかなとい だからそういう配慮をしていただいたのかも\nうのもちょっと思ったりもしたのですけれど 分からないのですけれども、やっぱり地域で\nも、でもあそこの土地が町の土地であればい 使うけれども地域の皆さん方の日常生活に影\nいですけれど、私有地だったりするとちょっ 響がないような形で、ぜひ工事は進めていっ\nとそういうこともできないしというふうに思 ていただきたいなと思うのですけれど、配置\nって、いろいろ心配はしているのですけれど、 図を見ますと遊具は移動するというような形\nその辺りはどういう状況で今考えられている になる。ブランコは一番奥のほうにあったと\nのか。 思うのですけれど、移動するというようなこ\n工事だからこちらのほうかも分からないの とで考えられているのか、確認したいと思い\nですけれど、教えていただければと思います。 ます。",
+    "text_length": 872,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-045"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242005-1-021",
+    "municipality": "kushirocho",
+    "council_id": 20242005,
+    "council_name": "令和6年第5回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.10.03（木）承認（第10号）、議案（第75号～第77号）",
+    "date": null,
+    "speaker": "都市計画課長（久保田康生）今、中家議○都市計画課長（久保田康生）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今ございま\n員からの御質問があったとおり、あそこの緑 すブランコと滑り台ですね、こちらのほうは\n公園は非常に一番狭い場所になってございま 移動させていただきまして、道路側のほうに\nして、場所的にも団地の一番隅のほうになる 並べるような形で配置を変える予定でござい\nということで、非常にその辺の工事の車両の ます。\n－ 9 －\n6⑤臨 10/3",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242005.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-046"
+      ]
+    }
+  }
+]

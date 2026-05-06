@@ -21,5 +21,373 @@
         "1-table-010"
       ]
     }
+  },
+  {
+    "id": "assabu-20242002-1-002",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "香川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "香川直樹",
+    "member_faction": "",
+    "text": "７ページの、節で言うと報償費になるのですけど、説明の欄で地域プロジェクトマネージャー\n報償費、その下の脱炭素アドバイザー報償費、恐らく同じ方の報償費かと思うのですけども、ま\nずそれが１点と、この報償費が地域創生事業費から組み入れられていますけども、その移管した\n理由について説明を願います。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-016"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-003",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "香川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "香川直樹",
+    "member_faction": "",
+    "text": "それと関連あるのですけど、８ページの持続可能な地域生活拠点整備事業、この説明を見ても\n－５－\nわかりにくいと思うので、資料N0.1に詳細で４項目載っています。その中の②省エネ及び脱炭素\n化による経費削減とありますけど、それの具体的な内容について説明を願います。",
+    "text_length": 130,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-004",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "香川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "香川直樹",
+    "member_faction": "",
+    "text": "３問しかないので後もう１問。説明資料に則って質問させていただきたいのですけど、その下\nの食と自然を体験する観光推進・発信事業とあります。その中で５項目載っていますが、⑤あっ\nさぶメークイン１００周年記念事業とあります。これについて、どういう事業展開をするのか、\nこれの目指す方向性、今の段階でどこまで進んでいるのかについて説明を願います。",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-005",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "中山議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中山俊勝",
+    "member_faction": "",
+    "text": "香川議員の質問とダブるところもありますけど、今香川議員が質問したように、まず１点目\nは、これはハマナスクラブのことだと思うので、もうちょっと説明書にある①～④の内容説明\nを、香川議員の質問で②の説明は終わりましたので、他について具体的にどのように推進してい\nくのか、特に地域の組織を立ち上げるということですので、どんなメンバーで組織を立ち上げる\nのか、これについて説明していただきたいと思います。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-006",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "中山議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中山俊勝",
+    "member_faction": "",
+    "text": "これは議員全員協議会においても説明があったのですけども、①の宅配なのですけど、これか\nら高齢者が増えるということで大変重要な事業になると思いますけども、具体的に補助金は付く\nということで、宅配料はタダということになるのか、それともある程度いただくのか、その辺の\n今後の方針についてはどのように考えているのか。それと地域の組織なのですけど、本当に大事\nだと思うのですけど、どういう風な連携をとるかということが重要かと思うのですけど、その辺\nについてはどういう組織の役割というか、重点を持った中でやっていくのか。もう一度説明して\nいただきたいと思います。\nもう１点、７ページの道の駅物産センターの委託料が載っています。この先何年間でこの事業\nを完了させるのか、今後の見通しを説明していただきたいと思います。",
+    "text_length": 351,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-007",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "中山議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中山俊勝",
+    "member_faction": "",
+    "text": "今回３年間ということで実施するわけですけど、我々が心配するのが、ハマナスクラブの収益\nがどの程度下回った場合に、町として対処するのかということが危惧されるところですので、販\n売高をどこに設定して、どの程度までは町がカバーして頑張ってもらうと。３年間はこの事業で\n走るわけですので、３年間はハマナスクラブで営業してもらうのか、それともあまりにも収入が\nなければ町としてどう対応するのか。今後に対する町の考え方をお聞きしたいと思います。",
+    "text_length": 216,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-008",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "佐々木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐々木宏",
+    "member_faction": "副議長",
+    "text": "農地利用効率化等支援事業についてです。採択された経営体について、主なる作付けは何なの\nか。この支援によって目指す経営の収益と所得目標はいくらになっているのか。そして今回の支\n援事業の町内応募件数と確定ポイントはいくらで採択されたのか。この３つについてお願いいた\nします。",
+    "text_length": 135,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-031"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-009",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "農林課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "農地利用効率化等支援交付金事業の作物であります。作物につきましては、主な作物としては\n小麦、小豆の面積拡大に取り組むということであります。\nまた、目指す経営としては、現在小麦の委託作業等を直営として実施することによる経費縮\n減、それに伴う付加価値の増大、小麦・小豆を中心とした経営面積の拡大というところを目指し\nて事業申請をしたところ、採択いただいたというところであります。この採択のポイントであり\n－１１－\nますが、ポイントについては後ほどお知らせしたいと思います。\n採択申請の人数でありますが、今回の事業に限っては１名ということでありました。ただ、申\n請を上げる前にはいろいろな方からのご相談もありました。ただ、ご相談の中で事業の詳細をご\n説明させていただいた結果、１名の方がチャレンジされたということであります。",
+    "text_length": 359,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-032"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-010",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "佐々木議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐々木宏",
+    "member_faction": "副議長",
+    "text": "目指す収益と所得目標がわかりましたらお願いします。それと事業採択にあたっては、事業ご\nとにポイントの採択部分が高くなっているということですので、後で議員の方に採択ポイントを\n資料でお示しいただければと思います。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-033"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-011",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "農林課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "目指すべき経営の目標であります。まず成果目標として、予算資料の中に３つほど載せており\nます。付加価値額の拡大はこの事業の必須目標となっておりまして、次の経営コストの縮減、経\n営面積の拡大に取り込むことによる付加価値額の拡大を目指すということにしております。経営\nコストの縮減ですが、目標としましては３年後に９．６％の縮減を行う。また、経営面積の拡大\nについては、３年後に１０．４５ｈａ増加するという目標を掲げているところであります。以上\nです。",
+    "text_length": 222,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-034"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-012",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "中山議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中山俊勝",
+    "member_faction": "",
+    "text": "人・農地プラン地域計画策定支援業務委託料とあるのですけど、委託先はどこにするのか、ま\nた町としての今年一年の目標値作成のスケジュールはどのように考えているの、説明していただ\nきたいと思います。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-035"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-013",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "農林課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この業務の委託先でありますが、国費で賄われる事業でありまして、道からはすべて一般競争\n入札で実施するということが指示されています。詳細な委託先を想定しているものではなくて、\n今後一般競争入札で実施してまいりたいと考えております。\n今年度の人・農地プラン地域計画のスケジュールでありますが、今年２月に３地区において説\n明会を開催させていただきました。その中で、令和７年３月末を目標に地域計画を作成しますと\nいう話しをさせていただいております。その中で地域の話し合いをしていきましょうというお話\nしもさせていただいたのですが、残すところ１年を切ったという状況でございます。３月定例会\nの議会の中では示されていなかったのですが、その後に会議がありまして、その中で人・農地プ\nランの取り進め方というものが案として示されたものがございます。これは農地の集積が一定程\n度図られている地域においては、現状の地図を目標としても当面は差し支えないというような見\n解も示されているところであります。実際にどのくらいの集積率が必要かといいますと、道の方\nでは７割と。厚沢部については８５．７％の集積率を持っておりますので、これからまた農業者\nにはお話しするのですが、現状の農地の集積率を踏まえた現状の農地の使い方の地図を農家に確\n認いただいて、差し支えなければそれをベースとした目標地図というものを作成したいというと\nころで、今後ご説明させていただきたいと考えているところであります。以上です。",
+    "text_length": 636,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-036"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-014",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "中山議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中山俊勝",
+    "member_faction": "",
+    "text": "ちょっとわからないのは、一般競争入札で受けた業者が、厚沢部町の農業情勢をきちんとわか\nった中で、どういう作業をするのか。これが疑問符なのですよね。今年一年よりないわけですの\nで、そういう中で委託してやるのはいかがなものかと思うのです。課長が説明したように、農地\nの集積についても各地区がどういう風な目標を立てているのか、それを掴んだ中でやらないと今\n－１３－\n年一年で完成というのは難しいのでないかと思うのですけど、一般競争にはどんな会社を求めて\nいるのか、もう一度説明していただきたいと思います。",
+    "text_length": 249,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-037"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-015",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "農林課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "委託の一般競争にあたって、今考えているのは一般競争の参加資格となるのは農業コンサルタ\nント関係の会社になると考えております。ただ、どの会社が落札されるかというのはわかりませ\nんので、町で仕様書を固めた中で、仕様を必ず達成いただける業者として入札に参加いただく\nと。実際にやっていただく業務としましては、昨年現状地図を作成しまして、そこも委託でやら\nせていただきました。今度は今の農地の集積を踏まえた目標地図を作りまして、それと併せて農\n業振興地域のエリアが適切かどうか、こういうものを全て地図化し、システムに統合するという\nような技術的な作業であります。システムに統合するデータをどのように作っていくかというこ\nとは、農業委員会または農林課職員が現状を踏まえた中で農家に聞き取りさせていただいて、確\n定していくと。これを電子化するというのも一般競争で行うと考えております。以上です。",
+    "text_length": 391,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-038"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-016",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "中山議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中山俊勝",
+    "member_faction": "",
+    "text": "目標地図完成は大丈夫なのかなと、課長の説明を聞いていて思っているのですけど、今年一年\nでできなかった場合は国から何かあるのですか。もし３月３１日までに完成しない、目標地図で\nきなかったとなると、国の方からあるのですか。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-039"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242002-1-017",
+    "municipality": "assabu",
+    "council_id": 20242002,
+    "council_name": "令和6年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／323KB]",
+    "date": null,
+    "speaker": "農林課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "地域計画ができなかった場合の、国からの何かしらがあるのかということでありますが、これ\nについてはもう１つ補正予算を組ませていただいた農地利用効率化等支援交付金、こういったも\nのも人・農地プランが作成されている地区、また地域計画が作成される見込みのある地区という\n－１４－\nことで補助金をいただいているものであります。過去から人・農地プランをベースとした補助金\nというものはこれまで実施してきておりまして、こういったものが要件を満たさなくなるという\nことは考えられます。また農地の取引においても８００万円の控除が受けられなくなるだとか、\nそういった農家への直接の不利益もあるかと思いますので、令和７年３月末までに必ず作るとい\nう考えで農林課と進めておりますので、ご心配されている部分はあるかと思いますが、今年度中\nの作成を必ず完了させるという風に考えてやっております。",
+    "text_length": 383,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-040"
+      ]
+    }
   }
 ]

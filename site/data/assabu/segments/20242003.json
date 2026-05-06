@@ -7,6 +7,29 @@
     "schedule_id": 1,
     "schedule_name": "議事録本文 [PDFファイル／242KB]",
     "date": null,
+    "speaker": "副委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日１１月２９日、議会運営委員会を開催いたしました。本日をもって招集されました令和６\n年第３回厚沢部町議会臨時会の運営につきましては、議事日程によることとし、会期について\nは、本日１日間とすることに決定しましたので、報告いたします。\nなお、提出案件の審議については、質問者、答弁者とも簡潔明瞭な質疑、応答を心がけ、円滑\nな議会運営を行いますよう御協力をお願いし、委員会報告といたします。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-006"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-002",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
     "speaker": "町長",
     "speaker_role": "答弁",
     "is_procedural": false,
@@ -19,6 +42,236 @@
       "schedule_id": 1,
       "minute_ids": [
         "1-table-011"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-003",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "香川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "香川直樹",
+    "member_faction": "",
+    "text": "まずはこの電気自動車なんですけども、今回この議案の採決され次第ではありますけども、実\n際納車される予定日、いつ頃になるのか説明を願います。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-015"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-004",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "香川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "香川直樹",
+    "member_faction": "",
+    "text": "先ほど課長の説明にもありましたけども、当然電気自動車を購入するということは、それに見\n合った充電設備というのも必要になってくると思うのですけども、その充電設備の設置について\nはどのようにお考えか、説明を願います。",
+    "text_length": 106,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-017"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-005",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "香川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "香川直樹",
+    "member_faction": "",
+    "text": "事前の議員協議会等の説明で、２台設置という話しで聞いていましたけども、今回１台の購入\nについての議案でございますけども、さらにもう１台はいつ頃購入をお考えか説明を願います。",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-019"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-006",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "髙田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今、２台という話しで、そちらをあらかじめ聞こうかと思っていたらそのような内容の報告が\nありましたので、今の内容でいきますと、この２台は同じ会社、日産の車を使うのか、それとも\n他の会社のものを予定なのかということが１つ。それから２台ということになると、購入目的\nが、例えば町長公用車だとか、他のために使うとかということになると思うのですけど、そこの\n使用目的は主にどういう使い方をする予定なのか、ということ。それから、将来的に最後６台ま\nでといつかのところでいっていたと思うんですが、それはどのような計画になるのかということ\nをご説明できればお願いします。",
+    "text_length": 277,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-021"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-007",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "髙田議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "わかりました。ということは、今のアリアというのは形としてはSUV形式だと思うんです。そ\nれを考えると、町長公用車は町長が乗るんだから当然１人、２人程度しか乗らないという捉え方\nでSUVもいいのですけど、むしろワゴン車を購入という計画を組んだ方がよかったのではないの\nかな。どうせ７００万円を超えるということであれば、という風にも思っておりました。その可\n能性というのは今後どうなんですか。別の公用車を含めても。",
+    "text_length": 205,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-023"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-008",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "浜塚議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "浜塚久好",
+    "member_faction": "",
+    "text": "１台目アリアですか、３月１４日納車ということでございますよね。道の補助金ということで\n話しされていますけども、補助要件２分の１とかいくらとか、その部分についての説明がなかっ\nたと思いますが、これは１台目も２台目も同じような補助率で終えれる見通しなんでしょうか。\n－７－",
+    "text_length": 134,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-025"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-009",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "浜塚議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "浜塚久好",
+    "member_faction": "",
+    "text": "仮にですね、７８０万円ということは３９０万円、そこから８０万円を引いて３１０万円。１\n台目はそれくらいが町の持ち出しということでよろしいでしょうか。",
+    "text_length": 74,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-027"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-010",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "浜塚議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "浜塚久好",
+    "member_faction": "",
+    "text": "前は見取り図みたいなものをつけてもらったと思うんですが、場所の特定のためにね。\nあと何ヶ所残っておりますか。",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-034"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-011",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "浜塚議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "浜塚久好",
+    "member_faction": "",
+    "text": "１区画ということは、電波塔の隣の角地ということになると思いますが、それでよろしいでし\nょうか。",
+    "text_length": 47,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-036"
+      ]
+    }
+  },
+  {
+    "id": "assabu-20242003-1-012",
+    "municipality": "assabu",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "議事録本文 [PDFファイル／242KB]",
+    "date": null,
+    "speaker": "香川議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "香川直樹",
+    "member_faction": "",
+    "text": "緑町の分譲地に関しては１区画ということで、将来に向けてまた違った場所で分譲するお考え\nがあるかどうかお聞きしたいと思います。",
+    "text_length": 62,
+    "source": {
+      "minutes_file": "data/assabu/minutes/20242003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-table-038"
       ]
     }
   }

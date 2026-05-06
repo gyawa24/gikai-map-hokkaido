@@ -1,0 +1,347 @@
+[
+  {
+    "id": "kushirocho-20242004-1-001",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "等から、詳細に説明させますので、適切 象とした、新型コロナウイルスワクチン接種\nなるご審議をいただき、原案どおり可決賜わ にかかる必要経費として、１０節需用費から\nりますようお願い申し上げ、提案理由の説明 １２節委託料まで、計４,２９２万円を計上す\nとさせていただきます。 るものであります。",
+    "text_length": 146,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-002",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "長岡賢司財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第６４号、令 以上で、議案第６４号の説明を終わらせて\n和６年度釧路町一般会計補正予算（第３号） いただきます。\nについて、ご説明いたします。 ○議長（橋口春樹） これから質疑を行いま\n第１条は、「歳入歳出予算の補正」で、予 す。\n算の総額に歳入歳出それぞれ ４,２９２万円 質疑はありませんか。\nを追加し、予算の総額を歳入歳出それぞれ ３番 木村議員。\n１４６億８,９９６万円と定めるものでありま ○３番（木村隆明） ３番木村です。予算書\nす。 の３ページですね、４款１項４目の委託料のと\n議案書３ページ及び４ページ、第１表の ころです。高齢者のウイルスの委託料ってなっ\n「歳入歳出予算補正」につきましては、後ほ てますけれども、今度５類になってワクチンと\n－ 4 －\n6④臨 7/26\n\nか有料になるって言われていますよね。その分 いるでしょうからさらなる助成とかっていうの\nを例えば高齢者の一部負担をさらに軽減すると はあるのでしょうか。\nかなんかで、そのためのワクチン代とかのもの ○議長（橋口春樹） けんこう応援課長。\nの委託料という考え方でよろしいのでしょうか。 ○けんこう応援課長（村木美香） この新型",
+    "text_length": 509,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-003",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "村木美香けんこう応援課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この 高齢者のインフルエンザのワクチン接種と同\n１２節委託料の算出根拠についてのお尋ねか 様の減免制度を設ける想定をしており、町民\nと思います。このワクチン接種委託料につき 税非課税世帯に属する方は半額免除、生活保\nましては、接種に、今議員がおっしゃったよ 護受給世帯に属する方や、中国残留邦人等支\nうに住民に負担していただく自己負担額を除 援給付受給世帯に属する方については全額免\nいたものを委託料として算出しております。 除を予定しております。",
+    "text_length": 224,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-004",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村隆明",
+    "member_faction": "",
+    "text": "（木村隆明） 一部負担と全体でかかる ○３番（木村隆明） わかりました。ぜひその\nものの公的負担分ということで。大体これおそ ような形でお願いしたいと思います。\nらく社会保険適用にならないと思うのですけれ 続きまして５ページなのですけれども、繰越\nどもね、自己負担って釧路町の場合いくらくら 明許費おそらく土木費の除雪用のトラックだと\nいを想定されているのでしょうか。 思うのですけれども、予算書の方に出ていた額",
+    "text_length": 206,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-005",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "村木美香けんこう応援課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "このワク うのですけれども、これは何か事情があるので\nチン接種につきましては、国の方の調査でワ しょうか。\nクチン接種にかかるワクチン代ですとか、注 ○議長（橋口春樹） 道路河川課長。\n射にかかる手技料などを含めまして、１万５， ○道路河川課長（矢野誠） 繰越明許費の金\n３００円ほど必要だと国からの情報提供があ 額の中身は機械の備品の購入費のほかに、役\nりました。ここから歳入にもありますが国助 務費車検の手数料とか自賠責保険とかの金額\n成金のほうが１人あたり８，３００円であり の金額と重量税とかも含まれておりますので、\nますので、残りの７，０００円が実費分とい その辺で全体でこの金額になっています。\nう形になり、住民の方に負担していただくこ ○議長（橋口春樹） 木村議員。\nとが法律上可能な金額となっておりますが、 ○３番（木村隆明） 承知しました。それと、\nこの中からさらに町としても接種していただ こんなに早く繰越明許が出るっていうのは、例\nきやすいように、町もさらに負担をし、住民 えば車の絡みですといろいろな事情があって納\nの方には今補正予算の提案にあたりましては、 期とかの面とかもあるのでしょうけれども、何\n３，２６０円を自己負担として想定して予算 か要因、具体的なものって何点かあったのでし\nを計上したところでございます。 ょうか。",
+    "text_length": 577,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-006",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村隆明",
+    "member_faction": "",
+    "text": "（木村隆明） わかりました。自己負担 ○道路河川課長（矢野誠） この事業の財源\n額を軽くする方向ということですけれども、例 なのですが、緊急自然災害防止対策事業債と\nえばこれ低所得のね、国保非課税とかになって いう起債を使っております。この起債に関し\nいる方、５割、７割ってありますよね。そうい てまして、国土交通省の承認が必要なものに\nう方々に対する場合、後期高齢者も当然なって なっておりまして、その承認に少し時間がか\n－ 5 －\n6④臨 7/26\n\nかったものと、当初納期が９ヶ月予定してい 令和６年の３月まで行われた接種となってお\nたのですが今年度になって約１年かかると言 り、この間に接種された６５歳以上の方の接\nわれたものですから年度内に執行できないと 種率が５５％となっております。\nいうことで繰越明許費とさせていただきまし ○議長（橋口春樹） 中家議員。\nた。 ○９番（中家治子） はい、わかりました。こ",
+    "text_length": 410,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-007",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村隆明",
+    "member_faction": "",
+    "text": "（木村隆明） 承知しました。１年かか っていうようなことで言われているので、期間\nると言われたから今年の雪のシーズン間に合わ についてはちょっと確認をしていなかったので、\nないでしょうから、事実上、今年は買えないな その点については了解いたしました。\nって断念したって捉え方でよろしいでしょうか。 それで、新聞等でご承知だと思いますけれど",
+    "text_length": 169,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-008",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "矢野誠道路河川課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "はい、そのとお 感染者が増えているということと、これまで接\nりでございます。 種したワクチンの耐性ができているようなね、",
+    "text_length": 60,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-009",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中家治子",
+    "member_faction": "日本共産党",
+    "text": "（中家治子） ９番、中家です。歳出 期間がある中で国としてはどういう動きがある\n３ページのワクチン接種にかかわって何点かお のかというのを教えてください。\n聞きしたいと思います。１２節の委託料で予防 ○議長（橋口春樹） けんこう応援課長。\n接種の人数ですけれども、３，４５０名という ○けんこう応援課長（村木美香） ワクチン\nふうに設定しておりますけれども、この内訳と につきましては、３月まで使用しておりまし\nいうか算出根拠みたいなのは何でしょうか。 たワクチンとは異なるワクチンが使用される",
+    "text_length": 247,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-010",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "村木美香けんこう応援課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "こちらに うが国の承認を受ける準備を進めていると聞\nつきましては、令和５年の秋開始接種で高齢 いております。また、ワクチンの株ですけれ\n者の方を対象とした新型コロナの特例臨時ワ ども、オミクロン株の派生株ではありますが、\nクチン接種の接種率が５５％でした。この ＪＮ．１系統及びその下位系統へのより高い\n５５％を基に高齢者の人口にかけて算出した 中和抗体を誘導する抗原を含むことというこ\n人数が３，４５０名ということになっており とでそれに該当したものが承認されるという\nます。 ことで国の方から情報が来ております。",
+    "text_length": 258,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-011",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中家治子",
+    "member_faction": "日本共産党",
+    "text": "（中家治子） 春接種も終わっているの ○９番（中家治子） ワクチンの種類だとか専\nですけれども、実際には、実績といいますか、 門的なことはわからないのですけれども、ただ、\nどういう状況だったのかというのを教えていた 国としても新しいそういう株に対応するという\nだければと思います。 ことでワクチンも作るなり、そういう動きをし",
+    "text_length": 162,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-012",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "村木美香けんこう応援課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "新型コロ 体調をどう認識するかということもあるかと思\nナウイルスワクチン接種のワクチンの病気に うのですけれども、ワクチン接種について主体\n対する株の選定ですが、まずＷＨＯの方で流 は国なのだと思うのですけれども、実際に行う\n行株を想定し、この株ということで決定をさ のは自治体なので直接的な相談などは自治体に\nれ、それに基づき日本として、国として毎年 来ると思うのですよね。そういった中で、相談\nどの株の、その株に対応したワクチンを製造 の窓口自体がどういうふうになっているのか、\nメーカーに製造していただき、そのワクチン どういう、今までだとコールセンターとかこう\nを認証するというような形で毎年どの株が流 いうところに電話してくださいというような案\n行するかということを想定し、毎年ワクチン 内なんかも紙ベースも含めてあったと思うので\nの株を選定していくというような仕組みにな すけれども、今そういうのがない中でね、町民\nっております。 の皆さん方にどういうふうにお知らせしていく",
+    "text_length": 443,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-013",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中家治子",
+    "member_faction": "日本共産党",
+    "text": "（中家治子） ５類になって、季節性の しょうか。\nインフルエンザと同じ区分けとしてはなったの ○議長（橋口春樹） けんこう応援課長。\nですけれども、インフルエンザの予防接種と同 ○けんこう応援課長（村木美香） 今現在は\nじような考え方で国は今進めているということ 釧路町のホームページにおきまして、まだ国、\nかなと思います。 北海道の方の相談窓口を設けておりますので、\nそれで、今回の令和５年１０月から令和６年 そちらのご案内ですとか、町の方も当課の方\n３月までの接種の中で、ワクチン接種下といい で相談窓口となっておりますので、その窓口\nますかそういうことで何かあったかどうかとい も周知をしているところであります。\nうことを確認したいと思います。 ○議長（橋口春樹） 中家議員。",
+    "text_length": 341,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-028"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-014",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "村木美香けんこう応援課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "何かあっ 方たちにはご案内は行くと思うのですけれども、\nたかというところはワクチン接種に伴い、健 その時にやっぱりもしそういうワクチンによる\n康被害や副反応などの相談があったかという さまざまな症状が出た場合についてというとこ\nことかと理解し、お答えします。 ろについては、これまでも書いていたかもわか\nこの昨年の秋からの接種の中でということ りませんけれども、そういう相談する、例えば\nでは、接種した医療機関を通じて副反応報告 ここで言うと道とかになるのかもわかりません\nが上がってきたりということは受付した事例 けれども、一義的には町も含めてぜひ相談くだ\nはございません。ただ、それより以前に接種 さいというようなことは書いていただければな\nされた方で、通常の副反応かなと思っていた と思うのですけれどもその点はいかがでしょう\nところ、まだ発熱が続いているですとか、通 か。\n常の副反応ではないんじゃないかということ ○議長（橋口春樹） けんこう応援課長。\nで心配をされてご相談を受けたというような ○けんこう応援課長（村木美香） 法律に基\nワクチン接種始まってから今までの接種の中 づくワクチン接種につきましては、そういっ\nで、かなりの時間が経ったものについての相 た救済制度もあるということを理解していた\n談を受けたりという事例はございます。 だいた上で接種いただくということになって",
+    "text_length": 596,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-029"
+      ]
+    }
+  },
+  {
+    "id": "kushirocho-20242004-1-015",
+    "municipality": "kushirocho",
+    "council_id": 20242004,
+    "council_name": "令和6年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "06.07.26（金）議案（第64号）ほか",
+    "date": null,
+    "speaker": "９番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中家治子",
+    "member_faction": "日本共産党",
+    "text": "（中家治子） 接種をされた方が自分の 救済制度、相談窓口についても周知をしてい\n－ 7 －\n6④臨 7/26\n\nく予定でおります。",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/kushirocho/minutes/20242004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  }
+]

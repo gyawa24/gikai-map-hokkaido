@@ -332,8 +332,12 @@ function main() {
   lines.push("");
   lines.push("## 変換課題の内訳");
   lines.push("");
-  for (const [label, count] of parserIssues) {
-    lines.push(`- ${label}: ${count}`);
+  if (parserIssues.length === 0) {
+    lines.push("- なし");
+  } else {
+    for (const [label, count] of parserIssues) {
+      lines.push(`- ${label}: ${count}`);
+    }
   }
   lines.push("");
   lines.push("## 一覧");
