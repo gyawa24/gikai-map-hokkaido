@@ -26,6 +26,8 @@
   - 利用者に見せる更新情報の単一の真実源
 - `scripts/refresh-minutes.mjs`
   - 既知スクレイパごとの `minutes` 再取得をまとめて回す入口
+- `docs/deployment-branch-workflow.md`
+  - Vercel Pro化後のビルド時間・利用量を抑えるためのブランチ運用とPreview抑制ルール
 
 ## 優先レーン
 
@@ -174,6 +176,7 @@ segments 生成、site/data 同期、verify、画面確認まで進めて。
 - `docs/operations-board.md` の状態を更新したか
 - `coverage` に反映が必要なら更新したか
 - 利用者向け更新なら `site/data/news.json` を更新したか
+- production deploy 予定なら `docs/deployment-branch-workflow.md` の手順に沿っているか
 - 途中で止めたなら `次に何をすれば再開できるか` を1行残したか
 
 ## 避けること

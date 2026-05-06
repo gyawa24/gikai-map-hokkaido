@@ -7,6 +7,8 @@
     "prebuild": "node scripts/build-search-index.mjs",
     "build": "next build",
     "build-search-index": "node scripts/build-search-index.mjs",
+    "deploy:footprint": "node ../scripts/check-deployment-footprint.mjs",
+    "vercel:ignore-build": "node scripts/vercel-ignore-build.mjs",
     "bootstrap:hokkaido:r8-1": "node scripts/bootstrap-hokkaido-stream-meeting.mjs --title '令和8年第1回定例会'",
     "start:auto-superwhisper:r8-1": "node scripts/watch-batch-and-start-superwhisper.mjs --city hokkaido --title '令和8年第1回定例会'",
     "start:scribe:r7-1": "node scripts/launch-scribe-watch-job.mjs --city hokkaido --title '令和7年第1回定例会'",

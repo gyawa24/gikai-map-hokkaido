@@ -51,6 +51,7 @@ Use this before every production release.
 - uptime checks are green
 - error reporting is receiving test events
 - alert routing is correct
+- production deploy is intentional; branch workflow and Vercel Preview suppression are checked in `docs/deployment-branch-workflow.md`
 - backup or recovery expectations are documented if applicable
 - dependency updates are enabled and reviewed
 - server-side rate limit storage is configured in production (`KV_REST_*` or `UPSTASH_REDIS_*`)
