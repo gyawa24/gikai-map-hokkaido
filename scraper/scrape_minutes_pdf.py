@@ -897,6 +897,18 @@ PDF_CONFIGS: dict[str, dict] = {
         "council_tag": "h3",
         "pdf_filter": ["開催"],
     },
+    "shihoro": {
+        "name": "士幌町",
+        # 年別ページ内で h2 の会議見出しごとに、h4「会議録」区間のPDFだけを拾う。
+        "strategy": "council_minutes_section",
+        "index_urls": {
+            2026: "https://www.shihoro.jp/assembly/news/detail.php?news=278",
+            2025: "https://www.shihoro.jp/assembly/news/detail.php?news=236",
+            2024: "https://www.shihoro.jp/assembly/news/detail.php?news=197",
+        },
+        # 令和6年第1回臨時会は画像スキャンPDFで、現行のテキスト抽出では本文化できない。
+        "skip_filenames": ["news_20250423_114637.pdf"],
+    },
 }
 
 TYPE_FLAGS = {
@@ -1870,6 +1882,81 @@ def extract_pdf_links_by_nested_html_sections(cfg: dict, years: list[int]) -> li
     return records
 
 
+def extract_pdf_links_by_council_minutes_section(cfg: dict, years: list[int]) -> list[dict]:
+    """会議見出しの下で「会議録」セクション内PDFだけを拾う戦略。
+
+    士幌町のように、同じ会議見出しの下へ「会議録」「町提出議案」などの
+    セクションが並び、PDFリンクが混在するページ向け。
+    """
+    council_tag = cfg.get("council_tag", "h2").lower()
+    section_tag = cfg.get("section_tag", "h4").lower()
+    minutes_section_text = cfg.get("minutes_section_text", "会議録")
+    skip_filenames = set(cfg.get("skip_filenames", []))
+    index_urls = cfg["index_urls"]
+    records: list[dict] = []
+
+    for year, urls in index_urls.items():
+        if year not in years:
+            continue
+        url_list = urls if isinstance(urls, list) else [urls]
+        for index_url in url_list:
+            r = requests.get(index_url, timeout=30, headers=HEADERS)
+            r.encoding = r.apparent_encoding or "utf-8"
+            r.raise_for_status()
+
+            current_council: dict | None = None
+            in_minutes_section = False
+            order = 0
+
+            for m in TAG_RE.finditer(r.text):
+                tag = m.group("tag").lower()
+                text = re.sub(r"<[^>]+>", "", m.group("text")).strip()
+                attrs = m.group("attrs")
+                text_half = _zen_to_half(text)
+
+                if tag == council_tag:
+                    sm = re.search(r"第\s*(\d+)\s*回", text_half)
+                    current_council = None
+                    in_minutes_section = False
+                    order = 0
+                    if not sm:
+                        continue
+                    if "定例会" in text:
+                        current_council = {"type": "定例会", "seq": int(sm.group(1))}
+                    elif "臨時会" in text:
+                        current_council = {"type": "臨時会", "seq": int(sm.group(1))}
+                    continue
+
+                if tag == section_tag:
+                    in_minutes_section = minutes_section_text in text
+                    continue
+
+                if tag != "a" or not current_council or not in_minutes_section:
+                    continue
+                href_m = HREF_RE.search(attrs)
+                if not href_m:
+                    continue
+                href = href_m.group(1)
+                if ".pdf" not in href.lower():
+                    continue
+                order += 1
+                full = urljoin(index_url, href)
+                fn = href.rsplit("/", 1)[-1]
+                if fn in skip_filenames:
+                    continue
+                records.append({
+                    "type": current_council["type"],
+                    "year": year,
+                    "seq": current_council["seq"],
+                    "filename": fn,
+                    "link_text": text[:80],
+                    "url": full,
+                    "sort_key": (order, fn),
+                })
+
+    return records
+
+
 def _dates_from_japanese_text(text: str) -> list[str]:
     text_half = _zen_to_half(text)
     m = re.search(
@@ -2253,6 +2340,8 @@ def extract_pdf_links(cfg: dict, years: list[int] | None = None) -> list[dict]:
         return extract_pdf_links_by_monthly_meeting_table(cfg, years or [])
     if strategy == "nested_html_sections":
         return extract_pdf_links_by_nested_html_sections(cfg, years or [])
+    if strategy == "council_minutes_section":
+        return extract_pdf_links_by_council_minutes_section(cfg, years or [])
     if strategy == "result_following_minutes":
         return extract_pdf_links_by_result_following_minutes(cfg, years or [])
     if strategy == "category_drilldown":

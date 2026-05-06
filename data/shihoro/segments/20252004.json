@@ -1,0 +1,71 @@
+[
+  {
+    "id": "shihoro-20252004-1-001",
+    "municipality": "shihoro",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年10月２日(PDF/138KB)",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "から行政報告の申し出がありますのでこれを許します。",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/shihoro/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "shihoro-20252004-1-002",
+    "municipality": "shihoro",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年10月２日(PDF/138KB)",
+    "date": null,
+    "speaker": "髙木町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和７年第４回臨時町議会の開会にあたり、９月20 日から21日にかけての大雨による\n被害状況についてご報告申し上げます。\n前線を伴った低気圧が北海道付近を通過し、十勝・釧路管内において道内で初となる線\n状降水体の発生が確認されるなど、20 日夜から 21 日にかけて道東や道央を中心に暴風雨\nに見舞われ、甚大な被害をもたらしたところであります。\n本町においては、降り始めからの降水量が士幌市街で 97.5 ミリを記録し、20 日夜から\n21日未明にかけて強い降雨となりました。\nこの大雨による町内の被害状況ですが、町内各所において道路側溝や明渠排水路が土砂\nで埋塞したほか、道路法面や河川法面の崩壊も発生しており、道路の通行に影響のある箇\n2\n\n所及び急を要する箇所については、応急措置をとったところであります。\n今回の大雨による被害状況の詳細につきましては、説明資料に記載のとおりですが、災\n害復旧に必要な費用につきましては、今臨時会に補正予算を上程しておりますので、よろ\nしくお願いを申し上げます。\n以上、大雨被害に関する報告とさせていただきます。",
+    "text_length": 476,
+    "source": {
+      "minutes_file": "data/shihoro/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "shihoro-20252004-1-003",
+    "municipality": "shihoro",
+    "council_id": 20252004,
+    "council_name": "令和7年第4回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和７年10月２日(PDF/138KB)",
+    "date": null,
+    "speaker": "西野課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "総務課長西野よりご説明申し上げます。\n議案第１号、令和７年度士幌町一般会計補正予算（第７号）ですが、歳入歳出予算の総\n額に歳入歳出それぞれ 6,070 万円を追加し、歳入歳出予算の総額をそれぞれ 133 億 8,940\n万1,000円に改めようとするものです。\nそれでは歳出からご説明いたしますので、５ページをお開き願います。14 款１項１目道\n路橋梁災害復旧費に、９月20日から 21日にかけての大雨による被害発生に伴い、被災箇\n所の復旧に要する費用として 12 節委託料に道路管理委託料 350 万円、13 節使用料及び賃\n借料に重機借上料 740万円、14節工事請負費に道路災害復旧工事 4,680 万円、15 節原材料\n費に道路補修用原材料費 300万円の合計 6,070 万円を追加するものでございます。\n４ページの歳入につきましては、19 款１項１目繰越金の前年度繰越金に 6,070 万円を追\n加し、収支の均衡を図ったところでございます。\n以上で説明を終わります。よろしくご審議を賜り、原案のとおり可決決定いただきます\nようお願い申し上げます。",
+    "text_length": 479,
+    "source": {
+      "minutes_file": "data/shihoro/minutes/20252004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  }
+]
