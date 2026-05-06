@@ -57,6 +57,7 @@
 
 ## Done
 
+- `kamishihoro` の `minutes` / `segments` 整備（一覧ページから記事詳細の添付PDFを取得、令和7年は本会議録未掲載のため令和6年分を対象）
 - `shihoro` の `minutes` / `segments` 整備（会議見出し配下の「会議録」セクションPDFのみ抽出、画像スキャンPDF 1件はOCR待ち）
 - `rankoshi` の `minutes` / `segments` 整備（年別会議録ページのh1見出し直下PDFを会議単位に束ねる、themes は話者名寄せ待ち）
 - `shintotsukawa` の `minutes` / `segments` 整備（タイムスタンプ形式PDFをPDF本文ヘッダーで判定、themes は話者名寄せ待ち）
