@@ -38,14 +38,19 @@ const nextConfig: NextConfig = {
   },
   outputFileTracingExcludes: {
     // 全 Function 共通で除外する「どの dynamic/ISR route でも実行時には不要」なもの。
-    // - minutes 本文(202MB): `[city]/minutes/[id]` は dynamicParams=false & revalidate なしで
-    //   build 時に全プリレンダ済。実行時 regenerate は起きない。
+    // - minutes 本文: `[city]/minutes/[id]` は recent N のみプリレンダし、古い本文は
+    //   必要時に GitHub Raw fallback で読む。
+    // - segments 本文: AI検索/テーマ生成用の発言単位データ。公開 Function の実行時には
+    //   直接読まないため、関数バンドルへ含めない。
+    // - ocr_drafts: 公開昇格前の評価用下書き。常に関数バンドルから除外する。
     // - ルート直下の数字連番JSON(46MB): scraper 生データの置き場で、どの route も読まない。
     //
     // 注意: sessions/*.json と minutes/enriched/*.json はここで落とすと
     //       /api/search と /api/og-segment が壊れるので含めない。
     "**": [
-      "./data/*/minutes/*.json",
+      "./data/*/minutes/**/*.json",
+      "./data/*/segments/**/*",
+      "./data/*/ocr_drafts/**/*",
       "./data/*/???.json",
       "./data/*/????.json",
     ],
