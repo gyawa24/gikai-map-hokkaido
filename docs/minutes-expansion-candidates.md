@@ -6,9 +6,13 @@
 
 ## 優先候補
 
-2026-05-06 時点で、このメモの旧上位候補だった `numata` / `kamisunagawa` / `shimokawa` / `biei` / `kuriyama` / `shinhidaka` / `toyoura` / `yakumo` / `toyako` / `mori` / `tsukigata` / `chippubetsu` / `shintotsukawa` / `rankoshi` / `shihoro` / `kamishihoro` は対応済み。
+2026-05-06 時点で、このメモの旧上位候補だった `numata` / `kamisunagawa` / `shimokawa` / `biei` / `kuriyama` / `shinhidaka` / `toyoura` / `yakumo` / `toyako` / `mori` / `tsukigata` / `chippubetsu` / `shintotsukawa` / `rankoshi` / `shihoro` / `kamishihoro` / `assabu` は対応済み。
 
-次候補は `docs/municipality-coverage.md` の members-only から再選定する。
+| 優先度 | 自治体 | slug | 根拠 | 想定対応 |
+|---|---|---|---|---|
+| 1 | 浦幌町 | `urahoro` | 年別「会議録」ページに「第N回第M号」PDFが直接並ぶ。リンクテキストから回数・号数・開催日を読める。 | `linktext_pattern` 系の拡張または専用設定で対応しやすい。 |
+| 2 | 幌加内町 | `horokanai` | 公式議会サイトの会議録・審議録ページに会議録PDFが直接並ぶ。PDF本文ヘッダーから年度・回数・種別を読める。 | `pdf_header` 系でハッシュファイル名PDFを本文判定する。 |
+| 次点 | 浦河町 | `urakawa` | 本会議詳細ページに日別会議録PDFがあるが、親一覧から会議詳細へ辿る必要がある。 | 多階層巡回の追加で対応可能。 |
 
 ## 完了済み
 
@@ -30,6 +34,7 @@
 | 蘭越町 | `rankoshi` | 共通 `scrape_minutes_pdf.py` の年度別HTML戦略に年別ページを追加し、令和6年・令和7年・令和8年1月の会議録PDFから `minutes` / `segments` まで対応済み。 |
 | 士幌町 | `shihoro` | 共通 `scrape_minutes_pdf.py` に会議見出し + 会議録セクション戦略を追加し、令和6年・令和7年・令和8年3月までの会議録PDFから `minutes` / `segments` まで対応済み。 |
 | 上士幌町 | `kamishihoro` | 共通 `scrape_minutes_pdf.py` に一覧記事詳細の添付PDF戦略を追加し、令和6年の定例会・臨時会PDFから `minutes` / `segments` まで対応済み。 |
+| 厚沢部町 | `assabu` | 共通 `scrape_minutes_pdf.py` の年別一覧 → 会議詳細戦略で、令和6年・令和7年の議事録本文PDFから `minutes` / `segments` まで対応済み。themes は議員名簿ミスマッチ解消待ち。 |
 
 ## 見送り
 
@@ -43,5 +48,5 @@
 
 ## 次の実装順
 
-1. `docs/municipality-coverage.md` の members-only から次候補を再選定する。
-2. PDFテキスト抽出だけで足りる自治体を優先し、OCR前提の自治体は見送り欄へ回す。
+1. `urahoro` の年別会議録ページから、令和6年・令和7年の本会議PDFを `minutes` / `segments` 化する。
+2. `horokanai` のPDFヘッダー判定を確認し、テキスト抽出できる会議録PDFだけを取り込む。

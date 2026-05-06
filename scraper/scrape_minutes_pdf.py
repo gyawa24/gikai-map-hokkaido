@@ -917,6 +917,16 @@ PDF_CONFIGS: dict[str, dict] = {
         "exclude_detail_keywords": ["委員会"],
         "pdf_filter": [".pdf"],
     },
+    "assabu": {
+        "name": "厚沢部町",
+        # 年別一覧 → 会議詳細 → 「議事録本文」PDF。名簿・議事日程PDFは除外する。
+        "strategy": "category_drilldown",
+        "index_urls": {
+            2025: "https://www.town.assabu.lg.jp/site/gikai/list32-218.html",
+            2024: "https://www.town.assabu.lg.jp/site/gikai/list32-205.html",
+        },
+        "pdf_filter": ["議事録本文"],
+    },
 }
 
 TYPE_FLAGS = {

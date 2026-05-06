@@ -24,10 +24,10 @@
 
 ### Coverage
 
-- `minutes` 追加候補を再選定する
-  - 目的: members only 残件から、公式サイトに本文会議録PDFがある自治体を次に進める
-  - 完了条件: `docs/minutes-expansion-candidates.md` の優先候補を次の2件程度に更新する
-  - 主に触る場所: `docs/municipality-coverage.md`, `docs/minutes-expansion-candidates.md`
+- `urahoro` の `minutes` / `segments` を整備する
+  - 目的: 年別会議録ページに直接並ぶ「第N回第M号」PDFを会議単位に束ねる
+  - 完了条件: 令和6年・令和7年の本会議PDFが `/urahoro/minutes` で閲覧できる
+  - 主に触る場所: `scraper/scrape_minutes_pdf.py`, `data/urahoro/`, `site/data/urahoro/`
 
 ## Next
 
@@ -57,6 +57,8 @@
 
 ## Done
 
+- `assabu` の `minutes` / `segments` 整備（年別一覧から会議詳細の「議事録本文」PDFのみ取得、themes は議員名簿ミスマッチ解消待ち）
+- `minutes` 追加候補を再選定し、`urahoro` / `horokanai` を次候補に更新
 - `kamishihoro` の `minutes` / `segments` 整備（一覧ページから記事詳細の添付PDFを取得、令和7年は本会議録未掲載のため令和6年分を対象）
 - `shihoro` の `minutes` / `segments` 整備（会議見出し配下の「会議録」セクションPDFのみ抽出、画像スキャンPDF 1件はOCR待ち）
 - `rankoshi` の `minutes` / `segments` 整備（年別会議録ページのh1見出し直下PDFを会議単位に束ねる、themes は話者名寄せ待ち）

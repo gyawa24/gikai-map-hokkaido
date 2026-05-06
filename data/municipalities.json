@@ -1460,12 +1460,14 @@
     "furigana": "あっさぶちょう",
     "level": "municipality",
     "features": [
-      "members"
+      "members",
+      "minutes"
     ],
     "active": true,
-    "minutes_status": "unavailable",
-    "minutes_status_note": "公式サイトに会議録PDFはありますが多階層構造とPDF対の判別が必要で現時点は取り込み未対応です。",
-    "minutes_verified_at": "2026-04-22"
+    "minutes_status": "available",
+    "minutes_status_note": "厚沢部町議会の年別議事録ページから、本会議の議事録本文PDFを取り込みました。",
+    "minutes_verified_at": "2026-05-06",
+    "system": "pdf_inhouse"
   },
   {
     "slug": "otobe",
