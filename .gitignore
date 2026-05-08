@@ -17,5 +17,11 @@ mcp-server/_restricted-index.json
 # Restricted municipality raw data (license unclear — keep local only)
 data/sapporo/
 site/data/sapporo/
+
+# Local RAG PoC extraction inputs/outputs (rebuildable, may be large)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
 .vercel
 .env*.local
