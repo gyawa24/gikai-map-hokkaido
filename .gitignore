@@ -23,5 +23,9 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+
+# Local extraction quality reports (rebuildable)
+reports/*
+!reports/.gitkeep
 .vercel
 .env*.local
