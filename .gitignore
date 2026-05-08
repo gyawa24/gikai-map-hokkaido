@@ -23,6 +23,8 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+data/chunks/*
+!data/chunks/.gitkeep
 
 # Local extraction quality reports (rebuildable)
 reports/*
