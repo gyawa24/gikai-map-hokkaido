@@ -3,6 +3,7 @@ import path from "path";
 import Link from "next/link";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getNews, categoryClass } from "@/lib/news";
+import { getLatestArticles, articleCategoryClass, formatArticleDate } from "@/lib/articles";
 import { getSiteStats } from "@/lib/siteStats";
 import { getAllTags } from "@/lib/topics";
 import { buildPageMetadata } from "@/lib/metadata";
@@ -80,6 +81,7 @@ export default function HomePage() {
   const prefecture = allMunis.find((m) => m.level === "prefecture");
   const municipalities = allMunis.filter((m) => m.level === "municipality");
   const latestNews = getNews().slice(0, 3);
+  const latestArticles = getLatestArticles(2);
   const stats = getSiteStats();
   const topTags = getAllTags().slice(0, 12);
   const regionOrder = ["石狩", "空知", "後志", "胆振", "日高", "渡島", "檜山", "上川", "留萌", "宗谷", "オホーツク", "十勝", "釧路", "根室"];
@@ -138,6 +140,9 @@ export default function HomePage() {
           <Link href="/sources" className="theme-button px-4 py-2 text-sm">
             掲載情報と出典
           </Link>
+          <Link href="/articles" className="theme-button px-4 py-2 text-sm">
+            読みもの
+          </Link>
         </div>
       </section>
 
@@ -183,6 +188,43 @@ export default function HomePage() {
                   </span>
                 </div>
                 <p className="mt-2 text-sm font-black text-[#111827]">{item.title}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {latestArticles.length > 0 && (
+        <section className="mx-auto max-w-[68rem] border-t border-[#D8DEE8] pt-6">
+          <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <h2 className="text-[1.7rem] font-black leading-tight text-[#111827] sm:text-[2rem]">読みもの</h2>
+              <p className="mt-1 text-sm text-[#64748B]">
+                議会質問の背景や、質問した議員へのインタビューを読む入口です。
+              </p>
+            </div>
+            <Link href="/articles" className="text-sm font-black text-[#1B3A6B]">
+              すべての記事を見る ›
+            </Link>
+          </div>
+
+          <div className="grid gap-3 md:grid-cols-2">
+            {latestArticles.map((article) => (
+              <Link
+                key={article.slug}
+                href={`/articles/${article.slug}`}
+                className="rounded-[22px] border-2 border-[#D8DEE8] bg-white px-4 py-4 shadow-[0_6px_14px_rgba(27,58,107,0.06)] transition-transform hover:-translate-y-0.5 hover:border-[#1B3A6B]"
+              >
+                <div className="mb-2 flex flex-wrap items-center gap-2">
+                  <span className={`rounded-full border px-2 py-0.5 text-xs font-semibold ${articleCategoryClass(article.category)}`}>
+                    {article.category}
+                  </span>
+                  <time dateTime={article.date} className="text-xs font-bold text-[#64748B]">
+                    {formatArticleDate(article.date)}
+                  </time>
+                </div>
+                <h3 className="text-lg font-black leading-snug text-[#111827]">{article.title}</h3>
+                <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-[#475569]">{article.summary}</p>
               </Link>
             ))}
           </div>

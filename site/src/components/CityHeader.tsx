@@ -38,12 +38,14 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
     : [
         { href: "/", label: "トップ" },
         { href: "/search", label: "検索" },
+        { href: "/articles", label: "読みもの" },
       ];
 
   const mobileQuickLinks = city
     ? []
     : [
         { href: "/search", label: "検索する" },
+        { href: "/articles", label: "読みもの" },
         { href: "/#municipalities", label: "市町村一覧" },
       ];
 
@@ -126,6 +128,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
                 { href: "/search?q=議員", label: "議員" },
                 { href: "/search?q=議事録", label: "議事録" },
                 { href: "/search", label: "検索" },
+                { href: "/articles", label: "読みもの" },
               ].map((item) => (
                 <Link
                   key={item.href}
@@ -139,7 +142,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
           )}
         </div>
 
-        <div className="mobile-nav-fade">
+        <div className={`mobile-nav-fade ${city ? "" : "hidden sm:block"}`}>
           <nav className="flex gap-2 overflow-x-auto pb-1 pr-8 md:flex-wrap md:overflow-visible md:pb-0 md:pr-0" aria-label="メインナビゲーション">
             {navItems.map(renderNavLink)}
           </nav>

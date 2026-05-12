@@ -3,6 +3,7 @@ import path from "path";
 import type { MetadataRoute } from "next";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getAllTags } from "@/lib/topics";
+import { getArticles } from "@/lib/articles";
 
 const BASE_URL = "https://chihougikai.com";
 
@@ -67,6 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     toEntry("/", "daily", 1.0),
     toEntry("/search", "weekly", 0.9),
     toEntry("/topics", "weekly", 0.8),
+    toEntry("/articles", "weekly", 0.7),
     toEntry("/news", "weekly", 0.6),
     toEntry("/sources", "weekly", 0.6),
     toEntry("/decisions", "weekly", 0.5),
@@ -78,6 +80,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const { tag } of getAllTags()) {
     entries.push(toEntry(`/topics/${encodeURIComponent(tag)}`, "weekly", 0.6));
+  }
+
+  for (const article of getArticles()) {
+    entries.push(toEntry(`/articles/${article.slug}`, "monthly", 0.6));
   }
 
   for (const municipality of getMunicipalities().filter((item) => item.active)) {
