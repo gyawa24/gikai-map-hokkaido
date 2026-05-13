@@ -64,7 +64,8 @@ function parseSections(markdown: string): ArticleSection[] {
 
   function flushParagraph() {
     if (!current || paragraphLines.length === 0) return;
-    current.paragraphs.push(paragraphLines.join(" "));
+    const isTable = paragraphLines.every((line) => line.startsWith("|"));
+    current.paragraphs.push(paragraphLines.join(isTable ? "\n" : " "));
     paragraphLines = [];
   }
 

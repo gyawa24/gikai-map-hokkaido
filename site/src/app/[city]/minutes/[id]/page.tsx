@@ -6,6 +6,8 @@ import type { Metadata } from "next";
 import type { MinutesSession, MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesDetailClient from "@/components/MinutesDetailClient";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
+import { hasStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
 
 // Build時は recent N councils のみ static generate（generateStaticParams）。
 // それ以外の URL は ISR で初回アクセス時にレンダリングし、Vercel エッジでキャッシュ。
@@ -92,20 +94,19 @@ export async function generateMetadata({
   const enriched = await getEnriched(city, id);
 
   const title = session
-    ? `${session.name} | ${cityName}議会 | 地方議会ドットコム`
-    : `議事録 | ${cityName}議会 | 地方議会ドットコム`;
+    ? `${session.name} - ${cityName}議会`
+    : `議事録 - ${cityName}議会`;
   const description = enriched?.summary
     ? enriched.summary.slice(0, 100)
     : session
     ? `${session.type_label}（${session.japanese_year}）`
     : `${cityName}議会の議事録`;
 
-  return {
+  return buildPageMetadata({
     title,
     description,
-    openGraph: { title, description },
-    twitter: { card: "summary" },
-  };
+    path: `/${city}/minutes/${id}`,
+  });
 }
 
 export async function generateStaticParams() {
@@ -199,6 +200,7 @@ export default async function CityMinutesDetailPage({
 
   const enriched = await getEnriched(city, id);
   const category = typeCategory(session.type_label);
+  const canReadStructuredMinutes = await hasStructuredMinutes(city, id);
 
   const totalSpeeches = session.schedules.reduce(
     (acc, s) =>
@@ -275,6 +277,28 @@ export default async function CityMinutesDetailPage({
           </span>
         </div>
       </section>
+
+      {canReadStructuredMinutes && (
+        <section className="mb-5 rounded-2xl border border-[#C5D0E6] bg-white px-4 py-4 shadow-sm">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-sm font-bold text-[#1B3A6B]">
+                この議事録を発言・質問項目別に読む
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-[#4A5568]">
+                公式会議録の原文をもとに、発言単位・質問者別・質問項目別に整理した試験版ビューです。
+                正式な内容は公式会議録をご確認ください。
+              </p>
+            </div>
+            <a
+              href={`/${city}/minutes/${id}/turns`}
+              className="inline-flex shrink-0 items-center justify-center rounded-full border border-[#C5D0E6] bg-[#E8EEF7] px-4 py-2 text-sm font-bold text-[#1B3A6B] transition-colors hover:bg-[#DCE7F6]"
+            >
+              発言・質問項目別に読む
+            </a>
+          </div>
+        </section>
+      )}
 
       <Suspense>
         <MinutesDetailClient session={session} enriched={enriched} cityName={cityName} slug={city} />

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { ScheduleEvent } from "@/types/schedule";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -13,7 +14,11 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  return { title: `行事予定 - ${cityName}` };
+  return buildPageMetadata({
+    title: `行事予定 - ${cityName}`,
+    description: `${cityName}議会の行事予定を掲載しています。委員会、定例会、議会関連日程を確認できます。`,
+    path: `/${city}/schedule`,
+  });
 }
 
 function getSchedule(city: string): ScheduleEvent[] {

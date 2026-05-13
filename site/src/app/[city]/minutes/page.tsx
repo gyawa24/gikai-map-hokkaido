@@ -7,6 +7,7 @@ import MinutesIndexClient from "@/components/MinutesIndexClient";
 import { getMunicipality } from "@/lib/municipalities";
 import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
 import { buildBreadcrumbList } from "@/lib/structuredData";
+import { hasStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
 
 export async function generateMetadata({
   params,
@@ -86,11 +87,14 @@ export default async function CityMinutesPage({
   const cityName = municipality?.name ?? city;
 
   const allItems = getMinutesIndex(city);
-  const items = allItems.map((item) => ({
-    ...item,
-    enriched: getEnriched(city, item.council_id),
-    category: categoryLabel(item.type_label),
-  }));
+  const items = await Promise.all(
+    allItems.map(async (item) => ({
+      ...item,
+      enriched: getEnriched(city, item.council_id),
+      category: categoryLabel(item.type_label),
+      hasStructuredMinutes: await hasStructuredMinutes(city, String(item.council_id)),
+    }))
+  );
 
   const enrichedCount = items.filter((i) => i.enriched).length;
   const restricted = municipality?.minutes_access === "restricted";

@@ -53,11 +53,12 @@ function getSessionIds(city: string): string[] {
 function toEntry(
   route: string,
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"],
-  priority: number
+  priority: number,
+  lastModified: Date | string = new Date()
 ): MetadataRoute.Sitemap[number] {
   return {
     url: `${BASE_URL}${route}`,
-    lastModified: new Date(),
+    lastModified,
     changeFrequency,
     priority,
   };
@@ -83,7 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const article of getArticles()) {
-    entries.push(toEntry(`/articles/${article.slug}`, "monthly", 0.6));
+    entries.push(toEntry(`/articles/${article.slug}`, "monthly", 0.6, article.date));
   }
 
   for (const municipality of getMunicipalities().filter((item) => item.active)) {

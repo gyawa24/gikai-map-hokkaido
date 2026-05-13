@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getByTag, getAllTags } from "@/lib/topics";
+import { getByTag } from "@/lib/topics";
 import AIDisclaimer from "@/components/AIDisclaimer";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
@@ -28,17 +28,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-// Build時は出現頻度上位 N タグのみ static generate。
-// 他のタグは ISR で初回アクセス時レンダリング、エッジでキャッシュ。
-export const dynamicParams = true;
-export const revalidate = 86400; // 1 日
-
-const TOP_TAGS_PRERENDER = 30;
-
-export async function generateStaticParams() {
-  const tags = getAllTags(); // 既に出現頻度降順
-  return tags.slice(0, TOP_TAGS_PRERENDER).map(({ tag }) => ({ tag }));
-}
+// 日本語タグを ISR/static の cache tag に載せると Vercel のヘッダー生成で失敗するため、
+// ASCII slug 化するまでタグ詳細はリクエストごとに描画する。
+export const dynamic = "force-dynamic";
 
 export default async function TopicTagPage({ params }: Props) {
   const { tag } = await params;

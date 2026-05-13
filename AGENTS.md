@@ -24,6 +24,7 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 | `node_modules/next/dist/docs/` | Next.js の正確なAPI仕様。**コード書く前に確認** |
 | `README.md` | プロジェクト概要 |
 | `docs/` | MCP API キー運用、リリースチェックリスト等 |
+| `docs/editorial/article-source-policy.md` | **読みもの記事を書くなら必読**。読者向けURL・出典明示のルール |
 
 ---
 

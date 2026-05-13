@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
@@ -14,6 +15,105 @@ import {
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+function renderInlineMarkdown(text: string) {
+  const nodes: ReactNode[] = [];
+  const linkPattern = /\[([^\]]+)\]\(((?:https?:\/\/|\/)[^)]+)\)/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = linkPattern.exec(text)) !== null) {
+    const [raw, label, href] = match;
+    if (match.index > lastIndex) {
+      nodes.push(text.slice(lastIndex, match.index));
+    }
+    const isExternal = href.startsWith("http");
+    nodes.push(
+      <a
+        key={`${href}-${match.index}`}
+        href={href}
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noopener noreferrer" : undefined}
+        className="font-semibold text-[#2A5298] underline underline-offset-4 transition-colors hover:text-[#1B3A6B]"
+      >
+        {label}
+      </a>
+    );
+    lastIndex = match.index + raw.length;
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push(text.slice(lastIndex));
+  }
+
+  return nodes;
+}
+
+function parseMarkdownTable(markdown: string) {
+  const rows = markdown
+    .split("\n")
+    .map((row) =>
+      row
+        .trim()
+        .replace(/^\|/, "")
+        .replace(/\|$/, "")
+        .split("|")
+        .map((cell) => cell.trim())
+    )
+    .filter((row) => row.length > 1);
+
+  if (rows.length < 2) return null;
+  const [head, separator, ...body] = rows;
+  if (!separator.every((cell) => /^:?-{3,}:?$/.test(cell))) return null;
+
+  return { head, body };
+}
+
+function ArticleBlock({ block }: { block: string }) {
+  const table = block.startsWith("|") ? parseMarkdownTable(block) : null;
+
+  if (table) {
+    return (
+      <div className="overflow-x-auto rounded-xl border border-[#E2E8F0]">
+        <table className="min-w-full divide-y divide-[#E2E8F0] text-sm">
+          <thead className="bg-[#F4F6F9]">
+            <tr>
+              {table.head.map((cell) => (
+                <th
+                  key={cell}
+                  scope="col"
+                  className="px-3 py-2 text-left font-bold text-[#1B3A6B]"
+                >
+                  {renderInlineMarkdown(cell)}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-[#E2E8F0] bg-white">
+            {table.body.map((row, rowIndex) => (
+              <tr key={`${row.join("-")}-${rowIndex}`}>
+                {row.map((cell, cellIndex) => (
+                  <td
+                    key={`${cell}-${cellIndex}`}
+                    className="min-w-32 px-3 py-2 align-top leading-relaxed text-[#1A202C]"
+                  >
+                    {renderInlineMarkdown(cell)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+
+  return (
+    <p className="text-base leading-relaxed text-[#1A202C]">
+      {renderInlineMarkdown(block)}
+    </p>
+  );
+}
 
 export function generateStaticParams() {
   return getArticles().map((article) => ({ slug: article.slug }));
@@ -63,7 +163,9 @@ export default async function ArticleDetailPage({ params }: Props) {
       "@type": "Organization",
       name: SITE_NAME,
       url: absoluteUrl("/"),
+      logo: absoluteUrl("/icon.svg"),
     },
+    image: absoluteUrl("/api/og-site"),
     mainEntityOfPage: absoluteUrl(path),
     inLanguage: "ja-JP",
   };
@@ -119,9 +221,7 @@ export default async function ArticleDetailPage({ params }: Props) {
             </h2>
             <div className="mt-4 space-y-4">
               {section.paragraphs.map((paragraph) => (
-                <p key={paragraph} className="text-base leading-relaxed text-[#1A202C]">
-                  {paragraph}
-                </p>
+                <ArticleBlock key={paragraph} block={paragraph} />
               ))}
             </div>
           </section>

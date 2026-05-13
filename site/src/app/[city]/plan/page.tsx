@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
 
 type Policy = { id: number; title: string };
 type BasicGoal = { id: number; title: string; policies: Policy[] };
@@ -59,10 +60,11 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  return {
+  return buildPageMetadata({
     title: `総合計画 - ${cityName}議会`,
-    description: `${cityName}の総合計画・基本目標と施策一覧`,
-  };
+    description: `${cityName}の総合計画・基本目標と施策一覧を、議会での議論とあわせて確認できます。`,
+    path: `/${city}/plan`,
+  });
 }
 
 export default async function CityPlanPage({

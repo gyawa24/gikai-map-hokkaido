@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { Newsletter } from "@/types/newsletter";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -13,7 +14,11 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  return { title: `議会だより - ${cityName}` };
+  return buildPageMetadata({
+    title: `議会だより - ${cityName}`,
+    description: `${cityName}議会だよりの最新号と公式PDFへのリンクを掲載しています。議会活動や審議内容の概要を確認できます。`,
+    path: `/${city}/newsletter`,
+  });
 }
 
 function getNewsletter(city: string): Newsletter | null {

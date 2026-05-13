@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import type { Member, MemberActivity } from "@/types/member";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
 
 // ---------- Data helpers ----------
 
@@ -74,11 +75,11 @@ export async function generateMetadata({
   const municipality = getMunicipality(city);
   const name = municipality?.council_name ?? "市町村議会";
   const title = `テーマ別議員 - ${name}`;
-  return {
+  return buildPageMetadata({
     title,
     description: `${name}の議員を政策テーマ別にランキング表示します。気になるテーマを選んで、相談できる議員を探しましょう。`,
-    openGraph: { title },
-  };
+    path: `/${city}/themes`,
+  });
 }
 
 // ---------- Page ----------

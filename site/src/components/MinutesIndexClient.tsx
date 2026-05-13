@@ -8,6 +8,7 @@ import type { MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 type MinutesWithEnriched = MinutesIndexItem & {
   enriched: MinutesEnriched | null;
   category: string;
+  hasStructuredMinutes?: boolean;
 };
 
 type Props = {
@@ -481,13 +482,30 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
                               );
                             }
                             return (
-                              <Link
+                              <div
                                 key={item.council_id}
-                                href={`${minutesBasePath}/${item.council_id}`}
-                                className="theme-card group px-5 py-4 transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                                className="theme-card group px-5 py-4 transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2]"
                               >
-                                {itemContent}
-                              </Link>
+                                <Link
+                                  href={`${minutesBasePath}/${item.council_id}`}
+                                  className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                                >
+                                  {itemContent}
+                                </Link>
+                                {item.hasStructuredMinutes && (
+                                  <div className="mt-3 flex flex-wrap gap-2 pl-5">
+                                    <Link
+                                      href={`${minutesBasePath}/${item.council_id}/turns`}
+                                      className="inline-flex items-center justify-center rounded-full border border-[#C5D0E6] bg-[#E8EEF7] px-3 py-1.5 text-xs font-bold text-[#1B3A6B] transition-colors hover:bg-[#DCE7F6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                                    >
+                                      発言・質問項目別
+                                    </Link>
+                                    <span className="inline-flex items-center rounded-full border border-[#E2E8F0] bg-[#FBFCFE] px-2.5 py-1 text-xs font-bold text-[#718096]">
+                                      試験版
+                                    </span>
+                                  </div>
+                                )}
+                              </div>
                             );
                           })}
                         </div>

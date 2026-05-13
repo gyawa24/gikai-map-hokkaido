@@ -31,7 +31,7 @@ export default function TopicsPage() {
             {tags.map(({ tag, count }) => (
               <Link
                 key={tag}
-                href={`/topics/${tag}`}
+                href={`/topics/${encodeURIComponent(tag)}`}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#E8EEF7] text-[#2A5298] rounded-full text-sm font-medium hover:bg-[#1B3A6B] hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
               >
                 <span>{tag}</span>

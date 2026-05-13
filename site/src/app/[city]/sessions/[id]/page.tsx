@@ -10,6 +10,7 @@ import {
   getSessionThumbnailUrl,
   getSessionWatchUrl,
 } from "@/lib/sessionSources";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export const dynamicParams = false;
 
@@ -33,7 +34,7 @@ export async function generateMetadata({
   }
 
   const dateLabel = formatDate(session.date);
-  const title = `${session.title}（${dateLabel}）- ${cityName}議会`;
+  const title = `${session.title}（${dateLabel}） - ${cityName}議会`;
   const firstSummary = session.segments.find((s) => s.summary)?.summary;
   const description = firstSummary
     ? firstSummary.slice(0, 100)
@@ -43,16 +44,12 @@ export async function generateMetadata({
 
   const ogImage = `/api/og-segment?city=${city}&session=${id}&seg=1`;
 
-  return {
+  return buildPageMetadata({
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      images: [{ url: ogImage, width: 1200, height: 630 }],
-    },
-    twitter: { card: "summary_large_image" },
-  };
+    path: `/${city}/sessions/${id}`,
+    image: ogImage,
+  });
 }
 
 export async function generateStaticParams() {

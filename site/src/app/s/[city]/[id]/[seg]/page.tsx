@@ -80,17 +80,25 @@ export async function generateMetadata({
   const detail = segment.detail;
   const speaker = detail?.speaker ?? segment.label;
   const overview = detail?.overview ?? segment.summary ?? "";
-  const title = `${speaker} - ${session.title}（${formatDate(session.date)}）| ${cityName}議会`;
+  const title = `${speaker} - ${session.title}（${formatDate(session.date)}） | ${cityName}議会`;
   const description = overview.slice(0, 100);
   const ogImage = `/api/og-segment?city=${city}&session=${id}&seg=${segNum}`;
 
   return {
     title,
     description,
+    alternates: {
+      canonical: `/${city}/sessions/${id}`,
+    },
     openGraph: {
       title,
       description,
+      url: `/s/${city}/${id}/${seg}`,
       images: [{ url: ogImage, width: 1200, height: 630 }],
+    },
+    robots: {
+      index: false,
+      follow: true,
     },
     twitter: { card: "summary_large_image" },
   };

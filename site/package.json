@@ -17,7 +17,8 @@
     "stop:superwhisper:r8-1": "node scripts/launch-superwhisper-db-job.mjs --city hokkaido --title '令和8年第1回定例会' --stop",
     "watch:scribe": "node scripts/watch-scribe-exports.mjs --city hokkaido",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:structured-minutes": "node scripts/validate-structured-minutes.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",

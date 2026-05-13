@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { Decision } from "@/types/decision";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -13,7 +14,11 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  return { title: `議決結果 - ${cityName}` };
+  return buildPageMetadata({
+    title: `議決結果 - ${cityName}`,
+    description: `${cityName}議会の議決結果を掲載しています。定例会ごとの議案・採決結果・公式PDFへのリンクを確認できます。`,
+    path: `/${city}/decisions`,
+  });
 }
 
 function getDecisions(city: string): Decision[] {

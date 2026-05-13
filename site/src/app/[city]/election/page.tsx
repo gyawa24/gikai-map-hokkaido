@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
 
 type Candidate = {
   name: string;
@@ -33,14 +34,11 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  return {
+  return buildPageMetadata({
     title: `選挙結果 - ${cityName}`,
     description: `${cityName}議会議員選挙の結果（得票数・当落）を掲載しています。`,
-    openGraph: {
-      title: `${cityName}議会 選挙結果`,
-      description: `${cityName}議会議員選挙の結果（得票数・当落）を掲載しています。`,
-    },
-  };
+    path: `/${city}/election`,
+  });
 }
 
 function getElectionData(city: string): ElectionData | null {
@@ -78,7 +76,6 @@ export default async function CityElectionPage({
   const municipality = getMunicipality(city);
   if (!municipality?.features.includes("election")) notFound();
 
-  const cityName = municipality.name;
   const data = getElectionData(city);
 
   if (!data) {

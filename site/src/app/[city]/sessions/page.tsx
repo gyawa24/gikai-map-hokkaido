@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getSessionSummaries } from "@/lib/cityData";
 import { getMunicipality } from "@/lib/municipalities";
+import { buildPageMetadata } from "@/lib/metadata";
 import SessionsClient from "@/components/SessionsClient";
 
 export async function generateMetadata({
@@ -13,7 +14,11 @@ export async function generateMetadata({
   const { city } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  return { title: `会議録・速報 - ${cityName}` };
+  return buildPageMetadata({
+    title: `会議録・速報 - ${cityName}`,
+    description: `${cityName}議会の会議録・速報版です。議会中継動画や録画配信の文字起こし、要約、発言ごとの話題を確認できます。`,
+    path: `/${city}/sessions`,
+  });
 }
 
 export default async function CitySessionsPage({
