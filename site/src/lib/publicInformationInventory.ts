@@ -22,6 +22,24 @@ const ALT_FEATURE_LABELS = new Map([
   ["iwanai", "議事日程・議会だより・一般質問順序表"],
 ]);
 
+type BudgetSourceStatus = "取込済み" | "取得候補";
+
+type BudgetSource = {
+  slug: string;
+  year: string;
+  status: BudgetSourceStatus;
+  source_label: string;
+  source_href: string;
+  note: string;
+};
+
+export type BudgetEnterpriseCoverage = {
+  waterSewer: boolean;
+  hospital: boolean;
+  other: boolean;
+  labels: string[];
+};
+
 export type PublicInventoryRow = {
   slug: string;
   name: string;
@@ -38,6 +56,14 @@ export type PublicInventoryRow = {
   sourceHref: string | null;
   sourceNote: string;
   verifiedAt: string | null;
+  hasBudget: boolean;
+  hasBudgetCandidate: boolean;
+  budgetState: BudgetSourceStatus | "未確認";
+  budgetYear: string | null;
+  budgetSourceLabel: string | null;
+  budgetSourceHref: string | null;
+  budgetSourceNote: string | null;
+  budgetEnterpriseCoverage: BudgetEnterpriseCoverage | null;
 };
 
 export type PublicInventorySummary = {
@@ -45,6 +71,8 @@ export type PublicInventorySummary = {
   members: number;
   minutes: number;
   themes: number;
+  budgets: number;
+  budgetCandidates: number;
   sessionsFeature: number;
   sessionsData: number;
   unavailable: number;
@@ -65,6 +93,55 @@ function hasMinutesData(cityDir: string): boolean {
 
 function hasThemesData(cityDir: string): boolean {
   return exists(path.join(cityDir, "members_activity.json"));
+}
+
+function hasBudgetData(cityDir: string): boolean {
+  return exists(path.join(cityDir, "budgets", "index.json"));
+}
+
+function readBudgetEnterpriseCoverage(cityDir: string, year: string | null): BudgetEnterpriseCoverage | null {
+  if (!year) return null;
+
+  const manifestPath = path.join(/*turbopackIgnore: true*/ cityDir, "budgets", year, "manifest.json");
+  if (!exists(manifestPath)) return null;
+
+  try {
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8")) as {
+      pages?: { toc_label?: string | null; title?: string; preview?: string }[];
+    };
+    const labels = new Set<string>();
+
+    for (const page of manifest.pages ?? []) {
+      const label = page.toc_label ?? "";
+
+      if (/水道|下水道|工業用水道/.test(label)) labels.add("上下水道");
+      if (/病院/.test(label)) labels.add("病院");
+      if (/市場|卸売市場|交通|高速電車|軌道整備|港湾整備|空港|駐車場|動物園|企業会計/.test(label)) {
+        labels.add("その他");
+      }
+    }
+
+    return {
+      waterSewer: labels.has("上下水道"),
+      hospital: labels.has("病院"),
+      other: labels.has("その他"),
+      labels: Array.from(labels),
+    };
+  } catch {
+    return null;
+  }
+}
+
+function getBudgetSources(dataRoot: string): Map<string, BudgetSource> {
+  const filePath = path.join(/*turbopackIgnore: true*/ dataRoot, "budget_sources.json");
+  if (!exists(filePath)) return new Map();
+
+  try {
+    const parsed = JSON.parse(fs.readFileSync(filePath, "utf8")) as BudgetSource[];
+    return new Map(parsed.map((source) => [source.slug, source]));
+  } catch {
+    return new Map();
+  }
 }
 
 function sourceFor(entry: Municipality, hasMinutes: boolean): {
@@ -138,11 +215,14 @@ function otherInfo(entry: Municipality): string[] {
   return labels;
 }
 
-function buildRow(entry: Municipality): PublicInventoryRow {
+function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>): PublicInventoryRow {
   const dataRoot = path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
   const cityDir = path.join(/*turbopackIgnore: true*/ dataRoot, entry.slug);
   const hasMinutes = hasMinutesData(cityDir);
   const source = sourceFor(entry, hasMinutes);
+  const budgetSource = budgetSources.get(entry.slug) ?? null;
+  const budgetImported = hasBudgetData(cityDir) || budgetSource?.status === "取込済み";
+  const budgetYear = budgetSource?.year ?? null;
 
   return {
     slug: entry.slug,
@@ -160,6 +240,14 @@ function buildRow(entry: Municipality): PublicInventoryRow {
     sourceHref: source.href,
     sourceNote: source.note,
     verifiedAt: entry.minutes_verified_at ?? null,
+    hasBudget: budgetImported,
+    hasBudgetCandidate: budgetSource?.status === "取得候補",
+    budgetState: budgetSource?.status ?? "未確認",
+    budgetYear,
+    budgetSourceLabel: budgetSource?.source_label ?? null,
+    budgetSourceHref: budgetSource?.source_href ?? null,
+    budgetSourceNote: budgetSource?.note ?? null,
+    budgetEnterpriseCoverage: budgetImported ? readBudgetEnterpriseCoverage(cityDir, budgetYear) : null,
   };
 }
 
@@ -167,10 +255,12 @@ export function getPublicInformationInventory(): {
   rows: PublicInventoryRow[];
   summary: PublicInventorySummary;
 } {
+  const dataRoot = path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
+  const budgetSources = getBudgetSources(dataRoot);
   const rows = getMunicipalities()
     .filter((entry) => entry.active)
     .sort((a, b) => a.region.localeCompare(b.region, "ja") || a.name.localeCompare(b.name, "ja"))
-    .map(buildRow);
+    .map((entry) => buildRow(entry, budgetSources));
 
   return {
     rows,
@@ -179,6 +269,8 @@ export function getPublicInformationInventory(): {
       members: rows.filter((row) => row.hasMembers).length,
       minutes: rows.filter((row) => row.hasMinutes).length,
       themes: rows.filter((row) => row.hasTopicData).length,
+      budgets: rows.filter((row) => row.hasBudget).length,
+      budgetCandidates: rows.filter((row) => row.hasBudgetCandidate).length,
       sessionsFeature: rows.filter((row) => row.features.includes("sessions")).length,
       sessionsData: rows.filter((row) => row.hasSessionsData).length,
       unavailable: rows.filter((row) => !row.hasMinutes).length,

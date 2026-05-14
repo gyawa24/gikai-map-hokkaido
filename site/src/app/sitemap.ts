@@ -4,6 +4,7 @@ import type { MetadataRoute } from "next";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getAllTags } from "@/lib/topics";
 import { getArticles } from "@/lib/articles";
+import { getBudgetDocuments } from "@/lib/budgets";
 
 const BASE_URL = "https://chihougikai.com";
 
@@ -116,6 +117,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (featureSet.has("decisions")) entries.push(toEntry(`/${city}/decisions`, "weekly", 0.7));
     if (featureSet.has("schedule")) entries.push(toEntry(`/${city}/schedule`, "weekly", 0.6));
     if (featureSet.has("newsletter")) entries.push(toEntry(`/${city}/newsletter`, "monthly", 0.6));
+    const budgetDocuments = getBudgetDocuments(city);
+    if (budgetDocuments.length > 0) {
+      entries.push(toEntry(`/${city}/budgets`, "monthly", 0.5));
+      for (const document of budgetDocuments) {
+        entries.push(toEntry(`/${city}/budgets/${document.year}`, "monthly", 0.5, document.generated_at));
+      }
+    }
     if (featureSet.has("election")) entries.push(toEntry(`/${city}/election`, "monthly", 0.6));
     if (featureSet.has("plan")) entries.push(toEntry(`/${city}/plan`, "monthly", 0.5));
     if (featureSet.has("themes")) entries.push(toEntry(`/${city}/themes`, "weekly", 0.6));

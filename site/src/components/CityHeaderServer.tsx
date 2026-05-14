@@ -42,6 +42,7 @@ const MASTER_NAV: MasterNavItem[] = [
   },
   { key: "schedule", label: "行事予定", pageDir: "schedule", dataFile: "schedule.json" },
   { key: "newsletter", label: "議会だより", pageDir: "newsletter", dataFile: "newsletter.json" },
+  { key: "budgets", label: "予算書", pageDir: "budgets", dataFile: "budgets/index.json" },
   {
     key: "plan",
     label: "総合計画",

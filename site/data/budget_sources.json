@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "chitose",
+    "year": "2026",
+    "status": "取込済み",
+    "source_label": "令和8年度各会計予算",
+    "source_href": "https://www.city.chitose.lg.jp/c70/1002791/1002816/1002817/1005846.html",
+    "note": "令和8年度予算書をページ画像・OCR検索用テキストとして試作取込済み"
+  },
+  {
+    "slug": "eniwa",
+    "year": "2026",
+    "status": "取込済み",
+    "source_label": "令和8年度予算書",
+    "source_href": "https://www.city.eniwa.hokkaido.jp/kurashi/shiseijoho/shinozaisei/yosan/22418.html",
+    "note": "令和8年度予算書を分割PDFから結合し、ページ画像・検索用テキストとして取込済み"
+  },
+  {
+    "slug": "tomakomai",
+    "year": "2026",
+    "status": "取込済み",
+    "source_label": "予算に関する公表資料",
+    "source_href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "note": "令和8年度の一般会計・特別会計・公営企業会計予算書をページ画像・検索用テキストとして取込済み"
+  },
+  {
+    "slug": "sapporo",
+    "year": "2026",
+    "status": "取込済み",
+    "source_label": "令和8年度予算",
+    "source_href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/reiwa8nendo_yosan.html",
+    "note": "令和8年度の各会計予算・予算説明書をページ画像・検索用テキストとして取込済み"
+  },
+  {
+    "slug": "asahikawa",
+    "year": "2026",
+    "status": "取込済み",
+    "source_label": "予算の概要（令和8年度）",
+    "source_href": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d083385.html",
+    "note": "令和8年度の予算書と各会計歳入歳出予算事項別明細書をページ画像・検索用テキストとして取込済み"
+  },
+  {
+    "slug": "hakodate",
+    "year": "2026",
+    "status": "取込済み",
+    "source_label": "函館市の予算",
+    "source_href": "https://www.city.hakodate.hokkaido.jp/docs/2014022600122/",
+    "note": "令和8年度の各会計予算資料をページ画像・検索用テキストとして取込済み"
+  },
+  {
+    "slug": "obihiro",
+    "year": "2026",
+    "status": "取込済み",
+    "source_label": "令和8年度 予算編成概要",
+    "source_href": "https://www.city.obihiro.hokkaido.jp/shisei/yosan/yosan/1023191.html",
+    "note": "令和8年度の予算書・予算説明書全体をページ画像・検索用テキストとして取込済み"
+  },
+  {
+    "slug": "kushiro",
+    "year": "2026",
+    "status": "取込済み",
+    "source_label": "2026（令和8）年度予算",
+    "source_href": "https://www.city.kushiro.lg.jp/shisei/zaisei/1007149/1018509.html",
+    "note": "令和8年度の各会計予算書・予算説明書をページ画像・検索用テキストとして取込済み"
+  },
+  {
+    "slug": "kitami",
+    "year": "2026",
+    "status": "取込済み",
+    "source_label": "令和8年度 予算書・予算説明書等",
+    "source_href": "https://www.city.kitami.lg.jp/administration/town/detail.php?content=14268",
+    "note": "令和8年度の一般会計・特別会計予算書及び予算説明書をページ画像・検索用テキストとして取込済み"
+  }
+]
