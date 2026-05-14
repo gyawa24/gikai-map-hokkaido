@@ -44,6 +44,12 @@ export type BudgetPage = BudgetPageSummary & {
   text: string;
 };
 
+type BudgetSource = {
+  slug: string;
+  year: string;
+  status: string;
+};
+
 function readJson<T>(filePath: string): T | null {
   try {
     return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
@@ -52,38 +58,22 @@ function readJson<T>(filePath: string): T | null {
   }
 }
 
-function stripMarkdownFrontmatter(text: string): string {
-  return text.replace(/^---\n[\s\S]*?\n---\n\n?/, "");
-}
-
 export function getBudgetDocuments(city: string): BudgetDocumentSummary[] {
   const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "budgets", "index.json");
   const documents = readJson<BudgetDocumentSummary[]>(fp);
   return Array.isArray(documents) ? documents : [];
 }
 
+export function getBudgetStaticParams(): { city: string; year: string }[] {
+  const fp = path.join(process.cwd(), "data", "budget_sources.json");
+  const sources = readJson<BudgetSource[]>(fp);
+  if (!Array.isArray(sources)) return [];
+  return sources
+    .filter((source) => source.status === "取込済み")
+    .map((source) => ({ city: source.slug, year: source.year }));
+}
+
 export function getBudgetDocument(city: string, year: string): BudgetDocumentManifest | null {
   const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "budgets", year, "manifest.json");
   return readJson<BudgetDocumentManifest>(fp);
-}
-
-export function getBudgetPages(city: string, year: string): BudgetPage[] {
-  const manifest = getBudgetDocument(city, year);
-  if (!manifest) return [];
-  const baseDir = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "budgets", year);
-
-  return manifest.pages.map((page) => {
-    try {
-      const text = fs.readFileSync(path.join(baseDir, page.file), "utf-8");
-      return {
-        ...page,
-        text: stripMarkdownFrontmatter(text).trimEnd(),
-      };
-    } catch {
-      return {
-        ...page,
-        text: "",
-      };
-    }
-  });
 }

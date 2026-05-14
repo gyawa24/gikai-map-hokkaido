@@ -7,12 +7,12 @@ export type NavItem = { href: string; label: string };
 export type CityNavConfig = { name: string; nav: NavItem[] };
 
 // Build city list from municipalities.json
-function buildCities(): Record<string, { name: string }> {
+function buildCities(): Record<string, { name: string; features: string[] }> {
   const municipalities = getMunicipalities();
   return Object.fromEntries(
     municipalities
       .filter((m) => m.active)
-      .map((m) => [m.slug, { name: m.council_name }])
+      .map((m) => [m.slug, { name: m.council_name, features: m.features }])
   );
 }
 
@@ -72,18 +72,7 @@ function pageExists(cityKey: string, pageDir: string): boolean {
   return fs.existsSync(dynamicPath);
 }
 
-function dataExists(cityKey: string, dataFile: string): boolean {
-  const dataPath = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", cityKey, dataFile);
-  if (fs.existsSync(dataPath)) return true;
-  // 議事録は旭川・函館等で data/{city}/index.json 直下の形式もあるため補完
-  if (dataFile === "minutes/index.json") {
-    const alt = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", cityKey, "index.json");
-    if (fs.existsSync(alt)) return true;
-  }
-  return false;
-}
-
-function computeCityNav(cityKey: string): NavItem[] {
+function computeCityNav(cityKey: string, features: string[]): NavItem[] {
   const overrides = LABEL_OVERRIDES[cityKey] ?? {};
   const baseHref = `/${cityKey}`;
 
@@ -96,8 +85,8 @@ function computeCityNav(cityKey: string): NavItem[] {
     // Check page route exists (prevents 404)
     if (!pageExists(cityKey, item.pageDir)) return false;
 
-    // Check data file exists (prevents empty pages)
-    if (item.dataFile && !dataExists(cityKey, item.dataFile)) return false;
+    // Check feature availability (prevents empty pages)
+    if (item.dataFile && !features.includes(item.key)) return false;
 
     return true;
   }).map((item) => ({
@@ -113,7 +102,7 @@ export default function CityHeaderServer() {
   for (const [cityKey, config] of Object.entries(CITIES)) {
     allCityNavs[cityKey] = {
       name: config.name,
-      nav: computeCityNav(cityKey),
+      nav: computeCityNav(cityKey, config.features),
     };
   }
 

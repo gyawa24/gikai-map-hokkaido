@@ -42,6 +42,7 @@ const nextConfig: NextConfig = {
     //   必要時に GitHub Raw fallback で読む。
     // - segments 本文: AI検索/テーマ生成用の発言単位データ。公開 Function の実行時には
     //   直接読まないため、関数バンドルへ含めない。
+    // - budgets 本文・ページ画像: 予算書ページは静的生成し、実行時 Function では読まない。
     // - ocr_drafts: 公開昇格前の評価用下書き。常に関数バンドルから除外する。
     // - ルート直下の数字連番JSON(46MB): scraper 生データの置き場で、どの route も読まない。
     //
@@ -50,6 +51,8 @@ const nextConfig: NextConfig = {
     "**": [
       "./data/*/minutes/**/*.json",
       "./data/*/segments/**/*",
+      "./data/*/budgets/*/pages/**/*",
+      "./public/budgets/**/*",
       "./data/*/ocr_drafts/**/*",
       "./data/*/???.json",
       "./data/*/????.json",

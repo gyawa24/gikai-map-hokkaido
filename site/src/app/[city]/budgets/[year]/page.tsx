@@ -3,10 +3,17 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BudgetDocumentClient from "@/components/BudgetDocumentClient";
 import JsonLd from "@/components/JsonLd";
-import { getBudgetDocument, getBudgetPages } from "@/lib/budgets";
+import { getBudgetDocument, getBudgetStaticParams } from "@/lib/budgets";
+import { getBudgetPages } from "@/lib/budgetPages";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
 import { buildBreadcrumbList } from "@/lib/structuredData";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getBudgetStaticParams();
+}
 
 export async function generateMetadata({
   params,
