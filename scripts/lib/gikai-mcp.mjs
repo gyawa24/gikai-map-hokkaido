@@ -75,3 +75,33 @@ export async function searchSegments(args) {
     return parseToolText(result);
   });
 }
+
+export async function searchBudgets(args) {
+  return withClient(async (client) => {
+    const result = await client.callTool({
+      name: "search_budgets",
+      arguments: args,
+    });
+    return parseToolText(result);
+  });
+}
+
+export async function getBudgetPage(args) {
+  return withClient(async (client) => {
+    const result = await client.callTool({
+      name: "get_budget_page",
+      arguments: args,
+    });
+    return parseToolText(result);
+  });
+}
+
+export async function researchPublicRecords(args) {
+  return withClient(async (client) => {
+    const result = await client.callTool({
+      name: "research_public_records",
+      arguments: args,
+    });
+    return parseToolText(result);
+  });
+}

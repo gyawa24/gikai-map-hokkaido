@@ -14,6 +14,9 @@
 | `search_members` | 議員の横断検索（名前・会派・委員会） |
 | `get_minutes_excerpt` | 議事録本文を ID 指定で取得 |
 | `get_session_segment` | 動画セッションの AI 要約・Q&A・原文取得（千歳のみ） |
+| `search_budgets` | 予算書OCRの横断検索（stdio個人利用のみ） |
+| `get_budget_page` | 予算書のページ本文・原本画像URL取得（stdio個人利用のみ） |
+| `research_public_records` | 議事録と予算書を同時検索して根拠候補を返す（stdio個人利用のみ） |
 
 「千歳と旭川と函館で介護保険の議論を比較」「人口5万人帯の市町村でクマ対策を最も活発に議論しているのはどこ?」みたいな分析を Claude が複数ツール組み合わせて答える。
 
@@ -21,17 +24,23 @@
 
 ```bash
 # 1. 検索インデックスを作る（初回 / 議事録更新時）
-cd /Users/yohei/gikai-map-hokkaido/gikaimap/site
+cd /Users/yohei/gikai-map-hokkaido/site
 npm run build-search-index
 
 # 2. MCP サーバーの依存をインストール
-cd /Users/yohei/gikai-map-hokkaido/gikaimap/mcp-server
+cd /Users/yohei/gikai-map-hokkaido/mcp-server
 npm install
 
-# 3. Claude Code に登録
-claude mcp add gikai -- node /Users/yohei/gikai-map-hokkaido/gikaimap/mcp-server/index.mjs
+# 3. Codex に登録
+codex mcp add gikai -- node /Users/yohei/gikai-map-hokkaido/mcp-server/index.mjs
 
-# 4. Claude Code を再起動 → ツール `mcp__gikai__search_minutes` 等が使える
+# 4. Codex を再起動 → gikai の MCP ツールが使える
+```
+
+### Claude Code にも登録する場合
+
+```bash
+claude mcp add gikai -- node /Users/yohei/gikai-map-hokkaido/mcp-server/index.mjs
 ```
 
 ### Claude Desktop に登録する場合
@@ -43,7 +52,7 @@ claude mcp add gikai -- node /Users/yohei/gikai-map-hokkaido/gikaimap/mcp-server
   "mcpServers": {
     "gikai": {
       "command": "node",
-      "args": ["/Users/yohei/gikai-map-hokkaido/gikaimap/mcp-server/index.mjs"]
+      "args": ["/Users/yohei/gikai-map-hokkaido/mcp-server/index.mjs"]
     }
   }
 }
@@ -56,8 +65,10 @@ Claude に自然言語で投げるだけ：
 - 「石狩管内6市町村で2024年以降、半導体産業について議論しているところを比較して」
 - 「千歳市議会で『クマ対策』が話題になった議論を全部洗い出して、どの議員が何を発言したか整理して」
 - 「『移住定住』を最も多く議論している市町村ランキング上位10、各市の代表的な議員発言と一緒に」
+- 「千歳・恵庭・苫小牧の令和8年度予算書と議事録から『除雪』を比較して、根拠URLと予算書ページを付けて」
 
 Claude は内部で `search_minutes` → `get_minutes_excerpt` を呼んで原文を確認した上で答える。返ってくる結果には常に `url`（chihougikai.com の該当ページ）が含まれるので、結論には必ずソースが付く。
+予算書は `search_budgets` → `get_budget_page` で候補ページを確認する。`search_budgets` は `match_mode` で `normal`（標準）、`fuzzy`（表記ゆれ/OCR補正）、`exact`（完全一致）を切り替えられる。OCRは表の列ズレがあり得るため、金額は必ず返却される `image_url` または `page_url` の原本画像で確認する。
 
 ## ターミナルから直接使う
 
@@ -67,6 +78,15 @@ Claude は内部で `search_minutes` → `get_minutes_excerpt` を呼んで原�
 # 単発検索
 ./scripts/gikai-search-minutes.mjs AI --limit 5
 
+# 予算書検索
+./scripts/gikai-search-budgets.mjs 除雪 --city chitose --city eniwa --city tomakomai --year 2026
+
+# OCR表記ゆれも拾う
+./scripts/gikai-search-budgets.mjs 士木費 --match-mode fuzzy
+
+# 入力文字の完全一致
+./scripts/gikai-search-budgets.mjs "高齢者除雪サービス" --match-mode exact
+
 # AI活用っぽい語をまとめて集計
 ./scripts/gikai-ai-survey.mjs --year-from 2024
 ```
@@ -74,6 +94,7 @@ Claude は内部で `search_minutes` → `get_minutes_excerpt` を呼んで原�
 ## 制約
 
 - **検索インデックスは静的**: `site/data/_search-index.json` がビルド時生成。新しい議事録を反映するには `npm run build-search-index` を再実行する必要あり
+- **予算書OCRは検索補助**: 表の金額や列位置はOCRだけで断定せず、原本画像で確認する
 - **動画セッションは千歳のみ**: 全道展開時もインタフェースは同じなので、データが入れば自動的に他市も対応
 - **ローカル個人利用前提**: stdio で動くので外部公開不可。一般公開向けには別途 Anthropic API 課金が必要
 
@@ -82,7 +103,7 @@ Claude は内部で `search_minutes` → `get_minutes_excerpt` を呼んで原�
 `municipalities.json` で `minutes_access: "restricted"` が付いている自治体は、サイトのビルドフローからは除外されているが MCP の個人利用（私的使用の範囲）からは検索したい。そのために専用のインデックスを別ファイルで持てる。
 
 ```bash
-cd /Users/yohei/gikai-map-hokkaido/gikaimap/mcp-server
+cd /Users/yohei/gikai-map-hokkaido/mcp-server
 npm run build-restricted-index
 ```
 

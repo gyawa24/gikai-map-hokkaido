@@ -3,32 +3,67 @@
 import { useMemo, useState } from "react";
 import type { BudgetPage } from "@/lib/budgets";
 
-function normalizeForSearch(text: string): string {
+type MatchMode = "normal" | "fuzzy" | "exact";
+
+const MATCH_MODE_OPTIONS: { value: MatchMode; label: string; description: string }[] = [
+  {
+    value: "normal",
+    label: "標準",
+    description: "空白・全角半角・カナ・数字のカンマを吸収",
+  },
+  {
+    value: "fuzzy",
+    label: "表記ゆれ",
+    description: "標準検索にOCR誤認識の補正を追加",
+  },
+  {
+    value: "exact",
+    label: "完全一致",
+    description: "入力した文字をそのまま検索",
+  },
+];
+
+function applyOcrCorrections(text: string): string {
   return text
-    .normalize("NFKC")
-    .replace(/\s+/g, "")
-    .replace(/[ァ-ヶ]/g, (char) => String.fromCharCode(char.charCodeAt(0) - 0x60))
-    .toLowerCase();
+    .replace(/贄/g, "費")
+    .replace(/士木|上木/g, "土木")
+    .replace(/舟几又/g, "一般")
+    .replace(/云/g, "会")
+    .replace(/硲目理|応呂理|呂理/g, "管理")
+    .replace(/冗士払/g, "売払");
 }
 
-function tokenize(query: string): string[] {
+function normalizeForSearch(text: string, mode: MatchMode): string {
+  if (mode === "exact") return text;
+  const normalized = text
+    .normalize("NFKC")
+    .replace(/\s+/g, "")
+    .replace(/[,，]/g, "")
+    .replace(/[ァ-ヶ]/g, (char) => String.fromCharCode(char.charCodeAt(0) - 0x60))
+    .toLowerCase();
+  return mode === "fuzzy" ? applyOcrCorrections(normalized) : normalized;
+}
+
+function tokenize(query: string, mode: MatchMode): string[] {
   return query
     .trim()
     .split(/\s+/)
-    .map(normalizeForSearch)
+    .map((token) => normalizeForSearch(token, mode))
     .filter(Boolean);
 }
 
-function buildSnippet(page: BudgetPage, tokens: string[]): string {
+function lineMatches(line: string, tokens: string[], mode: MatchMode): boolean {
+  const haystack = normalizeForSearch(line, mode);
+  return tokens.every((token) => haystack.includes(token));
+}
+
+function buildSnippet(page: BudgetPage, tokens: string[], mode: MatchMode): string {
   if (tokens.length === 0) return page.preview;
   const lines = page.text
     .split("\n")
     .map((line) => line.trim())
     .filter(Boolean);
-  const hit = lines.find((line) => {
-    const normalized = normalizeForSearch(line);
-    return tokens.every((token) => normalized.includes(token));
-  });
+  const hit = lines.find((line) => lineMatches(line, tokens, mode));
   return (hit ?? page.preview).replace(/\s+/g, " ").trim().slice(0, 180);
 }
 
@@ -80,10 +115,12 @@ export default function BudgetDocumentClient({
   pageCount: number;
 }) {
   const [query, setQuery] = useState("");
+  const [matchMode, setMatchMode] = useState<MatchMode>("normal");
   const [selectedPageNumber, setSelectedPageNumber] = useState(pages[0]?.page ?? 1);
   const [zoom, setZoom] = useState(100);
   const [showOcrText, setShowOcrText] = useState(false);
-  const tokens = useMemo(() => tokenize(query), [query]);
+  const tokens = useMemo(() => tokenize(query, matchMode), [query, matchMode]);
+  const selectedMatchMode = MATCH_MODE_OPTIONS.find((mode) => mode.value === matchMode) ?? MATCH_MODE_OPTIONS[0];
 
   const results = useMemo(() => {
     if (tokens.length === 0) {
@@ -95,14 +132,14 @@ export default function BudgetDocumentClient({
 
     return pages
       .filter((page) => {
-        const haystack = normalizeForSearch(`${page.title}\n${page.preview}\n${page.text}`);
+        const haystack = normalizeForSearch(`${page.title}\n${page.preview}\n${page.text}`, matchMode);
         return tokens.every((token) => haystack.includes(token));
       })
       .map((page) => ({
         ...page,
-        snippet: buildSnippet(page, tokens),
+        snippet: buildSnippet(page, tokens, matchMode),
       }));
-  }, [pages, tokens]);
+  }, [pages, tokens, matchMode]);
 
   const effectiveSelectedPageNumber =
     tokens.length > 0 && results.length > 0 && !results.some((page) => page.page === selectedPageNumber)
@@ -147,8 +184,28 @@ export default function BudgetDocumentClient({
             ))}
           </div>
         </div>
+        <div className="mt-3 flex flex-col gap-2 border-t border-[#E2E8F0] pt-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex rounded-full border border-[#D7DEE8] bg-white p-1">
+            {MATCH_MODE_OPTIONS.map((mode) => (
+              <button
+                key={mode.value}
+                type="button"
+                onClick={() => setMatchMode(mode.value)}
+                className={`rounded-full px-3 py-1.5 text-xs font-black transition-colors sm:text-sm ${
+                  matchMode === mode.value
+                    ? "bg-[#1B3A6B] text-white"
+                    : "text-[#4A5568] hover:bg-[#E8EEF7]"
+                }`}
+                title={mode.description}
+              >
+                {mode.label}
+              </button>
+            ))}
+          </div>
+          <p className="text-xs leading-relaxed text-[#718096]">{selectedMatchMode.description}</p>
+        </div>
         <p className="mt-2 text-xs leading-relaxed text-[#718096]">
-          空白を無視して検索します。検索結果は入口として使い、数字・費目名・表の行位置は下の原本画像で確認してください。
+          検索結果は入口として使い、数字・費目名・表の行位置は下の原本画像で確認してください。
         </p>
 
         <div className="mt-3 flex items-center justify-between border-t border-[#E2E8F0] pt-2">
