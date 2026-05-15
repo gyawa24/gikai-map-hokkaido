@@ -65,7 +65,7 @@ function toEntry(
   };
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [
     toEntry("/", "daily", 1.0),
     toEntry("/search", "weekly", 0.9),
@@ -84,7 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push(toEntry(`/topics/${encodeURIComponent(tag)}`, "weekly", 0.6));
   }
 
-  for (const article of getArticles()) {
+  for (const article of await getArticles()) {
     entries.push(toEntry(`/articles/${article.slug}`, "monthly", 0.6, article.date));
   }
 

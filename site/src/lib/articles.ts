@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { getNotionArticles } from "@/lib/notionArticles";
 
 export type ArticleCategory = "企画" | "解説" | "インタビュー";
 
@@ -31,7 +32,7 @@ type ArticleFrontmatter = {
 };
 
 const ARTICLES_DIR = path.join(/*turbopackIgnore: true*/ process.cwd(), "content", "articles");
-const CATEGORIES: ArticleCategory[] = ["企画", "解説", "インタビュー"];
+export const CATEGORIES: ArticleCategory[] = ["企画", "解説", "インタビュー"];
 
 function stripQuotes(value: string): string {
   const trimmed = value.trim();
@@ -57,7 +58,7 @@ function parseFrontmatter(raw: string): ArticleFrontmatter {
   return result;
 }
 
-function parseSections(markdown: string): ArticleSection[] {
+export function parseSections(markdown: string): ArticleSection[] {
   const sections: ArticleSection[] = [];
   let current: ArticleSection | null = null;
   let paragraphLines: string[] = [];
@@ -108,9 +109,7 @@ function parseArticleFile(fileName: string): Article | null {
   if (!match) return null;
 
   const meta = parseFrontmatter(match[1]);
-  const category = CATEGORIES.includes(meta.category as ArticleCategory)
-    ? (meta.category as ArticleCategory)
-    : "企画";
+  const category = normalizeArticleCategory(meta.category);
   const sections = parseSections(match[2]);
 
   if (!meta.title || !meta.summary || !meta.date || sections.length === 0) {
@@ -130,12 +129,23 @@ function parseArticleFile(fileName: string): Article | null {
   };
 }
 
+export function normalizeArticleCategory(value: string | undefined): ArticleCategory {
+  return CATEGORIES.includes(value as ArticleCategory)
+    ? (value as ArticleCategory)
+    : "企画";
+}
+
+export function estimateReadingMinutes(text: string): number {
+  const chars = text.replace(/\s/g, "").length;
+  return Math.max(1, Math.ceil(chars / 600));
+}
+
 function byNewest(a: Article, b: Article): number {
   if (a.date !== b.date) return a.date < b.date ? 1 : -1;
   return a.slug.localeCompare(b.slug);
 }
 
-export function getArticles(): Article[] {
+export function getLocalArticles(): Article[] {
   try {
     return fs
       .readdirSync(/*turbopackIgnore: true*/ ARTICLES_DIR)
@@ -148,12 +158,23 @@ export function getArticles(): Article[] {
   }
 }
 
-export function getLatestArticles(limit = 3): Article[] {
-  return getArticles().slice(0, limit);
+export async function getArticles(): Promise<Article[]> {
+  const localArticles = getLocalArticles();
+  const notionArticles = await getNotionArticles();
+  const merged = new Map<string, Article>();
+
+  for (const article of localArticles) merged.set(article.slug, article);
+  for (const article of notionArticles) merged.set(article.slug, article);
+
+  return [...merged.values()].sort(byNewest);
 }
 
-export function getArticle(slug: string): Article | undefined {
-  return getArticles().find((article) => article.slug === slug);
+export async function getLatestArticles(limit = 3): Promise<Article[]> {
+  return (await getArticles()).slice(0, limit);
+}
+
+export async function getArticle(slug: string): Promise<Article | undefined> {
+  return (await getArticles()).find((article) => article.slug === slug);
 }
 
 export function formatArticleDate(iso: string): string {

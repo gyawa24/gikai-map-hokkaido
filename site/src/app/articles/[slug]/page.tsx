@@ -16,6 +16,8 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+export const revalidate = 600;
+
 function renderInlineMarkdown(text: string) {
   const nodes: ReactNode[] = [];
   const linkPattern = /\[([^\]]+)\]\(((?:https?:\/\/|\/)[^)]+)\)/g;
@@ -71,6 +73,7 @@ function parseMarkdownTable(markdown: string) {
 
 function ArticleBlock({ block }: { block: string }) {
   const table = block.startsWith("|") ? parseMarkdownTable(block) : null;
+  const lines = block.split("\n");
 
   if (table) {
     return (
@@ -108,6 +111,26 @@ function ArticleBlock({ block }: { block: string }) {
     );
   }
 
+  if (lines.length > 1 && lines.every((line) => line.startsWith("- "))) {
+    return (
+      <ul className="list-disc space-y-1 pl-5 text-base leading-relaxed text-[#1A202C]">
+        {lines.map((line) => (
+          <li key={line}>{renderInlineMarkdown(line.replace(/^- /, ""))}</li>
+        ))}
+      </ul>
+    );
+  }
+
+  if (lines.length > 1 && lines.every((line) => /^\d+\. /.test(line))) {
+    return (
+      <ol className="list-decimal space-y-1 pl-5 text-base leading-relaxed text-[#1A202C]">
+        {lines.map((line) => (
+          <li key={line}>{renderInlineMarkdown(line.replace(/^\d+\. /, ""))}</li>
+        ))}
+      </ol>
+    );
+  }
+
   return (
     <p className="text-base leading-relaxed text-[#1A202C]">
       {renderInlineMarkdown(block)}
@@ -115,13 +138,13 @@ function ArticleBlock({ block }: { block: string }) {
   );
 }
 
-export function generateStaticParams() {
-  return getArticles().map((article) => ({ slug: article.slug }));
+export async function generateStaticParams() {
+  return (await getArticles()).map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const article = getArticle(slug);
+  const article = await getArticle(slug);
   if (!article) {
     return buildPageMetadata({
       title: "記事",
@@ -139,7 +162,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ArticleDetailPage({ params }: Props) {
   const { slug } = await params;
-  const article = getArticle(slug);
+  const article = await getArticle(slug);
   if (!article) notFound();
 
   const path = `/articles/${article.slug}`;

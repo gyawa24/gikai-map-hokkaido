@@ -13,8 +13,10 @@ export const metadata = buildPageMetadata({
   path: "/articles",
 });
 
-export default function ArticlesPage() {
-  const articles = getArticles();
+export const revalidate = 600;
+
+export default async function ArticlesPage() {
+  const articles = await getArticles();
 
   return (
     <div className="page-shell max-w-5xl">
