@@ -92,28 +92,20 @@ export default function RootLayout({
 
             <div
               data-no-print="true"
-              className="border-b border-[#e6c566] bg-[linear-gradient(180deg,#fff8db_0%,#fffdf4_100%)]"
+              className="border-b border-[#F7C948] bg-[#FFF7E6]"
             >
-              <div className="page-shell flex flex-wrap items-center justify-between gap-2 px-4 py-2.5 text-xs font-bold text-[#6b4c11] sm:text-sm">
+              <div className="page-shell flex flex-wrap items-center justify-between gap-2 px-4 py-2 text-sm font-bold text-[#6b4c11]">
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                  <span className="theme-pill-soft border-[#e6c566] bg-[#ffd54f] text-[#1b3a6b]">β</span>
-                  <span>ベータ公開中</span>
-                  <span className="text-[#d4b254]">●</span>
-                  <span>機能追加・仕様変更があります</span>
+                  <span className="rounded border border-[#E6C566] bg-[#F7C948] px-2 py-0.5 text-[#1B3A6B]">β</span>
+                  <span>ベータ公開中。内容は公式資料で確認してください。</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
                   <Link href="/news" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
                     更新情報
                   </Link>
-                  <Link href="/search" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
-                    横断検索
-                  </Link>
-                  <Link href="/articles" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
-                    読みもの
-                  </Link>
-                  <Link href="/sources" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
-                    掲載情報と出典
-                  </Link>
+                  <a href="mailto:ogawayohei.hkd@gmail.com" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
+                    フィードバック
+                  </a>
                 </div>
               </div>
             </div>

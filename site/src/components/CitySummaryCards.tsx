@@ -102,7 +102,7 @@ export default function CitySummaryCards({
             <Link
               key={stat.label}
               href={stat.href}
-              className={`theme-card px-2.5 py-3 text-center transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-4 sm:py-5 ${
+              className={`theme-card px-2.5 py-3 text-center transition-all duration-150 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-4 sm:py-5 ${
                 index === stats.length - 1 ? "col-span-2 sm:col-span-1" : ""
               }`}
             >

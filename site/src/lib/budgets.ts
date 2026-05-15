@@ -48,6 +48,9 @@ type BudgetSource = {
   slug: string;
   year: string;
   status: string;
+  source_label?: string;
+  source_href?: string;
+  note?: string;
 };
 
 function readJson<T>(filePath: string): T | null {
@@ -76,4 +79,11 @@ export function getBudgetStaticParams(): { city: string; year: string }[] {
 export function getBudgetDocument(city: string, year: string): BudgetDocumentManifest | null {
   const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "budgets", year, "manifest.json");
   return readJson<BudgetDocumentManifest>(fp);
+}
+
+export function getBudgetSource(city: string, year: string): BudgetSource | null {
+  const fp = path.join(process.cwd(), "data", "budget_sources.json");
+  const sources = readJson<BudgetSource[]>(fp);
+  if (!Array.isArray(sources)) return null;
+  return sources.find((source) => source.slug === city && source.year === year) ?? null;
 }

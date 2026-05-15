@@ -359,7 +359,7 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`w-3.5 h-3.5 transition-transform ${showAllTags ? "rotate-180" : ""}`}
+                className={`w-3.5 h-3.5 transition-colors ${showAllTags ? "rotate-180" : ""}`}
                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                 aria-hidden="true"
@@ -484,7 +484,7 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
                             return (
                               <div
                                 key={item.council_id}
-                                className="theme-card group px-5 py-4 transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2]"
+                                className="theme-card group px-5 py-4 transition-all duration-150 hover:border-[#9FB1D2]"
                               >
                                 <Link
                                   href={`${minutesBasePath}/${item.council_id}`}

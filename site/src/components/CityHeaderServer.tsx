@@ -30,28 +30,11 @@ type MasterNavItem = {
 };
 
 const MASTER_NAV: MasterNavItem[] = [
-  { key: "members", label: "議員一覧", pageDir: "" },
-  { key: "decisions", label: "議決結果", pageDir: "decisions", dataFile: "decisions.json" },
+  { key: "members", label: "議員", pageDir: "" },
   { key: "minutes", label: "議事録", pageDir: "minutes", dataFile: "minutes/index.json" },
-  {
-    key: "sessions",
-    label: "会議録・速報",
-    pageDir: "sessions",
-    dataFile: "sessions",
-    cityOnly: ["chitose"],
-  },
-  { key: "schedule", label: "行事予定", pageDir: "schedule", dataFile: "schedule.json" },
-  { key: "newsletter", label: "議会だより", pageDir: "newsletter", dataFile: "newsletter.json" },
-  { key: "budgets", label: "予算書", pageDir: "budgets", dataFile: "budgets/index.json" },
-  {
-    key: "plan",
-    label: "総合計画",
-    pageDir: "plan",
-    dataFile: "comprehensive_plan.json",
-    cityOnly: ["chitose"],
-  },
-  { key: "election", label: "選挙結果", pageDir: "election", dataFile: "election.json" },
-  { key: "themes", label: "テーマ別", pageDir: "themes", dataFile: "members_activity.json" },
+  { key: "themes", label: "テーマ", pageDir: "themes", dataFile: "members_activity.json" },
+  { key: "budgets", label: "予算", pageDir: "budgets", dataFile: "budgets/index.json" },
+  { key: "decisions", label: "議決結果", pageDir: "decisions", dataFile: "decisions.json" },
 ];
 
 // Per-city label overrides for localized names

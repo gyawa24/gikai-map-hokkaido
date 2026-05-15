@@ -32,10 +32,10 @@ export default function TopicsPage() {
               <Link
                 key={tag}
                 href={`/topics/${encodeURIComponent(tag)}`}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#E8EEF7] text-[#2A5298] rounded-full text-sm font-medium hover:bg-[#1B3A6B] hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-[#CBD5E0] bg-white px-3 py-2 text-sm font-semibold text-[#1B3A6B] transition-colors hover:border-[#1B3A6B] hover:bg-[#E8EEF7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
               >
                 <span>{tag}</span>
-                <span className="text-xs font-normal opacity-75">（{count}件）</span>
+                <span className="font-normal text-[#4A5568]">{count}件</span>
               </Link>
             ))}
           </div>

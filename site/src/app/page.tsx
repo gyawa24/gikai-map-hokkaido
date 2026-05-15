@@ -7,6 +7,7 @@ import { getLatestArticles, articleCategoryClass, formatArticleDate } from "@/li
 import { getSiteStats } from "@/lib/siteStats";
 import { getAllTags } from "@/lib/topics";
 import { buildPageMetadata } from "@/lib/metadata";
+import HomeMunicipalityExplorer from "@/components/HomeMunicipalityExplorer";
 import type { Member } from "@/types/member";
 import type { Decision } from "@/types/decision";
 
@@ -16,6 +17,8 @@ export const metadata = buildPageMetadata({
     "北海道の市町村議会と北海道議会の議員名簿、議事録、議決結果を横断して調べられます。自治体別一覧とテーマ別入口から探せます。",
   path: "/",
 });
+
+export const revalidate = 600;
 
 function getMemberCount(cityId: string): number {
   try {
@@ -74,14 +77,17 @@ type CitySummary = {
   latestSession: string;
   decisionCount: number;
   minutesCount: number;
+  hasMinutes: boolean;
+  hasBudgets: boolean;
+  hasThemes: boolean;
 };
 
-export default function HomePage() {
+export default async function HomePage() {
   const allMunis = getMunicipalities().filter((m) => m.active);
   const prefecture = allMunis.find((m) => m.level === "prefecture");
   const municipalities = allMunis.filter((m) => m.level === "municipality");
   const latestNews = getNews().slice(0, 3);
-  const latestArticles = getLatestArticles(2);
+  const latestArticles = await getLatestArticles(2);
   const stats = getSiteStats();
   const topTags = getAllTags().slice(0, 12);
   const regionOrder = ["石狩", "空知", "後志", "胆振", "日高", "渡島", "檜山", "上川", "留萌", "宗谷", "オホーツク", "十勝", "釧路", "根室"];
@@ -93,6 +99,9 @@ export default function HomePage() {
     href: `/${m.slug}`,
     region: m.region,
     hasSession: m.features.includes("sessions"),
+    hasMinutes: m.features.includes("minutes"),
+    hasBudgets: m.features.includes("budgets"),
+    hasThemes: m.features.includes("themes"),
     memberCount: getMemberCount(m.slug),
     latestSession: getLatestSession(m.slug),
     decisionCount: getDecisionCount(m.slug),
@@ -143,6 +152,33 @@ export default function HomePage() {
           <Link href="/articles" className="theme-button px-4 py-2 text-sm">
             読みもの
           </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl">
+        <div className="mb-3">
+          <h2 className="text-xl font-black text-[#111827]">何から探しますか？</h2>
+          <p className="mt-1 text-base leading-relaxed text-[#4A5568]">
+            迷ったときは検索から。目的が決まっている場合は、入口を選んで進めます。
+          </p>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          {[
+            { label: "テーマから探す", href: "/topics", body: "福祉、予算、教育などから議事録へ" },
+            { label: "市町村から探す", href: "#municipalities", body: "自治体ごとの議員・議事録を見る" },
+            { label: "議員から探す", href: "/search?q=議員&tab=members", body: "氏名、会派、委員会で検索" },
+            { label: "読みものから知る", href: "/articles", body: "質問の背景や比較記事を読む" },
+            { label: "予算から探す", href: "/sources", body: "予算書の掲載状況と原本へ" },
+          ].map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-4 transition-colors hover:border-[#1B3A6B] hover:bg-[#F8FAFC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+            >
+              <h3 className="text-base font-black text-[#1B3A6B]">{item.label}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">{item.body}</p>
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -213,7 +249,7 @@ export default function HomePage() {
               <Link
                 key={article.slug}
                 href={`/articles/${article.slug}`}
-                className="rounded-[22px] border-2 border-[#D8DEE8] bg-white px-4 py-4 shadow-[0_6px_14px_rgba(27,58,107,0.06)] transition-transform hover:-translate-y-0.5 hover:border-[#1B3A6B]"
+                className="rounded-[22px] border-2 border-[#D8DEE8] bg-white px-4 py-4 shadow-[0_6px_14px_rgba(27,58,107,0.06)] transition-colors hover:border-[#1B3A6B]"
               >
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <span className={`rounded-full border px-2 py-0.5 text-xs font-semibold ${articleCategoryClass(article.category)}`}>
@@ -264,62 +300,12 @@ export default function HomePage() {
         <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
           <div>
             <h2 className="text-[1.7rem] font-black leading-tight text-[#111827] sm:text-[2rem]">市町村議会を選ぶ</h2>
-            <p className="mt-1 text-sm text-[#64748B]">
-              地域ごとに整理しました。初期状態では石狩地域だけ開いています。
+            <p className="mt-1 text-base leading-relaxed text-[#4A5568]">
+              市町村名で絞り込めます。機能がある自治体だけに絞ることもできます。
             </p>
           </div>
-          <span className="theme-pill-soft px-4 py-2 text-sm text-[#6B4C11]">クリックで開閉</span>
         </div>
-
-        <div className="space-y-3">
-          {groupedRegions.map(({ region, cities: regionCities }) => (
-            <details
-              key={region}
-              open={region === "石狩"}
-              className="overflow-hidden border-b border-[#D8DEE8] bg-transparent pb-3"
-            >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-3">
-                <div className="flex min-w-0 flex-wrap items-center gap-2">
-                  <span className="theme-pill px-4 py-2 text-sm text-[#1B3A6B]">{region}</span>
-                  <span className="text-sm font-bold text-[#64748B]">{regionCities.length}自治体</span>
-                </div>
-                <span className="text-xl font-black text-[#8AA3CF]">⌄</span>
-              </summary>
-              <div className="grid gap-3 border-t border-dashed border-[#D8DEE8] pt-4 sm:grid-cols-2 2xl:grid-cols-3">
-                {regionCities.map((city) => {
-                  const featured = city.id === "chitose";
-                  return (
-                    <Link
-                      key={city.id}
-                      href={city.href}
-                      className={`rounded-[22px] border-2 px-4 py-4 transition-transform hover:-translate-y-0.5 ${
-                        featured
-                          ? "border-[#E6C566] bg-[#FFF9DD] shadow-[0_10px_18px_rgba(239,214,139,0.18)]"
-                          : "border-[#D8DEE8] bg-white shadow-[0_6px_14px_rgba(27,58,107,0.06)]"
-                      }`}
-                    >
-                      <div className="mb-2 flex items-center justify-between gap-2">
-                        <p className="text-lg font-black text-[#111827]">{city.name.replace("議会", "")}</p>
-                        {featured && <span className="theme-pill-soft px-3 py-1 text-xs text-[#6B4C11]">OPEN</span>}
-                      </div>
-                      <div className="flex flex-wrap gap-1.5 text-xs font-bold text-[#64748B]">
-                        {city.memberCount > 0 && <span className="theme-pill-soft">{city.memberCount}名</span>}
-                        {city.minutesCount > 0 && <span className="theme-pill-soft">議事録 {city.minutesCount}件</span>}
-                        {city.decisionCount > 0 && <span className="theme-pill-soft">議決 {city.decisionCount}件</span>}
-                        {city.hasSession && <span className="theme-pill-soft bg-[#EEF4FF] text-[#1B3A6B]">速報あり</span>}
-                      </div>
-                      {city.latestSession && (
-                        <p className="mt-3 line-clamp-2 text-sm font-bold text-[#475569]">
-                          最新: {city.latestSession}
-                        </p>
-                      )}
-                    </Link>
-                  );
-                })}
-              </div>
-            </details>
-          ))}
-        </div>
+        <HomeMunicipalityExplorer groupedRegions={groupedRegions} />
       </section>
 
       {prefecture && (

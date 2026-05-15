@@ -32,34 +32,25 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
   const cityKeys = Object.keys(allCityNavs);
   const cityKey = detectCity(pathname, cityKeys);
   const city = cityKey ? allCityNavs[cityKey] : null;
-
-  const navItems = city
-    ? city.nav
-    : [
-        { href: "/", label: "トップ" },
-        { href: "/search", label: "検索" },
-        { href: "/articles", label: "読みもの" },
-      ];
-
-  const mobileQuickLinks = city
-    ? []
-    : [
-        { href: "/search", label: "検索する" },
-        { href: "/articles", label: "読みもの" },
-        { href: "/#municipalities", label: "市町村一覧" },
-      ];
+  const globalNavItems: NavItem[] = [
+    { href: "/search", label: "検索" },
+    { href: "/#municipalities", label: "市町村一覧" },
+    { href: "/articles", label: "読みもの" },
+    { href: "/sources", label: "出典・このサイトについて" },
+  ];
 
   function renderNavLink(item: NavItem) {
-    const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
+    const isAnchor = item.href.includes("#");
+    const isActive = !isAnchor && (pathname === item.href || pathname.startsWith(item.href + "/"));
     return (
       <Link
         key={item.href}
         href={item.href}
         aria-current={isActive ? "page" : undefined}
-        className={`inline-flex shrink-0 items-center whitespace-nowrap rounded-full border-2 px-4 py-2 text-sm font-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFD54F] ${
+        className={`inline-flex min-h-11 shrink-0 items-center whitespace-nowrap rounded-full border px-4 py-2 text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
           isActive
-            ? "border-[#9FB1D2] bg-[#FFF3BF] text-[#1B3A6B]"
-            : "border-[#D7DEE8] bg-white text-[#475569] hover:border-[#BFC9D9] hover:text-[#1B3A6B]"
+            ? "border-[#1B3A6B] bg-[#E8EEF7] text-[#1B3A6B]"
+            : "border-[#D7DEE8] bg-white text-[#475569] hover:border-[#1B3A6B] hover:bg-[#F8FAFC] hover:text-[#1B3A6B]"
         }`}
       >
         {item.label}
@@ -70,83 +61,44 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
   return (
     <header
       data-no-print="true"
-      className="relative overflow-hidden border-b border-[#d7dee8] bg-[linear-gradient(180deg,#fffdf9_0%,#f8fafc_100%)]"
-      style={{
-        backgroundImage:
-          "radial-gradient(circle at 1px 1px, rgba(27,58,107,0.12) 1px, transparent 0), linear-gradient(180deg, #fffdf9 0%, #f8fafc 100%)",
-        backgroundSize: "18px 18px, 100% 100%",
-      }}
+      className="border-b border-[#D7DEE8] bg-white"
     >
-      <div className="page-shell min-w-0 px-4 py-4 sm:py-5">
-        <div className="mb-4 flex min-w-0 flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
+      <div className="page-shell min-w-0 px-4 py-4">
+        <div className="flex min-w-0 flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex min-w-0 flex-col gap-3">
             <div className="flex flex-wrap items-center gap-2">
               <Link
                 href="/"
-                className="inline-flex items-center gap-3 rounded-[28px] border-[4px] border-[#1F2937] bg-white px-4 py-3 text-[#111827] shadow-[0_12px_22px_rgba(27,58,107,0.08)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFD54F] sm:px-5 sm:py-4"
+                className="inline-flex min-h-11 items-center gap-3 rounded-lg border border-[#CBD5E0] bg-white px-3 py-2 text-[#111827] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] sm:px-4"
               >
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#1F2937] text-white sm:h-12 sm:w-12">
-                  <TvIcon className="h-6 w-6 sm:h-7 sm:w-7" />
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-[#1B3A6B] text-white">
+                  <TvIcon className="h-5 w-5" />
                 </span>
-                <span className="text-[1.2rem] font-black leading-none tracking-tight sm:text-[2rem]">
+                <span className="text-lg font-black leading-tight tracking-tight sm:text-xl">
                   {city ? city.name : "地方議会ドットコム"}
                 </span>
               </Link>
-              <span className="inline-flex items-center rounded-2xl border-2 border-[#E6C566] bg-[#FFF3BF] px-3 py-2 text-base font-medium text-[#6B4C11]">
-                β
-              </span>
             </div>
 
             {!city && (
-              <p className="max-w-3xl text-sm font-bold text-[#6B4C11] sm:text-[15px]">
+              <p className="max-w-3xl text-sm font-semibold text-[#4A5568]">
                 北海道内の市町村議会の情報を横断的に検索・閲覧できます
               </p>
             )}
-
-            {!city && mobileQuickLinks.length > 0 && (
-              <div className="flex gap-2 sm:hidden">
-                {mobileQuickLinks.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`inline-flex flex-1 items-center justify-center rounded-full border-2 px-4 py-3 text-sm font-black ${
-                      item.label === "検索する"
-                        ? "border-[#E6C566] bg-[#FFF3BF] text-[#6B4C11]"
-                        : "border-[#D7DEE8] bg-white text-[#475569]"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
           </div>
 
-          {!city && (
-            <nav className="hidden flex-wrap justify-start gap-2 xl:flex xl:justify-end" aria-label="上部ナビゲーション">
-              {[
-                { href: "/search?q=議員", label: "議員" },
-                { href: "/search?q=議事録", label: "議事録" },
-                { href: "/search", label: "検索" },
-                { href: "/articles", label: "読みもの" },
-              ].map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="inline-flex items-center rounded-full border-2 border-[#D7DEE8] bg-white px-4 py-2 text-sm font-black text-[#475569] hover:border-[#BFC9D9] hover:text-[#1B3A6B]"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-          )}
-        </div>
-
-        <div className={`mobile-nav-fade ${city ? "" : "hidden sm:block"}`}>
-          <nav className="flex gap-2 overflow-x-auto pb-1 pr-8 md:flex-wrap md:overflow-visible md:pb-0 md:pr-0" aria-label="メインナビゲーション">
-            {navItems.map(renderNavLink)}
+          <nav className="flex flex-wrap gap-2" aria-label="グローバルナビゲーション">
+            {globalNavItems.map(renderNavLink)}
           </nav>
         </div>
+
+        {city && city.nav.length > 0 && (
+          <div className="mobile-nav-fade mt-3 border-t border-[#E2E8F0] pt-3">
+            <nav className="flex gap-2 overflow-x-auto pb-1 pr-8 md:flex-wrap md:overflow-visible md:pb-0 md:pr-0" aria-label={`${city.name}内ナビゲーション`}>
+              {city.nav.map(renderNavLink)}
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );

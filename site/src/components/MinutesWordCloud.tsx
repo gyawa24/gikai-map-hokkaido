@@ -202,7 +202,7 @@ export default function MinutesWordCloud({
                     <Link
                       key={entry.term}
                       href={`/search?q=${encodeURIComponent(entry.term)}&city=${city}&source=minutes`}
-                      className={`inline-flex items-end gap-2 rounded-full border-2 font-black tracking-[0.01em] shadow-[0_6px_16px_rgba(27,58,107,0.08)] transition-transform duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${SIZE_STYLES[sizeIndex(entry.count, min, max)]} ${TONE_STYLES[index % TONE_STYLES.length]}`}
+                      className={`inline-flex items-end gap-2 rounded-full border-2 font-black tracking-[0.01em] shadow-[0_6px_16px_rgba(27,58,107,0.08)] transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${SIZE_STYLES[sizeIndex(entry.count, min, max)]} ${TONE_STYLES[index % TONE_STYLES.length]}`}
                       title={`${entry.term}: ${formatNumber(entry.count)}回`}
                     >
                       <span>{entry.term}</span>

@@ -12,7 +12,23 @@ export const metadata = buildPageMetadata({
   path: "/search",
 });
 
-export default function SearchPage() {
+type SearchPageProps = {
+  searchParams?: Promise<{
+    q?: string | string[];
+    tab?: string | string[];
+    source?: string | string[];
+  }>;
+};
+
+function firstParam(value: string | string[] | undefined): string {
+  return Array.isArray(value) ? value[0] ?? "" : value ?? "";
+}
+
+export default async function SearchPage({ searchParams }: SearchPageProps) {
+  const resolvedSearchParams = (await searchParams) ?? {};
+  const initialQuery = firstParam(resolvedSearchParams.q);
+  const initialTab = firstParam(resolvedSearchParams.tab);
+  const initialSource = firstParam(resolvedSearchParams.source);
   const topTags = getAllTags().slice(0, 10);
   const breadcrumb = buildBreadcrumbList([
     { name: "地方議会ドットコム", path: "/" },
@@ -22,42 +38,38 @@ export default function SearchPage() {
   return (
     <div className="page-shell max-w-6xl">
       <JsonLd data={breadcrumb} />
-      <div className="mb-5">
+      <div className="mb-4">
         <h1 className="theme-section-title text-2xl">横断検索</h1>
-        <p className="mt-1 text-sm text-[#718096]">
-          まずはここでまとめて探せます。議事録、議決結果、議員名を同じ検索窓から調べられます。
+        <p className="mt-1 text-base leading-relaxed text-[#4A5568]">
+          議事録、議員、議決結果をまとめて探せます。予算書は各市町村の予算ページから原本画像とOCR結果を確認できます。
         </p>
       </div>
 
-      <section className="mb-6 rounded-[22px] border border-[#D8DEE8] bg-white px-4 py-4 shadow-[0_6px_14px_rgba(27,58,107,0.05)]">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
-          <div className="max-w-2xl">
-            <h2 className="text-lg font-black text-[#111827]">検索の入口</h2>
-            <p className="mt-1 text-sm leading-relaxed text-[#64748B]">
-              下のボタンは検索窓に入れる言葉の例です。迷ったらテーマ名、議員名、市町村名のどれかから始めてください。
-            </p>
+      <noscript>
+        <form action="/search" method="get" className="mb-4 rounded-lg border border-[#CBD5E0] bg-white p-4">
+          <label htmlFor="noscript-search" className="block text-sm font-bold text-[#1B3A6B]">
+            キーワード検索
+          </label>
+          <div className="mt-2 flex flex-col gap-2 sm:flex-row">
+            <input
+              id="noscript-search"
+              name="q"
+              defaultValue={initialQuery}
+              placeholder="給食無償化、除雪、ラピダス、防災、議員名で検索"
+              className="theme-input px-4 py-3 text-base"
+            />
+            <button type="submit" className="theme-button theme-button-accent min-h-11 px-5 py-2 text-sm">
+              検索
+            </button>
           </div>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { label: "子育て支援", href: "/search?q=%E5%AD%90%E8%82%B2%E3%81%A6%E6%94%AF%E6%8F%B4" },
-              { label: "除雪", href: "/search?q=%E9%99%A4%E9%9B%AA" },
-              { label: "防災", href: "/search?q=%E9%98%B2%E7%81%BD" },
-              { label: "ラピダス", href: "/search?q=%E3%83%A9%E3%83%94%E3%83%80%E3%82%B9" },
-              { label: "議決結果", href: "/search?q=%E8%AD%B0%E6%B1%BA&source=decision" },
-            ].map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="inline-flex items-center rounded-full border border-[#D8DEE8] bg-[#F8FAFC] px-3 py-1.5 text-sm font-bold text-[#1B3A6B] transition-colors hover:border-[#1B3A6B] hover:bg-[#E8EEF7]"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </div>
+        </form>
+      </noscript>
 
+      <SearchClient initialQuery={initialQuery} initialTab={initialTab} initialSource={initialSource} />
+
+      <section className="mt-6 rounded-lg border border-[#D8DEE8] bg-white px-4 py-4">
         {topTags.length > 0 && (
-          <div className="mt-4 border-t border-[#E2E8F0] pt-4">
+          <div>
             <p className="mb-2 text-sm font-bold text-[#475569]">テーマ別入口</p>
             <p className="mb-2 text-sm leading-relaxed text-[#64748B]">
               よく出るテーマを先にまとめた入口です。詳しく絞るときは、このページの検索窓に戻れます。
@@ -77,8 +89,6 @@ export default function SearchPage() {
           </div>
         )}
       </section>
-
-      <SearchClient />
     </div>
   );
 }

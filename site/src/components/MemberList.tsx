@@ -78,7 +78,7 @@ function MemberCard({
   const hiddenThemeCount = Math.max(0, (activity?.themes?.length ?? 0) - visibleThemes.length);
 
   return (
-    <div className="theme-card overflow-hidden transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2]">
+    <div className="theme-card overflow-hidden transition-all duration-150 hover:border-[#9FB1D2]">
       <div className="p-4 sm:p-[18px]">
         {/* 写真 */}
         {member.photo_url && (
@@ -219,7 +219,7 @@ function MemberCard({
           >
             <span className="text-xs font-medium">質問履歴を見る</span>
             <svg
-              className={`w-4 h-4 transition-transform ${activityOpen ? "rotate-180" : ""}`}
+              className={`w-4 h-4 transition-colors ${activityOpen ? "rotate-180" : ""}`}
               viewBox="0 0 24 24" fill="none" stroke="currentColor"
               strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
               aria-hidden="true"

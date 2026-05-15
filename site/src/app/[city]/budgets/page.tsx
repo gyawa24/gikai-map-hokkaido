@@ -65,7 +65,7 @@ export default async function BudgetsPage({
             <Link
               key={document.year}
               href={`/${city}/budgets/${document.year}`}
-              className="theme-card flex min-h-[11rem] flex-col justify-between px-5 py-5 transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+              className="theme-card flex min-h-[11rem] flex-col justify-between px-5 py-5 transition-all duration-150 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
             >
               <span>
                 <span className="theme-pill-soft mb-3">{document.fiscal_year_label}</span>

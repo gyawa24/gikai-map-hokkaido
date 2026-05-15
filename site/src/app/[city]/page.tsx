@@ -132,7 +132,7 @@ function CityExploreLinks({
           <Link
             key={link.href}
             href={link.href}
-            className="theme-card flex min-h-[8.5rem] flex-col justify-between px-4 py-4 transition-all duration-150 hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+            className="theme-card flex min-h-[8.5rem] flex-col justify-between px-4 py-4 transition-all duration-150 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
           >
             <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#D7E1F0] bg-[#F4F8FF] text-[#1B3A6B]">
               {link.icon}

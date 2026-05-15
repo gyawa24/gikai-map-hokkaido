@@ -67,6 +67,26 @@ function buildSnippet(page: BudgetPage, tokens: string[], mode: MatchMode): stri
   return (hit ?? page.preview).replace(/\s+/g, " ").trim().slice(0, 180);
 }
 
+function Highlight({ text, tokens, mode }: { text: string; tokens: string[]; mode: MatchMode }) {
+  if (tokens.length === 0 || mode !== "exact") return <>{text}</>;
+  const pattern = tokens.map((token) => token.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  const parts = text.split(new RegExp(`(${pattern})`, "g"));
+  const regex = new RegExp(`^(?:${pattern})$`);
+  return (
+    <>
+      {parts.map((part, index) =>
+        regex.test(part) ? (
+          <mark key={`${part}-${index}`} className="rounded bg-[#FFF3BF] px-0.5 text-[#1A202C]">
+            {part}
+          </mark>
+        ) : (
+          <span key={`${part}-${index}`}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
+
 const BUDGET_SECTION_LABELS = [
   "議会費",
   "総務費",
@@ -110,9 +130,11 @@ function getBudgetSectionLabel(page: BudgetPage): string | null {
 export default function BudgetDocumentClient({
   pages,
   pageCount,
+  sourceHref,
 }: {
   pages: BudgetPage[];
   pageCount: number;
+  sourceHref?: string;
 }) {
   const [query, setQuery] = useState("");
   const [matchMode, setMatchMode] = useState<MatchMode>("normal");
@@ -204,8 +226,8 @@ export default function BudgetDocumentClient({
           </div>
           <p className="text-xs leading-relaxed text-[#718096]">{selectedMatchMode.description}</p>
         </div>
-        <p className="mt-2 text-xs leading-relaxed text-[#718096]">
-          検索結果は入口として使い、数字・費目名・表の行位置は下の原本画像で確認してください。
+        <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">
+          検索結果はOCR結果です。数字・金額・費目名・表の行位置は、必ず下の原本画像または公式資料で確認してください。
         </p>
 
         <div className="mt-3 flex items-center justify-between border-t border-[#E2E8F0] pt-2">
@@ -238,15 +260,15 @@ export default function BudgetDocumentClient({
                   <span className="flex items-center justify-between gap-2">
                     <span className="text-sm font-black text-[#1B3A6B]">p.{page.page}</span>
                     {sectionLabel ? (
-                      <span className="truncate rounded-full bg-white px-2 py-0.5 text-[11px] font-black leading-none text-[#2A5298] ring-1 ring-[#C5D0E6]">
+                      <span className="truncate rounded-full bg-white px-2 py-0.5 text-xs font-black leading-none text-[#2A5298] ring-1 ring-[#C5D0E6]">
                         {sectionLabel}
                       </span>
                     ) : (
                       <span className="text-xs text-[#718096]">{page.text_length.toLocaleString()}字</span>
                     )}
                   </span>
-                  <span className="mt-0.5 block truncate text-xs leading-relaxed text-[#4A5568]">
-                    {page.snippet}
+                  <span className="mt-0.5 block truncate text-sm leading-relaxed text-[#4A5568]">
+                    <Highlight text={page.snippet} tokens={tokens} mode={matchMode} />
                   </span>
                 </button>
               );
@@ -302,7 +324,19 @@ export default function BudgetDocumentClient({
                     次へ
                   </button>
                   <div className="flex rounded-full border border-[#D7DEE8] bg-white p-1">
-                    {[90, 100, 110, 130].map((value) => (
+                    {[100].map((value) => (
+                      <button
+                        key={`reset-${value}`}
+                        type="button"
+                        onClick={() => setZoom(value)}
+                        className={`rounded-full px-3 py-1 text-xs font-black transition-colors ${
+                          zoom === value ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:bg-[#E8EEF7]"
+                        }`}
+                      >
+                        100%
+                      </button>
+                    ))}
+                    {[90, 110, 130].map((value) => (
                       <button
                         key={value}
                         type="button"
@@ -341,6 +375,16 @@ export default function BudgetDocumentClient({
               >
                 {showOcrText ? "OCRテキストを閉じる" : "OCRテキストを見る"}
               </button>
+              {sourceHref && (
+                <a
+                  href={sourceHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-4 text-sm font-black text-[#2A5298] hover:underline"
+                >
+                  公式資料で確認する
+                </a>
+              )}
               {showOcrText && (
                 <pre className="mt-3 max-h-[22rem] overflow-auto whitespace-pre rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] p-4 text-xs leading-relaxed text-[#1A202C]">
                   {selectedPage.text}

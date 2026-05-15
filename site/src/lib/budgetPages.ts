@@ -13,7 +13,8 @@ export function getBudgetPages(city: string, year: string): BudgetPage[] {
 
   return manifest.pages.map((page) => {
     try {
-      const text = fs.readFileSync(path.join(baseDir, page.file), "utf-8");
+      const pagePath = path.join(/*turbopackIgnore: true*/ baseDir, page.file);
+      const text = fs.readFileSync(/*turbopackIgnore: true*/ pagePath, "utf-8");
       return {
         ...page,
         text: stripMarkdownFrontmatter(text).trimEnd(),

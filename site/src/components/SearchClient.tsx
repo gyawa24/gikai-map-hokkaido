@@ -59,11 +59,12 @@ const SOURCE_FILTER_LABELS: Record<SourceFilter, string> = {
 };
 
 const SEARCH_SUGGESTIONS = [
-  "子育て支援",
-  "学校給食",
-  "防災",
   "除雪",
+  "給食無償化",
   "ラピダス",
+  "防災",
+  "子育て支援",
+  "議決結果",
   "議員名で検索",
 ];
 
@@ -74,16 +75,24 @@ const SEARCH_SHORTCUTS = [
   { label: "速報を探す", tab: "sessions" as const, source: "session" as SourceFilter },
 ];
 
-function SearchClientInner() {
+type SearchClientProps = {
+  initialQuery?: string;
+  initialTab?: string;
+  initialSource?: string;
+};
+
+function SearchClientInner({ initialQuery = "", initialTab = "", initialSource = "" }: SearchClientProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
-  const [tab, setTab] = useState<"sessions" | "members">(() => searchParams.get("tab") === "members" ? "members" : "sessions");
+  const [query, setQuery] = useState(() => searchParams.get("q") ?? initialQuery);
+  const [tab, setTab] = useState<"sessions" | "members">(() =>
+    (searchParams.get("tab") ?? initialTab) === "members" ? "members" : "sessions"
+  );
   const [cityFilter, setCityFilter] = useState<string>(() => searchParams.get("city") ?? "all");
   const [cityLabelHint] = useState(() => searchParams.get("cityName") ?? "");
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>(() => {
-    const value = searchParams.get("source");
+    const value = searchParams.get("source") ?? initialSource;
     return value === "minutes" || value === "session" || value === "decision" ? value : "all";
   });
   const [factionFilter, setFactionFilter] = useState<string>(() => searchParams.get("faction") ?? "all");
@@ -113,6 +122,22 @@ function SearchClientInner() {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const requestIdRef = useRef(0);
+
+  useEffect(() => {
+    const nextQuery = searchParams.get("q") ?? "";
+    if (nextQuery !== query) setQuery(nextQuery);
+    const nextTab = searchParams.get("tab") === "members" ? "members" : "sessions";
+    if (nextTab !== tab) setTab(nextTab);
+    const nextSource = searchParams.get("source");
+    if (
+      nextSource &&
+      (nextSource === "minutes" || nextSource === "session" || nextSource === "decision") &&
+      nextSource !== sourceFilter
+    ) {
+      setSourceFilter(nextSource);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
 
   useEffect(() => {
     try {
@@ -367,7 +392,10 @@ function SearchClientInner() {
 
   return (
     <div className="page-shell flex max-w-5xl flex-col gap-4">
-      <div className="theme-panel px-4 py-4 sm:px-5">
+      <div className="theme-panel px-4 py-5 sm:px-6">
+        <label htmlFor="site-search" className="mb-2 block text-lg font-black text-[#1B3A6B]">
+          キーワード検索
+        </label>
         <div className="relative">
           <svg className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#718096]"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
@@ -375,11 +403,12 @@ function SearchClientInner() {
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
           <input
+            id="site-search"
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="キーワードを入力（例: 子育て支援 予算、学校給食、議員名）"
-            className="theme-input w-full py-3 pl-9 pr-20 text-base sm:pr-24"
+            placeholder="給食無償化、除雪、ラピダス、防災、議員名で検索"
+            className="theme-input w-full min-h-12 py-3 pl-9 pr-20 text-base sm:min-h-14 sm:pr-24 sm:text-lg"
           />
           {query && (
             <button
@@ -392,8 +421,21 @@ function SearchClientInner() {
           )}
         </div>
 
+        <div className="mt-3 flex flex-wrap gap-2">
+          {SEARCH_SUGGESTIONS.map((suggestion) => (
+            <button
+              key={suggestion}
+              onClick={() => setQuery(suggestion)}
+              className="inline-flex min-h-11 items-center rounded-full border border-[#CBD5E0] bg-white px-3 py-2 text-sm font-semibold text-[#1B3A6B] transition-colors hover:border-[#1B3A6B] hover:bg-[#E8EEF7]"
+              type="button"
+            >
+              {suggestion}
+            </button>
+          ))}
+        </div>
+
         <div className="mt-3 flex flex-wrap items-center gap-2">
-          <span className="text-xs font-semibold text-[#667085]">複数語の条件</span>
+          <span className="text-sm font-semibold text-[#667085]">複数語の条件</span>
           <div className="inline-flex rounded-full border border-[#CBD5E0] bg-white p-1">
             <button
               type="button"
@@ -414,7 +456,7 @@ function SearchClientInner() {
               OR
             </button>
           </div>
-          <p className="text-xs text-[#667085]">
+          <p className="text-sm text-[#667085]">
             {searchMode === "and" ? "すべての語を含む結果を優先" : "どれかの語を含む結果を表示"}
           </p>
         </div>
@@ -428,18 +470,6 @@ function SearchClientInner() {
               type="button"
             >
               {shortcut.label}
-            </button>
-          ))}
-        </div>
-
-        <div className="mt-3 flex flex-wrap gap-1.5">
-          {SEARCH_SUGGESTIONS.map((suggestion) => (
-            <button
-              key={suggestion}
-              onClick={() => setQuery(suggestion)}
-              className="theme-pill-soft text-[#4A5568] transition-colors hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
-            >
-              {suggestion}
             </button>
           ))}
         </div>
@@ -480,7 +510,10 @@ function SearchClientInner() {
                 「{query.trim()}」の検索結果
               </p>
               <p className="mt-1 text-xs text-[#667085] sm:text-sm">
-                議会記録 {loading ? "…" : sessionTotal.toLocaleString()} 件 / 議員 {loading ? "…" : memberTotal.toLocaleString()} 名
+                議事録・議決結果 {loading ? "…" : sessionTotal.toLocaleString()} 件 / 議員 {loading ? "…" : memberTotal.toLocaleString()} 名
+              </p>
+              <p className="mt-1 text-sm text-[#667085]">
+                予算書は各市町村の「予算」ページで原本画像とOCR結果を検索できます。
               </p>
               {activeFilters.length > 0 && (
                 <div className="mt-2 flex flex-wrap gap-1.5">
@@ -619,7 +652,7 @@ function SearchClientInner() {
             }`}
             aria-current={tab === t ? "true" : undefined}
           >
-            {t === "sessions" ? "議会記録" : "議員"}
+            {t === "sessions" ? "議事録・議決結果" : "議員"}
             {hasQuery && !loading && (
               <span className="ml-1.5 rounded-full bg-[#F4F8FF] px-1.5 py-0.5 text-xs text-[#1B3A6B]">
                 {t === "sessions" ? filteredSessions.length : filteredMembers.length}
@@ -769,8 +802,18 @@ function SearchClientInner() {
 
       {hasQuery && !loading && totalResults === 0 && (
         <div className="theme-card px-5 py-7 text-center text-[#718096] sm:px-6 sm:py-8">
-          <p className="text-sm">「{query.trim()}」の検索結果はありませんでした</p>
-          <p className="mt-1 text-xs">別の語に変えるか、語を1つ減らすと見つかりやすくなります。</p>
+          <p className="text-base font-semibold text-[#4A5568]">「{query.trim()}」の検索結果はありませんでした</p>
+          <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">
+            別の語に変える、短い語にする、表記を変えると見つかることがあります。テーマ一覧や予算書の原本検索も確認できます。
+          </p>
+          <div className="mt-4 flex flex-wrap justify-center gap-2">
+            <Link href="/topics" className="theme-button px-4 py-2 text-sm">
+              テーマ一覧を見る
+            </Link>
+            <Link href="/sources" className="theme-button px-4 py-2 text-sm">
+              予算書の掲載状況を見る
+            </Link>
+          </div>
           {searchSuggestions.length > 0 && (
             <div className="mt-4">
               <p className="mb-2 text-xs font-semibold text-[#1B3A6B]">代わりにこの語を試せます</p>
@@ -842,7 +885,7 @@ function SearchClientInner() {
                   <Link
                     key={`${group.city}-${i}`}
                     href={r.href}
-                    className="theme-card block px-4 py-3 transition-all hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
+                    className="theme-card block px-4 py-3 transition-colors hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
                   >
                     <div className="mb-1.5 flex items-center gap-1.5 flex-wrap">
                       {!showGroupedSessions && <span className="theme-pill-soft text-[#2A5298]">{r.cityName}</span>}
@@ -891,7 +934,7 @@ function SearchClientInner() {
                   <Link
                     key={`${group.city}-${i}`}
                     href={m.href}
-                    className="theme-card block px-4 py-3 transition-all hover:-translate-y-0.5 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
+                    className="theme-card block px-4 py-3 transition-colors hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
                   >
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-3">
@@ -935,10 +978,10 @@ function SearchClientInner() {
   );
 }
 
-export default function SearchClient() {
+export default function SearchClient(props: SearchClientProps) {
   return (
     <Suspense>
-      <SearchClientInner />
+      <SearchClientInner {...props} />
     </Suspense>
   );
 }

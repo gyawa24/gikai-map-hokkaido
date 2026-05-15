@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BudgetDocumentClient from "@/components/BudgetDocumentClient";
 import JsonLd from "@/components/JsonLd";
-import { getBudgetDocument, getBudgetStaticParams } from "@/lib/budgets";
+import { getBudgetDocument, getBudgetSource, getBudgetStaticParams } from "@/lib/budgets";
 import { getBudgetPages } from "@/lib/budgetPages";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
@@ -43,6 +43,7 @@ export default async function BudgetDocumentPage({
   const document = getBudgetDocument(city, year);
   if (!document) notFound();
 
+  const source = getBudgetSource(city, year);
   const pages = getBudgetPages(city, year);
   const cityName = municipality?.name ?? city;
   const councilName = municipality?.council_name ?? `${cityName}議会`;
@@ -72,15 +73,26 @@ export default async function BudgetDocumentPage({
         <div className="mb-3 flex flex-wrap items-center gap-2">
           <span className="theme-pill-soft">{document.fiscal_year_label}</span>
           <span className="theme-pill-soft">全{document.page_count.toLocaleString()}ページ</span>
-          <span className="theme-pill-soft">OCR検索</span>
+          <span className="theme-pill-soft">OCR結果</span>
+          <span className="theme-pill-soft">原本画像</span>
         </div>
         <h1 className="theme-section-title text-2xl">{document.title}</h1>
-        <p className="mt-2 max-w-4xl text-sm leading-relaxed text-[#4A5568]">
+        <p className="mt-2 max-w-4xl text-base leading-relaxed text-[#4A5568]">
           予算書のページ画像を見ながら、OCRで抽出した文字を検索できます。A3表のOCRなので、検索結果は入口として使い、数字・費目名・表の行位置は原本画像で確認してください。
         </p>
+        {source?.source_href && (
+          <a
+            href={source.source_href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex min-h-11 items-center rounded-full border border-[#CBD5E0] bg-white px-4 py-2 text-sm font-bold text-[#1B3A6B] transition-colors hover:border-[#1B3A6B] hover:bg-[#E8EEF7]"
+          >
+            公式資料で確認する
+          </a>
+        )}
       </header>
 
-      <BudgetDocumentClient pages={pages} pageCount={document.page_count} />
+      <BudgetDocumentClient pages={pages} pageCount={document.page_count} sourceHref={source?.source_href} />
     </div>
   );
 }

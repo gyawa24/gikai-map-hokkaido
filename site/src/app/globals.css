@@ -22,9 +22,7 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at top left, rgba(255, 213, 79, 0.2) 0%, transparent 24%),
-    linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+  background: #f4f6f9;
   color: var(--foreground);
   font-family: var(--font-noto-sans-jp), "Hiragino Sans", "Hiragino Kaku Gothic ProN",
     "Yu Gothic UI", sans-serif;
@@ -37,16 +35,7 @@ body {
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.48) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.42) 1px, transparent 1px);
-  background-size: 28px 28px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 88%);
-  pointer-events: none;
+  content: none;
 }
 
 h1, h2, h3, h4 {
@@ -62,21 +51,21 @@ h1, h2, h3, h4 {
   background: var(--surface);
   border: 2px solid #d9dde4;
   border-radius: 22px;
-  box-shadow: 0 10px 24px rgba(27, 58, 107, 0.08);
+  box-shadow: 0 4px 12px rgba(27, 58, 107, 0.05);
 }
 
 .theme-card-soft {
   background: var(--surface-soft);
   border: 2px solid #e4e7ec;
   border-radius: 20px;
-  box-shadow: 0 6px 16px rgba(27, 58, 107, 0.06);
+  box-shadow: 0 3px 10px rgba(27, 58, 107, 0.04);
 }
 
 .theme-panel {
-  background: linear-gradient(180deg, #ffffff 0%, #fcfcfb 100%);
+  background: #ffffff;
   border: 2px solid #d6dce5;
   border-radius: 24px;
-  box-shadow: 0 12px 28px rgba(27, 58, 107, 0.09);
+  box-shadow: 0 5px 14px rgba(27, 58, 107, 0.05);
 }
 
 .theme-alert {
@@ -139,14 +128,13 @@ h1, h2, h3, h4 {
   background: #ffffff;
   color: #1b3a6b;
   font-weight: 700;
-  transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease, transform 150ms ease;
+  transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease;
 }
 
 .theme-button:hover {
   border-color: #9fb1d2;
   background: #f8fbff;
   color: #17355f;
-  transform: translateY(-1px);
 }
 
 .theme-button-accent {
@@ -252,11 +240,11 @@ h1, h2, h3, h4 {
   color: #1f2937;
   font-weight: 900;
   letter-spacing: 0.03em;
-  transition: transform 150ms ease, background-color 150ms ease, color 150ms ease;
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
 }
 
 .portal-tab:hover {
-  transform: translateY(-1px);
+  border-color: #9fb1d2;
 }
 
 .portal-tab-active {
@@ -334,11 +322,10 @@ h1, h2, h3, h4 {
   border-radius: 20px;
   background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
   padding: 0.9rem 1rem;
-  transition: transform 150ms ease, border-color 150ms ease;
+  transition: border-color 150ms ease, background-color 150ms ease;
 }
 
 .portal-rank-item:hover {
-  transform: translateY(-1px);
   border-color: #9fb1d2;
 }
 

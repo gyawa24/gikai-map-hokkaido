@@ -498,14 +498,14 @@ export function registerTools(server, options) {
       }
     }
     function getBudgetDocuments(slug) {
-      const fp = path.join(dataDir, slug, "budgets", "index.json");
+      const fp = path.join(/*turbopackIgnore: true*/ dataDir, slug, "budgets", "index.json");
       const docs = readJsonSafe(fp, []);
       return Array.isArray(docs) ? docs : [];
     }
     function getBudgetManifest(slug, year) {
       if (!isSafeFileToken(year)) return null;
       return readJsonSafe(
-        path.join(dataDir, slug, "budgets", year, "manifest.json"),
+        path.join(/*turbopackIgnore: true*/ dataDir, slug, "budgets", year, "manifest.json"),
         null
       );
     }
@@ -517,16 +517,16 @@ export function registerTools(server, options) {
         .filter(
           (m) =>
             (m.features ?? []).includes("budgets") ||
-            fs.existsSync(path.join(dataDir, m.slug, "budgets", "index.json"))
+            fs.existsSync(path.join(/*turbopackIgnore: true*/ dataDir, m.slug, "budgets", "index.json"))
         );
     }
     function readBudgetPageText(slug, year, pageFile) {
       if (typeof pageFile !== "string") return "";
-      const baseDir = path.join(dataDir, slug, "budgets", year);
-      const fp = path.resolve(baseDir, pageFile);
-      if (!fp.startsWith(path.resolve(baseDir) + path.sep)) return "";
+      const baseDir = path.join(/*turbopackIgnore: true*/ dataDir, slug, "budgets", year);
+      const fp = path.resolve(/*turbopackIgnore: true*/ baseDir, pageFile);
+      if (!fp.startsWith(path.resolve(/*turbopackIgnore: true*/ baseDir) + path.sep)) return "";
       try {
-        return stripMarkdownFrontmatter(fs.readFileSync(fp, "utf-8")).trimEnd();
+        return stripMarkdownFrontmatter(fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")).trimEnd();
       } catch {
         return "";
       }
