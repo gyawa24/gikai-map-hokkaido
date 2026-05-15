@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import type { ScheduleEvent } from "@/types/schedule";
+import type { ScheduleEvent, ScheduleLinkIndex } from "@/types/schedule";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
 
@@ -21,13 +21,20 @@ export async function generateMetadata({
   });
 }
 
-function getSchedule(city: string): ScheduleEvent[] {
+function getSchedule(city: string): ScheduleEvent[] | ScheduleLinkIndex {
   const fp = path.join(process.cwd(), "data", city, "schedule.json");
   try {
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as ScheduleEvent[];
+    const data = JSON.parse(fs.readFileSync(fp, "utf-8")) as ScheduleEvent[] | ScheduleLinkIndex;
+    if (Array.isArray(data)) return data;
+    if (data && typeof data === "object" && "source_url" in data) return data;
+    return [];
   } catch {
     return [];
   }
+}
+
+function isScheduleLinkIndex(schedule: ScheduleEvent[] | ScheduleLinkIndex): schedule is ScheduleLinkIndex {
+  return !Array.isArray(schedule);
 }
 
 function formatContent(content: string): string[] {
@@ -59,7 +66,8 @@ export default async function CitySchedulePage({
   if (!municipality?.features.includes("schedule")) notFound();
 
   const cityName = municipality.name;
-  const events = getSchedule(city);
+  const schedule = getSchedule(city);
+  const events = isScheduleLinkIndex(schedule) ? [] : schedule;
 
   const groups = events.reduce<Record<string, ScheduleEvent[]>>((acc, ev) => {
     (acc[ev.period_label] ??= []).push(ev);
@@ -75,7 +83,36 @@ export default async function CitySchedulePage({
         </p>
       </div>
 
-      {events.length === 0 ? (
+      {isScheduleLinkIndex(schedule) ? (
+        <div className="theme-card p-6">
+          <p className="mb-5 text-sm leading-relaxed text-[#4A5568]">
+            {schedule.note || `${cityName}議会の会議日程は公式サイトでご確認ください。`}
+          </p>
+
+          <div className="flex flex-wrap gap-3">
+            {schedule.pdf_schedules.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="theme-button theme-button-accent px-4 py-2 text-sm font-medium"
+              >
+                {link.label}
+              </a>
+            ))}
+
+            <a
+              href={schedule.source_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="theme-button px-4 py-2 text-sm text-[#718096] hover:text-[#1B3A6B]"
+            >
+              公式ページ
+            </a>
+          </div>
+        </div>
+      ) : events.length === 0 ? (
         <div className="theme-card px-6 py-8 text-center text-[#718096]">
           現在、掲載されている行事予定はありません。
         </div>
