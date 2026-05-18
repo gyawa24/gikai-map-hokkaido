@@ -96,8 +96,8 @@ export default function RootLayout({
             >
               <div className="page-shell flex flex-wrap items-center justify-between gap-2 px-4 py-2 text-sm font-bold text-[#6b4c11]">
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                  <span className="rounded border border-[#E6C566] bg-[#F7C948] px-2 py-0.5 text-[#1B3A6B]">β</span>
-                  <span>ベータ公開中。内容は公式資料で確認してください。</span>
+                  <span className="rounded border border-[#E6C566] bg-[#F7C948] px-2 py-0.5 text-[#1B3A6B]">γ</span>
+                  <span>地方議会ドットコムγ 公開中。内容は公式資料で確認してください。</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
                   <Link href="/news" className="underline decoration-[#d4b254] underline-offset-2 hover:text-[#1b3a6b]">
@@ -119,8 +119,8 @@ export default function RootLayout({
                 <div className="grid gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
                   <div>
                     <div className="mb-3 flex flex-wrap items-center gap-2">
-                      <span className="portal-subhead border-white/25 bg-white/10 text-white">地方議会ドットコム</span>
-                      <span className="theme-pill-soft border-[#e6c566] bg-[#ffd54f] text-[#1b3a6b]">β</span>
+                      <span className="portal-subhead border-white/25 bg-white/10 text-white">地方議会ドットコムγ</span>
+                      <span className="theme-pill-soft border-[#e6c566] bg-[#ffd54f] text-[#1b3a6b]">γ</span>
                     </div>
                     <p className="max-w-3xl text-sm leading-relaxed text-[#d5def0]">
                       北海道内の市町村議会の議員情報・議事録・議決結果を、横断的に見つけやすく整理する非公式の情報サイトです。

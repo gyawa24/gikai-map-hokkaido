@@ -1,13 +1,13 @@
 ---
-name: 地方議会ドットコム
-version: beta
+name: 地方議会ドットコムγ
+version: gamma
 description: 北海道の市町村議会情報を横断閲覧する非公式サイトのデザイン仕様書
 colors:
   primary: "#1B3A6B"        # ヘッダー・フッター背景、濃紺アクセント
   primary-mid: "#2A5298"     # リンク・バッジ文字・ボタンhover
   primary-light: "#E8EEF7"   # バッジ背景・ホバー面
-  accent-gold: "#F7C948"     # 北海道ゴールド、βバッジ、ヘッダー上部ライン
-  warn-bg: "#FFF7E6"         # AI注意喚起・βバナー背景
+  accent-gold: "#F7C948"     # 北海道ゴールド、γバッジ、ヘッダー上部ライン
+  warn-bg: "#FFF7E6"         # AI注意喚起・γバナー背景
   warn-fg: "#78451F"         # AI注意・警告の文字
   success-bg: "#065F46"      # Toast 成功
   background: "#F4F6F9"
@@ -50,7 +50,7 @@ AIエージェントがこのリポジトリを編集する際に参照するデ
 
 ## プロジェクト概要
 
-- **サービス名**: 地方議会ドットコム（ベータ公開中）
+- **サービス名**: 地方議会ドットコムγ
 - **本番ドメイン**: `chihougikai.com`
 - **目的**: 北海道内市町村議会の情報（議員・議事録・議決・日程）を横断的に公開する市民向け情報サイト
 - **収録範囲**: 北海道179市町村 + 北海道議会 = 180自治体。うち機能を完全に提供しているのは千歳・恵庭・苫小牧の3市（議員・議事録・議決・議会だより・行事予定）。残り自治体は議事録中心に順次拡充中
@@ -82,9 +82,9 @@ CSS変数は `site/src/app/globals.css` で定義。Tailwindクラスでは直�
 | 値 | 用途 |
 |---|---|
 | `#E2E8F0` | カード内の薄い区切り線・内側ボーダー |
-| `#F7C948` | ヘッダー上部アクセントライン・β バッジ背景・注意喚起の縁（北海道ゴールド） |
+| `#F7C948` | ヘッダー上部アクセントライン・γ バッジ背景・注意喚起の縁（北海道ゴールド） |
 | `#A0AEC0` | 空欄・無効のダッシュ（―） |
-| `#FFF7E6` | **AI要約注意・ベータ公開バナーの背景**（warn-bg） |
+| `#FFF7E6` | **AI要約注意・γ版バナーの背景**（warn-bg） |
 | `#78451F` | 同上の本文（warn-fg） |
 | `#065F46` | Toast 成功の背景（コピー完了通知など） |
 
@@ -290,15 +290,15 @@ Noto Sans JP は `next/font/google` で build 時ダウンロード→同一オ�
 
 ## 近代UI規約（2026-04 以降の運用）
 
-### ベータ公開バナー
+### γ版公開バナー
 
 ヘッダー直下に常設。全ページで表示する。
 
 ```html
 <div class="bg-[#FFF7E6] border-b border-[#F7C948]">
   <div class="max-w-5xl mx-auto px-4 py-2 text-xs text-[#78451F] flex flex-wrap items-center justify-center gap-x-3">
-    <span class="font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5">β</span>
-    <span>ベータ公開中 — 機能追加・仕様変更があります</span>
+    <span class="font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5">γ</span>
+    <span>γ版公開中 — 機能追加・仕様変更があります</span>
     <a href="/news" class="underline hover:text-[#1B3A6B]">更新情報</a>
     <a href="mailto:ogawayohei.hkd@gmail.com" class="underline">ご意見はこちら</a>
   </div>

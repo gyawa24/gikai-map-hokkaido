@@ -43,7 +43,7 @@ export async function GET() {
                 background: "#F7C948",
               }}
             />
-            地方議会ドットコム
+            地方議会ドットコムγ
           </div>
           <div
             style={{
@@ -57,7 +57,7 @@ export async function GET() {
               fontWeight: 800,
             }}
           >
-            β
+            γ
           </div>
         </div>
 
@@ -110,4 +110,3 @@ export async function GET() {
     }
   );
 }
-

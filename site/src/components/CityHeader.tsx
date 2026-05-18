@@ -75,7 +75,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
                   <TvIcon className="h-5 w-5" />
                 </span>
                 <span className="text-lg font-black leading-tight tracking-tight sm:text-xl">
-                  {city ? city.name : "地方議会ドットコム"}
+                  {city ? city.name : "地方議会ドットコムγ"}
                 </span>
               </Link>
             </div>

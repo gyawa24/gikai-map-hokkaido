@@ -13,7 +13,6 @@
  *   - テスト時は --preview-only で tmp_audio/*.preview.json に書き出せる
  */
 
-import fs from "fs";
 import path from "path";
 import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";

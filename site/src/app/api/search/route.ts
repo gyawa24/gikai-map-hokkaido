@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getDecisions, getMembers, getMinutesEnrichedDocs, getMinutesIndex, getSearchIndex, getSession, getSessionSummaries, readCityJson } from "@/lib/cityData";
+import { getDecisions, getMembers, getMinutesEnrichedDocs, getSearchIndex, getSession, getSessionSummaries, readCityJson } from "@/lib/cityData";
 import { getMunicipalities } from "@/lib/municipalities";
 import { checkRateLimit } from "@/lib/rateLimit";
-import { buildSearchAssist, buildSearchQuery, evaluateSearchText, excerptSearchText, matchesSearchText, normalizeSearchText, scoreSearchText } from "@/lib/searchQuery";
+import { buildSearchAssist, buildSearchQuery, excerptSearchText, matchesSearchText, scoreSearchText } from "@/lib/searchQuery";
 import { getClientAddress } from "@/lib/security";
 import type { SearchAssistGroup, SearchOperator } from "@/lib/searchQuery";
 
