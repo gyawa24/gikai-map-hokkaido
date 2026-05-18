@@ -139,7 +139,7 @@ export default function HomeMunicipalityExplorer({
                     <Link
                       key={city.id}
                       href={city.href}
-                      className={`rounded-lg border px-4 py-4 transition-colors hover:border-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
+                      className={`motion-surface rounded-lg border px-4 py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
                         featured
                           ? "border-[#E6C566] bg-[#FFF9DD]"
                           : "border-[#D8DEE8] bg-white"

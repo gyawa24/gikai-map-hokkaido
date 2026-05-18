@@ -173,7 +173,7 @@ export default async function HomePage() {
             <Link
               key={item.label}
               href={item.href}
-              className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-4 transition-colors hover:border-[#1B3A6B] hover:bg-[#F8FAFC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+              className="motion-surface rounded-lg border border-[#CBD5E0] bg-white px-4 py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
             >
               <h3 className="text-base font-black text-[#1B3A6B]">{item.label}</h3>
               <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">{item.body}</p>
@@ -249,7 +249,7 @@ export default async function HomePage() {
               <Link
                 key={article.slug}
                 href={`/articles/${article.slug}`}
-                className="rounded-[22px] border-2 border-[#D8DEE8] bg-white px-4 py-4 shadow-[0_6px_14px_rgba(27,58,107,0.06)] transition-colors hover:border-[#1B3A6B]"
+                className="motion-surface rounded-[22px] border-2 border-[#D8DEE8] bg-white px-4 py-4 shadow-[0_6px_14px_rgba(27,58,107,0.06)]"
               >
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <span className={`rounded-full border px-2 py-0.5 text-xs font-semibold ${articleCategoryClass(article.category)}`}>
@@ -286,7 +286,7 @@ export default async function HomePage() {
               <Link
                 key={tag}
                 href={`/topics/${encodeURIComponent(tag)}`}
-                className="inline-flex items-center gap-1.5 rounded-full border border-[#D8DEE8] bg-white px-3 py-2 text-sm font-bold text-[#1B3A6B] transition-colors hover:border-[#1B3A6B] hover:bg-[#E8EEF7]"
+                className="motion-surface inline-flex items-center gap-1.5 rounded-full border border-[#D8DEE8] bg-white px-3 py-2 text-sm font-bold text-[#1B3A6B]"
               >
                 <span>{tag}</span>
                 <span className="text-xs text-[#64748B]">{count}件</span>

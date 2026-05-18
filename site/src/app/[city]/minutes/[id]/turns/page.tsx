@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import HashTargetScroller from "@/components/structured-minutes/HashTargetScroller";
 import SourceNotice from "@/components/structured-minutes/SourceNotice";
 import StructuredMinutesTabs from "@/components/structured-minutes/StructuredMinutesTabs";
 import { getMunicipality } from "@/lib/municipalities";
@@ -50,6 +51,7 @@ export default async function StructuredMinutesPage({ params, searchParams }: Pr
 
   return (
     <div className="page-shell max-w-6xl">
+      <HashTargetScroller />
       <nav className="mb-5 flex items-center gap-1.5 text-sm text-[#718096]">
         <Link href={`/${city}`} className="transition-colors hover:text-[#1B3A6B]">
           {cityName}議会

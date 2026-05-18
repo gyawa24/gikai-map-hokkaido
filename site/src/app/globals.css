@@ -52,6 +52,7 @@ h1, h2, h3, h4 {
   border: 2px solid #d9dde4;
   border-radius: 22px;
   box-shadow: 0 4px 12px rgba(27, 58, 107, 0.05);
+  transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
 }
 
 .theme-card-soft {
@@ -59,6 +60,7 @@ h1, h2, h3, h4 {
   border: 2px solid #e4e7ec;
   border-radius: 20px;
   box-shadow: 0 3px 10px rgba(27, 58, 107, 0.04);
+  transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
 }
 
 .theme-panel {
@@ -66,6 +68,20 @@ h1, h2, h3, h4 {
   border: 2px solid #d6dce5;
   border-radius: 24px;
   box-shadow: 0 5px 14px rgba(27, 58, 107, 0.05);
+  transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.theme-card:hover,
+.theme-card:focus-within,
+.theme-card-soft:hover,
+.theme-card-soft:focus-within {
+  border-color: #9fb1d2;
+  box-shadow: 0 8px 20px rgba(27, 58, 107, 0.08);
+}
+
+.theme-panel:focus-within {
+  border-color: #9fb1d2;
+  box-shadow: 0 8px 20px rgba(27, 58, 107, 0.08);
 }
 
 .theme-alert {
@@ -370,6 +386,62 @@ h1, h2, h3, h4 {
   height: 100%;
   pointer-events: none;
   background: linear-gradient(90deg, rgba(248, 248, 246, 0) 0%, rgba(248, 248, 246, 0.98) 88%);
+}
+
+.motion-surface {
+  transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease, color 150ms ease;
+}
+
+.motion-surface:hover,
+.motion-surface:focus-visible {
+  border-color: #9fb1d2;
+  background: #f8fbff;
+  box-shadow: 0 8px 20px rgba(27, 58, 107, 0.08);
+}
+
+details[open] > summary {
+  color: #1b3a6b;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main > .page-shell,
+  main > article {
+    animation: page-content-reveal 220ms ease-out both;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :target,
+  .target-highlight-active {
+    scroll-margin-top: 6rem;
+    animation: target-highlight 1.8s ease-out;
+  }
+
+  @keyframes target-highlight {
+    0% {
+      background-color: #fff7d6;
+      box-shadow: 0 0 0 4px rgba(247, 201, 72, 0.26);
+    }
+    70% {
+      background-color: #fffdf2;
+      box-shadow: 0 0 0 4px rgba(247, 201, 72, 0.14);
+    }
+    100% {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  @keyframes page-content-reveal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 @media (min-width: 640px) {
