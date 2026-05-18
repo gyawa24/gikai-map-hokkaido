@@ -25,6 +25,10 @@ function stableId(value) {
     .toLowerCase();
 }
 
+function normalizeSpeakerName(value) {
+  return compact(value).replace(/(?:君|議員)$/u, "");
+}
+
 function readMunicipalityName(slug) {
   const fp = path.join(PROJECT_ROOT, "site", "data", "municipalities.json");
   try {
@@ -35,11 +39,24 @@ function readMunicipalityName(slug) {
   }
 }
 
+function officialUrlFallback(slug, councilId) {
+  const fp = path.join(PROJECT_ROOT, "site", "data", "municipalities.json");
+  try {
+    const items = JSON.parse(fsSync.readFileSync(fp, "utf8"));
+    const item = items.find((entry) => entry.slug === slug);
+    if (item?.gijiroku_subdomain) {
+      return `https://${item.gijiroku_subdomain}.gijiroku.com/voices/`;
+    }
+  } catch {}
+  return `/${slug}/minutes/${councilId}`;
+}
+
 function speakerType(role) {
   const normalized = compact(role);
   if (normalized.includes("議長")) return "chair";
   if (normalized.includes("副議長")) return "chair";
   if (normalized.includes("委員長")) return "committee_chair";
+  if (normalized.includes("議員")) return "council_member";
   if (/^[0-9０-９]+番$/u.test(normalized)) return "council_member";
   if (normalized.includes("副町長") || normalized.includes("副市長") || normalized.includes("副村長")) {
     return "vice_mayor";
@@ -80,11 +97,42 @@ function sourcePosition(url, localAnchor, searchHint, extra = {}) {
 }
 
 function parseSpeakerHeader(line) {
-  const match = String(line).match(/^[○〇]\s*([^（\n]{1,30})（([^）]{1,30}君)）\s*(.*)$/u);
-  if (!match) return null;
-  const roleOriginal = match[1].trim();
+  const value = String(line).trim();
+  const parenMatch = value.match(/^[○〇◎◆]\s*([^（\n]{1,30})（([^）]{1,30})(?:君)?）\s*(.*)$/u);
+  if (parenMatch) {
+    const roleOriginal = parenMatch[1].trim();
+    const role = compact(roleOriginal);
+    if (/^(出席議員|欠席議員|説明員|事務従事者|本日の会議に付した事件)$/u.test(role)) return null;
+    const name = normalizeSpeakerName(parenMatch[2]);
+    const type = speakerType(role);
+    const suffix =
+      type === "council_member" || type === "committee_chair"
+        ? "議員"
+        : role.replace(/[0-9０-９]+番/u, "議員");
+    return {
+      name,
+      roleOriginal,
+      role,
+      speakerType: type,
+      displayName: `${name}${suffix}`,
+      rest: parenMatch[3] ?? "",
+    };
+  }
+
+  const simpleMatch = value.match(/^[○〇◎◆]\s*([^　\s。]{1,30})(?:君)?[　\s]*(.*)$/u);
+  if (!simpleMatch) return null;
+  const label = normalizeSpeakerName(simpleMatch[1]);
+  const rest = simpleMatch[2] ?? "";
+  if (!rest.trim()) return null;
+  if (/^[…・\.．\d０-９－—―‐-]+$/u.test(compact(rest))) return null;
+  if (/^(異議なし|議長|はい|なし|発言|説明員|出席議員|欠席議員|事務従事者|議事日程)$/u.test(label)) return null;
+
+  const titleMatch = label.match(
+    /^(.*?)(副議長|議長|委員長|副市長|副町長|副村長|市長|町長|村長|教育長|事務局長|部長|課長|局長|主幹|係長|参与|所長|園長|次長|管理者|会長|議員|委員)$/u
+  );
+  const roleOriginal = titleMatch?.[2] ?? "議員";
   const role = compact(roleOriginal);
-  const name = compact(match[2]).replace(/君$/u, "");
+  const name = titleMatch?.[1] ? compact(titleMatch[1]) : label;
   const type = speakerType(role);
   const suffix =
     type === "council_member" || type === "committee_chair"
@@ -96,11 +144,11 @@ function parseSpeakerHeader(line) {
     role,
     speakerType: type,
     displayName: `${name}${suffix}`,
-    rest: match[3] ?? "",
+    rest,
   };
 }
 
-function parseTurns({ slug, councilId, schedule, minute, sourceDocumentId }) {
+function parseTurns({ slug, councilId, schedule, minute, sourceDocumentId, officialUrl }) {
   const text = normalizeText(minute.text ?? "");
   const lines = text.split("\n");
   const turns = [];
@@ -128,7 +176,7 @@ function parseTurns({ slug, councilId, schedule, minute, sourceDocumentId }) {
         text_original: body,
         text_normalized: body.replace(/\s+/g, " ").trim(),
         source_position: sourcePosition(
-          minute.source_url ?? "",
+          minute.source_url ?? officialUrl,
           id,
           `${current.displayName} ${body.replace(/\s+/g, " ").slice(0, 60)}`,
           {
@@ -313,7 +361,8 @@ function buildBlocks({ slug, councilId, sourceDocumentId, turns, officialUrl }) 
       continue;
     }
     if (!current) continue;
-    if (turn.turn_type === "answer" || turn.turn_type === "procedure") {
+    if (turn.turn_type === "procedure") continue;
+    if (turn.turn_type === "answer") {
       current.turns.push(turn);
     }
   }
@@ -340,13 +389,14 @@ async function main() {
   const sourceDocumentId = `${slug}-${councilId}`;
   const schedules = raw.schedules ?? [];
   const officialUrl =
-    schedules.flatMap((schedule) => schedule.minutes ?? []).find((minute) => minute.source_url)?.source_url ?? "";
+    schedules.flatMap((schedule) => schedule.minutes ?? []).find((minute) => minute.source_url)?.source_url ??
+    officialUrlFallback(slug, councilId);
   const turns = [];
   const speakersByKey = new Map();
 
   for (const schedule of schedules) {
     for (const minute of schedule.minutes ?? []) {
-      const parsedTurns = parseTurns({ slug, councilId, schedule, minute, sourceDocumentId });
+      const parsedTurns = parseTurns({ slug, councilId, schedule, minute, sourceDocumentId, officialUrl });
       turns.push(...parsedTurns.map((turn) => ({ ...turn, order_index: turns.length + turn.order_index })));
     }
   }

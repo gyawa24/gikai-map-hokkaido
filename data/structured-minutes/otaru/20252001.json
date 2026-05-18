@@ -1,0 +1,1147 @@
+{
+  "source_document": {
+    "id": "otaru-20252001",
+    "municipality_id": "otaru",
+    "municipality_name": "小樽市",
+    "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+    "title": "令和7年第1回臨時会",
+    "meeting_date": "20252001",
+    "fetched_at": "2026-05-16T11:42:44.919Z",
+    "source_type": "official_pdf",
+    "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13"
+  },
+  "speakers": [
+    {
+      "id": "otaru-speaker-金曜日-１月２４日",
+      "municipality_id": "otaru",
+      "name_original": "金曜日",
+      "name_normalized": "金曜日",
+      "role_original": "１月２４日",
+      "speaker_type": "unknown",
+      "aliases": [
+        "金曜日１月２４日"
+      ]
+    },
+    {
+      "id": "otaru-speaker-議１-市長提案説明",
+      "municipality_id": "otaru",
+      "name_original": "議１",
+      "name_normalized": "議１",
+      "role_original": "市長提案説明",
+      "speaker_type": "mayor",
+      "aliases": [
+        "議１市長提案説明"
+      ]
+    },
+    {
+      "id": "otaru-speaker-質-議員",
+      "municipality_id": "otaru",
+      "name_original": "質",
+      "name_normalized": "質",
+      "role_original": "議員",
+      "speaker_type": "council_member",
+      "aliases": [
+        "質議員"
+      ]
+    },
+    {
+      "id": "otaru-speaker-鈴木喜明-議長",
+      "municipality_id": "otaru",
+      "name_original": "鈴木喜明",
+      "name_normalized": "鈴木喜明",
+      "role_original": "議長",
+      "speaker_type": "chair",
+      "aliases": [
+        "鈴木喜明議長"
+      ]
+    },
+    {
+      "id": "otaru-speaker-迫俊哉-市長",
+      "municipality_id": "otaru",
+      "name_original": "迫俊哉",
+      "name_normalized": "迫俊哉",
+      "role_original": "市長",
+      "speaker_type": "mayor",
+      "aliases": [
+        "迫俊哉市長"
+      ]
+    },
+    {
+      "id": "otaru-speaker-小貫元-６番",
+      "municipality_id": "otaru",
+      "name_original": "小貫元",
+      "name_normalized": "小貫元",
+      "role_original": "６番",
+      "speaker_type": "council_member",
+      "aliases": [
+        "小貫元議員"
+      ]
+    },
+    {
+      "id": "otaru-speaker-勝山貴之-福祉保険部長",
+      "municipality_id": "otaru",
+      "name_original": "勝山貴之",
+      "name_normalized": "勝山貴之",
+      "role_original": "福祉保険部長",
+      "speaker_type": "executive",
+      "aliases": [
+        "勝山貴之福祉保険部長"
+      ]
+    },
+    {
+      "id": "otaru-speaker-１日間-会期令和７年１月２４日",
+      "municipality_id": "otaru",
+      "name_original": "１日間",
+      "name_normalized": "１日間",
+      "role_original": "会 期 令和７年１月２４日",
+      "speaker_type": "unknown",
+      "aliases": [
+        "１日間会期令和７年１月２４日"
+      ]
+    }
+  ],
+  "turns": [
+    {
+      "id": "otaru-20252001-1-turn-001",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 1,
+      "speaker_name_original": "金曜日１月２４日",
+      "speaker_name_normalized": "金曜日",
+      "speaker_role_original": "１月２４日",
+      "speaker_type": "unknown",
+      "turn_type": "unknown",
+      "text_original": "第１日目\n１ 開 会……………………………………………………………………………………………………１\n１ 開 議……………………………………………………………………………………………………１\n１ 会議録署名議員の指名……………………………………………………………………………………１\n１ 日程第１ 会期の決定…………………………………………………………………………………１\n１ 日程第２ 議案第１号…………………………………………………………………………………１",
+      "text_normalized": "第１日目 １ 開 会……………………………………………………………………………………………………１ １ 開 議……………………………………………………………………………………………………１ １ 会議録署名議員の指名……………………………………………………………………………………１ １ 日程第１ 会期の決定…………………………………………………………………………………１ １ 日程第２ 議案第１号…………………………………………………………………………………１",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-001",
+        "search_hint": "金曜日１月２４日 第１日目 １ 開 会……………………………………………………………………………………………………１ １ 開 議……………",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.45,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-金曜日-１月２４日"
+    },
+    {
+      "id": "otaru-20252001-1-turn-002",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 2,
+      "speaker_name_original": "議１市長提案説明",
+      "speaker_name_normalized": "議１",
+      "speaker_role_original": "市長提案説明",
+      "speaker_type": "mayor",
+      "turn_type": "answer",
+      "text_original": "……………………………………………………………………………………１",
+      "text_normalized": "……………………………………………………………………………………１",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-002",
+        "search_hint": "議１市長提案説明 ……………………………………………………………………………………１",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-議１-市長提案説明"
+    },
+    {
+      "id": "otaru-20252001-1-turn-003",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 3,
+      "speaker_name_original": "質議員",
+      "speaker_name_normalized": "質",
+      "speaker_role_original": "議員",
+      "speaker_type": "council_member",
+      "turn_type": "question",
+      "text_original": "疑 小貫議員……………………………………………………………………………………１\n採 決………………………………………………………………………………………………………４\n１ 閉 会……………………………………………………………………………………………………４\n\n第１回臨時会議事事件一覧表\n議 案\n件 名\n番 号\n1 令和６年度小樽市一般会計補正予算\n\n質 問 要 旨\n小貫議員（１月２４日１番目）\n市長及び関係説明員\n１ 議案第１号一般会計補正予算について\n２ その他\n\n〇出席議員\n議席番号 氏 名 1月24日\n１番 新井田 邦 宏 〇\n２番 白 川 貴 城 〇\n３番 松 井 真美子 〇\n４番 酒 井 隆 裕 〇\n５番 高 野 さくら 〇\n６番 小 貫 元 〇\n７番 平 戸 理 史 〇\n８番 白 濱 聡 〇\n９番 橋 本 布美絵 〇\n１０番 横 尾 英 司 〇\n１１番 秋 元 智 憲 〇\n１２番 松 岩 一 輝 〇\n１３番 中 鉢 淳 二 〇\n１４番 佐 藤 奈緒美 〇\n１５番 中 村 吉 宏 〇\n１６番 下 兼 薫 〇\n１７番 面 野 大 輔 〇\n１８番 髙 橋 龍 〇\n１９番 小 池 二 郎 〇\n２０番 中 村 岩 雄 〇\n２１番 前 田 清 貴 〇\n２２番 鈴 木 喜 明 〇\n２５番 佐々木 秩 〇\n注）〇…出席、×…欠席\n\n〇出席説明員\n職 名 氏 名 1月24日\n市 長 迫 俊 哉 〇\n教 育 長 中 島 正 人 〇\n監 査 委 員 小 林 優 －\n選 挙 管 理 委 員 会\n平 口 山 和 弘 －\n委 員 長\n農 業 委 員 会 会 長 北 島 吉 治 －\n副 市 長 上 石 明 〇\n病 院 局 長 並 木 昭 義 〇\n水 道 局 長 畠 山 樹 欣 〇\n総 務 部 長 薄 井 洋 仁 〇\n総 合 政 策 部 長 柄 澤 晃 人 〇\n財 政 部 長 柴 田 健 治 〇\n産 業 港 湾 部 長 渡 部 一 博 〇\n産 業 港 湾 部\n笹 田 泰 生 〇\n港 湾 担 当 部 長\n生 活 環 境 部 長 佐 藤 靖 久 〇\n福 祉 保 険 部 長 勝 山 貴 之 〇\nこ ど も 未 来 部 長 安 部 俊 克 〇\n保 健 所 長 田 中 宏 之 〇\n建 設 部 長 松 浦 裕 仁 〇\n消 防 長 見 山 義 秋 〇\n病院局小樽市立病院\n佐 々 木 真 一 〇\n事 務 部 長\n教 育 部 長 鈴 木 健 介 〇\n選 挙 管 理 委 員 会\n川 嶋 広 士 －\n事 務 局 長\n監 査 委 員\n浅 井 泰 之 －\n事 務 局 長\n農 業 委 員 会\n嶋 崎 哲 也 －\n事 務 局 長\n総 務 部 総 務 課 長 森 田 裕 規 〇\n財 政 部 財 政 課 長 尾 作 考 則 〇\n注）〇…出席、×…欠席\n\n〇議事参与事務局職員\n職 名 氏 名 1月24日\n事 務 局 長 中 村 哲 也 〇\n事 務 局 次 長 加 藤 佳 子 〇\n主 査 平 林 俊 輔 〇\n総 務 係 長 相 澤 幸 〇\n議 事 係 長 松 木 道 人 〇\n書 記 阿 部 久 美 子 －\n書 記 菅 翔 太 〇\n書 記 越 智 美 幸 〇\n書 記 中 村 知 奈 津 〇\n書 記 成 田 昇 平 〇\n\n令和７年第１回臨時会 本会議録\n令和７ 年\n第１回臨時会会議録 第１日目\n小樽市議会\n令和７年１月２４日\n開会 午後 １時００分",
+      "text_normalized": "疑 小貫議員……………………………………………………………………………………１ 採 決………………………………………………………………………………………………………４ １ 閉 会……………………………………………………………………………………………………４ 第１回臨時会議事事件一覧表 議 案 件 名 番 号 1 令和６年度小樽市一般会計補正予算 質 問 要 旨 小貫議員（１月２４日１番目） 市長及び関係説明員 １ 議案第１号一般会計補正予算について ２ その他 〇出席議員 議席番号 氏 名 1月24日 １番 新井田 邦 宏 〇 ２番 白 川 貴 城 〇 ３番 松 井 真美子 〇 ４番 酒 井 隆 裕 〇 ５番 高 野 さくら 〇 ６番 小 貫 元 〇 ７番 平 戸 理 史 〇 ８番 白 濱 聡 〇 ９番 橋 本 布美絵 〇 １０番 横 尾 英 司 〇 １１番 秋 元 智 憲 〇 １２番 松 岩 一 輝 〇 １３番 中 鉢 淳 二 〇 １４番 佐 藤 奈緒美 〇 １５番 中 村 吉 宏 〇 １６番 下 兼 薫 〇 １７番 面 野 大 輔 〇 １８番 髙 橋 龍 〇 １９番 小 池 二 郎 〇 ２０番 中 村 岩 雄 〇 ２１番 前 田 清 貴 〇 ２２番 鈴 木 喜 明 〇 ２５番 佐々木 秩 〇 注）〇…出席、×…欠席 〇出席説明員 職 名 氏 名 1月24日 市 長 迫 俊 哉 〇 教 育 長 中 島 正 人 〇 監 査 委 員 小 林 優 － 選 挙 管 理 委 員 会 平 口 山 和 弘 － 委 員 長 農 業 委 員 会 会 長 北 島 吉 治 － 副 市 長 上 石 明 〇 病 院 局 長 並 木 昭 義 〇 水 道 局 長 畠 山 樹 欣 〇 総 務 部 長 薄 井 洋 仁 〇 総 合 政 策 部 長 柄 澤 晃 人 〇 財 政 部 長 柴 田 健 治 〇 産 業 港 湾 部 長 渡 部 一 博 〇 産 業 港 湾 部 笹 田 泰 生 〇 港 湾 担 当 部 長 生 活 環 境 部 長 佐 藤 靖 久 〇 福 祉 保 険 部 長 勝 山 貴 之 〇 こ ど も 未 来 部 長 安 部 俊 克 〇 保 健 所 長 田 中 宏 之 〇 建 設 部 長 松 浦 裕 仁 〇 消 防 長 見 山 義 秋 〇 病院局小樽市立病院 佐 々 木 真 一 〇 事 務 部 長 教 育 部 長 鈴 木 健 介 〇 選 挙 管 理 委 員 会 川 嶋 広 士 － 事 務 局 長 監 査 委 員 浅 井 泰 之 － 事 務 局 長 農 業 委 員 会 嶋 崎 哲 也 － 事 務 局 長 総 務 部 総 務 課 長 森 田 裕 規 〇 財 政 部 財 政 課 長 尾 作 考 則 〇 注）〇…出席、×…欠席 〇議事参与事務局職員 職 名 氏 名 1月24日 事 務 局 長 中 村 哲 也 〇 事 務 局 次 長 加 藤 佳 子 〇 主 査 平 林 俊 輔 〇 総 務 係 長 相 澤 幸 〇 議 事 係 長 松 木 道 人 〇 書 記 阿 部 久 美 子 － 書 記 菅 翔 太 〇 書 記 越 智 美 幸 〇 書 記 中 村 知 奈 津 〇 書 記 成 田 昇 平 〇 令和７年第１回臨時会 本会議録 令和７ 年 第１回臨時会会議録 第１日目 小樽市議会 令和７年１月２４日 開会 午後 １時００分",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-003",
+        "search_hint": "質議員 疑 小貫議員……………………………………………………………………………………１ 採 決……………………………………………",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-質-議員"
+    },
+    {
+      "id": "otaru-20252001-1-turn-004",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 4,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "これより、令和７年小樽市議会第１回臨時会を開会いたします。\n直ちに、本日の会議を開きます。\n本日の会議録署名議員に、白川貴城議員、下兼薫議員を御指名いたします。\n日程第１「会期の決定」を議題といたします。\nお諮りいたします。\n本臨時会の会期を、本日１日間といたしたいと思います。\nこれに、御異議ございませんか。\n（「異議なし」と呼ぶ者あり）",
+      "text_normalized": "これより、令和７年小樽市議会第１回臨時会を開会いたします。 直ちに、本日の会議を開きます。 本日の会議録署名議員に、白川貴城議員、下兼薫議員を御指名いたします。 日程第１「会期の決定」を議題といたします。 お諮りいたします。 本臨時会の会期を、本日１日間といたしたいと思います。 これに、御異議ございませんか。 （「異議なし」と呼ぶ者あり）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-004",
+        "search_hint": "鈴木喜明議長 これより、令和７年小樽市議会第１回臨時会を開会いたします。 直ちに、本日の会議を開きます。 本日の会議録署名議員に、白川",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-005",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 5,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "御異議なしと認め、さように決しました。\n日程第２「議案第１号」を議題とし、市長から提案理由の説明を求めます。\n（「議長」と呼ぶ者あり）",
+      "text_normalized": "御異議なしと認め、さように決しました。 日程第２「議案第１号」を議題とし、市長から提案理由の説明を求めます。 （「議長」と呼ぶ者あり）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-005",
+        "search_hint": "鈴木喜明議長 御異議なしと認め、さように決しました。 日程第２「議案第１号」を議題とし、市長から提案理由の説明を求めます。 （「議長」",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-006",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 6,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "市長。\n（迫 俊哉市長登壇）（拍手）",
+      "text_normalized": "市長。 （迫 俊哉市長登壇）（拍手）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-006",
+        "search_hint": "鈴木喜明議長 市長。 （迫 俊哉市長登壇）（拍手）",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-007",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 7,
+      "speaker_name_original": "迫俊哉市長",
+      "speaker_name_normalized": "迫俊哉",
+      "speaker_role_original": "市長",
+      "speaker_type": "mayor",
+      "turn_type": "answer",
+      "text_original": "ただいま上程されました議案について、提案理由の概要を説明申し上げます。\n議案第１号一般会計補正予算につきましては、令和６年12月17日に成立した国の補正予算における物\n価高騰対策として追加交付されることとなった重点支援地方交付金を活用し、物価高騰による負担感が\n大きい住民税非課税世帯の生活を迅速に支援するため、対象１世帯当たり３万円を給付するほか、世帯\nに18歳以下の子供がいる場合は、１人当たり２万円を給付する住民税非課税世帯支援給付金給付事業費\nを計上いたしました。このほか、新型コロナウイルスワクチンの臨時接種を受け、予防接種健康被害救\n済制度を申請した方のうち、新たに２名が予防接種法に基づき障害年金等について認定されたことから、\n当該障害年金等を迅速に支給するために、所要の補正を計上いたしました。これに対する財源といたし\nましては、国庫支出金を計上いたしました。\n以上の結果、一般会計における補正額は、歳入歳出ともに８億3,905万6,000円の増となり、財政規模\nは667億7,954万2,000円となりました。\n何とぞ原案どおり御可決賜りますようお願い申し上げます。（拍手）",
+      "text_normalized": "ただいま上程されました議案について、提案理由の概要を説明申し上げます。 議案第１号一般会計補正予算につきましては、令和６年12月17日に成立した国の補正予算における物 価高騰対策として追加交付されることとなった重点支援地方交付金を活用し、物価高騰による負担感が 大きい住民税非課税世帯の生活を迅速に支援するため、対象１世帯当たり３万円を給付するほか、世帯 に18歳以下の子供がいる場合は、１人当たり２万円を給付する住民税非課税世帯支援給付金給付事業費 を計上いたしました。このほか、新型コロナウイルスワクチンの臨時接種を受け、予防接種健康被害救 済制度を申請した方のうち、新たに２名が予防接種法に基づき障害年金等について認定されたことから、 当該障害年金等を迅速に支給するために、所要の補正を計上いたしました。これに対する財源といたし ましては、国庫支出金を計上いたしました。 以上の結果、一般会計における補正額は、歳入歳出ともに８億3,905万6,000円の増となり、財政規模 は667億7,954万2,000円となりました。 何とぞ原案どおり御可決賜りますようお願い申し上げます。（拍手）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-007",
+        "search_hint": "迫俊哉市長 ただいま上程されました議案について、提案理由の概要を説明申し上げます。 議案第１号一般会計補正予算につきましては、令和６",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-迫俊哉-市長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-008",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 8,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "これより、質疑を行います。\n通告がありますので、発言を許します。\n（「議長、６番」と呼ぶ者あり）",
+      "text_normalized": "これより、質疑を行います。 通告がありますので、発言を許します。 （「議長、６番」と呼ぶ者あり）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-008",
+        "search_hint": "鈴木喜明議長 これより、質疑を行います。 通告がありますので、発言を許します。 （「議長、６番」と呼ぶ者あり）",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-009",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 9,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "６番、小貫元議員。\n（６番 小貫 元議員登壇）（拍手）",
+      "text_normalized": "６番、小貫元議員。 （６番 小貫 元議員登壇）（拍手）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-009",
+        "search_hint": "鈴木喜明議長 ６番、小貫元議員。 （６番 小貫 元議員登壇）（拍手）",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-010",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 10,
+      "speaker_name_original": "小貫元議員",
+      "speaker_name_normalized": "小貫元",
+      "speaker_role_original": "６番",
+      "speaker_type": "council_member",
+      "turn_type": "question",
+      "text_original": "日本共産党を代表して、ただいま上程されました議案第１号小樽市一般会計\n補正予算について質疑いたします。\n石破政権は昨年11月22日、今回提案のある臨時給付金をはじめとする物価高騰対策を閣議決定し、12\n月17日、補正予算が成立しました。物価高騰による家計への影響は、全ての品目にわたり大きな負担と\n－1－\n\n令和７年第１回臨時会 本会議録\nなっています。日本共産党は本来であれば、消費税の減税が急がれていると考えます。しかし、政府は、\n小手先の物価高騰対策として住民税非課税世帯への３万円給付を打ち出しました。\n市長は、国による今回の低所得者世帯支援の給付金が物価高騰対策として十分だと考えますか。国に\n増額を求める考えはありませんか。\n昨年度の給付金事業では、委託金額が国の事務費基準額を上回り、推奨事業分から事務費負担分を支\n出しました。ところが、今年度の事業では国の事務費基準額内で収めるとの提案です。国の基準額内に\n事務費を抑えることができるとした理由を示してください。\n説明では、給付金は４月以降の支給になると言います。しかし、市民にとって冬の支出が大きく、４\n月までは待てません。既に対象者は明らかになっているわけですから、例えば委託事業者の選定を待た\nずに対象者に書類を送付するなど、市でできることを先に実施し、少しでも早く給付できるようにする\n必要があります。早期支給に努力することを求めます。お答えください。\n市は、推奨事業分については新年度で予算化すると言います。本来なら、今回の補正に組み入れるべ\nきではないですか。\n推奨事業分が遅れる理由に、国の詳細が明らかになっていないことがあったと考えます。国が詳細を\n示したのは、補正予算が成立した12月17日付の事務連絡でした。私が令和６年第４回定例会で質問した\nときは、金額も明らかになっていませんでしたし、この事務連絡も発出されていませんでした。その時\n点では、市長は、福祉灯油の実施に否定的な答弁をいたしました。この事務連絡では、推奨事業メニュ\nーとして灯油をはじめ、エネルギー・食料品価格等の物価高騰による負担を軽減するための支援が挙げ\nられており、この灯油は、今回、新たに加わった文言です。さらに昨年度、約２億7,700万円の交付限度\n額が約３億5,700万円へと増額しています。これは国が寒冷地への配分を多くしているからです。\nこれらの経過に照らせば、福祉灯油を否定した答弁を白紙に戻し、考え直す必要があるのではないで\nすか、検討を求めます。\n推奨事業は、市独自の財源を投入し、事業を実施することも求めます。お答えください。\n最後に、新型コロナワクチンの臨時接種を受け、予防接種健康被害救済制度を申請した方のうち、２\n人が予防接種法に基づき障害年金等の認定がされ、年金等の支給を行うことについてです。\n小樽市で認定を受けた方は17人です。今回の方は接種日が2022年10月、認定日が2024年11月ですから、\n丸２年が経過しています。\n今回の方は接種から申請までの間が空いている例ではありますが、一般的に申請から認定まで時間を\n要していると聞いています。申請から認定まで、迅速に行えるよう国に求めるべきではありませんか。\n以上、再質問は留保します。（拍手）",
+      "text_normalized": "日本共産党を代表して、ただいま上程されました議案第１号小樽市一般会計 補正予算について質疑いたします。 石破政権は昨年11月22日、今回提案のある臨時給付金をはじめとする物価高騰対策を閣議決定し、12 月17日、補正予算が成立しました。物価高騰による家計への影響は、全ての品目にわたり大きな負担と －1－ 令和７年第１回臨時会 本会議録 なっています。日本共産党は本来であれば、消費税の減税が急がれていると考えます。しかし、政府は、 小手先の物価高騰対策として住民税非課税世帯への３万円給付を打ち出しました。 市長は、国による今回の低所得者世帯支援の給付金が物価高騰対策として十分だと考えますか。国に 増額を求める考えはありませんか。 昨年度の給付金事業では、委託金額が国の事務費基準額を上回り、推奨事業分から事務費負担分を支 出しました。ところが、今年度の事業では国の事務費基準額内で収めるとの提案です。国の基準額内に 事務費を抑えることができるとした理由を示してください。 説明では、給付金は４月以降の支給になると言います。しかし、市民にとって冬の支出が大きく、４ 月までは待てません。既に対象者は明らかになっているわけですから、例えば委託事業者の選定を待た ずに対象者に書類を送付するなど、市でできることを先に実施し、少しでも早く給付できるようにする 必要があります。早期支給に努力することを求めます。お答えください。 市は、推奨事業分については新年度で予算化すると言います。本来なら、今回の補正に組み入れるべ きではないですか。 推奨事業分が遅れる理由に、国の詳細が明らかになっていないことがあったと考えます。国が詳細を 示したのは、補正予算が成立した12月17日付の事務連絡でした。私が令和６年第４回定例会で質問した ときは、金額も明らかになっていませんでしたし、この事務連絡も発出されていませんでした。その時 点では、市長は、福祉灯油の実施に否定的な答弁をいたしました。この事務連絡では、推奨事業メニュ ーとして灯油をはじめ、エネルギー・食料品価格等の物価高騰による負担を軽減するための支援が挙げ られており、この灯油は、今回、新たに加わった文言です。さらに昨年度、約２億7,700万円の交付限度 額が約３億5,700万円へと増額しています。これは国が寒冷地への配分を多くしているからです。 これらの経過に照らせば、福祉灯油を否定した答弁を白紙に戻し、考え直す必要があるのではないで すか、検討を求めます。 推奨事業は、市独自の財源を投入し、事業を実施することも求めます。お答えください。 最後に、新型コロナワクチンの臨時接種を受け、予防接種健康被害救済制度を申請した方のうち、２ 人が予防接種法に基づき障害年金等の認定がされ、年金等の支給を行うことについてです。 小樽市で認定を受けた方は17人です。今回の方は接種日が2022年10月、認定日が2024年11月ですから、 丸２年が経過しています。 今回の方は接種から申請までの間が空いている例ではありますが、一般的に申請から認定まで時間を 要していると聞いています。申請から認定まで、迅速に行えるよう国に求めるべきではありませんか。 以上、再質問は留保します。（拍手）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-010",
+        "search_hint": "小貫元議員 日本共産党を代表して、ただいま上程されました議案第１号小樽市一般会計 補正予算について質疑いたします。 石破政権は昨年1",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-小貫元-６番"
+    },
+    {
+      "id": "otaru-20252001-1-turn-011",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 11,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "説明員の答弁を求めます。\n（「議長」と呼ぶ者あり）",
+      "text_normalized": "説明員の答弁を求めます。 （「議長」と呼ぶ者あり）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-011",
+        "search_hint": "鈴木喜明議長 説明員の答弁を求めます。 （「議長」と呼ぶ者あり）",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-012",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 12,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "市長。\n（迫 俊哉市長登壇）",
+      "text_normalized": "市長。 （迫 俊哉市長登壇）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-012",
+        "search_hint": "鈴木喜明議長 市長。 （迫 俊哉市長登壇）",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-013",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 13,
+      "speaker_name_original": "迫俊哉市長",
+      "speaker_name_normalized": "迫俊哉",
+      "speaker_role_original": "市長",
+      "speaker_type": "mayor",
+      "turn_type": "answer",
+      "text_original": "小貫議員の御質問にお答えいたします。\n議案第１号小樽市一般会計補正予算について御質問がありました。\n初めに、国による低所得世帯支援の給付金が物価高騰対策として十分であるかにつきましては、国で\nは給付金の算定に当たり、低所得世帯の食料品やエネルギー関係等の消費支出に対する物価高の影響の\nうち、賃上げや年金物価スライド等で賄い切れない部分をおおむねカバーできる水準として、住民税非\n課税世帯を対象に１世帯当たり３万円、子供１人当たり２万円を加算するとしたところであり、物価高\n－2－\n\n令和７年第１回臨時会 本会議録\n騰対策として一定の効果があるものと考えておりますので、増額を求める考えはありません。\n次に、給付金に係る事務費につきましては、これまでの給付金事業で使用した振込先情報を活用し、\n給付を原則プッシュ式とすることで、書類審査の省力化を図るとともに、コールセンターの体制や事業\n者選定方法を見直したことにより、交付基準内に事務費を抑えることができると判断したものでありま\nす。\n次に、給付金の早期支給につきましては、委託事業者の選定後、より効率的な作業工程の実施につい\nて協議し、現在、想定しているスケジュールの短縮を図るなど、早期支給に努めてまいりたいと考えて\nおります。\n次に、推奨事業メニュー分の予算計上時期につきましては、昨年度の国の補正予算に係る推奨事業メ\nニュー分についても、本年度の当初予算で計上し、現在も一部の事業を実施中であることから、継続的\nな支援を実施するため、新年度予算で計上することとしたものであります。\n次に、福祉灯油実施の再検討につきましては、現在、推奨事業メニュー分として物価高騰対策の効果\nが幅広く行き渡る事業を中心に庁内で検討を進めているところであり、非課税世帯のみを対象とした福\n祉灯油の実施は予定しておりません。\n次に、推奨事業メニュー分の実施につきましては、より効果的な事業の実施に向け、一般財源の活用\nも検討してまいりたいと考えております。\n次に、予防接種健康被害救済制度の認定に関する国への要望につきましては、予防接種法に基づくワ\nクチン接種後の副反応により健康被害が生じた場合は、早期かつ適切に救済されることが望ましいと考\nえております。\nこれまでも全国市長会から、国において迅速な審査が行われるよう要望が行われておりますが、本市\nといたしましても、今後このような事案が発生した際には、北海道を通じて国に要請してまいりたいと\n考えております。\n（「議長、６番」と呼ぶ者あり）",
+      "text_normalized": "小貫議員の御質問にお答えいたします。 議案第１号小樽市一般会計補正予算について御質問がありました。 初めに、国による低所得世帯支援の給付金が物価高騰対策として十分であるかにつきましては、国で は給付金の算定に当たり、低所得世帯の食料品やエネルギー関係等の消費支出に対する物価高の影響の うち、賃上げや年金物価スライド等で賄い切れない部分をおおむねカバーできる水準として、住民税非 課税世帯を対象に１世帯当たり３万円、子供１人当たり２万円を加算するとしたところであり、物価高 －2－ 令和７年第１回臨時会 本会議録 騰対策として一定の効果があるものと考えておりますので、増額を求める考えはありません。 次に、給付金に係る事務費につきましては、これまでの給付金事業で使用した振込先情報を活用し、 給付を原則プッシュ式とすることで、書類審査の省力化を図るとともに、コールセンターの体制や事業 者選定方法を見直したことにより、交付基準内に事務費を抑えることができると判断したものでありま す。 次に、給付金の早期支給につきましては、委託事業者の選定後、より効率的な作業工程の実施につい て協議し、現在、想定しているスケジュールの短縮を図るなど、早期支給に努めてまいりたいと考えて おります。 次に、推奨事業メニュー分の予算計上時期につきましては、昨年度の国の補正予算に係る推奨事業メ ニュー分についても、本年度の当初予算で計上し、現在も一部の事業を実施中であることから、継続的 な支援を実施するため、新年度予算で計上することとしたものであります。 次に、福祉灯油実施の再検討につきましては、現在、推奨事業メニュー分として物価高騰対策の効果 が幅広く行き渡る事業を中心に庁内で検討を進めているところであり、非課税世帯のみを対象とした福 祉灯油の実施は予定しておりません。 次に、推奨事業メニュー分の実施につきましては、より効果的な事業の実施に向け、一般財源の活用 も検討してまいりたいと考えております。 次に、予防接種健康被害救済制度の認定に関する国への要望につきましては、予防接種法に基づくワ クチン接種後の副反応により健康被害が生じた場合は、早期かつ適切に救済されることが望ましいと考 えております。 これまでも全国市長会から、国において迅速な審査が行われるよう要望が行われておりますが、本市 といたしましても、今後このような事案が発生した際には、北海道を通じて国に要請してまいりたいと 考えております。 （「議長、６番」と呼ぶ者あり）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-013",
+        "search_hint": "迫俊哉市長 小貫議員の御質問にお答えいたします。 議案第１号小樽市一般会計補正予算について御質問がありました。 初めに、国による低所",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-迫俊哉-市長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-014",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 14,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "６番、小貫元議員。",
+      "text_normalized": "６番、小貫元議員。",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-014",
+        "search_hint": "鈴木喜明議長 ６番、小貫元議員。",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-015",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 15,
+      "speaker_name_original": "小貫元議員",
+      "speaker_name_normalized": "小貫元",
+      "speaker_role_original": "６番",
+      "speaker_type": "council_member",
+      "turn_type": "question",
+      "text_original": "再質問いたします。\n臨時給付金に関係して、２点ほど質問します。\n１点目は、給付金が国の物価高騰対策として十分だと考えますかという聞き方をしたのですが、国に\n増額を求める考えはありませんと。それは残念ですが、そういうお考えだということなのですけれども、\nただ、物価高騰対策として十分かという質問に対しては、一定の効果はあるのだというお答えでした。\n私は十分かどうか考えていますかとお聞きしたので、一定の効果ということは、十分ではないとも取\nれるし、どちらなのか。十分だと考えているのかというところについて、市長の考えをお示しいただき\nたいと思います。\nもう１点目は、早期支給に努力をしてほしいという質問に対して、いろいろ協議して短縮を図ってい\nきたいという前向きなお答えをいただいたわけです。ということは、最も遅くて１回目の支給が４月中\n旬というアナウンスになるかと思うのですが、せめてこのぐらいまでには何とか努力して対象者の元に\nお知らせが届くようにしていきたいという短縮を図る目標的なもの、断言できない部分があるとは思う\nのですけれども、ただ、市としては、せめてここまでは短縮を図るよう委託業者と協議していきたいと\nいう目安はあるのかどうか、お示しいただきたいと思います。",
+      "text_normalized": "再質問いたします。 臨時給付金に関係して、２点ほど質問します。 １点目は、給付金が国の物価高騰対策として十分だと考えますかという聞き方をしたのですが、国に 増額を求める考えはありませんと。それは残念ですが、そういうお考えだということなのですけれども、 ただ、物価高騰対策として十分かという質問に対しては、一定の効果はあるのだというお答えでした。 私は十分かどうか考えていますかとお聞きしたので、一定の効果ということは、十分ではないとも取 れるし、どちらなのか。十分だと考えているのかというところについて、市長の考えをお示しいただき たいと思います。 もう１点目は、早期支給に努力をしてほしいという質問に対して、いろいろ協議して短縮を図ってい きたいという前向きなお答えをいただいたわけです。ということは、最も遅くて１回目の支給が４月中 旬というアナウンスになるかと思うのですが、せめてこのぐらいまでには何とか努力して対象者の元に お知らせが届くようにしていきたいという短縮を図る目標的なもの、断言できない部分があるとは思う のですけれども、ただ、市としては、せめてここまでは短縮を図るよう委託業者と協議していきたいと いう目安はあるのかどうか、お示しいただきたいと思います。",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-015",
+        "search_hint": "小貫元議員 再質問いたします。 臨時給付金に関係して、２点ほど質問します。 １点目は、給付金が国の物価高騰対策として十分だと考えます",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-小貫元-６番"
+    },
+    {
+      "id": "otaru-20252001-1-turn-016",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 16,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "説明員の答弁を求めます。\n（「議長」と呼ぶ者あり）\n－3－\n\n令和７年第１回臨時会 本会議録",
+      "text_normalized": "説明員の答弁を求めます。 （「議長」と呼ぶ者あり） －3－ 令和７年第１回臨時会 本会議録",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-016",
+        "search_hint": "鈴木喜明議長 説明員の答弁を求めます。 （「議長」と呼ぶ者あり） －3－ 令和７年第１回臨時会 本会議録",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-017",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 17,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "福祉保険部長。",
+      "text_normalized": "福祉保険部長。",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-017",
+        "search_hint": "鈴木喜明議長 福祉保険部長。",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-018",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 18,
+      "speaker_name_original": "勝山貴之福祉保険部長",
+      "speaker_name_normalized": "勝山貴之",
+      "speaker_role_original": "福祉保険部長",
+      "speaker_type": "executive",
+      "turn_type": "answer",
+      "text_original": "小貫議員の再質問にお答えいたします。\nまず、物価対策が十分かどうかという質問で、一定の効果ということでございましたが、十分という\nのがどこまでかというのはございますが、ある程度、効果はあると思っております。十分の捉え方とい\nいますか、難しいところはあるのですが、支給がされますので、それなりの効果はあるものと思ってお\nります。明確に、十分だということでお答えするのが難しいかと思っております。御理解いただければ\nと思います。\nもう１点、早期支給の件ですが、業者が決まり次第、業者とスケジュール等について調整して、でき\nるだけ早く努力していきたいということがございます。\n目標は、当初は４月中旬でお示しはしておりますが、これをどれだけ早くできるかはお示しできませ\nんが、少しでも早く、４月早々には支給できるように努力していきたいと思っております。",
+      "text_normalized": "小貫議員の再質問にお答えいたします。 まず、物価対策が十分かどうかという質問で、一定の効果ということでございましたが、十分という のがどこまでかというのはございますが、ある程度、効果はあると思っております。十分の捉え方とい いますか、難しいところはあるのですが、支給がされますので、それなりの効果はあるものと思ってお ります。明確に、十分だということでお答えするのが難しいかと思っております。御理解いただければ と思います。 もう１点、早期支給の件ですが、業者が決まり次第、業者とスケジュール等について調整して、でき るだけ早く努力していきたいということがございます。 目標は、当初は４月中旬でお示しはしておりますが、これをどれだけ早くできるかはお示しできませ んが、少しでも早く、４月早々には支給できるように努力していきたいと思っております。",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-018",
+        "search_hint": "勝山貴之福祉保険部長 小貫議員の再質問にお答えいたします。 まず、物価対策が十分かどうかという質問で、一定の効果ということでございましたが、十",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-勝山貴之-福祉保険部長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-019",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 19,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "以上をもって質疑を終結し、この際、暫時休憩いたします。\n休憩 午後 １時１７分\n――――――――――――――\n再開 午後 １時３５分",
+      "text_normalized": "以上をもって質疑を終結し、この際、暫時休憩いたします。 休憩 午後 １時１７分 ―――――――――――――― 再開 午後 １時３５分",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-019",
+        "search_hint": "鈴木喜明議長 以上をもって質疑を終結し、この際、暫時休憩いたします。 休憩 午後 １時１７分 ―――――――――――――― 再開 午後",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-020",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 20,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "休憩前に引き続き、会議を再開いたします。\nこれより、採決いたします。\nお諮りいたします。\n議案第１号は可決と決定することに、御異議ございませんか。\n（「異議なし」と呼ぶ者あり）",
+      "text_normalized": "休憩前に引き続き、会議を再開いたします。 これより、採決いたします。 お諮りいたします。 議案第１号は可決と決定することに、御異議ございませんか。 （「異議なし」と呼ぶ者あり）",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-020",
+        "search_hint": "鈴木喜明議長 休憩前に引き続き、会議を再開いたします。 これより、採決いたします。 お諮りいたします。 議案第１号は可決と決定すること",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-021",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 21,
+      "speaker_name_original": "鈴木喜明議長",
+      "speaker_name_normalized": "鈴木喜明",
+      "speaker_role_original": "議長",
+      "speaker_type": "chair",
+      "turn_type": "procedure",
+      "text_original": "御異議なしと認め、さように決しました。\n以上をもって、本臨時会に付託されました案件は議了いたしました。\n第１回臨時会は、これをもって閉会いたします。\n閉会 午後 １時３６分\n会議録署名議員\n小樽市議会 議 長 鈴 木 喜 明\n議 員 白 川 貴 城\n議 員 下 兼 薫\n－4－\n\n○諸般の報告\n○令和７年小樽市議会第１回臨時会議決結果表\n\n○諸般の報告\n（１）監査委員から、令和６年１１月分の各会計例月出納検査について報告があった。（招集日配付分）\n以 上\n\n令 和 7 年 小 樽 市 議 会 第 1 回 臨 時 会 議 決 結 果 表",
+      "text_normalized": "御異議なしと認め、さように決しました。 以上をもって、本臨時会に付託されました案件は議了いたしました。 第１回臨時会は、これをもって閉会いたします。 閉会 午後 １時３６分 会議録署名議員 小樽市議会 議 長 鈴 木 喜 明 議 員 白 川 貴 城 議 員 下 兼 薫 －4－ ○諸般の報告 ○令和７年小樽市議会第１回臨時会議決結果表 ○諸般の報告 （１）監査委員から、令和６年１１月分の各会計例月出納検査について報告があった。（招集日配付分） 以 上 令 和 7 年 小 樽 市 議 会 第 1 回 臨 時 会 議 決 結 果 表",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-021",
+        "search_hint": "鈴木喜明議長 御異議なしと認め、さように決しました。 以上をもって、本臨時会に付託されました案件は議了いたしました。 第１回臨時会は、",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.76,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-鈴木喜明-議長"
+    },
+    {
+      "id": "otaru-20252001-1-turn-022",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 22,
+      "speaker_name_original": "１日間会期令和７年１月２４日",
+      "speaker_name_normalized": "１日間",
+      "speaker_role_original": "会 期 令和７年１月２４日",
+      "speaker_type": "unknown",
+      "turn_type": "unknown",
+      "text_original": "委 員 会 本 会 議\n議案 提 出 提出\n件 名 付 託 付託 議 決 議決 議 決 議決\n番号 年 月 日 者\n年 月 日 委員会 年 月 日 結果 年 月 日 結果\n1 令和６年度小樽市一般会計補正予算 R7.1.24 市長 － － － － R7.1.24 可 決",
+      "text_normalized": "委 員 会 本 会 議 議案 提 出 提出 件 名 付 託 付託 議 決 議決 議 決 議決 番号 年 月 日 者 年 月 日 委員会 年 月 日 結果 年 月 日 結果 1 令和６年度小樽市一般会計補正予算 R7.1.24 市長 － － － － R7.1.24 可 決",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-1-turn-022",
+        "search_hint": "１日間会期令和７年１月２４日 委 員 会 本 会 議 議案 提 出 提出 件 名 付 託 付託 議 決 議決 議 決 議決 番号 年 月 日 者 年 ",
+        "heading_path": [
+          "第0日"
+        ]
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.45,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      },
+      "speaker_id": "otaru-speaker-１日間-会期令和７年１月２４日"
+    }
+  ],
+  "question_blocks": [
+    {
+      "id": "otaru-20252001-question-001",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 1,
+      "questioner_name_original": "質議員",
+      "questioner_name_normalized": "質",
+      "question_method": "unknown",
+      "title_original": "質議員の質問",
+      "agenda_titles": [
+        "質議員の質問"
+      ],
+      "turn_ids": [
+        "otaru-20252001-1-turn-003",
+        "otaru-20252001-1-turn-007"
+      ],
+      "topic_block_ids": [
+        "otaru-20252001-question-001-topic-001"
+      ],
+      "start_turn_id": "otaru-20252001-1-turn-003",
+      "end_turn_id": "otaru-20252001-1-turn-007",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-001",
+        "search_hint": "質議員"
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.68,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": [
+          "pdf_style_grouping"
+        ]
+      }
+    },
+    {
+      "id": "otaru-20252001-question-002",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 2,
+      "questioner_name_original": "小貫元議員",
+      "questioner_name_normalized": "小貫元",
+      "question_method": "unknown",
+      "title_original": "小貫元議員の質問",
+      "agenda_titles": [
+        "小貫元議員の質問"
+      ],
+      "turn_ids": [
+        "otaru-20252001-1-turn-010",
+        "otaru-20252001-1-turn-013"
+      ],
+      "topic_block_ids": [
+        "otaru-20252001-question-002-topic-001"
+      ],
+      "start_turn_id": "otaru-20252001-1-turn-010",
+      "end_turn_id": "otaru-20252001-1-turn-013",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-002",
+        "search_hint": "小貫元議員"
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.68,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": [
+          "pdf_style_grouping"
+        ]
+      }
+    },
+    {
+      "id": "otaru-20252001-question-003",
+      "source_document_id": "otaru-20252001",
+      "municipality_id": "otaru",
+      "meeting_date": "20252001",
+      "order_index": 3,
+      "questioner_name_original": "小貫元議員",
+      "questioner_name_normalized": "小貫元",
+      "question_method": "unknown",
+      "title_original": "小貫元議員の質問",
+      "agenda_titles": [
+        "小貫元議員の質問"
+      ],
+      "turn_ids": [
+        "otaru-20252001-1-turn-015",
+        "otaru-20252001-1-turn-018"
+      ],
+      "topic_block_ids": [
+        "otaru-20252001-question-003-topic-001"
+      ],
+      "start_turn_id": "otaru-20252001-1-turn-015",
+      "end_turn_id": "otaru-20252001-1-turn-018",
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-003",
+        "search_hint": "小貫元議員"
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.68,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": [
+          "pdf_style_grouping"
+        ]
+      }
+    }
+  ],
+  "topic_blocks": [
+    {
+      "id": "otaru-20252001-question-001-topic-001",
+      "question_block_id": "otaru-20252001-question-001",
+      "source_document_id": "otaru-20252001",
+      "order_index": 1,
+      "title_original": "質議員の質問",
+      "title_normalized": "質議員の質問",
+      "policy_area_tags": [],
+      "topic_tags": [],
+      "respondent_speaker_ids": [],
+      "related_turn_ids": [
+        "otaru-20252001-1-turn-003",
+        "otaru-20252001-1-turn-007"
+      ],
+      "topic_snippet_ids": [
+        "otaru-20252001-question-001-topic-001-snippet-01",
+        "otaru-20252001-question-001-topic-001-snippet-02"
+      ],
+      "flow": [
+        {
+          "role": "question",
+          "turn_id": "otaru-20252001-1-turn-003",
+          "snippet_id": "otaru-20252001-question-001-topic-001-snippet-01",
+          "speaker_name_original": "質議員",
+          "label": "question"
+        },
+        {
+          "role": "answer",
+          "turn_id": "otaru-20252001-1-turn-007",
+          "snippet_id": "otaru-20252001-question-001-topic-001-snippet-02",
+          "speaker_name_original": "迫俊哉市長",
+          "label": "answer"
+        }
+      ],
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-001-topic-001",
+        "search_hint": "質議員の質問"
+      },
+      "review_status": "auto",
+      "public_visible": true,
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.58,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": [
+          "pdf_style_mvp_needs_review"
+        ]
+      }
+    },
+    {
+      "id": "otaru-20252001-question-002-topic-001",
+      "question_block_id": "otaru-20252001-question-002",
+      "source_document_id": "otaru-20252001",
+      "order_index": 2,
+      "title_original": "小貫元議員の質問",
+      "title_normalized": "小貫元議員の質問",
+      "policy_area_tags": [],
+      "topic_tags": [],
+      "respondent_speaker_ids": [],
+      "related_turn_ids": [
+        "otaru-20252001-1-turn-010",
+        "otaru-20252001-1-turn-013"
+      ],
+      "topic_snippet_ids": [
+        "otaru-20252001-question-002-topic-001-snippet-01",
+        "otaru-20252001-question-002-topic-001-snippet-02"
+      ],
+      "flow": [
+        {
+          "role": "question",
+          "turn_id": "otaru-20252001-1-turn-010",
+          "snippet_id": "otaru-20252001-question-002-topic-001-snippet-01",
+          "speaker_name_original": "小貫元議員",
+          "label": "question"
+        },
+        {
+          "role": "answer",
+          "turn_id": "otaru-20252001-1-turn-013",
+          "snippet_id": "otaru-20252001-question-002-topic-001-snippet-02",
+          "speaker_name_original": "迫俊哉市長",
+          "label": "answer"
+        }
+      ],
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-002-topic-001",
+        "search_hint": "小貫元議員の質問"
+      },
+      "review_status": "auto",
+      "public_visible": true,
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.58,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": [
+          "pdf_style_mvp_needs_review"
+        ]
+      }
+    },
+    {
+      "id": "otaru-20252001-question-003-topic-001",
+      "question_block_id": "otaru-20252001-question-003",
+      "source_document_id": "otaru-20252001",
+      "order_index": 3,
+      "title_original": "小貫元議員の質問",
+      "title_normalized": "小貫元議員の質問",
+      "policy_area_tags": [],
+      "topic_tags": [],
+      "respondent_speaker_ids": [],
+      "related_turn_ids": [
+        "otaru-20252001-1-turn-015",
+        "otaru-20252001-1-turn-018"
+      ],
+      "topic_snippet_ids": [
+        "otaru-20252001-question-003-topic-001-snippet-01",
+        "otaru-20252001-question-003-topic-001-snippet-02"
+      ],
+      "flow": [
+        {
+          "role": "question",
+          "turn_id": "otaru-20252001-1-turn-015",
+          "snippet_id": "otaru-20252001-question-003-topic-001-snippet-01",
+          "speaker_name_original": "小貫元議員",
+          "label": "question"
+        },
+        {
+          "role": "answer",
+          "turn_id": "otaru-20252001-1-turn-018",
+          "snippet_id": "otaru-20252001-question-003-topic-001-snippet-02",
+          "speaker_name_original": "勝山貴之福祉保険部長",
+          "label": "answer"
+        }
+      ],
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-003-topic-001",
+        "search_hint": "小貫元議員の質問"
+      },
+      "review_status": "auto",
+      "public_visible": true,
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.58,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": [
+          "pdf_style_mvp_needs_review"
+        ]
+      }
+    }
+  ],
+  "topic_snippets": [
+    {
+      "id": "otaru-20252001-question-001-topic-001-snippet-01",
+      "topic_block_id": "otaru-20252001-question-001-topic-001",
+      "turn_id": "otaru-20252001-1-turn-003",
+      "order_index": 1,
+      "snippet_role": "question",
+      "text_original": "疑 小貫議員……………………………………………………………………………………１\n採 決………………………………………………………………………………………………………４\n１ 閉 会……………………………………………………………………………………………………４\n\n第１回臨時会議事事件一覧表\n議 案\n件 名\n番 号\n1 令和６年度小樽市一般会計補正予算\n\n質 問 要 旨\n小貫議員（１月２４日１番目）\n市長及び関係説明員\n１ 議案第１号一般会計補正予算について\n２ その他\n\n〇出席議員\n議席番号 氏 名 1月24日\n１番 新井田 邦 宏 〇\n２番 白 川 貴 城 〇\n３番 松 井 真美子 〇\n４番 酒 井 隆 裕 〇\n５番 高 野 さくら 〇\n６番 小 貫 元 〇\n７番 平 戸 理 史 〇\n８番 白 濱 聡 〇\n９番 橋 本 布美絵 〇\n１０番 横 尾 英 司 〇\n１１番 秋 元 智 憲 〇\n１２番 松 岩 一 輝 〇\n１３番 中 鉢 淳 二 〇\n１４番 佐 藤 奈緒美 〇\n１５番 中 村 吉 宏 〇\n１６番 下 兼 薫 〇\n１７番 面 野 大 輔 〇\n１８番 髙 橋 龍 〇\n１９番 小 池 二 郎 〇\n２０番 中 村 岩 雄 〇\n２１番 前 田 清 貴 〇\n２２番 鈴 木 喜 明 〇\n２５番 佐々木 秩 〇\n注）〇…出席、×…欠席\n\n〇出席説明員\n職 名 氏 名 1月24日\n市 長 迫 俊 哉 〇\n教 育 長 中 島 正 人 〇\n監 査 委 員 小 林 優 －\n選 挙 管 理 委 員 会\n平 口 山 和 弘 －\n委 員 長\n農 業 委 員 会 会 長 北 島 吉 治 －\n副 市 長 上 石 明 〇\n病 院 局 長 並 木 昭 義 〇\n水 道 局 長 畠 山 樹 欣 〇\n総 務 部 長 薄 井 洋 仁 〇\n総 合 政 策 部 長 柄 澤 晃 人 〇\n財 政 部 長 柴 田 健 治 〇\n産 業 港 湾 部 長 渡 部 一 博 〇\n産 業 港 湾 部\n笹 田 泰 生 〇\n港 湾 担 当 部 長\n生 活 環 境 部 長 佐 藤 靖 久 〇\n福 祉 保 険 部 長 勝 山 貴 之 〇\nこ ど も 未 来 部 長 安 部 俊 克 〇\n保 健 所 長 田 中 宏 之 〇\n建 設 部 長 松 浦 裕 仁 〇\n消 防 長 見 山 義 秋 〇\n病院局小樽市立病院\n佐 々 木 真 一 〇\n事 務 部 長\n教 育 部 長 鈴 木 健 介 〇\n選 挙 管 理 委 員 会\n川 嶋 広 士 －\n事 務 局 長\n監 査 委 員\n浅 井 泰 之 －\n事 務 局 長\n農 業 委 員 会\n嶋 崎 哲 也 －\n事 務 局 長\n総 務 部 総 務 課 長 森 田 裕 規 〇\n財 政 部 財 政 課 長 尾 作 考 則 〇\n注）〇…出席、×…欠席\n\n〇議事参与事務局職員\n職 名 氏 名 1月24日\n事 務 局 長 中 村 哲 也 〇\n事 務 局 次 長 加 藤 佳 子 〇\n主 査 平 林 俊 輔 〇\n総 務 係 長 相 澤 幸 〇\n議 事 係 長 松 木 道 人 〇\n書 記 阿 部 久 美 子 －\n書 記 菅 翔 太 〇\n書 記 越 智 美 幸 〇\n書 記 中 村 知 奈 津 〇\n書 記 成 田 昇 平 〇\n",
+      "turn_char_start": 0,
+      "turn_char_end": 1354,
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-001-topic-001-snippet-01",
+        "search_hint": "質議員 疑 小貫議員……………………………………………………………………………………１ 採 決……………………………………………",
+        "turn_char_start": 0,
+        "turn_char_end": 1354
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.6,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": [
+          "trimmed_snippet"
+        ]
+      }
+    },
+    {
+      "id": "otaru-20252001-question-001-topic-001-snippet-02",
+      "topic_block_id": "otaru-20252001-question-001-topic-001",
+      "turn_id": "otaru-20252001-1-turn-007",
+      "order_index": 2,
+      "snippet_role": "answer",
+      "text_original": "ただいま上程されました議案について、提案理由の概要を説明申し上げます。\n議案第１号一般会計補正予算につきましては、令和６年12月17日に成立した国の補正予算における物\n価高騰対策として追加交付されることとなった重点支援地方交付金を活用し、物価高騰による負担感が\n大きい住民税非課税世帯の生活を迅速に支援するため、対象１世帯当たり３万円を給付するほか、世帯\nに18歳以下の子供がいる場合は、１人当たり２万円を給付する住民税非課税世帯支援給付金給付事業費\nを計上いたしました。このほか、新型コロナウイルスワクチンの臨時接種を受け、予防接種健康被害救\n済制度を申請した方のうち、新たに２名が予防接種法に基づき障害年金等について認定されたことから、\n当該障害年金等を迅速に支給するために、所要の補正を計上いたしました。これに対する財源といたし\nましては、国庫支出金を計上いたしました。\n以上の結果、一般会計における補正額は、歳入歳出ともに８億3,905万6,000円の増となり、財政規模\nは667億7,954万2,000円となりました。\n何とぞ原案どおり御可決賜りますようお願い申し上げます。（拍手）",
+      "turn_char_start": 0,
+      "turn_char_end": 496,
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-001-topic-001-snippet-02",
+        "search_hint": "迫俊哉市長 ただいま上程されました議案について、提案理由の概要を説明申し上げます。 議案第１号一般会計補正予算につきましては、令和６",
+        "turn_char_start": 0,
+        "turn_char_end": 496
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.7,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      }
+    },
+    {
+      "id": "otaru-20252001-question-002-topic-001-snippet-01",
+      "topic_block_id": "otaru-20252001-question-002-topic-001",
+      "turn_id": "otaru-20252001-1-turn-010",
+      "order_index": 1,
+      "snippet_role": "question",
+      "text_original": "日本共産党を代表して、ただいま上程されました議案第１号小樽市一般会計\n補正予算について質疑いたします。\n石破政権は昨年11月22日、今回提案のある臨時給付金をはじめとする物価高騰対策を閣議決定し、12\n月17日、補正予算が成立しました。物価高騰による家計への影響は、全ての品目にわたり大きな負担と\n－1－\n\n令和７年第１回臨時会 本会議録\nなっています。日本共産党は本来であれば、消費税の減税が急がれていると考えます。しかし、政府は、\n小手先の物価高騰対策として住民税非課税世帯への３万円給付を打ち出しました。\n市長は、国による今回の低所得者世帯支援の給付金が物価高騰対策として十分だと考えますか。国に\n増額を求める考えはありませんか。\n昨年度の給付金事業では、委託金額が国の事務費基準額を上回り、推奨事業分から事務費負担分を支\n出しました。ところが、今年度の事業では国の事務費基準額内で収めるとの提案です。国の基準額内に\n事務費を抑えることができるとした理由を示してください。\n説明では、給付金は４月以降の支給になると言います。しかし、市民にとって冬の支出が大きく、４\n月までは待てません。既に対象者は明らかになっているわけですから、例えば委託事業者の選定を待た\nずに対象者に書類を送付するなど、市でできることを先に実施し、少しでも早く給付できるようにする\n必要があります。早期支給に努力することを求めます。お答えください。\n市は、推奨事業分については新年度で予算化すると言います。本来なら、今回の補正に組み入れるべ\nきではないですか。\n推奨事業分が遅れる理由に、国の詳細が明らかになっていないことがあったと考えます。国が詳細を\n示したのは、補正予算が成立した12月17日付の事務連絡でした。私が令和６年第４回定例会で質問した\nときは、金額も明らかになっていませんでしたし、この事務連絡も発出されていませんでした。その時\n点では、市長は、福祉灯油の実施に否定的な答弁をいたしました。この事務連絡では、推奨事業メニュ\nーとして灯油をはじめ、エネルギー・食料品価格等の物価高騰による負担を軽減するための支援が挙げ\nられており、この灯油は、今回、新たに加わった文言です。さらに昨年度、約２億7,700万円の交付限度\n額が約３億5,700万円へと増額しています。これは国が寒冷地への配分を多くしているからです。\nこれらの経過に照らせば、福祉灯油を否定した答弁を白紙に戻し、考え直す必要があるのではないで\nすか、検討を求めます。\n推奨事業は、市独自の財源を投入し、事業を実施することも求めます。お答えください。\n最後に、新型コロナワクチンの臨時接種を受け、予防接種健康被害救済制度を申請した方のうち、２\n人が予防接種法に基づき障害年金等の認定がされ、年金等の支給を行うことについてです。\n小樽市で認定を受けた方は17人です。今回の方は接種日が2022年10月、認定日が2024年11月ですから、\n丸２年が経過しています。\n今回の方は接種から申請までの間が空いている例ではありますが、一般的に申請から認定まで時間を\n要していると聞いています。申請から認定まで、迅速に行えるよう国に求めるべきではありませんか。\n以上、再質問は留保します。（拍手）",
+      "turn_char_start": 0,
+      "turn_char_end": 1367,
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-002-topic-001-snippet-01",
+        "search_hint": "小貫元議員 日本共産党を代表して、ただいま上程されました議案第１号小樽市一般会計 補正予算について質疑いたします。 石破政権は昨年1",
+        "turn_char_start": 0,
+        "turn_char_end": 1367
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.7,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      }
+    },
+    {
+      "id": "otaru-20252001-question-002-topic-001-snippet-02",
+      "topic_block_id": "otaru-20252001-question-002-topic-001",
+      "turn_id": "otaru-20252001-1-turn-013",
+      "order_index": 2,
+      "snippet_role": "answer",
+      "text_original": "小貫議員の御質問にお答えいたします。\n議案第１号小樽市一般会計補正予算について御質問がありました。\n初めに、国による低所得世帯支援の給付金が物価高騰対策として十分であるかにつきましては、国で\nは給付金の算定に当たり、低所得世帯の食料品やエネルギー関係等の消費支出に対する物価高の影響の\nうち、賃上げや年金物価スライド等で賄い切れない部分をおおむねカバーできる水準として、住民税非\n課税世帯を対象に１世帯当たり３万円、子供１人当たり２万円を加算するとしたところであり、物価高\n－2－\n\n令和７年第１回臨時会 本会議録\n騰対策として一定の効果があるものと考えておりますので、増額を求める考えはありません。\n次に、給付金に係る事務費につきましては、これまでの給付金事業で使用した振込先情報を活用し、\n給付を原則プッシュ式とすることで、書類審査の省力化を図るとともに、コールセンターの体制や事業\n者選定方法を見直したことにより、交付基準内に事務費を抑えることができると判断したものでありま\nす。\n次に、給付金の早期支給につきましては、委託事業者の選定後、より効率的な作業工程の実施につい\nて協議し、現在、想定しているスケジュールの短縮を図るなど、早期支給に努めてまいりたいと考えて\nおります。\n次に、推奨事業メニュー分の予算計上時期につきましては、昨年度の国の補正予算に係る推奨事業メ\nニュー分についても、本年度の当初予算で計上し、現在も一部の事業を実施中であることから、継続的\nな支援を実施するため、新年度予算で計上することとしたものであります。\n次に、福祉灯油実施の再検討につきましては、現在、推奨事業メニュー分として物価高騰対策の効果\nが幅広く行き渡る事業を中心に庁内で検討を進めているところであり、非課税世帯のみを対象とした福\n祉灯油の実施は予定しておりません。\n次に、推奨事業メニュー分の実施につきましては、より効果的な事業の実施に向け、一般財源の活用\nも検討してまいりたいと考えております。\n次に、予防接種健康被害救済制度の認定に関する国への要望につきましては、予防接種法に基づくワ\nクチン接種後の副反応により健康被害が生じた場合は、早期かつ適切に救済されることが望ましいと考\nえております。\nこれまでも全国市長会から、国において迅速な審査が行われるよう要望が行われておりますが、本市\nといたしましても、今後このような事案が発生した際には、北海道を通じて国に要請してまいりたいと\n考えております。\n（「議長、６番」と呼ぶ者あり）",
+      "turn_char_start": 0,
+      "turn_char_end": 1066,
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-002-topic-001-snippet-02",
+        "search_hint": "迫俊哉市長 小貫議員の御質問にお答えいたします。 議案第１号小樽市一般会計補正予算について御質問がありました。 初めに、国による低所",
+        "turn_char_start": 0,
+        "turn_char_end": 1066
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.7,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      }
+    },
+    {
+      "id": "otaru-20252001-question-003-topic-001-snippet-01",
+      "topic_block_id": "otaru-20252001-question-003-topic-001",
+      "turn_id": "otaru-20252001-1-turn-015",
+      "order_index": 1,
+      "snippet_role": "question",
+      "text_original": "再質問いたします。\n臨時給付金に関係して、２点ほど質問します。\n１点目は、給付金が国の物価高騰対策として十分だと考えますかという聞き方をしたのですが、国に\n増額を求める考えはありませんと。それは残念ですが、そういうお考えだということなのですけれども、\nただ、物価高騰対策として十分かという質問に対しては、一定の効果はあるのだというお答えでした。\n私は十分かどうか考えていますかとお聞きしたので、一定の効果ということは、十分ではないとも取\nれるし、どちらなのか。十分だと考えているのかというところについて、市長の考えをお示しいただき\nたいと思います。\nもう１点目は、早期支給に努力をしてほしいという質問に対して、いろいろ協議して短縮を図ってい\nきたいという前向きなお答えをいただいたわけです。ということは、最も遅くて１回目の支給が４月中\n旬というアナウンスになるかと思うのですが、せめてこのぐらいまでには何とか努力して対象者の元に\nお知らせが届くようにしていきたいという短縮を図る目標的なもの、断言できない部分があるとは思う\nのですけれども、ただ、市としては、せめてここまでは短縮を図るよう委託業者と協議していきたいと\nいう目安はあるのかどうか、お示しいただきたいと思います。",
+      "turn_char_start": 0,
+      "turn_char_end": 537,
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-003-topic-001-snippet-01",
+        "search_hint": "小貫元議員 再質問いたします。 臨時給付金に関係して、２点ほど質問します。 １点目は、給付金が国の物価高騰対策として十分だと考えます",
+        "turn_char_start": 0,
+        "turn_char_end": 537
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.7,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      }
+    },
+    {
+      "id": "otaru-20252001-question-003-topic-001-snippet-02",
+      "topic_block_id": "otaru-20252001-question-003-topic-001",
+      "turn_id": "otaru-20252001-1-turn-018",
+      "order_index": 2,
+      "snippet_role": "answer",
+      "text_original": "小貫議員の再質問にお答えいたします。\nまず、物価対策が十分かどうかという質問で、一定の効果ということでございましたが、十分という\nのがどこまでかというのはございますが、ある程度、効果はあると思っております。十分の捉え方とい\nいますか、難しいところはあるのですが、支給がされますので、それなりの効果はあるものと思ってお\nります。明確に、十分だということでお答えするのが難しいかと思っております。御理解いただければ\nと思います。\nもう１点、早期支給の件ですが、業者が決まり次第、業者とスケジュール等について調整して、でき\nるだけ早く努力していきたいということがございます。\n目標は、当初は４月中旬でお示しはしておりますが、これをどれだけ早くできるかはお示しできませ\nんが、少しでも早く、４月早々には支給できるように努力していきたいと思っております。",
+      "turn_char_start": 0,
+      "turn_char_end": 372,
+      "source_position": {
+        "official_url": "https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-R1.pdf",
+        "local_anchor": "otaru-20252001-question-003-topic-001-snippet-02",
+        "search_hint": "勝山貴之福祉保険部長 小貫議員の再質問にお答えいたします。 まず、物価対策が十分かどうかという質問で、一定の効果ということでございましたが、十",
+        "turn_char_start": 0,
+        "turn_char_end": 372
+      },
+      "extraction": {
+        "method": "rule_based_with_manual_review",
+        "confidence": 0.7,
+        "extractor_version": "pdf-style-structured-minutes-mvp-2026-05-13",
+        "warnings": []
+      }
+    }
+  ]
+}

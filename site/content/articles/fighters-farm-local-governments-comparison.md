@@ -28,6 +28,8 @@ readingMinutes: "10"
 
 本文で扱う議会答弁は、各自治体の見出し直下に「質問した議員・原文」と「市側の答弁」として置きました。内部データではなく、市民がブラウザで開ける議事録ページや公式ページに戻れるリンクを使っています。
 
+江別市に加えて、岩見沢市・小樽市は構造化議事録ビューへのリンクを優先しました。構造化ビューは質問と答弁を読みやすく整理した入口で、最終確認は各ページ内の公式資料リンクから行えます。
+
 この記事の分類は、議事録本文をもとにした地方議会ドットコム編集部の整理です。球団や自治体の正式な候補評価を断定するものではありません。
 
 ## 比べると見えるもの
@@ -39,9 +41,9 @@ readingMinutes: "10"
 | 恵庭市 | [柏野大介議員](/eniwa/minutes/235?q=柏野大介%20ファイターズ)、[野沢宏紀議員](/eniwa/minutes/253?q=野沢宏紀%20ファイターズ) | 誘致方針の有無、市民署名、期成会、総合計画との関係 | 市民機運で答弁が強まる型 |
 | 千歳市 | [落野議員](/chitose/minutes/555?q=落野%20日ハム)、[岩満議員](/chitose/minutes/567?q=岩満%20ファイターズ) | 空港アクセスの強み、土地確保、建設費、行政や経済界の対応 | 強みと制約を同時に見る型 |
 | 旭川市 | [品田ときえ議員](/asahikawa/minutes/300?q=品田ときえ%20ファイターズ)、[石川まさゆき議員](/asahikawa/minutes/300?q=石川まさゆき%20ファイターズ) | 既存球場、花咲スポーツ公園、道北拠点性、費用面の課題 | 地域資源と接続する型 |
-| 岩見沢市 | [松本議員への答弁前後](/iwamizawa/minutes/764?q=松本%20日本ハム) | 球団への情報収集、空港・エスコンへの公共交通アクセス条件 | 手を挙げる前に条件を読む型 |
+| 岩見沢市 | [松本一郎議員の再質問・市長答弁](/iwamizawa/minutes/764/turns?view=topics#iwamizawa-764-question-003-topic-001)、[情報共有を問う再々質問](/iwamizawa/minutes/764/turns?view=topics#iwamizawa-764-question-004-topic-001) | 球団への情報収集、空港・エスコンへの公共交通アクセス条件 | 手を挙げる前に条件を読む型 |
 | 北広島市 | [児玉正輝議員](/kitahiroshima/minutes/528?q=児玉正輝%20ファーム) | Fビレッジを持つまちとしての価値、財政負担、交通、地元還元 | 既存拠点都市として慎重に見る型 |
-| 小樽市 | [中鉢淳二議員](/otaru/minutes/20251004?q=中鉢淳二%20夏季合宿)、[公式PDF](https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-04.pdf) | 大規模誘致が難しい場合の夏季合宿誘致、既存施設活用 | 別解を探す型 |
+| 小樽市 | [中鉢淳二議員の質問・教育長答弁](/otaru/minutes/20251004/turns?view=topics#otaru-20251004-question-043-topic-001)、[公式PDF](https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-04.pdf) | 大規模誘致が難しい場合の夏季合宿誘致、既存施設活用 | 別解を探す型 |
 
 ## 江別市、施設誘致を駅周辺再開発の問いにする
 
@@ -111,9 +113,9 @@ readingMinutes: "10"
 
 ## 岩見沢市、情報を取りに行った上で不利な条件も説明する
 
-質問した議員・原文: [松本議員への答弁前後](/iwamizawa/minutes/764?q=松本%20日本ハム)
+質問した議員・原文: [松本一郎議員の再質問を構造化ビューで読む](/iwamizawa/minutes/764/turns?view=topics#iwamizawa-764-question-003-topic-001)、[情報共有を問う再々質問を読む](/iwamizawa/minutes/764/turns?view=topics#iwamizawa-764-question-004-topic-001)
 
-市側の答弁: [松野哲市長の答弁](/iwamizawa/minutes/764?q=松野哲%20日本ハム)
+市側の答弁: [松野哲市長の答弁を構造化ビューで読む](/iwamizawa/minutes/764/turns?view=topics#iwamizawa-764-question-003-topic-001-snippet-02)、[情報公開に関する答弁](/iwamizawa/minutes/764/turns?view=topics#iwamizawa-764-question-004-topic-001-snippet-02)
 
 岩見沢市は、誘致競争の記事では目立ちにくい自治体です。しかし、政策比較としては重要です。
 
@@ -135,9 +137,9 @@ readingMinutes: "10"
 
 ## 小樽市、大規模誘致ではなく夏季合宿という別解
 
-質問した議員・原文: [中鉢淳二議員の質問](/otaru/minutes/20251004?q=中鉢淳二%20夏季合宿)
+質問した議員・原文: [中鉢淳二議員の質問を構造化ビューで読む](/otaru/minutes/20251004/turns?view=topics#otaru-20251004-question-043-topic-001)
 
-市側の答弁: [中島正人教育長の答弁](/otaru/minutes/20251004?q=中島正人%20夏季合宿)、[小樽市公式会議録PDF](https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-04.pdf)
+市側の答弁: [中島正人教育長の答弁を構造化ビューで読む](/otaru/minutes/20251004/turns?view=topics#otaru-20251004-question-043-topic-001-snippet-03)、[小樽市公式会議録PDF](https://www.city.otaru.lg.jp/docs/2020113000634/file_contents/R07-04.pdf)
 
 小樽市は、ファイターズ2軍誘致を直接進める議論ではありません。議員は、ファイターズ2軍誘致には大きな公費負担があり難しいと見た上で、Jリーグなどの夏季合宿誘致を提案しました。
 
