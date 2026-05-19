@@ -40,7 +40,9 @@
 
 - 新しい自治体データを足したら、対象ファイルを `data/{slug}/` に置き、`node scripts/sync-site-data.mjs --slug <slug> --build-capabilities --verify` で公開用データへ同期する。
 - 予算OCRは `data/{slug}/budgets/` を収集元、`site/data/{slug}/budgets/` を公開用コピーとする。ページ単位OCRは大きいが、公開導線の判定は `budgets/index.json` に一本化する。
+- 予算書の公式URL・取込状況は `site/data/budget_sources.json` に置く。`status: "取込済み"` は公開用OCRデータが `site/data/{slug}/budgets/{year}/manifest.json` まで揃っている場合だけ使い、URL確認だけの自治体は `status: "取得候補"` にする。
 - `segments` は重いローカル調査用データなので、公開用コピーには通常同期しない。必要な時だけ `--include-segments` を付ける。
+- `data/sapporo/` や `site/data/sapporo/` のような `.gitignore` 対象データはローカル確認用として扱う。生成台帳・健診・公開ドキュメントでは、Gitで公開されるファイルだけを基準にする。
 - 導線を出すかどうかは `hasCityCapability(slug, key)` を使う。
 - 静的生成対象の市町村一覧は `site/src/lib/staticCityParams.ts` を使う。
 - capability が無いページは `generateStaticParams` に含めず、`dynamicParams = false` で直接アクセスも 404 にする。

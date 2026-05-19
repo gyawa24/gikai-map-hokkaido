@@ -72,7 +72,7 @@ export function getBudgetStaticParams(): { city: string; year: string }[] {
   const sources = readJson<BudgetSource[]>(fp);
   if (!Array.isArray(sources)) return [];
   return sources
-    .filter((source) => source.status === "取込済み")
+    .filter((source) => source.status === "取込済み" && getBudgetDocument(source.slug, source.year) != null)
     .map((source) => ({ city: source.slug, year: source.year }));
 }
 

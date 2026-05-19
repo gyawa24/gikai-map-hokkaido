@@ -26,10 +26,10 @@
   {
     "slug": "sapporo",
     "year": "2026",
-    "status": "取込済み",
+    "status": "取得候補",
     "source_label": "令和8年度予算",
     "source_href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/reiwa8nendo_yosan.html",
-    "note": "令和8年度の各会計予算・予算説明書をページ画像・検索用テキストとして取込済み"
+    "note": "令和8年度の公開元を確認済み。公開用OCRへの反映は準備中"
   },
   {
     "slug": "asahikawa",

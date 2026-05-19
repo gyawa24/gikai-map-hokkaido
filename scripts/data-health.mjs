@@ -80,6 +80,7 @@ Checks:
   - data/municipalities.json and site/data/municipalities.json are synced
   - retired municipalities.features has not returned
   - site/data/_city-capabilities.json matches site/data files
+  - budget_sources.json does not mark missing public OCR data as imported
   - known public data in data/{slug}/ is copied to site/data/{slug}/
   - site-only overlays are classified instead of hidden
 `);
@@ -209,6 +210,54 @@ async function checkCapabilities(report, municipalities, ignoredFiles) {
       if (actual !== expected) {
         report.errors.push(`capability mismatch ${municipality.slug}.${key}: ${actual} vs file=${expected}`);
       }
+    }
+  }
+}
+
+async function checkBudgetSources(report, ignoredFiles) {
+  const filePath = path.join(SITE_DATA_DIR, "budget_sources.json");
+  if (!(await pathExists(filePath))) {
+    report.errors.push("missing site/data/budget_sources.json");
+    return;
+  }
+
+  const sources = await readJson(filePath);
+  if (!Array.isArray(sources)) {
+    report.errors.push("site/data/budget_sources.json must be an array");
+    return;
+  }
+
+  const seen = new Set();
+  const allowedStatuses = new Set(["取込済み", "取得候補"]);
+  for (const source of sources) {
+    const slug = typeof source.slug === "string" ? source.slug : "";
+    const year = typeof source.year === "string" ? source.year : "";
+    const key = `${slug}/${year}`;
+
+    if (!slug || !year) {
+      report.errors.push(`invalid budget source entry: ${JSON.stringify(source)}`);
+      continue;
+    }
+    if (seen.has(key)) {
+      report.warnings.push(`duplicate budget source entry: ${key}`);
+    }
+    seen.add(key);
+
+    if (!allowedStatuses.has(source.status)) {
+      report.errors.push(`invalid budget source status: ${key} (${source.status ?? "missing"})`);
+      continue;
+    }
+
+    const indexPath = path.join(SITE_DATA_DIR, slug, "budgets", "index.json");
+    const manifestPath = path.join(SITE_DATA_DIR, slug, "budgets", year, "manifest.json");
+    const hasPublicIndex = !isIgnoredFile(indexPath, ignoredFiles) && (await pathExists(indexPath));
+    const hasPublicManifest = !isIgnoredFile(manifestPath, ignoredFiles) && (await pathExists(manifestPath));
+
+    if (source.status === "取込済み" && (!hasPublicIndex || !hasPublicManifest)) {
+      report.errors.push(`budget source marked imported without public data: ${key}`);
+    }
+    if (source.status === "取得候補" && hasPublicIndex && hasPublicManifest) {
+      report.warnings.push(`budget source has public data but is still candidate: ${key}`);
     }
   }
 }
@@ -351,6 +400,7 @@ async function main() {
   const ignoredFiles = readIgnoredFiles();
   const municipalities = await checkMetadata(report);
   await checkCapabilities(report, municipalities, ignoredFiles);
+  await checkBudgetSources(report, ignoredFiles);
   await checkPublicSync(report, municipalities, ignoredFiles);
   await checkSiteOnly(report, ignoredFiles);
 

@@ -221,7 +221,12 @@ function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>)
   const hasMinutes = capability.capabilities.minutes || hasMinutesData(cityDir);
   const source = sourceFor(entry, hasMinutes);
   const budgetSource = budgetSources.get(entry.slug) ?? null;
-  const budgetImported = hasBudgetData(cityDir) || budgetSource?.status === "取込済み";
+  const budgetImported = hasBudgetData(cityDir);
+  const budgetState = budgetImported
+    ? "取込済み"
+    : budgetSource?.status === "取得候補"
+      ? "取得候補"
+      : "未確認";
   const budgetYear = budgetSource?.year ?? null;
 
   return {
@@ -240,8 +245,8 @@ function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>)
     sourceNote: source.note,
     verifiedAt: entry.minutes_verified_at ?? null,
     hasBudget: budgetImported,
-    hasBudgetCandidate: budgetSource?.status === "取得候補",
-    budgetState: budgetSource?.status ?? "未確認",
+    hasBudgetCandidate: budgetState === "取得候補",
+    budgetState,
     budgetYear,
     budgetSourceLabel: budgetSource?.source_label ?? null,
     budgetSourceHref: budgetSource?.source_href ?? null,
