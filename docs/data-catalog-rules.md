@@ -2,13 +2,16 @@
 
 地方議会ドットコムでは、自治体ごとの公開機能を `municipalities.json` の手書き `features` で判定しない。
 サイトで表示する導線は、原則として `site/data/{slug}/` 配下の実ファイルから生成する台帳を読む。
+収集・編集の正は `data/`、公開ビルドの入力は `site/data/` と分ける。
 
 ## 単一の入口
 
-- 元データ: `site/data/{slug}/`
+- 収集元データ: `data/{slug}/`
+- 公開用データ: `site/data/{slug}/`
 - 生成台帳: `site/data/_city-capabilities.json`
 - 生成スクリプト: `site/scripts/build-city-capabilities.mjs`
 - 読み取りAPI: `site/src/lib/cityCapabilities.ts`
+- 同期スクリプト: `scripts/sync-site-data.mjs`
 
 `_city-capabilities.json` はビルド生成物なので直接編集しない。
 ローカル起動時とビルド前に自動生成する。
@@ -35,7 +38,8 @@
 
 ## 運用ルール
 
-- 新しい自治体データを足したら、対象ファイルを `site/data/{slug}/` に置き、`npm run build-city-capabilities` で台帳を更新する。
+- 新しい自治体データを足したら、対象ファイルを `data/{slug}/` に置き、`node scripts/sync-site-data.mjs --slug <slug> --build-capabilities --verify` で公開用データへ同期する。
+- 予算OCRなど `site/data/` だけにある公開用オーバーレイは、同期スクリプトで削除しない。
 - 導線を出すかどうかは `hasCityCapability(slug, key)` を使う。
 - 静的生成対象の市町村一覧は `site/src/lib/staticCityParams.ts` を使う。
 - capability が無いページは `generateStaticParams` に含めず、`dynamicParams = false` で直接アクセスも 404 にする。

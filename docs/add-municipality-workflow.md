@@ -48,6 +48,21 @@ node scripts/onboard-municipality.mjs \
 - `site/data/{slug}/` は手で編集しない
 - サイトの導線は `site/data/{slug}/` の実ファイルから capability 台帳として生成される
 
+公開用データへの同期:
+
+```bash
+node scripts/sync-site-data.mjs --slug sample --build-capabilities --verify
+```
+
+このコマンドは:
+
+- `data/municipalities.json` を `site/data/municipalities.json` に同期
+- `members.json` / `minutes/` / `segments/` など既知の公開対象データを `site/data/{slug}/` にコピー
+- `site/data/_city-capabilities.json` を再生成
+- 指定した自治体の同期状態を検証
+
+予算OCRなど `site/data/` だけにある公開用データは削除しない。
+
 ## 3. `segments` を生成して同期する
 
 議事録がある市町村では、次で `segments` まで一気に揃える。

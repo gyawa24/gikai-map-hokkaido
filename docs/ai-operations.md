@@ -121,7 +121,7 @@ AI に投げる単位は `1自治体` または `1導線` または `1自動化�
 ### Coverage/Freshness の完了条件
 
 - `data/` を正として必要ファイルが揃っている
-- `site/data/` に同期されている
+- `node scripts/sync-site-data.mjs --slug <slug> --build-capabilities --verify` で `site/data/` に同期されている
 - `data/municipalities.json` と `site/data/municipalities.json` が一致している
 - `node scripts/verify-municipality.mjs <slug>` が通る
 - UI変更や導線変更を含むなら `site` を開いて確認している
