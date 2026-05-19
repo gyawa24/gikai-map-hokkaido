@@ -39,7 +39,7 @@
 ## 運用ルール
 
 - 新しい自治体データを足したら、対象ファイルを `data/{slug}/` に置き、`node scripts/sync-site-data.mjs --slug <slug> --build-capabilities --verify` で公開用データへ同期する。
-- 予算OCRなど `site/data/` だけにある公開用オーバーレイは、同期スクリプトで削除しない。
+- 予算OCRは `data/{slug}/budgets/` を収集元、`site/data/{slug}/budgets/` を公開用コピーとする。ページ単位OCRは大きいが、公開導線の判定は `budgets/index.json` に一本化する。
 - `segments` は重いローカル調査用データなので、公開用コピーには通常同期しない。必要な時だけ `--include-segments` を付ける。
 - 導線を出すかどうかは `hasCityCapability(slug, key)` を使う。
 - 静的生成対象の市町村一覧は `site/src/lib/staticCityParams.ts` を使う。

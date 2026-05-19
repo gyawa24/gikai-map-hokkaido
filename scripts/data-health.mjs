@@ -2,6 +2,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -105,11 +106,24 @@ async function statOrNull(targetPath) {
   }
 }
 
+function readIgnoredFiles() {
+  const result = spawnSync("git", ["ls-files", "--others", "--ignored", "--exclude-standard", "-z", "data", "site/data"], {
+    cwd: REPO_ROOT,
+    encoding: "utf8",
+  });
+  if (result.status !== 0 || !result.stdout) return new Set();
+  return new Set(result.stdout.split("\0").filter(Boolean));
+}
+
+function isIgnoredFile(targetPath, ignoredFiles) {
+  return ignoredFiles.has(path.relative(REPO_ROOT, targetPath));
+}
+
 function rel(targetPath) {
   return path.relative(REPO_ROOT, targetPath);
 }
 
-async function walkFiles(baseDir) {
+async function walkFiles(baseDir, ignoredFiles) {
   const out = [];
   async function walk(currentDir) {
     const entries = await fs.readdir(currentDir, { withFileTypes: true });
@@ -118,6 +132,7 @@ async function walkFiles(baseDir) {
       if (entry.isDirectory()) {
         await walk(filePath);
       } else if (entry.isFile()) {
+        if (isIgnoredFile(filePath, ignoredFiles)) continue;
         out.push(path.relative(baseDir, filePath));
       }
     }
@@ -136,9 +151,11 @@ function hasRetiredFeatures(rows) {
   return rows.filter((row) => Object.prototype.hasOwnProperty.call(row, "features")).map((row) => row.slug);
 }
 
-async function hasAnyPath(baseDir, slug, relativePaths) {
+async function hasAnyPath(baseDir, slug, relativePaths, ignoredFiles) {
   for (const relativePath of relativePaths) {
-    if (await pathExists(path.join(baseDir, slug, relativePath))) return true;
+    const targetPath = path.join(baseDir, slug, relativePath);
+    if (isIgnoredFile(targetPath, ignoredFiles)) continue;
+    if (await pathExists(targetPath)) return true;
   }
   return false;
 }
@@ -162,7 +179,7 @@ async function checkMetadata(report) {
   return root;
 }
 
-async function checkCapabilities(report, municipalities) {
+async function checkCapabilities(report, municipalities, ignoredFiles) {
   const capabilityPath = path.join(SITE_DATA_DIR, "_city-capabilities.json");
   if (!(await pathExists(capabilityPath))) {
     report.errors.push("missing site/data/_city-capabilities.json");
@@ -187,7 +204,7 @@ async function checkCapabilities(report, municipalities) {
     }
 
     for (const [key, relativePaths] of Object.entries(CAPABILITY_DEFINITIONS)) {
-      const expected = await hasAnyPath(SITE_DATA_DIR, municipality.slug, relativePaths);
+      const expected = await hasAnyPath(SITE_DATA_DIR, municipality.slug, relativePaths, ignoredFiles);
       const actual = Boolean(city.capabilities?.[key]);
       if (actual !== expected) {
         report.errors.push(`capability mismatch ${municipality.slug}.${key}: ${actual} vs file=${expected}`);
@@ -196,7 +213,7 @@ async function checkCapabilities(report, municipalities) {
   }
 }
 
-async function checkPublicSync(report, municipalities) {
+async function checkPublicSync(report, municipalities, ignoredFiles) {
   for (const municipality of municipalities) {
     const rootDir = path.join(ROOT_DATA_DIR, municipality.slug);
     const siteDir = path.join(SITE_DATA_DIR, municipality.slug);
@@ -213,6 +230,7 @@ async function checkPublicSync(report, municipalities) {
       const rootPath = path.join(rootDir, entry);
       const rootStat = await statOrNull(rootPath);
       if (!rootStat) continue;
+      if (rootStat.isFile() && isIgnoredFile(rootPath, ignoredFiles)) continue;
       const sitePath = path.join(siteDir, entry);
       const siteStat = await statOrNull(sitePath);
       if (!siteStat) {
@@ -244,9 +262,9 @@ function classifyRootOnly(file) {
   return "root_only_public_candidate";
 }
 
-async function checkSiteOnly(report) {
-  const rootFiles = new Set(await walkFiles(ROOT_DATA_DIR));
-  const siteFiles = new Set(await walkFiles(SITE_DATA_DIR));
+async function checkSiteOnly(report, ignoredFiles) {
+  const rootFiles = new Set(await walkFiles(ROOT_DATA_DIR, ignoredFiles));
+  const siteFiles = new Set(await walkFiles(SITE_DATA_DIR, ignoredFiles));
 
   for (const file of siteFiles) {
     if (rootFiles.has(file)) continue;
@@ -330,10 +348,11 @@ async function main() {
     rootOnly: {},
   };
 
+  const ignoredFiles = readIgnoredFiles();
   const municipalities = await checkMetadata(report);
-  await checkCapabilities(report, municipalities);
-  await checkPublicSync(report, municipalities);
-  await checkSiteOnly(report);
+  await checkCapabilities(report, municipalities, ignoredFiles);
+  await checkPublicSync(report, municipalities, ignoredFiles);
+  await checkSiteOnly(report, ignoredFiles);
 
   if (options.json) {
     console.log(JSON.stringify(report, null, 2));

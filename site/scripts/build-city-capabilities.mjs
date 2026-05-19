@@ -2,10 +2,12 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE_DIR = path.resolve(__dirname, "..");
+const REPO_ROOT = path.resolve(SITE_DIR, "..");
 const DATA_DIR = path.join(SITE_DIR, "data");
 const OUT_FILE = path.join(DATA_DIR, "_city-capabilities.json");
 
@@ -23,12 +25,23 @@ const CAPABILITY_DEFINITIONS = [
   { key: "segments", paths: ["segments/_index.json"] },
 ];
 
-function exists(cityDir, relativePath) {
-  return fs.existsSync(path.join(cityDir, relativePath));
+function readIgnoredFiles() {
+  const result = spawnSync("git", ["ls-files", "--others", "--ignored", "--exclude-standard", "-z", "site/data"], {
+    cwd: REPO_ROOT,
+    encoding: "utf8",
+  });
+  if (result.status !== 0 || !result.stdout) return new Set();
+  return new Set(result.stdout.split("\0").filter(Boolean));
 }
 
-function firstExistingPath(cityDir, paths) {
-  return paths.find((relativePath) => exists(cityDir, relativePath)) ?? null;
+function exists(cityDir, relativePath, ignoredFiles) {
+  const targetPath = path.join(cityDir, relativePath);
+  if (ignoredFiles.has(path.relative(REPO_ROOT, targetPath))) return false;
+  return fs.existsSync(targetPath);
+}
+
+function firstExistingPath(cityDir, paths, ignoredFiles) {
+  return paths.find((relativePath) => exists(cityDir, relativePath, ignoredFiles)) ?? null;
 }
 
 function readMunicipalities() {
@@ -38,6 +51,7 @@ function readMunicipalities() {
 
 function buildCapabilities() {
   const municipalities = readMunicipalities();
+  const ignoredFiles = readIgnoredFiles();
   const cities = {};
 
   for (const municipality of municipalities) {
@@ -46,7 +60,7 @@ function buildCapabilities() {
     const paths = {};
 
     for (const definition of CAPABILITY_DEFINITIONS) {
-      const foundPath = firstExistingPath(cityDir, definition.paths);
+      const foundPath = firstExistingPath(cityDir, definition.paths, ignoredFiles);
       capabilities[definition.key] = Boolean(foundPath);
       if (foundPath) paths[definition.key] = foundPath;
     }

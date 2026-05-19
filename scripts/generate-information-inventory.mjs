@@ -2,6 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 
 const REPO_ROOT = process.cwd();
 const DATA_DIR = path.join(REPO_ROOT, "data");
@@ -75,8 +76,21 @@ function exists(filePath) {
   return fs.existsSync(filePath);
 }
 
+function isIgnoredByGit(filePath) {
+  const relativePath = path.relative(REPO_ROOT, filePath);
+  const result = spawnSync("git", ["check-ignore", "-q", relativePath], {
+    cwd: REPO_ROOT,
+    stdio: "ignore",
+  });
+  return result.status === 0;
+}
+
+function publicExists(filePath) {
+  return exists(filePath) && !isIgnoredByGit(filePath);
+}
+
 function hasNonEmptyArrayJson(filePath) {
-  if (!exists(filePath)) return false;
+  if (!publicExists(filePath)) return false;
   try {
     const data = readJson(filePath);
     return Array.isArray(data) && data.length > 0;
@@ -86,7 +100,7 @@ function hasNonEmptyArrayJson(filePath) {
 }
 
 function hasNonEmptyObjectJson(filePath) {
-  if (!exists(filePath)) return false;
+  if (!publicExists(filePath)) return false;
   try {
     const data = readJson(filePath);
     return Boolean(data && typeof data === "object" && Object.keys(data).length > 0);
@@ -135,6 +149,7 @@ function systemLabel(system) {
 
 function collectOtherInfo(files) {
   const labels = [];
+  if (files.budgets) labels.push("予算");
   if (files.election) labels.push("選挙");
   if (files.decisions) labels.push("議決");
   if (files.schedule) labels.push("行事");
@@ -184,16 +199,17 @@ function nextAction(entry, files) {
 function buildRow(entry) {
   const cityDir = path.join(DATA_DIR, entry.slug);
   const files = {
-    members: exists(path.join(cityDir, "members.json")),
+    members: publicExists(path.join(cityDir, "members.json")),
     minutes: hasMinutesData(cityDir),
     segments: hasSegmentsData(cityDir),
     themes: hasThemesData(cityDir),
-    sessionsData: exists(path.join(cityDir, "sessions", "index.json")),
-    election: exists(path.join(cityDir, "election.json")),
-    decisions: exists(path.join(cityDir, "decisions.json")),
-    schedule: exists(path.join(cityDir, "schedule.json")),
-    newsletter: exists(path.join(cityDir, "newsletter.json")),
-    plan: exists(path.join(cityDir, "comprehensive_plan.json")),
+    budgets: publicExists(path.join(cityDir, "budgets", "index.json")),
+    sessionsData: publicExists(path.join(cityDir, "sessions", "index.json")),
+    election: publicExists(path.join(cityDir, "election.json")),
+    decisions: publicExists(path.join(cityDir, "decisions.json")),
+    schedule: publicExists(path.join(cityDir, "schedule.json")),
+    newsletter: publicExists(path.join(cityDir, "newsletter.json")),
+    plan: publicExists(path.join(cityDir, "comprehensive_plan.json")),
   };
 
   return {
@@ -250,6 +266,7 @@ function main() {
   lines.push(`- 議事録: ${count(rows, (row) => row.files.minutes)}`);
   lines.push(`- segments: ${count(rows, (row) => row.files.segments)}`);
   lines.push(`- themes: ${count(rows, (row) => row.files.themes)}`);
+  lines.push(`- 予算書: ${count(rows, (row) => row.files.budgets)}`);
   lines.push(`- 速報系 sessions 実データ: ${count(rows, (row) => row.files.sessionsData)}`);
   lines.push(`- その他データあり: ${count(rows, (row) => row.otherInfo !== "—")}`);
   lines.push(`- 議事録未掲載: ${count(rows, (row) => !row.files.minutes)}`);
@@ -284,6 +301,7 @@ function main() {
   lines.push("- `data/{slug}/minutes/index.json`");
   lines.push("- `data/{slug}/segments/_index.json`");
   lines.push("- `data/{slug}/members_activity.json`");
+  lines.push("- `data/{slug}/budgets/index.json`");
   lines.push("- `docs/minutes-expansion-candidates.md` の分類方針");
 
   fs.writeFileSync(DOC_PATH, `${lines.join("\n")}\n`, "utf-8");

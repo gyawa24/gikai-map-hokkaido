@@ -2,6 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 
 const REPO_ROOT = process.cwd();
 const DATA_DIR = path.join(REPO_ROOT, "data");
@@ -15,13 +16,26 @@ function exists(filePath) {
   return fs.existsSync(filePath);
 }
 
+function isIgnoredByGit(filePath) {
+  const relativePath = path.relative(REPO_ROOT, filePath);
+  const result = spawnSync("git", ["check-ignore", "-q", relativePath], {
+    cwd: REPO_ROOT,
+    stdio: "ignore",
+  });
+  return result.status === 0;
+}
+
+function publicExists(filePath) {
+  return exists(filePath) && !isIgnoredByGit(filePath);
+}
+
 function hasMinutesData(cityDir) {
   const candidates = [
     path.join(cityDir, "minutes", "index.json"),
     path.join(cityDir, "index.json"),
   ];
   for (const candidate of candidates) {
-    if (!exists(candidate)) continue;
+    if (!publicExists(candidate)) continue;
     try {
       const data = readJson(candidate);
       if (Array.isArray(data) && data.length > 0) return true;
@@ -32,7 +46,7 @@ function hasMinutesData(cityDir) {
 
 function hasThemesData(cityDir) {
   const fp = path.join(cityDir, "members_activity.json");
-  if (!exists(fp)) return false;
+  if (!publicExists(fp)) return false;
   try {
     const data = readJson(fp);
     return data && Object.keys(data).length > 0;
@@ -43,7 +57,7 @@ function hasThemesData(cityDir) {
 
 function hasSegmentsData(cityDir) {
   const fp = path.join(cityDir, "segments", "_index.json");
-  if (!exists(fp)) return false;
+  if (!publicExists(fp)) return false;
   try {
     const data = readJson(fp);
     return Array.isArray(data) && data.length > 0;
@@ -54,7 +68,7 @@ function hasSegmentsData(cityDir) {
 
 function hasQuestionMemberSegments(cityDir) {
   const fp = path.join(cityDir, "segments", "_index.json");
-  if (!exists(fp)) return false;
+  if (!publicExists(fp)) return false;
   try {
     const data = readJson(fp);
     return Array.isArray(data) && data.some((item) => item.speaker_role === "質問" && item.member_name);
@@ -65,7 +79,7 @@ function hasQuestionMemberSegments(cityDir) {
 
 function hasQuestionSegments(cityDir) {
   const fp = path.join(cityDir, "segments", "_index.json");
-  if (!exists(fp)) return false;
+  if (!publicExists(fp)) return false;
   try {
     const data = readJson(fp);
     return Array.isArray(data) && data.some((item) => item.speaker_role === "質問");
@@ -98,7 +112,7 @@ function readFirstMinutesSample(cityDir) {
         path.join(cityDir, "minutes", item.file ?? `${item.council_id}.json`),
         path.join(cityDir, item.file ?? `${item.council_id}.json`),
       ];
-      const src = fileCandidates.find((candidate) => exists(candidate));
+      const src = fileCandidates.find((candidate) => publicExists(candidate));
       if (!src) continue;
       return JSON.stringify(readJson(src)).slice(0, 12000);
     } catch {}
@@ -188,16 +202,17 @@ function nextAction(entry, files, parserIssue) {
 function buildRow(entry) {
   const cityDir = path.join(DATA_DIR, entry.slug);
   const files = {
-    members: exists(path.join(cityDir, "members.json")),
+    members: publicExists(path.join(cityDir, "members.json")),
     minutes: hasMinutesData(cityDir),
     segments: hasSegmentsData(cityDir),
     themes: hasThemesData(cityDir),
-    election: exists(path.join(cityDir, "election.json")),
-    sessions: exists(path.join(cityDir, "sessions", "index.json")),
-    decisions: exists(path.join(cityDir, "decisions.json")),
-    schedule: exists(path.join(cityDir, "schedule.json")),
-    newsletter: exists(path.join(cityDir, "newsletter.json")),
-    plan: exists(path.join(cityDir, "comprehensive_plan.json")),
+    budgets: publicExists(path.join(cityDir, "budgets", "index.json")),
+    election: publicExists(path.join(cityDir, "election.json")),
+    sessions: publicExists(path.join(cityDir, "sessions", "index.json")),
+    decisions: publicExists(path.join(cityDir, "decisions.json")),
+    schedule: publicExists(path.join(cityDir, "schedule.json")),
+    newsletter: publicExists(path.join(cityDir, "newsletter.json")),
+    plan: publicExists(path.join(cityDir, "comprehensive_plan.json")),
   };
   const parserIssue = classifyParserIssue(entry, cityDir, files);
 
@@ -227,6 +242,7 @@ function summary(rows) {
     minutes: count("minutes"),
     segments: count("segments"),
     themes: count("themes"),
+    budgets: count("budgets"),
     election: count("election"),
     sessions: count("sessions"),
     decisions: count("decisions"),
@@ -291,6 +307,7 @@ function main() {
   lines.push(`- 議事録あり: ${sums.minutes}`);
   lines.push(`- segments あり: ${sums.segments}`);
   lines.push(`- テーマ別データあり: ${sums.themes}`);
+  lines.push(`- 予算書あり: ${sums.budgets}`);
   lines.push(`- 選挙結果あり: ${sums.election}`);
   lines.push(`- 会議録・速報あり: ${sums.sessions}`);
   lines.push(`- 議決結果あり: ${sums.decisions}`);
@@ -319,11 +336,11 @@ function main() {
   lines.push("");
   lines.push("## 一覧");
   lines.push("");
-  lines.push("| 地域 | 自治体 | slug | 議員 | 議事録 | segments | themes | 選挙 | 会議録 | 議決 | 行事 | だより | 総合計画 | 変換課題 | 議事録状況 | 次の一手 |");
-  lines.push("|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---|");
+  lines.push("| 地域 | 自治体 | slug | 議員 | 議事録 | segments | themes | 予算 | 選挙 | 会議録 | 議決 | 行事 | だより | 総合計画 | 変換課題 | 議事録状況 | 次の一手 |");
+  lines.push("|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---|");
   for (const row of rows) {
     lines.push(
-      `| ${row.region} | ${row.name} | ${row.slug} | ${mark(row.files.members)} | ${mark(row.files.minutes)} | ${mark(row.files.segments)} | ${mark(row.files.themes)} | ${mark(row.files.election)} | ${mark(row.files.sessions)} | ${mark(row.files.decisions)} | ${mark(row.files.schedule)} | ${mark(row.files.newsletter)} | ${mark(row.files.plan)} | ${row.parserIssue || "—"} | ${row.minutesStatus} | ${row.next} |`
+      `| ${row.region} | ${row.name} | ${row.slug} | ${mark(row.files.members)} | ${mark(row.files.minutes)} | ${mark(row.files.segments)} | ${mark(row.files.themes)} | ${mark(row.files.budgets)} | ${mark(row.files.election)} | ${mark(row.files.sessions)} | ${mark(row.files.decisions)} | ${mark(row.files.schedule)} | ${mark(row.files.newsletter)} | ${mark(row.files.plan)} | ${row.parserIssue || "—"} | ${row.minutesStatus} | ${row.next} |`
     );
   }
   lines.push("");
@@ -333,6 +350,7 @@ function main() {
   lines.push("- `議事録`: `data/{slug}/minutes/index.json` または `data/{slug}/index.json` がある");
   lines.push("- `segments`: `data/{slug}/segments/_index.json` があり、かつ空ではない");
   lines.push("- `themes`: `data/{slug}/members_activity.json` があり、かつ空ではない");
+  lines.push("- `予算`: `data/{slug}/budgets/index.json` がある");
   lines.push("- `会議録`: `data/{slug}/sessions/index.json` がある");
   lines.push("- `議事録状況`: `minutes_status` と実ファイルの両方を見て表示");
   lines.push("- 機能の公開可否は `site/scripts/build-city-capabilities.mjs` で生成する台帳に寄せる。`municipalities.json` に `features` は持たせない。");
