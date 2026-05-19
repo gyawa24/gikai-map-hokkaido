@@ -83,21 +83,6 @@ function exists(filePath: string): boolean {
   return fs.existsSync(filePath);
 }
 
-function hasMinutesData(cityDir: string): boolean {
-  return (
-    exists(path.join(cityDir, "minutes", "index.json")) ||
-    exists(path.join(cityDir, "index.json"))
-  );
-}
-
-function hasThemesData(cityDir: string): boolean {
-  return exists(path.join(cityDir, "members_activity.json"));
-}
-
-function hasBudgetData(cityDir: string): boolean {
-  return exists(path.join(cityDir, "budgets", "index.json"));
-}
-
 function readBudgetEnterpriseCoverage(cityDir: string, year: string | null): BudgetEnterpriseCoverage | null {
   if (!year) return null;
 
@@ -218,10 +203,10 @@ function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>)
   const dataRoot = path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
   const cityDir = path.join(/*turbopackIgnore: true*/ dataRoot, entry.slug);
   const capability = getCityCapability(entry.slug);
-  const hasMinutes = capability.capabilities.minutes || hasMinutesData(cityDir);
+  const hasMinutes = capability.capabilities.minutes;
   const source = sourceFor(entry, hasMinutes);
   const budgetSource = budgetSources.get(entry.slug) ?? null;
-  const budgetImported = hasBudgetData(cityDir);
+  const budgetImported = capability.capabilities.budgets;
   const budgetState = budgetImported
     ? "取込済み"
     : budgetSource?.status === "取得候補"
@@ -236,7 +221,7 @@ function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>)
     region: entry.region,
     hasMembers: capability.capabilities.members,
     hasMinutes,
-    hasTopicData: capability.capabilities.themes || hasThemesData(cityDir),
+    hasTopicData: capability.capabilities.themes,
     hasSessionsData: capability.capabilities.sessions,
     otherInfo: otherInfo(getAvailableCityCapabilityKeys(capability)),
     recordState: minutesState(entry, hasMinutes),
