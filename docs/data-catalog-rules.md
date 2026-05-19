@@ -40,6 +40,7 @@
 
 - 新しい自治体データを足したら、対象ファイルを `data/{slug}/` に置き、`node scripts/sync-site-data.mjs --slug <slug> --build-capabilities --verify` で公開用データへ同期する。
 - 予算OCRなど `site/data/` だけにある公開用オーバーレイは、同期スクリプトで削除しない。
+- `segments` は重いローカル調査用データなので、公開用コピーには通常同期しない。必要な時だけ `--include-segments` を付ける。
 - 導線を出すかどうかは `hasCityCapability(slug, key)` を使う。
 - 静的生成対象の市町村一覧は `site/src/lib/staticCityParams.ts` を使う。
 - capability が無いページは `generateStaticParams` に含めず、`dynamicParams = false` で直接アクセスも 404 にする。
@@ -47,3 +48,4 @@
 - `features.includes(...)` を新規に増やさない。
 - MCP や表示文言として「features」という名前を使う場合も、元データは capability 台帳にする。
 - 検証は `node scripts/verify-municipality.mjs <slug>` で行い、台帳と実ファイルの不一致を確認する。
+- 全体の健診は `node scripts/data-health.mjs` で行う。警告までCI的に止めたい場合は `--strict` を付ける。

@@ -123,6 +123,7 @@ AI に投げる単位は `1自治体` または `1導線` または `1自動化�
 - `data/` を正として必要ファイルが揃っている
 - `node scripts/sync-site-data.mjs --slug <slug> --build-capabilities --verify` で `site/data/` に同期されている
 - `data/municipalities.json` と `site/data/municipalities.json` が一致している
+- `node scripts/data-health.mjs` で全体の同期漏れ・site-only分類を確認している
 - `node scripts/verify-municipality.mjs <slug>` が通る
 - UI変更や導線変更を含むなら `site` を開いて確認している
 

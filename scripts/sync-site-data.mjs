@@ -17,7 +17,6 @@ const SYNC_ENTRIES = [
   "members.json",
   "members_activity.json",
   "minutes",
-  "segments",
   "index.json",
   "sessions",
   "decisions.json",
@@ -38,6 +37,7 @@ function printHelp() {
 
 Options:
   --build-capabilities   Regenerate site/data/_city-capabilities.json after sync
+  --include-segments      Also copy data/{slug}/segments for local-only workflows
   --verify               Run verify-municipality for synced slugs
   --dry-run              Print actions without writing files
   --help
@@ -46,6 +46,7 @@ Notes:
   - data/ is the collection source.
   - site/data/ is the public build copy.
   - This script copies known public data entries and does not delete site-only overlays.
+  - segments are not copied by default because they are large local research data.
 `);
 }
 
@@ -73,6 +74,8 @@ function parseArgs(argv) {
       options.allWithData = true;
     } else if (arg === "--build-capabilities") {
       options.buildCapabilities = true;
+    } else if (arg === "--include-segments") {
+      options.includeSegments = true;
     } else if (arg === "--verify") {
       options.verify = true;
     } else if (arg === "--dry-run") {
@@ -133,13 +136,18 @@ async function syncSlug(slug, dryRun) {
   }
 
   let copied = 0;
-  for (const entry of SYNC_ENTRIES) {
+  const entries = optionsForSync.includeSegments ? [...SYNC_ENTRIES, "segments"] : SYNC_ENTRIES;
+  for (const entry of entries) {
     const didCopy = await copyPath(path.join(sourceDir, entry), path.join(destDir, entry), dryRun);
     if (didCopy) copied += 1;
   }
   console.log(`synced ${slug}: ${copied} public entries`);
   return true;
 }
+
+const optionsForSync = {
+  includeSegments: false,
+};
 
 async function runNodeScript(scriptPath, args, dryRun) {
   const command = ["node", path.relative(REPO_ROOT, scriptPath), ...args].join(" ");
@@ -192,6 +200,8 @@ async function main() {
   if (!slugs.length) {
     throw new Error("Specify --slug, --all-active, or --all-with-data");
   }
+
+  optionsForSync.includeSegments = options.includeSegments;
 
   await syncMunicipalities(options.dryRun);
 

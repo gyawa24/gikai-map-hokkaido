@@ -57,11 +57,12 @@ node scripts/sync-site-data.mjs --slug sample --build-capabilities --verify
 このコマンドは:
 
 - `data/municipalities.json` を `site/data/municipalities.json` に同期
-- `members.json` / `minutes/` / `segments/` など既知の公開対象データを `site/data/{slug}/` にコピー
+- `members.json` / `minutes/` など既知の公開対象データを `site/data/{slug}/` にコピー
 - `site/data/_city-capabilities.json` を再生成
 - 指定した自治体の同期状態を検証
 
 予算OCRなど `site/data/` だけにある公開用データは削除しない。
+`segments` は重いローカル調査用データなので通常は同期しない。必要な時だけ `--include-segments` を付ける。
 
 ## 3. `segments` を生成して同期する
 
