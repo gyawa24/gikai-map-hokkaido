@@ -5,7 +5,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "550.json"
+    "file": "550.json",
+    "schedule_count": 8
   },
   {
     "council_id": 563,
@@ -13,7 +14,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "563.json"
+    "file": "563.json",
+    "schedule_count": 5
   },
   {
     "council_id": 574,
@@ -21,7 +23,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "574.json"
+    "file": "574.json",
+    "schedule_count": 7
   },
   {
     "council_id": 588,
@@ -29,7 +32,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "588.json"
+    "file": "588.json",
+    "schedule_count": 5
   },
   {
     "council_id": 544,
@@ -37,7 +41,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "544.json"
+    "file": "544.json",
+    "schedule_count": 1
   },
   {
     "council_id": 562,
@@ -45,7 +50,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "562.json"
+    "file": "562.json",
+    "schedule_count": 2
   },
   {
     "council_id": 499,
@@ -53,7 +59,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "499.json"
+    "file": "499.json",
+    "schedule_count": 8
   },
   {
     "council_id": 511,
@@ -61,7 +68,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "511.json"
+    "file": "511.json",
+    "schedule_count": 4
   },
   {
     "council_id": 522,
@@ -69,7 +77,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "522.json"
+    "file": "522.json",
+    "schedule_count": 7
   },
   {
     "council_id": 534,
@@ -77,7 +86,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "534.json"
+    "file": "534.json",
+    "schedule_count": 5
   },
   {
     "council_id": 493,
@@ -85,7 +95,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "493.json"
+    "file": "493.json",
+    "schedule_count": 1
   },
   {
     "council_id": 443,
