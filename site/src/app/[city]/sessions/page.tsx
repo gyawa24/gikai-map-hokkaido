@@ -2,9 +2,17 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getSessionSummaries } from "@/lib/cityData";
+import { hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
 import SessionsClient from "@/components/SessionsClient";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getCapabilityCityStaticParams("sessions");
+}
 
 export async function generateMetadata({
   params,
@@ -28,7 +36,7 @@ export default async function CitySessionsPage({
 }) {
   const { city } = await params;
   const municipality = getMunicipality(city);
-  if (!municipality?.features.includes("sessions")) notFound();
+  if (!municipality || !hasCityCapability(city, "sessions")) notFound();
 
   const sessions = getSessionSummaries(city);
 

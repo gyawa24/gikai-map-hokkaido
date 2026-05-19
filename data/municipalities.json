@@ -8,7 +8,6 @@
     "features": [
       "members",
       "minutes",
-      "sessions",
       "themes"
     ],
     "level": "municipality",
@@ -775,7 +774,6 @@
     "features": [
       "members",
       "minutes",
-      "sessions",
       "themes"
     ],
     "active": true,

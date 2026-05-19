@@ -50,6 +50,7 @@ export function registerTools(server, options) {
   const { dataDir, restrictedIndexPath, segmentsDir } = options;
   const SEARCH_INDEX_PATH = path.join(dataDir, "_search-index.json");
   const MUNICIPALITIES_PATH = path.join(dataDir, "municipalities.json");
+  const CITY_CAPABILITIES_PATH = path.join(dataDir, "_city-capabilities.json");
 
   let _municipalities = null;
   function getMunicipalities() {
@@ -62,6 +63,24 @@ export function registerTools(server, options) {
   }
   function getActiveMunicipality(slug) {
     return getMunicipalities().find((m) => m.slug === slug && m.active) ?? null;
+  }
+  let _cityCapabilities = null;
+  function getCityCapabilities() {
+    if (_cityCapabilities) return _cityCapabilities;
+    try {
+      _cityCapabilities = JSON.parse(fs.readFileSync(CITY_CAPABILITIES_PATH, "utf-8")).cities ?? {};
+    } catch {
+      _cityCapabilities = {};
+    }
+    return _cityCapabilities;
+  }
+  function getCityFeatures(slug, fallbackFeatures = []) {
+    return getCityCapabilities()[slug]?.features ?? fallbackFeatures ?? [];
+  }
+  function hasCityCapability(slug, capability, fallbackFeatures = []) {
+    const city = getCityCapabilities()[slug];
+    if (city) return Boolean(city.capabilities?.[capability]);
+    return fallbackFeatures.includes(capability);
   }
   function isSafeFileToken(value) {
     return typeof value === "string" && /^[A-Za-z0-9._-]+$/.test(value);
@@ -121,13 +140,13 @@ export function registerTools(server, options) {
       if (active_only) list = list.filter((m) => m.active);
       if (region) list = list.filter((m) => m.region === region);
       if (has_feature)
-        list = list.filter((m) => (m.features ?? []).includes(has_feature));
+        list = list.filter((m) => hasCityCapability(m.slug, has_feature, m.features ?? []));
       const result = list.map((m) => ({
         slug: m.slug,
         name: m.name,
         council_name: m.council_name,
         region: m.region,
-        features: m.features ?? [],
+        features: getCityFeatures(m.slug, m.features ?? []),
         system: m.system ?? null,
         level: m.level ?? null,
         url: `${PUBLIC_BASE}/${m.slug}`,
@@ -514,11 +533,7 @@ export function registerTools(server, options) {
       return getMunicipalities()
         .filter((m) => m.active)
         .filter((m) => !cityFilter || cityFilter.has(m.slug))
-        .filter(
-          (m) =>
-            (m.features ?? []).includes("budgets") ||
-            fs.existsSync(path.join(/*turbopackIgnore: true*/ dataDir, m.slug, "budgets", "index.json"))
-        );
+        .filter((m) => hasCityCapability(m.slug, "budgets", m.features ?? []));
     }
     function readBudgetPageText(slug, year, pageFile) {
       if (typeof pageFile !== "string") return "";

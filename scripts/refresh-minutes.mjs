@@ -32,7 +32,7 @@ Options:
   --help
 
 Selection:
-  --all-published            Run only municipalities whose features already include minutes
+  --all-published            Run municipalities with published minutes data files and a known runner
   --all-supported            Run every municipality that has a known scraper path/config
 
 Examples:
@@ -81,6 +81,14 @@ function parseArgs(argv) {
       options.dryRun = true;
       continue;
     }
+    if (arg === "--all-published") {
+      options["all-published"] = true;
+      continue;
+    }
+    if (arg === "--all-supported") {
+      options["all-supported"] = true;
+      continue;
+    }
     if (!arg.startsWith("--")) {
       throw new Error(`Unknown argument: ${arg}`);
     }
@@ -107,6 +115,13 @@ async function pathExists(targetPath) {
   } catch {
     return false;
   }
+}
+
+async function hasPublishedMinutesData(slug) {
+  return (
+    (await pathExists(path.join(ROOT_DATA_DIR, slug, "minutes", "index.json"))) ||
+    (await pathExists(path.join(ROOT_DATA_DIR, slug, "index.json")))
+  );
 }
 
 async function loadPdfConfigSlugs() {
@@ -215,9 +230,16 @@ async function determineSlugs(options, municipalities, pdfConfigSlugs) {
   if (options.slugs) return csvToList(options.slugs);
 
   if (options["all-published"]) {
-    return municipalities
-      .filter((item) => item.features?.includes("minutes"))
-      .map((item) => item.slug);
+    const slugs = [];
+    for (const item of municipalities) {
+      if (
+        (await hasPublishedMinutesData(item.slug)) &&
+        (await resolveRunner(item.slug, municipalitiesMap, pdfConfigSlugs))
+      ) {
+        slugs.push(item.slug);
+      }
+    }
+    return slugs;
   }
 
   if (options["all-supported"]) {

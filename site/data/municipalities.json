@@ -9,7 +9,6 @@
       "members",
       "minutes",
       "budgets",
-      "sessions",
       "themes"
     ],
     "level": "municipality",
@@ -790,7 +789,6 @@
       "members",
       "minutes",
       "budgets",
-      "sessions",
       "themes"
     ],
     "active": true,

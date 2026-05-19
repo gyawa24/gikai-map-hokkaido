@@ -8,9 +8,17 @@ import CitySummaryCards from "@/components/CitySummaryCards";
 import CityDataStatus from "@/components/CityDataStatus";
 import JsonLd from "@/components/JsonLd";
 import { getMinutesSummary } from "@/lib/cityStats";
+import { getCityCapability, hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
+import { getActiveCityStaticParams } from "@/lib/staticCityParams";
 import { buildBreadcrumbList } from "@/lib/structuredData";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getActiveCityStaticParams();
+}
 
 export async function generateMetadata({
   params,
@@ -21,7 +29,7 @@ export async function generateMetadata({
   const municipality = getMunicipality(city);
   const name = municipality?.council_name ?? "市町村議会";
   const cityName = municipality?.name ?? city;
-  const featureLabels = municipality?.features.includes("minutes")
+  const featureLabels = hasCityCapability(city, "minutes")
     ? "議員一覧、議事録"
     : "議員一覧";
   return buildPageMetadata({
@@ -120,10 +128,10 @@ function CityExploreLinks({
   if (links.length === 0) return null;
 
   return (
-    <section className="page-shell mb-5 max-w-5xl">
-      <div className="mb-3">
-        <h2 className="theme-section-title text-xl sm:text-2xl">この市町村で探す</h2>
-        <p className="mt-1 text-sm leading-relaxed text-[#4A5568]">
+    <section className="page-shell mb-4 max-w-5xl sm:mb-5">
+      <div className="mb-2 sm:mb-3">
+        <h2 className="theme-section-title text-lg sm:text-2xl">この市町村で探す</h2>
+        <p className="mt-1 hidden text-sm leading-relaxed text-[#4A5568] sm:block">
           まずは入口を選んでください。議員、議事録、テーマ、市町村内検索をここにまとめました。
         </p>
       </div>
@@ -132,14 +140,14 @@ function CityExploreLinks({
           <Link
             key={link.href}
             href={link.href}
-            className="theme-card flex min-h-[8.5rem] flex-col justify-between px-4 py-4 transition-all duration-150 hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+            className="flex min-h-12 items-center gap-3 rounded-lg border border-[#CBD5E0] bg-white px-3 py-3 transition-colors hover:border-[#9FB1D2] hover:bg-[#F8FBFF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:min-h-[8rem] sm:flex-col sm:items-start sm:justify-between sm:px-4 sm:py-4"
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#D7E1F0] bg-[#F4F8FF] text-[#1B3A6B]">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#D7E1F0] bg-[#F4F8FF] text-[#1B3A6B] sm:h-9 sm:w-9">
               {link.icon}
             </span>
-            <span>
+            <span className="min-w-0">
               <span className="block text-base font-black text-[#1B3A6B]">{link.label}</span>
-              <span className="mt-1 block text-xs leading-relaxed text-[#718096]">{link.description}</span>
+              <span className="mt-1 hidden text-xs leading-relaxed text-[#718096] sm:block">{link.description}</span>
             </span>
           </Link>
         ))}
@@ -159,6 +167,7 @@ export default async function CityMembersPage({
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
   const { count: minutesCount, latestYear } = getMinutesSummary(city);
   const municipality = getMunicipality(city);
+  const capability = getCityCapability(city);
   const minutesUnavailable = municipality?.minutes_status === "unavailable";
   const minutesUnavailableNote = municipality?.minutes_status_note;
   const minutesVerifiedAt = municipality?.minutes_verified_at;
@@ -200,8 +209,8 @@ export default async function CityMembersPage({
           city={city}
           cityName={cityName}
           hasMembers={false}
-          hasMinutes={Boolean(minutesCount && minutesCount > 0)}
-          hasThemes={hasThemes}
+          hasMinutes={capability.capabilities.minutes}
+          hasThemes={capability.capabilities.themes || hasThemes}
         />
         <CityDataStatus municipality={municipality} />
         <div className="page-shell max-w-6xl">
@@ -230,8 +239,8 @@ export default async function CityMembersPage({
         city={city}
         cityName={cityName}
         hasMembers={members.length > 0}
-        hasMinutes={Boolean(minutesCount && minutesCount > 0)}
-        hasThemes={hasThemes}
+        hasMinutes={capability.capabilities.minutes}
+        hasThemes={capability.capabilities.themes || hasThemes}
       />
       <CityDataStatus municipality={municipality} />
       {minutesUnavailable && (

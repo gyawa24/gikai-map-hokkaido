@@ -3,8 +3,16 @@ import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getCapabilityCityStaticParams("plan");
+}
 
 type Policy = { id: number; title: string };
 type BasicGoal = { id: number; title: string; policies: Policy[] };
@@ -74,7 +82,7 @@ export default async function CityPlanPage({
 }) {
   const { city } = await params;
   const municipality = getMunicipality(city);
-  if (!municipality?.features.includes("plan")) notFound();
+  if (!municipality || !hasCityCapability(city, "plan")) notFound();
 
   const plan = getPlan(city);
   if (!plan) notFound();

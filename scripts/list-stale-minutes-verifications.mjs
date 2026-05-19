@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, "..");
+const DATA_DIR = path.join(REPO_ROOT, "data");
 const MUNICIPALITIES_PATH = path.join(REPO_ROOT, "data", "municipalities.json");
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -32,7 +33,7 @@ Options:
   --help
 
 Rules:
-  - minutes_status=unavailable かつ minutes feature が無い自治体だけを見る
+  - minutes_status=unavailable かつ議事録データが未公開の自治体だけを見る
   - minutes_verified_at が無いものは即再確認
   - 会議録PDFあり/取込未対応/掲載予定/OCR等の候補は30日ごと
   - Web未公開や窓口閲覧と明記されたものは180日ごと
@@ -109,6 +110,13 @@ function escapeCell(value) {
   return String(value ?? "—").replace(/\|/g, "\\|").replace(/\n/g, " ");
 }
 
+function hasPublishedMinutesData(slug) {
+  return (
+    fs.existsSync(path.join(DATA_DIR, slug, "minutes", "index.json")) ||
+    fs.existsSync(path.join(DATA_DIR, slug, "index.json"))
+  );
+}
+
 function main() {
   const options = parseArgs(process.argv.slice(2));
   if (options.help) {
@@ -127,7 +135,7 @@ function main() {
 
   const rows = municipalities
     .filter((entry) => entry.minutes_status === "unavailable")
-    .filter((entry) => !entry.features?.includes("minutes"))
+    .filter((entry) => !hasPublishedMinutesData(entry.slug))
     .map((entry) => {
       const cadence = classify(entry);
       const verifiedAt = parseDate(entry.minutes_verified_at, `${entry.slug}.minutes_verified_at`);

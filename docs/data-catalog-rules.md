@@ -1,0 +1,43 @@
+# データ台帳と読み取りルール
+
+地方議会ドットコムでは、自治体ごとの公開機能を `municipalities.json` の手書き `features` だけで判定しない。
+サイトで表示する導線は、原則として `site/data/{slug}/` 配下の実ファイルから生成する台帳を読む。
+
+## 単一の入口
+
+- 元データ: `site/data/{slug}/`
+- 生成台帳: `site/data/_city-capabilities.json`
+- 生成スクリプト: `site/scripts/build-city-capabilities.mjs`
+- 読み取りAPI: `site/src/lib/cityCapabilities.ts`
+
+`_city-capabilities.json` はビルド生成物なので直接編集しない。
+ローカル起動時とビルド前に自動生成する。
+
+## 機能判定
+
+| capability | 判定ファイル |
+|---|---|
+| `members` | `members.json` |
+| `minutes` | `minutes/index.json` または `index.json` |
+| `sessions` | `sessions/index.json` |
+| `themes` | `members_activity.json` |
+| `budgets` | `budgets/index.json` |
+| `decisions` | `decisions.json` |
+| `schedule` | `schedule.json` |
+| `newsletter` | `newsletter.json` |
+| `election` | `election.json` |
+| `plan` | `comprehensive_plan.json` |
+| `segments` | `segments/_index.json` |
+
+画面、サイトマップ、MCP の `list_municipalities` はこの台帳を優先して読む。
+`municipalities.json` は自治体の基本メタデータ、スクレイピング設定、未公開確認状況を持つ。
+
+## 運用ルール
+
+- 新しい自治体データを足したら、対象ファイルを `site/data/{slug}/` に置き、`npm run build-city-capabilities` で台帳を更新する。
+- 導線を出すかどうかは `hasCityCapability(slug, key)` を使う。
+- 静的生成対象の市町村一覧は `site/src/lib/staticCityParams.ts` を使う。
+- capability が無いページは `generateStaticParams` に含めず、`dynamicParams = false` で直接アクセスも 404 にする。
+- `features.includes(...)` を新規に増やさない。
+- 例外的に `municipalities.json` の `features` を参照する場合は、旧データ移行や差分調査のためであることを明示する。
+- 検証は `node scripts/verify-municipality.mjs <slug>` で行い、台帳と実ファイルの不一致を確認する。

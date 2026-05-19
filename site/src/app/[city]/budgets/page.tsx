@@ -1,10 +1,19 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import { getBudgetDocuments } from "@/lib/budgets";
+import { hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
 import { buildBreadcrumbList } from "@/lib/structuredData";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getCapabilityCityStaticParams("budgets");
+}
 
 export async function generateMetadata({
   params,
@@ -13,6 +22,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { city } = await params;
   const municipality = getMunicipality(city);
+  if (!municipality || !hasCityCapability(city, "budgets")) notFound();
+
   const cityName = municipality?.name ?? city;
   return buildPageMetadata({
     title: `${cityName}の予算書`,

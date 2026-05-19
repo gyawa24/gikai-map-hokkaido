@@ -1,11 +1,5 @@
 import { notFound } from "next/navigation";
-import { getMunicipalities, getMunicipality } from "@/lib/municipalities";
-
-export async function generateStaticParams() {
-  return getMunicipalities()
-    .filter((m) => m.active)
-    .map((m) => ({ city: m.slug }));
-}
+import { getMunicipality } from "@/lib/municipalities";
 
 export default async function CityLayout({
   children,

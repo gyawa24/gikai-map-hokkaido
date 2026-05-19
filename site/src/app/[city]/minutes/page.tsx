@@ -1,13 +1,22 @@
 import fs from "fs";
 import path from "path";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import type { MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesIndexClient from "@/components/MinutesIndexClient";
+import { hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
+import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
 import { buildBreadcrumbList } from "@/lib/structuredData";
 import { hasStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getCapabilityCityStaticParams("minutes");
+}
 
 export async function generateMetadata({
   params,
@@ -16,6 +25,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { city } = await params;
   const municipality = getMunicipality(city);
+  if (!municipality || !hasCityCapability(city, "minutes")) notFound();
+
   const cityName = municipality?.name ?? city;
   const title = `議事録 - ${cityName}`;
   const description = `${cityName}議会の公式議事録一覧です。本会議や委員会の会議録を年度別・テーマ別に探せます。`;

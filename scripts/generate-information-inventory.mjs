@@ -143,10 +143,6 @@ function collectOtherInfo(files) {
   return labels.length > 0 ? labels.join("・") : "—";
 }
 
-function hasFeature(entry, feature) {
-  return Array.isArray(entry.features) && entry.features.includes(feature);
-}
-
 function minutesState(entry, files) {
   if (files.minutes) return "掲載中";
   if (OCR_WAIT.has(entry.slug)) return "OCR待ち";
@@ -193,7 +189,6 @@ function buildRow(entry) {
     segments: hasSegmentsData(cityDir),
     themes: hasThemesData(cityDir),
     sessionsData: exists(path.join(cityDir, "sessions", "index.json")),
-    sessionsFeature: hasFeature(entry, "sessions"),
     election: exists(path.join(cityDir, "election.json")),
     decisions: exists(path.join(cityDir, "decisions.json")),
     schedule: exists(path.join(cityDir, "schedule.json")),
@@ -255,10 +250,8 @@ function main() {
   lines.push(`- 議事録: ${count(rows, (row) => row.files.minutes)}`);
   lines.push(`- segments: ${count(rows, (row) => row.files.segments)}`);
   lines.push(`- themes: ${count(rows, (row) => row.files.themes)}`);
-  lines.push(`- 速報系 sessions feature: ${count(rows, (row) => row.files.sessionsFeature)}`);
   lines.push(`- 速報系 sessions 実データ: ${count(rows, (row) => row.files.sessionsData)}`);
-  lines.push(`- 速報系 sessions metadata/data 要整理: ${count(rows, (row) => row.files.sessionsFeature !== row.files.sessionsData)}`);
-  lines.push(`- その他featureあり: ${count(rows, (row) => row.otherInfo !== "—")}`);
+  lines.push(`- その他データあり: ${count(rows, (row) => row.otherInfo !== "—")}`);
   lines.push(`- 議事録未掲載: ${count(rows, (row) => !row.files.minutes)}`);
   lines.push(`- 再確認待ち: ${count(rows, (row) => row.minutesState === "再確認待ち")}`);
   lines.push(`- OCR待ち: ${count(rows, (row) => row.minutesState === "OCR待ち")}`);
@@ -276,11 +269,11 @@ function main() {
   lines.push("");
   lines.push("## 市町村別テーブル");
   lines.push("");
-  lines.push("| 地域 | 自治体 | slug | 議員 | 議事録 | themes | 速報feature | 速報data | その他 | 議事録状態 | 公開/取得方法 | スクレイピング方針 | 確認日 | 次の扱い |");
-  lines.push("|---|---|---|---:|---:|---:|---:|---:|---|---|---|---|---|---|");
+  lines.push("| 地域 | 自治体 | slug | 議員 | 議事録 | themes | 速報data | その他 | 議事録状態 | 公開/取得方法 | スクレイピング方針 | 確認日 | 次の扱い |");
+  lines.push("|---|---|---|---:|---:|---:|---:|---|---|---|---|---|---|");
   for (const row of rows) {
     lines.push(
-      `| ${escapeCell(row.region)} | ${escapeCell(row.name)} | ${escapeCell(row.slug)} | ${mark(row.files.members)} | ${mark(row.files.minutes)} | ${mark(row.files.themes)} | ${mark(row.files.sessionsFeature)} | ${mark(row.files.sessionsData)} | ${escapeCell(row.otherInfo)} | ${escapeCell(row.minutesState)} | ${escapeCell(row.method)} | ${escapeCell(row.scrapePolicy)} | ${escapeCell(row.verifiedAt)} | ${escapeCell(row.nextAction)} |`
+      `| ${escapeCell(row.region)} | ${escapeCell(row.name)} | ${escapeCell(row.slug)} | ${mark(row.files.members)} | ${mark(row.files.minutes)} | ${mark(row.files.themes)} | ${mark(row.files.sessionsData)} | ${escapeCell(row.otherInfo)} | ${escapeCell(row.minutesState)} | ${escapeCell(row.method)} | ${escapeCell(row.scrapePolicy)} | ${escapeCell(row.verifiedAt)} | ${escapeCell(row.nextAction)} |`
     );
   }
   lines.push("");

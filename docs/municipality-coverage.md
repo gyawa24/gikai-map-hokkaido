@@ -1,6 +1,6 @@
 # 市町村機能充足一覧
 
-生成日: 2026-05-06
+生成日: 2026-05-19
 
 ## サマリー
 
@@ -23,7 +23,7 @@
 - 議事録と segments はあるがテーマ別未整備: 0
 - 議事録はあるが raw 変換改善が必要: 0
 - 議事録はあるが議員名簿が未整備: 0
-- テーマ別データはあるが feature 未反映: 0
+- テーマ別データ整備済み: 126
 
 ## 変換課題の内訳
 
@@ -222,3 +222,4 @@
 - `themes`: `data/{slug}/members_activity.json` があり、かつ空ではない
 - `会議録`: `data/{slug}/sessions/index.json` がある
 - `議事録状況`: `minutes_status` と実ファイルの両方を見て表示
+- 機能の公開可否は `site/scripts/build-city-capabilities.mjs` で生成する台帳に寄せる。`municipalities.json` の旧 `features` は判定に使わない。

@@ -6,6 +6,7 @@ import { getNews, categoryClass } from "@/lib/news";
 import { getLatestArticles, articleCategoryClass, formatArticleDate } from "@/lib/articles";
 import { getSiteStats } from "@/lib/siteStats";
 import { getAllTags } from "@/lib/topics";
+import { getCityCapabilities, getCityCapability } from "@/lib/cityCapabilities";
 import { buildPageMetadata } from "@/lib/metadata";
 import HomeMunicipalityExplorer from "@/components/HomeMunicipalityExplorer";
 import type { Member } from "@/types/member";
@@ -90,23 +91,27 @@ export default async function HomePage() {
   const latestArticles = await getLatestArticles(2);
   const stats = getSiteStats();
   const topTags = getAllTags().slice(0, 12);
+  const capabilitiesBySlug = getCityCapabilities();
   const regionOrder = ["石狩", "空知", "後志", "胆振", "日高", "渡島", "檜山", "上川", "留萌", "宗谷", "オホーツク", "十勝", "釧路", "根室"];
 
-  const cities: CitySummary[] = municipalities.map((m) => ({
-    id: m.slug,
-    name: m.council_name,
-    furigana: m.furigana,
-    href: `/${m.slug}`,
-    region: m.region,
-    hasSession: m.features.includes("sessions"),
-    hasMinutes: m.features.includes("minutes"),
-    hasBudgets: m.features.includes("budgets"),
-    hasThemes: m.features.includes("themes"),
-    memberCount: getMemberCount(m.slug),
-    latestSession: getLatestSession(m.slug),
-    decisionCount: getDecisionCount(m.slug),
-    minutesCount: getMinutesCount(m.slug),
-  }));
+  const cities: CitySummary[] = municipalities.map((m) => {
+    const capability = capabilitiesBySlug[m.slug] ?? getCityCapability(m.slug);
+    return {
+      id: m.slug,
+      name: m.council_name,
+      furigana: m.furigana,
+      href: `/${m.slug}`,
+      region: m.region,
+      hasSession: capability.capabilities.sessions,
+      hasMinutes: capability.capabilities.minutes,
+      hasBudgets: capability.capabilities.budgets,
+      hasThemes: capability.capabilities.themes,
+      memberCount: getMemberCount(m.slug),
+      latestSession: getLatestSession(m.slug),
+      decisionCount: getDecisionCount(m.slug),
+      minutesCount: getMinutesCount(m.slug),
+    };
+  });
 
   const grouped = new Map<string, CitySummary[]>();
   for (const city of cities) {
@@ -127,79 +132,99 @@ export default async function HomePage() {
     }));
 
   return (
-    <div className="page-shell min-w-0 max-w-6xl space-y-6">
-      <section className="theme-panel mx-auto max-w-5xl rounded-[30px] px-4 py-5 sm:px-6 sm:py-6">
-        <h1 className="text-[2.1rem] font-black leading-[1.1] tracking-tight text-[#111827] md:text-[3.1rem] xl:text-[4rem]">
+    <div className="page-shell min-w-0 max-w-6xl space-y-4 sm:space-y-6">
+      <section className="theme-panel mx-auto max-w-5xl rounded-[22px] px-4 py-5 sm:rounded-[30px] sm:px-6 sm:py-6">
+        <h1 className="text-[1.95rem] font-black leading-[1.12] tracking-tight text-[#111827] md:text-[3.1rem] xl:text-[4rem]">
           地方議会の「なか」を、
           <br />
           わかりやすく。
         </h1>
-        <p className="mt-4 max-w-4xl text-[15px] leading-relaxed text-[#475569] md:text-[17px] xl:text-lg">
-          まずは北海道から。市町村議会の議員・議事録・議決を横断的にまとめて、
-          どんな議論が行われているか、だれでもかんたんに追えるようにしています。
+        <p className="mt-3 max-w-4xl text-[15px] leading-relaxed text-[#475569] sm:mt-4 md:text-[17px] xl:text-lg">
+          まずは北海道から。市町村議会の議員・議事録・議決を横断的にまとめています。
+          <span className="hidden sm:inline">どんな議論が行われているか、だれでもかんたんに追えるようにしています。</span>
         </p>
 
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Link href="/search" className="theme-button theme-button-accent px-4 py-2 text-sm">
-            まとめて検索
-          </Link>
-          <a href="#municipalities" className="theme-button px-4 py-2 text-sm">
-            市町村から見る
-          </a>
-          <Link href="/sources" className="theme-button px-4 py-2 text-sm">
-            掲載情報と出典
-          </Link>
-          <Link href="/articles" className="theme-button px-4 py-2 text-sm">
-            読みもの
-          </Link>
-        </div>
+        <form action="/search" className="mt-5 max-w-3xl">
+          <label htmlFor="home-search" className="sr-only">
+            議員名、議題、キーワードで検索
+          </label>
+          <div className="flex flex-col gap-2 rounded-[20px] border-2 border-[#CBD5E0] bg-white p-2 sm:flex-row">
+            <input
+              id="home-search"
+              name="q"
+              type="search"
+              placeholder="除雪、給食無償化、ラピダス、議員名で検索"
+              className="min-h-12 flex-1 rounded-2xl border-0 bg-[#F8FAFC] px-4 text-base font-bold text-[#111827] outline-none placeholder:text-[#718096] focus:bg-white focus:ring-2 focus:ring-[#2A5298]"
+            />
+            <button type="submit" className="theme-button theme-button-accent min-h-12 px-5 text-base">
+              検索する
+            </button>
+          </div>
+        </form>
       </section>
 
       <section className="mx-auto max-w-5xl">
-        <div className="mb-3">
-          <h2 className="text-xl font-black text-[#111827]">何から探しますか？</h2>
-          <p className="mt-1 text-base leading-relaxed text-[#4A5568]">
-            迷ったときは検索から。目的が決まっている場合は、入口を選んで進めます。
+        <div className="mb-2 sm:mb-3">
+          <h2 className="text-lg font-black text-[#111827] sm:text-xl">検索以外の入口</h2>
+          <p className="mt-1 hidden text-base leading-relaxed text-[#4A5568] sm:block">
+            自治体・テーマ・予算・読みものは、一覧からたどれます。
           </p>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-2 sm:gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { label: "テーマから探す", href: "/topics", body: "福祉、予算、教育などから議事録へ" },
-            { label: "市町村から探す", href: "#municipalities", body: "自治体ごとの議員・議事録を見る" },
-            { label: "議員から探す", href: "/search?q=議員&tab=members", body: "氏名、会派、委員会で検索" },
-            { label: "読みものから知る", href: "/articles", body: "質問の背景や比較記事を読む" },
-            { label: "予算から探す", href: "/sources", body: "予算書の掲載状況と原本へ" },
+            { label: "市町村から見る", href: "#municipalities", body: "自治体ごとの議員・議事録・予算へ" },
+            { label: "テーマから見る", href: "/topics", body: "福祉、予算、教育などの議論へ" },
+            { label: "予算書を見る", href: "/sources", body: "掲載状況と原本確認の入口へ" },
+            { label: "読みもの", href: "/articles", body: "質問の背景や比較記事を読む" },
           ].map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="motion-surface rounded-lg border border-[#CBD5E0] bg-white px-4 py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+              className="motion-surface flex min-h-12 items-center rounded-lg border border-[#CBD5E0] bg-white px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] sm:block sm:min-h-0 sm:py-4"
             >
               <h3 className="text-base font-black text-[#1B3A6B]">{item.label}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">{item.body}</p>
+              <p className="mt-2 hidden text-sm leading-relaxed text-[#4A5568] sm:block">{item.body}</p>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-5xl grid-cols-2 gap-3 xl:grid-cols-4">
-        {[
-          { label: "対象自治体", value: stats.municipalityCount.toLocaleString(), unit: "", tone: "border-[#DCE6F5]" },
-          { label: "議員", value: stats.memberCount.toLocaleString(), unit: "名", tone: "border-[#F3E3AF]" },
-          { label: "会議録", value: stats.minutesCount.toLocaleString(), unit: "件", tone: "border-[#D8F0E4]" },
-          { label: "議題", value: stats.agendaCount.toLocaleString(), unit: "件", tone: "border-[#D7E9FB]" },
-        ].map((item) => (
-          <div
-            key={item.label}
-            className={`rounded-[18px] border-2 bg-white px-4 py-3 shadow-[0_6px_16px_rgba(27,58,107,0.05)] sm:px-5 ${item.tone}`}
-          >
-            <p className="text-[12px] font-bold tracking-[0.02em] text-[#667085] sm:text-[13px]">{item.label}</p>
-            <p className="mt-1.5 flex items-end gap-1 text-[1.95rem] font-black leading-none text-[#111827] sm:text-[2.15rem]">
-              {item.value}
-              {item.unit && <span className="pb-1 text-base font-bold text-[#667085] sm:text-lg">{item.unit}</span>}
-            </p>
-          </div>
-        ))}
+      <section className="mx-auto max-w-5xl">
+        <dl className="grid grid-cols-4 divide-x divide-[#E2E8F0] rounded-lg border border-[#CBD5E0] bg-white px-2 py-2 text-center sm:hidden">
+          {[
+            { label: "自治体", value: stats.municipalityCount.toLocaleString(), unit: "" },
+            { label: "議員", value: stats.memberCount.toLocaleString(), unit: "名" },
+            { label: "会議録", value: stats.minutesCount.toLocaleString(), unit: "件" },
+            { label: "議題", value: stats.agendaCount.toLocaleString(), unit: "件" },
+          ].map((item) => (
+            <div key={item.label} className="px-1">
+              <dt className="text-[10px] font-medium text-[#718096]">{item.label}</dt>
+              <dd className="mt-0.5 text-sm font-black leading-tight text-[#1B3A6B]">
+                {item.value}
+                {item.unit && <span className="ml-0.5 text-[10px] text-[#718096]">{item.unit}</span>}
+              </dd>
+            </div>
+          ))}
+        </dl>
+        <div className="hidden grid-cols-2 gap-3 sm:grid xl:grid-cols-4">
+          {[
+            { label: "対象自治体", value: stats.municipalityCount.toLocaleString(), unit: "", tone: "border-[#DCE6F5]" },
+            { label: "議員", value: stats.memberCount.toLocaleString(), unit: "名", tone: "border-[#F3E3AF]" },
+            { label: "会議録", value: stats.minutesCount.toLocaleString(), unit: "件", tone: "border-[#D8F0E4]" },
+            { label: "議題", value: stats.agendaCount.toLocaleString(), unit: "件", tone: "border-[#D7E9FB]" },
+          ].map((item) => (
+            <div
+              key={item.label}
+              className={`rounded-[18px] border-2 bg-white px-4 py-3 shadow-[0_6px_16px_rgba(27,58,107,0.05)] sm:px-5 ${item.tone}`}
+            >
+              <p className="text-[12px] font-bold tracking-[0.02em] text-[#667085] sm:text-[13px]">{item.label}</p>
+              <p className="mt-1.5 flex items-end gap-1 text-[1.95rem] font-black leading-none text-[#111827] sm:text-[2.15rem]">
+                {item.value}
+                {item.unit && <span className="pb-1 text-base font-bold text-[#667085] sm:text-lg">{item.unit}</span>}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {latestNews.length > 0 && (
@@ -231,11 +256,11 @@ export default async function HomePage() {
       )}
 
       {latestArticles.length > 0 && (
-        <section className="mx-auto max-w-[68rem] border-t border-[#D8DEE8] pt-6">
+        <section className="mx-auto max-w-[68rem] border-t border-[#D8DEE8] pt-4 sm:pt-6">
           <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
             <div>
-              <h2 className="text-[1.7rem] font-black leading-tight text-[#111827] sm:text-[2rem]">読みもの</h2>
-              <p className="mt-1 text-sm text-[#64748B]">
+              <h2 className="text-xl font-black leading-tight text-[#111827] sm:text-[2rem]">読みもの</h2>
+              <p className="mt-1 hidden text-sm text-[#64748B] sm:block">
                 議会質問の背景や、質問した議員へのインタビューを読む入口です。
               </p>
             </div>
@@ -249,7 +274,7 @@ export default async function HomePage() {
               <Link
                 key={article.slug}
                 href={`/articles/${article.slug}`}
-                className="motion-surface rounded-[22px] border-2 border-[#D8DEE8] bg-white px-4 py-4 shadow-[0_6px_14px_rgba(27,58,107,0.06)]"
+                className="motion-surface rounded-lg border border-[#D8DEE8] bg-white px-4 py-3 sm:rounded-[22px] sm:border-2 sm:py-4 sm:shadow-[0_6px_14px_rgba(27,58,107,0.06)]"
               >
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <span className={`rounded-full border px-2 py-0.5 text-xs font-semibold ${articleCategoryClass(article.category)}`}>
@@ -259,8 +284,8 @@ export default async function HomePage() {
                     {formatArticleDate(article.date)}
                   </time>
                 </div>
-                <h3 className="text-lg font-black leading-snug text-[#111827]">{article.title}</h3>
-                <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-[#475569]">{article.summary}</p>
+                <h3 className="text-base font-black leading-snug text-[#111827] sm:text-lg">{article.title}</h3>
+                <p className="mt-2 hidden line-clamp-3 text-sm leading-relaxed text-[#475569] sm:block">{article.summary}</p>
               </Link>
             ))}
           </div>
@@ -268,11 +293,11 @@ export default async function HomePage() {
       )}
 
       {topTags.length > 0 && (
-        <section className="mx-auto max-w-[68rem] border-t border-[#D8DEE8] pt-6">
+        <section className="mx-auto max-w-[68rem] border-t border-[#D8DEE8] pt-4 sm:pt-6">
           <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
             <div>
-              <h2 className="text-[1.7rem] font-black leading-tight text-[#111827] sm:text-[2rem]">よく探されるテーマ</h2>
-              <p className="mt-1 text-sm text-[#64748B]">
+              <h2 className="text-xl font-black leading-tight text-[#111827] sm:text-[2rem]">よく探されるテーマ</h2>
+              <p className="mt-1 hidden text-sm text-[#64748B] sm:block">
                 検索のきっかけになる代表テーマです。市町村をまたいで、関連する議事録へ進めます。
               </p>
             </div>
@@ -282,11 +307,13 @@ export default async function HomePage() {
           </div>
 
           <div className="flex flex-wrap gap-2">
-            {topTags.map(({ tag, count }) => (
+            {topTags.map(({ tag, count }, index) => (
               <Link
                 key={tag}
                 href={`/topics/${encodeURIComponent(tag)}`}
-                className="motion-surface inline-flex items-center gap-1.5 rounded-full border border-[#D8DEE8] bg-white px-3 py-2 text-sm font-bold text-[#1B3A6B]"
+                className={`motion-surface items-center gap-1.5 rounded-full border border-[#D8DEE8] bg-white px-3 py-2 text-sm font-bold text-[#1B3A6B] ${
+                  index >= 6 ? "hidden sm:inline-flex" : "inline-flex"
+                }`}
               >
                 <span>{tag}</span>
                 <span className="text-xs text-[#64748B]">{count}件</span>
@@ -301,7 +328,7 @@ export default async function HomePage() {
           <div>
             <h2 className="text-[1.7rem] font-black leading-tight text-[#111827] sm:text-[2rem]">市町村議会を選ぶ</h2>
             <p className="mt-1 text-base leading-relaxed text-[#4A5568]">
-              市町村名で絞り込めます。機能がある自治体だけに絞ることもできます。
+              地域ごとに市町村議会ページへ進めます。
             </p>
           </div>
         </div>

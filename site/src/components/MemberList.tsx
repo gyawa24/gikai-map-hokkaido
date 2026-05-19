@@ -63,6 +63,7 @@ function MemberCard({
   memberHrefBase,
   minutesHrefBase,
   policyTags,
+  compact = false,
 }: {
   member: Member;
   activity: MemberActivity | undefined;
@@ -70,12 +71,145 @@ function MemberCard({
   memberHrefBase?: string;
   minutesHrefBase?: string;
   policyTags?: PolicyTag[];
+  compact?: boolean;
 }) {
   const [activityOpen, setActivityOpen] = useState(false);
   const visibleCommittees = member.committees.slice(0, 2);
   const hiddenCommitteeCount = Math.max(0, member.committees.length - visibleCommittees.length);
   const visibleThemes = activity?.themes?.slice(0, 3) ?? [];
   const hiddenThemeCount = Math.max(0, (activity?.themes?.length ?? 0) - visibleThemes.length);
+
+  if (compact) {
+    return (
+      <div className="overflow-hidden rounded-lg border border-[#CBD5E0] bg-white">
+        <div className="flex gap-3 p-3">
+          {member.photo_url && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={member.photo_url}
+              alt={`${member.name}議員`}
+              width={48}
+              height={64}
+              loading="lazy"
+              decoding="async"
+              className="h-16 w-12 shrink-0 rounded-lg border border-[#E2E8F0] object-cover"
+            />
+          )}
+          <div className="min-w-0 flex-1">
+            <div className="flex min-w-0 items-start gap-2">
+              <span className="mt-0.5 shrink-0 whitespace-nowrap rounded-full border border-[#D5DCE6] bg-[#F8FAFC] px-2 py-0.5 text-[11px] font-semibold text-[#2A5298]">
+                {member.seat_number}番
+              </span>
+              <div className="min-w-0 flex-1">
+                {memberHrefBase ? (
+                  <Link
+                    href={`${memberHrefBase}/${member.seat_number}`}
+                    className="block truncate rounded text-base font-black leading-snug text-[#1B3A6B] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                  >
+                    {member.name}
+                  </Link>
+                ) : (
+                  <p className="truncate text-base font-black leading-snug text-[#1A202C]">{member.name}</p>
+                )}
+                <p className="text-[11px] text-[#718096]">{member.furigana}</p>
+              </div>
+              {activity && (
+                <span className="shrink-0 whitespace-nowrap rounded-full border border-[#D7E1F0] bg-[#F4F8FF] px-2 py-0.5 text-[11px] font-bold text-[#2A5298]">
+                  質問 {activity.session_count}
+                </span>
+              )}
+            </div>
+
+            {member.faction && (
+              <div className="mt-2 flex min-w-0 items-center gap-1.5">
+                <span className="shrink-0 text-[11px] font-medium text-[#718096]">会派</span>
+                <span className={`truncate rounded-full px-2 py-0.5 text-[11px] font-medium ${factionBadgeClass(member.faction)}`}>
+                  {member.faction}
+                </span>
+              </div>
+            )}
+
+            {visibleThemes.length > 0 && (
+              <div className="mt-2 flex flex-wrap gap-1">
+                {visibleThemes.slice(0, 2).map((theme) => (
+                  <span key={theme} className="rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-[11px] text-[#4A5568]">
+                    {theme}
+                  </span>
+                ))}
+                {Math.max(0, (activity?.themes?.length ?? 0) - 2) > 0 && (
+                  <span className="rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-[11px] text-[#718096]">
+                    +{Math.max(0, (activity?.themes?.length ?? 0) - 2)}
+                  </span>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {(memberHrefBase || activity) && (
+          <div className={`grid border-t border-[#E2E8F0] bg-[#FAFAF8] text-center text-xs font-bold text-[#4A5568] ${
+            memberHrefBase && activity ? "grid-cols-2 divide-x divide-[#E2E8F0]" : "grid-cols-1"
+          }`}>
+            {memberHrefBase && (
+              <Link
+                href={`${memberHrefBase}/${member.seat_number}`}
+                className="px-3 py-2.5 transition-colors hover:bg-[#F5F8FD] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+              >
+                詳細
+              </Link>
+            )}
+            {activity && (
+              <button
+                type="button"
+                onClick={() => setActivityOpen((v) => !v)}
+                className="px-3 py-2.5 transition-colors hover:bg-[#F5F8FD] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                aria-expanded={activityOpen}
+              >
+                質問履歴
+              </button>
+            )}
+          </div>
+        )}
+
+        {activityOpen && activity && (
+          <div className="space-y-4 border-t border-[#E2E8F0] bg-white px-4 py-4">
+            {activity.sessions.map((s, i) => (
+              <div key={i}>
+                <div className="mb-1.5 flex items-center justify-between">
+                  <p className="text-xs font-semibold text-[#1B3A6B]">{s.session}</p>
+                  {s.council_id > 0 && (
+                    <Link
+                      href={`${minutesHrefBase}/${s.council_id}`}
+                      className="rounded text-xs text-[#718096] transition-colors hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                    >
+                      全文
+                    </Link>
+                  )}
+                </div>
+                <ul className="space-y-1">
+                  {s.topics.map((topic) => (
+                    <li key={topic} className="flex items-start gap-1.5 text-xs">
+                      <span className="mt-0.5 shrink-0 text-[#2A5298]">·</span>
+                      {s.council_id > 0 ? (
+                        <Link
+                          href={`${minutesHrefBase}/${s.council_id}?q=${encodeURIComponent(topic)}`}
+                          className="rounded text-[#2A5298] transition-colors hover:text-[#1B3A6B] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                        >
+                          {topic}
+                        </Link>
+                      ) : (
+                        <span className="text-[#4A5568]">{topic}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="theme-card overflow-hidden transition-all duration-150 hover:border-[#9FB1D2]">
@@ -336,7 +470,69 @@ export default function MemberList({ members, factions, activity = {}, memberHre
   return (
     <div className="page-shell max-w-5xl">
       {/* フィルター・ソートバー */}
-      <div className="theme-panel mb-4 px-4 py-3 sm:mb-5 sm:px-5 sm:py-4">
+      <details className="mb-3 overflow-hidden rounded-lg border border-[#CBD5E0] bg-white sm:hidden">
+        <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-black text-[#1B3A6B] [&::-webkit-details-marker]:hidden">
+          <span>絞り込み・並び替え</span>
+          <span className="text-sm font-bold text-[#4A5568]">{filtered.length}名</span>
+        </summary>
+        <div className="grid gap-3 border-t border-[#E2E8F0] px-4 py-3">
+          {hasParties && (
+            <div className="flex flex-col gap-1">
+              <label className="text-xs font-medium text-[#4A5568]">政党で絞り込む</label>
+              <select
+                value={partyFilter}
+                onChange={(e) => {
+                  setPartyFilter(e.target.value);
+                  setShowAllMembers(false);
+                }}
+                className="theme-select min-w-0 cursor-pointer px-3 py-2 text-base"
+              >
+                <option value="">すべての政党</option>
+                {parties.map((p) => (
+                  <option key={p} value={p}>{p}</option>
+                ))}
+              </select>
+            </div>
+          )}
+
+          {factions.length > 0 && (
+            <div className="flex flex-col gap-1">
+              <label className="text-xs font-medium text-[#4A5568]">会派で絞り込む</label>
+              <select
+                value={factionFilter}
+                onChange={(e) => {
+                  setFactionFilter(e.target.value);
+                  setShowAllMembers(false);
+                }}
+                className="theme-select min-w-0 cursor-pointer px-3 py-2 text-base"
+              >
+                <option value="">すべての会派</option>
+                {factions.map((f) => (
+                  <option key={f} value={f}>{f}</option>
+                ))}
+              </select>
+            </div>
+          )}
+
+          <div className="flex flex-col gap-1">
+            <label className="text-xs font-medium text-[#4A5568]">並び順</label>
+            <select
+              value={sortKey}
+              onChange={(e) => {
+                setSortKey(e.target.value as SortKey);
+                setShowAllMembers(false);
+              }}
+              className="theme-select min-w-0 cursor-pointer px-3 py-2 text-base"
+            >
+              <option value="seat">議席番号順</option>
+              <option value="party">政党順</option>
+              <option value="kana">五十音順</option>
+            </select>
+          </div>
+        </div>
+      </details>
+
+      <div className="theme-panel mb-4 hidden px-4 py-3 sm:mb-5 sm:block sm:px-5 sm:py-4">
         <div className="grid grid-cols-1 gap-3 sm:flex sm:flex-wrap sm:items-end sm:gap-x-6 sm:gap-y-3">
           {hasParties && (
             <div className="flex flex-col gap-1">
@@ -412,6 +608,7 @@ export default function MemberList({ members, factions, activity = {}, memberHre
               memberHrefBase={memberHrefBase}
               minutesHrefBase={minutesHrefBase}
               policyTags={memberPolicies[nameKey]}
+              compact={isCompactList}
             />
           );
         })}

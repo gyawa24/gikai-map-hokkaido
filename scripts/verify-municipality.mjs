@@ -11,6 +11,7 @@ const ROOT_DATA_DIR = path.join(REPO_ROOT, "data");
 const SITE_DATA_DIR = path.join(REPO_ROOT, "site", "data");
 const ROOT_MUNICIPALITIES_PATH = path.join(ROOT_DATA_DIR, "municipalities.json");
 const SITE_MUNICIPALITIES_PATH = path.join(SITE_DATA_DIR, "municipalities.json");
+const CITY_CAPABILITIES_PATH = path.join(SITE_DATA_DIR, "_city-capabilities.json");
 
 function printHelp() {
   console.log(`Usage:
@@ -18,10 +19,10 @@ function printHelp() {
 
 Checks:
   - municipalities.json entry exists in data/ and site/data/
-  - feature flags match expected files
+  - generated city capabilities match site/data files
   - site/data/{slug}/ is synced from data/{slug}/
   - segments exist when minutes/index.json exists
-  - themes feature matches members_activity.json
+  - themes data exists when expected
 `);
 }
 
@@ -48,6 +49,12 @@ async function readIfExists(filePath) {
 
 function relative(targetPath) {
   return path.relative(REPO_ROOT, targetPath);
+}
+
+function comparableMunicipality(entry) {
+  if (!entry) return null;
+  const { features, ...rest } = entry;
+  return rest;
 }
 
 async function compareFiles(issues, rootPath, sitePath, label) {
@@ -95,10 +102,14 @@ async function main() {
     checks.push(`entry found in site/data/municipalities.json`);
   }
 
-  if (rootEntry && siteEntry && JSON.stringify(rootEntry) !== JSON.stringify(siteEntry)) {
-    issues.push(`municipality entry out of sync between data/ and site/data/: ${slug}`);
+  if (
+    rootEntry &&
+    siteEntry &&
+    JSON.stringify(comparableMunicipality(rootEntry)) !== JSON.stringify(comparableMunicipality(siteEntry))
+  ) {
+    issues.push(`municipality metadata out of sync between data/ and site/data/: ${slug}`);
   } else if (rootEntry && siteEntry) {
-    checks.push(`municipality entry synced`);
+    checks.push(`municipality metadata synced`);
   }
 
   const rootDir = path.join(ROOT_DATA_DIR, slug);
@@ -124,9 +135,10 @@ async function main() {
   const minutesAltRoot = path.join(rootDir, "index.json");
   const minutesAltSite = path.join(siteDir, "index.json");
   const segmentsIndexRoot = path.join(rootDir, "segments", "_index.json");
-  const segmentsIndexSite = path.join(siteDir, "segments", "_index.json");
   const themesRoot = path.join(rootDir, "members_activity.json");
   const themesSite = path.join(siteDir, "members_activity.json");
+  const capabilityIndex = await readJson(CITY_CAPABILITIES_PATH).catch(() => null);
+  const capability = capabilityIndex?.cities?.[slug] ?? null;
 
   const hasMembersFile = await pathExists(membersRoot);
   const hasMinutesIndex = (await pathExists(minutesIndexRoot)) || (await pathExists(minutesAltRoot));
@@ -138,13 +150,6 @@ async function main() {
     await compareFiles(issues, membersRoot, membersSite, "members.json");
   }
 
-  if (rootEntry?.features?.includes("members") && !hasMembersFile) {
-    issues.push(`feature mismatch: members enabled but data/${slug}/members.json is missing`);
-  }
-  if (!rootEntry?.features?.includes("members") && hasMembersFile) {
-    issues.push(`feature mismatch: members.json exists but features does not include "members"`);
-  }
-
   if (hasMinutesIndex) {
     checks.push(`minutes index exists`);
     if (await pathExists(minutesIndexRoot)) {
@@ -154,19 +159,11 @@ async function main() {
     }
   }
 
-  if (rootEntry?.features?.includes("minutes") && !hasMinutesIndex) {
-    issues.push(`feature mismatch: minutes enabled but minutes/index.json is missing`);
-  }
-  if (!rootEntry?.features?.includes("minutes") && hasMinutesIndex) {
-    issues.push(`feature mismatch: minutes data exists but features does not include "minutes"`);
-  }
-
   if (hasMinutesIndex) {
     if (!hasSegmentsIndex) {
       issues.push(`missing segments: data/${slug}/segments/_index.json`);
     } else {
       checks.push(`segments index exists`);
-      await compareFiles(issues, segmentsIndexRoot, segmentsIndexSite, "segments/_index.json");
     }
   }
 
@@ -175,15 +172,33 @@ async function main() {
     await compareFiles(issues, themesRoot, themesSite, "members_activity.json");
   }
 
-  if (rootEntry?.features?.includes("themes") && !hasThemesFile) {
-    issues.push(`feature mismatch: themes enabled but data/${slug}/members_activity.json is missing`);
-  }
-  if (!rootEntry?.features?.includes("themes") && hasThemesFile) {
-    issues.push(`feature mismatch: members_activity.json exists but features does not include "themes"`);
+  if (rootEntry?.minutes_status === "unavailable" && capability?.capabilities?.minutes) {
+    issues.push(`metadata mismatch: minutes_status is unavailable but city capabilities includes "minutes"`);
   }
 
-  if (rootEntry?.minutes_status === "unavailable" && rootEntry?.features?.includes("minutes")) {
-    issues.push(`metadata mismatch: minutes_status is unavailable but features includes "minutes"`);
+  if (!capability) {
+    issues.push(`missing city capabilities entry: site/data/_city-capabilities.json -> ${slug}`);
+  } else {
+    checks.push(`city capabilities entry found`);
+    const capabilityChecks = {
+      members: await pathExists(membersSite),
+      minutes: (await pathExists(minutesIndexSite)) || (await pathExists(minutesAltSite)),
+      sessions: await pathExists(path.join(siteDir, "sessions", "index.json")),
+      themes: await pathExists(themesSite),
+      budgets: await pathExists(path.join(siteDir, "budgets", "index.json")),
+      decisions: await pathExists(path.join(siteDir, "decisions.json")),
+      schedule: await pathExists(path.join(siteDir, "schedule.json")),
+      newsletter: await pathExists(path.join(siteDir, "newsletter.json")),
+      election: await pathExists(path.join(siteDir, "election.json")),
+      plan: await pathExists(path.join(siteDir, "comprehensive_plan.json")),
+    };
+
+    for (const [key, expected] of Object.entries(capabilityChecks)) {
+      const actual = Boolean(capability.capabilities?.[key]);
+      if (actual !== expected) {
+        issues.push(`capability mismatch: ${key} is ${actual} but site/data file existence is ${expected}`);
+      }
+    }
   }
 
   console.log(`# verify ${slug}`);

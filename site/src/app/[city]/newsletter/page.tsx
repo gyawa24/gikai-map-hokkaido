@@ -3,8 +3,16 @@ import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { Newsletter } from "@/types/newsletter";
+import { hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getCapabilityCityStaticParams("newsletter");
+}
 
 export async function generateMetadata({
   params,
@@ -55,7 +63,7 @@ export default async function CityNewsletterPage({
 }) {
   const { city } = await params;
   const municipality = getMunicipality(city);
-  if (!municipality?.features.includes("newsletter")) notFound();
+  if (!municipality || !hasCityCapability(city, "newsletter")) notFound();
 
   const cityName = municipality.name;
   const nl = getNewsletter(city);

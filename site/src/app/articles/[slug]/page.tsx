@@ -188,7 +188,7 @@ export default async function ArticleDetailPage({ params }: Props) {
       url: absoluteUrl("/"),
       logo: absoluteUrl("/icon.svg"),
     },
-    image: absoluteUrl("/api/og-site"),
+    image: absoluteUrl("/og-site.png"),
     mainEntityOfPage: absoluteUrl(path),
     inLanguage: "ja-JP",
   };

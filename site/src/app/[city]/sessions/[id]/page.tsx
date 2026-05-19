@@ -4,6 +4,7 @@ import TranscriptSegment from "@/components/TranscriptSegment";
 import AIDisclaimer from "@/components/AIDisclaimer";
 import FullTranscriptBlock from "@/components/FullTranscriptBlock";
 import { getMembers, getSession, getSessionSummaries } from "@/lib/cityData";
+import { hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import {
   getSessionSourceLabel,
@@ -54,9 +55,11 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   const { getMunicipalities } = await import("@/lib/municipalities");
+  const { getCityCapability } = await import("@/lib/cityCapabilities");
   const params: { city: string; id: string }[] = [];
   for (const m of getMunicipalities()) {
     if (!m.active) continue;
+    if (!getCityCapability(m.slug).capabilities.sessions) continue;
     for (const session of getSessionSummaries(m.slug)) {
       params.push({ city: m.slug, id: session.id });
     }
@@ -71,7 +74,7 @@ export default async function CitySessionPage({
 }) {
   const { city, id } = await params;
   const municipality = getMunicipality(city);
-  if (!municipality?.features.includes("sessions")) notFound();
+  if (!municipality || !hasCityCapability(city, "sessions")) notFound();
 
   const session = getSession(city, id);
   if (!session) notFound();

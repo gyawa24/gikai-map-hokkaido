@@ -159,6 +159,45 @@ h1, h2, h3, h4 {
   color: #6b4c11;
 }
 
+.site-brand-icon {
+  display: inline-flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background: #1b3a6b;
+  color: #ffffff;
+}
+
+.site-brand-subcopy {
+  display: block;
+  margin-top: 0.08rem;
+  color: #1f78bd;
+  font-family: Arial, "Noto Sans JP", sans-serif;
+  font-size: 0.63rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.15;
+}
+
+.gamma-version-mark {
+  display: inline-flex;
+  min-width: 2.25rem;
+  min-height: 1.9rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cfd6e2;
+  border-radius: 0.35rem;
+  background: #ffffff;
+  color: #1683c7;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .theme-section-title {
   color: #1b3a6b;
   font-weight: 900;

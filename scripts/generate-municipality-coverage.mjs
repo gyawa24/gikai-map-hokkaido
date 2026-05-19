@@ -74,10 +74,6 @@ function hasQuestionSegments(cityDir) {
   }
 }
 
-function hasFeature(entry, feature) {
-  return Array.isArray(entry.features) && entry.features.includes(feature);
-}
-
 function mark(value) {
   return value ? "○" : "—";
 }
@@ -157,35 +153,16 @@ function classifyParserIssue(entry, cityDir, files) {
 }
 
 function nextAction(entry, files, parserIssue) {
-  if (!files.members && !hasFeature(entry, "members")) {
-    return "議員一覧の整備";
-  }
-  if (!files.members && hasFeature(entry, "members")) {
-    return "members.json の補完";
-  }
+  if (!files.members) return "議員一覧の整備";
   if (parserIssue === "source mismatch") {
     return "tenant_id/source の見直し";
   }
   if (!files.minutes && entry.minutes_status === "unavailable") {
     return "議事録未公開の確認更新";
   }
-  if (!files.minutes && !hasFeature(entry, "minutes")) {
-    return "議事録導線の可否判断";
-  }
-  if (files.minutes && !hasFeature(entry, "minutes")) {
-    return "minutes feature の反映";
-  }
+  if (!files.minutes) return "議事録導線の可否判断";
   if (parserIssue === "議員名簿ミスマッチ") {
     return "members.json の見直し";
-  }
-  if (files.themes && !hasFeature(entry, "themes")) {
-    return "themes feature の反映";
-  }
-  if (hasFeature(entry, "themes") && !files.themes) {
-    return "members_activity.json の整備";
-  }
-  if (!files.members && files.minutes) {
-    return "members.json の整備";
   }
   if (parserIssue === "gijiroku_com 本文解析") {
     return "gijiroku_com 系の変換改善";
@@ -265,14 +242,14 @@ function topPriorities(rows) {
   const minutesWithoutThemesReady = rows.filter((row) => row.files.members && row.files.minutes && row.parserIssue === "themes 名寄せ調整").length;
   const minutesWithoutThemesNeedParser = rows.filter((row) => row.files.members && row.files.minutes && !row.files.segments && !row.files.themes).length;
   const minutesWithoutThemesNeedMembers = rows.filter((row) => !row.files.members && row.files.minutes && !row.files.themes).length;
-  const themeDataNotPublished = rows.filter((row) => row.files.themes && row.next === "themes feature の反映").length;
+  const themeReady = rows.filter((row) => row.files.themes).length;
   return {
     missingMembersAndMinutes,
     membersOnly,
     minutesWithoutThemesReady,
     minutesWithoutThemesNeedParser,
     minutesWithoutThemesNeedMembers,
-    themeDataNotPublished,
+    themeReady,
   };
 }
 
@@ -328,7 +305,7 @@ function main() {
   lines.push(`- 議事録と segments はあるがテーマ別未整備: ${priorities.minutesWithoutThemesReady}`);
   lines.push(`- 議事録はあるが raw 変換改善が必要: ${priorities.minutesWithoutThemesNeedParser}`);
   lines.push(`- 議事録はあるが議員名簿が未整備: ${priorities.minutesWithoutThemesNeedMembers}`);
-  lines.push(`- テーマ別データはあるが feature 未反映: ${priorities.themeDataNotPublished}`);
+  lines.push(`- テーマ別データ整備済み: ${priorities.themeReady}`);
   lines.push("");
   lines.push("## 変換課題の内訳");
   lines.push("");
@@ -358,6 +335,7 @@ function main() {
   lines.push("- `themes`: `data/{slug}/members_activity.json` があり、かつ空ではない");
   lines.push("- `会議録`: `data/{slug}/sessions/index.json` がある");
   lines.push("- `議事録状況`: `minutes_status` と実ファイルの両方を見て表示");
+  lines.push("- 機能の公開可否は `site/scripts/build-city-capabilities.mjs` で生成する台帳に寄せる。`municipalities.json` の旧 `features` は判定に使わない。");
 
   fs.writeFileSync(DOC_PATH, `${lines.join("\n")}\n`, "utf-8");
   console.log(`wrote ${path.relative(REPO_ROOT, DOC_PATH)}`);

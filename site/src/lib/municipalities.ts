@@ -28,7 +28,3 @@ export function getMunicipalities(): Municipality[] {
 export function getMunicipality(slug: string): Municipality | null {
   return getMunicipalities().find((m) => m.slug === slug && m.active) ?? null;
 }
-
-export function hasFeature(slug: string, feature: string): boolean {
-  return getMunicipality(slug)?.features.includes(feature) ?? false;
-}

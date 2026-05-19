@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/build-city-capabilities.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/build-search-index.mjs",
+    "prebuild": "node scripts/build-city-capabilities.mjs && node scripts/build-search-index.mjs",
     "build": "next build",
     "build-search-index": "node scripts/build-search-index.mjs",
+    "build-city-capabilities": "node scripts/build-city-capabilities.mjs",
     "bootstrap:hokkaido:r8-1": "node scripts/bootstrap-hokkaido-stream-meeting.mjs --title '令和8年第1回定例会'",
     "start:auto-superwhisper:r8-1": "node scripts/watch-batch-and-start-superwhisper.mjs --city hokkaido --title '令和8年第1回定例会'",
     "start:scribe:r7-1": "node scripts/launch-scribe-watch-job.mjs --city hokkaido --title '令和7年第1回定例会'",

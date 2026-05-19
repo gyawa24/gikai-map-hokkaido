@@ -3,8 +3,16 @@ import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { ScheduleEvent, ScheduleLinkIndex } from "@/types/schedule";
+import { hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getCapabilityCityStaticParams("schedule");
+}
 
 export async function generateMetadata({
   params,
@@ -63,7 +71,7 @@ export default async function CitySchedulePage({
 }) {
   const { city } = await params;
   const municipality = getMunicipality(city);
-  if (!municipality?.features.includes("schedule")) notFound();
+  if (!municipality || !hasCityCapability(city, "schedule")) notFound();
 
   const cityName = municipality.name;
   const schedule = getSchedule(city);

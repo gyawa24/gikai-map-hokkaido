@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import type { MetadataRoute } from "next";
 import { getMunicipalities } from "@/lib/municipalities";
+import { getCityCapability } from "@/lib/cityCapabilities";
 import { getAllTags } from "@/lib/topics";
 import { getArticles } from "@/lib/articles";
 import { getBudgetDocuments } from "@/lib/budgets";
@@ -90,33 +91,33 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   for (const municipality of getMunicipalities().filter((item) => item.active)) {
     const city = municipality.slug;
-    const featureSet = new Set(municipality.features);
+    const capabilities = getCityCapability(city).capabilities;
 
     entries.push(toEntry(`/${city}`, "weekly", municipality.level === "prefecture" ? 0.8 : 0.9));
 
-    if (featureSet.has("minutes")) {
+    if (capabilities.minutes) {
       entries.push(toEntry(`/${city}/minutes`, "weekly", 0.8));
       for (const id of getMinutesIds(city)) {
         entries.push(toEntry(`/${city}/minutes/${id}`, "weekly", 0.7));
       }
     }
 
-    if (featureSet.has("members")) {
+    if (capabilities.members) {
       for (const id of getMemberIds(city)) {
         entries.push(toEntry(`/${city}/members/${id}`, "monthly", 0.7));
       }
     }
 
-    if (featureSet.has("sessions")) {
+    if (capabilities.sessions) {
       entries.push(toEntry(`/${city}/sessions`, "weekly", 0.7));
       for (const id of getSessionIds(city)) {
         entries.push(toEntry(`/${city}/sessions/${id}`, "weekly", 0.7));
       }
     }
 
-    if (featureSet.has("decisions")) entries.push(toEntry(`/${city}/decisions`, "weekly", 0.7));
-    if (featureSet.has("schedule")) entries.push(toEntry(`/${city}/schedule`, "weekly", 0.6));
-    if (featureSet.has("newsletter")) entries.push(toEntry(`/${city}/newsletter`, "monthly", 0.6));
+    if (capabilities.decisions) entries.push(toEntry(`/${city}/decisions`, "weekly", 0.7));
+    if (capabilities.schedule) entries.push(toEntry(`/${city}/schedule`, "weekly", 0.6));
+    if (capabilities.newsletter) entries.push(toEntry(`/${city}/newsletter`, "monthly", 0.6));
     const budgetDocuments = getBudgetDocuments(city);
     if (budgetDocuments.length > 0) {
       entries.push(toEntry(`/${city}/budgets`, "monthly", 0.5));
@@ -124,9 +125,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         entries.push(toEntry(`/${city}/budgets/${document.year}`, "monthly", 0.5, document.generated_at));
       }
     }
-    if (featureSet.has("election")) entries.push(toEntry(`/${city}/election`, "monthly", 0.6));
-    if (featureSet.has("plan")) entries.push(toEntry(`/${city}/plan`, "monthly", 0.5));
-    if (featureSet.has("themes")) entries.push(toEntry(`/${city}/themes`, "weekly", 0.6));
+    if (capabilities.election) entries.push(toEntry(`/${city}/election`, "monthly", 0.6));
+    if (capabilities.plan) entries.push(toEntry(`/${city}/plan`, "monthly", 0.5));
+    if (capabilities.themes) entries.push(toEntry(`/${city}/themes`, "weekly", 0.6));
   }
 
   return entries;

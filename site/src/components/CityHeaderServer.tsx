@@ -2,17 +2,18 @@ import fs from "fs";
 import path from "path";
 import CityHeader from "./CityHeader";
 import { getMunicipalities } from "@/lib/municipalities";
+import { hasCityCapability } from "@/lib/cityCapabilities";
 
 export type NavItem = { href: string; label: string };
 export type CityNavConfig = { name: string; nav: NavItem[] };
 
 // Build city list from municipalities.json
-function buildCities(): Record<string, { name: string; features: string[] }> {
+function buildCities(): Record<string, { name: string }> {
   const municipalities = getMunicipalities();
   return Object.fromEntries(
     municipalities
       .filter((m) => m.active)
-      .map((m) => [m.slug, { name: m.council_name, features: m.features }])
+      .map((m) => [m.slug, { name: m.council_name }])
   );
 }
 
@@ -31,6 +32,7 @@ type MasterNavItem = {
 
 const MASTER_NAV: MasterNavItem[] = [
   { key: "members", label: "議員", pageDir: "" },
+  { key: "sessions", label: "速報", pageDir: "sessions", dataFile: "sessions/index.json" },
   { key: "minutes", label: "議事録", pageDir: "minutes", dataFile: "minutes/index.json" },
   { key: "themes", label: "テーマ", pageDir: "themes", dataFile: "members_activity.json" },
   { key: "budgets", label: "予算", pageDir: "budgets", dataFile: "budgets/index.json" },
@@ -55,7 +57,7 @@ function pageExists(cityKey: string, pageDir: string): boolean {
   return fs.existsSync(dynamicPath);
 }
 
-function computeCityNav(cityKey: string, features: string[]): NavItem[] {
+function computeCityNav(cityKey: string): NavItem[] {
   const overrides = LABEL_OVERRIDES[cityKey] ?? {};
   const baseHref = `/${cityKey}`;
 
@@ -68,8 +70,8 @@ function computeCityNav(cityKey: string, features: string[]): NavItem[] {
     // Check page route exists (prevents 404)
     if (!pageExists(cityKey, item.pageDir)) return false;
 
-    // Check feature availability (prevents empty pages)
-    if (item.dataFile && !features.includes(item.key)) return false;
+    // Check backing data through the generated city capabilities index.
+    if (item.dataFile && !hasCityCapability(cityKey, item.key)) return false;
 
     return true;
   }).map((item) => ({
@@ -85,7 +87,7 @@ export default function CityHeaderServer() {
   for (const [cityKey, config] of Object.entries(CITIES)) {
     allCityNavs[cityKey] = {
       name: config.name,
-      nav: computeCityNav(cityKey, config.features),
+      nav: computeCityNav(cityKey),
     };
   }
 

@@ -43,3 +43,4 @@ next-env.d.ts
 
 # build-generated search index
 data/_search-index.json
+data/_city-capabilities.json

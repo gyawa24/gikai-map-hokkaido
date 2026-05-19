@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { getCityCapability } from "@/lib/cityCapabilities";
 import type { Municipality } from "@/lib/municipalities";
 import { getMunicipalities } from "@/lib/municipalities";
 
@@ -45,7 +46,6 @@ export type PublicInventoryRow = {
   name: string;
   councilName: string;
   region: string;
-  features: string[];
   hasMembers: boolean;
   hasMinutes: boolean;
   hasTopicData: boolean;
@@ -73,7 +73,6 @@ export type PublicInventorySummary = {
   themes: number;
   budgets: number;
   budgetCandidates: number;
-  sessionsFeature: number;
   sessionsData: number;
   unavailable: number;
   ocrWait: number;
@@ -205,20 +204,21 @@ function minutesState(entry: Municipality, hasMinutes: boolean): string {
   return "確認中";
 }
 
-function otherInfo(entry: Municipality): string[] {
+function otherInfo(capabilityKeys: string[]): string[] {
   const labels: string[] = [];
-  if (entry.features.includes("election")) labels.push("選挙");
-  if (entry.features.includes("decisions")) labels.push("議決");
-  if (entry.features.includes("schedule")) labels.push("行事");
-  if (entry.features.includes("newsletter")) labels.push("だより");
-  if (entry.features.includes("plan")) labels.push("総合計画");
+  if (capabilityKeys.includes("election")) labels.push("選挙");
+  if (capabilityKeys.includes("decisions")) labels.push("議決");
+  if (capabilityKeys.includes("schedule")) labels.push("行事");
+  if (capabilityKeys.includes("newsletter")) labels.push("だより");
+  if (capabilityKeys.includes("plan")) labels.push("総合計画");
   return labels;
 }
 
 function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>): PublicInventoryRow {
   const dataRoot = path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
   const cityDir = path.join(/*turbopackIgnore: true*/ dataRoot, entry.slug);
-  const hasMinutes = hasMinutesData(cityDir);
+  const capability = getCityCapability(entry.slug);
+  const hasMinutes = capability.capabilities.minutes || hasMinutesData(cityDir);
   const source = sourceFor(entry, hasMinutes);
   const budgetSource = budgetSources.get(entry.slug) ?? null;
   const budgetImported = hasBudgetData(cityDir) || budgetSource?.status === "取込済み";
@@ -229,12 +229,11 @@ function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>)
     name: entry.name,
     councilName: entry.council_name,
     region: entry.region,
-    features: entry.features,
-    hasMembers: exists(path.join(cityDir, "members.json")),
+    hasMembers: capability.capabilities.members,
     hasMinutes,
-    hasTopicData: hasThemesData(cityDir),
-    hasSessionsData: exists(path.join(cityDir, "sessions", "index.json")),
-    otherInfo: otherInfo(entry),
+    hasTopicData: capability.capabilities.themes || hasThemesData(cityDir),
+    hasSessionsData: capability.capabilities.sessions,
+    otherInfo: otherInfo(capability.features),
     recordState: minutesState(entry, hasMinutes),
     sourceLabel: source.label,
     sourceHref: source.href,
@@ -271,7 +270,6 @@ export function getPublicInformationInventory(): {
       themes: rows.filter((row) => row.hasTopicData).length,
       budgets: rows.filter((row) => row.hasBudget).length,
       budgetCandidates: rows.filter((row) => row.hasBudgetCandidate).length,
-      sessionsFeature: rows.filter((row) => row.features.includes("sessions")).length,
       sessionsData: rows.filter((row) => row.hasSessionsData).length,
       unavailable: rows.filter((row) => !row.hasMinutes).length,
       ocrWait: rows.filter((row) => row.recordState === "文字起こし確認中").length,

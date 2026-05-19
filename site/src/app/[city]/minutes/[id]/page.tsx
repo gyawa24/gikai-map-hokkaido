@@ -111,9 +111,11 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   const { getMunicipalities } = await import("@/lib/municipalities");
+  const { getCityCapability } = await import("@/lib/cityCapabilities");
   const params: { city: string; id: string }[] = [];
   for (const m of getMunicipalities()) {
     if (!m.active) continue;
+    if (!getCityCapability(m.slug).capabilities.minutes) continue;
     // minutes/index.json が基本形。ない場合は city 直下の index.json を見る。
     const candidates = [
       path.join(/*turbopackIgnore: true*/ process.cwd(), "data", m.slug, "minutes", "index.json"),

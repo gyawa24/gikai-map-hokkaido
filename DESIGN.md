@@ -1,5 +1,5 @@
 ---
-name: 地方議会ドットコムγ
+name: 地方議会ドットコム（γ）
 version: gamma
 description: 北海道の市町村議会情報を横断閲覧する非公式サイトのデザイン仕様書
 colors:
@@ -50,7 +50,7 @@ AIエージェントがこのリポジトリを編集する際に参照するデ
 
 ## プロジェクト概要
 
-- **サービス名**: 地方議会ドットコムγ
+- **サービス名**: 地方議会ドットコム（γ）
 - **本番ドメイン**: `chihougikai.com`
 - **目的**: 北海道内市町村議会の情報（議員・議事録・議決・日程）を横断的に公開する市民向け情報サイト
 - **収録範囲**: 北海道179市町村 + 北海道議会 = 180自治体。うち機能を完全に提供しているのは千歳・恵庭・苫小牧の3市（議員・議事録・議決・議会だより・行事予定）。残り自治体は議事録中心に順次拡充中
@@ -295,15 +295,37 @@ Noto Sans JP は `next/font/google` で build 時ダウンロード→同一オ�
 ヘッダー直下に常設。全ページで表示する。
 
 ```html
-<div class="bg-[#FFF7E6] border-b border-[#F7C948]">
-  <div class="max-w-5xl mx-auto px-4 py-2 text-xs text-[#78451F] flex flex-wrap items-center justify-center gap-x-3">
-    <span class="font-bold bg-[#F7C948] text-[#1B3A6B] rounded px-1.5 py-0.5">γ</span>
-    <span>γ版公開中 — 機能追加・仕様変更があります</span>
-    <a href="/news" class="underline hover:text-[#1B3A6B]">更新情報</a>
-    <a href="mailto:ogawayohei.hkd@gmail.com" class="underline">ご意見はこちら</a>
+<div class="bg-[#F7F8FA] border-b border-[#D7DEE8]">
+  <div class="max-w-5xl mx-auto px-4 py-2 text-sm text-[#475569] flex flex-wrap items-center justify-between gap-2">
+    <div class="flex items-center gap-3">
+      <span class="gamma-version-mark">γ</span>
+      <span>試験公開中。引用・数字は公式資料で確認してください。</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="/news" class="underline hover:text-[#1B3A6B]">更新情報</a>
+      <a href="mailto:ogawayohei.hkd@gmail.com" class="underline">フィードバック</a>
+    </div>
   </div>
 </div>
 ```
+
+### ブランドロゴ
+
+ヘッダーのブランドは画像1枚にせず、`LogoIcon` のSVGアイコンとHTMLテキストで構成する。
+
+```html
+<a aria-label="地方議会ドットコム（γ） トップページへ">
+  <span class="site-brand-icon"><!-- LogoIcon --></span>
+  <span>
+    <span>地方議会ドットコム（γ）</span>
+    <span class="site-brand-subcopy">CHIHOU GIKAI DOTTOKOMU</span>
+  </span>
+</a>
+```
+
+- アイコンはテレビ顔を残しつつ、議会アーカイブ端末・資料・γバッジの要素を加える。
+- 既存サービスのロゴや文字組みを直接模倣しない。
+- OGP も同じ「薄い罫線・白背景・青リンク文字・表形式UI」の世界観に合わせる。
 
 ### AI要約の注意書き（`AIDisclaimer`）
 
