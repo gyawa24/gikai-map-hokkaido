@@ -64,8 +64,8 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 
 ### データ層
 - `data/{slug}/` 単位で分離する。市町村ごとのフォルダ構造は統一する。
-- 市町村リストは `data/municipalities.json` を単一の真実源（single source of truth）とする。新しい市町村を足すときは必ずここを更新。
-- `features: ["members", "minutes", ...]` の有無で機能出し分けをする設計を維持する。すべての市町村が全機能を持つとは限らない。
+- 市町村リストは `data/municipalities.json` を自治体メタデータの単一の真実源（single source of truth）とする。新しい市町村を足すときは必ずここを更新。
+- 機能出し分けは `municipalities.json` の手書き `features` ではなく、`site/scripts/build-city-capabilities.mjs` が `site/data/{slug}/` の実ファイルから生成する台帳で判定する。すべての市町村が全機能を持つとは限らない。
 - **`data/{slug}/segments/`**: AI検索用にフラット化した発言単位データ。`scripts/build-segments.mjs <slug>` で minutes から生成。`_index.json`（軽量メタ）+ `{council_id}.json`（実体）の構成。
 - **`site/data/news.json`**: トップ/`/news` の更新情報の単一の真実源。機能追加・改善・修正・自治体追加・重要なお知らせを行ったら、関連実装と同じ変更で必ず追記する。エージェントは更新作業の完了時に `site/data/news.json` への反映要否を確認し、該当するなら自動で追記する。
 

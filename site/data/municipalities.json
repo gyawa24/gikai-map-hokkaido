@@ -5,12 +5,6 @@
     "council_name": "函館市議会",
     "region": "渡島",
     "furigana": "はこだてし",
-    "features": [
-      "members",
-      "minutes",
-      "budgets",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 537,
@@ -22,12 +16,6 @@
     "council_name": "旭川市議会",
     "region": "上川",
     "furigana": "あさひかわし",
-    "features": [
-      "members",
-      "minutes",
-      "budgets",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 529,
@@ -39,11 +27,6 @@
     "council_name": "室蘭市議会",
     "region": "胆振",
     "furigana": "むろらんし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 436,
@@ -55,12 +38,6 @@
     "council_name": "釧路市議会",
     "region": "釧路",
     "furigana": "くしろし",
-    "features": [
-      "members",
-      "minutes",
-      "budgets",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 532,
@@ -72,12 +49,6 @@
     "council_name": "帯広市議会",
     "region": "十勝",
     "furigana": "おびひろし",
-    "features": [
-      "members",
-      "minutes",
-      "budgets",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 535,
@@ -89,12 +60,6 @@
     "council_name": "北見市議会",
     "region": "オホーツク",
     "furigana": "きたみし",
-    "features": [
-      "members",
-      "minutes",
-      "budgets",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 483,
@@ -106,16 +71,6 @@
     "council_name": "苫小牧市議会",
     "region": "胆振",
     "furigana": "とまこまいし",
-    "features": [
-      "members",
-      "minutes",
-      "budgets",
-      "decisions",
-      "schedule",
-      "newsletter",
-      "election",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 536,
@@ -127,11 +82,6 @@
     "council_name": "稚内市議会",
     "region": "宗谷",
     "furigana": "わっかないし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 70,
@@ -143,11 +93,6 @@
     "council_name": "芦別市議会",
     "region": "空知",
     "furigana": "あしべつし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 530,
@@ -159,11 +104,6 @@
     "council_name": "名寄市議会",
     "region": "上川",
     "furigana": "なよろし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 614,
@@ -175,11 +115,6 @@
     "council_name": "根室市議会",
     "region": "根室",
     "furigana": "ねむろし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 533,
@@ -191,18 +126,6 @@
     "council_name": "千歳市議会",
     "region": "石狩",
     "furigana": "ちとせし",
-    "features": [
-      "members",
-      "minutes",
-      "budgets",
-      "sessions",
-      "decisions",
-      "schedule",
-      "newsletter",
-      "election",
-      "plan",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 452,
@@ -214,11 +137,6 @@
     "council_name": "登別市議会",
     "region": "胆振",
     "furigana": "のぼりべつし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 538,
@@ -230,16 +148,6 @@
     "council_name": "恵庭市議会",
     "region": "石狩",
     "furigana": "えにわし",
-    "features": [
-      "members",
-      "minutes",
-      "budgets",
-      "decisions",
-      "schedule",
-      "newsletter",
-      "election",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 89,
@@ -251,11 +159,6 @@
     "council_name": "伊達市議会",
     "region": "胆振",
     "furigana": "だてし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 542,
@@ -267,11 +170,6 @@
     "council_name": "北広島市議会",
     "region": "石狩",
     "furigana": "きたひろしまし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 72,
@@ -283,11 +181,6 @@
     "council_name": "石狩市議会",
     "region": "石狩",
     "furigana": "いしかりし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 93,
@@ -299,11 +192,6 @@
     "council_name": "北斗市議会",
     "region": "渡島",
     "furigana": "ほくとし",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 309,
@@ -315,11 +203,6 @@
     "council_name": "福島町議会",
     "region": "渡島",
     "furigana": "ふくしまちょう",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "system": "pdf_inhouse"
@@ -330,11 +213,6 @@
     "council_name": "江差町議会",
     "region": "檜山",
     "furigana": "えさしちょう",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 371,
@@ -349,11 +227,6 @@
     "council_name": "倶知安町議会",
     "region": "後志",
     "furigana": "くっちゃんちょう",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 453,
@@ -365,9 +238,6 @@
     "council_name": "上川町議会",
     "region": "上川",
     "furigana": "かみかわちょう",
-    "features": [
-      "members"
-    ],
     "level": "municipality",
     "active": true,
     "minutes_status": "unavailable",
@@ -382,11 +252,6 @@
     "council_name": "芽室町議会",
     "region": "十勝",
     "furigana": "めむろちょう",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "municipality",
     "active": true,
     "tenant_id": 454,
@@ -398,9 +263,6 @@
     "council_name": "池田町議会",
     "region": "十勝",
     "furigana": "いけだちょう",
-    "features": [
-      "members"
-    ],
     "level": "municipality",
     "active": true,
     "minutes_status": "unavailable",
@@ -415,9 +277,6 @@
     "council_name": "中川町議会",
     "region": "上川",
     "furigana": "なかがわちょう",
-    "features": [
-      "members"
-    ],
     "level": "municipality",
     "active": true,
     "minutes_status": "unavailable",
@@ -433,11 +292,6 @@
     "region": "空知",
     "furigana": "いわみざわし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "gijiroku_com",
     "gijiroku_subdomain": "iwamizawa-gikai"
@@ -449,11 +303,6 @@
     "region": "空知",
     "furigana": "ゆうばりし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -464,11 +313,6 @@
     "region": "空知",
     "furigana": "びばいし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -479,11 +323,6 @@
     "region": "空知",
     "furigana": "あかびらし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -494,11 +333,6 @@
     "region": "空知",
     "furigana": "みかさし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -509,11 +343,6 @@
     "region": "空知",
     "furigana": "たきかわし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -524,11 +353,6 @@
     "region": "空知",
     "furigana": "すながわし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -539,11 +363,6 @@
     "region": "空知",
     "furigana": "うたしないし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -554,11 +373,6 @@
     "region": "空知",
     "furigana": "ふかがわし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "gijiroku_com"
   },
@@ -569,11 +383,6 @@
     "region": "空知",
     "furigana": "なんぽろちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -584,11 +393,6 @@
     "region": "空知",
     "furigana": "ないえちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -599,11 +403,6 @@
     "region": "空知",
     "furigana": "かみすながわちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -614,11 +413,6 @@
     "region": "空知",
     "furigana": "ゆにちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -628,9 +422,6 @@
     "region": "空知",
     "furigana": "ながぬまちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会の結果・議会だより・議会中継録画などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -643,11 +434,6 @@
     "region": "空知",
     "furigana": "くりやまちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "公式サイトの定例会HTML会議録と臨時会PDF会議録を取り込みました。テーマ別データは話者抽出の追加対応待ちです。",
@@ -660,11 +446,6 @@
     "region": "空知",
     "furigana": "つきがたちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "月形町議会の会議結果ページから会議録PDFを取り込みました。",
@@ -678,11 +459,6 @@
     "region": "空知",
     "furigana": "うらうすちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -692,11 +468,6 @@
     "region": "空知",
     "furigana": "しんとつかわちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "新十津川町議会の会議録PDFを取り込みました。",
@@ -710,11 +481,6 @@
     "region": "空知",
     "furigana": "もせうしちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -724,11 +490,6 @@
     "region": "空知",
     "furigana": "ちっぷべつちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "秩父別町議会の会議録PDFを議決結果ページから取り込みました。",
@@ -742,11 +503,6 @@
     "region": "空知",
     "furigana": "うりゅうちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -756,11 +512,6 @@
     "region": "空知",
     "furigana": "ほくりゅうちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -770,11 +521,6 @@
     "region": "空知",
     "furigana": "ぬまたちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -785,12 +531,6 @@
     "region": "石狩",
     "furigana": "さっぽろし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "budgets",
-      "themes"
-    ],
     "active": true,
     "system": "gijiroku_com",
     "minutes_access": "restricted",
@@ -803,11 +543,6 @@
     "region": "石狩",
     "furigana": "えべつし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "html_inhouse"
   },
@@ -818,11 +553,6 @@
     "region": "石狩",
     "furigana": "とうべつちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -832,9 +562,6 @@
     "region": "石狩",
     "furigana": "しんしのつむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは議決結果と一般質問で、本会議全体の会議録本文のWeb公開は確認できませんでした。",
@@ -847,11 +574,6 @@
     "region": "後志",
     "furigana": "おたるし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -862,9 +584,6 @@
     "region": "後志",
     "furigana": "しままきむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会状況・議会構成・議会広報かりばなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -877,9 +596,6 @@
     "region": "後志",
     "furigana": "すっつちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議員名簿・委員会構成・議会日程・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -892,9 +608,6 @@
     "region": "後志",
     "furigana": "くろまつないちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議事日程・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -907,11 +620,6 @@
     "region": "後志",
     "furigana": "らんこしちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "蘭越町議会の年別会議録ページから会議録PDFを取り込みました。",
@@ -925,11 +633,6 @@
     "region": "後志",
     "furigana": "にせこちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -940,11 +643,6 @@
     "region": "後志",
     "furigana": "まっかりむら",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -955,9 +653,6 @@
     "region": "後志",
     "furigana": "るすつむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の記事、活動状況、議事日程・議決結果で、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -970,9 +665,6 @@
     "region": "後志",
     "furigana": "きもべつちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -985,9 +677,6 @@
     "region": "後志",
     "furigana": "きょうごくちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより・議員紹介・議会概要などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1000,9 +689,6 @@
     "region": "後志",
     "furigana": "きょうわちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1015,9 +701,6 @@
     "region": "後志",
     "furigana": "いわないちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議事日程・議会だより・一般質問順序表などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1030,9 +713,6 @@
     "region": "後志",
     "furigana": "とまりむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1045,9 +725,6 @@
     "region": "後志",
     "furigana": "かもえないむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議員名簿と議会開催のお知らせなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1060,9 +737,6 @@
     "region": "後志",
     "furigana": "しゃこたんちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の結果PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1075,11 +749,6 @@
     "region": "後志",
     "furigana": "ふるびらちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1090,11 +759,6 @@
     "region": "後志",
     "furigana": "にきちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1105,11 +769,6 @@
     "region": "後志",
     "furigana": "よいちちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1120,11 +779,6 @@
     "region": "後志",
     "furigana": "あかいがわむら",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1134,11 +788,6 @@
     "region": "胆振",
     "furigana": "とようらちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "通年会期制の定例会月会議PDFを取り込みました。テーマ別データは話者名寄せの追加対応待ちです。",
@@ -1151,11 +800,6 @@
     "region": "胆振",
     "furigana": "そうべつちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1165,11 +809,6 @@
     "region": "胆振",
     "furigana": "しらおいちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1180,11 +819,6 @@
     "region": "胆振",
     "furigana": "あつまちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "tenant_id": 167,
     "system": "dnp"
@@ -1196,11 +830,6 @@
     "region": "胆振",
     "furigana": "とうやこちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "通年会期制の月会議PDFを取り込みました。テーマ別データは話者名寄せの追加対応待ちです。",
@@ -1214,11 +843,6 @@
     "region": "胆振",
     "furigana": "あびらちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1229,11 +853,6 @@
     "region": "胆振",
     "furigana": "むかわちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1244,11 +863,6 @@
     "region": "日高",
     "furigana": "ひだかちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "dnp",
     "tenant_id": 71
@@ -1260,11 +874,6 @@
     "region": "日高",
     "furigana": "びらとりちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1274,11 +883,6 @@
     "region": "日高",
     "furigana": "にいかっぷちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1288,11 +892,6 @@
     "region": "日高",
     "furigana": "うらかわちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "浦河町議会の年別本会議一覧から、定例会・臨時会の会議録PDFを取り込みました。令和8年第2回定例会は作成中のため未取得です。",
@@ -1306,9 +905,6 @@
     "region": "日高",
     "furigana": "さまにちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1321,9 +917,6 @@
     "region": "日高",
     "furigana": "えりもちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより・議会構成などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1336,11 +929,6 @@
     "region": "日高",
     "furigana": "しんひだかちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "令和6年はHTML会議録、令和7年は日別PDF会議録として取り込みました。テーマ別データは話者名寄せの追加対応待ちです。",
@@ -1353,11 +941,6 @@
     "region": "渡島",
     "furigana": "まつまえちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1367,11 +950,6 @@
     "region": "渡島",
     "furigana": "しりうちちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1382,11 +960,6 @@
     "region": "渡島",
     "furigana": "きこないちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1397,11 +970,6 @@
     "region": "渡島",
     "furigana": "ななえちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1411,9 +979,6 @@
     "region": "渡島",
     "furigana": "しかべちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトのYouTube配信ページに、公式記録である会議録は議会事務局で閲覧できると案内されており、Web本文公開は確認できませんでした。",
@@ -1426,11 +991,6 @@
     "region": "渡島",
     "furigana": "もりまち",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "森町議会の通年会期制の月会議PDFを取り込みました。",
@@ -1444,11 +1004,6 @@
     "region": "渡島",
     "furigana": "やくもちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "令和6年公開分の本会議会議録を追加済み。令和7年は結果ページのみで会議録本文は未公開です。",
@@ -1461,11 +1016,6 @@
     "region": "渡島",
     "furigana": "おしゃまんべちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1475,9 +1025,6 @@
     "region": "檜山",
     "furigana": "かみのくにちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは一般質問の質問・答弁要旨で、本会議全体の会議録本文としては扱えないため取込対象外です。",
@@ -1490,11 +1037,6 @@
     "region": "檜山",
     "furigana": "あっさぶちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "厚沢部町議会の年別議事録ページから、本会議の議事録本文PDFを取り込みました。",
@@ -1508,9 +1050,6 @@
     "region": "檜山",
     "furigana": "おとべちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイト検索では議会だより・議員名簿などが中心で、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1523,9 +1062,6 @@
     "region": "檜山",
     "furigana": "おくしりちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのはおくしり議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1538,11 +1074,6 @@
     "region": "檜山",
     "furigana": "いまかねちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "今金町議会の会議録閲覧ページから、令和6年・令和7年・令和8年2月の定例会・臨時会PDFを取り込みました。",
@@ -1555,11 +1086,6 @@
     "region": "檜山",
     "furigana": "せたなちょう",
     "level": "municipality",
-    "features": [
-      "minutes",
-      "members",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1570,11 +1096,6 @@
     "region": "上川",
     "furigana": "しべつし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1585,11 +1106,6 @@
     "region": "上川",
     "furigana": "ふらのし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1600,9 +1116,6 @@
     "region": "上川",
     "furigana": "たかすちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより孔雀草・議会開催のお知らせ・議決結果などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1615,9 +1128,6 @@
     "region": "上川",
     "furigana": "ひがしかぐらちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1630,9 +1140,6 @@
     "region": "上川",
     "furigana": "とうまちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは町議会定例会の一般質問と答弁で、本会議全体の会議録本文のWeb公開は確認できませんでした。",
@@ -1645,9 +1152,6 @@
     "region": "上川",
     "furigana": "ぴっぷちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会開会のお知らせ・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1660,9 +1164,6 @@
     "region": "上川",
     "furigana": "あいべつちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは本会議日程・議会だより・一般質問動画で、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1675,11 +1176,6 @@
     "region": "上川",
     "furigana": "ひがしかわちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1689,11 +1185,6 @@
     "region": "上川",
     "furigana": "びえいちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1704,11 +1195,6 @@
     "region": "上川",
     "furigana": "かみふらのちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1718,9 +1204,6 @@
     "region": "上川",
     "furigana": "なかふらのちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより・議会白書などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1733,9 +1216,6 @@
     "region": "上川",
     "furigana": "みなみふらのちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで公開されているPDFは会議結果と一般質問で、本会議全体の会議録本文のWeb公開は確認できませんでした。",
@@ -1748,11 +1228,6 @@
     "region": "上川",
     "furigana": "しむかっぷむら",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1762,9 +1237,6 @@
     "region": "上川",
     "furigana": "わっさむちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトに、本会議の議事録は町立図書館で公開し、インターネット公開は未実施と明記されています。",
@@ -1777,9 +1249,6 @@
     "region": "上川",
     "furigana": "けんぶちちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイト内検索と議会ページを再確認しましたが、公開されているのは議会だより・YouTube配信・議会情報中心で、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1792,11 +1261,6 @@
     "region": "上川",
     "furigana": "しもかわちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -1807,11 +1271,6 @@
     "region": "上川",
     "furigana": "びふかちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1821,9 +1280,6 @@
     "region": "上川",
     "furigana": "おといねっぷむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのはおといねっぷ議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1836,11 +1292,6 @@
     "region": "上川",
     "furigana": "ほろかないちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "幌加内町議会の年別会議録・審議結果ページから、本会議の定例会・臨時会PDFを取り込みました。令和6年ページはPDF掲載がないため対象外です。",
@@ -1854,11 +1305,6 @@
     "region": "留萌",
     "furigana": "るもいし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "gijiroku_com"
   },
@@ -1869,9 +1315,6 @@
     "region": "留萌",
     "furigana": "ましけちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会構成・傍聴案内・議会広報・開催案内などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1884,9 +1327,6 @@
     "region": "留萌",
     "furigana": "おびらちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは会議予定・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1899,9 +1339,6 @@
     "region": "留萌",
     "furigana": "とままえちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイト検索では議会だよりなどが中心で、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1914,11 +1351,6 @@
     "region": "留萌",
     "furigana": "はぼろちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -1928,9 +1360,6 @@
     "region": "留萌",
     "furigana": "しょさんべつむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "会議録PDFは公開されていますが、令和6年・令和7年PDFも現行のPDFテキスト抽出では本文0文字の画像系PDFのためOCR処理が必要です。",
@@ -1943,11 +1372,6 @@
     "region": "留萌",
     "furigana": "えんべつちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "遠別町議会会議録ページから、令和6年・令和7年・令和8年1月の定例会・臨時会PDFを取り込みました。",
@@ -1960,9 +1384,6 @@
     "region": "留萌",
     "furigana": "てしおちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは議会だより・視察研修報告書などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -1975,9 +1396,6 @@
     "region": "宗谷",
     "furigana": "さるふつむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで公開されている村議会議事録PDFは一般質問全員分・質問者別PDFで、本会議全体の会議録本文としては扱えないため取込対象外です。",
@@ -1990,9 +1408,6 @@
     "region": "宗谷",
     "furigana": "はまとんべつちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議決結果・議事概要などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2005,11 +1420,6 @@
     "region": "宗谷",
     "furigana": "なかとんべつちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "公式サイトの年別会議録ページから、令和6年・令和7年の定例会PDFを取り込みました。",
@@ -2022,11 +1432,6 @@
     "region": "宗谷",
     "furigana": "えさしちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2036,11 +1441,6 @@
     "region": "宗谷",
     "furigana": "とよとみちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "豊富町議会の議事録ページから、令和6年の定例議会・臨時議会PDFを取り込みました。令和7年分は議事概要PDFのため取込対象外です。",
@@ -2053,9 +1453,6 @@
     "region": "宗谷",
     "furigana": "れぶんちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の審議結果で、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2068,9 +1465,6 @@
     "region": "宗谷",
     "furigana": "りしりちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会概要・議会だより等で、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2083,9 +1477,6 @@
     "region": "宗谷",
     "furigana": "りしりふじちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより利尻富士・議会概要などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2098,11 +1489,6 @@
     "region": "宗谷",
     "furigana": "ほろのべちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2113,11 +1499,6 @@
     "region": "オホーツク",
     "furigana": "あばしりし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2128,11 +1509,6 @@
     "region": "オホーツク",
     "furigana": "もんべつし",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2143,11 +1519,6 @@
     "region": "オホーツク",
     "furigana": "びほろちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2157,11 +1528,6 @@
     "region": "オホーツク",
     "furigana": "つべつちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2172,9 +1538,6 @@
     "region": "オホーツク",
     "furigana": "しゃりちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議事日程・一般質問通告などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2187,11 +1550,6 @@
     "region": "オホーツク",
     "furigana": "きよさとちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2202,11 +1560,6 @@
     "region": "オホーツク",
     "furigana": "こしみずちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2216,11 +1569,6 @@
     "region": "オホーツク",
     "furigana": "くんねっぷちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2231,11 +1579,6 @@
     "region": "オホーツク",
     "furigana": "おけとちょう",
     "level": "municipality",
-    "features": [
-      "minutes",
-      "members",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2246,9 +1589,6 @@
     "region": "オホーツク",
     "furigana": "さろまちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトの会議録ページは令和2年までの掲載で、令和3年以降の本会議会議録本文はWeb公開が確認できませんでした。",
@@ -2261,11 +1601,6 @@
     "region": "オホーツク",
     "furigana": "えんがるちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "遠軽町議会の会議録ページから、令和6年・令和7年・令和8年2月の定例会・臨時会PDFを取り込みました。",
@@ -2279,9 +1614,6 @@
     "region": "オホーツク",
     "furigana": "ゆうべつちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトに会議録PDFはありますが、現行のPDFテキスト抽出では本文が取得できない画像系PDFのためOCR処理が必要です。",
@@ -2294,9 +1626,6 @@
     "region": "オホーツク",
     "furigana": "たきのうえちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは会議結果・議会広報・瓦版などの要約資料で、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2309,9 +1638,6 @@
     "region": "オホーツク",
     "furigana": "おこっぺちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の日程、一般質問事項、議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2324,9 +1650,6 @@
     "region": "オホーツク",
     "furigana": "にしおこっぺむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会のあらまし・議員名簿などで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2339,9 +1662,6 @@
     "region": "オホーツク",
     "furigana": "おうむちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "議会議事録検索ページは確認できましたが、公開対象は一般質問単位の議事録が中心で、本会議全体の会議録本文としては扱えないため取込対象外です。",
@@ -2354,11 +1674,6 @@
     "region": "オホーツク",
     "furigana": "おおぞらちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "大空町議会の本会議会議録ページから、令和6年の定例会・臨時会PDFを取り込みました。令和7年以降の会議録PDFは公式ページで未確認です。",
@@ -2371,11 +1686,6 @@
     "region": "十勝",
     "furigana": "おとふけちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "音更町議会会議録検索の会議録ライブラリから、令和6年・令和7年・令和8年1月の定例会・臨時会本文HTMLを取り込みました。",
@@ -2388,11 +1698,6 @@
     "region": "十勝",
     "furigana": "しほろちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "士幌町議会の年別会議録・議案等ページから、テキスト抽出できる会議録PDFを取り込みました。",
@@ -2406,11 +1711,6 @@
     "region": "十勝",
     "furigana": "かみしほろちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "上士幌町議会の会議録ページから本会議会議録PDFを取り込みました。",
@@ -2424,11 +1724,6 @@
     "region": "十勝",
     "furigana": "しかおいちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2439,11 +1734,6 @@
     "region": "十勝",
     "furigana": "しんとくちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2453,11 +1743,6 @@
     "region": "十勝",
     "furigana": "しみずちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "html_inhouse"
   },
@@ -2468,11 +1753,6 @@
     "region": "十勝",
     "furigana": "なかさつないむら",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2483,11 +1763,6 @@
     "region": "十勝",
     "furigana": "さらべつむら",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2497,11 +1772,6 @@
     "region": "十勝",
     "furigana": "たいきちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2512,11 +1782,6 @@
     "region": "十勝",
     "furigana": "ひろおちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2527,11 +1792,6 @@
     "region": "十勝",
     "furigana": "まくべつちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse",
     "minutes_access": "restricted",
@@ -2544,11 +1804,6 @@
     "region": "十勝",
     "furigana": "とよころちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2558,11 +1813,6 @@
     "region": "十勝",
     "furigana": "ほんべつちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "system": "pdf_inhouse"
   },
@@ -2573,11 +1823,6 @@
     "region": "十勝",
     "furigana": "あしょろちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "足寄町議会会議録ページの年別表から、令和6年・令和7年・令和8年1月の定例会・臨時会PDFを取り込みました。",
@@ -2590,11 +1835,6 @@
     "region": "十勝",
     "furigana": "りくべつちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2604,11 +1844,6 @@
     "region": "十勝",
     "furigana": "うらほろちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "浦幌町議会の年別会議録ページから、定例会・臨時会の日別会議録PDFを取り込みました。",
@@ -2622,11 +1857,6 @@
     "region": "釧路",
     "furigana": "くしろちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "釧路町議会の年別一覧から会議録詳細ページを辿り、本会議の定例会・臨時会PDFを取り込みました。",
@@ -2639,11 +1869,6 @@
     "region": "釧路",
     "furigana": "あっけしちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2653,11 +1878,6 @@
     "region": "釧路",
     "furigana": "はまなかちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2667,11 +1887,6 @@
     "region": "釧路",
     "furigana": "しべちゃちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2681,9 +1896,6 @@
     "region": "釧路",
     "furigana": "てしかがちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会動画と会議結果PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2696,9 +1908,6 @@
     "region": "釧路",
     "furigana": "つるいむら",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会の活動状況と審議結果PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2711,9 +1920,6 @@
     "region": "釧路",
     "furigana": "しらぬかちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは議事日程表・会議結果で、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2726,11 +1932,6 @@
     "region": "根室",
     "furigana": "べつかいちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true
   },
   {
@@ -2740,9 +1941,6 @@
     "region": "根室",
     "furigana": "なかしべつちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで公開されているのは一般質問・委員会代表質問のホームページ掲載用PDFで、正式な本会議会議録本文とは異なると明記されているため取込対象外です。",
@@ -2755,9 +1953,6 @@
     "region": "根室",
     "furigana": "しべつちょう",
     "level": "municipality",
-    "features": [
-      "members"
-    ],
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会日程と審議事項PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
@@ -2770,11 +1965,6 @@
     "region": "根室",
     "furigana": "らうすちょう",
     "level": "municipality",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "羅臼町議会会議録ページから、令和6年・令和7年の定例会・臨時会PDFを取り込みました。",
@@ -2786,11 +1976,6 @@
     "council_name": "北海道議会",
     "region": "北海道",
     "furigana": "ほっかいどう",
-    "features": [
-      "members",
-      "minutes",
-      "themes"
-    ],
     "level": "prefecture",
     "active": true,
     "system": "gijiroku_com",

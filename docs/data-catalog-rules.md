@@ -1,6 +1,6 @@
 # データ台帳と読み取りルール
 
-地方議会ドットコムでは、自治体ごとの公開機能を `municipalities.json` の手書き `features` だけで判定しない。
+地方議会ドットコムでは、自治体ごとの公開機能を `municipalities.json` の手書き `features` で判定しない。
 サイトで表示する導線は、原則として `site/data/{slug}/` 配下の実ファイルから生成する台帳を読む。
 
 ## 単一の入口
@@ -31,6 +31,7 @@
 
 画面、サイトマップ、MCP の `list_municipalities` はこの台帳を優先して読む。
 `municipalities.json` は自治体の基本メタデータ、スクレイピング設定、未公開確認状況を持つ。
+`features` は持たせない。
 
 ## 運用ルール
 
@@ -38,6 +39,7 @@
 - 導線を出すかどうかは `hasCityCapability(slug, key)` を使う。
 - 静的生成対象の市町村一覧は `site/src/lib/staticCityParams.ts` を使う。
 - capability が無いページは `generateStaticParams` に含めず、`dynamicParams = false` で直接アクセスも 404 にする。
+- `municipalities.json` に `features` を戻さない。
 - `features.includes(...)` を新規に増やさない。
-- 例外的に `municipalities.json` の `features` を参照する場合は、旧データ移行や差分調査のためであることを明示する。
+- MCP や表示文言として「features」という名前を使う場合も、元データは capability 台帳にする。
 - 検証は `node scripts/verify-municipality.mjs <slug>` で行い、台帳と実ファイルの不一致を確認する。

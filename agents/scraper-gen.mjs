@@ -12,10 +12,10 @@
  *   1. URLのページ構造をClaudeが解析
  *   2. Pythonスクレイパーを自動生成 → scraper/{slug}/scrape_members.py
  *   3. スクレイパーを実行 → data/{slug}/members.json を生成
- *   4. municipalities.json の features に "members" を追加
+ *   4. data/{slug}/members.json の存在により capability 台帳へ反映
  */
 import { spawnSync } from "child_process";
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
+import { readFileSync, existsSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -25,16 +25,6 @@ const ROOT = path.resolve(__dirname, "..");
 function readMunicipalities() {
   const fp = path.join(ROOT, "data", "municipalities.json");
   return JSON.parse(readFileSync(fp, "utf-8"));
-}
-
-function writeMunicipalities(data) {
-  const fp = path.join(ROOT, "data", "municipalities.json");
-  writeFileSync(fp, JSON.stringify(data, null, 2) + "\n");
-  // site/data にも同期
-  const siteFp = path.join(ROOT, "site", "data", "municipalities.json");
-  if (existsSync(siteFp)) {
-    writeFileSync(siteFp, JSON.stringify(data, null, 2) + "\n");
-  }
 }
 
 async function generateScraper(slug, url) {
@@ -154,14 +144,7 @@ ${exampleOutput}
     }
   }
 
-  // municipalities.json を更新
-  const updatedMunis = readMunicipalities();
-  const target = updatedMunis.find((m) => m.slug === slug);
-  if (target && !target.features.includes("members")) {
-    target.features.unshift("members"); // 先頭に追加
-    writeMunicipalities(updatedMunis);
-    console.log(`✅ municipalities.json: ${slug} に "members" を追加しました`);
-  }
+  console.log(`✅ members.json を確認しました。公開判定は capability 台帳の再生成で反映されます`);
 
   // members.json から件数を表示
   try {

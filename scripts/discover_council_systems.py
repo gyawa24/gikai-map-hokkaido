@@ -41,6 +41,14 @@ SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": UA})
 
 
+def has_minutes_data(slug: str) -> bool:
+    return any(
+        (ROOT / base / slug / rel).exists()
+        for base in ("data", "site/data")
+        for rel in ("minutes/index.json", "index.json")
+    )
+
+
 SYSTEM_SIGNATURES = [
     ("dnp_kaigiroku", re.compile(r"ssp\.kaigiroku\.net", re.I)),
     ("gijiroku_com", re.compile(r"gijiroku\.com", re.I)),
@@ -237,7 +245,7 @@ def main() -> int:
 
     targets = [
         m for m in municipalities
-        if not (m.get("features") and "minutes" in m["features"])
+        if not has_minutes_data(m["slug"])
         and m["slug"] != "hokkaido"
     ]
 

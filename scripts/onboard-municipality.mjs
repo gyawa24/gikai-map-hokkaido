@@ -19,7 +19,6 @@ const FIELD_ORDER = [
   "council_name",
   "region",
   "furigana",
-  "features",
   "level",
   "active",
   "tenant_id",
@@ -42,7 +41,6 @@ Required when creating a new municipality:
   --furigana <furigana>
 
 Optional:
-  --features <csv>            e.g. members,minutes
   --level <municipality|prefecture>
   --active <true|false>
   --tenant-id <number>
@@ -64,7 +62,6 @@ Examples:
     --council-name 例市議会 \\
     --region 石狩 \\
     --furigana れいし \\
-    --features members,minutes \\
     --tenant-id 999 \\
     --system dnp \\
     --build-segments \\
@@ -107,6 +104,9 @@ function parseArgs(argv) {
       throw new Error(`Unknown argument: ${arg}`);
     }
     const key = arg.slice(2);
+    if (key === "features") {
+      throw new Error("--features は廃止済みです。公開判定は data/{slug}/ の実ファイルから生成されます。");
+    }
     const value = argv[i + 1];
     if (value == null || value.startsWith("--")) {
       throw new Error(`Missing value for --${key}`);
@@ -116,15 +116,6 @@ function parseArgs(argv) {
   }
 
   return options;
-}
-
-function parseFeatures(raw) {
-  if (raw == null) return undefined;
-  if (!raw.trim()) return [];
-  return raw
-    .split(",")
-    .map((item) => item.trim())
-    .filter(Boolean);
 }
 
 function parseBoolean(raw, fallback) {
@@ -300,7 +291,6 @@ function mergeEntry(existingEntry, options) {
     council_name: options["council-name"] ?? base.council_name,
     region: options.region ?? base.region,
     furigana: options.furigana ?? base.furigana,
-    features: parseFeatures(options.features) ?? base.features ?? [],
     level: options.level ?? base.level ?? "municipality",
     active: parseBoolean(options.active, base.active ?? true),
     tenant_id: parseInteger(options["tenant-id"], base.tenant_id),

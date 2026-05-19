@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { getCityCapability } from "@/lib/cityCapabilities";
+import { getAvailableCityCapabilityKeys, getCityCapability } from "@/lib/cityCapabilities";
 import type { Municipality } from "@/lib/municipalities";
 import { getMunicipalities } from "@/lib/municipalities";
 
@@ -233,7 +233,7 @@ function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>)
     hasMinutes,
     hasTopicData: capability.capabilities.themes || hasThemesData(cityDir),
     hasSessionsData: capability.capabilities.sessions,
-    otherInfo: otherInfo(capability.features),
+    otherInfo: otherInfo(getAvailableCityCapabilityKeys(capability)),
     recordState: minutesState(entry, hasMinutes),
     sourceLabel: source.label,
     sourceHref: source.href,

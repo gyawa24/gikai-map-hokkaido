@@ -41,6 +41,15 @@ REQUEST_INTERVAL = 0.5
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": UA})
 
+
+def has_minutes_data(slug: str) -> bool:
+    return any(
+        (ROOT / base / slug / rel).exists()
+        for base in ("data", "site/data")
+        for rel in ("minutes/index.json", "index.json")
+    )
+
+
 HREF_RE = re.compile(r'href=["\']([^"\']+)["\']', re.I)
 A_TAG_RE = re.compile(
     r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>([\s\S]{1,300}?)</a>', re.I
@@ -287,7 +296,7 @@ def main():
     with open(DISCOVERY_FILE, encoding="utf-8") as f:
         discovery = json.load(f)
 
-    done = {m["slug"] for m in munis if "minutes" in (m.get("features") or [])}
+    done = {m["slug"] for m in munis if has_minutes_data(m["slug"])}
     prev_map = {r["slug"]: r for r in discovery["results"]}
 
     targets = []

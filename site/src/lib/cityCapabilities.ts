@@ -16,7 +16,6 @@ export type CityCapabilityKey =
 
 export type CityCapability = {
   slug: string;
-  features: CityCapabilityKey[];
   capabilities: Record<CityCapabilityKey, boolean>;
   paths: Partial<Record<CityCapabilityKey, string>>;
 };
@@ -63,7 +62,7 @@ function emptyCityCapability(slug: string): CityCapability {
   const capabilities = Object.fromEntries(
     CAPABILITY_DEFINITIONS.map((definition) => [definition.key, false])
   ) as Record<CityCapabilityKey, boolean>;
-  return { slug, features: [], capabilities, paths: {} };
+  return { slug, capabilities, paths: {} };
 }
 
 export function getCityCapability(slug: string): CityCapability {
@@ -79,4 +78,14 @@ export function getCityCapabilities(): Record<string, CityCapability> {
 export function hasCityCapability(slug: string, key: string): boolean {
   if (!CAPABILITY_DEFINITIONS.some((definition) => definition.key === key)) return false;
   return Boolean(getCityCapability(slug).capabilities[key as CityCapabilityKey]);
+}
+
+export function getAvailableCityCapabilityKeys(
+  capability: CityCapability,
+  { includeInternal = false }: { includeInternal?: boolean } = {}
+): CityCapabilityKey[] {
+  return CAPABILITY_DEFINITIONS
+    .filter((definition) => includeInternal || definition.key !== "segments")
+    .filter((definition) => capability.capabilities[definition.key])
+    .map((definition) => definition.key);
 }

@@ -64,7 +64,7 @@
 
 - scraper 共通化
 - `segments` 生成の自動化
-- metadata / features / data の整合性チェック
+- metadata / capability 台帳 / data の整合性チェック
 - 自治体追加の一気通しコマンド化
 - `minutes` 再取得の一括実行
 

@@ -15,6 +15,22 @@ import fs from "node:fs";
 import path from "node:path";
 
 const PUBLIC_BASE = "https://chihougikai.com";
+const CAPABILITY_DEFINITIONS = {
+  members: ["members.json"],
+  minutes: ["minutes/index.json", "index.json"],
+  sessions: ["sessions/index.json"],
+  themes: ["members_activity.json"],
+  budgets: ["budgets/index.json"],
+  decisions: ["decisions.json"],
+  schedule: ["schedule.json"],
+  newsletter: ["newsletter.json"],
+  election: ["election.json"],
+  plan: ["comprehensive_plan.json"],
+  segments: ["segments/_index.json"],
+};
+const PUBLIC_CAPABILITY_KEYS = Object.keys(CAPABILITY_DEFINITIONS).filter(
+  (key) => key !== "segments"
+);
 
 function tokenize(q) {
   return q.trim().split(/\s+/).filter(Boolean);
@@ -74,13 +90,24 @@ export function registerTools(server, options) {
     }
     return _cityCapabilities;
   }
-  function getCityFeatures(slug, fallbackFeatures = []) {
-    return getCityCapabilities()[slug]?.features ?? fallbackFeatures ?? [];
+  function hasCapabilityFile(slug, capability) {
+    const paths = CAPABILITY_DEFINITIONS[capability];
+    if (!paths) return false;
+    return paths.some((relativePath) =>
+      fs.existsSync(path.join(/*turbopackIgnore: true*/ dataDir, slug, relativePath))
+    );
   }
-  function hasCityCapability(slug, capability, fallbackFeatures = []) {
+  function getCityFeatures(slug) {
+    const city = getCityCapabilities()[slug];
+    if (city?.capabilities) {
+      return PUBLIC_CAPABILITY_KEYS.filter((capability) => Boolean(city.capabilities[capability]));
+    }
+    return PUBLIC_CAPABILITY_KEYS.filter((capability) => hasCapabilityFile(slug, capability));
+  }
+  function hasCityCapability(slug, capability) {
     const city = getCityCapabilities()[slug];
     if (city) return Boolean(city.capabilities?.[capability]);
-    return fallbackFeatures.includes(capability);
+    return hasCapabilityFile(slug, capability);
   }
   function isSafeFileToken(value) {
     return typeof value === "string" && /^[A-Za-z0-9._-]+$/.test(value);
@@ -140,13 +167,13 @@ export function registerTools(server, options) {
       if (active_only) list = list.filter((m) => m.active);
       if (region) list = list.filter((m) => m.region === region);
       if (has_feature)
-        list = list.filter((m) => hasCityCapability(m.slug, has_feature, m.features ?? []));
+        list = list.filter((m) => hasCityCapability(m.slug, has_feature));
       const result = list.map((m) => ({
         slug: m.slug,
         name: m.name,
         council_name: m.council_name,
         region: m.region,
-        features: getCityFeatures(m.slug, m.features ?? []),
+        features: getCityFeatures(m.slug),
         system: m.system ?? null,
         level: m.level ?? null,
         url: `${PUBLIC_BASE}/${m.slug}`,
@@ -533,7 +560,7 @@ export function registerTools(server, options) {
       return getMunicipalities()
         .filter((m) => m.active)
         .filter((m) => !cityFilter || cityFilter.has(m.slug))
-        .filter((m) => hasCityCapability(m.slug, "budgets", m.features ?? []));
+        .filter((m) => hasCityCapability(m.slug, "budgets"));
     }
     function readBudgetPageText(slug, year, pageFile) {
       if (typeof pageFile !== "string") return "";

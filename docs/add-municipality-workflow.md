@@ -14,7 +14,6 @@ node scripts/onboard-municipality.mjs \
   --council-name 例市議会 \
   --region 石狩 \
   --furigana れいし \
-  --features members,minutes \
   --tenant-id 999 \
   --system dnp
 ```
@@ -47,6 +46,7 @@ node scripts/onboard-municipality.mjs \
 
 - スクレイパの出力先は `data/{slug}/` を正とする
 - `site/data/{slug}/` は手で編集しない
+- サイトの導線は `site/data/{slug}/` の実ファイルから capability 台帳として生成される
 
 ## 3. `segments` を生成して同期する
 
@@ -76,7 +76,7 @@ node scripts/refresh-minutes.mjs --all-published --years 2025,2026 --verify --co
 - 自治体ごとの既知スクレイパを自動判定して `minutes` を再取得
 - `build-segments.mjs` まで続けて実行
 - 必要なら `verify-municipality.mjs` と `generate-municipality-coverage.mjs` も実行
-- `members only` で新規に公開できそうな自治体は、別途 `municipalities.json` の feature 反映判断を残す
+- `members only` で新規に公開できそうな自治体は、`members.json` の配置と同期で公開判定に反映する
 
 ## 4. 導線の整合性を確認する
 
@@ -91,7 +91,7 @@ node scripts/verify-municipality.mjs sample
 このコマンドは:
 
 - `data/municipalities.json` と `site/data/municipalities.json` の entry 同期を確認
-- `features` と `members.json` / `minutes/index.json` の整合性を確認
+- 生成された capability 台帳と `members.json` / `minutes/index.json` の整合性を確認
 - `data/{slug}/` と `site/data/{slug}/` の主要ファイル同期を確認
 - 議事録がある市で `segments/_index.json` が揃っているか確認
 
@@ -137,7 +137,7 @@ npm run dev
 
 ## 補足
 
-- `features` は公開できる機能だけを入れる
-- `minutes` を付ける前に `data/{slug}/minutes/index.json` が揃っているか確認する
-- `members` を付けても `members.json` が無ければ画面は「準備中」表示になる
+- `municipalities.json` に `features` は入れない
+- `minutes` を公開する前に `data/{slug}/minutes/index.json` が揃っているか確認する
+- `members.json` が無ければ議員導線は capability 台帳に出ない
 - browser 制約で画面確認がすぐできない時も、最低限 `verify-municipality.mjs` までは通してから次に進む

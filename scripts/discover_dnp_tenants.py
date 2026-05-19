@@ -26,6 +26,14 @@ REQUEST_INTERVAL = 1.5
 UA = "Mozilla/5.0 (compatible; gikai-map-hokkaido/discovery)"
 
 
+def has_minutes_data(slug: str) -> bool:
+    return any(
+        (ROOT / base / slug / rel).exists()
+        for base in ("data", "site/data")
+        for rel in ("minutes/index.json", "index.json")
+    )
+
+
 def fetch_tenant_id(slug: str) -> tuple[int | None, str]:
     url = f"https://ssp.kaigiroku.net/tenant/{slug}/js/tenant.js"
     try:
@@ -49,7 +57,7 @@ def main() -> int:
 
     targets = [
         m for m in municipalities
-        if not (m.get("features") and "minutes" in m["features"])
+        if not has_minutes_data(m["slug"])
     ]
 
     print(f"対象: {len(targets)} 市町村", flush=True)

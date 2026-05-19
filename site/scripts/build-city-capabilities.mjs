@@ -51,20 +51,15 @@ function buildCapabilities() {
       if (foundPath) paths[definition.key] = foundPath;
     }
 
-    const features = CAPABILITY_DEFINITIONS
-      .filter((definition) => capabilities[definition.key] && definition.key !== "segments")
-      .map((definition) => definition.key);
-
     cities[municipality.slug] = {
       slug: municipality.slug,
-      features,
       capabilities,
       paths,
     };
   }
 
   return {
-    version: 1,
+    version: 2,
     generated_at: new Date().toISOString(),
     source: "site/data",
     cities,

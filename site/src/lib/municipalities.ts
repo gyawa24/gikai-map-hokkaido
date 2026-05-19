@@ -8,7 +8,6 @@ export type Municipality = {
   region: string;
   furigana: string;
   level: "municipality" | "prefecture";
-  features: string[];
   active: boolean;
   tenant_id?: number;
   system?: string;

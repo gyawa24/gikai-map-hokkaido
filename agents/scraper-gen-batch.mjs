@@ -11,7 +11,7 @@
  *   --limit <N>       処理件数上限（試験実行向け）
  *   --dry-run         対象リストを表示するだけで実行しない
  *
- * 既定: active:true かつ "members" 未取得 かつ level=municipality の市町村を順次処理。
+ * 既定: active:true かつ members.json 未取得 かつ level=municipality の市町村を順次処理。
  * 道議会 (level=prefecture) は独自ASPのためこのbatch対象外。
  */
 import { spawnSync } from "child_process";
@@ -35,6 +35,13 @@ function writeMunicipalities(data) {
   if (existsSync(siteFp)) {
     writeFileSync(siteFp, JSON.stringify(data, null, 2) + "\n");
   }
+}
+
+function hasMembersData(slug) {
+  return (
+    existsSync(path.join(ROOT, "data", slug, "members.json")) ||
+    existsSync(path.join(ROOT, "site", "data", slug, "members.json"))
+  );
 }
 
 async function generateForCity(muni) {
@@ -134,16 +141,11 @@ ${exampleScraper.slice(0, 3000)}
     return false;
   }
 
-  // municipalities.json を更新
+  // stub だった場合は active に昇格
   const munis = readMunicipalities();
   const target = munis.find((m) => m.slug === muni.slug);
   if (target) {
     let changed = false;
-    if (!target.features.includes("members")) {
-      target.features.unshift("members");
-      changed = true;
-    }
-    // stub だった場合は active に昇格
     if (!target.active) {
       target.active = true;
       changed = true;
@@ -180,7 +182,7 @@ async function main() {
   let targets = munis.filter(
     (m) =>
       m.level !== "prefecture" &&
-      !m.features.includes("members") &&
+      !hasMembersData(m.slug) &&
       (m.active || args.includeStubs)
   );
   if (args.slug) targets = targets.filter((m) => m.slug === args.slug);

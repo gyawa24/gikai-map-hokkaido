@@ -335,7 +335,7 @@ function main() {
   lines.push("- `themes`: `data/{slug}/members_activity.json` があり、かつ空ではない");
   lines.push("- `会議録`: `data/{slug}/sessions/index.json` がある");
   lines.push("- `議事録状況`: `minutes_status` と実ファイルの両方を見て表示");
-  lines.push("- 機能の公開可否は `site/scripts/build-city-capabilities.mjs` で生成する台帳に寄せる。`municipalities.json` の旧 `features` は判定に使わない。");
+  lines.push("- 機能の公開可否は `site/scripts/build-city-capabilities.mjs` で生成する台帳に寄せる。`municipalities.json` に `features` は持たせない。");
 
   fs.writeFileSync(DOC_PATH, `${lines.join("\n")}\n`, "utf-8");
   console.log(`wrote ${path.relative(REPO_ROOT, DOC_PATH)}`);

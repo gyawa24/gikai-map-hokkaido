@@ -51,12 +51,6 @@ function relative(targetPath) {
   return path.relative(REPO_ROOT, targetPath);
 }
 
-function comparableMunicipality(entry) {
-  if (!entry) return null;
-  const { features, ...rest } = entry;
-  return rest;
-}
-
 async function compareFiles(issues, rootPath, sitePath, label) {
   const [rootText, siteText] = await Promise.all([readIfExists(rootPath), readIfExists(sitePath)]);
 
@@ -94,18 +88,24 @@ async function main() {
     issues.push(`missing municipality entry: data/municipalities.json -> ${slug}`);
   } else {
     checks.push(`entry found in data/municipalities.json`);
+    if ("features" in rootEntry) {
+      issues.push(`retired metadata field found: data/municipalities.json -> ${slug}.features`);
+    }
   }
 
   if (!siteEntry) {
     issues.push(`missing municipality entry: site/data/municipalities.json -> ${slug}`);
   } else {
     checks.push(`entry found in site/data/municipalities.json`);
+    if ("features" in siteEntry) {
+      issues.push(`retired metadata field found: site/data/municipalities.json -> ${slug}.features`);
+    }
   }
 
   if (
     rootEntry &&
     siteEntry &&
-    JSON.stringify(comparableMunicipality(rootEntry)) !== JSON.stringify(comparableMunicipality(siteEntry))
+    JSON.stringify(rootEntry) !== JSON.stringify(siteEntry)
   ) {
     issues.push(`municipality metadata out of sync between data/ and site/data/: ${slug}`);
   } else if (rootEntry && siteEntry) {
