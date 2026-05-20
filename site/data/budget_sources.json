@@ -58,18 +58,18 @@
   {
     "slug": "muroran",
     "year": "2026",
-    "status": "取得候補",
+    "status": "取込済み",
     "source_label": "予算",
     "source_href": "https://www.city.muroran.lg.jp/content/?content=1921",
-    "note": "令和8年度一般会計・特別会計・公営企業会計予算書の公開元を確認済み。公開用OCRへの反映は準備中"
+    "note": "令和8年度の予算概要・説明資料・一般会計・特別会計・公営企業会計予算書を結合し、390ページの原本画像・検索用テキストとして取込済み。一般会計予算書は画像PDFのためOCR補完"
   },
   {
     "slug": "kitahiroshima",
     "year": "2026",
-    "status": "取得候補",
-    "source_label": "令和8年度当初予算案記者会見記録",
-    "source_href": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/detail/00158503.html",
-    "note": "令和8年度当初予算案の概要ページを確認済み。予算書本体の公開元確認と公開用OCRへの反映は準備中"
+    "status": "取込済み",
+    "source_label": "財政・予算決算関係 令和8年度",
+    "source_href": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/detail/00158282.html",
+    "note": "令和8年度の一般会計・特別会計・予算編成方針・予算案のポイント・附属資料に加え、水道事業会計・下水道事業会計予算書を結合し、535ページの原本画像・検索用テキストとして取込済み"
   },
   {
     "slug": "asahikawa",

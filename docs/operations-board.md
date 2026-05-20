@@ -36,10 +36,10 @@
 
 ### Operations
 
-- 室蘭市の予算OCR取込方針を決める
-  - 目的: 令和8年度一般会計・特別会計・公営企業会計PDFが重めなので、分割取込・画像品質・公開サイズの方針を決める
-  - 完了条件: 最初に取り込むPDF範囲、画像品質、台帳更新方針を決め、取込に入れる状態にする
-  - 主に触る場所: `docs/budget-ocr-priority.md`, `data/muroran/budgets/`, `site/data/budget_sources.json`
+- 札幌市の予算OCR公開範囲を決める
+  - 目的: 令和8年度予算資料の規模が大きいため、公開サイトに出す範囲とローカルMCP専用に留める範囲を分ける
+  - 完了条件: PDF構成・サイズ・ページ数を確認し、最初に取り込む範囲を `docs/budget-ocr-priority.md` に明記する
+  - 主に触る場所: `docs/budget-ocr-priority.md`, `site/data/budget_sources.json`
 
 ### Coverage
 
@@ -85,6 +85,8 @@
 
 ## Done
 
+- 北広島市の令和8年度一般会計・特別会計・予算編成方針・予算案のポイント・附属資料・水道事業会計・下水道事業会計予算書7本を結合し、535ページの公開OCRデータとして `data/kitahiroshima/budgets/2026/` と `site/data/kitahiroshima/budgets/2026/` に取込。原本画像は軽量設定（95dpi / quality 60）で生成
+- 室蘭市の令和8年度予算概要・説明資料・一般会計・特別会計・公営企業会計予算書11本を結合し、390ページの公開OCRデータとして `data/muroran/budgets/2026/` と `site/data/muroran/budgets/2026/` に取込。一般会計予算書は画像PDFのためOCR補完し、原本画像は軽量設定（100dpi / quality 64）で生成
 - 江別市の令和8年度各会計予算書及び予算説明書を単一PDFから、261ページの公開OCRデータとして `data/ebetsu/budgets/2026/` と `site/data/ebetsu/budgets/2026/` に取込
 - 岩見沢市の令和8年度予算の概要・一般会計・特別会計・病院事業会計を結合し、43ページの公開OCRデータとして `data/iwamizawa/budgets/2026/` と `site/data/iwamizawa/budgets/2026/` に取込。ラベルは一般会計・特別会計・病院事業会計を判別できるよう補正
 - 小樽市の令和8年度予算書・予算説明書を結合し、441ページの公開OCRデータとして `data/otaru/budgets/2026/` と `site/data/otaru/budgets/2026/` に取込。原本画像は軽量設定（110dpi / quality 68）で生成し、`site/data/budget_sources.json` を `取込済み` に更新
