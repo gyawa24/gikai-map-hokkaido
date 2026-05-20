@@ -69,6 +69,7 @@ node scripts/sync-site-data.mjs --slug sample --build-capabilities --verify
 
 予算OCRを公開する時は、`site/data/budget_sources.json` の対象自治体・年度を `status: "取込済み"` にする。
 公式URL確認だけでOCR未整備の場合は `status: "取得候補"` のままにする。
+規模や公開範囲が未決で当面進めない場合は `status: "保留"` にし、note に再開条件を残す。
 
 ## 3. `segments` を生成して同期する
 

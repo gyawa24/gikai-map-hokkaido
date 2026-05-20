@@ -36,35 +36,43 @@
 
 ### Operations
 
-- 札幌市の予算OCR公開範囲を決める
-  - 目的: 令和8年度予算資料の規模が大きいため、公開サイトに出す範囲とローカルMCP専用に留める範囲を分ける
-  - 完了条件: PDF構成・サイズ・ページ数を確認し、最初に取り込む範囲を `docs/budget-ocr-priority.md` に明記する
-  - 主に触る場所: `docs/budget-ocr-priority.md`, `site/data/budget_sources.json`
+- 月次レビューを次回実行し、運用ログとして残す
+  - 目的: 台帳・出典・ニュース・候補整理が作業ごとに抜けない状態にする
+  - 完了条件: `node scripts/operations-check.mjs --monthly` の出力に沿って、今月追加した公開データ・直した台帳・保留理由・来月の Now 1〜3件をこのファイルに反映する
+  - 主に触る場所: `docs/operations-board.md`, `docs/operations-principles.md`, `docs/news-workflow.md`
 
 ### Coverage
 
-- 別feature候補14件の仕様メモを作る
-  - 目的: 一般質問・質問答弁要旨・議決結果・要約資料を、正式会議録 `minutes` と混ぜずに扱える入口を決める
-  - 完了条件: `general_questions` / `meeting_summaries` / `votes` などの候補feature、JSONスキーマ、最初に試す自治体を1つ決める
-  - 主に触る場所: `docs/minutes-expansion-candidates.md`, `DESIGN.md`, `site/src/types/`
+- `kaminokuni` の `general_questions` 試験データを1件だけ作る
+  - 目的: 一般質問の質問・答弁要旨を、正式会議録 `minutes` と混ぜずに扱う最初の実データを作る
+  - 完了条件: `data/kaminokuni/publications/index.json` と `site/data/kaminokuni/publications/index.json` の最小データを作り、資料種別・原典URL・全文会議録ではないことが追える状態にする
+  - 主に触る場所: `data/kaminokuni/`, `site/data/kaminokuni/`, `docs/minutes-expansion-candidates.md`
 
 ## Next
 
 ### Operations
 
-- 1か月ごとの運用レビューを固定化する
-  - 目的: 追加作業のあとに、台帳・出典・スケジュールが更新されない状態を防ぐ
-  - 完了条件: 月末に見るチェックリストが `docs/operations-principles.md` と `docs/operations-board.md` に揃っている
-  - 主に触る場所: `docs/operations-principles.md`, `docs/operations-board.md`, `docs/news-workflow.md`
+- `sync-site-data` / `onboard-municipality` の警告を月次レビュー観点に合わせて見直す
+  - 目的: 公開用データを増やしたのに、台帳・出典・ニュースの更新が漏れる状態を減らす
+  - 完了条件: 予算書以外の公開データでも、必要な台帳更新やニュース追記の確認ポイントが分かる
+  - 主に触る場所: `scripts/sync-site-data.mjs`, `scripts/onboard-municipality.mjs`, `scripts/data-health.mjs`
 
 ### Coverage
 
+- `shinshinotsu` の `votes` 試験データを1件だけ作る
+  - 目的: 議決結果を既存 `decisions` と別feature候補 `publications` のどちらで扱うべきか比較する
+  - 完了条件: 資料種別、議案・賛否の粒度、既存 `decisions` との差分を `docs/minutes-expansion-candidates.md` に追記する
+  - 主に触る場所: `data/shinshinotsu/`, `site/data/shinshinotsu/`, `docs/minutes-expansion-candidates.md`
 - 90日再確認枠で未公開38件を再チェックする
   - 目的: 2026-05-06時点で未公開だった自治体に、本会議会議録本文が新規公開されていないか確認する
   - 完了条件: `minutes_verified_at` を再更新し、通常 `minutes` 化できる候補が出たら `Now` に移す
   - 主に触る場所: `data/municipalities.json`, `site/data/municipalities.json`, `docs/municipality-coverage.md`
 
 ## Later
+
+### Operations
+
+- 札幌市の予算OCR公開範囲は一旦保留する。再開時は令和8年度予算資料のPDF構成・サイズ・ページ数を確認し、公開サイトに出す範囲とローカルMCP専用に留める範囲を分ける
 
 ### Coverage
 
@@ -85,6 +93,8 @@
 
 ## Done
 
+- 別feature候補14件を `general_questions` / `meeting_summaries` / `votes` / `council_reports` / `legacy_minutes` に分類し、`publications/index.json` 候補スキーマと最初の試験対象（`kaminokuni`）を整理
+- 1か月ごとの運用レビューを固定化し、月次チェック項目・成果物・ニュース確認ルールを `docs/operations-principles.md` / `docs/news-workflow.md` / `scripts/operations-check.mjs` に反映
 - 北広島市の令和8年度一般会計・特別会計・予算編成方針・予算案のポイント・附属資料・水道事業会計・下水道事業会計予算書7本を結合し、535ページの公開OCRデータとして `data/kitahiroshima/budgets/2026/` と `site/data/kitahiroshima/budgets/2026/` に取込。原本画像は軽量設定（95dpi / quality 60）で生成
 - 室蘭市の令和8年度予算概要・説明資料・一般会計・特別会計・公営企業会計予算書11本を結合し、390ページの公開OCRデータとして `data/muroran/budgets/2026/` と `site/data/muroran/budgets/2026/` に取込。一般会計予算書は画像PDFのためOCR補完し、原本画像は軽量設定（100dpi / quality 64）で生成
 - 江別市の令和8年度各会計予算書及び予算説明書を単一PDFから、261ページの公開OCRデータとして `data/ebetsu/budgets/2026/` と `site/data/ebetsu/budgets/2026/` に取込

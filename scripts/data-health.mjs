@@ -228,7 +228,7 @@ async function checkBudgetSources(report, ignoredFiles) {
   }
 
   const seen = new Set();
-  const allowedStatuses = new Set(["取込済み", "取得候補"]);
+  const allowedStatuses = new Set(["取込済み", "取得候補", "保留"]);
   for (const source of sources) {
     const slug = typeof source.slug === "string" ? source.slug : "";
     const year = typeof source.year === "string" ? source.year : "";

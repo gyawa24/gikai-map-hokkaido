@@ -4,16 +4,17 @@
 
 `site/data/budget_sources.json` の `取得候補` から、次に公開OCRへ進める自治体を選ぶためのメモ。
 公開データ化する時は、`data/{slug}/budgets/` と `site/data/{slug}/budgets/` を揃え、`budget_sources.json` を `取込済み` に更新する。
+規模や公開範囲が決まらないものは `保留` とし、候補一覧からは外して出典だけ残す。
 
-## 次に進める1件
+## 保留
 
-### 1. 札幌市
+### 札幌市
 
 - 公式ページ: [令和8年度予算](https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/reiwa8nendo_yosan.html)
 - 位置づけ:
   - 予算書、説明書、企業会計、概要、局別資料などが揃っていて価値は高い。
   - ただし規模が大きく、公開用データとローカル専用データの境界を慎重に扱う必要がある。
-- 次の判断:
+- 再開時の判断:
   - 最初に公開する範囲を「概要・主要資料」に絞るか、会計別に段階取込するかを決める。
   - 札幌市の詳細な局別資料を公開サイト側に持つべきか、ローカルMCP専用にするかを確認する。
 
@@ -127,6 +128,6 @@
 
 ## 次の作業
 
-1. 札幌市の令和8年度PDF構成とサイズを再確認する。
-2. 公開サイトに載せる範囲と、ローカルMCP専用に留める範囲を分ける。
-3. `node scripts/sync-site-data.mjs --slug <slug> --build-capabilities --verify` と `node scripts/data-health.mjs --strict` を通す。
+1. 予算OCRは新しい `取得候補` を決めるまで停止する。
+2. 札幌市を再開する場合は、公開範囲とローカルMCP専用範囲を先に決める。
+3. 公開データ化する場合は、`node scripts/sync-site-data.mjs --slug <slug> --build-capabilities --verify` と `node scripts/data-health.mjs --strict` を通す。

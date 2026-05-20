@@ -439,6 +439,50 @@ AIが自動生成したコンテンツ（要約・タグ・Q&A抽出）を表示
 
 enrichedデータが存在しない場合は `null` にフォールバックし、要約・タグなしで表示する。
 
+### CouncilPublication（別feature候補、`publications/index.json`）
+
+一般質問要旨、議決結果、会議結果、議会だよりなど、正式な本会議会議録本文ではない資料を扱うための候補スキーマ。
+`minutes` と混ぜず、画面では資料種別と原典確認導線を必ず表示する。
+
+```typescript
+{
+  schema: "council_publication.v1";
+  municipality_slug: string;
+  generated_at: string;
+  source_checked_at?: string;
+  items: {
+    id: string;
+    feature_type: "general_questions" | "meeting_summaries" | "votes" | "council_reports" | "legacy_minutes";
+    title: string;
+    source_url: string;
+    source_type: "html" | "pdf" | "video" | "newsletter" | "external";
+    official_status: "official" | "summary" | "newsletter" | "video" | "legacy";
+    coverage: {
+      has_full_minutes: boolean;
+      includes_questions?: boolean;
+      includes_answers?: boolean;
+      includes_votes?: boolean;
+      includes_agenda?: boolean;
+    };
+    source_label?: string;
+    published_date?: string;
+    fiscal_year?: string;
+    meeting_name?: string;
+    document_url?: string;
+    media_url?: string;
+    people?: { name: string; role?: string }[];
+    tags?: string[];
+    notes?: string;
+  }[];
+}
+```
+
+表示方針:
+
+- `minutes` とは別のバッジで「一般質問要旨」「議決結果」「議会だより」などを明示する。
+- 全文会議録ではない場合は、検索結果や記事下書きでもその旨が分かる文言にする。
+- 「該当箇所を見る」「公式資料で確認する」を優先し、AI要約だけで完結させない。
+
 ---
 
 ## サーバーコンポーネントでのデータ読み込み

@@ -67,10 +67,22 @@
 ### 毎月
 
 - `node scripts/operations-check.mjs --monthly` で月次確認項目を表示する。
-- 未公開・再確認待ちの自治体をまとめて見直す。
-- 追加済みデータの `minutes_verified_at` や出典確認日を更新する。
-- 予算書、議決結果、速報、議会だよりなど、機能別の取込候補を並べ替える。
+- `node scripts/data-health.mjs --strict` で公開データ全体の健診を通す。
+- 未公開・再確認待ちの自治体をまとめて見直し、必要なら `minutes_verified_at` や出典確認日を更新する。
 - `docs/municipality-coverage.md` と `docs/municipality-information-inventory.md` を最新化する。
+- 予算書、議決結果、速報、議会だより、別feature候補を並べ替える。
+- `site/data/budget_sources.json` の `取得候補` / `取込済み` / `保留` の意味が実データと合っているか確認する。
+- `site/data/news.json` と `/news` の表示が、実際に公開した変更とズレていないか確認する。
+- `docs/operations-board.md` の Now / Next / Later を、次の1か月で進める粒度に更新する。
+
+月次レビューの成果物は、最低限次の4点にする。
+
+- 今月追加・更新した公開データ
+- 台帳・出典・ニュースで直したこと
+- まだ公開しない候補と、その理由
+- 来月の Now 1〜3件
+
+`data-health` や `verify-municipality` が失敗している場合は、新しい取込を始めず、先に健診エラーを片付ける。
 
 ### 年度更新
 

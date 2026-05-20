@@ -1,6 +1,6 @@
 # 議事録追加候補メモ
 
-更新日: 2026-05-06
+更新日: 2026-05-20
 
 `docs/municipality-coverage.md` の「議員一覧のみ掲載中」から、公式サイト上に会議録本文が確認でき、次に `minutes` 化しやすい自治体を絞ったメモ。
 
@@ -53,6 +53,73 @@
 | 剣淵町 | `kenbuchi` | 議会だより・YouTube配信・議会情報 |
 | 留寿都村 | `rusutsu` | 議事日程・議決結果・議会活動 |
 | 岩内町 | `iwanai` | 議事日程・議会だより・一般質問順序表 |
+
+#### 別feature設計 v0
+
+目的は、公開資料として有用な情報を拾いながら、正式な本会議会議録本文と混同しないこと。
+まずは `publications/index.json` の候補スキーマとして扱い、1自治体で試験してから capability 化する。
+
+| feature_type | 何を扱うか | 候補自治体 |
+|---|---|---|
+| `general_questions` | 一般質問、質問・答弁要旨、質問者別PDF、一般質問動画 | `nakashibetsu` / `sarufutsu` / `kaminokuni` / `toma` / `aibetsu` / `omu` / `iwanai` |
+| `meeting_summaries` | 会議結果、議事日程、議会活動、会議概要 | `minamifurano` / `takinoue` / `rusutsu` / `iwanai` |
+| `votes` | 議決結果、賛否、議案ごとの結果 | `shinshinotsu` / `rusutsu` / `minamifurano` |
+| `council_reports` | 議会だより、議会広報、瓦版、視察研修報告書 | `takinoue` / `teshio` / `kenbuchi` / `iwanai` |
+| `legacy_minutes` | 古い会議録。現行年度の本文会議録とは分けて扱う | `saroma` |
+
+#### JSONスキーマ案
+
+候補パス:
+
+- 収集元: `data/{slug}/publications/index.json`
+- 公開用: `site/data/{slug}/publications/index.json`
+
+```json
+{
+  "schema": "council_publication.v1",
+  "municipality_slug": "kaminokuni",
+  "generated_at": "2026-05-20T00:00:00.000Z",
+  "source_checked_at": "2026-05-20",
+  "items": [
+    {
+      "id": "kaminokuni-general-questions-2026-01",
+      "feature_type": "general_questions",
+      "title": "令和8年第1回定例会 一般質問の質問・答弁要旨",
+      "published_date": "2026-03-01",
+      "fiscal_year": "2026",
+      "meeting_name": "令和8年第1回定例会",
+      "source_url": "https://example.jp/",
+      "source_label": "上ノ国町議会 一般質問",
+      "source_type": "pdf",
+      "official_status": "summary",
+      "document_url": "https://example.jp/file.pdf",
+      "coverage": {
+        "has_full_minutes": false,
+        "includes_questions": true,
+        "includes_answers": true,
+        "includes_votes": false,
+        "includes_agenda": false
+      },
+      "people": [{ "name": "山田太郎", "role": "質問者" }],
+      "tags": ["一般質問"],
+      "notes": "正式な本会議会議録ではなく、質問・答弁要旨として扱う。"
+    }
+  ]
+}
+```
+
+#### 運用ルール
+
+- `publications` は `minutes` / `segments` / `themes` に自動昇格させない。
+- 本会議全文ではない資料は、検索結果・MCP・記事作成時に「要旨」「議決結果」「議会だより」などの資料種別を明示する。
+- 公式URL、資料URL、確認日、全文会議録ではないことを必ず残す。
+- 数字、賛否、発言内容を記事に使う場合は、`document_url` または `source_url` を原典として確認する。
+
+#### 最初の試験対象
+
+1件目は `kaminokuni` の `general_questions` を候補にする。
+理由は、一般質問の質問・答弁要旨として資料の性格が明確で、`minutes` ではないことをUI上でも説明しやすいため。
+2件目は `shinshinotsu` の `votes` を候補にし、議決結果を既存 `decisions` とどう分けるか確認する。
 
 OCRメモ:
 

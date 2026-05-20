@@ -17,6 +17,7 @@ function badgeClass(state: string) {
   if (state === "掲載中") return "border-[#B7DEC9] bg-[#EEF9F2] text-[#166534]";
   if (state === "取込済み") return "border-[#B7DEC9] bg-[#EEF9F2] text-[#166534]";
   if (state === "取得候補") return "border-[#F3D087] bg-[#FFF7E6] text-[#78451F]";
+  if (state === "保留") return "border-[#CBD5E0] bg-[#F8FAFC] text-[#4A5568]";
   if (state === "文字起こし確認中") return "border-[#F3D087] bg-[#FFF7E6] text-[#78451F]";
   if (state === "別情報として整理予定") return "border-[#BFD0EA] bg-[#E8EEF7] text-[#1B3A6B]";
   return "border-[#E2E8F0] bg-[#F8FAFC] text-[#4A5568]";
@@ -69,13 +70,14 @@ export default function SourcesPage() {
         </p>
       </header>
 
-      <section className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+      <section className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-7">
         {[
           { label: "対象", value: summary.total, unit: "件" },
           { label: "議員一覧", value: summary.members, unit: "件" },
           { label: "議事録", value: summary.minutes, unit: "件" },
           { label: "予算書", value: summary.budgets, unit: "件" },
           { label: "予算書候補", value: summary.budgetCandidates, unit: "件" },
+          { label: "予算書保留", value: summary.budgetHolds, unit: "件" },
           { label: "議事録未掲載", value: summary.unavailable, unit: "件" },
         ].map((item) => (
           <div key={item.label} className="rounded-lg border border-[#CBD5E0] bg-white p-4 shadow-sm">
@@ -127,9 +129,9 @@ export default function SourcesPage() {
       {budgetRows.length > 0 && (
         <section className="mb-8">
           <div className="mb-4">
-            <h2 className="text-xl font-black text-[#111827]">予算書の掲載・取得候補</h2>
+            <h2 className="text-xl font-black text-[#111827]">予算書の掲載・候補・保留</h2>
             <p className="mt-1 text-sm text-[#64748B]">
-              取込済みの予算書は、一般会計・特別会計に加えて、公営企業などの掲載範囲を大枠で確認できます。
+              取込済みの予算書は、一般会計・特別会計に加えて、公営企業などの掲載範囲を大枠で確認できます。規模や公開範囲が未決のものは保留として出典だけ残します。
             </p>
           </div>
 

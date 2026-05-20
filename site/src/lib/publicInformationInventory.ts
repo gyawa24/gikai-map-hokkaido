@@ -23,7 +23,7 @@ const ALT_FEATURE_LABELS = new Map([
   ["iwanai", "議事日程・議会だより・一般質問順序表"],
 ]);
 
-type BudgetSourceStatus = "取込済み" | "取得候補";
+type BudgetSourceStatus = "取込済み" | "取得候補" | "保留";
 
 type BudgetSource = {
   slug: string;
@@ -73,6 +73,7 @@ export type PublicInventorySummary = {
   themes: number;
   budgets: number;
   budgetCandidates: number;
+  budgetHolds: number;
   sessionsData: number;
   unavailable: number;
   ocrWait: number;
@@ -207,11 +208,7 @@ function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>)
   const source = sourceFor(entry, hasMinutes);
   const budgetSource = budgetSources.get(entry.slug) ?? null;
   const budgetImported = capability.capabilities.budgets;
-  const budgetState = budgetImported
-    ? "取込済み"
-    : budgetSource?.status === "取得候補"
-      ? "取得候補"
-      : "未確認";
+  const budgetState = budgetImported ? "取込済み" : (budgetSource?.status ?? "未確認");
   const budgetYear = budgetSource?.year ?? null;
 
   return {
@@ -260,6 +257,7 @@ export function getPublicInformationInventory(): {
       themes: rows.filter((row) => row.hasTopicData).length,
       budgets: rows.filter((row) => row.hasBudget).length,
       budgetCandidates: rows.filter((row) => row.hasBudgetCandidate).length,
+      budgetHolds: rows.filter((row) => row.budgetState === "保留").length,
       sessionsData: rows.filter((row) => row.hasSessionsData).length,
       unavailable: rows.filter((row) => !row.hasMinutes).length,
       ocrWait: rows.filter((row) => row.recordState === "文字起こし確認中").length,

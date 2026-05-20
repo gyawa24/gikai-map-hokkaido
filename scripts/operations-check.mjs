@@ -86,6 +86,7 @@ function printSnapshot({ municipalities, capabilityCounts, budgetSources }) {
   const activeMunicipalities = municipalities.filter((item) => item.active);
   const importedBudgets = budgetSources.filter((source) => source.status === "取込済み");
   const candidateBudgets = budgetSources.filter((source) => source.status === "取得候補");
+  const heldBudgets = budgetSources.filter((source) => source.status === "保留");
   const unavailableMinutes = activeMunicipalities.filter((item) => item.minutes_status === "unavailable");
   const staleUnavailable = unavailableMinutes
     .map((item) => ({ ...item, days: daysSince(item.minutes_verified_at) }))
@@ -99,6 +100,7 @@ function printSnapshot({ municipalities, capabilityCounts, budgetSources }) {
   }
   line(`予算書 取込済み: ${importedBudgets.length}`);
   line(`予算書 取得候補: ${candidateBudgets.length}`);
+  line(`予算書 保留: ${heldBudgets.length}`);
   line(`議事録 unavailable: ${unavailableMinutes.length}`);
   line(`90日以上の再確認候補: ${staleUnavailable.length}`);
 
@@ -106,6 +108,13 @@ function printSnapshot({ municipalities, capabilityCounts, budgetSources }) {
     console.log("\n## Budget Candidates");
     for (const source of candidateBudgets) {
       line(`${source.slug} ${source.year}: ${source.source_label}`);
+    }
+  }
+
+  if (heldBudgets.length) {
+    console.log("\n## Budget Holds");
+    for (const source of heldBudgets) {
+      line(`${source.slug} ${source.year}: ${source.note}`);
     }
   }
 
@@ -132,11 +141,14 @@ function printWeeklyChecklist() {
 
 function printMonthlyChecklist() {
   console.log("\n## Monthly Checklist");
+  checklist("node scripts/data-health.mjs --strict");
   checklist("未公開・再確認待ち自治体の確認日を見直す");
   checklist("docs/municipality-coverage.md を更新する");
   checklist("docs/municipality-information-inventory.md を更新する");
-  checklist("予算書、議決結果、速報、議会だよりの候補を並べ替える");
-  checklist("次の1か月で増やす自治体・予算・記事テーマを docs/operations-board.md に置く");
+  checklist("budget_sources.json の 取得候補 / 取込済み / 保留 を実データと照合する");
+  checklist("予算書、議決結果、速報、議会だより、別feature候補を並べ替える");
+  checklist("site/data/news.json と /news が公開済み変更と合っているか確認する");
+  checklist("今月追加した公開データ、直した台帳、保留理由、来月の Now 1〜3件を docs/operations-board.md に残す");
 }
 
 function printYearlyChecklist() {
