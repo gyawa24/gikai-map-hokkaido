@@ -44,6 +44,7 @@
 `publications/index.json` は、一般質問要旨・会議結果・議決結果・議会だよりなど、正式な本会議会議録本文ではない資料を扱うための候補データとする。
 初期段階では capability 判定に含めず、`docs/minutes-expansion-candidates.md` の試験対象で実データを確認してから公開導線を決める。
 `publications` を追加しても、`minutes` / `segments` / `themes` には自動昇格させない。
+`sync-site-data` は `publications/` を公開用データへ同期するが、`_city-capabilities.json` にはまだ出さない。
 
 ## 運用ルール
 

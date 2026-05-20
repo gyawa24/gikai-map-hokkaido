@@ -121,6 +121,12 @@
 理由は、一般質問の質問・答弁要旨として資料の性格が明確で、`minutes` ではないことをUI上でも説明しやすいため。
 2件目は `shinshinotsu` の `votes` を候補にし、議決結果を既存 `decisions` とどう分けるか確認する。
 
+#### 試験データ
+
+| 自治体 | feature_type | データ | 状態 |
+|---|---|---|---|
+| 上ノ国町 | `general_questions` | `data/kaminokuni/publications/index.json` | 令和7年9月定例会の一般質問PDF 1件を試験登録。質問・答弁本文は含むが、本会議全体の正式会議録ではないため `official_status: "summary"` とする。 |
+
 OCRメモ:
 
 - ローカル環境では `pdftoppm` と `tesseract` / `tesseract-lang` が利用可能。`ocrmypdf` / `pytesseract` は未導入。

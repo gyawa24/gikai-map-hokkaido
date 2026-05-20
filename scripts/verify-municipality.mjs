@@ -158,6 +158,8 @@ async function main() {
   const segmentsIndexRoot = path.join(rootDir, "segments", "_index.json");
   const themesRoot = path.join(rootDir, "members_activity.json");
   const themesSite = path.join(siteDir, "members_activity.json");
+  const publicationsRoot = path.join(rootDir, "publications", "index.json");
+  const publicationsSite = path.join(siteDir, "publications", "index.json");
   const capabilityIndex = await readJson(CITY_CAPABILITIES_PATH).catch(() => null);
   const capability = capabilityIndex?.cities?.[slug] ?? null;
 
@@ -165,6 +167,7 @@ async function main() {
   const hasMinutesIndex = (await pathExists(minutesIndexRoot)) || (await pathExists(minutesAltRoot));
   const hasSegmentsIndex = await pathExists(segmentsIndexRoot);
   const hasThemesFile = await pathExists(themesRoot);
+  const hasPublicationsFile = await pathExists(publicationsRoot);
 
   if (hasMembersFile) {
     checks.push(`members data exists`);
@@ -191,6 +194,18 @@ async function main() {
   if (hasThemesFile) {
     checks.push(`themes data exists`);
     await compareFiles(issues, themesRoot, themesSite, "members_activity.json");
+  }
+
+  if (hasPublicationsFile) {
+    checks.push(`publications data exists`);
+    await compareFiles(issues, publicationsRoot, publicationsSite, "publications/index.json");
+    const publications = await readJson(publicationsRoot).catch(() => null);
+    if (publications?.schema !== "council_publication.v1") {
+      issues.push(`invalid publications schema: data/${slug}/publications/index.json`);
+    }
+    if (!Array.isArray(publications?.items)) {
+      issues.push(`invalid publications items: data/${slug}/publications/index.json`);
+    }
   }
 
   if (rootEntry?.minutes_status === "unavailable" && capability?.capabilities?.minutes) {

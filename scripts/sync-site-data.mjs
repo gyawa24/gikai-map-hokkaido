@@ -28,6 +28,7 @@ const SYNC_ENTRIES = [
   "plan_activity.json",
   "vocabulary.json",
   "budgets",
+  "publications",
 ];
 
 function printHelp() {

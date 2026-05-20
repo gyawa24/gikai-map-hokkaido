@@ -1,0 +1,61 @@
+{
+  "schema": "council_publication.v1",
+  "municipality_slug": "kaminokuni",
+  "generated_at": "2026-05-21T00:00:00.000+09:00",
+  "source_checked_at": "2026-05-21",
+  "items": [
+    {
+      "id": "kaminokuni-r7-09-general-questions",
+      "feature_type": "general_questions",
+      "title": "令和7年9月定例会 一般質問",
+      "fiscal_year": "2025",
+      "meeting_name": "令和7年9月定例会",
+      "source_url": "https://www.town.kaminokuni.lg.jp/hotnews/detail/00000350.html",
+      "source_label": "上ノ国町議会 議会の動き 一般質問",
+      "source_type": "pdf",
+      "official_status": "summary",
+      "document_url": "https://www.town.kaminokuni.lg.jp/hotnews/files/00000300/00000350/r7.9ippann.pdf",
+      "coverage": {
+        "has_full_minutes": false,
+        "includes_questions": true,
+        "includes_answers": true,
+        "includes_votes": false,
+        "includes_agenda": false
+      },
+      "people": [
+        {
+          "name": "川島忠治",
+          "role": "質問議員"
+        },
+        {
+          "name": "仲澤嘉彦",
+          "role": "質問議員"
+        },
+        {
+          "name": "小間均",
+          "role": "質問議員"
+        },
+        {
+          "name": "福原賢孝",
+          "role": "質問議員"
+        },
+        {
+          "name": "岩田靖",
+          "role": "質問議員"
+        }
+      ],
+      "tags": [
+        "一般質問",
+        "パートナーシップ制度",
+        "防災",
+        "災害備蓄",
+        "ヒグマ対策",
+        "観光",
+        "上ノ国高校",
+        "洋上風力",
+        "災害情報"
+      ],
+      "notes": "上ノ国町公式サイトに掲載されている一般質問PDF。質問と答弁の本文を含むが、正式な本会議会議録本文ではないため publications の試験データとして扱う。PDFは32ページ。"
+    }
+  ]
+}

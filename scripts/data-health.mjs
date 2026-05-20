@@ -39,6 +39,7 @@ const PUBLIC_SYNC_ENTRIES = [
   "plan_activity.json",
   "vocabulary.json",
   "budgets",
+  "publications",
 ];
 
 const SITE_GENERATED = new Set([
@@ -262,6 +263,73 @@ async function checkBudgetSources(report, ignoredFiles) {
   }
 }
 
+function isObject(value) {
+  return Boolean(value && typeof value === "object" && !Array.isArray(value));
+}
+
+function validatePublicationIndex(relativePath, data, report) {
+  if (!isObject(data)) {
+    report.errors.push(`${relativePath} must be an object`);
+    return;
+  }
+  if (data.schema !== "council_publication.v1") {
+    report.errors.push(`${relativePath} has invalid schema: ${data.schema ?? "missing"}`);
+  }
+  if (typeof data.municipality_slug !== "string" || !data.municipality_slug) {
+    report.errors.push(`${relativePath} missing municipality_slug`);
+  }
+  if (typeof data.generated_at !== "string" || !data.generated_at) {
+    report.errors.push(`${relativePath} missing generated_at`);
+  }
+  if (!Array.isArray(data.items)) {
+    report.errors.push(`${relativePath} items must be an array`);
+    return;
+  }
+
+  const featureTypes = new Set(["general_questions", "meeting_summaries", "votes", "council_reports", "legacy_minutes"]);
+  const sourceTypes = new Set(["html", "pdf", "video", "newsletter", "external"]);
+  const officialStatuses = new Set(["official", "summary", "newsletter", "video", "legacy"]);
+
+  for (const item of data.items) {
+    const itemId = isObject(item) && typeof item.id === "string" ? item.id : "unknown";
+    if (!isObject(item)) {
+      report.errors.push(`${relativePath} has invalid item`);
+      continue;
+    }
+    if (!item.id || typeof item.id !== "string") report.errors.push(`${relativePath} item missing id`);
+    if (!featureTypes.has(item.feature_type)) report.errors.push(`${relativePath} ${itemId} has invalid feature_type`);
+    if (!item.title || typeof item.title !== "string") report.errors.push(`${relativePath} ${itemId} missing title`);
+    if (!item.source_url || typeof item.source_url !== "string") report.errors.push(`${relativePath} ${itemId} missing source_url`);
+    if (!sourceTypes.has(item.source_type)) report.errors.push(`${relativePath} ${itemId} has invalid source_type`);
+    if (!officialStatuses.has(item.official_status)) report.errors.push(`${relativePath} ${itemId} has invalid official_status`);
+    if (!isObject(item.coverage) || typeof item.coverage.has_full_minutes !== "boolean") {
+      report.errors.push(`${relativePath} ${itemId} missing coverage.has_full_minutes`);
+    }
+  }
+}
+
+async function checkPublications(report, municipalities, ignoredFiles) {
+  for (const municipality of municipalities) {
+    const rootPath = path.join(ROOT_DATA_DIR, municipality.slug, "publications", "index.json");
+    const sitePath = path.join(SITE_DATA_DIR, municipality.slug, "publications", "index.json");
+    const rootExists = !isIgnoredFile(rootPath, ignoredFiles) && (await pathExists(rootPath));
+    const siteExists = !isIgnoredFile(sitePath, ignoredFiles) && (await pathExists(sitePath));
+
+    if (rootExists !== siteExists) {
+      report.warnings.push(`publications sync mismatch: ${municipality.slug}`);
+    }
+    if (!rootExists && !siteExists) continue;
+
+    const targetPath = rootExists ? rootPath : sitePath;
+    const relativePath = rel(targetPath);
+    try {
+      validatePublicationIndex(relativePath, await readJson(targetPath), report);
+    } catch {
+      report.errors.push(`${relativePath} is not valid JSON`);
+    }
+  }
+}
+
 async function checkPublicSync(report, municipalities, ignoredFiles) {
   for (const municipality of municipalities) {
     const rootDir = path.join(ROOT_DATA_DIR, municipality.slug);
@@ -401,6 +469,7 @@ async function main() {
   const municipalities = await checkMetadata(report);
   await checkCapabilities(report, municipalities, ignoredFiles);
   await checkBudgetSources(report, ignoredFiles);
+  await checkPublications(report, municipalities, ignoredFiles);
   await checkPublicSync(report, municipalities, ignoredFiles);
   await checkSiteOnly(report, ignoredFiles);
 

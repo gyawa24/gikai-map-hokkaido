@@ -43,10 +43,10 @@
 
 ### Coverage
 
-- `kaminokuni` の `general_questions` 試験データを1件だけ作る
-  - 目的: 一般質問の質問・答弁要旨を、正式会議録 `minutes` と混ぜずに扱う最初の実データを作る
-  - 完了条件: `data/kaminokuni/publications/index.json` と `site/data/kaminokuni/publications/index.json` の最小データを作り、資料種別・原典URL・全文会議録ではないことが追える状態にする
-  - 主に触る場所: `data/kaminokuni/`, `site/data/kaminokuni/`, `docs/minutes-expansion-candidates.md`
+- `shinshinotsu` の `votes` 試験データを1件だけ作る
+  - 目的: 議決結果を既存 `decisions` と別feature候補 `publications` のどちらで扱うべきか比較する
+  - 完了条件: 資料種別、議案・賛否の粒度、既存 `decisions` との差分を `docs/minutes-expansion-candidates.md` に追記する
+  - 主に触る場所: `data/shinshinotsu/`, `site/data/shinshinotsu/`, `docs/minutes-expansion-candidates.md`
 
 ## Next
 
@@ -59,10 +59,6 @@
 
 ### Coverage
 
-- `shinshinotsu` の `votes` 試験データを1件だけ作る
-  - 目的: 議決結果を既存 `decisions` と別feature候補 `publications` のどちらで扱うべきか比較する
-  - 完了条件: 資料種別、議案・賛否の粒度、既存 `decisions` との差分を `docs/minutes-expansion-candidates.md` に追記する
-  - 主に触る場所: `data/shinshinotsu/`, `site/data/shinshinotsu/`, `docs/minutes-expansion-candidates.md`
 - 90日再確認枠で未公開38件を再チェックする
   - 目的: 2026-05-06時点で未公開だった自治体に、本会議会議録本文が新規公開されていないか確認する
   - 完了条件: `minutes_verified_at` を再更新し、通常 `minutes` 化できる候補が出たら `Now` に移す
@@ -93,6 +89,7 @@
 
 ## Done
 
+- 上ノ国町の `general_questions` 試験データとして、令和7年9月定例会の一般質問PDF 1件を `data/kaminokuni/publications/index.json` と `site/data/kaminokuni/publications/index.json` に追加。`sync-site-data` と `verify-municipality` でも `publications` の同期を確認できるようにした
 - 別feature候補14件を `general_questions` / `meeting_summaries` / `votes` / `council_reports` / `legacy_minutes` に分類し、`publications/index.json` 候補スキーマと最初の試験対象（`kaminokuni`）を整理
 - 1か月ごとの運用レビューを固定化し、月次チェック項目・成果物・ニュース確認ルールを `docs/operations-principles.md` / `docs/news-workflow.md` / `scripts/operations-check.mjs` に反映
 - 北広島市の令和8年度一般会計・特別会計・予算編成方針・予算案のポイント・附属資料・水道事業会計・下水道事業会計予算書7本を結合し、535ページの公開OCRデータとして `data/kitahiroshima/budgets/2026/` と `site/data/kitahiroshima/budgets/2026/` に取込。原本画像は軽量設定（95dpi / quality 60）で生成
