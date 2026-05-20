@@ -4,6 +4,9 @@
 サイトで表示する導線は、原則として `site/data/{slug}/` 配下の実ファイルから生成する台帳を読む。
 収集・編集の正は `data/`、公開ビルドの入力は `site/data/` と分ける。
 
+このルールは `docs/operations-principles.md` の「継続できる環境・綺麗なデータ・更新スケジュール」をデータ層に落としたもの。
+新しいデータ追加や取込方法の変更は、画面実装より先にこの台帳ルールと検証ルールに反映する。
+
 ## 単一の入口
 
 - 収集元データ: `data/{slug}/`
@@ -41,6 +44,7 @@
 - 新しい自治体データを足したら、対象ファイルを `data/{slug}/` に置き、`node scripts/sync-site-data.mjs --slug <slug> --build-capabilities --verify` で公開用データへ同期する。
 - 予算OCRは `data/{slug}/budgets/` を収集元、`site/data/{slug}/budgets/` を公開用コピーとする。ページ単位OCRは大きいが、公開導線の判定は `budgets/index.json` に一本化する。
 - 予算書の公式URL・取込状況は `site/data/budget_sources.json` に置く。`status: "取込済み"` は公開用OCRデータが `site/data/{slug}/budgets/{year}/manifest.json` まで揃っている場合だけ使い、URL確認だけの自治体は `status: "取得候補"` にする。
+- `sync-site-data` と `onboard-municipality` は、公開用の `budgets/index.json` があるのに `budget_sources.json` が未更新の場合に警告する。警告が出たら、公式URL・年度・状態を同じ作業単位で更新する。
 - `segments` は重いローカル調査用データなので、公開用コピーには通常同期しない。必要な時だけ `--include-segments` を付ける。
 - `data/sapporo/` や `site/data/sapporo/` のような `.gitignore` 対象データはローカル確認用として扱う。生成台帳・健診・公開ドキュメントでは、Gitで公開されるファイルだけを基準にする。
 - 導線を出すかどうかは `hasCityCapability(slug, key)` を使う。

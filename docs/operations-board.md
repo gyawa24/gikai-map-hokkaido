@@ -1,9 +1,10 @@
 # 運営ボード
 
-最終更新: 2026-05-06
+最終更新: 2026-05-20
 
 このファイルは `今やること` の単一の真実源。
 全体状況は `docs/municipality-coverage.md` を見て、ここには `直近で着手する単位` だけを書く。
+上位方針は `docs/operations-principles.md` を見る。
 
 ## 使い方
 
@@ -20,7 +21,25 @@
 
 ---
 
+## 運用リズム
+
+- 毎回: 作業開始時に差分確認、終了時に該当する健診コマンドを通す
+- 毎週: `node scripts/operations-check.mjs --weekly`
+- 毎月: `node scripts/operations-check.mjs --monthly`
+- 年度更新: `node scripts/operations-check.mjs --yearly`
+
+判断基準は「継続できる環境」「綺麗なデータ」「次のスケジュールが明確」の3点。
+
+---
+
 ## Now
+
+### Operations
+
+- 予算OCR候補6件から、次に公開取込する2自治体を選ぶ
+  - 目的: 候補を増やすだけで終わらせず、公開OCR化する順番を決める
+  - 完了条件: 札幌・小樽・岩見沢・江別・室蘭・北広島から2件を選び、原本PDF構成、ページ数、画像化/OCR難度、記事活用見込みをメモする
+  - 主に触る場所: `site/data/budget_sources.json`, `docs/operations-board.md`, `data/{slug}/budgets/`
 
 ### Coverage
 
@@ -30,6 +49,13 @@
   - 主に触る場所: `docs/minutes-expansion-candidates.md`, `DESIGN.md`, `site/src/types/`
 
 ## Next
+
+### Operations
+
+- 1か月ごとの運用レビューを固定化する
+  - 目的: 追加作業のあとに、台帳・出典・スケジュールが更新されない状態を防ぐ
+  - 完了条件: 月末に見るチェックリストが `docs/operations-principles.md` と `docs/operations-board.md` に揃っている
+  - 主に触る場所: `docs/operations-principles.md`, `docs/operations-board.md`, `docs/news-workflow.md`
 
 ### Coverage
 
@@ -59,6 +85,8 @@
 
 ## Done
 
+- 予算OCR候補として札幌・小樽・岩見沢・江別・室蘭・北広島の公式ページを `site/data/budget_sources.json` に追加し、公開OCR取込済み8件・取得候補6件に整理。`node scripts/data-health.mjs --strict` 通過
+- 小樽・岩見沢の既存構造化データを `node scripts/verify-municipality.mjs otaru` / `node scripts/verify-municipality.mjs iwamizawa` で確認し、公開データ台帳との整合性に問題なし
 - `suttsu` の公式ページ掲載画像を目視確認し、画像ファイル名が一致する場合だけ出力する確認済み転記として `members.json` を追加。これで対象180自治体すべてに議員一覧あり
 - 未公開54件を `再確認待ち38` / `OCR待ち2` / `別feature候補14` に分類し、通常抽出で追加できる `minutes` 候補がいったん空であることを整理
 - `scripts/build-ocr-draft.py` と `scripts/evaluate-ocr-draft.mjs` を追加し、OCR下書きを公開用 `minutes` から隔離して評価できるようにした。`shosanbetsu` 令和7年第1回定例会は23セグメント・議員名寄せ9件・誤検出疑い1件

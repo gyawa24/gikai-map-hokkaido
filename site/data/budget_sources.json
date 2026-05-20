@@ -32,6 +32,46 @@
     "note": "令和8年度の公開元を確認済み。公開用OCRへの反映は準備中"
   },
   {
+    "slug": "otaru",
+    "year": "2026",
+    "status": "取得候補",
+    "source_label": "小樽市令和8年度予算",
+    "source_href": "https://www.city.otaru.lg.jp/docs/2025102700021/",
+    "note": "令和8年度予算書・予算説明書の公開元を確認済み。公開用OCRへの反映は準備中"
+  },
+  {
+    "slug": "iwamizawa",
+    "year": "2026",
+    "status": "取得候補",
+    "source_label": "岩見沢市の予算",
+    "source_href": "https://www.city.iwamizawa.hokkaido.jp/soshiki/zaisei/gyozaisei/4262.html",
+    "note": "令和8年度予算の概要・一般会計・特別会計・企業会計の公開元を確認済み。公開用OCRへの反映は準備中"
+  },
+  {
+    "slug": "ebetsu",
+    "year": "2026",
+    "status": "取得候補",
+    "source_label": "令和8年度予算書",
+    "source_href": "https://www.city.ebetsu.hokkaido.jp/site/zaisei/148190.html",
+    "note": "令和8年度各会計予算書及び予算説明書の公開元を確認済み。公開用OCRへの反映は準備中"
+  },
+  {
+    "slug": "muroran",
+    "year": "2026",
+    "status": "取得候補",
+    "source_label": "予算",
+    "source_href": "https://www.city.muroran.lg.jp/content/?content=1921",
+    "note": "令和8年度一般会計・特別会計・公営企業会計予算書の公開元を確認済み。公開用OCRへの反映は準備中"
+  },
+  {
+    "slug": "kitahiroshima",
+    "year": "2026",
+    "status": "取得候補",
+    "source_label": "令和8年度当初予算案記者会見記録",
+    "source_href": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/detail/00158503.html",
+    "note": "令和8年度当初予算案の概要ページを確認済み。予算書本体の公開元確認と公開用OCRへの反映は準備中"
+  },
+  {
     "slug": "asahikawa",
     "year": "2026",
     "status": "取込済み",

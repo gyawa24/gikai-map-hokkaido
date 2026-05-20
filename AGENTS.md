@@ -24,7 +24,21 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 | `node_modules/next/dist/docs/` | Next.js の正確なAPI仕様。**コード書く前に確認** |
 | `README.md` | プロジェクト概要 |
 | `docs/` | MCP API キー運用、リリースチェックリスト等 |
+| `docs/operations-principles.md` | **継続運用方針**。継続できる環境・綺麗なデータ・更新スケジュールの判断基準 |
 | `docs/editorial/article-source-policy.md` | **読みもの記事を書くなら必読**。読者向けURL・出典明示のルール |
+
+---
+
+## 最上位の運用方針
+
+機能追加よりも、**継続できる環境・綺麗なデータ・更新スケジュール**を優先する。
+迷ったら `docs/operations-principles.md` を確認し、次の3点で判断する。
+
+1. 次回以降の運用が楽になるか。
+2. データの構造や出典がきれいになるか。
+3. 次にやるべき作業が明確になるか。
+
+この3点を満たさない改善は、急ぎの不具合修正を除き `docs/operations-board.md` の Later に置く。
 
 ---
 

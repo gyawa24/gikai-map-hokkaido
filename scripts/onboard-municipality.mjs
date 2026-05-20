@@ -4,6 +4,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { printBudgetSourceReminders } from "./lib/budget-source-reminders.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -345,6 +346,8 @@ async function main() {
     await runBuildSegments(options.slug, options.dryRun);
     await syncMunicipalityDirectory(options.slug, options.dryRun);
   }
+
+  await printBudgetSourceReminders(REPO_ROOT, [options.slug], { dryRun: options.dryRun });
 
   if (options.verify) {
     await runVerify(options.slug, options.dryRun);

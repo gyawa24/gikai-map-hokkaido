@@ -41,12 +41,14 @@ node scripts/onboard-municipality.mjs \
 
 - 議員一覧のみ: `data/{slug}/members.json`
 - 議事録あり: `data/{slug}/minutes/index.json` と `data/{slug}/minutes/{id}.json`
+- 予算OCRあり: `data/{slug}/budgets/index.json` と `data/{slug}/budgets/{year}/manifest.json`
 
 原則:
 
 - スクレイパの出力先は `data/{slug}/` を正とする
 - `site/data/{slug}/` は手で編集しない
 - サイトの導線は `site/data/{slug}/` の実ファイルから capability 台帳として生成される
+- 予算書は `site/data/budget_sources.json` に公式URL・年度・状態を必ず持たせる
 
 公開用データへの同期:
 
@@ -60,9 +62,13 @@ node scripts/sync-site-data.mjs --slug sample --build-capabilities --verify
 - `members.json` / `minutes/` など既知の公開対象データを `site/data/{slug}/` にコピー
 - `site/data/_city-capabilities.json` を再生成
 - 指定した自治体の同期状態を検証
+- 公開用予算OCRがある場合、`budget_sources.json` の更新漏れを警告
 
 予算OCRなど `site/data/` だけにある公開用データは削除しない。
 `segments` は重いローカル調査用データなので通常は同期しない。必要な時だけ `--include-segments` を付ける。
+
+予算OCRを公開する時は、`site/data/budget_sources.json` の対象自治体・年度を `status: "取込済み"` にする。
+公式URL確認だけでOCR未整備の場合は `status: "取得候補"` のままにする。
 
 ## 3. `segments` を生成して同期する
 
