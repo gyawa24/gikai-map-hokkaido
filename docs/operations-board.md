@@ -36,11 +36,6 @@
 
 ### Operations
 
-- 小樽市の予算OCRを公開データとして取り込む
-  - 目的: 予算書候補を実際の公開OCRデータに進め、議事録・テーマと合わせて使える状態にする
-  - 完了条件: `data/otaru/budgets/2026/` と `site/data/otaru/budgets/2026/` が揃い、`site/data/budget_sources.json` の小樽が `取込済み` になり、`node scripts/data-health.mjs --strict` が通る
-  - 主に触る場所: `data/otaru/budgets/`, `site/data/otaru/budgets/`, `site/data/budget_sources.json`
-
 - 岩見沢市の予算OCR取込方針を決める
   - 目的: 令和8年度PDF4本を結合するか、複数文書として持つかを決める
   - 完了条件: 予算の概要・一般会計・特別会計・病院事業会計の扱い方を決め、取込に入れる状態にする
@@ -90,6 +85,7 @@
 
 ## Done
 
+- 小樽市の令和8年度予算書・予算説明書を結合し、441ページの公開OCRデータとして `data/otaru/budgets/2026/` と `site/data/otaru/budgets/2026/` に取込。原本画像は軽量設定（110dpi / quality 68）で生成し、`site/data/budget_sources.json` を `取込済み` に更新
 - 予算OCR候補6件を確認し、次に進める2件を小樽市・岩見沢市に決定。PDF構成・ページ数・抽出文字数・注意点を `docs/budget-ocr-priority.md` に整理
 - 予算OCR候補として札幌・小樽・岩見沢・江別・室蘭・北広島の公式ページを `site/data/budget_sources.json` に追加し、公開OCR取込済み8件・取得候補6件に整理。`node scripts/data-health.mjs --strict` 通過
 - 小樽・岩見沢の既存構造化データを `node scripts/verify-municipality.mjs otaru` / `node scripts/verify-municipality.mjs iwamizawa` で確認し、公開データ台帳との整合性に問題なし

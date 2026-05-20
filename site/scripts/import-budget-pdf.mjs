@@ -76,7 +76,13 @@ const manifest = {
   source_pdf_available: false,
   page_count: pageSummaries.length,
   generated_at: generatedAt,
-  pages: pageSummaries.map(({ text, ...page }) => page),
+  pages: pageSummaries.map((page) => ({
+    page: page.page,
+    file: page.file,
+    title: page.title,
+    preview: page.preview,
+    text_length: page.text_length,
+  })),
 };
 
 function writeDataset(dataRoot) {
