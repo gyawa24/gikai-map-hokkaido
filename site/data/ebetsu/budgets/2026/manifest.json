@@ -1,0 +1,2790 @@
+{
+  "city": "ebetsu",
+  "year": "2026",
+  "fiscal_year_label": "令和8年度",
+  "title": "令和8年度 江別市 各会計予算書・予算説明書",
+  "source_file_name": "ebetsu-2026-budget.pdf",
+  "source_file_size_bytes": 1058944,
+  "source_pdf_available": false,
+  "page_count": 261,
+  "generated_at": "2026-05-20T01:43:03.472Z",
+  "pages": [
+    {
+      "page": 1,
+      "file": "pages/page-001.md",
+      "title": "令 和 ８ 年 度",
+      "preview": "令 和 ８ 年 度 各会計予算及び予算説明書 江 別 市",
+      "text_length": 43,
+      "toc_label": "表紙",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-001.webp"
+    },
+    {
+      "page": 2,
+      "file": "pages/page-002.md",
+      "title": "令 和 ８ 年 ２ 月 １ 日 現 在",
+      "preview": "令 和 ８ 年 ２ 月 １ 日 現 在 人 口 １１７，６６３ 人 世帯数 ５９，９９３ 世帯 令 和 ２ 年 国 勢 調 査 人 口 １２１，０５６ 人 世帯数 ５３，９７７ 世帯",
+      "text_length": 161,
+      "toc_label": "予算書",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-002.webp"
+    },
+    {
+      "page": 3,
+      "file": "pages/page-003.md",
+      "title": "目               次",
+      "preview": "目 次 各会計歳入歳出予算総括表 1 一 般 会 計 予 算 5 予 算 説 明 書 15 総 括 16 まちづくり政策 19 歳 入 85 歳 出 105 給 与 費 明 細 書 168 継 続 費 調 書 176 債務負担行為調書 178 地 方 債 調 書 182 国民健康保険特別会計予算 185 後期高齢者医療特別会計予算 201 介 護 保 険 特",
+      "text_length": 707,
+      "toc_label": "目次",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-003.webp"
+    },
+    {
+      "page": 4,
+      "file": "pages/page-004.md",
+      "title": "4ページ",
+      "preview": "",
+      "text_length": 0,
+      "toc_label": "予算書",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-004.webp"
+    },
+    {
+      "page": 5,
+      "file": "pages/page-005.md",
+      "title": "各会計歳入歳出予算総括表",
+      "preview": "各会計歳入歳出予算総括表 -1-",
+      "text_length": 25,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-005.webp"
+    },
+    {
+      "page": 6,
+      "file": "pages/page-006.md",
+      "title": "6ページ",
+      "preview": "-2-",
+      "text_length": 3,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-006.webp"
+    },
+    {
+      "page": 7,
+      "file": "pages/page-007.md",
+      "title": "各会計歳入歳出予算総括表",
+      "preview": "各会計歳入歳出予算総括表 （単位：千円） 令和８年度 令 和 ７ 年 度 比 較 増 減 会 計 区 分 当 初 に 比 し １ 月 に 比 し 予 算 当初予算 １月末予算 金 額 増減率 金 額 増減率 % % 一 般 会 計 61,850,000 58,790,000 61,092,267 3,060,000 5.2 757,733 1.2 国 民 健",
+      "text_length": 1388,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-007.webp"
+    },
+    {
+      "page": 8,
+      "file": "pages/page-008.md",
+      "title": "8ページ",
+      "preview": "-4-",
+      "text_length": 3,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-008.webp"
+    },
+    {
+      "page": 9,
+      "file": "pages/page-009.md",
+      "title": "一   般   会         計   予   算",
+      "preview": "一 般 会 計 予 算 -5-",
+      "text_length": 47,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-009.webp"
+    },
+    {
+      "page": 10,
+      "file": "pages/page-010.md",
+      "title": "10ページ",
+      "preview": "-6-",
+      "text_length": 3,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-010.webp"
+    },
+    {
+      "page": 11,
+      "file": "pages/page-011.md",
+      "title": "令和８年度江別市一般会計予算",
+      "preview": "令和８年度江別市一般会計予算 令和８年度江別市の一般会計の予算は、次に定めるところによる。 （歳入歳出予算） 第１条 歳入歳出予算の総額は、歳入歳出それぞれ６１，８５０，０００千円と定め る。 ２ 歳入歳出予算の款項の区分及び当該区分ごとの金額は、「第１表歳入歳出予算」 による。 （継続費） 第２条 地方自治法（昭和２２年法律第６７号）第２１２条第１項の規定",
+      "text_length": 648,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-011.webp"
+    },
+    {
+      "page": 12,
+      "file": "pages/page-012.md",
+      "title": "第１表       歳入歳出予算",
+      "preview": "第１表 歳入歳出予算 （歳 入） 款 項 金 額 千円 1 市税 14,256,000 1 市民税 6,471,893 2 固定資産税 5,566,593 3 軽自動車税 269,011 4 市たばこ税 852,481 5 都市計画税 1,096,022 2 地方譲与税 403,000 1 地方揮発油譲与税 79,000 2 自動車重量譲与税 309,000",
+      "text_length": 1709,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-012.webp"
+    },
+    {
+      "page": 13,
+      "file": "pages/page-013.md",
+      "title": "款                       項   金     額",
+      "preview": "款 項 金 額 千円 14 使用料及び手数料 1,118,231 1 使用料 393,215 2 手数料 713,123 3 証紙収入 11,893 15 国庫支出金 12,400,798 1 国庫負担金 9,603,790 2 国庫補助金 2,739,173 3 国庫委託金 57,835 16 道支出金 5,402,371 1 道負担金 3,819,003",
+      "text_length": 1560,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-013.webp"
+    },
+    {
+      "page": 14,
+      "file": "pages/page-014.md",
+      "title": "（歳   出）",
+      "preview": "（歳 出） 款 項 金 額 千円 1 議会費 221,338 1 議会費 221,338 2 総務費 12,587,871 1 総務管理費 4,872,646 2 市民活動費 281,367 3 徴税費 191,402 4 戸籍住民基本台帳費 176,047 5 選挙費 53,152 6 統計調査費 12,069 7 監査委員費 4,739 8 職員費 6,",
+      "text_length": 1515,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-014.webp"
+    },
+    {
+      "page": 15,
+      "file": "pages/page-015.md",
+      "title": "款                   項      金      額",
+      "preview": "款 項 金 額 千円 10 教育費 3,875,571 1 教育総務費 1,086,596 2 小学校費 581,705 3 中学校費 412,357 4 社会教育費 672,265 5 保健体育費 1,122,648 11 公債費 3,462,582 1 公債費 3,462,582 12 諸支出金 6,932,145 1 他会計繰出金 6,872,414 ",
+      "text_length": 836,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-015.webp"
+    },
+    {
+      "page": 16,
+      "file": "pages/page-016.md",
+      "title": "第２表    継 続 費",
+      "preview": "第２表 継 続 費 款 項 事 業 名 総 額 年 度 年 割 額 千円 千円 令和８年度 1,249,315 総 務 2 総務費 1 本庁舎建替事業 12,493,147 令和９年度 9,119,997 管 理 費 令和10年度 2,123,835 令和８年度 796,498 4 衛生費 2 清 掃 費 最終処分場整備事業 1,856,424 令和９年度 ",
+      "text_length": 608,
+      "toc_label": "継続費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-016.webp"
+    },
+    {
+      "page": 17,
+      "file": "pages/page-017.md",
+      "title": "第３表             債務負担行為",
+      "preview": "第３表 債務負担行為 事 項 期 間 限 度 額 令和 ９年度より 課税原票ファイリングシステム更新費 総額 ２２，７０７ 千円 令和１２年度まで 令和 ９年度より 給 食 調 理 機 器 等 整 備 費 総額 ４，１４７ 千円 令和１２年度まで 令和 ９年度より 事 務 機 器 等 整 備 費 総額 ８１，６９８ 千円 令和１２年度まで 令和 ９年度より ",
+      "text_length": 875,
+      "toc_label": "債務負担行為",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-017.webp"
+    },
+    {
+      "page": 18,
+      "file": "pages/page-018.md",
+      "title": "第４表         地 方 債",
+      "preview": "第４表 地 方 債 起 債 の 目 的 限 度 額 起債の方法 利 率 償 還 の 方 法 千円 住 区 会 館 施 設 整 備 事 業 費 2,300 普通貸借（証 ７．０％以内 借入先の融資条件に 市 民 会 館 整 備 事 業 費 63,900 書借入）又は （ただし､利 よる。ただし、市財 本 庁 舎 建 設 事 業 費 1,035,900 証券発行",
+      "text_length": 1450,
+      "toc_label": "地方債",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-018.webp"
+    },
+    {
+      "page": 19,
+      "file": "pages/page-019.md",
+      "title": "予   算   説      明   書",
+      "preview": "予 算 説 明 書 -15-",
+      "text_length": 37,
+      "toc_label": "地方債",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-019.webp"
+    },
+    {
+      "page": 20,
+      "file": "pages/page-020.md",
+      "title": "歳          入     歳       出         予         算",
+      "preview": "歳 入 歳 出 予 算 １ 総 括 （ 歳 入 ） 款 本年度予算額 前年度予算額 比 較 千円 千円 千円 1 市税 14,256,000 13,383,000 873,000 2 地方譲与税 403,000 392,000 11,000 3 利子割交付金 57,000 13,000 44,000 4 配当割交付金 78,000 50,000 28,000",
+      "text_length": 2152,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-020.webp"
+    },
+    {
+      "page": 21,
+      "file": "pages/page-021.md",
+      "title": "事           項    別           明       細          書",
+      "preview": "事 項 別 明 細 書 （ 歳 出 ） 本 年 度 予 算 額 の 財 源 内 訳 本年度 前年度 款 比 較 特 定 財 源 予算額 予算額 国道支出金 地 方 債 そ の 他 一般財源 千円 千円 千円 千円 千円 千円 千円 1 議会費 221,338 221,796 △458 70 221,268 2 総務費 12,587,871 9,388,675",
+      "text_length": 2086,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-021.webp"
+    },
+    {
+      "page": 22,
+      "file": "pages/page-022.md",
+      "title": "22ページ",
+      "preview": "-18-",
+      "text_length": 4,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-022.webp"
+    },
+    {
+      "page": 23,
+      "file": "pages/page-023.md",
+      "title": "まちづくり政策",
+      "preview": "まちづくり政策 -19-",
+      "text_length": 19,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-023.webp"
+    },
+    {
+      "page": 24,
+      "file": "pages/page-024.md",
+      "title": "２ まちづくり政策",
+      "preview": "２ まちづくり政策 まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 1 自然・環境 3,919,813 495,694 3,969 1,089,900 753,732 1,576,518 （1） 人と自然の共生 60,655 3,969 4,052 52,634 ◎ 脱炭素推進事業 ",
+      "text_length": 3048,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-024.webp"
+    },
+    {
+      "page": 25,
+      "file": "pages/page-025.md",
+      "title": "◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。人件費Ｂ欄は、各事業へ754人（R8.1.1一般職員数）分を振り分けている。",
+      "preview": "◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。人件費Ｂ欄は、各事業へ754人（R8.1.1一般職員数）分を振り分けている。 １人当たり平均単価8,416千円は「一般職総額6,396,339千円／760人（R8.4.1一般職員数）」で算出している。 （単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 42 事業） 285,725 4,2",
+      "text_length": 2641,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-025.webp"
+    },
+    {
+      "page": 26,
+      "file": "pages/page-026.md",
+      "title": "まちづくり政策                                         Ａ   の   財     源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 ○ し渣除去設備更新整備事業 4 2 4 10,857 8,100 2,757 リサイクルセンター運営管理委託 4 2 5 92,148 33,608 58,540 事業 分別・資源化等啓発事業 4 2 5 4,120 363 3,75",
+      "text_length": 1246,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-026.webp"
+    },
+    {
+      "page": 27,
+      "file": "pages/page-027.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ し渣処理脱臭機の更新 2,525 13,382 リサイクルセンター運営管理委託等経費（ビン・缶・ペットボトル・紙パック・白色トレイの再資源化） 3,366 95,514 収集日カレンダー等の作成及び配布に係る経費 8,416 12,536 ごみ排出抑制の啓発、パンフレット（小学生向け啓発）作成、食品ロ",
+      "text_length": 1049,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-027.webp"
+    },
+    {
+      "page": 28,
+      "file": "pages/page-028.md",
+      "title": "まちづくり政策                                         Ａ      の      財     源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 2 産業 2,246,151 148,913 428,564 164,800 1,103,440 400,434 （1） 都市近郊型農業の推進 724,744 39,270 423,564 60,300 45,620 155,990 ◎",
+      "text_length": 3321,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-028.webp"
+    },
+    {
+      "page": 29,
+      "file": "pages/page-029.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 80 事業） 286,989 2,533,140 （計 43 事業） 138,027 862,771 将来の地域農業の在り方を定める「地域計画」の更新、農業用機械等の購入補助 4,208 34,251 スマート農業機械導入費用の一部補助、【拡大】補助対象機械の追加 4,208 8,208 【新規",
+      "text_length": 2501,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-029.webp"
+    },
+    {
+      "page": 30,
+      "file": "pages/page-030.md",
+      "title": "まちづくり政策                                        Ａ      の       財     源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 ○ 排水路維持管理経費 6 1 6 1,878 1,878 ○ 基幹水利施設管理事業 6 1 6 84,695 22,486 22,486 39,264 459 ○ 篠津運河流末工改修工事負担金 6 1 6 1,546 1,546 ○ ",
+      "text_length": 3134,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-030.webp"
+    },
+    {
+      "page": 31,
+      "file": "pages/page-031.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 農事組合が実施する床ざらい等に対する補助 842 2,720 揚水機場の管理経費（５機場） 4,208 88,903 篠津運河維持管理経費に係る負担金 421 1,967 多面的機能支払交付金に基づく農業・農村の地域共同活動に対する補助 4,208 177,760 国営土地改良事業等による造成施設の維",
+      "text_length": 2360,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-031.webp"
+    },
+    {
+      "page": 32,
+      "file": "pages/page-032.md",
+      "title": "まちづくり政策                                        Ａ   の   財     源      内     訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 ○ 商店街等活性化支援事業 7 1 2 4,173 1,523 2,650 ○ 事業承継支援事業 7 1 2 507 507 ○ 江別経済ネットワーク事業 7 1 3 56 56 ○ 工業団地環境整備事業 7 1 3 45,393 16",
+      "text_length": 2155,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-032.webp"
+    },
+    {
+      "page": 33,
+      "file": "pages/page-033.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 商店街団体等が地域の課題解決・活性化を目的として行う事業に対する補助 2,525 6,698 事業承継に係る個別相談会・資金融資事業の実施 842 1,349 産学官連携等の事例発表、企業間連携の促進 1,262 1,318 工栄８号道路改修工事費、ＲＴＮパーク下水道工事負担金 2,525 47,91",
+      "text_length": 1578,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-033.webp"
+    },
+    {
+      "page": 34,
+      "file": "pages/page-034.md",
+      "title": "まちづくり政策                                            Ａ      の      財    源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 3 福祉・保健・医療 18,146,040 5,700,748 2,744,363 2,700 393,488 9,304,741 （1） 地域福祉の充実 187,994 2,557 17,736 8,599 159,102 民生委員活",
+      "text_length": 3431,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-034.webp"
+    },
+    {
+      "page": 35,
+      "file": "pages/page-035.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 112 事業） 815,098 18,961,138 （計 9 事業） 48,813 236,807 市内10地区の民生委員児童委員協議会への補助、民生委員推薦会の開催経費 1,683 19,510 社会福祉協議会運営費補助、季節保育所運営費補助 1,262 111,841 社会福祉協議会に対す",
+      "text_length": 2837,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-035.webp"
+    },
+    {
+      "page": 36,
+      "file": "pages/page-036.md",
+      "title": "まちづくり政策                                            Ａ      の       財   源   内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 高齢者保健・介護予防一体的実 ○ 4 1 7 9,756 9,756 施推進事業 ○ 骨髄ドナー助成事業 4 1 7 100 50 50 ○ 国民健康保険会計繰出金 12 1 1 1,129,619 141,876 440,834 1,",
+      "text_length": 3186,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-036.webp"
+    },
+    {
+      "page": 37,
+      "file": "pages/page-037.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 後期高齢者を対象とした個別支援の実施、高齢者の保健事業と介護予防の一体的な支援の実 8,416 18,172 施、健診未受診者等、健康状態が不明な高齢者に対する訪問の実施 骨髄等の提供を行った市民への補助金 842 942 繰出基準に基づく一般会計負担 96,784 1,226,403 繰出基準に基づ",
+      "text_length": 2429,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-037.webp"
+    },
+    {
+      "page": 38,
+      "file": "pages/page-038.md",
+      "title": "まちづくり政策                                            Ａ      の      財   源   内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 障害者日中一時支援事業 3 1 3 18,816 4,704 3,292 10,820 障害者移動支援事業 3 1 3 46,621 11,655 8,158 26,808 障害者相談支援事業 3 1 3 10,523 10,523 障",
+      "text_length": 3212,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-038.webp"
+    },
+    {
+      "page": 39,
+      "file": "pages/page-039.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 障がい者の日中一時支援給付費（地域生活支援事業） 1,683 20,499 障がい者の移動支援給付費（地域生活支援事業） 1,683 48,304 障がい者への相談支援、情報提供等の委託 1,683 12,206 障害者総合支援法に基づく介護給付費及び訓練等給付費等 13,045 4,816,845 ",
+      "text_length": 2147,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-039.webp"
+    },
+    {
+      "page": 40,
+      "file": "pages/page-040.md",
+      "title": "まちづくり政策                                            Ａ     の       財   源   内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 その他 1 事業 13,665 129 90 13,446 （4） 高齢者福祉の充実 265,250 6,830 6,860 14,484 237,076 高齢者等社会参加促進バス助成 ○ 3 1 1 2,716 2,716 事業 社会",
+      "text_length": 3311,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-040.webp"
+    },
+    {
+      "page": 41,
+      "file": "pages/page-041.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 8,416 22,081 （計 22 事業） 19,359 284,609 高齢者や障がい者等の生きがいづくり、社会参加等の目的で使用するバスの借上費用に対する一 2,525 5,241 部助成 社会福祉法人等が運営する施設への入所及び通所介護等を利用する低所得者の利用料負担軽 252 4,600 減",
+      "text_length": 2515,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-041.webp"
+    },
+    {
+      "page": 42,
+      "file": "pages/page-042.md",
+      "title": "まちづくり政策                                          Ａ     の      財   源   内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 保険料収納一般管理経費 3 1 2 2,440 2,440 国民年金受託事業 3 1 4 7,638 7,638 生活保護一般管理経費 3 3 1 28,009 10,235 17,774 生活保護費 3 3 2 2,734,000 2",
+      "text_length": 700,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-042.webp"
+    },
+    {
+      "page": 43,
+      "file": "pages/page-043.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 低所得者介護保険料軽減負担金の精算に伴う返還金 421 2,861 国民年金第１号被保険者の各種届出、申請の処理、相談等 16,832 24,470 レセプト点検員・就労支援員・面接相談員報酬、各種研修会出席旅費、各種システム等経費 16,832 44,841 生活保護法に基づく生活保護費 132,9",
+      "text_length": 563,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-043.webp"
+    },
+    {
+      "page": 44,
+      "file": "pages/page-044.md",
+      "title": "まちづくり政策                                        Ａ     の       財     源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 4 安全・安心 2,182,107 50,015 17,663 1,225,900 285,539 602,990 （1） 安全な暮らしの確保 247,341 4,950 253 17,800 43,422 180,916 地域防犯推進",
+      "text_length": 3109,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-044.webp"
+    },
+    {
+      "page": 45,
+      "file": "pages/page-045.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 62 事業） 1,307,005 3,489,112 （計 20 事業） 70,694 318,035 江別防犯協会への事業費補助等 842 1,300 自治会等防犯灯管理団体への維持費補助（電気料の６割） 2,525 25,743 江別地区暴力追放運動推進協議会への事業費補助 842 1,02",
+      "text_length": 2351,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-045.webp"
+    },
+    {
+      "page": 46,
+      "file": "pages/page-046.md",
+      "title": "まちづくり政策                                        Ａ    の      財     源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 災害救助費 3 4 1 5 5 治水事業一般管理経費 8 3 1 1,289 138 1,151 治水関係協議会等負担金 8 3 1 1,176 1,176 江別河川防災ステーション管理経 8 3 1 31,535 12,986 18,",
+      "text_length": 3120,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-046.webp"
+    },
+    {
+      "page": 47,
+      "file": "pages/page-047.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 災害救助経費 421 426 治水事業一般管理経費 1,683 2,972 治水関係協議会等負担金（８団体） 1,683 2,859 江別河川防災ステーション維持管理経費 5,050 36,585 河川敷及び調整池草刈委託ほか 3,366 61,466 排水機場の運転及び維持管理経費（18排水機場） ",
+      "text_length": 2263,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-047.webp"
+    },
+    {
+      "page": 48,
+      "file": "pages/page-048.md",
+      "title": "まちづくり政策                                    Ａ   の   財     源      内   訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 ○ 消防職員被服費（臨時） 9 1 1 4,776 4,776 ○ 救急業務デジタル化事業 9 1 1 1,086 1,086 消防指令センター共同維持管理 ○ 9 1 1 55,828 55,828 事業 消防団運営費 9 1 2 2",
+      "text_length": 950,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-048.webp"
+    },
+    {
+      "page": 49,
+      "file": "pages/page-049.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 防火衣更新経費の償還（債務負担行為分） 1,683 6,459 救急医療支援システム及びマイナ救急の運用経費 16,832 17,918 札幌圏６消防本部による消防指令センターの共同維持管理に係る経費 4,208 60,036 消防団の運営経費（消防団員報酬・費用弁償ほか） 16,832 43,505",
+      "text_length": 671,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-049.webp"
+    },
+    {
+      "page": 50,
+      "file": "pages/page-050.md",
+      "title": "まちづくり政策                                           Ａ    の       財     源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 5 都市生活 6,494,828 1,258,749 9,356 1,601,100 413,763 3,211,860 （1） 市街地整備の推進 2,084,578 303,830 9,356 395,900 96,888 1,278",
+      "text_length": 3164,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-050.webp"
+    },
+    {
+      "page": 51,
+      "file": "pages/page-051.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 63 事業） 640,042 7,134,870 （計 29 事業） 335,380 2,419,958 移住・定住促進に関する各種取り組み、移住支援金の支給（北海道との連携事業） 8,416 21,810 旧江別小学校跡地を含む江別駅周辺の土地利用に係る検討経費 8,416 8,463 旧江別",
+      "text_length": 2325,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-051.webp"
+    },
+    {
+      "page": 52,
+      "file": "pages/page-052.md",
+      "title": "まちづくり政策                                         Ａ   の   財     源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 大麻市営駐車場管理経費 8 1 1 14,716 14,716 ○ 道路景観づくり推進事業 8 1 1 275 275 土木事務所維持管理経費 8 2 1 4,219 4,219 道路一般管理経費 8 2 1 14,586 14,586",
+      "text_length": 2923,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-052.webp"
+    },
+    {
+      "page": 53,
+      "file": "pages/page-053.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 駐車場指定管理料（3,149㎡、105台） 2,525 17,241 屋外違反広告物の除却経費 1,683 1,958 土木事務所の施設維持管理経費 4,208 8,427 道路工事等に伴う道路台帳の整備、道路占用許可等に係る経費 16,832 31,418 市道及び公共施設等の除排雪、自治会排雪に対",
+      "text_length": 2336,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-053.webp"
+    },
+    {
+      "page": 54,
+      "file": "pages/page-054.md",
+      "title": "まちづくり政策                               Ａ   の   財   源   内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 ○ 行政デジタル化推進事業 2 1 2 40,150 24,872 15,278 -50-",
+      "text_length": 326,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-054.webp"
+    },
+    {
+      "page": 55,
+      "file": "pages/page-055.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 基幹系システムの標準化・共通化、生成AI利用料等、【新規】ＣＩＯ補佐官の設置、【新規】ビジネス 12,624 52,774 チャットツール利用料 -51-",
+      "text_length": 392,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-055.webp"
+    },
+    {
+      "page": 56,
+      "file": "pages/page-056.md",
+      "title": "まちづくり政策                                            Ａ      の      財    源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 6 子育て・教育 12,284,085 4,610,116 1,950,195 297,500 334,816 5,091,458 （1） 子育て環境の充実 9,434,591 4,439,596 1,607,688 1,500 262",
+      "text_length": 3458,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-056.webp"
+    },
+    {
+      "page": 57,
+      "file": "pages/page-057.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 145 事業） 1,406,326 13,690,411 （計 67 事業） 881,161 10,315,752 子育て支援センター「すくすく」の運営経費 21,040 29,040 子育てひろば「ぽこあぽこ」の運営経費 10,099 48,509 子育て支援センター「ぽろっこ」の運営経費 1",
+      "text_length": 2542,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-057.webp"
+    },
+    {
+      "page": 58,
+      "file": "pages/page-058.md",
+      "title": "まちづくり政策                                            Ａ     の       財   源     内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 ○ 親と子の絵本事業 3 2 1 812 170 642 ○ こんにちは赤ちゃん事業 3 2 1 1,585 528 528 200 329 ○ おもちゃ図書館運営費補助金 3 2 1 380 380 ○ 子育てサービス利用者支援事業 ",
+      "text_length": 3188,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-058.webp"
+    },
+    {
+      "page": 59,
+      "file": "pages/page-059.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 新生児のいる家庭全戸への絵本配布 842 1,654 育児に対する不安感の解消を目的とした主任児童委員・民生委員による家庭訪問の実施 842 2,427 障がい児を対象におもちゃ図書館を運営する江別市女性団体協議会への事業費補助 842 1,222 子育て支援コーディネーターによる相談・子育て情報提供",
+      "text_length": 2434,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-059.webp"
+    },
+    {
+      "page": 60,
+      "file": "pages/page-060.md",
+      "title": "まちづくり政策                                         Ａ      の      財   源     内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 養育医療一般管理経費 3 2 6 5 5 予防接種経費 4 1 3 215,489 350 4,513 210,626 乳幼児健康診査推進事業 4 1 6 24,765 1,178 34 23,553 母子健康教育経費 4 1 6 50",
+      "text_length": 3055,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-060.webp"
+    },
+    {
+      "page": 61,
+      "file": "pages/page-061.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 養育医療費給付事業に係る審査支払手数料 84 89 乳幼児、児童、生徒等の定期予防接種の実施、【拡大】妊婦を対象としたRSウイルス感染症の定 15,149 230,638 期予防接種の実施 １か月、４か月、10か月、１歳６か月、３歳児健康診査、発達健康診査の実施 21,040 45,805 マタニティ",
+      "text_length": 2656,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-061.webp"
+    },
+    {
+      "page": 62,
+      "file": "pages/page-062.md",
+      "title": "まちづくり政策                                         Ａ   の   財   源     内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 校外学習推進事業 10 1 3 20,797 20,797 中文連・中体連補助金 10 1 3 16,397 16,397 教職員保健衛生検査事業 10 1 3 8,308 8,308 特別支援学級生活介助事業 10 1 3 101,1",
+      "text_length": 2936,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-062.webp"
+    },
+    {
+      "page": 63,
+      "file": "pages/page-063.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 校外学習(スキー学習、子どもの文化芸術体験事業)バス賃借料等 842 21,639 中文連・中体連大会への参加費用補助、全道大会開催地補助金（バレーボール） 2,525 18,922 教職員保健衛生検査経費 5,050 13,358 支援員（特別支援学級）配置、備品購入等 4,208 105,341 ",
+      "text_length": 2156,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-063.webp"
+    },
+    {
+      "page": 64,
+      "file": "pages/page-064.md",
+      "title": "まちづくり政策                                         Ａ    の      財     源      内   訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 ○ 小学校遠距離通学送迎事業 10 2 1 30,375 30,375 ○ 学校プール安全対策推進事業 10 2 1 5,444 5,444 小学校教育扶助費 10 2 2 55,457 79 55,378 小学校教師用研究図書整備費 ",
+      "text_length": 3211,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-064.webp"
+    },
+    {
+      "page": 65,
+      "file": "pages/page-065.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 江北地区、角山地区の遠距離通学に係る送迎車両の運行経費 1,683 32,058 【新規】外部指導員派遣、清掃・水質管理の委託、近隣校とのプール共同利用等の試行（小学校６ 8,416 13,860 校） 経済的に就学が困難な家庭に対する扶助 4,208 59,665 小学校教師用研究図書購入 842 ",
+      "text_length": 2150,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-065.webp"
+    },
+    {
+      "page": 66,
+      "file": "pages/page-066.md",
+      "title": "まちづくり政策                                     Ａ      の      財     源      内   訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 学校施設整備事業（中学校校舎 ○ 10 3 3 57,821 48,600 9,221 屋体改修） 学校給食事業 10 5 3 412,106 29 412,077 ○ 対雁調理場施設・設備整備事業 10 5 3 2,745 2,745",
+      "text_length": 894,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-066.webp"
+    },
+    {
+      "page": 67,
+      "file": "pages/page-067.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 普通教室へのエアコン設置に向けた実施設計（中学校８校）ほか 8,416 66,237 給食センター両調理場給食供給事業に要する会計年度任用職員報酬、消耗品費及び委託料等 117,824 529,930 給湯配管交換修繕、食器自動整理装置修繕、フードスライサー更新経費の償還（債務負担行為 421 3,1",
+      "text_length": 811,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-067.webp"
+    },
+    {
+      "page": 68,
+      "file": "pages/page-068.md",
+      "title": "まちづくり政策                                         Ａ    の      財    源      内     訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 7 生涯学習・文化・スポーツ 1,045,872 14,734 8,667 125,900 9,103 887,468 （1） 生涯学習の充実 500,935 2,547 125,900 2,903 369,585 コミュニティセンター",
+      "text_length": 3178,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-068.webp"
+    },
+    {
+      "page": 69,
+      "file": "pages/page-069.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 72 事業） 222,189 1,268,061 （計 29 事業） 106,045 606,980 コミュニティセンター指定管理料 1,262 21,397 女性団体協議会、生涯学習推進協議会及び聚楽学園が行う事業への補助 4,208 6,403 65歳以上の市民を対象とした蒼樹大学の開催 1",
+      "text_length": 2400,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-069.webp"
+    },
+    {
+      "page": 70,
+      "file": "pages/page-070.md",
+      "title": "まちづくり政策                                         Ａ    の      財   源   内     訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 科学体験教室開催事業 10 4 5 168 168 江別の魅力「食」と「自然」を満喫 ○ 10 4 5 328 328 できる体験型学習事業 その他 2 事業 6,636 6,636 （2） ふるさと愛の醸成と地域文化の継承 189,1",
+      "text_length": 3067,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-070.webp"
+    },
+    {
+      "page": 71,
+      "file": "pages/page-071.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 科学実験教室の開催 2,525 2,693 江別市の魅力である「食」や「自然」を通じた体験学習の実施 2,525 2,853 5,891 12,527 （計 23 事業） 89,210 278,325 市史の情報集積・分析、情報の発信、『えべつの歴史』の発行 8,416 11,899 施設設備の維持管",
+      "text_length": 2166,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-071.webp"
+    },
+    {
+      "page": 72,
+      "file": "pages/page-072.md",
+      "title": "まちづくり政策                                   Ａ   の   財   源   内   訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 その他 1 事業 3,369 90 3,279 （3） 市民スポーツ活動の充実 355,822 435 355,387 社会人体育団体学校開放事業 10 5 1 263 263 スポーツ大会等振興補助事業 10 5 1 39,801 3",
+      "text_length": 1981,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-072.webp"
+    },
+    {
+      "page": 73,
+      "file": "pages/page-073.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 16,832 20,201 （計 20 事業） 26,934 382,756 学校体育館・グラウンドをスポーツ活動団体に開放する経費 1,683 1,946 各スポーツ大会開催等スポーツ振興事業補助 842 40,643 特設スケートリンクの管理経費 842 6,818 学校休業日の土曜日、小学校体育",
+      "text_length": 1721,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-073.webp"
+    },
+    {
+      "page": 74,
+      "file": "pages/page-074.md",
+      "title": "まちづくり政策                                    Ａ    の      財    源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 8 協働・共生 192,423 3,200 2,300 11,204 175,719 （1） 協働のまちづくりの推進 172,068 2,300 10,404 159,364 市民交流施設関連経費（市民交 2 1 6 29,304 6,",
+      "text_length": 2543,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-074.webp"
+    },
+    {
+      "page": 75,
+      "file": "pages/page-075.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 25 事業） 115,300 307,723 （計 18 事業） 87,528 259,596 市民交流施設賃借料 842 30,146 協働のまちづくり活動支援事業実施、市民活動活性化のためのセミナー・ワークショップ開催、市 5,050 8,699 民活動に関する情報発信 市内４大学の教員によ",
+      "text_length": 2056,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-075.webp"
+    },
+    {
+      "page": 76,
+      "file": "pages/page-076.md",
+      "title": "まちづくり政策                                 Ａ   の   財   源   内   訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 （3） 国際交流の推進 11,678 11,678 市民交流施設関連経費（江別国 2 1 1 2,931 2,931 際センター施設管理費等補助金） ○ 国際交流情報提供事業 2 1 1 4,804 4,804 ○ 中学生国際交流事業 ",
+      "text_length": 677,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-076.webp"
+    },
+    {
+      "page": 77,
+      "file": "pages/page-077.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 5 事業） 5,049 16,727 江別国際センターを管理運営する江別市国際交流推進協議会への補助 1,262 4,193 日本語が堪能な外国人の雇用による国際交流・国際理解の支援及び情報発信 1,262 6,066 姉妹都市米国グレシャム市との相互交流 1,683 5,006 842 1,4",
+      "text_length": 582,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-077.webp"
+    },
+    {
+      "page": 78,
+      "file": "pages/page-078.md",
+      "title": "まちづくり政策                                         Ａ      の      財   源   内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 9 計画推進 14,287,384 121,131 184,987 3,088,534 10,892,732 （1） 自主・自立の市政運営の推進 14,074,300 113,968 184,987 3,083,373 10,691,9",
+      "text_length": 3241,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-078.webp"
+    },
+    {
+      "page": 79,
+      "file": "pages/page-079.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 57 事業） 751,549 15,038,933 （計 49 事業） 675,806 14,750,106 例規・内規類集の管理等経費 13,466 19,023 指定管理者選定委員会及び外部評価委員会の開催 5,050 5,218 庁舎案内業務及び電話交換業務の委託経費 3,366 17,2",
+      "text_length": 2323,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-079.webp"
+    },
+    {
+      "page": 80,
+      "file": "pages/page-080.md",
+      "title": "まちづくり政策                                         Ａ      の      財   源   内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 市民交流施設関連経費（証明交 2 4 1 4,526 4,526 付窓口等） ○ 個人番号カード発行関連経費 2 4 1 82,199 82,199 住民基本台帳ネットワークシステ ○ 2 4 1 1,264 1,264 ム事業（臨時）",
+      "text_length": 2868,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-080.webp"
+    },
+    {
+      "page": 81,
+      "file": "pages/page-081.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 証明交付窓口等運営に係る諸経費 842 5,368 社会保障・税番号制度に係る個人番号（マイナンバー）カードの交付等関連事務経費 12,624 94,823 コンビニ交付システム改修経費の償還（債務負担行為分） 1,683 2,947 標準化移行に伴う戸籍管理システム改修経費 4,208 5,484 ",
+      "text_length": 2356,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-081.webp"
+    },
+    {
+      "page": 82,
+      "file": "pages/page-082.md",
+      "title": "まちづくり政策                        Ａ   の   財   源   内   訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 その他 1 事業 13,190 13,190 -78-",
+      "text_length": 270,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-082.webp"
+    },
+    {
+      "page": 83,
+      "file": "pages/page-083.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 7,574 20,764 -79-",
+      "text_length": 168,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-083.webp"
+    },
+    {
+      "page": 84,
+      "file": "pages/page-084.md",
+      "title": "まちづくり政策                                          Ａ     の      財     源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 政策の総合推進 1,051,297 698 51,407 63,900 98,644 836,648 議会だより発行経費 1 1 1 3,770 3,770 議員報酬等 1 1 1 194,388 194,388 議会交際費 1 1 1",
+      "text_length": 3177,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-084.webp"
+    },
+    {
+      "page": 85,
+      "file": "pages/page-085.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ （計 73 事業） 515,441 1,566,738 市議会だよりの発行 7,154 10,924 市議会議員報酬、手当、共済費 2,104 196,492 議長交際費 1,262 1,762 議会運営委員会及び議会広報広聴委員会による先進地調査旅費 1,683 5,096 議員の調査研究等に資する",
+      "text_length": 2155,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-085.webp"
+    },
+    {
+      "page": 86,
+      "file": "pages/page-086.md",
+      "title": "まちづくり政策                                             Ａ     の       財     源      内      訳",
+      "preview": "まちづくり政策 Ａ の 財 源 内 訳 事業費 取組の基本方針 款項目 A 国 道 市債 その他 一般財源 主 な 事 業 大麻出張所維持管理経費 2 1 7 11,637 11,637 大麻出張所総合窓口業務 2 1 7 9,297 6,256 3,041 大麻集会所管理運営事業 2 1 7 5,701 5,701 ○ 大麻出張所施設等補修整備事業 2 1",
+      "text_length": 2815,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-086.webp"
+    },
+    {
+      "page": 87,
+      "file": "pages/page-087.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 人件費 総額 主 な 内 容 Ｂ Ａ＋Ｂ 大麻出張所の維持管理経費 842 12,479 大麻出張所での証明等交付、各種受付業務、収納業務経費 39,555 48,852 指定管理料等 842 6,543 大麻集会所会議室用テーブル購入費 842 1,230 公平委員会業務一般管理経費 2,525 2,835 指定管理料等 2,525 95,",
+      "text_length": 2520,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-087.webp"
+    },
+    {
+      "page": 88,
+      "file": "pages/page-088.md",
+      "title": "88ページ",
+      "preview": "-84-",
+      "text_length": 4,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-088.webp"
+    },
+    {
+      "page": 89,
+      "file": "pages/page-089.md",
+      "title": "歳          入",
+      "preview": "歳 入 -85-",
+      "text_length": 25,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-089.webp"
+    },
+    {
+      "page": 90,
+      "file": "pages/page-090.md",
+      "title": "４ 歳      入                                                          (注)款以外の太字は主な臨時収入を示す。",
+      "preview": "４ 歳 入 (注)款以外の太字は主な臨時収入を示す。 （単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 1 市税 14,256,000 13,383,000 873,000 1 市民税 6,471,893 5,853,094 618,799 1 個人 5,654,920 5,153,347 501,573 1 現年課税分 5,6",
+      "text_length": 4964,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-090.webp"
+    },
+    {
+      "page": 91,
+      "file": "pages/page-091.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 5 都市計画税 1,096,022 1,044,983 51,039 1 都市計画税 1,096,022 1,044,983 51,039 1 現年課税分 1,094,585 土地 401,456 家屋 698,630 計 1,100,086×99.5％ 2 滞納繰越分 1,43",
+      "text_length": 3315,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-091.webp"
+    },
+    {
+      "page": 92,
+      "file": "pages/page-092.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 10 地方特例交付金 194,000 148,000 46,000 1 地方特例交付金 194,000 148,000 46,000 1 地方特例交付 194,000 148,000 46,000 1 地方特例交付 194,000 金 金 11 地方交付税 14,003,000 ",
+      "text_length": 3954,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-092.webp"
+    },
+    {
+      "page": 93,
+      "file": "pages/page-093.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 4 農林水産業使 2,056 2,104 △ 48 1 農村環境改善 1 用料 センター使用 料 2 花き・野菜栽 1 培技術指導セ ンター使用料 3 都市と農村の 2,054 交流センター 使用料 5 土木使用料 221,951 205,735 16,216 1 道路使用料 4",
+      "text_length": 3444,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-093.webp"
+    },
+    {
+      "page": 94,
+      "file": "pages/page-094.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 3 鳥獣飼養登録 3 票交付手数料 4 動物飼養収容 1 許可申請手数 料 5 地籍図面公簿 1 等閲覧手数料 6 地籍図写し交 1 付手数料 7 諸証明手数料 26 4 土木手数料 8,506 6,705 1,801 1 建築確認申請 1,857 ・検査手数料 2 租税特別措置",
+      "text_length": 3830,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-094.webp"
+    },
+    {
+      "page": 95,
+      "file": "pages/page-095.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 7 保険基盤安定 141,876 等負担金 8 自立支援医療 77,030 費負担金 9 自立支援給付 3,198,540 費負担金 10 中国残留邦人 23,526 等支援給付費 負担金 11 児童手当負担 1,714,683 金 12 養育医療費負 2,028 担金 13 生",
+      "text_length": 3308,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-095.webp"
+    },
+    {
+      "page": 96,
+      "file": "pages/page-096.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 7 児童虐待防止 10,179 対策等総合支 援事業費補助 金 8 子ども・子育 59,038 て支援施設整 備交付金 9 社会参加活躍 5,557 支援等孤独・ 孤立対策推進 交付金 10 こども政策推 2,137 進事業費補助 金 3 衛生費補助金 574,310 328,6",
+      "text_length": 3612,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-096.webp"
+    },
+    {
+      "page": 97,
+      "file": "pages/page-097.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 除排雪事業 483,095×2/3 322,063 車両整備事業 140,226×2/3 93,484 工業団地環境整備事業 27,784×6/10 16,670 旧江別小学校跡地利活用事業 41,620×6/10 24,972 2 社会資本整備 113,300 都市公園安全・安",
+      "text_length": 4196,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-097.webp"
+    },
+    {
+      "page": 98,
+      "file": "pages/page-098.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 3 国庫委託金 57,835 119,311 △ 61,476 1 総務費委託金 795 67,089 △ 66,294 1 自衛官募集事 223 務委託金 2 中長期在留者 572 住居地届出等 事務委託金 2 民生費委託金 32,296 32,072 224 1 国民年金事務",
+      "text_length": 3841,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-098.webp"
+    },
+    {
+      "page": 99,
+      "file": "pages/page-099.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 2 道補助金 1,349,479 1,161,635 187,844 1 総務費補助金 22,100 29,800 △ 7,700 1 移住支援事業 9,300 補助金 2 地域づくり総 9,800 合交付金 3 住まいのゼロ 3,000 カーボン化推 進事業補助金 2 民生費補",
+      "text_length": 3681,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-099.webp"
+    },
+    {
+      "page": 100,
+      "file": "pages/page-100.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 16 市町村地域障 5,089 がい児等支援 体制強化事業 費補助金 3 衛生費補助金 9,354 6,437 2,917 1 健康増進事業 5,322 費補助金 2 地域自殺対策 333 緊急強化推進 事業費補助金 3 不妊治療等助 1,055 成事業補助金 4 骨髄ドナー助 ",
+      "text_length": 3160,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-100.webp"
+    },
+    {
+      "page": 101,
+      "file": "pages/page-101.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 10 中心経営体農 26,011 地集積促進事 業交付金 11 次世代農業促 13,007 進生産基盤整 備特別対策事 業交付金 5 商工費補助金 5,253 5,262 △ 9 1 消費者行政強 253 化事業補助金 2 地域づくり総 5,000 合交付金 6 土木費補助金 2",
+      "text_length": 3359,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-101.webp"
+    },
+    {
+      "page": 102,
+      "file": "pages/page-102.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 2 建築動態統計 39 事務委託金 3 開発行為事務 5 委託金 4 教育費委託金 1,902 2,085 △ 183 1 スクールソー 1,902 シャルワーカ ー活用事業委 託金 ○ 民生費委託金 0 3 △ 3 17 財産収入 78,428 145,092 △ 66,664",
+      "text_length": 3677,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-102.webp"
+    },
+    {
+      "page": 103,
+      "file": "pages/page-103.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 7 庁舎整備基金 200,000 繰入金 ○ 他会計繰入金 0 200,000 △ 200,000 ○ 他会計繰入金 0 200,000 △ 200,000 20 繰越金 100,000 100,000 0 1 繰越金 100,000 100,000 0 1 繰越金 100,00",
+      "text_length": 3647,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-103.webp"
+    },
+    {
+      "page": 104,
+      "file": "pages/page-104.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 2 違約金及び延 10 10 0 1 違約金及び延 10 納利息 納利息 3 滞納処分費 638 616 22 1 滞納処分費 638 4 雑入 415,425 1,072,627 △ 657,202 1 広告料収入 6,788 2 電話使用料 170 3 労働保険料 11,15",
+      "text_length": 3574,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-104.webp"
+    },
+    {
+      "page": 105,
+      "file": "pages/page-105.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 24 河川防災ステ 11,724 ーション管理 経費札建負担 金 25 初心者パソコ 176 ン教室受講料 26 学校開放事業 1,619 暖房費徴収金 27 一般廃棄物処 41,187 理他団体負担 金 28 高齢者予防接 16,622 種国保負担金 29 夜間急病セン 1 タ",
+      "text_length": 2410,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-105.webp"
+    },
+    {
+      "page": 106,
+      "file": "pages/page-106.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 42 地域づくりセ 1,386 ミナー開催支 援金 43 市町村・国際 450 文化アカデミ ー研修受講助 成金 44 市民交流施設 727 使用料 45 要保護児童生 215 徒等充当補助 返還金 46 夜間急病セン 1 ター公費事務 取扱収入 47 後期高齢者医 6,609 ",
+      "text_length": 3675,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-106.webp"
+    },
+    {
+      "page": 107,
+      "file": "pages/page-107.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 3 本庁舎建設事 1,035,900 業債 4 水道施設災害 2,100 ・安全対策事 業出資債 5 地方道路等整 22,400 備事業債 2 民生債 1,500 27,100 △ 25,600 1 社会福祉施設 1,500 整備事業債 3 衛生債 1,092,600 956,2",
+      "text_length": 2965,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-107.webp"
+    },
+    {
+      "page": 108,
+      "file": "pages/page-108.md",
+      "title": "108ページ",
+      "preview": "-104-",
+      "text_length": 5,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-108.webp"
+    },
+    {
+      "page": 109,
+      "file": "pages/page-109.md",
+      "title": "歳           出",
+      "preview": "歳 出 -105-",
+      "text_length": 27,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-109.webp"
+    },
+    {
+      "page": 110,
+      "file": "pages/page-110.md",
+      "title": "５ 歳        出",
+      "preview": "５ 歳 出 款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 1 議会費 221,338 221,796 △458 70 221,268 1 議会費 221,338 221,796 △458 70 221,268 1 議会費 221,338 221,796 △458 諸収入 70 221,268 -106-",
+      "text_length": 593,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-110.webp"
+    },
+    {
+      "page": 111,
+      "file": "pages/page-111.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 款の括弧書きは職員給与費を含めた予算額を示す。以下同じ。 （職員給与費 8人 70,359 合計 291,697） 1 報酬 116,840 議会だより発行経費 3,770 総合推進事業 3 職員手当等 51,943",
+      "text_length": 1284,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-111.webp"
+    },
+    {
+      "page": 112,
+      "file": "pages/page-112.md",
+      "title": "本    年   度   の      財   源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 2 総務費 12,587,871 9,388,675 3,199,196 3,958,480 8,629,391 1 総務管理費 4,872,646 2,012,995 2,859,651 3,451,829 1,420,817 1 一般管理費 1,789,718 8",
+      "text_length": 1554,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-112.webp"
+    },
+    {
+      "page": 113,
+      "file": "pages/page-113.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 （職員給与費 特別職 2人、一般職 194人 1,624,947 合計 8,124,618） 1 報酬 23,974 防災関連業務経費 3,146 政策 4 - (2) 2 給料 4,788 市民交流施設関連経費（江",
+      "text_length": 4083,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-113.webp"
+    },
+    {
+      "page": 114,
+      "file": "pages/page-114.md",
+      "title": "本    年   度   の     財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 4 会計管理費 19,143 21,557 △2,414 19,143 5 財産管理費 2,240,905 158,843 2,082,062 財産収入 63,096 426,472 寄附金 800 諸収入 1,750,537 計 1,814,433 6 企画費 19",
+      "text_length": 1492,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-114.webp"
+    },
+    {
+      "page": 115,
+      "file": "pages/page-115.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 12 委託料 1,624 13 使用料及び賃借料 251 18 負担金補助及び交付金 9 1 報酬 8,563 会計一般管理経費 12,067 総合推進事業 3 職員手当等 3,319 ○ 公金取扱業務経費（臨時） ",
+      "text_length": 3407,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-115.webp"
+    },
+    {
+      "page": 116,
+      "file": "pages/page-116.md",
+      "title": "本    年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 7 大麻出張所費 27,023 26,392 631 使用料及び手数料 6,102 20,767 諸収入 154 計 6,256 8 公平委員会費 310 311 △1 310 9 市民会館費 180,057 121,061 58,996 使用料及び手数料 34,43",
+      "text_length": 1640,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-116.webp"
+    },
+    {
+      "page": 117,
+      "file": "pages/page-117.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 その他の事業 3,879 1 報酬 6,407 大麻出張所維持管理経費 11,637 総合推進事業 3 職員手当等 2,483 大麻出張所総合窓口業務 9,297 総合推進事業 8 旅費 6 大麻集会所管理運営事業 ",
+      "text_length": 3419,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-117.webp"
+    },
+    {
+      "page": 118,
+      "file": "pages/page-118.md",
+      "title": "本       年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 2 広報費 72,885 65,698 7,187 国庫支出金 7,163 60,559 諸収入 5,163 計 12,326 3 交通安全推進費 15,552 16,116 △564 諸収入 340 15,212 4 環境対策費 26,462 28,123 △1,6",
+      "text_length": 1643,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-118.webp"
+    },
+    {
+      "page": 119,
+      "file": "pages/page-119.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 その他の事業 7,724 1 報酬 20,010 江別市史編さん事業 3,483 政策 7 - (2) 3 職員手当等 4,197 ホームページ運営事業 1,856 政策 9 - (2) 8 旅費 108 広報えべつ",
+      "text_length": 3080,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-119.webp"
+    },
+    {
+      "page": 120,
+      "file": "pages/page-120.md",
+      "title": "本       年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 2 賦課徴収費 68,604 77,235 △8,631 諸収入 638 67,966 4 戸籍住民基本台帳費 176,047 175,231 816 117,383 58,664 1 戸籍住民基本台帳費 176,047 175,231 816 使用料及び手数料 33",
+      "text_length": 1504,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-120.webp"
+    },
+    {
+      "page": 121,
+      "file": "pages/page-121.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 12 委託料 71,074 ○ 総合行政システム改修事業（固定資産税システム 2,310 総合推進事業 13 使用料及び賃借料 6,325 等） 17 備品購入費 576 ○ 固定資産現況調査等高度化経費 24,65",
+      "text_length": 2931,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-121.webp"
+    },
+    {
+      "page": 122,
+      "file": "pages/page-122.md",
+      "title": "本      年   度   の   財   源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 ○ 参議院議員選挙費 0 66,415 △66,415 6 統計調査費 12,069 89,201 △77,132 8,297 3,772 1 統計調査総務費 12,069 3,634 8,435 道支出金 8,283 3,772 諸収入 14 計 8,297 ○ 国",
+      "text_length": 2093,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-122.webp"
+    },
+    {
+      "page": 123,
+      "file": "pages/page-123.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 8 旅費 149 10 需用費 2,865 11 役務費 9,400 12 委託料 20,019 13 使用料及び賃借料 1,565 1 報酬 8,300 ○ 基幹統計調査事業 11,492 総合推進事業 3 職員手",
+      "text_length": 1994,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-123.webp"
+    },
+    {
+      "page": 124,
+      "file": "pages/page-124.md",
+      "title": "本      年   度   の     財   源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 3 民生費 21,336,694 21,360,900 △24,206 13,599,596 7,737,098 1 社会福祉費 9,631,852 9,785,909 △154,057 5,345,803 4,286,049 1 社会福祉総務費 291,851 1,",
+      "text_length": 1983,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-124.webp"
+    },
+    {
+      "page": 125,
+      "file": "pages/page-125.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 （職員給与費 172人 1,273,979 合計 22,610,673） 1 報酬 627 民生委員活動支援事業 17,827 政策 3 - (1) 7 報償費 299 社会福祉協議会補助金 110,579 政策 3",
+      "text_length": 4243,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-125.webp"
+    },
+    {
+      "page": 126,
+      "file": "pages/page-126.md",
+      "title": "本   年   度   の     財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 市債 800 計 5,222,210 -122-",
+      "text_length": 381,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-126.webp"
+    },
+    {
+      "page": 127,
+      "file": "pages/page-127.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 10 需用費 3,359 障害者日常生活用具給付費 46,053 政策 3 - (3) 11 役務費 17,434 障害者自助具給付費 9 政策 3 - (3) 12 委託料 81,469 特別障害者手当等給付費 5",
+      "text_length": 4099,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-127.webp"
+    },
+    {
+      "page": 128,
+      "file": "pages/page-128.md",
+      "title": "本      年   度   の     財   源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 4 国民年金費 7,638 8,662 △1,024 国庫支出金 7,638 2 児童福祉費 8,942,828 8,860,449 82,379 6,134,009 2,808,819 1 児童福祉総務費 3,182,361 3,293,308 △110,947 分",
+      "text_length": 1073,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-128.webp"
+    },
+    {
+      "page": 129,
+      "file": "pages/page-129.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 ○ 医療的ケア児等受入・レスパイト促進事業 16,700 政策 3 - (3) ○ 重度身体障がい者施設入浴事業 4,525 政策 3 - (3) ○ 重度身体障がい児施設入浴事業 3,969 政策 3 - (3) ",
+      "text_length": 3591,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-129.webp"
+    },
+    {
+      "page": 130,
+      "file": "pages/page-130.md",
+      "title": "本    年   度   の     財   源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 2 母子福祉費 70,542 64,964 5,578 国庫支出金 16,650 32,963 道支出金 20,330 諸収入 599 計 37,579 3 保育所費 5,226,151 5,056,341 169,810 分担金及び負担金 85,170 1,772,",
+      "text_length": 2166,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-130.webp"
+    },
+    {
+      "page": 131,
+      "file": "pages/page-131.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 ○ 放課後児童クラブ施設整備事業 102,075 政策 6 - (1) ○ 家庭支援事業 1,084 政策 6 - (1) その他の事業 14,759 1 報酬 4,364 ひとり親家庭等医療費助成事業 38,773",
+      "text_length": 3071,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-131.webp"
+    },
+    {
+      "page": 132,
+      "file": "pages/page-132.md",
+      "title": "本       年   度   の     財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 6 養育医療費 5,044 5,717 △673 国庫支出金 2,028 1,022 道支出金 1,014 諸収入 980 計 4,022 3 生活保護費 2,762,009 2,714,537 47,472 2,119,784 642,225 1 生活保護総務費 2",
+      "text_length": 1476,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-132.webp"
+    },
+    {
+      "page": 133,
+      "file": "pages/page-133.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 11 役務費 13,347 12 委託料 269 19 扶助費 330,441 11 役務費 5 養育医療費給付事業 5,039 政策 6 - (1) 19 扶助費 5,039 養育医療一般管理経費 5 政策 6 -",
+      "text_length": 1247,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-133.webp"
+    },
+    {
+      "page": 134,
+      "file": "pages/page-134.md",
+      "title": "本    年   度   の      財   源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 4 衛生費 4,970,608 4,637,212 333,396 2,632,124 2,338,484 1 保健衛生費 1,101,743 1,103,714 △1,971 293,626 808,117 1 保健衛生総務費 265,772 249,242 16,",
+      "text_length": 2225,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-134.webp"
+    },
+    {
+      "page": 135,
+      "file": "pages/page-135.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 （職員給与費 58人 435,335 合計 5,405,943） 1 報酬 99,454 ◎ 健康都市推進事業 1,961 政策 3 - (2) 3 職員手当等 8,227 救急医療対策事業 25,144 政策 3 ",
+      "text_length": 3298,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-135.webp"
+    },
+    {
+      "page": 136,
+      "file": "pages/page-136.md",
+      "title": "本    年   度   の     財   源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 7 予防費 168,506 177,642 △9,136 国庫支出金 2,882 91,473 道支出金 5,705 寄附金 27,800 諸収入 40,646 計 77,033 2 清掃費 3,868,865 3,533,498 335,367 2,338,498 ",
+      "text_length": 2151,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-136.webp"
+    },
+    {
+      "page": 137,
+      "file": "pages/page-137.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 12 委託料 92,254 ○ 妊婦のための支援給付交付金事業 77,530 政策 6 - (1) 13 使用料及び賃借料 1,155 ○ 不妊治療等助成事業 2,110 政策 6 - (1) 18 負担金補助及び交",
+      "text_length": 3046,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-137.webp"
+    },
+    {
+      "page": 138,
+      "file": "pages/page-138.md",
+      "title": "本    年   度   の     財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 5 リサイクル推進費 219,340 139,508 79,832 国庫支出金 233 119,526 諸収入 33,981 市債 65,600 計 99,814 6 廃棄物処理施設整備事業 1,652,261 423,354 1,228,907 国庫支出金 495,",
+      "text_length": 931,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-138.webp"
+    },
+    {
+      "page": 139,
+      "file": "pages/page-139.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 18 負担金補助及び交付金 26,094 7 報償費 40 リサイクルセンター運営管理委託事業 92,148 政策 1 - (2) 8 旅費 7 分別・資源化等啓発事業 4,120 政策 1 - (2) 10 需用費",
+      "text_length": 1131,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-139.webp"
+    },
+    {
+      "page": 140,
+      "file": "pages/page-140.md",
+      "title": "本       年   度   の   財   源    内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 5 労働費 59,418 55,814 3,604 12,013 47,405 1 労働諸費 59,418 55,814 3,604 12,013 47,405 1 労働振興費 59,418 55,814 3,604 使用料及び手数料 13 47,405 道支出金 5",
+      "text_length": 950,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-140.webp"
+    },
+    {
+      "page": 141,
+      "file": "pages/page-141.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 （職員給与費 2人 13,549 合計 72,967） 8 旅費 32 ◎ 企業と人材のマッチング支援事業 16,507 政策 2 - (2) 10 需用費 489 勤労者福祉共済制度助成事業 3,490 政策 2 ",
+      "text_length": 1076,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-141.webp"
+    },
+    {
+      "page": 142,
+      "file": "pages/page-142.md",
+      "title": "本    年   度   の    財   源    内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 6 農林水産業費 715,037 852,743 △137,706 565,530 149,507 1 農業費 709,538 847,332 △137,794 565,516 144,022 1 農業委員会費 13,487 13,319 168 諸収入 40 13,",
+      "text_length": 1563,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-142.webp"
+    },
+    {
+      "page": 143,
+      "file": "pages/page-143.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 （職員給与費 16人 118,224 合計 833,261） 1 報酬 11,740 農業委員関係経費 9,893 政策 2 - (1) 3 職員手当等 836 その他の事業 3,594 8 旅費 396 10 需用",
+      "text_length": 3378,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-143.webp"
+    },
+    {
+      "page": 144,
+      "file": "pages/page-144.md",
+      "title": "本    年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 6 土地改良事業費 384,647 346,379 38,268 分担金及び負担金 39,264 56,998 国庫支出金 32,046 道支出金 199,634 諸収入 5 市債 56,700 計 327,649 2 林業費 5,499 5,411 88 14 5,",
+      "text_length": 1053,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-144.webp"
+    },
+    {
+      "page": 145,
+      "file": "pages/page-145.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 10 需用費 30 12 委託料 95 18 負担金補助及び交付金 1,083 8 旅費 5 ○ 緊急排水対策特別事業 20,120 政策 2 - (1) 10 需用費 56,475 ○ 排水路維持管理経費 1,87",
+      "text_length": 1500,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-145.webp"
+    },
+    {
+      "page": 146,
+      "file": "pages/page-146.md",
+      "title": "本    年   度   の      財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 7 商工費 1,489,436 1,544,499 △55,063 1,265,203 224,233 1 商工費 1,489,436 1,544,499 △55,063 1,265,203 224,233 1 商工総務費 377 477 △100 377 2 商業振",
+      "text_length": 2338,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-146.webp"
+    },
+    {
+      "page": 147,
+      "file": "pages/page-147.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 （職員給与費 17人 145,764 合計 1,635,200） 1 報酬 198 経済審議会開催経費 246 政策 2 - (2) 8 旅費 84 その他の事業 131 10 需用費 63 13 使用料及び賃借料 ",
+      "text_length": 3615,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-147.webp"
+    },
+    {
+      "page": 148,
+      "file": "pages/page-148.md",
+      "title": "本    年   度   の      財   源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 8 土木費 5,816,458 6,290,700 △474,242 3,371,298 2,445,160 1 土木管理費 33,273 28,860 4,413 14,717 18,556 1 土木総務費 33,273 28,860 4,413 使用料及び手数料 ",
+      "text_length": 2209,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-148.webp"
+    },
+    {
+      "page": 149,
+      "file": "pages/page-149.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 （職員給与費 73人 597,742 合計 6,414,200） 1 報酬 2,156 大麻市営駐車場管理経費 14,716 政策 5 - (2) 3 職員手当等 836 ○ 道路景観づくり推進事業 275 政策 5",
+      "text_length": 3453,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-149.webp"
+    },
+    {
+      "page": 150,
+      "file": "pages/page-150.md",
+      "title": "本    年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 計 564,078 3 河川費 311,300 487,639 △176,339 146,962 164,338 1 河川総務費 34,000 32,431 1,569 使用料及び手数料 1,400 20,876 諸収入 11,724 計 13,124 2 河川維持費",
+      "text_length": 2080,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-150.webp"
+    },
+    {
+      "page": 151,
+      "file": "pages/page-151.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 10 需用費 763 ○ 道路橋梁新設改築事業 527,577 政策 5 - (2) 11 役務費 324 12 委託料 138,400 13 使用料及び賃借料 715 14 工事請負費 102,281 16 公有財",
+      "text_length": 2563,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-151.webp"
+    },
+    {
+      "page": 152,
+      "file": "pages/page-152.md",
+      "title": "本    年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 3 公園整備費 63,667 66,088 △2,421 国庫支出金 15,200 9,567 市債 38,900 計 54,100 4 開発指導費 1,370 950 420 1,370 5 住宅費 508,341 352,170 156,171 488,734 1",
+      "text_length": 1875,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-152.webp"
+    },
+    {
+      "page": 153,
+      "file": "pages/page-153.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 15 原材料費 400 17 備品購入費 372 18 負担金補助及び交付金 76 10 需用費 22 ○ 市民参加による公園づくり事業 63,667 政策 5 - (1) 12 委託料 8,045 14 工事請負費",
+      "text_length": 2249,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-153.webp"
+    },
+    {
+      "page": 154,
+      "file": "pages/page-154.md",
+      "title": "本    年   度   の    財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 9 消防費 332,842 984,363 △651,521 103,991 228,851 1 消防費 332,842 984,363 △651,521 103,991 228,851 1 常備消防費 263,492 930,220 △666,728 使用料及び手数",
+      "text_length": 1355,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-154.webp"
+    },
+    {
+      "page": 155,
+      "file": "pages/page-155.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 （職員給与費 130人 1,053,791 合計 1,386,633） 1 報酬 3,424 火災予防推進事業 1,196 政策 4 - (3) 3 職員手当等 836 消防庁舎・出張所維持管理費 43,915 政策",
+      "text_length": 2783,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-155.webp"
+    },
+    {
+      "page": 156,
+      "file": "pages/page-156.md",
+      "title": "本    年   度   の      財   源    内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 10 教育費 3,875,571 3,611,528 264,043 1,034,559 2,841,012 1 教育総務費 1,086,596 1,220,721 △134,125 425,803 660,793 1 教育委員会費 2,943 3,119 △176 ",
+      "text_length": 1462,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-156.webp"
+    },
+    {
+      "page": 157,
+      "file": "pages/page-157.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 （職員給与費 特別職 1人、一般職 90人 754,510 合計 4,630,081） 1 報酬 2,842 教育委員報酬等 2,943 政策 6 - (2) 8 旅費 85 18 負担金補助及び交付金 16 1 報",
+      "text_length": 3452,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-157.webp"
+    },
+    {
+      "page": 158,
+      "file": "pages/page-158.md",
+      "title": "本   年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 2 小学校費 581,705 637,489 △55,784 63,791 517,914 1 学校管理費 321,319 302,749 18,570 諸収入 3,965 317,354 2 教育振興費 112,478 151,259 △38,781 国庫支出金 2",
+      "text_length": 927,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-158.webp"
+    },
+    {
+      "page": 159,
+      "file": "pages/page-159.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 ○ 市内私立高校助成金 6,000 政策 6 - (2) ○ 奨学資金貸付金 2,269 政策 6 - (2) ○ 社会科副読本改訂事業 2,034 政策 6 - (2) ○ スクールカウンセラー事業 4,040 政",
+      "text_length": 3476,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-159.webp"
+    },
+    {
+      "page": 160,
+      "file": "pages/page-160.md",
+      "title": "本     年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 2 教育振興費 101,263 126,768 △25,505 国庫支出金 3,675 93,100 道支出金 4,488 計 8,163 3 学校営繕費 89,584 63,304 26,280 市債 48,600 40,984 4 社会教育費 672,265 54",
+      "text_length": 1320,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-160.webp"
+    },
+    {
+      "page": 161,
+      "file": "pages/page-161.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 12 委託料 74,772 ○ 中学校遠距離通学送迎事業 66,544 政策 6 - (2) 13 使用料及び賃借料 7,470 17 備品購入費 2,468 1 報酬 6,025 中学校教育扶助費 61,330 政",
+      "text_length": 3453,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-161.webp"
+    },
+    {
+      "page": 162,
+      "file": "pages/page-162.md",
+      "title": "本   年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 3 公民館費 262,771 153,857 108,914 使用料及び手数料 618 140,453 市債 121,700 計 122,318 4 情報図書館費 177,056 258,353 △81,297 諸収入 933 171,923 市債 4,200 計 5",
+      "text_length": 1242,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-162.webp"
+    },
+    {
+      "page": 163,
+      "file": "pages/page-163.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 ○ 芸術鑑賞招へい事業 1,550 政策 7 - (2) ○ 文化振興奨励事業 230 政策 7 - (2) ○ 子どもの文化活動育成事業（土曜広場） 1,150 政策 7 - (2) ○ 埋蔵文化財発掘調査事業 2",
+      "text_length": 3825,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-163.webp"
+    },
+    {
+      "page": 164,
+      "file": "pages/page-164.md",
+      "title": "本   年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 2 体育施設費 12,302 16,152 △3,850 12,302 3 学校給食センター費 766,826 473,406 293,420 使用料及び手数料 29 437,841 道支出金 327,356 市債 1,600 計 328,985 -160-",
+      "text_length": 736,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-164.webp"
+    },
+    {
+      "page": 165,
+      "file": "pages/page-165.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 7 報償費 6,340 屋外スケートリンク管理運営事業 5,976 政策 7 - (3) 8 旅費 99 学校体育館土曜開放事業 1,430 政策 7 - (3) 10 需用費 1,077 学校プール開放事業 11,",
+      "text_length": 2347,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-165.webp"
+    },
+    {
+      "page": 166,
+      "file": "pages/page-166.md",
+      "title": "本       年   度   の    財   源    内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 11 公債費 3,462,582 3,508,586 △46,004 305,208 3,157,374 1 公債費 3,462,582 3,508,586 △46,004 305,208 3,157,374 1 元金 3,199,727 3,335,445 △135",
+      "text_length": 1015,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-166.webp"
+    },
+    {
+      "page": 167,
+      "file": "pages/page-167.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 22 償還金利子及び割引料 3,199,727 公債償還元金 3,199,727 政策 9 - (1) 22 償還金利子及び割引料 262,855 公債償還利子 260,762 政策 9 - (1) 一時借入金利子 ",
+      "text_length": 545,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-167.webp"
+    },
+    {
+      "page": 168,
+      "file": "pages/page-168.md",
+      "title": "本       年   度   の      財   源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 12 諸支出金 6,932,145 6,283,184 648,961 2,021,360 4,910,785 1 他会計繰出金 6,872,414 6,222,373 650,041 2,021,360 4,851,054 1 国民健康保険会計 1,129,619 ",
+      "text_length": 2088,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-168.webp"
+    },
+    {
+      "page": 169,
+      "file": "pages/page-169.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 27 繰出金 1,129,619 ○ 国民健康保険会計繰出金 1,129,619 政策 3 - (2) 27 繰出金 785,599 ○ 基本財産基金運用会計繰出金 785,599 政策 9 - (1) 27 繰出金",
+      "text_length": 1026,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-169.webp"
+    },
+    {
+      "page": 170,
+      "file": "pages/page-170.md",
+      "title": "本   年   度   の   財   源   内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 13 予備費 50,000 50,000 0 50,000 1 予備費 50,000 50,000 0 50,000 1 予備費 50,000 50,000 0 50,000 -166-",
+      "text_length": 571,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-170.webp"
+    },
+    {
+      "page": 171,
+      "file": "pages/page-171.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 事 業 名 ・ 事 業 費 ・ 政 策 取 組 区 分 金 額 ◎は「えべつ未来戦略」の対象事業を、○は主な臨時費を示す。 -167-",
+      "text_length": 228,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-171.webp"
+    },
+    {
+      "page": 172,
+      "file": "pages/page-172.md",
+      "title": "給                与                   費",
+      "preview": "給 与 費 １ 特 別 職 給 与 区 分 職 員 数 期 末 手 当 報 酬 給 料 (年間支給率･ 地域手当 月分) 人 千円 千円 千円 千円 8,636 長 等 2 19,380 (4.65) 51,107 議 員 25 114,684 本 年 度 (4.65) その他の 3,305 1,061 62,568 7,416 特 別 職 (4.65) 計",
+      "text_length": 3677,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-172.webp"
+    },
+    {
+      "page": 173,
+      "file": "pages/page-173.md",
+      "title": "明          細               書",
+      "preview": "明 細 書 費 共 済 費 合 計 備 考 寒冷地手当 その他の手当 計 千円 千円 千円 千円 千円 203 28,219 4,974 33,193 165,791 28,597 194,388 130 73,419 2,184 75,603 333 267,429 35,755 303,184 145 28,069 4,839 32,908 165,24",
+      "text_length": 1261,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-173.webp"
+    },
+    {
+      "page": 174,
+      "file": "pages/page-174.md",
+      "title": "区              分   扶   養   手    当       管 理 職 手 当              地   域    手    当",
+      "preview": "区 分 扶 養 手 当 管 理 職 手 当 地 域 手 当 千円 千円 千円 本 年 度 95,262 82,563 485 前 年 度 92,952 67,543 530 比 較 2,310 15,020 △ 45 職員手当の内訳 区 分 宿 日 直 手 当 通 勤 手 当 期 末 手 当 千円 千円 千円 (252) (206,192) 本 年 度 47",
+      "text_length": 1785,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-174.webp"
+    },
+    {
+      "page": 175,
+      "file": "pages/page-175.md",
+      "title": "住   居    手   当          時間外勤務手当               特殊勤務手当        夜間勤務手当",
+      "preview": "住 居 手 当 時間外勤務手当 特殊勤務手当 夜間勤務手当 千円 千円 千円 千円 73,654 231,556 11,978 8,701 73,201 218,805 11,569 9,025 453 4,521 12,751 409 △ 324 勤 勉 手 当 寒 冷 地 手 当 管理職員特別勤務手当 千円 千円 千円 (173,528) 580,244",
+      "text_length": 1602,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-175.webp"
+    },
+    {
+      "page": 176,
+      "file": "pages/page-176.md",
+      "title": "(３) 給料及び職員手当の状況",
+      "preview": "(３) 給料及び職員手当の状況 (ア) 職員一人当たり給与 区 分 行 政 職 現 業 職 消 防 職 看 護 職 円 円 円 円 平 均 給料 月額 312,985 352,430 317,683 327,100 令和８年1月1日 平 均 給与 月額 372,324 387,755 379,726 421,407 現 在 平 均 年 齢 ４１歳 ５７歳 ４",
+      "text_length": 2323,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-176.webp"
+    },
+    {
+      "page": 177,
+      "file": "pages/page-177.md",
+      "title": "(ウ)      級別職員数",
+      "preview": "(ウ) 級別職員数 行 政 職 現 業 職 消 防 職 看 護 職 区 分 級 職 員 数 構 成 比 職 員 数 構 成 比 職 員 数 構 成 比 職 員 数 構 成 比 人 ％ 人 ％ 人 ％ 人 ％ １ 級 53 8.9 20 15.4 ２ 級 59 9.9 14 10.8 (9) （100.0） (3) (100.0) (1) (100.0) ３ ",
+      "text_length": 4816,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-177.webp"
+    },
+    {
+      "page": 178,
+      "file": "pages/page-178.md",
+      "title": "(エ) 昇給",
+      "preview": "(エ) 昇給 区 分 合 計 行政職 現業職 消防職 看護職 人 人 人 人 人 職 員 数 (Ａ) 760 604 22 130 4 昇給に係る職員数(Ｂ) 638 515 5 116 2 本 １号給 5 2 1 1 1 号給数別内訳 ２号給 2 0 1 0 1 年 ３号給 22 21 0 1 0 ４号給 466 380 0 86 0 度 ６号給 109 ",
+      "text_length": 2577,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-178.webp"
+    },
+    {
+      "page": 179,
+      "file": "pages/page-179.md",
+      "title": "(カ) 定年退職及び定年前早期退職に係る退職手当",
+      "preview": "(カ) 定年退職及び定年前早期退職に係る退職手当 20年勤続の 25年勤続 35年勤続 最高限度 その他の 区 分 備 考 者(月分) の者(月分) の者(月分) (月分) 加算措置等 定年前早期 支給率等 24.586875 33.27075 47.709 47.709 退職特例措置 (3%～45%加算) 定年前早期 国の制度 (支給率等) 24.5868",
+      "text_length": 1684,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-179.webp"
+    },
+    {
+      "page": 180,
+      "file": "pages/page-180.md",
+      "title": "継続費についての前前年度末までの支出額、",
+      "preview": "継続費についての前前年度末までの支出額、 及び当該年度以降の支出予定額並びに事業 全 体 計 左 の 財 源 内 款 項 事 業 名 年 度 年 割 額 特 定 財 源 国道支出金 地 方 債 そ の 他 千円 千円 千円 千円 令和８年度 1,249,315 1,035,900 210,000 ２ １ 令和９年度 9,119,997 7,562,700 1",
+      "text_length": 2322,
+      "toc_label": "継続費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-180.webp"
+    },
+    {
+      "page": 181,
+      "file": "pages/page-181.md",
+      "title": "前年度末までの支出額又は支出額の見込み",
+      "preview": "前年度末までの支出額又は支出額の見込み の進行状況等に関する調書 画 訳 前前年度末 前 年 度 末 当 該 年 度 当 該 年 度 翌年度以降 継 続 費 の までの支出 末 ま で の 総額に対する までの支出額 （見込）額 支出予定額 支出予定額 支出予定額 進 捗 率 一般財源 千円 千円 千円 千円 千円 千円 ％ 3,415 1,249,315 ",
+      "text_length": 1718,
+      "toc_label": "継続費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-181.webp"
+    },
+    {
+      "page": 182,
+      "file": "pages/page-182.md",
+      "title": "債務負担行為で翌年度以降にわたるものに",
+      "preview": "債務負担行為で翌年度以降にわたるものに の見込み及び当該年度以降の支出予定額等 前年度末までの支出（見込）額 事 項 限 度 額 期 間 金 額 市 民 交 流 施 設 賃 借 料 令和元年度 844,932 令和2年度 ～ 令和7年度 175,824 総 コンビニ交付システム更新費 令和5年度 5,324 令和6年度 ～ 令和7年度 2,534 務 家 屋",
+      "text_length": 3273,
+      "toc_label": "債務負担行為",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-182.webp"
+    },
+    {
+      "page": 183,
+      "file": "pages/page-183.md",
+      "title": "ついての前年度末までの支出額又は支出額",
+      "preview": "ついての前年度末までの支出額又は支出額 に関する調書 （単位：千円） 当該年度以降の支出予定額 左 の 財 源 内 訳 特 定 財 源 期 間 金 額 一般財源 国道支出金 地 方 債 そ の 他 令和8年度 ～ 令和30年度 669,108 669,108 令和8年度 ～ 令和9年度 2,525 2,525 令和8年度 2,088 2,088 令和9年度 ",
+      "text_length": 2796,
+      "toc_label": "債務負担行為",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-183.webp"
+    },
+    {
+      "page": 184,
+      "file": "pages/page-184.md",
+      "title": "前年度末までの支出（見込）額",
+      "preview": "前年度末までの支出（見込）額 事 項 限 度 額 期 間 金 額 給 食 調 理 機 器 等 整 備 費 令和4年度 1,508 令和5年度 ～ 令和7年度 1,094 教 令和5年度 41,932 令和6年度 ～ 令和7年度 19,639 令和6年度 6,660 令和7年度 700 令和7年度 3,099 令和8年度 4,147 育 小 計 57,346 ",
+      "text_length": 2692,
+      "toc_label": "債務負担行為",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-184.webp"
+    },
+    {
+      "page": 185,
+      "file": "pages/page-185.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 当該年度以降の支出予定額 左 の 財 源 内 訳 特 定 財 源 期 間 金 額 一般財源 国道支出金 地 方 債 そ の 他 令和8年度 363 363 令和8年度 ～ 令和9年度 19,569 19,569 令和8年度 ～ 令和10年度 2,069 2,069 令和8年度 ～ 令和11年度 2,931 2,931 令和9年度 ～ 令和12",
+      "text_length": 2156,
+      "toc_label": "債務負担行為",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-185.webp"
+    },
+    {
+      "page": 186,
+      "file": "pages/page-186.md",
+      "title": "地方債の前前年度末における現在高並びに",
+      "preview": "地方債の前前年度末における現在高並びに 見込みに関する調書 区 分 前前年度末現在高 前年度末現在高見込額 １ 普 通 債 21,408,482 28,061,439 総 務 921,927 1,400,017 庁 舎 295,600 そ の 他 921,927 1,104,417 民 生 609,917 592,534 衛 生 1,815,371 2,71",
+      "text_length": 1596,
+      "toc_label": "地方債",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-186.webp"
+    },
+    {
+      "page": 187,
+      "file": "pages/page-187.md",
+      "title": "前年度末及び当該年度末における現在高の",
+      "preview": "前年度末及び当該年度末における現在高の （ 単位：千円 ） 当 該 年 度 中 増 減 見 込 当該年度末現在高見込額 当該年度中起債見込額 当該年度中元金償還見込額 4,574,000 1,793,093 30,842,346 1,126,600 127,069 2,399,548 1,035,900 1,331,500 90,700 127,069 1,",
+      "text_length": 1738,
+      "toc_label": "地方債",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-187.webp"
+    },
+    {
+      "page": 188,
+      "file": "pages/page-188.md",
+      "title": "188ページ",
+      "preview": "-184-",
+      "text_length": 5,
+      "toc_label": "地方債",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-188.webp"
+    },
+    {
+      "page": 189,
+      "file": "pages/page-189.md",
+      "title": "国民健康保険特別会計予算",
+      "preview": "国民健康保険特別会計予算 -185-",
+      "text_length": 27,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-189.webp"
+    },
+    {
+      "page": 190,
+      "file": "pages/page-190.md",
+      "title": "190ページ",
+      "preview": "-186-",
+      "text_length": 5,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-190.webp"
+    },
+    {
+      "page": 191,
+      "file": "pages/page-191.md",
+      "title": "令和８年度江別市国民健康保険特別会計予算",
+      "preview": "令和８年度江別市国民健康保険特別会計予算 令和８年度江別市の国民健康保険特別会計の予算は、次に定めるところによる。 （歳入歳出予算） 第１条 歳入歳出予算の総額は、歳入歳出それぞれ１１，７６５，０００千円と定め る。 ２ 歳入歳出予算の款項の区分及び当該区分ごとの金額は、「第１表歳入歳出予算」 による。 （歳出予算の流用） 第２条 地方自治法（昭和２２年法律",
+      "text_length": 469,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-191.webp"
+    },
+    {
+      "page": 192,
+      "file": "pages/page-192.md",
+      "title": "第１表       歳入歳出予算",
+      "preview": "第１表 歳入歳出予算 （歳 入） 款 項 金 額 千円 1 国民健康保険税 1,757,677 1 国民健康保険税 1,757,677 2 国庫支出金 10 1 国庫補助金 10 3 道支出金 8,815,130 1 道補助金 8,815,130 4 財産収入 640 1 財産運用収入 640 5 繰入金 1,170,619 1 他会計繰入金 1,129,6",
+      "text_length": 1093,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-192.webp"
+    },
+    {
+      "page": 193,
+      "file": "pages/page-193.md",
+      "title": "（歳   出）",
+      "preview": "（歳 出） 款 項 金 額 千円 1 総務費 86,962 1 総務管理費 86,459 2 運営協議会費 376 3 趣旨普及費 127 2 保険給付費 8,662,681 1 療養諸費 7,334,257 2 高額療養費 1,298,423 3 出産育児諸費 25,011 4 葬祭諸費 4,980 5 移送費 10 3 国民健康保険事業費納付 2,866",
+      "text_length": 1483,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-193.webp"
+    },
+    {
+      "page": 194,
+      "file": "pages/page-194.md",
+      "title": "歳           入      歳         出    予        算",
+      "preview": "歳 入 歳 出 予 算 １ 総 括 （ 歳 入 ） 款 本年度予算額 前年度予算額 比 較 千円 千円 千円 1 国民健康保険税 1,757,677 1,922,791 △165,114 2 国庫支出金 10 20 △10 3 道支出金 8,815,130 9,125,055 △309,925 4 財産収入 640 25 615 5 繰入金 1,170,61",
+      "text_length": 942,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-194.webp"
+    },
+    {
+      "page": 195,
+      "file": "pages/page-195.md",
+      "title": "事            項    別        明        細          書",
+      "preview": "事 項 別 明 細 書 （ 歳 出 ） 本 年 度 予 算 額 の 財 源 内 訳 本年度 前年度 款 比 較 特 定 財 源 予算額 予算額 国道支出金 地 方 債 そ の 他 一般財源 千円 千円 千円 千円 千円 千円 千円 1 総務費 86,962 97,696 △10,734 27,823 59,139 2 保険給付費 8,662,681 8,94",
+      "text_length": 1376,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-195.webp"
+    },
+    {
+      "page": 196,
+      "file": "pages/page-196.md",
+      "title": "２ 歳    入                                                         （注）款以外の太字は臨時収入を示す。",
+      "preview": "２ 歳 入 （注）款以外の太字は臨時収入を示す。 （単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 1 国民健康保険税 1,757,677 1,922,791 △165,114 1 国民健康保険税 1,757,677 1,922,791 △165,114 1 一般被保険者 1,757,611 1,922,631 △165,020",
+      "text_length": 4164,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-196.webp"
+    },
+    {
+      "page": 197,
+      "file": "pages/page-197.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 5 繰入金 1,170,619 1,177,857 △7,238 1 他会計繰入金 1,129,619 1,159,857 △30,238 1 一般会計繰入 1,129,619 1,159,857 △30,238 1 保険基盤安定 776,948 金 等繰入金 2 その他一般会 ",
+      "text_length": 1974,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-197.webp"
+    },
+    {
+      "page": 198,
+      "file": "pages/page-198.md",
+      "title": "３ 歳        出",
+      "preview": "３ 歳 出 款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 1 総務費 86,962 97,696 △10,734 86,962 1 総務管理費 86,459 97,095 △10,636 86,459 1 一般管理費 48,039 66,257 △18,218 道支出金 5,900 繰入金 42,139 計 48",
+      "text_length": 3213,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-198.webp"
+    },
+    {
+      "page": 199,
+      "file": "pages/page-199.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 1 報酬 14,793 国民健康保険の事務に必要な経費 3 職員手当等 5,732 国保連合会共同電算処理手数料 10,509 8 旅費 32 その他必要な経費 37,530 10 需用費 931 11 役務費 18,100 12 委託料 4,559 13 使用料及び賃借料 77 17 備品購入",
+      "text_length": 1814,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-199.webp"
+    },
+    {
+      "page": 200,
+      "file": "pages/page-200.md",
+      "title": "本   年   度   の 財       源     内    訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 ○ 傷病手当金 0 100 △100 ○ 傷病手当金 0 100 △100 3 国民健康保険事業費納付金 2,866,308 3,054,701 △188,393 1,167,996 1,698,312 1 医療給付費分 2,093,230 2,272,389 △17",
+      "text_length": 3879,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-200.webp"
+    },
+    {
+      "page": 201,
+      "file": "pages/page-201.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 18 負担金補助及び交付金 2,093,230 国民健康保険事業費納付金 一般被保険者医療給付費分 18 負担金補助及び交付金 549,742 国民健康保険事業費納付金 後期高齢者支援金等分 18 負担金補助及び交付金 161,948 国民健康保険事業費納付金 介護納付金分 18 負担金補助及び",
+      "text_length": 1183,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-201.webp"
+    },
+    {
+      "page": 202,
+      "file": "pages/page-202.md",
+      "title": "本   年   度   の 財   源   内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 6 諸支出金 11,127 8,081 3,046 11,127 1 償還金及び還付加算金 11,127 8,081 3,046 11,127 1 一般被保険者還付金 10,462 7,580 2,882 10,462 2 退職被保険者等還付金 500 500 0 5",
+      "text_length": 1334,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-202.webp"
+    },
+    {
+      "page": 203,
+      "file": "pages/page-203.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 22 償還金利子及び割引料 10,462 一般被保険者過年度分過誤納還付金及び還付加算金 22 償還金利子及び割引料 500 退職被保険者等過年度分過誤納還付金及び還付加算金 22 償還金利子及び割引料 165 国道支出金返還金 -199-",
+      "text_length": 393,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-203.webp"
+    },
+    {
+      "page": 204,
+      "file": "pages/page-204.md",
+      "title": "給          与          費          明           細         書",
+      "preview": "給 与 費 明 細 書 １ 特 別 職 給 与 費 区 分 職員数 報 酬 期 末 地 域 寒冷地 その他 共済費 合 計 備 考 給 料 計 手 当 手 当 手 当 の手当 人 千円 千円 千円 千円 千円 千円 千円 千円 千円 その他の 国民健康保険 本年度 11 285 285 285 運営協議会委 特別職 員 その他の 前年度 11 348 348",
+      "text_length": 2178,
+      "toc_label": "給与費明細書",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-204.webp"
+    },
+    {
+      "page": 205,
+      "file": "pages/page-205.md",
+      "title": "後期高齢者医療特別会計予算",
+      "preview": "後期高齢者医療特別会計予算 -201-",
+      "text_length": 28,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-205.webp"
+    },
+    {
+      "page": 206,
+      "file": "pages/page-206.md",
+      "title": "206ページ",
+      "preview": "-202-",
+      "text_length": 5,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-206.webp"
+    },
+    {
+      "page": 207,
+      "file": "pages/page-207.md",
+      "title": "令和８年度江別市後期高齢者医療特別会計予算",
+      "preview": "令和８年度江別市後期高齢者医療特別会計予算 令和８年度江別市の後期高齢者医療特別会計の予算は、次に定めるところによる。 （歳入歳出予算） 第１条 歳入歳出予算の総額は、歳入歳出それぞれ２，５９０，０００千円と定める。 ２ 歳入歳出予算の款項の区分及び当該区分ごとの金額は、「第１表歳入歳出予算」 による。 令和８年２月２４日提出 江別市長 後 藤 好 人 -2",
+      "text_length": 276,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-207.webp"
+    },
+    {
+      "page": 208,
+      "file": "pages/page-208.md",
+      "title": "第１表       歳入歳出予算",
+      "preview": "第１表 歳入歳出予算 （歳 入） 款 項 金 額 千円 1 後期高齢者医療保険料 1,946,556 1 後期高齢者医療保険料 1,946,556 2 繰入金 639,725 1 一般会計繰入金 639,725 3 繰越金 1 1 繰越金 1 4 諸収入 3,718 1 延滞金及び加算金 2 2 償還金及び還付加算金 2,216 3 雑入 1,500 歳 入",
+      "text_length": 811,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-208.webp"
+    },
+    {
+      "page": 209,
+      "file": "pages/page-209.md",
+      "title": "（歳   出）",
+      "preview": "（歳 出） 款 項 金 額 千円 1 総務費 21,565 1 総務管理費 21,565 2 後期高齢者広域連合納付 2,566,019 金 1 後期高齢者広域連合納付 2,566,019 金 3 諸支出金 2,216 1 償還金及び還付加算金 2,216 4 予備費 200 1 予備費 200 歳 出 合 計 2,590,000 -205-",
+      "text_length": 649,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-209.webp"
+    },
+    {
+      "page": 210,
+      "file": "pages/page-210.md",
+      "title": "歳         入     歳         出    予       算",
+      "preview": "歳 入 歳 出 予 算 １ 総 括 （ 歳 入 ） 款 本年度予算額 前年度予算額 比 較 千円 千円 千円 1 後期高齢者医療保険料 1,946,556 1,685,596 260,960 2 繰入金 639,725 561,229 78,496 3 繰越金 1 1 0 4 諸収入 3,718 12,174 △8,456 歳 入 合 計 2,590,000",
+      "text_length": 693,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-210.webp"
+    },
+    {
+      "page": 211,
+      "file": "pages/page-211.md",
+      "title": "事        項       別       明        細       書",
+      "preview": "事 項 別 明 細 書 （ 歳 出 ） 本 年 度 予 算 額 の 財 源 内 訳 本年度 前年度 款 比 較 特 定 財 源 予算額 予算額 一般財源 国道支出金 地 方 債 そ の 他 千円 千円 千円 千円 千円 千円 千円 1 総務費 21,565 30,226 △8,661 21,565 2 後期高齢者広域 2,566,019 2,226,702 ",
+      "text_length": 993,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-211.webp"
+    },
+    {
+      "page": 212,
+      "file": "pages/page-212.md",
+      "title": "212ページ",
+      "preview": "-208-",
+      "text_length": 5,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-212.webp"
+    },
+    {
+      "page": 213,
+      "file": "pages/page-213.md",
+      "title": "２ 歳    入                                                       （注）款以外の太字は臨時収入を示す。",
+      "preview": "２ 歳 入 （注）款以外の太字は臨時収入を示す。 （単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 1 後期高齢者医療保険 1,946,556 1,685,596 260,960 料 1 後期高齢者医療 1,946,556 1,685,596 260,960 保険料 1 特別徴収保険 1,176,227 994,933 181,",
+      "text_length": 2025,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-213.webp"
+    },
+    {
+      "page": 214,
+      "file": "pages/page-214.md",
+      "title": "３ 歳         出",
+      "preview": "３ 歳 出 款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 1 総務費 21,565 30,226 △8,661 21,565 1 総務管理費 21,565 30,226 △8,661 21,565 1 一般管理費 21,565 30,226 △8,661 繰入金 20,066 諸収入 1,499 計 21,565",
+      "text_length": 2494,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-214.webp"
+    },
+    {
+      "page": 215,
+      "file": "pages/page-215.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 1 報酬 4,311 後期高齢者医療の事務に必要な経費 3 職員手当等 1,671 8 旅費 5 10 需用費 1,252 11 役務費 7,850 12 委託料 6,476 18 負担金補助及び交付金 2,566,019 後期高齢者医療広域連合納付金 保険料負担金 1,946,556 事務費負",
+      "text_length": 919,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-215.webp"
+    },
+    {
+      "page": 216,
+      "file": "pages/page-216.md",
+      "title": "給        与       費         明      細     書",
+      "preview": "給 与 費 明 細 書 １ 一 般 職 給 与 費 区 分 職員数 共済費 合 計 備 考 報 酬 給 料 職員手当 計 人 千円 千円 千円 千円 千円 千円 (2) (4,311) (1,671) (5,982) (5,982) （ ）内は会計年度任用職員 本年度 0 0 0 0 0 を別掲 (2) (4,088) (1,567) (5,655) (5,",
+      "text_length": 898,
+      "toc_label": "給与費明細書",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-216.webp"
+    },
+    {
+      "page": 217,
+      "file": "pages/page-217.md",
+      "title": "介 護 保 険 特 別 会 計 予 算",
+      "preview": "介 護 保 険 特 別 会 計 予 算 -213-",
+      "text_length": 37,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-217.webp"
+    },
+    {
+      "page": 218,
+      "file": "pages/page-218.md",
+      "title": "218ページ",
+      "preview": "-214-",
+      "text_length": 5,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-218.webp"
+    },
+    {
+      "page": 219,
+      "file": "pages/page-219.md",
+      "title": "令和８年度江別市介護保険特別会計予算",
+      "preview": "令和８年度江別市介護保険特別会計予算 令和８年度江別市の介護保険特別会計の予算は、次に定めるところによる。 （歳入歳出予算） 第１条 歳入歳出予算の総額は、歳入歳出それぞれ１１，９４８，０００千円と定め る。 ２ 歳入歳出予算の款項の区分及び当該区分ごとの金額は、「第１表歳入歳出予算」 による。 （歳出予算の流用） 第２条 地方自治法（昭和２２年法律第６７号",
+      "text_length": 466,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-219.webp"
+    },
+    {
+      "page": 220,
+      "file": "pages/page-220.md",
+      "title": "第１表       歳入歳出予算",
+      "preview": "第１表 歳入歳出予算 （歳 入） 款 項 金 額 千円 1 介護保険料 2,322,950 1 介護保険料 2,322,950 2 国庫支出金 2,808,791 1 国庫負担金 2,018,049 2 国庫補助金 790,742 3 道支出金 1,702,731 1 道負担金 1,608,979 2 道補助金 93,752 4 支払基金交付金 3,120,",
+      "text_length": 1307,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-220.webp"
+    },
+    {
+      "page": 221,
+      "file": "pages/page-221.md",
+      "title": "（歳   出）",
+      "preview": "（歳 出） 款 項 金 額 千円 1 総務費 143,265 1 総務管理費 35,311 2 介護認定審査会費 106,986 3 趣旨普及費 968 2 保険給付費 11,160,090 1 介護サービス等諸費 10,324,189 2 介護予防サービス等諸費 476,322 3 高額介護サービス等費 348,808 4 審査支払手数料 10,771 3",
+      "text_length": 1240,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-221.webp"
+    },
+    {
+      "page": 222,
+      "file": "pages/page-222.md",
+      "title": "歳           入      歳         出    予       算",
+      "preview": "歳 入 歳 出 予 算 １ 総 括 （ 歳 入 ） 款 本年度予算額 前年度予算額 比 較 千円 千円 千円 1 介護保険料 2,322,950 2,262,175 60,775 2 国庫支出金 2,808,791 2,753,380 55,411 3 道支出金 1,702,731 1,679,385 23,346 4 支払基金交付金 3,120,271 3",
+      "text_length": 1009,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-222.webp"
+    },
+    {
+      "page": 223,
+      "file": "pages/page-223.md",
+      "title": "事            項    別        明       細          書",
+      "preview": "事 項 別 明 細 書 （ 歳 出 ） 本 年 度 予 算 額 の 財 源 内 訳 本年度 前年度 款 比 較 特 定 財 源 一般財源 予算額 予算額 国道支出金 地 方 債 そ の 他 千円 千円 千円 千円 千円 千円 千円 1 総務費 143,265 136,693 6,572 143,265 2 保険給付費 11,160,090 10,949,23",
+      "text_length": 1218,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-223.webp"
+    },
+    {
+      "page": 224,
+      "file": "pages/page-224.md",
+      "title": "２ 歳    入                                                           （注）款以外の太字は臨時収入を示す。",
+      "preview": "２ 歳 入 （注）款以外の太字は臨時収入を示す。 （単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 1 介護保険料 2,322,950 2,262,175 60,775 1 介護保険料 2,322,950 2,262,175 60,775 1 第１号被保険 2,322,950 2,262,175 60,775 1 現年度分 2,",
+      "text_length": 4167,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-224.webp"
+    },
+    {
+      "page": 225,
+      "file": "pages/page-225.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 5 繰入金 1,988,476 1,967,603 20,873 1 一般会計繰入金 1,766,484 1,739,275 27,209 1 一般会計繰入 1,766,484 1,739,275 27,209 1 介護給付費繰 1,395,011 保険給付費×12.5% 金 入",
+      "text_length": 2907,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-225.webp"
+    },
+    {
+      "page": 226,
+      "file": "pages/page-226.md",
+      "title": "３ 歳          出",
+      "preview": "３ 歳 出 款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 1 総務費 143,265 136,693 6,572 143,265 1 総務管理費 35,311 41,478 △6,167 35,311 1 一般管理費 35,311 41,478 △6,167 繰入金 35,311 2 介護認定審査会費 106,9",
+      "text_length": 2962,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-226.webp"
+    },
+    {
+      "page": 227,
+      "file": "pages/page-227.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 1 報酬 10,601 介護保険の事務に必要な経費 3 職員手当等 4,109 介護保険料賦課徴収費 18,772 7 報償費 858 高齢者総合計画等管理経費 5,683 8 旅費 90 その他必要な経費 10,856 10 需用費 1,674 11 役務費 9,099 12 委託料 8,24",
+      "text_length": 1771,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-227.webp"
+    },
+    {
+      "page": 228,
+      "file": "pages/page-228.md",
+      "title": "本       年   度   の     財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 4 施設介護サービス給付費 3,585,873 3,606,830 △20,957 国庫支出金 722,471 776,652 道支出金 627,527 支払基金交付金 968,186 繰入金 491,037 計 2,809,221 5 福祉用具購入費 14,548 ",
+      "text_length": 4441,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-228.webp"
+    },
+    {
+      "page": 229,
+      "file": "pages/page-229.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 18 負担金補助及び交付金 3,585,873 施設介護サービスの給付に必要な経費 月平均利用人数 1,007 人 １人当たり給付額 296,745 円 18 負担金補助及び交付金 14,548 福祉用具購入費の給付に必要な経費 年間利用件数 370 件 １件当たり給付額 39,318 円 18",
+      "text_length": 1764,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-229.webp"
+    },
+    {
+      "page": 230,
+      "file": "pages/page-230.md",
+      "title": "本       年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 5 介護予防住宅改修費 25,798 32,475 △6,677 国庫支出金 6,488 5,587 道支出金 3,225 支払基金交付金 6,965 繰入金 3,533 計 20,211 6 特定入所者介護予防サー 249 429 △180 国庫支出金 63 54 ",
+      "text_length": 4135,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-230.webp"
+    },
+    {
+      "page": 231,
+      "file": "pages/page-231.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 18 負担金補助及び交付金 25,798 介護予防住宅改修費の給付に必要な経費 年間利用件数 362 件 １件当たり給付額 71,265 円 18 負担金補助及び交付金 249 特定入所者介護予防サービス等の給付に必要な経費 月平均利用人数 9 人 １人当たり給付額 2,305 円 18 負担金",
+      "text_length": 1455,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-231.webp"
+    },
+    {
+      "page": 232,
+      "file": "pages/page-232.md",
+      "title": "本       年   度   の   財   源     内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 3 高額総合事業サービス費 1,163 1,071 92 国庫支出金 374 185 道支出金 145 支払基金交付金 314 繰入金 145 計 978 4 審査支払手数料 1,507 1,471 36 国庫支出金 485 237 道支出金 189 支払基金交付金 ",
+      "text_length": 3329,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-232.webp"
+    },
+    {
+      "page": 233,
+      "file": "pages/page-233.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 18 負担金補助及び交付金 1,163 高額総合事業サービスの支給に必要な経費 11 役務費 1,507 介護予防・日常生活支援総合事業費の審査支払いに必要な経費 1 報酬 2,838 一般介護予防事業に必要な経費 3 職員手当等 940 7 報償費 354 8 旅費 6 10 需用費 357 ",
+      "text_length": 1925,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-233.webp"
+    },
+    {
+      "page": 234,
+      "file": "pages/page-234.md",
+      "title": "本    年   度   の   財   源   内   訳",
+      "preview": "款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 5 基金積立金 4,558 211 4,347 4,558 1 基金積立金 4,558 211 4,347 4,558 1 基金積立金 4,558 211 4,347 財産収入 4,558 6 予備費 10,000 10,000 0 1,250 8,750 1 予備費",
+      "text_length": 867,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-234.webp"
+    },
+    {
+      "page": 235,
+      "file": "pages/page-235.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 24 積立金 4,558 〇 介護保険給付費準備基金積立金 -231-",
+      "text_length": 309,
+      "toc_label": "総務費",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-235.webp"
+    },
+    {
+      "page": 236,
+      "file": "pages/page-236.md",
+      "title": "給           与          費          明           細         書",
+      "preview": "給 与 費 明 細 書 １ 特 別 職 給 与 費 区 分 職員数 報 酬 期 末 地 域 寒冷地 その他 共済費 合 計 備 考 給 料 計 手 当 手 当 手 当 の手当 人 千円 千円 千円 千円 千円 千円 千円 千円 千円 その他の 介護認定審査 本年度 24 8,881 8,881 8,881 会委員 特別職 その他の 前年度 特 別 職 24 ",
+      "text_length": 2077,
+      "toc_label": "給与費明細書",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-236.webp"
+    },
+    {
+      "page": 237,
+      "file": "pages/page-237.md",
+      "title": "基本財産基金運用特別会計予算",
+      "preview": "基本財産基金運用特別会計予算 -233-",
+      "text_length": 30,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-237.webp"
+    },
+    {
+      "page": 238,
+      "file": "pages/page-238.md",
+      "title": "238ページ",
+      "preview": "-234-",
+      "text_length": 5,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-238.webp"
+    },
+    {
+      "page": 239,
+      "file": "pages/page-239.md",
+      "title": "令和８年度江別市基本財産基金運用特別会計予算",
+      "preview": "令和８年度江別市基本財産基金運用特別会計予算 令和８年度江別市の基本財産基金運用特別会計の予算は、次に定めるところによる。 （歳入歳出予算） 第１条 歳入歳出予算の総額は、歳入歳出それぞれ７８８，０００千円と定める。 ２ 歳入歳出予算の款項の区分及び当該区分ごとの金額は、「第１表歳入歳出予算」 による。 令和８年２月２４日提出 江別市長 後 藤 好 人 -2",
+      "text_length": 275,
+      "toc_label": "特別会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-239.webp"
+    },
+    {
+      "page": 240,
+      "file": "pages/page-240.md",
+      "title": "第１表       歳入歳出予算",
+      "preview": "第１表 歳入歳出予算 （歳 入） 款 項 金 額 千円 1 財産収入 2,400 1 財産運用収入 2,400 2 繰入金 785,599 1 一般会計繰入金 785,599 3 繰越金 1 1 繰越金 1 歳 入 合 計 788,000 -236-",
+      "text_length": 565,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-240.webp"
+    },
+    {
+      "page": 241,
+      "file": "pages/page-241.md",
+      "title": "（歳   出）",
+      "preview": "（歳 出） 款 項 金 額 千円 1 基本財産基金費 787,500 1 基本財産基金費 787,500 2 予備費 500 1 予備費 500 歳 出 合 計 788,000 -237-",
+      "text_length": 397,
+      "toc_label": "一般会計",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-241.webp"
+    },
+    {
+      "page": 242,
+      "file": "pages/page-242.md",
+      "title": "歳          入     歳         出    予       算",
+      "preview": "歳 入 歳 出 予 算 １ 総 括 （ 歳 入 ） 款 本年度予算額 前年度予算額 比 較 千円 千円 千円 1 財産収入 2,400 1,432 968 2 繰入金 785,599 301,567 484,032 3 繰越金 1 1 0 歳 入 合 計 788,000 303,000 485,000 -238-",
+      "text_length": 607,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-242.webp"
+    },
+    {
+      "page": 243,
+      "file": "pages/page-243.md",
+      "title": "事        項       別        明      細           書",
+      "preview": "事 項 別 明 細 書 （ 歳 出 ） 本 年 度 予 算 額 の 財 源 内 訳 本年度 前年度 款 比 較 特 定 財 源 予算額 予算額 一般財源 国道支出金 地 方 債 そ の 他 千円 千円 千円 千円 千円 千円 千円 1 基本財産基金費 787,500 302,500 485,000 787,499 1 2 予備費 500 500 0 500 ",
+      "text_length": 817,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-243.webp"
+    },
+    {
+      "page": 244,
+      "file": "pages/page-244.md",
+      "title": "244ページ",
+      "preview": "-240-",
+      "text_length": 5,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-244.webp"
+    },
+    {
+      "page": 245,
+      "file": "pages/page-245.md",
+      "title": "２ 歳     入                                                     （注）款以外の太字は臨時収入を示す。",
+      "preview": "２ 歳 入 （注）款以外の太字は臨時収入を示す。 （単位：千円） 款 節 項 本年度 前年度 比 較 説 明 区 分 金 額 目 1 財産収入 2,400 1,432 968 1 財産運用収入 2,400 1,432 968 1 基金利子収入 2,400 1,432 968 1 利子収入 2,400 2 繰入金 785,599 301,567 484,032",
+      "text_length": 1075,
+      "toc_label": "歳入",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-245.webp"
+    },
+    {
+      "page": 246,
+      "file": "pages/page-246.md",
+      "title": "３ 歳       出",
+      "preview": "３ 歳 出 款 本 年 度 の 財 源 内 訳 項 本 年 度 前 年 度 比 較 目 特 定 一 般 1 基本財産基金費 787,500 302,500 485,000 787,499 1 1 基本財産基金費 787,500 302,500 485,000 787,499 1 1 基本財産基金費 787,500 302,500 485,000 財産収入 2",
+      "text_length": 1118,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-246.webp"
+    },
+    {
+      "page": 247,
+      "file": "pages/page-247.md",
+      "title": "（単位：千円）",
+      "preview": "（単位：千円） 節 説 明 区 分 金 額 ○は臨時費を示す。 10 需用費 869 基本財産基金の管理に必要な経費 27 繰出金 786,631 ○ 基本財産基金繰出金 786,631 その他必要な経費 869 -243-",
+      "text_length": 447,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-247.webp"
+    },
+    {
+      "page": 248,
+      "file": "pages/page-248.md",
+      "title": "248ページ",
+      "preview": "-244-",
+      "text_length": 5,
+      "toc_label": "歳出",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-248.webp"
+    },
+    {
+      "page": 249,
+      "file": "pages/page-249.md",
+      "title": "予   算   参           考   資   料",
+      "preview": "予 算 参 考 資 料 -245-",
+      "text_length": 51,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-249.webp"
+    },
+    {
+      "page": 250,
+      "file": "pages/page-250.md",
+      "title": "各 会 計 歳 入 歳 出 予 算",
+      "preview": "各 会 計 歳 入 歳 出 予 算 歳 入 区 分 経 常 Ａ 臨 時 計 金 額 比 率 金 額 比 率 金 額 比 率 % % % 本年度予算額 45,372,059 73.4 16,477,941 26.6 61,850,000 100.0 一 般 会 計 前年度予算額 42,439,612 72.2 16,350,388 27.8 58,790,00",
+      "text_length": 2781,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-250.webp"
+    },
+    {
+      "page": 251,
+      "file": "pages/page-251.md",
+      "title": "の 前 年 度 と の 比 較 表",
+      "preview": "の 前 年 度 と の 比 較 表 (単位：千円) 歳 出 経 常 歳 入 に 対 す る 経 常 Ｂ 臨 時 計 経常歳出の金額及び比率 金 額 比 率 金 額 比 率 金 額 比 率 Ａ－Ｂ Ｂ／Ａ % % % % 39,608,642 64.0 22,241,358 36.0 61,850,000 100.0 5,763,417 87.3 37,615",
+      "text_length": 2827,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-251.webp"
+    },
+    {
+      "page": 252,
+      "file": "pages/page-252.md",
+      "title": "予 算 目 的 別 明 細 書",
+      "preview": "予 算 目 的 別 明 細 書 （歳 入） (単位：千円) 経 常 収 入 臨 時 収 入 計 区 分 令和8年度 令和7年度 Ａ－Ｂ 令和8年度 令和7年度 Ｄ－Ｅ Ａ＋Ｄ 8年度の Ｂ＋Ｅ 7年度の Ｇ－Ｈ Ａ Ｂ Ｃ Ｄ Ｅ Ｆ Ｇ 構成比(%) Ｈ 構成比(%) 1市 税 13,159,978 12,338,017 821,961 1,096,022",
+      "text_length": 4652,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-252.webp"
+    },
+    {
+      "page": 253,
+      "file": "pages/page-253.md",
+      "title": "（歳 出）                                                                                                                                        (単位：千円)",
+      "preview": "（歳 出） (単位：千円) 経 常 支 出 臨 時 支 出 計 区 分 令和8年度 令和7年度 Ａ－Ｂ 令和8年度 令和7年度 Ｄ－Ｅ Ａ＋Ｄ 8年度の Ｂ＋Ｅ 7年度の Ｇ－Ｈ Ａ Ｂ Ｃ Ｄ Ｅ Ｆ Ｇ 構成比(%) Ｈ 構成比(%) 1議 会 費 281,059 278,247 2,812 10,638 10,431 207 291,697 0.5 2",
+      "text_length": 2830,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-253.webp"
+    },
+    {
+      "page": 254,
+      "file": "pages/page-254.md",
+      "title": "目       的           別            臨         時",
+      "preview": "目 的 別 臨 時 （歳 入） (単位：千円) 経 常 収 入 臨 時 収 入 区 分 予算総額 予 算 額 特定財源 一般財源 予 算 額 特定財源 一般財源 1市 税 14,256,000 13,159,978 13,159,978 1,096,022 1,096,022 2地 方 譲 与 税 403,000 403,000 403,000 3利 子 割",
+      "text_length": 2771,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-254.webp"
+    },
+    {
+      "page": 255,
+      "file": "pages/page-255.md",
+      "title": "経 常 別 分 析 表",
+      "preview": "経 常 別 分 析 表 （歳 出） (単位：千円) 経 常 経 費 臨 時 経 費 区 分 予算総額 予 算 額 特定財源 一般財源 予 算 額 特定財源 一般財源 1議 会 費 291,697 281,059 70 280,989 10,638 10,638 2総 務 費 8,124,618 3,614,521 329,169 3,285,352 4,51",
+      "text_length": 2034,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-255.webp"
+    },
+    {
+      "page": 256,
+      "file": "pages/page-256.md",
+      "title": "歳出性質別臨時経常別分析表",
+      "preview": "歳出性質別臨時経常別分析表 (単位：千円） 予 算 額 経 常 費 臨 時 費 区 分 (Ａ) 予算額 特定財源 一般財源 予算額 特定財源 一般財源 (Ｂ) (Ｃ) (Ｄ) (Ｅ) (Ｆ) (Ｇ) 人 件 費 8,607,921 8,177,678 474,273 7,703,405 430,243 183,376 246,867 消 物 件 費 8,60",
+      "text_length": 2630,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-256.webp"
+    },
+    {
+      "page": 257,
+      "file": "pages/page-257.md",
+      "title": "各会計性質別分析表",
+      "preview": "各会計性質別分析表 (単位：千円) 特 別 会 計 区 分 一般会計 国民健康 後期高齢 基本財産 合 計 介護保険 小 計 保 険 者医療 基 金 1報 酬 1,513,227 38,266 4,311 45,666 88,243 1,601,470 2給 料 3,002,562 3,002,562 基 扶 養 手 当 95,262 95,262 本 人 ",
+      "text_length": 2975,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-257.webp"
+    },
+    {
+      "page": 258,
+      "file": "pages/page-258.md",
+      "title": "(単位：千円)",
+      "preview": "(単位：千円) 特 別 会 計 区 分 一般会計 国民健康 後期高齢 基本財産 合 計 介護保険 小 計 保 険 者医療 基 金 8旅 費 58,994 184 5 218 407 59,401 9交 際 費 3,050 3,050 物 10 需 用 費 1,205,054 5,250 1,252 6,505 869 13,876 1,218,930 ( 消",
+      "text_length": 3206,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-258.webp"
+    },
+    {
+      "page": 259,
+      "file": "pages/page-259.md",
+      "title": "(単位：千円)",
+      "preview": "(単位：千円) 特 別 会 計 区 分 一般会計 国民健康 後期高齢 基本財産 合 計 介護保険 小 計 保 険 者医療 基 金 10 需 用 費 134,390 134,390 維 持 14 工 事 請 負 費 111,391 111,391 費 補 修 15 原 材 料 費 10,095 10,095 費 そ の 他 2,126,177 2,126,17",
+      "text_length": 2762,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-259.webp"
+    },
+    {
+      "page": 260,
+      "file": "pages/page-260.md",
+      "title": "歳            出             目          的           別",
+      "preview": "歳 出 目 的 別 農 林 水 区 分 1 議 会 費2 総 務 費3 民 生 費4 衛 生 費5 労 働 費6 7 商 工 費 産 業 費 人 件 費 267,739 2,733,527 1,720,323 608,872 13,549 136,621 145,962 消 物 件 費 18,682 1,420,680 595,931 2,839,960 2",
+      "text_length": 1814,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-260.webp"
+    },
+    {
+      "page": 261,
+      "file": "pages/page-261.md",
+      "title": "性            質        別          分          析       表",
+      "preview": "性 質 別 分 析 表 (単位：千円、％) 総額に 前 年 度 増 減 8 土 木 費 9 消 防 費 10 教 育 費 11 公 債 費 12諸支出金 13 予 備 費 合 計 (Ａ) 対する 予算額(B) (Ａ)－(Ｂ) 割 合 462,889 1,075,392 1,443,047 8,607,921 13.9 8,173,721 434,200 93",
+      "text_length": 2502,
+      "toc_label": "予算参考資料",
+      "toc_printed_page_start": null,
+      "image": "/budgets/ebetsu/2026/pages/page-261.webp"
+    }
+  ],
+  "toc_sections_source": "令和8年度 江別市各会計予算書・予算説明書のページ見出しから自動作成",
+  "toc_sections": [
+    {
+      "label": "表紙",
+      "page_start": 1,
+      "page_end": 1
+    },
+    {
+      "label": "予算書",
+      "page_start": 2,
+      "page_end": 2
+    },
+    {
+      "label": "目次",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "label": "予算書",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "label": "予算参考資料",
+      "page_start": 5,
+      "page_end": 8
+    },
+    {
+      "label": "一般会計",
+      "page_start": 9,
+      "page_end": 15
+    },
+    {
+      "label": "継続費",
+      "page_start": 16,
+      "page_end": 16
+    },
+    {
+      "label": "債務負担行為",
+      "page_start": 17,
+      "page_end": 17
+    },
+    {
+      "label": "地方債",
+      "page_start": 18,
+      "page_end": 19
+    },
+    {
+      "label": "歳入",
+      "page_start": 20,
+      "page_end": 108
+    },
+    {
+      "label": "歳出",
+      "page_start": 109,
+      "page_end": 179
+    },
+    {
+      "label": "継続費",
+      "page_start": 180,
+      "page_end": 181
+    },
+    {
+      "label": "債務負担行為",
+      "page_start": 182,
+      "page_end": 185
+    },
+    {
+      "label": "地方債",
+      "page_start": 186,
+      "page_end": 188
+    },
+    {
+      "label": "特別会計",
+      "page_start": 189,
+      "page_end": 193
+    },
+    {
+      "label": "歳入",
+      "page_start": 194,
+      "page_end": 197
+    },
+    {
+      "label": "総務費",
+      "page_start": 198,
+      "page_end": 203
+    },
+    {
+      "label": "給与費明細書",
+      "page_start": 204,
+      "page_end": 204
+    },
+    {
+      "label": "特別会計",
+      "page_start": 205,
+      "page_end": 207
+    },
+    {
+      "label": "一般会計",
+      "page_start": 208,
+      "page_end": 209
+    },
+    {
+      "label": "歳入",
+      "page_start": 210,
+      "page_end": 213
+    },
+    {
+      "label": "総務費",
+      "page_start": 214,
+      "page_end": 215
+    },
+    {
+      "label": "給与費明細書",
+      "page_start": 216,
+      "page_end": 216
+    },
+    {
+      "label": "特別会計",
+      "page_start": 217,
+      "page_end": 221
+    },
+    {
+      "label": "歳入",
+      "page_start": 222,
+      "page_end": 225
+    },
+    {
+      "label": "総務費",
+      "page_start": 226,
+      "page_end": 235
+    },
+    {
+      "label": "給与費明細書",
+      "page_start": 236,
+      "page_end": 236
+    },
+    {
+      "label": "特別会計",
+      "page_start": 237,
+      "page_end": 239
+    },
+    {
+      "label": "一般会計",
+      "page_start": 240,
+      "page_end": 241
+    },
+    {
+      "label": "歳入",
+      "page_start": 242,
+      "page_end": 245
+    },
+    {
+      "label": "歳出",
+      "page_start": 246,
+      "page_end": 248
+    },
+    {
+      "label": "予算参考資料",
+      "page_start": 249,
+      "page_end": 261
+    }
+  ],
+  "page_images_available": true,
+  "page_image_format": "webp",
+  "page_image_dpi": 110,
+  "page_image_quality": 68
+}

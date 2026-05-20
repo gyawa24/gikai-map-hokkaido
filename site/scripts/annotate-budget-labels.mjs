@@ -166,6 +166,18 @@ function detectLabel(page) {
   if (/^(国民健康保険費|公設卸売市場費|介護保険費|後期高齢者医療費)/.test(title)) {
     return { label: "特別会計", propagate: true };
   }
+  if (
+    joined.includes("予算参考資料") ||
+    title.includes("各会計歳入歳出予算") ||
+    joined.includes("分析表") ||
+    title.includes("目的別明細書") ||
+    title.includes("目的別臨時") ||
+    title.includes("経常別") ||
+    title.includes("性質別") ||
+    title.includes("目的別")
+  ) {
+    return { label: "予算参考資料", propagate: true };
+  }
   if (account && (title.includes(compact(account)) || joined.includes(`令和8年度${compact(account)}予算`) || joined.includes(`令和８年度${compact(account)}予算`) || joined.includes(`${compact(account)}予算実施計画`) || joined.includes(`${compact(account)}予算事項別明細書`))) {
     return { label: account, propagate: true };
   }

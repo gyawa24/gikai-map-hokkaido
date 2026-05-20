@@ -50,10 +50,10 @@
   {
     "slug": "ebetsu",
     "year": "2026",
-    "status": "取得候補",
+    "status": "取込済み",
     "source_label": "令和8年度予算書",
     "source_href": "https://www.city.ebetsu.hokkaido.jp/site/zaisei/148190.html",
-    "note": "令和8年度各会計予算書及び予算説明書の公開元を確認済み。公開用OCRへの反映は準備中"
+    "note": "令和8年度各会計予算書及び予算説明書を、261ページの原本画像・検索用テキストとして取込済み"
   },
   {
     "slug": "muroran",
