@@ -154,6 +154,18 @@ function detectLabel(page) {
 
   if (title.includes("目次")) return { label: "目次", propagate: false };
   const account = includesAny(joined, accountLabels);
+  if (joined.includes("企業会計予算") && joined.includes("病院事業会計")) {
+    return { label: "病院事業会計", propagate: true };
+  }
+  if (joined.includes("企業会計予算")) {
+    return { label: "企業会計", propagate: true };
+  }
+  if (joined.includes("特別会計予算")) {
+    return { label: "特別会計", propagate: true };
+  }
+  if (/^(国民健康保険費|公設卸売市場費|介護保険費|後期高齢者医療費)/.test(title)) {
+    return { label: "特別会計", propagate: true };
+  }
   if (account && (title.includes(compact(account)) || joined.includes(`令和8年度${compact(account)}予算`) || joined.includes(`令和８年度${compact(account)}予算`) || joined.includes(`${compact(account)}予算実施計画`) || joined.includes(`${compact(account)}予算事項別明細書`))) {
     return { label: account, propagate: true };
   }

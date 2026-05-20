@@ -42,10 +42,10 @@
   {
     "slug": "iwamizawa",
     "year": "2026",
-    "status": "取得候補",
+    "status": "取込済み",
     "source_label": "岩見沢市の予算",
     "source_href": "https://www.city.iwamizawa.hokkaido.jp/soshiki/zaisei/gyozaisei/4262.html",
-    "note": "令和8年度予算の概要・一般会計・特別会計・企業会計の公開元を確認済み。公開用OCRへの反映は準備中"
+    "note": "令和8年度予算の概要・一般会計・特別会計・病院事業会計を結合し、43ページの原本画像・検索用テキストとして取込済み"
   },
   {
     "slug": "ebetsu",
