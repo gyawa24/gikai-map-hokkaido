@@ -9,7 +9,9 @@ if (!city || !year) {
 }
 
 const siteRoot = process.cwd();
+const repoRoot = path.resolve(siteRoot, "..");
 const manifestPath = path.join(siteRoot, "data", city, "budgets", year, "manifest.json");
+const rootManifestPath = path.join(repoRoot, "data", city, "budgets", year, "manifest.json");
 const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf-8"));
 
 const compact = (text) =>
@@ -250,6 +252,9 @@ manifest.toc_sections_source = sourceLabel ?? `${manifest.title}のページ見�
 manifest.toc_sections = sections;
 
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + "\n", "utf-8");
+if (fs.existsSync(rootManifestPath)) {
+  fs.writeFileSync(rootManifestPath, JSON.stringify(manifest, null, 2) + "\n", "utf-8");
+}
 
 const counts = {};
 for (const page of manifest.pages) counts[page.toc_label] = (counts[page.toc_label] ?? 0) + 1;

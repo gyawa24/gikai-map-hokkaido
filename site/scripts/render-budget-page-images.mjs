@@ -12,7 +12,9 @@ if (!pdfPath || !city || !year) {
 const dpi = Number(dpiArg);
 const quality = Number(qualityArg);
 const siteRoot = process.cwd();
+const repoRoot = path.resolve(siteRoot, "..");
 const manifestPath = path.join(siteRoot, "data", city, "budgets", year, "manifest.json");
+const rootManifestPath = path.join(repoRoot, "data", city, "budgets", year, "manifest.json");
 const publicDir = path.join(siteRoot, "public", "budgets", city, year, "pages");
 const tmpDir = path.join(siteRoot, ".tmp-budget-pages", `${city}-${year}`);
 
@@ -57,6 +59,9 @@ manifest.pages = manifest.pages.map((page) => ({
 }));
 
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + "\n", "utf-8");
+if (fs.existsSync(rootManifestPath)) {
+  fs.writeFileSync(rootManifestPath, JSON.stringify(manifest, null, 2) + "\n", "utf-8");
+}
 fs.rmSync(tmpDir, { recursive: true, force: true });
 
 console.log(`Rendered ${pngFiles.length} page images to ${publicDir}`);

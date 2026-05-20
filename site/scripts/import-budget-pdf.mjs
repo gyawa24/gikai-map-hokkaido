@@ -10,16 +10,16 @@ if (!pdfPath || !city || !year || !fiscalYearLabel) {
 }
 
 const siteRoot = process.cwd();
-const outDir = path.join(siteRoot, "data", city, "budgets", year);
-const pagesDir = path.join(outDir, "pages");
-const indexPath = path.join(siteRoot, "data", city, "budgets", "index.json");
-
-fs.mkdirSync(pagesDir, { recursive: true });
+const repoRoot = path.resolve(siteRoot, "..");
+const dataRoots = [
+  path.join(repoRoot, "data"),
+  path.join(siteRoot, "data"),
+];
 
 function getCityName(slug) {
   try {
     const municipalities = JSON.parse(
-      fs.readFileSync(path.join(siteRoot, "data", "municipalities.json"), "utf-8")
+      fs.readFileSync(path.join(repoRoot, "data", "municipalities.json"), "utf-8")
     );
     const entry = municipalities.find((item) => item.slug === slug);
     return entry?.name ?? slug;
@@ -41,10 +41,6 @@ if (pages.length > 0 && pages[pages.length - 1].trim().length === 0) {
   pages.pop();
 }
 
-for (const file of fs.readdirSync(pagesDir)) {
-  if (file.endsWith(".md")) fs.rmSync(path.join(pagesDir, file));
-}
-
 const pageSummaries = pages.map((pageText, index) => {
   const page = index + 1;
   const fileName = `page-${String(page).padStart(3, "0")}.md`;
@@ -58,22 +54,18 @@ const pageSummaries = pages.map((pageText, index) => {
     .find((line) => line.length >= 3 && !/^-?\d+-?$/.test(line));
   const preview = normalized.replace(/\s+/g, " ").trim().slice(0, 180);
 
-  fs.writeFileSync(
-    path.join(pagesDir, fileName),
-    `---\npage: ${page}\nsource: ${path.basename(pdfPath)}\n---\n\n${normalized}\n`,
-    "utf-8"
-  );
-
   return {
     page,
     file: `pages/${fileName}`,
     title: firstUsefulLine ?? `${page}ページ`,
     preview,
     text_length: normalized.length,
+    text: normalized,
   };
 });
 
 const stat = fs.statSync(pdfPath);
+const generatedAt = new Date().toISOString();
 const manifest = {
   city,
   year,
@@ -83,31 +75,54 @@ const manifest = {
   source_file_size_bytes: stat.size,
   source_pdf_available: false,
   page_count: pageSummaries.length,
-  generated_at: new Date().toISOString(),
-  pages: pageSummaries,
+  generated_at: generatedAt,
+  pages: pageSummaries.map(({ text, ...page }) => page),
 };
 
-fs.mkdirSync(outDir, { recursive: true });
-fs.writeFileSync(path.join(outDir, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n", "utf-8");
+function writeDataset(dataRoot) {
+  const outDir = path.join(dataRoot, city, "budgets", year);
+  const pagesDir = path.join(outDir, "pages");
+  const indexPath = path.join(dataRoot, city, "budgets", "index.json");
 
-let index = [];
-try {
-  index = JSON.parse(fs.readFileSync(indexPath, "utf-8"));
-  if (!Array.isArray(index)) index = [];
-} catch {}
+  fs.mkdirSync(pagesDir, { recursive: true });
+  for (const file of fs.readdirSync(pagesDir)) {
+    if (file.endsWith(".md")) fs.rmSync(path.join(pagesDir, file));
+  }
 
-const indexItem = {
-  year,
-  fiscal_year_label: fiscalYearLabel,
-  title: manifest.title,
-  page_count: manifest.page_count,
-  generated_at: manifest.generated_at,
-  source_pdf_available: manifest.source_pdf_available,
-};
-const nextIndex = [indexItem, ...index.filter((item) => item.year !== year)].sort((a, b) =>
-  a.year < b.year ? 1 : a.year > b.year ? -1 : 0
-);
-fs.mkdirSync(path.dirname(indexPath), { recursive: true });
-fs.writeFileSync(indexPath, JSON.stringify(nextIndex, null, 2) + "\n", "utf-8");
+  for (const page of pageSummaries) {
+    fs.writeFileSync(
+      path.join(outDir, page.file),
+      `---\npage: ${page.page}\nsource: ${path.basename(pdfPath)}\n---\n\n${page.text}\n`,
+      "utf-8"
+    );
+  }
 
-console.log(`Imported ${pageSummaries.length} pages to ${outDir}`);
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(path.join(outDir, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n", "utf-8");
+
+  let index = [];
+  try {
+    index = JSON.parse(fs.readFileSync(indexPath, "utf-8"));
+    if (!Array.isArray(index)) index = [];
+  } catch {}
+
+  const indexItem = {
+    year,
+    fiscal_year_label: fiscalYearLabel,
+    title: manifest.title,
+    page_count: manifest.page_count,
+    generated_at: manifest.generated_at,
+    source_pdf_available: manifest.source_pdf_available,
+  };
+  const nextIndex = [indexItem, ...index.filter((item) => item.year !== year)].sort((a, b) =>
+    a.year < b.year ? 1 : a.year > b.year ? -1 : 0
+  );
+  fs.mkdirSync(path.dirname(indexPath), { recursive: true });
+  fs.writeFileSync(indexPath, JSON.stringify(nextIndex, null, 2) + "\n", "utf-8");
+
+  return outDir;
+}
+
+const outDirs = dataRoots.map((dataRoot) => writeDataset(dataRoot));
+
+console.log(`Imported ${pageSummaries.length} pages to ${outDirs.join(" and ")}`);
