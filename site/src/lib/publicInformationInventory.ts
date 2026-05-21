@@ -73,7 +73,6 @@ export type PublicInventorySummary = {
   themes: number;
   budgets: number;
   budgetCandidates: number;
-  budgetHolds: number;
   sessionsData: number;
   unavailable: number;
   ocrWait: number;
@@ -227,7 +226,7 @@ function buildRow(entry: Municipality, budgetSources: Map<string, BudgetSource>)
     sourceNote: source.note,
     verifiedAt: entry.minutes_verified_at ?? null,
     hasBudget: budgetImported,
-    hasBudgetCandidate: budgetState === "取得候補",
+    hasBudgetCandidate: budgetState === "取得候補" || budgetState === "保留",
     budgetState,
     budgetYear,
     budgetSourceLabel: budgetSource?.source_label ?? null,
@@ -257,7 +256,6 @@ export function getPublicInformationInventory(): {
       themes: rows.filter((row) => row.hasTopicData).length,
       budgets: rows.filter((row) => row.hasBudget).length,
       budgetCandidates: rows.filter((row) => row.hasBudgetCandidate).length,
-      budgetHolds: rows.filter((row) => row.budgetState === "保留").length,
       sessionsData: rows.filter((row) => row.hasSessionsData).length,
       unavailable: rows.filter((row) => !row.hasMinutes).length,
       ocrWait: rows.filter((row) => row.recordState === "文字起こし確認中").length,
