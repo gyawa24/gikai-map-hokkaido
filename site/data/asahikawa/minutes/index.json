@@ -1,5 +1,14 @@
 [
   {
+    "council_id": 317,
+    "name": "令和８年 第１回定例会補正予算等審査特別委員会",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第１回定例会補正予算等審査特別委員会",
+    "file": "317.json",
+    "schedule_count": 3
+  },
+  {
     "council_id": 307,
     "name": "令和７年 第１回定例会",
     "year": "2025",
@@ -158,7 +167,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "283.json"
+    "file": "283.json",
+    "schedule_count": 6
   },
   {
     "council_id": 287,
@@ -166,7 +176,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "287.json"
+    "file": "287.json",
+    "schedule_count": 6
   },
   {
     "council_id": 290,
@@ -174,7 +185,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "290.json"
+    "file": "290.json",
+    "schedule_count": 7
   },
   {
     "council_id": 293,
@@ -182,7 +194,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "293.json"
+    "file": "293.json",
+    "schedule_count": 5
   },
   {
     "council_id": 285,
@@ -190,7 +203,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "285.json"
+    "file": "285.json",
+    "schedule_count": 1
   },
   {
     "council_id": 288,
@@ -198,7 +212,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "288.json"
+    "file": "288.json",
+    "schedule_count": 3
   },
   {
     "council_id": 284,
@@ -206,7 +221,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 第１回定例会補正予算等審査特別委員会",
-    "file": "284.json"
+    "file": "284.json",
+    "schedule_count": 3
   },
   {
     "council_id": 289,
@@ -214,7 +230,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 第２回定例会補正予算等審査特別委員会",
-    "file": "289.json"
+    "file": "289.json",
+    "schedule_count": 3
   },
   {
     "council_id": 291,
@@ -222,7 +239,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 第３回定例会補正予算等審査特別委員会",
-    "file": "291.json"
+    "file": "291.json",
+    "schedule_count": 3
   },
   {
     "council_id": 292,
@@ -230,7 +248,8 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 決算審査特別委員会",
-    "file": "292.json"
+    "file": "292.json",
+    "schedule_count": 14
   },
   {
     "council_id": 254,
@@ -238,7 +257,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "254.json"
+    "file": "254.json",
+    "schedule_count": 6
   },
   {
     "council_id": 259,
@@ -246,7 +266,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "259.json"
+    "file": "259.json",
+    "schedule_count": 6
   },
   {
     "council_id": 262,
@@ -254,7 +275,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "262.json"
+    "file": "262.json",
+    "schedule_count": 8
   },
   {
     "council_id": 270,
@@ -262,7 +284,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "270.json"
+    "file": "270.json",
+    "schedule_count": 5
   },
   {
     "council_id": 255,
@@ -270,7 +293,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "255.json"
+    "file": "255.json",
+    "schedule_count": 1
   },
   {
     "council_id": 256,
@@ -278,7 +302,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "256.json"
+    "file": "256.json",
+    "schedule_count": 1
   },
   {
     "council_id": 264,
@@ -286,7 +311,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "264.json"
+    "file": "264.json",
+    "schedule_count": 1
   },
   {
     "council_id": 258,
@@ -294,7 +320,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 第１回定例会補正予算等審査特別委員会",
-    "file": "258.json"
+    "file": "258.json",
+    "schedule_count": 3
   },
   {
     "council_id": 261,
@@ -302,7 +329,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 第２回定例会補正予算等審査特別委員会",
-    "file": "261.json"
+    "file": "261.json",
+    "schedule_count": 3
   },
   {
     "council_id": 263,
@@ -310,7 +338,8 @@
     "year": "2022",
     "japanese_year": "令和4年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 第３回定例会補正予算等審査特別委員会",
-    "file": "263.json"
+    "file": "263.json",
+    "schedule_count": 3
   },
   {
     "council_id": 265,

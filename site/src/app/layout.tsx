@@ -145,8 +145,8 @@ export default function RootLayout({
                     </div>
                     <div className="rounded-[22px] border border-white/10 bg-white/6 p-4">
                       <p className="mb-2 text-xs font-black uppercase tracking-[0.12em] text-[#ffd54f]">運営</p>
-                      <p className="text-sm text-[#dbe7ff]">株式会社オガワヤ</p>
-                      <p className="text-xs text-[#a9bbd8]">代表: 小川陽平 / 千歳市議会議員</p>
+                      <p className="text-sm text-[#dbe7ff]">千歳市議会議員</p>
+                      <p className="text-xs text-[#a9bbd8]">小川陽平</p>
                       <div className="mt-2 space-y-1 text-xs">
                         <a href="mailto:ogawayohei.hkd@gmail.com" className="block text-[#dbe7ff] underline decoration-white/30">ogawayohei.hkd@gmail.com</a>
                         <a href="https://x.com/yoheiogawa_DPFP" target="_blank" rel="noopener noreferrer" className="block text-[#dbe7ff] underline decoration-white/30">X @yoheiogawa_DPFP</a>

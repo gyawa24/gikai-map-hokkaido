@@ -27,8 +27,8 @@ export default function PrivacyPage() {
           1. 運営者
         </h2>
         <ul className="text-base text-[#1A202C] leading-relaxed space-y-1 list-disc pl-6">
-          <li>運営: 株式会社オガワヤ</li>
-          <li>代表者: 小川陽平（千歳市議会議員）</li>
+          <li>運営者: 小川陽平</li>
+          <li>肩書: 千歳市議会議員</li>
           <li>所在地: 北海道千歳市（詳細はお問い合わせください）</li>
         </ul>
       </section>

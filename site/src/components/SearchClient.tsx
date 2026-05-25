@@ -86,6 +86,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(() => searchParams.get("q") ?? initialQuery);
+  const [draftQuery, setDraftQuery] = useState(() => searchParams.get("q") ?? initialQuery);
   const [tab, setTab] = useState<"sessions" | "members">(() =>
     (searchParams.get("tab") ?? initialTab) === "members" ? "members" : "sessions"
   );
@@ -125,7 +126,10 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
 
   useEffect(() => {
     const nextQuery = searchParams.get("q") ?? "";
-    if (nextQuery !== query) setQuery(nextQuery);
+    if (nextQuery !== query) {
+      setQuery(nextQuery);
+      setDraftQuery(nextQuery);
+    }
     const nextTab = searchParams.get("tab") === "members" ? "members" : "sessions";
     if (nextTab !== tab) setTab(nextTab);
     const nextSource = searchParams.get("source");
@@ -390,42 +394,68 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
     setSourceFilter("all");
   }
 
+  function submitSearch() {
+    const nextQuery = draftQuery.trim();
+    if (nextQuery === query.trim()) return;
+    setQuery(nextQuery);
+  }
+
+  function clearSearch() {
+    setDraftQuery("");
+    setQuery("");
+  }
+
   return (
     <div className="page-shell flex max-w-5xl flex-col gap-4">
       <div className="theme-panel px-4 py-5 sm:px-6">
         <label htmlFor="site-search" className="mb-2 block text-lg font-black text-[#1B3A6B]">
           キーワード検索
         </label>
-        <div className="relative">
-          <svg className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#718096]"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-            aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-          </svg>
-          <input
-            id="site-search"
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="給食無償化、除雪、ラピダス、防災、議員名で検索"
-            className="theme-input w-full min-h-12 py-3 pl-9 pr-20 text-base sm:min-h-14 sm:pr-24 sm:text-lg"
-          />
-          {query && (
-            <button
-              onClick={() => setQuery("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 rounded text-xs font-bold text-[#718096] hover:text-[#1A202C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
-              aria-label="検索をクリア"
-            >
-              クリア
-            </button>
-          )}
-        </div>
+        <form
+          className="flex flex-col gap-2 sm:flex-row"
+          onSubmit={(event) => {
+            event.preventDefault();
+            submitSearch();
+          }}
+        >
+          <div className="relative flex-1">
+            <svg className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#718096]"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+              aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input
+              id="site-search"
+              type="search"
+              value={draftQuery}
+              onChange={(e) => setDraftQuery(e.target.value)}
+              placeholder="給食無償化、除雪、ラピダス、防災、議員名で検索"
+              className="theme-input w-full min-h-12 py-3 pl-9 pr-16 text-base sm:min-h-14 sm:text-lg"
+            />
+            {draftQuery && (
+              <button
+                onClick={clearSearch}
+                className="absolute right-3 top-1/2 -translate-y-1/2 rounded text-xs font-bold text-[#718096] hover:text-[#1A202C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                aria-label="検索をクリア"
+                type="button"
+              >
+                クリア
+              </button>
+            )}
+          </div>
+          <button type="submit" className="theme-button theme-button-accent min-h-12 px-5 text-sm sm:min-h-14">
+            検索
+          </button>
+        </form>
 
         <div className="mt-3 flex flex-wrap gap-2">
           {SEARCH_SUGGESTIONS.map((suggestion) => (
             <button
               key={suggestion}
-              onClick={() => setQuery(suggestion)}
+              onClick={() => {
+                setDraftQuery(suggestion);
+                setQuery(suggestion);
+              }}
               className="inline-flex min-h-11 items-center rounded-full border border-[#CBD5E0] bg-white px-3 py-2 text-sm font-semibold text-[#1B3A6B] transition-colors hover:border-[#1B3A6B] hover:bg-[#E8EEF7]"
               type="button"
             >
@@ -481,7 +511,10 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
               {recentQueries.map((item) => (
                 <button
                   key={item}
-                  onClick={() => setQuery(item)}
+                  onClick={() => {
+                    setDraftQuery(item);
+                    setQuery(item);
+                  }}
                   className="theme-pill-soft text-[#1B3A6B]"
                   type="button"
                 >
