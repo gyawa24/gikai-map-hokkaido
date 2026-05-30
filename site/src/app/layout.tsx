@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Noto_Sans_JP } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import CityHeaderServer from "@/components/CityHeaderServer";
 import JsonLd from "@/components/JsonLd";
 import { ToastProvider } from "@/components/Toast";
@@ -159,7 +158,6 @@ export default function RootLayout({
             </footer>
           </div>
         </ToastProvider>
-        <Analytics />
       </body>
     </html>
   );

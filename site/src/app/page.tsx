@@ -19,7 +19,7 @@ export const metadata = buildPageMetadata({
   path: "/",
 });
 
-export const revalidate = 600;
+export const revalidate = 86400;
 
 function getMemberCount(cityId: string): number {
   try {

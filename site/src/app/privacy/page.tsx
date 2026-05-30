@@ -15,7 +15,7 @@ export default function PrivacyPage() {
         <h1 className="text-2xl font-bold text-[#1B3A6B] mb-2">
           プライバシーポリシー
         </h1>
-        <p className="text-sm text-[#718096]">最終改定日: 2026-04-21</p>
+        <p className="text-sm text-[#718096]">最終改定日: 2026-05-29</p>
       </header>
 
       <p className="text-base text-[#1A202C] leading-relaxed mb-6">
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
             の不正利用を防止する目的で一時的に保持し、リクエスト間隔の計測にのみ使用します。最大24時間で自動的に破棄されます。
           </li>
           <li>
-            <strong>アクセス解析</strong>：Vercel Web Analytics による匿名の閲覧統計を利用します。本サービスはCookieを使用せず、個別の利用者を追跡しません。
+            <strong>アクセス解析</strong>：現在、当サイトでは外部のアクセス解析タグを設置していません。運用上必要な場合は、Cookieを使用せず個別の利用者を追跡しない範囲で再開します。
           </li>
           <li>
             <strong>Cookie</strong>：当サイト自身は認証・追跡目的のCookieを使用していません。

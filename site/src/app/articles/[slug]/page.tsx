@@ -16,7 +16,7 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export const revalidate = 600;
+export const revalidate = 86400;
 
 function renderInlineMarkdown(text: string) {
   const nodes: ReactNode[] = [];

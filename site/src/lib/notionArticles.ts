@@ -7,7 +7,7 @@ import {
 
 const NOTION_API_BASE = "https://api.notion.com/v1";
 const NOTION_VERSION = process.env.NOTION_VERSION ?? "2026-03-11";
-const ARTICLE_REVALIDATE_SECONDS = 600;
+const ARTICLE_REVALIDATE_SECONDS = 86400;
 const MAX_NOTION_PAGES = 500;
 
 type NotionRichText = {

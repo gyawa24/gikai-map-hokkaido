@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 import type { MetadataRoute } from "next";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getCityCapability } from "@/lib/cityCapabilities";
@@ -8,49 +6,6 @@ import { getArticles } from "@/lib/articles";
 import { getBudgetDocuments } from "@/lib/budgets";
 
 const BASE_URL = "https://chihougikai.com";
-
-interface MinutesIndexItem {
-  council_id: number;
-}
-
-interface Member {
-  seat_number: number;
-}
-
-function readJson<T>(filePath: string): T | null {
-  try {
-    return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
-  } catch {
-    return null;
-  }
-}
-
-function getMinutesIds(city: string): number[] {
-  const cwd = process.cwd();
-  const minutesPath = path.join(/*turbopackIgnore: true*/ cwd, "data", city, "minutes", "index.json");
-  const directPath = path.join(/*turbopackIgnore: true*/ cwd, "data", city, "index.json");
-  const data =
-    readJson<MinutesIndexItem[]>(minutesPath) ??
-    readJson<MinutesIndexItem[]>(directPath);
-  return data ? data.map((item) => item.council_id) : [];
-}
-
-function getMemberIds(city: string): number[] {
-  const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "members.json");
-  const data = readJson<Member[]>(fp);
-  return data ? data.map((member) => member.seat_number) : [];
-}
-
-function getSessionIds(city: string): string[] {
-  const sessionsDir = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "sessions");
-  try {
-    return fs.readdirSync(sessionsDir)
-      .filter((file) => file !== "index.json" && file.endsWith(".json"))
-      .map((file) => file.replace(/\.json$/, ""));
-  } catch {
-    return [];
-  }
-}
 
 function toEntry(
   route: string,
@@ -97,22 +52,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     if (capabilities.minutes) {
       entries.push(toEntry(`/${city}/minutes`, "weekly", 0.8));
-      for (const id of getMinutesIds(city)) {
-        entries.push(toEntry(`/${city}/minutes/${id}`, "weekly", 0.7));
-      }
-    }
-
-    if (capabilities.members) {
-      for (const id of getMemberIds(city)) {
-        entries.push(toEntry(`/${city}/members/${id}`, "monthly", 0.7));
-      }
     }
 
     if (capabilities.sessions) {
       entries.push(toEntry(`/${city}/sessions`, "weekly", 0.7));
-      for (const id of getSessionIds(city)) {
-        entries.push(toEntry(`/${city}/sessions/${id}`, "weekly", 0.7));
-      }
     }
 
     if (capabilities.decisions) entries.push(toEntry(`/${city}/decisions`, "weekly", 0.7));

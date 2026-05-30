@@ -118,11 +118,9 @@ const nextConfig: NextConfig = {
     // - Tailwind で生成される inline style 用に style-src にも 'unsafe-inline'
     // - 議員写真は各市公式サイトから配信されるため img-src は https: 全体を許可
     // - 会議録ページで YouTube 埋込を行うため frame-src に youtube.com
-    // - Vercel Web Analytics のビーコン送信のため vitals.vercel-insights.com
     const scriptSrc = [
       "'self'",
       "'unsafe-inline'",
-      "https://va.vercel-scripts.com",
     ];
     if (process.env.NODE_ENV !== "production") {
       scriptSrc.push("'unsafe-eval'");
@@ -133,7 +131,7 @@ const nextConfig: NextConfig = {
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https:",
       "font-src 'self' data:",
-      "connect-src 'self' https://vitals.vercel-insights.com https://va.vercel-scripts.com",
+      "connect-src 'self'",
       "frame-src https://www.youtube.com https://www.youtube-nocookie.com",
       "object-src 'none'",
       "base-uri 'self'",
