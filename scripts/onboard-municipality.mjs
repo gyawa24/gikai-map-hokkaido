@@ -15,6 +15,23 @@ const SITE_DATA_DIR = path.join(REPO_ROOT, "site", "data");
 const ROOT_MUNICIPALITIES_PATH = path.join(ROOT_DATA_DIR, "municipalities.json");
 const SITE_MUNICIPALITIES_PATH = path.join(SITE_DATA_DIR, "municipalities.json");
 
+const PUBLIC_SYNC_ENTRIES = [
+  "members.json",
+  "members_activity.json",
+  "minutes",
+  "index.json",
+  "sessions",
+  "decisions.json",
+  "schedule.json",
+  "newsletter.json",
+  "election.json",
+  "comprehensive_plan.json",
+  "plan_activity.json",
+  "vocabulary.json",
+  "budgets",
+  "publications",
+];
+
 const FIELD_ORDER = [
   "slug",
   "name",
@@ -209,6 +226,18 @@ async function pathExists(targetPath) {
   }
 }
 
+async function copyIfExists(sourcePath, destPath, dryRun) {
+  if (!(await pathExists(sourcePath))) return false;
+  if (dryRun) {
+    console.log(`[dry-run] copy ${path.relative(REPO_ROOT, sourcePath)} -> ${path.relative(REPO_ROOT, destPath)}`);
+    return true;
+  }
+  await fs.mkdir(path.dirname(destPath), { recursive: true });
+  await fs.cp(sourcePath, destPath, { recursive: true, force: true });
+  console.log(`copied ${path.relative(REPO_ROOT, sourcePath)} -> ${path.relative(REPO_ROOT, destPath)}`);
+  return true;
+}
+
 async function syncMunicipalityDirectory(slug, dryRun) {
   const sourceDir = path.join(ROOT_DATA_DIR, slug);
   const destDir = path.join(SITE_DATA_DIR, slug);
@@ -223,12 +252,15 @@ async function syncMunicipalityDirectory(slug, dryRun) {
   }
 
   if (dryRun) {
-    console.log(`[dry-run] cp -R data/${slug}/ -> site/data/${slug}/`);
-    return;
+    console.log(`[dry-run] sync public entries for data/${slug}/ -> site/data/${slug}/`);
   }
 
-  await fs.cp(sourceDir, destDir, { recursive: true, force: true });
-  console.log(`synced data/${slug}/ -> site/data/${slug}/`);
+  let copied = 0;
+  for (const entry of PUBLIC_SYNC_ENTRIES) {
+    const didCopy = await copyIfExists(path.join(sourceDir, entry), path.join(destDir, entry), dryRun);
+    if (didCopy) copied += 1;
+  }
+  console.log(`synced ${slug}: ${copied} public entries`);
 }
 
 async function hasMinutes(slug) {
