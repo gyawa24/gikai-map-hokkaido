@@ -1,6 +1,10 @@
-# gikai Remote MCP 環境変数整理
+# gikai Remote MCP 環境変数整理（旧案）
 
-対象: `site/src/app/api/mcp/route.ts`
+> 現在の公開サイト本体では、無料運用優先のため `/api/mcp` は削除済み。
+> この文書は Remote MCP を別Worker等で再開する場合の旧運用メモとして扱う。
+> このまま公開サイト本体へ戻さない。
+
+旧対象: `site/src/app/api/mcp/route.ts`
 
 ## 現在の実装で実際に使っている環境変数
 
@@ -25,17 +29,17 @@ MCP_API_KEYS={"議員A":"gkmcp_xxxxxxxxxxxxxxxx","議員B":"gkmcp_yyyyyyyyyyyyyy
   - 末尾カンマ禁止
   - 全体を1行で入れる
 
-## Vercel 側で自動付与されるが、MCP 実装では前提にしていないもの
+## 旧Vercel案で自動付与されるが、MCP 実装では前提にしていないもの
 
 - `VERCEL_ENV`
 - `VERCEL_URL`
 - `VERCEL_PROJECT_PRODUCTION_URL`
 
-これらは運用補助には使えるが、現時点の `api/mcp` では必須ではない。
+これらは旧案の運用補助には使えるが、MCP 実装では必須ではない。
 
 ## 他機能で使っているが、MCP では必須でないもの
 
-以下は別 API やスクリプト用であり、Remote MCP を公開するだけなら必須ではない。
+以下は旧案では別 API やスクリプト用であり、Remote MCP を公開するだけなら必須ではない。
 
 - `KV_REST_API_URL`
 - `KV_REST_API_TOKEN`
@@ -45,7 +49,7 @@ MCP_API_KEYS={"議員A":"gkmcp_xxxxxxxxxxxxxxxx","議員B":"gkmcp_yyyyyyyyyyyyyy
 - `STORAGE_KV_REST_API_TOKEN`
 - `ANTHROPIC_API_KEY`
 
-## 推奨する Vercel Environment の分け方
+## 旧Vercel案での Environment の分け方
 
 ### Production
 
@@ -61,7 +65,7 @@ MCP_API_KEYS={"議員A":"gkmcp_xxxxxxxxxxxxxxxx","議員B":"gkmcp_yyyyyyyyyyyyyy
 
 - ローカル疎通確認用のダミーキーまたは検証キーのみ
 
-## 例: Vercel Production の設定値
+## 例: 旧Vercel Production の設定値
 
 ```json
 {

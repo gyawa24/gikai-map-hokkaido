@@ -1,4 +1,8 @@
-# gikai Remote MCP APIキー発行・運用案
+# gikai Remote MCP APIキー発行・運用案（旧案）
+
+> 現在の公開サイト本体では、無料運用優先のため `/api/mcp` は削除済み。
+> APIキー運用は Remote MCP を別Worker等で再開する場合に見直す。
+> このまま公開サイト本体へ戻さない。
 
 目的: 議員ごとに個別キーを配布し、最低限の追跡・失効・再発行を回せる状態を作る。
 
@@ -64,7 +68,7 @@ gkmcp_yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 1. 台帳に発行予定者を追加
 2. キーを生成
 3. `MCP_API_KEYS` に反映
-4. Vercel Production に保存
+4. 別Worker等の本番環境に保存
 5. 疎通確認
 6. 受領者へ個別送付
 7. 台帳の `issued_at` と `status=active` を更新
@@ -73,7 +77,7 @@ gkmcp_yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 
 1. 台帳の対象キーを特定
 2. `MCP_API_KEYS` から該当キーを削除
-3. Vercel Production に保存
+3. 別Worker等の本番環境に保存
 4. 401 になることを確認
 5. 台帳を `revoked` に更新
 

@@ -10,6 +10,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import type { Session, SessionSummary } from "@/types/session";
 import { getMunicipality, getMunicipalities } from "@/lib/municipalities";
+import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
 
 export const dynamicParams = false;
 
@@ -82,8 +83,6 @@ export async function generateMetadata({
   const overview = detail?.overview ?? segment.summary ?? "";
   const title = `${speaker} - ${session.title}（${formatDate(session.date)}） | ${cityName}議会`;
   const description = overview.slice(0, 100);
-  const ogImage = `/api/og-segment?city=${city}&session=${id}&seg=${segNum}`;
-
   return {
     title,
     description,
@@ -94,7 +93,7 @@ export async function generateMetadata({
       title,
       description,
       url: `/s/${city}/${id}/${seg}`,
-      images: [{ url: ogImage, width: 1200, height: 630 }],
+      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     },
     robots: {
       index: false,

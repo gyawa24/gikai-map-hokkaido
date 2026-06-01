@@ -1,0 +1,46 @@
+{
+  "schema": "council_publication.v1",
+  "municipality_slug": "shinshinotsu",
+  "generated_at": "2026-05-22T00:00:00.000+09:00",
+  "source_checked_at": "2026-05-22",
+  "items": [
+    {
+      "id": "shinshinotsu-r8-01-votes",
+      "feature_type": "votes",
+      "title": "令和8年第1回定例会 議決結果",
+      "fiscal_year": "2026",
+      "meeting_name": "令和8年第1回定例会",
+      "published_date": "2026-04-15",
+      "source_url": "https://www.vill.shinshinotsu.hokkaido.jp/hotnews/detail/00000288.html",
+      "source_label": "新篠津村議会 議会の動き《定例会・臨時会》",
+      "source_type": "pdf",
+      "official_status": "official",
+      "document_url": "https://www.vill.shinshinotsu.hokkaido.jp/hotnews/files/00000200/00000288/20260415152047.pdf",
+      "coverage": {
+        "has_full_minutes": false,
+        "includes_questions": false,
+        "includes_answers": false,
+        "includes_votes": true,
+        "includes_agenda": true
+      },
+      "people": [
+        {
+          "name": "石塚隆",
+          "role": "提出者"
+        },
+        {
+          "name": "高橋隆光",
+          "role": "提出者"
+        }
+      ],
+      "tags": [
+        "議決結果",
+        "議案",
+        "予算",
+        "条例",
+        "補正予算"
+      ],
+      "notes": "新篠津村公式サイトに掲載されている議決結果PDF。議案番号・提案月日・件名・提案者・議決月日・審議結果・備考を議案単位で示す結果表で、議員個人別の賛否は含まない。正式な本会議会議録本文ではないため publications の votes 試験データとして扱う。PDFは2ページ。"
+    }
+  ]
+}

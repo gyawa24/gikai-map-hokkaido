@@ -7,6 +7,7 @@ import type { Member, MemberActivity } from "@/types/member";
 import JsonLd from "@/components/JsonLd";
 import { getMunicipality } from "@/lib/municipalities";
 import MemberShareButtons from "@/components/MemberShareButtons";
+import { withPublicMemberPhotoUrls } from "@/lib/memberPhotos";
 import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
 import { buildBreadcrumbList } from "@/lib/structuredData";
 
@@ -24,26 +25,46 @@ function yearFromSessionName(name: string): string {
   return "不明";
 }
 
-// Build時は priority cities のみ static generate。それ以外の市町村の議員ページは ISR で
-// 初回アクセス時にレンダリング → エッジでキャッシュ。members.json は小さく Function バンドルに
-// 含まれるので GitHub Raw fallback 不要。
+// Cloudflare Workers の静的アセットキャッシュは読み取り専用。
+// 未生成の議員ページは request-time render にして、ISR キャッシュ書き込みを避ける。
 export const dynamicParams = true;
-export const revalidate = 86400; // 1 日
+export const dynamic = "force-dynamic";
 
-const PRIORITY_CITIES_FOR_PRERENDER = ["chitose", "eniwa", "tomakomai", "hakodate"];
+const REPO_OWNER = process.env.GIKAI_REPO_OWNER ?? "gyawa24";
+const REPO_NAME = process.env.GIKAI_REPO_NAME ?? "gikai-map-hokkaido";
+const REPO_BRANCH = process.env.GIKAI_REPO_BRANCH ?? "main";
+const RAW_BASE = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${REPO_BRANCH}`;
 
-function getMembers(city: string): Member[] {
+async function fetchRawJson<T>(remotePath: string): Promise<T | null> {
+  try {
+    const res = await fetch(`${RAW_BASE}/${remotePath}`, { cache: "no-store" });
+    if (!res.ok) return null;
+    return (await res.json()) as T;
+  } catch {
+    return null;
+  }
+}
+
+function getMembersLocal(city: string): Member[] {
   try {
     const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "members.json");
-    return JSON.parse(
+    return withPublicMemberPhotoUrls(JSON.parse(
       fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
-    ) as Member[];
+    ) as Member[]);
   } catch {
     return [];
   }
 }
 
-function getActivity(city: string): Record<string, MemberActivity> {
+async function getMembers(city: string): Promise<Member[]> {
+  const local = getMembersLocal(city);
+  if (local.length > 0) return local;
+
+  const remote = await fetchRawJson<Member[]>(`site/data/${city}/members.json`);
+  return remote ? withPublicMemberPhotoUrls(remote) : [];
+}
+
+function getActivityLocal(city: string): Record<string, MemberActivity> {
   try {
     const fp = path.join(
       /*turbopackIgnore: true*/ process.cwd(),
@@ -59,6 +80,17 @@ function getActivity(city: string): Record<string, MemberActivity> {
   }
 }
 
+async function getActivity(city: string): Promise<Record<string, MemberActivity>> {
+  const local = getActivityLocal(city);
+  if (Object.keys(local).length > 0) return local;
+
+  return (
+    (await fetchRawJson<Record<string, MemberActivity>>(
+      `site/data/${city}/members_activity.json`
+    )) ?? {}
+  );
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -67,7 +99,7 @@ export async function generateMetadata({
   const { city, id } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  const members = getMembers(city);
+  const members = await getMembers(city);
   const member = members.find((m) => m.seat_number === Number(id));
 
   if (!member) {
@@ -79,28 +111,12 @@ export async function generateMetadata({
     ? `${member.name}（${partyLabel}）- ${cityName}議会`
     : `${member.name} - ${cityName}議会`;
   const description = `${cityName}議会 ${member.name}議員の会派、委員会、得票数、活動テーマ、発言記録を掲載しています。`;
-  const ogImage = `/api/og-member?city=${city}&seat=${member.seat_number}`;
 
   return buildPageMetadata({
     title,
     description,
     path: `/${city}/members/${member.seat_number}`,
-    image: ogImage,
   });
-}
-
-export async function generateStaticParams() {
-  const { getMunicipalities } = await import("@/lib/municipalities");
-  const params: { city: string; id: string }[] = [];
-  const prioritySet = new Set(PRIORITY_CITIES_FOR_PRERENDER);
-  for (const m of getMunicipalities()) {
-    if (!m.active) continue;
-    if (!prioritySet.has(m.slug)) continue; // 他市町村は ISR で動的レンダ
-    for (const member of getMembers(m.slug)) {
-      params.push({ city: m.slug, id: String(member.seat_number) });
-    }
-  }
-  return params;
 }
 
 export default async function CityMemberDetailPage({
@@ -112,11 +128,11 @@ export default async function CityMemberDetailPage({
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
 
-  const members = getMembers(city);
+  const members = await getMembers(city);
   const member = members.find((m) => m.seat_number === Number(id));
   if (!member) notFound();
 
-  const activity = getActivity(city);
+  const activity = await getActivity(city);
   const memberActivity = activity[member.name.replace(/\s/g, "")];
 
   const memberSearchQ = encodeURIComponent(member.name);

@@ -1,6 +1,10 @@
-# gikai Remote MCP 本番化チェックリスト
+# gikai Remote MCP 本番化チェックリスト（旧案）
 
-対象: `site/src/app/api/mcp/route.ts` を Vercel 上で本番公開し、議員へ配布する運用。
+> 現在の公開サイト本体では、無料運用優先のため `/api/mcp` は削除済み。
+> このチェックリストは Vercel/Remote MCP 旧案の控え。再開時は別Worker前提で見直す。
+> このまま実行しない。
+
+旧対象: `site/src/app/api/mcp/route.ts` を Vercel 上で本番公開し、議員へ配布する運用。
 
 ## 1. 事前確認
 
@@ -37,7 +41,7 @@
 
 - `npm install` が通る
 - `site` で `npm run build` が通る
-- `site/src/app/api/mcp/route.ts` が `runtime = "nodejs"` のままである
+- 旧案では `site/src/app/api/mcp/route.ts` が `runtime = "nodejs"` のままである
 - `mcp-server/REMOTE.md` の接続URLが本番URLと一致している
 - 既存のサイト機能に影響が出ていない
 
@@ -86,7 +90,7 @@ curl -i \
 現状でも配布は可能だが、継続運用するなら以下を優先する。
 
 - レート制限を in-memory から外部ストアに移す
-  - 例: Upstash Redis / Vercel KV
+  - 例: Cloudflare KV / D1 / R2、または公開サイト本体とは別のログ基盤
 - 監査ログを残す
   - 少なくとも `key label / timestamp / tool name / status code`
 - 失効済みキーの管理ルールを決める

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { buildPageMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
 import { getAllTags } from "@/lib/topics";
+import { slugForTag } from "@/lib/topicAliases";
 import { buildBreadcrumbList } from "@/lib/structuredData";
 import SearchClient from "@/components/SearchClient";
 
@@ -12,23 +13,9 @@ export const metadata = buildPageMetadata({
   path: "/search",
 });
 
-type SearchPageProps = {
-  searchParams?: Promise<{
-    q?: string | string[];
-    tab?: string | string[];
-    source?: string | string[];
-  }>;
-};
+export const dynamic = "force-static";
 
-function firstParam(value: string | string[] | undefined): string {
-  return Array.isArray(value) ? value[0] ?? "" : value ?? "";
-}
-
-export default async function SearchPage({ searchParams }: SearchPageProps) {
-  const resolvedSearchParams = (await searchParams) ?? {};
-  const initialQuery = firstParam(resolvedSearchParams.q);
-  const initialTab = firstParam(resolvedSearchParams.tab);
-  const initialSource = firstParam(resolvedSearchParams.source);
+export default function SearchPage() {
   const topTags = getAllTags().slice(0, 10);
   const breadcrumb = buildBreadcrumbList([
     { name: "地方議会ドットコム", path: "/" },
@@ -54,7 +41,6 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
             <input
               id="noscript-search"
               name="q"
-              defaultValue={initialQuery}
               placeholder="給食無償化、除雪、ラピダス、防災、議員名で検索"
               className="theme-input px-4 py-3 text-base"
             />
@@ -65,7 +51,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         </form>
       </noscript>
 
-      <SearchClient initialQuery={initialQuery} initialTab={initialTab} initialSource={initialSource} />
+      <SearchClient />
 
       <section className="mt-6 rounded-lg border border-[#D8DEE8] bg-white px-4 py-4">
         {topTags.length > 0 && (
@@ -78,7 +64,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
               {topTags.map(({ tag, count }) => (
                 <Link
                   key={tag}
-                  href={`/topics/${encodeURIComponent(tag)}`}
+                  href={`/topics/${slugForTag(tag)}`}
                   className="inline-flex items-center gap-1 rounded-full bg-[#E8EEF7] px-3 py-1.5 text-sm font-bold text-[#2A5298] transition-colors hover:bg-[#1B3A6B] hover:text-white"
                 >
                   <span>{tag}</span>

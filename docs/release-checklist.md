@@ -53,7 +53,7 @@ Use this before every production release.
 - alert routing is correct
 - backup or recovery expectations are documented if applicable
 - dependency updates are enabled and reviewed
-- server-side rate limit storage is configured in production (`KV_REST_*` or `UPSTASH_REDIS_*`)
+- server-side rate limit storage is configured if dynamic write/API endpoints are enabled
 - protected health checks use a bearer token (`UPTIME_WEBHOOK_TOKEN`) when enabled
 
 ## Public Repo And Secrets
@@ -66,6 +66,12 @@ Use this before every production release.
 
 ## Final Audit
 
+- for Cloudflare deployment: `cd site && npm run cf:preflight`
+- for Cloudflare deployment: `cd site && npm run cf:release-status`
+- before Cloudflare production deploy: verify the uploaded Workers URL or staging subdomain with `cd site && npm run cf:verify-url -- --base https://<preview-or-subdomain>`
+- after Cloudflare DNS cutover: verify the production host with `cd site && npm run cf:verify-url -- --base https://chihougikai.com --allow-production-host`
+- after Cloudflare production cutover: `cd site && npm run cf:post-cutover-check`
+- after Cloudflare production cutover: record Search Console URL-prefix property `https://chihougikai.com/` pages, sitemap, and search performance in `docs/cloudflare-release-log.md`
 - `./scripts/check_required_files.sh`
 - `./scripts/audit_live_site.sh https://example.com`
 - `./scripts/audit_metadata.sh https://example.com`

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getCityCapability } from "@/lib/cityCapabilities";
 import { getAllTags } from "@/lib/topics";
+import { slugForTag } from "@/lib/topicAliases";
 import { getArticles } from "@/lib/articles";
 import { getBudgetDocuments } from "@/lib/budgets";
 
@@ -37,7 +38,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   for (const { tag } of getAllTags()) {
-    entries.push(toEntry(`/topics/${encodeURIComponent(tag)}`, "weekly", 0.6));
+    entries.push(toEntry(`/topics/${slugForTag(tag)}`, "weekly", 0.6));
   }
 
   for (const article of await getArticles()) {

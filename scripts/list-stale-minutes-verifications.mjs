@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { minutesVerificationCategory } from "./lib/minutes-verification-categories.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,7 +14,8 @@ const MUNICIPALITIES_PATH = path.join(REPO_ROOT, "data", "municipalities.json");
 const DAY_MS = 24 * 60 * 60 * 1000;
 const CADENCES = {
   missingDate: { days: 0, label: "日付未記録", reason: "minutes_verified_at がない" },
-  likelyAvailable: { days: 30, label: "30日", reason: "会議録本文らしき公開物があるが未取込" },
+  ocr: { days: 30, label: "30日", reason: "OCR待ちの定期確認" },
+  altFeature: { days: 90, label: "90日", reason: "別feature候補の定期確認" },
   explicitOffline: { days: 180, label: "180日", reason: "Web未公開または窓口閲覧と明記" },
   defaultUnavailable: { days: 90, label: "90日", reason: "未公開確認済みの定期再確認" },
 };
@@ -28,6 +30,8 @@ function printHelp() {
 
 Options:
   --as-of <YYYY-MM-DD>   基準日。省略時は今日
+  --due-by <YYYY-MM-DD>  その日までに期限を迎えるものも表示
+  --category <name>      recheck / ocr / alt-feature / other / all
   --all                  期限前も含めて全件を表示
   --json                 JSONで出力
   --help
@@ -35,9 +39,10 @@ Options:
 Rules:
   - minutes_status=unavailable かつ議事録データが未公開の自治体だけを見る
   - minutes_verified_at が無いものは即再確認
-  - 会議録PDFあり/取込未対応/掲載予定/OCR等の候補は30日ごと
-  - Web未公開や窓口閲覧と明記されたものは180日ごと
-  - それ以外の未公開確認済みは90日ごと
+  - OCR待ちは30日ごと
+  - 別feature候補は90日ごとに設計・分類を見直す
+  - 再確認待ちは90日ごと
+  - 明示的に窓口閲覧等の案内があり、再確認待ち分類に入っていないものは180日ごと
 `);
 }
 
@@ -65,7 +70,26 @@ function parseArgs(argv) {
       i += 1;
       continue;
     }
+    if (arg === "--due-by") {
+      options.dueBy = argv[i + 1];
+      if (!options.dueBy || options.dueBy.startsWith("--")) {
+        throw new Error("--due-by requires YYYY-MM-DD");
+      }
+      i += 1;
+      continue;
+    }
+    if (arg === "--category") {
+      options.category = argv[i + 1];
+      if (!options.category || options.category.startsWith("--")) {
+        throw new Error("--category requires recheck / ocr / alt-feature / other / all");
+      }
+      i += 1;
+      continue;
+    }
     throw new Error(`Unknown argument: ${arg}`);
+  }
+  if (options.category && !["recheck", "ocr", "alt-feature", "other", "all"].includes(options.category)) {
+    throw new Error("--category must be recheck / ocr / alt-feature / other / all");
   }
   return options;
 }
@@ -94,7 +118,11 @@ function todayInJapan() {
 
 function classify(entry) {
   const note = entry.minutes_status_note ?? "";
+  const category = minutesVerificationCategory(entry.slug);
   if (!entry.minutes_verified_at) return CADENCES.missingDate;
+  if (category.id === "ocr") return CADENCES.ocr;
+  if (category.id === "alt-feature") return CADENCES.altFeature;
+  if (category.id === "recheck") return CADENCES.defaultUnavailable;
   if (EXPLICIT_OFFLINE_RE.test(note)) return CADENCES.explicitOffline;
   if (LIKELY_AVAILABLE_RE.test(note) && !CLEARLY_NOT_AVAILABLE_RE.test(note)) {
     return CADENCES.likelyAvailable;
@@ -104,6 +132,22 @@ function classify(entry) {
 
 function daysBetween(a, b) {
   return Math.floor((a.getTime() - b.getTime()) / DAY_MS);
+}
+
+function addDays(date, days) {
+  const next = new Date(date);
+  next.setDate(next.getDate() + days);
+  return next;
+}
+
+function formatDate(date) {
+  if (!date) return null;
+  return new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(date);
 }
 
 function escapeCell(value) {
@@ -125,12 +169,9 @@ function main() {
   }
 
   const asOf = options.asOf ? parseDate(options.asOf, "--as-of") : todayInJapan();
-  const asOfText = new Intl.DateTimeFormat("sv-SE", {
-    timeZone: "Asia/Tokyo",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(asOf);
+  const dueBy = options.dueBy ? parseDate(options.dueBy, "--due-by") : null;
+  const asOfText = formatDate(asOf);
+  const dueByText = formatDate(dueBy);
   const municipalities = JSON.parse(fs.readFileSync(MUNICIPALITIES_PATH, "utf8"));
 
   const rows = municipalities
@@ -138,24 +179,34 @@ function main() {
     .filter((entry) => !hasPublishedMinutesData(entry.slug))
     .map((entry) => {
       const cadence = classify(entry);
+      const category = minutesVerificationCategory(entry.slug);
       const verifiedAt = parseDate(entry.minutes_verified_at, `${entry.slug}.minutes_verified_at`);
       const ageDays = verifiedAt ? daysBetween(asOf, verifiedAt) : null;
       const due = ageDays == null || ageDays >= cadence.days;
+      const nextDueDate = verifiedAt ? addDays(verifiedAt, cadence.days) : null;
+      const dueByMatch = dueBy && (!nextDueDate || nextDueDate.getTime() <= dueBy.getTime());
       return {
         slug: entry.slug,
         name: entry.name,
         region: entry.region,
+        category: category.id,
+        categoryLabel: category.label,
+        categoryNote: category.note,
         verifiedAt: entry.minutes_verified_at ?? null,
         ageDays,
         cadenceDays: cadence.days,
         cadenceLabel: cadence.label,
         reason: cadence.reason,
         due,
+        dueByMatch: Boolean(dueByMatch),
+        nextDueAt: formatDate(nextDueDate),
+        daysUntilDue: nextDueDate ? daysBetween(nextDueDate, asOf) : null,
         overdueDays: ageDays == null ? null : ageDays - cadence.days,
         note: entry.minutes_status_note ?? "",
       };
     })
-    .filter((row) => options.all || row.due)
+    .filter((row) => !options.category || options.category === "all" || row.category === options.category)
+    .filter((row) => options.all || row.due || row.dueByMatch)
     .sort((a, b) => {
       if (a.due !== b.due) return a.due ? -1 : 1;
       if (a.overdueDays == null && b.overdueDays != null) return -1;
@@ -174,13 +225,17 @@ function main() {
   console.log(`# 議事録未公開の再確認候補`);
   console.log("");
   console.log(`基準日: ${asOfText}`);
-  console.log(`対象: ${rows.length}件${options.all ? "（期限前を含む）" : ""}`);
+  const scopeNotes = [];
+  if (options.all) scopeNotes.push("期限前を含む");
+  if (dueByText) scopeNotes.push(`${dueByText}までに期限`);
+  if (options.category && options.category !== "all") scopeNotes.push(`category=${options.category}`);
+  console.log(`対象: ${rows.length}件${scopeNotes.length ? `（${scopeNotes.join(" / ")}）` : ""}`);
   console.log("");
-  console.log("| due | 地域 | 自治体 | slug | 確認日 | 経過 | 間隔 | 理由 | メモ |");
-  console.log("|---|---|---|---|---|---:|---:|---|---|");
+  console.log("| due | 分類 | 地域 | 自治体 | slug | 確認日 | 経過 | 間隔 | 次回 | 理由 | メモ |");
+  console.log("|---|---|---|---|---|---|---:|---:|---|---|---|");
   for (const row of rows) {
     console.log(
-      `| ${row.due ? "要確認" : "期限前"} | ${escapeCell(row.region)} | ${escapeCell(row.name)} | ${escapeCell(row.slug)} | ${escapeCell(row.verifiedAt)} | ${row.ageDays ?? "—"} | ${escapeCell(row.cadenceLabel)} | ${escapeCell(row.reason)} | ${escapeCell(row.note)} |`
+      `| ${row.due ? "要確認" : "期限前"} | ${escapeCell(row.categoryLabel)} | ${escapeCell(row.region)} | ${escapeCell(row.name)} | ${escapeCell(row.slug)} | ${escapeCell(row.verifiedAt)} | ${row.ageDays ?? "—"} | ${escapeCell(row.cadenceLabel)} | ${escapeCell(row.nextDueAt)} | ${escapeCell(row.reason)} | ${escapeCell(row.note)} |`
     );
   }
 }

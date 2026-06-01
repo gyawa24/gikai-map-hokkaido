@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 // 議事録本文を議題単位で集約した軽量な全文検索インデックスを生成する。
 //
-// 目的: Vercel の Serverless Function 250MB 制限で /api/search bundle に
-//       data/*/minutes/*.json (202MB) を含められないため、build 時に全
-//       議事録を議題単位で truncate して 1 ファイルに纏める。/api/search
-//       はそのインデックス 1 本だけを読めば議題横断の全文検索ができる。
+// 目的: Function bundle に data/*/minutes/*.json (202MB) を含めないため、
+//       build 時に全議事録を議題単位で truncate して 1 ファイルに纏める。
+//       /api/search はそのインデックス 1 本だけを読めば議題横断の全文検索ができる。
 //
 // 出力: site/data/_search-index.json (~4-5 MB)
 // 構造: { version: 1, generated_at, agendas: [ { city, council_id, ... } ] }
@@ -19,6 +18,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE_DIR = path.resolve(__dirname, "..");
 const DATA_DIR = path.join(SITE_DIR, "data");
 const OUT_FILE = path.join(DATA_DIR, "_search-index.json");
+const PUBLIC_GENERATED_DIR = path.join(SITE_DIR, "public", "generated");
+const PUBLIC_SEARCH_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "search-index.json");
+const PUBLIC_TOPICS_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "topics-index.json");
+const SEGMENT_FALLBACKS_FILE = path.join(DATA_DIR, "search_segment_fallbacks.json");
 
 const AGENDA_MARKER = "△議題";
 const DISCUSSION_TYPES = new Set([
@@ -52,12 +55,151 @@ function getCityName(municipalities, slug) {
   return m?.name ?? slug;
 }
 
+function readJson(filePath, fallback) {
+  try {
+    return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  } catch {
+    return fallback;
+  }
+}
+
+function buildSessions(city, cityName) {
+  const sessionsDir = path.join(DATA_DIR, city, "sessions");
+  const indexPath = path.join(sessionsDir, "index.json");
+  const index = readJson(indexPath, []);
+  if (!Array.isArray(index)) return [];
+
+  return index.flatMap((entry) => {
+    if (!entry?.has_summary || (entry.segment_count ?? 0) === 0) return [];
+    const session = readJson(path.join(sessionsDir, `${entry.id}.json`), null);
+    if (!session) return [];
+    return [
+      {
+        city,
+        cityName,
+        id: session.id ?? entry.id,
+        title: session.title ?? "",
+        committee: session.committee ?? "",
+        date: session.date ?? "",
+        segments: (session.segments ?? []).map((seg) => ({
+          index: seg.index ?? 0,
+          label: seg.label ?? "",
+          start_time: seg.start_time ?? "",
+          summary: seg.summary ?? "",
+          topics: Array.isArray(seg.topics) ? seg.topics : [],
+          transcript: seg.transcript ?? "",
+        })),
+      },
+    ];
+  });
+}
+
+function buildEnrichedDocs(city, cityName) {
+  const enrichedDir = path.join(DATA_DIR, city, "minutes", "enriched");
+  if (!fs.existsSync(enrichedDir)) return [];
+  return fs
+    .readdirSync(enrichedDir)
+    .filter((file) => file.endsWith(".json"))
+    .flatMap((file) => {
+      const doc = readJson(path.join(enrichedDir, file), null);
+      if (!doc) return [];
+      return [
+        {
+          city,
+          cityName,
+          council_id: doc.council_id,
+          name: doc.name ?? "",
+          generated_at: doc.generated_at ?? "",
+          summary: doc.summary ?? "",
+          highlights: Array.isArray(doc.highlights) ? doc.highlights : [],
+          tags: Array.isArray(doc.tags) ? doc.tags : [],
+        },
+      ];
+    });
+}
+
+function buildDecisions(city, cityName) {
+  const decisions = readJson(path.join(DATA_DIR, city, "decisions.json"), []);
+  if (!Array.isArray(decisions)) return [];
+  return decisions.map((decision) => ({
+    city,
+    cityName,
+    session: decision.session ?? "",
+    description: decision.description ?? "",
+  }));
+}
+
+function buildMembers(city, cityName) {
+  const members = readJson(path.join(DATA_DIR, city, "members.json"), []);
+  if (Array.isArray(members) && members.length > 0) {
+    return members.map((member) => ({
+      city,
+      cityName,
+      name: member.name ?? "",
+      furigana: member.furigana ?? "",
+      party: member.party ?? "",
+      faction: member.faction ?? "",
+      committees: Array.isArray(member.committees) ? member.committees : [],
+    }));
+  }
+
+  const election = readJson(path.join(DATA_DIR, city, "election.json"), null);
+  const candidates = Array.isArray(election?.candidates) ? election.candidates : [];
+  return candidates
+    .filter((candidate) => candidate.result === "当選")
+    .map((candidate) => ({
+      city,
+      cityName,
+      name: candidate.name ?? "",
+      furigana: candidate.furigana ?? "",
+      party: candidate.party ?? "",
+      faction: candidate.party ?? "",
+      committees: [],
+    }));
+}
+
+function buildSegmentFallbackAgendas({ city, cityName, councilId, councilName, year }) {
+  const segments = readJson(path.join(DATA_DIR, city, "segments", `${councilId}.json`), []);
+  if (!Array.isArray(segments) || segments.length === 0) return [];
+
+  return segments
+    .filter((seg) => !seg.is_procedural && cleanText(seg.text))
+    .map((seg, index) => {
+      const speaker = cleanText(seg.speaker);
+      const role = cleanText(seg.speaker_role);
+      const body = cleanText(seg.text);
+      const scheduleId = Number.isFinite(Number(seg.schedule_id)) ? Number(seg.schedule_id) : 1;
+      return {
+        city,
+        cityName,
+        council_id: councilId,
+        council_name: councilName,
+        year,
+        schedule_index: Math.max(0, scheduleId - 1),
+        schedule_name: cleanText(seg.schedule_name),
+        agenda_title: [role, speaker].filter(Boolean).join(": ") || `発言 ${index + 1}`,
+        first_minute_id: 0,
+        text: body.slice(0, EXCERPT_MAX),
+        truncated: body.length > EXCERPT_MAX,
+      };
+    });
+}
+
 function buildIndex() {
   const municipalitiesPath = path.join(DATA_DIR, "municipalities.json");
   const municipalities = JSON.parse(fs.readFileSync(municipalitiesPath, "utf-8"));
+  const segmentFallbackCities = new Set(readJson(SEGMENT_FALLBACKS_FILE, []));
 
   /** @type {Array<object>} */
   const agendas = [];
+  /** @type {Array<object>} */
+  const sessions = [];
+  /** @type {Array<object>} */
+  const enriched = [];
+  /** @type {Array<object>} */
+  const decisions = [];
+  /** @type {Array<object>} */
+  const members = [];
 
   const cityDirs = fs
     .readdirSync(DATA_DIR, { withFileTypes: true })
@@ -66,6 +208,11 @@ function buildIndex() {
 
   for (const city of cityDirs) {
     const cityName = getCityName(municipalities, city);
+    sessions.push(...buildSessions(city, cityName));
+    enriched.push(...buildEnrichedDocs(city, cityName));
+    decisions.push(...buildDecisions(city, cityName));
+    members.push(...buildMembers(city, cityName));
+
     const minutesDir = path.join(DATA_DIR, city, "minutes");
     const indexPath = path.join(minutesDir, "index.json");
     if (!fs.existsSync(indexPath)) continue;
@@ -90,6 +237,7 @@ function buildIndex() {
       const councilId = council.council_id ?? entry.council_id;
       const councilName = council.name ?? entry.name;
       const year = entry.year || yearFromCouncilName(councilName);
+      const agendaCountBeforeCouncil = agendas.length;
 
       for (let schIdx = 0; schIdx < (council.schedules ?? []).length; schIdx++) {
         const sch = council.schedules[schIdx];
@@ -131,6 +279,18 @@ function buildIndex() {
         }
         flush();
       }
+
+      if (segmentFallbackCities.has(city) && agendas.length === agendaCountBeforeCouncil) {
+        agendas.push(
+          ...buildSegmentFallbackAgendas({
+            city,
+            cityName,
+            councilId,
+            councilName,
+            year,
+          })
+        );
+      }
     }
   }
 
@@ -142,10 +302,38 @@ function buildIndex() {
     agendas,
   };
 
+  const runtimeOut = {
+    ...out,
+    municipalities: municipalities
+      .filter((m) => m.active)
+      .map((m) => ({ slug: m.slug, name: m.name })),
+    sessions,
+    enriched,
+    decisions,
+    members,
+  };
+  const topicsOut = {
+    version: 1,
+    generated_at: out.generated_at,
+    count: enriched.length,
+    records: enriched,
+  };
+
   fs.writeFileSync(OUT_FILE, JSON.stringify(out));
+  fs.mkdirSync(PUBLIC_GENERATED_DIR, { recursive: true });
+  fs.writeFileSync(PUBLIC_SEARCH_INDEX_FILE, JSON.stringify(runtimeOut));
+  fs.writeFileSync(PUBLIC_TOPICS_INDEX_FILE, JSON.stringify(topicsOut));
   const stat = fs.statSync(OUT_FILE);
+  const runtimeStat = fs.statSync(PUBLIC_SEARCH_INDEX_FILE);
+  const topicsStat = fs.statSync(PUBLIC_TOPICS_INDEX_FILE);
   console.log(
     `search-index written: ${OUT_FILE.replace(SITE_DIR, "site")} (${agendas.length} agendas, ${(stat.size / 1024 / 1024).toFixed(1)} MB)`
+  );
+  console.log(
+    `runtime search-index written: ${PUBLIC_SEARCH_INDEX_FILE.replace(SITE_DIR, "site")} (${(runtimeStat.size / 1024 / 1024).toFixed(1)} MB)`
+  );
+  console.log(
+    `topics-index written: ${PUBLIC_TOPICS_INDEX_FILE.replace(SITE_DIR, "site")} (${enriched.length} records, ${(topicsStat.size / 1024 / 1024).toFixed(1)} MB)`
   );
 }
 

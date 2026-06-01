@@ -15,7 +15,7 @@ export default function PrivacyPage() {
         <h1 className="text-2xl font-bold text-[#1B3A6B] mb-2">
           プライバシーポリシー
         </h1>
-        <p className="text-sm text-[#718096]">最終改定日: 2026-05-29</p>
+        <p className="text-sm text-[#718096]">最終改定日: 2026-05-31</p>
       </header>
 
       <p className="text-base text-[#1A202C] leading-relaxed mb-6">
@@ -61,13 +61,13 @@ export default function PrivacyPage() {
         </h2>
         <ul className="text-base text-[#1A202C] leading-relaxed space-y-2 list-disc pl-6">
           <li>
-            <strong>ホスティング</strong>：Vercel Inc. のサーバーを利用しています。サーバーログは同社のプライバシーポリシーに従って管理されます。
+            <strong>ホスティング・配信</strong>：Vercel Inc. または Cloudflare, Inc. のホスティング・配信サービスを利用します。サーバーログや配信ログは各社のプライバシーポリシーに従って管理されます。
           </li>
           <li>
             <strong>動画埋込</strong>：会議録ページで YouTube の埋込を利用する場合、YouTube のプライバシーポリシーが適用されます。
           </li>
           <li>
-            <strong>議員写真</strong>：各市町村議会の公式サイトから直接配信しており、当サイト側では保存していません。
+            <strong>議員写真・予算書画像</strong>：各市町村議会の公式資料をもとに、閲覧しやすい形式で当サイトのリポジトリに保存し、GitHub Raw 等の静的配信経路から表示する場合があります。出典は各ページまたは出典ページに掲載します。
           </li>
         </ul>
       </section>

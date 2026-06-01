@@ -1,5 +1,4 @@
-import fs from "fs";
-import path from "path";
+import municipalitiesData from "../../data/municipalities.json";
 
 export type Municipality = {
   slug: string;
@@ -20,8 +19,7 @@ export type Municipality = {
 };
 
 export function getMunicipalities(): Municipality[] {
-  const fp = path.join(process.cwd(), "data", "municipalities.json");
-  return JSON.parse(fs.readFileSync(fp, "utf-8")) as Municipality[];
+  return municipalitiesData as Municipality[];
 }
 
 export function getMunicipality(slug: string): Municipality | null {

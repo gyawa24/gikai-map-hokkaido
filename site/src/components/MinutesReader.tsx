@@ -3,7 +3,6 @@
 import { useState, useEffect, useEffectEvent, useRef, useMemo } from "react";
 import { useToast } from "./Toast";
 import type { MinutesSession, MinuteItem } from "@/types/minutes";
-import LikeButton from "./LikeButton";
 
 // ---------- ユーティリティ ----------
 
@@ -143,13 +142,11 @@ function MinuteItemView({
   highlight,
   anchorId,
   citationContext,
-  likeTarget,
 }: {
   item: MinuteItem;
   highlight?: string;
   anchorId: string;
   citationContext: { cityName: string; councilName: string; scheduleName: string };
-  likeTarget?: { slug: string; council_id: number; schedule_id: number };
 }) {
   const [expanded, setExpanded] = useState(false);
   const toast = useToast();
@@ -240,18 +237,6 @@ function MinuteItemView({
             </svg>
             <span className="hidden sm:inline">引用</span>
           </button>
-          {likeTarget && (
-            <LikeButton
-              size="sm"
-              target={{
-                kind: "minute",
-                slug: likeTarget.slug,
-                council_id: likeTarget.council_id,
-                schedule_id: likeTarget.schedule_id,
-                minute_id: item.minute_id,
-              }}
-            />
-          )}
         </div>
       </div>
       <div className={style.textClass}>
@@ -279,7 +264,6 @@ function AgendaGroupView({
   query,
   scheduleId,
   citationContext,
-  likeTarget,
 }: {
   group: AgendaGroup;
   defaultOpen: boolean;
@@ -288,7 +272,6 @@ function AgendaGroupView({
   query: string;
   scheduleId: number;
   citationContext: { cityName: string; councilName: string; scheduleName: string };
-  likeTarget?: { slug: string; council_id: number };
 }) {
   const [open, setOpen] = useState(defaultOpen);
   const ref = useRef<HTMLDivElement>(null);
@@ -358,7 +341,6 @@ function AgendaGroupView({
                 highlight={activeTopic ?? (query || undefined)}
                 anchorId={`minute-${scheduleId}-${item.minute_id}`}
                 citationContext={citationContext}
-                likeTarget={likeTarget ? { ...likeTarget, schedule_id: scheduleId } : undefined}
               />
             ))
           )}
@@ -373,13 +355,12 @@ function AgendaGroupView({
 type Props = {
   session: MinutesSession;
   cityName: string;
-  slug?: string;
   activeTopic?: string | null;
   query: string;
   onQueryChange: (q: string) => void;
 };
 
-export default function MinutesReader({ session, cityName, slug, activeTopic = null, query, onQueryChange }: Props) {
+export default function MinutesReader({ session, cityName, activeTopic = null, query, onQueryChange }: Props) {
   const [activeScheduleIndex, setActiveScheduleIndex] = useState(0);
 
   // 引用URLで来たとき (#minute-{scheduleId}-{minuteId}) は対応する日程タブを開いてスクロールする
@@ -545,7 +526,6 @@ export default function MinutesReader({ session, cityName, slug, activeTopic = n
                 query={query.trim()}
                 scheduleId={activeSchedule.schedule_id}
                 citationContext={citationContext}
-                likeTarget={slug ? { slug, council_id: session.council_id } : undefined}
               />
             );
           })

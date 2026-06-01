@@ -1,6 +1,6 @@
 # 継続運用方針
 
-最終更新: 2026-05-20
+最終更新: 2026-06-01
 
 地方議会ドットコムは、機能を増やすこと自体を目的にしない。
 長く続けられる環境、きれいなデータ、無理のない更新スケジュールを先に作る。
@@ -10,7 +10,7 @@
 ### 1. 継続できる環境を作る
 
 - 作業のたびに判断し直さない。追加、更新、検証、公開の手順を文書とスクリプトに寄せる。
-- 手元だけで成立する作業を優先し、Vercel や外部APIに依存しすぎない。
+- 手元だけで成立する作業を優先し、ホスティングや外部APIに依存しすぎない。
 - 個人利用のローカルデータと公開データを混ぜない。
 - 1回きりの手作業で終わらせず、次回も同じやり方で回せる形にする。
 
@@ -53,6 +53,7 @@
 - データ変更なら `node scripts/data-health.mjs --strict` を通す。
 - 自治体単位の追加・更新なら `node scripts/verify-municipality.mjs <slug>` を通す。
 - UIやNext.js実装を触ったら `npm run lint` と必要に応じて `npm run build` を通す。
+- Cloudflare配信や本番ドメインに関わる変更なら `cd site && npm run cf:post-cutover-check` を通す。
 - 更新情報に値する変更なら `site/data/news.json` の追記要否を確認する。
 - 完了した作業、残った課題、次の候補を短く残す。
 
@@ -61,6 +62,9 @@
 - `node scripts/operations-check.mjs --weekly` で現状と確認項目を表示する。
 - `docs/operations-board.md` の Now / Next を見直す。
 - `node scripts/data-health.mjs --strict` で公開データのズレを確認する。
+- `node scripts/operations-check.mjs --cloudflare` で本番DNSとCloudflare応答の概要を確認する。
+- `cd site && npm run cf:post-cutover-check` で本番ホスト、DNS、主要ページ、検索APIを確認する。
+- Search Console URL-prefix property `https://chihougikai.com/` で、検索パフォーマンスとサイトマップの異常を確認する。
 - 直近で追加した自治体や予算OCRの出典リンクが切れていないか確認する。
 - MCP検索や記事作成で使ったデータに、再利用できる抽出ルールがないか整理する。
 
@@ -68,7 +72,11 @@
 
 - `node scripts/operations-check.mjs --monthly` で月次確認項目を表示する。
 - `node scripts/data-health.mjs --strict` で公開データ全体の健診を通す。
-- 未公開・再確認待ちの自治体をまとめて見直し、必要なら `minutes_verified_at` や出典確認日を更新する。
+- `node scripts/operations-check.mjs --cloudflare` で本番DNSとCloudflare応答の概要を確認する。
+- `cd site && npm run cf:post-cutover-check` を通し、Cloudflare Dashboard で Workers requests、CPU time、Static Assets の増加を確認する。
+- Search Console URL-prefix property `https://chihougikai.com/` で、ページ、サイトマップ、検索パフォーマンスを確認する。
+- Cloudflare metrics と Search Console に大きな異常がなければ、Vercel rollback をどこまで残すか判断する。
+- 未公開・再確認待ちの自治体を `node scripts/list-stale-minutes-verifications.mjs --category recheck` で見直し、必要なら `minutes_verified_at` や出典確認日を更新する。
 - `docs/municipality-coverage.md` と `docs/municipality-information-inventory.md` を最新化する。
 - 予算書、議決結果、速報、議会だより、別feature候補を並べ替える。
 - `site/data/budget_sources.json` の `取得候補` / `取込済み` / `保留` の意味が実データと合っているか確認する。
@@ -80,6 +88,7 @@
 - 今月追加・更新した公開データ
 - 台帳・出典・ニュースで直したこと
 - まだ公開しない候補と、その理由
+- Cloudflare無料運用、Search Console、Vercel rollback の判断
 - 来月の Now 1〜3件
 
 `data-health` や `verify-municipality` が失敗している場合は、新しい取込を始めず、先に健診エラーを片付ける。
@@ -87,6 +96,7 @@
 ### 年度更新
 
 - `node scripts/operations-check.mjs --yearly` で年度更新項目を表示する。
+- Cloudflare、GitHub Raw、Vercel rollback の役割が現状と合っているか確認する。
 - 新年度予算書の公開状況を主要都市から確認する。
 - 予算OCRは `budget_sources.json` で候補管理し、公開OCRが揃ったものだけ `取込済み` にする。
 - 議員改選があった自治体は `members.json` と出典を優先して確認する。

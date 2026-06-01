@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 // gikai MCP — stdio 版（小川個人用）。
 //
-// ツール定義は site/src/lib/mcp/tools.mjs に集約されており、
-// HTTP 配布版（site/src/app/api/mcp/route.ts）と共通化されている。
+// ツール定義は site/src/lib/mcp/tools.mjs に集約されている。
 //
 // この stdio 版は restricted index（札幌市等）を読み込む。
 // stdio で個人の Claude Code/Desktop に返す MCP は著作権30条の私的使用の範囲。

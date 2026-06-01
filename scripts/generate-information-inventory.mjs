@@ -3,70 +3,15 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import {
+  ALT_FEATURES,
+  OCR_WAIT,
+  RECHECK_WAIT,
+} from "./lib/minutes-verification-categories.mjs";
 
 const REPO_ROOT = process.cwd();
 const DATA_DIR = path.join(REPO_ROOT, "data");
 const DOC_PATH = path.join(REPO_ROOT, "docs", "municipality-information-inventory.md");
-
-const OCR_WAIT = new Set(["shosanbetsu", "yubetsu"]);
-
-const RECHECK_WAIT = new Set([
-  "kamikawa",
-  "ikeda",
-  "nakagawa",
-  "naganuma",
-  "shimamaki",
-  "suttsu",
-  "kuromatsunai",
-  "kimobetsu",
-  "kyogoku",
-  "kyowa",
-  "tomari",
-  "kamoenai",
-  "shakotan",
-  "samani",
-  "erimo",
-  "shikabe",
-  "otobe",
-  "okushiri",
-  "takasu",
-  "higashikagura",
-  "pippu",
-  "nakafurano",
-  "wassamu",
-  "otoineppu",
-  "mashike",
-  "obira",
-  "tomamae",
-  "hamatombetsu",
-  "rebun",
-  "rishiri",
-  "rishirifuji",
-  "shari",
-  "okoppe",
-  "nishiokoppe",
-  "teshikaga",
-  "tsurui",
-  "shiranuka",
-  "shibetsucho",
-]);
-
-const ALT_FEATURES = new Map([
-  ["nakashibetsu", "一般質問・委員会代表質問PDF"],
-  ["sarufutsu", "一般質問PDF"],
-  ["kaminokuni", "一般質問の質問・答弁要旨"],
-  ["toma", "一般質問と答弁"],
-  ["minamifurano", "会議結果・一般質問"],
-  ["shinshinotsu", "議決結果・一般質問"],
-  ["aibetsu", "一般質問動画"],
-  ["omu", "一般質問単位の議事録"],
-  ["saroma", "令和2年までの古い会議録"],
-  ["takinoue", "会議結果・議会広報・瓦版"],
-  ["teshio", "議会だより・視察研修報告書"],
-  ["kenbuchi", "議会だより・YouTube配信・議会情報"],
-  ["rusutsu", "議事日程・議決結果・議会活動"],
-  ["iwanai", "議事日程・議会だより・一般質問順序表"],
-]);
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));

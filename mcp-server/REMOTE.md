@@ -1,4 +1,8 @@
-# gikai リモート MCP — 議員向けセットアップ
+# gikai リモート MCP — 議員向けセットアップ（旧案）
+
+> 現在の公開サイト本体では、無料運用優先のため `https://chihougikai.com/api/mcp` は削除済み。
+> この文書は Remote MCP 旧案の控え。現時点ではローカル `mcp-server/index.mjs` を使う。
+> このまま配布しない。
 
 地方議会.com の横断議事録検索を、Claude.ai または ChatGPT のチャット画面から
 直接呼び出せるようにする手順書。
@@ -14,10 +18,10 @@
 「介護人材について道内他市議員はどんな質問をしているか」
 といった**他市の議員質問の横断検索**が、自分で AI にチャットで頼めます。
 
-## エンドポイント
+## 旧エンドポイント
 
 ```
-URL:  https://chihougikai.com/api/mcp
+URL:  https://chihougikai.com/api/mcp（現在は停止中）
 認証: Bearer <APIキー>
 ```
 
@@ -30,7 +34,7 @@ URL:  https://chihougikai.com/api/mcp
 3. **Add custom connector** をクリック
 4. 以下を入力:
    - Name: `地方議会.com`
-   - Remote MCP server URL: `https://chihougikai.com/api/mcp`
+   - Remote MCP server URL: `https://chihougikai.com/api/mcp`（現在は停止中）
    - Authentication: **OAuth** ではなく **Bearer token** を選択
    - Token: 配布された `gkmcp_...` キーを貼り付け
 5. **Connect** で完了
@@ -50,7 +54,7 @@ URL:  https://chihougikai.com/api/mcp
 2. 左下の自分の名前 → **Settings** → **Connectors**
 3. **Add custom connector** → **MCP server**
 4. 以下を入力:
-   - Server URL: `https://chihougikai.com/api/mcp`
+   - Server URL: `https://chihougikai.com/api/mcp`（現在は停止中）
    - Auth: **Custom header**
    - Header name: `Authorization`
    - Header value: `Bearer gkmcp_xxxxxxxxxxxxxxxx`（前後にスペースなし）
@@ -75,9 +79,9 @@ URL:  https://chihougikai.com/api/mcp
 
 - **search_minutes（横断検索）** は北海道全市町村を対象（抜粋は80字前後）
 - **get_minutes_excerpt（本文取得）** は当面 **千歳・恵庭・苫小牧の3市のみ** 対応
-  - Vercel Function のサイズ制限（250MB）のため。834MBある全議事録の本文を一度にバンドルできない
+  - 旧Vercel案では Function のサイズ制限（250MB）のため。834MBある全議事録の本文を一度にバンドルできない
   - 3市以外は `search_minutes` の結果に付くURLを踏んで chihougikai.com で確認してください
-  - 全道の本文取得対応は外部ストレージ（Vercel Blob等）に載せ替え完了後
+  - 全道の本文取得対応は外部ストレージに載せ替え完了後
 
 ## やってはいけないこと
 

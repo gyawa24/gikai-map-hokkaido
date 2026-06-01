@@ -43,7 +43,7 @@ async function fetchStructuredMinutes(
   try {
     const res = await fetch(
       `${RAW_BASE}/${structuredMinutesRemotePath(municipalitySlug, date)}`,
-      { next: { revalidate: 86400 } }
+      { cache: "no-store" }
     );
     if (!res.ok) return null;
     const data = (await res.json()) as StructuredMinutes;
@@ -62,7 +62,7 @@ async function remoteStructuredMinutesExists(
   try {
     const res = await fetch(
       `${RAW_BASE}/${structuredMinutesRemotePath(municipalitySlug, date)}`,
-      { method: "HEAD", next: { revalidate: 86400 } }
+      { method: "HEAD", cache: "no-store" }
     );
     return res.ok;
   } catch {

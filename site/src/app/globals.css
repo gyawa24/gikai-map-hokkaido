@@ -24,8 +24,8 @@ html {
 body {
   background: #f4f6f9;
   color: var(--foreground);
-  font-family: var(--font-noto-sans-jp), "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-    "Yu Gothic UI", sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic UI", system-ui, sans-serif;
   line-height: 1.75;
   font-feature-settings: "palt" 1, "kern" 1;
   letter-spacing: 0.01em;

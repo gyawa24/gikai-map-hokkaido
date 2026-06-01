@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Noto_Sans_JP } from "next/font/google";
 import CityHeaderServer from "@/components/CityHeaderServer";
 import JsonLd from "@/components/JsonLd";
 import { ToastProvider } from "@/components/Toast";
@@ -13,13 +12,6 @@ import {
 } from "@/lib/metadata";
 import { buildSiteStructuredData } from "@/lib/structuredData";
 import "./globals.css";
-
-const notoSansJP = Noto_Sans_JP({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800"],
-  display: "swap",
-  variable: "--font-noto-sans-jp",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -82,7 +74,7 @@ export default function RootLayout({
   const structuredData = buildSiteStructuredData();
 
   return (
-    <html lang="ja" className={notoSansJP.variable}>
+    <html lang="ja">
       <body className="min-h-screen overflow-x-hidden antialiased">
         <JsonLd data={structuredData} />
         <ToastProvider>

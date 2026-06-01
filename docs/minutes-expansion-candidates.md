@@ -16,6 +16,12 @@
 | 2 | OCR待ち | 2 | `shosanbetsu` / `yubetsu` | 画像系PDF。公開昇格は原文照合と誤認識評価を通すまで保留する。 |
 | 3 | 再確認待ち | 38 | 下記「再確認待ち」 | 2026-08-04以降の90日再確認で、会議録本文のWeb公開が増えていないか確認する。 |
 
+90日再確認の対象だけを出すコマンド:
+
+```bash
+node scripts/list-stale-minutes-verifications.mjs --due-by 2026-08-04 --category recheck
+```
+
 ## 未公開54件の運用分類
 
 ### 再確認待ち 38件
@@ -126,6 +132,13 @@
 | 自治体 | feature_type | データ | 状態 |
 |---|---|---|---|
 | 上ノ国町 | `general_questions` | `data/kaminokuni/publications/index.json` | 令和7年9月定例会の一般質問PDF 1件を試験登録。質問・答弁本文は含むが、本会議全体の正式会議録ではないため `official_status: "summary"` とする。 |
+| 新篠津村 | `votes` | `data/shinshinotsu/publications/index.json` | 令和8年第1回定例会の議決結果PDF 1件を試験登録。議案番号・提案月日・件名・提案者・議決月日・審議結果・備考を持つ議案単位の結果表で、議員個人別の賛否は含まないため `official_status: "official"` としつつ `minutes` とは分離する。 |
+
+##### `shinshinotsu` votes 試験メモ
+
+- 資料種別: 公式ページ「議会の動き《定例会・臨時会》」配下の議決結果PDF。
+- 粒度: 議案ごとの結果表。`承認` / `原案可決` / `予算審査特別委員会付託 原案可決` などの審議結果は確認できるが、議員個人別の賛否や討論本文は含まない。
+- 既存 `decisions` との差分: `decisions.json` は対応済み3市のページ本文とPDFリンクを会期単位で並べる軽いリンク集。`publications` は `feature_type: "votes"`、公式/要約の区分、全文会議録ではないこと、確認日、資料URLを明示できるため、未対応自治体の別feature候補を混ぜずに試験する用途に向く。
 
 OCRメモ:
 

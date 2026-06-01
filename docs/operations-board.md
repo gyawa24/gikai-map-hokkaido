@@ -1,6 +1,6 @@
 # 運営ボード
 
-最終更新: 2026-05-20
+最終更新: 2026-06-01
 
 このファイルは `今やること` の単一の真実源。
 全体状況は `docs/municipality-coverage.md` を見て、ここには `直近で着手する単位` だけを書く。
@@ -27,6 +27,7 @@
 - 毎週: `node scripts/operations-check.mjs --weekly`
 - 毎月: `node scripts/operations-check.mjs --monthly`
 - 年度更新: `node scripts/operations-check.mjs --yearly`
+- Cloudflare本番確認: `node scripts/operations-check.mjs --cloudflare`
 
 判断基準は「継続できる環境」「綺麗なデータ」「次のスケジュールが明確」の3点。
 
@@ -36,33 +37,26 @@
 
 ### Operations
 
-- 月次レビューを次回実行し、運用ログとして残す
-  - 目的: 台帳・出典・ニュース・候補整理が作業ごとに抜けない状態にする
-  - 完了条件: `node scripts/operations-check.mjs --monthly` の出力に沿って、今月追加した公開データ・直した台帳・保留理由・来月の Now 1〜3件をこのファイルに反映する
-  - 主に触る場所: `docs/operations-board.md`, `docs/operations-principles.md`, `docs/news-workflow.md`
+- Cloudflare本番移行後の安定確認を数日だけ続ける
+  - 目的: 無料運用への切替直後に、DNS・検索・大きい議事録・更新情報・Search Consoleの異常を早めに見つける
+  - 完了条件: `node scripts/operations-check.mjs --cloudflare` / `npm run cf:post-cutover-check` / `npm run cf:dns-status` が継続して通り、Search Consoleで大きな異常がないことを確認する。`npm run cf:release-status` は外部再反映前のゲートとして見る
+  - 主に触る場所: `docs/cloudflare-release-log.md`, `docs/cloudflare-migration-checklist.md`
+  - 直近確認: 2026-06-02 00:02 JST に `node scripts/operations-check.mjs --cloudflare` と `npm run cf:post-cutover-check` を再実行して通過。Search Console URL-prefix property `https://chihougikai.com/` は2026-06-01 23:40 JSTに確認済みで、サイトマップは2026/06/01読み込み成功、検出ページ1,417
+  - 自動監視: Codex heartbeat `cloudflare-dns` が1時間ごとに `operations-check --cloudflare` / `cf:post-cutover-check` / `cf:dns-status` / `cf:release-status` / `git diff --check` を確認し、公開ホスト・DNS・smoke・空白差分の異常時だけ通知する。作業中の preflight stamp stale と verified deploy URL not ready は公開監視では非ブロッキング扱い
 
-### Coverage
-
-- `shinshinotsu` の `votes` 試験データを1件だけ作る
-  - 目的: 議決結果を既存 `decisions` と別feature候補 `publications` のどちらで扱うべきか比較する
-  - 完了条件: 資料種別、議案・賛否の粒度、既存 `decisions` との差分を `docs/minutes-expansion-candidates.md` に追記する
-  - 主に触る場所: `data/shinshinotsu/`, `site/data/shinshinotsu/`, `docs/minutes-expansion-candidates.md`
+- Vercel連携停止を段階的に進める
+  - 目的: Cloudflare無料運用へ寄せつつ、短期rollback経路だけを残して不要なVercel Preview buildを止める
+  - 完了条件: `docs/vercel-decommission-plan.md` に沿って、まず `git.deploymentEnabled=false` を置き、数日安定後にVercel ProjectのGit連携を切る
+  - 主に触る場所: `vercel.json`, `site/vercel.json`, `docs/vercel-decommission-plan.md`
 
 ## Next
-
-### Operations
-
-- `sync-site-data` / `onboard-municipality` の警告を月次レビュー観点に合わせて見直す
-  - 目的: 公開用データを増やしたのに、台帳・出典・ニュースの更新が漏れる状態を減らす
-  - 完了条件: 予算書以外の公開データでも、必要な台帳更新やニュース追記の確認ポイントが分かる
-  - 主に触る場所: `scripts/sync-site-data.mjs`, `scripts/onboard-municipality.mjs`, `scripts/data-health.mjs`
 
 ### Coverage
 
 - 90日再確認枠で未公開38件を再チェックする
   - 目的: 2026-05-06時点で未公開だった自治体に、本会議会議録本文が新規公開されていないか確認する
-  - 完了条件: `minutes_verified_at` を再更新し、通常 `minutes` 化できる候補が出たら `Now` に移す
-  - 主に触る場所: `data/municipalities.json`, `site/data/municipalities.json`, `docs/municipality-coverage.md`
+  - 完了条件: 2026-08-04以降に `node scripts/list-stale-minutes-verifications.mjs --category recheck` で出る38件を再確認し、`minutes_verified_at` を再更新する。通常 `minutes` 化できる候補が出たら `Now` に移す
+  - 主に触る場所: `data/municipalities.json`, `site/data/municipalities.json`, `docs/municipality-coverage.md`, `docs/municipality-information-inventory.md`
 
 ## Later
 
@@ -89,6 +83,13 @@
 
 ## Done
 
+- `sync-site-data` / `onboard-municipality` に公開データ同期後の運用リマインドを追加。dry-runでも、公開データ一般の `site/data/news.json` 追記要否、coverage / inventory 再生成要否、`publications` のfeature扱い、議事録の segments / themes / 検索index反映要否、予算出典台帳の確認結果を具体的に確認できる
+- `list-stale-minutes-verifications` と `operations-check` の未公開議事録分類を、再確認待ち38件 / OCR待ち2件 / 別feature候補14件に揃えた。`node scripts/list-stale-minutes-verifications.mjs --due-by 2026-08-04 --category recheck` で、次回90日再確認の38件だけを事前に出せる
+- Cloudflare移行差分を `scripts/review-cloudflare-migration.mjs` で分類し、`docs/cloudflare-migration-checklist.md` に保存順を明記。2026-06-01時点では Cloudflare本体70ファイル、公開本文・運用ツール30ファイル、新篠津村publications3ファイル、雨竜町segments23ファイル、部分stage対象1ファイル、未分類0ファイル。保存時は `node scripts/review-cloudflare-migration.mjs --commit-plan` で最新のstage案を再生成し、`docs/operations-board.md` は `--mixed-guide` を見ながら部分stageする
+- `uryu` の議事録から380件の `segments` を生成し、`site/data/uryu/segments/` に同期。議題マーカーがない雨竜町の本文も横断検索に載るよう、`site/data/search_segment_fallbacks.json` でsegments検索fallback対象に追加した。`verify-municipality uryu` と coverage 再生成で、segments あり自治体が125件に更新された。議員名寄せ率は23%のため、深掘りするなら質問者・答弁者の名寄せ改善は別タスクで扱う
+- 2026-06-01月次レビューとして、`node scripts/operations-check.mjs --monthly` と `node scripts/data-health.mjs --strict` を実行。`docs/municipality-coverage.md` / `docs/municipality-information-inventory.md` を再生成し、予算書13件、保留1件、議事録未掲載54件、90日以上の再確認候補0件の状態を反映。`site/data/news.json` はCloudflare移行のお知らせを先頭に追加済み
+- Cloudflare無料運用移行として、OpenNext / Wrangler 構成、GitHub Raw画像配信、静的検索index、静的CSV、Remote MCP・like・動的OGPの本体切り離し、preview noindex、`cf:preflight` と外部反映前安全ゲートを整備。`chihougikai.com` / `www.chihougikai.com` を Cloudflare Workers / Static Assets へ切替済み。最新 production Worker Version ID は `6cb22188-6266-4910-b49c-7c3fea062467`。本番 robots / sitemap / search / GitHub Raw画像 / 大きい議事録詳細 / 旧URL転送 / 非公開API 404 を確認済み
+- 新篠津村の `votes` 試験データとして、令和8年第1回定例会の議決結果PDF 1件を `data/shinshinotsu/publications/index.json` と `site/data/shinshinotsu/publications/index.json` に追加。議案単位の審議結果表で、議員個人別の賛否は含まないため、既存 `decisions` ではなく `publications` の別feature候補として比較メモを整理
 - 上ノ国町の `general_questions` 試験データとして、令和7年9月定例会の一般質問PDF 1件を `data/kaminokuni/publications/index.json` と `site/data/kaminokuni/publications/index.json` に追加。`sync-site-data` と `verify-municipality` でも `publications` の同期を確認できるようにした
 - 別feature候補14件を `general_questions` / `meeting_summaries` / `votes` / `council_reports` / `legacy_minutes` に分類し、`publications/index.json` 候補スキーマと最初の試験対象（`kaminokuni`）を整理
 - 1か月ごとの運用レビューを固定化し、月次チェック項目・成果物・ニュース確認ルールを `docs/operations-principles.md` / `docs/news-workflow.md` / `scripts/operations-check.mjs` に反映

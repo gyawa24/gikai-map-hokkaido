@@ -2,13 +2,13 @@
 
 北海道内の全市町村議会情報（議員・議事録・議決・行事・議会だより）を横断閲覧できる**市民向け非公式情報サイト**のソースコード。
 
-公開URL: **https://chihougikai.com**
+公開URL: **https://chihougikai.com**（Cloudflare Workers / Static Assets で配信）
 
 ## 現状
 
-- **運用中**: 26 市町村 + 北海道議会で議事録データ提供中
+- **運用中**: 126 自治体で議事録データ提供中
 - **完全機能 3 市**: 千歳・恵庭・苫小牧（議員一覧・議事録・議決・行事・議会だより・選挙結果など全機能）
-- **目標**: 北海道 179 市町村全てへの拡張
+- **目標**: 北海道 179 市町村 + 北海道議会への拡張
 
 ## 主な機能
 
@@ -26,9 +26,9 @@
 | フロントエンド | Next.js 16 (App Router, Turbopack) |
 | 言語 | TypeScript / JavaScript (ES Modules) |
 | スタイル | Tailwind CSS |
-| ホスティング | Vercel |
-| データ | JSON ファイル (議事録は後日 Blob/CDN 退避予定) |
-| MCP サーバー | `@modelcontextprotocol/sdk`（stdio + HTTP） |
+| ホスティング | Cloudflare Workers / Static Assets（Vercel は当面 rollback 用に保持） |
+| データ | JSON ファイル、重い画像・古い本文は GitHub Raw 等へ退避 |
+| MCP サーバー | `@modelcontextprotocol/sdk`（stdio / 個人利用） |
 | スクレイピング | Node.js / Python（市町村ごとに個別実装） |
 
 ## ディレクトリ構成
@@ -59,6 +59,8 @@ gikai-map-hokkaido/
 | [`docs/add-municipality-workflow.md`](docs/add-municipality-workflow.md) | 1市町村追加の実務フロー（metadata, data, segments, 画面確認） |
 | [`docs/ai-operations.md`](docs/ai-operations.md) | AI前提で `今やる / 次にやる / そのうちやる` を回すための運営ガイド |
 | [`docs/operations-board.md`](docs/operations-board.md) | 直近で着手する作業のボード（Now / Next / Later） |
+| [`docs/cloudflare-deploy-runbook.md`](docs/cloudflare-deploy-runbook.md) | Cloudflare 無料運用への本番移行手順 |
+| [`docs/cloudflare-migration-checklist.md`](docs/cloudflare-migration-checklist.md) | Cloudflare 移行調査・検証チェックリスト |
 | [`docs/news-workflow.md`](docs/news-workflow.md) | トップ/`/news` の更新情報の運用ルール |
 | [`docs/municipality-coverage.md`](docs/municipality-coverage.md) | 市町村ごとの機能充足一覧と次の一手 |
 | [`docs/minutes-expansion-candidates.md`](docs/minutes-expansion-candidates.md) | 次に `minutes` 化しやすい自治体候補メモ |
@@ -108,4 +110,4 @@ GitHub: [@gyawa24](https://github.com/gyawa24)
 
 ## ステータス
 
-ベータ版（β）として運用中。フィードバックや誤りの指摘は Issue または上記メールまで。
+地方議会ドットコム（γ）として試験公開中。フィードバックや誤りの指摘は Issue または上記メールまで。

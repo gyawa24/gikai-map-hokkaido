@@ -133,12 +133,25 @@ node scripts/list-stale-minutes-verifications.mjs
 node scripts/list-stale-minutes-verifications.mjs --all
 ```
 
+再確認待ち38件だけを確認したい場合:
+
+```bash
+node scripts/list-stale-minutes-verifications.mjs --all --category recheck
+```
+
+次回90日再確認日の対象を事前に出したい場合:
+
+```bash
+node scripts/list-stale-minutes-verifications.mjs --due-by 2026-08-04 --category recheck
+```
+
 再確認間隔:
 
 - `minutes_verified_at` が無い: すぐ再確認
-- 公式サイトに会議録PDF等があるが未取込: 30日ごと
-- 通常の未公開確認済み: 90日ごと
-- 「インターネット公開は未実施」「情報開示請求」「議会図書室で閲覧」等の明記あり: 180日ごと
+- OCR待ち: 30日ごと
+- 別feature候補: 90日ごとに設計・分類を見直す
+- 再確認待ち: 90日ごと
+- 明示的に窓口閲覧等の案内があり、再確認待ち分類に入っていないもの: 180日ごと
 
 再確認後は `onboard-municipality.mjs` で `minutes_status_note` と `minutes_verified_at` を更新する。
 会議録本文の公開を確認した場合は、`minutes_status` を `available` にする前に `minutes` / `segments` まで生成する。

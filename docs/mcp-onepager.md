@@ -1,6 +1,10 @@
-# 地方議会.com Remote MCP 使い方 1枚版
+# 地方議会.com Remote MCP 使い方 1枚版（旧案）
 
-地方議会.com の議事録検索を、Claude または ChatGPT から直接使えます。
+> 現在の公開サイト本体では、無料運用優先のため `/api/mcp` は削除済み。
+> Remote MCP を配布する場合は、公開サイトとは別Worker等で再設計してからこの手順を更新する。
+> このまま配布しない。
+
+地方議会.com の議事録検索を、Claude または ChatGPT から直接使うための旧案です。
 
 ## 1. 必要なもの
 
@@ -28,7 +32,7 @@
 5. 以下を入力
 
 - Name: `地方議会.com`
-- Remote MCP server URL: `https://chihougikai.com/api/mcp`
+- Remote MCP server URL: `https://chihougikai.com/api/mcp`（現在は停止中）
 - Authentication: `Bearer token`
 - Token: 配布された API キー
 
@@ -41,7 +45,7 @@
 5. MCP server を選択
 6. 以下を入力
 
-- Server URL: `https://chihougikai.com/api/mcp`
+- Server URL: `https://chihougikai.com/api/mcp`（現在は停止中）
 - Header name: `Authorization`
 - Header value: `Bearer 配布されたAPIキー`
 

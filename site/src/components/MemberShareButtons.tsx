@@ -12,10 +12,6 @@ type Props = {
   themes?: string[];
 };
 
-/**
- * 議員詳細ページを SNS にシェアする導線。
- * シェア先では og-member の名刺ビジュアルが表示される。
- */
 export default function MemberShareButtons({
   memberName,
   cityName,
