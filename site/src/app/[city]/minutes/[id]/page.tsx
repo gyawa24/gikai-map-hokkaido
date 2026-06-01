@@ -20,6 +20,8 @@ const REPO_OWNER = process.env.GIKAI_REPO_OWNER ?? "gyawa24";
 const REPO_NAME = process.env.GIKAI_REPO_NAME ?? "gikai-map-hokkaido";
 const REPO_BRANCH = process.env.GIKAI_REPO_BRANCH ?? "main";
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${REPO_BRANCH}`;
+const REMOTE_RENDER_SPEECH_THRESHOLD = 500;
+const REMOTE_RENDER_TEXT_LENGTH_THRESHOLD = 300_000;
 
 function rawUrl(remotePath: string): string {
   return `${RAW_BASE}/${remotePath}`;
@@ -128,6 +130,30 @@ function typeCategory(typeLabel: string): string {
   return "";
 }
 
+function countSpeeches(session: MinutesSession): number {
+  return session.schedules.reduce(
+    (acc, s) =>
+      acc + s.minutes.filter((m) => m.minute_type !== "名簿").length,
+    0
+  );
+}
+
+function sessionTextLength(session: MinutesSession): number {
+  return session.schedules.reduce(
+    (scheduleTotal, schedule) =>
+      scheduleTotal +
+      schedule.minutes.reduce((minuteTotal, minute) => minuteTotal + minute.text.length, 0),
+    0
+  );
+}
+
+function shouldRenderClientLoadedSession(session: MinutesSession): boolean {
+  return (
+    countSpeeches(session) > REMOTE_RENDER_SPEECH_THRESHOLD ||
+    sessionTextLength(session) > REMOTE_RENDER_TEXT_LENGTH_THRESHOLD
+  );
+}
+
 export default async function CityMinutesDetailPage({
   params,
 }: {
@@ -201,15 +227,35 @@ export default async function CityMinutesDetailPage({
   }
 
   const session = localSession;
+  if (shouldRenderClientLoadedSession(session)) {
+    const sessionPath = `site/data/${city}/minutes/${id}.json`;
+    return (
+      <div className="page-shell max-w-6xl">
+        <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
+          <a href={`/${city}`} className="hover:text-[#1B3A6B] transition-colors">
+            {cityName}議会
+          </a>
+          <span aria-hidden="true">›</span>
+          <a
+            href={`/${city}/minutes`}
+            className="hover:text-[#1B3A6B] transition-colors"
+          >
+            議事録
+          </a>
+        </nav>
+        <RemoteMinutesDetailClient
+          cityName={cityName}
+          sessionUrl={rawUrl(sessionPath)}
+          enrichedUrl={rawUrl(`site/data/${city}/minutes/enriched/${id}.json`)}
+        />
+      </div>
+    );
+  }
+
   const enriched = await getEnriched(city, id);
   const category = typeCategory(session.type_label);
   const canReadStructuredMinutes = await hasStructuredMinutes(city, id);
-
-  const totalSpeeches = session.schedules.reduce(
-    (acc, s) =>
-      acc + s.minutes.filter((m) => m.minute_type !== "名簿").length,
-    0
-  );
+  const totalSpeeches = countSpeeches(session);
 
   return (
     <div className="page-shell max-w-6xl">
