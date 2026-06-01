@@ -3,30 +3,31 @@ import path from "path";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import type { MinutesSession, MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
+import type { MinutesSession, MinutesEnriched } from "@/types/minutes";
 import MinutesDetailClient from "@/components/MinutesDetailClient";
+import RemoteMinutesDetailClient from "@/components/RemoteMinutesDetailClient";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
 import { hasStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
 
-// Build時は recent N councils のみ static generate（generateStaticParams）。
-// それ以外の URL は ISR で初回アクセス時にレンダリングし、Vercel エッジでキャッシュ。
+// Cloudflare Workers の静的アセットキャッシュは読み取り専用。
+// 未生成の議事録ページは request-time render にして、ISR キャッシュ書き込みを避ける。
 // データソースは local（ある場合）→ GitHub Raw URL（fallback）。
-// 過去の URL を 404 にしないことで SEO を維持しつつ、build 時間を大幅短縮する。
 export const dynamicParams = true;
-export const revalidate = 86400; // 1 日
+export const dynamic = "force-dynamic";
 
-const RECENT_PRERENDER_COUNT = 5;
 const REPO_OWNER = process.env.GIKAI_REPO_OWNER ?? "gyawa24";
 const REPO_NAME = process.env.GIKAI_REPO_NAME ?? "gikai-map-hokkaido";
 const REPO_BRANCH = process.env.GIKAI_REPO_BRANCH ?? "main";
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${REPO_BRANCH}`;
 
+function rawUrl(remotePath: string): string {
+  return `${RAW_BASE}/${remotePath}`;
+}
+
 async function fetchRawJson<T>(remotePath: string): Promise<T | null> {
   try {
-    const res = await fetch(`${RAW_BASE}/${remotePath}`, {
-      next: { revalidate: 86400 },
-    });
+    const res = await fetch(rawUrl(remotePath), { cache: "no-store" });
     if (!res.ok) return null;
     return (await res.json()) as T;
   } catch {
@@ -34,8 +35,7 @@ async function fetchRawJson<T>(remotePath: string): Promise<T | null> {
   }
 }
 
-async function getSession(city: string, id: string): Promise<MinutesSession | null> {
-  // 1) Local read（build時の SSG / Function バンドルにデータがある場合）
+function getLocalSession(city: string, id: string): MinutesSession | null {
   const localCandidates = [
     path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "minutes", `${id}.json`),
     path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, `${id}.json`),
@@ -49,14 +49,21 @@ async function getSession(city: string, id: string): Promise<MinutesSession | nu
       // try next
     }
   }
-  // 2) GitHub Raw fallback（ISR時にデータが Function バンドルに無い場合）
+  return null;
+}
+
+async function getRemoteSessionPath(city: string, id: string): Promise<string | null> {
   const remoteCandidates = [
     `site/data/${city}/minutes/${id}.json`,
     `site/data/${city}/${id}.json`,
   ];
   for (const remotePath of remoteCandidates) {
-    const data = await fetchRawJson<MinutesSession>(remotePath);
-    if (data) return data;
+    try {
+      const res = await fetch(rawUrl(remotePath), { method: "HEAD", cache: "no-store" });
+      if (res.ok) return remotePath;
+    } catch {
+      // try next
+    }
   }
   return null;
 }
@@ -75,7 +82,7 @@ async function getEnriched(city: string, id: string): Promise<MinutesEnriched | 
       fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
     ) as MinutesEnriched;
   } catch {
-    // ISR fallback to GitHub Raw（enriched は欠損許容なので失敗で null）
+    // GitHub Raw fallback（enriched は欠損許容なので失敗で null）
     return await fetchRawJson<MinutesEnriched>(
       `site/data/${city}/minutes/enriched/${id}.json`
     );
@@ -90,8 +97,8 @@ export async function generateMetadata({
   const { city, id } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  const session = await getSession(city, id);
-  const enriched = await getEnriched(city, id);
+  const session = getLocalSession(city, id);
+  const enriched = session ? await getEnriched(city, id) : null;
 
   const title = session
     ? `${session.name} - ${cityName}議会`
@@ -107,38 +114,6 @@ export async function generateMetadata({
     description,
     path: `/${city}/minutes/${id}`,
   });
-}
-
-export async function generateStaticParams() {
-  const { getMunicipalities } = await import("@/lib/municipalities");
-  const { getCityCapability } = await import("@/lib/cityCapabilities");
-  const params: { city: string; id: string }[] = [];
-  for (const m of getMunicipalities()) {
-    if (!m.active) continue;
-    if (!getCityCapability(m.slug).capabilities.minutes) continue;
-    // minutes/index.json が基本形。ない場合は city 直下の index.json を見る。
-    const candidates = [
-      path.join(/*turbopackIgnore: true*/ process.cwd(), "data", m.slug, "minutes", "index.json"),
-      path.join(/*turbopackIgnore: true*/ process.cwd(), "data", m.slug, "index.json"),
-    ];
-    for (const fp of candidates) {
-      try {
-        const index = JSON.parse(
-          fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
-        ) as MinutesIndexItem[];
-        if (!Array.isArray(index)) continue;
-        // council_id 降順で最新 N 件のみ static generate（残りは ISR）
-        const recent = [...index]
-          .sort((a, b) => Number(b.council_id ?? 0) - Number(a.council_id ?? 0))
-          .slice(0, RECENT_PRERENDER_COUNT);
-        for (const item of recent) params.push({ city: m.slug, id: String(item.council_id) });
-        break;
-      } catch {
-        // try next
-      }
-    }
-  }
-  return params;
 }
 
 function typeCategory(typeLabel: string): string {
@@ -161,9 +136,6 @@ export default async function CityMinutesDetailPage({
   const { city, id } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-
-  const session = await getSession(city, id);
-  if (!session) notFound();
 
   const restricted = municipality?.minutes_access === "restricted";
   if (restricted) {
@@ -200,6 +172,35 @@ export default async function CityMinutesDetailPage({
     );
   }
 
+  const localSession = getLocalSession(city, id);
+  if (!localSession) {
+    const remoteSessionPath = await getRemoteSessionPath(city, id);
+    if (!remoteSessionPath) notFound();
+
+    return (
+      <div className="page-shell max-w-6xl">
+        <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
+          <a href={`/${city}`} className="hover:text-[#1B3A6B] transition-colors">
+            {cityName}議会
+          </a>
+          <span aria-hidden="true">›</span>
+          <a
+            href={`/${city}/minutes`}
+            className="hover:text-[#1B3A6B] transition-colors"
+          >
+            議事録
+          </a>
+        </nav>
+        <RemoteMinutesDetailClient
+          cityName={cityName}
+          sessionUrl={rawUrl(remoteSessionPath)}
+          enrichedUrl={rawUrl(`site/data/${city}/minutes/enriched/${id}.json`)}
+        />
+      </div>
+    );
+  }
+
+  const session = localSession;
   const enriched = await getEnriched(city, id);
   const category = typeCategory(session.type_label);
   const canReadStructuredMinutes = await hasStructuredMinutes(city, id);
@@ -303,7 +304,7 @@ export default async function CityMinutesDetailPage({
       )}
 
       <Suspense>
-        <MinutesDetailClient session={session} enriched={enriched} cityName={cityName} slug={city} />
+        <MinutesDetailClient session={session} enriched={enriched} cityName={cityName} />
       </Suspense>
     </div>
   );

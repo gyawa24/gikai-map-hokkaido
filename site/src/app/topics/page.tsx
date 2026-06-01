@@ -28,10 +28,10 @@ export default function TopicsPage() {
       ) : (
         <div className="bg-white rounded-lg border border-[#CBD5E0] p-6">
           <div className="flex flex-wrap gap-3">
-            {tags.map(({ tag, count }) => (
+            {tags.map(({ tag, slug, count }) => (
               <Link
                 key={tag}
-                href={`/topics/${encodeURIComponent(tag)}`}
+                href={`/topics/${slug}`}
                 className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-[#CBD5E0] bg-white px-3 py-2 text-sm font-semibold text-[#1B3A6B] transition-colors hover:border-[#1B3A6B] hover:bg-[#E8EEF7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
               >
                 <span>{tag}</span>

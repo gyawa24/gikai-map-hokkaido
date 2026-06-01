@@ -6,6 +6,7 @@ import { getNews, categoryClass } from "@/lib/news";
 import { getLatestArticles, articleCategoryClass, formatArticleDate } from "@/lib/articles";
 import { getSiteStats } from "@/lib/siteStats";
 import { getAllTags } from "@/lib/topics";
+import { slugForTag } from "@/lib/topicAliases";
 import { getCityCapabilities, getCityCapability } from "@/lib/cityCapabilities";
 import { buildPageMetadata } from "@/lib/metadata";
 import HomeMunicipalityExplorer from "@/components/HomeMunicipalityExplorer";
@@ -310,7 +311,7 @@ export default async function HomePage() {
             {topTags.map(({ tag, count }, index) => (
               <Link
                 key={tag}
-                href={`/topics/${encodeURIComponent(tag)}`}
+                href={`/topics/${slugForTag(tag)}`}
                 className={`motion-surface items-center gap-1.5 rounded-full border border-[#D8DEE8] bg-white px-3 py-2 text-sm font-bold text-[#1B3A6B] ${
                   index >= 6 ? "hidden sm:inline-flex" : "inline-flex"
                 }`}

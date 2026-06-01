@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import type { MinutesSession, MinutesEnriched, MinutesSpeaker } from "@/types/minutes";
 import MinutesReader from "./MinutesReader";
-import LikeButton from "./LikeButton";
 
 const ROLE_ORDER: Record<string, number> = {
   "議長": 0, "市長": 1, "副市長": 2, "議員": 3, "理事者": 4, "その他": 5,
@@ -14,10 +13,9 @@ type Props = {
   session: MinutesSession;
   enriched: MinutesEnriched | null;
   cityName: string;
-  slug?: string;
 };
 
-export default function MinutesDetailClient({ session, enriched, cityName, slug }: Props) {
+export default function MinutesDetailClient({ session, enriched, cityName }: Props) {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") ?? "";
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
@@ -46,16 +44,6 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
 
   return (
     <>
-      {/* この議会全体への いいね */}
-      {slug && (
-        <div className="mb-4 flex items-center gap-3">
-          <LikeButton
-            target={{ kind: "council", slug, council_id: session.council_id }}
-          />
-          <p className="text-xs text-[#718096]">この議会の議論に共感したらいいね</p>
-        </div>
-      )}
-
       {/* AI要約セクション */}
       {enriched ? (
         <section className="mb-6 space-y-4">
@@ -181,7 +169,6 @@ export default function MinutesDetailClient({ session, enriched, cityName, slug 
       <MinutesReader
         session={session}
         cityName={cityName}
-        slug={slug}
         activeTopic={activeTopic}
         query={query}
         onQueryChange={setQuery}

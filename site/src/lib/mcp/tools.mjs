@@ -1,9 +1,7 @@
-// gikai MCP のツール定義。stdio版（mcp-server/index.mjs）と
-// HTTP版（site/src/app/api/mcp/route.ts）の両方からこれを呼ぶ。
+// gikai MCP のツール定義。現在は stdio 版（mcp-server/index.mjs）から使う。
 //
 // dataDir 以下に _search-index.json / municipalities.json と
 // {slug}/minutes/{id}.json などが揃っている前提。
-// Vercel deploy では process.cwd()/data がここを指す。
 // stdio ローカル実行では <repo>/site/data がここを指す。
 //
 // includeRestricted=false（HTTP配布版）では _restricted-index.json を読まない。
@@ -364,8 +362,8 @@ export function registerTools(server, options) {
         return ok({
           error: `not_bundled: ${city}/minutes/${council_id}`,
           note:
-            "この議事録本文はMCPのFunctionバンドルに含まれていません" +
-            "（Vercel 250MB制限のため運用3市=chitose/eniwa/tomakomaiに限定）。" +
+            "この議事録本文はMCPの配布対象に含まれていません" +
+            "（本文取得は運用3市=chitose/eniwa/tomakomaiに限定）。" +
             "search_minutes の excerpt（80字前後）を引用根拠とするか、" +
             "下記URLをユーザーに案内してください。",
           url: `${PUBLIC_BASE}/${city}/minutes/${council_id}`,

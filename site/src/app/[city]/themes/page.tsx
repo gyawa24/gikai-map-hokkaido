@@ -7,6 +7,7 @@ import { Suspense } from "react";
 import type { Member, MemberActivity } from "@/types/member";
 import CityThemesClient, { type CityThemeMemberRow } from "@/components/CityThemesClient";
 import { hasCityCapability } from "@/lib/cityCapabilities";
+import { withPublicMemberPhotoUrls } from "@/lib/memberPhotos";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
 import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
@@ -22,7 +23,9 @@ export function generateStaticParams() {
 function getMembers(city: string): Member[] {
   try {
     const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "members.json");
-    return JSON.parse(fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")) as Member[];
+    return withPublicMemberPhotoUrls(
+      JSON.parse(fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")) as Member[]
+    );
   } catch {
     return [];
   }

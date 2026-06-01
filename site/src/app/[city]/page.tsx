@@ -9,6 +9,7 @@ import CityDataStatus from "@/components/CityDataStatus";
 import JsonLd from "@/components/JsonLd";
 import { getMinutesSummary } from "@/lib/cityStats";
 import { getCityCapability, hasCityCapability } from "@/lib/cityCapabilities";
+import { withPublicMemberPhotoUrls } from "@/lib/memberPhotos";
 import { getMunicipality } from "@/lib/municipalities";
 import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
 import { getActiveCityStaticParams } from "@/lib/staticCityParams";
@@ -42,7 +43,7 @@ export async function generateMetadata({
 function getMembers(city: string): Member[] {
   try {
     const fp = path.join(process.cwd(), "data", city, "members.json");
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Member[];
+    return withPublicMemberPhotoUrls(JSON.parse(fs.readFileSync(fp, "utf-8")) as Member[]);
   } catch {
     return [];
   }
@@ -285,7 +286,7 @@ export default async function CityMembersPage({
           <line x1="12" y1="15" x2="12" y2="3" />
         </svg>
         <a
-          href={`/api/export/members?city=${city}`}
+          href={`/generated/open-data/members/${city}.csv`}
           download
           className="underline hover:text-[#1B3A6B] transition-colors"
         >

@@ -43,13 +43,10 @@ export async function generateMetadata({
     ? `${session.committee} — ${dateLabel}の会議録`
     : `${cityName}議会 ${dateLabel}の会議録`;
 
-  const ogImage = `/api/og-segment?city=${city}&session=${id}&seg=1`;
-
   return buildPageMetadata({
     title,
     description,
     path: `/${city}/sessions/${id}`,
-    image: ogImage,
   });
 }
 
