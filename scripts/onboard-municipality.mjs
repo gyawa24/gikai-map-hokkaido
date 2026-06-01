@@ -5,6 +5,7 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { printBudgetSourceReminders } from "./lib/budget-source-reminders.mjs";
+import { printPublicDataReminders } from "./lib/public-data-reminders.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -55,6 +56,9 @@ Optional:
   --verify                    Run scripts/verify-municipality.mjs at the end
   --dry-run                   Print actions without writing files
   --help
+
+Notes:
+  - After syncing, the script prints reminders for public news, coverage, inventory, and source ledgers.
 
 Examples:
   node scripts/onboard-municipality.mjs \\
@@ -347,6 +351,7 @@ async function main() {
     await syncMunicipalityDirectory(options.slug, options.dryRun);
   }
 
+  await printPublicDataReminders(REPO_ROOT, [options.slug], { dryRun: options.dryRun });
   await printBudgetSourceReminders(REPO_ROOT, [options.slug], { dryRun: options.dryRun });
 
   if (options.verify) {

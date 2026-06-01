@@ -10,7 +10,7 @@
 
 ## 環境変数
 
-Vercel Production / Preview とローカルの `site/.env.local` に必要なもの:
+本番・検証環境とローカルの `site/.env.local` に必要なもの:
 
 ```bash
 NOTION_TOKEN=secret_xxx
@@ -42,4 +42,4 @@ NOTION_VERSION=2026-03-11
 - `status` が `Published` / `公開` / `公開済み` のページだけ公開する。
 - `slug` は公開URLになるため、変更するとURLも変わる。
 - 議事録や予算書を根拠にした記事は、`docs/editorial/article-source-policy.md` に従い、本文内または末尾に原典リンクを置く。
-- Notion API取得は10分単位で再検証する。即時反映したい場合は、Vercelの再デプロイまたは将来のrevalidate webhookを使う。
+- Notion API取得は10分単位で再検証する。即時反映したい場合は、再デプロイまたは将来のrevalidate webhookを使う。

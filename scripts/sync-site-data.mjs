@@ -5,6 +5,7 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { printBudgetSourceReminders } from "./lib/budget-source-reminders.mjs";
+import { printPublicDataReminders } from "./lib/public-data-reminders.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -49,6 +50,7 @@ Notes:
   - site/data/ is the public build copy.
   - This script copies known public data entries and does not delete site-only overlays.
   - segments are not copied by default because they are large local research data.
+  - After copying, the script prints reminders for public news, coverage, inventory, and source ledgers.
 `);
 }
 
@@ -213,6 +215,7 @@ async function main() {
     if (synced) syncedSlugs.push(slug);
   }
 
+  await printPublicDataReminders(REPO_ROOT, syncedSlugs, { dryRun: options.dryRun });
   await printBudgetSourceReminders(REPO_ROOT, syncedSlugs, { dryRun: options.dryRun });
 
   if (options.buildCapabilities) {

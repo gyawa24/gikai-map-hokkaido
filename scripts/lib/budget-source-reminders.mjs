@@ -79,15 +79,14 @@ export async function collectBudgetSourceReminders(repoRoot, slugs) {
 }
 
 export async function printBudgetSourceReminders(repoRoot, slugs, { dryRun = false } = {}) {
-  if (dryRun) {
-    console.log(`[dry-run] check budget source reminders for ${slugs.join(", ")}`);
+  const reminders = await collectBudgetSourceReminders(repoRoot, slugs);
+  if (dryRun && reminders.length === 0) {
+    console.log(`[dry-run] budget source reminders: none for ${slugs.join(", ")}`);
     return;
   }
-
-  const reminders = await collectBudgetSourceReminders(repoRoot, slugs);
   if (reminders.length === 0) return;
 
-  console.log("\n# budget source reminders");
+  console.log(dryRun ? "\n# budget source reminders (dry-run)" : "\n# budget source reminders");
   for (const reminder of reminders) {
     console.log(`warn - ${reminder}`);
   }
