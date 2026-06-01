@@ -181,3 +181,46 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - 更新情報: `/news` に 2026-06-01 の配信基盤更新を表示。
 - rollback可否: Vercel nameservers へ戻せる状態。
 - 備考: Cloudflare DashboardのWorker routesは設定済み。`wrangler.jsonc` への routes 追記はローカルpreflightの非本番noindex検証と衝突したため、現時点ではDashboard設定として管理する。Vercelは rollback 用にしばらく残す。
+
+## 2026-06-02 Cloudflare 検証
+
+実施者: Codex
+
+#### ローカル確認
+
+- `npm run cf:preflight`: 通過
+- preflight recorded_at: 2026-06-02 08:47:48 JST
+- source files: 14,961
+- artifact files: 2,966
+- dry-run: 通過
+- 備考: Cloudflare上のURL検証まで実施。
+
+#### Cloudflare upload
+
+- 実行コマンド: `CLOUDFLARE_RELEASE_CONFIRM=staging npm run cf:deploy-staging -- --base https://chihougikai-com-staging.yohei-218.workers.dev`、`CLOUDFLARE_RELEASE_CONFIRM=deploy npm run cf:deploy`
+- Workers URL: https://chihougikai-com.yohei-218.workers.dev
+- 検証用サブドメイン: https://chihougikai-com-staging.yohei-218.workers.dev
+- upload結果: 実施済み
+- 備考:
+
+#### 検証URL確認
+
+- 実行コマンド: npm run cf:verify-url -- --base https://chihougikai.com
+- verified URL: https://chihougikai.com
+- verified_at: 2026-06-02 08:50:12 JST
+- expected robots: indexable
+- `npm run cf:release-status`: ローカル成果物OK・Cloudflare URL検証済み
+- deploy URL gate: ready (https://chihougikai.com)
+- 備考:
+
+#### 本番DNS切替後の確認
+
+- DNS切替時刻: 2026-06-01に切替済み
+- 実行コマンド: `npm run cf:post-cutover-check`、`node scripts/operations-check.mjs --cloudflare`
+- production URL: https://chihougikai.com 200 Cloudflare、https://www.chihougikai.com 200 Cloudflare
+- robots: indexable
+- sitemap: 200
+- search: `/api/search?q=函館市議会予算特別委員会` が 200、`x-gikai-search-mode: client`
+- GitHub Raw画像: member / budget / large minutes fallback smoke 通過
+- rollback可否: Vercel側を残して確認予定
+- 備考: 函館市と留萌市の2026年議事録追加を本番反映。`/news`、`/hakodate/minutes/1367`、`/hakodate/minutes/1374`、`/rumoi/minutes/421` を公開ホストで確認済み。
