@@ -108,6 +108,14 @@ async function readJson(filePath) {
   return JSON.parse(await fs.readFile(filePath, "utf8"));
 }
 
+async function readJsonIfExists(filePath, fallback = null) {
+  try {
+    return JSON.parse(await fs.readFile(filePath, "utf8"));
+  } catch {
+    return fallback;
+  }
+}
+
 async function pathExists(targetPath) {
   try {
     await fs.access(targetPath);
@@ -200,6 +208,109 @@ async function resolveRunner(slug, municipalitiesMap, pdfConfigSlugs) {
   return null;
 }
 
+function minutesIndexPath(slug) {
+  return path.join(ROOT_DATA_DIR, slug, "minutes", "index.json");
+}
+
+function minutesEntryKey(entry) {
+  return String(entry?.council_id ?? entry?.file ?? entry?.name ?? JSON.stringify(entry));
+}
+
+function minutesContentKey(entry) {
+  return [entry?.year ?? "", entry?.name ?? "", entry?.type_label ?? ""].join("\u0000");
+}
+
+async function sameMinutesFile(slug, a, b) {
+  const aFile = a?.file;
+  const bFile = b?.file;
+  if (!aFile || !bFile || aFile === bFile) return false;
+  try {
+    const [aText, bText] = await Promise.all([
+      fs.readFile(path.join(ROOT_DATA_DIR, slug, "minutes", aFile), "utf8"),
+      fs.readFile(path.join(ROOT_DATA_DIR, slug, "minutes", bFile), "utf8"),
+    ]);
+    return aText === bText;
+  } catch {
+    return false;
+  }
+}
+
+async function removeDuplicateMinutesFile(slug, entry, dryRun) {
+  const file = entry?.file;
+  if (!file) return;
+  const filePath = path.join(ROOT_DATA_DIR, slug, "minutes", file);
+  if (dryRun) {
+    console.log(`[dry-run] remove duplicate minutes file ${path.relative(REPO_ROOT, filePath)}`);
+    return;
+  }
+  await fs.rm(filePath, { force: true });
+  console.log(`[${slug}] removed duplicate minutes file: ${file}`);
+}
+
+async function mergeMinutesIndex(slug, previousIndex, dryRun) {
+  if (!previousIndex) return;
+  const indexPath = minutesIndexPath(slug);
+  const scrapedIndex = await readJsonIfExists(indexPath, null);
+  if (!Array.isArray(scrapedIndex)) return;
+
+  const previousByKey = new Map(previousIndex.map((entry) => [minutesEntryKey(entry), entry]));
+  const previousByContent = new Map();
+  for (const entry of previousIndex) {
+    const key = minutesContentKey(entry);
+    if (!previousByContent.has(key)) previousByContent.set(key, []);
+    previousByContent.get(key).push(entry);
+  }
+
+  const merged = [];
+  const seen = new Set();
+  let duplicateCount = 0;
+
+  for (const entry of scrapedIndex) {
+    const key = minutesEntryKey(entry);
+    const previous = previousByKey.get(key);
+    if (previous) {
+      merged.push({ ...previous, ...entry });
+      seen.add(key);
+      continue;
+    }
+
+    const contentMatches = previousByContent.get(minutesContentKey(entry)) ?? [];
+    let exactDuplicate = null;
+    for (const candidate of contentMatches) {
+      if (await sameMinutesFile(slug, candidate, entry)) {
+        exactDuplicate = candidate;
+        break;
+      }
+    }
+    if (exactDuplicate) {
+      duplicateCount += 1;
+      await removeDuplicateMinutesFile(slug, entry, dryRun);
+      continue;
+    }
+
+    merged.push(entry);
+    seen.add(key);
+  }
+
+  for (const entry of previousIndex) {
+    const key = minutesEntryKey(entry);
+    if (seen.has(key)) continue;
+    merged.push(entry);
+    seen.add(key);
+  }
+
+  const text = `${JSON.stringify(merged, null, 2)}\n`;
+  if (dryRun) {
+    console.log(`[dry-run] merge ${path.relative(REPO_ROOT, indexPath)} (${scrapedIndex.length} scraped + ${previousIndex.length} previous -> ${merged.length})`);
+    return;
+  }
+  await fs.writeFile(indexPath, text, "utf8");
+  if (duplicateCount > 0) {
+    console.log(`[${slug}] skipped exact duplicate minutes entries: ${duplicateCount}`);
+  }
+  console.log(`[${slug}] merged minutes index: ${scrapedIndex.length} scraped + ${previousIndex.length} previous -> ${merged.length}`);
+}
+
 async function run(command, args, dryRun) {
   const printable = [command, ...args].join(" ");
   if (dryRun) {
@@ -279,6 +390,7 @@ async function main() {
 
   const failures = [];
   const targets = [];
+  const previousMinutesIndexes = new Map();
 
   for (const slug of slugs) {
     const runner = await resolveRunner(slug, municipalitiesMap, pdfConfigSlugs);
@@ -288,6 +400,10 @@ async function main() {
       continue;
     }
     targets.push({ slug, runner });
+    const previousIndex = await readJsonIfExists(minutesIndexPath(slug), null);
+    if (Array.isArray(previousIndex)) {
+      previousMinutesIndexes.set(slug, previousIndex);
+    }
   }
 
   const scraperResults = await runWithConcurrency(targets, concurrency, async ({ slug, runner }) => {
@@ -297,6 +413,7 @@ async function main() {
       const args = [...baseArgs, years.join(",")];
       if (options.force) args.push("--force");
       await run(command, args, options.dryRun);
+      await mergeMinutesIndex(slug, previousMinutesIndexes.get(slug), options.dryRun);
       return { slug, ok: true };
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
