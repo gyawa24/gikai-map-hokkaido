@@ -44,6 +44,11 @@
   - 直近確認: 2026-06-02 00:02 JST に `node scripts/operations-check.mjs --cloudflare` と `npm run cf:post-cutover-check` を再実行して通過。Search Console URL-prefix property `https://chihougikai.com/` は2026-06-01 23:40 JSTに確認済みで、サイトマップは2026/06/01読み込み成功、検出ページ1,417
   - 自動監視: Codex heartbeat `cloudflare-dns` が1時間ごとに `operations-check --cloudflare` / `cf:post-cutover-check` / `cf:dns-status` / `cf:release-status` / `git diff --check` を確認し、公開ホスト・DNS・smoke・空白差分の異常時だけ通知する。作業中の preflight stamp stale と verified deploy URL not ready は公開監視では非ブロッキング扱い
 
+- Vercel連携停止を段階的に進める
+  - 目的: Cloudflare無料運用へ寄せつつ、短期rollback経路だけを残して不要なVercel Preview buildを止める
+  - 完了条件: `docs/vercel-decommission-plan.md` に沿って、まず `git.deploymentEnabled=false` を置き、数日安定後にVercel ProjectのGit連携を切る
+  - 主に触る場所: `vercel.json`, `site/vercel.json`, `docs/vercel-decommission-plan.md`
+
 ## Next
 
 ### Coverage
