@@ -96,6 +96,12 @@ const smokeCases = [
     bodyIncludes: "raw.githubusercontent.com",
   },
   {
+    label: "dynamic minutes list",
+    path: "/chitose/minutes",
+    status: 200,
+    bodyIncludes: ["千歳市", "公式議事録"],
+  },
+  {
     label: "dynamic topic page",
     path: "/topics/u-e5ae9ae4be8be4bc9a",
     status: 200,

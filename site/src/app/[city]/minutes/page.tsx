@@ -12,7 +12,32 @@ import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
 import { buildBreadcrumbList } from "@/lib/structuredData";
 import { hasStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
+export const dynamic = "force-dynamic";
+
+const REPO_OWNER = process.env.GIKAI_REPO_OWNER ?? "gyawa24";
+const REPO_NAME = process.env.GIKAI_REPO_NAME ?? "gikai-map-hokkaido";
+const REPO_BRANCH = process.env.GIKAI_REPO_BRANCH ?? "main";
+const RAW_BASE = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${REPO_BRANCH}`;
+
+function rawUrl(remotePath: string): string {
+  return `${RAW_BASE}/${remotePath}`;
+}
+
+type MinutesIndexResult = {
+  items: MinutesIndexItem[];
+  source: "local" | "remote" | "empty";
+};
+
+async function fetchRawJson<T>(remotePath: string): Promise<T | null> {
+  try {
+    const res = await fetch(rawUrl(remotePath), { cache: "no-store" });
+    if (!res.ok) return null;
+    return (await res.json()) as T;
+  } catch {
+    return null;
+  }
+}
 
 export function generateStaticParams() {
   return getCapabilityCityStaticParams("minutes");
@@ -37,7 +62,7 @@ export async function generateMetadata({
   });
 }
 
-function getMinutesIndex(city: string): MinutesIndexItem[] {
+async function getMinutesIndex(city: string): Promise<MinutesIndexResult> {
   // 自治体によって data/{city}/minutes/index.json または data/{city}/index.json
   const candidates = [
     path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "minutes", "index.json"),
@@ -48,12 +73,22 @@ function getMinutesIndex(city: string): MinutesIndexItem[] {
       const data = JSON.parse(
         fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
       ) as MinutesIndexItem[];
-      if (Array.isArray(data)) return data;
+      if (Array.isArray(data)) return { items: data, source: "local" };
     } catch {
       // try next
     }
   }
-  return [];
+
+  const remoteCandidates = [
+    `site/data/${city}/minutes/index.json`,
+    `site/data/${city}/index.json`,
+  ];
+  for (const remotePath of remoteCandidates) {
+    const data = await fetchRawJson<MinutesIndexItem[]>(remotePath);
+    if (Array.isArray(data)) return { items: data, source: "remote" };
+  }
+
+  return { items: [], source: "empty" };
 }
 
 function getEnriched(city: string, councilId: number): MinutesEnriched | null {
@@ -97,13 +132,16 @@ export default async function CityMinutesPage({
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
 
-  const allItems = getMinutesIndex(city);
+  const { items: allItems, source: indexSource } = await getMinutesIndex(city);
   const items = await Promise.all(
     allItems.map(async (item) => ({
       ...item,
       enriched: getEnriched(city, item.council_id),
       category: categoryLabel(item.type_label),
-      hasStructuredMinutes: await hasStructuredMinutes(city, String(item.council_id)),
+      hasStructuredMinutes:
+        indexSource === "local"
+          ? await hasStructuredMinutes(city, String(item.council_id))
+          : false,
     }))
   );
 
