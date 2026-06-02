@@ -224,3 +224,4 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - GitHub Raw画像: member / budget / large minutes fallback smoke 通過
 - rollback可否: Vercel側を残して確認予定
 - 備考: 函館市と留萌市の2026年議事録追加を本番反映。`/news`、`/hakodate/minutes/1367`、`/hakodate/minutes/1374`、`/rumoi/minutes/421` を公開ホストで確認済み。
+- 2026-06-02 09:06 JST 追加確認: `/hakodate/minutes/1367` で一時的な Cloudflare 1102/503 を確認したため、巨大議事録詳細は本文をGitHub Rawからクライアント側で読み込む形に変更。production Worker Version ID `a1a52366-c2f7-4722-895f-82f07f671055` へ再デプロイし、`cf:post-cutover-check`、`cf:dns-status`、`operations-check --cloudflare`、`/hakodate/minutes/1367` 12回連続、`/hakodate/minutes/1374`、`/rumoi/minutes/421`、`/api/search?q=予算` を確認済み。
