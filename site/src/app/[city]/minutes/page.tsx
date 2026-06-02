@@ -50,8 +50,6 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { city } = await params;
   const municipality = getMunicipality(city);
-  if (!municipality || !hasCityCapability(city, "minutes")) notFound();
-
   const cityName = municipality?.name ?? city;
   const title = `議事録 - ${cityName}`;
   const description = `${cityName}議会の公式議事録一覧です。本会議や委員会の会議録を年度別・テーマ別に探せます。`;
@@ -133,6 +131,10 @@ export default async function CityMinutesPage({
   const cityName = municipality?.name ?? city;
 
   const { items: allItems, source: indexSource } = await getMinutesIndex(city);
+  if (!municipality || (!hasCityCapability(city, "minutes") && allItems.length === 0)) {
+    notFound();
+  }
+
   const items = await Promise.all(
     allItems.map(async (item) => ({
       ...item,

@@ -99,7 +99,12 @@ const smokeCases = [
     label: "dynamic minutes list",
     path: "/chitose/minutes",
     status: 200,
-    bodyIncludes: ["千歳市", "公式議事録"],
+    bodyIncludes: ["<title>議事録 - 千歳市", "千歳市", "公式議事録"],
+    bodyExcludes: [
+      "<title>ページが見つかりません",
+      "noindex, nofollow",
+      "NEXT_HTTP_ERROR_FALLBACK;404",
+    ],
   },
   {
     label: "dynamic topic page",
