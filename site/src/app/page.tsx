@@ -164,6 +164,13 @@ export default async function HomePage() {
         </form>
       </section>
 
+      <section className="mx-auto max-w-5xl border-l-4 border-[#F7C948] px-4 py-2 sm:px-5">
+        <p className="text-sm font-black tracking-[0.08em] text-[#1B3A6B]">地方議会ドットコムとは</p>
+        <p className="mt-1 text-base leading-relaxed text-[#4A5568]">
+          地方議会ドットコムは、北海道内の市町村議会と北海道議会の議員情報・議事録・議決結果を横断して探せる非公式の市民向け情報サイトです。
+        </p>
+      </section>
+
       <section className="mx-auto max-w-5xl">
         <div className="mb-2 sm:mb-3">
           <h2 className="text-lg font-black text-[#111827] sm:text-xl">検索以外の入口</h2>
