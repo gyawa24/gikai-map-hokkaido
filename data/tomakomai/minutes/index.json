@@ -1,11 +1,30 @@
 [
   {
+    "council_id": 293,
+    "name": "令和 ８年 第１８回定例会（２月）",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "293.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 292,
+    "name": "令和 ８年 第１７回臨時会（１月）",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "292.json",
+    "schedule_count": 1
+  },
+  {
     "council_id": 287,
     "name": "令和 ７年 第１６回定例会（１２月）",
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "287.json"
+    "file": "287.json",
+    "schedule_count": 5
   },
   {
     "council_id": 284,
@@ -13,7 +32,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "284.json"
+    "file": "284.json",
+    "schedule_count": 5
   },
   {
     "council_id": 283,
@@ -21,7 +41,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "283.json"
+    "file": "283.json",
+    "schedule_count": 5
   },
   {
     "council_id": 277,
@@ -29,7 +50,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "277.json"
+    "file": "277.json",
+    "schedule_count": 6
   },
   {
     "council_id": 282,
@@ -55,7 +77,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 一般会計予算審査特別委員会",
-    "file": "280.json"
+    "file": "280.json",
+    "schedule_count": 6
   },
   {
     "council_id": 281,
@@ -63,7 +86,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 企業会計予算審査特別委員会",
-    "file": "281.json"
+    "file": "281.json",
+    "schedule_count": 3
   },
   {
     "council_id": 285,
@@ -71,7 +95,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 一般会計決算審査特別委員会",
-    "file": "285.json"
+    "file": "285.json",
+    "schedule_count": 3
   },
   {
     "council_id": 286,
@@ -79,7 +104,8 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 企業会計決算審査特別委員会",
-    "file": "286.json"
+    "file": "286.json",
+    "schedule_count": 2
   },
   {
     "council_id": 270,
@@ -87,7 +113,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "270.json"
+    "file": "270.json",
+    "schedule_count": 2
   },
   {
     "council_id": 266,
@@ -95,7 +122,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "266.json"
+    "file": "266.json",
+    "schedule_count": 5
   },
   {
     "council_id": 262,
@@ -103,7 +131,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "262.json"
+    "file": "262.json",
+    "schedule_count": 5
   },
   {
     "council_id": 245,
@@ -111,7 +140,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "245.json"
+    "file": "245.json",
+    "schedule_count": 6
   },
   {
     "council_id": 271,
@@ -137,7 +167,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 一般会計予算審査特別委員会",
-    "file": "260.json"
+    "file": "260.json",
+    "schedule_count": 6
   },
   {
     "council_id": 261,
@@ -145,7 +176,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 企業会計予算審査特別委員会",
-    "file": "261.json"
+    "file": "261.json",
+    "schedule_count": 4
   },
   {
     "council_id": 267,
@@ -153,7 +185,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 一般会計決算審査特別委員会",
-    "file": "267.json"
+    "file": "267.json",
+    "schedule_count": 3
   },
   {
     "council_id": 268,
@@ -161,7 +194,8 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 企業会計決算審査特別委員会",
-    "file": "268.json"
+    "file": "268.json",
+    "schedule_count": 2
   },
   {
     "council_id": 239,

@@ -105,6 +105,34 @@ function runJson(command, args, options = {}) {
   return JSON.parse(result.stdout);
 }
 
+async function readSiteEnvSnapshot() {
+  let text = "";
+  try {
+    text = await fs.readFile(path.join(SITE_ROOT, ".env.local"), "utf8");
+  } catch {
+    return {
+      articleSource: "local",
+      envFile: "missing",
+      hasNotionToken: false,
+      hasNotionDataSource: false,
+    };
+  }
+
+  function hasValue(key) {
+    return new RegExp(`^${key}=.+`, "m").test(text);
+  }
+
+  const sourceMatch = text.match(/^ARTICLE_SOURCE=(.+)$/m);
+  return {
+    articleSource: sourceMatch?.[1]?.trim() || "local",
+    envFile: "site/.env.local",
+    hasNotionToken: hasValue("NOTION_TOKEN") || hasValue("NOTION_API_KEY"),
+    hasNotionDataSource:
+      hasValue("NOTION_ARTICLES_DATA_SOURCE_ID") ||
+      hasValue("NOTION_ARTICLES_DATABASE_ID"),
+  };
+}
+
 function shortUrlStatus(status) {
   if (!status?.ok) return `failed (${status?.error ?? "unknown"})`;
   const server = status.server ? ` ${status.server}` : "";
@@ -116,6 +144,17 @@ function firstDeploymentDetail(output) {
     .split("\n")
     .map((item) => item.trim())
     .find((item) => item.startsWith("Version(s):") || item.startsWith("Created:"));
+}
+
+function printArticleCmsSnapshot(snapshot) {
+  console.log("\n## Article CMS");
+  line(`source: ${snapshot.articleSource}`);
+  line(`env file: ${snapshot.envFile}`);
+  line(`notion token configured: ${snapshot.hasNotionToken ? "yes" : "no"}`);
+  line(`notion data source configured: ${snapshot.hasNotionDataSource ? "yes" : "no"}`);
+  if (snapshot.articleSource !== "local") {
+    line("note: production should normally use ARTICLE_SOURCE=local and publish synced Markdown");
+  }
 }
 
 function printSnapshot({ municipalities, capabilityCounts, budgetSources }) {
@@ -265,6 +304,7 @@ async function main() {
   const cityCapabilities = await readJson(path.join(SITE_DATA_DIR, "_city-capabilities.json"), { cities: {} });
   const budgetSources = await readJson(path.join(SITE_DATA_DIR, "budget_sources.json"), []);
   const capabilityCounts = countCapabilities(cityCapabilities.cities ?? {});
+  const articleCmsSnapshot = await readSiteEnvSnapshot();
 
   console.log(`# operations check: ${options.mode}`);
   console.log(`date: ${todayIso()}`);
@@ -275,6 +315,7 @@ async function main() {
     capabilityCounts,
     budgetSources: Array.isArray(budgetSources) ? budgetSources : [],
   });
+  printArticleCmsSnapshot(articleCmsSnapshot);
 
   if (options.mode === "weekly") printWeeklyChecklist();
   if (options.mode === "monthly") printMonthlyChecklist();

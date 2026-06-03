@@ -6,6 +6,7 @@
 """
 
 from pathlib import Path
+from datetime import date
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -25,7 +26,8 @@ TARGET_KEYWORDS = [
     "常任委員会",   # 総務・経済建設・文教民生 etc.
     "臨時会",
 ]
-TARGET_YEARS = {"2024", "2025"}  # 令和6年・令和7年
+CURRENT_YEAR = date.today().year
+TARGET_YEARS = {str(year) for year in range(CURRENT_YEAR - 5, CURRENT_YEAR + 1)}
 
 
 def main():

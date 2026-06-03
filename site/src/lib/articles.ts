@@ -3,6 +3,7 @@ import path from "node:path";
 import { getNotionArticles } from "@/lib/notionArticles";
 
 export type ArticleCategory = "企画" | "解説" | "インタビュー";
+export type ArticleSourceMode = "local" | "hybrid" | "notion";
 
 export type ArticleSection = {
   heading: string;
@@ -33,6 +34,7 @@ type ArticleFrontmatter = {
 
 const ARTICLES_DIR = path.join(/*turbopackIgnore: true*/ process.cwd(), "content", "articles");
 export const CATEGORIES: ArticleCategory[] = ["企画", "解説", "インタビュー"];
+const ARTICLE_SOURCE_MODES = new Set<ArticleSourceMode>(["local", "hybrid", "notion"]);
 
 function stripQuotes(value: string): string {
   const trimmed = value.trim();
@@ -158,9 +160,17 @@ export function getLocalArticles(): Article[] {
   }
 }
 
+export function getArticleSourceMode(): ArticleSourceMode {
+  const configured = process.env.ARTICLE_SOURCE?.trim().toLowerCase();
+  return ARTICLE_SOURCE_MODES.has(configured as ArticleSourceMode)
+    ? (configured as ArticleSourceMode)
+    : "local";
+}
+
 export async function getArticles(): Promise<Article[]> {
-  const localArticles = getLocalArticles();
-  const notionArticles = await getNotionArticles();
+  const sourceMode = getArticleSourceMode();
+  const localArticles = sourceMode === "notion" ? [] : getLocalArticles();
+  const notionArticles = sourceMode === "local" ? [] : await getNotionArticles();
   const merged = new Map<string, Article>();
 
   for (const article of localArticles) merged.set(article.slug, article);

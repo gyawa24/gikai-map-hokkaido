@@ -27,6 +27,7 @@ import json
 import re
 import sys
 import time
+from datetime import date
 from pathlib import Path
 
 import requests
@@ -46,7 +47,12 @@ TARGET_KEYWORDS = [
     "補正予算",
 ]
 
-DEFAULT_YEARS = {"2024", "2025"}
+def default_target_years() -> set[str]:
+    current_year = date.today().year
+    return {str(year) for year in range(current_year - 5, current_year + 1)}
+
+
+DEFAULT_YEARS = default_target_years()
 
 HEADERS = {
     "Content-Type": "application/json",
@@ -233,7 +239,7 @@ def main():
     parser = argparse.ArgumentParser(description="北海道議会 汎用スクレイパー")
     parser.add_argument("--slug", nargs="+", help="対象自治体スラッグ（複数可）")
     parser.add_argument("--all", action="store_true", help="municipalities.jsonの全自治体を処理")
-    parser.add_argument("--years", default="2024,2025", help="対象年度（カンマ区切り）")
+    parser.add_argument("--years", default=",".join(sorted(DEFAULT_YEARS)), help="対象年度（カンマ区切り）")
     parser.add_argument("--force", action="store_true", help="既存ファイルを上書き")
     args = parser.parse_args()
 

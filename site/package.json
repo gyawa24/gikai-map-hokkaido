@@ -39,6 +39,8 @@
     "cf:upload": "node scripts/confirm-cloudflare-release.mjs upload && opennextjs-cloudflare upload",
     "cf:dns-status": "node scripts/cloudflare-dns-status.mjs",
     "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "articles:sync-notion": "node scripts/sync-notion-articles.mjs",
+    "articles:sync-notion:dry-run": "node scripts/sync-notion-articles.mjs --dry-run",
     "lint": "eslint",
     "validate:structured-minutes": "node scripts/validate-structured-minutes.mjs"
   },

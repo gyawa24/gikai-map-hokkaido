@@ -14,7 +14,7 @@ import type { Member } from "@/types/member";
 import type { Decision } from "@/types/decision";
 
 export const metadata = buildPageMetadata({
-  title: "北海道の市町村議会・議事録検索",
+  title: "地方議会ドットコム | 北海道の市町村議会・議事録検索",
   description:
     "北海道の市町村議会と北海道議会の議員名簿、議事録、議決結果を横断して調べられます。自治体別一覧とテーマ別入口から探せます。",
   path: "/",

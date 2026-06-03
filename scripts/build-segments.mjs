@@ -129,7 +129,7 @@ function stripMemberNamePrefix(text, memberName) {
   }
   const pattern = aliases.filter(Boolean).join("|");
   if (!pattern) return text;
-  const re = new RegExp(`^[\\s　]*(?:${pattern})[\\s　、，:：]*`);
+  const re = new RegExp(`^[\\s　]*(?:${pattern})(?=$|[\\s　、，:：])[\\s　、，:：]*`);
   return text.replace(re, "").trimStart();
 }
 
