@@ -48,7 +48,7 @@ const smokeCases = [
     label: "top page",
     path: "/",
     status: 200,
-    bodyIncludes: ["地方議会ドットコム", "og-site.png", "summary_large_image"],
+    bodyIncludes: ["地方議会ドットコム", "og-site-v2.png", "summary_large_image"],
     headersInclude: {
       ...securityHeaders,
       ...previewNoindexHeaders,
@@ -179,6 +179,12 @@ const smokeCases = [
   },
   {
     label: "static OGP image",
+    path: "/og-site-v2.png",
+    status: 200,
+    contentTypeIncludes: "image/png",
+  },
+  {
+    label: "legacy static OGP image",
     path: "/og-site.png",
     status: 200,
     contentTypeIncludes: "image/png",

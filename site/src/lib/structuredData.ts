@@ -1,4 +1,4 @@
-import { absoluteUrl, SITE_NAME, SITE_URL } from "@/lib/metadata";
+import { absoluteUrl, SITE_NAME, SITE_URL, SITE_X_URL } from "@/lib/metadata";
 
 type BreadcrumbItem = {
   name: string;
@@ -27,8 +27,8 @@ export function buildSiteStructuredData() {
       url: SITE_URL,
       logo: absoluteUrl("/icon.svg"),
       sameAs: [
+        SITE_X_URL,
         "https://github.com/gyawa24/gikai-map-hokkaido",
-        "https://x.com/yoheiogawa_DPFP",
       ],
       email: "ogawayohei.hkd@gmail.com",
     },

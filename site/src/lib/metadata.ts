@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 
 export const SITE_URL = "https://chihougikai.com";
 export const SITE_NAME = "地方議会ドットコム（γ）";
+export const SITE_X_URL = "https://x.com/chihougikai";
+export const OWNER_X_URL = "https://x.com/yoheiogawa_DPFP";
 export const DEFAULT_DESCRIPTION =
   "北海道の市町村議会・北海道議会の議員名簿、議事録、議決結果を横断検索できる市民向け情報サイトです。";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-site.png`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-site-v2.png`;
 
 function fullTitle(title: string): string {
   return title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;

@@ -63,7 +63,7 @@ export function middleware(request: NextRequest) {
 
   if (pathname === SITE_OG_IMAGE_PATH) {
     const url = request.nextUrl.clone();
-    url.pathname = "/og-site.png";
+    url.pathname = "/og-site-v2.png";
     url.search = "";
     return withPreviewNoindex(request, NextResponse.redirect(url, 308));
   }

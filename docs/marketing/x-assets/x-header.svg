@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" role="img" aria-label="地方議会ドットコム Xヘッダー画像">
+  <rect width="1500" height="500" fill="#F4F6F9"/>
+  <g opacity="0.62" stroke="#CBD5E0" stroke-width="2">
+    <path d="M0 72h1500M0 168h1500M0 264h1500M0 360h1500M0 456h1500"/>
+    <path d="M104 0v500M302 0v500M500 0v500M698 0v500M896 0v500M1094 0v500M1292 0v500"/>
+  </g>
+  <rect x="70" y="72" width="1360" height="330" rx="34" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="4"/>
+  <g transform="translate(150 143)">
+    <rect width="154" height="154" rx="36" fill="#1B3A6B"/>
+    <path d="M68 50 47 34M86 50 107 34" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+    <rect x="44" y="63" width="66" height="50" rx="9" fill="none" stroke="#FFFFFF" stroke-width="9"/>
+    <circle cx="62" cy="84" r="6" fill="#FFFFFF"/>
+    <circle cx="92" cy="84" r="6" fill="#FFFFFF"/>
+    <path d="M62 99c5 5 10 7 15 7s10-2 15-7" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M59 132h36M68 113v19m18-19v19" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text x="350" y="176" fill="#2A5298" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="34" font-weight="700" letter-spacing="8">CHIHOU GIKAI DOTTOKOMU</text>
+  <text x="350" y="256" fill="#1A202C" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="64" font-weight="800">地方議会の記録を、たどりやすく。</text>
+  <text x="352" y="318" fill="#4A5568" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="34" font-weight="500">北海道内の市町村議会・北海道議会を横断検索</text>
+  <rect x="70" y="420" width="1360" height="62" fill="#1B3A6B"/>
+  <text x="112" y="461" fill="#FFFFFF" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="30" font-weight="500">https://chihougikai.com/</text>
+  <text x="1086" y="461" fill="#FFFFFF" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="30" font-weight="600">非公式・試験公開中</text>
+</svg>

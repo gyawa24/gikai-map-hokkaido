@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="地方議会ドットコム OGP画像">
+  <rect width="1200" height="630" fill="#F4F6F9"/>
+  <g opacity="0.72" stroke="#D7DEE8" stroke-width="1.5">
+    <path d="M0 68h1200M0 148h1200M0 228h1200M0 308h1200M0 388h1200M0 468h1200M0 548h1200"/>
+    <path d="M104 0v630M244 0v630M384 0v630M524 0v630M664 0v630M804 0v630M944 0v630M1084 0v630"/>
+  </g>
+
+  <rect x="58" y="54" width="1084" height="428" rx="34" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="4"/>
+
+  <g transform="translate(110 106)">
+    <rect width="154" height="154" rx="36" fill="#1B3A6B"/>
+    <path d="M68 50 47 34M86 50 107 34" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+    <rect x="44" y="63" width="66" height="50" rx="9" fill="none" stroke="#FFFFFF" stroke-width="9"/>
+    <circle cx="62" cy="84" r="6" fill="#FFFFFF"/>
+    <circle cx="92" cy="84" r="6" fill="#FFFFFF"/>
+    <path d="M62 99c5 5 10 7 15 7s10-2 15-7" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M59 132h36M68 113v19m18-19v19" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <text x="308" y="132" fill="#2A5298" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="28" font-weight="800" letter-spacing="7">CHIHOU GIKAI DOTTOKOMU</text>
+  <text x="306" y="218" fill="#111827" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="70" font-weight="900">地方議会ドットコム</text>
+  <text x="310" y="284" fill="#4A5568" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="34" font-weight="700">北海道の市町村議会・議事録検索</text>
+
+  <g font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="24" font-weight="800">
+    <rect x="110" y="350" width="164" height="54" rx="27" fill="#E8EEF7"/>
+    <text x="152" y="386" fill="#1B3A6B">議員情報</text>
+    <rect x="294" y="350" width="136" height="54" rx="27" fill="#FFF7E6" stroke="#F7C948" stroke-width="2"/>
+    <text x="326" y="386" fill="#78451F">議事録</text>
+    <rect x="450" y="350" width="164" height="54" rx="27" fill="#E8EEF7"/>
+    <text x="492" y="386" fill="#1B3A6B">議決結果</text>
+    <rect x="634" y="350" width="136" height="54" rx="27" fill="#F4F6F9" stroke="#CBD5E0" stroke-width="2"/>
+    <text x="678" y="386" fill="#4A5568">予算</text>
+  </g>
+
+  <text x="110" y="448" fill="#4A5568" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="25" font-weight="600">自治体別・テーマ別に、公式資料へ戻れる形で横断検索。</text>
+
+  <rect x="58" y="518" width="1084" height="70" fill="#1B3A6B"/>
+  <text x="98" y="563" fill="#FFFFFF" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="30" font-weight="600">https://chihougikai.com/</text>
+  <text x="862" y="563" fill="#FFFFFF" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="30" font-weight="800">非公式・試験公開中</text>
+</svg>

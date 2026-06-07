@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="地方議会ドットコム Xプロフィール画像">
+  <rect width="800" height="800" fill="#F4F6F9"/>
+  <circle cx="400" cy="400" r="360" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="14"/>
+  <rect x="210" y="210" width="380" height="380" rx="88" fill="#1B3A6B"/>
+  <path d="M352 302 298 260M448 302 502 260" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+  <rect x="292" y="332" width="216" height="162" rx="28" fill="none" stroke="#FFFFFF" stroke-width="24"/>
+  <circle cx="352" cy="402" r="18" fill="#FFFFFF"/>
+  <circle cx="448" cy="402" r="18" fill="#FFFFFF"/>
+  <path d="M352 455c15 14 30 19 48 19s33-5 48-19" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/>
+  <path d="M345 545h110M372 494v51m56-51v51" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+</svg>

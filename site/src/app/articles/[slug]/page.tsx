@@ -3,7 +3,12 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
-import { buildPageMetadata, absoluteUrl, SITE_NAME } from "@/lib/metadata";
+import {
+  DEFAULT_OG_IMAGE,
+  buildPageMetadata,
+  absoluteUrl,
+  SITE_NAME,
+} from "@/lib/metadata";
 import { buildBreadcrumbList } from "@/lib/structuredData";
 import {
   articleCategoryClass,
@@ -188,7 +193,7 @@ export default async function ArticleDetailPage({ params }: Props) {
       url: absoluteUrl("/"),
       logo: absoluteUrl("/icon.svg"),
     },
-    image: absoluteUrl("/og-site.png"),
+    image: DEFAULT_OG_IMAGE,
     mainEntityOfPage: absoluteUrl(path),
     inLanguage: "ja-JP",
   };

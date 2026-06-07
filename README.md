@@ -1,8 +1,8 @@
-# gikai-map-hokkaido
+# 地方議会ドットコム
 
 北海道内の全市町村議会情報（議員・議事録・議決・行事・議会だより）を横断閲覧できる**市民向け非公式情報サイト**のソースコード。
 
-公開URL: **https://chihougikai.com**（Cloudflare Workers / Static Assets で配信）
+公開サイト: [地方議会ドットコム](https://chihougikai.com/)（Cloudflare Workers / Static Assets で配信）
 
 ## 現状
 

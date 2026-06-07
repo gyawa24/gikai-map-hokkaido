@@ -7,7 +7,9 @@ import { getSearchIndexGeneratedAt, formatJaDate } from "@/lib/dataFreshness";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_OG_IMAGE,
+  OWNER_X_URL,
   SITE_NAME,
+  SITE_X_URL,
   SITE_URL,
 } from "@/lib/metadata";
 import { buildSiteStructuredData } from "@/lib/structuredData";
@@ -53,6 +55,8 @@ export const metadata: Metadata = {
     title: SITE_NAME,
     description: DEFAULT_DESCRIPTION,
     images: [DEFAULT_OG_IMAGE],
+    site: "@chihougikai",
+    creator: "@chihougikai",
   },
   manifest: "/site.webmanifest",
   robots: {
@@ -123,6 +127,7 @@ export default function RootLayout({
                       <Link href="/sources" className="theme-pill-soft border-white/15 bg-white/10 text-white">掲載情報と出典</Link>
                       <Link href="/privacy" className="theme-pill-soft border-white/15 bg-white/10 text-white">プライバシーポリシー</Link>
                       <Link href="/terms" className="theme-pill-soft border-white/15 bg-white/10 text-white">利用規約</Link>
+                      <a href={SITE_X_URL} target="_blank" rel="noopener noreferrer" className="theme-pill-soft border-white/15 bg-white/10 text-white">公式X</a>
                     </div>
                   </div>
 
@@ -140,7 +145,8 @@ export default function RootLayout({
                       <p className="text-xs text-[#a9bbd8]">小川陽平</p>
                       <div className="mt-2 space-y-1 text-xs">
                         <a href="mailto:ogawayohei.hkd@gmail.com" className="block text-[#dbe7ff] underline decoration-white/30">ogawayohei.hkd@gmail.com</a>
-                        <a href="https://x.com/yoheiogawa_DPFP" target="_blank" rel="noopener noreferrer" className="block text-[#dbe7ff] underline decoration-white/30">X @yoheiogawa_DPFP</a>
+                        <a href={SITE_X_URL} target="_blank" rel="noopener noreferrer" className="block text-[#dbe7ff] underline decoration-white/30">公式X @chihougikai</a>
+                        <a href={OWNER_X_URL} target="_blank" rel="noopener noreferrer" className="block text-[#dbe7ff] underline decoration-white/30">運営者X @yoheiogawa_DPFP</a>
                         <a href="https://github.com/gyawa24/gikai-map-hokkaido" target="_blank" rel="noopener noreferrer" className="block text-[#dbe7ff] underline decoration-white/30">GitHub</a>
                       </div>
                     </div>
