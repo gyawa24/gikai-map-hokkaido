@@ -3,7 +3,7 @@ import path from "path";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import type { MinutesSession, MinutesEnriched } from "@/types/minutes";
+import type { MinutesSession, MinutesEnriched, MinutesIndexItem } from "@/types/minutes";
 import MinutesDetailClient from "@/components/MinutesDetailClient";
 import RemoteMinutesDetailClient from "@/components/RemoteMinutesDetailClient";
 import { getMunicipality } from "@/lib/municipalities";
@@ -20,8 +20,14 @@ const REPO_OWNER = process.env.GIKAI_REPO_OWNER ?? "gyawa24";
 const REPO_NAME = process.env.GIKAI_REPO_NAME ?? "gikai-map-hokkaido";
 const REPO_BRANCH = process.env.GIKAI_REPO_BRANCH ?? "main";
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${REPO_BRANCH}`;
+const LOCAL_SESSION_PARSE_FILE_SIZE_THRESHOLD = 1_000_000;
 const REMOTE_RENDER_SPEECH_THRESHOLD = 500;
 const REMOTE_RENDER_TEXT_LENGTH_THRESHOLD = 300_000;
+
+type SessionCandidate = {
+  localPath: string;
+  remotePath: string;
+};
 
 function rawUrl(remotePath: string): string {
   return `${RAW_BASE}/${remotePath}`;
@@ -37,16 +43,75 @@ async function fetchRawJson<T>(remotePath: string): Promise<T | null> {
   }
 }
 
+function getSessionCandidates(city: string, id: string): SessionCandidate[] {
+  return [
+    {
+      localPath: path.join(
+        /*turbopackIgnore: true*/ process.cwd(),
+        "data",
+        city,
+        "minutes",
+        `${id}.json`
+      ),
+      remotePath: `site/data/${city}/minutes/${id}.json`,
+    },
+    {
+      localPath: path.join(
+        /*turbopackIgnore: true*/ process.cwd(),
+        "data",
+        city,
+        `${id}.json`
+      ),
+      remotePath: `site/data/${city}/${id}.json`,
+    },
+  ];
+}
+
+function getLocalSessionCandidate(city: string, id: string): SessionCandidate | null {
+  for (const candidate of getSessionCandidates(city, id)) {
+    try {
+      if (fs.existsSync(/*turbopackIgnore: true*/ candidate.localPath)) return candidate;
+    } catch {
+      // try next
+    }
+  }
+  return null;
+}
+
+function isLargeLocalSession(candidate: SessionCandidate): boolean {
+  try {
+    return (
+      fs.statSync(/*turbopackIgnore: true*/ candidate.localPath).size >
+      LOCAL_SESSION_PARSE_FILE_SIZE_THRESHOLD
+    );
+  } catch {
+    return false;
+  }
+}
+
 function getLocalSession(city: string, id: string): MinutesSession | null {
+  const candidate = getLocalSessionCandidate(city, id);
+  if (!candidate) return null;
+  try {
+    return JSON.parse(
+      fs.readFileSync(/*turbopackIgnore: true*/ candidate.localPath, "utf-8")
+    ) as MinutesSession;
+  } catch {
+    return null;
+  }
+}
+
+function getLocalIndexItem(city: string, id: string): MinutesIndexItem | null {
   const localCandidates = [
-    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "minutes", `${id}.json`),
-    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, `${id}.json`),
+    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "minutes", "index.json"),
+    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "index.json"),
   ];
   for (const fp of localCandidates) {
     try {
-      return JSON.parse(
+      const items = JSON.parse(
         fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
-      ) as MinutesSession;
+      ) as MinutesIndexItem[];
+      return items.find((item) => String(item.council_id) === id) ?? null;
     } catch {
       // try next
     }
@@ -99,16 +164,25 @@ export async function generateMetadata({
   const { city, id } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
-  const session = getLocalSession(city, id);
+  const localSessionCandidate = getLocalSessionCandidate(city, id);
+  const indexItem = getLocalIndexItem(city, id);
+  const session =
+    localSessionCandidate && isLargeLocalSession(localSessionCandidate)
+      ? null
+      : getLocalSession(city, id);
   const enriched = session ? await getEnriched(city, id) : null;
 
   const title = session
     ? `${session.name} - ${cityName}議会`
+    : indexItem
+    ? `${indexItem.name} - ${cityName}議会`
     : `議事録 - ${cityName}議会`;
   const description = enriched?.summary
     ? enriched.summary.slice(0, 100)
     : session
     ? `${session.type_label}（${session.japanese_year}）`
+    : indexItem
+    ? `${indexItem.type_label}（${indexItem.japanese_year}）`
     : `${cityName}議会の議事録`;
 
   return buildPageMetadata({
@@ -194,6 +268,31 @@ export default async function CityMinutesDetailPage({
             </a>
           </p>
         </div>
+      </div>
+    );
+  }
+
+  const localSessionCandidate = getLocalSessionCandidate(city, id);
+  if (localSessionCandidate && isLargeLocalSession(localSessionCandidate)) {
+    return (
+      <div className="page-shell max-w-6xl">
+        <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
+          <a href={`/${city}`} className="hover:text-[#1B3A6B] transition-colors">
+            {cityName}議会
+          </a>
+          <span aria-hidden="true">›</span>
+          <a
+            href={`/${city}/minutes`}
+            className="hover:text-[#1B3A6B] transition-colors"
+          >
+            議事録
+          </a>
+        </nav>
+        <RemoteMinutesDetailClient
+          cityName={cityName}
+          sessionUrl={rawUrl(localSessionCandidate.remotePath)}
+          enrichedUrl={rawUrl(`site/data/${city}/minutes/enriched/${id}.json`)}
+        />
       </div>
     );
   }
