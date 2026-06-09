@@ -26,6 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [
     toEntry("/", "daily", 1.0),
     toEntry("/search", "weekly", 0.9),
+    toEntry("/about", "monthly", 0.8),
     toEntry("/topics", "weekly", 0.8),
     toEntry("/articles", "weekly", 0.7),
     toEntry("/news", "weekly", 0.6),

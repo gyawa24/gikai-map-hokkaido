@@ -122,6 +122,7 @@ export default function RootLayout({
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2 text-xs font-bold text-[#c7d5eb]">
                       <Link href="/" className="theme-pill-soft border-white/15 bg-white/10 text-white">収録自治体一覧</Link>
+                      <Link href="/about" className="theme-pill-soft border-white/15 bg-white/10 text-white">地方議会ドットコムとは</Link>
                       <Link href="/news" className="theme-pill-soft border-white/15 bg-white/10 text-white">お知らせ</Link>
                       <Link href="/articles" className="theme-pill-soft border-white/15 bg-white/10 text-white">読みもの</Link>
                       <Link href="/sources" className="theme-pill-soft border-white/15 bg-white/10 text-white">掲載情報と出典</Link>

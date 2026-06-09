@@ -169,6 +169,9 @@ export default async function HomePage() {
         <p className="mt-1 text-base leading-relaxed text-[#4A5568]">
           地方議会ドットコムは、北海道内の市町村議会と北海道議会の議員情報・議事録・議決結果を横断して探せる非公式の市民向け情報サイトです。
         </p>
+        <Link href="/about" className="mt-2 inline-flex text-sm font-black text-[#2A5298] hover:underline">
+          くわしく見る
+        </Link>
       </section>
 
       <section className="mx-auto max-w-5xl">
