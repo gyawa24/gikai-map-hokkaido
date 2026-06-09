@@ -1,5 +1,5 @@
 const DEFAULT_BASE_URL = "http://localhost:8787";
-const PREVIEW_NOINDEX_HEADER = "noindex, nofollow";
+const PREVIEW_NOINDEX_HEADER = "noindex";
 const RETRYABLE_STATUSES = new Set([500, 502, 503, 504]);
 const REQUEST_ATTEMPTS = Number(process.env.CLOUDFLARE_SMOKE_ATTEMPTS ?? "5");
 const REQUEST_TIMEOUT_MS = Number(process.env.CLOUDFLARE_SMOKE_TIMEOUT_MS ?? "20000");
