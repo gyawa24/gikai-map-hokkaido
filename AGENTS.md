@@ -124,30 +124,31 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 └── DESIGN.md              UI 仕様書（必読）
 ```
 
-ビルド時は `site/` がルートになる（Vercel `rootDirectory: site/`）。`process.cwd()` は `site/` を返す。
+ビルド時は `site/` がルートになる（Cloudflare OpenNext 本番・Vercel rollback のどちらも `site/` をビルドルートにする）。`process.cwd()` は `site/` を返す。
 
 ---
 
 ## ビルド・デプロイの掟
 
-2026年5月時点で確立した前提。崩すと build 時間が 10min → 31min に逆戻りする。
+2026年6月時点の前提。本番は **Cloudflare Workers / Static Assets（OpenNext）**、Vercel は短期 rollback 用に保持する。崩すと build 時間・Worker/Function バンドル・本番反映手順が不安定になる。
 
 ### 静的生成
-- `next.config.ts` の `experimental.cpus = 2`、`staticGenerationMaxConcurrency = 16` を維持（Vercel build 並列化）。
-- 大量パスのルートは **ISR** にする: `dynamicParams = true` + `revalidate = 86400`。
-- `generateStaticParams` は recent N（`/[city]/minutes/[id]`）/ priority cities（`/[city]/members/[id]`）/ top tags（`/topics/[tag]`）のみ。残りは ISR で動的レンダ。
+- `next.config.ts` の `experimental.cpus = 2`、`staticGenerationMaxConcurrency = 16` を維持（低コアの標準ビルド環境での静的生成を安定させる）。
+- 大量データを持つルートは、静的生成対象を絞る。`/[city]/minutes` と `/[city]/minutes/[id]` は **force-dynamic + GitHub Raw fallback** を基本にし、古い minutes 本文をバンドルへ戻さない。
+- `generateStaticParams` は priority cities / recent sessions / themes など、静的生成する価値が高い範囲に限定する。全市町村・全議事録のフル静的生成に戻さない。
 
-### Vercel Pro 移行時の費用優先ルール
+### Vercel Pro rollback 運用時の費用優先ルール
 - 速度より安定した低コスト運用を優先する。Pro 移行直後は **Standard Build Machine を基本**とし、Turbo Build Machine は原則使わない。
 - Vercel の Spend Management で月額上限を低めに設定してから本格運用する。上限設定なしで重いデプロイを連発しない。
 - build 時間短縮は、まず「不要な Preview デプロイを減らす」「docs だけの変更はデプロイをスキップする」「静的生成対象を絞る」で対応する。高価なビルドマシンへの切り替えは最後の手段。
 - 作業中はローカルで確認し、push はまとまった区切りで行う。ブランチを細かく push すると Preview デプロイが増え、Build Minutes を消費する。
 - Pro/Enhanced/Turbo 等の料金・無料枠は変わり得るため、設定変更前に Vercel 公式 Pricing / Builds ドキュメントで現行条件を確認する。
 
-### Function バンドル
-- Vercel Function は 250MB 制限あり。`next.config.ts` の `outputFileTracingExcludes` で minutes 等のサイズの大きいデータを除外している。
-- 古い minutes は ISR で **GitHub Raw URL**（`raw.githubusercontent.com/{owner}/{repo}/{branch}/site/data/{slug}/minutes/{id}.json`）から fetch して取得する。
-- 動的 `path.join(process.cwd(), ...)` / `fs.readFileSync(fp, ...)` には **`/*turbopackIgnore: true*/`** を必ず付ける。Turbopack のファイルトレースが暴走して Function バンドルが肥大化する。
+### Worker / Function バンドル
+- Cloudflare Worker と Vercel Function にはバンドルサイズの制約がある。`next.config.ts` の `outputFileTracingExcludes` で minutes 等のサイズの大きいデータを除外している。
+- 古い minutes や structured-minutes は Worker / Function バンドルへ含めず、必要時に **GitHub Raw URL**（`raw.githubusercontent.com/{owner}/{repo}/{branch}/site/data/{slug}/minutes/{id}.json`）から取得する。
+- Cloudflare OpenNext の incremental cache は Static Assets 読み取り前提で運用する。ランタイムでキャッシュを書き込める前提の実装へ安易に戻さない。
+- 動的 `path.join(process.cwd(), ...)` / `fs.readFileSync(fp, ...)` には **`/*turbopackIgnore: true*/`** を必ず付ける。Turbopack のファイルトレースが暴走して Worker / Function バンドルが肥大化する。
 
 ### MCP ツール配置
 - 新規 MCP ツール: `site/src/lib/mcp/tools.mjs`（stdio + HTTP 共通）。
@@ -167,8 +168,8 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 | データ読み込みでエラーページに飛ばす | 空配列フォールバックが基本（議会未対応市でも画面が出るように） |
 | コメントで「何をしているか」を説明する | コードを読めばわかる。**なぜ**そうしたかだけコメントに書く |
 | 議員の氏名・発言の改変 | 公共情報の正確性が命。AI要約を付ける場合も原文リンクを必ず併記。※冗長な定型句（segment 内の重複話者プレフィックス等）の正規化は改変に含まない |
-| `dynamicParams = false` に逆戻し | build 時間が 10min → 31min に逆戻り。ISR + GitHub Raw fallback の構成は維持する |
-| 動的 `path.join` を `turbopackIgnore` 無しで書く | Function バンドル肥大化、ビルド警告 |
+| `dynamicParams = false` や全議事録フル静的生成へ逆戻し | build 時間・バンドルサイズが肥大化する。force-dynamic + GitHub Raw fallback の構成は維持する |
+| 動的 `path.join` を `turbopackIgnore` 無しで書く | Worker / Function バンドル肥大化、ビルド警告 |
 | 勝手にコミット・プッシュ | 明示的に頼まれたときだけ |
 
 ---

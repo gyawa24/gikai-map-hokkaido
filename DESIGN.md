@@ -57,7 +57,7 @@ AIエージェントがこのリポジトリを編集する際に参照するデ
 - **運営**: 株式会社オガワヤ（代表: 小川陽平 / 千歳市議会議員）
 - **技術スタック**: Next.js 16 App Router (Turbopack) + Tailwind CSS v4 + TypeScript
 - **フォント**: `next/font/google` で Noto Sans JP をビルド時配信（CSP `font-src 'self'` のまま動く）
-- **デプロイ**: Vercel（rootDirectory: `site/`、データは `site/data/{city}/` に配置）
+- **デプロイ**: Cloudflare Workers / Static Assets（OpenNext、本番）。Vercel は短期 rollback 用に保持。ビルドルートは `site/`、データは `site/data/{city}/` に配置
 - **コンセプト**: **公共性・信頼感・親しみやすさ** — 行政情報サイトとして全年齢に信頼されるデザイン。「AIっぽい汎用デザイン」を避け、北海道の公共情報サイトとしての固有性を持たせる。ただしガチガチの堅さではなく、市民が読みやすい柔らかめのコピーライティングを採用。
 
 ---
