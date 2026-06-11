@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getCityCapabilities } from "@/lib/cityCapabilities";
+import { getMunicipalities } from "@/lib/municipalities";
 
 export const metadata: Metadata = {
   title: "ページが見つかりません",
@@ -9,7 +11,41 @@ export const metadata: Metadata = {
   },
 };
 
+type QuickLink = {
+  href: string;
+  label: string;
+};
+
+function getQuickLinks(): QuickLink[] {
+  const capabilitiesBySlug = getCityCapabilities();
+  const municipalities = getMunicipalities().filter((municipality) => municipality.active);
+  const sessionLinks = municipalities
+    .filter((municipality) => capabilitiesBySlug[municipality.slug]?.capabilities.sessions)
+    .slice(0, 2)
+    .map((municipality) => ({
+      href: `/${municipality.slug}/sessions`,
+      label: `${municipality.name} 速報`,
+    }));
+  const minuteLinks = municipalities
+    .filter((municipality) => capabilitiesBySlug[municipality.slug]?.capabilities.minutes)
+    .slice(0, 3)
+    .map((municipality) => ({
+      href: `/${municipality.slug}/minutes`,
+      label: `${municipality.name} 議事録`,
+    }));
+  const capabilityLinks = [...sessionLinks, ...minuteLinks].slice(0, 5);
+
+  if (capabilityLinks.length > 0) return capabilityLinks;
+
+  return municipalities.slice(0, 5).map((municipality) => ({
+    href: `/${municipality.slug}`,
+    label: municipality.council_name,
+  }));
+}
+
 export default function NotFound() {
+  const quickLinks = getQuickLinks();
+
   return (
     <div className="max-w-2xl mx-auto">
       <div className="bg-white rounded-lg border border-[#CBD5E0] shadow-sm overflow-hidden">
@@ -91,13 +127,7 @@ export default function NotFound() {
             よく見られるページ
           </p>
           <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/chitose", label: "千歳市議会" },
-              { href: "/eniwa", label: "恵庭市議会" },
-              { href: "/tomakomai", label: "苫小牧市議会" },
-              { href: "/chitose/minutes", label: "千歳市 議事録" },
-              { href: "/eniwa/minutes", label: "恵庭市 議事録" },
-            ].map((link) => (
+            {quickLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

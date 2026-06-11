@@ -39,11 +39,6 @@ const MASTER_NAV: MasterNavItem[] = [
   { key: "decisions", label: "議決結果", pageDir: "decisions", dataFile: "decisions.json" },
 ];
 
-// Per-city label overrides for localized names
-const LABEL_OVERRIDES: Record<string, Record<string, string>> = {
-  tomakomai: { newsletter: "議会報告" },
-};
-
 function pageExists(cityKey: string, pageDir: string): boolean {
   // Check static city-specific route first
   const staticPath = pageDir
@@ -58,7 +53,6 @@ function pageExists(cityKey: string, pageDir: string): boolean {
 }
 
 function computeCityNav(cityKey: string): NavItem[] {
-  const overrides = LABEL_OVERRIDES[cityKey] ?? {};
   const baseHref = `/${cityKey}`;
 
   return MASTER_NAV.filter((item) => {
@@ -76,7 +70,7 @@ function computeCityNav(cityKey: string): NavItem[] {
     return true;
   }).map((item) => ({
     href: item.href ?? (item.key === "members" ? baseHref : `${baseHref}/${item.key}`),
-    label: overrides[item.key] ?? item.label,
+    label: item.label,
   }));
 }
 
