@@ -227,3 +227,55 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - 2026-06-02 09:06 JST 追加確認: `/hakodate/minutes/1367` で一時的な Cloudflare 1102/503 を確認したため、巨大議事録詳細は本文をGitHub Rawからクライアント側で読み込む形に変更。production Worker Version ID `a1a52366-c2f7-4722-895f-82f07f671055` へ再デプロイし、`cf:post-cutover-check`、`cf:dns-status`、`operations-check --cloudflare`、`/hakodate/minutes/1367` 12回連続、`/hakodate/minutes/1374`、`/rumoi/minutes/421`、`/api/search?q=予算` を確認済み。
 - 2026-06-02 10:12 JST 追加確認: `/chitose/minutes` が404になる不具合を確認したため、議事録一覧ページを request-time render + GitHub Raw fallback に変更。Cloudflare smoke に `/chitose/minutes` を追加し、production Worker Version ID `4dd89200-6ae8-4030-9949-90596a4b97af` へ再デプロイ。`cf:preflight`、staging検証、`cf:post-cutover-check`、`cf:dns-status`、`operations-check --cloudflare`、apex/www/workers.dev の `/chitose/minutes` 200、`/news` の修正告知表示を確認済み。
 - 2026-06-02 11:16 JST 追加確認: `/chitose/minutes` はHTTP 200でも `<title>ページが見つかりません` / `noindex` / `NEXT_HTTP_ERROR_FALLBACK;404` が混入していたため、`generateMetadata` 側の早期 `notFound()` を解除し、本文側で実データ取得後に404判定する形へ変更。Cloudflare smoke は `<title>議事録 - 千歳市` を確認し、404 title / noindex / fallback marker を除外するよう強化。staging Version ID `11934cbf-6396-4937-b70e-971e29158787`、production Worker Version ID `d27807d2-ca43-4ffc-8d72-f46fe603cf24` へ再デプロイ。`cf:preflight`、staging検証、`cf:post-cutover-check`、`cf:dns-status`、公開URL直接確認で `/chitose/minutes` が 200・indexable・fallbackなしであることを確認済み。
+
+## 2026-06-11 Cloudflare 検証
+
+実施者: Codex
+
+#### ローカル確認
+
+- `npm run lint`: 通過
+- `npm run build`: 通過（静的生成 589 pages）
+- `npm run cf:preflight`: 通過
+- preflight recorded_at: 2026-06-11 19:46:52 JST
+- source files: 14,953
+- artifact files: 2,901
+- estimated upload: 294.9 MiB / 688 files、wrangler asset entries 852
+- dry-run: 通過
+- 備考: `site/data/news.json` に「一部の町村ページのナビゲーション表示を修正しました」を追記し、`0dda2580` / `8074b15b` / `48a67dd2` / `08197382` を本番反映対象に含めた。
+
+#### Cloudflare upload
+
+- 実行コマンド: `CLOUDFLARE_RELEASE_CONFIRM=upload-and-verify npm run cf:upload-verify -- --preview-alias staging`
+- Workers URL: `https://70c69415-chihougikai-com.yohei-218.workers.dev`
+- 検証用サブドメイン: `https://staging-chihougikai-com.yohei-218.workers.dev`
+- upload結果: 実施済み
+- Version Preview URL: `https://70c69415-chihougikai-com.yohei-218.workers.dev`
+- upload Worker Version ID: `70c69415-2eb1-4eb5-bd2a-47da856fae9a`
+- 備考: 464 new/modified static assets を upload。Cloudflare smoke test 通過。
+
+#### 検証URL確認
+
+- 実行コマンド: `npm run cf:verify-url -- --base https://70c69415-chihougikai-com.yohei-218.workers.dev`
+- verified URL: `https://70c69415-chihougikai-com.yohei-218.workers.dev`
+- verified_at: 2026-06-11 19:48:23 JST
+- expected robots: noindex
+- `npm run cf:release-status`: ローカル成果物OK・Cloudflare URL検証済み
+- deploy URL gate: ready
+- 備考: 検証URLで top / privacy / news / city / member / budget / minutes / topic / search / sitemap / robots / OGP / legacy redirects / 非公開API 404 を確認。
+
+#### 本番DNS切替後の確認
+
+- DNS切替時刻: 2026-06-01に切替済み
+- 実行コマンド: `CLOUDFLARE_RELEASE_CONFIRM=deploy npm run cf:deploy`、`npm run cf:post-cutover-check`、`node scripts/operations-check.mjs --cloudflare`、`npm run cf:finalize-production`
+- production URL: `https://chihougikai.com` 200 Cloudflare、`https://www.chihougikai.com` 200 Cloudflare
+- production Worker Version ID: `aabe639e-fe33-49fa-abac-8c0904ca173b`
+- robots: indexable
+- sitemap: 200。`/decisions` / `/schedule` / `/newsletter` のトップレベルリダイレクトURLが消えていることを確認。
+- search: smoke test で `/api/search` 連続実行 200。
+- GitHub Raw画像: member / budget / large minutes fallback smoke 通過。
+- 更新情報: `/news` に「一部の町村ページのナビゲーション表示を修正しました」を表示。
+- ナビ確認: `/kushirocho`、`/tomamae`、`/rishirifuji` で各自治体名と市町村内ナビが正しく表示されることを確認。
+- 404導線: 存在しないURLは404応答。not-found の台帳駆動クイックリンクは本番HTMLに反映済み。
+- rollback可否: Vercel側を残して確認予定。
+- 備考: Cloudflare release status は production host verified、deploy URL gate ready。`site/data/news.json` 追記と release log のみ、デプロイ後に別コミットとして保存する。
