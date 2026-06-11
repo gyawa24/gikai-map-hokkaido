@@ -8,7 +8,7 @@ import type { CityNavConfig } from "./CityHeaderServer";
 type NavItem = { href: string; label: string };
 
 function detectCity(pathname: string, cityKeys: string[]): string | null {
-  return cityKeys.find((c) => pathname.startsWith(`/${c}`)) ?? null;
+  return cityKeys.find((c) => pathname === `/${c}` || pathname.startsWith(`/${c}/`)) ?? null;
 }
 
 interface CityHeaderProps {
