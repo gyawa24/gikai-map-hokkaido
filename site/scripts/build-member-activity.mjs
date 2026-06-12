@@ -51,17 +51,26 @@ function findMember(raw) {
   const exact = memberNames.findIndex((n) => n === normalized);
   if (exact !== -1) return memberNames[exact];
 
-  // 2. 姓のみ（2文字以下）の場合は姓で前方一致
+  // 2. 姓のみ（2文字以下）の場合は姓で前方一致。
+  //    同姓議員が複数いるときは誤帰属を避けて名寄せ失敗にする（中立性ポリシー: 漏れより誤帰属の方が深刻）
   if (normalized.length <= 2) {
-    const byLastName = memberNames.find((n) => n.startsWith(normalized));
-    if (byLastName) return byLastName;
+    const byLastName = memberNames.filter((n) => n.startsWith(normalized));
+    if (byLastName.length === 1) return byLastName[0];
+    if (byLastName.length > 1) {
+      console.log(`  名寄せ曖昧: "${raw}" 候補複数 [${byLastName.join(", ")}]`);
+      return null;
+    }
   }
 
-  // 3. 部分一致（名前全体が含まれる）
-  const partial = memberNames.find(
+  // 3. 部分一致（名前全体が含まれる）。候補が一意のときだけ採用する
+  const partials = memberNames.filter(
     (n) => n.includes(normalized) || normalized.includes(n)
   );
-  if (partial) return partial;
+  if (partials.length === 1) return partials[0];
+  if (partials.length > 1) {
+    console.log(`  名寄せ曖昧: "${raw}" 候補複数 [${partials.join(", ")}]`);
+    return null;
+  }
 
   // 4. 姓のみ3文字以上でも前方一致を試みる
   const byPrefix = memberNames.find((n) => n.startsWith(normalized.slice(0, 2)));

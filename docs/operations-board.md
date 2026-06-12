@@ -83,6 +83,7 @@
 
 ## Done
 
+- 議員活動データの名寄せで、同姓議員が複数いる場合の誤帰属を防止。`build-member-activity.mjs` の前方一致・部分一致を候補一意のときだけ採用する方式に変更し（曖昧時は名寄せ失敗としてログ）、千歳・室蘭の `members_activity.json` を再生成（千歳は令和3年以降の全会期に追いつき）。旭川は出力不変を確認。千歳の今期議事録に登場するが名簿に不在の質問者名（松隈・佐々木由紀・飯田・安部）と旭川「のむらパターソン和孝」の名寄せ失敗は要確認として残存
 - 中立性ポリシー草案と公開ページを整備。`docs/neutrality-policy.md` に全議員同一基準、順位付けをしない方針、役職文脈、選挙期間中の凍結、算出方法公開と訂正窓口の5原則を作者レビュー待ち草案として作成し、`/methodology` に算出方法・中立性・AI生成物・訂正対応を説明する公開ページを追加。フッター、`/about`、sitemap、`site/data/news.json` に導線を反映
 - 議員任期満了日マスタを整備。北海道選挙管理委員会「市町村の長及び議会議員の任期満了一覧（令和8年5月15日現在）」を出典に、179市町村の `council_term_end` / `council_term_end_source` / `council_term_end_verified_at` を `data/municipalities.json` に追加し、`sync-site-data --all-active --build-capabilities` で `site/data/municipalities.json` へ同期。`data-health` に3点セット・日付形式・年範囲チェックを追加し、`report-election-terms` で2027統一地方選推定対象132件を出せるようにした
 - `sync-site-data` / `onboard-municipality` に公開データ同期後の運用リマインドを追加。dry-runでも、公開データ一般の `site/data/news.json` 追記要否、coverage / inventory 再生成要否、`publications` のfeature扱い、議事録の segments / themes / 検索index反映要否、予算出典台帳の確認結果を具体的に確認できる
