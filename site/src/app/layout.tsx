@@ -126,6 +126,7 @@ export default function RootLayout({
                       <Link href="/news" className="theme-pill-soft border-white/15 bg-white/10 text-white">お知らせ</Link>
                       <Link href="/articles" className="theme-pill-soft border-white/15 bg-white/10 text-white">読みもの</Link>
                       <Link href="/sources" className="theme-pill-soft border-white/15 bg-white/10 text-white">掲載情報と出典</Link>
+                      <Link href="/methodology" className="theme-pill-soft border-white/15 bg-white/10 text-white">算出方法と中立性</Link>
                       <Link href="/privacy" className="theme-pill-soft border-white/15 bg-white/10 text-white">プライバシーポリシー</Link>
                       <Link href="/terms" className="theme-pill-soft border-white/15 bg-white/10 text-white">利用規約</Link>
                       <a href={SITE_X_URL} target="_blank" rel="noopener noreferrer" className="theme-pill-soft border-white/15 bg-white/10 text-white">公式X</a>

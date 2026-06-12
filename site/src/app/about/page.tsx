@@ -120,6 +120,9 @@ export default function AboutPage() {
           <Link href="/sources" className="theme-pill-soft border-[#F3D087] bg-white text-[#78451F]">
             掲載情報と出典を見る
           </Link>
+          <Link href="/methodology" className="theme-pill-soft border-[#F3D087] bg-white text-[#78451F]">
+            算出方法と中立性を見る
+          </Link>
           <Link href="/terms" className="theme-pill-soft border-[#F3D087] bg-white text-[#78451F]">
             利用規約を見る
           </Link>

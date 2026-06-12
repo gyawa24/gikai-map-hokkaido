@@ -25,6 +25,7 @@ agents.md 標準に準拠。`CLAUDE.md` はこのファイルへのシンボリ�
 | `README.md` | プロジェクト概要 |
 | `docs/` | MCP API キー運用、リリースチェックリスト等 |
 | `docs/operations-principles.md` | **継続運用方針**。継続できる環境・綺麗なデータ・更新スケジュールの判断基準 |
+| `docs/neutrality-policy.md` | **議員活動データ表示の中立性ポリシー**。議員の活動データを表示する機能を作るなら必読 |
 | `docs/editorial/article-source-policy.md` | **読みもの記事を書くなら必読**。読者向けURL・出典明示のルール |
 
 ---

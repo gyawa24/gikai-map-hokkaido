@@ -1,6 +1,6 @@
 # 運営ボード
 
-最終更新: 2026-06-01
+最終更新: 2026-06-12
 
 このファイルは `今やること` の単一の真実源。
 全体状況は `docs/municipality-coverage.md` を見て、ここには `直近で着手する単位` だけを書く。
@@ -83,6 +83,8 @@
 
 ## Done
 
+- 中立性ポリシー草案と公開ページを整備。`docs/neutrality-policy.md` に全議員同一基準、順位付けをしない方針、役職文脈、選挙期間中の凍結、算出方法公開と訂正窓口の5原則を作者レビュー待ち草案として作成し、`/methodology` に算出方法・中立性・AI生成物・訂正対応を説明する公開ページを追加。フッター、`/about`、sitemap、`site/data/news.json` に導線を反映
+- 議員任期満了日マスタを整備。北海道選挙管理委員会「市町村の長及び議会議員の任期満了一覧（令和8年5月15日現在）」を出典に、179市町村の `council_term_end` / `council_term_end_source` / `council_term_end_verified_at` を `data/municipalities.json` に追加し、`sync-site-data --all-active --build-capabilities` で `site/data/municipalities.json` へ同期。`data-health` に3点セット・日付形式・年範囲チェックを追加し、`report-election-terms` で2027統一地方選推定対象132件を出せるようにした
 - `sync-site-data` / `onboard-municipality` に公開データ同期後の運用リマインドを追加。dry-runでも、公開データ一般の `site/data/news.json` 追記要否、coverage / inventory 再生成要否、`publications` のfeature扱い、議事録の segments / themes / 検索index反映要否、予算出典台帳の確認結果を具体的に確認できる
 - `list-stale-minutes-verifications` と `operations-check` の未公開議事録分類を、再確認待ち38件 / OCR待ち2件 / 別feature候補14件に揃えた。`node scripts/list-stale-minutes-verifications.mjs --due-by 2026-08-04 --category recheck` で、次回90日再確認の38件だけを事前に出せる
 - Cloudflare移行差分を `scripts/review-cloudflare-migration.mjs` で分類し、`docs/cloudflare-migration-checklist.md` に保存順を明記。2026-06-01時点では Cloudflare本体70ファイル、公開本文・運用ツール30ファイル、新篠津村publications3ファイル、雨竜町segments23ファイル、部分stage対象1ファイル、未分類0ファイル。保存時は `node scripts/review-cloudflare-migration.mjs --commit-plan` で最新のstage案を再生成し、`docs/operations-board.md` は `--mixed-guide` を見ながら部分stageする
