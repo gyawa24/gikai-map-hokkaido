@@ -39,6 +39,20 @@
 `municipalities.json` は自治体の基本メタデータ、スクレイピング設定、未公開確認状況を持つ。
 `features` は持たせない。
 
+## 議会議員任期満了日
+
+`data/municipalities.json` には、市町村議会議員の任期満了日を任意フィールドとして持てる。
+対象は議会議員の任期のみで、首長の任期や統一選対象フラグは入れない。
+統一地方選の対象判定などは、事実データからレポートスクリプト側で計算する。
+
+- `council_term_end`: 議会議員の任期満了日。`YYYY-MM-DD`
+- `council_term_end_source`: 出典URL。道選管・市町村選管などの公式資料を使う
+- `council_term_end_verified_at`: 確認日。`YYYY-MM-DD`
+
+3フィールドはセットで扱う。
+不明な市町村には null や空文字を入れず、フィールド自体を置かない。
+検証は `node scripts/data-health.mjs --strict` と `node scripts/report-election-terms.mjs` で行う。
+
 ## 候補データ
 
 `publications/index.json` は、一般質問要旨・会議結果・議決結果・議会だよりなど、正式な本会議会議録本文ではない資料を扱うための候補データとする。

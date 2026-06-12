@@ -8,7 +8,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 537,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-05-01",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "asahikawa",
@@ -19,7 +22,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 529,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-05-01",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "muroran",
@@ -30,7 +36,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 436,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kushiro",
@@ -41,7 +50,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 532,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "obihiro",
@@ -52,7 +64,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 535,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kitami",
@@ -63,7 +78,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 483,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2030-04-08",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "tomakomai",
@@ -74,7 +92,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 536,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "wakkanai",
@@ -85,7 +106,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 70,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "ashibetsu",
@@ -96,7 +120,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 530,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nayoro",
@@ -107,7 +134,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 614,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nemuro",
@@ -118,7 +148,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 533,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2029-09-14",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "chitose",
@@ -129,7 +162,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 452,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2029-06-19",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "noboribetsu",
@@ -140,7 +176,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 538,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "eniwa",
@@ -151,7 +190,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 89,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "date",
@@ -162,7 +204,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 542,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kitahiroshima",
@@ -173,7 +218,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 72,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "ishikari",
@@ -184,7 +232,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 93,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-05-19",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "hokuto",
@@ -195,7 +246,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 309,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "fukushima",
@@ -205,7 +259,10 @@
     "furigana": "ふくしまちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-08-31",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "esashi",
@@ -219,7 +276,10 @@
     "system": "pdf_inhouse",
     "minutes_status": "available",
     "minutes_status_note": "江差町議会の令和6年・令和7年会議結果ページから会議録PDFを取り込みました。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-08-10",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kutchan",
@@ -230,7 +290,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 453,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kamikawa",
@@ -244,7 +307,10 @@
     "minutes_status_note": "公式サイトで確認できるのは議会日程・議会広報・YouTube配信で、会議録本文のWeb公開は確認できませんでした。",
     "minutes_verified_at": "2026-05-06",
     "tenant_id": 73,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2028-04-24",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "memuro",
@@ -255,7 +321,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 454,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "ikeda",
@@ -269,7 +338,10 @@
     "minutes_status_note": "公式サイトでは議案等一覧・議会中継は公開されていますが、会議録は議会事務局または図書館で閲覧と案内されています。",
     "minutes_verified_at": "2026-05-06",
     "tenant_id": 353,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nakagawa",
@@ -283,7 +355,10 @@
     "minutes_status_note": "公式サイトで確認できるのはなかがわ議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
     "minutes_verified_at": "2026-05-06",
     "tenant_id": 527,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "iwamizawa",
@@ -294,7 +369,10 @@
     "level": "municipality",
     "active": true,
     "system": "gijiroku_com",
-    "gijiroku_subdomain": "iwamizawa-gikai"
+    "gijiroku_subdomain": "iwamizawa-gikai",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "yubari",
@@ -304,7 +382,10 @@
     "furigana": "ゆうばりし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "bibai",
@@ -314,7 +395,10 @@
     "furigana": "びばいし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-06-13",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "akabira",
@@ -324,7 +408,10 @@
     "furigana": "あかびらし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "mikasa",
@@ -334,7 +421,10 @@
     "furigana": "みかさし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "takikawa",
@@ -344,7 +434,10 @@
     "furigana": "たきかわし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-29",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "sunagawa",
@@ -354,7 +447,10 @@
     "furigana": "すながわし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "utashinai",
@@ -364,7 +460,10 @@
     "furigana": "うたしないし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "fukagawa",
@@ -374,7 +473,10 @@
     "furigana": "ふかがわし",
     "level": "municipality",
     "active": true,
-    "system": "gijiroku_com"
+    "system": "gijiroku_com",
+    "council_term_end": "2027-06-17",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nanporo",
@@ -384,7 +486,10 @@
     "furigana": "なんぽろちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-26",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "naie",
@@ -394,7 +499,10 @@
     "furigana": "ないえちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kamisunagawa",
@@ -404,7 +512,10 @@
     "furigana": "かみすながわちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2029-02-18",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "yuni",
@@ -413,7 +524,10 @@
     "region": "空知",
     "furigana": "ゆにちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "naganuma",
@@ -425,7 +539,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会の結果・議会だより・議会中継録画などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-03-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kuriyama",
@@ -437,7 +554,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "公式サイトの定例会HTML会議録と臨時会PDF会議録を取り込みました。テーマ別データは話者抽出の追加対応待ちです。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "tsukigata",
@@ -450,7 +570,10 @@
     "minutes_status": "available",
     "minutes_status_note": "月形町議会の会議結果ページから会議録PDFを取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "urausu",
@@ -459,7 +582,10 @@
     "region": "空知",
     "furigana": "うらうすちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-26",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shintotsukawa",
@@ -472,7 +598,10 @@
     "minutes_status": "available",
     "minutes_status_note": "新十津川町議会の会議録PDFを取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "moseushi",
@@ -481,7 +610,10 @@
     "region": "空知",
     "furigana": "もせうしちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-09-22",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "chippubetsu",
@@ -494,7 +626,10 @@
     "minutes_status": "available",
     "minutes_status_note": "秩父別町議会の会議録PDFを議決結果ページから取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-03-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "uryu",
@@ -503,7 +638,10 @@
     "region": "空知",
     "furigana": "うりゅうちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-26",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "hokuryu",
@@ -512,7 +650,10 @@
     "region": "空知",
     "furigana": "ほくりゅうちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-03-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "numata",
@@ -522,7 +663,10 @@
     "furigana": "ぬまたちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "sapporo",
@@ -534,7 +678,10 @@
     "active": true,
     "system": "gijiroku_com",
     "minutes_access": "restricted",
-    "minutes_access_note": "札幌市公式サイトのコピーライトポリシーで「私的使用や引用など著作権法上認められた場合を除き、掲載コンテンツの複製・転用は事前に各担当課への相談が必要」と明記されているため、許諾確認が取れるまで本サイトでの全文閲覧は停止しています（データは保管中）。"
+    "minutes_access_note": "札幌市公式サイトのコピーライトポリシーで「私的使用や引用など著作権法上認められた場合を除き、掲載コンテンツの複製・転用は事前に各担当課への相談が必要」と明記されているため、許諾確認が取れるまで本サイトでの全文閲覧は停止しています（データは保管中）。",
+    "council_term_end": "2027-05-01",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "ebetsu",
@@ -544,7 +691,10 @@
     "furigana": "えべつし",
     "level": "municipality",
     "active": true,
-    "system": "html_inhouse"
+    "system": "html_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "tobetsu",
@@ -553,7 +703,10 @@
     "region": "石狩",
     "furigana": "とうべつちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shinshinotsu",
@@ -565,7 +718,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは議決結果と一般質問で、本会議全体の会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "otaru",
@@ -575,7 +731,10 @@
     "furigana": "おたるし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shimamaki",
@@ -587,7 +746,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会状況・議会構成・議会広報かりばなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-09-29",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "suttsu",
@@ -599,7 +761,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議員名簿・委員会構成・議会日程・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-10-19",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kuromatsunai",
@@ -611,7 +776,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議事日程・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-10-31",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "rankoshi",
@@ -624,7 +792,10 @@
     "minutes_status": "available",
     "minutes_status_note": "蘭越町議会の年別会議録ページから会議録PDFを取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-05-01",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "niseko",
@@ -634,7 +805,10 @@
     "furigana": "にせこちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "makkari",
@@ -644,7 +818,10 @@
     "furigana": "まっかりむら",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "rusutsu",
@@ -656,7 +833,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の記事、活動状況、議事日程・議決結果で、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kimobetsu",
@@ -668,7 +848,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kyogoku",
@@ -680,7 +863,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより・議員紹介・議会概要などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kyowa",
@@ -692,7 +878,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-11-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "iwanai",
@@ -704,7 +893,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議事日程・議会だより・一般質問順序表などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-29",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "tomari",
@@ -716,7 +908,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kamoenai",
@@ -728,7 +923,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議員名簿と議会開催のお知らせなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shakotan",
@@ -740,7 +938,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の結果PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-09-29",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "furubira",
@@ -750,7 +951,10 @@
     "furigana": "ふるびらちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "niki",
@@ -760,7 +964,10 @@
     "furigana": "にきちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-08-09",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "yoichi",
@@ -770,7 +977,10 @@
     "furigana": "よいちちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-08-18",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "akaigawa",
@@ -779,7 +989,10 @@
     "region": "後志",
     "furigana": "あかいがわむら",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-05-21",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "toyoura",
@@ -791,7 +1004,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "通年会期制の定例会月会議PDFを取り込みました。テーマ別データは話者名寄せの追加対応待ちです。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2028-11-14",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "sobetsu",
@@ -800,7 +1016,10 @@
     "region": "胆振",
     "furigana": "そうべつちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shiraoi",
@@ -810,7 +1029,10 @@
     "furigana": "しらおいちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-11-08",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "atsuma",
@@ -821,7 +1043,10 @@
     "level": "municipality",
     "active": true,
     "tenant_id": 167,
-    "system": "dnp"
+    "system": "dnp",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "toyako",
@@ -834,7 +1059,10 @@
     "minutes_status": "available",
     "minutes_status_note": "通年会期制の月会議PDFを取り込みました。テーマ別データは話者名寄せの追加対応待ちです。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "abira",
@@ -844,7 +1072,10 @@
     "furigana": "あびらちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2030-04-22",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "mukawa",
@@ -854,7 +1085,10 @@
     "furigana": "むかわちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2030-04-22",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "hidaka",
@@ -865,7 +1099,10 @@
     "level": "municipality",
     "active": true,
     "system": "dnp",
-    "tenant_id": 71
+    "tenant_id": 71,
+    "council_term_end": "2030-04-08",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "biratori",
@@ -874,7 +1111,10 @@
     "region": "日高",
     "furigana": "びらとりちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "niikappu",
@@ -883,7 +1123,10 @@
     "region": "日高",
     "furigana": "にいかっぷちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "urakawa",
@@ -896,7 +1139,10 @@
     "minutes_status": "available",
     "minutes_status_note": "浦河町議会の年別本会議一覧から、定例会・臨時会の会議録PDFを取り込みました。令和8年第2回定例会は作成中のため未取得です。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "samani",
@@ -908,7 +1154,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "erimo",
@@ -920,7 +1169,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより・議会構成などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shinhidaka",
@@ -932,7 +1184,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "令和6年はHTML会議録、令和7年は日別PDF会議録として取り込みました。テーマ別データは話者名寄せの追加対応待ちです。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2030-04-22",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "matsumae",
@@ -941,7 +1196,10 @@
     "region": "渡島",
     "furigana": "まつまえちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-06-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shiriuchi",
@@ -951,7 +1209,10 @@
     "furigana": "しりうちちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2028-04-08",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kikonai",
@@ -961,7 +1222,10 @@
     "furigana": "きこないちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nanae",
@@ -970,7 +1234,10 @@
     "region": "渡島",
     "furigana": "ななえちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shikabe",
@@ -982,7 +1249,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトのYouTube配信ページに、公式記録である会議録は議会事務局で閲覧できると案内されており、Web本文公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-02-19",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "mori",
@@ -995,7 +1265,10 @@
     "minutes_status": "available",
     "minutes_status_note": "森町議会の通年会期制の月会議PDFを取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-25",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "yakumo",
@@ -1007,7 +1280,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "令和6年公開分の本会議会議録を追加済み。令和7年は結果ページのみで会議録本文は未公開です。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-10-22",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "oshamambe",
@@ -1016,7 +1292,10 @@
     "region": "渡島",
     "furigana": "おしゃまんべちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kaminokuni",
@@ -1028,7 +1307,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは一般質問の質問・答弁要旨で、本会議全体の会議録本文としては扱えないため取込対象外です。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "assabu",
@@ -1041,7 +1323,10 @@
     "minutes_status": "available",
     "minutes_status_note": "厚沢部町議会の年別議事録ページから、本会議の議事録本文PDFを取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "otobe",
@@ -1053,7 +1338,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイト検索では議会だより・議員名簿などが中心で、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "okushiri",
@@ -1065,7 +1353,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのはおくしり議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "imakane",
@@ -1077,7 +1368,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "今金町議会の会議録閲覧ページから、令和6年・令和7年・令和8年2月の定例会・臨時会PDFを取り込みました。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "setana",
@@ -1087,7 +1381,10 @@
     "furigana": "せたなちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shibetsu",
@@ -1097,7 +1394,10 @@
     "furigana": "しべつし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2030-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "furano",
@@ -1107,7 +1407,10 @@
     "furigana": "ふらのし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "takasu",
@@ -1119,7 +1422,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより孔雀草・議会開催のお知らせ・議決結果などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-05-01",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "higashikagura",
@@ -1131,7 +1437,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "toma",
@@ -1143,7 +1452,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは町議会定例会の一般質問と答弁で、本会議全体の会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "pippu",
@@ -1155,7 +1467,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会開会のお知らせ・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "aibetsu",
@@ -1167,7 +1482,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは本会議日程・議会だより・一般質問動画で、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "higashikawa",
@@ -1176,7 +1494,10 @@
     "region": "上川",
     "furigana": "ひがしかわちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-03-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "biei",
@@ -1186,7 +1507,10 @@
     "furigana": "びえいちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kamifurano",
@@ -1195,7 +1519,10 @@
     "region": "上川",
     "furigana": "かみふらのちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-08-24",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nakafurano",
@@ -1207,7 +1534,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより・議会白書などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-05-08",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "minamifurano",
@@ -1219,7 +1549,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで公開されているPDFは会議結果と一般質問で、本会議全体の会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shimukappu",
@@ -1228,7 +1561,10 @@
     "region": "上川",
     "furigana": "しむかっぷむら",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "wassamu",
@@ -1240,7 +1576,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトに、本会議の議事録は町立図書館で公開し、インターネット公開は未実施と明記されています。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kenbuchi",
@@ -1252,7 +1591,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイト内検索と議会ページを再確認しましたが、公開されているのは議会だより・YouTube配信・議会情報中心で、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-12-14",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shimokawa",
@@ -1262,7 +1604,10 @@
     "furigana": "しもかわちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "bifuka",
@@ -1271,7 +1616,10 @@
     "region": "上川",
     "furigana": "びふかちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "otoineppu",
@@ -1283,7 +1631,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのはおといねっぷ議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "horokanai",
@@ -1296,7 +1647,10 @@
     "minutes_status": "available",
     "minutes_status_note": "幌加内町議会の年別会議録・審議結果ページから、本会議の定例会・臨時会PDFを取り込みました。令和6年ページはPDF掲載がないため対象外です。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "rumoi",
@@ -1306,7 +1660,10 @@
     "furigana": "るもいし",
     "level": "municipality",
     "active": true,
-    "system": "gijiroku_com"
+    "system": "gijiroku_com",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "mashike",
@@ -1318,7 +1675,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会構成・傍聴案内・議会広報・開催案内などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "obira",
@@ -1330,7 +1690,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは会議予定・議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "tomamae",
@@ -1342,7 +1705,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイト検索では議会だよりなどが中心で、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "haboro",
@@ -1351,7 +1717,10 @@
     "region": "留萌",
     "furigana": "はぼろちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shosanbetsu",
@@ -1363,7 +1732,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "会議録PDFは公開されていますが、令和6年・令和7年PDFも現行のPDFテキスト抽出では本文0文字の画像系PDFのためOCR処理が必要です。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "embetsu",
@@ -1375,7 +1747,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "遠別町議会会議録ページから、令和6年・令和7年・令和8年1月の定例会・臨時会PDFを取り込みました。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "teshio",
@@ -1387,7 +1762,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは議会だより・視察研修報告書などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "sarufutsu",
@@ -1399,7 +1777,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで公開されている村議会議事録PDFは一般質問全員分・質問者別PDFで、本会議全体の会議録本文としては扱えないため取込対象外です。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "hamatombetsu",
@@ -1411,7 +1792,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議決結果・議事概要などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nakatombetsu",
@@ -1423,7 +1807,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "公式サイトの年別会議録ページから、令和6年・令和7年の定例会PDFを取り込みました。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "esashi_souya",
@@ -1432,7 +1819,10 @@
     "region": "宗谷",
     "furigana": "えさしちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2030-04-15",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "toyotomi",
@@ -1444,7 +1834,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "豊富町議会の議事録ページから、令和6年の定例議会・臨時議会PDFを取り込みました。令和7年分は議事概要PDFのため取込対象外です。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "rebun",
@@ -1456,7 +1849,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の審議結果で、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-08-05",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "rishiri",
@@ -1468,7 +1864,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会概要・議会だより等で、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2026-10-07",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "rishirifuji",
@@ -1480,7 +1879,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会だより利尻富士・議会概要などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-11-05",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "horonobe",
@@ -1490,7 +1892,10 @@
     "furigana": "ほろのべちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "abashiri",
@@ -1500,7 +1905,10 @@
     "furigana": "あばしりし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "monbetsu",
@@ -1510,7 +1918,10 @@
     "furigana": "もんべつし",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2026-08-07",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "bihoro",
@@ -1519,7 +1930,10 @@
     "region": "オホーツク",
     "furigana": "びほろちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "tsubetsu",
@@ -1529,7 +1943,10 @@
     "furigana": "つべつちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2029-02-28",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shari",
@@ -1541,7 +1958,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議事日程・一般質問通告などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kiyosato",
@@ -1551,7 +1971,10 @@
     "furigana": "きよさとちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "koshimizu",
@@ -1560,7 +1983,10 @@
     "region": "オホーツク",
     "furigana": "こしみずちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kunneppu",
@@ -1570,7 +1996,10 @@
     "furigana": "くんねっぷちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "oketo",
@@ -1580,7 +2009,10 @@
     "furigana": "おけとちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "saroma",
@@ -1592,7 +2024,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトの会議録ページは令和2年までの掲載で、令和3年以降の本会議会議録本文はWeb公開が確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-09-29",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "engaru",
@@ -1605,7 +2040,10 @@
     "minutes_status": "available",
     "minutes_status_note": "遠軽町議会の会議録ページから、令和6年・令和7年・令和8年2月の定例会・臨時会PDFを取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2029-10-22",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "yubetsu",
@@ -1617,7 +2055,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトに会議録PDFはありますが、現行のPDFテキスト抽出では本文が取得できない画像系PDFのためOCR処理が必要です。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2029-11-14",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "takinoue",
@@ -1629,7 +2070,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは会議結果・議会広報・瓦版などの要約資料で、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "okoppe",
@@ -1641,7 +2085,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会の日程、一般質問事項、議会だよりなどで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nishiokoppe",
@@ -1653,7 +2100,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会のあらまし・議員名簿などで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "omu",
@@ -1665,7 +2115,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "議会議事録検索ページは確認できましたが、公開対象は一般質問単位の議事録が中心で、本会議全体の会議録本文としては扱えないため取込対象外です。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "oozora",
@@ -1677,7 +2130,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "大空町議会の本会議会議録ページから、令和6年の定例会・臨時会PDFを取り込みました。令和7年以降の会議録PDFは公式ページで未確認です。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2030-04-22",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "otofuke",
@@ -1689,7 +2145,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "音更町議会会議録検索の会議録ライブラリから、令和6年・令和7年・令和8年1月の定例会・臨時会本文HTMLを取り込みました。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shihoro",
@@ -1702,7 +2161,10 @@
     "minutes_status": "available",
     "minutes_status_note": "士幌町議会の年別会議録・議案等ページから、テキスト抽出できる会議録PDFを取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kamishihoro",
@@ -1715,7 +2177,10 @@
     "minutes_status": "available",
     "minutes_status_note": "上士幌町議会の会議録ページから本会議会議録PDFを取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shikaoi",
@@ -1725,7 +2190,10 @@
     "furigana": "しかおいちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shintoku",
@@ -1734,7 +2202,10 @@
     "region": "十勝",
     "furigana": "しんとくちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shimizu",
@@ -1744,7 +2215,10 @@
     "furigana": "しみずちょう",
     "level": "municipality",
     "active": true,
-    "system": "html_inhouse"
+    "system": "html_inhouse",
+    "council_term_end": "2027-01-26",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nakasatsunai",
@@ -1754,7 +2228,10 @@
     "furigana": "なかさつないむら",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "sarabetsu",
@@ -1763,7 +2240,10 @@
     "region": "十勝",
     "furigana": "さらべつむら",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "taiki",
@@ -1773,7 +2253,10 @@
     "furigana": "たいきちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "hiroo",
@@ -1783,7 +2266,10 @@
     "furigana": "ひろおちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2028-04-29",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "makubetsu",
@@ -1795,7 +2281,10 @@
     "active": true,
     "system": "pdf_inhouse",
     "minutes_access": "restricted",
-    "minutes_access_note": "幕別町公式サイトの著作権ポリシーで「私的複製や法的に認められた引用を除き無断複製・転用は不可、利用希望者は担当課に要連絡」と明記されているため、許諾確認が取れるまで本サイトでの全文閲覧は停止しています（データは保管中）。"
+    "minutes_access_note": "幕別町公式サイトの著作権ポリシーで「私的複製や法的に認められた引用を除き無断複製・転用は不可、利用希望者は担当課に要連絡」と明記されているため、許諾確認が取れるまで本サイトでの全文閲覧は停止しています（データは保管中）。",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "toyokoro",
@@ -1804,7 +2293,10 @@
     "region": "十勝",
     "furigana": "とよころちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "honbetsu",
@@ -1814,7 +2306,10 @@
     "furigana": "ほんべつちょう",
     "level": "municipality",
     "active": true,
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2026-08-09",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "ashoro",
@@ -1826,7 +2321,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "足寄町議会会議録ページの年別表から、令和6年・令和7年・令和8年1月の定例会・臨時会PDFを取り込みました。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "rikubetsu",
@@ -1835,7 +2333,10 @@
     "region": "十勝",
     "furigana": "りくべつちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "urahoro",
@@ -1848,7 +2349,10 @@
     "minutes_status": "available",
     "minutes_status_note": "浦幌町議会の年別会議録ページから、定例会・臨時会の日別会議録PDFを取り込みました。",
     "minutes_verified_at": "2026-05-06",
-    "system": "pdf_inhouse"
+    "system": "pdf_inhouse",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "kushirocho",
@@ -1860,7 +2364,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "釧路町議会の年別一覧から会議録詳細ページを辿り、本会議の定例会・臨時会PDFを取り込みました。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-10-31",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "akkeshi",
@@ -1869,7 +2376,10 @@
     "region": "釧路",
     "furigana": "あっけしちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "hamanaka",
@@ -1878,7 +2388,10 @@
     "region": "釧路",
     "furigana": "はまなかちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shibecha",
@@ -1887,7 +2400,10 @@
     "region": "釧路",
     "furigana": "しべちゃちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "teshikaga",
@@ -1899,7 +2415,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会動画と会議結果PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2028-11-11",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "tsurui",
@@ -1911,7 +2430,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは議会の活動状況と審議結果PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shiranuka",
@@ -1923,7 +2445,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるPDFは議事日程表・会議結果で、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "betsukai",
@@ -1932,7 +2457,10 @@
     "region": "根室",
     "furigana": "べつかいちょう",
     "level": "municipality",
-    "active": true
+    "active": true,
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "nakashibetsu",
@@ -1944,7 +2472,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで公開されているのは一般質問・委員会代表質問のホームページ掲載用PDFで、正式な本会議会議録本文とは異なると明記されているため取込対象外です。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2028-09-02",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "shibetsucho",
@@ -1956,7 +2487,10 @@
     "active": true,
     "minutes_status": "unavailable",
     "minutes_status_note": "公式サイトで確認できるのは定例会・臨時会日程と審議事項PDFで、本会議会議録本文のWeb公開は確認できませんでした。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "rausu",
@@ -1968,7 +2502,10 @@
     "active": true,
     "minutes_status": "available",
     "minutes_status_note": "羅臼町議会会議録ページから、令和6年・令和7年の定例会・臨時会PDFを取り込みました。",
-    "minutes_verified_at": "2026-05-06"
+    "minutes_verified_at": "2026-05-06",
+    "council_term_end": "2027-04-30",
+    "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
+    "council_term_end_verified_at": "2026-06-12"
   },
   {
     "slug": "hokkaido",

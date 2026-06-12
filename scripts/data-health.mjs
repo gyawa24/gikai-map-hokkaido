@@ -81,6 +81,7 @@ Options:
 Checks:
   - data/municipalities.json and site/data/municipalities.json are synced
   - retired municipalities.features has not returned
+  - council term metadata is complete and date-shaped
   - site/data/_city-capabilities.json matches site/data files
   - budget_sources.json does not mark missing public OCR data as imported
   - known public data in data/{slug}/ is copied to site/data/{slug}/
@@ -154,6 +155,64 @@ function hasRetiredFeatures(rows) {
   return rows.filter((row) => Object.prototype.hasOwnProperty.call(row, "features")).map((row) => row.slug);
 }
 
+function hasOwn(row, key) {
+  return Object.prototype.hasOwnProperty.call(row, key);
+}
+
+function hasNonEmptyString(row, key) {
+  return typeof row[key] === "string" && row[key].trim().length > 0;
+}
+
+function validateDateString(value) {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    return { ok: false, reason: "invalid format" };
+  }
+
+  const [yearText, monthText, dayText] = value.split("-");
+  const year = Number(yearText);
+  const month = Number(monthText);
+  const day = Number(dayText);
+  const date = new Date(Date.UTC(year, month - 1, day));
+  if (
+    date.getUTCFullYear() !== year ||
+    date.getUTCMonth() !== month - 1 ||
+    date.getUTCDate() !== day
+  ) {
+    return { ok: false, reason: "invalid date" };
+  }
+  if (year < 2020 || year > 2040) {
+    return { ok: false, reason: "out of expected range" };
+  }
+  return { ok: true };
+}
+
+function validateCouncilTermMetadata(report, rows, label) {
+  for (const row of rows) {
+    const slug = typeof row.slug === "string" ? row.slug : "unknown";
+    const hasTermEnd = hasOwn(row, "council_term_end");
+    const hasSource = hasOwn(row, "council_term_end_source");
+    const hasVerifiedAt = hasOwn(row, "council_term_end_verified_at");
+
+    if (!hasTermEnd && !hasSource && !hasVerifiedAt) continue;
+
+    if (!hasNonEmptyString(row, "council_term_end")) {
+      report.errors.push(`${label}: ${slug} council_term_end is missing or empty`);
+    } else {
+      const validation = validateDateString(row.council_term_end);
+      if (!validation.ok) {
+        report.errors.push(`${label}: ${slug} council_term_end is ${validation.reason}: ${row.council_term_end}`);
+      }
+    }
+
+    if (!hasNonEmptyString(row, "council_term_end_source")) {
+      report.errors.push(`${label}: ${slug} council_term_end_source is missing or empty`);
+    }
+    if (!hasNonEmptyString(row, "council_term_end_verified_at")) {
+      report.errors.push(`${label}: ${slug} council_term_end_verified_at is missing or empty`);
+    }
+  }
+}
+
 async function hasAnyPath(baseDir, slug, relativePaths, ignoredFiles) {
   for (const relativePath of relativePaths) {
     const targetPath = path.join(baseDir, slug, relativePath);
@@ -178,6 +237,9 @@ async function checkMetadata(report) {
   if (siteFeatures.length) {
     report.errors.push(`retired features field found in site/data/municipalities.json: ${siteFeatures.slice(0, 10).join(", ")}`);
   }
+
+  validateCouncilTermMetadata(report, root, "data/municipalities.json");
+  validateCouncilTermMetadata(report, site, "site/data/municipalities.json");
 
   return root;
 }

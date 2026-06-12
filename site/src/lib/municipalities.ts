@@ -16,6 +16,9 @@ export type Municipality = {
   minutes_verified_at?: string;
   minutes_access?: "restricted";
   minutes_access_note?: string;
+  council_term_end?: string;
+  council_term_end_source?: string;
+  council_term_end_verified_at?: string;
 };
 
 export function getMunicipalities(): Municipality[] {
