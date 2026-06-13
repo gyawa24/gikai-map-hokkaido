@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  allowedDevOrigins: ["127.0.0.1"],
   staticPageGenerationTimeout: 300,
   // 低コアの無料/標準ビルド環境では、デフォルト cpus = (cores - 1) だと
   // static generation が極端に遅くなる。明示的に2コアを使い、1 worker 内の

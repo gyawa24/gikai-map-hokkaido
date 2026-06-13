@@ -11,13 +11,18 @@ const MEMBER_EXPORT_PATH = "/api/export/members";
 const SITE_OG_IMAGE_PATH = "/api/og-site";
 const BUDGET_IMAGE_EXTENSIONS = new Set([".avif", ".jpg", ".jpeg", ".png", ".webp"]);
 const MEMBER_IMAGE_EXTENSIONS = new Set([".avif", ".jpg", ".jpeg", ".png", ".webp"]);
+const IS_DEVELOPMENT = process.env.NODE_ENV === "development";
 const CONTENT_SECURITY_POLICY = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline'",
+  IS_DEVELOPMENT
+    ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'"
+    : "script-src 'self' 'unsafe-inline'",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https:",
   "font-src 'self' data:",
-  "connect-src 'self' https://raw.githubusercontent.com",
+  IS_DEVELOPMENT
+    ? "connect-src 'self' http: https: ws: wss:"
+    : "connect-src 'self' https://raw.githubusercontent.com",
   "frame-src https://www.youtube.com https://www.youtube-nocookie.com",
   "object-src 'none'",
   "base-uri 'self'",
