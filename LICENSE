@@ -19,10 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Note on data: JSON files under `data/` and `site/data/` are derived from
-publicly accessible publications by Hokkaido municipal assemblies. The MIT
-license applies to the code in this repository; the original publications
-remain copyrighted by the respective municipal assemblies.

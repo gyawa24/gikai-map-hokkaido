@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 地方議会ドットコム site
 
-## Getting Started
+地方議会ドットコムの Next.js フロントエンド。
 
-First, run the development server:
+本番は Cloudflare Workers / Static Assets（OpenNext）で配信する。Vercel は当面 rollback 用として保持する。
+
+## ローカル起動
 
 ```bash
+cd site
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`predev` で次の公開用生成データを更新してから Next.js dev server を起動する。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `site/data/_city-capabilities.json`
+- `site/data/_search-index.json`
+- `site/data/opendata/`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## よく使うコマンド
 
-## Learn More
+```bash
+# lint
+npm run lint
 
-To learn more about Next.js, take a look at the following resources:
+# Next.js build
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Cloudflare local preflight
+npm run cf:preflight
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Cloudflare production host check
+npm run cf:post-cutover-check
+```
 
-## Deploy on Vercel
+## 作業時の注意
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js 16 固有の注意は [`AGENTS.md`](AGENTS.md) を確認する。
+- UI を触る場合はリポジトリルートの [`DESIGN.md`](../DESIGN.md) を確認する。
+- 大きい議事録本文を Worker / Function bundle に戻さない。
+- `site/data/` は公開ビルド入力。収集・編集の正は原則としてルートの `data/{slug}/`。
+- 市町村ごとの機能出し分けは `_city-capabilities.json` を使い、画面側で特定自治体名をハードコードしない。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 関連ドキュメント
+
+- [`../AGENTS.md`](../AGENTS.md)
+- [`../DESIGN.md`](../DESIGN.md)
+- [`../docs/operations-principles.md`](../docs/operations-principles.md)
+- [`../docs/cloudflare-deploy-runbook.md`](../docs/cloudflare-deploy-runbook.md)
+- [`../docs/news-workflow.md`](../docs/news-workflow.md)

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: セキュリティ報告
+    url: mailto:ogawayohei.hkd@gmail.com
+    about: 脆弱性や秘密情報の漏えいは公開 Issue ではなくメールで連絡してください。

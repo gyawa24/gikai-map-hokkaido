@@ -4,11 +4,14 @@
 
 公開サイト: [地方議会ドットコム](https://chihougikai.com/)（Cloudflare Workers / Static Assets で配信）
 
+地方議会の情報は自治体ごとに形式も公開場所も分かれているため、市民・議員・職員・研究者・報道・開発者が、地域をまたいで政策論点や議会活動を調べにくい状態にある。このリポジトリは、北海道内の議会情報を継続的に収集・検証し、横断検索と再利用しやすいデータ基盤として公開するための OSS プロジェクト。
+
 ## 現状
 
 - **運用中**: 126 自治体で議事録データ提供中
 - **完全機能 3 市**: 千歳・恵庭・苫小牧（議員一覧・議事録・議決・行事・議会だより・選挙結果など全機能）
 - **目標**: 北海道 179 市町村 + 北海道議会への拡張
+- **運用方針**: `docs/operations-board.md` と `docs/operations-principles.md` で、収集・検証・公開・リリースの継続運用を管理
 
 ## 主な機能
 
@@ -53,8 +56,10 @@ gikai-map-hokkaido/
 | ファイル | 内容 |
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | プロジェクト方針・AI エージェント向け作業指針（Claude Code / Codex / Cursor 等共通、`CLAUDE.md` はシンボリックリンク） |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Issue・データ修正・機能改善の貢献ガイド |
 | [`DESIGN.md`](DESIGN.md) | UI 仕様（カラー・タイポ・コンポーネント） |
 | [`SECURITY.md`](SECURITY.md) | セキュリティ・脆弱性報告 |
+| [`DATA_LICENSE.md`](DATA_LICENSE.md) | コードライセンスと議会データ利用条件の整理 |
 | [`site/AGENTS.md`](site/AGENTS.md) | Next.js 16 固有の注意事項 |
 | [`docs/add-municipality-workflow.md`](docs/add-municipality-workflow.md) | 1市町村追加の実務フロー（metadata, data, segments, 画面確認） |
 | [`docs/ai-operations.md`](docs/ai-operations.md) | AI前提で `今やる / 次にやる / そのうちやる` を回すための運営ガイド |
@@ -100,7 +105,11 @@ npm install
 
 [MIT License](LICENSE)
 
-データ自体は各市町村議会の公式サイトに掲載された公開情報を整理したもので、原文は各議会の著作物です。本リポジトリのライセンスはコード部分に対して適用されます。
+データ自体は各市町村議会の公式サイトに掲載された公開情報を整理したもので、原文は各議会の著作物です。詳しくは [`DATA_LICENSE.md`](DATA_LICENSE.md) と [`docs/open-data-policy.md`](docs/open-data-policy.md) を参照してください。
+
+## 貢献
+
+誤字、リンク切れ、出典確認、自治体データ追加、スクレイパ改善、検索品質改善の Issue / Pull Request を歓迎します。まずは [`CONTRIBUTING.md`](CONTRIBUTING.md) を確認してください。
 
 ## 作者
 

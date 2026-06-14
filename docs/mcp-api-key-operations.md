@@ -59,8 +59,8 @@ node scripts/generate-mcp-api-key.mjs 5
 出力例:
 
 ```text
-gkmcp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-gkmcp_yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+gkmcp_<redacted-example-1>
+gkmcp_<redacted-example-2>
 ```
 
 ## 発行フロー

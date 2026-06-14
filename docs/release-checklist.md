@@ -73,6 +73,4 @@ Use this before every production release.
 - after Cloudflare production cutover: `cd site && npm run cf:post-cutover-check`
 - after Cloudflare production cutover: record Search Console URL-prefix property `https://chihougikai.com/` pages, sitemap, and search performance in `docs/cloudflare-release-log.md`
 - `./scripts/check_required_files.sh`
-- `./scripts/audit_live_site.sh https://example.com`
-- `./scripts/audit_metadata.sh https://example.com`
-- `./scripts/check_mail_dns.sh example.com`
+- `./scripts/audit_live_site.sh https://chihougikai.com`
