@@ -2,7 +2,6 @@ export const PREVIEW_NOINDEX_HEADER = "noindex, nofollow";
 
 const INDEXABLE_HOSTS = new Set([
   "chihougikai.com",
-  "www.chihougikai.com",
   ...(process.env.GIKAI_INDEXABLE_HOSTS ?? "")
     .split(",")
     .map((host) => normalizeHost(host))

@@ -8,6 +8,7 @@ import {
   DEFAULT_DESCRIPTION,
   DEFAULT_OG_IMAGE,
   OWNER_X_URL,
+  SITE_DISPLAY_NAME,
   SITE_NAME,
   SITE_X_URL,
   SITE_URL,
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
         url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: SITE_NAME,
+        alt: SITE_DISPLAY_NAME,
       },
     ],
   },
@@ -114,7 +115,7 @@ export default function RootLayout({
                 <div className="grid gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
                   <div>
                     <div className="mb-3 flex flex-wrap items-center gap-2">
-                      <span className="portal-subhead border-white/25 bg-white/10 text-white">地方議会ドットコム（γ）</span>
+                      <span className="portal-subhead border-white/25 bg-white/10 text-white">{SITE_DISPLAY_NAME}</span>
                     </div>
                     <p className="max-w-3xl text-sm leading-relaxed text-[#d5def0]">
                       北海道内の市町村議会の議員情報・議事録・議決結果を、横断的に見つけやすく整理する非公式の情報サイトです。

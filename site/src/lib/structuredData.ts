@@ -1,4 +1,4 @@
-import { absoluteUrl, SITE_NAME, SITE_URL, SITE_X_URL } from "@/lib/metadata";
+import { absoluteUrl, SITE_DISPLAY_NAME, SITE_NAME, SITE_URL, SITE_X_URL } from "@/lib/metadata";
 
 type BreadcrumbItem = {
   name: string;
@@ -24,6 +24,7 @@ export function buildSiteStructuredData() {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: SITE_NAME,
+      alternateName: SITE_DISPLAY_NAME,
       url: SITE_URL,
       logo: absoluteUrl("/icon.svg"),
       sameAs: [
@@ -36,6 +37,11 @@ export function buildSiteStructuredData() {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: SITE_NAME,
+      alternateName: [
+        SITE_DISPLAY_NAME,
+        "Chihou Gikai Dottokomu",
+        "chihougikai.com",
+      ],
       url: SITE_URL,
       inLanguage: "ja-JP",
       potentialAction: {

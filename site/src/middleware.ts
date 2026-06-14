@@ -1,9 +1,10 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import { isIndexableRequestHost, PREVIEW_NOINDEX_HEADER } from "@/lib/indexing";
+import { isIndexableRequestHost, normalizeHost, PREVIEW_NOINDEX_HEADER } from "@/lib/indexing";
 import { publicRawUrl } from "@/lib/publicRawUrl";
 import { slugForTag, tagFromSlug } from "@/lib/topicAliases";
 
+const CANONICAL_HOST = "chihougikai.com";
 const TOPICS_PREFIX = "/topics/";
 const BUDGETS_PREFIX = "/budgets/";
 const MEMBERS_PREFIX = "/members/";
@@ -38,6 +39,23 @@ function withPreviewNoindex(request: NextRequest, response: NextResponse) {
   return response;
 }
 
+function canonicalizeProductionUrl(request: NextRequest) {
+  const host = normalizeHost(request.headers.get("host"));
+  const forwardedProto = request.headers.get("x-forwarded-proto")?.split(",")[0]?.trim().toLowerCase();
+  const protocol = forwardedProto || request.nextUrl.protocol.replace(":", "");
+  const isProductionHost = host === CANONICAL_HOST || host === `www.${CANONICAL_HOST}`;
+
+  if (!isProductionHost || (host === CANONICAL_HOST && protocol === "https")) {
+    return null;
+  }
+
+  const url = request.nextUrl.clone();
+  url.protocol = "https";
+  url.hostname = CANONICAL_HOST;
+  url.port = "";
+  return NextResponse.redirect(url, 301);
+}
+
 function redirectLegacyMembersExport(request: NextRequest) {
   const city = request.nextUrl.searchParams.get("city") ?? "";
   if (!/^[a-z0-9-]{1,64}$/i.test(city)) {
@@ -51,6 +69,9 @@ function redirectLegacyMembersExport(request: NextRequest) {
 }
 
 export function middleware(request: NextRequest) {
+  const canonicalRedirect = canonicalizeProductionUrl(request);
+  if (canonicalRedirect) return canonicalRedirect;
+
   const { pathname } = request.nextUrl;
   if (pathname.startsWith(BUDGETS_PREFIX)) {
     const imageExtension = pathname.match(/\.[a-z0-9]+$/i)?.[0]?.toLowerCase();
