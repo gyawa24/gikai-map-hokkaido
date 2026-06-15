@@ -315,9 +315,9 @@ function runClientSearch(
 
       for (const seg of s.segments ?? []) {
         const fields = [
-          { text: seg.summary ?? "", field: "要約", bonus: 24, radius: 100 },
-          { text: (seg.topics ?? []).join(" "), field: "トピック", bonus: 20, radius: 90 },
-          { text: seg.transcript ?? "", field: "全文", bonus: 10, radius: 100 },
+          { text: `${cityName} ${seg.summary ?? ""}`, field: "要約", bonus: 24, radius: 100 },
+          { text: `${cityName} ${(seg.topics ?? []).join(" ")}`, field: "トピック", bonus: 20, radius: 90 },
+          { text: `${cityName} ${seg.transcript ?? ""}`, field: "全文", bonus: 10, radius: 100 },
         ];
         for (const field of fields) {
           if (!matchesSearchText(field.text, searchQuery, mode, searchMode)) continue;
@@ -342,7 +342,7 @@ function runClientSearch(
         }
       }
 
-      const titleSearchText = `${title} ${committee}`;
+      const titleSearchText = `${cityName} ${title} ${committee}`;
       if (matchesSearchText(titleSearchText, searchQuery, mode, searchMode)) {
         const score = scoreSearchText(titleSearchText, searchQuery, searchMode, mode) + 28;
         if (!bestHit || score > bestHit.score) {
@@ -370,7 +370,7 @@ function runClientSearch(
 
     const seenMinutes = new Set<string>();
     for (const agenda of runtimeIndex.agendas) {
-      const haystack = `${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
+      const haystack = `${agenda.cityName} ${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
       if (!matchesSearchText(haystack, searchQuery, mode, searchMode)) continue;
       let score = scoreSearchText(haystack, searchQuery, searchMode, mode) + 14;
       if (agenda.agenda_title && matchesSearchText(agenda.agenda_title, searchQuery, mode, searchMode)) score += 18;
@@ -404,7 +404,7 @@ function runClientSearch(
       if (seenMinutes.has(minuteKey)) continue;
       const summary = doc.summary ?? "";
       const highlights = doc.highlights ?? [];
-      const searchText = [doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");
+      const searchText = [cityName, doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");
       if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
       let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 8;
       if (matchesSearchText(doc.name, searchQuery, mode, searchMode)) score += 16;
@@ -433,7 +433,7 @@ function runClientSearch(
     for (const decision of runtimeIndex.decisions ?? []) {
       const city = decision.city;
       const cityName = decision.cityName || cityMap[city] || city;
-      const text = [decision.session, decision.description ?? ""].join(" ");
+      const text = [cityName, decision.session, decision.description ?? ""].join(" ");
       if (!matchesSearchText(text, searchQuery, mode, searchMode)) continue;
       let score = scoreSearchText(text, searchQuery, searchMode, mode) + 10;
       if (matchesSearchText(decision.session, searchQuery, mode, searchMode)) score += 10;
@@ -465,7 +465,7 @@ function runClientSearch(
       const furigana = member.furigana ?? "";
       const party = member.party ?? "";
       const faction = member.faction ?? "";
-      const searchText = [name, furigana, party, faction, ...committees].join(" ");
+      const searchText = [cityName, name, furigana, party, faction, ...committees].join(" ");
       if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
       let score = scoreSearchText(searchText, searchQuery, searchMode, mode);
       if (matchesSearchText(name, searchQuery, mode, searchMode)) score += 28;

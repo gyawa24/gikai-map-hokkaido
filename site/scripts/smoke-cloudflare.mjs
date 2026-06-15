@@ -131,6 +131,15 @@ const smokeCases = [
     jsonKeys: ["sessionResults", "memberResults"],
   },
   {
+    label: "search API city name",
+    path: "/api/search?q=%E5%8D%83%E6%AD%B3%E5%B8%82",
+    status: 200,
+    headersInclude: {
+      "x-gikai-search-mode": "client",
+    },
+    jsonKeys: ["sessionResults", "memberResults"],
+  },
+  {
     label: "search API repeat",
     path: "/api/search?q=%E4%BA%88%E7%AE%97",
     status: 200,

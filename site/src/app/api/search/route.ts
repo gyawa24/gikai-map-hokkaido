@@ -12,6 +12,21 @@ const SEARCH_GET_LIMIT = 60;
 const SEARCH_POST_LIMIT = 12;
 const SEARCH_RESPONSE_CACHE_SECONDS = 60;
 
+function shouldUseClientSearch(request: NextRequest): boolean {
+  const mode = process.env.GIKAI_SEARCH_MODE;
+  if (mode === "server") return false;
+  if (mode === "client") return true;
+
+  const host = request.nextUrl.hostname.toLowerCase();
+  return (
+    process.env.NODE_ENV === "production" ||
+    request.headers.has("cf-ray") ||
+    host === "chihougikai.com" ||
+    host === "www.chihougikai.com" ||
+    host.endsWith(".workers.dev")
+  );
+}
+
 // 日付文字列（"2026-03-02" 等）から西暦4桁を取り出す
 function yearFromDate(date: string | undefined | null): string {
   if (!date) return "";
@@ -539,7 +554,7 @@ export async function GET(request: NextRequest) {
     } satisfies SearchResponse);
   }
 
-  if (await hasCloudflareAssets()) {
+  if (shouldUseClientSearch(request) || (await hasCloudflareAssets())) {
     const response = NextResponse.json({
       sessionResults: [],
       memberResults: [],
@@ -591,9 +606,9 @@ export async function GET(request: NextRequest) {
 
         for (const seg of segments) {
           const fields = [
-            { text: seg.summary ?? "", field: "要約", bonus: 24, radius: 100 },
-            { text: (seg.topics ?? []).join(" "), field: "トピック", bonus: 20, radius: 90 },
-            { text: seg.transcript ?? "", field: "全文", bonus: 10, radius: 100 },
+            { text: `${cityName} ${seg.summary ?? ""}`, field: "要約", bonus: 24, radius: 100 },
+            { text: `${cityName} ${(seg.topics ?? []).join(" ")}`, field: "トピック", bonus: 20, radius: 90 },
+            { text: `${cityName} ${seg.transcript ?? ""}`, field: "全文", bonus: 10, radius: 100 },
           ];
           for (const field of fields) {
             if (!matchesSearchText(field.text, searchQuery, mode, searchMode)) continue;
@@ -618,7 +633,7 @@ export async function GET(request: NextRequest) {
           }
         }
 
-        const titleSearchText = `${title} ${committee}`;
+        const titleSearchText = `${cityName} ${title} ${committee}`;
         if (matchesSearchText(titleSearchText, searchQuery, mode, searchMode)) {
           const score = scoreSearchText(titleSearchText, searchQuery, searchMode, mode) + 28;
           if (!bestHit || score > bestHit.score) {
@@ -648,7 +663,7 @@ export async function GET(request: NextRequest) {
 
     const seenMinutes = new Set<string>();
     for (const agenda of runtimeIndex.agendas) {
-      const haystack = `${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
+      const haystack = `${agenda.cityName} ${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
       if (!matchesSearchText(haystack, searchQuery, mode, searchMode)) continue;
       let score = scoreSearchText(haystack, searchQuery, searchMode, mode) + 14;
       if (agenda.agenda_title && matchesSearchText(agenda.agenda_title, searchQuery, mode, searchMode)) {
@@ -686,7 +701,7 @@ export async function GET(request: NextRequest) {
         if (seenMinutes.has(minuteKey)) continue;
         const summary = doc.summary ?? "";
         const highlights = doc.highlights ?? [];
-        const searchText = [doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");
+        const searchText = [cityName, doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");
         if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
         let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 8;
         if (matchesSearchText(doc.name, searchQuery, mode, searchMode)) score += 16;
@@ -715,7 +730,7 @@ export async function GET(request: NextRequest) {
     for (const decision of runtimeIndex.decisions ?? []) {
         const city = decision.city;
         const cityName = decision.cityName || cityMap[city] || city;
-        const text = [decision.session, decision.description ?? ""].join(" ");
+        const text = [cityName, decision.session, decision.description ?? ""].join(" ");
         if (!matchesSearchText(text, searchQuery, mode, searchMode)) continue;
         let score = scoreSearchText(text, searchQuery, searchMode, mode) + 10;
         if (matchesSearchText(decision.session, searchQuery, mode, searchMode)) score += 10;
@@ -747,7 +762,7 @@ export async function GET(request: NextRequest) {
           const furigana = member.furigana ?? "";
           const party = member.party ?? "";
           const faction = member.faction ?? "";
-          const searchText = [name, furigana, party, faction, ...committees].join(" ");
+          const searchText = [cityName, name, furigana, party, faction, ...committees].join(" ");
           if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
           let score = scoreSearchText(searchText, searchQuery, searchMode, mode);
           if (matchesSearchText(name, searchQuery, mode, searchMode)) score += 28;
