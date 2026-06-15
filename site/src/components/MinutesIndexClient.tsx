@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, Suspense } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import type { MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
@@ -13,11 +13,55 @@ type MinutesWithEnriched = MinutesIndexItem & {
 
 type Props = {
   items: MinutesWithEnriched[];
+  city: string;
   minutesBasePath?: string;
   restricted?: boolean;
 };
 
 const PAGE_SIZE = 10;
+const BODY_SEARCH_MIN_LENGTH = 2;
+
+type MinutesSearchAgenda = {
+  city: string;
+  council_id: number;
+  council_name: string;
+  schedule_name: string;
+  agenda_title: string;
+  text: string;
+  year?: string;
+};
+
+type MinutesSearchIndex = {
+  agendas?: MinutesSearchAgenda[];
+};
+
+let minutesSearchIndexPromise: Promise<MinutesSearchIndex> | null = null;
+
+function normalizeForSearch(text: string): string {
+  return text
+    .normalize("NFKC")
+    .replace(/\u3000/g, " ")
+    .replace(/[ァ-ヶ]/g, (char) => String.fromCharCode(char.charCodeAt(0) - 0x60))
+    .toLowerCase()
+    .trim();
+}
+
+async function loadMinutesSearchIndex(signal: AbortSignal): Promise<MinutesSearchIndex> {
+  minutesSearchIndexPromise ??= fetch("/generated/search-index.json", { cache: "force-cache" })
+    .then(async (response) => {
+      if (!response.ok) throw new Error("検索インデックスの読み込みに失敗しました");
+      const data = (await response.json()) as MinutesSearchIndex;
+      if (!Array.isArray(data.agendas)) throw new Error("検索インデックスが壊れています");
+      return data;
+    })
+    .catch((error) => {
+      minutesSearchIndexPromise = null;
+      throw error;
+    });
+  const data = await minutesSearchIndexPromise;
+  if (signal.aborted) throw new Error("検索を中断しました");
+  return data;
+}
 
 function sessionCategoryLabel(typeLabel: string): string {
   if (typeLabel.includes("定例会") && !typeLabel.includes("補正") && !typeLabel.includes("委員会")) return "本会議・定例会";
@@ -142,7 +186,7 @@ function generatePageNumbers(current: number, total: number): (number | "...")[]
   return pages;
 }
 
-function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restricted = false }: Props) {
+function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", restricted = false }: Props) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -153,6 +197,9 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
   const [showAllTags, setShowAllTags] = useState(false);
   const [searchText, setSearchText] = useState("");
   const [currentPage, setCurrentPage] = useState(initialPage);
+  const [bodyMatchedCouncilIds, setBodyMatchedCouncilIds] = useState<Set<number>>(() => new Set());
+  const [bodySearchQuery, setBodySearchQuery] = useState("");
+  const [bodySearchStatus, setBodySearchStatus] = useState<"idle" | "loading" | "loaded" | "error">("idle");
 
   const updateSearchText = (value: string) => {
     setSearchText(value);
@@ -163,6 +210,51 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
     setActiveTag(tag);
     setCurrentPage(1);
   };
+
+  useEffect(() => {
+    const q = searchText.trim();
+    if (q.length < BODY_SEARCH_MIN_LENGTH) {
+      return;
+    }
+
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => {
+      setBodySearchStatus("loading");
+      loadMinutesSearchIndex(controller.signal)
+        .then((index) => {
+          if (controller.signal.aborted) return;
+          const normalizedQuery = normalizeForSearch(q);
+          const matched = new Set<number>();
+          for (const agenda of index.agendas ?? []) {
+            if (agenda.city !== city) continue;
+            const text = normalizeForSearch(
+              [
+                agenda.council_name,
+                agenda.schedule_name,
+                agenda.agenda_title,
+                agenda.text,
+                agenda.year ?? "",
+              ].join(" ")
+            );
+            if (text.includes(normalizedQuery)) matched.add(agenda.council_id);
+          }
+          setBodyMatchedCouncilIds(matched);
+          setBodySearchQuery(q);
+          setBodySearchStatus("loaded");
+        })
+        .catch(() => {
+          if (controller.signal.aborted) return;
+          setBodyMatchedCouncilIds(new Set());
+          setBodySearchQuery(q);
+          setBodySearchStatus("error");
+        });
+    }, 250);
+
+    return () => {
+      window.clearTimeout(timeout);
+      controller.abort();
+    };
+  }, [city, searchText]);
 
   // ページ変更時にURLを更新
   const handlePageChange = (page: number) => {
@@ -223,12 +315,36 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
   // フィルタリング（テキスト検索 AND タグ絞り込み）
   const filtered = useMemo(() => {
     const q = searchText.trim();
+    const canUseBodySearch = q.length >= BODY_SEARCH_MIN_LENGTH;
+    const bodyMatchesCurrentQuery = canUseBodySearch && bodySearchQuery === q;
+    const normalizedQuery = normalizeForSearch(q);
     return items.filter((item) => {
       if (activeTag && !(item.enriched?.tags ?? []).some((t) => normalizeTag(t) === activeTag)) return false;
-      if (q && !item.name.includes(q) && !item.japanese_year.includes(q)) return false;
+      if (q) {
+        const localSearchText = normalizeForSearch(
+          [
+            item.name,
+            item.japanese_year,
+            item.type_label,
+            item.enriched?.summary ?? "",
+            ...(item.enriched?.highlights ?? []),
+            ...(item.enriched?.tags ?? []),
+            ...(item.enriched?.questioners ?? []).flatMap((questioner) => [
+              questioner.name,
+              ...(questioner.topics ?? []),
+            ]),
+          ].join(" ")
+        );
+        if (
+          !localSearchText.includes(normalizedQuery) &&
+          !(bodyMatchesCurrentQuery && bodyMatchedCouncilIds.has(item.council_id))
+        ) {
+          return false;
+        }
+      }
       return true;
     });
-  }, [items, activeTag, searchText]);
+  }, [items, activeTag, searchText, bodyMatchedCouncilIds, bodySearchQuery]);
 
   // ページネーション
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
@@ -393,7 +509,11 @@ function MinutesIndexInner({ items, minutesBasePath = "/chitose/minutes", restri
         </p>
       )}
 
-      {filtered.length === 0 ? (
+      {filtered.length === 0 && bodySearchStatus === "loading" && searchText.trim().length >= BODY_SEARCH_MIN_LENGTH ? (
+        <div className="theme-card px-6 py-8 text-center text-[#718096]">
+          検索しています…
+        </div>
+      ) : filtered.length === 0 ? (
         <div className="theme-card px-6 py-8 text-center text-[#718096]">
           条件に一致する議事録が見つかりません
         </div>

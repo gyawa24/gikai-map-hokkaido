@@ -214,6 +214,7 @@ export default async function CityMinutesPage({
       ) : (
         <MinutesIndexClient
           items={items}
+          city={city}
           minutesBasePath={`/${city}/minutes`}
           restricted={restricted}
         />
