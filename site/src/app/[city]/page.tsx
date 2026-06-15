@@ -272,7 +272,6 @@ export default async function CityMembersPage({
           factions={factions}
           activity={activity}
           memberHrefBase={`/${city}/members`}
-          minutesHrefBase={`/${city}/minutes`}
         />
       </div>
       {/* オープンデータ導線（議員名簿 CSV） */}

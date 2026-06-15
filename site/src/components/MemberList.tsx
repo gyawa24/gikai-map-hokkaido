@@ -61,7 +61,6 @@ function MemberCard({
   activity,
   factionBadgeClass,
   memberHrefBase,
-  minutesHrefBase,
   policyTags,
   compact = false,
 }: {
@@ -69,15 +68,14 @@ function MemberCard({
   activity: MemberActivity | undefined;
   factionBadgeClass: (f: string) => string;
   memberHrefBase?: string;
-  minutesHrefBase?: string;
   policyTags?: PolicyTag[];
   compact?: boolean;
 }) {
-  const [activityOpen, setActivityOpen] = useState(false);
   const visibleCommittees = member.committees.slice(0, 2);
   const hiddenCommitteeCount = Math.max(0, member.committees.length - visibleCommittees.length);
   const visibleThemes = activity?.themes?.slice(0, 3) ?? [];
   const hiddenThemeCount = Math.max(0, (activity?.themes?.length ?? 0) - visibleThemes.length);
+  const activityDetailHref = memberHrefBase ? `${memberHrefBase}/${member.seat_number}#activity` : undefined;
 
   if (compact) {
     return (
@@ -158,53 +156,14 @@ function MemberCard({
                 詳細
               </Link>
             )}
-            {activity && (
-              <button
-                type="button"
-                onClick={() => setActivityOpen((v) => !v)}
+            {activity && activityDetailHref && (
+              <Link
+                href={activityDetailHref}
                 className="px-3 py-2.5 transition-colors hover:bg-[#F5F8FD] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
-                aria-expanded={activityOpen}
               >
                 質問履歴
-              </button>
+              </Link>
             )}
-          </div>
-        )}
-
-        {activityOpen && activity && (
-          <div className="space-y-4 border-t border-[#E2E8F0] bg-white px-4 py-4">
-            {activity.sessions.map((s, i) => (
-              <div key={i}>
-                <div className="mb-1.5 flex items-center justify-between">
-                  <p className="text-xs font-semibold text-[#1B3A6B]">{s.session}</p>
-                  {s.council_id > 0 && (
-                    <Link
-                      href={`${minutesHrefBase}/${s.council_id}`}
-                      className="rounded text-xs text-[#718096] transition-colors hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
-                    >
-                      全文
-                    </Link>
-                  )}
-                </div>
-                <ul className="space-y-1">
-                  {s.topics.map((topic) => (
-                    <li key={topic} className="flex items-start gap-1.5 text-xs">
-                      <span className="mt-0.5 shrink-0 text-[#2A5298]">·</span>
-                      {s.council_id > 0 ? (
-                        <Link
-                          href={`${minutesHrefBase}/${s.council_id}?q=${encodeURIComponent(topic)}`}
-                          className="rounded text-[#2A5298] transition-colors hover:text-[#1B3A6B] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
-                        >
-                          {topic}
-                        </Link>
-                      ) : (
-                        <span className="text-[#4A5568]">{topic}</span>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
           </div>
         )}
       </div>
@@ -344,62 +303,26 @@ function MemberCard({
       </div>
 
       {/* 質問履歴トグル */}
-      {activity && (
-        <>
-          <button
-            onClick={() => setActivityOpen((v) => !v)}
-            className="w-full flex items-center justify-between border-t border-[#E2E8F0] bg-[#FAFAF8] px-4 py-2.5 text-sm text-[#4A5568] transition-colors hover:bg-[#F5F8FD] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
-            aria-expanded={activityOpen}
+      {activity && activityDetailHref && (
+        <Link
+          href={activityDetailHref}
+          className="flex w-full items-center justify-between border-t border-[#E2E8F0] bg-[#FAFAF8] px-4 py-2.5 text-sm text-[#4A5568] transition-colors hover:bg-[#F5F8FD] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
+        >
+          <span className="text-xs font-medium">質問履歴を見る</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
           >
-            <span className="text-xs font-medium">質問履歴を見る</span>
-            <svg
-              className={`w-4 h-4 transition-colors ${activityOpen ? "rotate-180" : ""}`}
-              viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </button>
-
-          {activityOpen && (
-            <div className="space-y-4 border-t border-[#E2E8F0] bg-white px-4 py-4 sm:px-5">
-              {activity.sessions.map((s, i) => (
-                <div key={i}>
-                  <div className="flex items-center justify-between mb-1.5">
-                    <p className="text-xs font-semibold text-[#1B3A6B]">{s.session}</p>
-                    {s.council_id > 0 && (
-                      <Link
-                        href={`${minutesHrefBase}/${s.council_id}`}
-                        className="flex items-center gap-0.5 rounded text-xs text-[#718096] transition-colors hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
-                      >
-                        全文
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-                      </Link>
-                    )}
-                  </div>
-                  <ul className="space-y-1">
-                    {s.topics.map((t) => (
-                      <li key={t} className="flex items-start gap-1.5 text-xs">
-                        <span className="text-[#2A5298] shrink-0 mt-0.5">·</span>
-                        {s.council_id > 0 ? (
-                          <Link
-                            href={`${minutesHrefBase}/${s.council_id}?q=${encodeURIComponent(t)}`}
-                            className="rounded text-[#2A5298] transition-colors hover:text-[#1B3A6B] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
-                          >
-                            {t}
-                          </Link>
-                        ) : (
-                          <span className="text-[#4A5568]">{t}</span>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          )}
-        </>
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </Link>
       )}
     </div>
   );
@@ -412,11 +335,10 @@ type Props = {
   factions: string[];
   activity?: Record<string, MemberActivity>;
   memberHrefBase?: string;
-  minutesHrefBase?: string;
   memberPolicies?: Record<string, PolicyTag[]>;
 };
 
-export default function MemberList({ members, factions, activity = {}, memberHrefBase, minutesHrefBase = "/chitose/minutes", memberPolicies = {} }: Props) {
+export default function MemberList({ members, factions, activity = {}, memberHrefBase, memberPolicies = {} }: Props) {
   const [factionFilter, setFactionFilter] = useState<string>("");
   const [partyFilter, setPartyFilter] = useState<string>("");
   const [sortKey, setSortKey] = useState<SortKey>("seat");
@@ -606,7 +528,6 @@ export default function MemberList({ members, factions, activity = {}, memberHre
               activity={memberActivity}
               factionBadgeClass={factionBadgeClass}
               memberHrefBase={memberHrefBase}
-              minutesHrefBase={minutesHrefBase}
               policyTags={memberPolicies[nameKey]}
               compact={isCompactList}
             />
