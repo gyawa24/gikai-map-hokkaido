@@ -5,6 +5,8 @@ import Link from "next/link";
 import type { Member, MemberActivity } from "@/types/member";
 import type { PolicyTag } from "@/lib/planUtils";
 
+type MemberActivitySummary = Pick<MemberActivity, "session_count" | "themes">;
+
 const GOAL_BADGE_COLORS: Record<number, string> = {
   1: "bg-amber-100 text-amber-800 border-amber-300",
   2: "bg-green-100 text-green-800 border-green-300",
@@ -65,7 +67,7 @@ function MemberCard({
   compact = false,
 }: {
   member: Member;
-  activity: MemberActivity | undefined;
+  activity: MemberActivitySummary | undefined;
   factionBadgeClass: (f: string) => string;
   memberHrefBase?: string;
   policyTags?: PolicyTag[];
@@ -333,7 +335,7 @@ function MemberCard({
 type Props = {
   members: Member[];
   factions: string[];
-  activity?: Record<string, MemberActivity>;
+  activity?: Record<string, MemberActivitySummary>;
   memberHrefBase?: string;
   memberPolicies?: Record<string, PolicyTag[]>;
 };

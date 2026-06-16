@@ -58,6 +58,19 @@ function getMemberActivity(city: string): Record<string, MemberActivity> {
   }
 }
 
+function getMemberActivitySummary(city: string): Record<string, Pick<MemberActivity, "session_count" | "themes">> {
+  const activity = getMemberActivity(city);
+  return Object.fromEntries(
+    Object.entries(activity).map(([key, value]) => [
+      key,
+      {
+        session_count: value.session_count,
+        themes: value.themes,
+      },
+    ])
+  );
+}
+
 function CityExploreLinks({
   city,
   cityName,
@@ -164,7 +177,7 @@ export default async function CityMembersPage({
 }) {
   const { city } = await params;
   const members = getMembers(city);
-  const activity = getMemberActivity(city);
+  const activity = getMemberActivitySummary(city);
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
   const { count: minutesCount, latestYear } = getMinutesSummary(city);
   const municipality = getMunicipality(city);
