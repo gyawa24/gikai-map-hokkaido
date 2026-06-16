@@ -860,12 +860,22 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [availableFactionsKey, hasSearchResponse]);
 
+  const selectedCityLabel =
+    cityFilter !== "all"
+      ? cityFacets.find((facet) => facet.value === cityFilter)?.label || cityLabelHint
+      : "";
+
   useEffect(() => {
     const params = new URLSearchParams();
     const trimmed = query.trim();
     if (trimmed) params.set("q", trimmed);
     if (tab !== "sessions") params.set("tab", tab);
-    if (cityFilter !== "all") params.set("city", cityFilter);
+    if (cityFilter !== "all") {
+      params.set("city", cityFilter);
+      if (selectedCityLabel && selectedCityLabel !== cityFilter) {
+        params.set("cityName", selectedCityLabel);
+      }
+    }
     if (sourceFilter !== "all") params.set("source", sourceFilter);
     if (yearFilter !== "all") params.set("year", yearFilter);
     if (factionFilter !== "all") params.set("faction", factionFilter);
@@ -876,10 +886,10 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
     if (nextParams === searchParams.toString()) return;
     const next = nextParams ? `${pathname}?${nextParams}` : pathname;
     router.replace(next, { scroll: false });
-  }, [pathname, router, searchParams, query, tab, cityFilter, sourceFilter, yearFilter, factionFilter, searchMode, sessionSort, memberSort]);
+  }, [pathname, router, searchParams, query, tab, cityFilter, selectedCityLabel, sourceFilter, yearFilter, factionFilter, searchMode, sessionSort, memberSort]);
 
   const activeFilters = [
-    cityFilter !== "all" ? availableCities.find((city) => city.id === cityFilter)?.name ?? cityFilter : "",
+    cityFilter !== "all" ? selectedCityLabel || cityFilter : "",
     tab === "sessions" && sourceFilter !== "all" ? SOURCE_FILTER_LABELS[sourceFilter] : "",
     tab === "sessions" && yearFilter !== "all" ? `${yearFilter}年` : "",
     tab === "members" && factionFilter !== "all" ? factionFilter : "",
@@ -900,7 +910,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
     hasQuery &&
     ((tab === "sessions" && (availableSourceTypes.size > 1 || availableYears.length > 1 || availableCities.length > 1)) ||
       (tab === "members" && (availableFactions.length > 1 || availableCities.length > 1)));
-  const scopedCityLabel = cityFilter !== "all" ? cityLabelHint || cityFilter : "";
+  const scopedCityLabel = cityFilter !== "all" ? selectedCityLabel || cityFilter : "";
 
   function clearFilters() {
     setCityFilter("all");
@@ -1382,7 +1392,10 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                 {searchSuggestions.map((suggestion) => (
                   <button
                     key={suggestion}
-                    onClick={() => setQuery(suggestion)}
+                    onClick={() => {
+                      setDraftQuery(suggestion);
+                      setQuery(suggestion);
+                    }}
                     className="theme-button px-3 py-1.5 text-xs"
                     type="button"
                   >

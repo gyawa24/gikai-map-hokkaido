@@ -70,10 +70,15 @@ function allowedVariants(group: SearchTokenGroup, mode: SearchMatchMode): Search
 
 function groupMatchScore(text: string, group: SearchTokenGroup, mode: SearchMatchMode): number {
   const normalizedText = normalizeSearchText(text);
+  const compactText = normalizedText.replace(/\s+/g, "");
   let best = 0;
   for (const variant of allowedVariants(group, mode)) {
     if (!variant.normalized) continue;
-    if (normalizedText.includes(variant.normalized)) {
+    const compactVariant = variant.normalized.replace(/\s+/g, "");
+    if (
+      normalizedText.includes(variant.normalized) ||
+      (compactVariant.length >= 2 && compactText.includes(compactVariant))
+    ) {
       best = Math.max(best, variant.boost);
     }
   }
