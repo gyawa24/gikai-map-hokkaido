@@ -20,6 +20,7 @@ const DATA_DIR = path.join(SITE_DIR, "data");
 const OUT_FILE = path.join(DATA_DIR, "_search-index.json");
 const PUBLIC_GENERATED_DIR = path.join(SITE_DIR, "public", "generated");
 const PUBLIC_SEARCH_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "search-index.json");
+const PUBLIC_CITY_SEARCH_INDEX_DIR = path.join(PUBLIC_GENERATED_DIR, "search-indexes");
 const PUBLIC_TOPICS_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "topics-index.json");
 const SEGMENT_FALLBACKS_FILE = path.join(DATA_DIR, "search_segment_fallbacks.json");
 
@@ -158,6 +159,39 @@ function buildMembers(city, cityName) {
     }));
 }
 
+function buildMemberActivities(city, cityName) {
+  const activity = readJson(path.join(DATA_DIR, city, "members_activity.json"), {});
+  if (!activity || typeof activity !== "object" || Array.isArray(activity)) return [];
+
+  return Object.values(activity).flatMap((entry) => {
+    const memberName = cleanText(entry?.name);
+    const sessions = Array.isArray(entry?.sessions) ? entry.sessions : [];
+    if (!memberName || sessions.length === 0) return [];
+
+    return sessions
+      .filter((session) => Number.isFinite(Number(session?.council_id)) && Number(session.council_id) > 0)
+      .map((session) => {
+        const councilName = cleanText(session.session);
+        const summaryTopics = Array.isArray(session.summary_topics)
+          ? session.summary_topics.map(cleanText).filter(Boolean)
+          : [];
+        const topics = Array.isArray(session.topics)
+          ? session.topics.map(cleanText).filter(Boolean)
+          : [];
+        return {
+          city,
+          cityName,
+          member_name: memberName,
+          council_id: Number(session.council_id),
+          council_name: councilName,
+          year: cleanText(session.year) || yearFromCouncilName(councilName),
+          topics: summaryTopics.length ? [] : topics.slice(0, 6),
+          summary_topics: summaryTopics,
+        };
+      });
+  });
+}
+
 function buildSegmentFallbackAgendas({ city, cityName, councilId, councilName, year }) {
   const segments = readJson(path.join(DATA_DIR, city, "segments", `${councilId}.json`), []);
   if (!Array.isArray(segments) || segments.length === 0) return [];
@@ -200,6 +234,8 @@ function buildIndex() {
   const decisions = [];
   /** @type {Array<object>} */
   const members = [];
+  /** @type {Array<object>} */
+  const memberActivities = [];
 
   const cityDirs = fs
     .readdirSync(DATA_DIR, { withFileTypes: true })
@@ -212,6 +248,7 @@ function buildIndex() {
     enriched.push(...buildEnrichedDocs(city, cityName));
     decisions.push(...buildDecisions(city, cityName));
     members.push(...buildMembers(city, cityName));
+    memberActivities.push(...buildMemberActivities(city, cityName));
 
     const minutesDir = path.join(DATA_DIR, city, "minutes");
     const indexPath = path.join(minutesDir, "index.json");
@@ -311,6 +348,7 @@ function buildIndex() {
     enriched,
     decisions,
     members,
+    memberActivities,
   };
   const topicsOut = {
     version: 1,
@@ -321,7 +359,25 @@ function buildIndex() {
 
   fs.writeFileSync(OUT_FILE, JSON.stringify(out));
   fs.mkdirSync(PUBLIC_GENERATED_DIR, { recursive: true });
+  fs.mkdirSync(PUBLIC_CITY_SEARCH_INDEX_DIR, { recursive: true });
   fs.writeFileSync(PUBLIC_SEARCH_INDEX_FILE, JSON.stringify(runtimeOut));
+  for (const city of cityDirs) {
+    const cityRuntimeOut = {
+      ...out,
+      count: agendas.filter((row) => row.city === city).length,
+      agendas: agendas.filter((row) => row.city === city),
+      municipalities: runtimeOut.municipalities.filter((row) => row.slug === city),
+      sessions: sessions.filter((row) => row.city === city),
+      enriched: enriched.filter((row) => row.city === city),
+      decisions: decisions.filter((row) => row.city === city),
+      members: members.filter((row) => row.city === city),
+      memberActivities: memberActivities.filter((row) => row.city === city),
+    };
+    fs.writeFileSync(
+      path.join(PUBLIC_CITY_SEARCH_INDEX_DIR, `${city}.json`),
+      JSON.stringify(cityRuntimeOut)
+    );
+  }
   fs.writeFileSync(PUBLIC_TOPICS_INDEX_FILE, JSON.stringify(topicsOut));
   const stat = fs.statSync(OUT_FILE);
   const runtimeStat = fs.statSync(PUBLIC_SEARCH_INDEX_FILE);

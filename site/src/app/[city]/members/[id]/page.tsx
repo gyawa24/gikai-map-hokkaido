@@ -25,6 +25,11 @@ function yearFromSessionName(name: string): string {
   return "不明";
 }
 
+function searchHref(city: string, cityName: string, query: string): string {
+  const params = new URLSearchParams({ city, cityName, q: query });
+  return `/search?${params.toString()}`;
+}
+
 // Cloudflare Workers の静的アセットキャッシュは読み取り専用。
 // 未生成の議員ページは request-time render にして、ISR キャッシュ書き込みを避ける。
 export const dynamicParams = true;
@@ -134,8 +139,13 @@ export default async function CityMemberDetailPage({
 
   const activity = await getActivity(city);
   const memberActivity = activity[member.name.replace(/\s/g, "")];
+  const questionThemes = memberActivity?.summary_topics?.length
+    ? memberActivity.summary_topics
+    : memberActivity?.themes?.length
+      ? memberActivity.themes
+      : memberActivity?.top_topics ?? [];
 
-  const memberSearchQ = encodeURIComponent(member.name);
+  const memberSearchHref = searchHref(city, cityName, member.name);
   const councilName = municipality?.council_name ?? `${cityName}議会`;
   const breadcrumb = buildBreadcrumbList([
     { name: "地方議会ドットコム", path: "/" },
@@ -297,7 +307,7 @@ export default async function CityMemberDetailPage({
             <span className="font-semibold">{member.name}</span> 議員の発言を横断検索
           </p>
           <Link
-            href={`/search?q=${memberSearchQ}`}
+            href={memberSearchHref}
             className="theme-button shrink-0 px-4 py-1.5 text-sm font-medium"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -327,27 +337,47 @@ export default async function CityMemberDetailPage({
             </span>
           </h3>
 
-          {memberActivity.all_topics.length > 0 && (
-            <div className="bg-[#E8EEF7] rounded-lg p-4 mb-4">
-              <p className="text-xs font-medium text-[#718096] mb-2">
-                質問テーマ一覧
-              </p>
-              <div className="flex flex-wrap gap-1.5">
-                {memberActivity.all_topics.map((t) => {
-                  const q = encodeURIComponent(t);
+          <div className="theme-panel mb-4 p-4">
+            <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#718096]">
+                  よく扱っているテーマ
+                </p>
+              </div>
+              <form action="/search" method="get" className="flex flex-col gap-2 sm:flex-row lg:min-w-[24rem]">
+                <input type="hidden" name="city" value={city} />
+                <input type="hidden" name="cityName" value={cityName} />
+                <label htmlFor="member-activity-search" className="sr-only">
+                  {member.name}議員の発言を検索
+                </label>
+                <input
+                  id="member-activity-search"
+                  name="q"
+                  type="search"
+                  defaultValue={member.name}
+                  className="theme-input min-h-11 flex-1 px-3 py-2 text-sm"
+                />
+                <button type="submit" className="theme-button theme-button-accent min-h-11 px-4 text-sm">
+                  検索
+                </button>
+              </form>
+            </div>
+            {questionThemes.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {questionThemes.map((t) => {
                   return (
                     <Link
                       key={t}
-                      href={`/search?q=${q}`}
-                      className="text-xs px-2 py-0.5 bg-white text-[#1B3A6B] border border-[#CBD5E0] rounded-full hover:bg-[#1B3A6B] hover:text-white transition-colors"
+                      href={searchHref(city, cityName, `${member.name} ${t}`)}
+                      className="rounded-full border border-[#CBD5E0] bg-white px-2.5 py-1 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white"
                     >
                       {t}
                     </Link>
                   );
                 })}
               </div>
-            </div>
-          )}
+            )}
+          </div>
 
           {/* タイムライン */}
           <ol className="relative border-l-2 border-[#E2E8F0] pl-5 ml-2 space-y-6">
@@ -378,6 +408,7 @@ export default async function CityMemberDetailPage({
                 );
                 for (let i = 0; i < sessionList.length; i++) {
                   const s = sessionList[i];
+                  const sessionThemes = s.summary_topics?.length ? s.summary_topics : [];
                   items.push(
                     <li key={`${year}-${i}`} className="relative">
                       <span
@@ -389,60 +420,80 @@ export default async function CityMemberDetailPage({
                           <p className="text-sm font-semibold text-[#1B3A6B]">
                             {s.session}
                           </p>
-                  {s.council_id > 0 && (
-                    <Link
-                      href={`/${city}/minutes/${s.council_id}`}
-                      className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
-                    >
-                      議事録全文
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-3 h-3"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        aria-hidden="true"
-                      >
-                        <polyline points="9 18 15 12 9 6" />
-                      </svg>
-                    </Link>
-                  )}
-                </div>
-                        <ul className="space-y-1.5">
-                          {s.topics.map((t) => (
-                            <li key={t} className="flex items-start gap-2 text-sm group">
-                              <span
-                                className="text-[#2A5298] shrink-0 mt-0.5"
+                          {s.council_id > 0 && (
+                            <Link
+                              href={`/${city}/minutes/${s.council_id}`}
+                              className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
+                            >
+                              議事録全文
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="w-3 h-3"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                                 aria-hidden="true"
                               >
-                                ·
-                              </span>
-                              <div className="flex-1 flex items-start justify-between gap-2">
-                                {s.council_id > 0 ? (
-                                  <Link
-                                    href={`/${city}/minutes/${s.council_id}?q=${encodeURIComponent(t)}`}
-                                    className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors"
+                                <polyline points="9 18 15 12 9 6" />
+                              </svg>
+                            </Link>
+                          )}
+                        </div>
+                        {sessionThemes.length > 0 && (
+                          <div className="flex flex-wrap gap-1.5">
+                            {sessionThemes.map((t) => (
+                              <Link
+                                key={t}
+                                href={searchHref(city, cityName, `${member.name} ${t}`)}
+                                className="rounded-full bg-[#E8EEF7] px-2.5 py-1 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white"
+                              >
+                                {t}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                        {s.topics.length > 0 && (
+                          <details className="mt-3 rounded-md border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2">
+                            <summary className="cursor-pointer text-xs font-semibold text-[#4A5568] hover:text-[#1B3A6B]">
+                              議事録中の項目を確認
+                            </summary>
+                            <ul className="mt-2 space-y-1.5">
+                              {s.topics.map((t) => (
+                                <li key={t} className="flex items-start gap-2 text-sm group">
+                                  <span
+                                    className="text-[#2A5298] shrink-0 mt-0.5"
+                                    aria-hidden="true"
                                   >
-                                    {t}
-                                  </Link>
-                                ) : (
-                                  <span className="text-[#4A5568]">{t}</span>
-                                )}
-                                <Link
-                                  href={`/search?q=${encodeURIComponent(`${member.name} ${t}`)}`}
-                                  className="shrink-0 text-xs text-[#A0AEC0] hover:text-[#2A5298] opacity-0 group-hover:opacity-100 transition-opacity"
-                                  title="議事録検索"
-                                  aria-label={`${t}を検索`}
-                                >
-                                  検索
-                                </Link>
-                              </div>
-                            </li>
-                          ))}
-                        </ul>
+                                    ·
+                                  </span>
+                                  <div className="flex-1 flex items-start justify-between gap-2">
+                                    {s.council_id > 0 ? (
+                                      <Link
+                                        href={`/${city}/minutes/${s.council_id}?q=${encodeURIComponent(t)}`}
+                                        className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors"
+                                      >
+                                        {t}
+                                      </Link>
+                                    ) : (
+                                      <span className="text-[#4A5568]">{t}</span>
+                                    )}
+                                    <Link
+                                      href={searchHref(city, cityName, `${member.name} ${t}`)}
+                                      className="shrink-0 text-xs text-[#718096] hover:text-[#2A5298]"
+                                      title="議事録検索"
+                                      aria-label={`${t}を検索`}
+                                    >
+                                      検索
+                                    </Link>
+                                  </div>
+                                </li>
+                              ))}
+                            </ul>
+                          </details>
+                        )}
                       </div>
                     </li>
                   );

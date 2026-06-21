@@ -42,6 +42,7 @@
     "articles:sync-notion": "node scripts/sync-notion-articles.mjs",
     "articles:sync-notion:dry-run": "node scripts/sync-notion-articles.mjs --dry-run",
     "lint": "eslint",
+    "check:search-quality": "node scripts/check-search-quality.mjs",
     "validate:structured-minutes": "node scripts/validate-structured-minutes.mjs"
   },
   "dependencies": {

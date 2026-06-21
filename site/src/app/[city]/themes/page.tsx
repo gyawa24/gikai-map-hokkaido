@@ -95,6 +95,7 @@ export default async function CityThemesPage({
       faction: member.faction ?? "",
       photo_url: member.photo_url,
       session_count: act?.session_count ?? 0,
+      summary_topics: act?.summary_topics ?? [],
       top_topics: act?.top_topics ?? [],
       themes: act?.themes ?? [],
     };

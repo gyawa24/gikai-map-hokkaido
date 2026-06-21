@@ -30,6 +30,7 @@ export type CityThemeMemberRow = {
   faction: string;
   photo_url?: string;
   session_count: number;
+  summary_topics?: string[];
   top_topics: string[];
   themes: string[];
 };
@@ -46,7 +47,12 @@ function factionBadgeClass(faction: string): string {
 }
 
 function getDisplayTopics(row: CityThemeMemberRow): string[] {
-  return row.top_topics.slice(0, 4);
+  const topics = row.summary_topics?.length
+    ? row.summary_topics
+    : row.themes.length
+      ? row.themes
+      : row.top_topics;
+  return topics.slice(0, 4);
 }
 
 export default function CityThemesClient({ city, rows, allThemes, themeCounts }: Props) {
@@ -238,4 +244,3 @@ export default function CityThemesClient({ city, rows, allThemes, themeCounts }:
     </>
   );
 }
-

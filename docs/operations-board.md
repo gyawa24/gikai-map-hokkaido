@@ -49,6 +49,13 @@
   - 完了条件: `docs/vercel-decommission-plan.md` に沿って、まず `git.deploymentEnabled=false` を置き、数日安定後にVercel ProjectのGit連携を切る
   - 主に触る場所: `vercel.json`, `site/vercel.json`, `docs/vercel-decommission-plan.md`
 
+### Discoverability
+
+- 検索品質の正解台帳を千歳市から育てる
+  - 目的: 市民が入力しそうな検索語で、該当する議員・会議・質問テーマ・公式議事録へ到達できるかを継続確認する
+  - 完了条件: `site/data/search_quality_cases.json` に期待結果を追加し、`cd site && npm run check:search-quality` が通る。まず千歳市で10件程度、次に恵庭市・苫小牧市へ広げる
+  - 主に触る場所: `docs/search-data-cleanup-plan.md`, `site/data/search_quality_cases.json`, `site/scripts/check-search-quality.mjs`, `site/scripts/build-member-activity.mjs`, `site/scripts/build-search-index.mjs`
+
 ## Next
 
 ### Coverage

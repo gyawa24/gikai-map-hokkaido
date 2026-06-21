@@ -254,6 +254,155 @@ function extractThemes(topics) {
     .map(([t]) => t);
 }
 
+const SUMMARY_TOPIC_RULES = [
+  { label: "学校・教育", keywords: ["教育行政"] },
+  { label: "部活動の地域移行", keywords: ["部活動", "地域移行"] },
+  { label: "部活動指導員", keywords: ["部活動指導員"] },
+  { label: "部活動の地域移行の受け皿", keywords: ["運営主体", "受皿"] },
+  { label: "部活動の地域移行の受け皿", keywords: ["担い手確保"] },
+  { label: "スケート学習", keywords: ["スケート学習"] },
+  { label: "危機管理", keywords: ["危機管理体制"] },
+  { label: "学校への私物端末持ち込み", keywords: ["私的デバイス"] },
+  { label: "除雪・排雪", keywords: ["除排雪"] },
+  { label: "除雪体制", keywords: ["除雪体制"] },
+  { label: "千歳駅前の路面凍結", keywords: ["路面凍結"] },
+  { label: "除雪情報の発信", keywords: ["除雪情報システム"] },
+  { label: "学力向上の取り組み", keywords: ["学力向上"] },
+  { label: "事業評価の見直し", keywords: ["事務事業評価"] },
+  { label: "市役所の電話対応", keywords: ["電話交換"] },
+  { label: "職員研修", keywords: ["職員研修"] },
+  { label: "人口ビジョン", keywords: ["人口ビジョン"] },
+  { label: "人口予測計画", keywords: ["人口予測"] },
+  { label: "学校給食", keywords: ["学校給食", "給食"] },
+  { label: "若者支援・まちづくり", keywords: ["若者支援", "まちづくり"] },
+];
+
+const IGNORE_SUMMARY_TOPIC_PATTERNS = [
+  /ありがとうございます/,
+  /分かりました/,
+  /質問を終わります/,
+  /以下の[0-9０-９一二三四五六七八九十]+つの論点/,
+  /今までの評価/,
+  /具体的な効果/,
+  /今後の対応/,
+  /参考までに/,
+  /そのあたり/,
+  /本来目指すべき目的/,
+  /事業の予算額/,
+  /この事業費/,
+  /この事業の概要/,
+  /内容としまして/,
+  /確認だった/,
+  /再度確認/,
+  /語尾が分から/,
+  /具体的な効果/,
+  /具体的な戦略/,
+  /どのように受け止め/,
+  /予測されている/,
+  /それじゃ全然足りない/,
+  /御答弁/,
+  /答弁を伺/,
+  /お答え/,
+  /質問ではない/,
+  /感想/,
+  /御挨拶/,
+  /御指名/,
+  /終わります/,
+  /本会議において設置/,
+  /委員会に付託/,
+  /予算特別委員会に付託/,
+  /補正予算特別委員会に付託/,
+  /決算特別委員会に付託/,
+  /ただいま/,
+  /今回/,
+  /先ほど/,
+  /それでは/,
+  /^[0-9]+つの事業$/,
+  /^事業内容$/,
+  /^本事業$/,
+  /^事業の目的$/,
+  /^今後の活用の見通し$/,
+  /^今後の整備$/,
+  /^予算額/,
+];
+
+const SUMMARY_TOPIC_ALLOW_PATTERNS = [
+  /(行政|事業|業務|制度|計画|体制|方針|政策|支援|対策|整備|管理|運用|活用|連携|保全|財政|予算|決算|交通|給食|保育|医療|福祉|観光|防災|安全|人口|除雪|学習|研修|手当|会計|負担|水道|下水道|土地|道路|空港|基地|農業|鳥獣|ヒグマ|公園|図書館|郷土資料|まちづくり|ビジョン)/,
+];
+
+function toHalfWidthDigits(text) {
+  return text.replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0));
+}
+
+function applySummaryRule(topic) {
+  return SUMMARY_TOPIC_RULES.find((rule) => rule.keywords.every((kw) => topic.includes(kw)))?.label ?? null;
+}
+
+function cleanSummaryTopic(raw) {
+  const source = toHalfWidthDigits(String(raw ?? ""))
+    .replace(/\s+/g, " ")
+    .replace(/^[、，。・\s]+/, "")
+    .trim();
+  let topic = source;
+  if (!topic) return null;
+  if (IGNORE_SUMMARY_TOPIC_PATTERNS.some((pattern) => pattern.test(topic))) return null;
+
+  const ruled = applySummaryRule(topic);
+  if (ruled) return ruled;
+
+  const hasExplicitTopicMarker = /(大項目|中項目|小項目|質問項目|^[0-9一二三四五六七八九十]+[点つ目]|^の[0-9一二三四五六七八九十])/.test(topic);
+  if (!hasExplicitTopicMarker && topic.length > 18) return null;
+
+  topic = topic
+    .replace(/^(まずは?|続きまして|なお|初めに|最後に|改めまして|そこで|また|そして|次に|では、次に|質問を始める前に)[、，。\s]*/g, "")
+    .replace(/^の[0-9一二三四五六七八九十]+(点目)?として[、，\s]*/g, "")
+    .replace(/^(番|に|上で)[、，\s]*/g, "")
+    .replace(/^.*?(中項目|小項目)[0-9一二三四五六七八九十（）()]*[、，:\s]*/g, "")
+    .replace(/^(大項目|中項目|小項目|質問項目)[0-9一二三四五六七八九十（）()]*[、，:\s]*/g, "")
+    .replace(/^(大項目|中項目|小項目|質問項目)[0-9一二三四五六七八九十（）()]*の?/g, "")
+    .replace(/^[0-9一二三四五六七八九十]+[点つ目として、，\s]+/g, "")
+    .replace(/^(この|その|今の|昨今、特に)/g, "")
+    .replace(/[、，]?(について|に関して|をめぐって).*$/g, "")
+    .replace(/(事業|業務|計画|体制|制度|方針|政策)の概要$/g, "$1")
+    .replace(/^(市の|今の|この)/g, "")
+    .replace(/[。、「」『』（）()]+$/g, "")
+    .trim();
+
+  if (!topic || topic.length < 3) return null;
+  if (IGNORE_SUMMARY_TOPIC_PATTERNS.some((pattern) => pattern.test(topic))) return null;
+  if (!SUMMARY_TOPIC_ALLOW_PATTERNS.some((pattern) => pattern.test(topic))) return null;
+  if (topic.length > 18) return null;
+  return topic;
+}
+
+function addSummaryTopic(result, topic) {
+  if (!topic) return;
+  const existingIndex = result.findIndex((item) => item === topic || item.includes(topic) || topic.includes(item));
+  if (existingIndex === -1) {
+    result.push(topic);
+    return;
+  }
+  if (topic.length < result[existingIndex].length) {
+    result[existingIndex] = topic;
+  }
+}
+
+function summarizeTopics(topics) {
+  const result = [];
+  for (const topic of topics) {
+    addSummaryTopic(result, cleanSummaryTopic(topic));
+    if (result.length >= 12) break;
+  }
+  return result;
+}
+
+function toOutputSession(session) {
+  return {
+    ...session,
+    summary_topics: summarizeTopics(session.topics).slice(0, 8),
+  };
+}
+
 // --- 出力形式に変換 ---
 const result = {};
 for (const name of memberNames) {
@@ -272,14 +421,16 @@ for (const name of memberNames) {
     .map(([t]) => t);
 
   const themes = extractThemes(topTopics);
+  const summaryTopics = summarizeTopics(topTopics);
 
   result[name] = {
     name,
     session_count: a.sessions.length,
     themes,
-    top_topics: topTopics.slice(0, 6),
+    summary_topics: summaryTopics,
+    top_topics: summaryTopics.slice(0, 6),
     all_topics: topTopics,
-    sessions: a.sessions,
+    sessions: a.sessions.map(toOutputSession),
   };
 }
 

@@ -14,12 +14,14 @@ export type MemberActivitySession = {
   year: string;
   council_id: number;
   topics: string[];
+  summary_topics?: string[];
 };
 
 export type MemberActivity = {
   name: string;
   session_count: number;
   themes: string[];
+  summary_topics?: string[];
   top_topics: string[];
   all_topics: string[];
   sessions: MemberActivitySession[];

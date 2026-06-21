@@ -47,7 +47,7 @@ function normalizeForSearch(text: string): string {
 }
 
 async function loadMinutesSearchIndex(signal: AbortSignal): Promise<MinutesSearchIndex> {
-  minutesSearchIndexPromise ??= fetch("/generated/search-index.json", { cache: "force-cache" })
+  minutesSearchIndexPromise ??= fetch("/generated/search-index.json", { cache: "no-cache" })
     .then(async (response) => {
       if (!response.ok) throw new Error("検索インデックスの読み込みに失敗しました");
       const data = (await response.json()) as MinutesSearchIndex;

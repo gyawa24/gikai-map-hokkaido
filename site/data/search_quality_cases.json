@@ -1,0 +1,58 @@
+[
+  {
+    "id": "chitose-ogawa-skate-learning",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "小川 陽平 スケート学習",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 572,
+      "member_name": "小川陽平",
+      "textIncludes": ["スケート学習", "部活動の地域移行"]
+    },
+    "note": "議員名の空白あり検索で、市民向け要約テーマから該当会議へ到達できるか。"
+  },
+  {
+    "id": "chitose-ogawa-compact-name-skate-learning",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "小川陽平 スケート学習",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 572,
+      "member_name": "小川陽平",
+      "textIncludes": ["スケート学習"]
+    },
+    "note": "議員名の空白なし検索でも同じ会議へ到達できるか。"
+  },
+  {
+    "id": "chitose-ogawa-snow-removal",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "小川 陽平 除雪",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 571,
+      "member_name": "小川陽平",
+      "textIncludes": ["除雪・排雪", "千歳駅前の路面凍結"]
+    },
+    "note": "決算特別委員会の質問テーマが、本文断片ではなく市民向けテーマで拾えるか。"
+  },
+  {
+    "id": "chitose-ogawa-school-lunch",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "小川 陽平 学校給食",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 567,
+      "member_name": "小川陽平",
+      "textIncludes": ["学校給食", "人口ビジョン"]
+    },
+    "note": "複数テーマを持つ一般質問で、給食テーマから会議に到達できるか。"
+  }
+]

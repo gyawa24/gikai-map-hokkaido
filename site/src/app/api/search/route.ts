@@ -6,6 +6,7 @@ import { buildSearchAssist, buildSearchQuery, excerptSearchText, matchesSearchTe
 import { getClientAddress } from "@/lib/security";
 import { fetchStaticAsset } from "@/lib/staticAssetFetch";
 import type { SearchAssistGroup, SearchOperator } from "@/lib/searchQuery";
+import type { MemberActivity } from "@/types/member";
 
 const SEARCH_WINDOW_SECONDS = 60;
 const SEARCH_GET_LIMIT = 60;
@@ -25,6 +26,13 @@ function shouldUseClientSearch(request: NextRequest): boolean {
     host === "www.chihougikai.com" ||
     host.endsWith(".workers.dev")
   );
+}
+
+function clientSearchIndexUrl(cityFilter: string): string {
+  if (cityFilter !== "all" && /^[a-z0-9-]+$/.test(cityFilter)) {
+    return `/generated/search-indexes/${cityFilter}.json`;
+  }
+  return "/generated/search-index.json";
 }
 
 // 日付文字列（"2026-03-02" 等）から西暦4桁を取り出す
@@ -60,7 +68,19 @@ function getCityMap(index: RuntimeSearchIndex): Record<string, string> {
   for (const row of index.enriched ?? []) entries.set(row.city, row.cityName);
   for (const row of index.decisions ?? []) entries.set(row.city, row.cityName);
   for (const row of index.members ?? []) entries.set(row.city, row.cityName);
+  for (const row of index.memberActivities ?? []) entries.set(row.city, row.cityName);
   return Object.fromEntries(entries);
+}
+
+function uniqueTexts(values: Array<string | undefined | null>): string[] {
+  const seen = new Set<string>();
+  return values
+    .map((value) => value?.trim() ?? "")
+    .filter((value) => {
+      if (!value || seen.has(value)) return false;
+      seen.add(value);
+      return true;
+    });
 }
 
 // ---------------------------------------------------------------------------
@@ -191,6 +211,17 @@ type IndexedMember = {
   committees: string[];
 };
 
+type IndexedMemberActivity = {
+  city: string;
+  cityName: string;
+  member_name: string;
+  council_id: number;
+  council_name: string;
+  year?: string;
+  topics?: string[];
+  summary_topics?: string[];
+};
+
 type RuntimeSearchIndex = {
   version?: number;
   generated_at?: string;
@@ -202,13 +233,23 @@ type RuntimeSearchIndex = {
   enriched?: EnrichedDoc[];
   decisions?: IndexedDecision[];
   members?: IndexedMember[];
+  memberActivities?: IndexedMemberActivity[];
 };
 
 let runtimeSearchIndexPromise: Promise<RuntimeSearchIndex> | null = null;
 let hasCloudflareAssetsPromise: Promise<boolean> | null = null;
 
 function emptyRuntimeSearchIndex(): RuntimeSearchIndex {
-  return { agendas: [], sessions: [], enriched: [], decisions: [], members: [] };
+  return { agendas: [], sessions: [], enriched: [], decisions: [], members: [], memberActivities: [] };
+}
+
+function memberActivityText(activity: IndexedMemberActivity, cityName: string): string {
+  return [
+    cityName,
+    activity.member_name,
+    activity.council_name,
+    ...uniqueTexts([...(activity.summary_topics ?? []), ...(activity.topics ?? [])]),
+  ].join(" ");
 }
 
 function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
@@ -219,6 +260,7 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
   const enriched: EnrichedDoc[] = [];
   const decisions: IndexedDecision[] = [];
   const members: IndexedMember[] = [];
+  const memberActivities: IndexedMemberActivity[] = [];
 
   for (const city of allCities) {
     const cityName = cityMap[city];
@@ -267,6 +309,30 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
       }))
     );
 
+    const activity = readCityJson<Record<string, MemberActivity>>(city, "members_activity.json") ?? {};
+    memberActivities.push(
+      ...Object.values(activity).flatMap((entry) => {
+        const memberName = entry.name?.trim() ?? "";
+        if (!memberName) return [];
+        return (entry.sessions ?? [])
+          .filter((session) => Number.isFinite(Number(session.council_id)) && Number(session.council_id) > 0)
+          .map((session) => ({
+            city,
+            cityName,
+            member_name: memberName,
+            council_id: Number(session.council_id),
+            council_name: session.session ?? "",
+            year: session.year || yearFromCouncilName(session.session ?? ""),
+            summary_topics: Array.isArray(session.summary_topics) ? session.summary_topics : [],
+            topics: Array.isArray(session.summary_topics) && session.summary_topics.length
+              ? []
+              : Array.isArray(session.topics)
+                ? session.topics.slice(0, 6)
+                : [],
+          }));
+      })
+    );
+
     const memberList = getMembers(city);
     if (memberList.length > 0) {
       members.push(
@@ -307,6 +373,7 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
     enriched,
     decisions,
     members,
+    memberActivities,
   };
 }
 
@@ -579,7 +646,7 @@ export async function GET(request: NextRequest) {
         memberFactions: [],
       },
       clientSearchRequired: true,
-      indexUrl: "/generated/search-index.json",
+      indexUrl: clientSearchIndexUrl(cityFilter),
     } satisfies SearchResponse);
     response.headers.set("x-gikai-search-mode", "client");
     return response;
@@ -692,6 +759,43 @@ export async function GET(request: NextRequest) {
         score,
       });
       seenMinutes.add(`${agenda.city}_${agenda.council_id}`);
+    }
+
+    for (const activity of runtimeIndex.memberActivities ?? []) {
+        const city = activity.city;
+        const cityName = activity.cityName || cityMap[city] || city;
+        const minuteKey = `${city}_${activity.council_id}`;
+        if (seenMinutes.has(minuteKey)) continue;
+        const searchText = memberActivityText(activity, cityName);
+        if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
+        const summaryTopics = uniqueTexts(activity.summary_topics ?? []);
+        const topics = uniqueTexts(activity.topics ?? []);
+        const visibleTopics = summaryTopics.length ? summaryTopics : topics.slice(0, 6);
+        const contextSource = visibleTopics.length
+          ? `${activity.member_name}議員: ${visibleTopics.join("、")}`
+          : searchText;
+        let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 32;
+        const topicText = [...summaryTopics, ...topics].join(" ");
+        if (topicText && matchesSearchText(topicText, searchQuery, mode, searchMode)) score += 22;
+        if (matchesSearchText(activity.member_name, searchQuery, mode, searchMode)) score += 12;
+        if (matchesSearchText(activity.council_name, searchQuery, mode, searchMode)) score += 8;
+        sessionResults.push({
+          id: `${city}_member_activity_${activity.member_name}_${activity.council_id}`,
+          city,
+          cityName,
+          sourceType: "minutes",
+          title: activity.council_name,
+          committee: `${activity.member_name}議員の質問`,
+          href: `/${city}/minutes/${activity.council_id}?q=${encodeURIComponent(q)}`,
+          segIndex: 0,
+          label: "",
+          startTime: "",
+          context: excerptSearchText(contextSource, tokens, 100),
+          field: "質問テーマ",
+          year: activity.year ?? yearFromCouncilName(activity.council_name),
+          score,
+        });
+        seenMinutes.add(minuteKey);
     }
 
     for (const doc of runtimeIndex.enriched ?? []) {

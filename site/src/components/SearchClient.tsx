@@ -134,6 +134,17 @@ type IndexedMember = {
   committees: string[];
 };
 
+type IndexedMemberActivity = {
+  city: string;
+  cityName: string;
+  member_name: string;
+  council_id: number;
+  council_name: string;
+  year?: string;
+  topics?: string[];
+  summary_topics?: string[];
+};
+
 type ClientRuntimeSearchIndex = {
   municipalities?: Array<{ slug: string; name: string }>;
   agendas: AgendaEntry[];
@@ -141,12 +152,13 @@ type ClientRuntimeSearchIndex = {
   enriched?: EnrichedDoc[];
   decisions?: IndexedDecision[];
   members?: IndexedMember[];
+  memberActivities?: IndexedMemberActivity[];
 };
 
 type RankedSessionHit = SessionHit & { score: number };
 type RankedMemberHit = MemberHit & { score: number };
 
-let clientSearchIndexPromise: Promise<ClientRuntimeSearchIndex> | null = null;
+const clientSearchIndexPromises = new Map<string, Promise<ClientRuntimeSearchIndex>>();
 
 function yearFromDate(date: string | undefined | null): string {
   const match = date?.match(/^(\d{4})/);
@@ -173,7 +185,28 @@ function getCityMap(index: ClientRuntimeSearchIndex): Record<string, string> {
   for (const row of index.enriched ?? []) entries.set(row.city, row.cityName);
   for (const row of index.decisions ?? []) entries.set(row.city, row.cityName);
   for (const row of index.members ?? []) entries.set(row.city, row.cityName);
+  for (const row of index.memberActivities ?? []) entries.set(row.city, row.cityName);
   return Object.fromEntries(entries);
+}
+
+function uniqueTexts(values: Array<string | undefined | null>): string[] {
+  const seen = new Set<string>();
+  return values
+    .map((value) => value?.trim() ?? "")
+    .filter((value) => {
+      if (!value || seen.has(value)) return false;
+      seen.add(value);
+      return true;
+    });
+}
+
+function memberActivityText(activity: IndexedMemberActivity, cityName: string): string {
+  return [
+    cityName,
+    activity.member_name,
+    activity.council_name,
+    ...uniqueTexts([...(activity.summary_topics ?? []), ...(activity.topics ?? [])]),
+  ].join(" ");
 }
 
 function sortSessionHits(results: RankedSessionHit[]): RankedSessionHit[] {
@@ -262,18 +295,22 @@ function stripMemberScore(results: RankedMemberHit[]): MemberHit[] {
 }
 
 async function loadClientSearchIndex(indexUrl: string, signal: AbortSignal): Promise<ClientRuntimeSearchIndex> {
-  clientSearchIndexPromise ??= fetch(indexUrl, { cache: "force-cache" })
-    .then(async (response) => {
-      if (!response.ok) throw new Error("検索インデックスの読み込みに失敗しました");
-      const data = (await response.json()) as ClientRuntimeSearchIndex;
-      if (!Array.isArray(data.agendas)) throw new Error("検索インデックスが壊れています");
-      return data;
-    })
-    .catch((error) => {
-      clientSearchIndexPromise = null;
-      throw error;
-    });
-  const data = await clientSearchIndexPromise;
+  let promise = clientSearchIndexPromises.get(indexUrl);
+  if (!promise) {
+    promise = fetch(indexUrl, { cache: "no-cache" })
+      .then(async (response) => {
+        if (!response.ok) throw new Error("検索インデックスの読み込みに失敗しました");
+        const data = (await response.json()) as ClientRuntimeSearchIndex;
+        if (!Array.isArray(data.agendas)) throw new Error("検索インデックスが壊れています");
+        return data;
+      })
+      .catch((error) => {
+        clientSearchIndexPromises.delete(indexUrl);
+        throw error;
+      });
+    clientSearchIndexPromises.set(indexUrl, promise);
+  }
+  const data = await promise;
   if (signal.aborted) throw new Error("検索を中断しました");
   return data;
 }
@@ -395,6 +432,43 @@ function runClientSearch(
         score,
       });
       seenMinutes.add(`${agenda.city}_${agenda.council_id}`);
+    }
+
+    for (const activity of runtimeIndex.memberActivities ?? []) {
+      const city = activity.city;
+      const cityName = activity.cityName || cityMap[city] || city;
+      const minuteKey = `${city}_${activity.council_id}`;
+      if (seenMinutes.has(minuteKey)) continue;
+      const searchText = memberActivityText(activity, cityName);
+      if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
+      const summaryTopics = uniqueTexts(activity.summary_topics ?? []);
+      const topics = uniqueTexts(activity.topics ?? []);
+      const visibleTopics = summaryTopics.length ? summaryTopics : topics.slice(0, 6);
+      const contextSource = visibleTopics.length
+        ? `${activity.member_name}議員: ${visibleTopics.join("、")}`
+        : searchText;
+      let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 32;
+      const topicText = [...summaryTopics, ...topics].join(" ");
+      if (topicText && matchesSearchText(topicText, searchQuery, mode, searchMode)) score += 22;
+      if (matchesSearchText(activity.member_name, searchQuery, mode, searchMode)) score += 12;
+      if (matchesSearchText(activity.council_name, searchQuery, mode, searchMode)) score += 8;
+      sessionResults.push({
+        id: `${city}_member_activity_${activity.member_name}_${activity.council_id}`,
+        city,
+        cityName,
+        sourceType: "minutes",
+        title: activity.council_name,
+        committee: `${activity.member_name}議員の質問`,
+        href: `/${city}/minutes/${activity.council_id}?q=${encodeURIComponent(q)}`,
+        segIndex: 0,
+        label: "",
+        startTime: "",
+        context: excerptSearchText(contextSource, tokens, 100),
+        field: "質問テーマ",
+        year: activity.year ?? yearFromCouncilName(activity.council_name),
+        score,
+      });
+      seenMinutes.add(minuteKey);
     }
 
     for (const doc of runtimeIndex.enriched ?? []) {
