@@ -37,6 +37,24 @@ function normalizeForSearch(text: string): string {
     .trim();
 }
 
+function compactForSearch(text: string): string {
+  return normalizeForSearch(text).replace(/\s+/g, "");
+}
+
+function looksLikeMemberNameSearch(query: string, members: MemberHit[]): boolean {
+  const compactQuery = compactForSearch(query);
+  if (compactQuery.length < 2) return false;
+  return members.some((member) => {
+    const compactName = compactForSearch(member.name);
+    const compactFurigana = compactForSearch(member.furigana);
+    return (
+      compactName.includes(compactQuery) ||
+      compactQuery.includes(compactName) ||
+      Boolean(compactFurigana && compactFurigana.includes(compactQuery))
+    );
+  });
+}
+
 function groupByCity<T extends { city: string; cityName: string }>(items: T[]) {
   const groups = new Map<string, { city: string; cityName: string; items: T[] }>();
   for (const item of items) {
@@ -798,10 +816,12 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           });
         }
         if (requestIdRef.current !== requestId) return;
-        setSessionResults(data.sessionResults ?? []);
-        setMemberResults(data.memberResults ?? []);
-        setSessionTotal(data.sessionTotal ?? (data.sessionResults ?? []).length);
-        setMemberTotal(data.memberTotal ?? (data.memberResults ?? []).length);
+        const nextSessionResults = data.sessionResults ?? [];
+        const nextMemberResults = data.memberResults ?? [];
+        setSessionResults(nextSessionResults);
+        setMemberResults(nextMemberResults);
+        setSessionTotal(data.sessionTotal ?? nextSessionResults.length);
+        setMemberTotal(data.memberTotal ?? nextMemberResults.length);
         setCityFacets(data.facets?.cities ?? []);
         setSessionSourceFacets(data.facets?.sessionSources ?? []);
         setSessionYearFacets(data.facets?.sessionYears ?? []);
@@ -811,6 +831,14 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         setSearchSuggestions(data.searchSuggestions ?? []);
         setTruncated(Boolean(data.truncated));
         setHasSearchResponse(true);
+        if (
+          tab === "sessions" &&
+          nextSessionResults.length === 0 &&
+          nextMemberResults.length > 0 &&
+          looksLikeMemberNameSearch(q, nextMemberResults)
+        ) {
+          setTab("members");
+        }
         setRecentQueries((prev) => {
           const next = [q, ...prev.filter((item) => normalizeForSearch(item) !== normalizeForSearch(q))].slice(0, 6);
           try {

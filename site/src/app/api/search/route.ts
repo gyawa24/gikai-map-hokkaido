@@ -622,6 +622,7 @@ export async function GET(request: NextRequest) {
   }
 
   if (shouldUseClientSearch(request) || (await hasCloudflareAssets())) {
+    const indexUrl = clientSearchIndexUrl(cityFilter);
     const response = NextResponse.json({
       sessionResults: [],
       memberResults: [],
@@ -646,9 +647,11 @@ export async function GET(request: NextRequest) {
         memberFactions: [],
       },
       clientSearchRequired: true,
-      indexUrl: clientSearchIndexUrl(cityFilter),
+      indexUrl,
     } satisfies SearchResponse);
     response.headers.set("x-gikai-search-mode", "client");
+    response.headers.set("x-gikai-search-index-url", indexUrl);
+    response.headers.set("cache-control", "no-store");
     return response;
   }
 

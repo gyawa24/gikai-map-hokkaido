@@ -31,7 +31,7 @@ const DISCUSSION_TYPES = new Set([
   "◎市長",
   "○一般質問",
 ]);
-const EXCERPT_MAX = 500;
+const EXCERPT_MAX = 400;
 
 function cleanText(s) {
   return (s ?? "").replace(/\s+/g, " ").trim();

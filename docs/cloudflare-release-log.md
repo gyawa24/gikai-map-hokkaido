@@ -279,3 +279,46 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - 404導線: 存在しないURLは404応答。not-found の台帳駆動クイックリンクは本番HTMLに反映済み。
 - rollback可否: Vercel側を残して確認予定。
 - 備考: Cloudflare release status は production host verified、deploy URL gate ready。`site/data/news.json` 追記と release log のみ、デプロイ後に別コミットとして保存する。
+
+## 2026-07-02 Cloudflare 検証
+
+実施者: Codex
+
+#### ローカル確認
+
+- `npm run cf:preflight`: 通過
+- preflight recorded_at: 2026-07-02 13:42:26 JST
+- source files: 14,958
+- artifact files: 3,099
+- dry-run: 通過
+- 備考: Cloudflare上のURL検証まで実施。
+
+#### Cloudflare upload
+
+- 実行コマンド: CLOUDFLARE_RELEASE_CONFIRM=upload-and-verify npm run cf:upload-verify
+- Workers URL: https://chihougikai.com
+- 検証用サブドメイン: 未記録
+- upload結果: 実施済み
+- 備考:
+
+#### 検証URL確認
+
+- 実行コマンド: npm run cf:verify-url -- --base https://chihougikai.com
+- verified URL: https://chihougikai.com
+- verified_at: 2026-07-02 13:45:08 JST
+- expected robots: indexable
+- `npm run cf:release-status`: ローカル成果物OK・Cloudflare URL検証済み
+- deploy URL gate: ready (https://chihougikai.com)
+- 備考:
+
+#### 本番DNS切替後の確認
+
+- DNS切替時刻: 未実施
+- 実行コマンド: 未実施
+- production URL: 未実施
+- robots: 未確認
+- sitemap: 未確認
+- search: 未確認
+- GitHub Raw画像: 未確認
+- rollback可否: Vercel側を残して確認予定
+- 備考:
