@@ -104,6 +104,7 @@ function MemberCard({
                 {memberHrefBase ? (
                   <Link
                     href={`${memberHrefBase}/${member.seat_number}`}
+                    prefetch={false}
                     className="block truncate rounded text-base font-black leading-snug text-[#1B3A6B] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                   >
                     {member.name}
@@ -153,6 +154,7 @@ function MemberCard({
             {memberHrefBase && (
               <Link
                 href={`${memberHrefBase}/${member.seat_number}`}
+                prefetch={false}
                 className="px-3 py-2.5 transition-colors hover:bg-[#F5F8FD] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
               >
                 詳細
@@ -161,6 +163,7 @@ function MemberCard({
             {activity && activityDetailHref && (
               <Link
                 href={activityDetailHref}
+                prefetch={false}
                 className="px-3 py-2.5 transition-colors hover:bg-[#F5F8FD] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
               >
                 質問履歴
@@ -199,6 +202,7 @@ function MemberCard({
             {memberHrefBase ? (
               <Link
                 href={`${memberHrefBase}/${member.seat_number}`}
+                prefetch={false}
                 className="rounded text-[1.05rem] font-bold leading-snug text-[#1B3A6B] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:text-lg"
               >
                 {member.name}
@@ -292,6 +296,7 @@ function MemberCard({
                 <Link
                   key={tag.policyId}
                   href={`${memberHrefBase?.replace("/members", "/plan") ?? "/chitose/plan"}`}
+                  prefetch={false}
                   className={`text-xs px-2 py-0.5 rounded-full border ${GOAL_BADGE_COLORS[tag.goalId] ?? "bg-gray-100 text-gray-700 border-gray-300"} hover:opacity-80 transition-opacity`}
                   title={`総合計画 基本目標${tag.goalId}: ${tag.goalTitle}`}
                 >
@@ -308,6 +313,7 @@ function MemberCard({
       {activity && activityDetailHref && (
         <Link
           href={activityDetailHref}
+          prefetch={false}
           className="flex w-full items-center justify-between border-t border-[#E2E8F0] bg-[#FAFAF8] px-4 py-2.5 text-sm text-[#4A5568] transition-colors hover:bg-[#F5F8FD] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
         >
           <span className="text-xs font-medium">質問履歴を見る</span>

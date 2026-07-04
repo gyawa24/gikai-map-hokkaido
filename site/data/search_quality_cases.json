@@ -1,5 +1,17 @@
 [
   {
+    "id": "chitose-ogawa-compact-name-only",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "小川陽平",
+    "operator": "and",
+    "expected": {
+      "source": "member",
+      "member_name": "小川 陽平"
+    },
+    "note": "姓・名の空白なしで議員名だけを検索しても、議員結果へ到達できるか。"
+  },
+  {
     "id": "chitose-ogawa-skate-learning",
     "city": "chitose",
     "cityName": "千歳市",

@@ -96,7 +96,7 @@ export default function RootLayout({
                   <span>試験公開中。引用・数字は公式資料で確認してください。</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                  <Link href="/news" className="underline decoration-[#CBD5E0] underline-offset-2 hover:text-[#1b3a6b]">
+                  <Link href="/news" prefetch={false} className="underline decoration-[#CBD5E0] underline-offset-2 hover:text-[#1b3a6b]">
                     更新情報
                   </Link>
                   <a href="mailto:ogawayohei.hkd@gmail.com" className="underline decoration-[#CBD5E0] underline-offset-2 hover:text-[#1b3a6b]">
@@ -122,14 +122,14 @@ export default function RootLayout({
                       情報の入口としての見やすさを重視しつつ、公共サイトとしての信頼感も保つよう設計しています。
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2 text-xs font-bold text-[#c7d5eb]">
-                      <Link href="/" className="theme-pill-soft border-white/15 bg-white/10 text-white">収録自治体一覧</Link>
-                      <Link href="/about" className="theme-pill-soft border-white/15 bg-white/10 text-white">地方議会ドットコムとは</Link>
-                      <Link href="/news" className="theme-pill-soft border-white/15 bg-white/10 text-white">お知らせ</Link>
-                      <Link href="/articles" className="theme-pill-soft border-white/15 bg-white/10 text-white">読みもの</Link>
-                      <Link href="/sources" className="theme-pill-soft border-white/15 bg-white/10 text-white">掲載情報と出典</Link>
-                      <Link href="/methodology" className="theme-pill-soft border-white/15 bg-white/10 text-white">算出方法と中立性</Link>
-                      <Link href="/privacy" className="theme-pill-soft border-white/15 bg-white/10 text-white">プライバシーポリシー</Link>
-                      <Link href="/terms" className="theme-pill-soft border-white/15 bg-white/10 text-white">利用規約</Link>
+                      <Link href="/" prefetch={false} className="theme-pill-soft border-white/15 bg-white/10 text-white">収録自治体一覧</Link>
+                      <Link href="/about" prefetch={false} className="theme-pill-soft border-white/15 bg-white/10 text-white">地方議会ドットコムとは</Link>
+                      <Link href="/news" prefetch={false} className="theme-pill-soft border-white/15 bg-white/10 text-white">お知らせ</Link>
+                      <Link href="/articles" prefetch={false} className="theme-pill-soft border-white/15 bg-white/10 text-white">読みもの</Link>
+                      <Link href="/sources" prefetch={false} className="theme-pill-soft border-white/15 bg-white/10 text-white">掲載情報と出典</Link>
+                      <Link href="/methodology" prefetch={false} className="theme-pill-soft border-white/15 bg-white/10 text-white">算出方法と中立性</Link>
+                      <Link href="/privacy" prefetch={false} className="theme-pill-soft border-white/15 bg-white/10 text-white">プライバシーポリシー</Link>
+                      <Link href="/terms" prefetch={false} className="theme-pill-soft border-white/15 bg-white/10 text-white">利用規約</Link>
                       <a href={SITE_X_URL} target="_blank" rel="noopener noreferrer" className="theme-pill-soft border-white/15 bg-white/10 text-white">公式X</a>
                     </div>
                   </div>

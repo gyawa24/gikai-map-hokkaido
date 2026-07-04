@@ -34,6 +34,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
       <Link
         key={item.href}
         href={item.href}
+        prefetch={false}
         aria-current={isActive ? "page" : undefined}
         className={`inline-flex min-h-11 shrink-0 items-center whitespace-nowrap rounded-full border px-4 py-2 text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
           isActive
@@ -55,6 +56,7 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
         <div className="flex min-w-0 flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
           <Link
             href="/"
+            prefetch={false}
             aria-label="地方議会ドットコム（γ） トップページへ"
             className="inline-flex min-h-11 min-w-0 self-start items-center gap-3 px-1 py-1 text-[#111827] focus-visible:rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
           >

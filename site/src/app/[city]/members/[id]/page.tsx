@@ -139,11 +139,7 @@ export default async function CityMemberDetailPage({
 
   const activity = await getActivity(city);
   const memberActivity = activity[member.name.replace(/\s/g, "")];
-  const questionThemes = memberActivity?.summary_topics?.length
-    ? memberActivity.summary_topics
-    : memberActivity?.themes?.length
-      ? memberActivity.themes
-      : memberActivity?.top_topics ?? [];
+  const questionThemes = memberActivity?.summary_topics ?? [];
 
   const memberSearchHref = searchHref(city, cityName, member.name);
   const councilName = municipality?.council_name ?? `${cityName}議会`;
@@ -182,7 +178,7 @@ export default async function CityMemberDetailPage({
       <JsonLd data={[breadcrumb, profilePage]} />
       {/* パンくず */}
       <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
-        <Link href={`/${city}`} className="hover:text-[#1B3A6B] transition-colors">
+        <Link href={`/${city}`} prefetch={false} className="hover:text-[#1B3A6B] transition-colors">
           議員一覧
         </Link>
         <span aria-hidden="true">›</span>
@@ -308,6 +304,7 @@ export default async function CityMemberDetailPage({
           </p>
           <Link
             href={memberSearchHref}
+            prefetch={false}
             className="theme-button shrink-0 px-4 py-1.5 text-sm font-medium"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -323,7 +320,7 @@ export default async function CityMemberDetailPage({
           cityName={cityName}
           factionLabel={member.faction ?? member.party ?? undefined}
           sessionCount={memberActivity?.session_count}
-          themes={memberActivity?.themes ?? []}
+          themes={questionThemes}
         />
       </section>
 
@@ -362,19 +359,24 @@ export default async function CityMemberDetailPage({
                 </button>
               </form>
             </div>
-            {questionThemes.length > 0 && (
+            {questionThemes.length > 0 ? (
               <div className="mt-3 flex flex-wrap gap-1.5">
                 {questionThemes.map((t) => {
                   return (
                     <Link
                       key={t}
                       href={searchHref(city, cityName, `${member.name} ${t}`)}
+                      prefetch={false}
                       className="rounded-full border border-[#CBD5E0] bg-white px-2.5 py-1 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white"
                     >
                       {t}
                     </Link>
                   );
                 })}
+              </div>
+            ) : (
+              <div className="mt-3 rounded-lg border border-dashed border-[#CBD5E0] bg-white px-3 py-2 text-sm leading-relaxed text-[#4A5568]">
+                AI要約テーマは準備中です。下の各会議の「議事録中の項目を確認」では、原文から抽出した項目を確認できます。
               </div>
             )}
           </div>
@@ -423,6 +425,7 @@ export default async function CityMemberDetailPage({
                           {s.council_id > 0 && (
                             <Link
                               href={`/${city}/minutes/${s.council_id}`}
+                              prefetch={false}
                               className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
                             >
                               議事録全文
@@ -448,6 +451,7 @@ export default async function CityMemberDetailPage({
                               <Link
                                 key={t}
                                 href={searchHref(city, cityName, `${member.name} ${t}`)}
+                                prefetch={false}
                                 className="rounded-full bg-[#E8EEF7] px-2.5 py-1 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white"
                               >
                                 {t}
@@ -469,26 +473,7 @@ export default async function CityMemberDetailPage({
                                   >
                                     ·
                                   </span>
-                                  <div className="flex-1 flex items-start justify-between gap-2">
-                                    {s.council_id > 0 ? (
-                                      <Link
-                                        href={`/${city}/minutes/${s.council_id}?q=${encodeURIComponent(t)}`}
-                                        className="text-[#2A5298] hover:text-[#1B3A6B] hover:underline transition-colors"
-                                      >
-                                        {t}
-                                      </Link>
-                                    ) : (
-                                      <span className="text-[#4A5568]">{t}</span>
-                                    )}
-                                    <Link
-                                      href={searchHref(city, cityName, `${member.name} ${t}`)}
-                                      className="shrink-0 text-xs text-[#718096] hover:text-[#2A5298]"
-                                      title="議事録検索"
-                                      aria-label={`${t}を検索`}
-                                    >
-                                      検索
-                                    </Link>
-                                  </div>
+                                  <span className="flex-1 text-[#4A5568]">{t}</span>
                                 </li>
                               ))}
                             </ul>

@@ -169,7 +169,7 @@ export default async function HomePage() {
         <p className="mt-1 text-base leading-relaxed text-[#4A5568]">
           地方議会ドットコムは、北海道内の市町村議会と北海道議会の議員情報・議事録・議決結果を横断して探せる非公式の市民向け情報サイトです。
         </p>
-        <Link href="/about" className="mt-2 inline-flex text-sm font-black text-[#2A5298] hover:underline">
+        <Link href="/about" prefetch={false} className="mt-2 inline-flex text-sm font-black text-[#2A5298] hover:underline">
           くわしく見る
         </Link>
       </section>
@@ -191,6 +191,7 @@ export default async function HomePage() {
             <Link
               key={item.label}
               href={item.href}
+              prefetch={false}
               className="motion-surface flex min-h-12 items-center rounded-lg border border-[#CBD5E0] bg-white px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] sm:block sm:min-h-0 sm:py-4"
             >
               <h3 className="text-base font-black text-[#1B3A6B]">{item.label}</h3>
@@ -242,7 +243,7 @@ export default async function HomePage() {
         <section className="mx-auto max-w-[68rem] border-t border-[#D8DEE8] px-1 pt-1">
           <div className="mb-3 flex items-center justify-between gap-3 px-3 pt-3 sm:px-4">
             <h2 className="text-xl font-black text-[#111827]">更新情報</h2>
-            <Link href="/news" className="text-sm font-black text-[#1B3A6B]">
+            <Link href="/news" prefetch={false} className="text-sm font-black text-[#1B3A6B]">
               すべて見る ›
             </Link>
           </div>
@@ -251,6 +252,7 @@ export default async function HomePage() {
               <Link
                 key={`${item.date}-${item.title}`}
                 href="/news"
+                prefetch={false}
                 className="block px-4 py-4 transition-colors hover:bg-[#FAFBFD] sm:px-5"
               >
                 <div className="flex flex-wrap items-center gap-2">
@@ -275,7 +277,7 @@ export default async function HomePage() {
                 議会質問の背景や、質問した議員へのインタビューを読む入口です。
               </p>
             </div>
-            <Link href="/articles" className="text-sm font-black text-[#1B3A6B]">
+            <Link href="/articles" prefetch={false} className="text-sm font-black text-[#1B3A6B]">
               すべての記事を見る ›
             </Link>
           </div>
@@ -285,6 +287,7 @@ export default async function HomePage() {
               <Link
                 key={article.slug}
                 href={`/articles/${article.slug}`}
+                prefetch={false}
                 className="motion-surface rounded-lg border border-[#D8DEE8] bg-white px-4 py-3 sm:rounded-[22px] sm:border-2 sm:py-4 sm:shadow-[0_6px_14px_rgba(27,58,107,0.06)]"
               >
                 <div className="mb-2 flex flex-wrap items-center gap-2">
@@ -312,7 +315,7 @@ export default async function HomePage() {
                 検索のきっかけになる代表テーマです。市町村をまたいで、関連する議事録へ進めます。
               </p>
             </div>
-            <Link href="/topics" className="text-sm font-black text-[#1B3A6B]">
+            <Link href="/topics" prefetch={false} className="text-sm font-black text-[#1B3A6B]">
               すべてのテーマを見る ›
             </Link>
           </div>
@@ -322,6 +325,7 @@ export default async function HomePage() {
               <Link
                 key={tag}
                 href={`/topics/${slugForTag(tag)}`}
+                prefetch={false}
                 className={`motion-surface items-center gap-1.5 rounded-full border border-[#D8DEE8] bg-white px-3 py-2 text-sm font-bold text-[#1B3A6B] ${
                   index >= 6 ? "hidden sm:inline-flex" : "inline-flex"
                 }`}
@@ -353,7 +357,7 @@ export default async function HomePage() {
               <h2 className="text-xl font-black text-[#111827]">北海道議会</h2>
               <p className="mt-1 text-sm text-[#64748B]">道議会の情報も別ページでまとめています。</p>
             </div>
-            <Link href={`/${prefecture.slug}`} className="theme-button theme-button-accent px-4 py-2 text-sm">
+            <Link href={`/${prefecture.slug}`} prefetch={false} className="theme-button theme-button-accent px-4 py-2 text-sm">
               {prefecture.council_name}へ
             </Link>
           </div>

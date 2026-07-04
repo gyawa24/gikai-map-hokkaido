@@ -48,6 +48,7 @@ export default function HomeMunicipalityExplorer({
                 <Link
                   key={city.id}
                   href={city.href}
+                  prefetch={false}
                   className={`motion-surface rounded-lg border px-4 py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298] ${
                     featured
                       ? "border-[#E6C566] bg-[#FFF9DD]"

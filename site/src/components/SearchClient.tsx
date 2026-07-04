@@ -683,22 +683,34 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [query, setQuery] = useState(initialQuery);
-  const [draftQuery, setDraftQuery] = useState(initialQuery);
+  const initialQueryFromUrl = initialQuery || searchParams.get("q") || "";
+  const initialTabFromUrl = initialTab || searchParams.get("tab") || "";
+  const initialSourceFromUrl = initialSource || searchParams.get("source") || "";
+  const initialCityFromUrl = searchParams.get("city") || "all";
+  const initialCityNameFromUrl = searchParams.get("cityName") || "";
+  const initialFactionFromUrl = searchParams.get("faction") || "all";
+  const initialYearFromUrl = searchParams.get("year") || "all";
+  const initialSearchModeFromUrl = searchParams.get("op") === "or" ? "or" : "and";
+  const initialSessionSortFromUrl = searchParams.get("sessionSort") === "newest" ? "newest" : "relevance";
+  const initialMemberSortParam = searchParams.get("memberSort");
+  const initialMemberSortFromUrl =
+    initialMemberSortParam === "name" || initialMemberSortParam === "city" ? initialMemberSortParam : "relevance";
+  const [query, setQuery] = useState(initialQueryFromUrl);
+  const [draftQuery, setDraftQuery] = useState(initialQueryFromUrl);
   const [tab, setTab] = useState<"sessions" | "members">(() =>
-    initialTab === "members" ? "members" : "sessions"
+    initialTabFromUrl === "members" ? "members" : "sessions"
   );
-  const [cityFilter, setCityFilter] = useState<string>("all");
-  const [cityLabelHint, setCityLabelHint] = useState("");
+  const [cityFilter, setCityFilter] = useState<string>(initialCityFromUrl);
+  const [cityLabelHint, setCityLabelHint] = useState(initialCityNameFromUrl);
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>(() => {
-    const value = initialSource;
+    const value = initialSourceFromUrl;
     return value === "minutes" || value === "session" || value === "decision" ? value : "all";
   });
-  const [factionFilter, setFactionFilter] = useState<string>("all");
-  const [yearFilter, setYearFilter] = useState<string>("all");
-  const [sessionSort, setSessionSort] = useState<SessionSort>("relevance");
-  const [memberSort, setMemberSort] = useState<MemberSort>("relevance");
-  const [searchMode, setSearchMode] = useState<SearchMode>("and");
+  const [factionFilter, setFactionFilter] = useState<string>(initialFactionFromUrl);
+  const [yearFilter, setYearFilter] = useState<string>(initialYearFromUrl);
+  const [sessionSort, setSessionSort] = useState<SessionSort>(initialSessionSortFromUrl);
+  const [memberSort, setMemberSort] = useState<MemberSort>(initialMemberSortFromUrl);
+  const [searchMode, setSearchMode] = useState<SearchMode>(initialSearchModeFromUrl);
   const [sessionResults, setSessionResults] = useState<SessionHit[]>([]);
   const [memberResults, setMemberResults] = useState<MemberHit[]>([]);
   const [sessionTotal, setSessionTotal] = useState(0);
@@ -1480,10 +1492,10 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             別の語に変える、短い語にする、表記を変えると見つかることがあります。テーマ一覧や予算書の原本検索も確認できます。
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
-            <Link href="/topics" className="theme-button px-4 py-2 text-sm">
+            <Link href="/topics" prefetch={false} className="theme-button px-4 py-2 text-sm">
               テーマ一覧を見る
             </Link>
-            <Link href="/sources" className="theme-button px-4 py-2 text-sm">
+            <Link href="/sources" prefetch={false} className="theme-button px-4 py-2 text-sm">
               予算書の掲載状況を見る
             </Link>
           </div>
@@ -1561,6 +1573,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                   <Link
                     key={`${group.city}-${i}`}
                     href={r.href}
+                    prefetch={false}
                     className="theme-card block px-4 py-3 transition-colors hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
                   >
                     <div className="mb-1.5 flex items-center gap-1.5 flex-wrap">
@@ -1610,6 +1623,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                   <Link
                     key={`${group.city}-${i}`}
                     href={m.href}
+                    prefetch={false}
                     className="theme-card block px-4 py-3 transition-colors hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
                   >
                     <div className="flex items-center justify-between gap-2">

@@ -608,6 +608,7 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
                               >
                                 <Link
                                   href={`${minutesBasePath}/${item.council_id}`}
+                                  prefetch={false}
                                   className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                                 >
                                   {itemContent}
@@ -616,6 +617,7 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
                                   <div className="mt-3 flex flex-wrap gap-2 pl-5">
                                     <Link
                                       href={`${minutesBasePath}/${item.council_id}/turns`}
+                                      prefetch={false}
                                       className="inline-flex items-center justify-center rounded-full border border-[#C5D0E6] bg-[#E8EEF7] px-3 py-1.5 text-xs font-bold text-[#1B3A6B] transition-colors hover:bg-[#DCE7F6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                                     >
                                       発言・質問項目別

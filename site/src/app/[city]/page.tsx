@@ -154,6 +154,7 @@ function CityExploreLinks({
           <Link
             key={link.href}
             href={link.href}
+            prefetch={false}
             className="flex min-h-12 items-center gap-3 rounded-lg border border-[#CBD5E0] bg-white px-3 py-3 transition-colors hover:border-[#9FB1D2] hover:bg-[#F8FBFF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:min-h-[8rem] sm:flex-col sm:items-start sm:justify-between sm:px-4 sm:py-4"
           >
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#D7E1F0] bg-[#F4F8FF] text-[#1B3A6B] sm:h-9 sm:w-9">

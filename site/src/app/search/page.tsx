@@ -65,6 +65,7 @@ export default function SearchPage() {
                 <Link
                   key={tag}
                   href={`/topics/${slugForTag(tag)}`}
+                  prefetch={false}
                   className="inline-flex items-center gap-1 rounded-full bg-[#E8EEF7] px-3 py-1.5 text-sm font-bold text-[#2A5298] transition-colors hover:bg-[#1B3A6B] hover:text-white"
                 >
                   <span>{tag}</span>
