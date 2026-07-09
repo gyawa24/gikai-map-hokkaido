@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, Suspense } from "react";
+import { useState, useEffect, useRef, Suspense, useCallback, useMemo } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import type { SessionHit, MemberHit, SearchFacet, SearchResponse } from "@/app/api/search/route";
@@ -67,6 +67,7 @@ function groupByCity<T extends { city: string; cityName: string }>(items: T[]) {
 }
 
 type SourceFilter = "all" | "minutes" | "session" | "decision";
+type SearchTab = "sessions" | "members";
 type SessionSort = "relevance" | "newest";
 type MemberSort = "relevance" | "name" | "city";
 type SearchMode = "and" | "or";
@@ -96,6 +97,90 @@ const SEARCH_SHORTCUTS = [
 ];
 
 const RESULT_PAGE_SIZE = 30;
+
+type SearchParamUpdates = Partial<{
+  q: string;
+  tab: SearchTab;
+  city: string;
+  cityName: string;
+  source: SourceFilter;
+  year: string;
+  faction: string;
+  op: SearchMode;
+  sessionSort: SessionSort;
+  memberSort: MemberSort;
+}>;
+
+function normalizeSearchTab(value: string | null | undefined): SearchTab {
+  return value === "members" ? "members" : "sessions";
+}
+
+function normalizeSourceFilter(value: string | null | undefined): SourceFilter {
+  return value === "minutes" || value === "session" || value === "decision" ? value : "all";
+}
+
+function normalizeSearchModeParam(value: string | null | undefined): SearchMode {
+  return value === "or" ? "or" : "and";
+}
+
+function normalizeSessionSortParam(value: string | null | undefined): SessionSort {
+  return value === "newest" ? "newest" : "relevance";
+}
+
+function normalizeMemberSortParam(value: string | null | undefined): MemberSort {
+  return value === "name" || value === "city" ? value : "relevance";
+}
+
+function setSearchParam(
+  params: URLSearchParams,
+  key: string,
+  value: string | undefined | null,
+  deleteValues: string[] = []
+) {
+  const trimmed = value?.trim() ?? "";
+  if (!trimmed || deleteValues.includes(trimmed)) {
+    params.delete(key);
+    return;
+  }
+  params.set(key, trimmed);
+}
+
+function normalizeSearchParams(params: URLSearchParams) {
+  setSearchParam(params, "q", params.get("q"));
+
+  const tab = normalizeSearchTab(params.get("tab"));
+  if (tab === "members") {
+    params.set("tab", "members");
+    params.delete("source");
+    params.delete("year");
+    params.delete("sessionSort");
+  } else {
+    params.delete("tab");
+    params.delete("faction");
+    params.delete("memberSort");
+  }
+
+  const city = params.get("city")?.trim() ?? "";
+  if (!city || city === "all") {
+    params.delete("city");
+    params.delete("cityName");
+  } else {
+    params.set("city", city);
+    setSearchParam(params, "cityName", params.get("cityName"));
+  }
+
+  const source = normalizeSourceFilter(params.get("source"));
+  setSearchParam(params, "source", tab === "sessions" ? source : "all", ["all"]);
+  setSearchParam(params, "year", tab === "sessions" ? params.get("year") : "all", ["all"]);
+  setSearchParam(params, "faction", tab === "members" ? params.get("faction") : "all", ["all"]);
+
+  const searchMode = normalizeSearchModeParam(params.get("op"));
+  setSearchParam(params, "op", searchMode === "or" ? searchMode : "and", ["and"]);
+  const sessionSort = normalizeSessionSortParam(params.get("sessionSort"));
+  setSearchParam(params, "sessionSort", tab === "sessions" && sessionSort !== "relevance" ? sessionSort : "relevance", ["relevance"]);
+  const memberSort = normalizeMemberSortParam(params.get("memberSort"));
+  setSearchParam(params, "memberSort", tab === "members" && memberSort !== "relevance" ? memberSort : "relevance", ["relevance"]);
+}
 
 type AgendaEntry = {
   city: string;
@@ -772,34 +857,19 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const initialQueryFromUrl = initialQuery || searchParams.get("q") || "";
-  const initialTabFromUrl = initialTab || searchParams.get("tab") || "";
-  const initialSourceFromUrl = initialSource || searchParams.get("source") || "";
-  const initialCityFromUrl = searchParams.get("city") || "all";
-  const initialCityNameFromUrl = searchParams.get("cityName") || "";
-  const initialFactionFromUrl = searchParams.get("faction") || "all";
-  const initialYearFromUrl = searchParams.get("year") || "all";
-  const initialSearchModeFromUrl = searchParams.get("op") === "or" ? "or" : "and";
-  const initialSessionSortFromUrl = searchParams.get("sessionSort") === "newest" ? "newest" : "relevance";
-  const initialMemberSortParam = searchParams.get("memberSort");
-  const initialMemberSortFromUrl =
-    initialMemberSortParam === "name" || initialMemberSortParam === "city" ? initialMemberSortParam : "relevance";
-  const [query, setQuery] = useState(initialQueryFromUrl);
-  const [draftQuery, setDraftQuery] = useState(initialQueryFromUrl);
-  const [tab, setTab] = useState<"sessions" | "members">(() =>
-    initialTabFromUrl === "members" ? "members" : "sessions"
-  );
-  const [cityFilter, setCityFilter] = useState<string>(initialCityFromUrl);
-  const [cityLabelHint, setCityLabelHint] = useState(initialCityNameFromUrl);
-  const [sourceFilter, setSourceFilter] = useState<SourceFilter>(() => {
-    const value = initialSourceFromUrl;
-    return value === "minutes" || value === "session" || value === "decision" ? value : "all";
-  });
-  const [factionFilter, setFactionFilter] = useState<string>(initialFactionFromUrl);
-  const [yearFilter, setYearFilter] = useState<string>(initialYearFromUrl);
-  const [sessionSort, setSessionSort] = useState<SessionSort>(initialSessionSortFromUrl);
-  const [memberSort, setMemberSort] = useState<MemberSort>(initialMemberSortFromUrl);
-  const [searchMode, setSearchMode] = useState<SearchMode>(initialSearchModeFromUrl);
+  const query = searchParams.get("q") ?? initialQuery;
+  const tab = normalizeSearchTab(searchParams.get("tab") ?? initialTab);
+  const cityFilter = searchParams.get("city")?.trim() || "all";
+  const cityLabelHint = searchParams.get("cityName") ?? "";
+  const sourceFilter = tab === "sessions"
+    ? normalizeSourceFilter(searchParams.get("source") ?? initialSource)
+    : "all";
+  const factionFilter = tab === "members" ? searchParams.get("faction")?.trim() || "all" : "all";
+  const yearFilter = tab === "sessions" ? searchParams.get("year")?.trim() || "all" : "all";
+  const sessionSort = tab === "sessions" ? normalizeSessionSortParam(searchParams.get("sessionSort")) : "relevance";
+  const memberSort = tab === "members" ? normalizeMemberSortParam(searchParams.get("memberSort")) : "relevance";
+  const searchMode = normalizeSearchModeParam(searchParams.get("op"));
+  const [draftQuery, setDraftQuery] = useState(searchParams.get("q") ?? initialQuery);
   const [sessionResults, setSessionResults] = useState<SessionHit[]>([]);
   const [memberResults, setMemberResults] = useState<MemberHit[]>([]);
   const [sessionTotal, setSessionTotal] = useState(0);
@@ -827,38 +897,66 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   const requestIdRef = useRef(0);
   const resultsHeaderRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    const nextQuery = searchParams.get("q") ?? "";
-    if (nextQuery !== query) {
-      setQuery(nextQuery);
-      setDraftQuery(nextQuery);
+  const replaceSearchParams = useCallback((updates: SearchParamUpdates) => {
+    const params = new URLSearchParams(searchParams.toString());
+    setSearchParam(params, "q", query);
+    if (tab !== "sessions") params.set("tab", tab);
+    if (cityFilter !== "all") {
+      params.set("city", cityFilter);
+      setSearchParam(params, "cityName", cityLabelHint);
     }
-    const nextTab = searchParams.get("tab") === "members" ? "members" : "sessions";
-    if (nextTab !== tab) setTab(nextTab);
-    const nextCity = searchParams.get("city") ?? "all";
-    if (nextCity !== cityFilter) setCityFilter(nextCity);
-    const nextCityLabelHint = searchParams.get("cityName") ?? "";
-    if (nextCityLabelHint !== cityLabelHint) setCityLabelHint(nextCityLabelHint);
-    const nextSourceParam = searchParams.get("source");
-    const nextSource =
-      nextSourceParam === "minutes" || nextSourceParam === "session" || nextSourceParam === "decision"
-        ? nextSourceParam
-        : "all";
-    if (nextSource !== sourceFilter) setSourceFilter(nextSource);
-    const nextFaction = searchParams.get("faction") ?? "all";
-    if (nextFaction !== factionFilter) setFactionFilter(nextFaction);
-    const nextYear = searchParams.get("year") ?? "all";
-    if (nextYear !== yearFilter) setYearFilter(nextYear);
-    const nextSessionSort = searchParams.get("sessionSort") === "newest" ? "newest" : "relevance";
-    if (nextSessionSort !== sessionSort) setSessionSort(nextSessionSort);
-    const nextMemberSortParam = searchParams.get("memberSort");
-    const nextMemberSort =
-      nextMemberSortParam === "name" || nextMemberSortParam === "city" ? nextMemberSortParam : "relevance";
-    if (nextMemberSort !== memberSort) setMemberSort(nextMemberSort);
-    const nextSearchMode = searchParams.get("op") === "or" ? "or" : "and";
-    if (nextSearchMode !== searchMode) setSearchMode(nextSearchMode);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchParams]);
+    if (sourceFilter !== "all") params.set("source", sourceFilter);
+    if (yearFilter !== "all") params.set("year", yearFilter);
+    if (factionFilter !== "all") params.set("faction", factionFilter);
+    if (searchMode !== "and") params.set("op", searchMode);
+    if (sessionSort !== "relevance") params.set("sessionSort", sessionSort);
+    if (memberSort !== "relevance") params.set("memberSort", memberSort);
+
+    if ("q" in updates) setSearchParam(params, "q", updates.q);
+    if ("tab" in updates) {
+      if (updates.tab === "members") params.set("tab", "members");
+      else params.delete("tab");
+    }
+    if ("city" in updates) setSearchParam(params, "city", updates.city);
+    if ("cityName" in updates) setSearchParam(params, "cityName", updates.cityName);
+    if ("source" in updates) setSearchParam(params, "source", updates.source);
+    if ("year" in updates) setSearchParam(params, "year", updates.year);
+    if ("faction" in updates) setSearchParam(params, "faction", updates.faction);
+    if ("op" in updates) setSearchParam(params, "op", updates.op);
+    if ("sessionSort" in updates) setSearchParam(params, "sessionSort", updates.sessionSort);
+    if ("memberSort" in updates) setSearchParam(params, "memberSort", updates.memberSort);
+
+    normalizeSearchParams(params);
+    const nextParams = params.toString();
+    if (nextParams === searchParams.toString()) return;
+    router.replace(nextParams ? `${pathname}?${nextParams}` : pathname, { scroll: false });
+  }, [
+    pathname,
+    router,
+    searchParams,
+    query,
+    tab,
+    cityFilter,
+    cityLabelHint,
+    sourceFilter,
+    yearFilter,
+    factionFilter,
+    searchMode,
+    sessionSort,
+    memberSort,
+  ]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    normalizeSearchParams(params);
+    const nextParams = params.toString();
+    if (nextParams === searchParams.toString()) return;
+    router.replace(nextParams ? `${pathname}?${nextParams}` : pathname, { scroll: false });
+  }, [pathname, router, searchParams]);
+
+  useEffect(() => {
+    setDraftQuery(query);
+  }, [query]);
 
   useEffect(() => {
     try {
@@ -971,7 +1069,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           nextMemberResults.length > 0 &&
           looksLikeMemberNameSearch(q, nextMemberResults)
         ) {
-          setTab("members");
+          replaceSearchParams({ tab: "members" });
         }
         setRecentQueries((prev) => {
           const next = [q, ...prev.filter((item) => normalizeForSearch(item) !== normalizeForSearch(q))].slice(0, 6);
@@ -1010,7 +1108,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
       controller.abort();
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [query, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter, tab, forceFullSearch]);
+  }, [query, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter, tab, forceFullSearch, replaceSearchParams]);
 
   const tokens = tokenize(query);
   const hasQuery = query.trim().length > 0;
@@ -1056,10 +1154,14 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
 
   const totalResults = tab === "sessions" ? sortedSessions.length : sortedMembers.length;
 
-  const availableSourceTypes = new Set(
-    sessionSourceFacets
-      .map((facet) => facet.value)
-      .filter((value): value is SourceFilter => value === "minutes" || value === "session" || value === "decision")
+  const availableSourceTypes = useMemo(
+    () =>
+      new Set(
+        sessionSourceFacets
+          .map((facet) => facet.value)
+          .filter((value): value is SourceFilter => value === "minutes" || value === "session" || value === "decision")
+      ),
+    [sessionSourceFacets]
   );
   const sourceFacetCounts = new Map(sessionSourceFacets.map((facet) => [facet.value, facet.count]));
   const sessionSourceTotal = sessionSourceFacets.reduce((sum, facet) => sum + facet.count, 0);
@@ -1085,52 +1187,26 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   useEffect(() => {
     if (!hasSearchResponse) return;
     if (sourceFilter !== "all" && !availableSourceTypes.has(sourceFilter)) {
-      setSourceFilter("all");
+      replaceSearchParams({ source: "all" });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [availableSourcesKey, hasSearchResponse]);
+  }, [availableSourcesKey, hasSearchResponse, sourceFilter, availableSourceTypes, replaceSearchParams]);
   useEffect(() => {
     if (!hasSearchResponse) return;
     if (yearFilter !== "all" && !availableYears.includes(yearFilter)) {
-      setYearFilter("all");
+      replaceSearchParams({ year: "all" });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [availableYearsKey, hasSearchResponse]);
+  }, [availableYearsKey, hasSearchResponse, yearFilter, availableYears, replaceSearchParams]);
   useEffect(() => {
     if (!hasSearchResponse) return;
     if (factionFilter !== "all" && !availableFactions.includes(factionFilter)) {
-      setFactionFilter("all");
+      replaceSearchParams({ faction: "all" });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [availableFactionsKey, hasSearchResponse]);
+  }, [availableFactionsKey, hasSearchResponse, factionFilter, availableFactions, replaceSearchParams]);
 
   const selectedCityLabel =
     cityFilter !== "all"
       ? cityFacets.find((facet) => facet.value === cityFilter)?.label || cityLabelHint
       : "";
-
-  useEffect(() => {
-    const params = new URLSearchParams();
-    const trimmed = query.trim();
-    if (trimmed) params.set("q", trimmed);
-    if (tab !== "sessions") params.set("tab", tab);
-    if (cityFilter !== "all") {
-      params.set("city", cityFilter);
-      if (selectedCityLabel && selectedCityLabel !== cityFilter) {
-        params.set("cityName", selectedCityLabel);
-      }
-    }
-    if (sourceFilter !== "all") params.set("source", sourceFilter);
-    if (yearFilter !== "all") params.set("year", yearFilter);
-    if (factionFilter !== "all") params.set("faction", factionFilter);
-    if (searchMode !== "and") params.set("op", searchMode);
-    if (sessionSort !== "relevance") params.set("sessionSort", sessionSort);
-    if (memberSort !== "relevance") params.set("memberSort", memberSort);
-    const nextParams = params.toString();
-    if (nextParams === searchParams.toString()) return;
-    const next = nextParams ? `${pathname}?${nextParams}` : pathname;
-    router.replace(next, { scroll: false });
-  }, [pathname, router, searchParams, query, tab, cityFilter, selectedCityLabel, sourceFilter, yearFilter, factionFilter, searchMode, sessionSort, memberSort]);
 
   const activeFilters = [
     cityFilter !== "all" ? selectedCityLabel || cityFilter : "",
@@ -1161,12 +1237,15 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   const scopedCityLabel = cityFilter !== "all" ? selectedCityLabel || cityFilter : "";
 
   function clearFilters() {
-    setCityFilter("all");
-    setSourceFilter("all");
-    setFactionFilter("all");
-    setYearFilter("all");
-    setSessionSort("relevance");
-    setMemberSort("relevance");
+    replaceSearchParams({
+      city: "all",
+      cityName: "",
+      source: "all",
+      faction: "all",
+      year: "all",
+      sessionSort: "relevance",
+      memberSort: "relevance",
+    });
   }
 
   function scrollToResultsHeader() {
@@ -1174,25 +1253,35 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   }
 
   function applyShortcut(tabValue: "sessions" | "members", sourceValue: SourceFilter) {
-    setTab(tabValue);
     setFiltersOpen(true);
     if (tabValue === "sessions") {
-      setSourceFilter(sourceValue);
-      if (sourceValue !== "all") setYearFilter("all");
+      replaceSearchParams({
+        tab: tabValue,
+        source: sourceValue,
+        year: sourceValue !== "all" ? "all" : yearFilter,
+        faction: "all",
+        memberSort: "relevance",
+      });
       return;
     }
-    setSourceFilter("all");
+    replaceSearchParams({
+      tab: tabValue,
+      source: "all",
+      year: "all",
+      faction: factionFilter,
+      sessionSort: "relevance",
+    });
   }
 
   function submitSearch() {
     const nextQuery = draftQuery.trim();
     if (nextQuery === query.trim()) return;
-    setQuery(nextQuery);
+    replaceSearchParams({ q: nextQuery });
   }
 
   function clearSearch() {
     setDraftQuery("");
-    setQuery("");
+    replaceSearchParams({ q: "" });
   }
 
   return (
@@ -1244,7 +1333,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
               key={suggestion}
               onClick={() => {
                 setDraftQuery(suggestion);
-                setQuery(suggestion);
+                replaceSearchParams({ q: suggestion });
               }}
               className="inline-flex min-h-11 items-center rounded-full border border-[#CBD5E0] bg-white px-3 py-2 text-sm font-semibold text-[#1B3A6B] transition-colors hover:border-[#1B3A6B] hover:bg-[#E8EEF7]"
               type="button"
@@ -1255,14 +1344,14 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         </div>
 
         <div className="mt-3">
-          <Accordion title="詳しい条件" defaultOpen={initialSearchModeFromUrl === "or"}>
+          <Accordion title="詳しい条件" defaultOpen={searchMode === "or"}>
             <div className="space-y-3 px-4 py-3">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="text-sm font-semibold text-[#667085]">複数語の条件</span>
                 <div className="inline-flex rounded-full border border-[#CBD5E0] bg-white p-1">
                   <button
                     type="button"
-                    onClick={() => setSearchMode("and")}
+                    onClick={() => replaceSearchParams({ op: "and" })}
                     className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
                       searchMode === "and" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
                     }`}
@@ -1271,7 +1360,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                   </button>
                   <button
                     type="button"
-                    onClick={() => setSearchMode("or")}
+                    onClick={() => replaceSearchParams({ op: "or" })}
                     className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
                       searchMode === "or" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
                     }`}
@@ -1309,7 +1398,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                   key={item}
                   onClick={() => {
                     setDraftQuery(item);
-                    setQuery(item);
+                    replaceSearchParams({ q: item });
                   }}
                   className="theme-pill-soft text-[#1B3A6B]"
                   type="button"
@@ -1376,10 +1465,10 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                 value={tab === "sessions" ? sessionSort : memberSort}
                 onChange={(e) => {
                   if (tab === "sessions") {
-                    setSessionSort(e.target.value as SessionSort);
+                    replaceSearchParams({ sessionSort: e.target.value as SessionSort });
                     return;
                   }
-                  setMemberSort(e.target.value as MemberSort);
+                  replaceSearchParams({ memberSort: e.target.value as MemberSort });
                 }}
                 className="theme-select min-w-[8rem] px-3 py-2 text-sm"
               >
@@ -1453,7 +1542,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           {(["sessions", "members"] as const).map((t) => (
             <button
               key={t}
-              onClick={() => setTab(t)}
+              onClick={() => replaceSearchParams({ tab: t })}
               className={`px-3 py-2 text-sm font-medium border-b-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] rounded-t sm:px-4 ${
                 tab === t
                   ? "border-[#8AA3CF] text-[#1B3A6B]"
@@ -1479,7 +1568,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#667085]">市町村で絞る</p>
           <div className="flex flex-wrap gap-1.5">
             <button
-              onClick={() => setCityFilter("all")}
+              onClick={() => replaceSearchParams({ city: "all", cityName: "" })}
               className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                 cityFilter === "all"
                   ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
@@ -1491,7 +1580,12 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             {availableCities.map((c) => (
               <button
                 key={c.id}
-                onClick={() => setCityFilter(cityFilter === c.id ? "all" : c.id)}
+                onClick={() =>
+                  replaceSearchParams({
+                    city: cityFilter === c.id ? "all" : c.id,
+                    cityName: cityFilter === c.id ? "" : c.name,
+                  })
+                }
                 className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                   cityFilter === c.id
                     ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
@@ -1516,7 +1610,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             .map((s) => (
               <button
                 key={s}
-                onClick={() => setSourceFilter(s)}
+                onClick={() => replaceSearchParams({ source: s, year: s === "all" ? yearFilter : "all" })}
                 className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                   sourceFilter === s
                     ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
@@ -1541,7 +1635,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#667085]">年度</p>
           <div className="flex flex-wrap gap-1.5">
           <button
-            onClick={() => setYearFilter("all")}
+            onClick={() => replaceSearchParams({ year: "all" })}
             className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
               yearFilter === "all"
                 ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
@@ -1554,7 +1648,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           {availableYears.map((y) => (
             <button
               key={y}
-              onClick={() => setYearFilter(yearFilter === y ? "all" : y)}
+              onClick={() => replaceSearchParams({ year: yearFilter === y ? "all" : y })}
               className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                 yearFilter === y
                   ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
@@ -1577,7 +1671,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#667085]">会派</p>
           <div className="flex flex-wrap gap-1.5">
           <button
-            onClick={() => setFactionFilter("all")}
+            onClick={() => replaceSearchParams({ faction: "all" })}
             className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
               factionFilter === "all"
                 ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
@@ -1590,7 +1684,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           {availableFactions.map((f) => (
             <button
               key={f}
-              onClick={() => setFactionFilter(factionFilter === f ? "all" : f)}
+              onClick={() => replaceSearchParams({ faction: factionFilter === f ? "all" : f })}
               className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                 factionFilter === f
                   ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
@@ -1667,7 +1761,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                     key={suggestion}
                     onClick={() => {
                       setDraftQuery(suggestion);
-                      setQuery(suggestion);
+                      replaceSearchParams({ q: suggestion });
                     }}
                     className="theme-button px-3 py-1.5 text-xs"
                     type="button"
@@ -1694,7 +1788,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             </span>
           </p>
           <button
-            onClick={() => setTab("members")}
+            onClick={() => replaceSearchParams({ tab: "members" })}
             className="theme-button shrink-0 px-3 py-1 text-xs"
           >
             議員タブを見る
