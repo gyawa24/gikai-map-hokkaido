@@ -23,6 +23,7 @@ const PUBLIC_GENERATED_DIR = path.join(SITE_DIR, "public", "generated");
 const PUBLIC_SEARCH_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "search-index.json");
 const PUBLIC_RECENT_SEARCH_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "search-index-recent.json");
 const PUBLIC_CITY_SEARCH_INDEX_DIR = path.join(PUBLIC_GENERATED_DIR, "search-indexes");
+const PUBLIC_CITY_BIGRAM_INDEX_DIR = path.join(PUBLIC_GENERATED_DIR, "search-bigram-cities");
 const PUBLIC_TOPICS_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "topics-index.json");
 const SEGMENT_FALLBACKS_FILE = path.join(DATA_DIR, "search_segment_fallbacks.json");
 
@@ -35,6 +36,8 @@ const DISCUSSION_TYPES = new Set([
 ]);
 const EXCERPT_MAX = 400;
 const RECENT_YEAR_WINDOW = 2;
+const BIGRAM_BUCKET_COUNT = 64;
+const BIGRAM_MIN_CITY_INDEX_BYTES = 250 * 1024;
 
 function cleanText(s) {
   return (s ?? "").replace(/\s+/g, " ").trim();
@@ -45,6 +48,42 @@ function cleanIndexText(s) {
     .replace(/([、。！？]){2,}/g, "$1")
     .replace(/[・･]{3,}/g, "・")
     .replace(/[‐‑‒–—―ー－-]{3,}/g, "ー");
+}
+
+function normalizeForBigramSearch(text) {
+  return String(text ?? "")
+    .normalize("NFKC")
+    .replace(/\u3000/g, " ")
+    .replace(/[ァ-ヶ]/g, (char) => String.fromCharCode(char.charCodeAt(0) - 0x60))
+    .toLowerCase()
+    .trim();
+}
+
+function compactForBigramSearch(text) {
+  return normalizeForBigramSearch(text).replace(/[^\p{L}\p{N}]+/gu, "");
+}
+
+function bigramsForSearch(text) {
+  const compact = compactForBigramSearch(text);
+  if (!compact) return [];
+  if (compact.length === 1) return [compact];
+  const terms = [];
+  for (let i = 0; i < compact.length - 1; i += 1) {
+    terms.push(compact.slice(i, i + 2));
+  }
+  return Array.from(new Set(terms));
+}
+
+function bigramBucket(term) {
+  let hash = 0;
+  for (let i = 0; i < term.length; i += 1) {
+    hash = ((hash * 31) + term.charCodeAt(i)) >>> 0;
+  }
+  return hash % BIGRAM_BUCKET_COUNT;
+}
+
+function bigramBucketFile(bucket) {
+  return `${bucket.toString(16).padStart(2, "0")}.json`;
 }
 
 function escapeRegExp(text) {
@@ -138,6 +177,209 @@ function buildRecentRuntimeIndex(runtimeOut) {
     enriched: (runtimeOut.enriched ?? []).filter((row) => isRecent(row.name, row.generated_at)),
     memberActivities: (runtimeOut.memberActivities ?? []).filter((row) => isRecent(row.year, row.council_name)),
   };
+}
+
+function pushSearchDocument(documents, doc) {
+  const searchText = cleanText([
+    doc.cityName,
+    doc.title,
+    doc.body,
+    doc.context,
+    doc.metaText,
+    doc.member_name,
+    doc.name,
+    doc.furigana,
+    doc.party,
+    doc.faction,
+    ...(doc.committees ?? []),
+  ].filter(Boolean).join(" "));
+  if (!searchText) return;
+  documents.push({
+    ...doc,
+    body: cleanText(doc.body).slice(0, 500),
+    context: cleanText(doc.context || doc.body).slice(0, 700),
+    metaText: cleanText(doc.metaText),
+    _searchText: searchText,
+  });
+}
+
+function buildCityBigramDocuments(cityRuntimeOut) {
+  const documents = [];
+
+  for (const row of cityRuntimeOut.agendas ?? []) {
+    pushSearchDocument(documents, {
+      id: `agenda:${row.city}:${row.council_id}:${row.schedule_index}:${row.first_minute_id ?? "x"}`,
+      source: "agenda",
+      sourceType: "minutes",
+      city: row.city,
+      cityName: row.cityName,
+      council_id: row.council_id,
+      title: row.council_name,
+      committee: row.agenda_title || "議題",
+      label: row.schedule_name,
+      body: row.text,
+      context: [row.agenda_title, row.text].join(" "),
+      metaText: [row.year, row.date, row.schedule_name].join(" "),
+      href: row.first_minute_id !== null
+        ? `/${row.city}/minutes/${row.council_id}`
+        : `/${row.city}/minutes/${row.council_id}`,
+      date: row.date,
+      year: row.year || yearFromCouncilName(row.council_name),
+      field: "議事録",
+    });
+  }
+
+  for (const row of cityRuntimeOut.memberActivities ?? []) {
+    const summaryTopics = Array.isArray(row.summary_topics) ? row.summary_topics : [];
+    const rawTopics = Array.isArray(row.topics) ? row.topics : [];
+    const topicText = [...summaryTopics, ...rawTopics].join("、");
+    pushSearchDocument(documents, {
+      id: `member_activity:${row.city}:${row.member_name}:${row.council_id}`,
+      source: "member_activity",
+      sourceType: "minutes",
+      city: row.city,
+      cityName: row.cityName,
+      council_id: row.council_id,
+      member_name: row.member_name,
+      title: row.council_name,
+      committee: `${row.member_name}議員の質問`,
+      body: topicText,
+      context: summaryTopics.length > 0
+        ? `質問テーマ: ${summaryTopics.join("、")}`
+        : `議事録からの抜粋: ${rawTopics.slice(0, 3).join("。")}`,
+      metaText: row.year,
+      href: `/${row.city}/minutes/${row.council_id}`,
+      year: row.year || yearFromCouncilName(row.council_name),
+      field: "質問テーマ",
+    });
+  }
+
+  for (const row of cityRuntimeOut.members ?? []) {
+    const seatNumber = Number(row.seat_number);
+    pushSearchDocument(documents, {
+      id: `member:${row.city}:${Number.isFinite(seatNumber) ? seatNumber : row.name}`,
+      source: "member",
+      city: row.city,
+      cityName: row.cityName,
+      name: row.name,
+      member_name: row.name,
+      title: row.name,
+      body: [row.furigana, row.party, row.faction, ...(row.committees ?? [])].join(" "),
+      metaText: Number.isFinite(seatNumber) ? `${seatNumber}番` : "",
+      href: Number.isFinite(seatNumber) && seatNumber > 0
+        ? `/${row.city}/members/${seatNumber}`
+        : `/${row.city}`,
+      furigana: row.furigana,
+      party: row.party,
+      faction: row.faction,
+      committees: row.committees ?? [],
+    });
+  }
+
+  for (const row of cityRuntimeOut.sessions ?? []) {
+    for (const segment of row.segments ?? []) {
+      pushSearchDocument(documents, {
+        id: `session:${row.city}:${row.id}:${segment.index}`,
+        source: "session",
+        sourceType: "session",
+        city: row.city,
+        cityName: row.cityName,
+        title: row.title,
+        committee: row.committee,
+        label: segment.label,
+        body: [segment.summary, ...(segment.topics ?? []), segment.transcript].join(" "),
+        context: [segment.summary, ...(segment.topics ?? []), segment.transcript].join(" "),
+        metaText: [row.date, row.committee, segment.start_time].join(" "),
+        href: `/${row.city}/sessions/${row.id}`,
+        date: row.date,
+        year: yearFromDate(row.date) || yearFromCouncilName(row.title),
+        field: segment.summary ? "要約" : "会議録速報",
+      });
+    }
+  }
+
+  for (const row of cityRuntimeOut.enriched ?? []) {
+    pushSearchDocument(documents, {
+      id: `enriched:${row.city}:${row.council_id}`,
+      source: "enriched",
+      sourceType: "minutes",
+      city: row.city,
+      cityName: row.cityName,
+      council_id: row.council_id,
+      title: row.name,
+      body: [row.summary, ...(row.highlights ?? []), ...(row.tags ?? [])].join(" "),
+      context: row.summary || (row.highlights ?? []).join("、"),
+      metaText: row.generated_at,
+      href: `/${row.city}/minutes/${row.council_id}`,
+      year: yearFromCouncilName(row.name) || yearFromDate(row.generated_at),
+      field: "AI要約",
+    });
+  }
+
+  for (const [index, row] of (cityRuntimeOut.decisions ?? []).entries()) {
+    pushSearchDocument(documents, {
+      id: `decision:${row.city}:${index}`,
+      source: "decision",
+      sourceType: "decision",
+      city: row.city,
+      cityName: row.cityName,
+      title: row.session,
+      committee: "議決結果",
+      body: row.description,
+      context: [row.session, row.description].join(" "),
+      href: `/${row.city}/decisions`,
+      year: yearFromCouncilName(row.session),
+      field: "議決",
+    });
+  }
+
+  return documents;
+}
+
+function writeCityBigramIndex(city, cityRuntimeOut, generatedAt) {
+  const cityDir = path.join(PUBLIC_CITY_BIGRAM_INDEX_DIR, city);
+  const postingsDir = path.join(cityDir, "postings");
+  const documentsWithSearchText = buildCityBigramDocuments(cityRuntimeOut);
+  const buckets = new Map();
+
+  documentsWithSearchText.forEach((doc, docIndex) => {
+    for (const term of bigramsForSearch(doc._searchText)) {
+      const bucket = bigramBucket(term);
+      if (!buckets.has(bucket)) buckets.set(bucket, {});
+      const postings = buckets.get(bucket);
+      if (!postings[term]) postings[term] = [];
+      postings[term].push(docIndex);
+    }
+  });
+
+  const documents = documentsWithSearchText.map((doc) => {
+    const publicDoc = { ...doc };
+    delete publicDoc._searchText;
+    return publicDoc;
+  });
+  fs.mkdirSync(postingsDir, { recursive: true });
+  fs.writeFileSync(path.join(cityDir, "documents.json"), JSON.stringify(documents));
+
+  const bucketFiles = [];
+  for (let bucket = 0; bucket < BIGRAM_BUCKET_COUNT; bucket += 1) {
+    const file = bigramBucketFile(bucket);
+    const postings = buckets.get(bucket) ?? {};
+    fs.writeFileSync(path.join(postingsDir, file), JSON.stringify(postings));
+    bucketFiles.push(file);
+  }
+
+  fs.writeFileSync(
+    path.join(cityDir, "manifest.json"),
+    JSON.stringify({
+      version: 1,
+      generated_at: generatedAt,
+      scope: "city-bigram",
+      city,
+      document_count: documents.length,
+      bucket_count: BIGRAM_BUCKET_COUNT,
+      buckets: bucketFiles,
+    })
+  );
 }
 
 function getCityName(municipalities, slug) {
@@ -458,6 +700,8 @@ function buildIndex() {
   fs.writeFileSync(OUT_FILE, JSON.stringify(out));
   fs.mkdirSync(PUBLIC_GENERATED_DIR, { recursive: true });
   fs.mkdirSync(PUBLIC_CITY_SEARCH_INDEX_DIR, { recursive: true });
+  fs.rmSync(PUBLIC_CITY_BIGRAM_INDEX_DIR, { recursive: true, force: true });
+  fs.mkdirSync(PUBLIC_CITY_BIGRAM_INDEX_DIR, { recursive: true });
   fs.writeFileSync(PUBLIC_SEARCH_INDEX_FILE, JSON.stringify(runtimeOut));
   fs.writeFileSync(PUBLIC_RECENT_SEARCH_INDEX_FILE, JSON.stringify(recentRuntimeOut));
   for (const city of cityDirs) {
@@ -473,10 +717,14 @@ function buildIndex() {
       members: members.filter((row) => row.city === city),
       memberActivities: memberActivities.filter((row) => row.city === city),
     };
+    const cityRuntimeJson = JSON.stringify(cityRuntimeOut);
     fs.writeFileSync(
       path.join(PUBLIC_CITY_SEARCH_INDEX_DIR, `${city}.json`),
-      JSON.stringify(cityRuntimeOut)
+      cityRuntimeJson
     );
+    if (Buffer.byteLength(cityRuntimeJson) >= BIGRAM_MIN_CITY_INDEX_BYTES) {
+      writeCityBigramIndex(city, cityRuntimeOut, out.generated_at);
+    }
   }
   fs.writeFileSync(PUBLIC_TOPICS_INDEX_FILE, JSON.stringify(topicsOut));
   const stat = fs.statSync(OUT_FILE);

@@ -43,6 +43,7 @@
     "articles:sync-notion:dry-run": "node scripts/sync-notion-articles.mjs --dry-run",
     "lint": "eslint",
     "check:search-quality": "node scripts/check-search-quality.mjs",
+    "check:search-bigram-quality": "node scripts/check-search-bigram-quality.mjs",
     "validate:structured-minutes": "node scripts/validate-structured-minutes.mjs"
   },
   "dependencies": {

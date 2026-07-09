@@ -266,10 +266,50 @@ type ClientRuntimeSearchIndex = {
   memberActivities?: IndexedMemberActivity[];
 };
 
+type ClientBigramSearchDocument = {
+  id: string;
+  source: "agenda" | "member_activity" | "member" | "session" | "enriched" | "decision";
+  sourceType?: "session" | "minutes" | "decision";
+  city: string;
+  cityName: string;
+  title: string;
+  body?: string;
+  context?: string;
+  metaText?: string;
+  council_id?: number | null;
+  member_name?: string;
+  name?: string;
+  furigana?: string;
+  party?: string;
+  faction?: string;
+  committees?: string[];
+  href?: string;
+  date?: string;
+  year?: string;
+  committee?: string;
+  label?: string;
+  field?: string;
+};
+
+type ClientBigramSearchManifest = {
+  version: number;
+  generated_at: string;
+  scope: "city-bigram";
+  city: string;
+  document_count: number;
+  bucket_count: number;
+  buckets: string[];
+};
+
 type RankedSessionHit = SessionHit & { score: number };
 type RankedMemberHit = MemberHit & { score: number };
 
 const clientSearchIndexPromises = new Map<string, Promise<ClientRuntimeSearchIndex>>();
+const clientBigramManifestPromises = new Map<string, Promise<ClientBigramSearchManifest>>();
+const clientBigramDocumentsPromises = new Map<string, Promise<ClientBigramSearchDocument[]>>();
+const clientBigramPostingPromises = new Map<string, Promise<Record<string, number[]>>>();
+
+const BIGRAM_BUCKET_COUNT = 64;
 
 function yearFromDate(date: string | undefined | null): string {
   const match = date?.match(/^(\d{4})/);
@@ -494,6 +534,357 @@ async function loadClientSearchIndex(indexUrl: string, signal: AbortSignal): Pro
   const data = await promise;
   if (signal.aborted) throw new Error("検索を中断しました");
   return data;
+}
+
+function compactForBigramSearch(text: string): string {
+  return normalizeForSearch(text).replace(/[^\p{L}\p{N}]+/gu, "");
+}
+
+function bigramsForSearch(text: string): string[] {
+  const compact = compactForBigramSearch(text);
+  if (!compact) return [];
+  if (compact.length === 1) return [compact];
+  const terms: string[] = [];
+  for (let i = 0; i < compact.length - 1; i += 1) {
+    terms.push(compact.slice(i, i + 2));
+  }
+  return Array.from(new Set(terms));
+}
+
+function bigramBucket(term: string): number {
+  let hash = 0;
+  for (let i = 0; i < term.length; i += 1) {
+    hash = ((hash * 31) + term.charCodeAt(i)) >>> 0;
+  }
+  return hash % BIGRAM_BUCKET_COUNT;
+}
+
+function bigramBucketFile(bucket: number): string {
+  return `${bucket.toString(16).padStart(2, "0")}.json`;
+}
+
+function documentSearchText(doc: ClientBigramSearchDocument): string {
+  return [
+    doc.cityName,
+    doc.title,
+    doc.body,
+    doc.context,
+    doc.metaText,
+    doc.member_name,
+    doc.name,
+    doc.furigana,
+    doc.party,
+    doc.faction,
+    ...(doc.committees ?? []),
+  ].filter(Boolean).join(" ");
+}
+
+function intersectNumberLists(left: number[], right: number[]): number[] {
+  const rightSet = new Set(right);
+  return left.filter((value) => rightSet.has(value));
+}
+
+function unionNumberLists(lists: number[][]): number[] {
+  return Array.from(new Set(lists.flat()));
+}
+
+function queryVariantTermGroups(q: string): string[][][] {
+  const searchQuery = buildSearchQuery(q);
+  return searchQuery.tokenGroups
+    .map((group) =>
+      group
+        .map((variant) => bigramsForSearch(variant.normalized || variant.term))
+        .filter((terms) => terms.length > 0)
+    )
+    .filter((group) => group.length > 0);
+}
+
+function candidateIdsFromBigramPostings(
+  q: string,
+  searchMode: SearchMode,
+  postingsByTerm: Map<string, number[]>
+): number[] {
+  const groupCandidates = queryVariantTermGroups(q).map((variantGroups) => {
+    const variantCandidates = variantGroups.map((terms) => {
+      const lists = terms.map((term) => postingsByTerm.get(term) ?? []);
+      if (lists.some((list) => list.length === 0)) return [];
+      return lists.slice(1).reduce((acc, list) => intersectNumberLists(acc, list), lists[0] ?? []);
+    });
+    return unionNumberLists(variantCandidates);
+  });
+
+  const nonEmptyGroups = groupCandidates.filter((group) => group.length > 0);
+  if (nonEmptyGroups.length === 0) return [];
+  if (searchMode === "or") return unionNumberLists(nonEmptyGroups);
+  if (nonEmptyGroups.length !== groupCandidates.length) return [];
+  return nonEmptyGroups
+    .slice(1)
+    .reduce((acc, group) => intersectNumberLists(acc, group), nonEmptyGroups[0] ?? []);
+}
+
+async function loadJsonWithCache<T>(
+  url: string,
+  cache: Map<string, Promise<T>>,
+  signal: AbortSignal,
+  validate: (value: T) => boolean,
+  errorMessage: string
+): Promise<T> {
+  let promise = cache.get(url);
+  if (!promise) {
+    promise = fetch(url, { cache: "no-cache" })
+      .then(async (response) => {
+        if (!response.ok) throw new Error(errorMessage);
+        const data = (await response.json()) as T;
+        if (!validate(data)) throw new Error(errorMessage);
+        return data;
+      })
+      .catch((error) => {
+        cache.delete(url);
+        throw error;
+      });
+    cache.set(url, promise);
+  }
+  const data = await promise;
+  if (signal.aborted) throw new Error("検索を中断しました");
+  return data;
+}
+
+async function loadClientBigramCitySearch(
+  city: string,
+  q: string,
+  signal: AbortSignal
+): Promise<{ manifest: ClientBigramSearchManifest; documents: ClientBigramSearchDocument[]; postingsByTerm: Map<string, number[]> }> {
+  const baseUrl = `/generated/search-bigram-cities/${city}`;
+  const manifest = await loadJsonWithCache<ClientBigramSearchManifest>(
+    `${baseUrl}/manifest.json`,
+    clientBigramManifestPromises,
+    signal,
+    (data) => data?.scope === "city-bigram" && data.city === city && Number.isFinite(data.bucket_count),
+    "市別検索インデックスの読み込みに失敗しました"
+  );
+  const documents = await loadJsonWithCache<ClientBigramSearchDocument[]>(
+    `${baseUrl}/documents.json`,
+    clientBigramDocumentsPromises,
+    signal,
+    Array.isArray,
+    "市別検索インデックスの読み込みに失敗しました"
+  );
+  const terms = Array.from(new Set(queryVariantTermGroups(q).flat(2)));
+  const bucketFiles = Array.from(new Set(terms.map((term) => bigramBucketFile(bigramBucket(term)))))
+    .filter((file) => manifest.buckets.includes(file));
+  const buckets = await Promise.all(
+    bucketFiles.map((file) =>
+      loadJsonWithCache<Record<string, number[]>>(
+        `${baseUrl}/postings/${file}`,
+        clientBigramPostingPromises,
+        signal,
+        (data) => data && typeof data === "object" && !Array.isArray(data),
+        "市別検索インデックスの読み込みに失敗しました"
+      )
+    )
+  );
+  const postingsByTerm = new Map<string, number[]>();
+  for (const bucket of buckets) {
+    for (const term of terms) {
+      if (bucket[term]) postingsByTerm.set(term, bucket[term]);
+    }
+  }
+  return { manifest, documents, postingsByTerm };
+}
+
+function dedupeSessionHits(results: RankedSessionHit[]): RankedSessionHit[] {
+  const byKey = new Map<string, RankedSessionHit>();
+  for (const result of sortSessionHits(results)) {
+    const key = result.sourceType === "minutes" && result.href.includes("/minutes/")
+      ? `${result.city}:minutes:${result.href.split("?")[0]}`
+      : `${result.city}:${result.sourceType}:${result.id}`;
+    if (!byKey.has(key)) byKey.set(key, result);
+  }
+  return Array.from(byKey.values());
+}
+
+function runClientBigramCitySearch(
+  cityData: { manifest: ClientBigramSearchManifest; documents: ClientBigramSearchDocument[]; postingsByTerm: Map<string, number[]> },
+  options: {
+    q: string;
+    searchMode: SearchMode;
+    cityFilter: string;
+    sourceFilter: SourceFilter;
+    yearFilter: string;
+    factionFilter: string;
+  }
+): SearchResponse {
+  const { q, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter } = options;
+  const searchQuery = buildSearchQuery(q);
+  const queryAssist = buildSearchAssist(q);
+  const exactExpandedTerms = queryAssist.find((group) => group.kind === "exact")?.terms ?? [];
+  const relatedExpandedTerms = queryAssist.find((group) => group.kind === "related")?.terms ?? [];
+  const searchSuggestions = queryAssist.find((group) => group.kind === "suggestion")?.terms ?? [];
+  const tokens = searchQuery.highlightTokens;
+
+  const candidateIds = candidateIdsFromBigramPostings(q, searchMode, cityData.postingsByTerm);
+  const candidateDocs = candidateIds
+    .map((index) => cityData.documents[index])
+    .filter((doc): doc is ClientBigramSearchDocument => Boolean(doc));
+
+  const collectResults = (
+    mode: "strict" | "fallback"
+  ): { sessionResults: RankedSessionHit[]; memberResults: RankedMemberHit[] } => {
+    const sessionResults: RankedSessionHit[] = [];
+    const memberResults: RankedMemberHit[] = [];
+    const evaluateText = createSearchTextEvaluator(searchQuery, searchMode, mode);
+
+    for (const doc of candidateDocs) {
+      const searchText = documentSearchText(doc);
+      const evaluation = evaluateText(searchText);
+      if (!evaluation.matched) continue;
+
+      if (doc.source === "member") {
+        const name = doc.name || doc.member_name || doc.title;
+        const furigana = doc.furigana ?? "";
+        const party = doc.party ?? "";
+        const faction = doc.faction ?? "";
+        const committees = doc.committees ?? [];
+        let score = evaluation.score + 20;
+        if (evaluateText(name).matched) score += 28;
+        if (furigana && evaluateText(furigana).matched) score += 20;
+        if (party && evaluateText(party).matched) score += 10;
+        if (faction && evaluateText(faction).matched) score += 12;
+        memberResults.push({
+          city: doc.city,
+          cityName: doc.cityName,
+          href: doc.href || `/${doc.city}`,
+          name,
+          furigana,
+          party,
+          faction,
+          committees,
+          score,
+        });
+        continue;
+      }
+
+      const sourceType = doc.sourceType ?? (doc.source === "decision" ? "decision" : doc.source === "session" ? "session" : "minutes");
+      let score = evaluation.score + (doc.source === "member_activity" ? 32 : doc.source === "agenda" ? 14 : 8);
+      if (evaluateText(doc.title).matched) score += 16;
+      if (doc.member_name && evaluateText(doc.member_name).matched) score += 12;
+      if (doc.committee && evaluateText(doc.committee).matched) score += 8;
+      sessionResults.push({
+        id: doc.id,
+        city: doc.city,
+        cityName: doc.cityName,
+        sourceType,
+        title: doc.title,
+        committee: doc.committee ?? (sourceType === "decision" ? "議決結果" : ""),
+        href: doc.href || `/${doc.city}`,
+        segIndex: 0,
+        label: doc.label ?? "",
+        startTime: "",
+        context: excerptSearchText(doc.context || doc.body || searchText, tokens, 100),
+        field: doc.field ?? (sourceType === "decision" ? "議決" : sourceType === "session" ? "会議録速報" : "議事録"),
+        date: doc.date,
+        year: doc.year || yearFromDate(doc.date) || yearFromCouncilName(doc.title),
+        score,
+      });
+    }
+
+    return {
+      sessionResults: dedupeSessionHits(sessionResults),
+      memberResults: sortMemberHits(memberResults),
+    };
+  };
+
+  const strictResults = collectResults("strict");
+  let sessionResults = strictResults.sessionResults;
+  let memberResults = strictResults.memberResults;
+  let sessionRescued = false;
+  let memberRescued = false;
+
+  if (sessionResults.length === 0 || memberResults.length === 0) {
+    const fallbackResults = collectResults("fallback");
+    if (sessionResults.length === 0 && fallbackResults.sessionResults.length > 0) {
+      sessionResults = fallbackResults.sessionResults;
+      sessionRescued = true;
+    }
+    if (memberResults.length === 0 && fallbackResults.memberResults.length > 0) {
+      memberResults = fallbackResults.memberResults;
+      memberRescued = true;
+    }
+  }
+
+  const baseCityFacets = buildCityFacets(sessionResults, memberResults);
+  const cityScopedSessions =
+    cityFilter === "all" ? sessionResults : sessionResults.filter((result) => result.city === cityFilter);
+  const cityScopedMembers =
+    cityFilter === "all" ? memberResults : memberResults.filter((result) => result.city === cityFilter);
+  const sessionSourceFacets = buildCountFacets(
+    cityScopedSessions.map((result) => result.sourceType),
+    (value) =>
+      ({
+        minutes: "議事録",
+        session: "会議録速報",
+        decision: "議決結果",
+      })[value] ?? value
+  );
+  const effectiveSourceFilter =
+    sourceFilter !== "all" && sessionSourceFacets.some((facet) => facet.value === sourceFilter)
+      ? sourceFilter
+      : "all";
+  const sourceScopedSessions =
+    effectiveSourceFilter === "all"
+      ? cityScopedSessions
+      : cityScopedSessions.filter((result) => result.sourceType === effectiveSourceFilter);
+  const sessionYearFacets = buildCountFacets(
+    sourceScopedSessions.map((result) => result.year).filter(Boolean)
+  );
+  const effectiveYearFilter =
+    yearFilter !== "all" && sessionYearFacets.some((facet) => facet.value === yearFilter)
+      ? yearFilter
+      : "all";
+  const filteredSessions =
+    effectiveYearFilter === "all"
+      ? sourceScopedSessions
+      : sourceScopedSessions.filter((result) => result.year === effectiveYearFilter);
+  const memberFactionFacets = buildCountFacets(
+    cityScopedMembers.map((result) => result.faction || "無所属")
+  );
+  const effectiveFactionFilter =
+    factionFilter !== "all" && memberFactionFacets.some((facet) => facet.value === factionFilter)
+      ? factionFilter
+      : "all";
+  const filteredMembers =
+    effectiveFactionFilter === "all"
+      ? cityScopedMembers
+      : cityScopedMembers.filter((result) => (result.faction || "無所属") === effectiveFactionFilter);
+  const maxResults = 200;
+
+  return {
+    sessionResults: stripSessionScore(filteredSessions.slice(0, maxResults)),
+    memberResults: stripMemberScore(filteredMembers.slice(0, maxResults)),
+    sessionTotal: filteredSessions.length,
+    memberTotal: filteredMembers.length,
+    sessionBaseTotal: sessionResults.length,
+    memberBaseTotal: memberResults.length,
+    truncated: filteredSessions.length > maxResults || filteredMembers.length > maxResults,
+    rescued: sessionRescued || memberRescued,
+    sessionRescued,
+    memberRescued,
+    highlightTokens: tokens,
+    queryAssist,
+    exactExpandedTerms,
+    relatedExpandedTerms,
+    searchSuggestions,
+    searchMode,
+    facets: {
+      cities: baseCityFacets,
+      sessionSources: sessionSourceFacets,
+      sessionYears: sessionYearFacets,
+      memberFactions: memberFactionFacets,
+    },
+    searchScope: "city",
+    searchScopeLabel: "選択中の市町村全期間",
+    fullSearchAvailable: false,
+  };
 }
 
 function runClientSearch(
@@ -1019,17 +1410,41 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         }
         let data = (await res.json()) as SearchResponse;
         if (data.clientSearchRequired) {
-          const runtimeIndex = await loadClientSearchIndex(data.indexUrl ?? "/generated/search-index.json", controller.signal);
-          data = runClientSearch(runtimeIndex, {
-            q,
-            searchMode,
-            cityFilter,
-            sourceFilter,
-            yearFilter,
-            factionFilter,
-          });
+          if (cityFilter !== "all") {
+            try {
+              const bigramCityData = await loadClientBigramCitySearch(cityFilter, q, controller.signal);
+              data = runClientBigramCitySearch(bigramCityData, {
+                q,
+                searchMode,
+                cityFilter,
+                sourceFilter,
+                yearFilter,
+                factionFilter,
+              });
+            } catch {
+              const runtimeIndex = await loadClientSearchIndex(data.indexUrl ?? `/generated/search-indexes/${cityFilter}.json`, controller.signal);
+              data = runClientSearch(runtimeIndex, {
+                q,
+                searchMode,
+                cityFilter,
+                sourceFilter,
+                yearFilter,
+                factionFilter,
+              });
+            }
+          } else {
+            const runtimeIndex = await loadClientSearchIndex(data.indexUrl ?? "/generated/search-index.json", controller.signal);
+            data = runClientSearch(runtimeIndex, {
+              q,
+              searchMode,
+              cityFilter,
+              sourceFilter,
+              yearFilter,
+              factionFilter,
+            });
+          }
           const noResults = (data.sessionResults?.length ?? 0) === 0 && (data.memberResults?.length ?? 0) === 0;
-          if (runtimeIndex.scope === "recent" && cityFilter === "all" && noResults) {
+          if (data.searchScope === "recent" && cityFilter === "all" && noResults) {
             const fullRuntimeIndex = await loadClientSearchIndex("/generated/search-index.json", controller.signal);
             data = runClientSearch(fullRuntimeIndex, {
               q,

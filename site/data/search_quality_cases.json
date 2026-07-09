@@ -79,5 +79,142 @@
       "textIncludes": ["学校給食", "人口ビジョン"]
     },
     "note": "複数テーマを持つ一般質問で、給食テーマから会議に到達できるか。"
+  },
+  {
+    "id": "eniwa-mikami-rapidus-tax",
+    "city": "eniwa",
+    "cityName": "恵庭市",
+    "query": "三上まどか ラピダス",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 237,
+      "member_name": "三上まどか",
+      "textIncludes": ["ラピダス進出の税収への影響", "固定資産税"]
+    },
+    "note": "恵庭市の議員名と政策テーマの組み合わせで、半導体関連の質問へ到達できるか。"
+  },
+  {
+    "id": "eniwa-hase-childcare-staff",
+    "city": "eniwa",
+    "cityName": "恵庭市",
+    "query": "長谷文子 保育士",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 257,
+      "member_name": "長谷文子",
+      "textIncludes": ["保育士人材確保対策事業の実績", "潜在保育士"]
+    },
+    "note": "保育士人材確保の質問を議員名つきで拾えるか。"
+  },
+  {
+    "id": "eniwa-tourism-plan",
+    "city": "eniwa",
+    "cityName": "恵庭市",
+    "query": "恵庭 観光振興計画",
+    "operator": "and",
+    "expected": {
+      "source": "agenda",
+      "council_id": 219,
+      "textIncludes": ["観光振興計画", "柏野大介"]
+    },
+    "note": "公式議事録本文から観光振興計画の一般質問へ到達できるか。"
+  },
+  {
+    "id": "eniwa-disaster-radio-contract",
+    "city": "eniwa",
+    "cityName": "恵庭市",
+    "query": "恵庭 防災行政無線",
+    "operator": "and",
+    "expected": {
+      "source": "agenda",
+      "council_id": 183,
+      "textIncludes": ["防災行政無線更新工事", "請負契約"]
+    },
+    "note": "防災行政無線の契約議案を本文検索で拾えるか。"
+  },
+  {
+    "id": "eniwa-childcare-after-school-club",
+    "city": "eniwa",
+    "cityName": "恵庭市",
+    "query": "恵庭 子育て 学童クラブ",
+    "operator": "and",
+    "expected": {
+      "source": "agenda",
+      "council_id": 177,
+      "textIncludes": ["子育て支援", "学童クラブ"]
+    },
+    "note": "市民が自然に使う子育て系キーワードで学童クラブの質問へ到達できるか。"
+  },
+  {
+    "id": "tomakomai-shikata-ai-system",
+    "city": "tomakomai",
+    "cityName": "苫小牧市",
+    "query": "苫小牧 志方光徳 AI",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 280,
+      "member_name": "志方光徳",
+      "textIncludes": ["生成AIシステム導入", "文書管理システム"]
+    },
+    "note": "苫小牧市の議員名とAI関連テーマで該当質問へ到達できるか。"
+  },
+  {
+    "id": "tomakomai-shikata-skate-festival",
+    "city": "tomakomai",
+    "cityName": "苫小牧市",
+    "query": "苫小牧 スケートまつり",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 262,
+      "member_name": "志方光徳",
+      "textIncludes": ["港まつり", "スケートまつり"]
+    },
+    "note": "地域イベント名から関連する一般質問へ到達できるか。"
+  },
+  {
+    "id": "tomakomai-yamada-maternity-care",
+    "city": "tomakomai",
+    "cityName": "苫小牧市",
+    "query": "山田隆子 妊産婦支援",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 277,
+      "member_name": "山田隆子",
+      "textIncludes": ["妊産婦支援事業", "産後ケア事業"]
+    },
+    "note": "福祉・子育て系テーマを議員名つきで拾えるか。"
+  },
+  {
+    "id": "tomakomai-ono-dv-benefit",
+    "city": "tomakomai",
+    "cityName": "苫小牧市",
+    "query": "大野正和 DV",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 245,
+      "member_name": "大野正和",
+      "textIncludes": ["DV被害者への給付対応", "物価高騰支援金"]
+    },
+    "note": "アルファベットを含む短い政策キーワードでも該当質問へ到達できるか。"
+  },
+  {
+    "id": "tomakomai-kamiyama-school-lunch",
+    "city": "tomakomai",
+    "cityName": "苫小牧市",
+    "query": "神山哲太郎 学校給食",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 245,
+      "member_name": "神山哲太郎",
+      "textIncludes": ["学校給食無償化拡大検討", "防災タワー"]
+    },
+    "note": "学校給食テーマを議員名つきで拾えるか。"
   }
 ]
