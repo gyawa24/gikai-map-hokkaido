@@ -54,6 +54,19 @@
     "note": "決算特別委員会の質問テーマが、本文断片ではなく市民向けテーマで拾えるか。"
   },
   {
+    "id": "chitose-agenda-snow-removal-budget",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "千歳 除排雪事業費",
+    "operator": "and",
+    "expected": {
+      "source": "agenda",
+      "council_id": 571,
+      "textIncludes": ["除排雪事業費", "決算額"]
+    },
+    "note": "議事録本文側の除排雪事業費が、要約テーマだけでなく公式議事録からも拾えるか。"
+  },
+  {
     "id": "chitose-ogawa-school-lunch",
     "city": "chitose",
     "cityName": "千歳市",

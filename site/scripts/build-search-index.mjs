@@ -13,6 +13,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import zlib from "node:zlib";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE_DIR = path.resolve(__dirname, "..");
@@ -20,6 +21,7 @@ const DATA_DIR = path.join(SITE_DIR, "data");
 const OUT_FILE = path.join(DATA_DIR, "_search-index.json");
 const PUBLIC_GENERATED_DIR = path.join(SITE_DIR, "public", "generated");
 const PUBLIC_SEARCH_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "search-index.json");
+const PUBLIC_RECENT_SEARCH_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "search-index-recent.json");
 const PUBLIC_CITY_SEARCH_INDEX_DIR = path.join(PUBLIC_GENERATED_DIR, "search-indexes");
 const PUBLIC_TOPICS_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "topics-index.json");
 const SEGMENT_FALLBACKS_FILE = path.join(DATA_DIR, "search_segment_fallbacks.json");
@@ -32,9 +34,44 @@ const DISCUSSION_TYPES = new Set([
   "○一般質問",
 ]);
 const EXCERPT_MAX = 400;
+const RECENT_YEAR_WINDOW = 2;
 
 function cleanText(s) {
   return (s ?? "").replace(/\s+/g, " ").trim();
+}
+
+function cleanIndexText(s) {
+  return cleanText(s)
+    .replace(/([、。！？]){2,}/g, "$1")
+    .replace(/[・･]{3,}/g, "・")
+    .replace(/[‐‑‒–—―ー－-]{3,}/g, "ー");
+}
+
+function escapeRegExp(text) {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function dateFromScheduleName(year, scheduleName) {
+  const normalized = cleanText(scheduleName).replace(/[０-９]/g, (char) =>
+    String.fromCharCode(char.charCodeAt(0) - 0xfee0)
+  );
+  const match = normalized.match(/(\d{1,2})月(\d{1,2})日/);
+  if (!year || !match) return "";
+  const month = match[1].padStart(2, "0");
+  const day = match[2].padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function normalizeMinuteBodyForIndex(speaker, text) {
+  const normalizedSpeaker = cleanText(speaker);
+  let body = cleanIndexText(text);
+  if (!normalizedSpeaker || !body) return body;
+  body = body.replace(new RegExp(`^[◆◎○]?\\s*${escapeRegExp(normalizedSpeaker)}\\s*`), "");
+  return body.trim();
+}
+
+function yearFromDate(date) {
+  return cleanText(date).match(/^(\d{4})/)?.[1] ?? "";
 }
 
 // 会議名から西暦を推定（令和◯年 → 2018+N）
@@ -49,6 +86,58 @@ function yearFromCouncilName(name) {
   const west = norm.match(/(\d{4})/);
   if (west) return west[1];
   return "";
+}
+
+function normalizeYearValue(value) {
+  const text = cleanText(value);
+  if (!text) return "";
+  return yearFromCouncilName(text) || yearFromDate(text);
+}
+
+function yearNumber(value, fallback) {
+  const year = normalizeYearValue(value) || normalizeYearValue(fallback);
+  const numeric = Number(year);
+  return Number.isFinite(numeric) ? numeric : 0;
+}
+
+function latestIndexYear({ agendas, sessions, enriched, memberActivities }) {
+  const years = [
+    ...agendas.map((row) => yearNumber(row.year || row.date, row.council_name)),
+    ...sessions.map((row) => yearNumber(row.date, row.title)),
+    ...enriched.map((row) => yearNumber(row.name, row.generated_at)),
+    ...memberActivities.map((row) => yearNumber(row.year, row.council_name)),
+  ].filter((year) => year > 0);
+  return years.length ? Math.max(...years) : new Date().getFullYear();
+}
+
+function withoutTranscript(session) {
+  return {
+    ...session,
+    segments: (session.segments ?? []).map((segment) => {
+      const nextSegment = { ...segment };
+      delete nextSegment.transcript;
+      return nextSegment;
+    }),
+  };
+}
+
+function buildRecentRuntimeIndex(runtimeOut) {
+  const recentToYear = latestIndexYear(runtimeOut);
+  const recentFromYear = recentToYear - RECENT_YEAR_WINDOW + 1;
+  const isRecent = (value, fallback) => yearNumber(value, fallback) >= recentFromYear;
+  return {
+    ...runtimeOut,
+    scope: "recent",
+    recent_from_year: recentFromYear,
+    recent_to_year: recentToYear,
+    count: runtimeOut.agendas.filter((row) => isRecent(row.year || row.date, row.council_name)).length,
+    agendas: runtimeOut.agendas.filter((row) => isRecent(row.year || row.date, row.council_name)),
+    sessions: (runtimeOut.sessions ?? [])
+      .filter((row) => isRecent(row.date, row.title))
+      .map(withoutTranscript),
+    enriched: (runtimeOut.enriched ?? []).filter((row) => isRecent(row.name, row.generated_at)),
+    memberActivities: (runtimeOut.memberActivities ?? []).filter((row) => isRecent(row.year, row.council_name)),
+  };
 }
 
 function getCityName(municipalities, slug) {
@@ -136,6 +225,7 @@ function buildMembers(city, cityName) {
     return members.map((member) => ({
       city,
       cityName,
+      seat_number: Number.isFinite(Number(member.seat_number)) ? Number(member.seat_number) : null,
       name: member.name ?? "",
       furigana: member.furigana ?? "",
       party: member.party ?? "",
@@ -151,6 +241,7 @@ function buildMembers(city, cityName) {
     .map((candidate) => ({
       city,
       cityName,
+      seat_number: null,
       name: candidate.name ?? "",
       furigana: candidate.furigana ?? "",
       party: candidate.party ?? "",
@@ -203,14 +294,16 @@ function buildSegmentFallbackAgendas({ city, cityName, councilId, councilName, y
       const role = cleanText(seg.speaker_role);
       const body = cleanText(seg.text);
       const scheduleId = Number.isFinite(Number(seg.schedule_id)) ? Number(seg.schedule_id) : 1;
+      const scheduleName = cleanText(seg.schedule_name);
       return {
         city,
         cityName,
         council_id: councilId,
         council_name: councilName,
         year,
+        date: dateFromScheduleName(year, scheduleName),
         schedule_index: Math.max(0, scheduleId - 1),
-        schedule_name: cleanText(seg.schedule_name),
+        schedule_name: scheduleName,
         agenda_title: [role, speaker].filter(Boolean).join(": ") || `発言 ${index + 1}`,
         first_minute_id: 0,
         text: body.slice(0, EXCERPT_MAX),
@@ -281,17 +374,19 @@ function buildIndex() {
         let currentAgendaTitle = null;
         let currentAgendaBody = [];
         let currentFirstMinuteId = null;
-        const schName = sch.name ?? "";
+        const schName = cleanText(sch.name);
+        const schDate = dateFromScheduleName(year, schName);
 
         const flush = () => {
           if (!currentAgendaTitle && currentAgendaBody.length === 0) return;
-          const body = currentAgendaBody.join(" ");
+          const body = cleanIndexText(currentAgendaBody.join(" "));
           agendas.push({
             city,
             cityName,
             council_id: councilId,
             council_name: councilName,
             year,
+            date: schDate,
             schedule_index: schIdx,
             schedule_name: schName,
             agenda_title: currentAgendaTitle ?? "",
@@ -310,8 +405,9 @@ function buildIndex() {
             currentFirstMinuteId = m.minute_id ?? null;
           } else if (DISCUSSION_TYPES.has(m.minute_type)) {
             if (currentFirstMinuteId === null) currentFirstMinuteId = m.minute_id ?? null;
-            const speaker = m.title ? `${m.title}: ` : "";
-            currentAgendaBody.push(speaker + cleanText(m.text));
+            const speaker = cleanText(m.title);
+            const body = normalizeMinuteBodyForIndex(speaker, m.text);
+            currentAgendaBody.push(speaker ? `${speaker}: ${body}` : body);
           }
         }
         flush();
@@ -341,6 +437,7 @@ function buildIndex() {
 
   const runtimeOut = {
     ...out,
+    scope: "full",
     municipalities: municipalities
       .filter((m) => m.active)
       .map((m) => ({ slug: m.slug, name: m.name })),
@@ -350,6 +447,7 @@ function buildIndex() {
     members,
     memberActivities,
   };
+  const recentRuntimeOut = buildRecentRuntimeIndex(runtimeOut);
   const topicsOut = {
     version: 1,
     generated_at: out.generated_at,
@@ -361,9 +459,11 @@ function buildIndex() {
   fs.mkdirSync(PUBLIC_GENERATED_DIR, { recursive: true });
   fs.mkdirSync(PUBLIC_CITY_SEARCH_INDEX_DIR, { recursive: true });
   fs.writeFileSync(PUBLIC_SEARCH_INDEX_FILE, JSON.stringify(runtimeOut));
+  fs.writeFileSync(PUBLIC_RECENT_SEARCH_INDEX_FILE, JSON.stringify(recentRuntimeOut));
   for (const city of cityDirs) {
     const cityRuntimeOut = {
       ...out,
+      scope: "city",
       count: agendas.filter((row) => row.city === city).length,
       agendas: agendas.filter((row) => row.city === city),
       municipalities: runtimeOut.municipalities.filter((row) => row.slug === city),
@@ -381,12 +481,16 @@ function buildIndex() {
   fs.writeFileSync(PUBLIC_TOPICS_INDEX_FILE, JSON.stringify(topicsOut));
   const stat = fs.statSync(OUT_FILE);
   const runtimeStat = fs.statSync(PUBLIC_SEARCH_INDEX_FILE);
+  const recentRuntimeStat = fs.statSync(PUBLIC_RECENT_SEARCH_INDEX_FILE);
   const topicsStat = fs.statSync(PUBLIC_TOPICS_INDEX_FILE);
   console.log(
     `search-index written: ${OUT_FILE.replace(SITE_DIR, "site")} (${agendas.length} agendas, ${(stat.size / 1024 / 1024).toFixed(1)} MB)`
   );
   console.log(
     `runtime search-index written: ${PUBLIC_SEARCH_INDEX_FILE.replace(SITE_DIR, "site")} (${(runtimeStat.size / 1024 / 1024).toFixed(1)} MB)`
+  );
+  console.log(
+    `recent search-index written: ${PUBLIC_RECENT_SEARCH_INDEX_FILE.replace(SITE_DIR, "site")} (${(recentRuntimeStat.size / 1024 / 1024).toFixed(1)} MB, gzip ${(zlib.gzipSync(fs.readFileSync(PUBLIC_RECENT_SEARCH_INDEX_FILE)).length / 1024 / 1024).toFixed(2)} MB)`
   );
   console.log(
     `topics-index written: ${PUBLIC_TOPICS_INDEX_FILE.replace(SITE_DIR, "site")} (${enriched.length} records, ${(topicsStat.size / 1024 / 1024).toFixed(1)} MB)`

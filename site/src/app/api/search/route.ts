@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDecisions, getMembers, getMinutesEnrichedDocs, getSearchIndex, getSession, getSessionSummaries, readCityJson } from "@/lib/cityData";
 import { getMunicipalities } from "@/lib/municipalities";
 import { checkRateLimit } from "@/lib/rateLimit";
-import { buildSearchAssist, buildSearchQuery, excerptSearchText, matchesSearchText, scoreSearchText } from "@/lib/searchQuery";
+import { buildSearchAssist, buildSearchQuery, createSearchTextEvaluator, excerptSearchText } from "@/lib/searchQuery";
 import { getClientAddress } from "@/lib/security";
 import { fetchStaticAsset } from "@/lib/staticAssetFetch";
 import type { SearchAssistGroup, SearchOperator } from "@/lib/searchQuery";
@@ -28,11 +28,51 @@ function shouldUseClientSearch(request: NextRequest): boolean {
   );
 }
 
-function clientSearchIndexUrl(cityFilter: string): string {
+const RECENT_YEAR_WINDOW = 2;
+
+export type SearchIndexScope = "recent" | "full" | "city" | "server";
+
+function currentRecentFromYear(): number {
+  return new Date().getFullYear() - RECENT_YEAR_WINDOW + 1;
+}
+
+function isOldYearFilter(yearFilter: string): boolean {
+  const year = Number(yearFilter);
+  return yearFilter !== "all" && Number.isFinite(year) && year < currentRecentFromYear();
+}
+
+function clientSearchIndexMeta(
+  cityFilter: string,
+  yearFilter: string,
+  forceFullSearch: boolean
+): {
+  indexUrl: string;
+  searchScope: SearchIndexScope;
+  searchScopeLabel: string;
+  fullSearchAvailable: boolean;
+} {
   if (cityFilter !== "all" && /^[a-z0-9-]+$/.test(cityFilter)) {
-    return `/generated/search-indexes/${cityFilter}.json`;
+    return {
+      indexUrl: `/generated/search-indexes/${cityFilter}.json`,
+      searchScope: "city",
+      searchScopeLabel: "選択中の市町村全期間",
+      fullSearchAvailable: false,
+    };
   }
-  return "/generated/search-index.json";
+  if (forceFullSearch || isOldYearFilter(yearFilter)) {
+    return {
+      indexUrl: "/generated/search-index.json",
+      searchScope: "full",
+      searchScopeLabel: "全期間",
+      fullSearchAvailable: false,
+    };
+  }
+  return {
+    indexUrl: "/generated/search-index-recent.json",
+    searchScope: "recent",
+    searchScopeLabel: "直近2年",
+    fullSearchAvailable: true,
+  };
 }
 
 // 日付文字列（"2026-03-02" 等）から西暦4桁を取り出す
@@ -99,6 +139,7 @@ export type SessionHit = {
   startTime: string;
   context: string;
   field: string;
+  date?: string;
   /** 西暦。不明な場合は空文字 */
   year: string;
 };
@@ -147,6 +188,9 @@ export type SearchResponse = {
   };
   clientSearchRequired?: boolean;
   indexUrl?: string;
+  searchScope?: SearchIndexScope;
+  searchScopeLabel?: string;
+  fullSearchAvailable?: boolean;
 };
 
 type RankedSessionHit = SessionHit & { score: number };
@@ -163,6 +207,7 @@ type AgendaEntry = {
   first_minute_id: number | null;
   text: string;
   truncated: boolean;
+  date?: string;
   year?: string;
 };
 
@@ -204,6 +249,7 @@ type IndexedDecision = {
 type IndexedMember = {
   city: string;
   cityName: string;
+  seat_number?: number | null;
   name: string;
   furigana: string;
   party: string;
@@ -250,6 +296,28 @@ function memberActivityText(activity: IndexedMemberActivity, cityName: string): 
     activity.council_name,
     ...uniqueTexts([...(activity.summary_topics ?? []), ...(activity.topics ?? [])]),
   ].join(" ");
+}
+
+function cleanRawTopicExcerpt(text: string): string {
+  return text
+    .replace(/（[^）]{1,24}君）\s*/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function memberActivityContext(summaryTopics: string[], topics: string[], tokens: string[]): string {
+  if (summaryTopics.length > 0) {
+    return `質問テーマ: ${summaryTopics.join("、")}`;
+  }
+  const excerptSource = topics.map(cleanRawTopicExcerpt).filter(Boolean).slice(0, 3).join("。");
+  return excerptSource ? `議事録からの抜粋: ${excerptSearchText(excerptSource, tokens, 80)}` : "";
+}
+
+function memberHref(city: string, seatNumber: number | null | undefined): string {
+  const normalizedSeatNumber = Number(seatNumber);
+  return Number.isFinite(normalizedSeatNumber) && normalizedSeatNumber > 0
+    ? `/${city}/members/${normalizedSeatNumber}`
+    : `/${city}`;
 }
 
 function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
@@ -339,6 +407,7 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
         ...memberList.map((member) => ({
           city,
           cityName,
+          seat_number: member.seat_number,
           name: member.name,
           furigana: member.furigana,
           party: member.party ?? "",
@@ -357,6 +426,7 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
         .map((candidate) => ({
           city,
           cityName,
+          seat_number: null,
           name: (candidate.name as string) ?? "",
           furigana: (candidate.furigana as string) ?? "",
           party: (candidate.party as string) ?? "",
@@ -468,6 +538,7 @@ async function getRuntimeSearchIndex(request: NextRequest): Promise<RuntimeSearc
 function sortSessionHits(results: RankedSessionHit[]): RankedSessionHit[] {
   return results.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
+    if (b.date !== a.date) return (b.date || "").localeCompare(a.date || "");
     if (b.year !== a.year) return (b.year || "").localeCompare(a.year || "");
     return a.title.localeCompare(b.title, "ja");
   });
@@ -533,6 +604,7 @@ function stripSessionScore(results: RankedSessionHit[]): SessionHit[] {
     startTime: result.startTime,
     context: result.context,
     field: result.field,
+    date: result.date,
     year: result.year,
   }));
 }
@@ -579,6 +651,7 @@ export async function GET(request: NextRequest) {
   const factionFilter = request.nextUrl.searchParams.get("faction") ?? "all";
   const rawSourceFilter = request.nextUrl.searchParams.get("source") ?? "all";
   const rawSearchMode = request.nextUrl.searchParams.get("op") ?? "and";
+  const forceFullSearch = request.nextUrl.searchParams.get("scope") === "all";
   const sourceFilter: SourceFilter =
     rawSourceFilter === "minutes" || rawSourceFilter === "session" || rawSourceFilter === "decision"
       ? rawSourceFilter
@@ -622,7 +695,7 @@ export async function GET(request: NextRequest) {
   }
 
   if (shouldUseClientSearch(request) || (await hasCloudflareAssets())) {
-    const indexUrl = clientSearchIndexUrl(cityFilter);
+    const searchIndex = clientSearchIndexMeta(cityFilter, yearFilter, forceFullSearch);
     const response = NextResponse.json({
       sessionResults: [],
       memberResults: [],
@@ -647,10 +720,14 @@ export async function GET(request: NextRequest) {
         memberFactions: [],
       },
       clientSearchRequired: true,
-      indexUrl,
+      indexUrl: searchIndex.indexUrl,
+      searchScope: searchIndex.searchScope,
+      searchScopeLabel: searchIndex.searchScopeLabel,
+      fullSearchAvailable: searchIndex.fullSearchAvailable,
     } satisfies SearchResponse);
     response.headers.set("x-gikai-search-mode", "client");
-    response.headers.set("x-gikai-search-index-url", indexUrl);
+    response.headers.set("x-gikai-search-index-url", searchIndex.indexUrl);
+    response.headers.set("x-gikai-search-index-scope", searchIndex.searchScope);
     response.headers.set("cache-control", "no-store");
     return response;
   }
@@ -663,6 +740,7 @@ export async function GET(request: NextRequest) {
   ): { sessionResults: RankedSessionHit[]; memberResults: RankedMemberHit[] } => {
     const sessionResults: RankedSessionHit[] = [];
     const memberResults: RankedMemberHit[] = [];
+    const evaluateText = createSearchTextEvaluator(searchQuery, searchMode, mode);
 
     for (const s of runtimeIndex.sessions ?? []) {
         const city = s.city;
@@ -681,8 +759,9 @@ export async function GET(request: NextRequest) {
             { text: `${cityName} ${seg.transcript ?? ""}`, field: "全文", bonus: 10, radius: 100 },
           ];
           for (const field of fields) {
-            if (!matchesSearchText(field.text, searchQuery, mode, searchMode)) continue;
-            const score = scoreSearchText(field.text, searchQuery, searchMode, mode) + field.bonus;
+            const evaluation = evaluateText(field.text);
+            if (!evaluation.matched) continue;
+            const score = evaluation.score + field.bonus;
             if (bestHit && bestHit.score >= score) continue;
             bestHit = {
               id: s.id,
@@ -697,6 +776,7 @@ export async function GET(request: NextRequest) {
               startTime: seg.start_time ?? "",
               context: excerptSearchText(field.text, tokens, field.radius),
               field: field.field,
+              date: s.date,
               year: sessionYear,
               score,
             };
@@ -704,8 +784,9 @@ export async function GET(request: NextRequest) {
         }
 
         const titleSearchText = `${cityName} ${title} ${committee}`;
-        if (matchesSearchText(titleSearchText, searchQuery, mode, searchMode)) {
-          const score = scoreSearchText(titleSearchText, searchQuery, searchMode, mode) + 28;
+        const titleEvaluation = evaluateText(titleSearchText);
+        if (titleEvaluation.matched) {
+          const score = titleEvaluation.score + 28;
           if (!bestHit || score > bestHit.score) {
             bestHit = {
               id: s.id,
@@ -720,6 +801,7 @@ export async function GET(request: NextRequest) {
               startTime: "",
               context: sessionLabel,
               field: "会議名",
+              date: s.date,
               year: sessionYear,
               score,
             };
@@ -734,12 +816,13 @@ export async function GET(request: NextRequest) {
     const seenMinutes = new Set<string>();
     for (const agenda of runtimeIndex.agendas) {
       const haystack = `${agenda.cityName} ${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
-      if (!matchesSearchText(haystack, searchQuery, mode, searchMode)) continue;
-      let score = scoreSearchText(haystack, searchQuery, searchMode, mode) + 14;
-      if (agenda.agenda_title && matchesSearchText(agenda.agenda_title, searchQuery, mode, searchMode)) {
+      const evaluation = evaluateText(haystack);
+      if (!evaluation.matched) continue;
+      let score = evaluation.score + 14;
+      if (agenda.agenda_title && evaluateText(agenda.agenda_title).matched) {
         score += 18;
       }
-      if (matchesSearchText(agenda.council_name, searchQuery, mode, searchMode)) {
+      if (evaluateText(agenda.council_name).matched) {
         score += 10;
       }
       sessionResults.push({
@@ -758,6 +841,7 @@ export async function GET(request: NextRequest) {
         startTime: "",
         context: excerptSearchText(`${agenda.agenda_title} ${agenda.text}`, tokens, 100),
         field: "議事録",
+        date: agenda.date,
         year: agenda.year ?? yearFromCouncilName(agenda.council_name),
         score,
       });
@@ -770,18 +854,16 @@ export async function GET(request: NextRequest) {
         const minuteKey = `${city}_${activity.council_id}`;
         if (seenMinutes.has(minuteKey)) continue;
         const searchText = memberActivityText(activity, cityName);
-        if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
+        const evaluation = evaluateText(searchText);
+        if (!evaluation.matched) continue;
         const summaryTopics = uniqueTexts(activity.summary_topics ?? []);
         const topics = uniqueTexts(activity.topics ?? []);
-        const visibleTopics = summaryTopics.length ? summaryTopics : topics.slice(0, 6);
-        const contextSource = visibleTopics.length
-          ? `${activity.member_name}議員: ${visibleTopics.join("、")}`
-          : searchText;
-        let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 32;
+        const contextText = memberActivityContext(summaryTopics, topics, tokens) || excerptSearchText(searchText, tokens, 100);
+        let score = evaluation.score + 32;
         const topicText = [...summaryTopics, ...topics].join(" ");
-        if (topicText && matchesSearchText(topicText, searchQuery, mode, searchMode)) score += 22;
-        if (matchesSearchText(activity.member_name, searchQuery, mode, searchMode)) score += 12;
-        if (matchesSearchText(activity.council_name, searchQuery, mode, searchMode)) score += 8;
+        if (topicText && evaluateText(topicText).matched) score += 22;
+        if (evaluateText(activity.member_name).matched) score += 12;
+        if (evaluateText(activity.council_name).matched) score += 8;
         sessionResults.push({
           id: `${city}_member_activity_${activity.member_name}_${activity.council_id}`,
           city,
@@ -793,7 +875,7 @@ export async function GET(request: NextRequest) {
           segIndex: 0,
           label: "",
           startTime: "",
-          context: excerptSearchText(contextSource, tokens, 100),
+          context: contextText,
           field: "質問テーマ",
           year: activity.year ?? yearFromCouncilName(activity.council_name),
           score,
@@ -809,10 +891,11 @@ export async function GET(request: NextRequest) {
         const summary = doc.summary ?? "";
         const highlights = doc.highlights ?? [];
         const searchText = [cityName, doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");
-        if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
-        let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 8;
-        if (matchesSearchText(doc.name, searchQuery, mode, searchMode)) score += 16;
-        if (summary && matchesSearchText(summary, searchQuery, mode, searchMode)) score += 12;
+        const evaluation = evaluateText(searchText);
+        if (!evaluation.matched) continue;
+        let score = evaluation.score + 8;
+        if (evaluateText(doc.name).matched) score += 16;
+        if (summary && evaluateText(summary).matched) score += 12;
         const contextText = summary
           ? excerptSearchText(summary, tokens, 120)
           : highlights.slice(0, 2).join("、");
@@ -838,9 +921,10 @@ export async function GET(request: NextRequest) {
         const city = decision.city;
         const cityName = decision.cityName || cityMap[city] || city;
         const text = [cityName, decision.session, decision.description ?? ""].join(" ");
-        if (!matchesSearchText(text, searchQuery, mode, searchMode)) continue;
-        let score = scoreSearchText(text, searchQuery, searchMode, mode) + 10;
-        if (matchesSearchText(decision.session, searchQuery, mode, searchMode)) score += 10;
+        const evaluation = evaluateText(text);
+        if (!evaluation.matched) continue;
+        let score = evaluation.score + 10;
+        if (evaluateText(decision.session).matched) score += 10;
         sessionResults.push({
           id: `${city}_decision_${decision.session}`,
           city,
@@ -870,16 +954,17 @@ export async function GET(request: NextRequest) {
           const party = member.party ?? "";
           const faction = member.faction ?? "";
           const searchText = [cityName, name, furigana, party, faction, ...committees].join(" ");
-          if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
-          let score = scoreSearchText(searchText, searchQuery, searchMode, mode);
-          if (matchesSearchText(name, searchQuery, mode, searchMode)) score += 28;
-          if (furigana && matchesSearchText(furigana, searchQuery, mode, searchMode)) score += 20;
-          if (party && matchesSearchText(party, searchQuery, mode, searchMode)) score += 10;
-          if (faction && matchesSearchText(faction, searchQuery, mode, searchMode)) score += 12;
+          const evaluation = evaluateText(searchText);
+          if (!evaluation.matched) continue;
+          let score = evaluation.score;
+          if (evaluateText(name).matched) score += 28;
+          if (furigana && evaluateText(furigana).matched) score += 20;
+          if (party && evaluateText(party).matched) score += 10;
+          if (faction && evaluateText(faction).matched) score += 12;
           memberResults.push({
             city,
             cityName,
-            href: `/${city}`,
+            href: memberHref(city, member.seat_number),
             name,
             furigana,
             party,
@@ -985,6 +1070,9 @@ export async function GET(request: NextRequest) {
       sessionYears: sessionYearFacets,
       memberFactions: memberFactionFacets,
     },
+    searchScope: "server",
+    searchScopeLabel: "全期間",
+    fullSearchAvailable: false,
   } satisfies SearchResponse);
   return cacheSearchResponse(request, response);
 }

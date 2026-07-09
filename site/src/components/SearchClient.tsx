@@ -4,7 +4,8 @@ import { useState, useEffect, useRef, Suspense } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import type { SessionHit, MemberHit, SearchFacet, SearchResponse } from "@/app/api/search/route";
-import { buildSearchAssist, buildSearchQuery, excerptSearchText, matchesSearchText, scoreSearchText } from "@/lib/searchQuery";
+import { Accordion } from "@/components/Accordion";
+import { buildSearchAssist, buildSearchQuery, createSearchTextEvaluator, excerptSearchText } from "@/lib/searchQuery";
 
 function Highlight({ text, tokens }: { text: string; tokens: string[] }) {
   if (!tokens.length) return <>{text}</>;
@@ -69,6 +70,7 @@ type SourceFilter = "all" | "minutes" | "session" | "decision";
 type SessionSort = "relevance" | "newest";
 type MemberSort = "relevance" | "name" | "city";
 type SearchMode = "and" | "or";
+type SearchIndexScope = "recent" | "full" | "city" | "server";
 
 const SOURCE_FILTER_LABELS: Record<SourceFilter, string> = {
   all: "すべて",
@@ -82,9 +84,8 @@ const SEARCH_SUGGESTIONS = [
   "給食無償化",
   "ラピダス",
   "防災",
-  "子育て支援",
-  "議決結果",
-  "議員名で検索",
+  "空き家",
+  "ヒグマ",
 ];
 
 const SEARCH_SHORTCUTS = [
@@ -94,11 +95,14 @@ const SEARCH_SHORTCUTS = [
   { label: "速報を探す", tab: "sessions" as const, source: "session" as SourceFilter },
 ];
 
+const RESULT_PAGE_SIZE = 30;
+
 type AgendaEntry = {
   city: string;
   cityName: string;
   council_id: number;
   council_name: string;
+  date?: string;
   schedule_index: number;
   schedule_name: string;
   agenda_title: string;
@@ -145,6 +149,7 @@ type IndexedDecision = {
 type IndexedMember = {
   city: string;
   cityName: string;
+  seat_number?: number | null;
   name: string;
   furigana: string;
   party: string;
@@ -164,6 +169,9 @@ type IndexedMemberActivity = {
 };
 
 type ClientRuntimeSearchIndex = {
+  scope?: SearchIndexScope;
+  recent_from_year?: number;
+  recent_to_year?: number;
   municipalities?: Array<{ slug: string; name: string }>;
   agendas: AgendaEntry[];
   sessions?: IndexedSession[];
@@ -193,6 +201,20 @@ function yearFromCouncilName(name: string): string {
   if (heisei) return String(1988 + Number(heisei[1]));
   const west = norm.match(/(\d{4})/);
   return west ? west[1] : "";
+}
+
+function formatSearchDate(date: string | undefined, year: string | undefined): string {
+  const match = date?.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (match) {
+    return `${Number(match[1])}年${Number(match[2])}月${Number(match[3])}日`;
+  }
+  if (!year) return "";
+  return /^\d{4}$/.test(year) ? `${year}年` : year;
+}
+
+function compactUiText(text: string, maxLength = 48): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  return normalized.length > maxLength ? `${normalized.slice(0, maxLength)}…` : normalized;
 }
 
 function getCityMap(index: ClientRuntimeSearchIndex): Record<string, string> {
@@ -227,9 +249,64 @@ function memberActivityText(activity: IndexedMemberActivity, cityName: string): 
   ].join(" ");
 }
 
+function cleanRawTopicExcerpt(text: string): string {
+  return text
+    .replace(/（[^）]{1,24}君）\s*/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function memberActivityContext(summaryTopics: string[], topics: string[], tokens: string[]): string {
+  if (summaryTopics.length > 0) {
+    return `質問テーマ: ${summaryTopics.join("、")}`;
+  }
+  const excerptSource = topics.map(cleanRawTopicExcerpt).filter(Boolean).slice(0, 3).join("。");
+  return excerptSource ? `議事録からの抜粋: ${excerptSearchText(excerptSource, tokens, 80)}` : "";
+}
+
+function memberHref(city: string, seatNumber: number | null | undefined): string {
+  const normalizedSeatNumber = Number(seatNumber);
+  return Number.isFinite(normalizedSeatNumber) && normalizedSeatNumber > 0
+    ? `/${city}/members/${normalizedSeatNumber}`
+    : `/${city}`;
+}
+
+function searchScopeLabel(scope: SearchIndexScope | undefined): string {
+  if (scope === "recent") return "直近2年";
+  if (scope === "city") return "選択中の市町村全期間";
+  if (scope === "server" || scope === "full") return "全期間";
+  return "";
+}
+
+function ResultPager({
+  remaining,
+  unit,
+  onMore,
+  onBack,
+}: {
+  remaining: number;
+  unit: string;
+  onMore: () => void;
+  onBack: () => void;
+}) {
+  return (
+    <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+      {remaining > 0 && (
+        <button type="button" onClick={onMore} className="theme-button px-4 py-2 text-sm">
+          もっと見る（残り{remaining.toLocaleString()}{unit}）
+        </button>
+      )}
+      <button type="button" onClick={onBack} className="theme-button px-4 py-2 text-sm">
+        検索条件に戻る
+      </button>
+    </div>
+  );
+}
+
 function sortSessionHits(results: RankedSessionHit[]): RankedSessionHit[] {
   return results.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
+    if (b.date !== a.date) return (b.date || "").localeCompare(a.date || "");
     if (b.year !== a.year) return (b.year || "").localeCompare(a.year || "");
     return a.title.localeCompare(b.title, "ja");
   });
@@ -295,6 +372,7 @@ function stripSessionScore(results: RankedSessionHit[]): SessionHit[] {
     startTime: result.startTime,
     context: result.context,
     field: result.field,
+    date: result.date,
     year: result.year,
   }));
 }
@@ -358,6 +436,7 @@ function runClientSearch(
   ): { sessionResults: RankedSessionHit[]; memberResults: RankedMemberHit[] } => {
     const sessionResults: RankedSessionHit[] = [];
     const memberResults: RankedMemberHit[] = [];
+    const evaluateText = createSearchTextEvaluator(searchQuery, searchMode, mode);
 
     for (const s of runtimeIndex.sessions ?? []) {
       const city = s.city;
@@ -375,8 +454,9 @@ function runClientSearch(
           { text: `${cityName} ${seg.transcript ?? ""}`, field: "全文", bonus: 10, radius: 100 },
         ];
         for (const field of fields) {
-          if (!matchesSearchText(field.text, searchQuery, mode, searchMode)) continue;
-          const score = scoreSearchText(field.text, searchQuery, searchMode, mode) + field.bonus;
+          const evaluation = evaluateText(field.text);
+          if (!evaluation.matched) continue;
+          const score = evaluation.score + field.bonus;
           if (bestHit && bestHit.score >= score) continue;
           bestHit = {
             id: s.id,
@@ -391,6 +471,7 @@ function runClientSearch(
             startTime: seg.start_time ?? "",
             context: excerptSearchText(field.text, tokens, field.radius),
             field: field.field,
+            date: s.date,
             year: sessionYear,
             score,
           };
@@ -398,8 +479,9 @@ function runClientSearch(
       }
 
       const titleSearchText = `${cityName} ${title} ${committee}`;
-      if (matchesSearchText(titleSearchText, searchQuery, mode, searchMode)) {
-        const score = scoreSearchText(titleSearchText, searchQuery, searchMode, mode) + 28;
+      const titleEvaluation = evaluateText(titleSearchText);
+      if (titleEvaluation.matched) {
+        const score = titleEvaluation.score + 28;
         if (!bestHit || score > bestHit.score) {
           bestHit = {
             id: s.id,
@@ -414,6 +496,7 @@ function runClientSearch(
             startTime: "",
             context: sessionLabel,
             field: "会議名",
+            date: s.date,
             year: sessionYear,
             score,
           };
@@ -426,10 +509,11 @@ function runClientSearch(
     const seenMinutes = new Set<string>();
     for (const agenda of runtimeIndex.agendas) {
       const haystack = `${agenda.cityName} ${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
-      if (!matchesSearchText(haystack, searchQuery, mode, searchMode)) continue;
-      let score = scoreSearchText(haystack, searchQuery, searchMode, mode) + 14;
-      if (agenda.agenda_title && matchesSearchText(agenda.agenda_title, searchQuery, mode, searchMode)) score += 18;
-      if (matchesSearchText(agenda.council_name, searchQuery, mode, searchMode)) score += 10;
+      const evaluation = evaluateText(haystack);
+      if (!evaluation.matched) continue;
+      let score = evaluation.score + 14;
+      if (agenda.agenda_title && evaluateText(agenda.agenda_title).matched) score += 18;
+      if (evaluateText(agenda.council_name).matched) score += 10;
       sessionResults.push({
         id: `${agenda.city}_minutes_${agenda.council_id}_${agenda.schedule_index}_${agenda.first_minute_id ?? 0}`,
         city: agenda.city,
@@ -446,6 +530,7 @@ function runClientSearch(
         startTime: "",
         context: excerptSearchText(`${agenda.agenda_title} ${agenda.text}`, tokens, 100),
         field: "議事録",
+        date: agenda.date,
         year: agenda.year ?? yearFromCouncilName(agenda.council_name),
         score,
       });
@@ -458,18 +543,16 @@ function runClientSearch(
       const minuteKey = `${city}_${activity.council_id}`;
       if (seenMinutes.has(minuteKey)) continue;
       const searchText = memberActivityText(activity, cityName);
-      if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
+      const evaluation = evaluateText(searchText);
+      if (!evaluation.matched) continue;
       const summaryTopics = uniqueTexts(activity.summary_topics ?? []);
       const topics = uniqueTexts(activity.topics ?? []);
-      const visibleTopics = summaryTopics.length ? summaryTopics : topics.slice(0, 6);
-      const contextSource = visibleTopics.length
-        ? `${activity.member_name}議員: ${visibleTopics.join("、")}`
-        : searchText;
-      let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 32;
+      const contextText = memberActivityContext(summaryTopics, topics, tokens) || excerptSearchText(searchText, tokens, 100);
+      let score = evaluation.score + 32;
       const topicText = [...summaryTopics, ...topics].join(" ");
-      if (topicText && matchesSearchText(topicText, searchQuery, mode, searchMode)) score += 22;
-      if (matchesSearchText(activity.member_name, searchQuery, mode, searchMode)) score += 12;
-      if (matchesSearchText(activity.council_name, searchQuery, mode, searchMode)) score += 8;
+      if (topicText && evaluateText(topicText).matched) score += 22;
+      if (evaluateText(activity.member_name).matched) score += 12;
+      if (evaluateText(activity.council_name).matched) score += 8;
       sessionResults.push({
         id: `${city}_member_activity_${activity.member_name}_${activity.council_id}`,
         city,
@@ -481,7 +564,7 @@ function runClientSearch(
         segIndex: 0,
         label: "",
         startTime: "",
-        context: excerptSearchText(contextSource, tokens, 100),
+        context: contextText,
         field: "質問テーマ",
         year: activity.year ?? yearFromCouncilName(activity.council_name),
         score,
@@ -497,10 +580,11 @@ function runClientSearch(
       const summary = doc.summary ?? "";
       const highlights = doc.highlights ?? [];
       const searchText = [cityName, doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");
-      if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
-      let score = scoreSearchText(searchText, searchQuery, searchMode, mode) + 8;
-      if (matchesSearchText(doc.name, searchQuery, mode, searchMode)) score += 16;
-      if (summary && matchesSearchText(summary, searchQuery, mode, searchMode)) score += 12;
+      const evaluation = evaluateText(searchText);
+      if (!evaluation.matched) continue;
+      let score = evaluation.score + 8;
+      if (evaluateText(doc.name).matched) score += 16;
+      if (summary && evaluateText(summary).matched) score += 12;
       const contextText = summary
         ? excerptSearchText(summary, tokens, 120)
         : highlights.slice(0, 2).join("、");
@@ -526,9 +610,10 @@ function runClientSearch(
       const city = decision.city;
       const cityName = decision.cityName || cityMap[city] || city;
       const text = [cityName, decision.session, decision.description ?? ""].join(" ");
-      if (!matchesSearchText(text, searchQuery, mode, searchMode)) continue;
-      let score = scoreSearchText(text, searchQuery, searchMode, mode) + 10;
-      if (matchesSearchText(decision.session, searchQuery, mode, searchMode)) score += 10;
+      const evaluation = evaluateText(text);
+      if (!evaluation.matched) continue;
+      let score = evaluation.score + 10;
+      if (evaluateText(decision.session).matched) score += 10;
       sessionResults.push({
         id: `${city}_decision_${decision.session}`,
         city,
@@ -558,16 +643,17 @@ function runClientSearch(
       const party = member.party ?? "";
       const faction = member.faction ?? "";
       const searchText = [cityName, name, furigana, party, faction, ...committees].join(" ");
-      if (!matchesSearchText(searchText, searchQuery, mode, searchMode)) continue;
-      let score = scoreSearchText(searchText, searchQuery, searchMode, mode);
-      if (matchesSearchText(name, searchQuery, mode, searchMode)) score += 28;
-      if (furigana && matchesSearchText(furigana, searchQuery, mode, searchMode)) score += 20;
-      if (party && matchesSearchText(party, searchQuery, mode, searchMode)) score += 10;
-      if (faction && matchesSearchText(faction, searchQuery, mode, searchMode)) score += 12;
+      const evaluation = evaluateText(searchText);
+      if (!evaluation.matched) continue;
+      let score = evaluation.score;
+      if (evaluateText(name).matched) score += 28;
+      if (furigana && evaluateText(furigana).matched) score += 20;
+      if (party && evaluateText(party).matched) score += 10;
+      if (faction && evaluateText(faction).matched) score += 12;
       memberResults.push({
         city,
         cityName,
-        href: `/${city}`,
+        href: memberHref(city, member.seat_number),
         name,
         furigana,
         party,
@@ -670,6 +756,9 @@ function runClientSearch(
       sessionYears: sessionYearFacets,
       memberFactions: memberFactionFacets,
     },
+    searchScope: runtimeIndex.scope,
+    searchScopeLabel: searchScopeLabel(runtimeIndex.scope),
+    fullSearchAvailable: runtimeIndex.scope === "recent",
   };
 }
 
@@ -722,14 +811,21 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   const [exactExpandedTerms, setExactExpandedTerms] = useState<string[]>([]);
   const [relatedExpandedTerms, setRelatedExpandedTerms] = useState<string[]>([]);
   const [searchSuggestions, setSearchSuggestions] = useState<string[]>([]);
+  const [searchScope, setSearchScope] = useState<SearchIndexScope | "">("");
+  const [searchScopeLabelText, setSearchScopeLabelText] = useState("");
+  const [fullSearchAvailable, setFullSearchAvailable] = useState(false);
+  const [forceFullSearch, setForceFullSearch] = useState(false);
   const [recentQueries, setRecentQueries] = useState<string[]>([]);
   const [truncated, setTruncated] = useState(false);
   const [loading, setLoading] = useState(false);
   const [hasSearchResponse, setHasSearchResponse] = useState(false);
   const [error, setError] = useState("");
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [sessionVisibleLimit, setSessionVisibleLimit] = useState(RESULT_PAGE_SIZE);
+  const [memberVisibleLimit, setMemberVisibleLimit] = useState(RESULT_PAGE_SIZE);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const requestIdRef = useRef(0);
+  const resultsHeaderRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const nextQuery = searchParams.get("q") ?? "";
@@ -774,6 +870,10 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   }, []);
 
   useEffect(() => {
+    setForceFullSearch(false);
+  }, [query, cityFilter]);
+
+  useEffect(() => {
     const q = query.trim();
     if (timerRef.current) clearTimeout(timerRef.current);
     if (!q) {
@@ -788,6 +888,9 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
       setExactExpandedTerms([]);
       setRelatedExpandedTerms([]);
       setSearchSuggestions([]);
+      setSearchScope("");
+      setSearchScopeLabelText("");
+      setFullSearchAvailable(false);
       setTruncated(false);
       setLoading(false);
       setHasSearchResponse(false);
@@ -810,6 +913,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         if (tab === "sessions" && sourceFilter !== "all") params.set("source", sourceFilter);
         if (tab === "sessions" && yearFilter !== "all") params.set("year", yearFilter);
         if (tab === "members" && factionFilter !== "all") params.set("faction", factionFilter);
+        if (forceFullSearch) params.set("scope", "all");
         const res = await fetch(`/api/search?${params.toString()}`, { signal: controller.signal });
         if (!res.ok) {
           const data = await res.json().catch(() => ({}));
@@ -826,6 +930,21 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             yearFilter,
             factionFilter,
           });
+          const noResults = (data.sessionResults?.length ?? 0) === 0 && (data.memberResults?.length ?? 0) === 0;
+          if (runtimeIndex.scope === "recent" && cityFilter === "all" && noResults) {
+            const fullRuntimeIndex = await loadClientSearchIndex("/generated/search-index.json", controller.signal);
+            data = runClientSearch(fullRuntimeIndex, {
+              q,
+              searchMode,
+              cityFilter,
+              sourceFilter,
+              yearFilter,
+              factionFilter,
+            });
+            data.fullSearchAvailable = false;
+            data.searchScope = "full";
+            data.searchScopeLabel = "全期間";
+          }
         }
         if (requestIdRef.current !== requestId) return;
         const nextSessionResults = data.sessionResults ?? [];
@@ -841,6 +960,9 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         setExactExpandedTerms(data.exactExpandedTerms ?? []);
         setRelatedExpandedTerms(data.relatedExpandedTerms ?? []);
         setSearchSuggestions(data.searchSuggestions ?? []);
+        setSearchScope(data.searchScope ?? "");
+        setSearchScopeLabelText(data.searchScopeLabel ?? "");
+        setFullSearchAvailable(Boolean(data.fullSearchAvailable));
         setTruncated(Boolean(data.truncated));
         setHasSearchResponse(true);
         if (
@@ -871,6 +993,9 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         setExactExpandedTerms([]);
         setRelatedExpandedTerms([]);
         setSearchSuggestions([]);
+        setSearchScope("");
+        setSearchScopeLabelText("");
+        setFullSearchAvailable(false);
         setTruncated(false);
         setHasSearchResponse(true);
         setError(err instanceof Error ? err.message : "検索に失敗しました");
@@ -885,7 +1010,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
       controller.abort();
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [query, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter, tab]);
+  }, [query, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter, tab, forceFullSearch]);
 
   const tokens = tokenize(query);
   const hasQuery = query.trim().length > 0;
@@ -923,6 +1048,11 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
     }
     return 0;
   });
+
+  useEffect(() => {
+    setSessionVisibleLimit(RESULT_PAGE_SIZE);
+    setMemberVisibleLimit(RESULT_PAGE_SIZE);
+  }, [query, tab, cityFilter, sourceFilter, yearFilter, factionFilter, sessionSort, memberSort]);
 
   const totalResults = tab === "sessions" ? sortedSessions.length : sortedMembers.length;
 
@@ -1016,10 +1146,14 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
       !tokens.some((token) => normalizeForSearch(token) === normalizeForSearch(term)) &&
       !exactExpandedTerms.some((exactTerm) => normalizeForSearch(exactTerm) === normalizeForSearch(term))
   );
-  const groupedSessions = groupByCity(sortedSessions);
-  const groupedMembers = groupByCity(sortedMembers);
+  const visibleSessions = sortedSessions.slice(0, sessionVisibleLimit);
+  const visibleMembers = sortedMembers.slice(0, memberVisibleLimit);
+  const groupedSessions = groupByCity(visibleSessions);
+  const groupedMembers = groupByCity(visibleMembers);
   const showGroupedSessions = cityFilter === "all" && groupedSessions.length > 1;
   const showGroupedMembers = cityFilter === "all" && groupedMembers.length > 1;
+  const remainingSessions = Math.max(0, sortedSessions.length - visibleSessions.length);
+  const remainingMembers = Math.max(0, sortedMembers.length - visibleMembers.length);
   const hasFilterBlocks =
     hasQuery &&
     ((tab === "sessions" && (availableSourceTypes.size > 1 || availableYears.length > 1 || availableCities.length > 1)) ||
@@ -1033,6 +1167,10 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
     setYearFilter("all");
     setSessionSort("relevance");
     setMemberSort("relevance");
+  }
+
+  function scrollToResultsHeader() {
+    resultsHeaderRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function applyShortcut(tabValue: "sessions" | "members", sourceValue: SourceFilter) {
@@ -1116,44 +1254,50 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           ))}
         </div>
 
-        <div className="mt-3 flex flex-wrap items-center gap-2">
-          <span className="text-sm font-semibold text-[#667085]">複数語の条件</span>
-          <div className="inline-flex rounded-full border border-[#CBD5E0] bg-white p-1">
-            <button
-              type="button"
-              onClick={() => setSearchMode("and")}
-              className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
-                searchMode === "and" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
-              }`}
-            >
-              AND
-            </button>
-            <button
-              type="button"
-              onClick={() => setSearchMode("or")}
-              className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
-                searchMode === "or" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
-              }`}
-            >
-              OR
-            </button>
-          </div>
-          <p className="text-sm text-[#667085]">
-            {searchMode === "and" ? "すべての語を含む結果を優先" : "どれかの語を含む結果を表示"}
-          </p>
-        </div>
+        <div className="mt-3">
+          <Accordion title="詳しい条件" defaultOpen={initialSearchModeFromUrl === "or"}>
+            <div className="space-y-3 px-4 py-3">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-sm font-semibold text-[#667085]">複数語の条件</span>
+                <div className="inline-flex rounded-full border border-[#CBD5E0] bg-white p-1">
+                  <button
+                    type="button"
+                    onClick={() => setSearchMode("and")}
+                    className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
+                      searchMode === "and" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
+                    }`}
+                  >
+                    AND
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setSearchMode("or")}
+                    className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
+                      searchMode === "or" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
+                    }`}
+                  >
+                    OR
+                  </button>
+                </div>
+                <p className="text-sm text-[#667085]">
+                  {searchMode === "and" ? "すべての語を含む結果を優先" : "どれかの語を含む結果を表示"}
+                </p>
+              </div>
 
-        <div className="mt-3 flex flex-wrap gap-1.5">
-          {SEARCH_SHORTCUTS.map((shortcut) => (
-            <button
-              key={shortcut.label}
-              onClick={() => applyShortcut(shortcut.tab, shortcut.source)}
-              className="theme-button px-3 py-1.5 text-[11px] sm:text-xs"
-              type="button"
-            >
-              {shortcut.label}
-            </button>
-          ))}
+              <div className="flex flex-wrap gap-1.5">
+                {SEARCH_SHORTCUTS.map((shortcut) => (
+                  <button
+                    key={shortcut.label}
+                    onClick={() => applyShortcut(shortcut.tab, shortcut.source)}
+                    className="theme-button px-3 py-1.5 text-[11px] sm:text-xs"
+                    type="button"
+                  >
+                    {shortcut.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </Accordion>
         </div>
 
         {!hasQuery && recentQueries.length > 0 && (
@@ -1180,15 +1324,14 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         {!hasQuery && (
           <p className="mt-3 text-xs leading-relaxed text-[#667085] sm:text-sm">
             {scopedCityLabel
-              ? `${scopedCityLabel}に絞った状態です。議題名、政策テーマ、施設名、議員名、会派名などで探せます。`
+              ? `${scopedCityLabel}に絞っています。議題名、政策テーマ、施設名、議員名、会派名などで探せます。`
               : "議題名、政策テーマ、施設名、議員名、会派名などで探せます。"}
-            複数語は AND/OR を切り替えて使えます。
           </p>
         )}
       </div>
 
       {hasQuery && (
-        <div className="theme-card-soft px-4 py-3">
+        <div ref={resultsHeaderRef} className="theme-card-soft px-4 py-3">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <p className="text-sm font-black text-[#1B3A6B]">
@@ -1200,6 +1343,20 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
               <p className="mt-1 text-sm text-[#667085]">
                 予算書は各市町村の「予算」ページで原本画像とOCR結果を検索できます。
               </p>
+              {searchScopeLabelText && (
+                <p className="mt-1 flex flex-wrap items-center gap-1.5 text-sm text-[#667085]">
+                  <span>検索対象: {searchScopeLabelText}</span>
+                  {searchScope === "recent" && fullSearchAvailable && (
+                    <button
+                      type="button"
+                      onClick={() => setForceFullSearch(true)}
+                      className="rounded-full border border-[#CBD5E0] bg-white px-2 py-0.5 text-xs font-semibold text-[#1B3A6B] hover:border-[#1B3A6B] hover:bg-[#E8EEF7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                    >
+                      全期間を検索
+                    </button>
+                  )}
+                </p>
+              )}
               {activeFilters.length > 0 && (
                 <div className="mt-2 flex flex-wrap gap-1.5">
                   {activeFilters.map((filter) => (
@@ -1290,6 +1447,31 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         </div>
       )}
 
+      {/* タブ */}
+      {hasQuery && (
+        <div className="flex border-b border-[#E2E8F0]">
+          {(["sessions", "members"] as const).map((t) => (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              className={`px-3 py-2 text-sm font-medium border-b-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] rounded-t sm:px-4 ${
+                tab === t
+                  ? "border-[#8AA3CF] text-[#1B3A6B]"
+                  : "border-transparent text-[#718096] hover:text-[#1A202C]"
+              }`}
+              aria-current={tab === t ? "true" : undefined}
+            >
+              {t === "sessions" ? "議事録・議決結果" : "議員"}
+              {!loading && (
+                <span className="ml-1.5 rounded-full bg-[#F4F8FF] px-1.5 py-0.5 text-xs text-[#1B3A6B]">
+                  {t === "sessions" ? filteredSessions.length : filteredMembers.length}
+                </span>
+              )}
+            </button>
+          ))}
+        </div>
+      )}
+
       <div className={`${hasFilterBlocks && !filtersOpen ? "hidden sm:block" : "block"} space-y-4`}>
       {/* 市フィルタ */}
       {hasQuery && (sessionResults.length > 0 || memberResults.length > 0) && (
@@ -1323,29 +1505,6 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           </div>
         </div>
       )}
-
-      {/* タブ */}
-      <div className="flex border-b border-[#E2E8F0]">
-        {(["sessions", "members"] as const).map((t) => (
-          <button
-            key={t}
-            onClick={() => setTab(t)}
-            className={`px-3 py-2 text-sm font-medium border-b-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] rounded-t sm:px-4 ${
-              tab === t
-                ? "border-[#8AA3CF] text-[#1B3A6B]"
-                : "border-transparent text-[#718096] hover:text-[#1A202C]"
-            }`}
-            aria-current={tab === t ? "true" : undefined}
-          >
-            {t === "sessions" ? "議事録・議決結果" : "議員"}
-            {hasQuery && !loading && (
-              <span className="ml-1.5 rounded-full bg-[#F4F8FF] px-1.5 py-0.5 text-xs text-[#1B3A6B]">
-                {t === "sessions" ? filteredSessions.length : filteredMembers.length}
-              </span>
-            )}
-          </button>
-        ))}
-      </div>
 
       {/* 種別フィルタ (議会記録タブのみ) */}
       {tab === "sessions" && hasQuery && availableSourceTypes.size > 1 && (
@@ -1558,7 +1717,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
       {/* 議会記録結果 */}
       {tab === "sessions" && hasQuery && !loading && sortedSessions.length > 0 && (
         <div className="flex flex-col gap-3">
-          {(showGroupedSessions ? groupedSessions : [{ city: "all", cityName: "すべて", items: sortedSessions }]).map((group) => (
+          {(showGroupedSessions ? groupedSessions : [{ city: "all", cityName: "すべて", items: visibleSessions }]).map((group) => (
             <div key={group.city} className={showGroupedSessions ? "theme-card-soft px-4 py-4" : ""}>
               {showGroupedSessions && (
                 <div className="mb-3 flex items-center justify-between gap-2">
@@ -1569,46 +1728,60 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                 </div>
               )}
               <div className="flex flex-col gap-3">
-                {group.items.map((r, i) => (
-                  <Link
-                    key={`${group.city}-${i}`}
-                    href={r.href}
-                    prefetch={false}
-                    className="theme-card block px-4 py-3 transition-colors hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
-                  >
-                    <div className="mb-1.5 flex items-center gap-1.5 flex-wrap">
-                      {!showGroupedSessions && <span className="theme-pill-soft text-[#2A5298]">{r.cityName}</span>}
-                      {r.sourceType === "minutes" ? (
-                        <span className="theme-pill-soft opacity-85">公式議事録</span>
-                      ) : r.sourceType === "decision" ? (
-                        <span className="theme-pill-soft opacity-85">議決結果</span>
-                      ) : (
-                        <span className="theme-pill-soft text-[#2A5298] opacity-90">会議録</span>
-                      )}
-                      {r.committee && r.sourceType !== "decision" && (
-                        <span className="theme-pill-soft hidden text-[#1B3A6B] sm:inline-flex">{r.committee}</span>
-                      )}
-                      {r.label && (
-                        <span className="theme-pill-soft hidden sm:inline-flex">{r.label}{r.startTime ? ` ${r.startTime}〜` : ""}</span>
-                      )}
-                      <span className="theme-pill-soft ml-auto text-[#6B4C11]">ヒット: {r.field}</span>
-                    </div>
-                    <p className="mb-1 text-[15px] font-black leading-snug text-[#1B3A6B] sm:text-base">{r.title}</p>
-                    <p className="text-[12px] leading-relaxed text-[#556170] sm:text-xs">
-                      <Highlight text={r.context} tokens={tokens} />
-                    </p>
-                  </Link>
-                ))}
+                {group.items.map((r, i) => {
+                  const dateLabel = formatSearchDate(r.date, r.year);
+                  return (
+                    <Link
+                      key={`${group.city}-${i}`}
+                      href={r.href}
+                      prefetch={false}
+                      className="theme-card block px-4 py-3 transition-colors hover:border-[#9FB1D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] sm:px-5"
+                    >
+                      <div className="mb-1.5 flex items-center gap-1.5 flex-wrap">
+                        {!showGroupedSessions && <span className="theme-pill-soft text-[#2A5298]">{r.cityName}</span>}
+                        {r.sourceType === "minutes" ? (
+                          <span className="theme-pill-soft opacity-85">公式議事録</span>
+                        ) : r.sourceType === "decision" ? (
+                          <span className="theme-pill-soft opacity-85">議決結果</span>
+                        ) : (
+                          <span className="theme-pill-soft text-[#2A5298] opacity-90">会議録</span>
+                        )}
+                        {dateLabel && (
+                          <span className="theme-pill-soft tabular-nums text-[#4A5568]">{dateLabel}</span>
+                        )}
+                        {r.committee && r.sourceType !== "decision" && (
+                          <span className="theme-pill-soft hidden text-[#1B3A6B] sm:inline-flex">{compactUiText(r.committee)}</span>
+                        )}
+                        {r.label && (
+                          <span className="theme-pill-soft hidden sm:inline-flex">
+                            {compactUiText(r.label)}
+                            {r.startTime ? ` ${r.startTime}〜` : ""}
+                          </span>
+                        )}
+                      </div>
+                      <p className="mb-1 text-[15px] font-black leading-snug text-[#1B3A6B] sm:text-base">{r.title}</p>
+                      <p className="text-[15px] leading-relaxed text-[#4A5568]">
+                        <Highlight text={r.context} tokens={tokens} />
+                      </p>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           ))}
+          <ResultPager
+            remaining={remainingSessions}
+            unit="件"
+            onMore={() => setSessionVisibleLimit((value) => value + RESULT_PAGE_SIZE)}
+            onBack={scrollToResultsHeader}
+          />
         </div>
       )}
 
       {/* 議員結果 */}
       {tab === "members" && hasQuery && !loading && sortedMembers.length > 0 && (
         <div className="flex flex-col gap-3">
-          {(showGroupedMembers ? groupedMembers : [{ city: "all", cityName: "すべて", items: sortedMembers }]).map((group) => (
+          {(showGroupedMembers ? groupedMembers : [{ city: "all", cityName: "すべて", items: visibleMembers }]).map((group) => (
             <div key={group.city} className={showGroupedMembers ? "theme-card-soft px-4 py-4" : ""}>
               {showGroupedMembers && (
                 <div className="mb-3 flex items-center justify-between gap-2">
@@ -1662,6 +1835,12 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
               </div>
             </div>
           ))}
+          <ResultPager
+            remaining={remainingMembers}
+            unit="名"
+            onMore={() => setMemberVisibleLimit((value) => value + RESULT_PAGE_SIZE)}
+            onBack={scrollToResultsHeader}
+          />
         </div>
       )}
     </div>
