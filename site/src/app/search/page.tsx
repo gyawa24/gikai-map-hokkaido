@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import { getCitizenTopics } from "@/lib/topics";
 import { slugForTag } from "@/lib/topicAliases";
 import { buildBreadcrumbList } from "@/lib/structuredData";
-import SearchClient from "@/components/SearchClient";
+import SearchClientLoader from "@/components/SearchClientLoader";
 
 export const metadata = buildPageMetadata({
   title: "横断検索",
@@ -32,26 +32,7 @@ export default function SearchPage() {
         </p>
       </div>
 
-      <noscript>
-        <form action="/search" method="get" className="mb-4 rounded-lg border border-[#CBD5E0] bg-white p-4">
-          <label htmlFor="noscript-search" className="block text-sm font-bold text-[#1B3A6B]">
-            キーワード検索
-          </label>
-          <div className="mt-2 flex flex-col gap-2 sm:flex-row">
-            <input
-              id="noscript-search"
-              name="q"
-              placeholder="給食無償化、除雪、ラピダス、防災、議員名で検索"
-              className="theme-input px-4 py-3 text-base"
-            />
-            <button type="submit" className="theme-button theme-button-accent min-h-11 px-5 py-2 text-sm">
-              検索
-            </button>
-          </div>
-        </form>
-      </noscript>
-
-      <SearchClient />
+      <SearchClientLoader />
 
       <section className="mt-6 rounded-lg border border-[#D8DEE8] bg-white px-4 py-4">
         {topTags.length > 0 && (

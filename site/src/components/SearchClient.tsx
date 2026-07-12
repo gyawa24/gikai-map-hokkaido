@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, Suspense, useCallback, useMemo } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import type { SessionHit, MemberHit, SearchFacet, SearchResponse } from "@/app/api/search/route";
@@ -2385,9 +2385,5 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
 }
 
 export default function SearchClient(props: SearchClientProps) {
-  return (
-    <Suspense>
-      <SearchClientInner {...props} />
-    </Suspense>
-  );
+  return <SearchClientInner {...props} />;
 }
