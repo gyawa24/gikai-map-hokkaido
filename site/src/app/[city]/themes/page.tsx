@@ -146,7 +146,7 @@ export default async function CityThemesPage({
         <ul className="space-y-1.5 text-sm text-[#4A5568]">
           <li className="flex items-start gap-2">
             <span className="text-[#2A5298] shrink-0 mt-0.5" aria-hidden="true">·</span>
-            <span>発言回数は過去の定例会・委員会での質問登壇数をもとにしています。</span>
+            <span>公式会議録から確認できた定例会・委員会での質問記録をもとにしています。</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[#2A5298] shrink-0 mt-0.5" aria-hidden="true">·</span>

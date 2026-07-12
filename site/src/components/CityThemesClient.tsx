@@ -171,7 +171,7 @@ export default function CityThemesClient({ city, rows, allThemes, themeCounts }:
                           </span>
                         )}
                         <span className="rounded-full bg-[#E8EEF7] px-2 py-0.5 text-xs font-medium text-[#2A5298]">
-                          質問 {row.session_count}回
+                          公式記録 {row.session_count}回
                         </span>
                         {row.faction && (
                           <span className={`rounded px-2 py-0.5 text-xs font-medium ${factionBadgeClass(row.faction)}`}>

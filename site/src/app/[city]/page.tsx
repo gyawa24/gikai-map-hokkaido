@@ -171,6 +171,17 @@ function CityExploreLinks({
   );
 }
 
+function CityPageHeading({ councilName, cityName }: { councilName: string; cityName: string }) {
+  return (
+    <section className="page-shell mb-4 max-w-5xl sm:mb-5">
+      <h1 className="theme-section-title text-2xl">{councilName}</h1>
+      <p className="mt-1 text-base leading-relaxed text-[#4A5568]">
+        {cityName}議会の議員情報、議事録、テーマ別の発言記録を確認できます。
+      </p>
+    </section>
+  );
+}
+
 export default async function CityMembersPage({
   params,
 }: {
@@ -214,6 +225,7 @@ export default async function CityMembersPage({
     return (
       <>
         <JsonLd data={[breadcrumb, collectionPage]} />
+        <CityPageHeading councilName={councilName} cityName={cityName} />
         <CitySummaryCards
           memberCount={null}
           minutesCount={minutesCount}
@@ -244,6 +256,7 @@ export default async function CityMembersPage({
   return (
     <>
       <JsonLd data={[breadcrumb, collectionPage]} />
+      <CityPageHeading councilName={councilName} cityName={cityName} />
       <CitySummaryCards
         memberCount={members.length}
         minutesCount={minutesCount}

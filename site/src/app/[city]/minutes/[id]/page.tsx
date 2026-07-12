@@ -119,6 +119,22 @@ function getLocalIndexItem(city: string, id: string): MinutesIndexItem | null {
   return null;
 }
 
+async function getMinutesIndexItem(city: string, id: string): Promise<MinutesIndexItem | null> {
+  const local = getLocalIndexItem(city, id);
+  if (local) return local;
+
+  const remoteCandidates = [
+    `site/data/${city}/minutes/index.json`,
+    `site/data/${city}/index.json`,
+  ];
+  for (const remotePath of remoteCandidates) {
+    const items = await fetchRawJson<MinutesIndexItem[]>(remotePath);
+    const match = items?.find((item) => String(item.council_id) === id);
+    if (match) return match;
+  }
+  return null;
+}
+
 async function getRemoteSessionPath(city: string, id: string): Promise<string | null> {
   const remoteCandidates = [
     `site/data/${city}/minutes/${id}.json`,
@@ -165,7 +181,7 @@ export async function generateMetadata({
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
   const localSessionCandidate = getLocalSessionCandidate(city, id);
-  const indexItem = getLocalIndexItem(city, id);
+  const indexItem = await getMinutesIndexItem(city, id);
   const session =
     localSessionCandidate && isLargeLocalSession(localSessionCandidate)
       ? null
@@ -254,6 +270,9 @@ export default async function CityMinutesDetailPage({
             議事録
           </a>
         </nav>
+        <h1 className="theme-section-title mb-4 text-2xl leading-snug">
+          {cityName}議会 議事録
+        </h1>
         <div className="theme-alert px-5 py-5">
           <p className="text-base font-semibold text-[#7A5A00] mb-2">本サイトでの全文閲覧は一時停止中です</p>
           <p className="text-sm text-[#5A4500] leading-relaxed">
@@ -272,6 +291,7 @@ export default async function CityMinutesDetailPage({
     );
   }
 
+  const indexItem = await getMinutesIndexItem(city, id);
   const localSessionCandidate = getLocalSessionCandidate(city, id);
   if (localSessionCandidate && isLargeLocalSession(localSessionCandidate)) {
     return (
@@ -292,6 +312,7 @@ export default async function CityMinutesDetailPage({
           cityName={cityName}
           sessionUrl={rawUrl(localSessionCandidate.remotePath)}
           enrichedUrl={rawUrl(`site/data/${city}/minutes/enriched/${id}.json`)}
+          initialSession={indexItem ?? undefined}
         />
       </div>
     );
@@ -320,6 +341,7 @@ export default async function CityMinutesDetailPage({
           cityName={cityName}
           sessionUrl={rawUrl(remoteSessionPath)}
           enrichedUrl={rawUrl(`site/data/${city}/minutes/enriched/${id}.json`)}
+          initialSession={indexItem ?? undefined}
         />
       </div>
     );
@@ -346,6 +368,7 @@ export default async function CityMinutesDetailPage({
           cityName={cityName}
           sessionUrl={rawUrl(sessionPath)}
           enrichedUrl={rawUrl(`site/data/${city}/minutes/enriched/${id}.json`)}
+          initialSession={indexItem ?? undefined}
         />
       </div>
     );
@@ -384,9 +407,9 @@ export default async function CityMinutesDetailPage({
           )}
           <span className="text-xs text-[#718096]">{session.japanese_year}</span>
         </div>
-        <h2 className="theme-section-title mb-2 text-2xl leading-snug">
+        <h1 className="theme-section-title mb-2 text-2xl leading-snug">
           {session.name}
-        </h2>
+        </h1>
         <div className="flex flex-wrap gap-4 text-sm text-[#4A5568]">
           <span className="inline-flex items-center gap-1.5">
             <svg

@@ -5,13 +5,14 @@ import { getMunicipalities } from "@/lib/municipalities";
 import { getNews, categoryClass } from "@/lib/news";
 import { getLatestArticles, articleCategoryClass, formatArticleDate } from "@/lib/articles";
 import { getSiteStats } from "@/lib/siteStats";
-import { getAllTags } from "@/lib/topics";
+import { getCitizenTopics } from "@/lib/topics";
 import { slugForTag } from "@/lib/topicAliases";
 import { getCityCapabilities, getCityCapability } from "@/lib/cityCapabilities";
 import { buildPageMetadata } from "@/lib/metadata";
 import HomeMunicipalityExplorer from "@/components/HomeMunicipalityExplorer";
 import type { Member } from "@/types/member";
 import type { Decision } from "@/types/decision";
+import type { MinutesIndexItem } from "@/types/minutes";
 
 export const metadata = buildPageMetadata({
   title: "地方議会ドットコム | 北海道の市町村議会・議事録検索",
@@ -38,7 +39,25 @@ function getMemberCount(cityId: string): number {
   }
 }
 
-function getLatestSession(cityId: string): string {
+function getMinutesIndex(cityId: string): MinutesIndexItem[] {
+  const candidates = [
+    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", cityId, "minutes", "index.json"),
+    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", cityId, "index.json"),
+  ];
+  for (const fp of candidates) {
+    try {
+      const items = JSON.parse(
+        fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+      ) as MinutesIndexItem[];
+      if (Array.isArray(items)) return items;
+    } catch {
+      // try next index location
+    }
+  }
+  return [];
+}
+
+function getLatestDecisionSession(cityId: string): string {
   try {
     const fp = path.join(process.cwd(), "data", cityId, "decisions.json");
     const decisions = JSON.parse(fs.readFileSync(fp, "utf-8")) as Decision[];
@@ -58,11 +77,12 @@ function getDecisionCount(cityId: string): number {
   }
 }
 
-function getMinutesCount(cityId: string): number {
+function getMinutesCount(cityId: string, index: MinutesIndexItem[]): number {
+  if (index.length > 0) return index.length;
   try {
     const dir = path.join(process.cwd(), "data", cityId, "minutes");
     const files = fs.readdirSync(dir);
-    return files.filter((f) => f.endsWith(".json")).length;
+    return files.filter((f) => /^\d+\.json$/.test(f)).length;
   } catch {
     return 0;
   }
@@ -91,12 +111,13 @@ export default async function HomePage() {
   const latestNews = getNews().slice(0, 3);
   const latestArticles = await getLatestArticles(2);
   const stats = getSiteStats();
-  const topTags = getAllTags().slice(0, 12);
+  const topTags = getCitizenTopics().slice(0, 12);
   const capabilitiesBySlug = getCityCapabilities();
   const regionOrder = ["石狩", "空知", "後志", "胆振", "日高", "渡島", "檜山", "上川", "留萌", "宗谷", "オホーツク", "十勝", "釧路", "根室"];
 
   const cities: CitySummary[] = municipalities.map((m) => {
     const capability = capabilitiesBySlug[m.slug] ?? getCityCapability(m.slug);
+    const minutesIndex = getMinutesIndex(m.slug);
     return {
       id: m.slug,
       name: m.council_name,
@@ -108,9 +129,9 @@ export default async function HomePage() {
       hasBudgets: capability.capabilities.budgets,
       hasThemes: capability.capabilities.themes,
       memberCount: getMemberCount(m.slug),
-      latestSession: getLatestSession(m.slug),
+      latestSession: minutesIndex[0]?.name ?? getLatestDecisionSession(m.slug),
       decisionCount: getDecisionCount(m.slug),
-      minutesCount: getMinutesCount(m.slug),
+      minutesCount: getMinutesCount(m.slug, minutesIndex),
     };
   });
 

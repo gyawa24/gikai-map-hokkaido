@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
-import { getAllTags } from "@/lib/topics";
+import { getCitizenTopics } from "@/lib/topics";
 import { slugForTag } from "@/lib/topicAliases";
 import { buildBreadcrumbList } from "@/lib/structuredData";
 import SearchClient from "@/components/SearchClient";
@@ -16,7 +16,7 @@ export const metadata = buildPageMetadata({
 export const dynamic = "force-static";
 
 export default function SearchPage() {
-  const topTags = getAllTags().slice(0, 10);
+  const topTags = getCitizenTopics().slice(0, 10);
   const breadcrumb = buildBreadcrumbList([
     { name: "地方議会ドットコム", path: "/" },
     { name: "議事録・議員検索", path: "/search" },

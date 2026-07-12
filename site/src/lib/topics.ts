@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { getMunicipalities } from "@/lib/municipalities";
-import { aliasesForTag, canonicalizeTag, normalizeTopic, slugForTag } from "@/lib/topicAliases";
+import { aliasesForTag, canonicalizeTag, isCitizenTopic, normalizeTopic, slugForTag } from "@/lib/topicAliases";
 import type { MinutesEnriched } from "@/types/minutes";
 
 export type EnrichedRecord = MinutesEnriched & {
@@ -79,6 +79,10 @@ export function getAllTags(): TopicTag[] {
       aliases: aliasesForTag(tag).filter((alias) => alias === tag || bucket.aliases.has(alias)),
     }))
     .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag, "ja"));
+}
+
+export function getCitizenTopics(): TopicTag[] {
+  return getAllTags().filter(({ tag }) => isCitizenTopic(tag));
 }
 
 export function getByTag(tag: string): EnrichedRecord[] {

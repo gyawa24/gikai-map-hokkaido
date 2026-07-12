@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { MinutesEnriched, MinutesSession } from "@/types/minutes";
+import type { MinutesEnriched, MinutesIndexItem, MinutesSession } from "@/types/minutes";
 import MinutesDetailClient from "./MinutesDetailClient";
 
 type Props = {
   cityName: string;
   sessionUrl: string;
   enrichedUrl: string;
+  initialSession?: MinutesIndexItem;
 };
 
 type LoadState =
@@ -28,6 +29,39 @@ function typeCategory(typeLabel: string): string {
   return "";
 }
 
+function MinutesHeading({
+  name,
+  japaneseYear,
+  typeLabel,
+  scheduleCount,
+  totalSpeeches,
+}: {
+  name: string;
+  japaneseYear?: string;
+  typeLabel?: string;
+  scheduleCount?: number;
+  totalSpeeches?: number;
+}) {
+  const category = typeCategory(typeLabel ?? "");
+  return (
+    <section className="mb-5">
+      {(category || japaneseYear) && (
+        <div className="mb-2 flex items-center gap-2">
+          {category && <span className="theme-pill-soft text-[#2A5298]">{category}</span>}
+          {japaneseYear && <span className="text-xs text-[#718096]">{japaneseYear}</span>}
+        </div>
+      )}
+      <h1 className="theme-section-title mb-2 text-2xl leading-snug">{name}</h1>
+      {(scheduleCount !== undefined || totalSpeeches !== undefined) && (
+        <div className="flex flex-wrap gap-4 text-sm text-[#4A5568]">
+          {scheduleCount !== undefined && <span>{scheduleCount}日程</span>}
+          {totalSpeeches !== undefined && <span>{totalSpeeches}件の発言・議題</span>}
+        </div>
+      )}
+    </section>
+  );
+}
+
 async function fetchJson<T>(url: string): Promise<T | null> {
   const response = await fetch(url, { cache: "force-cache" });
   if (response.status === 404) return null;
@@ -41,6 +75,7 @@ export default function RemoteMinutesDetailClient({
   cityName,
   sessionUrl,
   enrichedUrl,
+  initialSession,
 }: Props) {
   const [state, setState] = useState<LoadState>({ status: "loading" });
 
@@ -74,25 +109,40 @@ export default function RemoteMinutesDetailClient({
 
   if (state.status === "loading") {
     return (
-      <div className="theme-card-soft p-5">
-        <p className="text-sm text-[#4A5568]">議事録本文を読み込んでいます。</p>
-      </div>
+      <>
+        <MinutesHeading
+          name={initialSession?.name ?? `${cityName}議会 議事録`}
+          japaneseYear={initialSession?.japanese_year}
+          typeLabel={initialSession?.type_label}
+          scheduleCount={initialSession?.schedule_count}
+        />
+        <div className="theme-card-soft p-5">
+          <p className="text-sm text-[#4A5568]">議事録本文を読み込んでいます。</p>
+        </div>
+      </>
     );
   }
 
   if (state.status === "error") {
     return (
-      <div className="theme-alert p-5">
-        <p className="text-sm font-semibold text-[#7A5A00]">{state.message}</p>
-        <p className="mt-2 text-xs text-[#7A5A00]">
-          時間をおいて再読み込みしてください。公式会議録の確認もあわせてお願いします。
-        </p>
-      </div>
+      <>
+        <MinutesHeading
+          name={initialSession?.name ?? `${cityName}議会 議事録`}
+          japaneseYear={initialSession?.japanese_year}
+          typeLabel={initialSession?.type_label}
+          scheduleCount={initialSession?.schedule_count}
+        />
+        <div className="theme-alert p-5">
+          <p className="text-sm font-semibold text-[#7A5A00]">{state.message}</p>
+          <p className="mt-2 text-xs text-[#7A5A00]">
+            時間をおいて再読み込みしてください。公式会議録の確認もあわせてお願いします。
+          </p>
+        </div>
+      </>
     );
   }
 
   const { session, enriched } = state;
-  const category = typeCategory(session.type_label);
   const totalSpeeches = session.schedules.reduce(
     (acc, schedule) =>
       acc + schedule.minutes.filter((minute) => minute.minute_type !== "名簿").length,
@@ -101,21 +151,13 @@ export default function RemoteMinutesDetailClient({
 
   return (
     <>
-      <section className="mb-5">
-        <div className="mb-2 flex items-center gap-2">
-          {category && (
-            <span className="theme-pill-soft text-[#2A5298]">{category}</span>
-          )}
-          <span className="text-xs text-[#718096]">{session.japanese_year}</span>
-        </div>
-        <h2 className="theme-section-title mb-2 text-2xl leading-snug">
-          {session.name}
-        </h2>
-        <div className="flex flex-wrap gap-4 text-sm text-[#4A5568]">
-          <span>{session.schedules.length}日程</span>
-          <span>{totalSpeeches}件の発言・議題</span>
-        </div>
-      </section>
+      <MinutesHeading
+        name={session.name}
+        japaneseYear={session.japanese_year}
+        typeLabel={session.type_label}
+        scheduleCount={session.schedules.length}
+        totalSpeeches={totalSpeeches}
+      />
 
       <MinutesDetailClient
         session={session}

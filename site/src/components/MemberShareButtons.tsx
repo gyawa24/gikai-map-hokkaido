@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import QRCodeModal from "./QRCodeModal";
 import { useToast } from "./Toast";
 
@@ -12,6 +12,18 @@ type Props = {
   themes?: string[];
 };
 
+function subscribeToPageUrl() {
+  return () => {};
+}
+
+function getPageUrlSnapshot() {
+  return `${window.location.origin}${window.location.pathname}`;
+}
+
+function getServerPageUrlSnapshot() {
+  return "";
+}
+
 export default function MemberShareButtons({
   memberName,
   cityName,
@@ -20,16 +32,17 @@ export default function MemberShareButtons({
   themes = [],
 }: Props) {
   const [qrOpen, setQrOpen] = useState(false);
+  const pageUrl = useSyncExternalStore(
+    subscribeToPageUrl,
+    getPageUrlSnapshot,
+    getServerPageUrlSnapshot
+  );
   const toast = useToast();
-
-  const buildUrl = () => {
-    if (typeof window === "undefined") return "";
-    return `${window.location.origin}${window.location.pathname}`;
-  };
 
   const handleCopyLink = async () => {
     try {
-      await navigator.clipboard.writeText(buildUrl());
+      const url = pageUrl || `${window.location.origin}${window.location.pathname}`;
+      await navigator.clipboard.writeText(url);
       toast.show("リンクをコピーしました");
     } catch {
       toast.show("コピーに失敗しました", "info");
@@ -40,17 +53,16 @@ export default function MemberShareButtons({
     const topThemes = themes.slice(0, 3).join("・");
     const parts = [
       `【${cityName}議会】${memberName}${factionLabel ? `（${factionLabel}）` : ""}`,
-      sessionCount ? `質問活動${sessionCount}回` : "",
+      sessionCount ? `公式会議録の質問記録${sessionCount}回` : "",
       topThemes ? `主なテーマ: ${topThemes}` : "",
     ].filter(Boolean);
     return parts.join(" / ");
   };
 
   const xShareHref = (() => {
-    const url = buildUrl();
-    if (!url) return "#";
+    if (!pageUrl) return "#";
     const text = buildShareText();
-    return `https://x.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    return `https://x.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(pageUrl)}`;
   })();
 
   return (
@@ -100,7 +112,7 @@ export default function MemberShareButtons({
       </a>
       {qrOpen && (
         <QRCodeModal
-          url={buildUrl()}
+          url={pageUrl}
           title={`${memberName} 議員ページ`}
           description={`${cityName}議会 ${memberName} 議員`}
           onClose={() => setQrOpen(false)}

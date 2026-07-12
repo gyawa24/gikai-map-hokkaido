@@ -207,13 +207,13 @@ export default async function CityMemberDetailPage({
               </span>
               {memberActivity && (
                 <span className="theme-pill-soft text-[#2A5298]">
-                  質問 {memberActivity.session_count}回
+                  公式記録 {memberActivity.session_count}回
                 </span>
               )}
             </div>
-            <h2 className="text-2xl font-bold text-[#1A202C] leading-snug">
+            <h1 className="text-2xl font-bold text-[#1A202C] leading-snug">
               {member.name}
-            </h2>
+            </h1>
             <p className="text-sm text-[#718096] mt-0.5">{member.furigana}</p>
           </div>
         </div>
@@ -328,9 +328,9 @@ export default async function CityMemberDetailPage({
       {memberActivity ? (
         <section id="activity" className="scroll-mt-20">
           <h3 className="text-base font-bold text-[#1B3A6B] mb-3">
-            議会質問の記録
+            公式会議録の質問記録
             <span className="ml-2 text-sm font-normal text-[#718096]">
-              （{memberActivity.session_count}回登壇）
+              （{memberActivity.session_count}回）
             </span>
           </h3>
 

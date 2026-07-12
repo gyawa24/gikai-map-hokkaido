@@ -1650,6 +1650,10 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
     ((tab === "sessions" && (availableSourceTypes.size > 1 || availableYears.length > 1 || availableCities.length > 1)) ||
       (tab === "members" && (availableFactions.length > 1 || availableCities.length > 1)));
   const scopedCityLabel = cityFilter !== "all" ? selectedCityLabel || cityFilter : "";
+  const exactMemberMatches = filteredMembers.filter(
+    (member) => compactForSearch(member.name) === compactForSearch(query)
+  );
+  const exactMemberMatch = exactMemberMatches.length === 1 ? exactMemberMatches[0] : null;
 
   function clearFilters() {
     replaceSearchParams({
@@ -2192,23 +2196,47 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
 
       {/* 議員サジェスト: sessions タブで議員名がマッチした場合、議員タブへの動線を上部に出す */}
       {tab === "sessions" && hasQuery && !loading && filteredMembers.length > 0 && (
-        <div className="theme-panel flex flex-col items-start gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:py-2.5">
-          <p className="text-xs text-[#1B3A6B] flex-1 min-w-0">
-            <span className="font-semibold">議員</span>の検索結果が
-            <span className="font-bold mx-0.5">{filteredMembers.length}</span>
-            件あります:{" "}
-            <span className="text-[#4A5568]">
-              {filteredMembers.slice(0, 3).map((m) => `${m.name}（${m.cityName}）`).join(" / ")}
-              {filteredMembers.length > 3 && " ほか"}
-            </span>
-          </p>
-          <button
-            onClick={() => replaceSearchParams({ tab: "members" })}
-            className="theme-button shrink-0 px-3 py-1 text-xs"
-          >
-            議員タブを見る
-          </button>
-        </div>
+        exactMemberMatch ? (
+          <div className="theme-panel flex flex-col items-start gap-3 border-l-4 border-l-[#F7C948] px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="min-w-0">
+              <p className="text-xs font-semibold text-[#667085]">議員名の完全一致</p>
+              <p className="mt-1 text-base font-black text-[#1B3A6B]">
+                {exactMemberMatch.name}
+                <span className="ml-2 text-sm font-medium text-[#4A5568]">{exactMemberMatch.cityName}</span>
+              </p>
+              {(exactMemberMatch.faction || exactMemberMatch.party) && (
+                <p className="mt-1 text-sm text-[#667085]">
+                  {exactMemberMatch.faction || exactMemberMatch.party}
+                </p>
+              )}
+            </div>
+            <Link
+              href={exactMemberMatch.href}
+              prefetch={false}
+              className="theme-button theme-button-accent min-h-11 shrink-0 px-4 py-2 text-sm"
+            >
+              議員ページを見る
+            </Link>
+          </div>
+        ) : (
+          <div className="theme-panel flex flex-col items-start gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:py-2.5">
+            <p className="text-xs text-[#1B3A6B] flex-1 min-w-0">
+              <span className="font-semibold">議員</span>の検索結果が
+              <span className="font-bold mx-0.5">{filteredMembers.length}</span>
+              件あります:{" "}
+              <span className="text-[#4A5568]">
+                {filteredMembers.slice(0, 3).map((m) => `${m.name}（${m.cityName}）`).join(" / ")}
+                {filteredMembers.length > 3 && " ほか"}
+              </span>
+            </p>
+            <button
+              onClick={() => replaceSearchParams({ tab: "members" })}
+              className="theme-button shrink-0 px-3 py-1 text-xs"
+            >
+              議員タブを見る
+            </button>
+          </div>
+        )
       )}
 
       {hasQuery && !loading && truncated && (

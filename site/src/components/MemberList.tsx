@@ -116,7 +116,7 @@ function MemberCard({
               </div>
               {activity && (
                 <span className="shrink-0 whitespace-nowrap rounded-full border border-[#D7E1F0] bg-[#F4F8FF] px-2 py-0.5 text-[11px] font-bold text-[#2A5298]">
-                  質問 {activity.session_count}
+                  公式記録 {activity.session_count}
                 </span>
               )}
             </div>
@@ -214,7 +214,7 @@ function MemberCard({
           </div>
           {activity && (
             <span className="theme-pill-soft shrink-0 whitespace-nowrap px-2 py-1 text-[11px] text-[#2A5298] sm:px-[0.8rem] sm:text-[0.78rem]">
-              質問 {activity.session_count}回
+              公式記録 {activity.session_count}回
             </span>
           )}
         </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { aliasesForTag, canonicalizeTag, slugForTag, tagFromSlug } from "@/lib/topicAliases";
+import { aliasesForTag, canonicalizeTag, isCitizenTopic, slugForTag, tagFromSlug } from "@/lib/topicAliases";
 import AIDisclaimer from "@/components/AIDisclaimer";
 import TopicRecordsClient from "@/components/TopicRecordsClient";
 import type { Metadata } from "next";
@@ -23,11 +23,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params;
   const decoded = decodeTagParam(tag);
   const canonical = canonicalizeTag(decoded);
-  return buildPageMetadata({
+  const metadata = buildPageMetadata({
     title: `${canonical} - テーマ別議事録`,
     description: `北海道内の市町村議会で「${canonical}」に関連する議事録の一覧です。自治体を横断して確認できます。`,
     path: `/topics/${slugForTag(canonical)}`,
   });
+  return isCitizenTopic(canonical)
+    ? metadata
+    : { ...metadata, robots: { index: false, follow: true } };
 }
 
 export const dynamicParams = true;
@@ -58,7 +61,7 @@ export default async function TopicTagPage({ params }: Props) {
 
       <section className="mb-6">
         <div className="flex items-center gap-3 mb-1">
-          <h2 className="text-xl font-bold text-[#1B3A6B]">{canonical}</h2>
+          <h1 className="text-xl font-bold text-[#1B3A6B]">{canonical}</h1>
         </div>
         <p className="text-base text-[#4A5568] leading-relaxed">
           「{canonical}」に関連する議事録の一覧です。表記ゆれも含めて、複数の市町村議会から横断的に表示しています。

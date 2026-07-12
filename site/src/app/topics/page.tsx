@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllTags } from "@/lib/topics";
+import { getCitizenTopics } from "@/lib/topics";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata = buildPageMetadata({
@@ -9,15 +9,15 @@ export const metadata = buildPageMetadata({
 });
 
 export default function TopicsPage() {
-  const tags = getAllTags();
+  const tags = getCitizenTopics();
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       <section className="mb-6">
         <h1 className="text-xl font-bold text-[#1B3A6B] mb-1">テーマ別議事録</h1>
         <p className="text-base text-[#4A5568] leading-relaxed">
-          北海道内の市町村議会の議事録をテーマ別に横断検索できます。
-          タグをクリックすると関連する議事録の一覧を表示します。
+          北海道内の市町村議会の議事録を、市民向けに整理した主要テーマから横断検索できます。
+          テーマを選ぶと関連する議事録の一覧を表示します。
         </p>
       </section>
 
@@ -43,7 +43,7 @@ export default function TopicsPage() {
       )}
 
       <p className="mt-4 text-sm text-[#718096]">
-        全{tags.length}テーマ・{tags.reduce((s, t) => s + t.count, 0)}件の議事録タグ
+        全{tags.length}テーマから探せます
       </p>
     </div>
   );
