@@ -322,3 +322,48 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - GitHub Raw画像: 未確認
 - rollback可否: Vercel側を残して確認予定
 - 備考:
+
+## 2026-07-12 Cloudflare 検証
+
+実施者: Codex
+
+#### ローカル確認
+
+- `npm run cf:preflight`: 通過
+- preflight recorded_at: 2026-07-12 19:11:55 JST
+- source files: 14,960
+- artifact files: 4,553
+- dry-run: 通過
+- 備考: Cloudflare上のURL検証まで実施。
+
+#### Cloudflare upload
+
+- 実行コマンド: CLOUDFLARE_RELEASE_CONFIRM=upload-and-verify npm run cf:upload-verify
+- Workers URL: https://60ed5635-chihougikai-com.yohei-218.workers.dev
+- 検証用サブドメイン: https://staging-chihougikai-com.yohei-218.workers.dev
+- upload結果: 実施済み
+- upload Worker Version ID: `60ed5635-5e23-47d2-a42b-2cbf839671af`
+- 備考: 682 new/modified static assets をupload。Cloudflare smoke test通過。
+
+#### 検証URL確認
+
+- 実行コマンド: npm run cf:verify-url -- --base https://chihougikai.com
+- verified URL: https://chihougikai.com
+- verified_at: 2026-07-12 19:15:16 JST
+- expected robots: indexable
+- `npm run cf:release-status`: ローカル成果物OK・Cloudflare URL検証済み
+- deploy URL gate: ready (https://chihougikai.com)
+- 備考: preview URLと本番URLの両方でsmoke test通過。
+
+#### 本番DNS切替後の確認
+
+- DNS切替時刻: 2026-06-01に切替済み
+- 実行コマンド: `CLOUDFLARE_RELEASE_CONFIRM=deploy npm run cf:deploy`、`npm run cf:post-cutover-check`、`npm run cf:finalize-production`
+- production URL: `https://chihougikai.com` 200 Cloudflare、`https://www.chihougikai.com` 301 Cloudflare
+- production Worker Version ID: `67760af6-3ab6-46c8-9b11-e67678a98715`
+- robots: indexable
+- sitemap: 200。主要政策分野15件、議員詳細、議事録詳細、速報詳細を収録。
+- search: `/search?q=小川陽平` から `/chitose/members/3` へ移動可能。`千歳市 スケート学習` で千歳市の公式議事録を確認。375px幅で横スクロール・console警告・エラーなし。
+- GitHub Raw画像: member / budget / large minutes fallback smoke通過
+- rollback可否: Vercel側を残して確認予定
+- 備考: 自治体カードの最新会議、テーマ整理、議員名検索、議事録metadataを本番反映。検索UIはclient-only境界に分離し、静的HTMLとURL queryのhydration不一致を解消。
