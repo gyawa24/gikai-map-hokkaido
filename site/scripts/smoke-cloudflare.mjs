@@ -166,7 +166,7 @@ const smokeCases = [
       "https://chihougikai.com/search",
       "https://chihougikai.com/hakodate",
       "https://chihougikai.com/chitose/budgets/2026",
-      "https://chihougikai.com/topics/u-e4ba88e7ae97",
+      "https://chihougikai.com/topics/u-e8b2a1e694bfe383bbe4ba88e7ae97",
     ],
     bodyExcludes: ["https://chihougikai.com/topics/予算"],
   },
