@@ -230,6 +230,7 @@ function main() {
   const options = parseArgs();
   const cases = readJson(CASES_FILE);
   const targetCases = cases.filter((testCase) => {
+    if (testCase.bigramOnly) return false;
     if (options.ids.size > 0 && !options.ids.has(testCase.id)) return false;
     if (options.city && testCase.city !== options.city) return false;
     return true;

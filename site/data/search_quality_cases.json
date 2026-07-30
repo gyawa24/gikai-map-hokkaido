@@ -216,5 +216,18 @@
       "textIncludes": ["学校給食無償化拡大検討", "防災タワー"]
     },
     "note": "学校給食テーマを議員名つきで拾えるか。"
+  },
+  {
+    "id": "setana-fulltext-information-technology",
+    "city": "setana",
+    "cityName": "せたな町",
+    "query": "情報通信技術",
+    "operator": "and",
+    "bigramOnly": true,
+    "expected": {
+      "source": "agenda",
+      "council_id": 20261001
+    },
+    "note": "議題形式を持たないPDF会議録でも、市町村別全文索引から該当会議へ到達できるか。"
   }
 ]

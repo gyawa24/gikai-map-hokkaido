@@ -191,7 +191,6 @@ type AgendaEntry = {
   schedule_index: number;
   schedule_name: string;
   agenda_title: string;
-  first_minute_id: number | null;
   text: string;
   year?: string;
 };
@@ -289,6 +288,7 @@ type ClientBigramSearchDocument = {
   committee?: string;
   label?: string;
   field?: string;
+  fullTextIndexed?: boolean;
 };
 
 type ClientBigramSearchManifest = {
@@ -737,7 +737,7 @@ function runClientBigramCitySearch(
     for (const doc of candidateDocs) {
       const searchText = documentSearchText(doc);
       const evaluation = evaluateText(searchText);
-      if (!evaluation.matched) continue;
+      if (!evaluation.matched && !doc.fullTextIndexed) continue;
 
       if (doc.source === "member") {
         const name = doc.name || doc.member_name || doc.title;
@@ -765,7 +765,15 @@ function runClientBigramCitySearch(
       }
 
       const sourceType = doc.sourceType ?? (doc.source === "decision" ? "decision" : doc.source === "session" ? "session" : "minutes");
-      let score = evaluation.score + (doc.source === "member_activity" ? 32 : doc.source === "agenda" ? 14 : 8);
+      let score = evaluation.score + (
+        doc.source === "member_activity"
+          ? 32
+          : doc.fullTextIndexed
+            ? 6
+            : doc.source === "agenda"
+              ? 14
+              : 8
+      );
       if (evaluateText(doc.title).matched) score += 16;
       if (doc.member_name && evaluateText(doc.member_name).matched) score += 12;
       if (doc.committee && evaluateText(doc.committee).matched) score += 8;
@@ -780,7 +788,9 @@ function runClientBigramCitySearch(
         segIndex: 0,
         label: doc.label ?? "",
         startTime: "",
-        context: excerptSearchText(doc.context || doc.body || searchText, tokens, 100),
+        context: doc.fullTextIndexed
+          ? `議事録本文に「${tokens.join("・")}」を含む会議です。原文で該当箇所を確認できます。`
+          : excerptSearchText(doc.context || doc.body || searchText, tokens, 100),
         field: doc.field ?? (sourceType === "decision" ? "議決" : sourceType === "session" ? "会議録速報" : "議事録"),
         date: doc.date,
         year: doc.year || yearFromDate(doc.date) || yearFromCouncilName(doc.title),
@@ -991,16 +1001,13 @@ function runClientSearch(
       if (agenda.agenda_title && evaluateText(agenda.agenda_title).matched) score += 18;
       if (evaluateText(agenda.council_name).matched) score += 10;
       sessionResults.push({
-        id: `${agenda.city}_minutes_${agenda.council_id}_${agenda.schedule_index}_${agenda.first_minute_id ?? 0}`,
+        id: `${agenda.city}_minutes_${agenda.council_id}_${agenda.schedule_index}`,
         city: agenda.city,
         cityName: agenda.cityName,
         sourceType: "minutes",
         title: agenda.council_name,
         committee: agenda.agenda_title || "議題",
-        href:
-          agenda.first_minute_id !== null
-            ? `/${agenda.city}/minutes/${agenda.council_id}?q=${encodeURIComponent(q)}`
-            : `/${agenda.city}/minutes/${agenda.council_id}`,
+        href: `/${agenda.city}/minutes/${agenda.council_id}?q=${encodeURIComponent(q)}`,
         segIndex: agenda.schedule_index,
         label: agenda.schedule_name,
         startTime: "",
