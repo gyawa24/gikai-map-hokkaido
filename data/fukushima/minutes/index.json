@@ -160,5 +160,68 @@
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "2025101216.json",
     "schedule_count": 1
+  },
+  {
+    "council_id": 2026100213,
+    "name": "定例会２月会議 (2026-02-13)",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "2026100213.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 2026100310,
+    "name": "定例会３月会議（１日目） (2026-03-10)",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "2026100310.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 2026100312,
+    "name": "定例会３月会議（２日目） (2026-03-12)",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "2026100312.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 2026100326,
+    "name": "定例会３月第２回会議 (2026-03-26)",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "2026100326.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 2026100427,
+    "name": "定例会４月会議 (2026-04-27)",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "2026100427.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 2026100522,
+    "name": "定例会５月会議 (2026-05-22)",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "2026100522.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 2026100618,
+    "name": "定例会６月会議 (2026-06-18)",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "2026100618.json",
+    "schedule_count": 1
   }
 ]

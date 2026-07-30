@@ -1,5 +1,41 @@
 [
   {
+    "council_id": 527,
+    "name": "令和 ８年  第２回 定例会",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "527.json",
+    "schedule_count": 5
+  },
+  {
+    "council_id": 530,
+    "name": "令和 ８年  第３回 臨時会",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "530.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 525,
+    "name": "令和 ８年  第１回 臨時会",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "525.json",
+    "schedule_count": 1
+  },
+  {
+    "council_id": 524,
+    "name": "令和 ８年  予算特別委員会",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算特別委員会",
+    "file": "524.json",
+    "schedule_count": 1
+  },
+  {
     "council_id": 518,
     "name": "令和 ７年  第５回 定例会",
     "year": "2025",

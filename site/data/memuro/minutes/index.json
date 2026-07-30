@@ -1,5 +1,14 @@
 [
   {
+    "council_id": 318,
+    "name": "令和 ８年  ３月 定例会議",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "318.json",
+    "schedule_count": 4
+  },
+  {
     "council_id": 315,
     "name": "令和 ８年  １月 臨時会議",
     "year": "2025",
@@ -46,6 +55,24 @@
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "301.json"
+  },
+  {
+    "council_id": 319,
+    "name": "令和 ８年 第９回 予算決算特別委員会（予算審査）",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算決算特別委員会",
+    "file": "319.json",
+    "schedule_count": 4
+  },
+  {
+    "council_id": 317,
+    "name": "令和 ８年 第８回 予算決算特別委員会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算決算特別委員会",
+    "file": "317.json",
+    "schedule_count": 1
   },
   {
     "council_id": 316,

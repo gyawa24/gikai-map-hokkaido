@@ -1,0 +1,370 @@
+[
+  {
+    "id": "kikonai-20242001-1-001",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "羽沢裕一副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\nただいま上程となりました、承認第1号 専決処分の承認を求めることについて、提案理\n由の説明を申し上げます。\n地方自治法第179条第1項の規定により、令和5年度木古内町一般会計補正予算（第6号）の\n- 3 -\n\n専決処分を行うもので、補正内容は9ページの資料をお開き願います。\n木古内中学校スキー部の生徒が出場する第56回北海道中学校スキー大会への参加報償費と\nして、22万9,000円を計上するものです。\n2の事業の概要に、事業費の内訳と参加者名簿等を記載しておりますので、ご参照くださ\nい。なお、大会の結果につきましては、回転と大回転の2種目とも健闘されましたが、決勝\nに残ることはできませんでした。\n説明は以上です。よろしくご審議をお願いいたします。",
+    "text_length": 338,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-002",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "4番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "竹田努",
+    "member_faction": "",
+    "text": "（竹田 努君） 今回の専決については、特に異論はないわけですけれども、9ページ\nのこの資料。これを見て引率の外部指導者、過去にもこのスキーの大会で、専決だとか大会\n助成をしているってこういう事例あります。この外部指導者の引率の定義っていうか、今回\nは大会参加は1名なんですけれども、これがたまさかだったのか名字が一緒なんですよね。\nですから、その関係もわからないし、例えば複数の大会参加になった場合に、5名で1名の\n外部指導者が必要なのか、10名になったらそうしたら2名の指導者が必要なのか。過去、高\n校生なんかも何年か前にこういう大会に参加するっていうような部分でありましたけれど\nも、その時は外部指導者って言いますかそういう引率がなかった確か事例もあったと思うん\nですよね。ただ、教育委員会としての考え方をきちんとした定義って言いますか、何名だか\nらどうだとか私達がやはり心配するのが冬期間、そしてスキーだとかも一緒に運ばなきゃな\nらないっていうことで、車で行くっていうそういう要素もこれありかなと思うんですよね。\nだから、そういうことでこうするっていうふうに取り決めしているのか、たまたま今回は\n特別なあれなのかっていうようなことも含めて、その考え方を一つ。",
+    "text_length": 532,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-003",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "加藤隆一生涯学習課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま竹田議員のほうから、指導者等々についての引率\nについてのご質問だと思います。\nこれ過去にも竹田議員がおっしゃるとおり、外部指導者についての引率はさせていただき\nます。今回の部分につきましてのまず説明をさせていただきます。\n今回、まず中体連の事業と大会ということなので、まず学校の先生の引率はもちろんのこ\nと、例えば大会の前日だとかコースの下見等々する場合によって、スキーの指導者の資格と\nか持っている先生が引率しているわけではないので、そこはやはり外部指導者という指導免\n許を持っているこれ親子関係なんですけれども、ということで今回は指導者という形で、引\n率をさせていただいております。\nそれともう1点、過去の部分についても全く考えは一緒で、基本的には外部指導者、引率\nについては学校の先生と行きますけれども、外部指導者についてはきちんとそういう指導免\n許を持ったかたの引率ということで、いままで補正をしていた経過がございます。以上です。",
+    "text_length": 423,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-004",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "羽沢裕一副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程となりました、議案第1号 令和5年度木古内町一般\n会計補正予算（第7号）につきまして、提案理由の説明を申し上げます。\n議案の1ページをお開きください。\n歳入歳出予算の総額に、歳入歳出それぞれ、1,811万1,000円を追加し、歳入歳出予算の総\n額を44億3,355万6,000円とするものです。\nそれでは、補正の内容につきまして、歳出からご説明をいたします。\n議案の7ページをお開きください。\n2款 総務費、1項 総務管理費、1目 一般管理費、24節 積立金 128万8,000円の減額\nは、このたびの補正に伴う財源調整です。\n25節 寄附金 100万円の追加は、石川県能登半島地震で被災された方々への見舞金とし\nて計上するもので、金額等につきましては渡島管内各町で足並みを揃え、同額としておりま\nす。\n議案の8ページと資料11ページの資料をあわせてお開きください。\n3款 民生費、1項 社会福祉費、12目 生活支援給付金事業費、10節 需用費から18節\n負担金補助及び交付金まで、あわせまして1,811万1,000円の追加は、物価高騰により厳しい\n状況にある生活者を引き続き支援するため、国の事業である物価高騰対応重点支援地方創生\n臨時交付金を活用し、給付金を支給するものです。\n2の事業の概要（1）対象世帯は、①の住民税均等割のみ課税世帯は、基準日であります令\n和5年12月1日時点で、木古内町に住民登録があり、令和5年度住民税均等割のみ課税されて\nいる世帯に対し、1世帯あたり10万円を支給いたします。\n次に、②の低所得者の子育て世帯は、同じく基準日時点で木古内町に住民登録があり、平\n成17年4月2日以降に出生した児童を養育している令和5年度の住民税が非課税である世帯、\n- 5 -\n\n及び均等割のみ課税されている世帯に対して、1人あたり5万円を支給いたします。\n（2）事業費の内訳といたしまして、①が140世帯、1,400万円に、システム改修や通知書\nの送付などの事務費として102万7,000円、②につきましては50人、250万円、同じく事務費\nとして58万4,000円、あわせて総額 1,811万1,000円を計上しております。\n（3）には、スケジュールを記載しております。3月上旬には、給付を開始する予定として\nおります。\n12ページには、対象となる世帯の要件別の給付額がわかるフローチャートを記載しており\nますので、ご参照願います。\n次に、議案の9ページと13ページの資料をあわせてお開きください。\n木古内中学校吹奏楽部が出場する、第55回北海道アンサンブルコンテストへの参加報償費\nとして、28万8,000円を計上するものです。\n2の事業の概要に、事業費の内訳と参加者名簿等を記載しておりますので、ご参照くださ\nい。\n歳入の補正につきましては、給付事業に伴う国からの臨時交付金のみで、10ページの資料\nにこれまでの重点支援地方交付金の活用状況を載せておりますので、ご確認願います。\n説明は以上です。よろしくご審議をお願いいたします。",
+    "text_length": 1282,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-005",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "1番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "平野武志",
+    "member_faction": "",
+    "text": "（平野武志君） このたびの補正について、生活支援臨時給付金事業で国の政策として\n指示されたのをそのまま木古内町のこの枠にあてはめて給付するということですけれども、\nこれまでも所得に関わらず公平にこの給付をするというのが国の政策でも議論されてきたと\nころであり、例えば木古内町で子育て世帯で対象児童50人ということですけれども、これに\nあてはまらなかったかたへの我が町独自の給付だとかそういうことは検討されましたでしょ\nうか。検討されたか、されないかのまず質問をしたいと思います。",
+    "text_length": 239,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-006",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "畑中正実町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまの平野議員のご質問でございます。\n子育て世帯への給付ということで、対象が非課税世帯若しくは均等割のみ課税世帯が今回、\n対象となっております。それ以外の子育て世帯への支援の検討というところでございますが、\n検討は町としてもしたところではございます。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-007",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "1番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "平野武志",
+    "member_faction": "",
+    "text": "（平野武志君） まず、対象児童が50人ということで、この対象になられていないかた\nが何人くらいで、例えば検討されたのであればその内容をもう少し詳しく教えていただけま\nすか。というのは私は、せめて子どもに対する給付については収入関係なく、これまで木古\n内町も様々な国の線引きを越えてまでも独自で給付してきた事例もございますので、私は国\nの定めた対象を越えてやるべきだなと感じたものですから、いま一度その考えをもとに町民\n課ではどのような内容で、そしてこの結果に辿り着いたのかを詳しくお聞かせいただきたい\nと思います。",
+    "text_length": 257,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-008",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "羽沢裕一副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまのご質問にお答えいたします。\n- 6 -\n\nこれ以外、この事業から対象外となるかたは課税世帯ということになりますが、その課税\n世帯につきましても、国が定率減税・定額減税を行いますので、漏れなく皆さんなにかしら\nの恩恵を受けるということで、町として独自の支援、事業展開はしないという結論に至って\nおります。\nまた、課税世帯の対象世帯については、町民課長より報告させます。以上です。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-009",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "畑中正実町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "交付金の対象にならない児童数というところでございますが、\n対象世帯数としまして約50世帯ほどと認識してございます。",
+    "text_length": 57,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-010",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "1番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "平野武志",
+    "member_faction": "",
+    "text": "（平野武志君） 副町長の説明は理解したところです。仮にその国策ってすでに出てい\nるんですか、内容は把握されているんですか。それ独自で調べます。\nあと町民課長、50名以外対象漏れたかたはどの程度いたんでしょうかっていう部分につい\nては、答弁漏れかと思うんですけれども、よろしいですか。",
+    "text_length": 141,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-011",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "畑中正実町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "対象外となっている児童数でございますが、すみません。人数\nは把握してございませんでした。世帯数としては、約150世帯程度ということで認識してご\nざいます。",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-012",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "鈴木慎也町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第2号の提案理由の説明をさせていただきます。\n- 7 -\n\n資料の4ページから6ページに、新旧対照表を掲載しておりますので、あわせてご参照願い\nます。\nこのたびの改正内容は、戸籍法の一部改正により、戸籍謄本が本籍地以外の役所でも取得\nできるようになる「広域交付」が運用開始されることと、戸籍及び除籍謄本の電子証明が提\n供可能となることに伴い、条例で定められている手数料等の改正を行うものであります。\n改め文に記載のとおり、別表の6の項中「磁気ディスクをもって調製された戸籍に記録さ\nれている事項の全部若しくは一部を証明した書面」を「戸籍証明書」に改め、7の項と9の項\nに戸籍と除籍に関する電子証明書発行手数料を新たに定めるほか、各項の繰り下げや、必要\nな文言の修正を行うものであります。\nなお、改正戸籍法の運用は令和6年3月1日より施行されていることから、本条例の施行も、\n令和6年3月1日から施行すると附則に定めております。\n以上で、提案理由の説明を終わります。よろしくご審議をお願い申し上げます。",
+    "text_length": 452,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-029"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-013",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "1番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "平野武志",
+    "member_faction": "",
+    "text": "（平野武志君） 新たにこのような手数料を設けるということは、内容は理解したとこ\nろでありますけれども、この金額設定についてお伺いしたいと思いますけれども、新たな電\n子の手数料が1件につき700円ということですけれども、これまでのそのような書式をいただ\nくにあたり700円って結構高額に感ずるんですけれども、これ全国一律でどこかの基準にあ\nわせたものなのか、我が町独自なのか、我が町独自だとしたらこの700円の設定がどのよう\nな根拠で提案されたのかお聞かせいただきたいと思います。",
+    "text_length": 239,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-031"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-014",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "畑中正実町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまの平野議員のご質問にお答えいたします。\nこちらの手数料の金額設定でございますが、こちらのほうは国のほうから基準額というも\nのが示されておりまして、それに準じて設定したところでございます。",
+    "text_length": 97,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-032"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-015",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "1番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "平野武志",
+    "member_faction": "",
+    "text": "（平野武志君） これまでも普通の住民票ですとか様々な手数料は、別に国の準じてい\nる金額とかじゃないですよね。各自治体によって結構差があると思うんですけれども、木古\n内町はこれまでも全て国の定めるのに準じてきたという認識でよろしいでしょうか。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-033"
+      ]
+    }
+  },
+  {
+    "id": "kikonai-20242001-1-016",
+    "municipality": "kikonai",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第1回臨時議会（令和6年2月6日）",
+    "date": "2024-02-06",
+    "speaker": "畑中正実町民課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいまの平野議員のご質問でございます。\n木古内町につきましては、基本的には各種準じた手数料の設定となってございます。",
+    "text_length": 59,
+    "source": {
+      "minutes_file": "data/kikonai/minutes/20242001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-034"
+      ]
+    }
+  }
+]

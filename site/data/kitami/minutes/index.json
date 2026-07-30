@@ -1,5 +1,23 @@
 [
   {
+    "council_id": 377,
+    "name": "令和 ８年  ３月 定例会（第１回）",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "377.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 376,
+    "name": "令和 ８年  １月 臨時会（第１回）",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "376.json",
+    "schedule_count": 1
+  },
+  {
     "council_id": 373,
     "name": "令和 ７年 １２月 定例会（第４回）",
     "year": "2025",

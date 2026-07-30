@@ -1,0 +1,416 @@
+[
+  {
+    "id": "chippubetsu-20261001-1-001",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "宮本事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "諸般の報告をいたします。今期定例会に町長から付議されました事件\nは、承認第１号の１件、議案第２号から第 26 号までの 25 件でございま\nす。次に議員から提出された意見案が１件ございます。\nまた、議長からの付議事件として、所管事務調査の申し出についてがご\n1\n\nざいます。\nなお、教育委員会教育長から、秩父別町教育委員会の活動状況に関する\n点検・評価報告書、監査委員からは、指定管理者並びに指定管理施設の監\n査結果及び１月から３月までに実施いたしました例月出納検査の結果が提\n出されております。\n写しをお手元に配付しておりますので朗読を省略いたします。\n以上でございます。",
+    "text_length": 287,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-002",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "澁谷町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日、第１回町議会定例会を招集いたしましたところ、融雪期を迎え営\n農の春作業が始まる中で、さらに年度末で何かとお忙しい中、全議員のご\n出席をいただき誠に有難うございます。\n１月 13 日の第１回町議会臨時会以後の行政執行の主要な事項についてご\n報告申し上げます。\n始めに、職員の動静についてご報告申し上げます。\nこの３月 31 日をもちまして、産業課の青木主事補が退職いたします。\n青木主事補は、令和２年３月に滝川西高等学校を卒業後、専門学校を経\nて、令和６年４月に役場に奉職され、住民課と産業課で勤務をいただきま\nした。\n２年間の勤務でありましたが、この度一身上の都合により退職したいと\nのことであり、本人の意志を受け入れ退職を承認した次第であります。\nまだ、様々な分野へチャレンジできる年齢でありますので、青木君の今\n後のご活躍をお祈りさせていただきます。\n次に、職員の新規採用について申し上げます。\n2\n\nこの４月１日付けで、一般事務職１名と保健師１名を採用いたします。\n一般事務職は、中央西町内にお住まいで、この春、深川西高等学校を卒\n業された五島 颯希さんを、保健師は、深川市のご出身で、滝川高等学校\nを経て、今月末に名寄市立大学を卒業予定の篠原 瑞歩さんを採用いたし\nます。\nお２人とも職員採用試験を優秀な成績で合格した方であり、今後の活躍\nに期待を申し上げるところであります。\nまた、４月から北空知衛生センター組合に職員１名を２年間派遣いたし\nますが、現在組合との協議を進めながら、人選を進めているところであり\nます。\n以上申し上げまして、職員の動静についての報告といたします。\n次に、車椅子の寄贈について申し上げます。\n１月 19 日、秩父別中学校生徒会の代表２名と町内の早川新聞販売店様を\n通じて、旭川地方道新会様から車椅子１台を、ご寄贈いただきました。\nこの車椅子は、秩父別中学校の生徒の皆さんが最後の地域活動として、\n北海道新聞社、販売店、地域の方々と協力して行ったリングプル回収運動\nの交換品で、早川新聞販売店様のご推薦により本町に寄贈されたものであ\nります。\n有難く採納させていただき、町の公共施設で有効に活用させていただく\n次第であります。\n旭川地方道新会様には、これまでにも車椅子４台をご寄贈いただいてお\nり、度重なるご厚意に厚くお礼を申し上げますとともに、リングプル回収\n運動にご協力いただきました、秩父別中学校生徒の皆さん、早川新聞販売\n店様並びに、旭川地方道新会様の益々のご健勝とご発展をお祈り申し上げ\nます。\n以上、寄附の採納についての報告とさせていただきます。\n最後に、建設工事等の入札結果についてご報告申し上げます。\n１月 21 日に執行いたしました、２件の入札結果について申し上げます。\n秩父別町特定公共賃貸住宅あさひ団地電気設備更新工事ほか１件の工事\nを発注しておりますが、概要につきましてはお手元に資料を配付しており\nますので、説明を省略させていただきます。\n以上申し上げまして、行政報告とさせていただきます。\n3",
+    "text_length": 1281,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-003",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "早川教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "教育行政報告として、始めに令和８年４月に開校する義務教育学校「秩\n父別学園」の児童生徒数及び学級編制について、３月１日現在の状況をご\n報告申し上げます。\n小学校にあたる前期課程につきましては、普通学級の在籍予定児童数\nは、１年生 15 名、２年生 10 名、３年生９名、４年生 11 名、５年生 16\n名、６年生が 16 名となります。\nまた、特別支援学級につきましては、知的、情緒、言語の３学級に児童\n５名在籍となり、前期課程の全学級数は９学級、全児童数は今年度と比較\nして３名減の 82 名となります。\n次に、中学校にあたる後期課程につきましては、普通学級の在籍予定生\n徒数は、７年生が 17 名、８年生が 18 名、９年生が８名となります。\nまた、特別支援学級につきましては、知的、情緒の２学級に生徒４名在\n籍となり、後期課程の全学級数は５学級、全生徒数は今年度と比較し２名\n減の 47 名となります。\n最後に、教職員数についてですが、義務教育学校への移行に伴い、校長\nは１名、教頭は前期・後期課程にそれぞれ１名配置となります。前期課程\nには一般教諭 10 名、養護教諭１名、事務職員１名、後期課程には一般教諭\n10 名、養護教諭１名、事務職員１名が配置される予定となります。\nさらに、校長１名減に対する補充として、前期課程に一般教諭１名の追\n加配置を予定しており、加えて、前期課程には校長及び教頭を補佐する主\n幹教諭が配置される予定であります。この結果、前期・後期課程の教職員\n総数は昨年度と同数の 29 名の配置数となる見込みであります。\n次に、令和７年度全国体力・運動能力、運動習慣等調査の結果について\n申し上げます。\n本調査は、全国の小・中学校が児童生徒の体力・運動能力や運動習慣、\n生活習慣などを把握・分析することにより、学校における体育・健康等に\n関する指導の改善に役立てることを目的として実施しているものでありま\n4\n\nす。\n本町においても、昨年５月から７月にかけて、小学５年生と中学２年生\nを対象として、握力、50 メートル走や立ち幅跳びなど８種目の実技調査\nと、運動に対する意識や運動習慣等についての質問紙調査を実施いたしま\nした。\n本町の状況ですが、全ての実技種目の成績を合計した体力合計点を見ま\nすと、小学校の男子は全国平均を 3.3 ポイント、女子は 2.3 ポイント下回\nる結果となりました。\n一方、中学校の男子は全国平均を 4.1 ポイント、女子は 1.7 ポイント上\n回る結果となりました。\nまた、種目別では、小学校の男子は８種目中、ソフトボール投げ、反復\n横跳び、上体起こしの３種目で全国平均を上回り、女子は立ち幅跳びと長\n座体前屈の２種目で全国平均を上回る結果となりました。\n中学校の男子は、８種目中ハンドボール投げ、反復横跳びや 50 メートル\n走などの７種目で全国平均を上回り、女子はハンドボール投げ、握力や 20\nメートルシャトルランなどの６種目で全国平均を上回りました。\n次に、質問紙調査のうち「体育の授業は楽しいですか」という問いに対\nする回答では、「楽しい」と「やや楽しい」を合わせると、小学校の男子・\n女子ともに 100％、中学校の男子は 100％、女子は 80％という回答結果で\nした。\n全国平均と比較しますと、小学校の男子は 5.6 ポイント、女子は 11.9 ポ\nイント上回りました。\n一方、中学校の男子は 6.9 ポイント上回り、中学校女子は 4.2 ポイント\n下回る結果となりました。\n小・中学校では、子どもたちの体力・運動能力向上のため、組織的な授\n業改善や望ましい生活習慣の確立など粘り強く取り組みを進めていただい\nているところであり、引き続き、こうした取り組みの充実を図ることが必\n要であると考えております。\n教育委員会といたしましては、今回の結果を踏まえ、これまでの取り組\nみの更なる改善・充実を図り、本町の子ども達が、運動やスポーツを通じ\nて体力・運動能力を高め、生涯にわたって幸福で豊かな生活を実現するた\nめの基礎を培うことができるよう、学校、家庭、地域、行政が一体となっ\n5\n\nた効果的な取り組みを推進してまいります。\n学校関係者や保護者の方々はもとより、広く町民の皆様のご理解とご支\n援を賜りますようお願いを申し上げ、令和７年度全国体力・運動能力、運\n動習慣等調査の報告といたします。",
+    "text_length": 1832,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-004",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "岡崎議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "岡崎稔",
+    "member_faction": "",
+    "text": "20 ページの予防費、委託料。750 万円の減額となってございますけれど\nも、この人間ドック・各種健診、予防接種というふうに説明にございます\nけれども、それぞれどの程度減額になったのか、お知らせいただきたいと\n思います。",
+    "text_length": 110,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-005",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "岡崎議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "岡崎稔",
+    "member_faction": "",
+    "text": "これはあくまでも実績がそうだったということですね。",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-006",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "寺迫議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "寺迫公裕",
+    "member_faction": "",
+    "text": "18 ページの７目自治振興費の７節報償費の中のふるさと納税返礼品の\n5,100 万円なのですが、大変ふるさと納税、納税額も増えて有難い話なの\nですが、お米の返礼品がほとんどだというふうに伺っていますが、秩父別\n8\n\nで返礼品他にもたくさん用意しているはずなのですが、その辺の実績等を\n教えていただけますか。",
+    "text_length": 153,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-022"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-007",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "松永議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "松永徹",
+    "member_faction": "",
+    "text": "20 ページ、農業振興費 18 節の農業団体等研修費補助金とありますが、\n今回は執行がなかったということなのですけれども、どういうのを想定し\nているものなのでしょうか。\n9",
+    "text_length": 86,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-008",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "澁谷町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "別紙「令和８年度秩父別町行政執行方針」により朗読\n（日程第 14 令和８年度秩父別町教育行政執行方針）",
+    "text_length": 51,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-038"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-009",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "早川教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "別紙「令和８年度秩父別町教育行政執行方針」により朗読",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-040"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-010",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "眞島議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "眞島秀樹",
+    "member_faction": "",
+    "text": "ただ今のご説明にあったのですけれども、農業委員さんの報酬、これに\nついて一律から今度は基本給、そして実績報酬と分かれるわけなのですよ\nね。\nこれ実績報酬ということは、それぞれ農業委員さんの、何て言うのです\nか、仕事の内容に準じて配分すると、そんなような形で理解してよろしい\nのでしょうか。\nそうすると、１人１人の農業委員さんの報酬額が変わる。ちょっとその\n辺、ちょっとお聞かせを願いたい。",
+    "text_length": 194,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-048"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-011",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "眞島議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "眞島秀樹",
+    "member_faction": "",
+    "text": "ちょっとあんまり頭いいので理解しかねるところあるのですけれども、\nすると例えば予算書でも後で出てくると思うのですけれども、ほぼ今まで\nの支給額と変わらないような金額になるのですけれども。\nそうしたら個人個人、委員さんの活動の仕方によって差があるというこ\nと、あくまでも皆さん１年後には同じ報酬額というか、その辺はどんなふ\nうになるのですか。",
+    "text_length": 170,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-050"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-012",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "金子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "金子利生",
+    "member_faction": "",
+    "text": "ちょっと私が間違っていたら、またご指摘をいただきたいのですけれど\nね。\nこれ農林水産省のやつで、令和２年に何かこう、農業委員会の改革につ\nいてということで、提案というか、あるのですけれども、これ農業委員の\n報酬なので、ここに農業委員会の会長もいらっしゃってですね、農業委員\n会の中では十分議論をされたのだろうと思うのですけれども、この中で農\n業委員さんの報酬について水準、報酬水準の引き上げを検討するものとい\nうふうにあるのですよ。\nそれで、今眞島議員もおっしゃったのですけれども、令和７年と８年の\n議員報酬、議員報酬じゃない、農業委員会報酬、同額、同じなのですよ\nね。\nそれで先程も話題になりましたけれども、出た方と出ない方と差が出る\nっていうことは、全体的な報酬の引き上げにはつながらないというふうに\n思うのですけれども、その辺の見解を１つと、それと私がこの議案出た時\nに、ちょっといくつかの農業委員会調べたのですけれども、月額報酬は据\nえ置いて、あっせん報酬ですか、あっせん報酬を月額報酬に上積みをして\n支給している農業委員会も結構あるはずなのですけれども、何でそういう\n選択をしなかったのかっていうのをちょっとお聞かせいただきたいと思い\n19\n\nます。",
+    "text_length": 530,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-052"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-013",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "澁谷町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今の金子議員、眞島議員のご質問でございますけれども、まず基本的に\nはどの委員さんも年額報酬は変わらないという理解です。\nというのは、この条例に書いてあるとおり、予算の範囲内で町で定める\nということで、上限額減りますので、その上限額超さないというか、例え\nば会長であれば３万円ですか、実績の。３万円という活動ではあり得ない\nと思っておりますので、必ずそれを超える活動していただいておりますの\nで。\nですから、上限額は必ずいくと。全員がそういう考えでおりますので、\n全員が同じ額が支給されるということを考えております。\nそれから、この近辺の農業委員会の委員の報酬で、その現行の、例えば\n５万１千円に対して、さらに実績報酬上乗せしているというところは正直\n確認できておりません。",
+    "text_length": 336,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-053"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-014",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "藤岡議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "藤岡浩文",
+    "member_faction": "副議長",
+    "text": "農業委員の今の下の方の、１番下の鳥獣害対策実施隊員と緊急銃猟の従\n事員の件についてお伺いしたいと思います。\n秩父別では人的な被害は報告されていないというふうに理解をしており\nますが、全国的に大きな被害が頻発しているというようなことで、このよ\nうな金額等々の対応になっているのかなと思いますが、秩父別においても\n緊急銃猟に対応できるような方も何人かいらっしゃるというように思って\nおりますけれども、この実施隊員、それと従事員、秩父別の場合は実際対\n応される予定の方は何人いらっしゃるのか、対象者っていうのかな、その\n辺教えていただきたいと思います。",
+    "text_length": 273,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-054"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-015",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "金子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "金子利生",
+    "member_faction": "",
+    "text": "町有住宅というふうに扱うのですけれども、入居していただく方は、年\n齢制限は設けない。\n年齢制限というか、今ある高齢者住宅とか、そういうふうに高齢者に限\nって入居を認めるとか、そういう制限は設けますか、設けませんか。",
+    "text_length": 107,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-063"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-016",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "金子議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "金子利生",
+    "member_faction": "",
+    "text": "それじゃあ、町有住宅なので、例えばサラリーマンの方が入って、給料\n上がっていっても、所得に対する住宅料の値上げはないっていうことでよ\nろしいですか。\n24",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-065"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-017",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "岡崎議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "岡崎稔",
+    "member_faction": "",
+    "text": "参考のために聞かせてください。この対照表にあります２３－６という\nのは、ちなみにどこの町有住宅なのですか。",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-067"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20261001-1-018",
+    "municipality": "chippubetsu",
+    "council_id": 20261001,
+    "council_name": "令和8年第1回定例会",
+    "schedule_id": 1,
+    "schedule_name": "3月10日",
+    "date": "2026-03-10",
+    "speaker": "寺迫議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "寺迫公裕",
+    "member_faction": "",
+    "text": "ちょっと教えてもらえますか。水道の企業会計ではあれですか、内税も\n外税も別に規約っていうか、決まりはないのでしょうか。消費税の。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20261001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-073"
+      ]
+    }
+  }
+]

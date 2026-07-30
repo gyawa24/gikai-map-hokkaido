@@ -1,0 +1,255 @@
+[
+  {
+    "id": "setana-20262001-1-001",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "中川譲副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "今回提案をいたします補正予算につきましては、現在の歳入歳出予\n- 2 -\n\n算の総額に１，２５２万２，０００円を追加し、補正後の予算総額を９７億８，６５５万１，\n０００円とするものでございます。\nその主な内容でございますが、２月上旬に執行予定の衆議院議員選挙に関わる経費の追加に\nついて、補正をお願いするものでございます。\n内容につきましては担当課長から説明いたします。\nご審議賜りますようよろしくお願い申し上げます。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-002",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "佐藤英美財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは議案の５ページの歳出からご説明いたします。２款総務\n費、４項選挙費、４目衆議院議員選挙費１，２５２万２，０００円の追加は、２月上旬執行予\n定の衆議院議員選挙に伴う執行経費で主な経費としては、１節報酬では、投票管理者など９８\n人に対する報酬１７６万９，０００円、３節職員手当等では、選挙事務に従事する一般職員の\n時間外手当や管理職職員の手当３９５万９，０００円、１０節需用費では、掲示板など購入費\n用や投票所開設に伴う賄い費などの経費１６４万５，０００円、１１節役務費では、選挙公報\nや入場券などの発送費用や計数機などの点検等手数料など１８５万５，０００円、１２節委託\n料では３区のポスター掲示場の設置及び撤去業務として２２２万２，０００円の追加など補正\nをお願いするものでございます。\n次に歳入ですが４ページでございます。１０款１項１目共に地方交付税３９万６，０００円\nの追加は財源調整です。\n１５款道支出金、３項委託金、１目総務費委託金１，２１２万６，０００円の追加は、衆議\n院議員選挙費委託金でございます。\n以上で説明を終わります。\nご審議のほどよろしくお願い申し上げます。",
+    "text_length": 493,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-003",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "（石原広務君） ３点ほどお聞きいたします。まず投票管理者ということなんですか、\n期日前投票に関わる方々の食事代、これはどういうふうになっているのか確認させていただき\nたい。あとはポスター掲示板に関わって、この冬の時期ですから設置撤去に伴っての今の雪の\n状況、そこへの対応をどういうふうに考えているか。あとは投開票日の高齢者の足の確保どの\nような形で協議されているのであればお知らせいただければと思います。",
+    "text_length": 202,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-004",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "尾野裕也議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず１点目ですけれども投票管理者立会人の食事\nの件ですけれども、これはいつも報酬等に含めて食事代を賄ってもらっているんですけども、\nこちらにつきましては特に変更をする予定はありません。\n次に２番目の質問ありましたポスター掲示場の除雪に関してのことなんですけども、こちら\nは今後発注する設計の中に除雪経費を計上しまして、また全部で１００箇所ということで多い\n- 3 -\n\nんですけども、３区それぞれ分けて発注しまして業者さんと調整するということを考えてござ\nいます。\n次に３番目高齢者の足の確保ということですけれども、いつも大成区においては投票所の統\n合の関係でハイヤーですとかの確保はしておりまして、そのほかにつきましては特にこれから\nちょっと雪の状況はわからないですけども、これからちょっと確認をしたいというふうに思っ\nています。",
+    "text_length": 366,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-005",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "（石原広務君） 食事代は以前から報酬の中に含めていたということでよろしいのか、\nそこを改めてご答弁いただきたいと思います。それと除雪に関して業者さんのほうに、それも\n経費に盛り込んであるということでの説明でしたけど、であればその分、夏場に行われるよう\nな立て看板の設置プラスアルファになっているということで認識してよろしいのか。お答えい\nただきたいと思います。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-006",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "尾野裕也議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "食事代につきましては、議員おっしゃるとおり報\n酬の中に含めて自分で賄ってもらうというふうに考えております。それから除雪経費につきま\nしては、通常の雪のない時期の設計からちょっと除雪経費を加算したもので設計をしておりま\nすので、その分多く見ることになっております。\n以上です。",
+    "text_length": 137,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-007",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "石原 広務",
+    "member_faction": "",
+    "text": "（石原広務君） 心得ていると思うんですけど、このポスターの掲示板設置、撤去、業\n者さんのほうに負担のないような形で対応いただきたいと思います。これは答弁要らないです。",
+    "text_length": 83,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-008",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 一夫",
+    "member_faction": "",
+    "text": "（橋本一夫君） 今の関連なんですけども、ポスターの掲示箇所について、札幌市あた\nりは夏場の６割ぐらいの掲示板にするような報告もされているようですけれども、せたな町で\nはそういうことがないのか、その辺お願いします。",
+    "text_length": 106,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-009",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "尾野裕也議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "設置箇所につきましても現在１００箇所というふ\nうに設置しているんですけども、こちらとしてはそのまま１００箇所ということで業者さんに\nお願いをする予定でございます。",
+    "text_length": 81,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-010",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "橋本 一夫",
+    "member_faction": "",
+    "text": "（橋本一夫君） 冬場の厳冬期１番厳しい時期にあたると思うんです。今までもいろい\nろな意見がありまして、掲示板の箇所を減らしたらいいんじゃないかと。今できるかできない\nかわかりません。そういうことで話されている人もいるし、当然町民の方も何でこんなところ\nに掲示板があるんだという意見もありますので、今回できなければ仕方ないとして、今後減ら\nしていくような形で話し合いをしてもらえればなというふうに思います。\n- 4 -\n\n以上です。",
+    "text_length": 215,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-019"
+      ]
+    }
+  },
+  {
+    "id": "setana-20262001-1-011",
+    "municipality": "setana",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第1回臨時会（1月19日）.pdf",
+    "date": "2026-01-19",
+    "speaker": "尾野裕也議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ポスター掲示場の設置箇所数ということなんです\nけども、こちらは国の法律の基準でうちの町にはめますと約１７０箇所ほど設置しなさいとい\nうふうになってまして、そこから約７０箇所ぐらいを今減らして、条例上で１００箇所という\nふうに決めているんです。こちらにつきましても今議員おっしゃられたとおり見直しというの\nをしばらく行っておりませんので、こちら条例改正、それから選挙管理委員会の委員さんの意\n見等その辺を考慮して今後検討していきたいというふうに考えております。",
+    "text_length": 229,
+    "source": {
+      "minutes_file": "data/setana/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  }
+]

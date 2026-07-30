@@ -1,0 +1,163 @@
+[
+  {
+    "id": "mikasa-20262001-1-001",
+    "municipality": "mikasa",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録 令和8年 第1回臨時会&nbsp; 1月16日",
+    "date": "2026-01-16",
+    "speaker": "市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "、登壇願います。市長。\n（市長西城賢策氏 登壇）",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/mikasa/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  },
+  {
+    "id": "mikasa-20262001-1-002",
+    "municipality": "mikasa",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録 令和8年 第1回臨時会&nbsp; 1月16日",
+    "date": "2026-01-16",
+    "speaker": "西城賢策市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、行政報告を申し上げます。\n報告第１号の人事発令についてでありますが、そこに記載してありますとおり、１月１\n３日付で係長職１名の人事異動の発令を行ったところでございます。\n行政報告につきましては、以上でございます。",
+    "text_length": 111,
+    "source": {
+      "minutes_file": "data/mikasa/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "mikasa-20262001-1-003",
+    "municipality": "mikasa",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録 令和8年 第1回臨時会&nbsp; 1月16日",
+    "date": "2026-01-16",
+    "speaker": "市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "、登壇願います。市長。\n（市長西城賢策氏 登壇）",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/mikasa/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "mikasa-20262001-1-004",
+    "municipality": "mikasa",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録 令和8年 第1回臨時会&nbsp; 1月16日",
+    "date": "2026-01-16",
+    "speaker": "西城賢策市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１号三笠市水道給水条例の一部を改正する条例の制定につ\nいて提案説明申し上げます。\n今回の改正は、物価高騰対応重点支援地方創生臨時交付金を活用した水道料金減額事業\nの実施に伴い、必要な改正を行うものであります。\n改正の内容は、令和８年４月分から９月分までの水道料金の減免について、規定を追加\nするものであります。\n施行期日は、令和８年２月１日であります。\n以上、提案説明といたしますので、御審議くださいますようよろしくお願い申し上げま\nす。",
+    "text_length": 222,
+    "source": {
+      "minutes_file": "data/mikasa/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "mikasa-20262001-1-005",
+    "municipality": "mikasa",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録 令和8年 第1回臨時会&nbsp; 1月16日",
+    "date": "2026-01-16",
+    "speaker": "市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "、登壇願います。市長。\n（市長西城賢策氏 登壇）",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/mikasa/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "mikasa-20262001-1-006",
+    "municipality": "mikasa",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録 令和8年 第1回臨時会&nbsp; 1月16日",
+    "date": "2026-01-16",
+    "speaker": "西城賢策市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第２号令和７年度三笠市一般会計補正予算（第６回）につい\nて提案説明申し上げます。\n今回の補正予算は、既定予算額１４４億９,３６３万５,０００円に１億７,４５０万６,\n０００円を追加し、１４６億６,８１４万１,０００円とするものであります。\nまず、歳出でありますが、物価高騰対応重点支援地方創生臨時交付金事業に係る経費を\n予算措置したものであります。\n一方、歳入については、地方創生臨時交付金のほか、財政調整基金繰入金を計上したも\nのであります。\n以上、提案説明といたしますので、御審議くださいますようよろしくお願い申し上げま\nす。",
+    "text_length": 267,
+    "source": {
+      "minutes_file": "data/mikasa/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "mikasa-20262001-1-007",
+    "municipality": "mikasa",
+    "council_id": 20262001,
+    "council_name": "令和8年第1回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録 令和8年 第1回臨時会&nbsp; 1月16日",
+    "date": "2026-01-16",
+    "speaker": "畠山宰議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "畠山宰",
+    "member_faction": "",
+    "text": "さきの本会議において付託になりました議案に\nつきまして、その審査の経過と結果について御報告いたします。\n当委員会に付託された案件は、議案第１号及び議案第２号の２件であります。\n以下、御報告申し上げますが、全議員が委員となり審査を行っておりますので、審査の\n詳細及び質疑答弁の内容につきましては省略をさせていただき、審査の結果についてのみ\nを御報告させていただきます。\nそれでは、報告いたします。\n議案第１号の条例改正１件、議案第２号の補正予算１件の計２件については、審査の結\n果、原案可決すべきものと決定いたしました。\n以上で、本委員会に付託されました議案の審査の経過と結果についての御報告とさせて\nいただきますので、よろしく御審議くださいますようお願いいたします。",
+    "text_length": 333,
+    "source": {
+      "minutes_file": "data/mikasa/minutes/20262001.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  }
+]

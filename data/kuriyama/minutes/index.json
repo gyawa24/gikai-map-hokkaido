@@ -151,5 +151,23 @@
     "type_label": "全会議 > 本会議 > 臨時会",
     "file": "2026200115.json",
     "schedule_count": 1
+  },
+  {
+    "council_id": 2026100304,
+    "name": "3月定例会議 (2026-03-04)",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "2026100304.json",
+    "schedule_count": 3
+  },
+  {
+    "council_id": 2026200514,
+    "name": "5月臨時会議 (2026-05-14)",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "2026200514.json",
+    "schedule_count": 1
   }
 ]

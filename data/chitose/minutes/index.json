@@ -9,6 +9,24 @@
     "schedule_count": 7
   },
   {
+    "council_id": 580,
+    "name": "令和 ８年 予算特別委員会",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算特別委員会",
+    "file": "580.json",
+    "schedule_count": 6
+  },
+  {
+    "council_id": 581,
+    "name": "令和 ８年 第１回定例会補正予算特別委員会",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 第１回定例会補正予算特別委員会",
+    "file": "581.json",
+    "schedule_count": 1
+  },
+  {
     "council_id": 575,
     "name": "令和 ７年 第４回定例会",
     "year": "2025",

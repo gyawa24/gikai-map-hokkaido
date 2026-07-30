@@ -1,5 +1,14 @@
 [
   {
+    "council_id": 20251121,
+    "name": "令和7年定例会12月会議",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "20251121.json",
+    "schedule_count": 3
+  },
+  {
     "council_id": 20251091,
     "name": "令和7年定例会9月会議",
     "year": "2025",

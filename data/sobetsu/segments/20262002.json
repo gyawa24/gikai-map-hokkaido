@@ -1,0 +1,94 @@
+[
+  {
+    "id": "sobetsu-20262002-1-001",
+    "municipality": "sobetsu",
+    "council_id": 20262002,
+    "council_name": "令和8年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R8_gikai_rinjikai_gijiroku_2.pdf",
+    "date": null,
+    "speaker": "長内伸一君４番毛利爾議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "長内 伸一",
+    "member_faction": "",
+    "text": "を指名いたします。\n◎会期の決定について",
+    "text_length": 20,
+    "source": {
+      "minutes_file": "data/sobetsu/minutes/20262002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "sobetsu-20262002-1-002",
+    "municipality": "sobetsu",
+    "council_id": 20262002,
+    "council_name": "令和8年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R8_gikai_rinjikai_gijiroku_2.pdf",
+    "date": null,
+    "speaker": "厂原收副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和８年第２回臨時会に当たり提出いたします議件は、議\n案第19号の１件であります。その内容についてご説明いたします。\n議案第19号 工事請負契約について。\n令和８年３月 25 日指名競争入札に付した、道の駅そうべつ情報館ｉ機能拡充駐車\n\n場整備工事について、下記のとおり請負契約を締結するため、地方自治法第 96 条第\n１項第５号の規定によって、議会の議決を求める。\n１の契約の目的は、道の駅そうべつ情報館ｉ機能拡充駐車場整備工事。\n２の契約の方法は、指名競争入札。\n３の契約金額は、6,930万円。\n４の契約の相手方につきましては、有珠郡壮瞥町字滝之町283番地、道栄建設株式\n会社代表取締役、小田由三であります。\n本件工事につきましては、道の駅そうべつ情報館ｉの駐車場の機能拡充として駐車\n場の拡幅や既存駐車場の区画線及び出入口部の改修工事等を行うもので、工期は令和\n８年８月28日までとしております。\nなお、指名競争入札に付した業者は全部で５者となりますが、２者が町内業者で３\n者が町外業者となっております。\n以上が今臨時会に提出いたします議案の内容であります。よろしくご審議ください\nますようお願いいたします。",
+    "text_length": 509,
+    "source": {
+      "minutes_file": "data/sobetsu/minutes/20262002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-009"
+      ]
+    }
+  },
+  {
+    "id": "sobetsu-20262002-1-003",
+    "municipality": "sobetsu",
+    "council_id": 20262002,
+    "council_name": "令和8年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R8_gikai_rinjikai_gijiroku_2.pdf",
+    "date": null,
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "毛利 爾",
+    "member_faction": "",
+    "text": "（佐藤 忞君） 質疑といっても１から、契約の目的だとか契約の相手先、こ\nれには私異議ありませんけれども、なぜ４か月も、４月から８月 28 日までの工期と\nしておりますけれども、なぜこのような長期間の契約といいますか、完了が８月28日\nにしたか。そして、私は５月だとかお盆にかけて来客が多い時期ですので、できるだ\nけ早く工事が完成して、そして白線といいますか、駐車帯に今までと違って別な方式\nで幅広く取るというようなことで安全対策も含まれていると思うのですけれども、な\nぜこのように４か月も工期を設定したのか、ちょっと説明を聞いてどうしたのかなと\nいう感じを持ちましたので、そのことについて説明を求めたいと思います。",
+    "text_length": 307,
+    "source": {
+      "minutes_file": "data/sobetsu/minutes/20262002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "sobetsu-20262002-1-004",
+    "municipality": "sobetsu",
+    "council_id": 20262002,
+    "council_name": "令和8年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "R8_gikai_rinjikai_gijiroku_2.pdf",
+    "date": null,
+    "speaker": "山崎清輝建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご答弁申し上げます。\n工期の４か月についてということでございますけれども、工事といいましても工事\n始まる前の着手前の準備と、あと工事自体が終わった後の書類を作成する期間、そう\nいうものも含めまして４か月ということでございます。通常の道路工事のようになり\nますけれども、まず当町のほうで考えております、あとお盆時期にかけてということ\nでございますけれども、できれば５月のゴールデンウイーク、詳しくはこれから業者\nさんと打合せによりますけれども、５月のゴールデンウイーク前までに既存の今ある\n部分の白線の引き直し、今2.5メートルのを2.8に広げるという部分をまずゴールデ\nンウイーク前までに終わらせてしまいまして、その部分はもう開放してゴールデンウ\nイークのお客さんには備えると。そのときにはもう安全な状態で既存の駐車場を使え\n\nる状態にしまして、その後お盆までの間少しお客さん減りますけれども、できればお\n盆前までに残りの部分の駐車場の部分を工事をしようというような形で考えており\nます。\n以上でございます。",
+    "text_length": 454,
+    "source": {
+      "minutes_file": "data/sobetsu/minutes/20262002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  }
+]

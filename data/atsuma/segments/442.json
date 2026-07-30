@@ -1,0 +1,301 @@
+[
+  {
+    "id": "atsuma-442-1-001",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和８年第２回臨時会において行政報告を申し上げます。\n　公用車の不適切な運行管理についてご報告を申し上げます。\n　産業経済課農業グループが所管する担い手研修農場管理業務用の公用車１台について、車検期間が満了した後も、運行・使用していた事案が発生しました。\n　令和８年１月31日に車検期間が満了しておりましたが、公用車管理担当職員が車検整備手続きを失念し、３月17日まで車検切れの公用車を担い手研修農場管理業務に従事する会計年度任用職員１人が運転していました。走行日数は11日間であり、走行距離は184キロメートルでありました。３月17日に職員が車検切れに気づいたため、直ちに当該車両の運転を中止させ、車検整備手続きを開始しました。その後、３月24日に車検整備が完了し、運行を再開しております。\n　なお、本件は３月18日に苫小牧警察署に報告しており、後日警察による当該事案の当事者に対する事情聴取が行われる予定です。\n　本件は、令和６年９月定例会においても同様の事案をご報告申し上げたにも関わらず、再び同種の事案を発生させてしまったものであり、改めて町民の皆さまに心からお詫び申し上げます。\n　前回の事案発生後、コンプライアンスの徹底と再発防止を誓いながらも、同様の事態を繰り返したことは、管理体制の不十分さを示すものに他なりません。\n　今後は、公用車の車検期間を一元的に管理する仕組みの整備や定期的な確認体制の構築など、具体的かつ実効性ある再発防止策を早急に講じ、二度とこのような事態が生じないよう徹底してまいります。職員一人ひとりが職務に対する責任感と使命感を持ち、緊張感をもって業務に取り組むことで、失われた町政への信頼の回復に全力を尽くしてまいります。\n　以上、ご報告申し上げます。",
+    "text_length": 744,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-002",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "（高田芳和君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和６年と今回、２件続いて同じ事案が発生し、誠に残念でございます。はっきり申し上げて、職員の緊張感が足りない、そのような事案でございます。令和６年、１回目の事案が発生して、どのような改善策を講じられたかお聞きします。",
+    "text_length": 108,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-003",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "副町長（西野和博君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大変申し訳ございません。\n　令和６年９月に発生した再発防止策としましては、職員の事務の執行状況の確認を徹底すると、そういうようなことで職員に周知をしておりましたが、年数が経ってしまいまして、その対応が形骸化していたのではないかというふうに感じております。今回につきましては、先ほど行政報告にありましたとおり、具体的な対処方法を実行することで再度このようなことが起きないように、努めてまいりたいと考えております。\n　誠に申し訳ございませんでした。",
+    "text_length": 222,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-004",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "（菅原文子君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "多分こういう皆さんが見えるような、確認できるような、何々の車はいつということを書いていらっしゃると思うのですが、１台、１台の車に皆さんが見えるようなかたちで、車検はいつですよというのは貼るとか、何かされているようなことはありますか。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        23
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-005",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "副町長（西野和博君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "再発防止策として今考えておりますのは、各課所管の公用車について予約システムを作ってありますが、車検整備が終わっていない分に予約しようと思っていても、予約自体ができないようなシステムにしていこうと思っております。また、もう１点、議員ご指摘のとおり、車検の整備の期限のステッカーというのは、あまり大きくないものですから、なかなか気づきにくいということもありますので、ダッシュボード等に大きな車検満了日を記したステッカー等を貼って、物理的に車検が切れているのを分かるようにして、運転ができないようなかたちをとっていこうと考えております。\n　以上でございます。",
+    "text_length": 276,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        25
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-006",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "（伊藤富志夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "こういう事例が、不適切な事例があった後に、こうするという報告は、こういう行政報告の中でも書かれているのですが、私どもから見ると、こうしましたという報告、この場ではこうしますという報告ですけれども、その後の報告の中で、前回のここに対してはこういうふうにしましたという報告をわざわざ案件を作って報告というかたちでなくてもいいですので、やっぱり私どもに対しては町民の代表ですので、この前はこうでしたけれども、こういう今取り組みをしていますとか、経過報告なり、そういう動きがきちんと最後、それで終わらないかも分かりませんけれども、報告がやっぱりほしいというふうに思っています。これはまだ私自身は詰めてはいないのですけれども、いろんな報告、こうします、ああします、資料も提示しますというふうに言われます。しかし、なかなかその結果がこちらに伝わってこないというようなこともあります。ですので、やっぱり例えばこの例でいけば、具体的かつ実効性のある再発防止策というふうに書かれていますから、それが具体的に、こうこうこういうふうに、今ちょっと言われましたけれども、今やっておりますという報告なり、そういうものがやっぱりこちらにきちんとされないと、ああそうですか、この場だけで終わってしまうような結果、そして同じことがまた続いてしまうことになりかねませんので、そういうことを気にしております。\n　以上です。",
+    "text_length": 593,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        27
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-007",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "副町長（西野和博君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基本的には日々の業務の執行状況をしっかり確認するということが大前提でございまして、それをまず実行するということと、先ほど申し上げました具体的な対処方法を実行していこうと考えてございます。これにつきましては、ご指摘のとおりでございますので、全員協議会等で対処方法等についてご説明をさせていただきまして、またご意見をいただきたいと考えております。\n　以上でございます。",
+    "text_length": 182,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        29
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-008",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "町長（宮坂尚市朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日ご提案申し上げる案件は、議案３件、報告１件であります。\n　議案第１号　厚真町介護保険条例の一部改正について。\n　介護保険法施行令の一部を改正する政令の施行に伴い、令和８年度の保険料率の算定に関する所得の額の算定方法の特例等に係る規定を整備するため、厚真町介護保険条例の一部を改正しようとするものであります。\n　議案第２号　奥地林道幌内高丘線災害復旧工事請負契約の締結について。\n　入札の結果に基づき、工事請負契約を締結することについて、地方自治法及び厚真町議会に付すべき契約等に関する条例に基づき、議会の議決をいただこうとするものであります。\n　議案第３号　令和７年度厚真町一般会計補正予算（第17号）について。\n　今回の補正は、歳入歳出予算の総額に歳入歳出それぞれ１億197万3,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ155億9,103万3,000円とするものであります。\n　歳出における補正の主な内容について、農林水産業費では、環境保全林整備事業の追加、土木費では、宅地耐震化推進事業の減額及び各款における財源更正であります。\n　この補正の財源として、国・道支出金、地方債などの特定財源で１億1,275万6,000円と見積り、財政調整基金繰入金の一般財源を1,078万3,000円減額し、収支のバランスをとったところであります。\n　報告第１号　専決処分の報告について。\n　令和７年10月20日第６回臨時会で議決をいただいた浜厚真地区津波避難施設建設工事請負契約について、工事施工中に設計変更が生じたため、地方自治法の規定に基づき専決処分しましたので、同法の規定により議会に報告するものであります。\n　以上が、本日ご提案申し上げております議案の提案理由であります。\n　よろしくご審議の上、ご決定賜りますようお願い申し上げます。\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
+    "text_length": 814,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        33
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-009",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "住民課長（藤岡隆志君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-010",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        43
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-011",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書により説明）",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-012",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "産業経済課林業・森林再生推進担当参事（山岡克年君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（資料により説明）",
+    "text_length": 9,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "atsuma-442-1-013",
+    "municipality": "atsuma",
+    "council_id": 442,
+    "council_name": "令和 ８年  ３月 臨時会",
+    "schedule_id": 1,
+    "schedule_name": "03月30日－01号",
+    "date": "2026-03-30",
+    "speaker": "総務課財政担当参事（中田倫子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "（議案書及び資料により説明）",
+    "text_length": 14,
+    "source": {
+      "minutes_file": "data/atsuma/minutes/442.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        59
+      ]
+    }
+  }
+]

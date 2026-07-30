@@ -1,0 +1,48 @@
+[
+  {
+    "id": "chippubetsu-20262002-1-001",
+    "municipality": "chippubetsu",
+    "council_id": 20262002,
+    "council_name": "令和8年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "4月9日",
+    "date": "2026-04-09",
+    "speaker": "宮本事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "諸般の報告をいたします。今期臨時会に町長から付議されました事件は、\n議案第 27 号の１件でございます。\n以上でございます。\n1\n\n（日程第４ 行政報告）",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20262002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "chippubetsu-20262002-1-002",
+    "municipality": "chippubetsu",
+    "council_id": 20262002,
+    "council_name": "令和8年第2回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "4月9日",
+    "date": "2026-04-09",
+    "speaker": "澁谷町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本日、第２回町議会臨時会を招集いたしましたところ、水稲の播種作\n業を目前に控えまして、さらに年度始めで何かとお忙しい中、ご出席い\nただきまして、誠に有難うございます。\n３月 10 日の第１回町議会定例会以後の行政執行の主要な事項につい\nて申し上げます\n工事の入札結果について申し上げます。\n３月 10 日に執行いたしました、全国瞬時警報システム受信設備改修工\n事について申し上げますが、工事の概要につきましては、現在、庁舎に\n設置してありますＪ－ＡＬＥＲＴ受信設備の老朽化に加えまして、シス\nテムの運用に係るソフトウェアが令和８年度末でサポート期限を迎える\nことから機器等を更新し、防災環境の向上を図るものであります。\n契約者は、橋本電気株式会社、契約額 8,756 千円、工期は令和８年３\n月 11 日から令和８年 12 月 30 日までとしております。\nなお、本事業につきましては、Ｊ－ＡＬＥＲＴ受信設備と町防災行政\n無線との連携が不可欠な工事でありまして、確実に履行できる事業者が、\n両設備の設置及び保守業務を行っている橋本電気株式会社だけでありま\nすことから、１社随意契約としております。\nこの他、１件の工事を発注しておりますが、概要につきましてはお手\n元に資料を配付しておりますので、説明を省略させていただきます。\n以上申し上げまして、行政報告とさせていただきます。",
+    "text_length": 588,
+    "source": {
+      "minutes_file": "data/chippubetsu/minutes/20262002.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007"
+      ]
+    }
+  }
+]

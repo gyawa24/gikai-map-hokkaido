@@ -1,0 +1,2141 @@
+[
+  {
+    "id": "hidaka-250-1-001",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。議会事務局長の坪島です。\n　本日は、改選後の初議会です。改めましてどうぞよろしくお願いいたします。\n　開会に先立ちまして招集者の広中町長からご挨拶があります。\n　広中町長、よろしくお願いいたします。",
+    "text_length": 109,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-002",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "町長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。このたびの選挙でご当選誠におめでとうございます。私もこのたび町政を担う重責をお預かりし、その使命の重さに身の引き締まる思いでございますが、ここに皆様と共に町の運営に関わることができることは大変うれしく思っております。今後ともどうぞよろしくお願い申し上げます。\n　さて、初議会に当たりまして、私の町政運営に関する所信を申し上げて、皆様方のご理解をいただきたいと考えております。私は、今回の選挙で心豊かな町にというスローガンを掲げました。これは、町に対し活気がない、将来が見えない、お金がないと閉塞感漂うこの町で、せめて心は豊かにという思いを感じたからであります。まずは率先して推し進めていくためには私たち行政側の職員のみならず、議会の皆様にも活力があることが非常に重要であり、様々な行政課題について真摯に向き合い、議論を重ねていくことが大切だと考えております。しかし、行政と議会の考えが常に一致するとは限りません。時には意見が相反することもあるかもしれません。しかし、そうした中でも町を少しでもよくしたいというお互いの共通の目標があれば必ず最後はよい答えが出るものだと信じております。\n　よく議会と行政は車の両輪であると言われます。先ほども申し上げましたが、お互いにその役割を尊重しながら建設的な議論を重ね、本町の発展と誰もが安心して暮らせるまちづくりの実現に向け力を尽くしてまいる所存でございます。初登庁の訓示のときに職員にはお客様満足度を上げること、その一つに笑顔で迎えて笑顔で送り出すことを実践し、それを繰り返すことで成功体験を重ね、自己肯定感を高めるサイクルをつくってほしい。そのサイクルが職員の心が豊かになり、そして行政サービスの向上にもつなげていきたいと考えております。\n　依然として町財政は厳しい状況であると認識しております。直近での公債費の償還、さらに物価高や燃料の高騰の厳しさが予想される中でも立ち止まらずに町政を推し進めていかなければなりません。限られた予算の中で効率よく事業精査していく作業も待っています。私も町長になる前、町内を回り、町民の方々から様々な課題をいただいております。その一つ一つの解決に向け飛躍していく準備をし、さらによりよいまちづくりを進めていくためには行政だけではなく、様々な人や組織、これらの知恵と工夫を結集すること、そしてそこから生まれる大きなエネルギー、これを利用していくことが大事であると考えております。これが私の声かけだけで終わることのないよう具体的な仕組み、その構築についてスピード感を持って取り組んでまいります。ぜひ議会の皆さんにも心豊かなまちづくりに大きく関与していただくことを切にお願い申し上げる次第であります。\n　これから４年間いろいろな場面でお世話になると思います。真摯な活動、率直で建設的な議論など常に念頭に置きながら、皆様と共に進んでまいりたいと考えております。どうぞよろしくお願い申し上げます。\n　以上を申し上げ、初議会に当たっての挨拶とさせていただきます。",
+    "text_length": 1273,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        4
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-003",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ここで議会担当職員をご紹介いたします。\n　議会事務局、花野主幹です。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        6
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-004",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局主幹（花野臣盛君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "花野です。よろしくお願いします。",
+    "text_length": 16,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        7
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-005",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく山田上席主事です。",
+    "text_length": 12,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        8
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-006",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局上席主事（山田美智瑠君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "山田です。よろしくお願いします。",
+    "text_length": 16,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        9
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-007",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ここから併任発令されている総務課の職員でございます。\n　総務課の渋谷主幹です。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        10
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-008",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "総務課主幹（渋谷裕幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "渋谷です。よろしくお願いします。",
+    "text_length": 16,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        11
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-009",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく倉見主幹です。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        12
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-010",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "総務課主幹（倉見竜太君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "倉見です。よろしくお願いします。",
+    "text_length": 16,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        13
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-011",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく姉川主査です。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        14
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-012",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "総務課主査（姉川結衣君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "姉川です。よろしくお願いします。",
+    "text_length": 16,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        15
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-013",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく岡崎上席主事です。",
+    "text_length": 12,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        16
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-014",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "総務課上席主事（岡崎知久君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "岡崎です。よろしくお願いします。",
+    "text_length": 16,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        17
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-015",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく堂本主事です。",
+    "text_length": 10,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        18
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-016",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "総務課主事（堂本陸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "堂本です。よろしくお願いします。",
+    "text_length": 16,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        19
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-017",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同じく池ケ谷主事です。",
+    "text_length": 11,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        20
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-018",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "総務課主事（池ケ谷侑星君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "池ケ谷です。よろしくお願いします。",
+    "text_length": 17,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        21
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-019",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "以上、議会担当職員です。どうぞよろしくお願いいたします。",
+    "text_length": 28,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        22
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-020",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本議会は、一般選挙後初めての議会です。議長が選挙されるまでの間、地方自治法第107条の規定により、出席議員の中で年長の議員が臨時に議長の職務を行うこととなってございます。本日出席議員の年長議員は、神保一哉議員です。したがいまして、神保一哉議員に臨時の議長の職務を行っていただきます。\n　神保一哉議員、議長席にお着きください。よろしくお願いいたします。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-021",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "２番（真壁悦夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "真壁悦夫",
+    "member_faction": "",
+    "text": "真壁悦夫です。よろしくお願いします。",
+    "text_length": 18,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        28
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-022",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "３番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "互野利夫",
+    "member_faction": "",
+    "text": "私は、日高地区出身の74歳の互野利夫です。平成26年に１期目を無投票で当選させていただき、今回で４期目となります。日本の国会は議院内閣制であり、道や市町村議会は首長と議会の二元代表制であります。つまり与党も野党も存在しないと思います。市町村の議会は、行政をチェックする役割が本来の仕事と思っております。私は、その本旨にのっとり活動してきております。今後４年間も住民生活向上のため従来同様の活動をしていきたいと思いますので、何とぞよろしくお願いいたします。",
+    "text_length": 227,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        30
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-023",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "４番（高橋克徳君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高橋克徳",
+    "member_faction": "",
+    "text": "高橋克徳でございます。４期目になりました。今後４年間よろしくお願いいたします。",
+    "text_length": 39,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-024",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "５番（白石典昭君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "白石典昭",
+    "member_faction": "",
+    "text": "白石典昭です。３期目になります。今後とも本当に心から日高町のことを考え、日高の町民のことを考えながら進んでいきたいと思いますので、皆様と共にこの日高町をよくするために歩んでいきたいと思っております。４年間よろしくお願いいたします。",
+    "text_length": 115,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-025",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "６番（渡部力君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "渡部力",
+    "member_faction": "",
+    "text": "２期目の渡部力といいます。この４年間またよろしくお願いいたします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        36
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-026",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "７番（堂前保志君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "堂前保志",
+    "member_faction": "",
+    "text": "２期目の堂前保志です。４年間よろしくお願いします。",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-027",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "８番（蔦守君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "蔦守",
+    "member_faction": "",
+    "text": "２期目の蔦守でございます。これからの４年間よろしくお願いをいたします。",
+    "text_length": 35,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        40
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-028",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "９番（梅木聡君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "梅木聡",
+    "member_faction": "",
+    "text": "３期目の梅木聡でございます。４年間よろしくどうぞお願いいたします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        42
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-029",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１０番（山村弘美君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "山村弘美でございます。よろしくお願いいたします。私は、長いこと人権尊重ということを大切にしながら仕事をしてまいりましたけれども、平たく言うと人が人を大事にするとか、あるいは仲よくするという、子供じみた発言かもしれませんけれども、そのように行政の方、まだ私は新人ですので、分からないことたくさんあります。もしかしたらしつこいなと思うようなこともあるかもしれませんけれども、どうぞいろんなことを教えていただいて、そして判断材料にしていきたいと思いますので、どうぞよろしくお願いいたします。",
+    "text_length": 242,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-030",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１１番（上野信仁君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "上野信仁です。監査委員に引き続きどうぞよろしくお願いします。町民のために頑張ってまいりたいと考えておりますので、どうぞよろしくお願いします。",
+    "text_length": 70,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        46
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-031",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１２番（井上義生君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "井上義生",
+    "member_faction": "",
+    "text": "私が井上でございます。よろしくお願いいたします。",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        48
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-032",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１３番（日下正昭君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "日下正昭です。今年から町議のお仕事をさせていただきます。分からないことたくさんあります。諸先輩の皆様にいろいろ教えてもらいながら、また皆様にもいろいろご教示いただきながら全うしていきたいと思いますので、よろしくお願いいたします。",
+    "text_length": 114,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        50
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-033",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１４番（近喰俊則君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "近喰俊則です。４年間よろしくお願いします。",
+    "text_length": 21,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        52
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-034",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "副町長（深根英範君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。副町長と兼ねて日高総合支所長の事務取扱をしております深根でございます。今後ともどうぞよろしくお願いいたします。",
+    "text_length": 65,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        56
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-035",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "代表監査委員（谷井基子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "代表監査委員の谷井でございます。よろしくお願いいたします。",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        58
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-036",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "総務課長（森谷朋香君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。総務課長の森谷と申します。よろしくお願いいたします。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        60
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-037",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "企画財政課長（宅石誠君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。企画財政課長の宅石誠です。よろしくお願いいたします。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        61
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-038",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "デジタル推進室長（島尻守君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。デジタル推進室長兼ねて市街地活性化対策室長の島尻と申します。よろしくお願いいたします。",
+    "text_length": 53,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        62
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-039",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "会計管理者（種田智子君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。会計管理者兼会計課長の種田と申します。よろしくお願いいたします。",
+    "text_length": 42,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        63
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-040",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "産業課長（奈良淳君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "産業課長の奈良と申します。よろしくお願いします。",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        64
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-041",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "地域経済課長（小野寺孝君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "日高総合支所地域経済課長の小野寺と申します。よろしくお願いします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        65
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-042",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "商工観光課長（佐藤貴彦君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "商工観光課長の佐藤貴彦と申します。どうぞよろしくお願いいたします。",
+    "text_length": 33,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        66
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-043",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "農業委員会事務局長（田中幸樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。農業委員会事務局長の田中です。よろしくお願いします。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        67
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-044",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "建設課長（江刺家優君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "建設課長の江刺家です。どうぞよろしくお願いします。",
+    "text_length": 25,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        68
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-045",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "技術審議室長（藤本寛朗君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "技術審議室長兼ねて用地調整室長の藤本と申します。よろしくお願いいたします。",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        69
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-046",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "管財建築課長（只野利一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "管財建築課長の只野と申します。よろしくお願いします。",
+    "text_length": 26,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        70
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-047",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "教育委員会教育長（武田啓嗣君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。教育委員会教育長の武田啓嗣と申します。よろしくお願いいたします。",
+    "text_length": 42,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-048",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "教育委員会管理課長（湯村篤司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "教育委員会管理課長兼ねまして学校配置マネジメント推進室長の湯村と申します。よろしくお願いいたします。",
+    "text_length": 50,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-049",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "教育委員会生涯学習課長（佐々木勇詞君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。生涯学習課長兼日高山脈博物館長兼日高図書館郷土資料館長の佐々木と申します。どうぞよろしくお願いいたします。",
+    "text_length": 63,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-050",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "教育委員会社会教育課長（川上寛明君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。教育委員会社会教育課長兼門別公民館長の川上です。よろしくお願いします。",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        75
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-051",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "高齢者福祉課長（本間一樹君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "高齢者福祉課長の本間です。よろしくお願いします。",
+    "text_length": 24,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        76
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-052",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "子育て健康課長（森永博幸君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "子育て健康課長兼保育所管理者の森永といいます。よろしくお願いします。",
+    "text_length": 34,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        77
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-053",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "上下水道課長（矢野雅章君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。上下水道課長の矢野といいます。どうぞよろしくお願いいたします。",
+    "text_length": 41,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        78
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-054",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "住民生活課長（小野俊勝君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "住民生活課長の小野です。よろしくお願いします。",
+    "text_length": 23,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        79
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-055",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "税務課長（成田治君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。税務課長の成田です。よろしくお願いします。",
+    "text_length": 31,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        80
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-056",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "地域住民課長（田中正俊君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "日高総合支所地域住民課課長、田中でございます。よろしくお願いいたします。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        81
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-057",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "門別国民健康保険病院事務長（山口賢一君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "門別国保病院事務長兼ねまして病院経営改革室長の山口と申します。よろしくお願いいたします。",
+    "text_length": 44,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        82
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-058",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "日高国民健康保険診療所事務長（松原譲司君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。日高国保診療所事務長の松原と申します。よろしくお願いいたします。",
+    "text_length": 42,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        83
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-059",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議席番号とお名前をお呼びいたします。\n　２番、真壁悦夫議員、３番、互野利夫議員、４番、高橋克徳議員、５番、白石典昭議員、６番、渡部力議員、７番、堂前保志議員、８番、蔦守議員、９番、梅木聡議員、10番、山村弘美議員、11番、上野信仁議員、12番、井上義生議員、13番、日下正昭議員、14番、近喰俊則議員。神保一哉議員は議長席での投票をよろしくお願いいたします。",
+    "text_length": 184,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        100
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-060",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議席番号とお名前をお呼びいたします。\n　２番、真壁悦夫議員、３番、互野利夫議員、４番、高橋克徳議員、５番、白石典昭議員、６番、渡部力議員、７番、堂前保志議員、８番、蔦守議員、９番、梅木聡議員、10番、山村弘美議員、11番、上野信仁議員、12番、井上義生議員、13番、日下正昭議員、14番、近喰俊則議員。議長は議長席での投票をお願いいたします。",
+    "text_length": 176,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        114
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-061",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "副議長（高橋克徳君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "高橋克徳",
+    "member_faction": "",
+    "text": "ただいま副議長に当選をさせていただきました高橋でございます。議会が変われば町が変わるという識者の言葉もございます。今後４年間、神保議長と共に、14名の議員の皆さんと共に議会のために頑張ってまいりますので、よろしくお願いいたします。ありがとうございました。",
+    "text_length": 127,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        121
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-062",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "これから議席を定めるくじを引いていただきます。１期目の議員より順番に行いますので、名前を呼ばれた議員は演壇にお越し願います。\n　山村弘美議員、上野信仁議員、日下正昭議員、近喰俊則議員、演壇の前までよろしくお願いいたします。次に、渡部力議員、堂前保志議員、蔦守議員、井上義生議員、よろしくお願いいたします。次に、白石典昭議員、梅木聡議員、よろしくお願いします。次に、真壁悦夫議員、互野利夫議員、よろしくお願いします。\n　　　　　　　　　　　　　　　　　　　（くじ引）",
+    "text_length": 232,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        124
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-063",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ご報告いたします。\n　議席番号１番、高橋克徳議員、副議長でございます。２番、山村弘美議員、３番、近喰俊則議員、４番、日下正昭議員、５番、上野信仁議員、６番、井上義生議員、７番、蔦守議員、８番、堂前保志議員、９番、渡部力議員、10番、白石典昭議員、11番、梅木聡議員、12番、互野利夫議員、13番、真壁悦夫議員、14番、神保一哉議員、議長となってございます。\n　報告は以上でございます。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        126
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-064",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、選考委員会の結果をご報告いたします。\n　最初に、総務・民生常任委員会でございます。真壁議員、高橋議員、梅木議員、堂前議員、蔦議員、山村議員、上野議員、あと神保議長でございます。\n　続きまして、産業・建設常任委員会でございます。互野議員、白石議員、渡部議員、井上議員、日下議員、近喰議員でございます。\n　次に、広報広聴常任委員会でございます。真壁議員、梅木議員、井上議員、山村議員、上野議員、日下議員、近喰議員です。\n　以上でございます。",
+    "text_length": 223,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        135
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-065",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "各常任委員会の正副委員長の互選の結果をご報告申し上げます。\n　総務・民生常任委員会でございます。委員長、堂前保志議員、副委員長、上野信仁議員でございます。\n　産業・建設常任委員会、委員長、渡部力議員、副委員長、近喰俊則議員。\n　広報広聴常任委員会、委員長、真壁悦夫議員、副委員長、山村弘美議員。\n　以上でございます。",
+    "text_length": 158,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        148
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-066",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議会運営委員会の選考結果をご報告申し上げます。\n　真壁議員、互野議員、梅木議員、渡部議員、堂前議員、蔦議員、井上議員。\n　以上でございます。",
+    "text_length": 70,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        157
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-067",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議会運営委員会の正副委員長の互選の結果をご報告申し上げます。\n　議会運営委員長には梅木聡議員、副委員長には井上義生議員。\n　以上でございます。",
+    "text_length": 71,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        163
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-068",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議会改革調査特別委員会委員の選考結果をご報告申し上げます。\n　議会改革調査特別委員会委員には、真壁議員、高橋議員、梅木議員、蔦議員、日下議員、近喰議員。\n　以上でございます。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        180
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-069",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議会改革調査特別委員会の正副委員長の互選の結果をご報告申し上げます。\n　議会改革調査特別委員会委員長には蔦議員、副委員長には日下議員。\n　以上でございます。",
+    "text_length": 78,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        186
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-070",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "町長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "同意第１号　監査委員の選任について、提案のご説明を申し上げます。\n　監査委員の選任につきましては、地方自治法第196条第１項の規定によりまして、議会議員の中から１名の監査委員を選任することとされております。議案書の１ページにございますとおり、監査委員に互野利夫氏を選任いたしたく存じますので、ご同意のお願いを申し上げ、提案の説明とさせていただきます。よろしくお願いいたします。",
+    "text_length": 188,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        207
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-071",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１２番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "互野利夫",
+    "member_faction": "",
+    "text": "同意第２号なのですが、副町長の選任について、内容についてどうのこうのということは私は考えておりませんが、いずれにしても私たち議会が先ほど執行側から聞いただけということなものですから、この案件についてやはり質疑、あるいはいろんな思惑が議員の中であると思われますので、時間をいただきたいということで、この同意第２号については後日、提案をされれば可決か否決しかありませんので、それはできるだけ執行側も我々も避けたいということでございますので、この案件についてはいましばらく時間をいただいて、議長の採決で議会の延長を諮っていただきたいと思うのですが、いかがなものでしょうか。",
+    "text_length": 283,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        215
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-072",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "町長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "別冊の議案の３ページ、４ページを御覧ください。同意第２号　副町長の選任について、議会の同意を求める案件でございます。\n　副町長に新たに森谷朋香氏59歳を選任いたしたく、同意をいただこうとするものであります。\n　森谷朋香氏は、昭和60年３月に苫小牧西高等学校を卒業し、平成10年４月から旧門別町役場に奉職しております。平成29年４月に管理職となり、平成31年４月に経済観光課長、令和３年４月に商工観光課長、令和７年４月から現在まで総務課長として豊富な行政知識と責任感を有し、その職務を遂行しております。また、現職からも職員全体の統率、調整力などは副町長としても引き続き私を補佐し、その職責を果たしていただけるもの、人物であると考えております。\n　なお、任期は４月20日からとして提案させていただきたいと思いますので、どうか満場のご同意をいただきたくお願い申し上げて提案説明とさせていただきます。どうかよろしくお願いいたします。",
+    "text_length": 412,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        220
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-073",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１０番（白石典昭君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "白石典昭",
+    "member_faction": "",
+    "text": "森谷氏ということで話は出ましたけれども、今学歴とかいろいろ問題になっている社会情勢ありますので、60年の３月ということで卒業って書いてありますけれども、職歴がこの中に、10年までの間どういうことを、これプライバシーの問題なのか、これ答える必要がないと言われればそれまでなのですけれども、もし学歴等々あるのであればこの期間の６年間ぐらいの空きの時間に何をなされていたのか、また学業で励んでいたのか、もしお答え願える範囲であればお答え願いたいと思います。よろしくお願いいたします。",
+    "text_length": 238,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        222
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-074",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "町長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "白石議員の質問にお答えいたします。\n　苫小牧西高等学校を卒業した後は日高西部消防組合のほうで正職として勤務されて、平成10年４月から旧門別町役場という経歴でございます。\n　以上です。",
+    "text_length": 91,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        224
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-075",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１０番（白石典昭君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "白石典昭",
+    "member_faction": "",
+    "text": "であるのであれば、この職歴の中にきちっとそういったものも書いていただきたかったなと思いますので、今後あるかないか分からないけれども、そういうことできちっと明確に書いていただきたいと思いますが、町長、どうですか。",
+    "text_length": 105,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        226
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-076",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "町長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "白石議員の質問にお答えします。\n　そういう要望があるということであれば記載してまいりたいと思います。\n　以上です。",
+    "text_length": 57,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        228
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-077",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１２番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "互野利夫",
+    "member_faction": "",
+    "text": "ただいま白石議員がおっしゃった部分については今すぐ提出をしてください。ここの間に何があるか分からないということで、学歴詐称という問題である市長が辞めております。そういう意味ではきちんとすべきだというふうに提案側は思いますので、暫時休憩をもらいながら、この穴埋めをしていただきたいと思うのですが、いかがですか。",
+    "text_length": 154,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        230
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-078",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "町長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員の質問にお答えいたします。\n　森谷朋香氏の履歴でございます。最終学歴は、昭和60年３月、苫小牧西高等学校を卒業。職歴につきましては、昭和60年４月１日、日高西部消防組合に奉職、平成10年３月31日に日高西部消防組合を退職、平成10年４月１日、門別町役場奉職、平成18年３月１日、日高町と門別町の合併により日高町となる。平成31年４月１日、経済観光課長、令和３年４月１日、商工観光課長、令和７年４月１日より現在総務課長でございます。\n　以上です。",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        233
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-079",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１２番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "互野利夫",
+    "member_faction": "",
+    "text": "昭和60年から平成10年までの間埋めていただいた答弁をいただきましたが、日高西部消防組合における身分というのはどのように捉えておりますか。その辺を分かればご教示をいただきたいと思いますし、やはり人事案件の提案に当たっては事細かく記載すべきだというふうに思いますし、我々町民から負託を受けて、やはり副町長というのは、先ほども言いましたけれども、町長よりも、よりもと言うのはおかしいですけれども、地方自治法が変わりまして政治的な姿勢も持てるようになったのです。助役時代は違ったのです。あくまでも助役であったのです。副町長ではなかったのです。そういう意味ではきちっとした履歴の登載は必要だと思いますし、住民に分かる説明をすべきだと思うのですが、その辺の考え方はいかがですか。２点です。",
+    "text_length": 339,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        235
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-080",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "町長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員の１点目の質問ですが、日高西部消防組合で働いているときは一般事務でございます。\n　２つ目の質問が何か助役と副町長が違うから、副町長のほうがより何だかということではあるのですけれども、職歴を別に詐称したわけではありませんので、たまたまちょっと抜けていたのかな、別に載せる必要があったのかどうかというところもあるのですけれども、今の質問のとおり、その前の白石議員の質問のとおり、分からないのであればお示しするということは当然あってしかるべきだと思いますし、分かりやすいようにお示しするということも必要だと考えます。助役だから、副町長だからというのはちょっとよく理解はできないですけれども、分からないことに関してはちゃんとお示しして説明する義務はこちらにあると考えますので、説明できる範疇でこれからも親切丁寧に説明していきたいと考えております。\n　以上です。",
+    "text_length": 380,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        237
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-081",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１２番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "互野利夫",
+    "member_faction": "",
+    "text": "２点ほどあるのですけれども、討論できないわけですから、地方自治法の改正で助役の体制と副町長の体制が変わったのです。そこを執行側でどのように捉えていますかということをお伺いしているのであって、助役だから、副町長だからということではないのです。地方自治法で位置づけが変わったということなのです。そういうことをご存じないのですかという意味も含めて質問しているのであって、ですからなおさら副町長の人事については事細かに、住民に分かるような説明を我々もしなければならないのです。可決、否決するに当たってもです。そういう意味できちっとした考え方をお持ちいただきたいのと、あと２点目はなぜ副町長の人事の説明が当日の全員協議会になったのか、何か理由があったのかどうか、町長の気持ちの中であるとすればお教えいただきたいのです。今日出してきて今日可決しろ、否決しろということでは私たちも困るのです。日高町の第２番目の執行者になるわけですから。そういう意味ではきちっとした対応を考えていただくべきだったなというふうに私は思いますが、その２点についてお聞かせください。",
+    "text_length": 472,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        239
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-082",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "町長（広中一好君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "互野議員の質問にお答えします。\n　私が今町長になろうとしたときにはもう副町長体制なので、副町長にふさわしい人材だと感じております。感じているというか、副町長にふさわしい人物だと思って同意を出しているわけで、助役だったからとか助役時代から変わったからではなくて、今の副町長の体制にふさわしい人物だということです。\n　２つ目のなぜ今なのかということは、私の気持ちを知りたいようでありますが、ちょっとそこはコメントというか、答弁は差し控えます。\n　以上です。",
+    "text_length": 226,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        241
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-083",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "議会事務局長（坪島一成君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "それでは、議席番号とお名前をお呼びいたします。\n　１番、高橋議員、２番、山村議員、３番、近喰議員、４番、日下議員、５番、上野議員、６番、井上議員、７番、蔦議員、８番、堂前議員、９番、渡部議員、10番、白石議員、11番、梅木議員、12番、互野議員、13番、真壁議員。",
+    "text_length": 132,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        249
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-084",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "総務課長（森谷朋香君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま町議会の皆様から副町長選任のご同意を賜りました森谷でございます。身に余る光栄であるとともに、その職責の重さに身の引き締まる思いでございます。まず、私を信頼し、選任議案を提出されました広中町長、そして慎重なるご審議の上、多大なるご賛同をもってご同意をいただきました議員の皆様に心より厚くお礼を申し上げます。\n　また、このたび任期満了をもってご勇退されます深根副町長におかれましては、２期８年にわたり町政の発展に多大なるご尽力を尽くされましたそのご功績に対し深く敬意を表します。私ごとで恐縮ではございますが、かつて私は深根副町長のもとで部下として直接ご指導を仰いでいた時期がございます。当時の厳しくも温かいご指導、そして常に町民の皆様の目線に立って職務に邁進されるお姿は、私の公務員としての原点となっております。これまでの感謝の意を込め、これからは副町長という立場で教わった精神を継承するとともに、広中町長が掲げる心豊かなまちづくりの実現に向け全力を尽くしてまいりますが、もとより私は微力でございますので、これまでと同様、あるいはこれまで以上に管理職の皆様とは密な連携を、そして職員の皆様とは率直な対話を重ねてまいりたいと考えております。\n　これより議員の皆様から今回のご同意の中の意見、様々な意見を真摯に受け止め、またご期待くださったことを裏切ることないよう誠実に職務に当たってまいりますので、これまでと変わらぬご指導とご鞭撻を心よりお願い申し上げ、就任の挨拶とさせていただきます。本日は誠にありがとうございます。そして、これからよろしくお願いいたします。",
+    "text_length": 681,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        254
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-085",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "企画財政課長（宅石誠君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案書の１ページを御覧願います。報告第１号　専決処分の報告につきましてご説明申し上げます。\n　地方自治法第180条第１項の規定により、別紙のとおり専決処分いたしましたので、同条第２項の規定によりこれを報告するものであります。\n　２ページをお開き願います。専決処分書であります。このたびの補正につきましては、年度末における地方譲与税、ふるさと応援寄附金などの歳入の確定、地方債の増減などが主な内容であり、令和８年３月31日付で令和７年度日高町一般会計補正予算（第17号）を専決処分させていただいたものであります。\n　３ページを御覧ください。令和７年度日高町一般会計補正予算（第17号）につきましてご説明申し上げます。\n　第１条は、歳入歳出予算の補正で、歳入歳出予算の総額に歳入歳出それぞれ2,141万2,000円を追加し、歳入歳出予算の総額を歳入歳出それぞれ129億2,649万円といたしたものであります。\n　第２条、地方債の変更につきましては、第２表、地方債補正によりご説明いたします。\n　７ページをお開き願います。第２表、地方債補正であります。地方債の補正につきましては、借入予定額の確定によるものでございます。道路整備事業を30万円増額し、8,650万円に、公営住宅整備事業を1,650万円減額し、１億6,770万円に、生活館照明器具ＬＥＤ化事業を20万円減額し、200万円として、地方債の合計を13億8,190万円といたしたものであります。\n　10ページをお開き願います。歳入です。２款地方譲与税、１項地方揮発油譲与税、１目地方揮発油譲与税につきましては277万5,000円の減。\n　２項自動車重量譲与税、１目自動車重量譲与税につきましては463万8,000円の減。\n　３項森林環境譲与税、１目森林環境譲与税につきましては135万8,000円の増。\n　３款利子割交付金、１項利子割交付金、１目利子割交付金につきましては249万8,000円の増。\n　11ページを御覧ください。４款配当割交付金、１項配当割交付金、１目配当割交付金につきましては232万8,000円の増。\n　５款株式等譲渡所得割交付金、１項株式等譲渡所得割交付金、１目株式等譲渡所得割交付金につきましては955万円の増。\n　６款法人事業税交付金、１項法人事業税交付金、１目法人事業税交付金につきましては650万4,000円の増。\n　８款環境性能割交付金、１項環境性能割交付金、１目環境性能割交付金につきましては218万5,000円の増。\n　12ページをお開き願います。15款国庫支出金、２項国庫補助金、２目民生費国庫補助金につきましては、アイヌ政策推進交付金53万円の減。\n　17款財産収入、１項財産運用収入、２目利子及び配当金につきましては、基金積立金利子17万6,000円の増。\n　18款寄附金、１項寄附金、１目ふるさと応援寄附金につきましては262万7,000円の増。\n　19款繰入金、１項基金繰入金、１目財政調整基金繰入金につきましては2,610万6,000円の増、財源の調整によるものであります。\n　２目ふるさと日高応援基金繰入金につきましては、それぞれ歳出の決算見込みにより700万円の減でございます。\n　13ページを御覧ください。21款諸収入、２項町預金利子、１目町預金利子につきましては、利子の確定により57万7,000円の減。\n　22款町債、１項町債につきましては、地方債補正でご説明を申し上げましたので、説明は省略をさせていただきます。\n　14ページをお開きください。次に、歳出です。２款総務費、１項総務管理費、３目企画振興費につきましては、ふるさと応援寄附金に関する経費の決算見込みにより439万5,000円の減。\n　５目財政管理費につきましては2,646万9,000円の増、森林環境譲与税の基金積立てほか寄附金及び利子積立て等による基金積立金でございます。\n　３款民生費、１項社会福祉費、２目社会福祉施設費につきましては、生活館照明器具ＬＥＤ化工事66万2,000円の減。\n　７目生活支援ハウス費につきましては、ふるさと応援基金繰入金の減に伴う財源の補正であります。\n　15ページを御覧ください。８款土木費、２項道路橋梁費、２目道路新設改良費につきましては、地方債の増に伴う財源の補正でございます。\n　６項住宅費、２目住宅建設費につきましては、地方債の減に伴う財源の補正でございます。\n　以上が本専決処分の内容でございます。ご承認くださいますようよろしくお願い申し上げます。",
+    "text_length": 1883,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        257
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-086",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１２番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "互野利夫",
+    "member_faction": "",
+    "text": "今回の補正、時期的なものということで質問させていただきたいのですが、３月の２日提案の補正予算もありました。それから、３月30日に提案のあった補正予算もありました。今回３月31日付で専決処分ということなのですが、年度末迫っていろんな事務的な作業もあるかと思うのですが、１日違いでなぜこんな補正予算になるのか具体的な例があれば教えていただきたいと思いますし、どうも私見る限り不可解な補正予算だなというふうに思っておりますが、その辺の具体的な答弁を２点目としてお聞かせをいただきたいと思います。例えば利子及び配当金が３月の２日に367万9,000円補正で上げているのです。利率も決まっているはずなのですが、なぜここに17万6,000円の補正が上がってくるのか。12ページです。それから、ふるさと寄附金が３月28日に補正を行っておりますが、今回262万7,000円の増額ということなのですが、この辺の意味が分かりませんし、あるいは同じ12ページのふるさと日高応援基金繰入金の関係ですが、700万の減額になっております。既に事業が３月の30日の段階では固まっているかと思うのですが、なぜこういうような補正になるのかどうも解せません。そういう意味ではその３点について、現在の執行側では答弁できない部分もあるかも分かりませんが、代表だけということなのですが、その辺お聞かせをいただきたいと思います。",
+    "text_length": 592,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        259
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-087",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "企画財政課長（宅石誠君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、１点目のご質問でございますけれども、３月の２日、それと３月の30日ということで３月２回の補正をさせていただいております。補正予算の調整に関しては、議会の開催のおよそ１週間から２週間前に調整をかけておりますので、３月の２日であれば２月の20日頃に補正予算を固めて議案をつくっております。また、３月30日であればその15日程度前、３月の15日程度の状況で補正予算を組んでおりますので、それ以降に発生している分については３月30日の補正には間に合っておりません。\n　また、一応具体的な例でいいますと、歳入のほうの地方譲与税に関しては、歳入の確定の通知というのは３月の30日に来ておりますので、その当日に議案を提出することは、追加議案というふうになれば出せるかと思いますけれども、夕方に通知を大体来ますので、その日の議案としてはちょっと出しにくいかなと思います。\n　あと、ふるさと納税寄附金に関してのご質問もありましたけれども、今言いましたけれども、大体２週間前の調整でございますので、そのときの見込みとして３月補正を組んでおりますが、その後やはり年度末に向けて寄附金の収入増減ありますので、そういったところで今回専決処分として３月31日の寄附金の入金までの確定額ということで計上をさせていただいております。\n　同じく利子の基金利子のほうですけれども、３月２日の補正の段階では年末の見込みということで補正を組ませていただいておりますけれども、３月31日、利子確定いたしますので、その利子の確定に合わせて今回専決処分ということで補正を計上させていただいております。\n　以上です。",
+    "text_length": 687,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        261
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-088",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "１２番（互野利夫君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "互野利夫",
+    "member_faction": "",
+    "text": "いろいろ時期的なもので分かる部分もあるのですが、あえて専決処分をしなければならない部分もあるでしょうけれども、補正予算を組まないで執行残、あるいは執行による増額というようなことで決算上で表すのも一つの方法かと思います。今ここにきて私たちこれを反対できないのです。既に専決処分で行って告示もしているわけですから、その分を我々議員が反対するということになりませんので、十分その辺をわきまえて補正予算の編成については当たっていただきたいというふうに思いますが、その辺の考え方について再度お聞かせください。",
+    "text_length": 249,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        263
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-089",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "企画財政課長（宅石誠君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案の提案のほうにも書いておりますけれども、地方自治法の第180条第１項の規定により専決処分ができるという事項がございます。その地方自治法の180条第１項の規定に基づいて、議会の運営のほうで議会の専決処分の事項の指定ということで議会のほうで決定をしております。その中で会計年度末における議決済みの町債、地方債の借入額の増減及びそれに伴う歳入歳出予算の補正、年度末における地方交付税等の一般財源、基金繰入金、基金積立金の増減などなど指定をいただいております。この指定できる専決処分の項目に基づいてこのたび補正予算として専決処分させていただいたということでございますので、ご理解をお願いいたします。\n　以上です。",
+    "text_length": 304,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        265
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-090",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "５番（上野信仁君）",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大体2,100万円増加ですよね、追加というか。その中身なのですけれども、大きな。14ページの５番の財政管理費の森林環境譲与税基金のところで約2,400万増えているのですけれども、主にここのところに充てたというふうに考えればいいのですかということと、基金でここだけなぜこれだけ増やしたのかなというのを気になるのですけれども。\n　以上です。２つ。",
+    "text_length": 171,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        267
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-091",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "企画財政課長（宅石誠君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "まず、森林環境譲与税の基金の関係でございます。こちらは歳入のほうで10ページ、２款３項の１目森林環境譲与税、こちらは135万8,000円増額して決算として3,735万8,000円となったわけですけれども、この税金に関しては国内に住所を有する人、これに年1,000円課税されて徴収をされております。そのうち90％が市町村に充当されるわけですけれども、そのいただいた財源を使って森林の環境整備ということで、当町でも森林環境譲与税の充当事業として森林経営管理制度に基づく森林整備支援事業委託、その他日高町の森林整備事業として２つですけれども、合わせて３つの事業を実施しております。その歳出に関してなのですけれども、トータルで1,369万4,000円となっております。歳入3,735万8,000円でございますので、それを当年度実施した1,369万4,000円、こちらのほうに充当させていただくのですけれども、充当しても残り2,360万ほど残るものですから、それを一回基金に積んで翌年度にその財源として使うということにしております。本来であれば当該年度に全て使いなさいというものなのですけれども、翌年度に繰り越して、また取り崩して、来年度の、令和８年度の譲与税はまた積んでということで順繰り資金を回転させているところでございます。何か大きな事業があればそこに大きく充てて一回きれいになるのですけれども、何もない通常の年であればそういった手法で運用をさせていただいております。\n　以上です。",
+    "text_length": 639,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        269
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-092",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "企画財政課長（宅石誠君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "補足ですけれども、譲与税なものですから、森林環境譲与税ということなので、一般財源として取扱いされます。なので、特定財源ではなくて基金の、最後の先ほどの14ページですか、14ページの真ん中、補正額の財源内訳という欄に2,366万6,000円、これ基金の利子の分も入っているのですけれども、そのうち2,366万4,000円が一般財源として財源充当しておりますので、そこをご理解いただければと思います。",
+    "text_length": 198,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        271
+      ]
+    }
+  },
+  {
+    "id": "hidaka-250-1-093",
+    "municipality": "hidaka",
+    "council_id": 250,
+    "council_name": "令和 ８年  ４月会議",
+    "schedule_id": 1,
+    "schedule_name": "04月17日－01号",
+    "date": "2026-04-17",
+    "speaker": "副町長（深根英範君）",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議長の特段のお計らいによりまして貴重なお時間を頂戴いたしました。ここで私の退任の挨拶の機会を与えていただきましたことに大変ありがたく、深く感謝を申し上げます。\n　私、このたび任期満了によりまして、今日でなく４月19日なのですが、あさってをもって副町長の職を退くこととなりました。８年前、大鷹前町長のご厚情と議員各位の格別なるご高配によりまして町長の補佐役として町政に参画をさせていただきました。しかし、なかなか皆さんの期待に十分応えることができないことが多々ありまして、誠に申し訳ない気持ちでいっぱいでございます。ただ、この８年間は私なりに大鷹町政のもと、施策実行のため補佐役として全身全霊で職務に取り組んできたところでございます。この間、微力な私がこの重責を務めていくことができましたのも議員皆様の温かいご支援とご鞭撻、そして管理職の皆さんもはじめ職員の皆さんのご協力のたまものでございまして、心から感謝を申し上げる次第でございます。\n　顧みますと、私行政マンとしては通算38年ということになりました。その中でも平成12年から24年まで12年間は総務課に配属しておりまして、そのちょうど中間年に当たります平成18年には旧日高町と旧門別町の町村合併に関わり、歴史的瞬間に立ち会うことができました。その後でありますけれども、初めての管理職として門別国保病院の事務長を務め、現職に至っておりますが、その全てが私の財産となっております。今後におきましては、広中町政の応援隊の一人として日高町の発展を見守っていきたいと思っております。\n　最後に、本町の限りなき発展をご祈念いたしますとともに、皆様方がいつまでもご健康でご活躍をされますことを心からお願い申し上げまして退任の挨拶とさせていただきます。長年にわたり本当にありがとうございました。",
+    "text_length": 766,
+    "source": {
+      "minutes_file": "data/hidaka/minutes/250.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        276
+      ]
+    }
+  }
+]

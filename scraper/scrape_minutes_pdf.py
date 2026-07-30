@@ -104,7 +104,7 @@ PDF_CONFIGS: dict[str, dict] = {
     },
     "hokuryu": {
         "name": "北竜町",
-        "index_url": "http://www.town.hokuryu.hokkaido.jp/tyousei/gikai/gikaikaigiroku/",
+        "index_url": "https://www.town.hokuryu.hokkaido.jp/chosei/6551/",
         # 戦略: ファイル名に回数・種別がないため PDF1ページ目から取得
         # 例: g_giroku_r7.3.11.pdf の PDF 1ページ目に
         #     「第１回北竜町議会定例会 第１号\n令和７年３月１１日...」
@@ -113,8 +113,8 @@ PDF_CONFIGS: dict[str, dict] = {
         "title_regex": r"第(\d+)回[\s\S]{0,20}?(定例会|臨時会)",
         "year_regex": r"令和(\d+)年",
         "schedule_regex": r"第(\d+)号",
-        # ファイル名 g_giroku_r7.3.11.pdf → r7 を loose year として拾う
-        "loose_year_regex": r"r(?P<ey>\d+)\.",
+        # 旧・現行サイトのファイル名から元号年を loose year として拾う
+        "loose_year_regex": r"r(?P<ey>\d+)[.-]",
         "era_base": 2018,
     },
     "furubira": {
@@ -162,6 +162,7 @@ PDF_CONFIGS: dict[str, dict] = {
         "name": "富良野市",
         "strategy": "category_drilldown",
         "index_urls": {
+            2026: "https://www.city.furano.hokkaido.jp/shigikai/docs/1885854.html",
             2025: "https://www.city.furano.hokkaido.jp/shigikai/docs/978780.html",
             2024: "https://www.city.furano.hokkaido.jp/shigikai/docs/541456.html",
         },
@@ -203,7 +204,9 @@ PDF_CONFIGS: dict[str, dict] = {
         "name": "夕張市",
         # /site/gikai/6897.html (R7) に「第1回定例市議会 3月5日」等のPDFがフラット並び
         "strategy": "linktext_pattern",
+        "year_from_index": True,
         "index_urls": {
+            2026: "https://www.city.yubari.lg.jp/site/gikai/10007.html",
             2025: "https://www.city.yubari.lg.jp/site/gikai/6897.html",
             2024: "https://www.city.yubari.lg.jp/site/gikai/3350.html",
         },
@@ -213,15 +216,17 @@ PDF_CONFIGS: dict[str, dict] = {
         # /assembly/detail/00016223.html (R7) に「会議録 令和7年 第4回定例会 12月18日」
         "strategy": "linktext_pattern",
         "index_urls": {
+            2026: "https://www.city.mikasa.hokkaido.jp/assembly/detail/00016816.html",
             2025: "https://www.city.mikasa.hokkaido.jp/assembly/detail/00016223.html",
             2024: "https://www.city.mikasa.hokkaido.jp/assembly/detail/00014600.html",
         },
     },
     "sunagawa": {
         "name": "砂川市",
-        # /kaigiroku/2025/index.html に council URL リスト、詳細ページ内に 第N号PDF
+        # /kaigiroku/{year}/index.html に council URL リスト、詳細ページ内に 第N号PDF
         "strategy": "category_drilldown",
         "index_urls": {
+            2026: "https://www.city.sunagawa.hokkaido.jp/shisei/shigikai/kaigiroku/2026/index.html",
             2025: "https://www.city.sunagawa.hokkaido.jp/shisei/shigikai/kaigiroku/2025/index.html",
             2024: "https://www.city.sunagawa.hokkaido.jp/shisei/shigikai/kaigiroku/2024/index.html",
         },
@@ -233,6 +238,7 @@ PDF_CONFIGS: dict[str, dict] = {
         # サブページ内に「目次」「1月30日」形式のPDF
         "strategy": "category_drilldown",
         "index_urls": {
+            2026: "https://www.city.bibai.hokkaido.jp/site/gikai/29609.html",
             2025: "https://www.city.bibai.hokkaido.jp/site/gikai/24889.html",
             2024: "https://www.city.bibai.hokkaido.jp/site/gikai/20254.html",
         },
@@ -280,6 +286,7 @@ PDF_CONFIGS: dict[str, dict] = {
         # h1="令和7年本会議会議録" (1年1URL)
         "strategy": "multi_index_html",
         "index_urls": {
+            2026: "https://www.city.takikawa.lg.jp/page/24011.html",
             2025: "https://www.city.takikawa.lg.jp/page/18437.html",
         },
         "council_tag": "h2",
@@ -337,12 +344,13 @@ PDF_CONFIGS: dict[str, dict] = {
         "name": "士別市",
         # 年度別ページ(R7=6029.html等)に R7-1tei-1.pdf 等のPDFが並ぶ
         "strategy": "filename_pattern",
-        "filename_regex": r"R(?P<ey>\d+)-(?P<seq>\d+)(?P<t>tei|rinn)([-_](?P<day>\d+))?\.pdf",
-        "type_map": {"tei": "定例会", "rinn": "臨時会"},
+        "filename_regex": r"R(?P<ey>\d+)-(?P<seq>\d+)(?P<t>tei|rinn?)([-_](?P<day>\d+))?\.pdf",
+        "type_map": {"tei": "定例会", "rin": "臨時会", "rinn": "臨時会"},
         "era_base": 2018,
         "sort_groups": ["day"],
         "link_text_format": "第{day}日",
         "index_urls": {
+            2026: "https://www.city.shibetsu.lg.jp/gyoseisaito/shiseijoho/gikai/1/kaigirokukekka/6825.html",
             2025: "https://www.city.shibetsu.lg.jp/gyoseisaito/shiseijoho/gikai/1/kaigirokukekka/6029.html",
             2024: "https://www.city.shibetsu.lg.jp/gyoseisaito/shiseijoho/gikai/1/kaigirokukekka/5304.html",
         },
@@ -351,6 +359,10 @@ PDF_CONFIGS: dict[str, dict] = {
         "name": "紋別市",
         "strategy": "category_drilldown",
         "index_urls": {
+            2026: [
+                "https://mombetsu.jp/gikai/minutes/?category=262",  # 令和8年定例会
+                "https://mombetsu.jp/gikai/minutes/?category=263",  # 令和8年臨時会
+            ],
             2025: [
                 "https://mombetsu.jp/gikai/minutes/?category=233",  # 令和7年定例会
                 "https://mombetsu.jp/gikai/minutes/?category=234",  # 令和7年臨時会
@@ -373,6 +385,7 @@ PDF_CONFIGS: dict[str, dict] = {
         # 例: 「令和７年第１回定例会（３月３日～４月３日）.pdf」
         "strategy": "linktext_pattern",
         "index_urls": {
+            2026: "https://www.town.setana.lg.jp/gikai/kaigiroku/cat904/",
             2025: "https://www.town.setana.lg.jp/gikai/kaigiroku/R7/",
             2024: "https://www.town.setana.lg.jp/gikai/kaigiroku/R6/",
         },
@@ -1675,6 +1688,8 @@ def extract_pdf_links_by_linktext_pattern(cfg: dict, years: list[int]) -> list[d
                         efb = era_fallback_re.search(text)
                         if efb and 1 <= int(efb.group(1)) <= 10:
                             actual_year = 2018 + int(efb.group(1))
+                if actual_year is None and cfg.get("year_from_index"):
+                    actual_year = year
                 if actual_year != year:
                     continue
                 fn = href.rsplit("/", 1)[-1]
