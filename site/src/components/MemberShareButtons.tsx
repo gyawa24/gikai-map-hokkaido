@@ -69,7 +69,7 @@ export default function MemberShareButtons({
     <div data-no-print="true" className="flex items-center justify-end gap-1">
       <button
         onClick={() => setQrOpen(true)}
-        className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-2 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+        className="inline-flex min-h-11 items-center gap-1 rounded px-2 py-1 text-xs text-[#718096] transition-colors hover:bg-[#E8EEF7] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
         title="この議員ページのQRコードを表示（チラシ・名刺用）"
         aria-label="QRコードを表示"
       >
@@ -87,7 +87,7 @@ export default function MemberShareButtons({
       </button>
       <button
         onClick={handleCopyLink}
-        className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-2 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+        className="inline-flex min-h-11 items-center gap-1 rounded px-2 py-1 text-xs text-[#718096] transition-colors hover:bg-[#E8EEF7] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
         title="この議員ページのリンクをコピー"
         aria-label="この議員ページのリンクをコピー"
       >
@@ -101,7 +101,7 @@ export default function MemberShareButtons({
         href={xShareHref}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-xs text-[#718096] hover:text-[#1B3A6B] transition-colors px-2 py-1 rounded hover:bg-[#E8EEF7] inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+        className="inline-flex min-h-11 items-center gap-1 rounded px-2 py-1 text-xs text-[#718096] transition-colors hover:bg-[#E8EEF7] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
         title="Xで共有"
         aria-label="Xで共有"
       >

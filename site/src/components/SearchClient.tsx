@@ -1740,7 +1740,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             {draftQuery && (
               <button
                 onClick={clearSearch}
-                className="absolute right-3 top-1/2 -translate-y-1/2 rounded text-xs font-bold text-[#718096] hover:text-[#1A202C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                className="absolute right-1 top-1/2 inline-flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center rounded text-xs font-bold text-[#718096] hover:text-[#1A202C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                 aria-label="検索をクリア"
                 type="button"
               >
@@ -1778,7 +1778,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                   <button
                     type="button"
                     onClick={() => replaceSearchParams({ op: "and" })}
-                    className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
+                    className={`min-h-11 rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
                       searchMode === "and" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
                     }`}
                   >
@@ -1787,7 +1787,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                   <button
                     type="button"
                     onClick={() => replaceSearchParams({ op: "or" })}
-                    className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
+                    className={`min-h-11 rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
                       searchMode === "or" ? "bg-[#1B3A6B] text-white" : "text-[#4A5568] hover:text-[#1B3A6B]"
                     }`}
                   >
@@ -1826,7 +1826,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                     setDraftQuery(item);
                     replaceSearchParams({ q: item });
                   }}
-                  className="theme-pill-soft text-[#1B3A6B]"
+                  className="theme-pill-soft min-h-11 text-[#1B3A6B]"
                   type="button"
                 >
                   {item}
@@ -1837,7 +1837,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         )}
 
         {!hasQuery && (
-          <p className="mt-3 text-xs leading-relaxed text-[#667085] sm:text-sm">
+          <p className="mt-3 text-sm leading-relaxed text-[#667085]">
             {scopedCityLabel
               ? `${scopedCityLabel}に絞っています。議題名、政策テーマ、施設名、議員名、会派名などで探せます。`
               : "議題名、政策テーマ、施設名、議員名、会派名などで探せます。"}
@@ -1852,7 +1852,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
               <p className="text-sm font-black text-[#1B3A6B]">
                 「{query.trim()}」の検索結果
               </p>
-              <p className="mt-1 text-xs text-[#667085] sm:text-sm">
+              <p className="mt-1 text-sm text-[#667085]">
                 議事録・議決結果 {loading ? "…" : sessionTotal.toLocaleString()} 件 / 議員 {loading ? "…" : memberTotal.toLocaleString()} 名
               </p>
               <p className="mt-1 text-sm text-[#667085]">
@@ -1865,7 +1865,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                     <button
                       type="button"
                       onClick={() => setForceFullSearch(true)}
-                      className="rounded-full border border-[#CBD5E0] bg-white px-2 py-0.5 text-xs font-semibold text-[#1B3A6B] hover:border-[#1B3A6B] hover:bg-[#E8EEF7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                      className="inline-flex min-h-11 items-center rounded-full border border-[#CBD5E0] bg-white px-3 py-2 text-sm font-semibold text-[#1B3A6B] hover:border-[#1B3A6B] hover:bg-[#E8EEF7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
                     >
                       全期間を検索
                     </button>
@@ -1969,7 +1969,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             <button
               key={t}
               onClick={() => replaceSearchParams({ tab: t })}
-              className={`px-3 py-2 text-sm font-medium border-b-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] rounded-t sm:px-4 ${
+              className={`min-h-11 px-3 py-2 text-sm font-medium border-b-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] rounded-t sm:px-4 ${
                 tab === t
                   ? "border-[#8AA3CF] text-[#1B3A6B]"
                   : "border-transparent text-[#718096] hover:text-[#1A202C]"
@@ -1995,7 +1995,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           <div className="flex flex-wrap gap-1.5">
             <button
               onClick={() => replaceSearchParams({ city: "all", cityName: "" })}
-              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+              className={`min-h-11 text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                 cityFilter === "all"
                   ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
                   : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
@@ -2012,7 +2012,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                     cityName: cityFilter === c.id ? "" : c.name,
                   })
                 }
-                className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+                className={`min-h-11 text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                   cityFilter === c.id
                     ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
                     : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
@@ -2037,7 +2037,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
               <button
                 key={s}
                 onClick={() => replaceSearchParams({ source: s, year: s === "all" ? yearFilter : "all" })}
-                className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+                className={`min-h-11 text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                   sourceFilter === s
                     ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
                     : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#2A5298]"
@@ -2062,7 +2062,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           <div className="flex flex-wrap gap-1.5">
           <button
             onClick={() => replaceSearchParams({ year: "all" })}
-            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+            className={`min-h-11 text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
               yearFilter === "all"
                 ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
                 : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
@@ -2075,7 +2075,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             <button
               key={y}
               onClick={() => replaceSearchParams({ year: yearFilter === y ? "all" : y })}
-              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+              className={`min-h-11 text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                 yearFilter === y
                   ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
                   : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
@@ -2098,7 +2098,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
           <div className="flex flex-wrap gap-1.5">
           <button
             onClick={() => replaceSearchParams({ faction: "all" })}
-            className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+            className={`min-h-11 text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
               factionFilter === "all"
                 ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
                 : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#2A5298]"
@@ -2111,7 +2111,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             <button
               key={f}
               onClick={() => replaceSearchParams({ faction: factionFilter === f ? "all" : f })}
-              className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+              className={`min-h-11 text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
                 factionFilter === f
                   ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
                   : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#2A5298]"
@@ -2288,7 +2288,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                         ) : r.sourceType === "decision" ? (
                           <span className="theme-pill-soft opacity-85">議決結果</span>
                         ) : (
-                          <span className="theme-pill-soft text-[#2A5298] opacity-90">会議録</span>
+                          <span className="theme-pill-soft text-[#2A5298] opacity-90">会議録速報</span>
                         )}
                         {dateLabel && (
                           <span className="theme-pill-soft tabular-nums text-[#4A5568]">{dateLabel}</span>

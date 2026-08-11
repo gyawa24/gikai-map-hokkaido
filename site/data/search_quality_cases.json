@@ -81,6 +81,58 @@
     "note": "複数テーマを持つ一般質問で、給食テーマから会議に到達できるか。"
   },
   {
+    "id": "chitose-session-ogawa-generative-ai",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "小川陽平 生成AI",
+    "operator": "and",
+    "expected": {
+      "source": "session",
+      "session_id": "r8-teireikai2-ogawa-question-20260608",
+      "textIncludes": ["次期千歳市DX推進計画", "生成AI"]
+    },
+    "note": "公式議事録公開前の会議録速報でも、議員名と生成AIテーマから該当質問へ到達できるか。"
+  },
+  {
+    "id": "chitose-session-furukawa-evacuation-plan",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "古川昌俊 個別避難計画",
+    "operator": "and",
+    "expected": {
+      "source": "session",
+      "session_id": "r8-teireikai2-ogawa-question-20260608",
+      "textIncludes": ["地域福祉", "個別避難計画"]
+    },
+    "note": "会議録速報の複数登壇者から、議員名と生活課題の組み合わせで該当質問へ到達できるか。"
+  },
+  {
+    "id": "chitose-session-imai-graduation-ceremony",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "今井ひろみ 卒業式",
+    "operator": "and",
+    "expected": {
+      "source": "session",
+      "session_id": "r8-teireikai2-day3-general-questions-20260611",
+      "textIncludes": ["卒業式", "在校生"]
+    },
+    "note": "教育テーマの会議録速報を議員名から正しく絞り込めるか。"
+  },
+  {
+    "id": "chitose-session-miyahara-preconception-care",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "宮原伸哉 プレコンセプションケア",
+    "operator": "and",
+    "expected": {
+      "source": "session",
+      "session_id": "r8-teireikai2-day5-general-questions-20260615",
+      "textIncludes": ["プレコンセプションケア", "市内企業"]
+    },
+    "note": "長い専門用語を含む会議録速報でも該当質問へ到達できるか。"
+  },
+  {
     "id": "eniwa-mikami-rapidus-tax",
     "city": "eniwa",
     "cityName": "恵庭市",

@@ -178,7 +178,7 @@ export default async function CityMemberDetailPage({
       <JsonLd data={[breadcrumb, profilePage]} />
       {/* パンくず */}
       <nav className="text-sm text-[#718096] mb-5 flex items-center gap-1.5">
-        <Link href={`/${city}`} prefetch={false} className="hover:text-[#1B3A6B] transition-colors">
+        <Link href={`/${city}`} prefetch={false} className="inline-flex min-h-11 items-center transition-colors hover:text-[#1B3A6B]">
           議員一覧
         </Link>
         <span aria-hidden="true">›</span>
@@ -278,19 +278,19 @@ export default async function CityMemberDetailPage({
       >
         <a
           href="#profile"
-          className="flex-1 text-center px-3 py-2 rounded-md text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors font-medium"
+          className="inline-flex min-h-11 flex-1 items-center justify-center rounded-md px-3 py-2 text-center font-medium text-[#4A5568] transition-colors hover:bg-[#E8EEF7] hover:text-[#1B3A6B]"
         >
           プロフィール
         </a>
         <a
           href="#activity"
-          className="flex-1 text-center px-3 py-2 rounded-md text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors font-medium"
+          className="inline-flex min-h-11 flex-1 items-center justify-center rounded-md px-3 py-2 text-center font-medium text-[#4A5568] transition-colors hover:bg-[#E8EEF7] hover:text-[#1B3A6B]"
         >
           活動記録
         </a>
         <a
           href="#share"
-          className="flex-1 text-center px-3 py-2 rounded-md text-[#4A5568] hover:bg-[#E8EEF7] hover:text-[#1B3A6B] transition-colors font-medium"
+          className="inline-flex min-h-11 flex-1 items-center justify-center rounded-md px-3 py-2 text-center font-medium text-[#4A5568] transition-colors hover:bg-[#E8EEF7] hover:text-[#1B3A6B]"
         >
           シェア
         </a>
@@ -367,7 +367,7 @@ export default async function CityMemberDetailPage({
                       key={t}
                       href={searchHref(city, cityName, `${member.name} ${t}`)}
                       prefetch={false}
-                      className="rounded-full border border-[#CBD5E0] bg-white px-2.5 py-1 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white"
+                      className="inline-flex min-h-11 items-center rounded-full border border-[#CBD5E0] bg-white px-3 py-2 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
                     >
                       {t}
                     </Link>
@@ -426,7 +426,7 @@ export default async function CityMemberDetailPage({
                             <Link
                               href={`/${city}/minutes/${s.council_id}`}
                               prefetch={false}
-                              className="text-xs text-[#718096] hover:text-[#1B3A6B] flex items-center gap-0.5 transition-colors"
+                              className="inline-flex min-h-11 items-center gap-0.5 text-xs text-[#718096] transition-colors hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
                             >
                               議事録全文
                               <svg
@@ -452,7 +452,7 @@ export default async function CityMemberDetailPage({
                                 key={t}
                                 href={searchHref(city, cityName, `${member.name} ${t}`)}
                                 prefetch={false}
-                                className="rounded-full bg-[#E8EEF7] px-2.5 py-1 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white"
+                                className="inline-flex min-h-11 items-center rounded-full bg-[#E8EEF7] px-3 py-2 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
                               >
                                 {t}
                               </Link>
@@ -461,7 +461,7 @@ export default async function CityMemberDetailPage({
                         )}
                         {s.topics.length > 0 && (
                           <details className="mt-3 rounded-md border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2">
-                            <summary className="cursor-pointer text-xs font-semibold text-[#4A5568] hover:text-[#1B3A6B]">
+                            <summary className="flex min-h-11 cursor-pointer items-center text-xs font-semibold text-[#4A5568] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]">
                               議事録中の項目を確認
                             </summary>
                             <ul className="mt-2 space-y-1.5">

@@ -120,6 +120,7 @@ h1, h2, h3, h4 {
 .theme-input,
 .theme-select {
   width: 100%;
+  min-height: 2.75rem;
   border: 2px solid #d5dbe5;
   border-radius: 16px;
   background: #ffffff;
@@ -136,6 +137,7 @@ h1, h2, h3, h4 {
 
 .theme-button {
   display: inline-flex;
+  min-height: 2.75rem;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;

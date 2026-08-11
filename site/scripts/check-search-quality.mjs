@@ -158,6 +158,7 @@ function buildCandidates(index) {
       source: "session",
       city: session.city,
       cityName: session.cityName,
+      session_id: session.id,
       title: session.title,
       text: [session.cityName, session.title, session.committee, segmentText].join(" "),
     });
@@ -196,6 +197,7 @@ function buildCandidates(index) {
 function candidateMatchesExpected(candidate, expected) {
   if (expected.source && candidate.source !== expected.source) return false;
   if (expected.council_id && Number(candidate.council_id) !== Number(expected.council_id)) return false;
+  if (expected.session_id && candidate.session_id !== expected.session_id) return false;
   if (expected.member_name && candidate.member_name !== expected.member_name) return false;
   for (const text of expected.textIncludes ?? []) {
     if (!String(candidate.text ?? "").includes(text)) return false;
@@ -262,6 +264,7 @@ function main() {
         ? {
             source: expectedHit.source,
             council_id: expectedHit.council_id ?? null,
+            session_id: expectedHit.session_id ?? null,
             member_name: expectedHit.member_name ?? null,
             title: expectedHit.title,
           }
@@ -269,6 +272,7 @@ function main() {
       top: matches.slice(0, 3).map((candidate) => ({
         source: candidate.source,
         council_id: candidate.council_id ?? null,
+        session_id: candidate.session_id ?? null,
         member_name: candidate.member_name ?? null,
         title: candidate.title,
         score: candidate.score,

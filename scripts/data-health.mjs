@@ -50,6 +50,7 @@ const SITE_GLOBAL = new Set([
   "budget_sources.json",
   "municipalities.json",
   "news.json",
+  "search_quality_cases.json",
   "search_segment_fallbacks.json",
 ]);
 const ROOT_PRIVATE_PREFIXES = ["_discovery/", "chunks/", "processed/", "raw/"];
