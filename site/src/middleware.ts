@@ -10,6 +10,8 @@ const BUDGETS_PREFIX = "/budgets/";
 const MEMBERS_PREFIX = "/members/";
 const MEMBER_EXPORT_PATH = "/api/export/members";
 const SITE_OG_IMAGE_PATH = "/api/og-site";
+const SEARCH_PATH = "/search";
+const SEARCH_RESULTS_NOINDEX_HEADER = "noindex, follow";
 const BUDGET_IMAGE_EXTENSIONS = new Set([".avif", ".jpg", ".jpeg", ".png", ".webp"]);
 const MEMBER_IMAGE_EXTENSIONS = new Set([".avif", ".jpg", ".jpeg", ".png", ".webp"]);
 const IS_DEVELOPMENT = process.env.NODE_ENV === "development";
@@ -35,6 +37,8 @@ function withPreviewNoindex(request: NextRequest, response: NextResponse) {
   response.headers.set("Content-Security-Policy", CONTENT_SECURITY_POLICY);
   if (!isIndexableRequestHost(request.headers)) {
     response.headers.set("X-Robots-Tag", PREVIEW_NOINDEX_HEADER);
+  } else if (request.nextUrl.pathname === SEARCH_PATH && request.nextUrl.search) {
+    response.headers.set("X-Robots-Tag", SEARCH_RESULTS_NOINDEX_HEADER);
   }
   return response;
 }
