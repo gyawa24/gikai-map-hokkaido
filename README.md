@@ -44,6 +44,7 @@ gikai-map-hokkaido/
 │   ├── src/lib/mcp/   MCP ツール定義（共通）
 │   └── data/          ビルド時に読む市町村データ
 ├── mcp-server/        stdio 版 MCP サーバー（個人用 Claude Code 連携）
+├── research-api/      AWS上の政策リサーチ実証API（サイト配信とは独立）
 ├── scripts/           バッチ・CLI スクリプト
 ├── scraper/           市町村別スクレイピングスクリプト
 ├── data/              スクレイパが書き出す生データ（site/data/ にも複製）
@@ -66,6 +67,8 @@ gikai-map-hokkaido/
 | [`docs/operations-board.md`](docs/operations-board.md) | 直近で着手する作業のボード（Now / Next / Later） |
 | [`docs/cloudflare-deploy-runbook.md`](docs/cloudflare-deploy-runbook.md) | Cloudflare 無料運用への本番移行手順 |
 | [`docs/cloudflare-migration-checklist.md`](docs/cloudflare-migration-checklist.md) | Cloudflare 移行調査・検証チェックリスト |
+| [`docs/data-loop-preview-runbook.md`](docs/data-loop-preview-runbook.md) | 5市予算Data Loop限定プレビューの生成・認証・公開gate |
+| [`research-api/README.md`](research-api/README.md) | AWS政策リサーチAPIの構成・検証環境・UI接続手順 |
 | [`docs/news-workflow.md`](docs/news-workflow.md) | トップ/`/news` の更新情報の運用ルール |
 | [`docs/municipality-coverage.md`](docs/municipality-coverage.md) | 市町村ごとの機能充足一覧と次の一手 |
 | [`docs/minutes-expansion-candidates.md`](docs/minutes-expansion-candidates.md) | 次に `minutes` 化しやすい自治体候補メモ |

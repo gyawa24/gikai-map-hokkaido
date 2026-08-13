@@ -11,6 +11,9 @@ __pycache__/
 # Temporary files
 tmp_audio/
 
+# Local agent settings
+.claude/
+
 # MCP-only generated artifact (re-buildable via npm run build-restricted-index)
 mcp-server/_restricted-index.json
 

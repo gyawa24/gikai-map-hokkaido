@@ -1,6 +1,6 @@
 # 運営ボード
 
-最終更新: 2026-06-12
+最終更新: 2026-08-13
 
 このファイルは `今やること` の単一の真実源。
 全体状況は `docs/municipality-coverage.md` を見て、ここには `直近で着手する単位` だけを書く。
@@ -30,6 +30,26 @@
 - Cloudflare本番確認: `node scripts/operations-check.mjs --cloudflare`
 
 判断基準は「継続できる環境」「綺麗なデータ」「次のスケジュールが明確」の3点。
+
+---
+
+## 進行中の作業単位
+
+同じworktree上にあるが、保存・検証・公開判断は次の4単位に分ける。別単位の差分を一緒にコミット・デプロイしない。
+
+| 作業単位 | 主な場所 | 現在地 | 次の停止点 |
+|---|---|---|---|
+| AWS政策リサーチAPI | `research-api/` | CloudFormationデプロイ済み。固定3ケース成功。BedrockはNova 2 Liteクォータ0のため定型fallback | AWSサポートのクォータ承認後にBedrock再テスト |
+| 政策リサーチ限定UI | `site/src/app/research/`, `site/src/app/api/research/`, `site/src/components/research/` | AWS APIへ接続するサーバーproxyと共通パスワード認証を実装済み | Bedrock承認後、AWS API URL/keyをCloudflare staging secretへ登録して限定確認 |
+| 予算Data Loop限定UI | `site/src/app/data-loop-preview/`, `site/src/components/data-loop-preview/`, `site/data/data-loop-preview/` | 5市・R7/R8、426 facts、224比較、53 CoverageをCloudflareローカルWorkerで検証済み | 政策リサーチUIと同じ認証secretでstaging限定公開。public/RAG/raw gateは開けない |
+| 江別構造化議事録 | `data/ebetsu/turns/`, `data/structured-minutes/ebetsu/`, `site/src/components/structured-minutes/` | 313発言・一般質問12件・67テーマのfixture検証済み | Data Loop/AWSと分離してレビュー・公開判断 |
+
+共通ルール:
+
+- `research-api/`のAWSリソースと、`site/`のCloudflare配信は別システムとして扱う。
+- AWS API key、Cloudflare secret、アクセスパスワードをリポジトリや`NEXT_PUBLIC_*`へ置かない。
+- `/research`と`/data-loop-preview`は同じ限定公開セッションを共有する。
+- 予算Data Loopの限定表示は技術検証であり、一般公開・公開RAG・原本再配布の承認を意味しない。
 
 ---
 
