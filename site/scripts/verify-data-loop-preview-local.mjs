@@ -25,6 +25,7 @@ if (!password || password.length < 12) {
 }
 
 const previewUrl = `${base}/data-loop-preview`;
+const researchUrl = `${base}/research`;
 const sessionUrl = `${base}/api/research/session`;
 
 const anonymousResponse = await fetch(previewUrl, { redirect: "manual" });
@@ -35,6 +36,13 @@ check(anonymousHtml.includes("パスワード付きテスト画面"), "Anonymous
 for (const marker of ["comparison_id", "source_document_id", "budget.poc", "市税"]) {
   check(!anonymousHtml.includes(marker), `Anonymous page leaked protected marker: ${marker}.`);
 }
+
+const anonymousResearchResponse = await fetch(researchUrl, { redirect: "manual" });
+const anonymousResearchHtml = await anonymousResearchResponse.text();
+check(anonymousResearchResponse.status === 200, `Anonymous research page returned HTTP ${anonymousResearchResponse.status}.`);
+checkRestrictedHeaders(anonymousResearchResponse, "anonymous research page");
+check(anonymousResearchHtml.includes("限定公開ページ"), "Anonymous research page does not show the access gate.");
+check(!anonymousResearchHtml.includes("自治体絞り込み"), "Anonymous research page leaked the research form.");
 
 const loginResponse = await fetch(sessionUrl, {
   method: "POST",
@@ -64,6 +72,17 @@ for (const marker of ["canonical facts", "千歳市", "恵庭市", "江別市", 
   check(authenticatedHtml.includes(marker), `Authenticated page is missing: ${marker}.`);
 }
 
+const authenticatedResearchResponse = await fetch(researchUrl, {
+  headers: { Cookie: cookie },
+  redirect: "manual",
+});
+const authenticatedResearchHtml = await authenticatedResearchResponse.text();
+check(authenticatedResearchResponse.status === 200, `Authenticated research page returned HTTP ${authenticatedResearchResponse.status}.`);
+checkRestrictedHeaders(authenticatedResearchResponse, "authenticated research page");
+for (const marker of ["北海道・議会政策AIリサーチャー", "自治体絞り込み", "調査を開始する"]) {
+  check(authenticatedResearchHtml.includes(marker), `Authenticated research page is missing: ${marker}.`);
+}
+
 const logoutResponse = await fetch(sessionUrl, {
   method: "DELETE",
   headers: { Cookie: cookie },
@@ -82,5 +101,6 @@ console.log(JSON.stringify({
   base,
   anonymous_data_hidden: true,
   authenticated_preview_visible: true,
+  research_gate_verified: true,
   cookie_policy_verified: true,
 }, null, 2));

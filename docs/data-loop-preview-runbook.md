@@ -55,7 +55,7 @@ POLICY_RESEARCH_ACCESS_PASSWORD='<12文字以上>' \
 npm run verify:data-loop-preview-local
 ```
 
-この検証スクリプトはlocalhost以外を拒否し、アクセスパスワードを外部URLへ送らない。
+この検証スクリプトはlocalhost以外を拒否し、アクセスパスワードを外部URLへ送らない。`/research`と`/data-loop-preview`の両方について、未認証時の遮断、認証後の表示、非キャッシュ、検索除外を確認する。
 
 ## 認証
 

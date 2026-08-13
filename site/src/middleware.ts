@@ -12,6 +12,7 @@ const MEMBER_EXPORT_PATH = "/api/export/members";
 const SITE_OG_IMAGE_PATH = "/api/og-site";
 const SEARCH_PATH = "/search";
 const DATA_LOOP_PREVIEW_PATH = "/data-loop-preview";
+const RESEARCH_PATH = "/research";
 const SEARCH_RESULTS_NOINDEX_HEADER = "noindex, follow";
 const BUDGET_IMAGE_EXTENSIONS = new Set([".avif", ".jpg", ".jpeg", ".png", ".webp"]);
 const MEMBER_IMAGE_EXTENSIONS = new Set([".avif", ".jpg", ".jpeg", ".png", ".webp"]);
@@ -86,7 +87,12 @@ export function middleware(request: NextRequest) {
   if (canonicalRedirect) return canonicalRedirect;
 
   const { pathname } = request.nextUrl;
-  if (pathname === DATA_LOOP_PREVIEW_PATH || pathname.startsWith(`${DATA_LOOP_PREVIEW_PATH}/`)) {
+  if (
+    pathname === DATA_LOOP_PREVIEW_PATH ||
+    pathname.startsWith(`${DATA_LOOP_PREVIEW_PATH}/`) ||
+    pathname === RESEARCH_PATH ||
+    pathname.startsWith(`${RESEARCH_PATH}/`)
+  ) {
     return withRestrictedPreviewHeaders(NextResponse.next());
   }
   if (pathname.startsWith(BUDGETS_PREFIX)) {
