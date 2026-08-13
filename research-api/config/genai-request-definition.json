@@ -1,0 +1,45 @@
+{
+  "question": {
+    "title": "質問",
+    "desc": "北海道内の地方議会で調べたい政策テーマを入力してください。個人情報や未公開情報は入力しないでください。",
+    "type": "textarea",
+    "required": true,
+    "min_length": 1,
+    "max_length": 2000
+  },
+  "municipalities": {
+    "title": "対象自治体slug（任意）",
+    "desc": "chitose,eniwa,tomakomai のように、自治体slugを半角カンマ区切りで入力してください。空欄の場合は横断検索index収録自治体を検索します。",
+    "type": "text",
+    "required": false,
+    "max_length": 500
+  },
+  "fiscal_years": {
+    "title": "対象年度（任意）",
+    "desc": "2024,2025,2026 のように、西暦年度を半角カンマ区切りで入力してください。空欄の場合は年度を限定しません。",
+    "type": "text",
+    "required": false,
+    "max_length": 100
+  },
+  "mode": {
+    "title": "調査モード",
+    "desc": "目的に合う調査モードを選択してください。",
+    "type": "radio",
+    "required": false,
+    "items": [
+      {
+        "title": "調査",
+        "value": "research"
+      },
+      {
+        "title": "自治体比較",
+        "value": "comparison"
+      },
+      {
+        "title": "議会質問準備",
+        "value": "question_prep"
+      }
+    ],
+    "default_value": "research"
+  }
+}

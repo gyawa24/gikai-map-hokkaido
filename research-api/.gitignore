@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.aws-sam/
+.env
+.env.local
+npm-debug.log*

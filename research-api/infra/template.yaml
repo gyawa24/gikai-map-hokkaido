@@ -1,0 +1,296 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >-
+  Serverless API for the Hokkaido legislative policy AI researcher. This stack
+  is independent from the existing Cloudflare-hosted public site.
+
+Parameters:
+  StageName:
+    Type: String
+    Default: dev
+    AllowedPattern: "^[a-z][a-z0-9-]{0,15}$"
+    Description: API Gateway stage name.
+  BedrockModelId:
+    Type: String
+    MinLength: 1
+    Description: Bedrock foundation model ID or inference profile ID used at runtime.
+  AiEnabled:
+    Type: String
+    Default: "true"
+    AllowedValues: ["true", "false"]
+    Description: Set false to keep search available without calling Bedrock.
+  AllowedBedrockModelArns:
+    Type: CommaDelimitedList
+    Description: >-
+      Exact Bedrock inference profile and foundation model ARNs that the Lambda
+      function may invoke. Include every backing model ARN when using an
+      inference profile.
+  GikaiSearchIndexUrl:
+    Type: String
+    Default: https://chihougikai.com/generated/search-index.json
+  GikaiCityIndexBaseUrl:
+    Type: String
+    Default: https://chihougikai.com/generated/search-indexes
+  GikaiDataRawBaseUrl:
+    Type: String
+    Default: https://raw.githubusercontent.com/gyawa24/gikai-map-hokkaido/main/site/data
+  GikaiPublicBaseUrl:
+    Type: String
+    Default: https://chihougikai.com
+  BedrockMaxOutputTokens:
+    Type: Number
+    Default: 3000
+    MinValue: 1
+    MaxValue: 8000
+  BedrockTimeoutMs:
+    Type: Number
+    Default: 9000
+    MinValue: 1000
+    MaxValue: 10000
+  GikaiFetchTimeoutMs:
+    Type: Number
+    Default: 5000
+    MinValue: 1000
+    MaxValue: 5000
+  BedrockInputCostPerMillionTokens:
+    Type: String
+    Default: ""
+    Description: Optional current USD price used only for response cost estimates.
+  BedrockOutputCostPerMillionTokens:
+    Type: String
+    Default: ""
+    Description: Optional current USD price used only for response cost estimates.
+  MaxResultsPerSearch:
+    Type: Number
+    Default: 20
+    MinValue: 1
+    MaxValue: 100
+  MaxEvidenceItems:
+    Type: Number
+    Default: 8
+    MinValue: 1
+    MaxValue: 20
+  MaxEvidenceChars:
+    Type: Number
+    Default: 30000
+    MinValue: 500
+    MaxValue: 60000
+  MaxLlmCallsPerRequest:
+    Type: Number
+    Default: 2
+    AllowedValues: [1, 2]
+  MaxDailyRequests:
+    Type: Number
+    Default: 50
+    MinValue: 1
+    MaxValue: 10000
+  MaxMonthlyRequests:
+    Type: Number
+    Default: 500
+    MinValue: 1
+    MaxValue: 100000
+  ResearchCacheTtlSeconds:
+    Type: Number
+    Default: 600
+    MinValue: 1
+    MaxValue: 86400
+  IndexCacheTtlSeconds:
+    Type: Number
+    Default: 900
+    MinValue: 1
+    MaxValue: 86400
+
+Resources:
+  ResearchApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: !Sub hokkaido-gikai-policy-research-${StageName}
+      StageName: !Ref StageName
+      EndpointConfiguration:
+        Type: REGIONAL
+      ApiKeySourceType: HEADER
+      OpenApiVersion: 3.0.1
+      MinimumCompressionSize: 1024
+      Auth:
+        ApiKeyRequired: true
+        AddApiKeyRequiredToCorsPreflight: false
+        UsagePlan:
+          CreateUsagePlan: PER_API
+          Description: Monthly and burst guard for the policy research API.
+          Quota:
+            Limit: !Ref MaxMonthlyRequests
+            Period: MONTH
+          Throttle:
+            BurstLimit: 2
+            RateLimit: 1
+          Tags:
+            - Key: Project
+              Value: hokkaido-gikai-policy-research
+            - Key: Environment
+              Value: !Ref StageName
+      MethodSettings:
+        - ResourcePath: "/*"
+          HttpMethod: "*"
+          DataTraceEnabled: false
+          LoggingLevel: "OFF"
+          MetricsEnabled: false
+          ThrottlingBurstLimit: 2
+          ThrottlingRateLimit: 1
+      Tags:
+        Project: hokkaido-gikai-policy-research
+        Environment: !Ref StageName
+
+  ResearchUsageTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: quotaKey
+          AttributeType: S
+      KeySchema:
+        - AttributeName: quotaKey
+          KeyType: HASH
+      SSESpecification:
+        SSEEnabled: true
+      TimeToLiveSpecification:
+        AttributeName: expiresAt
+        Enabled: true
+      Tags:
+        - Key: Project
+          Value: hokkaido-gikai-policy-research
+        - Key: Environment
+          Value: !Ref StageName
+
+  ResearchFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: ResearchRuntimeAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Sid: WriteProjectFunctionLogs
+                Effect: Allow
+                Action:
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: !Sub arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/hokkaido-gikai-policy-research-*:*
+              - Sid: InvokeConfiguredBedrockModel
+                Effect: Allow
+                Action:
+                  - bedrock:InvokeModel
+                Resource: !Ref AllowedBedrockModelArns
+              - Sid: EnforceRequestQuota
+                Effect: Allow
+                Action:
+                  - dynamodb:UpdateItem
+                Resource: !GetAtt ResearchUsageTable.Arn
+      Tags:
+        - Key: Project
+          Value: hokkaido-gikai-policy-research
+        - Key: Environment
+          Value: !Ref StageName
+
+  ResearchFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: Searches existing public council data and optionally analyzes evidence with Bedrock.
+      CodeUri: ..
+      Handler: src/api/lambda.handler
+      Runtime: nodejs22.x
+      Architectures:
+        - arm64
+      MemorySize: 512
+      Timeout: 28
+      ReservedConcurrentExecutions: 2
+      Role: !GetAtt ResearchFunctionRole.Arn
+      Environment:
+        Variables:
+          AI_ENABLED: !Ref AiEnabled
+          BEDROCK_MODEL_ID: !Ref BedrockModelId
+          BEDROCK_MAX_OUTPUT_TOKENS: !Ref BedrockMaxOutputTokens
+          BEDROCK_TIMEOUT_MS: !Ref BedrockTimeoutMs
+          BEDROCK_INPUT_COST_PER_MILLION_TOKENS: !Ref BedrockInputCostPerMillionTokens
+          BEDROCK_OUTPUT_COST_PER_MILLION_TOKENS: !Ref BedrockOutputCostPerMillionTokens
+          MAX_RESULTS_PER_SEARCH: !Ref MaxResultsPerSearch
+          MAX_EVIDENCE_ITEMS: !Ref MaxEvidenceItems
+          MAX_EVIDENCE_CHARS: !Ref MaxEvidenceChars
+          MAX_LLM_CALLS_PER_REQUEST: !Ref MaxLlmCallsPerRequest
+          MAX_DAILY_REQUESTS: !Ref MaxDailyRequests
+          MAX_MONTHLY_REQUESTS: !Ref MaxMonthlyRequests
+          RESEARCH_CACHE_TTL_SECONDS: !Ref ResearchCacheTtlSeconds
+          INDEX_CACHE_TTL_SECONDS: !Ref IndexCacheTtlSeconds
+          GIKAI_SEARCH_INDEX_URL: !Ref GikaiSearchIndexUrl
+          GIKAI_CITY_INDEX_BASE_URL: !Ref GikaiCityIndexBaseUrl
+          GIKAI_DATA_RAW_BASE_URL: !Ref GikaiDataRawBaseUrl
+          GIKAI_PUBLIC_BASE_URL: !Ref GikaiPublicBaseUrl
+          GIKAI_FETCH_TIMEOUT_MS: !Ref GikaiFetchTimeoutMs
+          USAGE_TABLE_NAME: !Ref ResearchUsageTable
+          DEBUG_RESEARCH: "false"
+      Events:
+        ResearchEndpoint:
+          Type: Api
+          Properties:
+            RestApiId: !Ref ResearchApi
+            Path: /research
+            Method: post
+        GenaiEndpoint:
+          Type: Api
+          Properties:
+            RestApiId: !Ref ResearchApi
+            Path: /invoke
+            Method: post
+      Tags:
+        Project: hokkaido-gikai-policy-research
+        Environment: !Ref StageName
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        EntryPoints:
+          - src/api/lambda.ts
+        Format: cjs
+        Minify: true
+        OutExtension:
+          - .js=.js
+        Sourcemap: false
+        Target: es2022
+
+  ResearchFunctionLogGroup:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+    Properties:
+      LogGroupName: !Sub /aws/lambda/${ResearchFunction}
+      RetentionInDays: 7
+      Tags:
+        - Key: Project
+          Value: hokkaido-gikai-policy-research
+        - Key: Environment
+          Value: !Ref StageName
+
+Outputs:
+  ApiEndpoint:
+    Description: Base URL of the Regional API Gateway stage.
+    Value: !Sub https://${ResearchApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/${StageName}
+  ResearchEndpoint:
+    Value: !Sub https://${ResearchApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/${StageName}/research
+  GenaiEndpoint:
+    Value: !Sub https://${ResearchApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/${StageName}/invoke
+  ApiKeyId:
+    Description: API Gateway key ID only. Retrieve its value separately and keep it secret.
+    Value: !Ref ResearchApiApiKey
+  FunctionName:
+    Value: !Ref ResearchFunction
+  UsageTableName:
+    Value: !Ref ResearchUsageTable
