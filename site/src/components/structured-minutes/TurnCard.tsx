@@ -1,12 +1,14 @@
 import type { QuestionBlock, TopicBlock, Turn } from "@/lib/structured-minutes/types";
 import EvidenceLink from "./EvidenceLink";
 import CopyCitationButton from "./CopyCitationButton";
+import { formatMeetingDate } from "./formatMeetingDate";
 
 type TurnCardProps = {
   turn: Turn;
   questionBlock?: QuestionBlock;
   topicBlocks?: TopicBlock[];
   citationTitle?: string;
+  expandLongText?: boolean;
 };
 
 function turnTypeLabel(turn: Turn): string {
@@ -57,6 +59,7 @@ export default function TurnCard({
   questionBlock,
   topicBlocks = [],
   citationTitle = "",
+  expandLongText = false,
 }: TurnCardProps) {
   const body = (
     <p className="whitespace-pre-wrap text-sm leading-relaxed text-[#1A202C]">
@@ -70,6 +73,9 @@ export default function TurnCard({
       <div className="mb-3 flex flex-wrap items-center gap-2">
         <span className={`rounded-full border px-2 py-0.5 text-xs font-bold ${toneClass(turn)}`}>
           {turnTypeLabel(turn)}
+        </span>
+        <span className="text-xs font-medium text-[#718096]">
+          {formatMeetingDate(turn.meeting_date)}
         </span>
         <h3 className="text-lg font-bold leading-snug text-[#1A202C]">
           {turn.speaker_name_original}
@@ -99,7 +105,7 @@ export default function TurnCard({
       )}
 
       {turn.text_original.length > 900 ? (
-        <details>
+        <details open={expandLongText}>
           <summary className="mb-3 cursor-pointer text-sm font-bold text-[#1B3A6B]">
             原文を開く
           </summary>

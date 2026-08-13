@@ -24,6 +24,16 @@ const ADMIN_ROLE_KEYWORDS = [
 
 const CHAIR_ROLE_KEYWORDS = ["議長", "副議長"];
 
+const GENERIC_TOPIC_MATCH_TERMS = new Set([
+  "ついて",
+  "支援",
+  "情報",
+  "取組",
+  "取り組み",
+  "対応",
+  "活用",
+]);
+
 function compactName(value) {
   return String(value ?? "")
     .replace(/[ \t　]/g, "")
@@ -38,23 +48,45 @@ function normalizeText(value) {
     .trim();
 }
 
+function stripPageFooter(value) {
+  return normalizeText(
+    String(value ?? "").replace(/\n*このページに関するお問い合わせ先[\s\S]*$/u, "")
+  );
+}
+
 function normalizeRole(value) {
   return String(value ?? "").replace(/[ \t　]/g, "").trim();
 }
 
+function parseScheduleDate(year, scheduleName) {
+  const normalized = String(scheduleName ?? "").normalize("NFKC");
+  const match = normalized.match(/(\d{1,2})月(\d{1,2})日/u);
+  if (!match) return null;
+  return `${year}-${match[1].padStart(2, "0")}-${match[2].padStart(2, "0")}`;
+}
+
+function questionMethodFromNotice(text) {
+  if (/一問一答方式/u.test(text)) return "itemized";
+  if (/(?:総括質問総括答弁|一括質問一括答弁)方式/u.test(text)) {
+    return "comprehensive";
+  }
+  return "unknown";
+}
+
 function speakerType(role) {
   if (CHAIR_ROLE_KEYWORDS.some((keyword) => role.includes(keyword))) return "chair";
+  if (role.includes("事務局") || role.includes("書記")) return "secretariat";
   if (ADMIN_ROLE_KEYWORDS.some((keyword) => role.includes(keyword))) {
     return "administration";
   }
   if (role.includes("議員")) return "member";
-  if (role.includes("事務局") || role.includes("書記")) return "secretariat";
   return "other";
 }
 
-function turnType(type) {
-  if (type === "member") return "question";
-  if (type === "administration") return "answer";
+function turnType(type, scheduleName) {
+  const isGeneralQuestion = String(scheduleName ?? "").includes("一般質問");
+  if (type === "member") return isGeneralQuestion ? "question" : "other";
+  if (type === "administration") return isGeneralQuestion ? "answer" : "other";
   if (type === "chair") return "chair";
   return "other";
 }
@@ -62,14 +94,14 @@ function turnType(type) {
 function extractTopicHeadings(text) {
   const source = String(text ?? "").replace(/\s+/g, " ");
   const patterns = [
-    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+点目(?:に|として)?[、，][^。]{3,180}について(?:質問いたします|お伺いします|です)[、。]/gu,
-    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+点目(?:に|として)?[、，][^。]{3,180}に関して(?:質問いたします|お伺いします|です)[、。]/gu,
-    /次の質問(?:は|として)[、，][^。]{3,180}について(?:質問いたします|お伺いします|です)[、。]/gu,
+    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+点目(?:に|は|として)?[、，][^。]{3,180}について(?:質問いたします|お伺いを?(?:いた|致)?します|です)[、。]/gu,
+    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+点目(?:に|は|として)?[、，][^。]{3,180}に関して(?:質問いたします|お伺いを?(?:いた|致)?します|です)[、。]/gu,
+    /次の質問(?:は|として)[、，][^。]{3,180}について(?:質問いたします|お伺いを?(?:いた|致)?します|です)[、。]/gu,
     /件名[0-9０-９]+[、，][^。]{3,80}についてであります。/gu,
     /第[0-9０-９]+点目(?:として)?[、，][^。]{3,100}についてであります。/gu,
     /(?:次に|それから)[、，][0-9０-９]+点目[、，][^。]{3,100}についてであります。/gu,
     /次に、[^。]{3,100}について(?:御答弁を申し上げます|であります(?:が)?)[、。]/gu,
-    /初めに、[^。]{3,100}についてであります。/gu,
+    /(?:まず|初めに)、[^。]{3,100}について(?:御答弁を申し上げます|であります(?:が)?)[、。]/gu,
   ];
   const headings = [];
   for (const pattern of patterns) {
@@ -92,23 +124,31 @@ function normalizeTopicTitle(heading) {
     .replace(/^件名[0-9０-９]+[、，]/u, "")
     .replace(/^[0-9０-９]+件目(?:として|の)?[、，]/u, "")
     .replace(/^第[0-9０-９]+点目(?:として)?[、，]/u, "")
-    .replace(/^[0-9０-９]+点目(?:に|として)?[、，]/u, "")
+    .replace(/^[0-9０-９]+点目(?:に|は|として)?[、，]/u, "")
     .replace(/^この間大きな話題となっている、いわゆる/u, "")
     .replace(/について(?:御答弁を申し上げます|であります(?:が)?)[、。]?$/u, "")
-    .replace(/について(?:質問いたします|お伺いします|です)[、。]?$/u, "")
-    .replace(/に関して(?:質問いたします|お伺いします|です)[、。]?$/u, "")
-    .replace(/(?:質問いたします|お伺いします)[、。]?$/u, "")
+    .replace(/について(?:質問いたします|お伺いを?(?:いた|致)?します|です)[、。]?$/u, "")
+    .replace(/に関して(?:質問いたします|お伺いを?(?:いた|致)?します|です)[、。]?$/u, "")
+    .replace(/(?:質問いたします|お伺いを?(?:いた|致)?します)[、。]?$/u, "")
     .replace(/。$/u, "")
     .trim();
 }
 
 function compactTopicTitle(value) {
-  return normalizeTopicTitle(value).replace(/[ \t\n　、，。・「」『』（）()]/g, "");
+  return normalizeTopicTitle(value)
+    .normalize("NFKC")
+    .replace(/[ \t\n　、，。・「」『』（）()]/g, "");
+}
+
+function canonicalTopicTitle(value) {
+  return compactTopicTitle(value)
+    .replace(/についての/gu, "")
+    .replace(/第(?=[0-9])/gu, "");
 }
 
 function isSameTopicTitle(left, right) {
-  const compactLeft = compactTopicTitle(left);
-  const compactRight = compactTopicTitle(right);
+  const compactLeft = canonicalTopicTitle(left);
+  const compactRight = canonicalTopicTitle(right);
   if (!compactLeft || !compactRight) return false;
   const shorter = Math.min(compactLeft.length, compactRight.length);
   const longer = Math.max(compactLeft.length, compactRight.length);
@@ -126,26 +166,58 @@ function topicKeywords(title) {
     .filter((part) => part.length >= 3 && !/^(次に|初めに|項目|件名)$/u.test(part));
 }
 
+function topicMatchTerms(title) {
+  return String(title ?? "")
+    .normalize("NFKC")
+    .split(/[、，・のにとをがはへで\s　]+/u)
+    .map((part) => part.trim())
+    .filter((part) => part.length >= 2 && !/^(次に|初めに|項目|件名|ついて)$/u.test(part));
+}
+
+function textMatchesTopic(text, title) {
+  const compactText = compactTopicTitle(text);
+  const compactTitle = compactTopicTitle(title);
+  if (!compactText || !compactTitle) return false;
+  if (compactText.includes(compactTitle)) return true;
+
+  const terms = topicMatchTerms(title);
+  if (terms.length === 0) return false;
+  const subject = compactTopicTitle(terms[0]);
+  if (!subject || !compactText.includes(subject)) return false;
+
+  const remaining = terms.slice(1);
+  if (remaining.length === 0) return false;
+  const specificTerms = remaining.filter((term) => !GENERIC_TOPIC_MATCH_TERMS.has(term));
+  const requiredTerms = specificTerms.length > 0 ? specificTerms : remaining;
+  const matches = requiredTerms.filter((term) => compactText.includes(compactTopicTitle(term))).length;
+  const requiredMatches = requiredTerms.length <= 2 ? requiredTerms.length : 2;
+  return matches >= requiredMatches;
+}
+
 function turnMatchesTopic(turn, title, heading) {
-  if (turn.topic_headings?.includes(heading)) return true;
-  const keywords = topicKeywords(title);
-  if (keywords.length === 0) return false;
+  if (
+    turn.topic_headings?.some(
+      (candidate) => candidate === heading || isSameTopicTitle(candidate, title)
+    )
+  ) {
+    return true;
+  }
   const text = `${turn.text}\n${(turn.topic_headings ?? []).join("\n")}`;
-  return keywords.some((keyword) => text.includes(keyword));
+  return textMatchesTopic(text, title);
 }
 
 function topicHeadingRanges(text) {
   const source = String(text ?? "");
   const patterns = [
-    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+点目(?:に|として)?[、，][^。]{3,180}について(?:質問いたします|お伺いします|です)[、。]/gu,
-    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+点目(?:に|として)?[、，][^。]{3,180}に関して(?:質問いたします|お伺いします|です)[、。]/gu,
-    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+件目(?:として|の)?[、，][^。]{3,180}について(?:質問いたします|お伺いします|です)[、。]/gu,
-    /次の質問(?:は|として)[、，][^。]{3,180}について(?:質問いたします|お伺いします|です)[、。]/gu,
+    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+点目(?:に|は|として)?[、，][^。]{3,180}について(?:質問いたします|お伺いを?(?:いた|致)?します|です)[、。]/gu,
+    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+点目(?:に|は|として)?[、，][^。]{3,180}に関して(?:質問いたします|お伺いを?(?:いた|致)?します|です)[、。]/gu,
+    /(?:まず、|次に、|それから、|続いて、)?[0-9０-９]+件目(?:として|の)?[、，][^。]{3,180}について(?:質問いたします|お伺いを?(?:いた|致)?します|です)[、。]/gu,
+    /次の質問(?:は|として)[、，][^。]{3,180}について(?:質問いたします|お伺いを?(?:いた|致)?します|です)[、。]/gu,
     /件名[0-9０-９]+[、，][^。]{3,80}についてであります。/gu,
     /第[0-9０-９]+点目(?:として)?[、，][^。]{3,100}についてであります。/gu,
     /(?:次に|それから)[、，][0-9０-９]+点目[、，][^。]{3,100}についてであります。/gu,
     /次に、[^。]{3,100}について(?:御答弁を申し上げます|であります(?:が)?)[、。]/gu,
-    /初めに、[^。]{3,100}についてであります。/gu,
+    /(?:まず|初めに)、[^。]{3,100}について(?:御答弁を申し上げます|であります(?:が)?)[、。]/gu,
   ];
   const ranges = [];
   for (const pattern of patterns) {
@@ -189,13 +261,17 @@ function buildTopicSnippet(turn, title) {
   const text = turn.text;
   const headings = topicHeadingRanges(text);
   const titleMatch = headings.find((item) => isSameTopicTitle(item.title, title));
-  const keywords = topicKeywords(title);
-  const keywordIndex = keywords
+  const topicTerms = topicMatchTerms(title);
+  const matchingTerms = topicTerms.slice(1).filter(
+    (term) => !GENERIC_TOPIC_MATCH_TERMS.has(term)
+  );
+  const prioritizedTerms = matchingTerms.length > 0 ? matchingTerms : topicTerms;
+  const keywordIndex = prioritizedTerms
     .map((keyword) => text.indexOf(keyword))
     .filter((index) => index >= 0)
     .sort((a, b) => a - b)[0];
 
-  if (!titleMatch && typeof keywordIndex !== "number") return null;
+  if (!titleMatch && (typeof keywordIndex !== "number" || !textMatchesTopic(text, title))) return null;
 
   const boundaryMatch =
     typeof keywordIndex === "number" ? headingRangeContaining(headings, keywordIndex, text.length) : null;
@@ -318,6 +394,7 @@ function buildTurnsForSchedule({ slug, councilId, councilName, schedule, year })
   const rawText = normalizeText(rawMinute?.text ?? "");
   const roster = extractRoster(rawText);
   const proceedings = trimToProceedings(rawText);
+  const meetingDate = parseScheduleDate(year, schedule.name);
   const lines = proceedings.split("\n");
   const turns = [];
   let current = null;
@@ -326,7 +403,7 @@ function buildTurnsForSchedule({ slug, councilId, councilName, schedule, year })
 
   const flush = (endLine) => {
     if (!current) return;
-    const text = normalizeText(currentLines.join("\n"));
+    const text = stripPageFooter(currentLines.join("\n"));
     if (text.length > 0) {
       const type = speakerType(current.role);
       const ordinal = turns.length + 1;
@@ -337,13 +414,14 @@ function buildTurnsForSchedule({ slug, councilId, councilName, schedule, year })
         council_name: councilName,
         schedule_id: schedule.schedule_id,
         schedule_name: schedule.name,
+        meeting_date: meetingDate,
         year,
         source_url: rawMinute?.source_url ?? null,
         speaker_label: current.label,
         speaker_name: current.name,
         speaker_role: current.role,
         speaker_type: type,
-        turn_type: turnType(type),
+        turn_type: turnType(type, schedule.name),
         topic_headings: extractTopicHeadings(text),
         text,
         text_length: text.length,
@@ -376,6 +454,7 @@ function buildTurnsForSchedule({ slug, councilId, councilName, schedule, year })
   return {
     schedule_id: schedule.schedule_id,
     schedule_name: schedule.name,
+    meeting_date: meetingDate,
     source_url: rawMinute?.source_url ?? null,
     roster: {
       members: roster.members,
@@ -387,9 +466,22 @@ function buildTurnsForSchedule({ slug, councilId, councilName, schedule, year })
 }
 
 function buildQuestionBlocks(slug, councilId, scheduleResult) {
+  if (!scheduleResult.schedule_name.includes("一般質問")) return [];
+
   const blocks = [];
   let current = null;
   const turnsById = new Map(scheduleResult.turns.map((turn) => [turn.id, turn]));
+
+  const findQuestionMethod = (turnIndex, questionerName) => {
+    for (let index = turnIndex - 1; index >= Math.max(0, turnIndex - 4); index -= 1) {
+      const candidate = scheduleResult.turns[index];
+      if (candidate.speaker_type !== "chair") continue;
+      if (!candidate.text.includes("質問を許します")) continue;
+      if (!compactName(candidate.text).includes(compactName(questionerName))) continue;
+      return questionMethodFromNotice(candidate.text);
+    }
+    return "unknown";
+  };
 
   const close = () => {
     if (!current) return;
@@ -407,7 +499,7 @@ function buildQuestionBlocks(slug, councilId, scheduleResult) {
     current = null;
   };
 
-  for (const turn of scheduleResult.turns) {
+  for (const [turnIndex, turn] of scheduleResult.turns.entries()) {
     if (turn.speaker_type === "member") {
       if (!current || current.questioner_name !== turn.speaker_name) {
         close();
@@ -417,21 +509,26 @@ function buildQuestionBlocks(slug, councilId, scheduleResult) {
           council_id: councilId,
           schedule_id: scheduleResult.schedule_id,
           schedule_name: scheduleResult.schedule_name,
+          meeting_date: scheduleResult.meeting_date,
           source_url: scheduleResult.source_url,
           questioner_name: turn.speaker_name,
           questioner_label: turn.speaker_label,
+          question_method: findQuestionMethod(turnIndex, turn.speaker_name),
+          turn_ids: [],
           question_turn_ids: [],
           answer_turn_ids: [],
           answer_speaker_labels: [],
           excerpt: "",
         };
       }
+      current.turn_ids.push(turn.id);
       current.question_turn_ids.push(turn.id);
       if (!current.excerpt) current.excerpt = turn.text.replace(/\s+/g, " ").slice(0, 160);
       continue;
     }
 
     if (turn.speaker_type === "administration" && current) {
+      current.turn_ids.push(turn.id);
       current.answer_turn_ids.push(turn.id);
       if (!current.answer_speaker_labels.includes(turn.speaker_label)) {
         current.answer_speaker_labels.push(turn.speaker_label);
@@ -456,7 +553,13 @@ function buildTopicBlocks(slug, councilId, questionBlocks, turns) {
 
     for (const heading of questionBlock.topic_headings ?? []) {
       const title = normalizeTopicTitle(heading);
-      if (!title || title.length < 4 || seenTitles.has(title)) continue;
+      if (
+        !title ||
+        title.length < 4 ||
+        [...seenTitles].some((seenTitle) => isSameTopicTitle(seenTitle, title))
+      ) {
+        continue;
+      }
       seenTitles.add(title);
 
       const relatedTurns = blockTurns.filter((turn) => turnMatchesTopic(turn, title, heading));

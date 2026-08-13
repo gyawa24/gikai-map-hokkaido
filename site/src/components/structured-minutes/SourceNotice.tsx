@@ -14,7 +14,7 @@ export default function SourceNotice({ sourceDocument }: SourceNoticeProps) {
         発言本文と原文抜粋は公式会議録の原文を使い、公式原文は変更していません。
       </p>
       <p className="mt-1">
-        質問項目名・分類タグ・読みものへの導線は地方議会ドットコム編集部による整理です。
+        質問項目名・分類タグは構造化処理で付与した整理情報で、各項目に確認状況を表示しています。
         正式な内容は公式会議録をご確認ください。
       </p>
       <div className="mt-3">
@@ -23,7 +23,7 @@ export default function SourceNotice({ sourceDocument }: SourceNoticeProps) {
             official_url: sourceDocument.official_url,
             search_hint: sourceDocument.title,
           }}
-          label="公式会議録を確認"
+          label="公式会議録（初日・代表ページ）を確認"
         />
       </div>
     </section>

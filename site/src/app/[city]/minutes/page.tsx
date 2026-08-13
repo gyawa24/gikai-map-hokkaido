@@ -8,6 +8,7 @@ import MinutesIndexClient from "@/components/MinutesIndexClient";
 import { hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
+import { claimsMinutesBodyIsMissing } from "@/lib/minutesPresentation";
 import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
 import { buildBreadcrumbList } from "@/lib/structuredData";
 import { hasStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
@@ -136,15 +137,20 @@ export default async function CityMinutesPage({
   }
 
   const items = await Promise.all(
-    allItems.map(async (item) => ({
-      ...item,
-      enriched: getEnriched(city, item.council_id),
-      category: categoryLabel(item.type_label),
-      hasStructuredMinutes:
+    allItems.map(async (item) => {
+      const hasStructured =
         indexSource === "local"
           ? await hasStructuredMinutes(city, String(item.council_id))
-          : false,
-    }))
+          : false;
+      const enriched = getEnriched(city, item.council_id);
+      return {
+        ...item,
+        enriched:
+          hasStructured && claimsMinutesBodyIsMissing(enriched) ? null : enriched,
+        category: categoryLabel(item.type_label),
+        hasStructuredMinutes: hasStructured,
+      };
+    })
   );
 
   const enrichedCount = items.filter((i) => i.enriched).length;

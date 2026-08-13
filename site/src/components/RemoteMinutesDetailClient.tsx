@@ -2,13 +2,16 @@
 
 import { useEffect, useState } from "react";
 import type { MinutesEnriched, MinutesIndexItem, MinutesSession } from "@/types/minutes";
+import { minutesContentLabel, visibleMinutesEnriched } from "@/lib/minutesPresentation";
 import MinutesDetailClient from "./MinutesDetailClient";
+import StructuredMinutesCallout from "./StructuredMinutesCallout";
 
 type Props = {
   cityName: string;
   sessionUrl: string;
   enrichedUrl: string;
   initialSession?: MinutesIndexItem;
+  structuredMinutesHref?: string;
 };
 
 type LoadState =
@@ -34,13 +37,13 @@ function MinutesHeading({
   japaneseYear,
   typeLabel,
   scheduleCount,
-  totalSpeeches,
+  contentLabel,
 }: {
   name: string;
   japaneseYear?: string;
   typeLabel?: string;
   scheduleCount?: number;
-  totalSpeeches?: number;
+  contentLabel?: string;
 }) {
   const category = typeCategory(typeLabel ?? "");
   return (
@@ -52,10 +55,10 @@ function MinutesHeading({
         </div>
       )}
       <h1 className="theme-section-title mb-2 text-2xl leading-snug">{name}</h1>
-      {(scheduleCount !== undefined || totalSpeeches !== undefined) && (
+      {(scheduleCount !== undefined || contentLabel !== undefined) && (
         <div className="flex flex-wrap gap-4 text-sm text-[#4A5568]">
           {scheduleCount !== undefined && <span>{scheduleCount}日程</span>}
-          {totalSpeeches !== undefined && <span>{totalSpeeches}件の発言・議題</span>}
+          {contentLabel !== undefined && <span>{contentLabel}</span>}
         </div>
       )}
     </section>
@@ -76,6 +79,7 @@ export default function RemoteMinutesDetailClient({
   sessionUrl,
   enrichedUrl,
   initialSession,
+  structuredMinutesHref,
 }: Props) {
   const [state, setState] = useState<LoadState>({ status: "loading" });
 
@@ -116,6 +120,7 @@ export default function RemoteMinutesDetailClient({
           typeLabel={initialSession?.type_label}
           scheduleCount={initialSession?.schedule_count}
         />
+        {structuredMinutesHref && <StructuredMinutesCallout href={structuredMinutesHref} />}
         <div className="theme-card-soft p-5">
           <p className="text-sm text-[#4A5568]">議事録本文を読み込んでいます。</p>
         </div>
@@ -132,6 +137,7 @@ export default function RemoteMinutesDetailClient({
           typeLabel={initialSession?.type_label}
           scheduleCount={initialSession?.schedule_count}
         />
+        {structuredMinutesHref && <StructuredMinutesCallout href={structuredMinutesHref} />}
         <div className="theme-alert p-5">
           <p className="text-sm font-semibold text-[#7A5A00]">{state.message}</p>
           <p className="mt-2 text-xs text-[#7A5A00]">
@@ -142,12 +148,8 @@ export default function RemoteMinutesDetailClient({
     );
   }
 
-  const { session, enriched } = state;
-  const totalSpeeches = session.schedules.reduce(
-    (acc, schedule) =>
-      acc + schedule.minutes.filter((minute) => minute.minute_type !== "名簿").length,
-    0
-  );
+  const { session } = state;
+  const enriched = visibleMinutesEnriched(session, state.enriched);
 
   return (
     <>
@@ -156,8 +158,10 @@ export default function RemoteMinutesDetailClient({
         japaneseYear={session.japanese_year}
         typeLabel={session.type_label}
         scheduleCount={session.schedules.length}
-        totalSpeeches={totalSpeeches}
+        contentLabel={minutesContentLabel(session)}
       />
+
+      {structuredMinutesHref && <StructuredMinutesCallout href={structuredMinutesHref} />}
 
       <MinutesDetailClient
         session={session}

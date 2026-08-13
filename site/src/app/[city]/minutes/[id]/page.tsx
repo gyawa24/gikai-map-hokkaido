@@ -6,8 +6,14 @@ import type { Metadata } from "next";
 import type { MinutesSession, MinutesEnriched, MinutesIndexItem } from "@/types/minutes";
 import MinutesDetailClient from "@/components/MinutesDetailClient";
 import RemoteMinutesDetailClient from "@/components/RemoteMinutesDetailClient";
+import StructuredMinutesCallout from "@/components/StructuredMinutesCallout";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
+import {
+  countMinutesContent,
+  minutesContentLabel,
+  visibleMinutesEnriched,
+} from "@/lib/minutesPresentation";
 import { hasStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
 
 // Cloudflare Workers の静的アセットキャッシュは読み取り専用。
@@ -186,7 +192,9 @@ export async function generateMetadata({
     localSessionCandidate && isLargeLocalSession(localSessionCandidate)
       ? null
       : getLocalSession(city, id);
-  const enriched = session ? await getEnriched(city, id) : null;
+  const enriched = session
+    ? visibleMinutesEnriched(session, await getEnriched(city, id))
+    : null;
 
   const title = session
     ? `${session.name} - ${cityName}議会`
@@ -220,14 +228,6 @@ function typeCategory(typeLabel: string): string {
   return "";
 }
 
-function countSpeeches(session: MinutesSession): number {
-  return session.schedules.reduce(
-    (acc, s) =>
-      acc + s.minutes.filter((m) => m.minute_type !== "名簿").length,
-    0
-  );
-}
-
 function sessionTextLength(session: MinutesSession): number {
   return session.schedules.reduce(
     (scheduleTotal, schedule) =>
@@ -239,7 +239,7 @@ function sessionTextLength(session: MinutesSession): number {
 
 function shouldRenderClientLoadedSession(session: MinutesSession): boolean {
   return (
-    countSpeeches(session) > REMOTE_RENDER_SPEECH_THRESHOLD ||
+    countMinutesContent(session) > REMOTE_RENDER_SPEECH_THRESHOLD ||
     sessionTextLength(session) > REMOTE_RENDER_TEXT_LENGTH_THRESHOLD
   );
 }
@@ -291,7 +291,13 @@ export default async function CityMinutesDetailPage({
     );
   }
 
-  const indexItem = await getMinutesIndexItem(city, id);
+  const [indexItem, canReadStructuredMinutes] = await Promise.all([
+    getMinutesIndexItem(city, id),
+    hasStructuredMinutes(city, id),
+  ]);
+  const structuredMinutesHref = canReadStructuredMinutes
+    ? `/${city}/minutes/${id}/turns`
+    : undefined;
   const localSessionCandidate = getLocalSessionCandidate(city, id);
   if (localSessionCandidate && isLargeLocalSession(localSessionCandidate)) {
     return (
@@ -313,6 +319,7 @@ export default async function CityMinutesDetailPage({
           sessionUrl={rawUrl(localSessionCandidate.remotePath)}
           enrichedUrl={rawUrl(`site/data/${city}/minutes/enriched/${id}.json`)}
           initialSession={indexItem ?? undefined}
+          structuredMinutesHref={structuredMinutesHref}
         />
       </div>
     );
@@ -342,6 +349,7 @@ export default async function CityMinutesDetailPage({
           sessionUrl={rawUrl(remoteSessionPath)}
           enrichedUrl={rawUrl(`site/data/${city}/minutes/enriched/${id}.json`)}
           initialSession={indexItem ?? undefined}
+          structuredMinutesHref={structuredMinutesHref}
         />
       </div>
     );
@@ -369,15 +377,15 @@ export default async function CityMinutesDetailPage({
           sessionUrl={rawUrl(sessionPath)}
           enrichedUrl={rawUrl(`site/data/${city}/minutes/enriched/${id}.json`)}
           initialSession={indexItem ?? undefined}
+          structuredMinutesHref={structuredMinutesHref}
         />
       </div>
     );
   }
 
-  const enriched = await getEnriched(city, id);
+  const enriched = visibleMinutesEnriched(session, await getEnriched(city, id));
   const category = typeCategory(session.type_label);
-  const canReadStructuredMinutes = await hasStructuredMinutes(city, id);
-  const totalSpeeches = countSpeeches(session);
+  const contentLabel = minutesContentLabel(session);
 
   return (
     <div className="page-shell max-w-6xl">
@@ -444,32 +452,12 @@ export default async function CityMinutesDetailPage({
             >
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
-            {totalSpeeches}件の発言・議題
+            {contentLabel}
           </span>
         </div>
       </section>
 
-      {canReadStructuredMinutes && (
-        <section className="mb-5 rounded-2xl border border-[#C5D0E6] bg-white px-4 py-4 shadow-sm">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="text-sm font-bold text-[#1B3A6B]">
-                この議事録を発言・質問項目別に読む
-              </p>
-              <p className="mt-1 text-sm leading-relaxed text-[#4A5568]">
-                公式会議録の原文をもとに、発言単位・質問者別・質問項目別に整理した試験版ビューです。
-                正式な内容は公式会議録をご確認ください。
-              </p>
-            </div>
-            <a
-              href={`/${city}/minutes/${id}/turns`}
-              className="inline-flex shrink-0 items-center justify-center rounded-full border border-[#C5D0E6] bg-[#E8EEF7] px-4 py-2 text-sm font-bold text-[#1B3A6B] transition-colors hover:bg-[#DCE7F6]"
-            >
-              発言・質問項目別に読む
-            </a>
-          </div>
-        </section>
-      )}
+      {structuredMinutesHref && <StructuredMinutesCallout href={structuredMinutesHref} />}
 
       <Suspense>
         <MinutesDetailClient session={session} enriched={enriched} cityName={cityName} />
