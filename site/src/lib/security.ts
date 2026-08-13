@@ -1,9 +1,10 @@
 const SAFE_PATH_TOKEN_RE = /^[A-Za-z0-9._-]+$/;
 
 export function getClientAddress(req: Request): string {
+  const cloudflareIp = req.headers.get("cf-connecting-ip")?.trim();
   const forwarded = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim();
   const realIp = req.headers.get("x-real-ip")?.trim();
-  const candidate = realIp || forwarded || "unknown";
+  const candidate = cloudflareIp || realIp || forwarded || "unknown";
   return candidate.slice(0, 128);
 }
 

@@ -11,6 +11,7 @@ const MEMBERS_PREFIX = "/members/";
 const MEMBER_EXPORT_PATH = "/api/export/members";
 const SITE_OG_IMAGE_PATH = "/api/og-site";
 const SEARCH_PATH = "/search";
+const DATA_LOOP_PREVIEW_PATH = "/data-loop-preview";
 const SEARCH_RESULTS_NOINDEX_HEADER = "noindex, follow";
 const BUDGET_IMAGE_EXTENSIONS = new Set([".avif", ".jpg", ".jpeg", ".png", ".webp"]);
 const MEMBER_IMAGE_EXTENSIONS = new Set([".avif", ".jpg", ".jpeg", ".png", ".webp"]);
@@ -40,6 +41,14 @@ function withPreviewNoindex(request: NextRequest, response: NextResponse) {
   } else if (request.nextUrl.pathname === SEARCH_PATH && request.nextUrl.search) {
     response.headers.set("X-Robots-Tag", SEARCH_RESULTS_NOINDEX_HEADER);
   }
+  return response;
+}
+
+function withRestrictedPreviewHeaders(response: NextResponse) {
+  response.headers.set("Cache-Control", "private, no-store, max-age=0");
+  response.headers.set("Pragma", "no-cache");
+  response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  response.headers.set("Content-Security-Policy", CONTENT_SECURITY_POLICY);
   return response;
 }
 
@@ -77,6 +86,9 @@ export function middleware(request: NextRequest) {
   if (canonicalRedirect) return canonicalRedirect;
 
   const { pathname } = request.nextUrl;
+  if (pathname === DATA_LOOP_PREVIEW_PATH || pathname.startsWith(`${DATA_LOOP_PREVIEW_PATH}/`)) {
+    return withRestrictedPreviewHeaders(NextResponse.next());
+  }
   if (pathname.startsWith(BUDGETS_PREFIX)) {
     const imageExtension = pathname.match(/\.[a-z0-9]+$/i)?.[0]?.toLowerCase();
     if (imageExtension && BUDGET_IMAGE_EXTENSIONS.has(imageExtension)) {

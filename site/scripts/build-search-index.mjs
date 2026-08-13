@@ -23,6 +23,7 @@ const OUT_FILE = path.join(DATA_DIR, "_search-index.json");
 const PUBLIC_GENERATED_DIR = path.join(SITE_DIR, "public", "generated");
 const PUBLIC_SEARCH_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "search-index.json");
 const PUBLIC_RECENT_SEARCH_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "search-index-recent.json");
+const PUBLIC_RESEARCH_COVERAGE_FILE = path.join(PUBLIC_GENERATED_DIR, "research-coverage.json");
 const PUBLIC_CITY_SEARCH_INDEX_DIR = path.join(PUBLIC_GENERATED_DIR, "search-indexes");
 const PUBLIC_CITY_BIGRAM_INDEX_DIR = path.join(PUBLIC_GENERATED_DIR, "search-bigram-cities");
 const PUBLIC_TOPICS_INDEX_FILE = path.join(PUBLIC_GENERATED_DIR, "topics-index.json");
@@ -42,6 +43,18 @@ const BIGRAM_MIN_CITY_INDEX_BYTES = 250 * 1024;
 
 function cleanText(s) {
   return (s ?? "").replace(/\s+/g, " ").trim();
+}
+
+function claimsMinutesBodyIsMissing(summary) {
+  return /本文(?:データ)?(?:が|は)?[^。]{0,40}(?:含まれていない|収録されていない|取得できていない)/u.test(
+    String(summary ?? "")
+  );
+}
+
+function hasStructuredMinutesDocument(city, councilId) {
+  return fs.existsSync(
+    path.join(DATA_DIR, "structured-minutes", city, `${councilId}.json`)
+  );
 }
 
 function cleanIndexText(s) {
@@ -507,6 +520,12 @@ function buildEnrichedDocs(city, cityName) {
     .flatMap((file) => {
       const doc = readJson(path.join(enrichedDir, file), null);
       if (!doc) return [];
+      if (
+        claimsMinutesBodyIsMissing(doc.summary) &&
+        hasStructuredMinutesDocument(city, doc.council_id)
+      ) {
+        return [];
+      }
       return [
         {
           city,
@@ -775,6 +794,21 @@ function buildIndex() {
     count: enriched.length,
     records: enriched,
   };
+  const agendaCountByCity = new Map();
+  for (const agenda of agendas) {
+    agendaCountByCity.set(agenda.city, (agendaCountByCity.get(agenda.city) ?? 0) + 1);
+  }
+  const researchCoverageOut = {
+    version: 1,
+    generated_at: out.generated_at,
+    source: "public_agenda_search_index",
+    municipalities: runtimeOut.municipalities
+      .filter((municipality) => (agendaCountByCity.get(municipality.slug) ?? 0) > 0)
+      .map((municipality) => ({
+        ...municipality,
+        agendaCount: agendaCountByCity.get(municipality.slug),
+      })),
+  };
 
   fs.writeFileSync(OUT_FILE, JSON.stringify(out));
   fs.mkdirSync(PUBLIC_GENERATED_DIR, { recursive: true });
@@ -783,6 +817,7 @@ function buildIndex() {
   fs.mkdirSync(PUBLIC_CITY_BIGRAM_INDEX_DIR, { recursive: true });
   fs.writeFileSync(PUBLIC_SEARCH_INDEX_FILE, JSON.stringify(runtimeOut));
   fs.writeFileSync(PUBLIC_RECENT_SEARCH_INDEX_FILE, JSON.stringify(recentRuntimeOut));
+  fs.writeFileSync(PUBLIC_RESEARCH_COVERAGE_FILE, JSON.stringify(researchCoverageOut));
   for (const city of cityDirs) {
     const cityRuntimeOut = {
       ...out,
