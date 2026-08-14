@@ -43,6 +43,7 @@ check(anonymousResearchResponse.status === 200, `Anonymous research page returne
 checkRestrictedHeaders(anonymousResearchResponse, "anonymous research page");
 check(anonymousResearchHtml.includes("限定公開ページ"), "Anonymous research page does not show the access gate.");
 check(!anonymousResearchHtml.includes("自治体絞り込み"), "Anonymous research page leaked the research form.");
+check(!anonymousResearchHtml.includes("R7→R8 予算変化ダッシュボード"), "Anonymous research page leaked the budget dashboard.");
 
 const loginResponse = await fetch(sessionUrl, {
   method: "POST",
@@ -79,7 +80,15 @@ const authenticatedResearchResponse = await fetch(researchUrl, {
 const authenticatedResearchHtml = await authenticatedResearchResponse.text();
 check(authenticatedResearchResponse.status === 200, `Authenticated research page returned HTTP ${authenticatedResearchResponse.status}.`);
 checkRestrictedHeaders(authenticatedResearchResponse, "authenticated research page");
-for (const marker of ["北海道・議会政策AIリサーチャー", "自治体絞り込み", "調査を開始する"]) {
+for (const marker of [
+  "北海道・議会政策AIリサーチャー",
+  "R7→R8 予算変化ダッシュボード",
+  "増加額 上位",
+  "R7・R8 比較表と出典",
+  "データ充足状況",
+  "自治体絞り込み",
+  "調査を開始する",
+]) {
   check(authenticatedResearchHtml.includes(marker), `Authenticated research page is missing: ${marker}.`);
 }
 

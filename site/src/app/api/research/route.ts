@@ -4,6 +4,10 @@ import { getCityCapabilities } from "@/lib/cityCapabilities";
 import { getMunicipalities } from "@/lib/municipalities";
 import { checkRateLimit } from "@/lib/rateLimit";
 import {
+  getBudgetResearchMunicipalityIds,
+  searchBudgetResearch,
+} from "@/lib/budgetResearch";
+import {
   getResearchAuthConfig,
   RESEARCH_SESSION_COOKIE_NAME,
   verifyResearchSessionToken,
@@ -40,7 +44,11 @@ const researchRequestSchema = z
       .array(z.string().regex(/^[a-z0-9-]+$/))
       .max(180)
       .optional(),
-    sourceTypes: z.array(z.enum(SOURCE_TYPES)).max(SOURCE_TYPES.length).optional(),
+    sourceTypes: z
+      .array(z.enum(SOURCE_TYPES))
+      .min(1)
+      .max(SOURCE_TYPES.length)
+      .optional(),
     fiscalYears: z.array(z.number().int().min(1900).max(2200)).max(50).optional(),
     mode: z.enum(RESEARCH_MODES).optional(),
   })
@@ -48,7 +56,7 @@ const researchRequestSchema = z
 
 const cityCapabilities = getCityCapabilities();
 const researchCoverageMunicipalityIds = getResearchCoverageMunicipalityIds();
-const searchableMunicipalitySlugs = new Set(
+const minutesSearchableMunicipalitySlugs = new Set(
   getMunicipalities()
     .filter(
       (municipality) =>
@@ -60,6 +68,7 @@ const searchableMunicipalitySlugs = new Set(
     )
     .map((municipality) => municipality.slug)
 );
+const budgetSearchableMunicipalitySlugs = getBudgetResearchMunicipalityIds();
 
 class RequestBodyTooLargeError extends Error {
   constructor() {
@@ -176,6 +185,7 @@ function getRetryAfter(response: Response): number | undefined {
 }
 
 export async function POST(request: NextRequest) {
+  const startedAt = Date.now();
   const requestId = crypto.randomUUID();
   const authConfig = getResearchAuthConfig();
   if (!authConfig) {
@@ -269,8 +279,52 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const unknownMunicipality = parsed.data.municipalities?.find(
-    (slug) => !searchableMunicipalitySlugs.has(slug)
+  const normalizedRequest = normalizeRequest(parsed.data);
+  const requestedSourceTypes = normalizedRequest.sourceTypes ?? ["plenary_minutes"];
+  const includesBudget = requestedSourceTypes.includes("budget");
+
+  if (includesBudget && requestedSourceTypes.length !== 1) {
+    return errorResponse(
+      400,
+      "INVALID_REQUEST",
+      "限定テストでは、予算と他の資料を同時に検索できません。対象資料を1つ選んでください。",
+      { requestId }
+    );
+  }
+
+  if (includesBudget) {
+    if (normalizedRequest.municipalities?.length !== 1) {
+      return errorResponse(
+        400,
+        "INVALID_REQUEST",
+        "予算の限定テストでは自治体を1つ選んでください。",
+        { requestId }
+      );
+    }
+    if (!budgetSearchableMunicipalitySlugs.has(normalizedRequest.municipalities[0])) {
+      return errorResponse(
+        400,
+        "INVALID_REQUEST",
+        "この自治体の予算データは限定テストの対象外です。",
+        { requestId }
+      );
+    }
+    if (normalizedRequest.fiscalYears?.some((year) => year !== 2025 && year !== 2026)) {
+      return errorResponse(
+        400,
+        "INVALID_REQUEST",
+        "予算の限定テストはR7（2025年度）・R8（2026年度）のみ対象です。",
+        { requestId }
+      );
+    }
+    return NextResponse.json(
+      searchBudgetResearch(normalizedRequest, requestId, startedAt),
+      { headers: NO_STORE_HEADERS }
+    );
+  }
+
+  const unknownMunicipality = normalizedRequest.municipalities?.find(
+    (slug) => !minutesSearchableMunicipalitySlugs.has(slug)
   );
   if (unknownMunicipality) {
     return errorResponse(
@@ -304,7 +358,7 @@ export async function POST(request: NextRequest) {
         "x-api-key": apiKey,
         "x-request-id": requestId,
       },
-      body: JSON.stringify(normalizeRequest(parsed.data)),
+      body: JSON.stringify(normalizedRequest),
       cache: "no-store",
       signal: controller.signal,
     });

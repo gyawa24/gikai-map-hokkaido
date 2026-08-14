@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
+import ResearchBudgetFindings from "@/components/research/ResearchBudgetFindings";
 import {
   RESEARCH_QUERY_MAX_LENGTH,
+  type BudgetNumericFinding,
   type Evidence,
   type ResearchMode,
   type ResearchMunicipalityOption,
   type ResearchResponse,
+  type SourceType,
 } from "@/types/research";
 
 type Props = {
@@ -51,6 +54,25 @@ const EVIDENCE_LEVEL_LABELS: Record<Evidence["evidenceLevel"], string> = {
   metadata_only: "書誌情報のみ",
 };
 
+type SelectableSourceType = Extract<SourceType, "plenary_minutes" | "budget">;
+
+const SOURCE_OPTIONS: Array<{
+  value: SelectableSourceType;
+  label: string;
+  description: string;
+}> = [
+  {
+    value: "plenary_minutes",
+    label: "本会議議事録",
+    description: "収録済み議事録から発言と根拠を検索します。",
+  },
+  {
+    value: "budget",
+    label: "予算 R7・R8（限定テスト）",
+    description: "千歳・恵庭・江別・札幌・旭川の構造化予算を検索します。",
+  },
+];
+
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
@@ -72,6 +94,51 @@ function isEvidence(value: unknown): value is Evidence {
     typeof value.sourceUrl === "string" &&
     typeof value.evidenceLevel === "string" &&
     value.evidenceLevel in EVIDENCE_LEVEL_LABELS
+  );
+}
+
+function isBudgetFinding(value: unknown): value is BudgetNumericFinding {
+  if (!isRecord(value) || !isRecord(value.retrieval) || !Array.isArray(value.evidences)) {
+    return false;
+  }
+  const validKind =
+    value.kind === "fact" ||
+    value.kind === "comparison" ||
+    value.kind === "structural_event";
+  const validAmount = (amount: unknown) =>
+    amount === null ||
+    (isRecord(amount) &&
+      Number.isInteger(amount.fiscalYear) &&
+      Number.isSafeInteger(amount.amountJpy) &&
+      Number.isFinite(amount.sourceReportedValue) &&
+      Number.isSafeInteger(amount.sourcePrecisionJpy) &&
+      typeof amount.legislativeStatus === "string");
+  return (
+    validKind &&
+    typeof value.id === "string" &&
+    typeof value.municipalityId === "string" &&
+    typeof value.municipalityName === "string" &&
+    typeof value.label === "string" &&
+    value.technicalValidation === "passed" &&
+    value.humanReviewStatus === "pending" &&
+    validAmount(value.fact) &&
+    (value.comparison === null ||
+      (isRecord(value.comparison) &&
+        validAmount(value.comparison.baseline) &&
+        validAmount(value.comparison.current) &&
+        Number.isSafeInteger(value.comparison.deltaAmountJpy))) &&
+    (value.structuralEvent === null || isRecord(value.structuralEvent)) &&
+    (value.retrieval.mode === "structured_only" ||
+      value.retrieval.mode === "structured_and_private_chunk") &&
+    value.evidences.every(
+      (evidence) =>
+        isRecord(evidence) &&
+        typeof evidence.evidenceId === "string" &&
+        typeof evidence.documentRevisionId === "string" &&
+        typeof evidence.officialLandingUrl === "string" &&
+        (evidence.format === "pdf" || evidence.format === "html") &&
+        typeof evidence.sourceTable === "string"
+    )
   );
 }
 
@@ -121,6 +188,8 @@ function isResearchResponse(value: unknown): value is ResearchResponse {
     hasStringArray(result.nextResearchItems) &&
     Array.isArray(result.evidences) &&
     result.evidences.every(isEvidence) &&
+    (result.budgetFindings === undefined ||
+      (Array.isArray(result.budgetFindings) && result.budgetFindings.every(isBudgetFinding))) &&
     hasStringArray(result.limitations) &&
     (metadata.ai.status === "completed" ||
       metadata.ai.status === "fallback" ||
@@ -181,6 +250,30 @@ function ResultSections({ response }: { response: ResearchResponse }) {
     () => new Map(result.evidences.map((evidence, index) => [evidence.id, index + 1])),
     [result.evidences]
   );
+
+  if (result.budgetFindings) {
+    return (
+      <div className="mt-8 space-y-6">
+        <div className="theme-card-soft flex flex-wrap gap-x-5 gap-y-1 px-5 py-3 text-sm text-[#4A5568]">
+          <span>構造化結果: {metadata.searchResultCount}件</span>
+          <span>出典位置: {metadata.evidenceCount}件</span>
+          <span>処理時間: {(metadata.durationMs / 1000).toFixed(1)}秒</span>
+        </div>
+        <section className="theme-panel px-5 py-5 sm:px-6" aria-labelledby="research-summary">
+          <h2 id="research-summary" className="theme-section-title mb-3 text-xl sm:text-2xl">
+            調査概要
+          </h2>
+          <p className="whitespace-pre-wrap text-base leading-relaxed text-[#1A202C]">
+            {result.summary}
+          </p>
+        </section>
+        <ResearchBudgetFindings
+          findings={result.budgetFindings}
+          limitations={result.limitations}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="mt-8 space-y-6">
@@ -416,6 +509,7 @@ function errorMessage(value: unknown, status: number): string {
 }
 
 export default function ResearchClient({ municipalities }: Props) {
+  const [sourceType, setSourceType] = useState<SelectableSourceType>("plenary_minutes");
   const [query, setQuery] = useState("");
   const [selectedMunicipalities, setSelectedMunicipalities] = useState<string[]>([]);
   const [yearFrom, setYearFrom] = useState("");
@@ -426,19 +520,34 @@ export default function ResearchClient({ municipalities }: Props) {
   const [response, setResponse] = useState<ResearchResponse | null>(null);
   const resultRef = useRef<HTMLDivElement>(null);
 
+  const availableMunicipalities = useMemo(
+    () => municipalities.filter((municipality) => municipality.sourceTypes.includes(sourceType)),
+    [municipalities, sourceType]
+  );
+
   const municipalitiesByRegion = useMemo(() => {
     const groups = new Map<string, ResearchMunicipalityOption[]>();
-    for (const municipality of municipalities) {
+    for (const municipality of availableMunicipalities) {
       const values = groups.get(municipality.region) ?? [];
       values.push(municipality);
       groups.set(municipality.region, values);
     }
     return [...groups.entries()];
-  }, [municipalities]);
+  }, [availableMunicipalities]);
 
   useEffect(() => {
     if (response) resultRef.current?.focus();
   }, [response]);
+
+  function changeSourceType(value: SelectableSourceType) {
+    setSourceType(value);
+    setSelectedMunicipalities([]);
+    setYearFrom("");
+    setYearTo("");
+    setMode("research");
+    setResponse(null);
+    setError(null);
+  }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -448,12 +557,23 @@ export default function ResearchClient({ municipalities }: Props) {
       return;
     }
 
+    if (sourceType === "budget" && selectedMunicipalities.length !== 1) {
+      setError("予算の限定テストでは自治体を1つ選んでください。");
+      return;
+    }
+
     let fiscalYears: number[] | undefined;
     if (yearFrom || yearTo) {
       const from = Number(yearFrom);
       const to = Number(yearTo);
-      if (!Number.isInteger(from) || !Number.isInteger(to) || from < 1900 || to > 2200 || from > to) {
-        setError("年度は1900〜2200の範囲で、開始年度から終了年度の順に指定してください。");
+      const minimumYear = sourceType === "budget" ? 2025 : 1900;
+      const maximumYear = sourceType === "budget" ? 2026 : 2200;
+      if (!Number.isInteger(from) || !Number.isInteger(to) || from < minimumYear || to > maximumYear || from > to) {
+        setError(
+          sourceType === "budget"
+            ? "予算はR7（2025年度）〜R8（2026年度）の範囲で指定してください。"
+            : "年度は1900〜2200の範囲で、開始年度から終了年度の順に指定してください。"
+        );
         return;
       }
       if (to - from + 1 > 50) {
@@ -474,7 +594,7 @@ export default function ResearchClient({ municipalities }: Props) {
         body: JSON.stringify({
           query: normalizedQuery,
           mode,
-          sourceTypes: ["plenary_minutes"],
+          sourceTypes: [sourceType],
           ...(selectedMunicipalities.length
             ? { municipalities: selectedMunicipalities }
             : {}),
@@ -507,6 +627,27 @@ export default function ResearchClient({ municipalities }: Props) {
         </h2>
         <form className="mt-5 space-y-6" onSubmit={handleSubmit}>
           <div>
+            <label htmlFor="research-source-type" className="block font-bold text-[#1B3A6B]">
+              対象資料
+            </label>
+            <select
+              id="research-source-type"
+              value={sourceType}
+              onChange={(event) => changeSourceType(event.target.value as SelectableSourceType)}
+              className="theme-select mt-2 px-3 py-2 text-base"
+            >
+              {SOURCE_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+            <p className="mt-2 text-sm text-[#4A5568]">
+              {SOURCE_OPTIONS.find((option) => option.value === sourceType)?.description}
+            </p>
+          </div>
+
+          <div>
             <label htmlFor="research-query" className="block font-bold text-[#1B3A6B]">
               質問 <span className="text-[#C53030]">必須</span>
             </label>
@@ -518,11 +659,33 @@ export default function ResearchClient({ municipalities }: Props) {
               rows={5}
               required
               className="theme-input mt-2 min-h-36 resize-y px-4 py-3 text-base"
-              placeholder="例：学校給食費無償化について、財源、対象範囲、行政答弁を中心に整理してください。"
+              placeholder={
+                sourceType === "budget"
+                  ? "例：千歳市の市税をR7とR8で比較し、差額と出典を表示してください。"
+                  : "例：学校給食費無償化について、財源、対象範囲、行政答弁を中心に整理してください。"
+              }
             />
             <p className="mt-1 text-right text-xs text-[#718096]">
               {query.length} / {RESEARCH_QUERY_MAX_LENGTH}文字
             </p>
+            {sourceType === "budget" ? (
+              <div className="mt-3 flex flex-wrap gap-2" aria-label="予算の質問例">
+                {[
+                  "市税をR7とR8で比較し、差額と出典を表示",
+                  "教育費のR8予算額と出典を表示",
+                  "廃止または新設された予算項目を表示",
+                ].map((example) => (
+                  <button
+                    key={example}
+                    type="button"
+                    onClick={() => setQuery(example)}
+                    className="rounded-full border border-[#C7D2E5] bg-white px-3 py-1.5 text-left text-xs font-bold text-[#2A5298] hover:bg-[#F1F5FB]"
+                  >
+                    {example}
+                  </button>
+                ))}
+              </div>
+            ) : null}
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">
@@ -531,21 +694,32 @@ export default function ResearchClient({ municipalities }: Props) {
                 自治体絞り込み
               </label>
               <p id="research-municipalities-help" className="mt-1 text-sm text-[#4A5568]">
-                未選択の場合は横断検索indexに議題がある全{municipalities.length}自治体を対象にします。複数選択できます。
+                {sourceType === "budget"
+                  ? `限定テスト対象の全${availableMunicipalities.length}市から1市を選んでください。`
+                  : `未選択の場合は横断検索indexに議題がある全${availableMunicipalities.length}自治体を対象にします。複数選択できます。`}
               </p>
               <select
                 id="research-municipalities"
-                multiple
-                size={8}
-                value={selectedMunicipalities}
-                onChange={(event) =>
+                multiple={sourceType === "plenary_minutes"}
+                size={sourceType === "budget" ? undefined : 8}
+                value={
+                  sourceType === "budget"
+                    ? selectedMunicipalities[0] ?? ""
+                    : selectedMunicipalities
+                }
+                onChange={(event) => {
+                  if (sourceType === "budget") {
+                    setSelectedMunicipalities(event.currentTarget.value ? [event.currentTarget.value] : []);
+                    return;
+                  }
                   setSelectedMunicipalities(
                     Array.from(event.currentTarget.selectedOptions, (option) => option.value)
-                  )
-                }
+                  );
+                }}
                 aria-describedby="research-municipalities-help"
                 className="theme-select mt-2 px-3 py-2 text-base"
               >
+                {sourceType === "budget" ? <option value="">自治体を選択</option> : null}
                 {municipalitiesByRegion.map(([region, values]) => (
                   <optgroup key={region} label={region}>
                     {values.map((municipality) => (
@@ -557,7 +731,13 @@ export default function ResearchClient({ municipalities }: Props) {
                 ))}
               </select>
               <div className="mt-2 flex items-center justify-between gap-3 text-sm text-[#4A5568]">
-                <span>{selectedMunicipalities.length}自治体を選択中</span>
+                <span>
+                  {sourceType === "budget"
+                    ? selectedMunicipalities.length
+                      ? "1市を選択中"
+                      : "未選択"
+                    : `${selectedMunicipalities.length}自治体を選択中`}
+                </span>
                 {selectedMunicipalities.length ? (
                   <button
                     type="button"
@@ -574,7 +754,9 @@ export default function ResearchClient({ municipalities }: Props) {
               <fieldset>
                 <legend className="font-bold text-[#1B3A6B]">年度絞り込み</legend>
                 <p className="mt-1 text-sm text-[#4A5568]">
-                  会議日から4月〜翌3月の年度を算出します。両方を空欄にすると全年度を対象にします。
+                  {sourceType === "budget"
+                    ? "両方を空欄にするとR7・R8の両年度を対象にします。"
+                    : "会議日から4月〜翌3月の年度を算出します。両方を空欄にすると全年度を対象にします。"}
                 </p>
                 <div className="mt-2 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
                   <div>
@@ -584,8 +766,8 @@ export default function ResearchClient({ municipalities }: Props) {
                     <input
                       id="research-year-from"
                       type="number"
-                      min={1900}
-                      max={2200}
+                      min={sourceType === "budget" ? 2025 : 1900}
+                      max={sourceType === "budget" ? 2026 : 2200}
                       inputMode="numeric"
                       value={yearFrom}
                       onChange={(event) => setYearFrom(event.target.value)}
@@ -602,8 +784,8 @@ export default function ResearchClient({ municipalities }: Props) {
                     <input
                       id="research-year-to"
                       type="number"
-                      min={1900}
-                      max={2200}
+                      min={sourceType === "budget" ? 2025 : 1900}
+                      max={sourceType === "budget" ? 2026 : 2200}
                       inputMode="numeric"
                       value={yearTo}
                       onChange={(event) => setYearTo(event.target.value)}
@@ -613,7 +795,7 @@ export default function ResearchClient({ municipalities }: Props) {
                 </div>
               </fieldset>
 
-              <div>
+              {sourceType === "plenary_minutes" ? <div>
                 <label htmlFor="research-mode" className="block font-bold text-[#1B3A6B]">
                   モード
                 </label>
@@ -632,13 +814,15 @@ export default function ResearchClient({ municipalities }: Props) {
                 <p className="mt-2 text-sm text-[#4A5568]">
                   {MODE_OPTIONS.find((option) => option.value === mode)?.description}
                 </p>
-              </div>
+              </div> : null}
             </div>
           </div>
 
           <div className="border-t border-[#E2E8F0] pt-5">
             <p className="mb-3 text-sm text-[#4A5568]">
-              対象資料: 地方議会ドットコムに収録済みの本会議議事録
+              {sourceType === "budget"
+                ? "対象資料: 5市のR7・R8予算（技術検証済み・人手確認待ち）"
+                : "対象資料: 地方議会ドットコムに収録済みの本会議議事録"}
             </p>
             <button
               type="submit"
@@ -654,7 +838,9 @@ export default function ResearchClient({ municipalities }: Props) {
       <div aria-live="polite" aria-atomic="true">
         {loading ? (
           <div className="theme-card-soft mt-6 px-5 py-5 text-[#4A5568]" role="status">
-            議事録を検索し、根拠を確認しながら整理しています。しばらくお待ちください。
+            {sourceType === "budget"
+              ? "構造化予算とprivate chunkを照合し、出典付きで整理しています。"
+              : "議事録を検索し、根拠を確認しながら整理しています。しばらくお待ちください。"}
           </div>
         ) : null}
         {error ? (

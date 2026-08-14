@@ -4,8 +4,11 @@ import Link from "next/link";
 import ResearchAccessGate, {
   ResearchLogoutButton,
 } from "@/components/research/ResearchAccessGate";
+import ResearchBudgetComparisonDemo from "@/components/research/ResearchBudgetComparisonDemo";
 import ResearchClient from "@/components/research/ResearchClient";
 import ResearchNotice from "@/components/research/ResearchNotice";
+import { getBudgetComparisonDemo } from "@/lib/budgetComparisonDemo";
+import { getBudgetResearchMunicipalityIds } from "@/lib/budgetResearch";
 import { buildPageMetadata } from "@/lib/metadata";
 import { getMunicipalities } from "@/lib/municipalities";
 import {
@@ -16,7 +19,7 @@ import {
 import { getResearchCoverageMunicipalityIds } from "@/lib/researchCoverage";
 
 const description =
-  "北海道内の地方議会で議論された政策テーマを、収録済みの議事録から原文根拠付きで横断調査する実証用ツールです。";
+  "北海道内の地方議会で議論された政策テーマと5市の予算データを、原文根拠付きで調査するパスワード保護された実証用ツールです。";
 
 export const metadata: Metadata = {
   ...buildPageMetadata({
@@ -66,13 +69,16 @@ export default async function ResearchPage() {
     );
   }
 
-  const searchableMunicipalities = getResearchCoverageMunicipalityIds();
+  const minutesMunicipalities = getResearchCoverageMunicipalityIds();
+  const budgetMunicipalities = getBudgetResearchMunicipalityIds();
+  const budgetComparisonDemo = getBudgetComparisonDemo();
   const municipalities = getMunicipalities()
     .filter(
       (municipality) =>
         municipality.active &&
-        municipality.minutes_access !== "restricted" &&
-        searchableMunicipalities.has(municipality.slug),
+        ((municipality.minutes_access !== "restricted" &&
+          minutesMunicipalities.has(municipality.slug)) ||
+          budgetMunicipalities.has(municipality.slug)),
     )
     .sort((left, right) => {
       const regionOrder = left.region.localeCompare(right.region, "ja");
@@ -80,7 +86,17 @@ export default async function ResearchPage() {
         ? regionOrder
         : left.furigana.localeCompare(right.furigana, "ja");
     })
-    .map(({ slug, name, region }) => ({ slug, name, region }));
+    .map(({ slug, name, region, minutes_access: minutesAccess }) => ({
+      slug,
+      name,
+      region,
+      sourceTypes: [
+        ...(minutesAccess !== "restricted" && minutesMunicipalities.has(slug)
+          ? (["plenary_minutes"] as const)
+          : []),
+        ...(budgetMunicipalities.has(slug) ? (["budget"] as const) : []),
+      ],
+    }));
 
   return (
     <article className="page-shell max-w-5xl">
@@ -103,14 +119,15 @@ export default async function ResearchPage() {
           北海道・議会政策AIリサーチャー
         </h1>
         <p className="mt-3 text-base leading-relaxed text-[#1A202C] sm:text-lg">
-          北海道の議会で、何が、どのように議論されてきたかを、原文根拠付きで横断調査します。
+          北海道の議会で何が議論されたか、5市の予算がどう変化したかを、原文根拠付きで調査します。
         </p>
         <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">
-          現在の実証版は、地方議会ドットコムに収録済みの本会議議事録を対象としています。
+          本会議議事録の検索に加え、5市のR7・R8予算をパスワード保護された限定テストとして確認できます。
         </p>
       </header>
 
       <ResearchNotice />
+      <ResearchBudgetComparisonDemo cities={budgetComparisonDemo} />
       <ResearchClient municipalities={municipalities} />
     </article>
   );

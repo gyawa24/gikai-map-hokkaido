@@ -50,6 +50,65 @@ export type Evidence = {
   evidenceLevel: EvidenceLevel;
 };
 
+export type BudgetFindingEvidence = {
+  evidenceId: string;
+  fiscalYear: number | null;
+  documentRevisionId: string;
+  officialLandingUrl: string;
+  format: "pdf" | "html";
+  physicalPage: number | null;
+  printedPage: number | null;
+  sourceTable: string;
+};
+
+export type BudgetAmount = {
+  fiscalYear: number;
+  amountJpy: number;
+  sourceReportedValue: number;
+  sourceUnit: "yen" | "thousand_yen" | "million_yen";
+  sourcePrecisionJpy: number;
+  precisionSemantics: string;
+  legislativeStatus: string;
+};
+
+export type BudgetNumericFinding = {
+  id: string;
+  kind: "fact" | "comparison" | "structural_event";
+  municipalityId: string;
+  municipalityName: string;
+  label: string;
+  accountLabel: string | null;
+  entrySide: string | null;
+  factScope: string | null;
+  conceptMappingStatus: string;
+  fact: BudgetAmount | null;
+  comparison: {
+    baseline: BudgetAmount;
+    current: BudgetAmount;
+    deltaAmountJpy: number;
+    deltaPercent: number | null;
+    comparisonMode: string;
+    comparisonStatus: string;
+    roundingDifferenceJpy: number;
+    restatementAdjustmentJpy: number | null;
+  } | null;
+  structuralEvent: {
+    effectiveFiscalYear: number;
+    eventType: string;
+    presenceBefore: string;
+    presenceAfter: string;
+    sourceReportedCurrentAmount: number | null;
+    reportedAmountSemantics: string;
+  } | null;
+  technicalValidation: "passed";
+  humanReviewStatus: "pending";
+  retrieval: {
+    mode: "structured_only" | "structured_and_private_chunk";
+    matchedChunkId?: string;
+  };
+  evidences: BudgetFindingEvidence[];
+};
+
 export type ResearchResult = {
   query: string;
   summary: string;
@@ -77,6 +136,7 @@ export type ResearchResult = {
   }>;
   nextResearchItems: string[];
   evidences: Evidence[];
+  budgetFindings?: BudgetNumericFinding[];
   limitations: string[];
 };
 
@@ -107,6 +167,18 @@ export type ResearchResponseMetadata = {
   };
   durationMs: number;
   cacheHit: boolean;
+  budget?: {
+    status: "password_protected_private_preview";
+    datasetVersionId: string;
+    structuredMatchCount: number;
+    chunkMatchCount: number;
+    humanReviewStatus: "pending";
+    publicRagGate: "blocked";
+    crossMunicipalityComparison: "blocked";
+    indexWritePerformed: false;
+    retrievalMode: "in_process_keyword_retrieval";
+    numericSource: "canonical_facts_and_comparisons";
+  };
 };
 
 export type ResearchResponse = {
@@ -120,4 +192,5 @@ export type ResearchMunicipalityOption = {
   slug: string;
   name: string;
   region: string;
+  sourceTypes: Array<"plenary_minutes" | "budget">;
 };
