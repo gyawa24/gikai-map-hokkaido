@@ -630,7 +630,7 @@ function buildMemberActivities(city, cityName) {
         const topics = Array.isArray(session.topics)
           ? session.topics.map(cleanText).filter(Boolean)
           : [];
-        return {
+        const runtimeActivity = {
           city,
           cityName,
           member_name: memberName,
@@ -649,6 +649,11 @@ function buildMemberActivities(city, cityName) {
           topics: summaryTopics.length ? [] : topics.slice(0, 6),
           summary_topics: summaryTopics,
         };
+        return Object.fromEntries(
+          Object.entries(runtimeActivity).filter(([, value]) => (
+            value !== "" && (!Array.isArray(value) || value.length > 0)
+          ))
+        );
       });
   });
 }
