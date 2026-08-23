@@ -127,6 +127,23 @@ function yearFromDate(date) {
   return cleanText(date).match(/^(\d{4})/)?.[1] ?? "";
 }
 
+function memberActivityQuestionLabel(questionKind) {
+  if (questionKind === "general_question") return "一般質問";
+  if (questionKind === "representative_question") return "代表質問";
+  if (questionKind === "committee_question") return "委員会質疑";
+  if (questionKind === "plenary_question") return "本会議質疑";
+  if (questionKind === "other_question") return "質問";
+  return "質問記録";
+}
+
+function memberActivitySearchSourceType(activity) {
+  return activity.source_status === "preliminary"
+    || activity.source_type === "video_transcript"
+    || String(activity.href ?? "").includes("/sessions/")
+    ? "session"
+    : "minutes";
+}
+
 // 会議名から西暦を推定（令和◯年 → 2018+N）
 function yearFromCouncilName(name) {
   const norm = (name ?? "").replace(/[０-９]/g, (c) =>
@@ -197,6 +214,9 @@ function pushSearchDocument(documents, doc, additionalSearchText = "") {
   const searchText = cleanText([
     doc.cityName,
     doc.title,
+    doc.committee,
+    doc.label,
+    doc.speaker,
     doc.body,
     doc.context,
     doc.metaText,
@@ -319,24 +339,42 @@ function buildCityBigramDocuments(city, cityRuntimeOut) {
     const summaryTopics = Array.isArray(row.summary_topics) ? row.summary_topics : [];
     const rawTopics = Array.isArray(row.topics) ? row.topics : [];
     const topicText = [...summaryTopics, ...rawTopics].join("、");
+    const questionLabel = memberActivityQuestionLabel(row.question_kind);
+    const sourceLabel = row.source_label || (row.source_status === "preliminary" ? "会議録速報" : "公式議事録");
+    const fallbackHref = Number(row.council_id) > 0
+      ? `/${row.city}/minutes/${row.council_id}`
+      : `/${row.city}`;
     pushSearchDocument(documents, {
-      id: `member_activity:${row.city}:${row.member_name}:${row.council_id}`,
+      id: `member_activity:${row.record_id || `${row.city}:${row.member_name}:${row.council_id}:${row.date || "undated"}`}`,
       source: "member_activity",
-      sourceType: "minutes",
+      sourceType: memberActivitySearchSourceType(row),
       city: row.city,
       cityName: row.cityName,
       council_id: row.council_id,
       member_name: row.member_name,
+      record_id: row.record_id,
       title: row.council_name,
-      committee: `${row.member_name}議員の質問`,
-      body: topicText,
-      context: summaryTopics.length > 0
-        ? `質問テーマ: ${summaryTopics.join("、")}`
-        : `議事録からの抜粋: ${rawTopics.slice(0, 3).join("。")}`,
-      metaText: row.year,
-      href: `/${row.city}/minutes/${row.council_id}`,
+      committee: `${row.member_name}議員の${questionLabel}`,
+      label: [sourceLabel, questionLabel].filter(Boolean).join("・"),
+      body: [row.overview, topicText].filter(Boolean).join(" "),
+      context: [
+        row.overview,
+        summaryTopics.length > 0
+          ? `質問テーマ: ${summaryTopics.join("、")}`
+          : rawTopics.length > 0
+            ? `議事録からの抜粋: ${rawTopics.slice(0, 3).join("。")}`
+            : "",
+      ].filter(Boolean).join(" "),
+      metaText: [row.year, row.date, sourceLabel, row.source_status, questionLabel].filter(Boolean).join(" "),
+      href: row.href || fallbackHref,
+      date: row.date,
+      start_time: row.start_time,
       year: row.year || yearFromCouncilName(row.council_name),
-      field: "質問テーマ",
+      overview: row.overview,
+      question_kind: row.question_kind,
+      source_label: row.source_label,
+      source_status: row.source_status,
+      field: questionLabel,
     });
   }
 
@@ -364,6 +402,12 @@ function buildCityBigramDocuments(city, cityRuntimeOut) {
 
   for (const row of cityRuntimeOut.sessions ?? []) {
     for (const segment of row.segments ?? []) {
+      const segmentIdentity = segment.speaker && segment.label?.includes(segment.speaker)
+        ? segment.label
+        : [segment.speaker, segment.label].filter(Boolean).join("・");
+      const segmentText = [segment.summary, ...(segment.topics ?? []), segment.transcript]
+        .filter(Boolean)
+        .join(" ");
       pushSearchDocument(documents, {
         id: `session:${row.city}:${row.id}:${segment.index}`,
         source: "session",
@@ -373,11 +417,13 @@ function buildCityBigramDocuments(city, cityRuntimeOut) {
         title: row.title,
         committee: row.committee,
         label: segment.label,
-        body: [segment.summary, ...(segment.topics ?? []), segment.transcript].join(" "),
-        context: [segment.summary, ...(segment.topics ?? []), segment.transcript].join(" "),
-        metaText: [row.date, row.committee, segment.start_time].join(" "),
-        href: `/${row.city}/sessions/${row.id}`,
+        speaker: segment.speaker,
+        body: [segment.label, segment.speaker, segmentText].filter(Boolean).join(" "),
+        context: [segmentIdentity, segmentText].filter(Boolean).join(": "),
+        metaText: [row.date, row.committee, segment.speaker, segment.label, segment.start_time].join(" "),
+        href: `/${row.city}/sessions/${row.id}#seg-${segment.index}`,
         date: row.date,
+        start_time: segment.start_time,
         year: yearFromDate(row.date) || yearFromCouncilName(row.title),
         field: segment.summary ? "要約" : "会議録速報",
       });
@@ -501,6 +547,7 @@ function buildSessions(city, cityName) {
         segments: (session.segments ?? []).map((seg) => ({
           index: seg.index ?? 0,
           label: seg.label ?? "",
+          speaker: seg.speaker ?? seg.detail?.speaker ?? "",
           start_time: seg.start_time ?? "",
           summary: seg.summary ?? "",
           topics: Array.isArray(seg.topics) ? seg.topics : [],
@@ -593,7 +640,7 @@ function buildMemberActivities(city, cityName) {
     if (!memberName || sessions.length === 0) return [];
 
     return sessions
-      .filter((session) => Number.isFinite(Number(session?.council_id)) && Number(session.council_id) > 0)
+      .filter((session) => Number.isFinite(Number(session?.council_id)) && Number(session.council_id) >= 0)
       .map((session) => {
         const councilName = cleanText(session.session);
         const summaryTopics = Array.isArray(session.summary_topics)
@@ -606,9 +653,18 @@ function buildMemberActivities(city, cityName) {
           city,
           cityName,
           member_name: memberName,
+          record_id: cleanText(session.record_id),
           council_id: Number(session.council_id),
           council_name: councilName,
           year: cleanText(session.year) || yearFromCouncilName(councilName),
+          date: cleanText(session.date),
+          href: cleanText(session.href),
+          overview: cleanText(session.overview),
+          question_kind: cleanText(session.question_kind),
+          source_type: cleanText(session.source_type),
+          source_label: cleanText(session.source_label),
+          source_status: cleanText(session.source_status),
+          start_time: cleanText(session.start_time),
           topics: summaryTopics.length ? [] : topics.slice(0, 6),
           summary_topics: summaryTopics,
         };

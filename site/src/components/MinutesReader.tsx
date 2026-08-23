@@ -260,6 +260,7 @@ function AgendaGroupView({
   group,
   defaultOpen,
   scrollTo,
+  targetMinuteId,
   activeTopic,
   query,
   scheduleId,
@@ -268,6 +269,7 @@ function AgendaGroupView({
   group: AgendaGroup;
   defaultOpen: boolean;
   scrollTo: boolean;
+  targetMinuteId: number | null;
   activeTopic: string | null;
   query: string;
   scheduleId: number;
@@ -287,6 +289,16 @@ function AgendaGroupView({
       ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, [scrollTo, activeTopic, query]);
+
+  useEffect(() => {
+    if (targetMinuteId == null) return;
+    setOpen(true);
+    requestAnimationFrame(() => {
+      document
+        .getElementById(`minute-${scheduleId}-${targetMinuteId}`)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [scheduleId, targetMinuteId]);
 
   // グループタイトル自体がクエリにマッチしている場合（例: 「松倉美加議員の代表質問」）は
   // アイテムを全件表示する。内容フィルターはアイテムレベルのマッチ時のみ適用。
@@ -362,20 +374,22 @@ type Props = {
 
 export default function MinutesReader({ session, cityName, activeTopic = null, query, onQueryChange }: Props) {
   const [activeScheduleIndex, setActiveScheduleIndex] = useState(0);
+  const [hashTarget, setHashTarget] = useState<{ scheduleId: number; minuteId: number } | null>(null);
 
   // 引用URLで来たとき (#minute-{scheduleId}-{minuteId}) は対応する日程タブを開いてスクロールする
   const handleHashNavigation = useEffectEvent(() => {
     if (typeof window === "undefined") return;
     const m = window.location.hash.match(/^#minute-(\d+)-(\d+)/);
-    if (!m) return;
+    if (!m) {
+      setHashTarget(null);
+      return;
+    }
     const targetScheduleId = Number(m[1]);
+    const targetMinuteId = Number(m[2]);
     const idx = session.schedules.findIndex((s) => s.schedule_id === targetScheduleId);
     if (idx === -1) return;
+    setHashTarget({ scheduleId: targetScheduleId, minuteId: targetMinuteId });
     setActiveScheduleIndex(idx);
-    requestAnimationFrame(() => {
-      const el = document.getElementById(window.location.hash.slice(1));
-      el?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
   });
 
   useEffect(() => {
@@ -516,12 +530,17 @@ export default function MinutesReader({ session, cityName, activeTopic = null, q
             const isMatch = filter
               ? (activeTopic ? groupMatchesTopic(group, activeTopic) : groupMatchesQuery(group, query.trim()))
               : false;
+            const targetMinuteId = hashTarget?.scheduleId === activeSchedule.schedule_id
+              && group.items.some((item) => Number(item.minute_id) === hashTarget.minuteId)
+              ? hashTarget.minuteId
+              : null;
             return (
               <AgendaGroupView
                 key={group.id}
                 group={group}
-                defaultOpen={isMatch}
+                defaultOpen={isMatch || targetMinuteId != null}
                 scrollTo={isMatch && i === 0}
+                targetMinuteId={targetMinuteId}
                 activeTopic={activeTopic}
                 query={query.trim()}
                 scheduleId={activeSchedule.schedule_id}

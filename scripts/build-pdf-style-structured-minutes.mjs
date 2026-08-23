@@ -18,6 +18,47 @@ function normalizeText(value) {
   return String(value ?? "").replace(/\r\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
 }
 
+function parseScheduleDate(year, scheduleName) {
+  const normalizedYear = String(year ?? "").normalize("NFKC").trim();
+  if (!/^\d{4}$/u.test(normalizedYear)) return "";
+
+  const normalizedName = String(scheduleName ?? "").normalize("NFKC");
+  const numericYear = Number(normalizedYear);
+  const japaneseMatch = normalizedName.match(/(\d{1,2})月\s*(\d{1,2})日/u);
+  const eraMatch = normalizedName.match(/(?:^|[^A-Z0-9])([RH])(\d{1,2})[./-](\d{1,2})[./-](\d{1,2})(?!\d)/iu);
+  const gregorianMatch = normalizedName.match(/(?:^|\D)(\d{4})[./-](\d{1,2})[./-](\d{1,2})(?!\d)/u);
+
+  let month;
+  let day;
+  if (japaneseMatch) {
+    month = Number(japaneseMatch[1]);
+    day = Number(japaneseMatch[2]);
+  } else if (eraMatch) {
+    const eraYear = Number(eraMatch[2]);
+    const gregorianYear = eraMatch[1].toUpperCase() === "R" ? 2018 + eraYear : 1988 + eraYear;
+    if (gregorianYear !== numericYear) return "";
+    month = Number(eraMatch[3]);
+    day = Number(eraMatch[4]);
+  } else if (gregorianMatch) {
+    if (Number(gregorianMatch[1]) !== numericYear) return "";
+    month = Number(gregorianMatch[2]);
+    day = Number(gregorianMatch[3]);
+  } else {
+    return "";
+  }
+
+  const date = new Date(Date.UTC(numericYear, month - 1, day));
+  if (
+    date.getUTCFullYear() !== numericYear ||
+    date.getUTCMonth() + 1 !== month ||
+    date.getUTCDate() !== day
+  ) {
+    return "";
+  }
+
+  return `${normalizedYear}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
 function stableId(value) {
   return compact(value)
     .replace(/[^\p{Letter}\p{Number}]+/gu, "-")
@@ -80,7 +121,7 @@ function turnTypeFromSpeaker(type) {
 
 function extraction(confidence = 0.72, warnings = []) {
   return {
-    method: "rule_based_with_manual_review",
+    method: "rule_based",
     confidence,
     extractor_version: EXTRACTOR_VERSION,
     warnings,
@@ -148,10 +189,11 @@ function parseSpeakerHeader(line) {
   };
 }
 
-function parseTurns({ slug, councilId, schedule, minute, sourceDocumentId, officialUrl }) {
+function parseTurns({ slug, councilId, year, schedule, minute, sourceDocumentId, officialUrl }) {
   const text = normalizeText(minute.text ?? "");
   const lines = text.split("\n");
   const turns = [];
+  const meetingDate = parseScheduleDate(year, schedule.name);
   let current = null;
   let currentLines = [];
   let currentStartLine = 1;
@@ -166,7 +208,7 @@ function parseTurns({ slug, councilId, schedule, minute, sourceDocumentId, offic
         id,
         source_document_id: sourceDocumentId,
         municipality_id: slug,
-        meeting_date: String(councilId),
+        meeting_date: meetingDate,
         order_index: order,
         speaker_name_original: current.displayName,
         speaker_name_normalized: current.name,
@@ -265,7 +307,7 @@ function buildBlocks({ slug, councilId, sourceDocumentId, turns, officialUrl }) 
         id: questionBlockId,
         source_document_id: sourceDocumentId,
         municipality_id: slug,
-        meeting_date: String(councilId),
+        meeting_date: questionTurn.meeting_date,
         order_index: order,
         questioner_name_original: questionTurn.speaker_name_original,
         questioner_name_normalized: questionTurn.speaker_name_normalized,
@@ -346,8 +388,8 @@ function buildBlocks({ slug, councilId, sourceDocumentId, turns, officialUrl }) 
         topic_snippet_ids: snippetIds,
         flow,
         source_position: sourcePosition(officialUrl, topicBlockId, title),
-        review_status: "auto",
-        public_visible: flow.some((item) => item.role === "question") && flow.some((item) => item.role === "answer"),
+        review_status: "needs_review",
+        public_visible: false,
         extraction: extraction(0.58, ["pdf_style_mvp_needs_review"]),
       });
     }
@@ -396,7 +438,15 @@ async function main() {
 
   for (const schedule of schedules) {
     for (const minute of schedule.minutes ?? []) {
-      const parsedTurns = parseTurns({ slug, councilId, schedule, minute, sourceDocumentId, officialUrl });
+      const parsedTurns = parseTurns({
+        slug,
+        councilId,
+        year: raw.year,
+        schedule,
+        minute,
+        sourceDocumentId,
+        officialUrl,
+      });
       turns.push(...parsedTurns.map((turn) => ({ ...turn, order_index: turns.length + turn.order_index })));
     }
   }
@@ -434,7 +484,8 @@ async function main() {
       municipality_name: municipalityName,
       official_url: officialUrl,
       title: raw.name,
-      meeting_date: String(councilId),
+      meeting_date:
+        schedules.map((schedule) => parseScheduleDate(raw.year, schedule.name)).find(Boolean) ?? "",
       fetched_at: new Date().toISOString(),
       source_type: officialUrl.endsWith(".pdf") ? "official_pdf" : "official_html",
       extractor_version: EXTRACTOR_VERSION,

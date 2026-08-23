@@ -232,6 +232,7 @@ type IndexedSession = {
   segments: Array<{
     index: number;
     label: string;
+    speaker?: string;
     start_time?: string;
     summary?: string;
     topics?: string[];
@@ -261,9 +262,18 @@ type IndexedMemberActivity = {
   city: string;
   cityName: string;
   member_name: string;
+  record_id?: string;
   council_id: number;
   council_name: string;
   year?: string;
+  date?: string;
+  href?: string;
+  overview?: string;
+  question_kind?: string;
+  source_type?: string;
+  source_label?: string;
+  source_status?: string;
+  start_time?: string;
   topics?: string[];
   summary_topics?: string[];
 };
@@ -294,8 +304,44 @@ function memberActivityText(activity: IndexedMemberActivity, cityName: string): 
     cityName,
     activity.member_name,
     activity.council_name,
+    activity.date,
+    activity.overview,
+    activity.question_kind,
+    activity.source_label,
+    activity.source_status,
+    memberActivityDisplayLabel(activity),
     ...uniqueTexts([...(activity.summary_topics ?? []), ...(activity.topics ?? [])]),
   ].join(" ");
+}
+
+function memberActivityQuestionLabel(questionKind: string | undefined): string {
+  if (questionKind === "general_question") return "一般質問";
+  if (questionKind === "representative_question") return "代表質問";
+  if (questionKind === "committee_question") return "委員会質疑";
+  if (questionKind === "plenary_question") return "本会議質疑";
+  if (questionKind === "other_question") return "質問";
+  return "質問記録";
+}
+
+function memberActivitySourceType(activity: IndexedMemberActivity): "session" | "minutes" {
+  return activity.source_status === "preliminary"
+    || activity.source_type === "video_transcript"
+    || activity.href?.includes("/sessions/")
+    ? "session"
+    : "minutes";
+}
+
+function memberActivityDisplayLabel(activity: IndexedMemberActivity): string {
+  const sourceLabel = activity.source_label
+    || (activity.source_status === "preliminary" ? "会議録速報" : "公式議事録");
+  return uniqueTexts([sourceLabel, memberActivityQuestionLabel(activity.question_kind)]).join("・");
+}
+
+function sessionSegmentIdentity(speaker: string | undefined, label: string | undefined): string {
+  const normalizedSpeaker = speaker?.trim() ?? "";
+  const normalizedLabel = label?.trim() ?? "";
+  if (normalizedSpeaker && normalizedLabel.includes(normalizedSpeaker)) return normalizedLabel;
+  return uniqueTexts([normalizedSpeaker, normalizedLabel]).join("・");
 }
 
 function cleanRawTopicExcerpt(text: string): string {
@@ -305,12 +351,20 @@ function cleanRawTopicExcerpt(text: string): string {
     .trim();
 }
 
-function memberActivityContext(summaryTopics: string[], topics: string[], tokens: string[]): string {
-  if (summaryTopics.length > 0) {
-    return `質問テーマ: ${summaryTopics.join("、")}`;
-  }
+function memberActivityContext(
+  activity: IndexedMemberActivity,
+  summaryTopics: string[],
+  topics: string[],
+  tokens: string[]
+): string {
+  const parts = [memberActivityDisplayLabel(activity)];
+  if (activity.overview) parts.push(excerptSearchText(activity.overview, tokens, 120));
+  if (summaryTopics.length > 0) parts.push(`質問テーマ: ${summaryTopics.join("、")}`);
   const excerptSource = topics.map(cleanRawTopicExcerpt).filter(Boolean).slice(0, 3).join("。");
-  return excerptSource ? `議事録からの抜粋: ${excerptSearchText(excerptSource, tokens, 80)}` : "";
+  if (summaryTopics.length === 0 && excerptSource) {
+    parts.push(`議事録からの抜粋: ${excerptSearchText(excerptSource, tokens, 80)}`);
+  }
+  return parts.filter(Boolean).join(" ");
 }
 
 function memberHref(city: string, seatNumber: number | null | undefined): string {
@@ -347,6 +401,7 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
         segments: session.segments.map((seg) => ({
           index: seg.index,
           label: seg.label,
+          speaker: (seg as typeof seg & { speaker?: string }).speaker ?? seg.detail?.speaker ?? "",
           start_time: seg.start_time ?? "",
           summary: seg.summary ?? "",
           topics: seg.topics ?? [],
@@ -383,14 +438,23 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
         const memberName = entry.name?.trim() ?? "";
         if (!memberName) return [];
         return (entry.sessions ?? [])
-          .filter((session) => Number.isFinite(Number(session.council_id)) && Number(session.council_id) > 0)
+          .filter((session) => Number.isFinite(Number(session.council_id)) && Number(session.council_id) >= 0)
           .map((session) => ({
             city,
             cityName,
             member_name: memberName,
+            record_id: session.record_id,
             council_id: Number(session.council_id),
             council_name: session.session ?? "",
             year: session.year || yearFromCouncilName(session.session ?? ""),
+            date: session.date,
+            href: session.href,
+            overview: session.overview,
+            question_kind: session.question_kind,
+            source_type: session.source_type,
+            source_label: session.source_label,
+            source_status: session.source_status,
+            start_time: session.start_time,
             summary_topics: Array.isArray(session.summary_topics) ? session.summary_topics : [],
             topics: Array.isArray(session.summary_topics) && session.summary_topics.length
               ? []
@@ -750,70 +814,73 @@ export async function GET(request: NextRequest) {
         const sessionYear = yearFromDate(s.date);
         const sessionLabel = committee || title;
         const segments = s.segments ?? [];
-        let bestHit: RankedSessionHit | null = null;
+        let hasMatchingSegment = false;
 
         for (const seg of segments) {
+          const identity = sessionSegmentIdentity(seg.speaker, seg.label);
           const fields = [
-            { text: `${cityName} ${seg.summary ?? ""}`, field: "要約", bonus: 24, radius: 100 },
-            { text: `${cityName} ${(seg.topics ?? []).join(" ")}`, field: "トピック", bonus: 20, radius: 90 },
-            { text: `${cityName} ${seg.transcript ?? ""}`, field: "全文", bonus: 10, radius: 100 },
+            { content: identity, field: "発言者・見出し", bonus: 30, radius: 90 },
+            { content: seg.summary ?? "", field: "要約", bonus: 24, radius: 100 },
+            { content: (seg.topics ?? []).join(" "), field: "トピック", bonus: 20, radius: 90 },
+            { content: seg.transcript ?? "", field: "全文", bonus: 10, radius: 100 },
           ];
+          let segmentBestHit: RankedSessionHit | null = null;
           for (const field of fields) {
-            const evaluation = evaluateText(field.text);
+            const searchText = `${cityName} ${seg.speaker ?? ""} ${seg.label ?? ""} ${field.content}`;
+            const evaluation = evaluateText(searchText);
             if (!evaluation.matched) continue;
             const score = evaluation.score + field.bonus;
-            if (bestHit && bestHit.score >= score) continue;
-            bestHit = {
-              id: s.id,
+            if (segmentBestHit && segmentBestHit.score >= score) continue;
+            const excerpt = excerptSearchText(field.content || searchText, tokens, field.radius);
+            segmentBestHit = {
+              id: `${s.id}:segment:${seg.index}`,
               city,
               cityName,
               sourceType: "session",
               title,
               committee,
-              href: `/${city}/sessions/${s.id}`,
+              href: `/${city}/sessions/${s.id}#seg-${seg.index}`,
               segIndex: seg.index,
-              label: seg.label ?? "",
+              label: identity,
               startTime: seg.start_time ?? "",
-              context: excerptSearchText(field.text, tokens, field.radius),
+              context: identity && !excerpt.includes(identity) ? `${identity}: ${excerpt}` : excerpt,
               field: field.field,
               date: s.date,
               year: sessionYear,
               score,
             };
           }
+          if (segmentBestHit) {
+            hasMatchingSegment = true;
+            sessionResults.push(segmentBestHit);
+          }
         }
 
         const titleSearchText = `${cityName} ${title} ${committee}`;
         const titleEvaluation = evaluateText(titleSearchText);
-        if (titleEvaluation.matched) {
+        if (!hasMatchingSegment && titleEvaluation.matched) {
           const score = titleEvaluation.score + 28;
-          if (!bestHit || score > bestHit.score) {
-            bestHit = {
-              id: s.id,
-              city,
-              cityName,
-              sourceType: "session",
-              title,
-              committee,
-              href: `/${city}/sessions/${s.id}`,
-              segIndex: 0,
-              label: "",
-              startTime: "",
-              context: sessionLabel,
-              field: "会議名",
-              date: s.date,
-              year: sessionYear,
-              score,
-            };
-          }
-        }
-
-        if (bestHit) {
-          sessionResults.push(bestHit);
+          sessionResults.push({
+            id: `${s.id}:meeting`,
+            city,
+            cityName,
+            sourceType: "session",
+            title,
+            committee,
+            href: `/${city}/sessions/${s.id}`,
+            segIndex: 0,
+            label: "",
+            startTime: "",
+            context: sessionLabel,
+            field: "会議名",
+            date: s.date,
+            year: sessionYear,
+            score,
+          });
         }
     }
 
-    const seenMinutes = new Set<string>();
+    const seenMinutesForEnriched = new Set<string>();
     for (const agenda of runtimeIndex.agendas) {
       const haystack = `${agenda.cityName} ${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
       const evaluation = evaluateText(haystack);
@@ -845,49 +912,53 @@ export async function GET(request: NextRequest) {
         year: agenda.year ?? yearFromCouncilName(agenda.council_name),
         score,
       });
-      seenMinutes.add(`${agenda.city}_${agenda.council_id}`);
+      seenMinutesForEnriched.add(`${agenda.city}_${agenda.council_id}`);
     }
 
     for (const activity of runtimeIndex.memberActivities ?? []) {
         const city = activity.city;
         const cityName = activity.cityName || cityMap[city] || city;
         const minuteKey = `${city}_${activity.council_id}`;
-        if (seenMinutes.has(minuteKey)) continue;
         const searchText = memberActivityText(activity, cityName);
         const evaluation = evaluateText(searchText);
         if (!evaluation.matched) continue;
         const summaryTopics = uniqueTexts(activity.summary_topics ?? []);
         const topics = uniqueTexts(activity.topics ?? []);
-        const contextText = memberActivityContext(summaryTopics, topics, tokens) || excerptSearchText(searchText, tokens, 100);
+        const contextText = memberActivityContext(activity, summaryTopics, topics, tokens) || excerptSearchText(searchText, tokens, 100);
         let score = evaluation.score + 32;
         const topicText = [...summaryTopics, ...topics].join(" ");
         if (topicText && evaluateText(topicText).matched) score += 22;
         if (evaluateText(activity.member_name).matched) score += 12;
         if (evaluateText(activity.council_name).matched) score += 8;
+        const sourceType = memberActivitySourceType(activity);
+        const fallbackHref = Number(activity.council_id) > 0
+          ? `/${city}/minutes/${activity.council_id}`
+          : `/${city}`;
         sessionResults.push({
-          id: `${city}_member_activity_${activity.member_name}_${activity.council_id}`,
+          id: `member_activity:${activity.record_id || `${city}:${activity.member_name}:${activity.council_id}:${activity.date || "undated"}`}`,
           city,
           cityName,
-          sourceType: "minutes",
+          sourceType,
           title: activity.council_name,
-          committee: `${activity.member_name}議員の質問`,
-          href: `/${city}/minutes/${activity.council_id}?q=${encodeURIComponent(q)}`,
+          committee: `${activity.member_name}議員の${memberActivityQuestionLabel(activity.question_kind)}`,
+          href: activity.href || fallbackHref,
           segIndex: 0,
-          label: "",
-          startTime: "",
+          label: memberActivityDisplayLabel(activity),
+          startTime: activity.start_time ?? "",
           context: contextText,
-          field: "質問テーマ",
-          year: activity.year ?? yearFromCouncilName(activity.council_name),
+          field: memberActivityQuestionLabel(activity.question_kind),
+          date: activity.date,
+          year: activity.year || yearFromDate(activity.date) || yearFromCouncilName(activity.council_name),
           score,
         });
-        seenMinutes.add(minuteKey);
+        if (Number(activity.council_id) > 0) seenMinutesForEnriched.add(minuteKey);
     }
 
     for (const doc of runtimeIndex.enriched ?? []) {
         const city = doc.city;
         const cityName = doc.cityName || cityMap[city] || city;
         const minuteKey = `${city}_${doc.council_id}`;
-        if (seenMinutes.has(minuteKey)) continue;
+        if (seenMinutesForEnriched.has(minuteKey)) continue;
         const summary = doc.summary ?? "";
         const highlights = doc.highlights ?? [];
         const searchText = [cityName, doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");

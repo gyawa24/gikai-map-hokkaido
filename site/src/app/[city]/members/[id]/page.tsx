@@ -3,7 +3,7 @@ import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import type { Member, MemberActivity } from "@/types/member";
+import type { Member, MemberActivity, MemberActivitySession } from "@/types/member";
 import JsonLd from "@/components/JsonLd";
 import { getMunicipality } from "@/lib/municipalities";
 import MemberShareButtons from "@/components/MemberShareButtons";
@@ -28,6 +28,23 @@ function yearFromSessionName(name: string): string {
 function searchHref(city: string, cityName: string, query: string): string {
   const params = new URLSearchParams({ city, cityName, q: query });
   return `/search?${params.toString()}`;
+}
+
+function activityYear(session: MemberActivitySession): string {
+  return session.date?.slice(0, 4) || session.year || yearFromSessionName(session.session);
+}
+
+function formatActivityDate(date: string | undefined): string {
+  const match = date?.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return match ? `${match[1]}年${Number(match[2])}月${Number(match[3])}日` : "";
+}
+
+function questionKindLabel(kind: MemberActivitySession["question_kind"]): string {
+  if (kind === "committee_question") return "委員会質疑";
+  if (kind === "representative_question") return "代表質問";
+  if (kind === "plenary_question") return "本会議質疑";
+  if (kind === "general_question") return "一般質問";
+  return "質問・質疑";
 }
 
 // Cloudflare Workers の静的アセットキャッシュは読み取り専用。
@@ -207,7 +224,7 @@ export default async function CityMemberDetailPage({
               </span>
               {memberActivity && (
                 <span className="theme-pill-soft text-[#2A5298]">
-                  公式記録 {memberActivity.session_count}回
+                  質問記録 {memberActivity.session_count}回
                 </span>
               )}
             </div>
@@ -328,11 +345,56 @@ export default async function CityMemberDetailPage({
       {memberActivity ? (
         <section id="activity" className="scroll-mt-20">
           <h3 className="text-base font-bold text-[#1B3A6B] mb-3">
-            公式会議録の質問記録
+            質問・質疑の記録
             <span className="ml-2 text-sm font-normal text-[#718096]">
               （{memberActivity.session_count}回）
             </span>
           </h3>
+
+          <div className="mb-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-6">
+            <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
+              <p className="text-xs text-[#718096]">公式会議録</p>
+              <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
+                {memberActivity.official_session_count ?? memberActivity.session_count}回
+              </p>
+            </div>
+            <div className="rounded-lg border border-[#F1D39A] bg-[#FFF9EC] px-4 py-3">
+              <p className="text-xs text-[#78451F]">正式版公開前の動画速報</p>
+              <p className="mt-1 text-xl font-bold tabular-nums text-[#78451F]">
+                {memberActivity.preliminary_session_count ?? 0}回
+              </p>
+            </div>
+            <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
+              <p className="text-xs text-[#718096]">一般質問</p>
+              <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
+                {memberActivity.general_question_count ?? 0}回
+              </p>
+            </div>
+            <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
+              <p className="text-xs text-[#718096]">代表質問</p>
+              <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
+                {memberActivity.representative_question_count ?? 0}回
+              </p>
+            </div>
+            <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
+              <p className="text-xs text-[#718096]">委員会質疑</p>
+              <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
+                {memberActivity.committee_question_count ?? 0}回
+              </p>
+            </div>
+            <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
+              <p className="text-xs text-[#718096]">本会議質疑</p>
+              <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
+                {memberActivity.plenary_question_count ?? 0}回
+              </p>
+            </div>
+          </div>
+
+          {(memberActivity.preliminary_session_count ?? 0) > 0 && (
+            <p className="mb-4 rounded-lg border border-[#F1D39A] bg-[#FFF9EC] px-4 py-3 text-sm leading-relaxed text-[#5D3A12]">
+              「動画会議録速報」は公式動画の字幕を基にした暫定記録です。正式な会議録が公開された後に照合し、公式記録を優先表示します。
+            </p>
+          )}
 
           <div className="theme-panel mb-4 p-4">
             <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
@@ -387,7 +449,7 @@ export default async function CityMemberDetailPage({
               // 年度グルーピング（新しい順）
               const groups = new Map<string, typeof memberActivity.sessions>();
               for (const s of memberActivity.sessions) {
-                const y = yearFromSessionName(s.session);
+                const y = activityYear(s);
                 const list = groups.get(y) ?? [];
                 list.push(s);
                 groups.set(y, list);
@@ -411,24 +473,50 @@ export default async function CityMemberDetailPage({
                 for (let i = 0; i < sessionList.length; i++) {
                   const s = sessionList[i];
                   const sessionThemes = s.summary_topics?.length ? s.summary_topics : [];
+                  const itemHref = s.href ?? (s.council_id > 0 ? `/${city}/minutes/${s.council_id}` : "");
+                  const isPreliminary = s.source_status === "preliminary";
+                  const activityDate = formatActivityDate(s.date);
                   items.push(
-                    <li key={`${year}-${i}`} className="relative">
+                    <li key={s.record_id ?? `${year}-${i}`} className="relative">
                       <span
                         aria-hidden="true"
                         className="absolute -left-[25px] top-3 w-2.5 h-2.5 rounded-full bg-white border-2 border-[#2A5298]"
                       />
-                      <div className="bg-white rounded-lg border border-[#CBD5E0] px-5 py-4">
-                        <div className="flex items-center justify-between mb-2">
-                          <p className="text-sm font-semibold text-[#1B3A6B]">
-                            {s.session}
-                          </p>
-                          {s.council_id > 0 && (
+                      <div className="rounded-lg border border-[#CBD5E0] bg-white px-5 py-4">
+                        <div className="mb-2 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                          <div>
+                            <div className="mb-1.5 flex flex-wrap items-center gap-1.5">
+                              <span className={isPreliminary
+                                ? "rounded-full bg-[#FFF1D6] px-2 py-0.5 text-[11px] font-semibold text-[#78451F]"
+                                : "rounded-full bg-[#E8EEF7] px-2 py-0.5 text-[11px] font-semibold text-[#1B3A6B]"
+                              }>
+                                {s.source_label ?? (isPreliminary ? "動画会議録速報" : "公式会議録")}
+                              </span>
+                              <span className="rounded-full bg-[#F4F6F9] px-2 py-0.5 text-[11px] font-semibold text-[#4A5568]">
+                                {questionKindLabel(s.question_kind)}
+                              </span>
+                              {activityDate && (
+                                <span className="text-xs tabular-nums text-[#718096]">{activityDate}</span>
+                              )}
+                            </div>
+                            <p className="text-sm font-semibold leading-relaxed text-[#1B3A6B]">
+                              {s.session}
+                            </p>
+                            {s.agenda_title
+                              && s.agenda_title !== s.session
+                              && !["一般質問", "代表質問"].includes(s.agenda_title) && (
+                              <p className="mt-1 text-xs leading-relaxed text-[#4A5568]">
+                                議題：{s.agenda_title}
+                              </p>
+                            )}
+                          </div>
+                          {itemHref && (
                             <Link
-                              href={`/${city}/minutes/${s.council_id}`}
+                              href={itemHref}
                               prefetch={false}
-                              className="inline-flex min-h-11 items-center gap-0.5 text-xs text-[#718096] transition-colors hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                              className="inline-flex min-h-11 shrink-0 items-center gap-0.5 text-xs font-semibold text-[#2A5298] transition-colors hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
                             >
-                              議事録全文
+                              {isPreliminary ? "動画速報を見る" : "公式会議録を見る"}
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-3 h-3"
@@ -445,6 +533,9 @@ export default async function CityMemberDetailPage({
                             </Link>
                           )}
                         </div>
+                        {s.overview && (
+                          <p className="mb-3 text-sm leading-relaxed text-[#4A5568]">{s.overview}</p>
+                        )}
                         {sessionThemes.length > 0 && (
                           <div className="flex flex-wrap gap-1.5">
                             {sessionThemes.map((t) => (
@@ -456,6 +547,36 @@ export default async function CityMemberDetailPage({
                               >
                                 {t}
                               </Link>
+                            ))}
+                          </div>
+                        )}
+                        {(s.topic_details?.length ?? 0) > 0 && (
+                          <div className="mt-3 space-y-2">
+                            {s.topic_details?.map((topic) => (
+                              <details key={topic.title} className="rounded-md border border-[#D7E0EC] bg-[#F8FAFC] px-3 py-2">
+                                <summary className="flex min-h-11 cursor-pointer items-center text-sm font-semibold text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]">
+                                  {topic.title}
+                                </summary>
+                                <div className="pb-2 pt-1">
+                                  {topic.summary && (
+                                    <p className="text-sm leading-relaxed text-[#4A5568]">{topic.summary}</p>
+                                  )}
+                                  {(topic.qa?.length ?? 0) > 0 && (
+                                    <dl className="mt-3 space-y-3">
+                                      {topic.qa?.map((item, qaIndex) => (
+                                        <div key={`${topic.title}-${qaIndex}`} className="rounded-md border border-[#E2E8F0] bg-white p-3">
+                                          <dt className="text-sm font-semibold leading-relaxed text-[#1B3A6B]">
+                                            Q. {item.question}
+                                          </dt>
+                                          <dd className="mt-2 text-sm leading-relaxed text-[#4A5568]">
+                                            A. {item.answer}
+                                          </dd>
+                                        </div>
+                                      ))}
+                                    </dl>
+                                  )}
+                                </div>
+                              </details>
                             ))}
                           </div>
                         )}
