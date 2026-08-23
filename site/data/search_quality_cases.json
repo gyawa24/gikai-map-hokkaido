@@ -40,6 +40,36 @@
     "note": "議員名の空白なし検索でも同じ会議へ到達できるか。"
   },
   {
+    "id": "chitose-ogawa-portal-app-official",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "小川陽平 ポータルアプリ",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 580,
+      "member_name": "小川陽平",
+      "source_status": "official",
+      "textIncludes": ["行政ポータルアプリ", "公式会議録"]
+    },
+    "note": "公式会議録580の質問記録を、議員名とポータルアプリの組み合わせで特定できるか。"
+  },
+  {
+    "id": "chitose-ogawa-gender-equality-preliminary",
+    "city": "chitose",
+    "cityName": "千歳市",
+    "query": "小川陽平 男女共同参画",
+    "operator": "and",
+    "expected": {
+      "source": "member_activity",
+      "council_id": 0,
+      "member_name": "小川陽平",
+      "source_status": "preliminary",
+      "textIncludes": ["男女共同参画", "動画会議録速報"]
+    },
+    "note": "公式会議録公開前の質問記録を、速報の出典状態を保ったまま検索できるか。"
+  },
+  {
     "id": "chitose-ogawa-snow-removal",
     "city": "chitose",
     "cityName": "千歳市",
@@ -89,6 +119,7 @@
     "expected": {
       "source": "session",
       "session_id": "r8-teireikai2-ogawa-question-20260608",
+      "segment_index": 3,
       "textIncludes": ["次期千歳市DX推進計画", "生成AI"]
     },
     "note": "公式議事録公開前の会議録速報でも、議員名と生成AIテーマから該当質問へ到達できるか。"

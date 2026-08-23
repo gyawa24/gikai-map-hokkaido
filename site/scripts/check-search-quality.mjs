@@ -100,11 +100,18 @@ function buildCandidates(index) {
       cityName: activity.cityName,
       council_id: activity.council_id,
       member_name: activity.member_name,
+      record_id: activity.record_id,
+      source_status: activity.source_status,
       title: activity.council_name,
       text: [
         activity.cityName,
         activity.member_name,
         activity.council_name,
+        activity.date,
+        activity.overview,
+        activity.question_kind,
+        activity.source_label,
+        activity.source_status,
         ...topics,
       ].join(" "),
     });
@@ -146,22 +153,26 @@ function buildCandidates(index) {
   }
 
   for (const session of index.sessions ?? []) {
-    const segmentText = (session.segments ?? [])
-      .flatMap((segment) => [
-        segment.label,
-        segment.summary,
-        ...(segment.topics ?? []),
-        segment.transcript,
-      ])
-      .join(" ");
-    candidates.push({
-      source: "session",
-      city: session.city,
-      cityName: session.cityName,
-      session_id: session.id,
-      title: session.title,
-      text: [session.cityName, session.title, session.committee, segmentText].join(" "),
-    });
+    for (const segment of session.segments ?? []) {
+      candidates.push({
+        source: "session",
+        city: session.city,
+        cityName: session.cityName,
+        session_id: session.id,
+        segment_index: segment.index,
+        title: session.title,
+        text: [
+          session.cityName,
+          session.title,
+          session.committee,
+          segment.label,
+          segment.speaker,
+          segment.summary,
+          ...(segment.topics ?? []),
+          segment.transcript,
+        ].join(" "),
+      });
+    }
   }
 
   for (const doc of index.enriched ?? []) {
@@ -196,9 +207,12 @@ function buildCandidates(index) {
 
 function candidateMatchesExpected(candidate, expected) {
   if (expected.source && candidate.source !== expected.source) return false;
-  if (expected.council_id && Number(candidate.council_id) !== Number(expected.council_id)) return false;
+  if (expected.council_id !== undefined && Number(candidate.council_id) !== Number(expected.council_id)) return false;
   if (expected.session_id && candidate.session_id !== expected.session_id) return false;
+  if (expected.segment_index !== undefined && Number(candidate.segment_index) !== Number(expected.segment_index)) return false;
   if (expected.member_name && candidate.member_name !== expected.member_name) return false;
+  if (expected.record_id && candidate.record_id !== expected.record_id) return false;
+  if (expected.source_status && candidate.source_status !== expected.source_status) return false;
   for (const text of expected.textIncludes ?? []) {
     if (!String(candidate.text ?? "").includes(text)) return false;
   }
@@ -265,6 +279,7 @@ function main() {
             source: expectedHit.source,
             council_id: expectedHit.council_id ?? null,
             session_id: expectedHit.session_id ?? null,
+            segment_index: expectedHit.segment_index ?? null,
             member_name: expectedHit.member_name ?? null,
             title: expectedHit.title,
           }
@@ -273,6 +288,7 @@ function main() {
         source: candidate.source,
         council_id: candidate.council_id ?? null,
         session_id: candidate.session_id ?? null,
+        segment_index: candidate.segment_index ?? null,
         member_name: candidate.member_name ?? null,
         title: candidate.title,
         score: candidate.score,
