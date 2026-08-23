@@ -367,3 +367,38 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - GitHub Raw画像: member / budget / large minutes fallback smoke通過
 - rollback可否: Vercel側を残して確認予定
 - 備考: 自治体カードの最新会議、テーマ整理、議員名検索、議事録metadataを本番反映。検索UIはclient-only境界に分離し、静的HTMLとURL queryのhydration不一致を解消。
+
+## 2026-08-23 Cloudflare 検証
+
+実施者: Codex
+
+#### ローカル確認
+
+- `npm run cf:preflight`: 通過
+- preflight recorded_at: 2026-08-23 17:05:46 JST
+- source files: 15,171
+- artifact files: 11,216
+- dry-run: 通過
+- 検索品質: 通常版 22/22、bigram版 23/23 通過
+- 備考: 配信用検索インデックスの空項目を省略し、Cloudflareの単一アセット上限内でビルドできることを確認。
+
+#### Cloudflare staging
+
+- staging URL: `https://chihougikai-com-staging.yohei-218.workers.dev`
+- staging Worker Version ID: `c1941b6c-a72f-46b9-8aa9-05e29e37fc5b`
+- smoke test: 通過
+- 実画面確認: 小川陽平議員の質問記録5回、公式4回、動画速報1回、一般質問3回、委員会質疑2回を確認。
+- 検索確認: 「小川陽平 ポータルアプリ」から議事録580の `#minute-5-121`、「小川陽平 男女共同参画」から動画会議録速報へ移動できることを確認。
+
+#### 本番反映後の確認
+
+- 実行コマンド: `CLOUDFLARE_RELEASE_CONFIRM=deploy npm run cf:deploy`、`npm run cf:post-cutover-check`、`npm run cf:finalize-production`
+- production URL: `https://chihougikai.com` 200 Cloudflare、`https://www.chihougikai.com` 301 Cloudflare
+- production Worker Version ID: `6550fb06-8674-494e-b4f2-33a260d1518b`
+- verified_at: 2026-08-23 17:16:50 JST
+- robots: indexable
+- sitemap: 200
+- search: API smoke testと上記2検索を本番ブラウザで確認。
+- GitHub Raw fallback: 議員詳細、議員画像、予算画像、大容量議事録のsmoke test通過。
+- rollback可否: Vercel側を残して確認予定。
+- 備考: 千歳の質問履歴と検索改善を本番反映。GitHub `main` は `a137b44a`。
