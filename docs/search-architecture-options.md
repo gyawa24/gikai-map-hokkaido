@@ -4,11 +4,11 @@
 
 ## 結論
 
-採用構成は **Static Assets の2/3-gram文書転置索引 + 原文Range確認**。
+採用構成は **Static Assets の2/3-gram文書転置索引 + 原文block確認**。
 
-postingは文書IDを厳密昇順のdelta-varintへ圧縮する。2文字語は単一bigram、3文字語は単一trigram、頻出語は専用exact postingで一致が確定する。それ以外の4文字以上はtrigram候補を原文Rangeで必ず再確認する。manifest・asset catalog・posting・表示文書・原文Rangeの合計が96 requests / gzip 16MiB / 展開後64MiBを超える検索は、400文字版へ退避せず、語句追加を求めて取得前にfail-closedにする。
+postingは文書IDを厳密昇順のdelta-varintへ圧縮する。2文字語は単一bigram、3文字語は単一trigram、頻出語は専用exact postingで一致が確定する。それ以外の4文字以上はtrigram候補を原文blockで必ず再確認する。manifest・asset catalog・posting・表示文書・原文blockの合計が96 requests / gzip 16MiB / 展開後64MiBを超える検索は、400文字版へ退避せず、語句追加を求めて取得前にfail-closedにする。
 
-原文確認は文書ごとのStatic Assetではない。最大64文書 / 128KiBを一つのgzip memberにし、約20MiBごとの少数の`.bin`へ連結する。ブラウザは必要なgzip memberだけをHTTP Rangeで取得する。assetには句読点・漢字表記を保った`cleanText`原文を保存し、検索照合時だけ正規化する。Rangeは`206`、`Content-Range`の開始・終了・asset総長、圧縮bytes/SHA-256、展開bytes/SHA-256をすべて照合する。Range非対応や上限超過時は本文全体の転送を中断し、400文字版へ退避せず全文検索をfail-closedにする。
+原文確認は最大64文書 / 128KiBを一つのgzip memberにし、**1 gzip memberを1つの`.bin` asset**として保存する。Cloudflare Static AssetsはRange要求を無視して`200`でasset全体を返すため、複数memberを一つのassetへ連結しない。ブラウザはblock全体を通常取得し、`200`はcatalog上の`byte_start=0`かつblock bytesとasset総長が完全一致する場合だけ許可する。`206`を返す配信元では`Content-Range`の開始・終了・asset総長も厳密照合する。assetには句読点・漢字表記を保った`cleanText`原文を保存し、検索照合時だけ正規化する。圧縮/展開bytesとSHA-256の不一致や上限超過時は、400文字版へ退避せず全文検索をfail-closedにする。
 
 公開会議録のcoverageは会議単位ではなくschedule単位で管理する。公式minuteのうち空本文、名簿、明示的な`is_procedural`だけを本文索引から除き、`○議長`・`△議題`を含む他のtypeは原文全文を対象にする。各scheduleの原文hash・文字数・minute type別の対象/除外行数・文字数・理由をmanifestへ残し、目次・CID文字化け・画像PDFは理由付きでのみ除外する。
 
@@ -27,8 +27,8 @@ postingは文書IDを厳密昇順のdelta-varintへ圧縮する。2文字語は�
 | `search-index.json` / `search-indexes/{slug}.json` | Research APIと議事録一覧向けの全期間agenda-only互換payload |
 | `search-bigram-statewide/postings/*.json.gz` | 1,024 bucketの2/3-gram文書ID delta posting |
 | `search-bigram-statewide/documents/*.json.gz` | 候補確定後に読む表示用メタデータ |
-| `search-bigram-statewide/exact-text/*.bin` | 専用exact postingで確定しない4文字以上の候補を必須照合する連結gzip member |
-| `search-bigram-statewide/asset-catalog.json.gz` | posting・表示文書・各Range blockの圧縮/展開bytesとSHA-256を持つ実行時整合台帳 |
+| `search-bigram-statewide/exact-text/*.bin` | 専用exact postingで確定しない4文字以上の候補を照合する、1 gzip member単位の原文block |
+| `search-bigram-statewide/asset-catalog.json.gz` | posting・表示文書・各原文blockの圧縮/展開bytesとSHA-256を持つ実行時整合台帳 |
 | `search-bigram-statewide/coverage/{slug}.json.gz` | schedule別hash・type別文字数・除外理由を保持する監査専用台帳 |
 | `search-bigram-cities/{slug}/manifest.json` | 市別文書範囲と全道postingへの参照 |
 
@@ -38,18 +38,18 @@ postingは文書IDを厳密昇順のdelta-varintへ圧縮する。2文字語は�
 
 2文字以上の全期間検索は最初からngram経路を使う。1文字検索はruntime全shard取得と候補爆発を避けるため、UI/APIとも取得前に拒否する。「直近2年に1件あれば全期間検索をしない」方式は、他会議の本文400文字以降を欠落させるため廃止した。strictのactive city/source/year/faction/tab適用後が0件のときだけfallback同義・関連語を追加取得し、明示filterは0件でも自動解除しない。
 
-クライアントはmanifest以外のassetを検索1回限定のcacheに保持する。strict→fallbackはURL/Rangeとcatalog fingerprintが同じ取得だけを共有し、検索終了後に解放する。manifest・catalog・posting・表示文書・原文Rangeは一つのattempt別転送台帳で管理する。失敗した取得やoptional snippetも消費済みbytesを戻さず、retryは別attemptとして加算する。入力変更時は各callerの`AbortSignal`でfetch・解凍を止め、別検索と中断済みPromiseを共有しない。
+クライアントはmanifest以外のassetを検索1回限定のcacheに保持する。strict→fallbackはURL/blockとcatalog fingerprintが同じ取得だけを共有し、検索終了後に解放する。manifest・catalog・posting・表示文書・原文blockは一つのattempt別転送台帳で管理する。失敗した取得やoptional snippetも消費済みbytesを戻さず、retryは別attemptとして加算する。入力変更時は各callerの`AbortSignal`でfetch・解凍を止め、別検索と中断済みPromiseを共有しない。
 
 ビルドとverifierは次の上限を同じ値で保つ。
 
 - 1 asset: 24MiB以下
 - `public/generated`: 16,500 files / 750MiB以下
-- 代表クエリ: manifest・asset catalog・posting・文書・原文Rangeを合計96 requests以下 / gzip 16MiB / 展開後64MiB以下
+- 代表クエリ: manifest・asset catalog・posting・文書・原文blockを合計96 requests以下 / gzip 16MiB / 展開後64MiB以下
 - posting中間spool: 8GiBを超えたら停止し、成否にかかわらず`finally`で削除
 
-`npm run build` のprebuildは索引生成直後に `verify-search-index-shards.mjs` を必ず実行する。手動確認だけに依存せず、publication schedule coverage、restricted自治体の漏洩、文書ID、catalogのorphan/欠落、全assetとRange blockの圧縮/展開hash、代表クエリ転送量、asset数・展開後サイズのいずれかが不正なら本番buildへ進まない。開発起動時だけは入力fingerprintと必須assetを確認する `--if-stale` を使い、変更がなければ再生成を省略する。
+`npm run build` のprebuildは索引生成直後に `verify-search-index-shards.mjs` を必ず実行する。手動確認だけに依存せず、publication schedule coverage、restricted自治体の漏洩、文書ID、catalogのorphan/欠落、全assetと原文blockの圧縮/展開hash、代表クエリ転送量、asset数・展開後サイズのいずれかが不正なら本番buildへ進まない。開発起動時だけは入力fingerprintと必須assetを確認する `--if-stale` を使い、変更がなければ再生成を省略する。
 
-最終実測（2026-08-24、activity再生成後）は次のとおり。
+以下はCDNのRange非対応を確認する前の連結asset版baseline。1 gzip member / 1 asset版の生成時間・files・総量は、次回release preflight後に更新する。
 
 | 指標 | 実測 |
 |---|---:|

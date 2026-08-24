@@ -33,6 +33,7 @@ import {
   assertCitySearchManifestContract,
   assertExactSearchAssetUrlSet,
   assertStatewideSearchCityCoverage,
+  assertWholeExactTextAssetBlock,
 } from "./lib/search-index-artifact-contract.mjs";
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
@@ -761,10 +762,8 @@ function validateExactTextRanges(cityMeta, ranges) {
     );
     const filePath = path.join(GENERATED_DIR, range.exact_text_url.replace(/^\/generated\//, ""));
     invariant(fs.existsSync(filePath), `${cityMeta.slug}: exact text asset missing`);
-    invariant(
-      range.byte_start + range.byte_length <= fs.statSync(filePath).size,
-      `${cityMeta.slug}: exact text range exceeds asset`
-    );
+    const assetBytes = fs.statSync(filePath).size;
+    assertWholeExactTextAssetBlock(range, assetBytes, cityMeta.slug);
     expectedStart = range.end;
   }
   invariant(expectedStart === cityMeta.document_count, `${cityMeta.slug}: exact text ranges do not cover every document`);
@@ -953,6 +952,7 @@ function verifySearchAssetCatalog(manifest) {
   for (const [url, ranges] of exactRangesByUrl) {
     const filePath = generatedPathForUrl(url);
     const assetBytes = fs.statSync(filePath).size;
+    invariant(ranges.length === 1, `${url}: exact text asset must contain one gzip member`);
     let expectedByteStart = 0;
     for (const range of ranges.sort((left, right) => left.byte_start - right.byte_start)) {
       invariant(

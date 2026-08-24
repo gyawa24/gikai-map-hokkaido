@@ -218,6 +218,27 @@ export function validSearchContentRange(header, byteStart, byteLength, assetByte
     && total === assetBytes;
 }
 
+export function searchExactTextResponseMode(
+  status,
+  contentRange,
+  byteStart,
+  byteLength,
+  assetBytes
+) {
+  if (
+    status === 200
+    && byteStart === 0
+    && byteLength === assetBytes
+    && (contentRange === null || contentRange.trim() === "")
+  ) {
+    return "whole";
+  }
+  return status === 206
+    && validSearchContentRange(contentRange, byteStart, byteLength, assetBytes)
+    ? "range"
+    : null;
+}
+
 export async function cancelSearchResponseBody(response) {
   try {
     await response.body?.cancel();

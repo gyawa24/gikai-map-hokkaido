@@ -67,7 +67,6 @@ const EXACT_POSTING_TERMS = Object.freeze(
 );
 const BIGRAM_DOCUMENT_RANGE_TARGET_BYTES = 4 * 1024 * 1024;
 const BIGRAM_DOCUMENT_RANGE_MAX_DOCUMENTS = 4096;
-const EXACT_TEXT_ASSET_TARGET_BYTES = 20 * 1024 * 1024;
 const EXACT_TEXT_BLOCK_TARGET_BYTES = 128 * 1024;
 const EXACT_TEXT_BLOCK_MAX_DOCUMENTS = 64;
 const STATIC_ASSET_MAX_BYTES = 24 * 1024 * 1024;
@@ -84,7 +83,7 @@ export function addSearchAssetCatalogEntry(assetCatalog, key, entry) {
   }
   assetCatalog[key] = entry;
 }
-const SEARCH_BUILD_STATE_VERSION = 1;
+const SEARCH_BUILD_STATE_VERSION = 2;
 
 function formatMiB(bytes) {
   return `${(bytes / 1024 / 1024).toFixed(2)} MiB`;
@@ -1540,33 +1539,15 @@ export function exactTextAssetValue(doc) {
   return cleanText(doc?._exactEvidenceText ?? doc?._searchText);
 }
 
-function createExactTextBlockWriter(assetCatalog) {
-  const directory = path.join(PUBLIC_STATEWIDE_BIGRAM_INDEX_DIR, "exact-text");
-  const urlPrefix = "/generated/search-bigram-statewide/exact-text";
+export function createExactTextBlockWriter(
+  assetCatalog,
+  {
+    directory = path.join(PUBLIC_STATEWIDE_BIGRAM_INDEX_DIR, "exact-text"),
+    urlPrefix = "/generated/search-bigram-statewide/exact-text",
+  } = {}
+) {
   fs.mkdirSync(directory, { recursive: true });
   let nextFileIndex = 0;
-  let current = null;
-
-  const startAsset = () => {
-    const file = `${String(nextFileIndex).padStart(4, "0")}.bin`;
-    nextFileIndex += 1;
-    current = {
-      file,
-      filePath: path.join(directory, file),
-      url: `${urlPrefix}/${file}`,
-      chunks: [],
-      catalogEntries: [],
-      bytes: 0,
-    };
-  };
-
-  const flush = () => {
-    if (!current || current.chunks.length === 0) return;
-    fs.writeFileSync(current.filePath, Buffer.concat(current.chunks, current.bytes));
-    assertStaticAssetSize(current.filePath);
-    for (const entry of current.catalogEntries) entry.asset_bytes = current.bytes;
-    current = null;
-  };
 
   const addCity = (documentsWithSearchText) => {
     const ranges = [];
@@ -1578,41 +1559,34 @@ function createExactTextBlockWriter(assetCatalog) {
       if (compressed.length > STATIC_ASSET_MAX_BYTES) {
         throw new Error(`exact search text block exceeds ${formatMiB(STATIC_ASSET_MAX_BYTES)}`);
       }
-      if (
-        current
-        && current.chunks.length > 0
-        && current.bytes + compressed.length > EXACT_TEXT_ASSET_TARGET_BYTES
-      ) {
-        flush();
-      }
-      if (!current) startAsset();
+      const file = `${String(nextFileIndex).padStart(6, "0")}.bin`;
+      nextFileIndex += 1;
+      const filePath = path.join(directory, file);
+      const url = `${urlPrefix}/${file}`;
+      fs.writeFileSync(filePath, compressed);
+      assertStaticAssetSize(filePath);
 
-      const byteStart = current.bytes;
-      current.chunks.push(compressed);
-      current.bytes += compressed.length;
-
-      const catalogKey = `exact:${current.url}:${byteStart}:${compressed.length}`;
+      const catalogKey = `exact:${url}:0:${compressed.length}`;
       const catalogEntry = {
-        url: current.url,
+        url,
         encoding: "gzip-member-json",
-        byte_start: byteStart,
+        byte_start: 0,
         bytes: compressed.length,
         raw_bytes: source.length,
-        asset_bytes: 0,
+        asset_bytes: compressed.length,
         sha256: createHash("sha256").update(compressed).digest("hex"),
         raw_sha256: createHash("sha256").update(source).digest("hex"),
       };
       addSearchAssetCatalogEntry(assetCatalog, catalogKey, catalogEntry);
-      current.catalogEntries.push(catalogEntry);
 
       ranges.push({
         start: block.start,
         end: block.start + block.texts.length,
-        byte_start: byteStart,
+        byte_start: 0,
         byte_length: compressed.length,
         raw_bytes: source.length,
         encoding: "gzip-member-json",
-        exact_text_url: current.url,
+        exact_text_url: url,
       });
       block = null;
     };
@@ -1638,7 +1612,7 @@ function createExactTextBlockWriter(assetCatalog) {
     return ranges;
   };
 
-  return { addCity, finish: flush };
+  return { addCity, finish() {} };
 }
 
 function createBigramDocumentRangeWriters(assetCatalog) {

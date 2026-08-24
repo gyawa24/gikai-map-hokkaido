@@ -35,10 +35,10 @@ import {
   reconcileSearchTransferAttempt,
   reserveSearchTransferAssets,
   responseWireBytes,
+  searchExactTextResponseMode,
   searchAssetMetadataFingerprint,
   searchAssetPlanFromCatalog,
   validSearchAssetMetadata,
-  validSearchContentRange,
 } from "@/lib/searchTransferBudget.mjs";
 import { buildSearchAssist, buildSearchQuery, createSearchTextEvaluator, excerptSearchText, normalizeSearchText as normalizeForSearch } from "@/lib/searchQuery";
 
@@ -1040,30 +1040,22 @@ async function loadClientExactTextBlock(
       throw new Error("検索範囲が広すぎるため、検索語を追加して絞り込んでください。");
     }
     const byteEnd = block.byteStart + block.bytes - 1;
+    const wholeAsset = block.byteStart === 0 && block.bytes === block.assetBytes;
     promise = fetch(block.url, {
       cache: "no-cache",
-      headers: { Range: `bytes=${block.byteStart}-${byteEnd}` },
+      headers: wholeAsset ? undefined : { Range: `bytes=${block.byteStart}-${byteEnd}` },
       signal,
     })
       .then(async (response) => {
         const reportedWireBytes = responseWireBytes(response.headers, block.bytes);
-        if (response.status !== 206) {
-          await cancelSearchResponseBody(response);
-          reconcileSearchAssetActualBytes(
-            caches,
-            attemptKey,
-            reportedWireBytes,
-            block.rawBytes,
-            required
-          );
-          throw new Error("検索本文の部分読み込みに対応していません");
-        }
-        if (!validSearchContentRange(
+        const responseMode = searchExactTextResponseMode(
+          response.status,
           response.headers.get("content-range"),
           block.byteStart,
           block.bytes,
           block.assetBytes
-        )) {
+        );
+        if (!responseMode) {
           await cancelSearchResponseBody(response);
           reconcileSearchAssetActualBytes(
             caches,
@@ -1072,7 +1064,7 @@ async function loadClientExactTextBlock(
             block.rawBytes,
             required
           );
-          throw new Error("検索本文の部分読み込み範囲が壊れています");
+          throw new Error("検索本文の取得範囲が壊れています");
         }
         const contentLength = response.headers.get("content-length");
         if (

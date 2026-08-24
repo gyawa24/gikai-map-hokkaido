@@ -3,10 +3,12 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import zlib from "node:zlib";
 
 import {
   addSearchAssetCatalogEntry,
   agendaOnlyRuntimeIndex,
+  createExactTextBlockWriter,
   fingerprintSearchInputMetadata,
   encodeDocumentIds,
   invalidateSearchBuildState,
@@ -21,7 +23,7 @@ import {
 
 const inputFingerprint = "source-v1";
 const buildState = {
-  version: 1,
+  version: 2,
   generated_at: "2026-08-23T00:00:00.000Z",
   input_fingerprint: inputFingerprint,
   required_assets: ["public/generated/search-bigram-statewide/manifest.json"],
@@ -44,6 +46,15 @@ test("source更新でfingerprintが変われば再buildする", () => {
   assert.equal(searchIndexBuildStateIsFresh({
     inputFingerprint: "source-v2",
     buildState,
+    statewideManifest,
+    assetExists: () => true,
+  }), false);
+});
+
+test("旧exact asset形式のbuild stateは入力不変でも再buildする", () => {
+  assert.equal(searchIndexBuildStateIsFresh({
+    inputFingerprint,
+    buildState: { ...buildState, version: 1 },
     statewideManifest,
     assetExists: () => true,
   }), false);
@@ -96,6 +107,44 @@ test("検索asset catalogは同一keyの上書きをfail-closedにする", () =>
     /duplicate search asset catalog key/u
   );
   assert.equal(catalog["posting:/generated/example.json.gz"].bytes, 1);
+});
+
+test("exact全文blockは1 gzip memberずつ独立assetへ保存する", () => {
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "search-exact-assets-"));
+  const catalog = {};
+  try {
+    const writer = createExactTextBlockWriter(catalog, {
+      directory: tempDir,
+      urlPrefix: "/generated/search-test/exact-text",
+    });
+    const ranges = writer.addCity(
+      Array.from({ length: 130 }, (_, index) => ({
+        _searchText: `原文ブロック ${index}`,
+      }))
+    );
+    writer.finish();
+
+    assert.equal(ranges.length, 3);
+    assert.equal(fs.readdirSync(tempDir).length, 3);
+    assert.equal(new Set(ranges.map((range) => range.exact_text_url)).size, 3);
+    assert.deepEqual(ranges.map((range) => range.end - range.start), [64, 64, 2]);
+    for (const range of ranges) {
+      const filePath = path.join(tempDir, path.basename(range.exact_text_url));
+      const compressed = fs.readFileSync(filePath);
+      const key = `exact:${range.exact_text_url}:0:${compressed.length}`;
+      const asset = catalog[key];
+      assert.equal(range.byte_start, 0);
+      assert.equal(range.byte_length, compressed.length);
+      assert.equal(asset.asset_bytes, compressed.length);
+      assert.equal(asset.bytes, compressed.length);
+      assert.equal(
+        JSON.parse(zlib.gunzipSync(compressed).toString("utf8")).length,
+        range.end - range.start
+      );
+    }
+  } finally {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  }
 });
 
 test("asset gate失敗時はfresh stateを残さず、成功後だけatomic commitする", () => {

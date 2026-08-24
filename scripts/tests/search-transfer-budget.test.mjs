@@ -10,6 +10,7 @@ import {
   reconcileSearchTransferAttempt,
   reserveSearchTransferAssets,
   responseWireBytes,
+  searchExactTextResponseMode,
   searchAssetMetadataFingerprint,
   searchAssetPlanFromCatalog,
   validSearchAssetMetadata,
@@ -176,6 +177,21 @@ test("Content-Rangeは開始・終了・asset総長をすべて厳密照合す�
   }
 });
 
+test("HTTP 200はgzip blockがasset全体を占める場合だけ許可する", () => {
+  assert.equal(searchExactTextResponseMode(200, null, 0, 20, 20), "whole");
+  assert.equal(searchExactTextResponseMode(200, "", 0, 20, 20), "whole");
+  assert.equal(searchExactTextResponseMode(206, "bytes 10-19/100", 10, 10, 100), "range");
+  for (const fixture of [
+    [200, null, 10, 20, 100],
+    [200, null, 0, 20, 100],
+    [200, "bytes 0-19/20", 0, 20, 20],
+    [206, null, 0, 20, 20],
+    [404, null, 0, 20, 20],
+  ]) {
+    assert.equal(searchExactTextResponseMode(...fixture), null);
+  }
+});
+
 test("Range非対応responseは本文全体を読まずcancelできる", async () => {
   let cancelCount = 0;
   await cancelSearchResponseBody({
@@ -262,4 +278,9 @@ test("clientはgunzip直後に実raw量を計上し、cache fingerprint不一致
     source,
     /cached && cached\.fingerprint !== fingerprint[\s\S]{0,120}?throw new Error/u
   );
+  assert.match(
+    source,
+    /const wholeAsset = block\.byteStart === 0 && block\.bytes === block\.assetBytes;[\s\S]{0,220}?headers: wholeAsset \? undefined : \{ Range:/u
+  );
+  assert.match(source, /searchExactTextResponseMode\(/u);
 });

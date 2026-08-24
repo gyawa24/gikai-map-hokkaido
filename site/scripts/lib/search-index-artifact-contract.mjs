@@ -8,6 +8,17 @@ function assertSameValue(actual, expected, label) {
   }
 }
 
+export function assertWholeExactTextAssetBlock(range, assetBytes, label) {
+  if (
+    !Number.isSafeInteger(assetBytes)
+    || assetBytes <= 0
+    || range?.byte_start !== 0
+    || range?.byte_length !== assetBytes
+  ) {
+    throw new Error(`${label}: exact text block must cover its whole asset`);
+  }
+}
+
 export function assertExactSearchAssetUrlSet(expectedUrls, actualUrls, label) {
   const expected = Array.from(new Set(expectedUrls)).sort();
   const actual = Array.from(new Set(actualUrls)).sort();

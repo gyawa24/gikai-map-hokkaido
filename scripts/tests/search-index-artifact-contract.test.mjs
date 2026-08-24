@@ -6,6 +6,7 @@ import {
   assertCitySearchManifestContract,
   assertExactSearchAssetUrlSet,
   assertStatewideSearchCityCoverage,
+  assertWholeExactTextAssetBlock,
 } from "../../site/scripts/lib/search-index-artifact-contract.mjs";
 
 function fixture() {
@@ -82,6 +83,30 @@ test("検索所有assetの物理集合は参照集合とmissing/orphan双方向�
       "fixture"
     ),
     /missing: \/generated\/b\.bin; orphan: \/generated\/stale-restricted\.bin/u
+  );
+});
+
+test("exact全文blockはasset全体と1対1でなければならない", () => {
+  assert.doesNotThrow(() => assertWholeExactTextAssetBlock(
+    { byte_start: 0, byte_length: 20 },
+    20,
+    "fixture"
+  ));
+  assert.throws(
+    () => assertWholeExactTextAssetBlock(
+      { byte_start: 10, byte_length: 20 },
+      100,
+      "fixture"
+    ),
+    /must cover its whole asset/u
+  );
+  assert.throws(
+    () => assertWholeExactTextAssetBlock(
+      { byte_start: 0, byte_length: 20 },
+      100,
+      "fixture"
+    ),
+    /must cover its whole asset/u
   );
 });
 
