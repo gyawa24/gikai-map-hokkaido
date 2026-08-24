@@ -402,3 +402,40 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - GitHub Raw fallback: 議員詳細、議員画像、予算画像、大容量議事録のsmoke test通過。
 - rollback可否: Vercel側を残して確認予定。
 - 備考: 千歳の質問履歴と検索改善を本番反映。GitHub `main` は `a137b44a`。
+
+## 2026-08-24 Cloudflare 検証
+
+実施者: Codex
+
+#### ローカル確認
+
+- `npm run cf:preflight`: 通過
+- preflight recorded_at: 2026-08-24 12:54:02 JST
+- source files: 15,213
+- artifact files: 7,881
+- Cloudflare build見込み: 5,882 files / 781.1 MiB
+- dry-run: 通過
+- 検索品質: bigram版 24/24、Node test 107/107、lint、TypeScript通過
+- 備考: Cloudflare Static AssetsがRangeを無視する挙動へ対応し、原文を1 gzip block / 1 assetで配信。全15,824検索文書を1,260 exact-text assetsへ分割し、通常GET 200と圧縮・展開SHAを検証。
+
+#### Cloudflare staging
+
+- staging URL: `https://chihougikai-com-staging.yohei-218.workers.dev`
+- staging Worker Version ID: `4290709d-3fda-4530-b9b8-55b557e6d8e2`
+- smoke test: 通過
+- asset確認: HTTP 200、Content-Rangeなし、Content-Length・圧縮SHA・展開SHA一致
+- 検索確認: 「千歳市民の入院を受け入れた」が千歳市「令和 ３年 第１回定例会」1件に一致。
+
+#### 本番反映後の確認
+
+- 実行コマンド: `CLOUDFLARE_RELEASE_CONFIRM=deploy npm run cf:deploy`、`npm run cf:post-cutover-check`、`npm run cf:finalize-production`
+- production URL: `https://chihougikai.com` 200 Cloudflare、`https://www.chihougikai.com` 301 Cloudflare
+- production Worker Version ID: `bfa5e557-62a1-43f2-b215-84103c2edd82`
+- verified_at: 2026-08-24 12:59:50 JST
+- robots: indexable
+- sitemap: 200
+- search: API smoke test通過。上記フレーズが本番ブラウザで1件表示。
+- 議事録・活動確認: 中頓別町「令和8年第1回定例会」、恵庭市・三上まどか議員「質問記録16件」を本番ブラウザで確認。
+- GitHub Raw fallback: 議員詳細、議員画像、予算画像、大容量議事録のsmoke test通過。
+- rollback可否: Vercel側を残して確認予定。
+- 備考: 全道議事録・完全一致検索更新を本番反映。GitHub `main` は `4b49149a`。
