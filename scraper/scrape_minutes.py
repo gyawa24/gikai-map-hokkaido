@@ -11,7 +11,7 @@
   # 全自治体（municipalities.json に登録済みのもの全部）
   python scraper/scrape_minutes.py --all
 
-  # 年度指定（デフォルト: 2024,2025）
+  # 年度指定（デフォルト: 実行年を含む直近6年）
   python scraper/scrape_minutes.py --slug hakodate --years 2023,2024,2025
 
 オプション:
@@ -31,6 +31,31 @@ from datetime import date
 from pathlib import Path
 
 import requests
+
+if __package__:
+    from scraper.lib.dnp_minutes import (
+        council_file_schedule_count,
+        council_groups_from_response,
+        council_index_entry,
+        load_council_index,
+        ordered_council_index,
+        resolve_council_year,
+        sync_existing_council_year,
+        validate_council_content,
+        write_json_atomic,
+    )
+else:
+    from lib.dnp_minutes import (
+        council_file_schedule_count,
+        council_groups_from_response,
+        council_index_entry,
+        load_council_index,
+        ordered_council_index,
+        resolve_council_year,
+        sync_existing_council_year,
+        validate_council_content,
+        write_json_atomic,
+    )
 
 # ---------------------------------------------------------------------------
 # 設定
@@ -136,17 +161,20 @@ def clean_text(text: str) -> str:
 # ---------------------------------------------------------------------------
 # スクレイピング本体
 # ---------------------------------------------------------------------------
-def fetch_councils(tenant_id: int, target_years: set[str]) -> list[dict]:
+def fetch_councils(
+    tenant_id: int,
+    target_years: set[str],
+    *,
+    allow_empty: bool = False,
+) -> list[dict]:
     data = post("councils/index", {"tenant_id": tenant_id})
     time.sleep(REQUEST_INTERVAL)
 
     targets = []
-    for item in data.get("councils", []):
+    for item in council_groups_from_response(data, allow_empty=allow_empty):
         for view_year in item.get("view_years", []):
-            year = view_year.get("view_year", "")
-            if year not in target_years:
-                continue
-            japanese_year = view_year.get("japanese_year", "")
+            fallback_year = view_year.get("view_year", "")
+            fallback_japanese_year = view_year.get("japanese_year", "")
             for ct in view_year.get("council_type", []):
                 if not is_target_council(ct):
                     continue
@@ -156,9 +184,17 @@ def fetch_councils(tenant_id: int, target_years: set[str]) -> list[dict]:
                     if ct.get(f"council_type_name{i}")
                 )
                 for council in ct.get("councils", []):
+                    name = council["name"].replace("\u3000", " ").strip()
+                    year, japanese_year = resolve_council_year(
+                        name,
+                        fallback_year,
+                        fallback_japanese_year,
+                    )
+                    if year not in target_years:
+                        continue
                     targets.append({
                         "council_id": council["council_id"],
-                        "name": council["name"].replace("\u3000", " ").strip(),
+                        "name": name,
                         "year": year,
                         "japanese_year": japanese_year,
                         "type_label": type_label,
@@ -192,44 +228,85 @@ def fetch_minutes(tenant_id: int, council_id: int, schedule_id: int) -> list[dic
     ]
 
 
-def scrape_city(slug: str, tenant_id: int, target_years: set[str], force: bool = False) -> None:
+def scrape_city(
+    slug: str,
+    tenant_id: int,
+    target_years: set[str],
+    force: bool = False,
+    *,
+    allow_empty: bool = False,
+) -> None:
     output_dir = ROOT / "data" / slug / "minutes"
     output_dir.mkdir(parents=True, exist_ok=True)
+    index_path = output_dir / "index.json"
+    index_existed_before = index_path.exists()
+    index_by_id = load_council_index(index_path)
 
     print(f"\n[{slug}] 会議一覧取得中...")
-    councils = fetch_councils(tenant_id, target_years)
+    councils = fetch_councils(tenant_id, target_years, allow_empty=allow_empty)
     print(f"  対象: {len(councils)}件")
 
-    index = []
+    failures = []
     for i, c in enumerate(councils):
         cid = c["council_id"]
+        council_key = str(cid)
         out_path = output_dir / f"{cid}.json"
 
         if out_path.exists() and not force:
-            print(f"  [{i+1}/{len(councils)}] スキップ: {c['name']}")
-            index.append({**{k: c[k] for k in ("council_id","name","year","japanese_year","type_label")}, "file": f"{cid}.json"})
+            try:
+                schedule_count = council_file_schedule_count(out_path)
+                metadata_updated = sync_existing_council_year(
+                    out_path,
+                    c["year"],
+                    c["japanese_year"],
+                )
+            except Exception as exc:
+                print(f"  [{i+1}/{len(councils)}] 既存会議の確認失敗、indexを保持: {c['name']} ({exc})")
+                failures.append((cid, str(exc)))
+                continue
+            suffix = " / 年メタデータ更新" if metadata_updated else ""
+            print(f"  [{i+1}/{len(councils)}] スキップ: {c['name']}{suffix}")
+            index_by_id[council_key] = council_index_entry(
+                c,
+                previous=index_by_id.get(council_key),
+                schedule_count=schedule_count,
+            )
             continue
 
         print(f"  [{i+1}/{len(councils)}] 取得: {c['name']}")
-        schedules = fetch_schedules(tenant_id, cid)
-        print(f"    → {len(schedules)}日程")
+        try:
+            schedules = fetch_schedules(tenant_id, cid)
+            print(f"    → {len(schedules)}日程")
 
-        result_schedules = []
-        for j, s in enumerate(schedules):
-            print(f"    {s['name']} ({j+1}/{len(schedules)})")
-            minutes = fetch_minutes(tenant_id, cid, s["schedule_id"])
-            result_schedules.append({**s, "minutes": minutes})
+            result_schedules = []
+            for j, s in enumerate(schedules):
+                print(f"    {s['name']} ({j+1}/{len(schedules)})")
+                minutes = fetch_minutes(tenant_id, cid, s["schedule_id"])
+                result_schedules.append({**s, "minutes": minutes})
+            council_data = {**c, "schedules": result_schedules}
+            validate_council_content(council_data, source=f"council_id={cid}")
+        except Exception as exc:
+            print(f"    取得失敗、既存本文・indexを保持: {exc}")
+            failures.append((cid, str(exc)))
+            continue
 
-        council_data = {**c, "schedules": result_schedules}
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(council_data, f, ensure_ascii=False, indent=2)
+        write_json_atomic(out_path, council_data)
 
-        index.append({**{k: c[k] for k in ("council_id","name","year","japanese_year","type_label")},
-                      "file": f"{cid}.json", "schedule_count": len(schedules)})
+        index_by_id[council_key] = council_index_entry(
+            c,
+            previous=index_by_id.get(council_key),
+            schedule_count=len(schedules),
+        )
 
-    with open(output_dir / "index.json", "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, indent=2)
+    index = ordered_council_index(index_by_id)
+    if index or index_existed_before:
+        write_json_atomic(index_path, index)
+    else:
+        print("  ! 取得成功した会議がないためindexは作成しません")
     print(f"  ✓ 完了: {len(index)}件保存 → {output_dir}")
+    if failures:
+        failed_ids = ", ".join(str(council_id) for council_id, _ in failures)
+        raise RuntimeError(f"[{slug}] {len(failures)} council(s) failed: {failed_ids}")
 
 
 # ---------------------------------------------------------------------------
@@ -241,11 +318,17 @@ def main():
     parser.add_argument("--all", action="store_true", help="municipalities.jsonの全自治体を処理")
     parser.add_argument("--years", default=",".join(sorted(DEFAULT_YEARS)), help="対象年度（カンマ区切り）")
     parser.add_argument("--force", action="store_true", help="既存ファイルを上書き")
+    parser.add_argument(
+        "--allow-empty",
+        action="store_true",
+        help="DNPが空の会議一覧を返してもエラーにしない（通常は指定しない）",
+    )
     args = parser.parse_args()
 
     target_years = set(args.years.split(","))
     municipalities = load_municipalities()
 
+    failures = []
     if args.all:
         targets = list(municipalities.values())
     elif args.slug:
@@ -257,6 +340,7 @@ def main():
                 tid = fetch_tenant_id(slug)
                 if not tid:
                     print(f"  {slug}: 取得失敗、スキップ")
+                    failures.append((slug, "tenant_idを取得できません"))
                     continue
                 targets.append({"slug": slug, "name": slug, "tenant_id": tid})
             else:
@@ -267,10 +351,27 @@ def main():
 
     print(f"対象: {len(targets)}自治体 / 年度: {sorted(target_years)}")
     for m in targets:
-        scrape_city(m["slug"], m["tenant_id"], target_years, force=args.force)
+        try:
+            scrape_city(
+                m["slug"],
+                m["tenant_id"],
+                target_years,
+                force=args.force,
+                allow_empty=args.allow_empty,
+            )
+        except Exception as exc:
+            failures.append((m["slug"], str(exc)))
+            print(f"  {m['slug']}: 更新失敗: {exc}")
+
+    if failures:
+        print("\n失敗した自治体:")
+        for slug, error in failures:
+            print(f"  - {slug}: {error}")
+        return 1
 
     print("\n全完了")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

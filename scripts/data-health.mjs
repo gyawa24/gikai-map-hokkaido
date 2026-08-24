@@ -5,6 +5,8 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
+import { hasPublishedMemberThemes } from "./lib/member-activity-capability.mjs";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, "..");
@@ -85,6 +87,7 @@ Checks:
   - council term metadata is complete and date-shaped
   - site/data/_city-capabilities.json matches site/data files
   - budget_sources.json does not mark missing public OCR data as imported
+  - minutes years agree with explicit Reiwa years in council names
   - known public data in data/{slug}/ is copied to site/data/{slug}/
   - site-only overlays are classified instead of hidden
 `);
@@ -187,6 +190,72 @@ function validateDateString(value) {
   return { ok: true };
 }
 
+function explicitReiwaYear(name) {
+  const match = String(name ?? "").match(/令和\s*([元一二三四五六七八九十0-9０-９]+)\s*年/u);
+  if (!match) return null;
+  const simpleJapaneseYears = new Map([
+    ["元", 1], ["一", 1], ["二", 2], ["三", 3], ["四", 4], ["五", 5],
+    ["六", 6], ["七", 7], ["八", 8], ["九", 9], ["十", 10],
+  ]);
+  const eraYear = simpleJapaneseYears.get(match[1])
+    ?? Number(match[1].normalize("NFKC"));
+  return Number.isInteger(eraYear) && eraYear > 0 ? 2018 + eraYear : null;
+}
+
+async function checkMinutesYearConsistency(report, municipalities) {
+  for (const municipality of municipalities) {
+    const slug = municipality.slug;
+    for (const [baseDir, label] of [[ROOT_DATA_DIR, "data"], [SITE_DATA_DIR, "site/data"]]) {
+      const minutesDir = path.join(baseDir, slug, "minutes");
+      const indexPath = path.join(minutesDir, "index.json");
+      if (!(await pathExists(indexPath))) continue;
+      const index = await readJson(indexPath);
+      for (const entry of index) {
+        const councilId = String(entry.council_id ?? entry.id ?? "unknown");
+        const expectedYear = explicitReiwaYear(entry.name ?? entry.council_name);
+        if (expectedYear === null) continue;
+        if (Number(entry.year) !== expectedYear) {
+          report.errors.push(
+            `${label}/${slug}/minutes/index.json ${councilId} year=${entry.year ?? "missing"}; expected ${expectedYear}`,
+          );
+        }
+
+        const fileName = typeof entry.file === "string" && entry.file
+          ? path.basename(entry.file)
+          : `${councilId}.json`;
+        const councilPath = path.join(minutesDir, fileName);
+        if (!(await pathExists(councilPath))) continue;
+        const council = await readJson(councilPath);
+        if (Number(council.year) !== expectedYear) {
+          report.errors.push(
+            `${label}/${slug}/minutes/${fileName} year=${council.year ?? "missing"}; expected ${expectedYear}`,
+          );
+        }
+      }
+    }
+
+    const rootIndexPath = path.join(ROOT_DATA_DIR, slug, "minutes", "index.json");
+    const segmentsDir = path.join(ROOT_DATA_DIR, slug, "segments");
+    if (!(await pathExists(rootIndexPath)) || !(await pathExists(segmentsDir))) continue;
+    const rootIndex = await readJson(rootIndexPath);
+    for (const entry of rootIndex) {
+      const councilId = String(entry.council_id ?? entry.id ?? "");
+      const expectedYear = explicitReiwaYear(entry.name ?? entry.council_name);
+      const segmentPath = path.join(segmentsDir, `${councilId}.json`);
+      if (!councilId || expectedYear === null || !(await pathExists(segmentPath))) continue;
+      const segments = await readJson(segmentPath);
+      const wrongDate = segments.find(
+        (segment) => segment.date && Number(String(segment.date).slice(0, 4)) !== expectedYear,
+      );
+      if (wrongDate) {
+        report.errors.push(
+          `data/${slug}/segments/${councilId}.json date=${wrongDate.date}; expected year ${expectedYear}`,
+        );
+      }
+    }
+  }
+}
+
 function validateCouncilTermMetadata(report, rows, label) {
   for (const row of rows) {
     const slug = typeof row.slug === "string" ? row.slug : "unknown";
@@ -270,7 +339,24 @@ async function checkCapabilities(report, municipalities, ignoredFiles) {
     }
 
     for (const [key, relativePaths] of Object.entries(CAPABILITY_DEFINITIONS)) {
-      const expected = await hasAnyPath(SITE_DATA_DIR, municipality.slug, relativePaths, ignoredFiles);
+      let expected = await hasAnyPath(SITE_DATA_DIR, municipality.slug, relativePaths, ignoredFiles);
+      if (key === "themes" && expected) {
+        let activityPath = null;
+        for (const relativePath of relativePaths) {
+          const targetPath = path.join(SITE_DATA_DIR, municipality.slug, relativePath);
+          if (!isIgnoredFile(targetPath, ignoredFiles) && await pathExists(targetPath)) {
+            activityPath = targetPath;
+            break;
+          }
+        }
+        try {
+          expected = hasPublishedMemberThemes(await readJson(activityPath), {
+            minutesAccess: municipality.minutes_access,
+          });
+        } catch {
+          expected = false;
+        }
+      }
       const actual = Boolean(city.capabilities?.[key]);
       if (actual !== expected) {
         report.errors.push(`capability mismatch ${municipality.slug}.${key}: ${actual} vs file=${expected}`);
@@ -437,6 +523,7 @@ function classifySiteOnly(file) {
 function classifyRootOnly(file) {
   if (ROOT_PRIVATE_FILES.has(file)) return "private";
   if (ROOT_PRIVATE_PREFIXES.some((prefix) => file.startsWith(prefix))) return "private";
+  if (/^[^/]+\/quarantine\//.test(file)) return "quarantine";
   if (/^[^/]+\/ocr_drafts\//.test(file)) return "private";
   if (/^[^/]+\/segments\//.test(file)) return "local_segments";
   if (/\.pdf$/i.test(file)) return "source_documents";
@@ -533,6 +620,7 @@ async function main() {
   const municipalities = await checkMetadata(report);
   await checkCapabilities(report, municipalities, ignoredFiles);
   await checkBudgetSources(report, ignoredFiles);
+  await checkMinutesYearConsistency(report, municipalities);
   await checkPublications(report, municipalities, ignoredFiles);
   await checkPublicSync(report, municipalities, ignoredFiles);
   await checkSiteOnly(report, ignoredFiles);

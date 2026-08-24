@@ -2,7 +2,7 @@
 
 ## 目的と範囲
 
-`scripts/refresh-minutes.mjs --all-published --dry-run` が選ぶ、取得経路と公開済み `minutes/index.json` の両方を持つ125自治体を対象に、リポジトリの保存済み会議IDと公式ソースの公開会議IDを読み取り専用で比較した。
+`scripts/refresh-minutes.mjs --all-published --dry-run` が選ぶ、取得経路と公開済み `minutes/index.json` の両方を持つ125自治体を対象に、リポジトリの保存済み会議IDと公式ソースの公開会議IDを読み取り専用で比較した。以下の判定表は更新実行前の初期スナップショットである。
 
 - DNP Discuss: 22自治体
 - gijiroku.com: 5自治体
@@ -11,6 +11,26 @@
 - 監査中に会議録取得、`index.json` 更新、公開用同期、segments生成は行っていない
 
 この監査の「一致」は、現在の取得設定/APIから確認できた範囲で新しい会議IDの差分がなかったという意味であり、公式サイトに更新がないことを保証しない。
+
+## 監査後の更新実施結果
+
+同日、取得内容と既存年を自治体単位で確認し、32自治体へ令和8年会議録60会議を追加した。
+
+- DNP 8自治体、13会議: `ashibetsu`, `atsuma`, `hakodate`, `hokuto`, `memuro`, `noboribetsu`, `obihiro`, `tomakomai`
+- 自治体PDF 23自治体、46会議・80PDF: `yakumo`, `tsubetsu`, `nakatombetsu`, `tobetsu`, `kiyosato`, `biratori`, `toyokoro`, `toyoura`, `esashi`, `embetsu`, `esashi_souya`, `kamisunagawa`, `monbetsu`, `nanporo`, `niki`, `setana`, `shibetsu`, `shihoro`, `shintotsukawa`, `sobetsu`, `sunagawa`, `toyako`, `tsukigata`
+- 独自HTML/PDF 1自治体、1会議: `kuriyama`
+- `shiraoi`: 公式ページの令和8年本会議録は「準備中」のため追加しなかった。
+- `bifuka`: 公式PDFは確認したが、通常抽出では本文が得られずOCRが必要なため公開を保留した。
+
+既存データの再確認では、津別町の9会議が平成22年を2024年、清里町の8会議が令和5年を2024年として収録されていた。誤年の会議は公開indexと検索用indexから外し、原典調査を継続できるよう `data/{slug}/quarantine/minutes.json` に理由と対象IDを記録した。芽室町は会議名の令和年を正として、公開index、会議JSON、検索segmentの日付を補正した。
+
+全自治体の開催日と本文冒頭も追加監査し、仁木町・幌延町・妹背牛町の20会議に混入していた別年度の日程103件を公開対象から除外した。平取町の4個の粗集約を17会議、陸別町の9個を18会議、富良野市の1個を2会議へ、公式本文の会議名・回次・開催日を根拠に分割した。修復前JSONと旧ID対応は各自治体の `quarantine/` に保存し、発言本文は変更していない。修復後の公開indexでは、高確度な年度不一致と45日超の日程誤集約はいずれも0件になった。
+
+公開一覧の並び順は合成会議IDではなく、公式開催日から生成した `sort_date` を使うようにした。日まで確認できない会議は `date_precision: "month"` として月精度で並べ、日付を捏造しない。新版の全件backfillでは公開2,718会議中2,693会議の日単位開催日を確認した。
+
+PDF更新処理は、既存会議への後日程追加、空本文、取得失敗、`--force` と単年指定を回帰テスト化した。既存indexは常に保持し、対象会議の全日程が取得・抽出できたときだけ会議JSONと該当index項目を原子的に置換する。栗山町の独自スクレイパーにも、既存indexのfail-closed検証、未対象年保持、空本文拒否、原子的書き込みを追加した。
+
+追加15自治体の新規21会議は35日程・本文1,276,126文字を全件検証し、新規会議だけから検索用segment 1,278件を生成した。南幌町と士幌町では、令和7年の既存PDF URLが公式一覧上で別URLへ変わった事例を検出したが、同じ本文か安全に確定できないため既存会議を保持し、令和8年の新規会議だけを追加した。「要追加調査」の残自治体は、公式ページ構造と本文品質を自治体単位で確認してから続行する。
 
 ## 判定集計
 

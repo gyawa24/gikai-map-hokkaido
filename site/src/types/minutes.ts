@@ -9,6 +9,7 @@ export type MinuteSchedule = {
   schedule_id: number;
   name: string;
   page_no: number;
+  date?: string;
   minutes: MinuteItem[];
 };
 
@@ -29,6 +30,10 @@ export type MinutesIndexItem = {
   type_label: string;
   file: string;
   schedule_count?: number;
+  start_date?: string;
+  end_date?: string;
+  sort_date?: string;
+  date_precision?: "day" | "month";
 };
 
 export type MinutesSpeaker = {
@@ -40,6 +45,8 @@ export type MinutesSpeaker = {
 export type MinutesQuestioner = {
   name: string;
   topics: string[];
+  ai_topics?: string[];
+  topics_source?: "minutes_structure" | "ai_generated";
 };
 
 export type MinutesEnriched = {

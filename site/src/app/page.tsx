@@ -88,6 +88,13 @@ function getMinutesCount(cityId: string, index: MinutesIndexItem[]): number {
   }
 }
 
+function getLatestMinutesName(index: MinutesIndexItem[]): string {
+  const latestDated = index
+    .filter((item) => item.sort_date)
+    .sort((a, b) => String(b.sort_date).localeCompare(String(a.sort_date)))[0];
+  return latestDated?.name ?? index[0]?.name ?? "";
+}
+
 type CitySummary = {
   id: string;
   name: string;
@@ -129,7 +136,7 @@ export default async function HomePage() {
       hasBudgets: capability.capabilities.budgets,
       hasThemes: capability.capabilities.themes,
       memberCount: getMemberCount(m.slug),
-      latestSession: minutesIndex[0]?.name ?? getLatestDecisionSession(m.slug),
+      latestSession: getLatestMinutesName(minutesIndex) || getLatestDecisionSession(m.slug),
       decisionCount: getDecisionCount(m.slug),
       minutesCount: getMinutesCount(m.slug, minutesIndex),
     };

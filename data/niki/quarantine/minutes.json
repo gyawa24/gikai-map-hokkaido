@@ -1,0 +1,1279 @@
+{
+  "updated_at": "2026-08-23",
+  "records": [
+    {
+      "status": "filtered_from_publication",
+      "reason": "schedule_year_mismatch_high_confidence",
+      "councils": [
+        {
+          "council_id": 20241004,
+          "published_year": 2024,
+          "original_schedule_count": 14,
+          "retained_schedule_count": 1,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "第4回定例会1日目(平成23年12月21日開催) (PDF:730KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/H231221.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-12-21"
+              ]
+            },
+            {
+              "schedule_id": 2,
+              "name": "第4回定例会2日目(平成23年12月22日開催) (PDF:418KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/H231222.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-12-22"
+              ]
+            },
+            {
+              "schedule_id": 4,
+              "name": "第4回定例会（平成29年12月21日開催） (PDF:1.71MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j000000197f.pdf"
+              ],
+              "detected_year": 2017,
+              "detected_date_years": [
+                2017
+              ],
+              "dates": [
+                "2017-12-21"
+              ]
+            },
+            {
+              "schedule_id": 5,
+              "name": "第4回定例会(平成30年12月19日開催) (PDF:1.54MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000002lxi.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-12-19"
+              ]
+            },
+            {
+              "schedule_id": 6,
+              "name": "第4回定例会(令和元年12月19日開催) (PDF:2.19MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j000000416s.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-12-19"
+              ]
+            },
+            {
+              "schedule_id": 7,
+              "name": "第4回定例会(平成24年12月19日開催) (PDF:821KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007bm.pdf"
+              ],
+              "detected_year": 2012,
+              "detected_date_years": [
+                2012
+              ],
+              "dates": [
+                "2012-12-19"
+              ]
+            },
+            {
+              "schedule_id": 8,
+              "name": "第4回定例会2日目(平成27年12月22日開催) (PDF:499KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007mz.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-12-22"
+              ]
+            },
+            {
+              "schedule_id": 9,
+              "name": "第4回定例会1日目(平成27年12月21日開催) (PDF:748KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007n3.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-12-21"
+              ]
+            },
+            {
+              "schedule_id": 10,
+              "name": "第4回定例会1日目(平成26年12月18日開催) (PDF:791KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007r1.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-12-18"
+              ]
+            },
+            {
+              "schedule_id": 11,
+              "name": "第4回定例会2日目(平成26年12月19日開催) (PDF:427KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007s2.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-12-19"
+              ]
+            },
+            {
+              "schedule_id": 12,
+              "name": "第4回定例会(平成25年12月19日開催) (PDF:2.07MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007sq.pdf"
+              ],
+              "detected_year": 2013,
+              "detected_date_years": [
+                2013
+              ],
+              "dates": [
+                "2013-12-19"
+              ]
+            },
+            {
+              "schedule_id": 13,
+              "name": "第4回定例会2日目(平成28年12月21日開催) (PDF:393KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/jg7dqg00000001m9.pdf"
+              ],
+              "detected_year": 2016,
+              "detected_date_years": [
+                2016
+              ],
+              "dates": [
+                "2016-12-21"
+              ]
+            },
+            {
+              "schedule_id": 14,
+              "name": "第4回定例会1日目(平成28年12月19日開催) (PDF:808KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/jg7dqg00000001md.pdf"
+              ],
+              "detected_year": 2016,
+              "detected_date_years": [
+                2016
+              ],
+              "dates": [
+                "2016-12-19"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241004.json"
+        },
+        {
+          "council_id": 20242004,
+          "published_year": 2024,
+          "original_schedule_count": 2,
+          "retained_schedule_count": 0,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "第4回臨時会(平成23年8月10日開催/初議会) (PDF:455KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/H230810.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-08-10"
+              ]
+            },
+            {
+              "schedule_id": 2,
+              "name": "第4回臨時会(平成27年11月30日開催) (PDF:522KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007n7.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-11-30"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20242004.json"
+        },
+        {
+          "council_id": 20241003,
+          "published_year": 2024,
+          "original_schedule_count": 12,
+          "retained_schedule_count": 1,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "第3回定例会(平成23年9月21日開催) (PDF:642KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/H230921.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-09-21"
+              ]
+            },
+            {
+              "schedule_id": 3,
+              "name": "第3回定例会（平成29年9月27日開催） (PDF:1.64MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j000000104g.pdf"
+              ],
+              "detected_year": 2017,
+              "detected_date_years": [
+                2017
+              ],
+              "dates": [
+                "2017-09-27"
+              ]
+            },
+            {
+              "schedule_id": 4,
+              "name": "第3回定例会(平成30年9月26日開催) (PDF:1.64MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000002fzo.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-09-26"
+              ]
+            },
+            {
+              "schedule_id": 5,
+              "name": "第3回定例会(令和元年9月25日開催) (PDF:1.80MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000003syh.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-09-25"
+              ]
+            },
+            {
+              "schedule_id": 6,
+              "name": "第3回定例会2日目(平成24年9月25日開催) (PDF:432KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007bq.pdf"
+              ],
+              "detected_year": 2012,
+              "detected_date_years": [
+                2012
+              ],
+              "dates": [
+                "2012-09-25"
+              ]
+            },
+            {
+              "schedule_id": 7,
+              "name": "第3回定例会1日目(平成24年9月24日開催) (PDF:862KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007bu.pdf"
+              ],
+              "detected_year": 2012,
+              "detected_date_years": [
+                2012
+              ],
+              "dates": [
+                "2012-09-24"
+              ]
+            },
+            {
+              "schedule_id": 8,
+              "name": "第3回定例会(平成27年9月29日開催) (PDF:826KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007nb.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-09-29"
+              ]
+            },
+            {
+              "schedule_id": 9,
+              "name": "第3回定例会2日目(平成26年9月25日開催) (PDF:458KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007r5.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-09-25"
+              ]
+            },
+            {
+              "schedule_id": 10,
+              "name": "第3回定例会1日目(平成26年9月24日開催) (PDF:718KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007r9.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-09-24"
+              ]
+            },
+            {
+              "schedule_id": 11,
+              "name": "第3回定例会(平成25年9月25日開催) (PDF:853KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007su.pdf"
+              ],
+              "detected_year": 2013,
+              "detected_date_years": [
+                2013
+              ],
+              "dates": [
+                "2013-09-25"
+              ]
+            },
+            {
+              "schedule_id": 12,
+              "name": "第3回定例会(平成28年9月21日開催) (PDF:801KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/jg7dqg00000001mh.pdf"
+              ],
+              "detected_year": 2016,
+              "detected_date_years": [
+                2016
+              ],
+              "dates": [
+                "2016-09-21"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241003.json"
+        },
+        {
+          "council_id": 20242002,
+          "published_year": 2024,
+          "original_schedule_count": 8,
+          "retained_schedule_count": 1,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "第2回臨時会(平成23年4月27日開催) (PDF:565KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/H230427.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-04-27"
+              ]
+            },
+            {
+              "schedule_id": 3,
+              "name": "第2回臨時会(平成29年5月16日開催) (PDF:584KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000000rre.pdf"
+              ],
+              "detected_year": 2017,
+              "detected_date_years": [
+                2017
+              ],
+              "dates": [
+                "2017-05-16"
+              ]
+            },
+            {
+              "schedule_id": 4,
+              "name": "第2回臨時会(令和元年8月13日開催) (PDF:950KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000003sy3.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-08-13"
+              ]
+            },
+            {
+              "schedule_id": 5,
+              "name": "第2回臨時会(平成24年5月29日開催) (PDF:447KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007c2.pdf"
+              ],
+              "detected_year": 2012,
+              "detected_date_years": [
+                2012
+              ],
+              "dates": [
+                "2012-05-29"
+              ]
+            },
+            {
+              "schedule_id": 6,
+              "name": "第2回臨時会(平成27年6月2日開催) (PDF:592KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007nn.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-06-02"
+              ]
+            },
+            {
+              "schedule_id": 7,
+              "name": "第2回臨時会(平成26年4月30日開催) (PDF:1.34MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007rl.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-04-30"
+              ]
+            },
+            {
+              "schedule_id": 8,
+              "name": "第2回臨時会(平成25年5月27日開催) (PDF:978KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007t2.pdf"
+              ],
+              "detected_year": 2013,
+              "detected_date_years": [
+                2013
+              ],
+              "dates": [
+                "2013-05-27"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20242002.json"
+        },
+        {
+          "council_id": 20242003,
+          "published_year": 2024,
+          "original_schedule_count": 4,
+          "retained_schedule_count": 0,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "第3回臨時会(平成23年5月31日開催) (PDF:454KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/H230531.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-05-31"
+              ]
+            },
+            {
+              "schedule_id": 2,
+              "name": "第3回臨時会（平成29年8月8日開催） (PDF:840KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000000xik.pdf"
+              ],
+              "detected_year": 2017,
+              "detected_date_years": [
+                2017
+              ],
+              "dates": [
+                "2017-08-08"
+              ]
+            },
+            {
+              "schedule_id": 3,
+              "name": "第3回臨時会〔初議会〕(平成27年8月10日開催) (PDF:512KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007nf.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-08-10"
+              ]
+            },
+            {
+              "schedule_id": 4,
+              "name": "第3回臨時会(平成26年6月2日開催) (PDF:836KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007rh.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-06-02"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20242003.json"
+        },
+        {
+          "council_id": 20241002,
+          "published_year": 2024,
+          "original_schedule_count": 12,
+          "retained_schedule_count": 2,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "第2回定例会(平成23年6月16日開催) (PDF:1.02MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/H230616.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-06-16"
+              ]
+            },
+            {
+              "schedule_id": 3,
+              "name": "第2回定例会（平成29年6月23日開催） (PDF:1.98MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000000uxg.pdf"
+              ],
+              "detected_year": 2017,
+              "detected_date_years": [
+                2017
+              ],
+              "dates": [
+                "2017-06-23"
+              ]
+            },
+            {
+              "schedule_id": 4,
+              "name": "第2回定例会(平成30年6月22日開催) (PDF:1.38MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000001wne.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-06-22"
+              ]
+            },
+            {
+              "schedule_id": 5,
+              "name": "第2回定例会(令和元年6月20日開催) (PDF:2.11MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000003dml.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-06-20"
+              ]
+            },
+            {
+              "schedule_id": 7,
+              "name": "第2回定例会(平成24年6月20日開催) (PDF:880KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007by.pdf"
+              ],
+              "detected_year": 2012,
+              "detected_date_years": [
+                2012
+              ],
+              "dates": [
+                "2012-06-20"
+              ]
+            },
+            {
+              "schedule_id": 8,
+              "name": "第2回定例会(平成27年6月19日開催) (PDF:843KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007nj.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-06-19"
+              ]
+            },
+            {
+              "schedule_id": 9,
+              "name": "第2回定例会(平成26年6月23日開催) (PDF:1.67MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007rd.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-06-23"
+              ]
+            },
+            {
+              "schedule_id": 10,
+              "name": "第2回定例会(平成25年6月20日開催) (PDF:742KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007sy.pdf"
+              ],
+              "detected_year": 2013,
+              "detected_date_years": [
+                2013
+              ],
+              "dates": [
+                "2013-06-20"
+              ]
+            },
+            {
+              "schedule_id": 11,
+              "name": "第2回定例会2日目(平成28年6月27日開催) (PDF:429KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/jg7dqg00000001m5.pdf"
+              ],
+              "detected_year": 2016,
+              "detected_date_years": [
+                2016
+              ],
+              "dates": [
+                "2016-06-27"
+              ]
+            },
+            {
+              "schedule_id": 12,
+              "name": "第2回定例会1日目(平成28年6月21日開催) (PDF:572KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/jg7dqg00000001ml.pdf"
+              ],
+              "detected_year": 2016,
+              "detected_date_years": [
+                2016
+              ],
+              "dates": [
+                "2016-06-21"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241002.json"
+        },
+        {
+          "council_id": 20242001,
+          "published_year": 2024,
+          "original_schedule_count": 10,
+          "retained_schedule_count": 1,
+          "removed_schedules": [
+            {
+              "schedule_id": 2,
+              "name": "第1回臨時会(平成29年1月18日開催) (PDF:444KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000000k2q.pdf"
+              ],
+              "detected_year": 2017,
+              "detected_date_years": [
+                2017
+              ],
+              "dates": [
+                "2017-01-18"
+              ]
+            },
+            {
+              "schedule_id": 3,
+              "name": "第1回臨時会(平成30年5月24日開催) (PDF:1.06MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000001qua.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-05-24"
+              ]
+            },
+            {
+              "schedule_id": 4,
+              "name": "第1回臨時会(令和元年5月24日開催) (PDF:1.21MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000003dm7.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-05-24"
+              ]
+            },
+            {
+              "schedule_id": 5,
+              "name": "第1回臨時会(平成27年1月30日開催) (PDF:442KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000006xl.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-01-30"
+              ]
+            },
+            {
+              "schedule_id": 6,
+              "name": "第1回臨時会(平成26年2月10日開催) (PDF:735KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv9760000000728.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-02-10"
+              ]
+            },
+            {
+              "schedule_id": 7,
+              "name": "第1回臨時会(平成24年5月1日開催) (PDF:591KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007c6.pdf"
+              ],
+              "detected_year": 2012,
+              "detected_date_years": [
+                2012
+              ],
+              "dates": [
+                "2012-05-01"
+              ]
+            },
+            {
+              "schedule_id": 8,
+              "name": "第1回臨時会(平成23年1月24日開催) (PDF:293KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007dl.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-01-24"
+              ]
+            },
+            {
+              "schedule_id": 9,
+              "name": "第1回臨時会(平成25年4月30日開催) (PDF:598KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007t6.pdf"
+              ],
+              "detected_year": 2013,
+              "detected_date_years": [
+                2013
+              ],
+              "dates": [
+                "2013-04-30"
+              ]
+            },
+            {
+              "schedule_id": 10,
+              "name": "第1回臨時会(平成28年5月25日開催) (PDF:597KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/jg7dqg00000001mp.pdf"
+              ],
+              "detected_year": 2016,
+              "detected_date_years": [
+                2016
+              ],
+              "dates": [
+                "2016-05-25"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20242001.json"
+        },
+        {
+          "council_id": 20241001,
+          "published_year": 2024,
+          "original_schedule_count": 30,
+          "retained_schedule_count": 3,
+          "removed_schedules": [
+            {
+              "schedule_id": 4,
+              "name": "第1回定例会1日目(平成29年3月9日開催) (PDF:724KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000000ka4.pdf"
+              ],
+              "detected_year": 2017,
+              "detected_date_years": [
+                2017
+              ],
+              "dates": [
+                "2017-03-09"
+              ]
+            },
+            {
+              "schedule_id": 5,
+              "name": "第1回定例会2日目(平成29年3月10日開催) (PDF:468KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000000kai.pdf"
+              ],
+              "detected_year": 2017,
+              "detected_date_years": [
+                2017
+              ],
+              "dates": [
+                "2017-03-10"
+              ]
+            },
+            {
+              "schedule_id": 6,
+              "name": "第1回定例会3日目(平成29年3月21日開催) (PDF:380KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000000kb0.pdf"
+              ],
+              "detected_year": 2017,
+              "detected_date_years": [
+                2017
+              ],
+              "dates": [
+                "2017-03-21"
+              ]
+            },
+            {
+              "schedule_id": 7,
+              "name": "第1回定例会1日目(平成30年3月9日開催) (PDF:1.30MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000001lc2.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-03-09"
+              ]
+            },
+            {
+              "schedule_id": 8,
+              "name": "第1回定例会2日目(平成30年3月12日開催) (PDF:1.24MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000001lci.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-03-12"
+              ]
+            },
+            {
+              "schedule_id": 9,
+              "name": "第1回定例会3日目(平成30年3月20日開催) (PDF:786KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000001lcy.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-03-20"
+              ]
+            },
+            {
+              "schedule_id": 10,
+              "name": "第1回定例会3日目(平成31年3月19日開催) (PDF:904KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000002zun.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-03-19"
+              ]
+            },
+            {
+              "schedule_id": 11,
+              "name": "第1回定例会2日目(平成31年3月11日開催) (PDF:1.67MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000002zv1.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-03-11"
+              ]
+            },
+            {
+              "schedule_id": 12,
+              "name": "第1回定例会1日目(平成31年3月8日開催) (PDF:1.67MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000002zvf.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-03-08"
+              ]
+            },
+            {
+              "schedule_id": 13,
+              "name": "第1回定例会1日目(平成28年3月10日開催) (PDF:727KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000006v1.pdf"
+              ],
+              "detected_year": 2016,
+              "detected_date_years": [
+                2016
+              ],
+              "dates": [
+                "2016-03-10"
+              ]
+            },
+            {
+              "schedule_id": 14,
+              "name": "第1回定例会1日目(平成25年3月7日開催) (PDF:721KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv976000000077r.pdf"
+              ],
+              "detected_year": 2013,
+              "detected_date_years": [
+                2013
+              ],
+              "dates": [
+                "2013-03-07"
+              ]
+            },
+            {
+              "schedule_id": 15,
+              "name": "第1回定例会1日目(平成24年3月7日開催) (PDF:667KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007b4.pdf"
+              ],
+              "detected_year": 2012,
+              "detected_date_years": [
+                2012
+              ],
+              "dates": [
+                "2012-03-07"
+              ]
+            },
+            {
+              "schedule_id": 16,
+              "name": "第1回定例会3日目(平成24年3月19日開催) (PDF:483KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007ca.pdf"
+              ],
+              "detected_year": 2012,
+              "detected_date_years": [
+                2012
+              ],
+              "dates": [
+                "2012-03-19"
+              ]
+            },
+            {
+              "schedule_id": 17,
+              "name": "第1回定例会2日目(平成24年3月9日開催) (PDF:477KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007ce.pdf"
+              ],
+              "detected_year": 2012,
+              "detected_date_years": [
+                2012
+              ],
+              "dates": [
+                "2012-03-09"
+              ]
+            },
+            {
+              "schedule_id": 18,
+              "name": "第1回定例会3日目(平成23年3月18日開催) (PDF:305KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007d9.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-03-18"
+              ]
+            },
+            {
+              "schedule_id": 19,
+              "name": "第1回定例会2日目(平成23年3月10日開催) (PDF:396KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007dd.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-03-10"
+              ]
+            },
+            {
+              "schedule_id": 20,
+              "name": "第1回定例会1日目(平成23年3月9日開催) (PDF:644KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007dh.pdf"
+              ],
+              "detected_year": 2011,
+              "detected_date_years": [
+                2011
+              ],
+              "dates": [
+                "2011-03-09"
+              ]
+            },
+            {
+              "schedule_id": 21,
+              "name": "第1回定例会2日目(平成28年3月11日開催) (PDF:649KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007mj.pdf"
+              ],
+              "detected_year": 2016,
+              "detected_date_years": [
+                2016
+              ],
+              "dates": [
+                "2016-03-11"
+              ]
+            },
+            {
+              "schedule_id": 22,
+              "name": "第1回定例会3日目(平成28年3月23日開催) (PDF:428KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007mn.pdf"
+              ],
+              "detected_year": 2016,
+              "detected_date_years": [
+                2016
+              ],
+              "dates": [
+                "2016-03-23"
+              ]
+            },
+            {
+              "schedule_id": 23,
+              "name": "第1回定例会2日目(平成27年3月11日開催) (PDF:665KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007mv.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-03-11"
+              ]
+            },
+            {
+              "schedule_id": 24,
+              "name": "第1回定例会3日目(平成27年3月19日開催) (PDF:593KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007nr.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-03-19"
+              ]
+            },
+            {
+              "schedule_id": 25,
+              "name": "第1回定例会1日目(平成27年3月10日開催) (PDF:723KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007nv.pdf"
+              ],
+              "detected_year": 2015,
+              "detected_date_years": [
+                2015
+              ],
+              "dates": [
+                "2015-03-10"
+              ]
+            },
+            {
+              "schedule_id": 26,
+              "name": "第1回定例会3日目(平成26年3月18日開催) (PDF:1.37MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007rp.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-03-18"
+              ]
+            },
+            {
+              "schedule_id": 27,
+              "name": "第1回定例会2日目(平成26年3月10日開催) (PDF:1.28MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007rt.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-03-10"
+              ]
+            },
+            {
+              "schedule_id": 28,
+              "name": "第1回定例会1日目(平成26年3月7日開催) (PDF:1.42MB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007rx.pdf"
+              ],
+              "detected_year": 2014,
+              "detected_date_years": [
+                2014
+              ],
+              "dates": [
+                "2014-03-07"
+              ]
+            },
+            {
+              "schedule_id": 29,
+              "name": "第1回定例会3日目(平成25年3月18日開催) (PDF:431KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007ta.pdf"
+              ],
+              "detected_year": 2013,
+              "detected_date_years": [
+                2013
+              ],
+              "dates": [
+                "2013-03-18"
+              ]
+            },
+            {
+              "schedule_id": 30,
+              "name": "第1回定例会2日目(平成25年3月8日開催) (PDF:448KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/irv97600000007te.pdf"
+              ],
+              "detected_year": 2013,
+              "detected_date_years": [
+                2013
+              ],
+              "dates": [
+                "2013-03-08"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241001.json"
+        }
+      ],
+      "note": "日程名・開催日抽出と本文冒頭の年が公開年と一致しない日程を除外。原本はquarantine配下に保存。"
+    },
+    {
+      "status": "filtered_from_publication",
+      "reason": "schedule_year_mismatch_high_confidence",
+      "councils": [
+        {
+          "council_id": 20241002,
+          "published_year": 2024,
+          "original_schedule_count": 2,
+          "retained_schedule_count": 1,
+          "removed_schedules": [
+            {
+              "schedule_id": 6,
+              "name": "第2回定例会 一般質問 1問目及び1答目 (PDF:663KB)",
+              "source_urls": [
+                "https://www.town.niki.hokkaido.jp/section/gikai/irv97600000004s6-att/immd6j0000004xzl.pdf"
+              ],
+              "detected_year": 2020,
+              "detected_date_years": [
+                2020,
+                2024
+              ],
+              "dates": [
+                "2020-06-18",
+                "2024-04-07",
+                "2024-05-25"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241002.json"
+        }
+      ],
+      "note": "日程名・開催日抽出と本文冒頭の年が公開年と一致しない日程を除外。原本はquarantine配下に保存。"
+    }
+  ]
+}

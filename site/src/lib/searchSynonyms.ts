@@ -1,3 +1,5 @@
+import { normalizeForSearch } from "@/lib/searchNormalization.mjs";
+
 export type SearchSynonymKind = "exact" | "related";
 
 export type SearchSynonymEntry = {
@@ -18,28 +20,6 @@ export type SearchTokenVariant = {
 };
 
 export type SearchTokenGroup = SearchTokenVariant[];
-
-const CHARACTER_VARIANTS: Record<string, string> = {
-  "髙": "高",
-  "﨑": "崎",
-  "塚": "塚",
-  "濵": "浜",
-  "邊": "辺",
-  "邉": "辺",
-  "澤": "沢",
-  "舘": "館",
-  "嶋": "島",
-  "德": "徳",
-  "惠": "恵",
-  "冨": "富",
-  "神": "神",
-  "齊": "斉",
-  "齋": "斉",
-  "國": "国",
-  "廣": "広",
-  "學": "学",
-  "氣": "気",
-};
 
 const BASIC_SEARCH_SYNONYMS: SearchSynonymEntry[] = [
   { canonical: "子ども", aliases: ["子供", "こども", "こども達", "こどもたち", "児童"], category: "福祉", kind: "exact", boost: 0.96, source: "basic" },
@@ -107,20 +87,7 @@ const SEARCH_SYNONYMS: SearchSynonymEntry[] = [
   ...CORPUS_SEARCH_SYNONYMS,
 ];
 
-const CHARACTER_VARIANT_PATTERN = new RegExp(`[${Object.keys(CHARACTER_VARIANTS).join("")}]`, "g");
-
-export function normalizeForSearch(text: string): string {
-  return text
-    .normalize("NFKC")
-    .replace(CHARACTER_VARIANT_PATTERN, (char) => CHARACTER_VARIANTS[char] ?? char)
-    .replace(/[ヶケヵ]/g, "け")
-    .replace(/[・･/／()（）「」『』【】［］\[\]{}｛｝.,，、:：;；!?！？'"`]/g, " ")
-    .replace(/\u3000/g, " ")
-    .replace(/[ァ-ヶ]/g, (char) => String.fromCharCode(char.charCodeAt(0) - 0x60))
-    .replace(/\s+/g, " ")
-    .toLowerCase()
-    .trim();
-}
+export { normalizeForSearch };
 
 function isLooseTermMatch(token: string, term: string): boolean {
   if (!token || !term) return false;

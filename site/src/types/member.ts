@@ -5,6 +5,14 @@ export type Member = {
   party?: string;
   faction: string;
   committees: string[];
+  role?: string;
+  title?: string;
+  roles?: string[];
+  position?: string;
+  positions?: string[];
+  roles_all?: string[];
+  extra_roles?: string[];
+  other_posts?: string[];
   votes?: number;
   photo_url?: string;
 };
@@ -56,6 +64,8 @@ export type MemberActivitySession = {
   end_time?: string;
   overview?: string;
   topics: string[];
+  canonical_topics?: string[];
+  generated_topics?: string[];
   summary_topics?: string[];
   topic_details?: MemberActivityTopicDetail[];
   evidence_minute_ids?: number[];
@@ -64,6 +74,7 @@ export type MemberActivitySession = {
 
 export type MemberActivity = {
   name: string;
+  classification_status?: "classified" | "mixed" | "legacy_unclassified";
   session_count: number;
   official_session_count?: number;
   preliminary_session_count?: number;
@@ -71,8 +82,10 @@ export type MemberActivity = {
   representative_question_count?: number;
   committee_question_count?: number;
   plenary_question_count?: number;
+  other_question_count?: number;
   themes: string[];
   summary_topics?: string[];
+  generated_topics?: string[];
   top_topics: string[];
   all_topics: string[];
   sessions: MemberActivitySession[];

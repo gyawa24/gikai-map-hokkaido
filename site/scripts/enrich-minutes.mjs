@@ -20,6 +20,7 @@ import path from "path";
 import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
 import os from "os";
+import { mergeQuestionersWithProvenance } from "./lib/merge-questioners.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "../..");
@@ -288,20 +289,11 @@ async function processFile(councilId, city) {
   const structuredQuestioners = extractQuestioners(session);
   const aiQuestioners = ai.questioners ?? [];
 
-  // マージ: 直接抽出 優先、AIの名前と照合して補完
-  const mergedQuestioners = structuredQuestioners.length > 0
-    ? structuredQuestioners.map((sq) => {
-        const aiMatch = aiQuestioners.find((aq) =>
-          aq.name.includes(sq.name) || sq.name.includes(aq.name)
-        );
-        return {
-          name: sq.name,
-          topics: sq.topics,
-          // AIのトピックも追記（重複除外）
-          ai_topics: aiMatch ? aiMatch.topics.filter((t) => !sq.topics.includes(t)) : [],
-        };
-      })
-    : aiQuestioners.map((q) => ({ name: q.name, topics: q.topics, ai_topics: [] }));
+  // 構造抽出できなかった場合も、AI生成テーマを公式抽出テーマへ昇格させない。
+  const mergedQuestioners = mergeQuestionersWithProvenance(
+    structuredQuestioners,
+    aiQuestioners
+  );
 
   console.log(`     質問者(直接抽出): ${structuredQuestioners.length}名`);
 

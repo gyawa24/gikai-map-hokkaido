@@ -3,9 +3,44 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import type { SessionHit, MemberHit, SearchFacet, SearchResponse } from "@/app/api/search/route";
+import type {
+  SessionHit,
+  MemberHit,
+  SearchFacet,
+  SearchIndexScope,
+  SearchResponse,
+} from "@/app/api/search/route";
 import { Accordion } from "@/components/Accordion";
-import { buildSearchAssist, buildSearchQuery, createSearchTextEvaluator, excerptSearchText } from "@/lib/searchQuery";
+import {
+  payloadSliceForRange,
+  resolveBigramCandidates,
+  searchPostingBucket as bigramBucket,
+  searchPostingBucketAssetFile as bigramBucketFile,
+  unionNumberLists,
+  variantsForBigramMatchMode,
+} from "@/lib/searchBigramCandidates.mjs";
+import {
+  appendSearchQueryToHref,
+  MAX_SEARCH_ASSET_REQUESTS_PER_QUERY,
+  MAX_SEARCH_QUERY_INPUT_LENGTH,
+  SEARCH_QUERY_LIMIT_MESSAGE,
+  validateSearchPostingPlan,
+  validateSearchQueryLimits,
+} from "@/lib/searchQueryLimits.mjs";
+import {
+  beginSearchTransferFetch,
+  cancelSearchResponseBody,
+  createSearchTransferBudget,
+  exactSearchAssetMetadataMatches,
+  reconcileSearchTransferAttempt,
+  reserveSearchTransferAssets,
+  responseWireBytes,
+  searchAssetMetadataFingerprint,
+  searchAssetPlanFromCatalog,
+  validSearchAssetMetadata,
+  validSearchContentRange,
+} from "@/lib/searchTransferBudget.mjs";
+import { buildSearchAssist, buildSearchQuery, createSearchTextEvaluator, excerptSearchText, normalizeSearchText as normalizeForSearch } from "@/lib/searchQuery";
 
 function Highlight({ text, tokens }: { text: string; tokens: string[] }) {
   if (!tokens.length) return <>{text}</>;
@@ -27,15 +62,6 @@ function Highlight({ text, tokens }: { text: string; tokens: string[] }) {
 
 function tokenize(query: string): string[] {
   return query.trim().split(/\s+/).filter(Boolean);
-}
-
-function normalizeForSearch(text: string): string {
-  return text
-    .normalize("NFKC")
-    .replace(/\u3000/g, " ")
-    .replace(/[ァ-ヶ]/g, (char) => String.fromCharCode(char.charCodeAt(0) - 0x60))
-    .toLowerCase()
-    .trim();
 }
 
 function compactForSearch(text: string): string {
@@ -71,7 +97,6 @@ type SearchTab = "sessions" | "members";
 type SessionSort = "relevance" | "newest";
 type MemberSort = "relevance" | "name" | "city";
 type SearchMode = "and" | "or";
-type SearchIndexScope = "recent" | "full" | "city" | "server";
 
 const SOURCE_FILTER_LABELS: Record<SourceFilter, string> = {
   all: "すべて",
@@ -182,99 +207,6 @@ function normalizeSearchParams(params: URLSearchParams) {
   setSearchParam(params, "memberSort", tab === "members" && memberSort !== "relevance" ? memberSort : "relevance", ["relevance"]);
 }
 
-type AgendaEntry = {
-  city: string;
-  cityName: string;
-  council_id: number;
-  council_name: string;
-  date?: string;
-  schedule_index: number;
-  schedule_name: string;
-  agenda_title: string;
-  text: string;
-  year?: string;
-};
-
-type IndexedSession = {
-  city: string;
-  cityName: string;
-  id: string;
-  title: string;
-  committee: string;
-  date: string;
-  segments: Array<{
-    index: number;
-    label: string;
-    speaker?: string;
-    start_time?: string;
-    summary?: string;
-    topics?: string[];
-    transcript?: string;
-  }>;
-};
-
-type EnrichedDoc = {
-  city: string;
-  cityName: string;
-  council_id: number;
-  name: string;
-  generated_at?: string;
-  summary?: string;
-  highlights?: string[];
-  tags?: string[];
-};
-
-type IndexedDecision = {
-  city: string;
-  cityName: string;
-  session: string;
-  description?: string;
-};
-
-type IndexedMember = {
-  city: string;
-  cityName: string;
-  seat_number?: number | null;
-  name: string;
-  furigana: string;
-  party: string;
-  faction: string;
-  committees: string[];
-};
-
-type IndexedMemberActivity = {
-  city: string;
-  cityName: string;
-  member_name: string;
-  record_id?: string;
-  council_id: number;
-  council_name: string;
-  year?: string;
-  date?: string;
-  href?: string;
-  overview?: string;
-  question_kind?: string;
-  source_type?: string;
-  source_label?: string;
-  source_status?: string;
-  start_time?: string;
-  topics?: string[];
-  summary_topics?: string[];
-};
-
-type ClientRuntimeSearchIndex = {
-  scope?: SearchIndexScope;
-  recent_from_year?: number;
-  recent_to_year?: number;
-  municipalities?: Array<{ slug: string; name: string }>;
-  agendas: AgendaEntry[];
-  sessions?: IndexedSession[];
-  enriched?: EnrichedDoc[];
-  decisions?: IndexedDecision[];
-  members?: IndexedMember[];
-  memberActivities?: IndexedMemberActivity[];
-};
-
 type ClientBigramSearchDocument = {
   id: string;
   source: "agenda" | "member_activity" | "member" | "session" | "enriched" | "decision";
@@ -288,6 +220,8 @@ type ClientBigramSearchDocument = {
   council_id?: number | null;
   member_name?: string;
   record_id?: string;
+  session_id?: string;
+  segment_index?: number;
   name?: string;
   furigana?: string;
   party?: string;
@@ -300,12 +234,71 @@ type ClientBigramSearchDocument = {
   label?: string;
   speaker?: string;
   start_time?: string;
-  overview?: string;
   question_kind?: string;
+  canonical_topics?: string[];
+  topics?: string[];
   source_label?: string;
   source_status?: string;
   field?: string;
   fullTextIndexed?: boolean;
+  _exactText?: string;
+  _bigramExact?: boolean;
+};
+
+type ClientBigramPayloadRange = {
+  start: number;
+  end: number;
+  payload_start: number;
+  payload_end: number;
+  encoding: "gzip";
+};
+
+type ClientBigramDocumentRange = ClientBigramPayloadRange & {
+  documents_url: string;
+};
+
+type ClientBigramExactTextRange = {
+  start: number;
+  end: number;
+  byte_start: number;
+  byte_length: number;
+  raw_bytes: number;
+  encoding: "gzip-member-json";
+  exact_text_url: string;
+};
+
+type ClientSearchAssetReference = {
+  url: string;
+  encoding: "gzip";
+  bytes: number;
+  raw_bytes: number;
+  sha256: string;
+  raw_sha256: string;
+};
+
+type ClientSearchAssetMetadata = {
+  url: string;
+  encoding: "gzip" | "identity" | "gzip-member-json";
+  bytes: number;
+  raw_bytes: number;
+  sha256: string;
+  raw_sha256: string;
+  byte_start?: number;
+  asset_bytes?: number;
+};
+
+type ClientSearchAssetCatalog = {
+  version: 1;
+  generated_at: string;
+  assets: Record<string, ClientSearchAssetMetadata>;
+};
+
+type ClientBigramCityEntry = {
+  slug: string;
+  name: string;
+  document_count: number;
+  document_ranges: ClientBigramDocumentRange[];
+  exact_text_ranges: ClientBigramExactTextRange[];
 };
 
 type ClientBigramSearchManifest = {
@@ -315,18 +308,141 @@ type ClientBigramSearchManifest = {
   city: string;
   document_count: number;
   bucket_count: number;
+  ngram_widths: number[];
+  positional_trigrams: false;
   buckets: string[];
+  exact_terms: string[];
+  postings_encoding: "gzip";
+  posting_value_encoding: "delta-varint-v1";
+  postings_base_url: string;
+  asset_catalog: ClientSearchAssetReference;
+  document_ranges: ClientBigramDocumentRange[];
+  exact_text_ranges: ClientBigramExactTextRange[];
+};
+
+type ClientStatewideBigramSearchManifest = {
+  version: number;
+  generated_at: string;
+  scope: "statewide-bigram";
+  document_count: number;
+  bucket_count: number;
+  ngram_widths: number[];
+  positional_trigrams: false;
+  buckets: string[];
+  exact_terms: string[];
+  postings_encoding: "gzip";
+  posting_value_encoding: "delta-varint-v1";
+  asset_catalog: ClientSearchAssetReference;
+  cities: ClientBigramCityEntry[];
+};
+
+type ClientStatewideBigramPostingValue = string;
+type ClientStatewideBigramPostingBucket = Record<
+  string,
+  Record<string, ClientStatewideBigramPostingValue>
+>;
+type ClientDecodedNgramPosting = {
+  documentIds: number[];
+  positionsByDocument?: Map<number, number[]>;
+};
+type ClientCachedSearchAsset<T> = {
+  fingerprint: string;
+  promise: Promise<T>;
+};
+type ClientTransientSearchCaches = {
+  manifests: Map<string, Promise<unknown>>;
+  catalogs: Map<string, ClientCachedSearchAsset<ClientSearchAssetCatalog>>;
+  documents: Map<string, ClientCachedSearchAsset<ClientBigramSearchDocument[]>>;
+  exactText: Map<string, ClientCachedSearchAsset<string[]>>;
+  postings: Map<string, ClientCachedSearchAsset<ClientStatewideBigramPostingBucket>>;
+  snippetExactTextKeys: Set<string>;
+  transferBudget: ReturnType<typeof createSearchTransferBudget>;
 };
 
 type RankedSessionHit = SessionHit & { score: number };
 type RankedMemberHit = MemberHit & { score: number };
 
-const clientSearchIndexPromises = new Map<string, Promise<ClientRuntimeSearchIndex>>();
-const clientBigramManifestPromises = new Map<string, Promise<ClientBigramSearchManifest>>();
-const clientBigramDocumentsPromises = new Map<string, Promise<ClientBigramSearchDocument[]>>();
-const clientBigramPostingPromises = new Map<string, Promise<Record<string, number[]>>>();
+const clientBigramManifestCache = new Map<string, ClientBigramSearchManifest>();
+const clientStatewideBigramManifestCache = new Map<string, ClientStatewideBigramSearchManifest>();
+const MAX_SEARCH_GZIP_BYTES_PER_SEARCH = 16 * 1024 * 1024;
+const MAX_SEARCH_RAW_BYTES_PER_SEARCH = 64 * 1024 * 1024;
+const MAX_CITY_SEARCH_MANIFEST_BYTES = 512 * 1024;
+const MAX_STATEWIDE_SEARCH_MANIFEST_BYTES = 2 * 1024 * 1024;
+const MAX_EXACT_TEXT_SNIPPET_BLOCKS_PER_SEARCH = 12;
+const SEARCH_TRANSFER_LIMITS = Object.freeze({
+  requests: MAX_SEARCH_ASSET_REQUESTS_PER_QUERY,
+  gzipBytes: MAX_SEARCH_GZIP_BYTES_PER_SEARCH,
+  rawBytes: MAX_SEARCH_RAW_BYTES_PER_SEARCH,
+});
 
-const BIGRAM_BUCKET_COUNT = 64;
+function createClientTransientSearchCaches(): ClientTransientSearchCaches {
+  return {
+    manifests: new Map(),
+    catalogs: new Map(),
+    documents: new Map(),
+    exactText: new Map(),
+    postings: new Map(),
+    snippetExactTextKeys: new Set(),
+    transferBudget: createSearchTransferBudget(),
+  };
+}
+
+function clearClientTransientSearchCaches(caches: ClientTransientSearchCaches): void {
+  caches.manifests.clear();
+  caches.documents.clear();
+  caches.catalogs.clear();
+  caches.exactText.clear();
+  caches.postings.clear();
+  caches.snippetExactTextKeys.clear();
+  caches.transferBudget.assets.clear();
+  caches.transferBudget.retryCounts.clear();
+  caches.transferBudget.requests = 0;
+  caches.transferBudget.gzipBytes = 0;
+  caches.transferBudget.rawBytes = 0;
+}
+
+type ClientSearchAssetPlan = {
+  key: string;
+  gzipBytes: number;
+  rawBytes: number;
+  allowDecrease?: boolean;
+};
+
+function reserveSearchAssets(
+  caches: ClientTransientSearchCaches,
+  plans: Iterable<ClientSearchAssetPlan>,
+  required: boolean
+): boolean {
+  const accepted = reserveSearchTransferAssets(
+    caches.transferBudget,
+    plans,
+    SEARCH_TRANSFER_LIMITS
+  );
+  if (!accepted) {
+    if (required) {
+      throw new Error("検索範囲が広すぎるため、検索語を追加して絞り込んでください。");
+    }
+    return false;
+  }
+  return true;
+}
+
+function beginSearchAssetFetch(
+  caches: ClientTransientSearchCaches,
+  plan: ClientSearchAssetPlan,
+  required: boolean
+): string | null {
+  const attemptKey = beginSearchTransferFetch(
+    caches.transferBudget,
+    plan,
+    SEARCH_TRANSFER_LIMITS
+  );
+  if (!attemptKey && required) {
+    throw new Error("検索範囲が広すぎるため、検索語を追加して絞り込んでください。");
+  }
+  return attemptKey;
+}
+
 
 function yearFromDate(date: string | undefined | null): string {
   const match = date?.match(/^(\d{4})/);
@@ -357,111 +473,6 @@ function formatSearchDate(date: string | undefined, year: string | undefined): s
 function compactUiText(text: string, maxLength = 48): string {
   const normalized = text.replace(/\s+/g, " ").trim();
   return normalized.length > maxLength ? `${normalized.slice(0, maxLength)}…` : normalized;
-}
-
-function getCityMap(index: ClientRuntimeSearchIndex): Record<string, string> {
-  const entries = new Map<string, string>();
-  for (const m of index.municipalities ?? []) entries.set(m.slug, m.name);
-  for (const row of index.agendas) entries.set(row.city, row.cityName);
-  for (const row of index.sessions ?? []) entries.set(row.city, row.cityName);
-  for (const row of index.enriched ?? []) entries.set(row.city, row.cityName);
-  for (const row of index.decisions ?? []) entries.set(row.city, row.cityName);
-  for (const row of index.members ?? []) entries.set(row.city, row.cityName);
-  for (const row of index.memberActivities ?? []) entries.set(row.city, row.cityName);
-  return Object.fromEntries(entries);
-}
-
-function uniqueTexts(values: Array<string | undefined | null>): string[] {
-  const seen = new Set<string>();
-  return values
-    .map((value) => value?.trim() ?? "")
-    .filter((value) => {
-      if (!value || seen.has(value)) return false;
-      seen.add(value);
-      return true;
-    });
-}
-
-function memberActivityText(activity: IndexedMemberActivity, cityName: string): string {
-  return [
-    cityName,
-    activity.member_name,
-    activity.council_name,
-    activity.date,
-    activity.overview,
-    activity.question_kind,
-    activity.source_label,
-    activity.source_status,
-    memberActivityDisplayLabel(activity),
-    ...uniqueTexts([...(activity.summary_topics ?? []), ...(activity.topics ?? [])]),
-  ].join(" ");
-}
-
-function memberActivityQuestionLabel(questionKind: string | undefined): string {
-  if (questionKind === "general_question") return "一般質問";
-  if (questionKind === "representative_question") return "代表質問";
-  if (questionKind === "committee_question") return "委員会質疑";
-  if (questionKind === "plenary_question") return "本会議質疑";
-  if (questionKind === "other_question") return "質問";
-  return "質問記録";
-}
-
-function memberActivitySourceType(activity: IndexedMemberActivity): "session" | "minutes" {
-  return activity.source_status === "preliminary"
-    || activity.source_type === "video_transcript"
-    || activity.href?.includes("/sessions/")
-    ? "session"
-    : "minutes";
-}
-
-function memberActivityDisplayLabel(activity: IndexedMemberActivity): string {
-  const sourceLabel = activity.source_label
-    || (activity.source_status === "preliminary" ? "会議録速報" : "公式議事録");
-  return uniqueTexts([sourceLabel, memberActivityQuestionLabel(activity.question_kind)]).join("・");
-}
-
-function sessionSegmentIdentity(speaker: string | undefined, label: string | undefined): string {
-  const normalizedSpeaker = speaker?.trim() ?? "";
-  const normalizedLabel = label?.trim() ?? "";
-  if (normalizedSpeaker && normalizedLabel.includes(normalizedSpeaker)) return normalizedLabel;
-  return uniqueTexts([normalizedSpeaker, normalizedLabel]).join("・");
-}
-
-function cleanRawTopicExcerpt(text: string): string {
-  return text
-    .replace(/（[^）]{1,24}君）\s*/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function memberActivityContext(
-  activity: IndexedMemberActivity,
-  summaryTopics: string[],
-  topics: string[],
-  tokens: string[]
-): string {
-  const parts = [memberActivityDisplayLabel(activity)];
-  if (activity.overview) parts.push(excerptSearchText(activity.overview, tokens, 120));
-  if (summaryTopics.length > 0) parts.push(`質問テーマ: ${summaryTopics.join("、")}`);
-  const excerptSource = topics.map(cleanRawTopicExcerpt).filter(Boolean).slice(0, 3).join("。");
-  if (summaryTopics.length === 0 && excerptSource) {
-    parts.push(`議事録からの抜粋: ${excerptSearchText(excerptSource, tokens, 80)}`);
-  }
-  return parts.filter(Boolean).join(" ");
-}
-
-function memberHref(city: string, seatNumber: number | null | undefined): string {
-  const normalizedSeatNumber = Number(seatNumber);
-  return Number.isFinite(normalizedSeatNumber) && normalizedSeatNumber > 0
-    ? `/${city}/members/${normalizedSeatNumber}`
-    : `/${city}`;
-}
-
-function searchScopeLabel(scope: SearchIndexScope | undefined): string {
-  if (scope === "recent") return "直近2年";
-  if (scope === "city") return "選択中の市町村全期間";
-  if (scope === "server" || scope === "full") return "全期間";
-  return "";
 }
 
 function ResultPager({
@@ -576,27 +587,6 @@ function stripMemberScore(results: RankedMemberHit[]): MemberHit[] {
   }));
 }
 
-async function loadClientSearchIndex(indexUrl: string, signal: AbortSignal): Promise<ClientRuntimeSearchIndex> {
-  let promise = clientSearchIndexPromises.get(indexUrl);
-  if (!promise) {
-    promise = fetch(indexUrl, { cache: "no-cache" })
-      .then(async (response) => {
-        if (!response.ok) throw new Error("検索インデックスの読み込みに失敗しました");
-        const data = (await response.json()) as ClientRuntimeSearchIndex;
-        if (!Array.isArray(data.agendas)) throw new Error("検索インデックスが壊れています");
-        return data;
-      })
-      .catch((error) => {
-        clientSearchIndexPromises.delete(indexUrl);
-        throw error;
-      });
-    clientSearchIndexPromises.set(indexUrl, promise);
-  }
-  const data = await promise;
-  if (signal.aborted) throw new Error("検索を中断しました");
-  return data;
-}
-
 function compactForBigramSearch(text: string): string {
   return normalizeForSearch(text).replace(/[^\p{L}\p{N}]+/gu, "");
 }
@@ -612,16 +602,26 @@ function bigramsForSearch(text: string): string[] {
   return Array.from(new Set(terms));
 }
 
-function bigramBucket(term: string): number {
-  let hash = 0;
-  for (let i = 0; i < term.length; i += 1) {
-    hash = ((hash * 31) + term.charCodeAt(i)) >>> 0;
+function trigramsForSearch(text: string): string[] {
+  const compact = compactForBigramSearch(text);
+  if (compact.length < 3) return [];
+  const terms: string[] = [];
+  for (let index = 0; index < compact.length - 2; index += 1) {
+    terms.push(compact.slice(index, index + 3));
   }
-  return hash % BIGRAM_BUCKET_COUNT;
+  return terms;
 }
 
-function bigramBucketFile(bucket: number): string {
-  return `${bucket.toString(16).padStart(2, "0")}.json`;
+function candidateNgramsForSearch(text: string): string[] {
+  const compact = compactForBigramSearch(text);
+  return compact.length >= 3
+    ? trigramsForSearch(compact)
+    : bigramsForSearch(compact);
+}
+
+function supportsBigramQuery(query: string): boolean {
+  const tokens = tokenize(query);
+  return tokens.length > 0 && tokens.every((token) => compactForBigramSearch(token).length >= 2);
 }
 
 function documentSearchText(doc: ClientBigramSearchDocument): string {
@@ -635,7 +635,6 @@ function documentSearchText(doc: ClientBigramSearchDocument): string {
     doc.context,
     doc.metaText,
     doc.member_name,
-    doc.overview,
     doc.question_kind,
     doc.source_label,
     doc.source_status,
@@ -647,117 +646,1125 @@ function documentSearchText(doc: ClientBigramSearchDocument): string {
   ].filter(Boolean).join(" ");
 }
 
-function intersectNumberLists(left: number[], right: number[]): number[] {
-  const rightSet = new Set(right);
-  return left.filter((value) => rightSet.has(value));
-}
-
-function unionNumberLists(lists: number[][]): number[] {
-  return Array.from(new Set(lists.flat()));
-}
-
-function queryVariantTermGroups(q: string): string[][][] {
+function queryVariantDescriptors(
+  q: string,
+  matchMode: "strict" | "fallback",
+  exactPostingTerms: ReadonlySet<string> = new Set()
+): Array<Array<{ terms: string[]; exactByPosting: boolean; positional: boolean }>> {
   const searchQuery = buildSearchQuery(q);
   return searchQuery.tokenGroups
     .map((group) =>
-      group
-        .map((variant) => bigramsForSearch(variant.normalized || variant.term))
-        .filter((terms) => terms.length > 0)
+      variantsForBigramMatchMode(group, matchMode)
+        .map((variant) => {
+          const normalized = variant.normalized || variant.term;
+          const compact = compactForBigramSearch(normalized);
+          const exactByPosting = exactPostingTerms.has(compact);
+          return {
+            terms: exactByPosting ? [compact] : candidateNgramsForSearch(normalized),
+            exactByPosting: compact.length === 2 || compact.length === 3 || exactByPosting,
+            positional: compact.length > 3 && !exactByPosting,
+          };
+        })
+        .filter((variant) => variant.terms.length > 0)
     )
     .filter((group) => group.length > 0);
 }
 
-function candidateIdsFromBigramPostings(
+function queryVariantTermGroups(
+  q: string,
+  matchMode: "strict" | "fallback",
+  exactPostingTerms: ReadonlySet<string> = new Set()
+): string[][][] {
+  return queryVariantDescriptors(q, matchMode, exactPostingTerms).map((group) =>
+    group.map((variant) => variant.terms)
+  );
+}
+
+function candidateResolutionFromBigramPostings(
   q: string,
   searchMode: SearchMode,
-  postingsByTerm: Map<string, number[]>
-): number[] {
-  const groupCandidates = queryVariantTermGroups(q).map((variantGroups) => {
-    const variantCandidates = variantGroups.map((terms) => {
-      const lists = terms.map((term) => postingsByTerm.get(term) ?? []);
-      if (lists.some((list) => list.length === 0)) return [];
-      return lists.slice(1).reduce((acc, list) => intersectNumberLists(acc, list), lists[0] ?? []);
-    });
-    return unionNumberLists(variantCandidates);
-  });
+  postingsByTerm: Map<string, ClientDecodedNgramPosting>,
+  matchMode: "strict" | "fallback",
+  exactPostingTerms: ReadonlySet<string> = new Set()
+): { candidateIds: number[]; verificationIds: number[] } {
+  return resolveBigramCandidates(
+    queryVariantDescriptors(q, matchMode, exactPostingTerms),
+    searchMode,
+    postingsByTerm
+  );
+}
 
-  const nonEmptyGroups = groupCandidates.filter((group) => group.length > 0);
-  if (nonEmptyGroups.length === 0) return [];
-  if (searchMode === "or") return unionNumberLists(nonEmptyGroups);
-  if (nonEmptyGroups.length !== groupCandidates.length) return [];
-  return nonEmptyGroups
-    .slice(1)
-    .reduce((acc, group) => intersectNumberLists(acc, group), nonEmptyGroups[0] ?? []);
+function readUnsignedPostingVarint(binary: string, state: { offset: number }): number {
+  let value = 0;
+  let multiplier = 1;
+  while (state.offset < binary.length) {
+    const byte = binary.charCodeAt(state.offset);
+    state.offset += 1;
+    value += (byte & 0x7f) * multiplier;
+    if ((byte & 0x80) === 0) return value;
+    multiplier *= 128;
+    if (!Number.isSafeInteger(value) || multiplier > Number.MAX_SAFE_INTEGER) break;
+  }
+  throw new Error("検索postingが壊れています");
+}
+
+type ClientExactTextBlock = {
+  key: string;
+  url: string;
+  byteStart: number;
+  bytes: number;
+  rawBytes: number;
+  assetBytes: number;
+  sha256: string;
+  rawSha256: string;
+  documentCount: number;
+};
+
+function exactTextBlockForDocument(
+  range: ClientBigramExactTextRange,
+  documentId: number,
+  assetCatalog: ClientSearchAssetCatalog
+): ClientExactTextBlock {
+  const documentCount = range.end - range.start;
+  const key = `exact:${range.exact_text_url}:${range.byte_start}:${range.byte_length}`;
+  const asset = assetCatalog.assets[key];
+  if (
+    documentId < range.start
+    || documentId >= range.end
+    || documentCount <= 0
+    || !Number.isInteger(range.byte_start)
+    || range.byte_start < 0
+    || !Number.isInteger(range.byte_length)
+    || range.byte_length <= 0
+    || !Number.isInteger(range.raw_bytes)
+    || range.raw_bytes <= 0
+    || !range.exact_text_url.startsWith(
+      "/generated/search-bigram-statewide/exact-text/"
+    )
+    || !exactSearchAssetMetadataMatches(key, asset, {
+      url: range.exact_text_url,
+      byteStart: range.byte_start,
+      bytes: range.byte_length,
+      rawBytes: range.raw_bytes,
+    })
+  ) {
+    throw new Error("検索本文ブロック番号が範囲外です");
+  }
+  return {
+    key,
+    url: range.exact_text_url,
+    byteStart: range.byte_start,
+    bytes: range.byte_length,
+    rawBytes: range.raw_bytes,
+    assetBytes: Number(asset.asset_bytes),
+    sha256: asset.sha256,
+    rawSha256: asset.raw_sha256,
+    documentCount,
+  };
+}
+
+function decodeClientNgramPosting(
+  value: ClientStatewideBigramPostingValue
+): ClientDecodedNgramPosting {
+  if (typeof value !== "string" || value.length === 0) {
+    throw new Error("検索postingが壊れています");
+  }
+  const binary = atob(value);
+  const state = { offset: 0 };
+  const documentIds: number[] = [];
+  let previousDocumentId = -1;
+  while (state.offset < binary.length) {
+    const documentDelta = readUnsignedPostingVarint(binary, state);
+    if (documentDelta <= 0) throw new Error("検索postingが壊れています");
+    const documentId = previousDocumentId + documentDelta;
+    documentIds.push(documentId);
+    previousDocumentId = documentId;
+  }
+  return { documentIds };
+}
+
+function searchAssetPlan(key: string, asset: ClientSearchAssetMetadata): ClientSearchAssetPlan {
+  try {
+    return searchAssetPlanFromCatalog(key, asset);
+  } catch {
+    throw new Error("検索asset catalogの対応関係が壊れています");
+  }
+}
+
+async function sha256Hex(buffer: ArrayBuffer): Promise<string> {
+  const digest = await crypto.subtle.digest("SHA-256", buffer);
+  return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+async function gunzipSearchAsset(buffer: ArrayBuffer): Promise<ArrayBuffer> {
+  if (typeof DecompressionStream === "undefined") {
+    throw new Error("このブラウザは圧縮検索索引に対応していません");
+  }
+  return new Response(
+    new Blob([buffer]).stream().pipeThrough(new DecompressionStream("gzip"))
+  ).arrayBuffer();
+}
+
+function reconcileSearchAssetActualBytes(
+  caches: ClientTransientSearchCaches,
+  key: string,
+  gzipBytes: number,
+  rawBytes: number,
+  required: boolean
+): boolean {
+  const accepted = reconcileSearchTransferAttempt(
+    caches.transferBudget,
+    key,
+    gzipBytes,
+    rawBytes,
+    SEARCH_TRANSFER_LIMITS
+  );
+  if (!accepted) {
+    if (required) {
+      throw new Error("検索範囲が広すぎるため、検索語を追加して絞り込んでください。");
+    }
+    return false;
+  }
+  return true;
 }
 
 async function loadJsonWithCache<T>(
   url: string,
-  cache: Map<string, Promise<T>>,
+  cache: Map<string, T>,
+  caches: ClientTransientSearchCaches,
+  maxBytes: number,
   signal: AbortSignal,
   validate: (value: T) => boolean,
   errorMessage: string
 ): Promise<T> {
-  let promise = cache.get(url);
+  const cached = cache.get(url);
+  if (cached) return cached;
+  const inFlight = caches.manifests.get(url) as Promise<T> | undefined;
+  if (inFlight) {
+    const data = await inFlight;
+    if (signal.aborted) throw new Error("検索を中断しました");
+    return data;
+  }
+  const key = `manifest:${url}`;
+  const promise = (async () => {
+    const attemptKey = beginSearchAssetFetch(
+      caches,
+      { key, gzipBytes: maxBytes, rawBytes: maxBytes, allowDecrease: true },
+      true
+    );
+    if (!attemptKey) {
+      throw new Error("検索範囲が広すぎるため、検索語を追加して絞り込んでください。");
+    }
+    const response = await fetch(url, { cache: "no-cache", signal });
+    const declaredLength = response.headers.get("content-length");
+    if (
+      declaredLength !== null
+      && declaredLength.trim() !== ""
+      && Number.isSafeInteger(Number(declaredLength))
+      && Number(declaredLength) > maxBytes
+    ) {
+      await cancelSearchResponseBody(response);
+      reconcileSearchAssetActualBytes(
+        caches,
+        attemptKey,
+        Number(declaredLength),
+        Number(declaredLength),
+        true
+      );
+      throw new Error(errorMessage);
+    }
+    if (!response.ok) {
+      await cancelSearchResponseBody(response);
+      throw new Error(errorMessage);
+    }
+    const buffer = await response.arrayBuffer();
+    const wireBytes = responseWireBytes(response.headers, buffer.byteLength);
+    reconcileSearchAssetActualBytes(caches, attemptKey, wireBytes, buffer.byteLength, true);
+    if (buffer.byteLength > maxBytes) throw new Error(errorMessage);
+    const data = JSON.parse(new TextDecoder().decode(buffer)) as T;
+    if (!validate(data)) throw new Error(errorMessage);
+    cache.set(url, data);
+    return data;
+  })();
+  caches.manifests.set(url, promise);
+  try {
+    return await promise;
+  } catch (error) {
+    caches.manifests.delete(url);
+    throw error;
+  }
+}
+
+async function loadCompressedJsonWithCache<T>(
+  url: string,
+  payloadCache: Map<string, ClientCachedSearchAsset<T>>,
+  caches: ClientTransientSearchCaches,
+  assetKey: string,
+  asset: ClientSearchAssetMetadata,
+  signal: AbortSignal,
+  validate: (value: T) => boolean,
+  errorMessage: string
+): Promise<T> {
+  const plan = searchAssetPlan(assetKey, asset);
+  const fingerprint = searchAssetMetadataFingerprint(asset);
+  const cached = payloadCache.get(url);
+  if (cached && cached.fingerprint !== fingerprint) {
+    throw new Error("検索asset catalogの世代が一致しません");
+  }
+  let promise = cached?.promise;
   if (!promise) {
-    promise = fetch(url, { cache: "no-cache" })
+    const attemptKey = beginSearchAssetFetch(caches, plan, true);
+    if (!attemptKey) {
+      throw new Error("検索範囲が広すぎるため、検索語を追加して絞り込んでください。");
+    }
+    promise = fetch(url, { cache: "no-cache", signal })
       .then(async (response) => {
-        if (!response.ok) throw new Error(errorMessage);
-        const data = (await response.json()) as T;
+        if (!response.ok) {
+          const reportedWireBytes = responseWireBytes(response.headers, asset.bytes);
+          await cancelSearchResponseBody(response);
+          reconcileSearchAssetActualBytes(
+            caches,
+            attemptKey,
+            reportedWireBytes,
+            asset.raw_bytes,
+            true
+          );
+          throw new Error(errorMessage);
+        }
+        const buffer = await response.arrayBuffer();
+        const bytes = new Uint8Array(buffer);
+        const wireBytes = responseWireBytes(response.headers, buffer.byteLength);
+        reconcileSearchAssetActualBytes(
+          caches,
+          attemptKey,
+          wireBytes,
+          buffer.byteLength,
+          true
+        );
+        let rawBuffer: ArrayBuffer;
+        if (bytes[0] === 0x1f && bytes[1] === 0x8b) {
+          if (buffer.byteLength !== asset.bytes || await sha256Hex(buffer) !== asset.sha256) {
+            throw new Error(errorMessage);
+          }
+          rawBuffer = await gunzipSearchAsset(buffer);
+        } else {
+          rawBuffer = buffer;
+        }
+        reconcileSearchAssetActualBytes(
+          caches,
+          attemptKey,
+          wireBytes,
+          rawBuffer.byteLength,
+          true
+        );
+        if (
+          rawBuffer.byteLength !== asset.raw_bytes
+          || await sha256Hex(rawBuffer) !== asset.raw_sha256
+        ) {
+          throw new Error(errorMessage);
+        }
+        const data = JSON.parse(new TextDecoder().decode(rawBuffer)) as T;
         if (!validate(data)) throw new Error(errorMessage);
         return data;
       })
       .catch((error) => {
-        cache.delete(url);
+        payloadCache.delete(url);
         throw error;
       });
-    cache.set(url, promise);
+    payloadCache.set(url, { fingerprint, promise });
   }
   const data = await promise;
   if (signal.aborted) throw new Error("検索を中断しました");
   return data;
 }
 
+async function loadClientSearchAssetCatalog(
+  reference: ClientSearchAssetReference,
+  caches: ClientTransientSearchCaches,
+  signal: AbortSignal
+): Promise<ClientSearchAssetCatalog> {
+  if (
+    reference?.encoding !== "gzip"
+    || reference.url !== "/generated/search-bigram-statewide/asset-catalog.json.gz"
+    || !validSearchAssetMetadata(reference)
+  ) {
+    throw new Error("検索asset catalog参照が壊れています");
+  }
+  const key = `catalog:${reference.url}`;
+  return loadCompressedJsonWithCache<ClientSearchAssetCatalog>(
+    reference.url,
+    caches.catalogs,
+    caches,
+    key,
+    reference,
+    signal,
+    (data) =>
+      data?.version === 1
+      && typeof data.generated_at === "string"
+      && data.assets
+      && typeof data.assets === "object"
+      && !Array.isArray(data.assets)
+      && Object.values(data.assets).every(validSearchAssetMetadata),
+    "検索asset catalogの読み込みに失敗しました"
+  );
+}
+
+async function loadClientExactTextBlock(
+  block: ClientExactTextBlock,
+  caches: ClientTransientSearchCaches,
+  signal: AbortSignal,
+  required: boolean
+): Promise<string[]> {
+  const key = block.key;
+  const fingerprint = JSON.stringify([
+    block.url,
+    block.byteStart,
+    block.bytes,
+    block.rawBytes,
+    block.assetBytes,
+    block.sha256,
+    block.rawSha256,
+  ]);
+  const cached = caches.exactText.get(key);
+  if (cached && cached.fingerprint !== fingerprint) {
+    throw new Error("検索本文ブロックの世代が一致しません");
+  }
+  let promise = cached?.promise;
+  if (!promise) {
+    const attemptKey = beginSearchAssetFetch(
+      caches,
+      { key, gzipBytes: block.bytes, rawBytes: block.rawBytes },
+      required
+    );
+    if (!attemptKey) {
+      throw new Error("検索範囲が広すぎるため、検索語を追加して絞り込んでください。");
+    }
+    const byteEnd = block.byteStart + block.bytes - 1;
+    promise = fetch(block.url, {
+      cache: "no-cache",
+      headers: { Range: `bytes=${block.byteStart}-${byteEnd}` },
+      signal,
+    })
+      .then(async (response) => {
+        const reportedWireBytes = responseWireBytes(response.headers, block.bytes);
+        if (response.status !== 206) {
+          await cancelSearchResponseBody(response);
+          reconcileSearchAssetActualBytes(
+            caches,
+            attemptKey,
+            reportedWireBytes,
+            block.rawBytes,
+            required
+          );
+          throw new Error("検索本文の部分読み込みに対応していません");
+        }
+        if (!validSearchContentRange(
+          response.headers.get("content-range"),
+          block.byteStart,
+          block.bytes,
+          block.assetBytes
+        )) {
+          await cancelSearchResponseBody(response);
+          reconcileSearchAssetActualBytes(
+            caches,
+            attemptKey,
+            reportedWireBytes,
+            block.rawBytes,
+            required
+          );
+          throw new Error("検索本文の部分読み込み範囲が壊れています");
+        }
+        const contentLength = response.headers.get("content-length");
+        if (
+          contentLength !== null
+          && contentLength.trim() !== ""
+          && Number(contentLength) !== block.bytes
+        ) {
+          await cancelSearchResponseBody(response);
+          reconcileSearchAssetActualBytes(
+            caches,
+            attemptKey,
+            reportedWireBytes,
+            block.rawBytes,
+            required
+          );
+          throw new Error("検索本文の部分読み込み長が壊れています");
+        }
+        const buffer = await response.arrayBuffer();
+        if (!reconcileSearchAssetActualBytes(
+          caches,
+          attemptKey,
+          responseWireBytes(response.headers, buffer.byteLength),
+          block.rawBytes,
+          required
+        )) {
+          throw new Error("検索範囲が広すぎるため、検索語を追加して絞り込んでください。");
+        }
+        if (
+          buffer.byteLength !== block.bytes
+          || await sha256Hex(buffer) !== block.sha256
+        ) {
+          throw new Error("検索本文ブロックが壊れています");
+        }
+        const rawBuffer = await gunzipSearchAsset(buffer);
+        if (!reconcileSearchAssetActualBytes(
+          caches,
+          attemptKey,
+          responseWireBytes(response.headers, buffer.byteLength),
+          rawBuffer.byteLength,
+          required
+        )) {
+          throw new Error("検索範囲が広すぎるため、検索語を追加して絞り込んでください。");
+        }
+        if (
+          rawBuffer.byteLength !== block.rawBytes
+          || await sha256Hex(rawBuffer) !== block.rawSha256
+        ) {
+          throw new Error("検索本文ブロックが壊れています");
+        }
+        const text = new TextDecoder().decode(rawBuffer);
+        const values = JSON.parse(text) as unknown;
+        if (
+          !Array.isArray(values)
+          || values.length !== block.documentCount
+          || !values.every((value) => typeof value === "string")
+        ) {
+          throw new Error("検索本文ブロックが壊れています");
+        }
+        return values;
+      })
+      .catch((error) => {
+        caches.exactText.delete(key);
+        throw error;
+      });
+    caches.exactText.set(key, { fingerprint, promise });
+  }
+  return promise;
+}
+
+type BigramCandidateResolution = {
+  candidateIds: number[];
+  verificationIds: number[];
+};
+
+function findBigramPayloadRange<T extends { start: number; end: number }>(
+  cityMeta: Pick<ClientBigramCityEntry, "slug" | "document_count">,
+  ranges: T[],
+  documentIndex: number
+): T {
+  if (!Number.isInteger(documentIndex) || documentIndex < 0 || documentIndex >= cityMeta.document_count) {
+    throw new Error(`${cityMeta.slug}の検索文書番号が範囲外です`);
+  }
+  let low = 0;
+  let high = ranges.length - 1;
+  while (low <= high) {
+    const middle = Math.floor((low + high) / 2);
+    const range = ranges[middle];
+    if (documentIndex < range.start) high = middle - 1;
+    else if (documentIndex >= range.end) low = middle + 1;
+    else return range;
+  }
+  throw new Error(`${cityMeta.slug}の検索文書rangeが見つかりません`);
+}
+
+function uniqueBigramPayloadRanges<T extends ClientBigramPayloadRange>(
+  cityMeta: Pick<ClientBigramCityEntry, "slug" | "document_count">,
+  candidates: T[],
+  documentIds: number[],
+  rangeKey: (range: T) => string
+): T[] {
+  const ranges = new Map<string, T>();
+  for (const documentId of documentIds) {
+    const range = findBigramPayloadRange(cityMeta, candidates, documentId);
+    ranges.set(rangeKey(range), range);
+  }
+  return Array.from(ranges.values());
+}
+
+function exactTextBlocksForDocumentIds(
+  cityMeta: ClientBigramCityEntry,
+  documentIds: number[],
+  assetCatalog: ClientSearchAssetCatalog
+): Map<string, { range: ClientBigramExactTextRange; block: ClientExactTextBlock; documentIds: number[] }> {
+  const blocks = new Map<
+    string,
+    { range: ClientBigramExactTextRange; block: ClientExactTextBlock; documentIds: number[] }
+  >();
+  for (const documentId of documentIds) {
+    const range = findBigramPayloadRange(cityMeta, cityMeta.exact_text_ranges, documentId);
+    const block = exactTextBlockForDocument(range, documentId, assetCatalog);
+    const key = block.key;
+    const entry = blocks.get(key) ?? { range, block, documentIds: [] };
+    entry.documentIds.push(documentId);
+    blocks.set(key, entry);
+  }
+  return blocks;
+}
+
+function assertExactTextTransferPlan(
+  plans: Array<{ cityMeta: ClientBigramCityEntry; documentIds: number[] }>,
+  caches: ClientTransientSearchCaches,
+  assetCatalog: ClientSearchAssetCatalog
+): void {
+  const assetPlans: ClientSearchAssetPlan[] = [];
+  for (const { cityMeta, documentIds } of plans) {
+    for (const [key, { block }] of exactTextBlocksForDocumentIds(
+      cityMeta,
+      documentIds,
+      assetCatalog
+    )) {
+      assetPlans.push({ key, gzipBytes: block.bytes, rawBytes: block.rawBytes });
+    }
+  }
+  reserveSearchAssets(caches, assetPlans, true);
+}
+
+function assertDocumentTransferPlan(
+  plans: Array<{ cityMeta: ClientBigramCityEntry; documentIds: number[] }>,
+  caches: ClientTransientSearchCaches,
+  assetCatalog: ClientSearchAssetCatalog
+): void {
+  const assetPlans = plans.flatMap(({ cityMeta, documentIds }) =>
+    uniqueBigramPayloadRanges(
+      cityMeta,
+      cityMeta.document_ranges,
+      documentIds,
+      (range) => range.documents_url
+    ).map((range) => {
+      const key = `document:${range.documents_url}`;
+      return searchAssetPlan(key, assetCatalog.assets[key]);
+    })
+  );
+  reserveSearchAssets(caches, assetPlans, true);
+}
+
+async function loadClientBigramCandidateDocuments(
+  cityMeta: ClientBigramCityEntry,
+  resolutions: {
+    strict: BigramCandidateResolution;
+    fallback: BigramCandidateResolution;
+  },
+  q: string,
+  searchMode: SearchMode,
+  signal: AbortSignal,
+  caches: ClientTransientSearchCaches,
+  assetCatalog: ClientSearchAssetCatalog
+): Promise<{
+  strict: ClientBigramSearchDocument[];
+  fallback: ClientBigramSearchDocument[];
+}> {
+  const candidateIds = unionNumberLists([
+    resolutions.strict.candidateIds,
+    resolutions.fallback.candidateIds,
+  ]);
+  if (candidateIds.length === 0) return { strict: [], fallback: [] };
+
+  const verificationIds = unionNumberLists([
+    resolutions.strict.verificationIds,
+    resolutions.fallback.verificationIds,
+  ]);
+  assertExactTextTransferPlan([{ cityMeta, documentIds: verificationIds }], caches, assetCatalog);
+  assertDocumentTransferPlan([{ cityMeta, documentIds: candidateIds }], caches, assetCatalog);
+  const exactTextById = new Map<number, string>();
+  const loadExactTexts = async (documentIds: number[], required: boolean) => {
+    const blocks = exactTextBlocksForDocumentIds(cityMeta, documentIds, assetCatalog);
+    const selectedBlocks: Array<{
+      key: string;
+      range: ClientBigramExactTextRange;
+      block: ClientExactTextBlock;
+      documentIds: number[];
+    }> = [];
+    if (required) {
+      reserveSearchAssets(
+        caches,
+        Array.from(blocks, ([key, { block }]) => ({
+          key,
+          gzipBytes: block.bytes,
+          rawBytes: block.rawBytes,
+        })),
+        true
+      );
+      for (const [key, value] of blocks) selectedBlocks.push({ key, ...value });
+    } else {
+      for (const [key, value] of blocks) {
+        if (!caches.snippetExactTextKeys.has(key)) {
+          if (
+            caches.snippetExactTextKeys.size
+            >= MAX_EXACT_TEXT_SNIPPET_BLOCKS_PER_SEARCH
+          ) {
+            continue;
+          }
+          if (!reserveSearchAssets(
+            caches,
+            [{ key, gzipBytes: value.block.bytes, rawBytes: value.block.rawBytes }],
+            false
+          )) {
+            continue;
+          }
+          caches.snippetExactTextKeys.add(key);
+        }
+        selectedBlocks.push({ key, ...value });
+      }
+    }
+    const payloads = await Promise.all(
+      selectedBlocks.map(async ({ range, block, documentIds: ids }) => {
+        try {
+          return {
+            range,
+            documentIds: ids,
+            texts: await loadClientExactTextBlock(block, caches, signal, required),
+          };
+        } catch (error) {
+          if (required || signal.aborted) throw error;
+          return null;
+        }
+      })
+    );
+    for (const payload of payloads) {
+      if (!payload) continue;
+      for (const documentId of payload.documentIds) {
+        const text = payload.texts[documentId - payload.range.start];
+        if (typeof text !== "string") {
+          if (required) throw new Error(`${cityMeta.slug}の検索本文が欠落しています`);
+          continue;
+        }
+        exactTextById.set(documentId, text);
+      }
+    }
+  };
+  await loadExactTexts(verificationIds, true);
+
+  const documentsById = new Map<number, ClientBigramSearchDocument>();
+  const loadDocuments = async (documentIds: number[]) => {
+    const documentRanges = uniqueBigramPayloadRanges(
+      cityMeta,
+      cityMeta.document_ranges,
+      documentIds,
+      (range) => range.documents_url
+    );
+    reserveSearchAssets(caches, documentRanges.map((range) => {
+      const key = `document:${range.documents_url}`;
+      return searchAssetPlan(key, assetCatalog.assets[key]);
+    }), true);
+    const documentPayloads = await Promise.all(
+      documentRanges.map(async (range) => ({
+        range,
+        documents: await loadCompressedJsonWithCache<ClientBigramSearchDocument[]>(
+          range.documents_url,
+          caches.documents,
+          caches,
+          `document:${range.documents_url}`,
+          assetCatalog.assets[`document:${range.documents_url}`],
+          signal,
+          (data) => Array.isArray(data) && data.length >= range.payload_end,
+          "検索文書rangeの読み込みに失敗しました"
+        ),
+      }))
+    );
+    for (const { range, documents } of documentPayloads) {
+      payloadSliceForRange(documents, range)
+        .forEach((document, offset) => {
+          documentsById.set(range.start + offset, document);
+        });
+    }
+  };
+  await loadDocuments(verificationIds);
+
+  const exactEvaluationText = (documentId: number) => {
+    const evidenceText = exactTextById.get(documentId);
+    const document = documentsById.get(documentId);
+    if (evidenceText === undefined || !document) {
+      throw new Error(`${cityMeta.slug}の検索本文が欠落しています`);
+    }
+    if (document.source === "member_activity") {
+      return [
+        document.cityName,
+        document.member_name,
+        document.title,
+        document.committee,
+        document.label,
+        document.metaText,
+        evidenceText,
+      ].filter(Boolean).join(" ");
+    }
+    return [documentSearchText(document), evidenceText].filter(Boolean).join(" ");
+  };
+
+  const searchQuery = buildSearchQuery(q);
+  const acceptedIds = (mode: "strict" | "fallback") => {
+    const resolution = resolutions[mode];
+    const verificationSet = new Set(resolution.verificationIds);
+    const evaluateText = createSearchTextEvaluator(searchQuery, searchMode, mode);
+    return resolution.candidateIds.filter((documentId) => {
+      if (!verificationSet.has(documentId)) return true;
+      return evaluateText(exactEvaluationText(documentId)).matched;
+    });
+  };
+  const accepted = {
+    strict: acceptedIds("strict"),
+    fallback: acceptedIds("fallback"),
+  };
+  const acceptedDocumentIds = unionNumberLists([accepted.strict, accepted.fallback]);
+  await loadDocuments(acceptedDocumentIds);
+
+  // A bounded optional Range read gives the first raw-minutes results a useful
+  // excerpt even when a short n-gram or dedicated exact posting proved the hit.
+  const snippetDocumentIds = acceptedDocumentIds
+    .filter((documentId) => {
+      if (exactTextById.has(documentId)) return false;
+      const document = documentsById.get(documentId);
+      return document?.sourceType === "minutes" && document.fullTextIndexed === true;
+    })
+    .sort((left, right) => {
+      const leftRaw = documentsById.get(left)?.id.startsWith("agenda-fulltext:") ? 0 : 1;
+      const rightRaw = documentsById.get(right)?.id.startsWith("agenda-fulltext:") ? 0 : 1;
+      return leftRaw - rightRaw || left - right;
+    })
+    .slice(0, 12);
+  await loadExactTexts(snippetDocumentIds, false);
+
+  const hydrate = (resolution: BigramCandidateResolution, documentIds: number[]) => {
+    const verificationSet = new Set(resolution.verificationIds);
+    return documentIds.map((documentId) => {
+      const document = documentsById.get(documentId);
+      if (!document) throw new Error(`${cityMeta.slug}の検索文書が欠落しています`);
+      const exactText = exactTextById.has(documentId)
+        ? exactEvaluationText(documentId)
+        : undefined;
+      if (!verificationSet.has(documentId)) {
+        return { ...document, _exactText: exactText, _bigramExact: true };
+      }
+      return { ...document, _exactText: exactEvaluationText(documentId), _bigramExact: false };
+    });
+  };
+
+  return {
+    strict: hydrate(resolutions.strict, accepted.strict),
+    fallback: hydrate(resolutions.fallback, accepted.fallback),
+  };
+}
+
 async function loadClientBigramCitySearch(
   city: string,
   q: string,
-  signal: AbortSignal
-): Promise<{ manifest: ClientBigramSearchManifest; documents: ClientBigramSearchDocument[]; postingsByTerm: Map<string, number[]> }> {
+  searchMode: SearchMode,
+  matchMode: "strict" | "fallback",
+  signal: AbortSignal,
+  caches: ClientTransientSearchCaches
+): Promise<{
+  manifest: ClientBigramSearchManifest;
+  candidateDocs: {
+    strict: ClientBigramSearchDocument[];
+    fallback: ClientBigramSearchDocument[];
+  };
+}> {
+  if (!validateSearchQueryLimits(q).ok) {
+    throw new Error(SEARCH_QUERY_LIMIT_MESSAGE);
+  }
+  if (!supportsBigramQuery(q)) {
+    throw new Error("1文字検索は分割検索インデックスを使用します");
+  }
   const baseUrl = `/generated/search-bigram-cities/${city}`;
   const manifest = await loadJsonWithCache<ClientBigramSearchManifest>(
     `${baseUrl}/manifest.json`,
-    clientBigramManifestPromises,
+    clientBigramManifestCache,
+    caches,
+    MAX_CITY_SEARCH_MANIFEST_BYTES,
     signal,
-    (data) => data?.scope === "city-bigram" && data.city === city && Number.isFinite(data.bucket_count),
+    (data) =>
+      data?.version === 5
+      && data.scope === "city-bigram"
+      && data.city === city
+      && Number.isFinite(data.bucket_count)
+      && Array.isArray(data.ngram_widths)
+      && data.ngram_widths.includes(2)
+      && data.ngram_widths.includes(3)
+      && data.positional_trigrams === false
+      && Array.isArray(data.exact_terms)
+      && data.postings_encoding === "gzip"
+      && data.posting_value_encoding === "delta-varint-v1"
+      && data.postings_base_url === "/generated/search-bigram-statewide/postings"
+      && data.asset_catalog?.encoding === "gzip"
+      && validSearchAssetMetadata(data.asset_catalog)
+      && Array.isArray(data.document_ranges)
+      && data.document_ranges.every(
+        (range) =>
+          range.encoding === "gzip"
+          && range.documents_url.startsWith(
+            "/generated/search-bigram-statewide/documents/"
+          )
+      )
+      && Array.isArray(data.exact_text_ranges)
+      && data.exact_text_ranges.every(
+        (range) =>
+          range.encoding === "gzip-member-json"
+          && Number.isInteger(range.byte_start)
+          && Number.isInteger(range.byte_length)
+          && Number.isInteger(range.raw_bytes)
+          && range.exact_text_url.startsWith(
+            "/generated/search-bigram-statewide/exact-text/"
+          )
+      ),
     "市別検索インデックスの読み込みに失敗しました"
   );
-  const documents = await loadJsonWithCache<ClientBigramSearchDocument[]>(
-    `${baseUrl}/documents.json`,
-    clientBigramDocumentsPromises,
-    signal,
-    Array.isArray,
-    "市別検索インデックスの読み込みに失敗しました"
+  const assetCatalog = await loadClientSearchAssetCatalog(manifest.asset_catalog, caches, signal);
+  if (assetCatalog.generated_at !== manifest.generated_at) {
+    throw new Error("検索asset catalogの世代が一致しません");
+  }
+  const exactPostingTerms = new Set(manifest.exact_terms);
+  const terms = Array.from(
+    new Set(queryVariantTermGroups(q, matchMode, exactPostingTerms).flat(2))
   );
-  const terms = Array.from(new Set(queryVariantTermGroups(q).flat(2)));
   const bucketFiles = Array.from(new Set(terms.map((term) => bigramBucketFile(bigramBucket(term)))))
     .filter((file) => manifest.buckets.includes(file));
+  if (!validateSearchPostingPlan(terms, bucketFiles).ok) {
+    throw new Error(SEARCH_QUERY_LIMIT_MESSAGE);
+  }
+  const postingUrls = bucketFiles.map((file) => `${manifest.postings_base_url}/${file}`);
+  reserveSearchAssets(caches, postingUrls.map((url) => {
+    const key = `posting:${url}`;
+    return searchAssetPlan(key, assetCatalog.assets[key]);
+  }), true);
   const buckets = await Promise.all(
-    bucketFiles.map((file) =>
-      loadJsonWithCache<Record<string, number[]>>(
-        `${baseUrl}/postings/${file}`,
-        clientBigramPostingPromises,
+    postingUrls.map((url) =>
+      loadCompressedJsonWithCache<ClientStatewideBigramPostingBucket>(
+        url,
+        caches.postings,
+        caches,
+        `posting:${url}`,
+        assetCatalog.assets[`posting:${url}`],
         signal,
         (data) => data && typeof data === "object" && !Array.isArray(data),
         "市別検索インデックスの読み込みに失敗しました"
       )
     )
   );
-  const postingsByTerm = new Map<string, number[]>();
+  const postingsByTerm = new Map<string, ClientDecodedNgramPosting>();
   for (const bucket of buckets) {
     for (const term of terms) {
-      if (bucket[term]) postingsByTerm.set(term, bucket[term]);
+      const ids = bucket[term]?.[city];
+      if (ids) postingsByTerm.set(term, decodeClientNgramPosting(ids));
     }
   }
-  return { manifest, documents, postingsByTerm };
+  const cityMeta: ClientBigramCityEntry = {
+    slug: city,
+    name: city,
+    document_count: manifest.document_count,
+    document_ranges: manifest.document_ranges,
+    exact_text_ranges: manifest.exact_text_ranges,
+  };
+  const resolutions = {
+    strict: matchMode === "strict"
+      ? candidateResolutionFromBigramPostings(
+          q,
+          searchMode,
+          postingsByTerm,
+          "strict",
+          exactPostingTerms
+        )
+      : { candidateIds: [], verificationIds: [] },
+    fallback: matchMode === "fallback"
+      ? candidateResolutionFromBigramPostings(
+          q,
+          searchMode,
+          postingsByTerm,
+          "fallback",
+          exactPostingTerms
+        )
+      : { candidateIds: [], verificationIds: [] },
+  };
+  const candidateDocs = await loadClientBigramCandidateDocuments(
+    cityMeta,
+    resolutions,
+    q,
+    searchMode,
+    signal,
+    caches,
+    assetCatalog
+  );
+  return { manifest, candidateDocs };
+}
+
+async function loadClientBigramStatewideSearch(
+  manifestUrl: string,
+  q: string,
+  searchMode: SearchMode,
+  matchMode: "strict" | "fallback",
+  signal: AbortSignal,
+  caches: ClientTransientSearchCaches
+): Promise<{
+  manifest: ClientStatewideBigramSearchManifest;
+  candidateDocs: {
+    strict: ClientBigramSearchDocument[];
+    fallback: ClientBigramSearchDocument[];
+  };
+}> {
+  if (!validateSearchQueryLimits(q).ok) {
+    throw new Error(SEARCH_QUERY_LIMIT_MESSAGE);
+  }
+  if (!supportsBigramQuery(q)) {
+    throw new Error("1文字検索は分割検索インデックスを使用します");
+  }
+  if (manifestUrl !== "/generated/search-bigram-statewide/manifest.json") {
+    throw new Error("全道検索インデックスURLが壊れています");
+  }
+  const manifest = await loadJsonWithCache<ClientStatewideBigramSearchManifest>(
+    manifestUrl,
+    clientStatewideBigramManifestCache,
+    caches,
+    MAX_STATEWIDE_SEARCH_MANIFEST_BYTES,
+    signal,
+    (data) =>
+      data?.version === 5
+      && data.scope === "statewide-bigram"
+      && Array.isArray(data.buckets)
+      && Array.isArray(data.exact_terms)
+      && Array.isArray(data.ngram_widths)
+      && data.ngram_widths.includes(2)
+      && data.ngram_widths.includes(3)
+      && data.positional_trigrams === false
+      && data.postings_encoding === "gzip"
+      && data.posting_value_encoding === "delta-varint-v1"
+      && data.asset_catalog?.encoding === "gzip"
+      && validSearchAssetMetadata(data.asset_catalog)
+      && Array.isArray(data.cities)
+      && data.cities.every(
+        (city) =>
+          Array.isArray(city.document_ranges)
+          && city.document_ranges.every(
+            (range) =>
+              range.encoding === "gzip"
+              && range.documents_url.startsWith(
+                "/generated/search-bigram-statewide/documents/"
+              )
+          )
+          && Array.isArray(city.exact_text_ranges)
+          && city.exact_text_ranges.every(
+            (range) =>
+              range.encoding === "gzip-member-json"
+              && Number.isInteger(range.byte_start)
+              && Number.isInteger(range.byte_length)
+              && Number.isInteger(range.raw_bytes)
+              && range.exact_text_url.startsWith(
+                "/generated/search-bigram-statewide/exact-text/"
+              )
+          )
+      )
+      && Number.isFinite(data.bucket_count),
+    "全道検索インデックスの読み込みに失敗しました"
+  );
+  const assetCatalog = await loadClientSearchAssetCatalog(manifest.asset_catalog, caches, signal);
+  if (assetCatalog.generated_at !== manifest.generated_at) {
+    throw new Error("検索asset catalogの世代が一致しません");
+  }
+  const exactPostingTerms = new Set(manifest.exact_terms);
+  const terms = Array.from(
+    new Set(queryVariantTermGroups(q, matchMode, exactPostingTerms).flat(2))
+  );
+  const bucketFiles = Array.from(new Set(terms.map((term) => bigramBucketFile(bigramBucket(term)))))
+    .filter((file) => manifest.buckets.includes(file));
+  if (!validateSearchPostingPlan(terms, bucketFiles).ok) {
+    throw new Error(SEARCH_QUERY_LIMIT_MESSAGE);
+  }
+  const manifestBaseUrl = manifestUrl.slice(0, manifestUrl.lastIndexOf("/"));
+  const postingUrls = bucketFiles.map((file) => `${manifestBaseUrl}/postings/${file}`);
+  reserveSearchAssets(caches, postingUrls.map((url) => {
+    const key = `posting:${url}`;
+    return searchAssetPlan(key, assetCatalog.assets[key]);
+  }), true);
+  const buckets = await Promise.all(
+    postingUrls.map((url) =>
+      loadCompressedJsonWithCache<ClientStatewideBigramPostingBucket>(
+        url,
+        caches.postings,
+        caches,
+        `posting:${url}`,
+        assetCatalog.assets[`posting:${url}`],
+        signal,
+        (data) => data && typeof data === "object" && !Array.isArray(data),
+        "全道検索インデックスの読み込みに失敗しました"
+      )
+    )
+  );
+
+  const postingsByCity = new Map<string, Map<string, ClientDecodedNgramPosting>>();
+  for (const bucket of buckets) {
+    for (const term of terms) {
+      for (const [city, ids] of Object.entries(bucket[term] ?? {})) {
+        if (!postingsByCity.has(city)) postingsByCity.set(city, new Map());
+        postingsByCity.get(city)?.set(term, decodeClientNgramPosting(ids));
+      }
+    }
+  }
+
+  const manifestCities = new Map(manifest.cities.map((city) => [city.slug, city]));
+  const candidatesByCity = Array.from(postingsByCity.entries()).flatMap(
+    ([city, postingsByTerm]) => {
+      const strict = matchMode === "strict"
+        ? candidateResolutionFromBigramPostings(
+            q,
+            searchMode,
+            postingsByTerm,
+            "strict",
+            exactPostingTerms
+          )
+        : { candidateIds: [], verificationIds: [] };
+      const fallback = matchMode === "fallback"
+        ? candidateResolutionFromBigramPostings(
+            q,
+            searchMode,
+            postingsByTerm,
+            "fallback",
+            exactPostingTerms
+          )
+        : { candidateIds: [], verificationIds: [] };
+      const candidateIds = unionNumberLists([strict.candidateIds, fallback.candidateIds]);
+      const cityMeta = manifestCities.get(city);
+      return cityMeta && candidateIds.length > 0
+        ? [{ cityMeta, resolutions: { strict, fallback } }]
+        : [];
+    }
+  );
+  assertExactTextTransferPlan(
+    candidatesByCity.map(({ cityMeta, resolutions }) => ({
+      cityMeta,
+      documentIds: unionNumberLists([
+        resolutions.strict.verificationIds,
+        resolutions.fallback.verificationIds,
+      ]),
+    })),
+    caches,
+    assetCatalog
+  );
+  assertDocumentTransferPlan(
+    candidatesByCity.map(({ cityMeta, resolutions }) => ({
+      cityMeta,
+      documentIds: unionNumberLists([
+        resolutions.strict.candidateIds,
+        resolutions.fallback.candidateIds,
+      ]),
+    })),
+    caches,
+    assetCatalog
+  );
+  const cityCandidates = await Promise.all(
+    candidatesByCity.map(({ cityMeta, resolutions }) =>
+      loadClientBigramCandidateDocuments(
+        cityMeta,
+        resolutions,
+        q,
+        searchMode,
+        signal,
+        caches,
+        assetCatalog
+      )
+    )
+  );
+  const candidateDocs = {
+    strict: cityCandidates.flatMap((candidate) => candidate.strict),
+    fallback: cityCandidates.flatMap((candidate) => candidate.fallback),
+  };
+  return { manifest, candidateDocs };
 }
 
 function dedupeSessionHits(results: RankedSessionHit[]): RankedSessionHit[] {
@@ -774,8 +1781,11 @@ function dedupeSessionHits(results: RankedSessionHit[]): RankedSessionHit[] {
   return Array.from(byKey.values());
 }
 
-function runClientBigramCitySearch(
-  cityData: { manifest: ClientBigramSearchManifest; documents: ClientBigramSearchDocument[]; postingsByTerm: Map<string, number[]> },
+function runClientBigramDocumentSearch(
+  candidateDocs: {
+    strict: ClientBigramSearchDocument[];
+    fallback: ClientBigramSearchDocument[];
+  },
   options: {
     q: string;
     searchMode: SearchMode;
@@ -783,6 +1793,11 @@ function runClientBigramCitySearch(
     sourceFilter: SourceFilter;
     yearFilter: string;
     factionFilter: string;
+  },
+  resultScope: {
+    scope: SearchIndexScope;
+    label: string;
+    fullSearchAvailable: boolean;
   }
 ): SearchResponse {
   const { q, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter } = options;
@@ -793,11 +1808,6 @@ function runClientBigramCitySearch(
   const searchSuggestions = queryAssist.find((group) => group.kind === "suggestion")?.terms ?? [];
   const tokens = searchQuery.highlightTokens;
 
-  const candidateIds = candidateIdsFromBigramPostings(q, searchMode, cityData.postingsByTerm);
-  const candidateDocs = candidateIds
-    .map((index) => cityData.documents[index])
-    .filter((doc): doc is ClientBigramSearchDocument => Boolean(doc));
-
   const collectResults = (
     mode: "strict" | "fallback"
   ): { sessionResults: RankedSessionHit[]; memberResults: RankedMemberHit[] } => {
@@ -805,10 +1815,14 @@ function runClientBigramCitySearch(
     const memberResults: RankedMemberHit[] = [];
     const evaluateText = createSearchTextEvaluator(searchQuery, searchMode, mode);
 
-    for (const doc of candidateDocs) {
-      const searchText = documentSearchText(doc);
+    for (const doc of candidateDocs[mode]) {
+      const metadataSearchText = documentSearchText(doc);
+      const metadataEvaluation = evaluateText(metadataSearchText);
+      const searchText = doc._exactText ?? metadataSearchText;
       const evaluation = evaluateText(searchText);
-      if (!evaluation.matched && !doc.fullTextIndexed) continue;
+      const matchedByExactBigram = doc._bigramExact === true;
+      if (!evaluation.matched && !matchedByExactBigram) continue;
+      const matchedOutsideMetadata = !metadataEvaluation.matched;
 
       if (doc.source === "member") {
         const name = doc.name || doc.member_name || doc.title;
@@ -836,10 +1850,14 @@ function runClientBigramCitySearch(
       }
 
       const sourceType = doc.sourceType ?? (doc.source === "decision" ? "decision" : doc.source === "session" ? "session" : "minutes");
+      const resultHref = doc.href || `/${doc.city}`;
+      const exactContext = doc._exactText
+        ? excerptSearchText(doc._exactText, tokens, 100)
+        : "";
       let score = evaluation.score + (
         doc.source === "member_activity"
           ? 32
-          : doc.fullTextIndexed
+          : matchedOutsideMetadata
             ? 6
             : doc.source === "agenda"
               ? 14
@@ -855,13 +1873,19 @@ function runClientBigramCitySearch(
         sourceType,
         title: doc.title,
         committee: doc.committee ?? (sourceType === "decision" ? "議決結果" : ""),
-        href: doc.href || `/${doc.city}`,
+        href: sourceType === "minutes"
+          ? appendSearchQueryToHref(resultHref, q)
+          : resultHref,
         segIndex: 0,
         label: doc.label ?? "",
         startTime: doc.start_time ?? "",
-        context: doc.fullTextIndexed
-          ? `議事録本文に「${tokens.join("・")}」を含む会議です。原文で該当箇所を確認できます。`
-          : excerptSearchText(doc.context || doc.body || searchText, tokens, 100),
+        context: exactContext || (matchedOutsideMetadata
+          ? mode === "fallback"
+            ? "検索対象の本文が検索語または同義・関連語に該当する会議です。原文で該当箇所を確認できます。"
+            : exactExpandedTerms.length > 0
+              ? "検索対象の本文が検索語または同義語に該当する会議です。原文で該当箇所を確認できます。"
+              : `検索対象の本文が検索語「${tokens.join("・")}」に該当する会議です。原文で該当箇所を確認できます。`
+          : excerptSearchText(doc.context || doc.body || metadataSearchText, tokens, 100)),
         field: doc.field ?? (sourceType === "decision" ? "議決" : sourceType === "session" ? "会議録速報" : "議事録"),
         date: doc.date,
         year: doc.year || yearFromDate(doc.date) || yearFromCouncilName(doc.title),
@@ -881,13 +1905,33 @@ function runClientBigramCitySearch(
   let sessionRescued = false;
   let memberRescued = false;
 
-  if (sessionResults.length === 0 || memberResults.length === 0) {
+  const sessionMatchesActiveFilters = (result: RankedSessionHit) =>
+    (cityFilter === "all" || result.city === cityFilter)
+    && (sourceFilter === "all" || result.sourceType === sourceFilter)
+    && (yearFilter === "all" || result.year === yearFilter);
+  const memberMatchesActiveFilters = (result: RankedMemberHit) =>
+    (cityFilter === "all" || result.city === cityFilter)
+    && (
+      factionFilter === "all"
+      || (result.faction || "無所属") === factionFilter
+    );
+
+  if (
+    !sessionResults.some(sessionMatchesActiveFilters)
+    || !memberResults.some(memberMatchesActiveFilters)
+  ) {
     const fallbackResults = collectResults("fallback");
-    if (sessionResults.length === 0 && fallbackResults.sessionResults.length > 0) {
+    if (
+      !sessionResults.some(sessionMatchesActiveFilters)
+      && fallbackResults.sessionResults.some(sessionMatchesActiveFilters)
+    ) {
       sessionResults = fallbackResults.sessionResults;
       sessionRescued = true;
     }
-    if (memberResults.length === 0 && fallbackResults.memberResults.length > 0) {
+    if (
+      !memberResults.some(memberMatchesActiveFilters)
+      && fallbackResults.memberResults.some(memberMatchesActiveFilters)
+    ) {
       memberResults = fallbackResults.memberResults;
       memberRescued = true;
     }
@@ -907,10 +1951,7 @@ function runClientBigramCitySearch(
         decision: "議決結果",
       })[value] ?? value
   );
-  const effectiveSourceFilter =
-    sourceFilter !== "all" && sessionSourceFacets.some((facet) => facet.value === sourceFilter)
-      ? sourceFilter
-      : "all";
+  const effectiveSourceFilter = sourceFilter;
   const sourceScopedSessions =
     effectiveSourceFilter === "all"
       ? cityScopedSessions
@@ -918,10 +1959,7 @@ function runClientBigramCitySearch(
   const sessionYearFacets = buildCountFacets(
     sourceScopedSessions.map((result) => result.year).filter(Boolean)
   );
-  const effectiveYearFilter =
-    yearFilter !== "all" && sessionYearFacets.some((facet) => facet.value === yearFilter)
-      ? yearFilter
-      : "all";
+  const effectiveYearFilter = yearFilter;
   const filteredSessions =
     effectiveYearFilter === "all"
       ? sourceScopedSessions
@@ -929,10 +1967,7 @@ function runClientBigramCitySearch(
   const memberFactionFacets = buildCountFacets(
     cityScopedMembers.map((result) => result.faction || "無所属")
   );
-  const effectiveFactionFilter =
-    factionFilter !== "all" && memberFactionFacets.some((facet) => facet.value === factionFilter)
-      ? factionFilter
-      : "all";
+  const effectiveFactionFilter = factionFilter;
   const filteredMembers =
     effectiveFactionFilter === "all"
       ? cityScopedMembers
@@ -944,8 +1979,8 @@ function runClientBigramCitySearch(
     memberResults: stripMemberScore(filteredMembers.slice(0, maxResults)),
     sessionTotal: filteredSessions.length,
     memberTotal: filteredMembers.length,
-    sessionBaseTotal: sessionResults.length,
-    memberBaseTotal: memberResults.length,
+    sessionBaseTotal: filteredSessions.length,
+    memberBaseTotal: filteredMembers.length,
     truncated: filteredSessions.length > maxResults || filteredMembers.length > maxResults,
     rescued: sessionRescued || memberRescued,
     sessionRescued,
@@ -962,14 +1997,42 @@ function runClientBigramCitySearch(
       sessionYears: sessionYearFacets,
       memberFactions: memberFactionFacets,
     },
-    searchScope: "city",
-    searchScopeLabel: "選択中の市町村全期間",
-    fullSearchAvailable: false,
+    searchScope: resultScope.scope,
+    searchScopeLabel: resultScope.label,
+    fullSearchAvailable: resultScope.fullSearchAvailable,
   };
 }
 
-function runClientSearch(
-  runtimeIndex: ClientRuntimeSearchIndex,
+function runClientBigramCitySearch(
+  cityData: {
+    manifest: ClientBigramSearchManifest;
+    candidateDocs: {
+      strict: ClientBigramSearchDocument[];
+      fallback: ClientBigramSearchDocument[];
+    };
+  },
+  options: {
+    q: string;
+    searchMode: SearchMode;
+    cityFilter: string;
+    sourceFilter: SourceFilter;
+    yearFilter: string;
+    factionFilter: string;
+    tab: "sessions" | "members";
+  }
+): SearchResponse {
+  return runClientBigramDocumentSearch(cityData.candidateDocs, options, {
+    scope: "city",
+    label: "選択中の市町村全期間",
+    fullSearchAvailable: false,
+  });
+}
+
+function runClientBigramStatewideSearch(
+  candidateDocs: {
+    strict: ClientBigramSearchDocument[];
+    fallback: ClientBigramSearchDocument[];
+  },
   options: {
     q: string;
     searchMode: SearchMode;
@@ -979,350 +2042,62 @@ function runClientSearch(
     factionFilter: string;
   }
 ): SearchResponse {
-  const { q, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter } = options;
-  const searchQuery = buildSearchQuery(q);
-  const queryAssist = buildSearchAssist(q);
-  const exactExpandedTerms = queryAssist.find((group) => group.kind === "exact")?.terms ?? [];
-  const relatedExpandedTerms = queryAssist.find((group) => group.kind === "related")?.terms ?? [];
-  const searchSuggestions = queryAssist.find((group) => group.kind === "suggestion")?.terms ?? [];
-  const tokens = searchQuery.highlightTokens;
-  const cityMap = getCityMap(runtimeIndex);
+  return runClientBigramDocumentSearch(candidateDocs, options, {
+    scope: "full",
+    label: "全期間",
+    fullSearchAvailable: false,
+  });
+}
 
-  const collectResults = (
-    mode: "strict" | "fallback"
-  ): { sessionResults: RankedSessionHit[]; memberResults: RankedMemberHit[] } => {
-    const sessionResults: RankedSessionHit[] = [];
-    const memberResults: RankedMemberHit[] = [];
-    const evaluateText = createSearchTextEvaluator(searchQuery, searchMode, mode);
-
-    for (const s of runtimeIndex.sessions ?? []) {
-      const city = s.city;
-      const cityName = s.cityName || cityMap[city] || city;
-      const committee = s.committee ?? "";
-      const title = s.title ?? "";
-      const sessionYear = yearFromDate(s.date);
-      const sessionLabel = committee || title;
-      let hasMatchingSegment = false;
-
-      for (const seg of s.segments ?? []) {
-        const identity = sessionSegmentIdentity(seg.speaker, seg.label);
-        const fields = [
-          { content: identity, field: "発言者・見出し", bonus: 30, radius: 90 },
-          { content: seg.summary ?? "", field: "要約", bonus: 24, radius: 100 },
-          { content: (seg.topics ?? []).join(" "), field: "トピック", bonus: 20, radius: 90 },
-          { content: seg.transcript ?? "", field: "全文", bonus: 10, radius: 100 },
-        ];
-        let segmentBestHit: RankedSessionHit | null = null;
-        for (const field of fields) {
-          const searchText = `${cityName} ${seg.speaker ?? ""} ${seg.label ?? ""} ${field.content}`;
-          const evaluation = evaluateText(searchText);
-          if (!evaluation.matched) continue;
-          const score = evaluation.score + field.bonus;
-          if (segmentBestHit && segmentBestHit.score >= score) continue;
-          const excerpt = excerptSearchText(field.content || searchText, tokens, field.radius);
-          segmentBestHit = {
-            id: `${s.id}:segment:${seg.index}`,
-            city,
-            cityName,
-            sourceType: "session",
-            title,
-            committee,
-            href: `/${city}/sessions/${s.id}#seg-${seg.index}`,
-            segIndex: seg.index,
-            label: identity,
-            startTime: seg.start_time ?? "",
-            context: identity && !excerpt.includes(identity) ? `${identity}: ${excerpt}` : excerpt,
-            field: field.field,
-            date: s.date,
-            year: sessionYear,
-            score,
-          };
-        }
-        if (segmentBestHit) {
-          hasMatchingSegment = true;
-          sessionResults.push(segmentBestHit);
-        }
-      }
-
-      const titleSearchText = `${cityName} ${title} ${committee}`;
-      const titleEvaluation = evaluateText(titleSearchText);
-      if (!hasMatchingSegment && titleEvaluation.matched) {
-        const score = titleEvaluation.score + 28;
-        sessionResults.push({
-          id: `${s.id}:meeting`,
-          city,
-          cityName,
-          sourceType: "session",
-          title,
-          committee,
-          href: `/${city}/sessions/${s.id}`,
-          segIndex: 0,
-          label: "",
-          startTime: "",
-          context: sessionLabel,
-          field: "会議名",
-          date: s.date,
-          year: sessionYear,
-          score,
-        });
-      }
-    }
-
-    const seenMinutesForEnriched = new Set<string>();
-    for (const agenda of runtimeIndex.agendas) {
-      const haystack = `${agenda.cityName} ${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
-      const evaluation = evaluateText(haystack);
-      if (!evaluation.matched) continue;
-      let score = evaluation.score + 14;
-      if (agenda.agenda_title && evaluateText(agenda.agenda_title).matched) score += 18;
-      if (evaluateText(agenda.council_name).matched) score += 10;
-      sessionResults.push({
-        id: `${agenda.city}_minutes_${agenda.council_id}_${agenda.schedule_index}`,
-        city: agenda.city,
-        cityName: agenda.cityName,
-        sourceType: "minutes",
-        title: agenda.council_name,
-        committee: agenda.agenda_title || "議題",
-        href: `/${agenda.city}/minutes/${agenda.council_id}?q=${encodeURIComponent(q)}`,
-        segIndex: agenda.schedule_index,
-        label: agenda.schedule_name,
-        startTime: "",
-        context: excerptSearchText(`${agenda.agenda_title} ${agenda.text}`, tokens, 100),
-        field: "議事録",
-        date: agenda.date,
-        year: agenda.year ?? yearFromCouncilName(agenda.council_name),
-        score,
-      });
-      seenMinutesForEnriched.add(`${agenda.city}_${agenda.council_id}`);
-    }
-
-    for (const activity of runtimeIndex.memberActivities ?? []) {
-      const city = activity.city;
-      const cityName = activity.cityName || cityMap[city] || city;
-      const minuteKey = `${city}_${activity.council_id}`;
-      const searchText = memberActivityText(activity, cityName);
-      const evaluation = evaluateText(searchText);
-      if (!evaluation.matched) continue;
-      const summaryTopics = uniqueTexts(activity.summary_topics ?? []);
-      const topics = uniqueTexts(activity.topics ?? []);
-      const contextText = memberActivityContext(activity, summaryTopics, topics, tokens) || excerptSearchText(searchText, tokens, 100);
-      let score = evaluation.score + 32;
-      const topicText = [...summaryTopics, ...topics].join(" ");
-      if (topicText && evaluateText(topicText).matched) score += 22;
-      if (evaluateText(activity.member_name).matched) score += 12;
-      if (evaluateText(activity.council_name).matched) score += 8;
-      const sourceType = memberActivitySourceType(activity);
-      const fallbackHref = Number(activity.council_id) > 0
-        ? `/${city}/minutes/${activity.council_id}`
-        : `/${city}`;
-      sessionResults.push({
-        id: `member_activity:${activity.record_id || `${city}:${activity.member_name}:${activity.council_id}:${activity.date || "undated"}`}`,
-        city,
-        cityName,
-        sourceType,
-        title: activity.council_name,
-        committee: `${activity.member_name}議員の${memberActivityQuestionLabel(activity.question_kind)}`,
-        href: activity.href || fallbackHref,
-        segIndex: 0,
-        label: memberActivityDisplayLabel(activity),
-        startTime: activity.start_time ?? "",
-        context: contextText,
-        field: memberActivityQuestionLabel(activity.question_kind),
-        date: activity.date,
-        year: activity.year || yearFromDate(activity.date) || yearFromCouncilName(activity.council_name),
-        score,
-      });
-      if (Number(activity.council_id) > 0) seenMinutesForEnriched.add(minuteKey);
-    }
-
-    for (const doc of runtimeIndex.enriched ?? []) {
-      const city = doc.city;
-      const cityName = doc.cityName || cityMap[city] || city;
-      const minuteKey = `${city}_${doc.council_id}`;
-      if (seenMinutesForEnriched.has(minuteKey)) continue;
-      const summary = doc.summary ?? "";
-      const highlights = doc.highlights ?? [];
-      const searchText = [cityName, doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");
-      const evaluation = evaluateText(searchText);
-      if (!evaluation.matched) continue;
-      let score = evaluation.score + 8;
-      if (evaluateText(doc.name).matched) score += 16;
-      if (summary && evaluateText(summary).matched) score += 12;
-      const contextText = summary
-        ? excerptSearchText(summary, tokens, 120)
-        : highlights.slice(0, 2).join("、");
-      sessionResults.push({
-        id: `${city}_minutes_${doc.council_id}`,
-        city,
-        cityName,
-        sourceType: "minutes",
-        title: doc.name,
-        committee: "",
-        href: `/${city}/minutes/${doc.council_id}`,
-        segIndex: 0,
-        label: "",
-        startTime: "",
-        context: contextText,
-        field: "AI要約",
-        year: yearFromCouncilName(doc.name) || yearFromDate(doc.generated_at),
-        score,
-      });
-    }
-
-    for (const decision of runtimeIndex.decisions ?? []) {
-      const city = decision.city;
-      const cityName = decision.cityName || cityMap[city] || city;
-      const text = [cityName, decision.session, decision.description ?? ""].join(" ");
-      const evaluation = evaluateText(text);
-      if (!evaluation.matched) continue;
-      let score = evaluation.score + 10;
-      if (evaluateText(decision.session).matched) score += 10;
-      sessionResults.push({
-        id: `${city}_decision_${decision.session}`,
-        city,
-        cityName,
-        sourceType: "decision",
-        title: decision.session,
-        committee: "議決結果",
-        href: `/${city}/decisions`,
-        segIndex: 0,
-        label: "",
-        startTime: "",
-        context: excerptSearchText(text, tokens, 80),
-        field: "議決",
-        year: yearFromCouncilName(decision.session),
-        score,
-      });
-    }
-
-    for (const member of runtimeIndex.members ?? []) {
-      const city = member.city;
-      const cityName = member.cityName || cityMap[city] || city;
-      const committees = Array.isArray(member.committees)
-        ? member.committees.filter((committee): committee is string => typeof committee === "string")
-        : [];
-      const name = member.name ?? "";
-      const furigana = member.furigana ?? "";
-      const party = member.party ?? "";
-      const faction = member.faction ?? "";
-      const searchText = [cityName, name, furigana, party, faction, ...committees].join(" ");
-      const evaluation = evaluateText(searchText);
-      if (!evaluation.matched) continue;
-      let score = evaluation.score;
-      if (evaluateText(name).matched) score += 28;
-      if (furigana && evaluateText(furigana).matched) score += 20;
-      if (party && evaluateText(party).matched) score += 10;
-      if (faction && evaluateText(faction).matched) score += 12;
-      memberResults.push({
-        city,
-        cityName,
-        href: memberHref(city, member.seat_number),
-        name,
-        furigana,
-        party,
-        faction,
-        committees,
-        score,
-      });
-    }
-
-    return {
-      sessionResults: sortSessionHits(sessionResults),
-      memberResults: sortMemberHits(memberResults),
-    };
-  };
-
-  const strictResults = collectResults("strict");
-  let sessionResults = strictResults.sessionResults;
-  let memberResults = strictResults.memberResults;
-  let sessionRescued = false;
-  let memberRescued = false;
-
-  if (sessionResults.length === 0 || memberResults.length === 0) {
-    const fallbackResults = collectResults("fallback");
-    if (sessionResults.length === 0 && fallbackResults.sessionResults.length > 0) {
-      sessionResults = fallbackResults.sessionResults;
-      sessionRescued = true;
-    }
-    if (memberResults.length === 0 && fallbackResults.memberResults.length > 0) {
-      memberResults = fallbackResults.memberResults;
-      memberRescued = true;
-    }
+async function runClientStatewideFullSearch(
+  urls: {
+    bigramIndexUrl?: string;
+  },
+  options: {
+    q: string;
+    searchMode: SearchMode;
+    cityFilter: string;
+    sourceFilter: SourceFilter;
+    yearFilter: string;
+    factionFilter: string;
+    tab: "sessions" | "members";
+  },
+  signal: AbortSignal,
+  caches: ClientTransientSearchCaches
+): Promise<SearchResponse> {
+  if (!supportsBigramQuery(options.q)) {
+    throw new Error(SEARCH_QUERY_LIMIT_MESSAGE);
   }
-
-  const baseCityFacets = buildCityFacets(sessionResults, memberResults);
-  const cityScopedSessions =
-    cityFilter === "all" ? sessionResults : sessionResults.filter((result) => result.city === cityFilter);
-  const cityScopedMembers =
-    cityFilter === "all" ? memberResults : memberResults.filter((result) => result.city === cityFilter);
-  const sessionSourceFacets = buildCountFacets(
-    cityScopedSessions.map((result) => result.sourceType),
-    (value) =>
-      ({
-        minutes: "議事録",
-        session: "会議録速報",
-        decision: "議決結果",
-      })[value] ?? value
+  const strictData = await loadClientBigramStatewideSearch(
+    urls.bigramIndexUrl ?? "/generated/search-bigram-statewide/manifest.json",
+    options.q,
+    options.searchMode,
+    "strict",
+    signal,
+    caches
   );
-  const effectiveSourceFilter =
-    sourceFilter !== "all" && sessionSourceFacets.some((facet) => facet.value === sourceFilter)
-      ? sourceFilter
-      : "all";
-  const sourceScopedSessions =
-    effectiveSourceFilter === "all"
-      ? cityScopedSessions
-      : cityScopedSessions.filter((result) => result.sourceType === effectiveSourceFilter);
-  const sessionYearFacets = buildCountFacets(
-    sourceScopedSessions.map((result) => result.year).filter(Boolean)
-  );
-  const effectiveYearFilter =
-    yearFilter !== "all" && sessionYearFacets.some((facet) => facet.value === yearFilter)
-      ? yearFilter
-      : "all";
-  const filteredSessions =
-    effectiveYearFilter === "all"
-      ? sourceScopedSessions
-      : sourceScopedSessions.filter((result) => result.year === effectiveYearFilter);
-  const memberFactionFacets = buildCountFacets(
-    cityScopedMembers.map((result) => result.faction || "無所属")
-  );
-  const effectiveFactionFilter =
-    factionFilter !== "all" && memberFactionFacets.some((facet) => facet.value === factionFilter)
-      ? factionFilter
-      : "all";
-  const filteredMembers =
-    effectiveFactionFilter === "all"
-      ? cityScopedMembers
-      : cityScopedMembers.filter((result) => (result.faction || "無所属") === effectiveFactionFilter);
-  const maxResults = 200;
-
-  return {
-    sessionResults: stripSessionScore(filteredSessions.slice(0, maxResults)),
-    memberResults: stripMemberScore(filteredMembers.slice(0, maxResults)),
-    sessionTotal: filteredSessions.length,
-    memberTotal: filteredMembers.length,
-    sessionBaseTotal: sessionResults.length,
-    memberBaseTotal: memberResults.length,
-    truncated: filteredSessions.length > maxResults || filteredMembers.length > maxResults,
-    rescued: sessionRescued || memberRescued,
-    sessionRescued,
-    memberRescued,
-    highlightTokens: tokens,
-    queryAssist,
-    exactExpandedTerms,
-    relatedExpandedTerms,
-    searchSuggestions,
-    searchMode,
-    facets: {
-      cities: baseCityFacets,
-      sessionSources: sessionSourceFacets,
-      sessionYears: sessionYearFacets,
-      memberFactions: memberFactionFacets,
-    },
-    searchScope: runtimeIndex.scope,
-    searchScopeLabel: searchScopeLabel(runtimeIndex.scope),
-    fullSearchAvailable: runtimeIndex.scope === "recent",
-  };
+  let response = runClientBigramStatewideSearch(strictData.candidateDocs, options);
+  const activeBaseTotal = options.tab === "sessions"
+    ? response.sessionBaseTotal
+    : response.memberBaseTotal;
+  if (activeBaseTotal === 0) {
+    const fallbackData = await loadClientBigramStatewideSearch(
+      urls.bigramIndexUrl ?? "/generated/search-bigram-statewide/manifest.json",
+      options.q,
+      options.searchMode,
+      "fallback",
+      signal,
+      caches
+    );
+    response = runClientBigramStatewideSearch(
+      {
+        strict: strictData.candidateDocs.strict,
+        fallback: fallbackData.candidateDocs.fallback,
+      },
+      options
+    );
+  }
+  return response;
 }
 
 type SearchClientProps = {
@@ -1359,14 +2134,11 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   const [exactExpandedTerms, setExactExpandedTerms] = useState<string[]>([]);
   const [relatedExpandedTerms, setRelatedExpandedTerms] = useState<string[]>([]);
   const [searchSuggestions, setSearchSuggestions] = useState<string[]>([]);
-  const [searchScope, setSearchScope] = useState<SearchIndexScope | "">("");
   const [searchScopeLabelText, setSearchScopeLabelText] = useState("");
-  const [fullSearchAvailable, setFullSearchAvailable] = useState(false);
-  const [forceFullSearch, setForceFullSearch] = useState(false);
   const [recentQueries, setRecentQueries] = useState<string[]>([]);
   const [truncated, setTruncated] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [hasSearchResponse, setHasSearchResponse] = useState(false);
+  const [, setHasSearchResponse] = useState(false);
   const [error, setError] = useState("");
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [sessionVisibleLimit, setSessionVisibleLimit] = useState(RESULT_PAGE_SIZE);
@@ -1446,10 +2218,6 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   }, []);
 
   useEffect(() => {
-    setForceFullSearch(false);
-  }, [query, cityFilter]);
-
-  useEffect(() => {
     const q = query.trim();
     if (timerRef.current) clearTimeout(timerRef.current);
     if (!q) {
@@ -1464,9 +2232,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
       setExactExpandedTerms([]);
       setRelatedExpandedTerms([]);
       setSearchSuggestions([]);
-      setSearchScope("");
       setSearchScopeLabelText("");
-      setFullSearchAvailable(false);
       setTruncated(false);
       setLoading(false);
       setHasSearchResponse(false);
@@ -1480,7 +2246,11 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
     requestIdRef.current = requestId;
     const controller = new AbortController();
     timerRef.current = setTimeout(async () => {
+      const transientCaches = createClientTransientSearchCaches();
       try {
+        if (!validateSearchQueryLimits(q).ok) {
+          throw new Error(SEARCH_QUERY_LIMIT_MESSAGE);
+        }
         const params = new URLSearchParams({
           q,
           op: searchMode,
@@ -1489,7 +2259,6 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         if (tab === "sessions" && sourceFilter !== "all") params.set("source", sourceFilter);
         if (tab === "sessions" && yearFilter !== "all") params.set("year", yearFilter);
         if (tab === "members" && factionFilter !== "all") params.set("faction", factionFilter);
-        if (forceFullSearch) params.set("scope", "all");
         const res = await fetch(`/api/search?${params.toString()}`, { signal: controller.signal });
         if (!res.ok) {
           const data = await res.json().catch(() => ({}));
@@ -1497,53 +2266,58 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         }
         let data = (await res.json()) as SearchResponse;
         if (data.clientSearchRequired) {
+          const clientSearchOptions = {
+            q,
+            searchMode,
+            cityFilter,
+            sourceFilter,
+            yearFilter,
+            factionFilter,
+            tab,
+          };
           if (cityFilter !== "all") {
-            try {
-              const bigramCityData = await loadClientBigramCitySearch(cityFilter, q, controller.signal);
-              data = runClientBigramCitySearch(bigramCityData, {
+            if (!supportsBigramQuery(q)) throw new Error(SEARCH_QUERY_LIMIT_MESSAGE);
+            const strictCityData = await loadClientBigramCitySearch(
+              cityFilter,
+              q,
+              searchMode,
+              "strict",
+              controller.signal,
+              transientCaches
+            );
+            data = runClientBigramCitySearch(strictCityData, clientSearchOptions);
+            const activeBaseTotal = tab === "sessions"
+              ? data.sessionBaseTotal
+              : data.memberBaseTotal;
+            if (activeBaseTotal === 0) {
+              const fallbackCityData = await loadClientBigramCitySearch(
+                cityFilter,
                 q,
                 searchMode,
-                cityFilter,
-                sourceFilter,
-                yearFilter,
-                factionFilter,
-              });
-            } catch {
-              const runtimeIndex = await loadClientSearchIndex(data.indexUrl ?? `/generated/search-indexes/${cityFilter}.json`, controller.signal);
-              data = runClientSearch(runtimeIndex, {
-                q,
-                searchMode,
-                cityFilter,
-                sourceFilter,
-                yearFilter,
-                factionFilter,
-              });
+                "fallback",
+                controller.signal,
+                transientCaches
+              );
+              data = runClientBigramCitySearch(
+                {
+                  manifest: strictCityData.manifest,
+                  candidateDocs: {
+                    strict: strictCityData.candidateDocs.strict,
+                    fallback: fallbackCityData.candidateDocs.fallback,
+                  },
+                },
+                clientSearchOptions
+              );
             }
           } else {
-            const runtimeIndex = await loadClientSearchIndex(data.indexUrl ?? "/generated/search-index.json", controller.signal);
-            data = runClientSearch(runtimeIndex, {
-              q,
-              searchMode,
-              cityFilter,
-              sourceFilter,
-              yearFilter,
-              factionFilter,
-            });
-          }
-          const noResults = (data.sessionResults?.length ?? 0) === 0 && (data.memberResults?.length ?? 0) === 0;
-          if (data.searchScope === "recent" && cityFilter === "all" && noResults) {
-            const fullRuntimeIndex = await loadClientSearchIndex("/generated/search-index.json", controller.signal);
-            data = runClientSearch(fullRuntimeIndex, {
-              q,
-              searchMode,
-              cityFilter,
-              sourceFilter,
-              yearFilter,
-              factionFilter,
-            });
-            data.fullSearchAvailable = false;
-            data.searchScope = "full";
-            data.searchScopeLabel = "全期間";
+            data = await runClientStatewideFullSearch(
+              {
+                bigramIndexUrl: data.bigramIndexUrl,
+              },
+              clientSearchOptions,
+              controller.signal,
+              transientCaches
+            );
           }
         }
         if (requestIdRef.current !== requestId) return;
@@ -1560,9 +2334,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         setExactExpandedTerms(data.exactExpandedTerms ?? []);
         setRelatedExpandedTerms(data.relatedExpandedTerms ?? []);
         setSearchSuggestions(data.searchSuggestions ?? []);
-        setSearchScope(data.searchScope ?? "");
         setSearchScopeLabelText(data.searchScopeLabel ?? "");
-        setFullSearchAvailable(Boolean(data.fullSearchAvailable));
         setTruncated(Boolean(data.truncated));
         setHasSearchResponse(true);
         if (
@@ -1593,13 +2365,12 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
         setExactExpandedTerms([]);
         setRelatedExpandedTerms([]);
         setSearchSuggestions([]);
-        setSearchScope("");
         setSearchScopeLabelText("");
-        setFullSearchAvailable(false);
         setTruncated(false);
         setHasSearchResponse(true);
         setError(err instanceof Error ? err.message : "検索に失敗しました");
       } finally {
+        clearClientTransientSearchCaches(transientCaches);
         if (requestIdRef.current === requestId) {
           setLoading(false);
         }
@@ -1610,7 +2381,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
       controller.abort();
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [query, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter, tab, forceFullSearch, replaceSearchParams]);
+  }, [query, searchMode, cityFilter, sourceFilter, yearFilter, factionFilter, tab, replaceSearchParams]);
 
   const tokens = tokenize(query);
   const hasQuery = query.trim().length > 0;
@@ -1679,31 +2450,6 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
   const availableYears = sessionYearFacets.map((facet) => facet.value).filter(Boolean).sort((a, b) => (a < b ? 1 : -1));
   const yearFacetCounts = new Map(sessionYearFacets.map((facet) => [facet.value, facet.count]));
   const sessionYearTotal = sessionYearFacets.reduce((sum, facet) => sum + facet.count, 0);
-
-  // 親フィルタ変更で選択肢から外れた子フィルタ state を "all" にリセット。
-  // 依存配列には primitive 化したキーを渡して、配列の reference だけで
-  // 再発火しないようにする。
-  const availableSourcesKey = Array.from(availableSourceTypes).sort().join("|");
-  const availableYearsKey = availableYears.join("|");
-  const availableFactionsKey = availableFactions.join("|");
-  useEffect(() => {
-    if (!hasSearchResponse) return;
-    if (sourceFilter !== "all" && !availableSourceTypes.has(sourceFilter)) {
-      replaceSearchParams({ source: "all" });
-    }
-  }, [availableSourcesKey, hasSearchResponse, sourceFilter, availableSourceTypes, replaceSearchParams]);
-  useEffect(() => {
-    if (!hasSearchResponse) return;
-    if (yearFilter !== "all" && !availableYears.includes(yearFilter)) {
-      replaceSearchParams({ year: "all" });
-    }
-  }, [availableYearsKey, hasSearchResponse, yearFilter, availableYears, replaceSearchParams]);
-  useEffect(() => {
-    if (!hasSearchResponse) return;
-    if (factionFilter !== "all" && !availableFactions.includes(factionFilter)) {
-      replaceSearchParams({ faction: "all" });
-    }
-  }, [availableFactionsKey, hasSearchResponse, factionFilter, availableFactions, replaceSearchParams]);
 
   const selectedCityLabel =
     cityFilter !== "all"
@@ -1812,6 +2558,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
             <input
               id="site-search"
               type="search"
+              maxLength={MAX_SEARCH_QUERY_INPUT_LENGTH}
               value={draftQuery}
               onChange={(e) => setDraftQuery(e.target.value)}
               placeholder="給食無償化、除雪、ラピダス、防災、議員名で検索"
@@ -1939,17 +2686,8 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                 予算書は各市町村の「予算」ページで原本画像とOCR結果を検索できます。
               </p>
               {searchScopeLabelText && (
-                <p className="mt-1 flex flex-wrap items-center gap-1.5 text-sm text-[#667085]">
-                  <span>検索対象: {searchScopeLabelText}</span>
-                  {searchScope === "recent" && fullSearchAvailable && (
-                    <button
-                      type="button"
-                      onClick={() => setForceFullSearch(true)}
-                      className="inline-flex min-h-11 items-center rounded-full border border-[#CBD5E0] bg-white px-3 py-2 text-sm font-semibold text-[#1B3A6B] hover:border-[#1B3A6B] hover:bg-[#E8EEF7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
-                    >
-                      全期間を検索
-                    </button>
-                  )}
+                <p className="mt-1 text-sm text-[#667085]">
+                  検索対象: {searchScopeLabelText}
                 </p>
               )}
               {activeFilters.length > 0 && (

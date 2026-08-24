@@ -1,0 +1,48 @@
+[
+  {
+    "id": "toyako-20261041-1-001",
+    "municipality": "toyako",
+    "council_id": 20261041,
+    "council_name": "令和8年4月会議",
+    "schedule_id": 1,
+    "schedule_name": "第1日目（4月17日）",
+    "date": "2026-04-17",
+    "speaker": "五十嵐篤雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "五十嵐 篤雄",
+    "member_faction": "侑志会",
+    "text": "先ほど、議会運営委員会を開催いたしまして、本\n会議に議会運営委員会委員の辞任並びに総務常任委員会委員の辞任について、２件を追加日\n程として本会議で審議するということになりましたので、ご報告をいたします。\n以上でございます。",
+    "text_length": 111,
+    "source": {
+      "minutes_file": "data/toyako/minutes/20261041.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "toyako-20261041-1-002",
+    "municipality": "toyako",
+    "council_id": 20261041,
+    "council_name": "令和8年4月会議",
+    "schedule_id": 1,
+    "schedule_name": "第1日目（4月17日）",
+    "date": "2026-04-17",
+    "speaker": "五十嵐篤雄議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "五十嵐 篤雄",
+    "member_faction": "侑志会",
+    "text": "それでは、議会運営委員会よりご報告を申し上げ\nます。\n再度、休憩中に議会運営委員会を開催いたしました。先ほどの本会議で許可されました議\n長の総務常任委員会委員の辞任に伴いまして、その時点で総務常任委員が４名となり、経済\n常任委員が６名となったところでございます。\n両委員会とも重要な委員会でございますことから、一方の委員会に委員が偏らないように、\n現経済常任委員１名が総務常任委員会へ所属変更するという届出がありましたことから、当\n委員会でそれを確認し、所属委員の選任については、委員会条例第７条第２項により、議会\nの許可が必要であることから、新たに追加日程として本会議で審議することを当委員会で確\n認しましたので、報告をいたします。\n以上でございます。",
+    "text_length": 327,
+    "source": {
+      "minutes_file": "data/toyako/minutes/20261041.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-020"
+      ]
+    }
+  }
+]

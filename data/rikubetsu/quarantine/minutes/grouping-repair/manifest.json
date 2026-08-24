@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-23T11:24:35.869Z",
+  "slug": "rikubetsu",
+  "reason": "会議回次ではなく日次の第N号で集約されていた定例会・臨時会を、本文冒頭の公式会議名で分割する",
+  "source_index": "minutes/index.json",
+  "source_files": [
+    "minutes/20241001.json",
+    "minutes/20241002.json",
+    "minutes/20241003.json",
+    "minutes/20241004.json",
+    "minutes/20241005.json",
+    "minutes/20251001.json",
+    "minutes/20251002.json",
+    "minutes/20251003.json",
+    "minutes/20251004.json"
+  ],
+  "mappings": [
+    {
+      "old_council_id": 20241001,
+      "new_council_ids": [
+        20241003,
+        20241006,
+        20241009,
+        20241012,
+        20242001,
+        20242002,
+        20242003,
+        20242004,
+        20242005
+      ]
+    },
+    {
+      "old_council_id": 20241002,
+      "new_council_ids": [
+        20241003,
+        20241006,
+        20241009,
+        20241012
+      ]
+    },
+    {
+      "old_council_id": 20241003,
+      "new_council_ids": [
+        20241003,
+        20241009
+      ]
+    },
+    {
+      "old_council_id": 20241004,
+      "new_council_ids": [
+        20241003,
+        20241009
+      ]
+    },
+    {
+      "old_council_id": 20241005,
+      "new_council_ids": [
+        20241003
+      ]
+    },
+    {
+      "old_council_id": 20251001,
+      "new_council_ids": [
+        20251003,
+        20251006,
+        20251009,
+        20251012,
+        20252001,
+        20252002,
+        20252003,
+        20252004,
+        20252005
+      ]
+    },
+    {
+      "old_council_id": 20251002,
+      "new_council_ids": [
+        20251003,
+        20251006,
+        20251009,
+        20251012
+      ]
+    },
+    {
+      "old_council_id": 20251003,
+      "new_council_ids": [
+        20251003,
+        20251009
+      ]
+    },
+    {
+      "old_council_id": 20251004,
+      "new_council_ids": [
+        20251003,
+        20251009
+      ]
+    }
+  ],
+  "schedule_mappings": [
+    {
+      "source_council_id": 20241001,
+      "source_schedule_id": 1,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22287/No.1(R06.01.24).pdf",
+      "target_council_id": 20242001,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241001,
+      "source_schedule_id": 2,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22289/No.1(R06.03.05).pdf",
+      "target_council_id": 20241003,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241001,
+      "source_schedule_id": 3,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22294/No.1(R06.04.19).pdf",
+      "target_council_id": 20242002,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241001,
+      "source_schedule_id": 4,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22297/No.1(R06.05.09).pdf",
+      "target_council_id": 20242003,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241001,
+      "source_schedule_id": 5,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22299/No.1(R06.06.04).pdf",
+      "target_council_id": 20241006,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241001,
+      "source_schedule_id": 6,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22812/No.1(R06.08.05).pdf",
+      "target_council_id": 20242004,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241001,
+      "source_schedule_id": 7,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22751/No.1(R06.09.03).pdf",
+      "target_council_id": 20241009,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241001,
+      "source_schedule_id": 8,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22809/No.1(R06.10.16).pdf",
+      "target_council_id": 20242005,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241001,
+      "source_schedule_id": 9,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/23258/No.1(R06.12.10).pdf",
+      "target_council_id": 20241012,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241002,
+      "source_schedule_id": 1,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22290/No.2(R06.03.06).pdf",
+      "target_council_id": 20241003,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20241002,
+      "source_schedule_id": 2,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22300/No.2(R06.06.05).pdf",
+      "target_council_id": 20241006,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20241002,
+      "source_schedule_id": 3,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22752/No.2(R06.09.04).pdf",
+      "target_council_id": 20241009,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20241002,
+      "source_schedule_id": 4,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/23259/No.2(R06.12.11).pdf",
+      "target_council_id": 20241012,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20241003,
+      "source_schedule_id": 1,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22291/No.3(R06.03.07).pdf",
+      "target_council_id": 20241003,
+      "target_schedule_id": 3
+    },
+    {
+      "source_council_id": 20241003,
+      "source_schedule_id": 2,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22753/No.3(R06.09.10).pdf",
+      "target_council_id": 20241009,
+      "target_schedule_id": 3
+    },
+    {
+      "source_council_id": 20241004,
+      "source_schedule_id": 1,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22292/No.4(R06.03.08).pdf",
+      "target_council_id": 20241003,
+      "target_schedule_id": 4
+    },
+    {
+      "source_council_id": 20241004,
+      "source_schedule_id": 2,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22754/No.4(R06.09.11).pdf",
+      "target_council_id": 20241009,
+      "target_schedule_id": 4
+    },
+    {
+      "source_council_id": 20241005,
+      "source_schedule_id": 1,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3033/22295/No.5(R06.03.12).pdf",
+      "target_council_id": 20241003,
+      "target_schedule_id": 5
+    },
+    {
+      "source_council_id": 20251001,
+      "source_schedule_id": 1,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/23964/No.1(R07.01.23).pdf",
+      "target_council_id": 20252001,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251001,
+      "source_schedule_id": 2,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25261/No.1(R07.03.04).pdf",
+      "target_council_id": 20251003,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251001,
+      "source_schedule_id": 3,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/24148/No.1(R07.05.07).pdf",
+      "target_council_id": 20252002,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251001,
+      "source_schedule_id": 4,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25299/No.1(R07.06.03).pdf",
+      "target_council_id": 20251006,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251001,
+      "source_schedule_id": 5,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25301/No.1(R07.07.07).pdf",
+      "target_council_id": 20252003,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251001,
+      "source_schedule_id": 6,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25322/No.1(R07.08.07).pdf",
+      "target_council_id": 20252004,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251001,
+      "source_schedule_id": 7,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25595/No.1(R07.09.02).pdf",
+      "target_council_id": 20251009,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251001,
+      "source_schedule_id": 8,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25653/No.1(R07.10.14).pdf",
+      "target_council_id": 20252005,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251001,
+      "source_schedule_id": 9,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25982/No.1(R07.12.02).pdf",
+      "target_council_id": 20251012,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251002,
+      "source_schedule_id": 1,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25262/No.2(R07.03.05).pdf",
+      "target_council_id": 20251003,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20251002,
+      "source_schedule_id": 2,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25300/No.2(R07.06.05).pdf",
+      "target_council_id": 20251006,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20251002,
+      "source_schedule_id": 3,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25656/No.2(R07.09.03).pdf",
+      "target_council_id": 20251009,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20251002,
+      "source_schedule_id": 4,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25983/No.2(R07.12.03).pdf",
+      "target_council_id": 20251012,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20251003,
+      "source_schedule_id": 1,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25263/No.3(R07.03.11).pdf",
+      "target_council_id": 20251003,
+      "target_schedule_id": 3
+    },
+    {
+      "source_council_id": 20251003,
+      "source_schedule_id": 2,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25654/No.3(R07.09.09).pdf",
+      "target_council_id": 20251009,
+      "target_schedule_id": 3
+    },
+    {
+      "source_council_id": 20251004,
+      "source_schedule_id": 1,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25264/No.4(R07.03.12).pdf",
+      "target_council_id": 20251003,
+      "target_schedule_id": 4
+    },
+    {
+      "source_council_id": 20251004,
+      "source_schedule_id": 2,
+      "source_url": "https://www.rikubetsu.jp/file/contents/3194/25660/No.4(R07.09.10).pdf",
+      "target_council_id": 20251009,
+      "target_schedule_id": 4
+    }
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "schedule_count": 35,
+    "source_minute_payload_hashes": [
+      "006ae55c842c0c1900a388f4caa2c0d53ff28e1040487520ec4f0be09d471882",
+      "01ec236a1b06403fdcb836540c0d5388a94840132f00ef7cc621ac36b71bbac9",
+      "124bfa0c5d694d8404958d3a595ac5423d335bd50f5f8ffb59f27e9f36871a91",
+      "1b119ab0ec9f6be2fb14ceca84c344071ab804a9abd7ab44b0926f090218b90d",
+      "23316048f62a3e890804528c5cf257a3ba5720d7a94b0d089eab96219d94ebac",
+      "2d584b256a9e425df42c9e5789bd1d200ab718de7a551d0ee661961e38b82b71",
+      "313e4686ba92e27d2df83f52e593850627f1d3315ba191b61fe906f707068979",
+      "36c29829e54b7e77e0134b84c80d41831096a6b9f223436759ee335c74550a66",
+      "3d3d2a11e18336b984b85da6f801e5b4db54944647d83b29eded238cadcb4752",
+      "417a38ed8fe80b136fb68d2edf52c7cedf76c5f70ad488fe957d8136cb0c8cd8",
+      "4b3ce0388bae0d2f2772b40dbedf7e44f1752d9af8121803958762837a71f2db",
+      "5381349e27bbfb8d66527181acdcba7aaf4fc612fec0028ec1a3a6d3bb93dd28",
+      "583d30e33f0ea3d4b16bc41cd71af5146b6722aa0ce90a31b04b8ed75d0aa326",
+      "63d104e8d1f441f8d3d53e28de1b7f852c2c1dae098c36227a4a78349d345593",
+      "69a554e04627aa2f3e3b147de3b02ff5dd7e289a8478b828f6ab553fd5b05b78",
+      "6b2b38a383680d202807b70a2c128c43876791083d68e8722420a06b976edf38",
+      "6dab393ae0a1cd23fe58fdcb2ba05dc688f1af2634bc34d55c21a609ff2946ff",
+      "6ef154b1ac367e0888e240cfbc36081cd272ce29d08197bb85da44e1625b7672",
+      "7e3ac1b094c5fdd84b39458df4f0e987c982e909a3d51a2723b7407dfc12cccd",
+      "8211e621890099240698d8af7562454c673890c39e89da8b7dbd740ea5ea7a03",
+      "8459432ed1c4f2c69e7b559669cdbcc0ee385e3e3dfde847db53c11ec1129f61",
+      "93cdbdb19fde012d4ff15049b916c07db8916ca75165080c1119b2abb760c660",
+      "982d491fc1685aa864672db99a73c1ef88a81cf0ea99aae162bea0b4c6286256",
+      "9c05394ca2a3a0fdc187497056a932c48f23d685f0663484e83f8a7998e321eb",
+      "9c38cfca7531cb16ddeeac482bc5d5c94a65b30170a40301d99a54e890ce76f1",
+      "af947675dcf579737d87284965c30a4ed1068fe62185bd822edc1c0aa548f3c3",
+      "b2ebad67a98362a5b6471bd2a50527080e60205ba59da54f47d26f72285eed63",
+      "b8ca1e7e3951eceb8805c5eaae0726250e90374a9bd5a0db30a5f62d0b836750",
+      "bea96cbb6f53eebbceffea93ed84a2606de6a7cddc2b469974bde9c66fb02c79",
+      "d18397aa287135d384ed8b11b3ce010c3fca15e85d378bbf5cde39451a21231b",
+      "d261372fe7b767b8ffa12111d6d8abb8741ff97986b5b16c2de5fbadd5500397",
+      "df035ca5158c0a4dfb1fdacaa35be560f3204f1f06b62d13fed456e1dbee1a47",
+      "e8f48be43409397fa512ef301edd43c123771859211afe893b16beace37513d1",
+      "e9a4fc693c52540f95a6a8753932b2b209a7d108931926672ef86de797b552da",
+      "fb6a862c66db18406bcab327a8f7083514828269076d50de28b919d7551951cd"
+    ],
+    "target_minute_payload_hashes": [
+      "006ae55c842c0c1900a388f4caa2c0d53ff28e1040487520ec4f0be09d471882",
+      "01ec236a1b06403fdcb836540c0d5388a94840132f00ef7cc621ac36b71bbac9",
+      "124bfa0c5d694d8404958d3a595ac5423d335bd50f5f8ffb59f27e9f36871a91",
+      "1b119ab0ec9f6be2fb14ceca84c344071ab804a9abd7ab44b0926f090218b90d",
+      "23316048f62a3e890804528c5cf257a3ba5720d7a94b0d089eab96219d94ebac",
+      "2d584b256a9e425df42c9e5789bd1d200ab718de7a551d0ee661961e38b82b71",
+      "313e4686ba92e27d2df83f52e593850627f1d3315ba191b61fe906f707068979",
+      "36c29829e54b7e77e0134b84c80d41831096a6b9f223436759ee335c74550a66",
+      "3d3d2a11e18336b984b85da6f801e5b4db54944647d83b29eded238cadcb4752",
+      "417a38ed8fe80b136fb68d2edf52c7cedf76c5f70ad488fe957d8136cb0c8cd8",
+      "4b3ce0388bae0d2f2772b40dbedf7e44f1752d9af8121803958762837a71f2db",
+      "5381349e27bbfb8d66527181acdcba7aaf4fc612fec0028ec1a3a6d3bb93dd28",
+      "583d30e33f0ea3d4b16bc41cd71af5146b6722aa0ce90a31b04b8ed75d0aa326",
+      "63d104e8d1f441f8d3d53e28de1b7f852c2c1dae098c36227a4a78349d345593",
+      "69a554e04627aa2f3e3b147de3b02ff5dd7e289a8478b828f6ab553fd5b05b78",
+      "6b2b38a383680d202807b70a2c128c43876791083d68e8722420a06b976edf38",
+      "6dab393ae0a1cd23fe58fdcb2ba05dc688f1af2634bc34d55c21a609ff2946ff",
+      "6ef154b1ac367e0888e240cfbc36081cd272ce29d08197bb85da44e1625b7672",
+      "7e3ac1b094c5fdd84b39458df4f0e987c982e909a3d51a2723b7407dfc12cccd",
+      "8211e621890099240698d8af7562454c673890c39e89da8b7dbd740ea5ea7a03",
+      "8459432ed1c4f2c69e7b559669cdbcc0ee385e3e3dfde847db53c11ec1129f61",
+      "93cdbdb19fde012d4ff15049b916c07db8916ca75165080c1119b2abb760c660",
+      "982d491fc1685aa864672db99a73c1ef88a81cf0ea99aae162bea0b4c6286256",
+      "9c05394ca2a3a0fdc187497056a932c48f23d685f0663484e83f8a7998e321eb",
+      "9c38cfca7531cb16ddeeac482bc5d5c94a65b30170a40301d99a54e890ce76f1",
+      "af947675dcf579737d87284965c30a4ed1068fe62185bd822edc1c0aa548f3c3",
+      "b2ebad67a98362a5b6471bd2a50527080e60205ba59da54f47d26f72285eed63",
+      "b8ca1e7e3951eceb8805c5eaae0726250e90374a9bd5a0db30a5f62d0b836750",
+      "bea96cbb6f53eebbceffea93ed84a2606de6a7cddc2b469974bde9c66fb02c79",
+      "d18397aa287135d384ed8b11b3ce010c3fca15e85d378bbf5cde39451a21231b",
+      "d261372fe7b767b8ffa12111d6d8abb8741ff97986b5b16c2de5fbadd5500397",
+      "df035ca5158c0a4dfb1fdacaa35be560f3204f1f06b62d13fed456e1dbee1a47",
+      "e8f48be43409397fa512ef301edd43c123771859211afe893b16beace37513d1",
+      "e9a4fc693c52540f95a6a8753932b2b209a7d108931926672ef86de797b552da",
+      "fb6a862c66db18406bcab327a8f7083514828269076d50de28b919d7551951cd"
+    ],
+    "minute_text_modified": false
+  }
+}

@@ -234,6 +234,31 @@ DNP、gijiroku.com、HTML、単段PDF、段組PDF、OCR PDF、録画/ASRにつ�
 
 ## 段階移行
 
+### 2026-08-23時点のlegacy投影改善
+
+v2正本の全面実装に先立ち、現行投影には次の公開ゲートを適用した。
+
+- `minutes/index.json` を公開会議のmanifestとして扱い、index外の会議JSONはURL直打ち、segments生成、質問履歴生成の対象にしない。
+- 公開用 `site/data/{slug}/minutes/` へ同期するJSONは、`index.json`、indexが参照する会議本文、同じ会議IDのenriched projectionに限定する。収集側に調査・隔離目的のindex外JSONが残っていても公開用コピーへ再混入させない。
+- `municipalities.json` で `minutes_access: "restricted"` の自治体は、会議一覧など本文を複製しない台帳情報だけを表示し、本文、enriched、structured minutes、質問履歴、テーマ、全文検索など議事録由来の派生表示を公開しない。この判定は検索生成、capability生成、UI、validatorで同じ台帳を参照する。
+- legacy indexの日付は `start_date` / `end_date` / `sort_date` / `date_precision` に分離した。複数日にわたる会議の一覧順は最終開催日である `end_date` を `sort_date` に使い、表示名に含まれる日付を再解釈しない。`date_precision` は公式な開催日を確認できた `day` と、会議名の月までしか確認できない `month` を区別する。合成 `council_id`、会議種別、配列順から日付を作らず、日が確認できない場合は月精度または未取得のままにする。
+- 年や本文品質が誤っている既存会議は削除せず、公開indexから外して `data/{slug}/quarantine/` に理由と原典を残す。
+- 複数年度の日程が一つの会議JSONへ混入した場合は、本文冒頭の年と開催日の両方が公開年との不一致を示した日程だけを除外する。修復前JSONを `quarantine/minutes/year-mismatch/` に保存し、公式資料内の単純な年表記誤りや議案中の日付だけでは自動除外しない。
+- PDFの「第N号」を「第N回会議」と誤認して複数会議を束ねた場合は、本文冒頭の公式会議名、種別、回次、開催日を全日程で確認できた自治体だけ分割する。修復前index・会議JSON、旧IDから新IDへの対応、原文payload hashを `quarantine/minutes/grouping-repair/` に保存し、発言本文は変更しない。
+- segmentsの人物照合は現行議席番号から推測しない。原文の完全氏名、一意な姓、本文冒頭の明示氏名で確認できない場合は `member_name: null` とする。
+- `members_activity.json` は質問ブロックと根拠minute/segment IDを持つ、表示用のbounded projectionとする。1記録の表示テーマ数と1議員の集約テーマ数には上限を設け、全文はminutes/segmentsへ残す。
+- `canonical_topics` は、正規化したラベル全体がその質問ブロックの根拠minute/segment本文に含まれる場合だけ保持する。AIで整えたが原文に同じ表現がないラベルは `generated_topics` に分離し、公式原文由来のテーマとして扱わず、本文完全一致検索にも混ぜない。
+- 画面でも `canonical_topics` は「原文で確認できる語句」、`generated_topics` は「AI整理テーマ（要原文確認）」として分け、generated labelを完全一致検索の根拠や公式見出しとして表示しない。
+- 公開する質問履歴は、原文の質問境界と根拠minute/segment IDを独立validatorで再現できる `classified` レコードに限る。質問、討論、委員会報告等を区別できないlegacy segmentは `members_activity.json` へ投影せず、再分類できるよう原文segmentsを保持する。
+- `data/{slug}/members_activity.json` を収集・編集側の正、`site/data/{slug}/members_activity.json` を同期コピーとする。公開時は議員単位の静的shardへ再投影し、人物ページの実行時バンドルへ自治体全員分の履歴を含めない。
+- DNP会議録の終了宣言は共通parserと独立validatorで照合し、市町村名による分岐を置かない。
+
+これはlegacy投影の誤公開と誤帰属を減らすための移行措置であり、v2完了を意味しない。現段階の質問ブロックには不変な `SourceRevision`、原典文字offset、人物の `person_id` / `membership_id` がまだ揃っていないため、`members_activity.json` を正本として扱わない。
+
+同日の全公開index再監査では、仁木町・幌延町・妹背牛町の20会議から別年度の日程103件を公開対象外へ移し、平取町・陸別町・富良野市の14個の粗い会議JSONを37会議へ正規化した。修復後は公開会議に45日を超えて離れた日程を誤集約した例、および高確度な日程年不一致が0件であることを確認した。これらは原本削除ではなく、公開manifestと派生indexの修復である。
+
+同日のread-only再生成比較では、segment差分対象62自治体のうち40自治体で、現行parserによる発言分割の変化がordinal依存segment IDをずらした。人物帰属だけを同じ発言へ再評価した結果は整合したが、全segmentsの一括再生成は既存の根拠IDを壊し得る。このため、v2の安定Turn IDとparser revision移行ができるまでは、公開manifest内の既存segmentへ外科的修復を適用し、構造再生成は自治体単位の差分監査を必須とする。
+
 ### Phase 0: 契約と虚偽メタデータの停止
 
 - 本書とJSON Schemaを正とする。

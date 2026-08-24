@@ -32,6 +32,8 @@ const nextConfig: NextConfig = {
     // 注意: sessions/*.json と minutes/enriched/*.json はここで落とすと
     //       /api/search が壊れるので含めない。
     "**": [
+      // build 時専用の検索台帳。実行時は public/generated の分割資産を読む。
+      "./data/_search-index.json",
       "./data/*/minutes/**/*.json",
       "./data/structured-minutes/**/*.json",
       "./data/*/segments/**/*",
@@ -64,6 +66,11 @@ const nextConfig: NextConfig = {
       "./data/*/election.json",
       "./data/*/plan_activity.json",
       "./data/*/index.json",
+    ],
+    // 議員詳細は議員単位の Static Asset を読む。市全員分の活動履歴を
+    // dynamic Function に含めると、自治体追加のたびにバンドルが肥大化する。
+    "/**/members/**": [
+      "./data/*/members_activity.json",
     ],
   },
   async headers() {

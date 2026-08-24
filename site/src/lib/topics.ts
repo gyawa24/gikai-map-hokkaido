@@ -1,5 +1,4 @@
-import fs from "fs";
-import path from "path";
+import { getMinutesEnrichedDocs } from "@/lib/cityData";
 import { getMunicipalities } from "@/lib/municipalities";
 import { aliasesForTag, canonicalizeTag, isCitizenTopic, normalizeTopic, slugForTag } from "@/lib/topicAliases";
 import type { MinutesEnriched } from "@/types/minutes";
@@ -35,22 +34,8 @@ export function loadAllEnriched(): EnrichedRecord[] {
   for (const municipality of getMunicipalities().filter((m) => m.active)) {
     const cityId = municipality.slug;
     const cityName = municipality.name;
-    const enrichedDir = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", cityId, "minutes", "enriched");
-    try {
-      const files = fs.readdirSync(/*turbopackIgnore: true*/ enrichedDir).filter((f) => f.endsWith(".json"));
-      for (const file of files) {
-        try {
-          const filePath = path.join(/*turbopackIgnore: true*/ enrichedDir, file);
-          const data = JSON.parse(
-            fs.readFileSync(/*turbopackIgnore: true*/ filePath, "utf-8")
-          ) as MinutesEnriched;
-          records.push({ ...data, cityId, cityName });
-        } catch {
-          // skip malformed files
-        }
-      }
-    } catch {
-      // directory doesn't exist for this city
+    for (const data of getMinutesEnrichedDocs(cityId)) {
+      records.push({ ...data, cityId, cityName });
     }
   }
 

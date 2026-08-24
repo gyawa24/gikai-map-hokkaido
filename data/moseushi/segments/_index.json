@@ -17,26 +17,26 @@
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 1485,
-    "excerpt": "田中春夫です。 - 55 - 議案第１８号 令和６年度妹背牛町一般会計予算、議案第１９号 令和６年度妹背牛 町国民健康保険特別会計予算、議案第２０号 令和６年度妹背牛町後期高齢者医療特別会 計予算、議"
+    "text_length": 1498,
+    "excerpt": "（田中春夫君） （登壇） 田中春夫です。 - 55 - 議案第１８号 令和６年度妹背牛町一般会計予算、議案第１９号 令和６年度妹背牛 町国民健康保険特別会計予算、議案第２０号 令和６年度妹背牛町後期高"
   },
   {
     "id": "moseushi-20241001-2-003",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 549,
-    "excerpt": "私は、議案第１３号から議案第１７号の条例関係並び に議案第１８号から議案第２４号までの令和６年度妹背牛町一般会計予算ほか６会計の新 年度予算について、賛成の立場から討論いたします。 今回提案されている"
+    "text_length": 562,
+    "excerpt": "（鈴木正彦君） （登壇） 私は、議案第１３号から議案第１７号の条例関係並び に議案第１８号から議案第２４号までの令和６年度妹背牛町一般会計予算ほか６会計の新 年度予算について、賛成の立場から討論いたし"
   },
   {
     "id": "moseushi-20241001-2-004",
@@ -48,24 +48,37 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 33,
-    "excerpt": "- 59 - 提案理由の説明を求めます。 ５番議員、赤藤敏仁君。"
+    "text_length": 21,
+    "excerpt": "- 59 - 提案理由の説明を求めます。"
   },
   {
     "id": "moseushi-20241001-2-005",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "赤藤敏仁君議員",
+    "speaker": "５番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "赤藤　敏仁",
     "member_faction": "",
-    "text_length": 160,
-    "excerpt": "発議第１号 議会改革特別委員会の設置について提案 理由の説明を申し上げます。 妹背牛町議会では、これまで議会改革に向けた協議を今後も継続して取り組んでいく必 要があることから、前期に引き続き議会改革特"
+    "text_length": 173,
+    "excerpt": "（赤藤敏仁君） （登壇） 発議第１号 議会改革特別委員会の設置について提案 理由の説明を申し上げます。 妹背牛町議会では、これまで議会改革に向けた協議を今後も継続して取り組んでいく必 要があることから"
   },
   {
     "id": "moseushi-20241001-2-006",
+    "council_id": 20241001,
+    "council_name": "令和6年第1回定例会",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 23,
+    "excerpt": "より挨拶の申出がありましたので、ご紹介します。"
+  },
+  {
+    "id": "moseushi-20241001-2-007",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -78,7 +91,7 @@
     "excerpt": "このたびは菅原代表監査、また瀧本農業委員会委員長の見守る中、 第１回定例会におきまして４日間にわたり予算審査特別委員会を開催いただきました。慎 重審議の結果、全議案可決ということで、感謝を申し上げます"
   },
   {
-    "id": "moseushi-20241001-3-007",
+    "id": "moseushi-20241001-3-008",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -91,7 +104,7 @@
     "excerpt": "皆さん、おはようございます。ただいま廣田議長よりお許しがあ りましたので、定例会開会に当たり、一言ご挨拶を申し上げます。 私事ではございますが、２月７日妹背牛診療所より救急搬送され、２８日退院までの "
   },
   {
-    "id": "moseushi-20241001-3-008",
+    "id": "moseushi-20241001-3-009",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -100,11 +113,11 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 1042,
+    "text_length": 495,
     "excerpt": "それでは、１２月の第４回定例会以降の行政報告をさ せていただきたいと思います。 まず、本町の農業関係についてでございますが、道内においては既に生産の目安が示さ れており、本町では１万１，３７３．３７ト"
   },
   {
-    "id": "moseushi-20241001-3-009",
+    "id": "moseushi-20241001-3-010",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -117,7 +130,7 @@
     "excerpt": "それでは、１２月定例会以降の教育行政についてご 報告申し上げます。 まず、一般庶務関係ですが、教育委員会会議については、１２月１３日開催の第７回 会議では令和５年度全国体力・運動能力、運動習慣等調査の"
   },
   {
-    "id": "moseushi-20241001-3-010",
+    "id": "moseushi-20241001-3-011",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -126,11 +139,24 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 13029,
+    "text_length": 276,
     "excerpt": "それでは、令和６年度町政執行方針を発表いたします。 町議会議員の皆様をはじめ、町民の皆様に対しまして、令和６年第１回妹背牛町議会定 例会の開会に当たり、町政執行の所信を申し述べます。 まず初めに、元日"
   },
   {
-    "id": "moseushi-20241001-3-011",
+    "id": "moseushi-20241001-3-012",
+    "council_id": 20241001,
+    "council_name": "令和6年第1回定例会",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 12750,
+    "excerpt": "として町政運営を託されてから６年、既に２期目も折り返し時点から３か月が経過 しました。この間、新型コロナウイルス感染症により大きな影響を受けた町内経済の再建 をはじめ、各種の施策を進める中で、議員の皆"
+  },
+  {
+    "id": "moseushi-20241001-3-013",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -143,20 +169,20 @@
     "excerpt": "令和６年第１回町議会定例会の開会に当たりまして、 妹背牛町教育委員会所管に関する執行方針について申し上げます。 昨年は、新型コロナウイルス感染症対策の大きな転換期を迎えたことをはじめ、猛暑に 見舞われ"
   },
   {
-    "id": "moseushi-20241001-4-012",
+    "id": "moseushi-20241001-4-014",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 790,
-    "excerpt": "通告に従い、質問いたします。 地域交通について、妹背牛町内の生活移動手段に関する考えと北空知圏公共交通につい てお伺いいたします。 まず、１番目です。バス路線の廃止や減便の話題が相次いでいますが、今年"
+    "text_length": 461,
+    "excerpt": "（渡辺倫代君） （登壇） 通告に従い、質問いたします。 地域交通について、妹背牛町内の生活移動手段に関する考えと北空知圏公共交通につい てお伺いいたします。 まず、１番目です。バス路線の廃止や減便の話"
   },
   {
-    "id": "moseushi-20241001-4-013",
+    "id": "moseushi-20241001-4-015",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -165,24 +191,24 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 2541,
+    "text_length": 731,
     "excerpt": "私からは、議員ご質問の地域交通についてご答弁申し上 げます。 まず、１点目の町独自で町民の足の確保の対策についてですが、本町における交通環境 につきましては、第９次総合振興計画の中でも記載してあるとお"
   },
   {
-    "id": "moseushi-20241001-4-014",
+    "id": "moseushi-20241001-4-016",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 2824,
-    "excerpt": "まず、１番目に対してですが、あまり住民の方からのニーズがな いという答弁になりそうな予感がしておりましたが、先ほどの答弁をお聞きしますと今回 はスクールバスの混乗を考えていたり、福祉の対策を使ってほし"
+    "text_length": 2832,
+    "excerpt": "（渡辺倫代君） まず、１番目に対してですが、あまり住民の方からのニーズがな いという答弁になりそうな予感がしておりましたが、先ほどの答弁をお聞きしますと今回 はスクールバスの混乗を考えていたり、福祉の"
   },
   {
-    "id": "moseushi-20241001-4-015",
+    "id": "moseushi-20241001-4-017",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -195,20 +221,20 @@
     "excerpt": "再質問に対しましてご答弁申し上げます。 まず、１点目の地域公共交通でございますが、北竜町との協議をなされているのかとい うことなのですけれども、町としては高齢者のおもてなし、お買い物おもてなし事業とか"
   },
   {
-    "id": "moseushi-20241001-4-016",
+    "id": "moseushi-20241001-4-018",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 2426,
-    "excerpt": "先ほど６月をめどに北竜町と協議するとおっしゃいましたが、こ れ見ますと町営バスの北竜の運行は朝が１便なのですが、帰りは２便ということなのです。 ですから、学校が終わるのに合わせて計画立てていられるのだ"
+    "text_length": 2434,
+    "excerpt": "（渡辺倫代君） 先ほど６月をめどに北竜町と協議するとおっしゃいましたが、こ れ見ますと町営バスの北竜の運行は朝が１便なのですが、帰りは２便ということなのです。 ですから、学校が終わるのに合わせて計画立"
   },
   {
-    "id": "moseushi-20241001-4-017",
+    "id": "moseushi-20241001-4-019",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -221,20 +247,20 @@
     "excerpt": "それでは、ただいまのご質問に対して答弁をしたいと思います。 まず、身近な北竜と深川との廃止ということで、特に９区、８区のほうからの流れの中 で不便を生じないように今までの制度設計ではできなかったところ"
   },
   {
-    "id": "moseushi-20241001-4-018",
+    "id": "moseushi-20241001-4-020",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "小林一晃君議員",
+    "speaker": "６番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "小林　一晃",
     "member_faction": "",
-    "text_length": 770,
-    "excerpt": "通告に従い、一般質問を行います。 まず初めに、少し時期が過ぎましたが、去る１月元旦に発生をいたしました能登半島を 中心として発生した地震に対してお亡くなりになられました方々に心からお悔やみを申し 上げ"
+    "text_length": 783,
+    "excerpt": "（小林一晃君） （登壇） 通告に従い、一般質問を行います。 まず初めに、少し時期が過ぎましたが、去る１月元旦に発生をいたしました能登半島を 中心として発生した地震に対してお亡くなりになられました方々に"
   },
   {
-    "id": "moseushi-20241001-4-019",
+    "id": "moseushi-20241001-4-021",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -247,20 +273,20 @@
     "excerpt": "私からは、議員ご質問の本町の人口減少問題についてご 答弁申し上げます。 議員ご指摘のとおり昨年１２月２３日、北海道新聞朝刊の一面において国立社会保障・ 人口問題研究所、いわゆる社人研が２０２０年の人口"
   },
   {
-    "id": "moseushi-20241001-4-020",
+    "id": "moseushi-20241001-4-022",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "小林一晃君議員",
+    "speaker": "６番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "小林　一晃",
     "member_faction": "",
-    "text_length": 466,
-    "excerpt": "ただいま答弁の中では、後ればせながら人口問題について対応し てきていると、そういうようなことで、また今年の予算の中でもようこそ赤ちゃん事業と いうようなことで子育てに対するそれぞれの支援対策ということ"
+    "text_length": 474,
+    "excerpt": "（小林一晃君） ただいま答弁の中では、後ればせながら人口問題について対応し てきていると、そういうようなことで、また今年の予算の中でもようこそ赤ちゃん事業と いうようなことで子育てに対するそれぞれの支"
   },
   {
-    "id": "moseushi-20241001-4-021",
+    "id": "moseushi-20241001-4-023",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -273,20 +299,20 @@
     "excerpt": "今ご質問にありましたようこそ赤ちゃん事業についてで ございますが、今まで企画振興課のほうで行っておりました出産育児支援事業、出産に対 する助成についてでございます。それと、お子さんができたときに妊婦に"
   },
   {
-    "id": "moseushi-20241001-4-022",
+    "id": "moseushi-20241001-4-024",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "小林一晃君議員",
+    "speaker": "６番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "小林　一晃",
     "member_faction": "",
-    "text_length": 327,
-    "excerpt": "今の答弁の中で新しいこれからの若い者が子育てをしていく中で のそういった前向きな取組について理解をしているところでございますが、何といっても この少子高齢化時代の中で妹背牛町は全道で８番目に減少率が高"
+    "text_length": 335,
+    "excerpt": "（小林一晃君） 今の答弁の中で新しいこれからの若い者が子育てをしていく中で のそういった前向きな取組について理解をしているところでございますが、何といっても この少子高齢化時代の中で妹背牛町は全道で８"
   },
   {
-    "id": "moseushi-20241001-4-023",
+    "id": "moseushi-20241001-4-025",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -299,20 +325,20 @@
     "excerpt": "それでは、再々質問に対しご答弁をさせていただきます。 確かに人口減少の波は妹背牛町だけでなく、日本全国津々浦々まで行っているわけです けれども、私の町を振り返りますと中堅企業の大きな会社が２つございま"
   },
   {
-    "id": "moseushi-20241001-4-024",
+    "id": "moseushi-20241001-4-026",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 385,
-    "excerpt": "田中春夫です。発言通告に従いまして、今年の冬も大 変厳しさを増し、そして降雪、積雪も昨年よりあるように感じられます。町道では車が交 差できず、譲り合って行き交いしていました。また、高く積もった雪道での"
+    "text_length": 398,
+    "excerpt": "（田中春夫君） （登壇） 田中春夫です。発言通告に従いまして、今年の冬も大 変厳しさを増し、そして降雪、積雪も昨年よりあるように感じられます。町道では車が交 差できず、譲り合って行き交いしていました。"
   },
   {
-    "id": "moseushi-20241001-4-025",
+    "id": "moseushi-20241001-4-027",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -325,7 +351,7 @@
     "excerpt": "私のほうから除排雪について１点目と３点目、４点目につい てご答弁申し上げます。 まず、１つ目の昨年と比べて今冬期の降雪量、積雪量についてですが、令和４年度の降 雪状況は１２月１日より根雪となり、３月３"
   },
   {
-    "id": "moseushi-20241001-4-026",
+    "id": "moseushi-20241001-4-028",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -338,20 +364,20 @@
     "excerpt": "２つ目の質問にありました高齢者に対する除雪の対応で ございますが、本町におきましては除雪が困難な高齢者等に対し、冬期間の生活道路の確 保のために高齢者事業団に委託した中で実施しているところであります。"
   },
   {
-    "id": "moseushi-20241001-4-027",
+    "id": "moseushi-20241001-4-029",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 234,
-    "excerpt": "除排雪の問題については、率直に言って道路の除排雪では進んで いるかと思うのですけれども、玄関口の除排雪という点ではこれから、それが駄目という のではなくて、いろいろ工夫をしながら除排雪をやってほしいと"
+    "text_length": 242,
+    "excerpt": "（田中春夫君） 除排雪の問題については、率直に言って道路の除排雪では進んで いるかと思うのですけれども、玄関口の除排雪という点ではこれから、それが駄目という のではなくて、いろいろ工夫をしながら除排雪"
   },
   {
-    "id": "moseushi-20241001-4-028",
+    "id": "moseushi-20241001-4-030",
     "council_id": 20241001,
     "council_name": "令和6年第1回定例会",
     "date": null,
@@ -364,631 +390,7 @@
     "excerpt": "私のほうから、田中議員ご質問の間口除雪の関係かと思われ ますが、ご答弁申し上げます。 - 44 - まず、路線除雪に関しては道路の雪を両サイドに寄せていくという除雪方法になります。 したがいまして、当"
   },
   {
-    "id": "moseushi-20241002-1-001",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 598,
-    "excerpt": "おはようございます。ただいま宮﨑議長さんのお許しがございま したので、本定例議会の開会に当たり一言ご挨拶を申し上げます。 本日は、何かとご多用の中議員全員のご出席をいただき、６月定例議会を開催できます"
-  },
-  {
-    "id": "moseushi-20241002-1-002",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1024,
-    "excerpt": "それでは、３月の第１回定例会以降の行政報告をさせ ていただきます。 初めに、令和元年度の需給調整実施状況についてですが、６月６日現在の状況で、米の 配分面積は２，２３３．１０ヘクタールとなっており、こ"
-  },
-  {
-    "id": "moseushi-20241002-1-003",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "土井康敬教育長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 959,
-    "excerpt": "私から２月２３日から６月７日までの教育行政につ いてご報告申し上げます。 一般庶務関係では、３月２２日に第３回の教育委員会を開催いたしました。学校医の 委嘱をはじめ、教職員を含む教育委員会関係の人事異"
-  },
-  {
-    "id": "moseushi-20241002-1-004",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "赤藤敏仁議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": "赤藤　敏仁",
-    "member_faction": "",
-    "text_length": 571,
-    "excerpt": "平成３１年第１回定例会におい て付託を受けました請願について、４月２６日開催の総務厚生常任委員会において審査し ましたので、会議規則第７６条の規定によりその結果を報告いたします。 最初に、請願第１号 "
-  },
-  {
-    "id": "moseushi-20241002-1-005",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "渡辺倫代君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": "渡辺　倫代",
-    "member_faction": "",
-    "text_length": 1299,
-    "excerpt": "それでは、通告に従い、質問させていただきます。 - 8 - 今年、中学校は５月２５日体育大会が終了し、全校生徒４８名ではありますが、最後の リレーも大変迫力のあるものでした。また、急遽午前中のみとする"
-  },
-  {
-    "id": "moseushi-20241002-1-006",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "土井康敬教育長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 393,
-    "excerpt": "私から１問目のご質問に答弁申し上げたいと思います。 ご質問いただいた児童生徒数に令和９年までの明確なビジョンはあるかというご質問で - 9 - ございますが、特化したビジョンというのは特に持っていると"
-  },
-  {
-    "id": "moseushi-20241002-1-007",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "廣澤勉企画振興課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1314,
-    "excerpt": "私のほうから議員ご質問のカーリングホール夏期利用時 間一部見直しについてご答弁申し上げます。 まず、カーリングホールが午前１０時オープンとなった理由につきましては、はっきり したところはわからなかった"
-  },
-  {
-    "id": "moseushi-20241002-1-008",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "渡辺倫代君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": "渡辺　倫代",
-    "member_faction": "",
-    "text_length": 3615,
-    "excerpt": "まずは教育長にお尋ねいたします。 先ほど１回目の質問をさせていただきましたが、教育長からどのようなお答えがいただ けるのか、まるで予想ができませんでした。危機感をお持ちでないのかどうかは伝わって きま"
-  },
-  {
-    "id": "moseushi-20241002-1-009",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "土井康敬教育長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 927,
-    "excerpt": "渡辺議員の２回目のご質問にご答弁申し上げたいと思います。 - 13 - 質問の内容が多岐にわたり、中心的な質問がよく見えなかった部分もありますけれども、 教育長としての立場の中でどういった考えを持って"
-  },
-  {
-    "id": "moseushi-20241002-1-010",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "廣澤勉企画振興課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1284,
-    "excerpt": "再質問に対しましてご答弁申し上げます。 カーリングホールの夏休み期間中の開館時間を早めることに関しましては、説明が少し 言葉足らずだったかもしれませんが、単純に見直しが必要ではないというふうには考えて"
-  },
-  {
-    "id": "moseushi-20241002-1-011",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "渡辺倫代君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": "渡辺　倫代",
-    "member_faction": "",
-    "text_length": 713,
-    "excerpt": "先ほど教育長から将来的に統合であるとか複式であるとかという 言葉が出てまいりましたが、妹背牛の児童生徒数はそこにいくまでの減少ではございませ ん。ですから、今の小規模化というのをどのように充実させた教"
-  },
-  {
-    "id": "moseushi-20241002-1-012",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "土井康敬教育長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 780,
-    "excerpt": "最後の質問はちょっと細かくなっていったものですから、通告 ではビジョンということで大きな質問だったというふうに思うのですけれども、どういっ た具体的なものがあるかということで、プランということの質問で"
-  },
-  {
-    "id": "moseushi-20241002-1-013",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1186,
-    "excerpt": "１番目の質問は教育長ということなので私は答弁できない立場な のですけれども、１つだけ気になったことがありましたので。教育総合会議、教育委員会 にそのままげたを預けているというつもりは全くございません。"
-  },
-  {
-    "id": "moseushi-20241002-1-014",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "工藤正博君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 2028,
-    "excerpt": "それでは、通告に従い、質問します。 第１に、聴覚障がい者のための補装具に関し質問いたします。加齢性難聴は、日常生活 を不安にし、コミュニケーションを困難にするなど、生活の質を落とす大きな原因になる ば"
-  },
-  {
-    "id": "moseushi-20241002-1-015",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "河野和浩健康福祉課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1342,
-    "excerpt": "私のほうから聴覚障がい者のための補装具費支給につい てご答弁申し上げます。 １点目の聴覚障がいが認定されないと補聴器購入の制度は利用できないのか、また認定 の等級は何級以上かということにつきましては、"
-  },
-  {
-    "id": "moseushi-20241002-1-016",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "清水野勇住民課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 702,
-    "excerpt": "国民健康保険問題について私のほうからご答弁申し上げま す。 国に公費投入の引き上げを求める考えを問うとのご質問でございますけれども、国保の 安定的な運営を目指すべく平成３０年度からスタートいたしました"
-  },
-  {
-    "id": "moseushi-20241002-1-017",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "工藤正博君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1208,
-    "excerpt": "まず、補聴器に関することですが、片耳数万円から数十万円と非 常に幅広くあるわけですけれども、この価格というのは高いのでしょうか。私は絶対高い - 20 - というふうに思っているのですけれども、どうい"
-  },
-  {
-    "id": "moseushi-20241002-1-018",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "河野和浩健康福祉課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 738,
-    "excerpt": "再質問に対しご答弁申し上げます。 まず、１点目の価格につきましては、高いものは高いと聞いております。ただ、支給の 該当になる補聴器の基準が何種類かありまして、下は３万４，０００円程度から上限は１ ３万"
-  },
-  {
-    "id": "moseushi-20241002-1-019",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "清水野勇住民課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 577,
-    "excerpt": "国民健康保険問題の再質問につきまして私のほうからご答 弁申し上げます。 国に対する要望についてということでございますけれども、平成３０年度は国保連合会 が中心となりまして各保険者からの意見を集約いたし"
-  },
-  {
-    "id": "moseushi-20241002-1-020",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "工藤正博君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 408,
-    "excerpt": "再々質問、１つだけ質問いたします。 - 22 - 補装具、補聴器の関係なのですが、この制度をもっともっと広く知らしめるということ をどの程度考えておられるのか、何をやろうとしているのか、それはこれから"
-  },
-  {
-    "id": "moseushi-20241002-1-021",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "河野和浩健康福祉課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 214,
-    "excerpt": "再々質問に対してご答弁申し上げます。 耳が聞こえないことによる理解力の低下というのは、生活していく上で高齢者にとって は課題だと常日ごろ考えておりますので、議員ご指摘のこういった制度を周知していく、 "
-  },
-  {
-    "id": "moseushi-20241002-1-022",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "広田毅君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 903,
-    "excerpt": "まず冒頭に、皆さんのお手元に一般質問の通告書が渡 っているかと思います。ここで私の要旨の明細ということで②に「課題については第９次 総合振興計画の中で」と記載されておりますけれども、大変申しわけないの"
-  },
-  {
-    "id": "moseushi-20241002-1-023",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 2339,
-    "excerpt": "私からは、議員ご質問の第１番目、第８次総合振興計画の終了に 当たり、現時点での評価と課題についてからまずご答弁を申し上げたいと思います。 まず、第８次総合振興計画の終了年度、あと１年ございますけれども"
-  },
-  {
-    "id": "moseushi-20241002-1-024",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "広田毅君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 2565,
-    "excerpt": "今町長からるるご答弁いただきました。今言われたように、第８ 次総合振興計画の進行中にまち・ひと・しごと総合戦略というような国の大きなプロジェ クトが始まりました。その中でどうやって８次の総合振興計画と"
-  },
-  {
-    "id": "moseushi-20241002-1-025",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 2784,
-    "excerpt": "議員の再質問に対して答弁をさせていただきます。 まず最初、８次の積み残し、あるいは８次からの流れということで、まず最初に妹背高 跡地の再利用、利活用のイメージ、あるいは町長にとってどれだけの重要度があ"
-  },
-  {
-    "id": "moseushi-20241002-1-026",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "広田毅君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1711,
-    "excerpt": "先ほど言いましたように、９次の振興計画が今策定中であります から、答弁の中身についてもかなり気を使った答弁にならざるを得ないということは充分 理解できます。そんな中で４点について今ご答弁いただきました"
-  },
-  {
-    "id": "moseushi-20241002-1-027",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1652,
-    "excerpt": "議員の再々質問に対してご答弁差し上げます。 妹背高の跡地は、ちょっと説明しますと、平成２７年に校舎を含む全ての取り壊しが終 わったのはご存じだと思います。その後道教育庁施設課と打ち合わせを行っておりま"
-  },
-  {
-    "id": "moseushi-20241002-1-028",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "佐田惠治君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 2042,
-    "excerpt": "通告に基づき、質問いたしたいと思います。 町民の声として、免許を返上された方、また運転に不安を持って免許を返上したいとい - 32 - う方々の声があります。高齢者運転事故防止対策について、そういう声"
-  },
-  {
-    "id": "moseushi-20241002-1-029",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "篠原敬司総務課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 849,
-    "excerpt": "私から本町の運転免許証の返納状況についてご答弁いたしま す。 初めに、２０１７年３月から施行されました改正道路交通法、これにおきましては、７ ５歳以上の運転者に対する認知機能のチェック体制が強化された"
-  },
-  {
-    "id": "moseushi-20241002-1-030",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "河野和浩健康福祉課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1215,
-    "excerpt": "私のほうからは２点目の高齢者の生活の足の確保につい てご答弁申し上げます。 議員ご指摘のとおり、免許を保有された高齢者にとって車の使用は、買い物や通院等の 生活において大切な移動手段になっていると認識"
-  },
-  {
-    "id": "moseushi-20241002-1-031",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "浦本雅之教育課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1024,
-    "excerpt": "私から子供の貧困対策についてご答弁申し上げます。 子供の貧困対策につきましては、議員ご指摘のとおり、子どもの貧困対策に関する大綱、 これに基づきまして各所管課が連携して取り組むこととされておりますが、"
-  },
-  {
-    "id": "moseushi-20241002-1-032",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "廣瀬長留次副町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1162,
-    "excerpt": "それでは、私のほうから温泉ペペルについてご答弁申し上げ ます。 先月１５日に行財政等調査特別委員会を開会いただき、その中で人員不足による４月か らのレストラン定休日、水曜日でございました。これの解消並"
-  },
-  {
-    "id": "moseushi-20241002-1-033",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "佐田惠治君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1817,
-    "excerpt": "まず、高齢者の足の確保という点で、近隣でも、私もこの間一般 質問で何度かここで具体的な例を出して提案させていただきましたが、秩父別でのタクシ ー助成券６０枚、免許があろうとなかろうと６０歳以上に年間６"
-  },
-  {
-    "id": "moseushi-20241002-1-034",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "河野和浩健康福祉課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 631,
-    "excerpt": "私のほうから高齢者の足の確保の再質問に対してご答弁 申し上げます。 佐田議員からの各市町のいろんな助成策、私どもも充分認識しておりますし、全道各地 の自治体の要綱等も見ながら準備を進めているところでご"
-  },
-  {
-    "id": "moseushi-20241002-1-035",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "浦本雅之教育課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 669,
-    "excerpt": "子供の貧困対策２つ目の再質問に答弁いたします。 まず、本年度の就学援助の認定件数をお教えしたいと思いますけれども、要保護が３世 帯で４人、準要保護が１２世帯で１６人、受給率は１３．４％というふうになっ"
-  },
-  {
-    "id": "moseushi-20241002-1-036",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "廣瀬長留次副町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1052,
-    "excerpt": "それでは、私のほうから佐田議員の再質問についてご答弁申 し上げます。 先ほどの答弁の中で運営、経営状況は大変厳しいものとなっているというようなことを 答弁させていただきましたが、先ほどいろいろその要因"
-  },
-  {
-    "id": "moseushi-20241002-1-037",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "佐田惠治君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 573,
-    "excerpt": "１点だけ町長の見解をお伺いしたいと思います。 今日の資料の中に有限会社妹背牛振興公社第４８期定期株式総会議案書というのが入っ ています。平成４年１２月１日から妹背牛町より妹背牛温泉の管理運営を委託され"
-  },
-  {
-    "id": "moseushi-20241002-1-038",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 996,
-    "excerpt": "議員さんの再々質問、温泉ペペルについて答弁させていただきま す。 最後におっしゃられました有限会社は公社なのだから利益を上げなくてもいいのだと。 公社だから利益を上げなくてもいいのだということを言う向"
-  },
-  {
-    "id": "moseushi-20241002-1-039",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "石井喜久男君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 730,
-    "excerpt": "通告に従い、質問させていただきます。 １つ目は、町長の選挙公約、施策についてお伺いいたします。田中町長は、就任から約 １年半となりました。町長は３１年度町政執行方針で、３１年度は町政のかじ取りから船 "
-  },
-  {
-    "id": "moseushi-20241002-1-040",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 1539,
-    "excerpt": "議員ご指摘の第１番目の公約、施策について伺うということに対 - 42 - してご答弁をしたいと思います。 ご質問の件ですが、私が撤回をいたしました２件を除きますと、現在進行中の公約が幾 つかございます"
-  },
-  {
-    "id": "moseushi-20241002-1-041",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "廣澤勉企画振興課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 448,
-    "excerpt": "私のほうから議員ご質問の定住促進賃貸住宅建設事業に ついてご答弁申し上げます。 本事業は、妹背牛町への移住定住を促進するため、町内の個人もしくは法人に賃貸住宅 を建設していただき、その建設費用に対して"
-  },
-  {
-    "id": "moseushi-20241002-1-042",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "河野和浩健康福祉課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 733,
-    "excerpt": "私のほうから３つ目の本町におけるボランティア活動に ついてご答弁申し上げます。 本町におけるボランティア活動の推進は、充分とは言えませんが、社会福祉協議会のボ ランティアセンターにおいて相談調整機能を"
-  },
-  {
-    "id": "moseushi-20241002-1-043",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "石井喜久男君議員",
-    "speaker_role": "質問",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 855,
-    "excerpt": "町長は今、１番目の公約と施策についてはいろんなことをお考 えだということで、議員としてそういう声があったら説明するのも当然ではないですかと いうようなことですが、どこかの場で町長が議員に対して私はこう"
-  },
-  {
-    "id": "moseushi-20241002-1-044",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 563,
-    "excerpt": "私が今日議員さんに対して答弁をした中では、そば打ちを始める 話だけが新品の話でありまして、あとは町政懇談会の席上、それから町民のところを回っ て話したときにほとんど話しておりますし、実際議員さんのとこ"
-  },
-  {
-    "id": "moseushi-20241002-1-045",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "廣澤勉企画振興課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 836,
-    "excerpt": "再質問に対しましてご答弁申し上げます。 （何事か言う者あり） 前段でよろしいでしょうか。私のほうから説明して、そ の後町長のほうからという形でお願いしたいと思います。 担当の考えとしましては、再募集に"
-  },
-  {
-    "id": "moseushi-20241002-1-046",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 293,
-    "excerpt": "議員さんの再質問に対して２番目、定住促進賃貸住宅の建設事業 についてお答えをさせていただきます。 - 46 - ただいま担当からご説明申し上げましたように、今回問題となるのは、１つは建設の土 地を１カ"
-  },
-  {
-    "id": "moseushi-20241002-1-047",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "河野和浩健康福祉課長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 290,
-    "excerpt": "再質問に対してご答弁申し上げます。 ボランティア保険におきましては、議員ご質問のとおり、個人にせよ団体にせよ、社会 福祉協議会にボランティア登録をいただいた中で、社会福祉協議会のほうでボランティア 保"
-  },
-  {
-    "id": "moseushi-20241002-1-048",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "田中一典町長",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 183,
-    "excerpt": "本日は、議員の皆様に慎重審議をいただき、提出しました全議案 可決をいただきましたことに感謝を申し上げます。 さらに、一般質問でいただきました議員諸氏の貴重なご指摘を吟味させていただき、 各担当課を中心"
-  },
-  {
-    "id": "moseushi-20241002-2-049",
+    "id": "moseushi-20241002-2-001",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1001,7 +403,7 @@
     "excerpt": "議員の皆様、おはようございます。ただいま廣田議長のお許しが ありましたので、一言開会に当たりご挨拶いたします。 ６月１５日には春季例祭が行われ、また戦後７９年を迎える町主催の戦没者慰霊祭も妹 背牛神社"
   },
   {
-    "id": "moseushi-20241002-2-050",
+    "id": "moseushi-20241002-2-002",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1010,11 +412,11 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 1401,
+    "text_length": 284,
     "excerpt": "それでは、６月の第２回定例会以降の行政報告をさせ ていただきます。 まず、令和６年度の需給調整実施状況についてですが、本年産の米の生産目安は１，９ ４０．８ヘクタールになっておりますが、６月１日現在の"
   },
   {
-    "id": "moseushi-20241002-2-051",
+    "id": "moseushi-20241002-2-003",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1027,20 +429,20 @@
     "excerpt": "それでは、３月定例会以降の教育行政についてご報 - 5 - 告申し上げます。 まず、一般庶務関係ですが、３月２２日開催の第３回教育委員会では、規則の廃止、要 綱の制定、文化財保護委員の委嘱等について協"
   },
   {
-    "id": "moseushi-20241002-2-052",
+    "id": "moseushi-20241002-2-004",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
-    "speaker": "成瀬勝幸君議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 466,
-    "excerpt": "おはようございます。通告に従いまして一般質問をい たします。 本年７月２７日にリニューアルオープンされた妹背牛温泉ペペルの入館者は、駐車場の 車の台数から見てもおおむね好評を得ているように思います。そ"
+    "text_length": 479,
+    "excerpt": "（成瀬勝幸君） （登壇） おはようございます。通告に従いまして一般質問をい たします。 本年７月２７日にリニューアルオープンされた妹背牛温泉ペペルの入館者は、駐車場の 車の台数から見てもおおむね好評を"
   },
   {
-    "id": "moseushi-20241002-2-053",
+    "id": "moseushi-20241002-2-005",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1049,37 +451,37 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 2690,
+    "text_length": 643,
     "excerpt": "私からは、議員ご質問の妹背牛温泉ペペルについてご答 弁申し上げます。 まず、１点目の町内外別の入館者の人数と割合及び従来の同時期との比較についてでご ざいますが、まだ２か月弱の運営状況でございますが、"
   },
   {
-    "id": "moseushi-20241002-2-054",
+    "id": "moseushi-20241002-2-006",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
-    "speaker": "成瀬勝幸君議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 642,
-    "excerpt": "ただいま鎌田課長から丁寧な回答をいただき、誠にありがとうご ざいます。 ５月の入館者につきましては１万６，５００人で、コロナ前の令和５年５月と比較して 約２，５００人の増となっており、おおむね順調なス"
+    "text_length": 650,
+    "excerpt": "（成瀬勝幸君） ただいま鎌田課長から丁寧な回答をいただき、誠にありがとうご ざいます。 ５月の入館者につきましては１万６，５００人で、コロナ前の令和５年５月と比較して 約２，５００人の増となっており、"
   },
   {
-    "id": "moseushi-20241002-2-055",
+    "id": "moseushi-20241002-2-007",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
-    "speaker": "成瀬勝幸君議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 37,
-    "excerpt": "積極的なＰＲが必要だと考えますが、その考えについてお伺いを しております。"
+    "text_length": 45,
+    "excerpt": "（成瀬勝幸君） 積極的なＰＲが必要だと考えますが、その考えについてお伺いを しております。"
   },
   {
-    "id": "moseushi-20241002-2-056",
+    "id": "moseushi-20241002-2-008",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1092,20 +494,20 @@
     "excerpt": "それでは、成瀬議員ご指摘の再質問に対しましてご答弁 申し上げます。 成瀬議員ご指摘のとおり町内の入館者につきましては約１２％となっており、妹背牛町 民の方があまり入館されていないような印象でございます"
   },
   {
-    "id": "moseushi-20241002-2-057",
+    "id": "moseushi-20241002-2-009",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
-    "speaker": "成瀬勝幸君議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 91,
-    "excerpt": "ありがとうございました。 それでは、最後に、町長は町民の利用が少ないことや町民からの意見を受けていると思 いますので、それらを含めて町長の受け止め方をお伺いし、一般質問を終わります。"
+    "text_length": 99,
+    "excerpt": "（成瀬勝幸君） ありがとうございました。 それでは、最後に、町長は町民の利用が少ないことや町民からの意見を受けていると思 いますので、それらを含めて町長の受け止め方をお伺いし、一般質問を終わります。"
   },
   {
-    "id": "moseushi-20241002-2-058",
+    "id": "moseushi-20241002-2-010",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1118,20 +520,20 @@
     "excerpt": "ただいまの成瀬議員による再々質問にお答えをさせていただきま す。 リニューアルオープン後多くの町外からのお客様を受け入れまして、順調なスタートを 切らせていただいたところでございます。ただし、ご指摘の"
   },
   {
-    "id": "moseushi-20241002-2-059",
+    "id": "moseushi-20241002-2-011",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 519,
-    "excerpt": "田中春夫です。発言通告に従いまして、合葬墓につい てお伺いいたします。 ＮＨＫが２０２４年１月から７月にかけて首都圏の１都３県と人口１０万人以上の市と 合わせて９７自治体に公益墓地についてのアンケート"
+    "text_length": 532,
+    "excerpt": "（田中春夫君） （登壇） 田中春夫です。発言通告に従いまして、合葬墓につい てお伺いいたします。 ＮＨＫが２０２４年１月から７月にかけて首都圏の１都３県と人口１０万人以上の市と 合わせて９７自治体に公"
   },
   {
-    "id": "moseushi-20241002-2-060",
+    "id": "moseushi-20241002-2-012",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1144,20 +546,20 @@
     "excerpt": "田中議員の合葬墓についてのご質問にご答弁申し上げます。 まず、合葬墓の設置につきましては、これまでに田中議員から２回、ほかの議員の方か - 12 - らも１回の計３回同様のご質問がございましたので、今"
   },
   {
-    "id": "moseushi-20241002-2-061",
+    "id": "moseushi-20241002-2-013",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 380,
-    "excerpt": "合葬墓について墓地情勢についても福祉や公共政策の観点で必要 があると。家族がいてもいなくても、お金はあってもなくても誰もが安心して最低ひとし く葬られる場所が用意されているということが必要ではないかと"
+    "text_length": 388,
+    "excerpt": "（田中春夫君） 合葬墓について墓地情勢についても福祉や公共政策の観点で必要 があると。家族がいてもいなくても、お金はあってもなくても誰もが安心して最低ひとし く葬られる場所が用意されているということが"
   },
   {
-    "id": "moseushi-20241002-2-062",
+    "id": "moseushi-20241002-2-014",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1170,20 +572,20 @@
     "excerpt": "田中議員の再質問についてご答弁申し上げます。 まず、合葬墓の整備費につきましてですが、収容数、またはその形によって様々な経費 が想定されてございまして、他町などの例からいいますと１，０００体から３，０"
   },
   {
-    "id": "moseushi-20241002-2-063",
+    "id": "moseushi-20241002-2-015",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 131,
-    "excerpt": "墓は単に遺骨の保管場所というだけではなくて、亡くなられた人 と向き合う場としての意味があります。ライフスタイルも変わり、家族 人も大勢いる中、 墓の在り方についても社会全体で考える時期に来ていると思わ"
+    "text_length": 139,
+    "excerpt": "（田中春夫君） 墓は単に遺骨の保管場所というだけではなくて、亡くなられた人 と向き合う場としての意味があります。ライフスタイルも変わり、家族 人も大勢いる中、 墓の在り方についても社会全体で考える時期"
   },
   {
-    "id": "moseushi-20241002-2-064",
+    "id": "moseushi-20241002-2-016",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1196,20 +598,7 @@
     "excerpt": "ただいまの田中議員の再々質問についてお答えを申し上げます。 現状は、第９次妹背牛町総合振興計画が令和２年から令和１１年度まで続いております。 その中での計画期間中には合葬墓の整備予定はございませんでし"
   },
   {
-    "id": "moseushi-20241002-2-065",
-    "council_id": 20241002,
-    "council_name": "令和6年第2回定例会",
-    "date": null,
-    "speaker": "事務局長（菅一光君）（朗読、記載省略）",
-    "speaker_role": "答弁",
-    "is_procedural": false,
-    "member_name": null,
-    "member_faction": null,
-    "text_length": 29,
-    "excerpt": "議長（廣田 毅君） 提案理由の説明を求めます。 建設課長。"
-  },
-  {
-    "id": "moseushi-20241002-2-066",
+    "id": "moseushi-20241002-2-017",
     "council_id": 20241002,
     "council_name": "令和6年第2回定例会",
     "date": null,
@@ -1244,8 +633,8 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 976,
-    "excerpt": "それでは、６月の第２回定例会以降の行政報告をさせ ていただきます。 最初に、建設工事等の発注状況についてでございますが、お手元にお配りしてございま すので、後ほどお目通しをいただきたいと思います。 ２"
+    "text_length": 98,
+    "excerpt": "それでは、６月の第２回定例会以降の行政報告をさせ ていただきます。 最初に、建設工事等の発注状況についてでございますが、お手元にお配りしてございま すので、後ほどお目通しをいただきたいと思います。"
   },
   {
     "id": "moseushi-20241003-1-003",
@@ -1265,13 +654,13 @@
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 694,
-    "excerpt": "通告に従い、今回は脱炭素実現に向けた取組と地域福 祉政策のこの２件について質問いたします。 まず、１件目として妹背牛町の地域脱炭素実現に向けた取組について進捗状況等をお伺 いいたします。令和３年１２月"
+    "text_length": 258,
+    "excerpt": "（渡辺倫代君） （登壇） 通告に従い、今回は脱炭素実現に向けた取組と地域福 祉政策のこの２件について質問いたします。 まず、１件目として妹背牛町の地域脱炭素実現に向けた取組について進捗状況等をお伺 い"
   },
   {
     "id": "moseushi-20241003-1-005",
@@ -1330,13 +719,13 @@
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 3438,
-    "excerpt": "まず、脱炭素の件について再質問いたします。 先ほど課長のほうから区域施策編も考えて進めていくというお話をいただきました。こ れは地方公共団体実行計画でございますので、これを計画なさるということは実際的"
+    "text_length": 3446,
+    "excerpt": "（渡辺倫代君） まず、脱炭素の件について再質問いたします。 先ほど課長のほうから区域施策編も考えて進めていくというお話をいただきました。こ れは地方公共団体実行計画でございますので、これを計画なさると"
   },
   {
     "id": "moseushi-20241003-1-010",
@@ -1382,13 +771,13 @@
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 1200,
-    "excerpt": "ありがとうございます。脱炭素に向けて着々と進んでおられると いう答弁をいただきました。今後地域福祉課が中心になり事業のほうはお進めになるのだ ろうと思います。今マイクログリッドの説明とか、今後の取組と"
+    "text_length": 1208,
+    "excerpt": "（渡辺倫代君） ありがとうございます。脱炭素に向けて着々と進んでおられると いう答弁をいただきました。今後地域福祉課が中心になり事業のほうはお進めになるのだ ろうと思います。今マイクログリッドの説明と"
   },
   {
     "id": "moseushi-20241003-1-014",
@@ -1426,7 +815,7 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 919,
+    "text_length": 324,
     "excerpt": "私福祉の町という、どんな考えでビジョンをお持ちなのかという ことで答弁させていただく前に、地域脱炭素実現に向けた答弁がそれぞれの担当からござ いましたけれども、１つだけ勘違いしていただきたくないという"
   },
   {
@@ -1434,16 +823,29 @@
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 592,
+    "excerpt": "は先ほどそれとは関係なく、太陽光発電とは関係なく役場庁舎の整備を進めるべきだ ということもございましたけれども、現実に土地を取得する流れとかということというの は流動的でございまして、３年前、４年前の"
+  },
+  {
+    "id": "moseushi-20241003-1-018",
+    "council_id": 20241003,
+    "council_name": "令和6年第3回定例会",
+    "date": null,
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 576,
-    "excerpt": "通告に従いまして、一般質問いたします。 防災行政についてということで、本町における防災及び減災対策については、災害備蓄 をはじめ災害協定によって準備は進められております。また、防災無線も着々と進んでい"
+    "text_length": 589,
+    "excerpt": "（鈴木正彦君） （登壇） 通告に従いまして、一般質問いたします。 防災行政についてということで、本町における防災及び減災対策については、災害備蓄 をはじめ災害協定によって準備は進められております。また"
   },
   {
-    "id": "moseushi-20241003-1-018",
+    "id": "moseushi-20241003-1-019",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1456,20 +858,20 @@
     "excerpt": "鈴木議員ご質問の防災行政についてご答弁申し上げます。 まずは、議員ご指摘のとおり災害時における町職員の職務につきましては多岐にわたる ため、特に避難所を開設した際の運営につきましては、地域住民の皆様方"
   },
   {
-    "id": "moseushi-20241003-1-019",
+    "id": "moseushi-20241003-1-020",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 1043,
-    "excerpt": "まず、答弁の中で人材育成、防災士等々必要性を理解していると いうことでしたので、改めてその点について質問いたします。 まず、避難所において、先ほど課長からもありましたように避難所開設は公助である と。"
+    "text_length": 1051,
+    "excerpt": "（鈴木正彦君） まず、答弁の中で人材育成、防災士等々必要性を理解していると いうことでしたので、改めてその点について質問いたします。 まず、避難所において、先ほど課長からもありましたように避難所開設は"
   },
   {
-    "id": "moseushi-20241003-1-020",
+    "id": "moseushi-20241003-1-021",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1482,20 +884,20 @@
     "excerpt": "鈴木議員の再質問に対しましてご答弁申し上げます。 まず、１つ目でしょうか、幾連合会という部分においての防災士と自主防災組織、そし てそれにつなげる集落支援員ということかというふうに思いますが、幾連合会"
   },
   {
-    "id": "moseushi-20241003-1-021",
+    "id": "moseushi-20241003-1-022",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 109,
-    "excerpt": "最後に、町長にお伺いいたします。今ほどまで課長が答弁してい ただいておりましたが、避難所開設後の運営に当たって民間の協力が必要であるというこ とについて町長はどう理解なさっているのかお伺いいたしまして"
+    "text_length": 117,
+    "excerpt": "（鈴木正彦君） 最後に、町長にお伺いいたします。今ほどまで課長が答弁してい ただいておりましたが、避難所開設後の運営に当たって民間の協力が必要であるというこ とについて町長はどう理解なさっているのかお"
   },
   {
-    "id": "moseushi-20241003-1-022",
+    "id": "moseushi-20241003-1-023",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1508,20 +910,20 @@
     "excerpt": "鈴木議員の再々質問にご答弁をさしあげます。 行政としましても防災訓練の必要性を感じまして行ってまいりましたが、現実にはいろ んな作業の中で役場職員は現場に張りついたりということとかで特化した形で避難所"
   },
   {
-    "id": "moseushi-20241003-1-023",
+    "id": "moseushi-20241003-1-024",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "成瀬勝幸君議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 327,
-    "excerpt": "通告に従いまして、一般質問いたします。 令和５年度の決算が確定し、その中で決算統計における一般会計の数値では歳入歳出差 引き７，３９４万６，０００円、前年度の５，８６２万４，０００円と比較すると１，５"
+    "text_length": 340,
+    "excerpt": "（成瀬勝幸君） （登壇） 通告に従いまして、一般質問いたします。 令和５年度の決算が確定し、その中で決算統計における一般会計の数値では歳入歳出差 引き７，３９４万６，０００円、前年度の５，８６２万４，"
   },
   {
-    "id": "moseushi-20241003-1-024",
+    "id": "moseushi-20241003-1-025",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1534,20 +936,20 @@
     "excerpt": "それでは、私から成瀬議員ご質問の財政運営についてご答弁 申し上げます。 まず、１つ目の令和５年度決算における基金の積立てになりますが、農業振興基金、国 営土地改良事業費償還基金など６基金につきましては"
   },
   {
-    "id": "moseushi-20241003-1-025",
+    "id": "moseushi-20241003-1-026",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "成瀬勝幸君議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 408,
-    "excerpt": "ただいま北口課長さんから丁寧な回答をいただき、誠にありがと うございます。 次に、気になった２点について再質問をさせていただきます。１点目の実質収支額につ いて、過去には５，０００万円程度が適当である"
+    "text_length": 416,
+    "excerpt": "（成瀬勝幸君） ただいま北口課長さんから丁寧な回答をいただき、誠にありがと うございます。 次に、気になった２点について再質問をさせていただきます。１点目の実質収支額につ いて、過去には５，０００万円"
   },
   {
-    "id": "moseushi-20241003-1-026",
+    "id": "moseushi-20241003-1-027",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1560,20 +962,20 @@
     "excerpt": "それでは、再質問の１つ目、実質収支となる次年度繰越金に ついてご答弁申し上げます。 議員ご指摘のとおり実質収支額となる次年度繰越額、繰越金につきましては、これまで おおむね５，０００万円をベースにして"
   },
   {
-    "id": "moseushi-20241003-1-027",
+    "id": "moseushi-20241003-1-028",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "小林一晃君議員",
+    "speaker": "６番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "小林　一晃",
     "member_faction": "",
-    "text_length": 497,
-    "excerpt": "通告に従いまして、一般質問を行います。 結婚相談員制度の復活に向けた対応の考え方についてお伺いをいたします。結婚適齢期 を迎えた男女が近年結婚をする確率が非常に低いことが今日的な日本の人口減少の問題の"
+    "text_length": 510,
+    "excerpt": "（小林一晃君） （登壇） 通告に従いまして、一般質問を行います。 結婚相談員制度の復活に向けた対応の考え方についてお伺いをいたします。結婚適齢期 を迎えた男女が近年結婚をする確率が非常に低いことが今日"
   },
   {
-    "id": "moseushi-20241003-1-028",
+    "id": "moseushi-20241003-1-029",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1586,20 +988,20 @@
     "excerpt": "結婚相談員制度に関する考え方についてご答弁させていただき ます。 ご質問の結婚相談員制度でありますが、記録の残る中では本町においては昭和４９年４ 月からスタートしたようで、当初は結婚対策協議会の事業と"
   },
   {
-    "id": "moseushi-20241003-1-029",
+    "id": "moseushi-20241003-1-030",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "小林一晃君議員",
+    "speaker": "６番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "小林　一晃",
     "member_faction": "",
-    "text_length": 387,
-    "excerpt": "ただいま答弁として過去には結婚相談員制度があっていろいろ試 行錯誤して進めてきたけれども、なかなかその成果が得られなくて、やむなくやまったと、 こういうことでございますが、最近本町の人口もこれから２５"
+    "text_length": 395,
+    "excerpt": "（小林一晃君） ただいま答弁として過去には結婚相談員制度があっていろいろ試 行錯誤して進めてきたけれども、なかなかその成果が得られなくて、やむなくやまったと、 こういうことでございますが、最近本町の人"
   },
   {
-    "id": "moseushi-20241003-1-030",
+    "id": "moseushi-20241003-1-031",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1612,20 +1014,20 @@
     "excerpt": "再質問についてご答弁申し上げます。 結婚相談員の実績についてでございますが、平成以前の状況につきましては資料もなく、 実績などは不明となっております。少なくとも、平成以降は結婚相談員によって結婚に至 "
   },
   {
-    "id": "moseushi-20241003-1-031",
+    "id": "moseushi-20241003-1-032",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "小林一晃君議員",
+    "speaker": "６番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "小林　一晃",
     "member_faction": "",
-    "text_length": 261,
-    "excerpt": "この問題については、妹背牛の将来がかかる非常に大きな問題に も多少つながってくるのではないか、そんなふうな考え方を持つわけですが、この妹背牛 を今後やはり妹背牛の名を地域に残していくという意味合いから"
+    "text_length": 269,
+    "excerpt": "（小林一晃君） この問題については、妹背牛の将来がかかる非常に大きな問題に も多少つながってくるのではないか、そんなふうな考え方を持つわけですが、この妹背牛 を今後やはり妹背牛の名を地域に残していくと"
   },
   {
-    "id": "moseushi-20241003-1-032",
+    "id": "moseushi-20241003-1-033",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1638,20 +1040,20 @@
     "excerpt": "小林議員さんの結婚相談員制度の復活についての再々質問にご答 弁をさせていただきます。 この制度がなくなって以降、５年前、農家の若い方が結婚の届出に参りました。どうや って出会ったのって聞いたら、近所の"
   },
   {
-    "id": "moseushi-20241003-1-033",
+    "id": "moseushi-20241003-1-034",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 380,
-    "excerpt": "田中春夫です。通告に従いまして発言いたします。 第９次妹背牛町総合振興計画、道路環境、交通環境の整備の現状と問題で現在管理され ている町道は１０５路線、延長は１３９．９キロ、改良率は８０．２％、歩道延"
+    "text_length": 393,
+    "excerpt": "（田中春夫君） （登壇） 田中春夫です。通告に従いまして発言いたします。 第９次妹背牛町総合振興計画、道路環境、交通環境の整備の現状と問題で現在管理され ている町道は１０５路線、延長は１３９．９キロ、"
   },
   {
-    "id": "moseushi-20241003-1-034",
+    "id": "moseushi-20241003-1-035",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1664,20 +1066,20 @@
     "excerpt": "私のほうから舗装整備についてご答弁申し上げます。 最初に、道路整備状況の推移についてですが、令和５年４月１日現在の町道路線数は１ ０５路線、延長は１４０．９キロメートルで改良率８１％、舗装率は８０．９"
   },
   {
-    "id": "moseushi-20241003-1-035",
+    "id": "moseushi-20241003-1-036",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 230,
-    "excerpt": "再質問ですけれども、歩道の舗装について交通安全上必要がある と考えています。町民によって町民マップを作成して道路状況を共通認識しているところ もあります。歩道が砂利、草が茂っているなどしているため、足"
+    "text_length": 238,
+    "excerpt": "（田中春夫君） 再質問ですけれども、歩道の舗装について交通安全上必要がある と考えています。町民によって町民マップを作成して道路状況を共通認識しているところ もあります。歩道が砂利、草が茂っているなど"
   },
   {
-    "id": "moseushi-20241003-1-036",
+    "id": "moseushi-20241003-1-037",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1690,20 +1092,20 @@
     "excerpt": "私のほうから再質問であります未舗装の歩道の交通安全とい - 28 - うことでご答弁させていただきます。 先ほども答弁で申し上げましたが、歩道が設置されていて未舗装の歩道の延長は約５． ５キロでありま"
   },
   {
-    "id": "moseushi-20241003-1-037",
+    "id": "moseushi-20241003-1-038",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 355,
-    "excerpt": "それでは、通告に従いまして一般質問のほう進めて まいりたいと思います。 全国的にも人口減少、また少子高齢化、このようなことが大きな社会問題となってござ います。いまだに本町においてでも人口流出を抑止す"
+    "text_length": 369,
+    "excerpt": "（佐々木和夫君） （登壇） それでは、通告に従いまして一般質問のほう進めて まいりたいと思います。 全国的にも人口減少、また少子高齢化、このようなことが大きな社会問題となってござ います。いまだに本町"
   },
   {
-    "id": "moseushi-20241003-1-038",
+    "id": "moseushi-20241003-1-039",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1716,20 +1118,20 @@
     "excerpt": "私からは、議員ご質問の移住定住対策の現況と今後の考 え方についてご答弁申し上げます。 まず、１点目の妹背牛町定住促進賃貸住宅建設事業の町外からの転入者の世帯数と人数 でございますが、定住促進賃貸住宅建"
   },
   {
-    "id": "moseushi-20241003-1-039",
+    "id": "moseushi-20241003-1-040",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 2527,
-    "excerpt": "課長におかれましては細部にわたっての細かい回答をいただき、 ありがとうございます。 １つお聞きいたしますが、移住定住促進に対する対策に関することで、先ほど課長のほ うから数々お聞きしたのですが、本町独"
+    "text_length": 2536,
+    "excerpt": "（佐々木和夫君） 課長におかれましては細部にわたっての細かい回答をいただき、 ありがとうございます。 １つお聞きいたしますが、移住定住促進に対する対策に関することで、先ほど課長のほ うから数々お聞きし"
   },
   {
-    "id": "moseushi-20241003-1-040",
+    "id": "moseushi-20241003-1-041",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1742,20 +1144,33 @@
     "excerpt": "再質問に対しましてご答弁申し上げます。 町独自での助成事業とございましたが、町独自での助成事業でございますが、全国を見 渡しますと妹背牛町独自の助成事業というものが目新しいものにつきましてはございませ"
   },
   {
-    "id": "moseushi-20241003-1-041",
+    "id": "moseushi-20241003-1-042",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 399,
-    "excerpt": "それでは、再々質問ということで最後に町長に今ほど来の質問 と答弁においてのご回答っていいますか、町長のお気持ちを聞かせていただきたいなと思 ってございます。 町長は本年３月の第１回の定例会において町政"
+    "text_length": 87,
+    "excerpt": "（佐々木和夫君） それでは、再々質問ということで最後に町長に今ほど来の質問 と答弁においてのご回答っていいますか、町長のお気持ちを聞かせていただきたいなと思 ってございます。"
   },
   {
-    "id": "moseushi-20241003-1-042",
+    "id": "moseushi-20241003-1-043",
+    "council_id": 20241003,
+    "council_name": "令和6年第3回定例会",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 318,
+    "excerpt": "は本年３月の第１回の定例会において町政執行方針の中で、遊水公園うらら、カー リングホール、ペペルを観光資源の核とした中で本町の魅力を発信し、観光客や交流人口 の増加につなげていきたいと申されておりまし"
+  },
+  {
+    "id": "moseushi-20241003-1-044",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1768,20 +1183,20 @@
     "excerpt": "佐々木議員さんからありました再々質問にご答弁をさせていただ きたいと思います。 町政執行方針で申し上げましたように、妹背牛の観光大使として山下彩耶さん、それか らフォルティウスさんを私たちは使わせてい"
   },
   {
-    "id": "moseushi-20241003-1-043",
+    "id": "moseushi-20241003-1-045",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "中山義博君議員",
+    "speaker": "７番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "中山　義博",
     "member_faction": "",
-    "text_length": 541,
-    "excerpt": "通告に従いまして、一般質問をさせていただきます。 私、歴代の妹背牛の発展に努力していただいた方々に敬意をするとともに、今日まで７ ５年お世話になった一人として妹背牛を誇りに思い愛する一人です。 それで"
+    "text_length": 554,
+    "excerpt": "（中山義博君） （登壇） 通告に従いまして、一般質問をさせていただきます。 私、歴代の妹背牛の発展に努力していただいた方々に敬意をするとともに、今日まで７ ５年お世話になった一人として妹背牛を誇りに思"
   },
   {
-    "id": "moseushi-20241003-1-044",
+    "id": "moseushi-20241003-1-046",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1794,20 +1209,20 @@
     "excerpt": "中山議員の妹背牛町で合同墓を開設できないか等のご質問に ついてご答弁申し上げます。 合同墓につきましては、これまでに中山議員から１回、ほかの議員の方からも３回の計 ４回同様の趣旨のご質問がございますの"
   },
   {
-    "id": "moseushi-20241003-1-045",
+    "id": "moseushi-20241003-1-047",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "中山義博君議員",
+    "speaker": "７番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "中山　義博",
     "member_faction": "",
-    "text_length": 1779,
-    "excerpt": "今まで同様ご答弁ありがとうございます。前回町のほうから案内 がありましたアンケートとか、町民の署名とか、そういったことをして、そして初めて次 - 35 - の令和１２年度から始まる第１０次に加えていた"
+    "text_length": 1787,
+    "excerpt": "（中山義博君） 今まで同様ご答弁ありがとうございます。前回町のほうから案内 がありましたアンケートとか、町民の署名とか、そういったことをして、そして初めて次 - 35 - の令和１２年度から始まる第１"
   },
   {
-    "id": "moseushi-20241003-1-046",
+    "id": "moseushi-20241003-1-048",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1820,33 +1235,46 @@
     "excerpt": "中山議員からの一般質問に対しまして、再質問としてご答弁を申 し上げます。 まず、議員がおっしゃった言葉の中に町民の皆様という言葉がございました。具体的に は６０代、７０代、８０代、９０代、この年代の人"
   },
   {
-    "id": "moseushi-20241003-1-047",
+    "id": "moseushi-20241003-1-049",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "中山義博君議員",
+    "speaker": "７番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "中山　義博",
     "member_faction": "",
-    "text_length": 106,
-    "excerpt": "前回と同様の回答ですが、細かく説明してかみ砕いていただきま して、ありがとうございます。要望している町民の方々の話準備をしまして、署名等を進 めることができれば進めてまいりたいと思います。ありがとうご"
+    "text_length": 114,
+    "excerpt": "（中山義博君） 前回と同様の回答ですが、細かく説明してかみ砕いていただきま して、ありがとうございます。要望している町民の方々の話準備をしまして、署名等を進 めることができれば進めてまいりたいと思いま"
   },
   {
-    "id": "moseushi-20241003-1-048",
+    "id": "moseushi-20241003-1-050",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
-    "speaker": "赤藤敏仁君議員",
+    "speaker": "７番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "中山　義博",
+    "member_faction": "",
+    "text_length": 51,
+    "excerpt": "（中山義博君） すみません、質問させていただきます。 （中山義博君） いや、これで終わります。どうも。"
+  },
+  {
+    "id": "moseushi-20241003-1-051",
+    "council_id": 20241003,
+    "council_name": "令和6年第3回定例会",
+    "date": null,
+    "speaker": "５番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "赤藤　敏仁",
     "member_faction": "",
-    "text_length": 226,
-    "excerpt": "発議第６号 妹背牛町議会の個人情報の保護に関する 条例の一部を改正する条例について提案理由の説明を申し上げます。 令和４年６月の刑法等の一部改正により懲役及び禁固が廃止され、これに代えて拘禁刑 が創設"
+    "text_length": 239,
+    "excerpt": "（赤藤敏仁君） （登壇） 発議第６号 妹背牛町議会の個人情報の保護に関する 条例の一部を改正する条例について提案理由の説明を申し上げます。 令和４年６月の刑法等の一部改正により懲役及び禁固が廃止され、"
   },
   {
-    "id": "moseushi-20241003-1-049",
+    "id": "moseushi-20241003-1-052",
     "council_id": 20241003,
     "council_name": "令和6年第3回定例会",
     "date": null,
@@ -1881,7 +1309,7 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 1863,
+    "text_length": 926,
     "excerpt": "失礼ですけれども、ここでやらせていただきます。 それでは、第３回定例会以降の行政報告をさせていただきたいと思います。 まず１番目、令和６年度妹背牛町功労者表彰でございますが、昨年より総合文化祭の席 上"
   },
   {
@@ -1915,39 +1343,39 @@
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 1268,
-    "excerpt": "認定１号、令和５年度妹背牛町一般会計歳入歳出決算 認定について、認定２号、令和５年度妹背牛町国民健康保険特別会計歳入歳出決算認定に ついて、認定３号、令和５年度妹背牛町後期高齢者医療特別会計歳入歳出決"
+    "text_length": 1281,
+    "excerpt": "（田中春夫君） （登壇） 認定１号、令和５年度妹背牛町一般会計歳入歳出決算 認定について、認定２号、令和５年度妹背牛町国民健康保険特別会計歳入歳出決算認定に ついて、認定３号、令和５年度妹背牛町後期高"
   },
   {
     "id": "moseushi-20241004-1-006",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 681,
-    "excerpt": "それでは、私は認定第１号から認定第７号までの令 和５年度一般会計以下７会計の決算について、認定すべきとの立場から賛成討論を行いま す。 去る１０月１６日から１８日までの３日間、決算審査特別委員会を開催"
+    "text_length": 695,
+    "excerpt": "（佐々木和夫君） （登壇） それでは、私は認定第１号から認定第７号までの令 和５年度一般会計以下７会計の決算について、認定すべきとの立場から賛成討論を行いま す。 去る１０月１６日から１８日までの３日"
   },
   {
     "id": "moseushi-20241004-1-007",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 680,
-    "excerpt": "通告に従い、質問いたします。 まず、高齢者自主返納時の支援サービスについてお伺いいたします。近年高齢運転者が 加害者となる交通事故が全国的に相次ぎ、こうした中、安全対策の一つであり、高齢運転 者の免許"
+    "text_length": 693,
+    "excerpt": "（渡辺倫代君） （登壇） 通告に従い、質問いたします。 まず、高齢者自主返納時の支援サービスについてお伺いいたします。近年高齢運転者が 加害者となる交通事故が全国的に相次ぎ、こうした中、安全対策の一つ"
   },
   {
     "id": "moseushi-20241004-1-008",
@@ -1980,13 +1408,13 @@
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 3583,
-    "excerpt": "先ほど、まず免許証返納時の特化した支援はしていない、今後も する予定はないという答弁いただきました。今まで北空知におきましては、ほかの町村が なかなか手厚い支援をされておりますので、それを受けて前回も"
+    "text_length": 3591,
+    "excerpt": "（渡辺倫代君） 先ほど、まず免許証返納時の特化した支援はしていない、今後も する予定はないという答弁いただきました。今まで北空知におきましては、ほかの町村が なかなか手厚い支援をされておりますので、そ"
   },
   {
     "id": "moseushi-20241004-1-011",
@@ -2019,16 +1447,29 @@
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 2300,
-    "excerpt": "免許証返納時の特化したのがないのですが、先ほど答弁いただき ましたようにこれから検討していただく課題が１つ、２つございますので、その辺はまた いろいろほかの課と一緒に必要性があるのであれば検討したいと"
+    "text_length": 679,
+    "excerpt": "（渡辺倫代君） 免許証返納時の特化したのがないのですが、先ほど答弁いただき ましたようにこれから検討していただく課題が１つ、２つございますので、その辺はまた いろいろほかの課と一緒に必要性があるのであ"
   },
   {
     "id": "moseushi-20241004-1-014",
+    "council_id": 20241004,
+    "council_name": "令和6年第4回定例会",
+    "date": null,
+    "speaker": "教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 1625,
+    "excerpt": "となられ、そして任命権は自治体市長が持っていられますから、そういう教育委員 - 19 - 会の制度の改正案が出て、もう制度まで変わってしまいました。ですから、縦行政系列に 組み込まれた教育委員会になっ"
+  },
+  {
+    "id": "moseushi-20241004-1-015",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2041,20 +1482,20 @@
     "excerpt": "渡辺議員の再々質問に対し、ご答弁申し上げます。 今ほど課長答弁がありましたが、その繰り返しになる部分もあるかと思いますが、まず 公設の民営塾の構想としましては、先ほども述べたとおりアンケートで小学校の"
   },
   {
-    "id": "moseushi-20241004-1-015",
+    "id": "moseushi-20241004-1-016",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 1913,
-    "excerpt": "通告に従いまして、一般質問いたします。 今後のまちづくりについてということで、高校跡地の利用の仕方について質問させてい ただきます。現在の高校の跡地は工事事務所として一部使われているような状態でありま"
+    "text_length": 991,
+    "excerpt": "（鈴木正彦君） （登壇） 通告に従いまして、一般質問いたします。 今後のまちづくりについてということで、高校跡地の利用の仕方について質問させてい ただきます。現在の高校の跡地は工事事務所として一部使わ"
   },
   {
-    "id": "moseushi-20241004-1-016",
+    "id": "moseushi-20241004-1-017",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2067,7 +1508,7 @@
     "excerpt": "私のほうから質問１点目の道道から西４町内、町道南２条線 だと思われますが、その間の道路整備についてご答弁申し上げます。 初めに、現地の状況について説明いたします。高校用地西側、道道深川雨竜線から南側 "
   },
   {
-    "id": "moseushi-20241004-1-017",
+    "id": "moseushi-20241004-1-018",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2080,20 +1521,20 @@
     "excerpt": "私からは、議員ご質問のＲＶパークを中心とした観光資 源としての利用についてご答弁申し上げます。 - 23 - ２点目の高校跡地をＲＶパークを中心とした観光資源としての利用についてでございま すが、高校"
   },
   {
-    "id": "moseushi-20241004-1-018",
+    "id": "moseushi-20241004-1-019",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 1425,
-    "excerpt": "道路につきましては、高校跡地の使用計画が全体像見えないと前 に進めないという答弁でしたが、跡地利用決まりましたら前に積極的に進んでいただきた いと考えております。 観光資源としての活用ということで提案"
+    "text_length": 1433,
+    "excerpt": "（鈴木正彦君） 道路につきましては、高校跡地の使用計画が全体像見えないと前 に進めないという答弁でしたが、跡地利用決まりましたら前に積極的に進んでいただきた いと考えております。 観光資源としての活用"
   },
   {
-    "id": "moseushi-20241004-1-019",
+    "id": "moseushi-20241004-1-020",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2106,20 +1547,20 @@
     "excerpt": "再質問に対しまして、ご答弁申し上げます。 議員ご提案のＲＶパークにドッグランの併設などにより家族連れの利用者が増え、交流 人口の増加になるとは思いますが、ＲＶパークの整備を検討する場合につきましては、"
   },
   {
-    "id": "moseushi-20241004-1-020",
+    "id": "moseushi-20241004-1-021",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 480,
-    "excerpt": "積極的な言葉は得られなかったのですけれども、先ほどから言い ます今説明の中にもありましたように交流人口の増加、費用対効果でどうなのだという話 ですが、先ほどの資料の中でも説明いたしましたように広告効果"
+    "text_length": 488,
+    "excerpt": "（鈴木正彦君） 積極的な言葉は得られなかったのですけれども、先ほどから言い ます今説明の中にもありましたように交流人口の増加、費用対効果でどうなのだという話 ですが、先ほどの資料の中でも説明いたしまし"
   },
   {
-    "id": "moseushi-20241004-1-021",
+    "id": "moseushi-20241004-1-022",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2132,20 +1573,33 @@
     "excerpt": "鈴木議員のご質問にご答弁させていただきたいと思います。 硬い話を言いますと、一つは今後公共施設の修繕、それから後年次なのですけれども、 学校建設の予定もしており、今財政を積み立てていく状況の中にあるの"
   },
   {
-    "id": "moseushi-20241004-1-022",
+    "id": "moseushi-20241004-1-023",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "廣田毅君議員",
+    "speaker": "９番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "廣田　　毅",
     "member_faction": "",
-    "text_length": 502,
-    "excerpt": "通告に従いまして、質問をいたします。 国では２０２０年に２０５０年までに国内の二酸化炭素など温室効果ガスの排出量を実 質ゼロにすることが宣言され、本町におきましても令和３年１２月でしたか、妹背牛町ゼ "
+    "text_length": 419,
+    "excerpt": "（廣田 毅君） （登壇） 通告に従いまして、質問をいたします。 国では２０２０年に２０５０年までに国内の二酸化炭素など温室効果ガスの排出量を実 質ゼロにすることが宣言され、本町におきましても令和３年１"
   },
   {
-    "id": "moseushi-20241004-1-023",
+    "id": "moseushi-20241004-1-024",
+    "council_id": 20241004,
+    "council_name": "令和6年第4回定例会",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 93,
+    "excerpt": "の所見を伺いたいと思います。 ２点目、温室効果ガス削減のための取組実施に対して、農業に与える影響をどのように 考えておられるのか、町長にお伺いをいたします。 再質問を留保して終わります。"
+  },
+  {
+    "id": "moseushi-20241004-1-025",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2158,20 +1612,20 @@
     "excerpt": "廣田議員の一般質問に失礼ですけれども、座って答弁をさせてい ただきます。 議員からご質問のありました第１次妹背牛町地球温暖化対策実行計画（区域施策編）に ついてご答弁をさせていただきます。まず、１番目"
   },
   {
-    "id": "moseushi-20241004-1-024",
+    "id": "moseushi-20241004-1-026",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "廣田毅君議員",
+    "speaker": "９番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "廣田　　毅",
     "member_faction": "",
-    "text_length": 3877,
-    "excerpt": "今、町長に体調が大変悪い中お答えいただきました。ありがとう ございます。 １点目のことなのですけれども、今うちではこの目標としてスマート農業の推進をうた っているのですけれども、町長、今年の令和６年度"
+    "text_length": 3885,
+    "excerpt": "（廣田 毅君） 今、町長に体調が大変悪い中お答えいただきました。ありがとう ございます。 １点目のことなのですけれども、今うちではこの目標としてスマート農業の推進をうた っているのですけれども、町長、"
   },
   {
-    "id": "moseushi-20241004-1-025",
+    "id": "moseushi-20241004-1-027",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2184,7 +1638,7 @@
     "excerpt": "廣田議員の再質問に対してご答弁を申し上げたいと思います。 スマート農業の推進をリモートセンシングという言葉も含めて執行方針の中で書かせて いただいています。以前確かに新十津川町の国とセットでの試みを伺"
   },
   {
-    "id": "moseushi-20241004-1-026",
+    "id": "moseushi-20241004-1-028",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2197,20 +1651,20 @@
     "excerpt": "未着工地区に関しては、これ国有地ではございませんので、ここ を着工するとかという権限を私たちが言う前に、問題はそこの地区を持っていらっしゃる 農家の方たちと話をして、ここを大規模区画として将来のスマー"
   },
   {
-    "id": "moseushi-20241004-1-027",
+    "id": "moseushi-20241004-1-029",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "廣田毅君議員",
+    "speaker": "９番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "廣田　　毅",
     "member_faction": "",
-    "text_length": 2109,
-    "excerpt": "時間も大分押し迫ってまいりましたので、肝腎なところ、要点だ けちょっと申し上げますけれども、私の要点といっても普通の人よりは長くなろうかと思 います。 うちでＣＯ の削減に使えそうな例示を３点ほど申し"
+    "text_length": 2117,
+    "excerpt": "（廣田 毅君） 時間も大分押し迫ってまいりましたので、肝腎なところ、要点だ けちょっと申し上げますけれども、私の要点といっても普通の人よりは長くなろうかと思 います。 うちでＣＯ の削減に使えそうな例"
   },
   {
-    "id": "moseushi-20241004-1-028",
+    "id": "moseushi-20241004-1-030",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2223,20 +1677,20 @@
     "excerpt": "ただいまの廣田議員の再々質問に対してご答弁をさせていただき ます。 ＣＯ の削減にも使える技術として、先ほど再質問がございました中干し、これ水を切 ２ るという技術だということで、これがＪ―クレジット"
   },
   {
-    "id": "moseushi-20241004-1-029",
+    "id": "moseushi-20241004-1-031",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 491,
-    "excerpt": "それでは、通告に従いまして一般質問のほう進めて いきたいと思います。 道内で２０２３年度に認知されたいじめが小中高及び特別支援学校合わせて前年度比で ４２．５％増の４万９，１４９件と過去最多となってご"
+    "text_length": 505,
+    "excerpt": "（佐々木和夫君） （登壇） それでは、通告に従いまして一般質問のほう進めて いきたいと思います。 道内で２０２３年度に認知されたいじめが小中高及び特別支援学校合わせて前年度比で ４２．５％増の４万９，"
   },
   {
-    "id": "moseushi-20241004-1-030",
+    "id": "moseushi-20241004-1-032",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2249,20 +1703,20 @@
     "excerpt": "それでは、佐々木議員の一般質問についてご答弁申し上げま す。 質問１点目の学校との連携を密に行っているのか、定期的な会議はどれくらいの頻度で 行っているのかという質問ですが、毎月、月の上旬に定例校長会"
   },
   {
-    "id": "moseushi-20241004-1-031",
+    "id": "moseushi-20241004-1-033",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 1570,
-    "excerpt": "ただいま課長のほうから学校の連携、それと会議等々聞いたわ けですが、いろいろと道教委との関係性も構築されているなと思ってございます。いじめ 問題というのは非常にデリケートな問題であり、私もこの一般質問"
+    "text_length": 1579,
+    "excerpt": "（佐々木和夫君） ただいま課長のほうから学校の連携、それと会議等々聞いたわ けですが、いろいろと道教委との関係性も構築されているなと思ってございます。いじめ 問題というのは非常にデリケートな問題であり"
   },
   {
-    "id": "moseushi-20241004-1-032",
+    "id": "moseushi-20241004-1-034",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2275,20 +1729,20 @@
     "excerpt": "それでは、再質問についてご答弁申し上げます。 今議員おっしゃられたとおり、全国の認知件数は過去最多で７３万２，５６８件となっ ております。北海道の集計においても同様の傾向が見られております。本町におけ"
   },
   {
-    "id": "moseushi-20241004-1-033",
+    "id": "moseushi-20241004-1-035",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 293,
-    "excerpt": "内容的に詳しくお教えいただいて、ありがとうございます。 午前中でも町の渡辺議員さんのお話でも公設塾の関係がございまして、それがもう進ん でいっているという中に決して、どこの教育委員会もこのいじめに対し"
+    "text_length": 302,
+    "excerpt": "（佐々木和夫君） 内容的に詳しくお教えいただいて、ありがとうございます。 午前中でも町の渡辺議員さんのお話でも公設塾の関係がございまして、それがもう進ん でいっているという中に決して、どこの教育委員会"
   },
   {
-    "id": "moseushi-20241004-1-034",
+    "id": "moseushi-20241004-1-036",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2301,20 +1755,20 @@
     "excerpt": "佐々木議員の再々質問に対し、ご答弁申し上げます。 このいじめに関しましては、社会問題として大きく捉えてございます。冒頭に言いまし たいじめアンケートの目的としましては、いじめを受けている児童生徒やいじ"
   },
   {
-    "id": "moseushi-20241004-1-035",
+    "id": "moseushi-20241004-1-037",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 299,
-    "excerpt": "発言通告に従いまして、田中春夫が行います。 選択的夫婦別姓について。選択的夫婦別姓制度をめぐる議論が活発に行われています。 日本では結婚したら夫婦の９割超は妻が夫の姓を名のっており、改姓の不便や不利益"
+    "text_length": 312,
+    "excerpt": "（田中春夫君） （登壇） 発言通告に従いまして、田中春夫が行います。 選択的夫婦別姓について。選択的夫婦別姓制度をめぐる議論が活発に行われています。 日本では結婚したら夫婦の９割超は妻が夫の姓を名のっ"
   },
   {
-    "id": "moseushi-20241004-1-036",
+    "id": "moseushi-20241004-1-038",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2327,20 +1781,20 @@
     "excerpt": "ジェンダー平等についてご答弁させていただきます。 選択的夫婦別姓及び同性婚につきましては、国連の持続可能な開発目標、いわゆるＳＤ Ｇｓではジェンダー平等を目指すことが掲げられておりまして、主要７か国に"
   },
   {
-    "id": "moseushi-20241004-1-037",
+    "id": "moseushi-20241004-1-039",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 195,
-    "excerpt": "選択的夫婦別姓が、国民の圧倒的世論が広がっているわけですけ れども、この課題に続いて、明治憲法下の家父長制家族観に立ったこの課題に抵抗する勢 力がその最大の妨害になっています。女性が多い非正規雇用に対"
+    "text_length": 203,
+    "excerpt": "（田中春夫君） 選択的夫婦別姓が、国民の圧倒的世論が広がっているわけですけ れども、この課題に続いて、明治憲法下の家父長制家族観に立ったこの課題に抵抗する勢 力がその最大の妨害になっています。女性が多"
   },
   {
-    "id": "moseushi-20241004-1-038",
+    "id": "moseushi-20241004-1-040",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2353,7 +1807,7 @@
     "excerpt": "近年では、性別に関わらず誰もが自分らしく活躍できる男女共 同参画社会の実現が求められてございます。人口減少や少子高齢化が進展する中で多様な 視点を取り入れ、社会情勢の変革に柔軟に対応できるまちづくりが"
   },
   {
-    "id": "moseushi-20241004-1-039",
+    "id": "moseushi-20241004-1-041",
     "council_id": 20241004,
     "council_name": "令和6年第4回定例会",
     "date": null,
@@ -2383,6 +1837,19 @@
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 23,
+    "excerpt": "より挨拶の申出がありましたので、ご紹介します。"
+  },
+  {
+    "id": "moseushi-20251001-2-003",
+    "council_id": 20251001,
+    "council_name": "令和7年第1回定例会",
+    "date": null,
     "speaker": "田中一典町長",
     "speaker_role": "答弁",
     "is_procedural": false,
@@ -2392,7 +1859,7 @@
     "excerpt": "本日までの定例会並びに４日間にわたる予算審議、議員の皆様に は大変お疲れさまでございました。また、農業者として現場をお持ちの菅原代表監査、板 垣農業委員会会長さんにおかれましては春作業の段取りをつけて"
   },
   {
-    "id": "moseushi-20251001-3-003",
+    "id": "moseushi-20251001-3-004",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2405,7 +1872,7 @@
     "excerpt": "妹背牛町議会の皆様、おはようございます。ただいま廣田議長様 よりお許しがございましたので、本日は令和７年第１回定例議会の開催に当たり、一言ご 挨拶を申し上げます。 昨年の衆議院議員選挙という激動の国政"
   },
   {
-    "id": "moseushi-20251001-3-004",
+    "id": "moseushi-20251001-3-005",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2414,11 +1881,11 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 1136,
+    "text_length": 805,
     "excerpt": "それでは、１２月の第４回定例会以降の行政報告をさ せていただきます。 まず、新年を迎え、世界では外国のリーダーが大きくかじを切った令和７年１月、各国 では政策の転換に注目が集まる中、我が国にどのような"
   },
   {
-    "id": "moseushi-20251001-3-005",
+    "id": "moseushi-20251001-3-006",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2431,7 +1898,7 @@
     "excerpt": "それでは、１２月定例会以降の教育行政についてご 報告申し上げます。 まず、一般庶務関係ですが、教育委員会会議については、１２月９日開催の第７回会 議では令和６年度全国体力・運動能力、運動習慣等調査の結"
   },
   {
-    "id": "moseushi-20251001-3-006",
+    "id": "moseushi-20251001-3-007",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2440,11 +1907,11 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 13448,
+    "text_length": 9879,
     "excerpt": "令和７年度町政執行方針。 町議会議員の皆様をはじめ、町民の皆様に対しまして、令和７年第１回妹背牛町議会定 例会の開会に当たり、町政執行の所信を申し述べます。 本年は、私が町政をお預かりしてから２期８年"
   },
   {
-    "id": "moseushi-20251001-3-007",
+    "id": "moseushi-20251001-3-008",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2457,20 +1924,20 @@
     "excerpt": "令和７年度教育行政執行方針。 令和７年第１回町議会定例会の開会に当たりまして、妹背牛町教育委員会所管に関す る執行方針について申し上げます。 現代は、少子化、人口減少や高齢化、国際情勢の不安定化、グロ"
   },
   {
-    "id": "moseushi-20251001-4-008",
+    "id": "moseushi-20251001-4-009",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 519,
-    "excerpt": "通告に従いまして、一般質問させていただきます。 町内会再編についてということでお伺いしたいと思います。妹背牛町は、少子高齢化が 年々進み、人口減少が加速している現状であります。それに伴い、町内会活動の"
+    "text_length": 532,
+    "excerpt": "（鈴木正彦君） （登壇） 通告に従いまして、一般質問させていただきます。 町内会再編についてということでお伺いしたいと思います。妹背牛町は、少子高齢化が 年々進み、人口減少が加速している現状であります"
   },
   {
-    "id": "moseushi-20251001-4-009",
+    "id": "moseushi-20251001-4-010",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2483,20 +1950,20 @@
     "excerpt": "私からは、町内会の再編についてご答弁申し上げます。 町内会の再編につきましては、平成２５年３月に妹背牛町行政区域再編成審議会から具 申書を提出いただき、それを受けて自主的に協議が調った町内会の合併など"
   },
   {
-    "id": "moseushi-20251001-4-010",
+    "id": "moseushi-20251001-4-011",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 1320,
-    "excerpt": "今課長から答弁いただきましたが、まず農家地区の情報等々今ご 説明になられました。中に話題に出ていた団地の建築でという考え方で、いずれにしまし ても最近の傾向で町営住宅に入られる方というのはどうしても高"
+    "text_length": 1328,
+    "excerpt": "（鈴木正彦君） 今課長から答弁いただきましたが、まず農家地区の情報等々今ご 説明になられました。中に話題に出ていた団地の建築でという考え方で、いずれにしまし ても最近の傾向で町営住宅に入られる方という"
   },
   {
-    "id": "moseushi-20251001-4-011",
+    "id": "moseushi-20251001-4-012",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2509,20 +1976,20 @@
     "excerpt": "再質問に対しまして、ご答弁いたします。 町内会再編成審議会につきましては、今後少子高齢化や人口減少により役員の成り手不 足や会員の高齢化が深刻化することで世帯数の少ないところでは活動継続が難しくなり、"
   },
   {
-    "id": "moseushi-20251001-4-012",
+    "id": "moseushi-20251001-4-013",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 725,
-    "excerpt": "今の答弁聞いていると、私の感想としては残念な答弁でした。ど うして必要かというのは、さっきも言いましたように十数戸で町内会維持できないよと。 その中で役員についても３年に１回やらなければならないだとか"
+    "text_length": 733,
+    "excerpt": "（鈴木正彦君） 今の答弁聞いていると、私の感想としては残念な答弁でした。ど うして必要かというのは、さっきも言いましたように十数戸で町内会維持できないよと。 その中で役員についても３年に１回やらなけれ"
   },
   {
-    "id": "moseushi-20251001-4-013",
+    "id": "moseushi-20251001-4-014",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2535,20 +2002,20 @@
     "excerpt": "鈴木議員さんの町内会再編の質問に対してお答えを申し上げます。 現状の厳しさについては、同じ認識を持っていると私も認識しております。それから、 １区だけに限らず農村地区におきましても人口減少の中で役員さ"
   },
   {
-    "id": "moseushi-20251001-4-014",
+    "id": "moseushi-20251001-4-015",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 821,
-    "excerpt": "本来であれば、この一般質問は様々な政策提案型であ るのが基本であると私は認識しておりますが、このたびは妹背牛振興公社についての課題 と町長の事業を通して成し遂げたいビジョンをお聞きしたいと思います。 "
+    "text_length": 834,
+    "excerpt": "（渡辺倫代君） （登壇） 本来であれば、この一般質問は様々な政策提案型であ るのが基本であると私は認識しておりますが、このたびは妹背牛振興公社についての課題 と町長の事業を通して成し遂げたいビジョンを"
   },
   {
-    "id": "moseushi-20251001-4-015",
+    "id": "moseushi-20251001-4-016",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2561,20 +2028,20 @@
     "excerpt": "ただいまの渡辺議員さんからの一般質問にご答弁を申し上げます。 まず、１点目、リニューアル前の経営について検証も含めた感想ということで、平成３ ０年度から令和４年度の約５年間について振り返ってみたいと思"
   },
   {
-    "id": "moseushi-20251001-4-016",
+    "id": "moseushi-20251001-4-017",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 2837,
-    "excerpt": "今町長のほうから振り返りと今後の件についてお話をいただきま した。私もこの一般質問の通告書を提出いたしましてから、私が議員になりまして、町長 におなりになって７年間に行われた行財政調査特別委員会の議事"
+    "text_length": 2845,
+    "excerpt": "（渡辺倫代君） 今町長のほうから振り返りと今後の件についてお話をいただきま した。私もこの一般質問の通告書を提出いたしましてから、私が議員になりまして、町長 におなりになって７年間に行われた行財政調査"
   },
   {
-    "id": "moseushi-20251001-4-017",
+    "id": "moseushi-20251001-4-018",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2587,7 +2054,7 @@
     "excerpt": "では、再質問にお答えをさせていただきます。 人件費の中で４，０００万、それから６００万の赤字はございましたけれども、２，０ ００万は退職金相当でございます。これは、古い職員が大幅にお辞めになりました。"
   },
   {
-    "id": "moseushi-20251001-4-018",
+    "id": "moseushi-20251001-4-019",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2600,20 +2067,20 @@
     "excerpt": "コンプライアンスは、徐々につくり上げていきたいと思っており ます。今まで現場任せにしていましたけれども、それでは統制が取れないということ、こ の５年間実感いたしました。ですから、そこはきっちり次の人に"
   },
   {
-    "id": "moseushi-20251001-4-019",
+    "id": "moseushi-20251001-4-020",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 1407,
-    "excerpt": "２月１４日の行財政に上がってきました案件は、今回の新年度予 算には加えないということは、取り消していただきましたが、私もその後町長がお進めに なっておられるナノミスト調べさせていただきました。ここでは"
+    "text_length": 1415,
+    "excerpt": "（渡辺倫代君） ２月１４日の行財政に上がってきました案件は、今回の新年度予 算には加えないということは、取り消していただきましたが、私もその後町長がお進めに なっておられるナノミスト調べさせていただき"
   },
   {
-    "id": "moseushi-20251001-4-020",
+    "id": "moseushi-20251001-4-021",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2626,20 +2093,20 @@
     "excerpt": "渡辺議員さんへの再々答弁をさせていただきます。 私、もう既にビジョンは話したと思っておりますけれども、再度ここで申し上げます。 町民が健康で長生きできる、そして喜んで入っていただける施設として預かる一"
   },
   {
-    "id": "moseushi-20251001-4-021",
+    "id": "moseushi-20251001-4-022",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "小林一晃君議員",
+    "speaker": "６番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "小林　一晃",
     "member_faction": "",
-    "text_length": 372,
-    "excerpt": "通告に従いまして、一般質問を行います。 介護タクシーの利用料金について、利用者に新たな負担増を求める理由について考え方 をお伺いをいたします。本町にあっては、高齢者に対する生活支援事業の中で介護認定が"
+    "text_length": 385,
+    "excerpt": "（小林一晃君） （登壇） 通告に従いまして、一般質問を行います。 介護タクシーの利用料金について、利用者に新たな負担増を求める理由について考え方 をお伺いをいたします。本町にあっては、高齢者に対する生"
   },
   {
-    "id": "moseushi-20251001-4-022",
+    "id": "moseushi-20251001-4-023",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2652,20 +2119,20 @@
     "excerpt": "外出支援サービスの利用料の見直しについて答弁申し 上げます。 まず、外出支援サービスとは、介護予防・地域支え合い事業の一つの事業として実施し ております。そのほかに配食サービス、除雪サービスなどを実施"
   },
   {
-    "id": "moseushi-20251001-4-023",
+    "id": "moseushi-20251001-4-024",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "小林一晃君議員",
+    "speaker": "６番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "小林　一晃",
     "member_faction": "",
-    "text_length": 1050,
-    "excerpt": "ただいま答弁では、例えば深川へ行く料金について３倍の大体負 担になるのだと、こういう説明でございますが、いわゆる介護認定を受けて、そして高齢 化になっていくとだんだんと病院にかかる率も高くなりますし、"
+    "text_length": 1058,
+    "excerpt": "（小林一晃君） ただいま答弁では、例えば深川へ行く料金について３倍の大体負 担になるのだと、こういう説明でございますが、いわゆる介護認定を受けて、そして高齢 化になっていくとだんだんと病院にかかる率も"
   },
   {
-    "id": "moseushi-20251001-4-024",
+    "id": "moseushi-20251001-4-025",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2678,20 +2145,20 @@
     "excerpt": "答弁申し上げます。 先ほどの利用料見直しの答弁の中で説明が不足しており、申し訳ありませんでしたが、 今回利用料の見直しの中で月額の上限を８，０００円と定めさせていただいておりまして、 利用回数の多い透"
   },
   {
-    "id": "moseushi-20251001-4-025",
+    "id": "moseushi-20251001-4-026",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "小林一晃君議員",
+    "speaker": "６番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "小林　一晃",
     "member_faction": "",
-    "text_length": 271,
-    "excerpt": "今の最高限度額を８，０００円にという答弁でございますけれど も、これ年金生活している人が、そういう人たちが例えば旭川へ行く場合に交通費だけで ８，０００円負担するということは大変なことだと思うのです。"
+    "text_length": 279,
+    "excerpt": "（小林一晃君） 今の最高限度額を８，０００円にという答弁でございますけれど も、これ年金生活している人が、そういう人たちが例えば旭川へ行く場合に交通費だけで ８，０００円負担するということは大変なこと"
   },
   {
-    "id": "moseushi-20251001-4-026",
+    "id": "moseushi-20251001-4-027",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2704,20 +2171,20 @@
     "excerpt": "小林議員さんの再々質問にご答弁申し上げます。 年金生活者の方が大変な生活の中で病院にも通われていると。その中で約３倍にも当た る料金の高騰があったと。ただ、今担当課からは、例えば旭川、専門機関含め、高"
   },
   {
-    "id": "moseushi-20251001-4-027",
+    "id": "moseushi-20251001-4-028",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 430,
-    "excerpt": "それでは、通告に従いまして、一般質問のほう進め ていきたいと思います。 本町にも勤務されております地域おこし協力隊、この制度は２００９年度から総務省が 都市部の人が地方で地域活性化に向けて活動し、最終"
+    "text_length": 444,
+    "excerpt": "（佐々木和夫君） （登壇） それでは、通告に従いまして、一般質問のほう進め ていきたいと思います。 本町にも勤務されております地域おこし協力隊、この制度は２００９年度から総務省が 都市部の人が地方で地"
   },
   {
-    "id": "moseushi-20251001-4-028",
+    "id": "moseushi-20251001-4-029",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2730,20 +2197,20 @@
     "excerpt": "私からは、地域おこし協力隊についてご答弁申し上げま す。 地域おこし協力隊制度は、都市部の若者などが過疎地域などの条件不利地域へ移住し、 一定期間の地域活動の後、その地域への定住、定着を図る目的として"
   },
   {
-    "id": "moseushi-20251001-4-029",
+    "id": "moseushi-20251001-4-030",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 1814,
-    "excerpt": "今課長のほうから協力隊の採用と、また活動中のサポート関係 についてご答弁いただきました。最初の応募に関しての書類については、通常の事業所さ んが行うような内容になっているかなと思ってございます。 実は"
+    "text_length": 1823,
+    "excerpt": "（佐々木和夫君） 今課長のほうから協力隊の採用と、また活動中のサポート関係 についてご答弁いただきました。最初の応募に関しての書類については、通常の事業所さ んが行うような内容になっているかなと思って"
   },
   {
-    "id": "moseushi-20251001-4-030",
+    "id": "moseushi-20251001-4-031",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2756,20 +2223,20 @@
     "excerpt": "再質問に対しまして、ご答弁申し上げます。 まず、任期終了後の定住率の関係でございますが、外国人技能実習生サポート業務で採 用となった協力隊は国籍の壁や就労ビザの関係もあり、３名の隊員が退任後定住に結び"
   },
   {
-    "id": "moseushi-20251001-4-031",
+    "id": "moseushi-20251001-4-032",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 525,
-    "excerpt": "サポート関係の答弁、ありがとうございました。 最後に、協力隊の置かれた立場といいますか、先ほど課長からの答弁、僕も質問には出 したのですが、本町の協力隊で過去に庁舎の中の部署を３か所替わられて辞められ"
+    "text_length": 534,
+    "excerpt": "（佐々木和夫君） サポート関係の答弁、ありがとうございました。 最後に、協力隊の置かれた立場といいますか、先ほど課長からの答弁、僕も質問には出 したのですが、本町の協力隊で過去に庁舎の中の部署を３か所"
   },
   {
-    "id": "moseushi-20251001-4-032",
+    "id": "moseushi-20251001-4-033",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2782,7 +2249,7 @@
     "excerpt": "再々質問に対しまして、ご答弁いたします。 議員の辞めた理由の検証についてですが、その方とやっている業務の内容にマッチング されていないということが第一の原因だと考えてございます。そのために、今後そうい"
   },
   {
-    "id": "moseushi-20251001-4-033",
+    "id": "moseushi-20251001-4-034",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2795,20 +2262,20 @@
     "excerpt": "佐々木議員さんの再々質問に付け加えて答弁をさせていただきま す。 ３回ほど部署を替わられて、最後にお辞めになったという方が私も記憶にございます。 実際にミスマッチの場所が本人と話し合った段階では、最初"
   },
   {
-    "id": "moseushi-20251001-4-034",
+    "id": "moseushi-20251001-4-035",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 173,
-    "excerpt": "田中春夫です。発言通告に従い、ヤングケアラーにつ いて、本町におけるヤングケアラーに関する実態調査が令和４年度以降行われたのか、ま たその実態を把握しているのか、民生委員、児童委員、学校関係者の情報交"
+    "text_length": 186,
+    "excerpt": "（田中春夫君） （登壇） 田中春夫です。発言通告に従い、ヤングケアラーにつ いて、本町におけるヤングケアラーに関する実態調査が令和４年度以降行われたのか、ま たその実態を把握しているのか、民生委員、児"
   },
   {
-    "id": "moseushi-20251001-4-035",
+    "id": "moseushi-20251001-4-036",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2821,20 +2288,20 @@
     "excerpt": "ヤングケアラーの把握と対策についてご答弁申し上げ ます。 ヤングケアラーに関して本町は独自の調査は実施していませんが、妊娠期から子育て期 まで切れ目のない包括的な支援のため、深く関わりを持っていると考"
   },
   {
-    "id": "moseushi-20251001-4-036",
+    "id": "moseushi-20251001-4-037",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 374,
-    "excerpt": "孤立した支援を求めるヤングケアラー、早期に発見して支援につ なげるために既に埼玉県で実施されている自治体独自の実態調査を全国で促進するよう提 起しています。研修の対象として教育関係者をはじめ、介護、福"
+    "text_length": 382,
+    "excerpt": "（田中春夫君） 孤立した支援を求めるヤングケアラー、早期に発見して支援につ なげるために既に埼玉県で実施されている自治体独自の実態調査を全国で促進するよう提 起しています。研修の対象として教育関係者を"
   },
   {
-    "id": "moseushi-20251001-4-037",
+    "id": "moseushi-20251001-4-038",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2847,20 +2314,20 @@
     "excerpt": "答弁申し上げます。 最初の答弁と重複したものとなってしまうことをご了承いただきたいのですが、妊娠期 から子育て期まで切れ目なく各家庭と深く関わってきていまして、実態の把握については ささいな事柄でも保"
   },
   {
-    "id": "moseushi-20251001-4-038",
+    "id": "moseushi-20251001-4-039",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "中山義博君議員",
+    "speaker": "７番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "中山　義博",
     "member_faction": "",
-    "text_length": 485,
-    "excerpt": "通告書に従い、質問をさせていただきます。中山義博 です。 まず、１つ目、道路の見通しが悪く危険（車両、人）であることについて。妹背牛町道、 道幅が急に狭くなり、さらに急カーブになっております。昨年、１"
+    "text_length": 498,
+    "excerpt": "（中山義博君） （登壇） 通告書に従い、質問をさせていただきます。中山義博 です。 まず、１つ目、道路の見通しが悪く危険（車両、人）であることについて。妹背牛町道、 道幅が急に狭くなり、さらに急カーブ"
   },
   {
-    "id": "moseushi-20251001-4-039",
+    "id": "moseushi-20251001-4-040",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2873,20 +2340,20 @@
     "excerpt": "私のほうから道路の見通しが悪く危険であることについてと 町の除雪状況についてご答弁申し上げます。 １つ目の道路の見通しが悪く危険であることについてですが、この場所は町道川一線道 路の両側にホクレン包材"
   },
   {
-    "id": "moseushi-20251001-4-040",
+    "id": "moseushi-20251001-4-041",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "中山義博君議員",
+    "speaker": "７番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "中山　義博",
     "member_faction": "",
-    "text_length": 1099,
-    "excerpt": "今まず１つ目の道路の幅が狭くなる、あるいは急にカーブがある、 そのような中で実際に通行すると前方から大型車だったり、あるいは町のバスであったり、 そういうカーブして実際のところ数字的には幅とか、そうい"
+    "text_length": 1107,
+    "excerpt": "（中山義博君） 今まず１つ目の道路の幅が狭くなる、あるいは急にカーブがある、 そのような中で実際に通行すると前方から大型車だったり、あるいは町のバスであったり、 そういうカーブして実際のところ数字的に"
   },
   {
-    "id": "moseushi-20251001-4-041",
+    "id": "moseushi-20251001-4-042",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2899,20 +2366,20 @@
     "excerpt": "私のほうから再質問に対してご答弁申し上げます。 まず、１点目の道路の見通しが悪く危険であることについての再答弁になりますけれど も、先ほども申しましたように道路の構造上は特に危険な場所という認識はして"
   },
   {
-    "id": "moseushi-20251001-4-042",
+    "id": "moseushi-20251001-4-043",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
-    "speaker": "中山義博君議員",
+    "speaker": "７番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "中山　義博",
     "member_faction": "",
-    "text_length": 301,
-    "excerpt": "２番目の除雪に関しては、ありがとうございます。そういうこと で町民、あるいは業者、町、それぞれこれはこれからも発生することですので、その担当 の中で気をつけていけばよろしいかなと思います。 １番目の道"
+    "text_length": 102,
+    "excerpt": "（中山義博君） ２番目の除雪に関しては、ありがとうございます。そういうこと で町民、あるいは業者、町、それぞれこれはこれからも発生することですので、その担当 の中で気をつけていけばよろしいかなと思いま"
   },
   {
-    "id": "moseushi-20251001-4-043",
+    "id": "moseushi-20251001-4-044",
     "council_id": 20251001,
     "council_name": "令和7年第1回定例会",
     "date": null,
@@ -2942,13 +2409,13 @@
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 44,
-    "excerpt": "私から推薦したいと思います。 北空知衛生センター組合議会議員に廣田毅君を推薦いたします。"
+    "text_length": 52,
+    "excerpt": "（渡辺倫代君） 私から推薦したいと思います。 北空知衛生センター組合議会議員に廣田毅君を推薦いたします。"
   },
   {
     "id": "moseushi-20251002-1-003",
@@ -2960,7 +2427,7 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 1105,
+    "text_length": 278,
     "excerpt": "それでは、３月の第１回定例会以降の行政報告をさ せていただきます。 - 4 - まず、令和７年度の需給調整実施状況についてですが、本年産の米の生産目安は２，０ ９８．２ヘクタールになっており、６月１日"
   },
   {
@@ -2981,13 +2448,13 @@
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 575,
-    "excerpt": "今回は、町長不在の定例議会でありますが、通告に従 い質問させていただきます。 第９次妹背牛町総合振興計画についてお伺いいたします。この第９次妹背牛町総合振 興計画は、現田中町長が町長に就任されて半年後"
+    "text_length": 588,
+    "excerpt": "（渡辺倫代君） （登壇） 今回は、町長不在の定例議会でありますが、通告に従 い質問させていただきます。 第９次妹背牛町総合振興計画についてお伺いいたします。この第９次妹背牛町総合振 興計画は、現田中町"
   },
   {
     "id": "moseushi-20251002-1-006",
@@ -3007,16 +2474,29 @@
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 2661,
-    "excerpt": "るるお答えいただきましたが、この第９次振興計画の大きな目玉 は何だったでしょうか。前半はペペル温泉の大改修、そして小中学校の建設に向けての準 備、それが一番大きな目玉だったように私は考えております。 "
+    "text_length": 146,
+    "excerpt": "（渡辺倫代君） るるお答えいただきましたが、この第９次振興計画の大きな目玉 は何だったでしょうか。前半はペペル温泉の大改修、そして小中学校の建設に向けての準 備、それが一番大きな目玉だったように私は考"
   },
   {
     "id": "moseushi-20251002-1-008",
+    "council_id": 20251002,
+    "council_name": "令和7年第2回定例会",
+    "date": null,
+    "speaker": "課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 2520,
+    "excerpt": "がおっしゃいましたように、令和１０年は新しい校舎の開校が予定されておりました。 スケジュールはそうでした。今、後ろで傍聴に来てくださっている小学生、６年生の皆さ んは令和１０年は中学３年生あるいは義務"
+  },
+  {
+    "id": "moseushi-20251002-1-009",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3029,20 +2509,20 @@
     "excerpt": "再質問に対しまして、ご答弁申し上げます。 - 10 - 令和６年３月、学校教育施設個別施設計画の改定版を策定すると同時に内部協議を重 ねまして、先ほど議員からもありました開校年度など今後の方向性につい"
   },
   {
-    "id": "moseushi-20251002-1-009",
+    "id": "moseushi-20251002-1-010",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 1755,
-    "excerpt": "３回目の質問をさせていただきますが、令和７年の５月に庁舎も 古くなっておりまして、庁舎等改修計画ができました。それで、学校の建設から優先して 当てはめる予定であるというお答えをいただいています。令和２"
+    "text_length": 1763,
+    "excerpt": "（渡辺倫代君） ３回目の質問をさせていただきますが、令和７年の５月に庁舎も 古くなっておりまして、庁舎等改修計画ができました。それで、学校の建設から優先して 当てはめる予定であるというお答えをいただい"
   },
   {
-    "id": "moseushi-20251002-1-010",
+    "id": "moseushi-20251002-1-011",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3055,20 +2535,20 @@
     "excerpt": "再々質問に対しましてご答弁申し上げます。 まず、学校建設基金のほうでございますが、令和５年度から積み立てを開始いたしまし て、令和６年度末現在で約５，０００万という状況となってございます。今後建設工事"
   },
   {
-    "id": "moseushi-20251002-1-011",
+    "id": "moseushi-20251002-1-012",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 765,
-    "excerpt": "それでは、通告に従いまして一般質問のほうを進め てまいりたいと思います。 質問の前に、議会定例の冒頭にありましたとおり、成瀬議員がお亡くなりになった。皆 様もご承知のとおり、成瀬議員、私は同級生でござ"
+    "text_length": 779,
+    "excerpt": "（佐々木和夫君） （登壇） それでは、通告に従いまして一般質問のほうを進め てまいりたいと思います。 質問の前に、議会定例の冒頭にありましたとおり、成瀬議員がお亡くなりになった。皆 様もご承知のとおり"
   },
   {
-    "id": "moseushi-20251002-1-012",
+    "id": "moseushi-20251002-1-013",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3081,20 +2561,20 @@
     "excerpt": "それでは、佐々木議員の一般質問についてご答弁申し上げま す。 この全国学力・学習状況調査ですが、文部科学省が子供たちの学力、状況を把握する ために平成１９年度から実施しているものです。 まず、調査の目"
   },
   {
-    "id": "moseushi-20251002-1-013",
+    "id": "moseushi-20251002-1-014",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 1408,
-    "excerpt": "本町の教育現場の状況が今課長から教えていただいて、小学校 の算数、また中学の数学ですか。全国のレベルにももう達している、また達しつつあると いうお言葉を聞いたわけでございます。 本町も先ほど渡辺議員が"
+    "text_length": 1417,
+    "excerpt": "（佐々木和夫君） 本町の教育現場の状況が今課長から教えていただいて、小学校 の算数、また中学の数学ですか。全国のレベルにももう達している、また達しつつあると いうお言葉を聞いたわけでございます。 本町"
   },
   {
-    "id": "moseushi-20251002-1-014",
+    "id": "moseushi-20251002-1-015",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3107,20 +2587,20 @@
     "excerpt": "それでは、再質問についてご答弁申し上げます。 まず、改善策として何か取組を行っていますかということですが、先ほど小中一貫校 や義務教育学校というワードが出てきました。小中一貫教育では、小学校から中学校"
   },
   {
-    "id": "moseushi-20251002-1-015",
+    "id": "moseushi-20251002-1-016",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 327,
-    "excerpt": "空知教育局は、全道平均を下回った理由として、これは２０２ ０年から順次導入された新学習指導要領に基づき、学力テストが知識や記憶力を問うもの から先ほど来言っております思考力、また表現力などを重視する問"
+    "text_length": 336,
+    "excerpt": "（佐々木和夫君） 空知教育局は、全道平均を下回った理由として、これは２０２ ０年から順次導入された新学習指導要領に基づき、学力テストが知識や記憶力を問うもの から先ほど来言っております思考力、また表現"
   },
   {
-    "id": "moseushi-20251002-1-016",
+    "id": "moseushi-20251002-1-017",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3133,7 +2613,7 @@
     "excerpt": "それでは、再々質問の教員向けのオンライン学習会は行われ ていますかということについて私よりご答弁させていただきます。 空知教育局では、市町教員への個別アプローチとして空知でＶＩＥＷという独自のオ ンラ"
   },
   {
-    "id": "moseushi-20251002-1-017",
+    "id": "moseushi-20251002-1-018",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3146,20 +2626,20 @@
     "excerpt": "佐々木議員の再々質問に対し、ご答弁申し上げます。 最後に、教育長の考えということですので、若干私の主観も入ってしまうかもしれま せんが、全国学力・学習状況調査につきましては、本来この調査は児童生徒の学"
   },
   {
-    "id": "moseushi-20251002-1-018",
+    "id": "moseushi-20251002-1-019",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 397,
-    "excerpt": "田中春夫です。通告に従いまして質問いたします。 １つ目、地域交通の確保ということで、住民の約５０％以上に及ぶ高齢化が進行して いる状況の中で、買物や役場に行きたい、温泉に行きたいという場合の移動手段に"
+    "text_length": 410,
+    "excerpt": "（田中春夫君） （登壇） 田中春夫です。通告に従いまして質問いたします。 １つ目、地域交通の確保ということで、住民の約５０％以上に及ぶ高齢化が進行して いる状況の中で、買物や役場に行きたい、温泉に行き"
   },
   {
-    "id": "moseushi-20251002-1-019",
+    "id": "moseushi-20251002-1-020",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3172,7 +2652,7 @@
     "excerpt": "私からは、議員ご質問の１点目の住民の移動確保につい てご答弁申し上げます。 妹背牛町には、空知中央バスが運行する深川滝川線、北竜町が運行する北竜妹背牛線、 三共ハイヤーのタクシー事業の公共交通がござい"
   },
   {
-    "id": "moseushi-20251002-1-020",
+    "id": "moseushi-20251002-1-021",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3185,20 +2665,20 @@
     "excerpt": "２点目の平和についての取組に関してご答弁申し上げます。 議員からもご紹介のありましたとおり、本町の平和に関する取組としては非核三原則 の堅持と恒久平和の実現を願い、平成７年３月の第１回定例会において非"
   },
   {
-    "id": "moseushi-20251002-1-021",
+    "id": "moseushi-20251002-1-022",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 365,
-    "excerpt": "平和問題について、２点お伺いします。 被爆から８０年という形の平和な未来をつくるために戦争体験や被爆体験の証言に耳 を向け、そのことを継承することがテーマだと思いますけれども、こういった点でどのよ う"
+    "text_length": 373,
+    "excerpt": "（田中春夫君） 平和問題について、２点お伺いします。 被爆から８０年という形の平和な未来をつくるために戦争体験や被爆体験の証言に耳 を向け、そのことを継承することがテーマだと思いますけれども、こういっ"
   },
   {
-    "id": "moseushi-20251002-1-022",
+    "id": "moseushi-20251002-1-023",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3211,7 +2691,7 @@
     "excerpt": "再質問についてご答弁申し上げます。 次の世代に平和の尊さを伝えていくことは、非常に大切なことと認識をしてございま す。先ほども答弁しましたが、これまでも本町では毎年戦没者追悼式をとり行う中で戦争 の体"
   },
   {
-    "id": "moseushi-20251002-1-023",
+    "id": "moseushi-20251002-1-024",
     "council_id": 20251002,
     "council_name": "令和7年第2回定例会",
     "date": null,
@@ -3246,8 +2726,8 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 833,
-    "excerpt": "それでは、６月の第２回定例会以降の行政報告をさせ ていただきます。 最初に、建設工事等の発注状況についてでございますが、お手元にお配りしてございま すので、後ほどお目通しをいただきたいと思います。 ２"
+    "text_length": 98,
+    "excerpt": "それでは、６月の第２回定例会以降の行政報告をさせ ていただきます。 最初に、建設工事等の発注状況についてでございますが、お手元にお配りしてございま すので、後ほどお目通しをいただきたいと思います。"
   },
   {
     "id": "moseushi-20251003-1-003",
@@ -3267,13 +2747,13 @@
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 1186,
-    "excerpt": "それでは、通告に従い質問させていただきます。 このたびは、滝本町長がこのたびの選挙において強調されてこられたこの選挙用パンフ レットについてお聞きしたいと思っております。将来を見据え、持続可能な妹背牛"
+    "text_length": 485,
+    "excerpt": "（渡辺倫代君） （登壇） それでは、通告に従い質問させていただきます。 このたびは、滝本町長がこのたびの選挙において強調されてこられたこの選挙用パンフ レットについてお聞きしたいと思っております。将来"
   },
   {
     "id": "moseushi-20251003-1-005",
@@ -3293,16 +2773,29 @@
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 5484,
-    "excerpt": "一般質問、最初のとき、１回目、私は具体的なことをお示しいた だきたいと申し上げました。今あまり具体的なご答弁ではなかったような気がいたします。 長年、職員として、そして前町長に仕えられた副町長として、"
+    "text_length": 1580,
+    "excerpt": "（渡辺倫代君） 一般質問、最初のとき、１回目、私は具体的なことをお示しいた だきたいと申し上げました。今あまり具体的なご答弁ではなかったような気がいたします。 長年、職員として、そして前町長に仕えられ"
   },
   {
     "id": "moseushi-20251003-1-007",
+    "council_id": 20251003,
+    "council_name": "令和7年第3回定例会",
+    "date": null,
+    "speaker": "教育長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 3908,
+    "excerpt": "です。本部委員は課長の方々、この生涯学習推進本部というのは、一体年に何回開 催されて、今までどのようになっているのか、それを具体的に教えていただきたいと思い ます。 生涯学習というのは、道でも大変力を"
+  },
+  {
+    "id": "moseushi-20251003-1-008",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3311,24 +2804,37 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text_length": 587,
-    "excerpt": "再質問に対しまして、ご質問全てとはなりませんが、ご答弁申し 上げます。 町長として今後新たに取組を進める施策として、具体的なものについて触れさせてい ただきます。まず、安心、福祉、医療の充実、高齢者福"
+    "text_length": 35,
+    "excerpt": "再質問に対しまして、ご質問全てとはなりませんが、ご答弁申し 上げます。"
   },
   {
-    "id": "moseushi-20251003-1-008",
+    "id": "moseushi-20251003-1-009",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "渡辺倫代君議員",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text_length": 549,
+    "excerpt": "として今後新たに取組を進める施策として、具体的なものについて触れさせてい ただきます。まず、安心、福祉、医療の充実、高齢者福祉の関係でございますが、こちら については補助事業が前提とはなりますが、老人"
+  },
+  {
+    "id": "moseushi-20251003-1-010",
+    "council_id": 20251003,
+    "council_name": "令和7年第3回定例会",
+    "date": null,
+    "speaker": "８番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "渡辺　倫代",
     "member_faction": "",
-    "text_length": 1792,
-    "excerpt": "町長としての新しい施策、具体的な部分もお示しいただきました が、先ほどお聞きしました生涯学習に関してちょっとお考えを、３度目になりますが、お - 16 - 聞きしたいと思っています。 それから、本当に"
+    "text_length": 1800,
+    "excerpt": "（渡辺倫代君） 町長としての新しい施策、具体的な部分もお示しいただきました が、先ほどお聞きしました生涯学習に関してちょっとお考えを、３度目になりますが、お - 16 - 聞きしたいと思っています。 "
   },
   {
-    "id": "moseushi-20251003-1-009",
+    "id": "moseushi-20251003-1-011",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3341,20 +2847,20 @@
     "excerpt": "再々質問に対しまして、ご答弁申し上げます。 まず、生涯学習についてでございますが、私の中では現時点ではまだ整理がついており ませんので、答弁はしかねます。 また、青少年問題協議会の条例の関係も同様にご"
   },
   {
-    "id": "moseushi-20251003-1-010",
+    "id": "moseushi-20251003-1-012",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 896,
-    "excerpt": "一般質問の前に、一言申し上げたいなと思ってござ います。 改めて滝本町長、ご就任おめでとうございます。町長は、行政出身の町長と。初めて 昭和２７年ぶりになったわけでございます。その間、８人の町長さんが"
+    "text_length": 910,
+    "excerpt": "（佐々木和夫君） （登壇） 一般質問の前に、一言申し上げたいなと思ってござ います。 改めて滝本町長、ご就任おめでとうございます。町長は、行政出身の町長と。初めて 昭和２７年ぶりになったわけでございま"
   },
   {
-    "id": "moseushi-20251003-1-011",
+    "id": "moseushi-20251003-1-013",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3367,20 +2873,20 @@
     "excerpt": "私からは、ペペル温泉についてご答弁を申し上げます。 現在までの経営状況でございますが、令和６年度につきましては４月２７日がリニュ ーアルオープンとなっておりまして、４月の営業日が少ない上での決算となっ"
   },
   {
-    "id": "moseushi-20251003-1-012",
+    "id": "moseushi-20251003-1-014",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 2354,
-    "excerpt": "それでは、ペペルのほう、今お聞きしたところなのでございま すが、おおよそ予想されていたのかなと思うようなことが町外の入館者が８，０００人減 になっていますというようなことと、相変わらずこの中間期に際し"
+    "text_length": 2363,
+    "excerpt": "（佐々木和夫君） それでは、ペペルのほう、今お聞きしたところなのでございま すが、おおよそ予想されていたのかなと思うようなことが町外の入館者が８，０００人減 になっていますというようなことと、相変わら"
   },
   {
-    "id": "moseushi-20251003-1-013",
+    "id": "moseushi-20251003-1-015",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3393,20 +2899,20 @@
     "excerpt": "再質問に対しまして、ご答弁申し上げます。 まず最初に、ペペルの件でございますが、職員の教育につきましては職員研修などを 行い、職員の資質向上に努めたいと考えてございます。 それとあと、会議につきまして"
   },
   {
-    "id": "moseushi-20251003-1-014",
+    "id": "moseushi-20251003-1-016",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "佐々木和夫君議員",
+    "speaker": "２番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐々木和夫",
     "member_faction": "",
-    "text_length": 723,
-    "excerpt": "それでは、委託型の協力隊の沖縄から来られた方なのですが、 先に来られた方はＳＮＳですか、あれで幅広く今日はここでやりますよと、ここはペペル の前ですよというのを僕も見ているのです。それで、役場の方だと"
+    "text_length": 732,
+    "excerpt": "（佐々木和夫君） それでは、委託型の協力隊の沖縄から来られた方なのですが、 先に来られた方はＳＮＳですか、あれで幅広く今日はここでやりますよと、ここはペペル の前ですよというのを僕も見ているのです。そ"
   },
   {
-    "id": "moseushi-20251003-1-015",
+    "id": "moseushi-20251003-1-017",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3419,20 +2925,20 @@
     "excerpt": "再々質問に対しまして、ご答弁させていただきたいと思 います。 沖縄の委託型の協力隊の方なのですけれども、ＳＮＳなのですが、フェイスブックと かインスタグラムではなくてティックトックというものを使いまし"
   },
   {
-    "id": "moseushi-20251003-1-016",
+    "id": "moseushi-20251003-1-018",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 636,
-    "excerpt": "通告に従いまして、一般質問をさせていただきます。 まちづくりについて、特に観光振興についてお伺いいたします。本町において、人口減 少は重要な課題であります。定住人口を増やすことが第一であると考えますが"
+    "text_length": 649,
+    "excerpt": "（鈴木正彦君） （登壇） 通告に従いまして、一般質問をさせていただきます。 まちづくりについて、特に観光振興についてお伺いいたします。本町において、人口減 少は重要な課題であります。定住人口を増やすこ"
   },
   {
-    "id": "moseushi-20251003-1-017",
+    "id": "moseushi-20251003-1-019",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3445,20 +2951,20 @@
     "excerpt": "私からは、議員ご質問の観光の振興についてご答弁申し 上げます。 近隣の市町では、大規模なイベントの開催や有料の観光施設がありますので、それに よる観光収益を主として経営している事業者もあるため、観光協"
   },
   {
-    "id": "moseushi-20251003-1-018",
+    "id": "moseushi-20251003-1-020",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 2021,
-    "excerpt": "まず、維持費というか、運営費が恐らく必要になる。いや、恐ら くではない。絶対必要になりますよね。それで、方法としてはまず行政だけに、さっき説 明にもありましたように行政だけが全てを負担するのではなく、"
+    "text_length": 2007,
+    "excerpt": "（鈴木正彦君） まず、維持費というか、運営費が恐らく必要になる。いや、恐ら くではない。絶対必要になりますよね。それで、方法としてはまず行政だけに、さっき説 明にもありましたように行政だけが全てを負担"
   },
   {
-    "id": "moseushi-20251003-1-019",
+    "id": "moseushi-20251003-1-021",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3471,20 +2977,20 @@
     "excerpt": "再質問に対しまして、ご答弁をさせていただきます。 妹背牛町の観光資源や財源の状況を考えますと、観光協会を立ち上げてもその後の活 動や資金をどう継続するかが大きな課題であり、既存の枠組みを活用し、体制を"
   },
   {
-    "id": "moseushi-20251003-1-020",
+    "id": "moseushi-20251003-1-022",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "鈴木正彦君議員",
+    "speaker": "３番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "鈴木　正彦",
     "member_faction": "",
-    "text_length": 1217,
-    "excerpt": "答弁としては、非常に難しいぞという答弁でしたが、同僚議員か らも質問の中に議員カフェの話が出ていたのですが、実は８月３０日に議員カフェ、初め て開きました。その中で、議員カフェに町民さん３４名来ていた"
+    "text_length": 1225,
+    "excerpt": "（鈴木正彦君） 答弁としては、非常に難しいぞという答弁でしたが、同僚議員か らも質問の中に議員カフェの話が出ていたのですが、実は８月３０日に議員カフェ、初め て開きました。その中で、議員カフェに町民さ"
   },
   {
-    "id": "moseushi-20251003-1-021",
+    "id": "moseushi-20251003-1-023",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3497,20 +3003,20 @@
     "excerpt": "再々質問に対しまして、ご答弁申し上げます。 現状では、町、企画振興課や商工会あるいはＪＡなどが観光協会の役割を担っている ものと考えてございます。観光協会の設立に当たっては、そのメリットの検証など関係"
   },
   {
-    "id": "moseushi-20251003-1-022",
+    "id": "moseushi-20251003-1-024",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "佐藤主税君議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐藤　主税",
     "member_faction": "",
-    "text_length": 1457,
-    "excerpt": "それでは、通告に従いまして一般質問を進めてまいり ます。 私からは、農業後継者と商業後継者が産業の垣根を越えた意見交換や協力体制の構築、 そしてさらに発展させて地元農畜産物を活用した特産品を農業者と商"
+    "text_length": 1470,
+    "excerpt": "（佐藤主税君） （登壇） それでは、通告に従いまして一般質問を進めてまいり ます。 私からは、農業後継者と商業後継者が産業の垣根を越えた意見交換や協力体制の構築、 そしてさらに発展させて地元農畜産物を"
   },
   {
-    "id": "moseushi-20251003-1-023",
+    "id": "moseushi-20251003-1-025",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3523,7 +3029,7 @@
     "excerpt": "私からは、農協、商工青年部の意見交換する機会の創設 や事業連携についてと妹背牛町の今後のイベントの考え方についてご答弁させていただき たいと思います。 妹背牛町においては、農業、商工業、いずれにおいて"
   },
   {
-    "id": "moseushi-20251003-1-024",
+    "id": "moseushi-20251003-1-026",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3536,20 +3042,20 @@
     "excerpt": "私のほうから、議員ご質問の将来的に農業者と商工業者が一 体となった６次産業化への取組の考えがあるのかについてご答弁を申し上げます。 まず、農業者と商工業者が連携をしての６次産業化の動きについては、地元"
   },
   {
-    "id": "moseushi-20251003-1-025",
+    "id": "moseushi-20251003-1-027",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "佐藤主税君議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐藤　主税",
     "member_faction": "",
-    "text_length": 1250,
-    "excerpt": "再質問をさせていただきます。 大変前向きなご答弁をいただきましたので、ぜひ農業者と商工業者、若手の方たちが いろんな場面でいろいろと横の連携が取っていけるように、前向きによろしくお願いした いと思いま"
+    "text_length": 1258,
+    "excerpt": "（佐藤主税君） 再質問をさせていただきます。 大変前向きなご答弁をいただきましたので、ぜひ農業者と商工業者、若手の方たちが いろんな場面でいろいろと横の連携が取っていけるように、前向きによろしくお願い"
   },
   {
-    "id": "moseushi-20251003-1-026",
+    "id": "moseushi-20251003-1-028",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3562,20 +3068,20 @@
     "excerpt": "再質問に対しまして、ご答弁申し上げます。 ふるさと納税のジンギスカンの返礼品の関係でございますが、総務省は令和６年１０ 月にふるさと納税の基準を厳格化いたしました。原材料が妹背牛町を含む道内産でなけれ"
   },
   {
-    "id": "moseushi-20251003-1-027",
+    "id": "moseushi-20251003-1-029",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "佐藤主税君議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐藤　主税",
     "member_faction": "",
-    "text_length": 675,
-    "excerpt": "再々質問をさせていただきます。 ただいまお話があったとおり、アイルランド産ですか、のジンギスカン、外国産という ことで、それがふるさと納税には合致しないということはごくごくごもっともかなと。最 もな話"
+    "text_length": 683,
+    "excerpt": "（佐藤主税君） 再々質問をさせていただきます。 ただいまお話があったとおり、アイルランド産ですか、のジンギスカン、外国産という ことで、それがふるさと納税には合致しないということはごくごくごもっともか"
   },
   {
-    "id": "moseushi-20251003-1-028",
+    "id": "moseushi-20251003-1-030",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3588,20 +3094,20 @@
     "excerpt": "再々質問に対しまして、ご答弁申し上げます。 地元農産物を活用した新たな特産品開発や高付加価値化による６次産業化については、 その加工品への付加価値だけではなく、使用する地元の農産物にも付加価値がつくと"
   },
   {
-    "id": "moseushi-20251003-1-029",
+    "id": "moseushi-20251003-1-031",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 780,
-    "excerpt": "田中春夫です。発言通告に従いまして、１つ目は学校 体育館へのエアコン設置について。 - 34 - 地球温暖化の影響から、北海道でも記録的な高温になるなど暑さによるリスクが高ま っています。７月に起きた"
+    "text_length": 793,
+    "excerpt": "（田中春夫君） （登壇） 田中春夫です。発言通告に従いまして、１つ目は学校 体育館へのエアコン設置について。 - 34 - 地球温暖化の影響から、北海道でも記録的な高温になるなど暑さによるリスクが高ま"
   },
   {
-    "id": "moseushi-20251003-1-030",
+    "id": "moseushi-20251003-1-032",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3614,7 +3120,7 @@
     "excerpt": "私からは、議員ご質問の１つ目、学校体育館へのエアコン設 置についてご答弁申し上げます。 まず、深川の観測地点のデータにはなりますが、２０年以上前の平成１５年頃は２８度 を超えることもまれで、３０度を超"
   },
   {
-    "id": "moseushi-20251003-1-031",
+    "id": "moseushi-20251003-1-033",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3627,20 +3133,20 @@
     "excerpt": "私からは、２点目の生活保護世帯のエアコン購入に係る 購入支援制度等についてご答弁申し上げます。 生活保護世帯へのエアコン購入に係る町独自の助成制度は、ないのが現状となってい ます。また、生活保護制度の"
   },
   {
-    "id": "moseushi-20251003-1-032",
+    "id": "moseushi-20251003-1-034",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
-    "speaker": "田中春夫君議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "田中　春夫",
     "member_faction": "",
-    "text_length": 205,
-    "excerpt": "１つ目の体育館に関するエアコン設置について、国の２４年度補 正予算で決定された空調設備臨時交付金の制度を活用して体育館にエアコンを設置する考 えはないのか、再度お伺いいたします。 ２つ目は、多くの自治"
+    "text_length": 213,
+    "excerpt": "（田中春夫君） １つ目の体育館に関するエアコン設置について、国の２４年度補 正予算で決定された空調設備臨時交付金の制度を活用して体育館にエアコンを設置する考 えはないのか、再度お伺いいたします。 ２つ"
   },
   {
-    "id": "moseushi-20251003-1-033",
+    "id": "moseushi-20251003-1-035",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3653,7 +3159,7 @@
     "excerpt": "議員ご質問の再質問について、ご答弁申し上げます。 ２０２４年の国の補正予算での空調設備臨時交付金による整備につきましては、教育 委員会よりも情報をいただいておりますが、交付金自体の制限などもあり、これ"
   },
   {
-    "id": "moseushi-20251003-1-034",
+    "id": "moseushi-20251003-1-036",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,
@@ -3666,7 +3172,7 @@
     "excerpt": "私からは、再質問の高齢者や障がい者の低所得世帯に対 するエアコン助成についてでございますが、近年温暖化の影響により道外の市町村では生 活保護世帯に対しての実施が多くなってきておりますが、道内の市町村で"
   },
   {
-    "id": "moseushi-20251003-1-035",
+    "id": "moseushi-20251003-1-037",
     "council_id": 20251003,
     "council_name": "令和7年第3回定例会",
     "date": null,

@@ -7,6 +7,8 @@ tenant_id: 536
 """
 
 from pathlib import Path
+from datetime import date
+import argparse
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -26,15 +28,21 @@ TARGET_KEYWORDS = [
     "決算審査特別委員会",
 ]
 
-TARGET_YEARS = {"2024", "2025"}  # 令和6年・令和7年
+CURRENT_YEAR = date.today().year
+TARGET_YEARS = {str(year) for year in range(CURRENT_YEAR - 5, CURRENT_YEAR + 1)}
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--years", default=",".join(sorted(TARGET_YEARS)))
+    parser.add_argument("--force", action="store_true")
+    args = parser.parse_args()
     run_scrape(
         slug="tomakomai",
         tenant_id=TENANT_ID,
         output_dir=OUTPUT_DIR,
         target_keywords=TARGET_KEYWORDS,
-        target_years=TARGET_YEARS,
+        target_years={year for year in args.years.split(",") if year},
         request_interval=REQUEST_INTERVAL,
+        force=args.force,
     )
 
 

@@ -16,6 +16,7 @@ export type Municipality = {
   minutes_verified_at?: string;
   minutes_access?: "restricted";
   minutes_access_note?: string;
+  minutes_official_url?: string;
   council_term_end?: string;
   council_term_end_source?: string;
   council_term_end_verified_at?: string;

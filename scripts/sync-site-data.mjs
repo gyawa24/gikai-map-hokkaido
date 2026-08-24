@@ -2,6 +2,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { randomUUID } from "node:crypto";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { printBudgetSourceReminders } from "./lib/budget-source-reminders.mjs";
@@ -48,7 +49,9 @@ Options:
 Notes:
   - data/ is the collection source.
   - site/data/ is the public build copy.
-  - This script copies known public data entries and does not delete site-only overlays.
+  - This script preserves site-only overlays outside minutes/.
+  - Within minutes/, a valid source index is the publication manifest. Only index.json,
+    referenced meeting JSON, and matching enriched JSON are copied; other JSON stays local.
   - segments are not copied by default because they are large local research data.
   - After copying, the script prints reminders for public news, coverage, inventory, and source ledgers.
 `);
@@ -121,6 +124,189 @@ async function copyPath(sourcePath, destPath, dryRun) {
   return true;
 }
 
+function atomicTempPath(destPath) {
+  return path.join(
+    path.dirname(destPath),
+    `.${path.basename(destPath)}.${process.pid}.${randomUUID()}.tmp`
+  );
+}
+
+async function stageCopiedFile(sourcePath, destPath, dryRun) {
+  const stagedFile = { sourcePath, destPath, tempPath: null };
+  if (dryRun) return stagedFile;
+  await fs.mkdir(path.dirname(destPath), { recursive: true });
+  stagedFile.tempPath = atomicTempPath(destPath);
+  try {
+    await fs.copyFile(sourcePath, stagedFile.tempPath);
+    return stagedFile;
+  } catch (error) {
+    await fs.rm(stagedFile.tempPath, { force: true }).catch(() => {});
+    stagedFile.tempPath = null;
+    throw error;
+  }
+}
+
+async function stageFileContents(contents, sourcePath, destPath, dryRun) {
+  const stagedFile = { sourcePath, destPath, tempPath: null };
+  if (dryRun) return stagedFile;
+  await fs.mkdir(path.dirname(destPath), { recursive: true });
+  stagedFile.tempPath = atomicTempPath(destPath);
+  try {
+    await fs.writeFile(stagedFile.tempPath, contents);
+    return stagedFile;
+  } catch (error) {
+    await fs.rm(stagedFile.tempPath, { force: true }).catch(() => {});
+    stagedFile.tempPath = null;
+    throw error;
+  }
+}
+
+async function assertDestinationsReplaceable(stagedFiles) {
+  for (const { destPath } of stagedFiles) {
+    try {
+      const stats = await fs.lstat(destPath);
+      if (stats.isDirectory()) {
+        throw new Error(`minutes publication destination is a directory: ${rel(destPath)}`);
+      }
+    } catch (error) {
+      if (error?.code !== "ENOENT") throw error;
+    }
+  }
+}
+
+async function commitStagedFile(stagedFile, dryRun) {
+  if (dryRun) {
+    console.log(
+      `[dry-run] atomic copy ${rel(stagedFile.sourcePath)} -> ${rel(stagedFile.destPath)}`
+    );
+    return;
+  }
+  await fs.rename(stagedFile.tempPath, stagedFile.destPath);
+  stagedFile.tempPath = null;
+  console.log(`copied atomically ${rel(stagedFile.sourcePath)} -> ${rel(stagedFile.destPath)}`);
+}
+
+async function cleanupStagedFiles(stagedFiles) {
+  await Promise.all(
+    stagedFiles
+      .filter((stagedFile) => stagedFile?.tempPath)
+      .map((stagedFile) => fs.rm(stagedFile.tempPath, { force: true }).catch(() => {}))
+  );
+}
+
+async function listJsonFiles(baseDir) {
+  if (!(await pathExists(baseDir))) return [];
+  const files = [];
+  async function visit(currentDir) {
+    const entries = await fs.readdir(currentDir, { withFileTypes: true });
+    for (const entry of entries) {
+      const filePath = path.join(currentDir, entry.name);
+      if (entry.isDirectory()) await visit(filePath);
+      else if (entry.isFile() && entry.name.endsWith(".json")) {
+        files.push(path.relative(baseDir, filePath));
+      }
+    }
+  }
+  await visit(baseDir);
+  return files.sort();
+}
+
+async function publicationMinutesFiles(sourceIndex, sourceDir) {
+  const files = new Set(["index.json"]);
+  for (const entry of sourceIndex) {
+    const file = typeof entry?.file === "string" ? entry.file.trim() : "";
+    if (!/^[^/\\]+\.json$/u.test(file)) {
+      throw new Error(`minutes index contains an unsafe file reference: ${file || "(empty)"}`);
+    }
+    if (!(await pathExists(path.join(sourceDir, file)))) {
+      throw new Error(`minutes index references missing meeting JSON: ${rel(path.join(sourceDir, file))}`);
+    }
+    files.add(file);
+    const enrichedFile = path.join("enriched", file);
+    if (await pathExists(path.join(sourceDir, enrichedFile))) {
+      files.add(enrichedFile);
+    }
+  }
+  return files;
+}
+
+export async function pruneStaleMinutesJson(sourceDir, destDir, options = {}) {
+  if (!(await pathExists(destDir))) return [];
+  let publishedFiles = options.publishedFiles;
+  if (!publishedFiles) {
+    if (!(await pathExists(sourceDir))) return [];
+    const sourceIndexPath = path.join(sourceDir, "index.json");
+    if (!(await pathExists(sourceIndexPath))) return [];
+    const sourceIndex = await readJson(sourceIndexPath);
+    if (!Array.isArray(sourceIndex)) {
+      throw new Error(`${rel(sourceIndexPath)} must contain a JSON array before minutes pruning`);
+    }
+    publishedFiles = await publicationMinutesFiles(sourceIndex, sourceDir);
+  }
+  const staleFiles = (await listJsonFiles(destDir)).filter(
+    (relativePath) => !publishedFiles.has(relativePath)
+  );
+  for (const relativePath of staleFiles) {
+    const targetPath = path.join(destDir, relativePath);
+    if (options.dryRun) console.log(`[dry-run] remove stale ${rel(targetPath)}`);
+    else {
+      await fs.unlink(targetPath);
+      console.log(`removed stale ${rel(targetPath)}`);
+    }
+  }
+  return staleFiles;
+}
+
+export async function syncPublishedMinutes(sourceDir, destDir, dryRun = false) {
+  if (!(await pathExists(sourceDir))) return false;
+  const sourceIndexPath = path.join(sourceDir, "index.json");
+  if (!(await pathExists(sourceIndexPath))) {
+    return copyPath(sourceDir, destDir, dryRun);
+  }
+  const sourceIndexContents = await fs.readFile(sourceIndexPath, "utf8");
+  const sourceIndex = JSON.parse(sourceIndexContents);
+  if (!Array.isArray(sourceIndex)) {
+    throw new Error(`${rel(sourceIndexPath)} must contain a JSON array before minutes sync`);
+  }
+
+  const publishedFiles = await publicationMinutesFiles(sourceIndex, sourceDir);
+  const stagedBodies = [];
+  let stagedIndex;
+  try {
+    for (const relativePath of publishedFiles) {
+      if (relativePath === "index.json") continue;
+      const sourcePath = path.join(sourceDir, relativePath);
+      try {
+        stagedBodies.push(
+          await stageCopiedFile(sourcePath, path.join(destDir, relativePath), dryRun)
+        );
+      } catch (error) {
+        if (await pathExists(sourcePath)) throw error;
+        throw new Error(`minutes publication file disappeared during sync: ${rel(sourcePath)}`);
+      }
+    }
+    stagedIndex = await stageFileContents(
+      sourceIndexContents,
+      sourceIndexPath,
+      path.join(destDir, "index.json"),
+      dryRun
+    );
+    await assertDestinationsReplaceable([...stagedBodies, stagedIndex]);
+
+    // The filesystem cannot commit multiple renames as one transaction. Staging and
+    // preflight remove deterministic failures; an external failure during commit is surfaced.
+    for (const stagedBody of stagedBodies) {
+      await commitStagedFile(stagedBody, dryRun);
+    }
+    await commitStagedFile(stagedIndex, dryRun);
+  } catch (error) {
+    await cleanupStagedFiles([...stagedBodies, stagedIndex]);
+    throw error;
+  }
+  await pruneStaleMinutesJson(sourceDir, destDir, { dryRun, publishedFiles });
+  return true;
+}
+
 async function syncMunicipalities(dryRun) {
   await copyPath(ROOT_MUNICIPALITIES_PATH, SITE_MUNICIPALITIES_PATH, dryRun);
 }
@@ -142,7 +328,14 @@ async function syncSlug(slug, dryRun) {
   let copied = 0;
   const entries = optionsForSync.includeSegments ? [...SYNC_ENTRIES, "segments"] : SYNC_ENTRIES;
   for (const entry of entries) {
-    const didCopy = await copyPath(path.join(sourceDir, entry), path.join(destDir, entry), dryRun);
+    const sourcePath = path.join(sourceDir, entry);
+    const destPath = path.join(destDir, entry);
+    if (entry === "minutes") {
+      const didCopy = await syncPublishedMinutes(sourcePath, destPath, dryRun);
+      if (didCopy) copied += 1;
+      continue;
+    }
+    const didCopy = await copyPath(sourcePath, destPath, dryRun);
     if (didCopy) copied += 1;
   }
   console.log(`synced ${slug}: ${copied} public entries`);
@@ -229,7 +422,9 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exit(1);
+  });
+}

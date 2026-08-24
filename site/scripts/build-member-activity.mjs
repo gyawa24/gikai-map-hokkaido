@@ -134,11 +134,10 @@ function findMember(raw, { allowSeat = false } = {}) {
     return null;
   }
 
-  // 4. 姓のみ3文字以上でも前方一致を試みる
-  const byPrefix = memberNames.find((n) => n.startsWith(normalized.slice(0, 2)));
-  if (byPrefix && normalized.length >= 2) {
-    // 曖昧すぎる（佐々木昭 vs 佐々木雅宏）は除外
-    const candidates = memberNames.filter((n) => n.startsWith(normalized.slice(0, 2)));
+  // 4. 姓のみ3文字以上でも、入力全体が氏名の前方と一致するときだけ採用する。
+  //    先頭2文字だけでは、旧議員のフルネームを同姓の現職へ誤帰属させる。
+  if (normalized.length >= 3) {
+    const candidates = memberNames.filter((n) => n.startsWith(normalized));
     if (candidates.length === 1) return candidates[0];
   }
 
@@ -148,6 +147,10 @@ function findMember(raw, { allowSeat = false } = {}) {
 function uniqueTopics(items) {
   return Array.from(new Set(items.map((item) => String(item ?? "").trim()).filter(Boolean)));
 }
+
+const MAX_SESSION_CANONICAL_TOPICS = 24;
+const MAX_SESSION_GENERATED_TOPICS = 24;
+const MAX_MEMBER_GENERATED_TOPICS = 80;
 
 function extractTopicsFromText(text) {
   const source = String(text ?? "").replace(/\s+/g, " ").trim();
@@ -264,6 +267,14 @@ function mergeSession(current, next) {
       ...(current.summary_topics ?? []),
       ...(next.summary_topics ?? []),
     ]),
+    canonical_topics: uniqueTopics([
+      ...(current.canonical_topics ?? []),
+      ...(next.canonical_topics ?? []),
+    ]).slice(0, MAX_SESSION_CANONICAL_TOPICS),
+    generated_topics: uniqueTopics([
+      ...(current.generated_topics ?? []),
+      ...(next.generated_topics ?? []),
+    ]).slice(0, MAX_SESSION_GENERATED_TOPICS),
     dates,
     date: dates[0] ?? current.date ?? next.date,
     topic_details: mergeTopicDetails(current.topic_details, next.topic_details),
@@ -293,11 +304,13 @@ function addActivity(memberName, identity, session) {
 const enrichedFiles = loadEnrichedFiles();
 const enrichedMembersByCouncil = new Map();
 const enrichedSupplements = new Map();
+const generatedTopicsByMember = new Map();
 if (enrichedFiles.length > 0) {
   for (const file of enrichedFiles) {
     const data = JSON.parse(fs.readFileSync(path.join(enrichedDir, file), "utf-8"));
     const sessionName = data.name;
     const councilId = data.council_id;
+    if (!minutesByCouncilId.has(String(councilId))) continue;
     const councilMembers = enrichedMembersByCouncil.get(String(councilId)) ?? new Set();
 
     for (const q of (data.questioners ?? [])) {
@@ -311,9 +324,10 @@ if (enrichedFiles.length > 0) {
       }
       councilMembers.add(memberName);
       const allTopics = uniqueTopics([
-        ...(q.topics ?? []),
-        ...(q.ai_topics ?? []),
-      ]);
+        ...(Array.isArray(q.topics) ? q.topics : []),
+        ...(Array.isArray(q.ai_topics) ? q.ai_topics : []),
+      ])
+        .slice(0, MAX_SESSION_CANONICAL_TOPICS);
       const supplementKey = `${councilId}:${memberName}`;
       const current = enrichedSupplements.get(supplementKey) ?? {
         councilId: Number(councilId),
@@ -339,6 +353,7 @@ const segmentsByCouncil = new Map();
 for (const rawCouncilId of councilIds) {
   const councilId = Number(rawCouncilId);
   if (!Number.isFinite(councilId)) continue;
+  if (!minutesByCouncilId.has(String(councilId))) continue;
   const fp = path.join(segmentsDir, `${councilId}.json`);
   const segments = readJson(fp, []);
   if (!Array.isArray(segments)) continue;
@@ -349,10 +364,19 @@ function rawMinuteText(minute) {
   return String(minute?.text ?? minute?.title ?? "");
 }
 
-function individualQuestionMarker(minute) {
+function chairStatementText(minute) {
+  const text = rawMinuteText(minute);
+  const title = String(minute?.title ?? "").trim();
+  for (const prefix of [`○${title}`, title]) {
+    if (title && text.startsWith(prefix)) return text.slice(prefix.length).trimStart();
+  }
+  return text;
+}
+
+function explicitIndividualQuestionMarker(minute) {
   if (minute?.minute_type !== "△議題") return null;
   const compact = rawMinuteText(minute).replace(/[　\s]/g, "");
-  const match = compact.match(/^△?(.+?)議員の(一般質問|代表質問)/u);
+  const match = compact.match(/^△?(.+?)(?:議員|委員)の(一般質問|代表質問)/u);
   if (!match) return null;
   return {
     rawName: match[1],
@@ -363,20 +387,160 @@ function individualQuestionMarker(minute) {
 }
 
 function genericQuestionAgendaKind(minute) {
-  if (minute?.minute_type !== "△議題" || individualQuestionMarker(minute)) return null;
   const compact = rawMinuteText(minute).replace(/[　\s]/g, "");
-  if (/代表質問/u.test(compact)) return "representative_question";
-  if (/一般質問/u.test(compact)) return "general_question";
+  if (minute?.minute_type === "△議題") {
+    if (/代表質問/u.test(compact)) return "representative_question";
+    if (/(?:一般|個人)質問/u.test(compact)) return "general_question";
+    return null;
+  }
+  if (!isChairMinute(minute)) return null;
+  if (/代表質問(?:の議事)?(?:を)?(?:行います|継続(?:いた)?します|続行(?:いた)?します|続けたいと思います)/u.test(compact)) {
+    return "representative_question";
+  }
+  if (/(?:一般|個人)質問(?:の議事)?(?:を)?(?:行います|継続(?:いた)?します|続行(?:いた)?します|続けたいと思います)/u.test(compact)) {
+    return "general_question";
+  }
   return null;
+}
+
+function closesPersonalQuestionAgenda(minute) {
+  if (genericQuestionAgendaKind(minute)) return false;
+  if (minute?.minute_type === "△議題") {
+    const title = String(minute?.title ?? rawMinuteText(minute)).replace(/[　\s]/g, "");
+    if (/^(?:(?:休憩|再開)(?:宣告)?|発言の訂正|議事進行の動議|会議時間の延長(?:について)?)$/u.test(title)) return false;
+    if (/(?:議員|委員|君|氏)$/u.test(title)) return false;
+    return true;
+  }
+  if (!isChairMinute(minute)) return false;
+  const statement = chairStatementText(minute).replace(/[　\s]/g, "");
+  if (/^(?:引き続き、?|次に、?)?日程第[^。]{0,24}(?:一般|代表|個人)質問/u.test(statement)) {
+    return false;
+  }
+  return /^(?:引き続き、?|次に、?)?日程第/u.test(statement)
+    || /^(?:引き続き、?)?(?:議案|意見書案|請願|陳情|報告)第?[0-9０-９一二三四五六七八九十]+[^。]{0,80}(?:議題|一括議題)/u.test(statement);
 }
 
 function isChairMinute(minute) {
   return minute?.minute_type === "○議長" || String(minute?.title ?? "").endsWith("議長");
 }
 
+function announcedQuestionerMarker(minute, activeKind) {
+  if (!activeKind || !isChairMinute(minute)) return null;
+  const compact = chairStatementText(minute).replace(/[　\s]/g, "");
+  const matches = [...compact.matchAll(
+    /([\p{L}々ヶヵ・]{1,24})(?:議員|委員|君|氏)の質問を(?:許可(?:いた)?します|許します)/gu
+  )];
+  const rawName = matches.at(-1)?.[1];
+  return rawName ? { rawName, questionKind: activeKind } : null;
+}
+
+function individualQuestionMarker(minute, activeKind = null) {
+  return explicitIndividualQuestionMarker(minute)
+    ?? announcedQuestionerMarker(minute, genericQuestionAgendaKind(minute) ?? activeKind);
+}
+
+function individualQuestionEndingMatches(minute) {
+  if (!isChairMinute(minute)) return [];
+  return [...chairStatementText(minute).replace(/[　\s]/g, "").matchAll(
+    /(?:([\p{L}々ヶヵ・0-9０-９（()）]{1,34}?)(?:議員|委員|議|君|氏)(?:の)?|([0-9０-９]+番)(?:の)?)(?:(一般|代表|再|個人)?(?:質問|質疑)|発言)(?:は|を|が)?(?:これで)?(?:終了(?:いた)?し(?:ます|ました)|終わ?り(?:ます|ました)|終え(?:ます|ました)|終結(?:いた)?し(?:ます|ました)|了(?:し|いたし)?ました)/gu
+  )];
+}
+
 function isIndividualQuestionEnd(minute) {
-  return isChairMinute(minute)
-    && /議員の(?:一般|代表)?質問を終わります/u.test(rawMinuteText(minute));
+  return individualQuestionEndingMatches(minute).length > 0;
+}
+
+function normalizeEndingReference(raw) {
+  return String(raw ?? "")
+    .replace(/[　\s]/g, "")
+    .replace(/^[0-9０-９]+番[、，]?/u, "")
+    .replace(/[（()）]/g, "")
+    .replace(/[、，。・]/g, "")
+    .trim();
+}
+
+function endingReferenceMatchesMember(raw, memberName) {
+  const reference = normalizeEndingReference(raw);
+  for (let offset = 0; offset < reference.length; offset += 1) {
+    const suffix = reference.slice(offset);
+    if (suffix.length < 2) continue;
+    if (
+      memberName === suffix
+      || memberName.startsWith(suffix)
+      || suffix.startsWith(memberName)
+    ) return true;
+  }
+  return false;
+}
+
+function resolveMemberFromNameSuffix(raw) {
+  const normalized = normalizeQuestioner(raw);
+  for (let offset = 0; offset < normalized.length; offset += 1) {
+    const candidate = normalized.slice(offset);
+    if (!candidate) continue;
+    const memberName = findMember(candidate);
+    if (memberName) return memberName;
+  }
+  return null;
+}
+
+function declaredQuestionEndings(minute, activeKind) {
+  const endings = [];
+  for (const match of individualQuestionEndingMatches(minute)) {
+    const rawName = match[1] ?? match[2];
+    const memberName = resolveMemberFromNameSuffix(rawName);
+    const questionKind = match[3] === "代表"
+      ? "representative_question"
+      : match[3] === "一般" || match[3] === "個人"
+        ? "general_question"
+        : activeKind;
+    if (!questionKind) continue;
+    endings.push({ rawName, memberName, questionKind });
+  }
+  return endings;
+}
+
+function resolveEndingMemberInRange(ending, minutes, startIndex, endIndex) {
+  const hasQuestionTurn = (memberName) => minutes
+    .slice(startIndex, endIndex)
+    .some((minute, offset) =>
+      minute?.minute_type === "◆質問"
+      && speakerMatchesCanonical(minute.title, memberName)
+      && !isNonQuestionTurnAt(minutes, startIndex + offset)
+    );
+  if (ending.memberName && hasQuestionTurn(ending.memberName)) return ending.memberName;
+  const candidates = memberNames.filter((memberName) =>
+    endingReferenceMatchesMember(ending.rawName, memberName)
+    && hasQuestionTurn(memberName)
+  );
+  if (candidates.length === 1) return candidates[0];
+  if (/^[0-9０-９]+番$/u.test(ending.rawName)) {
+    const supported = memberNames.filter(hasQuestionTurn);
+    if (supported.length === 1) return supported[0];
+  }
+  return null;
+}
+
+function isQuestionProgramEnd(minute) {
+  if (!isChairMinute(minute)) return false;
+  const statements = chairStatementText(minute)
+    .replace(/[　\s]/g, "")
+    .split(/[。！？]/u)
+    .filter(Boolean);
+  return statements.some((statement) => {
+    if (/(?:全て|すべて)の議員の(?:一般|代表)質問/u.test(statement)) return true;
+    if (/(?:以上で|以上をもって|これをもちまして|これにて)(?:(?!(?:議員|委員|君|氏))[^。]){0,100}(?:一般|代表|個人)質問(?:は|を)?(?:全て|すべて)?(?:終了|終結|終わ)/u.test(statement)) {
+      return true;
+    }
+    for (const match of statement.matchAll(/(?:一般|代表|個人)質問/gu)) {
+      const prefix = statement.slice(0, match.index);
+      if (/(?:議員|委員|君|氏)/u.test(prefix)) continue;
+      if (/(?:一般|代表|個人)質問(?:は|を)?(?:全て|すべて)?(?:終了|終結|終わ)/u.test(statement.slice(match.index))) {
+        return true;
+      }
+    }
+    return false;
+  });
 }
 
 function speakerMatchesCanonical(rawSpeaker, canonicalName) {
@@ -393,6 +557,109 @@ function uniqueNumbers(values) {
   return [...new Set(values.map(Number).filter(Number.isFinite))];
 }
 
+function buildPersonalQuestionMarkers(minutes) {
+  const markers = new Map();
+  let activeKind = null;
+  for (let index = 0; index < minutes.length; index += 1) {
+    if (activeKind && closesPersonalQuestionAgenda(minutes[index])) activeKind = null;
+    activeKind = genericQuestionAgendaKind(minutes[index]) ?? activeKind;
+    const marker = individualQuestionMarker(minutes[index], activeKind);
+    if (marker) markers.set(index, marker);
+    if (isQuestionProgramEnd(minutes[index])) activeKind = null;
+  }
+  return markers;
+}
+
+function buildDeclaredEndingBlocks(meeting, schedule, minutes, markers, covered) {
+  const blocks = [];
+  let activeKind = null;
+  let programStartIndex = 0;
+  let previousEndingIndex = -1;
+
+  for (let endIndex = 0; endIndex < minutes.length; endIndex += 1) {
+    if (activeKind && closesPersonalQuestionAgenda(minutes[endIndex])) {
+      activeKind = null;
+      programStartIndex = endIndex + 1;
+      previousEndingIndex = -1;
+    }
+    const agendaKind = genericQuestionAgendaKind(minutes[endIndex]);
+    if (agendaKind) {
+      if (agendaKind !== activeKind) {
+        previousEndingIndex = -1;
+        programStartIndex = endIndex;
+      }
+      activeKind = agendaKind;
+    }
+
+    const endings = declaredQuestionEndings(minutes[endIndex], activeKind);
+    const seen = new Set();
+    for (const ending of endings) {
+      const boundaryStart = Math.max(
+        programStartIndex,
+        previousEndingIndex >= 0 ? previousEndingIndex : programStartIndex
+      );
+      const memberName = resolveEndingMemberInRange(ending, minutes, boundaryStart, endIndex);
+      if (!memberName) continue;
+      const endingKey = `${ending.questionKind}:${memberName}`;
+      if (seen.has(endingKey)) continue;
+      seen.add(endingKey);
+
+      const speakerTurnIndices = [];
+      const questionTurnIndices = [];
+      for (let index = boundaryStart; index < endIndex; index += 1) {
+        const minute = minutes[index];
+        if (
+          minute?.minute_type === "◆質問"
+          && speakerMatchesCanonical(minute.title, memberName)
+        ) {
+          speakerTurnIndices.push(index);
+          if (!isNonQuestionTurnAt(minutes, index)) questionTurnIndices.push(index);
+        }
+      }
+      if (questionTurnIndices.length === 0) continue;
+
+      const firstTurnIndex = speakerTurnIndices[0];
+      let markerIndex = firstTurnIndex;
+      for (const [candidateIndex, marker] of markers) {
+        if (candidateIndex < boundaryStart || candidateIndex > firstTurnIndex) continue;
+        const markerMember = resolveMemberFromNameSuffix(marker.rawName);
+        if (
+          markerMember === memberName
+          && marker.questionKind === ending.questionKind
+        ) {
+          markerIndex = candidateIndex;
+        }
+      }
+
+      for (let index = markerIndex; index < endIndex; index += 1) covered.add(index);
+      blocks.push({
+        councilId: Number(meeting.council_id),
+        sessionName: meeting.name,
+        year: String(meeting.year ?? yearFromMeetingName(meeting.name)),
+        scheduleId: Number(schedule.schedule_id),
+        scheduleName: schedule.name ?? "",
+        blockId: `s${schedule.schedule_id}-m${minutes[markerIndex].minute_id}`,
+        questionKind: ending.questionKind,
+        memberName,
+        agendaTitle: ending.questionKind === "representative_question" ? "代表質問" : "一般質問",
+        minuteIds: uniqueNumbers(questionTurnIndices.map((index) => minutes[index].minute_id)),
+        markerMinuteId: Number(minutes[markerIndex].minute_id),
+        endMinuteId: Number(minutes[endIndex].minute_id),
+        closureMethod: "chair_declaration",
+      });
+    }
+
+    if (isIndividualQuestionEnd(minutes[endIndex])) previousEndingIndex = endIndex;
+    if (isQuestionProgramEnd(minutes[endIndex])) {
+      activeKind = null;
+      programStartIndex = endIndex + 1;
+      previousEndingIndex = -1;
+    }
+  }
+
+  return blocks;
+}
+
 function parsePersonalQuestionBlocks(meeting) {
   const blocks = [];
   const coveredBySchedule = new Map();
@@ -400,16 +667,25 @@ function parsePersonalQuestionBlocks(meeting) {
   for (const schedule of meeting.schedules ?? []) {
     const minutes = schedule.minutes ?? [];
     const covered = new Set();
+    const markers = buildPersonalQuestionMarkers(minutes);
     coveredBySchedule.set(Number(schedule.schedule_id), covered);
 
+    blocks.push(...buildDeclaredEndingBlocks(meeting, schedule, minutes, markers, covered));
+
     for (let index = 0; index < minutes.length; index += 1) {
-      const marker = individualQuestionMarker(minutes[index]);
-      if (!marker) continue;
+      const marker = markers.get(index);
+      if (!marker || covered.has(index)) continue;
+      const memberName = findMember(marker.rawName);
 
       let endIndex = minutes.length - 1;
       let closureMethod = "schedule_end";
       for (let cursor = index + 1; cursor < minutes.length; cursor += 1) {
-        if (individualQuestionMarker(minutes[cursor])) {
+        if (isQuestionProgramEnd(minutes[cursor])) {
+          endIndex = cursor;
+          closureMethod = "question_program_end";
+          break;
+        }
+        if (markers.has(cursor)) {
           endIndex = cursor - 1;
           closureMethod = "next_question_marker";
           break;
@@ -419,16 +695,25 @@ function parsePersonalQuestionBlocks(meeting) {
           closureMethod = "chair_declaration";
           break;
         }
+        const nextMember = minutes[cursor]?.minute_type === "◆質問"
+          && !isNonQuestionTurnAt(minutes, cursor)
+          ? findMember(minutes[cursor].title, { allowSeat: true })
+          : null;
+        if (nextMember && nextMember !== memberName) {
+          endIndex = cursor - 1;
+          closureMethod = "next_question_speaker";
+          break;
+        }
       }
       for (let cursor = index; cursor <= endIndex; cursor += 1) covered.add(cursor);
 
-      const memberName = findMember(marker.rawName);
       if (memberName) {
         const minuteIds = minutes
           .slice(index + 1, endIndex + 1)
-          .filter((minute) =>
+          .filter((minute, offset) =>
             minute.minute_type === "◆質問"
             && speakerMatchesCanonical(minute.title, memberName)
+            && !isNonQuestionTurnAt(minutes, index + 1 + offset)
           )
           .map((minute) => minute.minute_id);
         if (minuteIds.length > 0) {
@@ -456,15 +741,31 @@ function parsePersonalQuestionBlocks(meeting) {
     // 境界にする。531吉谷のような欠落を、本文キーワードだけで推測しないためのfallback。
     let activeKind = null;
     for (let index = 0; index < minutes.length; index += 1) {
+      if (activeKind && closesPersonalQuestionAgenda(minutes[index])) activeKind = null;
       activeKind = genericQuestionAgendaKind(minutes[index]) ?? activeKind;
-      if (!activeKind || covered.has(index) || minutes[index]?.minute_type !== "◆質問") continue;
+      if (isQuestionProgramEnd(minutes[index])) {
+        activeKind = null;
+        continue;
+      }
+      if (isIndividualQuestionEnd(minutes[index])) continue;
+      if (
+        !activeKind
+        || covered.has(index)
+        || minutes[index]?.minute_type !== "◆質問"
+        || isNonQuestionTurnAt(minutes, index)
+      ) continue;
 
       const memberName = findMember(minutes[index].title, { allowSeat: true });
       if (!memberName) continue;
       let endIndex = minutes.length - 1;
       let closureMethod = "schedule_end";
       for (let cursor = index + 1; cursor < minutes.length; cursor += 1) {
-        if (individualQuestionMarker(minutes[cursor])) {
+        if (isQuestionProgramEnd(minutes[cursor])) {
+          endIndex = cursor;
+          closureMethod = "question_program_end";
+          break;
+        }
+        if (markers.has(cursor)) {
           endIndex = cursor - 1;
           closureMethod = "next_question_marker";
           break;
@@ -472,6 +773,15 @@ function parsePersonalQuestionBlocks(meeting) {
         if (isIndividualQuestionEnd(minutes[cursor])) {
           endIndex = cursor;
           closureMethod = "chair_declaration";
+          break;
+        }
+        const nextMember = minutes[cursor]?.minute_type === "◆質問"
+          && !isNonQuestionTurnAt(minutes, cursor)
+          ? findMember(minutes[cursor].title, { allowSeat: true })
+          : null;
+        if (nextMember && nextMember !== memberName) {
+          endIndex = cursor - 1;
+          closureMethod = "next_question_speaker";
           break;
         }
       }
@@ -482,6 +792,7 @@ function parsePersonalQuestionBlocks(meeting) {
         if (
           minute?.minute_type === "◆質問"
           && speakerMatchesCanonical(minute.title, memberName)
+          && !isNonQuestionTurnAt(minutes, cursor)
         ) {
           minuteIds.push(minute.minute_id);
         }
@@ -503,38 +814,185 @@ function parsePersonalQuestionBlocks(meeting) {
           closureMethod,
         });
       }
+      if (closureMethod === "question_program_end") activeKind = null;
       index = endIndex;
     }
   }
 
-  return { blocks, coveredBySchedule };
+  const byMemberBoundary = new Map();
+  for (const block of blocks) {
+    const key = [block.councilId, block.scheduleId, block.questionKind, block.memberName].join(":");
+    const current = byMemberBoundary.get(key);
+    if (!current) {
+      byMemberBoundary.set(key, block);
+      continue;
+    }
+    const first = Number(block.markerMinuteId) < Number(current.markerMinuteId) ? block : current;
+    const last = Number(block.endMinuteId) > Number(current.endMinuteId) ? block : current;
+    byMemberBoundary.set(key, {
+      ...first,
+      blockId: `s${first.scheduleId}-m${first.markerMinuteId}`,
+      minuteIds: uniqueNumbers([...current.minuteIds, ...block.minuteIds]),
+      endMinuteId: last.endMinuteId,
+      closureMethod: last.closureMethod,
+    });
+  }
+  return { blocks: [...byMemberBoundary.values()], coveredBySchedule };
 }
 
 function isPlenaryQuestionStart(minute) {
-  return isChairMinute(minute)
-    && /ただいまから[^。\n]*質疑を行います/u.test(rawMinuteText(minute));
+  if (!isChairMinute(minute)) return false;
+  const text = rawMinuteText(minute);
+  return /ただいまから[^。\n]*質疑を行います/u.test(text)
+    || /(?:第[0-9０-９一二三四五六七八九十]+款|同款)[^。\n]{0,80}質疑(?:に付します|を続行(?:いた)?します)/u.test(text);
+}
+
+function plenaryScopeMarker(minute) {
+  const compact = rawMinuteText(minute).normalize("NFKC").replace(/[　\s]/g, "");
+  const explicit = compact.match(/第([0-9一二三四五六七八九十]+)款/u);
+  if (explicit) return { type: "explicit", key: `款:${explicit[1]}` };
+  if (/同款[^。\n]{0,80}質疑を続行(?:いた)?します/u.test(compact)) {
+    return { type: "same", key: null };
+  }
+  return { type: "other", key: null };
 }
 
 function isOverallPlenaryQuestionEnd(minute) {
   const text = rawMinuteText(minute);
   return isChairMinute(minute)
-    && /質疑を終わります/u.test(text)
-    && !/[一-龠々ぁ-んァ-ヶ]+議員の質疑を終わります/u.test(text);
+    && (
+      /質疑終結(?:いた)?しました/u.test(text)
+      || (
+        /質疑を終わります/u.test(text)
+        && !/[一-龠々ぁ-んァ-ヶ]+議員の質疑を終わります/u.test(text)
+      )
+    );
 }
 
 function isRawQuestionCapableMeeting(meeting) {
   return (meeting.schedules ?? []).some((schedule) =>
     (schedule.minutes ?? []).some((minute) =>
-      individualQuestionMarker(minute)
+      explicitIndividualQuestionMarker(minute)
       || genericQuestionAgendaKind(minute)
       || isPlenaryQuestionStart(minute)
     )
   );
 }
 
+function isPureCorrectionOrWithdrawal(text) {
+  if (text.length > 240) return false;
+  const action = text.match(
+    /(?:訂正とおわびを申し上げます?|訂正(?:いたします|します|させていただきます)|(?:発言|質問|質疑)[\s\S]{0,220}?(?:撤回(?:したい|します|いたします)|取り?消し(?:たい|ます|いたします)|却下(?:します|いたします)))/u
+  );
+  if (!action) return false;
+  const tail = text
+    .slice((action.index ?? 0) + action[0].length)
+    .replace(/^[\s　。！？、，]+/u, "");
+  return !/(?:伺|お聞き|お尋ね|(?:お)?教えて|お教え|お知らせ|説明(?:を)?(?:願|いただ)|お願いしたい|いかが|どう(?:でしょう|です)|でしょうか|ですか|ますか)/u.test(tail);
+}
+
+function hasSubstantiveQuestionSignal(text) {
+  const withoutClosings = String(text ?? "")
+    .replace(/質問(?:は|を)?(?:しません|いたしません|しない|いたさない|するつもりはありません)/gu, "")
+    .replace(/(?:(?:私|以上|これ)の)?(?:質問|質疑)(?:を|は)?(?:終わ(?:ります|りたいと思います|らせていただきます)|終了(?:します|いたします))/gu, "");
+  return /(?:質問|質疑|伺|聞|尋|問(?:い|う|え|わせ|われ)|答(?:え|弁)|御?見解|御?所見|御?説明|教|知らせ|示|確認|いかが|どう|どの(?:よう|くらい|程度|ぐらい)|何(?:件|人|割|点|回|年|月|日|円|％|パーセント)|[?？]|(?:の|なの|なのです|です|ます|ません|でしょう)か(?:[、。？！]|$))/u.test(withoutClosings);
+}
+
+function isExplicitNoQuestionClosing(text) {
+  const negative = String(text ?? "").match(
+    /質問(?:は|を)?(?:しません|いたしません|しない|いたさない|するつもりはありません)/u
+  );
+  if (!negative) return false;
+  const remainder = text.slice((negative.index ?? 0) + negative[0].length);
+  const asksAfterward = /(?:質問(?:します|いたします|があります)|質疑(?:します|いたします)|伺|聞(?:き|かせ)|尋ね|問(?:い|う|わせ)|答(?:え|弁)|御?見解|御?所見|いかが|どう|どの(?:よう|程度|くらい|ぐらい)|何(?:件|人|割|点|回|年|月|日|円|％)|[?？]|(?:の|なの|です|ます|ません|でしょう)か(?:[、。？！]|$))/u.test(remainder);
+  const compact = text.replace(/[\s　]+/g, "");
+  return !asksAfterward
+    && /(?:終わ(?:ります|りたい)|以上(?:です|であります))[^。]*[。！]?$/u.test(compact);
+}
+
+function hasTerminalNoAnswerClosing(text) {
+  const compact = String(text ?? "").replace(/[\s　]+/g, "");
+  const questionClose = /(?:(?:私|以上|これ)(?:から)?の)?(?:質問|質疑)(?:を|は)?[、，]?(?:これで)?(?:終わ(?:ります|りたい(?:と思います)?|らせていただき(?:ます|たいと思います))|終え(?:ます|たい(?:と思います)?)|終了(?:します|いたします|させていただき(?:ます|たいと思います)))(?:[。！]*(?:どうも)?ありがとうございました)?(?:[。！]*以上です)?[。！]*$/u;
+  const bareClose = /(?:これで)?終わ(?:ります|りたい(?:と思います)?|らせていただき(?:ます|たいと思います))[。！]*(?:ありがとうございました[。！]*)?(?:以上です[。！]*)?$/u;
+  return questionClose.test(compact) || bareClose.test(compact);
+}
+
+function hasResponseBeforeNextQuestionBoundary(minutes, index) {
+  for (let cursor = index + 1; cursor < minutes.length; cursor += 1) {
+    const minute = minutes[cursor];
+    const text = rawMinuteText(minute);
+    if (minute?.minute_type === "◎答弁" || /^◎/u.test(text)) return true;
+    if (
+      isChairMinute(minute)
+      && /(?:答弁を求め|答弁願|御?答弁(?:を|願)|お答え(?:を|願)|説明を求め)/u.test(text)
+    ) {
+      return true;
+    }
+    if (minute?.minute_type === "◆質問" || minute?.minute_type === "△議題") return false;
+    if (
+      isChairMinute(minute)
+      && /(?:他に|次に|質疑終結|質疑を(?:保留|終わ)|暫時休憩|散会|質問(?:は|を)?(?:終了|終結|終わ)|議員(?:の質問)?を許)/u.test(text)
+    ) {
+      return false;
+    }
+  }
+  return false;
+}
+
 function isClearlyNonQuestionRoleTurn(minute) {
   const text = rawMinuteText(minute).replace(/^[◆△◎○][^　\s]*[　\s]*/, "").trim();
-  return /(?:反対|賛成)(?:する)?立場から討論|討論を(?:行|させて)|この際[、，]?動議を提出|指名いたします|御説明申し上げます|^少数意見報告書|^報告いたします/u.test(text);
+  if (isPureCorrectionOrWithdrawal(text)) return true;
+  if (/^(?:以上です|これで)?終わります[。！]?$/u.test(text)) return true;
+  if (/^御異議なしと認め|本日はこれをもちまして散会/u.test(text)) return true;
+  if (text.length <= 80 && !/(?:質問|質疑|伺|お聞き|お尋ね)/u.test(text) && /^(?:分かりました|了解しました|ありがとうございます)[^。]*(?:よろしく|結構|以上)/u.test(text)) {
+    return true;
+  }
+  if (/(?:反対|賛成)(?:する)?立場から討論|討論を(?:行|させて)|動議を(?:提出|かけ|発議)|議会運営委員会を開いて(?:協議|調査)|指名いたします|御説明申し上げます|^少数意見報告書|^(?:御)?報告(?:いた|申し上げ)ます/u.test(text)) {
+    return true;
+  }
+  if (isExplicitNoQuestionClosing(text)) return true;
+  const hasQuestionSignal = hasSubstantiveQuestionSignal(text);
+  const compact = text.replace(/[\s　]+/g, "");
+  if (!hasQuestionSignal) {
+    if (
+      text.length <= 220
+      && /(?:以上(?:です|で(?:、)?(?:終わ|終わり)|であります)|(?:(?:私|以上|これ)の)?(?:質問|質疑)(?:を|は)?終わ(?:ります|りたいと思います|らせていただきます)|終わ(?:ります|りたいと思います|らせていただきます)|ありがとうございました|よろしく(?:お願い(?:いた)?します|頼みます)|お願い(?:いた)?します)[。！]*(?:ありがとうございました[。！]*)?(?:以上です[。！]*)?$/u.test(compact)
+    ) {
+      return true;
+    }
+    if (
+      /(?:要望|指摘)(?:を)?(?:して|させていただいて|いたしまして)[^。]{0,55}(?:(?:(?:私|以上|これ)の)?(?:質問|質疑)(?:を|は)?)?(?:終わ(?:ります|りたい)|以上(?:です|であります))(?:ありがとうございました[。！]*)?(?:以上です[。！]*)?$/su.test(compact)
+    ) {
+      return true;
+    }
+  }
+  return !hasQuestionSignal && (
+    /自己紹介(?:を|させて|いたし)/u.test(text)
+    || /(?:委員長報告|委員会[^\n。]*(?:経過|結果)[^\n。]*報告)/u.test(text)
+  );
+}
+
+function isNonQuestionTurnAt(minutes, index) {
+  const minute = minutes[index];
+  if (isClearlyNonQuestionRoleTurn(minute)) return true;
+  if (minute?.minute_type !== "◆質問") return false;
+  for (let cursor = index - 1; cursor >= Math.max(0, index - 8); cursor -= 1) {
+    const prior = minutes[cursor];
+    const text = rawMinuteText(prior);
+    if (/(?:発言の訂正|訂正の申出|議事進行)/u.test(text)) return true;
+    if (genericQuestionAgendaKind(prior) || individualQuestionMarker(prior)) return false;
+    if (prior?.minute_type === "△議題" && closesPersonalQuestionAgenda(prior)) return false;
+  }
+  return false;
+}
+
+function isNonQuestionPlenaryTurnAt(minutes, index) {
+  if (isNonQuestionTurnAt(minutes, index)) return true;
+  const minute = minutes[index];
+  if (minute?.minute_type !== "◆質問") return false;
+  const text = rawMinuteText(minute).replace(/^[◆△◎○][^　\s]*[　\s]*/, "").trim();
+  return hasTerminalNoAnswerClosing(text)
+    && !hasResponseBeforeNextQuestionBoundary(minutes, index);
 }
 
 function agendaTitleBefore(minutes, startIndex) {
@@ -602,16 +1060,33 @@ function plenaryRespondents(minutes, startIndex) {
 }
 
 function parsePlenaryQuestionBlocks(meeting, coveredBySchedule) {
-  const blocks = [];
+  const blocksByRecord = new Map();
   for (const schedule of meeting.schedules ?? []) {
     const minutes = schedule.minutes ?? [];
     const covered = coveredBySchedule.get(Number(schedule.schedule_id)) ?? new Set();
+    let resumableScope = null;
     for (let index = 0; index < minutes.length; index += 1) {
       if (covered.has(index) || !isPlenaryQuestionStart(minutes[index])) continue;
 
+      const defaultBlockId = `s${schedule.schedule_id}-m${minutes[index].minute_id}`;
+      const scopeMarker = plenaryScopeMarker(minutes[index]);
+      let blockId = defaultBlockId;
+      if (scopeMarker.type === "explicit") {
+        resumableScope = { key: scopeMarker.key, blockId: defaultBlockId };
+      } else if (scopeMarker.type === "same" && resumableScope) {
+        blockId = resumableScope.blockId;
+      } else {
+        resumableScope = null;
+      }
+
       let endIndex = minutes.length - 1;
       let closureMethod = "schedule_end";
-      for (let cursor = index; cursor < minutes.length; cursor += 1) {
+      for (let cursor = index + 1; cursor < minutes.length; cursor += 1) {
+        if (isPlenaryQuestionStart(minutes[cursor])) {
+          endIndex = cursor - 1;
+          closureMethod = "next_plenary_agenda";
+          break;
+        }
         if (isOverallPlenaryQuestionEnd(minutes[cursor])) {
           endIndex = cursor;
           closureMethod = "chair_declaration";
@@ -622,7 +1097,7 @@ function parsePlenaryQuestionBlocks(meeting, coveredBySchedule) {
       const minuteIdsByMember = new Map();
       for (let cursor = index + 1; cursor <= endIndex; cursor += 1) {
         const minute = minutes[cursor];
-        if (minute?.minute_type !== "◆質問" || isClearlyNonQuestionRoleTurn(minute)) continue;
+        if (minute?.minute_type !== "◆質問" || isNonQuestionPlenaryTurnAt(minutes, cursor)) continue;
         const memberName = findMember(minute.title, { allowSeat: true });
         if (!memberName || respondents.has(memberName)) continue;
         const current = minuteIdsByMember.get(memberName) ?? [];
@@ -630,10 +1105,10 @@ function parsePlenaryQuestionBlocks(meeting, coveredBySchedule) {
         minuteIdsByMember.set(memberName, current);
       }
 
-      const blockId = `s${schedule.schedule_id}-m${minutes[index].minute_id}`;
       const agendaTitle = agendaTitleBefore(minutes, index);
       for (const [memberName, minuteIds] of minuteIdsByMember) {
-        blocks.push({
+        const recordKey = `${blockId}:${memberName}`;
+        const nextBlock = {
           councilId: Number(meeting.council_id),
           sessionName: meeting.name,
           year: String(meeting.year ?? yearFromMeetingName(meeting.name)),
@@ -647,12 +1122,22 @@ function parsePlenaryQuestionBlocks(meeting, coveredBySchedule) {
           markerMinuteId: Number(minutes[index].minute_id),
           endMinuteId: Number(minutes[endIndex]?.minute_id),
           closureMethod,
-        });
+        };
+        const current = blocksByRecord.get(recordKey);
+        blocksByRecord.set(recordKey, current
+          ? {
+              ...current,
+              minuteIds: uniqueNumbers([...current.minuteIds, ...nextBlock.minuteIds]),
+              endMinuteId: nextBlock.endMinuteId,
+              closureMethod: nextBlock.closureMethod,
+            }
+          : nextBlock);
       }
+      if (closureMethod === "chair_declaration") resumableScope = null;
       index = endIndex;
     }
   }
-  return blocks;
+  return [...blocksByRecord.values()];
 }
 
 function segmentsForBlock(block) {
@@ -704,17 +1189,71 @@ for (const meetingMeta of Array.isArray(minutesIndex) ? minutesIndex : []) {
   const meeting = readJson(path.join(dataDir, "minutes", `${meetingMeta.council_id}.json`), null);
   if (meeting?.schedules) rawMeetings.push(meeting);
 }
+const rawMeetingByCouncilId = new Map(
+  rawMeetings.map((meeting) => [Number(meeting.council_id), meeting])
+);
+const recordEvidenceTextCache = new Map();
 
-const rawCapableCouncilIds = new Set();
-const committeeCouncilIds = new Set();
+function compactEvidenceText(value) {
+  return String(value ?? "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}々ヶヵー]+/gu, "");
+}
+
+function recordEvidenceText(record) {
+  if (recordEvidenceTextCache.has(record.record_id)) {
+    return recordEvidenceTextCache.get(record.record_id);
+  }
+  const evidenceSegmentIds = new Set(record.evidence_segment_ids ?? []);
+  const evidenceTexts = (segmentsByCouncil.get(Number(record.council_id)) ?? [])
+    .filter((segment) => evidenceSegmentIds.has(segment.id))
+    .map((segment) => segment.text ?? segment.excerpt ?? "");
+
+  const meeting = rawMeetingByCouncilId.get(Number(record.council_id));
+  const evidenceMinuteIds = new Set((record.evidence_minute_ids ?? []).map(Number));
+  const hasScheduleId = record.schedule_id !== null
+    && record.schedule_id !== undefined
+    && Number.isFinite(Number(record.schedule_id));
+  if (hasScheduleId) {
+    const scheduleId = Number(record.schedule_id);
+    evidenceTexts.push(
+      ...(meeting?.schedules ?? [])
+        .filter((schedule) => Number(schedule.schedule_id) === scheduleId)
+        .flatMap((schedule) => schedule.minutes ?? [])
+        .filter((minute) => evidenceMinuteIds.has(Number(minute.minute_id)))
+        .map(rawMinuteText)
+    );
+  }
+  const uniqueTexts = new Map();
+  for (const text of evidenceTexts) {
+    const compactText = compactEvidenceText(text);
+    if (compactText && !uniqueTexts.has(compactText)) uniqueTexts.set(compactText, text);
+  }
+  const compact = compactEvidenceText([...uniqueTexts.values()].join(" "));
+  recordEvidenceTextCache.set(record.record_id, compact);
+  return compact;
+}
+
+function canonicalTopicAssignments(records, topics) {
+  const assignments = new Map(records.map(([recordId]) => [recordId, []]));
+  for (const topic of topics) {
+    const compactTopic = compactEvidenceText(topic);
+    if (!compactTopic) continue;
+    for (const [recordId, record] of records) {
+      if (recordEvidenceText(record).includes(compactTopic)) {
+        assignments.get(recordId).push(topic);
+      }
+    }
+  }
+  return assignments;
+}
+
 for (const meeting of rawMeetings) {
-  const councilId = Number(meeting.council_id);
   if (String(meeting.name ?? "").includes("委員会")) {
-    committeeCouncilIds.add(councilId);
     continue;
   }
   if (!isRawQuestionCapableMeeting(meeting)) continue;
-  rawCapableCouncilIds.add(councilId);
   const { blocks: personalBlocks, coveredBySchedule } = parsePersonalQuestionBlocks(meeting);
   for (const block of personalBlocks) addOfficialBlock(block);
   for (const block of parsePlenaryQuestionBlocks(meeting, coveredBySchedule)) addOfficialBlock(block);
@@ -786,117 +1325,8 @@ for (const { memberName, councilId, segments } of segmentGroups.values()) {
   });
 }
 
-function hasOfficialRecord(memberName, councilId) {
-  return [...(activity[memberName]?.sessions.values() ?? [])].some((record) =>
-    record.source_status === "official" && Number(record.council_id) === Number(councilId)
-  );
-}
-
-function legacyQuestionKind(sessionName) {
-  if (String(sessionName ?? "").includes("委員会")) return "committee_question";
-  if (String(sessionName ?? "").includes("代表質問")) return "representative_question";
-  if (String(sessionName ?? "").includes("一般質問")) return "general_question";
-  return "other_question";
-}
-
-const legacySegmentGroups = new Map();
-for (const [councilId, segments] of segmentsByCouncil) {
-  if (rawCapableCouncilIds.has(councilId) || committeeCouncilIds.has(councilId)) continue;
-  for (const segment of segments) {
-    if (segment.speaker_role !== "質問") continue;
-    const memberName = findMember(segment.member_name ?? segment.speaker);
-    if (!memberName) continue;
-    const key = `${memberName}::${councilId}`;
-    const current = legacySegmentGroups.get(key) ?? { memberName, councilId, segments: [] };
-    current.segments.push(segment);
-    legacySegmentGroups.set(key, current);
-  }
-}
-
-for (const { memberName, councilId, segments } of legacySegmentGroups.values()) {
-  if (hasOfficialRecord(memberName, councilId)) continue;
-  const meeting = minutesByCouncilId.get(String(councilId));
-  const sessionName = meeting?.name ?? segments[0]?.council_name ?? "";
-  const evidenceSegments = segments.filter((segment) =>
-    !segment.is_procedural && !isClearlyNonQuestionRoleTurn(segment)
-  );
-  if (evidenceSegments.length === 0) continue;
-  const retainedSegments = evidenceSegments;
-  const dates = uniqueTopics(retainedSegments.map((segment) => segment.date)).sort();
-  const topics = uniqueTopics(
-    retainedSegments.flatMap((segment) => extractTopicsFromText(segment.text ?? segment.excerpt))
-  );
-  const firstEvidenceSource = retainedSegments.find((segment) =>
-    Number.isFinite(Number(segment.source?.schedule_id))
-    && Number.isFinite(Number(segment.source?.minute_ids?.[0]))
-  )?.source;
-  const questionKind = legacyQuestionKind(sessionName);
-  const blockId = "legacy-segments";
-  const recordId = `${city}:official:${councilId}:${questionKind}:${blockId}:${memberName}`;
-  addActivity(memberName, recordId, {
-    record_id: recordId,
-    session: sessionName,
-    year: String(meeting?.year ?? yearFromMeetingName(sessionName)),
-    council_id: councilId,
-    date: dates[0],
-    dates,
-    question_kind: questionKind,
-    block_id: blockId,
-    schedule_id: null,
-    schedule_name: "",
-    agenda_title: sessionName,
-    source_type: "official_minutes",
-    source_status: "official",
-    source_label: "公式会議録",
-    source_url: officialMinutesUrl(),
-    href: minutesHref(councilId, firstEvidenceSource?.schedule_id, firstEvidenceSource?.minute_ids?.[0]),
-    topics,
-    summary_topics: [],
-    topic_details: [],
-    evidence_minute_ids: uniqueNumbers(
-      retainedSegments.flatMap((segment) => segment.source?.minute_ids ?? [])
-    ),
-    evidence_segment_ids: retainedSegments.map((segment) => segment.id),
-  });
-}
-
-for (const supplement of enrichedSupplements.values()) {
-  if (
-    rawCapableCouncilIds.has(supplement.councilId)
-    || committeeCouncilIds.has(supplement.councilId)
-    || hasOfficialRecord(supplement.memberName, supplement.councilId)
-  ) {
-    continue;
-  }
-  const questionKind = legacyQuestionKind(supplement.sessionName);
-  const blockId = "legacy-enriched";
-  const recordId = `${city}:official:${supplement.councilId}:${questionKind}:${blockId}:${supplement.memberName}`;
-  addActivity(supplement.memberName, recordId, {
-    record_id: recordId,
-    session: supplement.sessionName,
-    year: yearFromMeetingName(supplement.sessionName),
-    council_id: supplement.councilId,
-    date: "",
-    dates: [],
-    question_kind: questionKind,
-    block_id: blockId,
-    schedule_id: null,
-    schedule_name: "",
-    agenda_title: supplement.sessionName,
-    source_type: "official_minutes",
-    source_status: "official",
-    source_label: "公式会議録",
-    source_url: officialMinutesUrl(),
-    href: minutesHref(supplement.councilId),
-    topics: supplement.topics,
-    summary_topics: [],
-    topic_details: [],
-    evidence_minute_ids: [],
-    evidence_segment_ids: [],
-  });
-}
-
-// enrichedのトピックを、同一議員・同一会議の成立済みrecordへ補足する。
+// enriched単独では質問記録を成立させない。原文上の質問turnを持つ
+// 同一議員・同一会議のrecordがある場合だけ、表示用トピックを補足する。
 for (const supplement of enrichedSupplements.values()) {
   const records = [...(activity[supplement.memberName]?.sessions.entries() ?? [])]
     .filter(([, record]) =>
@@ -904,15 +1334,34 @@ for (const supplement of enrichedSupplements.values()) {
       && Number(record.council_id) === supplement.councilId
     );
   if (records.length === 0) continue;
-  const preferred = records.find(([, record]) =>
-    record.question_kind === "general_question"
-    || record.question_kind === "representative_question"
-  ) ?? (records.length === 1 ? records[0] : null);
-  if (!preferred) continue;
-  addActivity(supplement.memberName, preferred[0], {
-    ...preferred[1],
-    topics: uniqueTopics([...(preferred[1].topics ?? []), ...supplement.topics]),
-  });
+  const assignments = canonicalTopicAssignments(records, supplement.topics);
+  const canonicalTopicSet = new Set([...assignments.values()].flat());
+  const generatedTopics = supplement.topics.filter((topic) => !canonicalTopicSet.has(topic));
+  if (generatedTopics.length > 0) {
+    generatedTopicsByMember.set(
+      supplement.memberName,
+      uniqueTopics([
+        ...(generatedTopicsByMember.get(supplement.memberName) ?? []),
+        ...generatedTopics,
+      ]).slice(0, MAX_MEMBER_GENERATED_TOPICS)
+    );
+  }
+  for (const [recordId, canonicalTopics] of assignments) {
+    const record = activity[supplement.memberName].sessions.get(recordId);
+    const recordGeneratedTopics = records.length === 1 ? generatedTopics : [];
+    if (canonicalTopics.length === 0 && recordGeneratedTopics.length === 0) continue;
+    addActivity(supplement.memberName, recordId, {
+      ...record,
+      canonical_topics: uniqueTopics([
+        ...(record.canonical_topics ?? []),
+        ...canonicalTopics,
+      ]).slice(0, MAX_SESSION_CANONICAL_TOPICS),
+      generated_topics: uniqueTopics([
+        ...(record.generated_topics ?? []),
+        ...recordGeneratedTopics,
+      ]).slice(0, MAX_SESSION_GENERATED_TOPICS),
+    });
+  }
 }
 
 for (const session of loadSessionFiles()) {
@@ -1145,12 +1594,40 @@ function summarizeTopics(topics) {
   return result;
 }
 
+const MAX_SESSION_DISPLAY_TOPICS = 12;
+const MAX_MEMBER_ALL_TOPICS = 80;
+
+function classificationStatus(sessions) {
+  const hasLegacyUnclassified = sessions.some((session) =>
+    session.block_id === "legacy-segments" || session.block_id === "legacy-enriched"
+  );
+  if (!hasLegacyUnclassified) return "classified";
+  const hasClassified = sessions.some((session) =>
+    session.block_id !== "legacy-segments" && session.block_id !== "legacy-enriched"
+  );
+  return hasClassified ? "mixed" : "legacy_unclassified";
+}
+
 function toOutputSession(session) {
-  const summaryTopics = session.summary_topics?.length
-    ? uniqueTopics(session.summary_topics).slice(0, 12)
+  const canonicalTopics = uniqueTopics(session.canonical_topics ?? [])
+    .slice(0, MAX_SESSION_CANONICAL_TOPICS);
+  const derivedSummaryTopics = session.summary_topics?.length
+    ? uniqueTopics(session.summary_topics)
     : summarizeTopics(session.topics).slice(0, 8);
+  const summaryTopics = uniqueTopics([
+    ...canonicalTopics,
+    ...derivedSummaryTopics,
+  ]).slice(0, 12);
+  const generatedTopics = uniqueTopics(session.generated_topics ?? [])
+    .filter((topic) => !canonicalTopics.includes(topic))
+    .slice(0, MAX_SESSION_GENERATED_TOPICS);
   return {
     ...session,
+    // Full excerpts remain in minutes/segments and are referenced by the
+    // evidence IDs. The activity projection keeps only a bounded display list.
+    topics: uniqueTopics(session.topics).slice(0, MAX_SESSION_DISPLAY_TOPICS),
+    canonical_topics: canonicalTopics.length > 0 ? canonicalTopics : undefined,
+    generated_topics: generatedTopics.length > 0 ? generatedTopics : undefined,
     summary_topics: summaryTopics,
   };
 }
@@ -1159,8 +1636,7 @@ function toOutputSession(session) {
 const result = {};
 for (const name of memberNames) {
   const a = activity[name];
-  const sessions = [...a.sessions.values()]
-    .map(toOutputSession)
+  const rawSessions = [...a.sessions.values()]
     .sort((left, right) => {
       const leftDate = left.date || `${left.year || "0000"}-00-00`;
       const rightDate = right.date || `${right.year || "0000"}-00-00`;
@@ -1169,11 +1645,11 @@ for (const name of memberNames) {
       if (left.session !== right.session) return left.session.localeCompare(right.session, "ja");
       return left.record_id.localeCompare(right.record_id, "ja");
     });
-  if (sessions.length === 0) continue;
+  if (rawSessions.length === 0) continue;
 
   // トピック頻度集計
   const topicCounts = {};
-  for (const s of sessions) {
+  for (const s of rawSessions) {
     for (const t of s.topics) {
       topicCounts[t] = (topicCounts[t] ?? 0) + 1;
     }
@@ -1182,6 +1658,7 @@ for (const name of memberNames) {
     .sort((a, b) => b[1] - a[1])
     .map(([t]) => t);
 
+  const sessions = rawSessions.map(toOutputSession);
   const themes = extractThemes(topTopics);
   const summaryTopics = uniqueTopics([
     ...sessions.flatMap((session) => session.summary_topics ?? []),
@@ -1192,6 +1669,7 @@ for (const name of memberNames) {
 
   result[name] = {
     name,
+    classification_status: classificationStatus(sessions),
     session_count: sessions.length,
     official_session_count: officialSessions.length,
     preliminary_session_count: preliminarySessions.length,
@@ -1207,10 +1685,14 @@ for (const name of memberNames) {
     plenary_question_count: sessions.filter(
       (session) => session.question_kind === "plenary_question"
     ).length,
+    other_question_count: sessions.filter(
+      (session) => session.question_kind === "other_question"
+    ).length,
     themes,
     summary_topics: summaryTopics,
+    generated_topics: generatedTopicsByMember.get(name) ?? [],
     top_topics: summaryTopics.slice(0, 6),
-    all_topics: topTopics,
+    all_topics: topTopics.slice(0, MAX_MEMBER_ALL_TOPICS),
     sessions,
   };
 }

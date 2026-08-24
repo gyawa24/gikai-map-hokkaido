@@ -6,34 +6,11 @@
     "japanese_year": "令和8年",
     "type_label": "全会議 > 本会議 > 臨時会",
     "file": "20262004.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20262003,
-    "name": "令和8年第3回今金町議会臨時会 令和8年 2月 3日",
-    "year": "2026",
-    "japanese_year": "令和8年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20262003.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20262002,
-    "name": "令和8年第2回今金町議会臨時会 令和8年 1月23日",
-    "year": "2026",
-    "japanese_year": "令和8年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20262002.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20262001,
-    "name": "令和8年第1回今金町議会臨時会 令和8年 1月 9日",
-    "year": "2026",
-    "japanese_year": "令和8年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20262001.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2026-05-26",
+    "end_date": "2026-05-26",
+    "sort_date": "2026-05-26",
+    "date_precision": "day"
   },
   {
     "council_id": 20261001,
@@ -42,43 +19,50 @@
     "japanese_year": "令和8年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20261001.json",
-    "schedule_count": 3
+    "schedule_count": 3,
+    "start_date": "2026-03-10",
+    "end_date": "2026-03-12",
+    "sort_date": "2026-03-12",
+    "date_precision": "day"
   },
   {
-    "council_id": 20252004,
-    "name": "令和7年第4回今金町議会臨時会 令和7年 7月 2日",
-    "year": "2025",
-    "japanese_year": "令和7年",
+    "council_id": 20262003,
+    "name": "令和8年第3回今金町議会臨時会 令和8年 2月 3日",
+    "year": "2026",
+    "japanese_year": "令和8年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20252004.json",
-    "schedule_count": 1
+    "file": "20262003.json",
+    "schedule_count": 1,
+    "start_date": "2026-02-03",
+    "end_date": "2026-02-03",
+    "sort_date": "2026-02-03",
+    "date_precision": "day"
   },
   {
-    "council_id": 20252003,
-    "name": "令和7年第3回今金町議会臨時会 令和7年 5月27日",
-    "year": "2025",
-    "japanese_year": "令和7年",
+    "council_id": 20262002,
+    "name": "令和8年第2回今金町議会臨時会 令和8年 1月23日",
+    "year": "2026",
+    "japanese_year": "令和8年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20252003.json",
-    "schedule_count": 1
+    "file": "20262002.json",
+    "schedule_count": 1,
+    "start_date": "2026-01-23",
+    "end_date": "2026-01-23",
+    "sort_date": "2026-01-23",
+    "date_precision": "day"
   },
   {
-    "council_id": 20252002,
-    "name": "令和7年第2回今金町議会臨時会 令和7年 5月 9日",
-    "year": "2025",
-    "japanese_year": "令和7年",
+    "council_id": 20262001,
+    "name": "令和8年第1回今金町議会臨時会 令和8年 1月 9日",
+    "year": "2026",
+    "japanese_year": "令和8年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20252002.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20252001,
-    "name": "令和7年第1回今金町議会臨時会 令和7年 1月27日",
-    "year": "2025",
-    "japanese_year": "令和7年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20252001.json",
-    "schedule_count": 1
+    "file": "20262001.json",
+    "schedule_count": 1,
+    "start_date": "2026-01-09",
+    "end_date": "2026-01-09",
+    "sort_date": "2026-01-09",
+    "date_precision": "day"
   },
   {
     "council_id": 20251004,
@@ -87,7 +71,11 @@
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20251004.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2025-12-09",
+    "end_date": "2025-12-09",
+    "sort_date": "2025-12-09",
+    "date_precision": "day"
   },
   {
     "council_id": 20251003,
@@ -96,7 +84,24 @@
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20251003.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2025-09-11",
+    "end_date": "2025-09-11",
+    "sort_date": "2025-09-11",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20252004,
+    "name": "令和7年第4回今金町議会臨時会 令和7年 7月 2日",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20252004.json",
+    "schedule_count": 1,
+    "start_date": "2025-07-02",
+    "end_date": "2025-07-02",
+    "sort_date": "2025-07-02",
+    "date_precision": "day"
   },
   {
     "council_id": 20251002,
@@ -105,7 +110,37 @@
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20251002.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2025-06-12",
+    "end_date": "2025-06-12",
+    "sort_date": "2025-06-12",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20252003,
+    "name": "令和7年第3回今金町議会臨時会 令和7年 5月27日",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20252003.json",
+    "schedule_count": 1,
+    "start_date": "2025-05-27",
+    "end_date": "2025-05-27",
+    "sort_date": "2025-05-27",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20252002,
+    "name": "令和7年第2回今金町議会臨時会 令和7年 5月 9日",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20252002.json",
+    "schedule_count": 1,
+    "start_date": "2025-05-09",
+    "end_date": "2025-05-09",
+    "sort_date": "2025-05-09",
+    "date_precision": "day"
   },
   {
     "council_id": 20251001,
@@ -114,52 +149,24 @@
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20251001.json",
-    "schedule_count": 3
+    "schedule_count": 3,
+    "start_date": "2025-03-11",
+    "end_date": "2025-03-13",
+    "sort_date": "2025-03-13",
+    "date_precision": "day"
   },
   {
-    "council_id": 20242005,
-    "name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
-    "year": "2024",
-    "japanese_year": "令和6年",
+    "council_id": 20252001,
+    "name": "令和7年第1回今金町議会臨時会 令和7年 1月27日",
+    "year": "2025",
+    "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20242005.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20242004,
-    "name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
-    "year": "2024",
-    "japanese_year": "令和6年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20242004.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20242003,
-    "name": "令和6年第3回今金町議会臨時会 令和6年 5月24日",
-    "year": "2024",
-    "japanese_year": "令和6年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20242003.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20242002,
-    "name": "令和6年第2回今金町議会臨時会 令和6年 4月30日",
-    "year": "2024",
-    "japanese_year": "令和6年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20242002.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20242001,
-    "name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
-    "year": "2024",
-    "japanese_year": "令和6年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20242001.json",
-    "schedule_count": 1
+    "file": "20252001.json",
+    "schedule_count": 1,
+    "start_date": "2025-01-27",
+    "end_date": "2025-01-27",
+    "sort_date": "2025-01-27",
+    "date_precision": "day"
   },
   {
     "council_id": 20241004,
@@ -168,7 +175,37 @@
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20241004.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2024-12-10",
+    "end_date": "2024-12-10",
+    "sort_date": "2024-12-10",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20242005,
+    "name": "令和6年第5回今金町議会臨時会 令和6年 11月 1日",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20242005.json",
+    "schedule_count": 1,
+    "start_date": "2024-11-01",
+    "end_date": "2024-11-01",
+    "sort_date": "2024-11-01",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20242004,
+    "name": "令和6年第4回今金町議会臨時会 令和6年 10月 3日",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20242004.json",
+    "schedule_count": 1,
+    "start_date": "2024-10-03",
+    "end_date": "2024-10-03",
+    "sort_date": "2024-10-03",
+    "date_precision": "day"
   },
   {
     "council_id": 20241003,
@@ -177,7 +214,11 @@
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20241003.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2024-09-11",
+    "end_date": "2024-09-11",
+    "sort_date": "2024-09-11",
+    "date_precision": "day"
   },
   {
     "council_id": 20241002,
@@ -186,7 +227,37 @@
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20241002.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2024-06-13",
+    "end_date": "2024-06-13",
+    "sort_date": "2024-06-13",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20242003,
+    "name": "令和6年第3回今金町議会臨時会 令和6年 5月24日",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20242003.json",
+    "schedule_count": 1,
+    "start_date": "2024-05-24",
+    "end_date": "2024-05-24",
+    "sort_date": "2024-05-24",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20242002,
+    "name": "令和6年第2回今金町議会臨時会 令和6年 4月30日",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20242002.json",
+    "schedule_count": 1,
+    "start_date": "2024-04-30",
+    "end_date": "2024-04-30",
+    "sort_date": "2024-04-30",
+    "date_precision": "day"
   },
   {
     "council_id": 20241001,
@@ -195,6 +266,23 @@
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20241001.json",
-    "schedule_count": 3
+    "schedule_count": 3,
+    "start_date": "2024-03-05",
+    "end_date": "2024-03-07",
+    "sort_date": "2024-03-07",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20242001,
+    "name": "令和6年第1回今金町議会臨時会 令和6年 2月1日",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20242001.json",
+    "schedule_count": 1,
+    "start_date": "2024-02-01",
+    "end_date": "2024-02-01",
+    "sort_date": "2024-02-01",
+    "date_precision": "day"
   }
 ]

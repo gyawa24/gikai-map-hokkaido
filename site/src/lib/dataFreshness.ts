@@ -9,8 +9,8 @@ import path from "node:path";
  */
 export function getSearchIndexGeneratedAt(): Date | null {
   try {
-    const fp = path.join(process.cwd(), "data", "_search-index.json");
-    const data = JSON.parse(fs.readFileSync(fp, "utf-8")) as {
+    const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", "_search-index.json");
+    const data = JSON.parse(fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")) as {
       generated_at?: string;
     };
     if (!data.generated_at) return null;

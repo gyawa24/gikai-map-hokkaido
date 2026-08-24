@@ -31,12 +31,14 @@ function getDataRoots(): string[] {
   const cwd = process.cwd();
   return [path.join(/*turbopackIgnore: true*/ cwd, "data")]
     .filter((value, index, list) => list.indexOf(value) === index)
-    .filter((value) => fs.existsSync(value));
+    .filter((value) => fs.existsSync(/*turbopackIgnore: true*/ value));
 }
 
 function readJsonFile<T>(filePath: string): T | null {
   try {
-    return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
+    return JSON.parse(
+      fs.readFileSync(/*turbopackIgnore: true*/ filePath, "utf-8")
+    ) as T;
   } catch {
     return null;
   }
@@ -44,21 +46,21 @@ function readJsonFile<T>(filePath: string): T | null {
 
 function findCityFile(city: string, relativePath: string): string | null {
   for (const root of getDataRoots()) {
-    const candidate = path.join(root, city, relativePath);
-    if (fs.existsSync(candidate)) return candidate;
+    const candidate = path.join(/*turbopackIgnore: true*/ root, city, relativePath);
+    if (fs.existsSync(/*turbopackIgnore: true*/ candidate)) return candidate;
   }
   return null;
 }
 
 function listCityFiles(city: string, relativeDir: string): string[] {
   for (const root of getDataRoots()) {
-    const targetDir = path.join(root, city, relativeDir);
-    if (!fs.existsSync(targetDir)) continue;
+    const targetDir = path.join(/*turbopackIgnore: true*/ root, city, relativeDir);
+    if (!fs.existsSync(/*turbopackIgnore: true*/ targetDir)) continue;
     try {
       return fs
-        .readdirSync(targetDir)
+        .readdirSync(/*turbopackIgnore: true*/ targetDir)
         .filter((name) => name.endsWith(".json"))
-        .map((name) => path.join(targetDir, name));
+        .map((name) => path.join(/*turbopackIgnore: true*/ targetDir, name));
     } catch {
       return [];
     }
@@ -89,23 +91,33 @@ export function getDecisions(city: string): Decision[] {
 }
 
 export function getMinutesIndex(city: string): MinutesIndexItem[] {
-  return (
-    readCityJson<MinutesIndexItem[]>(city, "minutes/index.json") ??
-    readCityJson<MinutesIndexItem[]>(city, "index.json") ??
-    []
-  );
+  const minutesIndexPath = findCityFile(city, "minutes/index.json");
+  if (minutesIndexPath) {
+    const index = readJsonFile<MinutesIndexItem[]>(minutesIndexPath);
+    return Array.isArray(index) ? index : [];
+  }
+
+  const legacyIndex = readCityJson<MinutesIndexItem[]>(city, "index.json");
+  return Array.isArray(legacyIndex) ? legacyIndex : [];
 }
 
 export function getMinutesEnrichedDocs(city: string): MinutesEnriched[] {
+  const publishedCouncilIds = new Set(
+    getMinutesIndex(city).map((entry) => String(entry.council_id))
+  );
+  if (publishedCouncilIds.size === 0) return [];
+
   return listCityFiles(city, "minutes/enriched")
     .map((filePath) => readJsonFile<MinutesEnriched>(filePath))
-    .filter((doc): doc is MinutesEnriched => Boolean(doc));
+    .filter((doc): doc is MinutesEnriched =>
+      Boolean(doc) && publishedCouncilIds.has(String(doc?.council_id))
+    );
 }
 
 export function getSearchIndex(): SearchIndex {
   for (const root of getDataRoots()) {
-    const candidate = path.join(root, "_search-index.json");
-    if (!fs.existsSync(candidate)) continue;
+    const candidate = path.join(/*turbopackIgnore: true*/ root, "_search-index.json");
+    if (!fs.existsSync(/*turbopackIgnore: true*/ candidate)) continue;
     const parsed = readJsonFile<SearchIndex>(candidate);
     if (parsed?.agendas && Array.isArray(parsed.agendas)) {
       return parsed;

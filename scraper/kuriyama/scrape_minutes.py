@@ -17,8 +17,10 @@ import argparse
 import io
 import json
 import re
+import tempfile
 import time
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -29,7 +31,14 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).parent.parent.parent
 DATA_DIR = ROOT / "data" / "kuriyama" / "minutes"
 INDEX_URL = "https://www.town.kuriyama.hokkaido.jp/site/gikai/7389.html"
-DEFAULT_YEARS = {"2024", "2025", "2026"}
+
+
+def default_target_years(today: date | None = None) -> set[str]:
+    current_year = (today or date.today()).year
+    return {str(year) for year in range(current_year - 2, current_year + 1)}
+
+
+DEFAULT_YEARS = default_target_years()
 REQUEST_INTERVAL = 0.4
 
 HEADERS = {
@@ -189,6 +198,50 @@ def extract_pdf_text(url: str) -> str:
     return clean_text("\n\n".join(parts))
 
 
+def write_json_atomic(path: Path, data: object) -> None:
+    """同じディレクトリに書き切ってから置換し、途中書きの公開を防ぐ。"""
+    temp_path: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=path.parent,
+            prefix=f".{path.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as temp_file:
+            temp_path = Path(temp_file.name)
+            temp_file.write(json.dumps(data, ensure_ascii=False, indent=2))
+        temp_path.replace(path)
+    finally:
+        if temp_path is not None and temp_path.exists():
+            temp_path.unlink()
+
+
+def load_existing_index(index_path: Path) -> tuple[list[int], dict[int, dict]]:
+    """既存indexはfail-closedで検証し、順序と未対象年をそのまま保持する。"""
+    if not index_path.exists():
+        return [], {}
+
+    existing = json.loads(index_path.read_text(encoding="utf-8"))
+    if not isinstance(existing, list):
+        raise ValueError("index.json のルートが配列ではありません")
+
+    order: list[int] = []
+    index_map: dict[int, dict] = {}
+    for position, entry in enumerate(existing):
+        if not isinstance(entry, dict) or "council_id" not in entry:
+            raise ValueError(f"index.json[{position}] に council_id がありません")
+        council_id = entry["council_id"]
+        if not isinstance(council_id, int) or isinstance(council_id, bool):
+            raise ValueError(f"index.json[{position}] の council_id が整数ではありません")
+        if council_id in index_map:
+            raise ValueError(f"index.json に council_id={council_id} が重複しています")
+        order.append(council_id)
+        index_map[council_id] = entry
+    return order, index_map
+
+
 def parse_html_day_pages(frameset_url: str) -> list[tuple[str, str]]:
     frameset_html = fetch_text(frameset_url)
     soup = BeautifulSoup(frameset_html, "html.parser")
@@ -229,6 +282,8 @@ def extract_html_minutes(url: str) -> str:
 
 def scrape_pdf_meeting(label: str, url: str) -> Meeting:
     text = extract_pdf_text(url)
+    if not text.strip():
+        raise ValueError("PDF会議録本文が空です")
     year, month, day = extract_actual_date(text)
     type_name = "臨時会" if "臨時会" in text else "定例会"
     schedule = Schedule(name=label, url=url, text=text)
@@ -249,6 +304,8 @@ def scrape_html_meeting(label: str, url: str) -> Meeting:
     first_text = ""
     for schedule_name, schedule_url in schedule_pages:
         text = extract_html_minutes(schedule_url)
+        if not text.strip():
+            raise ValueError(f"HTML会議録本文が空です: {schedule_url}")
         if not first_text:
             first_text = text
         schedules.append(Schedule(name=schedule_name, url=schedule_url, text=text))
@@ -272,6 +329,11 @@ def scrape_html_meeting(label: str, url: str) -> Meeting:
 
 def scrape(target_years: set[int], force: bool = False) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    index_path = DATA_DIR / "index.json"
+    try:
+        index_order, index_map = load_existing_index(index_path)
+    except Exception as exc:
+        raise ValueError(f"index.json を安全に読めないため更新中止: {exc}") from exc
 
     source_links = extract_links(target_years)
     meetings: list[Meeting] = []
@@ -294,16 +356,23 @@ def scrape(target_years: set[int], force: bool = False) -> None:
         unique[meeting.council_id] = meeting
     sorted_meetings = sorted(unique.values(), key=lambda item: (item.year, item.month, item.day, item.type_name))
 
-    index: list[dict] = []
     for i, meeting in enumerate(sorted_meetings, start=1):
         out_path = DATA_DIR / f"{meeting.council_id}.json"
         print(f"[{i}/{len(sorted_meetings)}] {meeting.council_name}")
 
         if out_path.exists() and not force:
-            print("  skip existing")
+            if meeting.council_id in index_map:
+                print("  skip existing")
+            else:
+                print("  keep unpublished orphan (indexにない既存ファイルのため更新保留)")
+            continue
         else:
             schedules = []
             for schedule_id, schedule in enumerate(meeting.schedules, start=1):
+                if not schedule.text.strip():
+                    raise ValueError(
+                        f"{meeting.council_name} の全日程を取得できないため更新中止: {schedule.url}"
+                    )
                 schedules.append(
                     {
                         "schedule_id": schedule_id,
@@ -329,21 +398,32 @@ def scrape(target_years: set[int], force: bool = False) -> None:
                 "type_label": meeting.type_label,
                 "schedules": schedules,
             }
-            out_path.write_text(json.dumps(council, ensure_ascii=False, indent=2), encoding="utf-8")
+            write_json_atomic(out_path, council)
 
-        index.append(
-            {
-                "council_id": meeting.council_id,
-                "name": meeting.council_name,
-                "year": str(meeting.year),
-                "japanese_year": meeting.japanese_year,
-                "type_label": meeting.type_label,
-                "file": out_path.name,
-                "schedule_count": len(meeting.schedules),
-            }
-        )
+        if meeting.council_id not in index_map:
+            index_order.append(meeting.council_id)
+        index_map[meeting.council_id] = {
+            **index_map.get(meeting.council_id, {}),
+            "council_id": meeting.council_id,
+            "name": meeting.council_name,
+            "year": str(meeting.year),
+            "japanese_year": meeting.japanese_year,
+            "type_label": meeting.type_label,
+            "file": out_path.name,
+            "schedule_count": len(meeting.schedules),
+        }
 
-    (DATA_DIR / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
+    index = sorted(
+        (index_map[council_id] for council_id in index_order),
+        key=lambda entry: (
+            str(entry.get("year", "")),
+            int(entry["council_id"]) % 10000,
+            int(entry["council_id"]),
+        ),
+        reverse=True,
+    )
+    if index or index_path.exists():
+        write_json_atomic(index_path, index)
     print(f"saved {len(index)} meetings -> {DATA_DIR}")
 
 

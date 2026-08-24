@@ -5,6 +5,8 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
+import { hasPublishedMemberThemes } from "./lib/member-activity-capability.mjs";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, "..");
@@ -53,6 +55,12 @@ function isIgnoredFile(targetPath, ignoredFiles) {
 async function publicPathExists(targetPath, ignoredFiles) {
   if (isIgnoredFile(targetPath, ignoredFiles)) return false;
   return pathExists(targetPath);
+}
+
+async function hasPublishedThemes(targetPath, ignoredFiles, minutesAccess) {
+  if (!(await publicPathExists(targetPath, ignoredFiles))) return false;
+  const activity = await readJson(targetPath).catch(() => null);
+  return hasPublishedMemberThemes(activity, { minutesAccess });
 }
 
 async function readJson(filePath) {
@@ -222,7 +230,7 @@ async function main() {
         (await publicPathExists(minutesIndexSite, ignoredFiles)) ||
         (await publicPathExists(minutesAltSite, ignoredFiles)),
       sessions: await publicPathExists(path.join(siteDir, "sessions", "index.json"), ignoredFiles),
-      themes: await publicPathExists(themesSite, ignoredFiles),
+      themes: await hasPublishedThemes(themesSite, ignoredFiles, rootEntry?.minutes_access),
       budgets: await publicPathExists(path.join(siteDir, "budgets", "index.json"), ignoredFiles),
       decisions: await publicPathExists(path.join(siteDir, "decisions.json"), ignoredFiles),
       schedule: await publicPathExists(path.join(siteDir, "schedule.json"), ignoredFiles),

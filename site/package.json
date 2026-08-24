@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/build-city-capabilities.mjs && node scripts/build-search-index.mjs && node scripts/build-public-open-data.mjs",
+    "predev": "node scripts/build-city-capabilities.mjs && node scripts/build-search-index.mjs --if-stale && node scripts/verify-member-activity-shards.mjs && node scripts/build-public-open-data.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/build-city-capabilities.mjs && node scripts/build-search-index.mjs && node scripts/build-public-open-data.mjs && node scripts/verify-data-loop-preview.mjs && node scripts/verify-budget-research-index.mjs",
+    "prebuild": "node scripts/build-city-capabilities.mjs && node scripts/build-search-index.mjs && node scripts/verify-search-index-shards.mjs && node scripts/check-search-bigram-quality.mjs && node scripts/verify-member-activity-shards.mjs && node scripts/build-public-open-data.mjs && node scripts/verify-data-loop-preview.mjs && node scripts/verify-budget-research-index.mjs",
     "build": "next build",
     "build-search-index": "node scripts/build-search-index.mjs",
     "build-city-capabilities": "node scripts/build-city-capabilities.mjs",
@@ -50,6 +50,8 @@
     "lint": "eslint",
     "check:search-quality": "node scripts/check-search-quality.mjs",
     "check:search-bigram-quality": "node scripts/check-search-bigram-quality.mjs",
+    "check:search-index-shards": "node scripts/verify-search-index-shards.mjs",
+    "check:member-activity-shards": "node scripts/verify-member-activity-shards.mjs",
     "validate:structured-minutes": "node scripts/validate-structured-minutes.mjs"
   },
   "dependencies": {
