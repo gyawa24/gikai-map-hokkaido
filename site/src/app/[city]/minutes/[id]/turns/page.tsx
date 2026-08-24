@@ -6,6 +6,7 @@ import SourceNotice from "@/components/structured-minutes/SourceNotice";
 import StructuredMinutesTabs from "@/components/structured-minutes/StructuredMinutesTabs";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getPublishedMinutesIndexItem } from "@/lib/minutesPublication";
 import { getStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
 
 type View = "turns" | "questions" | "topics";
@@ -29,6 +30,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city, id } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
+  if (
+    municipality?.minutes_access === "restricted"
+    || !(await getPublishedMinutesIndexItem(city, id))
+  ) {
+    return buildPageMetadata({
+      title: `議事録 - ${cityName}議会`,
+      description: `${cityName}議会の議事録`,
+      path: `/${city}/minutes/${id}/turns`,
+    });
+  }
   return buildPageMetadata({
     title: `構造化議事録ビュー - ${cityName}議会`,
     description: `${cityName}議会の議事録を発言単位・質問者別・質問項目別に整理した試験版ビューです。`,
@@ -43,6 +54,12 @@ export default async function StructuredMinutesPage({ params, searchParams }: Pr
   const page = normalizePage(rawPage);
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
+  if (
+    municipality?.minutes_access === "restricted"
+    || !(await getPublishedMinutesIndexItem(city, id))
+  ) {
+    notFound();
+  }
   const data = await getStructuredMinutes(city, id);
   if (!data) notFound();
 

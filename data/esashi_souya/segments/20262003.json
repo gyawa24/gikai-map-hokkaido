@@ -1,0 +1,72 @@
+[
+  {
+    "id": "esashi_souya-20262003-1-001",
+    "municipality": "esashi_souya",
+    "council_id": 20262003,
+    "council_name": "令和8年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第3回臨時会（8月7日）",
+    "date": "2026-08-07",
+    "speaker": "小原仁町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "おはようございます。\nそれでは、同意第５号 枝幸町副町長の選任についての提案の内容を説明させていただきます。",
+    "text_length": 54,
+    "source": {
+      "minutes_file": "data/esashi_souya/minutes/20262003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "esashi_souya-20262003-1-002",
+    "municipality": "esashi_souya",
+    "council_id": 20262003,
+    "council_name": "令和8年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第3回臨時会（8月7日）",
+    "date": "2026-08-07",
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "につきましては、令和８年４月30日をもって任期満了となり、現在、未選任となっており\nますことから、枝幸町副町長に次の方を選任いたしたく、地方自治法第162条の規定により、議会\nの同意を求めるものであります。\nとして選任する方は、深井 信氏でございます。\n経歴につきましては、議案参考資料の１ページに記載しておりますのでご参照願います。\n深井氏は、長年にわたり当町行政に携わり、現在は財政課長として予算編成及び財政運営の中心\n的な役割を担い、円滑な行政運営に尽力してまいりました。\n豊富な行政経験と高い見識を有しており、持続可能な財政運営をはじめとする当町が抱える重要\n- 2 -\n\n課題への対応において、その手腕を十分に発揮されるものと期待しております。\n当町の将来を見据えた財政運営を推進するうえで、副町長として適任者と確信しておりますので、\nぜひともご同意いただきますよう、よろしくお願いを申し上げます。",
+    "text_length": 404,
+    "source": {
+      "minutes_file": "data/esashi_souya/minutes/20262003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-007",
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "esashi_souya-20262003-1-003",
+    "municipality": "esashi_souya",
+    "council_id": 20262003,
+    "council_name": "令和8年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "令和8年第3回臨時会（8月7日）",
+    "date": "2026-08-07",
+    "speaker": "深井信財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "このたびは、副町長選任の同意案件につきまして、議員皆様にご同意\nをいただき厚くお礼を申し上げます。ありがとうございます。\n私自身、まだまだ未熟ではございますが、これまでの職員としての経験を生かし、町長の補佐役\nとしてお支えし、誠心誠意、全力で職務を果たす所存でございます。\n議員の皆様には、今後とも、ご指導、ご鞭撻を賜りますようお願い申し上げまして、簡単でござ\nいますがご挨拶に代えさせていただきます。\nよろしくお願いいたします。\n◎閉会宣言",
+    "text_length": 221,
+    "source": {
+      "minutes_file": "data/esashi_souya/minutes/20262003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  }
+]

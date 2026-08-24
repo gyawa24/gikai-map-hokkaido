@@ -297,6 +297,27 @@ async function runBuildSegments(slug, dryRun) {
   });
 }
 
+async function runMinutesDateBackfill(slug, dryRun) {
+  if (!(await hasMinutes(slug))) return;
+  const args = [
+    path.join(REPO_ROOT, "scripts", "backfill-minutes-index-dates.mjs"),
+    "--slug",
+    slug,
+  ];
+  if (dryRun) {
+    console.log(`[dry-run] node ${args.map((arg) => path.relative(REPO_ROOT, arg) || arg).join(" ")}`);
+    return;
+  }
+  await new Promise((resolve, reject) => {
+    const child = spawn("node", args, { cwd: REPO_ROOT, stdio: "inherit" });
+    child.on("exit", (code) => {
+      if (code === 0) resolve();
+      else reject(new Error(`minutes date backfill failed for ${slug} with exit code ${code}`));
+    });
+    child.on("error", reject);
+  });
+}
+
 async function runVerify(slug, dryRun) {
   if (dryRun) {
     console.log(`[dry-run] node scripts/verify-municipality.mjs ${slug}`);
@@ -376,6 +397,7 @@ async function main() {
   await writeJson(ROOT_MUNICIPALITIES_PATH, municipalities, options.dryRun);
   await writeJson(SITE_MUNICIPALITIES_PATH, municipalities, options.dryRun);
 
+  await runMinutesDateBackfill(options.slug, options.dryRun);
   await syncMunicipalityDirectory(options.slug, options.dryRun);
 
   if (options.buildSegments) {

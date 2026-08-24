@@ -1,5 +1,6 @@
 import json
 import re
+import tempfile
 import time
 from pathlib import Path
 
@@ -10,6 +11,155 @@ HEADERS = {
     "Content-Type": "application/json",
     "User-Agent": "Mozilla/5.0 (compatible; gikai-map-hokkaido/1.0)",
 }
+
+REIWA_YEAR_PATTERN = re.compile(r"令和\s*(元|[0-9０-９]+)\s*年")
+FULLWIDTH_DIGITS = str.maketrans("０１２３４５６７８９", "0123456789")
+
+
+def resolve_council_year(
+    council_name: str,
+    fallback_year: str,
+    fallback_japanese_year: str,
+) -> tuple[str, str]:
+    """Prefer the year explicitly written in the official council name.
+
+    DNP can place a council under the preceding ``view_year`` even when the
+    council name itself says the following Reiwa year.  Only override the API
+    grouping metadata when the official name contains an unambiguous year.
+    """
+    match = REIWA_YEAR_PATTERN.search(council_name)
+    if not match:
+        return fallback_year, fallback_japanese_year
+
+    raw_year = match.group(1).translate(FULLWIDTH_DIGITS)
+    reiwa_year = 1 if raw_year == "元" else int(raw_year)
+    if not 1 <= reiwa_year <= 99:
+        return fallback_year, fallback_japanese_year
+
+    return str(2018 + reiwa_year), f"令和{reiwa_year}年"
+
+
+def write_json_atomic(path: Path, data) -> None:
+    """Write a complete JSON temp file before replacing the destination."""
+    temp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=path.parent,
+            prefix=f".{path.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as temp_file:
+            temp_path = Path(temp_file.name)
+            json.dump(data, temp_file, ensure_ascii=False, indent=2)
+        temp_path.replace(path)
+    finally:
+        if temp_path and temp_path.exists():
+            temp_path.unlink()
+
+
+def sync_existing_council_year(
+    output_path: Path,
+    year: str,
+    japanese_year: str,
+) -> bool:
+    """Keep an existing council file's year metadata aligned with its index."""
+    with open(output_path, encoding="utf-8") as handle:
+        council_data = json.load(handle)
+
+    if (
+        council_data.get("year") == year
+        and council_data.get("japanese_year") == japanese_year
+    ):
+        return False
+
+    council_data["year"] = year
+    council_data["japanese_year"] = japanese_year
+    write_json_atomic(output_path, council_data)
+    return True
+
+
+INDEX_METADATA_KEYS = (
+    "council_id",
+    "name",
+    "year",
+    "japanese_year",
+    "type_label",
+)
+
+
+def load_council_index(index_path: Path) -> dict[str, dict]:
+    """Load the existing index without allowing malformed data to be replaced."""
+    if not index_path.exists():
+        return {}
+
+    with open(index_path, encoding="utf-8") as handle:
+        entries = json.load(handle)
+    if not isinstance(entries, list):
+        raise ValueError(f"{index_path} must contain a JSON array")
+
+    index_by_id: dict[str, dict] = {}
+    for position, entry in enumerate(entries):
+        if not isinstance(entry, dict) or "council_id" not in entry:
+            raise ValueError(f"{index_path}[{position}] has no council_id")
+        council_id = entry["council_id"]
+        if not isinstance(council_id, int) or isinstance(council_id, bool):
+            raise ValueError(f"{index_path}[{position}] council_id must be an integer")
+        key = str(council_id)
+        if key in index_by_id:
+            raise ValueError(f"{index_path} has duplicate council_id: {entry['council_id']}")
+        index_by_id[key] = entry
+    return index_by_id
+
+
+def council_index_entry(
+    council_info: dict,
+    *,
+    previous: dict | None = None,
+    schedule_count: int | None = None,
+) -> dict:
+    """Update official metadata while retaining any existing index extensions."""
+    entry = dict(previous or {})
+    entry.update({key: council_info[key] for key in INDEX_METADATA_KEYS})
+    entry["file"] = f"{council_info['council_id']}.json"
+    if schedule_count is not None:
+        entry["schedule_count"] = schedule_count
+    return entry
+
+
+def council_file_schedule_count(output_path: Path) -> int:
+    with open(output_path, encoding="utf-8") as handle:
+        council_data = json.load(handle)
+    validate_council_content(council_data, source=str(output_path))
+    schedules = council_data.get("schedules", [])
+    return len(schedules)
+
+
+def validate_council_content(council_data: dict, *, source: str = "council") -> None:
+    """Reject structurally successful API responses that contain no publishable body."""
+    schedules = council_data.get("schedules")
+    if not isinstance(schedules, list) or not schedules:
+        raise ValueError(f"{source}: schedules must be a non-empty JSON array")
+
+    for position, schedule in enumerate(schedules):
+        minutes = schedule.get("minutes") if isinstance(schedule, dict) else None
+        if not isinstance(minutes, list) or not minutes:
+            raise ValueError(f"{source}: schedule[{position}] minutes must be non-empty")
+        if not any(str(minute.get("text", "")).strip() for minute in minutes if isinstance(minute, dict)):
+            raise ValueError(f"{source}: schedule[{position}] has no minute text")
+
+
+def ordered_council_index(index_by_id: dict[str, dict]) -> list[dict]:
+    """Order newer years and DNP council IDs first for stable public display."""
+    return sorted(
+        index_by_id.values(),
+        key=lambda entry: (
+            str(entry.get("year", "")),
+            entry["council_id"],
+        ),
+        reverse=True,
+    )
 
 
 def post(endpoint: str, payload: dict, request_interval: float, retries: int = 5) -> dict:
@@ -26,6 +176,18 @@ def post(endpoint: str, payload: dict, request_interval: float, retries: int = 5
                 time.sleep(wait)
             else:
                 raise
+
+
+def council_groups_from_response(data, *, allow_empty: bool = False) -> list[dict]:
+    """Validate the top-level DNP council-list response before filtering it."""
+    if not isinstance(data, dict):
+        raise ValueError("DNP councils/index response must be a JSON object")
+    councils = data.get("councils")
+    if not isinstance(councils, list):
+        raise ValueError("DNP councils/index response has no councils array")
+    if not councils and not allow_empty:
+        raise ValueError("DNP councils/index returned an empty councils array")
+    return councils
 
 
 def is_target_council(council_type: dict, target_keywords: list[str]) -> bool:
@@ -63,18 +225,18 @@ def fetch_councils(
     target_years: set[str],
     target_keywords: list[str],
     request_interval: float,
+    *,
+    allow_empty: bool = False,
 ) -> list[dict]:
     print("会議一覧を取得中...")
     data = post("councils/index", {"tenant_id": tenant_id}, request_interval=request_interval)
     time.sleep(request_interval)
 
     targets: list[dict] = []
-    for item in data.get("councils", []):
+    for item in council_groups_from_response(data, allow_empty=allow_empty):
         for view_year in item.get("view_years", []):
-            year = view_year.get("view_year", "")
-            if year not in target_years:
-                continue
-            japanese_year = view_year.get("japanese_year", "")
+            fallback_year = view_year.get("view_year", "")
+            fallback_japanese_year = view_year.get("japanese_year", "")
             for council_type in view_year.get("council_type", []):
                 if not is_target_council(council_type, target_keywords):
                     continue
@@ -86,10 +248,18 @@ def fetch_councils(
                 ]
                 type_label = " > ".join(name for name in type_names if name)
                 for council in council_type.get("councils", []):
+                    name = council["name"].replace("\u3000", " ").strip()
+                    year, japanese_year = resolve_council_year(
+                        name,
+                        fallback_year,
+                        fallback_japanese_year,
+                    )
+                    if year not in target_years:
+                        continue
                     targets.append(
                         {
                             "council_id": council["council_id"],
-                            "name": council["name"].replace("\u3000", " ").strip(),
+                            "name": name,
                             "year": year,
                             "japanese_year": japanese_year,
                             "type_label": type_label,
@@ -162,7 +332,9 @@ def scrape_council(council_info: dict, tenant_id: int, request_interval: float) 
             }
         )
 
-    return {**council_info, "schedules": result_schedules}
+    council_data = {**council_info, "schedules": result_schedules}
+    validate_council_content(council_data, source=f"council_id={council_id}")
+    return council_data
 
 
 def run_scrape(
@@ -173,64 +345,89 @@ def run_scrape(
     target_keywords: list[str],
     target_years: set[str],
     request_interval: float,
+    force: bool = False,
+    allow_empty: bool = False,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
+    index_path = output_dir / "index.json"
+    index_existed_before = index_path.exists()
+    index_by_id = load_council_index(index_path)
 
     councils = fetch_councils(
         tenant_id=tenant_id,
         target_years=target_years,
         target_keywords=target_keywords,
         request_interval=request_interval,
+        allow_empty=allow_empty,
     )
     print(f"\n対象会議: {len(councils)} 件\n")
     for council in councils:
         print(f"  [{council['year']}] {council['name']} (id={council['council_id']})")
 
-    index: list[dict] = []
-
+    failures = []
     for position, council_info in enumerate(councils):
         council_id = council_info["council_id"]
+        council_key = str(council_id)
         output_path = output_dir / f"{council_id}.json"
 
-        if output_path.exists():
-            print(f"\n[{position + 1}/{len(councils)}] スキップ (既存): {council_info['name']}")
-            index.append(
-                {
-                    "council_id": council_id,
-                    "name": council_info["name"],
-                    "year": council_info["year"],
-                    "japanese_year": council_info["japanese_year"],
-                    "type_label": council_info["type_label"],
-                    "file": f"{council_id}.json",
-                }
+        if output_path.exists() and not force:
+            try:
+                schedule_count = council_file_schedule_count(output_path)
+                metadata_updated = sync_existing_council_year(
+                    output_path,
+                    council_info["year"],
+                    council_info["japanese_year"],
+                )
+            except Exception as exc:
+                print(
+                    f"\n[{position + 1}/{len(councils)}] "
+                    f"既存会議の確認失敗、indexを保持: {council_info['name']} ({exc})"
+                )
+                failures.append((council_id, str(exc)))
+                continue
+            suffix = " / 年メタデータ更新" if metadata_updated else ""
+            print(
+                f"\n[{position + 1}/{len(councils)}] "
+                f"スキップ (既存): {council_info['name']}{suffix}"
+            )
+            index_by_id[council_key] = council_index_entry(
+                council_info,
+                previous=index_by_id.get(council_key),
+                schedule_count=schedule_count,
             )
             continue
 
         print(f"\n[{position + 1}/{len(councils)}] 取得中: {council_info['name']}")
-        council_data = scrape_council(
-            council_info,
-            tenant_id=tenant_id,
-            request_interval=request_interval,
-        )
+        try:
+            council_data = scrape_council(
+                council_info,
+                tenant_id=tenant_id,
+                request_interval=request_interval,
+            )
+        except Exception as exc:
+            print(f"    取得失敗、既存indexを保持: {exc}")
+            failures.append((council_id, str(exc)))
+            continue
 
-        with open(output_path, "w", encoding="utf-8") as handle:
-            json.dump(council_data, handle, ensure_ascii=False, indent=2)
+        write_json_atomic(output_path, council_data)
         print(f"    保存: {output_path}")
 
-        index.append(
-            {
-                "council_id": council_id,
-                "name": council_info["name"],
-                "year": council_info["year"],
-                "japanese_year": council_info["japanese_year"],
-                "type_label": council_info["type_label"],
-                "file": f"{council_id}.json",
-                "schedule_count": len(council_data["schedules"]),
-            }
+        index_by_id[council_key] = council_index_entry(
+            council_info,
+            previous=index_by_id.get(council_key),
+            schedule_count=len(council_data["schedules"]),
         )
 
-    index_path = output_dir / "index.json"
-    with open(index_path, "w", encoding="utf-8") as handle:
-        json.dump(index, handle, ensure_ascii=False, indent=2)
-    print(f"\nインデックス保存: {index_path}")
-    print(f"[{slug}] 完了: {len(councils)} 件の会議を処理しました。")
+    index = ordered_council_index(index_by_id)
+    if index or index_existed_before:
+        write_json_atomic(index_path, index)
+        print(f"\nインデックス保存: {index_path}")
+    else:
+        print("\n取得成功した会議がないためindexは作成しません。")
+    print(
+        f"[{slug}] 完了: {len(councils)} 件の会議を処理 / "
+        f"index全{len(index)}件を保持しました。"
+    )
+    if failures:
+        failed_ids = ", ".join(str(council_id) for council_id, _ in failures)
+        raise RuntimeError(f"[{slug}] {len(failures)} council(s) failed: {failed_ids}")

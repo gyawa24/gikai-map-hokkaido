@@ -114,11 +114,6 @@ function MemberCard({
                 )}
                 <p className="text-[11px] text-[#718096]">{member.furigana}</p>
               </div>
-              {activity && (
-                <span className="shrink-0 whitespace-nowrap rounded-full border border-[#D7E1F0] bg-[#F4F8FF] px-2 py-0.5 text-[11px] font-bold text-[#2A5298]">
-                  質問記録 {activity.session_count}回
-                </span>
-              )}
             </div>
 
             {member.faction && (
@@ -131,17 +126,22 @@ function MemberCard({
             )}
 
             {visibleThemes.length > 0 && (
-              <div className="mt-2 flex flex-wrap gap-1">
-                {visibleThemes.slice(0, 2).map((theme) => (
-                  <span key={theme} className="rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-[11px] text-[#4A5568]">
-                    {theme}
-                  </span>
-                ))}
-                {Math.max(0, (activity?.themes?.length ?? 0) - 2) > 0 && (
-                  <span className="rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-[11px] text-[#718096]">
-                    +{Math.max(0, (activity?.themes?.length ?? 0) - 2)}
-                  </span>
-                )}
+              <div className="mt-2">
+                <p className="text-[11px] font-medium text-[#718096]">
+                  自動整理テーマ（要原文確認）
+                </p>
+                <div className="mt-1 flex flex-wrap gap-1">
+                  {visibleThemes.slice(0, 2).map((theme) => (
+                    <span key={theme} className="rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-[11px] text-[#4A5568]">
+                      {theme}
+                    </span>
+                  ))}
+                  {Math.max(0, (activity?.themes?.length ?? 0) - 2) > 0 && (
+                    <span className="rounded-full border border-[#E2E8F0] bg-[#F8FAFC] px-2 py-0.5 text-[11px] text-[#718096]">
+                      +{Math.max(0, (activity?.themes?.length ?? 0) - 2)}
+                    </span>
+                  )}
+                </div>
               </div>
             )}
           </div>
@@ -212,11 +212,6 @@ function MemberCard({
             )}
             <p className="mt-0.5 text-[11px] text-[#718096] sm:text-xs">{member.furigana}</p>
           </div>
-          {activity && (
-            <span className="theme-pill-soft shrink-0 whitespace-nowrap px-2 py-1 text-[11px] text-[#2A5298] sm:px-[0.8rem] sm:text-[0.78rem]">
-              質問記録 {activity.session_count}回
-            </span>
-          )}
         </div>
 
         <hr className="border-[#E2E8F0] mb-3" />
@@ -265,11 +260,13 @@ function MemberCard({
           </div>
         </div>
 
-        {/* 関心テーマ（大分類タグ） */}
+        {/* 自動整理テーマ（大分類タグ） */}
         {activity && (activity.themes?.length > 0) && (
-          <div className="flex items-start gap-2 mb-2">
-            <span className="text-xs font-medium text-[#718096] w-10 shrink-0 pt-0.5">テーマ</span>
-            <div className="flex flex-wrap gap-1">
+          <div className="mb-2">
+            <p className="text-xs font-medium text-[#718096]">
+              自動整理テーマ（要原文確認）
+            </p>
+            <div className="mt-1 flex flex-wrap gap-1">
               {activity.themes.map((t, idx) => (
                 <span
                   key={t}

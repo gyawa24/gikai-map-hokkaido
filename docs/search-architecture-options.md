@@ -1,24 +1,73 @@
 # 横断検索アーキテクチャ選定メモ
 
-最終更新: 2026-07-09
+最終更新: 2026-08-24
 
 ## 結論
 
-推奨は **静的シャード型の自作 bigram 転置インデックス**。
+採用構成は **Static Assets の2/3-gram文書転置索引 + 原文Range確認**。
 
-理由は、地方議会ドットコムの優先順位が「継続できる環境・綺麗なデータ・更新スケジュール」であり、Cloudflare Static Assets だけで完結する構成が最も運用負荷と費用リスクを抑えられるため。D1 FTS5 は魅力があるが、2文字の日本語語彙（例: 除雪、防災、給食）に弱い可能性が高く、無料枠では行読み・CPU・失敗時の調査コストも増える。
+postingは文書IDを厳密昇順のdelta-varintへ圧縮する。2文字語は単一bigram、3文字語は単一trigram、頻出語は専用exact postingで一致が確定する。それ以外の4文字以上はtrigram候補を原文Rangeで必ず再確認する。manifest・asset catalog・posting・表示文書・原文Rangeの合計が96 requests / gzip 16MiB / 展開後64MiBを超える検索は、400文字版へ退避せず、語句追加を求めて取得前にfail-closedにする。
 
-T8 の暫定対応により、現在の既定検索インデックスは次のサイズまで下がった。
+原文確認は文書ごとのStatic Assetではない。最大64文書 / 128KiBを一つのgzip memberにし、約20MiBごとの少数の`.bin`へ連結する。ブラウザは必要なgzip memberだけをHTTP Rangeで取得する。assetには句読点・漢字表記を保った`cleanText`原文を保存し、検索照合時だけ正規化する。Rangeは`206`、`Content-Range`の開始・終了・asset総長、圧縮bytes/SHA-256、展開bytes/SHA-256をすべて照合する。Range非対応や上限超過時は本文全体の転送を中断し、400文字版へ退避せず全文検索をfail-closedにする。
+
+公開会議録のcoverageは会議単位ではなくschedule単位で管理する。公式minuteのうち空本文、名簿、明示的な`is_procedural`だけを本文索引から除き、`○議長`・`△議題`を含む他のtypeは原文全文を対象にする。各scheduleの原文hash・文字数・minute type別の対象/除外行数・文字数・理由をmanifestへ残し、目次・CID文字化け・画像PDFは理由付きでのみ除外する。
+
+議員活動は表示用のAI要約と厳密検索用原文を分離する。`member_activity` のpostingに入る内容は、市町村名・議員名・会議メタデータと、`evidence_segment_ids` / `evidence_minute_ids` が指す公式原文だけ。速報は明示されたevidenceの文字起こしだけを対象にする。`summary_topics` / `generated_topics` / AI要約は表示用のままで、公式本文一致に使わない。
+
+検索結果用の公開文書にもAI要約を混ぜない。`overview` / `summary_topics` / `generated_topics` は検索runtime・表示文書から除外し、テーマ表示は公式evidenceに正規化後の完全包含がある `canonical_topics` と原文抜粋だけに限定する。APIのファイルfallbackで同じevidence照合を再現できない場合は、テーマを省略してfail-closedにする。
+
+`municipalities.json` で `minutes_access: "restricted"` の自治体は、議事録・会議録速報・AI要約・議員活動を全文検索資産へ一切入れない。議員名や議決結果など、議事録本文を複製しない公開メタデータだけを索引できる。city/statewide/runtime/member-activity manifestに制限台帳を残し、verifierが全Static Assetで漏洩0を確認する。
+
+## 全道シャード実装（2026-08-23）
+
+全量 `search-index.json` が Cloudflare Static Assets の単一ファイル上限へ達したため、全道全文検索を静的シャード型へ移行した。
+
+| 生成物 | 用途 |
+|---|---|
+| `search-index.json` / `search-indexes/{slug}.json` | Research APIと議事録一覧向けの全期間agenda-only互換payload |
+| `search-bigram-statewide/postings/*.json.gz` | 1,024 bucketの2/3-gram文書ID delta posting |
+| `search-bigram-statewide/documents/*.json.gz` | 候補確定後に読む表示用メタデータ |
+| `search-bigram-statewide/exact-text/*.bin` | 専用exact postingで確定しない4文字以上の候補を必須照合する連結gzip member |
+| `search-bigram-statewide/asset-catalog.json.gz` | posting・表示文書・各Range blockの圧縮/展開bytesとSHA-256を持つ実行時整合台帳 |
+| `search-bigram-statewide/coverage/{slug}.json.gz` | schedule別hash・type別文字数・除外理由を保持する監査専用台帳 |
+| `search-bigram-cities/{slug}/manifest.json` | 市別文書範囲と全道postingへの参照 |
+
+詳細coverageは検索manifestへ重複格納しない。city/statewide manifestには監査assetのURL・hash・圧縮/展開bytes・集計件数だけを置き、通常検索ではcoverage assetを取得しない。statewide manifestは2MiB、city manifestは512KiBを上限とし、取得前にその上限を転送台帳へ仮予約してから実bodyへ精算する。代表クエリの転送量にはmanifestとasset catalogの両方を含める。
+
+旧`search-index-recent.json`とブラウザ/runtime用`search-index-shards`は公開しない。互換URLのglobal/city JSONは`agendas`と自治体メタだけを持ち、Research APIの全期間検索と議事録一覧の本文冒頭検索を維持する。production検索は2/3-gram Static Assets、明示的な非Cloudflare server modeは`site/data/_search-index.json`を直接読む。
+
+2文字以上の全期間検索は最初からngram経路を使う。1文字検索はruntime全shard取得と候補爆発を避けるため、UI/APIとも取得前に拒否する。「直近2年に1件あれば全期間検索をしない」方式は、他会議の本文400文字以降を欠落させるため廃止した。strictのactive city/source/year/faction/tab適用後が0件のときだけfallback同義・関連語を追加取得し、明示filterは0件でも自動解除しない。
+
+クライアントはmanifest以外のassetを検索1回限定のcacheに保持する。strict→fallbackはURL/Rangeとcatalog fingerprintが同じ取得だけを共有し、検索終了後に解放する。manifest・catalog・posting・表示文書・原文Rangeは一つのattempt別転送台帳で管理する。失敗した取得やoptional snippetも消費済みbytesを戻さず、retryは別attemptとして加算する。入力変更時は各callerの`AbortSignal`でfetch・解凍を止め、別検索と中断済みPromiseを共有しない。
+
+ビルドとverifierは次の上限を同じ値で保つ。
+
+- 1 asset: 24MiB以下
+- `public/generated`: 16,500 files / 750MiB以下
+- 代表クエリ: manifest・asset catalog・posting・文書・原文Rangeを合計96 requests以下 / gzip 16MiB / 展開後64MiB以下
+- posting中間spool: 8GiBを超えたら停止し、成否にかかわらず`finally`で削除
+
+`npm run build` のprebuildは索引生成直後に `verify-search-index-shards.mjs` を必ず実行する。手動確認だけに依存せず、publication schedule coverage、restricted自治体の漏洩、文書ID、catalogのorphan/欠落、全assetとRange blockの圧縮/展開hash、代表クエリ転送量、asset数・展開後サイズのいずれかが不正なら本番buildへ進まない。開発起動時だけは入力fingerprintと必須assetを確認する `--if-stale` を使い、変更がなければ再生成を省略する。
+
+最終実測（2026-08-24、activity再生成後）は次のとおり。
 
 | 指標 | 実測 |
 |---|---:|
-| フル版 `search-index.json` | 25,705,093 bytes / gzip 4,950,318 bytes |
-| 直近2年版 `search-index-recent.json` | 7,083,633 bytes / gzip 1,392,435 bytes |
-| 市別インデックス数 | 181 |
-| 最大市別インデックス | `chitose.json` 2,900,705 bytes |
-| 収録件数 | agendas 22,785 / memberActivities 7,842 / members 2,280 |
+| full build | 13分43秒 / 最大RSS 2.02GiB / peak footprint 3.05GiB |
+| posting spool | peak 1,459.88MiB / open handle peak 1 |
+| `public/generated` | 4,229 files / 610.90MiB / 最大asset 20.00MiB |
+| statewide postings | 1,024 files / gzip 279.62MiB / 展開後914.38MiB |
+| document payload | 6 files / gzip 2.88MiB / 展開後20.79MiB |
+| exact-text Range | 14 files / gzip 260.75MiB / 展開後1,048.47MiB |
+| coverage ledger | 180 files / gzip 0.78MiB / 展開後9.29MiB |
+| asset catalog | gzip 0.83MiB / 展開後3.38MiB |
+| agenda-only互換payload | global 19.67MiB / city合計19.70MiB |
+| member activity shards | 2,459 files / 20.10MiB |
+| 独立verifier | 5分7秒 / 4,229 asset・8,911 catalog entries・24件品質台帳すべてPASS |
 
-T8 は当面の体感改善として十分。ただし 179自治体すべてに議事録本文が入ると、現方式の全量JSON配信は再び厳しくなる。
+最大の単一gzip展開は4.00MiB（gzip 0.55MiB）。代表クエリの実測worstは22 requests / gzip 8.25MiB / 展開後36.55MiBで、96 / 16MiB / 64MiB gateに収まった。既知長句「千歳市民の入院を受け入れた」は15 requests / gzip 5.97MiB / 展開後18.91MiBで千歳市の1会議だけに確定した。`中学校`・`町内会`・`図書館`・`道路整備`・`地域活性化`・`議会`・`町長`・`予算`も21 requests、gzip約7.9〜8.0MiB、展開後約35.2〜35.7MiBだった。
+
+verifierはcatalog内のhashだけでなく、statewideの正規1,024 posting集合、posting本文から逆算したcity別bucket集合、active自治体slug集合、city/statewide Range、物理assetのmissing/orphanを双方向で照合する。`_postings-build`・旧recent/runtime shard・一時build stateも残存を許さない。総量610.90MiBは750MiB gate内だが軽量ではないため、自治体追加時はfull build時間・peak footprint・変更asset数/bytes・Cloudflare upload時間を継続記録する。
 
 ## 評価表
 

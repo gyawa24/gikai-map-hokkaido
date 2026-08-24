@@ -29,16 +29,6 @@ type MinutesIndexResult = {
   source: "local" | "remote" | "empty";
 };
 
-async function fetchRawJson<T>(remotePath: string): Promise<T | null> {
-  try {
-    const res = await fetch(rawUrl(remotePath), { cache: "no-store" });
-    if (!res.ok) return null;
-    return (await res.json()) as T;
-  } catch {
-    return null;
-  }
-}
-
 export function generateStaticParams() {
   return getCapabilityCityStaticParams("minutes");
 }
@@ -67,13 +57,15 @@ async function getMinutesIndex(city: string): Promise<MinutesIndexResult> {
     path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "index.json"),
   ];
   for (const fp of candidates) {
+    if (!fs.existsSync(/*turbopackIgnore: true*/ fp)) continue;
     try {
       const data = JSON.parse(
         fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
       ) as MinutesIndexItem[];
       if (Array.isArray(data)) return { items: data, source: "local" };
+      return { items: [], source: "empty" };
     } catch {
-      // try next
+      return { items: [], source: "empty" };
     }
   }
 
@@ -82,8 +74,17 @@ async function getMinutesIndex(city: string): Promise<MinutesIndexResult> {
     `site/data/${city}/index.json`,
   ];
   for (const remotePath of remoteCandidates) {
-    const data = await fetchRawJson<MinutesIndexItem[]>(remotePath);
-    if (Array.isArray(data)) return { items: data, source: "remote" };
+    try {
+      const response = await fetch(rawUrl(remotePath), { cache: "no-store" });
+      if (response.status === 404) continue;
+      if (!response.ok) return { items: [], source: "empty" };
+      const data = (await response.json()) as MinutesIndexItem[];
+      return Array.isArray(data)
+        ? { items: data, source: "remote" }
+        : { items: [], source: "empty" };
+    } catch {
+      return { items: [], source: "empty" };
+    }
   }
 
   return { items: [], source: "empty" };
@@ -134,22 +135,26 @@ export default async function CityMinutesPage({
   if (!municipality || (!hasCityCapability(city, "minutes") && allItems.length === 0)) {
     notFound();
   }
+  const restricted = municipality.minutes_access === "restricted";
 
   const items = await Promise.all(
-    allItems.map(async (item) => ({
-      ...item,
-      enriched: getEnriched(city, item.council_id),
-      category: categoryLabel(item.type_label),
-      hasStructuredMinutes:
-        indexSource === "local"
+    allItems.map(async (item) => {
+      const hasStructured =
+        !restricted && indexSource === "local"
           ? await hasStructuredMinutes(city, String(item.council_id))
-          : false,
-    }))
+          : false;
+      const enriched = restricted ? null : getEnriched(city, item.council_id);
+      return {
+        ...item,
+        enriched,
+        category: categoryLabel(item.type_label),
+        hasStructuredMinutes: hasStructured,
+      };
+    })
   );
 
   const enrichedCount = items.filter((i) => i.enriched).length;
-  const restricted = municipality?.minutes_access === "restricted";
-  const restrictedNote = municipality?.minutes_access_note;
+  const restrictedNote = municipality.minutes_access_note;
   const breadcrumb = buildBreadcrumbList([
     { name: "地方議会ドットコム", path: "/" },
     { name: `${cityName}議会`, path: `/${city}` },
@@ -178,7 +183,9 @@ export default async function CityMinutesPage({
       <section className="mb-5">
         <h2 className="theme-section-title mb-1 text-2xl">公式議事録</h2>
         <p className="text-base text-[#4A5568] leading-relaxed">
-          {cityName}議会の公式会議録です。本会議・委員会の発言内容をすべて収録しています。
+          {restricted
+            ? `${cityName}議会の公式会議録一覧です。全文は公式ページで確認してください。`
+            : `${cityName}議会の公式会議録です。本会議・委員会の発言内容を収録しています。`}
           {enrichedCount > 0 && !restricted && (
             <span className="text-sm text-[#718096]">
               {" "}（{enrichedCount}件にAI要約・タグあり）
@@ -193,16 +200,22 @@ export default async function CityMinutesPage({
           <p className="text-xs text-[#5A4500] leading-relaxed">
             {restrictedNote ?? `${cityName}公式サイトの著作権ポリシーで複製・転用に事前許可を要する旨が明記されているため、許諾確認が取れるまで本サイトでの全文閲覧を停止しています。データは保管しており、許諾後に公開を再開します。`}
             <br />
-            会議録本体は{" "}
-            <a
-              href="https://github.com/gyawa24/gikai-map-hokkaido/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-[#7A5A00]"
-            >
-              {cityName}議会事務局
-            </a>
-            の公式ページからご覧ください。
+            {municipality.minutes_official_url ? (
+              <>
+                会議録本体は{" "}
+                <a
+                  href={municipality.minutes_official_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#7A5A00]"
+                >
+                  {cityName}議会の公式ページ
+                </a>
+                からご覧ください。
+              </>
+            ) : (
+              <>会議録本体は{cityName}議会の公式サイトからご覧ください。</>
+            )}
           </p>
         </div>
       )}

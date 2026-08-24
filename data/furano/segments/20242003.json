@@ -1,0 +1,48 @@
+[
+  {
+    "id": "furano-20242003-2-001",
+    "municipality": "furano",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "令和6年第3回臨時会 会議録(第1号) (PDF 272KB)",
+    "date": null,
+    "speaker": "今井顕一事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "-登壇- 報告第１号、専決処分報告について御説明申し上げま",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/furano/minutes/20242003.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "furano-20242003-2-002",
+    "municipality": "furano",
+    "council_id": 20242003,
+    "council_name": "令和6年第3回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "令和6年第3回臨時会 会議録(第1号) (PDF 272KB)",
+    "date": null,
+    "speaker": "佐藤秀靖議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀靖",
+    "member_faction": "ふらの未来の会",
+    "text": "-登壇- 17款道支出金は、３項委託金で、衆議院議員選挙委託\n議会運営委員会より、本日をもって招集されました令 金1,727万8,000円の追加でございます。\n- 3 -\n\n以上、よろしく御審議の上、御承認賜りますようお願 戻りまして、６ページ、７ページでございます。\nい申し上げます。 １款市税は、２項固定資産税で、償却資産164万8,000",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/furano/minutes/20242003.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  }
+]

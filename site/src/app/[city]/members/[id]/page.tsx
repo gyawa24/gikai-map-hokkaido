@@ -9,7 +9,9 @@ import { getMunicipality } from "@/lib/municipalities";
 import MemberShareButtons from "@/components/MemberShareButtons";
 import { withPublicMemberPhotoUrls } from "@/lib/memberPhotos";
 import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
+import { extractFactionLeadershipLabels } from "@/lib/memberRoles.mjs";
 import { buildBreadcrumbList } from "@/lib/structuredData";
+import { fetchCloudflareStaticAsset } from "@/lib/staticAssetFetch";
 
 // 会議名から西暦を推定（令和◯年 → 2018+N）。グルーピング用。
 function yearFromSessionName(name: string): string {
@@ -39,12 +41,74 @@ function formatActivityDate(date: string | undefined): string {
   return match ? `${match[1]}年${Number(match[2])}月${Number(match[3])}日` : "";
 }
 
+function uniqueTopics(values: string[], limit: number): string[] {
+  return [...new Set(values.map((value) => value.trim()).filter(Boolean))].slice(0, limit);
+}
+
 function questionKindLabel(kind: MemberActivitySession["question_kind"]): string {
   if (kind === "committee_question") return "委員会質疑";
   if (kind === "representative_question") return "代表質問";
   if (kind === "plenary_question") return "本会議質疑";
   if (kind === "general_question") return "一般質問";
-  return "質問・質疑";
+  if (kind === "other_question") return "質問・質疑";
+  return "種別未分類";
+}
+
+function hasClassifiedQuestionActivity(activity: MemberActivity): boolean {
+  if (activity.classification_status) {
+    return activity.classification_status === "classified";
+  }
+
+  return [
+    activity.official_session_count,
+    activity.preliminary_session_count,
+    activity.general_question_count,
+    activity.representative_question_count,
+    activity.committee_question_count,
+    activity.plenary_question_count,
+  ].every((value) => typeof value === "number")
+    && activity.sessions.every((session) => !session.block_id?.startsWith("legacy-"))
+    && activity.sessions.every((session) => Boolean(
+      session.record_id && session.question_kind && session.source_status
+    ));
+}
+
+function memberRoleLabels(member: Member): string[] {
+  const committeeLeadershipLabels = member.committees.flatMap((value) => {
+    const compact = String(value ?? "").replace(/[\s　]/g, "");
+    return /^(?:副)?議長$/u.test(compact) ? [compact] : [];
+  });
+  const values = [
+    member.role,
+    member.title,
+    member.position,
+    ...(member.roles ?? []),
+    ...(member.positions ?? []),
+    ...(member.roles_all ?? []),
+    ...(member.extra_roles ?? []),
+    ...(member.other_posts ?? []),
+    ...extractFactionLeadershipLabels(member.faction),
+    ...committeeLeadershipLabels,
+  ];
+  const committeeLabels = new Set(
+    member.committees
+      .map((label) => label.replace(/[\s　]/g, ""))
+      .filter((label) => !/^(?:副)?議長$/u.test(label))
+  );
+  const labels = values.flatMap((value) => {
+    const trimmed = String(value ?? "").trim();
+    if (!trimmed) return [];
+    const compact = trimmed.replace(/[\s　]/g, "");
+    if (compact === "議員" || committeeLabels.has(compact)) return [];
+    return [/^(?:副)?議長$/u.test(compact) ? compact : trimmed];
+  });
+  return [...new Set(labels)];
+}
+
+function memberCommitteeLabels(member: Member): string[] {
+  return member.committees.filter(
+    (label) => !/^(?:副)?議長$/u.test(label.replace(/[\s　]/g, ""))
+  );
 }
 
 // Cloudflare Workers の静的アセットキャッシュは読み取り専用。
@@ -86,7 +150,44 @@ async function getMembers(city: string): Promise<Member[]> {
   return remote ? withPublicMemberPhotoUrls(remote) : [];
 }
 
-function getActivityLocal(city: string): Record<string, MemberActivity> {
+type MemberActivityShard = {
+  version: 1;
+  city: string;
+  seat_number: number;
+  member_name: string;
+  activity: MemberActivity | null;
+};
+
+function publishableActivity(activity: MemberActivity | null | undefined): MemberActivity | null {
+  return activity?.classification_status === "classified" ? activity : null;
+}
+
+function getActivityLocal(
+  city: string,
+  seatNumber: number,
+  memberName: string
+): MemberActivity | null | undefined {
+  try {
+    const shardPath = path.join(
+      /*turbopackIgnore: true*/ process.cwd(),
+      "public",
+      "generated",
+      "member-activity",
+      city,
+      `${seatNumber}.json`
+    );
+    const shard = JSON.parse(
+      fs.readFileSync(/*turbopackIgnore: true*/ shardPath, "utf-8")
+    ) as MemberActivityShard;
+    if (
+      shard.city === city
+      && shard.seat_number === seatNumber
+      && shard.member_name.replace(/\s/g, "") === memberName.replace(/\s/g, "")
+    ) return publishableActivity(shard.activity);
+  } catch {
+    // build前のローカル環境では従来の市単位データへフォールバックする。
+  }
+
   try {
     const fp = path.join(
       /*turbopackIgnore: true*/ process.cwd(),
@@ -94,23 +195,45 @@ function getActivityLocal(city: string): Record<string, MemberActivity> {
       city,
       "members_activity.json"
     );
-    return JSON.parse(
+    const activity = JSON.parse(
       fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
     ) as Record<string, MemberActivity>;
+    return publishableActivity(activity[memberName.replace(/\s/g, "")]);
   } catch {
-    return {};
+    return undefined;
   }
 }
 
-async function getActivity(city: string): Promise<Record<string, MemberActivity>> {
-  const local = getActivityLocal(city);
-  if (Object.keys(local).length > 0) return local;
+async function getActivity(
+  city: string,
+  seatNumber: number,
+  memberName: string
+): Promise<MemberActivity | null> {
+  const local = getActivityLocal(city, seatNumber, memberName);
+  if (local !== undefined) return local;
 
-  return (
-    (await fetchRawJson<Record<string, MemberActivity>>(
-      `site/data/${city}/members_activity.json`
-    )) ?? {}
+  const assetUrl = new URL(
+    `/generated/member-activity/${city}/${seatNumber}.json`,
+    absoluteUrl("/")
   );
+  const assetResponse = await fetchCloudflareStaticAsset(assetUrl);
+  if (assetResponse?.ok) {
+    try {
+      const shard = (await assetResponse.json()) as MemberActivityShard;
+      if (
+        shard.city === city
+        && shard.seat_number === seatNumber
+        && shard.member_name.replace(/\s/g, "") === memberName.replace(/\s/g, "")
+      ) return publishableActivity(shard.activity);
+    } catch {
+      // Vercel rollbackや旧デプロイでは従来のGitHub Rawへフォールバックする。
+    }
+  }
+
+  const remote = await fetchRawJson<Record<string, MemberActivity>>(
+    `site/data/${city}/members_activity.json`
+  );
+  return publishableActivity(remote?.[memberName.replace(/\s/g, "")]);
 }
 
 export async function generateMetadata({
@@ -132,7 +255,9 @@ export async function generateMetadata({
   const title = partyLabel
     ? `${member.name}（${partyLabel}）- ${cityName}議会`
     : `${member.name} - ${cityName}議会`;
-  const description = `${cityName}議会 ${member.name}議員の会派、委員会、得票数、活動テーマ、発言記録を掲載しています。`;
+  const description = municipality?.minutes_access === "restricted"
+    ? `${cityName}議会 ${member.name}議員の会派、委員会、得票数などの基本情報を掲載しています。`
+    : `${cityName}議会 ${member.name}議員の会派、委員会、得票数、活動テーマ、発言記録を掲載しています。`;
 
   return buildPageMetadata({
     title,
@@ -154,9 +279,30 @@ export default async function CityMemberDetailPage({
   const member = members.find((m) => m.seat_number === Number(id));
   if (!member) notFound();
 
-  const activity = await getActivity(city);
-  const memberActivity = activity[member.name.replace(/\s/g, "")];
-  const questionThemes = memberActivity?.summary_topics ?? [];
+  const memberActivity = municipality?.minutes_access === "restricted"
+    ? null
+    : await getActivity(city, member.seat_number, member.name);
+  const roleLabels = memberRoleLabels(member);
+  const committeeLabels = memberCommitteeLabels(member);
+  const leadershipLabels = roleLabels.filter((label) => /^(?:副)?議長$/u.test(label));
+  const canonicalQuestionThemes = uniqueTopics(
+    memberActivity?.sessions.flatMap((session) => session.canonical_topics ?? []) ?? [],
+    16
+  );
+  const generatedQuestionThemes = uniqueTopics(
+    memberActivity?.generated_topics?.length
+      ? memberActivity.generated_topics
+      : memberActivity?.sessions.flatMap((session) => session.generated_topics ?? []) ?? [],
+    12
+  );
+  const hasClassifiedActivity = memberActivity
+    ? hasClassifiedQuestionActivity(memberActivity)
+    : false;
+  const shareActivitySummary = memberActivity
+    ? hasClassifiedActivity
+      ? `公式会議録の質問記録${memberActivity.official_session_count ?? 0}件`
+      : `会議録から抽出した質問・質疑記録${memberActivity.session_count}件（分類中）`
+    : undefined;
 
   const memberSearchHref = searchHref(city, cityName, member.name);
   const councilName = municipality?.council_name ?? `${cityName}議会`;
@@ -224,7 +370,8 @@ export default async function CityMemberDetailPage({
               </span>
               {memberActivity && (
                 <span className="theme-pill-soft text-[#2A5298]">
-                  質問記録 {memberActivity.session_count}回
+                  {hasClassifiedActivity ? "質問記録" : "会議録記録"}{" "}
+                  {memberActivity.session_count}件
                 </span>
               )}
             </div>
@@ -258,13 +405,27 @@ export default async function CityMemberDetailPage({
               </dd>
             </div>
           )}
-          {member.committees.length > 0 && (
+          {roleLabels.length > 0 && (
+            <div className="flex gap-3">
+              <dt className="w-12 shrink-0 pt-0.5 text-xs font-medium text-[#718096]">
+                役職
+              </dt>
+              <dd className="flex flex-wrap gap-1">
+                {roleLabels.map((role) => (
+                  <span key={role} className="theme-pill-soft text-sm text-[#4A5568]">
+                    {role}
+                  </span>
+                ))}
+              </dd>
+            </div>
+          )}
+          {committeeLabels.length > 0 && (
             <div className="flex gap-3">
               <dt className="text-xs font-medium text-[#718096] w-12 shrink-0 pt-0.5">
                 委員会
               </dt>
               <dd className="flex flex-wrap gap-1">
-                {member.committees.map((c) => (
+                {committeeLabels.map((c) => (
                   <span
                     key={c}
                     className="theme-pill-soft text-sm text-[#4A5568]"
@@ -336,8 +497,8 @@ export default async function CityMemberDetailPage({
           memberName={member.name}
           cityName={cityName}
           factionLabel={member.faction ?? member.party ?? undefined}
-          sessionCount={memberActivity?.session_count}
-          themes={questionThemes}
+          activitySummary={shareActivitySummary}
+          themes={canonicalQuestionThemes}
         />
       </section>
 
@@ -347,48 +508,94 @@ export default async function CityMemberDetailPage({
           <h3 className="text-base font-bold text-[#1B3A6B] mb-3">
             質問・質疑の記録
             <span className="ml-2 text-sm font-normal text-[#718096]">
-              （{memberActivity.session_count}回）
+              （{memberActivity.session_count}件）
             </span>
           </h3>
 
-          <div className="mb-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-6">
+          {leadershipLabels.length > 0 && (
+            <p className="mb-4 rounded-lg border border-[#CBD5E0] bg-[#F8FAFC] px-4 py-3 text-sm leading-relaxed text-[#4A5568]">
+              役職：{leadershipLabels.join("・")}。議長・副議長は、議会運営上、一般質問の扱いが他の議員と異なる場合があります。質問・質疑記録の件数だけで議員活動全体を示すものではありません。
+            </p>
+          )}
+
+          {hasClassifiedActivity ? (
+          <>
+          <p className="mb-2 text-sm leading-relaxed text-[#4A5568]">
+            以下は、本サイトで収録・分類済みの公式会議録と速報の範囲での件数です。任期全体や未収録会議を含む件数ではありません。
+          </p>
+          <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
               <p className="text-xs text-[#718096]">公式会議録</p>
               <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
-                {memberActivity.official_session_count ?? memberActivity.session_count}回
+                {memberActivity.official_session_count ?? memberActivity.session_count}件
               </p>
             </div>
             <div className="rounded-lg border border-[#F1D39A] bg-[#FFF9EC] px-4 py-3">
               <p className="text-xs text-[#78451F]">正式版公開前の動画速報</p>
               <p className="mt-1 text-xl font-bold tabular-nums text-[#78451F]">
-                {memberActivity.preliminary_session_count ?? 0}回
+                {memberActivity.preliminary_session_count ?? 0}件
               </p>
             </div>
             <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
               <p className="text-xs text-[#718096]">一般質問</p>
               <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
-                {memberActivity.general_question_count ?? 0}回
+                {memberActivity.general_question_count ?? 0}件
               </p>
             </div>
             <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
               <p className="text-xs text-[#718096]">代表質問</p>
               <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
-                {memberActivity.representative_question_count ?? 0}回
+                {memberActivity.representative_question_count ?? 0}件
               </p>
             </div>
             <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
               <p className="text-xs text-[#718096]">委員会質疑</p>
               <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
-                {memberActivity.committee_question_count ?? 0}回
+                {memberActivity.committee_question_count ?? 0}件
               </p>
             </div>
             <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
               <p className="text-xs text-[#718096]">本会議質疑</p>
               <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
-                {memberActivity.plenary_question_count ?? 0}回
+                {memberActivity.plenary_question_count ?? 0}件
+              </p>
+            </div>
+            <div className="rounded-lg border border-[#CBD5E0] bg-white px-4 py-3">
+              <p className="text-xs text-[#718096]">その他の質問・質疑</p>
+              <p className="mt-1 text-xl font-bold tabular-nums text-[#1B3A6B]">
+                {memberActivity.other_question_count
+                  ?? memberActivity.sessions.filter((session) => session.question_kind === "other_question").length}件
               </p>
             </div>
           </div>
+          <p className="mb-4 mt-2 text-sm leading-relaxed text-[#4A5568]">
+            件数は発言回数ではなく、一般質問・代表質問の質問枠、委員会会議、本会議の議案・款ごとの質疑ブロックへの参加を基準にしています。同じ会議で複数件になる場合があります。詳しくは
+            <Link href="/methodology" className="font-semibold text-[#2A5298] hover:underline">
+              算出方法
+            </Link>
+            をご覧ください。内容の誤りは
+            <Link
+              href="/terms#correction-request"
+              className="font-semibold text-[#2A5298] hover:underline"
+            >
+              訂正・削除依頼
+            </Link>
+            からお知らせいただけます。
+          </p>
+          </>
+          ) : (
+            <div className="mb-4 rounded-lg border border-[#F1D39A] bg-[#FFF9EC] px-4 py-4">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <p className="text-sm font-semibold text-[#78451F]">質問種別は分類準備中です</p>
+                <p className="text-xl font-bold tabular-nums text-[#78451F]">
+                  収録 {memberActivity.session_count}件
+                </p>
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-[#5D3A12]">
+                現在は会議録から抽出した記録を掲載しています。一般質問・代表質問・委員会質疑などの内訳と原典位置は確認中で、「0回」という意味ではありません。
+              </p>
+            </div>
+          )}
 
           {(memberActivity.preliminary_session_count ?? 0) > 0 && (
             <p className="mb-4 rounded-lg border border-[#F1D39A] bg-[#FFF9EC] px-4 py-3 text-sm leading-relaxed text-[#5D3A12]">
@@ -400,7 +607,7 @@ export default async function CityMemberDetailPage({
             <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#718096]">
-                  よく扱っているテーマ
+                  質問記録のテーマと原文語句
                 </p>
               </div>
               <form action="/search" method="get" className="flex flex-col gap-2 sm:flex-row lg:min-w-[24rem]">
@@ -421,24 +628,47 @@ export default async function CityMemberDetailPage({
                 </button>
               </form>
             </div>
-            {questionThemes.length > 0 ? (
-              <div className="mt-3 flex flex-wrap gap-1.5">
-                {questionThemes.map((t) => {
-                  return (
+            {generatedQuestionThemes.length > 0 && (
+              <div className="mt-4">
+                <p className="text-xs font-semibold text-[#4A5568]">AIによる整理テーマ</p>
+                <p className="mt-1 text-sm leading-relaxed text-[#718096]">
+                  公式会議録の質問記録を探しやすくするための補助ラベルです。関心度や得意分野を示す評価ではなく、内容は下の原文リンクで確認してください。
+                </p>
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {generatedQuestionThemes.map((topic) => (
+                    <span
+                      key={topic}
+                      className="inline-flex min-h-9 items-center rounded-full border border-[#F1D39A] bg-[#FFF9EC] px-3 py-1.5 text-xs font-semibold text-[#5D3A12]"
+                    >
+                      {topic}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+            {canonicalQuestionThemes.length > 0 && (
+              <div className="mt-4">
+                <p className="text-xs font-semibold text-[#4A5568]">原文で確認できる語句</p>
+                <p className="mt-1 text-sm leading-relaxed text-[#718096]">
+                  質問記録の根拠本文に同じ表現がある語句です。頻度や重要度を示すものではありません。
+                </p>
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {canonicalQuestionThemes.map((topic) => (
                     <Link
-                      key={t}
-                      href={searchHref(city, cityName, `${member.name} ${t}`)}
+                      key={topic}
+                      href={searchHref(city, cityName, `${member.name} ${topic}`)}
                       prefetch={false}
                       className="inline-flex min-h-11 items-center rounded-full border border-[#CBD5E0] bg-white px-3 py-2 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
                     >
-                      {t}
+                      {topic}
                     </Link>
-                  );
-                })}
+                  ))}
+                </div>
               </div>
-            ) : (
+            )}
+            {generatedQuestionThemes.length === 0 && canonicalQuestionThemes.length === 0 && (
               <div className="mt-3 rounded-lg border border-dashed border-[#CBD5E0] bg-white px-3 py-2 text-sm leading-relaxed text-[#4A5568]">
-                AI要約テーマは準備中です。下の各会議の「議事録中の項目を確認」では、原文から抽出した項目を確認できます。
+                テーマ整理は準備中です。下の会議記録から質問種別と公式原文を確認できます。
               </div>
             )}
           </div>
@@ -472,9 +702,30 @@ export default async function CityMemberDetailPage({
                 );
                 for (let i = 0; i < sessionList.length; i++) {
                   const s = sessionList[i];
-                  const sessionThemes = s.summary_topics?.length ? s.summary_topics : [];
-                  const itemHref = s.href ?? (s.council_id > 0 ? `/${city}/minutes/${s.council_id}` : "");
+                  const canonicalSessionThemes = uniqueTopics(s.canonical_topics ?? [], 6);
+                  const generatedSessionThemes = uniqueTopics(s.generated_topics ?? [], 6);
+                  const explicitHref = s.href?.trim() ?? "";
+                  const internalMinutesMatch = explicitHref.match(
+                    new RegExp(`^/${city}/minutes/(\\d+)(?:[/?#]|$)`)
+                  );
+                  const hasVerifiedOfficialLink = Boolean(
+                    s.record_id
+                    && s.source_status === "official"
+                    && s.council_id > 0
+                    && (
+                      !internalMinutesMatch
+                      || Number(internalMinutesMatch[1]) === Number(s.council_id)
+                    )
+                  );
+                  const itemHref = internalMinutesMatch
+                    ? hasVerifiedOfficialLink ? explicitHref : ""
+                    : explicitHref || (
+                      hasVerifiedOfficialLink
+                        ? `/${city}/minutes/${s.council_id}`
+                        : ""
+                    );
                   const isPreliminary = s.source_status === "preliminary";
+                  const isOfficial = s.source_status === "official";
                   const activityDate = formatActivityDate(s.date);
                   items.push(
                     <li key={s.record_id ?? `${year}-${i}`} className="relative">
@@ -490,7 +741,13 @@ export default async function CityMemberDetailPage({
                                 ? "rounded-full bg-[#FFF1D6] px-2 py-0.5 text-[11px] font-semibold text-[#78451F]"
                                 : "rounded-full bg-[#E8EEF7] px-2 py-0.5 text-[11px] font-semibold text-[#1B3A6B]"
                               }>
-                                {s.source_label ?? (isPreliminary ? "動画会議録速報" : "公式会議録")}
+                                {s.source_label ?? (
+                                  isPreliminary
+                                    ? "動画会議録速報"
+                                    : isOfficial
+                                      ? "公式会議録"
+                                      : "会議録から抽出（分類前）"
+                                )}
                               </span>
                               <span className="rounded-full bg-[#F4F6F9] px-2 py-0.5 text-[11px] font-semibold text-[#4A5568]">
                                 {questionKindLabel(s.question_kind)}
@@ -516,7 +773,11 @@ export default async function CityMemberDetailPage({
                               prefetch={false}
                               className="inline-flex min-h-11 shrink-0 items-center gap-0.5 text-xs font-semibold text-[#2A5298] transition-colors hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
                             >
-                              {isPreliminary ? "動画速報を見る" : "公式会議録を見る"}
+                              {isPreliminary
+                                ? "動画速報を見る"
+                                : isOfficial
+                                  ? "該当箇所を見る"
+                                  : "会議録を見る"}
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-3 h-3"
@@ -532,26 +793,71 @@ export default async function CityMemberDetailPage({
                               </svg>
                             </Link>
                           )}
+                          {!itemHref && (
+                            <span className="inline-flex min-h-11 shrink-0 items-center text-xs font-medium text-[#718096]">
+                              原典リンク確認中
+                            </span>
+                          )}
                         </div>
-                        {s.overview && (
-                          <p className="mb-3 text-sm leading-relaxed text-[#4A5568]">{s.overview}</p>
+                        {s.source_note && (
+                          <p className="mb-3 rounded-md border border-[#F1D39A] bg-[#FFF9EC] px-3 py-2 text-sm leading-relaxed text-[#5D3A12]">
+                            {s.source_note}
+                          </p>
                         )}
-                        {sessionThemes.length > 0 && (
-                          <div className="flex flex-wrap gap-1.5">
-                            {sessionThemes.map((t) => (
-                              <Link
-                                key={t}
-                                href={searchHref(city, cityName, `${member.name} ${t}`)}
-                                prefetch={false}
-                                className="inline-flex min-h-11 items-center rounded-full bg-[#E8EEF7] px-3 py-2 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
-                              >
-                                {t}
-                              </Link>
-                            ))}
+                        {s.overview && (
+                          <div className="mb-3 rounded-md border border-[#F1D39A] bg-[#FFF9EC] px-3 py-2">
+                            <p className="text-[11px] font-semibold text-[#78451F]">
+                              AI整理概要（要原文確認）
+                            </p>
+                            <p className="mt-1 text-sm leading-relaxed text-[#4A5568]">{s.overview}</p>
+                          </div>
+                        )}
+                        {generatedSessionThemes.length > 0 && (
+                          <div className="mt-3">
+                            <p className="mb-1.5 text-[11px] font-semibold text-[#718096]">
+                              AI整理テーマ（要原文確認）
+                            </p>
+                            <div className="flex flex-wrap gap-1.5">
+                              {generatedSessionThemes.map((topic) => (
+                                <span
+                                  key={topic}
+                                  className="inline-flex min-h-9 items-center rounded-full border border-[#F1D39A] bg-[#FFF9EC] px-3 py-1.5 text-xs font-semibold text-[#5D3A12]"
+                                >
+                                  {topic}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        {canonicalSessionThemes.length > 0 && (
+                          <div className="mt-3">
+                            <p className="mb-1.5 text-[11px] font-semibold text-[#718096]">
+                              原文で確認できる語句
+                            </p>
+                            <div className="flex flex-wrap gap-1.5">
+                              {canonicalSessionThemes.map((topic) => (
+                                <Link
+                                  key={topic}
+                                  href={searchHref(city, cityName, `${member.name} ${topic}`)}
+                                  prefetch={false}
+                                  className="inline-flex min-h-11 items-center rounded-full bg-[#E8EEF7] px-3 py-2 text-xs font-semibold text-[#1B3A6B] transition-colors hover:bg-[#1B3A6B] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
+                                >
+                                  {topic}
+                                </Link>
+                              ))}
+                            </div>
                           </div>
                         )}
                         {(s.topic_details?.length ?? 0) > 0 && (
                           <div className="mt-3 space-y-2">
+                            <div>
+                              <p className="text-[11px] font-semibold text-[#78451F]">
+                                AI整理した質問・答弁（要原文確認）
+                              </p>
+                              <p className="mt-0.5 text-sm leading-relaxed text-[#718096]">
+                                原文引用ではありません。必ず原典リンクで内容を確認してください。
+                              </p>
+                            </div>
                             {s.topic_details?.map((topic) => (
                               <details key={topic.title} className="rounded-md border border-[#D7E0EC] bg-[#F8FAFC] px-3 py-2">
                                 <summary className="flex min-h-11 cursor-pointer items-center text-sm font-semibold text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]">
@@ -583,7 +889,7 @@ export default async function CityMemberDetailPage({
                         {s.topics.length > 0 && (
                           <details className="mt-3 rounded-md border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2">
                             <summary className="flex min-h-11 cursor-pointer items-center text-xs font-semibold text-[#4A5568] hover:text-[#1B3A6B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]">
-                              議事録中の項目を確認
+                              自動抽出した項目を確認（要原文確認）
                             </summary>
                             <ul className="mt-2 space-y-1.5">
                               {s.topics.map((t) => (

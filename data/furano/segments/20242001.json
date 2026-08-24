@@ -7,6 +7,29 @@
     "schedule_id": 2,
     "schedule_name": "令和6年第1回臨時会 会議録 第1号(令和6年1月29日) (PDF 365KB)",
     "date": "2024-01-29",
+    "speaker": "井口聡事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "-登壇- 報告第１号、専決処分報告について御説明申し上げま",
+    "text_length": 29,
+    "source": {
+      "minutes_file": "data/furano/minutes/20242001.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "furano-20242001-2-002",
+    "municipality": "furano",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "令和6年第1回臨時会 会議録 第1号(令和6年1月29日) (PDF 365KB)",
+    "date": "2024-01-29",
     "speaker": "佐藤秀靖議員",
     "speaker_role": "質問",
     "is_procedural": false,
@@ -18,12 +41,35 @@
       "minutes_file": "data/furano/minutes/20242001.json",
       "schedule_id": 2,
       "minute_ids": [
-        "1-inline-003"
+        "1-inline-004"
       ]
     }
   },
   {
-    "id": "furano-20242001-2-002",
+    "id": "furano-20242001-2-003",
+    "municipality": "furano",
+    "council_id": 20242001,
+    "council_name": "令和6年第1回臨時会",
+    "schedule_id": 2,
+    "schedule_name": "令和6年第1回臨時会 会議録 第1号(令和6年1月29日) (PDF 365KB)",
+    "date": "2024-01-29",
+    "speaker": "副市長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "稲葉武則君。 振興消費拡大推進事業補助金、2,120万3,000円の追加で",
+    "text_length": 37,
+    "source": {
+      "minutes_file": "data/furano/minutes/20242001.json",
+      "schedule_id": 2,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "furano-20242001-2-004",
     "municipality": "furano",
     "council_id": 20242001,
     "council_name": "令和6年第1回臨時会",
@@ -41,35 +87,35 @@
       "minutes_file": "data/furano/minutes/20242001.json",
       "schedule_id": 2,
       "minute_ids": [
-        "1-inline-007"
+        "1-inline-009"
       ]
     }
   },
   {
-    "id": "furano-20242001-2-003",
+    "id": "furano-20242001-2-005",
     "municipality": "furano",
     "council_id": 20242001,
     "council_name": "令和6年第1回臨時会",
     "schedule_id": 2,
     "schedule_name": "令和6年第1回臨時会 会議録 第1号(令和6年1月29日) (PDF 365KB)",
     "date": "2024-01-29",
-    "speaker": "後藤英知夫君議員",
+    "speaker": "14番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "後藤 英知夫",
     "member_faction": "富良野クラブ",
-    "text": "第４条の中で、施設の使用に ○議長（渋谷正文君） ないようですので、以上で議案\n対する維持管理なのですが、事業者が責任を持って行う 第１号の質疑を終わり、本件２件の質疑を終了いたしま\nものとする、ただし、天災等で事業者の責めに帰すこと す。\nができないものについてはこの限りではないというふう 討論を省略いたします。\nに書いてあります。 お諮りいたします。\nこの意味というのは、天災などで事故が起きた場合に 本件２件に御異議ございませんか。\nは、市が責任を持って復旧なり工事するという考えでよ （「異議なし」と呼ぶ者あり）\nろしいのでしょうか。 ○議長（渋谷正文君） 御異議なしと認めます。",
-    "text_length": 295,
+    "text": "（後藤英知夫君） 第４条の中で、施設の使用に ○議長（渋谷正文君） ないようですので、以上で議案\n対する維持管理なのですが、事業者が責任を持って行う 第１号の質疑を終わり、本件２件の質疑を終了いたしま\nものとする、ただし、天災等で事業者の責めに帰すこと す。\nができないものについてはこの限りではないというふう 討論を省略いたします。\nに書いてあります。 お諮りいたします。\nこの意味というのは、天災などで事故が起きた場合に 本件２件に御異議ございませんか。\nは、市が責任を持って復旧なり工事するという考えでよ （「異議なし」と呼ぶ者あり）\nろしいのでしょうか。 ○議長（渋谷正文君） 御異議なしと認めます。",
+    "text_length": 304,
     "source": {
       "minutes_file": "data/furano/minutes/20242001.json",
       "schedule_id": 2,
       "minute_ids": [
-        "1-inline-009"
+        "1-inline-011"
       ]
     }
   },
   {
-    "id": "furano-20242001-2-004",
+    "id": "furano-20242001-2-006",
     "municipality": "furano",
     "council_id": 20242001,
     "council_name": "令和6年第1回臨時会",
@@ -87,7 +133,7 @@
       "minutes_file": "data/furano/minutes/20242001.json",
       "schedule_id": 2,
       "minute_ids": [
-        "1-inline-011"
+        "1-inline-013"
       ]
     }
   }

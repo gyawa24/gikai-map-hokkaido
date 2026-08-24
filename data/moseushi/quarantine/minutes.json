@@ -1,0 +1,35 @@
+{
+  "updated_at": "2026-08-23",
+  "records": [
+    {
+      "status": "filtered_from_publication",
+      "reason": "schedule_year_mismatch_high_confidence",
+      "councils": [
+        {
+          "council_id": 20241002,
+          "published_year": 2024,
+          "original_schedule_count": 2,
+          "retained_schedule_count": 1,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "​",
+              "source_urls": [
+                "https://www.town.moseushi.hokkaido.jp/gikai/gijiroku/files/1.6.18.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-06-18"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241002.json"
+        }
+      ],
+      "note": "日程名・開催日抽出と本文冒頭の年が公開年と一致しない日程を除外。原本はquarantine配下に保存。"
+    }
+  ]
+}

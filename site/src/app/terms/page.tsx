@@ -50,7 +50,7 @@ export default function TermsPage() {
         </p>
       </section>
 
-      <section className="mb-8">
+      <section id="correction-request" className="mb-8 scroll-mt-24">
         <h2 className="text-lg font-bold text-[#1B3A6B] mb-3 pb-1 border-b border-[#E2E8F0]">
           第4条（削除・訂正依頼）
         </h2>

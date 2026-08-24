@@ -5,6 +5,8 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
+import { hasPublishedMemberThemes } from "../../scripts/lib/member-activity-capability.mjs";
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE_DIR = path.resolve(__dirname, "..");
 const REPO_ROOT = path.resolve(SITE_DIR, "..");
@@ -44,6 +46,15 @@ function firstExistingPath(cityDir, paths, ignoredFiles) {
   return paths.find((relativePath) => exists(cityDir, relativePath, ignoredFiles)) ?? null;
 }
 
+function hasPublishedThemes(cityDir, relativePath, minutesAccess) {
+  try {
+    const activity = JSON.parse(fs.readFileSync(path.join(cityDir, relativePath), "utf8"));
+    return hasPublishedMemberThemes(activity, { minutesAccess });
+  } catch {
+    return false;
+  }
+}
+
 function readMunicipalities() {
   const filePath = path.join(DATA_DIR, "municipalities.json");
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -61,8 +72,15 @@ function buildCapabilities() {
 
     for (const definition of CAPABILITY_DEFINITIONS) {
       const foundPath = firstExistingPath(cityDir, definition.paths, ignoredFiles);
-      capabilities[definition.key] = Boolean(foundPath);
-      if (foundPath) paths[definition.key] = foundPath;
+      const enabled = definition.key === "themes"
+        ? Boolean(foundPath && hasPublishedThemes(
+          cityDir,
+          foundPath,
+          municipality.minutes_access
+        ))
+        : Boolean(foundPath);
+      capabilities[definition.key] = enabled;
+      if (foundPath && enabled) paths[definition.key] = foundPath;
     }
 
     cities[municipality.slug] = {

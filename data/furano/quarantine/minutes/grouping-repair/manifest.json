@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-23T11:24:35.945Z",
+  "slug": "furano",
+  "reason": "同じJSONに混在していた第2回・第3回臨時会を、本文冒頭の公式回次で分割する",
+  "source_index": "minutes/index.json",
+  "source_files": [
+    "minutes/20242002.json"
+  ],
+  "mappings": [
+    {
+      "old_council_id": 20242002,
+      "new_council_ids": [
+        20242002,
+        20242003
+      ]
+    }
+  ],
+  "schedule_mappings": [
+    {
+      "source_council_id": 20242002,
+      "source_schedule_id": 1,
+      "source_url": "https://www.city.furano.hokkaido.jp/fs/6/0/1/4/4/_/060527mokuji.pdf",
+      "target_council_id": 20242002,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20242002,
+      "source_schedule_id": 2,
+      "source_url": "https://www.city.furano.hokkaido.jp/fs/6/2/3/9/3/_/__6__3____________.pdf",
+      "target_council_id": 20242003,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20242002,
+      "source_schedule_id": 3,
+      "source_url": "https://www.city.furano.hokkaido.jp/fs/6/0/1/4/5/_/060527dai1gou.pdf",
+      "target_council_id": 20242002,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20242002,
+      "source_schedule_id": 4,
+      "source_url": "https://www.city.furano.hokkaido.jp/fs/6/2/3/9/2/_/________6__3______1__.pdf",
+      "target_council_id": 20242003,
+      "target_schedule_id": 2
+    }
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "schedule_count": 4,
+    "source_minute_payload_hashes": [
+      "4a02ecb9d0bb0f957f78ac9a843cf037a31ca1baea2633bd19edd0be32e6e02e",
+      "5967d75831d271a7ef263f74ff1e5d09266493dfb80fc133ed215015913d31a0",
+      "8eee4abbaf2a0e8cdfea31d151769b47d401b7d7f8a8299876d6039085ab7049",
+      "a4724cf38ac2957f9ab616676cbc44e0566dee7a0ce62625718c32462ffdf59e"
+    ],
+    "target_minute_payload_hashes": [
+      "4a02ecb9d0bb0f957f78ac9a843cf037a31ca1baea2633bd19edd0be32e6e02e",
+      "5967d75831d271a7ef263f74ff1e5d09266493dfb80fc133ed215015913d31a0",
+      "8eee4abbaf2a0e8cdfea31d151769b47d401b7d7f8a8299876d6039085ab7049",
+      "a4724cf38ac2957f9ab616676cbc44e0566dee7a0ce62625718c32462ffdf59e"
+    ],
+    "minute_text_modified": false
+  }
+}

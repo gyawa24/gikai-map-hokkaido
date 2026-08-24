@@ -1,0 +1,71 @@
+[
+  {
+    "id": "nanporo-20262003-1-001",
+    "municipality": "nanporo",
+    "council_id": 20262003,
+    "council_name": "令和8年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大 崎 貞 二 教 育 長 西 田 篤 人\n監 査 委 員 白 倉 敏 美\n６．町長の委任を受けて出席した説明員",
+    "text_length": 56,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20262003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-001"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20262003-1-002",
+    "municipality": "nanporo",
+    "council_id": 20262003,
+    "council_name": "令和8年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録",
+    "date": null,
+    "speaker": "副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "小 林 史 典 総 務 課 長 岩 本 聖\nまちづくり課長 斉 藤 隆 住 民 課 長 鈴 木 潤 也\n税 務 課 長 砂 田 隆 樹 保健福祉課長 笠 原 大 介\n保健福祉課参事 蛯 沢 千 晴 産業振興課長 渡 辺 広 貴\n都市整備課長 黒 島 滋 規 会計管理者 池 畑 憲 一\n病院事務長 桂 満 晴\n７．教育長の委任を受けて出席した説明員\n生涯学習課長 渡 部 浩 二\n８．選挙管理委員長の委任を受けて出席した説明員\n書記長（総務課長） 岩 本 聖\n\n９．公平委員長の委任を受けて出席した説明員\n公平委員会事務員（総務課長） 岩 本 聖\n１０．農業委員会長の委任を受けて出席した説明員\n農業委員会事務局長 山 本 篤\n１１．議事日程・会議に付した事件・会議の経過は別紙のとおり\n\n令和８年第３回南幌町議会臨時会会議録 ７月２８日\n（午前９時３０分）",
+    "text_length": 379,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20262003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-002"
+      ]
+    }
+  },
+  {
+    "id": "nanporo-20262003-1-003",
+    "municipality": "nanporo",
+    "council_id": 20262003,
+    "council_name": "令和8年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "会議録",
+    "date": null,
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "ただいま上程をいただきました議案第３３号 工事請負契約につき\nましては、親水公園施設改修工事にあたり、過日入札を執行したとこ\nろです。\n契約の内容につきましては、都市整備課長が説明いたしますので、\nよろしく御審議賜りますようお願い申し上げます。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/nanporo/minutes/20262003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-004"
+      ]
+    }
+  }
+]

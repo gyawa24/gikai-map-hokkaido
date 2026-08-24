@@ -1,12 +1,29 @@
 [
   {
+    "council_id": 928,
+    "name": "令和 ８年第２回 ５月臨時会",
+    "year": "2026",
+    "japanese_year": "令和8年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "928.json",
+    "schedule_count": 1,
+    "start_date": "2026-05-15",
+    "end_date": "2026-05-15",
+    "sort_date": "2026-05-15",
+    "date_precision": "day"
+  },
+  {
     "council_id": 920,
     "name": "令和 ８年第１回 ２月定例会",
     "year": "2026",
     "japanese_year": "令和8年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "920.json",
-    "schedule_count": 6
+    "schedule_count": 6,
+    "start_date": "2026-02-26",
+    "end_date": "2026-03-23",
+    "sort_date": "2026-03-23",
+    "date_precision": "day"
   },
   {
     "council_id": 921,
@@ -15,31 +32,11 @@
     "japanese_year": "令和8年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
     "file": "921.json",
-    "schedule_count": 7
-  },
-  {
-    "council_id": 884,
-    "name": "令和 ７年第１回 ２月定例会",
-    "year": "2025",
-    "japanese_year": "令和7年",
-    "type_label": "全会議 > 本会議 > 定例会",
-    "file": "884.json"
-  },
-  {
-    "council_id": 894,
-    "name": "令和 ７年第３回 ６月定例会",
-    "year": "2025",
-    "japanese_year": "令和7年",
-    "type_label": "全会議 > 本会議 > 定例会",
-    "file": "894.json"
-  },
-  {
-    "council_id": 900,
-    "name": "令和 ７年第４回 ９月定例会",
-    "year": "2025",
-    "japanese_year": "令和7年",
-    "type_label": "全会議 > 本会議 > 定例会",
-    "file": "900.json"
+    "schedule_count": 7,
+    "start_date": "2026-03-10",
+    "end_date": "2026-03-18",
+    "sort_date": "2026-03-18",
+    "date_precision": "day"
   },
   {
     "council_id": 910,
@@ -47,23 +44,23 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "910.json"
+    "file": "910.json",
+    "start_date": "2025-12-01",
+    "end_date": "2025-12-16",
+    "sort_date": "2025-12-16",
+    "date_precision": "day"
   },
   {
-    "council_id": 892,
-    "name": "令和 ７年第２回 ５月臨時会",
+    "council_id": 900,
+    "name": "令和 ７年第４回 ９月定例会",
     "year": "2025",
     "japanese_year": "令和7年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "892.json"
-  },
-  {
-    "council_id": 885,
-    "name": "令和 ７年第１回 ２月定例会 予算審査特別委員会",
-    "year": "2025",
-    "japanese_year": "令和7年",
-    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
-    "file": "885.json"
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "900.json",
+    "start_date": "2025-09-04",
+    "end_date": "2025-09-30",
+    "sort_date": "2025-09-30",
+    "date_precision": "day"
   },
   {
     "council_id": 903,
@@ -71,39 +68,59 @@
     "year": "2025",
     "japanese_year": "令和7年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 決算審査特別委員会",
-    "file": "903.json"
+    "file": "903.json",
+    "start_date": "2025-09-17",
+    "end_date": "2025-09-26",
+    "sort_date": "2025-09-26",
+    "date_precision": "day"
   },
   {
-    "council_id": 846,
-    "name": "令和 ６年第１回 ２月定例会",
-    "year": "2024",
-    "japanese_year": "令和6年",
+    "council_id": 894,
+    "name": "令和 ７年第３回 ６月定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "846.json"
+    "file": "894.json",
+    "start_date": "2025-06-09",
+    "end_date": "2025-06-24",
+    "sort_date": "2025-06-24",
+    "date_precision": "day"
   },
   {
-    "council_id": 856,
-    "name": "令和 ６年第２回 ６月定例会",
-    "year": "2024",
-    "japanese_year": "令和6年",
-    "type_label": "全会議 > 本会議 > 定例会",
-    "file": "856.json"
+    "council_id": 892,
+    "name": "令和 ７年第２回 ５月臨時会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "892.json",
+    "start_date": "2025-05-14",
+    "end_date": "2025-05-14",
+    "sort_date": "2025-05-14",
+    "date_precision": "day"
   },
   {
-    "council_id": 863,
-    "name": "令和 ６年第３回 ９月定例会",
-    "year": "2024",
-    "japanese_year": "令和6年",
+    "council_id": 884,
+    "name": "令和 ７年第１回 ２月定例会",
+    "year": "2025",
+    "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "863.json"
+    "file": "884.json",
+    "start_date": "2025-02-27",
+    "end_date": "2025-03-26",
+    "sort_date": "2025-03-26",
+    "date_precision": "day"
   },
   {
-    "council_id": 872,
-    "name": "令和 ６年第４回１２月定例会",
-    "year": "2024",
-    "japanese_year": "令和6年",
-    "type_label": "全会議 > 本会議 > 定例会",
-    "file": "872.json"
+    "council_id": 885,
+    "name": "令和 ７年第１回 ２月定例会 予算審査特別委員会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
+    "file": "885.json",
+    "start_date": "2025-03-12",
+    "end_date": "2025-03-24",
+    "sort_date": "2025-03-24",
+    "date_precision": "day"
   },
   {
     "council_id": 876,
@@ -111,15 +128,35 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "876.json"
+    "file": "876.json",
+    "start_date": "2024-12-25",
+    "end_date": "2024-12-25",
+    "sort_date": "2024-12-25",
+    "date_precision": "day"
   },
   {
-    "council_id": 847,
-    "name": "令和 ６年第１回 ２月定例会 予算審査特別委員会",
+    "council_id": 872,
+    "name": "令和 ６年第４回１２月定例会",
     "year": "2024",
     "japanese_year": "令和6年",
-    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
-    "file": "847.json"
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "872.json",
+    "start_date": "2024-12-02",
+    "end_date": "2024-12-17",
+    "sort_date": "2024-12-17",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 863,
+    "name": "令和 ６年第３回 ９月定例会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "863.json",
+    "start_date": "2024-09-06",
+    "end_date": "2024-10-02",
+    "sort_date": "2024-10-02",
+    "date_precision": "day"
   },
   {
     "council_id": 866,
@@ -127,31 +164,47 @@
     "year": "2024",
     "japanese_year": "令和6年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 決算審査特別委員会",
-    "file": "866.json"
+    "file": "866.json",
+    "start_date": "2024-09-19",
+    "end_date": "2024-09-30",
+    "sort_date": "2024-09-30",
+    "date_precision": "day"
   },
   {
-    "council_id": 806,
-    "name": "令和 ５年第１回 ３月定例会",
-    "year": "2023",
-    "japanese_year": "令和5年",
+    "council_id": 856,
+    "name": "令和 ６年第２回 ６月定例会",
+    "year": "2024",
+    "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "806.json"
+    "file": "856.json",
+    "start_date": "2024-06-10",
+    "end_date": "2024-06-25",
+    "sort_date": "2024-06-25",
+    "date_precision": "day"
   },
   {
-    "council_id": 819,
-    "name": "令和 ５年第３回 ６月定例会",
-    "year": "2023",
-    "japanese_year": "令和5年",
+    "council_id": 846,
+    "name": "令和 ６年第１回 ２月定例会",
+    "year": "2024",
+    "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "819.json"
+    "file": "846.json",
+    "start_date": "2024-02-28",
+    "end_date": "2024-03-26",
+    "sort_date": "2024-03-26",
+    "date_precision": "day"
   },
   {
-    "council_id": 825,
-    "name": "令和 ５年第４回 ９月定例会",
-    "year": "2023",
-    "japanese_year": "令和5年",
-    "type_label": "全会議 > 本会議 > 定例会",
-    "file": "825.json"
+    "council_id": 847,
+    "name": "令和 ６年第１回 ２月定例会 予算審査特別委員会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
+    "file": "847.json",
+    "start_date": "2024-03-12",
+    "end_date": "2024-03-22",
+    "sort_date": "2024-03-22",
+    "date_precision": "day"
   },
   {
     "council_id": 836,
@@ -159,23 +212,23 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "836.json"
+    "file": "836.json",
+    "start_date": "2023-12-01",
+    "end_date": "2023-12-18",
+    "sort_date": "2023-12-18",
+    "date_precision": "day"
   },
   {
-    "council_id": 816,
-    "name": "令和 ５年第２回 ５月臨時会",
+    "council_id": 825,
+    "name": "令和 ５年第４回 ９月定例会",
     "year": "2023",
     "japanese_year": "令和5年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "816.json"
-  },
-  {
-    "council_id": 807,
-    "name": "令和 ５年第１回 ３月定例会 予算審査特別委員会",
-    "year": "2023",
-    "japanese_year": "令和5年",
-    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
-    "file": "807.json"
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "825.json",
+    "start_date": "2023-09-05",
+    "end_date": "2023-09-29",
+    "sort_date": "2023-09-29",
+    "date_precision": "day"
   },
   {
     "council_id": 828,
@@ -183,34 +236,59 @@
     "year": "2023",
     "japanese_year": "令和5年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 決算審査特別委員会",
-    "file": "828.json"
+    "file": "828.json",
+    "start_date": "2023-09-15",
+    "end_date": "2023-09-27",
+    "sort_date": "2023-09-27",
+    "date_precision": "day"
   },
   {
-    "council_id": 761,
-    "name": "令和 ４年第２回 ３月定例会",
-    "year": "2022",
-    "japanese_year": "令和4年",
+    "council_id": 819,
+    "name": "令和 ５年第３回 ６月定例会",
+    "year": "2023",
+    "japanese_year": "令和5年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "761.json",
-    "schedule_count": 7
+    "file": "819.json",
+    "start_date": "2023-06-12",
+    "end_date": "2023-06-27",
+    "sort_date": "2023-06-27",
+    "date_precision": "day"
   },
   {
-    "council_id": 774,
-    "name": "令和 ４年第４回 ６月定例会",
-    "year": "2022",
-    "japanese_year": "令和4年",
-    "type_label": "全会議 > 本会議 > 定例会",
-    "file": "774.json",
-    "schedule_count": 7
+    "council_id": 816,
+    "name": "令和 ５年第２回 ５月臨時会",
+    "year": "2023",
+    "japanese_year": "令和5年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "816.json",
+    "start_date": "2023-05-12",
+    "end_date": "2023-05-16",
+    "sort_date": "2023-05-16",
+    "date_precision": "day"
   },
   {
-    "council_id": 781,
-    "name": "令和 ４年第５回 ９月定例会",
-    "year": "2022",
-    "japanese_year": "令和4年",
+    "council_id": 806,
+    "name": "令和 ５年第１回 ３月定例会",
+    "year": "2023",
+    "japanese_year": "令和5年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "781.json",
-    "schedule_count": 6
+    "file": "806.json",
+    "start_date": "2023-03-01",
+    "end_date": "2023-03-28",
+    "sort_date": "2023-03-28",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 807,
+    "name": "令和 ５年第１回 ３月定例会 予算審査特別委員会",
+    "year": "2023",
+    "japanese_year": "令和5年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
+    "file": "807.json",
+    "start_date": "2023-03-14",
+    "end_date": "2023-03-24",
+    "sort_date": "2023-03-24",
+    "date_precision": "day"
   },
   {
     "council_id": 796,
@@ -219,25 +297,11 @@
     "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "796.json",
-    "schedule_count": 6
-  },
-  {
-    "council_id": 752,
-    "name": "令和 ４年第１回 １月臨時会",
-    "year": "2022",
-    "japanese_year": "令和4年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "752.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 769,
-    "name": "令和 ４年第３回 ５月臨時会",
-    "year": "2022",
-    "japanese_year": "令和4年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "769.json",
-    "schedule_count": 1
+    "schedule_count": 6,
+    "start_date": "2022-12-01",
+    "end_date": "2022-12-16",
+    "sort_date": "2022-12-16",
+    "date_precision": "day"
   },
   {
     "council_id": 791,
@@ -246,16 +310,24 @@
     "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 臨時会",
     "file": "791.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2022-10-17",
+    "end_date": "2022-10-17",
+    "sort_date": "2022-10-17",
+    "date_precision": "day"
   },
   {
-    "council_id": 762,
-    "name": "令和 ４年第２回 ３月定例会 予算審査特別委員会",
+    "council_id": 781,
+    "name": "令和 ４年第５回 ９月定例会",
     "year": "2022",
     "japanese_year": "令和4年",
-    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
-    "file": "762.json",
-    "schedule_count": 7
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "781.json",
+    "schedule_count": 6,
+    "start_date": "2022-09-05",
+    "end_date": "2022-09-30",
+    "sort_date": "2022-09-30",
+    "date_precision": "day"
   },
   {
     "council_id": 784,
@@ -264,34 +336,76 @@
     "japanese_year": "令和4年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 決算審査特別委員会",
     "file": "784.json",
-    "schedule_count": 7
+    "schedule_count": 7,
+    "start_date": "2022-09-15",
+    "end_date": "2022-09-28",
+    "sort_date": "2022-09-28",
+    "date_precision": "day"
   },
   {
-    "council_id": 706,
-    "name": "令和 ３年第２回 ３月定例会",
-    "year": "2021",
-    "japanese_year": "令和3年",
+    "council_id": 774,
+    "name": "令和 ４年第４回 ６月定例会",
+    "year": "2022",
+    "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "706.json",
-    "schedule_count": 9
+    "file": "774.json",
+    "schedule_count": 7,
+    "start_date": "2022-06-13",
+    "end_date": "2022-07-01",
+    "sort_date": "2022-07-01",
+    "date_precision": "day"
   },
   {
-    "council_id": 723,
-    "name": "令和 ３年第４回 ６月定例会",
-    "year": "2021",
-    "japanese_year": "令和3年",
-    "type_label": "全会議 > 本会議 > 定例会",
-    "file": "723.json",
-    "schedule_count": 7
+    "council_id": 769,
+    "name": "令和 ４年第３回 ５月臨時会",
+    "year": "2022",
+    "japanese_year": "令和4年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "769.json",
+    "schedule_count": 1,
+    "start_date": "2022-05-16",
+    "end_date": "2022-05-16",
+    "sort_date": "2022-05-16",
+    "date_precision": "day"
   },
   {
-    "council_id": 736,
-    "name": "令和 ３年第６回 ９月定例会",
-    "year": "2021",
-    "japanese_year": "令和3年",
+    "council_id": 761,
+    "name": "令和 ４年第２回 ３月定例会",
+    "year": "2022",
+    "japanese_year": "令和4年",
     "type_label": "全会議 > 本会議 > 定例会",
-    "file": "736.json",
-    "schedule_count": 6
+    "file": "761.json",
+    "schedule_count": 7,
+    "start_date": "2022-03-01",
+    "end_date": "2022-03-24",
+    "sort_date": "2022-03-24",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 762,
+    "name": "令和 ４年第２回 ３月定例会 予算審査特別委員会",
+    "year": "2022",
+    "japanese_year": "令和4年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
+    "file": "762.json",
+    "schedule_count": 7,
+    "start_date": "2022-03-11",
+    "end_date": "2022-03-22",
+    "sort_date": "2022-03-22",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 752,
+    "name": "令和 ４年第１回 １月臨時会",
+    "year": "2022",
+    "japanese_year": "令和4年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "752.json",
+    "schedule_count": 1,
+    "start_date": "2022-01-11",
+    "end_date": "2022-01-11",
+    "sort_date": "2022-01-11",
+    "date_precision": "day"
   },
   {
     "council_id": 745,
@@ -300,43 +414,24 @@
     "japanese_year": "令和3年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "745.json",
-    "schedule_count": 7
+    "schedule_count": 7,
+    "start_date": "2021-11-30",
+    "end_date": "2021-12-16",
+    "sort_date": "2021-12-16",
+    "date_precision": "day"
   },
   {
-    "council_id": 700,
-    "name": "令和 ３年第１回 ２月臨時会",
+    "council_id": 736,
+    "name": "令和 ３年第６回 ９月定例会",
     "year": "2021",
     "japanese_year": "令和3年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "700.json",
-    "schedule_count": 2
-  },
-  {
-    "council_id": 716,
-    "name": "令和 ３年第３回 ５月臨時会",
-    "year": "2021",
-    "japanese_year": "令和3年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "716.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 731,
-    "name": "令和 ３年第５回 ７月臨時会",
-    "year": "2021",
-    "japanese_year": "令和3年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "731.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 707,
-    "name": "令和 ３年第２回 ３月定例会 予算審査特別委員会",
-    "year": "2021",
-    "japanese_year": "令和3年",
-    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
-    "file": "707.json",
-    "schedule_count": 8
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "736.json",
+    "schedule_count": 6,
+    "start_date": "2021-09-06",
+    "end_date": "2021-10-01",
+    "sort_date": "2021-10-01",
+    "date_precision": "day"
   },
   {
     "council_id": 739,
@@ -345,6 +440,88 @@
     "japanese_year": "令和3年",
     "type_label": "全会議 > 委員会 > 特別委員会 > 決算審査特別委員会",
     "file": "739.json",
-    "schedule_count": 7
+    "schedule_count": 7,
+    "start_date": "2021-09-16",
+    "end_date": "2021-09-29",
+    "sort_date": "2021-09-29",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 731,
+    "name": "令和 ３年第５回 ７月臨時会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "731.json",
+    "schedule_count": 1,
+    "start_date": "2021-07-06",
+    "end_date": "2021-07-06",
+    "sort_date": "2021-07-06",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 723,
+    "name": "令和 ３年第４回 ６月定例会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "723.json",
+    "schedule_count": 7,
+    "start_date": "2021-06-10",
+    "end_date": "2021-06-25",
+    "sort_date": "2021-06-25",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 716,
+    "name": "令和 ３年第３回 ５月臨時会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "716.json",
+    "schedule_count": 1,
+    "start_date": "2021-05-20",
+    "end_date": "2021-05-20",
+    "sort_date": "2021-05-20",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 706,
+    "name": "令和 ３年第２回 ３月定例会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 定例会",
+    "file": "706.json",
+    "schedule_count": 9,
+    "start_date": "2021-03-01",
+    "end_date": "2021-03-25",
+    "sort_date": "2021-03-25",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 707,
+    "name": "令和 ３年第２回 ３月定例会 予算審査特別委員会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 委員会 > 特別委員会 > 予算審査特別委員会",
+    "file": "707.json",
+    "schedule_count": 8,
+    "start_date": "2021-03-12",
+    "end_date": "2021-03-23",
+    "sort_date": "2021-03-23",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 700,
+    "name": "令和 ３年第１回 ２月臨時会",
+    "year": "2021",
+    "japanese_year": "令和3年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "700.json",
+    "schedule_count": 2,
+    "start_date": "2021-02-16",
+    "end_date": "2021-02-17",
+    "sort_date": "2021-02-17",
+    "date_precision": "day"
   }
 ]

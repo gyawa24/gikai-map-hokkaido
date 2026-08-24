@@ -35,7 +35,7 @@ type MinutesSearchIndex = {
   agendas?: MinutesSearchAgenda[];
 };
 
-let minutesSearchIndexPromise: Promise<MinutesSearchIndex> | null = null;
+const minutesSearchIndexPromises = new Map<string, Promise<MinutesSearchIndex>>();
 
 function normalizeForSearch(text: string): string {
   return text
@@ -46,19 +46,24 @@ function normalizeForSearch(text: string): string {
     .trim();
 }
 
-async function loadMinutesSearchIndex(signal: AbortSignal): Promise<MinutesSearchIndex> {
-  minutesSearchIndexPromise ??= fetch("/generated/search-index.json", { cache: "no-cache" })
-    .then(async (response) => {
-      if (!response.ok) throw new Error("検索インデックスの読み込みに失敗しました");
-      const data = (await response.json()) as MinutesSearchIndex;
-      if (!Array.isArray(data.agendas)) throw new Error("検索インデックスが壊れています");
-      return data;
-    })
-    .catch((error) => {
-      minutesSearchIndexPromise = null;
-      throw error;
-    });
-  const data = await minutesSearchIndexPromise;
+async function loadMinutesSearchIndex(city: string, signal: AbortSignal): Promise<MinutesSearchIndex> {
+  const indexUrl = `/generated/search-indexes/${city}.json`;
+  let promise = minutesSearchIndexPromises.get(indexUrl);
+  if (!promise) {
+    promise = fetch(indexUrl, { cache: "no-cache" })
+      .then(async (response) => {
+        if (!response.ok) throw new Error("検索インデックスの読み込みに失敗しました");
+        const data = (await response.json()) as MinutesSearchIndex;
+        if (!Array.isArray(data.agendas)) throw new Error("検索インデックスが壊れています");
+        return data;
+      })
+      .catch((error) => {
+        minutesSearchIndexPromises.delete(indexUrl);
+        throw error;
+      });
+    minutesSearchIndexPromises.set(indexUrl, promise);
+  }
+  const data = await promise;
   if (signal.aborted) throw new Error("検索を中断しました");
   return data;
 }
@@ -220,7 +225,7 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
     const controller = new AbortController();
     const timeout = window.setTimeout(() => {
       setBodySearchStatus("loading");
-      loadMinutesSearchIndex(controller.signal)
+      loadMinutesSearchIndex(city, controller.signal)
         .then((index) => {
           if (controller.signal.aborted) return;
           const normalizedQuery = normalizeForSearch(q);
@@ -318,7 +323,15 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
     const canUseBodySearch = q.length >= BODY_SEARCH_MIN_LENGTH;
     const bodyMatchesCurrentQuery = canUseBodySearch && bodySearchQuery === q;
     const normalizedQuery = normalizeForSearch(q);
-    return items.filter((item) => {
+    const originalPosition = new Map(items.map((item, index) => [item, index]));
+    return [...items].sort((a, b) => {
+      const yearOrder = String(b.year ?? "").localeCompare(String(a.year ?? ""));
+      if (yearOrder !== 0) return yearOrder;
+      if (a.sort_date && b.sort_date) return b.sort_date.localeCompare(a.sort_date);
+      if (a.sort_date && !b.sort_date) return -1;
+      if (!a.sort_date && b.sort_date) return 1;
+      return (originalPosition.get(a) ?? 0) - (originalPosition.get(b) ?? 0);
+    }).filter((item) => {
       if (activeTag && !(item.enriched?.tags ?? []).some((t) => normalizeTag(t) === activeTag)) return false;
       if (q) {
         const localSearchText = normalizeForSearch(
@@ -397,7 +410,7 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
             type="search"
             value={searchText}
             onChange={(e) => updateSearchText(e.target.value)}
-            placeholder="会議名・年度で検索…"
+            placeholder="会議名・年度・本文冒頭で検索…"
             className="theme-input w-full py-2.5 pl-9 pr-4 text-sm placeholder-[#A0AEC0]"
           />
           {searchText && (
@@ -412,6 +425,15 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
             </button>
           )}
         </div>
+        <p className="mt-2 text-xs text-[#718096]">
+          この一覧では会議名・年度と本文冒頭（最大400字）を検索します。{" "}
+          <Link
+            href={`/search?city=${encodeURIComponent(city)}${searchText.trim() ? `&q=${encodeURIComponent(searchText.trim())}` : ""}`}
+            className="font-medium text-[#2A5298] underline underline-offset-2 hover:text-[#1B3A6B]"
+          >
+            全発言を検索する
+          </Link>
+        </p>
       </div>
 
       {/* タグフィルター */}

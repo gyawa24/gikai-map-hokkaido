@@ -1,10 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getDecisions, getMembers, getMinutesEnrichedDocs, getSearchIndex, getSession, getSessionSummaries, readCityJson } from "@/lib/cityData";
+import { getDecisions, getMembers, getSearchIndex, getSession, getSessionSummaries, readCityJson } from "@/lib/cityData";
 import { getMunicipalities } from "@/lib/municipalities";
 import { checkRateLimit } from "@/lib/rateLimit";
 import { buildSearchAssist, buildSearchQuery, createSearchTextEvaluator, excerptSearchText } from "@/lib/searchQuery";
+import {
+  appendSearchQueryToHref,
+  runtimeAgendaResultId,
+  SEARCH_QUERY_LIMIT_MESSAGE,
+  validateSearchQueryLimits,
+} from "@/lib/searchQueryLimits.mjs";
 import { getClientAddress } from "@/lib/security";
-import { fetchStaticAsset } from "@/lib/staticAssetFetch";
 import type { SearchAssistGroup, SearchOperator } from "@/lib/searchQuery";
 import type { MemberActivity } from "@/types/member";
 
@@ -28,50 +33,27 @@ function shouldUseClientSearch(request: NextRequest): boolean {
   );
 }
 
-const RECENT_YEAR_WINDOW = 2;
+export type SearchIndexScope = "full" | "city" | "server";
 
-export type SearchIndexScope = "recent" | "full" | "city" | "server";
-
-function currentRecentFromYear(): number {
-  return new Date().getFullYear() - RECENT_YEAR_WINDOW + 1;
-}
-
-function isOldYearFilter(yearFilter: string): boolean {
-  const year = Number(yearFilter);
-  return yearFilter !== "all" && Number.isFinite(year) && year < currentRecentFromYear();
-}
-
-function clientSearchIndexMeta(
-  cityFilter: string,
-  yearFilter: string,
-  forceFullSearch: boolean
-): {
-  indexUrl: string;
+function clientSearchIndexMeta(cityFilter: string): {
+  bigramIndexUrl?: string;
   searchScope: SearchIndexScope;
   searchScopeLabel: string;
   fullSearchAvailable: boolean;
 } {
   if (cityFilter !== "all" && /^[a-z0-9-]+$/.test(cityFilter)) {
     return {
-      indexUrl: `/generated/search-indexes/${cityFilter}.json`,
+      bigramIndexUrl: `/generated/search-bigram-cities/${cityFilter}/manifest.json`,
       searchScope: "city",
       searchScopeLabel: "選択中の市町村全期間",
       fullSearchAvailable: false,
     };
   }
-  if (forceFullSearch || isOldYearFilter(yearFilter)) {
-    return {
-      indexUrl: "/generated/search-index.json",
-      searchScope: "full",
-      searchScopeLabel: "全期間",
-      fullSearchAvailable: false,
-    };
-  }
   return {
-    indexUrl: "/generated/search-index-recent.json",
-    searchScope: "recent",
-    searchScopeLabel: "直近2年",
-    fullSearchAvailable: true,
+    bigramIndexUrl: "/generated/search-bigram-statewide/manifest.json",
+    searchScope: "full",
+    searchScopeLabel: "全期間",
+    fullSearchAvailable: false,
   };
 }
 
@@ -187,7 +169,7 @@ export type SearchResponse = {
     memberFactions: SearchFacet[];
   };
   clientSearchRequired?: boolean;
-  indexUrl?: string;
+  bigramIndexUrl?: string;
   searchScope?: SearchIndexScope;
   searchScopeLabel?: string;
   fullSearchAvailable?: boolean;
@@ -202,6 +184,7 @@ type AgendaEntry = {
   council_id: number;
   council_name: string;
   schedule_index: number;
+  agenda_index?: number;
   schedule_name: string;
   agenda_title: string;
   first_minute_id: number | null;
@@ -268,14 +251,13 @@ type IndexedMemberActivity = {
   year?: string;
   date?: string;
   href?: string;
-  overview?: string;
   question_kind?: string;
   source_type?: string;
   source_label?: string;
   source_status?: string;
   start_time?: string;
   topics?: string[];
-  summary_topics?: string[];
+  canonical_topics?: string[];
 };
 
 type RuntimeSearchIndex = {
@@ -305,12 +287,10 @@ function memberActivityText(activity: IndexedMemberActivity, cityName: string): 
     activity.member_name,
     activity.council_name,
     activity.date,
-    activity.overview,
     activity.question_kind,
     activity.source_label,
     activity.source_status,
     memberActivityDisplayLabel(activity),
-    ...uniqueTexts([...(activity.summary_topics ?? []), ...(activity.topics ?? [])]),
   ].join(" ");
 }
 
@@ -353,15 +333,16 @@ function cleanRawTopicExcerpt(text: string): string {
 
 function memberActivityContext(
   activity: IndexedMemberActivity,
-  summaryTopics: string[],
+  canonicalTopics: string[],
   topics: string[],
   tokens: string[]
 ): string {
   const parts = [memberActivityDisplayLabel(activity)];
-  if (activity.overview) parts.push(excerptSearchText(activity.overview, tokens, 120));
-  if (summaryTopics.length > 0) parts.push(`質問テーマ: ${summaryTopics.join("、")}`);
+  if (canonicalTopics.length > 0) {
+    parts.push(`原文確認済みテーマ: ${canonicalTopics.join("、")}`);
+  }
   const excerptSource = topics.map(cleanRawTopicExcerpt).filter(Boolean).slice(0, 3).join("。");
-  if (summaryTopics.length === 0 && excerptSource) {
+  if (canonicalTopics.length === 0 && excerptSource) {
     parts.push(`議事録からの抜粋: ${excerptSearchText(excerptSource, tokens, 80)}`);
   }
   return parts.filter(Boolean).join(" ");
@@ -377,6 +358,11 @@ function memberHref(city: string, seatNumber: number | null | undefined): string
 function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
   const municipalities = getMunicipalities().filter((m) => m.active);
   const cityMap = Object.fromEntries(municipalities.map((m) => [m.slug, m.name]));
+  const restrictedMinutesCities = new Set(
+    municipalities
+      .filter((municipality) => municipality.minutes_access === "restricted")
+      .map((municipality) => municipality.slug)
+  );
   const allCities = Object.keys(cityMap);
   const sessions: IndexedSession[] = [];
   const enriched: EnrichedDoc[] = [];
@@ -386,42 +372,30 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
 
   for (const city of allCities) {
     const cityName = cityMap[city];
+    const minutesRestricted = restrictedMinutesCities.has(city);
 
-    for (const entry of getSessionSummaries(city)) {
-      if (!entry.has_summary || (entry.segment_count ?? 0) === 0) continue;
-      const session = getSession(city, entry.id);
-      if (!session) continue;
-      sessions.push({
-        city,
-        cityName,
-        id: session.id,
-        title: session.title,
-        committee: session.committee ?? "",
-        date: session.date,
-        segments: session.segments.map((seg) => ({
-          index: seg.index,
-          label: seg.label,
-          speaker: (seg as typeof seg & { speaker?: string }).speaker ?? seg.detail?.speaker ?? "",
-          start_time: seg.start_time ?? "",
-          summary: seg.summary ?? "",
-          topics: seg.topics ?? [],
-          transcript: seg.transcript ?? "",
-        })),
-      });
+    if (!minutesRestricted) {
+      for (const entry of getSessionSummaries(city)) {
+        if (!entry.has_summary || (entry.segment_count ?? 0) === 0) continue;
+        const session = getSession(city, entry.id);
+        if (!session) continue;
+        sessions.push({
+          city,
+          cityName,
+          id: session.id,
+          title: session.title,
+          committee: session.committee ?? "",
+          date: session.date,
+          segments: session.segments.map((seg) => ({
+            index: seg.index,
+            label: seg.label,
+            speaker: (seg as typeof seg & { speaker?: string }).speaker ?? seg.detail?.speaker ?? "",
+            start_time: seg.start_time ?? "",
+            transcript: seg.transcript ?? "",
+          })),
+        });
+      }
     }
-
-    enriched.push(
-      ...getMinutesEnrichedDocs(city).map((doc) => ({
-        city,
-        cityName,
-        council_id: doc.council_id,
-        name: doc.name,
-        generated_at: doc.generated_at,
-        summary: doc.summary,
-        highlights: doc.highlights,
-        tags: doc.tags,
-      }))
-    );
 
     decisions.push(
       ...getDecisions(city).map((decision) => ({
@@ -432,38 +406,36 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
       }))
     );
 
-    const activity = readCityJson<Record<string, MemberActivity>>(city, "members_activity.json") ?? {};
-    memberActivities.push(
-      ...Object.values(activity).flatMap((entry) => {
-        const memberName = entry.name?.trim() ?? "";
-        if (!memberName) return [];
-        return (entry.sessions ?? [])
-          .filter((session) => Number.isFinite(Number(session.council_id)) && Number(session.council_id) >= 0)
-          .map((session) => ({
-            city,
-            cityName,
-            member_name: memberName,
-            record_id: session.record_id,
-            council_id: Number(session.council_id),
-            council_name: session.session ?? "",
-            year: session.year || yearFromCouncilName(session.session ?? ""),
-            date: session.date,
-            href: session.href,
-            overview: session.overview,
-            question_kind: session.question_kind,
-            source_type: session.source_type,
-            source_label: session.source_label,
-            source_status: session.source_status,
-            start_time: session.start_time,
-            summary_topics: Array.isArray(session.summary_topics) ? session.summary_topics : [],
-            topics: Array.isArray(session.summary_topics) && session.summary_topics.length
-              ? []
-              : Array.isArray(session.topics)
-                ? session.topics.slice(0, 6)
-                : [],
-          }));
-      })
-    );
+    if (!minutesRestricted) {
+      const activity = readCityJson<Record<string, MemberActivity>>(city, "members_activity.json") ?? {};
+      memberActivities.push(
+        ...Object.values(activity).flatMap((entry) => {
+          if (entry.classification_status !== "classified") return [];
+          const memberName = entry.name?.trim() ?? "";
+          if (!memberName) return [];
+          return (entry.sessions ?? [])
+            .filter((session) => Number.isFinite(Number(session.council_id)) && Number(session.council_id) >= 0)
+            .map((session) => ({
+              city,
+              cityName,
+              member_name: memberName,
+              record_id: session.record_id,
+              council_id: Number(session.council_id),
+              council_name: session.session ?? "",
+              year: session.year || yearFromCouncilName(session.session ?? ""),
+              date: session.date,
+              href: session.href,
+              question_kind: session.question_kind,
+              source_type: session.source_type,
+              source_label: session.source_label,
+              source_status: session.source_status,
+              start_time: session.start_time,
+              canonical_topics: [],
+              topics: [],
+            }));
+        })
+      );
+    }
 
     const memberList = getMembers(city);
     if (memberList.length > 0) {
@@ -509,19 +481,6 @@ function loadFileRuntimeSearchIndex(): RuntimeSearchIndex {
     members,
     memberActivities,
   };
-}
-
-async function loadPublicRuntimeSearchIndex(request: NextRequest): Promise<RuntimeSearchIndex> {
-  const url = new URL("/generated/search-index.json", request.url);
-  const response = await fetchStaticAsset(url);
-  if (!response.ok) {
-    throw new Error(`search index asset not found: ${response.status}`);
-  }
-  const parsed = (await response.json()) as RuntimeSearchIndex;
-  if (!Array.isArray(parsed.agendas)) {
-    throw new Error("search index asset is malformed");
-  }
-  return parsed;
 }
 
 async function hasCloudflareAssets(): Promise<boolean> {
@@ -580,16 +539,8 @@ async function cacheSearchResponse(request: NextRequest, response: Response): Pr
   return cacheable;
 }
 
-async function getRuntimeSearchIndex(request: NextRequest): Promise<RuntimeSearchIndex> {
-  if (await hasCloudflareAssets()) {
-    try {
-      return await loadPublicRuntimeSearchIndex(request);
-    } catch {
-      return emptyRuntimeSearchIndex();
-    }
-  }
-
-  runtimeSearchIndexPromise ??= loadPublicRuntimeSearchIndex(request).catch(() => {
+async function getRuntimeSearchIndex(): Promise<RuntimeSearchIndex> {
+  runtimeSearchIndexPromise ??= Promise.resolve().then(() => {
     try {
       return loadFileRuntimeSearchIndex();
     } catch {
@@ -709,13 +660,18 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  const q = (request.nextUrl.searchParams.get("q") ?? "").slice(0, 500);
+  const q = request.nextUrl.searchParams.get("q") ?? "";
+  if (!validateSearchQueryLimits(q).ok) {
+    return NextResponse.json(
+      { error: SEARCH_QUERY_LIMIT_MESSAGE, sessionResults: [], memberResults: [] },
+      { status: 400 }
+    );
+  }
   const cityFilter = request.nextUrl.searchParams.get("city") ?? "all";
   const yearFilter = request.nextUrl.searchParams.get("year") ?? "all";
   const factionFilter = request.nextUrl.searchParams.get("faction") ?? "all";
   const rawSourceFilter = request.nextUrl.searchParams.get("source") ?? "all";
   const rawSearchMode = request.nextUrl.searchParams.get("op") ?? "and";
-  const forceFullSearch = request.nextUrl.searchParams.get("scope") === "all";
   const sourceFilter: SourceFilter =
     rawSourceFilter === "minutes" || rawSourceFilter === "session" || rawSourceFilter === "decision"
       ? rawSourceFilter
@@ -759,7 +715,7 @@ export async function GET(request: NextRequest) {
   }
 
   if (shouldUseClientSearch(request) || (await hasCloudflareAssets())) {
-    const searchIndex = clientSearchIndexMeta(cityFilter, yearFilter, forceFullSearch);
+    const searchIndex = clientSearchIndexMeta(cityFilter);
     const response = NextResponse.json({
       sessionResults: [],
       memberResults: [],
@@ -784,19 +740,21 @@ export async function GET(request: NextRequest) {
         memberFactions: [],
       },
       clientSearchRequired: true,
-      indexUrl: searchIndex.indexUrl,
+      bigramIndexUrl: searchIndex.bigramIndexUrl,
       searchScope: searchIndex.searchScope,
       searchScopeLabel: searchIndex.searchScopeLabel,
       fullSearchAvailable: searchIndex.fullSearchAvailable,
     } satisfies SearchResponse);
     response.headers.set("x-gikai-search-mode", "client");
-    response.headers.set("x-gikai-search-index-url", searchIndex.indexUrl);
+    if (searchIndex.bigramIndexUrl) {
+      response.headers.set("x-gikai-search-bigram-index-url", searchIndex.bigramIndexUrl);
+    }
     response.headers.set("x-gikai-search-index-scope", searchIndex.searchScope);
     response.headers.set("cache-control", "no-store");
     return response;
   }
 
-  const runtimeIndex = await getRuntimeSearchIndex(request);
+  const runtimeIndex = await getRuntimeSearchIndex();
   const cityMap = getCityMap(runtimeIndex);
 
   const collectResults = (
@@ -820,8 +778,6 @@ export async function GET(request: NextRequest) {
           const identity = sessionSegmentIdentity(seg.speaker, seg.label);
           const fields = [
             { content: identity, field: "発言者・見出し", bonus: 30, radius: 90 },
-            { content: seg.summary ?? "", field: "要約", bonus: 24, radius: 100 },
-            { content: (seg.topics ?? []).join(" "), field: "トピック", bonus: 20, radius: 90 },
             { content: seg.transcript ?? "", field: "全文", bonus: 10, radius: 100 },
           ];
           let segmentBestHit: RankedSessionHit | null = null;
@@ -880,7 +836,6 @@ export async function GET(request: NextRequest) {
         }
     }
 
-    const seenMinutesForEnriched = new Set<string>();
     for (const agenda of runtimeIndex.agendas) {
       const haystack = `${agenda.cityName} ${agenda.council_name} ${agenda.agenda_title} ${agenda.text}`;
       const evaluation = evaluateText(haystack);
@@ -893,16 +848,13 @@ export async function GET(request: NextRequest) {
         score += 10;
       }
       sessionResults.push({
-        id: `${agenda.city}_minutes_${agenda.council_id}_${agenda.schedule_index}_${agenda.first_minute_id ?? 0}`,
+        id: runtimeAgendaResultId(agenda),
         city: agenda.city,
         cityName: agenda.cityName,
         sourceType: "minutes",
         title: agenda.council_name,
         committee: agenda.agenda_title || "議題",
-        href:
-          agenda.first_minute_id !== null
-            ? `/${agenda.city}/minutes/${agenda.council_id}?q=${encodeURIComponent(q)}`
-            : `/${agenda.city}/minutes/${agenda.council_id}`,
+        href: appendSearchQueryToHref(`/${agenda.city}/minutes/${agenda.council_id}`, q),
         segIndex: agenda.schedule_index,
         label: agenda.schedule_name,
         startTime: "",
@@ -912,21 +864,19 @@ export async function GET(request: NextRequest) {
         year: agenda.year ?? yearFromCouncilName(agenda.council_name),
         score,
       });
-      seenMinutesForEnriched.add(`${agenda.city}_${agenda.council_id}`);
     }
 
     for (const activity of runtimeIndex.memberActivities ?? []) {
         const city = activity.city;
         const cityName = activity.cityName || cityMap[city] || city;
-        const minuteKey = `${city}_${activity.council_id}`;
         const searchText = memberActivityText(activity, cityName);
         const evaluation = evaluateText(searchText);
         if (!evaluation.matched) continue;
-        const summaryTopics = uniqueTexts(activity.summary_topics ?? []);
+        const canonicalTopics = uniqueTexts(activity.canonical_topics ?? []);
         const topics = uniqueTexts(activity.topics ?? []);
-        const contextText = memberActivityContext(activity, summaryTopics, topics, tokens) || excerptSearchText(searchText, tokens, 100);
+        const contextText = memberActivityContext(activity, canonicalTopics, topics, tokens) || excerptSearchText(searchText, tokens, 100);
         let score = evaluation.score + 32;
-        const topicText = [...summaryTopics, ...topics].join(" ");
+        const topicText = [...canonicalTopics, ...topics].join(" ");
         if (topicText && evaluateText(topicText).matched) score += 22;
         if (evaluateText(activity.member_name).matched) score += 12;
         if (evaluateText(activity.council_name).matched) score += 8;
@@ -949,41 +899,6 @@ export async function GET(request: NextRequest) {
           field: memberActivityQuestionLabel(activity.question_kind),
           date: activity.date,
           year: activity.year || yearFromDate(activity.date) || yearFromCouncilName(activity.council_name),
-          score,
-        });
-        if (Number(activity.council_id) > 0) seenMinutesForEnriched.add(minuteKey);
-    }
-
-    for (const doc of runtimeIndex.enriched ?? []) {
-        const city = doc.city;
-        const cityName = doc.cityName || cityMap[city] || city;
-        const minuteKey = `${city}_${doc.council_id}`;
-        if (seenMinutesForEnriched.has(minuteKey)) continue;
-        const summary = doc.summary ?? "";
-        const highlights = doc.highlights ?? [];
-        const searchText = [cityName, doc.name, summary, ...highlights, ...(doc.tags ?? [])].join(" ");
-        const evaluation = evaluateText(searchText);
-        if (!evaluation.matched) continue;
-        let score = evaluation.score + 8;
-        if (evaluateText(doc.name).matched) score += 16;
-        if (summary && evaluateText(summary).matched) score += 12;
-        const contextText = summary
-          ? excerptSearchText(summary, tokens, 120)
-          : highlights.slice(0, 2).join("、");
-        sessionResults.push({
-          id: `${city}_minutes_${doc.council_id}`,
-          city,
-          cityName,
-          sourceType: "minutes",
-          title: doc.name,
-          committee: "",
-          href: `/${city}/minutes/${doc.council_id}`,
-          segIndex: 0,
-          label: "",
-          startTime: "",
-          context: contextText,
-          field: "AI要約",
-          year: yearFromCouncilName(doc.name) || yearFromDate(doc.generated_at),
           score,
         });
     }
@@ -1057,13 +972,33 @@ export async function GET(request: NextRequest) {
   let sessionRescued = false;
   let memberRescued = false;
 
-  if (sessionResults.length === 0 || memberResults.length === 0) {
+  const sessionMatchesActiveFilters = (result: RankedSessionHit) =>
+    (cityFilter === "all" || result.city === cityFilter)
+    && (sourceFilter === "all" || result.sourceType === sourceFilter)
+    && (yearFilter === "all" || result.year === yearFilter);
+  const memberMatchesActiveFilters = (result: RankedMemberHit) =>
+    (cityFilter === "all" || result.city === cityFilter)
+    && (
+      factionFilter === "all"
+      || (result.faction || "無所属") === factionFilter
+    );
+
+  if (
+    !sessionResults.some(sessionMatchesActiveFilters)
+    || !memberResults.some(memberMatchesActiveFilters)
+  ) {
     const fallbackResults = collectResults("fallback");
-    if (sessionResults.length === 0 && fallbackResults.sessionResults.length > 0) {
+    if (
+      !sessionResults.some(sessionMatchesActiveFilters)
+      && fallbackResults.sessionResults.some(sessionMatchesActiveFilters)
+    ) {
       sessionResults = fallbackResults.sessionResults;
       sessionRescued = true;
     }
-    if (memberResults.length === 0 && fallbackResults.memberResults.length > 0) {
+    if (
+      !memberResults.some(memberMatchesActiveFilters)
+      && fallbackResults.memberResults.some(memberMatchesActiveFilters)
+    ) {
       memberResults = fallbackResults.memberResults;
       memberRescued = true;
     }
@@ -1084,10 +1019,7 @@ export async function GET(request: NextRequest) {
         decision: "議決結果",
       })[value] ?? value
   );
-  const effectiveSourceFilter =
-    sourceFilter !== "all" && sessionSourceFacets.some((facet) => facet.value === sourceFilter)
-      ? sourceFilter
-      : "all";
+  const effectiveSourceFilter = sourceFilter;
   const sourceScopedSessions =
     effectiveSourceFilter === "all"
       ? cityScopedSessions
@@ -1096,10 +1028,7 @@ export async function GET(request: NextRequest) {
   const sessionYearFacets = buildCountFacets(
     sourceScopedSessions.map((result) => result.year).filter(Boolean)
   );
-  const effectiveYearFilter =
-    yearFilter !== "all" && sessionYearFacets.some((facet) => facet.value === yearFilter)
-      ? yearFilter
-      : "all";
+  const effectiveYearFilter = yearFilter;
   const filteredSessions =
     effectiveYearFilter === "all"
       ? sourceScopedSessions
@@ -1108,10 +1037,7 @@ export async function GET(request: NextRequest) {
   const memberFactionFacets = buildCountFacets(
     cityScopedMembers.map((result) => result.faction || "無所属")
   );
-  const effectiveFactionFilter =
-    factionFilter !== "all" && memberFactionFacets.some((facet) => facet.value === factionFilter)
-      ? factionFilter
-      : "all";
+  const effectiveFactionFilter = factionFilter;
   const filteredMembers =
     effectiveFactionFilter === "all"
       ? cityScopedMembers
@@ -1123,8 +1049,8 @@ export async function GET(request: NextRequest) {
     memberResults: stripMemberScore(filteredMembers.slice(0, MAX_RESULTS)),
     sessionTotal: filteredSessions.length,
     memberTotal: filteredMembers.length,
-    sessionBaseTotal: sessionResults.length,
-    memberBaseTotal: memberResults.length,
+    sessionBaseTotal: filteredSessions.length,
+    memberBaseTotal: filteredMembers.length,
     truncated: filteredSessions.length > MAX_RESULTS || filteredMembers.length > MAX_RESULTS,
     rescued: sessionRescued || memberRescued,
     sessionRescued,

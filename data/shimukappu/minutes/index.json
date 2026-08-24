@@ -6,16 +6,11 @@
     "japanese_year": "令和8年",
     "type_label": "全会議 > 本会議 > 臨時会",
     "file": "20262001.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20252003,
-    "name": "令和7年第3回臨時会",
-    "year": "2025",
-    "japanese_year": "令和7年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20252003.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2026-01-21",
+    "end_date": "2026-01-21",
+    "sort_date": "2026-01-21",
+    "date_precision": "day"
   },
   {
     "council_id": 20251005,
@@ -24,7 +19,11 @@
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20251005.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2025-12-11",
+    "end_date": "2025-12-12",
+    "sort_date": "2025-12-12",
+    "date_precision": "day"
   },
   {
     "council_id": 20251004,
@@ -33,7 +32,24 @@
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20251004.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2025-09-19",
+    "end_date": "2025-09-22",
+    "sort_date": "2025-09-22",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20252003,
+    "name": "令和7年第3回臨時会",
+    "year": "2025",
+    "japanese_year": "令和7年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20252003.json",
+    "schedule_count": 1,
+    "start_date": "2025-07-15",
+    "end_date": "2025-07-15",
+    "sort_date": "2025-07-15",
+    "date_precision": "day"
   },
   {
     "council_id": 20251002,
@@ -42,7 +58,11 @@
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20251002.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2025-06-23",
+    "end_date": "2025-06-25",
+    "sort_date": "2025-06-25",
+    "date_precision": "day"
   },
   {
     "council_id": 20251001,
@@ -51,16 +71,11 @@
     "japanese_year": "令和7年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20251001.json",
-    "schedule_count": 1
-  },
-  {
-    "council_id": 20242001,
-    "name": "令和6年第1回臨時会",
-    "year": "2024",
-    "japanese_year": "令和6年",
-    "type_label": "全会議 > 本会議 > 臨時会",
-    "file": "20242001.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2025-03-06",
+    "end_date": "2025-03-14",
+    "sort_date": "2025-03-14",
+    "date_precision": "day"
   },
   {
     "council_id": 20241005,
@@ -69,7 +84,11 @@
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20241005.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2024-12-12",
+    "end_date": "2024-12-13",
+    "sort_date": "2024-12-13",
+    "date_precision": "day"
   },
   {
     "council_id": 20241004,
@@ -78,7 +97,11 @@
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20241004.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2024-09-18",
+    "end_date": "2024-09-19",
+    "sort_date": "2024-09-19",
+    "date_precision": "day"
   },
   {
     "council_id": 20241003,
@@ -87,7 +110,11 @@
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20241003.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2024-06-20",
+    "end_date": "2024-06-21",
+    "sort_date": "2024-06-21",
+    "date_precision": "day"
   },
   {
     "council_id": 20241002,
@@ -96,6 +123,23 @@
     "japanese_year": "令和6年",
     "type_label": "全会議 > 本会議 > 定例会",
     "file": "20241002.json",
-    "schedule_count": 1
+    "schedule_count": 1,
+    "start_date": "2024-03-07",
+    "end_date": "2024-03-15",
+    "sort_date": "2024-03-15",
+    "date_precision": "day"
+  },
+  {
+    "council_id": 20242001,
+    "name": "令和6年第1回臨時会",
+    "year": "2024",
+    "japanese_year": "令和6年",
+    "type_label": "全会議 > 本会議 > 臨時会",
+    "file": "20242001.json",
+    "schedule_count": 1,
+    "start_date": "2024-01-25",
+    "end_date": "2024-01-25",
+    "sort_date": "2024-01-25",
+    "date_precision": "day"
   }
 ]

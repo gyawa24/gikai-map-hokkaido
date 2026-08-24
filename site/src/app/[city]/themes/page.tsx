@@ -34,7 +34,12 @@ function getMembers(city: string): Member[] {
 function getMemberActivity(city: string): Record<string, MemberActivity> | null {
   try {
     const fp = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "members_activity.json");
-    return JSON.parse(fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")) as Record<string, MemberActivity>;
+    const activity = JSON.parse(
+      fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+    ) as Record<string, MemberActivity>;
+    return Object.fromEntries(
+      Object.entries(activity).filter(([, entry]) => entry.classification_status === "classified")
+    );
   } catch {
     return null;
   }
@@ -49,13 +54,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { city } = await params;
   const municipality = getMunicipality(city);
-  if (!municipality || !hasCityCapability(city, "themes")) notFound();
+  if (
+    !municipality
+    || municipality.minutes_access === "restricted"
+    || !hasCityCapability(city, "themes")
+  ) notFound();
 
   const name = municipality?.council_name ?? "市町村議会";
   const title = `テーマ別議員 - ${name}`;
   return buildPageMetadata({
     title,
-    description: `${name}の議員を政策テーマ別にランキング表示します。気になるテーマを選んで、相談できる議員を探しましょう。`,
+    description: `${name}の公式会議録で確認できる質問記録を、政策テーマ別に整理して表示します。`,
     path: `/${city}/themes`,
   });
 }
@@ -69,7 +78,11 @@ export default async function CityThemesPage({
 }) {
   const { city } = await params;
   const municipality = getMunicipality(city);
-  if (!municipality || !hasCityCapability(city, "themes")) notFound();
+  if (
+    !municipality
+    || municipality.minutes_access === "restricted"
+    || !hasCityCapability(city, "themes")
+  ) notFound();
 
   const members = getMembers(city);
   const activity = getMemberActivity(city) ?? {};
@@ -94,16 +107,14 @@ export default async function CityThemesPage({
       seat_number: member.seat_number,
       faction: member.faction ?? "",
       photo_url: member.photo_url,
-      session_count: act?.session_count ?? 0,
-      summary_topics: act?.summary_topics ?? [],
-      top_topics: act?.top_topics ?? [],
+      generated_topics: act?.generated_topics ?? [],
       themes: act?.themes ?? [],
     };
   });
 
-  // Sort themes by member count descending, then alphabetically
+  // テーマ数で順位付けせず、表記順を安定させる。
   const allThemes = Array.from(themeCount.entries())
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ja"))
+    .sort((a, b) => a[0].localeCompare(b[0], "ja"))
     .map(([t]) => t);
   const themeCounts = Object.fromEntries(themeCount);
 
@@ -120,9 +131,9 @@ export default async function CityThemesPage({
 
       {/* ページ見出し */}
       <section className="mb-6">
-        <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">テーマ別議員ランキング</h2>
+        <h2 className="text-xl font-bold text-[#1B3A6B] mb-1">テーマ別の質問記録</h2>
         <p className="text-base text-[#4A5568] leading-relaxed">
-          テーマを選ぶと、そのテーマで活発に活動している議員を発言回数の多い順に表示します。
+          テーマを選ぶと、公式会議録で関連する質問記録を確認できる議員を議席番号順に表示します。テーマ分類は検索を補助する自動整理で、原文確認を前提とします。
         </p>
       </section>
 
@@ -138,15 +149,14 @@ export default async function CityThemesPage({
 
       {/* 利用案内 */}
       <section className="mt-10 bg-[#E8EEF7] rounded-lg border border-[#C5D0E6] p-6">
-        <h3 className="text-base font-bold text-[#1B3A6B] mb-2">この問題は誰に相談すれば？</h3>
+        <h3 className="text-base font-bold text-[#1B3A6B] mb-2">テーマ別表示について</h3>
         <p className="text-base text-[#4A5568] leading-relaxed mb-3">
-          地域の問題や市政への要望がある場合、テーマに関心を持つ議員に相談するのが近道です。
-          上のテーマから気になる分野を選び、発言実績の多い議員を探してみましょう。
+          公式会議録から質問記録を探すための補助表示です。質問・質疑記録の件数は議会内の役職や質問機会にも左右され、議員の優劣や活動全体を示すものではありません。
         </p>
         <ul className="space-y-1.5 text-sm text-[#4A5568]">
           <li className="flex items-start gap-2">
             <span className="text-[#2A5298] shrink-0 mt-0.5" aria-hidden="true">·</span>
-            <span>公式会議録から確認できた定例会・委員会での質問記録をもとにしています。</span>
+            <span>公式会議録から確認できた定例会・委員会での質問記録をもとに、AIを含む自動処理でテーマを整理しています。</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[#2A5298] shrink-0 mt-0.5" aria-hidden="true">·</span>

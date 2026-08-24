@@ -29,9 +29,7 @@ export type CityThemeMemberRow = {
   seat_number: number;
   faction: string;
   photo_url?: string;
-  session_count: number;
-  summary_topics?: string[];
-  top_topics: string[];
+  generated_topics?: string[];
   themes: string[];
 };
 
@@ -47,12 +45,7 @@ function factionBadgeClass(faction: string): string {
 }
 
 function getDisplayTopics(row: CityThemeMemberRow): string[] {
-  const topics = row.summary_topics?.length
-    ? row.summary_topics
-    : row.themes.length
-      ? row.themes
-      : row.top_topics;
-  return topics.slice(0, 4);
+  return (row.generated_topics ?? []).slice(0, 4);
 }
 
 export default function CityThemesClient({ city, rows, allThemes, themeCounts }: Props) {
@@ -62,7 +55,7 @@ export default function CityThemesClient({ city, rows, allThemes, themeCounts }:
   const filtered = useMemo(
     () =>
       (selectedTheme ? rows.filter((row) => row.themes.includes(selectedTheme)) : rows).sort(
-        (a, b) => b.session_count - a.session_count || a.seat_number - b.seat_number
+        (a, b) => a.seat_number - b.seat_number || a.name.localeCompare(b.name, "ja")
       ),
     [rows, selectedTheme]
   );
@@ -117,37 +110,21 @@ export default function CityThemesClient({ city, rows, allThemes, themeCounts }:
             {selectedTheme ? (
               <>
                 <span className="font-medium text-[#1B3A6B]">「{selectedTheme}」</span>
-                {" "}テーマの議員 — {filtered.length}名（発言回数順）
+                {" "}テーマの議員 — {filtered.length}名（議席番号順）
               </>
             ) : (
-              <>全議員 — {filtered.length}名（発言回数順）</>
+              <>全議員 — {filtered.length}名（議席番号順）</>
             )}
           </p>
 
           <div className="space-y-3">
-            {filtered.map((row, rank) => (
+            {filtered.map((row) => (
               <div
                 key={row.name}
                 className="overflow-hidden rounded-lg border border-[#CBD5E0] bg-white shadow-sm transition-colors hover:border-[#1B3A6B]"
               >
                 <div className="p-5">
                   <div className="flex items-start gap-4">
-                    <div className="w-8 shrink-0 text-center">
-                      <span
-                        className={`text-sm font-bold ${
-                          rank === 0
-                            ? "text-[#B8860B]"
-                            : rank === 1
-                              ? "text-[#708090]"
-                              : rank === 2
-                                ? "text-[#8B4513]"
-                                : "text-[#A0AEC0]"
-                        }`}
-                      >
-                        {rank + 1}
-                      </span>
-                    </div>
-
                     {row.photo_url && (
                       <div className="shrink-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -170,9 +147,6 @@ export default function CityThemesClient({ city, rows, allThemes, themeCounts }:
                             {row.seat_number}番
                           </span>
                         )}
-                        <span className="rounded-full bg-[#E8EEF7] px-2 py-0.5 text-xs font-medium text-[#2A5298]">
-                          公式記録 {row.session_count}回
-                        </span>
                         {row.faction && (
                           <span className={`rounded px-2 py-0.5 text-xs font-medium ${factionBadgeClass(row.faction)}`}>
                             {row.faction}
@@ -208,15 +182,20 @@ export default function CityThemesClient({ city, rows, allThemes, themeCounts }:
                       </div>
 
                       {getDisplayTopics(row).length > 0 && (
-                        <div className="mt-2 flex flex-wrap gap-1">
-                          {getDisplayTopics(row).map((topic) => (
-                            <span
-                              key={topic}
-                              className="rounded-full border border-[#E2E8F0] bg-[#F4F6F9] px-2 py-0.5 text-xs text-[#4A5568]"
-                            >
-                              {topic}
-                            </span>
-                          ))}
+                        <div className="mt-2">
+                          <p className="mb-1 text-[11px] font-medium text-[#718096]">
+                            AI整理テーマ（要原文確認）
+                          </p>
+                          <div className="flex flex-wrap gap-1">
+                            {getDisplayTopics(row).map((topic) => (
+                              <span
+                                key={topic}
+                                className="rounded-full border border-[#F1D39A] bg-[#FFF9EC] px-2 py-0.5 text-xs text-[#5D3A12]"
+                              >
+                                {topic}
+                              </span>
+                            ))}
+                          </div>
                         </div>
                       )}
 

@@ -1,0 +1,370 @@
+[
+  {
+    "id": "kuriyama-2026200810-1-001",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "中野真里議会事務局長",
+    "speaker_role": "答弁",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本会議の議件は、議事日程のとおり、議案第１４\n号財産の取得についてほか１件であります。\n地方自治法第１２１条第１項の規定による説明員は、町長及び町長の委任を受け\nた副町長、各課所長並びに教育委員会教育長及び同教育長の委任を受けた課長、事\n務局長、農業委員会長の委任を受けた事務局長、監査委員、選挙管理委員会委員長\nの委任を受けた書記長であります。\n先の定例会議報告後の会務につきましては、別紙プリントのとおりであります。\n以上です。",
+    "text_length": 216,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-002",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "佐々木学町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１４号 財産の取得について、提案理由をご説明\n申し上げます。\n財産を取得するため地方自治法第９６条第１項第８号の規定により、本議会の議\n決を求めるものであります。\n取得財産の名称、種類及び数量につきましては、スクールバス２台であります。\n取得の目的は、栗山小・中学校登下校用で老朽化に伴う１台の更新及び継立小学\n校・角田小学校の栗山小学校への統合に伴う１台の追加であります。\n取得の方法は指名競争入札であります。\n取得予定価格は、６,２８５万７,４１０円であります。\nなお、予定価格に対する落札率は、９１.１１パーセントであります。\n取得の相手方は、岩見沢市大和２条６丁目１三菱ふそうトラック・バス株式会社\n北海道ふそう岩見沢支店、支店長 橋本将彦であります。\n入札につきましては、７月２４日に行い指名業者は、北海道日野自動車株式会社\n岩見沢支店、三菱ふそうトラック・バス株式会社北海道ふそう岩見沢支店の２社で\n\nあります。\nこの財産取得の財源内訳につきましては、国庫補助金７８０万円、地方債５,５\n００万円、一般財源５万７,４１０円であります。\n以上、提案理由といたしますので、よろしくご審議くださいますようお願いいた\nします。",
+    "text_length": 518,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-008"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-003",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "斉藤隆浩",
+    "member_faction": "",
+    "text": "（斉藤隆浩君） ３点伺います。\nまず１点目、起債当初予算で６,１１０万円ということで、これ今、この起債を\n起こしたときに利率と、このバスの償還年数どうなっているのかっていうのを聞き\nたかったのが１点目。\n２点目、スクールバス購入事業債のこの起債の交付税措置、どれぐらいあるのか\nないのかなっていうところ、伺いたかったのが２点目。\nあと３点目、スクールバスということで、安全装置という中でおろし忘れ防止だ\nとか取り残されたときの緊急ボタンであったりとか、そういう装備面どうなってい\nるのかっていう確認がしたかったです。",
+    "text_length": 258,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-010"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-004",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "橋場謙吾副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "斉藤隆浩議員ご質問１点目と２点目の関係でございます。\n起債については、過疎債を予定しているところでございまして、ちょっと利率に\nついてはちょっと今変動というかですねあるのですがちょっと今確認をさせていた\nだきたいと思います。\nそれと、償還期間につきましては、一応過疎債以外のうちの場合通常の車両等々\nを購入する場合はですね、償還期間が減価償却の期間があるものですからそれを加\n味しまして大体４年、ないしは５年、どちらかの償還期間ということでございます。\nあと交付税措置については、償還金の７割が補填されるというような状況でござ\nいます。",
+    "text_length": 268,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-011"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-005",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "桑島克典学校教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "斉藤議員ご質問の３点目の降ろし忘れ防止等のご質\n問でございます。\nバスメーカーのほうにはですね、そういったオプションはございませんが、去る\n６月にバスの運行計画委員会を開催しまして、学校関係者それから保護者にもご参\n\n加いただいた中で、今斉藤議員おっしゃったような話題も出ましたので、今後も教\n育委員会の中でそういった措置のほうもですね、検討したいと考えているところで\nございます。",
+    "text_length": 191,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-012"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-006",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "斉藤隆浩",
+    "member_faction": "",
+    "text": "（斉藤隆浩君） ３点目再質疑させていただきます。ということはバス単体\nで買うというところで、せっかくですねスクールバスとして買うのであれば、最初\nから付けてまとめて、過疎債使えるのだったらすごい有利な起債なんで、スクール\nバスとして納品してもらえばよかったのになあと思うんですけど。\nということはですね、このバスにさらにまだ安全装置の予算、補正なり何かしら\nが今後付いてくるということでよろしかったでしょうか。",
+    "text_length": 205,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-013"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-007",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "桑島克典学校教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "斉藤議員の再質問についてでございます。\n装置がいいのか、この間の検討委員会の中で話が出たのはですね、例えばバスに\nそういったマークみたいなのをつけて子供たちが迷わないようにするとかあと、運\n転手が今日乗っている子供が何人いてっていうような把握の仕方で、そういったこ\nとも防止できるかなというような話もありましたので、そこのまず仕組みから検討\nに入りまして、もし、どうしてもそういう措置が必要だというふうな結論に達しま\nしたらまた補正でお願いする形になるかもしれませんのでその辺はよろしくお願い\nいたします。",
+    "text_length": 253,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-014"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-008",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "８番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "斉藤隆浩",
+    "member_faction": "",
+    "text": "（斉藤隆浩君） 全国どこでもですね、やっぱり子供を見逃すケアレスミス\nという人的なミスで、取り残されるのはよくあることなので、検討するまでもなく\n当初からつけておけばよかったのになと思って、これ以上やると一般質問みたくな\nるのでやめますけど、せっかく取得するんで、たくさんの子供たちのが乗って今ま\nでバス乗ってない子供たちも乗るようになるので、本当に念には念をという気持ち\nは持って取り組んで頂きたいなと思っています。",
+    "text_length": 209,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-015"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-009",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "橋場謙吾副町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "すみません１点目の関係で、利息について今確認をさせて\nいただきまして、現行の利率につきましては年１.８％というふうになっておりま\nす。",
+    "text_length": 67,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-016"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-010",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "堀文彦",
+    "member_faction": "",
+    "text": "(堀文彦君) １点だけ伺います。\nそれぞれの台数で２台あるのですが、何名乗りなのかっていう部分を伺いたくて\n\nですね、せっかくの購入ですから、できれば大きいサイズのものを買っておいたほ\nうが、いろんなうちのスクールバスはですね、町内の町営バスとしての運行も兼ね\nてますので、そこで人数のほう、バスの規模感ですね、伺いたかったです。\nお願いします。",
+    "text_length": 173,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-017"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-011",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "桑島克典学校教育課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "堀議員の質問の定員についてですけれども、座席数\nが、通常の座席が４１席、それに補助席が８席、運転主が１名ということで５０人\n乗りを２台とも想定しているところです。\n以上です。",
+    "text_length": 87,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-018"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-012",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "佐々木学町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第１５号 財産の処分について提案理由をご説明申\nし上げます。\n今回、財産処分いたします土地につきましては、令和８年７月より分譲しており\nます本町旭台地区の栗山第５工業団地１区画で、かねてより誘致を進めてまいりま\nした企業へ売却することから、当該土地の財産処分を行うため、地方自治法第９６\n条第１項第８号の規定により、本議会の議決を求めるものであります。\n\n土地につきましては、栗山町字旭第４３番１８外１筆、地目は宅地で、面積は合\nわせて６,５５４.７１平方メートルであります。\n売却の方法は随意契約によるもので、売却価格は１,９６６万４,１３０円であり\nます。\n売却の相手方は大阪府大阪市鶴見茨田大宮１丁目７－５９、株式会社エーゼット\n代表取締役藤雅人であります。\n以上提案理由といたしますので、よろしくご審議くださいますようお願いいたし\nます。",
+    "text_length": 375,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-021"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-013",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "堀文彦",
+    "member_faction": "",
+    "text": "(堀文彦君) まずですね、１点質問いたします。\nまず新しい企業が誘致されるということでこれまでたくさん企業活動、誘致活動\nをされた中で結果が出たということを大変いち町民としても、うれしく思います。\n今後自治体の財政支えていくためにはやっぱり町内ＧＤＰ上げるとですとかふる\nさと納税含めた税収を上げていくってことが大事で、企業誘致もその一つだと思う\nんですよね。\n今回この企業が来たことによって、１年間での固定資産税等での見込み予定で構\nいませんが、町の収入がどれだけ上がるのかっていう数字、算出できておりました\nら、教えていただきたいと思います。",
+    "text_length": 273,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-023"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-014",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "宮本孝之商工観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "堀議員の企業の誘致による、町内の経済効果等に\nよるご質問かと思いますけども、まず、税収につきまして、固定資産税につきまし\nては、建物の規模がまだ確定しておりませんので、現在のところ、５０坪から１０\n０坪程度の危険物の倉庫、一般倉庫、荷さばき事務所等建設予定となっております\nので、一般の倉庫よりも危険物倉庫につきましては、評価が高いと聞いております\nので、その後、固定資産税のほうの評価に入るものと思っております。\nそれと従業員につきましては、現在８名程度を雇用を予定しておりますので、そ\nの方々の、全て栗山町民になるかどうか今後ですけども、それぞれの個人住民税の\n収入等もですね、まだ今の段階では試算はしておりませんけども、１人当たり年収\nベースで５００万程度の給与収入の場合、経済効果としましては約２分の１の２０\n０万から２５０万ほど、町内への経済効果の波及があると、企業誘致の場合されて\nおりますので、こちらのほうも企業と一緒になって、雇用のほうも確保していきた\n\nいと思っております。\n以上です。",
+    "text_length": 452,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-024"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-015",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "重山雅世",
+    "member_faction": "",
+    "text": "（重山雅世君） この会社は、潤滑油などの物流センターをつくるというよ\nうな話で聞いていましたけれども、角田の町民含めて、危険物っていう感じがあり\nますから、説明会などでどういう意見が出されたのか、そういう点で、答弁求めた\nいと思います。",
+    "text_length": 118,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-026"
+      ]
+    }
+  },
+  {
+    "id": "kuriyama-2026200810-1-016",
+    "municipality": "kuriyama",
+    "council_id": 2026200810,
+    "council_name": "8月臨時会議 (2026-08-10)",
+    "schedule_id": 1,
+    "schedule_name": "8月臨時会議",
+    "date": null,
+    "speaker": "宮本孝之商工観光課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "重山議員のご質問に答弁させていただきます。\nこの第５工業団地角田の第５町内っていうところが、隣接している工業地域、工\n業団地となります。\n先週ですけども、８月６日に角田町内会の各町内会長あてと、工業団地に隣接し\nております第５町内会の皆様へ御ご案内させていただきまして、１７名の方々、説\n明会のほうに来ていただきました。\nその中で、せっかく町が分譲を開始した工業団地ですので、地域としても全面的\nに協力したいと言っていただいている声がある一方で、やはりこの危険物倉庫とい\nうことで、特にこの隣接している地域の町内会のほうから、商品の安全性、危険物\nということで、搬入搬出による流通センターということですので、早朝、夜間によ\nる配送搬出の住民、騒音妨害、そういうような、ご心配も多く受けております。\nその旨につきましては、企業の方へも、随時報告はしておりますけども、できる\nだけ今後契約に向けてですね、丁寧に住民の方々への地域説明と、企業との話合い\nを設けて、スムーズに工場の立地ができますように、町としても後方支援しっかり\nさせていただきますので、やはりすぐ隣で住んでる方々が多くいらっしゃいますの\nで、丁寧に説明のほうも続けていきたいと思っておりますのでご理解頂きたいと思\nいます。",
+    "text_length": 542,
+    "source": {
+      "minutes_file": "data/kuriyama/minutes/2026200810.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-027"
+      ]
+    }
+  }
+]

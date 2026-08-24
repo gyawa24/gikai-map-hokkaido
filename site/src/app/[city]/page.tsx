@@ -51,8 +51,18 @@ function getMembers(city: string): Member[] {
 
 function getMemberActivity(city: string): Record<string, MemberActivity> {
   try {
-    const fp = path.join(process.cwd(), "data", city, "members_activity.json");
-    return JSON.parse(fs.readFileSync(fp, "utf-8")) as Record<string, MemberActivity>;
+    const fp = path.join(
+      /*turbopackIgnore: true*/ process.cwd(),
+      "data",
+      city,
+      "members_activity.json"
+    );
+    const activity = JSON.parse(
+      fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
+    ) as Record<string, MemberActivity>;
+    return Object.fromEntries(
+      Object.entries(activity).filter(([, entry]) => entry.classification_status === "classified")
+    );
   } catch {
     return {};
   }
@@ -188,18 +198,21 @@ export default async function CityMembersPage({
   params: Promise<{ city: string }>;
 }) {
   const { city } = await params;
+  const municipality = getMunicipality(city);
   const members = getMembers(city);
-  const activity = getMemberActivitySummary(city);
+  const activity = municipality?.minutes_access === "restricted"
+    ? {}
+    : getMemberActivitySummary(city);
   const factions = [...new Set(members.map((m) => m.faction).filter(Boolean))];
   const { count: minutesCount, latestYear } = getMinutesSummary(city);
-  const municipality = getMunicipality(city);
   const capability = getCityCapability(city);
   const minutesUnavailable = municipality?.minutes_status === "unavailable";
   const minutesUnavailableNote = municipality?.minutes_status_note;
   const minutesVerifiedAt = municipality?.minutes_verified_at;
   const councilName = municipality?.council_name ?? `${municipality?.name ?? city}議会`;
   const cityName = municipality?.name ?? city;
-  const hasThemes = Object.keys(activity).length > 0;
+  const hasThemes = municipality?.minutes_access !== "restricted"
+    && capability.capabilities.themes;
   const breadcrumb = buildBreadcrumbList([
     { name: "地方議会ドットコム", path: "/" },
     { name: councilName, path: `/${city}` },
@@ -237,7 +250,7 @@ export default async function CityMembersPage({
           cityName={cityName}
           hasMembers={false}
           hasMinutes={capability.capabilities.minutes}
-          hasThemes={capability.capabilities.themes || hasThemes}
+          hasThemes={hasThemes}
         />
         <CityDataStatus municipality={municipality} />
         <div className="page-shell max-w-6xl">
@@ -268,7 +281,7 @@ export default async function CityMembersPage({
         cityName={cityName}
         hasMembers={members.length > 0}
         hasMinutes={capability.capabilities.minutes}
-        hasThemes={capability.capabilities.themes || hasThemes}
+        hasThemes={hasThemes}
       />
       <CityDataStatus municipality={municipality} />
       {minutesUnavailable && (

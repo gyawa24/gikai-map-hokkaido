@@ -679,6 +679,7 @@
     "system": "gijiroku_com",
     "minutes_access": "restricted",
     "minutes_access_note": "札幌市公式サイトのコピーライトポリシーで「私的使用や引用など著作権法上認められた場合を除き、掲載コンテンツの複製・転用は事前に各担当課への相談が必要」と明記されているため、許諾確認が取れるまで本サイトでの全文閲覧は停止しています（データは保管中）。",
+    "minutes_official_url": "https://www.city.sapporo.jp/gikai/html/kaigiroku-sokuho.html",
     "council_term_end": "2027-05-01",
     "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
     "council_term_end_verified_at": "2026-06-12"
@@ -2282,6 +2283,7 @@
     "system": "pdf_inhouse",
     "minutes_access": "restricted",
     "minutes_access_note": "幕別町公式サイトの著作権ポリシーで「私的複製や法的に認められた引用を除き無断複製・転用は不可、利用希望者は担当課に要連絡」と明記されているため、許諾確認が取れるまで本サイトでの全文閲覧は停止しています（データは保管中）。",
+    "minutes_official_url": "https://www.town.makubetsu.lg.jp/gikai/hongikai/gikaikaigiroku/",
     "council_term_end": "2027-04-30",
     "council_term_end_source": "https://www.pref.hokkaido.lg.jp/fs/1/3/1/4/0/8/8/4/_/06_ninmanR80515%E7%8F%BE%E5%9C%A8.xlsx",
     "council_term_end_verified_at": "2026-06-12"

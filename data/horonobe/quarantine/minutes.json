@@ -1,0 +1,363 @@
+{
+  "updated_at": "2026-08-23",
+  "records": [
+    {
+      "status": "filtered_from_publication",
+      "reason": "schedule_year_mismatch_high_confidence",
+      "councils": [
+        {
+          "council_id": 20241006,
+          "published_year": 2024,
+          "original_schedule_count": 4,
+          "retained_schedule_count": 1,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "平成30年第6回定例会 1日目（PDF：476KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001f6qy.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-12-11"
+              ]
+            },
+            {
+              "schedule_id": 2,
+              "name": "令和元年第6回定例会 1日目（PDF：837KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001hurh.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-09-17"
+              ]
+            },
+            {
+              "schedule_id": 3,
+              "name": "令和元年第6回定例会 2日目（PDF：213KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001huxh.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-09-18"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241006.json"
+        },
+        {
+          "council_id": 20241008,
+          "published_year": 2024,
+          "original_schedule_count": 1,
+          "retained_schedule_count": 0,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "令和元年第8回定例会（PDF：701KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001i9g1.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-12-09"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241008.json"
+        },
+        {
+          "council_id": 20242007,
+          "published_year": 2024,
+          "original_schedule_count": 1,
+          "retained_schedule_count": 0,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "令和元年第7回臨時会（PDF：199KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001huxl.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-10-25"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20242007.json"
+        },
+        {
+          "council_id": 20241005,
+          "published_year": 2024,
+          "original_schedule_count": 4,
+          "retained_schedule_count": 2,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "平成30年第5回定例会 1日目（PDF：628KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001evdf.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-09-18"
+              ]
+            },
+            {
+              "schedule_id": 2,
+              "name": "平成30年第5回定例会 2日目（PDF：217KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001evdl.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-09-19"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241005.json"
+        },
+        {
+          "council_id": 20242004,
+          "published_year": 2024,
+          "original_schedule_count": 1,
+          "retained_schedule_count": 0,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "平成30年第4回臨時会（PDF：225KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001ev8p.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-09-03"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20242004.json"
+        },
+        {
+          "council_id": 20242005,
+          "published_year": 2024,
+          "original_schedule_count": 1,
+          "retained_schedule_count": 0,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "令和元年第5回臨時会（PDF：195KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001ghuy.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-08-05"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20242005.json"
+        },
+        {
+          "council_id": 20241004,
+          "published_year": 2024,
+          "original_schedule_count": 2,
+          "retained_schedule_count": 1,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "令和元年第4回定例会（PDF：636KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001gavd.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-06-20"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241004.json"
+        },
+        {
+          "council_id": 20241003,
+          "published_year": 2024,
+          "original_schedule_count": 1,
+          "retained_schedule_count": 0,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "平成30年第3回定例会（PDF：551KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001dwqr.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-06-18"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241003.json"
+        },
+        {
+          "council_id": 20242002,
+          "published_year": 2024,
+          "original_schedule_count": 2,
+          "retained_schedule_count": 0,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "平成30年第2回臨時会（PDF：309KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001dwmt.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-05-21"
+              ]
+            },
+            {
+              "schedule_id": 2,
+              "name": "令和元年第2回臨時会（PDF：269KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001fpbk.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-05-08"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20242002.json"
+        },
+        {
+          "council_id": 20242003,
+          "published_year": 2024,
+          "original_schedule_count": 2,
+          "retained_schedule_count": 1,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "令和元年第3回臨時会（PDF：239KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001fpgi.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-05-17"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20242003.json"
+        },
+        {
+          "council_id": 20241001,
+          "published_year": 2024,
+          "original_schedule_count": 4,
+          "retained_schedule_count": 0,
+          "removed_schedules": [
+            {
+              "schedule_id": 1,
+              "name": "平成30年第1回定例会 2日目（PDF：328KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001d0zu.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-03-13"
+              ]
+            },
+            {
+              "schedule_id": 2,
+              "name": "平成30年第1回定例会 1日目（PDF：648KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001d105.pdf"
+              ],
+              "detected_year": 2018,
+              "detected_date_years": [
+                2018
+              ],
+              "dates": [
+                "2018-03-12"
+              ]
+            },
+            {
+              "schedule_id": 3,
+              "name": "平成31年第1回定例会 1日目（PDF：813KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001feff.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-03-11"
+              ]
+            },
+            {
+              "schedule_id": 4,
+              "name": "平成31年第1回定例会 2日目（PDF：395KB)",
+              "source_urls": [
+                "https://www.town.horonobe.lg.jp/www4/section/gikai/le009f0000008a13-att/le009f000001fefq.pdf"
+              ],
+              "detected_year": 2019,
+              "detected_date_years": [
+                2019
+              ],
+              "dates": [
+                "2019-03-12"
+              ]
+            }
+          ],
+          "backup_file": "quarantine/minutes/year-mismatch/20241001.json"
+        }
+      ],
+      "note": "日程名・開催日抽出と本文冒頭の年が公開年と一致しない日程を除外。原本はquarantine配下に保存。"
+    }
+  ]
+}

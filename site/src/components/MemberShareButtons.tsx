@@ -8,7 +8,7 @@ type Props = {
   memberName: string;
   cityName: string;
   factionLabel?: string;
-  sessionCount?: number;
+  activitySummary?: string;
   themes?: string[];
 };
 
@@ -28,7 +28,7 @@ export default function MemberShareButtons({
   memberName,
   cityName,
   factionLabel,
-  sessionCount,
+  activitySummary,
   themes = [],
 }: Props) {
   const [qrOpen, setQrOpen] = useState(false);
@@ -53,7 +53,7 @@ export default function MemberShareButtons({
     const topThemes = themes.slice(0, 3).join("・");
     const parts = [
       `【${cityName}議会】${memberName}${factionLabel ? `（${factionLabel}）` : ""}`,
-      sessionCount ? `公式会議録の質問記録${sessionCount}回` : "",
+      activitySummary ?? "",
       topThemes ? `主なテーマ: ${topThemes}` : "",
     ].filter(Boolean);
     return parts.join(" / ");

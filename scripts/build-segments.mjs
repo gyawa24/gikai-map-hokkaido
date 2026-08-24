@@ -4,6 +4,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { compactForSearch } from "../site/src/lib/searchNormalization.mjs";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, "..");
@@ -39,6 +41,7 @@ const ADMIN_ROLE_KEYWORDS = [
   "主任",
 ];
 const MEMBER_ROLE_KEYWORDS = ["議員", "議長", "委員長", "委員"];
+const MEMBER_CONTEXT_SUFFIX_RE = /^(?:総務文教|厚生環境|産業建設|議会運営|予算|決算|補正|常任|特別)/u;
 const SEAT_NUMBER_PREFIX_RE = /^[0-9０-９]+番/;
 
 function isProceduralSpeaker(speaker) {
@@ -62,7 +65,11 @@ function toHalfWidthDigits(s) {
 
 function extractNameInfo(speaker) {
   if (!speaker) return null;
-  let s = speaker;
+  let s = speaker
+    .trim()
+    .replace(/[…．.・]{3,}$/u, "")
+    .replace(/[（(](?:続|[^）)]*(?:質問|報告|説明|討論)[^）)]*)[）)]$/u, "")
+    .trim();
 
   // Capture leading N番 as seat-number hint, then strip
   const seatMatch = s.match(/^([0-9０-９]+)番/);
@@ -85,7 +92,8 @@ function extractNameInfo(speaker) {
   s = s.replace(/^議員/, "");
 
   // Strip trailing role token (only the role keyword, not preceding committee name)
-  s = s.replace(/(?:副|臨時|仮)?(?:議員|議長|委員長|委員)$/, "");
+  const memberRoleSuffix = s.match(/(?:副|臨時|仮)?(?:議員|議長|委員長|委員)$/)?.[0] ?? null;
+  if (memberRoleSuffix) s = s.slice(0, -memberRoleSuffix.length);
 
   // Strip honorific suffix (君/氏/殿) used in formal council records
   s = s.replace(/(?:君|氏|殿)$/, "");
@@ -95,7 +103,7 @@ function extractNameInfo(speaker) {
   const givenNameHint = bracketMatch ? bracketMatch[1].trim() : null;
   s = s.replace(/[［\[][^］\]]*[］\]]/g, "").trim();
 
-  return { candidate: s, givenNameHint, seatNumberHint };
+  return { candidate: s, givenNameHint, seatNumberHint, memberRoleSuffix };
 }
 
 function parseScheduleDate(year, scheduleName) {
@@ -450,8 +458,8 @@ async function loadMembers(slug, membersPath = null) {
   }
 }
 
-function buildMemberIndex(members) {
-  // Each entry: { fullname, fullnameCompact, surname, given, seatNumber, faction }
+export function buildMemberIndex(members) {
+  // Each entry: { fullname, fullnameCompact, fullnameIdentity, surname, given, seatNumber, faction }
   return members
     .filter((m) => m?.name)
     .map((m) => {
@@ -463,6 +471,7 @@ function buildMemberIndex(members) {
       return {
         fullname,
         fullnameCompact,
+        fullnameIdentity: compactForSearch(fullname),
         surname,
         given,
         seatNumber: typeof m.seat_number === "number" ? m.seat_number : null,
@@ -471,18 +480,49 @@ function buildMemberIndex(members) {
     });
 }
 
-function matchMember(speaker, memberIndex) {
+export function explicitBodyMember(text, memberIndex, speakerSeatNumber = null) {
+  const source = String(text ?? "");
+  const parenthetical = source.match(/^\s*[（(]([^）)]+?)(?:君|くん|議員|氏|殿)?[）)]/u);
+  if (parenthetical) {
+    const candidate = parenthetical[1]
+      .replace(/(?:君|くん|議員|氏|殿)$/u, "")
+      .replace(/[\s　]/g, "");
+    const candidateIdentity = compactForSearch(candidate);
+    const matches = memberIndex.filter(
+      (member) => member.fullnameIdentity === candidateIdentity
+    );
+    return matches.length === 1
+      ? { name: matches[0].fullname, faction: matches[0].faction }
+      : null;
+  }
+
+  if (speakerSeatNumber == null) return null;
+  const introduction = source.match(
+    /^\s*(?:(?:皆(?:さん|様)[、，,]?\s*)?(?:おはようございます|こんにちは|こんばんは)[。．.!！?？]\s*)?([0-9０-９]+)番[、，,]?\s*/u,
+  );
+  if (!introduction) return null;
+  const bodySeatNumber = parseInt(toHalfWidthDigits(introduction[1]), 10);
+  if (bodySeatNumber !== speakerSeatNumber) return null;
+
+  const afterIntroduction = source.slice(introduction[0].length);
+  const matches = memberIndex.filter((member) => {
+    const namePattern = buildSpacedNamePattern(member.fullnameCompact);
+    return new RegExp(`^${namePattern}です(?:[。．.!！?？]|$)`, "u").test(afterIntroduction);
+  });
+  return matches.length === 1
+    ? { name: matches[0].fullname, faction: matches[0].faction }
+    : null;
+}
+
+export function matchMember(speaker, memberIndex, text = "") {
   if (!isMemberRoleSpeaker(speaker)) return null;
   const info = extractNameInfo(speaker);
   if (!info) return null;
-  const { candidate, givenNameHint, seatNumberHint } = info;
+  const { candidate, givenNameHint, seatNumberHint, memberRoleSuffix } = info;
 
   if (!candidate && seatNumberHint != null) {
-    const bySeatOnly = memberIndex.find((m) => m.seatNumber === seatNumberHint);
-    if (bySeatOnly) {
-      return { name: bySeatOnly.fullname, faction: bySeatOnly.faction };
-    }
-    return null;
+    // PDFの表番号は現行議席番号と一致しない場合がある。本文冒頭の氏名だけを根拠にする。
+    return explicitBodyMember(text, memberIndex, seatNumberHint);
   }
 
   if (!candidate) return null;
@@ -491,7 +531,7 @@ function matchMember(speaker, memberIndex) {
   if (seatNumberHint != null) {
     for (const m of memberIndex) {
       if (m.seatNumber !== seatNumberHint) continue;
-      if (m.surname && candidate.startsWith(m.surname)) {
+      if (m.surname && candidate === m.surname) {
         return { name: m.fullname, faction: m.faction };
       }
     }
@@ -509,22 +549,35 @@ function matchMember(speaker, memberIndex) {
     }
   }
 
-  // 3. Exact full-name / compact-name match (unambiguous when present)
-  for (const m of memberIndex) {
-    if (candidate === m.fullname || candidate === m.fullnameCompact) {
-      return { name: m.fullname, faction: m.faction };
-    }
+  // 3. Exact full-name / compact-name match after conservative character normalization.
+  //    異体字を同一視しても、現職名簿で一意の場合だけ帰属する。
+  const candidateIdentity = compactForSearch(candidate);
+  const exactMatches = memberIndex.filter(
+    (member) => member.fullnameIdentity === candidateIdentity
+  );
+  if (exactMatches.length === 1) {
+    return { name: exactMatches[0].fullname, faction: exactMatches[0].faction };
   }
+  if (exactMatches.length > 1) return null;
 
-  // 4. Prefix match — bidirectional, only when exactly one member matches.
-  //    a) candidate begins with member surname (e.g., "大山総務文教" → 大山)
-  //    b) member fullname begins with candidate (handles no-space names like
-  //       muroran "滝口紘子": speaker "滝口委員" → candidate "滝口" → match "滝口紘子")
+  // 4. Prefix match — only when exactly one member matches.
+  //    旧議員のフルネームを同姓の現職へ誤帰属させないため、候補側が長い場合は
+  //    委員会名などの役割接尾辞が明示された表記だけを許可する。
   if (candidate.length < 2) return null;
   const candidates = memberIndex.filter(
-    (m) =>
-      (m.surname && candidate.startsWith(m.surname)) ||
-      (m.fullname && m.fullname.startsWith(candidate))
+    (m) => {
+      if (m.fullnameCompact && m.fullnameCompact.startsWith(candidate)) return true;
+      if (m.fullnameCompact && candidate.startsWith(m.fullnameCompact)) {
+        const suffix = candidate.slice(m.fullnameCompact.length);
+        return suffix.length > 0 && (
+          MEMBER_CONTEXT_SUFFIX_RE.test(suffix)
+          || (memberRoleSuffix !== null && memberRoleSuffix !== "議員" && suffix.length <= 40)
+        );
+      }
+      if (!m.surname || !candidate.startsWith(m.surname)) return false;
+      const suffix = candidate.slice(m.surname.length);
+      return suffix.length > 0 && MEMBER_CONTEXT_SUFFIX_RE.test(suffix);
+    }
   );
   if (candidates.length === 1) {
     return { name: candidates[0].fullname, faction: candidates[0].faction };
@@ -537,6 +590,26 @@ function resolvePath(fp) {
   return path.isAbsolute(fp) ? fp : path.join(PROJECT_ROOT, fp);
 }
 
+async function listPublishedMinutesFiles(minutesDir) {
+  const indexPath = path.join(minutesDir, "index.json");
+  try {
+    const index = JSON.parse(await fs.readFile(indexPath, "utf8"));
+    if (!Array.isArray(index)) {
+      throw new Error(`${indexPath} must contain an array`);
+    }
+    return [...new Set(index.map((item) => item.file ?? `${item.council_id}.json`))]
+      .filter((file) => /^\d+\.json$/.test(file))
+      .sort();
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
+  }
+
+  // index未導入のテスト入力だけは従来どおり数値JSONを対象にする。
+  return (await fs.readdir(minutesDir))
+    .filter((file) => /^\d+\.json$/.test(file))
+    .sort();
+}
+
 export async function buildSegmentsForMunicipality(slug, options = {}) {
   const minutesDir =
     resolvePath(options.minutesDir) ?? path.join(PROJECT_ROOT, "data", slug, "minutes");
@@ -547,9 +620,7 @@ export async function buildSegmentsForMunicipality(slug, options = {}) {
   const members = await loadMembers(slug, membersPath);
   const memberIndex = buildMemberIndex(members);
 
-  const files = (await fs.readdir(minutesDir))
-    .filter((f) => /^\d+\.json$/.test(f))
-    .sort();
+  const files = await listPublishedMinutesFiles(minutesDir);
 
   await fs.mkdir(segmentsDir, { recursive: true });
 
@@ -591,8 +662,9 @@ export async function buildSegmentsForMunicipality(slug, options = {}) {
         if (!group) return;
         const ordinal = segments.length + 1;
         const id = `${slug}-${councilId}-${scheduleId}-${String(ordinal).padStart(3, "0")}`;
-        const member = matchMember(group.speaker, memberIndex);
-        const text = stripMemberNamePrefix(group.texts.join("\n"), member?.name);
+        const rawText = group.texts.join("\n");
+        const member = matchMember(group.speaker, memberIndex, rawText);
+        const text = stripMemberNamePrefix(rawText, member?.name);
         if (member) matchedMemberCount += 1;
         segments.push({
           id,

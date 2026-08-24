@@ -50,7 +50,7 @@
       "council_id": 580,
       "member_name": "小川陽平",
       "source_status": "official",
-      "textIncludes": ["行政ポータルアプリ", "公式会議録"]
+      "textIncludes": ["千歳市ポータルアプリ導入経費", "専用アプリとして導入するメリット", "公式会議録"]
     },
     "note": "公式会議録580の質問記録を、議員名とポータルアプリの組み合わせで特定できるか。"
   },
@@ -79,9 +79,9 @@
       "source": "member_activity",
       "council_id": 571,
       "member_name": "小川陽平",
-      "textIncludes": ["除雪・排雪", "千歳駅前の路面凍結"]
+      "textIncludes": ["除排雪事業費", "ＪＲ千歳駅前東口あたりの路面凍結"]
     },
-    "note": "決算特別委員会の質問テーマが、本文断片ではなく市民向けテーマで拾えるか。"
+    "note": "決算特別委員会の公式発言原文から、除排雪と千歳駅前の路面凍結を拾えるか。"
   },
   {
     "id": "chitose-agenda-snow-removal-budget",
@@ -120,7 +120,7 @@
       "source": "session",
       "session_id": "r8-teireikai2-ogawa-question-20260608",
       "segment_index": 3,
-      "textIncludes": ["次期千歳市DX推進計画", "生成AI"]
+      "textIncludes": ["次期DX推進計画", "生成AI"]
     },
     "note": "公式議事録公開前の会議録速報でも、議員名と生成AIテーマから該当質問へ到達できるか。"
   },
@@ -133,6 +133,7 @@
     "expected": {
       "source": "session",
       "session_id": "r8-teireikai2-ogawa-question-20260608",
+      "segment_index": 1,
       "textIncludes": ["地域福祉", "個別避難計画"]
     },
     "note": "会議録速報の複数登壇者から、議員名と生活課題の組み合わせで該当質問へ到達できるか。"
@@ -146,6 +147,7 @@
     "expected": {
       "source": "session",
       "session_id": "r8-teireikai2-day3-general-questions-20260611",
+      "segment_index": 1,
       "textIncludes": ["卒業式", "在校生"]
     },
     "note": "教育テーマの会議録速報を議員名から正しく絞り込めるか。"
@@ -159,6 +161,7 @@
     "expected": {
       "source": "session",
       "session_id": "r8-teireikai2-day5-general-questions-20260615",
+      "segment_index": 2,
       "textIncludes": ["プレコンセプションケア", "市内企業"]
     },
     "note": "長い専門用語を含む会議録速報でも該当質問へ到達できるか。"
@@ -173,7 +176,7 @@
       "source": "member_activity",
       "council_id": 237,
       "member_name": "三上まどか",
-      "textIncludes": ["ラピダス進出の税収への影響", "固定資産税"]
+      "textIncludes": ["純固定資産税", "ラピダス社の影響", "税収にも大きな影響"]
     },
     "note": "恵庭市の議員名と政策テーマの組み合わせで、半導体関連の質問へ到達できるか。"
   },
@@ -187,7 +190,7 @@
       "source": "member_activity",
       "council_id": 257,
       "member_name": "長谷文子",
-      "textIncludes": ["保育士人材確保対策事業の実績", "潜在保育士"]
+      "textIncludes": ["保育士人材確保対策事業費", "潜在保育士数"]
     },
     "note": "保育士人材確保の質問を議員名つきで拾えるか。"
   },
@@ -240,7 +243,7 @@
       "source": "member_activity",
       "council_id": 280,
       "member_name": "志方光徳",
-      "textIncludes": ["生成AIシステム導入", "文書管理システム"]
+      "textIncludes": ["生成ＡＩシステム事業", "文書管理システム事業"]
     },
     "note": "苫小牧市の議員名とAI関連テーマで該当質問へ到達できるか。"
   },
@@ -282,7 +285,7 @@
       "source": "member_activity",
       "council_id": 245,
       "member_name": "大野正和",
-      "textIncludes": ["DV被害者への給付対応", "物価高騰支援金"]
+      "textIncludes": ["ＤＶの被害者等の方", "物価高騰支援金給付事業"]
     },
     "note": "アルファベットを含む短い政策キーワードでも該当質問へ到達できるか。"
   },
@@ -296,9 +299,21 @@
       "source": "member_activity",
       "council_id": 245,
       "member_name": "神山哲太郎",
-      "textIncludes": ["学校給食無償化拡大検討", "防災タワー"]
+      "textIncludes": ["学校給食の無償化", "防災タワー"]
     },
     "note": "学校給食テーマを議員名つきで拾えるか。"
+  },
+  {
+    "id": "asahikawa-takahashi-character-variant",
+    "city": "asahikawa",
+    "cityName": "旭川市",
+    "query": "高橋紀博",
+    "operator": "and",
+    "expected": {
+      "source": "member",
+      "member_name": "髙橋 紀博"
+    },
+    "note": "通常字体の高で検索しても、異体字の髙を使う議員名へ到達できるか。"
   },
   {
     "id": "setana-fulltext-information-technology",

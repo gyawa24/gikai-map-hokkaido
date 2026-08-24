@@ -3,12 +3,13 @@ import path from "path";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import type { MinutesSession, MinutesEnriched, MinutesIndexItem } from "@/types/minutes";
+import type { MinutesSession, MinutesEnriched } from "@/types/minutes";
 import MinutesDetailClient from "@/components/MinutesDetailClient";
 import RemoteMinutesDetailClient from "@/components/RemoteMinutesDetailClient";
 import { getMunicipality } from "@/lib/municipalities";
 import { buildPageMetadata } from "@/lib/metadata";
 import { hasStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
+import { getPublishedMinutesIndexItem } from "@/lib/minutesPublication";
 
 // Cloudflare Workers の静的アセットキャッシュは読み取り専用。
 // 未生成の議事録ページは request-time render にして、ISR キャッシュ書き込みを避ける。
@@ -101,40 +102,6 @@ function getLocalSession(city: string, id: string): MinutesSession | null {
   }
 }
 
-function getLocalIndexItem(city: string, id: string): MinutesIndexItem | null {
-  const localCandidates = [
-    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "minutes", "index.json"),
-    path.join(/*turbopackIgnore: true*/ process.cwd(), "data", city, "index.json"),
-  ];
-  for (const fp of localCandidates) {
-    try {
-      const items = JSON.parse(
-        fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
-      ) as MinutesIndexItem[];
-      return items.find((item) => String(item.council_id) === id) ?? null;
-    } catch {
-      // try next
-    }
-  }
-  return null;
-}
-
-async function getMinutesIndexItem(city: string, id: string): Promise<MinutesIndexItem | null> {
-  const local = getLocalIndexItem(city, id);
-  if (local) return local;
-
-  const remoteCandidates = [
-    `site/data/${city}/minutes/index.json`,
-    `site/data/${city}/index.json`,
-  ];
-  for (const remotePath of remoteCandidates) {
-    const items = await fetchRawJson<MinutesIndexItem[]>(remotePath);
-    const match = items?.find((item) => String(item.council_id) === id);
-    if (match) return match;
-  }
-  return null;
-}
-
 async function getRemoteSessionPath(city: string, id: string): Promise<string | null> {
   const remoteCandidates = [
     `site/data/${city}/minutes/${id}.json`,
@@ -180,8 +147,23 @@ export async function generateMetadata({
   const { city, id } = await params;
   const municipality = getMunicipality(city);
   const cityName = municipality?.name ?? city;
+  if (municipality?.minutes_access === "restricted") {
+    return buildPageMetadata({
+      title: `議事録 - ${cityName}議会`,
+      description: `${cityName}議会の議事録`,
+      path: `/${city}/minutes/${id}`,
+    });
+  }
+  const indexItem = await getPublishedMinutesIndexItem(city, id);
+  if (!indexItem) {
+    return buildPageMetadata({
+      title: `議事録 - ${cityName}議会`,
+      description: `${cityName}議会の議事録`,
+      path: `/${city}/minutes/${id}`,
+    });
+  }
+
   const localSessionCandidate = getLocalSessionCandidate(city, id);
-  const indexItem = await getMinutesIndexItem(city, id);
   const session =
     localSessionCandidate && isLargeLocalSession(localSessionCandidate)
       ? null
@@ -279,7 +261,22 @@ export default async function CityMinutesDetailPage({
             {note ?? `${cityName}公式サイトの著作権ポリシーで複製・転用に事前許可を要する旨が明記されているため、許諾確認が取れるまで本サイトでの全文閲覧を停止しています。データは保管しており、許諾後に公開を再開します。`}
           </p>
           <p className="text-sm text-[#5A4500] leading-relaxed mt-3">
-            会議録本体は{cityName}議会事務局の公式ページからご覧ください。
+            {municipality?.minutes_official_url ? (
+              <>
+                会議録本体は{" "}
+                <a
+                  href={municipality.minutes_official_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#7A5A00]"
+                >
+                  {cityName}議会の公式ページ
+                </a>
+                からご覧ください。
+              </>
+            ) : (
+              <>会議録本体は{cityName}議会の公式サイトからご覧ください。</>
+            )}
           </p>
           <p className="text-xs text-[#7A5A00] mt-4">
             <a href={`/${city}/minutes`} className="underline hover:text-[#5A4500]">
@@ -291,7 +288,9 @@ export default async function CityMinutesDetailPage({
     );
   }
 
-  const indexItem = await getMinutesIndexItem(city, id);
+  // minutes/index.json を公開台帳とし、保管中・隔離中のJSONを直URLで公開しない。
+  const indexItem = await getPublishedMinutesIndexItem(city, id);
+  if (!indexItem) notFound();
   const localSessionCandidate = getLocalSessionCandidate(city, id);
   if (localSessionCandidate && isLargeLocalSession(localSessionCandidate)) {
     return (

@@ -1,0 +1,24 @@
+{
+  "updated_at": "2026-08-23",
+  "records": [
+    {
+      "status": "excluded_from_public_index",
+      "reason": "source_page_year_mismatch",
+      "stored_year": "2024",
+      "actual_year": "2010",
+      "source_page_url": "https://www.town.tsubetsu.hokkaido.jp/choseijoho/tsubetsugikai/2/1788.html",
+      "council_ids": [
+        20241005,
+        20241007,
+        20241010,
+        20242001,
+        20242003,
+        20242004,
+        20242006,
+        20242008,
+        20242009
+      ],
+      "note": "本文見出しが平成22年であることを確認。raw・enriched・segmentsは再調査用に保管し、公開台帳から除外した。"
+    }
+  ]
+}

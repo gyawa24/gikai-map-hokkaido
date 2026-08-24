@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-23T11:24:35.817Z",
+  "slug": "biratori",
+  "reason": "PDF日付だけで集約されていた複数の定例会・臨時会を、本文冒頭の公式回次で分割する",
+  "source_index": "minutes/index.json",
+  "source_files": [
+    "minutes/20241099.json",
+    "minutes/20242099.json",
+    "minutes/20251099.json",
+    "minutes/20252099.json"
+  ],
+  "mappings": [
+    {
+      "old_council_id": 20241099,
+      "new_council_ids": [
+        20241003,
+        20241006,
+        20241009
+      ]
+    },
+    {
+      "old_council_id": 20242099,
+      "new_council_ids": [
+        20242004,
+        20242005,
+        20242007,
+        20242008
+      ]
+    },
+    {
+      "old_council_id": 20251099,
+      "new_council_ids": [
+        20251003,
+        20251006,
+        20251008,
+        20251010
+      ]
+    },
+    {
+      "old_council_id": 20252099,
+      "new_council_ids": [
+        20252001,
+        20252002,
+        20252004,
+        20252005,
+        20252007,
+        20252009
+      ]
+    }
+  ],
+  "schedule_mappings": [
+    {
+      "source_council_id": 20241099,
+      "source_schedule_id": 1,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R060626teireikai.pdf",
+      "target_council_id": 20241003,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241099,
+      "source_schedule_id": 2,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R060919teireikai.pdf",
+      "target_council_id": 20241006,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241099,
+      "source_schedule_id": 3,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R060920teireikai.pdf",
+      "target_council_id": 20241006,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20241099,
+      "source_schedule_id": 4,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R061218teireikai.pdf",
+      "target_council_id": 20241009,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20241099,
+      "source_schedule_id": 5,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R061219teireikai.pdf",
+      "target_council_id": 20241009,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20242099,
+      "source_schedule_id": 1,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R060704rinjikai.pdf",
+      "target_council_id": 20242004,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20242099,
+      "source_schedule_id": 2,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R060807rinjikai.pdf",
+      "target_council_id": 20242005,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20242099,
+      "source_schedule_id": 3,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R061015rinjikai.pdf",
+      "target_council_id": 20242007,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20242099,
+      "source_schedule_id": 4,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R061129rinjikai.pdf",
+      "target_council_id": 20242008,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 1,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070305teireikai.pdf",
+      "target_council_id": 20251003,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 2,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070306teireikai.pdf",
+      "target_council_id": 20251003,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 3,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070310teireikai.pdf",
+      "target_council_id": 20251003,
+      "target_schedule_id": 3
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 4,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070313teireikai.pdf",
+      "target_council_id": 20251003,
+      "target_schedule_id": 4
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 5,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070619teireikai.pdf",
+      "target_council_id": 20251006,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 6,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070620teireikai.pdf",
+      "target_council_id": 20251006,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 7,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070918teireikai.pdf",
+      "target_council_id": 20251008,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 8,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070919teireikai.pdf",
+      "target_council_id": 20251008,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 9,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R071217teireikai.pdf",
+      "target_council_id": 20251010,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20251099,
+      "source_schedule_id": 10,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R071218teireikai.pdf",
+      "target_council_id": 20251010,
+      "target_schedule_id": 2
+    },
+    {
+      "source_council_id": 20252099,
+      "source_schedule_id": 1,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070115rinjikai.pdf",
+      "target_council_id": 20252001,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20252099,
+      "source_schedule_id": 2,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070129rinjikai.pdf",
+      "target_council_id": 20252002,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20252099,
+      "source_schedule_id": 3,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070430rinjikai.pdf",
+      "target_council_id": 20252004,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20252099,
+      "source_schedule_id": 4,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070530rinjikai.pdf",
+      "target_council_id": 20252005,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20252099,
+      "source_schedule_id": 5,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R070807rinjikai.pdf",
+      "target_council_id": 20252007,
+      "target_schedule_id": 1
+    },
+    {
+      "source_council_id": 20252099,
+      "source_schedule_id": 6,
+      "source_url": "https://www.town.biratori.hokkaido.jp/material/files/group/13/R071126rinjikai.pdf",
+      "target_council_id": 20252009,
+      "target_schedule_id": 1
+    }
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "schedule_count": 25,
+    "source_minute_payload_hashes": [
+      "03727832bb27c7aabd1745c8e3d06d3d593d7540f06f3c8eeb4f4764b0af7910",
+      "0a261d6679398f9c84ed6e59be33f08c565af0d4470b7ad06f61c8bcfe624aaa",
+      "0fcf6dd52b55e3791b2c30bad823523a489b462e2eceee9a43da8d23b216dd9d",
+      "266c23d4981b45a87633cefe3005d490779066af1b66ad690ef26996f411b763",
+      "29543191c7ef2525fe9db044d750b6c254403dd7006f7c41678b36300935b281",
+      "4694c2d491dd61a6c8006486176287370807bb741bed679f2266c20ed4b355bf",
+      "4ae1042811e9cc421abf0eb1179e24879ce2774a30755156aef59d3eca497d53",
+      "4db15fe3e606b2913f01be45e95f6571db441d44821c8632c96d179eb66da540",
+      "5103d6ccab257126da2244a2bbceed7e30eaf7ca129cfcdf7c40f96f2b5e64bc",
+      "539fab10340daa194e6a85318738e87662f478cac21cc6e67a8a0eb7243cf0f7",
+      "5e6c9ba593472d42d0f6cb1e72fcdbbf65b934aa91a24f6dfbf5dad6b15a51e8",
+      "5fcac0d57770156132f1f2c473d8409689269ec023ca8190b7dd6989dfcb78a2",
+      "71b75ee8a559c8ab666621dd6727c0870850781aede8c5d4945ab58bd43e43bd",
+      "80ecfa32f3f0d91b0c55c57b1935c108a90eead0ed4df5f474fe0118cf7ee53a",
+      "85fd752ed37f675fd5a2824d785d894f58958b7891aff81aae41d889810f4aa6",
+      "8dea0103a8416c359eadd0d9f95939644521fb0160a188b51f1c1da19c7ceaac",
+      "916de2d98b39fea576eff477f6d68a2cf95a4071aa4d1d78308bcef64b16f294",
+      "9af50194d36c6b59e63b3236a52b7435bae38bb3b877b3b497d0213c650f4e8c",
+      "cc09219481a412be8182284c61c38076d530a8cc5934ac4dba086dd06bb1a75e",
+      "cf1d1ac427be3aa691f707001a0404a93926b36f49299785f264d9b85be3c75d",
+      "e0584977bb8efaffc58ed6c47880a8affb9342a6ee923e85ab31c87eabc47188",
+      "e0c1efd3b2dac2e13a802999710657778000b43ea3729c3f629f587b74d17af4",
+      "f14dd27bec891fb6b69de300f2fc35f1a647077682b1618fe2f7d7628d9bcc3c",
+      "fe255c85ebf3a9e493280d51e790618aa45af941ed3d6c6a96d159f2e6170229",
+      "fe796bc59539e5bcec921c3e61a270f9840c772a737625e3e8751d69ecd2bf63"
+    ],
+    "target_minute_payload_hashes": [
+      "03727832bb27c7aabd1745c8e3d06d3d593d7540f06f3c8eeb4f4764b0af7910",
+      "0a261d6679398f9c84ed6e59be33f08c565af0d4470b7ad06f61c8bcfe624aaa",
+      "0fcf6dd52b55e3791b2c30bad823523a489b462e2eceee9a43da8d23b216dd9d",
+      "266c23d4981b45a87633cefe3005d490779066af1b66ad690ef26996f411b763",
+      "29543191c7ef2525fe9db044d750b6c254403dd7006f7c41678b36300935b281",
+      "4694c2d491dd61a6c8006486176287370807bb741bed679f2266c20ed4b355bf",
+      "4ae1042811e9cc421abf0eb1179e24879ce2774a30755156aef59d3eca497d53",
+      "4db15fe3e606b2913f01be45e95f6571db441d44821c8632c96d179eb66da540",
+      "5103d6ccab257126da2244a2bbceed7e30eaf7ca129cfcdf7c40f96f2b5e64bc",
+      "539fab10340daa194e6a85318738e87662f478cac21cc6e67a8a0eb7243cf0f7",
+      "5e6c9ba593472d42d0f6cb1e72fcdbbf65b934aa91a24f6dfbf5dad6b15a51e8",
+      "5fcac0d57770156132f1f2c473d8409689269ec023ca8190b7dd6989dfcb78a2",
+      "71b75ee8a559c8ab666621dd6727c0870850781aede8c5d4945ab58bd43e43bd",
+      "80ecfa32f3f0d91b0c55c57b1935c108a90eead0ed4df5f474fe0118cf7ee53a",
+      "85fd752ed37f675fd5a2824d785d894f58958b7891aff81aae41d889810f4aa6",
+      "8dea0103a8416c359eadd0d9f95939644521fb0160a188b51f1c1da19c7ceaac",
+      "916de2d98b39fea576eff477f6d68a2cf95a4071aa4d1d78308bcef64b16f294",
+      "9af50194d36c6b59e63b3236a52b7435bae38bb3b877b3b497d0213c650f4e8c",
+      "cc09219481a412be8182284c61c38076d530a8cc5934ac4dba086dd06bb1a75e",
+      "cf1d1ac427be3aa691f707001a0404a93926b36f49299785f264d9b85be3c75d",
+      "e0584977bb8efaffc58ed6c47880a8affb9342a6ee923e85ab31c87eabc47188",
+      "e0c1efd3b2dac2e13a802999710657778000b43ea3729c3f629f587b74d17af4",
+      "f14dd27bec891fb6b69de300f2fc35f1a647077682b1618fe2f7d7628d9bcc3c",
+      "fe255c85ebf3a9e493280d51e790618aa45af941ed3d6c6a96d159f2e6170229",
+      "fe796bc59539e5bcec921c3e61a270f9840c772a737625e3e8751d69ecd2bf63"
+    ],
+    "minute_text_modified": false
+  }
+}

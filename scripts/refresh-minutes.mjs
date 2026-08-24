@@ -147,6 +147,11 @@ function csvToList(raw) {
     .filter(Boolean);
 }
 
+export function defaultTargetYears(referenceDate = new Date()) {
+  const currentYear = referenceDate.getFullYear();
+  return [currentYear - 2, currentYear - 1, currentYear].map(String);
+}
+
 function parsePositiveInteger(raw, flagName) {
   const value = Number.parseInt(String(raw), 10);
   if (!Number.isInteger(value) || value < 1 || String(value) !== String(raw).trim()) {
@@ -372,7 +377,7 @@ async function main() {
     return;
   }
 
-  const years = options.years ? csvToList(options.years) : ["2024", "2025"];
+  const years = options.years ? csvToList(options.years) : defaultTargetYears();
   if (years.length === 0) {
     throw new Error("years is empty");
   }
@@ -414,6 +419,11 @@ async function main() {
       if (options.force) args.push("--force");
       await run(command, args, options.dryRun);
       await mergeMinutesIndex(slug, previousMinutesIndexes.get(slug), options.dryRun);
+      await run(
+        "node",
+        [path.join(REPO_ROOT, "scripts", "backfill-minutes-index-dates.mjs"), "--slug", slug],
+        options.dryRun,
+      );
       return { slug, ok: true };
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
@@ -457,7 +467,9 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exit(1);
+  });
+}

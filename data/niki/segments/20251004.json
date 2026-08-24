@@ -30,6 +30,29 @@
     "schedule_id": 1,
     "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
     "date": "2025-12-18",
+    "speaker": "委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告のとおり、議事を執り進めることにご異議ありませんか。\n〔 「異議なし」と呼ぶ者あり 〕",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-006"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-003",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
     "speaker": "佐藤聖一郎町長",
     "speaker_role": "答弁",
     "is_procedural": false,
@@ -41,12 +64,12 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-011"
+        "1-inline-012"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-003",
+    "id": "niki-20251004-1-004",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -64,12 +87,12 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-013"
+        "1-inline-014"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-004",
+    "id": "niki-20251004-1-005",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -87,12 +110,12 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-016"
+        "1-inline-017"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-005",
+    "id": "niki-20251004-1-006",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -110,12 +133,173 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-032"
+        "1-inline-033"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-006",
+    "id": "niki-20251004-1-007",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "新見信財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "承認第１号、令和７年度余市郡仁木町一般会計補正予算（専決第２号）について、\nご説明申し上げます。本補正予算につきましては、令和７年10月23日に専決処分を行っております。\n１ページをお開き願います。第１表 歳入歳出予算補正、歳入でございます。19款．繰入金を補正いた\nしまして、歳入合計額に補正額91万8000円を追加し、補正後の合計を52億1098万円とするものでございま\nす。\n２ページをお開き願います。歳出でございます。２款．総務費を補正いたしまして、歳出合計額に91万\n8000円を追加し、補正後の合計を52億1098万円とするものでございます。\n３ページ、歳入歳出補正予算事項別明細書、歳入でございます。１款．町税から22款．町債まで全ての科\n目を載せたものでございます。\n４ページをお開き願います。歳出でございます。１款．議会費から14款．予備費まで全ての科目を載せ\nたもので、右側の財源内訳でございますが、一般財源が91万8000円の増となっております。\n５ページをお開き願います。歳入でございます。19款．繰入金、１項．基金繰入金、１目．財政調整基金\n繰入金につきましては91万8000円を繰入れしたものでございます。\n７ページをお開き願います。歳出でございます。２款．総務費、１項．総務管理費、４目．財産管理費に\nつきましては、庁舎複合施設の暖房空調機器の修繕経費として91万8000円を追加したものでございます。\n以上で承認第１号、一般会計補正予算（専決第２号）の説明を終わります。",
+    "text_length": 651,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-034"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-008",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）それでは予算書の７ページをお願いします。只今の説明で、今回の修繕については、暖\n房空調設備等に係る修繕ということでございますけれども、この内容についてもう少し具体的に説明をお\n願いします。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-036"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-009",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）わかりました。\nそれで、役場庁舎等の複合施設も建設してからですね、もう26年も経つということで、最近、冷暖房、空\n調等に故障が多いのかなということで、ここ最近の修繕も含めた履歴等について、お伺いしたいと思いま\nす。",
+    "text_length": 113,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-038"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-010",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）令和元年度にですね、役場庁舎等複合施設の長寿命化に係る計画書をいただいている\nんですけれども、この中で冷暖房については、令和３年度と令和４年度に改修を行うんだということで計\n画に載っているんですが、これは実施されているんでしょうか。",
+    "text_length": 122,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-040"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-011",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）今回の修繕は、これをやったことで、その辺は改善されたのではないでしょうか。",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-042"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-012",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）もう１点ですけれども、今後この計画表を見ますと、暖房関係が、2026年、来年です\nね。これ一応改修・修繕の計画があるんですが、これは実施する予定でしょうか。",
+    "text_length": 84,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-044"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-013",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）それでは、先日通告済みの、ヒグマ被害対策に係る猟友会への対応について、質問させ\nていただきます。\n令和７年現在、北海道のヒグマ出没状況は、都市部でも頻発しており、過去最多の件数となっています。\nヒグマはツキノワグマと比較して、一般的に攻撃的で警戒心が強いとされており、警戒や恐怖から人間を\n攻撃することもあります。本町では、鳥獣対策の実施に積極的に取り組むため、条例の定めるところによ\nり、鳥獣被害防止対策実施隊を設置し、隊員として北海道猟友会仁木支部の全会員が任命され、仁木町鳥\n獣被害防止計画に基づき、その任務に従事しています。近年、ヒグマ被害が増える中、多くの猟友会が高\n齢化や人手不足に直面しており、市町村が猟友会に対策を一任する仕組みの限界も指摘されています。猟\n友会は、農業被害の軽減や住民の安全確保、生態系の保全に貢献し、狩猟の健全な発展を支える上で不可\n欠です。そこで、ヒグマなど有害鳥獣対策を円滑に進めるため、猟友会への対応について、町長の見解を\n伺います。１点目、令和６年度及び令和７年度現在のヒグマなど有害鳥獣による被害状況と対策に従事す\nる猟友会の出動回数など、その対応状況は。２点目、ヒグマの出没・目撃の連絡があった場合、猟友会との\n調整など、どのような手順で対応しているのか。３点目、ヒグマの捕獲は、人命にも関わる非常に危険な\n作業であるが、安全を担保する捕獲対応マニュアル等の備えはあるのか。４点目、ヒグマなど有害鳥獣駆\n除を猟友会に依存している状況をどのように捉えているのか。５点目、今後、猟友会との連携をどのよう\nに強化し、安定的な捕獲体制を維持していくのか。以上５点について伺います。",
+    "text_length": 716,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-052"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-014",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -133,12 +317,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-050"
+        "1-inline-053"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-007",
+    "id": "niki-20251004-1-015",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）それでは再質問させていただきます。\n只今、ヒグマ被害対策に係る猟友会への対応について、町長より質問事項５点について、それぞれご答\n弁をいただきました。冒頭でもお話しさせていただきましたけれども、今年度は全道的にヒグマや鹿によ\nる被害が過去最高に上っており、特に農作物被害が目立っています。ヒグマの生息数が増えて人里に出没\nするケースも増え、人身被害が急増しております。仁木町内でも本年度は、先ほどのご答弁にあるように、\nヒグマの目撃情報や農作物被害報告が昨年を上回る可能性が高いと見込んでいるということでありますけ\nれども、幸い本町では、人身被害はないものの、今後、市街地付近に出没する可能性は否定できません。今\n般のヒグマによる被害状況を町長はどのように捉えているのか、伺いたいと思います。",
+    "text_length": 352,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-054"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-016",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -156,12 +363,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-052"
+        "1-inline-055"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-008",
+    "id": "niki-20251004-1-017",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）本当に近年のヒグマによる被害については、全国的に大きな問題になっています。そ\nこで只今町長より、今般のヒグマによる被害状況の把握と、今後の対応についてご答弁をいただきました\nけれども、昨年度から今年度にかけて、猟友会の出動回数も約７割がヒグマ関連の出動ですということで\n先ほどご答弁がありましたが、ヒグマの対応については、猟友会の支援がなければ難しいと思います。そ\nこで、猟友会の存在について、町長はどのように捉えているのか、お伺いしたいと思います。",
+    "text_length": 231,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-056"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-018",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -179,12 +409,81 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-054"
+        "1-inline-057"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-009",
+    "id": "niki-20251004-1-019",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）私もですね、最近毎日のようにテレビあるいは新聞等で報道されていまして、ヒグマ\nの被害状況など、それに対する猟友会の活動が報道されて、改めてその猟友会の存在の大きさを実感して\nいるところであります。ですから、次の質問にもそれを反映していきたいと思いますけれども、只今、町\n長の方からもお話がありましたように、猟友会の会員数の推移、これについては、過去の決算委員会等の\n資料を見ますと、令和２年度では11名であったものが、令和６年度現在では、昨年ですけれども22名に倍\n増しています。今般、多くの猟友会で会員数が減少する中で、本町では増加傾向にあるということは、近\n年町が進める狩猟免許取得補助事業の取組の効果によるものとして評価したいと思います。そこで、会員\n数22名のうち、散弾銃やライフル銃など、第一種狩猟免許を有する会員は今現在何名いらっしゃるのか、\nお伺いしたいと思います。",
+    "text_length": 396,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-058"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-020",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "浜野崇産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "只今のですね、第一種狩猟免許を有する会員は何名いるかということでございま\nすが、先ほど議員仰られたとおり、令和６年度時点22名中19名の方が第一種狩猟免許を取得されている方\nでございます。\nなおですね、令和７年11月末時点ではですね、会員数が29名となっておりまして、そのうち第一種狩猟\n免許を取得している方は24名という状況でございます。以上でございます。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-060"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-021",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）会員数がですね、令和６年度と比較して、令和７年度11月末では22名から29名に増え\nて、さらに狩猟の第一種免許を取得されている方が24名いるということは、非常に将来的には心強いです\nし、今後ともその勧誘活動に努めていただきたいと思います。\n関連の質問でございますけれども、一般的にベテランハンターというのは、銃を使って狩猟する場合、\n目安として10年以上、多様な獲物を捕獲した実績がある熟練ハンターを差すようですけれども、本町では、\n先ほどのご答弁でありましたように、ヒグマの猟銃による捕獲の熟練者はいないということでございます\nが、では免許を取得してから10年以上の経験のある会員は何名いらっしゃるのか、お伺いしたいと思いま\nす。",
+    "text_length": 322,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-061"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-022",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -202,12 +501,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-058"
+        "1-inline-062"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-010",
+    "id": "niki-20251004-1-023",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）経験数が浅い会員の方が相当数いらっしゃるかと思うんですが、それで、猟友会の会\n員の方皆さんに関連するんですけれども、猟友会の活動にはですね、安全装備や訓練が必要になると思い\nます。それでその対応についてはどのように対応されているのか、お伺いしたいと思います。",
+    "text_length": 135,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-063"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-024",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -225,12 +547,81 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-060"
+        "1-inline-064"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-011",
+    "id": "niki-20251004-1-025",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）わかりました。\n非常に危険な作業なので、やはりその辺の安全装備、あるいは訓練は必要になるかと思いますけれども、\n訓練については、自主的に猟友会の方で本来やはりやるべきものだと思いますし、支援できるものであれ\nば、町の方も支援していただきたいと思います。\nそれで、只今の安全に関してですね、関連しますので、ヒグマの捕獲について伺いますけれども、本町\nでは、ヒグマの捕獲は安全確保のため箱わなを使用した確保に留めているということで、ヒグマの捕獲活\n動には安全対策が必要なことから、町独自の捕獲に関する対応マニュアル等は策定していないが、関係法\n令等に基づいて安全確保に留意していると、ご答弁でありましたけれども、これらの安全対策について、\n猟友会とはどのように共有しているのか、伺いたいと思います。",
+    "text_length": 353,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-065"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-026",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "浜野崇産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "当然ですね、箱わな等の設置については、猟友会の有資格者が立ち会わなければ\nならない。また、責任者としてですね、箱わなの設置については猟友会のハンターがその対応に当たると\nいうことで、箱わなの設置については先ほど来、答弁で申し上げているとおりですね、いろいろ状況を鑑\nみてですね、周辺の地域だったり、人の出入りというか、どのぐらいの人流があるのかとかそういったこ\nとを綿密にですね、猟友会の狩猟免許取得者・ハンターと打ち合わせをした上で、どこにどのように設置\nするか、又は餌はどういったものが良いのか、そういったことでいろいろとですね、町と猟友会の会員と\nですね、綿密な打ち合わせをした上で設置を行っている状況でございます。以上です。",
+    "text_length": 316,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-066"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-027",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）その際ですね、箱わなを設置するということは、そこに熊が出没していますよという\nことでのお話ですから、その前提で箱わなを設置します。箱わなを設置する際、熊が出てきたらどうする\nんでしょうか。これは非常に危険だと思うんですね。ないとも言えないと思います。課長の方から仰った\nように、猟友会とも打ち合わせしながら、一緒に同行をしていただきながら当然設置されていると思うの\nですが、今まではなかったから良いんですけれども、その辺の対策・対応についてはどのようにお考えで\nしょうか。",
+    "text_length": 242,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-067"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-028",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -248,12 +639,81 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-064"
+        "1-inline-068"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-012",
+    "id": "niki-20251004-1-029",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）十分安全に留意してほしいと思います。\nそれで、警察がですね、例えば同行するという場合は、どんな場合なんでしょうか。",
+    "text_length": 63,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-070"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-030",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "浜野崇産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "通報が入った場合ですね、町に入る場合と警察に入る場合がございます。警察に\n入る場合は当然警察も立ち会うんですが、町に入る場合、場所とかですね、環境、例えば住宅が近かった\nり、公共施設、人が集まるところに近いというような状況にはですね、警察とも情報を共有した上でです\nね、一緒に現場の方を見に行くというようなことをしておりますが、全てですね、警察に立ち会ってもら\nうということはございませんので、警察の状況としては以上のような形で対応していただいています。",
+    "text_length": 227,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-071"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-031",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）猟友会の方に聞いた話なんですけれどもね、やはり箱わなに捕獲した熊でもですね、\n相当怖いそうです。やはりそれを駆除して一発命中すればいいんでしょうけれども、そうしない場合は本\n当に、これ駆除、死んだのかなというですね、その確認が非常に怖いそうです。ですからその辺もですね、\nやはり当然町の職員も、町長ね、一緒に同行するわけですから、猟友会だけが被害に遭うわけではないで\nすから、その実施隊の中には、副会長が課長になっていますのでね、確か。それでそれも十分留意してで\nすね、その安全対策には万全を期すようにですね、町長の方からもですね、しっかりその辺は周知してほ\nしいと思います。\n次にですね、猟友会の抱える課題の一つに、活動費や報酬に関する問題があります。活動費や報酬につ\nいては、猟友会の皆さんもそのボランティアによる社会貢献の要素が強いということで、なかなかその公\nの場ではお金のことは言いづらいという部分もあるようです。先ほど来言いましたように本当にこう危険\nが伴う活動であって、しかもその掛かる経費の自己負担も多いというんですね。本音では報償費等を上げ\nてほしいという意向もあるようです。そこで、報酬等の見直しについて、町長の見解を伺いたいと思いま\nす。",
+    "text_length": 536,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-072"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-032",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -271,12 +731,81 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-068"
+        "1-inline-073"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-013",
+    "id": "niki-20251004-1-033",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）そこでですね、やはり有害鳥獣対策を推進する上で、町と猟友会の連携がこれ非常に\n先ほど来、答弁にありますように、これは非常に重要になってきます。そこで町は猟友会と定期的にミー\nティングなど、行われているのか、そして意見交換など、されているのか伺いたいと思います。",
+    "text_length": 136,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-074"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-034",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "浜野崇産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "定例的な会議というのは設けてございませんけれども、やはり先ほど来、お伝え\n- 21 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nしているとおりですね、ヒグマ等の出没に対しましてはですね、支部長、副支部長にすぐに連絡を入れて\nですね、どういった対応をすればいいのかというような連携をですね、密に取っておりますので、その辺\nの連携は十分とれていると認識しております。以上です。",
+    "text_length": 193,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-075"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-035",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）先ほど言ったようにですね、報酬等のお話もさせていただきましたけれども、やはり\nそういった本音で話し合える場、猟友会と本音で話し合える場が私は必要なのではないかと思うんですね。\nですから、その辺も十分検討されてですね、適宜、特に今般、これだけ熊の被害も多いわけですから、今年\nの漢字も熊です。それだけ今年は熊に悩まされた年だと思います。ですから、その辺はしっかり構築して\nほしいなと思います。\nそうすることで、次の質問なんですが、これ、いろいろ報償費の他にもいろんな今後の先ほど町長言っ\nたように担い手の関係も出てきますし、いかにそれを解消していくか、今抱えてる問題を。それは町長ど\nのように対応していくのか、町長のお考えを伺いたいと思います。",
+    "text_length": 327,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-076"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-036",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -294,35 +823,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-072"
+        "1-inline-077"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-014",
+    "id": "niki-20251004-1-037",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
     "schedule_id": 1,
     "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
     "date": "2025-12-18",
-    "speaker": "佐藤秀教議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐藤 秀教",
     "member_faction": "",
-    "text": "町長に先に答弁されましたので、今、ガバメントハンターについてちょっとお聞きし\nようと思っていたんですが、今後人口減少に伴ってですね、猟友会の会員数も減少することも懸念されま\nす。そこで猟友会に依存するだけではなく、狩猟免許を持つ自治体職員、いわゆるガバメントハンターを\n育成・配置する動きも出てきています。このガバメントハンターの導入については、今町長が仰ったとお\nりですが、今は良いんです。将来的に渡って町長はどうお考えなのか、ちょっとお伺いしたいと思います。",
-    "text_length": 231,
+    "text": "（佐藤秀教）町長に先に答弁されましたので、今、ガバメントハンターについてちょっとお聞きし\nようと思っていたんですが、今後人口減少に伴ってですね、猟友会の会員数も減少することも懸念されま\nす。そこで猟友会に依存するだけではなく、狩猟免許を持つ自治体職員、いわゆるガバメントハンターを\n育成・配置する動きも出てきています。このガバメントハンターの導入については、今町長が仰ったとお\nりですが、今は良いんです。将来的に渡って町長はどうお考えなのか、ちょっとお伺いしたいと思います。",
+    "text_length": 237,
     "source": {
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-073"
+        "1-inline-078"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-015",
+    "id": "niki-20251004-1-038",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -340,12 +869,58 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-074"
+        "1-inline-079"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-016",
+    "id": "niki-20251004-1-039",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）わかりました。\nあと５分ということなので、このガバメントハンターについてはある猟友会の会長さんが言っていまし\nたけれども、やはり小さい規模の自治体は難しいのではないかと。やはり町長が仰ったように広域的にそ\nういう方を雇って、それを皆さんで共有しながらやる方法が一番良いのではないかと、財政的にもという\n話をしていました。私もそのとおりだと思いますね。ですから当面は猟友会の方と連携を取ってやってほ\nしいと思います。\nそれで最後に、これはちょっとかなりハードルの高いお話でございますけれども、先ほど、熊の個体調\n査の話も出ていましたけれども、今はドローンによる個体調査というものもぼちぼちやられているような\nお話が出てきています。まず、仁木町独自で個体調査なるものをしているのか、しているとすれば将来的\nにドローンを導入して、今すぐではなくてもですね、そういう検討もしていく必要があるのではないかと\n思いますけれども、町長のお考えをお伺いしたいと思います。",
+    "text_length": 433,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-080"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-040",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "浜野崇産業課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "調査の方についてお答えさせていただきますが、まず、結論から申しましてです\nね、ヒグマの出没地点については地図上に落としてですね、どこに何頭出たということは押さえているん\nですが、もともとどこから来て、どこに巣があってとかそういうような調査までは行っていないのが現状\nでございます。以上です。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-081"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-041",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -363,35 +938,58 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-077"
+        "1-inline-082"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-017",
+    "id": "niki-20251004-1-042",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
     "schedule_id": 1,
     "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
     "date": "2025-12-18",
-    "speaker": "佐藤秀教議員",
+    "speaker": "４番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "佐藤 秀教",
     "member_faction": "",
-    "text": "ドローンの導入活用については、町長が仰るようにですね、これも広域的に対策を講\nじないと、熊もどこから来たかの色分けがないですから、わかりませんものね。ですから、そういうもの\nも含めて広域的にこれはやっていく部分、対応していく部分なのかなと私自身も思っていますし、あるい\nは道の方の取組も当然出てくると思いますし、それらも連携しながら、ぜひ必要であればドローンを町と\nして活用して、あるいは広域的に活用して、その辺の検討をお願いしたいと思います。\nいずれにしても、今後とも熊あるいは鹿の問題もそうですけれども、猟友会の活動の支援、それらを通\nじて連携を図っていただいて、町民の安全の確保と農作物への被害の軽減に今後も努めていただきたいと\n思います。以上で質問を終わります。ありがとうございました。",
-    "text_length": 347,
+    "text": "（佐藤秀教）ドローンの導入活用については、町長が仰るようにですね、これも広域的に対策を講\nじないと、熊もどこから来たかの色分けがないですから、わかりませんものね。ですから、そういうもの\nも含めて広域的にこれはやっていく部分、対応していく部分なのかなと私自身も思っていますし、あるい\nは道の方の取組も当然出てくると思いますし、それらも連携しながら、ぜひ必要であればドローンを町と\nして活用して、あるいは広域的に活用して、その辺の検討をお願いしたいと思います。\nいずれにしても、今後とも熊あるいは鹿の問題もそうですけれども、猟友会の活動の支援、それらを通\nじて連携を図っていただいて、町民の安全の確保と農作物への被害の軽減に今後も努めていただきたいと\n思います。以上で質問を終わります。ありがとうございました。",
+    "text_length": 353,
     "source": {
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-078"
+        "1-inline-083"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-018",
+    "id": "niki-20251004-1-043",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）先に通告いたしました、町営墓地の現状と新たな取組は。\n第６期仁木町総合計画において、合葬墓の設置数を令和12年度までに１基と目標指標に設定しており、\nかつ、町民アンケートも実施し、町としても調査を進めていることと思います。\n本年10月、千葉県四街道市において、合葬式墓地に係る総務経済常任委員会先進地研修視察を実施し、\n核家族化や少子高齢化の進展に伴い、墓地の継承者がいない方でも安心して利用可能な新たな方式の墓地\nに対する需要は、人口の多少に関係なく、合葬墓の設置は急務であることを実感しました。\n本町の墓地は、町内５か所に点在し、墓地の管理は町が実施しております。墓地の使用許可や設置区画\nも条例等で定められていますが、近年、墓地の区画使用権利は祭祀承継者が絶たれている状況が見受けら\nれ、今後の対応策が求められています。町として、継承されていない墓地の実態調査等の状況と今後の対\n策は考えているのか。また、令和12年度までに１基の合葬墓を設置する目標指標を掲げていますが、実際\nにお墓の形式を、通常合葬又は直接合葬のどちらで考えているのか。町長の見解をお伺いいたします。",
+    "text_length": 494,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-085"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-044",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -409,35 +1007,244 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-080"
+        "1-inline-086"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-019",
+    "id": "niki-20251004-1-045",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
     "schedule_id": 1,
     "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
     "date": "2025-12-18",
-    "speaker": "野崎明廣議員",
+    "speaker": "５番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "野崎 明廣",
     "member_faction": "",
-    "text": "この合葬墓に対しては、以前にも同僚議員が２年ほど前に質問をされておりますが、\n調査が進んでいると思います。\n再質問をさせていただきます。町内墓地の５か所の状況を伺いたいと思いますが、墓地管理対応はどの\nようにされているのか、墓地内の雑草、立木等々の整備は依頼をされているのか、行っているのかその辺\nお伺いしたいと思います。",
-    "text_length": 161,
+    "text": "（野崎明廣）この合葬墓に対しては、以前にも同僚議員が２年ほど前に質問をされておりますが、\n調査が進んでいると思います。\n再質問をさせていただきます。町内墓地の５か所の状況を伺いたいと思いますが、墓地管理対応はどの\nようにされているのか、墓地内の雑草、立木等々の整備は依頼をされているのか、行っているのかその辺\nお伺いしたいと思います。",
+    "text_length": 167,
     "source": {
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-081"
+        "1-inline-087"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-020",
+    "id": "niki-20251004-1-046",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）答弁をいただいた中で、この現状を見る中で、地域的に墓地の敷地周りに接するとこ\nろは私有地となっていると思いますけれども、この立木としては、もう非常にこう伸び過ぎているという。\nこれがもし、お墓にでも倒れて被害を及ぼすおそれがちょっと見られるのかなという感じも受けたので、\nその処理や判断は町がするのか依頼されている方がされるのか、その辺をお伺いしたいと思います。",
+    "text_length": 187,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-089"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-047",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）説明をいただきましたけれども、この周りの立木においてはちょっと危険性があると\nいうことで、これは所有者が伐採をしてくれるのか、やはり町がお願いをして切らせてもらうのか、その\n辺の対応としてはどうなのか、お伺いしたいと思います。",
+    "text_length": 119,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-091"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-048",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）ありがとうございます。\nこの辺においてはケースバイケースということですので、町としても確認した上で、やはり危険性を及\nぼすかもという点においては、やはり早めな確認・処置をしていただければという感じもしております。\n各地域のお墓において引き継がれる方が見受けられない。非常に町としても苦慮されているとのことです\nが、地域的には何基ほどあるのか、実態をつかんでいるのか、お伺いしたいと思います。",
+    "text_length": 201,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-093"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-049",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）説明をいただいた中では、法的には今のところ、そういうようなところは見受けられ\nないというような判断とされていますが、今後も看板なども設置されていくというお話もされております\n- 26 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nが、その看板設置ということに対しては、やはりそういう20年近くお参りがされていないというようなと\nころは、多少なりとも見受けられているのかなという感じがしますけれども、実際にお墓なのか、また、\nそういうただ置かれている墓誌系のものなのか、そういうものに対しての確認もきちんとされているのか\nどうか、お伺いしたいと思います。",
+    "text_length": 288,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-095"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-050",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）いろいろな農耕馬とかそういうものも埋葬されているのではないかというお話ですけ\nれども、町営墓地として、古いお墓ほどこういうような実態が起きている。引き継ぎが見受けられないよ\nうですが、近年そのようなことは全く起きていないということですが、実際にお墓があって、お寺さん、\n檀家さんのつながりも絶たれてしまって、全く分からないところが点在するのかどうか、お伺いをしたい\nと思います。",
+    "text_length": 195,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-097"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-051",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）古い墓地においては、把握できていないという、誰のものなのかも分からないという\n点が見受けられるということですが、町営墓地は約970基ほどのお墓があると伺っています。今後、継承す\nる手続をされていない、また高齢でできない方の対応としてどのようにされていくのか、お伺いしたいと\n思います。",
+    "text_length": 148,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-099"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-052",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）ありがとうございます。\n今回、アンケート調査を踏まえ、合葬墓は必要ですと答えられた方が60％、その中で引き継ぐ方がおら\nれないなどの回答をされています。今後さらなる各地域の区画、合葬墓管理対応が今後求められると思わ\nれますが、町の職員として対応が可能な範囲なのか、また指定管理に体制を進めていくのか、その辺をお\n伺いしたいと思います。",
+    "text_length": 173,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-101"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-053",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）町として直営で管理していくという方向性が持たれているということですが、この町\n営合葬墓の設置として、新たな用地、この選択をされているところがあるのか、又は駐車場も含まれた考\nえまでされているのか、その辺をお伺いしたいと思います。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-103"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-054",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）仁木の墓地内の敷地ということですが、仁木の墓地内の敷地となると駐車場も整備さ\nれている場所となると、火葬場の周辺という、空き地も考えられているのかなという感じもしますけれど\nも、駐車場のすぐ下側のちょっと段差が付いているんですけれども、あの場所においては、もともと火葬\n場の跡地であったのではないかなと思われますが、用途としては、そこが合葬墓地として利用する可能性\nはあるのかどうか、お伺いしたいと思います。\n（野崎明廣）いろいろ変更、墓地に変更されたり、駐車場の周りについてもいろいろ調査をされて\nいるということですが、現在の駐車場用地として、十分間に合う部分の駐車場なのかなという、ちょっと\n心配もありますけれども、その辺は今後の調査の中で車が駐まっても十分利用できるという形の中で考え\nていただきたいと思います。\nこの町営合葬墓として、先ほども直接合葬墓の構想のお考えですが、直接合葬墓とするか、専用の納骨\n袋に収め埋葬する方法とされるのか、今後の検討とされるということですが、今回の研修地においても故\n人の埋葬を配慮された納骨袋に収める新たな方法として取り組まれておりましたので、その辺、前向きな\n調査・検討をしていただきたいと思いますが、その辺いかがでしょうか。\n（野崎明廣）ぜひとも、今新しいところではそういうような配慮をされて、新たな埋骨方法をされ\nているという方式がありますので、その辺、十分酌み取っていただければという思いでおります。\n最後になりますけれども、合葬墓、継承されていないお墓、無縁仏の対応として町長にちょっとお伺い\nをいたしますが、合葬墓は令和12年度の計画となっておりますが、これを１年でも２年でも早めに着手す\nるお考えがあるかどうか。さらに長年継承されていないお墓の対応は、将来的に周りのお墓に対して配慮\nも必要ではないかなという感じがしますので、その辺のお考えをお伺いしたいと思います。",
+    "text_length": 818,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-105",
+        "1-inline-106",
+        "1-inline-107"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-055",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -455,12 +1262,58 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-102"
+        "1-inline-108"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-021",
+    "id": "niki-20251004-1-056",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "５番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "野崎 明廣",
+    "member_faction": "",
+    "text": "（野崎明廣）ありがとうございます。\n少しでも町民のアンケートを重視した中で、少しでも早く取り組んでいただきたい点と、また敷地、墓\n地の場所という点については早めの取組をしていただきたいなという感じがしていますので、何とぞ、今\nまで住んでおられた方々のお墓ということで、配慮をしていただければという感じがします。以上で終わ\nります。ありがとうございました。",
+    "text_length": 177,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-109"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-057",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）私からは、待機児童対策について、質問させていただきたいと思います。\n第６期総合計画では、「町民に健康と安心を」を政策の目標に、少子高齢化社会が進む中で、安心して子\nどもを産み、健やかに育てることができる環境づくりを図るため、必要な支援が切れ目なく届く体制づく\nりを推進しております。本町の子育て環境は、日々改善されていることを実感しておりますが、子育て支\n援をさらに拡充し、「仁木町なら安心して子育てができる」と思ってもらえるような取組が必要であると考\nえます。子育てを取り巻く環境は、近年急速な変化を遂げており、核家族化・共働き増加によって、保育需\n要が高まっております。その中で問題になるのが待機児童問題です。待機児童問題の解消こそ安心して子\n育てができ、子どもが健やかに安心して育つまちづくりを実現でき、第一に取り組むべきことであると考\nえます。\nそこで、子育て世代の代表として、次の事項についてお伺いします。１．令和７年12月１日現在の年齢\n別入所児童数は。２．待機児童の年齢別児童数は。３．待機児童の解消に向け、どのような対策を講じてい\nるのか。お答えをお願いします。",
+    "text_length": 495,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-112"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-058",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -478,35 +1331,127 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-106"
+        "1-inline-113"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-022",
+    "id": "niki-20251004-1-059",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
     "schedule_id": 1,
     "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
     "date": "2025-12-18",
-    "speaker": "前田春奈議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "前田 春奈",
     "member_faction": "",
-    "text": "今の町長のご回答から現在待機児童が５人いるということで、人材の確保の目処が立\nっているということで今回については、待機児童の解消がされるということで理解をいたしました。\nそれでは再質問させていただきます。今回新たに採用された方について、にき保育園で働くことを選ん\nでいただいた理由は把握されていますでしょうか。というのもですね、現在全国的な保育士不足の中で、\nお隣の余市町でもたくさんの待機児童が出ていると聞いております。余市町でも保育士は引く手あまただ\nと思いますが、その中でもにき保育園を選ばれた理由をぜひ知りたいのですが、わかる範囲で教えていた\nだけますでしょうか。",
-    "text_length": 286,
+    "text": "（前田春奈）今の町長のご回答から現在待機児童が５人いるということで、人材の確保の目処が立\nっているということで今回については、待機児童の解消がされるということで理解をいたしました。\nそれでは再質問させていただきます。今回新たに採用された方について、にき保育園で働くことを選ん\nでいただいた理由は把握されていますでしょうか。というのもですね、現在全国的な保育士不足の中で、\nお隣の余市町でもたくさんの待機児童が出ていると聞いております。余市町でも保育士は引く手あまただ\nと思いますが、その中でもにき保育園を選ばれた理由をぜひ知りたいのですが、わかる範囲で教えていた\nだけますでしょうか。",
+    "text_length": 292,
     "source": {
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-107"
+        "1-inline-114"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-023",
+    "id": "niki-20251004-1-060",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在ですね、にき保育園を運営いただいている、よいち福祉会による処遇面の充\n実や働きやすい環境づくりを含めまして、長年地域福祉を担っていただきました法人の運営体制そのもの\nが安心感につながっているものと考えてございます。また、令和６年から供用開始しております、仁木町\nすこやか子育て支援センターの新しい施設によりまして、ハード面での環境が充実したことや、本町の移\n住対策や子育て施策といった総合的な魅力が選択につながったものと考えているところでございます。以\n上でございます。",
+    "text_length": 237,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-115"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-061",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）只今の回答で、よいち福祉会が働きやすい環境づくりだったりとかをしていたり、ハ\nードの整備、きれいなところで働けるというところが魅力であるということで理解いたしました。これは\nとてもすばらしいことでありまして、よいち福祉会の方の努力もありますし、仁木町でそういうハード面\nを整えたという一つの成果でもあると思うんですけれども、ただ今回、保育士不足による待機児童が発生\n- 31 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nしている事実があるので更なる人材採用への取組が必要だと強く感じております。現在、よいち福祉会に\n委託はしていると思いますが、町の一助が絶対に必要だと感じております。なので、人材確保についてよ\nいち福祉会と更に強い連携が必要だと思うんですけれども、定期的に打ち合わせだったりとか、そういう\n情報交換というのはされているのでしょうか。また、されているのであればどのくらいの頻度でされてい\nるのか教えてください。",
+    "text_length": 426,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-116"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-062",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "よいち福祉会との連携といいますか、情報交換の状況ですが、そういった情報交\n換会というような定期的なものではございませんが、随時ですね、現在保育いただいている状況ですとか、\n双方で情報交換をしている状況でございます。以上でございます。",
+    "text_length": 116,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-117"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-063",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）随時情報交換していただいているということで、おそらく必要なときにやっていただ\nいてると思うんですけれども、令和元年12月の一般質問でですね、麿元議員が幼児教育・保育における負\n担の軽減の課題について、保育士確保に向けての策について質問されております。その際、町側からの回\n答で「保育士養成就学資金貸付制度だとか、他の町村では奨学金を借りた場合に町に就職した場合の返済\n免除や補助金等も行っている町村もありますので、そういう他市町村の事例を参考に今後も調査・研究を\n行っていきたいと考えております。」との回答がありました。その後、調査・研究の進展はいかがでしょう\nか。",
+    "text_length": 289,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-118"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-064",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -524,12 +1469,219 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-112"
+        "1-inline-119"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-024",
+    "id": "niki-20251004-1-065",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）そうですね、新たに施策を検討はしないということだったんですけれども、やはり保\n育士確保というのは大変困難な課題であるということは重々承知しております。その出生数によっては多\n分年度によってむらがあるとは思うんですけれども、例えば15人以上の出生数が数年続いた場合だとか、\n２年以上続いた場合、今回と同様に待機児童が発生する可能性はあるかと存じます。その際に少しでも働\nきたい子育て世代のお父さんお母さんのために、受皿を増やすための保育サービスの更なる充実を進めて\nいく必要があるのではないかと考えております。現在、仁木で行われている保育サービスは様々なものが\nあるとは思うんですけれども、直近の年度でニーズが高かったサービスをぜひ教えていただきたいと思い\nます。",
+    "text_length": 337,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-120"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-066",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "保育所、保育園以外の保育サービスとしましてはですね、一時預かり事業、これに\nつきましては家庭において保育を受けることが一時的に困難となった乳幼児につきまして、保育所、幼稚\n園、その他の場所において一時的に預かると、そういった事業がメインとなってございます。以上でござ\n- 32 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nいます。",
+    "text_length": 172,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-121"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-067",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）直近の年度で、この一時預かりの実績を教えてください。",
+    "text_length": 32,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-122"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-068",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "令和７年度本年度につきましては、一時保育事業の実績はございません。以上で\nございます。",
+    "text_length": 43,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-123"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-069",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）一時預かりのニーズが高いということだったんですけれども、実績は今年度なかった\nということなんですが、今現在仁木町では実施はしていないんですけれども、子育て援助活動支援事業、\nファミリーサポートセンター事業（通称・ファミサポ）ですね、があるかと思います。第３期の仁木町子ど\nも・子育て支援事業計画、これはホームページでも公開されていると思うんですけれども、こちらの第６\n章の事業計画において、確保方策の考え方というところで、本町ではファミサポの当事業を実施していな\nいため、利用実績はありませんでした。また、量の見込みとして利用ニーズもありませんでした。本町で\nは、提供体制の確保が難しく、現状では事業を実施しておりませんが、今後検討を行いますというふうに\n記載されています。こちらはニーズがなかったということなんですけれども、本当になかったのかなとい\nうのがちょっと疑問でして、というのも、同じく第３期仁木町子ども・子育て支援事業計画でアンケート\nを実施されていると思うんですが、こちらの教育・保育事業の利用意向（就学前児童）のアンケート結果\nにおいて、ファミリーサポートセンターを利用したいと回答した方は全体の約８％ということで結果が出\nていて、確かにこの数字だけ見ると少ない数字なので、ニーズがないのかなというふうに思うかもしれま\nせんが、次の一時預かり等の利用意向についてもアンケートがありまして、こちらについては利用したい\nが約45％になっているかと思います。こちらについては保育所の一時預かりというサービスなので、ファ\nミリーサポートセンターと事業内容は違うとは思うんですけれども、現在多分、保育所は、先ほどの回答\nにもありましたが、定員いっぱいですよね。まずこれ一つ確認なんですけれども、保育所の定員がいっぱ\nいの場合、保育所での一時預かりというのは可能なんでしょうか。",
+    "text_length": 797,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-124"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-070",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "基本的にはですね、定員がいっぱいですと保育士等もなかなかですね、そちらの\n方に手が回らず難しいところではございますが、保育所で扱っている年齢のですね、構成ですとか、それ\nによりまして、何歳児は何人、保育士一人につきという部分がありますので、そこはですね、保育所の現\n在入所する状況を踏まえて保育所の方で判断するということになってございます。以上でございます。",
+    "text_length": 179,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-125"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-071",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）それでは、今にき保育園が60名いるということで、これは定員いっぱいだと思うんで\nすけれども、大江へき地保育所は２名、銀山へき地保育所は５名という形になっているんですけれども、\n例えば０歳児の一時預かりをお願いしたいとなったときに、まず、現状にき保育園が一時預かり可能なの\nか、また大江と銀山それぞれどちらも可能なのかどうかというのをちょっと確認させていただきたいです。",
+    "text_length": 190,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-126"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-072",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "只今の質問でございますが、大江へき地保育所、銀山へき地保育所につきまして\n- 33 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nは、０歳児からの入所はできなくてですね、１歳児からの入所となってございます。以上でございます。\n失礼しました。一時預かり事業はできないことになっております。以上でございます。",
+    "text_length": 158,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-127"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-073",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）一時預かりできないという理由は、定員には満たしてないけれども先生の数が足りて\nいないという認識でよろしいでしょうか。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-128"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-074",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -547,12 +1699,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-122"
+        "1-inline-129"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-025",
+    "id": "niki-20251004-1-075",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）やはりそうですね、今現状できないということで、やはりその場合、ファミリーサポー\nトセンター事業の必要性が出てくるのではないかと思っております。そうなると今回そのアンケートで数\n字には出てきてはいないんですけれども、潜在的なニーズというのはたくさんあるのではないかと感じて\nおります。なので、町としてはこのように一時預かりができない可能性がある状況を含め、ファミリーサ\nポートセンターの事業を進めていく予定はあるのかないのかというところをちょっとお答えいただきたい\nと思います。",
+    "text_length": 244,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-130"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-076",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -570,12 +1745,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-124"
+        "1-inline-131"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-026",
+    "id": "niki-20251004-1-077",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）そうですね、担い手の確保というところがかなり大変だということは感じております。\n今回、待機児童が解消されますが、これから人口を増やしていきたい、移住を促進している中で今後出生\n数が増える可能性もあるかと思います。子育てをする家庭で移住されてきた家庭もあり、近くに祖父母だ\nったりとか頼れる人がいない方たちもたくさんいらっしゃいますので、私の耳にも、実際早く働きたいが\n保育園に入れずに、また他も余市町もかなり待機児童が出ているということもありますので、他に預けら\nれる環境がなくて困っているという話もよく耳にしております。なので、働く子育て世帯のお父さんお母\nさんが安心して子どもを育てるまちにしていただくために、ぜひ早急にこのファミリーサポートセンター\n事業、人材確保もそうですけれども、調査研究の方を進めていただきたく存じます。\nまた、今回の待機児童や保育サービスの充実についての課題はやはり一貫して人材不足なのかなという\nふうに感じております。更なる制度の充実が必要なのかなというふうに考えておりますが、例えば子ども\n室内遊戯施設（はれっぱ）というところで有名な南幌町については、保育士等の就労支援事業として採用\n新規就職祝金として５万円に加え、町内に住所を置いている保育士さんに関しては月額２万円の補助、町\n外でも１万円の補助を支給している事例もございます。移住者の人口増加率が全国一位となっているのも、\nやはりこのような制度が一点、有効になっているのかなというふうに思っております。なので、今後更に\n- 34 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\n働きやすい環境にしていくため、どんなまちづくりが必要なのか、どんな環境づくりが必要なのか、また\n町外にも更にＰＲしていく必要性があると強く感じております。こちらについて、ぜひ町長の見解をお伺\nいできればと思います。",
+    "text_length": 802,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-132"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-078",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -593,35 +1791,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-126"
+        "1-inline-133"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-027",
+    "id": "niki-20251004-1-079",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
     "schedule_id": 1,
     "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
     "date": "2025-12-18",
-    "speaker": "前田春奈議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "前田 春奈",
     "member_faction": "",
-    "text": "只今の町長からご回答をいただきまして、なかなかやはりその出生数の推移が安定し\nないと、その数のバランス、保育士さんの確保も難しいというところで理解はしているところではあるん\nですけれども、将来を見据えて、バランスを調整しなければいけないというところなんですが、やはり今\n困っているお父さんお母さんというのは、実際事実いらっしゃって、なかなかやはりその環境づくり、仁\n木で働きたい、にき保育園で働きたいという環境で、よいち福祉会さんが行ってはいるんですけれども、\nやはり委託している仁木町として、更に来てもらえる、働いてもらえるような環境づくりというのは進め\nていってほしいと思っております。南幌町の手当の支給を一例としましたけれども、仁木町らしい独自の\n制度を今後更に検討していただきたいと思っております。\n繰り返しとはなりますが、今回は人材の目処が立ったということで、今回、待機児童は解消されました\n- 35 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nが、また今後発生したときにですね、子育て世代のお父さんお母さんが困らないように、安心して子ども\nを育てられるよう、本町のニーズに合った人材不足解消の施策の策定を期待させていただきまして、私の\n質問を終わらせていただきたいと思います。ありがとうございました。",
-    "text_length": 563,
+    "text": "（前田春奈）只今の町長からご回答をいただきまして、なかなかやはりその出生数の推移が安定し\nないと、その数のバランス、保育士さんの確保も難しいというところで理解はしているところではあるん\nですけれども、将来を見据えて、バランスを調整しなければいけないというところなんですが、やはり今\n困っているお父さんお母さんというのは、実際事実いらっしゃって、なかなかやはりその環境づくり、仁\n木で働きたい、にき保育園で働きたいという環境で、よいち福祉会さんが行ってはいるんですけれども、\nやはり委託している仁木町として、更に来てもらえる、働いてもらえるような環境づくりというのは進め\nていってほしいと思っております。南幌町の手当の支給を一例としましたけれども、仁木町らしい独自の\n制度を今後更に検討していただきたいと思っております。\n繰り返しとはなりますが、今回は人材の目処が立ったということで、今回、待機児童は解消されました\n- 35 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nが、また今後発生したときにですね、子育て世代のお父さんお母さんが困らないように、安心して子ども\nを育てられるよう、本町のニーズに合った人材不足解消の施策の策定を期待させていただきまして、私の\n質問を終わらせていただきたいと思います。ありがとうございました。",
+    "text_length": 569,
     "source": {
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-127"
+        "1-inline-134"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-028",
+    "id": "niki-20251004-1-080",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -633,18 +1831,41 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text": "それでは、一括提案されました議案４件につきまして提案説明をさせていただきま\nす。\n議案第１号、仁木町議会議員の議員報酬及び費用弁償等に関する条例の一部を改正する条例制定につい\nて。仁木町議会議員の議員報酬及び費用弁償等に関する条例（平成３年仁木町条例第２号）の一部を改正\nする条例を別紙のとおり制定する。令和７年12月18日提出、仁木町長 佐藤聖一郎。\n議案第２号のページをお開き願います。議案第２号、特別職の職員で常勤のものの給与等に関する条例\nの一部を改正する条例制定について。特別職の職員で常勤のものの給与等に関する条例（昭和44年仁木町\n条例第１号）の一部を改正する条例を別紙のとおり制定する。令和７年12月18日提出、仁木町長 佐藤聖\n一郎。\n議案第３号のページをお開き願います。議案第３号、仁木町職員の給与に関する条例の一部を改正する\n条例制定について。仁木町職員の給与に関する条例（昭和41年仁木町条例第15号）の一部を改正する条例\nを別紙のとおり制定する。令和７年12月18日提出、仁木町長 佐藤聖一郎。\n議案第４号のページをお開き願います。議案第４号、仁木町会計年度任用職員の給与及び費用弁償に関\nする条例の一部を改正する条例について。仁木町会計年度任用職員の給与及び費用弁償に関する条例（令\n和元年仁木町条例第20号）の一部を改正する条例を別紙のとおり制定する。令和７年12月18日提出、仁木\n町長 佐藤聖一郎。以上、議案４件の一括提案説明とさせていただきます。\nなお、詳細につきましては、鹿内総務課長の方からご説明いたしますので、ご審議の上、ご可決賜りま\nすようよろしくお願い申し上げます。",
-    "text_length": 706,
+    "text": "それでは、一括提案されました議案４件につきまして提案説明をさせていただきま\nす。\n議案第１号、仁木町議会議員の議員報酬及び費用弁償等に関する条例の一部を改正する条例制定につい\nて。仁木町議会議員の議員報酬及び費用弁償等に関する条例（平成３年仁木町条例第２号）の一部を改正\nする条例を別紙のとおり制定する。令和７年12月18日提出、仁木町長 佐藤聖一郎。\n議案第２号のページをお開き願います。議案第２号、特別職の職員で常勤のものの給与等に関する条例\nの一部を改正する条例制定について。特別職の職員で常勤のものの給与等に関する条例（昭和44年仁木町\n条例第１号）の一部を改正する条例を別紙のとおり制定する。令和７年12月18日提出、仁木町長 佐藤聖\n一郎。\n議案第３号のページをお開き願います。議案第３号、仁木町職員の給与に関する条例の一部を改正する\n条例制定について。仁木町職員の給与に関する条例（昭和41年仁木町条例第15号）の一部を改正する条例\nを別紙のとおり制定する。令和７年12月18日提出、仁木町長 佐藤聖一郎。\n議案第４号のページをお開き願います。議案第４号、仁木町会計年度任用職員の給与及び費用弁償に関\nする条例の一部を改正する条例について。仁木町会計年度任用職員の給与及び費用弁償に関する条例（令\n和元年仁木町条例第20号）の一部を改正する条例を別紙のとおり制定する。令和７年12月18日提出、仁木",
+    "text_length": 606,
     "source": {
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-130"
+        "1-inline-137"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-029",
+    "id": "niki-20251004-1-081",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "佐藤聖一郎。以上、議案４件の一括提案説明とさせていただきます。\nなお、詳細につきましては、鹿内総務課長の方からご説明いたしますので、ご審議の上、ご可決賜りま\nすようよろしくお願い申し上げます。",
+    "text_length": 96,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-138"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-082",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -662,12 +1883,12 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-132"
+        "1-inline-140"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-030",
+    "id": "niki-20251004-1-083",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -685,12 +1906,403 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-144"
+        "1-inline-152"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-031",
+    "id": "niki-20251004-1-084",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "新見信財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第５号、令和７年度余市郡仁木町一般会計補正予算（第４号）について、ご説\n明申し上げます。\n１ページをお開き願います。第１表 歳入歳出予算補正、歳入でございます。12款．交通安全対策特別\n交付金から22款．町債まで補正いたしまして、歳入合計額に補正額5118万1000円を追加し、補正後の合計\nを52億6216万1000円とするものでございます。\n２ページをお開き願います。歳出でございます。１款．議会費から10款．教育費まで補正いたしまして、\n歳出合計額に補正額5118万1000円を追加し、補正後の合計を52億6216万1000円とするものでございます。\n４ページをお開き願います。第２表 債務負担行為補正、追加でございます。地上デジタル放送施設敷\n地借上げのための債務負担行為は、稲穂峠上の国有林野を有償契約しているもので、期間は令和８年度か\nら10年度まで、限度額は１万8000円であります。\n５ページ、第３表 地方債補正、変更でございます。橋りょう補修事業につきましては、事業完了によ\nり地方債限度額を2040万円に減額、緊急自然災害防止対策事業（道路防災）につきましても、事業完了に\nより地方債限度額を270万円に減額するものでございます。\n７ページをお開き願います。歳入歳出補正予算事項別明細書、歳入でございます。１款．町税から22款．\n町債まで全ての科目を載せたものでございます。\n８ページをお開き願います。歳出でございます。１款．議会費から14款．予備費まで全ての科目を載せ\nたもので、右側の財源内訳につきましては、国道支出金が1267万7000円の増、地方債が70万円の減、その\n他が18万7000円の減、一般財源が3939万1000円の増となっております。\n続きまして、９ページをお開き願います。歳入でございます。交通安全対策特別交付金につきましては、\n- 41 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\n今年度交付される交付金がなかったことから50万円を減額し廃款とするものでございます。\n10ページをお開き願います。15款．国庫支出金、１項．国庫負担金、１目．民生費国庫負担金につきまし\nては、重度医療費及びへき地保育所委託料の増加見込みに伴い411万円の追加、２目．衛生費国庫負担金は、\n国民健康保険基盤安定負担金他、国民健康保険関連負担金の額確定により78万5000円の追加。２項．国庫\n補助金、１目．総務費国庫補助金は、システム標準化に係る補助金の変更決定により589万8000円の追加。\n３項．委託金、２目．民生費委託金は、税制改正に伴う年金事務システム改修委託金35万4000円の追加で\nございます。\n11ページ、16款．道支出金、１項．道負担金、１目．民生費道負担金につきましては、国費分同様、重度\n医療及びへき地保育所委託料の増加見込みに伴い203万2000円の追加、２目．衛生費道負担金は、国民健康\n保険基盤安定負担金の確定によりまして42万9000円の減額。２項．道補助金、４目．農林水産業費道補助\n金につきましては、町有林の管理に係る補助金の額確定により13万8000円の減額。３項．道委託金、１目．\n総務費委託金は、権限移譲事務の委託金確定により６万5000円の追加でございます。\n12ページをお開き願います。18款．１項．寄附金、１目．一般寄附金につきましては、一般寄附、ふるさ\nと納税の寄附の見込みにより4510万円の追加、２目．総務費寄附金は企業版ふるさと納税10万円の追加で\nございます。\n13ページ、19款．繰入金、１項．基金繰入金、１目．財政調整基金繰入金につきましては、財源調整のた\nめ665万7000円の減額、３目．ふるさと振興基金繰入金は、企業版ふるさと納税寄附の充当などにより33万\n4000円の減額、４目．公共施設等整備基金繰入金は額確定により６万1000円の減額でございます。\n14ページをお開き願います。21款．諸収入、４項．受託事業収入、４目．共済金受託収入につきまして\nは、額確定により5000円の追加。５項．４目．雑入は、火葬場煙突補修に係る共済金及び令和６年度子ども\nのための教育・保育給付費の過払いに伴う返還金など155万1000円の追加。\n15ページ、22款．１項．町債、４目．土木債につきましては地方債補正で説明した分でございます。\n17ページをお開き願います。歳出でございます。１款．１項．１目．議会費につきましては144万9000円\nの減額で、増額分は報酬・給与改定、減額分は執行残によるものでございます。\n20ページをお開き願います。２款．総務費、１項．総務管理費、１目．一般管理費につきましては770万\n5000円の追加で、22ページまで、給与改定に伴う報酬及び給料等の他、システム標準化に伴うデータ連携\n機能構築費の追加でございます。\n23ページをご覧ください。２目．交通安全推進費は、区画線設置工事に係る執行残４万5000円の減額、\n４目．財産管理費は給与改定に伴う報酬・給与及び複合施設誘導灯の修繕費追加の他、執行残で12万4000\n円の追加。\n24ページをお開き願います。５目．企画費は、企業版ふるさと納税マッチング支援に係る仲介手数料１\n万1000円の追加、８目．ふるさとづくり事業費は、一般寄附及びふるさと納税寄附金の積立て1200万円の\n追加。25ページ、２項．徴税費、１目．税務総務費は、給与改定により64万9000円の追加。\n26ページをお開き願います。３項．１目．戸籍住民登録費も報酬・給与改定により41万9000円の追加で\nございます。\n27ページ、４項．選挙費、１目．選挙管理委員会費は、委員改選に伴う報酬１万2000円の追加、２目．参\n- 42 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\n議院議員選挙費は、29ページまで、額の確定によりまして245万2000円の減額。29ページ、３目．仁木町長\n選挙費も31ページまで額の確定によりまして516万円の減額でございます。\n32ページをお開き願います。５項．統計調査費、３目．国勢調査費は、報酬改定により８万9000円の追\n加、６項．監査委員費は執行残により４万1000円の減額でございます。\n34ページをお開き願います。３款．民生費、１項．社会福祉費、１目．社会福祉総務費につきましては、\n委員選任に係る報酬の増額及び給与改定により90万6000円の追加、35ページ、２目．老人福祉費は、報酬・\n給与改定、及び36ページ、介護サービス利用者の増加見込みによりまして60万3000円の追加、36ページで\nす。４目．心身障害者特別対策費は、重度医療費の増加見込みにより794万9000円の追加でございます。５\n目．国民年金事務費は、給与改定及び年金事務システム改修費57万8000円の追加、６目．後期高齢者医療\n費は、令和６年度後期高齢者医療広域連合負担金の確定による精算、及び給与改定に係る人件費繰り出し\nで177万円の追加でございます。２項．児童福祉費、１目．児童福祉総務費につきましては、105万円の追加\nで、次ページ、報酬、給与改定による人件費及び令和６年度分子ども・子育て支援交付金等返還金の増額\nでございます。続きまして、３目．母子福祉費です。母子福祉費は、令和６年度分国庫補助金の返還により\n39万5000円の追加、39ページ、４目．保育所費は、大江・銀山両保育所への入所児童の増加見込み及び施設\n修繕費の増額により22万9000円の追加でございます。\n40ページをお開き願います。４款．衛生費、１項．保健衛生費、１目．保健衛生総務費につきましては、\n給与改定による人件費及び余市協会病院への救急医療体制維持補助金の増、並びに国保会計への繰出金の\n減によりまして350万1000円の追加、41ページ、２目．老人保健推進費は報酬改定により30万5000円の追加、\n４目．環境衛生費は、業務完了により８万8000円の減額、５目．上水道費は、人事異動及び給与改定によ\nり、簡易水道会計補助金65万1000円の減額でございます。\n43ページをお開き願います。６款．農林水産業費、１項．農業費、１目．農業委員会費につきましては、\n21万6000円の追加、２目．農業総務費は56万8000円の追加、いずれも給与改定によるものでございます。\n44ページをお開き願います。３目．農業振興費は財源内訳の変更となってございます。\n45ページです。７款．１項．商工費、１目．商工総務費につきましては、給与改定により76万7000円の追\n加、２目．商工振興費は3305万8000円の追加で、報酬改定及び寄附見込額の推計による委託料の増額、並\nびに事業完了に伴う補助金の減額でございます。\n47ページをお開き願います。８款．土木費、１項．土木管理費、１目．土木総務費につきましては、給与\n改定に伴う人件費37万8000円の追加、２項．道路橋りょう費、１目．道路橋りょう総務費は９万円の追加\nで、48ページ、給与改定に伴う人件費の増額及び道路愛護報償の執行残によるものでございます。２目．\n道路維持費は、事業完了により77万1000円の減額、49ページ、３目．道路新設改良費は549万2000円の減額\nで、町道仁小中線改良工事費及び水道管移設補償金確定によるものでございます。４目．橋りょう維持費\nは、金光橋補修工事費の確定により882万円の減額、４項．住宅費、１目．住宅管理費は、報酬及び給与改\n定により63万円の追加でございます。\n52ページをお開き願います。９款．１項．消防費、３目．災害対策費につきましては、報酬改定により１\n万4000円の追加でございます。\n53ページ、10款．教育費、１項．教育総務費、２目．事務局費につきましては、報酬・給与改定により68\n- 43 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\n万円の追加。\n54ページをお開き願います。２項．小学校費、１目．学校教育費、及び、55ページ、３項．中学校費、１\n目．学校管理費はそれぞれ12万6000円、17万6000円の追加でいずれも報酬改定によるものでございます。\n56ページをお開き願います。５項．社会教育費、１目．社会教育総務費、及び、57ページ、６項．保健体\n育費、１目．保健体育総務費はそれぞれ24万2000円、７万8000円の追加でいずれも給与改定によるもので\nございます。３目．学校給食費は、報酬・給与改定及び共済費の執行見込みにより83万2000円の追加、59ペ\nージをお開き願います。４目．スキー場管理費は財源内訳の変更でございます。\n61ページ以降は補正後の給与費明細書となっております。以上で議案第５号の説明を終わります。",
+    "text_length": 4461,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-153"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-085",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）それでは予算書の12ページ、12ページの一般寄附金の関係で、今回一般寄附分が10万\n円、それとふるさと納税寄附が4500万円ということで、合わせて補正後の額が４億6530万円になっていま\nすが、このうち一般寄附を除いた、ふるさと納税額というのはいくらになるのでしょうか。",
+    "text_length": 141,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-156"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-086",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "新見信財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "一般寄附金を除いたふるさと納税額の予算額ということになるかと思いますけれ\nども、一般寄附の額が、今回予算額の10万円の補正で30万円になる予定ですので、30万円を引いた４億6500\n万円でございます。",
+    "text_length": 100,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-157"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-087",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）それでですね、昨年はサクランボだとか、お米の効果で５億円を超えています。管内で\nも本当に上位にランクしています。それで今年度はですね、昨年と同期、今現在と比較して、最終的にど\nの程度今年度は見込めるのか、お伺いしたいと思います。",
+    "text_length": 120,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-158"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-088",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）では、この４億6500万円で今年はもう見込めない、今年度ですよ、今年度は見込めない\nということですか。",
+    "text_length": 57,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-160"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-089",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）もう僅かしかないですからね。\n前年度よりかなり落ちるということですね。わかりました。\n次にですね、予算書の39ページ、大江と銀山の保育所の方に今回９万6000円、13万3000円と補正をして\nいますけれども、この内容について説明をお願いします。",
+    "text_length": 128,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-162"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-090",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "こちら大江へき地保育所の運営委託料につきましては、へき地保育所内の建物の\n設備の部分及びですね、運営費、今後ですね、入所する児童がいるという相談等があることから見込んで\nいるところでございます。同じく銀山へき地保育所の委託料につきましては、こちらにつきましても入所\n児童がいるという見込みのもと13万3000円増額しているところでございます。以上でございます。",
+    "text_length": 180,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-163"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-091",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）もう少し具体的にですね、何名ぐらいそれぞれ増えるのか、ちょっとそれをお伺いし\nたいんですが。",
+    "text_length": 52,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-164"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-092",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大江へき地保育所につきましては、今現在の２名からですね、更に３名が増える\n可能性があると見込んでいるところでございます。銀山へき地保育所につきましては、現在の５名からで\nすね、更に１名増えるという見込みでございます。以上でございます。",
+    "text_length": 117,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-165"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-093",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）もうちょっと、大江は２名から３名になるんですか。",
+    "text_length": 30,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-166"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-094",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "現在の２名からですね、更に３名が増える見込みで、その３名が入所しますと合\n計で５名になるというところでございます。以上でございます。",
+    "text_length": 66,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-167"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-095",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）この５名のですね、内訳を知りたいんですけれども。すみません、３名ですね。この３\n名の方は、これはどちらから入所される児童なんでしょうか。",
+    "text_length": 74,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-168"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-096",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "只今の質問でございますが、どちらからというのは地区ごとという認識のもとで\nお答えさせていただきますが、仁木地区からの入所見込みでございます。以上でございます。",
+    "text_length": 79,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-169"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-097",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）ですから何歳児がね、ここへ。３名というのは何歳児の子どもさんがここに入所され\nるのかですね、もうちょっと具体的に、先ほどの前田議員の一般質問にも関連してきますのでね。要する\n- 45 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nに仁木へ入所できないから大江の方に行かざるを得ないということでの話だと思うんですが、その辺も含\nめてちょっと具体的に説明願います。",
+    "text_length": 192,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-170"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-098",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "へき地保育所につきましては、１歳から入所できることになっておりますので、\n３名の入所見込みにつきましては、全て１歳児となってございます。以上でございます。",
+    "text_length": 77,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-171"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-099",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）わかりました。\nやはりこういう事情もありますので、しっかり今後ですね、一応うちの町もですね、子育て支援なり、\n移住促進、人口減少対策としてね、いろいろ対策を講じているわけですから、その辺のことはしっかり私\nは取り組んでほしいと思います。人口が増えても受皿がないと、何か言っていることとやっていることが\nちょっと違うんじゃないかという話もありますのでね、その辺のことはしっかり私は取り組んでほしいと\n思います。\n次にですね、48ページの道路愛護の関係、今回11万1000円減となっていますけれども、元々何団体の予\n算計上をして、それで減ったので、やるところの町内会なり団体がなくなったのでおそらく11万1000円減\nとしていると思うんですけれどもその内訳と、なぜ、もし仮にできなくなったとすると、その理由につい\nてご説明願います。",
+    "text_length": 370,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-172"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-100",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）そうすると、来年度は24団体で予算計上するということでの理解でよろしいでしょう\nか。",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-174"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-101",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -708,12 +2320,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-170"
+        "1-inline-180"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-032",
+    "id": "niki-20251004-1-102",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "新見信財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第６号、令和７年度余市郡仁木町国民健康保険事業特別会計補正予算（第４\n号）について、ご説明申し上げます。\n１ページをお開き願います。第１表 歳入歳出予算補正、歳入でございます。３款．財産収入から６款．\n諸収入まで補正いたしまして、歳入合計額に49万9000円を追加し、補正後の合計を１億8768万9000円とす\nるものでございます。\n２ページをお開き願います。歳出でございます。１款．総務費、及び５款．基金積立金を補正いたしまし\nて、歳出合計額に49万9000円を追加し、補正後の合計を１億8768万9000円とするものでございます。\n３ページ、歳入歳出補正予算事項別明細書、歳入でございます。１款．国民健康保険税から７款．国庫支\n出金まで全ての科目を載せたものでございます。\n４ページをお開き願います。歳出でございます。１款．総務費から６款．予備費まで全ての科目を載せ\nたもので、右側の財源内訳は、その他が13万円の増、一般財源が36万9000円の増となっております。\n５ページをお開き願います。歳入でございます。３款．財産収入、１項．財産運用収入、１目．利子及び\n配当金につきましては、預金利子13万円の追加でございます。\n６ページをお開き願います。４款．繰入金、１項．一般会計繰入金、１目．保険基盤安定繰入金につきま\nしては41万6000円の追加、２目．一般会計繰入金は258万1000円の減額、３目．未就学児均等割保険料繰入\n- 47 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\n金は8000円の追加、４目．産前産後保険料繰入金は４万7000円の追加で、１目から４目まで報酬・給与改\n定による人件費分、出産育児一時繰入金等、こちら繰入金の額の確定によるものでございます。２項．基\n金繰入金、１目．財政調整基金繰入金につきましては、後志広域連合からの分賦金の返還に伴い579万9000\n円の減額でございます。\n７ページ、６款．諸収入、３項．１目．雑入につきましては、令和６年度後志広域連合分賦金精算に伴う\n返還金827万8000円の追加でございます。\n９ページをお開き願います。歳出でございます。１款．総務費、１項．総務管理費、１目．一般管理費に\nつきましては、報酬及び給与改定による人件費36万3000円の追加、10ページをお開き願います。２目．広\n域連合負担金は、共通経費の増加に伴う分賦金5000円の追加でございます。11ページ、５款．１項．１目．\n基金積立金につきましては、財政調整基金への積立て13万1000円の追加でございます。\n13ページ以降は補正後の給与費明細書となっております。以上で議案第６号の説明を終わります。",
+    "text_length": 1128,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-181"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-103",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -731,12 +2366,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-177"
+        "1-inline-187"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-033",
+    "id": "niki-20251004-1-104",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "新見信財政課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第７号、令和７年度余市郡仁木町後期高齢者医療特別会計補正予算（第４号）\nについて、ご説明申し上げます。\n１ページをお開き願います。第１表 歳入歳出予算補正、歳入でございます。３款．繰入金に46万5000\n円を追加し、補正後の合計を9521万4000円とするものでございます。\n２ページをお開き願います。歳出でございます。１款．総務費に46万5000円を追加して、補正後の合計\nを9521万4000円とするものでございます。\n３ページ、歳入歳出補正予算事項別明細書、歳入でございます。１款．後期高齢者医療保険料から６款．\n国庫支出金まで全ての科目を載せたものでございます。\n４ページをお開き願います。歳出でございます。１款．総務費から４款．予備費まで全ての科目を載せ\nたもので、右側の財源内訳につきましては、一般財源が46万5000円の増となっております。\n５ページをお開き願います。歳入でございます。３款．繰入金、１項．一般会計繰入金、１目．事務費繰\n入金につきましては、報酬及び給与改定により46万5000円の追加でございます。\n７ページをお開き願います。歳出でございます。１款．総務費、１項．総務管理費、１目．一般管理費に\nつきましては、報酬及び給与改定に伴う人件費等46万5000円の追加でございます。\n９ページ以降につきましては、補正後の給与費明細書となっております。以上で議案第７号の説明を終\nわります。",
+    "text_length": 609,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-188"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-105",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -754,12 +2412,35 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-184"
+        "1-inline-194"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-034",
+    "id": "niki-20251004-1-106",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "渡辺優建設課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第８号、令和７年度余市郡仁木町簡易水道事業会計補正予算（第１号）につい\nて、ご説明申し上げます。\n１ページをお開き願います。今回の補正は、職員の人事異動及び人事院勧告による給与改定に伴う人件\n費等の補正となっております。\n令和７年度余市郡仁木町簡易水道事業会計補正予算（第１号）実施計画、収益的収入及び支出でござい\nます。収入でございます。１款．簡易水道事業収益、２項．営業外収益、２目．他会計補助金の補正予定額\n65万1000円を減額し、１款．簡易水道事業収益の補正後の合計を２億8881万8000円とするものでございま\nす。次に支出でございます。１款．簡易水道事業費用、１項．営業費用、３目．総係費の補正予定額65万\n1000円を減額し、１款．簡易水道事業費用の補正後の合計を２億8251万3000円とするものでございます。\n補正内容等につきましては、13ページの余市郡仁木町簡易水道事業会計予算に関する付属説明資料でご説\n明いたします。\n３ページをお開き願います。３ページから11ページまでにつきましては、今回の補正後における財務諸\n表及び給与費明細書となっており、３ページは、令和７年度余市郡仁木町簡易水道事業会計予定キャッシ\nュフロー計算書、５ページから８ページについては補正後における給与費明細書、９ページから11ページ\nは令和７年度余市郡仁木町簡易水道事業会計予定貸借対照表（当年度分）となっております。\n次に、13ページをお開き願います。余市郡仁木町簡易水道事業会計予算に関する付属説明資料でござい\nます。収入でございます。１款．簡易水道事業収益、２項．営業外収益、２目．他会計補助金につきまして\n- 50 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nは、職員の人事異動及び人事院勧告による給与改定に伴い、一般会計からの補助金65万1000円を減額し、\n１款．簡易水道事業収益の補正後の合計を２億8881万8000円とするものでございます。次に、支出でござ\nいます。１款．簡易水道事業費用、１項．営業費用、３目．総係費につきましても、同じく職員の人事異動\n及び人事院勧告による給与改定に伴い、給料から報酬までをそれぞれ足した合計65万1000円を減額し、１\n款．簡易水道事業費用の補正後の合計を２億8251万3000円とするものでございます。以上で議案第８号の\n説明を終わります。",
+    "text_length": 1007,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-195"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-107",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -771,18 +2452,225 @@
     "is_procedural": false,
     "member_name": null,
     "member_faction": null,
-    "text": "議案第９号、仁木町行政手続における特定の個人を識別するための番号の利用等に\n関する法律に基づく個人番号の利用に関する条例の一部を改正する条例制定について。仁木町行政手続に\nおける特定の個人を識別するための番号の利用等に関する法律に基づく個人番号の利用に関する条例（平\n成27年仁木町条例第15号）の一部を改正する条例を別紙のとおり制定する。令和７年12月18日提出、仁木\n町長 佐藤聖一郎。\n詳細につきましては、鹿内総務課長の方からご説明いたしますので、ご審議の上、ご可決賜りますよう、\nよろしくお願い申し上げます。",
-    "text_length": 258,
+    "text": "議案第９号、仁木町行政手続における特定の個人を識別するための番号の利用等に\n関する法律に基づく個人番号の利用に関する条例の一部を改正する条例制定について。仁木町行政手続に\nおける特定の個人を識別するための番号の利用等に関する法律に基づく個人番号の利用に関する条例（平\n成27年仁木町条例第15号）の一部を改正する条例を別紙のとおり制定する。令和７年12月18日提出、仁木",
+    "text_length": 185,
     "source": {
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-191"
+        "1-inline-201"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-035",
+    "id": "niki-20251004-1-108",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "町長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "佐藤聖一郎。\n詳細につきましては、鹿内総務課長の方からご説明いたしますので、ご審議の上、ご可決賜りますよう、\nよろしくお願い申し上げます。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-202"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-109",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "鹿内力三総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第９号、仁木町行政手続における特定の個人を識別するための番号の利用等\n- 51 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nに関する法律に基づく個人番号の利用に関する条例の一部を改正する条例制定につきまして、ご説明いた\nします。\n本条例は、個人を識別するための番号である個人番号、いわゆるマイナンバーを地方公共団体が条例で\n規定することにより、法律で規定している社会保障、税、災害対策の３分野に係る事務以外の事務で利用\nするために制定した条例であります。\n今回の主な改正点は、新たに住登外者宛名番号管理機能への追加です。住登外者とは、町の住民基本台\n帳に登録されていない個人を言います。これらの者に番号を付番し管理する機能を住登外者宛名番号管理\n機能と言い、この機能は法律に基づく地方公共団体情報システムの統一標準化に組み込まれる機能となり\nます。国からこの機能は条例の定めが必要であるとされていることから、条例の一部を改正するものです。\n改め文の朗読を省略し、新旧対照表でご説明いたします。新旧対照表をお開き願います。右側が現行の\n条例でありまして、左側が改正後となっております。アンダーラインを付している箇所が改正箇所となり\nます。題名の改正は、「及び特定個人情報の提供」を加えるものです。住登外者宛名番号管理機能は、町長\n部局や教育委員会との間で共有する必要があり、その共有は他の執行機関に対する特定個人情報の提供に\n当たることから題名の改正をするものです。第１条、趣旨の改正は、及び法第19条の第11号に基づく特定\n個人情報の提供を加えるものです。第２条、定義の改正は、第７号、住登外者宛名番号管理機能、第８号、\n住登外者宛名情報を加えるものです。第４条、個人番号の利用範囲の改正は、改正前は本町では独自の利\n用する事務がないことから規定していませんでしたが、今回の改正では、今後独自利用が見込まれる乳幼\n児等医療、重度心身障がい者医療、ひとり親家庭等医療及び住登外者宛名番号管理機能について規定する\nものです。利用する事務は、別表第１、別表第２として規定するものです。第５条、特定個人情報の提供の\n条文追加は、住登外者宛名番号管理機能で提供できる場合で、別表第３として規定するものです。\n３ページは、追加する別表第１です。１は、乳幼児等医療費の事務、２は、重度心身障がい者医療費の事\n務、３は、ひとり親家庭等医療費の事務、４と５は、住登外者宛名番号管理機能の事務です。別表第２は、\n別表第１で追加した事務で使用する特定個人情報の規定です。\n５ページ、別表第３は、住登外者宛名番号管理機能での照会機関、提供機関についての規定です。附則\nはこの条例は公布の日から施行するものであります。以上で議案第９号の説明を終わります。",
+    "text_length": 1173,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-203"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-110",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）何か良くこれわからないんですけれども、もう既に登録されている我々一住民に対し\nては、町民に対しては該当しない変更・改正なんでしょうか。\nそれで、この住登外者はどんな方が該当しているのか。それが、今後どうなるのか、これ簡単にこれを\n説明していただけないでしょうか。",
+    "text_length": 137,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-205"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-111",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "鹿内力三総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "町民は、基本的に住民基本台帳に登録していますので、そこで管理をさせていた\nだいております。町民ではない方、例えば他の町に住んでいる方で、これから仁木町に来る方だとかとい\nうのは、仁木に来る前のあいだまでは、ここで言う、住民基本台帳の外で管理するという方を住登外者と\n言うんですよね。住民登録をしていない者、それを住登外者というんですけれども、それで今も管理はし\n- 52 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nているんですけれども、そのことなんですよね。その住登外者を宛名番号で管理するときには、この法律、\nちょっと長いですけれども、仁木町行政手続における特定の個人を識別するための番号の利用等に関する\n法律でですね、今までは規定する必要はなかったんですけれども、国からの指示でそれも条例で規定して\nくださいとなったものですから、今回、それも規定するために、一部改正するものでございます。ちょっ\nと説明がややこしくて、すみません。",
+    "text_length": 425,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-206"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-112",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）よく我々も、昔、例えば３か月その町に滞在したら、住民登録をしなさいというよう\nな、何か決めがありますよね。ところがそれもしないで、ずっとそこに、なんというか、住んでいるという\n方は町ではどうやって把握するんでしょうか。そういう人を把握できるんでしょうか。",
+    "text_length": 133,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-207"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-113",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "先ほどの質問の件につきまして、乳幼児医療助成ですとか、重度心身障がい、ひと\nり親家庭を担当しておりますので、私の方で答弁させていただきます。\n本条例改正の趣旨としましては、転入された方はですね、先ほどの住登外という仁木町に住民登録をさ\nれていない方が転入してきたときにですね、先ほど申し上げました、乳幼児医療の助成ですとか、そうい\nったものを申請する際に、課税証明、所得証明が必要になってくるんですけれども、それが住民登録外の\n場合は、前住所地の自治体から所得証明だとか、課税証明をもらわなければならないんですけれども、こ\nの条例改正をすることによって、中間サーバー等に情報の提供を受けることができると、そういうような\n趣旨となってございます。以上でございます。",
+    "text_length": 331,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-210"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-114",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）今回は、対象者が乳幼児に関する部分だけの改正ということになるのか、該当者がそ\nれに絞られているのか、あるいは例えば私もそうだったんですけれどもね、余市町に住所を置きながら、\n札幌市の兄の所にしばらく居候したことあるんですよね。だから、住所を移さないまでも、最終的には住\n所を移しましたけれどもね。半年ぐらい後だと思うんですけれども、そういう人たちのことを指している\nのか。それは当然、札幌市だってわからないと思うんですよね。だからその辺をどうやって把握するんで\nすかということなんですよね。乳幼児を持った方でも、町の方はどうやってそれを把握されるのかなとい\nうことなんですよ。",
+    "text_length": 294,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-211"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-115",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "鹿内力三総務課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "お時間をいただきましてありがとうございます。\n佐藤議員の質問ですけれども、住登外者をどのように把握するのかというような趣旨の質問かと思いま\nす。先ほどもちょっと住民登録をしている人を住登者、住民登録していない人を住登外者という説明をさ\nせていただいたのですが、どうやって把握するのかといいますと、それは簡単に言いますと、申請をいた\nだいて、町の方で把握することになります。一例を申し上げますと、他の町村から仁木町に転入してきた\n人がいたとして、その人に子どもがいるとします。子どもは大学生で仁木町には転入してきません。そう\nなると、親は仁木町民になるので住民登録をしますけれども、子どもは住民登録しません。大学で他の市\n町村に住んでいるから仁木町では住民登録をしません。わかりますか。他の町から仁木町に親は転入して\nきたけれども、その人の子どもは大学に行っていて他の町に住んでいるので、仁木町には転入しません。\nその子どもには、親の扶養になっているという前提なんですけれども、親の扶養になっていれば保険証を\n出します。だけれども住民ではないんですよね。そういう人をこの住登外者として登録します。誰を登録\nするのかというと、転入してきた親の申請に基づいて、住登外者として子どもを登録して、登録すること\nによってマイナンバーカードと紐付けができますので、そこで、その子どもにですね、仁木町の方から保\n険証を出せるというような。今のは一例ですけれども、そういうときにですね、この住登外者の登録とい\nうのを使うものでございます。以上です。",
+    "text_length": 665,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-214"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-116",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "４番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "佐藤 秀教",
+    "member_faction": "",
+    "text": "（佐藤秀教）よくわかりました。すみません。\nそれで、例えば今二拠点生活ってありますよね。そういう人方は、例えば年の半分は、夏場、北海道に移\nって住む。それで、年の半分北海道は寒いので、自分の温かい地元に帰ると言った場合に、そうした場合\nは、町では、例えば簡単にわかりやすく言うと、沖縄県に住んでいる方が、夏は涼しい北海道に行きます\nとしたときに、仁木町に来ましたよと、そうしたときに住民サービスは、住所を沖縄県においていますか\nらね、仁木町では我々と同じ住民サービスを受けられないということになると思うんです。仮にその人が\n住所を移転すれば、同じ権利は発生するんだけれども、それをしない限りは一切それは今住んでいる方と\n同じ権利・住民サービスを受けることができないということでの理解で良いのかな。どうなんでしょうか\nね。",
+    "text_length": 360,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-215"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-117",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -800,12 +2688,12 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-202"
+        "1-inline-216"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-036",
+    "id": "niki-20251004-1-118",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -823,12 +2711,242 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-208"
+        "1-inline-222"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-037",
+    "id": "niki-20251004-1-119",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "議案第10号、仁木町乳児等通園支援事業の設備及び運営に関する基準を定める条\n例の制定につきまして、ご説明いたします。\nこの条例は児童福祉法に基づき、令和８年度から本格的に実施される乳児等通園支援事業（通称、こど\nも誰でも通園制度）について、そのサービスを提供する事業所が守るべき最低限の設備及び運営に関する\n基準を本町の地域の実情に応じて具体的に定めることを目的とし、制定するとしたものです。なお、子ど\nも誰でも通園制度は、保護者の方が働いている、働いていないにかかわらず、生後６か月から満３歳未満\nまでの子どもが保育所等の施設を月10時間を限度として利用できるようにする国が全国共通の仕組みとし\nて推進する制度でございます。\nそれでは、条文に沿ってご説明いたします。\n制定文１ページをお開きください。第１条は、本条例の趣旨についてでございます。この条例は児童福\n祉法第34条の16第１項の規定に基づき、乳児等通園支援事業の設備及び運営に関する基準を定めるもので\n- 55 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉\nあります。第２条は、本条例での用語の定義を定めております。第１号では、乳児等通園支援事業、第２号\nでは、乳児等通園支援、第３号では、利用乳幼児を規定しております。第３条は、最低基準の目的等を定め\nております。\n２ページをお開き願います。第４条は、最低基準と乳幼児等通園支援事業者について定めたものでござ\nいます。第５条は、乳児等通園支援事業者の一般原則、第６条は、非常災害について規定しております。\n次のページをお開き願います。第７条は、安全計画の策定等、第８条では、自動車を運行する場合の所\n在の確認を定めたものでございます。第９条は、職員の一般的条件、第10条は、職員の知識及び技能の向\n上等を規定してございます。\n次のページをお開き願います。第11条は、他の社会福祉施設等を併せて設置するときの設備及び職員の\n基準です。第12条は、利用乳幼児を平等に取扱う原則、第13条は、虐待等の禁止でございます。第14条は、\n衛生管理等、第15条は、食事について規定しております。第16条は、事業所内部の規定でございます。\n次のページをお開き願います。第17条は、事業所に備える帳簿でございます。第18条は、秘密保持等、第\n19条は、苦情への対応でございます。\n続いて、６ページをお開き願います。第20条は、乳児等通園支援事業の区分です。第２項、一般型乳児等\n通園支援事業と第３項、余裕活用型乳児等通園支援事業の二つがございます。余裕活用型につきましては、\n既存の保育施設の保育定員に空きがある枠を利用して、こども誰でも通園制度の保育を実施する方法とな\nっております。第21条から第25条までは一般型乳児等通園支援事業に関する条項です。第21条は、設備の\n基準です。８ページまでにかけまして、設備基準を詳細に規定してございます。\n８ページをお開き願います。第22条は、職員の基準でございます。\n続いて、９ページをお開き願います。第23条は、設備及び職員の基準の特例でございます。第24条は、乳\n児等通園支援の内容です。第25条は、保護者と密接な連携を取り保護者の理解と協力を得るよう努めるこ\nとを規定しております。\n10ページをお開き願います。第26条及び第27条は、余裕活用型乳児等通園支援事業に関する条項です。\n第26条は、設備及び職員の基準です。第27条は、第24条の通園支援の内容、第25条保護者との連絡の規定\nは、余裕活用型乳児等通園支援事業について準用する規定でございます。第28条は、記録等については書\n面に代えて電磁的記録、いわゆる電子データにより行うことができるとしております。\n続いて、11ページをお開き願います。附則第１項につきましては、施行期日の定めであります。公布の\n日から施行し、ただし、第23条、設備及び職員の基準の特例につきましては、令和８年４月１日から施行\nするものでございます。第２項は経過措置の規定で、公布の日から令和８年３月31日までの間においては、\n第16条第１項第６号中、利用定員とあるのは、乳児・幼児の区分ごとの利用定員と読み替えるものとする\nものでございます。以上で議案第10号の説明を終わります。",
+    "text_length": 1786,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-223"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-120",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村 章生",
+    "member_faction": "",
+    "text": "（木村章生）今これは条例の制定ですよね。それで、もう一度聞きたいんですけれども、今保育所と\nいうのは、親が働いていないと入れないですよね。それが働いていなくても、週10時間と言いましたか、\nということが認められるということですよね。確認します。\n- 56 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉",
+    "text_length": 156,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-225"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-121",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この条例で規定しております、いわゆるこども誰でも通園制度、こちらにつきま\nしてはですね、議員仰せのとおりですね、働いている、働いていないにかかわらず、週ではなく、月10時間\n程度を上限とするということで、こちらの目的としましては、子どもの成長支援、子どもたちの関わりで\nすとか育ちを応援する、そして保護者の負担軽減、育児の負担を軽くしリフレッシュや子育ての孤立を防\nぐといった目的で制度が新設されたものでございます。以上でございます。",
+    "text_length": 217,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-226"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-122",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村 章生",
+    "member_faction": "",
+    "text": "（木村章生）ということは仁木町もこの制度に則って子どもを預かったりできるということでしょ\nうか。",
+    "text_length": 48,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-227"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-123",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "この制度につきましてはですね、国が推進しているもので、令和８年度から全て\nの自治体が実施することになる見込みとなっておりまして、本町につきましても、上程しました条例に基\nづきまして設備と運営に関する基準を定めて仁木町で実施することができるとなっているところでござい\nます。以上でございます。",
+    "text_length": 145,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-228"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-124",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "３番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "木村 章生",
+    "member_faction": "",
+    "text": "（木村章生）こういう条例は良いんですけれども、先ほども待機児童とかのいろいろ問題もありま\nしたのでね、これ、決まりはできても結局は預けられないというような状況になるようなことがないよう\nに、町の方もそういうふうに準備するというか、体制を整えないと、この条例をせっかく決めても受入れ\nられないというようなことがないように取組方は考えているんでしょうか。",
+    "text_length": 175,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-229"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-125",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "本町ではですね、恒常的な事業利用を見込めないことから先ほど説明しました事\n業類型としましては、余裕活用型で実施を検討しているところでございます。この余裕活用型というのは、\n在園児の空き定員の部分を活用して受入れを行うということですので、先ほど来お話ししておりますとお\nり、現在ちょっと定員の部分ですとか、保育士の受入状況ですとかがちょっと厳しい状況にありますので、\nそちらにつきましては保育施設及びですね、希望等々マッチングと言いますか、そういった形でですね、\n調整をしながら進めてまいりたいと思っております。以上でございます。",
+    "text_length": 264,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-230"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-126",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）余裕活用型で運営していくという話だったんですけれども、これは大江も銀山も対象\nになるという認識でよろしいでしょうか。",
+    "text_length": 64,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-232"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-127",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "大江や銀山といったへき地保育所でできないのかといったご質問だと思います。\n現在のですね、へき地保育所の受入体制等を踏まえるとですね、町としてはちょっと現時点では難しい\nとは考えております。先ほど、こども誰でも通園制度につきましては、満６か月から受入れできるという\nところではございますが、へき地保育所は満１歳からというところもあり、また、今は基本２名体制での\n保育を実施しているということで、小さいお子さんですとやはりちょっとそこに人手を割いてしまうとい\nうところで、現時点ではちょっと難しいと考えております。以上でございます。\n- 57 -\n\n令和７年第４回定例会会議録〈令和７年12月18日〉",
+    "text_length": 298,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-233"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-128",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "１番議員",
+    "speaker_role": "質問",
+    "is_procedural": false,
+    "member_name": "前田 春奈",
+    "member_faction": "",
+    "text": "（前田春奈）それでは、にき保育園のみでの運用という認識でよろしいですか。",
+    "text_length": 36,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-234"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-129",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -846,35 +2964,58 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-219"
+        "1-inline-235"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-038",
+    "id": "niki-20251004-1-130",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
     "schedule_id": 1,
     "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
     "date": "2025-12-18",
-    "speaker": "前田春奈議員",
+    "speaker": "１番議員",
     "speaker_role": "質問",
     "is_procedural": false,
     "member_name": "前田 春奈",
     "member_faction": "",
-    "text": "木村議員も申し上げておりましたが、繰り返し申し上げるようにはなるんですけれど\nも、やはり受皿、体制をしっかり整えていっていただければと思いますので、よろしくお願いいたします。",
-    "text_length": 87,
+    "text": "（前田春奈）木村議員も申し上げておりましたが、繰り返し申し上げるようにはなるんですけれど\nも、やはり受皿、体制をしっかり整えていっていただければと思いますので、よろしくお願いいたします。",
+    "text_length": 93,
     "source": {
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-220"
+        "1-inline-236"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-039",
+    "id": "niki-20251004-1-131",
+    "municipality": "niki",
+    "council_id": 20251004,
+    "council_name": "令和7年第4回定例会",
+    "schedule_id": 1,
+    "schedule_name": "第4回定例会（令和7年12月18日開催） (PDF:1.47MB)",
+    "date": "2025-12-18",
+    "speaker": "菊地健文福祉課長",
+    "speaker_role": "答弁",
+    "is_procedural": false,
+    "member_name": null,
+    "member_faction": null,
+    "text": "只今いただきました意見を基にですね、子どもの受入体制ですとか、保育士の確\n保について尽力してまいりたいと考えております。以上でございます。",
+    "text_length": 69,
+    "source": {
+      "minutes_file": "data/niki/minutes/20251004.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-237"
+      ]
+    }
+  },
+  {
+    "id": "niki-20251004-1-132",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -892,12 +3033,12 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-227"
+        "1-inline-243"
       ]
     }
   },
   {
-    "id": "niki-20251004-1-040",
+    "id": "niki-20251004-1-133",
     "municipality": "niki",
     "council_id": 20251004,
     "council_name": "令和7年第4回定例会",
@@ -915,7 +3056,7 @@
       "minutes_file": "data/niki/minutes/20251004.json",
       "schedule_id": 1,
       "minute_ids": [
-        "1-inline-238"
+        "1-inline-254"
       ]
     }
   }

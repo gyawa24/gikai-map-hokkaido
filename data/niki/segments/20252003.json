@@ -30,6 +30,29 @@
     "schedule_id": 1,
     "schedule_name": "第3回臨時会（令和7年8月5日開催） (PDF:978KB)",
     "date": "2025-08-05",
+    "speaker": "委員長",
+    "speaker_role": "質問",
+    "is_procedural": true,
+    "member_name": null,
+    "member_faction": null,
+    "text": "報告のとおり、議事を執り進めることにご異議ありませんか。\n〔 「異議なし」と呼ぶ者あり 〕",
+    "text_length": 45,
+    "source": {
+      "minutes_file": "data/niki/minutes/20252003.json",
+      "schedule_id": 1,
+      "minute_ids": [
+        "1-inline-005"
+      ]
+    }
+  },
+  {
+    "id": "niki-20252003-1-003",
+    "municipality": "niki",
+    "council_id": 20252003,
+    "council_name": "令和7年第3回臨時会",
+    "schedule_id": 1,
+    "schedule_name": "第3回臨時会（令和7年8月5日開催） (PDF:978KB)",
+    "date": "2025-08-05",
     "speaker": "佐藤聖一郎町長",
     "speaker_role": "答弁",
     "is_procedural": false,
@@ -46,7 +69,7 @@
     }
   },
   {
-    "id": "niki-20252003-1-003",
+    "id": "niki-20252003-1-004",
     "municipality": "niki",
     "council_id": 20252003,
     "council_name": "令和7年第3回臨時会",
@@ -69,7 +92,7 @@
     }
   },
   {
-    "id": "niki-20252003-1-004",
+    "id": "niki-20252003-1-005",
     "municipality": "niki",
     "council_id": 20252003,
     "council_name": "令和7年第3回臨時会",
@@ -92,7 +115,7 @@
     }
   },
   {
-    "id": "niki-20252003-1-005",
+    "id": "niki-20252003-1-006",
     "municipality": "niki",
     "council_id": 20252003,
     "council_name": "令和7年第3回臨時会",
@@ -115,7 +138,7 @@
     }
   },
   {
-    "id": "niki-20252003-1-006",
+    "id": "niki-20252003-1-007",
     "municipality": "niki",
     "council_id": 20252003,
     "council_name": "令和7年第3回臨時会",
