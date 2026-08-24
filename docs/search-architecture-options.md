@@ -8,7 +8,7 @@
 
 postingは文書IDを厳密昇順のdelta-varintへ圧縮する。2文字語は単一bigram、3文字語は単一trigram、頻出語は専用exact postingで一致が確定する。それ以外の4文字以上はtrigram候補を原文blockで必ず再確認する。manifest・asset catalog・posting・表示文書・原文blockの合計が96 requests / gzip 16MiB / 展開後64MiBを超える検索は、400文字版へ退避せず、語句追加を求めて取得前にfail-closedにする。
 
-原文確認は最大64文書 / 128KiBを一つのgzip memberにし、**1 gzip memberを1つの`.bin` asset**として保存する。Cloudflare Static AssetsはRange要求を無視して`200`でasset全体を返すため、複数memberを一つのassetへ連結しない。ブラウザはblock全体を通常取得し、`200`はcatalog上の`byte_start=0`かつblock bytesとasset総長が完全一致する場合だけ許可する。`206`を返す配信元では`Content-Range`の開始・終了・asset総長も厳密照合する。assetには句読点・漢字表記を保った`cleanText`原文を保存し、検索照合時だけ正規化する。圧縮/展開bytesとSHA-256の不一致や上限超過時は、400文字版へ退避せず全文検索をfail-closedにする。
+原文確認は最大64文書 / 1MiBを一つのgzip memberにし、**1 gzip memberを1つの`.bin` asset**として保存する。Cloudflare Static AssetsはRange要求を無視して`200`でasset全体を返すため、複数memberを一つのassetへ連結しない。ブラウザはblock全体を通常取得し、`200`はcatalog上の`byte_start=0`かつblock bytesとasset総長が完全一致する場合だけ許可する。`206`を返す配信元では`Content-Range`の開始・終了・asset総長も厳密照合する。assetには句読点・漢字表記を保った`cleanText`原文を保存し、検索照合時だけ正規化する。圧縮/展開bytesとSHA-256の不一致や上限超過時は、400文字版へ退避せず全文検索をfail-closedにする。1MiB上限は代表クエリの転送量検証に加え、Cloudflareローカルpreviewのasset数も実運用範囲へ収める。
 
 公開会議録のcoverageは会議単位ではなくschedule単位で管理する。公式minuteのうち空本文、名簿、明示的な`is_procedural`だけを本文索引から除き、`○議長`・`△議題`を含む他のtypeは原文全文を対象にする。各scheduleの原文hash・文字数・minute type別の対象/除外行数・文字数・理由をmanifestへ残し、目次・CID文字化け・画像PDFは理由付きでのみ除外する。
 
