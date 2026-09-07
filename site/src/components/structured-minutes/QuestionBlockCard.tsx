@@ -1,5 +1,6 @@
 import type { QuestionBlock, TopicBlock, Turn } from "@/lib/structured-minutes/types";
 import EvidenceLink from "./EvidenceLink";
+import { formatMeetingDate } from "./formatMeetingDate";
 
 type QuestionBlockCardProps = {
   block: QuestionBlock;
@@ -33,10 +34,16 @@ export default function QuestionBlockCard({
   const agendaTitles = uniqueTitles(block.agenda_titles);
 
   return (
-    <article className="rounded-lg border border-[#CBD5E0] bg-white p-5 shadow-sm">
+    <article
+      id={block.id}
+      className="scroll-mt-24 rounded-lg border border-[#CBD5E0] bg-white p-5 shadow-sm"
+    >
       <div className="mb-3 flex flex-wrap items-center gap-2">
         <span className="rounded-full border border-[#C5D0E6] bg-[#E8EEF7] px-2 py-0.5 text-xs font-bold text-[#1B3A6B]">
           質問セッション
+        </span>
+        <span className="text-xs font-medium text-[#718096]">
+          {formatMeetingDate(block.meeting_date)}
         </span>
         <h3 className="text-lg font-bold leading-snug text-[#1A202C]">
           {block.questioner_name_original}
@@ -47,7 +54,7 @@ export default function QuestionBlockCard({
       </div>
 
       <p className="mb-4 text-sm leading-relaxed text-[#4A5568]">
-        公式会議録上の質問者ごとのまとまりです。下の質問項目名は、原文中の該当箇所へ移動しやすくするための編集部整理です。
+        公式会議録上の質問者ごとのまとまりです。下の質問項目名は、原文中の該当箇所へ移動しやすくするために構造化処理で付与した整理情報です。
       </p>
 
       {agendaTitles.length > 0 && (

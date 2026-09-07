@@ -169,6 +169,14 @@ export type TopicBlock = {
 };
 
 export type StructuredMinutes = {
+  read_quality?: {
+    contract: "legacy-v1-safe-read";
+    unknown_date_count: number;
+    withheld_topic_count: number;
+    missing_source_position_count: number;
+    provenance_status: "unverified";
+    freshness_status: "unverified";
+  };
   source_document: SourceDocument;
   speakers: Speaker[];
   turns: Turn[];

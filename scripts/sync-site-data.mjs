@@ -213,6 +213,7 @@ async function listJsonFiles(baseDir) {
 
 async function publicationMinutesFiles(sourceIndex, sourceDir) {
   const files = new Set(["index.json"]);
+  const councilIds = new Set();
   for (const entry of sourceIndex) {
     const file = typeof entry?.file === "string" ? entry.file.trim() : "";
     if (!/^[^/\\]+\.json$/u.test(file)) {
@@ -220,6 +221,26 @@ async function publicationMinutesFiles(sourceIndex, sourceDir) {
     }
     if (!(await pathExists(path.join(sourceDir, file)))) {
       throw new Error(`minutes index references missing meeting JSON: ${rel(path.join(sourceDir, file))}`);
+    }
+    const councilId = String(entry.council_id ?? "");
+    if (!councilId || councilIds.has(councilId) || files.has(file)) {
+      throw new Error(`minutes index contains a missing or duplicate council identity: ${councilId}`);
+    }
+    councilIds.add(councilId);
+    const council = await readJson(path.join(sourceDir, file));
+    if (String(council?.council_id) !== councilId || !Array.isArray(council?.schedules) || !council.schedules.length) {
+      throw new Error(`minutes index references malformed or mismatched meeting JSON: ${file}`);
+    }
+    if (entry.schedule_count != null && entry.schedule_count !== council.schedules.length) {
+      throw new Error(`minutes index schedule_count differs from meeting JSON: ${file}`);
+    }
+    const scheduleIds = new Set();
+    for (const schedule of council.schedules) {
+      const scheduleId = String(schedule?.schedule_id ?? "");
+      if (!scheduleId || scheduleIds.has(scheduleId) || !Array.isArray(schedule?.minutes)) {
+        throw new Error(`minutes meeting contains invalid or duplicate schedules: ${file}`);
+      }
+      scheduleIds.add(scheduleId);
     }
     files.add(file);
     const enrichedFile = path.join("enriched", file);
@@ -261,7 +282,7 @@ export async function syncPublishedMinutes(sourceDir, destDir, dryRun = false) {
   if (!(await pathExists(sourceDir))) return false;
   const sourceIndexPath = path.join(sourceDir, "index.json");
   if (!(await pathExists(sourceIndexPath))) {
-    return copyPath(sourceDir, destDir, dryRun);
+    throw new Error(`minutes publication requires a source index: ${rel(sourceIndexPath)}`);
   }
   const sourceIndexContents = await fs.readFile(sourceIndexPath, "utf8");
   const sourceIndex = JSON.parse(sourceIndexContents);

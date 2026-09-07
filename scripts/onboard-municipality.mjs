@@ -4,8 +4,6 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { printBudgetSourceReminders } from "./lib/budget-source-reminders.mjs";
-import { printPublicDataReminders } from "./lib/public-data-reminders.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,25 +11,6 @@ const REPO_ROOT = path.resolve(__dirname, "..");
 const ROOT_DATA_DIR = path.join(REPO_ROOT, "data");
 const SITE_DATA_DIR = path.join(REPO_ROOT, "site", "data");
 const ROOT_MUNICIPALITIES_PATH = path.join(ROOT_DATA_DIR, "municipalities.json");
-const SITE_MUNICIPALITIES_PATH = path.join(SITE_DATA_DIR, "municipalities.json");
-
-const PUBLIC_SYNC_ENTRIES = [
-  "members.json",
-  "members_activity.json",
-  "minutes",
-  "index.json",
-  "sessions",
-  "decisions.json",
-  "schedule.json",
-  "newsletter.json",
-  "election.json",
-  "comprehensive_plan.json",
-  "plan_activity.json",
-  "vocabulary.json",
-  "budgets",
-  "publications",
-];
-
 const FIELD_ORDER = [
   "slug",
   "name",
@@ -226,43 +205,6 @@ async function pathExists(targetPath) {
   }
 }
 
-async function copyIfExists(sourcePath, destPath, dryRun) {
-  if (!(await pathExists(sourcePath))) return false;
-  if (dryRun) {
-    console.log(`[dry-run] copy ${path.relative(REPO_ROOT, sourcePath)} -> ${path.relative(REPO_ROOT, destPath)}`);
-    return true;
-  }
-  await fs.mkdir(path.dirname(destPath), { recursive: true });
-  await fs.cp(sourcePath, destPath, { recursive: true, force: true });
-  console.log(`copied ${path.relative(REPO_ROOT, sourcePath)} -> ${path.relative(REPO_ROOT, destPath)}`);
-  return true;
-}
-
-async function syncMunicipalityDirectory(slug, dryRun) {
-  const sourceDir = path.join(ROOT_DATA_DIR, slug);
-  const destDir = path.join(SITE_DATA_DIR, slug);
-  const sourceExists = await pathExists(sourceDir);
-
-  await ensureDir(sourceDir, dryRun);
-  await ensureDir(destDir, dryRun);
-
-  if (!sourceExists) {
-    console.log(`skip sync: data/${slug}/ has no files yet`);
-    return;
-  }
-
-  if (dryRun) {
-    console.log(`[dry-run] sync public entries for data/${slug}/ -> site/data/${slug}/`);
-  }
-
-  let copied = 0;
-  for (const entry of PUBLIC_SYNC_ENTRIES) {
-    const didCopy = await copyIfExists(path.join(sourceDir, entry), path.join(destDir, entry), dryRun);
-    if (didCopy) copied += 1;
-  }
-  console.log(`synced ${slug}: ${copied} public entries`);
-}
-
 async function hasMinutes(slug) {
   return (
     (await pathExists(path.join(ROOT_DATA_DIR, slug, "minutes", "index.json"))) ||
@@ -318,23 +260,18 @@ async function runMinutesDateBackfill(slug, dryRun) {
   });
 }
 
-async function runVerify(slug, dryRun) {
+async function runPublicSync(slug, verify, dryRun) {
+  const args = [path.join(REPO_ROOT, "scripts", "sync-site-data.mjs"), "--slug", slug, "--build-capabilities"];
+  if (verify) args.push("--verify");
   if (dryRun) {
-    console.log(`[dry-run] node scripts/verify-municipality.mjs ${slug}`);
+    console.log(`[dry-run] node scripts/sync-site-data.mjs --slug ${slug} --build-capabilities${verify ? " --verify" : ""}`);
     return;
   }
-
   await new Promise((resolve, reject) => {
-    const child = spawn("node", [path.join(REPO_ROOT, "scripts", "verify-municipality.mjs"), slug], {
-      cwd: REPO_ROOT,
-      stdio: "inherit",
-    });
+    const child = spawn("node", args, { cwd: REPO_ROOT, stdio: "inherit" });
     child.on("exit", (code) => {
-      if (code === 0) {
-        resolve();
-        return;
-      }
-      reject(new Error(`verify-municipality failed for ${slug} with exit code ${code}`));
+      if (code === 0) resolve();
+      else reject(new Error(`public sync failed for ${slug} with exit code ${code}`));
     });
     child.on("error", reject);
   });
@@ -395,22 +332,15 @@ async function main() {
   }
 
   await writeJson(ROOT_MUNICIPALITIES_PATH, municipalities, options.dryRun);
-  await writeJson(SITE_MUNICIPALITIES_PATH, municipalities, options.dryRun);
-
+  await ensureDir(path.join(ROOT_DATA_DIR, options.slug), options.dryRun);
+  await ensureDir(path.join(SITE_DATA_DIR, options.slug), options.dryRun);
   await runMinutesDateBackfill(options.slug, options.dryRun);
-  await syncMunicipalityDirectory(options.slug, options.dryRun);
 
   if (options.buildSegments) {
     await runBuildSegments(options.slug, options.dryRun);
-    await syncMunicipalityDirectory(options.slug, options.dryRun);
   }
 
-  await printPublicDataReminders(REPO_ROOT, [options.slug], { dryRun: options.dryRun });
-  await printBudgetSourceReminders(REPO_ROOT, [options.slug], { dryRun: options.dryRun });
-
-  if (options.verify) {
-    await runVerify(options.slug, options.dryRun);
-  }
+  await runPublicSync(options.slug, options.verify, options.dryRun);
 }
 
 main().catch((error) => {

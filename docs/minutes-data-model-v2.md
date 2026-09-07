@@ -299,6 +299,30 @@ v2正本の全面実装に先立ち、現行投影には次の公開ゲートを
 - 自治体ごとにcoverage、provenance、quality、freshness、legacy parityを確認する。
 - legacy generatorを削除するのは、対象自治体のv2投影とrollback手順が確認できた後だけとする。
 
+## 2026-09-07の実装範囲
+
+現在はPhase 0とlegacy読み取り・公開同期の共通化までを実装している。v2正本への全件移行や、原典revisionとの一致確認を完了したとは扱わない。
+
+- 通常会議録は公開indexで掲載可否を確認し、`minutesSessionValidation.ts` で会議ID・日程ID・本文構造を検証する。未収録、通信失敗、JSON解析失敗を読み取り結果として区別する。
+- `minutesSource.ts` で原典URLと引用を共通化する。発言・日程・会議の個別URLを優先し、公式検索画面への代替導線はその範囲が分かるラベルで表示する。
+- legacy構造化データは `site/src/lib/structured-minutes/read-contract.mjs` を画面とCLIで共用する。原文・IDを維持し、不正な日付を未確認へ正規化する。Topicは公開フラグに加え、確認者・確認日時・参照整合が揃ったものだけを表示する。
+- 構造化データの取得証跡、原典位置、最新版との一致は別々に扱う。legacyを読み取れたことだけでv2の品質検証済みにしない。
+- `onboard-municipality.mjs` はsegments生成後に標準の `sync-site-data.mjs --build-capabilities --verify` を実行する。minutes同期は公開indexの許可対象だけを扱い、ID不一致・日程数不一致・JSON不正があれば同期前に止める。
+- gijiroku.com取得は失敗時に空本文で既存会議を上書きせず、追加日程の取得でも既存IDと指定対象外の年を保持する。
+
+検証コマンド（リポジトリルート）:
+
+```sh
+node --test scripts/tests/minutes-detail-contract.test.mjs scripts/tests/minutes-index-ui.test.mjs scripts/tests/structured-minutes-read-contract.test.mjs scripts/tests/onboard-municipality.test.mjs scripts/tests/sync-site-data.test.mjs
+python3 -m unittest discover -s scraper/tests -p 'test_*minutes*.py'
+node site/scripts/validate-structured-minutes.mjs --json
+node site/scripts/validate-structured-minutes.mjs --strict
+```
+
+通常の監査はlegacyの読取可否と限界を報告し、`--strict` は未検証の来歴・鮮度を含む警告があれば失敗する。2026-09-07の開発用55会議と本番用54会議は読み取り可能だが、厳格監査には通っていない。本番反映には本番用54会議を使用し、開発用の追加データを含めない。
+
+未完了なのは、v2正本の生成と移行、原典revision・具体位置の記録、派生データの鮮度検証、構造化データの標準同期への統合である。現行の構造化builderは `data/structured-minutes/` と `site/data/structured-minutes/` に同じlegacy形式を出力する。これをv2正本の配置と混同しない。
+
 ## 完了条件
 
 ### v2レコード単位

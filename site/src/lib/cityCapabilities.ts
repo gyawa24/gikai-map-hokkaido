@@ -1,5 +1,4 @@
-import fs from "fs";
-import path from "path";
+import cityCapabilitiesData from "../../data/_city-capabilities.json";
 
 export type CityCapabilityKey =
   | "members"
@@ -41,22 +40,8 @@ const CAPABILITY_DEFINITIONS: { key: CityCapabilityKey; paths: string[] }[] = [
   { key: "segments", paths: ["segments/_index.json"] },
 ];
 
-let cachedIndex: CityCapabilitiesIndex | null = null;
-
-function getDataRoot(): string {
-  return path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
-}
-
-function readIndex(): CityCapabilitiesIndex | null {
-  if (cachedIndex) return cachedIndex;
-  const filePath = path.join(/*turbopackIgnore: true*/ getDataRoot(), "_city-capabilities.json");
-  try {
-    cachedIndex = JSON.parse(fs.readFileSync(filePath, "utf-8")) as CityCapabilitiesIndex;
-    return cachedIndex;
-  } catch {
-    return null;
-  }
-}
+// Workerでも生成済みの公開台帳を参照できるよう、ビルド時に取り込む。
+const capabilityIndex = cityCapabilitiesData as CityCapabilitiesIndex;
 
 function emptyCityCapability(slug: string): CityCapability {
   const capabilities = Object.fromEntries(
@@ -66,13 +51,11 @@ function emptyCityCapability(slug: string): CityCapability {
 }
 
 export function getCityCapability(slug: string): CityCapability {
-  return readIndex()?.cities[slug] ?? emptyCityCapability(slug);
+  return capabilityIndex.cities[slug] ?? emptyCityCapability(slug);
 }
 
 export function getCityCapabilities(): Record<string, CityCapability> {
-  const index = readIndex();
-  if (index) return index.cities;
-  return {};
+  return capabilityIndex.cities;
 }
 
 export function hasCityCapability(slug: string, key: string): boolean {
