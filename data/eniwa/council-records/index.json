@@ -1,0 +1,13 @@
+{
+  "schema_version": "council-record-body-registry.v1",
+  "municipality_id": "eniwa",
+  "records": [
+    {
+      "council_id": 265,
+      "state": "active",
+      "release_path": "council-records/265/releases/2026-09-07T14-28-39-363Z-912987d67e16",
+      "minutes_sha256": "89597c8cfa60c69a11f9418ccafad0ed6bf8cb9c18f066d891e06b94fe691f46",
+      "publication_sha256": "8b07befe13a71328eeceb12988ee6d44b246da03eff9a469418c2bfdf26ccfea"
+    }
+  ]
+}

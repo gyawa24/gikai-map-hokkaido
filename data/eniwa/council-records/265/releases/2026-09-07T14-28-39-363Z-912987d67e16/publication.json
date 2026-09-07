@@ -1,0 +1,107 @@
+{
+  "schema_version": "council-record-v2-body-publication.v1",
+  "municipality_id": "eniwa",
+  "council_id": "265",
+  "record_id": "eniwa:record:dnp:265",
+  "scope": "body_only",
+  "state": "approved",
+  "public_visible": true,
+  "canonical_public_visible": false,
+  "generated_at": "2026-09-07T14:28:39.363Z",
+  "approval": {
+    "scope": "body_only",
+    "approved_by": "小川陽平",
+    "approved_at": "2026-09-07T03:01:20.058391+00:00",
+    "approval_ref": "user-approval:2026-09-07:minutes-body-cutover"
+  },
+  "freshness": {
+    "method": "new_capture_verified",
+    "manifest_sha256": "fc6334710453b968801241044bb82a0100caaa898a31d8f2e48ed2b2aaf24215",
+    "checked_at": "2026-09-07T14:27:06.811Z",
+    "limitation": "Verification declaration at checked_at only; future source freshness is not certified."
+  },
+  "inputs": {
+    "record_sha256": "31d5580a06a612d7f4a34aad33bdd934fef6cebc60db7a811fd00dc25853fe75",
+    "manifest_sha256": "fc6334710453b968801241044bb82a0100caaa898a31d8f2e48ed2b2aaf24215",
+    "baseline_sha256": "89597c8cfa60c69a11f9418ccafad0ed6bf8cb9c18f066d891e06b94fe691f46",
+    "index_sha256": "d5cac4008db16211a7e2cc22a7eaba2a911259c150876da489da2f7c1c98caa9",
+    "index_item_sha256": "1b8e9b0dd74f4e554900ac93c0d15d33c021bc6f5bec04f0eca51683d8647456",
+    "municipality_sha256": "89a73cb0378f2a686b60d03a3f747257b5451b90463960c3b07a808e5cfca77b",
+    "revisions": [
+      {
+        "source_artifact_id": "eniwa:source:dnp:265:schedules",
+        "source_revision_id": "eniwa:source:dnp:265:schedules:revision:47fe68130486b4275f7031618a05b596193bbc69b72b98b895a4e081ae56a25e",
+        "content_sha256": "47fe68130486b4275f7031618a05b596193bbc69b72b98b895a4e081ae56a25e",
+        "byte_size": 759
+      },
+      {
+        "source_artifact_id": "eniwa:source:dnp:265:2",
+        "source_revision_id": "eniwa:source:dnp:265:2:revision:3d71a2db062c25b0c05384e36a60395b302b809ade1abafe3e630f9f2c70f662",
+        "content_sha256": "3d71a2db062c25b0c05384e36a60395b302b809ade1abafe3e630f9f2c70f662",
+        "byte_size": 88603
+      }
+    ]
+  },
+  "output": {
+    "file": "265.json",
+    "sha256": "89597c8cfa60c69a11f9418ccafad0ed6bf8cb9c18f066d891e06b94fe691f46",
+    "json_sha256": "d57eec81e3d77fb16dfe3112d519f56904c188139bd52c39b8cb759cfeedb94a",
+    "byte_size": 46548
+  },
+  "validation": {
+    "validator_version": "1.0.0",
+    "legacy_equivalence": true,
+    "errors": [],
+    "warnings": [],
+    "gate_results": [
+      {
+        "gate": "schema",
+        "status": "pass",
+        "detail": "checked"
+      },
+      {
+        "gate": "graph",
+        "status": "pass",
+        "detail": "checked"
+      },
+      {
+        "gate": "provenance",
+        "status": "pass",
+        "detail": "Stored snapshot hashes and parser derivation checked; publisher authority and live URL status are not independently certified."
+      },
+      {
+        "gate": "content",
+        "status": "pass",
+        "detail": "Stored-source text, speaker labels, positions and record metadata consistency checked; calendar facts are not independently certified."
+      },
+      {
+        "gate": "quality",
+        "status": "not_applicable",
+        "detail": "Semantic/OCR quality is not certified by this offline pilot validator."
+      },
+      {
+        "gate": "freshness",
+        "status": "pass",
+        "detail": "Current revision references and recorded retrieval/generation chronology checked; HTTP observation times are not independently certified."
+      },
+      {
+        "gate": "review",
+        "status": "not_applicable",
+        "detail": "Private record: review metadata consistency checked; human review not certified."
+      },
+      {
+        "gate": "reconciliation",
+        "status": "not_applicable",
+        "detail": "No provisional evidence in this record."
+      }
+    ],
+    "canonical_publication_ready": false
+  },
+  "excluded_scopes": [
+    "person_identity",
+    "question_blocks",
+    "topics",
+    "member_activity",
+    "canonical_record_publication"
+  ]
+}

@@ -10,12 +10,7 @@
     "start_date": "2026-04-14",
     "end_date": "2026-04-14",
     "sort_date": "2026-04-14",
-    "date_precision": "day",
-    "content_sha256": "d57eec81e3d77fb16dfe3112d519f56904c188139bd52c39b8cb759cfeedb94a",
-    "body_source": {
-      "format": "council-record.v2",
-      "publication_path": "publications/minutes/265.json"
-    }
+    "date_precision": "day"
   },
   {
     "council_id": 263,

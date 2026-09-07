@@ -88,4 +88,15 @@ node --test scripts/tests/council-record-v2-body-publication.test.mjs scripts/te
 
 本文・原典・receipt改変の拒否、無書込みdry-run、明示的な鮮度確認、active二重昇格拒否、破損本文と欠落/重複indexの復旧、他会議の保持を検証する。
 
-実反映記録: 未追記。releaseパス、commit/ref、同期・本番取得結果は実行担当が追記する。
+### 2026-09-07 千歳578の本番反映
+
+- 対象release: `data/chitose/council-records/578/releases/2026-09-07T03-02-34-981Z-5ca79940d97c`。台帳は `active`、範囲は `body_only`。
+- 実装commit: `d25d67fb7d486bcf87e7fec5c37e704d1896c848`。[PR #6](https://github.com/gyawa24/gikai-map-hokkaido/pull/6)をmainへマージしたcommitは `e6c42e99b58dae1e344a3fd9bc4a3b4e1058408f`。
+- Cloudflare本番Worker: `e2ab9a34-dbea-4a13-b91f-56ed8c37d99b`（deployment記録: 2026-09-07T03:36:54.130Z）。直前のWorkerは `faa75486-cfe6-4265-9114-e804219b015f`。Workerだけを戻してもmain参照のRawデータは戻らないため、本文の復旧には上記rollback・同期・Git反映も必要。
+- 公開本文bytes SHA-256: `c0ec7706520f8e3cd92c230e3590d4eb08d146bff5f6aaa81e97ee7cb18f9cc8`。旧本文との同一性を維持。7日程・271発言・123非発言の394原記録で、画面の387発言・議題は日程見出し7件を除く既存集計。
+- 標準同期と最終 `--verify` が成功。GitHub Rawのmainにある本文、minutes/index、publications/minutes/578.jsonを独立HTTP取得し、すべて200・ローカルbytes hash一致を確認。ブラウザのネットワークログ取得とは区別する。
+- 本番ブラウザで本文・日程・`#minute-4-8` の発言直接リンク・更新情報を確認。`cf:post-cutover-check` と `cf:finalize-production` が成功。最初の公開smokeで通信失敗が2件出たが、組込みの再試行で成功。
+- 検証: JS 271成功・既存fixture欠落1スキップ、Python 53成功。data-healthはエラー0・既存のroot-only候補52件による警告1。`--strict` の全面成功とは扱わない。保存コピーで本文破損からのrollbackと他会議の保持を確認。
+- 証跡は作業checkoutの `reports/body-cutover-*` と、同じMacの `/Users/yohei/gikai-map-hokkaido/reports/minutes-v2-body-cutover-20260907/` に保存。後者の `production-release.json`、各検証ログ、`SHA256SUMS` がリリース時点の記録。原典・正本・復旧baseline自体はGit追跡済みの上記releaseに保持する。
+
+これは記録時点の確認結果であり、将来の原典変更や本番状態を保証するものではない。以後の切替では対象会議の原典を新規取得し、実装hashの変更が既存active会議へ及ぼす影響も確認する。

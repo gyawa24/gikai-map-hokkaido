@@ -1,0 +1,52 @@
+{
+  "format": "dnp-capture-manifest/1",
+  "municipality_id": "eniwa",
+  "council_id": 265,
+  "legacy_input": {
+    "path": "data/eniwa/council-records/265/releases/2026-09-07T14-28-39-363Z-912987d67e16/baseline.json",
+    "sha256": "89597c8cfa60c69a11f9418ccafad0ed6bf8cb9c18f066d891e06b94fe691f46"
+  },
+  "captures": [
+    {
+      "endpoint": "minutes/get_schedule",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_schedule",
+        "payload": {
+          "tenant_id": 89,
+          "council_id": 265
+        }
+      },
+      "observed_at": "2026-09-07T14:25:51.369Z",
+      "fetched_at": "2026-09-07T14:25:51.835Z",
+      "http_status": 200,
+      "content_sha256": "47fe68130486b4275f7031618a05b596193bbc69b72b98b895a4e081ae56a25e",
+      "byte_size": 759,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/eniwa/council-records/265/snapshots/47fe68130486b4275f7031618a05b596193bbc69b72b98b895a4e081ae56a25e.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 89,
+          "council_id": 265,
+          "schedule_id": 2
+        }
+      },
+      "observed_at": "2026-09-07T14:25:53.338Z",
+      "fetched_at": "2026-09-07T14:25:54.093Z",
+      "http_status": 200,
+      "content_sha256": "3d71a2db062c25b0c05384e36a60395b302b809ade1abafe3e630f9f2c70f662",
+      "byte_size": 88603,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/eniwa/council-records/265/snapshots/3d71a2db062c25b0c05384e36a60395b302b809ade1abafe3e630f9f2c70f662.json"
+    }
+  ]
+}

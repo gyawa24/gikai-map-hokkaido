@@ -1,0 +1,15 @@
+{
+  "schema_version": "minutes-body-source.v1",
+  "municipality_id": "eniwa",
+  "council_id": 265,
+  "scope": "body_only",
+  "canonical_record_path": "data/eniwa/council-records/265/releases/2026-09-07T14-28-39-363Z-912987d67e16/record.json",
+  "publication_path": "data/eniwa/council-records/265/releases/2026-09-07T14-28-39-363Z-912987d67e16/publication.json",
+  "storage_manifest_path": "data/eniwa/council-records/265/releases/2026-09-07T14-28-39-363Z-912987d67e16/storage-manifest.json",
+  "record_sha256": "31d5580a06a612d7f4a34aad33bdd934fef6cebc60db7a811fd00dc25853fe75",
+  "manifest_sha256": "fc6334710453b968801241044bb82a0100caaa898a31d8f2e48ed2b2aaf24215",
+  "publication_sha256": "8b07befe13a71328eeceb12988ee6d44b246da03eff9a469418c2bfdf26ccfea",
+  "minutes_sha256": "89597c8cfa60c69a11f9418ccafad0ed6bf8cb9c18f066d891e06b94fe691f46",
+  "content_sha256": "d57eec81e3d77fb16dfe3112d519f56904c188139bd52c39b8cb759cfeedb94a",
+  "generated_at": "2026-09-07T14:28:39.363Z"
+}
