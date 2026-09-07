@@ -62,3 +62,25 @@ test("rejects a confirmed year mismatch and stale date metadata", async () => {
     fs.rmSync(dataDir, { recursive: true, force: true });
   }
 });
+
+test("skips restricted local-only councils from public publication integrity", async () => {
+  const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), "minutes-integrity-restricted-"));
+  try {
+    writeJson(path.join(dataDir, "municipalities.json"), [{
+      slug: "restricted-fixture",
+      minutes_access: "restricted",
+    }]);
+    writeJson(path.join(dataDir, "restricted-fixture", "minutes", "index.json"), [{
+      council_id: 680,
+      year: "2025",
+      file: "680.json",
+    }]);
+
+    const result = await verifyMinutesPublicationIntegrity({ dataDir });
+    assert.deepEqual(result.errors, []);
+    assert.deepEqual(result.skippedRestrictedSlugs, ["restricted-fixture"]);
+    assert.equal(result.councilCount, 0);
+  } finally {
+    fs.rmSync(dataDir, { recursive: true, force: true });
+  }
+});

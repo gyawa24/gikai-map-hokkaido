@@ -68,6 +68,7 @@
 - `sync-site-data` と `onboard-municipality` は、公開用の `budgets/index.json` があるのに `budget_sources.json` が未更新の場合に警告する。警告が出たら、公式URL・年度・状態を同じ作業単位で更新する。
 - `segments` は重いローカル調査用データなので、公開用コピーには通常同期しない。必要な時だけ `--include-segments` を付ける。
 - `data/sapporo/` や `site/data/sapporo/` のような `.gitignore` 対象データはローカル確認用として扱う。生成台帳・健診・公開ドキュメントでは、Gitで公開されるファイルだけを基準にする。
+- `minutes_access: "restricted"` の自治体は、本文・segmentsを公開健診の完全性対象から除外する。公開対象外のローカル保管データを復元・同期して、制限を迂回してはならない。除外は健診結果に明示する。
 - 導線を出すかどうかは `hasCityCapability(slug, key)` を使う。
 - 静的生成対象の市町村一覧は `site/src/lib/staticCityParams.ts` を使う。
 - capability が無いページは `generateStaticParams` に含めず、`dynamicParams = false` で直接アクセスも 404 にする。
