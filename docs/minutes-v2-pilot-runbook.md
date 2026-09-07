@@ -178,3 +178,5 @@ python3 -m unittest discover -s scripts/tests -p 'test_gijiroku_council_capture.
 - 岩見沢799のgijiroku.com全文文書adapterは実装・検証済み。発言・質問抽出、ほかのHTML/PDF/動画ASRのv2 adapterと品質認証は今後の課題。全文一致から発言者や開催日を認定しない。
 - public認証はvalidatorが拒否する。内部試験の成功から自動で公開、標準同期、Git操作、デプロイへ進めない。
 - 公開済みcommit `67da5c76` / PR #4のlegacy改善とは別の作業。内部試験のみなので公開newsは追加しない。
+
+掲載済み本文と完全同値の従来minutesだけを別receiptで配信する手順は、[本文限定切替](minutes-v2-body-cutover.md)を参照。これは上記の内部試験とは別の公開スコープで、canonical public認証や人物・質問の確認状態を昇格させない。

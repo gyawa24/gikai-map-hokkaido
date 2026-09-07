@@ -1,0 +1,143 @@
+{
+  "schema_version": "council-record-v2-body-publication.v1",
+  "municipality_id": "chitose",
+  "council_id": "578",
+  "record_id": "chitose:record:dnp:578",
+  "scope": "body_only",
+  "state": "approved",
+  "public_visible": true,
+  "canonical_public_visible": false,
+  "generated_at": "2026-09-07T03:02:34.981Z",
+  "approval": {
+    "scope": "body_only",
+    "approved_by": "小川陽平",
+    "approved_at": "2026-09-07T03:01:20.058391+00:00",
+    "approval_ref": "user-approval:2026-09-07:minutes-body-cutover"
+  },
+  "freshness": {
+    "method": "new_capture_verified",
+    "manifest_sha256": "971ad708f52b02ec6c42a787ca56277650e2135c97dbcfadcc952820fa4806bd",
+    "checked_at": "2026-09-07T03:01:20.058391+00:00",
+    "limitation": "Verification declaration at checked_at only; future source freshness is not certified."
+  },
+  "inputs": {
+    "record_sha256": "4d9970f41aca63fb7339090bac666f9451dac911b8217830a30abcfaa2d724f1",
+    "manifest_sha256": "971ad708f52b02ec6c42a787ca56277650e2135c97dbcfadcc952820fa4806bd",
+    "baseline_sha256": "c0ec7706520f8e3cd92c230e3590d4eb08d146bff5f6aaa81e97ee7cb18f9cc8",
+    "index_sha256": "8577b830363fab810ddd5c15b456b296de2a523f029b6995664e9e1fc4f6856a",
+    "index_item_sha256": "24811f79a553c745a8bdc44a3231503ce8bb07cfb49365136a7b5cade69940c8",
+    "municipality_sha256": "40708ffc0494a56105d26a1649f3f7332d36b0c4c560bd141671295cbce8a132",
+    "revisions": [
+      {
+        "source_artifact_id": "chitose:source:dnp:578:schedules",
+        "source_revision_id": "chitose:source:dnp:578:schedules:revision:c18c2a3dedf66181121f4a59d923a748e4e61e0f50275903543f3d0b6b8d071f",
+        "content_sha256": "c18c2a3dedf66181121f4a59d923a748e4e61e0f50275903543f3d0b6b8d071f",
+        "byte_size": 5062
+      },
+      {
+        "source_artifact_id": "chitose:source:dnp:578:2",
+        "source_revision_id": "chitose:source:dnp:578:2:revision:cb09faba568457cee24ddf295c7612e6de169be25c2108573f3ca3e4a7708cb5",
+        "content_sha256": "cb09faba568457cee24ddf295c7612e6de169be25c2108573f3ca3e4a7708cb5",
+        "byte_size": 355095
+      },
+      {
+        "source_artifact_id": "chitose:source:dnp:578:3",
+        "source_revision_id": "chitose:source:dnp:578:3:revision:0fd4f691db67df3781f8b57305024c15ac64c548b883d870f61425a809f1c68b",
+        "content_sha256": "0fd4f691db67df3781f8b57305024c15ac64c548b883d870f61425a809f1c68b",
+        "byte_size": 138775
+      },
+      {
+        "source_artifact_id": "chitose:source:dnp:578:4",
+        "source_revision_id": "chitose:source:dnp:578:4:revision:1be2d0594ff17c0c2ec4b02166aeb76f80fb7d6ace64dab778cb792a33b053b3",
+        "content_sha256": "1be2d0594ff17c0c2ec4b02166aeb76f80fb7d6ace64dab778cb792a33b053b3",
+        "byte_size": 353925
+      },
+      {
+        "source_artifact_id": "chitose:source:dnp:578:5",
+        "source_revision_id": "chitose:source:dnp:578:5:revision:83555291d70d29a05617da38c1f707ab60c1b48b78083f248b67ecf609c1c63f",
+        "content_sha256": "83555291d70d29a05617da38c1f707ab60c1b48b78083f248b67ecf609c1c63f",
+        "byte_size": 260401
+      },
+      {
+        "source_artifact_id": "chitose:source:dnp:578:6",
+        "source_revision_id": "chitose:source:dnp:578:6:revision:e4001d9647558f31e4ac87ac1b4a53f3eb37527cf2356479104f43d858b95b5a",
+        "content_sha256": "e4001d9647558f31e4ac87ac1b4a53f3eb37527cf2356479104f43d858b95b5a",
+        "byte_size": 280481
+      },
+      {
+        "source_artifact_id": "chitose:source:dnp:578:7",
+        "source_revision_id": "chitose:source:dnp:578:7:revision:8c6c1bc0a79c411bfe8b63239894e559182fe8d802a58d41e82cea4376bf67b5",
+        "content_sha256": "8c6c1bc0a79c411bfe8b63239894e559182fe8d802a58d41e82cea4376bf67b5",
+        "byte_size": 281736
+      },
+      {
+        "source_artifact_id": "chitose:source:dnp:578:8",
+        "source_revision_id": "chitose:source:dnp:578:8:revision:c167f6caba232ecf6bc2f521930f4d428999fbb900219f31a3b87cc385246160",
+        "content_sha256": "c167f6caba232ecf6bc2f521930f4d428999fbb900219f31a3b87cc385246160",
+        "byte_size": 101905
+      }
+    ]
+  },
+  "output": {
+    "file": "578.json",
+    "sha256": "c0ec7706520f8e3cd92c230e3590d4eb08d146bff5f6aaa81e97ee7cb18f9cc8",
+    "json_sha256": "657183811fabba2e2de7fff58b7b9a3803a4209e3815be4670067706db3caf64",
+    "byte_size": 899735
+  },
+  "validation": {
+    "validator_version": "1.0.0",
+    "legacy_equivalence": true,
+    "errors": [],
+    "warnings": [],
+    "gate_results": [
+      {
+        "gate": "schema",
+        "status": "pass",
+        "detail": "checked"
+      },
+      {
+        "gate": "graph",
+        "status": "pass",
+        "detail": "checked"
+      },
+      {
+        "gate": "provenance",
+        "status": "pass",
+        "detail": "Stored snapshot hashes and parser derivation checked; publisher authority and live URL status are not independently certified."
+      },
+      {
+        "gate": "content",
+        "status": "pass",
+        "detail": "Stored-source text, speaker labels, positions and record metadata consistency checked; calendar facts are not independently certified."
+      },
+      {
+        "gate": "quality",
+        "status": "not_applicable",
+        "detail": "Semantic/OCR quality is not certified by this offline pilot validator."
+      },
+      {
+        "gate": "freshness",
+        "status": "pass",
+        "detail": "Current revision references and recorded retrieval/generation chronology checked; HTTP observation times are not independently certified."
+      },
+      {
+        "gate": "review",
+        "status": "not_applicable",
+        "detail": "Private record: review metadata consistency checked; human review not certified."
+      },
+      {
+        "gate": "reconciliation",
+        "status": "not_applicable",
+        "detail": "No provisional evidence in this record."
+      }
+    ],
+    "canonical_publication_ready": false
+  },
+  "excluded_scopes": [
+    "person_identity",
+    "question_blocks",
+    "topics",
+    "member_activity",
+    "canonical_record_publication"
+  ]
+}

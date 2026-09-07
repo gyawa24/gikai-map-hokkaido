@@ -1,0 +1,36 @@
+{
+  "schema_version": "council-record-body-storage.v1",
+  "municipality_id": "chitose",
+  "council_id": 578,
+  "stored_at": "2026-09-07T03:02:34.981Z",
+  "implementation_hashes": {
+    "scripts/lib/council-record-v2-body-storage.mjs": "a5b50ea14bfc02387b7772087901da5be9a65b62b5843fb2322659c012a95b79",
+    "scripts/lib/council-record-v2-body-publication.mjs": "01756557a262cab164884daaa5483e128dd20f06bd9d111e6855286167c9b1f8",
+    "scripts/lib/council-record-v2-validation.mjs": "97e4830d5637010df73657b39dbd35152a32db96ccf562ad18a231e9a93ecf0b",
+    "scripts/lib/council-record-v2-capture-binding.mjs": "4ad942ac870c5e70158a36e7c4b27da19e4aae6bfb7e545146c4a0c4f026705a",
+    "scripts/lib/council-record-v2-preview.mjs": "ab2eb42771230273dc49e1d466fc288ea0e349c32036d53252f2ee7af2288f94",
+    "scripts/lib/council-record-v2-projection.mjs": "6b803d49a878e222b37ceff979c5ed26136d7a41a995798c96cf5d3977fe2936",
+    "scripts/lib/dnp-council-record-v2.mjs": "810c1ba969d0cf6dc1144b4db8aa30db916765ee7b43c9688127789fa3854aa5",
+    "schemas/council-record.v2.schema.json": "d5665071099a4393e5ee68e161ee4c072dfdd3cdfdb73dd2711cb4f6a0322f85",
+    "site/package-lock.json": "4702aaad4484a4dba5c1e1d635b825461db9a800343df0ae926a8d294befd079"
+  },
+  "original_record_sha256": "4d438dd7663ae8592c381841748f2c4b509a4e72273866bc0ff5ddade8272288",
+  "original_manifest_sha256": "5ca79940d97c7863aefbb3bf97a89da030bbafa5d31ef051d7bc069f73e66381",
+  "capture_verification": {
+    "manifest_sha256": "5ca79940d97c7863aefbb3bf97a89da030bbafa5d31ef051d7bc069f73e66381",
+    "checked_at": "2026-09-07T03:01:20.058391+00:00"
+  },
+  "previous_pointer_present": false,
+  "files": {
+    "record.json": "4d9970f41aca63fb7339090bac666f9451dac911b8217830a30abcfaa2d724f1",
+    "capture-manifest.json": "971ad708f52b02ec6c42a787ca56277650e2135c97dbcfadcc952820fa4806bd",
+    "baseline.json": "c0ec7706520f8e3cd92c230e3590d4eb08d146bff5f6aaa81e97ee7cb18f9cc8",
+    "published-index.json": "8577b830363fab810ddd5c15b456b296de2a523f029b6995664e9e1fc4f6856a",
+    "previous-index.json": "e61b4383e795d760774e292236d52cc1b18581c93e89217e3007b3bfb76f2fc3",
+    "minutes.json": "c0ec7706520f8e3cd92c230e3590d4eb08d146bff5f6aaa81e97ee7cb18f9cc8",
+    "publication.json": "44fdfca20a35451503c31c92ef44e9ad87359545c7aefe201c90516dd1e0d674",
+    "capture-origin.json": "5ca79940d97c7863aefbb3bf97a89da030bbafa5d31ef051d7bc069f73e66381",
+    "record-origin.json": "4d438dd7663ae8592c381841748f2c4b509a4e72273866bc0ff5ddade8272288",
+    "previous-pointer.json": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+  }
+}

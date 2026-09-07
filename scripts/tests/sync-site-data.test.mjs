@@ -1,10 +1,11 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { pruneStaleMinutesJson, syncPublishedMinutes } from "../sync-site-data.mjs";
+import { assertManagedMinutesProjection, pruneStaleMinutesJson, syncPublishedMinutes } from "../sync-site-data.mjs";
 
 function meeting(councilId, extra = {}) {
   return JSON.stringify({ council_id: councilId, schedules: [{ schedule_id: 1, minutes: [] }], ...extra }) + "\n";
@@ -14,6 +15,94 @@ function write(filePath, value = meeting(Number(path.basename(filePath, ".json")
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, value, "utf8");
 }
+
+function managedFixture() {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "minutes-v2-managed-"));
+  const source = path.join(fixture, "data", "sample", "minutes");
+  const destination = path.join(fixture, "site", "data", "sample", "minutes");
+  const index = [{ council_id: 1, file: "1.json" }];
+  const body = meeting(1, { name: "原文" });
+  const registryPath = path.join(fixture, "data", "sample", "council-records", "index.json");
+  const registry = {
+    schema_version: "council-record-body-registry.v1", municipality_id: "sample",
+    records: [{ council_id: 1, state: "active", release_path: "council-records/1/releases/test-run",
+      minutes_sha256: createHash("sha256").update(body).digest("hex"), publication_sha256: "a".repeat(64) }],
+  };
+  write(path.join(source, "1.json"), body);
+  write(path.join(source, "index.json"), JSON.stringify(index));
+  write(registryPath, JSON.stringify(registry));
+  write(path.join(destination, "1.json"), body);
+  write(path.join(destination, "index.json"), JSON.stringify(index));
+  return { fixture, source, destination, index, body, registryPath, registry };
+}
+
+test("managed projection preflight accepts its exact pinned bytes", async () => {
+  const f = managedFixture();
+  try {
+    assert.deepEqual([...await assertManagedMinutesProjection(f.source, f.index)], [["1.json", f.registry.records[0].minutes_sha256]]);
+  } finally { fs.rmSync(f.fixture, { recursive: true, force: true }); }
+});
+
+test("managed body changes stop sync and dry-run before touching published files", async () => {
+  const f = managedFixture();
+  try {
+    write(path.join(f.source, "1.json"), meeting(1, { name: "changed" }));
+    for (const dryRun of [false, true]) {
+      await assert.rejects(syncPublishedMinutes(f.source, f.destination, dryRun), /v2 managed council 1: projection hash mismatch/u);
+    }
+    assert.equal(fs.readFileSync(path.join(f.destination, "1.json"), "utf8"), f.body);
+    assert.equal(fs.readFileSync(path.join(f.destination, "index.json"), "utf8"), JSON.stringify(f.index));
+  } finally { fs.rmSync(f.fixture, { recursive: true, force: true }); }
+});
+
+test("managed index removal stops sync and standalone prune", async () => {
+  const f = managedFixture();
+  try {
+    write(path.join(f.source, "index.json"), "[]");
+    await assert.rejects(syncPublishedMinutes(f.source, f.destination), /v2 managed council 1: publication index/u);
+    await assert.rejects(pruneStaleMinutesJson(f.source, f.destination, { publishedFiles: new Set(["index.json"]) }), /v2 managed council 1: publication index/u);
+    assert.equal(fs.readFileSync(path.join(f.destination, "1.json"), "utf8"), f.body);
+  } finally { fs.rmSync(f.fixture, { recursive: true, force: true }); }
+});
+
+test("a managed hash alone cannot authorize sync without its release evidence", async () => {
+  const f = managedFixture();
+  try {
+    await assert.rejects(syncPublishedMinutes(f.source, f.destination));
+    assert.equal(fs.readFileSync(path.join(f.destination, "1.json"), "utf8"), f.body);
+  } finally { fs.rmSync(f.fixture, { recursive: true, force: true }); }
+});
+
+test("rolled-back records release the legacy write protection", async () => {
+  const f = managedFixture();
+  try {
+    f.registry.records[0].state = "rolled_back";
+    write(f.registryPath, JSON.stringify(f.registry));
+    const updated = meeting(1, { name: "updated after rollback" });
+    write(path.join(f.source, "1.json"), updated);
+    await syncPublishedMinutes(f.source, f.destination);
+    assert.equal(fs.readFileSync(path.join(f.destination, "1.json"), "utf8"), updated);
+  } finally { fs.rmSync(f.fixture, { recursive: true, force: true }); }
+});
+
+test("malformed managed registries fail closed", async () => {
+  for (const mutate of [
+    (r) => { r.schema_version = "unknown"; },
+    (r) => { r.municipality_id = "another"; },
+    (r) => { r.records.push({ ...r.records[0] }); },
+    (r) => { r.records[0].state = "disabled"; },
+    (r) => { r.records[0].minutes_sha256 = "invalid"; },
+    (r) => { r.records[0].release_path = "../../elsewhere"; },
+  ]) {
+    const f = managedFixture();
+    try {
+      mutate(f.registry);
+      write(f.registryPath, JSON.stringify(f.registry));
+      await assert.rejects(syncPublishedMinutes(f.source, f.destination), /Invalid v2 managed minutes registry/u);
+      assert.equal(fs.readFileSync(path.join(f.destination, "1.json"), "utf8"), f.body);
+    } finally { fs.rmSync(f.fixture, { recursive: true, force: true }); }
+  }
+});
 
 test("minutes sync prunes JSON outside the publication manifest", async () => {
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "minutes-mirror-"));

@@ -1,3 +1,4 @@
+import hashlib
 import json
 import tempfile
 import unittest
@@ -126,6 +127,115 @@ class DnpIndexPreservationTest(unittest.TestCase):
     def write_json(path: Path, value) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    def managed_fixture(self, root: Path):
+        output_dir = root / "data" / "sample" / "minutes"
+        body = self.council_data(202, "2026", "既存原文")
+        entry = self.index_entry(202, "2026", content_sha256="c" * 64,
+                                 body_source={"format": "council-record.v2", "publication_path": "publications/minutes/202.json"})
+        self.write_json(output_dir / "202.json", body)
+        self.write_json(output_dir / "index.json", [entry])
+        registry = {
+            "schema_version": "council-record-body-registry.v1", "municipality_id": "sample",
+            "records": [{"council_id": 202, "state": "active", "release_path": "council-records/202/releases/test-run",
+                         "minutes_sha256": hashlib.sha256((output_dir / "202.json").read_bytes()).hexdigest(),
+                         "publication_sha256": "a" * 64}],
+        }
+        registry_path = output_dir.parent / "council-records" / "index.json"
+        self.write_json(registry_path, registry)
+        return output_dir, body, entry, registry_path, registry
+
+    def test_managed_identical_body_keeps_exact_bytes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output_dir, body, _, _, _ = self.managed_fixture(Path(directory))
+            target = output_dir / "202.json"
+            original = target.read_bytes()
+            with patch.object(dnp_minutes.tempfile, "NamedTemporaryFile", side_effect=AssertionError("must not write")):
+                dnp_minutes.write_json_atomic(target, body)
+            self.assertEqual(target.read_bytes(), original)
+
+    def test_managed_force_update_is_held_in_both_scrape_paths(self):
+        for route in ("library", "standalone"):
+            with self.subTest(route=route), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                output_dir, body, _, _, _ = self.managed_fixture(root)
+                original_body = (output_dir / "202.json").read_bytes()
+                original_index = (output_dir / "index.json").read_bytes()
+                updated = self.council_data(202, "2026", "公式で更新された本文")
+                module = dnp_minutes if route == "library" else standalone_minutes
+                with (
+                    patch.object(module, "fetch_councils", return_value=[self.council_info(202, "2026")]),
+                    patch.object(module, "fetch_schedules", return_value=[{k: v for k, v in s.items() if k != "minutes"} for s in updated["schedules"]]),
+                    patch.object(module, "fetch_minutes", return_value=updated["schedules"][0]["minutes"]),
+                    patch.object(standalone_minutes, "ROOT", root),
+                    redirect_stdout(StringIO()),
+                    self.assertRaisesRegex(ValueError, "v2 managed council 202.*legacy update held"),
+                ):
+                    if route == "library":
+                        dnp_minutes.run_scrape(slug="sample", tenant_id=1, output_dir=output_dir,
+                                               target_keywords=["定例会"], target_years={"2026"}, request_interval=0, force=True)
+                    else:
+                        standalone_minutes.scrape_city("sample", 1, {"2026"}, force=True)
+                self.assertEqual((output_dir / "202.json").read_bytes(), original_body)
+                self.assertEqual((output_dir / "index.json").read_bytes(), original_index)
+
+    def test_managed_unchanged_meeting_keeps_publication_fields_in_both_paths(self):
+        for route in ("library", "standalone"):
+            with self.subTest(route=route), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                output_dir, _, entry, _, _ = self.managed_fixture(root)
+                original_body = (output_dir / "202.json").read_bytes()
+                module = dnp_minutes if route == "library" else standalone_minutes
+                with (
+                    patch.object(module, "fetch_councils", return_value=[self.council_info(202, "2026")]),
+                    patch.object(module, "fetch_schedules", side_effect=AssertionError("existing meeting must not be fetched")),
+                    patch.object(standalone_minutes, "ROOT", root),
+                    redirect_stdout(StringIO()),
+                ):
+                    if route == "library":
+                        dnp_minutes.run_scrape(slug="sample", tenant_id=1, output_dir=output_dir,
+                                               target_keywords=["定例会"], target_years={"2026"}, request_interval=0)
+                    else:
+                        standalone_minutes.scrape_city("sample", 1, {"2026"})
+                self.assertEqual((output_dir / "202.json").read_bytes(), original_body)
+                self.assertEqual(json.loads((output_dir / "index.json").read_bytes()), [entry])
+
+    def test_managed_metadata_and_index_edits_are_held(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output_dir, _, entry, _, _ = self.managed_fixture(Path(directory))
+            with self.assertRaisesRegex(ValueError, "v2 managed council 202"):
+                sync_existing_council_year(output_dir / "202.json", "2025", "令和7年")
+            for entries in ([], [{**entry, "name": "別会議名"}], [{k: v for k, v in entry.items() if k != "body_source"}]):
+                with self.subTest(entries=entries), self.assertRaisesRegex(ValueError, "managed publication index entry"):
+                    dnp_minutes.write_json_atomic(output_dir / "index.json", entries)
+            added = self.index_entry(203, "2026")
+            dnp_minutes.write_json_atomic(output_dir / "index.json", [added, entry])
+            self.assertEqual(json.loads((output_dir / "index.json").read_bytes()), [added, entry])
+
+    def test_managed_existing_hash_damage_is_not_repaired_by_legacy_scrape(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output_dir, body, entry, _, _ = self.managed_fixture(Path(directory))
+            self.write_json(output_dir / "202.json", {**body, "name": "tampered"})
+            for filename, value in (("202.json", body), ("index.json", [entry])):
+                with self.subTest(filename=filename), self.assertRaisesRegex(ValueError, "existing projection hash mismatch"):
+                    dnp_minutes.write_json_atomic(output_dir / filename, value)
+
+    def test_rolled_back_record_allows_legacy_update(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output_dir, body, _, registry_path, registry = self.managed_fixture(Path(directory))
+            registry["records"][0]["state"] = "rolled_back"
+            self.write_json(registry_path, registry)
+            changed = {**body, "name": "rollback update"}
+            dnp_minutes.write_json_atomic(output_dir / "202.json", changed)
+            self.assertEqual(json.loads((output_dir / "202.json").read_bytes()), changed)
+
+    def test_malformed_managed_registry_is_not_ignored(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output_dir, body, _, registry_path, registry = self.managed_fixture(Path(directory))
+            registry["records"][0]["state"] = "typo"
+            self.write_json(registry_path, registry)
+            with self.assertRaisesRegex(ValueError, "Invalid v2 managed minutes registry"):
+                dnp_minutes.write_json_atomic(output_dir / "202.json", body)
 
     def test_orders_same_year_councils_by_descending_council_id(self):
         entries = [

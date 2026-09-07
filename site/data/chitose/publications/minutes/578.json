@@ -1,0 +1,15 @@
+{
+  "schema_version": "minutes-body-source.v1",
+  "municipality_id": "chitose",
+  "council_id": 578,
+  "scope": "body_only",
+  "canonical_record_path": "data/chitose/council-records/578/releases/2026-09-07T03-02-34-981Z-5ca79940d97c/record.json",
+  "publication_path": "data/chitose/council-records/578/releases/2026-09-07T03-02-34-981Z-5ca79940d97c/publication.json",
+  "storage_manifest_path": "data/chitose/council-records/578/releases/2026-09-07T03-02-34-981Z-5ca79940d97c/storage-manifest.json",
+  "record_sha256": "4d9970f41aca63fb7339090bac666f9451dac911b8217830a30abcfaa2d724f1",
+  "manifest_sha256": "971ad708f52b02ec6c42a787ca56277650e2135c97dbcfadcc952820fa4806bd",
+  "publication_sha256": "44fdfca20a35451503c31c92ef44e9ad87359545c7aefe201c90516dd1e0d674",
+  "minutes_sha256": "c0ec7706520f8e3cd92c230e3590d4eb08d146bff5f6aaa81e97ee7cb18f9cc8",
+  "content_sha256": "657183811fabba2e2de7fff58b7b9a3803a4209e3815be4670067706db3caf64",
+  "generated_at": "2026-09-07T03:02:34.981Z"
+}
