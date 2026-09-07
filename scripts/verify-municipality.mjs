@@ -192,7 +192,9 @@ async function main() {
   }
 
   if (hasMinutesIndex) {
-    if (!hasSegmentsIndex) {
+    if (rootEntry?.minutes_access === "restricted") {
+      checks.push(`segments check skipped for restricted minutes`);
+    } else if (!hasSegmentsIndex) {
       issues.push(`missing segments: data/${slug}/segments/_index.json`);
     } else {
       checks.push(`segments index exists`);

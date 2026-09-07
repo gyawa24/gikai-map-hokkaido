@@ -27,6 +27,19 @@ async function pathExists(filePath) {
   }
 }
 
+async function readMunicipalityAccess(dataDir) {
+  try {
+    const municipalities = await readJson(path.join(dataDir, "municipalities.json"));
+    return new Map(
+      municipalities
+        .filter((municipality) => municipality && typeof municipality.slug === "string")
+        .map((municipality) => [municipality.slug, municipality.minutes_access]),
+    );
+  } catch {
+    return new Map();
+  }
+}
+
 function dateSpanDays(startDate, endDate) {
   if (!startDate || !endDate) return 0;
   return (Date.parse(endDate) - Date.parse(startDate)) / 86_400_000;
@@ -41,12 +54,18 @@ export async function verifyMinutesPublicationIntegrity(options = {}) {
       .filter((entry) => entry.isDirectory())
       .map((entry) => entry.name)
       .sort();
+  const municipalityAccess = options.municipalityAccess ?? await readMunicipalityAccess(dataDir);
   const errors = [];
+  const skippedRestrictedSlugs = [];
   let municipalityCount = 0;
   let councilCount = 0;
   let exactDateCount = 0;
 
   for (const slug of requestedSlugs) {
+    if (municipalityAccess.get(slug) === "restricted") {
+      skippedRestrictedSlugs.push(slug);
+      continue;
+    }
     const minutesDir = path.join(dataDir, slug, "minutes");
     const indexPath = path.join(minutesDir, "index.json");
     if (!(await pathExists(indexPath))) continue;
@@ -127,7 +146,7 @@ export async function verifyMinutesPublicationIntegrity(options = {}) {
     }
   }
 
-  return { errors, municipalityCount, councilCount, exactDateCount };
+  return { errors, municipalityCount, councilCount, exactDateCount, skippedRestrictedSlugs };
 }
 
 async function main() {
@@ -146,7 +165,10 @@ async function main() {
     process.exit(1);
   }
   console.log(
-    `minutes publication integrity: ${result.councilCount} councils / ${result.exactDateCount} exact-date councils / ${result.municipalityCount} municipalities`,
+    `minutes publication integrity: ${result.councilCount} councils / ${result.exactDateCount} exact-date councils / ${result.municipalityCount} municipalities`
+      + (result.skippedRestrictedSlugs.length > 0
+        ? ` / skipped restricted: ${result.skippedRestrictedSlugs.join(", ")}`
+        : ""),
   );
 }
 
