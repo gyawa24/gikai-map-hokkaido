@@ -5,7 +5,7 @@
 この文書は、北海道内179市町村へ議事録・質問履歴・検索を広げるためのデータ契約を定める。
 対象は正式会議録だけでなく、PDF、HTML、議事録システムAPI、録画配信、YouTube字幕、ASR速報を含む。
 
-v2は、既存の `structured-minutes` が持つ `SourceDocument`、`Speaker`、`Turn`、`QuestionBlock`、`TopicBlock`、`TopicSnippet` を核にする。会議と開催日、原典と改訂、正式版と速報、抽出と人手確認を区別する。将来は公開・移行条件を満たしたv2レコードを正本にするが、2026-09-07時点ではDNPの5会議とgijiroku.comの岩見沢799をローカルで試験しており、公開データの正本は切り替えていない。
+v2は、既存の `structured-minutes` が持つ `SourceDocument`、`Speaker`、`Turn`、`QuestionBlock`、`TopicBlock`、`TopicSnippet` を核にする。会議と開催日、原典と改訂、正式版と速報、抽出と人手確認を区別する。2026-09-07にDNPの5会議とgijiroku.comの岩見沢799の内部試験を完了し、そのうち千歳578は[本文限定切替](minutes-v2-body-cutover.md)を本番反映した。掲載済み本文と同一bytesの従来minutesを、永続保存したv2正本と別のbody_only receiptから管理する。canonical public認証、人物同定、質問・活動履歴、公開検索の移行は未完了であり、ほかの5会議は内部試験の段階にある。
 
 この契約のJSON Schemaは `schemas/council-record.v2.schema.json` に置く。JSON Schemaで表現できない配列間の参照整合や公開条件は、同schemaの `x-referential-integrity` と本書の公開ゲートに従って専用validatorで検証する。
 

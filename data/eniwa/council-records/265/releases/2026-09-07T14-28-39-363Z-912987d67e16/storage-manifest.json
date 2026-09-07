@@ -1,0 +1,36 @@
+{
+  "schema_version": "council-record-body-storage.v1",
+  "municipality_id": "eniwa",
+  "council_id": 265,
+  "stored_at": "2026-09-07T14:28:39.363Z",
+  "implementation_hashes": {
+    "scripts/lib/council-record-v2-body-storage.mjs": "a5b50ea14bfc02387b7772087901da5be9a65b62b5843fb2322659c012a95b79",
+    "scripts/lib/council-record-v2-body-publication.mjs": "01756557a262cab164884daaa5483e128dd20f06bd9d111e6855286167c9b1f8",
+    "scripts/lib/council-record-v2-validation.mjs": "97e4830d5637010df73657b39dbd35152a32db96ccf562ad18a231e9a93ecf0b",
+    "scripts/lib/council-record-v2-capture-binding.mjs": "4ad942ac870c5e70158a36e7c4b27da19e4aae6bfb7e545146c4a0c4f026705a",
+    "scripts/lib/council-record-v2-preview.mjs": "ab2eb42771230273dc49e1d466fc288ea0e349c32036d53252f2ee7af2288f94",
+    "scripts/lib/council-record-v2-projection.mjs": "6b803d49a878e222b37ceff979c5ed26136d7a41a995798c96cf5d3977fe2936",
+    "scripts/lib/dnp-council-record-v2.mjs": "810c1ba969d0cf6dc1144b4db8aa30db916765ee7b43c9688127789fa3854aa5",
+    "schemas/council-record.v2.schema.json": "d5665071099a4393e5ee68e161ee4c072dfdd3cdfdb73dd2711cb4f6a0322f85",
+    "site/package-lock.json": "4702aaad4484a4dba5c1e1d635b825461db9a800343df0ae926a8d294befd079"
+  },
+  "original_record_sha256": "21ffb846cf42726b08382dc7586c91284593e60ec3f3c074b92cbe54bec60fe1",
+  "original_manifest_sha256": "912987d67e1631af7e9a2a48136ccd6f412a24c2a3158986da9c796f16331222",
+  "capture_verification": {
+    "manifest_sha256": "912987d67e1631af7e9a2a48136ccd6f412a24c2a3158986da9c796f16331222",
+    "checked_at": "2026-09-07T14:27:06.811Z"
+  },
+  "previous_pointer_present": false,
+  "files": {
+    "record.json": "31d5580a06a612d7f4a34aad33bdd934fef6cebc60db7a811fd00dc25853fe75",
+    "capture-manifest.json": "fc6334710453b968801241044bb82a0100caaa898a31d8f2e48ed2b2aaf24215",
+    "baseline.json": "89597c8cfa60c69a11f9418ccafad0ed6bf8cb9c18f066d891e06b94fe691f46",
+    "published-index.json": "d5cac4008db16211a7e2cc22a7eaba2a911259c150876da489da2f7c1c98caa9",
+    "previous-index.json": "1d3514a55e6f643fae2caf6e0b594f605079dde2d9729ea8dda2c43254c96718",
+    "minutes.json": "89597c8cfa60c69a11f9418ccafad0ed6bf8cb9c18f066d891e06b94fe691f46",
+    "publication.json": "8b07befe13a71328eeceb12988ee6d44b246da03eff9a469418c2bfdf26ccfea",
+    "capture-origin.json": "912987d67e1631af7e9a2a48136ccd6f412a24c2a3158986da9c796f16331222",
+    "record-origin.json": "21ffb846cf42726b08382dc7586c91284593e60ec3f3c074b92cbe54bec60fe1",
+    "previous-pointer.json": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+  }
+}
