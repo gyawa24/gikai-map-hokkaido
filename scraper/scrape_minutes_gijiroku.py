@@ -106,6 +106,10 @@ def list_meetings_for_year(slug: str, year: int, kgtp: int) -> list[dict]:
     })
     url = f"{base_url(slug, _MUNIS)}cgi/voiweb.exe?{query}"
     html = get_shiftjis(url)
+    return parse_meetings_html(html)
+
+
+def parse_meetings_html(html: str) -> list[dict]:
 
     meetings = []
     # ACT=200のリンクから TITL_SUBT / KGNO / FINO / UNID を抽出
@@ -178,6 +182,10 @@ def fetch_body_text(slug: str, meeting: dict, year: int) -> str:
         f"&FINO={meeting['fino']}&HATSUGENMODE=1&HYOUJIMODE=0&HUID={huid}&STYLE=0"
     )
     html = get_shiftjis(act203_url)
+    return clean_body_html(html)
+
+
+def clean_body_html(html: str) -> str:
 
     # タグ除去してプレーンテキスト化
     text = re.sub(r"<script[\s\S]*?</script>", "", html, flags=re.I)

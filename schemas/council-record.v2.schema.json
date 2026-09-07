@@ -15,6 +15,7 @@
     "source_artifacts",
     "speakers",
     "turns",
+    "document_items",
     "question_blocks",
     "topic_blocks",
     "topic_snippets",
@@ -64,6 +65,10 @@
         "$ref": "#/$defs/turn"
       }
     },
+    "document_items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/documentItem" }
+    },
     "question_blocks": {
       "type": "array",
       "items": {
@@ -111,7 +116,11 @@
     "every derivation.input_revision_id resolves in source_artifacts revisions",
     "confirmed and superseded reconciliations have resolvable official source references",
     "public topics are reviewed and all required publication gates pass",
-    "legacy ids are unique within the municipality and map to no more than one current v2 entity"
+    "legacy council ids are municipality-scoped; schedule ids are meeting-scoped; minute ids are sitting-scoped and map to no more than one current v2 entity",
+    "document_items preserve non-speech records without a fabricated speaker and share sitting order_index with turns",
+    "turns and document_items have unique order_index and legacy minute_id within each sitting; legacy minute ids may repeat across sittings",
+    "all document item meeting, sitting and source_span references resolve like turn references",
+    "legacy_presentation preserves original legacy display metadata; text_original must not be reconstructed from titles or normalized text"
   ],
   "$defs": {
     "id": {
@@ -134,7 +143,7 @@
       "type": "string",
       "minLength": 2,
       "maxLength": 80,
-      "pattern": "^[a-z0-9][a-z0-9-]*$"
+      "pattern": "^[a-z0-9][a-z0-9_-]*$"
     },
     "date": {
       "type": "string",
@@ -247,6 +256,7 @@
         "legacy_ids"
       ],
       "properties": {
+        "legacy_presentation": { "$ref": "#/$defs/legacyMeetingPresentation" },
         "id": {
           "$ref": "#/$defs/id"
         },
@@ -329,6 +339,11 @@
         "legacy_ids"
       ],
       "properties": {
+        "legacy_presentation": { "$ref": "#/$defs/legacySittingPresentation" },
+        "unit_kind": {
+          "enum": ["day", "document", "unknown"],
+          "description": "Document preserves a legacy schedule container without asserting that it is a sitting date."
+        },
         "id": {
           "$ref": "#/$defs/id"
         },
@@ -379,7 +394,11 @@
         "legacy_ids": {
           "$ref": "#/$defs/legacyIds"
         }
-      }
+      },
+      "allOf": [{
+        "if": { "properties": { "unit_kind": { "const": "document" } }, "required": ["unit_kind"] },
+        "then": { "properties": { "date": { "const": null }, "date_status": { "const": "unknown" } }, "required": ["date_note"] }
+      }]
     },
     "sourceArtifact": {
       "type": "object",
@@ -884,6 +903,7 @@
         "legacy_ids"
       ],
       "properties": {
+        "legacy_presentation": { "$ref": "#/$defs/legacyMinutePresentation" },
         "id": {
           "$ref": "#/$defs/id"
         },
@@ -1616,6 +1636,190 @@
                     }
                   ]
                 }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "legacyMeetingPresentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "year",
+        "japanese_year",
+        "type_label"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "year": {
+          "type": "string"
+        },
+        "japanese_year": {
+          "type": "string"
+        },
+        "type_label": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string"
+        }
+      }
+    },
+    "legacySittingPresentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "source_fino": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "name": {
+          "type": "string"
+        },
+        "page_no": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "date": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string"
+        }
+      }
+    },
+    "legacyMinutePresentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "minute_type"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "minute_type": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string"
+        }
+      }
+    },
+    "documentItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "municipality_id",
+        "meeting_id",
+        "sitting_id",
+        "order_index",
+        "source_span",
+        "extraction",
+        "review",
+        "legacy_ids",
+        "kind",
+        "text_original",
+        "text_status",
+        "empty_reason",
+        "legacy_presentation"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "municipality_id": {
+          "$ref": "#/$defs/municipalityId"
+        },
+        "meeting_id": {
+          "$ref": "#/$defs/id"
+        },
+        "sitting_id": {
+          "$ref": "#/$defs/id"
+        },
+        "order_index": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "source_span": {
+          "$ref": "#/$defs/sourceSpan"
+        },
+        "extraction": {
+          "$ref": "#/$defs/extraction"
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "legacy_ids": {
+          "$ref": "#/$defs/legacyIds"
+        },
+        "kind": {
+          "enum": [
+            "roster",
+            "agenda",
+            "other"
+          ]
+        },
+        "text_original": {
+          "type": "string"
+        },
+        "text_status": {
+          "enum": [
+            "present",
+            "empty_in_source"
+          ]
+        },
+        "empty_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "legacy_presentation": {
+          "$ref": "#/$defs/legacyMinutePresentation"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "text_original": {
+                "const": ""
+              }
+            },
+            "required": [
+              "text_original"
+            ]
+          },
+          "then": {
+            "properties": {
+              "text_status": {
+                "const": "empty_in_source"
+              },
+              "empty_reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "text_status": {
+                "const": "present"
+              },
+              "empty_reason": {
+                "type": "null"
               }
             }
           }

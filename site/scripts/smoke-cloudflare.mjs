@@ -240,6 +240,16 @@ const smokeCases = [
     redirectLocationIncludes: "raw.githubusercontent.com",
   },
   {
+    label: "DNP migration preview is not exposed",
+    path: "/chitose/minutes/578/preview",
+    status: 404,
+  },
+  {
+    label: "document migration preview is not exposed",
+    path: "/iwamizawa/minutes/799/preview",
+    status: 404,
+  },
+  {
     label: "remote MCP is not exposed",
     path: "/api/mcp",
     status: 404,

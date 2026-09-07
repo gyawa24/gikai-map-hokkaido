@@ -15,62 +15,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.resolve(__dirname, "../..");
-const SITE_ROOT = path.resolve(__dirname, "..");
-
-const cityArgIndex = process.argv.indexOf("--city");
-const city = cityArgIndex >= 0 ? process.argv[cityArgIndex + 1] : "chitose";
-if (!city) throw new Error("--city requires a value");
-
-const dataDir = path.join(ROOT, "data", city);
-const siteDataDir = path.join(SITE_ROOT, "data", city);
-const enrichedDir = path.join(dataDir, "minutes", "enriched");
-const segmentsDir = path.join(dataDir, "segments");
-const sessionsDir = path.join(dataDir, "sessions");
-
-function readJson(filePath, fallback) {
-  try {
-    return JSON.parse(fs.readFileSync(filePath, "utf-8"));
-  } catch {
-    return fallback;
-  }
-}
-
-// --- メンバー読み込み ---
-const members = JSON.parse(fs.readFileSync(path.join(dataDir, "members.json"), "utf-8"));
-const memberNames = members.map((m) => m.name.replace(/\s/g, ""));
-const reportedNameIssues = new Set();
-const municipalities = readJson(path.join(ROOT, "data", "municipalities.json"), []);
-const municipality = Array.isArray(municipalities)
-  ? municipalities.find((item) => item.slug === city)
-  : null;
-const minutesIndex = readJson(path.join(dataDir, "minutes", "index.json"), []);
-const minutesByCouncilId = new Map(
-  (Array.isArray(minutesIndex) ? minutesIndex : []).map((item) => [String(item.council_id), item])
-);
-
-function officialMinutesUrl() {
-  if (municipality?.system === "dnp" || municipality?.tenant_id != null) {
-    return `https://ssp.kaigiroku.net/tenant/${city}/MinuteBrowse.html`;
-  }
-  return undefined;
-}
-
-function minutesHref(councilId, scheduleId, minuteId) {
-  const base = `/${city}/minutes/${councilId}`;
-  if (!Number.isFinite(Number(scheduleId)) || !Number.isFinite(Number(minuteId))) return base;
-  return `${base}#minute-${scheduleId}-${minuteId}`;
-}
-
-function reportNameIssue(key, message) {
-  if (reportedNameIssues.has(key)) return;
-  reportedNameIssues.add(key);
-  console.log(message);
-}
-
-// --- 名寄せ関数 ---
-function normalizeQuestioner(raw) {
+export function normalizeQuestioner(raw) {
   return String(raw ?? "")
     .replace(/[　\s]/g, "")
     .replace(/^[0-9０-９]+番/, "")
@@ -83,126 +28,8 @@ function normalizeQuestioner(raw) {
     .trim();
 }
 
-function seatNumberFromSpeaker(raw) {
-  const normalized = String(raw ?? "").replace(/[０-９]/g, (char) =>
-    String.fromCharCode(char.charCodeAt(0) - 0xfee0)
-  );
-  return Number(normalized.match(/^(\d+)番/)?.[1] ?? 0) || null;
-}
-
-function findMember(raw, { allowSeat = false } = {}) {
-  const normalized = normalizeQuestioner(raw);
-  if (!normalized) return null;
-
-  // 1. 完全一致
-  const exact = memberNames.findIndex((n) => n === normalized);
-  if (exact !== -1) return memberNames[exact];
-
-  // 本会議質疑の略記（例: 18番佐々木議員）は、同姓が複数いる場合に限り
-  // 議席番号と姓の双方が一致するときだけ解決する。個人質問は正式見出しを優先する。
-  if (allowSeat) {
-    const seatNumber = seatNumberFromSpeaker(raw);
-    const bySeat = members.find((member) => Number(member.seat_number) === seatNumber);
-    const bySeatName = bySeat?.name?.replace(/\s/g, "");
-    if (bySeatName && bySeatName.startsWith(normalized)) return bySeatName;
-  }
-
-  // 2. 姓のみ（2文字以下）の場合は姓で前方一致。
-  //    同姓議員が複数いるときは誤帰属を避けて名寄せ失敗にする（中立性ポリシー: 漏れより誤帰属の方が深刻）
-  if (normalized.length <= 2) {
-    const byLastName = memberNames.filter((n) => n.startsWith(normalized));
-    if (byLastName.length === 1) return byLastName[0];
-    if (byLastName.length > 1) {
-      reportNameIssue(
-        `ambiguous:${raw}`,
-        `  名寄せ曖昧: "${raw}" 候補複数 [${byLastName.join(", ")}]`
-      );
-      return null;
-    }
-  }
-
-  // 3. 部分一致（名前全体が含まれる）。候補が一意のときだけ採用する
-  const partials = memberNames.filter(
-    (n) => n.includes(normalized) || normalized.includes(n)
-  );
-  if (partials.length === 1) return partials[0];
-  if (partials.length > 1) {
-    reportNameIssue(
-      `ambiguous:${raw}`,
-      `  名寄せ曖昧: "${raw}" 候補複数 [${partials.join(", ")}]`
-    );
-    return null;
-  }
-
-  // 4. 姓のみ3文字以上でも、入力全体が氏名の前方と一致するときだけ採用する。
-  //    先頭2文字だけでは、旧議員のフルネームを同姓の現職へ誤帰属させる。
-  if (normalized.length >= 3) {
-    const candidates = memberNames.filter((n) => n.startsWith(normalized));
-    if (candidates.length === 1) return candidates[0];
-  }
-
-  return null;
-}
-
 function uniqueTopics(items) {
   return Array.from(new Set(items.map((item) => String(item ?? "").trim()).filter(Boolean)));
-}
-
-const MAX_SESSION_CANONICAL_TOPICS = 24;
-const MAX_SESSION_GENERATED_TOPICS = 24;
-const MAX_MEMBER_GENERATED_TOPICS = 80;
-
-function extractTopicsFromText(text) {
-  const source = String(text ?? "").replace(/\s+/g, " ").trim();
-  if (!source) return [];
-
-  const topics = [];
-  const patterns = [
-    /大項目\d+[、，\s　]+([^。\n]+?について)/g,
-    /中項目\d+[、，\s　]+([^。\n]+?について)/g,
-    /([^\n。]{8,40}?について)/g,
-  ];
-
-  for (const pattern of patterns) {
-    for (const match of source.matchAll(pattern)) {
-      const topic = match[1].trim();
-      if (topic && !topics.includes(topic)) topics.push(topic);
-    }
-    if (topics.length > 0) break;
-  }
-
-  if (topics.length > 0) return topics.slice(0, 6);
-
-  const fallback = source.slice(0, 40).trim();
-  return fallback ? [fallback] : [];
-}
-
-function loadEnrichedFiles() {
-  if (!fs.existsSync(enrichedDir)) return [];
-  return fs.readdirSync(enrichedDir)
-    .filter((f) => f.endsWith(".json"))
-    .sort();
-}
-
-function loadSegmentIndexes() {
-  const indexPath = path.join(segmentsDir, "_index.json");
-  if (!fs.existsSync(indexPath)) return [];
-  try {
-    const data = JSON.parse(fs.readFileSync(indexPath, "utf-8"));
-    return Array.isArray(data) ? data : [];
-  } catch {
-    return [];
-  }
-}
-
-function loadSessionFiles() {
-  const index = readJson(path.join(sessionsDir, "index.json"), []);
-  if (!Array.isArray(index)) return [];
-  return index.flatMap((entry) => {
-    if (!entry?.id) return [];
-    const session = readJson(path.join(sessionsDir, `${entry.id}.json`), null);
-    return session ? [session] : [];
-  });
 }
 
 function yearFromMeetingName(name) {
@@ -216,150 +43,8 @@ function yearFromMeetingName(name) {
   return normalized.match(/(?:^|\D)(\d{4})(?:\D|$)/)?.[1] ?? "";
 }
 
-function dateFromSchedule(year, scheduleName) {
-  const normalized = String(scheduleName ?? "").replace(/[０-９]/g, (char) =>
-    String.fromCharCode(char.charCodeAt(0) - 0xfee0)
-  );
-  const match = normalized.match(/(\d{1,2})月(\d{1,2})日/);
-  if (!/^\d{4}$/.test(String(year ?? "")) || !match) return "";
-  return `${year}-${match[1].padStart(2, "0")}-${match[2].padStart(2, "0")}`;
-}
-
-function mergeTopicDetails(left = [], right = []) {
-  const byTitle = new Map();
-  for (const detail of [...left, ...right]) {
-    const title = String(detail?.title ?? "").trim();
-    if (!title) continue;
-    const current = byTitle.get(title) ?? { title };
-    const qa = [...(current.qa ?? []), ...(detail.qa ?? [])]
-      .filter((item) => item?.question && item?.answer)
-      .filter((item, index, rows) =>
-        rows.findIndex((candidate) =>
-          candidate.question === item.question && candidate.answer === item.answer
-        ) === index
-      );
-    byTitle.set(title, {
-      ...current,
-      ...detail,
-      title,
-      ...(qa.length > 0 ? { qa } : {}),
-    });
-  }
-  return [...byTitle.values()];
-}
-
-function mergeSession(current, next) {
-  if (!current) return next;
-  const dates = uniqueTopics([
-    ...(current.dates ?? []),
-    current.date,
-    ...(next.dates ?? []),
-    next.date,
-  ]).sort();
-  return {
-    ...current,
-    ...Object.fromEntries(
-      Object.entries(next).filter(([, value]) => value !== undefined && value !== null && value !== "")
-    ),
-    record_id: current.record_id,
-    topics: uniqueTopics([...(current.topics ?? []), ...(next.topics ?? [])]),
-    summary_topics: uniqueTopics([
-      ...(current.summary_topics ?? []),
-      ...(next.summary_topics ?? []),
-    ]),
-    canonical_topics: uniqueTopics([
-      ...(current.canonical_topics ?? []),
-      ...(next.canonical_topics ?? []),
-    ]).slice(0, MAX_SESSION_CANONICAL_TOPICS),
-    generated_topics: uniqueTopics([
-      ...(current.generated_topics ?? []),
-      ...(next.generated_topics ?? []),
-    ]).slice(0, MAX_SESSION_GENERATED_TOPICS),
-    dates,
-    date: dates[0] ?? current.date ?? next.date,
-    topic_details: mergeTopicDetails(current.topic_details, next.topic_details),
-    evidence_segment_ids: uniqueTopics([
-      ...(current.evidence_segment_ids ?? []),
-      ...(next.evidence_segment_ids ?? []),
-    ]),
-    evidence_minute_ids: uniqueTopics([
-      ...(current.evidence_minute_ids ?? []),
-      ...(next.evidence_minute_ids ?? []),
-    ]).map((minuteId) => Number(minuteId)).filter(Number.isFinite),
-  };
-}
-
-// activity: { [normalizedMemberName]: { sessions: Map<identity, session> } }
-const activity = {};
-for (const name of memberNames) {
-  activity[name] = { sessions: new Map() };
-}
-
-function addActivity(memberName, identity, session) {
-  if (!activity[memberName]) return;
-  const current = activity[memberName].sessions.get(identity);
-  activity[memberName].sessions.set(identity, mergeSession(current, session));
-}
-
-const enrichedFiles = loadEnrichedFiles();
-const enrichedMembersByCouncil = new Map();
-const enrichedSupplements = new Map();
-const generatedTopicsByMember = new Map();
-if (enrichedFiles.length > 0) {
-  for (const file of enrichedFiles) {
-    const data = JSON.parse(fs.readFileSync(path.join(enrichedDir, file), "utf-8"));
-    const sessionName = data.name;
-    const councilId = data.council_id;
-    if (!minutesByCouncilId.has(String(councilId))) continue;
-    const councilMembers = enrichedMembersByCouncil.get(String(councilId)) ?? new Set();
-
-    for (const q of (data.questioners ?? [])) {
-      const memberName = findMember(q.name);
-      if (!memberName) {
-        reportNameIssue(
-          `unmatched:${q.name}:${sessionName}`,
-          `  名寄せ失敗: "${q.name}" (${sessionName})`
-        );
-        continue;
-      }
-      councilMembers.add(memberName);
-      const allTopics = uniqueTopics([
-        ...(Array.isArray(q.topics) ? q.topics : []),
-        ...(Array.isArray(q.ai_topics) ? q.ai_topics : []),
-      ])
-        .slice(0, MAX_SESSION_CANONICAL_TOPICS);
-      const supplementKey = `${councilId}:${memberName}`;
-      const current = enrichedSupplements.get(supplementKey) ?? {
-        councilId: Number(councilId),
-        memberName,
-        sessionName,
-        topics: [],
-      };
-      current.topics = uniqueTopics([...current.topics, ...allTopics]);
-      enrichedSupplements.set(supplementKey, current);
-    }
-    enrichedMembersByCouncil.set(String(councilId), councilMembers);
-  }
-}
-
-function likelyCommitteeQuestion(segments) {
-  const text = segments.map((segment) => segment.text ?? segment.excerpt ?? "").join(" ");
-  return /(?:質問|質疑)(?:を|させて|いたし)|お伺い|お聞かせ|御説明いただ/u.test(text);
-}
-
-const segmentIndex = loadSegmentIndexes();
-const councilIds = uniqueTopics(segmentIndex.map((item) => item.council_id));
-const segmentsByCouncil = new Map();
-for (const rawCouncilId of councilIds) {
-  const councilId = Number(rawCouncilId);
-  if (!Number.isFinite(councilId)) continue;
-  if (!minutesByCouncilId.has(String(councilId))) continue;
-  const fp = path.join(segmentsDir, `${councilId}.json`);
-  const segments = readJson(fp, []);
-  if (!Array.isArray(segments)) continue;
-  segmentsByCouncil.set(councilId, segments);
-}
-
+// Importing the parser must not run the activity writer.
+export function createDnpQuestionParser({ findMember, memberNames }) {
 function rawMinuteText(minute) {
   return String(minute?.text ?? minute?.title ?? "");
 }
@@ -1140,6 +825,330 @@ function parsePlenaryQuestionBlocks(meeting, coveredBySchedule) {
   return [...blocksByRecord.values()];
 }
 
+return { isRawQuestionCapableMeeting, parsePersonalQuestionBlocks, parsePlenaryQuestionBlocks, isClearlyNonQuestionRoleTurn, rawMinuteText };
+}
+
+function runCli() {
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, "../..");
+const SITE_ROOT = path.resolve(__dirname, "..");
+
+const cityArgIndex = process.argv.indexOf("--city");
+const city = cityArgIndex >= 0 ? process.argv[cityArgIndex + 1] : "chitose";
+if (!city) throw new Error("--city requires a value");
+
+const dataDir = path.join(ROOT, "data", city);
+const siteDataDir = path.join(SITE_ROOT, "data", city);
+const enrichedDir = path.join(dataDir, "minutes", "enriched");
+const segmentsDir = path.join(dataDir, "segments");
+const sessionsDir = path.join(dataDir, "sessions");
+
+function readJson(filePath, fallback) {
+  try {
+    return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  } catch {
+    return fallback;
+  }
+}
+
+// --- メンバー読み込み ---
+const members = JSON.parse(fs.readFileSync(path.join(dataDir, "members.json"), "utf-8"));
+const memberNames = members.map((m) => m.name.replace(/\s/g, ""));
+const reportedNameIssues = new Set();
+const municipalities = readJson(path.join(ROOT, "data", "municipalities.json"), []);
+const municipality = Array.isArray(municipalities)
+  ? municipalities.find((item) => item.slug === city)
+  : null;
+const minutesIndex = readJson(path.join(dataDir, "minutes", "index.json"), []);
+const minutesByCouncilId = new Map(
+  (Array.isArray(minutesIndex) ? minutesIndex : []).map((item) => [String(item.council_id), item])
+);
+
+function officialMinutesUrl() {
+  if (municipality?.system === "dnp" || municipality?.tenant_id != null) {
+    return `https://ssp.kaigiroku.net/tenant/${city}/MinuteBrowse.html`;
+  }
+  return undefined;
+}
+
+function minutesHref(councilId, scheduleId, minuteId) {
+  const base = `/${city}/minutes/${councilId}`;
+  if (!Number.isFinite(Number(scheduleId)) || !Number.isFinite(Number(minuteId))) return base;
+  return `${base}#minute-${scheduleId}-${minuteId}`;
+}
+
+function reportNameIssue(key, message) {
+  if (reportedNameIssues.has(key)) return;
+  reportedNameIssues.add(key);
+  console.log(message);
+}
+
+// --- 名寄せ関数 ---
+function seatNumberFromSpeaker(raw) {
+  const normalized = String(raw ?? "").replace(/[０-９]/g, (char) =>
+    String.fromCharCode(char.charCodeAt(0) - 0xfee0)
+  );
+  return Number(normalized.match(/^(\d+)番/)?.[1] ?? 0) || null;
+}
+
+function findMember(raw, { allowSeat = false } = {}) {
+  const normalized = normalizeQuestioner(raw);
+  if (!normalized) return null;
+
+  // 1. 完全一致
+  const exact = memberNames.findIndex((n) => n === normalized);
+  if (exact !== -1) return memberNames[exact];
+
+  // 本会議質疑の略記（例: 18番佐々木議員）は、同姓が複数いる場合に限り
+  // 議席番号と姓の双方が一致するときだけ解決する。個人質問は正式見出しを優先する。
+  if (allowSeat) {
+    const seatNumber = seatNumberFromSpeaker(raw);
+    const bySeat = members.find((member) => Number(member.seat_number) === seatNumber);
+    const bySeatName = bySeat?.name?.replace(/\s/g, "");
+    if (bySeatName && bySeatName.startsWith(normalized)) return bySeatName;
+  }
+
+  // 2. 姓のみ（2文字以下）の場合は姓で前方一致。
+  //    同姓議員が複数いるときは誤帰属を避けて名寄せ失敗にする（中立性ポリシー: 漏れより誤帰属の方が深刻）
+  if (normalized.length <= 2) {
+    const byLastName = memberNames.filter((n) => n.startsWith(normalized));
+    if (byLastName.length === 1) return byLastName[0];
+    if (byLastName.length > 1) {
+      reportNameIssue(
+        `ambiguous:${raw}`,
+        `  名寄せ曖昧: "${raw}" 候補複数 [${byLastName.join(", ")}]`
+      );
+      return null;
+    }
+  }
+
+  // 3. 部分一致（名前全体が含まれる）。候補が一意のときだけ採用する
+  const partials = memberNames.filter(
+    (n) => n.includes(normalized) || normalized.includes(n)
+  );
+  if (partials.length === 1) return partials[0];
+  if (partials.length > 1) {
+    reportNameIssue(
+      `ambiguous:${raw}`,
+      `  名寄せ曖昧: "${raw}" 候補複数 [${partials.join(", ")}]`
+    );
+    return null;
+  }
+
+  // 4. 姓のみ3文字以上でも、入力全体が氏名の前方と一致するときだけ採用する。
+  //    先頭2文字だけでは、旧議員のフルネームを同姓の現職へ誤帰属させる。
+  if (normalized.length >= 3) {
+    const candidates = memberNames.filter((n) => n.startsWith(normalized));
+    if (candidates.length === 1) return candidates[0];
+  }
+
+  return null;
+}
+
+const MAX_SESSION_CANONICAL_TOPICS = 24;
+const MAX_SESSION_GENERATED_TOPICS = 24;
+const MAX_MEMBER_GENERATED_TOPICS = 80;
+
+function extractTopicsFromText(text) {
+  const source = String(text ?? "").replace(/\s+/g, " ").trim();
+  if (!source) return [];
+
+  const topics = [];
+  const patterns = [
+    /大項目\d+[、，\s　]+([^。\n]+?について)/g,
+    /中項目\d+[、，\s　]+([^。\n]+?について)/g,
+    /([^\n。]{8,40}?について)/g,
+  ];
+
+  for (const pattern of patterns) {
+    for (const match of source.matchAll(pattern)) {
+      const topic = match[1].trim();
+      if (topic && !topics.includes(topic)) topics.push(topic);
+    }
+    if (topics.length > 0) break;
+  }
+
+  if (topics.length > 0) return topics.slice(0, 6);
+
+  const fallback = source.slice(0, 40).trim();
+  return fallback ? [fallback] : [];
+}
+
+function loadEnrichedFiles() {
+  if (!fs.existsSync(enrichedDir)) return [];
+  return fs.readdirSync(enrichedDir)
+    .filter((f) => f.endsWith(".json"))
+    .sort();
+}
+
+function loadSegmentIndexes() {
+  const indexPath = path.join(segmentsDir, "_index.json");
+  if (!fs.existsSync(indexPath)) return [];
+  try {
+    const data = JSON.parse(fs.readFileSync(indexPath, "utf-8"));
+    return Array.isArray(data) ? data : [];
+  } catch {
+    return [];
+  }
+}
+
+function loadSessionFiles() {
+  const index = readJson(path.join(sessionsDir, "index.json"), []);
+  if (!Array.isArray(index)) return [];
+  return index.flatMap((entry) => {
+    if (!entry?.id) return [];
+    const session = readJson(path.join(sessionsDir, `${entry.id}.json`), null);
+    return session ? [session] : [];
+  });
+}
+
+function dateFromSchedule(year, scheduleName) {
+  const normalized = String(scheduleName ?? "").replace(/[０-９]/g, (char) =>
+    String.fromCharCode(char.charCodeAt(0) - 0xfee0)
+  );
+  const match = normalized.match(/(\d{1,2})月(\d{1,2})日/);
+  if (!/^\d{4}$/.test(String(year ?? "")) || !match) return "";
+  return `${year}-${match[1].padStart(2, "0")}-${match[2].padStart(2, "0")}`;
+}
+
+function mergeTopicDetails(left = [], right = []) {
+  const byTitle = new Map();
+  for (const detail of [...left, ...right]) {
+    const title = String(detail?.title ?? "").trim();
+    if (!title) continue;
+    const current = byTitle.get(title) ?? { title };
+    const qa = [...(current.qa ?? []), ...(detail.qa ?? [])]
+      .filter((item) => item?.question && item?.answer)
+      .filter((item, index, rows) =>
+        rows.findIndex((candidate) =>
+          candidate.question === item.question && candidate.answer === item.answer
+        ) === index
+      );
+    byTitle.set(title, {
+      ...current,
+      ...detail,
+      title,
+      ...(qa.length > 0 ? { qa } : {}),
+    });
+  }
+  return [...byTitle.values()];
+}
+
+function mergeSession(current, next) {
+  if (!current) return next;
+  const dates = uniqueTopics([
+    ...(current.dates ?? []),
+    current.date,
+    ...(next.dates ?? []),
+    next.date,
+  ]).sort();
+  return {
+    ...current,
+    ...Object.fromEntries(
+      Object.entries(next).filter(([, value]) => value !== undefined && value !== null && value !== "")
+    ),
+    record_id: current.record_id,
+    topics: uniqueTopics([...(current.topics ?? []), ...(next.topics ?? [])]),
+    summary_topics: uniqueTopics([
+      ...(current.summary_topics ?? []),
+      ...(next.summary_topics ?? []),
+    ]),
+    canonical_topics: uniqueTopics([
+      ...(current.canonical_topics ?? []),
+      ...(next.canonical_topics ?? []),
+    ]).slice(0, MAX_SESSION_CANONICAL_TOPICS),
+    generated_topics: uniqueTopics([
+      ...(current.generated_topics ?? []),
+      ...(next.generated_topics ?? []),
+    ]).slice(0, MAX_SESSION_GENERATED_TOPICS),
+    dates,
+    date: dates[0] ?? current.date ?? next.date,
+    topic_details: mergeTopicDetails(current.topic_details, next.topic_details),
+    evidence_segment_ids: uniqueTopics([
+      ...(current.evidence_segment_ids ?? []),
+      ...(next.evidence_segment_ids ?? []),
+    ]),
+    evidence_minute_ids: uniqueTopics([
+      ...(current.evidence_minute_ids ?? []),
+      ...(next.evidence_minute_ids ?? []),
+    ]).map((minuteId) => Number(minuteId)).filter(Number.isFinite),
+  };
+}
+
+// activity: { [normalizedMemberName]: { sessions: Map<identity, session> } }
+const activity = {};
+for (const name of memberNames) {
+  activity[name] = { sessions: new Map() };
+}
+
+function addActivity(memberName, identity, session) {
+  if (!activity[memberName]) return;
+  const current = activity[memberName].sessions.get(identity);
+  activity[memberName].sessions.set(identity, mergeSession(current, session));
+}
+
+const enrichedFiles = loadEnrichedFiles();
+const enrichedMembersByCouncil = new Map();
+const enrichedSupplements = new Map();
+const generatedTopicsByMember = new Map();
+if (enrichedFiles.length > 0) {
+  for (const file of enrichedFiles) {
+    const data = JSON.parse(fs.readFileSync(path.join(enrichedDir, file), "utf-8"));
+    const sessionName = data.name;
+    const councilId = data.council_id;
+    if (!minutesByCouncilId.has(String(councilId))) continue;
+    const councilMembers = enrichedMembersByCouncil.get(String(councilId)) ?? new Set();
+
+    for (const q of (data.questioners ?? [])) {
+      const memberName = findMember(q.name);
+      if (!memberName) {
+        reportNameIssue(
+          `unmatched:${q.name}:${sessionName}`,
+          `  名寄せ失敗: "${q.name}" (${sessionName})`
+        );
+        continue;
+      }
+      councilMembers.add(memberName);
+      const allTopics = uniqueTopics([
+        ...(Array.isArray(q.topics) ? q.topics : []),
+        ...(Array.isArray(q.ai_topics) ? q.ai_topics : []),
+      ])
+        .slice(0, MAX_SESSION_CANONICAL_TOPICS);
+      const supplementKey = `${councilId}:${memberName}`;
+      const current = enrichedSupplements.get(supplementKey) ?? {
+        councilId: Number(councilId),
+        memberName,
+        sessionName,
+        topics: [],
+      };
+      current.topics = uniqueTopics([...current.topics, ...allTopics]);
+      enrichedSupplements.set(supplementKey, current);
+    }
+    enrichedMembersByCouncil.set(String(councilId), councilMembers);
+  }
+}
+
+function likelyCommitteeQuestion(segments) {
+  const text = segments.map((segment) => segment.text ?? segment.excerpt ?? "").join(" ");
+  return /(?:質問|質疑)(?:を|させて|いたし)|お伺い|お聞かせ|御説明いただ/u.test(text);
+}
+
+const segmentIndex = loadSegmentIndexes();
+const councilIds = uniqueTopics(segmentIndex.map((item) => item.council_id));
+const segmentsByCouncil = new Map();
+for (const rawCouncilId of councilIds) {
+  const councilId = Number(rawCouncilId);
+  if (!Number.isFinite(councilId)) continue;
+  if (!minutesByCouncilId.has(String(councilId))) continue;
+  const fp = path.join(segmentsDir, `${councilId}.json`);
+  const segments = readJson(fp, []);
+  if (!Array.isArray(segments)) continue;
+  segmentsByCouncil.set(councilId, segments);
+}
+
+const { isRawQuestionCapableMeeting, parsePersonalQuestionBlocks, parsePlenaryQuestionBlocks, isClearlyNonQuestionRoleTurn, rawMinuteText } =
+  createDnpQuestionParser({ findMember, memberNames });
+
 function segmentsForBlock(block) {
   const minuteIds = new Set(block.minuteIds.map(String));
   return (segmentsByCouncil.get(block.councilId) ?? []).filter((segment) => {
@@ -1732,3 +1741,8 @@ fs.writeFileSync(outSite, json, "utf-8");
 
 console.log(`\n完了: ${Object.keys(result).length}名分の活動データを生成`);
 console.log(`保存先: ${outData}`);
+
+}
+
+if (process.argv[1] && fs.existsSync(process.argv[1])
+  && fs.realpathSync(process.argv[1]) === fs.realpathSync(fileURLToPath(import.meta.url))) runCli();
