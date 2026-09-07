@@ -3,6 +3,17 @@
 import { useState, useEffect, useEffectEvent, useRef, useMemo } from "react";
 import { useToast } from "./Toast";
 import type { MinutesSession, MinuteItem } from "@/types/minutes";
+import { buildMinutesCitation, getMinutesSource, type MinutesSource } from "@/lib/minutesSource";
+import { selectedMinutesSchedule } from "@/lib/minutesReaderState";
+import { minutesScheduleUnit } from "@/lib/minutesPresentation";
+import MinutesSourceLink from "./MinutesSourceLink";
+
+type CitationContext = {
+  cityName: string;
+  councilName: string;
+  scheduleName: string;
+  source: MinutesSource | null;
+};
 
 // ---------- ユーティリティ ----------
 
@@ -146,7 +157,7 @@ function MinuteItemView({
   item: MinuteItem;
   highlight?: string;
   anchorId: string;
-  citationContext: { cityName: string; councilName: string; scheduleName: string };
+  citationContext: CitationContext;
 }) {
   const [expanded, setExpanded] = useState(false);
   const toast = useToast();
@@ -192,9 +203,12 @@ function MinuteItemView({
   };
 
   const handleCopyCitation = async () => {
-    const { cityName, councilName, scheduleName } = citationContext;
-    const header = `${item.title}（${cityName}議会 ${councilName} ${scheduleName}）`;
-    const block = `${header}\n\n${item.text}\n\n出典: ${buildPermalink()}`;
+    const block = buildMinutesCitation({
+      ...citationContext,
+      item,
+      source: getMinutesSource({ item, fallback: citationContext.source }),
+      permalink: buildPermalink(),
+    });
     try {
       await navigator.clipboard.writeText(block);
       toast.show("出典つきの本文をコピーしました");
@@ -273,7 +287,7 @@ function AgendaGroupView({
   activeTopic: string | null;
   query: string;
   scheduleId: number;
-  citationContext: { cityName: string; councilName: string; scheduleName: string };
+  citationContext: CitationContext;
 }) {
   const [open, setOpen] = useState(defaultOpen);
   const ref = useRef<HTMLDivElement>(null);
@@ -283,12 +297,12 @@ function AgendaGroupView({
     setOpen(defaultOpen);
   }, [defaultOpen]);
 
-  // 自動スクロール（最初のマッチグループのみ）
+  // 入力中は検索欄と日程表示を画面内に保ち、テーマ選択時だけ本文へ移動する。
   useEffect(() => {
-    if (scrollTo && (activeTopic || query)) {
+    if (scrollTo && activeTopic) {
       ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, [scrollTo, activeTopic, query]);
+  }, [scrollTo, activeTopic]);
 
   useEffect(() => {
     if (targetMinuteId == null) return;
@@ -315,7 +329,8 @@ function AgendaGroupView({
       {/* ヘッダー（トグル） */}
       <button
         onClick={() => setOpen((v) => !v)}
-        className={`w-full flex items-center gap-3 px-4 py-3 text-left transition-colors ${
+        aria-expanded={open}
+        className={`w-full flex items-center gap-3 px-4 py-3 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#2A5298] ${
           open ? "bg-[#E8EEF7]" : "bg-white hover:bg-[#F4F6F9]"
         }`}
       >
@@ -370,11 +385,15 @@ type Props = {
   activeTopic?: string | null;
   query: string;
   onQueryChange: (q: string) => void;
+  officialSource?: MinutesSource | null;
 };
 
-export default function MinutesReader({ session, cityName, activeTopic = null, query, onQueryChange }: Props) {
+export default function MinutesReader({ session, cityName, activeTopic = null, query, onQueryChange, officialSource }: Props) {
+  const scheduleUnit = minutesScheduleUnit(session);
   const [activeScheduleIndex, setActiveScheduleIndex] = useState(0);
+  const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
   const [hashTarget, setHashTarget] = useState<{ scheduleId: number; minuteId: number } | null>(null);
+  const filter = activeTopic ?? query.trim();
 
   // 引用URLで来たとき (#minute-{scheduleId}-{minuteId}) は対応する日程タブを開いてスクロールする
   const handleHashNavigation = useEffectEvent(() => {
@@ -390,6 +409,7 @@ export default function MinutesReader({ session, cityName, activeTopic = null, q
     if (idx === -1) return;
     setHashTarget({ scheduleId: targetScheduleId, minuteId: targetMinuteId });
     setActiveScheduleIndex(idx);
+    setSelectedFilter(filter);
   });
 
   useEffect(() => {
@@ -399,8 +419,6 @@ export default function MinutesReader({ session, cityName, activeTopic = null, q
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
-
-  const filter = activeTopic ?? query.trim();
 
   // 各タブのマッチ件数（フィルター時のみ計算）
   const matchCountsPerTab = useMemo(() => {
@@ -413,19 +431,20 @@ export default function MinutesReader({ session, cityName, activeTopic = null, q
     });
   }, [filter, activeTopic, query, session.schedules]);
 
-  const effectiveActiveScheduleIndex = useMemo(() => {
-    if (!filter || !matchCountsPerTab) return activeScheduleIndex;
-    const firstMatch = matchCountsPerTab.findIndex((c) => c > 0);
-    if (firstMatch === -1) return activeScheduleIndex;
-    return matchCountsPerTab[activeScheduleIndex] === 0 ? firstMatch : activeScheduleIndex;
-  }, [activeScheduleIndex, filter, matchCountsPerTab]);
+  const effectiveActiveScheduleIndex = selectedMinutesSchedule(
+    activeScheduleIndex, matchCountsPerTab, selectedFilter === filter,
+  );
 
   const activeSchedule = session.schedules[effectiveActiveScheduleIndex];
+  if (!activeSchedule) {
+    return <p className="rounded-lg border border-[#CBD5E0] bg-white p-5 text-sm text-[#4A5568]">収録済みの日程・資料はありません。</p>;
+  }
   const groups = buildAgendaGroups(activeSchedule.minutes);
   const citationContext = {
     cityName,
     councilName: session.name,
     scheduleName: parseScheduleName(activeSchedule.name),
+    source: getMinutesSource({ schedule: activeSchedule, session, fallback: officialSource }),
   };
 
   // フィルター適用後のグループ
@@ -444,16 +463,18 @@ export default function MinutesReader({ session, cityName, activeTopic = null, q
       {/* スケジュールタブ */}
       <div className="mb-5">
         <div className="overflow-x-auto -mx-4 px-4">
-          <div className="flex gap-1 min-w-max border-b border-[#CBD5E0]">
+          <div className="flex gap-1 min-w-max border-b border-[#CBD5E0]" role="group" aria-label={`表示する${scheduleUnit}`}>
             {session.schedules.map((s, i) => {
               const tabCount = matchCountsPerTab?.[i] ?? 0;
               return (
                 <button
                   key={s.schedule_id}
-                  onClick={() => setActiveScheduleIndex(i)}
+                  onClick={() => { setActiveScheduleIndex(i); setSelectedFilter(filter); }}
+                  aria-pressed={i === effectiveActiveScheduleIndex}
+                  aria-controls="minutes-day-content"
                   className={`
-                    relative text-sm px-3 py-2 font-medium whitespace-nowrap border-b-2 -mb-px transition-colors
-                    ${i === activeScheduleIndex
+                    relative min-h-11 text-sm px-3 py-2 font-medium whitespace-nowrap border-b-2 -mb-px transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#2A5298]
+                    ${i === effectiveActiveScheduleIndex
                       ? "border-[#1B3A6B] text-[#1B3A6B]"
                       : "border-transparent text-[#4A5568] hover:text-[#1B3A6B] hover:border-[#CBD5E0]"
                     }
@@ -477,6 +498,7 @@ export default function MinutesReader({ session, cityName, activeTopic = null, q
 
       {/* テキスト検索 */}
       <div className="mb-4">
+        <label htmlFor="minutes-body-search" className="mb-2 block text-sm font-semibold text-[#1B3A6B]">この会議の全{scheduleUnit}から探す</label>
         <div className="relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -488,10 +510,11 @@ export default function MinutesReader({ session, cityName, activeTopic = null, q
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
           <input
+            id="minutes-body-search"
             type="text"
             value={query}
             onChange={(e) => onQueryChange(e.target.value)}
-            placeholder="この日の議事録内を検索…"
+            placeholder="議題・発言者・本文のキーワード"
             className="w-full pl-9 pr-9 py-2 text-base border border-[#CBD5E0] rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#2A5298] focus:border-[#2A5298] placeholder:text-[#A0AEC0]"
           />
           {query && (
@@ -506,24 +529,30 @@ export default function MinutesReader({ session, cityName, activeTopic = null, q
         </div>
       </div>
 
+      <div className="mb-4 border-l-4 border-[#F7C948] pl-4">
+        <p className="text-sm text-[#4A5568]">表示中の{scheduleUnit}</p>
+        <h2 id="minutes-day-heading" className="text-lg font-bold text-[#1B3A6B]">{citationContext.scheduleName}</h2>
+        <MinutesSourceLink source={citationContext.source} />
+      </div>
+
       {/* フィルター状態の表示 */}
       {filter && (
         <div className="mb-3 flex items-center gap-2">
           <p className="text-sm text-[#4A5568]">
             <span className="font-semibold text-[#1B3A6B]">「{filter}」</span>
-            に関連する日程：{matchCount}件
+            に関連する議題：{matchCount}件（表示中の{scheduleUnit}）
           </p>
           {matchCount === 0 && (
-            <span className="text-xs text-[#718096]">（別の日程を確認してください）</span>
+            <span className="text-sm text-[#718096]">（別の{scheduleUnit}を確認してください）</span>
           )}
         </div>
       )}
 
       {/* 議題グループ一覧 */}
-      <div className="space-y-2">
+      <div id="minutes-day-content" aria-labelledby="minutes-day-heading" className="space-y-2">
         {visibleGroups.length === 0 ? (
           <div className="bg-white rounded-lg border border-[#CBD5E0] p-8 text-center text-[#718096]">
-            この日程に「{filter}」に関連する内容は見つかりませんでした
+            この{scheduleUnit}に「{filter}」に関連する内容は見つかりませんでした
           </div>
         ) : (
           visibleGroups.map((group, i) => {
@@ -536,7 +565,7 @@ export default function MinutesReader({ session, cityName, activeTopic = null, q
               : null;
             return (
               <AgendaGroupView
-                key={group.id}
+                key={`${activeSchedule.schedule_id}-${group.id}`}
                 group={group}
                 defaultOpen={isMatch || targetMinuteId != null}
                 scrollTo={isMatch && i === 0}

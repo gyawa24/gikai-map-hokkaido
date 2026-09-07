@@ -107,6 +107,17 @@ const smokeCases = [
     ],
   },
   {
+    label: "dynamic minutes retains capability navigation",
+    path: "/chitose/minutes/578",
+    status: 200,
+    bodyCheck(body) {
+      const navigation = body.match(/<nav\b[^>]*aria-label="千歳市議会内ナビゲーション"[^>]*>([\s\S]*?)<\/nav>/u)?.[1] ?? "";
+      for (const href of ["/chitose", "/chitose/minutes", "/chitose/themes"]) {
+        assert(navigation.includes(`href="${href}"`), `city navigation is missing ${href}`);
+      }
+    },
+  },
+  {
     label: "dynamic topic page",
     path: "/topics/u-e5ae9ae4be8be4bc9a",
     status: 200,
@@ -326,7 +337,7 @@ async function checkCase(testCase) {
     }
   }
 
-  if (testCase.bodyIncludes || testCase.bodyExcludes || testCase.jsonKeys) {
+  if (testCase.bodyIncludes || testCase.bodyExcludes || testCase.jsonKeys || testCase.bodyCheck) {
     const body = await response.text();
     bodyWasRead = true;
 
@@ -353,6 +364,8 @@ async function checkCase(testCase) {
         );
       }
     }
+
+    if (testCase.bodyCheck) testCase.bodyCheck(body);
 
     if (testCase.jsonKeys) {
       const data = JSON.parse(body);

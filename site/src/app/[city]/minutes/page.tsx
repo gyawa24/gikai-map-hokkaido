@@ -1,13 +1,17 @@
 import fs from "fs";
 import path from "path";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import type { MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
 import MinutesIndexClient from "@/components/MinutesIndexClient";
+import MinutesSourceLink from "@/components/MinutesSourceLink";
 import { hasCityCapability } from "@/lib/cityCapabilities";
 import { getMunicipality } from "@/lib/municipalities";
 import { absoluteUrl, buildPageMetadata } from "@/lib/metadata";
+import { claimsMinutesBodyIsMissing } from "@/lib/minutesPresentation";
+import { getMinutesCatalogSource } from "@/lib/minutesSource";
 import { getCapabilityCityStaticParams } from "@/lib/staticCityParams";
 import { buildBreadcrumbList } from "@/lib/structuredData";
 import { hasStructuredMinutes } from "@/lib/structured-minutes/loadStructuredMinutes";
@@ -26,7 +30,7 @@ function rawUrl(remotePath: string): string {
 
 type MinutesIndexResult = {
   items: MinutesIndexItem[];
-  source: "local" | "remote" | "empty";
+  source: "local" | "remote" | "empty" | "error";
 };
 
 export function generateStaticParams() {
@@ -63,9 +67,9 @@ async function getMinutesIndex(city: string): Promise<MinutesIndexResult> {
         fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
       ) as MinutesIndexItem[];
       if (Array.isArray(data)) return { items: data, source: "local" };
-      return { items: [], source: "empty" };
+      return { items: [], source: "error" };
     } catch {
-      return { items: [], source: "empty" };
+      return { items: [], source: "error" };
     }
   }
 
@@ -77,13 +81,13 @@ async function getMinutesIndex(city: string): Promise<MinutesIndexResult> {
     try {
       const response = await fetch(rawUrl(remotePath), { cache: "no-store" });
       if (response.status === 404) continue;
-      if (!response.ok) return { items: [], source: "empty" };
+      if (!response.ok) return { items: [], source: "error" };
       const data = (await response.json()) as MinutesIndexItem[];
       return Array.isArray(data)
         ? { items: data, source: "remote" }
-        : { items: [], source: "empty" };
+        : { items: [], source: "error" };
     } catch {
-      return { items: [], source: "empty" };
+      return { items: [], source: "error" };
     }
   }
 
@@ -129,12 +133,17 @@ export default async function CityMinutesPage({
 }) {
   const { city } = await params;
   const municipality = getMunicipality(city);
+  if (!municipality) notFound();
   const cityName = municipality?.name ?? city;
+  const councilName = municipality.council_name;
+  const officialSource = getMinutesCatalogSource(municipality);
 
   const { items: allItems, source: indexSource } = await getMinutesIndex(city);
-  if (!municipality || (!hasCityCapability(city, "minutes") && allItems.length === 0)) {
+  const hasMinutes = hasCityCapability(city, "minutes");
+  if (!hasMinutes && allItems.length === 0 && indexSource !== "error") {
     notFound();
   }
+  const indexFailed = indexSource === "error" || (indexSource === "empty" && hasMinutes);
   const restricted = municipality.minutes_access === "restricted";
 
   const items = await Promise.all(
@@ -146,7 +155,8 @@ export default async function CityMinutesPage({
       const enriched = restricted ? null : getEnriched(city, item.council_id);
       return {
         ...item,
-        enriched,
+        enriched:
+          hasStructured && claimsMinutesBodyIsMissing(enriched) ? null : enriched,
         category: categoryLabel(item.type_label),
         hasStructuredMinutes: hasStructured,
       };
@@ -180,47 +190,45 @@ export default async function CityMinutesPage({
   return (
     <div className="page-shell max-w-6xl">
       <JsonLd data={[breadcrumb, collectionPage]} />
+      <nav aria-label="パンくず" className="mb-5 flex flex-wrap items-center gap-2 text-sm text-[#4A5568]">
+        <Link href="/" prefetch={false} className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-[#1B3A6B]">トップ</Link>
+        <span aria-hidden="true">›</span>
+        <Link href={`/${city}`} prefetch={false} className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-[#1B3A6B]">{councilName}</Link>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">議事録</span>
+      </nav>
       <section className="mb-5">
-        <h2 className="theme-section-title mb-1 text-2xl">公式議事録</h2>
+        <h1 className="theme-section-title mb-2 text-2xl">{councilName}の議事録</h1>
         <p className="text-base text-[#4A5568] leading-relaxed">
           {restricted
-            ? `${cityName}議会の公式会議録一覧です。全文は公式ページで確認してください。`
-            : `${cityName}議会の公式会議録です。本会議・委員会の発言内容を収録しています。`}
+            ? "公式会議録の一覧です。全文は公式ページで確認してください。"
+            : "本サイトに収録した公式会議録を、開催日や会議名から探せます。"}
           {enrichedCount > 0 && !restricted && (
-            <span className="text-sm text-[#718096]">
+            <span className="text-sm text-[#4A5568]">
               {" "}（{enrichedCount}件にAI要約・タグあり）
             </span>
           )}
         </p>
+        {!indexFailed && <p className="mt-2 text-sm text-[#4A5568]">収録 {items.length}件。未収録の会議もあります。開催日は確認できた精度で表示しています。</p>}
+        <div className="mt-2"><MinutesSourceLink source={officialSource} /></div>
       </section>
 
       {restricted && (
         <div className="theme-alert mb-5 px-4 py-3">
           <p className="text-sm font-semibold text-[#7A5A00] mb-1">本サイトでの全文閲覧は一時停止中です</p>
-          <p className="text-xs text-[#5A4500] leading-relaxed">
+          <p className="text-sm text-[#5A4500] leading-relaxed">
             {restrictedNote ?? `${cityName}公式サイトの著作権ポリシーで複製・転用に事前許可を要する旨が明記されているため、許諾確認が取れるまで本サイトでの全文閲覧を停止しています。データは保管しており、許諾後に公開を再開します。`}
-            <br />
-            {municipality.minutes_official_url ? (
-              <>
-                会議録本体は{" "}
-                <a
-                  href={municipality.minutes_official_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#7A5A00]"
-                >
-                  {cityName}議会の公式ページ
-                </a>
-                からご覧ください。
-              </>
-            ) : (
-              <>会議録本体は{cityName}議会の公式サイトからご覧ください。</>
-            )}
           </p>
         </div>
       )}
 
-      {items.length === 0 ? (
+      {indexFailed ? (
+        <div role="alert" className="rounded-lg border border-[#E6C566] bg-[#FFF7E6] px-5 py-5 text-[#78451F]">
+          <p className="font-semibold">議事録一覧を読み込めませんでした</p>
+          <p className="mt-2 text-sm leading-relaxed">掲載状況を確認できない状態です。時間をおいて再読み込みするか、公式会議録ページでご確認ください。</p>
+          <a href={`/${city}/minutes`} className="mt-3 inline-flex min-h-11 items-center font-medium underline underline-offset-2">一覧を再読み込みする</a>
+        </div>
+      ) : items.length === 0 ? (
         <div className="theme-card px-6 py-8 text-center text-[#718096]">
           現在、掲載されている議事録はありません。
         </div>

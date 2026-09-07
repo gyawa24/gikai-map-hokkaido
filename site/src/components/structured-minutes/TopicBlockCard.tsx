@@ -43,6 +43,23 @@ function snippetTone(snippet: TopicSnippet): string {
   return "border-[#E2E8F0] bg-[#F4F6F9] text-[#4A5568]";
 }
 
+function reviewStatusLabel(topic: TopicBlock): string {
+  if (topic.review_status === "auto") return "ルールベース自動整理・未レビュー";
+  if (topic.review_status === "needs_review") return "自動整理・要レビュー";
+  if (topic.review_status === "reviewed") return "確認済み";
+  return "非公開判定";
+}
+
+function topicDescription(topic: TopicBlock): string {
+  if (topic.review_status === "auto") {
+    return "この項目名と分類タグは、ルールベースで自動整理した未レビュー情報です。";
+  }
+  if (topic.review_status === "reviewed") {
+    return "この項目名と分類タグは、構造化処理後に内容を確認した整理情報です。";
+  }
+  return "この項目名と分類タグは、構造化処理で付与した確認待ちの整理情報です。";
+}
+
 export default function TopicBlockCard({
   topic,
   snippets,
@@ -65,19 +82,22 @@ export default function TopicBlockCard({
         <span className="rounded-full border border-[#E6C566] bg-[#FFF7D6] px-2 py-0.5 text-xs font-bold text-[#6B4C11]">
           質問項目
         </span>
+        <span className="rounded-full border border-[#E2E8F0] bg-[#F4F6F9] px-2 py-0.5 text-xs font-bold text-[#4A5568]">
+          {reviewStatusLabel(topic)}
+        </span>
         <h3 className="text-lg font-bold leading-snug text-[#1A202C]">
           {topic.title_original}
         </h3>
       </div>
 
       <p className="mb-4 text-sm leading-relaxed text-[#4A5568]">
-        この項目名と分類タグは地方議会ドットコム編集部による整理です。下の本文は、公式会議録の発言からこの質問項目に関係する部分を抜き出した原文抜粋です。
+        {topicDescription(topic)}下の本文は、公式会議録の発言からこの質問項目に関係する部分を抜き出した原文抜粋です。
       </p>
 
       <div className="mb-4 flex flex-wrap gap-2 text-xs text-[#4A5568]">
         {topic.policy_area_tags.length > 0 && (
           <span className="rounded border border-[#E2E8F0] bg-[#F4F6F9] px-2 py-0.5 font-bold">
-            編集部タグ: {topic.policy_area_tags.join("、")}
+            整理タグ: {topic.policy_area_tags.join("、")}
           </span>
         )}
         {respondentNames.length > 0 && (
@@ -92,7 +112,7 @@ export default function TopicBlockCard({
           const turn = turnsById.get(snippet.turn_id);
           const speakerName = turn?.speaker_name_original ?? "";
           const roundLabel = snippetRoundLabel(snippet);
-          const citation = `【原文抜粋】\n${snippet.text_original}\n\n出典:\n${sourceDocument.title}\n${sourceDocument.official_url}\n地方議会ドットコム構造化ID: ${topic.id} / ${snippet.id}`;
+          const citation = `【原文抜粋】\n${snippet.text_original}\n\n出典:\n${sourceDocument.title}\n${snippet.source_position.official_url}\n地方議会ドットコム構造化ID: ${topic.id} / ${snippet.id}`;
 
           return (
             <section

@@ -3,6 +3,7 @@ export type MinuteItem = {
   title: string;
   minute_type: string;
   text: string;
+  source_url?: string;
 };
 
 export type MinuteSchedule = {
@@ -10,6 +11,7 @@ export type MinuteSchedule = {
   name: string;
   page_no: number;
   date?: string;
+  source_url?: string;
   minutes: MinuteItem[];
 };
 
@@ -20,6 +22,7 @@ export type MinutesSession = {
   japanese_year: string;
   type_label: string;
   schedules: MinuteSchedule[];
+  source_url?: string;
 };
 
 export type MinutesIndexItem = {
@@ -34,6 +37,7 @@ export type MinutesIndexItem = {
   end_date?: string;
   sort_date?: string;
   date_precision?: "day" | "month";
+  source_url?: string;
 };
 
 export type MinutesSpeaker = {

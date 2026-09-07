@@ -31,6 +31,17 @@ from urllib.parse import unquote, urlencode
 
 import requests
 
+if __package__:
+    from scraper.lib.dnp_minutes import (
+        council_index_entry, load_council_index, ordered_council_index,
+        validate_council_content, write_json_atomic,
+    )
+else:
+    from lib.dnp_minutes import (
+        council_index_entry, load_council_index, ordered_council_index,
+        validate_council_content, write_json_atomic,
+    )
+
 ROOT = Path(__file__).parent.parent
 MUNICIPALITIES_FILE = ROOT / "data" / "municipalities.json"
 DATA_DIR = ROOT / "data"
@@ -158,7 +169,7 @@ def fetch_body_text(slug: str, meeting: dict, year: int) -> str:
 
     m = re.search(r"HUID=(\d+)", frameset_html)
     if not m:
-        return ""
+        raise ValueError("本文フレームの HUID が見つかりません")
     huid = m.group(1)
 
     act203_url = (
@@ -213,17 +224,9 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
     out_dir = DATA_DIR / slug / "minutes"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # 既存index.jsonを読み込んで差分追加できるように
     index_path = out_dir / "index.json"
-    existing_index = []
-    if index_path.exists() and not force:
-        try:
-            existing_index = json.loads(index_path.read_text(encoding="utf-8"))
-        except Exception:
-            existing_index = []
-
-    # council_id -> item
-    index_map: dict[int, dict] = {x["council_id"]: x for x in existing_index}
+    index_map = load_council_index(index_path)
+    index_changed = False
 
     # 年ごとに会議一覧を収集
     all_meetings: list[dict] = []
@@ -254,82 +257,99 @@ def scrape_one(slug: str, years: list[int], force: bool) -> int:
 
     print(f"  [{slug}] 会議グループ {len(councils)}件", flush=True)
 
-    # 各会議の本文を取得 & 保存
     saved = 0
+    failures = []
     for cid, c in councils.items():
         council_file = out_dir / f"{cid}.json"
-        if council_file.exists() and not force:
-            # 既に取得済なら index のみ更新
-            index_map[cid] = {
-                "council_id": cid,
-                "name": c["name"],
-                "year": c["year"],
-                "japanese_year": c["japanese_year"],
-                "type_label": c["type_label"],
-                "file": f"{cid}.json",
-                "schedule_count": len(c["schedules"]),
+        try:
+            existing = None
+            if council_file.exists():
+                existing = json.loads(council_file.read_text(encoding="utf-8"))
+                if existing.get("council_id") != cid or not isinstance(existing.get("schedules"), list):
+                    raise ValueError("既存会議の ID または schedules が不正です")
+
+            existing_schedules = existing["schedules"] if existing else []
+            schedule_ids = [schedule.get("schedule_id") for schedule in existing_schedules]
+            if any(not isinstance(sid, int) or isinstance(sid, bool) or sid < 1 for sid in schedule_ids) or len(set(schedule_ids)) != len(schedule_ids):
+                raise ValueError("既存日程 ID が不正または重複しています")
+            next_schedule_id = max(schedule_ids, default=0) + 1
+            output_schedules = []
+            matched_ids = set()
+            seen_finos = set()
+            for meeting in sorted(c["schedules"], key=lambda item: item["fino"]):
+                if meeting["fino"] in seen_finos:
+                    raise ValueError(f"日程 FINO={meeting['fino']} が重複しています")
+                seen_finos.add(meeting["fino"])
+                # 既存の連番 ID を維持し、FINO 未記録の旧データは一意な日程名で照合する。
+                matches = [schedule for schedule in existing_schedules if (
+                    schedule.get("source_fino") == meeting["fino"]
+                    or (schedule.get("source_fino") is None and schedule.get("name") == meeting["schedule_name"])
+                )]
+                if len(matches) > 1:
+                    raise ValueError(f"既存日程を一意に照合できません: {meeting['schedule_name']}")
+                previous = matches[0] if matches else None
+                if previous and previous["schedule_id"] in matched_ids:
+                    raise ValueError(f"同じ既存日程に複数の FINO が対応しています: {meeting['fino']}")
+                if previous:
+                    matched_ids.add(previous["schedule_id"])
+                    schedule_id = previous["schedule_id"]
+                else:
+                    schedule_id = next_schedule_id
+                    next_schedule_id += 1
+                has_body = previous and isinstance(previous.get("minutes"), list) and any(
+                    isinstance(minute, dict) and str(minute.get("text", "")).strip()
+                    for minute in previous["minutes"]
+                )
+                if has_body and not force:
+                    output_schedules.append(previous)
+                    continue
+
+                text = fetch_body_text(slug, meeting, meeting["year"])
+                if not isinstance(text, str) or not text.strip():
+                    raise ValueError(f"日程 FINO={meeting['fino']} の本文が空です")
+                output_schedules.append({
+                    **(previous or {}),
+                    "schedule_id": schedule_id,
+                    "source_fino": meeting["fino"],
+                    "name": meeting["schedule_name"],
+                    "page_no": previous.get("page_no", schedule_id) if previous else schedule_id,
+                    "minutes": [{
+                        "minute_id": 1,
+                        "title": meeting["schedule_name"],
+                        "minute_type": "本会議",
+                        "text": text,
+                    }],
+                })
+                time.sleep(REQUEST_INTERVAL)
+
+            if len(matched_ids) != len(existing_schedules):
+                raise ValueError("再発見できない既存日程があります。既存本文を保持します")
+            council_data = {
+                **(existing or {}),
+                **{key: value for key, value in c.items() if key != "schedules"},
+                "schedules": output_schedules,
             }
-            print(f"    [skip] {cid} {c['name']} (既存)", flush=True)
-            continue
+            validate_council_content(council_data, source=f"{slug}/{cid}")
+            if council_data != existing:
+                write_json_atomic(council_file, council_data)
+                saved += 1
+            key = str(cid)
+            entry = council_index_entry(
+                council_data, previous=index_map.get(key), schedule_count=len(output_schedules),
+            )
+            if entry != index_map.get(key):
+                index_map[key] = entry
+                index_changed = True
+        except Exception as error:
+            failures.append((cid, str(error)))
+            print(f"    取得失敗 {cid}、既存本文・indexを保持: {error}", flush=True)
 
-        print(f"    [{cid}] {c['name']} 日程{len(c['schedules'])}件 取得...", flush=True)
-        # schedule の日付順で昇順に並べる（FINO で近似）
-        c["schedules"].sort(key=lambda s: s["fino"])
-        output_schedules = []
-        for idx, m in enumerate(c["schedules"], 1):
-            text = ""
-            try:
-                text = fetch_body_text(slug, m, m["year"])
-            except Exception as e:
-                print(f"      取得失敗 FINO={m['fino']}: {e}", flush=True)
-            output_schedules.append({
-                "schedule_id": idx,
-                "name": m["schedule_name"],
-                "page_no": idx,
-                "minutes": [{
-                    "minute_id": 1,
-                    "title": m["schedule_name"],
-                    "minute_type": "本会議",
-                    "text": text,
-                }],
-            })
-            print(f"      ✓ {m['schedule_name']} ({len(text)}文字)", flush=True)
-            time.sleep(REQUEST_INTERVAL)
-
-        council_data = {
-            "council_id": cid,
-            "name": c["name"],
-            "year": c["year"],
-            "japanese_year": c["japanese_year"],
-            "type_label": c["type_label"],
-            "schedules": output_schedules,
-        }
-        council_file.write_text(
-            json.dumps(council_data, ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
-        index_map[cid] = {
-            "council_id": cid,
-            "name": c["name"],
-            "year": c["year"],
-            "japanese_year": c["japanese_year"],
-            "type_label": c["type_label"],
-            "file": f"{cid}.json",
-            "schedule_count": len(c["schedules"]),
-        }
-        saved += 1
-
-    # index.json を最新データで並べ替えて保存
-    index_list = sorted(
-        index_map.values(),
-        key=lambda x: (x["year"], x["council_id"]),
-        reverse=True,
-    )
-    index_path.write_text(
-        json.dumps(index_list, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-    print(f"  ✓ 完了: {saved}件取得 / 全{len(index_list)}件 → {out_dir}", flush=True)
+    if index_changed:
+        write_json_atomic(index_path, ordered_council_index(index_map))
+    print(f"  完了: {saved}件保存 / 全{len(index_map)}件 → {out_dir}", flush=True)
+    if failures:
+        failed_ids = ", ".join(str(cid) for cid, _ in failures)
+        raise RuntimeError(f"[{slug}] {len(failures)} council(s) failed: {failed_ids}")
     return saved
 
 
@@ -343,14 +363,16 @@ def main() -> int:
     years = [int(y) for y in args.years.split(",") if y.strip()]
     global _MUNIS
     _MUNIS = load_municipalities()
+    failures = []
     for slug in args.slug:
         print(f"=== {slug} (years={years}) ===", flush=True)
         try:
             scrape_one(slug, years, args.force)
         except Exception as e:
+            failures.append(slug)
             print(f"  ✗ エラー: {e}", flush=True)
             import traceback; traceback.print_exc()
-    return 0
+    return 1 if failures else 0
 
 
 if __name__ == "__main__":

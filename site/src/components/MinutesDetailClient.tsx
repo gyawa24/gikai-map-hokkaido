@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import type { MinutesSession, MinutesEnriched, MinutesSpeaker } from "@/types/minutes";
 import MinutesReader from "./MinutesReader";
+import AIDisclaimer from "./AIDisclaimer";
+import type { MinutesSource } from "@/lib/minutesSource";
 
 const ROLE_ORDER: Record<string, number> = {
   "議長": 0, "市長": 1, "副市長": 2, "議員": 3, "理事者": 4, "その他": 5,
@@ -13,9 +15,10 @@ type Props = {
   session: MinutesSession;
   enriched: MinutesEnriched | null;
   cityName: string;
+  officialSource?: MinutesSource | null;
 };
 
-export default function MinutesDetailClient({ session, enriched, cityName }: Props) {
+export default function MinutesDetailClient({ session, enriched, cityName, officialSource }: Props) {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") ?? "";
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
@@ -47,8 +50,9 @@ export default function MinutesDetailClient({ session, enriched, cityName }: Pro
       {/* AI要約セクション */}
       {enriched ? (
         <section className="mb-6 space-y-4">
+          <AIDisclaimer sourceLabel="公式会議録" />
           {/* 要約 */}
-          <div className="theme-panel p-5">
+          <div className="rounded-lg border border-[#CBD5E0] bg-white p-5">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-bold text-[#2A5298]">✦ AI要約</span>
             </div>
@@ -70,7 +74,7 @@ export default function MinutesDetailClient({ session, enriched, cityName }: Pro
           {/* タグ（クリックで絞り込み） */}
           {enriched.tags.length > 0 && (
             <div>
-              <p className="text-xs text-[#718096] mb-2">
+              <p className="text-sm text-[#4A5568] mb-2">
                 タグをクリックすると、関連する質疑の箇所を表示します
               </p>
               <div className="flex flex-wrap gap-1.5">
@@ -117,7 +121,7 @@ export default function MinutesDetailClient({ session, enriched, cityName }: Pro
           {enriched.questioners.length > 0 && (
             <div className="theme-card p-4">
               <h3 className="text-sm font-bold text-[#1B3A6B] mb-1">質問に立った議員</h3>
-              <p className="text-xs text-[#718096] mb-3">名前をクリックすると発言箇所へジャンプします</p>
+              <p className="text-sm text-[#4A5568] mb-3">名前をクリックすると発言箇所を検索します</p>
               <div className="space-y-2">
                 {enriched.questioners.map((q) => (
                   <div key={q.name} className="flex items-start gap-2">
@@ -131,7 +135,7 @@ export default function MinutesDetailClient({ session, enriched, cityName }: Pro
                     >
                       {q.name}
                     </button>
-                    <p className="text-xs text-[#4A5568] leading-relaxed">
+                    <p className="text-sm text-[#4A5568] leading-relaxed">
                       {q.topics.join("、")}
                     </p>
                   </div>
@@ -155,12 +159,12 @@ export default function MinutesDetailClient({ session, enriched, cityName }: Pro
             </div>
           )}
 
-          <p className="text-xs text-[#A0AEC0] text-right">AI要約生成日: {enriched.generated_at}</p>
+          <p className="text-sm text-[#4A5568] text-right">AI要約生成日: {enriched.generated_at}</p>
         </section>
       ) : (
-        <div className="theme-card-soft mb-6 border-dashed p-4">
-          <p className="text-sm text-[#718096] text-center">
-            要約・タグ・発言者リストを準備中です
+        <div className="mb-6 rounded-lg bg-[#E8EEF7] p-4">
+          <p className="text-sm text-[#4A5568]">
+          この会議のAI要約は未掲載です。収録本文は下の日程・資料から確認できます。
           </p>
         </div>
       )}
@@ -172,6 +176,7 @@ export default function MinutesDetailClient({ session, enriched, cityName }: Pro
         activeTopic={activeTopic}
         query={query}
         onQueryChange={setQuery}
+        officialSource={officialSource}
       />
     </>
   );

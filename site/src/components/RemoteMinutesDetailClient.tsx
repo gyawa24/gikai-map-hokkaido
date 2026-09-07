@@ -2,13 +2,22 @@
 
 import { useEffect, useState } from "react";
 import type { MinutesEnriched, MinutesIndexItem, MinutesSession } from "@/types/minutes";
+import { minutesContentLabel, minutesScheduleUnit, visibleMinutesEnriched } from "@/lib/minutesPresentation";
 import MinutesDetailClient from "./MinutesDetailClient";
+import StructuredMinutesCallout from "./StructuredMinutesCallout";
+import MinutesHeading from "./MinutesHeading";
+import MinutesSourceLink from "./MinutesSourceLink";
+import type { MinutesSource } from "@/lib/minutesSource";
+import { isMinutesSession } from "@/lib/minutesSessionValidation";
 
 type Props = {
   cityName: string;
   sessionUrl: string;
+  fallbackSessionUrl?: string;
+  officialSource?: MinutesSource | null;
   enrichedUrl: string;
   initialSession?: MinutesIndexItem;
+  structuredMinutesHref?: string;
 };
 
 type LoadState =
@@ -16,54 +25,8 @@ type LoadState =
   | { status: "loaded"; session: MinutesSession; enriched: MinutesEnriched | null }
   | { status: "error"; message: string };
 
-function typeCategory(typeLabel: string): string {
-  if (
-    typeLabel.includes("定例会") &&
-    !typeLabel.includes("補正") &&
-    !typeLabel.includes("委員会")
-  ) {
-    return "定例会";
-  }
-  if (typeLabel.includes("臨時会")) return "臨時会";
-  if (typeLabel.includes("委員会")) return "委員会";
-  return "";
-}
-
-function MinutesHeading({
-  name,
-  japaneseYear,
-  typeLabel,
-  scheduleCount,
-  totalSpeeches,
-}: {
-  name: string;
-  japaneseYear?: string;
-  typeLabel?: string;
-  scheduleCount?: number;
-  totalSpeeches?: number;
-}) {
-  const category = typeCategory(typeLabel ?? "");
-  return (
-    <section className="mb-5">
-      {(category || japaneseYear) && (
-        <div className="mb-2 flex items-center gap-2">
-          {category && <span className="theme-pill-soft text-[#2A5298]">{category}</span>}
-          {japaneseYear && <span className="text-xs text-[#718096]">{japaneseYear}</span>}
-        </div>
-      )}
-      <h1 className="theme-section-title mb-2 text-2xl leading-snug">{name}</h1>
-      {(scheduleCount !== undefined || totalSpeeches !== undefined) && (
-        <div className="flex flex-wrap gap-4 text-sm text-[#4A5568]">
-          {scheduleCount !== undefined && <span>{scheduleCount}日程</span>}
-          {totalSpeeches !== undefined && <span>{totalSpeeches}件の発言・議題</span>}
-        </div>
-      )}
-    </section>
-  );
-}
-
-async function fetchJson<T>(url: string): Promise<T | null> {
-  const response = await fetch(url, { cache: "force-cache" });
+async function fetchJson<T>(url: string, signal: AbortSignal): Promise<T | null> {
+  const response = await fetch(url, { cache: "no-store", signal });
   if (response.status === 404) return null;
   if (!response.ok) {
     throw new Error(`failed to load ${url}`);
@@ -74,23 +37,30 @@ async function fetchJson<T>(url: string): Promise<T | null> {
 export default function RemoteMinutesDetailClient({
   cityName,
   sessionUrl,
+  fallbackSessionUrl,
+  officialSource,
   enrichedUrl,
   initialSession,
+  structuredMinutesHref,
 }: Props) {
+  const [attempt, setAttempt] = useState(0);
   const [state, setState] = useState<LoadState>({ status: "loading" });
 
   useEffect(() => {
     let cancelled = false;
+    const controller = new AbortController();
 
     async function load() {
       try {
         const [session, enriched] = await Promise.all([
-          fetchJson<MinutesSession>(sessionUrl),
-          fetchJson<MinutesEnriched>(enrichedUrl).catch(() => null),
+          fetchJson<unknown>(sessionUrl, controller.signal).then((value) =>
+            value === null && fallbackSessionUrl ? fetchJson<unknown>(fallbackSessionUrl, controller.signal) : value
+          ),
+          fetchJson<MinutesEnriched>(enrichedUrl, controller.signal).catch(() => null),
         ]);
         if (cancelled) return;
-        if (!session) {
-          setState({ status: "error", message: "議事録データを取得できませんでした。" });
+        if (!isMinutesSession(session, initialSession?.council_id ?? "")) {
+          setState({ status: "error", message: "収録本文を確認できませんでした。時間をおいて再度お試しください。" });
           return;
         }
         setState({ status: "loaded", session, enriched });
@@ -104,18 +74,22 @@ export default function RemoteMinutesDetailClient({
     load();
     return () => {
       cancelled = true;
+      controller.abort();
     };
-  }, [sessionUrl, enrichedUrl]);
+  }, [sessionUrl, fallbackSessionUrl, enrichedUrl, initialSession?.council_id, attempt]);
 
   if (state.status === "loading") {
     return (
       <>
         <MinutesHeading
+          cityName={cityName}
+          indexItem={initialSession}
+          officialSource={officialSource}
           name={initialSession?.name ?? `${cityName}議会 議事録`}
           japaneseYear={initialSession?.japanese_year}
-          typeLabel={initialSession?.type_label}
           scheduleCount={initialSession?.schedule_count}
         />
+        {structuredMinutesHref && <StructuredMinutesCallout href={structuredMinutesHref} />}
         <div className="theme-card-soft p-5">
           <p className="text-sm text-[#4A5568]">議事録本文を読み込んでいます。</p>
         </div>
@@ -127,42 +101,52 @@ export default function RemoteMinutesDetailClient({
     return (
       <>
         <MinutesHeading
+          cityName={cityName}
+          indexItem={initialSession}
+          officialSource={officialSource}
           name={initialSession?.name ?? `${cityName}議会 議事録`}
           japaneseYear={initialSession?.japanese_year}
-          typeLabel={initialSession?.type_label}
           scheduleCount={initialSession?.schedule_count}
         />
+        {structuredMinutesHref && <StructuredMinutesCallout href={structuredMinutesHref} />}
         <div className="theme-alert p-5">
           <p className="text-sm font-semibold text-[#7A5A00]">{state.message}</p>
-          <p className="mt-2 text-xs text-[#7A5A00]">
-            時間をおいて再読み込みしてください。公式会議録の確認もあわせてお願いします。
+          <p className="mt-2 text-sm text-[#7A5A00]">
+            未掲載という意味ではありません。公式会議録もご確認ください。
           </p>
+          <div className="mt-3 flex flex-wrap items-center gap-4">
+            <button type="button" onClick={() => { setState({ status: "loading" }); setAttempt((value) => value + 1); }}
+              className="min-h-11 rounded-lg border border-[#1B3A6B] bg-white px-4 text-sm font-semibold text-[#1B3A6B] hover:bg-[#E8EEF7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]">再読み込み</button>
+            <MinutesSourceLink source={officialSource ?? null} />
+          </div>
         </div>
       </>
     );
   }
 
-  const { session, enriched } = state;
-  const totalSpeeches = session.schedules.reduce(
-    (acc, schedule) =>
-      acc + schedule.minutes.filter((minute) => minute.minute_type !== "名簿").length,
-    0
-  );
+  const { session } = state;
+  const enriched = visibleMinutesEnriched(session, state.enriched);
 
   return (
     <>
       <MinutesHeading
+          cityName={cityName}
+          indexItem={initialSession}
+          officialSource={officialSource}
         name={session.name}
         japaneseYear={session.japanese_year}
-        typeLabel={session.type_label}
         scheduleCount={session.schedules.length}
-        totalSpeeches={totalSpeeches}
+        scheduleUnit={minutesScheduleUnit(session)}
+        contentLabel={minutesContentLabel(session)}
       />
+
+      {structuredMinutesHref && <StructuredMinutesCallout href={structuredMinutesHref} />}
 
       <MinutesDetailClient
         session={session}
         enriched={enriched}
         cityName={cityName}
+        officialSource={officialSource}
       />
     </>
   );

@@ -13,23 +13,23 @@ export default function CityDataStatus({
 }: {
   municipality: Municipality | null;
 }) {
-  const dataUpdatedAt = formatJaDate(getSearchIndexGeneratedAt());
+  const searchGeneratedAt = formatJaDate(getSearchIndexGeneratedAt());
   const minutesVerifiedAt = formatStoredDate(municipality?.minutes_verified_at);
 
-  if (!dataUpdatedAt && !minutesVerifiedAt) return null;
+  if (!searchGeneratedAt && !minutesVerifiedAt) return null;
 
   return (
     <div className="page-shell mb-5 max-w-6xl">
       <dl className="grid gap-1 rounded-lg border border-[#CBD5E0] bg-white px-4 py-3 text-sm shadow-sm sm:flex sm:flex-wrap sm:gap-3">
-        {dataUpdatedAt && (
+        {searchGeneratedAt && (
           <div className="flex flex-wrap items-baseline gap-x-2">
-            <dt className="font-medium text-[#718096]">データ更新日</dt>
-            <dd className="font-semibold tabular-nums text-[#1A202C]">{dataUpdatedAt}</dd>
+            <dt className="font-medium text-[#4A5568]">検索データ生成日（全自治体共通）</dt>
+            <dd className="font-semibold tabular-nums text-[#1A202C]">{searchGeneratedAt}</dd>
           </div>
         )}
         {minutesVerifiedAt && (
           <div className="flex flex-wrap items-baseline gap-x-2">
-            <dt className="font-medium text-[#718096]">議事録確認日</dt>
+            <dt className="font-medium text-[#4A5568]">議事録確認日</dt>
             <dd className="font-semibold tabular-nums text-[#1A202C]">{minutesVerifiedAt}</dd>
           </div>
         )}

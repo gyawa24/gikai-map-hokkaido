@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { StructuredMinutes } from "./types";
-import { validateStructuredMinutes } from "./validateStructuredMinutes";
+import { isStructuredMinutesRequest, matchesStructuredMinutesRequest, normalizeStructuredMinutes } from "./read-contract.mjs";
 
 const REPO_OWNER = process.env.GIKAI_REPO_OWNER ?? "gyawa24";
 const REPO_NAME = process.env.GIKAI_REPO_NAME ?? "gikai-map-hokkaido";
@@ -22,83 +22,51 @@ function structuredMinutesRemotePath(municipalitySlug: string, date: string): st
   return `site/data/structured-minutes/${municipalitySlug}/${date}.json`;
 }
 
-function validateData(
-  data: StructuredMinutes,
-  municipalitySlug: string,
-  date: string
-): StructuredMinutes | null {
-  const validation = validateStructuredMinutes(data);
-  if (validation.ok) return data;
+export type StructuredMinutesResult =
+  | { status: "available"; data: StructuredMinutes }
+  | { status: "absent" | "fetch_failed" | "parse_failed" | "invalid" };
 
-  const message = `Invalid structured minutes ${municipalitySlug}/${date}: ${validation.errors.join("; ")}`;
-  if (process.env.NODE_ENV !== "production") throw new Error(message);
-  console.error(message);
-  return null;
+function validateData(data: unknown, municipalitySlug: string, id: string): StructuredMinutesResult {
+  if (!matchesStructuredMinutesRequest(data, municipalitySlug, id)) return { status: "invalid" };
+  const result = normalizeStructuredMinutes(data);
+  if (result.data) return { status: "available", data: result.data };
+  console.error(`Invalid structured minutes: ${result.validation.errors.join("; ")}`);
+  return { status: "invalid" };
 }
 
-async function fetchStructuredMinutes(
+export async function getStructuredMinutesResult(
   municipalitySlug: string,
-  date: string
-): Promise<StructuredMinutes | null> {
-  try {
-    const res = await fetch(
-      `${RAW_BASE}/${structuredMinutesRemotePath(municipalitySlug, date)}`,
-      { cache: "no-store" }
-    );
-    if (!res.ok) return null;
-    const data = (await res.json()) as StructuredMinutes;
-    return validateData(data, municipalitySlug, date);
-  } catch (error) {
-    if (process.env.NODE_ENV !== "production") throw error;
-    console.error(`Failed to fetch structured minutes ${municipalitySlug}/${date}`, error);
-    return null;
+  id: string
+): Promise<StructuredMinutesResult> {
+  if (!isStructuredMinutesRequest(municipalitySlug, id)) return { status: "absent" };
+  const fp = structuredMinutesPath(municipalitySlug, id);
+  if (fs.existsSync(/*turbopackIgnore: true*/ fp)) {
+    try {
+      return validateData(JSON.parse(fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")), municipalitySlug, id);
+    } catch {
+      return { status: "parse_failed" };
+    }
   }
-}
-
-async function remoteStructuredMinutesExists(
-  municipalitySlug: string,
-  date: string
-): Promise<boolean> {
+  let response: Response;
   try {
-    const res = await fetch(
-      `${RAW_BASE}/${structuredMinutesRemotePath(municipalitySlug, date)}`,
-      { method: "HEAD", cache: "no-store" }
-    );
-    return res.ok;
+    response = await fetch(`${RAW_BASE}/${structuredMinutesRemotePath(municipalitySlug, id)}`, { cache: "no-store" });
   } catch {
-    return false;
+    return { status: "fetch_failed" };
   }
-}
-
-export async function getStructuredMinutes(
-  municipalitySlug: string,
-  date: string
-): Promise<StructuredMinutes | null> {
-  const fp = structuredMinutesPath(municipalitySlug, date);
-  if (!fs.existsSync(/*turbopackIgnore: true*/ fp)) {
-    return fetchStructuredMinutes(municipalitySlug, date);
-  }
-
+  if (response.status === 404) return { status: "absent" };
+  if (!response.ok) return { status: "fetch_failed" };
   try {
-    const data = JSON.parse(
-      fs.readFileSync(/*turbopackIgnore: true*/ fp, "utf-8")
-    ) as StructuredMinutes;
-    return validateData(data, municipalitySlug, date);
-  } catch (error) {
-    if (process.env.NODE_ENV !== "production") throw error;
-    console.error(`Failed to load structured minutes ${municipalitySlug}/${date}`, error);
-    return null;
+    return validateData(await response.json(), municipalitySlug, id);
+  } catch {
+    return { status: "parse_failed" };
   }
 }
 
-export async function hasStructuredMinutes(
-  municipalitySlug: string,
-  date: string
-): Promise<boolean> {
-  const fp = structuredMinutesPath(municipalitySlug, date);
-  if (!fs.existsSync(/*turbopackIgnore: true*/ fp)) {
-    return remoteStructuredMinutesExists(municipalitySlug, date);
-  }
-  const data = await getStructuredMinutes(municipalitySlug, date);
-  return data !== null;
+export async function getStructuredMinutes(municipalitySlug: string, id: string): Promise<StructuredMinutes | null> {
+  const result = await getStructuredMinutesResult(municipalitySlug, id);
+  return result.status === "available" ? result.data : null;
+}
+
+export async function hasStructuredMinutes(municipalitySlug: string, id: string): Promise<boolean> {
+  return (await getStructuredMinutesResult(municipalitySlug, id)).status === "available";
 }

@@ -29,7 +29,7 @@ export default function AIDisclaimer({ sourceLabel }: Props) {
           <line x1="12" y1="16" x2="12.01" y2="16" />
         </svg>
       </div>
-      <div className="flex-1 text-xs leading-relaxed">
+      <div className="flex-1 text-sm leading-relaxed">
         <p className="font-semibold text-[#78451F] mb-0.5">
           このページの要約・抜粋・テーマ分類はAIが自動生成しています
         </p>

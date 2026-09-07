@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import type { MinutesIndexItem, MinutesEnriched } from "@/types/minutes";
+import { minutesDateLabel } from "@/lib/minutesIndexPresentation";
 
 type MinutesWithEnriched = MinutesIndexItem & {
   enriched: MinutesEnriched | null;
@@ -191,7 +192,7 @@ function generatePageNumbers(current: number, total: number): (number | "...")[]
   return pages;
 }
 
-function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", restricted = false }: Props) {
+function MinutesIndexInner({ items, city, minutesBasePath = `/${city}/minutes`, restricted = false }: Props) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -379,7 +380,8 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
   const TagButton = ({ tag }: { tag: string }) => (
     <button
       onClick={() => updateActiveTag(activeTag === tag ? null : tag)}
-      className={`text-xs px-2.5 py-1 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
+      aria-pressed={activeTag === tag}
+      className={`min-h-11 text-sm px-3 py-2 rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF] ${
         activeTag === tag
           ? "bg-[#FFF3BF] text-[#6B4C11] border-[#E6C566]"
           : "bg-white text-[#4A5568] border-[#CBD5E0] hover:border-[#9FB1D2] hover:text-[#1B3A6B]"
@@ -425,7 +427,7 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
             </button>
           )}
         </div>
-        <p className="mt-2 text-xs text-[#718096]">
+        <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">
           この一覧では会議名・年度と本文冒頭（最大400字）を検索します。{" "}
           <Link
             href={`/search?city=${encodeURIComponent(city)}${searchText.trim() ? `&q=${encodeURIComponent(searchText.trim())}` : ""}`}
@@ -434,6 +436,11 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
             全発言を検索する
           </Link>
         </p>
+        {bodySearchStatus === "error" && bodySearchQuery === searchText.trim() && searchText.trim().length >= BODY_SEARCH_MIN_LENGTH && (
+          <p role="status" className="mt-2 text-sm leading-relaxed text-[#78451F]">
+            本文冒頭の検索データを読み込めませんでした。現在は会議名・年度・整理済みの要約などだけで絞り込んでいます。ページを再読み込みするか、上の「全発言を検索する」から検索してください。
+          </p>
+        )}
       </div>
 
       {/* タグフィルター */}
@@ -537,7 +544,9 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
         </div>
       ) : filtered.length === 0 ? (
         <div className="theme-card px-6 py-8 text-center text-[#718096]">
-          条件に一致する議事録が見つかりません
+          {bodySearchStatus === "error" && bodySearchQuery === searchText.trim()
+            ? "読み込めた会議名・年度などの範囲では一致する議事録が見つかりません。本文冒頭は検索できていません。"
+            : "条件に一致する議事録が見つかりません"}
         </div>
       ) : (
         <>
@@ -554,33 +563,32 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
 
               return (
                 <section key={year}>
-                  <h3 className="mb-3 flex items-center gap-2 text-base font-black text-[#1B3A6B]">
+                  <h2 className="mb-3 flex items-center gap-2 text-lg font-bold text-[#1B3A6B]">
                     <span className="inline-block h-4 w-1 rounded-full bg-[#E6C566]" aria-hidden="true" />
                     {year}
-                  </h3>
+                  </h2>
                   <div className="flex flex-col gap-6">
                     {cats.map((cat) => (
                       <div key={cat}>
-                        <p className="text-xs font-semibold text-[#718096] uppercase tracking-wider mb-2 pl-1">{cat}</p>
-                        <div className="flex flex-col gap-2">
+                        <h3 className="mb-2 text-sm font-semibold text-[#4A5568]">{cat}</h3>
+                        <div className="divide-y divide-[#E2E8F0] overflow-hidden rounded-lg border border-[#CBD5E0] bg-white">
                           {byCategory[cat].map((item) => {
                             const itemContent = (
-                              <div className="flex items-start gap-4">
-                                <div
-                                  className={`w-1 self-stretch rounded-full shrink-0 mt-0.5 ${
-                                    restricted
-                                      ? "bg-[#A0AEC0] opacity-50"
-                                      : "bg-[#1B3A6B] opacity-20 group-hover:opacity-100 transition-opacity"
-                                  }`}
-                                  aria-hidden="true"
-                                />
+                              <div className="flex items-start gap-3">
                                 <div className="flex-1 min-w-0">
-                                  <p className={`text-base font-semibold leading-snug mb-1 ${restricted ? "text-[#718096]" : "text-[#1A202C]"}`}>{item.name}</p>
+                                  <p className="text-base font-semibold leading-snug text-[#1B3A6B]">{item.name}</p>
+                                  <div className="mt-1.5 flex flex-wrap items-baseline gap-x-4 gap-y-1 text-sm tabular-nums text-[#4A5568]">
+                                    <span>{minutesDateLabel(item)}</span>
+                                    {typeof item.schedule_count === "number" && Number.isInteger(item.schedule_count) && item.schedule_count >= 0 && (
+                                      <span>日程・資料 {item.schedule_count}件</span>
+                                    )}
+                                  </div>
                                   {restricted && (
-                                    <p className="text-xs text-[#A0522D] mt-1">閲覧停止中（規約確認のため）</p>
+                                    <p className="text-sm text-[#78451F] mt-1">閲覧停止中（規約確認のため）</p>
                                   )}
                                   {!restricted && item.enriched && item.enriched.tags.length > 0 && (
                                     <div className="flex flex-wrap gap-1 mt-2">
+                                      <span className="mr-1 self-center text-xs text-[#4A5568]">AI整理テーマ</span>
                                       {[...new Set(item.enriched.tags.map(normalizeTag))].slice(0, 6).map((tag) => (
                                         <span
                                           key={tag}
@@ -616,7 +624,7 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
                               return (
                                 <div
                                   key={item.council_id}
-                                  className="theme-card-soft cursor-not-allowed px-5 py-4"
+                                  className="bg-[#F4F6F9] px-4 py-3"
                                   aria-disabled="true"
                                 >
                                   {itemContent}
@@ -626,21 +634,21 @@ function MinutesIndexInner({ items, city, minutesBasePath = "/chitose/minutes", 
                             return (
                               <div
                                 key={item.council_id}
-                                className="theme-card group px-5 py-4 transition-all duration-150 hover:border-[#9FB1D2]"
+                                className="group transition-colors hover:bg-[#F8FAFC]"
                               >
                                 <Link
                                   href={`${minutesBasePath}/${item.council_id}`}
                                   prefetch={false}
-                                  className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                                  className="block px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#2A5298]"
                                 >
                                   {itemContent}
                                 </Link>
                                 {item.hasStructuredMinutes && (
-                                  <div className="mt-3 flex flex-wrap gap-2 pl-5">
+                                  <div className="flex flex-wrap items-center gap-2 px-4 pb-3">
                                     <Link
                                       href={`${minutesBasePath}/${item.council_id}/turns`}
                                       prefetch={false}
-                                      className="inline-flex items-center justify-center rounded-full border border-[#C5D0E6] bg-[#E8EEF7] px-3 py-1.5 text-xs font-bold text-[#1B3A6B] transition-colors hover:bg-[#DCE7F6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8AA3CF]"
+                                      className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#C5D0E6] bg-[#E8EEF7] px-3 py-2 text-sm font-medium text-[#1B3A6B] transition-colors hover:bg-[#DCE7F6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5298]"
                                     >
                                       発言・質問項目別
                                     </Link>

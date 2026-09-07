@@ -3,12 +3,14 @@
 import fs from "node:fs/promises";
 import fsSync from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
+import { normalizeStructuredMinutes } from "../site/src/lib/structured-minutes/read-contract.mjs";
 import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, "..");
-const EXTRACTOR_VERSION = "pdf-style-structured-minutes-mvp-2026-05-13";
+const EXTRACTOR_VERSION = "pdf-style-structured-minutes-v2-2026-09-07";
 
 function compact(value) {
   return String(value ?? "").replace(/[ \t　]/g, "").trim();
@@ -426,7 +428,8 @@ async function main() {
   }
 
   const sourcePath = path.join(PROJECT_ROOT, "site", "data", slug, "minutes", `${councilId}.json`);
-  const raw = JSON.parse(await fs.readFile(sourcePath, "utf8"));
+  const inputText = await fs.readFile(sourcePath, "utf8");
+  const raw = JSON.parse(inputText);
   const municipalityName = readMunicipalityName(slug);
   const sourceDocumentId = `${slug}-${councilId}`;
   const schedules = raw.schedules ?? [];
@@ -478,6 +481,12 @@ async function main() {
   });
 
   const output = {
+    generation: {
+      generated_at: new Date().toISOString(),
+      generator: EXTRACTOR_VERSION,
+      input_path: path.relative(PROJECT_ROOT, sourcePath),
+      input_sha256: createHash("sha256").update(inputText).digest("hex"),
+    },
     source_document: {
       id: sourceDocumentId,
       municipality_id: slug,
@@ -486,7 +495,7 @@ async function main() {
       title: raw.name,
       meeting_date:
         schedules.map((schedule) => parseScheduleDate(raw.year, schedule.name)).find(Boolean) ?? "",
-      fetched_at: new Date().toISOString(),
+      fetched_at: "unknown",
       source_type: officialUrl.endsWith(".pdf") ? "official_pdf" : "official_html",
       extractor_version: EXTRACTOR_VERSION,
     },
@@ -499,8 +508,11 @@ async function main() {
 
   const rootOut = path.join(PROJECT_ROOT, "data", "structured-minutes", slug, `${councilId}.json`);
   const siteOut = path.join(PROJECT_ROOT, "site", "data", "structured-minutes", slug, `${councilId}.json`);
-  await writeJson(rootOut, output);
-  await writeJson(siteOut, output);
+  const normalized = normalizeStructuredMinutes(output);
+  if (!normalized.data) throw new Error(normalized.validation.errors.join("; "));
+  const { read_quality: _quality, ...publishedOutput } = normalized.data;
+  await writeJson(rootOut, publishedOutput);
+  await writeJson(siteOut, publishedOutput);
   console.log(
     `[${slug}] structured ${turns.length} turns / ${questionBlocks.length} question_blocks / ${topicBlocks.length} topic_blocks / ${topicSnippets.length} snippets`
   );

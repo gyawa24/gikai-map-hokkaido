@@ -26,10 +26,12 @@ export default function CityHeader({ allCityNavs }: CityHeaderProps) {
     { href: "/articles", label: "読みもの" },
     { href: "/sources", label: "出典" },
   ];
+  const activeHref = [...globalNavItems, ...(city?.nav ?? [])]
+    .filter((item) => !item.href.includes("#") && (pathname === item.href || pathname.startsWith(`${item.href}/`)))
+    .sort((a, b) => b.href.length - a.href.length)[0]?.href;
 
   function renderNavLink(item: NavItem) {
-    const isAnchor = item.href.includes("#");
-    const isActive = !isAnchor && (pathname === item.href || pathname.startsWith(item.href + "/"));
+    const isActive = item.href === activeHref;
     return (
       <Link
         key={item.href}

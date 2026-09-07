@@ -439,3 +439,41 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - GitHub Raw fallback: 議員詳細、議員画像、予算画像、大容量議事録のsmoke test通過。
 - rollback可否: Vercel側を残して確認予定。
 - 備考: 全道議事録・完全一致検索更新を本番反映。GitHub `main` は `4b49149a`。
+
+## 2026-09-07 議事録画面・共通読み取り処理の本番反映
+
+実施者: Codex（ユーザーの「反映させていいよ」に基づく）
+
+### 反映範囲
+
+- 公開用 `origin/main` の `185d7de67e357316dc59509cf3af7ce1a1e8d3fe` を基点とした隔離worktree `/Users/yohei/gikai-map-release-minutes-20260907` から反映。
+- 議事録一覧・本文の見出し、開催期間、日程／資料の単位、会議内検索の選択日程、出典・引用、取得失敗時の案内を共通化。自治体メニューは公開capability台帳をビルド時に取り込み、動的ページでも利用可能にした。
+- legacy構造化議事録の読み取り契約・確認待ち表示、公開indexに基づく同期検証、gijiroku取得失敗時の既存本文保護を含む。収集・同期スクリプトは保存済みであり、本番反映時に議事録原本を再取得・更新していない。
+- 本番の既存データ（構造化議事録54会議）と検索改善・設定・依存バージョンを維持。開発側の研究ページ・API・予算プレビュー・追加原本は含めていない。
+- v2正本への全件移行、原典revision・具体位置・派生データの鮮度検証は未完了。今回の反映をv2移行完了とは扱わない。
+- `site/data/news.json` に同日のお知らせ「議事録の画面と読み込み処理を共通化しました」を追加。
+
+### 検証とCloudflare反映
+
+- 関連Nodeテスト: 公開用データで142件成功・1件skip（開発側だけにある江別20251002 fixture）。最終ナビゲーション修正後の一覧・メニューテスト15件成功。Pythonテスト44件成功。
+- `npm run cf:preflight`: 成功（lint、検索品質24/24、Next build、型チェック、496ページ生成、Cloudflareローカルsmoke、bundleチェック、dry-run）。記録時刻 `2026-09-07T00:37:56.207Z`。
+- preflight source fingerprint: `74b155e10fcd11ab96a8e59c60b5b0d3586a351c24c4551931ed585018a65d29`
+- artifact fingerprint: `5b381e8044537edaa73fa3656baa6b31f69ef6f514f20488f885f23f6612cf5f`
+- 第一preview `1e6084f5-f723-4583-b349-ef0b39a50839` の実画面で自治体メニュー欠落を検出し、本番へ切り替えず修正・再ビルドした。追加したsmokeが旧previewで失敗し、修正版で成功することを確認。
+- 最終preview: `https://ed41657f-chihougikai-com.yohei-218.workers.dev` / Version `ed41657f-5e4d-4e54-9b6a-4689eaaac3c1`。upload-verifyと実画面確認成功。
+- `CLOUDFLARE_RELEASE_CONFIRM=deploy npm run cf:deploy`: 成功。production Version `faa75486-cfe6-4265-9114-e804219b015f`、切替時刻 `2026-09-07T00:40:52.038Z`。
+- `npm run cf:post-cutover-check` と `npm run cf:finalize-production`: 成功。production検証記録 `2026-09-07T00:42:12.180Z`。apex 200 Cloudflare、www 301 Cloudflare、robots indexable、sitemap・検索・GitHub Raw fallback smoke成功。
+
+### 本番ブラウザ確認
+
+- `/chitose/minutes`: 一覧、開催期間、日程・資料数、スマートフォン幅390pxで横はみ出しなし。
+- `/chitose/minutes/578`: 自治体メニュー6項目・現在位置1項目、検索「政治姿勢」で3月10日のタブ・見出し・山口康弘議員の代表質問が一致。3月2日を明示選択すると選択を保って0件案内。スマートフォン幅でも日程一致・横はみ出しなし。
+- `/abashiri/minutes/20251003`: 資料1件・全文形式、公式PDFへの出典リンク。
+- `/iwamizawa/minutes/678/turns?view=topics`: 開催日未確認、確認記録のない14項目を保留と表示、発言本文・質問者別へ進むリンク。
+- `/news`: 9月7日のお知らせ。検索API: HTTP 200・client mode・cache-control no-store。`/research` と `/api/research` は404を維持。
+
+### 保存・復旧
+
+- 直前の本番Worker Version: `bfa5e557-62a1-43f2-b215-84103c2edd82`。復旧先として記録。
+- 差分・ファイルhash・preflight／preview／production検証記録・実行ログを `/Users/yohei/gikai-map-hokkaido/reports/minutes-release-2026-09-07/` に保存。差分は公開main基点の `release.patch`。
+- Gitのコミット・pushは実施していない。元worktreeの作業中変更は保持し、本番反映したソースを上記release worktreeに保存。

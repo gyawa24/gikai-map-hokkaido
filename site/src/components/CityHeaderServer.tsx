@@ -1,8 +1,6 @@
-import fs from "fs";
-import path from "path";
 import CityHeader from "./CityHeader";
 import { getMunicipalities } from "@/lib/municipalities";
-import { hasCityCapability } from "@/lib/cityCapabilities";
+import { hasCityCapability, type CityCapabilityKey } from "@/lib/cityCapabilities";
 
 export type NavItem = { href: string; label: string };
 export type CityNavConfig = { name: string; nav: NavItem[] };
@@ -17,61 +15,29 @@ function buildCities(): Record<string, { name: string }> {
   );
 }
 
-// Master nav definition — order determines display order
-// pageDir: subdirectory under app/{city}/ (empty string = city root page)
-// dataFile: path relative to site/data/{city}/ (undefined = always show)
-// cityOnly: restrict to specific cities
+// 本番ランタイムにはページのソースファイルがないため、既知のルートと公開台帳で判定する。
 type MasterNavItem = {
-  key: string;
+  key: CityCapabilityKey;
   label: string;
-  pageDir: string;
-  dataFile?: string;
-  cityOnly?: string[];
-  href?: string;
 };
 
 const MASTER_NAV: MasterNavItem[] = [
-  { key: "members", label: "議員", pageDir: "" },
-  { key: "sessions", label: "速報", pageDir: "sessions", dataFile: "sessions/index.json" },
-  { key: "minutes", label: "議事録", pageDir: "minutes", dataFile: "minutes/index.json" },
-  { key: "themes", label: "テーマ", pageDir: "themes", dataFile: "members_activity.json" },
-  { key: "budgets", label: "予算", pageDir: "budgets", dataFile: "budgets/index.json" },
-  { key: "decisions", label: "議決結果", pageDir: "decisions", dataFile: "decisions.json" },
+  { key: "members", label: "議員" },
+  { key: "sessions", label: "速報" },
+  { key: "minutes", label: "議事録" },
+  { key: "themes", label: "テーマ" },
+  { key: "budgets", label: "予算" },
+  { key: "decisions", label: "議決結果" },
 ];
-
-function pageExists(cityKey: string, pageDir: string): boolean {
-  // Check static city-specific route first
-  const staticPath = pageDir
-    ? path.join(process.cwd(), "src", "app", cityKey, pageDir, "page.tsx")
-    : path.join(process.cwd(), "src", "app", cityKey, "page.tsx");
-  if (fs.existsSync(staticPath)) return true;
-  // Fall back to dynamic [city] route
-  const dynamicPath = pageDir
-    ? path.join(process.cwd(), "src", "app", "[city]", pageDir, "page.tsx")
-    : path.join(process.cwd(), "src", "app", "[city]", "page.tsx");
-  return fs.existsSync(dynamicPath);
-}
 
 function computeCityNav(cityKey: string): NavItem[] {
   const baseHref = `/${cityKey}`;
 
-  return MASTER_NAV.filter((item) => {
-    // Restrict to specific cities
-    if (item.cityOnly && !item.cityOnly.includes(cityKey)) return false;
-
-    if (item.href) return true;
-
-    // Check page route exists (prevents 404)
-    if (!pageExists(cityKey, item.pageDir)) return false;
-
-    // Check backing data through the generated city capabilities index.
-    if (item.dataFile && !hasCityCapability(cityKey, item.key)) return false;
-
-    return true;
-  }).map((item) => ({
-    href: item.href ?? (item.key === "members" ? baseHref : `${baseHref}/${item.key}`),
-    label: item.label,
-  }));
+  return MASTER_NAV.filter((item) => item.key === "members" || hasCityCapability(cityKey, item.key))
+    .map((item) => ({
+      href: item.key === "members" ? baseHref : `${baseHref}/${item.key}`,
+      label: item.key === "members" && !hasCityCapability(cityKey, "members") ? "概要" : item.label,
+    }));
 }
 
 export default function CityHeaderServer() {
