@@ -610,6 +610,117 @@ async function listPublishedMinutesFiles(minutesDir) {
     .sort();
 }
 
+export function buildSegmentsForCouncil(slug, data, { members = [], memberIndex = buildMemberIndex(members), file = `${data.council_id}.json` } = {}) {
+  let matchedMemberCount = 0;
+  const councilId = data.council_id;
+  const councilName = data.name;
+  const year = data.year;
+
+  const segments = [];
+
+  for (const schedule of data.schedules ?? []) {
+    const scheduleId = schedule.schedule_id;
+    const scheduleName = schedule.name;
+    const date = parseScheduleDate(year, scheduleName);
+
+    let group = null;
+    const rawMinutes = schedule.minutes ?? [];
+    const minutes =
+      rawMinutes.some((minute) => KEEP_TYPES.has(minute.minute_type))
+        ? rawMinutes
+        : rawMinutes.flatMap((minute) => {
+            if (KEEP_TYPES.has(minute.minute_type)) return [minute];
+            if (minute.minute_type !== "本会議") return [];
+            const inline = parseInlineTranscript(minute.text, minute.minute_id ?? scheduleId);
+            if (inline.length > 0) return inline;
+            const table = parseTableTranscript(minute.text, minute.minute_id ?? scheduleId);
+            if (table.length > 0) return table;
+            return parseQuestionNotice(minute.text, memberIndex, minute.minute_id ?? scheduleId);
+          });
+
+    const flush = () => {
+      if (!group) return;
+      const ordinal = segments.length + 1;
+      const id = `${slug}-${councilId}-${scheduleId}-${String(ordinal).padStart(3, "0")}`;
+      const rawText = group.texts.join("\n");
+      const member = matchMember(group.speaker, memberIndex, rawText);
+      const text = stripMemberNamePrefix(rawText, member?.name);
+      if (member) matchedMemberCount += 1;
+      segments.push({
+        id,
+        municipality: slug,
+        council_id: councilId,
+        council_name: councilName,
+        schedule_id: scheduleId,
+        schedule_name: scheduleName,
+        date,
+        speaker: group.speaker,
+        speaker_role: ROLE_MAP[group.minuteType] ?? group.minuteType,
+        is_procedural: isProceduralSpeaker(group.speaker),
+        member_name: member?.name ?? null,
+        member_faction: member?.faction ?? null,
+        text,
+        text_length: text.length,
+        source: {
+          minutes_file: `data/${slug}/minutes/${file}`,
+          schedule_id: scheduleId,
+          minute_ids: group.minuteIds,
+        },
+      });
+      group = null;
+    };
+
+    for (const minute of minutes) {
+      if (!KEEP_TYPES.has(minute.minute_type)) {
+        flush();
+        continue;
+      }
+
+      const speaker = minute.title;
+      const minuteType = minute.minute_type;
+      const cleanedText = stripSpeakerPrefix(minute.text, speaker);
+
+      if (
+        group &&
+        group.speaker === speaker &&
+        group.minuteType === minuteType
+      ) {
+        group.texts.push(cleanedText);
+        group.minuteIds.push(minute.minute_id);
+      } else {
+        flush();
+        group = {
+          speaker,
+          minuteType,
+          texts: [cleanedText],
+          minuteIds: [minute.minute_id],
+        };
+      }
+    }
+
+    flush();
+  }
+
+  const indexEntries = segments.map((seg) => ({
+    id: seg.id,
+    council_id: seg.council_id,
+    council_name: seg.council_name,
+    date: seg.date,
+    speaker: seg.speaker,
+    speaker_role: seg.speaker_role,
+    is_procedural: seg.is_procedural,
+    member_name: seg.member_name,
+    member_faction: seg.member_faction,
+    text_length: seg.text_length,
+    excerpt: makeExcerpt(seg.text),
+  }));
+  indexEntries.sort((a, b) => {
+    const dateCmp = (b.date ?? "").localeCompare(a.date ?? "");
+    return dateCmp !== 0 ? dateCmp : a.id.localeCompare(b.id);
+  });
+  return { segments, indexEntries, matchedMemberCount };
+}
+
 export async function buildSegmentsForMunicipality(slug, options = {}) {
   const minutesDir =
     resolvePath(options.minutesDir) ?? path.join(PROJECT_ROOT, "data", slug, "minutes");
@@ -632,113 +743,15 @@ export async function buildSegmentsForMunicipality(slug, options = {}) {
     const minutesPath = path.join(minutesDir, file);
     const raw = await fs.readFile(minutesPath, "utf8");
     const data = JSON.parse(raw);
+    const { segments, indexEntries: councilIndex, matchedMemberCount: councilMatched } =
+      buildSegmentsForCouncil(slug, data, { members, memberIndex, file });
     const councilId = data.council_id;
-    const councilName = data.name;
-    const year = data.year;
-
-    const segments = [];
-
-    for (const schedule of data.schedules ?? []) {
-      const scheduleId = schedule.schedule_id;
-      const scheduleName = schedule.name;
-      const date = parseScheduleDate(year, scheduleName);
-
-      let group = null;
-      const rawMinutes = schedule.minutes ?? [];
-      const minutes =
-        rawMinutes.some((minute) => KEEP_TYPES.has(minute.minute_type))
-          ? rawMinutes
-          : rawMinutes.flatMap((minute) => {
-              if (KEEP_TYPES.has(minute.minute_type)) return [minute];
-              if (minute.minute_type !== "本会議") return [];
-              const inline = parseInlineTranscript(minute.text, minute.minute_id ?? scheduleId);
-              if (inline.length > 0) return inline;
-              const table = parseTableTranscript(minute.text, minute.minute_id ?? scheduleId);
-              if (table.length > 0) return table;
-              return parseQuestionNotice(minute.text, memberIndex, minute.minute_id ?? scheduleId);
-            });
-
-      const flush = () => {
-        if (!group) return;
-        const ordinal = segments.length + 1;
-        const id = `${slug}-${councilId}-${scheduleId}-${String(ordinal).padStart(3, "0")}`;
-        const rawText = group.texts.join("\n");
-        const member = matchMember(group.speaker, memberIndex, rawText);
-        const text = stripMemberNamePrefix(rawText, member?.name);
-        if (member) matchedMemberCount += 1;
-        segments.push({
-          id,
-          municipality: slug,
-          council_id: councilId,
-          council_name: councilName,
-          schedule_id: scheduleId,
-          schedule_name: scheduleName,
-          date,
-          speaker: group.speaker,
-          speaker_role: ROLE_MAP[group.minuteType] ?? group.minuteType,
-          is_procedural: isProceduralSpeaker(group.speaker),
-          member_name: member?.name ?? null,
-          member_faction: member?.faction ?? null,
-          text,
-          text_length: text.length,
-          source: {
-            minutes_file: `data/${slug}/minutes/${file}`,
-            schedule_id: scheduleId,
-            minute_ids: group.minuteIds,
-          },
-        });
-        group = null;
-      };
-
-      for (const minute of minutes) {
-        if (!KEEP_TYPES.has(minute.minute_type)) {
-          flush();
-          continue;
-        }
-
-        const speaker = minute.title;
-        const minuteType = minute.minute_type;
-        const cleanedText = stripSpeakerPrefix(minute.text, speaker);
-
-        if (
-          group &&
-          group.speaker === speaker &&
-          group.minuteType === minuteType
-        ) {
-          group.texts.push(cleanedText);
-          group.minuteIds.push(minute.minute_id);
-        } else {
-          flush();
-          group = {
-            speaker,
-            minuteType,
-            texts: [cleanedText],
-            minuteIds: [minute.minute_id],
-          };
-        }
-      }
-
-      flush();
-    }
+    matchedMemberCount += councilMatched;
 
     const outPath = path.join(segmentsDir, `${councilId}.json`);
     await fs.writeFile(outPath, JSON.stringify(segments, null, 2) + "\n");
 
-    for (const seg of segments) {
-      indexEntries.push({
-        id: seg.id,
-        council_id: seg.council_id,
-        council_name: seg.council_name,
-        date: seg.date,
-        speaker: seg.speaker,
-        speaker_role: seg.speaker_role,
-        is_procedural: seg.is_procedural,
-        member_name: seg.member_name,
-        member_faction: seg.member_faction,
-        text_length: seg.text_length,
-        excerpt: makeExcerpt(seg.text),
-      });
-    }
+    indexEntries.push(...councilIndex);
 
     totalSegments += segments.length;
   }

@@ -477,3 +477,9 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - 直前の本番Worker Version: `bfa5e557-62a1-43f2-b215-84103c2edd82`。復旧先として記録。
 - 差分・ファイルhash・preflight／preview／production検証記録・実行ログを `/Users/yohei/gikai-map-hokkaido/reports/minutes-release-2026-09-07/` に保存。差分は公開main基点の `release.patch`。
 - Gitのコミット・pushは実施していない。元worktreeの作業中変更は保持し、本番反映したソースを上記release worktreeに保存。
+
+### 同日のGit保存
+
+- 上記の本番反映後、ユーザーの継続指示に基づき、反映済み差分をcommit `67da5c76` として保存し、`codex/minutes-core-refresh-20260907` をpushした。
+- Draft PR: [議事録の表示・原典案内と読み取り検証を統一 #4](https://github.com/gyawa24/gikai-map-hokkaido/pull/4)。mainへのmergeは未実施。
+- 続くv2内部試験は `codex/minutes-v2-chitose-20260907` で実施し、この本番Workerへは反映していない。v2生成物はGit対象外のreportsに保存する。

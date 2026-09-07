@@ -5,7 +5,7 @@
 この文書は、北海道内179市町村へ議事録・質問履歴・検索を広げるためのデータ契約を定める。
 対象は正式会議録だけでなく、PDF、HTML、議事録システムAPI、録画配信、YouTube字幕、ASR速報を含む。
 
-v2は、既存の `structured-minutes` が持つ `SourceDocument`、`Speaker`、`Turn`、`QuestionBlock`、`TopicBlock`、`TopicSnippet` を核にする。ただし、現行ファイルをそのまま正本とはしない。会議と開催日、原典と改訂、正式版と速報、抽出と人手確認を区別できるように拡張し、検証を通過したv2レコードだけを正本とする。
+v2は、既存の `structured-minutes` が持つ `SourceDocument`、`Speaker`、`Turn`、`QuestionBlock`、`TopicBlock`、`TopicSnippet` を核にする。会議と開催日、原典と改訂、正式版と速報、抽出と人手確認を区別する。将来は公開・移行条件を満たしたv2レコードを正本にするが、2026-09-07時点ではDNPの5会議とgijiroku.comの岩見沢799をローカルで試験しており、公開データの正本は切り替えていない。
 
 この契約のJSON Schemaは `schemas/council-record.v2.schema.json` に置く。JSON Schemaで表現できない配列間の参照整合や公開条件は、同schemaの `x-referential-integrity` と本書の公開ゲートに従って専用validatorで検証する。
 
@@ -36,7 +36,7 @@ v2は、既存の `structured-minutes` が持つ `SourceDocument`、`Speaker`、
 
 ### 3. v2正本層
 
-目標配置は次のとおりとする。
+以下は移行後の目標配置であり、現在の生成先ではない。
 
 ```text
 data/{slug}/structured-minutes/v2/{meeting_id}.json
@@ -51,6 +51,7 @@ v2正本は少なくとも次を持つ。
 - `SourceArtifact` / `SourceRevision`: 原典と取得時点の不変revision。
 - `Speaker`: 原文上の発言者表記と人物照合結果。
 - `Turn`: 発言単位の原文、発言順、原典位置。
+- `DocumentItem` (`document_items`): 名簿・議題などの非発言記録。架空の発言者を付けず、Turnと共通の `order_index` で原順序を保持する。
 - `QuestionBlock`: 一般質問等の質問者と質問・答弁のまとまり。
 - `TopicBlock` / `TopicSnippet`: 論点と、その根拠となる原文断片。
 - `Reconciliation`: 速報と正式版の照合状態。
@@ -59,7 +60,7 @@ v2正本は少なくとも次を持つ。
 
 ### 4. 派生・互換層
 
-次は正本ではなく、v2から再生成可能なprojectionとする。
+移行後は次をv2から再生成可能なprojectionとする。現在の公開運用では既存generatorと `data/{slug}/` が継続して正であり、試験用v2からこれらを上書きしない。
 
 - `data/{slug}/minutes/index.json` と `{council_id}.json`
 - `data/{slug}/segments/`
@@ -109,6 +110,8 @@ chitose:question:01J...
 
 v2の `legacy_ids` に `council_id`、`schedule_id`、`minute_id`、session ID等を保持する。legacy URLはこの対応を引いてv2を表示できるようにし、v2 IDを現行の数値IDへ無理に変換しない。
 
+DNPのminute IDは日程内でscopeする。同じ番号の日程間再使用と欠番を保持する。会議名・年・日程名・`page_no`・minuteの `title` / `minute_type` など、互換出力に必要な値は型付き `legacy_presentation` に保存し、`legacy_ids` へ本文を詰めない。省略された値と `null`、空文字を互換投影で勝手に置換しない。
+
 ## SourceArtifactとSourceRevision
 
 `SourceArtifact` は「千歳市公式会議録APIのある日程」「あるPDF」「ある録画配信ページ」など論理的な原典を表す。`SourceRevision` は特定時点で取得した内容を表す。
@@ -152,6 +155,8 @@ parse_status:
 - 文書全体に対する文字offset
 
 TopicSnippetはTurn内の開始・終了offsetを持ち、`text_original` がTurnの該当substringと完全一致しなければならない。
+
+非発言の空本文は `document_items` に `text_original: ""`、`text_status: "empty_in_source"` と `empty_reason` を保持する。本文がある場合は `text_status: "present"`、`empty_reason: null` とする。空の議題を削除したり、AIで本文やspeakerを補ったりしない。DNP取得bytesは加工せず保存し、本文抽出は既存scraperと同じ空白・タグ処理を照合する。人名・発言内容の修正や要約をこの処理へ混ぜない。
 
 ## 発言者・質問履歴
 
@@ -230,7 +235,7 @@ validationは次の層に分ける。
 - freshness: source current revisionとderivation inputs、legacy projectionの生成元hash。
 - publication: review状態、正式/速報表示、公開ゲート。
 
-DNP、gijiroku.com、HTML、単段PDF、段組PDF、OCR PDF、録画/ASRについてgolden fixtureを持ち、adapter変更時に同じ検証を通す。
+DNPとgijiroku.comの全文文書は実原典と合成fixtureで検証する。他のHTML、単段PDF、段組PDF、OCR PDF、録画/ASRのgolden fixtureとadapter別の検証は今後追加する。
 
 ## 段階移行
 
@@ -259,69 +264,69 @@ v2正本の全面実装に先立ち、現行投影には次の公開ゲートを
 
 同日のread-only再生成比較では、segment差分対象62自治体のうち40自治体で、現行parserによる発言分割の変化がordinal依存segment IDをずらした。人物帰属だけを同じ発言へ再評価した結果は整合したが、全segmentsの一括再生成は既存の根拠IDを壊し得る。このため、v2の安定Turn IDとparser revision移行ができるまでは、公開manifest内の既存segmentへ外科的修復を適用し、構造再生成は自治体単位の差分監査を必須とする。
 
-### Phase 0: 契約と虚偽メタデータの停止
+### 2026-09-07: DNP 5会議の内部試験まで実装
 
-- 本書とJSON Schemaを正とする。
-- 現行データを変更しないread-only auditorを用意する。
-- PDF builderの擬似manual review、自動公開、`council_id`の日付利用を止める。
-- legacy出力とURLは維持する。
+対象は千歳 `578`、恵庭 `265`、苫小牧 `298`、函館 `1362`、厚真 `433`。自治体名による分岐ではなくDNP adapterで、次の経路を実装した。再実行手順は [試験手順書](minutes-v2-pilot-runbook.md) を参照する。
 
-### Phase 1: 千歳の縦切り
-
-- 千歳市の正式DNP会議録をv2へ変換する。
-- 令和8年第2回定例会の速報と正式版をReconciliationで接続する。
-- 小川陽平を含む質問履歴をQuestionBlockから生成し、原文根拠まで遷移できることを確認する。
-- v2と現行表示を比較し、欠落と誤帰属を記録する。
-
-### Phase 2: 代表的adapter
-
-- 江別HTMLでraw line / DOM位置を保持する。
-- gijiroku.comでprovider外部IDを保持する。
-- 単段PDFでpage spanを保持する。
-- 段組PDFは品質ゲートを先に実装し、未達データを非公開にする。
-
-### Phase 3: projection
-
-- v2からlegacy minutes、segments、members_activity、session index、search documentsを生成する。
-- `members_activity` は氏名キーの集計を表示用projectionに限定し、QuestionBlockへの参照を必ず持たせる。
-- searchは会議単位だけでなくTurn・QuestionBlock・TopicBlock単位のdocumentを生成する。
-- projectionの入力revisionとgenerator versionを記録する。
-
-### Phase 4: dual read
-
-- v2が検証済みの自治体はv2を優先し、未移行自治体はlegacyへfallbackする。
-- capabilityは実ファイルと公開ゲートから生成し、自治体名による機能分岐を作らない。
-- GitHub Raw fallbackと動的読込を維持し、大量の本文をWorker bundleへ戻さない。
-
-### Phase 5: 自治体単位の展開
-
-- 議事録システム種別ごとにbatch移行する。
-- 自治体ごとにcoverage、provenance、quality、freshness、legacy parityを確認する。
-- legacy generatorを削除するのは、対象自治体のv2投影とrollback手順が確認できた後だけとする。
-
-## 2026-09-07の実装範囲
-
-現在はPhase 0とlegacy読み取り・公開同期の共通化までを実装している。v2正本への全件移行や、原典revisionとの一致確認を完了したとは扱わない。
-
-- 通常会議録は公開indexで掲載可否を確認し、`minutesSessionValidation.ts` で会議ID・日程ID・本文構造を検証する。未収録、通信失敗、JSON解析失敗を読み取り結果として区別する。
-- `minutesSource.ts` で原典URLと引用を共通化する。発言・日程・会議の個別URLを優先し、公式検索画面への代替導線はその範囲が分かるラベルで表示する。
-- legacy構造化データは `site/src/lib/structured-minutes/read-contract.mjs` を画面とCLIで共用する。原文・IDを維持し、不正な日付を未確認へ正規化する。Topicは公開フラグに加え、確認者・確認日時・参照整合が揃ったものだけを表示する。
-- 構造化データの取得証跡、原典位置、最新版との一致は別々に扱う。legacyを読み取れたことだけでv2の品質検証済みにしない。
-- `onboard-municipality.mjs` はsegments生成後に標準の `sync-site-data.mjs --build-capabilities --verify` を実行する。minutes同期は公開indexの許可対象だけを扱い、ID不一致・日程数不一致・JSON不正があれば同期前に止める。
-- gijiroku.com取得は失敗時に空本文で既存会議を上書きせず、追加日程の取得でも既存IDと指定対象外の年を保持する。
-
-検証コマンド（リポジトリルート）:
-
-```sh
-node --test scripts/tests/minutes-detail-contract.test.mjs scripts/tests/minutes-index-ui.test.mjs scripts/tests/structured-minutes-read-contract.test.mjs scripts/tests/onboard-municipality.test.mjs scripts/tests/sync-site-data.test.mjs
-python3 -m unittest discover -s scraper/tests -p 'test_*minutes*.py'
-node site/scripts/validate-structured-minutes.mjs --json
-node site/scripts/validate-structured-minutes.mjs --strict
+```text
+既存minutes + 自治体台帳
+  → DNP APIのraw bytesを不変snapshotとして保存
+  → 原典と既存minutesのID・順序・title・type・本文を完全照合
+  → v2 (Turn + document_items)
+  → Ajv 2020-12 + graph/content/provenanceのオフライン検証
+  → legacy minutes互換投影の完全一致
+  → reports内artifactをローカルpreviewで比較
 ```
 
-通常の監査はlegacyの読取可否と限界を報告し、`--strict` は未検証の来歴・鮮度を含む警告があれば失敗する。2026-09-07の開発用55会議と本番用54会議は読み取り可能だが、厳格監査には通っていない。本番反映には本番用54会議を使用し、開発用の追加データを含めない。
+- `scripts/build-dnp-council-record-v2.mjs` は新規取得、または既存capture manifestからのオフライン再生成に対応する。取得失敗や原典とlegacyの不一致で停止する。
+- `scripts/validate-council-record-v2.mjs` は保存済みbytesを読み直す。recordの自己申告や呼出元のprovider本文mapだけで検証済みにせず、raw API bytesから本文・title・順序を再導出して照合する。`--strict` は未確認の証跡に関するwarningでも失敗する。
+- `scripts/lib/council-record-v2-projection.mjs` はTurnとDocumentItemを日程内の共通 `order_index` で合成する。本文・旧ID・title・type・省略値を維持し、互換JSONの外に入力revision、record hash、出力hash、generator versionを記録する。
+- `scripts/prepare-council-record-v2-preview.mjs` はmanifestを読み直して原典照合とvalidatorを再実行し、互換出力全体を既存minutesと完全比較してからpreview artifactを作る。公開index外・restricted自治体はサイトpreviewの対象にしない。
+- 保存先は `reports/council-record-v2/` と `reports/council-record-v2-preview/`。いずれもGit管理対象外のローカル試験成果物で、`data/`・`site/data/` の正本や公開コピーへ昇格していない。
+- `/{city}/minutes/{id}/preview` は `NODE_ENV=development` と `MINUTES_V2_PREVIEW_ROOT` の両方が必要。既存の議事録Readerで互換投影を表示し、通常URLと比較する。productionでは404になり、公開検索やMCPはこのartifactを読まない。
+- `scripts/build-council-record-v2-segments-preview.mjs` はv2の互換minutesから既存segment parserを使って検索用データを生成する試験CLI。同じparserと人物台帳でlegacy minutesから再生成したbaselineとの完全一致を確認し、`reports/council-record-v2-segments-preview/` だけへ出力する。保存済み旧segmentsとの一致や、安定Turn IDへの移行完了を意味しない。
 
-未完了なのは、v2正本の生成と移行、原典revision・具体位置の記録、派生データの鮮度検証、構造化データの標準同期への統合である。現行の構造化builderは `data/structured-minutes/` と `site/data/structured-minutes/` に同じlegacy形式を出力する。これをv2正本の配置と混同しない。
+5自治体の試験結果は `reports/council-record-v2/dnp-five-municipality-trials.json` に記録し、計4,255原記録と1,907検索segmentsを照合した。千歳578では7日程、394原記録を271発言と123非発言へ分離し、全記録を完全に往復した。議長以外の発言種別は現段階では `unknown` を保ち、`◆質問` の表記だけで委員会報告等を一般質問へ分類しない。Speakerは発言ごとの観測IDで、人物同定は `unresolved`、`person_id` / `membership_id` は `null` のままである。
+
+### 質問候補と一括オフライン実行
+
+`scripts/prepare-council-record-v2-question-candidates.mjs` は原典ラベルと既存DNP質問境界parserから非公開候補を作る。`members.json` を人物同定の生成入力にせず、全候補は `review_status: "unreviewed"`、`identity_status: "unresolved"` のまま。v2正本のQuestionBlockは書き換えない。
+
+千歳578の候補は9件（一般4・代表5）で、既存履歴の質問境界9件と一致した。候補に選ばれなかった `◆質問` 9発言は未分類一覧へ残し、委員長報告・訂正・未解決質問を「活動0」と解釈しない。既存履歴は比較専用で、候補生成の答えとして使わない。候補ID・根拠の重複を拒否し、baselineとの照合も一対一とする。baselineがなければbaseline件数・差分は `null`、比較未確認を明示する。
+
+`scripts/run-council-record-v2-pilot.mjs --manifest <capture-manifest.json>` は保存済み原典からv2生成、minutes preview、segments preview、DNP質問候補を順に実行する。DNP5会議で一括試験を完了した。結果は `reports/council-record-v2-pilot-runs/` へ残し、各stageの実装hash・時刻・結果と失敗箇所を追える。`completed` は内部工程の終了であり、公開認証や人手review完了ではない。baseline差分なしでも人物同定・reviewは未完了である。
+
+岩見沢799（gijiroku.com）の全文文書adapterも実装した。15個のraw HTMLレスポンス（一覧1・frameset7・本文7）から、目次を含む7個のDocumentItemを生成し、Turnは0件とした。厳格検証、legacy全fieldの完全一致、ローカル画面の目次・本文・病院事業検索・390px幅での表示を確認した。これは7開催日や発言0件の認定ではなく、既存7文書の容器を損失なく移した結果である。
+
+`unit_kind: "document"`、開催日 `null` / `unknown` を保持し、source spanは抽出全文の文字範囲を指す。FINO・KGNO・UNID・HUIDと一覧/frameset/本文の対応をraw bytesから照合する。DNP質問抽出は適用せず、runnerの質問候補stageは `not_applicable`、比較判定は `null` となる。岩見沢はDNP5会議の集計とは別に扱う。
+
+UI・segments・質問候補の各CLI入口では `assertCouncilRecordV2CaptureBinding` がrecordの原典URL、landing URL、provider ID、title、revisionの時刻・hash・snapshot pathを、登録自治体から検証したmanifest captureへ完全に結び付ける。validatorもURL内の識別子と日程・原典metadataの整合性を検証する。実799の誤URL・誤FINO負例と、各CLI入口の改変拒否を確認した。保存原典との結合が通っても公開認証ではない。
+
+### 検証の意味と公開境界
+
+`ok: true` は現在のvalidatorで矛盾が見つからなかったことを表す。人手確認、最新の公式内容、質問答弁の意味、OCR品質の認証ではない。
+
+- 日付はDNP日程名の明示月日とlegacy会議年から組み立てる。暦日・期間・メタデータの整合性は確認するが、会議年や日付の公式な正しさを独立認証したとは扱わない。不明日付は `null` と理由を保持する。
+- `freshness` はrecord内の `current_revision_id` と入力revision、生成・取得時刻の整合性を検証する。HTTP取得時刻の真実性や、取得後の公式サイト更新まではオフラインでは確認しない。
+- hash一致は保存bytesと派生内容の一致であり、それだけで取得元の権威・review・最新版を認証しない。
+- qualityや人手reviewなど未実施のgateは `not_applicable` 等で限界を示す。現在のvalidatorはpublic認証を対象外として拒否し、`publicationReady` を与えない。projectorのpublic modeもこの結果を迂回できない。
+- 将来public modeを解禁する際にも、実validator、外部の現行revision、公開index内の本文hash、restricted判定、reviewを揃える。既存公開indexに本文hashがない場合は適合済みとみなさない。
+
+### 公開済みlegacy改善との分離
+
+公開済みのcommit `67da5c76` / PR #4は、自治体ナビ・議事録Reader・出典表示・公開index同期等のlegacy改善である。このDNP v2試験の公開完了を意味しない。legacy `structured-minutes` の読取可否や厳格監査も、新規v2の検証とは別に扱う。
+
+v2試験は公開機能・公開データを変更していないため、`site/data/news.json` には追加しない。将来公開する際はその変更と同じ単位で公開内容を記録する。
+
+### 次に残る作業
+
+1. v2由来の検索segments試験の検証結果を揃え、保存済み既存segmentsとの対応・原文・安定ID・入力revisionを監査する。公開検索への切替は別作業とする。
+2. 非公開質問候補をreviewし、QuestionBlock / TopicBlock / TopicSnippetへ移行する。現在のv2 recordではこれらとReconciliationは空配列であり、公開質問履歴、人物照合、任期をまたぐ履歴、速報と正式版の接続は未移行。
+3. gijiroku.com全文文書から発言・質問を抽出する品質契約とfixtureを追加する。他のHTML、単段PDF、段組/OCR PDF、動画/ASRも取得・未確認状態を共通契約へ接続する。
+4. 外部の現行revisionと再取得差分、parser更新時のID継承、日付根拠、人手review、公開認証を実装する。
+5. 自治体単位でdual readとrollbackを確認した後に正本・標準同期を切り替える。GitHub Raw fallbackと動的読込を維持し、大量本文をWorker bundleへ戻さない。
+
+現行generatorやlegacyデータを削除するのは、対象自治体の公開・同期・rollback条件を満たした後とする。
 
 ## 完了条件
 
