@@ -1,0 +1,131 @@
+{
+  "schema_version": "council-record-v2-body-publication.v1",
+  "municipality_id": "tomakomai",
+  "council_id": "298",
+  "record_id": "tomakomai:record:dnp:298",
+  "scope": "body_only",
+  "state": "approved",
+  "public_visible": true,
+  "canonical_public_visible": false,
+  "generated_at": "2026-09-07T22:56:02.099Z",
+  "approval": {
+    "scope": "body_only",
+    "approved_by": "小川陽平",
+    "approved_at": "2026-09-07T03:01:20.058391+00:00",
+    "approval_ref": "user-approval:2026-09-07:minutes-body-cutover"
+  },
+  "freshness": {
+    "method": "new_capture_verified",
+    "manifest_sha256": "e220ccd06784c4c24e8bfaa2edc14fb1c7ab283d06ed8f8a8d8b16860592e6a2",
+    "checked_at": "2026-09-07T22:55:46.365Z",
+    "limitation": "Verification declaration at checked_at only; future source freshness is not certified."
+  },
+  "inputs": {
+    "record_sha256": "2d2ab80ec419cf3ba1a6cb06c96ff036017cd740ee4453e14bd05744cd35aab5",
+    "manifest_sha256": "e220ccd06784c4c24e8bfaa2edc14fb1c7ab283d06ed8f8a8d8b16860592e6a2",
+    "baseline_sha256": "e724ac8b93c18651f86a04ae38fd0ec2b8869e4fdbdea3f49a7dc3a7ef9907d4",
+    "index_sha256": "7edb5742ffd5bd6c061b353c4bd26dac25b7008a9fd01caf86db5740846c164c",
+    "index_item_sha256": "b9153d0a6ddd006681a235fd95546f749615a1dcce33c890d177bf705f99b37a",
+    "municipality_sha256": "0312655f83226e6f21058521ebc60d06167ad0c83bdb34249393680851edab8c",
+    "revisions": [
+      {
+        "source_artifact_id": "tomakomai:source:dnp:298:schedules",
+        "source_revision_id": "tomakomai:source:dnp:298:schedules:revision:581acf8787253b06ffd9b7b0ea8414070040ec193e3dec7857ea5f1b06a9bdc0",
+        "content_sha256": "581acf8787253b06ffd9b7b0ea8414070040ec193e3dec7857ea5f1b06a9bdc0",
+        "byte_size": 76391
+      },
+      {
+        "source_artifact_id": "tomakomai:source:dnp:298:2",
+        "source_revision_id": "tomakomai:source:dnp:298:2:revision:b51360233360d36dfc1d38bb8ad5ce04bb79b2a1ca409e525acaae907b40d4c6",
+        "content_sha256": "b51360233360d36dfc1d38bb8ad5ce04bb79b2a1ca409e525acaae907b40d4c6",
+        "byte_size": 823615
+      },
+      {
+        "source_artifact_id": "tomakomai:source:dnp:298:3",
+        "source_revision_id": "tomakomai:source:dnp:298:3:revision:26616457e43004e0eaa4732f104446492732befa8c320468e8d097a6d4450228",
+        "content_sha256": "26616457e43004e0eaa4732f104446492732befa8c320468e8d097a6d4450228",
+        "byte_size": 833382
+      },
+      {
+        "source_artifact_id": "tomakomai:source:dnp:298:4",
+        "source_revision_id": "tomakomai:source:dnp:298:4:revision:92d05dd8ba6805d293b1d05ff9954b946b51973444a393b94f37538c91c2e116",
+        "content_sha256": "92d05dd8ba6805d293b1d05ff9954b946b51973444a393b94f37538c91c2e116",
+        "byte_size": 1052112
+      },
+      {
+        "source_artifact_id": "tomakomai:source:dnp:298:5",
+        "source_revision_id": "tomakomai:source:dnp:298:5:revision:0fc0346820f71cc5a15b979643d8e76552875b1bbae4e625fe29287a008ec776",
+        "content_sha256": "0fc0346820f71cc5a15b979643d8e76552875b1bbae4e625fe29287a008ec776",
+        "byte_size": 1235600
+      },
+      {
+        "source_artifact_id": "tomakomai:source:dnp:298:6",
+        "source_revision_id": "tomakomai:source:dnp:298:6:revision:2d4f4571730dd20b4d5bf76bfd13cf568051078492e8d242381d4cd4ad72d573",
+        "content_sha256": "2d4f4571730dd20b4d5bf76bfd13cf568051078492e8d242381d4cd4ad72d573",
+        "byte_size": 168276
+      }
+    ]
+  },
+  "output": {
+    "file": "298.json",
+    "sha256": "e724ac8b93c18651f86a04ae38fd0ec2b8869e4fdbdea3f49a7dc3a7ef9907d4",
+    "json_sha256": "73d27c524e9b3c3ff41042640deeec334990536701a136b6952b00421a135daf",
+    "byte_size": 2148096
+  },
+  "validation": {
+    "validator_version": "1.0.0",
+    "legacy_equivalence": true,
+    "errors": [],
+    "warnings": [],
+    "gate_results": [
+      {
+        "gate": "schema",
+        "status": "pass",
+        "detail": "checked"
+      },
+      {
+        "gate": "graph",
+        "status": "pass",
+        "detail": "checked"
+      },
+      {
+        "gate": "provenance",
+        "status": "pass",
+        "detail": "Stored snapshot hashes and parser derivation checked; publisher authority and live URL status are not independently certified."
+      },
+      {
+        "gate": "content",
+        "status": "pass",
+        "detail": "Stored-source text, speaker labels, positions and record metadata consistency checked; calendar facts are not independently certified."
+      },
+      {
+        "gate": "quality",
+        "status": "not_applicable",
+        "detail": "Semantic/OCR quality is not certified by this offline pilot validator."
+      },
+      {
+        "gate": "freshness",
+        "status": "pass",
+        "detail": "Current revision references and recorded retrieval/generation chronology checked; HTTP observation times are not independently certified."
+      },
+      {
+        "gate": "review",
+        "status": "not_applicable",
+        "detail": "Private record: review metadata consistency checked; human review not certified."
+      },
+      {
+        "gate": "reconciliation",
+        "status": "not_applicable",
+        "detail": "No provisional evidence in this record."
+      }
+    ],
+    "canonical_publication_ready": false
+  },
+  "excluded_scopes": [
+    "person_identity",
+    "question_blocks",
+    "topics",
+    "member_activity",
+    "canonical_record_publication"
+  ]
+}

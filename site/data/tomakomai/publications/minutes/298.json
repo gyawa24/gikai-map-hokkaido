@@ -1,0 +1,15 @@
+{
+  "schema_version": "minutes-body-source.v1",
+  "municipality_id": "tomakomai",
+  "council_id": 298,
+  "scope": "body_only",
+  "canonical_record_path": "data/tomakomai/council-records/298/releases/2026-09-07T22-56-02-099Z-a35204ce503a/record.json",
+  "publication_path": "data/tomakomai/council-records/298/releases/2026-09-07T22-56-02-099Z-a35204ce503a/publication.json",
+  "storage_manifest_path": "data/tomakomai/council-records/298/releases/2026-09-07T22-56-02-099Z-a35204ce503a/storage-manifest.json",
+  "record_sha256": "2d2ab80ec419cf3ba1a6cb06c96ff036017cd740ee4453e14bd05744cd35aab5",
+  "manifest_sha256": "e220ccd06784c4c24e8bfaa2edc14fb1c7ab283d06ed8f8a8d8b16860592e6a2",
+  "publication_sha256": "e61eb1ef9e328cdd7e7079993a415a77f2c3deab3aa00292345f1a18864cfb5a",
+  "minutes_sha256": "e724ac8b93c18651f86a04ae38fd0ec2b8869e4fdbdea3f49a7dc3a7ef9907d4",
+  "content_sha256": "73d27c524e9b3c3ff41042640deeec334990536701a136b6952b00421a135daf",
+  "generated_at": "2026-09-07T22:56:02.099Z"
+}

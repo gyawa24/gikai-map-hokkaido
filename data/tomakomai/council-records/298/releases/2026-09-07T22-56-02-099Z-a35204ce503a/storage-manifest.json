@@ -1,0 +1,36 @@
+{
+  "schema_version": "council-record-body-storage.v1",
+  "municipality_id": "tomakomai",
+  "council_id": 298,
+  "stored_at": "2026-09-07T22:56:02.099Z",
+  "implementation_hashes": {
+    "scripts/lib/council-record-v2-body-storage.mjs": "a5b50ea14bfc02387b7772087901da5be9a65b62b5843fb2322659c012a95b79",
+    "scripts/lib/council-record-v2-body-publication.mjs": "01756557a262cab164884daaa5483e128dd20f06bd9d111e6855286167c9b1f8",
+    "scripts/lib/council-record-v2-validation.mjs": "97e4830d5637010df73657b39dbd35152a32db96ccf562ad18a231e9a93ecf0b",
+    "scripts/lib/council-record-v2-capture-binding.mjs": "4ad942ac870c5e70158a36e7c4b27da19e4aae6bfb7e545146c4a0c4f026705a",
+    "scripts/lib/council-record-v2-preview.mjs": "ab2eb42771230273dc49e1d466fc288ea0e349c32036d53252f2ee7af2288f94",
+    "scripts/lib/council-record-v2-projection.mjs": "6b803d49a878e222b37ceff979c5ed26136d7a41a995798c96cf5d3977fe2936",
+    "scripts/lib/dnp-council-record-v2.mjs": "810c1ba969d0cf6dc1144b4db8aa30db916765ee7b43c9688127789fa3854aa5",
+    "schemas/council-record.v2.schema.json": "d5665071099a4393e5ee68e161ee4c072dfdd3cdfdb73dd2711cb4f6a0322f85",
+    "site/package-lock.json": "4702aaad4484a4dba5c1e1d635b825461db9a800343df0ae926a8d294befd079"
+  },
+  "original_record_sha256": "31d9ae8956d5dcded4e25efd52723c1e351ab5e8bbdca5e4e739b386fd70e73a",
+  "original_manifest_sha256": "a35204ce503a639677766d7cbffacd7a6a5eed5c99674e5540ba6229e79ba53c",
+  "capture_verification": {
+    "manifest_sha256": "a35204ce503a639677766d7cbffacd7a6a5eed5c99674e5540ba6229e79ba53c",
+    "checked_at": "2026-09-07T22:55:46.365Z"
+  },
+  "previous_pointer_present": false,
+  "files": {
+    "record.json": "2d2ab80ec419cf3ba1a6cb06c96ff036017cd740ee4453e14bd05744cd35aab5",
+    "capture-manifest.json": "e220ccd06784c4c24e8bfaa2edc14fb1c7ab283d06ed8f8a8d8b16860592e6a2",
+    "baseline.json": "e724ac8b93c18651f86a04ae38fd0ec2b8869e4fdbdea3f49a7dc3a7ef9907d4",
+    "published-index.json": "7edb5742ffd5bd6c061b353c4bd26dac25b7008a9fd01caf86db5740846c164c",
+    "previous-index.json": "e6ca676712dc6ef13b892c40a24b07d6b1d9256982f76ebc18e9370b272d6443",
+    "minutes.json": "e724ac8b93c18651f86a04ae38fd0ec2b8869e4fdbdea3f49a7dc3a7ef9907d4",
+    "publication.json": "e61eb1ef9e328cdd7e7079993a415a77f2c3deab3aa00292345f1a18864cfb5a",
+    "capture-origin.json": "a35204ce503a639677766d7cbffacd7a6a5eed5c99674e5540ba6229e79ba53c",
+    "record-origin.json": "31d9ae8956d5dcded4e25efd52723c1e351ab5e8bbdca5e4e739b386fd70e73a",
+    "previous-pointer.json": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+  }
+}
