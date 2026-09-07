@@ -1,0 +1,13 @@
+{
+  "schema_version": "council-record-body-registry.v1",
+  "municipality_id": "tomakomai",
+  "records": [
+    {
+      "council_id": 298,
+      "state": "active",
+      "release_path": "council-records/298/releases/2026-09-07T22-56-02-099Z-a35204ce503a",
+      "minutes_sha256": "e724ac8b93c18651f86a04ae38fd0ec2b8869e4fdbdea3f49a7dc3a7ef9907d4",
+      "publication_sha256": "e61eb1ef9e328cdd7e7079993a415a77f2c3deab3aa00292345f1a18864cfb5a"
+    }
+  ]
+}

@@ -109,4 +109,14 @@ node --test scripts/tests/council-record-v2-body-publication.test.mjs scripts/te
 - 本番ブラウザで恵庭265の本文・日程・公式原典リンク・未掲載のAI要約表示と更新情報を確認した。`cf:post-cutover-check` は成功し、`cf:finalize-production` は一時的な通信失敗を再試行後に成功した。
 - `record.publication` は `internal_preview` / `public_visible: false` を維持し、質問候補・人物同定・検索segmentsの公開移行は行っていない。data-healthはエラー0・既存のroot-only候補52件による警告1で、`--strict` の全面成功とは扱わない。全体integrity監査で既知の札幌2会議の欠落エラーも対象外として変更していない。
 
+### 2026-09-08 苫小牧298の本番反映
+
+- 対象release: `data/tomakomai/council-records/298/releases/2026-09-07T22-56-02-099Z-a35204ce503a`。`data/tomakomai/council-records/index.json` の台帳は `active`、範囲は `body_only`。原典取得runは `reports/council-record-v2/tomakomai/298/runs/2026-09-07T22-53-54-146Z-a3bff78e-4a57-4e67-948e-78a9700225aa/`、capture manifest SHA-256は `a35204ce503a639677766d7cbffacd7a6a5eed5c99674e5540ba6229e79ba53c`、取得確認時刻は `2026-09-07T22:55:46.365Z`。
+- 実装・release commitは `84f2cb1f337b6c659b56d863bcb9233f26bd34e1`。[PR #9](https://github.com/gyawa24/gikai-map-hokkaido/pull/9)をmainへマージしたcommitは `58ab5cb2d89beafda396ea5230f793dc5d48a9bf`。Cloudflare staging Workerは `ba42f112-715f-4403-a862-939c4b98ccc0`、本番Workerは `f737a029-ae09-481c-9747-209b49a6347f`（deployment記録: `2026-09-07T23:22:05.633Z`）。
+- 公開本文bytes SHA-256は `e724ac8b93c18651f86a04ae38fd0ec2b8869e4fdbdea3f49a7dc3a7ef9907d4`（2,148,096 bytes）。5日程・3,664発言・5文書の3,669原記録で、画面は日程見出しを除く3,664件の発言・議題として表示される。原文・記録ID・表示順は維持した。
+- 厳格validator、pilot runner、body-only publication/storage test（18件）は成功した。pilotではsegments 1,746件がlegacyと一致し、質問候補34件とbaseline34件の差分は0件、未分類は18件だった。保存コピーで本文破損からのrollback、baseline復元、対象indexの一意性、他会議のindex保持を確認し、標準同期と最終 `--verify` も成功した。
+- GitHub Rawのmainにある苫小牧298の本文、minutes/index、publications/minutes/298.jsonを独立HTTP取得し、すべて200・ローカルbytes hash一致を確認した。同時に千歳578・恵庭265の本文、minutes/index、publications/minutesも各3ファイルすべて200・ローカルbytes hash一致で、既存検証を壊していない。
+- 本番ブラウザで苫小牧298の本文・5日程・公式原典リンク・未掲載のAI要約表示・更新情報を確認した。`cf:post-cutover-check` と `cf:finalize-production` が成功した。`record.publication` は `internal_preview` / `public_visible: false` を維持し、質問候補・人物同定・検索segmentsの公開移行は行っていない。
+- data-healthはエラー0・既存のroot-only候補52件による警告1で、`--strict` の全面成功とは扱わない。全体integrity監査で既知の札幌2会議の欠落エラーも対象外として変更していない。
+
 これは記録時点の確認結果であり、将来の原典変更や本番状態を保証するものではない。以後の切替では対象会議の原典を新規取得し、実装hashの変更が既存active会議へ及ぼす影響も確認する。
