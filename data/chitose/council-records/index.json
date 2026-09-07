@@ -1,0 +1,13 @@
+{
+  "schema_version": "council-record-body-registry.v1",
+  "municipality_id": "chitose",
+  "records": [
+    {
+      "council_id": 578,
+      "state": "active",
+      "release_path": "council-records/578/releases/2026-09-07T03-02-34-981Z-5ca79940d97c",
+      "minutes_sha256": "c0ec7706520f8e3cd92c230e3590d4eb08d146bff5f6aaa81e97ee7cb18f9cc8",
+      "publication_sha256": "44fdfca20a35451503c31c92ef44e9ad87359545c7aefe201c90516dd1e0d674"
+    }
+  ]
+}

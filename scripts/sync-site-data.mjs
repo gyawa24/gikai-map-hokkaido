@@ -2,7 +2,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
-import { randomUUID } from "node:crypto";
+import { createHash, randomUUID } from "node:crypto";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { printBudgetSourceReminders } from "./lib/budget-source-reminders.mjs";
@@ -251,18 +251,70 @@ async function publicationMinutesFiles(sourceIndex, sourceDir) {
   return files;
 }
 
+export async function assertManagedMinutesProjection(sourceDir, sourceIndex) {
+  const municipalityDir = path.dirname(sourceDir);
+  const registryPath = path.join(municipalityDir, "council-records", "index.json");
+  const active = new Map();
+  if (!(await pathExists(registryPath))) return active;
+  const registry = await readJson(registryPath);
+  if (registry?.schema_version !== "council-record-body-registry.v1"
+      || registry.municipality_id !== path.basename(municipalityDir)
+      || !Array.isArray(registry.records)) {
+    throw new Error(`Invalid v2 managed minutes registry: ${rel(registryPath)}`);
+  }
+  const seen = new Set();
+  for (const record of registry.records) {
+    const id = record?.council_id;
+    if (!Number.isSafeInteger(id) || id < 1 || seen.has(id)
+        || !["active", "rolled_back"].includes(record.state)
+        || !/^[a-f0-9]{64}$/u.test(record.minutes_sha256 ?? "")
+        || !/^[a-f0-9]{64}$/u.test(record.publication_sha256 ?? "")
+        || !new RegExp(`^council-records/${id}/releases/[A-Za-z0-9][A-Za-z0-9_-]*$`, "u").test(record.release_path ?? "")) {
+      throw new Error(`Invalid v2 managed minutes registry entry: ${rel(registryPath)}`);
+    }
+    seen.add(id);
+    if (record.state !== "active") continue;
+    const entry = sourceIndex.filter((item) => String(item?.council_id) === String(id));
+    if (entry.length !== 1 || entry[0].file !== `${id}.json`) {
+      throw new Error(`v2 managed council ${id}: publication index entry missing or changed; use the council-record publication workflow`);
+    }
+    const bodyPath = path.join(sourceDir, `${id}.json`);
+    if (!(await pathExists(bodyPath))
+        || createHash("sha256").update(await fs.readFile(bodyPath)).digest("hex") !== record.minutes_sha256) {
+      throw new Error(`v2 managed council ${id}: projection hash mismatch; legacy update held`);
+    }
+    active.set(`${id}.json`, record.minutes_sha256);
+  }
+  return active;
+}
+
+async function verifyManagedMinutesReleases(sourceDir, active) {
+  if (!active.size) return;
+  const { verifyCouncilRecordV2BodyRelease } = await import("./lib/council-record-v2-body-storage.mjs");
+  const slug = path.basename(path.dirname(sourceDir));
+  const repoRoot = path.resolve(sourceDir, "../../..");
+  for (const file of active.keys()) {
+    await verifyCouncilRecordV2BodyRelease(repoRoot, slug, Number(path.basename(file, ".json")));
+  }
+}
+
 export async function pruneStaleMinutesJson(sourceDir, destDir, options = {}) {
   if (!(await pathExists(destDir))) return [];
+  const sourceIndexPath = path.join(sourceDir, "index.json");
+  const sourceIndex = await pathExists(sourceIndexPath) ? await readJson(sourceIndexPath) : [];
+  if (!Array.isArray(sourceIndex)) {
+    throw new Error(`${rel(sourceIndexPath)} must contain a JSON array before minutes pruning`);
+  }
+  const active = await assertManagedMinutesProjection(sourceDir, sourceIndex);
+  await verifyManagedMinutesReleases(sourceDir, active);
   let publishedFiles = options.publishedFiles;
   if (!publishedFiles) {
     if (!(await pathExists(sourceDir))) return [];
-    const sourceIndexPath = path.join(sourceDir, "index.json");
     if (!(await pathExists(sourceIndexPath))) return [];
-    const sourceIndex = await readJson(sourceIndexPath);
-    if (!Array.isArray(sourceIndex)) {
-      throw new Error(`${rel(sourceIndexPath)} must contain a JSON array before minutes pruning`);
-    }
     publishedFiles = await publicationMinutesFiles(sourceIndex, sourceDir);
+  }
+  for (const file of active.keys()) {
+    if (!publishedFiles.has(file)) throw new Error(`v2 managed council ${file}: refusing to prune its published projection`);
   }
   const staleFiles = (await listJsonFiles(destDir)).filter(
     (relativePath) => !publishedFiles.has(relativePath)
@@ -279,7 +331,10 @@ export async function pruneStaleMinutesJson(sourceDir, destDir, options = {}) {
 }
 
 export async function syncPublishedMinutes(sourceDir, destDir, dryRun = false) {
-  if (!(await pathExists(sourceDir))) return false;
+  if (!(await pathExists(sourceDir))) {
+    await assertManagedMinutesProjection(sourceDir, []);
+    return false;
+  }
   const sourceIndexPath = path.join(sourceDir, "index.json");
   if (!(await pathExists(sourceIndexPath))) {
     throw new Error(`minutes publication requires a source index: ${rel(sourceIndexPath)}`);
@@ -290,6 +345,8 @@ export async function syncPublishedMinutes(sourceDir, destDir, dryRun = false) {
     throw new Error(`${rel(sourceIndexPath)} must contain a JSON array before minutes sync`);
   }
 
+  const active = await assertManagedMinutesProjection(sourceDir, sourceIndex);
+  await verifyManagedMinutesReleases(sourceDir, active);
   const publishedFiles = await publicationMinutesFiles(sourceIndex, sourceDir);
   const stagedBodies = [];
   let stagedIndex;
@@ -313,6 +370,15 @@ export async function syncPublishedMinutes(sourceDir, destDir, dryRun = false) {
       dryRun
     );
     await assertDestinationsReplaceable([...stagedBodies, stagedIndex]);
+    for (const stagedBody of stagedBodies) {
+      const file = path.basename(stagedBody.destPath);
+      if (active.has(file) && path.dirname(path.resolve(stagedBody.destPath)) === path.resolve(destDir)) {
+        const bytes = await fs.readFile(stagedBody.tempPath ?? path.join(sourceDir, file));
+        if (createHash("sha256").update(bytes).digest("hex") !== active.get(file)) {
+          throw new Error(`v2 managed council ${file}: projection changed during sync; legacy update held`);
+        }
+      }
+    }
 
     // The filesystem cannot commit multiple renames as one transaction. Staging and
     // preflight remove deterministic failures; an external failure during commit is surfaced.

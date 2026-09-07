@@ -88,6 +88,7 @@ Checks:
   - site/data/_city-capabilities.json matches site/data files
   - budget_sources.json does not mark missing public OCR data as imported
   - minutes years agree with explicit Reiwa years in council names
+  - active canonical minutes releases retain valid source and publication evidence
   - known public data in data/{slug}/ is copied to site/data/{slug}/
   - site-only overlays are classified instead of hidden
 `);
@@ -520,14 +521,45 @@ function classifySiteOnly(file) {
   return "unclassified_site_only";
 }
 
-function classifyRootOnly(file) {
+export function classifyRootOnly(file) {
   if (ROOT_PRIVATE_FILES.has(file)) return "private";
   if (ROOT_PRIVATE_PREFIXES.some((prefix) => file.startsWith(prefix))) return "private";
   if (/^[^/]+\/quarantine\//.test(file)) return "quarantine";
   if (/^[^/]+\/ocr_drafts\//.test(file)) return "private";
   if (/^[^/]+\/segments\//.test(file)) return "local_segments";
+  if (/^[^/]+\/council-records\//.test(file)) return "canonical_minutes";
   if (/\.pdf$/i.test(file)) return "source_documents";
   return "root_only_public_candidate";
+}
+
+export async function checkCanonicalMinutes(report, municipalities, repoRoot = REPO_ROOT) {
+  for (const { slug } of municipalities) {
+    const registryPath = path.join(repoRoot, "data", slug, "council-records", "index.json");
+    if (!(await pathExists(registryPath))) continue;
+    const label = `data/${slug}/council-records/index.json`;
+    let registry;
+    try {
+      registry = await readJson(registryPath);
+      if (registry?.schema_version !== "council-record-body-registry.v1"
+          || registry.municipality_id !== slug || !Array.isArray(registry.records)
+          || registry.records.some((entry) => !Number.isSafeInteger(entry?.council_id)
+            || entry.council_id < 1 || !["active", "rolled_back"].includes(entry.state))
+          || new Set(registry.records.map((entry) => entry.council_id)).size !== registry.records.length) {
+        throw new Error("invalid canonical minutes registry");
+      }
+    } catch (error) {
+      report.errors.push(`${label}: ${error.message}`);
+      continue;
+    }
+    for (const entry of registry.records.filter((item) => item.state === "active")) {
+      try {
+        const { verifyCouncilRecordV2BodyRelease } = await import("./lib/council-record-v2-body-storage.mjs");
+        await verifyCouncilRecordV2BodyRelease(repoRoot, slug, entry.council_id);
+      } catch (error) {
+        report.errors.push(`${label} council ${entry.council_id}: ${error.message}`);
+      }
+    }
+  }
 }
 
 async function checkSiteOnly(report, ignoredFiles) {
@@ -621,6 +653,7 @@ async function main() {
   await checkCapabilities(report, municipalities, ignoredFiles);
   await checkBudgetSources(report, ignoredFiles);
   await checkMinutesYearConsistency(report, municipalities);
+  await checkCanonicalMinutes(report, municipalities);
   await checkPublications(report, municipalities, ignoredFiles);
   await checkPublicSync(report, municipalities, ignoredFiles);
   await checkSiteOnly(report, ignoredFiles);
@@ -636,7 +669,9 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exit(1);
+  });
+}

@@ -1,3 +1,4 @@
+import hashlib
 import json
 import re
 import tempfile
@@ -39,8 +40,70 @@ def resolve_council_year(
     return str(2018 + reiwa_year), f"令和{reiwa_year}年"
 
 
+def managed_minutes_records(minutes_dir: Path) -> list[dict]:
+    if minutes_dir.name != "minutes":
+        return []
+    registry_path = minutes_dir.parent / "council-records" / "index.json"
+    if not registry_path.exists():
+        return []
+    with open(registry_path, encoding="utf-8") as handle:
+        registry = json.load(handle)
+    if (
+        not isinstance(registry, dict)
+        or registry.get("schema_version") != "council-record-body-registry.v1"
+        or registry.get("municipality_id") != minutes_dir.parent.name
+        or not isinstance(registry.get("records"), list)
+    ):
+        raise ValueError(f"Invalid v2 managed minutes registry: {registry_path}")
+    seen = set()
+    for record in registry["records"]:
+        council_id = record.get("council_id") if isinstance(record, dict) else None
+        if (
+            not isinstance(council_id, int) or isinstance(council_id, bool)
+            or council_id < 1 or council_id in seen
+            or record.get("state") not in ("active", "rolled_back")
+            or not re.fullmatch(r"[a-f0-9]{64}", str(record.get("minutes_sha256", "")))
+            or not re.fullmatch(r"[a-f0-9]{64}", str(record.get("publication_sha256", "")))
+            or not re.fullmatch(
+                rf"council-records/{council_id}/releases/[A-Za-z0-9][A-Za-z0-9_-]*",
+                str(record.get("release_path", "")),
+            )
+        ):
+            raise ValueError(f"Invalid v2 managed minutes registry entry: {registry_path}")
+        seen.add(council_id)
+    return [record for record in registry["records"] if record["state"] == "active"]
+
+
+def preserve_managed_minutes(path: Path, data) -> bool:
+    records = managed_minutes_records(path.parent)
+    for record in records:
+        council_id = record["council_id"]
+        body_path = path.parent / f"{council_id}.json"
+        if path.name not in ("index.json", body_path.name):
+            continue
+        message = f"v2 managed council {council_id}: legacy update held; use the council-record publication workflow"
+        if not body_path.is_file() or hashlib.sha256(body_path.read_bytes()).hexdigest() != record["minutes_sha256"]:
+            raise ValueError(f"{message} (existing projection hash mismatch)")
+        if path.name == body_path.name:
+            if json.loads(body_path.read_bytes()) != data:
+                raise ValueError(f"{message} (collected content or metadata changed)")
+            return True
+        if not path.is_file() or not isinstance(data, list):
+            raise ValueError(f"{message} (publication index missing or malformed)")
+        previous = json.loads(path.read_bytes())
+        if not isinstance(previous, list):
+            raise ValueError(f"{message} (publication index malformed)")
+        old_entries = [entry for entry in previous if isinstance(entry, dict) and entry.get("council_id") == council_id]
+        new_entries = [entry for entry in data if isinstance(entry, dict) and entry.get("council_id") == council_id]
+        if len(old_entries) != 1 or new_entries != old_entries or old_entries[0].get("file") != body_path.name:
+            raise ValueError(f"{message} (managed publication index entry changed or removed)")
+    return False
+
+
 def write_json_atomic(path: Path, data) -> None:
     """Write a complete JSON temp file before replacing the destination."""
+    if preserve_managed_minutes(path, data):
+        return
     temp_path = None
     try:
         with tempfile.NamedTemporaryFile(

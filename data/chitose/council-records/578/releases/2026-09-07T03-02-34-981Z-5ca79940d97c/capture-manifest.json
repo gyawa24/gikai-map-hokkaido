@@ -1,0 +1,178 @@
+{
+  "format": "dnp-capture-manifest/1",
+  "municipality_id": "chitose",
+  "council_id": 578,
+  "legacy_input": {
+    "path": "data/chitose/council-records/578/releases/2026-09-07T03-02-34-981Z-5ca79940d97c/baseline.json",
+    "sha256": "c0ec7706520f8e3cd92c230e3590d4eb08d146bff5f6aaa81e97ee7cb18f9cc8"
+  },
+  "captures": [
+    {
+      "endpoint": "minutes/get_schedule",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_schedule",
+        "payload": {
+          "tenant_id": 452,
+          "council_id": 578
+        }
+      },
+      "observed_at": "2026-09-07T02:49:37.262Z",
+      "fetched_at": "2026-09-07T02:49:38.049Z",
+      "http_status": 200,
+      "content_sha256": "c18c2a3dedf66181121f4a59d923a748e4e61e0f50275903543f3d0b6b8d071f",
+      "byte_size": 5062,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/chitose/council-records/578/snapshots/c18c2a3dedf66181121f4a59d923a748e4e61e0f50275903543f3d0b6b8d071f.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 452,
+          "council_id": 578,
+          "schedule_id": 2
+        }
+      },
+      "observed_at": "2026-09-07T02:49:39.556Z",
+      "fetched_at": "2026-09-07T02:49:40.480Z",
+      "http_status": 200,
+      "content_sha256": "cb09faba568457cee24ddf295c7612e6de169be25c2108573f3ca3e4a7708cb5",
+      "byte_size": 355095,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/chitose/council-records/578/snapshots/cb09faba568457cee24ddf295c7612e6de169be25c2108573f3ca3e4a7708cb5.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 452,
+          "council_id": 578,
+          "schedule_id": 3
+        }
+      },
+      "observed_at": "2026-09-07T02:49:41.988Z",
+      "fetched_at": "2026-09-07T02:49:42.617Z",
+      "http_status": 200,
+      "content_sha256": "0fd4f691db67df3781f8b57305024c15ac64c548b883d870f61425a809f1c68b",
+      "byte_size": 138775,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/chitose/council-records/578/snapshots/0fd4f691db67df3781f8b57305024c15ac64c548b883d870f61425a809f1c68b.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 452,
+          "council_id": 578,
+          "schedule_id": 4
+        }
+      },
+      "observed_at": "2026-09-07T02:49:44.128Z",
+      "fetched_at": "2026-09-07T02:49:45.041Z",
+      "http_status": 200,
+      "content_sha256": "1be2d0594ff17c0c2ec4b02166aeb76f80fb7d6ace64dab778cb792a33b053b3",
+      "byte_size": 353925,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/chitose/council-records/578/snapshots/1be2d0594ff17c0c2ec4b02166aeb76f80fb7d6ace64dab778cb792a33b053b3.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 452,
+          "council_id": 578,
+          "schedule_id": 5
+        }
+      },
+      "observed_at": "2026-09-07T02:49:46.550Z",
+      "fetched_at": "2026-09-07T02:49:47.602Z",
+      "http_status": 200,
+      "content_sha256": "83555291d70d29a05617da38c1f707ab60c1b48b78083f248b67ecf609c1c63f",
+      "byte_size": 260401,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/chitose/council-records/578/snapshots/83555291d70d29a05617da38c1f707ab60c1b48b78083f248b67ecf609c1c63f.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 452,
+          "council_id": 578,
+          "schedule_id": 6
+        }
+      },
+      "observed_at": "2026-09-07T02:49:49.110Z",
+      "fetched_at": "2026-09-07T02:49:50.054Z",
+      "http_status": 200,
+      "content_sha256": "e4001d9647558f31e4ac87ac1b4a53f3eb37527cf2356479104f43d858b95b5a",
+      "byte_size": 280481,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/chitose/council-records/578/snapshots/e4001d9647558f31e4ac87ac1b4a53f3eb37527cf2356479104f43d858b95b5a.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 452,
+          "council_id": 578,
+          "schedule_id": 7
+        }
+      },
+      "observed_at": "2026-09-07T02:49:51.561Z",
+      "fetched_at": "2026-09-07T02:49:52.504Z",
+      "http_status": 200,
+      "content_sha256": "8c6c1bc0a79c411bfe8b63239894e559182fe8d802a58d41e82cea4376bf67b5",
+      "byte_size": 281736,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/chitose/council-records/578/snapshots/8c6c1bc0a79c411bfe8b63239894e559182fe8d802a58d41e82cea4376bf67b5.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 452,
+          "council_id": 578,
+          "schedule_id": 8
+        }
+      },
+      "observed_at": "2026-09-07T02:49:54.008Z",
+      "fetched_at": "2026-09-07T02:49:55.199Z",
+      "http_status": 200,
+      "content_sha256": "c167f6caba232ecf6bc2f521930f4d428999fbb900219f31a3b87cc385246160",
+      "byte_size": 101905,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/chitose/council-records/578/snapshots/c167f6caba232ecf6bc2f521930f4d428999fbb900219f31a3b87cc385246160.json"
+    }
+  ]
+}
