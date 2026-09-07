@@ -99,4 +99,14 @@ node --test scripts/tests/council-record-v2-body-publication.test.mjs scripts/te
 - 検証: JS 271成功・既存fixture欠落1スキップ、Python 53成功。data-healthはエラー0・既存のroot-only候補52件による警告1。`--strict` の全面成功とは扱わない。保存コピーで本文破損からのrollbackと他会議の保持を確認。
 - 証跡は作業checkoutの `reports/body-cutover-*` と、同じMacの `/Users/yohei/gikai-map-hokkaido/reports/minutes-v2-body-cutover-20260907/` に保存。後者の `production-release.json`、各検証ログ、`SHA256SUMS` がリリース時点の記録。原典・正本・復旧baseline自体はGit追跡済みの上記releaseに保持する。
 
+### 2026-09-07 恵庭265の本番反映
+
+- 対象release: `data/eniwa/council-records/265/releases/2026-09-07T14-28-39-363Z-912987d67e16`。台帳は `active`、範囲は `body_only`。原典取得runは `reports/council-record-v2/eniwa/265/runs/2026-09-07T14-25-51-363Z-4d3286a6-8a55-40c3-b379-7bd2fca470fa/`、capture manifest SHA-256は `912987d67e1631af7e9a2a48136ccd6f412a24c2a3158986da9c796f16331222`、取得確認時刻は `2026-09-07T14:27:06.811Z`。
+- 実装・release commitは `ab9b6f0d`。[PR #7](https://github.com/gyawa24/gikai-map-hokkaido/pull/7)をmainへマージしたcommitは `ae2ccae63d9627022a22696ed3c1df6bf52c762a`。Cloudflare staging Workerは `5d2e6933-9217-480b-801a-4c79d803a573`、本番Workerは `ced6df04-bc58-4083-9d38-a78595da32ad`（deployment記録: `2026-09-07T14:56:45.945Z`）。
+- 公開本文bytes SHA-256: `89597c8cfa60c69a11f9418ccafad0ed6bf8cb9c18f066d891e06b94fe691f46`（46,548 bytes）。1日程・64発言・11非発言の75原記録で、画面は日程見出しを除く74件の発言・議題として表示される。原文・記録ID・順序は維持した。
+- 厳格validator、pilot runner、body-only publication/storage test（18件）は成功。保存コピーで対象本文を破損させたrollbackを実行し、baseline復元・対象indexの一意性・他会議のindex保持を確認した。標準同期と最終 `--verify` も成功した。
+- GitHub Rawのmainにある恵庭265の本文、minutes/index、publications/minutes/265.jsonを独立HTTP取得し、すべて200・ローカルbytes hash一致を確認した。同時に千歳578の本文、minutes/index、publications/minutes/578.jsonもすべて200・ローカルbytes hash一致で、既存検証を壊していない。
+- 本番ブラウザで恵庭265の本文・日程・公式原典リンク・未掲載のAI要約表示と更新情報を確認した。`cf:post-cutover-check` は成功し、`cf:finalize-production` は一時的な通信失敗を再試行後に成功した。
+- `record.publication` は `internal_preview` / `public_visible: false` を維持し、質問候補・人物同定・検索segmentsの公開移行は行っていない。data-healthはエラー0・既存のroot-only候補52件による警告1で、`--strict` の全面成功とは扱わない。全体integrity監査で既知の札幌2会議の欠落エラーも対象外として変更していない。
+
 これは記録時点の確認結果であり、将来の原典変更や本番状態を保証するものではない。以後の切替では対象会議の原典を新規取得し、実装hashの変更が既存active会議へ及ぼす影響も確認する。
