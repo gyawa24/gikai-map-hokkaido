@@ -1,0 +1,136 @@
+{
+  "format": "dnp-capture-manifest/1",
+  "municipality_id": "tomakomai",
+  "council_id": 298,
+  "legacy_input": {
+    "path": "data/tomakomai/council-records/298/releases/2026-09-07T22-56-02-099Z-a35204ce503a/baseline.json",
+    "sha256": "e724ac8b93c18651f86a04ae38fd0ec2b8869e4fdbdea3f49a7dc3a7ef9907d4"
+  },
+  "captures": [
+    {
+      "endpoint": "minutes/get_schedule",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_schedule",
+        "payload": {
+          "tenant_id": 536,
+          "council_id": 298
+        }
+      },
+      "observed_at": "2026-09-07T22:53:54.164Z",
+      "fetched_at": "2026-09-07T22:53:54.789Z",
+      "http_status": 200,
+      "content_sha256": "581acf8787253b06ffd9b7b0ea8414070040ec193e3dec7857ea5f1b06a9bdc0",
+      "byte_size": 76391,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/tomakomai/council-records/298/snapshots/581acf8787253b06ffd9b7b0ea8414070040ec193e3dec7857ea5f1b06a9bdc0.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 536,
+          "council_id": 298,
+          "schedule_id": 2
+        }
+      },
+      "observed_at": "2026-09-07T22:53:56.291Z",
+      "fetched_at": "2026-09-07T22:53:57.920Z",
+      "http_status": 200,
+      "content_sha256": "b51360233360d36dfc1d38bb8ad5ce04bb79b2a1ca409e525acaae907b40d4c6",
+      "byte_size": 823615,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/tomakomai/council-records/298/snapshots/b51360233360d36dfc1d38bb8ad5ce04bb79b2a1ca409e525acaae907b40d4c6.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 536,
+          "council_id": 298,
+          "schedule_id": 3
+        }
+      },
+      "observed_at": "2026-09-07T22:53:59.429Z",
+      "fetched_at": "2026-09-07T22:54:01.231Z",
+      "http_status": 200,
+      "content_sha256": "26616457e43004e0eaa4732f104446492732befa8c320468e8d097a6d4450228",
+      "byte_size": 833382,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/tomakomai/council-records/298/snapshots/26616457e43004e0eaa4732f104446492732befa8c320468e8d097a6d4450228.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 536,
+          "council_id": 298,
+          "schedule_id": 4
+        }
+      },
+      "observed_at": "2026-09-07T22:54:02.741Z",
+      "fetched_at": "2026-09-07T22:54:04.910Z",
+      "http_status": 200,
+      "content_sha256": "92d05dd8ba6805d293b1d05ff9954b946b51973444a393b94f37538c91c2e116",
+      "byte_size": 1052112,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/tomakomai/council-records/298/snapshots/92d05dd8ba6805d293b1d05ff9954b946b51973444a393b94f37538c91c2e116.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 536,
+          "council_id": 298,
+          "schedule_id": 5
+        }
+      },
+      "observed_at": "2026-09-07T22:54:06.419Z",
+      "fetched_at": "2026-09-07T22:54:08.838Z",
+      "http_status": 200,
+      "content_sha256": "0fc0346820f71cc5a15b979643d8e76552875b1bbae4e625fe29287a008ec776",
+      "byte_size": 1235600,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/tomakomai/council-records/298/snapshots/0fc0346820f71cc5a15b979643d8e76552875b1bbae4e625fe29287a008ec776.json"
+    },
+    {
+      "endpoint": "minutes/get_minute",
+      "request": {
+        "method": "POST",
+        "url": "https://ssp.kaigiroku.net/dnp/search/minutes/get_minute",
+        "payload": {
+          "tenant_id": 536,
+          "council_id": 298,
+          "schedule_id": 6
+        }
+      },
+      "observed_at": "2026-09-07T22:54:10.348Z",
+      "fetched_at": "2026-09-07T22:54:11.083Z",
+      "http_status": 200,
+      "content_sha256": "2d4f4571730dd20b4d5bf76bfd13cf568051078492e8d242381d4cd4ad72d573",
+      "byte_size": 168276,
+      "mime_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "snapshot_path": "data/tomakomai/council-records/298/snapshots/2d4f4571730dd20b4d5bf76bfd13cf568051078492e8d242381d4cd4ad72d573.json"
+    }
+  ]
+}
