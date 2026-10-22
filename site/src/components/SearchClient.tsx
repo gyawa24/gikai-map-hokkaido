@@ -41,6 +41,7 @@ import {
   validSearchAssetMetadata,
 } from "@/lib/searchTransferBudget.mjs";
 import { buildSearchAssist, buildSearchQuery, createSearchTextEvaluator, excerptSearchText, normalizeSearchText as normalizeForSearch } from "@/lib/searchQuery";
+import { buildMultiTermSearchExcerpt } from "@/lib/searchExcerpts.mjs";
 
 function Highlight({ text, tokens }: { text: string; tokens: string[] }) {
   if (!tokens.length) return <>{text}</>;
@@ -57,6 +58,37 @@ function Highlight({ text, tokens }: { text: string; tokens: string[] }) {
         )
       )}
     </>
+  );
+}
+
+function SearchResultExcerpt({ result, tokens }: { result: SessionHit; tokens: string[] }) {
+  if (!result.snippetSegments?.length) {
+    return (
+      <p className="text-[15px] leading-relaxed text-[#4A5568]">
+        <Highlight text={result.context} tokens={tokens} />
+      </p>
+    );
+  }
+  return (
+    <div className="space-y-2">
+      {result.snippetSegments.map((segment) => (
+        <p key={`${segment.start}:${segment.end}`} className="text-[15px] leading-relaxed text-[#4A5568] [overflow-wrap:anywhere]">
+          {segment.start > 0 && "…"}
+          <Highlight text={segment.text} tokens={tokens} />
+          {segment.end < (result.snippetSourceLength ?? segment.end) && "…"}
+        </p>
+      ))}
+      {result.separated && (
+        <p className="text-sm leading-relaxed text-[#4A5568]">
+          検索語が離れた箇所にあるため、別々に抜粋しています。同じ話題とは限りません。
+        </p>
+      )}
+      {result.snippetCoverageComplete === false && (
+        <p className="text-sm leading-relaxed text-[#4A5568]">
+          抜粋に収まらない検索語があります。全文をご確認ください。
+        </p>
+      )}
+    </div>
   );
 }
 
@@ -242,6 +274,7 @@ type ClientBigramSearchDocument = {
   field?: string;
   fullTextIndexed?: boolean;
   _exactText?: string;
+  _excerptsText?: string;
   _bigramExact?: boolean;
 };
 
@@ -568,6 +601,10 @@ function stripSessionScore(results: RankedSessionHit[]): SessionHit[] {
     label: result.label,
     startTime: result.startTime,
     context: result.context,
+    snippetSegments: result.snippetSegments,
+    snippetSourceLength: result.snippetSourceLength,
+    separated: result.separated,
+    snippetCoverageComplete: result.snippetCoverageComplete,
     field: result.field,
     date: result.date,
     year: result.year,
@@ -1423,10 +1460,11 @@ async function loadClientBigramCandidateDocuments(
       const exactText = exactTextById.has(documentId)
         ? exactEvaluationText(documentId)
         : undefined;
+      const excerptsText = exactTextById.get(documentId);
       if (!verificationSet.has(documentId)) {
-        return { ...document, _exactText: exactText, _bigramExact: true };
+        return { ...document, _exactText: exactText, _excerptsText: excerptsText, _bigramExact: true };
       }
-      return { ...document, _exactText: exactEvaluationText(documentId), _bigramExact: false };
+      return { ...document, _exactText: exactEvaluationText(documentId), _excerptsText: excerptsText, _bigramExact: false };
     });
   };
 
@@ -1878,6 +1916,9 @@ function runClientBigramDocumentSearch(
               ? "検索対象の本文が検索語または同義語に該当する会議です。原文で該当箇所を確認できます。"
               : `検索対象の本文が検索語「${tokens.join("・")}」に該当する会議です。原文で該当箇所を確認できます。`
           : excerptSearchText(doc.context || doc.body || metadataSearchText, tokens, 100)),
+        ...(doc.source === "agenda" && sourceType === "minutes"
+          ? buildMultiTermSearchExcerpt(doc._excerptsText || doc.body || "", tokens)
+          : null),
         field: doc.field ?? (sourceType === "decision" ? "議決" : sourceType === "session" ? "会議録速報" : "議事録"),
         date: doc.date,
         year: doc.year || yearFromDate(doc.date) || yearFromCouncilName(doc.title),
@@ -3114,9 +3155,7 @@ function SearchClientInner({ initialQuery = "", initialTab = "", initialSource =
                         )}
                       </div>
                       <p className="mb-1 text-[15px] font-black leading-snug text-[#1B3A6B] sm:text-base">{r.title}</p>
-                      <p className="text-[15px] leading-relaxed text-[#4A5568]">
-                        <Highlight text={r.context} tokens={tokens} />
-                      </p>
+                      <SearchResultExcerpt result={r} tokens={tokens} />
                     </Link>
                   );
                 })}

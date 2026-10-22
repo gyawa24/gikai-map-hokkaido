@@ -3,6 +3,7 @@ import { getDecisions, getMembers, getSearchIndex, getSession, getSessionSummari
 import { getMunicipalities } from "@/lib/municipalities";
 import { checkRateLimit } from "@/lib/rateLimit";
 import { buildSearchAssist, buildSearchQuery, createSearchTextEvaluator, excerptSearchText } from "@/lib/searchQuery";
+import { buildMultiTermSearchExcerpt, type SearchExcerptSegment } from "@/lib/searchExcerpts.mjs";
 import {
   appendSearchQueryToHref,
   runtimeAgendaResultId,
@@ -120,6 +121,10 @@ export type SessionHit = {
   label: string;
   startTime: string;
   context: string;
+  snippetSegments?: SearchExcerptSegment[];
+  snippetSourceLength?: number;
+  separated?: boolean;
+  snippetCoverageComplete?: boolean;
   field: string;
   date?: string;
   /** 西暦。不明な場合は空文字 */
@@ -618,6 +623,10 @@ function stripSessionScore(results: RankedSessionHit[]): SessionHit[] {
     label: result.label,
     startTime: result.startTime,
     context: result.context,
+    snippetSegments: result.snippetSegments,
+    snippetSourceLength: result.snippetSourceLength,
+    separated: result.separated,
+    snippetCoverageComplete: result.snippetCoverageComplete,
     field: result.field,
     date: result.date,
     year: result.year,
@@ -859,6 +868,7 @@ export async function GET(request: NextRequest) {
         label: agenda.schedule_name,
         startTime: "",
         context: excerptSearchText(`${agenda.agenda_title} ${agenda.text}`, tokens, 100),
+        ...buildMultiTermSearchExcerpt(agenda.text, tokens),
         field: "議事録",
         date: agenda.date,
         year: agenda.year ?? yearFromCouncilName(agenda.council_name),

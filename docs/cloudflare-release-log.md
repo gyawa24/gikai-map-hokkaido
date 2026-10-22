@@ -483,3 +483,19 @@ Cloudflare Workers / Static Assets へ移行するときの確認記録。
 - 上記の本番反映後、ユーザーの継続指示に基づき、反映済み差分をcommit `67da5c76` として保存し、`codex/minutes-core-refresh-20260907` をpushした。
 - Draft PR: [議事録の表示・原典案内と読み取り検証を統一 #4](https://github.com/gyawa24/gikai-map-hokkaido/pull/4)。mainへのmergeは未実施。
 - 続くv2内部試験は `codex/minutes-v2-chitose-20260907` で実施し、この本番Workerへは反映していない。v2生成物はGit対象外のreportsに保存する。
+
+
+## 2026-10-23 複数語検索の抜粋改善
+
+- 本番反映: 2026-10-23 00:04:41 JST。ユーザーの明示承認に基づく Cloudflare 直接反映。
+- production Worker: `chihougikai-com` / version `f6e87b9d-7229-4a3b-85ed-d47ebe9b851f` / traffic 100%。
+- 基準 source: main `2c585d48be398ca6f4fda0af64564a53aad3df26`（旧本番と同じ site tree）＋専用作業ツリーの今回差分。main 自体を新版 source と取り違えない。
+- source worktree: `/Users/yohei/gikai-map-search-excerpts-release-20261022`（`codex/search-excerpts-production-20261022`）。本番反映時は未コミットであり、反映後にユーザーがこのブランチへの commit / push を明示承認した。元の作業中コード・データは今回の反映に含めていない。
+- 保存差分: `/Users/yohei/gikai-map-search-excerpts-release-20261022/reports/search-excerpts-release-2026-10-22/release-source.patch`。SHA256 `abd54fcd5159779079cdcf0d61d816daa36b60c321841ef5ab3485894111a653`。実装・型・テスト・news の7ファイル。個別 hash は `release-source-sha256.json`。本ログの追記は公開コード差分と別。
+- 変更: 本文に複数の入力語を確認できる議事録結果に近接箇所の抜粋、離れた箇所は段落分離と注記。新抜粋段落の長いPDF点線を折り返す。検索集合・順位・ID・原文・href・取得上限は維持。
+- 最終 preview: `a65a292d-4766-4318-a159-cc01e1e88bc2` / `https://a65a292d-chihougikai-com.yohei-218.workers.dev`。初回候補 `b16543f0-79b9-46eb-97be-6ed3eea1662a` は狭幅の表示確認で修正が必要となり、本番へ昇格していない。
+- 検証: Node24.14.0 の94検索tests、14条件79結果・原文182組、独立hash確認、最終 `cf:preflight`、新preview `cf:upload-verify`、本番 `cf:post-cutover-check` がすべて成功。
+- IAB公開確認: 全道1173 / 千歳45（表示30件のhref順）/ 大空2 / 上富良野6を維持。PDF2件は両語表示、上富良野は分離注記2件。一語2件は抜粋を含め一致。reader・公式原典・news確認。390×844検証で client/scroll width 375、overflow段落0。
+- 更新情報は10/22準備分を同梱。実際の公開時刻は上記10/23。分類補正・旧URL転送・SQLite試作の公開は今回の対象外。
+- 証跡: `/Users/yohei/gikai-map-search-excerpts-release-20261022/reports/search-excerpts-release-2026-10-22/release-report.md`、`browser-acceptance.json`、`production-deployment.json`、各CLIログ・スクリーンショット。
+- rollback target: `f737a029-ae09-481c-9747-209b49a6347f`。不具合は残らず、rollback は未実施。
